@@ -25,6 +25,14 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Ljepblêden slute ûngedien meitsje
         }
     .accesskey = u
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Sluten ljepblêd opnij iepenje
+            [one] Sluten ljepblêd opnij iepenje
+           *[other] Sluten ljepblêden opnij iepenje
+        }
+    .accesskey = o
 toolbar-context-menu-manage-extension =
     .label = Utwreiding beheare
     .accesskey = U
@@ -46,21 +54,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Automatysk ferstopje yn arkbalke
     .accesskey = u
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Knop ferstopje wannear leech
+    .accesskey = f
 toolbar-context-menu-remove-from-toolbar =
     .label = Fuortsmite fan arkbalke
     .accesskey = r
 toolbar-context-menu-view-customize-toolbar =
     .label = Oanpasse…
     .accesskey = O
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Altyd
-    .accesskey = A
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Nea
-    .accesskey = N
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Allinnich op nij ljepblêd
-    .accesskey = o
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Arkbalke oanpasse…
+    .accesskey = p
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Altyd toane
     .accesskey = A

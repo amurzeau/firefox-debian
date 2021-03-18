@@ -59,7 +59,7 @@ menu-file-new-tab =
     .label = Nouvel onglet
     .accesskey = T
 menu-file-new-container-tab =
-    .label = Nouvel onglet contextuel
+    .label = Nouvel onglet conteneur
     .accesskey = c
 menu-file-new-window =
     .label = Nouvelle fenêtre
@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Rechercher dans la page…
     .accesskey = h
+menu-edit-find-in-page =
+    .label = Rechercher dans la page…
+    .accesskey = h
 menu-edit-find-again =
     .label = Rechercher le suivant
     .accesskey = v
@@ -128,6 +131,9 @@ menu-view-toolbars-menu =
     .accesskey = T
 menu-view-customize-toolbar =
     .label = Personnaliser…
+    .accesskey = P
+menu-view-customize-toolbar2 =
+    .label = Personnaliser la barre d’outils…
     .accesskey = P
 menu-view-sidebar =
     .label = Panneau latéral
@@ -207,6 +213,8 @@ menu-history-undo-menu =
     .label = Onglets récemment fermés
 menu-history-undo-window-menu =
     .label = Fenêtres récemment fermées
+menu-history-reopen-all-tabs = Rouvrir tous les onglets
+menu-history-reopen-all-windows = Rouvrir toutes les fenêtres
 
 ## Bookmarks Menu
 
@@ -217,6 +225,8 @@ menu-bookmarks-show-all =
     .label = Afficher tous les marque-pages
 menu-bookmark-this-page =
     .label = Marquer cette page
+menu-bookmark-current-tab =
+    .label = Marquer l’onglet courant
 menu-bookmark-edit =
     .label = Modifier ce marque-page
 menu-bookmarks-all-tabs =
@@ -242,6 +252,12 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Se connecter à { -brand-product-name }…
     .accesskey = e
+menu-tools-extensions =
+    .label = Extensions et thèmes
+    .accesskey = E
+menu-tools-fxa-sign-in2 =
+    .label = Connexion
+    .accesskey = C
 menu-tools-turn-on-sync =
     .label = Activer { -sync-brand-short-name }…
     .accesskey = n
@@ -270,6 +286,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] O
            *[other] f
+        }
+menu-settings =
+    .label = Paramètres
+    .accesskey =
+        { PLATFORM() ->
+            [windows] a
+           *[other] a
         }
 menu-tools-layout-debugger =
     .label = Débogueur de mise en page
@@ -317,11 +340,19 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = Raccourcis clavier
     .accesskey = o
+menu-get-help =
+    .label = Obtenir de l’aide
+    .accesskey = O
 menu-help-troubleshooting-info =
     .label = Informations de dépannage
     .accesskey = I
+menu-help-more-troubleshooting-info =
+    .label = Plus d’informations de dépannage
+    .accesskey = t
 menu-help-taskmanager =
     .label = Gestionnaire de tâches
+menu-help-report-site-issue =
+    .label = Signaler un problème sur ce site…
 menu-help-feedback-page =
     .label = Donner votre avis…
     .accesskey = D
@@ -331,6 +362,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Redémarrer avec les modules activés…
     .accesskey = R
+menu-help-enter-troubleshoot-mode =
+    .label = Mode de dépannage
+    .accesskey = M
+menu-help-exit-troubleshoot-mode =
+    .label = Désactiver le mode de dépannage
+    .accesskey = m
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

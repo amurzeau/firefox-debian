@@ -25,6 +25,14 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Reaperi schedas claudite
         }
     .accesskey = R
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Reaperir schedas claudite
+            [one] Reaperir scheda claudite
+           *[other] Reaperir schedas claudite
+        }
+    .accesskey = a
 toolbar-context-menu-manage-extension =
     .label = Gerer extension
     .accesskey = E
@@ -46,21 +54,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Auto-celar in le barra de instrumentos
     .accesskey = A
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Celar le button quando vacue
+    .accesskey = C
 toolbar-context-menu-remove-from-toolbar =
     .label = Remover del barra de instrumentos
     .accesskey = R
 toolbar-context-menu-view-customize-toolbar =
     .label = Personalisar…
     .accesskey = P
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Sempre
-    .accesskey = S
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Nunquam
-    .accesskey = N
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Solo sur un nove scheda
-    .accesskey = s
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Personalisar le barra de instrumentos…
+    .accesskey = P
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Sempre monstrar
     .accesskey = S

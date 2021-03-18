@@ -167,6 +167,12 @@ onboarding-multistage-welcome-primary-button-label = Start Setup
 onboarding-multistage-welcome-secondary-button-label = Sign in
 onboarding-multistage-welcome-secondary-button-text = Have an account?
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "default" should stay inside the span.
+onboarding-multistage-set-default-header = Make { -brand-short-name } your <span data-l10n-name="zap">default</span>
+onboarding-multistage-set-default-subtitle = Speed, safety, and privacy every time you browse.
+onboarding-multistage-set-default-primary-button-label = Make Default
+onboarding-multistage-set-default-secondary-button-label = Not now
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "more" should stay inside the span.
 onboarding-multistage-import-header = Import your passwords, <br/>bookmarks, and <span data-l10n-name="zap">more</span>
 onboarding-multistage-import-subtitle = Coming from another browser? It’s easy to bring everything to { -brand-short-name }.
@@ -186,6 +192,7 @@ onboarding-welcome-steps-indicator =
 onboarding-multistage-theme-header = Choose a <span data-l10n-name="zap">look</span>
 onboarding-multistage-theme-subtitle = Personalize { -brand-short-name } with a theme.
 onboarding-multistage-theme-primary-button-label = Save Theme
+onboarding-multistage-theme-primary-button-label2 = Done
 onboarding-multistage-theme-secondary-button-label = Not now
 # Automatic theme uses operating system color settings
 onboarding-multistage-theme-label-automatic = Automatic

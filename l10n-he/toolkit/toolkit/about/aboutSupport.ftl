@@ -124,10 +124,14 @@ sandbox-sys-call-number = קריאת מערכת
 sandbox-sys-call-args = ארגומנטים
 safe-mode-title = לנסות במצב בטוח
 restart-in-safe-mode-label = הפעלה מחדש עם תוספות מנוטרלות…
+troubleshoot-mode-title = אבחון בעיות
+restart-in-troubleshoot-mode-label = מצב לפתרון בעיות…
 clear-startup-cache-title = לנסות לנקות את מטמון ההפעלה
 clear-startup-cache-label = ניקוי מטמון הפעלה…
 startup-cache-dialog-title = ניקוי מטמון הפעלה
 startup-cache-dialog-body = הפעלת { -brand-short-name } מחדש כדי לנקות את מטמון ההפעלה. פעולה זו לא תשנה את ההגדרות שלך או תסיר הרחבות שהוספת ל־{ -brand-short-name }.
+startup-cache-dialog-title2 = להפעיל את { -brand-short-name } מחדש כדי לנקות את מטמון ההפעלה?
+startup-cache-dialog-body2 = פעולה זו לא תשנה את ההגדרות שלך או תסיר הרחבות.
 restart-button-label = הפעלה מחדש
 
 ## Media titles
@@ -366,3 +370,13 @@ support-printing-clear-settings-button = ניקוי הגדרות ההדפסה ה
 support-printing-modified-settings = הגדרות הדפסה ששונו
 support-printing-prefs-name = שם
 support-printing-prefs-value = ערך
+
+## Normandy sections
+
+support-remote-experiments-title = ניסויים מרוחקים
+support-remote-experiments-name = שם
+support-remote-experiments-branch = ענף ניסוי
+support-remote-experiments-see-about-studies = ניתן להיכנס ל־<a data-l10n-name="support-about-studies-link">about:studies</a> למידע נוסף, כולל האפשרות להשבית ניסויים או למנוע מ־{ -brand-short-name } להריץ את אותו הסוג של הניסוי בעתיד.
+support-remote-features-title = תכונות מרוחקות
+support-remote-features-name = שם
+support-remote-features-status = מצב

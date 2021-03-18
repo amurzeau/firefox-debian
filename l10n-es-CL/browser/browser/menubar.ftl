@@ -207,6 +207,8 @@ menu-history-undo-menu =
     .label = Pestañas cerradas recientemente
 menu-history-undo-window-menu =
     .label = Ventanas cerradas recientemente
+menu-history-reopen-all-tabs = Reabrir todas las pestañas
+menu-history-reopen-all-windows = Reabrir todas las ventanas
 
 ## Bookmarks Menu
 
@@ -317,11 +319,19 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = Atajos del teclado
     .accesskey = K
+menu-get-help =
+    .label = Obtener ayuda
+    .accesskey = H
 menu-help-troubleshooting-info =
     .label = Información para resolver problemas
     .accesskey = T
+menu-help-more-troubleshooting-info =
+    .label = Más información para resolver problemas
+    .accesskey = T
 menu-help-taskmanager =
     .label = Administrador de tareas
+menu-help-report-site-issue =
+    .label = Reportar problema con el sitio…
 menu-help-feedback-page =
     .label = Enviar comentarios…
     .accesskey = s
@@ -331,6 +341,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Reiniciar con los complementos habilitados…
     .accesskey = R
+menu-help-enter-troubleshoot-mode =
+    .label = Modo de resolución de problemas
+    .accesskey = M
+menu-help-exit-troubleshoot-mode =
+    .label = Desactivar modo de resolución de problemas
+    .accesskey = M
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

@@ -198,7 +198,7 @@ about-logins-confirm-remove-all-sync-dialog-title =
 about-logins-confirm-remove-all-sync-dialog-message =
     { $count ->
         [1] פעולה זו תסיר את הכניסה ששמרת ב־{ -brand-short-name } בכל המכשירים המסונכרנים ל{ -fxaccount-brand-name(case: "the") } שלך. יוסרו גם ההתרעות על הדליפות שמופיעות כאן. לא יהיה באפשרותך לבטל פעולה זו.
-        [one] פעולה זו תסיר את הכניסה ששמרת ב־{ -brand-short-name } בכל המכשירים המסונכרנים ל{ -fxaccount-brand-name(case: "the") } שלך. יוסרו גם ההתרעות על הדליפות שמו{ -fxaccount-brand-name }פיעות כאן. לא יהיה באפשרותך לבטל פעולה זו.
+        [one] פעולה זו תסיר את הכניסה ששמרת ב־{ -brand-short-name } בכל המכשירים המסונכרנים ל{ -fxaccount-brand-name(case: "the") } שלך. יוסרו גם ההתרעות על הדליפות שמופיעות כאן. לא יהיה באפשרותך לבטל פעולה זו.
        *[other] פעולה זו תסיר את כל הכניסות ששמרת ב־{ -brand-short-name } בכל המכשירים המסונכרנים ל{ -fxaccount-brand-name(case: "the") } שלך. יוסרו גם ההתרעות על הדליפות שמופיעות כאן. לא יהיה באפשרותך לבטל פעולה זו.
     }
 about-logins-confirm-export-dialog-title = ייצוא כניסות וססמאות
@@ -314,6 +314,46 @@ about-logins-import-dialog-error-no-logins-imported = לא יובאו כניסו
 about-logins-import-dialog-error-learn-more = מידע נוסף
 about-logins-import-dialog-error-try-again = ניסיון חוזר…
 about-logins-import-dialog-error-cancel = ביטול
+about-logins-import-report-title = סיכום הייבוא
+about-logins-import-report-description = כניסות וססמאות יובאו אל { -brand-short-name }.
+#
+# Variables:
+#  $number (number) - The number of the row
+about-logins-import-report-row-index = שורה { $number }
+about-logins-import-report-row-description-no-change = כפיל: התאמה מדויקת של כניסה קיימת
+about-logins-import-report-row-description-error = שגיאה: שדה חסר
+
+##
+## Variables:
+##  $field (String) - The name of the field from the CSV file for example url, username or password
+
+about-logins-import-report-row-description-error-multiple-values = שגיאה: ערכים מרובים עבור { $field }
+about-logins-import-report-row-description-error-missing-field = שגיאה: { $field } חסר
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-report-added =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">כניסות חדשות נוספו</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">כניסות חדשות נוספו</div>
+    }
+about-logins-import-report-modified =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">כניסות קיימות עודכנו</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">כניסות קיימות עודכנו</div>
+    }
+about-logins-import-report-no-change =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">כניסות כפולות</div> <div data-l10n-name="not-imported">(לא יובאו)</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">כניסות כפולות</div> <div data-l10n-name="not-imported">(לא יובאו)</div>
+    }
+about-logins-import-report-error =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">שגיאות</div> <div data-l10n-name="not-imported">(לא יובאו)</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">שגיאות</div> <div data-l10n-name="not-imported">(לא יובאו)</div>
+    }
 
 ## Logins import report page
 

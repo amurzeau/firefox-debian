@@ -207,8 +207,8 @@ menu-history-undo-menu =
     .label = Kürzlich geschlossene Tabs
 menu-history-undo-window-menu =
     .label = Kürzlich geschlossene Fenster
-menu-history-reopen-all-tabs = Alle Tabs neu öffnen
-menu-history-reopen-all-windows = Alle Fenster neu öffnen
+menu-history-reopen-all-tabs = Alle Tabs wieder öffnen
+menu-history-reopen-all-windows = Alle Fenster wieder öffnen
 
 ## Bookmarks Menu
 
@@ -244,6 +244,9 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Bei { -brand-product-name } anmelden…
     .accesskey = B
+menu-tools-extensions =
+    .label = Erweiterungen und Themes
+    .accesskey = E
 menu-tools-turn-on-sync =
     .label = { -sync-brand-short-name } aktivieren…
     .accesskey = n
@@ -325,8 +328,13 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Informationen zur Fehlerbehebung
     .accesskey = z
+menu-help-more-troubleshooting-info =
+    .label = Weitere Informationen zur Fehlerbehebung
+    .accesskey = z
 menu-help-taskmanager =
     .label = Task-Manager
+menu-help-report-site-issue =
+    .label = Seitenproblem melden…
 menu-help-feedback-page =
     .label = Feedback senden…
     .accesskey = s
@@ -336,6 +344,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Mit aktivierten Add-ons neu starten
     .accesskey = A
+menu-help-enter-troubleshoot-mode =
+    .label = Fehlerbehebungsmodus
+    .accesskey = m
+menu-help-exit-troubleshoot-mode =
+    .label = Fehlerbehebungsmodus deaktivieren
+    .accesskey = m
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

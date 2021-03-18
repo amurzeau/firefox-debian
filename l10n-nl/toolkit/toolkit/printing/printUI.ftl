@@ -39,6 +39,11 @@ printui-scale-pcent = Schaal
 # Section title (noun) for the two-sided print options
 printui-two-sided-printing = Dubbelzijdig afdrukken
 printui-duplex-checkbox = Op beide zijden afdrukken
+printui-two-sided-printing-off = Uit
+# Flip the sheet as if it were bound along its long edge.
+printui-two-sided-printing-long-edge = Draaien op lange zijde
+# Flip the sheet as if it were bound along its short edge.
+printui-two-sided-printing-short-edge = Draaien op korte zijde
 # Section title for miscellaneous print options
 printui-options = Opties
 printui-headers-footers-checkbox = Kop- en voetteksten afdrukken
@@ -96,6 +101,7 @@ printui-paper-tabloid = Tabloid
 
 printui-error-invalid-scale = De schaal moet een getal tussen 10 en 200 zijn.
 printui-error-invalid-margin = Voer een geldige marge voor het geselecteerde papierformaat in.
+printui-error-invalid-copies = Het aantal exemplaren moet een getal tussen 1 en 10000 zijn.
 # Variables
 # $numPages (integer) - Number of pages
 printui-error-invalid-range = Het bereik moet een getal tussen 1 en { $numPages } zijn.

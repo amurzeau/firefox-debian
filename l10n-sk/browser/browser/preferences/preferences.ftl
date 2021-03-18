@@ -898,6 +898,10 @@ sitedata-option-block-cross-site-trackers =
     .label = Sledovacie prvky
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Sledovacie prvky sociálnych sietí
+sitedata-option-block-cross-site-tracking-cookies-including-social-media =
+    .label = Sledovacie cookies tretích strán — vrátane cookes sociálnych sietí
+sitedata-option-block-cross-site-cookies-including-social-media =
+    .label = Cookies tretích strán — vrátane cookies sociálnych sietí
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Sledovacie prvky sociálnych sietí, ostatné izolovať
 sitedata-option-block-unvisited =
@@ -949,6 +953,7 @@ addressbar-suggestions-settings = Zmeniť nastavenia pre návrhy vyhľadávania
 content-blocking-enhanced-tracking-protection = Rozšírená ochrana pred sledovaním
 content-blocking-section-top-level-description = Sledovacie prvky zbierajú informácie o tom, čo na internete robíte. { -brand-short-name } blokuje množstvo takýchto prvkov a ďalších škodlivých skriptov.
 content-blocking-learn-more = Ďalšie informácie
+content-blocking-fpi-incompatibility-warning = Používate izoláciu prvej strany (FPI), ktorá potlačí niektoré nastavenia cookies prehliadača { -brand-short-name }.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -970,6 +975,7 @@ content-blocking-etp-standard-desc = Vyvážená ochrana a výkon. Neovplyvní n
 content-blocking-etp-strict-desc = Viac blokovaného obsahu zvyšuje pravdepodobnosť, že niektoré stránky nebudú správne fungovať.
 content-blocking-etp-custom-desc = Vyberte sledovacie prvky a skripty, ktoré chcete blokovať.
 content-blocking-private-windows = Sledovací obsah je blokovaný v súkromných oknách
+content-blocking-cross-site-cookies = Cookies tretích strán
 content-blocking-cross-site-tracking-cookies = Blokované sú sledovacie cookies
 content-blocking-cross-site-tracking-cookies-plus-isolate = Sledovacie cookies tretích strán, ostatné izolovať
 content-blocking-social-media-trackers = Blokované sú sledovacie prvky sociálnych sietí
@@ -1154,7 +1160,15 @@ space-alert-under-5gb-message = Aplikácii { -brand-short-name } dochádza miest
 
 ## Privacy Section - HTTPS-Only
 
+httpsonly-header = Režim "Len HTTPS"
+httpsonly-description = Protokol HTTPS poskytuje bezpečné a šifrované spojenie medzi aplikáciou { -brand-short-name } a webmi, ktoré navštevujete. Väčšina webových stránok podporuje protokol HTTPS a ak je povolený režim "Len HTTPS", { -brand-short-name } zmení všetky pripojenia na zabezpečené.
 httpsonly-learn-more = Ďalšie informácie
+httpsonly-radio-enabled =
+    .label = Povoliť režim "Len HTTPS" vo všetkých oknách
+httpsonly-radio-enabled-pbm =
+    .label = Povoliť režim "Len HTTPS" iba v súkromných oknách
+httpsonly-radio-disabled =
+    .label = Nepovoliť režim "Len HTTPS"
 
 ## The following strings are used in the Download section of settings
 

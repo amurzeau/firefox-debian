@@ -111,6 +111,9 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Obre l'enllaç en una pestanya de contenidor nova
     .accesskey = b
+main-context-menu-open-link-container =
+    .label = Obre l'enllaç en un contenidor nou
+    .accesskey = r
 main-context-menu-open-link-new-window =
     .label = Obre l'enllaç en una finestra nova
     .accesskey = f
@@ -120,14 +123,22 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = Afegeix l'enllaç a les adreces d'interès
     .accesskey = l
+main-context-menu-bookmark-link =
+    .label = Afegeix l'enllaç a les adreces d'interès
+    .accesskey = e
 main-context-menu-save-link =
     .label = Anomena i desa el contingut de l'enllaç…
     .accesskey = s
 main-context-menu-save-link-to-pocket =
     .label = Desa l'enllaç al { -pocket-brand-name }
-    .accesskey = o
+    .accesskey = k
 
 ## The access keys for "Copy Link Location" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+
+## The access keys for "Copy Link" and "Copy Email Address"
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
@@ -135,8 +146,11 @@ main-context-menu-copy-email =
     .label = Copia l'adreça electrònica
     .accesskey = e
 main-context-menu-copy-link =
+    .label = Copia la ubicació de l'enllaç
+    .accesskey = u
+main-context-menu-copy-link-simple =
     .label = Copia l'enllaç
-    .accesskey = C
+    .accesskey = l
 
 ## Media (video/audio) controls
 ##
@@ -227,6 +241,15 @@ main-context-menu-video-copy-location =
 main-context-menu-audio-copy-location =
     .label = Copia la ubicació de l'àudio
     .accesskey = o
+main-context-menu-image-copy-link =
+    .label = Copia l'enllaç de la imatge
+    .accesskey = o
+main-context-menu-video-copy-link =
+    .label = Copia l'enllaç del vídeo
+    .accesskey = o
+main-context-menu-audio-copy-link =
+    .label = Copia l'enllaç de l'àudio
+    .accesskey = o
 main-context-menu-image-save-as =
     .label = Anomena i desa la imatge…
     .accesskey = A
@@ -239,6 +262,9 @@ main-context-menu-image-set-as-background =
 main-context-menu-image-info =
     .label = Visualitza la informació de la imatge
     .accesskey = f
+main-context-menu-image-set-image-as-background =
+    .label = Defineix la imatge com a fons d'escriptori…
+    .accesskey = D
 main-context-menu-image-desc =
     .label = Visualitza la descripció
     .accesskey = d
@@ -275,6 +301,9 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = Utilitza una contrasenya generada…
     .accesskey = g
+main-context-menu-manage-logins =
+    .label = Gestiona els inicis de sessió…
+    .accesskey = G
 main-context-menu-keyword =
     .label = Afegeix una paraula clau per a aquesta cerca…
     .accesskey = p
@@ -331,6 +360,9 @@ main-context-menu-bidi-switch-page =
     .accesskey = g
 main-context-menu-inspect-element =
     .label = Inspecciona l'element
+    .accesskey = I
+main-context-menu-inspect =
+    .label = Inspecciona
     .accesskey = I
 main-context-menu-inspect-a11y-properties =
     .label = Inspecciona les propietats d'accessibilitat

@@ -43,7 +43,6 @@ onboarding-join-form-signin-label = כבר יש לך חשבון?
 # Text for link to submit the sign in form
 onboarding-join-form-signin = כניסה
 onboarding-start-browsing-button-label = התחלת גלישה
-onboarding-not-now-button-label = לא כעת
 onboarding-cards-dismiss =
     .title = הסרה
     .aria-label = הסרה
@@ -84,101 +83,6 @@ onboarding-benefit-monitor-title = { -monitor-brand-short-name }
 onboarding-benefit-monitor-text = קבלת התרעה כאשר המידע האישי שלך נחשף בדליפת נתונים מוכרת.
 onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
 onboarding-benefit-lockwise-text = ניהול ססמאות בצורה מאובטחת וניידת.
-
-## Custom Return To AMO onboarding strings
-
-return-to-amo-subtitle = מצוין, השגת לך את { -brand-short-name }
-# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
-#
-# Variables:
-#   $addon-name (String) - Name of the add-on
-return-to-amo-addon-title = כעת הבה נשיג לך את <img data-l10n-name="icon"/> <b>{ $addon-name }</b>.
-return-to-amo-add-extension-label = הוספת ההרחבה
-
-## Multistage 3-screen onboarding flow strings (about:welcome pages)
-
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = ברוכים הבאים אל <span data-l10n-name="zap">{ -brand-short-name }</span>
-onboarding-multistage-welcome-subtitle = הדפדפן המהיר, הבטוח והפרטי שמגובה על־ידי עמותה ללא מטרות רווח.
-onboarding-multistage-welcome-primary-button-label = תחילת עבודה
-onboarding-multistage-welcome-secondary-button-label = כניסה
-onboarding-multistage-welcome-secondary-button-text = כבר יש לך חשבון?
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "more" should stay inside the span.
-onboarding-multistage-import-header = ייבוא הססמאות והסימניות שלך, <span data-l10n-name="zap">ועוד</span>
-onboarding-multistage-import-subtitle = הגעת מדפדפן אחר? קל להעביר הכל ל־{ -brand-short-name }.
-onboarding-multistage-import-primary-button-label = התחלה בייבוא
-onboarding-multistage-import-secondary-button-label = לא כעת
-# Info displayed in the footer of import settings screen during onboarding flow.
-# This supports welcome screen showing top sites imported from the user's default browser.
-onboarding-import-sites-disclaimer =
-    האתרים המוצגים כאן נמצאו במכשיר זה. { -brand-short-name } לא שומר או מסנכרן נתונים
-    מדפדפן אחר אלא אם בחרת לייבא אותם.
-# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
-# Variables:
-#   $current (Int) - Number of the current page
-#   $total (Int) - Total number of pages
-onboarding-welcome-steps-indicator =
-    .aria-label = תחילת עבודה: מסך { $current } מתוך { $total }
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "look" should stay inside the span.
-onboarding-multistage-theme-header = בחירת <span data-l10n-name="zap">מראה</span>
-onboarding-multistage-theme-subtitle = התאמה אישית של { -brand-short-name } עם ערכת נושא.
-onboarding-multistage-theme-primary-button-label = שמירת ערכת נושא
-onboarding-multistage-theme-secondary-button-label = לא כעת
-# Automatic theme uses operating system color settings
-onboarding-multistage-theme-label-automatic = אוטומטי
-onboarding-multistage-theme-label-light = בהיר
-onboarding-multistage-theme-label-dark = כהה
-# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
-onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
-
-## Please make sure to split the content of the title attribute into lines whose
-## width corresponds to about 40 Latin characters, to ensure that the tooltip
-## doesn't become too long. Line breaks will be preserved when displaying the
-## tooltip.
-
-# Tooltip displayed on hover of automatic theme
-onboarding-multistage-theme-tooltip-automatic-2 =
-    .title =
-        שימוש במראה של מערכת ההפעלה שלך
-        עבור כפתורים, תפריטים וחלונות.
-# Input description for automatic theme
-onboarding-multistage-theme-description-automatic-2 =
-    .aria-description =
-        שימוש במראה של מערכת ההפעלה שלך
-        עבור כפתורים, תפריטים וחלונות.
-# Tooltip displayed on hover of light theme
-onboarding-multistage-theme-tooltip-light-2 =
-    .title =
-        שימוש בתצוגה בהירה עבור כפתורים,
-        תפריטים וחלונות.
-# Input description for light theme
-onboarding-multistage-theme-description-light =
-    .aria-description =
-        שימוש בתצוגה בהירה עבור כפתורים,
-        תפריטים וחלונות.
-# Tooltip displayed on hover of dark theme
-onboarding-multistage-theme-tooltip-dark-2 =
-    .title =
-        שימוש בתצוגה כהה עבור כפתורים,
-        תפריטים וחלונות.
-# Input description for dark theme
-onboarding-multistage-theme-description-dark =
-    .aria-description =
-        שימוש בתצוגה כהה עבור כפתורים,
-        תפריטים וחלונות.
-# Tooltip displayed on hover of Alpenglow theme
-onboarding-multistage-theme-tooltip-alpenglow-2 =
-    .title =
-        שימוש בתצוגה צבעונית עבור כפתורים,
-        תפריטים וחלונות.
-# Input description for Alpenglow theme
-onboarding-multistage-theme-description-alpenglow =
-    .aria-description =
-        שימוש בתצוגה צבעונית עבור כפתורים,
-        תפריטים וחלונות.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -232,3 +136,106 @@ return-to-amo-sub-header = מצוין, השגת לך את { -brand-short-name }
 return-to-amo-addon-header = כעת הבה נשיג לך את <icon></icon><b>{ $addon-name }.</b>
 return-to-amo-extension-button = הוספת ההרחבה
 return-to-amo-get-started-button = תחילת עבודה עם { -brand-short-name }
+onboarding-not-now-button-label = לא כעת
+
+## Custom Return To AMO onboarding strings
+
+return-to-amo-subtitle = מצוין, השגת לך את { -brand-short-name }
+# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-title = כעת הבה נשיג לך את <img data-l10n-name="icon"/> <b>{ $addon-name }</b>.
+return-to-amo-add-extension-label = הוספת ההרחבה
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = ברוכים הבאים אל <span data-l10n-name="zap">{ -brand-short-name }</span>
+onboarding-multistage-welcome-subtitle = הדפדפן המהיר, הבטוח והפרטי שמגובה על־ידי עמותה ללא מטרות רווח.
+onboarding-multistage-welcome-primary-button-label = תחילת עבודה
+onboarding-multistage-welcome-secondary-button-label = כניסה
+onboarding-multistage-welcome-secondary-button-text = כבר יש לך חשבון?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "default" should stay inside the span.
+onboarding-multistage-set-default-header = להפוך את { -brand-short-name } <span data-l10n-name="zap">לברירת המחדל</span> שלך
+onboarding-multistage-set-default-subtitle = מהירות, בטיחות ופרטיות בכל פעם שגולשים ברשת.
+onboarding-multistage-set-default-primary-button-label = הגדרה כדפדפן ברירת מחדל
+onboarding-multistage-set-default-secondary-button-label = לא כעת
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = ייבוא הססמאות והסימניות שלך, <span data-l10n-name="zap">ועוד</span>
+onboarding-multistage-import-subtitle = הגעת מדפדפן אחר? קל להעביר הכל ל־{ -brand-short-name }.
+onboarding-multistage-import-primary-button-label = התחלה בייבוא
+onboarding-multistage-import-secondary-button-label = לא כעת
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer =
+    האתרים המוצגים כאן נמצאו במכשיר זה. { -brand-short-name } לא שומר או מסנכרן נתונים
+    מדפדפן אחר אלא אם בחרת לייבא אותם.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = תחילת עבודה: מסך { $current } מתוך { $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = בחירת <span data-l10n-name="zap">מראה</span>
+onboarding-multistage-theme-subtitle = התאמה אישית של { -brand-short-name } עם ערכת נושא.
+onboarding-multistage-theme-primary-button-label = שמירת ערכת נושא
+onboarding-multistage-theme-primary-button-label2 = סיום
+onboarding-multistage-theme-secondary-button-label = לא כעת
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = אוטומטי
+onboarding-multistage-theme-label-light = בהיר
+onboarding-multistage-theme-label-dark = כהה
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        שימוש במראה של מערכת ההפעלה שלך
+        עבור כפתורים, תפריטים וחלונות.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        שימוש במראה של מערכת ההפעלה שלך
+        עבור כפתורים, תפריטים וחלונות.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        שימוש בתצוגה בהירה עבור כפתורים,
+        תפריטים וחלונות.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        שימוש בתצוגה בהירה עבור כפתורים,
+        תפריטים וחלונות.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        שימוש בתצוגה כהה עבור כפתורים,
+        תפריטים וחלונות.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        שימוש בתצוגה כהה עבור כפתורים,
+        תפריטים וחלונות.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        שימוש בתצוגה צבעונית עבור כפתורים,
+        תפריטים וחלונות.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        שימוש בתצוגה צבעונית עבור כפתורים,
+        תפריטים וחלונות.

@@ -27,6 +27,16 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Zacynjone rejtariki wócyniś
         }
     .accesskey = Z
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Zacynjony rejtarik znowego wócyniś
+            [one] Zacynjony rejtarik znowego wócyniś
+            [two] Zacynjonej rejtarika znowego wócyniś
+            [few] Zacynjone rejtariki znowego wócyniś
+           *[other] Zacynjone rejtariki znowego wócyniś
+        }
+    .accesskey = Z
 toolbar-context-menu-manage-extension =
     .label = Rozšyrjenje zastojaś
     .accesskey = R
@@ -48,21 +58,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = W symbolowej rědce awtomatiski schowaś
     .accesskey = s
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Tłocašk schowaś, gaž prozne
+    .accesskey = T
 toolbar-context-menu-remove-from-toolbar =
     .label = Ze symboloweje rědki wótpóraś
     .accesskey = Z
 toolbar-context-menu-view-customize-toolbar =
     .label = Pśiměriś…
     .accesskey = m
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Pśecej
-    .accesskey = P
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Nigda
-    .accesskey = N
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Jano w nowem rejtariku
-    .accesskey = J
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Symbolowu rědku pśiměriś…
+    .accesskey = S
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Pśecej pokazaś
     .accesskey = P

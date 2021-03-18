@@ -24,6 +24,13 @@ toolbar-context-menu-undo-close-tabs =
            *[other] 復原已關閉分頁
         }
     .accesskey = U
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] 回復關閉的分頁
+           *[other] 回復關閉的 { $tabCount } 個分頁
+        }
+    .accesskey = o
 toolbar-context-menu-manage-extension =
     .label = 管理擴充套件
     .accesskey = E
@@ -45,21 +52,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = 於工具列自動隱藏
     .accesskey = A
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = 無內容時隱藏按鈕
+    .accesskey = H
 toolbar-context-menu-remove-from-toolbar =
     .label = 自工具列移除
     .accesskey = R
 toolbar-context-menu-view-customize-toolbar =
     .label = 自訂…
     .accesskey = C
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = 總是
-    .accesskey = A
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = 永不
-    .accesskey = N
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = 只在新分頁
-    .accesskey = O
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = 自訂工具列…
+    .accesskey = C
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = 每次都顯示
     .accesskey = A

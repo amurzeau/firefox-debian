@@ -350,6 +350,14 @@ browser-window-close-button =
 
 browser-tab-audio-playing = Playing
 browser-tab-audio-muted = Muted
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = PLAYING
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = MUTED
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = AUTOPLAY BLOCKED
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = PICTURE-IN-PICTURE
 
 ## Bookmarks toolbar items
 
@@ -366,6 +374,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Microphone to share:
     .accesskey = M
+popup-select-camera-device =
+    .value = Camera:
+    .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = Camera
+popup-select-microphone-device =
+    .value = Microphone:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Microphone
 popup-all-windows-shared = All visible windows on your screen will be shared.
 popup-screen-sharing-not-now =
     .label = Not Now
@@ -375,6 +393,13 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = Disable notifications from { -brand-short-name } while sharing
 popup-silence-notifications-checkbox-warning = { -brand-short-name } will not display notifications while you are sharing.
+popup-screen-sharing-block =
+    .label = Block
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Always block
+    .accesskey = w
+popup-mute-notifications-checkbox = Mute website notifications while sharing
 
 ## WebRTC window or screen share tab switch warning
 
@@ -515,6 +540,8 @@ crashed-subframe-message = <strong>Part of this page crashed.</strong> To let { 
 crashed-subframe-learnmore =
     .label = Learn More
     .accesskey = L
+crashed-subframe-learnmore-link =
+    .value = Learn More
 crashed-subframe-submit =
     .label = Submit Report
     .accesskey = S
@@ -529,6 +556,7 @@ bookmarks-manage-bookmarks =
     .label = Manage Bookmarks
 bookmarks-recent-bookmarks-panel =
     .value = Recent Bookmarks
+bookmarks-recent-bookmarks-panel-subheader = Recent Bookmarks
 bookmarks-toolbar-chevron =
     .tooltiptext = Show more bookmarks
 bookmarks-sidebar-content =
@@ -608,3 +636,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Work Offline
     .accesskey = k
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Some audio or video on this site uses DRM software, which may limit what { -brand-short-name } can let you do with it.
+eme-notifications-drm-content-playing-manage = Manage Settings
+eme-notifications-drm-content-playing-manage-accesskey = M
+eme-notifications-drm-content-playing-dismiss = Dismiss
+eme-notifications-drm-content-playing-dismiss-accesskey = D
+
+## Password save/update panel
+
+panel-save-update-username = Username
+panel-save-update-password = Password
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Remove { $name }?
+addon-removal-abuse-report-checkbox = Report this extension to { -vendor-short-name }

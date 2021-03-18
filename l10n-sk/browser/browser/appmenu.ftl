@@ -17,6 +17,26 @@ appmenuitem-new-window =
     .label = Nové okno
 appmenuitem-new-private-window =
     .label = Nové súkromné okno
+appmenuitem-passwords =
+    .label = Heslá
+appmenuitem-extensions-and-themes =
+    .label = Rozšírenia a témy vzhľadu
+appmenuitem-find-in-page =
+    .label = Hľadať na stránke…
+appmenuitem-more-tools =
+    .label = Ďalšie nástroje
+appmenuitem-exit =
+    .label = Ukončiť
+appmenu-menu-button-closed =
+    .tooltiptext = Otvorí ponuku aplikácie
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Zavrie ponuku aplikácie
+    .label = { -brand-shorter-name }
+# Settings is now used to access the browser settings across all platforms,
+# instead of Options or Preferences.
+appmenuitem-settings =
+    .label = Nastavenia
 
 ## Zoom and Fullscreen Controls
 
@@ -31,6 +51,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Synchronizovať teraz
+appmenuitem-fxa-toolbar-sync-now =
+    .label = Synchronizovať teraz
+    .value = Synchronizovať teraz
+appmenuitem-fxa-manage-account = Spravovať účet
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Posledná synchronizácia { $time }
+    .label = Posledná synchronizácia { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = Synchronizovať a uložiť údaje
+appmenu-fxa-signed-in-label = Prihlásiť sa
+appmenu-fxa-setup-sync =
+    .label = Zapnúť synchronizáciu…
+appmenu-fxa-show-more-tabs = Zobraziť ďalšie karty
 appmenuitem-save-page =
     .label = Uložiť stránku ako…
 
@@ -47,9 +84,46 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-title =
+    .value = { -profiler-brand-name }
+profiler-popup-reveal-description-button =
+    .aria-label = Zobraziť ďalšie informácie
+profiler-popup-learn-more = Ďalšie informácie
+profiler-popup-settings =
+    .value = Nastavenia
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings = Upraviť nastavenia…
+profiler-popup-recording-screen = Nahrávanie…
+# The profiler presets list is generated elsewhere, but the custom preset is defined
+# here only.
+profiler-popup-presets-custom =
+    .label = Vlastné
+profiler-popup-discard-button =
+    .label = Zahodiť
+profiler-popup-capture-button =
+    .label = Spustiť nahrávanie
+profiler-popup-start-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧1
+       *[other] Ctrl+Shift+1
+    }
+profiler-popup-capture-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧2
+       *[other] Ctrl+Shift+2
+    }
+
+## History panel
+
+appmenu-manage-history =
+    .label = Správa histórie
+appmenu-reopen-all-tabs = Obnoviť všetky karty
+appmenu-reopen-all-windows = Obnoviť všetky okná
 
 ## Help panel
 
+appmenu-help-header =
+    .title = Pomocník prehliadača { -brand-shorter-name }
 appmenu-about =
     .label = O aplikácii { -brand-shorter-name }
     .accesskey = O
@@ -65,11 +139,19 @@ appmenu-help-import-from-another-browser =
 appmenu-help-keyboard-shortcuts =
     .label = Klávesové skratky
     .accesskey = K
+appmenu-get-help =
+    .label = Získať pomoc
+    .accesskey = Z
 appmenu-help-troubleshooting-info =
     .label = Informácie pre riešenie problémov
     .accesskey = n
+appmenu-help-more-troubleshooting-info =
+    .label = Ďalšie informácie pre riešenie problémov
+    .accesskey = i
 appmenu-help-taskmanager =
     .label = Správca úloh
+appmenu-help-report-site-issue =
+    .label = Nahlásiť problém so stránkou…
 appmenu-help-feedback-page =
     .label = Odoslať spätnú väzbu…
     .accesskey = d
@@ -83,6 +165,16 @@ appmenu-help-safe-mode-without-addons =
 appmenu-help-safe-mode-with-addons =
     .label = Reštartovať a povoliť doplnky…
     .accesskey = R
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = Režim riešenia problémov
+    .accesskey = m
+appmenu-help-exit-troubleshoot-mode =
+    .label = Vypnúť režim riešenia problémov
+    .accesskey = m
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
@@ -98,3 +190,9 @@ appmenu-help-not-deceptive =
 
 appmenu-help-check-for-update =
     .label = Vyhľadať aktualizácie…
+
+## More Tools
+
+appmenu-customizetoolbar =
+    .label = Upraviť panel nástrojov…
+appmenu-developer-tools-subheader = Nástroje prehliadača

@@ -350,6 +350,14 @@ browser-window-close-button =
 
 browser-tab-audio-playing = Wurdt ôfspile
 browser-tab-audio-muted = Lûd út
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = ÔFSPYLJE
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = LÛD ÚT
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = AUTOMATYSK ÔFSPYLJEN BLOKKEARRE
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = PICTURE-IN-PICTURE
 
 ## Bookmarks toolbar items
 
@@ -366,6 +374,12 @@ popup-select-camera =
 popup-select-microphone =
     .value = Mikrofoan om te dielen:
     .accesskey = M
+popup-select-camera-device =
+    .value = Kamera:
+    .accesskey = K
+popup-select-microphone-device =
+    .value = Mikrofoan:
+    .accesskey = M
 popup-all-windows-shared = Alle sichtbere finsters op jo skerm sille dield wurde.
 popup-screen-sharing-not-now =
     .label = No net
@@ -375,6 +389,13 @@ popup-screen-sharing-never =
     .accesskey = a
 popup-silence-notifications-checkbox = Notifikaasjes fan { -brand-short-name } útskeakelje wylst dielen
 popup-silence-notifications-checkbox-warning = { -brand-short-name } toant gjin meldingen wylst jo diele.
+popup-screen-sharing-block =
+    .label = Blokkearje
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Altyd blokkearje
+    .accesskey = t
+popup-mute-notifications-checkbox = Websitemeldingen dôvje wylst dielen
 
 ## WebRTC window or screen share tab switch warning
 
@@ -515,6 +536,8 @@ crashed-subframe-message = <strong>In part fan dizze side is ferûngelokke.</str
 crashed-subframe-learnmore =
     .label = Mear ynfo
     .accesskey = M
+crashed-subframe-learnmore-link =
+    .value = Mear ynfo
 crashed-subframe-submit =
     .label = Rapport ferstjoere
     .accesskey = s
@@ -529,6 +552,7 @@ bookmarks-manage-bookmarks =
     .label = Blêdwizers beheare
 bookmarks-recent-bookmarks-panel =
     .value = Resinte blêdwizers
+bookmarks-recent-bookmarks-panel-subheader = Resinte blêdwizers
 bookmarks-toolbar-chevron =
     .tooltiptext = Mear blêdwizers toane
 bookmarks-sidebar-content =
@@ -608,3 +632,11 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Offline wurkje
     .accesskey = w
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Guon audio of video op dizze website brûkt DRM-software hokker { -brand-short-name } kin beheine yn wat jo der mei dwaan wolle.
+eme-notifications-drm-content-playing-manage = Ynstellingen beheare
+eme-notifications-drm-content-playing-manage-accesskey = b
+eme-notifications-drm-content-playing-dismiss = Slute
+eme-notifications-drm-content-playing-dismiss-accesskey = S

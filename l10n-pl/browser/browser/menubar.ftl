@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Znajdź na tej stronie…
     .accesskey = Z
+menu-edit-find-in-page =
+    .label = Znajdź na stronie…
+    .accesskey = Z
 menu-edit-find-again =
     .label = Znajdź następne
     .accesskey = n
@@ -128,6 +131,9 @@ menu-view-toolbars-menu =
     .accesskey = P
 menu-view-customize-toolbar =
     .label = Dostosuj…
+    .accesskey = t
+menu-view-customize-toolbar2 =
+    .label = Dostosuj pasek narzędzi…
     .accesskey = t
 menu-view-sidebar =
     .label = Panel boczny
@@ -218,9 +224,11 @@ menu-bookmarks-menu =
 menu-bookmarks-show-all =
     .label = Wyświetl wszystkie zakładki
 menu-bookmark-this-page =
-    .label = Dodaj zakładkę
+    .label = Dodaj zakładkę do tej strony
+menu-bookmark-current-tab =
+    .label = Dodaj zakładkę do tej karty
 menu-bookmark-edit =
-    .label = Edytuj zakładkę
+    .label = Edytuj tę zakładkę
 menu-bookmarks-all-tabs =
     .label = Dodaj zakładki do wszystkich kart…
 menu-bookmarks-toolbar =
@@ -243,6 +251,12 @@ menu-tools-addons =
     .accesskey = D
 menu-tools-fxa-sign-in =
     .label = Zaloguj się w przeglądarce { -brand-product-name }…
+    .accesskey = Z
+menu-tools-extensions =
+    .label = Rozszerzenia i motywy
+    .accesskey = R
+menu-tools-fxa-sign-in2 =
+    .label = Zaloguj się
     .accesskey = Z
 menu-tools-turn-on-sync =
     .label = Włącz { -sync-brand-short-name(case: "acc", capitalization: "lower") }…
@@ -272,6 +286,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] O
            *[other] r
+        }
+menu-settings =
+    .label = Ustawienia
+    .accesskey =
+        { PLATFORM() ->
+            [windows] U
+           *[other] U
         }
 menu-tools-layout-debugger =
     .label = Debuger układu
@@ -323,10 +344,15 @@ menu-get-help =
     .label = Pomoc
     .accesskey = P
 menu-help-troubleshooting-info =
-    .label = Informacje dla pomocy technicznej
+    .label = Informacje do rozwiązywania problemów
+    .accesskey = n
+menu-help-more-troubleshooting-info =
+    .label = Więcej informacji do rozwiązywania problemów
     .accesskey = n
 menu-help-taskmanager =
     .label = Menedżer zadań
+menu-help-report-site-issue =
+    .label = Zgłoś problem ze stroną…
 menu-help-feedback-page =
     .label = Prześlij swoją opinię…
     .accesskey = e
@@ -336,6 +362,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Uruchom ponownie z włączonymi dodatkami
     .accesskey = U
+menu-help-enter-troubleshoot-mode =
+    .label = Tryb rozwiązywania problemów
+    .accesskey = T
+menu-help-exit-troubleshoot-mode =
+    .label = Wyłącz tryb rozwiązywania problemów
+    .accesskey = t
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

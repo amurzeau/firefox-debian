@@ -8,6 +8,12 @@ places-open =
 places-open-tab =
     .label = Obre en una pestanya nova
     .accesskey = t
+places-open-in-tab =
+    .label = Obre en una pestanya nova
+    .accesskey = v
+places-open-all-bookmarks =
+    .label = Obre totes les adreces d'interès
+    .accesskey = O
 places-open-all-in-tabs =
     .label = Obre-ho tot en pestanyes
     .accesskey = O
@@ -27,6 +33,24 @@ places-new-folder =
     .label = Crea una carpeta…
     .accesskey = e
 places-new-separator =
+    .label = Afegeix un separador
+    .accesskey = s
+places-open-in-window =
+    .label = Obre en una finestra nova
+    .accesskey = f
+places-open-in-private-window =
+    .label = Obre en una finestra privada nova
+    .accesskey = p
+places-add-bookmark =
+    .label = Afegeix una adreça d'interès…
+    .accesskey = A
+places-add-folder-contextmenu =
+    .label = Afegeix una carpeta…
+    .accesskey = p
+places-add-folder =
+    .label = Afegeix una carpeta…
+    .accesskey = p
+places-add-separator =
     .label = Afegeix un separador
     .accesskey = s
 places-view =
@@ -60,6 +84,13 @@ places-sortby-name =
 places-properties =
     .label = Propietats
     .accesskey = i
+# places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
+places-edit-bookmark =
+    .label = Edita l'adreça d'interès…
+    .accesskey = E
+places-edit-generic =
+    .label = Edita…
+    .accesskey = E
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
     .label = Adreces d'interès gestionades
@@ -69,3 +100,15 @@ managed-bookmarks-subfolder =
 # This label is used for the "Other Bookmarks" folder that appears in the bookmarks toolbar.
 other-bookmarks-folder =
     .label = Altres adreces d'interès
+# Variables:
+# $count (number) - The number of elements being selected for removal.
+places-remove-bookmark =
+    .label =
+        { $count ->
+            [1] Elimina l'adreça d'interès
+           *[other] Elimina les adreces d'interès
+        }
+    .accesskey = m
+places-manage-bookmarks =
+    .label = Gestiona les adreces d'interès
+    .accesskey = G

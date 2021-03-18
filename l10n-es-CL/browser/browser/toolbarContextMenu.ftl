@@ -25,6 +25,14 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Deshacer cierre de pestañas
         }
     .accesskey = U
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Reabrir pestañas cerrada
+            [one] Reabrir pestañas cerrada
+           *[other] Reabrir pestañas cerradas
+        }
+    .accesskey = o
 toolbar-context-menu-manage-extension =
     .label = Gestionar extensión
     .accesskey = E
@@ -46,21 +54,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Auto-ocultar en la barra de herramientas
     .accesskey = A
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Ocultar botón cuando esté vacío
+    .accesskey = H
 toolbar-context-menu-remove-from-toolbar =
     .label = Remover de la barra
     .accesskey = R
 toolbar-context-menu-view-customize-toolbar =
     .label = Personalizar…
     .accesskey = P
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Siempre
-    .accesskey = A
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Nunca
-    .accesskey = N
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Solo en nueva pestaña
-    .accesskey = O
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Personalizar barra de herramientas…
+    .accesskey = C
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Siempre mostrar
     .accesskey = A

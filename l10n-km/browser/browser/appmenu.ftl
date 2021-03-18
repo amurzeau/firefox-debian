@@ -5,6 +5,8 @@
 
 ## App Menu
 
+appmenuitem-update-banner =
+    .label-update-downloading = ទាញយកបច្ចុប្បន្នភាព { -brand-shorter-name }
 appmenuitem-customize-mode =
     .label = ប្ដូរ​តាម​តម្រូវ​ការ…
 
@@ -39,6 +41,9 @@ appmenuitem-save-page =
 ## "Enable Profiler Menu Button".
 
 
+## History panel
+
+
 ## Help panel
 
 appmenu-about =
@@ -58,6 +63,8 @@ appmenu-help-troubleshooting-info =
     .accesskey = T
 appmenu-help-taskmanager =
     .label = កម្មវិធី​គ្រប់គ្រង​ភារកិច្ច
+appmenu-help-report-site-issue =
+    .label = រាយការណ៍​បញ្ហា​គេហទំព័រ…
 appmenu-help-feedback-page =
     .label = ដាក់​ស្នើ​មតិកែលម្អ…
     .accesskey = S
@@ -72,6 +79,10 @@ appmenu-help-safe-mode-with-addons =
     .label = ចាប់ផ្ដើម​ឡើងវិញ​ដោយ​បើកដំណើរការ​​កម្មវិធី​បន្ថែម
     .accesskey = R
 
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
@@ -83,4 +94,7 @@ appmenu-help-not-deceptive =
     .accesskey = d
 
 ##
+
+
+## More Tools
 

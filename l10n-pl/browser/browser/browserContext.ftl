@@ -93,15 +93,15 @@ main-context-menu-bookmark-add-with-shortcut =
     .accesskey = D
     .tooltiptext = Dodaj zakładkę do tej strony ({ $shortcut })
 main-context-menu-bookmark-change =
-    .aria-label = Edytuj zakładkę
-    .accesskey = D
-    .tooltiptext = Edytuj zakładkę
+    .aria-label = Edytuj tę zakładkę
+    .accesskey = d
+    .tooltiptext = Edytuj tę zakładkę
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 main-context-menu-bookmark-change-with-shortcut =
-    .aria-label = Edytuj zakładkę
-    .accesskey = D
-    .tooltiptext = Edytuj zakładkę ({ $shortcut })
+    .aria-label = Edytuj tę zakładkę
+    .accesskey = d
+    .tooltiptext = Edytuj tę zakładkę ({ $shortcut })
 main-context-menu-open-link =
     .label = Otwórz odnośnik
     .accesskey = O
@@ -111,6 +111,9 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Otwórz odnośnik w nowej karcie w nowym kontekście
     .accesskey = k
+main-context-menu-open-link-container =
+    .label = Otwórz odnośnik w nowym kontekście
+    .accesskey = k
 main-context-menu-open-link-new-window =
     .label = Otwórz odnośnik w nowym oknie
     .accesskey = n
@@ -118,7 +121,10 @@ main-context-menu-open-link-new-private-window =
     .label = Otwórz odnośnik w nowym oknie w trybie prywatnym
     .accesskey = w
 main-context-menu-bookmark-this-link =
-    .label = Dodaj zakładkę do odnośnika
+    .label = Dodaj zakładkę do tego odnośnika
+    .accesskey = D
+main-context-menu-bookmark-link =
+    .label = Dodaj zakładkę do tego odnośnika
     .accesskey = D
 main-context-menu-save-link =
     .label = Zapisz element docelowy jako…
@@ -131,12 +137,20 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = Kopiuj adres e-mail
-    .accesskey = a
+    .accesskey = o
 main-context-menu-copy-link =
     .label = Kopiuj adres odnośnika
-    .accesskey = a
+    .accesskey = o
+main-context-menu-copy-link-simple =
+    .label = Kopiuj odnośnik
+    .accesskey = o
 
 ## Media (video/audio) controls
 ##
@@ -179,6 +193,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Absurdalna (2×)
     .accesskey = A
+main-context-menu-media-play-speed-2 =
+    .label = Szybkość
+    .accesskey = S
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0,5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1,0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1,25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1,5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Zapętl
     .accesskey = Z
@@ -206,6 +233,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Obraz w obrazie
     .accesskey = O
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Oglądaj w trybie „Obraz w obrazie”
+    .accesskey = O
 main-context-menu-image-reload =
     .label = Odśwież obraz
     .accesskey = O
@@ -215,17 +247,32 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = Pokaż wideo
     .accesskey = k
+main-context-menu-image-view-new-tab =
+    .label = Otwórz obraz w nowej karcie
+    .accesskey = n
+main-context-menu-video-view-new-tab =
+    .label = Otwórz wideo w nowej karcie
+    .accesskey = n
 main-context-menu-image-copy =
     .label = Kopiuj obraz
     .accesskey = r
 main-context-menu-image-copy-location =
     .label = Kopiuj adres obrazu
-    .accesskey = b
+    .accesskey = u
 main-context-menu-video-copy-location =
     .label = Kopiuj adres wideo
     .accesskey = u
 main-context-menu-audio-copy-location =
     .label = Kopiuj adres dźwięku
+    .accesskey = u
+main-context-menu-image-copy-link =
+    .label = Kopiuj odnośnik do obrazu
+    .accesskey = u
+main-context-menu-video-copy-link =
+    .label = Kopiuj odnośnik do wideo
+    .accesskey = u
+main-context-menu-audio-copy-link =
+    .label = Kopiuj odnośnik do dźwięku
     .accesskey = u
 main-context-menu-image-save-as =
     .label = Zapisz obraz jako…
@@ -234,11 +281,14 @@ main-context-menu-image-email =
     .label = Wyślij obraz…
     .accesskey = o
 main-context-menu-image-set-as-background =
-    .label = Ustaw jako tapetę…
+    .label = Ustaw jako tło pulpitu…
     .accesskey = t
 main-context-menu-image-info =
     .label = Pokaż informacje o obrazie
     .accesskey = f
+main-context-menu-image-set-image-as-background =
+    .label = Ustaw obraz jako tło pulpitu…
+    .accesskey = t
 main-context-menu-image-desc =
     .label = Pokaż opis
     .accesskey = s
@@ -250,6 +300,9 @@ main-context-menu-audio-save-as =
     .accesskey = s
 main-context-menu-video-image-save-as =
     .label = Zapisz klatkę jako…
+    .accesskey = k
+main-context-menu-video-take-snapshot =
+    .label = Zapisz klatkę…
     .accesskey = k
 main-context-menu-video-email =
     .label = Wyślij wideo…
@@ -265,7 +318,7 @@ main-context-menu-plugin-hide =
     .accesskey = U
 main-context-menu-save-to-pocket =
     .label = Wyślij stronę do { -pocket-brand-name }
-    .accesskey = W
+    .accesskey = l
 main-context-menu-send-to-device =
     .label = Wyślij stronę do
     .accesskey = W
@@ -275,6 +328,26 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = Użyj wygenerowanego hasła…
     .accesskey = h
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = Użyj zachowanych danych logowania
+    .accesskey = U
+main-context-menu-use-saved-password =
+    .label = Użyj zachowanego hasła
+    .accesskey = U
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = Zaproponuj silne hasło…
+    .accesskey = s
+main-context-menu-manage-logins =
+    .label = Zarządzaj danymi logowania…
+    .accesskey = d
 main-context-menu-keyword =
     .label = Utwórz słowo kluczowe dla tej wyszukiwarki…
     .accesskey = U
@@ -282,8 +355,8 @@ main-context-menu-link-send-to-device =
     .label = Wyślij odnośnik do
     .accesskey = W
 main-context-menu-frame =
-    .label = Ramka
-    .accesskey = R
+    .label = Ta ramka
+    .accesskey = r
 main-context-menu-frame-show-this =
     .label = Pokaż tylko tę ramkę
     .accesskey = r
@@ -297,7 +370,7 @@ main-context-menu-frame-reload =
     .label = Odśwież ramkę
     .accesskey = O
 main-context-menu-frame-bookmark =
-    .label = Dodaj zakładkę do ramki
+    .label = Dodaj zakładkę do tej ramki
     .accesskey = D
 main-context-menu-frame-save-as =
     .label = Zapisz ramkę jako…
@@ -317,6 +390,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Pokaż źródło zaznaczenia
     .accesskey = d
+main-context-menu-take-screenshot =
+    .label = Wykonaj zrzut ekranu
+    .accesskey = W
 main-context-menu-view-page-source =
     .label = Pokaż źródło strony
     .accesskey = y
@@ -331,7 +407,10 @@ main-context-menu-bidi-switch-page =
     .accesskey = s
 main-context-menu-inspect-element =
     .label = Zbadaj element
-    .accesskey = t
+    .accesskey = b
+main-context-menu-inspect =
+    .label = Zbadaj
+    .accesskey = b
 main-context-menu-inspect-a11y-properties =
     .label = Zbadaj własności dostępności
 main-context-menu-eme-learn-more =

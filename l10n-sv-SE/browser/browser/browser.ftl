@@ -374,6 +374,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Mikrofon att dela:
     .accesskey = M
+popup-select-camera-device =
+    .value = Kamera:
+    .accesskey = K
+popup-select-camera-icon =
+    .tooltiptext = Kamera
+popup-select-microphone-device =
+    .value = Mikrofon:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Mikrofon
 popup-all-windows-shared = Alla synliga fönster på din skärm kommer att delas.
 popup-screen-sharing-not-now =
     .label = Inte nu
@@ -383,6 +393,13 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = Inaktivera aviseringar från { -brand-short-name } när du delar
 popup-silence-notifications-checkbox-warning = { -brand-short-name } kommer inte att visa aviseringar medan du delar.
+popup-screen-sharing-block =
+    .label = Blockera
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Blockera alltid
+    .accesskey = a
+popup-mute-notifications-checkbox = Stäng av webbplatsaviseringar när du delar
 
 ## WebRTC window or screen share tab switch warning
 
@@ -523,6 +540,8 @@ crashed-subframe-message = <strong>En del av den här sidan kraschade.</strong> 
 crashed-subframe-learnmore =
     .label = Läs mer
     .accesskey = L
+crashed-subframe-learnmore-link =
+    .value = Läs mer
 crashed-subframe-submit =
     .label = Skicka in rapport
     .accesskey = S
@@ -537,6 +556,7 @@ bookmarks-manage-bookmarks =
     .label = Hantera bokmärken
 bookmarks-recent-bookmarks-panel =
     .value = Senaste bokmärken
+bookmarks-recent-bookmarks-panel-subheader = Senaste bokmärken
 bookmarks-toolbar-chevron =
     .tooltiptext = Visa fler bokmärken
 bookmarks-sidebar-content =
@@ -616,3 +636,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Arbeta nedkopplad
     .accesskey = b
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = En del ljud eller video på den här hemsidan använder DRM mjukvara, vilket kan begränsa vad { -brand-short-name } tillåter dig att använda den till.
+eme-notifications-drm-content-playing-manage = Hantera inställningar
+eme-notifications-drm-content-playing-manage-accesskey = H
+eme-notifications-drm-content-playing-dismiss = Ignorera
+eme-notifications-drm-content-playing-dismiss-accesskey = g
+
+## Password save/update panel
+
+panel-save-update-username = Användarnamn
+panel-save-update-password = Lösenord
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Ta bort { $name }?
+addon-removal-abuse-report-checkbox = Rapportera detta tillägg till { -vendor-short-name }

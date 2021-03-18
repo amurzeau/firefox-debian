@@ -351,11 +351,11 @@ browser-window-close-button =
 browser-tab-audio-playing = S'està reproduint
 browser-tab-audio-muted = Silenciat
 # This label should be written in all capital letters if your locale supports them.
-browser-tab-audio-playing2 = S'ESTÀ REPRODUINT
+browser-tab-audio-playing2 = REPRODUINT
 # This label should be written in all capital letters if your locale supports them.
-browser-tab-audio-muted2 = SILENCIAT
+browser-tab-audio-muted2 = SILENCIADA
 # This label should be written in all capital letters if your locale supports them.
-browser-tab-audio-blocked = REPRODUCCIÓ AUTOMÀTICA BLOCADA
+browser-tab-audio-blocked = REPRODUC, AUTOMÀTICA BLOCADA
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = IMATGE SOBRE IMATGE
 
@@ -523,6 +523,8 @@ crashed-subframe-message = <strong>Part d'aquesta pàgina ha fallat.</strong> Pe
 crashed-subframe-learnmore =
     .label = Més informació
     .accesskey = M
+crashed-subframe-learnmore-link =
+    .value = Més informació
 crashed-subframe-submit =
     .label = Envia l'informe
     .accesskey = E
@@ -537,6 +539,7 @@ bookmarks-manage-bookmarks =
     .label = Gestiona les adreces d'interès
 bookmarks-recent-bookmarks-panel =
     .value = Adreces d'interès recents
+bookmarks-recent-bookmarks-panel-subheader = Adreces d'interès recents
 bookmarks-toolbar-chevron =
     .tooltiptext = Mostra més adreces d'interès
 bookmarks-sidebar-content =
@@ -616,3 +619,11 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Treballa fora de línia
     .accesskey = b
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Aquest lloc conté àudio o vídeo que utilitza programari de DRM, cosa que pot limitar allò que el { -brand-short-name } us pot permetre fer.
+eme-notifications-drm-content-playing-manage = Gestiona els paràmetres
+eme-notifications-drm-content-playing-manage-accesskey = G
+eme-notifications-drm-content-playing-dismiss = Descarta
+eme-notifications-drm-content-playing-dismiss-accesskey = D

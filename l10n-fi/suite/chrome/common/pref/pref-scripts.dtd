@@ -17,11 +17,18 @@
 <!ENTITY allowWindowMoveResize.label     "Siirtää ikkunoita ja muuttaa niiden kokoa">
 <!ENTITY allowWindowFlip.label           "Nostaa ja laskea ikkunoita">
 <!ENTITY allowWindowStatusChange.label   "Muuttaa tilarivin tekstiä">
-<!ENTITY allowWindowImageSrcChange.label "Vaihtaa kuvia">
 <!ENTITY allowContextmenuDisable.label   "Poistaa ja muuttaa ponnahdusvalikkoja">
 <!ENTITY allowHideStatusBar.label        "Piilottaa tilarivin">
 
-<!ENTITY enablePlugins.label              "Salli liitännäisten käyttö:">
+<!ENTITY debugging.label                  "JavaScript-virheenjäljitys">
+<!ENTITY debugEnableDump.label            "Ota käyttöön JavaScript dump() tuloste">
+<!ENTITY debugEnableDump.accesskey        "t">
+<!ENTITY debugStrictJavascript.label      "Näytä strict JavaScript -varoitukset">
+<!ENTITY debugStrictJavascript.accesskey  "v">
+<!ENTITY debugConsoleJavascript.label     "Näytä chrome JavaScript -virheet ja varoitukset">
+<!ENTITY debugConsoleJavascript.accesskey "c">
+
+<!ENTITY enablePlugins.label             "Salli liitännäisten käyttö:">
 <!ENTITY enablePluginForSuite.label      "Ohjelmistopaketissa">
 <!ENTITY enablePluginForSuite.accesskey  "h">
 

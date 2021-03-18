@@ -17,14 +17,6 @@ printui-page-range-custom = Ichinan
 printui-page-range-label = Taq ruxaq
 printui-page-range-picker =
     .aria-label = Ticha' rupalem ruxaq
-printui-page-custom-range =
-    .aria-label = Titz'ib'äx rupalem ichinan ruxaq
-# This label is displayed before the first input field indicating
-# the start of the range to print.
-printui-range-start = Richin
-# This label is displayed between the input fields indicating
-# the start and end page of the range to print.
-printui-range-end = chi re
 printui-page-custom-range-input =
     .aria-label = Titz'ib'äx rupalem ichinan ruxaq
     .placeholder = e.g. 2-6, 9, 12-16
@@ -47,6 +39,11 @@ printui-scale-pcent = Xakb'äl
 # Section title (noun) for the two-sided print options
 printui-two-sided-printing = Nitz'ajb'äx pa ka'i'-ruwa
 printui-duplex-checkbox = Titz'ajb'äx pa ka'i'-ruwa
+printui-two-sided-printing-off = Chupun
+# Flip the sheet as if it were bound along its long edge.
+printui-two-sided-printing-long-edge = Tiq'och pa ri nïm raqän ruchi'
+# Flip the sheet as if it were bound along its short edge.
+printui-two-sided-printing-short-edge = Tiq'och pa ri nïm ko'öl ruchi'
 # Section title for miscellaneous print options
 printui-options = Taq cha'oj
 printui-headers-footers-checkbox = Titz'ajb'äl taq nab'ey chuqa' ruxe' rub'i' ruxaq
@@ -59,7 +56,6 @@ printui-margins = Taq ruchi'
 printui-margins-default = K'o wi
 printui-margins-min = Ko'öl
 printui-margins-none = Majun
-printui-margins-custom = Ichinan
 printui-margins-custom-inches = B'anon runuk'ulem (taq pulwata')
 printui-margins-custom-top = Ajsik
 printui-margins-custom-top-inches = Nima'q (taq pulwata')
@@ -83,6 +79,7 @@ printui-pages-per-sheet = Taq ruxaq chi ruxaq
 # This is shown next to the Print button with an indefinite loading spinner
 # when the user prints a page and it is being sent to the printer.
 printui-print-progress-indicator = Nitz'ajb'äx…
+printui-print-progress-indicator-saving = Niyak…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 
@@ -104,6 +101,7 @@ printui-paper-tabloid = Taloyit
 
 printui-error-invalid-scale = Ri rukojol k'o chi jun ajilab'äl 10 o chuqa' 200.
 printui-error-invalid-margin = Tatz'ib'aj jun okel ruchi' rupalem wuj xacha'.
+printui-error-invalid-copies = Ri rajilab'al taq wachib'äl k'o chi k'o chi kikojol 1 chuqa' 10000.
 # Variables
 # $numPages (integer) - Number of pages
 printui-error-invalid-range = Ri rupalem k'o chi jun ajilab'äl 1 chuqa' { $numPages }.

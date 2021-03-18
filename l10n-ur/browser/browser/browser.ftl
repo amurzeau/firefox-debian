@@ -493,6 +493,9 @@ bookmarks-toolbar-placeholder =
     .title = ٹولبار اشیاہ کو بک مارک کگاتا ہے
 bookmarks-toolbar-placeholder-button =
     .label = ٹولبار اشیاہ کو بک مارک کگاتا ہے
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = موجودہ ٹیب کو بک مارک کریں
 
 ## Library Panel items
 
@@ -510,3 +513,7 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = آف لائن کام کریں
     .accesskey = k
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = اس سائٹ پر کچھ آڈیو یا وڈیو DRM سافٹ ویئر استعمال کرتی ہے جس کی وجہ سے جو { -brand-short-name } اس کے ساتھ آپ کو کرنے دے گا، اس پر کچھ حدود ہوں گی۔

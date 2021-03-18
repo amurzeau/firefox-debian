@@ -27,6 +27,12 @@ appmenuitem-more-tools =
     .label = Mais ferramentas
 appmenuitem-exit =
     .label = Sair
+appmenu-menu-button-closed =
+    .tooltiptext = Abrir menu da aplicação
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Fechar menu da aplicação
+    .label = { -brand-shorter-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -45,6 +51,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Sincronizar agora
+appmenuitem-fxa-toolbar-sync-now =
+    .label = Sincronizar agora
+    .value = Sincronizar agora
+appmenuitem-fxa-manage-account = Gerir conta
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Última sincronização { $time }
+    .label = Última sincronização { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = Sincronizar e guardar dados
+appmenu-fxa-signed-in-label = Iniciar sessão
+appmenu-fxa-setup-sync =
+    .label = Ativar a sincronização ...
+appmenu-fxa-show-more-tabs = Mostrar mais separadores
 appmenuitem-save-page =
     .label = Guardar página como…
 
@@ -98,6 +121,13 @@ profiler-popup-capture-shortcut =
        *[other] Ctrl+Shift+2
     }
 
+## History panel
+
+appmenu-manage-history =
+    .label = Gerir Histórico
+appmenu-reopen-all-tabs = Reabrir todos os separadores
+appmenu-reopen-all-windows = Reabrir todas as janelas
+
 ## Help panel
 
 appmenu-help-header =
@@ -123,8 +153,13 @@ appmenu-get-help =
 appmenu-help-troubleshooting-info =
     .label = Informação para resolução de problemas
     .accesskey = r
+appmenu-help-more-troubleshooting-info =
+    .label = Mais informação para diagnóstico de problemas
+    .accesskey = g
 appmenu-help-taskmanager =
     .label = Gestor de tarefas
+appmenu-help-report-site-issue =
+    .label = Reportar problema do site…
 appmenu-help-feedback-page =
     .label = Submeter feedback…
     .accesskey = S
@@ -138,6 +173,16 @@ appmenu-help-safe-mode-without-addons =
 appmenu-help-safe-mode-with-addons =
     .label = Reiniciar com os extras ativados
     .accesskey = R
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = Modo de diagnóstico
+    .accesskey = M
+appmenu-help-exit-troubleshoot-mode =
+    .label = Desligar o modo de diagnóstico
+    .accesskey = m
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
@@ -153,3 +198,9 @@ appmenu-help-not-deceptive =
 
 appmenu-help-check-for-update =
     .label = Procurar por atualizações…
+
+## More Tools
+
+appmenu-customizetoolbar =
+    .label = Personalizar barra de ferramentas…
+appmenu-developer-tools-subheader = Ferramentas do navegador

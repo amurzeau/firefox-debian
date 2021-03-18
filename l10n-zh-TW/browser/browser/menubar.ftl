@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = 尋找文字…
     .accesskey = F
+menu-edit-find-in-page =
+    .label = 在頁面中搜尋…
+    .accesskey = F
 menu-edit-find-again =
     .label = 找下一個
     .accesskey = g
@@ -128,6 +131,9 @@ menu-view-toolbars-menu =
     .accesskey = T
 menu-view-customize-toolbar =
     .label = 自訂…
+    .accesskey = C
+menu-view-customize-toolbar2 =
+    .label = 自訂工具列…
     .accesskey = C
 menu-view-sidebar =
     .label = 側邊欄
@@ -219,6 +225,8 @@ menu-bookmarks-show-all =
     .label = 顯示所有書籤
 menu-bookmark-this-page =
     .label = 將本頁加入書籤
+menu-bookmark-current-tab =
+    .label = 將目前分頁加入書籤
 menu-bookmark-edit =
     .label = 編輯此書籤
 menu-bookmarks-all-tabs =
@@ -243,6 +251,12 @@ menu-tools-addons =
     .accesskey = A
 menu-tools-fxa-sign-in =
     .label = 登入 { -brand-product-name }…
+    .accesskey = g
+menu-tools-extensions =
+    .label = 擴充套件和佈景主題
+    .accesskey = E
+menu-tools-fxa-sign-in2 =
+    .label = 登入
     .accesskey = g
 menu-tools-turn-on-sync =
     .label = 開啟 { -sync-brand-short-name }…
@@ -271,6 +285,13 @@ menu-preferences =
     .accesskey =
         { PLATFORM() ->
             [windows] O
+           *[other] n
+        }
+menu-settings =
+    .label = 設定
+    .accesskey =
+        { PLATFORM() ->
+            [windows] S
            *[other] n
         }
 menu-tools-layout-debugger =
@@ -325,8 +346,13 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = 疑難排解資訊
     .accesskey = T
+menu-help-more-troubleshooting-info =
+    .label = 更多疑難排解資訊
+    .accesskey = T
 menu-help-taskmanager =
     .label = 工作管理員
+menu-help-report-site-issue =
+    .label = 回報網站問題…
 menu-help-feedback-page =
     .label = 送出意見回饋…
     .accesskey = S
@@ -336,6 +362,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = 重新啟動並啟用附加元件
     .accesskey = R
+menu-help-enter-troubleshoot-mode =
+    .label = 疑難排解模式
+    .accesskey = M
+menu-help-exit-troubleshoot-mode =
+    .label = 關閉疑難排解模式
+    .accesskey = M
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

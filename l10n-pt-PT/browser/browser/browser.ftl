@@ -350,6 +350,14 @@ browser-window-close-button =
 
 browser-tab-audio-playing = A reproduzir
 browser-tab-audio-muted = Silenciado
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = A REPRODUZIR
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = SILENCIADO
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = REPRODUÇÃO AUTOMÁTICA BLOQUEADA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = IMAGEM NA IMAGEM
 
 ## Bookmarks toolbar items
 
@@ -366,6 +374,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Microfone a partilhar:
     .accesskey = M
+popup-select-camera-device =
+    .value = Câmara:
+    .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = Câmara
+popup-select-microphone-device =
+    .value = Microfone:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Microfone
 popup-all-windows-shared = Serão partilhadas todas as janelas visíveis no seu ecrã.
 popup-screen-sharing-not-now =
     .label = Agora não
@@ -375,6 +393,13 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = Desativar notificações do { -brand-short-name } ao partilhar
 popup-silence-notifications-checkbox-warning = O { -brand-short-name } não irá apresentar notificações enquanto estiver a partilhar.
+popup-screen-sharing-block =
+    .label = Bloquear
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Bloquear sempre
+    .accesskey = m
+popup-mute-notifications-checkbox = Silenciar notificações de sites durante a partilha
 
 ## WebRTC window or screen share tab switch warning
 
@@ -515,6 +540,8 @@ crashed-subframe-message = <strong>Uma parte desta página falhou.</strong> Para
 crashed-subframe-learnmore =
     .label = Saber mais
     .accesskey = b
+crashed-subframe-learnmore-link =
+    .value = Saber mais
 crashed-subframe-submit =
     .label = Submeter relatório
     .accesskey = S
@@ -529,6 +556,7 @@ bookmarks-manage-bookmarks =
     .label = Gerir marcadores
 bookmarks-recent-bookmarks-panel =
     .value = Marcadores recentes
+bookmarks-recent-bookmarks-panel-subheader = Marcadores recentes
 bookmarks-toolbar-chevron =
     .tooltiptext = Mostrar mais marcadores
 bookmarks-sidebar-content =
@@ -590,7 +618,7 @@ bookmarks-toolbar-placeholder-button =
     .label = Itens da barra de ferramentas marcadores
 # "Bookmark" is a verb, as in "Add current tab to bookmarks".
 bookmarks-current-tab =
-    .label = Adicionar separador atual aos marcadores
+    .label = Adicionar separador aos marcadores
 
 ## Library Panel items
 
@@ -608,3 +636,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Trabalhar offline
     .accesskey = o
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Algum áudio ou vídeo neste site utiliza software DRM, que poderá limitar as funcionalidades do que o { -brand-short-name } lhe pode deixar fazer com o mesmo.
+eme-notifications-drm-content-playing-manage = Gerir definições
+eme-notifications-drm-content-playing-manage-accesskey = M
+eme-notifications-drm-content-playing-dismiss = Dispensar
+eme-notifications-drm-content-playing-dismiss-accesskey = D
+
+## Password save/update panel
+
+panel-save-update-username = Nome de utilizador
+panel-save-update-password = Palavra-passe
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Remover { $name }?
+addon-removal-abuse-report-checkbox = Reportar esta extensão à { -vendor-short-name }

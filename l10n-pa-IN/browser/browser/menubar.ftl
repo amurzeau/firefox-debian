@@ -325,8 +325,13 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = ਸਮੱਸਿਆ ਹੱਲ ਜਾਣਕਾਰੀ
     .accesskey = T
+menu-help-more-troubleshooting-info =
+    .label = ਹੋਰ ਸਮੱਸਿਆ ਹੱਲ ਜਾਣਕਾਰੀ
+    .accesskey = T
 menu-help-taskmanager =
     .label = ਟਾਸਕ ਮੈਨੇਜਰ
+menu-help-report-site-issue =
+    .label = …ਸਾਈਟ ਮਸਲੇ ਬਾਰੇ ਜਾਣਕਾਰੀ ਦਿਓ
 menu-help-feedback-page =
     .label = …ਸੁਝਾਅ ਭੇਜੋ
     .accesskey = S
@@ -336,6 +341,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = ਐਡ-ਆਨ ਸਮਰੱਥ ਕਰਕੇ ਮੁੜ-ਚਾਲੂ ਕਰੋ
     .accesskey = R
+menu-help-enter-troubleshoot-mode =
+    .label = ਸਮੱਸਿਆ ਨਿਪਟਾਰਾ ਢੰਗ
+    .accesskey = M
+menu-help-exit-troubleshoot-mode =
+    .label = ਸਮੱਸਿਆ ਨਿਪਟਾਰਾ ਢੰਗ ਬੰਦ ਹੈ
+    .accesskey = M
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

@@ -27,6 +27,11 @@ inactive-css-not-display-block-on-floated = <strong>display</strong> қасие�
 inactive-css-property-is-impossible-to-override-in-visited = <strong>{ $property }</strong> қасиетін <strong>:visited</strong> шектеуі салдарынан үстінен жазу мүмкін емес.
 inactive-css-position-property-on-unpositioned-box = <strong>{ $property }</strong> бұл элементке әсер етпейді, өйткені ол орны бекітілген элементі емес.
 inactive-text-overflow-when-no-overflow = <strong>{ $property }</strong> бұл элементке әсер етпейді, өйткені <strong>overflow:hidden</strong> орнатылмаған.
+inactive-outline-radius-when-outline-style-auto-or-none = <strong>{ $property }</strong> бұл элементке әсер етпейді, өйткені оның <strong>outline-style</strong> қасиеті <strong>auto</strong> немесе <strong>none</strong> етіп орнатылған.
+inactive-css-not-for-internal-table-elements = <strong>{ $property }</strong> кесте ішкі элементтеріне әсер етпейді.
+inactive-css-not-for-internal-table-elements-except-table-cells = <strong>{ $property }</strong> кесте ұяшықтарынан басқа ішкі кесте элементтеріне әсер етпейді.
+inactive-css-not-table = <strong>{ $property }</strong> бұл элементке әсер етпейді, өйткені ол кесте емес.
+inactive-scroll-padding-when-not-scroll-container = <strong>{ $property }</strong> бұл элементке әсер етпейді, өйткені ол айналмайды.
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
 ## an icon. When this icon is hovered this message is displayed to explain how
@@ -45,6 +50,11 @@ inactive-css-non-replaced-inline-or-table-column-or-column-group-fix = <strong>d
 inactive-css-not-display-block-on-floated-fix = <strong>float</strong> өшіріп немесе <strong>display:block</strong> қосып көріңіз. { learn-more }
 inactive-css-position-property-on-unpositioned-box-fix = Элементтің <strong>position</strong> қасиетін <strong>static</strong> шамасынан басқа мәніне орнатып көріңіз. { learn-more }
 inactive-text-overflow-when-no-overflow-fix = <strong>overflow:hidden</strong> қосып көріңіз. { learn-more }
+inactive-css-not-for-internal-table-elements-fix = Оның <strong>display</strong> қасиетін келесі мәндерден басқа мәнге орнатып көріңіз: <strong>table-cell</strong>, <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong>, немесе <strong>table-footer-group</strong>. { learn-more }
+inactive-css-not-for-internal-table-elements-except-table-cells-fix = Оның <strong>display</strong> қасиетін келесі мәндерден басқа мәнге орнатып көріңіз: <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong>, немесе <strong>table-footer-group</strong>. { learn-more }
+inactive-outline-radius-when-outline-style-auto-or-none-fix = Оның <strong>outline-style</strong> қасиетін келесі мәндерден басқа мәнге орнатып көріңіз: <strong>auto</strong> немесе <strong>none</strong>. { learn-more }
+inactive-css-not-table-fix = <strong>display:table</strong> немесе <strong>display:inline-table</strong> қосып көріңіз. { learn-more }
+inactive-scroll-padding-when-not-scroll-container-fix = <strong>overflow:auto</strong>, <strong>overflow:scroll</strong>, немесе <strong>overflow:hidden</strong> қосып көріңіз. { learn-more }
 
 ## In the Rule View when a CSS property may have compatibility issues with other browsers
 ## we display an icon. When this icon is hovered this message is displayed to explain why

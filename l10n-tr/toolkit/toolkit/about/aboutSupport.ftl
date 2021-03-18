@@ -130,10 +130,14 @@ sandbox-sys-call-number = Sistem çağrısı
 sandbox-sys-call-args = Parametreler
 safe-mode-title = Güvenli kipi deneyin
 restart-in-safe-mode-label = Eklentileri devre dışı bırakıp yeniden başlat…
+troubleshoot-mode-title = Sorunları tanıla
+restart-in-troubleshoot-mode-label = Sorun giderme modu…
 clear-startup-cache-title = Başlangıç önbelleğini temizlemeyi deneyin
 clear-startup-cache-label = Başlangıç önbelleğini temizle…
 startup-cache-dialog-title = Başlangıç önbelleğini temizle
 startup-cache-dialog-body = Başlangıç önbelleğini temizlemek için { -brand-short-name } tarayıcınızı yeniden başlatın. Bu işlem, ayarlarınızı değiştirmez ve mevcut eklentilerinizi kaldırmaz.
+startup-cache-dialog-title2 = Başlangıç önbelleğini temizlemek için { -brand-short-name } yeniden başlatılsın mı?
+startup-cache-dialog-body2 = Bu işlem, ayarlarınızı değiştirmez ve eklentilerinizi kaldırmaz.
 restart-button-label = Yeniden başlat
 
 ## Media titles
@@ -403,3 +407,13 @@ support-printing-clear-settings-button = Kayıtlı yazdırma ayarlarını temizl
 support-printing-modified-settings = Değiştirilmiş yazdırma ayarları
 support-printing-prefs-name = Ad
 support-printing-prefs-value = Değer
+
+## Normandy sections
+
+support-remote-experiments-title = Uzak deneyler
+support-remote-experiments-name = Adı
+support-remote-experiments-branch = Deney kolu
+support-remote-experiments-see-about-studies = Daha fazla bilgi için <a data-l10n-name="support-about-studies-link">about:studies</a> sayfasına bakabilirsiniz. O sayfadan deneyleri tek tek kapatabilir veya { -brand-short-name } tarayıcınızın gelecekte bu tür deneyleri çalıştırmasını engelleyebilirsiniz.
+support-remote-features-title = Uzak özellikler
+support-remote-features-name = Adı
+support-remote-features-status = Durum

@@ -17,6 +17,26 @@ appmenuitem-new-window =
     .label = Nova fenestro
 appmenuitem-new-private-window =
     .label = Nova privata fenestro
+appmenuitem-passwords =
+    .label = Pasvortoj
+appmenuitem-extensions-and-themes =
+    .label = Etendaĵoj kaj etosoj
+appmenuitem-find-in-page =
+    .label = Serĉi en la paĝo…
+appmenuitem-more-tools =
+    .label = Pli da iloj
+appmenuitem-exit =
+    .label = Fini
+appmenu-menu-button-closed =
+    .tooltiptext = Malfermi menuon de programo
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Fermi menuon de programo
+    .label = { -brand-shorter-name }
+# Settings is now used to access the browser settings across all platforms,
+# instead of Options or Preferences.
+appmenuitem-settings =
+    .label = Agordoj
 
 ## Zoom and Fullscreen Controls
 
@@ -31,6 +51,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Speguli nun
+appmenuitem-fxa-toolbar-sync-now =
+    .label = Speguli nun
+    .value = Speguli nun
+appmenuitem-fxa-manage-account = Administri konton
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Laste spegulita: { $time }
+    .label = Laste spegulita: { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = Speguli kaj konservi datumojn
+appmenu-fxa-signed-in-label = Komenci seancon
+appmenu-fxa-setup-sync =
+    .label = Ŝalti speguladon…
+appmenu-fxa-show-more-tabs = Montri pli da langetoj
 appmenuitem-save-page =
     .label = Konservi paĝon kiel…
 
@@ -47,9 +84,52 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-title =
+    .value = { -profiler-brand-name }
+profiler-popup-reveal-description-button =
+    .aria-label = Montri pli da informo
+profiler-popup-description-title =
+    .value = Registri, analizi, dividi
+profiler-popup-description = Kunlaboru pri efikecaj problemoj per publikigo de profiloj dividotaj kun via teamo.
+profiler-popup-learn-more = Pli da informo
+profiler-popup-settings =
+    .value = Agordoj
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings = Modifi agordojn…
+profiler-popup-disabled = La rulanalizilo estas nuntempe malaktiva, tre verŝajne pro tio ke fenestro de privata retumo estas malfermita.
+profiler-popup-recording-screen = Registrado…
+# The profiler presets list is generated elsewhere, but the custom preset is defined
+# here only.
+profiler-popup-presets-custom =
+    .label = Personecigita
+profiler-popup-start-recording-button =
+    .label = Komenci registri
+profiler-popup-discard-button =
+    .label = Forlasi
+profiler-popup-capture-button =
+    .label = Kapti
+profiler-popup-start-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧1
+       *[other] Stir+Maj+1
+    }
+profiler-popup-capture-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧2
+       *[other] Stir+Maj+2
+    }
+
+## History panel
+
+appmenu-manage-history =
+    .label = Administri historion
+appmenu-reopen-all-tabs = Remalfermi ĉiujn langetojn
+appmenu-reopen-all-windows = Remalfermi ĉiujn fenestrojn
 
 ## Help panel
 
+appmenu-help-header =
+    .title = Helpo de { -brand-shorter-name }
 appmenu-about =
     .label = Pri { -brand-shorter-name }
     .accesskey = P
@@ -65,11 +145,19 @@ appmenu-help-import-from-another-browser =
 appmenu-help-keyboard-shortcuts =
     .label = Alirklavoj
     .accesskey = A
+appmenu-get-help =
+    .label = Helpo
+    .accesskey = H
 appmenu-help-troubleshooting-info =
     .label = Informoj por solvado de problemoj
     .accesskey = I
+appmenu-help-more-troubleshooting-info =
+    .label = Pli da problemsolva informo
+    .accesskey = p
 appmenu-help-taskmanager =
     .label = Administrilo de taskoj
+appmenu-help-report-site-issue =
+    .label = Raporti problemon kun retejo…
 appmenu-help-feedback-page =
     .label = Sendi opiniojn…
     .accesskey = S
@@ -84,6 +172,16 @@ appmenu-help-safe-mode-with-addons =
     .label = Restartigi kun aldonaĵoj aktivaj
     .accesskey = R
 
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = Problemsolva reĝimo
+    .accesskey = r
+appmenu-help-exit-troubleshoot-mode =
+    .label = Malŝalti problemsolvan reĝimon
+    .accesskey = M
+
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
@@ -96,3 +194,11 @@ appmenu-help-not-deceptive =
 
 ##
 
+appmenu-help-check-for-update =
+    .label = Kontroli ĉu estas ĝisdatigoj…
+
+## More Tools
+
+appmenu-customizetoolbar =
+    .label = Personecigi ilaron…
+appmenu-developer-tools-subheader = Iloj de retumilo

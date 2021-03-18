@@ -8,6 +8,12 @@ places-open =
 places-open-tab =
     .label = Tendayke Pyahúpe jeike
     .accesskey = h
+places-open-in-tab =
+    .label = Eike tendayke pyahúpe
+    .accesskey = W
+places-open-all-bookmarks =
+    .label = Embojurujapaite techaukaha
+    .accesskey = O
 places-open-all-in-tabs =
     .label = Tendayképe jeikepa
     .accesskey = O
@@ -28,6 +34,24 @@ places-new-folder =
     .accesskey = p
 places-new-separator =
     .label = Mopa’ũha pyahu
+    .accesskey = S
+places-open-in-window =
+    .label = Eike Ovetã Pyahúpe
+    .accesskey = N
+places-open-in-private-window =
+    .label = Eike Ovetã Ñemigua Pyahúpe
+    .accesskey = P
+places-add-bookmark =
+    .label = Embojuaju techaukaha…
+    .accesskey = B
+places-add-folder-contextmenu =
+    .label = Embojuaju ñongatuha…
+    .accesskey = F
+places-add-folder =
+    .label = Embojuaju ñongatuha…
+    .accesskey = o
+places-add-separator =
+    .label = Embojuaju mopa’ũha
     .accesskey = S
 places-view =
     .label = Hecha
@@ -60,6 +84,13 @@ places-sortby-name =
 places-properties =
     .label = Mba’ejára
     .accesskey = i
+# places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
+places-edit-bookmark =
+    .label = Embosako’i techaukaha…
+    .accesskey = i
+places-edit-generic =
+    .label = Mbosako’i…
+    .accesskey = i
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
     .label = Techaukaha ñangarekopyre
@@ -69,3 +100,16 @@ managed-bookmarks-subfolder =
 # This label is used for the "Other Bookmarks" folder that appears in the bookmarks toolbar.
 other-bookmarks-folder =
     .label = Ambuekuéra Techaukaha
+# Variables:
+# $count (number) - The number of elements being selected for removal.
+places-remove-bookmark =
+    .label =
+        { $count ->
+            [1] Emboguete Techaukaha
+            [one] Emboguete techaukahakuéra
+           *[other] Emboguete techaukahakuéra
+        }
+    .accesskey = e
+places-manage-bookmarks =
+    .label = Eñangareko Techaukaháre
+    .accesskey = M

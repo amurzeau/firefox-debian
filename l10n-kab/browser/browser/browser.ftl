@@ -374,6 +374,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Asawaḍ i beṭṭu:
     .accesskey = S
+popup-select-camera-device =
+    .value = Takamiṛat
+    .accesskey = K
+popup-select-camera-icon =
+    .tooltiptext = Takamiṛat
+popup-select-microphone-device =
+    .value = Asawaḍ:
+    .accesskey = S
+popup-select-microphone-icon =
+    .tooltiptext = Asawaḍ
 popup-all-windows-shared = Akk isfuyla ibanen deg ugdil-ik ad ttwabḍun.
 popup-screen-sharing-not-now =
     .label = Mačči tura
@@ -383,13 +393,20 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = Kkes ilɣa n { -brand-short-name } di lawan n beṭṭu
 popup-silence-notifications-checkbox-warning = { -brand-short-name } ur yeskanay ara ilɣa mi ara tbeṭṭuḍ.
+popup-screen-sharing-block =
+    .label = Sewḥel
+    .accesskey = Ḥ
+popup-screen-sharing-always-block =
+    .label = Sewḥel yal tikkelt
+    .accesskey = W
+popup-mute-notifications-checkbox = Sgugem ilɣa n usmel web mi ara tbeṭṭuḍ
 
 ## WebRTC window or screen share tab switch warning
 
 sharing-warning-window = Tbeṭṭuḍ { -brand-short-name }. Imdanen-nniḍen zemren ad walin mi ara tedduḍ ɣer yiccer amaynut.
 sharing-warning-screen = Tbeṭṭuḍ akk agdil-inek . Imdanen-nniḍen zemren ad walin mi ara tedduḍ ɣer yiccer amaynut.
 sharing-warning-proceed-to-tab =
-    .label = Ɛeddi ɣeryiccer
+    .label = Ɛeddi ɣer yiccer
 sharing-warning-disable-for-session =
     .label = Kkes beṭṭu n urmad n ummesten n tɣimit-a
 
@@ -523,6 +540,8 @@ crashed-subframe-message = <strong>Aḥric seg usebter-a yerreẓ.</strong> I wa
 crashed-subframe-learnmore =
     .label = Issin ugar
     .accesskey = I
+crashed-subframe-learnmore-link =
+    .value = Issin ugar
 crashed-subframe-submit =
     .label = Azen aneqqis
     .accesskey = A
@@ -537,6 +556,7 @@ bookmarks-manage-bookmarks =
     .label = Sefrek ticraḍ n yisebtar
 bookmarks-recent-bookmarks-panel =
     .value = Ticraḍ n yisebtar n melmi kan
+bookmarks-recent-bookmarks-panel-subheader = Ticraḍ n yisebtar n melmi kan
 bookmarks-toolbar-chevron =
     .tooltiptext = Sken ugar n tecraḍ n yisebtar
 bookmarks-sidebar-content =
@@ -616,3 +636,21 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Mahel war tuqqna
     .accesskey = k
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Kra n imeslawen neɣ timwaliyin n usmel-a seqdacen aseɣẓan DRM, ayen ad igen talast i tigawin i yessirig { -brand-short-name } ɣef iferdisen-a.
+eme-notifications-drm-content-playing-manage = Sefrek iɣewwaren
+eme-notifications-drm-content-playing-dismiss = Zgel
+
+## Password save/update panel
+
+panel-save-update-username = Isem n useqdac
+panel-save-update-password = Awal uffir
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Kkes { $name }?
+addon-removal-abuse-report-checkbox = Mmel asiɣzef-a i { -vendor-short-name }

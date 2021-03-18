@@ -350,6 +350,14 @@ browser-window-close-button =
 
 browser-tab-audio-playing = Reproduciendo
 browser-tab-audio-muted = Silenciado
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = REPRODUCIENDO
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = SILENCIADO
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = AUTOREPRODUCCIÓN BLOQUEADA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = PICTURE-IN-PICTURE
 
 ## Bookmarks toolbar items
 
@@ -515,6 +523,8 @@ crashed-subframe-message = <strong> Parte de esta página falló. </strong> Para
 crashed-subframe-learnmore =
     .label = Aprender más
     .accesskey = L
+crashed-subframe-learnmore-link =
+    .value = Aprender más
 crashed-subframe-submit =
     .label = Enviar reporte
     .accesskey = S
@@ -525,6 +535,11 @@ bookmarks-show-all-bookmarks =
     .label = Mostrar todos los marcadores
 bookmarks-recent-bookmarks =
     .value = Añadidos recientemente
+bookmarks-manage-bookmarks =
+    .label = Gestionar marcadores
+bookmarks-recent-bookmarks-panel =
+    .value = Marcadores recientes
+bookmarks-recent-bookmarks-panel-subheader = Marcadores recientes
 bookmarks-toolbar-chevron =
     .tooltiptext = Mostrar más marcadores
 bookmarks-sidebar-content =
@@ -553,6 +568,12 @@ bookmarks-tools-toolbar-visibility-menuitem =
             [true] Ocultar barra de herramientas de marcadores
            *[other] Ver barra de marcadores
         }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Ocultar barra de marcadores
+           *[other] Mostrar barra de marcadores
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -578,6 +599,9 @@ bookmarks-toolbar-placeholder =
     .title = Elementos de la barra de marcadores
 bookmarks-toolbar-placeholder-button =
     .label = Elementos de la barra de marcadores
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Marcar la pestaña actual
 
 ## Library Panel items
 
@@ -595,3 +619,11 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Trabajar desconectado
     .accesskey = j
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Algunos audios o videos de este sitio usan software con DRM, lo que puede limitar lo que { -brand-short-name } puede hacer con él.
+eme-notifications-drm-content-playing-manage = Administrar ajustes
+eme-notifications-drm-content-playing-manage-accesskey = M
+eme-notifications-drm-content-playing-dismiss = Ocultar
+eme-notifications-drm-content-playing-dismiss-accesskey = D

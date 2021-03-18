@@ -69,7 +69,7 @@ urlbar-tip-icon-description =
 ## Variables:
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
-urlbar-search-tips-onboard = Teclexa menos, atopa más: Busca { $engineName } direutamente dende la barra de direiciones.
+urlbar-search-tips-onboard = Teclexa menos, atopa más: Busca en «{ $engineName }» direutamente dende la barra de direiciones.
 urlbar-search-tips-redirect-2 = Comienza la busca na barra de direiciones pa ver les suxerencies de { $engineName } y l'historial de restolar.
 # Prompts users to use the Urlbar when they are typing in the domain of a
 # search engine, e.g. google.com or amazon.com.
@@ -202,7 +202,7 @@ identity-https-only-dropdown-off =
 identity-https-only-dropdown-off-temporarily =
     .label = Non, temporalmente
 identity-https-only-info-turn-on2 = Activa'l mou de namás HTTPS pa esti sitiu si quies que { -brand-short-name } anueve la conexón cuando seya posible.
-identity-https-only-info-no-upgrade = Nun pue anovase la conexón a HTTPS.
+identity-https-only-info-no-upgrade = Nun ye posible anovar la conexón a HTTPS.
 identity-permissions =
     .value = Permisos
 identity-permissions-storage-access-header = Cookies ente sitios
@@ -317,8 +317,11 @@ crashed-subframe-learnmore =
 
 ## Bookmarks panels, menus and toolbar
 
+bookmarks-manage-bookmarks =
+    .label = Xestionar los marcadores
 bookmarks-recent-bookmarks-panel =
     .value = Marcadores de recién
+bookmarks-recent-bookmarks-panel-subheader = Marcadores de recién
 bookmarks-toolbar-chevron =
     .tooltiptext = Amosar más marcadores
 bookmarks-sidebar-content =
@@ -329,6 +332,12 @@ bookmarks-other-bookmarks-menu =
     .label = Otros marcadores
 bookmarks-mobile-bookmarks-menu =
     .label = Marcadores del móvil
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Anubrir la barra de los marcadores
+           *[other] Amosar la barra de los marcadores
+        }
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -336,6 +345,9 @@ bookmarks-toolbar =
     .toolbarname = Barra de los marcadores
     .accesskey = B
     .aria-label = Marcadores
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Amestar la llingüeta actual a Marcadores
 
 ## Library Panel items
 

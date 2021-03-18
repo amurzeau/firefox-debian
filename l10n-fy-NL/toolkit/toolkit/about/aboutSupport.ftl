@@ -133,10 +133,14 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Arguminten
 safe-mode-title = Probearje de feilige modus
 restart-in-safe-mode-label = Werstart mei útskeakele add-ons…
+troubleshoot-mode-title = Problemen analysearje
+restart-in-troubleshoot-mode-label = Probleemoplossingsmodus…
 clear-startup-cache-title = Opstartbuffer probearje te wiskjen
 clear-startup-cache-label = Opstartbuffer wiskje…
 startup-cache-dialog-title = Opstartbuffer wiskje
 startup-cache-dialog-body = Start { -brand-short-name } opnij om de opstartbuffer te wiskjen. Dit wiziget jo ynstellingen net en smyt gjin oan { -brand-short-name } tafoege útwreidingen fuort.
+startup-cache-dialog-title2 = { -brand-short-name } opnij starte om de opstartbuffer te wiskjen?
+startup-cache-dialog-body2 = Dit sil jo ynstellingen net wizigje of útwreidingen fuortsmite.
 restart-button-label = Opnij starte
 
 ## Media titles
@@ -406,3 +410,13 @@ support-printing-clear-settings-button = Bewarre ôfdrukynstellingen wiskje
 support-printing-modified-settings = Wizige ôfdrukynstellingen
 support-printing-prefs-name = Namme
 support-printing-prefs-value = Wearde
+
+## Normandy sections
+
+support-remote-experiments-title = Eksterne eksperiminten
+support-remote-experiments-name = Namme
+support-remote-experiments-branch = Eksperiminttak
+support-remote-experiments-see-about-studies = Sjoch <a data-l10n-name="support-about-studies-link">about:studies</a> foar mear ynformaasje, wêrûnder hoe't jo yndividuele eksperiminten útskeakelje kinne of foarkomme kinne dat{ -brand-short-name } dit soarte eksperiminten yn de takomst útfiert.
+support-remote-features-title = Eksterne funksjes
+support-remote-features-name = Namme
+support-remote-features-status = Steat

@@ -44,7 +44,6 @@ onboarding-join-form-signin-label = A oes gennych chi gyfrif yn barod?
 # Text for link to submit the sign in form
 onboarding-join-form-signin = Mewngofnodi
 onboarding-start-browsing-button-label = Cychwyn Pori
-onboarding-not-now-button-label = Nid nawr
 onboarding-cards-dismiss =
     .title = Cau
     .aria-label = Cau
@@ -86,99 +85,6 @@ onboarding-benefit-monitor-title = { -monitor-brand-short-name }
 onboarding-benefit-monitor-text = Cewch eich hysbysu pan fydd eich manylion personol mewn tor-data hysbys.
 onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
 onboarding-benefit-lockwise-text = Rheoli cyfrineiriau sy'n ddiogel ac yn gludadwy.
-
-## Custom Return To AMO onboarding strings
-
-return-to-amo-subtitle = Gwych, mae { -brand-short-name } gennych
-# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
-#
-# Variables:
-#   $addon-name (String) - Name of the add-on
-return-to-amo-addon-title = Nawr gadewch i ni gael <img data-l10n-name="icon"/> <b>{ $addon-name }</b> i chi.
-return-to-amo-add-extension-label = Ychwanegwch yr Estyniad
-
-## Multistage 3-screen onboarding flow strings (about:welcome pages)
-
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = Croeso i <span data-l10n-name="zap">{ -brand-short-name }</span>
-onboarding-multistage-welcome-subtitle = Y porwr cyflym, diogel a phreifat sydd â chefnogaeth corff dim-er-elw.
-onboarding-multistage-welcome-primary-button-label = Cychwyn Gosod
-onboarding-multistage-welcome-secondary-button-label = Mewngofnodi
-onboarding-multistage-welcome-secondary-button-text = Oes gennych chi gyfrif?
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "more" should stay inside the span.
-onboarding-multistage-import-header = Mewnforiwch eich cyfrineiriau, nodau tudalen, a <span data-l10n-name="zap">mwy</span>
-onboarding-multistage-import-subtitle = Yn dod o borwr arall? Mae'n hawdd dod â phopeth gyda chi  i { -brand-short-name }.
-onboarding-multistage-import-primary-button-label = Cychwyn Mewnforio
-onboarding-multistage-import-secondary-button-label = Nid nawr
-# Info displayed in the footer of import settings screen during onboarding flow.
-# This supports welcome screen showing top sites imported from the user's default browser.
-onboarding-import-sites-disclaimer = Cafwyd hyd i'r gwefannau hyn ar y ddyfais hon. Nid yw { -brand-short-name } yn cadw nac yn cydweddu data o borwr arall oni bai eich bod yn dewis ei fewnforio.
-# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
-# Variables:
-#   $current (Int) - Number of the current page
-#   $total (Int) - Total number of pages
-onboarding-welcome-steps-indicator =
-    .aria-label = Cychwyn arni: sgrin { $current } o { $total }
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "look" should stay inside the span.
-onboarding-multistage-theme-header = Dewiswch <span data-l10n-name = "zap">olwg</span>
-onboarding-multistage-theme-subtitle = Personoli { -brand-short-name } gyda thema.
-onboarding-multistage-theme-primary-button-label = Cadw Thema
-onboarding-multistage-theme-secondary-button-label = Nid nawr
-# Automatic theme uses operating system color settings
-onboarding-multistage-theme-label-automatic = Awtomatig
-onboarding-multistage-theme-label-light = Golau
-onboarding-multistage-theme-label-dark = Tywyll
-# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
-onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
-
-## Please make sure to split the content of the title attribute into lines whose
-## width corresponds to about 40 Latin characters, to ensure that the tooltip
-## doesn't become too long. Line breaks will be preserved when displaying the
-## tooltip.
-
-# Tooltip displayed on hover of automatic theme
-onboarding-multistage-theme-tooltip-automatic-2 =
-    .title =
-        Dilyn gwedd eich system weithredu
-        ar gyfer botymau, dewislenni a ffenestri.
-# Input description for automatic theme
-onboarding-multistage-theme-description-automatic-2 =
-    .aria-description =
-        Dilyn gwedd eich system weithredu
-        ar gyfer botymau, dewislenni a ffenestri.
-# Tooltip displayed on hover of light theme
-onboarding-multistage-theme-tooltip-light-2 =
-    .title =
-        Defnyddio gwedd olau ar gyfer botymau,
-        dewislenni, a ffenestri.
-# Input description for light theme
-onboarding-multistage-theme-description-light =
-    .aria-description =
-        Defnyddio gwedd olau ar gyfer botymau,
-        dewislenni, a ffenestri.
-# Tooltip displayed on hover of dark theme
-onboarding-multistage-theme-tooltip-dark-2 =
-    .title =
-        Defnyddio gwedd dywyll ar gyfer botymau,
-        dewislenni, a ffenestri.
-# Input description for dark theme
-onboarding-multistage-theme-description-dark =
-    .aria-description =
-        Defnyddio gwedd dywyll ar gyfer botymau,
-        dewislenni, a ffenestri.
-# Tooltip displayed on hover of Alpenglow theme
-onboarding-multistage-theme-tooltip-alpenglow-2 =
-    .title =
-        Defnyddio gwedd liwgar ar gyfer botymau,
-        dewislenni, a ffenestri.
-# Input description for Alpenglow theme
-onboarding-multistage-theme-description-alpenglow =
-    .aria-description =
-        Defnyddio gwedd liwgar ar gyfer botymau,
-        dewislenni, a ffenestri.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -239,3 +145,104 @@ return-to-amo-sub-header = Gwych, mae gennych { -brand-short-name }
 return-to-amo-addon-header = Nawr gadewch i ni gael <icon> </icon> <b> { $addon-name } </ B> i chi.
 return-to-amo-extension-button = Ychwanegu'r Estyniad
 return-to-amo-get-started-button = Cychwyn gyda { -brand-short-name }
+onboarding-not-now-button-label = Nid nawr
+
+## Custom Return To AMO onboarding strings
+
+return-to-amo-subtitle = Gwych, mae { -brand-short-name } gennych
+# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-title = Nawr gadewch i ni gael <img data-l10n-name="icon"/> <b>{ $addon-name }</b> i chi.
+return-to-amo-add-extension-label = Ychwanegwch yr Estyniad
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = Croeso i <span data-l10n-name="zap">{ -brand-short-name }</span>
+onboarding-multistage-welcome-subtitle = Y porwr cyflym, diogel a phreifat sydd â chefnogaeth corff dim-er-elw.
+onboarding-multistage-welcome-primary-button-label = Cychwyn Gosod
+onboarding-multistage-welcome-secondary-button-label = Mewngofnodi
+onboarding-multistage-welcome-secondary-button-text = Oes gennych chi gyfrif?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "default" should stay inside the span.
+onboarding-multistage-set-default-header = Gwnewch { -brand-short-name } yn <span data-l10n-name="zap"> ragosodedig </span>
+onboarding-multistage-set-default-subtitle = Cyflymder, diogelwch a phreifatrwydd bob tro y byddwch chi'n pori.
+onboarding-multistage-set-default-primary-button-label = Gwnewch yn Ragosodedig
+onboarding-multistage-set-default-secondary-button-label = Nid nawr
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = Mewnforiwch eich cyfrineiriau, nodau tudalen, a <span data-l10n-name="zap">mwy</span>
+onboarding-multistage-import-subtitle = Yn dod o borwr arall? Mae'n hawdd dod â phopeth gyda chi  i { -brand-short-name }.
+onboarding-multistage-import-primary-button-label = Cychwyn Mewnforio
+onboarding-multistage-import-secondary-button-label = Nid nawr
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = Cafwyd hyd i'r gwefannau hyn ar y ddyfais hon. Nid yw { -brand-short-name } yn cadw nac yn cydweddu data o borwr arall oni bai eich bod yn dewis ei fewnforio.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = Cychwyn arni: sgrin { $current } o { $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = Dewiswch <span data-l10n-name = "zap">olwg</span>
+onboarding-multistage-theme-subtitle = Personoli { -brand-short-name } gyda thema.
+onboarding-multistage-theme-primary-button-label = Cadw Thema
+onboarding-multistage-theme-primary-button-label2 = Gorffen
+onboarding-multistage-theme-secondary-button-label = Nid nawr
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = Awtomatig
+onboarding-multistage-theme-label-light = Golau
+onboarding-multistage-theme-label-dark = Tywyll
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Dilyn gwedd eich system weithredu
+        ar gyfer botymau, dewislenni a ffenestri.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Dilyn gwedd eich system weithredu
+        ar gyfer botymau, dewislenni a ffenestri.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Defnyddio gwedd olau ar gyfer botymau,
+        dewislenni, a ffenestri.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Defnyddio gwedd olau ar gyfer botymau,
+        dewislenni, a ffenestri.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Defnyddio gwedd dywyll ar gyfer botymau,
+        dewislenni, a ffenestri.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Defnyddio gwedd dywyll ar gyfer botymau,
+        dewislenni, a ffenestri.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Defnyddio gwedd liwgar ar gyfer botymau,
+        dewislenni, a ffenestri.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Defnyddio gwedd liwgar ar gyfer botymau,
+        dewislenni, a ffenestri.

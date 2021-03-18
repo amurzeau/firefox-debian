@@ -207,6 +207,8 @@ menu-history-undo-menu =
     .label = حالیہ بند کیے گئے ٹیب
 menu-history-undo-window-menu =
     .label = حالیہ بند کیے گئے دریچے
+menu-history-reopen-all-tabs = تمام ٹیب کو دوبارہ کھولیں
+menu-history-reopen-all-windows = تمام ونڈوز کو دوبارہ کھولیں
 
 ## Bookmarks Menu
 
@@ -322,6 +324,8 @@ menu-help-troubleshooting-info =
     .accesskey = T
 menu-help-taskmanager =
     .label = ٹاسک مینیجر
+menu-help-report-site-issue =
+    .label = سائٹ مسلہ… رپورٹ کریں
 menu-help-feedback-page =
     .label = اپنی رائے بھیجیں...
     .accesskey = S

@@ -111,6 +111,9 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = باز کردن پیوند در زبانه حامل جدید
     .accesskey = ز
+main-context-menu-open-link-container =
+    .label = پیوند را در محفظه جدید باز کنید
+    .accesskey = w
 main-context-menu-open-link-new-window =
     .label = باز کردن پیوند در پنجرهٔ جدید
     .accesskey = پ
@@ -120,6 +123,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = نشانک‌گذاری این پیوند
     .accesskey = ش
+main-context-menu-bookmark-link =
+    .label = نشانک‌گذاری پیوند
+    .accesskey = B
 main-context-menu-save-link =
     .label = ذخیرهٔ پیوند به نام…
     .accesskey = پ
@@ -131,12 +137,20 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = رونوشت برداشتن از نشانی پست الکترونیکی
     .accesskey = پ
 main-context-menu-copy-link =
     .label = رونوشت برداشتن از مکان پیوند
     .accesskey = ن
+main-context-menu-copy-link-simple =
+    .label = رونوشت از پیوند
+    .accesskey = L
 
 ## Media (video/audio) controls
 ##
@@ -179,6 +193,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = سرعت جنون‌آمیز(۲×)
     .accesskey = ج
+main-context-menu-media-play-speed-2 =
+    .label = سرعت
+    .accesskey = d
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = حلقه‌
     .accesskey = ح
@@ -206,6 +233,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = تصویر-در-تصویر
     .accesskey = u
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = تماشا در حالت تصویر در تصویر
+    .accesskey = u
 main-context-menu-image-reload =
     .label = بازآوری تصویر
     .accesskey = ب
@@ -215,6 +247,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = مشاهدهٔ ویدیو
     .accesskey = م
+main-context-menu-image-view-new-tab =
+    .label = باز کردن تصویر در زبانهٔ جدید
+    .accesskey = I
+main-context-menu-video-view-new-tab =
+    .label = باز کردن ویدئو در زبانهٔ جدید
+    .accesskey = i
 main-context-menu-image-copy =
     .label = رونوشت برداشتن از تصویر
     .accesskey = ت
@@ -227,6 +265,15 @@ main-context-menu-video-copy-location =
 main-context-menu-audio-copy-location =
     .label = رونوشت برداشتن از نشانی پروندهٔ صوتی
     .accesskey = ن
+main-context-menu-image-copy-link =
+    .label = رونوشت از پیوند تصویر
+    .accesskey = o
+main-context-menu-video-copy-link =
+    .label = رونوشت از پیوند ویدئو
+    .accesskey = o
+main-context-menu-audio-copy-link =
+    .label = رونوشت از پیوند صوت
+    .accesskey = o
 main-context-menu-image-save-as =
     .label = ذخیرهٔ تصویر به نام…
     .accesskey = خ
@@ -239,6 +286,9 @@ main-context-menu-image-set-as-background =
 main-context-menu-image-info =
     .label = نمایش اطلاعات تصویر
     .accesskey = ص
+main-context-menu-image-set-image-as-background =
+    .label = تنظیم تصویر به عنوان پس‌زمینهٔ رومیزی…
+    .accesskey = S
 main-context-menu-image-desc =
     .label = نمایش توضیحات
     .accesskey = ت
@@ -275,6 +325,26 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = استفاده از گذرواژه تولید شده…
     .accesskey = G
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = استفاده از ورود ذخیره شده
+    .accesskey = o
+main-context-menu-use-saved-password =
+    .label = استفاده از گذرواژهٔ ذخیره شده
+    .accesskey = o
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = پیشنهادِ یک گذرواژ‌هٔ قوی…
+    .accesskey = S
+main-context-menu-manage-logins =
+    .label = مدیریت ورودها…
+    .accesskey = M
 main-context-menu-keyword =
     .label = اضافه کردن یک کلیدواژه به این جست‌وجو…
     .accesskey = ک
@@ -311,9 +381,15 @@ main-context-menu-frame-view-source =
 main-context-menu-frame-view-info =
     .label = نمایش اطلاعات چارچوب
     .accesskey = ط
+main-context-menu-print-selection =
+    .label = چاپ ناحیهٔ انتخاب شده
+    .accesskey = r
 main-context-menu-view-selection-source =
     .label = نمایش کدمنبع قسمت انتخابی
     .accesskey = e
+main-context-menu-take-screenshot =
+    .label = گرفتن عکس از صفحه
+    .accesskey = T
 main-context-menu-view-page-source =
     .label = نمایش کدمنبع صفحه
     .accesskey = ن
@@ -328,6 +404,9 @@ main-context-menu-bidi-switch-page =
     .accesskey = ع
 main-context-menu-inspect-element =
     .label = بازرسی عناصر
+    .accesskey = Q
+main-context-menu-inspect =
+    .label = بازرسی
     .accesskey = Q
 main-context-menu-inspect-a11y-properties =
     .label = بررسی ترجیحات دسترسی‌پذیری

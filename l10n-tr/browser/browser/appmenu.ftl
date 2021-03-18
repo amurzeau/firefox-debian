@@ -27,6 +27,12 @@ appmenuitem-more-tools =
     .label = Daha fazla araç
 appmenuitem-exit =
     .label = Çık
+appmenu-menu-button-closed =
+    .tooltiptext = Uygulama menüsünü aç
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Uygulama menüsünü kapat
+    .label = { -brand-shorter-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -45,6 +51,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Şimdi eşitle
+appmenuitem-fxa-toolbar-sync-now =
+    .label = Şimdi eşitle
+    .value = Şimdi eşitle
+appmenuitem-fxa-manage-account = Hesabı yönet
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Son eşitleme: { $time }
+    .label = Son eşitleme: { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = Verileri eşitle ve kaydet
+appmenu-fxa-signed-in-label = Giriş yap
+appmenu-fxa-setup-sync =
+    .label = Eşitlemeyi aç…
+appmenu-fxa-show-more-tabs = Daha fazla sekme göster
 appmenuitem-save-page =
     .label = Sayfayı farklı kaydet…
 
@@ -128,8 +151,13 @@ appmenu-get-help =
 appmenu-help-troubleshooting-info =
     .label = Sorun giderme bilgileri
     .accesskey = b
+appmenu-help-more-troubleshooting-info =
+    .label = Sorun giderme bilgileri
+    .accesskey = S
 appmenu-help-taskmanager =
     .label = Görev yöneticisi
+appmenu-help-report-site-issue =
+    .label = Siteyle ilgili sorun bildir…
 appmenu-help-feedback-page =
     .label = Geri bildirim gönder…
     .accesskey = G
@@ -143,6 +171,16 @@ appmenu-help-safe-mode-without-addons =
 appmenu-help-safe-mode-with-addons =
     .label = Eklentileri etkinleştirip yeniden başlat
     .accesskey = E
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = Sorun giderme modu
+    .accesskey = m
+appmenu-help-exit-troubleshoot-mode =
+    .label = Sorun giderme modunu kapat
+    .accesskey = m
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

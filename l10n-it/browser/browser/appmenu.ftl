@@ -27,6 +27,12 @@ appmenuitem-more-tools =
     .label = Altri strumenti
 appmenuitem-exit =
     .label = Esci
+appmenu-menu-button-closed =
+    .tooltiptext = Apri menu applicazione
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Chiudi menu applicazione
+    .label = { -brand-shorter-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -45,6 +51,21 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Sincronizza adesso
+appmenuitem-fxa-toolbar-sync-now2 = Sincronizza adesso
+appmenuitem-fxa-manage-account = Gestisci account
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Ultima sincronizzazione: { $time }
+    .label = Ultima sincronizzazione: { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = Sincronizza e salva i dati
+appmenu-fxa-signed-in-label = Accedi
+appmenu-fxa-setup-sync =
+    .label = Attiva sincronizzazione…
+appmenu-fxa-show-more-tabs = Mostra più schede
 appmenuitem-save-page =
     .label = Salva pagina con nome…
 
@@ -130,8 +151,13 @@ appmenu-get-help =
 appmenu-help-troubleshooting-info =
     .label = Risoluzione dei problemi
     .accesskey = R
+appmenu-help-more-troubleshooting-info =
+    .label = Altre informazioni per la risoluzione di problemi
+    .accesskey = r
 appmenu-help-taskmanager =
     .label = Gestione attività
+appmenu-help-report-site-issue =
+    .label = Segnala problema con questo sito…
 appmenu-help-feedback-page =
     .label = Invia feedback…
     .accesskey = k
@@ -145,6 +171,16 @@ appmenu-help-safe-mode-without-addons =
 appmenu-help-safe-mode-with-addons =
     .label = Riavvia attivando i componenti aggiuntivi
     .accesskey = R
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = Modalità risoluzione problemi
+    .accesskey = M
+appmenu-help-exit-troubleshoot-mode =
+    .label = Disattiva Modalità risoluzione problemi
+    .accesskey = m
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
@@ -165,5 +201,4 @@ appmenu-help-check-for-update =
 
 appmenu-customizetoolbar =
     .label = Personalizza barra degli strumenti…
-
 appmenu-developer-tools-subheader = Strumenti del browser

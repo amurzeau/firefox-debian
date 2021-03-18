@@ -24,6 +24,13 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Urungkan Menutup Tab
         }
     .accesskey = U
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Buka Kembali Tab Tertutup
+           *[other] Buka Kembali Tab Tertutup
+        }
+    .accesskey = u
 toolbar-context-menu-manage-extension =
     .label = Kelola Ekstensi
     .accesskey = E
@@ -51,15 +58,18 @@ toolbar-context-menu-remove-from-toolbar =
 toolbar-context-menu-view-customize-toolbar =
     .label = Ubahsuai…
     .accesskey = U
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Selalu
-    .accesskey = S
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Tidak Pernah
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Ubahsuai Bilah Alat…
+    .accesskey = U
+toolbar-context-menu-bookmarks-toolbar-always-show-2 =
+    .label = Selalu Tampilkan
     .accesskey = T
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Hanya di Tab Baru
-    .accesskey = B
+toolbar-context-menu-bookmarks-toolbar-never-show-2 =
+    .label = Jangan Pernah Tampilkan
+    .accesskey = J
+toolbar-context-menu-bookmarks-toolbar-on-new-tab-2 =
+    .label = Hanya Tampilkan di Tab Baru
+    .accesskey = H
 toolbar-context-menu-bookmarks-show-other-bookmarks =
     .label = Tampilkan Markah Lain
     .accesskey = T

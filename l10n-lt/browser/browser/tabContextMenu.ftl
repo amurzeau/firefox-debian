@@ -3,8 +3,8 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 reload-tab =
-    .label = Atsiųsti kortelės tinklalapį iš naujo
-    .accesskey = n
+    .label = Įkelti kortelę iš naujo
+    .accesskey = i
 select-all-tabs =
     .label = Pasirinkti visas korteles
     .accesskey = P
@@ -14,6 +14,13 @@ duplicate-tab =
 duplicate-tabs =
     .label = Dubliuoti korteles
     .accesskey = D
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = Užverti korteles kairėje
+    .accesskey = l
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Užverti korteles dešinėje
     .accesskey = d
@@ -44,6 +51,9 @@ bookmark-tab =
 reopen-in-container =
     .label = Atverti iš naujo sudėtiniame rodinyje
     .accesskey = e
+tab-context-open-in-container =
+    .label = Atverti naujame konteineryje
+    .accesskey = e
 move-to-start =
     .label = Perkelti į pradžią
     .accesskey = p
@@ -55,7 +65,12 @@ move-to-new-window =
     .accesskey = l
 tab-context-close-multiple-tabs =
     .label = Užverti keletą kortelių
-    .accesskey = k
+    .accesskey = v
+tab-context-share-url =
+    .label = Dalintis
+    .accesskey = i
+tab-context-share-more =
+    .label = Daugiau…
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -68,7 +83,7 @@ tab-context-undo-close-tabs =
             [few] Atšaukti kortelių užvėrimus
            *[other] Atšaukti kortelių užvėrimus
         }
-    .accesskey = t
+    .accesskey = A
 close-tab =
     .label = Užverti kortelę
     .accesskey = U
@@ -81,6 +96,15 @@ move-tabs =
 move-tab =
     .label = Perkelti kortelę
     .accesskey = t
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Atkurti užvertą kortelę
+            [one] Atkurti užvertą kortelę
+            [few] Atkurti užvertas korteles
+           *[other] Atkurti užvertas korteles
+        }
+    .accesskey = r
 tab-context-close-tabs =
     .label =
         { $tabCount ->

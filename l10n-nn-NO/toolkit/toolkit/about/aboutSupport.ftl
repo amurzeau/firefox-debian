@@ -130,10 +130,14 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argument
 safe-mode-title = Prøv trygg modus
 restart-in-safe-mode-label = Start på nytt utan tillegg…
+troubleshoot-mode-title = Diagnoistiser problem
+restart-in-troubleshoot-mode-label = Feilsøkingsmodus…
 clear-startup-cache-title = Prøv å tøme oppstart-snøgglageret
 clear-startup-cache-label = Tøm oppstart-snøgglageret…
 startup-cache-dialog-title = Tøm oppstart-snøgglageret
 startup-cache-dialog-body = Start { -brand-short-name } på nytt for å tøme oppstartsnøgglageret. Dette vil ikkje endre innstillingane dine eller fjerne utvidingar du har lagt til i { -brand-short-name }.
+startup-cache-dialog-title2 = Starte { -brand-short-name } for å tøme oppstartmellomlageret?
+startup-cache-dialog-body2 = Dette vil ikkje endre innstillingane dine eller fjerne utvidingar.
 restart-button-label = Start på nytt
 
 ## Media titles
@@ -403,3 +407,13 @@ support-printing-clear-settings-button = Fjern lagra utskriftsinnstillingar
 support-printing-modified-settings = Endra utskriftsinnstillingar
 support-printing-prefs-name = Namn
 support-printing-prefs-value = Verdi
+
+## Normandy sections
+
+support-remote-experiments-title = Eksterne eksperiment
+support-remote-experiments-name = Namn
+support-remote-experiments-branch = EksperimentgreIn
+support-remote-experiments-see-about-studies = Sjå <a data-l10n-name="support-about-studies-link">about:studies</a> for meIr informasjon, inkludert korleis du slår av individuelle eksperiment eller korleis du hindrar { -brand-short-name } frå å køyre denne typen eksperiment i framtida.
+support-remote-features-title = Eksterne funksjonar
+support-remote-features-name = Namn
+support-remote-features-status = Status

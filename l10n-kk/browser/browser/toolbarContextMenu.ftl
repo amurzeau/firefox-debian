@@ -24,6 +24,13 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Жабылған беттерді қайтару
         }
     .accesskey = й
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Жабылған бетті қайта ашу
+           *[other] Жабылған беттерді қайта ашу
+        }
+    .accesskey = й
 toolbar-context-menu-manage-extension =
     .label = Кеңейтуді басқару
     .accesskey = е
@@ -45,24 +52,27 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Құралдар панелінде автожасыру
     .accesskey = а
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Бос болған кезде батырманы жасыру
+    .accesskey = ы
 toolbar-context-menu-remove-from-toolbar =
     .label = Құралдар панелінен өшіру
     .accesskey = ш
 toolbar-context-menu-view-customize-toolbar =
     .label = Баптау…
     .accesskey = а
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Әрқашан
-    .accesskey = а
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Ешқашан
-    .accesskey = н
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Тек жаңа бетте
-    .accesskey = к
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Құралдар панелін баптау…
+    .accesskey = п
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Әрқашан көрсету
     .accesskey = а
 toolbar-context-menu-bookmarks-toolbar-never-show-2 =
     .label = Ешқашан көрсетпеу
     .accesskey = н
+toolbar-context-menu-bookmarks-toolbar-on-new-tab-2 =
+    .label = Тек жаңа беттерде көрсету
+    .accesskey = е
+toolbar-context-menu-bookmarks-show-other-bookmarks =
+    .label = Басқа бетбелгілерді көрсету
+    .accesskey = с

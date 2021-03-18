@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Canfod ar y Dudalen…
     .accesskey = a
+menu-edit-find-in-page =
+    .label = Canfod ar y Dudalen…
+    .accesskey = D
 menu-edit-find-again =
     .label = Canfod Eto
     .accesskey = E
@@ -129,6 +132,9 @@ menu-view-toolbars-menu =
 menu-view-customize-toolbar =
     .label = Cyfaddasu…
     .accesskey = y
+menu-view-customize-toolbar2 =
+    .label = Cyfaddasu'r Bar Offer…
+    .accesskey = B
 menu-view-sidebar =
     .label = Bar Ochr
     .accesskey = B
@@ -207,6 +213,8 @@ menu-history-undo-menu =
     .label = Tabiau Wedi eu Cau'n Ddiweddar
 menu-history-undo-window-menu =
     .label = Ffenestri wedi eu Cau yn Ddiweddar
+menu-history-reopen-all-tabs = Ailagor Pob Tab
+menu-history-reopen-all-windows = Ailagor Pob Ffenestr
 
 ## Bookmarks Menu
 
@@ -217,6 +225,8 @@ menu-bookmarks-show-all =
     .label = Dangos Pob Nod Tudalen
 menu-bookmark-this-page =
     .label = Gosod Nod Tudalen i'r Dudalen
+menu-bookmark-current-tab =
+    .label = Gosod Nod Tudalen i'r Tab Cyfredol
 menu-bookmark-edit =
     .label = Golygu'r Nod Tudalen
 menu-bookmarks-all-tabs =
@@ -241,6 +251,12 @@ menu-tools-addons =
     .accesskey = Y
 menu-tools-fxa-sign-in =
     .label = Mewngofnodi i { -brand-product-name }…
+    .accesskey = M
+menu-tools-extensions =
+    .label = Estyniadau a Themâu
+    .accesskey = E
+menu-tools-fxa-sign-in2 =
+    .label = Mewngofnodi
     .accesskey = M
 menu-tools-turn-on-sync =
     .label = Cychwyn { -sync-brand-short-name }…
@@ -270,6 +286,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] O
            *[other] w
+        }
+menu-settings =
+    .label = Gosodiadau
+    .accesskey =
+        { PLATFORM() ->
+            [windows] G
+           *[other] d
         }
 menu-tools-layout-debugger =
     .label = Dadfygiwr Dyluniad
@@ -323,8 +346,13 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Gwybodaeth am Ddatrys Problemau
     .accesskey = G
+menu-help-more-troubleshooting-info =
+    .label = Rhagor o Wybodaeth i Ddatrys Problemau
+    .accesskey = R
 menu-help-taskmanager =
     .label = Rheolwr Tasgau
+menu-help-report-site-issue =
+    .label = Adrodd ar Fater Gwefan…
 menu-help-feedback-page =
     .label = Cyflwyno Adborth…
     .accesskey = A
@@ -334,6 +362,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Ailgychwyn gydag Ychwanegion wedi eu Hanalluogi
     .accesskey = A
+menu-help-enter-troubleshoot-mode =
+    .label = Y Modd Datrys Problemau
+    .accesskey = Y
+menu-help-exit-troubleshoot-mode =
+    .label = Diffodd y Modd Dartrys Problemau
+    .accesskey = D
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

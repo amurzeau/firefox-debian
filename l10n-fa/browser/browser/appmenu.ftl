@@ -17,6 +17,26 @@ appmenuitem-new-window =
     .label = پنجره جدید‌
 appmenuitem-new-private-window =
     .label = پنجره ناشناس جدید
+appmenuitem-passwords =
+    .label = گذرواژه‌ها
+appmenuitem-extensions-and-themes =
+    .label = افزونه‌ها و پوسته‌ها
+appmenuitem-find-in-page =
+    .label = پیداکردن در صفحه…
+appmenuitem-more-tools =
+    .label = ابزارهای بیشتر
+appmenuitem-exit =
+    .label = خروج
+appmenu-menu-button-closed =
+    .tooltiptext = باز کردن منوی برنامه
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = بستن منوی برنامه
+    .label = { -brand-shorter-name }
+# Settings is now used to access the browser settings across all platforms,
+# instead of Options or Preferences.
+appmenuitem-settings =
+    .label = تنظیمات
 
 ## Zoom and Fullscreen Controls
 
@@ -31,6 +51,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = انجام هم‌گام‌سازی
+appmenuitem-fxa-toolbar-sync-now =
+    .label = انجام همگام‌سازی
+    .value = انجام همگام‌سازی
+appmenuitem-fxa-manage-account = مدیریت حساب
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = آخرین همگام‌سازی { $time }
+    .label = آخرین همگام‌سازی { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = همگام‌سازی و ذخیرهٔ داده‌ها
+appmenu-fxa-signed-in-label = ورود
+appmenu-fxa-setup-sync =
+    .label = روشن کردن همگام‌سازی…
+appmenu-fxa-show-more-tabs = نمایش زبانه‌های بیشتر
 appmenuitem-save-page =
     .label = ذخیرهٔ صفحه به نام…
 
@@ -47,9 +84,54 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-title =
+    .value = { -profiler-brand-name }
+profiler-popup-reveal-description-button =
+    .aria-label = نمایش اطلاعات بیشتر
+profiler-popup-description-title =
+    .value = ضبط، تجزیه و تحلیل، اشتراک گذاری
+profiler-popup-description = با انتشار پروفایل‌ها، در مورد مشکلات مربوط به بهینه‌سازی همکاری کنید.
+profiler-popup-learn-more = بیشتر بدانید
+profiler-popup-settings =
+    .value = تنظیمات
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings = ویرایش تنظیمات…
+profiler-popup-disabled =
+    پروفایلر در حال حاضر غیرفعال است، به احتمال زیاد به این خاطر که یک پنجرهٔ مرور ناشناس
+    باز است
+profiler-popup-recording-screen = ضبط…
+# The profiler presets list is generated elsewhere, but the custom preset is defined
+# here only.
+profiler-popup-presets-custom =
+    .label = سفارشی
+profiler-popup-start-recording-button =
+    .label = شروع ضبط
+profiler-popup-discard-button =
+    .label = دور انداختن
+profiler-popup-capture-button =
+    .label = گرفتن
+profiler-popup-start-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧1
+       *[other] Ctrl+Shift+1
+    }
+profiler-popup-capture-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧2
+       *[other] Ctrl+Shift+2
+    }
+
+## History panel
+
+appmenu-manage-history =
+    .label = مدیریت تاریخچه
+appmenu-reopen-all-tabs = بازگردانی همه زبانه‌ها
+appmenu-reopen-all-windows = بازگردانی همهٔ پنجره‌ها
 
 ## Help panel
 
+appmenu-help-header =
+    .title = راهنما { -brand-shorter-name }
 appmenu-about =
     .label = دربارهٔ { -brand-shorter-name }
     .accesskey = A
@@ -65,11 +147,19 @@ appmenu-help-import-from-another-browser =
 appmenu-help-keyboard-shortcuts =
     .label = میانبرهای صفحه کلید
     .accesskey = K
+appmenu-get-help =
+    .label = دریافت راهنمایی
+    .accesskey = H
 appmenu-help-troubleshooting-info =
     .label = اطلاعات رفع اشکال
     .accesskey = T
+appmenu-help-more-troubleshooting-info =
+    .label = اطلاعات بیشتر
+    .accesskey = T
 appmenu-help-taskmanager =
     .label = مدیر وظایف
+appmenu-help-report-site-issue =
+    .label = مشکل سایت را گزارش کنید…
 appmenu-help-feedback-page =
     .label = ارسال نظر…
     .accesskey = S
@@ -84,6 +174,16 @@ appmenu-help-safe-mode-with-addons =
     .label = راه‌اندازی مجدد به همراه غیرفعال کردن افزودنی‌ها
     .accesskey = R
 
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = حالت عیب‌یابی
+    .accesskey = M
+appmenu-help-exit-troubleshoot-mode =
+    .label = خاموش کردن حالت عیب‌یابی
+    .accesskey = M
+
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
@@ -96,3 +196,11 @@ appmenu-help-not-deceptive =
 
 ##
 
+appmenu-help-check-for-update =
+    .label = بررسی برای بروزرسانی‌ها…
+
+## More Tools
+
+appmenu-customizetoolbar =
+    .label = سفارشی‌سازی نوار ابزار…
+appmenu-developer-tools-subheader = ابزارهای مرورگر

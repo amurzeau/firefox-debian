@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = پیدا کردن در این صفحه…
     .accesskey = پ
+menu-edit-find-in-page =
+    .label = پیدا کردن در صفحه…
+    .accesskey = F
 menu-edit-find-again =
     .label = پیدا کردن مجدد
     .accesskey = ج
@@ -129,6 +132,9 @@ menu-view-toolbars-menu =
 menu-view-customize-toolbar =
     .label = سفارشی‌سازی…
     .accesskey = س
+menu-view-customize-toolbar2 =
+    .label = سفارشی‌سازی نوار ابزار…
+    .accesskey = C
 menu-view-sidebar =
     .label = نوار کناری
     .accesskey = ک
@@ -207,6 +213,8 @@ menu-history-undo-menu =
     .label = زبانه‌های تازه بسته شده
 menu-history-undo-window-menu =
     .label = پنجره‌های تازه بسته شده
+menu-history-reopen-all-tabs = بازآوری همهٔ زبانه‌ها
+menu-history-reopen-all-windows = بازآوری همهٔ پنجره‌ها
 
 ## Bookmarks Menu
 
@@ -217,6 +225,8 @@ menu-bookmarks-show-all =
     .label = نمایش همهٔ نشانک‌ها
 menu-bookmark-this-page =
     .label = نشانک‌گذاری این صفحه
+menu-bookmark-current-tab =
+    .label = نشانک‌گذاری زبانهٔ فعلی
 menu-bookmark-edit =
     .label = ویرایش این نشانک
 menu-bookmarks-all-tabs =
@@ -241,6 +251,12 @@ menu-tools-addons =
     .accesskey = ا
 menu-tools-fxa-sign-in =
     .label = ورود به { -brand-product-name }ٕ‍ٕ…
+    .accesskey = g
+menu-tools-extensions =
+    .label = افزونه‌ها و پوسته‌ها
+    .accesskey = E
+menu-tools-fxa-sign-in2 =
+    .label = وارد شدن
     .accesskey = g
 menu-tools-turn-on-sync =
     .label = روشن کردن { -sync-brand-short-name } ...
@@ -270,6 +286,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] گ
            *[other] ت
+        }
+menu-settings =
+    .label = تنظیمات
+    .accesskey =
+        { PLATFORM() ->
+            [windows] s
+           *[other] n
         }
 menu-tools-layout-debugger =
     .label = اشکال‌زدای چیدمان
@@ -317,11 +340,19 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = میانبرهای صفحه کلید
     .accesskey = K
+menu-get-help =
+    .label = دریافت کمک
+    .accesskey = H
 menu-help-troubleshooting-info =
     .label = اطلاعات رفع اشکال
     .accesskey = T
+menu-help-more-troubleshooting-info =
+    .label = اطلاعات بیشتر
+    .accesskey = T
 menu-help-taskmanager =
     .label = مدیر وظایف
+menu-help-report-site-issue =
+    .label = مشکل سایت را گزارش کنید…
 menu-help-feedback-page =
     .label = ارسال نظر…
     .accesskey = S
@@ -331,6 +362,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = راه‌اندازی مجدد به همراه غیرفعال کردن افزودنی‌ها
     .accesskey = R
+menu-help-enter-troubleshoot-mode =
+    .label = حالت عیب‌یابی
+    .accesskey = M
+menu-help-exit-troubleshoot-mode =
+    .label = خاموش کردن حالت عیب‌یابی
+    .accesskey = M
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =
@@ -339,3 +376,6 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = این یک سایت گمراه‌کننده نیست…
     .accesskey = d
+menu-help-check-for-update =
+    .label = بررسی برای بروزرسانی‌ها…
+    .accesskey = C

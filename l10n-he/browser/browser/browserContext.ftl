@@ -111,6 +111,9 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = פתיחת קישור במגירת לשוניות חדשה
     .accesskey = מ
+main-context-menu-open-link-container =
+    .label = פתיחת קישור במגירה חדשה
+    .accesskey = מ
 main-context-menu-open-link-new-window =
     .label = פתיחת קישור בחלון חדש
     .accesskey = ח
@@ -120,6 +123,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = יצירת סימנייה לקישור זה
     .accesskey = ק
+main-context-menu-bookmark-link =
+    .label = יצירת סימנייה לקישור
+    .accesskey = ס
 main-context-menu-save-link =
     .label = שמירת קישור בשם…
     .accesskey = מ
@@ -131,11 +137,19 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = העתקת כתובת דוא״ל
     .accesskey = כ
 main-context-menu-copy-link =
     .label = העתקת מיקום קישור
+    .accesskey = ה
+main-context-menu-copy-link-simple =
+    .label = העתקת קישור
     .accesskey = ה
 
 ## Media (video/audio) controls
@@ -179,6 +193,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = מטורפת (2×)
     .accesskey = ט
+main-context-menu-media-play-speed-2 =
+    .label = מהירות
+    .accesskey = ר
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = לולאה
     .accesskey = ל
@@ -206,6 +233,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = תמונה בתוך תמונה
     .accesskey = ב
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = צפייה בתמונה בתוך תמונה
+    .accesskey = צ
 main-context-menu-image-reload =
     .label = טעינת תמונה מחדש
     .accesskey = ת
@@ -215,6 +247,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = צפיה בוידאו
     .accesskey = צ
+main-context-menu-image-view-new-tab =
+    .label = פתיחת תמונה בלשונית חדשה
+    .accesskey = ת
+main-context-menu-video-view-new-tab =
+    .label = פתיחת וידאו בלשונית חדשה
+    .accesskey = ד
 main-context-menu-image-copy =
     .label = העתקת תמונה
     .accesskey = ת
@@ -227,6 +265,15 @@ main-context-menu-video-copy-location =
 main-context-menu-audio-copy-location =
     .label = העתקת מיקום אודיו
     .accesskey = ה
+main-context-menu-image-copy-link =
+    .label = העתקת קישור התמונה
+    .accesskey = ת
+main-context-menu-video-copy-link =
+    .label = העתקת קישור הוידאו
+    .accesskey = ו
+main-context-menu-audio-copy-link =
+    .label = העתקת קישור השמע
+    .accesskey = ש
 main-context-menu-image-save-as =
     .label = שמירת תמונה בשם…
     .accesskey = ב
@@ -239,6 +286,9 @@ main-context-menu-image-set-as-background =
 main-context-menu-image-info =
     .label = הצגת פרטי תמונה
     .accesskey = מ
+main-context-menu-image-set-image-as-background =
+    .label = קביעה כתמונת רקע בשולחן העבודה…
+    .accesskey = ר
 main-context-menu-image-desc =
     .label = הצגת תיאור
     .accesskey = ת
@@ -251,6 +301,9 @@ main-context-menu-audio-save-as =
 main-context-menu-video-image-save-as =
     .label = שמירת צילום בשם…
     .accesskey = צ
+main-context-menu-video-take-snapshot =
+    .label = לכידת תמונה
+    .accesskey = כ
 main-context-menu-video-email =
     .label = שליחת וידאו בדוא״ל…
     .accesskey = ו
@@ -272,6 +325,26 @@ main-context-menu-send-to-device =
 main-context-menu-view-background-image =
     .label = הצגת תמונת רקע
     .accesskey = ת
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = שימוש בכניסה שמורה
+    .accesskey = ש
+main-context-menu-use-saved-password =
+    .label = שימוש בססמה שמורה
+    .accesskey = ש
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = קבלת הצעה לססמה חזקה…
+    .accesskey = ק
+main-context-menu-manage-logins =
+    .label = ניהול כניסות…
+    .accesskey = נ
 main-context-menu-keyword =
     .label = הוספת מילת מפתח לחיפוש זה…
     .accesskey = ס
@@ -314,6 +387,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = הצגת קוד מקור של קטע נבחר
     .accesskey = ה
+main-context-menu-take-screenshot =
+    .label = צילום מסך
+    .accesskey = צ
 main-context-menu-view-page-source =
     .label = הצגת מקור הדף
     .accesskey = מ
@@ -328,6 +404,9 @@ main-context-menu-bidi-switch-page =
     .accesskey = פ
 main-context-menu-inspect-element =
     .label = חקירת רכיב
+    .accesskey = ח
+main-context-menu-inspect =
+    .label = חקירה
     .accesskey = ח
 main-context-menu-inspect-a11y-properties =
     .label = חקירת מאפייני נגישות

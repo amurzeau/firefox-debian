@@ -27,6 +27,12 @@ appmenuitem-more-tools =
     .label = Altere utensiles
 appmenuitem-exit =
     .label = Exir
+appmenu-menu-button-closed =
+    .tooltiptext = Aperir menu del application
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Clauder menu del application
+    .label = { -brand-shorter-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -45,6 +51,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Synchronisar ora
+appmenuitem-fxa-toolbar-sync-now =
+    .label = Synchronisar ora
+    .value = Synchronisar ora
+appmenuitem-fxa-manage-account = Gerer conto
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Ultime synchronisation: { $time }
+    .label = Ultime synchronisation: { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = Synchronisar e salvar datos
+appmenu-fxa-signed-in-label = Aperir session
+appmenu-fxa-setup-sync =
+    .label = Activation synchronisation…
+appmenu-fxa-show-more-tabs = Monstrar altere schedas
 appmenuitem-save-page =
     .label = Salvar le pagina como…
 
@@ -130,8 +153,13 @@ appmenu-get-help =
 appmenu-help-troubleshooting-info =
     .label = Informationes de diagnostico
     .accesskey = I
+appmenu-help-more-troubleshooting-info =
+    .label = Altere informationes diagnostic
+    .accesskey = d
 appmenu-help-taskmanager =
     .label = Gestor de activitate
+appmenu-help-report-site-issue =
+    .label = Reportar un problema con le sito…
 appmenu-help-feedback-page =
     .label = Submitter tu opinion…
     .accesskey = S
@@ -145,6 +173,16 @@ appmenu-help-safe-mode-without-addons =
 appmenu-help-safe-mode-with-addons =
     .label = Reinitiar con le additivos active
     .accesskey = R
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = Modo diagnostic
+    .accesskey = M
+appmenu-help-exit-troubleshoot-mode =
+    .label = Disactivar le modo diagnostic
+    .accesskey = D
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

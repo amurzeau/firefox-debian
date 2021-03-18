@@ -27,6 +27,12 @@ appmenuitem-more-tools =
     .label = Mear ark
 appmenuitem-exit =
     .label = Ofslute
+appmenu-menu-button-closed =
+    .tooltiptext = Tapassingsmenu iepenje
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Tapassingsmenu slute
+    .label = { -brand-shorter-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -45,6 +51,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = No syngronisearje
+appmenuitem-fxa-toolbar-sync-now =
+    .label = No syngronisearje
+    .value = No syngronisearje
+appmenuitem-fxa-manage-account = Account beheare
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Lêst syngronisearre: { $time }
+    .label = Lêst syngronisearre: { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = Syngronisearje en gegevens bewarje
+appmenu-fxa-signed-in-label = Oanmelde
+appmenu-fxa-setup-sync =
+    .label = Syngronisaasje ynskeakelje…
+appmenu-fxa-show-more-tabs = Mear ljepblêden toane
 appmenuitem-save-page =
     .label = Side bewarje as…
 
@@ -98,6 +121,13 @@ profiler-popup-capture-shortcut =
        *[other] Ctrl+Shift+2
     }
 
+## History panel
+
+appmenu-manage-history =
+    .label = Skiednis beheare
+appmenu-reopen-all-tabs = Alle ljepblêden opnij iepenje
+appmenu-reopen-all-windows = Alle finsters opnij iepenje
+
 ## Help panel
 
 appmenu-help-header =
@@ -123,8 +153,13 @@ appmenu-get-help =
 appmenu-help-troubleshooting-info =
     .label = Probleemoplossingsynformaasje
     .accesskey = P
+appmenu-help-more-troubleshooting-info =
+    .label = Mear probleemoplossingsynformaasje
+    .accesskey = p
 appmenu-help-taskmanager =
     .label = Taakbehearder
+appmenu-help-report-site-issue =
+    .label = Websiteprobleem rapportearje…
 appmenu-help-feedback-page =
     .label = Feedback ferstjoere…
     .accesskey = f
@@ -138,6 +173,16 @@ appmenu-help-safe-mode-without-addons =
 appmenu-help-safe-mode-with-addons =
     .label = Opnij starte mei ynskeakele add-ons
     .accesskey = r
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = Probleemoplossingsmodus
+    .accesskey = m
+appmenu-help-exit-troubleshoot-mode =
+    .label = Probleemoplossingsmodus útskeakelje
+    .accesskey = m
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
@@ -153,3 +198,9 @@ appmenu-help-not-deceptive =
 
 appmenu-help-check-for-update =
     .label = Kontrolearje op fernijingen…
+
+## More Tools
+
+appmenu-customizetoolbar =
+    .label = Arkbalke oanpasse…
+appmenu-developer-tools-subheader = Browserhelpmidelen

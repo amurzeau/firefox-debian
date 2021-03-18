@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Hľadať na tejto stránke…
     .accesskey = n
+menu-edit-find-in-page =
+    .label = Hľadať na stránke…
+    .accesskey = H
 menu-edit-find-again =
     .label = Hľadať znova
     .accesskey = d
@@ -129,6 +132,9 @@ menu-view-toolbars-menu =
 menu-view-customize-toolbar =
     .label = Prispôsobiť…
     .accesskey = P
+menu-view-customize-toolbar2 =
+    .label = Upraviť panel nástrojov…
+    .accesskey = U
 menu-view-sidebar =
     .label = Bočný panel
     .accesskey = B
@@ -207,6 +213,8 @@ menu-history-undo-menu =
     .label = Nedávno zatvorené karty
 menu-history-undo-window-menu =
     .label = Nedávno zatvorené okná
+menu-history-reopen-all-tabs = Obnoviť všetky karty
+menu-history-reopen-all-windows = Obnoviť všetky okná
 
 ## Bookmarks Menu
 
@@ -217,6 +225,8 @@ menu-bookmarks-show-all =
     .label = Zobraziť všetky záložky
 menu-bookmark-this-page =
     .label = Pridať stránku medzi záložky
+menu-bookmark-current-tab =
+    .label = Pridať túto kartu medzi záložky
 menu-bookmark-edit =
     .label = Upraviť túto záložku
 menu-bookmarks-all-tabs =
@@ -242,6 +252,12 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Prihlásiť sa do aplikácie { -brand-product-name }…
     .accesskey = i
+menu-tools-extensions =
+    .label = Rozšírenia a témy vzhľadu
+    .accesskey = t
+menu-tools-fxa-sign-in2 =
+    .label = Prihlásiť sa
+    .accesskey = P
 menu-tools-turn-on-sync =
     .label = Zapnúť { -sync-brand-short-name }…
     .accesskey = n
@@ -270,6 +286,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] M
            *[other] M
+        }
+menu-settings =
+    .label = Nastavenia
+    .accesskey =
+        { PLATFORM() ->
+            [windows] N
+           *[other] N
         }
 menu-tools-layout-debugger =
     .label = Ladenie rozloženia
@@ -323,8 +346,13 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Informácie pre riešenie problémov
     .accesskey = m
+menu-help-more-troubleshooting-info =
+    .label = Ďalšie informácie pre riešenie problémov
+    .accesskey = i
 menu-help-taskmanager =
     .label = Správca úloh
+menu-help-report-site-issue =
+    .label = Nahlásiť problém so stránkou…
 menu-help-feedback-page =
     .label = Odoslať spätnú väzbu…
     .accesskey = d
@@ -334,6 +362,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Reštartovať a povoliť doplnky…
     .accesskey = R
+menu-help-enter-troubleshoot-mode =
+    .label = Režim riešenia problémov
+    .accesskey = p
+menu-help-exit-troubleshoot-mode =
+    .label = Vypnúť režim riešenia problémov
+    .accesskey = r
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

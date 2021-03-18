@@ -111,6 +111,9 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Hivatkozás megnyitása új konténerlapon
     .accesskey = k
+main-context-menu-open-link-container =
+    .label = Hivatkozás megnyitása új konténerben
+    .accesskey = j
 main-context-menu-open-link-new-window =
     .label = Megnyitás új ablakban
     .accesskey = a
@@ -120,6 +123,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = Hivatkozás felvétele a könyvjelzők közé
     .accesskey = f
+main-context-menu-bookmark-link =
+    .label = Hivatkozás könyvjelzőzése
+    .accesskey = H
 main-context-menu-save-link =
     .label = Hivatkozás mentése más néven…
     .accesskey = n
@@ -131,12 +137,20 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = E-mail cím másolása
     .accesskey = m
 main-context-menu-copy-link =
     .label = Hivatkozás címének másolása
     .accesskey = v
+main-context-menu-copy-link-simple =
+    .label = Hivatkozás másolása
+    .accesskey = m
 
 ## Media (video/audio) controls
 ##
@@ -179,6 +193,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Elképzelhetetlen (2×)
     .accesskey = k
+main-context-menu-media-play-speed-2 =
+    .label = Sebesség
+    .accesskey = b
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0,5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1,0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1,25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1,5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Ismétlés
     .accesskey = I
@@ -206,6 +233,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Kép a képben
     .accesskey = p
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Megtekintés Kép a képben módban
+    .accesskey = K
 main-context-menu-image-reload =
     .label = Kép újrabetöltése
     .accesskey = r
@@ -214,6 +246,12 @@ main-context-menu-image-view =
     .accesskey = s
 main-context-menu-video-view =
     .label = Videó megtekintése
+    .accesskey = V
+main-context-menu-image-view-new-tab =
+    .label = Kép megnyitása új lapon
+    .accesskey = K
+main-context-menu-video-view-new-tab =
+    .label = Videó megnyitása új lapon
     .accesskey = V
 main-context-menu-image-copy =
     .label = Kép másolása
@@ -227,6 +265,15 @@ main-context-menu-video-copy-location =
 main-context-menu-audio-copy-location =
     .label = Hang címének másolása
     .accesskey = s
+main-context-menu-image-copy-link =
+    .label = Képhivatkozás másolása
+    .accesskey = l
+main-context-menu-video-copy-link =
+    .label = Videóhivatkozás másolása
+    .accesskey = V
+main-context-menu-audio-copy-link =
+    .label = Hanghivatkozás másolása
+    .accesskey = H
 main-context-menu-image-save-as =
     .label = Kép mentése más néven…
     .accesskey = m
@@ -239,6 +286,9 @@ main-context-menu-image-set-as-background =
 main-context-menu-image-info =
     .label = Képadatok megjelenítése
     .accesskey = d
+main-context-menu-image-set-image-as-background =
+    .label = Kép beállítása háttérképként…
+    .accesskey = K
 main-context-menu-image-desc =
     .label = Leírás megjelenítése
     .accesskey = L
@@ -250,6 +300,9 @@ main-context-menu-audio-save-as =
     .accesskey = H
 main-context-menu-video-image-save-as =
     .label = Pillanatkép mentése más néven…
+    .accesskey = P
+main-context-menu-video-take-snapshot =
+    .label = Pillanatkép készítése…
     .accesskey = P
 main-context-menu-video-email =
     .label = Videó küldése e-mailben…
@@ -275,6 +328,26 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = Előállított jelszó használata
     .accesskey = E
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = Mentett bejelentkezés használata
+    .accesskey = b
+main-context-menu-use-saved-password =
+    .label = Mentett jelszó használata
+    .accesskey = j
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = Erős jelszó javaslata…
+    .accesskey = E
+main-context-menu-manage-logins =
+    .label = Bejelentkezések kezelése…
+    .accesskey = B
 main-context-menu-keyword =
     .label = Kulcsszó hozzáadása a kereséshez…
     .accesskey = u
@@ -317,6 +390,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Kijelölés forrásának megtekintése
     .accesskey = M
+main-context-menu-take-screenshot =
+    .label = Képernyőkép készítése
+    .accesskey = e
 main-context-menu-view-page-source =
     .label = Oldal forrása
     .accesskey = f
@@ -332,6 +408,9 @@ main-context-menu-bidi-switch-page =
 main-context-menu-inspect-element =
     .label = Elem vizsgálata
     .accesskey = z
+main-context-menu-inspect =
+    .label = Vizsgálat
+    .accesskey = Q
 main-context-menu-inspect-a11y-properties =
     .label = Akadálymentesítési tulajdonságok vizsgálata
 main-context-menu-eme-learn-more =

@@ -351,11 +351,11 @@ browser-window-close-button =
 browser-tab-audio-playing = Wird abgespielt
 browser-tab-audio-muted = Stummgeschaltet
 # This label should be written in all capital letters if your locale supports them.
-browser-tab-audio-playing2 = WIRD ABGESPIELT
+browser-tab-audio-playing2 = WIEDERGABE
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-muted2 = STUMMGESCHALTET
 # This label should be written in all capital letters if your locale supports them.
-browser-tab-audio-blocked = WIEDERGABE BLOCKIERT
+browser-tab-audio-blocked = BLOCKIERUNG DER WIEDERGABE
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = BILD-IM-BILD
 
@@ -523,6 +523,8 @@ crashed-subframe-message = <strong>Ein Teil der Seite ist abgestürzt.</strong> 
 crashed-subframe-learnmore =
     .label = Weitere Informationen
     .accesskey = W
+crashed-subframe-learnmore-link =
+    .value = Weitere Informationen
 crashed-subframe-submit =
     .label = Bericht senden
     .accesskey = B
@@ -537,6 +539,7 @@ bookmarks-manage-bookmarks =
     .label = Lesezeichen verwalten
 bookmarks-recent-bookmarks-panel =
     .value = Neueste Lesezeichen
+bookmarks-recent-bookmarks-panel-subheader = Neueste Lesezeichen
 bookmarks-toolbar-chevron =
     .tooltiptext = Weitere Lesezeichen anzeigen
 bookmarks-sidebar-content =
@@ -616,3 +619,11 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Offline arbeiten
     .accesskey = O
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Einige Audio- oder Videodateien auf dieser Seite nutzen DRM-Kopierschutz, der einschränkt, was Sie in { -brand-short-name } damit tun können.
+eme-notifications-drm-content-playing-manage = Einstellungen verwalten
+eme-notifications-drm-content-playing-manage-accesskey = v
+eme-notifications-drm-content-playing-dismiss = Schließen
+eme-notifications-drm-content-playing-dismiss-accesskey = S

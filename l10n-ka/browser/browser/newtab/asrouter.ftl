@@ -212,6 +212,14 @@ cfr-doorhanger-milestone-heading =
         [one] { -brand-short-name } ზღუდავს <b>{ $blockedCount }</b>-ზე მეტ მეთვალყურეს თარიღიდან { $date }!
        *[other] { -brand-short-name } ზღუდავს <b>{ $blockedCount }</b>-ზე მეტ მეთვალყურეს თარიღიდან { $date }!
     }
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (Datetime) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading2 =
+    { $blockedCount ->
+        [one] { -brand-short-name } ზღუდავს <b>{ $blockedCount }</b>-ზე მეტ მეთვალყურეს თარიღიდან { DATETIME($date, month: "long", year: "numeric") }!
+       *[other] { -brand-short-name } ზღუდავს <b>{ $blockedCount }</b>-ზე მეტ მეთვალყურეს თარიღიდან { DATETIME($date, month: "long", year: "numeric") }!
+    }
 cfr-doorhanger-milestone-ok-button = ყველას ნახვა
     .accesskey = ნ
 cfr-doorhanger-milestone-close-button = დახურვა
@@ -240,6 +248,10 @@ cfr-whatsnew-pip-fullscreen-icon-alt = ეკრანი-ეკრანში 
 
 ## Protections Dashboard message
 
+
+## What’s New Panel Content for Firefox 76
+## Protections Dashboard message
+
 cfr-whatsnew-protections-header = დაცვისთვის თვალის შევლება
 cfr-whatsnew-protections-body = დაცვის მაჩვენებლების გვერდი შეიცავს შემაჯამებელ ცნობებს ანგარიშების მიტაცებებსა და პაროლების მართვაზე. შეგიძლიათ თვალი ადევნოთ, რამდენი გაქვთ გამოსწორებული და იხილოთ, თქვენი რომელიმე პაროლი გამჟღავნებულ მონაცემებში ხომ არ აღმოჩენილა.
 cfr-whatsnew-protections-cta-link = დაცვის მაჩვენებლების ნახვა
@@ -255,6 +267,8 @@ cfr-whatsnew-better-pdf-body = PDF-დოკუმენტებს ახლ�
 cfr-doorhanger-doh-body = თქვენი პირადულობა უმნიშვნელოვანესია. { -brand-short-name } ახლა უკვე უსაფრთხოდ გადაამისამართებს თქვენს DNS-მოთხოვნებს, როცა კი შესაძლებელი იქნება, პარტნიორი მომსახურების მეშვეობით, რომ გვერდების მონახულებისას მუდამ დაცული იყოთ.
 cfr-doorhanger-doh-header = მეტად უსაფრთხო, დაშიფრული DNS-გარდაქმნები
 cfr-doorhanger-doh-primary-button = კარგი, გასაგებია
+    .accesskey = კ
+cfr-doorhanger-doh-primary-button-2 = კარგი
     .accesskey = კ
 cfr-doorhanger-doh-secondary-button = გამორთვა
     .accesskey = გ
@@ -294,3 +308,8 @@ cfr-whatsnew-supercookies-body = საიტებს შეუძლია შ
 
 cfr-whatsnew-bookmarking-header = გაუმჯობესებული სანიშნები
 cfr-whatsnew-bookmarking-body = საყვარელ საიტებზე თვალის მიდევნება გაადვილდა. { -brand-short-name } ახლა უკვე დაიხსომებს თქვენ მიერ შერჩეულ ადგილს სანიშნების შესანახად, ნაგულისხმევად გამოაჩენს სანიშნების ზოლს ახალ ჩანართებზე და მოგცემთ მარტივი წვდომის საშუალებას დანარჩენ სანიშნებთან, ხელსაწყოთა ზოლის საქაღალდიდან.
+
+## What's new: Cross-site cookie tracking
+
+cfr-whatsnew-cross-site-tracking-header = ყოვლისმომცველი დაცვა საიტთაშორისი ფუნთუშებით თვალთვალისგან
+cfr-whatsnew-cross-site-tracking-body = ახლა უკვე შეგიძლიათ ისარგებლოთ ფუნთუშებით თვალთვალისგან გაუმჯობესებული დაცვით. { -brand-short-name } გამოაცალკევებს, მიმდინარე საიტზე თქვენი მოქმედებების შესახებ ინფორმაციას და შესაბამისად, ბრაუზერში შენახული მონაცემები ვეღარ გაზიარდება სხვადასხვა საიტებს შორის.

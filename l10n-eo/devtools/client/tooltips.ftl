@@ -30,6 +30,8 @@ inactive-text-overflow-when-no-overflow = <strong>{ $property }</strong> ne efik
 inactive-outline-radius-when-outline-style-auto-or-none = <strong>{ $property }</strong> havas neniun efikon sur tiu ĉi elemento ĉar ĝia <strong>outline-style</strong> estas <strong>auto</strong> aŭ <strong>none</strong>.
 inactive-css-not-for-internal-table-elements = <strong>{ $property }</strong> ne efikas sur internaj elementoj de tabelo.
 inactive-css-not-for-internal-table-elements-except-table-cells = <strong>{ $property }</strong> ne efikas sur internaj elementoj de tabelo, krom se ili estas ĉeloj.
+inactive-css-not-table = <strong>{ $property }</strong> ne efikas sur tiu ĉi elemento ĉar ĝi ne estas tablo.
+inactive-scroll-padding-when-not-scroll-container = <strong>{ $property }</strong> ne efikas sur tiu ĉi elemento ĉar ĝi ne ŝoveblas.
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
 ## an icon. When this icon is hovered this message is displayed to explain how
@@ -48,7 +50,11 @@ inactive-css-non-replaced-inline-or-table-column-or-column-group-fix = Provu ald
 inactive-css-not-display-block-on-floated-fix = Provu forigi <strong>float</strong> aŭ aldoni <strong>display:block</strong>. { learn-more }
 inactive-css-position-property-on-unpositioned-box-fix = Klopodu difini ĝian atributon <strong>position</strong> per valoro diferenca de <strong>static</strong>. { learn-more }
 inactive-text-overflow-when-no-overflow-fix = Provu aldoni <strong>overflow:hidden</strong>. { learn-more }
+inactive-css-not-for-internal-table-elements-fix = Provu difini ĝian atributon <strong>display</strong> per valoro malsama ol <strong>table-cell</strong>, <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong>, or <strong>table-footer-group</strong>. { learn-more }
+inactive-css-not-for-internal-table-elements-except-table-cells-fix = Provu difini ĝian atributon <strong>display</strong> per valoro malsama ol <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong>, or <strong>table-footer-group</strong>. { learn-more }
 inactive-outline-radius-when-outline-style-auto-or-none-fix = Provu difini la atributon <strong>outline-style</strong> kiel ion malsaman de <strong>auto</strong> aŭ <strong>none</strong>. { learn-more }
+inactive-css-not-table-fix = Provu aldoni <strong>display:table</strong> aŭ <strong>display:inline-table</strong>. { learn-more }
+inactive-scroll-padding-when-not-scroll-container-fix = Provu aldoni <strong>overflow:auto</strong>, <strong>overflow:scroll</strong>, or <strong>overflow:hidden</strong>. { learn-more }
 
 ## In the Rule View when a CSS property may have compatibility issues with other browsers
 ## we display an icon. When this icon is hovered this message is displayed to explain why

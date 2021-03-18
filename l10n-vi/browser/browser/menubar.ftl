@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Tìm trong trang này…
     .accesskey = F
+menu-edit-find-in-page =
+    .label = Tìm trong trang…
+    .accesskey = F
 menu-edit-find-again =
     .label = Tìm lại
     .accesskey = g
@@ -128,6 +131,9 @@ menu-view-toolbars-menu =
     .accesskey = T
 menu-view-customize-toolbar =
     .label = Tùy biến…
+    .accesskey = C
+menu-view-customize-toolbar2 =
+    .label = Tùy biến thanh công cụ…
     .accesskey = C
 menu-view-sidebar =
     .label = Thanh lề
@@ -219,6 +225,8 @@ menu-bookmarks-show-all =
     .label = Xem tất cả dấu trang
 menu-bookmark-this-page =
     .label = Đánh dấu trang này
+menu-bookmark-current-tab =
+    .label = Đánh dấu thẻ hiện tại
 menu-bookmark-edit =
     .label = Chỉnh sửa dấu trang này
 menu-bookmarks-all-tabs =
@@ -243,6 +251,12 @@ menu-tools-addons =
     .accesskey = A
 menu-tools-fxa-sign-in =
     .label = Đăng nhập vào { -brand-product-name }…
+    .accesskey = g
+menu-tools-extensions =
+    .label = Tiện ích mở rộng và chủ đề
+    .accesskey = E
+menu-tools-fxa-sign-in2 =
+    .label = Đăng nhập
     .accesskey = g
 menu-tools-turn-on-sync =
     .label = Bật { -sync-brand-short-name }…
@@ -271,6 +285,13 @@ menu-preferences =
     .accesskey =
         { PLATFORM() ->
             [windows] O
+           *[other] n
+        }
+menu-settings =
+    .label = Cài đặt
+    .accesskey =
+        { PLATFORM() ->
+            [windows] S
            *[other] n
         }
 menu-tools-layout-debugger =
@@ -325,8 +346,13 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Thông tin xử lý sự cố
     .accesskey = T
+menu-help-more-troubleshooting-info =
+    .label = Thông tin xử lý sự cố khác
+    .accesskey = T
 menu-help-taskmanager =
     .label = Quản lý tác vụ
+menu-help-report-site-issue =
+    .label = Báo cáo vấn đề về trang…
 menu-help-feedback-page =
     .label = Gửi phản hồi…
     .accesskey = S
@@ -336,6 +362,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Khởi động lại và kích hoạt các tiện ích
     .accesskey = R
+menu-help-enter-troubleshoot-mode =
+    .label = Chế độ xử lý sự cố
+    .accesskey = M
+menu-help-exit-troubleshoot-mode =
+    .label = Tắt chế độ xử lý sự cố
+    .accesskey = M
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

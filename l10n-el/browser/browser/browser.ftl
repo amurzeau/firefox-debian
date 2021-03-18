@@ -351,6 +351,12 @@ browser-window-close-button =
 browser-tab-audio-playing = Σε αναπαραγωγή
 browser-tab-audio-muted = Σε σίγαση
 # This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = ΑΝΑΠΑΡΑΓΩΓΗ
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = ΣΕ ΣΙΓΑΣΗ
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = ΦΡΑΓΗ ΑΥΤΟΜΑΤΗΣ ΑΝΑΠΑΡΑΓΩΓΗΣ
+# This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = ΕΙΚΟΝΑ ΕΝΤΟΣ ΕΙΚΟΝΑΣ
 
 ## Bookmarks toolbar items
@@ -368,6 +374,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Μοιραστείτε το μικρόφωνο:
     .accesskey = Μ
+popup-select-camera-device =
+    .value = Κάμερα:
+    .accesskey = Κ
+popup-select-camera-icon =
+    .tooltiptext = Κάμερα
+popup-select-microphone-device =
+    .value = Μικρόφωνο:
+    .accesskey = Μ
+popup-select-microphone-icon =
+    .tooltiptext = Μικρόφωνο
 popup-all-windows-shared = Θα μοιραστούν όλα τα ορατά παράθυρα της οθόνη σας.
 popup-screen-sharing-not-now =
     .label = Όχι τώρα
@@ -377,6 +393,13 @@ popup-screen-sharing-never =
     .accesskey = Ν
 popup-silence-notifications-checkbox = Απενεργοποίηση ειδοποιήσεων από το { -brand-short-name } κατά την κοινή χρήση
 popup-silence-notifications-checkbox-warning = Το { -brand-short-name } δεν θα εμφανίζει ειδοποιήσεις κατά την κοινή χρήση.
+popup-screen-sharing-block =
+    .label = Φραγή
+    .accesskey = Φ
+popup-screen-sharing-always-block =
+    .label = Πάντα φραγή
+    .accesskey = τ
+popup-mute-notifications-checkbox = Σίγαση ειδοποιήσεων ιστοσελίδας κατά την κοινή χρήση
 
 ## WebRTC window or screen share tab switch warning
 
@@ -517,6 +540,8 @@ crashed-subframe-message = <strong>Μέρος της σελίδας κατέρρ
 crashed-subframe-learnmore =
     .label = Μάθετε περισσότερα
     .accesskey = Μ
+crashed-subframe-learnmore-link =
+    .value = Μάθετε περισσότερα
 crashed-subframe-submit =
     .label = Υποβολή αναφοράς
     .accesskey = Υ
@@ -531,6 +556,7 @@ bookmarks-manage-bookmarks =
     .label = Διαχείριση σελιδοδεικτών
 bookmarks-recent-bookmarks-panel =
     .value = Πρόσφατοι σελιδοδείκτες
+bookmarks-recent-bookmarks-panel-subheader = Πρόσφατοι σελιδοδείκτες
 bookmarks-toolbar-chevron =
     .tooltiptext = Προβολή περισσότερων σελιδοδεικτών
 bookmarks-sidebar-content =
@@ -610,3 +636,19 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Εργασία χωρίς σύνδεση
     .accesskey = χ
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Κάποιοι ήχοι ή βίντεο σε αυτή την ιστοσελίδα χρησιμοποιούν λογισμικό DRM, που ενδέχεται να περιορίσει αυτά που μπορείτε να κάνετε με το { -brand-short-name }.
+eme-notifications-drm-content-playing-manage = Διαχείριση ρυθμίσεων
+eme-notifications-drm-content-playing-manage-accesskey = Δ
+eme-notifications-drm-content-playing-dismiss = Απόρριψη
+eme-notifications-drm-content-playing-dismiss-accesskey = Α
+
+## Password save/update panel
+
+panel-save-update-username = Όνομα χρήστη
+panel-save-update-password = Κωδικός πρόσβασης
+
+## Add-on removal warning
+

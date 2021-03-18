@@ -350,6 +350,14 @@ browser-window-close-button =
 
 browser-tab-audio-playing = Reproduciendo
 browser-tab-audio-muted = Silenciado
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = REPRODUCIENDO
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = SILENCIADO
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = REPRODUCCIÓN AUTOMÁTICA BLOQUEADA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = PICTURE-IN-PICTURE
 
 ## Bookmarks toolbar items
 
@@ -515,6 +523,8 @@ crashed-subframe-message = <strong>Parte de esta página falló.</strong> Para q
 crashed-subframe-learnmore =
     .label = Saber más
     .accesskey = S
+crashed-subframe-learnmore-link =
+    .value = Saber más
 crashed-subframe-submit =
     .label = Enviar informe
     .accesskey = E
@@ -529,6 +539,7 @@ bookmarks-manage-bookmarks =
     .label = Administrar marcadores
 bookmarks-recent-bookmarks-panel =
     .value = Marcadores recientes
+bookmarks-recent-bookmarks-panel-subheader = Marcadores recientes
 bookmarks-toolbar-chevron =
     .tooltiptext = Mostrar más marcadores
 bookmarks-sidebar-content =
@@ -608,3 +619,11 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Trabajar sin conexión
     .accesskey = x
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Cierto audio o vídeo en este sitio usa software DRM, que puede limitar lo que { -brand-short-name } le permite hacer con él.
+eme-notifications-drm-content-playing-manage = Administrar ajustes
+eme-notifications-drm-content-playing-manage-accesskey = M
+eme-notifications-drm-content-playing-dismiss = Descartar
+eme-notifications-drm-content-playing-dismiss-accesskey = D

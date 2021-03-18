@@ -31,6 +31,7 @@ about-processes-browser-process-name = { -brand-short-name } (processus { $pid }
 about-processes-web-process-name = Web (processus { $pid }, partagé)
 about-processes-web-isolated-process-name = Web (processus { $pid }) pour { $origin }
 about-processes-web-large-allocation = Web (processus { $pid }, grand) pour { $origin }
+about-processes-with-coop-coep-process-name = Web (processus { $pid }, multiorigines isolé) pour { $origin }
 about-processes-file-process-name = Fichiers (processus { $pid })
 about-processes-extension-process-name = Extensions (processus { $pid })
 about-processes-privilegedabout-process-name = À propos (processus { $pid })
@@ -41,6 +42,8 @@ about-processes-gpu-process-name = GPU (processus { $pid })
 about-processes-vr-process-name = Réalité virtuelle (processus { $pid })
 about-processes-rdd-process-name = Décodeur de données (processus { $pid })
 about-processes-socket-process-name = Réseau (processus { $pid })
+about-processes-remote-sandbox-broker-process-name = Broker du bac à sable distant (processus { $pid })
+about-processes-fork-server-process-name = Copie du serveur (processus { $pid })
 about-processes-preallocated-process-name = Préalloué (processus { $pid })
 about-processes-unknown-process-name = Autre ({ $type }, processus { $pid })
 # Process

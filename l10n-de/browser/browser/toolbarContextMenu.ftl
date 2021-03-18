@@ -24,6 +24,13 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Geschlossene Tabs wiederherstellen
         }
     .accesskey = G
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Geschlossenen Tab wieder öffnen
+           *[other] Geschlossene Tabs wieder öffnen
+        }
+    .accesskey = ö
 toolbar-context-menu-manage-extension =
     .label = Erweiterung verwalten
     .accesskey = w
@@ -45,21 +52,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Automatisch aus Symbolleiste ausblenden
     .accesskey = u
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Schaltfläche ausblenden, wenn leer
+    .accesskey = S
 toolbar-context-menu-remove-from-toolbar =
     .label = Aus Symbolleiste entfernen
     .accesskey = e
 toolbar-context-menu-view-customize-toolbar =
     .label = Anpassen…
     .accesskey = A
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Immer
-    .accesskey = m
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Nie
-    .accesskey = N
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Nur bei neuem Tab
-    .accesskey = u
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Symbolleiste anpassen…
+    .accesskey = S
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Immer anzeigen
     .accesskey = I

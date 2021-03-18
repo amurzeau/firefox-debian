@@ -29,9 +29,9 @@
 ">
 
 <!ENTITY fileNotFound.longDesc "
-<ul> 
-  <li>Check the file name for capitalisation or other typing errors.</li> 
-  <li>Check to see if the file was moved, renamed or deleted.</li> 
+<ul>
+  <li>Check the file name for capitalisation or other typing errors.</li>
+  <li>Check to see if the file was moved, renamed or deleted.</li>
 </ul>
 ">
 
@@ -42,10 +42,10 @@
 ">
 
 <!ENTITY generic.longDesc "
-<p>&brandShortName; can't load this page for some reason.</p>
+<p>&brandShortName; can’t load this page for some reason.</p>
 ">
 
-<!ENTITY captivePortal.title "Login to network">
+<!ENTITY captivePortal.title "Log in to network">
 <!ENTITY captivePortal.longDesc2 "
 <p>You must log in to this network before you can access the Internet.</p>
 ">
@@ -56,7 +56,7 @@
 
 <!ENTITY netInterrupt.longDesc "&sharedLongDesc;">
 
-<!ENTITY notCached.longDesc "<p>The requested document is not available in &brandShortName;'s cache.</p><ul><li>As a security precaution, &brandShortName; does not automatically re-request sensitive documents.</li><li>Click Try Again to re-request the document from the website.</li></ul>">
+<!ENTITY notCached.longDesc "<p>The requested document is not available in &brandShortName;’s cache.</p><ul><li>As a security precaution, &brandShortName; does not automatically re-request sensitive documents.</li><li>Click Try Again to re-request the document from the web site.</li></ul>">
 
 <!ENTITY netOffline.longDesc2 "
 <ul> 
@@ -153,12 +153,12 @@ was trying to connect. -->
 
 <!ENTITY sharedLongDesc "
 <ul>
-  <li>The site could be temporarily unavailable or too busy. Try again in a few 
-    moments.</li> 
-  <li>If you are unable to load any pages, check your computer's network 
-    connection.</li> 
+  <li>The site could be temporarily unavailable or too busy. Try again in a few
+    moments.</li>
+  <li>If you are unable to load any pages, check your computer’s network
+    connection.</li>
   <li>If your computer or network is protected by a firewall or proxy, make sure
-    that &brandShortName; is permitted to access the Web.</li> 
+    that &brandShortName; is permitted to access the Web.</li>
 </ul>
 ">
 

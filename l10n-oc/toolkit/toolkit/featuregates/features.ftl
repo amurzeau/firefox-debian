@@ -97,10 +97,11 @@ experimental-features-fission-description = FIssion (isolacion de sites) es una 
 # Support for having multiple Picture-in-Picture windows open simultaneously
 experimental-features-multi-pip =
     .label = Presa en carga de vidèos incrustadas multiplas
-experimental-features-multi-pip-description = Presa en carga experimentala de la compatibilitat de vidèos incrustadas multiplas per aver mantunas fenèstras dubèrtas.
+experimental-features-multi-pip-description = Presa en carga experimentala de la compatibilitat de vidèos incrustadas multiplas per aver mantuna fenèstra dubèrta.
 experimental-features-http3 =
     .label = Protocòl HTTP/3
 experimental-features-http3-description = Presa en carga experimentala del protocòl HTTP/3.
 # Search during IME
 experimental-features-ime-search =
     .label = Barra d’adreça : afichar los resultats pendent la composicion IME
+experimental-features-ime-search-description = Un IME (Input Method Editor, editor de metòde de picada) es una aisina que permet la picada de simbòls complexes, tals coma los utilizats per escriure las lengas indianas las d’Asia de l’Èst en utilizant un clavièr ordinari. Activar aquesta experiéncia ten dubèrt lo panèl de la barra d’adreça qu’aficha los resultats de recèrca e de suggestions, pendent que l’IME es utilizat per la picada de tèxtes. Notatz que l’IME poiriá afichar un panèl que cobrís los resultats de recèrca, per consequéncia aquesta preferéncia es sonque suggerida pels IME qu’utilizan pas aquesta mena de panèl.

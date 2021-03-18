@@ -24,6 +24,13 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Riapri schede chiuse
         }
     .accesskey = a
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Riapri scheda chiusa
+           *[other] Riapri schede chiuse
+        }
+    .accesskey = a
 
 toolbar-context-menu-manage-extension =
     .label = Gestisci estensione
@@ -48,11 +55,17 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Nascondi automaticamente nella barra degli strumenti
     .accesskey = N
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Nascondi pulsante quando vuoto
+    .accesskey = N
 toolbar-context-menu-remove-from-toolbar =
     .label = Rimuovi dalla barra degli strumenti
     .accesskey = b
 toolbar-context-menu-view-customize-toolbar =
     .label = Personalizza…
+    .accesskey = P
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Personalizza barra degli strumenti…
     .accesskey = P
 
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =

@@ -25,6 +25,14 @@ toolbar-context-menu-undo-close-tabs =
            *[many] Відновити { $tabCount } закритих вкладок
         }
     .accesskey = і
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [one] Відновити закриту вкладку
+            [few] Відновити { $tabCount } закриті вкладки
+           *[many] Відновити { $tabCount } закритих вкладок
+        }
+    .accesskey = В
 toolbar-context-menu-manage-extension =
     .label = Керувати розширенням
     .accesskey = К
@@ -46,21 +54,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Автоматично приховувати в панелі інструментів
     .accesskey = п
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Ховати кнопку, якщо немає завантажень
+    .accesskey = Х
 toolbar-context-menu-remove-from-toolbar =
     .label = Вилучити з панелі
     .accesskey = В
 toolbar-context-menu-view-customize-toolbar =
     .label = Пристосування…
     .accesskey = П
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Завжди
-    .accesskey = З
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Ніколи
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Налаштувати панель інструментів…
     .accesskey = Н
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Лише у новій вкладці
-    .accesskey = й
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Завжди показувати
     .accesskey = ж

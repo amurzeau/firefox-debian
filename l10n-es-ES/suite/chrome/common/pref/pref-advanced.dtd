@@ -10,6 +10,11 @@
 <!ENTITY prefCheckDefault.caption "Integración con el sistema">
 <!ENTITY prefCheckDefaultClient.label "Comprobar la condición de aplicación predeterminada al iniciar">
 <!ENTITY prefCheckDefaultClient.accesskey "C">
+<!ENTITY printing.label "Impresión">
+<!ENTITY useNativePrintDialog.label "Usar el diálogo de impresión nativo (donde esté admitido)">
+<!ENTITY useNativePrintDialog.accesskey "a">
+<!ENTITY useGlobalPrintSettings.label "Usar configuración global de impresión">
+<!ENTITY useGlobalPrintSettings.accesskey "b">
 <!ENTITY crashReports.caption "Agente de informe de fallos">
 <!ENTITY submitCrashes.label "Enviar informes de fallo">
 <!ENTITY submitCrashes.accesskey "E">

@@ -26,6 +26,15 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Obnovit zavřené panely
         }
     .accesskey = t
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Obnovit zavřený panel
+            [one] Obnovit zavřený panel
+            [few] Obnovit zavřené panely
+           *[other] Obnovit zavřené panely
+        }
+    .accesskey = b
 toolbar-context-menu-manage-extension =
     .label = Nastavení tohoto rozšíření
     .accesskey = e
@@ -47,21 +56,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Automaticky skrývat
     .accesskey = A
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Skrýt, pokud je prázdné
+    .accesskey = p
 toolbar-context-menu-remove-from-toolbar =
     .label = Odebrat z lišty
     .accesskey = d
 toolbar-context-menu-view-customize-toolbar =
     .label = Nastavení tlačítek a lišt…
     .accesskey = V
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Vždy
-    .accesskey = V
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Nikdy
-    .accesskey = N
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Pouze v novém panelu
-    .accesskey = o
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Nastavení tlačítek a lišt…
+    .accesskey = v
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Vždy zobrazit
     .accesskey = a

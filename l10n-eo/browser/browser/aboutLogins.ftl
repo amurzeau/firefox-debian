@@ -84,6 +84,7 @@ login-item-new-login-title = Krei novan legitimilon
 login-item-edit-button = Redakti
 about-logins-login-item-remove-button = Forigi
 login-item-origin-label = Adreso de retejo
+login-item-tooltip-message = Certiĝu ke tio ĉi kongruas ekzakte kun la adreso de la retejo kie vi komencas seancon.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Nomo de uzanto
@@ -267,6 +268,13 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] Dosiero CSV
        *[other] Dosiero CSV
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] Dokumento TSV
+       *[other] Dosiero TSV
+    }
 
 ##
 ## Variables:
@@ -292,3 +300,62 @@ about-logins-import-dialog-items-error =
        *[other] <span>Eraroj:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ne enportitaj)</span>
     }
 about-logins-import-dialog-done = Farita
+about-logins-import-dialog-error-title = Enporta eraro
+about-logins-import-dialog-error-conflicting-values-title = Pluraj malkonsentaj valoroj por legitimilo
+about-logins-import-dialog-error-conflicting-values-description = Ekzemple: pluraj nomoj de uzanto, pasvortoj, retadresojn, ktp. por legitimilo.
+about-logins-import-dialog-error-file-format-title = Problemo kun la formo de dosiero
+about-logins-import-dialog-error-file-format-description = Malĝustaj aŭ mankantaj kolumnaj titoloj. Certiĝu ke la dosiero inkluzivas kolumnojn por nomo de uzanto, pasvorto kaj retadreso.
+about-logins-import-dialog-error-file-permission-title = Ne eblis legi dosieron
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } ne rajtas legi la dosieron. Provu ŝanĝi la permesojn de la dosiero.
+about-logins-import-dialog-error-unable-to-read-title = Ne eblis analizi dosieron
+about-logins-import-dialog-error-unable-to-read-description = Certiĝu ke vi elektis dosieron ĉu CSV ĉu TSV.
+about-logins-import-dialog-error-no-logins-imported = Neniu legitimilo estis enportita
+about-logins-import-dialog-error-learn-more = Pli da informo
+about-logins-import-dialog-error-try-again = Klopodi denove…
+about-logins-import-dialog-error-cancel = Nuligi
+about-logins-import-report-title = Resumo pri enporto
+about-logins-import-report-description = Akreditiloj kaj pasvortoj enportitaj en { -brand-short-name }.
+#
+# Variables:
+#  $number (number) - The number of the row
+about-logins-import-report-row-index = Vico { $number }
+about-logins-import-report-row-description-no-change = Duobligo: ekzakta kongruo kun ekzistanta legitimilo
+about-logins-import-report-row-description-modified = Ekzistanta legitimilo ĝisdatigita
+about-logins-import-report-row-description-added = Nova legitimilo aldonita
+about-logins-import-report-row-description-error = Eraro: mankas kampo
+
+##
+## Variables:
+##  $field (String) - The name of the field from the CSV file for example url, username or password
+
+about-logins-import-report-row-description-error-multiple-values = Eraro: pluraj valoroj por { $field }
+about-logins-import-report-row-description-error-missing-field = Eraro: mankas{ $field }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-report-added =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">nova legitimilo aldonita</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">novaj legitimiloj aldonitaj</div>
+    }
+about-logins-import-report-modified =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">ekzistanta akreditilo ĝisdatigita</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">ekzistantaj akreditiloj ĝisdatigitaj</div>
+    }
+about-logins-import-report-no-change =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">duobligita akreditilo</div> <div data-l10n-name="not-imported">(ne enportita)</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">duobligitaj akreditiloj</div> <div data-l10n-name="not-imported">(ne enportitaj)</div>
+    }
+about-logins-import-report-error =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">eraro</div> <div data-l10n-name="not-imported">(ne enportita)</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">eraroj</div> <div data-l10n-name="not-imported">(ne enportitaj)</div>
+    }
+
+## Logins import report page
+
+about-logins-import-report-page-title = Enporti resuman raporton

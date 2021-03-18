@@ -24,6 +24,14 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Fortryd lukning af faneblade
         }
     .accesskey = l
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Åbn lukket faneblad igen
+            [one] Åbn lukket faneblad igen
+           *[other] Åbn lukkede faneblade igen
+        }
+    .accesskey = d
 toolbar-context-menu-manage-extension =
     .label = Håndter udvidelse
     .accesskey = H
@@ -45,21 +53,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Skjul automatisk i værktøjslinje
     .accesskey = S
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Skjul knap, når tom
+    .accesskey = S
 toolbar-context-menu-remove-from-toolbar =
     .label = Fjern fra værktøjslinje
     .accesskey = j
 toolbar-context-menu-view-customize-toolbar =
     .label = Tilpas…
     .accesskey = p
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Altid
-    .accesskey = A
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Aldrig
-    .accesskey = d
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Kun i et nyt faneblad
-    .accesskey = K
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Tilpas værktøjslinje…
+    .accesskey = v
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Vis altid
     .accesskey = a

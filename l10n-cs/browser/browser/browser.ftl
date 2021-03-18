@@ -322,7 +322,7 @@ identity-https-only-info-no-upgrade = Nepodařilo se přepnout spojení z HTTP.
 identity-permissions =
     .value = Oprávnění
 identity-permissions-storage-access-header = Cross-site cookies
-identity-permissions-storage-access-hint = Tyto strany mohou používat cross-site cookies a tak přistupovat k datům této stránky během vaší návštěvy.
+identity-permissions-storage-access-hint = Tyto weby mohou používat cross-site cookies a během vaší návštěvy této stránky tak přistupovat k jejím datům.
 identity-permissions-reload-hint = Pro provedení změn může být potřeba stránku znovu načíst.
 identity-permissions-empty = Tento server nemá žádná zvláštní oprávnění.
 identity-clear-site-data =
@@ -406,6 +406,12 @@ popup-select-camera =
 popup-select-microphone =
     .value = Sdílet mikrofon:
     .accesskey = m
+popup-select-camera-device =
+    .value = Kamera:
+    .accesskey = K
+popup-select-microphone-device =
+    .value = Mikrofon:
+    .accesskey = M
 popup-all-windows-shared = Budou sdílena všechna viditelná okna na vaší obrazovce.
 popup-screen-sharing-not-now =
     .label = Teď ne
@@ -415,6 +421,13 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = Nezobrazovat oznámení od { -brand-short-name(case: "gen") } během sdílení
 popup-silence-notifications-checkbox-warning = { -brand-short-name } nebude během sdílení zobrazovat žádná oznámení.
+popup-screen-sharing-block =
+    .label = Blokovat
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Vždy blokovat
+    .accesskey = V
+popup-mute-notifications-checkbox = Ztlumit oznámení ze serverů během sdílení
 
 ## WebRTC window or screen share tab switch warning
 
@@ -561,6 +574,8 @@ crashed-subframe-message =
 crashed-subframe-learnmore =
     .label = Zjistit více
     .accesskey = Z
+crashed-subframe-learnmore-link =
+    .value = Zjistit více
 crashed-subframe-submit =
     .label = Odeslat hlášení
     .accesskey = d
@@ -575,6 +590,7 @@ bookmarks-manage-bookmarks =
     .label = Správa záložek
 bookmarks-recent-bookmarks-panel =
     .value = Naposledy přidané
+bookmarks-recent-bookmarks-panel-subheader = Naposledy přidané
 bookmarks-toolbar-chevron =
     .tooltiptext = Zobrazí více záložek
 bookmarks-sidebar-content =
@@ -654,3 +670,17 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Pracovat offline
     .accesskey = l
+
+## EME notification panel
+
+eme-notifications-drm-content-playing =
+    Některé zvuky nebo videa na této stránce používají DRM software, což může omezit { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "acc") }
+        [feminine] { -brand-short-name(case: "acc") }
+        [neuter] { -brand-short-name(case: "acc") }
+       *[other] aplikaci { -brand-short-name }
+    } při práci s tímto obsahem.
+eme-notifications-drm-content-playing-manage = Nastavení
+eme-notifications-drm-content-playing-manage-accesskey = N
+eme-notifications-drm-content-playing-dismiss = Zavřít
+eme-notifications-drm-content-playing-dismiss-accesskey = Z

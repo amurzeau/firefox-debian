@@ -25,6 +25,13 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Desegin fitxak ixtea
         }
     .accesskey = D
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Ireki berriro itxitako fitxa
+           *[other] Ireki berriro itxitako fitxak
+        }
+    .accesskey = k
 toolbar-context-menu-manage-extension =
     .label = Kudeatu hedapena
     .accesskey = h
@@ -52,15 +59,9 @@ toolbar-context-menu-remove-from-toolbar =
 toolbar-context-menu-view-customize-toolbar =
     .label = Pertsonalizatu…
     .accesskey = P
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Beti
-    .accesskey = B
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Inoiz ez
-    .accesskey = n
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Fitxa berrian soilik
-    .accesskey = b
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Pertsonalizatu tresna-barra…
+    .accesskey = P
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Erakutsi beti
     .accesskey = b

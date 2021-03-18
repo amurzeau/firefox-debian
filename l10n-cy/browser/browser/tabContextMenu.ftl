@@ -14,6 +14,13 @@ duplicate-tab =
 duplicate-tabs =
     .label = Tabiau Dyblyg
     .accesskey = D
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = Cau Tabiau i'r Chwith
+    .accesskey = h
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Cau Tabiau i'r Dde
     .accesskey = D
@@ -44,6 +51,9 @@ bookmark-tab =
 reopen-in-container =
     .label = Ail agor mewn Cynhwysydd
     .accesskey = A
+tab-context-open-in-container =
+    .label = Agor mewn Cynhwysydd Newydd
+    .accesskey = A
 move-to-start =
     .label = Symud i'r Cychwyn
     .accesskey = C
@@ -56,6 +66,11 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Cau Tabiau Lluosog
     .accesskey = L
+tab-context-share-url =
+    .label = Rhannu
+    .accesskey = R
+tab-context-share-more =
+    .label = Rhagor…
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -84,6 +99,18 @@ move-tabs =
 move-tab =
     .label = Symud Tab
     .accesskey = y
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Ail agor Tabiau wedi'u Cau
+            [zero] Ail agor Tabiau wedi'u Cau
+            [one] Ail agor Tab wedi'i Gau
+            [two] Ail agor Tabiau wedi'u Cau
+            [few] Ail agor Tabiau wedi'u Cau
+            [many] Ail agor Tabiau wedi'u Cau
+           *[other] Ail agor Tabiau wedi'u Cau
+        }
+    .accesskey = A
 tab-context-close-tabs =
     .label =
         { $tabCount ->

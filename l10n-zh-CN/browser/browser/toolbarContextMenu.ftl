@@ -24,6 +24,13 @@ toolbar-context-menu-undo-close-tabs =
            *[other] 恢复关闭的标签页
         }
     .accesskey = U
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] 恢复关闭的标签页
+           *[other] 恢复关闭的 { $count } 个标签页
+        }
+    .accesskey = o
 toolbar-context-menu-manage-extension =
     .label = 管理扩展
     .accesskey = E
@@ -45,21 +52,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = 于工具栏自动隐去
     .accesskey = A
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = 空闲时隐藏按钮
+    .accesskey = H
 toolbar-context-menu-remove-from-toolbar =
     .label = 从工具栏中移除
     .accesskey = R
 toolbar-context-menu-view-customize-toolbar =
     .label = 定制…
     .accesskey = C
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = 始终
-    .accesskey = A
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = 永不
-    .accesskey = N
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = 只在新标签页
-    .accesskey = O
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = 定制工具栏…
+    .accesskey = C
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = 始终显示
     .accesskey = A

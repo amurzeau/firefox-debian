@@ -14,6 +14,7 @@ policy-3rdparty = Ke'ajikib'a' taq na'ojil richin chi ri WebExtensions yetikïr 
 policy-AppAutoUpdate = Ketzij o kechup ri ruyonil kik'exoj taq chokoy.
 policy-AppUpdateURL = Tiya' jun ichinan URL richin nik'ex ri chokoy.
 policy-Authentication = Tib'an runuk'ulem ri chijun jikib'an pa taq ajk'amaya'l ruxaq nikiya' q'ij.
+policy-BackgroundAppUpdate = Titzij o tichup ri k'exoj pa ruka'n k'ojlib'äl, ri nuk'ëx ri okik'amaya'l toq man nokisäx ta.
 policy-BlockAboutAddons = Tiq'at rokem ri Runuk'samajel Chokoy (about:addons).
 policy-BlockAboutConfig = Tiq'at okem pa ri about:config ruxaq.
 policy-BlockAboutProfiles = Tiq'at okem pa ri about:profiles ruxaq.
@@ -79,8 +80,9 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Titzolin rik'in ri rub
 ##
 
 policy-LocalFileLinks = Tiya' q'ij chi ri ajk'amaya'l ruxaq tikixima' ki' kik'in ri aj wawe' taq yakb'äl.
-policy-MasterPassword = Tik'utüx o man tokisäx jun ajtij ewan tzij.
 policy-ManagedBookmarks = Tab'ab'ana' kinuk'ulem jun kicholajem taq yaketal nuk'samajin ruma jun nuk'samajel, ri man nitikïr ta nujäl ri okisanel.
+policy-MasterPassword = Tik'utüx o man tokisäx jun ajtij ewan tzij.
+policy-ManualAppUpdateOnly = Tiya' q'ij chi ke ri taq kexoj chi q'ab'aj chuqa' man tiya' rutzijol chi re ri okisanel.
 policy-PrimaryPassword = Tik'utüx o man tokisäx jun Nab'ey Ewan Tzij.
 policy-NetworkPrediction = Titzij o tichup ri nutz'et k'amab'ey (DNS nab'ey rukanoxik).
 policy-NewTabPage = Titzij o tichup ri ruxaq K'ak'a' Ruwi'.

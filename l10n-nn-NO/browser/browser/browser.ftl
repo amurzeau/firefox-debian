@@ -374,6 +374,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Mikrofon som vert delt:
     .accesskey = M
+popup-select-camera-device =
+    .value = Kamera
+    .accesskey = K
+popup-select-camera-icon =
+    .tooltiptext = Kamera
+popup-select-microphone-device =
+    .value = Mikrofon:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Mikrofon
 popup-all-windows-shared = Alle synlege vindauge på skjermen vil bli delte.
 popup-screen-sharing-not-now =
     .label = Ikkje no
@@ -383,6 +393,13 @@ popup-screen-sharing-never =
     .accesskey = a
 popup-silence-notifications-checkbox = Deaktiver varsel frå { -brand-short-name } medan du deler
 popup-silence-notifications-checkbox-warning = { -brand-short-name } vil ikkje vise varsel medan du deler.
+popup-screen-sharing-block =
+    .label = Blokker
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Blokker alltid
+    .accesskey = k
+popup-mute-notifications-checkbox = Slå av nettstadvarsel mesn du deler
 
 ## WebRTC window or screen share tab switch warning
 
@@ -523,6 +540,8 @@ crashed-subframe-message = <strong>Ein del av denne sida krasja.</strong> For å
 crashed-subframe-learnmore =
     .label = Les meir
     .accesskey = L
+crashed-subframe-learnmore-link =
+    .value = Les meir
 crashed-subframe-submit =
     .label = Send inn rapport
     .accesskey = S
@@ -537,6 +556,7 @@ bookmarks-manage-bookmarks =
     .label = Handter bokmerke
 bookmarks-recent-bookmarks-panel =
     .value = Nylege bokmerke
+bookmarks-recent-bookmarks-panel-subheader = Nylege bokmerke
 bookmarks-toolbar-chevron =
     .tooltiptext = Vis fleire bokmerke
 bookmarks-sidebar-content =
@@ -616,3 +636,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Arbeid fråkopla
     .accesskey = r
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Ein del lyd eller video på denne sida brukar DRM-programvare, som kan avgrense kva { -brand-short-name } lèt deg gjere med den.
+eme-notifications-drm-content-playing-manage = Handter innstillingar
+eme-notifications-drm-content-playing-manage-accesskey = H
+eme-notifications-drm-content-playing-dismiss = Ignorer
+eme-notifications-drm-content-playing-dismiss-accesskey = I
+
+## Password save/update panel
+
+panel-save-update-username = Brukarnamn
+panel-save-update-password = Passord
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Fjerne { $name }?
+addon-removal-abuse-report-checkbox = Rapporter denne utvidinga til { -vendor-short-name }

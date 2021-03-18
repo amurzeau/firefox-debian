@@ -81,7 +81,7 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
 ## Protections panel
 
 cfr-protections-panel-header = Navegue sem ser seguido
-cfr-protections-panel-body = Mantenha seus dados consigo. O { -brand-short-name } lhe protege de muitos dos rastreadores mais comuns que seguem o que você faz online.
+cfr-protections-panel-body = Mantenha seus dados com você. O { -brand-short-name } te protege de muitos dos rastreadores mais comuns que tentam seguir o que você faz online.
 cfr-protections-panel-link-text = Saiba mais
 
 ## What's New toolbar button and panel
@@ -99,7 +99,7 @@ cfr-whatsnew-fx70-body =
     A última atualização aprimora o recurso de proteção contra rastreamento
     e torna mais fácil que nunca criar senhas seguras para cada site.
 cfr-whatsnew-tracking-protect-title = Proteja-se de rastreadores
-cfr-whatsnew-tracking-protect-body = O { -brand-short-name } bloqueia muitos rastreadores comuns, entre sites e de mídias sociais, que seguem o que você faz online.
+cfr-whatsnew-tracking-protect-body = O { -brand-short-name } bloqueia muitos rastreadores comuns, entre sites e de mídias sociais, que tentam seguir o que você faz online.
 cfr-whatsnew-tracking-protect-link-text = Veja seu relatório
 # This string is displayed before a large numeral that indicates the total
 # number of tracking elements blocked. Don’t add $blockedCount to your
@@ -202,11 +202,14 @@ cfr-doorhanger-cryptominers-description = Sua privacidade é importante. Agora o
 
 # Variables:
 #   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
-#   $date (Number) - The date we began recording the count of blocked trackers
+#   $date (String) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading =
     { $blockedCount ->
        *[other] O { -brand-short-name } bloqueou mais de <b>{ $blockedCount }</b> rastreadores desde { $date }!
     }
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (Datetime) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading2 =
     { $blockedCount ->
         [one] O { -brand-short-name } bloqueou <b>{ $blockedCount }</b> rastreador desde { DATETIME($date, month: "long", year: "numeric") }!
@@ -240,6 +243,10 @@ cfr-whatsnew-pip-fullscreen-icon-alt = Ícone de picture-in-picture
 
 ## Protections Dashboard message
 
+
+## What’s New Panel Content for Firefox 76
+## Protections Dashboard message
+
 cfr-whatsnew-protections-header = Visão geral das proteções
 cfr-whatsnew-protections-body = O painel de proteções inclui relatórios concisos sobre vazamentos de dados e gerenciamento de senhas. Agora você pode acompanhar quantos vazamentos já resolveu e ver se alguma de suas senhas salvas pode ter sido exposta em um vazamento de dados.
 cfr-whatsnew-protections-cta-link = Ver painel de proteções
@@ -255,6 +262,8 @@ cfr-whatsnew-better-pdf-body = Documentos PDF agora são abertos diretamente no 
 cfr-doorhanger-doh-body = Sua privacidade é importante. Agora o { -brand-short-name } roteia com segurança suas requisição de DNS, sempre que possível, para um serviço parceiro para proteger você enquanto navega.
 cfr-doorhanger-doh-header = Pesquisas de DNS mais seguras e criptografadas
 cfr-doorhanger-doh-primary-button = OK, entendi
+    .accesskey = O
+cfr-doorhanger-doh-primary-button-2 = OK
     .accesskey = O
 cfr-doorhanger-doh-secondary-button = Desativar
     .accesskey = D

@@ -59,7 +59,7 @@ menu-file-new-tab =
     .label = Onglet novèl
     .accesskey = t
 menu-file-new-container-tab =
-    .label = Onglet contèxtual novèl
+    .label = Onglet contextual novèl
     .accesskey = t
 menu-file-new-window =
     .label = Fenèstra novèla
@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Recercar dins la pagina…
     .accesskey = R
+menu-edit-find-in-page =
+    .label = Recercar dins la pagina
+    .accesskey = R
 menu-edit-find-again =
     .label = Recercar lo seguent
     .accesskey = g
@@ -128,6 +131,9 @@ menu-view-toolbars-menu =
     .accesskey = s
 menu-view-customize-toolbar =
     .label = Personalizar…
+    .accesskey = P
+menu-view-customize-toolbar2 =
+    .label = Personalizar la barra d'aisinas…
     .accesskey = P
 menu-view-sidebar =
     .label = Panèl lateral
@@ -219,6 +225,8 @@ menu-bookmarks-show-all =
     .label = Afichar totes los marcapaginas
 menu-bookmark-this-page =
     .label = Marcar aquesta pagina
+menu-bookmark-current-tab =
+    .label = Marcar l’onglet actual
 menu-bookmark-edit =
     .label = Modificar aqueste marcapagina
 menu-bookmarks-all-tabs =
@@ -243,6 +251,12 @@ menu-tools-addons =
     .accesskey = M
 menu-tools-fxa-sign-in =
     .label = Se connectar a { -brand-product-name }…
+    .accesskey = c
+menu-tools-extensions =
+    .label = Extensions e tèmas
+    .accesskey = E
+menu-tools-fxa-sign-in2 =
+    .label = Se connectar
     .accesskey = c
 menu-tools-turn-on-sync =
     .label = Activar { -sync-brand-short-name }
@@ -272,6 +286,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] O
            *[other] f
+        }
+menu-settings =
+    .label = Paramètres
+    .accesskey =
+        { PLATFORM() ->
+            [windows] P
+           *[other] m
         }
 menu-tools-layout-debugger =
     .label = Desbugador de disposicion
@@ -325,8 +346,13 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Informacions de depanatge
     .accesskey = d
+menu-help-more-troubleshooting-info =
+    .label = Mai d’informacions de reparacion
+    .accesskey = M
 menu-help-taskmanager =
     .label = Gestionari de tascas
+menu-help-report-site-issue =
+    .label = Senhalar lo problèma del site…
 menu-help-feedback-page =
     .label = Balhar vòstre vejaire…
     .accesskey = B
@@ -336,6 +362,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Reaviar, moduls activats…
     .accesskey = R
+menu-help-enter-troubleshoot-mode =
+    .label = Mòde resolucion de problèmas
+    .accesskey = M
+menu-help-exit-troubleshoot-mode =
+    .label = Arrestar la resolucion de problèmas
+    .accesskey = A
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

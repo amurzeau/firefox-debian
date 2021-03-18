@@ -41,6 +41,18 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = Flytt til Blindkopi-feltet
     .accesskey = B
+
+# Attachment widget
+
+ctrl-cmd-shift-pretty-prefix =
+    { PLATFORM() ->
+        [macos] ⇧ ⌘{ " " }
+       *[other] Ctrl+Shift+
+    }
+menuitem-attach-files =
+    .label = Fil(er) …
+    .accesskey = F
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count =
     .value =
@@ -59,6 +71,9 @@ attachments-placeholder-tooltip =
 #   { attachment-bucket-count.accesskey } - Do not localize this message.
 key-toggle-attachment-pane =
     .key = { attachment-bucket-count.accesskey }
+
+# Reorder Attachment Panel
+
 button-return-receipt =
     .label = Kvittering
     .tooltiptext = Be om returkvittering for denne meldingen

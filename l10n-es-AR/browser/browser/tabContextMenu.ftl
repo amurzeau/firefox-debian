@@ -14,6 +14,13 @@ duplicate-tab =
 duplicate-tabs =
     .label = Duplicar pestañas
     .accesskey = D
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = Cerrar pestañas a la izquierda
+    .accesskey = l
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Cerrar pestañas hacia la derecha
     .accesskey = i
@@ -44,6 +51,9 @@ bookmark-tab =
 reopen-in-container =
     .label = Reabrir en contenedor
     .accesskey = e
+tab-context-open-in-container =
+    .label = Abrir en un nuevo contenedor
+    .accesskey = e
 move-to-start =
     .label = Mover al Inicio
     .accesskey = S
@@ -56,6 +66,11 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Cerrar varias pestañas
     .accesskey = M
+tab-context-share-url =
+    .label = Compartir
+    .accesskey = h
+tab-context-share-more =
+    .label = Más…
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -80,6 +95,14 @@ move-tabs =
 move-tab =
     .label = Mover pestaña
     .accesskey = v
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Reabrir pestaña cerrada
+            [one] Reabrir pestañas cerrada
+           *[other] Reabrir pestañas cerradas
+        }
+    .accesskey = o
 tab-context-close-tabs =
     .label =
         { $tabCount ->

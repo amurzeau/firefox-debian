@@ -27,6 +27,12 @@ appmenuitem-more-tools =
     .label = 更多工具
 appmenuitem-exit =
     .label = 退出
+appmenu-menu-button-closed =
+    .tooltiptext = 打开应用程序菜单
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = 关闭应用程序菜单
+    .label = { -brand-shorter-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -45,6 +51,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = 立即同步
+appmenuitem-fxa-toolbar-sync-now =
+    .label = 立即同步
+    .value = 立即同步
+appmenuitem-fxa-manage-account = 管理账户
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = 上次同步：{ $time }
+    .label = 上次同步：{ $time }
+appmenu-fxa-sync-and-save-data =
+    .value = 同步并保存数据
+appmenu-fxa-signed-in-label = 登录
+appmenu-fxa-setup-sync =
+    .label = 开启同步...
+appmenu-fxa-show-more-tabs = 显示更多标签页
 appmenuitem-save-page =
     .label = 另存页面为…
 
@@ -99,7 +122,7 @@ profiler-popup-capture-shortcut =
 ## History panel
 
 appmenu-manage-history =
-    .label = 管理历史记录
+    .label = 管理历史
 appmenu-reopen-all-tabs = 重新打开所有标签页
 appmenu-reopen-all-windows = 重新打开所有窗口
 
@@ -126,10 +149,15 @@ appmenu-get-help =
     .label = 获取帮助
     .accesskey = H
 appmenu-help-troubleshooting-info =
-    .label = 故障排除信息
+    .label = 排障信息
+    .accesskey = T
+appmenu-help-more-troubleshooting-info =
+    .label = 更多排障信息
     .accesskey = T
 appmenu-help-taskmanager =
     .label = 任务管理器
+appmenu-help-report-site-issue =
+    .label = 反馈网站问题…
 appmenu-help-feedback-page =
     .label = 提交反馈…
     .accesskey = S
@@ -143,6 +171,16 @@ appmenu-help-safe-mode-without-addons =
 appmenu-help-safe-mode-with-addons =
     .label = 重启浏览器并启用附加组件
     .accesskey = R
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = 排障模式
+    .accesskey = M
+appmenu-help-exit-troubleshoot-mode =
+    .label = 关闭排障模式
+    .accesskey = M
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Localizar nesta página…
     .accesskey = E
+menu-edit-find-in-page =
+    .label = Localizar na página…
+    .accesskey = L
 menu-edit-find-again =
     .label = Localizar novamente
     .accesskey = g
@@ -129,6 +132,9 @@ menu-view-toolbars-menu =
 menu-view-customize-toolbar =
     .label = Personalizar…
     .accesskey = P
+menu-view-customize-toolbar2 =
+    .label = Personalizar barra de ferramentas…
+    .accesskey = f
 menu-view-sidebar =
     .label = Barra lateral
     .accesskey = l
@@ -207,6 +213,8 @@ menu-history-undo-menu =
     .label = Separadores fechados recentemente
 menu-history-undo-window-menu =
     .label = Janelas fechadas recentemente
+menu-history-reopen-all-tabs = Reabrir todos os separadores
+menu-history-reopen-all-windows = Reabrir todas as janelas
 
 ## Bookmarks Menu
 
@@ -217,6 +225,8 @@ menu-bookmarks-show-all =
     .label = Mostrar todos os marcadores
 menu-bookmark-this-page =
     .label = Adicionar esta página aos marcadores
+menu-bookmark-current-tab =
+    .label = Adicionar separador aos marcadores
 menu-bookmark-edit =
     .label = Editar este marcador
 menu-bookmarks-all-tabs =
@@ -242,6 +252,12 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Iniciar sessão no { -brand-product-name }…
     .accesskey = I
+menu-tools-extensions =
+    .label = Temas e extensões
+    .accesskey = T
+menu-tools-fxa-sign-in2 =
+    .label = Iniciar sessão
+    .accesskey = c
 menu-tools-turn-on-sync =
     .label = Ligar { -sync-brand-short-name }…
     .accesskey = L
@@ -270,6 +286,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] O
            *[other] f
+        }
+menu-settings =
+    .label = Definições
+    .accesskey =
+        { PLATFORM() ->
+            [windows] n
+           *[other] n
         }
 menu-tools-layout-debugger =
     .label = Depurador de layout
@@ -323,8 +346,13 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Informação para resolução de problemas
     .accesskey = r
+menu-help-more-troubleshooting-info =
+    .label = Mais informação para diagnóstico
+    .accesskey = g
 menu-help-taskmanager =
     .label = Gestor de tarefas
+menu-help-report-site-issue =
+    .label = Reportar problema do site…
 menu-help-feedback-page =
     .label = Submeter feedback…
     .accesskey = S
@@ -334,6 +362,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Reiniciar com os extras ativados
     .accesskey = R
+menu-help-enter-troubleshoot-mode =
+    .label = Modo de diagnóstico
+    .accesskey = M
+menu-help-exit-troubleshoot-mode =
+    .label = Desligar o modo de diagnóstico
+    .accesskey = m
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

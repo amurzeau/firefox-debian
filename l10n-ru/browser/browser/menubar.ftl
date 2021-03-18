@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Найти на этой странице…
     .accesskey = Н
+menu-edit-find-in-page =
+    .label = Найти на странице…
+    .accesskey = а
 menu-edit-find-again =
     .label = Найти ещё раз
     .accesskey = й
@@ -129,6 +132,9 @@ menu-view-toolbars-menu =
 menu-view-customize-toolbar =
     .label = Персонализация…
     .accesskey = о
+menu-view-customize-toolbar2 =
+    .label = Персонализация панели инструментов…
+    .accesskey = н
 menu-view-sidebar =
     .label = Боковая панель
     .accesskey = Б
@@ -219,6 +225,8 @@ menu-bookmarks-show-all =
     .label = Показать все закладки
 menu-bookmark-this-page =
     .label = Добавить страницу
+menu-bookmark-current-tab =
+    .label = Добавить текущую вкладку в закладки
 menu-bookmark-edit =
     .label = Редактировать эту закладку
 menu-bookmarks-all-tabs =
@@ -243,6 +251,12 @@ menu-tools-addons =
     .accesskey = Д
 menu-tools-fxa-sign-in =
     .label = Войти в { -brand-product-name }…
+    .accesskey = й
+menu-tools-extensions =
+    .label = Расширения и темы
+    .accesskey = ш
+menu-tools-fxa-sign-in2 =
+    .label = Войти
     .accesskey = й
 menu-tools-turn-on-sync =
     .label = Включить { -sync-brand-short-name(case: "accusative") }…
@@ -270,8 +284,15 @@ menu-preferences =
         }
     .accesskey =
         { PLATFORM() ->
-            [windows] Н
-           *[other] Н
+            [windows] а
+           *[other] а
+        }
+menu-settings =
+    .label = Настройки
+    .accesskey =
+        { PLATFORM() ->
+            [windows] а
+           *[other] а
         }
 menu-tools-layout-debugger =
     .label = Отладчик макета
@@ -321,12 +342,17 @@ menu-help-keyboard-shortcuts =
     .accesskey = ч
 menu-get-help =
     .label = Получить помощь
-    .accesskey = о
+    .accesskey = ч
 menu-help-troubleshooting-info =
+    .label = Информация для решения проблем
+    .accesskey = а
+menu-help-more-troubleshooting-info =
     .label = Информация для решения проблем
     .accesskey = а
 menu-help-taskmanager =
     .label = Диспетчер задач
+menu-help-report-site-issue =
+    .label = Сообщить о проблеме с сайтом…
 menu-help-feedback-page =
     .label = Отправить отзыв…
     .accesskey = т
@@ -336,11 +362,17 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Перезапустить с дополнениями
     .accesskey = е
+menu-help-enter-troubleshoot-mode =
+    .label = Безопасный режим
+    .accesskey = п
+menu-help-exit-troubleshoot-mode =
+    .label = Отключить безопасный режим
+    .accesskey = ю
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =
     .label = Сообщить о поддельном сайте…
-    .accesskey = о
+    .accesskey = б
 menu-help-not-deceptive =
     .label = Это не поддельный сайт…
     .accesskey = е

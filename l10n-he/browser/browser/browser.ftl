@@ -373,6 +373,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = מיקרופון לשיתוף:
     .accesskey = מ
+popup-select-camera-device =
+    .value = מצלמה:
+    .accesskey = מ
+popup-select-camera-icon =
+    .tooltiptext = מצלמה
+popup-select-microphone-device =
+    .value = מיקרופון:
+    .accesskey = ק
+popup-select-microphone-icon =
+    .tooltiptext = מיקרופון
 popup-all-windows-shared = ישותפו כל החלונות הגלויים על המסך.
 popup-screen-sharing-not-now =
     .label = לא כעת
@@ -382,6 +392,13 @@ popup-screen-sharing-never =
     .accesskey = ע
 popup-silence-notifications-checkbox = השבתת התרעות מ־{ -brand-short-name } בזמן שיתוף
 popup-silence-notifications-checkbox-warning = ‏{ -brand-short-name } לא יציג התרעות בזמן השיתוף.
+popup-screen-sharing-block =
+    .label = לחסום
+    .accesskey = ח
+popup-screen-sharing-always-block =
+    .label = תמיד לחסום
+    .accesskey = ת
+popup-mute-notifications-checkbox = השתקת התרעות מאתרים בזמן שיתוף.
 
 ## WebRTC window or screen share tab switch warning
 
@@ -521,6 +538,8 @@ crashed-subframe-message = <strong>חלק מדף זה קרס.</strong> כדי ל
 crashed-subframe-learnmore =
     .label = מידע נוסף
     .accesskey = מ
+crashed-subframe-learnmore-link =
+    .value = מידע נוסף
 crashed-subframe-submit =
     .label = שליחת דיווח
     .accesskey = ש
@@ -535,6 +554,7 @@ bookmarks-manage-bookmarks =
     .label = ניהול סימניות
 bookmarks-recent-bookmarks-panel =
     .value = סימניות אחרונות
+bookmarks-recent-bookmarks-panel-subheader = סימניות אחרונות
 bookmarks-toolbar-chevron =
     .tooltiptext = הצגת סימניות נוספות
 bookmarks-sidebar-content =
@@ -614,3 +634,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = עבודה לא־מקוונת
     .accesskey = ל
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = באתר זה קיימים משאבי אודיו או וידאו העושים שימוש ברכיב ניהול זכויות קניין, מה שעשוי להגביל את היכולות ש־{ -brand-short-name } מאפשר לך לעשות עם משאבים אלו.
+eme-notifications-drm-content-playing-manage = ניהול הגדרות
+eme-notifications-drm-content-playing-manage-accesskey = נ
+eme-notifications-drm-content-playing-dismiss = סגירה
+eme-notifications-drm-content-playing-dismiss-accesskey = ס
+
+## Password save/update panel
+
+panel-save-update-username = שם משתמש
+panel-save-update-password = ססמה
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = להסיר את { $name }?
+addon-removal-abuse-report-checkbox = דיווח על הרחבה זו ל־{ -vendor-short-name }

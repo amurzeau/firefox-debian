@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Na toś tom boku pytaś…
     .accesskey = t
+menu-edit-find-in-page =
+    .label = Na boku pytaś…
+    .accesskey = b
 menu-edit-find-again =
     .label = Dalej pytaś
     .accesskey = D
@@ -129,6 +132,9 @@ menu-view-toolbars-menu =
 menu-view-customize-toolbar =
     .label = Pśiměriś…
     .accesskey = m
+menu-view-customize-toolbar2 =
+    .label = Symbolowu rědku pśiměriś…
+    .accesskey = S
 menu-view-sidebar =
     .label = Bócnica
     .accesskey = B
@@ -219,6 +225,8 @@ menu-bookmarks-show-all =
     .label = Wše cytańske znamjenja pokazaś
 menu-bookmark-this-page =
     .label = Toś ten bok ako cytańske znamje składowaś
+menu-bookmark-current-tab =
+    .label = Aktualny rejtarik ako cytańske znamje składowaś
 menu-bookmark-edit =
     .label = Toś to cytańske znamje wobźěłaś
 menu-bookmarks-all-tabs =
@@ -244,6 +252,12 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Pla { -brand-product-name } pśizjawiś…
     .accesskey = a
+menu-tools-extensions =
+    .label = Rozšyrjenja a drastwy
+    .accesskey = R
+menu-tools-fxa-sign-in2 =
+    .label = Pśizjawiś
+    .accesskey = P
 menu-tools-turn-on-sync =
     .label = { -sync-brand-short-name } zmóžniś
     .accesskey = m
@@ -268,6 +282,13 @@ menu-preferences =
             [windows] Nastajenja
            *[other] Nastajenja
         }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] N
+           *[other] N
+        }
+menu-settings =
+    .label = Nastajenja
     .accesskey =
         { PLATFORM() ->
             [windows] N
@@ -325,8 +346,13 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Informacije za rozwězowanje problemow
     .accesskey = I
+menu-help-more-troubleshooting-info =
+    .label = Dalšne informacije za rozwězowanje problemow
+    .accesskey = D
 menu-help-taskmanager =
     .label = Zastojnik nadawkow
+menu-help-report-site-issue =
+    .label = Sedłowy problem k wěsći daś…
 menu-help-feedback-page =
     .label = Pósudk pósłaś…
     .accesskey = P
@@ -336,6 +362,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Ze zmóžnjonymi dodankami znowego startowaś
     .accesskey = Z
+menu-help-enter-troubleshoot-mode =
+    .label = Modus za rozwězowanje problemow
+    .accesskey = M
+menu-help-exit-troubleshoot-mode =
+    .label = Modus za rozwězowanje problemow znjemóžniś
+    .accesskey = M
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

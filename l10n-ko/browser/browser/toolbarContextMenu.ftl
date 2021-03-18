@@ -24,6 +24,13 @@ toolbar-context-menu-undo-close-tabs =
            *[other] 탭 닫기 취소
         }
     .accesskey = U
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] 닫은 탭 다시 열기
+           *[other] 닫은 탭 다시 열기
+        }
+    .accesskey = o
 toolbar-context-menu-manage-extension =
     .label = 확장 기능 관리
     .accesskey = E
@@ -45,21 +52,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = 도구 모음에서 자동 숨김
     .accesskey = A
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = 비어있을 때 버튼 숨기기
+    .accesskey = H
 toolbar-context-menu-remove-from-toolbar =
     .label = 도구 모음에서 제거
     .accesskey = R
 toolbar-context-menu-view-customize-toolbar =
     .label = 사용자 지정…
     .accesskey = C
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = 항상 표시
-    .accesskey = A
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = 표시 안 함
-    .accesskey = N
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = 새 탭에서만 표시
-    .accesskey = O
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = 도구 모음 사용자 지정…
+    .accesskey = C
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = 항상 표시
     .accesskey = A

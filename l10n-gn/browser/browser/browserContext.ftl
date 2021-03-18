@@ -111,6 +111,9 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Juajuha tendayke pyahu ñongatuhápe jeike
     .accesskey = b
+main-context-menu-open-link-container =
+    .label = Embojuruja joajuha guerekoha pyahúpe
+    .accesskey = w
 main-context-menu-open-link-new-window =
     .label = Ovetã pyahu joajuhápe jeike
     .accesskey = W
@@ -120,6 +123,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = Ko joajuha mbojoapy techaukaháre
     .accesskey = L
+main-context-menu-bookmark-link =
+    .label = Embojuapy joajuha techaukaháre
+    .accesskey = B
 main-context-menu-save-link =
     .label = Joajuha ñongatu pyahu…
     .accesskey = k
@@ -131,12 +137,20 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = Maranduveve rape mbohasarã
     .accesskey = E
 main-context-menu-copy-link =
     .label = Joajuha rape mbohasarã
     .accesskey = a
+main-context-menu-copy-link-simple =
+    .label = Emonguatia juajuha
+    .accesskey = L
 
 ## Media (video/audio) controls
 ##
@@ -227,6 +241,15 @@ main-context-menu-video-copy-location =
 main-context-menu-audio-copy-location =
     .label = Mba’epu rape mbohasarã
     .accesskey = o
+main-context-menu-image-copy-link =
+    .label = Emonguatia ta’ãnga joajuha
+    .accesskey = o
+main-context-menu-video-copy-link =
+    .label = Emonguatia ta’ãngamýi joajuha
+    .accesskey = o
+main-context-menu-audio-copy-link =
+    .label = Emonguatia mba’epu joajuha
+    .accesskey = o
 main-context-menu-image-save-as =
     .label = Mba’era’ãnga ñongatu pyahu…
     .accesskey = v
@@ -239,6 +262,9 @@ main-context-menu-image-set-as-background =
 main-context-menu-image-info =
     .label = Mba’era’ãnga marandu jehecha
     .accesskey = f
+main-context-menu-image-set-image-as-background =
+    .label = Emoĩ ta’ãnga mba’erechaha ruguarã…
+    .accesskey = S
 main-context-menu-image-desc =
     .label = Myesakãha jehecha
     .accesskey = D
@@ -275,6 +301,26 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = Eipuru ñe’ẽñemi moheñoimbyre…
     .accesskey = G
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = Eipuru tembiapo ñepyrũ ñongatupyre
+    .accesskey = o
+main-context-menu-use-saved-password =
+    .label = Eipuru ñe’ẽñemi ñongatupyre
+    .accesskey = o
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = Tojepuru ñe’ẽñemi hekorosãva…
+    .accesskey = S
+main-context-menu-manage-logins =
+    .label = Eñangareko tembiapo ñepyrũre…
+    .accesskey = M
 main-context-menu-keyword =
     .label = Jehero mbojoapy ko jehekápe g̃uarã…
     .accesskey = K
@@ -331,6 +377,9 @@ main-context-menu-bidi-switch-page =
     .accesskey = D
 main-context-menu-inspect-element =
     .label = Mba’epuru ma’ẽ’ag̃ui
+    .accesskey = Q
+main-context-menu-inspect =
+    .label = Ma’ẽ’ag̃ui
     .accesskey = Q
 main-context-menu-inspect-a11y-properties =
     .label = Ema’ẽag̃ui mba’etee jeikerãva rehe

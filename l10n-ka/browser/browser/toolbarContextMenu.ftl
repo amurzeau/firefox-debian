@@ -24,6 +24,13 @@ toolbar-context-menu-undo-close-tabs =
            *[other] დახურული ჩანართების დაბრუნება
         }
     .accesskey = ბ
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] დახურული ჩანართის დაბრუნება
+           *[other] დახურული ჩანართების დაბრუნება
+        }
+    .accesskey = უ
 toolbar-context-menu-manage-extension =
     .label = გაფართოების მართვა
     .accesskey = ფ
@@ -45,20 +52,17 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = ხელსაწყოთა ზოლის თვითდამალვა
     .accesskey = ვ
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = ღილაკის დამალვა როცა ცარიელია
+    .accesskey = დ
 toolbar-context-menu-remove-from-toolbar =
     .label = ხელსაწყოთა ზოლიდან მოცილება
     .accesskey = ა
 toolbar-context-menu-view-customize-toolbar =
     .label = მორგება…
     .accesskey = მ
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = ყოველთვის
-    .accesskey = ყ
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = არასდროს
-    .accesskey = რ
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = მხოლოდ ახალ ჩანართში
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = ხელსაწყოთა ზოლის მორგება…
     .accesskey = მ
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = ყოველთვის გამოჩნდეს

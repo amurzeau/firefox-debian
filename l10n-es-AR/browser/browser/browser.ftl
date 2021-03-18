@@ -374,6 +374,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Micrófono a compartir:
     .accesskey = M
+popup-select-camera-device =
+    .value = Cámara
+    .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = Cámara
+popup-select-microphone-device =
+    .value = Micrófono
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Micrófono
 popup-all-windows-shared = Todas las ventanas visibles de su pantalla serán compartidas.
 popup-screen-sharing-not-now =
     .label = Ahora no
@@ -383,6 +393,13 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = Deshabilitar notificaciones de { -brand-short-name } mientras se comparte
 popup-silence-notifications-checkbox-warning = { -brand-short-name } no va a mostrar notificaciones mientras esté compartiendo.
+popup-screen-sharing-block =
+    .label = Bloquear
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Bloquear siempre
+    .accesskey = W
+popup-mute-notifications-checkbox = Silenciar las notificaciones de sitios web mientras se comparten
 
 ## WebRTC window or screen share tab switch warning
 
@@ -523,6 +540,8 @@ crashed-subframe-message = <strong>Parte de esta página falló.</strong> Para q
 crashed-subframe-learnmore =
     .label = Conocer más
     .accesskey = L
+crashed-subframe-learnmore-link =
+    .value = Conocer más
 crashed-subframe-submit =
     .label = Enviar informe
     .accesskey = S
@@ -537,6 +556,7 @@ bookmarks-manage-bookmarks =
     .label = Administrar marcadores
 bookmarks-recent-bookmarks-panel =
     .value = Marcadores recientes
+bookmarks-recent-bookmarks-panel-subheader = Marcadores recientes
 bookmarks-toolbar-chevron =
     .tooltiptext = Mostrar más marcadores
 bookmarks-sidebar-content =
@@ -616,3 +636,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Trabajar sin conexión
     .accesskey = x
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Algún audio o video en este sitio usa software con DRM que puede limitar lo que { -brand-short-name } puede permitirle hacer con él.
+eme-notifications-drm-content-playing-manage = Administrar configuraciones
+eme-notifications-drm-content-playing-manage-accesskey = M
+eme-notifications-drm-content-playing-dismiss = Descartar
+eme-notifications-drm-content-playing-dismiss-accesskey = D
+
+## Password save/update panel
+
+panel-save-update-username = Nombre de usuario
+panel-save-update-password = Contraseña
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = ¿Eliminar { $name }?
+addon-removal-abuse-report-checkbox = Informar de este complemento a { -vendor-short-name }

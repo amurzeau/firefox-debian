@@ -133,10 +133,14 @@ sandbox-sys-call-number = 系統呼叫
 sandbox-sys-call-args = 引數
 safe-mode-title = 試試安全模式
 restart-in-safe-mode-label = 重新啟動但停用附加元件…
-clear-startup-cache-title = 嘗試清除啟動快取
+troubleshoot-mode-title = 診斷問題
+restart-in-troubleshoot-mode-label = 疑難排解模式…
+clear-startup-cache-title = 也可清除啟動快取
 clear-startup-cache-label = 清除啟動快取…
 startup-cache-dialog-title = 清除啟動快取
-startup-cache-dialog-body = 重新啟動 { -brand-short-name } 來清除啟動快取。將不會影響您的設定，或已安裝到 { -brand-short-name } 的擴充套件。
+startup-cache-dialog-body = 重新啟動 { -brand-short-name } 後將清除啟動快取。不會影響您的設定與已安裝到 { -brand-short-name } 的擴充套件。
+startup-cache-dialog-title2 = 要重新啟動 { -brand-short-name } 來清理啟動快取嗎？
+startup-cache-dialog-body2 = 將不會更改您的設定或移除擴充套件。
 restart-button-label = 重新啟動
 
 ## Media titles
@@ -386,3 +390,13 @@ support-printing-clear-settings-button = 清除儲存的列印設定
 support-printing-modified-settings = 更改過的列印設定
 support-printing-prefs-name = 名稱
 support-printing-prefs-value = 值
+
+## Normandy sections
+
+support-remote-experiments-title = 遠端實驗
+support-remote-experiments-name = 名稱
+support-remote-experiments-branch = 實驗分支
+support-remote-experiments-see-about-studies = 若需更多資訊，請參考 <a data-l10n-name="support-about-studies-link">about:studies</a>。當中包含如何關閉單一實驗，或防止 { -brand-short-name } 在未來進行任何此類實驗的資訊。
+support-remote-features-title = 遠端功能
+support-remote-features-name = 名稱
+support-remote-features-status = 狀態

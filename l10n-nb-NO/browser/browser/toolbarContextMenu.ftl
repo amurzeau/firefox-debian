@@ -24,6 +24,13 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Angre lukking av faner
         }
     .accesskey = A
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Gjenopprett lukket fane
+           *[other] Gjenopprett lukkede faner
+        }
+    .accesskey = o
 toolbar-context-menu-manage-extension =
     .label = Behandle utvidelser
     .accesskey = e
@@ -45,21 +52,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Skjul automatisk i verktøylinjen
     .accesskey = a
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Skjul knapp når tom
+    .accesskey = S
 toolbar-context-menu-remove-from-toolbar =
     .label = Fjern fra verktøylinje
     .accesskey = n
 toolbar-context-menu-view-customize-toolbar =
     .label = Tilpass …
     .accesskey = T
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Alltid
-    .accesskey = A
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Aldri
-    .accesskey = l
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Bare på ny fane
-    .accesskey = B
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Tilpass verktøylinje …
+    .accesskey = T
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Vis alltid
     .accesskey = V

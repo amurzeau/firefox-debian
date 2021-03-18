@@ -16,6 +16,7 @@ perftools-heading-buffer = Ρυθμίσεις buffer
 perftools-heading-features = Λειτουργίες
 perftools-heading-features-default = Λειτουργίες (Προτείνεται ενεργοποίηση από προεπιλογή)
 perftools-heading-features-disabled = Ανενεργές λειτουργίες
+perftools-heading-features-experimental = Πειραματικό
 perftools-heading-threads = Threads
 perftools-heading-local-build = Τοπική έκδοση δομής
 
@@ -45,6 +46,7 @@ perftools-request-to-stop-profiler = Διακοπή εγγραφής
 
 perftools-button-start-recording = Έναρξη εγγραφής
 perftools-button-cancel-recording = Ακύρωση εγγραφής
+perftools-button-save-settings = Αποθήκευση ρυθμίσεων και επιστροφή
 perftools-button-restart = Επανεκκίνηση
 perftools-button-add-directory = Προσθήκη καταλόγου
 perftools-button-remove-directory = Αφαίρεση επιλεγμένων
@@ -52,8 +54,21 @@ perftools-button-edit-settings = Επεξεργασία ρυθμίσεων…
 
 ## These messages are descriptions of the threads that can be enabled for the profiler.
 
+pref-thread-stream-trans =
+    .title = Μεταφορά της ροής δικτύου
 perftools-thread-dns-resolver =
     .title = Η ανάλυση DNS συμβαίνει σε αυτό το thread
 
 ##
 
+
+## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
+## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
+## preferences are true.
+
+-profiler-brand-name = Firefox Profiler
+perftools-onboarding-message = <b>Νέο</b>: Το { -profiler-brand-name } έχει ενσωματωθεί στα Εργαλεία προγραμματιστών. <a>Μάθετε περισσότερα</a> σχετικά με αυτό το νέο ισχυρό εργαλείο.
+# `options-context-advanced-settings` is defined in toolbox-options.ftl
+perftools-onboarding-reenable-old-panel = (Για περιορισμένο χρονικό διάστημα, μπορείτε να ανοίξετε το αρχικό παράθυρο "Επιδόσεις" μέσω του <a>{ options-context-advanced-settings }</a>)
+perftools-onboarding-close-button =
+    .aria-label = Κλείσιμο μηνύματος υποδοχής

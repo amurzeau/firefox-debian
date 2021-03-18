@@ -130,10 +130,14 @@ sandbox-sys-call-number = Системный вызов
 sandbox-sys-call-args = Параметры
 safe-mode-title = Попробуйте безопасный режим
 restart-in-safe-mode-label = Перезапустить с отключёнными дополнениями…
+troubleshoot-mode-title = Диагностика проблем
+restart-in-troubleshoot-mode-label = Безопасный режим…
 clear-startup-cache-title = Попробуйте очистить кэш запуска
 clear-startup-cache-label = Очистить кэш запуска…
 startup-cache-dialog-title = Очистка кэша запуска
 startup-cache-dialog-body = Перезапустите { -brand-short-name }, чтобы очистить кэш запуска. Это не изменит ваши настройки и не удалит расширения, которые вы добавили в { -brand-short-name }.
+startup-cache-dialog-title2 = Перезапустить { -brand-short-name } чтобы очистить кэш запуска?
+startup-cache-dialog-body2 = Это не изменит ваши настройки и не удалит расширения.
 restart-button-label = Перезапустить
 
 ## Media titles
@@ -408,3 +412,13 @@ support-printing-clear-settings-button = Удалить сохранённые �
 support-printing-modified-settings = Изменённые настройки печати
 support-printing-prefs-name = Имя
 support-printing-prefs-value = Значение
+
+## Normandy sections
+
+support-remote-experiments-title = Удалённые эксперименты
+support-remote-experiments-name = Название
+support-remote-experiments-branch = Ветка экспериментов
+support-remote-experiments-see-about-studies = Ознакомьтесь со страницей <a data-l10n-name="support-about-studies-link">about:studies</a> для получения информации о том, как отключить отдельные эксперименты или запретить { -brand-short-name } проводить эксперименты подобного вида в будущем.
+support-remote-features-title = Удалённые функции
+support-remote-features-name = Имя
+support-remote-features-status = Статус

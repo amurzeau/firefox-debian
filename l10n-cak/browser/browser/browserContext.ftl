@@ -111,6 +111,9 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Tijaq ximonel pa k'ak'a' ajk'wayöl ruwi'
     .accesskey = w
+main-context-menu-open-link-container =
+    .label = Tijaq Ximonel pa K'ak'a' Ajk'wayöl
+    .accesskey = k
 main-context-menu-open-link-new-window =
     .label = Tijaq ximonel tzij pa jun k'ak'a' Tzuwäch
     .accesskey = T
@@ -120,6 +123,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = Titzaqatisäx re jun ximonel re' pa taq yaketal
     .accesskey = x
+main-context-menu-bookmark-link =
+    .label = Ruximoj Yaketal
+    .accesskey = Y
 main-context-menu-save-link =
     .label = Tiyak Ximonel Achi'el…
     .accesskey = o
@@ -131,12 +137,20 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = Tiwachib'ëx rochochib'al taqoya'l
     .accesskey = t
 main-context-menu-copy-link =
     .label = Tiwachib'ëx Ruk'ojlib'al Ximonel
     .accesskey = i
+main-context-menu-copy-link-simple =
+    .label = Tiwachib'ëx Ximoj
+    .accesskey = X
 
 ## Media (video/audio) controls
 ##
@@ -179,6 +193,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Ya'öl tze'n (2×)
     .accesskey = Y
+main-context-menu-media-play-speed-2 =
+    .label = Ranin
+    .accesskey = n
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Tzolinel
     .accesskey = T
@@ -206,6 +233,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Picture-in-Picture
     .accesskey = u
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Titz'et pa Picture-in-Picture
+    .accesskey = u
 main-context-menu-image-reload =
     .label = Rukamulokem wachib'äl
     .accesskey = R
@@ -215,6 +247,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = Titz'et silowachib'äl
     .accesskey = t
+main-context-menu-image-view-new-tab =
+    .label = Tijaq Wachib'äl pa jun K'ak'a' Ruwi'
+    .accesskey = W
+main-context-menu-video-view-new-tab =
+    .label = Tijaq Wachib'äl pa jun k'ak'a' ruwi'
+    .accesskey = h
 main-context-menu-image-copy =
     .label = Tiwachib'ëx Wachib'äl
     .accesskey = w
@@ -227,6 +265,15 @@ main-context-menu-video-copy-location =
 main-context-menu-audio-copy-location =
     .label = Ruwachib'exik rub'ey q'ojom
     .accesskey = w
+main-context-menu-image-copy-link =
+    .label = Tiwachib'ëx Ruximoj Wachib'äl
+    .accesskey = a
+main-context-menu-video-copy-link =
+    .label = Tiwachib'ëx Ruximoj Silowäch
+    .accesskey = a
+main-context-menu-audio-copy-link =
+    .label = Tiwachib'ëx Ruximoj K'oxom
+    .accesskey = a
 main-context-menu-image-save-as =
     .label = Tiyak Wachib'äl Achi'el…
     .accesskey = y
@@ -239,6 +286,9 @@ main-context-menu-image-set-as-background =
 main-context-menu-image-info =
     .label = Titz'et na'oj chi rij ri wachib'äl
     .accesskey = o
+main-context-menu-image-set-image-as-background =
+    .label = Ticha' Wachib'äl achi'el richin Rupam Ch'atal…
+    .accesskey = c
 main-context-menu-image-desc =
     .label = Titz'et ri Rutzijoxkil
     .accesskey = R
@@ -251,6 +301,9 @@ main-context-menu-audio-save-as =
 main-context-menu-video-image-save-as =
     .label = Ruyakik ruwachib'al rutzub'al achi'el…
     .accesskey = R
+main-context-menu-video-take-snapshot =
+    .label = Telesäx Ajchanin…
+    .accesskey = A
 main-context-menu-video-email =
     .label = Rutaqik Silowachib'äl…
     .accesskey = i
@@ -275,6 +328,26 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = Tokisäx Tz'ukun Ewan Tzij…
     .accesskey = z
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = Tokisäx Yakon Rutikirib'al Molojri'ïl
+    .accesskey = u
+main-context-menu-use-saved-password =
+    .label = Tokisäx Yakon Ewan Tzij
+    .accesskey = z
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = Tichilab'ëx Ütz Ewan Tzij…
+    .accesskey = Ü
+main-context-menu-manage-logins =
+    .label = Kenuk'samajïx ri taq Kitikirisab'al Moloj…
+    .accesskey = K
 main-context-menu-keyword =
     .label = Titz'aqatisäx jun ewan tzij richin re Rukanoxik re'…
     .accesskey = e
@@ -317,6 +390,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Rutz'etik runuk tz'ib' cha'on
     .accesskey = e
+main-context-menu-take-screenshot =
+    .label = Tichap Chapoj Wachib'äl
+    .accesskey = T
 main-context-menu-view-page-source =
     .label = Rutz'etik runuk tz'ib' re ruxaq re'
     .accesskey = R
@@ -331,6 +407,9 @@ main-context-menu-bidi-switch-page =
     .accesskey = r
 main-context-menu-inspect-element =
     .label = Rutz'etik atuxtäq
+    .accesskey = Q
+main-context-menu-inspect =
+    .label = Tinik'öx
     .accesskey = Q
 main-context-menu-inspect-a11y-properties =
     .label = Kenik'öx ri taq Richinil Okel

@@ -130,10 +130,14 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Ymresymiadau
 safe-mode-title = Defnyddiwch y Modd Diogel
 restart-in-safe-mode-label = Ailgychwyn gydag Ychwanegion wedi eu Hanalluogi…
+troubleshoot-mode-title = Datrys materion
+restart-in-troubleshoot-mode-label = Y Modd Datrys Problemau…
 clear-startup-cache-title = Ceisiwch glirio'r storfa gychwyn
 clear-startup-cache-label = Clirio'r storfa gychwyn…
 startup-cache-dialog-title = Clirio'r storfa gychwyn
 startup-cache-dialog-body = Ailgychwyn { -brand-short-name } i glirio storfa cychwyn. Ni fydd hyn yn newid eich gosodiadau nac yn dileu estyniadau rydych chi wedi'u hychwanegu at { -brand-short-name }.
+startup-cache-dialog-title2 = Ailgychwyn { -brand-short-name } i glirio'r storfa cychwyn?
+startup-cache-dialog-body2 = Ni fydd hyn yn newid eich gosodiadau nac yn dileu estyniadau.
 restart-button-label = Ailgychwyn
 
 ## Media titles
@@ -423,3 +427,13 @@ support-printing-clear-settings-button = Clirio gosodiadau argraffu wedi'u cadw
 support-printing-modified-settings = Gosodiadau argraffu wedi'u haddasu
 support-printing-prefs-name = Enw
 support-printing-prefs-value = Gwerth
+
+## Normandy sections
+
+support-remote-experiments-title = Arbrofion Pell
+support-remote-experiments-name = Enw
+support-remote-experiments-branch = Cangen Arbrofi
+support-remote-experiments-see-about-studies = Gweler <a data-l10n-name="support-about-studies-link">about:studies</a> i gael mwy o wybodaeth, gan gynnwys sut i analluogi arbrofion unigol neu i analluogi { -brand-short-name } rhag rhedeg y math yma o arbrawf yn y dyfodol.
+support-remote-features-title = Nodweddion Pell
+support-remote-features-name = Enw
+support-remote-features-status = Statws

@@ -14,6 +14,13 @@ duplicate-tab =
 duplicate-tabs =
     .label = Sleg iccaren
     .accesskey = S
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = Mdel accaren n uzelmaḍ
+    .accesskey = d
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Mdel accaren n uyeffus
     .accesskey = M
@@ -44,6 +51,9 @@ bookmark-tab =
 reopen-in-container =
     .label = Ldi-d tikelt-nneḍen amagbar
     .accesskey = d
+tab-context-open-in-container =
+    .label = Ldi deg umagbar amaynut
+    .accesskey = i
 move-to-start =
     .label = Senkez akken ad tebḍuḍ
     .accesskey = B
@@ -56,6 +66,11 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Mdel aṭas n waccaren
     .accesskey = M
+tab-context-share-url =
+    .label = Bḍu
+    .accesskey = B
+tab-context-share-more =
+    .label = Ugar…
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -80,6 +95,14 @@ move-tabs =
 move-tab =
     .label = Senkez iccer
     .accesskey = n
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Ales tawaledyawt n yiccer imedlen
+            [one] Ales tawaledyawt n yiccer imedlen
+           *[other] Ales tawaledyawt n waccaren imedlen
+        }
+    .accesskey = a
 tab-context-close-tabs =
     .label =
         { $tabCount ->

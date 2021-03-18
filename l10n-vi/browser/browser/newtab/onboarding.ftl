@@ -44,7 +44,6 @@ onboarding-join-form-signin-label = Đã có một tài khoản?
 # Text for link to submit the sign in form
 onboarding-join-form-signin = Đăng nhập
 onboarding-start-browsing-button-label = Bắt đầu duyệt web
-onboarding-not-now-button-label = Không phải bây giờ
 onboarding-cards-dismiss =
     .title = Bỏ qua
     .aria-label = Bỏ qua
@@ -86,99 +85,6 @@ onboarding-benefit-monitor-title = { -monitor-brand-short-name }
 onboarding-benefit-monitor-text = Nhận thông báo khi thông tin cá nhân của bạn bị rò rỉ trong dữ liệu đã biết.
 onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
 onboarding-benefit-lockwise-text = Quản lý mật khẩu được bảo vệ và di động.
-
-## Custom Return To AMO onboarding strings
-
-return-to-amo-subtitle = Thật tuyệt, bạn đã có { -brand-short-name }
-# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
-#
-# Variables:
-#   $addon-name (String) - Name of the add-on
-return-to-amo-addon-title = Bây giờ, bạn có thể cài đặt <img data-l10n-name="icon"/> <b>{ $addon-name }</b>.
-return-to-amo-add-extension-label = Thêm tiện ích mở rộng
-
-## Multistage 3-screen onboarding flow strings (about:welcome pages)
-
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = Chào mừng bạn đến với <span data-l10n-name="zap">{ -brand-short-name }</span>
-onboarding-multistage-welcome-subtitle = Trình duyệt riêng tư nhanh chóng, an toàn và riêng tư được hỗ trợ bởi một tổ chức phi lợi nhuận.
-onboarding-multistage-welcome-primary-button-label = Bắt đầu thiết lập
-onboarding-multistage-welcome-secondary-button-label = Đăng nhập
-onboarding-multistage-welcome-secondary-button-text = Đã có một tài khoản?
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "more" should stay inside the span.
-onboarding-multistage-import-header = Nhập mật khẩu, dấu trang và <span data-l10n-name="zap">hơn thế nữa</span>
-onboarding-multistage-import-subtitle = Đã sử dụng một trình duyệt khác? Rất dễ dàng để mang mọi thứ đến { -brand-short-name }.
-onboarding-multistage-import-primary-button-label = Bắt đầu nhập
-onboarding-multistage-import-secondary-button-label = Không phải bây giờ
-# Info displayed in the footer of import settings screen during onboarding flow.
-# This supports welcome screen showing top sites imported from the user's default browser.
-onboarding-import-sites-disclaimer = Các trang web được liệt kê ở đây đã được tìm thấy trên thiết bị này. { -brand-short-name } không lưu hoặc đồng bộ hóa dữ liệu từ trình duyệt khác trừ khi bạn chọn nhập nó.
-# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
-# Variables:
-#   $current (Int) - Number of the current page
-#   $total (Int) - Total number of pages
-onboarding-welcome-steps-indicator =
-    .aria-label = Bắt đầu: { $current } của { $total }
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "look" should stay inside the span.
-onboarding-multistage-theme-header = Chọn một <span data-l10n-name="zap">cách nhìn</span>
-onboarding-multistage-theme-subtitle = Cá nhân hóa { -brand-short-name } với một chủ đề.
-onboarding-multistage-theme-primary-button-label = Lưu chủ đề
-onboarding-multistage-theme-secondary-button-label = Không phải bây giờ
-# Automatic theme uses operating system color settings
-onboarding-multistage-theme-label-automatic = Tự động
-onboarding-multistage-theme-label-light = Sáng
-onboarding-multistage-theme-label-dark = Tối
-# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
-onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
-
-## Please make sure to split the content of the title attribute into lines whose
-## width corresponds to about 40 Latin characters, to ensure that the tooltip
-## doesn't become too long. Line breaks will be preserved when displaying the
-## tooltip.
-
-# Tooltip displayed on hover of automatic theme
-onboarding-multistage-theme-tooltip-automatic-2 =
-    .title =
-        Kế thừa sự xuất hiện của hệ điều hành
-        của bạn cho các nút, menu và cửa sổ.
-# Input description for automatic theme
-onboarding-multistage-theme-description-automatic-2 =
-    .aria-description =
-        Kế thừa sự xuất hiện của hệ điều hành
-        của bạn cho các nút, menu và cửa sổ.
-# Tooltip displayed on hover of light theme
-onboarding-multistage-theme-tooltip-light-2 =
-    .title =
-        Sử dụng giao diện sáng cho các nút,
-        menu và cửa sổ.
-# Input description for light theme
-onboarding-multistage-theme-description-light =
-    .aria-description =
-        Sử dụng giao diện sáng cho các nút,
-        menu và cửa sổ.
-# Tooltip displayed on hover of dark theme
-onboarding-multistage-theme-tooltip-dark-2 =
-    .title =
-        Sử dụng giao diện tối cho các nút,
-        menu và cửa sổ.
-# Input description for dark theme
-onboarding-multistage-theme-description-dark =
-    .aria-description =
-        Sử dụng giao diện tối cho các nút,
-        menu và cửa sổ.
-# Tooltip displayed on hover of Alpenglow theme
-onboarding-multistage-theme-tooltip-alpenglow-2 =
-    .title =
-        Sử dụng giao diện đầy màu sắc cho các nút,
-        menu và cửa sổ
-# Input description for Alpenglow theme
-onboarding-multistage-theme-description-alpenglow =
-    .aria-description =
-        Sử dụng giao diện đầy màu sắc cho các nút,
-        menu và cửa sổ
 
 ## These strings belong to the individual onboarding messages.
 
@@ -239,3 +145,104 @@ return-to-amo-sub-header = Thật tuyệt, bạn đã có { -brand-short-name }
 return-to-amo-addon-header = Bây giờ chúng tôi sẽ cài đặt các tiện ích <icon></icon><b>{ $addon-name }.</b>
 return-to-amo-extension-button = Thêm tiện ích mở rộng
 return-to-amo-get-started-button = Bắt đầu với { -brand-short-name }
+onboarding-not-now-button-label = Không phải bây giờ
+
+## Custom Return To AMO onboarding strings
+
+return-to-amo-subtitle = Thật tuyệt, bạn đã có { -brand-short-name }
+# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-title = Bây giờ, bạn có thể cài đặt <img data-l10n-name="icon"/> <b>{ $addon-name }</b>.
+return-to-amo-add-extension-label = Thêm tiện ích mở rộng
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = Chào mừng bạn đến với <span data-l10n-name="zap">{ -brand-short-name }</span>
+onboarding-multistage-welcome-subtitle = Trình duyệt riêng tư nhanh chóng, an toàn và riêng tư được hỗ trợ bởi một tổ chức phi lợi nhuận.
+onboarding-multistage-welcome-primary-button-label = Bắt đầu thiết lập
+onboarding-multistage-welcome-secondary-button-label = Đăng nhập
+onboarding-multistage-welcome-secondary-button-text = Đã có một tài khoản?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "default" should stay inside the span.
+onboarding-multistage-set-default-header = Đặt { -brand-short-name } làm <span data-l10n-name="zap">trình duyệt mặc định</span> của bạn
+onboarding-multistage-set-default-subtitle = Tốc độ, an toàn và quyền riêng tư mỗi khi bạn duyệt.
+onboarding-multistage-set-default-primary-button-label = Đặt làm mặc định
+onboarding-multistage-set-default-secondary-button-label = Không phải bây giờ
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = Nhập mật khẩu, dấu trang và <span data-l10n-name="zap">hơn thế nữa</span>
+onboarding-multistage-import-subtitle = Đã sử dụng một trình duyệt khác? Rất dễ dàng để mang mọi thứ đến { -brand-short-name }.
+onboarding-multistage-import-primary-button-label = Bắt đầu nhập
+onboarding-multistage-import-secondary-button-label = Không phải bây giờ
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = Các trang web được liệt kê ở đây đã được tìm thấy trên thiết bị này. { -brand-short-name } không lưu hoặc đồng bộ hóa dữ liệu từ trình duyệt khác trừ khi bạn chọn nhập nó.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = Bắt đầu: { $current } của { $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = Chọn một <span data-l10n-name="zap">cách nhìn</span>
+onboarding-multistage-theme-subtitle = Cá nhân hóa { -brand-short-name } với một chủ đề.
+onboarding-multistage-theme-primary-button-label = Lưu chủ đề
+onboarding-multistage-theme-primary-button-label2 = Hoàn tất
+onboarding-multistage-theme-secondary-button-label = Không phải bây giờ
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = Tự động
+onboarding-multistage-theme-label-light = Sáng
+onboarding-multistage-theme-label-dark = Tối
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Kế thừa sự xuất hiện của hệ điều hành
+        của bạn cho các nút, menu và cửa sổ.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Kế thừa sự xuất hiện của hệ điều hành
+        của bạn cho các nút, menu và cửa sổ.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Sử dụng giao diện sáng cho các nút,
+        menu và cửa sổ.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Sử dụng giao diện sáng cho các nút,
+        menu và cửa sổ.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Sử dụng giao diện tối cho các nút,
+        menu và cửa sổ.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Sử dụng giao diện tối cho các nút,
+        menu và cửa sổ.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Sử dụng giao diện đầy màu sắc cho các nút,
+        menu và cửa sổ
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Sử dụng giao diện đầy màu sắc cho các nút,
+        menu và cửa sổ

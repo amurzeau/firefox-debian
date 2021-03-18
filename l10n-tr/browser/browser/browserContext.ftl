@@ -111,6 +111,9 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Bağlantıyı yeni kapsayıcı sekmede aç
     .accesskey = k
+main-context-menu-open-link-container =
+    .label = Bağlantıyı yeni kapsayıcıda aç
+    .accesskey = n
 main-context-menu-open-link-new-window =
     .label = Yeni pencerede aç
     .accesskey = e
@@ -120,6 +123,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = Bu bağlantıyı yer imlerine ekle
     .accesskey = u
+main-context-menu-bookmark-link =
+    .label = Bağlantıyı yer imlerine ekle
+    .accesskey = m
 main-context-menu-save-link =
     .label = Bağlantıyı farklı kaydet…
     .accesskey = f
@@ -131,11 +137,19 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = E-posta adresini kopyala
     .accesskey = E
 main-context-menu-copy-link =
     .label = Bağlantı konumunu kopyala
+    .accesskey = B
+main-context-menu-copy-link-simple =
+    .label = Bağlantıyı kopyala
     .accesskey = B
 
 ## Media (video/audio) controls
@@ -227,6 +241,15 @@ main-context-menu-video-copy-location =
 main-context-menu-audio-copy-location =
     .label = Ses konumunu kopyala
     .accesskey = o
+main-context-menu-image-copy-link =
+    .label = Resim bağlantısını kopyala
+    .accesskey = o
+main-context-menu-video-copy-link =
+    .label = Video bağlantısını kopyala
+    .accesskey = o
+main-context-menu-audio-copy-link =
+    .label = Ses bağlantısını kopyala
+    .accesskey = o
 main-context-menu-image-save-as =
     .label = Resmi farklı kaydet…
     .accesskey = d
@@ -239,6 +262,9 @@ main-context-menu-image-set-as-background =
 main-context-menu-image-info =
     .label = Resim bilgilerini göster
     .accesskey = n
+main-context-menu-image-set-image-as-background =
+    .label = Resmi masaüstü arka planı yap…
+    .accesskey = ü
 main-context-menu-image-desc =
     .label = Açıklamayı göster
     .accesskey = A
@@ -275,6 +301,26 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = Oluşturulan parolayı kullan…
     .accesskey = O
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = Kayıtlı hesabı kullan
+    .accesskey = u
+main-context-menu-use-saved-password =
+    .label = Kayıtlı parolayı kullan
+    .accesskey = u
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = Güçlü parola öner…
+    .accesskey = G
+main-context-menu-manage-logins =
+    .label = Hesapları yönet…
+    .accesskey = H
 main-context-menu-keyword =
     .label = Bu arama için anahtar kelime ekle…
     .accesskey = k
@@ -332,6 +378,9 @@ main-context-menu-bidi-switch-page =
 main-context-menu-inspect-element =
     .label = Öğeyi incele
     .accesskey = c
+main-context-menu-inspect =
+    .label = Denetle
+    .accesskey = n
 main-context-menu-inspect-a11y-properties =
     .label = Erişilebilirlik özelliklerini denetle
 main-context-menu-eme-learn-more =

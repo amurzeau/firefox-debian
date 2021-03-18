@@ -374,6 +374,12 @@ popup-select-camera =
 popup-select-microphone =
     .value = Paylaşılacak mikrofon:
     .accesskey = m
+popup-select-camera-device =
+    .value = Kamera:
+    .accesskey = K
+popup-select-microphone-device =
+    .value = Mikrofon:
+    .accesskey = M
 popup-all-windows-shared = Ekranınızdaki tüm görünür pencereler paylaşılacaktır.
 popup-screen-sharing-not-now =
     .label = Daha sonra
@@ -383,6 +389,13 @@ popup-screen-sharing-never =
     .accesskey = A
 popup-silence-notifications-checkbox = Paylaşırken { -brand-short-name } bildirimlerini devre dışı bırak
 popup-silence-notifications-checkbox-warning = { -brand-short-name }, paylaşım sırasında bildirimleri göstermeyecek.
+popup-screen-sharing-block =
+    .label = Engelle
+    .accesskey = E
+popup-screen-sharing-always-block =
+    .label = Her zaman engelle
+    .accesskey = H
+popup-mute-notifications-checkbox = Paylaşırken web sitesi bildirimlerini sessize al
 
 ## WebRTC window or screen share tab switch warning
 
@@ -523,6 +536,8 @@ crashed-subframe-message = <strong>Bu sayfanın bir kısmı çöktü.</strong> B
 crashed-subframe-learnmore =
     .label = Daha fazla bilgi al
     .accesskey = b
+crashed-subframe-learnmore-link =
+    .value = Daha fazla bilgi al
 crashed-subframe-submit =
     .label = Rapor gönder
     .accesskey = R
@@ -537,6 +552,7 @@ bookmarks-manage-bookmarks =
     .label = Yer imlerini yönet
 bookmarks-recent-bookmarks-panel =
     .value = Son yer imleri
+bookmarks-recent-bookmarks-panel-subheader = Son yer imleri
 bookmarks-toolbar-chevron =
     .tooltiptext = Daha fazla yer imi göster
 bookmarks-sidebar-content =
@@ -596,6 +612,9 @@ bookmarks-toolbar-placeholder =
     .title = Yer imleri araç çubuğu öğeleri
 bookmarks-toolbar-placeholder-button =
     .label = Yer imleri araç çubuğu öğeleri
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Bu sekmeyi yer imlerine ekle
 
 ## Library Panel items
 
@@ -613,3 +632,11 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Çevrimdışı çalış
     .accesskey = d
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Bu sitedeki bazı ses veya videolar DRM yazılımı kullanıyor. Bu yazılım, { -brand-short-name } ile yapabileceklerinizi kısıtlayabilir.
+eme-notifications-drm-content-playing-manage = Ayarları yönet
+eme-notifications-drm-content-playing-manage-accesskey = A
+eme-notifications-drm-content-playing-dismiss = Kapat
+eme-notifications-drm-content-playing-dismiss-accesskey = K

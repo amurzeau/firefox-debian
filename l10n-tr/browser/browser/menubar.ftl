@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Bu sayfada bul…
     .accesskey = s
+menu-edit-find-in-page =
+    .label = Sayfada bul…
+    .accesskey = b
 menu-edit-find-again =
     .label = Sonrakini bul
     .accesskey = a
@@ -129,6 +132,9 @@ menu-view-toolbars-menu =
 menu-view-customize-toolbar =
     .label = Özelleştir…
     .accesskey = Ö
+menu-view-customize-toolbar2 =
+    .label = Araç çubuğunu özelleştir…
+    .accesskey = z
 menu-view-sidebar =
     .label = Kenar çubuğu
     .accesskey = K
@@ -219,6 +225,8 @@ menu-bookmarks-show-all =
     .label = Tüm yer imlerini göster
 menu-bookmark-this-page =
     .label = Bu sayfayı yer imlerine ekle
+menu-bookmark-current-tab =
+    .label = Bu sekmeyi yer imlerine ekle
 menu-bookmark-edit =
     .label = Bu yer imini düzenle
 menu-bookmarks-all-tabs =
@@ -244,6 +252,12 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = { -brand-product-name }’a giriş yap…
     .accesskey = g
+menu-tools-extensions =
+    .label = Eklentiler ve temalar
+    .accesskey = E
+menu-tools-fxa-sign-in2 =
+    .label = Giriş yap
+    .accesskey = G
 menu-tools-turn-on-sync =
     .label = { -sync-brand-short-name }’i etkinleştir…
     .accesskey = n
@@ -272,6 +286,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] S
            *[other] T
+        }
+menu-settings =
+    .label = Ayarlar
+    .accesskey =
+        { PLATFORM() ->
+            [windows] A
+           *[other] r
         }
 menu-tools-layout-debugger =
     .label = Düzen hata ayıklayıcısı
@@ -325,8 +346,13 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Sorun giderme bilgileri
     .accesskey = b
+menu-help-more-troubleshooting-info =
+    .label = Sorun giderme bilgileri
+    .accesskey = S
 menu-help-taskmanager =
     .label = Görev yöneticisi
+menu-help-report-site-issue =
+    .label = Siteyle ilgili sorun bildir…
 menu-help-feedback-page =
     .label = Geri bildirim gönder…
     .accesskey = G
@@ -336,6 +362,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Eklentileri etkinleştirip yeniden başlat
     .accesskey = E
+menu-help-enter-troubleshoot-mode =
+    .label = Sorun giderme modu
+    .accesskey = m
+menu-help-exit-troubleshoot-mode =
+    .label = Sorun giderme modunu kapat
+    .accesskey = m
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

@@ -111,6 +111,9 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = 새 컨테이너 탭에 링크 열기
     .accesskey = C
+main-context-menu-open-link-container =
+    .label = 새 컨테이너에 링크 열기
+    .accesskey = w
 main-context-menu-open-link-new-window =
     .label = 새 창에 링크 열기
     .accesskey = W
@@ -120,6 +123,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = 이 링크 북마크
     .accesskey = L
+main-context-menu-bookmark-link =
+    .label = 링크 북마크
+    .accesskey = B
 main-context-menu-save-link =
     .label = 링크를 다른 이름으로 저장…
     .accesskey = k
@@ -131,12 +137,20 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = 메일 주소 복사
     .accesskey = E
 main-context-menu-copy-link =
     .label = 링크 주소 복사
     .accesskey = a
+main-context-menu-copy-link-simple =
+    .label = 링크 복사
+    .accesskey = L
 
 ## Media (video/audio) controls
 ##
@@ -179,6 +193,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = 매우 빠르게 (2×)
     .accesskey = L
+main-context-menu-media-play-speed-2 =
+    .label = 속도
+    .accesskey = d
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = 반복
     .accesskey = L
@@ -206,6 +233,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = 화면 속 화면
     .accesskey = u
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = 화면 속 화면에서 보기
+    .accesskey = u
 main-context-menu-image-reload =
     .label = 이미지 다시 읽기
     .accesskey = R
@@ -215,6 +247,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = 동영상 보기
     .accesskey = I
+main-context-menu-image-view-new-tab =
+    .label = 새 탭에 이미지 열기
+    .accesskey = I
+main-context-menu-video-view-new-tab =
+    .label = 새 탭에 동영상 열기
+    .accesskey = i
 main-context-menu-image-copy =
     .label = 이미지 복사
     .accesskey = y
@@ -226,6 +264,15 @@ main-context-menu-video-copy-location =
     .accesskey = o
 main-context-menu-audio-copy-location =
     .label = 오디오 주소 복사
+    .accesskey = o
+main-context-menu-image-copy-link =
+    .label = 이미지 링크 복사
+    .accesskey = o
+main-context-menu-video-copy-link =
+    .label = 동영상 링크 복사
+    .accesskey = o
+main-context-menu-audio-copy-link =
+    .label = 오디오 링크 복사
     .accesskey = o
 main-context-menu-image-save-as =
     .label = 다른 이름으로 이미지 저장…
@@ -239,6 +286,9 @@ main-context-menu-image-set-as-background =
 main-context-menu-image-info =
     .label = 이미지 정보 보기
     .accesskey = f
+main-context-menu-image-set-image-as-background =
+    .label = 바탕 화면 배경으로 설정…
+    .accesskey = S
 main-context-menu-image-desc =
     .label = 설명 보기
     .accesskey = D
@@ -250,6 +300,9 @@ main-context-menu-audio-save-as =
     .accesskey = v
 main-context-menu-video-image-save-as =
     .label = 다른 이름으로 이미지 저장…
+    .accesskey = S
+main-context-menu-video-take-snapshot =
+    .label = 스크린샷 찍기…
     .accesskey = S
 main-context-menu-video-email =
     .label = 메일로 동영상 보내기…
@@ -275,6 +328,26 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = 생성된 비밀번호 사용…
     .accesskey = G
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = 저장된 로그인 사용
+    .accesskey = o
+main-context-menu-use-saved-password =
+    .label = 저장된 비밀번호 사용
+    .accesskey = o
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = 강력한 비밀번호 제안…
+    .accesskey = S
+main-context-menu-manage-logins =
+    .label = 로그인 관리…
+    .accesskey = M
 main-context-menu-keyword =
     .label = 이 검색의 키워드 추가…
     .accesskey = K
@@ -317,6 +390,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = 선택 영역 소스 보기
     .accesskey = e
+main-context-menu-take-screenshot =
+    .label = 스크린샷 찍기
+    .accesskey = T
 main-context-menu-view-page-source =
     .label = 페이지 소스 보기
     .accesskey = V
@@ -332,8 +408,11 @@ main-context-menu-bidi-switch-page =
 main-context-menu-inspect-element =
     .label = 요소 검사
     .accesskey = Q
+main-context-menu-inspect =
+    .label = 검사
+    .accesskey = Q
 main-context-menu-inspect-a11y-properties =
-    .label = 접근성 속성 조사
+    .label = 접근성 속성 검사
 main-context-menu-eme-learn-more =
     .label = DRM에 대해 더 알아보기…
     .accesskey = D

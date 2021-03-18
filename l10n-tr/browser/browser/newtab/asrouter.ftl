@@ -200,16 +200,19 @@ cfr-doorhanger-cryptominers-description = Gizliliğiniz bizim için önemli. { -
 
 # Variables:
 #   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
-#   $date (Number) - The date we began recording the count of blocked trackers
+#   $date (String) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading =
     { $blockedCount ->
         [one] { -brand-short-name } { $date } tarihinden beri <b>{ $blockedCount }</b> takipçiyi engelledi!
        *[other] { -brand-short-name } { $date } tarihinden beri <b>{ $blockedCount }</b> takipçiyi engelledi!
     }
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (Datetime) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading2 =
     { $blockedCount ->
-        [one] { -brand-short-name } { DATETIME($date, month: "long", year: "numeric") } ayından beri <b>{ $blockedCount }</b> takipçiyi engelledi!
-       *[other] { -brand-short-name } { DATETIME($date, month: "long", year: "numeric") } ayından beri <b>{ $blockedCount }</b> takipçiyi engelledi!
+        [one] { -brand-short-name } { DATETIME($date, month: "long", year: "numeric") } tarihinden beri <b>{ $blockedCount }</b> takipçiyi engelledi!
+       *[other] { -brand-short-name } { DATETIME($date, month: "long", year: "numeric") } tarihinden beri <b>{ $blockedCount }</b> takipçiyi engelledi!
     }
 cfr-doorhanger-milestone-ok-button = Tümünü göster
     .accesskey = T
@@ -239,6 +242,10 @@ cfr-whatsnew-pip-fullscreen-icon-alt = Görüntü içinde görüntü simgesi
 
 ## Protections Dashboard message
 
+
+## What’s New Panel Content for Firefox 76
+## Protections Dashboard message
+
 cfr-whatsnew-protections-header = Korumalara hızlı bir bakış
 cfr-whatsnew-protections-body = Korumalar panosu, veri ihlalleri ve parola yönetimi hakkında özet raporlar içerir. İhlallerin kaçını çözdüğünüzü izleyebilir, kayıtlı parolalarınızın veri ihlalleri kapsamında ele geçirilip geçirilmediğini görebilirsiniz.
 cfr-whatsnew-protections-cta-link = Korumalar panosunu aç
@@ -255,6 +262,8 @@ cfr-doorhanger-doh-body = Gizliliğiniz bizim için önemli. Web’de gezinirken
 cfr-doorhanger-doh-header = Daha güvenli, şifrelenmiş DNS sorguları
 cfr-doorhanger-doh-primary-button = Tamam
     .accesskey = m
+cfr-doorhanger-doh-primary-button-2 = Tamam
+    .accesskey = T
 cfr-doorhanger-doh-secondary-button = Devre dışı bırak
     .accesskey = D
 

@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Ko kuatiaroguépe jeheka…
     .accesskey = F
+menu-edit-find-in-page =
+    .label = Ejuhúta Kuatiaroguépe…
+    .accesskey = F
 menu-edit-find-again =
     .label = Jeheka jey
     .accesskey = g
@@ -128,6 +131,9 @@ menu-view-toolbars-menu =
     .accesskey = T
 menu-view-customize-toolbar =
     .label = Ñemomba’e…
+    .accesskey = C
+menu-view-customize-toolbar2 =
+    .label = Emboava tembipuru renda…
     .accesskey = C
 menu-view-sidebar =
     .label = Ta’ãngarupa yke
@@ -219,6 +225,8 @@ menu-bookmarks-show-all =
     .label = Opaite techaukaha jehechauka
 menu-bookmark-this-page =
     .label = Kuatiarogue mbojoapy
+menu-bookmark-current-tab =
+    .label = Emongurusu tendayke ag̃agua
 menu-bookmark-edit =
     .label = Ko techaukaha mbosako’i
 menu-bookmarks-all-tabs =
@@ -243,6 +251,12 @@ menu-tools-addons =
     .accesskey = A
 menu-tools-fxa-sign-in =
     .label = Eñepyrũ tembiapo { -brand-product-name }-pe…
+    .accesskey = g
+menu-tools-extensions =
+    .label = Moĩmbaha ha téma
+    .accesskey = E
+menu-tools-fxa-sign-in2 =
+    .label = Tembiapo ñepyrũ
     .accesskey = g
 menu-tools-turn-on-sync =
     .label = Emyandy { -sync-brand-short-name }...
@@ -271,6 +285,13 @@ menu-preferences =
     .accesskey =
         { PLATFORM() ->
             [windows] O
+           *[other] n
+        }
+menu-settings =
+    .label = Ñemboheko
+    .accesskey =
+        { PLATFORM() ->
+            [windows] S
            *[other] n
         }
 menu-tools-layout-debugger =
@@ -325,8 +346,13 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Marandu apañuãi myatyrõrã
     .accesskey = T
+menu-help-more-troubleshooting-info =
+    .label = Maranduve apañuãi ñemyatyrõ rehegua
+    .accesskey = T
 menu-help-taskmanager =
     .label = Tembiapo ñangarekohára
+menu-help-report-site-issue =
+    .label = Eikuaauka iñapañuãiha ko Tenda…
 menu-help-feedback-page =
     .label = Temiandu mondo…
     .accesskey = T
@@ -336,6 +362,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Moĩmbaha oguepyréva moñepyrũjey
     .accesskey = R
+menu-help-enter-troubleshoot-mode =
+    .label = Mba’éicha emyatyrõta apañuãi
+    .accesskey = M
+menu-help-exit-troubleshoot-mode =
+    .label = Eipe’a mba’éicha emyatyrõta apañuãi
+    .accesskey = M
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

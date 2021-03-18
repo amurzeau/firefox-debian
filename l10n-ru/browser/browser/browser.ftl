@@ -355,7 +355,7 @@ browser-window-close-button =
 browser-tab-audio-playing = Проигрывается
 browser-tab-audio-muted = Звук отключён
 # This label should be written in all capital letters if your locale supports them.
-browser-tab-audio-playing2 = ВОСПРОИЗВОДИТЬСЯ
+browser-tab-audio-playing2 = ВОСПРОИЗВОДИТСЯ
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-muted2 = БЕЗ ЗВУКА
 # This label should be written in all capital letters if your locale supports them.
@@ -378,6 +378,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Доступ к микрофону:
     .accesskey = м
+popup-select-camera-device =
+    .value = Камера:
+    .accesskey = м
+popup-select-camera-icon =
+    .tooltiptext = Камера
+popup-select-microphone-device =
+    .value = Микрофон:
+    .accesskey = ф
+popup-select-microphone-icon =
+    .tooltiptext = Микрофон
 popup-all-windows-shared = Будет предоставлен доступ ко всем видимым окнам на вашем экране.
 popup-screen-sharing-not-now =
     .label = Не сейчас
@@ -387,6 +397,13 @@ popup-screen-sharing-never =
     .accesskey = и
 popup-silence-notifications-checkbox = Отключить уведомления { -brand-short-name }, когда к нему предоставлен доступ
 popup-silence-notifications-checkbox-warning = { -brand-short-name } не будет отображать уведомления, пока к нему предоставлен доступ.
+popup-screen-sharing-block =
+    .label = Блокировать
+    .accesskey = л
+popup-screen-sharing-always-block =
+    .label = Всегда блокировать
+    .accesskey = е
+popup-mute-notifications-checkbox = Отключить уведомления веб-сайтов при предоставлении доступа
 
 ## WebRTC window or screen share tab switch warning
 
@@ -527,6 +544,8 @@ crashed-subframe-message = <strong>Часть этой страницы упал
 crashed-subframe-learnmore =
     .label = Подробнее
     .accesskey = о
+crashed-subframe-learnmore-link =
+    .value = Узнать больше
 crashed-subframe-submit =
     .label = Отправить сообщение
     .accesskey = п
@@ -541,6 +560,7 @@ bookmarks-manage-bookmarks =
     .label = Управление закладками
 bookmarks-recent-bookmarks-panel =
     .value = Недавние закладки
+bookmarks-recent-bookmarks-panel-subheader = Недавние закладки
 bookmarks-toolbar-chevron =
     .tooltiptext = Показать больше закладок
 bookmarks-sidebar-content =
@@ -620,3 +640,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Работать автономно
     .accesskey = б
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Некоторое аудио или видео на этом сайте использует программу DRM, что может ограничить возможности, предоставляемые вам { -brand-short-name }.
+eme-notifications-drm-content-playing-manage = Управление настройками
+eme-notifications-drm-content-playing-manage-accesskey = в
+eme-notifications-drm-content-playing-dismiss = Закрыть
+eme-notifications-drm-content-playing-dismiss-accesskey = к
+
+## Password save/update panel
+
+panel-save-update-username = Имя пользователя
+panel-save-update-password = Пароль
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Удалить { $name }?
+addon-removal-abuse-report-checkbox = Пожаловаться на это расширение в { -vendor-short-name }

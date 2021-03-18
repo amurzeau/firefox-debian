@@ -29,3 +29,9 @@
 <!ENTITY prefetchTitle.label             "Préchargement des liens">
 <!ENTITY enablePrefetch.label            "Précharger les pages web pendant les pauses du navigateur afin que les liens des pages utilisant cette fonction soient affichés plus rapidement.">
 <!ENTITY enablePrefetch.accesskey        "P">
+
+<!ENTITY debugCache.label                "Débogage">
+<!ENTITY debugEnableMemCache.label       "Activer le cache mémoire">
+<!ENTITY debugEnableMemCache.accesskey   "e">
+<!ENTITY debugEnableDiskCache.label      "Activer le cache de disque">
+<!ENTITY debugEnableDiskCache.accesskey  "d">

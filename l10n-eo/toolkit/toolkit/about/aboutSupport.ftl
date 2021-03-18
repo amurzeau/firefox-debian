@@ -130,10 +130,14 @@ sandbox-sys-call-number = Sistema voko
 sandbox-sys-call-args = Parametroj
 safe-mode-title = Provi la sekuran reĝimon
 restart-in-safe-mode-label = Restartigi kun ĉiuj aldonaĵoj malaktivaj…
+troubleshoot-mode-title = Diagnozi problemojn
+restart-in-troubleshoot-mode-label = Problemsolva reĝimo…
 clear-startup-cache-title = Provu viŝi la startan staplon
 clear-startup-cache-label = Viŝi startan staplon…
 startup-cache-dialog-title = Viŝi startan staplon
 startup-cache-dialog-body = Restartigi { -brand-short-name } por viŝi la startan staplon. Tiu ago ne ŝanĝos viajn agordojn nek forigos etendaĵojn aldonitaj de vi al { -brand-short-name }.
+startup-cache-dialog-title2 = Ĉu restartigi { -brand-short-name } por viŝi la startan staplon?
+startup-cache-dialog-body2 = Tio ĉi ne ŝanĝos viajn agordojn nek forigos etendaĵojn.
 restart-button-label = Restartigi
 
 ## Media titles
@@ -185,22 +189,32 @@ remote-debugging-url = Retadreso
 
 ##
 
-support-third-party-modules-title = Moduloj de aliaj
+support-third-party-modules-title = Moduloj de aliaj liverantoj
 support-third-party-modules-module = Dosiero de modulo
 support-third-party-modules-version = Versio de dosiero
 support-third-party-modules-vendor = Informo de provizanto
 support-third-party-modules-occurrence = Ŝargadoj
 support-third-party-modules-process = Tipo kaj identigilo de procezo
 support-third-party-modules-thread = Fadeno
+support-third-party-modules-base = Adreso de Imagebase
 support-third-party-modules-uptime = Daŭro de procezo (ms)
 support-third-party-modules-duration = Daŭro de ŝargado (ms)
+support-third-party-modules-status = Stato
+support-third-party-modules-status-loaded = Ŝargita
+support-third-party-modules-status-blocked = Blokita
+support-third-party-modules-status-redirected = Redirektita
+support-third-party-modules-empty = Neniu modulo de aliaj liverantoj estis ŝargitaj.
 support-third-party-modules-no-value = (sen valoro)
+support-third-party-modules-button-open =
+    .title = Malfermi lokon de dosiero…
 support-third-party-modules-expand =
     .title = Montri detalan informon
 support-third-party-modules-collapse =
     .title = Kaŝi detalan informon
 support-third-party-modules-unsigned-icon =
     .title = Tiu ĉi modulo ne estas subskribita
+support-third-party-modules-folder-icon =
+    .title = Malfermi lokon de dosiero…
 support-third-party-modules-down-icon =
     .title = Montri detalan informon
 support-third-party-modules-up-icon =
@@ -393,3 +407,13 @@ support-printing-clear-settings-button = Viŝi konservitajn presajn agordojn
 support-printing-modified-settings = Modifitaj presaj agordoj
 support-printing-prefs-name = Nomo
 support-printing-prefs-value = Valoro
+
+## Normandy sections
+
+support-remote-experiments-title = Forigi eksperimentojn
+support-remote-experiments-name = Nomo
+support-remote-experiments-branch = Eksperimenta branĉo
+support-remote-experiments-see-about-studies = Vidu <a data-l10n-name="support-about-studies-link">about:studies</a> por havi pli da informo, ekzemple, kiel malaktivigi unuopajn eksperimentojn aŭ kiel eviti ke { -brand-short-name } rulu ĉi tiajn tipojn de eksperimentoj en la estonteco.
+support-remote-features-title = Foraj trajtoj
+support-remote-features-name = Nomo
+support-remote-features-status = Stato

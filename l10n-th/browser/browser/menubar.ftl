@@ -207,6 +207,8 @@ menu-history-undo-menu =
     .label = แท็บที่ปิดล่าสุด
 menu-history-undo-window-menu =
     .label = หน้าต่างที่ปิดล่าสุด
+menu-history-reopen-all-tabs = เปิดแท็บทั้งหมดใหม่
+menu-history-reopen-all-windows = เปิดหน้าต่างทั้งหมดใหม่
 
 ## Bookmarks Menu
 
@@ -317,11 +319,16 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = แป้นพิมพ์ลัด
     .accesskey = ล
+menu-get-help =
+    .label = รับความช่วยเหลือ
+    .accesskey = ช
 menu-help-troubleshooting-info =
     .label = ข้อมูลการแก้ไขปัญหา
     .accesskey = ป
 menu-help-taskmanager =
     .label = ตัวจัดการงาน
+menu-help-report-site-issue =
+    .label = รายงานปัญหาไซต์…
 menu-help-feedback-page =
     .label = ส่งข้อคิดเห็น…
     .accesskey = ส

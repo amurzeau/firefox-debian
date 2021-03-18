@@ -111,6 +111,9 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Koppeling openen in nieuw containertabblad
     .accesskey = c
+main-context-menu-open-link-container =
+    .label = Koppeling openen in nieuwe container
+    .accesskey = w
 main-context-menu-open-link-new-window =
     .label = Koppeling openen in nieuw venster
     .accesskey = v
@@ -120,6 +123,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = Bladwijzer voor deze koppeling maken
     .accesskey = m
+main-context-menu-bookmark-link =
+    .label = Bladwijzer maken
+    .accesskey = B
 main-context-menu-save-link =
     .label = Koppeling opslaan als…
     .accesskey = l
@@ -131,12 +137,20 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = E-mailadres kopiëren
     .accesskey = m
 main-context-menu-copy-link =
     .label = Koppelingslocatie kopiëren
     .accesskey = p
+main-context-menu-copy-link-simple =
+    .label = Koppeling kopiëren
+    .accesskey = K
 
 ## Media (video/audio) controls
 ##
@@ -179,6 +193,9 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Belachelijk (2×)
     .accesskey = B
+main-context-menu-media-play-speed-2 =
+    .label = Snelheid
+    .accesskey = d
 main-context-menu-media-loop =
     .label = Herhalen
     .accesskey = H
@@ -206,6 +223,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Picture-in-Picture
     .accesskey = u
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Picture-in-picture bekijken
+    .accesskey = u
 main-context-menu-image-reload =
     .label = Afbeelding vernieuwen
     .accesskey = r
@@ -215,6 +237,9 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = Video bekijken
     .accesskey = i
+main-context-menu-image-view-new-tab =
+    .label = Afbeelding openen in nieuw tabblad
+    .accesskey = A
 main-context-menu-image-copy =
     .label = Afbeelding kopiëren
     .accesskey = k
@@ -226,6 +251,15 @@ main-context-menu-video-copy-location =
     .accesskey = o
 main-context-menu-audio-copy-location =
     .label = Audiolocatie kopiëren
+    .accesskey = o
+main-context-menu-image-copy-link =
+    .label = Afbeeldingskoppeling kopiëren
+    .accesskey = o
+main-context-menu-video-copy-link =
+    .label = Videokoppeling kopiëren
+    .accesskey = o
+main-context-menu-audio-copy-link =
+    .label = Audiokoppeling kopiëren
     .accesskey = o
 main-context-menu-image-save-as =
     .label = Afbeelding opslaan als…
@@ -239,6 +273,9 @@ main-context-menu-image-set-as-background =
 main-context-menu-image-info =
     .label = Afbeeldingsinfo bekijken
     .accesskey = i
+main-context-menu-image-set-image-as-background =
+    .label = Afbeelding als bureaubladachtergrond instellen…
+    .accesskey = f
 main-context-menu-image-desc =
     .label = Beschrijving bekijken
     .accesskey = B
@@ -275,6 +312,26 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = Aangemaakte wachtwoord gebruiken…
     .accesskey = g
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = Opgeslagen aanmelding gebruiken
+    .accesskey = O
+main-context-menu-use-saved-password =
+    .label = Opgeslagen wachtwoord gebruiken
+    .accesskey = O
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = Sterk wachtwoord voorstellen…
+    .accesskey = S
+main-context-menu-manage-logins =
+    .label = Aanmeldingen beheren…
+    .accesskey = b
 main-context-menu-keyword =
     .label = Sleutelwoord voor deze zoekopdracht toevoegen…
     .accesskey = S
@@ -332,6 +389,9 @@ main-context-menu-bidi-switch-page =
 main-context-menu-inspect-element =
     .label = Element inspecteren
     .accesskey = E
+main-context-menu-inspect =
+    .label = Inspecteren
+    .accesskey = I
 main-context-menu-inspect-a11y-properties =
     .label = Toegankelijkheidseigenschappen inspecteren
 main-context-menu-eme-learn-more =

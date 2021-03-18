@@ -41,6 +41,34 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = Μετακίνηση στην Κρυφή Κοινοποίηση
     .accesskey = φ
+
+# Attachment widget
+
+ctrl-cmd-shift-pretty-prefix =
+    { PLATFORM() ->
+        [macos] ⇧ ⌘{ " " }
+       *[other] Ctrl+Shift+
+    }
+trigger-attachment-picker-key = A
+toggle-attachment-pane-key = M
+menuitem-toggle-attachment-pane =
+    .label = Προβολή συνημμένων
+    .accesskey = μ
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }
+toolbar-button-add-attachment =
+    .label = Επισύναψη
+    .tooltiptext = Προσθήκη συνημμένου ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
+add-attachment-notification-reminder =
+    .label = Προσθήκη συνημμένου…
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+menuitem-attach-files =
+    .label = Αρχείο(α)…
+    .accesskey = Α
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
+context-menuitem-attach-files =
+    .label = Επισύναψη Αρχείου(ων)…
+    .accesskey = ρ
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count =
     .value =
@@ -59,6 +87,31 @@ attachments-placeholder-tooltip =
 #   { attachment-bucket-count.accesskey } - Do not localize this message.
 key-toggle-attachment-pane =
     .key = { attachment-bucket-count.accesskey }
+expand-attachment-pane-tooltip =
+    .tooltiptext = Εμφάνιση του πίνακα συνημμένων ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+collapse-attachment-pane-tooltip =
+    .tooltiptext = Απόκρυψη του πίνακα συνημμένων ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+drop-file-label-attachment =
+    { $count ->
+        [one] Προσθήκη ως συνημμένο
+       *[other] Προσθήκη ως συνημμένα
+    }
+drop-file-label-inline =
+    { $count ->
+        [one] Προσθήκη ένθετα
+       *[other] Προσθήκη ένθετα
+    }
+
+# Reorder Attachment Panel
+
+move-attachment-first-panel-button =
+    .label = Μετακίνηση στο Πρώτο
+move-attachment-left-panel-button =
+    .label = Μετακίνηση Αριστερά
+move-attachment-right-panel-button =
+    .label = Μετακίνηση Δεξιά
+move-attachment-last-panel-button =
+    .label = Μετακίνηση στο Τελευταίο
 button-return-receipt =
     .label = Αποδεικτικό
     .tooltiptext = Απαίτηση ενός αποδεικτικού επιστροφής για αυτό το μήνυμα

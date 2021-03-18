@@ -27,6 +27,12 @@ appmenuitem-more-tools =
     .label = Fleire verktøy
 appmenuitem-exit =
     .label = Avslutt
+appmenu-menu-button-closed =
+    .tooltiptext = Opne program-meny
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Lat att program-meny
+    .label = { -brand-shorter-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -45,6 +51,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Synkroniser no
+appmenuitem-fxa-toolbar-sync-now =
+    .label = Synkroniser no
+    .value = Synkroniser no
+appmenuitem-fxa-manage-account = Handter kontoen
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Sist synkronisert { $time }
+    .label = Sist synkronisert { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = Synkroniser og lagre data
+appmenu-fxa-signed-in-label = Logg inn
+appmenu-fxa-setup-sync =
+    .label = Slå på synkronisering…
+appmenu-fxa-show-more-tabs = Vis fleire faner
 appmenuitem-save-page =
     .label = Lagre sida som…
 
@@ -130,8 +153,13 @@ appmenu-get-help =
 appmenu-help-troubleshooting-info =
     .label = Feilsøking
     .accesskey = e
+appmenu-help-more-troubleshooting-info =
+    .label = Meir feilsøkingsinformasjon
+    .accesskey = M
 appmenu-help-taskmanager =
     .label = Aktivitetshandterar
+appmenu-help-report-site-issue =
+    .label = Rapporter problem med nettstad…
 appmenu-help-feedback-page =
     .label = Gje tilbakemelding…
     .accesskey = G
@@ -144,6 +172,16 @@ appmenu-help-safe-mode-without-addons =
     .accesskey = S
 appmenu-help-safe-mode-with-addons =
     .label = Start på nytt med påslåtte tillegg
+    .accesskey = S
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = Feilsøkingsmodus
+    .accesskey = F
+appmenu-help-exit-troubleshoot-mode =
+    .label = Slå av feilsøkingsmodus
     .accesskey = S
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive

@@ -130,10 +130,14 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argumenty
 safe-mode-title = Wěsty modus spytać
 restart-in-safe-mode-label = Ze znjemóžnjenymi přidatkami startować…
+troubleshoot-mode-title = Problemy diagnosticěrować
+restart-in-troubleshoot-mode-label = Modus za rozrisowanje problemow…
 clear-startup-cache-title = Spytajće startowy pufrowak wuprózdnić
 clear-startup-cache-label = Startowy pufrowak wuprózdnić…
 startup-cache-dialog-title = Startowy pufrowak wuprózdnić
 startup-cache-dialog-body = Startujće { -brand-short-name } znowa, zo byšće startowy pufrowak wuprózdnił. To waše nastajenja njezměni abo rozšěrjenja njewotstroni, kotrež sće { -brand-short-name } přidał.
+startup-cache-dialog-title2 = { -brand-short-name } znowa startować, zo byšće startowy pufrowak wuprózdnił?
+startup-cache-dialog-body2 = To waše nastajenja njezměni abo rozšěrjenja njewotstroni.
 restart-button-label = Znowa startować
 
 ## Media titles
@@ -413,3 +417,13 @@ support-printing-clear-settings-button = Składowane ćišćerske nastajenja zha
 support-printing-modified-settings = Změnjene ćišćerske nastajenja
 support-printing-prefs-name = Mjeno
 support-printing-prefs-value = Hódnota
+
+## Normandy sections
+
+support-remote-experiments-title = Zdalene eksperimenty
+support-remote-experiments-name = Mjeno
+support-remote-experiments-branch = Hałza eksperimenta
+support-remote-experiments-see-about-studies = Hlejće <a data-l10n-name="support-about-studies-link">about:studies</a> za dalše informacije, inkluziwnje kak móžeće indiwiduelne eksperimenty znjemóžnić abo kak móžeće { -brand-short-name } při tym haćić, tutón typ eksperimenta w přichodźe wuwjesć.
+support-remote-features-title = Zdalene funkcije
+support-remote-features-name = Mjeno
+support-remote-features-status = Status

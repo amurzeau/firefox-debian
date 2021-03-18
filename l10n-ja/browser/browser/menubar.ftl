@@ -2,6 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
 # NOTE: For English locales, strings in this file should be in APA-style Title Case.
 # See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
 #
@@ -207,6 +208,9 @@ menu-history-undo-menu =
 menu-history-undo-window-menu =
     .label = 最近閉じたウィンドウ
 
+menu-history-reopen-all-tabs = タブをすべて開きなおす
+menu-history-reopen-all-windows = ウィンドウをすべて開きなおす
+
 ## Bookmarks Menu
 
 menu-bookmarks-menu =
@@ -283,6 +287,7 @@ menu-window-bring-all-to-front =
 
 ## Help Menu
 
+
 # NOTE: For Engineers, any additions or changes to Help menu strings should
 # also be reflected in the related strings in appmenu.ftl. Those strings, by
 # convention, will have the same ID as these, but prefixed with "app".
@@ -290,6 +295,7 @@ menu-window-bring-all-to-front =
 #
 # These strings are duplicated to allow for different casing depending on
 # where the strings appear.
+
 
 # NOTE: For Engineers, any additions or changes to Help menu strings should
 # also be reflected in the related strings in appmenu.ftl. Those strings, by
@@ -320,8 +326,13 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = トラブルシューティング情報...
     .accesskey = T
+menu-help-more-troubleshooting-info =
+    .label = 他のトラブルシューティング情報
+    .accesskey = T
 menu-help-taskmanager =
     .label = タスクマネージャー
+menu-help-report-site-issue =
+    .label = サイトの問題を報告...
 menu-help-feedback-page =
     .label = フィードバックを送信...
     .accesskey = S
@@ -331,6 +342,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = アドオンを有効にして再起動
     .accesskey = R
+menu-help-enter-troubleshoot-mode =
+    .label = トラブルシューティングモード
+    .accesskey = M
+menu-help-exit-troubleshoot-mode =
+    .label = トラブルシューティングモードをオフにする
+    .accesskey = M
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

@@ -14,6 +14,13 @@ duplicate-tab =
 duplicate-tabs =
     .label = Duplikuj karty
     .accesskey = u
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = Zamknij karty po lewej stronie
+    .accesskey = w
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Zamknij karty po prawej stronie
     .accesskey = s
@@ -44,6 +51,9 @@ bookmark-tab =
 reopen-in-container =
     .label = Otwórz ponownie w karcie z kontekstem
     .accesskey = k
+tab-context-open-in-container =
+    .label = Otwórz w nowym kontekście
+    .accesskey = k
 move-to-start =
     .label = Przenieś na początek
     .accesskey = P
@@ -56,6 +66,11 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Zamknij wiele kart
     .accesskey = w
+tab-context-share-url =
+    .label = Udostępnij
+    .accesskey = U
+tab-context-share-more =
+    .label = Więcej…
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -64,9 +79,7 @@ tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
             [1] Przywróć zamkniętą kartę
-            [one] Przywróć zamkniętą kartę
-            [few] Przywróć zamknięte karty
-           *[many] Przywróć zamknięte karty
+           *[other] Przywróć zamknięte karty
         }
     .accesskey = a
 close-tab =
@@ -81,21 +94,24 @@ move-tabs =
 move-tab =
     .label = Przenieś kartę
     .accesskey = r
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Przywróć zamkniętą kartę
+           *[other] Przywróć zamknięte karty
+        }
+    .accesskey = a
 tab-context-close-tabs =
     .label =
         { $tabCount ->
             [1] Zamknij kartę
-            [one] Zamknij kartę
-            [few] Zamknij karty
-           *[many] Zamknij karty
+           *[other] Zamknij karty
         }
     .accesskey = Z
 tab-context-move-tabs =
     .label =
         { $tabCount ->
             [1] Przenieś kartę
-            [one] Przenieś kartę
-            [few] Przenieś karty
-           *[many] Przenieś karty
+           *[other] Przenieś karty
         }
     .accesskey = r

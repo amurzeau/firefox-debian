@@ -351,11 +351,11 @@ browser-window-close-button =
 ## Tab actions
 
 browser-tab-audio-playing = Odtwarzanie
-browser-tab-audio-muted = Wyciszona
+browser-tab-audio-muted = Wyciszone
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = ODTWARZANIE
 # This label should be written in all capital letters if your locale supports them.
-browser-tab-audio-muted2 = WYCISZONA
+browser-tab-audio-muted2 = WYCISZONE
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-blocked = ZABLOKOWANO AUTOMATYCZNE ODTWARZANIE
 # This label should be written in all capital letters if your locale supports them.
@@ -376,6 +376,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Mikrofon do udostępnienia:
     .accesskey = M
+popup-select-camera-device =
+    .value = Kamera:
+    .accesskey = K
+popup-select-camera-icon =
+    .tooltiptext = Kamera
+popup-select-microphone-device =
+    .value = Mikrofon:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Mikrofon
 popup-all-windows-shared = Wszystkie widoczne na ekranie okna zostaną udostępnione.
 popup-screen-sharing-not-now =
     .label = Nie teraz
@@ -385,6 +395,13 @@ popup-screen-sharing-never =
     .accesskey = d
 popup-silence-notifications-checkbox = Wyłącz powiadomienia przeglądarki { -brand-short-name } podczas udostępniania
 popup-silence-notifications-checkbox-warning = { -brand-short-name } nie będzie wyświetlał powiadomień w trakcie udostępniania.
+popup-screen-sharing-block =
+    .label = Blokuj
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Zawsze blokuj
+    .accesskey = Z
+popup-mute-notifications-checkbox = Nie wyświetlaj powiadomień ze stron podczas udostępniania
 
 ## WebRTC window or screen share tab switch warning
 
@@ -525,6 +542,8 @@ crashed-subframe-message = <strong>Część tej strony uległa awarii.</strong> 
 crashed-subframe-learnmore =
     .label = Więcej informacji
     .accesskey = W
+crashed-subframe-learnmore-link =
+    .value = Więcej informacji
 crashed-subframe-submit =
     .label = Zgłoś awarię
     .accesskey = Z
@@ -539,6 +558,7 @@ bookmarks-manage-bookmarks =
     .label = Zarządzaj zakładkami
 bookmarks-recent-bookmarks-panel =
     .value = Ostatnio dodane zakładki
+bookmarks-recent-bookmarks-panel-subheader = Ostatnio dodane zakładki
 bookmarks-toolbar-chevron =
     .tooltiptext = Wyświetl więcej zakładek
 bookmarks-sidebar-content =
@@ -618,3 +638,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Pracuj w trybie offline
     .accesskey = c
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Dźwięk lub obraz na tej stronie używają oprogramowania DRM, które może ograniczać możliwości oferowane przez przeglądarkę { -brand-short-name }.
+eme-notifications-drm-content-playing-manage = Zarządzaj ustawieniami
+eme-notifications-drm-content-playing-manage-accesskey = u
+eme-notifications-drm-content-playing-dismiss = Zamknij
+eme-notifications-drm-content-playing-dismiss-accesskey = Z
+
+## Password save/update panel
+
+panel-save-update-username = Nazwa użytkownika
+panel-save-update-password = Hasło
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Czy usunąć „{ $name }”?
+addon-removal-abuse-report-checkbox = Zgłoś to rozszerzenie do organizacji { -vendor-short-name }

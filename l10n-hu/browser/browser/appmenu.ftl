@@ -27,6 +27,12 @@ appmenuitem-more-tools =
     .label = További eszközök
 appmenuitem-exit =
     .label = Kilépés
+appmenu-menu-button-closed =
+    .tooltiptext = Alkalmazásmenü megnyitása
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Alkalmazásmenü bezárása
+    .label = { -brand-shorter-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -45,6 +51,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Szinkronizálás
+appmenuitem-fxa-toolbar-sync-now =
+    .label = Szinkronizálás
+    .value = Szinkronizálás
+appmenuitem-fxa-manage-account = Fiók kezelése
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Utoljára szinkronizálva: { $time }
+    .label = Utoljára szinkronizálva: { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = Adatok szinkronizálása és mentése
+appmenu-fxa-signed-in-label = Bejelentkezés
+appmenu-fxa-setup-sync =
+    .label = Szinkronizálás bekapcsolása…
+appmenu-fxa-show-more-tabs = Több lap megjelenítése
 appmenuitem-save-page =
     .label = Oldal mentése…
 
@@ -98,6 +121,13 @@ profiler-popup-capture-shortcut =
        *[other] Ctrl+Shift+2
     }
 
+## History panel
+
+appmenu-manage-history =
+    .label = Előzmények kezelése
+appmenu-reopen-all-tabs = Összes lap újranyitása
+appmenu-reopen-all-windows = Összes ablak újranyitása
+
 ## Help panel
 
 appmenu-help-header =
@@ -123,8 +153,13 @@ appmenu-get-help =
 appmenu-help-troubleshooting-info =
     .label = Hibakeresési információ
     .accesskey = H
+appmenu-help-more-troubleshooting-info =
+    .label = Több hibakeresési információ
+    .accesskey = T
 appmenu-help-taskmanager =
     .label = Feladatkezelő
+appmenu-help-report-site-issue =
+    .label = Hibás webhely bejelentése…
 appmenu-help-feedback-page =
     .label = Visszajelzés beküldése…
     .accesskey = V
@@ -138,6 +173,16 @@ appmenu-help-safe-mode-without-addons =
 appmenu-help-safe-mode-with-addons =
     .label = Újraindítás engedélyezett kiegészítőkkel
     .accesskey = r
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = Hibakeresési mód
+    .accesskey = H
+appmenu-help-exit-troubleshoot-mode =
+    .label = Hibakeresési mód kikapcsolása
+    .accesskey = m
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
@@ -153,3 +198,9 @@ appmenu-help-not-deceptive =
 
 appmenu-help-check-for-update =
     .label = Frissítések keresése…
+
+## More Tools
+
+appmenu-customizetoolbar =
+    .label = Eszköztár testreszabása…
+appmenu-developer-tools-subheader = Böngészőeszközök

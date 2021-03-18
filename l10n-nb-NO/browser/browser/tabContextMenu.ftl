@@ -14,6 +14,13 @@ duplicate-tab =
 duplicate-tabs =
     .label = Dupliser faner
     .accesskey = D
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = Lukk faner til venstre
+    .accesskey = L
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Lukk faner til høyre
     .accesskey = u
@@ -44,6 +51,9 @@ bookmark-tab =
 reopen-in-container =
     .label = Åpne på nytt i innholdsfane
     .accesskey = e
+tab-context-open-in-container =
+    .label = Åpne i ny beholder
+    .accesskey = e
 move-to-start =
     .label = Flytt til begynnelsen
     .accesskey = b
@@ -56,6 +66,11 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Lukk flere faner
     .accesskey = f
+tab-context-share-url =
+    .label = Del
+    .accesskey = D
+tab-context-share-more =
+    .label = Mer …
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -79,6 +94,13 @@ move-tabs =
 move-tab =
     .label = Flytt fane
     .accesskey = y
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Gjenopprett lukket fane
+           *[other] Gjenopprett lukkede faner
+        }
+    .accesskey = o
 tab-context-close-tabs =
     .label =
         { $tabCount ->

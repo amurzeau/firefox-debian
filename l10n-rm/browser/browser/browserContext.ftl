@@ -111,6 +111,9 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Avrir la colliaziun en in nov tab da container
     .accesskey = C
+main-context-menu-open-link-container =
+    .label = Avrir la colliaziun en in nov container
+    .accesskey = v
 main-context-menu-open-link-new-window =
     .label = Avrir la colliaziun en ina nova fanestra
     .accesskey = f
@@ -120,6 +123,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = Agiuntar in segnapagina per la colliaziun
     .accesskey = l
+main-context-menu-bookmark-link =
+    .label = Agiuntar in segnapagina per la colliaziun
+    .accesskey = A
 main-context-menu-save-link =
     .label = Memorisar la destinaziun sut…
     .accesskey = z
@@ -131,12 +137,20 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = Copiar l'adressa dad e-mail
     .accesskey = e
 main-context-menu-copy-link =
     .label = Copiar l'adressa da la colliaziun
     .accesskey = C
+main-context-menu-copy-link-simple =
+    .label = Copiar la colliaziun
+    .accesskey = l
 
 ## Media (video/audio) controls
 ##
@@ -179,6 +193,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Stravagà (2×)
     .accesskey = t
+main-context-menu-media-play-speed-2 =
+    .label = Sveltezza
+    .accesskey = z
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Repeter
     .accesskey = R
@@ -206,6 +233,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = maletg-en-maletg
     .accesskey = g
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Guardar sco maletg-en-maletg
+    .accesskey = u
 main-context-menu-image-reload =
     .label = Rechargiar la grafica
     .accesskey = R
@@ -215,6 +247,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = Mussar il video
     .accesskey = i
+main-context-menu-image-view-new-tab =
+    .label = Avrir la grafica en in nov tab
+    .accesskey = i
+main-context-menu-video-view-new-tab =
+    .label = Avrir il video en in nov tab
+    .accesskey = v
 main-context-menu-image-copy =
     .label = Copiar la grafica
     .accesskey = C
@@ -226,6 +264,15 @@ main-context-menu-video-copy-location =
     .accesskey = o
 main-context-menu-audio-copy-location =
     .label = Copiar l'adressa da l'audio
+    .accesskey = o
+main-context-menu-image-copy-link =
+    .label = Copiar la colliaziun da la grafica
+    .accesskey = o
+main-context-menu-video-copy-link =
+    .label = Copiar la colliaziun dal video
+    .accesskey = o
+main-context-menu-audio-copy-link =
+    .label = Copiar la colliaziun da l'audio
     .accesskey = o
 main-context-menu-image-save-as =
     .label = Memorisar la grafica sut…
@@ -239,6 +286,9 @@ main-context-menu-image-set-as-background =
 main-context-menu-image-info =
     .label = Mussar infurmaziuns davart la grafica
     .accesskey = g
+main-context-menu-image-set-image-as-background =
+    .label = Definir il maletg sco culissa dal desktop…
+    .accesskey = s
 main-context-menu-image-desc =
     .label = Mussar la descripziun
     .accesskey = D
@@ -250,6 +300,9 @@ main-context-menu-audio-save-as =
     .accesskey = M
 main-context-menu-video-image-save-as =
     .label = Memorisar il maletg sco…
+    .accesskey = s
+main-context-menu-video-take-snapshot =
+    .label = Far in maletg dal visur…
     .accesskey = s
 main-context-menu-video-email =
     .label = Trametter il video per e-mail…
@@ -275,6 +328,26 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = Utilisar in pled-clav generà…
     .accesskey = U
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = Utilisar l'infurmaziun d'annunzia memorisada
+    .accesskey = o
+main-context-menu-use-saved-password =
+    .label = Utilisar il pled-clav memorisà
+    .accesskey = o
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = Proponer in ferm pled-clav…
+    .accesskey = P
+main-context-menu-manage-logins =
+    .label = Administrar las datas d'annunzia…
+    .accesskey = m
 main-context-menu-keyword =
     .label = Agiuntar in pled magic per questa tschertga…
     .accesskey = s
@@ -317,6 +390,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Mussar il code da funtauna da la selecziun
     .accesskey = A
+main-context-menu-take-screenshot =
+    .label = Far in maletg dal visur
+    .accesskey = t
 main-context-menu-view-page-source =
     .label = Mussar il code da funtauna da la pagina
     .accesskey = a
@@ -331,6 +407,9 @@ main-context-menu-bidi-switch-page =
     .accesskey = M
 main-context-menu-inspect-element =
     .label = Inspectar l'element
+    .accesskey = I
+main-context-menu-inspect =
+    .label = Inspectar
     .accesskey = I
 main-context-menu-inspect-a11y-properties =
     .label = Inspectar las caracteristicas da l'accessiblitad

@@ -356,6 +356,28 @@ browser-tab-audio-blocked = RIPRODUZ. AUTOMATICA BLOCCATA
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = PICTURE-IN-PICTURE
 
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] DISATTIVA AUDIO
+       *[other] DISATTIVA AUDIO ({ $count } SCHEDE)
+    }
+
+browser-tab-unmute =
+    { $count ->
+        [1] ATTIVA AUDIO
+       *[other] ATTIVA AUDIO ({ $count } SCHEDE)
+    }
+
+browser-tab-unblock =
+    { $count ->
+        [1] AVVIA RIPRODUZIONE
+       *[other] AVVIA RIPRODUZIONE ({ $count } SCHEDE)
+    }
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -371,6 +393,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Microfono da condividere:
     .accesskey = M
+popup-select-camera-device =
+    .value = Fotocamera:
+    .accesskey = F
+popup-select-camera-icon =
+    .tooltiptext = Fotocamera
+popup-select-microphone-device =
+    .value = Microfono:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Microfono
 popup-all-windows-shared = Tutte le finestre visibili sullo schermo verranno condivise.
 popup-screen-sharing-not-now =
     .label = Non adesso
@@ -378,6 +410,14 @@ popup-screen-sharing-not-now =
 popup-screen-sharing-never =
     .label = Mai
     .accesskey = M
+popup-screen-sharing-block =
+    .label = Blocca
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Blocca sempre
+    .accesskey = s
+
+popup-mute-notifications-checkbox = Disattiva notifiche dai siti web durante la condivisione
 popup-silence-notifications-checkbox = Disattiva notifiche di { -brand-short-name } durante la condivisione
 popup-silence-notifications-checkbox-warning = { -brand-short-name } non visualizzerà notifiche durante la condivisione.
 
@@ -518,6 +558,8 @@ crashed-subframe-message = <strong>Una parte di questa pagina si è bloccata.</s
 crashed-subframe-learnmore =
     .label = Ulteriori informazioni
     .accesskey = U
+crashed-subframe-learnmore-link =
+    .value = Ulteriori informazioni
 crashed-subframe-submit =
     .label = Invia segnalazione
     .accesskey = s
@@ -529,9 +571,10 @@ bookmarks-show-all-bookmarks =
 bookmarks-recent-bookmarks =
     .value = Aggiunti di recente
 bookmarks-manage-bookmarks =
-  .label = Gestisci segnalibri
+    .label = Gestisci segnalibri
 bookmarks-recent-bookmarks-panel =
-  .value = Segnalibri recenti
+    .value = Segnalibri recenti
+bookmarks-recent-bookmarks-panel-subheader = Segnalibri recenti
 bookmarks-toolbar-chevron =
     .tooltiptext = Visualizza altri segnalibri
 bookmarks-sidebar-content =
@@ -554,13 +597,13 @@ bookmarks-tools-toolbar-visibility =
             [true] Nascondi la barra dei segnalibri
            *[other] Visualizza la barra dei segnalibri
         }
-bookmarks-tools-toolbar-visibility-panel =
+bookmarks-tools-toolbar-visibility-menuitem =
     .label =
         { $isVisible ->
             [true] Nascondi la barra dei segnalibri
            *[other] Visualizza la barra dei segnalibri
         }
-bookmarks-tools-toolbar-visibility-menuitem =
+bookmarks-tools-toolbar-visibility-panel =
     .label =
         { $isVisible ->
             [true] Nascondi la barra dei segnalibri
@@ -591,10 +634,9 @@ bookmarks-toolbar-placeholder =
     .title = Elementi della barra dei segnalibri
 bookmarks-toolbar-placeholder-button =
     .label = Elementi della barra dei segnalibri
-
 # "Bookmark" is a verb, as in "Add current tab to bookmarks".
 bookmarks-current-tab =
-  .label = Aggiungi scheda corrente ai segnalibri
+    .label = Aggiungi scheda corrente ai segnalibri
 
 ## Library Panel items
 
@@ -612,3 +654,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Lavora non in linea
     .accesskey = L
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Alcuni contenuti audio o video in questo sito utilizzano software DRM. Questo potrebbe limitare le azioni disponibili per l’utente in { -brand-short-name }.
+eme-notifications-drm-content-playing-manage = Gestisci impostazioni
+eme-notifications-drm-content-playing-manage-accesskey = G
+eme-notifications-drm-content-playing-dismiss = Chiudi
+eme-notifications-drm-content-playing-dismiss-accesskey = C
+
+## Password save/update panel
+
+panel-save-update-username = Nome utente
+panel-save-update-password = Password
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Rimuovere { $name }?
+addon-removal-abuse-report-checkbox = Segnala questa estensione a { -vendor-short-name }

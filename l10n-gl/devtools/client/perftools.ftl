@@ -105,3 +105,14 @@ perftools-tools-threads-input-label =
     .title =
         Eses nomes de fíos son unha lista separada por comas que se utiliza para activar o perfilado dos fíos no perfilador.
         O nome debe ter só unha coincidencia parcial co nome do fío para que sexa incluído. É sensíbel aos espazos en branco.
+
+## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
+## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
+## preferences are true.
+
+-profiler-brand-name = Firefox Profiler
+perftools-onboarding-message = <b>Novo</b>:{ -profiler-brand-name } está agora integrado nas Developer Tools.<a>Saiba máis</a> sobre esta poderosa ferramenta nova.
+# `options-context-advanced-settings` is defined in toolbox-options.ftl
+perftools-onboarding-reenable-old-panel = (Durante un tempo limitado, pode acceder ao panel orixinal de Rendemento via<a>{ options-context-advanced-settings }</a>)
+perftools-onboarding-close-button =
+    .aria-label = Pechar a mensaxe de incorporación

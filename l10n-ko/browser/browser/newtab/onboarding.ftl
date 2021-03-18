@@ -44,7 +44,6 @@ onboarding-join-form-signin-label = 계정이 이미 있습니까?
 # Text for link to submit the sign in form
 onboarding-join-form-signin = 로그인
 onboarding-start-browsing-button-label = 탐색 시작
-onboarding-not-now-button-label = 나중에
 onboarding-cards-dismiss =
     .title = 닫기
     .aria-label = 닫기
@@ -86,99 +85,6 @@ onboarding-benefit-monitor-title = { -monitor-brand-short-name }
 onboarding-benefit-monitor-text = 개인 정보가 알려진 데이터 유출에서 발견되면 알림을 받습니다.
 onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
 onboarding-benefit-lockwise-text = 비밀번호를 보호하면서 항상 가지고 다녀 보세요.
-
-## Custom Return To AMO onboarding strings
-
-return-to-amo-subtitle = 좋습니다. { -brand-short-name }를 설치했네요.
-# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
-#
-# Variables:
-#   $addon-name (String) - Name of the add-on
-return-to-amo-addon-title = 이제 <img data-l10n-name="icon"/> <b>{ $addon-name }</b> 부가 기능을 설치하겠습니다.
-return-to-amo-add-extension-label = 확장 기능 추가
-
-## Multistage 3-screen onboarding flow strings (about:welcome pages)
-
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = <span data-l10n-name="zap">{ -brand-short-name }</span>에 오신 것을 환영합니다
-onboarding-multistage-welcome-subtitle = 비영리 단체가 지원하는, 빠르고 안전하며 사생활 보호를 위한 브라우저입니다.
-onboarding-multistage-welcome-primary-button-label = 설정 시작
-onboarding-multistage-welcome-secondary-button-label = 로그인
-onboarding-multistage-welcome-secondary-button-text = 계정이 있으십니까?
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "more" should stay inside the span.
-onboarding-multistage-import-header = 비밀번호, 북마크 및 <span data-l10n-name="zap">기타</span> 가져오기
-onboarding-multistage-import-subtitle = 다른 브라우저에서 오셨나요? 모든 것을 { -brand-short-name }에 쉽게 가져올 수 있습니다.
-onboarding-multistage-import-primary-button-label = 가져오기 시작
-onboarding-multistage-import-secondary-button-label = 나중에
-# Info displayed in the footer of import settings screen during onboarding flow.
-# This supports welcome screen showing top sites imported from the user's default browser.
-onboarding-import-sites-disclaimer = 이 기기에서 여기에 나열된 사이트들을 찾았습니다. 사용자가 가져오도록 선택하지 않는 한, { -brand-short-name }는 다른 브라우저로부터 데이터를 저장하거나 동기화하지 않습니다.
-# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
-# Variables:
-#   $current (Int) - Number of the current page
-#   $total (Int) - Total number of pages
-onboarding-welcome-steps-indicator =
-    .aria-label = 시작하기:  { $current } / { $total } 화면
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "look" should stay inside the span.
-onboarding-multistage-theme-header = <span data-l10n-name="zap">외양</span>을 선택하세요
-onboarding-multistage-theme-subtitle = 테마로 { -brand-short-name }를 개인화하세요.
-onboarding-multistage-theme-primary-button-label = 테마 저장
-onboarding-multistage-theme-secondary-button-label = 나중에
-# Automatic theme uses operating system color settings
-onboarding-multistage-theme-label-automatic = 자동
-onboarding-multistage-theme-label-light = 밝게
-onboarding-multistage-theme-label-dark = 어둡게
-# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
-onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
-
-## Please make sure to split the content of the title attribute into lines whose
-## width corresponds to about 40 Latin characters, to ensure that the tooltip
-## doesn't become too long. Line breaks will be preserved when displaying the
-## tooltip.
-
-# Tooltip displayed on hover of automatic theme
-onboarding-multistage-theme-tooltip-automatic-2 =
-    .title =
-        버튼, 메뉴 및 창에
-        운영 체제의 모양을 상속.
-# Input description for automatic theme
-onboarding-multistage-theme-description-automatic-2 =
-    .aria-description =
-        버튼, 메뉴 및 창에
-        운영 체제의 모양을 상속.
-# Tooltip displayed on hover of light theme
-onboarding-multistage-theme-tooltip-light-2 =
-    .title =
-        버튼, 메뉴 및 창에
-        밝은 화면 배색을 사용.
-# Input description for light theme
-onboarding-multistage-theme-description-light =
-    .aria-description =
-        버튼, 메뉴 및 창에
-        밝은 화면 배색을 사용.
-# Tooltip displayed on hover of dark theme
-onboarding-multistage-theme-tooltip-dark-2 =
-    .title =
-        버튼, 메뉴 및 창에
-        어두운 화면 배색을 사용.
-# Input description for dark theme
-onboarding-multistage-theme-description-dark =
-    .aria-description =
-        버튼, 메뉴 및 창에
-        어두운 화면 배색을 사용.
-# Tooltip displayed on hover of Alpenglow theme
-onboarding-multistage-theme-tooltip-alpenglow-2 =
-    .title =
-        버튼, 메뉴 및 창에
-        색상형 화면 배색을 사용.
-# Input description for Alpenglow theme
-onboarding-multistage-theme-description-alpenglow =
-    .aria-description =
-        버튼, 메뉴 및 창에
-        색상형 화면 배색을 사용.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -239,3 +145,104 @@ return-to-amo-sub-header = 좋습니다. { -brand-short-name }를 설치했네�
 return-to-amo-addon-header = 이제 <icon></icon><b>{ $addon-name } 부가 기능</b>을 설치하겠습니다.
 return-to-amo-extension-button = 확장 기능 추가
 return-to-amo-get-started-button = { -brand-short-name } 시작하기
+onboarding-not-now-button-label = 나중에
+
+## Custom Return To AMO onboarding strings
+
+return-to-amo-subtitle = 좋습니다. { -brand-short-name }를 설치했네요.
+# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-title = 이제 <img data-l10n-name="icon"/> <b>{ $addon-name }</b> 부가 기능을 설치하겠습니다.
+return-to-amo-add-extension-label = 확장 기능 추가
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = <span data-l10n-name="zap">{ -brand-short-name }</span>에 오신 것을 환영합니다
+onboarding-multistage-welcome-subtitle = 비영리 단체가 지원하는, 빠르고 안전하며 사생활 보호를 위한 브라우저입니다.
+onboarding-multistage-welcome-primary-button-label = 설정 시작
+onboarding-multistage-welcome-secondary-button-label = 로그인
+onboarding-multistage-welcome-secondary-button-text = 계정이 있으십니까?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "default" should stay inside the span.
+onboarding-multistage-set-default-header = { -brand-short-name }를 <span data-l10n-name="zap">기본 브라우저</span>로 설정하기
+onboarding-multistage-set-default-subtitle = 탐색할 때마다 속도, 안전 및 개인 정보 보호 기능이 제공됩니다.
+onboarding-multistage-set-default-primary-button-label = 기본 브라우저로
+onboarding-multistage-set-default-secondary-button-label = 나중에
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = 비밀번호, 북마크 및 <span data-l10n-name="zap">기타</span> 가져오기
+onboarding-multistage-import-subtitle = 다른 브라우저에서 오셨나요? 모든 것을 { -brand-short-name }에 쉽게 가져올 수 있습니다.
+onboarding-multistage-import-primary-button-label = 가져오기 시작
+onboarding-multistage-import-secondary-button-label = 나중에
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = 이 기기에서 여기에 나열된 사이트들을 찾았습니다. 사용자가 가져오도록 선택하지 않는 한, { -brand-short-name }는 다른 브라우저로부터 데이터를 저장하거나 동기화하지 않습니다.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = 시작하기:  { $current } / { $total } 화면
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = <span data-l10n-name="zap">외양</span> 선택하기
+onboarding-multistage-theme-subtitle = 테마로 { -brand-short-name }를 개인화하세요.
+onboarding-multistage-theme-primary-button-label = 테마 저장
+onboarding-multistage-theme-primary-button-label2 = 완료
+onboarding-multistage-theme-secondary-button-label = 나중에
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = 자동
+onboarding-multistage-theme-label-light = 밝게
+onboarding-multistage-theme-label-dark = 어둡게
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        버튼, 메뉴 및 창에
+        운영 체제의 모양을 상속.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        버튼, 메뉴 및 창에
+        운영 체제의 모양을 상속.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        버튼, 메뉴 및 창에
+        밝은 화면 배색을 사용.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        버튼, 메뉴 및 창에
+        밝은 화면 배색을 사용.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        버튼, 메뉴 및 창에
+        어두운 화면 배색을 사용.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        버튼, 메뉴 및 창에
+        어두운 화면 배색을 사용.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        버튼, 메뉴 및 창에
+        색상형 화면 배색을 사용.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        버튼, 메뉴 및 창에
+        색상형 화면 배색을 사용.

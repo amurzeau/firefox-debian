@@ -374,6 +374,12 @@ popup-select-camera =
 popup-select-microphone =
     .value = Mikrofon som deles:
     .accesskey = M
+popup-select-camera-device =
+    .value = Kamera:
+    .accesskey = K
+popup-select-microphone-device =
+    .value = Mikrofon:
+    .accesskey = M
 popup-all-windows-shared = Alle synlige vinduer på skjermen vil deles.
 popup-screen-sharing-not-now =
     .label = Ikke nå
@@ -383,6 +389,13 @@ popup-screen-sharing-never =
     .accesskey = a
 popup-silence-notifications-checkbox = Deaktiver varsler fra { -brand-short-name } mens du deler
 popup-silence-notifications-checkbox-warning = { -brand-short-name } vil ikke vise varsler mens du deler.
+popup-screen-sharing-block =
+    .label = Blokker
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Blokker alltid
+    .accesskey = k
+popup-mute-notifications-checkbox = Slå av nettstedsvarsler mens du deler
 
 ## WebRTC window or screen share tab switch warning
 
@@ -523,6 +536,8 @@ crashed-subframe-message = <strong>En del av denne siden krasjet.</strong> For �
 crashed-subframe-learnmore =
     .label = Les mer
     .accesskey = L
+crashed-subframe-learnmore-link =
+    .value = Les mer
 crashed-subframe-submit =
     .label = Send inn rapport
     .accesskey = S
@@ -537,6 +552,7 @@ bookmarks-manage-bookmarks =
     .label = Behandle bokmerker
 bookmarks-recent-bookmarks-panel =
     .value = Nylige bokmerker
+bookmarks-recent-bookmarks-panel-subheader = Nylige bokmerker
 bookmarks-toolbar-chevron =
     .tooltiptext = Vis flere bokmerker
 bookmarks-sidebar-content =
@@ -616,3 +632,11 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Arbeid frakoblet
     .accesskey = r
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Noe lyd eller video på denne siden bruker DRM-programvare, som kan begrense hva { -brand-short-name } lar deg gjøre med den.
+eme-notifications-drm-content-playing-manage = Behandle innstillinger
+eme-notifications-drm-content-playing-manage-accesskey = B
+eme-notifications-drm-content-playing-dismiss = Ignorer
+eme-notifications-drm-content-playing-dismiss-accesskey = I

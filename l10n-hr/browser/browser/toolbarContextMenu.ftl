@@ -26,6 +26,15 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Poništi zatvaranje kartica
         }
     .accesskey = n
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Ponovno otvori zatvorenu karticu
+            [one] Ponovno otvori zatvorenu karticu
+            [few] Ponovno otvori zatvorene kartice
+           *[other] Ponovno otvori zatvorene kartice
+        }
+    .accesskey = o
 toolbar-context-menu-manage-extension =
     .label = Upravljaj proširenjem
     .accesskey = e
@@ -47,21 +56,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Automatski sakrij u alatnoj traci
     .accesskey = A
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Sakrij tipku kada je prazno (H)
+    .accesskey = H
 toolbar-context-menu-remove-from-toolbar =
     .label = Ukloni s alatne trake
     .accesskey = r
 toolbar-context-menu-view-customize-toolbar =
     .label = Prilagodi …
     .accesskey = l
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Uvijek
-    .accesskey = U
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Nikada
-    .accesskey = N
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Samo za nove kartice
-    .accesskey = S
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Prilagodi alatnu traku… (C)
+    .accesskey = C
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Uvijek prikaži
     .accesskey = U

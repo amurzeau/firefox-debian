@@ -24,6 +24,13 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Mở lại các thẻ vừa đóng
         }
     .accesskey = U
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Mở lại thẻ đã đóng
+           *[other] Mở lại các thẻ đã đóng
+        }
+    .accesskey = o
 toolbar-context-menu-manage-extension =
     .label = Quản lí tiện ích
     .accesskey = E
@@ -45,21 +52,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Tự động ẩn trong thanh công cụ
     .accesskey = A
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Ẩn nút khi danh sách trống
+    .accesskey = H
 toolbar-context-menu-remove-from-toolbar =
     .label = Xóa khỏi thanh công cụ
     .accesskey = R
 toolbar-context-menu-view-customize-toolbar =
     .label = Tùy biến…
     .accesskey = C
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Luôn luôn
-    .accesskey = A
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Không bao giờ
-    .accesskey = N
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Chỉ trên thẻ mới
-    .accesskey = O
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Tùy biến thanh công cụ…
+    .accesskey = C
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Luôn hiển thị
     .accesskey = A

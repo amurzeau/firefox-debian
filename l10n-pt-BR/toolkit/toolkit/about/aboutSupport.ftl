@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-page-title = Dados para suporte
+page-title = Informações para resolver problemas
 page-subtitle =
     Esta página contém informações técnicas que podem ser úteis se você estiver
     tentando solucionar um problema. Se estiver procurando respostas para as dúvidas mais comuns
@@ -73,7 +73,7 @@ app-basics-launcher-process-status = Processo de lançamento
 app-basics-multi-process-support = Janelas multiprocessadas
 app-basics-fission-support = Janelas do Fission
 app-basics-remote-processes-count = Processos remotos
-app-basics-enterprise-policies = Políticas empresariais
+app-basics-enterprise-policies = Diretivas empresariais
 app-basics-location-service-key-google = Chave do Serviço de Localização do Google
 app-basics-safebrowsing-key-google = Chave do Google Safebrowsing
 app-basics-key-mozilla = Chave do serviço de localização da Mozilla
@@ -133,10 +133,14 @@ sandbox-sys-call-number = Chamadas de sistema
 sandbox-sys-call-args = Argumentos
 safe-mode-title = Experimente o modo de segurança
 restart-in-safe-mode-label = Reiniciar com extensões desativadas…
+troubleshoot-mode-title = Diagnosticar problemas
+restart-in-troubleshoot-mode-label = Modo de solução de problemas…
 clear-startup-cache-title = Experimente limpar o cache de inicialização
 clear-startup-cache-label = Limpar cache de inicialização…
 startup-cache-dialog-title = Limpar cache de inicialização
 startup-cache-dialog-body = Reinicie o { -brand-short-name } para limpar o cache de inicialização. Isso não altera suas configurações nem remove extensões que você adicionou ao { -brand-short-name }.
+startup-cache-dialog-title2 = Reiniciar o { -brand-short-name } para limpar o cache de inicialização?
+startup-cache-dialog-body2 = Isso não muda suas configurações nem remove extensões.
 restart-button-label = Reiniciar
 
 ## Media titles
@@ -229,22 +233,22 @@ report-crash-for-days =
 # $minutes (integer) - Number of minutes since crash
 crashes-time-minutes =
     { $minutes ->
-        [one] Há { $minutes } minuto
-       *[other] Há { $minutes } minutos
+        [one] há { $minutes } minuto
+       *[other] há { $minutes } minutos
     }
 # Variables
 # $hours (integer) - Number of hours since crash
 crashes-time-hours =
     { $hours ->
-        [one] Há { $hours } hora
-       *[other] Há { $hours } horas
+        [one] há { $hours } hora
+       *[other] há { $hours } horas
     }
 # Variables
 # $days (integer) - Number of days since crash
 crashes-time-days =
     { $days ->
-        [one] Há { $days } dia
-       *[other] Há { $days } dias
+        [one] há { $days } dia
+       *[other] há { $days } dias
     }
 # Variables
 # $reports (integer) - Number of pending reports
@@ -406,3 +410,13 @@ support-printing-clear-settings-button = Limpar configuração de impressão sal
 support-printing-modified-settings = Configuração de impressão modificada
 support-printing-prefs-name = Nome
 support-printing-prefs-value = Valor
+
+## Normandy sections
+
+support-remote-experiments-title = Experimentos remotos
+support-remote-experiments-name = Nome
+support-remote-experiments-branch = Branch do experimento
+support-remote-experiments-see-about-studies = Consulte mais informações em <a data-l10n-name="support-about-studies-link">about:studies</a>, inclusive como desativar experimentos individuais ou desativar a execução deste tipo de experimento pelo { -brand-short-name } no futuro.
+support-remote-features-title = Recursos remotos
+support-remote-features-name = Nome
+support-remote-features-status = Status

@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = חיפוש בדף זה…
     .accesskey = ח
+menu-edit-find-in-page =
+    .label = חיפוש בדף…
+    .accesskey = ח
 menu-edit-find-again =
     .label = מצא שוב
     .accesskey = ש
@@ -128,6 +131,9 @@ menu-view-toolbars-menu =
     .accesskey = ם
 menu-view-customize-toolbar =
     .label = התאמה אישית…
+    .accesskey = ה
+menu-view-customize-toolbar2 =
+    .label = התאמה אישית של סרגל הכלים…
     .accesskey = ה
 menu-view-sidebar =
     .label = סרגל צד
@@ -219,6 +225,8 @@ menu-bookmarks-show-all =
     .label = הצגת כל הסימניות
 menu-bookmark-this-page =
     .label = יצירת סימנייה לדף זה
+menu-bookmark-current-tab =
+    .label = יצירת סימנייה ללשונית הנוכחית
 menu-bookmark-edit =
     .label = עריכת סימנייה זו
 menu-bookmarks-all-tabs =
@@ -243,6 +251,12 @@ menu-tools-addons =
     .accesskey = ת
 menu-tools-fxa-sign-in =
     .label = כניסה אל { -brand-product-name }…
+    .accesskey = כ
+menu-tools-extensions =
+    .label = הרחבות וערכות נושא
+    .accesskey = ה
+menu-tools-fxa-sign-in2 =
+    .label = כניסה
     .accesskey = כ
 menu-tools-turn-on-sync =
     .label = הפעלת { -sync-brand-short-name }…
@@ -272,6 +286,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] א
            *[other] ד
+        }
+menu-settings =
+    .label = הגדרות
+    .accesskey =
+        { PLATFORM() ->
+            [windows] ג
+           *[other] ג
         }
 menu-tools-layout-debugger =
     .label = ניפוי שגיאות פריסה
@@ -325,8 +346,13 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = מידע לפתרון בעיות
     .accesskey = מ
+menu-help-more-troubleshooting-info =
+    .label = מידע נוסף לפתרון בעיות
+    .accesskey = מ
 menu-help-taskmanager =
     .label = מנהל משימות
+menu-help-report-site-issue =
+    .label = דיווח על בעיה באתר…
 menu-help-feedback-page =
     .label = שליחת משוב…
     .accesskey = ש
@@ -336,6 +362,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = הפעלה מחדש עם תוספות פעילות
     .accesskey = ח
+menu-help-enter-troubleshoot-mode =
+    .label = מצב לפתרון בעיות
+    .accesskey = פ
+menu-help-exit-troubleshoot-mode =
+    .label = כיבוי מצב לפתרון בעיות
+    .accesskey = פ
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

@@ -111,6 +111,9 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Open Link in New Container Tab
     .accesskey = C
+main-context-menu-open-link-container =
+    .label = Open Link in New Container
+    .accesskey = w
 main-context-menu-open-link-new-window =
     .label = Open Link in New Window
     .accesskey = W
@@ -120,6 +123,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = Bookmark This Link
     .accesskey = L
+main-context-menu-bookmark-link =
+    .label = Bookmark Link
+    .accesskey = B
 main-context-menu-save-link =
     .label = Save Link As…
     .accesskey = k
@@ -131,12 +137,20 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = Copy Email Address
     .accesskey = E
 main-context-menu-copy-link =
     .label = Copy Link Location
     .accesskey = a
+main-context-menu-copy-link-simple =
+    .label = Copy Link
+    .accesskey = L
 
 ## Media (video/audio) controls
 ##
@@ -179,6 +193,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Ludicrous (2×)
     .accesskey = L
+main-context-menu-media-play-speed-2 =
+    .label = Speed
+    .accesskey = d
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Loop
     .accesskey = L
@@ -206,6 +233,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Picture-in-Picture
     .accesskey = u
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Watch in Picture-in-Picture
+    .accesskey = u
 main-context-menu-image-reload =
     .label = Reload Image
     .accesskey = R
@@ -214,6 +246,12 @@ main-context-menu-image-view =
     .accesskey = I
 main-context-menu-video-view =
     .label = View Video
+    .accesskey = i
+main-context-menu-image-view-new-tab =
+    .label = Open Image in New Tab
+    .accesskey = I
+main-context-menu-video-view-new-tab =
+    .label = Open Video in New Tab
     .accesskey = i
 main-context-menu-image-copy =
     .label = Copy Image
@@ -227,6 +265,15 @@ main-context-menu-video-copy-location =
 main-context-menu-audio-copy-location =
     .label = Copy Audio Location
     .accesskey = o
+main-context-menu-image-copy-link =
+    .label = Copy Image Link
+    .accesskey = o
+main-context-menu-video-copy-link =
+    .label = Copy Video Link
+    .accesskey = o
+main-context-menu-audio-copy-link =
+    .label = Copy Audio Link
+    .accesskey = o
 main-context-menu-image-save-as =
     .label = Save Image As…
     .accesskey = v
@@ -239,6 +286,9 @@ main-context-menu-image-set-as-background =
 main-context-menu-image-info =
     .label = View Image Info
     .accesskey = f
+main-context-menu-image-set-image-as-background =
+    .label = Set Image as Desktop Background…
+    .accesskey = S
 main-context-menu-image-desc =
     .label = View Description
     .accesskey = D
@@ -250,6 +300,9 @@ main-context-menu-audio-save-as =
     .accesskey = v
 main-context-menu-video-image-save-as =
     .label = Save Snapshot As…
+    .accesskey = S
+main-context-menu-video-take-snapshot =
+    .label = Take Snapshot…
     .accesskey = S
 main-context-menu-video-email =
     .label = Email Video…
@@ -275,6 +328,26 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = Use Generated Password…
     .accesskey = G
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = Use Saved Login
+    .accesskey = o
+main-context-menu-use-saved-password =
+    .label = Use Saved Password
+    .accesskey = o
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = Suggest Strong Password…
+    .accesskey = S
+main-context-menu-manage-logins =
+    .label = Manage Logins…
+    .accesskey = M
 main-context-menu-keyword =
     .label = Add a Keyword for this Search…
     .accesskey = K
@@ -317,6 +390,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = View Selection Source
     .accesskey = e
+main-context-menu-take-screenshot =
+    .label = Take Screenshot
+    .accesskey = T
 main-context-menu-view-page-source =
     .label = View Page Source
     .accesskey = V
@@ -331,6 +407,9 @@ main-context-menu-bidi-switch-page =
     .accesskey = D
 main-context-menu-inspect-element =
     .label = Inspect Element
+    .accesskey = Q
+main-context-menu-inspect =
+    .label = Inspect
     .accesskey = Q
 main-context-menu-inspect-a11y-properties =
     .label = Inspect Accessibility Properties

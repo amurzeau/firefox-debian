@@ -24,6 +24,13 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Undo Close Tabs
         }
     .accesskey = U
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Reopen Closed Tab
+           *[other] Reopen Closed Tabs
+        }
+    .accesskey = o
 toolbar-context-menu-manage-extension =
     .label = Manage Extension
     .accesskey = E
@@ -45,21 +52,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Auto-Hide in Toolbar
     .accesskey = A
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Hide Button When Empty
+    .accesskey = H
 toolbar-context-menu-remove-from-toolbar =
     .label = Remove from Toolbar
     .accesskey = R
 toolbar-context-menu-view-customize-toolbar =
     .label = Customise…
     .accesskey = C
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Always
-    .accesskey = A
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Never
-    .accesskey = N
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Only on New Tab
-    .accesskey = O
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Customise Toolbar…
+    .accesskey = C
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Always Show
     .accesskey = A

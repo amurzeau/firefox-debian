@@ -211,6 +211,13 @@ cfr-doorhanger-milestone-heading =
     { $blockedCount ->
        *[other] Το { -brand-short-name } απέκλεισε πάνω από <b>{ $blockedCount }</b> ιχνηλάτες από τις { $date }!
     }
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (Datetime) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading2 =
+    { $blockedCount ->
+       *[other] Το { -brand-short-name } απέκλεισε πάνω από <b>{ $blockedCount }</b> ιχνηλάτες από τις { DATETIME($date, month: "long", year: "numeric") }!
+    }
 cfr-doorhanger-milestone-ok-button = Προβολή όλων
     .accesskey = Π
 cfr-doorhanger-milestone-close-button = Κλείσιμο
@@ -239,6 +246,10 @@ cfr-whatsnew-pip-fullscreen-icon-alt = Εικονίδιο εικόνας-εντ�
 
 ## Protections Dashboard message
 
+
+## What’s New Panel Content for Firefox 76
+## Protections Dashboard message
+
 cfr-whatsnew-protections-header = Μέθοδοι προστασίες με μια ματιά
 cfr-whatsnew-protections-body = Ο πίνακας προστασίας περιλαμβάνει περιληπτικές αναφορές σχετικά με τις παραβιάσεις δεδομένων και τη διαχείριση κωδικών πρόσβασης. Μπορείτε πλέον να παρακολουθείτε πόσες διαρροές έχετε επιλύσει και να βλέπετε αν κάποιος από τους αποθηκευμένους κωδικούς πρόσβασής σας έχει εκτεθεί σε παραβίαση δεδομένων.
 cfr-whatsnew-protections-cta-link = Προβολή πίνακα προστασίας
@@ -255,6 +266,8 @@ cfr-doorhanger-doh-body = Το απόρρητό σας έχει σημασία. 
 cfr-doorhanger-doh-header = Πιο ασφαλείς, κρυπτογραφημένες αναζητήσεις DNS
 cfr-doorhanger-doh-primary-button = Το κατάλαβα
     .accesskey = Τ
+cfr-doorhanger-doh-primary-button-2 = Εντάξει
+    .accesskey = Ε
 cfr-doorhanger-doh-secondary-button = Απενεργοποίηση
     .accesskey = Α
 
@@ -293,3 +306,8 @@ cfr-whatsnew-supercookies-body = Οι ιστοσελίδες μπορούν να
 
 cfr-whatsnew-bookmarking-header = Καλύτεροι σελιδοδείκτες
 cfr-whatsnew-bookmarking-body = Είναι πιο εύκολο να παρακολουθείτε τις αγαπημένες σας ιστοσελίδες. Το { -brand-short-name } απομνημονεύει πλέον την προτιμώμενη τοποθεσία σας για αποθηκευμένους σελιδοδείκτες, εμφανίζει τη γραμμή σελιδοδεικτών από προεπιλογή σε νέες καρτέλες και παρέχει εύκολη πρόσβαση στους υπόλοιπους σελιδοδείκτες σας μέσω ενός φακέλου στη γραμμή εργαλείων.
+
+## What's new: Cross-site cookie tracking
+
+cfr-whatsnew-cross-site-tracking-header = Πλήρης προστασία από τα cookies καταγραφής μεταξύ ιστοσελίδων
+cfr-whatsnew-cross-site-tracking-body = Μπορείτε τώρα να εγγραφείτε για καλύτερη προστασία από καταγραφή cookie. Το { -brand-short-name } μπορεί να απομονώσει τις δραστηριότητες και τα δεδομένα σας στην ιστοσελίδα που βρίσκεστε, ώστε οι αποθηκευμένες πληροφορίες να μην μοιράζονται μεταξύ ιστοσελίδων.

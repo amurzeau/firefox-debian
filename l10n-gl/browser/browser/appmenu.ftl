@@ -98,6 +98,13 @@ profiler-popup-capture-shortcut =
        *[other] Ctrl+Maiús+2
     }
 
+## History panel
+
+appmenu-manage-history =
+    .label = Xestionar o historial
+appmenu-reopen-all-tabs = Volver abrir todas as lapelas
+appmenu-reopen-all-windows = Volver abrir todas as xanelas
+
 ## Help panel
 
 appmenu-help-header =
@@ -125,6 +132,8 @@ appmenu-help-troubleshooting-info =
     .accesskey = b
 appmenu-help-taskmanager =
     .label = Xestor de tarefas
+appmenu-help-report-site-issue =
+    .label = Informar dunha incidencia no sitio…
 appmenu-help-feedback-page =
     .label = Enviar opinión…
     .accesskey = o
@@ -153,3 +162,9 @@ appmenu-help-not-deceptive =
 
 appmenu-help-check-for-update =
     .label = Buscar actualizacións…
+
+## More Tools
+
+appmenu-customizetoolbar =
+    .label = Personalizar a barra de ferramentas…
+appmenu-developer-tools-subheader = Caixa de ferramentas do navegador

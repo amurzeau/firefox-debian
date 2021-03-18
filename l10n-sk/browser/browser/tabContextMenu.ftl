@@ -14,6 +14,13 @@ duplicate-tab =
 duplicate-tabs =
     .label = Duplikovať karty
     .accesskey = D
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = Zavrieť karty naľavo
+    .accesskey = ľ
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Zavrieť karty napravo
     .accesskey = n
@@ -44,6 +51,9 @@ bookmark-tab =
 reopen-in-container =
     .label = Otvoriť v kontajneri
     .accesskey = e
+tab-context-open-in-container =
+    .label = Otvoriť na novej kontajnerovej karte
+    .accesskey = e
 move-to-start =
     .label = Presunúť na začiatok
     .accesskey = z
@@ -56,6 +66,11 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Zavrieť viaceré karty
     .accesskey = c
+tab-context-share-url =
+    .label = Zdieľať
+    .accesskey = d
+tab-context-share-more =
+    .label = Viac…
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -81,6 +96,15 @@ move-tabs =
 move-tab =
     .label = Presunúť kartu
     .accesskey = u
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Obnoviť zatvorenú kartu
+            [one] Obnoviť zatvorenú kartu
+            [few] Obnoviť zatvorené karty
+           *[other] Obnoviť zatvorené karty
+        }
+    .accesskey = b
 tab-context-close-tabs =
     .label =
         { $tabCount ->

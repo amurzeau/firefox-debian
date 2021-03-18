@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-page-title = Informazioni per la risoluzione dei problemi
+page-title = Informazioni per la risoluzione di problemi
 page-subtitle = Questa pagina contiene informazioni tecniche che potrebbero risultare utili per risolvere eventuali problemi. Per le risposte alle domande più comuni a proposito di { -brand-short-name }, consultare il <a data-l10n-name="support-link">sito web dedicato al supporto</a>.
 
 crashes-title = Segnalazioni di arresto anomalo
@@ -116,6 +116,8 @@ sandbox-sys-call-tid = TID
 sandbox-sys-call-proc-type = Tipo processo
 sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argomenti
+troubleshoot-mode-title = Diagnosi problemi
+restart-in-troubleshoot-mode-label = Modalità risoluzione problemi…
 safe-mode-title = Prova la modalità provvisoria
 restart-in-safe-mode-label = Riavvia disattivando i componenti aggiuntivi…
 
@@ -123,6 +125,8 @@ clear-startup-cache-title = Prova a cancellare la cache di avvio
 clear-startup-cache-label = Cancella cache di avvio…
 startup-cache-dialog-title = Cancellazione cache di avvio
 startup-cache-dialog-body = Riavviare { -brand-short-name } per cancellare la cache di avvio. Questa operazione non modificherà le impostazioni esistenti né rimuoverà alcuna estensione installata in { -brand-short-name }.
+startup-cache-dialog-title2 = Riavviare { -brand-short-name } per cancellare la cache di avvio?
+startup-cache-dialog-body2 = Questa operazione non modificherà le impostazioni esistenti né rimuoverà le estensioni installate.
 restart-button-label = Riavvia
 
 ## Media titles
@@ -410,3 +414,14 @@ support-printing-clear-settings-button = Rimuovi impostazioni di stampa salvate
 support-printing-modified-settings = Impostazioni di stampa modificate
 support-printing-prefs-name = Nome
 support-printing-prefs-value = Valore
+
+## Normandy sections
+
+support-remote-experiments-title = Esperimenti remoti
+support-remote-experiments-name = Nome
+support-remote-experiments-branch = Branch esperimento
+support-remote-experiments-see-about-studies = Consultare <a data-l10n-name="support-about-studies-link">about:studies</a> per ulteriori informazioni, incluso come disattivare singoli esperimenti o impedire a { -brand-short-name } di eseguire questo tipo di esperimenti in futuro.
+
+support-remote-features-title = Funzioni remote
+support-remote-features-name = Nome
+support-remote-features-status = Stato

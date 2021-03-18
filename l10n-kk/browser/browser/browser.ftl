@@ -296,8 +296,13 @@ identity-https-only-dropdown-off =
     .label = Сөндірулі
 identity-https-only-dropdown-off-temporarily =
     .label = Уақытша сөндірулі
+identity-https-only-info-turn-on2 = { -brand-short-name } мүмкін болған кезде байланысты қауіпсіз нұсқасына жаңартуы үшін, бұл сайт үшін тек-HTTPS режимін іске қосыңыз.
+identity-https-only-info-turn-off2 = Егер парақ бұзылған сияқты көрінсе, сіз оны қауіпсіз емес HTTP арқылы қайта жүктеу үшін осы сайт үшін тек-HTTPS режимін өшіре аласыз.
+identity-https-only-info-no-upgrade = Байланысты HTTP-дан жаңарту мүмкін емес.
 identity-permissions =
     .value = Рұқсаттар
+identity-permissions-storage-access-header = Сайтаралық cookie файлдары
+identity-permissions-storage-access-hint = Бұл тараптар сіз осы сайтта болған кезде сайтаралық cookie файлдарын және сайт деректерін қолдана алады.
 identity-permissions-reload-hint = Өзгерістер іске асуы үшін бұл парақты қайта жүктеуіңіз керек болуы мүмкін.
 identity-permissions-empty = Бұл сайтқа арнайы рұқсаттарды берген жоқсыз.
 identity-clear-site-data =
@@ -345,9 +350,21 @@ browser-window-close-button =
 
 browser-tab-audio-playing = Ойнатуда
 browser-tab-audio-muted = Дыбысы өшірілген
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = ОЙНАТУДА
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = ДЫБЫСЫ БАСЫЛҒАН
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = АВТООЙНАТУ БҰҒАТТАЛҒАН
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = СУРЕТТЕГІ СУРЕТ
 
 ## Bookmarks toolbar items
 
+browser-import-button2 =
+    .label = Бетбелгілерді импорттау…
+    .tooltiptext = Басқа браузерден бетбелгілерді { -brand-short-name } ішіне иморттау.
+bookmarks-toolbar-empty-message = Жылдам қатынау үшін, бетбелгілеріңізді бетбелгілер панеліне орналастырыңыз. <a data-l10n-name="manage-bookmarks">Бетбелгілерді басқару…</a>
 
 ## WebRTC Pop-up notifications
 
@@ -357,6 +374,12 @@ popup-select-camera =
 popup-select-microphone =
     .value = Бөлісу үшін микрофон:
     .accesskey = м
+popup-select-camera-device =
+    .value = Камера:
+    .accesskey = К
+popup-select-microphone-device =
+    .value = Микрофон:
+    .accesskey = М
 popup-all-windows-shared = Экраныңыздаға барлық көрінетін терезелермен бөлісетін боласыз.
 popup-screen-sharing-not-now =
     .label = Қазір емес
@@ -366,6 +389,13 @@ popup-screen-sharing-never =
     .accesskey = н
 popup-silence-notifications-checkbox = Бөлісу кезінде { -brand-short-name } хабарламаларын сөндіру
 popup-silence-notifications-checkbox-warning = { -brand-short-name } бөлісу кезінде хабарламаларды көрсетпейді.
+popup-screen-sharing-block =
+    .label = Бұғаттау
+    .accesskey = Б
+popup-screen-sharing-always-block =
+    .label = Әрқашан бұғаттау
+    .accesskey = ш
+popup-mute-notifications-checkbox = Бөлісу кезінде веб-сайт хабарламаларының дыбысын сөндіру
 
 ## WebRTC window or screen share tab switch warning
 
@@ -455,6 +485,26 @@ urlbar-result-action-search-w-engine = { $engine } көмегімен іздеу
 urlbar-result-action-sponsored = Демеуленген
 urlbar-result-action-switch-tab = Бетке ауысу
 urlbar-result-action-visit = Шолу
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = { $engine } көмегімен іздеу үшін Tab басыңыз
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = { $engine } ішінен іздеу үшін Tab басыңыз
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = { $engine } көмегімен тікелей адрестік жолағынан іздеу
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = { $engine } ішінен тікелей адрестік жолағынан іздеу
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -482,9 +532,12 @@ pointerlock-warning-no-domain = Бұл құжат курсорыңызды ба�
 
 ## Subframe crash notification
 
+crashed-subframe-message = <strong>Бұл парақтың бір бөлігі құлады.</strong> Бұл мәселе туралы { -brand-product-name } хабардар ету және оны тезірек шешу үшін есептеме жіберіңіз.
 crashed-subframe-learnmore =
     .label = Көбірек білу
     .accesskey = л
+crashed-subframe-learnmore-link =
+    .value = Көбірек білу
 crashed-subframe-submit =
     .label = Есептемені жіберу
     .accesskey = с
@@ -495,6 +548,11 @@ bookmarks-show-all-bookmarks =
     .label = Барлық бетбелгілерді көрсету
 bookmarks-recent-bookmarks =
     .value = Соңынан қосылғандар
+bookmarks-manage-bookmarks =
+    .label = Бетбелгілерді басқару
+bookmarks-recent-bookmarks-panel =
+    .value = Жуырдағы бетбелгілер
+bookmarks-recent-bookmarks-panel-subheader = Жуырдағы бетбелгілер
 bookmarks-toolbar-chevron =
     .tooltiptext = Көбірек бетбелгілерді көрсету
 bookmarks-sidebar-content =
@@ -523,6 +581,12 @@ bookmarks-tools-toolbar-visibility-menuitem =
             [true] Бетбелгілер құралдар панелін жасыру
            *[other] Бетбелгілер панелін қарау
         }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Бетбелгілер құралдар панелін жасыру
+           *[other] Бетбелгілер құралдар панелін көрсету
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -548,6 +612,9 @@ bookmarks-toolbar-placeholder =
     .title = Бетбелгілер панелінің элементтері
 bookmarks-toolbar-placeholder-button =
     .label = Бетбелгілер панелінің элементтері
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Ағымдағы бетті бетбелгілерге қосу
 
 ## Library Panel items
 
@@ -565,3 +632,11 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Дербес жұмыс істеу
     .accesskey = Д
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Бұл сайттын кейбір аудио не видеосы DRM БҚ қолдануда, онымен { -brand-short-name } не жасай алатынын шектеуі мүмкін.
+eme-notifications-drm-content-playing-manage = Баптауларды басқару
+eme-notifications-drm-content-playing-manage-accesskey = б
+eme-notifications-drm-content-playing-dismiss = Тайдыру
+eme-notifications-drm-content-playing-dismiss-accesskey = д

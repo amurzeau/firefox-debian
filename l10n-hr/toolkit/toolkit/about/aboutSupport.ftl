@@ -353,6 +353,7 @@ fission-status-experiment-control = Onemogućio eksperiment
 fission-status-experiment-treatment = Omogućio eksperiment
 fission-status-disabled-by-e10s-env = Onemogućilo okruženje
 fission-status-enabled-by-env = Omogućilo okruženje
+fission-status-disabled-by-safe-mode = Onemogućio sigurnosni način rada
 fission-status-enabled-by-default = Omogućeno prema zadanim postavkama
 fission-status-disabled-by-default = Onemogućeno prema zadanim postavkama
 fission-status-enabled-by-user-pref = Omogućio korisnik
@@ -386,3 +387,9 @@ support-printing-clear-settings-button = Očisti spremljene postavke ispisa
 support-printing-modified-settings = Izmijenjene postavke ispisa
 support-printing-prefs-name = Naziv
 support-printing-prefs-value = Vrijednost
+
+## Normandy sections
+
+support-remote-experiments-name = Naziv
+support-remote-features-name = Naziv
+support-remote-features-status = Status

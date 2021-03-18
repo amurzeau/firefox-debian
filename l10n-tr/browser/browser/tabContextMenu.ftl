@@ -14,6 +14,13 @@ duplicate-tab =
 duplicate-tabs =
     .label = Sekmeleri çoğalt
     .accesskey = o
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = Soldaki sekmeleri kapat
+    .accesskey = o
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Sağdaki sekmeleri kapat
     .accesskey = a
@@ -44,6 +51,9 @@ bookmark-tab =
 reopen-in-container =
     .label = Kapsayıcıda yeniden aç
     .accesskey = K
+tab-context-open-in-container =
+    .label = Yeni kapsayıcıda aç
+    .accesskey = n
 move-to-start =
     .label = En başa taşı
     .accesskey = E
@@ -56,6 +66,11 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Birden çok sekmeyi kapat
     .accesskey = B
+tab-context-share-url =
+    .label = Paylaş
+    .accesskey = P
+tab-context-share-more =
+    .label = Daha fazla…
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -80,6 +95,14 @@ move-tabs =
 move-tab =
     .label = Sekmeyi taşı
     .accesskey = t
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Kapatılan sekmeyi yeniden aç
+            [one] Kapatılan sekmeyi yeniden aç
+           *[other] Kapatılan sekmeleri yeniden aç
+        }
+    .accesskey = K
 tab-context-close-tabs =
     .label =
         { $tabCount ->

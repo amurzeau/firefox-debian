@@ -27,6 +27,12 @@ appmenuitem-more-tools =
     .label = Rhagor o Offer
 appmenuitem-exit =
     .label = Gadael
+appmenu-menu-button-closed =
+    .tooltiptext = Agor Dewislen y Rhaglen
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Cau Dewislen y Rhaglen
+    .label = { -brand-shorter-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -45,6 +51,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Cydweddu Nawr
+appmenuitem-fxa-toolbar-sync-now =
+    .label = Cydweddu Nawr
+    .value = Cydweddu Nawr
+appmenuitem-fxa-manage-account = Rheoli Cyfrif
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Cydweddwyd diwethaf { $time }
+    .label = Cydweddwyd diwethaf { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = Cydweddu a Chadw Data
+appmenu-fxa-signed-in-label = Mewngofnodi
+appmenu-fxa-setup-sync =
+    .label = Cychwyn Cydweddu…
+appmenu-fxa-show-more-tabs = Dangos Rhagor o Dabiau
 appmenuitem-save-page =
     .label = Cadw Tudalen Fel…
 
@@ -98,6 +121,13 @@ profiler-popup-capture-shortcut =
        *[other] Ctrl+Shift+2
     }
 
+## History panel
+
+appmenu-manage-history =
+    .label = Rheoli Hanes
+appmenu-reopen-all-tabs = Ailagor Pob Tab
+appmenu-reopen-all-windows = Ailagor Pob Ffenestr
+
 ## Help panel
 
 appmenu-help-header =
@@ -123,8 +153,13 @@ appmenu-get-help =
 appmenu-help-troubleshooting-info =
     .label = Gwybodaeth am Ddatrys Problemau
     .accesskey = G
+appmenu-help-more-troubleshooting-info =
+    .label = Rhagor o Wybodaeth Datrys Problemau
+    .accesskey = D
 appmenu-help-taskmanager =
     .label = Rheolwr Tasgau
+appmenu-help-report-site-issue =
+    .label = Adrodd ar Fater Gwefan…
 appmenu-help-feedback-page =
     .label = Cyflwyno Adborth…
     .accesskey = A
@@ -138,6 +173,16 @@ appmenu-help-safe-mode-without-addons =
 appmenu-help-safe-mode-with-addons =
     .label = Ailgychwyn gydag Ychwanegion wedi eu Hanalluogi
     .accesskey = A
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = Y Modd Datrys Problemau
+    .accesskey = P
+appmenu-help-exit-troubleshoot-mode =
+    .label = Diffodd y Modd Dartrys Problemau
+    .accesskey = D
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
@@ -153,3 +198,9 @@ appmenu-help-not-deceptive =
 
 appmenu-help-check-for-update =
     .label = Gwirio am Ddiweddariadau…
+
+## More Tools
+
+appmenu-customizetoolbar =
+    .label = Cyfaddasu'r Bar Offer…
+appmenu-developer-tools-subheader = Offer y Porwr

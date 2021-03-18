@@ -130,10 +130,14 @@ sandbox-sys-call-number = 시스템 콜
 sandbox-sys-call-args = 인자
 safe-mode-title = 안전 모드 사용해 보기
 restart-in-safe-mode-label = 부가 기능을 끄고 다시 시작…
+troubleshoot-mode-title = 문제 진단
+restart-in-troubleshoot-mode-label = 문제 해결 모드…
 clear-startup-cache-title = 시작 캐시 지워 보기
 clear-startup-cache-label = 시작 캐시 지우기…
 startup-cache-dialog-title = 시작 캐시 지우기
 startup-cache-dialog-body = 시작 캐시를 지우려면 { -brand-short-name }를 다시 시작하세요. 설정이 변경되거나 { -brand-short-name }에 추가한 확장 기능이 제거되지는 않습니다.
+startup-cache-dialog-title2 = 시작 캐시를 지우기 위해 { -brand-short-name }를 다시 시작하시겠습니까?
+startup-cache-dialog-body2 = 사용자 설정이 변경되거나 확장 기능이 제거되지는 않습니다.
 restart-button-label = 다시 시작
 
 ## Media titles
@@ -383,3 +387,13 @@ support-printing-clear-settings-button = 저장된 인쇄 설정 지우기
 support-printing-modified-settings = 수정된 인쇄 설정
 support-printing-prefs-name = 이름
 support-printing-prefs-value = 값
+
+## Normandy sections
+
+support-remote-experiments-title = 원격 실험
+support-remote-experiments-name = 이름
+support-remote-experiments-branch = 실험 지점
+support-remote-experiments-see-about-studies = 개별 실험을 비활성화하거나 { -brand-short-name }가 향후 이러한 유형의 실험을 실행하지 못하도록 하는 방법을 포함한 자세한 내용은 <a data-l10n-name="support-about-studies-link">about:studies</a>를 참조하세요.
+support-remote-features-title = 원격 기능
+support-remote-features-name = 이름
+support-remote-features-status = 상태

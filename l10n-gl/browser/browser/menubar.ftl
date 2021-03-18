@@ -207,6 +207,8 @@ menu-history-undo-menu =
     .label = Lapelas pechadas recentemente
 menu-history-undo-window-menu =
     .label = Xanelas pechadas recentemente
+menu-history-reopen-all-tabs = Reabrir todas as lapelas
+menu-history-reopen-all-windows = Reabrir todas as xanelas
 
 ## Bookmarks Menu
 
@@ -325,6 +327,8 @@ menu-help-troubleshooting-info =
     .accesskey = b
 menu-help-taskmanager =
     .label = Xestor de tarefas
+menu-help-report-site-issue =
+    .label = Informar dunha incidencia no sitio…
 menu-help-feedback-page =
     .label = Enviar opinión…
     .accesskey = o

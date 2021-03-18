@@ -130,10 +130,14 @@ sandbox-sys-call-number = Rendszerhívás
 sandbox-sys-call-args = Argumentumok
 safe-mode-title = Biztonságos mód kipróbálása
 restart-in-safe-mode-label = Újraindítás letiltott kiegészítőkkel…
+troubleshoot-mode-title = Problémák diagnosztizálása
+restart-in-troubleshoot-mode-label = Hibaelhárítási mód…
 clear-startup-cache-title = Próbálja meg üríteni az indítási gyorsítótárat
 clear-startup-cache-label = Indítási gyorsítótár törlése…
 startup-cache-dialog-title = Indítási gyorsítótár törlése
 startup-cache-dialog-body = Az indítási gyorsítótár ürítéséhez indítsa újra a { -brand-short-name }ot. Ez nem fogja megváltoztatni a beállításokat, és nem távolítja el a { -brand-short-name }hoz hozzáadott kiegészítőket.
+startup-cache-dialog-title2 = Újraindítja a { -brand-short-name }ot az indítási gyorsítótár törléséhez?
+startup-cache-dialog-body2 = Ez nem módosítja a beállításait, és nem távolít el kiegészítőket.
 restart-button-label = Újraindítás
 
 ## Media titles
@@ -403,3 +407,13 @@ support-printing-clear-settings-button = Mentett nyomtatási beállítások tör
 support-printing-modified-settings = Módosított nyomtatási beállítások
 support-printing-prefs-name = Név
 support-printing-prefs-value = Érték
+
+## Normandy sections
+
+support-remote-experiments-title = Távoli kísérletek
+support-remote-experiments-name = Név
+support-remote-experiments-branch = Kísérleti ág
+support-remote-experiments-see-about-studies = További információkért tekintse meg az <a data-l10n-name="support-about-studies-link">about:studies</a> oldalt, beleértve az egyes kísérletek letiltásának módját, vagy annak, hogy a { -brand-short-name } ne futtasson többé ilyen típusú kísérleteket.
+support-remote-features-title = Távoli funkciók
+support-remote-features-name = Név
+support-remote-features-status = Állapot

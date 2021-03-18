@@ -14,12 +14,19 @@ duplicate-tab =
 duplicate-tabs =
     .label = Duplicar los onglets
     .accesskey = D
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = Tampar los onglets situats a esquèrra
+    .accesskey = e
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Tampar los onglets situats a drecha
-    .accesskey = i
+    .accesskey = d
 close-other-tabs =
     .label = Tampar los autres onglets
-    .accesskey = t
+    .accesskey = T
 reload-tabs =
     .label = Actualizar los onglets
     .accesskey = A
@@ -44,6 +51,9 @@ bookmark-tab =
 reopen-in-container =
     .label = Tornar dobrir dins un onglet isolat
     .accesskey = d
+tab-context-open-in-container =
+    .label = Tornar dobrir dins un onglet isolat
+    .accesskey = T
 move-to-start =
     .label = Desplaçar a la debuta
     .accesskey = d
@@ -54,8 +64,13 @@ move-to-new-window =
     .label = Desplaçar cap a una fenèstra novèla
     .accesskey = n
 tab-context-close-multiple-tabs =
-    .label = Tampar mantun onglets
-    .accesskey = m
+    .label = Tampar mantun onglet
+    .accesskey = T
+tab-context-share-url =
+    .label = Partejar
+    .accesskey = P
+tab-context-share-more =
+    .label = Mai…
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -80,6 +95,14 @@ move-tabs =
 move-tab =
     .label = Desplaçar l’onglet
     .accesskey = p
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Tornar dobrir l’onglet tampat
+            [one] Tornar dobrir l’onglet tampat
+           *[other] Tornar dobrir los onglets tampats
+        }
+    .accesskey = t
 tab-context-close-tabs =
     .label =
         { $tabCount ->
@@ -91,7 +114,7 @@ tab-context-close-tabs =
 tab-context-move-tabs =
     .label =
         { $tabCount ->
-            [1] Desplaçament d’onglets
+            [1] Desplaçar l’onglet
             [one] Desplaçar l’onglet
            *[other] Desplaçar los onglets
         }

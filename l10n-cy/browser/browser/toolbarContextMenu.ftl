@@ -29,6 +29,18 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Dadwneud Cau Tabiau
         }
     .accesskey = C
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Ail agor Tabiau wedi'u Cau
+            [zero] Ail agor Tabiau wedi'u Cau
+            [one] Ail agor Tab wedi'i Gau
+            [two] Ail agor Tabiau wedi'u Cau
+            [few] Ail agor Tabiau wedi'u Cau
+            [many] Ail agor Tabiau wedi'u Cau
+           *[other] Ail agor Tabiau wedi'u Cau
+        }
+    .accesskey = o
 toolbar-context-menu-manage-extension =
     .label = Rheoli Estyniad
     .accesskey = E
@@ -50,21 +62,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Awtoguddio yn y Bar Offer
     .accesskey = A
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Cuddio Botwm pan yn Wag
+    .accesskey = B
 toolbar-context-menu-remove-from-toolbar =
     .label = Tynnu o'r Bar Offer
     .accesskey = T
 toolbar-context-menu-view-customize-toolbar =
     .label = Cyfaddasu…
     .accesskey = y
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Bob tro
-    .accesskey = B
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Byth
-    .accesskey = y
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Dim ond ar Dab Newydd
-    .accesskey = D
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Cyfaddasu'r Bar Offer…
+    .accesskey = O
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Dangos Bob Tro
     .accesskey = D

@@ -350,6 +350,14 @@ browser-window-close-button =
 
 browser-tab-audio-playing = Erreproduzitzen
 browser-tab-audio-muted = Mutututa
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = ERREPRODUZITZEN
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = MUTUTUTA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = ERREPRODUKZIO AUTOMATIKOA BLOKEATUTA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = BIDEOA BESTE LEIHO BATEAN
 
 ## Bookmarks toolbar items
 
@@ -375,6 +383,13 @@ popup-screen-sharing-never =
     .accesskey = n
 popup-silence-notifications-checkbox = Partekatu bitartean, desgaitu { -brand-short-name }(r)en jakinarazpenak
 popup-silence-notifications-checkbox-warning = { -brand-short-name }(e)k ez du jakinarazpenik bistaratuko partekatzen ari zaren bitartean.
+popup-screen-sharing-block =
+    .label = Blokeatu
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Blokeatu beti
+    .accesskey = k
+popup-mute-notifications-checkbox = Mututu webgunearen jakinarazpenak partekatzea aktibo dagoenean
 
 ## WebRTC window or screen share tab switch warning
 
@@ -515,6 +530,8 @@ crashed-subframe-message = <strong>Orriaren zati batek huts egin du</strong>. Ar
 crashed-subframe-learnmore =
     .label = Argibide gehiago
     .accesskey = A
+crashed-subframe-learnmore-link =
+    .value = Argibide gehiago
 crashed-subframe-submit =
     .label = Bidali txostena
     .accesskey = B
@@ -529,6 +546,7 @@ bookmarks-manage-bookmarks =
     .label = Kudeatu laster-markak
 bookmarks-recent-bookmarks-panel =
     .value = Azken laster-markak
+bookmarks-recent-bookmarks-panel-subheader = Azken laster-markak
 bookmarks-toolbar-chevron =
     .tooltiptext = Erakutsi laster-marka gehiago
 bookmarks-sidebar-content =
@@ -608,3 +626,11 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Lan egin lineaz kanpo
     .accesskey = o
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Gune honetako zenbait audiok edo bideok DRM softwarea darabil eta { -brand-short-name }(r)en eginbideak muga litzake.
+eme-notifications-drm-content-playing-manage = Kudeatu ezarpenak
+eme-notifications-drm-content-playing-manage-accesskey = K
+eme-notifications-drm-content-playing-dismiss = Baztertu
+eme-notifications-drm-content-playing-dismiss-accesskey = B

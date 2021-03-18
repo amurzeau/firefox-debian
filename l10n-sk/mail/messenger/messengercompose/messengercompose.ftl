@@ -43,6 +43,34 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = Presunúť do poľa Skrytá kópia
     .accesskey = S
+
+# Attachment widget
+
+ctrl-cmd-shift-pretty-prefix =
+    { PLATFORM() ->
+        [macos] ⇧ ⌘{ " " }
+       *[other] Ctrl+Shift+
+    }
+trigger-attachment-picker-key = A
+toggle-attachment-pane-key = M
+menuitem-toggle-attachment-pane =
+    .label = Panel príloh
+    .accesskey = a
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }
+toolbar-button-add-attachment =
+    .label = Pripojiť
+    .tooltiptext = Pridať prílohu ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
+add-attachment-notification-reminder =
+    .label = Pridať prílohu…
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+menuitem-attach-files =
+    .label = Súbor…
+    .accesskey = S
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
+context-menuitem-attach-files =
+    .label = Priložiť súbor…
+    .accesskey = P
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count =
     .value =
@@ -65,6 +93,33 @@ attachments-placeholder-tooltip =
 #   { attachment-bucket-count.accesskey } - Do not localize this message.
 key-toggle-attachment-pane =
     .key = { attachment-bucket-count.accesskey }
+expand-attachment-pane-tooltip =
+    .tooltiptext = Zobraziť panel príloh ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+collapse-attachment-pane-tooltip =
+    .tooltiptext = Skryť panel príloh ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+drop-file-label-attachment =
+    { $count ->
+        [one] Pridať ako prílohu
+        [few] Pridať ako prílohy
+       *[other] Pridať ako prílohy
+    }
+drop-file-label-inline =
+    { $count ->
+        [one] Pripojiť ako vloženú prílohu
+        [few] Pripojiť ako vložené prílohy
+       *[other] Pripojiť ako vložené prílohy
+    }
+
+# Reorder Attachment Panel
+
+move-attachment-first-panel-button =
+    .label = Presunúť na začiatok
+move-attachment-left-panel-button =
+    .label = Presunúť doľava
+move-attachment-right-panel-button =
+    .label = Presunúť doprava
+move-attachment-last-panel-button =
+    .label = Presunúť na koniec
 button-return-receipt =
     .label = Potvrdenka
     .tooltiptext = Požiadať o potvrdenie o prijatí tejto správy

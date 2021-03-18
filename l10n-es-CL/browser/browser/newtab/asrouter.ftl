@@ -207,6 +207,14 @@ cfr-doorhanger-milestone-heading =
     { $blockedCount ->
        *[other] ¡{ -brand-short-name } bloqueó más de <b>{ $blockedCount }</b> rastreadores desde el { $date }!
     }
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (Datetime) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading2 =
+    { $blockedCount ->
+        [one] { -brand-short-name } ha bloqueado más de <b>{ $blockedCount }</b> rastreador desde { DATETIME($date, month: "long", year: "numeric") }
+       *[other] { -brand-short-name } ha bloqueado más de <b>{ $blockedCount }</b> rastreadores desde { DATETIME($date, month: "long", year: "numeric") }
+    }
 cfr-doorhanger-milestone-ok-button = Ver todos
     .accesskey = S
 cfr-doorhanger-milestone-close-button = Cerrar
@@ -233,6 +241,10 @@ cfr-whatsnew-pip-fullscreen-header = Llevar el picture-in-picture a pantalla com
 cfr-whatsnew-pip-fullscreen-body = Cuando llevas un video a una ventana flotante, puedes a continuación hacer doble clic en esa ventana para llevarlo a pantalla completa.
 cfr-whatsnew-pip-fullscreen-icon-alt = Ícono de picture-in-picture
 
+## Protections Dashboard message
+
+
+## What’s New Panel Content for Firefox 76
 ## Protections Dashboard message
 
 cfr-whatsnew-protections-header = Protecciones de un vistazo
@@ -289,3 +301,8 @@ cfr-whatsnew-supercookies-body = Los sitios web pueden adjuntar en secreto una "
 
 cfr-whatsnew-bookmarking-header = Mejores marcadores
 cfr-whatsnew-bookmarking-body = Es más fácil realizar un seguimiento de tus sitios favoritos. { -brand-short-name } ahora recuerda tu ubicación preferida para los marcadores guardados, muestra la barra de herramientas de marcadores de forma predeterminada en las pestañas nuevas y te brinda fácil acceso al resto de tus marcadores a través de una carpeta en la barra de herramientas.
+
+## What's new: Cross-site cookie tracking
+
+cfr-whatsnew-cross-site-tracking-header = Protección integral contra el rastreo de cookies de sitios cruzados
+cfr-whatsnew-cross-site-tracking-body = Ahora puedes optar por una mejor protección contra el rastreo de cookies. { -brand-short-name } puede aislar tus actividades y datos para el sitio en el que se encuentra actualmente, por lo que la información almacenada en el navegador no se comparte entre sitios web.

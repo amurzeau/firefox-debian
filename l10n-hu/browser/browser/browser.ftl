@@ -350,6 +350,14 @@ browser-window-close-button =
 
 browser-tab-audio-playing = Lejátszás
 browser-tab-audio-muted = Némítva
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = LEJÁTSZÁS
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = NÉMÍTVA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = AUTOMATIKUS LEJÁTSZÁS BLOKKOLVA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = KÉP A KÉPBEN
 
 ## Bookmarks toolbar items
 
@@ -366,6 +374,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Megosztandó mikrofon:
     .accesskey = M
+popup-select-camera-device =
+    .value = Kamera:
+    .accesskey = K
+popup-select-camera-icon =
+    .tooltiptext = Kamera
+popup-select-microphone-device =
+    .value = Mikrofon:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Mikrofon
 popup-all-windows-shared = A képernyő minden látható ablaka meg lesz osztva.
 popup-screen-sharing-not-now =
     .label = Most nem
@@ -375,6 +393,13 @@ popup-screen-sharing-never =
     .accesskey = S
 popup-silence-notifications-checkbox = A { -brand-short-name } értesítéseinek kikapcsolása megosztás közben
 popup-silence-notifications-checkbox-warning = A { -brand-short-name } nem fog értesítéseket megjeleníteni megosztás közben.
+popup-screen-sharing-block =
+    .label = Tiltás
+    .accesskey = T
+popup-screen-sharing-always-block =
+    .label = Tiltás mindig
+    .accesskey = i
+popup-mute-notifications-checkbox = Webhely értesítéseinek elnémítása megosztás közben
 
 ## WebRTC window or screen share tab switch warning
 
@@ -515,6 +540,8 @@ crashed-subframe-message = <strong>Az oldal egy része összeomlott.</strong> K�
 crashed-subframe-learnmore =
     .label = További tudnivalók
     .accesskey = T
+crashed-subframe-learnmore-link =
+    .value = További tudnivalók
 crashed-subframe-submit =
     .label = Jelentés beküldése
     .accesskey = b
@@ -529,6 +556,7 @@ bookmarks-manage-bookmarks =
     .label = Könyvjelzők kezelése
 bookmarks-recent-bookmarks-panel =
     .value = Friss könyvjelzők
+bookmarks-recent-bookmarks-panel-subheader = Friss könyvjelzők
 bookmarks-toolbar-chevron =
     .tooltiptext = További könyvjelzők megjelenítése
 bookmarks-sidebar-content =
@@ -608,3 +636,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Kapcsolat nélküli munka
     .accesskey = p
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = A weboldal egyes hangjai vagy videói DRM szoftvert használnak, ami korlátozhatja, hogy a { -brand-short-name } ezekkel kapcsolatban mit engedélyezhet Önnek.
+eme-notifications-drm-content-playing-manage = Beállítások kezelése
+eme-notifications-drm-content-playing-manage-accesskey = k
+eme-notifications-drm-content-playing-dismiss = Elvetés
+eme-notifications-drm-content-playing-dismiss-accesskey = E
+
+## Password save/update panel
+
+panel-save-update-username = Felhasználónév
+panel-save-update-password = Jelszó
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Eltávoltja a következőt: { $name }?
+addon-removal-abuse-report-checkbox = A kiegészítő jelentése a { -vendor-short-name } felé

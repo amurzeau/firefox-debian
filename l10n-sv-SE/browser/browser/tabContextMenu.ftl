@@ -14,6 +14,13 @@ duplicate-tab =
 duplicate-tabs =
     .label = Duplicera flikar
     .accesskey = D
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = Stäng flikar till vänster
+    .accesskey = v
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Stäng flikar till höger
     .accesskey = h
@@ -44,6 +51,9 @@ bookmark-tab =
 reopen-in-container =
     .label = Återöppna i innehållsflik
     .accesskey = i
+tab-context-open-in-container =
+    .label = Öppna i ny behållare
+    .accesskey = p
 move-to-start =
     .label = Flytta till början
     .accesskey = b
@@ -56,6 +66,11 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Stäng flera flikar
     .accesskey = f
+tab-context-share-url =
+    .label = Dela
+    .accesskey = D
+tab-context-share-more =
+    .label = Mer…
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -80,6 +95,13 @@ move-tabs =
 move-tab =
     .label = Flytta flik
     .accesskey = t
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Öppna stängd flik igen
+           *[other] Öppna stängda flikar igen
+        }
+    .accesskey = s
 tab-context-close-tabs =
     .label =
         { $tabCount ->

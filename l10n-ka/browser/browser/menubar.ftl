@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = პოვნა გვერდზე…
     .accesskey = პ
+menu-edit-find-in-page =
+    .label = პოვნა გვერდზე…
+    .accesskey = პ
 menu-edit-find-again =
     .label = კვლავძიება
     .accesskey = კ
@@ -129,6 +132,9 @@ menu-view-toolbars-menu =
 menu-view-customize-toolbar =
     .label = მორგება…
     .accesskey = მ
+menu-view-customize-toolbar2 =
+    .label = ხელსაწყოთა ზოლის მორგება…
+    .accesskey = რ
 menu-view-sidebar =
     .label = გვერდითი ზოლი
     .accesskey = ზ
@@ -207,6 +213,8 @@ menu-history-undo-menu =
     .label = ბოლოს დახურული ჩანართები
 menu-history-undo-window-menu =
     .label = ბოლოს დახურული ფანჯრები
+menu-history-reopen-all-tabs = ყველა ჩანართის ხელახლა გახსნა
+menu-history-reopen-all-windows = ყველა ფანჯრის ხელახლა გახსნა
 
 ## Bookmarks Menu
 
@@ -217,6 +225,8 @@ menu-bookmarks-show-all =
     .label = ყველა სანიშნის ჩვენება
 menu-bookmark-this-page =
     .label = გვერდის ჩანიშვნა
+menu-bookmark-current-tab =
+    .label = მიმდინარე ჩანართის ჩანიშვნა
 menu-bookmark-edit =
     .label = სანიშნის ჩასწორება
 menu-bookmarks-all-tabs =
@@ -242,6 +252,12 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = { -brand-product-name } – შესვლა...
     .accesskey = ვ
+menu-tools-extensions =
+    .label = გაფართოებები და თემები
+    .accesskey = ფ
+menu-tools-fxa-sign-in2 =
+    .label = შესვლა
+    .accesskey = ვ
 menu-tools-turn-on-sync =
     .label = ჩართეთ { -sync-brand-short-name }...
     .accesskey = ჩ
@@ -266,6 +282,13 @@ menu-preferences =
             [windows] პარამეტრები
            *[other] პარამეტრები
         }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] პ
+           *[other] ტ
+        }
+menu-settings =
+    .label = პარამეტრები
     .accesskey =
         { PLATFORM() ->
             [windows] პ
@@ -317,11 +340,19 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = კლავიატურის მალსახმობები
     .accesskey = კ
+menu-get-help =
+    .label = მხარდაჭერის მიღება
+    .accesskey = ხ
 menu-help-troubleshooting-info =
-    .label = გაუმართაობის აღმოფხვრა
+    .label = ხარვეზის აღმოფხვრის მონაცემები
+    .accesskey = ფ
+menu-help-more-troubleshooting-info =
+    .label = ხარვეზის აღმოფხვრის ვრცელი მონაცემები
     .accesskey = ფ
 menu-help-taskmanager =
     .label = ამოცანათა მმართველი
+menu-help-report-site-issue =
+    .label = საიტის ხარვეზის მოხსენება…
 menu-help-feedback-page =
     .label = გამოგვეხმაურეთ…
     .accesskey = უ
@@ -331,6 +362,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = ჩართული დამატებებით გაშვება
     .accesskey = ჩ
+menu-help-enter-troubleshoot-mode =
+    .label = ხარვეზის აღმოფხვრის რეჟიმი
+    .accesskey = ჟ
+menu-help-exit-troubleshoot-mode =
+    .label = ხარვეზის აღმოფხვრის რეჟიმის გამორთვა
+    .accesskey = ჟ
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =
