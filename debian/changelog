@@ -1,3 +1,14 @@
+firefox (87.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2021-10, also known as:
+    CVE-2021-23981, CVE-2021-23982, CVE-2021-23983, CVE-2021-23984,
+    CVE-2021-23985, CVE-2021-23986, CVE-2021-23987, CVE-2021-23988.
+
+  * debian/control*: Bump nss build dependency.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 24 Mar 2021 06:06:10 +0900
+
 firefox (86.0.1-1) unstable; urgency=medium
 
   * New upstream release.
