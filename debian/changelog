@@ -1,3 +1,11 @@
+firefox-esr (78.9.0esr-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2021-11, also known as:
+    CVE-2021-23981, CVE-2021-23982, CVE-2021-23984, CVE-2021-23987.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 24 Mar 2021 05:46:46 +0900
+
 firefox-esr (78.8.0esr-1) unstable; urgency=medium
 
   * New upstream release.
