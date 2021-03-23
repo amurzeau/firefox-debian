@@ -8,6 +8,12 @@ places-open =
 places-open-tab =
     .label = Agor mewn Tab Newydd
     .accesskey = w
+places-open-in-tab =
+    .label = Agor mewn Tab Newydd
+    .accesskey = A
+places-open-all-bookmarks =
+    .label = Agor Pob Nod Tudalen
+    .accesskey = A
 places-open-all-in-tabs =
     .label = Agor pob Tab
     .accesskey = T
@@ -28,6 +34,24 @@ places-new-folder =
     .accesskey = F
 places-new-separator =
     .label = Ymwahanydd Newydd
+    .accesskey = Y
+places-open-in-window =
+    .label = Agor mewn Ffenestr Newydd
+    .accesskey = N
+places-open-in-private-window =
+    .label = Agor mewn Ffenestr Breifat Newydd
+    .accesskey = B
+places-add-bookmark =
+    .label = Ychwanegu Nod Tudalen…
+    .accesskey = N
+places-add-folder-contextmenu =
+    .label = Ychwanegu Ffolder…
+    .accesskey = F
+places-add-folder =
+    .label = Ychwanegu Ffolder…
+    .accesskey = o
+places-add-separator =
+    .label = Ychwanegu Ymwahanydd
     .accesskey = Y
 places-view =
     .label = Golwg
@@ -60,6 +84,13 @@ places-sortby-name =
 places-properties =
     .label = Priodweddau
     .accesskey = P
+# places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
+places-edit-bookmark =
+    .label = Golygu Nod Tudalen…
+    .accesskey = G
+places-edit-generic =
+    .label = Golygu…
+    .accesskey = o
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
     .label = Nodau Tudalen wedi'u rheoli
@@ -69,3 +100,20 @@ managed-bookmarks-subfolder =
 # This label is used for the "Other Bookmarks" folder that appears in the bookmarks toolbar.
 other-bookmarks-folder =
     .label = Nodau Tudalen Eraill
+# Variables:
+# $count (number) - The number of elements being selected for removal.
+places-remove-bookmark =
+    .label =
+        { $count ->
+            [1] Tynnu Nod Tudalen
+            [zero] Tynnu Nodau Tudalen
+            [one] Tynnu Nod Tudalen
+            [two] Tynnu Nodau Tudalen
+            [few] Tynnu Nodau Tudalen
+            [many] Tynnu Nodau Tudalen
+           *[other] Tynnu Nodau Tudalen
+        }
+    .accesskey = T
+places-manage-bookmarks =
+    .label = Rheoli Nodau Tudalen
+    .accesskey = R

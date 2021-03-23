@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Bilatu orri honetan…
     .accesskey = B
+menu-edit-find-in-page =
+    .label = Bilatu orrian…
+    .accesskey = B
 menu-edit-find-again =
     .label = Bilatu berriro
     .accesskey = r
@@ -128,6 +131,9 @@ menu-view-toolbars-menu =
     .accesskey = T
 menu-view-customize-toolbar =
     .label = Pertsonalizatu…
+    .accesskey = P
+menu-view-customize-toolbar2 =
+    .label = Pertsonalizatu tresna-barra…
     .accesskey = P
 menu-view-sidebar =
     .label = Alboko barra
@@ -207,6 +213,8 @@ menu-history-undo-menu =
     .label = Itxitako azken fitxak
 menu-history-undo-window-menu =
     .label = Itxitako azken leihoak
+menu-history-reopen-all-tabs = Ireki berriro fitxa guztiak
+menu-history-reopen-all-windows = Ireki berriro leiho guztiak
 
 ## Bookmarks Menu
 
@@ -217,6 +225,8 @@ menu-bookmarks-show-all =
     .label = Erakutsi laster-marka guztiak
 menu-bookmark-this-page =
     .label = Egin orriaren laster-marka
+menu-bookmark-current-tab =
+    .label = Egin uneko fitxaren laster-marka
 menu-bookmark-edit =
     .label = Editatu laster-marka
 menu-bookmarks-all-tabs =
@@ -241,6 +251,12 @@ menu-tools-addons =
     .accesskey = G
 menu-tools-fxa-sign-in =
     .label = Hasi saioa { -brand-product-name }(e)n…
+    .accesskey = H
+menu-tools-extensions =
+    .label = Hedapenak eta itxurak
+    .accesskey = H
+menu-tools-fxa-sign-in2 =
+    .label = Hasi saioa
     .accesskey = H
 menu-tools-turn-on-sync =
     .label = Aktibatu { -sync-brand-short-name }…
@@ -270,6 +286,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] A
            *[other] n
+        }
+menu-settings =
+    .label = Ezarpenak
+    .accesskey =
+        { PLATFORM() ->
+            [windows] E
+           *[other] E
         }
 menu-tools-layout-debugger =
     .label = Diseinuaren araztailea
@@ -323,8 +346,13 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Arazoak konpontzeko informazioa…
     .accesskey = A
+menu-help-more-troubleshooting-info =
+    .label = Arazoak konpontzeko informazio gehiago
+    .accesskey = f
 menu-help-taskmanager =
     .label = Ataza-kudeatzailea
+menu-help-report-site-issue =
+    .label = Eman gunearen arazoaren berri…
 menu-help-feedback-page =
     .label = Bidali iritzia…
     .accesskey = d
@@ -334,6 +362,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Berrabiarazi gehigarriak gaituta
     .accesskey = r
+menu-help-enter-troubleshoot-mode =
+    .label = Arazoak konpontzeko modua
+    .accesskey = m
+menu-help-exit-troubleshoot-mode =
+    .label = Desaktibatu arazoak konpontzeko modua
+    .accesskey = s
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

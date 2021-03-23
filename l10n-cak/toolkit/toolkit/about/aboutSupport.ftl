@@ -130,10 +130,14 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Taq rutzijol
 safe-mode-title = Titojtob'ëx ütz rub'anikil
 restart-in-safe-mode-label = Titikirisäx chik kik'in ri chupül taq tz'aqat…
+troubleshoot-mode-title = Kenik'öx taq k'ayewal
+restart-in-troubleshoot-mode-label = Kib'anikil taq K'ayewal…
 clear-startup-cache-title = Titojtob'ëx niyuj ri rujumej ruyakoj tikirib'äl
 clear-startup-cache-label = Tiyuj rujumejyak tikirib'äl…
 startup-cache-dialog-title = Tiyuj rujumejyak tikirib'äl
 startup-cache-dialog-body = Titikirisäx chik { -brand-short-name } richin niyuj ri rujumej ruyakoj tikirib'äl. Re re' man xtujäl ta ri anuk'ulem chuqa' man xkeruyüj ta ri taq k'amal e'atz'aqatisan pa { -brand-short-name }.
+startup-cache-dialog-title2 = ¿La nitikirisäx chik { -brand-short-name } richin yejosq'ïx ri rukache' tikirib'äl?
+startup-cache-dialog-body2 = Re man xtujäl ta ri runuk'ulem chuqa' man xkeruyüj ta ri taq k'amal.
 restart-button-label = Titikirisäx chik
 
 ## Media titles
@@ -195,6 +199,10 @@ support-third-party-modules-thread = Tzijonem
 support-third-party-modules-base = Rochochib'al imagebase
 support-third-party-modules-uptime = Q'ijul Rusamaj Tajinïk (ms)
 support-third-party-modules-duration = Ruramaj Samajinïk (ms)
+support-third-party-modules-status = B'anikil
+support-third-party-modules-status-loaded = Xsamajïx
+support-third-party-modules-status-blocked = Xq'at
+support-third-party-modules-status-redirected = Xtaq chik
 support-third-party-modules-empty = Man xesamajiïx ta kiperaj aj rox winäq
 support-third-party-modules-no-value = (Majun rajil)
 support-third-party-modules-button-open =
@@ -399,3 +407,13 @@ support-printing-clear-settings-button = Tiyuj kinuk'ulem yakon taq tz'ajb'anïk
 support-printing-modified-settings = Kinuk'ulem jalon taq tz'ajb'anïk
 support-printing-prefs-name = B'i'aj
 support-printing-prefs-value = Retal
+
+## Normandy sections
+
+support-remote-experiments-title = Näj Solna'oj
+support-remote-experiments-name = B'i'aj
+support-remote-experiments-branch = Solna'oj Branch
+support-remote-experiments-see-about-studies = Titz'et <a data-l10n-name="support-about-studies-link">about:studies</a> richin ch'aqa' etamab'äl, achi'el chuqa' rub'eyal yechup junilal taq tojtob'enel o richin nichup { -brand-short-name } richin nusamajij re ruwäch tojtob'enel ri chwa'q kab'ij.
+support-remote-features-title = Näj taq B'anikil
+support-remote-features-name = B'i'aj
+support-remote-features-status = B'anikil

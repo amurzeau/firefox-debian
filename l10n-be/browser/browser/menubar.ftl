@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Знайсці на гэтай старонцы…
     .accesskey = З
+menu-edit-find-in-page =
+    .label = Знайсці на старонцы…
+    .accesskey = а
 menu-edit-find-again =
     .label = Шукаць ізноў
     .accesskey = ў
@@ -129,6 +132,9 @@ menu-view-toolbars-menu =
 menu-view-customize-toolbar =
     .label = Уладкаваць…
     .accesskey = л
+menu-view-customize-toolbar2 =
+    .label = Уладкаваць паліцы прылад…
+    .accesskey = У
 menu-view-sidebar =
     .label = Бакавая панэль
     .accesskey = п
@@ -219,6 +225,8 @@ menu-bookmarks-show-all =
     .label = Паказаць усе закладкі
 menu-bookmark-this-page =
     .label = Дадаць закладку на старонку
+menu-bookmark-current-tab =
+    .label = Зрабіць закладку на гэту картку
 menu-bookmark-edit =
     .label = Правіць гэтую закладку
 menu-bookmarks-all-tabs =
@@ -244,6 +252,12 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Увайсці ў { -brand-product-name }…
     .accesskey = і
+menu-tools-extensions =
+    .label = Пашырэнні і тэмы
+    .accesskey = П
+menu-tools-fxa-sign-in2 =
+    .label = Увайсці
+    .accesskey = У
 menu-tools-turn-on-sync =
     .label = Уключыць { -sync-brand-short-name }…
     .accesskey = ь
@@ -272,6 +286,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] Н
            *[other] л
+        }
+menu-settings =
+    .label = Налады
+    .accesskey =
+        { PLATFORM() ->
+            [windows] ы
+           *[other] д
         }
 menu-tools-layout-debugger =
     .label = Адладчык макета
@@ -325,8 +346,13 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Звесткі для вырашэння праблемаў
     .accesskey = З
+menu-help-more-troubleshooting-info =
+    .label = Звесткі для вырашэння праблемаў
+    .accesskey = е
 menu-help-taskmanager =
     .label = Менеджар задач
+menu-help-report-site-issue =
+    .label = Паведаміць аб праблеме з сайтам…
 menu-help-feedback-page =
     .label = Падаць водгук…
     .accesskey = П
@@ -336,6 +362,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Перазапусціць з дадаткамі
     .accesskey = П
+menu-help-enter-troubleshoot-mode =
+    .label = Рэжым вырашэння праблем
+    .accesskey = Р
+menu-help-exit-troubleshoot-mode =
+    .label = Выключыць рэжым вырашэння праблем
+    .accesskey = ь
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

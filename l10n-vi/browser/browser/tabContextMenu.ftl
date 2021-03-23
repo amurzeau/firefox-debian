@@ -14,6 +14,13 @@ duplicate-tab =
 duplicate-tabs =
     .label = Nhân đôi các thẻ
     .accesskey = D
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = Đóng các thẻ ở bên trái
+    .accesskey = I
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Đóng các thẻ ở bên phải
     .accesskey = i
@@ -44,6 +51,9 @@ bookmark-tab =
 reopen-in-container =
     .label = Mở trong ngăn chứa
     .accesskey = e
+tab-context-open-in-container =
+    .label = Mở lên kết trong ngăn chứa mới
+    .accesskey = e
 move-to-start =
     .label = Di chuyển lên đầu
     .accesskey = S
@@ -56,6 +66,11 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Đóng nhiều thẻ
     .accesskey = M
+tab-context-share-url =
+    .label = Chia sẻ
+    .accesskey = h
+tab-context-share-more =
+    .label = Thêm…
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -79,6 +94,13 @@ move-tabs =
 move-tab =
     .label = Di chuyển thẻ
     .accesskey = v
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Mở lại thẻ đã đóng
+           *[other] Mở lại các thẻ đã đóng
+        }
+    .accesskey = o
 tab-context-close-tabs =
     .label =
         { $tabCount ->

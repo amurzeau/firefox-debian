@@ -44,7 +44,6 @@ onboarding-join-form-signin-label = ¿La k'o chik jun rub'i' ataqoya'l?
 # Text for link to submit the sign in form
 onboarding-join-form-signin = Titikirisäx Molojri'ïl
 onboarding-start-browsing-button-label = Tichap Okem Pa K'amaya'l
-onboarding-not-now-button-label = Wakami mani
 onboarding-cards-dismiss =
     .title = Tichup ruwäch
     .aria-label = Tichup ruwäch
@@ -86,99 +85,6 @@ onboarding-benefit-monitor-title = { -monitor-brand-short-name }
 onboarding-benefit-monitor-text = Tak'ulu' rutzijol toq ri awetamab'al xtz'iläx rutzij.
 onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
 onboarding-benefit-lockwise-text = Ke'anuk'samajij ri ewan taq atzij, ri yechajïx chuqa' ek'axel.
-
-## Custom Return To AMO onboarding strings
-
-return-to-amo-subtitle = Ütz ütz, awichinan { -brand-short-name }
-# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
-#
-# Variables:
-#   $addon-name (String) - Name of the add-on
-return-to-amo-addon-title = Wakami niqatäq chawe <img data-l10n-name="icon"/> <b>{ $addon-name }</b>.
-return-to-amo-add-extension-label = Titz'aqatisäx K'amal
-
-## Multistage 3-screen onboarding flow strings (about:welcome pages)
-
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = Ütz apetik pa <span data-l10n-name = "zap"> { -brand-short-name } </span>
-onboarding-multistage-welcome-subtitle = Ri aninäq, jikïl chuqa' ichinan okik'amaya'l temen ruma jun moloj majun ch'akoj rojqan.
-onboarding-multistage-welcome-primary-button-label = Tichap Runuk'ulem
-onboarding-multistage-welcome-secondary-button-label = Titikirisäx molojri'ïl
-onboarding-multistage-welcome-secondary-button-text = ¿La k'o jun rub'i' ataqoya'l?
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "more" should stay inside the span.
-onboarding-multistage-import-header = Ke'ajik'a' ewan taq atzij, <br/>taq yaketal, chuqa' <span data-l10n-name="zap">ch'aqa' chik</span>
-onboarding-multistage-import-subtitle = ¿La atpetenäq pa jun chik okik'amaya'l? Man k'ayew ta nak'waj ronojel pa { -brand-short-name }.
-onboarding-multistage-import-primary-button-label = Titikirisäx Jik'oj
-onboarding-multistage-import-secondary-button-label = Wakami mani
-# Info displayed in the footer of import settings screen during onboarding flow.
-# This supports welcome screen showing top sites imported from the user's default browser.
-onboarding-import-sites-disclaimer = Xe'ilitäj re taq ruxaq pa re okisab'äl re'. Ri { -brand-short-name } man yeruyäk ta ni xa ta yeruxïm taq kitzij juley taq okik'amaya'l, xa xe we nacha' chi ye'ajïk'.
-# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
-# Variables:
-#   $current (Int) - Number of the current page
-#   $total (Int) - Total number of pages
-onboarding-welcome-steps-indicator =
-    .aria-label = Nab'ey taq xak: ruwäch { $current } ri { $total }
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "look" should stay inside the span.
-onboarding-multistage-theme-header = Tacha' jun <span data-l10n-name="zap">rub'anikil</span>
-onboarding-multistage-theme-subtitle = Tawichinaj { -brand-short-name } rik'in jun wachinel.
-onboarding-multistage-theme-primary-button-label = Tiyak Wachinel
-onboarding-multistage-theme-secondary-button-label = Wakami mani
-# Automatic theme uses operating system color settings
-onboarding-multistage-theme-label-automatic = Yonil
-onboarding-multistage-theme-label-light = Saqsöj
-onboarding-multistage-theme-label-dark = Q'eqq'öj
-# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
-onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
-
-## Please make sure to split the content of the title attribute into lines whose
-## width corresponds to about 40 Latin characters, to ensure that the tooltip
-## doesn't become too long. Line breaks will be preserved when displaying the
-## tooltip.
-
-# Tooltip displayed on hover of automatic theme
-onboarding-multistage-theme-tooltip-automatic-2 =
-    .title =
-        Tichinäx kan ri rutzub'al samajel
-        aq'inoj pa taq pitz'b'äl, taq k'utsamaj chuqa' taq ruwi'.
-# Input description for automatic theme
-onboarding-multistage-theme-description-automatic-2 =
-    .aria-description =
-        Tichinäx kan ri rutzub'al samajel
-        aq'inoj pa taq pitz'b'äl, taq k'utsamaj chuqa' taq ruwi'.
-# Tooltip displayed on hover of light theme
-onboarding-multistage-theme-tooltip-light-2 =
-    .title =
-        Tokisäx jun saqsöj tzub'al pa taq pitz'b'äl,
-        taq k'utsamaj chuqa' pa taq ruwi'.
-# Input description for light theme
-onboarding-multistage-theme-description-light =
-    .aria-description =
-        Tokisäx jun saqsöj tzub'al pa taq pitz'b'äl,
-        taq k'utsamaj chuqa' pa taq ruwi'.
-# Tooltip displayed on hover of dark theme
-onboarding-multistage-theme-tooltip-dark-2 =
-    .title =
-        Tokisäx jun q'equm tzub'al pa taq pitz'b'äl,
-        taq k'utsamaj chuqa' pa taq ruwi'.
-# Input description for dark theme
-onboarding-multistage-theme-description-dark =
-    .aria-description =
-        Tokisäx jun q'equm tzub'al pa taq pitz'b'äl,
-        taq k'utsamaj chuqa' pa taq ruwi'.
-# Tooltip displayed on hover of Alpenglow theme
-onboarding-multistage-theme-tooltip-alpenglow-2 =
-    .title =
-        Tokisäx jeb'ejöj tzub'al pa taq pitz'b'äl,
-        taq k'utsamaj chuqa' pa taq ruwi'.
-# Input description for Alpenglow theme
-onboarding-multistage-theme-description-alpenglow =
-    .aria-description =
-        Tokisäx jeb'ejöj tzub'al pa taq pitz'b'äl,
-        taq k'utsamaj chuqa' pa taq ruwi'.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -239,3 +145,104 @@ return-to-amo-sub-header = Ütz ütz, awichinan { -brand-short-name }
 return-to-amo-addon-header = Wakami niqatäq chawe <icon></icon><b>{ $addon-name }.</b>
 return-to-amo-extension-button = Titz'aqatisäx ri K'amal
 return-to-amo-get-started-button = Titikirisäx rik'in { -brand-short-name }
+onboarding-not-now-button-label = Wakami mani
+
+## Custom Return To AMO onboarding strings
+
+return-to-amo-subtitle = Ütz ütz, awichinan { -brand-short-name }
+# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-title = Wakami niqatäq chawe <img data-l10n-name="icon"/> <b>{ $addon-name }</b>.
+return-to-amo-add-extension-label = Titz'aqatisäx K'amal
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = Ütz apetik pa <span data-l10n-name = "zap"> { -brand-short-name } </span>
+onboarding-multistage-welcome-subtitle = Ri aninäq, jikïl chuqa' ichinan okik'amaya'l temen ruma jun moloj majun ch'akoj rojqan.
+onboarding-multistage-welcome-primary-button-label = Tichap Runuk'ulem
+onboarding-multistage-welcome-secondary-button-label = Titikirisäx molojri'ïl
+onboarding-multistage-welcome-secondary-button-text = ¿La k'o jun rub'i' ataqoya'l?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "default" should stay inside the span.
+onboarding-multistage-set-default-header = Tab'ana' { -brand-short-name } achi'el <span data-l10n-name="zap">k'o wi</span>
+onboarding-multistage-set-default-subtitle = Aninem, jikomal chuqa' ichinanem jantape' toq yakoj pa k'amaya'l.
+onboarding-multistage-set-default-primary-button-label = Tib'an Achi'el K'o Wi
+onboarding-multistage-set-default-secondary-button-label = Wakami mani
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = Ke'ajik'a' ewan taq atzij, <br/>taq yaketal, chuqa' <span data-l10n-name="zap">ch'aqa' chik</span>
+onboarding-multistage-import-subtitle = ¿La atpetenäq pa jun chik okik'amaya'l? Man k'ayew ta nak'waj ronojel pa { -brand-short-name }.
+onboarding-multistage-import-primary-button-label = Titikirisäx Jik'oj
+onboarding-multistage-import-secondary-button-label = Wakami mani
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = Xe'ilitäj re taq ruxaq pa re okisab'äl re'. Ri { -brand-short-name } man yeruyäk ta ni xa ta yeruxïm taq kitzij juley taq okik'amaya'l, xa xe we nacha' chi ye'ajïk'.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = Nab'ey taq xak: ruwäch { $current } ri { $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = Tacha' jun <span data-l10n-name="zap">rub'anikil</span>
+onboarding-multistage-theme-subtitle = Tawichinaj { -brand-short-name } rik'in jun wachinel.
+onboarding-multistage-theme-primary-button-label = Tiyak Wachinel
+onboarding-multistage-theme-primary-button-label2 = Xk'is
+onboarding-multistage-theme-secondary-button-label = Wakami mani
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = Yonil
+onboarding-multistage-theme-label-light = Saqsöj
+onboarding-multistage-theme-label-dark = Q'eqq'öj
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Tichinäx kan ri rutzub'al samajel
+        aq'inoj pa taq pitz'b'äl, taq k'utsamaj chuqa' taq ruwi'.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Tichinäx kan ri rutzub'al samajel
+        aq'inoj pa taq pitz'b'äl, taq k'utsamaj chuqa' taq ruwi'.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Tokisäx jun saqsöj tzub'al pa taq pitz'b'äl,
+        taq k'utsamaj chuqa' pa taq ruwi'.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Tokisäx jun saqsöj tzub'al pa taq pitz'b'äl,
+        taq k'utsamaj chuqa' pa taq ruwi'.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Tokisäx jun q'equm tzub'al pa taq pitz'b'äl,
+        taq k'utsamaj chuqa' pa taq ruwi'.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Tokisäx jun q'equm tzub'al pa taq pitz'b'äl,
+        taq k'utsamaj chuqa' pa taq ruwi'.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Tokisäx jeb'ejöj tzub'al pa taq pitz'b'äl,
+        taq k'utsamaj chuqa' pa taq ruwi'.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Tokisäx jeb'ejöj tzub'al pa taq pitz'b'äl,
+        taq k'utsamaj chuqa' pa taq ruwi'.

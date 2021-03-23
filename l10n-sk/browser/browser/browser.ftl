@@ -109,10 +109,15 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Menej písania, viac výsledkov. Používajte { $engineName } priamo z vášho panela s adresou.
 urlbar-search-tips-redirect-2 = Zadajte sem výraz vyhľadávania a uvidíte návrhy z vyhľadávacieho modulu { $engineName } a z vašej histórie prehliadania.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Vyberte túto skratku a nájdite rýchlejšie to, čo hľadáte
 
 ## Local search mode indicator labels in the urlbar
 
 urlbar-search-mode-bookmarks = Záložky
+urlbar-search-mode-tabs = Karty
+urlbar-search-mode-history = História
 
 ##
 
@@ -254,6 +259,8 @@ search-one-offs-engine-with-alias =
 
 search-one-offs-bookmarks =
     .tooltiptext = Záložky ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Karty ({ $restrict })
 search-one-offs-history =
     .tooltiptext = História ({ $restrict })
 
@@ -283,6 +290,17 @@ identity-passive-loaded = Časti tejto stránky nie sú zabezpečené (napr. obr
 identity-active-loaded = Na tejto stránke ste vypli Ochranu pred sledovaním.
 identity-weak-encryption = Táto stránka používa slabé šifrovanie.
 identity-insecure-login-forms = Prihlasovacie údaje zadané na tejto stránke by mohli byť ohrozené.
+identity-https-only-connection-upgraded = (zmenené na HTTPS)
+identity-https-only-label = Režim "Len HTTPS"
+identity-https-only-dropdown-on =
+    .label = Zapnutý
+identity-https-only-dropdown-off =
+    .label = Vypnutý
+identity-https-only-dropdown-off-temporarily =
+    .label = Dočasne vypnutý
+identity-https-only-info-turn-on2 = Ak chcete, aby prehliadač { -brand-short-name } zmenil pripojenie na zabezpečné kedykoľvek je to možné, zapnite pre tento server režim "Len HTTPS".
+identity-https-only-info-turn-off2 = Ak sa zdá byť stránka nefunkčná, možno budete musieť vypnúť režim "Len HTTPS" a opätovne načítať stránku pomocou nezabezpečeného protokolu HTTP.
+identity-https-only-info-no-upgrade = Nepodarilo sa zmeniť pripojenie z protokolu HTTP.
 identity-permissions =
     .value = Povolenia
 identity-permissions-reload-hint = Pre vykonanie zmien budete možno musieť stránku obnoviť.
@@ -328,9 +346,20 @@ browser-window-close-button =
 
 ## Tab actions
 
+browser-tab-audio-playing = Prehráva sa
+browser-tab-audio-muted = Stlmené
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = PREHRÁVA SA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = STLMENÉ
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = OBRAZ V OBRAZE
 
 ## Bookmarks toolbar items
 
+browser-import-button2 =
+    .label = Importovať záložky…
+    .tooltiptext = Importovať záložky z iného prehliadača do aplikácie { -brand-short-name }
 
 ## WebRTC Pop-up notifications
 
@@ -340,6 +369,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Zdieľať mikrofón:
     .accesskey = m
+popup-select-camera-device =
+    .value = Kamera:
+    .accesskey = K
+popup-select-camera-icon =
+    .tooltiptext = Kamera
+popup-select-microphone-device =
+    .value = Mikrofón:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Mikrofón
 popup-all-windows-shared = Všetky okná viditeľné na vašej obrazovke budú zdieľané.
 popup-screen-sharing-not-now =
     .label = Teraz nie
@@ -349,6 +388,13 @@ popup-screen-sharing-never =
     .accesskey = i
 popup-silence-notifications-checkbox = Nezobrazovať upozornenia z { -brand-short-name(case: "gen") } počas zdieľania
 popup-silence-notifications-checkbox-warning = { -brand-short-name } nebude počas zdieľania zobrazovať upozornenia.
+popup-screen-sharing-block =
+    .label = Zakázať
+    .accesskey = Z
+popup-screen-sharing-always-block =
+    .label = Vždy zakázať
+    .accesskey = V
+popup-mute-notifications-checkbox = Počas zdieľania stlmiť upozornenia na webe
 
 ## WebRTC window or screen share tab switch warning
 
@@ -407,8 +453,13 @@ urlbar-result-action-search-in-private = Vyhľadať v súkromnom okne
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = Vyhľadať pomocou { $engine }
+urlbar-result-action-sponsored = Sponzorované
 urlbar-result-action-switch-tab = Prepnúť na kartu
 urlbar-result-action-visit = Navštíviť
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Hľadajte pomocou { $engine } priamo z panela s adresou
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -433,6 +484,14 @@ pointerlock-warning-no-domain = Tento dokument má kontrolu nad vaším kurzorom
 
 ## Subframe crash notification
 
+crashed-subframe-learnmore =
+    .label = Ďalšie informácie
+    .accesskey = l
+crashed-subframe-learnmore-link =
+    .value = Ďalšie informácie
+crashed-subframe-submit =
+    .label = Odoslať hlásenie
+    .accesskey = h
 
 ## Bookmarks panels, menus and toolbar
 
@@ -440,6 +499,11 @@ bookmarks-show-all-bookmarks =
     .label = Zobraziť všetky záložky
 bookmarks-recent-bookmarks =
     .value = Nedávno pridané medzi záložky
+bookmarks-manage-bookmarks =
+    .label = Správa záložiek
+bookmarks-recent-bookmarks-panel =
+    .value = Nedávno pridané medzi záložky
+bookmarks-recent-bookmarks-panel-subheader = Nedávno pridané medzi záložky
 bookmarks-toolbar-chevron =
     .tooltiptext = Zobraziť ďalšie záložky
 bookmarks-sidebar-content =
@@ -468,6 +532,12 @@ bookmarks-tools-toolbar-visibility-menuitem =
             [true] Skryť panel nástrojov Záložky
            *[other] Zobraziť panel nástrojov Záložky
         }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Skryť panel záložiek
+           *[other] Zobraziť panel záložiek
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -493,6 +563,9 @@ bookmarks-toolbar-placeholder =
     .title = Položky panela záložiek
 bookmarks-toolbar-placeholder-button =
     .label = Položky panela záložiek
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Pridať túto kartu medzi záložky
 
 ## Library Panel items
 
@@ -502,9 +575,31 @@ library-bookmarks-bookmark-this-page =
     .label = Pridať stránku medzi záložky
 library-bookmarks-bookmark-edit =
     .label = Upraviť túto záložku
+library-recent-activity-title =
+    .value = Nedávna aktivita
 
 ## More items
 
 more-menu-go-offline =
     .label = Pracovať offline
     .accesskey = f
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Niektoré zvukové záznamy alebo videá na tejto stránke používajú softvér DRM, čo môže obmedzovať to, čo vám { -brand-short-name } dokáže umožniť urobiť s týmto obsahom.
+eme-notifications-drm-content-playing-manage = Spravovať nastavenia
+eme-notifications-drm-content-playing-manage-accesskey = S
+eme-notifications-drm-content-playing-dismiss = Zavrieť
+eme-notifications-drm-content-playing-dismiss-accesskey = Z
+
+## Password save/update panel
+
+panel-save-update-username = Používateľské meno
+panel-save-update-password = Heslo
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Odstrániť { $name }?
+addon-removal-abuse-report-checkbox = Nahlásiť toto rozšírenie spoločnosti { -vendor-short-name }

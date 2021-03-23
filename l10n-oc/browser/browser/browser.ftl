@@ -374,6 +374,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Microfòn de partejar :
     .accesskey = M
+popup-select-camera-device =
+    .value = Camèra :
+    .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = Camèra
+popup-select-microphone-device =
+    .value = Microfòn :
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Microfòn
 popup-all-windows-shared = L'ensemble de las fenèstras visiblas sus vòstre ecran seràn partejadas.
 popup-screen-sharing-not-now =
     .label = Pas ara
@@ -383,6 +393,13 @@ popup-screen-sharing-never =
     .accesskey = p
 popup-silence-notifications-checkbox = Desactivar las notificacions de { -brand-short-name } pendent lo partatge
 popup-silence-notifications-checkbox-warning = { -brand-short-name } mostrarà pas de notificacions pendent lo partatge.
+popup-screen-sharing-block =
+    .label = Blocar
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Totjorn blocar
+    .accesskey = T
+popup-mute-notifications-checkbox = Rescondre las notificacions pendent un partiment
 
 ## WebRTC window or screen share tab switch warning
 
@@ -523,6 +540,8 @@ crashed-subframe-message = <strong>Part d’aquesta pagina a fracassat.</strong>
 crashed-subframe-learnmore =
     .label = Ne saber mai
     .accesskey = N
+crashed-subframe-learnmore-link =
+    .value = Ne saber mai
 crashed-subframe-submit =
     .label = Enviar un rapòrt
     .accesskey = E
@@ -537,6 +556,7 @@ bookmarks-manage-bookmarks =
     .label = Gerir los marcapaginas
 bookmarks-recent-bookmarks-panel =
     .value = Marcapaginas recents
+bookmarks-recent-bookmarks-panel-subheader = Marcapaginas recents
 bookmarks-toolbar-chevron =
     .tooltiptext = Afichar mai de marcapaginas
 bookmarks-sidebar-content =
@@ -616,3 +636,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Trabalhar fòra connexion
     .accesskey = T
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Aqueste site conten d'àudio o de vidèo qu'utiliza de DRM, aquò pòt limitar çò que { -brand-short-name } vos permet de far.
+eme-notifications-drm-content-playing-manage = Gerir los paramètres
+eme-notifications-drm-content-playing-manage-accesskey = G
+eme-notifications-drm-content-playing-dismiss = Ignorar
+eme-notifications-drm-content-playing-dismiss-accesskey = I
+
+## Password save/update panel
+
+panel-save-update-username = Nom d’utilizaire
+panel-save-update-password = Senhal
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Suprimir { $name } ?
+addon-removal-abuse-report-checkbox = Senhalar aquesta extension a { -vendor-short-name }

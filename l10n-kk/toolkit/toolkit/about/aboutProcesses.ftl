@@ -2,12 +2,16 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# Page title
+about-processes-title = Үрдістер басқарушысы
 # The Actions column
 about-processes-column-action =
     .title = Әрекеттер
 
 ## Tooltips
 
+about-processes-shutdown-process =
+    .title = Беттерді жауып, үрдісті өлтіру
 about-processes-shutdown-tab =
     .title = Бетті жабу
 
@@ -15,6 +19,7 @@ about-processes-shutdown-tab =
 
 about-processes-column-name = Аты
 about-processes-column-memory-resident = Жады
+about-processes-column-cpu-total = Процессор
 
 ## Process names
 ## Variables:
@@ -22,9 +27,58 @@ about-processes-column-memory-resident = Жады
 ##    $origin (String) The domain name for this process.
 ##    $type (String) The raw type for this process. Used for unknown processes.
 
+about-processes-browser-process-name = { -brand-short-name } (үрдіс { $pid })
+about-processes-web-process-name = Веб (үрдіс { $pid }, ортақ)
+about-processes-web-isolated-process-name = Веб (үрдіс { $pid }), { $origin } үшін
+about-processes-web-large-allocation = Веб (үрдіс { $pid }, үлкен), { $origin } үшін
+about-processes-with-coop-coep-process-name = Веб (үрдіс { $pid }, бөтен қайнар көзден оқшауланған), { $origin } үшін
+about-processes-file-process-name = Файлдар (үрдіс { $pid })
+about-processes-extension-process-name = Кеңейтулер (үрдіс { $pid })
+about-processes-privilegedabout-process-name = About беттері (үрдіс { $pid })
+about-processes-plugin-process-name = Плагиндер (үрдіс { $pid })
+about-processes-privilegedmozilla-process-name = Веб (үрдіс{ $pid }), { -vendor-short-name } сайттары үшін
+about-processes-gmp-plugin-process-name = Gecko медиа плагиндері (үрдіс { $pid })
+about-processes-gpu-process-name = GPU (үрдіс { $pid })
+about-processes-vr-process-name = VR (үрдіс { $pid })
+about-processes-rdd-process-name = Деректер декодтаушы (үрдіс { $pid })
+about-processes-socket-process-name = Желі (үрдіс { $pid })
+about-processes-remote-sandbox-broker-process-name = Құмсалғыштың қашықтағы брокері (үрдіс { $pid })
+about-processes-fork-server-process-name = Форк сервері (үрдіс { $pid })
+about-processes-preallocated-process-name = Алдын-ала бөлінген (үрдіс { $pid })
+about-processes-unknown-process-name = Басқа ({ $type }, үрдіс { $pid })
+# Process
+# Variables:
+#   $name (String) The name assigned to the process.
+#   $pid (String) The process id of this process, assigned by the OS.
+about-processes-process-name = Үрдіс { $pid }: { $name }
 
 ## Details within processes
 
+# Single-line summary of threads
+# Variables:
+#    $number (Number) The number of threads in the process. Typically larger
+#                     than 30. We don't expect to ever have processes with less
+#                     than 5 threads.
+about-processes-thread-summary = Ағындар ({ $number })
+# Thread details
+# Variables:
+#   $name (String) The name assigned to the thread.
+#   $tid (String) The thread id of this thread, assigned by the OS.
+about-processes-thread-name = Ағын { $tid }: { $name }
+# Tab
+# Variables:
+#   $name (String) The name of the tab (typically the title of the page, might be the url while the page is loading).
+about-processes-tab-name = Бет: { $name }
+about-processes-preloaded-tab = Алдын-ала жүктелген жаңа бет
+# Single subframe
+# Variables:
+#   $url (String) The full url of this subframe.
+about-processes-frame-name-one = Ішкі фрейм: { $url }
+# Group of subframes
+# Variables:
+#   $number (Number) The number of subframes in this group. Always ≥ 1.
+#   $shortUrl (String) The shared prefix for the subframes in the group.
+about-processes-frame-name-many = Ішкі фреймдер ({ $number }): { $shortUrl }
 
 ## Displaying CPU (percentage and total)
 ## Variables:
@@ -35,6 +89,12 @@ about-processes-column-memory-resident = Жады
 ##    $unit (String) The unit in which to display $total. See the definitions
 ##                   of `duration-unit-*`.
 
+# Common case.
+about-processes-cpu-user-and-kernel = { NUMBER($percent, maximumSignificantDigits: 2, style: "percent") } ({ NUMBER($total, maximumFractionDigits: 0) }{ $unit })
+# Special case: data is not available yet.
+about-processes-cpu-user-and-kernel-not-ready = (өлшеу)
+# Special case: process or thread is currently idle.
+about-processes-cpu-user-and-kernel-idle = бос ({ NUMBER($total, maximumFractionDigits: 2) }{ $unit })
 
 ## Displaying Memory (total and delta)
 ## Variables:
@@ -47,9 +107,27 @@ about-processes-column-memory-resident = Жады
 ##    $deltaUnit (String) The unit in which to display $delta. See the definitions
 ##                        of `memory-unit-*`.
 
+# Common case.
+about-processes-total-memory-size = { NUMBER($total, maximumFractionDigits: 0) }{ $totalUnit } ({ $deltaSign }{ NUMBER($delta, maximumFractionDigits: 0) }{ $deltaUnit })
+# Special case: no change.
+about-processes-total-memory-size-no-change = { NUMBER($total, maximumFractionDigits: 0) }{ $totalUnit }
 
 ## Duration units
 
+duration-unit-ns = нс
+duration-unit-us = мкс
+duration-unit-ms = мс
+duration-unit-s = сек
+duration-unit-m = мин
+duration-unit-h = сағ
+duration-unit-d = күн
 
 ## Memory units
 
+memory-unit-B = Б
+memory-unit-KB = КБ
+memory-unit-MB = МБ
+memory-unit-GB = ГБ
+memory-unit-TB = ТБ
+memory-unit-PB = ПБ
+memory-unit-EB = ЭБ

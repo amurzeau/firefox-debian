@@ -130,10 +130,14 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Tham số
 safe-mode-title = Thử dùng chế độ an toàn
 restart-in-safe-mode-label = Khởi động lại và vô hiệu hóa các tiện ích…
+troubleshoot-mode-title = Chẩn đoán sự cố
+restart-in-troubleshoot-mode-label = Chế độ xử lý sự cố…
 clear-startup-cache-title = Hãy thử xóa bộ nhớ đệm khởi động
 clear-startup-cache-label = Xóa bộ nhớ đệm khởi động…
 startup-cache-dialog-title = Xóa bộ nhớ đệm khởi động
 startup-cache-dialog-body = Khởi động lại { -brand-short-name } để xóa bộ nhớ đệm khởi động. Điều này sẽ không thay đổi cài đặt của bạn hoặc xóa các tiện ích mở rộng mà bạn đã thêm vào { -brand-short-name }.
+startup-cache-dialog-title2 = Khởi động lại { -brand-short-name } để xóa bộ nhớ đệm khởi động?
+startup-cache-dialog-body2 = Điều này sẽ không thay đổi cài đặt của bạn hoặc xóa tiện ích mở rộng.
 restart-button-label = Khởi động lại
 
 ## Media titles
@@ -383,3 +387,13 @@ support-printing-clear-settings-button = Xóa cài đặt in đã lưu
 support-printing-modified-settings = Đã sửa đổi cài đặt in
 support-printing-prefs-name = Tên
 support-printing-prefs-value = Giá trị
+
+## Normandy sections
+
+support-remote-experiments-title = Thử nghiệm từ xa
+support-remote-experiments-name = Tên
+support-remote-experiments-branch = Nhánh thử nghiệm
+support-remote-experiments-see-about-studies = Xem trang <a data-l10n-name="support-about-studies-link">about:studies</a> để biết thêm thông tin, bao gồm cách tắt các thử nghiệm riêng lẻ hoặc tắt { -brand-short-name } từ việc chạy loại thử nghiệm này trong tương lai.
+support-remote-features-title = Tính năng từ xa
+support-remote-features-name = Tên
+support-remote-features-status = Trạng thái

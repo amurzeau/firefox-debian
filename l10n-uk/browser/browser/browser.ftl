@@ -76,7 +76,7 @@ urlbar-storage-access-anchor =
 urlbar-translate-notification-anchor =
     .tooltiptext = Перекласти цю сторінку
 urlbar-web-rtc-share-screen-notification-anchor =
-    .tooltiptext = Керувати доступом сайту до ваших вікон чи екрану
+    .tooltiptext = Керувати доступом сайту до ваших вікон чи екрана
 urlbar-indexed-db-notification-anchor =
     .tooltiptext = Відкрити панель повідомлень автономного сховища
 urlbar-password-notification-anchor =
@@ -132,7 +132,7 @@ urlbar-camera-blocked =
 urlbar-microphone-blocked =
     .tooltiptext = Ви заблокували мікрофон для цього вебсайту.
 urlbar-screen-blocked =
-    .tooltiptext = Ви заблокували доступ до екрану для цього вебсайту.
+    .tooltiptext = Ви заблокували доступ до екрана для цього вебсайту.
 urlbar-persistent-storage-blocked =
     .tooltiptext = Ви заблокували постійне сховище для цього вебсайту.
 urlbar-popup-blocked =
@@ -376,6 +376,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Доступ до мікрофону:
     .accesskey = м
+popup-select-camera-device =
+    .value = Камера:
+    .accesskey = К
+popup-select-camera-icon =
+    .tooltiptext = Камера
+popup-select-microphone-device =
+    .value = Мікрофон:
+    .accesskey = М
+popup-select-microphone-icon =
+    .tooltiptext = Мікрофон
 popup-all-windows-shared = Надасться доступ до всіх видимих вікон на вашому екрані.
 popup-screen-sharing-not-now =
     .label = Не зараз
@@ -385,6 +395,13 @@ popup-screen-sharing-never =
     .accesskey = Н
 popup-silence-notifications-checkbox = Вимкнути сповіщення від { -brand-short-name } під час спільного доступу
 popup-silence-notifications-checkbox-warning = { -brand-short-name } не показуватиме сповіщення під час спільного доступу.
+popup-screen-sharing-block =
+    .label = Блокувати
+    .accesskey = Б
+popup-screen-sharing-always-block =
+    .label = Завжди блокувати
+    .accesskey = ж
+popup-mute-notifications-checkbox = Вимкнути сповіщення вебсайту під час спільного доступу
 
 ## WebRTC window or screen share tab switch warning
 
@@ -525,6 +542,8 @@ crashed-subframe-message = <strong>Збій частини цієї сторін
 crashed-subframe-learnmore =
     .label = Дізнатися більше
     .accesskey = Д
+crashed-subframe-learnmore-link =
+    .value = Докладніше
 crashed-subframe-submit =
     .label = Надіслати звіт
     .accesskey = Н
@@ -539,6 +558,7 @@ bookmarks-manage-bookmarks =
     .label = Керувати закладками
 bookmarks-recent-bookmarks-panel =
     .value = Недавні закладки
+bookmarks-recent-bookmarks-panel-subheader = Недавні закладки
 bookmarks-toolbar-chevron =
     .tooltiptext = Показати інші закладки
 bookmarks-sidebar-content =
@@ -618,3 +638,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Працювати автономно
     .accesskey = ю
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Деяке аудіо чи відео на цій сторінці використовує програму DRM, що може обмежити можливості, які надає вам { -brand-short-name }.
+eme-notifications-drm-content-playing-manage = Керувати налаштуваннями
+eme-notifications-drm-content-playing-manage-accesskey = К
+eme-notifications-drm-content-playing-dismiss = Відхилити
+eme-notifications-drm-content-playing-dismiss-accesskey = х
+
+## Password save/update panel
+
+panel-save-update-username = Ім’я користувача
+panel-save-update-password = Пароль
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Вилучити { $name }?
+addon-removal-abuse-report-checkbox = Поскаржитись на це розширення до { -vendor-short-name }

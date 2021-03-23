@@ -111,6 +111,9 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = 新建身份标签页打开链接
     .accesskey = C
+main-context-menu-open-link-container =
+    .label = 新建身份标签页打开链接
+    .accesskey = w
 main-context-menu-open-link-new-window =
     .label = 新建窗口打开链接
     .accesskey = W
@@ -120,6 +123,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = 为此链接添加书签
     .accesskey = L
+main-context-menu-bookmark-link =
+    .label = 为此链接添加书签
+    .accesskey = B
 main-context-menu-save-link =
     .label = 从链接另存文件为…
     .accesskey = k
@@ -131,12 +137,20 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = 复制邮件地址
     .accesskey = E
 main-context-menu-copy-link =
     .label = 复制链接地址
     .accesskey = a
+main-context-menu-copy-link-simple =
+    .label = 复制链接
+    .accesskey = L
 
 ## Media (video/audio) controls
 ##
@@ -179,6 +193,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = 倍速 (2×)
     .accesskey = L
+main-context-menu-media-play-speed-2 =
+    .label = 速度
+    .accesskey = d
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = 循环
     .accesskey = L
@@ -206,6 +233,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = 画中画
     .accesskey = u
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = 画中画观看
+    .accesskey = u
 main-context-menu-image-reload =
     .label = 重新载入图像
     .accesskey = R
@@ -214,6 +246,12 @@ main-context-menu-image-view =
     .accesskey = I
 main-context-menu-video-view =
     .label = 查看视频
+    .accesskey = i
+main-context-menu-image-view-new-tab =
+    .label = 新建标签页打开图像
+    .accesskey = I
+main-context-menu-video-view-new-tab =
+    .label = 新建标签页打开视频
     .accesskey = i
 main-context-menu-image-copy =
     .label = 复制图像
@@ -227,6 +265,15 @@ main-context-menu-video-copy-location =
 main-context-menu-audio-copy-location =
     .label = 复制音频地址
     .accesskey = o
+main-context-menu-image-copy-link =
+    .label = 复制图像链接
+    .accesskey = o
+main-context-menu-video-copy-link =
+    .label = 复制视频链接
+    .accesskey = o
+main-context-menu-audio-copy-link =
+    .label = 复制音频链接
+    .accesskey = o
 main-context-menu-image-save-as =
     .label = 另存图像为…
     .accesskey = v
@@ -239,6 +286,9 @@ main-context-menu-image-set-as-background =
 main-context-menu-image-info =
     .label = 查看图像信息
     .accesskey = f
+main-context-menu-image-set-image-as-background =
+    .label = 将图像设为桌面背景…
+    .accesskey = S
 main-context-menu-image-desc =
     .label = 查看描述
     .accesskey = D
@@ -250,6 +300,9 @@ main-context-menu-audio-save-as =
     .accesskey = v
 main-context-menu-video-image-save-as =
     .label = 另存截图为…
+    .accesskey = S
+main-context-menu-video-take-snapshot =
+    .label = 视频截图...
     .accesskey = S
 main-context-menu-video-email =
     .label = 用邮件发送视频…
@@ -275,6 +328,26 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = 使用生成的密码…
     .accesskey = G
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = 使用存放的登录信息
+    .accesskey = o
+main-context-menu-use-saved-password =
+    .label = 使用存放的密码
+    .accesskey = o
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = 建议高强度密码…
+    .accesskey = S
+main-context-menu-manage-logins =
+    .label = 管理登录信息…
+    .accesskey = M
 main-context-menu-keyword =
     .label = 为此搜索引擎添加关键词…
     .accesskey = K
@@ -317,6 +390,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = 查看选中部分源代码
     .accesskey = e
+main-context-menu-take-screenshot =
+    .label = 截图
+    .accesskey = T
 main-context-menu-view-page-source =
     .label = 查看页面源代码
     .accesskey = V
@@ -331,6 +407,9 @@ main-context-menu-bidi-switch-page =
     .accesskey = D
 main-context-menu-inspect-element =
     .label = 检查元素
+    .accesskey = Q
+main-context-menu-inspect =
+    .label = 检查
     .accesskey = Q
 main-context-menu-inspect-a11y-properties =
     .label = 检查无障碍环境属性

@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Осы парақтан іздеу…
     .accesskey = т
+menu-edit-find-in-page =
+    .label = Беттен табу…
+    .accesskey = т
 menu-edit-find-again =
     .label = Іздеуді қайталау
     .accesskey = з
@@ -129,6 +132,9 @@ menu-view-toolbars-menu =
 menu-view-customize-toolbar =
     .label = Баптау…
     .accesskey = а
+menu-view-customize-toolbar2 =
+    .label = Құралдар панелін баптау…
+    .accesskey = п
 menu-view-sidebar =
     .label = Бүйір панелі
     .accesskey = Б
@@ -207,6 +213,8 @@ menu-history-undo-menu =
     .label = Жақында жабылған беттер
 menu-history-undo-window-menu =
     .label = Жақында жабылған терезелер
+menu-history-reopen-all-tabs = Барлық беттерді қайта ашу
+menu-history-reopen-all-windows = Барлық терезелерді қайта ашу
 
 ## Bookmarks Menu
 
@@ -217,6 +225,8 @@ menu-bookmarks-show-all =
     .label = Барлық бетбелгілерді көрсету
 menu-bookmark-this-page =
     .label = Бұл бетті бетбелгілерге қосу
+menu-bookmark-current-tab =
+    .label = Ағымдағы бетті бетбелгілерге қосу
 menu-bookmark-edit =
     .label = Бетбелгіні түзету
 menu-bookmarks-all-tabs =
@@ -242,6 +252,12 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = { -brand-product-name } ішіне кіру…
     .accesskey = к
+menu-tools-extensions =
+    .label = Кеңейтулер және темалар
+    .accesskey = е
+menu-tools-fxa-sign-in2 =
+    .label = Кіру
+    .accesskey = р
 menu-tools-turn-on-sync =
     .label = { -sync-brand-short-name } іске қосу…
     .accesskey = е
@@ -270,6 +286,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] ц
            *[other] м
+        }
+menu-settings =
+    .label = Баптаулар
+    .accesskey =
+        { PLATFORM() ->
+            [windows] п
+           *[other] п
         }
 menu-tools-layout-debugger =
     .label = Жайма жөндегіші
@@ -323,8 +346,13 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Техникалық ақпарат
     .accesskey = а
+menu-help-more-troubleshooting-info =
+    .label = Мәселелерді шешудің көбірек ақпараты
+    .accesskey = с
 menu-help-taskmanager =
     .label = Тапсырмалар басқарушысы
+menu-help-report-site-issue =
+    .label = Сайт мәселесі жөнінде хабарлау…
 menu-help-feedback-page =
     .label = Кері байланыс хабарламасын жіберу…
     .accesskey = е
@@ -334,6 +362,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Іске қосылған қосымшалармен қайта қосу
     .accesskey = р
+menu-help-enter-troubleshoot-mode =
+    .label = Мәселелерді шешу режимі
+    .accesskey = м
+menu-help-exit-troubleshoot-mode =
+    .label = Мәселелерді шешу режимін сөндіру
+    .accesskey = м
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

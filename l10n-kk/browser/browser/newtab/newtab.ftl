@@ -23,12 +23,18 @@ newtab-search-box-search-the-web-input =
     .placeholder = Интернетте іздеу
     .title = Интернетте іздеу
     .aria-label = Интернетте іздеу
+newtab-search-box-text = Интернетте іздеу
+newtab-search-box-input =
+    .placeholder = Интернетте іздеу
+    .aria-label = Интернетте іздеу
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = Іздеу жүйесін қосу
 newtab-topsites-add-topsites-header = Жаңа топ сайты
+newtab-topsites-add-shortcut-header = Жаңа жарлық
 newtab-topsites-edit-topsites-header = Топ сайтын түзету
+newtab-topsites-edit-shortcut-header = Жарлықты түзету
 newtab-topsites-title-label = Атауы
 newtab-topsites-title-input =
     .placeholder = Атауын енгізіңіз
@@ -214,14 +220,22 @@ newtab-error-fallback-refresh-link = Қайталап көру үшін, бет�
 ## Customization Menu
 
 newtab-custom-shortcuts-title = Жарлықтар
+newtab-custom-shortcuts-subtitle = Сіз сақтайтын немесе шолатын сайттар
 newtab-custom-row-selector =
     { $num ->
        *[other] { $num } жол
     }
 newtab-custom-sponsored-sites = Демеушілік жарлықтары
+newtab-custom-pocket-title = { -pocket-brand-name } ұсынған
+newtab-custom-pocket-subtitle = { -brand-product-name } отбасының мүшесі болып табылатын, { -pocket-brand-name } жетекшілік ететін тамаша құрама
+newtab-custom-pocket-sponsored = Демеушілер мақалалары
+newtab-custom-recent-title = Жуырдағы белсенділік
+newtab-custom-recent-subtitle = Жуырдағы сайттар мен құрама таңдауы
 newtab-custom-close-button = Жабу
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
 # and non-essential but also not entirely trivial and useless.
 newtab-custom-snippets-title = Үзінділер
+newtab-custom-snippets-subtitle = { -vendor-short-name } және { -brand-product-name } кеңестері және жаңалықтары
+newtab-custom-settings = Көбірек баптауларды басқару

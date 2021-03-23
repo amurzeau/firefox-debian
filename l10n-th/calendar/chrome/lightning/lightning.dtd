@@ -19,12 +19,6 @@
 <!ENTITY lightning.menupopup.new.calendar.accesskey "ป">
 
 <!-- Open menu popup in File menu -->
-<!ENTITY lightning.menupopup.open.label               "เปิด">
-<!ENTITY lightning.menupopup.open.accesskey           "ป">
-<!ENTITY lightning.menupopup.open.message.label       "ข้อความที่บันทึก…">
-<!ENTITY lightning.menupopup.open.message.accesskey   "ข">
-
-<!-- Open menu popup in File menu -->
 <!ENTITY lightning.menupopup.open.calendar.label      "ไฟล์ปฏิทิน…">
 <!ENTITY lightning.menupopup.open.calendar.accesskey  "ฟ">
 
@@ -44,10 +38,13 @@
      These strings are used in the calendar wizard and the calendar properties dialog, but are only
      displayed when setting/using a caldav calendar -->
 <!ENTITY lightning.calendarproperties.email.label                           "อีเมล:">
+<!ENTITY lightning.calendarproperties.forceEmailScheduling.label            "ต้องการการจัดกำหนดการอีเมลฝั่งไคลเอ็นต์">
 <!-- LOCALIZATON NOTE(lightning.calendarproperties.forceEmailScheduling.tooltiptext1,
      lightning.calendarproperties.forceEmailScheduling.tooltiptext2)
      - tooltiptext1 is used in the calendar wizard when setting a new caldav calendar
      - tooltiptext2 is used in the calendar properties dialog for caldav calendars -->
+<!ENTITY lightning.calendarproperties.forceEmailScheduling.tooltiptext1     "ตอนนี้ คุณสามารถเปิดใช้งานสิ่งนี้ได้หลังจากตั้งค่าปฏิทินนี้ในกล่องโต้ตอบคุณสมบัติเท่านั้นหากเซิร์ฟเวอร์ปฏิทินดูแลการจัดกำหนดการ">
+<!ENTITY lightning.calendarproperties.forceEmailScheduling.tooltiptext2     "ตัวเลือกนี้จะใช้ได้เฉพาะในกรณีที่เซิร์ฟเวอร์ปฏิทินจัดการการจัดกำหนดการเท่านั้น การเปิดใช้งานจะช่วยให้สามารถถอยกลับไปใช้การจัดกำหนดการตามอีเมลมาตรฐานแทนที่จะปล่อยไว้ที่เซิร์ฟเวอร์ได้">
 
 <!-- iMIP Bar (meeting support) -->
 <!ENTITY lightning.imipbar.btnAccept.label                                  "ยอมรับ">
@@ -66,6 +63,9 @@
 <!ENTITY lightning.imipbar.btnDelete.tooltiptext                            "ลบออกจากปฏิทิน">
 <!ENTITY lightning.imipbar.btnDetails.label                                 "รายละเอียด…">
 <!ENTITY lightning.imipbar.btnDetails.tooltiptext                           "แสดงรายละเอียดเหตุการณ์">
+<!ENTITY lightning.imipbar.btnDoNotShowImipBar.label                        "ไม่ต้องแสดงข้อความเหล่านี้ให้ฉันเห็น">
+<!ENTITY lightning.imipbar.btnGoToCalendar.label                            "ปฏิทิน">
+<!ENTITY lightning.imipbar.btnGoToCalendar.tooltiptext                      "ไปที่แท็บปฏิทิน">
 <!ENTITY lightning.imipbar.btnMore.label                                    "เพิ่มเติม">
 <!ENTITY lightning.imipbar.btnMore.tooltiptext                              "คลิกเพื่อแสดงตัวเลือกเพิ่มเติม">
 <!ENTITY lightning.imipbar.btnReconfirm2.label                              "ยืนยันใหม่">
@@ -84,7 +84,10 @@
 
 <!ENTITY lightning.imipbar.btnSend.label                                    "ส่งการตอบสนองตอนนี้">
 <!ENTITY lightning.imipbar.btnSend.tooltiptext                              "ส่งการตอบสนองไปยังผู้จัด">
+<!ENTITY lightning.imipbar.btnSendSeries.tooltiptext                        "ส่งการตอบกลับทั้งชุดถึงผู้จัดงาน">
 <!ENTITY lightning.imipbar.btnDontSend.label                                "ไม่ส่งการตอบสนอง">
+<!ENTITY lightning.imipbar.btnDontSend.tooltiptext                          "เปลี่ยนสถานะการเข้าร่วมของคุณโดยไม่ส่งการตอบกลับถึงผู้จัดงาน">
+<!ENTITY lightning.imipbar.btnDontSendSeries.tooltiptext                    "เปลี่ยนสถานะการเข้าร่วมของคุณเป็นชุดโดยไม่ส่งการตอบกลับถึงผู้จัดงาน">
 
 <!-- Lightning specific keybindings -->
 <!ENTITY lightning.keys.event.showCalendar.key "C">

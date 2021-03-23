@@ -27,6 +27,12 @@ appmenuitem-more-tools =
     .label = Περισσότερα εργαλεία
 appmenuitem-exit =
     .label = Έξοδος
+appmenu-menu-button-closed =
+    .tooltiptext = Άνοιγμα μενού εφαρμογής
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Κλείσιμο μενού εφαρμογής
+    .label = { -brand-shorter-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -45,6 +51,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Συγχρονισμός τώρα
+appmenuitem-fxa-toolbar-sync-now =
+    .label = Συγχρονισμός τώρα
+    .value = Συγχρονισμός τώρα
+appmenuitem-fxa-manage-account = Διαχείριση λογαριασμού
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Τελευταίος συγχρονισμός: { $time }
+    .label = Τελευταίος συγχρονισμός: { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = Συγχρονισμός και αποθήκευση δεδομένων
+appmenu-fxa-signed-in-label = Σύνδεση
+appmenu-fxa-setup-sync =
+    .label = Ενεργοποίηση συγχρονισμού…
+appmenu-fxa-show-more-tabs = Εμφάνιση περισσότερων καρτελών
 appmenuitem-save-page =
     .label = Αποθήκευση σελίδας ως…
 
@@ -102,6 +125,8 @@ profiler-popup-capture-shortcut =
 
 appmenu-manage-history =
     .label = Διαχείριση ιστορικού
+appmenu-reopen-all-tabs = Επαναφορά όλων των καρτελών
+appmenu-reopen-all-windows = Επαναφορά όλων των παραθύρων
 
 ## Help panel
 
@@ -128,8 +153,13 @@ appmenu-get-help =
 appmenu-help-troubleshooting-info =
     .label = Πληροφορίες επίλυσης προβλημάτων
     .accesskey = Π
+appmenu-help-more-troubleshooting-info =
+    .label = Περισσότερες πληροφορίες επίλυσης προβλημάτων
+    .accesskey = Π
 appmenu-help-taskmanager =
     .label = Διαχείριση εργασιών
+appmenu-help-report-site-issue =
+    .label = Αναφορά ζητήματος ιστοσελίδας…
 appmenu-help-feedback-page =
     .label = Υποβολή σχολίων…
     .accesskey = λ
@@ -143,6 +173,16 @@ appmenu-help-safe-mode-without-addons =
 appmenu-help-safe-mode-with-addons =
     .label = Επανεκκίνηση με ενεργά πρόσθετα
     .accesskey = π
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = Λειτουργία επίλυσης προβλημάτων
+    .accesskey = Λ
+appmenu-help-exit-troubleshoot-mode =
+    .label = Απενεργοποίηση λειτουργίας επίλυσης προβλημάτων
+    .accesskey = Α
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

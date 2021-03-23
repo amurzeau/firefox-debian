@@ -358,6 +358,14 @@ browser-window-close-button =
 
 browser-tab-audio-playing = Chwarae
 browser-tab-audio-muted = Tewi
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = YN CHWARAE
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = WEDI TEWI
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = AWTOCHWARAE WEDI'I RWYSTRO
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = LLUN-MEWN-LLUN
 
 ## Bookmarks toolbar items
 
@@ -374,6 +382,12 @@ popup-select-camera =
 popup-select-microphone =
     .value = Meicroffon i'w rannu:
     .accesskey = M
+popup-select-camera-device =
+    .value = Camera:
+    .accesskey = C
+popup-select-microphone-device =
+    .value = Meicroffon:
+    .accesskey = M
 popup-all-windows-shared = Bydd pob ffenestr gweladwy ar eich sgrin yn cael eu rhannu.
 popup-screen-sharing-not-now =
     .label = Nid Nawr
@@ -383,6 +397,13 @@ popup-screen-sharing-never =
     .accesskey = B
 popup-silence-notifications-checkbox = Analluogi hysbysiadau gan { -brand-short-name } wrth rannu
 popup-silence-notifications-checkbox-warning = Ni fydd { -brand-short-name } yn dangos hysbysiadau tra'ch bod chi'n rhannu.
+popup-screen-sharing-block =
+    .label = Rhwystro
+    .accesskey = R
+popup-screen-sharing-always-block =
+    .label = Rhwystro bob tro
+    .accesskey = b
+popup-mute-notifications-checkbox = Tewi hysbysiadau gwefan tra'n rhannu
 
 ## WebRTC window or screen share tab switch warning
 
@@ -523,6 +544,8 @@ crashed-subframe-message = <strong>Mae rhan o'r dudalen hon wedi chwalu.</strong
 crashed-subframe-learnmore =
     .label = Dysgu rhagor
     .accesskey = D
+crashed-subframe-learnmore-link =
+    .value = Dysgu Rhagor
 crashed-subframe-submit =
     .label = Cyflwyno Adroddiad
     .accesskey = A
@@ -537,6 +560,7 @@ bookmarks-manage-bookmarks =
     .label = Rheoli Nodau Tudalen
 bookmarks-recent-bookmarks-panel =
     .value = Nodau Tudalen Diweddar
+bookmarks-recent-bookmarks-panel-subheader = Nodau Tudalen Diweddar
 bookmarks-toolbar-chevron =
     .tooltiptext = Dangos pob ffolder nod tudalen
 bookmarks-sidebar-content =
@@ -616,3 +640,11 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Gweithio All-lein
     .accesskey = w
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Mae peth sain a fideo ar y wefan yn defnyddio meddalwedd DRM, gall gyfyngu'r hyn y gall { -brand-short-name } ei wneud gydag ef.
+eme-notifications-drm-content-playing-manage = Rheoli Gosodiadau
+eme-notifications-drm-content-playing-manage-accesskey = R
+eme-notifications-drm-content-playing-dismiss = Cau
+eme-notifications-drm-content-playing-dismiss-accesskey = C

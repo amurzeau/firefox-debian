@@ -297,8 +297,11 @@ identity-https-only-dropdown-off =
     .label = Izključeno
 identity-https-only-dropdown-off-temporarily =
     .label = Začasno izključeno
+identity-https-only-info-turn-on2 = Vključite način samo HTTPS za to stran, če želite, da { -brand-short-name } nadgradi povezavo, ko je to mogoče.
+identity-https-only-info-no-upgrade = Povezave ni mogoče nadgraditi s HTTP.
 identity-permissions =
     .value = Dovoljenja
+identity-permissions-storage-access-header = Spletni piškotki
 identity-permissions-reload-hint = Za uveljavitev sprememb boste morda morali ponovno naložiti stran.
 identity-permissions-empty = Tej strani niste dodelili posebnih dovoljenj.
 identity-clear-site-data =
@@ -346,6 +349,14 @@ browser-window-close-button =
 
 browser-tab-audio-playing = Predvajanje
 browser-tab-audio-muted = Nemo
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = PREDVAJANJE
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = NEMO
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = SAMODEJNO PREDVAJANJE ZAVRNJENO
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = SLIKA V SLIKI
 
 ## Bookmarks toolbar items
 
@@ -511,6 +522,8 @@ crashed-subframe-message = <strong>Del te strani se je sesul.</strong> Pošljite
 crashed-subframe-learnmore =
     .label = Več o tem
     .accesskey = V
+crashed-subframe-learnmore-link =
+    .value = Več o tem
 crashed-subframe-submit =
     .label = Pošlji poročilo
     .accesskey = P
@@ -521,6 +534,11 @@ bookmarks-show-all-bookmarks =
     .label = Prikaži vse zaznamke
 bookmarks-recent-bookmarks =
     .value = Nedavni zaznamki
+bookmarks-manage-bookmarks =
+    .label = Upravljanje zaznamkov
+bookmarks-recent-bookmarks-panel =
+    .value = Nedavni zaznamki
+bookmarks-recent-bookmarks-panel-subheader = Nedavni zaznamki
 bookmarks-toolbar-chevron =
     .tooltiptext = Prikaži več zaznamkov
 bookmarks-sidebar-content =
@@ -549,6 +567,12 @@ bookmarks-tools-toolbar-visibility-menuitem =
             [true] Skrij orodno vrstico zaznamkov
            *[other] Prikaži orodno vrstico zaznamkov
         }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Skrij vrstico zaznamkov
+           *[other] Pokaži vrstico zaznamkov
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -574,6 +598,9 @@ bookmarks-toolbar-placeholder =
     .title = Predmeti orodne vrstice z zaznamki
 bookmarks-toolbar-placeholder-button =
     .label = Predmeti orodne vrstice z zaznamki
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Dodaj trenutni zavihek med zaznamke
 
 ## Library Panel items
 
@@ -591,3 +618,9 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Nepovezan način
     .accesskey = e
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Zvok ali video na tej strani uporablja DRM, kar lahko omejuje delovanje { -brand-short-name }a.
+eme-notifications-drm-content-playing-dismiss = Zapri
+eme-notifications-drm-content-playing-dismiss-accesskey = Z

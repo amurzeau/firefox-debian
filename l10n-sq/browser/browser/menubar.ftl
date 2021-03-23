@@ -207,6 +207,8 @@ menu-history-undo-menu =
     .label = Skeda të Mbyllura Së Fundi
 menu-history-undo-window-menu =
     .label = Dritare të mbyllura Së Fundi
+menu-history-reopen-all-tabs = Rihapi Krejt Skedat
+menu-history-reopen-all-windows = Rihapi Krejt Dritaret
 
 ## Bookmarks Menu
 
@@ -325,6 +327,8 @@ menu-help-troubleshooting-info =
     .accesskey = D
 menu-help-taskmanager =
     .label = Përgjegjës Punësh
+menu-help-report-site-issue =
+    .label = Njoftoni Problem Sajti…
 menu-help-feedback-page =
     .label = Parashtroni Përshtypjet…
     .accesskey = P

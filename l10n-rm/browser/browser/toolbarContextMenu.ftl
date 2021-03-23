@@ -25,6 +25,13 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Restaurar ils tabs serrads
         }
     .accesskey = u
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Reavrir il tab serrà
+           *[other] Reavrir ils tabs serrads
+        }
+    .accesskey = a
 toolbar-context-menu-manage-extension =
     .label = Administrar l'extensiun
     .accesskey = e
@@ -46,21 +53,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Zuppentar automaticamain en la trav d'utensils
     .accesskey = a
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Zuppentar il buttun sche vid
+    .accesskey = Z
 toolbar-context-menu-remove-from-toolbar =
     .label = Allontanar da la trav d'utensils
     .accesskey = l
 toolbar-context-menu-view-customize-toolbar =
     .label = Persunalisar…
     .accesskey = a
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Adina
-    .accesskey = A
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Mai
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Modifitgar la trav da simbols…
     .accesskey = M
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Mo en in nov tab
-    .accesskey = o
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Adina mussar
     .accesskey = A

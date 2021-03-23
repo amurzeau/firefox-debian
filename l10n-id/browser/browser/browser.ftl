@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -109,6 +109,9 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Ketik lebih sedikit, temukan lebih banyak: Pencarian { $engineName } langsung dari bilah alamat Anda.
 urlbar-search-tips-redirect-2 = Mulai pencarian Anda di bilah alat untuk melihat saran dari { $engineName } dan riwayat penjelajahan Anda.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Pilih pintasan ini untuk menemukan lebih cepat apa yang dibutuhkan.
 
 ## Local search mode indicator labels in the urlbar
 
@@ -285,9 +288,13 @@ identity-https-only-dropdown-off =
     .label = Nonaktif
 identity-https-only-dropdown-off-temporarily =
     .label = Nonaktif sementara
+identity-https-only-info-turn-on2 = Nyalakan Mode HTTPS-Only untuk situs ini jika Anda ingin { -brand-short-name } meningkatkan sambungan bila memungkinkan.
+identity-https-only-info-turn-off2 = Jika laman terlihat bermasalah, Anda mungkin ingin menonaktifkan Mode HTTPS-Only lalu memuat ulang situsnya dengan HTTP yang tidak aman.
 identity-https-only-info-no-upgrade = Tidak dapat meningkatkan koneksi dari HTTP.
 identity-permissions =
     .value = Izin
+identity-permissions-storage-access-header = Kuki lintas situs
+identity-permissions-storage-access-hint = Pihak berikut dapat menggunakan kuki lintas situs dan data situs saat Anda berada di situs ini.
 identity-permissions-reload-hint = Anda mungkin perlu memuat ulang laman untuk menerapkan perubahan.
 identity-permissions-empty = Anda belum memberikan izin khusus apa pun untuk situs ini.
 identity-clear-site-data =
@@ -333,9 +340,23 @@ browser-window-close-button =
 
 ## Tab actions
 
+browser-tab-audio-playing = Memutar
+browser-tab-audio-muted = Disenyapkan
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = MEMUTAR
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = DISENYAPKAN
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = PUTAR OTOMATIS DIBLOKIR
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = GAMBAR DALAM GAMBAR
 
 ## Bookmarks toolbar items
 
+browser-import-button2 =
+    .label = Impor markah…
+    .tooltiptext = Impor markah dari peramban lain ke { -brand-short-name }.
+bookmarks-toolbar-empty-message = Untuk akses cepat, tempatkan markah Anda di sini pada bilah alat markah. <a data-l10n-name="manage-bookmarks">Kelola markah…</a>
 
 ## WebRTC Pop-up notifications
 
@@ -344,6 +365,12 @@ popup-select-camera =
     .accesskey = K
 popup-select-microphone =
     .value = Mikrofon untuk dibagikan:
+    .accesskey = M
+popup-select-camera-device =
+    .value = Kamera:
+    .accesskey = K
+popup-select-microphone-device =
+    .value = Mikrofon:
     .accesskey = M
 popup-all-windows-shared = Semua jendela yang terlihat pada layar Anda akan dibagikan.
 popup-screen-sharing-not-now =
@@ -354,6 +381,13 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = Nonaktifkan pemberitahuan dari { -brand-short-name } ketika berbagi
 popup-silence-notifications-checkbox-warning = { -brand-short-name } tidak akan menampilkan pemberitahuan saat Anda berbagi.
+popup-screen-sharing-block =
+    .label = Blokir
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Selalu blokir
+    .accesskey = S
+popup-mute-notifications-checkbox = Bisukan notifikasi situs web ketika sedang berbagi
 
 ## WebRTC window or screen share tab switch warning
 
@@ -440,8 +474,21 @@ urlbar-result-action-search-in-private = Cari di Jendela Pribadi
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = Cari lewat { $engine }
+urlbar-result-action-sponsored = Bersponsor
 urlbar-result-action-switch-tab = Pindah ke Tab
 urlbar-result-action-visit = Kunjungi
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Tekan Tab untuk mencari dengan { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Tekan Tab untuk mencari { $engine }
 # Variables
 #  $engine (String): the name of a search engine that searches the entire Web
 #  (e.g. Google).
@@ -477,6 +524,15 @@ pointerlock-warning-no-domain = Dokumen ini memiliki kendali atas pointer Anda. 
 
 ## Subframe crash notification
 
+crashed-subframe-message = <strong>Sebagian dari laman ini mogok. </strong>Untuk memberi tahu { -brand-product-name } tentang masalah ini dan memperbaikinya lebih cepat, harap kirimkan laporan.
+crashed-subframe-learnmore =
+    .label = Pelajari Lebih Lanjut
+    .accesskey = P
+crashed-subframe-learnmore-link =
+    .value = Pelajari Lebih Lanjut
+crashed-subframe-submit =
+    .label = Kirimkan Laporan
+    .accesskey = K
 
 ## Bookmarks panels, menus and toolbar
 
@@ -484,6 +540,11 @@ bookmarks-show-all-bookmarks =
     .label = Tampilkan Semua Markah…
 bookmarks-recent-bookmarks =
     .value = Baru Saja Dibuat Markah
+bookmarks-manage-bookmarks =
+    .label = Kelola Markah
+bookmarks-recent-bookmarks-panel =
+    .value = Markah Terbaru
+bookmarks-recent-bookmarks-panel-subheader = Markah Terbaru
 bookmarks-toolbar-chevron =
     .tooltiptext = Tampilkan markah lainnya
 bookmarks-sidebar-content =
@@ -507,6 +568,12 @@ bookmarks-tools-toolbar-visibility =
            *[other] Tampilkan Bilah Alat Markah
         }
 bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Sembunyikan Bilah Alat Markah
+           *[other] Tampilkan Bilah Alat Markah
+        }
+bookmarks-tools-toolbar-visibility-panel =
     .label =
         { $isVisible ->
             [true] Sembunyikan Bilah Alat Markah
@@ -537,6 +604,9 @@ bookmarks-toolbar-placeholder =
     .title = Nama Markah
 bookmarks-toolbar-placeholder-button =
     .label = Nama Markah
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Markahi Tab Saat Ini
 
 ## Library Panel items
 
@@ -546,9 +616,19 @@ library-bookmarks-bookmark-this-page =
     .label = Markahi Laman ini
 library-bookmarks-bookmark-edit =
     .label = Edit Markah Ini
+library-recent-activity-title =
+    .value = Aktivitas Terkini
 
 ## More items
 
 more-menu-go-offline =
     .label = Bekerja Luring
     .accesskey = L
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Beberapa audio atau video pada situs ini menggunakan perangkat lunak DRM yang mungkin membatasi pemakaian Anda atas { -brand-short-name }.
+eme-notifications-drm-content-playing-manage = Kelola Pengaturan
+eme-notifications-drm-content-playing-manage-accesskey = K
+eme-notifications-drm-content-playing-dismiss = Tutup
+eme-notifications-drm-content-playing-dismiss-accesskey = T

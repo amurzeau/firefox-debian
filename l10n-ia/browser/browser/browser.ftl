@@ -374,6 +374,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Microphono a compartir:
     .accesskey = M
+popup-select-camera-device =
+    .value = Camera:
+    .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = Camera
+popup-select-microphone-device =
+    .value = Microphono:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Microphono
 popup-all-windows-shared = Tote le fenestras visibile sur tu schermo essera compartite.
 popup-screen-sharing-not-now =
     .label = Non ora
@@ -383,6 +393,9 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = Disactivar notificationes ab { -brand-short-name } durante compartimento
 popup-silence-notifications-checkbox-warning = { -brand-short-name } non monstrara notificationes durante que tu comparti.
+popup-screen-sharing-block =
+    .label = Blocar
+    .accesskey = B
 
 ## WebRTC window or screen share tab switch warning
 
@@ -523,6 +536,8 @@ crashed-subframe-message = <strong>Parte de iste pagina collabeva.</strong> Pro 
 crashed-subframe-learnmore =
     .label = Saper plus
     .accesskey = p
+crashed-subframe-learnmore-link =
+    .value = Saper plus
 crashed-subframe-submit =
     .label = Inviar reporto
     .accesskey = I
@@ -537,6 +552,7 @@ bookmarks-manage-bookmarks =
     .label = Gerer marcapaginas
 bookmarks-recent-bookmarks-panel =
     .value = Marcapaginas recente
+bookmarks-recent-bookmarks-panel-subheader = Marcapaginas recente
 bookmarks-toolbar-chevron =
     .tooltiptext = Monstrar plus marcapaginas
 bookmarks-sidebar-content =
@@ -616,3 +632,19 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Travaliar disconnectite
     .accesskey = T
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Alcun audio o video in iste sito usa software DRM, le qual pote limitar le actiones super illo que { -brand-short-name } es capace de te permitter.
+eme-notifications-drm-content-playing-manage = Gerer le parametros
+eme-notifications-drm-content-playing-manage-accesskey = G
+eme-notifications-drm-content-playing-dismiss = Dimitter
+eme-notifications-drm-content-playing-dismiss-accesskey = D
+
+## Password save/update panel
+
+panel-save-update-username = Nomine de usator
+panel-save-update-password = Contrasigno
+
+## Add-on removal warning
+

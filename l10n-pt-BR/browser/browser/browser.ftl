@@ -277,7 +277,7 @@ bookmark-panel =
 
 ## Identity Panel
 
-identity-connection-not-secure = Conexão insegura
+identity-connection-not-secure = Conexão não segura
 identity-connection-secure = Conexão segura
 identity-connection-internal = Esta é uma página segura do { -brand-short-name }.
 identity-connection-file = Esta página está armazenada no seu computador.
@@ -297,7 +297,7 @@ identity-https-only-dropdown-off =
 identity-https-only-dropdown-off-temporarily =
     .label = Desativado temporariamente
 identity-https-only-info-turn-on2 = Ative o modo somente HTTPS neste site se quiser que o { -brand-short-name } promova a conexão quando possível.
-identity-https-only-info-turn-off2 = Se a página parecer não funcionar, você pode desativar o modo somente HTTPS neste site para recarregar usando HTTP inseguro.
+identity-https-only-info-turn-off2 = Se a página parecer não funcionar, você pode desativar o modo somente HTTPS neste site para recarregar usando HTTP não seguro.
 identity-https-only-info-no-upgrade = Não foi possível promover a conexão de HTTP.
 identity-permissions =
     .value = Permissões
@@ -306,7 +306,7 @@ identity-permissions-storage-access-hint = Essas partes podem usar cookies entre
 identity-permissions-reload-hint = Pode ser necessário recarregar a página para que as alterações sejam aplicadas.
 identity-permissions-empty = Você não concedeu permissões especiais a este site.
 identity-clear-site-data =
-    .label = Limpar os cookies e dados do site…
+    .label = Limpar cookies e dados de sites…
 identity-connection-not-secure-security-view = Você não está conectado com segurança a este site.
 identity-connection-verified = Você está conectado com segurança a este site.
 identity-ev-owner-label = Certificado emitido para:
@@ -374,6 +374,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Microfone a compartilhar:
     .accesskey = M
+popup-select-camera-device =
+    .value = Câmera:
+    .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = Câmera
+popup-select-microphone-device =
+    .value = Microfone:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Microfone
 popup-all-windows-shared = Todas as janelas visíveis na sua tela serão compartilhadas.
 popup-screen-sharing-not-now =
     .label = Agora não
@@ -383,6 +393,13 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = Desativar notificação do { -brand-short-name } ao compartilhar
 popup-silence-notifications-checkbox-warning = O { -brand-short-name } não exibe notificações enquanto você está compartilhando.
+popup-screen-sharing-block =
+    .label = Bloquear
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Sempre bloquear
+    .accesskey = m
+popup-mute-notifications-checkbox = Silenciar notificações de sites durante o compartilhamento
 
 ## WebRTC window or screen share tab switch warning
 
@@ -523,6 +540,8 @@ crashed-subframe-message = <strong>Parte desta página travou.</strong> Para dei
 crashed-subframe-learnmore =
     .label = Saiba mais
     .accesskey = S
+crashed-subframe-learnmore-link =
+    .value = Saiba mais
 crashed-subframe-submit =
     .label = Enviar relato
     .accesskey = E
@@ -537,6 +556,7 @@ bookmarks-manage-bookmarks =
     .label = Gerenciar favoritos
 bookmarks-recent-bookmarks-panel =
     .value = Favoritos recentes
+bookmarks-recent-bookmarks-panel-subheader = Favoritos recentes
 bookmarks-toolbar-chevron =
     .tooltiptext = Mostrar mais favoritos
 bookmarks-sidebar-content =
@@ -616,3 +636,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Trabalhar offline
     .accesskey = o
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Algum áudio ou vídeo neste site usa software DRM, o que pode limitar o que o { -brand-short-name } pode deixar você fazer com ele.
+eme-notifications-drm-content-playing-manage = Gerenciar configurações
+eme-notifications-drm-content-playing-manage-accesskey = G
+eme-notifications-drm-content-playing-dismiss = Descartar
+eme-notifications-drm-content-playing-dismiss-accesskey = D
+
+## Password save/update panel
+
+panel-save-update-username = Nome de usuário
+panel-save-update-password = Senha
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Remover { $name }?
+addon-removal-abuse-report-checkbox = Denunciar esta extensão para a { -vendor-short-name }

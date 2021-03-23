@@ -44,7 +44,6 @@ onboarding-join-form-signin-label = ¿Eguerekóma ne mba’ete?
 # Text for link to submit the sign in form
 onboarding-join-form-signin = Eñemboheraguapy
 onboarding-start-browsing-button-label = Eñepyrũ eikundaha
-onboarding-not-now-button-label = Ani ko’ág̃a
 onboarding-cards-dismiss =
     .title = Emboyke
     .aria-label = Emboyke
@@ -86,99 +85,6 @@ onboarding-benefit-monitor-title = { -monitor-brand-short-name }
 onboarding-benefit-monitor-text = Og̃uahẽta ndéve marandu nemba’etéva mba’ekuaarã ñembyai oikóramo.
 onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }{ -lockwise-brand-short-name }
 onboarding-benefit-lockwise-text = Eñangareko ñe’ẽñemi oñemo’ãva ha oku’ekuaávare.
-
-## Custom Return To AMO onboarding strings
-
-return-to-amo-subtitle = Iporãite, emohendáma { -brand-short-name }
-# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
-#
-# Variables:
-#   $addon-name (String) - Name of the add-on
-return-to-amo-addon-title = Ko’ág̃a roguerekóta <img data-l10n-name="icon"/> <b>{ $addon-name }</b> ndéve g̃uarã.
-return-to-amo-add-extension-label = Embojuaju jepysokue
-
-## Multistage 3-screen onboarding flow strings (about:welcome pages)
-
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = Eg̃uahẽporã <span data-l10n-name="zap">{ -brand-short-name }</span>-pe
-onboarding-multistage-welcome-subtitle = Kundahára ipya’e, hekorosã ha hekoñemi oykekóva chupe atyguasu viru’ỹguáva.
-onboarding-multistage-welcome-primary-button-label = Eñepyrũ Ñemboheko
-onboarding-multistage-welcome-secondary-button-label = Mboheraguapy
-onboarding-multistage-welcome-secondary-button-text = ¿Erekópa mba’ete?
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "more" should stay inside the span.
-onboarding-multistage-import-header = Emba’egueru ñe’ẽñemi, techaukaha ha <span data-l10n-name="zap">hetave</span>
-onboarding-multistage-import-subtitle = ¿Oúpa ambue kundaháragui? Ndahasyiete eguerahapávo { -brand-short-name } ndive.
-onboarding-multistage-import-primary-button-label = Eñepyrũ ñemba’egueru
-onboarding-multistage-import-secondary-button-label = Ani ko’ág̃a
-# Info displayed in the footer of import settings screen during onboarding flow.
-# This supports welcome screen showing top sites imported from the user's default browser.
-onboarding-import-sites-disclaimer = Ko’ã tenda ipapapýva ápe ejuhúta ko mba’e’okápe. { -brand-short-name } noñongatúi ha nombojuehéi mba’ekuaarã ambue kundahára pegua nderegueruséirõ.
-# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
-# Variables:
-#   $current (Int) - Number of the current page
-#   $total (Int) - Total number of pages
-onboarding-welcome-steps-indicator =
-    .aria-label = Ku’e ñepyrũgua: mba’erechaha { $current } { $total } pegua
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "look" should stay inside the span.
-onboarding-multistage-theme-header = Eiporavo peteĩva <span data-l10n-name="zap">ma’ẽ</span>
-onboarding-multistage-theme-subtitle = Eñemomba’e { -brand-short-name } peteĩ téma ndive
-onboarding-multistage-theme-primary-button-label = Eñongatu Téma
-onboarding-multistage-theme-secondary-button-label = Ani ko’ág̃a
-# Automatic theme uses operating system color settings
-onboarding-multistage-theme-label-automatic = ijeheguietéva
-onboarding-multistage-theme-label-light = Vevúi
-onboarding-multistage-theme-label-dark = Ypytũ
-# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
-onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
-
-## Please make sure to split the content of the title attribute into lines whose
-## width corresponds to about 40 Latin characters, to ensure that the tooltip
-## doesn't become too long. Line breaks will be preserved when displaying the
-## tooltip.
-
-# Tooltip displayed on hover of automatic theme
-onboarding-multistage-theme-tooltip-automatic-2 =
-    .title =
-        Emog̃uahẽ tembiapoite ohehechaháicha
-        apopyvusu votõ, poravorã ha ovetãme g̃uarã.
-# Input description for automatic theme
-onboarding-multistage-theme-description-automatic-2 =
-    .aria-description =
-        Emog̃uahẽ tembiapoite ohehechaháicha
-        apopyvusu votõ, poravorã ha ovetãme g̃uarã.
-# Tooltip displayed on hover of light theme
-onboarding-multistage-theme-tooltip-light-2 =
-    .title =
-        Eipuru ojehechaporãva votõ,
-        poravorã ha ovetã.
-# Input description for light theme
-onboarding-multistage-theme-description-light =
-    .aria-description =
-        Eipuru ojehechaporãva votõ,
-        poravorã ha ovetã.
-# Tooltip displayed on hover of dark theme
-onboarding-multistage-theme-tooltip-dark-2 =
-    .title =
-        Eipuru iñypytũva votõ,
-        poravorã ha ovetã.
-# Input description for dark theme
-onboarding-multistage-theme-description-dark =
-    .aria-description =
-        Eipuru iñypytũva votõ,
-        poravorã ha ovetã.
-# Tooltip displayed on hover of Alpenglow theme
-onboarding-multistage-theme-tooltip-alpenglow-2 =
-    .title =
-        Eipuru isa’yetáva votõ,
-        poravorã ha ovetã.
-# Input description for Alpenglow theme
-onboarding-multistage-theme-description-alpenglow =
-    .aria-description =
-        Eipuru isa’yetáva votõ,
-        poravorã ha ovetã.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -239,3 +145,104 @@ return-to-amo-sub-header = Iporãite, eguereko { -brand-short-name }
 return-to-amo-addon-header = Ko’ág̃a roguerekóta <icon></icon><b>{ $addon-name }.</b>
 return-to-amo-extension-button = Embojuaju jepysokue
 return-to-amo-get-started-button = Eñepyrũ { -brand-short-name } ndive
+onboarding-not-now-button-label = Ani ko’ág̃a
+
+## Custom Return To AMO onboarding strings
+
+return-to-amo-subtitle = Iporãite, emohendáma { -brand-short-name }
+# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-title = Ko’ág̃a roguerekóta <img data-l10n-name="icon"/> <b>{ $addon-name }</b> ndéve g̃uarã.
+return-to-amo-add-extension-label = Embojuaju jepysokue
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = Eg̃uahẽporã <span data-l10n-name="zap">{ -brand-short-name }</span>-pe
+onboarding-multistage-welcome-subtitle = Kundahára ipya’e, hekorosã ha hekoñemi oykekóva chupe atyguasu viru’ỹguáva.
+onboarding-multistage-welcome-primary-button-label = Eñepyrũ Ñemboheko
+onboarding-multistage-welcome-secondary-button-label = Mboheraguapy
+onboarding-multistage-welcome-secondary-button-text = ¿Erekópa mba’ete?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "default" should stay inside the span.
+onboarding-multistage-set-default-header = Ejapo { -brand-short-name }-gui <span data-l10n-name="zap">ijypykuéva</span>
+onboarding-multistage-set-default-subtitle = Ipya’e, hekorosã ha hekoñemi eikundaha vove.
+onboarding-multistage-set-default-primary-button-label = Ejapo ijypykuéramo
+onboarding-multistage-set-default-secondary-button-label = Ani ko’ág̃a
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = Emba’egueru ñe’ẽñemi, techaukaha ha <span data-l10n-name="zap">hetave</span>
+onboarding-multistage-import-subtitle = ¿Oúpa ambue kundaháragui? Ndahasyiete eguerahapávo { -brand-short-name } ndive.
+onboarding-multistage-import-primary-button-label = Eñepyrũ ñemba’egueru
+onboarding-multistage-import-secondary-button-label = Ani ko’ág̃a
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = Ko’ã tenda ipapapýva ápe ejuhúta ko mba’e’okápe. { -brand-short-name } noñongatúi ha nombojuehéi mba’ekuaarã ambue kundahára pegua nderegueruséirõ.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = Ku’e ñepyrũgua: mba’erechaha { $current } { $total } pegua
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = Eiporavo peteĩva <span data-l10n-name="zap">ma’ẽ</span>
+onboarding-multistage-theme-subtitle = Eñemomba’e { -brand-short-name } peteĩ téma ndive
+onboarding-multistage-theme-primary-button-label = Eñongatu Téma
+onboarding-multistage-theme-primary-button-label2 = Apopyre
+onboarding-multistage-theme-secondary-button-label = Ani ko’ág̃a
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = ijeheguietéva
+onboarding-multistage-theme-label-light = Vevúi
+onboarding-multistage-theme-label-dark = Ypytũ
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Emog̃uahẽ tembiapoite ohehechaháicha
+        apopyvusu votõ, poravorã ha ovetãme g̃uarã.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Emog̃uahẽ tembiapoite ohehechaháicha
+        apopyvusu votõ, poravorã ha ovetãme g̃uarã.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Eipuru ojehechaporãva votõ,
+        poravorã ha ovetã.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Eipuru ojehechaporãva votõ,
+        poravorã ha ovetã.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Eipuru iñypytũva votõ,
+        poravorã ha ovetã.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Eipuru iñypytũva votõ,
+        poravorã ha ovetã.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Eipuru isa’yetáva votõ,
+        poravorã ha ovetã.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Eipuru isa’yetáva votõ,
+        poravorã ha ovetã.

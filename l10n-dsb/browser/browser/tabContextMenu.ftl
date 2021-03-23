@@ -14,6 +14,13 @@ duplicate-tab =
 duplicate-tabs =
     .label = Rejtariki pódwójś
     .accesskey = R
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = Rejtariki nalěwo zacyniś
+    .accesskey = l
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Rejtariki napšawo zacyniś
     .accesskey = n
@@ -44,6 +51,9 @@ bookmark-tab =
 reopen-in-container =
     .label = W kontejnerje znowego wócyniś
     .accesskey = k
+tab-context-open-in-container =
+    .label = W nowem kontejnerje wócyniś
+    .accesskey = k
 move-to-start =
     .label = K zachopjeńkoju pśesunuś
     .accesskey = K
@@ -56,6 +66,11 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Někotare rejtariki zacyniś
     .accesskey = N
+tab-context-share-url =
+    .label = Źěliś
+    .accesskey = i
+tab-context-share-more =
+    .label = Wěcej…
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -82,6 +97,16 @@ move-tabs =
 move-tab =
     .label = Rejtarik pśesunuś
     .accesskey = s
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Zacynjony rejtarik znowego wócyniś
+            [one] $tabCount zacynjony rejtarik znowego wócyniś
+            [two] $tabCount zacynjonej rejtarika znowego wócyniś
+            [few] $tabCount zacynjone rejtariki znowego wócyniś
+           *[other] $tabCount zacynjonych rejtarikow znowego wócyniś
+        }
+    .accesskey = z
 tab-context-close-tabs =
     .label =
         { $tabCount ->

@@ -27,6 +27,12 @@ appmenuitem-more-tools =
     .label = Meer hulpmiddelen
 appmenuitem-exit =
     .label = Afsluiten
+appmenu-menu-button-closed =
+    .tooltiptext = Toepassingsmenu openen
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Toepassingsmenu sluiten
+    .label = { -brand-shorter-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -45,6 +51,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Nu synchroniseren
+appmenuitem-fxa-toolbar-sync-now =
+    .label = Nu synchroniseren
+    .value = Nu synchroniseren
+appmenuitem-fxa-manage-account = Account beheren
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Laatst gesynchroniseerd: { $time }
+    .label = Laatst gesynchroniseerd: { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = Synchroniseren en gegevens opslaan
+appmenu-fxa-signed-in-label = Aanmelden
+appmenu-fxa-setup-sync =
+    .label = Synchronisatie inschakelen…
+appmenu-fxa-show-more-tabs = Meer tabbladen tonen
 appmenuitem-save-page =
     .label = Pagina opslaan als…
 
@@ -130,8 +153,13 @@ appmenu-get-help =
 appmenu-help-troubleshooting-info =
     .label = Probleemoplossingsinformatie
     .accesskey = P
+appmenu-help-more-troubleshooting-info =
+    .label = Meer probleemoplossingsinformatie
+    .accesskey = p
 appmenu-help-taskmanager =
     .label = Taakbeheerder
+appmenu-help-report-site-issue =
+    .label = Websiteprobleem melden…
 appmenu-help-feedback-page =
     .label = Feedback verzenden…
     .accesskey = v
@@ -145,6 +173,16 @@ appmenu-help-safe-mode-without-addons =
 appmenu-help-safe-mode-with-addons =
     .label = Herstarten met ingeschakelde add-ons
     .accesskey = r
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = Probleemoplossingsmodus
+    .accesskey = m
+appmenu-help-exit-troubleshoot-mode =
+    .label = Probleemoplossingsmodus uitschakelen
+    .accesskey = m
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

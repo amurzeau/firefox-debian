@@ -129,6 +129,9 @@ menu-view-toolbars-menu =
 menu-view-customize-toolbar =
     .label = Personalisar…
     .accesskey = P
+menu-view-customize-toolbar2 =
+    .label = Personalisar le barra de instrumentos…
+    .accesskey = P
 menu-view-sidebar =
     .label = Barra lateral
     .accesskey = l
@@ -244,6 +247,12 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Aperir session in { -brand-product-name }…
     .accesskey = A
+menu-tools-extensions =
+    .label = Extensiones e themas
+    .accesskey = E
+menu-tools-fxa-sign-in2 =
+    .label = Aperir session
+    .accesskey = g
 menu-tools-turn-on-sync =
     .label = Activar { -sync-brand-short-name }…
     .accesskey = A
@@ -272,6 +281,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] O
            *[other] P
+        }
+menu-settings =
+    .label = Parametros
+    .accesskey =
+        { PLATFORM() ->
+            [windows] S
+           *[other] l
         }
 menu-tools-layout-debugger =
     .label = Depurator de disposition
@@ -325,8 +341,13 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Informationes de diagnostico
     .accesskey = I
+menu-help-more-troubleshooting-info =
+    .label = Altere informationes diagnostic
+    .accesskey = d
 menu-help-taskmanager =
     .label = Gestor de activitate
+menu-help-report-site-issue =
+    .label = Reportar un problema con le sito…
 menu-help-feedback-page =
     .label = Submitter tu opinion…
     .accesskey = S
@@ -336,6 +357,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Reinitiar con le additivos active
     .accesskey = R
+menu-help-enter-troubleshoot-mode =
+    .label = Modo diagnostic
+    .accesskey = M
+menu-help-exit-troubleshoot-mode =
+    .label = Disactivar modo diagnostic
+    .accesskey = D
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

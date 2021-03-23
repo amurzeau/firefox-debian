@@ -167,6 +167,12 @@ onboarding-multistage-welcome-primary-button-label = Započni postavljanje
 onboarding-multistage-welcome-secondary-button-label = Prijavi se
 onboarding-multistage-welcome-secondary-button-text = Imaš račun?
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "default" should stay inside the span.
+onboarding-multistage-set-default-header = Postavi { -brand-short-name } kao <span data-l10n-name="zap">zadani</span>
+onboarding-multistage-set-default-subtitle = Brzina, sigurnost i privatnost svaki put kada surfaš.
+onboarding-multistage-set-default-primary-button-label = Postavi kao zadani
+onboarding-multistage-set-default-secondary-button-label = Ne sada
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "more" should stay inside the span.
 onboarding-multistage-import-header = Uvezi svoje lozinke, <br/>zabilješke i <span data-l10n-name="zap">više</span>
 onboarding-multistage-import-subtitle = Dolaziš iz drugog preglednika? Lako je ponijeti sve u { -brand-short-name }.
@@ -186,6 +192,7 @@ onboarding-welcome-steps-indicator =
 onboarding-multistage-theme-header = Odaberite <span data-l10n-name="zap">izgled</span>
 onboarding-multistage-theme-subtitle = Prilagodite { -brand-short-name } s temom.
 onboarding-multistage-theme-primary-button-label = Spremi temu
+onboarding-multistage-theme-primary-button-label2 = Gotovo
 onboarding-multistage-theme-secondary-button-label = Ne sada
 # Automatic theme uses operating system color settings
 onboarding-multistage-theme-label-automatic = Automatski

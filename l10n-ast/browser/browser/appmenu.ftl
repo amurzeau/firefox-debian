@@ -45,6 +45,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Sincronizar agora
+appmenuitem-fxa-toolbar-sync-now =
+    .label = Sincronizar agora
+    .value = Sincronizar agora
+appmenuitem-fxa-manage-account = Xestionar la cuenta
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+appmenu-fxa-sync-and-save-data =
+    .value = Sincroniza y guarda datos
+appmenu-fxa-signed-in-label = Aniciar sesión
 appmenuitem-save-page =
     .label = Guardar la páxina como…
 
@@ -74,8 +83,8 @@ profiler-popup-settings =
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Editar los axustes…
 profiler-popup-disabled =
-    Anguaño l'analizador de rindimientu ta desactiváu, quiciabes seya porque hai
-    una llingüeta privada abierta.
+    Anguaño l'analizador de rindimientu ta desactiváu, probablemente seya porque
+    hai una llingüeta privada abierta.
 profiler-popup-recording-screen = Rexistrando…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
@@ -102,8 +111,8 @@ profiler-popup-capture-shortcut =
 
 appmenu-manage-history =
     .label = Xestionar l'historial
-appmenu-reopen-all-tabs = Abrir toles llingüetes de nueves
-appmenu-reopen-all-windows = Abrir toles ventanes de nueves
+appmenu-reopen-all-tabs = Volver abrir toles llingüetes
+appmenu-reopen-all-windows = Volver abrir toles ventanes
 
 ## Help panel
 
@@ -130,8 +139,13 @@ appmenu-get-help =
 appmenu-help-troubleshooting-info =
     .label = Información pa iguar problemes
     .accesskey = I
+appmenu-help-more-troubleshooting-info =
+    .label = Más información pa iguar problemes
+    .accesskey = a
 appmenu-help-taskmanager =
     .label = Xestor de xeres
+appmenu-help-report-site-issue =
+    .label = Informar d'un fallu del sitiu…
 appmenu-help-feedback-page =
     .label = Opinar…
     .accesskey = O
@@ -146,6 +160,16 @@ appmenu-help-safe-mode-with-addons =
     .label = Reaniciar colos complementos activaos
     .accesskey = R
 
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = Mou d'iguar problemes
+    .accesskey = M
+appmenu-help-exit-troubleshoot-mode =
+    .label = Desactivar el mou pa iguar problemes
+    .accesskey = m
+
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
@@ -153,7 +177,7 @@ appmenu-help-report-deceptive-site =
     .label = Informar de que'l sitiu ye engañosu…
     .accesskey = e
 appmenu-help-not-deceptive =
-    .label = Esto nun ye un sitiu engañosu…
+    .label = Esti sitiu nun ye engañosu…
     .accesskey = e
 
 ##

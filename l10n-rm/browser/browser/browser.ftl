@@ -374,6 +374,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Microfon per cundivider:
     .accesskey = M
+popup-select-camera-device =
+    .value = Camera:
+    .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = Camera
+popup-select-microphone-device =
+    .value = Microfon:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Microfon
 popup-all-windows-shared = Tut las fanestras visiblas sin tes visur vegnan cundivididas.
 popup-screen-sharing-not-now =
     .label = Betg ussa
@@ -383,6 +393,13 @@ popup-screen-sharing-never =
     .accesskey = M
 popup-silence-notifications-checkbox = Deactivar las communicaziuns da { -brand-short-name } durant la cundivisiun
 popup-silence-notifications-checkbox-warning = { -brand-short-name } na mussa naginas communicaziuns durant la cundivisiun dal visur.
+popup-screen-sharing-block =
+    .label = Bloccar
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Adina bloccar
+    .accesskey = d
+popup-mute-notifications-checkbox = Deactivar las notificaziuns da websites durant la cundivisiun
 
 ## WebRTC window or screen share tab switch warning
 
@@ -523,6 +540,8 @@ crashed-subframe-message = <strong>Ina part da questa pagina è collabada.</stro
 crashed-subframe-learnmore =
     .label = Ulteriuras infurmaziuns
     .accesskey = l
+crashed-subframe-learnmore-link =
+    .value = Ulteriuras infurmaziuns
 crashed-subframe-submit =
     .label = Trametter il rapport
     .accesskey = T
@@ -537,6 +556,7 @@ bookmarks-manage-bookmarks =
     .label = Administrar ils segnapaginas
 bookmarks-recent-bookmarks-panel =
     .value = Segnapaginas novs
+bookmarks-recent-bookmarks-panel-subheader = Segnapaginas novs
 bookmarks-toolbar-chevron =
     .tooltiptext = Mussar dapli segnapaginas
 bookmarks-sidebar-content =
@@ -616,3 +636,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Lavurar offline
     .accesskey = o
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Audio u video sin questa pagina utilisescha software da DRM, quai po limitar las pussaivladads da { -brand-short-name } da tractar quest cuntegn.
+eme-notifications-drm-content-playing-manage = Administrar ils parameters
+eme-notifications-drm-content-playing-manage-accesskey = M
+eme-notifications-drm-content-playing-dismiss = Serrar
+eme-notifications-drm-content-playing-dismiss-accesskey = S
+
+## Password save/update panel
+
+panel-save-update-username = Num d'utilisader
+panel-save-update-password = Pled-clav
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Allontanar { $name }?
+addon-removal-abuse-report-checkbox = Rapportar questa extensiun a { -vendor-short-name }

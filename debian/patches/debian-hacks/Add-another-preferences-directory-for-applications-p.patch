@@ -13,21 +13,21 @@ to disable the "set as default browser" dialog.
  1 file changed, 2 insertions(+)
 
 diff --git a/toolkit/xre/nsXREDirProvider.cpp b/toolkit/xre/nsXREDirProvider.cpp
-index d9bcdb1..9b044f6 100644
+index c83f1b7..29d9c16 100644
 --- a/toolkit/xre/nsXREDirProvider.cpp
 +++ b/toolkit/xre/nsXREDirProvider.cpp
-@@ -850,6 +850,7 @@ static nsresult DeleteDirIfExists(nsIFile* dir) {
- 
- static const char* const kAppendPrefDir[] = {"defaults", "preferences",
-                                              nullptr};
+@@ -857,6 +857,7 @@ static const char* const kAppendPrefDir[] = {"defaults", "preferences",
+ static const char* const kAppendBackgroundTasksPrefDir[] = {
+     "defaults", "backgroundtasks", nullptr};
+ #endif
 +static const char *const kAppendSysPrefDir[] = { "defaults", "syspref", nullptr };
  
  nsresult nsXREDirProvider::GetFilesInternal(const char* aProperty,
                                              nsISimpleEnumerator** aResult) {
-@@ -860,6 +861,7 @@ nsresult nsXREDirProvider::GetFilesInternal(const char* aProperty,
-     nsCOMArray<nsIFile> directories;
- 
-     LoadDirIntoArray(mXULAppDir, kAppendPrefDir, directories);
+@@ -873,6 +874,7 @@ nsresult nsXREDirProvider::GetFilesInternal(const char* aProperty,
+       LoadDirIntoArray(mXULAppDir, kAppendBackgroundTasksPrefDir, directories);
+     }
+ #endif
 +    LoadDirIntoArray(mXULAppDir, kAppendSysPrefDir, directories);
  
      rv = NS_NewArrayEnumerator(aResult, directories, NS_GET_IID(nsIFile));

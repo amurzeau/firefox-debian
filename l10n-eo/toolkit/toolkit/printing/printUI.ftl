@@ -17,14 +17,6 @@ printui-page-range-custom = Personecigite
 printui-page-range-label = Paĝoj
 printui-page-range-picker =
     .aria-label = Elektu intervalon de paĝoj
-printui-page-custom-range =
-    .aria-label = Elektu personecigitan intervalon de paĝoj
-# This label is displayed before the first input field indicating
-# the start of the range to print.
-printui-range-start = Ekde
-# This label is displayed between the input fields indicating
-# the start and end page of the range to print.
-printui-range-end = ĝis
 printui-page-custom-range-input =
     .aria-label = Difinu intervalon de paĝoj
     .placeholder = ekzemple 2-6, 9, 12-16
@@ -47,6 +39,11 @@ printui-scale-pcent = Skalo
 # Section title (noun) for the two-sided print options
 printui-two-sided-printing = Ambaŭflanka presado
 printui-duplex-checkbox = Presi ambaŭflanke
+printui-two-sided-printing-off = Malŝaltita
+# Flip the sheet as if it were bound along its long edge.
+printui-two-sided-printing-long-edge = Ambaŭflanke laŭ la longa rando
+# Flip the sheet as if it were bound along its short edge.
+printui-two-sided-printing-short-edge = Ambaŭflanke laŭ la mallonga rando
 # Section title for miscellaneous print options
 printui-options = Ebloj
 printui-headers-footers-checkbox = Presi paĝokapojn kaj paĝopiedojn
@@ -56,10 +53,9 @@ printui-color-mode-label = Kolora reĝimo
 printui-color-mode-color = Koloro
 printui-color-mode-bw = Nigra kaj blanka
 printui-margins = Marĝenoj
-printui-margins-default = Normo
+printui-margins-default = Normaj
 printui-margins-min = Minimuma
 printui-margins-none = Neniu
-printui-margins-custom = Personecigita
 printui-margins-custom-inches = Personecitiga (coloj)
 printui-margins-custom-top = Supre
 printui-margins-custom-top-inches = Supre (coloj)
@@ -83,6 +79,7 @@ printui-pages-per-sheet = Paĝoj en ĉiu folio
 # This is shown next to the Print button with an indefinite loading spinner
 # when the user prints a page and it is being sent to the printer.
 printui-print-progress-indicator = Preso…
+printui-print-progress-indicator-saving = Konservo…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 
@@ -104,6 +101,7 @@ printui-paper-tabloid = Duoble letera
 
 printui-error-invalid-scale = Skalo devas esti nombro inter 10 kaj 200.
 printui-error-invalid-margin = Bonvolu tajpi validan marĝenon por la elektita papergrando.
+printui-error-invalid-copies = Kopioj devas esti nombro inter 1 kaj 10000.
 # Variables
 # $numPages (integer) - Number of pages
 printui-error-invalid-range = Intervalo devas esti nombro inter 1 kaj { $numPages }.

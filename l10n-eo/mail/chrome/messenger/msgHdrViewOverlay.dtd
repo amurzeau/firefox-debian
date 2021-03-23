@@ -2,109 +2,113 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY toField4.label "To">
-<!ENTITY fromField4.label "From">
-<!ENTITY senderField4.label "Sender">
-<!ENTITY author.label "Author">
-<!ENTITY organizationField4.label "Organization">
-<!ENTITY replyToField4.label "Reply to">
+<!ENTITY toField4.label "Al">
+<!ENTITY fromField4.label "El">
+<!ENTITY senderField4.label "Sendinto">
+<!ENTITY author.label "Aŭtoro">
+<!ENTITY organizationField4.label "Firmao/organizaĵo">
+<!ENTITY replyToField4.label "Respondi al">
 
-<!ENTITY subjectField4.label "Subject">
-<!ENTITY ccField4.label "Cc">
-<!ENTITY bccField4.label "Bcc">
-<!ENTITY newsgroupsField4.label "Newsgroups">
-<!ENTITY followupToField4.label "Followup to">
-<!ENTITY tagsHdr4.label "Tags">
-<!ENTITY dateField4.label "Date">
-<!ENTITY userAgentField4.label "User agent">
-<!ENTITY referencesField4.label "References">
-<!ENTITY messageIdField4.label "Message ID">
-<!ENTITY inReplyToField4.label "In reply to">
-<!ENTITY originalWebsite4.label "Website">
+<!ENTITY subjectField4.label "Temo">
+<!ENTITY ccField4.label "Kopio">
+<!ENTITY bccField4.label "Kaŝkopio">
+<!ENTITY newsgroupsField4.label "Grupoj">
+<!ENTITY followupToField4.label "Pluigi al">
+<!ENTITY tagsHdr4.label "Etikedoj">
+<!ENTITY dateField4.label "Dato">
+<!ENTITY userAgentField4.label "Programo">
+<!ENTITY referencesField4.label "Referencoj">
+<!ENTITY messageIdField4.label "Identigilo">
+<!ENTITY inReplyToField4.label "En respondo al">
+<!ENTITY originalWebsite4.label "Retejo">
 
-<!ENTITY hdrArchiveButton1.label "Archive">
-<!ENTITY hdrArchiveButton1.tooltip "Archive this message">
-<!ENTITY hdrSmartReplyButton1.label "Smart Reply">
-<!ENTITY hdrReplyButton1.label "Reply">
-<!ENTITY hdrReplyButton2.tooltip "Reply to the sender of this message">
-<!ENTITY hdrReplyAllButton1.label "Reply All">
-<!ENTITY hdrReplyAllButton1.tooltip "Reply to sender and all recipients">
-<!ENTITY hdrReplyListButton1.label "Reply List">
-<!ENTITY hdrReplyListButton1.tooltip "Reply to mailing list">
-<!ENTITY hdrFollowupButton1.label "Followup">
-<!ENTITY hdrFollowupButton1.tooltip "Post a followup to this newsgroup">
-<!ENTITY hdrForwardButton1.label "Forward">
-<!ENTITY hdrForwardButton1.tooltip "Forward this message">
-<!ENTITY hdrJunkButton1.label "Junk">
-<!ENTITY hdrJunkButton1.tooltip "Mark this message as junk">
-<!ENTITY hdrTrashButton1.label "Delete">
-<!ENTITY hdrTrashButton1.tooltip "Delete this message">
+<!ENTITY hdrArchiveButton1.label "Arĥivi">
+<!ENTITY hdrArchiveButton1.tooltip "Arĥivi tiun ĉi mesaĝon">
+<!ENTITY hdrSmartReplyButton1.label "Kunigita butono de respondo">
+<!ENTITY hdrReplyButton1.label "Respondi">
+<!ENTITY hdrReplyButton2.tooltip "Respondi al la sendinto de tiu ĉi mesaĝo">
+<!ENTITY hdrReplyAllButton1.label "Respondi al ĉiuj">
+<!ENTITY hdrReplyAllButton1.tooltip "Respondi al la sendinto kaj al ĉiuj ricevontojn">
+<!ENTITY hdrReplyListButton1.label "Respondi al listo">
+<!ENTITY hdrReplyListButton1.tooltip "Respondi al dissendolisto">
+<!ENTITY hdrFollowupButton1.label "Respondi al grupo">
+<!ENTITY hdrFollowupButton1.tooltip "Sendi respondon al tiu ĉi novaĵgrupo">
+<!ENTITY hdrForwardButton1.label "Plusendi">
+<!ENTITY hdrForwardButton1.tooltip "Plusendi tiun ĉi mesaĝon">
+<!ENTITY hdrJunkButton1.label "Trudmesaĝo">
+<!ENTITY hdrJunkButton1.tooltip "Marki tiun ĉi mesaĝon kiel nedeziratan">
+<!ENTITY hdrTrashButton1.label "Forigi">
+<!ENTITY hdrTrashButton1.tooltip "Forigi tiun ĉi mesaĝon">
 
-<!ENTITY hdrViewToolbarShowFull.label "Show Icons and Text">
-<!ENTITY hdrViewToolbarShowFull.accesskey "a">
-<!ENTITY hdrViewToolbarShowIcons.label "Show Icons Only">
-<!ENTITY hdrViewToolbarShowIcons.accesskey "I">
-<!ENTITY hdrViewToolbarShowText.label "Show Text Only">
-<!ENTITY hdrViewToolbarShowText.accesskey "T">
-<!ENTITY hdrViewToolbarAlwaysReplySender.label "Always Show Reply to Sender">
-<!ENTITY hdrViewToolbarAlwaysReplySender.accesskey "R">
+<!ENTITY hdrViewToolbarShowFull.label "Montri bildsimbolojn kaj tekstojn">
+<!ENTITY hdrViewToolbarShowFull.accesskey "k">
+<!ENTITY hdrViewToolbarShowIcons.label "Montri nur bildsimbolojn">
+<!ENTITY hdrViewToolbarShowIcons.accesskey "b">
+<!ENTITY hdrViewToolbarShowText.label "Montri nur tekstojn">
+<!ENTITY hdrViewToolbarShowText.accesskey "t">
+<!ENTITY hdrViewToolbarAlwaysReplySender.label "Ĉiam montri la butonon “respondi” (al sendinto)">
+<!ENTITY hdrViewToolbarAlwaysReplySender.accesskey "r">
 
-<!ENTITY otherActionsButton2.label "More">
-<!ENTITY otherActionsButton.tooltip "More actions">
-<!ENTITY otherActionsOpenConversation1.label "Open in Conversation">
-<!ENTITY otherActionsOpenConversation1.accesskey "C">
-<!ENTITY otherActionsOpenInNewWindow1.label "Open in New Window">
-<!ENTITY otherActionsOpenInNewWindow1.accesskey "W">
-<!ENTITY otherActionsOpenInNewTab1.label "Open in New Tab">
-<!ENTITY otherActionsOpenInNewTab1.accesskey "T">
-<!ENTITY markAsReadMenuItem1.label "Mark as Read">
-<!ENTITY markAsReadMenuItem1.accesskey "R">
-<!ENTITY markAsUnreadMenuItem1.label "Mark as Unread">
-<!ENTITY markAsUnreadMenuItem1.accesskey "r">
-<!ENTITY saveAsMenuItem1.label "Save as…">
-<!ENTITY saveAsMenuItem1.accesskey "S">
-<!ENTITY viewSourceMenuItem1.label "View Source">
-<!ENTITY viewSourceMenuItem1.accesskey "V">
-<!ENTITY otherActionsPrint1.label "Print…">
+<!ENTITY otherActionsButton2.label "Pli">
+<!ENTITY otherActionsButton.tooltip "Pliaj agoj">
+<!ENTITY otherActionsOpenConversation1.label "Malfermi fadenon">
+<!ENTITY otherActionsOpenConversation1.accesskey "a">
+<!ENTITY otherActionsOpenInNewWindow1.label "Malfermi en nova fenestro">
+<!ENTITY otherActionsOpenInNewWindow1.accesskey "f">
+<!ENTITY otherActionsOpenInNewTab1.label "Malfermi en nova langeto">
+<!ENTITY otherActionsOpenInNewTab1.accesskey "l">
+<!ENTITY markAsReadMenuItem1.label "Marki kiel legitan">
+<!ENTITY markAsReadMenuItem1.accesskey "M">
+<!ENTITY markAsUnreadMenuItem1.label "Marki kiel nelegitan">
+<!ENTITY markAsUnreadMenuItem1.accesskey "M">
+<!ENTITY saveAsMenuItem1.label "Konservi kiel…">
+<!ENTITY saveAsMenuItem1.accesskey "K">
+<!ENTITY viewSourceMenuItem1.label "Montri fonton">
+<!ENTITY viewSourceMenuItem1.accesskey "o">
+<!ENTITY otherActionsPrint1.label "Presi…">
 <!ENTITY otherActionsPrint1.accesskey "P">
 
 <!-- Attachment bar context menu items -->
-<!ENTITY startExpandedCmd.label    "Montri liston de kunsendaĵoj">
-<!ENTITY startExpandedCmd.accesskey    "S">
+<!ENTITY startExpandedCmd.label    "Implicite montri liston de kunsendaĵoj">
+<!ENTITY startExpandedCmd.accesskey    "I">
 
 <!-- Attachment context menu items -->
-<!ENTITY openAttachmentCmd.label    "Open">
-<!ENTITY openAttachmentCmd.accesskey    "O">
-<!ENTITY saveAsAttachmentCmd.label    "Save As…">
-<!ENTITY saveAsAttachmentCmd.accesskey    "S">
-<!ENTITY detachAttachmentCmd.label    "Detach…">
+<!ENTITY openAttachmentCmd.label    "Malfermi">
+<!ENTITY openAttachmentCmd.accesskey    "M">
+<!ENTITY saveAsAttachmentCmd.label    "Konservi kiel…">
+<!ENTITY saveAsAttachmentCmd.accesskey    "i">
+<!ENTITY detachAttachmentCmd.label    "Disigi…">
 <!ENTITY detachAttachmentCmd.accesskey    "D">
-<!ENTITY deleteAttachmentCmd.label    "Delete">
-<!ENTITY deleteAttachmentCmd.accesskey    "e">
-<!ENTITY openAllAttachmentsCmd.label    "Open All…">
-<!ENTITY openAllAttachmentsCmd.accesskey    "O">
-<!ENTITY saveAllAttachmentsCmd.label    "Save All…">
-<!ENTITY saveAllAttachmentsCmd.accesskey    "S">
-<!ENTITY detachAllAttachmentsCmd.label    "Detach All…">
+<!ENTITY deleteAttachmentCmd.label    "Forigi">
+<!ENTITY deleteAttachmentCmd.accesskey    "F">
+<!ENTITY openAllAttachmentsCmd.label    "Malfermi ĉiujn…">
+<!ENTITY openAllAttachmentsCmd.accesskey    "M">
+<!ENTITY saveAllAttachmentsCmd.label    "Konservi ĉiujn…">
+<!ENTITY saveAllAttachmentsCmd.accesskey    "i">
+<!ENTITY detachAllAttachmentsCmd.label    "Disigi ĉiujn…">
 <!ENTITY detachAllAttachmentsCmd.accesskey    "D">
-<!ENTITY deleteAllAttachmentsCmd.label    "Delete All…">
-<!ENTITY deleteAllAttachmentsCmd.accesskey    "e">
+<!ENTITY deleteAllAttachmentsCmd.label    "Forigi ĉiujn…">
+<!ENTITY deleteAllAttachmentsCmd.accesskey    "F">
 
-<!ENTITY openAttachment.tooltip "Open the attached file">
+<!ENTITY openAttachment.tooltip "Malfermi kunsenditan dosieron">
 
+<!ENTITY detachedAttachmentFolder.show.label        "Malfermi entenantan dosierujon">
+<!ENTITY detachedAttachmentFolder.show.accesskey    "e">
+<!ENTITY detachedAttachmentFolder.showMac.label     "Montri en Finder">
+<!ENTITY detachedAttachmentFolder.showMac.accesskey "e">
 
 <!-- Attachment toolbar items -->
-<!ENTITY saveAttachmentButton1.label       "Save">
-<!ENTITY saveAttachmentButton1.tooltip     "Save the attached file">
-<!ENTITY saveAllAttachmentsButton1.label   "Save All">
-<!ENTITY saveAllAttachmentsButton1.tooltip "Save all the attached files">
+<!ENTITY saveAttachmentButton1.label       "Konservi">
+<!ENTITY saveAttachmentButton1.tooltip     "Konservi kunsenditan dosieron">
+<!ENTITY saveAllAttachmentsButton1.label   "Konservi ĉiujn">
+<!ENTITY saveAllAttachmentsButton1.tooltip "Konservi ĉiujn kunsenditajn dosierojn">
 
-<!ENTITY copyLinkCmd.label        "Copy Link Location">
-<!ENTITY copyLinkCmd.accesskey    "C">
+<!ENTITY copyLinkCmd.label        "Kopii adreson de ligilo">
+<!ENTITY copyLinkCmd.accesskey    "K">
 
-<!ENTITY CopyMessageId.label "Copy Message-ID">
-<!ENTITY CopyMessageId.accesskey "C">
-<!ENTITY OpenMessageForMsgId.label "Open Message For ID">
-<!ENTITY OpenMessageForMsgId.accesskey "O">
-<!ENTITY OpenBrowserWithMsgId.label "Open Browser With Message-ID">
-<!ENTITY OpenBrowserWithMsgId.accesskey "B">
+<!ENTITY CopyMessageId.label "Kopii identigilon de mesaĝo">
+<!ENTITY CopyMessageId.accesskey "K">
+<!ENTITY OpenMessageForMsgId.label "Malfermi mesaĝon (laŭ identigilo)">
+<!ENTITY OpenMessageForMsgId.accesskey "M">
+<!ENTITY OpenBrowserWithMsgId.label "Malfermi mesaĝon (laŭ identigilo) en retumilo">
+<!ENTITY OpenBrowserWithMsgId.accesskey "r">

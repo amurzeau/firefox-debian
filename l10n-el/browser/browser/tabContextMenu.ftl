@@ -14,6 +14,13 @@ duplicate-tab =
 duplicate-tabs =
     .label = Αντιγραφή καρτελών
     .accesskey = Α
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = Κλείσιμο καρτελών στα αριστερά
+    .accesskey = μ
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Κλείσιμο καρτελών στα δεξιά
     .accesskey = ξ
@@ -44,6 +51,9 @@ bookmark-tab =
 reopen-in-container =
     .label = Άνοιγμα ξανά σε θεματική καρτέλα
     .accesskey = ξ
+tab-context-open-in-container =
+    .label = Άνοιγμα σε νέα θεματική καρτέλα
+    .accesskey = ο
 move-to-start =
     .label = Μετακίνηση στην αρχή
     .accesskey = α
@@ -56,6 +66,11 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Κλείσιμο πολλαπλών καρτελών
     .accesskey = π
+tab-context-share-url =
+    .label = Κοινή χρήση
+    .accesskey = χ
+tab-context-share-more =
+    .label = Περισσότερα…
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -80,6 +95,13 @@ move-tabs =
 move-tab =
     .label = Μετακίνηση καρτέλας
     .accesskey = ν
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Επαναφορά κλειστής καρτέλας
+           *[other] Επαναφορά κλειστών καρτελών
+        }
+    .accesskey = φ
 tab-context-close-tabs =
     .label =
         { $tabCount ->

@@ -350,6 +350,14 @@ browser-window-close-button =
 
 browser-tab-audio-playing = Afspiller
 browser-tab-audio-muted = Lyd slået fra
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = AFSPILLER
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = LYD SLÅET FRA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = AUTOPLAY BLOKERET
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = BILLEDE-I-BILLEDE
 
 ## Bookmarks toolbar items
 
@@ -366,6 +374,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Mikrofon til deling:
     .accesskey = M
+popup-select-camera-device =
+    .value = Kamera:
+    .accesskey = K
+popup-select-camera-icon =
+    .tooltiptext = Kamera
+popup-select-microphone-device =
+    .value = Mikrofon:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Mikrofon
 popup-all-windows-shared = Alle synlige vinduer på din skærm vil blive delt.
 popup-screen-sharing-not-now =
     .label = Ikke nu
@@ -375,6 +393,13 @@ popup-screen-sharing-never =
     .accesskey = a
 popup-silence-notifications-checkbox = Deaktiver beskeder fra { -brand-short-name } ved deling
 popup-silence-notifications-checkbox-warning = { -brand-short-name } vil ikke vise beskeder, når du deler
+popup-screen-sharing-block =
+    .label = Bloker
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Bloker altid
+    .accesskey = a
+popup-mute-notifications-checkbox = Slå websteds-beskeder fra ved deling
 
 ## WebRTC window or screen share tab switch warning
 
@@ -515,6 +540,8 @@ crashed-subframe-message = <strong>En del af denne side gik ned</strong>. Indsen
 crashed-subframe-learnmore =
     .label = Læs mere
     .accesskey = L
+crashed-subframe-learnmore-link =
+    .value = Læs mere
 crashed-subframe-submit =
     .label = Indsend rapport
     .accesskey = I
@@ -525,6 +552,11 @@ bookmarks-show-all-bookmarks =
     .label = Vis alle bogmærker
 bookmarks-recent-bookmarks =
     .value = Seneste bogmærker
+bookmarks-manage-bookmarks =
+    .label = Håndter bogmærker
+bookmarks-recent-bookmarks-panel =
+    .value = Seneste bogmærker
+bookmarks-recent-bookmarks-panel-subheader = Senester bogmærker
 bookmarks-toolbar-chevron =
     .tooltiptext = Vis flere bogmærker
 bookmarks-sidebar-content =
@@ -548,6 +580,12 @@ bookmarks-tools-toolbar-visibility =
            *[other] Vis bogmærkelinjen
         }
 bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Skjul bogmærkelinjen
+           *[other] Vis bogmærkelinjen
+        }
+bookmarks-tools-toolbar-visibility-panel =
     .label =
         { $isVisible ->
             [true] Skjul bogmærkelinjen
@@ -578,6 +616,9 @@ bookmarks-toolbar-placeholder =
     .title = Bogmærkelinje-elementer
 bookmarks-toolbar-placeholder-button =
     .label = Bogmærkelinje-elementer
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Gem bogmærke til det aktuelle faneblad
 
 ## Library Panel items
 
@@ -595,3 +636,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Arbejd offline
     .accesskey = o
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Noget lyd- eller videoindhold på dette websted bruger DRM-software, hvilken kan begrænse hvad { -brand-short-name } kan lade dig gøre med det.
+eme-notifications-drm-content-playing-manage = Håndter indstillinger
+eme-notifications-drm-content-playing-manage-accesskey = H
+eme-notifications-drm-content-playing-dismiss = Afvis
+eme-notifications-drm-content-playing-dismiss-accesskey = A
+
+## Password save/update panel
+
+panel-save-update-username = Brugernavn
+panel-save-update-password = Adgangskode
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Fjern { $name }?
+addon-removal-abuse-report-checkbox = Rapporter denne udvidelse til { -vendor-short-name }

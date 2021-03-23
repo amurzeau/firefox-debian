@@ -44,7 +44,6 @@ onboarding-join-form-signin-label = Onko sinulla jo tili?
 # Text for link to submit the sign in form
 onboarding-join-form-signin = Kirjaudu sisään
 onboarding-start-browsing-button-label = Aloita selaaminen
-onboarding-not-now-button-label = Ei nyt
 onboarding-cards-dismiss =
     .title = Hylkää
     .aria-label = Hylkää
@@ -86,99 +85,6 @@ onboarding-benefit-monitor-title = { -monitor-brand-short-name }
 onboarding-benefit-monitor-text = Saat ilmoituksen, kun tietovuodosta on löytynyt henkilökohtaisia tietojasi.
 onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
 onboarding-benefit-lockwise-text = Hallitse salasanoja, jotka ovat turvassa ja mukaan otettavissa.
-
-## Custom Return To AMO onboarding strings
-
-return-to-amo-subtitle = Hienoa, sinulla on { -brand-short-name }
-# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
-#
-# Variables:
-#   $addon-name (String) - Name of the add-on
-return-to-amo-addon-title = Hankitaanpa sinulle nyt <img data-l10n-name="icon"/> <b>{ $addon-name }</b>.
-return-to-amo-add-extension-label = Lisää laajennus
-
-## Multistage 3-screen onboarding flow strings (about:welcome pages)
-
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = Tässä <span data-l10n-name="zap">{ -brand-short-name }</span>, tervetuloa
-onboarding-multistage-welcome-subtitle = Nopea, turvallinen ja yksityinen selain, jonka takana on voittoa tavoittelematon organisaatio.
-onboarding-multistage-welcome-primary-button-label = Aloita
-onboarding-multistage-welcome-secondary-button-label = Kirjaudu sisään
-onboarding-multistage-welcome-secondary-button-text = Onko sinulla jo tili?
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "more" should stay inside the span.
-onboarding-multistage-import-header = Tuo salasanat, kirjanmerkit ja <span data-l10n-name="zap">paljon muuta</span>
-onboarding-multistage-import-subtitle = Oletko siirtymässä toisesta selaimesta? Tietojen tuominen { -brand-short-name }iin on helppoa.
-onboarding-multistage-import-primary-button-label = Aloita tuonti
-onboarding-multistage-import-secondary-button-label = Ei nyt
-# Info displayed in the footer of import settings screen during onboarding flow.
-# This supports welcome screen showing top sites imported from the user's default browser.
-onboarding-import-sites-disclaimer = Tässä listatut sivustot löydettiin tältä laitteelta. { -brand-short-name } ei tallenna eikä synkronoi tietoja toisesta selaimesta, jos päätät olla tuomatta niitä.
-# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
-# Variables:
-#   $current (Int) - Number of the current page
-#   $total (Int) - Total number of pages
-onboarding-welcome-steps-indicator =
-    .aria-label = Käytön aloittaminen: näkymä { $current }/{ $total }
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "look" should stay inside the span.
-onboarding-multistage-theme-header = Valitse <span data-l10n-name="zap">ulkoasu</span>
-onboarding-multistage-theme-subtitle = Mukauta { -brand-short-name }ia teemalla.
-onboarding-multistage-theme-primary-button-label = Tallenna teema
-onboarding-multistage-theme-secondary-button-label = Ei nyt
-# Automatic theme uses operating system color settings
-onboarding-multistage-theme-label-automatic = Automaattinen
-onboarding-multistage-theme-label-light = Vaalea
-onboarding-multistage-theme-label-dark = Tumma
-# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
-onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
-
-## Please make sure to split the content of the title attribute into lines whose
-## width corresponds to about 40 Latin characters, to ensure that the tooltip
-## doesn't become too long. Line breaks will be preserved when displaying the
-## tooltip.
-
-# Tooltip displayed on hover of automatic theme
-onboarding-multistage-theme-tooltip-automatic-2 =
-    .title =
-        Käytä käyttöjärjestelmän ulkoasua
-        painikkeille, valikoille ja ikkunoille.
-# Input description for automatic theme
-onboarding-multistage-theme-description-automatic-2 =
-    .aria-description =
-        Käytä käyttöjärjestelmän ulkoasua
-        painikkeille, valikoille ja ikkunoille.
-# Tooltip displayed on hover of light theme
-onboarding-multistage-theme-tooltip-light-2 =
-    .title =
-        Käytä vaaleaa ulkoasua
-        painikkeille, valikoille ja ikkunoille.
-# Input description for light theme
-onboarding-multistage-theme-description-light =
-    .aria-description =
-        Käytä vaaleaa ulkoasua
-        painikkeille, valikoille ja ikkunoille.
-# Tooltip displayed on hover of dark theme
-onboarding-multistage-theme-tooltip-dark-2 =
-    .title =
-        Käytä tummaa ulkoasua
-        painikkeille, valikoille ja ikkunoile.
-# Input description for dark theme
-onboarding-multistage-theme-description-dark =
-    .aria-description =
-        Käytä tummaa ulkoasua
-        painikkeille, valikoille ja ikkunoile.
-# Tooltip displayed on hover of Alpenglow theme
-onboarding-multistage-theme-tooltip-alpenglow-2 =
-    .title =
-        Käytä värikästä ulkoasua
-        painikkeille, valikoille ja ikkunoille.
-# Input description for Alpenglow theme
-onboarding-multistage-theme-description-alpenglow =
-    .aria-description =
-        Käytä värikästä ulkoasua
-        painikkeille, valikoille ja ikkunoille.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -239,3 +145,104 @@ return-to-amo-sub-header = Hienoa, sinulla on { -brand-short-name }
 return-to-amo-addon-header = Hankitaanpa sinulle nyt <icon></icon><b>{ $addon-name }.</b>
 return-to-amo-extension-button = Lisää laajennus
 return-to-amo-get-started-button = Aloita { -brand-short-name }in käyttö
+onboarding-not-now-button-label = Ei nyt
+
+## Custom Return To AMO onboarding strings
+
+return-to-amo-subtitle = Hienoa, sinulla on { -brand-short-name }
+# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-title = Hankitaanpa sinulle nyt <img data-l10n-name="icon"/> <b>{ $addon-name }</b>.
+return-to-amo-add-extension-label = Lisää laajennus
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = Tässä <span data-l10n-name="zap">{ -brand-short-name }</span>, tervetuloa
+onboarding-multistage-welcome-subtitle = Nopea, turvallinen ja yksityinen selain, jonka takana on voittoa tavoittelematon organisaatio.
+onboarding-multistage-welcome-primary-button-label = Aloita
+onboarding-multistage-welcome-secondary-button-label = Kirjaudu sisään
+onboarding-multistage-welcome-secondary-button-text = Onko sinulla jo tili?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "default" should stay inside the span.
+onboarding-multistage-set-default-header = Aseta { -brand-short-name } <span data-l10n-name="zap">oletukseksi</span>
+onboarding-multistage-set-default-subtitle = Nopeutta, turvallisuutta ja yksityisyyttä joka kerta kun selaat.
+onboarding-multistage-set-default-primary-button-label = Aseta oletukseksi
+onboarding-multistage-set-default-secondary-button-label = Ei nyt
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = Tuo salasanat, kirjanmerkit ja <span data-l10n-name="zap">paljon muuta</span>
+onboarding-multistage-import-subtitle = Oletko siirtymässä toisesta selaimesta? Tietojen tuominen { -brand-short-name }iin on helppoa.
+onboarding-multistage-import-primary-button-label = Aloita tuonti
+onboarding-multistage-import-secondary-button-label = Ei nyt
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = Tässä listatut sivustot löydettiin tältä laitteelta. { -brand-short-name } ei tallenna eikä synkronoi tietoja toisesta selaimesta, jos päätät olla tuomatta niitä.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = Käytön aloittaminen: näkymä { $current }/{ $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = Valitse <span data-l10n-name="zap">ulkoasu</span>
+onboarding-multistage-theme-subtitle = Mukauta { -brand-short-name }ia teemalla.
+onboarding-multistage-theme-primary-button-label = Tallenna teema
+onboarding-multistage-theme-primary-button-label2 = Valmis
+onboarding-multistage-theme-secondary-button-label = Ei nyt
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = Automaattinen
+onboarding-multistage-theme-label-light = Vaalea
+onboarding-multistage-theme-label-dark = Tumma
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Käytä käyttöjärjestelmän ulkoasua
+        painikkeille, valikoille ja ikkunoille.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Käytä käyttöjärjestelmän ulkoasua
+        painikkeille, valikoille ja ikkunoille.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Käytä vaaleaa ulkoasua
+        painikkeille, valikoille ja ikkunoille.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Käytä vaaleaa ulkoasua
+        painikkeille, valikoille ja ikkunoille.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Käytä tummaa ulkoasua
+        painikkeille, valikoille ja ikkunoile.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Käytä tummaa ulkoasua
+        painikkeille, valikoille ja ikkunoile.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Käytä värikästä ulkoasua
+        painikkeille, valikoille ja ikkunoille.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Käytä värikästä ulkoasua
+        painikkeille, valikoille ja ikkunoille.

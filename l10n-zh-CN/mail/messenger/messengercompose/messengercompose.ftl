@@ -40,6 +40,34 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = 移动到“密送”
     .accesskey = b
+
+# Attachment widget
+
+ctrl-cmd-shift-pretty-prefix =
+    { PLATFORM() ->
+        [macos] ⇧ ⌘{ " " }
+       *[other] Ctrl+Shift+
+    }
+trigger-attachment-picker-key = A
+toggle-attachment-pane-key = M
+menuitem-toggle-attachment-pane =
+    .label = 附件窗格
+    .accesskey = m
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }
+toolbar-button-add-attachment =
+    .label = 附件
+    .tooltiptext = 添加附件（{ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }）
+add-attachment-notification-reminder =
+    .label = 添加附件…
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+menuitem-attach-files =
+    .label = 文件…
+    .accesskey = F
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
+context-menuitem-attach-files =
+    .label = 附件…
+    .accesskey = F
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count =
     .value =
@@ -58,6 +86,29 @@ attachments-placeholder-tooltip =
 #   { attachment-bucket-count.accesskey } - Do not localize this message.
 key-toggle-attachment-pane =
     .key = { attachment-bucket-count.accesskey }
+expand-attachment-pane-tooltip =
+    .tooltiptext = 显示附件窗格（{ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }）
+collapse-attachment-pane-tooltip =
+    .tooltiptext = 隐藏附件窗格（{ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }）
+drop-file-label-attachment =
+    { $count ->
+       *[other] 添加为附件
+    }
+drop-file-label-inline =
+    { $count ->
+       *[other] 行内追加
+    }
+
+# Reorder Attachment Panel
+
+move-attachment-first-panel-button =
+    .label = 移到首位
+move-attachment-left-panel-button =
+    .label = 向左移动
+move-attachment-right-panel-button =
+    .label = 向右移动
+move-attachment-last-panel-button =
+    .label = 移到末位
 button-return-receipt =
     .label = 回执
     .tooltiptext = 要求对方收件后发送回执

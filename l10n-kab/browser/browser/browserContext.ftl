@@ -111,6 +111,9 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Ldi aseɣwen deg yiccer amagbar amaynut
     .accesskey = L
+main-context-menu-open-link-container =
+    .label = Ldi aseɣwen deg umagbar amaynut
+    .accesskey = L
 main-context-menu-open-link-new-window =
     .label = Ldi aseɣwen deg usfaylu amaynut
     .accesskey = d
@@ -120,6 +123,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = Creḍ aseɣwen-a
     .accesskey = r
+main-context-menu-bookmark-link =
+    .label = Creḍ aseɣwen
+    .accesskey = C
 main-context-menu-save-link =
     .label = Sekles aseɣwen s yisem…
     .accesskey = S
@@ -131,11 +137,19 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = Nɣel tansa imayl
     .accesskey = t
 main-context-menu-copy-link =
     .label = Nɣel tansa n useɣwen
+    .accesskey = N
+main-context-menu-copy-link-simple =
+    .label = Nɣel aseɣwen
     .accesskey = N
 
 ## Media (video/audio) controls
@@ -179,6 +193,16 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Arured (×2)
     .accesskey = u
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Loop
     .accesskey = L
@@ -215,6 +239,9 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = Sken tavidyut
     .accesskey = m
+main-context-menu-image-view-new-tab =
+    .label = Ldi tugna deg yiccer amaynut
+    .accesskey = L
 main-context-menu-image-copy =
     .label = Nɣel tugna
     .accesskey = n
@@ -227,6 +254,15 @@ main-context-menu-video-copy-location =
 main-context-menu-audio-copy-location =
     .label = Nɣel tansa n umeslaw
     .accesskey = N
+main-context-menu-image-copy-link =
+    .label = Nɣel aseɣwen n tugna
+    .accesskey = N
+main-context-menu-video-copy-link =
+    .label = Nɣel aseɣwen n tvidyut
+    .accesskey = ɣ
+main-context-menu-audio-copy-link =
+    .label = Nɣel aseɣwen n umeslaw
+    .accesskey = ɣ
 main-context-menu-image-save-as =
     .label = Sekles tugna s yisem…
     .accesskey = u
@@ -239,6 +275,9 @@ main-context-menu-image-set-as-background =
 main-context-menu-image-info =
     .label = Talɣut ɣef tugna
     .accesskey = l
+main-context-menu-image-set-image-as-background =
+    .label = Sbadu tugna d tugna n ugilal n tnarit…
+    .accesskey = S
 main-context-menu-image-desc =
     .label = Aglam n tugna
     .accesskey = t
@@ -274,6 +313,20 @@ main-context-menu-view-background-image =
     .accesskey = S
 main-context-menu-generate-new-password =
     .label = Seqdec awal uffir yettwasirewen…
+    .accesskey = S
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = Seqdec inekcam yettwakelsen
+    .accesskey = k
+
+##
+
+main-context-menu-manage-logins =
+    .label = Sefrek inekcam
     .accesskey = S
 main-context-menu-keyword =
     .label = Rnu awal tasarut i unadi-a…
@@ -331,6 +384,9 @@ main-context-menu-bidi-switch-page =
     .accesskey = n
 main-context-menu-inspect-element =
     .label = Sweḍ aferdis
+    .accesskey = S
+main-context-menu-inspect =
+    .label = Sweḍ
     .accesskey = S
 main-context-menu-inspect-a11y-properties =
     .label = Sweḍ timeẓliyin n tnekcumt

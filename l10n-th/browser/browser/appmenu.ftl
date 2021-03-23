@@ -27,6 +27,12 @@ appmenuitem-more-tools =
     .label = เครื่องมือเพิ่มเติม
 appmenuitem-exit =
     .label = ออก
+appmenu-menu-button-closed =
+    .tooltiptext = เปิดเมนูแอปพลิเคชัน
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = ปิดเมนูแอปพลิเคชัน
+    .label = { -brand-shorter-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -45,6 +51,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = ซิงค์ตอนนี้
+appmenuitem-fxa-toolbar-sync-now =
+    .label = ซิงค์ตอนนี้
+    .value = ซิงค์ตอนนี้
+appmenuitem-fxa-manage-account = จัดการบัญชี
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = ซิงค์ล่าสุดเมื่อ { $time }
+    .label = ซิงค์ล่าสุดเมื่อ { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = ซิงค์และบันทึก
+appmenu-fxa-signed-in-label = ลงชื่อเข้า
+appmenu-fxa-setup-sync =
+    .label = เปิดการซิงค์…
+appmenu-fxa-show-more-tabs = แสดงแท็บเพิ่มเติม
 appmenuitem-save-page =
     .label = บันทึกหน้าเป็น…
 
@@ -66,13 +89,14 @@ profiler-popup-title =
 profiler-popup-reveal-description-button =
     .aria-label = แสดงข้อมูลเพิ่มเติม
 profiler-popup-description-title =
-    .value = บันทึกวิเคราะห์แบ่งปัน
+    .value = บันทึก วิเคราะห์ แบ่งปัน
 profiler-popup-description = ทำงานร่วมกันในปัญหาด้านประสิทธิภาพโดยการเผยแพร่โปรไฟล์เพื่อแบ่งปันกับทีมของคุณ
 profiler-popup-learn-more = เรียนรู้เพิ่มเติม
 profiler-popup-settings =
     .value = การตั้งค่า
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = แก้ไขการตั้งค่า
+profiler-popup-disabled = ขณะนี้ตัวสร้างโปรไฟล์ถูกปิดใช้งาน ซึ่งส่วนใหญ่เกิดจากหน้าต่างการเรียกดูแบบส่วนตัวกำลังถูกเปิด
 profiler-popup-recording-screen = กำลังบันทึก…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
@@ -82,11 +106,25 @@ profiler-popup-start-recording-button =
     .label = เริ่มการบันทึก
 profiler-popup-discard-button =
     .label = ละทิ้ง
+profiler-popup-capture-button =
+    .label = จับ
+profiler-popup-start-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧1
+       *[other] Ctrl+Shift+1
+    }
 profiler-popup-capture-shortcut =
     { PLATFORM() ->
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## History panel
+
+appmenu-manage-history =
+    .label = จัดการประวัติ
+appmenu-reopen-all-tabs = เปิดแท็บทั้งหมดใหม่
+appmenu-reopen-all-windows = เปิดหน้าต่างทั้งหมดใหม่
 
 ## Help panel
 
@@ -113,8 +151,13 @@ appmenu-get-help =
 appmenu-help-troubleshooting-info =
     .label = ข้อมูลการแก้ไขปัญหา
     .accesskey = ป
+appmenu-help-more-troubleshooting-info =
+    .label = ข้อมูลการแก้ไขปัญหาเพิ่มเติม
+    .accesskey = ข
 appmenu-help-taskmanager =
     .label = ตัวจัดการงาน
+appmenu-help-report-site-issue =
+    .label = รายงานปัญหาไซต์…
 appmenu-help-feedback-page =
     .label = ส่งข้อคิดเห็น…
     .accesskey = ส
@@ -128,6 +171,16 @@ appmenu-help-safe-mode-without-addons =
 appmenu-help-safe-mode-with-addons =
     .label = เริ่มการทำงานใหม่พร้อมเปิดใช้งานส่วนเสริม
     .accesskey = ร
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = โหมดแก้ไขปัญหา
+    .accesskey = ห
+appmenu-help-exit-troubleshoot-mode =
+    .label = ปิดโหมดแก้ไขปัญหา
+    .accesskey = ม
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
@@ -143,3 +196,9 @@ appmenu-help-not-deceptive =
 
 appmenu-help-check-for-update =
     .label = ตรวจสอบการอัปเดต…
+
+## More Tools
+
+appmenu-customizetoolbar =
+    .label = ปรับแต่งแถบเครื่องมือ…
+appmenu-developer-tools-subheader = เครื่องมือสำหรับเบราว์เซอร์

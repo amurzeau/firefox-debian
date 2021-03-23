@@ -14,6 +14,13 @@ duplicate-tab =
 duplicate-tabs =
     .label = Dupliciraj kartice
     .accesskey = D
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = Zatvori lijevu karticu
+    .accesskey = l
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Zatvori kartice na desno
     .accesskey = i
@@ -44,6 +51,9 @@ bookmark-tab =
 reopen-in-container =
     .label = Ponovo otvori u kontejneru
     .accesskey = e
+tab-context-open-in-container =
+    .label = Otvori u novoj kontejnerskoj kartici
+    .accesskey = e
 move-to-start =
     .label = Pomakni na početak
     .accesskey = p
@@ -56,6 +66,11 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Zatvori višestruke kartice
     .accesskey = t
+tab-context-share-url =
+    .label = Podijeli
+    .accesskey = h
+tab-context-share-more =
+    .label = Više…
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -81,6 +96,15 @@ move-tabs =
 move-tab =
     .label = Pomakni karticu
     .accesskey = m
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Ponovno otvori zatvorenu karticu
+            [one] Ponovno otvori zatvorenu karticu
+            [few] Ponovno otvori zatvorene kartice
+           *[other] Ponovno otvori zatvorene kartice
+        }
+    .accesskey = r
 tab-context-close-tabs =
     .label =
         { $tabCount ->

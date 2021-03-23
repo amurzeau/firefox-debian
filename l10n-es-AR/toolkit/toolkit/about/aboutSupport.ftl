@@ -133,10 +133,14 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argumentos
 safe-mode-title = Intentar modo seguro
 restart-in-safe-mode-label = Reiniciar con complementos deshabilitados…
+troubleshoot-mode-title = Diagnosticar problemas
+restart-in-troubleshoot-mode-label = Modo de resolución de problemas…
 clear-startup-cache-title = Intentar borrar la caché de inicio
 clear-startup-cache-label = Eliminar caché de inicio…
 startup-cache-dialog-title = Eliminar caché de inicio
 startup-cache-dialog-body = Reiniciar { -brand-short-name } para eliminar la caché de inicio. Esto no va a cambiar su configuración ni va a eliminar las extensiones que haya agregó a { -brand-short-name }.
+startup-cache-dialog-title2 = ¿Reiniciar { -brand-short-name } para limpiar la caché de inicio?
+startup-cache-dialog-body2 = Esto no cambiará su configuración ni eliminará complementos
 restart-button-label = Reiniciar
 
 ## Media titles
@@ -406,3 +410,13 @@ support-printing-clear-settings-button = Eliminar los ajustes de impresión guar
 support-printing-modified-settings = Ajustes de impresión modificados
 support-printing-prefs-name = Nombre
 support-printing-prefs-value = Valor
+
+## Normandy sections
+
+support-remote-experiments-title = Experimentos remotos
+support-remote-experiments-name = Nombre
+support-remote-experiments-branch = Rama de experimentos
+support-remote-experiments-see-about-studies = Ver <a data-l10n-name="support-about-studies-link">about:studies</a> para más información, incluyendo como deshabilitar experimentos individuales o deshabilitar que { -brand-short-name } ejecute este tipo de experimentos en el futuro.
+support-remote-features-title = Características remotas
+support-remote-features-name = Nombre
+support-remote-features-status = Estado

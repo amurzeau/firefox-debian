@@ -238,10 +238,10 @@ search-one-offs-context-open-new-tab =
     .label = Traži u novoj kartici
     .accesskey = t
 search-one-offs-context-set-as-default =
-    .label = Postavi kao standardnu tražilicu
+    .label = Postavi kao zadanu tražilicu
     .accesskey = d
 search-one-offs-context-set-as-default-private =
-    .label = Postavi kao standardnu tražilicu za privatne prozore
+    .label = Postavi kao zadanu tražilicu za privatne prozore
     .accesskey = P
 # Search engine one-off buttons with an @alias shortcut/keyword.
 # Variables:
@@ -376,6 +376,12 @@ popup-select-camera =
 popup-select-microphone =
     .value = Mikrofon za dijeljenje:
     .accesskey = M
+popup-select-camera-device =
+    .value = Kamera:
+    .accesskey = K
+popup-select-microphone-device =
+    .value = Mikrofon:
+    .accesskey = M
 popup-all-windows-shared = Svi vidljivi prozori na tvom ekranu će se dijeliti.
 popup-screen-sharing-not-now =
     .label = Ne sada
@@ -385,6 +391,13 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = Deaktiviraj { -brand-short-name } obavijesti tijekom dijeljenja
 popup-silence-notifications-checkbox-warning = { -brand-short-name } neće prikazivati obavijesti dok dijeliš.
+popup-screen-sharing-block =
+    .label = Blokiraj
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Uvijek blokiraj
+    .accesskey = v
+popup-mute-notifications-checkbox = Utišaj obavijesti web-stranice tijekom dijeljenja
 
 ## WebRTC window or screen share tab switch warning
 
@@ -525,6 +538,8 @@ crashed-subframe-message = <strong>Dio ove stranice se srušio.</strong> Da bi {
 crashed-subframe-learnmore =
     .label = Saznaj više
     .accesskey = S
+crashed-subframe-learnmore-link =
+    .value = Saznaj više
 crashed-subframe-submit =
     .label = Pošalji izvješće
     .accesskey = P
@@ -539,6 +554,7 @@ bookmarks-manage-bookmarks =
     .label = Upravljanje zabilješkama
 bookmarks-recent-bookmarks-panel =
     .value = Nedavne zabilješke
+bookmarks-recent-bookmarks-panel-subheader = Nedavne zabilješke
 bookmarks-toolbar-chevron =
     .tooltiptext = Prikaži više zabilješki
 bookmarks-sidebar-content =
@@ -618,3 +634,11 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Izvanmrežni rad
     .accesskey = v
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Neki audio ili video materijali na ovoj stranici koriste DRM softver koji može ograničiti što { -brand-short-name } može učiniti s njima.
+eme-notifications-drm-content-playing-manage = Upravljaj postavkama
+eme-notifications-drm-content-playing-manage-accesskey = m
+eme-notifications-drm-content-playing-dismiss = Odbaci
+eme-notifications-drm-content-playing-dismiss-accesskey = d

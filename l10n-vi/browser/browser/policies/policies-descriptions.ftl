@@ -14,6 +14,7 @@ policy-3rdparty = Đặt chính sách mà WebExtensions có thể truy cập th�
 policy-AppAutoUpdate = Bật hoặc tắt cập nhật chương trình tự động.
 policy-AppUpdateURL = Thiết lập URL cập nhật của ứng dụng tùy chỉnh.
 policy-Authentication = Cấu hình các phương thức xác thực tích hợp sẵn cho các trang web có hỗ trợ.
+policy-BackgroundAppUpdate = Bật hoặc tắt trình cập nhật nền, trình cập nhật này sẽ cập nhật trình duyệt khi trình duyệt không chạy.
 policy-BlockAboutAddons = Chặn quyền truy cập vào trình quản lý tiện ích (about: addons).
 policy-BlockAboutConfig = Chặn truy cập vào trang about:config.
 policy-BlockAboutProfiles = Chặn truy cập vào trang about:profiles.
@@ -27,7 +28,7 @@ policy-DefaultDownloadDirectory = Đặt thư mục tải xuống mặc định.
 policy-DisableAppUpdate = Chặn việc cập nhật trình duyệt.
 policy-DisableBuiltinPDFViewer = Vô hiệu hóa PDF.js, trình xem PDF tích hợp trong { -brand-short-name }.
 policy-DisableDefaultBrowserAgent = Ngăn chặn tác nhân người dùng trình duyệt mặc định làm bất cứ điều gì. Chỉ dành cho Windows, không có tác nhân người dùng nào khả dụng cho các nền tảng khác.
-policy-DisableDeveloperTools = Chặn truy cập đến công cụ dành cho nhà phát triển.
+policy-DisableDeveloperTools = Chặn truy cập đến công cụ nhà phát triển.
 policy-DisableFeedbackCommands = Tắt các lệnh để gửi phản hồi từ bảng chọn trợ giúp (gửi phản hồi và báo cáo trang web lừa đảo).
 policy-DisableFirefoxAccounts = Vô hiệu hóa { -fxaccount-brand-name } dựa trên các dịch vụ, bao gồm cả đồng bộ.
 # Firefox Screenshots is the name of the feature, and should not be translated.

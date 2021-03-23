@@ -8,6 +8,12 @@ places-open =
 places-open-tab =
     .label = Otwórz w nowej karcie
     .accesskey = w
+places-open-in-tab =
+    .label = Otwórz w nowej karcie
+    .accesskey = w
+places-open-all-bookmarks =
+    .label = Otwórz wszystkie zakładki
+    .accesskey = O
 places-open-all-in-tabs =
     .label = Otwórz wszystkie w kartach
     .accesskey = O
@@ -25,10 +31,28 @@ places-new-folder-contextmenu =
     .accesskey = f
 places-new-folder =
     .label = Nowy folder…
-    .accesskey = f
+    .accesskey = d
 places-new-separator =
     .label = Nowy separator
     .accesskey = S
+places-open-in-window =
+    .label = Otwórz w nowym oknie
+    .accesskey = n
+places-open-in-private-window =
+    .label = Otwórz w nowym oknie prywatnym
+    .accesskey = p
+places-add-bookmark =
+    .label = Dodaj zakładkę…
+    .accesskey = z
+places-add-folder-contextmenu =
+    .label = Dodaj folder…
+    .accesskey = f
+places-add-folder =
+    .label = Dodaj folder…
+    .accesskey = D
+places-add-separator =
+    .label = Dodaj separator
+    .accesskey = s
 places-view =
     .label = Widok
     .accesskey = k
@@ -60,6 +84,13 @@ places-sortby-name =
 places-properties =
     .label = Właściwości
     .accesskey = i
+# places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
+places-edit-bookmark =
+    .label = Edytuj zakładkę…
+    .accesskey = E
+places-edit-generic =
+    .label = Edytuj…
+    .accesskey = E
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
     .label = Zakładki zarządzane przez administratora
@@ -69,3 +100,15 @@ managed-bookmarks-subfolder =
 # This label is used for the "Other Bookmarks" folder that appears in the bookmarks toolbar.
 other-bookmarks-folder =
     .label = Pozostałe zakładki
+# Variables:
+# $count (number) - The number of elements being selected for removal.
+places-remove-bookmark =
+    .label =
+        { $count ->
+            [1] Usuń zakładkę
+           *[other] Usuń zakładki
+        }
+    .accesskey = U
+places-manage-bookmarks =
+    .label = Zarządzaj zakładkami
+    .accesskey = Z

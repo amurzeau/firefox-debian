@@ -8,6 +8,9 @@
 ### file that are used for the profiler popup.
 
 perftools-intro-title = Mbohapeha Ñemboheko
+perftools-intro-description =
+    Umi ñeñongatu ombojuruja profiler.firefox.com tendayke pyahúpe. Opaite mba’ekuaarã oñembyatypa
+    hyepýpe, hákatu ikatu ohupi omoherakuã hag̃ua.
 
 ## All of the headings for the various sections.
 
@@ -22,6 +25,13 @@ perftools-heading-local-build = Ñembyaty pypeguáva
 
 ##
 
+perftools-description-intro =
+    Umi ñeñongatu ombojuruja profiler.firefox.com tendayke pyahúpe. Opaite mba’ekuaarã oñembyatypa
+    hyepýpe, hákatu ikatu ohupi omoherakuã hag̃ua.
+perftools-description-local-build =
+    Ojehechahína peteĩ ñembyaty ejapova’ekue ndete ko
+    mohendahápe, embojuaju pe objdir hesegua tysýi oĩva yvy gotyo ikatu hag̃ua
+    ojepuru ojeheka hag̃ua marandu ta’ãnga’i rehegua.
 
 ## The controls for the interval at which the profiler samples the code.
 
@@ -91,11 +101,16 @@ perftools-thread-js-helper =
 ##
 
 perftools-record-all-registered-threads = Eñomi umi poravopyre yvategua ha eñongatu inimbo jehaipyre
+perftools-tools-threads-input-label =
+    .title = Ko’ã hilo ha’e tysýi ipa’ũva kyguái rupive ha ojepurúva oñemyandy hag̃ua mba’ete ñemoheñói mbohapehápe. Pe téra ojokupytyva’erã michĩmínte hilo réra emoingévape. Oñandukuaa umi pa’ũ inandíva.
 
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
 ## preferences are true.
 
 -profiler-brand-name = Firefox mba’ete moheñoiha
+perftools-onboarding-message = <b>Ipyahu</b>: { -profiler-brand-name } ko’ág̃a oĩ juajúpe mboguatahára rembipuru ndive. <a>Eikuaave</a> ko tembipuru guasu rehegua.
+# `options-context-advanced-settings` is defined in toolbox-options.ftl
+perftools-onboarding-reenable-old-panel = (Ndahetái aravo’ípe, ikatu eike tembiapokue ra’ãngarupa ypyguápe { options-context-advanced-settings } rupive</a>)
 perftools-onboarding-close-button =
     .aria-label = Emboty pe ñe’ẽmondo jeikegua

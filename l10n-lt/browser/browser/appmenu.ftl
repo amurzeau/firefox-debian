@@ -27,6 +27,12 @@ appmenuitem-more-tools =
     .label = Daugiau priemonių
 appmenuitem-exit =
     .label = Išeiti
+appmenu-menu-button-closed =
+    .tooltiptext = Atverti programos meniu
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Užverti programos meniu
+    .label = { -brand-shorter-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -45,6 +51,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Sinchronizuoti dabar
+appmenuitem-fxa-toolbar-sync-now =
+    .label = Sinchronizuoti dabar
+    .value = Sinchronizuoti dabar
+appmenuitem-fxa-manage-account = Tvarkyti paskyrą
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Paskiausiai sinchronizuota { $time }
+    .label = Paskiausiai sinchronizuota { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = Sinchronizuoti ir įrašyti duomenis
+appmenu-fxa-signed-in-label = Prisijungti
+appmenu-fxa-setup-sync =
+    .label = Įjungti sinchronizavimą…
+appmenu-fxa-show-more-tabs = Rodyti daugiau kortelių
 appmenuitem-save-page =
     .label = Įrašyti kaip…
 
@@ -128,8 +151,13 @@ appmenu-get-help =
 appmenu-help-troubleshooting-info =
     .label = Informacija problemų sprendimui
     .accesskey = r
+appmenu-help-more-troubleshooting-info =
+    .label = Daugiau informacijos problemų sprendimui
+    .accesskey = p
 appmenu-help-taskmanager =
     .label = Užduočių tvarkytuvė
+appmenu-help-report-site-issue =
+    .label = Pranešti apie svetainės problemą…
 appmenu-help-feedback-page =
     .label = Siųsti atsiliepimą…
     .accesskey = S
@@ -143,6 +171,16 @@ appmenu-help-safe-mode-without-addons =
 appmenu-help-safe-mode-with-addons =
     .label = Perleisti programą su išjungtais priedais
     .accesskey = r
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = Problemų sprendimo veiksena
+    .accesskey = m
+appmenu-help-exit-troubleshoot-mode =
+    .label = Išjungti problemų sprendimo veikseną
+    .accesskey = m
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

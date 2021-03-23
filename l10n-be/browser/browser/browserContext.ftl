@@ -111,6 +111,9 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Адкрыць спасылку ў новай картцы кантэйнера
     .accesskey = ы
+main-context-menu-open-link-container =
+    .label = Адкрыць спасылку ў новым кантэйнеры
+    .accesskey = ц
 main-context-menu-open-link-new-window =
     .label = Адкрыць спасылку ў новым акне
     .accesskey = п
@@ -120,6 +123,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = Дадаць закладку на гэту спасылку
     .accesskey = с
+main-context-menu-bookmark-link =
+    .label = Дадаць закладку на спасылку
+    .accesskey = з
 main-context-menu-save-link =
     .label = Захаваць спасылку як…
     .accesskey = с
@@ -131,11 +137,19 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = Капіяваць адрас эл.пошты
     .accesskey = э
 main-context-menu-copy-link =
     .label = Капіяваць спасылку
+    .accesskey = с
+main-context-menu-copy-link-simple =
+    .label = Капіраваць спасылку
     .accesskey = с
 
 ## Media (video/audio) controls
@@ -179,6 +193,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Бязглузда (2×)
     .accesskey = Б
+main-context-menu-media-play-speed-2 =
+    .label = Хуткасць
+    .accesskey = Х
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Зацыкліць
     .accesskey = З
@@ -206,6 +233,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Выява ў выяве
     .accesskey = ў
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Глядзець у рэжыме „выява ў выяве”
+    .accesskey = Г
 main-context-menu-image-reload =
     .label = Абнавіць выяву
     .accesskey = А
@@ -215,6 +247,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = Прагледзець відэа
     .accesskey = г
+main-context-menu-image-view-new-tab =
+    .label = Адкрыць відарыс у новай картцы
+    .accesskey = і
+main-context-menu-video-view-new-tab =
+    .label = Адкрыць відэа ў новай картцы
+    .accesskey = і
 main-context-menu-image-copy =
     .label = Капіяваць выяву
     .accesskey = я
@@ -227,11 +265,20 @@ main-context-menu-video-copy-location =
 main-context-menu-audio-copy-location =
     .label = Капіяваць спасылку на аўдыё
     .accesskey = п
+main-context-menu-image-copy-link =
+    .label = Капіраваць спасылку на відарыс
+    .accesskey = в
+main-context-menu-video-copy-link =
+    .label = Капіраваць спасылку на відэа
+    .accesskey = в
+main-context-menu-audio-copy-link =
+    .label = Капіраваць спасылку на гук
+    .accesskey = в
 main-context-menu-image-save-as =
     .label = Захаваць выяву як…
     .accesskey = я
 main-context-menu-image-email =
-    .label = Даслаць выяву эл.поштай…
+    .label = Даслаць відарыс поштай…
     .accesskey = Д
 main-context-menu-image-set-as-background =
     .label = Усталяваць як фон працоўнага стала…
@@ -239,6 +286,9 @@ main-context-menu-image-set-as-background =
 main-context-menu-image-info =
     .label = Звесткі пра выяву
     .accesskey = в
+main-context-menu-image-set-image-as-background =
+    .label = Усталяваць як фон працоўнага стала…
+    .accesskey = У
 main-context-menu-image-desc =
     .label = Паглядзець апісанне
     .accesskey = а
@@ -251,6 +301,9 @@ main-context-menu-audio-save-as =
 main-context-menu-video-image-save-as =
     .label = Захаваць здымак як…
     .accesskey = З
+main-context-menu-video-take-snapshot =
+    .label = Зрабіць здымак…
+    .accesskey = ы
 main-context-menu-video-email =
     .label = Даслаць відэа эл.поштай…
     .accesskey = д
@@ -275,6 +328,26 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = Ужыць згенераваны пароль…
     .accesskey = п
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = Выкарыстаць захаваны лагін
+    .accesskey = В
+main-context-menu-use-saved-password =
+    .label = Выкарыстаць захаваны пароль
+    .accesskey = В
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = Прапанаваць надзейны пароль…
+    .accesskey = ы
+main-context-menu-manage-logins =
+    .label = Кіраваць лагінамі…
+    .accesskey = ь
 main-context-menu-keyword =
     .label = Дадаць ключавое слова для гэтага пошуку…
     .accesskey = к
@@ -317,6 +390,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Праглядзець зыходнік вылучэння
     .accesskey = л
+main-context-menu-take-screenshot =
+    .label = Зрабіць здымак экрана
+    .accesskey = к
 main-context-menu-view-page-source =
     .label = Праглядзець зыходнік старонкі
     .accesskey = з
@@ -331,6 +407,9 @@ main-context-menu-bidi-switch-page =
     .accesskey = к
 main-context-menu-inspect-element =
     .label = Даследаваць элемент
+    .accesskey = Д
+main-context-menu-inspect =
+    .label = Даследаваць
     .accesskey = Д
 main-context-menu-inspect-a11y-properties =
     .label = Даследаваць уласцівасці даступнасці

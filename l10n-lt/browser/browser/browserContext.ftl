@@ -111,6 +111,9 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Atverti saitą naujoje sudėtinėje kortelėje
     .accesskey = k
+main-context-menu-open-link-container =
+    .label = Atverti saitą naujame konteineryje
+    .accesskey = j
 main-context-menu-open-link-new-window =
     .label = Atverti saitą naujame lange
     .accesskey = l
@@ -120,6 +123,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = Įtraukti saitą į adresyną
     .accesskey = d
+main-context-menu-bookmark-link =
+    .label = Įtraukti saitą į adresyną
+    .accesskey = t
 main-context-menu-save-link =
     .label = Įrašyti saistomą objektą kaip…
     .accesskey = Į
@@ -131,12 +137,20 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = Kopijuoti el. pašto adresą
-    .accesskey = e
+    .accesskey = t
 main-context-menu-copy-link =
     .label = Kopijuoti saito adresą
     .accesskey = a
+main-context-menu-copy-link-simple =
+    .label = Kopijuoti saitą
+    .accesskey = t
 
 ## Media (video/audio) controls
 ##
@@ -179,6 +193,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Pasiutęs (2×)
     .accesskey = P
+main-context-menu-media-play-speed-2 =
+    .label = Greitis
+    .accesskey = G
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Kartoti
     .accesskey = K
@@ -206,6 +233,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Vaizdas-vaizde
     .accesskey = z
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Žiūrėti per vaizdą-vaizde
+    .accesskey = v
 main-context-menu-image-reload =
     .label = Atsiųsti paveikslą iš naujo
     .accesskey = n
@@ -215,6 +247,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = Rodyti vaizdo įrašą
     .accesskey = y
+main-context-menu-image-view-new-tab =
+    .label = Atverti paveikslą naujoje kortelėje
+    .accesskey = p
+main-context-menu-video-view-new-tab =
+    .label = Atverti vaizdo įrašą naujoje kortelėje
+    .accesskey = d
 main-context-menu-image-copy =
     .label = Kopijuoti paveikslą
     .accesskey = p
@@ -226,6 +264,15 @@ main-context-menu-video-copy-location =
     .accesskey = o
 main-context-menu-audio-copy-location =
     .label = Kopijuoti garso adresą
+    .accesskey = o
+main-context-menu-image-copy-link =
+    .label = Kopijuoti paveikslo saitą
+    .accesskey = o
+main-context-menu-video-copy-link =
+    .label = Kopijuoti vaizdo saitą
+    .accesskey = o
+main-context-menu-audio-copy-link =
+    .label = Kopijuoti garso saitą
     .accesskey = o
 main-context-menu-image-save-as =
     .label = Įrašyti paveikslą kaip…
@@ -239,6 +286,9 @@ main-context-menu-image-set-as-background =
 main-context-menu-image-info =
     .label = Rodyti paveikslo savybes
     .accesskey = s
+main-context-menu-image-set-image-as-background =
+    .label = Naudoti kaip darbastalio foną…
+    .accesskey = N
 main-context-menu-image-desc =
     .label = Rodyti aprašą
     .accesskey = o
@@ -251,6 +301,9 @@ main-context-menu-audio-save-as =
 main-context-menu-video-image-save-as =
     .label = Įrašyti kadrą kaip…
     .accesskey = k
+main-context-menu-video-take-snapshot =
+    .label = Padaryti vaizdo nuotrauką…
+    .accesskey = n
 main-context-menu-video-email =
     .label = Išsiųsti vaizdo įrašą el. paštu…
     .accesskey = s
@@ -275,6 +328,26 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = Naudoti sugeneruotą slaptažodį
     .accesskey = g
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = Naudoti įrašytą prisijungimą
+    .accesskey = o
+main-context-menu-use-saved-password =
+    .label = Naudoti įrašytą slaptažodį
+    .accesskey = o
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = Pasiūlyti stiprų slaptažodį…
+    .accesskey = s
+main-context-menu-manage-logins =
+    .label = Tvarkyti prisijungimus…
+    .accesskey = T
 main-context-menu-keyword =
     .label = Įdėti šios paieškos reikšminį žodį…
     .accesskey = p
@@ -317,6 +390,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Rodyti atrankos pirminį tekstą
     .accesskey = d
+main-context-menu-take-screenshot =
+    .label = Padaryti ekrano nuotrauką
+    .accesskey = n
 main-context-menu-view-page-source =
     .label = Pirminis tekstas
     .accesskey = e
@@ -332,6 +408,9 @@ main-context-menu-bidi-switch-page =
 main-context-menu-inspect-element =
     .label = Tirti elementą
     .accesskey = T
+main-context-menu-inspect =
+    .label = Tirti
+    .accesskey = Q
 main-context-menu-inspect-a11y-properties =
     .label = Tirti pritaikymo neįgaliesiems savybes
 main-context-menu-eme-learn-more =

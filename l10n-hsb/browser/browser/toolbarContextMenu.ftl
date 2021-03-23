@@ -27,6 +27,16 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Začinjene rajtarki wočinić
         }
     .accesskey = Z
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Začinjeny rajtark znowa wočinić
+            [one] Začinjeny rajtark znowa wočinić
+            [two] Začinjenej rajtarkaj znowa wočinić
+            [few] Začinjene rajtarki znowa wočinić
+           *[other] Začinjene rajtarki znowa wočinić
+        }
+    .accesskey = Z
 toolbar-context-menu-manage-extension =
     .label = Rozšěrjenje rjadować
     .accesskey = R
@@ -48,21 +58,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = W symbolowej lajsće awtomatisce schować
     .accesskey = s
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Tłóčatko schować, hdyž prózdne
+    .accesskey = T
 toolbar-context-menu-remove-from-toolbar =
     .label = Ze symboloweje lajsty wotstronić
     .accesskey = Z
 toolbar-context-menu-view-customize-toolbar =
     .label = Přiměrić…
     .accesskey = m
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Přeco
-    .accesskey = P
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Ženje
-    .accesskey = n
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Jenož w nowym rajtarku
-    .accesskey = J
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Symbolowu lajstu přiměrić…
+    .accesskey = S
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Přeco pokazać
     .accesskey = P

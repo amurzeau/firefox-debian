@@ -133,10 +133,14 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argumentos
 safe-mode-title = Probar le modo secur
 restart-in-safe-mode-label = Reinitiar con le additivos inactive…
+troubleshoot-mode-title = Diagnosticar problemas
+restart-in-troubleshoot-mode-label = Modo diagnostic…
 clear-startup-cache-title = Prova vacuar le cache de initio
 clear-startup-cache-label = Vacuar le cache de initio…
 startup-cache-dialog-title = Vacuar le cache de initio
 startup-cache-dialog-body = Reinitia { -brand-short-name } pro vacuar le cache de initio. Isto non cambiara tu parametros e non removera le extensiones que tu ha addite a { -brand-short-name }.
+startup-cache-dialog-title2 = Reinitiar { -brand-short-name } pro clarar le cache initial?
+startup-cache-dialog-body2 = Isto non cambiara tu parametros ni removera extensiones.
 restart-button-label = Reinitiar
 
 ## Media titles
@@ -406,3 +410,13 @@ support-printing-clear-settings-button = Eliminar le parametros de impression sa
 support-printing-modified-settings = Parametros de impression modificate
 support-printing-prefs-name = Nomine
 support-printing-prefs-value = Valor
+
+## Normandy sections
+
+support-remote-experiments-title = Experimentos remote
+support-remote-experiments-name = Nomine
+support-remote-experiments-branch = Ramo experimental
+support-remote-experiments-see-about-studies = Vider <a data-l10n-name="support-about-studies-link">about:studies</a> pro altere informationes, includite como disactivar experimentos individual o impedir a { -brand-short-name } de exequer iste typo de experimento in le futuro.
+support-remote-features-title = Functiones remote
+support-remote-features-name = Nomine
+support-remote-features-status = Stato

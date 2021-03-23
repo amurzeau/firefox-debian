@@ -133,10 +133,14 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Arguments
 safe-mode-title = Empruvar il modus segirà
 restart-in-safe-mode-label = Reaviar cun supplements deactivads…
+troubleshoot-mode-title = Analisar problems
+restart-in-troubleshoot-mode-label = Modus per schliar problems…
 clear-startup-cache-title = Emprova da svidar il cache da l'aviar
 clear-startup-cache-label = Svidar il cache da l'aviar…
 startup-cache-dialog-title = Svidar il cache da l'aviar
 startup-cache-dialog-body = Reaviescha { -brand-short-name } per svidar il cache da l'aviar. Quai na mida betg tes parameters e n'allontanescha naginas extensiuns che ti has agiuntà a { -brand-short-name }.
+startup-cache-dialog-title2 = Reaviar { -brand-short-name } per stizzar il cache da l'aviar?
+startup-cache-dialog-body2 = Qua tras na vegnan ni tes parameters midads ni tias extensiuns allontanadas.
 restart-button-label = Reaviar
 
 ## Media titles
@@ -406,3 +410,13 @@ support-printing-clear-settings-button = Stizzar ils parameters da stampa memori
 support-printing-modified-settings = Parameters da stampa modifitgads
 support-printing-prefs-name = Num
 support-printing-prefs-value = Valur
+
+## Normandy sections
+
+support-remote-experiments-title = Experiments a distanza
+support-remote-experiments-name = Num
+support-remote-experiments-branch = Branch d'experiments
+support-remote-experiments-see-about-studies = Consultar <a data-l10n-name="support-about-studies-link">about:studies</a> per ulteriuras infurmaziuns, p.ex. co deactivar singuls experiments u impedir che { -brand-short-name } exequeschia en l'avegnir tals experiments.
+support-remote-features-title = Funcziunalitads a distanza
+support-remote-features-name = Num
+support-remote-features-status = Status

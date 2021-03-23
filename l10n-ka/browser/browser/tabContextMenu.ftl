@@ -14,6 +14,13 @@ duplicate-tab =
 duplicate-tabs =
     .label = ჩანართების გაორმაგება
     .accesskey = ო
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = მარცხენა ჩანართების დახურვა
+    .accesskey = ც
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = მარჯვენა ჩანართების დახურვა
     .accesskey = ჯ
@@ -44,6 +51,9 @@ bookmark-tab =
 reopen-in-container =
     .label = ხელახლა გახსნა სათავსში
     .accesskey = ე
+tab-context-open-in-container =
+    .label = გახსნა ახალ სათავსში
+    .accesskey = თ
 move-to-start =
     .label = თავში გადატანა
     .accesskey = თ
@@ -56,6 +66,11 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = რამდენიმე ჩანართის დახურვა
     .accesskey = რ
+tab-context-share-url =
+    .label = გაზიარება
+    .accesskey = ზ
+tab-context-share-more =
+    .label = სხვა…
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -79,13 +94,20 @@ move-tabs =
 move-tab =
     .label = ჩანართის გადატანა
     .accesskey = ტ
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] დახურული ჩანართის დაბრუნება
+           *[other] დახურული ჩანართების დაბრუნება
+        }
+    .accesskey = უ
 tab-context-close-tabs =
     .label =
         { $tabCount ->
             [1] ჩანართის დახურვა
            *[other] ჩანართების დახურვა
         }
-    .accesskey = ხ
+    .accesskey = უ
 tab-context-move-tabs =
     .label =
         { $tabCount ->

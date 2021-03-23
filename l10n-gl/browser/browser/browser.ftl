@@ -350,6 +350,14 @@ browser-window-close-button =
 
 browser-tab-audio-playing = Reproducindo
 browser-tab-audio-muted = Silenciado
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = EN REPRODUCIÓN
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = SILENCIADO
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = AUTOREPRODUCIÓN BLOQUEADA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = IMAXE-A-IMAXE
 
 ## Bookmarks toolbar items
 
@@ -529,6 +537,7 @@ bookmarks-manage-bookmarks =
     .label = Xestionar marcadores
 bookmarks-recent-bookmarks-panel =
     .value = Marcadores recentes
+bookmarks-recent-bookmarks-panel-subheader = Marcadores recentes
 bookmarks-toolbar-chevron =
     .tooltiptext = Amosar máis marcadores
 bookmarks-sidebar-content =
@@ -608,3 +617,7 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Traballar sen conexión
     .accesskey = T
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Algún son ou vídeo neste sitio usa software DRM, que pode limitar o que { -brand-short-name } lle permita facer con el.

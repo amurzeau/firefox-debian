@@ -27,6 +27,12 @@ appmenuitem-more-tools =
     .label = Ch'aqa' Samajib'äl
 appmenuitem-exit =
     .label = Tel
+appmenu-menu-button-closed =
+    .tooltiptext = Tijaq Ruk'utsamaj Chokoy
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Titz'apïx Ruk'utsamaj Chokoy
+    .label = { -brand-shorter-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -45,6 +51,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Tixim Wakami
+appmenuitem-fxa-toolbar-sync-now =
+    .label = Tixim Wakami
+    .value = Tixim Wakami
+appmenuitem-fxa-manage-account = Tinuk'samajïx Rub'i' Taqoya'l
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Ruk'isib'äl ximoj { $time }
+    .label = Ruk'isib'äl ximoj { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = Tixim chuqa' Tiyak Tzij
+appmenu-fxa-signed-in-label = Titikirisäx Molojri'ïl
+appmenu-fxa-setup-sync =
+    .label = Titzij Ximoj…
+appmenu-fxa-show-more-tabs = Kek'ut pe ch'aqa' taq ruwi'
 appmenuitem-save-page =
     .label = Tiyak Ruxaq Achi'el…
 
@@ -130,8 +153,13 @@ appmenu-get-help =
 appmenu-help-troubleshooting-info =
     .label = Etamab'äl richin yesol taq k'ayewal
     .accesskey = E
+appmenu-help-more-troubleshooting-info =
+    .label = Ch'aqa' Etamab'äl richin yesol taq k'ayewal
+    .accesskey = E
 appmenu-help-taskmanager =
     .label = Kinuk'samajel taq Samaj
+appmenu-help-report-site-issue =
+    .label = Tiya' rutzijol ri ruk'ayewal Ruxaq K'amaya'l…
 appmenu-help-feedback-page =
     .label = Ketaq taq Rutzijol…
     .accesskey = K
@@ -145,6 +173,16 @@ appmenu-help-safe-mode-without-addons =
 appmenu-help-safe-mode-with-addons =
     .label = Titikirisäx chik rik'in Tzijïl taq Tz'aqat
     .accesskey = T
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = Kib'anikil taq k'ayewal
+    .accesskey = K
+appmenu-help-exit-troubleshoot-mode =
+    .label = Tichup ri Rub'anikil Kiwäch K'ayewal
+    .accesskey = R
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

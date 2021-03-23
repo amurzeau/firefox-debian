@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Zoeken op deze pagina…
     .accesskey = Z
+menu-edit-find-in-page =
+    .label = Zoeken op pagina…
+    .accesskey = Z
 menu-edit-find-again =
     .label = Opnieuw zoeken
     .accesskey = w
@@ -129,6 +132,9 @@ menu-view-toolbars-menu =
 menu-view-customize-toolbar =
     .label = Aanpassen…
     .accesskey = A
+menu-view-customize-toolbar2 =
+    .label = Werkbalk aanpassen…
+    .accesskey = p
 menu-view-sidebar =
     .label = Zijbalk
     .accesskey = Z
@@ -219,6 +225,8 @@ menu-bookmarks-show-all =
     .label = Alle bladwijzers tonen
 menu-bookmark-this-page =
     .label = Bladwijzer voor deze pagina maken
+menu-bookmark-current-tab =
+    .label = Bladwijzer voor huidige tabblad maken
 menu-bookmark-edit =
     .label = Deze bladwijzer bewerken
 menu-bookmarks-all-tabs =
@@ -243,6 +251,12 @@ menu-tools-addons =
     .accesskey = A
 menu-tools-fxa-sign-in =
     .label = Aanmelden bij { -brand-product-name }…
+    .accesskey = m
+menu-tools-extensions =
+    .label = Extensies en Thema’s
+    .accesskey = E
+menu-tools-fxa-sign-in2 =
+    .label = Aanmelden
     .accesskey = m
 menu-tools-turn-on-sync =
     .label = { -sync-brand-short-name } inschakelen…
@@ -272,6 +286,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] O
            *[other] V
+        }
+menu-settings =
+    .label = Instellingen
+    .accesskey =
+        { PLATFORM() ->
+            [windows] I
+           *[other] n
         }
 menu-tools-layout-debugger =
     .label = Lay-out-debugger
@@ -325,8 +346,13 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Probleemoplossingsinformatie
     .accesskey = P
+menu-help-more-troubleshooting-info =
+    .label = Meer probleemoplossingsinformatie
+    .accesskey = p
 menu-help-taskmanager =
     .label = Taakbeheerder
+menu-help-report-site-issue =
+    .label = Websiteprobleem melden…
 menu-help-feedback-page =
     .label = Feedback verzenden…
     .accesskey = v
@@ -336,6 +362,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Herstarten met ingeschakelde add-ons
     .accesskey = r
+menu-help-enter-troubleshoot-mode =
+    .label = Probleemoplossingsmodus
+    .accesskey = m
+menu-help-exit-troubleshoot-mode =
+    .label = Probleemoplossingsmodus uitschakelen
+    .accesskey = m
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

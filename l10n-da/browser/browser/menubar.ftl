@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Find på denne side…
     .accesskey = d
+menu-edit-find-in-page =
+    .label = Find på side…
+    .accesskey = d
 menu-edit-find-again =
     .label = Find næste
     .accesskey = n
@@ -129,6 +132,9 @@ menu-view-toolbars-menu =
 menu-view-customize-toolbar =
     .label = Tilpas…
     .accesskey = p
+menu-view-customize-toolbar2 =
+    .label = Tilpas værktøjslinje…
+    .accesskey = T
 menu-view-sidebar =
     .label = Sidepaneler
     .accesskey = S
@@ -207,6 +213,8 @@ menu-history-undo-menu =
     .label = Senest lukkede faneblade
 menu-history-undo-window-menu =
     .label = Senest lukkede vinduer
+menu-history-reopen-all-tabs = Genåbn alle faneblade
+menu-history-reopen-all-windows = Genåbn alle vinduer
 
 ## Bookmarks Menu
 
@@ -217,6 +225,8 @@ menu-bookmarks-show-all =
     .label = Vis alle bogmærker
 menu-bookmark-this-page =
     .label = Bogmærk denne side
+menu-bookmark-current-tab =
+    .label = Gem bogmærke til det aktuelle faneblad
 menu-bookmark-edit =
     .label = Rediger bogmærke
 menu-bookmarks-all-tabs =
@@ -242,6 +252,12 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Log ind på { -brand-product-name }…
     .accesskey = g
+menu-tools-extensions =
+    .label = Udvidelser og temaer
+    .accesskey = U
+menu-tools-fxa-sign-in2 =
+    .label = Log ind
+    .accesskey = L
 menu-tools-turn-on-sync =
     .label = Aktiver { -sync-brand-short-name }…
     .accesskey = A
@@ -270,6 +286,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] I
            *[other] I
+        }
+menu-settings =
+    .label = Indstillinger
+    .accesskey =
+        { PLATFORM() ->
+            [windows] I
+           *[other] n
         }
 menu-tools-layout-debugger =
     .label = Layout-debugger
@@ -323,17 +346,28 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Teknisk information…
     .accesskey = T
+menu-help-more-troubleshooting-info =
+    .label = Mere teknisk information
+    .accesskey = t
 menu-help-taskmanager =
     .label = Jobliste
+menu-help-report-site-issue =
+    .label = Rapportér problem med websted…
 menu-help-feedback-page =
     .label = Indsend feedback…
-    .accesskey = f
+    .accesskey = n
 menu-help-safe-mode-without-addons =
     .label = Genstart med tilføjelser deaktiveret…
     .accesskey = G
 menu-help-safe-mode-with-addons =
     .label = Genstart med tilføjelser aktiveret
     .accesskey = G
+menu-help-enter-troubleshoot-mode =
+    .label = Fejlsøgnings-tilstand
+    .accesskey = F
+menu-help-exit-troubleshoot-mode =
+    .label = Slå fejlsøgnings-tilstand fra
+    .accesskey = S
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

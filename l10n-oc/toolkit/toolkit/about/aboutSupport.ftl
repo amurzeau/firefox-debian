@@ -130,10 +130,14 @@ sandbox-sys-call-number = Crida del sistèma
 sandbox-sys-call-args = Arguments
 safe-mode-title = Ensajar en mòde securizat
 restart-in-safe-mode-label = Reaviar amb los moduls desactivats…
+troubleshoot-mode-title = Diagnosticar problèmas
+restart-in-troubleshoot-mode-label = Mòde resolucion de problèmas…
 clear-startup-cache-title = Ensajar d’escafar lo cache d’aviada
 clear-startup-cache-label = Escafar lo cache a l’aviada…
 startup-cache-dialog-title = Escafar lo cache a l’aviada
 startup-cache-dialog-body = Reaviatz { -brand-short-name } per dire d’escafar lo cache d’aviada. Aquò modificarà pas vòstres paramètres o suprimirà pas cap d’extensions qu’apondèretz a { -brand-short-name }.
+startup-cache-dialog-title2 = Reaviar { -brand-short-name } per escafar lo cache a l’aviada ?
+startup-cache-dialog-body2 = Aquò cambiarà pas vòstres paramètres o suprimirà pas cap d’extension.
 restart-button-label = Reaviar
 
 ## Media titles
@@ -403,3 +407,13 @@ support-printing-clear-settings-button = Escafar los paramètres d’impression 
 support-printing-modified-settings = Paramètres d’impression modificats
 support-printing-prefs-name = Nom
 support-printing-prefs-value = Valor
+
+## Normandy sections
+
+support-remote-experiments-title = Experiéncias a distància
+support-remote-experiments-name = Nom
+support-remote-experiments-branch = Brancas experimentala
+support-remote-experiments-see-about-studies = Consultatz <a data-l10n-name="support-about-studies-link">about:studies</a> per mai d’informacions, subretot sul biais de desactivar las experiéncias individualas o per empachar { -brand-short-name } d’executar aqueste tipe d’experiéncia a l’avenidor.
+support-remote-features-title = Foncionalitats distantas
+support-remote-features-name = Nom
+support-remote-features-status = Estat

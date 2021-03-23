@@ -8,6 +8,12 @@ places-open =
 places-open-tab =
     .label = 新建标签页打开
     .accesskey = w
+places-open-in-tab =
+    .label = 新建标签页打开
+    .accesskey = w
+places-open-all-bookmarks =
+    .label = 打开所有书签
+    .accesskey = O
 places-open-all-in-tabs =
     .label = 全部打开
     .accesskey = O
@@ -27,7 +33,25 @@ places-new-folder =
     .label = 新建文件夹…
     .accesskey = o
 places-new-separator =
-    .label = 新建分割条
+    .label = 新建分隔条
+    .accesskey = S
+places-open-in-window =
+    .label = 新建窗口打开
+    .accesskey = N
+places-open-in-private-window =
+    .label = 新建隐私窗口打开
+    .accesskey = P
+places-add-bookmark =
+    .label = 新建书签…
+    .accesskey = B
+places-add-folder-contextmenu =
+    .label = 新建文件夹…
+    .accesskey = F
+places-add-folder =
+    .label = 新建文件夹…
+    .accesskey = o
+places-add-separator =
+    .label = 新建分隔条
     .accesskey = S
 places-view =
     .label = 查看
@@ -60,6 +84,13 @@ places-sortby-name =
 places-properties =
     .label = 属性
     .accesskey = i
+# places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
+places-edit-bookmark =
+    .label = 编辑书签…
+    .accesskey = i
+places-edit-generic =
+    .label = 编辑…
+    .accesskey = i
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
     .label = 受控书签
@@ -69,3 +100,15 @@ managed-bookmarks-subfolder =
 # This label is used for the "Other Bookmarks" folder that appears in the bookmarks toolbar.
 other-bookmarks-folder =
     .label = 其他书签
+# Variables:
+# $count (number) - The number of elements being selected for removal.
+places-remove-bookmark =
+    .label =
+        { $count ->
+            [1] 移除书签
+           *[other] 移除 { $count } 个书签
+        }
+    .accesskey = e
+places-manage-bookmarks =
+    .label = 管理书签
+    .accesskey = M

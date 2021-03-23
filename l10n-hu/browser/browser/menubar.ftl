@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Keresés ezen az oldalon…
     .accesskey = e
+menu-edit-find-in-page =
+    .label = Keresés az oldalon…
+    .accesskey = K
 menu-edit-find-again =
     .label = Következő keresése
     .accesskey = z
@@ -129,6 +132,9 @@ menu-view-toolbars-menu =
 menu-view-customize-toolbar =
     .label = Testreszabás…
     .accesskey = T
+menu-view-customize-toolbar2 =
+    .label = Eszköztár testreszabása…
+    .accesskey = t
 menu-view-sidebar =
     .label = Oldalsáv
     .accesskey = O
@@ -207,6 +213,8 @@ menu-history-undo-menu =
     .label = Nemrég bezárt lapok
 menu-history-undo-window-menu =
     .label = Nemrég bezárt ablakok
+menu-history-reopen-all-tabs = Összes lap újranyitása
+menu-history-reopen-all-windows = Összes ablak újranyitása
 
 ## Bookmarks Menu
 
@@ -217,6 +225,8 @@ menu-bookmarks-show-all =
     .label = Minden könyvjelző megjelenítése
 menu-bookmark-this-page =
     .label = Oldal hozzáadása a könyvjelzőkhöz
+menu-bookmark-current-tab =
+    .label = Jelenlegi lap könyvjelzőzése
 menu-bookmark-edit =
     .label = Könyvjelző szerkesztése
 menu-bookmarks-all-tabs =
@@ -242,6 +252,12 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Bejelentkezés a { -brand-product-name }ba…
     .accesskey = B
+menu-tools-extensions =
+    .label = Kiegészítők és témák
+    .accesskey = K
+menu-tools-fxa-sign-in2 =
+    .label = Bejelentkezés
+    .accesskey = j
 menu-tools-turn-on-sync =
     .label = { -sync-brand-short-name } bekapcsolása…
     .accesskey = b
@@ -270,6 +286,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] e
            *[other] e
+        }
+menu-settings =
+    .label = Beállítások
+    .accesskey =
+        { PLATFORM() ->
+            [windows] B
+           *[other] B
         }
 menu-tools-layout-debugger =
     .label = Elrendezési hibakereső
@@ -323,8 +346,13 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Hibakeresési információ
     .accesskey = H
+menu-help-more-troubleshooting-info =
+    .label = Több hibakeresési információ
+    .accesskey = T
 menu-help-taskmanager =
     .label = Feladatkezelő
+menu-help-report-site-issue =
+    .label = Hibás webhely bejelentése…
 menu-help-feedback-page =
     .label = Visszajelzés beküldése…
     .accesskey = V
@@ -334,6 +362,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Újraindítás engedélyezett kiegészítőkkel
     .accesskey = r
+menu-help-enter-troubleshoot-mode =
+    .label = Hibakeresési mód
+    .accesskey = H
+menu-help-exit-troubleshoot-mode =
+    .label = Hibakeresési mód bekapcsolása
+    .accesskey = b
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

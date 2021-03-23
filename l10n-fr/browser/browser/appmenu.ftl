@@ -27,6 +27,12 @@ appmenuitem-more-tools =
     .label = Outils supplémentaires
 appmenuitem-exit =
     .label = Quitter
+appmenu-menu-button-closed =
+    .tooltiptext = Ouvrir le menu de l’application
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Fermer le menu de l’application
+    .label = { -brand-shorter-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -45,6 +51,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Synchroniser maintenant
+appmenuitem-fxa-toolbar-sync-now =
+    .label = Synchroniser maintenant
+    .value = Synchroniser maintenant
+appmenuitem-fxa-manage-account = Gestion du compte
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name(capitalization: "uppercase") }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Dernière synchronisation { $time }
+    .label = Dernière synchronisation { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = Synchroniser et enregistrer les données
+appmenu-fxa-signed-in-label = Connexion
+appmenu-fxa-setup-sync =
+    .label = Activer la synchronisation…
+appmenu-fxa-show-more-tabs = Afficher davantage d’onglets
 appmenuitem-save-page =
     .label = Enregistrer sous…
 
@@ -98,8 +121,17 @@ profiler-popup-capture-shortcut =
        *[other] Ctrl+Maj+2
     }
 
+## History panel
+
+appmenu-manage-history =
+    .label = Gérer l’historique
+appmenu-reopen-all-tabs = Rouvrir tous les onglets
+appmenu-reopen-all-windows = Rouvrir toutes les fenêtres
+
 ## Help panel
 
+appmenu-help-header =
+    .title = Aide de { -brand-shorter-name }
 appmenu-about =
     .label = À propos de { -brand-shorter-name }
     .accesskey = p
@@ -115,11 +147,19 @@ appmenu-help-import-from-another-browser =
 appmenu-help-keyboard-shortcuts =
     .label = Raccourcis clavier
     .accesskey = o
+appmenu-get-help =
+    .label = Obtenir de l’aide
+    .accesskey = O
 appmenu-help-troubleshooting-info =
     .label = Informations de dépannage
     .accesskey = I
+appmenu-help-more-troubleshooting-info =
+    .label = Plus d’informations de dépannage
+    .accesskey = t
 appmenu-help-taskmanager =
     .label = Gestionnaire de tâches
+appmenu-help-report-site-issue =
+    .label = Signaler un problème sur ce site…
 appmenu-help-feedback-page =
     .label = Donner votre avis…
     .accesskey = D
@@ -133,6 +173,16 @@ appmenu-help-safe-mode-without-addons =
 appmenu-help-safe-mode-with-addons =
     .label = Redémarrer avec les modules activés…
     .accesskey = R
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = Mode de dépannage
+    .accesskey = M
+appmenu-help-exit-troubleshoot-mode =
+    .label = Désactiver le mode de dépannage
+    .accesskey = m
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
@@ -148,3 +198,9 @@ appmenu-help-not-deceptive =
 
 appmenu-help-check-for-update =
     .label = Rechercher des mises à jour…
+
+## More Tools
+
+appmenu-customizetoolbar =
+    .label = Personnaliser la barre d’outils…
+appmenu-developer-tools-subheader = Outils du navigateur

@@ -43,6 +43,34 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = Przenieś do pola „Ukryta kopia”
     .accesskey = U
+
+# Attachment widget
+
+ctrl-cmd-shift-pretty-prefix =
+    { PLATFORM() ->
+        [macos] ⇧ ⌘{ " " }
+       *[other] Ctrl+Shift+
+    }
+trigger-attachment-picker-key = A
+toggle-attachment-pane-key = M
+menuitem-toggle-attachment-pane =
+    .label = Lista załączników
+    .accesskey = L
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }
+toolbar-button-add-attachment =
+    .label = Załącz
+    .tooltiptext = Dodaj pliki do tej wiadomości ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
+add-attachment-notification-reminder =
+    .label = Dodaj załącznik…
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+menuitem-attach-files =
+    .label = Plik…
+    .accesskey = P
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
+context-menuitem-attach-files =
+    .label = Załącz plik…
+    .accesskey = Z
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count =
     .value =
@@ -65,6 +93,33 @@ attachments-placeholder-tooltip =
 #   { attachment-bucket-count.accesskey } - Do not localize this message.
 key-toggle-attachment-pane =
     .key = { attachment-bucket-count.accesskey }
+expand-attachment-pane-tooltip =
+    .tooltiptext = Pokaż listę załączników ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+collapse-attachment-pane-tooltip =
+    .tooltiptext = Ukryj listę załączników ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+drop-file-label-attachment =
+    { $count ->
+        [one] Dodaj jako załącznik
+        [few] Dodaj jako załączniki
+       *[many] Dodaj jako załączniki
+    }
+drop-file-label-inline =
+    { $count ->
+        [one] Wstaw w treści
+        [few] Wstaw w treści
+       *[many] Wstaw w treści
+    }
+
+# Reorder Attachment Panel
+
+move-attachment-first-panel-button =
+    .label = Przenieś na początek
+move-attachment-left-panel-button =
+    .label = Przenieś w lewo
+move-attachment-right-panel-button =
+    .label = Przenieś w prawo
+move-attachment-last-panel-button =
+    .label = Przenieś na koniec
 button-return-receipt =
     .label = Potwierdzenie
     .tooltiptext = Żądaj potwierdzenia dostarczenia tej wiadomości

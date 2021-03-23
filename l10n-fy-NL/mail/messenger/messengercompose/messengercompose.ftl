@@ -41,6 +41,34 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = Ferpleatse nei Bcc
     .accesskey = B
+
+# Attachment widget
+
+ctrl-cmd-shift-pretty-prefix =
+    { PLATFORM() ->
+        [macos] ⇧ ⌘{ " " }
+       *[other] Ctrl+Shift+
+    }
+trigger-attachment-picker-key = A
+toggle-attachment-pane-key = M
+menuitem-toggle-attachment-pane =
+    .label = Bylagepaniel
+    .accesskey = l
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }
+toolbar-button-add-attachment =
+    .label = Keppelje
+    .tooltiptext = In bylage tafoegje ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
+add-attachment-notification-reminder =
+    .label = Bylage tafoegje…
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+menuitem-attach-files =
+    .label = Bestân(nen)…
+    .accesskey = B
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
+context-menuitem-attach-files =
+    .label = Bestân(nen) keppelje…
+    .accesskey = B
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count =
     .value =
@@ -59,6 +87,31 @@ attachments-placeholder-tooltip =
 #   { attachment-bucket-count.accesskey } - Do not localize this message.
 key-toggle-attachment-pane =
     .key = { attachment-bucket-count.accesskey }
+expand-attachment-pane-tooltip =
+    .tooltiptext = It bylagefinster toane ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+collapse-attachment-pane-tooltip =
+    .tooltiptext = It bylagefinster ferstopje ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+drop-file-label-attachment =
+    { $count ->
+        [one] As bylage tafoegje
+       *[other] As bylagen tafoegje
+    }
+drop-file-label-inline =
+    { $count ->
+        [one] Inline tafoegje
+       *[other] Inline tafoegje
+    }
+
+# Reorder Attachment Panel
+
+move-attachment-first-panel-button =
+    .label = Nei de earste
+move-attachment-left-panel-button =
+    .label = Nei links
+move-attachment-right-panel-button =
+    .label = Nei rjochts
+move-attachment-last-panel-button =
+    .label = Nei de lêste
 button-return-receipt =
     .label = Untfangstbefêstiging
     .tooltiptext = In ûntfangstbefêstiging foar dit berjocht freegje

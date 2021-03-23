@@ -44,7 +44,6 @@ onboarding-join-form-signin-label = Тіркелгіңіз бар ма?
 # Text for link to submit the sign in form
 onboarding-join-form-signin = Кіру
 onboarding-start-browsing-button-label = Шолуды бастау
-onboarding-not-now-button-label = Қазір емес
 onboarding-cards-dismiss =
     .title = Тайдыру
     .aria-label = Тайдыру
@@ -86,93 +85,6 @@ onboarding-benefit-monitor-title = { -monitor-brand-short-name }
 onboarding-benefit-monitor-text = Сіздің жеке ақпаратыңыз белгілі деректер ұрланған деректер ішінде болғанда хабарлама алу.
 onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
 onboarding-benefit-lockwise-text = Қорғалған және тасымалданатын парольдерді басқару.
-
-## Custom Return To AMO onboarding strings
-
-return-to-amo-add-extension-label = Кеңейтуді қосу
-
-## Multistage 3-screen onboarding flow strings (about:welcome pages)
-
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = <span data-l10n-name="zap">{ -brand-short-name }</span> ішіне қош келдіңіз
-onboarding-multistage-welcome-subtitle = Коммерциялық емес ұйымы қолдайтын жылдам, қауіпсіз және жеке браузер.
-onboarding-multistage-welcome-primary-button-label = Баптауды бастау
-onboarding-multistage-welcome-secondary-button-label = Кіру
-onboarding-multistage-welcome-secondary-button-text = Тіркелгіңіз бар ма?
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "more" should stay inside the span.
-onboarding-multistage-import-header = Парольдер, бетбелгілер және <br/><span data-l10n-name="zap">көптеген басқаны</span> импорттаңыз
-onboarding-multistage-import-subtitle = Басқа браузерден келдіңіз бе? { -brand-short-name } ішіне барлығын әкелу оп-оңай.
-onboarding-multistage-import-primary-button-label = Импорттауды бастау
-onboarding-multistage-import-secondary-button-label = Қазір емес
-# Info displayed in the footer of import settings screen during onboarding flow.
-# This supports welcome screen showing top sites imported from the user's default browser.
-onboarding-import-sites-disclaimer = Бұл сайттар осы құрылғыдан табылды. { -brand-short-name } деректерді басқа браузерден деректерді сіз оларды импорттағанша дейін синхрондамайды.
-# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
-# Variables:
-#   $current (Int) - Number of the current page
-#   $total (Int) - Total number of pages
-onboarding-welcome-steps-indicator =
-    .aria-label = Жұмысты бастау: экран { $current }, барлығы { $total }
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "look" should stay inside the span.
-onboarding-multistage-theme-header = <span data-l10n-name="zap">Сыртқы түрін</span> таңдаңыз
-onboarding-multistage-theme-subtitle = { -brand-short-name } өнімін тема көмегімен жеке қылыңыз.
-onboarding-multistage-theme-primary-button-label = Теманы сақтау
-onboarding-multistage-theme-secondary-button-label = Қазір емес
-# Automatic theme uses operating system color settings
-onboarding-multistage-theme-label-automatic = Автоматты түрде
-onboarding-multistage-theme-label-light = Ашық түсті
-onboarding-multistage-theme-label-dark = Күңгірт түсті
-# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
-onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
-
-## Please make sure to split the content of the title attribute into lines whose
-## width corresponds to about 40 Latin characters, to ensure that the tooltip
-## doesn't become too long. Line breaks will be preserved when displaying the
-## tooltip.
-
-# Tooltip displayed on hover of automatic theme
-onboarding-multistage-theme-tooltip-automatic-2 =
-    .title =
-        Батырмалар, мәзірлер және терезелер үшін
-        операциялық жүйенің сыртқы түрін мұралау.
-# Input description for automatic theme
-onboarding-multistage-theme-description-automatic-2 =
-    .aria-description =
-        Батырмалар, мәзірлер және терезелер үшін
-        операциялық жүйенің сыртқы түрін мұралау.
-# Tooltip displayed on hover of light theme
-onboarding-multistage-theme-tooltip-light-2 =
-    .title =
-        Батырмалар, мәзірлер және терезелер үшін
-        ашық түсті сыртқы түрін қолдану.
-# Input description for light theme
-onboarding-multistage-theme-description-light =
-    .aria-description =
-        Батырмалар, мәзірлер және терезелер үшін
-        ашық түсті сыртқы түрін қолдану.
-# Tooltip displayed on hover of dark theme
-onboarding-multistage-theme-tooltip-dark-2 =
-    .title =
-        Батырмалар, мәзірлер және терезелер үшін
-        күңгірт түсті сыртқы түрін қолдану.
-# Input description for dark theme
-onboarding-multistage-theme-description-dark =
-    .aria-description =
-        Батырмалар, мәзірлер және терезелер үшін
-        күңгірт түсті сыртқы түрін қолдану.
-# Tooltip displayed on hover of Alpenglow theme
-onboarding-multistage-theme-tooltip-alpenglow-2 =
-    .title =
-        Батырмалар, мәзірлер және терезелер үшін
-        түрлі түсті сыртқы түрін қолдану.
-# Input description for Alpenglow theme
-onboarding-multistage-theme-description-alpenglow =
-    .aria-description =
-        Батырмалар, мәзірлер және терезелер үшін
-        түрлі түсті сыртқы түрін қолдану.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -233,3 +145,104 @@ return-to-amo-sub-header = Тамаша, сіз { -brand-short-name } орнат
 return-to-amo-addon-header = Енді <icon></icon><b>{ $addon-name }</b> орнатайық.
 return-to-amo-extension-button = Кеңейтуді қосу
 return-to-amo-get-started-button = { -brand-short-name } өнімімен жұмысты бастау
+onboarding-not-now-button-label = Қазір емес
+
+## Custom Return To AMO onboarding strings
+
+return-to-amo-subtitle = Тамаша, сіз { -brand-short-name } орнаттыңыз
+# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-title = Енді сізге <img data-l10n-name="icon"/> <b>{ $addon-name }</b> орнатайық.
+return-to-amo-add-extension-label = Кеңейтуді қосу
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = <span data-l10n-name="zap">{ -brand-short-name }</span> ішіне қош келдіңіз
+onboarding-multistage-welcome-subtitle = Коммерциялық емес ұйымы қолдайтын жылдам, қауіпсіз және жеке браузер.
+onboarding-multistage-welcome-primary-button-label = Баптауды бастау
+onboarding-multistage-welcome-secondary-button-label = Кіру
+onboarding-multistage-welcome-secondary-button-text = Тіркелгіңіз бар ма?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "default" should stay inside the span.
+onboarding-multistage-set-default-header = { -brand-short-name } өнімін өзіңіздің <span data-l10n-name="zap">үнсіз келісім браузері</span> қылыңыз.
+onboarding-multistage-set-default-subtitle = Әр шолудағы жылдамдық, қауіпсіздік және жекелік.
+onboarding-multistage-set-default-primary-button-label = Негізгі етіп қылу
+onboarding-multistage-set-default-secondary-button-label = Қазір емес
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = Парольдер, бетбелгілер және <br/><span data-l10n-name="zap">көптеген басқаны</span> импорттаңыз
+onboarding-multistage-import-subtitle = Басқа браузерден келдіңіз бе? { -brand-short-name } ішіне барлығын әкелу оп-оңай.
+onboarding-multistage-import-primary-button-label = Импорттауды бастау
+onboarding-multistage-import-secondary-button-label = Қазір емес
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = Бұл сайттар осы құрылғыдан табылды. { -brand-short-name } деректерді басқа браузерден деректерді сіз оларды импорттағанша дейін синхрондамайды.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = Жұмысты бастау: экран { $current }, барлығы { $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = <span data-l10n-name="zap">Сыртқы түрін</span> таңдаңыз
+onboarding-multistage-theme-subtitle = { -brand-short-name } өнімін тема көмегімен жеке қылыңыз.
+onboarding-multistage-theme-primary-button-label = Теманы сақтау
+onboarding-multistage-theme-primary-button-label2 = Дайын
+onboarding-multistage-theme-secondary-button-label = Қазір емес
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = Автоматты түрде
+onboarding-multistage-theme-label-light = Ашық түсті
+onboarding-multistage-theme-label-dark = Күңгірт түсті
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Батырмалар, мәзірлер және терезелер үшін
+        операциялық жүйенің сыртқы түрін мұралау.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Батырмалар, мәзірлер және терезелер үшін
+        операциялық жүйенің сыртқы түрін мұралау.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Батырмалар, мәзірлер және терезелер үшін
+        ашық түсті сыртқы түрін қолдану.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Батырмалар, мәзірлер және терезелер үшін
+        ашық түсті сыртқы түрін қолдану.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Батырмалар, мәзірлер және терезелер үшін
+        күңгірт түсті сыртқы түрін қолдану.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Батырмалар, мәзірлер және терезелер үшін
+        күңгірт түсті сыртқы түрін қолдану.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Батырмалар, мәзірлер және терезелер үшін
+        түрлі түсті сыртқы түрін қолдану.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Батырмалар, мәзірлер және терезелер үшін
+        түрлі түсті сыртқы түрін қолдану.

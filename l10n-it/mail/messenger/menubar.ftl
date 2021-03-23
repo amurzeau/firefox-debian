@@ -9,6 +9,18 @@ menu-view-charset =
     .label = Codifica del testo
     .accesskey = c
 
+## Help Menu
+
+menu-help-enter-troubleshoot-mode =
+    .label = Modalità risoluzione problemi…
+    .accesskey = M
+menu-help-exit-troubleshoot-mode =
+    .label = Disattiva Modalità risoluzione problemi
+    .accesskey = D
+menu-help-more-troubleshooting-info =
+    .label = Altre informazioni per la risoluzione di problemi
+    .accesskey = u
+
 ## Mail Toolbar
 
 toolbar-junk-button =

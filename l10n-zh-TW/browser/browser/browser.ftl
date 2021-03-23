@@ -294,7 +294,7 @@ identity-https-only-info-no-upgrade = 無法將網站連線從 HTTP 升級。
 identity-permissions =
     .value = 權限
 identity-permissions-storage-access-header = 跨網站 Cookie
-identity-permissions-storage-access-hint = 當您開啟此網站十，這些網站可以使用跨網站 Cookie，並且取得您在此網站的資料。
+identity-permissions-storage-access-hint = 當您開啟此網站時，這些網站可以使用跨網站 Cookie，並且取得您在此網站的資料。
 identity-permissions-reload-hint = 您可能需要重新載入頁面才能讓變更生效。
 identity-permissions-empty = 您並未授予此網站任何特殊權限。
 identity-clear-site-data =
@@ -366,6 +366,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = 要分享的麥克風:
     .accesskey = M
+popup-select-camera-device =
+    .value = 攝影機:
+    .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = 攝影機
+popup-select-microphone-device =
+    .value = 麥克風:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = 麥克風
 popup-all-windows-shared = 將分享您畫面上所有可見的視窗。
 popup-screen-sharing-not-now =
     .label = 現在不要
@@ -375,6 +385,13 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = 分享時，不顯示 { -brand-short-name } 的通知
 popup-silence-notifications-checkbox-warning = { -brand-short-name } 將不會在進行分享時顯示通知。
+popup-screen-sharing-block =
+    .label = 封鎖
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = 總是封鎖
+    .accesskey = w
+popup-mute-notifications-checkbox = 分享視窗或畫面時，隱藏網站通知
 
 ## WebRTC window or screen share tab switch warning
 
@@ -515,6 +532,8 @@ crashed-subframe-message = <strong>此頁面中的部分內容發生錯誤。</s
 crashed-subframe-learnmore =
     .label = 了解更多
     .accesskey = L
+crashed-subframe-learnmore-link =
+    .value = 了解更多
 crashed-subframe-submit =
     .label = 送出報告
     .accesskey = S
@@ -529,6 +548,7 @@ bookmarks-manage-bookmarks =
     .label = 管理書籤
 bookmarks-recent-bookmarks-panel =
     .value = 最近加入的書籤
+bookmarks-recent-bookmarks-panel-subheader = 最近加入的書籤
 bookmarks-toolbar-chevron =
     .tooltiptext = 顯示更多書籤
 bookmarks-sidebar-content =
@@ -608,3 +628,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = 離線模式
     .accesskey = k
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = 此網站的某些影音內容需要使用 DRM 軟體，可能會限制 { -brand-short-name } 能讓您使用的功能。
+eme-notifications-drm-content-playing-manage = 管理設定
+eme-notifications-drm-content-playing-manage-accesskey = M
+eme-notifications-drm-content-playing-dismiss = 知道了！
+eme-notifications-drm-content-playing-dismiss-accesskey = D
+
+## Password save/update panel
+
+panel-save-update-username = 使用者名稱
+panel-save-update-password = 密碼
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = 要移除 { $name } 嗎？
+addon-removal-abuse-report-checkbox = 回報此擴充套件給 { -vendor-short-name }

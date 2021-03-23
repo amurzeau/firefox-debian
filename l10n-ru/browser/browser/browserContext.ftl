@@ -111,6 +111,9 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Открыть ссылку в новой вкладке в контейнере
     .accesskey = е
+main-context-menu-open-link-container =
+    .label = Открыть ссылку в контейнере
+    .accesskey = к
 main-context-menu-open-link-new-window =
     .label = Открыть ссылку в новом окне
     .accesskey = ь
@@ -120,6 +123,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = Добавить ссылку в закладки
     .accesskey = с
+main-context-menu-bookmark-link =
+    .label = Добавить в закладки
+    .accesskey = з
 main-context-menu-save-link =
     .label = Сохранить объект как…
     .accesskey = х
@@ -131,12 +137,20 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = Копировать адрес электронной почты
     .accesskey = э
 main-context-menu-copy-link =
     .label = Копировать ссылку
     .accesskey = ы
+main-context-menu-copy-link-simple =
+    .label = Копировать ссылку
+    .accesskey = л
 
 ## Media (video/audio) controls
 ##
@@ -179,6 +193,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Безумная (2×)
     .accesskey = з
+main-context-menu-media-play-speed-2 =
+    .label = Скорость
+    .accesskey = к
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Повторять
     .accesskey = в
@@ -206,6 +233,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Картинка в картинке
     .accesskey = и
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Смотреть в режиме «Картинка-в-картинке»
+    .accesskey = а
 main-context-menu-image-reload =
     .label = Перезагрузить изображение
     .accesskey = и
@@ -215,6 +247,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = Открыть видео
     .accesskey = т
+main-context-menu-image-view-new-tab =
+    .label = Открыть изображение в новой вкладке
+    .accesskey = ы
+main-context-menu-video-view-new-tab =
+    .label = Открыть видео в новой вкладке
+    .accesskey = и
 main-context-menu-image-copy =
     .label = Копировать изображение
     .accesskey = и
@@ -227,6 +265,15 @@ main-context-menu-video-copy-location =
 main-context-menu-audio-copy-location =
     .label = Копировать ссылку на аудио
     .accesskey = п
+main-context-menu-image-copy-link =
+    .label = Копировать ссылку на изображение
+    .accesskey = р
+main-context-menu-video-copy-link =
+    .label = Копировать ссылку на видео
+    .accesskey = в
+main-context-menu-audio-copy-link =
+    .label = Копировать ссылку на аудио
+    .accesskey = д
 main-context-menu-image-save-as =
     .label = Сохранить изображение как…
     .accesskey = о
@@ -239,6 +286,9 @@ main-context-menu-image-set-as-background =
 main-context-menu-image-info =
     .label = Информация об изображении
     .accesskey = з
+main-context-menu-image-set-image-as-background =
+    .label = Сделать фоновым рисунком рабочего стола…
+    .accesskey = у
 main-context-menu-image-desc =
     .label = Описание изображения
     .accesskey = а
@@ -250,6 +300,9 @@ main-context-menu-audio-save-as =
     .accesskey = о
 main-context-menu-video-image-save-as =
     .label = Сохранить кадр как…
+    .accesskey = х
+main-context-menu-video-take-snapshot =
+    .label = Захватить кадр…
     .accesskey = х
 main-context-menu-video-email =
     .label = Отправить видео по почте…
@@ -274,6 +327,26 @@ main-context-menu-view-background-image =
     .accesskey = ы
 main-context-menu-generate-new-password =
     .label = Использовать сгенерированный пароль…
+    .accesskey = п
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = Использовать сохранённый логин
+    .accesskey = й
+main-context-menu-use-saved-password =
+    .label = Использовать сохраненный пароль
+    .accesskey = н
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = Предложить надежный пароль…
+    .accesskey = ж
+main-context-menu-manage-logins =
+    .label = Управление логинами…
     .accesskey = п
 main-context-menu-keyword =
     .label = Добавить краткое имя для данного поиска…
@@ -317,6 +390,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Исходный код выделенного фрагмента
     .accesskey = д
+main-context-menu-take-screenshot =
+    .label = Сделать скриншот
+    .accesskey = ш
 main-context-menu-view-page-source =
     .label = Исходный код страницы
     .accesskey = о
@@ -332,6 +408,9 @@ main-context-menu-bidi-switch-page =
 main-context-menu-inspect-element =
     .label = Исследовать элемент
     .accesskey = л
+main-context-menu-inspect =
+    .label = Исследовать
+    .accesskey = е
 main-context-menu-inspect-a11y-properties =
     .label = Исследовать свойства поддержки доступности
 main-context-menu-eme-learn-more =

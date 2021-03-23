@@ -26,6 +26,15 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Obnoviť zatvorené karty
         }
     .accesskey = b
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Obnoviť zatvorenú kartu
+            [one] Obnoviť zatvorenú kartu
+            [few] Obnoviť zatvorené karty
+           *[other] Obnoviť zatvorené karty
+        }
+    .accesskey = b
 toolbar-context-menu-manage-extension =
     .label = Správa rozšírenia
     .accesskey = S
@@ -47,21 +56,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Automaticky skryť v paneli nástrojov
     .accesskey = A
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Skryť, ak je zoznam prázdny
+    .accesskey = z
 toolbar-context-menu-remove-from-toolbar =
     .label = Odstrániť z panela nástrojov
     .accesskey = O
 toolbar-context-menu-view-customize-toolbar =
     .label = Prispôsobiť…
     .accesskey = P
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Vždy
-    .accesskey = V
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Nikdy
-    .accesskey = N
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Iba na novej karte
-    .accesskey = o
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Upraviť panel nástrojov…
+    .accesskey = U
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Vždy zobrazovať
     .accesskey = V

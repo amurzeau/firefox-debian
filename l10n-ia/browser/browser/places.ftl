@@ -8,6 +8,12 @@ places-open =
 places-open-tab =
     .label = Aperir in un nove scheda
     .accesskey = s
+places-open-in-tab =
+    .label = Aperir in un nove scheda
+    .accesskey = v
+places-open-all-bookmarks =
+    .label = Aperir tote le marcapaginas
+    .accesskey = A
 places-open-all-in-tabs =
     .label = Aperir toto in schedas
     .accesskey = O
@@ -29,6 +35,24 @@ places-new-folder =
 places-new-separator =
     .label = Nove separator
     .accesskey = S
+places-open-in-window =
+    .label = Aperir in un nove fenestra
+    .accesskey = n
+places-open-in-private-window =
+    .label = Aperir in un nove fenestra private
+    .accesskey = p
+places-add-bookmark =
+    .label = Adder marcapagina…
+    .accesskey = m
+places-add-folder-contextmenu =
+    .label = Addente plica…
+    .accesskey = p
+places-add-folder =
+    .label = Addente plica…
+    .accesskey = p
+places-add-separator =
+    .label = Adder separator
+    .accesskey = s
 places-view =
     .label = Vider
     .accesskey = r
@@ -60,6 +84,13 @@ places-sortby-name =
 places-properties =
     .label = Proprietates
     .accesskey = i
+# places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
+places-edit-bookmark =
+    .label = Modificar marcapagina…
+    .accesskey = i
+places-edit-generic =
+    .label = Rediger…
+    .accesskey = i
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
     .label = Marcapaginas gerite
@@ -69,3 +100,16 @@ managed-bookmarks-subfolder =
 # This label is used for the "Other Bookmarks" folder that appears in the bookmarks toolbar.
 other-bookmarks-folder =
     .label = Altere marcapaginas
+# Variables:
+# $count (number) - The number of elements being selected for removal.
+places-remove-bookmark =
+    .label =
+        { $count ->
+            [1] Remover marcapaginas
+            [one] Remover marcapagina
+           *[other] Remover marcapaginas
+        }
+    .accesskey = e
+places-manage-bookmarks =
+    .label = Gerer marcapaginas
+    .accesskey = G

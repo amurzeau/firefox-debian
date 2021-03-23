@@ -111,6 +111,9 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Сілтемені жаңа контейнер бетінде ашу
     .accesskey = к
+main-context-menu-open-link-container =
+    .label = Сілтемені жаңа контейнерде ашу
+    .accesskey = к
 main-context-menu-open-link-new-window =
     .label = Сілтемені жаңа терезеде ашу
     .accesskey = т
@@ -120,6 +123,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = Осы сілтемені бетбелгілерге қосу
     .accesskey = л
+main-context-menu-bookmark-link =
+    .label = Сілтемені бетбелгілерге қосу
+    .accesskey = б
 main-context-menu-save-link =
     .label = Сілтемені қалайша сақтау…
     .accesskey = м
@@ -131,12 +137,20 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = Электронды пошта адресін көшіріп алу
     .accesskey = п
 main-context-menu-copy-link =
     .label = Сілтемені көшіру
     .accesskey = ш
+main-context-menu-copy-link-simple =
+    .label = Сілтемені көшіріп алу
+    .accesskey = л
 
 ## Media (video/audio) controls
 ##
@@ -227,6 +241,15 @@ main-context-menu-video-copy-location =
 main-context-menu-audio-copy-location =
     .label = Аудионың сілтемесін көшіру
     .accesskey = А
+main-context-menu-image-copy-link =
+    .label = Сурет сілтемесін көшіру
+    .accesskey = ш
+main-context-menu-video-copy-link =
+    .label = Видео сілтемесін көшіру
+    .accesskey = ш
+main-context-menu-audio-copy-link =
+    .label = Аудио сілтемесін көшіру
+    .accesskey = ш
 main-context-menu-image-save-as =
     .label = Суретті қалайша сақтау…
     .accesskey = у
@@ -238,6 +261,9 @@ main-context-menu-image-set-as-background =
     .accesskey = с
 main-context-menu-image-info =
     .label = Сурет ақпаратын қарау
+    .accesskey = С
+main-context-menu-image-set-image-as-background =
+    .label = Суретті жұмыс үстелінің тұсқағазы ретінде орнату…
     .accesskey = С
 main-context-menu-image-desc =
     .label = Анықтамасын қарау
@@ -275,6 +301,26 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = Генерацияланған парольді қолдану…
     .accesskey = Г
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = Сақталған логинді қолдану
+    .accesskey = о
+main-context-menu-use-saved-password =
+    .label = Сақталған парольді қолдану
+    .accesskey = о
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = Мықты парольді ұсыну…
+    .accesskey = с
+main-context-menu-manage-logins =
+    .label = Логиндерді басқару
+    .accesskey = н
 main-context-menu-keyword =
     .label = Осы ізденісті белгілейтін кілт сөзін енгізу…
     .accesskey = к
@@ -332,6 +378,9 @@ main-context-menu-bidi-switch-page =
 main-context-menu-inspect-element =
     .label = Элементті бақылау
     .accesskey = Э
+main-context-menu-inspect =
+    .label = Бақылау
+    .accesskey = ы
 main-context-menu-inspect-a11y-properties =
     .label = Қолжетерлілік қасиеттерін бақылау
 main-context-menu-eme-learn-more =

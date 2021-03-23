@@ -111,6 +111,9 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Aperir le ligamine in un nove scheda contextual
     .accesskey = c
+main-context-menu-open-link-container =
+    .label = Aperir le ligamine in un nove continitor
+    .accesskey = v
 main-context-menu-open-link-new-window =
     .label = Aperir le ligamine in un nove fenestra
     .accesskey = f
@@ -119,6 +122,9 @@ main-context-menu-open-link-new-private-window =
     .accesskey = P
 main-context-menu-bookmark-this-link =
     .label = Adder un marcapaginas sur iste ligamine
+    .accesskey = m
+main-context-menu-bookmark-link =
+    .label = Adder ligamine al marcapaginas
     .accesskey = m
 main-context-menu-save-link =
     .label = Salvar le ligamine como…
@@ -131,12 +137,20 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = Copiar le adresse de e-mail
     .accesskey = E
 main-context-menu-copy-link =
     .label = Copiar le adresse del ligamine
     .accesskey = C
+main-context-menu-copy-link-simple =
+    .label = Copiar ligamine
+    .accesskey = l
 
 ## Media (video/audio) controls
 ##
@@ -179,6 +193,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Rapidissime (2×)
     .accesskey = s
+main-context-menu-media-play-speed-2 =
+    .label = Velocitate
+    .accesskey = t
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Repeter
     .accesskey = R
@@ -206,6 +233,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Imagine-in-imagine
     .accesskey = a
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Spectar in Imagine annidate
+    .accesskey = a
 main-context-menu-image-reload =
     .label = Recargar le imagine
     .accesskey = R
@@ -215,6 +247,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = Vider le video
     .accesskey = I
+main-context-menu-image-view-new-tab =
+    .label = Aperir imagine in nove scheda
+    .accesskey = i
+main-context-menu-video-view-new-tab =
+    .label = Aperir video in un nove scheda
+    .accesskey = v
 main-context-menu-image-copy =
     .label = Copiar le imagine
     .accesskey = C
@@ -226,6 +264,15 @@ main-context-menu-video-copy-location =
     .accesskey = o
 main-context-menu-audio-copy-location =
     .label = Copiar le adresse del audio
+    .accesskey = o
+main-context-menu-image-copy-link =
+    .label = Copiar le ligamine del imagine
+    .accesskey = o
+main-context-menu-video-copy-link =
+    .label = Copiar ligamine del video
+    .accesskey = o
+main-context-menu-audio-copy-link =
+    .label = Copiar le ligamine del audio
     .accesskey = o
 main-context-menu-image-save-as =
     .label = Salvar le imagine como…
@@ -239,6 +286,9 @@ main-context-menu-image-set-as-background =
 main-context-menu-image-info =
     .label = Vider le informationes del imagine
     .accesskey = f
+main-context-menu-image-set-image-as-background =
+    .label = Definir le imagine como fundo del scriptorio…
+    .accesskey = D
 main-context-menu-image-desc =
     .label = Vider le description
     .accesskey = D
@@ -251,6 +301,9 @@ main-context-menu-audio-save-as =
 main-context-menu-video-image-save-as =
     .label = Salvar le instantaneo como…
     .accesskey = S
+main-context-menu-video-take-snapshot =
+    .label = Capturar instantaneo…
+    .accesskey = i
 main-context-menu-video-email =
     .label = Inviar le video per email…
     .accesskey = a
@@ -275,6 +328,23 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = Usar contrasigno generate…
     .accesskey = g
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = Usar credentiales salvate
+    .accesskey = e
+main-context-menu-use-saved-password =
+    .label = Usar contrasigno salvate
+    .accesskey = o
+
+##
+
+main-context-menu-manage-logins =
+    .label = Gerer credentiales…
+    .accesskey = G
 main-context-menu-keyword =
     .label = Adder un parola clave pro iste recerca…
     .accesskey = p
@@ -331,6 +401,9 @@ main-context-menu-bidi-switch-page =
     .accesskey = D
 main-context-menu-inspect-element =
     .label = Inspectar elemento
+    .accesskey = I
+main-context-menu-inspect =
+    .label = Inspectar
     .accesskey = I
 main-context-menu-inspect-a11y-properties =
     .label = Inspectar le proprietates de accessibilitate

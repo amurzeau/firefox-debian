@@ -27,6 +27,12 @@ appmenuitem-more-tools =
     .label = Іншыя прылады
 appmenuitem-exit =
     .label = Выйсці
+appmenu-menu-button-closed =
+    .tooltiptext = Адкрыць меню праграмы
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Закрыць меню праграмы
+    .label = { -brand-shorter-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -45,6 +51,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Сінхранізаваць зараз
+appmenuitem-fxa-toolbar-sync-now =
+    .label = Сінхранізаваць зараз
+    .value = Сінхранізаваць зараз
+appmenuitem-fxa-manage-account = Кіраванне ўліковым запісам
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Апошняя сінхранізацыя { $time }
+    .label = Апошняя сінхранізацыя { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = Сінхранізаваць і захаваць дадзеныя
+appmenu-fxa-signed-in-label = Увайсці
+appmenu-fxa-setup-sync =
+    .label = Уключыць сінхранізацыю…
+appmenu-fxa-show-more-tabs = Паказаць больш картак
 appmenuitem-save-page =
     .label = Захаваць старонку як…
 
@@ -130,8 +153,13 @@ appmenu-get-help =
 appmenu-help-troubleshooting-info =
     .label = Звесткі для вырашэння праблемаў
     .accesskey = З
+appmenu-help-more-troubleshooting-info =
+    .label = Звесткі для вырашэння праблемаў
+    .accesskey = е
 appmenu-help-taskmanager =
     .label = Менеджар задач
+appmenu-help-report-site-issue =
+    .label = Паведаміць аб праблеме з сайтам…
 appmenu-help-feedback-page =
     .label = Падаць водгук…
     .accesskey = П
@@ -145,6 +173,16 @@ appmenu-help-safe-mode-without-addons =
 appmenu-help-safe-mode-with-addons =
     .label = Перазапусціць з дадаткамі
     .accesskey = П
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = Рэжым вырашэння праблем
+    .accesskey = Р
+appmenu-help-exit-troubleshoot-mode =
+    .label = Выключыць рэжым вырашэння праблем
+    .accesskey = р
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

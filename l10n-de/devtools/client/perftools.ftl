@@ -48,10 +48,10 @@ perftools-devtools-settings-label = Einstellungen
 ## Various statuses that affect the current state of profiling, not typically displayed.
 
 perftools-status-private-browsing-notice =
-    Der Profiler ist deaktivert, sobald der private Modus aktiviert ist.
+    Der Profiler wird deaktivert, sobald der private Modus aktiviert ist.
     Schließen Sie alle privaten Fenster, um den Profiler wieder zu aktivieren.
 perftools-status-recording-stopped-by-another-tool = Die Aufnahme wurde von einem anderen Werkzeug gestoppt.
-perftools-status-restart-required = Der Browser muss neugestartet werden, um diese Funktion zu aktivieren.
+perftools-status-restart-required = Der Browser muss neu gestartet werden, um diese Funktion zu aktivieren.
 
 ## These are shown briefly when the user is waiting for the profiler to respond.
 
@@ -65,8 +65,8 @@ perftools-button-capture-recording = Aufnahme speichern
 perftools-button-cancel-recording = Aufnahme abbrechen
 perftools-button-save-settings = Einstellungen speichern und zurückgehen
 perftools-button-restart = Neu starten
-perftools-button-add-directory = Ein Verzeichnis hinzufügen
-perftools-button-remove-directory = Ausgewählte entfernen
+perftools-button-add-directory = Ordner hinzufügen
+perftools-button-remove-directory = Ausgewählten Ordner entfernen
 perftools-button-edit-settings = Einstellungen bearbeiten…
 
 ## These messages are descriptions of the threads that can be enabled for the profiler.
@@ -78,11 +78,11 @@ perftools-thread-compositor =
 perftools-thread-dom-worker =
     .title = Verantwortlich für Web-Worker und Service-Worker
 perftools-thread-renderer =
-    .title = Wenn WebRender aktiviert ist, der Thread, der OpenGL ausführt
+    .title = Bei aktivem WebRender führt dieser Thread OpenGL aus.
 perftools-thread-render-backend =
     .title = Der WebRender-RenderBackend-Thread
 perftools-thread-paint-worker =
-    .title = Wenn Zeichnen außerhalb des Hauptthreads aktiviert ist, der Thread, in dem gezeichnet wird
+    .title = Wenn Zeichnen außerhalb des Hauptthreads aktiviert ist, wird mit diesem Thread gezeichnet.
 perftools-thread-style-thread =
     .title = Stilberechnung ist auf mehrere Threads aufgeteilt
 pref-thread-stream-trans =
@@ -98,7 +98,7 @@ perftools-thread-js-helper =
 
 ##
 
-perftools-record-all-registered-threads = Auswahl oben umgehen und alle registrierten Threads aufnehmen
+perftools-record-all-registered-threads = Thread-Auswahl ignorieren und alle registrierten Threads aufnehmen
 perftools-tools-threads-input-label =
     .title = Diese Thread-Namen sind durch Kommas getrennte Listen, mit denen das Profiling der Threads im Profiler aktiviert wird. Der Name muss nur teilweise mit dem einzuschließenden Thread-Namen übereinstimmen. Leerraum wird beachtet.
 
@@ -109,6 +109,6 @@ perftools-tools-threads-input-label =
 -profiler-brand-name = Firefox Profiler
 perftools-onboarding-message = <b>Neu</b>: { -profiler-brand-name } ist jetzt in die Entwicklerwerkzeuge integriert. <a>Erfahren Sie mehr</a> über dieses leistungsstarke neue Werkzeug.
 # `options-context-advanced-settings` is defined in toolbox-options.ftl
-perftools-onboarding-reenable-old-panel = (Für eine begrenzte Zeit können Sie über <a>{ options-context-advanced-settings }</a> auf die ursprüngliche Ansicht für Leistungsanalyse zugreifen)
+perftools-onboarding-reenable-old-panel = (Für eine begrenzte Zeit können Sie über <a>{ options-context-advanced-settings }</a> auf die ursprüngliche Ansicht für Leistungsanalyse zugreifen.)
 perftools-onboarding-close-button =
-    .aria-label = Die Onboarding-Nachricht schließen
+    .aria-label = Diese Änderungsmitteilung schließen

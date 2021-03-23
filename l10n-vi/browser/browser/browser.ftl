@@ -366,6 +366,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Chia sẻ micro:
     .accesskey = M
+popup-select-camera-device =
+    .value = Máy ảnh:
+    .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = Máy ảnh
+popup-select-microphone-device =
+    .value = Micrô:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Micrô
 popup-all-windows-shared = Tất cả các cửa sổ trên màn hình sẽ được chia sẻ.
 popup-screen-sharing-not-now =
     .label = Không phải bây giờ
@@ -375,6 +385,13 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = Vô hiệu hóa thông báo từ { -brand-short-name } trong khi chia sẻ
 popup-silence-notifications-checkbox-warning = { -brand-short-name } sẽ không hiển thị thông báo trong khi bạn đang chia sẻ.
+popup-screen-sharing-block =
+    .label = Chặn
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Luôn chặn
+    .accesskey = w
+popup-mute-notifications-checkbox = Ẩn thông báo trang web khi chia sẻ
 
 ## WebRTC window or screen share tab switch warning
 
@@ -515,6 +532,8 @@ crashed-subframe-message = <strong>Một phần của trang này đã bị vớ.
 crashed-subframe-learnmore =
     .label = Tìm hiểu thêm
     .accesskey = L
+crashed-subframe-learnmore-link =
+    .value = Tìm hiểu thêm
 crashed-subframe-submit =
     .label = Gửi báo cáo
     .accesskey = S
@@ -529,6 +548,7 @@ bookmarks-manage-bookmarks =
     .label = Quản lý dấu trang
 bookmarks-recent-bookmarks-panel =
     .value = Dấu trang gần đây
+bookmarks-recent-bookmarks-panel-subheader = Dấu trang gần đây
 bookmarks-toolbar-chevron =
     .tooltiptext = Hiện thêm các dấu trang
 bookmarks-sidebar-content =
@@ -608,3 +628,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Làm việc ngoại tuyến
     .accesskey = k
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Một số nguồn audio và video trên trang này có sử dụng phần mềm DRM bảo vệ bản quyền nên một số thao tác có thể bị giới hạn với { -brand-short-name }.
+eme-notifications-drm-content-playing-manage = Quản lý cài đặt
+eme-notifications-drm-content-playing-manage-accesskey = M
+eme-notifications-drm-content-playing-dismiss = Bỏ qua
+eme-notifications-drm-content-playing-dismiss-accesskey = D
+
+## Password save/update panel
+
+panel-save-update-username = Tên đăng nhập
+panel-save-update-password = Mật khẩu
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Xóa { $name }?
+addon-removal-abuse-report-checkbox = Báo cáo tiện ích mở rộng này cho { -vendor-short-name }

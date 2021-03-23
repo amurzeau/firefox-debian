@@ -357,6 +357,8 @@ browser-tab-audio-playing2 = AFSPELEN
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-muted2 = GEDEMPT
 # This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = AUTOMATISCH AFSPELEN GEBLOKKEERD
+# This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = PICTURE-IN-PICTURE
 
 ## Bookmarks toolbar items
@@ -374,6 +376,12 @@ popup-select-camera =
 popup-select-microphone =
     .value = Te delen microfoon:
     .accesskey = M
+popup-select-camera-device =
+    .value = Camera:
+    .accesskey = C
+popup-select-microphone-device =
+    .value = Microfoon:
+    .accesskey = M
 popup-all-windows-shared = Alle zichtbare vensters op uw scherm worden gedeeld.
 popup-screen-sharing-not-now =
     .label = Niet nu
@@ -383,6 +391,13 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = Notificaties van { -brand-short-name } uitschakelen tijdens delen
 popup-silence-notifications-checkbox-warning = { -brand-short-name } toont geen meldingen terwijl u deelt.
+popup-screen-sharing-block =
+    .label = Blokkeren
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Altijd blokkeren
+    .accesskey = t
+popup-mute-notifications-checkbox = Websitemeldingen dempen tijdens delen
 
 ## WebRTC window or screen share tab switch warning
 
@@ -523,6 +538,8 @@ crashed-subframe-message = <strong>Een deel van deze pagina is gecrasht.</strong
 crashed-subframe-learnmore =
     .label = Meer info
     .accesskey = M
+crashed-subframe-learnmore-link =
+    .value = Meer info
 crashed-subframe-submit =
     .label = Rapport verzenden
     .accesskey = z
@@ -537,6 +554,7 @@ bookmarks-manage-bookmarks =
     .label = Bladwijzers beheren
 bookmarks-recent-bookmarks-panel =
     .value = Recente bladwijzers
+bookmarks-recent-bookmarks-panel-subheader = Recente bladwijzers
 bookmarks-toolbar-chevron =
     .tooltiptext = Meer bladwijzers tonen
 bookmarks-sidebar-content =
@@ -616,3 +634,11 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Offline werken
     .accesskey = f
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Sommige audio- of videobestanden op deze pagina gebruiken DRM-software die { -brand-short-name } kan beperken in wat u ermee wilt doen.
+eme-notifications-drm-content-playing-manage = Instellingen beheren
+eme-notifications-drm-content-playing-manage-accesskey = b
+eme-notifications-drm-content-playing-dismiss = Sluiten
+eme-notifications-drm-content-playing-dismiss-accesskey = S

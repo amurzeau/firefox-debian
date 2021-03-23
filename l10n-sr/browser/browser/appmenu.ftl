@@ -98,8 +98,17 @@ profiler-popup-capture-shortcut =
        *[other] Ctrl+Shift+2
     }
 
+## History panel
+
+appmenu-manage-history =
+    .label = Управљај историјом
+appmenu-reopen-all-tabs = Поново отвори све језичке
+appmenu-reopen-all-windows = Поново отвори све прозоре
+
 ## Help panel
 
+appmenu-help-header =
+    .title = { -brand-shorter-name } помоћ
 appmenu-about =
     .label = О програму { -brand-shorter-name }
     .accesskey = О
@@ -115,11 +124,16 @@ appmenu-help-import-from-another-browser =
 appmenu-help-keyboard-shortcuts =
     .label = Пречице на тастатури
     .accesskey = K
+appmenu-get-help =
+    .label = Потражи помоћ
+    .accesskey = H
 appmenu-help-troubleshooting-info =
     .label = Подаци о решавању проблема
     .accesskey = T
 appmenu-help-taskmanager =
     .label = Управник задатака
+appmenu-help-report-site-issue =
+    .label = Пријави проблем на сајту…
 appmenu-help-feedback-page =
     .label = Пошаљи повратне информације
     .accesskey = S
@@ -148,3 +162,9 @@ appmenu-help-not-deceptive =
 
 appmenu-help-check-for-update =
     .label = Провери ажурирања…
+
+## More Tools
+
+appmenu-customizetoolbar =
+    .label = Прилагоди алатну траку…
+appmenu-developer-tools-subheader = Алати прегледача

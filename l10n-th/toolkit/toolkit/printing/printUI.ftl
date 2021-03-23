@@ -38,6 +38,11 @@ printui-scale-pcent = มาตราส่วน
 # Section title (noun) for the two-sided print options
 printui-two-sided-printing = การพิมพ์สองด้าน
 printui-duplex-checkbox = พิมพ์ทั้งสองด้าน
+printui-two-sided-printing-off = ปิด
+# Flip the sheet as if it were bound along its long edge.
+printui-two-sided-printing-long-edge = พลิกตามขอบยาว
+# Flip the sheet as if it were bound along its short edge.
+printui-two-sided-printing-short-edge = พลิกตามขอบสั้น
 # Section title for miscellaneous print options
 printui-options = ตัวเลือก
 printui-headers-footers-checkbox = พิมพ์หัวกระดาษและท้ายกระดาษ
@@ -95,6 +100,7 @@ printui-paper-tabloid = Tabloid
 
 printui-error-invalid-scale = มาตราส่วนต้องเป็นตัวเลขระหว่าง 10 ถึง 200
 printui-error-invalid-margin = โปรดป้อนระยะขอบที่ถูกต้องสำหรับขนาดกระดาษที่เลือก
+printui-error-invalid-copies = สำเนาต้องเป็นตัวเลขระหว่าง 1 และ 10000
 # Variables
 # $numPages (integer) - Number of pages
 printui-error-invalid-range = ช่วงต้องเป็นตัวเลขระหว่าง 1 ถึง { $numPages }

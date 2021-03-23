@@ -545,6 +545,7 @@ bookmarks-manage-bookmarks =
     .label = ਬੁੱਕਮਾਰਕਾਂ ਇੰਤਜ਼ਾਮ
 bookmarks-recent-bookmarks-panel =
     .value = ਹਾਲੀਆ ਬੁੱਕਮਾਰਕ
+bookmarks-recent-bookmarks-panel-subheader = ਹਾਲੀਆ ਬੁੱਕਮਾਰਕ
 bookmarks-toolbar-chevron =
     .tooltiptext = ਹੋਰ ਬੁੱਕਮਾਰਕਾਂ ਨੂੰ ਵੇਖੋ
 bookmarks-sidebar-content =
@@ -624,3 +625,7 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = ਆਫਲਾਈਨ ਕੰਮ ਕਰੋ
     .accesskey = w
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = ਇਹ ਸਾਈਟ ਉੱਤੇ ਕੁਝ ਆਡੀਓ ਜਾਂ ਵੀਡੀਓ DRM ਸਾਫਟਵੇਅਰ ਵਰਤਦੇ ਹਨ, ਜੋ ਕਿ ਤੁਹਾਨੂੰ { -brand-short-name } ਨਾਲ ਕੰਮ ਕਰਨ ਨੂੰ ਸੀਮਤ ਕਰ ਸਕਦਾ ਹੈ।

@@ -317,6 +317,47 @@ about-logins-import-dialog-error-no-logins-imported = Noñemba’eguerúi tembia
 about-logins-import-dialog-error-learn-more = Kuaave
 about-logins-import-dialog-error-try-again = Eha’ãjey…
 about-logins-import-dialog-error-cancel = Heja
+about-logins-import-report-title = Mba’egueru Ñemomichĩ
+about-logins-import-report-description = Tembiapo ñepyrũ ha ñe’ẽñemi eguerupyre { -brand-short-name }-gui.
+#
+# Variables:
+#  $number (number) - The number of the row
+about-logins-import-report-row-index = Tysyi’i { $number }
+about-logins-import-report-row-description-no-change = Mokõimbyre: Ojokupyty tembiapo ñepyrũ oĩvare
+about-logins-import-report-row-description-modified = Tembiapo ñepyrũ oĩva hekopyahúma
+about-logins-import-report-row-description-added = Tembiapo ñepyrũ pyahu mbojuajupyre
+about-logins-import-report-row-description-error = Javy: Kora oĩ’ỹva
+
+##
+## Variables:
+##  $field (String) - The name of the field from the CSV file for example url, username or password
+
+about-logins-import-report-row-description-error-multiple-values = Javy: Heta tepykue { $field } peg̃uarã
+about-logins-import-report-row-description-error-missing-field = Javy: Ndaipóri { $field }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-report-added =
+    { $count ->
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Oñembojuaju tembiapo ñepyrũ pyahu</div>
+    }
+about-logins-import-report-modified =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Tembiapo ñepyrũ oĩva hekopyahupyre</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Tembiapo ñepyrũ oĩva hekopyahupyre</div>
+    }
+about-logins-import-report-no-change =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Tembiapo ñepyrũ mokõimbyre</div> <div data-l10n-name="not-imported">(ndojeguerúiva)</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Tembiapo ñepyrũ mokõimbyre</div> <div data-l10n-name="not-imported">(ndojeguerúiva)</div>
+    }
+about-logins-import-report-error =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Javy</div> <div data-l10n-name="not-imported">(ndojeguerúiva)</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Javy</div> <div data-l10n-name="not-imported">(ndojeguerúiva)</div>
+    }
 
 ## Logins import report page
 

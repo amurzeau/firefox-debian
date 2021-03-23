@@ -350,6 +350,14 @@ browser-window-close-button =
 
 browser-tab-audio-playing = Lecture en cours
 browser-tab-audio-muted = Muet
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = LECTURE EN COURS
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = MUET
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = LECTURE AUTOMATIQUE BLOQUÉE
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = INCRUSTATION VIDÉO
 
 ## Bookmarks toolbar items
 
@@ -366,6 +374,12 @@ popup-select-camera =
 popup-select-microphone =
     .value = Microphone à partager :
     .accesskey = M
+popup-select-camera-device =
+    .value = Caméra :
+    .accesskey = C
+popup-select-microphone-device =
+    .value = Microphone :
+    .accesskey = M
 popup-all-windows-shared = L’ensemble des fenêtres visibles sur votre écran seront partagées.
 popup-screen-sharing-not-now =
     .label = Plus tard
@@ -375,6 +389,13 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = Désactiver les notifications de { -brand-short-name } pendant le partage
 popup-silence-notifications-checkbox-warning = { -brand-short-name } n’affichera pas de notifications pendant le partage.
+popup-screen-sharing-block =
+    .label = Bloquer
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Toujours bloquer
+    .accesskey = T
+popup-mute-notifications-checkbox = Désactiver les notifications du site web lors du partage
 
 ## WebRTC window or screen share tab switch warning
 
@@ -515,6 +536,8 @@ crashed-subframe-message = <strong>Une partie de cette page a planté.</strong> 
 crashed-subframe-learnmore =
     .label = En savoir plus
     .accesskey = E
+crashed-subframe-learnmore-link =
+    .value = En savoir plus
 crashed-subframe-submit =
     .label = Envoyer un rapport
     .accesskey = r
@@ -525,6 +548,11 @@ bookmarks-show-all-bookmarks =
     .label = Afficher tous les marque-pages
 bookmarks-recent-bookmarks =
     .value = Marqués récemment
+bookmarks-manage-bookmarks =
+    .label = Organiser les marque-pages
+bookmarks-recent-bookmarks-panel =
+    .value = Marque-pages récents
+bookmarks-recent-bookmarks-panel-subheader = Marque-pages récents
 bookmarks-toolbar-chevron =
     .tooltiptext = Afficher plus de marque-pages
 bookmarks-sidebar-content =
@@ -548,6 +576,12 @@ bookmarks-tools-toolbar-visibility =
            *[other] Afficher la barre personnelle
         }
 bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Masquer la barre personnelle
+           *[other] Afficher la barre personnelle
+        }
+bookmarks-tools-toolbar-visibility-panel =
     .label =
         { $isVisible ->
             [true] Masquer la barre personnelle
@@ -578,6 +612,9 @@ bookmarks-toolbar-placeholder =
     .title = Éléments de la barre personnelle
 bookmarks-toolbar-placeholder-button =
     .label = Éléments de la barre personnelle
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Marquer l’onglet courant
 
 ## Library Panel items
 
@@ -595,3 +632,11 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Travailler hors connexion
     .accesskey = x
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = De l’audio ou de la vidéo sur ce site utilise des DRM, ce qui peut limiter les actions que vous permet { -brand-short-name } sur ces éléments.
+eme-notifications-drm-content-playing-manage = Gérer les paramètres
+eme-notifications-drm-content-playing-manage-accesskey = m
+eme-notifications-drm-content-playing-dismiss = Ignorer
+eme-notifications-drm-content-playing-dismiss-accesskey = n

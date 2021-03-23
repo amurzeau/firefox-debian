@@ -25,6 +25,14 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Tabbladen sluiten ongedaan maken
         }
     .accesskey = o
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Gesloten tabblad opnieuw openen
+            [one] Gesloten tabblad opnieuw openen
+           *[other] Gesloten tabbladen opnieuw openen
+        }
+    .accesskey = o
 toolbar-context-menu-manage-extension =
     .label = Extensie beheren
     .accesskey = E
@@ -46,21 +54,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Automatisch verbergen in werkbalk
     .accesskey = u
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Knop verbergen indien leeg
+    .accesskey = v
 toolbar-context-menu-remove-from-toolbar =
     .label = Verwijderen van werkbalk
     .accesskey = w
 toolbar-context-menu-view-customize-toolbar =
     .label = Aanpassen…
     .accesskey = A
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Altijd
-    .accesskey = A
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Nooit
-    .accesskey = N
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Alleen op een nieuw tabblad
-    .accesskey = o
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Werkbalk aanpassen…
+    .accesskey = p
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Altijd tonen
     .accesskey = A

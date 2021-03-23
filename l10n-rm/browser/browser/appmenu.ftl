@@ -27,6 +27,12 @@ appmenuitem-more-tools =
     .label = Ulteriurs utensils
 appmenuitem-exit =
     .label = Terminar
+appmenu-menu-button-closed =
+    .tooltiptext = Avrir il menu d'applicaziun
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Serrar il menu d'applicaziun
+    .label = { -brand-shorter-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -45,6 +51,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Sincronisar ussa
+appmenuitem-fxa-toolbar-sync-now =
+    .label = Sincronisar ussa
+    .value = Sincronisar ussa
+appmenuitem-fxa-manage-account = Administrar il conto
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Ultima sincronisaziun: { $time }
+    .label = Ultima sincronisaziun: { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = Sincronisar e memorisar las datas
+appmenu-fxa-signed-in-label = S'annunziar
+appmenu-fxa-setup-sync =
+    .label = Activar la sincronisaziun…
+appmenu-fxa-show-more-tabs = Mussar dapli tabs
 appmenuitem-save-page =
     .label = Memorisar la pagina sut…
 
@@ -130,8 +153,13 @@ appmenu-get-help =
 appmenu-help-troubleshooting-info =
     .label = Infurmaziuns per schliar problems
     .accesskey = p
+appmenu-help-more-troubleshooting-info =
+    .label = Dapli infurmaziuns per schliar problems
+    .accesskey = D
 appmenu-help-taskmanager =
     .label = Task Manager
+appmenu-help-report-site-issue =
+    .label = Rapportar in problem cun la pagina…
 appmenu-help-feedback-page =
     .label = Trametter in resun…
     .accesskey = s
@@ -145,6 +173,16 @@ appmenu-help-safe-mode-without-addons =
 appmenu-help-safe-mode-with-addons =
     .label = Reaviar ed activar ils supplements
     .accesskey = R
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = Modus per schliar problems
+    .accesskey = M
+appmenu-help-exit-troubleshoot-mode =
+    .label = Deactivar il modus per schliar problems
+    .accesskey = m
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

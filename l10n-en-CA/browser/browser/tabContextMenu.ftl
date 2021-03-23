@@ -14,6 +14,13 @@ duplicate-tab =
 duplicate-tabs =
     .label = Duplicate Tabs
     .accesskey = D
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = Close Tabs to the Left
+    .accesskey = l
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Close Tabs to the Right
     .accesskey = i
@@ -44,6 +51,9 @@ bookmark-tab =
 reopen-in-container =
     .label = Reopen in Container
     .accesskey = e
+tab-context-open-in-container =
+    .label = Open in New Container
+    .accesskey = e
 move-to-start =
     .label = Move to Start
     .accesskey = S
@@ -56,6 +66,11 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Close Multiple Tabs
     .accesskey = M
+tab-context-share-url =
+    .label = Share
+    .accesskey = h
+tab-context-share-more =
+    .label = More…
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -79,6 +94,13 @@ move-tabs =
 move-tab =
     .label = Move Tab
     .accesskey = v
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Reopen Closed Tab
+           *[other] Reopen Closed Tabs
+        }
+    .accesskey = o
 tab-context-close-tabs =
     .label =
         { $tabCount ->

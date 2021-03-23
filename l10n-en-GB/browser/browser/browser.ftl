@@ -17,8 +17,8 @@
 browser-main-window =
     .data-title-default = { -brand-full-name }
     .data-title-private = { -brand-full-name } (Private Browsing)
-    .data-content-title-default = { $content-title } – { -brand-full-name }
-    .data-content-title-private = { $content-title } – { -brand-full-name } (Private Browsing)
+    .data-content-title-default = { $content-title } — { -brand-full-name }
+    .data-content-title-private = { $content-title } — { -brand-full-name } (Private Browsing)
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -35,9 +35,9 @@ browser-main-window =
 #  $content-title (String): the title of the web content.
 browser-main-window-mac =
     .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } – (Private Browsing)
+    .data-title-private = { -brand-full-name } — (Private Browsing)
     .data-content-title-default = { $content-title }
-    .data-content-title-private = { $content-title } – (Private Browsing)
+    .data-content-title-private = { $content-title } — (Private Browsing)
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -172,13 +172,13 @@ page-action-remove-extension =
 page-action-send-tabs-panel =
     .label =
         { $tabCount ->
-            [one] Send Tab to Device
+            [1] Send Tab to Device
            *[other] Send { $tabCount } Tabs to Device
         }
 page-action-send-tabs-urlbar =
     .tooltiptext =
         { $tabCount ->
-            [one] Send Tab to Device
+            [1] Send Tab to Device
            *[other] Send { $tabCount } Tabs to Device
         }
 page-action-pocket-panel =
@@ -317,7 +317,7 @@ identity-remove-cert-exception =
 identity-description-insecure = Your connection to this site is not private. Information you submit could be viewed by others (like passwords, messages, credit cards, etc.).
 identity-description-insecure-login-forms = The login information you enter on this page is not secure and could be compromised.
 identity-description-weak-cipher-intro = Your connection to this web site uses weak encryption and is not private.
-identity-description-weak-cipher-risk = Other people can view your information or modify the web site's behaviour.
+identity-description-weak-cipher-risk = Other people can view your information or modify the web site’s behaviour.
 identity-description-active-blocked = { -brand-short-name } has blocked parts of this page that are not secure. <label data-l10n-name="link">Learn More</label>
 identity-description-passive-loaded = Your connection is not private and information you share with the site could be viewed by others.
 identity-description-passive-loaded-insecure = This web site contains content that is not secure (such as images). <label data-l10n-name="link">Learn More</label>
@@ -350,6 +350,14 @@ browser-window-close-button =
 
 browser-tab-audio-playing = Playing
 browser-tab-audio-muted = Muted
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = PLAYING
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = MUTED
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = AUTOPLAY BLOCKED
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = PICTURE-IN-PICTURE
 
 ## Bookmarks toolbar items
 
@@ -366,6 +374,12 @@ popup-select-camera =
 popup-select-microphone =
     .value = Microphone to share:
     .accesskey = M
+popup-select-camera-device =
+    .value = Camera:
+    .accesskey = C
+popup-select-microphone-device =
+    .value = Microphone:
+    .accesskey = M
 popup-all-windows-shared = All visible windows on your screen will be shared.
 popup-screen-sharing-not-now =
     .label = Not Now
@@ -375,6 +389,13 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = Disable notifications from { -brand-short-name } while sharing
 popup-silence-notifications-checkbox-warning = { -brand-short-name } will not display notifications while you are sharing.
+popup-screen-sharing-block =
+    .label = Block
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Always block
+    .accesskey = w
+popup-mute-notifications-checkbox = Mute web site notifications while sharing
 
 ## WebRTC window or screen share tab switch warning
 
@@ -515,6 +536,8 @@ crashed-subframe-message = <strong>Part of this page crashed.</strong> To let { 
 crashed-subframe-learnmore =
     .label = Learn More
     .accesskey = L
+crashed-subframe-learnmore-link =
+    .value = Learn More
 crashed-subframe-submit =
     .label = Submit Report
     .accesskey = S
@@ -529,6 +552,7 @@ bookmarks-manage-bookmarks =
     .label = Manage Bookmarks
 bookmarks-recent-bookmarks-panel =
     .value = Recent Bookmarks
+bookmarks-recent-bookmarks-panel-subheader = Recent Bookmarks
 bookmarks-toolbar-chevron =
     .tooltiptext = Show more bookmarks
 bookmarks-sidebar-content =
@@ -608,3 +632,11 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Work Offline
     .accesskey = k
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Some audio or video on this site uses DRM software, which may limit what { -brand-short-name } can let you do with it.
+eme-notifications-drm-content-playing-manage = Manage Settings
+eme-notifications-drm-content-playing-manage-accesskey = M
+eme-notifications-drm-content-playing-dismiss = Dismiss
+eme-notifications-drm-content-playing-dismiss-accesskey = D

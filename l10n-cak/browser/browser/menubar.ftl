@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Tikanöx pa Re Ruxaq Re'…
     .accesskey = R
+menu-edit-find-in-page =
+    .label = Tikanöx pa Ruxaq…
+    .accesskey = k
 menu-edit-find-again =
     .label = Tikanöx Chik
     .accesskey = k
@@ -129,6 +132,9 @@ menu-view-toolbars-menu =
 menu-view-customize-toolbar =
     .label = Tichinäx…
     .accesskey = T
+menu-view-customize-toolbar2 =
+    .label = Tichinäx Rukajtz'ik Samajib'äl…
+    .accesskey = c
 menu-view-sidebar =
     .label = Chuchi' Cholab'äl
     .accesskey = C
@@ -219,6 +225,8 @@ menu-bookmarks-show-all =
     .label = Kek'ut konojel ri taq yaketal
 menu-bookmark-this-page =
     .label = Titz'aqatisäx re ruxaq re' pa taq yaketal
+menu-bookmark-current-tab =
+    .label = Tiya' Retal Ruwi' Wakami
 menu-bookmark-edit =
     .label = Tinuk' re yaketal re'
 menu-bookmarks-all-tabs =
@@ -243,6 +251,12 @@ menu-tools-addons =
     .accesskey = t
 menu-tools-fxa-sign-in =
     .label = Titikirisäx Moloj Pa { -brand-product-name }...
+    .accesskey = k
+menu-tools-extensions =
+    .label = Taq K'amal chuqa' taq Wachinel
+    .accesskey = K
+menu-tools-fxa-sign-in2 =
+    .label = Titikirisäx Molojri'ïl
     .accesskey = k
 menu-tools-turn-on-sync =
     .label = Titzij { -sync-brand-short-name }...
@@ -272,6 +286,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] c
            *[other] o
+        }
+menu-settings =
+    .label = Taq nuk'ulem
+    .accesskey =
+        { PLATFORM() ->
+            [windows] n
+           *[other] m
         }
 menu-tools-layout-debugger =
     .label = Ruchojmirisanel Wachib'enïk
@@ -325,8 +346,13 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Etamab'äl richin yesol taq k'ayewal
     .accesskey = E
+menu-help-more-troubleshooting-info =
+    .label = Ch'aqa' Etamab'äl richin yesol taq k'ayewal
+    .accesskey = E
 menu-help-taskmanager =
     .label = Kinuk'samajel taq Samaj
+menu-help-report-site-issue =
+    .label = Tiya' rutzijol ri ruk'ayewal Ruxaq K'amaya'l…
 menu-help-feedback-page =
     .label = Ketaq taq Rutzijol…
     .accesskey = K
@@ -336,6 +362,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Titikirisäx chik rik'in Tzijïl taq Tz'aqat
     .accesskey = T
+menu-help-enter-troubleshoot-mode =
+    .label = Kib'anikil taq k'ayewal
+    .accesskey = K
+menu-help-exit-troubleshoot-mode =
+    .label = Tichup ri Rub'anikil Kiwäch K'ayewal
+    .accesskey = R
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

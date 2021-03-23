@@ -25,6 +25,14 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Lapbezárások visszavonása
         }
     .accesskey = v
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Bezárt lap újranyitása
+            [one] Bezárt lap újranyitása
+           *[other] Bezárt lapok újranyitása
+        }
+    .accesskey = r
 toolbar-context-menu-manage-extension =
     .label = Kiegészítő kezelése
     .accesskey = K
@@ -46,21 +54,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Automatikus elrejtés az eszköztárban
     .accesskey = A
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Gomb elrejtése, ha üres
+    .accesskey = G
 toolbar-context-menu-remove-from-toolbar =
     .label = Eltávolítás az eszköztárról
     .accesskey = e
 toolbar-context-menu-view-customize-toolbar =
     .label = Testreszabás…
     .accesskey = T
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Mindig
-    .accesskey = M
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Soha
-    .accesskey = S
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Csak az új lapon
-    .accesskey = j
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Eszköztár testreszabása…
+    .accesskey = E
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Megjelenítés mindig
     .accesskey = M

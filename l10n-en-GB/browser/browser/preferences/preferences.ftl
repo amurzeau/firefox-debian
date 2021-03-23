@@ -178,7 +178,7 @@ containers-disable-alert-title = Close All Container Tabs?
 containers-disable-alert-desc =
     { $tabCount ->
         [one] If you disable Container Tabs now, { $tabCount } container tab will be closed. Are you sure you want to disable Container Tabs?
-       *[other] If you disable Containers Tabs now, { $tabCount } container tabs will be closed. Are you sure you want to disable Containers Tabs?
+       *[other] If you disable Container Tabs now, { $tabCount } container tabs will be closed. Are you sure you want to disable Container Tabs?
     }
 containers-disable-alert-ok-button =
     { $tabCount ->
@@ -355,7 +355,7 @@ play-drm-content =
 play-drm-content-learn-more = Learn more
 update-application-title = { -brand-short-name } Updates
 update-application-description = Keep { -brand-short-name } up to date for the best performance, stability, and security.
-update-application-version = Version { $version } <a data-l10n-name="learn-more">What's new</a>
+update-application-version = Version { $version } <a data-l10n-name="learn-more">What’s new</a>
 update-history =
     .label = Show Update History…
     .accesskey = p
@@ -602,7 +602,7 @@ search-find-more-link = Find more search engines
 search-keyword-warning-title = Duplicate Keyword
 # Variables:
 #   $name (String) - Name of a search engine.
-search-keyword-warning-engine = You have chosen a keyword that is currently in use by "{ $name }". Please select another.
+search-keyword-warning-engine = You have chosen a keyword that is currently in use by “{ $name }”. Please select another.
 search-keyword-warning-bookmark = You have chosen a keyword that is currently in use by a bookmark. Please select another.
 
 ## Containers Section
@@ -648,7 +648,7 @@ sync-mobile-promo = Download Firefox for <img data-l10n-name="android-icon"/> <a
 sync-profile-picture =
     .tooltiptext = Change profile picture
 sync-sign-out =
-    .label = Sign Out ...
+    .label = Sign Out…
     .accesskey = g
 sync-manage-account = Manage account
     .accesskey = o
@@ -675,7 +675,7 @@ prefs-sync-offer-setup-label = Synchronise your bookmarks, history, tabs, passwo
 prefs-sync-now =
     .labelnotsyncing = Synchronise Now
     .accesskeynotsyncing = N
-    .labelsyncing = Synchronising...
+    .labelsyncing = Synchronising…
 
 ## The list of things currently syncing.
 
@@ -699,11 +699,11 @@ sync-change-options =
 ## The "Choose what to sync" dialog.
 
 sync-choose-what-to-sync-dialog =
-    .title = Chose What To Synchronise
+    .title = Choose What To Synchronise
     .style = width: 36em; min-height: 35em;
     .buttonlabelaccept = Save Changes
     .buttonaccesskeyaccept = S
-    .buttonlabelextra2 = Disconnect...
+    .buttonlabelextra2 = Disconnect…
     .buttonaccesskeyextra2 = D
 sync-engine-bookmarks =
     .label = Bookmarks
@@ -717,7 +717,7 @@ sync-engine-tabs =
     .accesskey = T
 sync-engine-logins-passwords =
     .label = Logins and passwords
-    .tooltiptext = Usernames and passwords you've saved
+    .tooltiptext = Usernames and passwords you’ve saved
     .accesskey = L
 sync-engine-addresses =
     .label = Addresses
@@ -1049,7 +1049,7 @@ permissions-notification-pause =
     .accesskey = n
 permissions-autoplay = Autoplay
 permissions-autoplay-settings =
-    .label = Settings...
+    .label = Settings…
     .accesskey = t
 permissions-block-popups =
     .label = Block pop-up windows
@@ -1157,7 +1157,7 @@ space-alert-under-5gb-message = { -brand-short-name } is running out of disk spa
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = HTTPS-Only Mode
-httpsonly-description = HTTPS provides a secure, encrypted connection between { -brand-short-name } and the web sites you visit. Most websites support HTTPS, and if HTTPS-Only Mode is enabled, then { -brand-short-name } will upgrade all connections to HTTPS.
+httpsonly-description = HTTPS provides a secure, encrypted connection between { -brand-short-name } and the web sites you visit. Most web sites support HTTPS, and if HTTPS-Only Mode is enabled, then { -brand-short-name } will upgrade all connections to HTTPS.
 httpsonly-learn-more = Learn more
 httpsonly-radio-enabled =
     .label = Enable HTTPS-Only Mode in all windows

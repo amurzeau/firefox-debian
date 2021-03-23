@@ -13,12 +13,9 @@ login-app-promo-android =
     .alt = از Google Play دریافت کنید
 login-app-promo-apple =
     .alt = از App Store دریافت کنید
-
 login-filter =
     .placeholder = جست‌وجو در اطلاعات ورودها
-
 create-login-button = ایجاد کردن ورود جدید
-
 fxaccounts-sign-in-text = گذرواژه‌هایتان را دستگاه‌های دیگر خود همراه داشته باشید
 fxaccounts-sign-in-button = ورود به { -sync-brand-short-name }
 fxaccounts-avatar-button =
@@ -32,6 +29,7 @@ menu =
 about-logins-menu-menuitem-import-from-another-browser = وارد کردن از یک مرورگر دیگر…
 about-logins-menu-menuitem-import-from-a-file = افزودن از طریق یک پرونده…
 about-logins-menu-menuitem-export-logins = برون‌ریزی ورودها…
+about-logins-menu-menuitem-remove-all-logins = حذف تمامی ورودها…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] گزینه‌ها
@@ -71,15 +69,13 @@ about-logins-list-item-vulnerable-password-icon =
 ## Introduction screen
 
 login-intro-heading = دنبال اطلاعات ورود خود می‌گردید؟ { -sync-brand-short-name } را تنظیم کنید.
-
 about-logins-login-intro-heading-logged-out = به دنبال ورودهای ذخیره شدهٔ خود می‌گردید؟ { -sync-brand-short-name } را انجام دهید یا آنها را درون‌ریزی کنید.
 about-logins-login-intro-heading-logged-in = هیچ ورود همگام شده‌ای پیدا نشد
 login-intro-description = اگر شما ورودتون به{ -brand-product-name } را بر روی دستگاه دیگری ذخیره کرده‌اید،‌ به این شکل بدستشون بیارید:
-login-intro-instruction-fxa = { -fxaccount-brand-name } خود را ایجاد کنید یا بر روی دستگاهی که ورود های خود راثبت کرده اید به این حساب وارد شوید.
+login-intro-instruction-fxa = { -fxaccount-brand-name } خود را ایجاد کنید یا بر روی دستگاهی که ورودهای خود را ثبت کرده‌اید به این حساب وارد شوید.
 login-intro-instruction-fxa-settings = مطمئن شوید که جعبه ورود در تنظیمات { -sync-brand-short-name } را انتخاب کرده اید.
 about-logins-intro-instruction-help = برای دریافت کمک بیشتری یا پشتیبانی به  <a data-l10n-name="help-link">{ -lockwise-brand-short-name }پشتیبانی</a> مراجعه کنید
 about-logins-intro-import = اگر اطلاعات ورود شما، در مرورگر دیگری ثبت شده است، می‌توانید از طریق <a data-l10n-name="import-link"> آن‌ها را به { -lockwise-brand-short-name }</a> منتقل کنید.
-
 about-logins-intro-import2 = اگر ورودهای شما خارج از { -brand-product-name } ذخیره شده‌اند، می‌توانید <a data-l10n-name="import-browser-link">آنها را از مرورگری دیگر</a> یا <a data-l10n-name="import-file-link">از طریق یک پرونده</a> وارد کنید
 
 ## Login
@@ -88,6 +84,7 @@ login-item-new-login-title = ایجاد اطلاعات ورود جدید
 login-item-edit-button = ویرایش
 about-logins-login-item-remove-button = حذف
 login-item-origin-label = آدرس پایگاه
+login-item-tooltip-message = مطمئن شوید که این آدرس با آدرس دقیق وب سایتی که در آن وارد شده‌اید مطابقت دارد.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = نام کاربری
@@ -120,13 +117,11 @@ about-logins-edit-login-os-auth-dialog-message-win = برای ویرایش ور�
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = ویرایش ورودهای ذخیره شده
-
 # This message can be seen when attempting to reveal a password in about:logins on Windows.
 about-logins-reveal-password-os-auth-dialog-message-win = برای دیدن گذرواژه خود، گذواژهٔ ویندوز خود را وارد کنید. این به امنیت حساب شما کمک می‌کند.
 # This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = نمایش گذرواژهٔ ذخیره شده
-
 # This message can be seen when attempting to copy a password in about:logins on Windows.
 about-logins-copy-password-os-auth-dialog-message-win = برای رونوشت از گذرواژه خود، گذواژهٔ ویندوز خود را وارد کنید. این به امنیت حساب شما کمک می‌کند.
 # This message can be seen when attempting to copy a password in about:logins
@@ -136,7 +131,6 @@ about-logins-copy-password-os-auth-dialog-message-macosx = کپی رمز عبو�
 ## Master Password notification
 
 master-password-notification-message = برای دیدن نام‌های کاربری و گذرواژه‌ها، گذرواژهٔ اصلی خود را وارد کنید
-
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message-win = برای برون‌ریزی گذرواژه‌های خود، گذواژهٔ ویندوز خود را وارد کنید. این به امنیت حساب شما کمک می‌کند.
 # This message can be seen when attempting to export a password in about:logins
@@ -173,15 +167,45 @@ about-logins-enable-password-sync-dont-ask-again-button =
 confirmation-dialog-cancel-button = انصراف
 confirmation-dialog-dismiss-button =
     .title = انصراف
-
 about-logins-confirm-remove-dialog-title = حذف این ورود؟
 confirm-delete-dialog-message = این عمل قابل برگشت نیست.
 about-logins-confirm-remove-dialog-confirm-button = حذف
-
+about-logins-confirm-remove-all-dialog-confirm-button-label =
+    { $count ->
+        [1] حذف
+        [one] حذف همه
+       *[other] حذف همه
+    }
+about-logins-confirm-remove-all-dialog-checkbox-label =
+    { $count ->
+        [1] بله، این ورودها را حذف کن
+       *[other] بله، این ورودها را حذف کن
+    }
+about-logins-confirm-remove-all-dialog-title =
+    { $count ->
+        [one] { $count } ورود حذف شود؟
+       *[other] تمام { $count } ورود حذف شوند؟
+    }
+about-logins-confirm-remove-all-dialog-message =
+    { $count ->
+        [1] این کار ورودهایی که در { -brand-short-name } ذخیره شده‌اند و هرگونه هشدارهای ورود ناخواسته که اینجا نمایش داده شده است را حذف خواهند کرد. این عمل غیرقابل بازگشت است.
+       *[other] این کار ورودهایی که در { -brand-short-name } ذخیره شده‌اند و هرگونه هشدارهای ورود ناخواسته که اینجا نمایش داده شده است را حذف خواهند کرد. این عمل غیرقابل بازگشت است.
+    }
+about-logins-confirm-remove-all-sync-dialog-title =
+    { $count ->
+        [one] { $count } ورود از همه دستگاه‌ها حذف شود؟
+       *[other] همه { $count } ورود از همه دستگاه‌ها حذف شوند؟
+    }
+about-logins-confirm-remove-all-sync-dialog-message =
+    { $count ->
+        [1] این کار همه ورودهایی که در { -brand-short-name } ذخیره شده و در دستگاه‌هایی که با { -fxaccount-brand-name } همگام‌سازی شده‌اند، حذف خواهند شد. این کار هشدارهای ورود ناخواسته‌ای که در اینجا نمایش داده شده‌اند نیز حذف خواهند شد. این عمل غیرقابل بازگشت است.
+       *[other] این کار همه ورودهایی که در { -brand-short-name } ذخیره شده و در دستگاه‌هایی که با { -fxaccount-brand-name } همگام‌سازی شده‌اند، حذف خواهند شد. این کار هشدارهای ورود ناخواسته‌ای که در اینجا نمایش داده شده‌اند نیز حذف خواهند شد. این عمل غیرقابل بازگشت است.
+    }
 about-logins-confirm-export-dialog-title = برون‌ریزی ورودها و گذرواژه‌ها
 about-logins-confirm-export-dialog-message = گذرواژه‌های شما به عنوان متن قابل خواندن ذخیره خواهد شد (مثلاً BadP@ssw0rd) بنابراین هر کسی که بتواند پرونده صادر شده را باز کند، می‌تواند آنها را ببیند.
 about-logins-confirm-export-dialog-confirm-button = برون‌ریزی…
-
+about-logins-alert-import-title = ورود اطلاعات کامل شد
+about-logins-alert-import-message = نمایش جزئیاتِ ورود اطلاعات
 confirm-discard-changes-dialog-title = تغییرات ذخیره نشده نادیده گرفته شود؟
 confirm-discard-changes-dialog-message = تمام تغییرات ذخیره نشده از بین می‌روند.
 confirm-discard-changes-dialog-confirm-button = نادیده گرفتن
@@ -212,10 +236,8 @@ about-logins-vulnerable-alert-learn-more-link = بیشتر یاد بگیرید
 # Variables:
 #   $loginTitle (String) - The title of the website associated with the login.
 about-logins-error-message-duplicate-login-with-link = یک ورودی برای { $loginTitle } با آن نام‌کاربری از قبل وجود دارد. <a data-l10n-name="duplicate-link">به ورودی فعلی برو؟</a>
-
 # This is a generic error message.
 about-logins-error-message-default = خطای هنگام ذخیره این گذرواژه رخ داد.
-
 
 ## Login Export Dialog
 
@@ -245,3 +267,96 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] سند CSV
        *[other] پرونده CSV
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] نوشتار TSV
+       *[other] پروندهٔ TSV
+    }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = ورود اطلاعات کامل شد
+about-logins-import-dialog-items-added =
+    { $count ->
+        [one] <span>ورودهای جدید اضافه شده:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>ورودهای جدید اضافه شده:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+        [one] <span>ورودهای بروزرسانی شده:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>ورودهای بروزرسانی شده:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+        [one] <span>تعداد ورودهای تکراری:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(وارد نشدند)</span>
+       *[other] <span>تعداد ورودهای تکراری:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(وارد نشدند)</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+        [one] <span>خطاها:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(وارد نشدند)</span>
+       *[other] <span>خطاها:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(وارد نشدند)</span>
+    }
+about-logins-import-dialog-done = انجام شد
+about-logins-import-dialog-error-title = خطا در ورود اطلاعات
+about-logins-import-dialog-error-conflicting-values-title = چند مفدار متناقض برای یک ورود
+about-logins-import-dialog-error-conflicting-values-description = برای مثال: نام‌کاربری‌هاد، گذرواژها، آدرسِ متعدد برای یک ورود.
+about-logins-import-dialog-error-file-format-title = گزارش اشکال در قالب
+about-logins-import-dialog-error-file-format-description = سرصفحه‌های ستون نادرست یا گم شده است. مطمئن شوید که این فایل دارای ستون‌هایی برای نام کاربری، گذرواژه و URL است.
+about-logins-import-dialog-error-file-permission-title = خواندن پرونده امکان‌پذیر نیست
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } اجازهٔ خواندن پرونده را ندارد. مجوزهای پرونده را تغییر دهید.
+about-logins-import-dialog-error-unable-to-read-title = تجزیه پرونده امکان‌پذیر نیست
+about-logins-import-dialog-error-unable-to-read-description = مطمئن شوید که یک پرونده CSV یا TSV انتخاب کرده‌اید.
+about-logins-import-dialog-error-no-logins-imported = هیچ اطلاعاتی وارد نشد
+about-logins-import-dialog-error-learn-more = اطلاعات بیشتر
+about-logins-import-dialog-error-try-again = تلاش مجدد…
+about-logins-import-dialog-error-cancel = انصراف
+about-logins-import-report-title = خلاصهٔ ورود اطلاعات
+about-logins-import-report-description = ورودها و گذرواژه‌ها به { -brand-short-name } وارد شدند.
+#
+# Variables:
+#  $number (number) - The number of the row
+about-logins-import-report-row-index = ردیف { $number }
+about-logins-import-report-row-description-no-change = تکراری: مطابقت کامل به یک ورود دیگر
+about-logins-import-report-row-description-modified = ورود بروزرسانی شد
+about-logins-import-report-row-description-added = ورود جدید اضافه شد
+about-logins-import-report-row-description-error = خطا: فیلدِ ناموجود
+
+##
+## Variables:
+##  $field (String) - The name of the field from the CSV file for example url, username or password
+
+about-logins-import-report-row-description-error-multiple-values = خطا: مقادیر متعدد برای { $field }
+about-logins-import-report-row-description-error-missing-field = خطا: { $field } پیدا نشد
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-report-added =
+    { $count ->
+        [one] تعداد <div data-l10n-name="count">{ $count }</div><div data-l10n-name="details"> ورود جدید وارد شد</div>
+       *[other] تعداد <div data-l10n-name="count">{ $count }</div><div data-l10n-name="details"> ورود جدید وارد شد</div>
+    }
+about-logins-import-report-modified =
+    { $count ->
+        [one] تعداد <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">ورود بروزرسانی شد</div>
+       *[other] تعداد <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">ورود بروزرسانی شد</div>
+    }
+about-logins-import-report-no-change =
+    { $count ->
+        [one] تعداد	<div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">ورود تکراری</div> <div data-l10n-name="not-imported">(وارد نشدند)</div>
+       *[other] تعداد	<div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">ورود تکراری</div> <div data-l10n-name="not-imported">(وارد نشدند)</div>
+    }
+about-logins-import-report-error =
+    { $count ->
+        [one] تعداد <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">خطا</div> <div data-l10n-name="not-imported">(وارد نشدند)</div>
+       *[other] تعداد <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">خطا</div> <div data-l10n-name="not-imported">(وارد نشدند)</div>
+    }
+
+## Logins import report page
+
+about-logins-import-report-page-title = خلاصهٔ گزارشِ ورود اطلاعات

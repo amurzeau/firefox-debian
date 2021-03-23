@@ -211,6 +211,13 @@ cfr-doorhanger-milestone-heading =
     { $blockedCount ->
        *[other] { -brand-short-name } blokis pli ol <b>{ $blockedCount }</b> spurilojn ekde { $date }!
     }
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (Datetime) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading2 =
+    { $blockedCount ->
+       *[other] { -brand-short-name } blokis pli ol <b>{ $blockedCount }</b> spurilojn ekde { DATETIME($date, month: "long", year: "numeric") }!
+    }
 cfr-doorhanger-milestone-ok-button = Vidi ĉiujn
     .accesskey = V
 cfr-doorhanger-milestone-close-button = Fermi
@@ -239,6 +246,10 @@ cfr-whatsnew-pip-fullscreen-icon-alt = Emblemo de bildo en bildo.
 
 ## Protections Dashboard message
 
+
+## What’s New Panel Content for Firefox 76
+## Protections Dashboard message
+
 cfr-whatsnew-protections-header = Superrigardo de protektoj
 cfr-whatsnew-protections-body = La panelo de protektoj inkluzivas resumajn raportojn pri datumfuĝoj kaj administro de pasvortoj. Vi nun povas sevki la kvanton de solvitaj datumfuĝoj kaj vidi ĉu iu ajn el viaj konservitaj pasvortoj povus esti elmetita de datumfuĝo.
 cfr-whatsnew-protections-cta-link = Vidi panelon de protektoj
@@ -255,6 +266,8 @@ cfr-doorhanger-doh-body = Via privateco gravas. Ekde nun, se tio eblas, { -brand
 cfr-doorhanger-doh-header = Petoj DNS pli sekuraj kaj ĉifritaj
 cfr-doorhanger-doh-primary-button = En ordo, mi komprenis
     .accesskey = E
+cfr-doorhanger-doh-primary-button-2 = En ordo
+    .accesskey = o
 cfr-doorhanger-doh-secondary-button = Malaktivigi
     .accesskey = M
 
@@ -292,3 +305,9 @@ cfr-whatsnew-supercookies-body = Retejoj povas sekrete alkroĉi "superkuketon" a
 ## What's new: Better bookmarking
 
 cfr-whatsnew-bookmarking-header = Plibonigitaj legosignoj
+cfr-whatsnew-bookmarking-body = Estas pli facile sekvi viajn plej ŝatatajn retejojn. Nun { -brand-short-name } memoras vian preferatan lokon por konservitaj legosignoj, norme montras la legosignan ilaron en novaj langetoj kaj permesas al vi facile aliri viajn ceterajn legosignojn per ilara dosierujo.
+
+## What's new: Cross-site cookie tracking
+
+cfr-whatsnew-cross-site-tracking-header = Ampleksan protekton kontraŭ interretejaj spurilaj kuketoj
+cfr-whatsnew-cross-site-tracking-body = Vi nun povas elekti pli bonan protekton kontraŭ spurado pere de kuketoj. { -brand-short-name } povas izoli viajn agojn kaj datumojn en la retejo kie vi estas, tiel ke la informoj konservitaj en la retumilo ne estos dividita inter retejoj.

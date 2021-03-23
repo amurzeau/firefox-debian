@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Sykje op dizze side…
     .accesskey = S
+menu-edit-find-in-page =
+    .label = Sykje op side…
+    .accesskey = S
 menu-edit-find-again =
     .label = Opnij sykje
     .accesskey = s
@@ -129,6 +132,9 @@ menu-view-toolbars-menu =
 menu-view-customize-toolbar =
     .label = Oanpasse…
     .accesskey = O
+menu-view-customize-toolbar2 =
+    .label = Arkbalke oanpasse…
+    .accesskey = p
 menu-view-sidebar =
     .label = Sidebalke
     .accesskey = S
@@ -207,6 +213,8 @@ menu-history-undo-menu =
     .label = Koartlyn sluten ljepblêden
 menu-history-undo-window-menu =
     .label = Koartlyn sluten skermen
+menu-history-reopen-all-tabs = Alle ljepblêden opnij iepenje
+menu-history-reopen-all-windows = Alle finsters opnij iepenje
 
 ## Bookmarks Menu
 
@@ -217,6 +225,8 @@ menu-bookmarks-show-all =
     .label = Alle blêdwizers toane
 menu-bookmark-this-page =
     .label = Blêdwizer foar dizze side meitsje
+menu-bookmark-current-tab =
+    .label = Blêdwizer foar aktuele ljepblêd meitsje
 menu-bookmark-edit =
     .label = Dizze blêdwizer bewurkje
 menu-bookmarks-all-tabs =
@@ -241,6 +251,12 @@ menu-tools-addons =
     .accesskey = A
 menu-tools-fxa-sign-in =
     .label = Oanmelde by { -brand-product-name }…
+    .accesskey = m
+menu-tools-extensions =
+    .label = Utwreidingen en Tema’s
+    .accesskey = U
+menu-tools-fxa-sign-in2 =
+    .label = Oanmelde
     .accesskey = m
 menu-tools-turn-on-sync =
     .label = { -sync-brand-short-name } ynskeakelje…
@@ -270,6 +286,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] O
            *[other] F
+        }
+menu-settings =
+    .label = Ynstellingen
+    .accesskey =
+        { PLATFORM() ->
+            [windows] Y
+           *[other] n
         }
 menu-tools-layout-debugger =
     .label = Lay-out-debugger
@@ -323,8 +346,13 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Probleemoplossingsynformaasje
     .accesskey = P
+menu-help-more-troubleshooting-info =
+    .label = Mear probleemoplossingsynformaasje
+    .accesskey = p
 menu-help-taskmanager =
     .label = Taakbehearder
+menu-help-report-site-issue =
+    .label = Websiteprobleem rapportearje…
 menu-help-feedback-page =
     .label = Feedback ferstjoere…
     .accesskey = f
@@ -334,6 +362,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Opnij starte mei ynskeakele add-ons
     .accesskey = r
+menu-help-enter-troubleshoot-mode =
+    .label = Probleemoplossingsmodus
+    .accesskey = m
+menu-help-exit-troubleshoot-mode =
+    .label = Probleemoplossingsmodus útskeakelje
+    .accesskey = m
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

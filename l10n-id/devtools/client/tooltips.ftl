@@ -27,6 +27,11 @@ inactive-css-not-display-block-on-floated = Nilai <strong>display</strong> telah
 inactive-css-property-is-impossible-to-override-in-visited = Tidak mungkin menimpa <strong>{ $property }</strong> karena pembatasan <strong>:visited</strong>.
 inactive-css-position-property-on-unpositioned-box = <strong>{ $property }</strong> tidak berdampak pada elemen ini karena bukan elemen dengan posisi.
 inactive-text-overflow-when-no-overflow = <strong>{ $property }</strong> tidak berdampak pada elemen ini karena <strong>overflow:hidden</strong> tidak diatur.
+inactive-outline-radius-when-outline-style-auto-or-none = <strong>{ $property }</strong> tidak berdampak pada elemen ini karena nilai <strong>outline-style</strong> adalah <strong>auto</strong> atau <strong>none</strong>.
+inactive-css-not-for-internal-table-elements = <strong>{ $property }</strong> tidak berpengaruh pada elemen tabel internal.
+inactive-css-not-for-internal-table-elements-except-table-cells = <strong>{ $property }</strong> tidak berpengaruh pada elemen tabel internal kecuali sel tabel.
+inactive-css-not-table = <strong>{ $property }</strong> tidak berpengaruh pada elemen ini karena bukan tabel.
+inactive-scroll-padding-when-not-scroll-container = <strong>{ $property }</strong> tidak berpengaruh pada elemen ini tidak menggulir.
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
 ## an icon. When this icon is hovered this message is displayed to explain how
@@ -45,6 +50,11 @@ inactive-css-non-replaced-inline-or-table-column-or-column-group-fix = Coba tamb
 inactive-css-not-display-block-on-floated-fix = Coba hapus <strong>float</strong> atau menambahkan <strong>display:block</strong>. { learn-more }
 inactive-css-position-property-on-unpositioned-box-fix = Coba atur properti <strong>position</strong> menjadi selain <strong>static</strong>. { learn-more }
 inactive-text-overflow-when-no-overflow-fix = Coba tambahkan <strong>overflow:hidden</strong>. { learn-more }
+inactive-css-not-for-internal-table-elements-fix = Cobalah menyetel properti <strong>display</strong>-nya ke nilai lain selain <strong>table-cell</strong>, <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong>, atau <strong>tabel-footer-group</strong>. { learn-more }
+inactive-css-not-for-internal-table-elements-except-table-cells-fix = Cobalah menyetel properti <strong>display</strong>-nya ke nilai lain selain <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong>, atau <strong>tabel-footer-group</strong>. { learn-more }
+inactive-outline-radius-when-outline-style-auto-or-none-fix = Cobalah menyetel properti <strong>outline-style</strong>-nya ke sesuatu selain <strong>auto</strong> atau <strong>none</strong>. { learn-more }
+inactive-css-not-table-fix = Coba tambahkan <strong>display:table</strong> atau <strong>display:inline-table</strong>. { learn-more }
+inactive-scroll-padding-when-not-scroll-container-fix = Coba tambahkan <strong>overflow:auto</strong>, <strong>overflow:scroll</strong>, atau <strong>overflow:hidden</strong>. { learn-more }
 
 ## In the Rule View when a CSS property may have compatibility issues with other browsers
 ## we display an icon. When this icon is hovered this message is displayed to explain why
@@ -53,3 +63,11 @@ inactive-text-overflow-when-no-overflow-fix = Coba tambahkan <strong>overflow:hi
 ##   $property (string) - A CSS declaration name e.g. "-moz-user-select" that can be a platform specific alias.
 ##   $rootProperty (string) - A raw CSS property name e.g. "user-select" that is not a platform specific alias.
 
+css-compatibility-default-message = <strong>{ $property }</strong> tidak didukung pada peramban berikut:
+css-compatibility-deprecated-experimental-message = <strong>{ $property }</strong> adalah properti eksperimental yang sekarang tidak digunakan lagi oleh standard W3C. Properti ini tidak didukung di peramban berikut:
+css-compatibility-deprecated-experimental-supported-message = <strong>{ $property }</strong> adalah properti eksperimental yang sekarang tidak digunakan lagi oleh standard W3C.
+css-compatibility-deprecated-message = <strong>{ $property }</strong> adalah properti eksperimental yang sekarang tidak digunakan lagi oleh standard W3C. Properti ini tidak didukung di peramban berikut:
+css-compatibility-deprecated-supported-message = <strong>{ $property }</strong> adalah properti eksperimental yang sekarang tidak digunakan lagi oleh standard W3C.
+css-compatibility-experimental-message = <strong>{ $property }</strong> adalah properti eksperimental. Properti ini tidak didukung di peramban berikut:
+css-compatibility-experimental-supported-message = <strong>{ $property }</strong> adalah properti eksperimental.
+css-compatibility-learn-more-message = <span data-l10n-name="link">Pelajari lebih lanjut</span> tentang <strong>{ $rootProperty }</strong>

@@ -133,10 +133,14 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argumenten
 safe-mode-title = Veilige modus proberen
 restart-in-safe-mode-label = Herstarten met uitgeschakelde add-ons…
+troubleshoot-mode-title = Problemen analyseren
+restart-in-troubleshoot-mode-label = Probleemoplossingsmodus…
 clear-startup-cache-title = Opstartbuffer proberen te wissen
 clear-startup-cache-label = Opstartbuffer wissen…
 startup-cache-dialog-title = Opstartbuffer wissen
 startup-cache-dialog-body = Herstart { -brand-short-name } om de opstartbuffer te wissen. Dit wijzigt uw instellingen niet en verwijdert geen aan { -brand-short-name } toegevoegde extensies.
+startup-cache-dialog-title2 = { -brand-short-name } herstarten om de opstartbuffer te wissen?
+startup-cache-dialog-body2 = Dit zal uw instellingen niet wijzigen of extensies verwijderen.
 restart-button-label = Herstarten
 
 ## Media titles
@@ -406,3 +410,13 @@ support-printing-clear-settings-button = Opgeslagen afdrukinstellingen wissen
 support-printing-modified-settings = Gewijzigde afdrukinstellingen
 support-printing-prefs-name = Naam
 support-printing-prefs-value = Waarde
+
+## Normandy sections
+
+support-remote-experiments-title = Externe experimenten
+support-remote-experiments-name = Naam
+support-remote-experiments-branch = Experimenttak
+support-remote-experiments-see-about-studies = Zie <a data-l10n-name="support-about-studies-link">about:studies</a> voor meer informatie, waaronder hoe u individuele experimenten uit kunt schakelen of kunt voorkomen dat { -brand-short-name } dit soort experimenten in de toekomst uitvoert.
+support-remote-features-title = Externe functies
+support-remote-features-name = Naam
+support-remote-features-status = Status

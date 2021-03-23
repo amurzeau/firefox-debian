@@ -25,6 +25,14 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Titzolïx Yetz'apïx Taq Ruwi'
         }
     .accesskey = z
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Tijaq Chik Tz'apin Ruwi'
+            [one] Tijaq Chik Tz'apin Ruwi'
+           *[other] Kejaq Chik Tz'apin taq Ruwi'
+        }
+    .accesskey = a
 toolbar-context-menu-manage-extension =
     .label = Tinuk'samajïx K'amal
     .accesskey = K
@@ -46,21 +54,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Ruyon-Tewüx pa Molsamajib'äl
     .accesskey = R
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Tewäx Pitz'b'äl Toq Kowöl
+    .accesskey = w
 toolbar-context-menu-remove-from-toolbar =
     .label = Telesäx el pa molsamajib'äl
     .accesskey = T
 toolbar-context-menu-view-customize-toolbar =
     .label = Tichinäx…
     .accesskey = T
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Junelïk
-    .accesskey = J
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Majub'ey
-    .accesskey = M
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Xa xe pa K'ak'a' Ruwi'
-    .accesskey = X
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Tichinäx ri Kikajtz'ik taq Samajib'äl…
+    .accesskey = h
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Junelïk Tik'ut
     .accesskey = J

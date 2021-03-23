@@ -33,6 +33,12 @@ appmenuitem-more-tools =
     .label = Další nástroje
 appmenuitem-exit =
     .label = Ukončit
+appmenu-menu-button-closed =
+    .tooltiptext = Otevře nabídku aplikace
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Zavře nabídku aplikace
+    .label = { -brand-shorter-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,6 +57,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Synchronizovat
+appmenuitem-fxa-toolbar-sync-now =
+    .label = Synchronizovat
+    .value = Synchronizovat
+appmenuitem-fxa-manage-account = Správa účtu
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Naposledy synchronizováno { $time }
+    .label = Naposledy synchronizováno { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = Synchronizace a ukládání dat
+appmenu-fxa-signed-in-label = Přihlásit se
+appmenu-fxa-setup-sync =
+    .label = Zapnout synchronizaci…
+appmenu-fxa-show-more-tabs = Zobrazit další panely
 appmenuitem-save-page =
     .label = Uložit stránku jako…
 
@@ -152,8 +175,13 @@ appmenu-get-help =
 appmenu-help-troubleshooting-info =
     .label = Technické informace
     .accesskey = T
+appmenu-help-more-troubleshooting-info =
+    .label = Další technické informace
+    .accesskey = t
 appmenu-help-taskmanager =
     .label = Správce úloh
+appmenu-help-report-site-issue =
+    .label = Nahlásit problém se stránkou…
 appmenu-help-feedback-page =
     .label = Odeslat zpětnou vazbu…
     .accesskey = d
@@ -167,6 +195,16 @@ appmenu-help-safe-mode-without-addons =
 appmenu-help-safe-mode-with-addons =
     .label = Restartovat s povolenými doplňky
     .accesskey = R
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = Režim řešení potíží
+    .accesskey = m
+appmenu-help-exit-troubleshoot-mode =
+    .label = Ukončit režim řešení potíží
+    .accesskey = m
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

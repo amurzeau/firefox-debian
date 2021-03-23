@@ -25,6 +25,14 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Anullar la tampadura dels onglets
         }
     .accesskey = A
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Tornar dobrir l’onglet tampat
+            [one] Tornar dobrir l’onglet tampat
+           *[other] Tornar dobrir los onglets tampats
+        }
+    .accesskey = T
 toolbar-context-menu-manage-extension =
     .label = Gerir l’extension
     .accesskey = G
@@ -46,21 +54,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Amagar automaticament dins la barra d’aisinas
     .accesskey = A
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Rescondre lo boton quand i a pas res
+    .accesskey = R
 toolbar-context-menu-remove-from-toolbar =
     .label = Levar de la barra d'aisinas
     .accesskey = L
 toolbar-context-menu-view-customize-toolbar =
     .label = Personalizar…
     .accesskey = P
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Totjorn
-    .accesskey = T
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Jamai
-    .accesskey = J
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Dobrir dins un onglet novèl
-    .accesskey = D
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Personalizar la barra d'aisinas…
+    .accesskey = P
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Totjorn afichar
     .accesskey = T

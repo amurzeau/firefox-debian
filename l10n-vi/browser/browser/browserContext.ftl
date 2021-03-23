@@ -111,6 +111,9 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Mở lên kết trong thẻ chứa mới
     .accesskey = b
+main-context-menu-open-link-container =
+    .label = Mở lên kết trong ngăn chứa mới
+    .accesskey = w
 main-context-menu-open-link-new-window =
     .label = Mở liên kết trong cửa sổ mới
     .accesskey = W
@@ -120,6 +123,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = Đánh dấu liên kết này
     .accesskey = L
+main-context-menu-bookmark-link =
+    .label = Đánh dấu liên kết
+    .accesskey = B
 main-context-menu-save-link =
     .label = Lưu liên kết tới…
     .accesskey = k
@@ -131,12 +137,20 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = Sao chép địa chỉ email
     .accesskey = E
 main-context-menu-copy-link =
     .label = Sao chép địa chỉ liên kết
     .accesskey = a
+main-context-menu-copy-link-simple =
+    .label = Sao chép liên kết
+    .accesskey = L
 
 ## Media (video/audio) controls
 ##
@@ -179,6 +193,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Rất nhanh (2×)
     .accesskey = L
+main-context-menu-media-play-speed-2 =
+    .label = Tốc độ
+    .accesskey = d
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Lặp lại
     .accesskey = L
@@ -206,6 +233,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Hình trong hình
     .accesskey = u
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Xem ở chế độ hình trong hình
+    .accesskey = u
 main-context-menu-image-reload =
     .label = Tải lại hình ảnh
     .accesskey = R
@@ -215,6 +247,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = Xem Video
     .accesskey = I
+main-context-menu-image-view-new-tab =
+    .label = Mở hình ảnh trong thẻ mới
+    .accesskey = I
+main-context-menu-video-view-new-tab =
+    .label = Mở video trong thẻ mới
+    .accesskey = i
 main-context-menu-image-copy =
     .label = Sao chép ảnh
     .accesskey = y
@@ -226,6 +264,15 @@ main-context-menu-video-copy-location =
     .accesskey = o
 main-context-menu-audio-copy-location =
     .label = Sao chép địa chỉ âm thanh
+    .accesskey = o
+main-context-menu-image-copy-link =
+    .label = Sao chép liên kết hình ảnh
+    .accesskey = o
+main-context-menu-video-copy-link =
+    .label = Sao chép liên kết video
+    .accesskey = o
+main-context-menu-audio-copy-link =
+    .label = Sao chép liên kết âm thanh
     .accesskey = o
 main-context-menu-image-save-as =
     .label = Lưu ảnh dưới dạng…
@@ -239,6 +286,9 @@ main-context-menu-image-set-as-background =
 main-context-menu-image-info =
     .label = Xem thông tin hình ảnh
     .accesskey = f
+main-context-menu-image-set-image-as-background =
+    .label = Đặt hình ảnh làm màn hình nền…
+    .accesskey = S
 main-context-menu-image-desc =
     .label = Xem mô tả
     .accesskey = D
@@ -250,6 +300,9 @@ main-context-menu-audio-save-as =
     .accesskey = v
 main-context-menu-video-image-save-as =
     .label = Lưu ảnh chụp màn hình dưới dạng…
+    .accesskey = S
+main-context-menu-video-take-snapshot =
+    .label = Chụp ảnh…
     .accesskey = S
 main-context-menu-video-email =
     .label = Gửi video qua email…
@@ -275,6 +328,26 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = Sử dụng mật khẩu được tạo…
     .accesskey = G
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = Sử dụng thông tin đăng nhập đã lưu
+    .accesskey = o
+main-context-menu-use-saved-password =
+    .label = Sử dụng mật khẩu đã lưu
+    .accesskey = o
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = Đề xuất mật khẩu mạnh…
+    .accesskey = S
+main-context-menu-manage-logins =
+    .label = Quản lý thông tin đăng nhập…
+    .accesskey = M
 main-context-menu-keyword =
     .label = Tạo từ khóa cho chuỗi tìm kiếm này…
     .accesskey = K
@@ -317,6 +390,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Xem mã nguồn của đoạn bôi đen
     .accesskey = e
+main-context-menu-take-screenshot =
+    .label = Chụp màn hình
+    .accesskey = T
 main-context-menu-view-page-source =
     .label = Xem mã nguồn trang
     .accesskey = V
@@ -331,6 +407,9 @@ main-context-menu-bidi-switch-page =
     .accesskey = D
 main-context-menu-inspect-element =
     .label = Kiểm tra phần tử HTML
+    .accesskey = Q
+main-context-menu-inspect =
+    .label = Kiểm tra
     .accesskey = Q
 main-context-menu-inspect-a11y-properties =
     .label = Kiểm tra thuộc tính trợ năng

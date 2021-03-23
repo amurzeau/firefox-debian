@@ -21,9 +21,14 @@ toolbar-context-menu-undo-close-tabs =
     .label =
         { $tabCount ->
             [1] Przywróć zamkniętą kartę
-            [one] Przywróć zamkniętą kartę
-            [few] Przywróć zamknięte karty
-           *[many] Przywróć zamknięte karty
+           *[other] Przywróć zamknięte karty
+        }
+    .accesskey = P
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Przywróć zamkniętą kartę
+           *[other] Przywróć zamknięte karty
         }
     .accesskey = P
 toolbar-context-menu-manage-extension =
@@ -47,21 +52,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Automatyczne ukrywanie na pasku narzędzi
     .accesskey = A
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Ukrywaj przycisk, kiedy lista jest pusta
+    .accesskey = U
 toolbar-context-menu-remove-from-toolbar =
     .label = Usuń z paska narzędzi
     .accesskey = n
 toolbar-context-menu-view-customize-toolbar =
     .label = Dostosuj…
     .accesskey = t
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Zawsze
-    .accesskey = Z
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Nigdy
-    .accesskey = N
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Tylko w nowej karcie
-    .accesskey = T
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Dostosuj pasek narzędzi…
+    .accesskey = t
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Zawsze wyświetlaj
     .accesskey = Z

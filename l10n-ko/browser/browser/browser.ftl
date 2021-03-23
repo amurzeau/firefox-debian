@@ -62,7 +62,7 @@ urlbar-eme-notification-anchor =
 urlbar-web-authn-anchor =
     .tooltiptext = 웹 인증 패널 열기
 urlbar-canvas-notification-anchor =
-    .tooltiptext = 캔바스 추출 권한 관리
+    .tooltiptext = 캔버스 추출 권한 관리
 urlbar-web-rtc-share-microphone-notification-anchor =
     .tooltiptext = 사이트에서 마이크를 사용할지 관리
 urlbar-default-notification-anchor =
@@ -140,7 +140,7 @@ urlbar-popup-blocked =
 urlbar-autoplay-media-blocked =
     .tooltiptext = 이 사이트의 소리있는 미디어 자동 재생을 차단하였습니다.
 urlbar-canvas-blocked =
-    .tooltiptext = 이 사이트의 캔바스 데이터 추출을 차단하였습니다.
+    .tooltiptext = 이 사이트의 캔버스 데이터 추출을 차단하였습니다.
 urlbar-midi-blocked =
     .tooltiptext = 이 사이트의 MIDI 접근을 차단하였습니다.
 urlbar-install-blocked =
@@ -366,6 +366,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = 공유할 마이크:
     .accesskey = M
+popup-select-camera-device =
+    .value = 카메라:
+    .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = 카메라
+popup-select-microphone-device =
+    .value = 마이크:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = 마이크
 popup-all-windows-shared = 화면에 표시되어 있는 모든 창을 공유합니다.
 popup-screen-sharing-not-now =
     .label = 나중에
@@ -375,6 +385,13 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = 공유하는 동안 { -brand-short-name }에서 알림을 사용 안 함
 popup-silence-notifications-checkbox-warning = { -brand-short-name }는 공유하는 동안 알림을 표시하지 않습니다.
+popup-screen-sharing-block =
+    .label = 차단
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = 항상 차단
+    .accesskey = w
+popup-mute-notifications-checkbox = 공유하는 동안 웹 사이트 알림 음소거
 
 ## WebRTC window or screen share tab switch warning
 
@@ -515,6 +532,8 @@ crashed-subframe-message = <strong>이 페이지의 일부가 손상되었습니
 crashed-subframe-learnmore =
     .label = 더 알아보기
     .accesskey = L
+crashed-subframe-learnmore-link =
+    .value = 더 알아보기
 crashed-subframe-submit =
     .label = 보고서 제출
     .accesskey = S
@@ -529,6 +548,7 @@ bookmarks-manage-bookmarks =
     .label = 북마크 관리
 bookmarks-recent-bookmarks-panel =
     .value = 최근 북마크
+bookmarks-recent-bookmarks-panel-subheader = 최근 북마크
 bookmarks-toolbar-chevron =
     .tooltiptext = 북마크 더보기
 bookmarks-sidebar-content =
@@ -608,3 +628,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = 오프라인으로 작업
     .accesskey = w
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = 이 사이트의 일부 오디오 또는 비디오는 DRM 소프트웨어를 사용하므로 { -brand-short-name }에서 수행할 수 있는 작업이 제한될 수 있습니다.
+eme-notifications-drm-content-playing-manage = 설정 관리
+eme-notifications-drm-content-playing-manage-accesskey = M
+eme-notifications-drm-content-playing-dismiss = 닫기
+eme-notifications-drm-content-playing-dismiss-accesskey = D
+
+## Password save/update panel
+
+panel-save-update-username = 사용자 이름
+panel-save-update-password = 비밀번호
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = { $name } 부가 기능을 제거하시겠습니까?
+addon-removal-abuse-report-checkbox = 이 확장 기능을 { -vendor-short-name }에 신고

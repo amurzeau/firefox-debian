@@ -27,6 +27,12 @@ appmenuitem-more-tools =
     .label = Više alata
 appmenuitem-exit =
     .label = Izlaz
+appmenu-menu-button-closed =
+    .tooltiptext = Otvori izbornik aplikacije
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Zatvori izbornik aplikacije
+    .label = { -brand-shorter-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -45,6 +51,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Sinkroniziraj sada
+appmenuitem-fxa-toolbar-sync-now =
+    .label = Sinkroniziraj sada
+    .value = Sinkroniziraj sada
+appmenuitem-fxa-manage-account = Upravljaj računom
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Posljednja sinkronizacija { $time }
+    .label = Posljednja sinkronizacija { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = Sinkroniziraj i spremi podatke
+appmenu-fxa-signed-in-label = Prijavi se
+appmenu-fxa-setup-sync =
+    .label = Uključi sinkronizaciju…
+appmenu-fxa-show-more-tabs = Prikaži više kartica
 appmenuitem-save-page =
     .label = Spremi stranicu kao …
 
@@ -128,8 +151,13 @@ appmenu-get-help =
 appmenu-help-troubleshooting-info =
     .label = Rješavanje problema
     .accesskey = R
+appmenu-help-more-troubleshooting-info =
+    .label = Više informacija za rješavanje problema
+    .accesskey = v
 appmenu-help-taskmanager =
     .label = Upravljač zadataka
+appmenu-help-report-site-issue =
+    .label = Prijavi problem sa stranicom …
 appmenu-help-feedback-page =
     .label = Pošalji povratne informacije …
     .accesskey = e
@@ -144,12 +172,22 @@ appmenu-help-safe-mode-with-addons =
     .label = Ponovo pokreni s aktiviranim dodacima
     .accesskey = v
 
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = Način rada za rješavanje problema
+    .accesskey = N
+appmenu-help-exit-troubleshoot-mode =
+    .label = Isključi način rada za rješavanje problema
+    .accesskey = N
+
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
 appmenu-help-report-deceptive-site =
     .label = Prijavi obmanjujuću stranicu…
-    .accesskey = o
+    .accesskey = b
 appmenu-help-not-deceptive =
     .label = Ovo nije obmanjujuća stranica…
     .accesskey = d

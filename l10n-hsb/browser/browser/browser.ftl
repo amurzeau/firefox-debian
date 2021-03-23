@@ -378,6 +378,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Mikrofon, kotryž ma so hromadźe wužiwać:
     .accesskey = M
+popup-select-camera-device =
+    .value = Kamera:
+    .accesskey = K
+popup-select-camera-icon =
+    .tooltiptext = Kamera
+popup-select-microphone-device =
+    .value = Mikrofon:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Mikrofon
 popup-all-windows-shared = Wšě widźomne wokna na wašej wobrazowce budu so dźělić.
 popup-screen-sharing-not-now =
     .label = Nic nětko
@@ -387,6 +397,13 @@ popup-screen-sharing-never =
     .accesskey = e
 popup-silence-notifications-checkbox = Zdźělenja w { -brand-short-name } znjemóžnić, mjeztym zo dźěliće
 popup-silence-notifications-checkbox-warning = { -brand-short-name } njebudźe zdźělenja pokazować, mjeztym zo dźěliće.
+popup-screen-sharing-block =
+    .label = Blokować
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Přeco blokować
+    .accesskey = P
+popup-mute-notifications-checkbox = Zdźělenki websydła při dźělenju zněmić
 
 ## WebRTC window or screen share tab switch warning
 
@@ -527,6 +544,8 @@ crashed-subframe-message = <strong>Dźěl tuteje strony je spadnył.</strong> Zo
 crashed-subframe-learnmore =
     .label = Dalše informacije
     .accesskey = D
+crashed-subframe-learnmore-link =
+    .value = Dalše informacije
 crashed-subframe-submit =
     .label = Rozprawu wotpósłać
     .accesskey = R
@@ -541,6 +560,7 @@ bookmarks-manage-bookmarks =
     .label = Zapołožki rjadować
 bookmarks-recent-bookmarks-panel =
     .value = Najnowše zapołožki
+bookmarks-recent-bookmarks-panel-subheader = Najnowše zapołožki
 bookmarks-toolbar-chevron =
     .tooltiptext = Dalše zapołožki pokazać
 bookmarks-sidebar-content =
@@ -620,3 +640,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Offline dźěłać
     .accesskey = O
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Někajka awdio- abo widejodataja na tutym sydle wužiwa DRM-softwaru, kotraž móhła wobmjezować, štož { -brand-short-name } da wam z tym činić.
+eme-notifications-drm-content-playing-manage = Nastajenja rjadować
+eme-notifications-drm-content-playing-manage-accesskey = N
+eme-notifications-drm-content-playing-dismiss = Zaćisnyć
+eme-notifications-drm-content-playing-dismiss-accesskey = Z
+
+## Password save/update panel
+
+panel-save-update-username = Wužiwarske mjeno
+panel-save-update-password = Hesło
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = { $name } wotstronić?
+addon-removal-abuse-report-checkbox = { -vendor-short-name } tute rozšěrjenje zdźělić

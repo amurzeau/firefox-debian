@@ -63,15 +63,46 @@ whatsnew-panel-footer-checkbox =
 
 profiler-popup-title =
     .value = { -profiler-brand-name }
+profiler-popup-reveal-description-button =
+    .aria-label = اعرض معلومات أكثر
 profiler-popup-learn-more = اطّلع على المزيد
 profiler-popup-settings =
     .value = الإعدادات
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = عدّل الإعدادات…
 profiler-popup-recording-screen = يسجّل…
+# The profiler presets list is generated elsewhere, but the custom preset is defined
+# here only.
+profiler-popup-presets-custom =
+    .label = مخصّص
+profiler-popup-start-recording-button =
+    .label = ابدأ التسجيل
+profiler-popup-discard-button =
+    .label = أهمِل
+profiler-popup-capture-button =
+    .label = التقِط
+profiler-popup-start-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧1
+       *[other] Ctrl+Shift+1
+    }
+profiler-popup-capture-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧2
+       *[other] Ctrl+Shift+2
+    }
+
+## History panel
+
+appmenu-manage-history =
+    .label = أدِر التأريخ
+appmenu-reopen-all-tabs = أعِد فتح كل الألسنة
+appmenu-reopen-all-windows = أعِد فتح كل النوافذ
 
 ## Help panel
 
+appmenu-help-header =
+    .title = مساعدة { -brand-shorter-name }
 appmenu-about =
     .label = عن { -brand-shorter-name }
     .accesskey = ع
@@ -92,6 +123,8 @@ appmenu-help-troubleshooting-info =
     .accesskey = ط
 appmenu-help-taskmanager =
     .label = مدير المهام
+appmenu-help-report-site-issue =
+    .label = أبلغ عن مشكلة بالموقع…
 appmenu-help-feedback-page =
     .label = أرسِل تعليقًا…
     .accesskey = ر
@@ -120,3 +153,9 @@ appmenu-help-not-deceptive =
 
 appmenu-help-check-for-update =
     .label = التمس التحديثات…
+
+## More Tools
+
+appmenu-customizetoolbar =
+    .label = خصّص شريط الأدوات…
+appmenu-developer-tools-subheader = أدوات المتصفّح

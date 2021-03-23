@@ -431,6 +431,9 @@ browsing-picture-in-picture-toggle-enabled =
     .label = Суреттегі сурет видеоның басқару пернелерін іске қосу
     .accesskey = е
 browsing-picture-in-picture-learn-more = Көбірек білу
+browsing-media-control =
+    .label = Медианы пернетақта, гарнитура немесе виртуалды интерфейс арқылы басқару
+    .accesskey = в
 browsing-media-control-learn-more = Көбірек білу
 browsing-cfr-recommendations =
     .label = Шолу кезінде кеңейтулерді ұсыну
@@ -509,6 +512,7 @@ home-prefs-shortcuts-by-option-sponsored =
 home-prefs-recommended-by-header =
     .label = Ұсынушы { $provider }
 home-prefs-recommended-by-description-update = Интернеттен қызық материалдар, { $provider } жинаған
+home-prefs-recommended-by-description-new = { -brand-product-name } отбасының мүшесі болып табылатын, { $provider } жетекшілік ететін тамаша құрама
 
 ##
 
@@ -528,6 +532,7 @@ home-prefs-highlights-option-saved-to-pocket =
     .label = { -pocket-brand-name }-ке сақталған беттер
 home-prefs-recent-activity-header =
     .label = Соңғы белсенділігі
+home-prefs-recent-activity-description = Жуырдағы сайттар мен құрама таңдауы
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -535,6 +540,7 @@ home-prefs-recent-activity-header =
 home-prefs-snippets-header =
     .label = Үзінділер
 home-prefs-snippets-description = { -vendor-short-name } және { -brand-product-name } жаңалықтары
+home-prefs-snippets-description-new = { -vendor-short-name } және { -brand-product-name } кеңестері және жаңалықтары
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -888,6 +894,10 @@ sitedata-option-block-cross-site-trackers =
     .label = Сайтаралық трекерлер
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Сайтаралық және әлеуметтік желілер трекерлері
+sitedata-option-block-cross-site-tracking-cookies-including-social-media =
+    .label = Сайтаралық бақылау cookie файлдары — соның ішінде әлеуметтік жүйелердің cookie файлдары
+sitedata-option-block-cross-site-cookies-including-social-media =
+    .label = Сайтаралық cookie файлдары — соның ішінде әлеуметтік жүйелердің cookie файлдары
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Сайтаралық және әлеуметтік желілер трекерлері, және қалған cookie файлдарын оқшаулау
 sitedata-option-block-unvisited =
@@ -922,6 +932,10 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Ашық беттер
     .accesskey = А
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Жарлықтар
+    .accesskey = р
 addressbar-locbar-topsites-option =
     .label = Үздік сайттар
     .accesskey = з
@@ -935,6 +949,7 @@ addressbar-suggestions-settings = Іздеу жүйесінің ұсыныста
 content-blocking-enhanced-tracking-protection = Бақылаудан кеңейтілген қорғаныс
 content-blocking-section-top-level-description = Трекерлер желіде сіздің соңыңыздан ереді, сіздің шолу әдеттері мен тақырыптары туралы ақпаратты жинайды. { -brand-short-name } осындай трекерлердің көбін және басқа да зиянкес скрипттерді бұғаттайды.
 content-blocking-learn-more = Көбірек білу
+content-blocking-fpi-incompatibility-warning = Сіз First Party Isolation (FPI) қолданудасыз, ол { -brand-short-name } өнімінің cookie файлдарының кейбір баптауларын үстінен басады.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -956,6 +971,7 @@ content-blocking-etp-standard-desc = Қорғаныс және өнімділі�
 content-blocking-etp-strict-desc = Қатаңырақ қорғаныс, бірақ, кейбір сайттар немесе мазмұнның бұзылуына әкеп соғуы мүмкін.
 content-blocking-etp-custom-desc = Қай трекерлер мен скрипттерді блоктауды таңдаңыз.
 content-blocking-private-windows = Жекелік шолу терезелерінде бақылайтын құрама
+content-blocking-cross-site-cookies = Сайтаралық cookie файлдары
 content-blocking-cross-site-tracking-cookies = Сайтаралық бақылайтын cookie файлдары
 content-blocking-cross-site-tracking-cookies-plus-isolate = Сайтаралық бақылау трекерлері, және қалған cookie файлдарын оқшаулау
 content-blocking-social-media-trackers = Әлеуметтік желілер трекерлері
@@ -967,6 +983,7 @@ content-blocking-cryptominers = Криптомайнерлер
 content-blocking-fingerprinters = Баспаны жинаушылар
 content-blocking-warning-title = Ескерту!
 content-blocking-and-isolating-etp-warning-description = Трекерлерді бұғаттау және cookie файлдарын оқшаулау кейбір сайттардың жұмысына әсер етуі мүмкін. Барлық мазмұнды жүктеу үшін трекерлермен бетті қайта жүктеңіз.
+content-blocking-and-isolating-etp-warning-description-2 = Бұл баптау кейбір веб-сайттардың мазмұнын көрсетілмеуіне немесе дұрыс жұмыс жасамауына әкелуі мүмкін. Егер сайт сынған болып көрінсе, сайттың барлық мазмұның жүктеу үшін сол сайт үшін бақылаудан қорғанысты сөндіру керек болуы мүмкін.
 content-blocking-warning-learn-how = Көбірек білу
 content-blocking-reload-description = Бұл өзгерістер іске асуы үшін беттерді қайта жүктеу керек болады.
 content-blocking-reload-tabs-button =

@@ -202,11 +202,14 @@ cfr-doorhanger-cryptominers-description = Ne ñemigua tuichamba’e. { -brand-sh
 
 # Variables:
 #   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
-#   $date (Number) - The date we began recording the count of blocked trackers
+#   $date (String) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading =
     { $blockedCount ->
        *[other] { -brand-short-name } ojoko hetave <b>{ $blockedCount }</b> tapykuehoha { $date } guive!
     }
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (Datetime) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading2 =
     { $blockedCount ->
        *[other] { -brand-short-name } jokopyre <b>{ $blockedCount }</b> tapykuehoha { DATETIME($date, month: "long", year: "numeric") } guive!
@@ -239,6 +242,10 @@ cfr-whatsnew-pip-fullscreen-icon-alt = Peteĩva ta’ãnga ra’ãnga’i
 
 ## Protections Dashboard message
 
+
+## What’s New Panel Content for Firefox 76
+## Protections Dashboard message
+
 cfr-whatsnew-protections-header = Ñemo’ã ma’ẽ rehegua
 cfr-whatsnew-protections-body = Pe ñemo’ã ra’ãngarupa omoinge marandu mbykymíva mba’ekuaarã ñembyai reheguápe ha ñe’ẽñemi ñangarekóre. Ko’ág̃a ikatu ehapykueho mboy ñembyaípa emoĩporã ha ehecha ñe’ẽñemi ñongatupyre ikatupara’e ombyai mba’ekuaarãme.
 cfr-whatsnew-protections-cta-link = Ehecha ñe’ẽñemi ra’ãngarupa
@@ -254,6 +261,8 @@ cfr-whatsnew-better-pdf-body = Kuatiakuéra PDF ko’ág̃a ijurujáma { -brand-
 cfr-doorhanger-doh-body = Ne ñemigua tuichamba’e. { -brand-short-name } ombohape tekorosãme umi ne mba’ejerure DNS ikatu vove peteĩ mba’epuru oñembyatýva nemo’ã hag̃ua eikundaha aja.
 cfr-doorhanger-doh-header = Jehekapy DNS hekorosã ha ipapapýva
 cfr-doorhanger-doh-primary-button = OK, Aikumbýma
+    .accesskey = O
+cfr-doorhanger-doh-primary-button-2 = Moneĩ
     .accesskey = O
 cfr-doorhanger-doh-secondary-button = Pe’a
     .accesskey = D
@@ -287,11 +296,14 @@ cfr-whatsnew-search-shortcuts-body = Ko’ág̃a, ehaívo peteĩ jeheka mongu’
 ## What's new: Cookies protection
 
 cfr-whatsnew-supercookies-header = Ñemo’ã kookieguasu imarãkuaáva rovake
+cfr-whatsnew-supercookies-body = Opaite ñanduti renda ikatu ombojuapy kañyhápe “supercookie” ikundahárape ohapykuehokuaáva ñanduti guive, omopotĩ rire jepe ikookiekuéra. { -brand-short-name } ome’ẽ ko’ág̃a ñemo’ã marete kookieguasu rovake ani hag̃ua ojepuru ohapykueho hag̃ua ne rembiapo ñandutípe peteĩ tendágui ambue tendápe.
 
 ## What's new: Better bookmarking
 
 cfr-whatsnew-bookmarking-header = Techaukaha iporãvéva
+cfr-whatsnew-bookmarking-body = Ndahyasyive ehapykuehóvo tendakuéra ehayhuvéva. { -brand-short-name } neatõita tendaite erohoryvéva techaukaha ñongatupyrépe, ohechauka tembipuru renda ijypykue rupi tendayke pyahúpe ha ome’ẽ jeike pya’e nde rechaukahakuéra ñongatuhápe tembipuru renda rupive.
 
 ## What's new: Cross-site cookie tracking
 
 cfr-whatsnew-cross-site-tracking-header = Ñemo’ãmba kookie ohapykuehóva tenda pa’ũme rovake
+cfr-whatsnew-cross-site-tracking-body = Ko’ág̃a ikatu eiporavo omo’ãvéva kookie rapykuehoha rovake. { -brand-short-name } ikatu omoha’eño ne rembiapo ha mba’ekuaarã tenda eimehápe marandu oñembyatýva kundahárape ani hag̃ua oñemoherakuã ñanduti renda rupi.

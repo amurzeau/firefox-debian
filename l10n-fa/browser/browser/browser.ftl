@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -109,9 +109,15 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = کمتر تایپ کنید، بیشتر پیدا کنید: تنها از طریق نوار آدرس با { $engineName } جست‌وجو کنید.
 urlbar-search-tips-redirect-2 = جست‌وجوی خود را در نوار آدرس تایپ کنید تا پیشنهادهایی از { $engineName } و تاریخچهٔ مرور خود ببینید.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = این میانبر را برای پیدا کردن سریع‌تر آنچه که نیاز دارید، انتخاب کنید.
 
 ## Local search mode indicator labels in the urlbar
 
+urlbar-search-mode-bookmarks = نشانک‌ها
+urlbar-search-mode-tabs = زبانه‌ها
+urlbar-search-mode-history = تاریخچه
 
 ##
 
@@ -217,9 +223,9 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
-search-one-offs-with-title = این بار، جست‌وجو با:
+search-one-offs-with-title = جست‌وجو با:
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
@@ -235,6 +241,12 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = تنظیم به عنوان موتور جست‌وجو پیش‌فرض در پنجره‌های ناشناس
     .accesskey = P
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -243,6 +255,12 @@ search-one-offs-context-set-as-default-private =
 ##    restrict their searches to certain sources (e.g., "*" to search only
 ##    bookmarks).
 
+search-one-offs-bookmarks =
+    .tooltiptext = نشانک‌ها ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = زبانه‌ها ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = تاریخچه ({ $restrict })
 
 ## Bookmark Panel
 
@@ -270,6 +288,17 @@ identity-passive-loaded = قسمت‌هایی از این صفحه امن نیس
 identity-active-loaded = شما محافظت را در این صفحه غیرفعال کرده‌اید.
 identity-weak-encryption = این صفحه از کدگذاری ضعیفی استفاده می‌کند.
 identity-insecure-login-forms = اطلاعات ورودی که در این صفحه وارد می‌کنید می‌توانند فاش شوند.
+identity-https-only-connection-upgraded = (ارتقا یافته به HTTPS)
+identity-https-only-label = حالت فقط HTTPS
+identity-https-only-dropdown-on =
+    .label = روشن
+identity-https-only-dropdown-off =
+    .label = خاموش
+identity-https-only-dropdown-off-temporarily =
+    .label = خاموش موقت
+identity-https-only-info-turn-on2 = اگر می‌خواهید در صورت امکان { -brand-short-name } اتصال را ارتقا دهد، حالت فقط HTTPS را برای این سایت روشن کنید.
+identity-https-only-info-turn-off2 = اگر صفحه خراب به نظر می‌رسد، ممکن است بخواهید حالت فقط HTTPS را برای این سایت خاموش کنید تا سایت در حال غیر امن HTTP بارگیری شود.
+identity-https-only-info-no-upgrade = ارتقا اتصال از HTTP امکان‌پذیر نبود.
 identity-permissions =
     .value = مجوزها
 identity-permissions-reload-hint = ممکن است لازم باشد که صفحه را برای اعمال تغییرات دوباره بارگیری کنید.
@@ -310,14 +339,30 @@ browser-window-minimize-button =
     .tooltiptext = کمینه کردن
 browser-window-maximize-button =
     .tooltiptext = بزرگ کردن
+browser-window-restore-down-button =
+    .tooltiptext = بازیابی به پایین
 browser-window-close-button =
     .tooltiptext = بستن
 
 ## Tab actions
 
+browser-tab-audio-playing = در حال پخش
+browser-tab-audio-muted = بی‌صدا
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = ‏‏در حال پخش
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = بی‌صدا
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = پخش خودکار مسدود شد
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = تصویر در تصویر
 
 ## Bookmarks toolbar items
 
+browser-import-button2 =
+    .label = وارد کردن نشانک‌ها
+    .tooltiptext = وارد کردن نشانک‌ها از سایر مرورگرها به { -brand-short-name }.
+bookmarks-toolbar-empty-message = برای دسترسی سریع‌تر، نشانک‌های خود را اینجا در نوار ابزار نشانک‌ها قرار دهید.<a data-l10n-name="manage-bookmarks">مدیریت نشانک‌ها…</a>
 
 ## WebRTC Pop-up notifications
 
@@ -327,6 +372,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = میکروفون جهت به‌اشتراک‌گذاری:
     .accesskey = م
+popup-select-camera-device =
+    .value = دوربین:
+    .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = دوربین
+popup-select-microphone-device =
+    .value = میکروفون:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = میکروفون
 popup-all-windows-shared = همه‌ی پنجره‌هایی که مشاهده می‌کنید به اشتراک گذاشته می‌شود.
 popup-screen-sharing-not-now =
     .label = اکنون نه (w)
@@ -336,6 +391,12 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = از کار انداختن آگاهی‌ها از { -brand-short-name } هنگام هم‌رسانی
 popup-silence-notifications-checkbox-warning = { -brand-short-name } هنگام هم‌رسانی، اعلان‌ها را نمایش نمی‌دهد.
+popup-screen-sharing-block =
+    .label = مسدود کردن
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = همیشه مسدود شود
+    .accesskey = w
 
 ## WebRTC window or screen share tab switch warning
 
@@ -354,8 +415,38 @@ enable-devtools-popup-description = برای استفاده از میانبر F1
 
 urlbar-default-placeholder =
     .defaultPlaceholder = متنی برای جست‌وجو یا یک آدرس وارد کنید
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = متنی برای جست‌وجو یا یک آدرس وارد کنید
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = جست‌وجوی وب
+    .aria-label = جست‌وجو با { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = عبارت جست‌وجو را وارد کنید
+    .aria-label = جست‌وجو { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = عبارت جست‌وجو را وارد کنید
+    .aria-label = جست‌وجو نشانک‌ها
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = عبارت جست‌وجو را وارد کنید
+    .aria-label = جست‌وجو تاریخچه
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = عبارت جست‌وجو را وارد کنید
+    .aria-label = جست‌وجو زبانه‌ها
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -392,13 +483,37 @@ urlbar-result-action-search-in-private = جست‌وجو در یک پنجرهٔ 
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = جست‌وجو از طریق { $engine }
+urlbar-result-action-sponsored = حمایت شده
 urlbar-result-action-switch-tab = پرش به زبانه
 urlbar-result-action-visit = بازدید
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = کلید Tab را برای جست‌وجو با { $engine } فشار دهید
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = برای جستجوی { $engine } کلید Tab را فشار دهید
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = با { $engine } مستقیماً از نوار آدرس جستجو کنید
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = با { $engine } مستقیماً از نوار آدرس جستجو کنید
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
 
+urlbar-result-action-search-bookmarks = جست‌وجو نشانک‌ها
+urlbar-result-action-search-history = جست‌وجو تاریخچه
+urlbar-result-action-search-tabs = جست‌وجو زبانه‌ها
 
 ## Full Screen and Pointer Lock UI
 
@@ -418,6 +533,15 @@ pointerlock-warning-no-domain = این سند کنترل مکان‌نما شم�
 
 ## Subframe crash notification
 
+crashed-subframe-message = <strong>بخشی از این صفحه خراب شد.</strong> برای اطلاع { -brand-product-name } از این مسئله و رفع سریعتر آن، لطفاً گزارشی ارسال کنید.
+crashed-subframe-learnmore =
+    .label = بیشتر بدانید
+    .accesskey = L
+crashed-subframe-learnmore-link =
+    .value = بیشتر بدانید
+crashed-subframe-submit =
+    .label = ثبت گزارش
+    .accesskey = S
 
 ## Bookmarks panels, menus and toolbar
 
@@ -425,6 +549,11 @@ bookmarks-show-all-bookmarks =
     .label = نمایش همهٔ نشانک‌ها
 bookmarks-recent-bookmarks =
     .value = به تازگی نشانک‌گذاری شده
+bookmarks-manage-bookmarks =
+    .label = مدیریت نشانک‌ها
+bookmarks-recent-bookmarks-panel =
+    .value = نشانک‌های اخیر
+bookmarks-recent-bookmarks-panel-subheader = نشانک‌های اخیر
 bookmarks-toolbar-chevron =
     .tooltiptext = نشانک‌های بیشتری نمایش داده شود
 bookmarks-sidebar-content =
@@ -448,6 +577,12 @@ bookmarks-tools-toolbar-visibility =
            *[other] نمایش نوار ابزار نشانک‌ها
         }
 bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] مخفی کردن نوار ابزار نشانک‌ها
+           *[other] نمایش نوار ابزار نشانک‌ها
+        }
+bookmarks-tools-toolbar-visibility-panel =
     .label =
         { $isVisible ->
             [true] مخفی کردن نوار ابزار نشانک‌ها
@@ -478,6 +613,9 @@ bookmarks-toolbar-placeholder =
     .title = موارد نوار ابزار نشانک‌ها
 bookmarks-toolbar-placeholder-button =
     .label = موارد نوار ابزار نشانک‌ها
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = نشانک‌گذاری زبانه فعلی
 
 ## Library Panel items
 
@@ -487,9 +625,31 @@ library-bookmarks-bookmark-this-page =
     .label = نشانک‌گذاری این صفحه
 library-bookmarks-bookmark-edit =
     .label = ویرایش این نشانک
+library-recent-activity-title =
+    .value = فعالیت‌های اخیر
 
 ## More items
 
 more-menu-go-offline =
     .label = آفلاین کار کن
     .accesskey = ک
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = ویدئو یا صدا در این سایت به نرم‌افزار DRM نیاز دارد، که امکان دارد امکاناتی که { -brand-short-name } به شما میدهد را محدود کند.
+eme-notifications-drm-content-playing-manage = مدیریت تنظیمات
+eme-notifications-drm-content-playing-manage-accesskey = M
+eme-notifications-drm-content-playing-dismiss = ‏‏نادیده گرفتن
+eme-notifications-drm-content-playing-dismiss-accesskey = D
+
+## Password save/update panel
+
+panel-save-update-username = نام کاربری
+panel-save-update-password = گذرواژه
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = { $name } حذف شود؟
+addon-removal-abuse-report-checkbox = گزارش این افزونه به { -vendor-short-name }

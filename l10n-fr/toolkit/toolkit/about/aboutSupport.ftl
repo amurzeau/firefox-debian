@@ -133,10 +133,14 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Arguments
 safe-mode-title = Essayez en mode sans échec
 restart-in-safe-mode-label = Redémarrer avec les modules désactivés…
+troubleshoot-mode-title = Diagnostiquer des problèmes
+restart-in-troubleshoot-mode-label = Mode de dépannage…
 clear-startup-cache-title = Essayez de vider le cache de démarrage
 clear-startup-cache-label = Vider le cache de démarrage…
 startup-cache-dialog-title = Vider le cache de démarrage
 startup-cache-dialog-body = Redémarrez { -brand-short-name } pour vider le cache de démarrage. Cela ne modifiera pas vos paramètres ni ne supprimera les extensions que vous avez ajoutées à { -brand-short-name }.
+startup-cache-dialog-title2 = Redémarrer { -brand-short-name } pour effacer le cache de démarrage ?
+startup-cache-dialog-body2 = Cela ne modifiera pas vos paramètres ni ne supprimera les extensions.
 restart-button-label = Redémarrer
 
 ## Media titles
@@ -195,6 +199,8 @@ support-third-party-modules-vendor = Informations sur l’éditeur
 support-third-party-modules-occurrence = Occurrences
 support-third-party-modules-process = Type et identifiant du processus
 support-third-party-modules-thread = Fil d’exécution
+support-third-party-modules-base = Adresse Imagebase
+support-third-party-modules-uptime = Durée d’exécution du processus (ms)
 support-third-party-modules-duration = Durée de chargement (ms)
 support-third-party-modules-status = État
 support-third-party-modules-status-loaded = Chargé
@@ -404,3 +410,13 @@ support-printing-clear-settings-button = Effacer les paramètres d’impression 
 support-printing-modified-settings = Paramètres d’impression modifiés
 support-printing-prefs-name = Nom
 support-printing-prefs-value = Valeur
+
+## Normandy sections
+
+support-remote-experiments-title = Expériences à distance
+support-remote-experiments-name = Nom
+support-remote-experiments-branch = Branche expérimentale
+support-remote-experiments-see-about-studies = Consultez <a data-l10n-name="support-about-studies-link">about:studies</a> pour plus d’informations, notamment sur la façon de désactiver des tests individuels ou d’empêcher { -brand-short-name } d’exécuter ce  type d’expérience dans le futur.
+support-remote-features-title = Fonctionnalités distantes
+support-remote-features-name = Nom
+support-remote-features-status = État

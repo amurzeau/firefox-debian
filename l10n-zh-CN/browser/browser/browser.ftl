@@ -294,7 +294,7 @@ identity-https-only-info-no-upgrade = 无法将网站连接从 HTTP 升级。
 identity-permissions =
     .value = 权限
 identity-permissions-storage-access-header = 跨网站 Cookie
-identity-permissions-storage-access-hint = 当您在此网站上时，以下各方可以使用其跨网站 Cookie 和网站数据。
+identity-permissions-storage-access-hint = 当您在此网站上时，以下各方可以使用跨网站 Cookie 和网站数据。
 identity-permissions-reload-hint = 您可能需要重新载入此页面以应用更改。
 identity-permissions-empty = 您尚未授予此站点任何权限。
 identity-clear-site-data =
@@ -366,6 +366,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = 共享的麦克风：
     .accesskey = M
+popup-select-camera-device =
+    .value = 摄像头：
+    .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = 摄像头
+popup-select-microphone-device =
+    .value = 麦克风：
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = 麦克风
 popup-all-windows-shared = 您的屏幕上的所有可见窗口都将被共享。
 popup-screen-sharing-not-now =
     .label = 暂时不要
@@ -375,6 +385,13 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = 共享时，不显示 { -brand-short-name } 的通知
 popup-silence-notifications-checkbox-warning = { -brand-short-name } 将不会在共享时显示通知。
+popup-screen-sharing-block =
+    .label = 阻止
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = 一律阻止
+    .accesskey = w
+popup-mute-notifications-checkbox = 共享期间不显示网站通知
 
 ## WebRTC window or screen share tab switch warning
 
@@ -515,6 +532,8 @@ crashed-subframe-message = <strong>此页面中的部分内容出现崩溃。</s
 crashed-subframe-learnmore =
     .label = 详细了解
     .accesskey = L
+crashed-subframe-learnmore-link =
+    .value = 详细了解
 crashed-subframe-submit =
     .label = 提交报告
     .accesskey = S
@@ -529,6 +548,7 @@ bookmarks-manage-bookmarks =
     .label = 管理书签
 bookmarks-recent-bookmarks-panel =
     .value = 最近的书签
+bookmarks-recent-bookmarks-panel-subheader = 最近的书签
 bookmarks-toolbar-chevron =
     .tooltiptext = 显示更多书签
 bookmarks-sidebar-content =
@@ -608,3 +628,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = 脱机工作
     .accesskey = k
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = 此网站的一些音频或视频使用了含数字版权管理（DRM）的软件，这可能会限制 { -brand-short-name } 能让您使用的功能。
+eme-notifications-drm-content-playing-manage = 管理设置
+eme-notifications-drm-content-playing-manage-accesskey = M
+eme-notifications-drm-content-playing-dismiss = 了解！
+eme-notifications-drm-content-playing-dismiss-accesskey = D
+
+## Password save/update panel
+
+panel-save-update-username = 用户名
+panel-save-update-password = 密码
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = 要移除 { $name } 吗？
+addon-removal-abuse-report-checkbox = 向 { -vendor-short-name } 举报此扩展

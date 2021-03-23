@@ -15,6 +15,7 @@ about-telemetry-option-group-older = Staršie
 about-telemetry-previous-ping = <<
 about-telemetry-next-ping = >>
 about-telemetry-page-title = Údaje telemetrie
+about-telemetry-current-store = Aktuálne údaje:
 about-telemetry-more-information = Hľadáte viac informácií?
 about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">Dokumentácia údajov Firefoxu</a> obsahuje návody pre prácu s našimi nástrojmi.
 about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Dokumentácia klienta telemetrie Firefoxu</a> obsahuje definície pojmov, dokumentáciu API a popisy údajov.
@@ -56,6 +57,17 @@ about-telemetry-upload-type =
         [enabled] povolené
        *[disabled] zakázané
     }
+# Example Output: 1 sample, average = 0, sum = 0
+# Variables:
+#   $sampleCount (Integer): amount of histogram samples
+#   $prettyAverage (Integer): average of histogram samples
+#   $sum (Integer): sum of histogram samples
+about-telemetry-histogram-stats =
+    { $sampleCount ->
+        [one] { $sampleCount } vzorka, priemer = { $prettyAverage }, súhrnne = { $sum }
+        [few] { $sampleCount } vzorky, priemer = { $prettyAverage }, súhrnne = { $sum }
+       *[other] { $sampleCount } vzoriek, priemer = { $prettyAverage }, súhrnne = { $sum }
+    }
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-page-subtitle = Táto stránka zobrazuje údaje o výkonnosti a využívaní funkcií zozbierané pomocou telemetrie. Informácie sú anonymne odosielané spoločnosti { $telemetryServerOwner } s cieľom vylepšiť program { -brand-full-name }.
@@ -64,6 +76,7 @@ about-telemetry-settings-explanation = Telemetria zbiera { about-telemetry-data-
 #   $name (String): ping name, e.g. “saved-session”
 #   $timeStamp (String): ping localized timestamp, e.g. “2017/07/08 10:40:46”
 about-telemetry-ping-details = Všetky informácie sú odosielané ako súčasť “<a data-l10n-name="ping-link">pings</a>”. Teraz sa pozeráte na ping { $name }, { $timestamp }.
+about-telemetry-data-details-current = Všetky informácie sú odosielané ako súčasť  “<a data-l10n-name="ping-link">pingov</a>“. Teraz sa pozeráte na aktuálne údaje.
 # string used as a placeholder for the search field
 # More info about it can be found here:
 # https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
@@ -127,6 +140,9 @@ about-telemetry-extra-header = extra
 about-telemetry-origin-section = Origin telemetria
 about-telemetry-origin-origin = origin
 about-telemetry-origin-count = počet
+# Variables:
+#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
+about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link"> Firefox Origin Telemetry</a> kóduje údaje pred ich odoslaním, aby { $telemetryServerOwner } mohol počítať veci bez toho, aby vedel či { -brand-product-name } prispel k uvedenému počtu. <a data-l10n-name="prio-blog-link">Ďalšie informácie</a>)
 # Variables:
 #  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
 about-telemetry-process = typ procesu: { $process }

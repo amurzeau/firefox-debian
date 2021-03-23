@@ -111,6 +111,9 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Άνοιγμα συνδέσμου σε νέα θεματική καρτέλα
     .accesskey = κ
+main-context-menu-open-link-container =
+    .label = Άνοιγμα συνδέσμου σε νέα θεματική καρτέλα
+    .accesskey = υ
 main-context-menu-open-link-new-window =
     .label = Άνοιγμα συνδέσμου σε νέο παράθυρο
     .accesskey = δ
@@ -120,6 +123,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = Προσθήκη στους σελιδοδείκτες
     .accesskey = δ
+main-context-menu-bookmark-link =
+    .label = Προσθήκη συνδέσμου σε σελιδοδείκτη
+    .accesskey = κ
 main-context-menu-save-link =
     .label = Αποθήκευση συνδέσμου ως…
     .accesskey = θ
@@ -131,12 +137,20 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = Αντιγραφή διεύθυνσης email
     .accesskey = Ε
 main-context-menu-copy-link =
     .label = Αντιγραφή τοποθεσίας συνδέσμου
     .accesskey = γ
+main-context-menu-copy-link-simple =
+    .label = Αντιγραφή συνδέσμου
+    .accesskey = σ
 
 ## Media (video/audio) controls
 ##
@@ -179,6 +193,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Πολύ υψηλή (2×)
     .accesskey = Λ
+main-context-menu-media-play-speed-2 =
+    .label = Ταχύτητα
+    .accesskey = χ
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Επανάληψη
     .accesskey = Ψ
@@ -227,6 +254,15 @@ main-context-menu-video-copy-location =
 main-context-menu-audio-copy-location =
     .label = Αντιγραφή τοποθεσίας ήχου
     .accesskey = γ
+main-context-menu-image-copy-link =
+    .label = Αντιγραφή συνδέσμου εικόνας
+    .accesskey = γ
+main-context-menu-video-copy-link =
+    .label = Αντιγραφή συνδέσμου βίντεο
+    .accesskey = ρ
+main-context-menu-audio-copy-link =
+    .label = Αντιγραφή συνδέσμου ήχου
+    .accesskey = φ
 main-context-menu-image-save-as =
     .label = Αποθήκευση εικόνας ως…
     .accesskey = θ
@@ -239,6 +275,9 @@ main-context-menu-image-set-as-background =
 main-context-menu-image-info =
     .label = Προβολή πληροφοριών εικόνας
     .accesskey = φ
+main-context-menu-image-set-image-as-background =
+    .label = Ορισμός εικόνας ως φόντου επιφάνειας εργασίας…
+    .accesskey = Ο
 main-context-menu-image-desc =
     .label = Προβολή περιγραφής
     .accesskey = φ
@@ -275,6 +314,17 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = Χρήση προτεινόμενου κωδικού πρόσβασης…
     .accesskey = π
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+
+##
+
+main-context-menu-manage-logins =
+    .label = Διαχείριση συνδέσεων…
+    .accesskey = Δ
 main-context-menu-keyword =
     .label = Προσθήκη λέξης-κλειδιού για αυτή την αναζήτηση…
     .accesskey = Π
@@ -317,6 +367,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Προβολή πηγαίου κώδικα επιλογής
     .accesskey = ε
+main-context-menu-take-screenshot =
+    .label = Λήψη στιγμιότυπου
+    .accesskey = Λ
 main-context-menu-view-page-source =
     .label = Προβολή πηγαίου κώδικα
     .accesskey = Π
@@ -332,6 +385,9 @@ main-context-menu-bidi-switch-page =
 main-context-menu-inspect-element =
     .label = Επιθεώρηση στοιχείου
     .accesskey = υ
+main-context-menu-inspect =
+    .label = Επιθεώρηση
+    .accesskey = θ
 main-context-menu-inspect-a11y-properties =
     .label = Επιθεώρηση ιδιοτήτων προσβασιμότητας
 main-context-menu-eme-learn-more =

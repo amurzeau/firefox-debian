@@ -374,6 +374,12 @@ popup-select-camera =
 popup-select-microphone =
     .value = Ñe’ẽatãha hetápe g̃uarãva:
     .accesskey = M
+popup-select-camera-device =
+    .value = Ta’ãnganohẽha:
+    .accesskey = C
+popup-select-microphone-device =
+    .value = Ñe’ẽatãha:
+    .accesskey = M
 popup-all-windows-shared = Oñemosarambíta opaite ovetã ojehecháva mba’erechahápe.
 popup-screen-sharing-not-now =
     .label = Ani ko’ág̃a
@@ -383,6 +389,13 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = Embogue momarandu’i { -brand-short-name } emoherakuã aja
 popup-silence-notifications-checkbox-warning = { -brand-short-name } ndohechaukamo’ãi momarandu’i oñemoherakuã aja.
+popup-screen-sharing-block =
+    .label = Joko
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Ejoko tapiaite
+    .accesskey = w
+popup-mute-notifications-checkbox = Emokirirĩ ñanduti renda marandu’i emoherakuã aja
 
 ## WebRTC window or screen share tab switch warning
 
@@ -519,9 +532,12 @@ pointerlock-warning-no-domain = Ko kuatia oñangareko nde hekaha rehe. Eikutu Es
 
 ## Subframe crash notification
 
+crashed-subframe-message = <strong>Peteĩva kuatiarogue pehẽ ndokói.</strong> Oikuaa hag̃ua { -brand-product-name } ko apañuãi ha omoĩporã pya’e hag̃ua, ikatúpa emondo marandu’i.
 crashed-subframe-learnmore =
     .label = Kuaave
     .accesskey = L
+crashed-subframe-learnmore-link =
+    .value = Kuaave
 crashed-subframe-submit =
     .label = Emondo Marandu
     .accesskey = S
@@ -536,6 +552,7 @@ bookmarks-manage-bookmarks =
     .label = Eñangareko techaukaháre
 bookmarks-recent-bookmarks-panel =
     .value = Techaukaha ramogua
+bookmarks-recent-bookmarks-panel-subheader = Techaukaha ramogua
 bookmarks-toolbar-chevron =
     .tooltiptext = Techaukaha jehechaukave
 bookmarks-sidebar-content =
@@ -615,3 +632,11 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Mba’apo ñanduti’ỹre
     .accesskey = k
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Heta mba’epu térã ta’ãngamýi ko tenda pegua oipuru software DRM, upéva omomichĩ pe { -brand-short-name } ohejáva ejapo heseve.
+eme-notifications-drm-content-playing-manage = Eñangareko ñembohekóre
+eme-notifications-drm-content-playing-manage-accesskey = M
+eme-notifications-drm-content-playing-dismiss = Mosẽ
+eme-notifications-drm-content-playing-dismiss-accesskey = D

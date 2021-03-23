@@ -212,6 +212,14 @@ cfr-doorhanger-milestone-heading =
         [one] ¡{ -brand-short-name } xeruq'ät k'ïy <b>{ $blockedCount }</b> taq ojqanela' pa { $date }!
        *[other] ¡{ -brand-short-name } xeruq'ät k'ïy <b>{ $blockedCount }</b> taq ojqanela' pa { $date }!
     }
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (Datetime) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading2 =
+    { $blockedCount ->
+        [one] { -brand-short-name } xq'at pa <b>{ $blockedCount }</b> ojqanel { DATETIME($date, month: "long", year: "numeric") }
+       *[other] { -brand-short-name } xeq'at pa <b>{ $blockedCount }</b> ojqanela' { DATETIME($date, month: "long", year: "numeric") }
+    }
 cfr-doorhanger-milestone-ok-button = Titzet Ronojel
     .accesskey = t
 cfr-doorhanger-milestone-close-button = Titz'apïx
@@ -240,6 +248,10 @@ cfr-whatsnew-pip-fullscreen-icon-alt = Ruwachib'al Picture-in-picture
 
 ## Protections Dashboard message
 
+
+## What’s New Panel Content for Firefox 76
+## Protections Dashboard message
+
 cfr-whatsnew-protections-header = Taq chajinïk wakami
 cfr-whatsnew-protections-body = Ri rupas chajinïk eruk'wan ko'öl taq kitzijol kitz'ilanem tzij chuqa' kinuk'samajixik ewan taq tzij. Wakami yatikïr natz'ët jarupe' taq tz'ilanem xesol richin natz'ët we jun chi ke ri ewan taq atzij ayakon xtz'iläx pa jun tz'ilanem tzij.
 cfr-whatsnew-protections-cta-link = Titz'et Kipas Chajinïk
@@ -256,6 +268,8 @@ cfr-doorhanger-doh-body = K'o rejqalem ri awichinanem. { -brand-short-name } wak
 cfr-doorhanger-doh-header = Kikanoxik jikïl chuqa' man etaman ta rusik'ixik taq DNS
 cfr-doorhanger-doh-primary-button = ÜTZ, Wetaman chik
     .accesskey = T
+cfr-doorhanger-doh-primary-button-2 = Ütz
+    .accesskey = t
 cfr-doorhanger-doh-secondary-button = Tichup
     .accesskey = h
 
@@ -294,3 +308,8 @@ cfr-whatsnew-supercookies-body = Ri taq ajk'amaya'l ruxaq pan ewäl yetikïr nik
 
 cfr-whatsnew-bookmarking-header = Utziläj taq yaketal
 cfr-whatsnew-bookmarking-body = Man k'ayew ta ye'oqäx ri jeb'ël taq ruxaq. { -brand-short-name } nunataj wakami ri jeb'ël kik'ojlib'al ri yakon taq ayaketal, yeruk'üt ri kikajtz'ik kisamajib'al yaketal pa ri k'ak'a' ruwi' chuqa' anin yatok pa ri ch'aqa' chik taq ayaketal rik'in jun rumolwuj rukajtz'ik samajib'äl.
+
+## What's new: Cross-site cookie tracking
+
+cfr-whatsnew-cross-site-tracking-header = Tz'aqät chajinïk chuwäch kojqanem cookies chi kikojol taq ruxaq
+cfr-whatsnew-cross-site-tracking-body = Wakami yatikïr nacha' jun ütz chajinïk chuwäch kojqanem cookies. { -brand-short-name } nitikïr yerujech'ej ri taq asamaj chuqa' ri taq atzij pa ri ruxaq at k'o wi wakami richin chi man kekomonïx pa taq ruxaq ri taq tzij yakon pa ri okik'amaya'l.

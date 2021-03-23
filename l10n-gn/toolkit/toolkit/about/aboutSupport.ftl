@@ -130,10 +130,14 @@ sandbox-sys-call-number = Ñehenói pumbyrýpe
 sandbox-sys-call-args = Je’ekuaaite
 safe-mode-title = Eipuru teko jerovia
 restart-in-safe-mode-label = Moĩmbaha oguepyréva moñepyrũjey…
+troubleshoot-mode-title = Apañuãi jekuaarã
+restart-in-troubleshoot-mode-label = Mba’éicha emyatyrõta apañuãi…
 clear-startup-cache-title = Emohenda kache ñepyrũha ñembogue
 clear-startup-cache-label = Embogue kache ñepyrũha…
 startup-cache-dialog-title = Embogue kache ñepyrũha
 startup-cache-dialog-body = Emoñepyrũjey { -brand-short-name } embogue hag̃ua kache ñepyrũha. Kóva nomoambuéi ñemboheko ha jepysokue oñembojuajúva { -brand-short-name } rehe.
+startup-cache-dialog-title2 = ¿Emoñepyrũjey { -brand-short-name } empotĩ hag̃ua ñepyrũha kache?
+startup-cache-dialog-body2 = Kóva naiñambuemo’ãi iñemboheko ha ndoguemo’ãi ijepysokue
 restart-button-label = Ñepyrũjey
 
 ## Media titles
@@ -403,3 +407,13 @@ support-printing-clear-settings-button = Emboguete ñemoĩporã monguatiagua ño
 support-printing-modified-settings = Ñemoĩporã monguatiagua moabuepyre
 support-printing-prefs-name = Téra
 support-printing-prefs-value = Tepykue
+
+## Normandy sections
+
+support-remote-experiments-title = Okayguágui jehekapyahu
+support-remote-experiments-name = Téra
+support-remote-experiments-branch = Jehekapyahu rehegua
+support-remote-experiments-see-about-studies = Ehecha <a data-l10n-name="support-about-studies-link">about:studies</a> eñemomaranduve hag̃ua, oikehápe mba’éichapa eipe’áta tembiapopyahu añogua térã eipe’a { -brand-short-name } ani hag̃ua omongu’e ko’ãichagua tembiapopyahu tenonderãve.
+support-remote-features-title = Tembiapoite okayguágui
+support-remote-features-name = Téra
+support-remote-features-status = Tekotee

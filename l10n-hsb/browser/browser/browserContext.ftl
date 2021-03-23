@@ -111,6 +111,9 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Wotkaz w nowym kontejnerowym rajtarku wočinić
     .accesskey = o
+main-context-menu-open-link-container =
+    .label = Wotkaz w nowym kontejnerje wočinić
+    .accesskey = W
 main-context-menu-open-link-new-window =
     .label = Wotkaz w nowym woknje wočinić
     .accesskey = k
@@ -119,6 +122,9 @@ main-context-menu-open-link-new-private-window =
     .accesskey = o
 main-context-menu-bookmark-this-link =
     .label = Tutón wotkaz jako zapołožku składować
+    .accesskey = k
+main-context-menu-bookmark-link =
+    .label = Wotkaz jako zapołožku składować
     .accesskey = k
 main-context-menu-save-link =
     .label = Wotkaz składować jako…
@@ -131,12 +137,20 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = E-mejlowu adresu kopěrować
     .accesskey = E
 main-context-menu-copy-link =
     .label = Wotkazowu adresu kopěrować
     .accesskey = k
+main-context-menu-copy-link-simple =
+    .label = Wotkaz kopěrować
+    .accesskey = z
 
 ## Media (video/audio) controls
 ##
@@ -179,6 +193,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Jara wysoki (2×)
     .accesskey = J
+main-context-menu-media-play-speed-2 =
+    .label = Spěšnosć
+    .accesskey = S
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0,5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1,0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1,25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1,5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Awtomatisce wospjetować
     .accesskey = A
@@ -206,6 +233,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Wobraz-we-wobrazu
     .accesskey = b
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = We „wobraz-we-wobrazu“ wobhladać
+    .accesskey = b
 main-context-menu-image-reload =
     .label = Wobraz znowa začitać
     .accesskey = b
@@ -215,6 +247,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = Widejo pokazać
     .accesskey = d
+main-context-menu-image-view-new-tab =
+    .label = Wobraz w nowym rajtarku wočinić
+    .accesskey = r
+main-context-menu-video-view-new-tab =
+    .label = Widejo w nowym rajtarku wočinić
+    .accesskey = i
 main-context-menu-image-copy =
     .label = Wobraz kopěrować
     .accesskey = r
@@ -227,6 +265,15 @@ main-context-menu-video-copy-location =
 main-context-menu-audio-copy-location =
     .label = Adresu awdiodataje kopěrować
     .accesskey = u
+main-context-menu-image-copy-link =
+    .label = Wobrazowy wotkaz kopěrować
+    .accesskey = b
+main-context-menu-video-copy-link =
+    .label = Widejowotkaz kopěrować
+    .accesskey = i
+main-context-menu-audio-copy-link =
+    .label = Awdiowotkaz kopěrować
+    .accesskey = A
 main-context-menu-image-save-as =
     .label = Wobraz składować jako…
     .accesskey = r
@@ -239,6 +286,9 @@ main-context-menu-image-set-as-background =
 main-context-menu-image-info =
     .label = Info wo wobrazu pokazać
     .accesskey = w
+main-context-menu-image-set-image-as-background =
+    .label = Wobraz jako desktopowy pozadk nastajić…
+    .accesskey = d
 main-context-menu-image-desc =
     .label = Wopisanje pokazać
     .accesskey = o
@@ -250,6 +300,9 @@ main-context-menu-audio-save-as =
     .accesskey = A
 main-context-menu-video-image-save-as =
     .label = Foto wobrazowki składować jako…
+    .accesskey = F
+main-context-menu-video-take-snapshot =
+    .label = Foto wobrazowki činić…
     .accesskey = F
 main-context-menu-video-email =
     .label = Widejo e-mejlować…
@@ -275,6 +328,26 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = Spłodźene hesło wužiwać…
     .accesskey = S
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = Składowane přizjewjenje wužiwać
+    .accesskey = S
+main-context-menu-use-saved-password =
+    .label = Składowane hesło wužiwać
+    .accesskey = h
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = Sylne hesło namjetować…
+    .accesskey = l
+main-context-menu-manage-logins =
+    .label = Přizjewjenja zrjadować…
+    .accesskey = P
 main-context-menu-keyword =
     .label = Hesło za tute pytanje přidać…
     .accesskey = H
@@ -317,6 +390,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Žórłowy tekst wuběra zwobraznić
     .accesskey = t
+main-context-menu-take-screenshot =
+    .label = Foto wobrazowki činić
+    .accesskey = t
 main-context-menu-view-page-source =
     .label = Žórłowy tekst strony pokazać
     .accesskey = t
@@ -332,6 +408,9 @@ main-context-menu-bidi-switch-page =
 main-context-menu-inspect-element =
     .label = Element přepytować
     .accesskey = E
+main-context-menu-inspect =
+    .label = Přepytować
+    .accesskey = P
 main-context-menu-inspect-a11y-properties =
     .label = Kajkosće bjezbarjernosće přepytować
 main-context-menu-eme-learn-more =

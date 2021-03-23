@@ -21,6 +21,22 @@ appmenuitem-passwords =
     .label = პაროლები
 appmenuitem-extensions-and-themes =
     .label = გაფართოებები და თემები
+appmenuitem-find-in-page =
+    .label = პოვნა გვერდზე...
+appmenuitem-more-tools =
+    .label = სხვა ხელსაწყოები
+appmenuitem-exit =
+    .label = გასვლა
+appmenu-menu-button-closed =
+    .tooltiptext = პროგრამის მენიუს გახსნა
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = პროგრამის მენიუს დახურვა
+    .label = { -brand-shorter-name }
+# Settings is now used to access the browser settings across all platforms,
+# instead of Options or Preferences.
+appmenuitem-settings =
+    .label = პარამეტრები
 
 ## Zoom and Fullscreen Controls
 
@@ -35,6 +51,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = დასინქრონება ახლავე
+appmenuitem-fxa-toolbar-sync-now =
+    .label = დასინქრონება ახლავე
+    .value = დასინქრონება ახლავე
+appmenuitem-fxa-manage-account = ანგარიშის მართვა
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = ბოლო დასინქრონება { $time }
+    .label = ბოლო დასინქრონება { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = დასინქრონება და შენახვა
+appmenu-fxa-signed-in-label = შესვლა
+appmenu-fxa-setup-sync =
+    .label = დასინქრონების ჩართვა…
+appmenu-fxa-show-more-tabs = მეტი ჩანართის ჩვენება
 appmenuitem-save-page =
     .label = გვერდის შენახვა როგორც…
 
@@ -90,9 +123,15 @@ profiler-popup-capture-shortcut =
 
 ## History panel
 
+appmenu-manage-history =
+    .label = ისტორიის მართვა
+appmenu-reopen-all-tabs = ყველა ჩანართის ხელახლა გახსნა
+appmenu-reopen-all-windows = ყველა ფანჯრის ხელახლა გახსნა
 
 ## Help panel
 
+appmenu-help-header =
+    .title = { -brand-shorter-name } დახმარება
 appmenu-about =
     .label = { -brand-shorter-name } შესახებ
     .accesskey = შ
@@ -108,11 +147,19 @@ appmenu-help-import-from-another-browser =
 appmenu-help-keyboard-shortcuts =
     .label = კლავიატურის მალსახმობები
     .accesskey = კ
+appmenu-get-help =
+    .label = დახმარება
+    .accesskey = დ
 appmenu-help-troubleshooting-info =
-    .label = გაუმართაობის აღმოფხვრა
+    .label = ხარვეზის აღმოფხვრის მონაცემები
+    .accesskey = ფ
+appmenu-help-more-troubleshooting-info =
+    .label = ხარვეზის აღმოფხვრის ვრცელი მონაცემები
     .accesskey = ფ
 appmenu-help-taskmanager =
     .label = ამოცანათა მმართველი
+appmenu-help-report-site-issue =
+    .label = საიტის ხარვეზის მოხსენება…
 appmenu-help-feedback-page =
     .label = გამოგვეხმაურეთ…
     .accesskey = უ
@@ -126,6 +173,16 @@ appmenu-help-safe-mode-without-addons =
 appmenu-help-safe-mode-with-addons =
     .label = ჩართული დამატებებით გაშვება
     .accesskey = ჩ
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = ხარვეზის აღმოფხვრის რეჟიმი
+    .accesskey = ჟ
+appmenu-help-exit-troubleshoot-mode =
+    .label = ხარვეზის აღმოფხვრის რეჟიმის გამორთვა
+    .accesskey = ჟ
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
@@ -144,3 +201,6 @@ appmenu-help-check-for-update =
 
 ## More Tools
 
+appmenu-customizetoolbar =
+    .label = ხელსაწყოთა ზოლის მორგება...
+appmenu-developer-tools-subheader = ბრაუზერის ხელსაწყოები

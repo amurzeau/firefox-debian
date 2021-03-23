@@ -14,6 +14,13 @@ duplicate-tab =
 duplicate-tabs =
     .label = 탭 복제
     .accesskey = D
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = 왼쪽 탭 닫기
+    .accesskey = l
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = 오른쪽 탭 닫기
     .accesskey = i
@@ -44,6 +51,9 @@ bookmark-tab =
 reopen-in-container =
     .label = 컨테이너에 다시 열기
     .accesskey = e
+tab-context-open-in-container =
+    .label = 새 컨테이너에 열기
+    .accesskey = e
 move-to-start =
     .label = 처음으로 이동
     .accesskey = S
@@ -56,6 +66,11 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = 여러 탭 닫기
     .accesskey = M
+tab-context-share-url =
+    .label = 공유
+    .accesskey = h
+tab-context-share-more =
+    .label = 더보기…
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -79,6 +94,13 @@ move-tabs =
 move-tab =
     .label = 탭 이동
     .accesskey = v
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] 닫은 탭 다시 열기
+           *[other] 닫은 탭 다시 열기
+        }
+    .accesskey = o
 tab-context-close-tabs =
     .label =
         { $tabCount ->

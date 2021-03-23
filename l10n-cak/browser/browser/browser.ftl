@@ -374,6 +374,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Q'asäy ch'ab'äl richin rutaluxik:
     .accesskey = Q
+popup-select-camera-device =
+    .value = Elesäy wachib'äl:
+    .accesskey = E
+popup-select-camera-icon =
+    .tooltiptext = Elesäy wachib'äl
+popup-select-microphone-device =
+    .value = Q'asäy ch'ab'äl:
+    .accesskey = q
+popup-select-microphone-icon =
+    .tooltiptext = Q'asäy ch'ab'äl
 popup-all-windows-shared = Xkekomonïx konojel ri tz'etel taq tzuwäch e k'o pa ri ruwäch.
 popup-screen-sharing-not-now =
     .label = Wakami Mani
@@ -383,6 +393,13 @@ popup-screen-sharing-never =
     .accesskey = M
 popup-silence-notifications-checkbox = Kechup taq rutzijol { -brand-short-name } toq nikomonïx
 popup-silence-notifications-checkbox-warning = Man xkeruk'üt ta pe taq tzijol ri { -brand-short-name } toq nikomonin.
+popup-screen-sharing-block =
+    .label = Tiq'at
+    .accesskey = T
+popup-screen-sharing-always-block =
+    .label = Junelïk tiq'at
+    .accesskey = J
+popup-mute-notifications-checkbox = Kememüx rutzijol ajk'amaya'l ruxaq toq nikomonïx
 
 ## WebRTC window or screen share tab switch warning
 
@@ -523,6 +540,8 @@ crashed-subframe-message = <strong>Xsach jun peraj ruxaq.</strong> Chi ri { -bra
 crashed-subframe-learnmore =
     .label = Tetamäx Ch'aqa' Chik
     .accesskey = T
+crashed-subframe-learnmore-link =
+    .value = Tisik'ïx Ch'aqa' Chik
 crashed-subframe-submit =
     .label = Titaq Rutzijol
     .accesskey = t
@@ -537,6 +556,7 @@ bookmarks-manage-bookmarks =
     .label = Kenuk'samajïx Taq Yaketal
 bookmarks-recent-bookmarks-panel =
     .value = K'ak'a' Taq Yaketal
+bookmarks-recent-bookmarks-panel-subheader = K'ak'a' Taq Yaketal
 bookmarks-toolbar-chevron =
     .tooltiptext = Kek'ut pe ch'aqa' chik taq yaketal
 bookmarks-sidebar-content =
@@ -565,6 +585,12 @@ bookmarks-tools-toolbar-visibility-menuitem =
             [true] Tewüx ri Kikajtz'ik taq Yaketal
            *[other] Titz'et rukatz'ik taq yaketal
         }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Tewäx Rusamajib'al Yaketal
+           *[other] Tik'ut Rusamajib'al Yaketal
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -590,6 +616,9 @@ bookmarks-toolbar-placeholder =
     .title = Ruch'akulal taq kiyaketal cholsamajib'äl
 bookmarks-toolbar-placeholder-button =
     .label = Ruch'akulal taq kiyaketal cholsamajib'äl
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Titz'aqatisäx Ruwi' pa Yaketal
 
 ## Library Panel items
 
@@ -607,3 +636,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Chupül rusamaj
     .accesskey = m
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Jun k'oxom o silowachib'äl pa re jun ruxaq k'amaya'l re' nrokisaj DRM kema', ri nitikïr nuq'ät jub'a' rusamaj ri { -brand-short-name } nuya' q'ij nab'än rik'in.
+eme-notifications-drm-content-playing-manage = Tinuk'samajïx Runuk'ulem
+eme-notifications-drm-content-playing-manage-accesskey = T
+eme-notifications-drm-content-playing-dismiss = Tichup ruwäch
+eme-notifications-drm-content-playing-dismiss-accesskey = T
+
+## Password save/update panel
+
+panel-save-update-username = Rub'i' winäq
+panel-save-update-password = Ewan tzij
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = ¿La niyuj { $name }?
+addon-removal-abuse-report-checkbox = Tiya' rutzijol re k'amal re' pa { -vendor-short-name }

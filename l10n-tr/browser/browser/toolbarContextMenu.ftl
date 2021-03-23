@@ -25,6 +25,13 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Kapatılan sekmeleri aç
         }
     .accesskey = l
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Kapatılan sekmeyi yeniden aç
+           *[other] Kapatılan sekmeleri yeniden aç
+        }
+    .accesskey = K
 toolbar-context-menu-manage-extension =
     .label = Eklentiyi yönet
     .accesskey = E
@@ -46,21 +53,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Araç çubuğunda kendiliğinden gizle
     .accesskey = A
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Boşsa düğmeyi gizle
+    .accesskey = B
 toolbar-context-menu-remove-from-toolbar =
     .label = Araç çubuğundan kaldır
     .accesskey = k
 toolbar-context-menu-view-customize-toolbar =
     .label = Özelleştir…
     .accesskey = Ö
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Her zaman
-    .accesskey = H
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Asla
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Araç çubuğunu özelleştir…
     .accesskey = A
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Yalnızca yeni sekmede
-    .accesskey = Y
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Her zaman göster
     .accesskey = H

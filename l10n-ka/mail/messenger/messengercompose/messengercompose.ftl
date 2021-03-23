@@ -41,6 +41,34 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = გადატანა ფარული ასლის ველში
     .accesskey = ფ
+
+# Attachment widget
+
+ctrl-cmd-shift-pretty-prefix =
+    { PLATFORM() ->
+        [macos] ⇧ ⌘{ " " }
+       *[other] Ctrl+Shift+
+    }
+trigger-attachment-picker-key = A
+toggle-attachment-pane-key = M
+menuitem-toggle-attachment-pane =
+    .label = დანართის არე
+    .accesskey = ნ
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }
+toolbar-button-add-attachment =
+    .label = მიმაგრება
+    .tooltiptext = დანართის მიმაგრება ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
+add-attachment-notification-reminder =
+    .label = დანართის დამატება…
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+menuitem-attach-files =
+    .label = ფაილ(ებ)ი…
+    .accesskey = ფ
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
+context-menuitem-attach-files =
+    .label = ფაილ(ებ)ის მიმაგრება…
+    .accesskey = ფ
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count =
     .value =
@@ -59,6 +87,31 @@ attachments-placeholder-tooltip =
 #   { attachment-bucket-count.accesskey } - Do not localize this message.
 key-toggle-attachment-pane =
     .key = { attachment-bucket-count.accesskey }
+expand-attachment-pane-tooltip =
+    .tooltiptext = დანართის არის გამოჩენა ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+collapse-attachment-pane-tooltip =
+    .tooltiptext = დანართის არის დამალვა ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+drop-file-label-attachment =
+    { $count ->
+        [one] დანართად დამატება
+       *[other] დანართებად დამატება
+    }
+drop-file-label-inline =
+    { $count ->
+        [one] ხაზში დართვა
+       *[other] ხაზში დართვა
+    }
+
+# Reorder Attachment Panel
+
+move-attachment-first-panel-button =
+    .label = თავში გადატანა
+move-attachment-left-panel-button =
+    .label = მარცხნივ გადატანა
+move-attachment-right-panel-button =
+    .label = მარჯვნივ გადატანა
+move-attachment-last-panel-button =
+    .label = ბოლოში გადატანა
 button-return-receipt =
     .label = ქვითარი
     .tooltiptext = ქვითრის მოთხოვნა ამ წერილისთვის

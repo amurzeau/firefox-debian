@@ -10,12 +10,18 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
+policy-3rdparty = កំណត់​គោលការណ៍​ដែល WebExtensions អាចចូលបានតាមរយៈ chrome.storage.managed។
+policy-AppAutoUpdate = បើក ឬបិទការ​ធ្វើបច្ចុប្បន្នភាពកម្មវិធីដោយស្វ័យប្រវត្តិ។
 policy-AppUpdateURL = កំណត់ URL ធ្វើ​បច្ចុប្បន្នភាព​កម្មវិធី​ផ្ទាល់​ខ្លួន។
+policy-Authentication = កំណត់រចនាសម្ព័ន្ធការផ្ទៀងផ្ទាត់ភាពត្រឹមត្រូវដែលរួមបញ្ចូលគ្នាសម្រាប់គេហទំព័រដែលគាំទ្រវា។
 policy-BlockAboutAddons = ទប់ស្កាត់​ការចូលប្រើប្រាស់​កម្មវិធីគ្រប់គ្រង​កម្មវិធី​បន្ថែម (about:addons) ។
+policy-BlockAboutConfig = ទប់ស្កាត់​ការចូលទៅកាន់ទំព័រ about: config។
 policy-BlockAboutProfiles = ទប់ស្កាត់​ការចូល​ទៅ​កាន់​ទំព័រ about:profiles ។
 policy-BlockAboutSupport = ទប់ស្កាត់​ការចូល​ទៅ​កាន់​ទំព័រ about:support ។
+policy-CaptivePortal = បើក ឬបិទ​ជំនួយ​​គេហទំព័រ​ដែល​ត្រូវបាន​ទប់ស្កាត់។
 policy-CertificatesDescription = បញ្ចូល​វិញ្ញាបនបត្រ ឬប្រើវិញ្ញាបនបត្រ​ដែល​បាន​បង្កើត​ស្រាប់។
 policy-Cookies = អនុញ្ញាត ឬបដិសេធវេបសាយដើម្បីកំណត់ខូគី។
+policy-DisabledCiphers = បិទដំណើរការ ciphers ។
 policy-DefaultDownloadDirectory = កំណត់ថតឯកសារទាញយកលំនាំដើម។
 policy-DisableAppUpdate = បង្ការ​កម្មវិធី​រុករក​ពី​ការ​ធ្វើ​បច្ចុប្បន្នភាព។
 policy-DisableBuiltinPDFViewer = បិទដំណើរការឯកសារ PDF.js កម្មវិធីមើល PDF ដែល​បាន​បង្កើត​ស្រាប់​នៅ​ក្នុង { -brand-short-name } ។
@@ -23,6 +29,7 @@ policy-DisableDeveloperTools = ទប់ស្កាត់​ការ​ចូ�
 policy-DisableFirefoxAccounts = បិទសេវាកម្មដែលមានមូលដ្ឋានលើ { -fxaccount-brand-name } រួមទាំងការធ្វើសមកាលកម្ម។
 # Firefox Screenshots is the name of the feature, and should not be translated.
 policy-DisableFirefoxScreenshots = បិទ​មុខងារ​រូបថត​អេក្រង់​របស់ Firefox ។
+policy-DisableFirefoxStudies = រារាំង { -brand-short-name } ពី​ដំណើការ​ការសិក្សា។
 policy-DisableForgetButton = រារាំង​ការ​ចូល​ប្រើ​ប៊ូតុង​រំលង។
 policy-DisableFormHistory = មិន​ចងចាំ​ប្រវត្តិ​ស្វែងរក និង​សំណុំ​បែបបទ
 policy-DisableMasterPasswordCreation = ប្រសិន​បើ​ពិត​ពាក្យ​សម្ងាត់​មេ​មិន​អាច​បង្កើត​បានទេ។

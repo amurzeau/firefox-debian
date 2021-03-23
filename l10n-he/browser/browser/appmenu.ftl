@@ -27,6 +27,12 @@ appmenuitem-more-tools =
     .label = כלים נוספים
 appmenuitem-exit =
     .label = יציאה
+appmenu-menu-button-closed =
+    .tooltiptext = פתיחת תפריט היישום
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = סגירת תפריט היישום
+    .label = { -brand-shorter-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -45,6 +51,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = סנכרון כעת
+appmenuitem-fxa-toolbar-sync-now =
+    .label = סנכרון כעת
+    .value = סנכרון כעת
+appmenuitem-fxa-manage-account = ניהול חשבון
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name(case: "a") }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = סונכרן לאחרונה { $time }
+    .label = סונכרן לאחרונה { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = סנכרון ושמירת נתונים
+appmenu-fxa-signed-in-label = כניסה
+appmenu-fxa-setup-sync =
+    .label = הפעלת סנכרון…
+appmenu-fxa-show-more-tabs = הצגת לשוניות נוספות
 appmenuitem-save-page =
     .label = שמירת דף בשם…
 
@@ -127,8 +150,13 @@ appmenu-get-help =
 appmenu-help-troubleshooting-info =
     .label = מידע לפתרון בעיות
     .accesskey = מ
+appmenu-help-more-troubleshooting-info =
+    .label = מידע נוסף לפתרון בעיות
+    .accesskey = מ
 appmenu-help-taskmanager =
     .label = מנהל משימות
+appmenu-help-report-site-issue =
+    .label = דיווח על בעיה באתר…
 appmenu-help-feedback-page =
     .label = שליחת משוב…
     .accesskey = ש
@@ -142,6 +170,16 @@ appmenu-help-safe-mode-without-addons =
 appmenu-help-safe-mode-with-addons =
     .label = הפעלה מחדש עם תוספות פעילות
     .accesskey = ח
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = מצב לפתרון בעיות
+    .accesskey = פ
+appmenu-help-exit-troubleshoot-mode =
+    .label = כיבוי מצב לפתרון בעיות
+    .accesskey = פ
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

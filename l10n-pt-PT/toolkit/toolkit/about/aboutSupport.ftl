@@ -133,10 +133,14 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argumentos
 safe-mode-title = Tente o modo de segurança
 restart-in-safe-mode-label = Reiniciar com os extras desativados…
+troubleshoot-mode-title = Diagnosticar problemas
+restart-in-troubleshoot-mode-label = Modo de diagnóstico…
 clear-startup-cache-title = Tente limpar a cache de arranque
 clear-startup-cache-label = Limpar cache de arranque ...
 startup-cache-dialog-title = Limpar a cache de arranque ...
 startup-cache-dialog-body = Reinicie o { -brand-short-name } para limpar o cache de arranque. Isto não altera as suas configurações nem remove as extensões que adicionou ao { -brand-short-name }.
+startup-cache-dialog-title2 = Reiniciar o { -brand-short-name } para limpar a cache de arranque?
+startup-cache-dialog-body2 = Isto não irá mudar as suas configurações nem irá remover as extensões.
 restart-button-label = Reiniciar
 
 ## Media titles
@@ -406,3 +410,13 @@ support-printing-clear-settings-button = Limpar configurações de impressão gu
 support-printing-modified-settings = Configurações de impressão modificadas
 support-printing-prefs-name = Nome
 support-printing-prefs-value = Valor
+
+## Normandy sections
+
+support-remote-experiments-title = Experiências remotas
+support-remote-experiments-name = Nome
+support-remote-experiments-branch = Ramo experimental
+support-remote-experiments-see-about-studies = Consulte <a data-l10n-name="support-about-studies-link">about:studies</a> para mais informações, incluindo como desativar experiências individuais ou impedir que o { -brand-short-name } execute este tipo de experiências no futuro.
+support-remote-features-title = Funcionalidades remotas
+support-remote-features-name = Nome
+support-remote-features-status = Estado

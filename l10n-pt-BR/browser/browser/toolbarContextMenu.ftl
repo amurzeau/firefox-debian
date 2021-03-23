@@ -25,6 +25,13 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Reabrir abas
         }
     .accesskey = b
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Reabrir aba fechada
+           *[other] Reabrir abas fechadas
+        }
+    .accesskey = h
 toolbar-context-menu-manage-extension =
     .label = Gerenciar extensão
     .accesskey = e
@@ -46,11 +53,17 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Ocultar automaticamente na barra de ferramentas
     .accesskey = O
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Ocultar botão quando estiver vazio
+    .accesskey = O
 toolbar-context-menu-remove-from-toolbar =
     .label = Remover da barra de ferramentas
     .accesskey = R
 toolbar-context-menu-view-customize-toolbar =
     .label = Personalizar…
+    .accesskey = P
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Personalizar barra de ferramentas…
     .accesskey = P
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Sempre aparecer

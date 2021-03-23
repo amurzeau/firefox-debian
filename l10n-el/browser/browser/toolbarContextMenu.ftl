@@ -25,6 +25,13 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Αναίρεση κλεισίματος καρτελών
         }
     .accesskey = Α
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Επαναφορά κλειστής καρτέλας
+           *[other] Επαναφορά κλειστών καρτελών
+        }
+    .accesskey = ο
 toolbar-context-menu-manage-extension =
     .label = Διαχείριση επέκτασης
     .accesskey = ε
@@ -46,21 +53,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Αυτόματη απόκρυψη στη γραμμή εργαλείων
     .accesskey = Α
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Απόκρυψη κουμπιού όταν είναι κενό
+    .accesskey = Α
 toolbar-context-menu-remove-from-toolbar =
     .label = Αφαίρεση από τη γραμμή εργαλείων
     .accesskey = Α
 toolbar-context-menu-view-customize-toolbar =
     .label = Προσαρμογή…
     .accesskey = Π
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Πάντα
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Προσαρμογή γραμμής εργαλείων…
     .accesskey = Π
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Ποτέ
-    .accesskey = τ
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Μόνο σε νέα καρτέλα
-    .accesskey = Μ
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Πάντα εμφάνιση
     .accesskey = ν

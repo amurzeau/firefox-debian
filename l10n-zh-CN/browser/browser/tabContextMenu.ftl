@@ -14,6 +14,13 @@ duplicate-tab =
 duplicate-tabs =
     .label = 克隆标签页
     .accesskey = D
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = 关闭左侧标签页
+    .accesskey = l
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = 关闭右侧标签页
     .accesskey = i
@@ -44,6 +51,9 @@ bookmark-tab =
 reopen-in-container =
     .label = 用身份标签页打开
     .accesskey = e
+tab-context-open-in-container =
+    .label = 新建身份标签页打开
+    .accesskey = e
 move-to-start =
     .label = 移动到开头
     .accesskey = S
@@ -56,6 +66,11 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = 批量关闭标签页
     .accesskey = M
+tab-context-share-url =
+    .label = 共享
+    .accesskey = h
+tab-context-share-more =
+    .label = 更多…
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -79,6 +94,13 @@ move-tabs =
 move-tab =
     .label = 移动标签页
     .accesskey = v
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] 恢复关闭的标签页
+           *[other] 恢复关闭的 { $count } 个标签页
+        }
+    .accesskey = o
 tab-context-close-tabs =
     .label =
         { $tabCount ->

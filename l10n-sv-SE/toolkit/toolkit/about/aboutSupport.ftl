@@ -130,10 +130,14 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argument
 safe-mode-title = Prova felsäkert läge
 restart-in-safe-mode-label = Starta om utan tillägg…
+troubleshoot-mode-title = Diagnostisera problem
+restart-in-troubleshoot-mode-label = Felsökningsläge…
 clear-startup-cache-title = Prova att rensa startcachen
 clear-startup-cache-label = Rensa startcache…
 startup-cache-dialog-title = Rensa startcache
 startup-cache-dialog-body = Starta om { -brand-short-name } för att rensa startcachen. Detta kommer inte att ändra dina inställningar eller ta bort tillägg som du har lagt till i { -brand-short-name }.
+startup-cache-dialog-title2 = Starta om { -brand-short-name } för att rensa startcache?
+startup-cache-dialog-body2 = Detta ändrar inte dina inställningar eller tar bort tillägg.
 restart-button-label = Starta om
 
 ## Media titles
@@ -403,3 +407,13 @@ support-printing-clear-settings-button = Rensa sparade utskriftsinställningar
 support-printing-modified-settings = Ändrade utskriftsinställningar
 support-printing-prefs-name = Namn
 support-printing-prefs-value = Värde
+
+## Normandy sections
+
+support-remote-experiments-title = Fjärrexperiment
+support-remote-experiments-name = Namn
+support-remote-experiments-branch = Experimentgren
+support-remote-experiments-see-about-studies = Se <a data-l10n-name="support-about-studies-link">about:studies</a> för mer information, inklusive hur man inaktiverar enskilda experiment eller inaktiverar { -brand-short-name } från att köra denna typ av experiment i framtiden.
+support-remote-features-title = Fjärrfunktioner
+support-remote-features-name = Namn
+support-remote-features-status = Status

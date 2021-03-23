@@ -14,6 +14,13 @@ duplicate-tab =
 duplicate-tabs =
     .label = Duplicar le schedas
     .accesskey = D
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = Clauder le schedas a leve
+    .accesskey = l
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Clauder le schedas a dextera
     .accesskey = h
@@ -44,6 +51,9 @@ bookmark-tab =
 reopen-in-container =
     .label = Reaperir in un scheda contextual
     .accesskey = e
+tab-context-open-in-container =
+    .label = Aperir in un nove continitor
+    .accesskey = e
 move-to-start =
     .label = Displaciar al initio
     .accesskey = i
@@ -56,6 +66,11 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Clauder plure schedas
     .accesskey = p
+tab-context-share-url =
+    .label = Compartir
+    .accesskey = o
+tab-context-share-more =
+    .label = Plus…
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -80,6 +95,14 @@ move-tabs =
 move-tab =
     .label = Mover le scheda
     .accesskey = v
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Reaperir schedas claudite
+            [one] Reaperir scheda claudite
+           *[other] Reaperir schedas claudite
+        }
+    .accesskey = a
 tab-context-close-tabs =
     .label =
         { $tabCount ->

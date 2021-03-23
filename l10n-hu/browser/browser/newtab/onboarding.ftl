@@ -44,7 +44,6 @@ onboarding-join-form-signin-label = Már van fiókja?
 # Text for link to submit the sign in form
 onboarding-join-form-signin = Bejelentkezés
 onboarding-start-browsing-button-label = Böngészés megkezdése
-onboarding-not-now-button-label = Most nem
 onboarding-cards-dismiss =
     .title = Elutasítás
     .aria-label = Elutasítás
@@ -86,99 +85,6 @@ onboarding-benefit-monitor-title = { -monitor-brand-short-name }
 onboarding-benefit-monitor-text = Kapjon értesítést, ha a személyes adatai egy ismert adatsértésben szerepelnek.
 onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
 onboarding-benefit-lockwise-text = Kezelje a jelszavait, melyek védettek és hordozhatóak.
-
-## Custom Return To AMO onboarding strings
-
-return-to-amo-subtitle = Nagyszerű, már van { -brand-short-name }a
-# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
-#
-# Variables:
-#   $addon-name (String) - Name of the add-on
-return-to-amo-addon-title = Most pedig szerezze be a(z) <img data-l10n-name="icon"/> <b>{ $addon-name } kiegészítőt.</b>
-return-to-amo-add-extension-label = Kiegészítő hozzáadása
-
-## Multistage 3-screen onboarding flow strings (about:welcome pages)
-
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = Üdvözli a <span data-l10n-name="zap">{ -brand-short-name }</span>
-onboarding-multistage-welcome-subtitle = A gyors, biztonságos és privát böngésző, amelyet egy nonprofit szervezet támogat.
-onboarding-multistage-welcome-primary-button-label = Beállítás indítása
-onboarding-multistage-welcome-secondary-button-label = Bejelentkezés
-onboarding-multistage-welcome-secondary-button-text = Van már fiókja?
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "more" should stay inside the span.
-onboarding-multistage-import-header = Jelszavak, könyvjelzők és <span data-l10n-name="zap">egyebek</span> importálása
-onboarding-multistage-import-subtitle = Egy másik böngészőből érkezett? Könnyen áthozhat mindent a { -brand-short-name }ba.
-onboarding-multistage-import-primary-button-label = Importálás indítása
-onboarding-multistage-import-secondary-button-label = Most nem
-# Info displayed in the footer of import settings screen during onboarding flow.
-# This supports welcome screen showing top sites imported from the user's default browser.
-onboarding-import-sites-disclaimer = Az itt felsorolt webhelyek találhatók ezen az eszközön. A { -brand-short-name } nem menti vagy szinkronizálja az adatokat egy másik böngészőből, kivéve, ha úgy dönt, hogy importálja azokat.
-# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
-# Variables:
-#   $current (Int) - Number of the current page
-#   $total (Int) - Total number of pages
-onboarding-welcome-steps-indicator =
-    .aria-label = Első lépések: { $current }. képernyő / { $total }
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "look" should stay inside the span.
-onboarding-multistage-theme-header = Válasszon egy <span data-l10n-name="zap">megjelenést</span>
-onboarding-multistage-theme-subtitle = Tegye egyedivé a { -brand-short-name }ot egy témával.
-onboarding-multistage-theme-primary-button-label = Téma mentése
-onboarding-multistage-theme-secondary-button-label = Most nem
-# Automatic theme uses operating system color settings
-onboarding-multistage-theme-label-automatic = Automatikus
-onboarding-multistage-theme-label-light = Világos
-onboarding-multistage-theme-label-dark = Sötét
-# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
-onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
-
-## Please make sure to split the content of the title attribute into lines whose
-## width corresponds to about 40 Latin characters, to ensure that the tooltip
-## doesn't become too long. Line breaks will be preserved when displaying the
-## tooltip.
-
-# Tooltip displayed on hover of automatic theme
-onboarding-multistage-theme-tooltip-automatic-2 =
-    .title =
-        Az operációs rendszer megjelenésének öröklése a
-        gomboknál, menüknél és ablakoknál.
-# Input description for automatic theme
-onboarding-multistage-theme-description-automatic-2 =
-    .aria-description =
-        Az operációs rendszer megjelenésének öröklése a
-        gomboknál, menüknél és ablakoknál.
-# Tooltip displayed on hover of light theme
-onboarding-multistage-theme-tooltip-light-2 =
-    .title =
-        Világos megjelenés használata a gombokhoz,
-        menükhöz és ablakokhoz.
-# Input description for light theme
-onboarding-multistage-theme-description-light =
-    .aria-description =
-        Világos megjelenés használata a gombokhoz,
-        menükhöz és ablakokhoz.
-# Tooltip displayed on hover of dark theme
-onboarding-multistage-theme-tooltip-dark-2 =
-    .title =
-        Sötét megjelenés használata a gombokhoz,
-        menükhöz és ablakokhoz.
-# Input description for dark theme
-onboarding-multistage-theme-description-dark =
-    .aria-description =
-        Sötét megjelenés használata a gombokhoz,
-        menükhöz és ablakokhoz.
-# Tooltip displayed on hover of Alpenglow theme
-onboarding-multistage-theme-tooltip-alpenglow-2 =
-    .title =
-        Színes megjelenés használata a gombokhoz,
-        menükhöz és ablakokhoz.
-# Input description for Alpenglow theme
-onboarding-multistage-theme-description-alpenglow =
-    .aria-description =
-        Színes megjelenés használata a gombokhoz,
-        menükhöz és ablakokhoz.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -239,3 +145,104 @@ return-to-amo-sub-header = Nagyszerű, már van { -brand-short-name }a
 return-to-amo-addon-header = Most pedig szerezze be a(z) <icon></icon><b>{ $addon-name } kiegészítőt.</b>
 return-to-amo-extension-button = Kiegészítő hozzáadása
 return-to-amo-get-started-button = Első lépések a { -brand-short-name }szal
+onboarding-not-now-button-label = Most nem
+
+## Custom Return To AMO onboarding strings
+
+return-to-amo-subtitle = Nagyszerű, már van { -brand-short-name }a
+# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-title = Most pedig szerezze be a(z) <img data-l10n-name="icon"/> <b>{ $addon-name } kiegészítőt.</b>
+return-to-amo-add-extension-label = Kiegészítő hozzáadása
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = Üdvözli a <span data-l10n-name="zap">{ -brand-short-name }</span>
+onboarding-multistage-welcome-subtitle = A gyors, biztonságos és privát böngésző, amelyet egy nonprofit szervezet támogat.
+onboarding-multistage-welcome-primary-button-label = Beállítás indítása
+onboarding-multistage-welcome-secondary-button-label = Bejelentkezés
+onboarding-multistage-welcome-secondary-button-text = Van már fiókja?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "default" should stay inside the span.
+onboarding-multistage-set-default-header = Legyen a { -brand-short-name } <span data-l10n-name="zap">az alapértelmezett böngészője</span>
+onboarding-multistage-set-default-subtitle = Gyorsaság, biztonság és adatvédelem minden böngészés során.
+onboarding-multistage-set-default-primary-button-label = Beállítás alapértelmezettként
+onboarding-multistage-set-default-secondary-button-label = Most nem
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = Jelszavak, könyvjelzők és <span data-l10n-name="zap">egyebek</span> importálása
+onboarding-multistage-import-subtitle = Egy másik böngészőből érkezett? Könnyen áthozhat mindent a { -brand-short-name }ba.
+onboarding-multistage-import-primary-button-label = Importálás indítása
+onboarding-multistage-import-secondary-button-label = Most nem
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = Az itt felsorolt webhelyek találhatók ezen az eszközön. A { -brand-short-name } nem menti vagy szinkronizálja az adatokat egy másik böngészőből, kivéve, ha úgy dönt, hogy importálja azokat.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = Első lépések: { $current }. képernyő / { $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = Válasszon egy <span data-l10n-name="zap">megjelenést</span>
+onboarding-multistage-theme-subtitle = Tegye egyedivé a { -brand-short-name }ot egy témával.
+onboarding-multistage-theme-primary-button-label = Téma mentése
+onboarding-multistage-theme-primary-button-label2 = Kész
+onboarding-multistage-theme-secondary-button-label = Most nem
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = Automatikus
+onboarding-multistage-theme-label-light = Világos
+onboarding-multistage-theme-label-dark = Sötét
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Az operációs rendszer megjelenésének öröklése a
+        gomboknál, menüknél és ablakoknál.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Az operációs rendszer megjelenésének öröklése a
+        gomboknál, menüknél és ablakoknál.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Világos megjelenés használata a gombokhoz,
+        menükhöz és ablakokhoz.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Világos megjelenés használata a gombokhoz,
+        menükhöz és ablakokhoz.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Sötét megjelenés használata a gombokhoz,
+        menükhöz és ablakokhoz.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Sötét megjelenés használata a gombokhoz,
+        menükhöz és ablakokhoz.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Színes megjelenés használata a gombokhoz,
+        menükhöz és ablakokhoz.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Színes megjelenés használata a gombokhoz,
+        menükhöz és ablakokhoz.

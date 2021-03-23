@@ -25,6 +25,13 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Ångra Stäng flikar
         }
     .accesskey = U
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Öppna stängd flik igen
+           *[other] Öppna stängda flikar igen
+        }
+    .accesskey = p
 toolbar-context-menu-manage-extension =
     .label = Hantera tillägg
     .accesskey = H
@@ -46,21 +53,18 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Dölj automatiskt i verktygsfältet
     .accesskey = a
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Dölj knapp när den är tom
+    .accesskey = D
 toolbar-context-menu-remove-from-toolbar =
     .label = Ta bort från verktygsfält
     .accesskey = T
 toolbar-context-menu-view-customize-toolbar =
     .label = Anpassa…
     .accesskey = A
-toolbar-context-menu-bookmarks-toolbar-always-show =
-    .label = Alltid
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = Anpassa verktygsfält…
     .accesskey = A
-toolbar-context-menu-bookmarks-toolbar-never-show =
-    .label = Aldrig
-    .accesskey = A
-toolbar-context-menu-bookmarks-toolbar-on-new-tab =
-    .label = Endast på ny flik
-    .accesskey = E
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Visa alltid
     .accesskey = V

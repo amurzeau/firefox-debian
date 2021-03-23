@@ -376,6 +376,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Да якога мікрафона даць доступ:
     .accesskey = М
+popup-select-camera-device =
+    .value = Камера:
+    .accesskey = К
+popup-select-camera-icon =
+    .tooltiptext = Камера
+popup-select-microphone-device =
+    .value = Мікрафон:
+    .accesskey = М
+popup-select-microphone-icon =
+    .tooltiptext = Мікрафон
 popup-all-windows-shared = Усе бачныя вокны на вашым экране будуць абагулены.
 popup-screen-sharing-not-now =
     .label = Не цяпер
@@ -385,6 +395,13 @@ popup-screen-sharing-never =
     .accesskey = і
 popup-silence-notifications-checkbox = Адключыць абвесткі ад { -brand-short-name } на час супольнага доступу
 popup-silence-notifications-checkbox-warning = { -brand-short-name } не будзе паказваць абвесткі ў час супольнага доступу.
+popup-screen-sharing-block =
+    .label = Блакаваць
+    .accesskey = Б
+popup-screen-sharing-always-block =
+    .label = Заўсёды блакаваць
+    .accesskey = З
+popup-mute-notifications-checkbox = Адключыць абвесткі сайтаў у час абагульвання
 
 ## WebRTC window or screen share tab switch warning
 
@@ -525,6 +542,8 @@ crashed-subframe-message = <strong>Частка гэтай старонкі па
 crashed-subframe-learnmore =
     .label = Даведацца больш
     .accesskey = Д
+crashed-subframe-learnmore-link =
+    .value = Даведацца больш
 crashed-subframe-submit =
     .label = Адправіць справаздачу
     .accesskey = А
@@ -539,6 +558,7 @@ bookmarks-manage-bookmarks =
     .label = Кіраванне закладкамі
 bookmarks-recent-bookmarks-panel =
     .value = Нядаўнія закладкі
+bookmarks-recent-bookmarks-panel-subheader = Нядаўнія закладкі
 bookmarks-toolbar-chevron =
     .tooltiptext = Паказаць больш закладак
 bookmarks-sidebar-content =
@@ -618,3 +638,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Праца па-за сеткаю
     .accesskey = з
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Некаторае аўдыё ці відэа на гэтым сайце выкарыстоўвае DRM-праграму, што можа абмежаваць магчымасці, якія дае вам { -brand-short-name }.
+eme-notifications-drm-content-playing-manage = Кіраваць наладамі
+eme-notifications-drm-content-playing-manage-accesskey = К
+eme-notifications-drm-content-playing-dismiss = Адхіліць
+eme-notifications-drm-content-playing-dismiss-accesskey = А
+
+## Password save/update panel
+
+panel-save-update-username = Імя карыстальніка
+panel-save-update-password = Пароль
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Выдаліць { $name }?
+addon-removal-abuse-report-checkbox = Паведаміць пра гэта пашырэнне ў { -vendor-short-name }

@@ -111,6 +111,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Sök på den här sidan…
     .accesskey = S
+menu-edit-find-in-page =
+    .label = Hitta på sidan…
+    .accesskey = H
 menu-edit-find-again =
     .label = Sök igen
     .accesskey = ö
@@ -128,6 +131,9 @@ menu-view-toolbars-menu =
     .accesskey = V
 menu-view-customize-toolbar =
     .label = Anpassa…
+    .accesskey = A
+menu-view-customize-toolbar2 =
+    .label = Anpassa verktygsfält…
     .accesskey = A
 menu-view-sidebar =
     .label = Sidofält
@@ -219,6 +225,8 @@ menu-bookmarks-show-all =
     .label = Visa alla bokmärken
 menu-bookmark-this-page =
     .label = Bokmärk denna sida
+menu-bookmark-current-tab =
+    .label = Bokmärk aktuell flik
 menu-bookmark-edit =
     .label = Redigera bokmärket
 menu-bookmarks-all-tabs =
@@ -244,6 +252,12 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Logga in till { -brand-product-name }…
     .accesskey = g
+menu-tools-extensions =
+    .label = Tillägg och teman
+    .accesskey = T
+menu-tools-fxa-sign-in2 =
+    .label = Logga in
+    .accesskey = L
 menu-tools-turn-on-sync =
     .label = Slå på { -sync-brand-short-name }…
     .accesskey = p
@@ -272,6 +286,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] I
            *[other] I
+        }
+menu-settings =
+    .label = Inställningar
+    .accesskey =
+        { PLATFORM() ->
+            [windows] n
+           *[other] n
         }
 menu-tools-layout-debugger =
     .label = Felsök layout
@@ -325,8 +346,13 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Felsökningsinformation
     .accesskey = F
+menu-help-more-troubleshooting-info =
+    .label = Mer felsökningsinformation
+    .accesskey = f
 menu-help-taskmanager =
     .label = Aktivitetshanterare
+menu-help-report-site-issue =
+    .label = Rapportera webbplatsproblem…
 menu-help-feedback-page =
     .label = Skicka in feedback…
     .accesskey = k
@@ -336,6 +362,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Starta om med tillägg aktiverade
     .accesskey = S
+menu-help-enter-troubleshoot-mode =
+    .label = Felsökningsläge
+    .accesskey = F
+menu-help-exit-troubleshoot-mode =
+    .label = Stäng av felsökningsläge
+    .accesskey = g
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

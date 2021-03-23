@@ -129,7 +129,7 @@ startup-header = Aniciu
 # { -brand-short-name } will be 'Firefox Developer Edition',
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
-    .label = Permitir que { -brand-short-name } y Firefox s'executen al empar
+    .label = Permitir a { -brand-short-name } y Firefox que s'executen al empar
 use-firefox-sync = Conseyu: Esto usa perfiles separtaos. Usa { -sync-brand-short-name } pa compartir datos ente ellos.
 always-check-default =
     .label = Comprobar siempres si { -brand-short-name } ye'l restolador predetermináu
@@ -400,7 +400,7 @@ performance-allow-hw-accel =
     .accesskey = h
 performance-limit-content-process-option = Llende de procesos de conteníu
     .accesskey = L
-performance-limit-content-process-enabled-desc = Más procesos de conteníu puen ameyorar el rindimientu al usar múltiples llingüetes, más tamién van usar más memoria.
+performance-limit-content-process-enabled-desc = Más procesos de conteníu puen ameyorar el rindimientu al usar múltiples llingüetes, mas tamién van usar más memoria.
 performance-limit-content-process-blocked-desc = Modificar el númberu de procesos de conteníu namás ye posible col { -brand-short-name } multiprocesu. <a data-l10n-name="learn-more">Deprender más tocante a cómo comprobar si'l multiprocesu ta activáu</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -420,7 +420,7 @@ browsing-use-onscreen-keyboard =
     .label = Amosar un tecláu táctil cuando seya preciso
     .accesskey = t
 browsing-use-cursor-navigation =
-    .label = Usar siempres les tecles del cursor pa navegar nes páxines
+    .label = Usar siempres les tecles del cursor pa navegar peles páxines
     .accesskey = c
 browsing-search-on-start-typing =
     .label = Buscar el testu cuando comiences a teclexar
@@ -840,7 +840,7 @@ history-remember-browser-option =
     .label = Recordar l'historial de restolar y descargues
     .accesskey = r
 history-remember-search-option =
-    .label = Recordar l'historial de busques y formularios
+    .label = Recordar l'historial de busques y de formularios
     .accesskey = f
 history-clear-on-close-option =
     .label = Llimpiar l'historial al zarrar { -brand-short-name }
@@ -958,7 +958,7 @@ content-blocking-cryptominers = Criptomineros
 content-blocking-fingerprinters = Xeneradores de buelgues
 content-blocking-warning-title = ¡Atención!
 content-blocking-and-isolating-etp-warning-description = Bloquiar rastrexadores y aisllar cookies pue afeutar a la funcionalidá de dalgunos sitios. Volvi cargar la páxina colos rastrexadores pa cargar tol conteníu.
-content-blocking-and-isolating-etp-warning-description-2 = Esti axuste pue causar que dalgunos sitios web nun amuesen el conteníu o funcionen correutamente. Si te paez qu'un sitiu ta rotu, pues desactivar la proteición escontra'l rastrexu pa esi sitiu y cargar tol conteníu.
+content-blocking-and-isolating-etp-warning-description-2 = Esti axuste pue causar que dalgunos sitios web nun amuesen el conteníu o funcionen correutamente. Si te paez qu'un sitiu ta estropiáu, pues desactivar la proteición escontra'l rastrexu pa esi sitiu y cargar tol conteníu.
 content-blocking-warning-learn-how = Deprender cómo
 content-blocking-reload-description = Va ser preciso recargar les llingüetes p'aplicar estos cambeos.
 content-blocking-reload-tabs-button =
@@ -1049,22 +1049,21 @@ collection-header = Recoyida y usu de datos de { -brand-short-name }
 collection-description = Esforciámonos n'apurrite opciones y recoyer namás lo que precisamos pa fornir y ameyorar { -brand-short-name } pa tol mundu. Siempres pidimos permisu enantes de recibir información personal.
 collection-privacy-notice = Avisu de privacidá
 collection-health-report-telemetry-disabled = Yá nun permites que { -vendor-short-name } capture datos téunicos y d'interaición. Tolos datos vieyos van desaniciase en 30 díes.
-collection-health-report-telemetry-disabled-link = Deprender más
 collection-health-report =
-    .label = Permitir que { -brand-short-name } unvie datos téunicos y d'interaición a { -vendor-short-name }
+    .label = Permitir a { -brand-short-name } qu'unvie datos téunicos y d'interaición a { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Deprender más
 collection-studies =
-    .label = Permitir que { -brand-short-name } instale y execute estudios
+    .label = Permitir { -brand-short-name } qu'instale y execute estudios
 collection-studies-link = Amosar los estudios de { -brand-short-name }
 addon-recommendations =
-    .label = Permitir { -brand-short-name } aconseye estensiones de forma personalizada
+    .label = Permitir a { -brand-short-name } qu'aconseye estensiones de forma personalizada
 addon-recommendations-link = Deprender más
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = L'informe de datos ta desactiváu na configuración d'esta compilación
 collection-backlogged-crash-reports =
-    .label = Permtir que { -brand-short-name } unvie los informes de casques acumulaos por ti
+    .label = Permtir a { -brand-short-name } qu'unvie por ti los informes de casques acumulaos
     .accesskey = c
 collection-backlogged-crash-reports-link = Deprender más
 

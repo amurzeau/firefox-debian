@@ -59,12 +59,16 @@ app-basics-enabled-plugins = Plugin Terpasang
 app-basics-build-config = Konfigurasi Build
 app-basics-user-agent = User Agent
 app-basics-os = OS
+# Rosetta is Apple's translation process to run apps containing x86_64
+# instructions on Apple Silicon. This should remain in English.
+app-basics-rosetta = Rosetta Translated
 app-basics-memory-use = Penggunaan Memori
 app-basics-performance = Kinerja
 app-basics-service-workers = Service Worker Terdaftar
 app-basics-profiles = Profil
 app-basics-launcher-process-status = Proses Peluncur
 app-basics-multi-process-support = Jendela Multiproses
+app-basics-fission-support = Jendela Fission
 app-basics-remote-processes-count = Proses Jarak Jauh
 app-basics-enterprise-policies = Kebijakan Perusahaan
 app-basics-location-service-key-google = Google Location Service Key
@@ -126,10 +130,14 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argumen
 safe-mode-title = Coba Mode Aman
 restart-in-safe-mode-label = Mulai Ulang dengan Pengaya Dinonaktifkan…
+troubleshoot-mode-title = Diagnosis masalah
+restart-in-troubleshoot-mode-label = Mode Pemecahan Masalah…
 clear-startup-cache-title = Coba bersihkan tembolok permulaan
 clear-startup-cache-label = Hapus tembolok permulaan...
 startup-cache-dialog-title = Hapus tembolok permulaan
 startup-cache-dialog-body = Mulai ulang { -brand-short-name } untuk menghapus tembolok permulaan. Ini tidak adakan mengubah pengaturan Anda atau menghapus ekstensi yang Anda tambahkan ke { -brand-short-name }.
+startup-cache-dialog-title2 = Mulai ulang { -brand-short-name } untuk membersihkan tembolok mulai?
+startup-cache-dialog-body2 = Ini tidak akan mengubah pengaturan Anda atau menghapus ekstensi.
 restart-button-label = Mulai Ulang
 
 ## Media titles
@@ -181,6 +189,36 @@ remote-debugging-url = URL
 
 ##
 
+support-third-party-modules-title = Modul Pihak Ketiga
+support-third-party-modules-module = Berkas Modul
+support-third-party-modules-version = Versi File
+support-third-party-modules-vendor = Info Vendor
+support-third-party-modules-occurrence = Kejadian
+support-third-party-modules-process = ID & Jenis Proses
+support-third-party-modules-thread = Thread
+support-third-party-modules-base = Alamat Imagebase
+support-third-party-modules-uptime = Waktu Operasi Proses (md)
+support-third-party-modules-duration = Durasi Pemuatan (md)
+support-third-party-modules-status = Status
+support-third-party-modules-status-loaded = Dimuat
+support-third-party-modules-status-blocked = Diblokir
+support-third-party-modules-status-redirected = Diarahkan ulang
+support-third-party-modules-empty = Tidak ada modul pihak ketiga yang dimuat.
+support-third-party-modules-no-value = (Tidak ada nilai)
+support-third-party-modules-button-open =
+    .title = Buka lokasi berkas…
+support-third-party-modules-expand =
+    .title = Tampilkan informasi rinci
+support-third-party-modules-collapse =
+    .title = Ciutkan informasi rinci
+support-third-party-modules-unsigned-icon =
+    .title = Modul ini tidak ditandatangani
+support-third-party-modules-folder-icon =
+    .title = Buka lokasi berkas…
+support-third-party-modules-down-icon =
+    .title = Tampilkan informasi rinci
+support-third-party-modules-up-icon =
+    .title = Ciutkan informasi rinci
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days = Laporan Kerusakan dalam { $days } Hari Terakhir
@@ -306,6 +344,20 @@ multi-process-status-6 = Dinonaktifkan oleh masukan teks yang tidak didukung
 multi-process-status-7 = Dinonaktifkan oleh pengaya
 multi-process-status-8 = Dinonaktifkan secara paksa
 multi-process-status-unknown = Status tak diketahui
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Dinonaktifkan oleh eksperimen
+fission-status-experiment-treatment = Diaktifkan oleh eksperimen
+fission-status-disabled-by-e10s-env = Dinonaktifkan oleh lingkungan
+fission-status-enabled-by-env = Diaktifkan oleh lingkungan
+fission-status-disabled-by-safe-mode = Dinonaktifkan oleh mode aman
+fission-status-enabled-by-default = Diaktifkan secara baku
+fission-status-disabled-by-default = Dinonaktifkan secara baku
+fission-status-enabled-by-user-pref = Diaktifkan oleh pengguna
+fission-status-disabled-by-user-pref = Dinonaktifkan oleh pengguna
+fission-status-disabled-by-e10s-other = E10s dinonaktifkan
 async-pan-zoom = Geser/Perbesaran Asinkron
 apz-none = tidak ada
 wheel-enabled = input wheel diaktifkan
@@ -326,3 +378,22 @@ touch-warning = input sentuh asinkron dinonaktifkan karena preferensi yang tidak
 policies-inactive = Tidak Aktif
 policies-active = Aktif
 policies-error = Galat
+
+## Printing section
+
+support-printing-title = Pencetakan
+support-printing-troubleshoot = Pemecahan Masalah
+support-printing-clear-settings-button = Bersihkan setelan cetak tersimpan
+support-printing-modified-settings = Pengaturan cetak yang diubah
+support-printing-prefs-name = Nama
+support-printing-prefs-value = Nilai
+
+## Normandy sections
+
+support-remote-experiments-title = Eksperimen Jarak Jauh
+support-remote-experiments-name = Nama
+support-remote-experiments-branch = Cabang Eksperimen
+support-remote-experiments-see-about-studies = Lihat <a data-l10n-name="support-about-studies-link">about:studies</a> untuk informasi lebih lanjut, termasuk cara menonaktifkan masing-masing percobaan atau menonaktifkan { -brand-short-name } untuk menjalankan jenis eksperimen ini di masa mendatang.
+support-remote-features-title = Fitur Jarak Jauh
+support-remote-features-name = Nama
+support-remote-features-status = Status

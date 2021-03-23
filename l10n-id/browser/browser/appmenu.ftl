@@ -17,6 +17,26 @@ appmenuitem-new-window =
     .label = Jendela Baru
 appmenuitem-new-private-window =
     .label = Jendela Mode Pribadi Baru
+appmenuitem-passwords =
+    .label = Kata Sandi
+appmenuitem-extensions-and-themes =
+    .label = Ekstensi dan Tema
+appmenuitem-find-in-page =
+    .label = Temukan di Halaman…
+appmenuitem-more-tools =
+    .label = Alat Lainnya
+appmenuitem-exit =
+    .label = Keluar
+appmenu-menu-button-closed =
+    .tooltiptext = Buka Menu Aplikasi
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Tutup Menu Aplikasi
+    .label = { -brand-shorter-name }
+# Settings is now used to access the browser settings across all platforms,
+# instead of Options or Preferences.
+appmenuitem-settings =
+    .label = Pengaturan
 
 ## Zoom and Fullscreen Controls
 
@@ -31,6 +51,23 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Sinkronkan Sekarang
+appmenuitem-fxa-toolbar-sync-now =
+    .label = Sinkronkan Sekarang
+    .value = Sinkronkan Sekarang
+appmenuitem-fxa-manage-account = Kelola Akun
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Terakhir disinkronkan { $time }
+    .label = Terakhir disinkronkan { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = Sinkronkan dan Simpan Data
+appmenu-fxa-signed-in-label = Masuk
+appmenu-fxa-setup-sync =
+    .label = Aktifkan Sinkronisasi…
+appmenu-fxa-show-more-tabs = Tampilkan Tab Lainnya
 appmenuitem-save-page =
     .label = Simpan Laman dengan Nama…
 
@@ -47,9 +84,52 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-title =
+    .value = { -profiler-brand-name }
+profiler-popup-reveal-description-button =
+    .aria-label = Tampilkan informasi lebih lanjut
+profiler-popup-description-title =
+    .value = Rekam, analisis, bagikan
+profiler-popup-description = Berkolaborasi dalam masalah kinerja dengan mempublikasikan profil untuk dibagikan dengan tim Anda.
+profiler-popup-learn-more = Pelajari lebih lanjut
+profiler-popup-settings =
+    .value = Pengaturan
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings = Edit Pengaturan…
+profiler-popup-disabled = Profiler saat ini dimatikan, kemungkinan besar karena jendela Penjelajahan Pribadi terbuka.
+profiler-popup-recording-screen = Merekam…
+# The profiler presets list is generated elsewhere, but the custom preset is defined
+# here only.
+profiler-popup-presets-custom =
+    .label = Khusus
+profiler-popup-start-recording-button =
+    .label = Mulai Rekam
+profiler-popup-discard-button =
+    .label = Buang
+profiler-popup-capture-button =
+    .label = Tangkap
+profiler-popup-start-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧1
+       *[other] Ctrl+Shift+1
+    }
+profiler-popup-capture-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧2
+       *[other] Ctrl+Shift+2
+    }
+
+## History panel
+
+appmenu-manage-history =
+    .label = Kelola Riwayat
+appmenu-reopen-all-tabs = Buka Ulang Semua Tab
+appmenu-reopen-all-windows = Buka Ulang Semua Jendela
 
 ## Help panel
 
+appmenu-help-header =
+    .title = Bantuan { -brand-shorter-name }
 appmenu-about =
     .label = Tentang { -brand-shorter-name }
     .accesskey = T
@@ -65,11 +145,19 @@ appmenu-help-import-from-another-browser =
 appmenu-help-keyboard-shortcuts =
     .label = Pintasan Papan Ketik
     .accesskey = K
+appmenu-get-help =
+    .label = Dapatkan Bantuan
+    .accesskey = D
 appmenu-help-troubleshooting-info =
     .label = Informasi Pemecahan Masalah…
     .accesskey = M
+appmenu-help-more-troubleshooting-info =
+    .label = Informasi Pemecahan Masalah Lebih Lanjut
+    .accesskey = I
 appmenu-help-taskmanager =
     .label = Pengelola Tugas
+appmenu-help-report-site-issue =
+    .label = Laporkan Masalah Situs…
 appmenu-help-feedback-page =
     .label = Kirim Saran…
     .accesskey = S
@@ -84,6 +172,16 @@ appmenu-help-safe-mode-with-addons =
     .label = Mulai Ulang dengan Pengaya Diaktifkan
     .accesskey = n
 
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode =
+    .label = Mode Pemecahan Masalah
+    .accesskey = M
+appmenu-help-exit-troubleshoot-mode =
+    .label = Nonaktifkan Mode Pemecahan Masalah
+    .accesskey = N
+
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
@@ -96,3 +194,11 @@ appmenu-help-not-deceptive =
 
 ##
 
+appmenu-help-check-for-update =
+    .label = Periksa Versi Baru…
+
+## More Tools
+
+appmenu-customizetoolbar =
+    .label = Ubahsuai Bilah Alat…
+appmenu-developer-tools-subheader = Alat Peramban

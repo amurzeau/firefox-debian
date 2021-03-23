@@ -130,10 +130,14 @@ sandbox-sys-call-number = การเรียกของระบบ
 sandbox-sys-call-args = อาร์กิวเมนต์
 safe-mode-title = ลองใช้โหมดปลอดภัย
 restart-in-safe-mode-label = เริ่มการทำงานใหม่พร้อมปิดใช้งานส่วนเสริม…
+troubleshoot-mode-title = วินิจฉัยปัญหา
+restart-in-troubleshoot-mode-label = โหมดแก้ไขปัญหา…
 clear-startup-cache-title = ลองล้างแคชเมื่อเริ่มการทำงาน
 clear-startup-cache-label = ล้างแคชเมื่อเริ่มการทำงาน…
 startup-cache-dialog-title = ล้างแคชเมื่อเริ่มการทำงาน
 startup-cache-dialog-body = เริ่มการทำงาน { -brand-short-name } ใหม่เพื่อล้างแคชเมื่อเริ่มการทำงาน การดำเนินการนี้จะไม่เปลี่ยนแปลงการตั้งค่าของคุณหรือเอาส่วนขยายต่าง ๆ ที่คุณเพิ่มใน { -brand-short-name } ออก
+startup-cache-dialog-title2 = ต้องการเริ่มการทำงาน { -brand-short-name } ใหม่เพื่อล้างแคชการเริ่มการทำงานหรือไม่
+startup-cache-dialog-body2 = การดำเนินการนี้จะไม่เปลี่ยนการตั้งค่าของคุณหรือเอาส่วนขยายของคุณออก
 restart-button-label = เริ่มการทำงานใหม่
 
 ## Media titles
@@ -195,6 +199,10 @@ support-third-party-modules-thread = เธรด
 support-third-party-modules-base = ที่อยู่ Imagebase
 support-third-party-modules-uptime = ระยะเวลาทำงานของกระบวนการ (ms)
 support-third-party-modules-duration = ระยะเวลาในการโหลด (ms)
+support-third-party-modules-status = สถานะ
+support-third-party-modules-status-loaded = โหลดแล้ว
+support-third-party-modules-status-blocked = ถูกปิดกั้น
+support-third-party-modules-status-redirected = ถูกเปลี่ยนเส้นทาง
 support-third-party-modules-empty = ไม่ได้โหลดโมดูลบุคคลที่สามใด
 support-third-party-modules-no-value = (ไม่มีค่า)
 support-third-party-modules-button-open =
@@ -379,3 +387,13 @@ support-printing-clear-settings-button = ล้างการตั้งค่
 support-printing-modified-settings = การตั้งค่าการพิมพ์ที่ถูกเปลี่ยนแปลง
 support-printing-prefs-name = ชื่อ
 support-printing-prefs-value = ค่า
+
+## Normandy sections
+
+support-remote-experiments-title = คุณลักษณะทดลองระยะไกล
+support-remote-experiments-name = ชื่อ
+support-remote-experiments-branch = สาขาการทดลอง
+support-remote-experiments-see-about-studies = ดูที่ <a data-l10n-name="support-about-studies-link">about:studies</a> สำหรับข้อมูลเพิ่มเติม รวมถึงวิธีการปิดใช้งานคุณลักษณะทดลองแต่ละอย่าง หรือปิดใช้งานไม่ให้ { -brand-short-name } เรียกใช้คุณลักษณะทดสอบชนิดนี้อีกในอนาคต
+support-remote-features-title = คุณลักษณะระยะไกล
+support-remote-features-name = ชื่อ
+support-remote-features-status = สถานะ

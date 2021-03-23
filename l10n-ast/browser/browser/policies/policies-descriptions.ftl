@@ -28,14 +28,15 @@ policy-DisableAppUpdate = Evita que'l restolador s'anueve.
 policy-DisableBuiltinPDFViewer = Desactiva PDF.js, el visor de PDFs integráu en { -brand-short-name }.
 policy-DisableDefaultBrowserAgent = Evita que l'axente del restolador predetermináu tome nenguna aición. Namás aplicable en Windows, les demás plataformes nun tienen l'axente.
 policy-DisableDeveloperTools = Bloquia l'accesu a les ferramientes de desendolcu.
+policy-DisableFeedbackCommands = Desactiva los comandos del menú «Ayuda» pa unviar opiniones: «Opinar» y «Informar de que'l sitiu ye engañosu».
 policy-DisableFirefoxAccounts = Desactiva los servicios basaos en { -fxaccount-brand-name }, incluyíu Sync.
 # Firefox Screenshots is the name of the feature, and should not be translated.
 policy-DisableFirefoxScreenshots = Desactiva la carauterística de Firefox Screenshots.
 policy-DisableFirefoxStudies = Evita que { -brand-short-name } execute estudios.
 policy-DisableForgetButton = Evita l'accesu al botón «Escaecer».
 policy-DisableFormHistory = Nun recuerda l'historial de busques y formularios.
-policy-DisableMasterPasswordCreation = Si s'afita true, nun pue crease una contraseña maestra.
-policy-DisablePrimaryPasswordCreation = Si s'afita true, nun pue crease una contraseña primaria.
+policy-DisableMasterPasswordCreation = Si s'afita «true», nun pue crease una contraseña maestra.
+policy-DisablePrimaryPasswordCreation = Si s'afita «true», nun pue crease una contraseña primaria.
 policy-DisablePasswordReveal = Nun permite que les contraseñes se desvelen nos anicios de sesión guardaos.
 policy-DisablePocket = Desactiva la carauterística de guardáu de páxines web en Pocket.
 policy-DisablePrivateBrowsing = Desactiva'l restolar en privao.
@@ -64,7 +65,7 @@ policy-ExtensionUpdate = Des/activa l'anovamientu automáticu de les estensiones
 policy-FirefoxHome = Configura la páxina d'aniciu de Firefox.
 policy-FlashPlugin = Permite o niega l'usu del plugin Flash.
 policy-Handlers = Configura los remanadores d'aplicaciones predeterminaos.
-policy-HardwareAcceleration = Si s'afita false, desactiva la aceleración per hardware.
+policy-HardwareAcceleration = Si s'afita «false», desactiva la aceleración per hardware.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Afita y, opcionalmente, bloquia la páxina d'aniciu.
 policy-InstallAddonsPermission = Permite que ciertos sitios web instalen complementos.

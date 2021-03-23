@@ -85,6 +85,7 @@ login-item-new-login-title = Nové prihlasovacie údaje
 login-item-edit-button = Upraviť
 about-logins-login-item-remove-button = Odstrániť
 login-item-origin-label = Adresa webovej stránky
+login-item-tooltip-message = Uistite sa, že zodpovedá adresu stránky, na ktorú sa prihlasujete.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Používateľské meno
@@ -170,7 +171,13 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Chcete odstrániť tento prihlasovací údaj?
 confirm-delete-dialog-message = Túto akciu nie je možné vrátiť späť.
 about-logins-confirm-remove-dialog-confirm-button = Odstrániť
-about-logins-confirm-remove-all-dialog-confirm-button = Odstrániť všetky
+about-logins-confirm-remove-all-dialog-confirm-button-label =
+    { $count ->
+        [1] Odstrániť všetky
+        [one] Odstrániť všetky
+        [few] Odstrániť všetky
+       *[other] Odstrániť všetky
+    }
 about-logins-confirm-remove-all-dialog-checkbox-label =
     { $count ->
         [1] Áno, odstrániť tieto prihlasovacie údaje
@@ -181,6 +188,7 @@ about-logins-confirm-remove-all-dialog-checkbox-label =
 about-logins-confirm-export-dialog-title = Exportovať prihlasovacie údaje
 about-logins-confirm-export-dialog-message = Vaše heslá budú uložené v čitateľnom formáte (napr. h3slo) takže ktokoľvek, kto bude môcť otvoriť tento súbor, bude môcť zistiť vaše heslá.
 about-logins-confirm-export-dialog-confirm-button = Exportovať…
+about-logins-alert-import-title = Import bol dokončený
 confirm-discard-changes-dialog-title = Chcete zahodiť neuložené zmeny?
 confirm-discard-changes-dialog-message = Všetky neuložené zmeny budú stratené.
 confirm-discard-changes-dialog-confirm-button = Zahodiť
@@ -242,3 +250,42 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] Dokument CSV
        *[other] Súbor CSV
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] Dokument TSV
+       *[other] Súbor TSV
+    }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = Import bol dokončený
+about-logins-import-dialog-done = Hotovo
+about-logins-import-dialog-error-title = Chyba pri importe
+about-logins-import-dialog-error-unable-to-read-description = Uistite sa, že ste vybrali súbor typu CSV alebo TSV.
+about-logins-import-dialog-error-no-logins-imported = Neboli importované žiadne prihlasovacie údaje
+about-logins-import-dialog-error-learn-more = Ďalšie informácie
+about-logins-import-dialog-error-try-again = Skúsiť znova…
+about-logins-import-dialog-error-cancel = Zrušiť
+about-logins-import-report-title = Súhrn
+#
+# Variables:
+#  $number (number) - The number of the row
+about-logins-import-report-row-index = Riadok { $number }
+about-logins-import-report-row-description-added = Boli pridané nové prihlasovacie údaje
+
+##
+## Variables:
+##  $field (String) - The name of the field from the CSV file for example url, username or password
+
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+
+## Logins import report page
+

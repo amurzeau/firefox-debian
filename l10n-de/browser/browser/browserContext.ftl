@@ -111,6 +111,9 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Link in neuem Tab in Umgebung öffnen
     .accesskey = m
+main-context-menu-open-link-container =
+    .label = Link in neuer Umgebung öffnen
+    .accesskey = U
 main-context-menu-open-link-new-window =
     .label = Link in neuem Fenster öffnen
     .accesskey = F
@@ -119,6 +122,9 @@ main-context-menu-open-link-new-private-window =
     .accesskey = p
 main-context-menu-bookmark-this-link =
     .label = Lesezeichen für diesen Link hinzufügen
+    .accesskey = L
+main-context-menu-bookmark-link =
+    .label = Lesezeichen für Link hinzufügen
     .accesskey = L
 main-context-menu-save-link =
     .label = Ziel speichern unter…
@@ -131,10 +137,18 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = E-Mail-Adresse kopieren
-    .accesskey = E
+    .accesskey = k
 main-context-menu-copy-link =
+    .label = Link-Adresse kopieren
+    .accesskey = k
+main-context-menu-copy-link-simple =
     .label = Link-Adresse kopieren
     .accesskey = k
 
@@ -179,6 +193,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Doppelte Geschwindigkeit (2×)
     .accesskey = D
+main-context-menu-media-play-speed-2 =
+    .label = Geschwindigkeit
+    .accesskey = G
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Endlosschleife
     .accesskey = f
@@ -206,6 +233,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Bild-im-Bild (PiP)
     .accesskey = m
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = In Bild-im-Bild ansehen
+    .accesskey = m
 main-context-menu-image-reload =
     .label = Grafik neu laden
     .accesskey = G
@@ -215,6 +247,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = Video anzeigen
     .accesskey = z
+main-context-menu-image-view-new-tab =
+    .label = Grafik in neuem Tab öffnen
+    .accesskey = G
+main-context-menu-video-view-new-tab =
+    .label = Video in neuem Tab öffnen
+    .accesskey = V
 main-context-menu-image-copy =
     .label = Grafik kopieren
     .accesskey = o
@@ -225,6 +263,15 @@ main-context-menu-video-copy-location =
     .label = Video-Adresse kopieren
     .accesskey = o
 main-context-menu-audio-copy-location =
+    .label = Audio-Adresse kopieren
+    .accesskey = o
+main-context-menu-image-copy-link =
+    .label = Grafikadresse kopieren
+    .accesskey = o
+main-context-menu-video-copy-link =
+    .label = Video-Adresse kopieren
+    .accesskey = o
+main-context-menu-audio-copy-link =
     .label = Audio-Adresse kopieren
     .accesskey = o
 main-context-menu-image-save-as =
@@ -239,6 +286,9 @@ main-context-menu-image-set-as-background =
 main-context-menu-image-info =
     .label = Grafik-Info anzeigen
     .accesskey = e
+main-context-menu-image-set-image-as-background =
+    .label = Bild als Hintergrundbild einrichten…
+    .accesskey = B
 main-context-menu-image-desc =
     .label = Beschreibung anzeigen
     .accesskey = B
@@ -250,6 +300,9 @@ main-context-menu-audio-save-as =
     .accesskey = u
 main-context-menu-video-image-save-as =
     .label = Bildschirmfoto speichern unter…
+    .accesskey = B
+main-context-menu-video-take-snapshot =
+    .label = Bildschirmfoto aufnehmen…
     .accesskey = B
 main-context-menu-video-email =
     .label = Video per E-Mail senden…
@@ -275,6 +328,26 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = Erzeugtes Passwort verwenden…
     .accesskey = z
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = Gespeicherte Zugangsdaten verwenden
+    .accesskey = G
+main-context-menu-use-saved-password =
+    .label = Gespeichertes Passwort verwenden
+    .accesskey = G
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = Starkes Passwort vorschlagen…
+    .accesskey = v
+main-context-menu-manage-logins =
+    .label = Zugangsdaten verwalten…
+    .accesskey = v
 main-context-menu-keyword =
     .label = Ein Schlüsselwort für diese Suche hinzufügen…
     .accesskey = S
@@ -317,6 +390,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Auswahl-Quelltext anzeigen
     .accesskey = A
+main-context-menu-take-screenshot =
+    .label = Bildschirmfoto aufnehmen
+    .accesskey = a
 main-context-menu-view-page-source =
     .label = Seitenquelltext anzeigen
     .accesskey = a
@@ -331,6 +407,9 @@ main-context-menu-bidi-switch-page =
     .accesskey = S
 main-context-menu-inspect-element =
     .label = Element untersuchen
+    .accesskey = Q
+main-context-menu-inspect =
+    .label = Untersuchen
     .accesskey = Q
 main-context-menu-inspect-a11y-properties =
     .label = Barrierefreiheit-Eigenschaften untersuchen

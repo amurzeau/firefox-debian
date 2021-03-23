@@ -14,8 +14,15 @@ duplicate-tab =
 duplicate-tabs =
     .label = Dupliquer les onglets
     .accesskey = D
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = Fermer les onglets sur la gauche
+    .accesskey = l
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
-    .label = Fermer les onglets situés à droite
+    .label = Fermer les onglets sur la droite
     .accesskey = m
 close-other-tabs =
     .label = Fermer les autres onglets
@@ -42,8 +49,11 @@ bookmark-tab =
     .label = Ajouter l’onglet aux marque-pages
     .accesskey = M
 reopen-in-container =
-    .label = Rouvrir dans un onglet contextuel
+    .label = Rouvrir dans un onglet conteneur
     .accesskey = O
+tab-context-open-in-container =
+    .label = Ouvrir dans un nouveau conteneur
+    .accesskey = e
 move-to-start =
     .label = Déplacer vers le début
     .accesskey = S
@@ -56,6 +66,11 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Fermer plusieurs onglets
     .accesskey = l
+tab-context-share-url =
+    .label = Partager
+    .accesskey = P
+tab-context-share-more =
+    .label = Plus…
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -79,6 +94,14 @@ move-tabs =
 move-tab =
     .label = Déplacer l’onglet
     .accesskey = D
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Rouvrir l’onglet fermé
+            [one] Rouvrir l’onglet fermé
+           *[other] Rouvrir les onglets fermés
+        }
+    .accesskey = o
 tab-context-close-tabs =
     .label =
         { $tabCount ->

@@ -58,7 +58,7 @@ urlbar-web-notification-anchor =
 urlbar-midi-notification-anchor =
     .tooltiptext = MIDI დაფის გახსნა
 urlbar-eme-notification-anchor =
-    .tooltiptext = DRM პროგრამის გამოყენების მართვა
+    .tooltiptext = DRM-პროგრამით სარგებლობის გამართვა
 urlbar-web-authn-anchor =
     .tooltiptext = ვებსაიტებზე შესვლის არე
 urlbar-canvas-notification-anchor =
@@ -115,7 +115,7 @@ urlbar-tabtosearch-onboard = აირჩიეთ ეს მალსახმ�
 
 ## Local search mode indicator labels in the urlbar
 
-urlbar-search-mode-bookmarks = სანიშნეები
+urlbar-search-mode-bookmarks = სანიშნები
 urlbar-search-mode-tabs = ჩანართები
 urlbar-search-mode-history = ისტორია
 
@@ -350,13 +350,21 @@ browser-window-close-button =
 
 browser-tab-audio-playing = გაშვებულია
 browser-tab-audio-muted = დადუმებულია
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = ᲒᲐᲨᲕᲔᲑᲣᲚᲘ
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = ᲓᲐᲓᲣᲛᲔᲑᲣᲚᲘ
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = ᲗᲕᲘᲗᲒᲐᲨᲕᲔᲑᲐ ᲨᲔᲘᲖᲦᲣᲓᲐ
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = ᲔᲙᲠᲐᲜᲘ-ᲔᲙᲠᲐᲜᲨᲘ
 
 ## Bookmarks toolbar items
 
 browser-import-button2 =
     .label = სანიშნების გადმოტანა…
     .tooltiptext = სხვა ბრაუზერიდან გადმოტანილ სანიშნებს გამოიყენებს { -brand-short-name }.
-bookmarks-toolbar-empty-message = სწრაფი წვდომისთვის, განათავსეთ თქვენი სანიშნები აქ, სანიშნების ზოლზე. <a data-l10n-name="manage-bookmarks"> სანიშნეების მართვა…</a>
+bookmarks-toolbar-empty-message = სწრაფი წვდომისთვის, განათავსეთ თქვენი სანიშნები აქ, სანიშნების ზოლზე. <a data-l10n-name="manage-bookmarks">სანიშნების მართვა…</a>
 
 ## WebRTC Pop-up notifications
 
@@ -366,6 +374,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = გასაზიარებელი მიკროფონი:
     .accesskey = მ
+popup-select-camera-device =
+    .value = კამერა:
+    .accesskey = კ
+popup-select-camera-icon =
+    .tooltiptext = კამერა
+popup-select-microphone-device =
+    .value = მიკროფონი
+    .accesskey = მ
+popup-select-microphone-icon =
+    .tooltiptext = მიკროფონი
 popup-all-windows-shared = ეკრანზე ნაჩვენები ყველა ფანჯარა გაზიარდება.
 popup-screen-sharing-not-now =
     .label = ახლა არა
@@ -375,6 +393,13 @@ popup-screen-sharing-never =
     .accesskey = ა
 popup-silence-notifications-checkbox = შეჩერდეს შეტყობინებები, როცა { -brand-short-name } აზიარებს
 popup-silence-notifications-checkbox-warning = { -brand-short-name } არ გამოაჩენს შეტყობინებებს მაშინ, როცა რამეს აზიარებთ.
+popup-screen-sharing-block =
+    .label = აკრძალვა
+    .accesskey = ა
+popup-screen-sharing-always-block =
+    .label = ყოველთვის აიკრძალოს
+    .accesskey = ლ
+popup-mute-notifications-checkbox = საიტის შეტყობინებების დადუმება გაზიარებისას
 
 ## WebRTC window or screen share tab switch warning
 
@@ -515,6 +540,8 @@ crashed-subframe-message = <strong>გვერდის ნაწილი უ�
 crashed-subframe-learnmore =
     .label = ვრცლად
     .accesskey = ლ
+crashed-subframe-learnmore-link =
+    .value = ვრცლად
 crashed-subframe-submit =
     .label = მოხსენების გაგზავნა
     .accesskey = ო
@@ -525,6 +552,11 @@ bookmarks-show-all-bookmarks =
     .label = ყველა სანიშნის ჩვენება
 bookmarks-recent-bookmarks =
     .value = ბოლოს ჩანიშნული
+bookmarks-manage-bookmarks =
+    .label = სანიშნების მართვა
+bookmarks-recent-bookmarks-panel =
+    .value = ბოლოს ჩანიშნული
+bookmarks-recent-bookmarks-panel-subheader = ბოლოს ჩანიშნული
 bookmarks-toolbar-chevron =
     .tooltiptext = სხვა სანიშნების გამოჩენაც
 bookmarks-sidebar-content =
@@ -553,6 +585,12 @@ bookmarks-tools-toolbar-visibility-menuitem =
             [true] სანიშნების ხელსაწყოთა ზოლის დამალვა
            *[other] სანიშნების ხელსაწყოთა ზოლის ჩვენება
         }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] სანიშნების ზოლის დამალვა
+           *[other] სანიშნების ზოლის გამოჩენა
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -578,6 +616,9 @@ bookmarks-toolbar-placeholder =
     .title = სანიშნების ზოლის ხელსაწყოები
 bookmarks-toolbar-placeholder-button =
     .label = სანიშნების ზოლის ხელსაწყოები
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = მიმდინარე ჩანართის ჩანიშვნა
 
 ## Library Panel items
 
@@ -595,3 +636,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = კავშირგარეშე რეჟიმი
     .accesskey = კ
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = ამ საიტზე ხმოვანი ფაილების ან ვიდეოების ნაწილი ექვემდებარება DRM-პროგრამას, რომლის გამოც შესაძლოა { -brand-short-name } გიზღუდავდეთ მათ სრულად გამოყენებას.
+eme-notifications-drm-content-playing-manage = პარამეტრების მართვა
+eme-notifications-drm-content-playing-manage-accesskey = ვ
+eme-notifications-drm-content-playing-dismiss = დახურვა
+eme-notifications-drm-content-playing-dismiss-accesskey = უ
+
+## Password save/update panel
+
+panel-save-update-username = მომხმარებელი
+panel-save-update-password = პაროლი
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = მოცილდეს { $name }?
+addon-removal-abuse-report-checkbox = გაფართოებაზე საჩივარი { -vendor-short-name }-სთვის

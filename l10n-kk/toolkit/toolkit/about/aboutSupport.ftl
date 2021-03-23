@@ -59,12 +59,16 @@ app-basics-enabled-plugins = Іске қосулы плагиндер
 app-basics-build-config = Жинау баптаулары
 app-basics-user-agent = User Agent
 app-basics-os = ОЖ
+# Rosetta is Apple's translation process to run apps containing x86_64
+# instructions on Apple Silicon. This should remain in English.
+app-basics-rosetta = Rosetta бинарлық трансляциясы
 app-basics-memory-use = Жады қолданылуы
 app-basics-performance = Өнімділік
 app-basics-service-workers = Тіркелген жұмыс үрдістері
 app-basics-profiles = Профильдер
 app-basics-launcher-process-status = Жөнелтетін үрдіс
 app-basics-multi-process-support = Мультипроцесс терезелері
+app-basics-fission-support = Fission терезелері
 app-basics-remote-processes-count = Қашықтағы үрдістер
 app-basics-enterprise-policies = Кәсіпоорындық саясаттар
 app-basics-location-service-key-google = Google орналасулар қызметінің кілті
@@ -126,10 +130,14 @@ sandbox-sys-call-number = Жүйелік шақыру
 sandbox-sys-call-args = Аргументтер
 safe-mode-title = Қауіпсіз режимін қолданып көру
 restart-in-safe-mode-label = Сөндірілген кеңейтулермен қайта қосу…
+troubleshoot-mode-title = Мәселелерді диагностикалау
+restart-in-troubleshoot-mode-label = Жөндеу режимі…
 clear-startup-cache-title = Іске қосылу кэшін тарартып көріңіз
 clear-startup-cache-label = Іске қосылу кэшін тазарту…
 startup-cache-dialog-title = Іске қосылу кэшін тазарту
 startup-cache-dialog-body = Іске қосылу кэшін тазарту үшін { -brand-short-name } қайта іске қосыңыз. Бұл сіздің баптаулараңызы өзгертпейді, немесе сіз { -brand-short-name } ішіне қосқан кеңейтулерді өшірмейді.
+startup-cache-dialog-title2 = Іске қосылу кэшін тазарту үшін { -brand-short-name } қайта іске қосу керек пе?
+startup-cache-dialog-body2 = Бұл сіздің баптауларыңызды өзгертпейді және кеңейтулерді өшірмейді.
 restart-button-label = Қайта қосу
 
 ## Media titles
@@ -181,6 +189,36 @@ remote-debugging-url = URL
 
 ##
 
+support-third-party-modules-title = Үшінші жақты модульдер
+support-third-party-modules-module = Модуль файлы
+support-third-party-modules-version = Файл нұсқасы
+support-third-party-modules-vendor = Өндіруші ақпараты
+support-third-party-modules-occurrence = Көшірмелер
+support-third-party-modules-process = Үрдіс түрі және идентификаторы
+support-third-party-modules-thread = Ағын
+support-third-party-modules-base = Бейненің базалық жүктелудің адресі
+support-third-party-modules-uptime = Үрдістің жұмыс істеу уақыты (мс)
+support-third-party-modules-duration = Жүктелудің ұзақтығы (мс)
+support-third-party-modules-status = Қалып-күйі
+support-third-party-modules-status-loaded = Жүктелген
+support-third-party-modules-status-blocked = Бұғатталған
+support-third-party-modules-status-redirected = Қайта бағдарланған
+support-third-party-modules-empty = Үшінші жақты модульдер жүктелмеген.
+support-third-party-modules-no-value = (Мән жоқ)
+support-third-party-modules-button-open =
+    .title = Файл орналасуын ашу…
+support-third-party-modules-expand =
+    .title = Көбірек ақпаратты көрсету
+support-third-party-modules-collapse =
+    .title = Көбірек ақпаратты жасыру
+support-third-party-modules-unsigned-icon =
+    .title = Бұл модульге қол қойылмаған
+support-third-party-modules-folder-icon =
+    .title = Файл орналасуын ашу…
+support-third-party-modules-down-icon =
+    .title = Көбірек ақпаратты көрсету
+support-third-party-modules-up-icon =
+    .title = Көбірек ақпаратты жасыру
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
@@ -326,6 +364,20 @@ multi-process-status-6 = Қолдауы жоқ мәтіндік енгізу с�
 multi-process-status-7 = Қосымшалармен сөндірілген
 multi-process-status-8 = Мәжбүрлі түрде сөндірілген
 multi-process-status-unknown = Қалып-күйі белгісіз
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Тәжірибемен сөндірілген
+fission-status-experiment-treatment = Тәжірибемен іске қосылған
+fission-status-disabled-by-e10s-env = Қоршаммен сөндірілген
+fission-status-enabled-by-env = Қоршаммен іске қосылған
+fission-status-disabled-by-safe-mode = Қауіпсіз режиммен сөндірілген
+fission-status-enabled-by-default = Үнсіз келісім бойынша іске қосылған
+fission-status-disabled-by-default = Үнсіз келісім бойынша сөндірілген
+fission-status-enabled-by-user-pref = Пайдаланушымен іске қосылған
+fission-status-disabled-by-user-pref = Пайдаланушымен сөндірілген
+fission-status-disabled-by-e10s-other = E10s сөндірілген
 async-pan-zoom = Асинхронды панорамдау/масштабтау
 apz-none = ешнәрсе
 wheel-enabled = тышқан дөңгелегімен енгізу іске қосылған
@@ -346,3 +398,22 @@ touch-warning = сенсорлық асинхронды енгізу қолда�
 policies-inactive = Белсенді емес
 policies-active = Белсенді
 policies-error = Қате
+
+## Printing section
+
+support-printing-title = Баспаға шығару
+support-printing-troubleshoot = Мәселелерді шешу
+support-printing-clear-settings-button = Сақталған баспаға шығару параметрлерін өшіру
+support-printing-modified-settings = Баспаға шығарудың өзгертілген баптаулары
+support-printing-prefs-name = Аты
+support-printing-prefs-value = Мәні
+
+## Normandy sections
+
+support-remote-experiments-title = Қашықтағы тәжірибелер
+support-remote-experiments-name = Аты
+support-remote-experiments-branch = Сынамалы бұтақ
+support-remote-experiments-see-about-studies = Қосымша ақпаратты, соның ішінде жеке-жеке тәжірибелерді сөндіру немесе { -brand-short-name } үшін осындай түрдегі тәжірибелерді болашақта орындамауды қалай іске қосу туралы қосымша ақпаратты <a data-l10n-name="support-about-studies-link">about:studies</a> бөлімінен қараңыз.
+support-remote-features-title = Қашықтағы мүмкіндіктер
+support-remote-features-name = Аты
+support-remote-features-status = Қалып-күйі

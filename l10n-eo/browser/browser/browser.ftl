@@ -348,6 +348,16 @@ browser-window-close-button =
 
 ## Tab actions
 
+browser-tab-audio-playing = Ludanta
+browser-tab-audio-muted = Silentigita
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = LUDANTA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = SILENTIGITA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = AŬTOMATA LUDADO BLOKITA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = BILDO-EN-BILDO
 
 ## Bookmarks toolbar items
 
@@ -364,6 +374,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Dividota mikrofono:
     .accesskey = m
+popup-select-camera-device =
+    .value = Filmilo:
+    .accesskey = F
+popup-select-camera-icon =
+    .tooltiptext = Filmilo
+popup-select-microphone-device =
+    .value = Mikrofono:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Mikrofono
 popup-all-windows-shared = Ĉiuj videblaj fenestroj en via ekrano estos dividitaj.
 popup-screen-sharing-not-now =
     .label = Ne nun
@@ -373,6 +393,13 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = Malaktivigi sciigojn de { -brand-short-name } dum divido
 popup-silence-notifications-checkbox-warning = { -brand-short-name } ne montros sciigojn dum vi dividas.
+popup-screen-sharing-block =
+    .label = Bloki
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Ĉiam bloki
+    .accesskey = i
+popup-mute-notifications-checkbox = Malaktivigi retejejan sciigojn dum divido
 
 ## WebRTC window or screen share tab switch warning
 
@@ -509,6 +536,15 @@ pointerlock-warning-no-domain = Tiu ĉi dokumento regas vian musmontrilon. Premu
 
 ## Subframe crash notification
 
+crashed-subframe-message = <strong>Parto de tiu ĉi paĝo paneis.</strong> Por permesi al { -brand-product-name } scii pri tiu ĉi problemo kaj havi pli rapidan solvon, bonvolu sendi raporton.
+crashed-subframe-learnmore =
+    .label = Pli da informo
+    .accesskey = P
+crashed-subframe-learnmore-link =
+    .value = Pli da informo
+crashed-subframe-submit =
+    .label = Sendi raporton
+    .accesskey = S
 
 ## Bookmarks panels, menus and toolbar
 
@@ -516,6 +552,11 @@ bookmarks-show-all-bookmarks =
     .label = Montri ĉiujn legosignojn
 bookmarks-recent-bookmarks =
     .value = Ĵusaj legosignoj
+bookmarks-manage-bookmarks =
+    .label = Administri legosignojn
+bookmarks-recent-bookmarks-panel =
+    .value = Ĵusaj legosignoj
+bookmarks-recent-bookmarks-panel-subheader = Ĵusaj legosignoj
 bookmarks-toolbar-chevron =
     .tooltiptext = Montri pliajn legosignojn
 bookmarks-sidebar-content =
@@ -539,6 +580,12 @@ bookmarks-tools-toolbar-visibility =
            *[other] Montri ilaron de legosignoj
         }
 bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Kaŝi ilaron de legosignoj
+           *[other] Montri ilaron de legosignoj
+        }
+bookmarks-tools-toolbar-visibility-panel =
     .label =
         { $isVisible ->
             [true] Kaŝi ilaron de legosignoj
@@ -569,6 +616,9 @@ bookmarks-toolbar-placeholder =
     .title = Elementoj de ilaro de legosignoj
 bookmarks-toolbar-placeholder-button =
     .label = Elementoj de ilaro de legosignoj
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Aldoni legosignon por la nuna langeto
 
 ## Library Panel items
 
@@ -586,3 +636,23 @@ library-recent-activity-title =
 more-menu-go-offline =
     .label = Labori malkonektite
     .accesskey = L
+
+## EME notification panel
+
+eme-notifications-drm-content-playing = Parto de sono aŭ filmeto en tiu ĉi retejo uzas programaron DRM, kiu povas limigi tion, kion { -brand-short-name } rajtigos vin fari kun ĝi.
+eme-notifications-drm-content-playing-manage = Administri agordojn
+eme-notifications-drm-content-playing-manage-accesskey = A
+eme-notifications-drm-content-playing-dismiss = Ignori
+eme-notifications-drm-content-playing-dismiss-accesskey = I
+
+## Password save/update panel
+
+panel-save-update-username = Nomo de uzanto
+panel-save-update-password = Pasvorto
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Ĉu forigi { $name }?
+addon-removal-abuse-report-checkbox = Denunci tiun ĉi etendaĵon al { -vendor-short-name }

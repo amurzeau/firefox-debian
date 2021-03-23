@@ -4,7 +4,7 @@
 
 page-title = Troubleshooting Information
 page-subtitle =
-    This page contains technical information that might be useful when you're
+    This page contains technical information that might be useful when you’re
     trying to solve a problem. If you are looking for answers to common questions
     about { -brand-short-name }, check out our <a data-l10n-name="support-link">support web site</a>.
 crashes-title = Crash Reports
@@ -133,10 +133,14 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Arguments
 safe-mode-title = Try Safe Mode
 restart-in-safe-mode-label = Restart with Add-ons Disabled…
+troubleshoot-mode-title = Diagnose issues
+restart-in-troubleshoot-mode-label = Troubleshoot Mode…
 clear-startup-cache-title = Try clearing the startup cache
 clear-startup-cache-label = Clear startup cache…
 startup-cache-dialog-title = Clear startup cache
 startup-cache-dialog-body = Restart { -brand-short-name } to clear startup cache. This will not change your settings or remove extensions you’ve added to { -brand-short-name }.
+startup-cache-dialog-title2 = Restart { -brand-short-name } to clear startup cache?
+startup-cache-dialog-body2 = This will not change your settings or remove extensions.
 restart-button-label = Restart
 
 ## Media titles
@@ -406,3 +410,13 @@ support-printing-clear-settings-button = Clear saved print settings
 support-printing-modified-settings = Modified print settings
 support-printing-prefs-name = Name
 support-printing-prefs-value = Value
+
+## Normandy sections
+
+support-remote-experiments-title = Remote Experiments
+support-remote-experiments-name = Name
+support-remote-experiments-branch = Experiment Branch
+support-remote-experiments-see-about-studies = See <a data-l10n-name="support-about-studies-link">about:studies</a> for more information, including how to disable individual experiments or to disable { -brand-short-name } from running this type of experiment in the future.
+support-remote-features-title = Remote Features
+support-remote-features-name = Name
+support-remote-features-status = Status

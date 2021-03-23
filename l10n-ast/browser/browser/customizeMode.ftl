@@ -4,7 +4,7 @@
 
 customize-mode-restore-defaults =
     .label = Reafitar
-customize-mode-menu-and-toolbars-header = Arrastra los elementos que prefieras a la barra de ferramientes o al menú flotante
+customize-mode-menu-and-toolbars-header = Arrastra los elementos que prefieras a la barra de ferramientes o al menú flotante.
 customize-mode-overflow-list-title = Menú flotante
 customize-mode-uidensity =
     .label = Densidá
@@ -22,7 +22,7 @@ customize-mode-uidensity-menu-touch =
     .accesskey = T
     .tooltiptext = Táctil
 customize-mode-uidensity-auto-touch-mode-checkbox =
-    .label = Usar Táctil pa Mou tableta
+    .label = Usar «Táctil» pal mou de tableta
 customize-mode-extra-drag-space =
     .label = Espaciu d'arrastre
 customize-mode-lwthemes =

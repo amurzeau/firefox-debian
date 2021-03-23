@@ -14,9 +14,16 @@ duplicate-tab =
 duplicate-tabs =
     .label = زبانه‌های تکراری
     .accesskey = D
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = بستن زبانه ها به راست
+    .accesskey = I
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = بستن زبانه‌ها به چپ
-    .accesskey = چ
+    .accesskey = i
 close-other-tabs =
     .label = بستن زبانه‌های دیگر
     .accesskey = ب
@@ -44,6 +51,9 @@ bookmark-tab =
 reopen-in-container =
     .label = باز کردن دوباره در محفظه
     .accesskey = e
+tab-context-open-in-container =
+    .label = بازکردن در محفظهٔ جدید
+    .accesskey = e
 move-to-start =
     .label = انتقال به ابتدا
     .accesskey = S
@@ -53,9 +63,25 @@ move-to-end =
 move-to-new-window =
     .label = انتقال به پنجرهٔ جدید
     .accesskey = پ
+tab-context-close-multiple-tabs =
+    .label = بستن چندین زبانه
+    .accesskey = M
+tab-context-share-url =
+    .label = همرسانی
+    .accesskey = h
+tab-context-share-more =
+    .label = بیشتر…
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
+
+tab-context-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] برگرداندن زبانه بسته شده
+           *[other] برگرداندن زبانه‌های بسته شده
+        }
+    .accesskey = U
 close-tab =
     .label = بستن زبانه
     .accesskey = ب
@@ -67,4 +93,25 @@ move-tabs =
     .accesskey = v
 move-tab =
     .label = انتقال زبانه
+    .accesskey = v
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] باز کردن زبانه بسته شده
+           *[other] باز کردن زبانه‌های بسته شده
+        }
+    .accesskey = o
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] بستن زبانه
+           *[other] بستن زبانه‌ها
+        }
+    .accesskey = C
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] جابجایی زبانه
+           *[other] جابجایی زبانه‌ها
+        }
     .accesskey = v

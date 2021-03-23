@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-page-title = Informacje dla pomocy technicznej
+page-title = Informacje do rozwiązywania problemów
 page-subtitle =
     Ta strona zawiera informacje techniczne, które mogą być przydatne podczas
     rozwiązywania problemów. Jeśli szukasz odpowiedzi na często zadawane pytania
@@ -134,10 +134,14 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Parametry
 safe-mode-title = Tryb awaryjny
 restart-in-safe-mode-label = Uruchom ponownie z wyłączonymi dodatkami…
+troubleshoot-mode-title = Diagnozuj problemy
+restart-in-troubleshoot-mode-label = Tryb rozwiązywania problemów…
 clear-startup-cache-title = Spróbuj wyczyścić pamięć podręczną uruchamiania
 clear-startup-cache-label = Wyczyść pamięć podręczną uruchamiania…
 startup-cache-dialog-title = Wyczyść pamięć podręczną uruchamiania
 startup-cache-dialog-body = Uruchom program { -brand-short-name } ponownie, aby wyczyścić pamięć podręczną uruchamiania. Nie spowoduje to zmiany ustawień ani usunięcia rozszerzeń dodanych do programu.
+startup-cache-dialog-title2 = Uruchomić program { -brand-short-name } ponownie, aby wyczyścić pamięć podręczną uruchamiania?
+startup-cache-dialog-body2 = Nie spowoduje to zmiany ustawień ani usunięcia rozszerzeń.
 restart-button-label = Uruchom ponownie
 
 ## Media titles
@@ -412,3 +416,13 @@ support-printing-clear-settings-button = Wyczyść zachowane ustawienia drukowan
 support-printing-modified-settings = Zmienione ustawienia drukowania
 support-printing-prefs-name = Nazwa
 support-printing-prefs-value = Wartość
+
+## Normandy sections
+
+support-remote-experiments-title = Zdalne eksperymenty
+support-remote-experiments-name = Nazwa
+support-remote-experiments-branch = Gałąź eksperymentu
+support-remote-experiments-see-about-studies = <a data-l10n-name="support-about-studies-link">about:studies</a> zawiera więcej informacji, w tym jak wyłączyć poszczególne eksperymenty lub uniemożliwić programowi { -brand-short-name } przeprowadzanie tego typu eksperymentów w przyszłości.
+support-remote-features-title = Zdalne funkcje
+support-remote-features-name = Nazwa
+support-remote-features-status = Stan

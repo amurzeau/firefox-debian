@@ -328,7 +328,53 @@ about-logins-import-dialog-error-no-logins-imported = Ни один логин �
 about-logins-import-dialog-error-learn-more = Подробнее
 about-logins-import-dialog-error-try-again = Попробовать снова…
 about-logins-import-dialog-error-cancel = Отмена
+about-logins-import-report-title = Сводка импорта
+about-logins-import-report-description = Логины и пароли, импортированные в { -brand-short-name }.
+#
+# Variables:
+#  $number (number) - The number of the row
+about-logins-import-report-row-index = Строка { $number }
+about-logins-import-report-row-description-no-change = Дубликат: Такой логин уже существует
+about-logins-import-report-row-description-modified = Существующий логин обновлен
+about-logins-import-report-row-description-added = Новый логин добавлен
+about-logins-import-report-row-description-error = Ошибка: Отсутствует поле
+
+##
+## Variables:
+##  $field (String) - The name of the field from the CSV file for example url, username or password
+
+about-logins-import-report-row-description-error-multiple-values = Ошибка: Несколько значений для { $field }
+about-logins-import-report-row-description-error-missing-field = Ошибка: Отсутствует { $field }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-report-added =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">новый логин добавлен</div>
+        [few] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">новых логина добавлено</div>
+       *[many] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">новых логинов добавлено</div>
+    }
+about-logins-import-report-modified =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">существующий логин обновлён</div>
+        [few] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">существующих логина обновлено</div>
+       *[many] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">существующих логинов обновлено</div>
+    }
+about-logins-import-report-no-change =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">повторяющийся логин</div> <div data-l10n-name="not-imported">(не импортировано)</div>
+        [few] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">повторяющихся логина</div> <div data-l10n-name="not-imported">(не импортировано)</div>
+       *[many] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">повторяющихся логинов</div> <div data-l10n-name="not-imported">(не импортировано)</div>
+    }
+about-logins-import-report-error =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">ошибка</div> <div data-l10n-name="not-imported">(не импортировано)</div>
+        [few] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">ошибки</div> <div data-l10n-name="not-imported">(не импортировано)</div>
+       *[many] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">ошибок</div> <div data-l10n-name="not-imported">(не импортировано)</div>
+    }
 
 ## Logins import report page
 
-about-logins-import-report-page-title = Импорт сводного отчёта
+about-logins-import-report-page-title = Сводный отчет об импорте

@@ -14,6 +14,13 @@ duplicate-tab =
 duplicate-tabs =
     .label = Ljepblêden duplisearje
     .accesskey = u
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = Ljepblêden oan de linkerkant slute
+    .accesskey = i
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Ljepblêden oan de rjochterkant slute
     .accesskey = j
@@ -44,6 +51,9 @@ bookmark-tab =
 reopen-in-container =
     .label = Opnij iepenje yn kontener
     .accesskey = e
+tab-context-open-in-container =
+    .label = Iepenje yn nije kontener
+    .accesskey = e
 move-to-start =
     .label = Ferpleatse nei begjin
     .accesskey = b
@@ -56,6 +66,11 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Mear ljepblêden slute
     .accesskey = M
+tab-context-share-url =
+    .label = Diele
+    .accesskey = e
+tab-context-share-more =
+    .label = Mear…
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -80,6 +95,14 @@ move-tabs =
 move-tab =
     .label = Ljepblêd ferpleatse
     .accesskey = f
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Sluten ljepblêd opnij iepenje
+            [one] Sluten ljepblêd opnij iepenje
+           *[other] Sluten ljepblêden opnij iepenje
+        }
+    .accesskey = o
 tab-context-close-tabs =
     .label =
         { $tabCount ->

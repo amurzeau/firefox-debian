@@ -44,7 +44,6 @@ onboarding-join-form-signin-label = Ɣur-k yakan amiḍan?
 # Text for link to submit the sign in form
 onboarding-join-form-signin = Kcem
 onboarding-start-browsing-button-label = Bdu tunigin
-onboarding-not-now-button-label = Mačči tura
 onboarding-cards-dismiss =
     .title = Kkes
     .aria-label = Kkes
@@ -86,99 +85,6 @@ onboarding-benefit-monitor-title = { -monitor-brand-short-name }
 onboarding-benefit-monitor-text = Rmes-d alɣu ticki tilɣa-ik tudmawanin banent-d deg trewla n yisefka yettwassnen.
 onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
 onboarding-benefit-lockwise-text = Sefrek awalen uffiren i yettwaḍemnen u ara yili yid-k yal amkan.
-
-## Custom Return To AMO onboarding strings
-
-return-to-amo-subtitle = Igerrez, tesεiḍ { -brand-short-name }
-# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
-#
-# Variables:
-#   $addon-name (String) - Name of the add-on
-return-to-amo-addon-title = Tura ad ak·am-id-nmudd <img data-l10n-name="icon"/> <b>{ $addon-name }.</b>
-return-to-amo-add-extension-label = Rnu asiɣzef
-
-## Multistage 3-screen onboarding flow strings (about:welcome pages)
-
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = Ansuf ɣer <span data-l10n-name="zap">{ -brand-short-name }</span>
-onboarding-multistage-welcome-subtitle = D iminig arurad, aɣelsan, uslig i teḥrez tkebbanit ur nettnadi ɣef tedrimt.
-onboarding-multistage-welcome-primary-button-label = Bdu asebded
-onboarding-multistage-welcome-secondary-button-label = Kcem
-onboarding-multistage-welcome-secondary-button-text = Ɣur-k·m amiḍan?
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "more" should stay inside the span.
-onboarding-multistage-import-header = Kter awalen-ik·im uffiren, <br/>ticraḍ n yisebtar d <span data-l10n-name="zap">wugar</span>
-onboarding-multistage-import-subtitle = Truḥeḍ-d seg yiminig-nniḍen? Yeshel ad d-taweḍ kullec ɣer { -brand-short-name }.
-onboarding-multistage-import-primary-button-label = Bdu aktar
-onboarding-multistage-import-secondary-button-label = Mačči tura
-# Info displayed in the footer of import settings screen during onboarding flow.
-# This supports welcome screen showing top sites imported from the user's default browser.
-onboarding-import-sites-disclaimer = Ismal i d-yettwabedren dagi ttwafen deg yibenk-a.{ -brand-short-name } ur isseklas isefka, ur ten-issestab seg yiming-nniḍen ala ma yella tferneḍ kter-it.
-# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
-# Variables:
-#   $current (Int) - Number of the current page
-#   $total (Int) - Total number of pages
-onboarding-welcome-steps-indicator =
-    .aria-label = Bdu: agdil { $current } seg { $total }
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "look" should stay inside the span.
-onboarding-multistage-theme-header = Fren <span data-l10n-name="zap">udem</span>
-onboarding-multistage-theme-subtitle = Err { -brand-short-name } d udmawan s usentel.
-onboarding-multistage-theme-primary-button-label = Kles asentel
-onboarding-multistage-theme-secondary-button-label = Mačči tura
-# Automatic theme uses operating system color settings
-onboarding-multistage-theme-label-automatic = Awurman
-onboarding-multistage-theme-label-light = Aceɛlal
-onboarding-multistage-theme-label-dark = Aberkan
-# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
-onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
-
-## Please make sure to split the content of the title attribute into lines whose
-## width corresponds to about 40 Latin characters, to ensure that the tooltip
-## doesn't become too long. Line breaks will be preserved when displaying the
-## tooltip.
-
-# Tooltip displayed on hover of automatic theme
-onboarding-multistage-theme-tooltip-automatic-2 =
-    .title =
-        Ṭṭef arwes n unagraw-ik·im
-        n wammud i tqeffalin, i wumuɣen d yisfuyla.
-# Input description for automatic theme
-onboarding-multistage-theme-description-automatic-2 =
-    .aria-description =
-        Ṭṭef arwes n unagraw-ik·im
-        n wammud i tqeffalin, i wumuɣen d yisfuyla.
-# Tooltip displayed on hover of light theme
-onboarding-multistage-theme-tooltip-light-2 =
-    .title =
-        Seqdec arwes aceεlal i tqeffalin,
-        i wumuɣen d yisfuyla.
-# Input description for light theme
-onboarding-multistage-theme-description-light =
-    .aria-description =
-        Seqdec arwes aceεlal i tqeffalin,
-        i wumuɣen d yisfuyla.
-# Tooltip displayed on hover of dark theme
-onboarding-multistage-theme-tooltip-dark-2 =
-    .title =
-        Seqdec arwes aberkan i tqeffalin,
-        i wumuɣen d yisfuyla.
-# Input description for dark theme
-onboarding-multistage-theme-description-dark =
-    .aria-description =
-        Seqdec arwes aberkan i tqeffalin,
-        i wumuɣen d yisfuyla.
-# Tooltip displayed on hover of Alpenglow theme
-onboarding-multistage-theme-tooltip-alpenglow-2 =
-    .title =
-        Seqdec arwes s yiniten i tqeffalin,
-        i wumuɣen d yisfuyla.
-# Input description for Alpenglow theme
-onboarding-multistage-theme-description-alpenglow =
-    .aria-description =
-        Seqdec arwes s yiniten i tqeffalin,
-        i wumuɣen d yisfuyla.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -239,3 +145,104 @@ return-to-amo-sub-header = Igerrez, tesεiḍ { -brand-short-name }
 return-to-amo-addon-header = Tura ad k-id-nmudd <icon></icon><b>{ $addon-name }.</b>
 return-to-amo-extension-button = Rnu asiɣzef
 return-to-amo-get-started-button = Bdu s { -brand-short-name }
+onboarding-not-now-button-label = Mačči tura
+
+## Custom Return To AMO onboarding strings
+
+return-to-amo-subtitle = Igerrez, tesεiḍ { -brand-short-name }
+# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-title = Tura ad ak·am-id-nmudd <img data-l10n-name="icon"/> <b>{ $addon-name }.</b>
+return-to-amo-add-extension-label = Rnu asiɣzef
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = Ansuf ɣer <span data-l10n-name="zap">{ -brand-short-name }</span>
+onboarding-multistage-welcome-subtitle = D iminig arurad, aɣelsan, uslig i teḥrez tkebbanit ur nettnadi ɣef tedrimt.
+onboarding-multistage-welcome-primary-button-label = Bdu asebded
+onboarding-multistage-welcome-secondary-button-label = Kcem
+onboarding-multistage-welcome-secondary-button-text = Ɣur-k·m amiḍan?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "default" should stay inside the span.
+onboarding-multistage-set-default-header = Eg { -brand-short-name }-inek <span data-l10n-name="zap">amezwer</span>
+onboarding-multistage-set-default-subtitle = D arurad, d aɣellsan yerna iḥerrez tabaḍnit yal mi ara tinigeḍ.
+onboarding-multistage-set-default-primary-button-label = Eg amezwer
+onboarding-multistage-set-default-secondary-button-label = Mačči tura
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = Kter awalen-ik·im uffiren, <br/>ticraḍ n yisebtar d <span data-l10n-name="zap">wugar</span>
+onboarding-multistage-import-subtitle = Truḥeḍ-d seg yiminig-nniḍen? Yeshel ad d-taweḍ kullec ɣer { -brand-short-name }.
+onboarding-multistage-import-primary-button-label = Bdu aktar
+onboarding-multistage-import-secondary-button-label = Mačči tura
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = Ismal i d-yettwabedren dagi ttwafen deg yibenk-a.{ -brand-short-name } ur isseklas isefka, ur ten-issestab seg yiming-nniḍen ala ma yella tferneḍ kter-it.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = Bdu: agdil { $current } seg { $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = Fren <span data-l10n-name="zap">udem</span>
+onboarding-multistage-theme-subtitle = Err { -brand-short-name } d udmawan s usentel.
+onboarding-multistage-theme-primary-button-label = Kles asentel
+onboarding-multistage-theme-primary-button-label2 = Immed
+onboarding-multistage-theme-secondary-button-label = Mačči tura
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = Awurman
+onboarding-multistage-theme-label-light = Aceɛlal
+onboarding-multistage-theme-label-dark = Aberkan
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Ṭṭef arwes n unagraw-ik·im
+        n wammud i tqeffalin, i wumuɣen d yisfuyla.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Ṭṭef arwes n unagraw-ik·im
+        n wammud i tqeffalin, i wumuɣen d yisfuyla.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Seqdec arwes aceεlal i tqeffalin,
+        i wumuɣen d yisfuyla.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Seqdec arwes aceεlal i tqeffalin,
+        i wumuɣen d yisfuyla.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Seqdec arwes aberkan i tqeffalin,
+        i wumuɣen d yisfuyla.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Seqdec arwes aberkan i tqeffalin,
+        i wumuɣen d yisfuyla.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Seqdec arwes s yiniten i tqeffalin,
+        i wumuɣen d yisfuyla.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Seqdec arwes s yiniten i tqeffalin,
+        i wumuɣen d yisfuyla.
