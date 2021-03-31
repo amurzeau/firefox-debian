@@ -1,0 +1,812 @@
+From: Liu Yu <liuyu@loongson.cn>
+Date: Mon, 22 Feb 2021 09:36:59 +0000
+Subject: Bug 1685662 - [MIPS] Implement some changes. r=jandem
+
+Add convertDoubleToPtr, move32SignExtendToPtr, spectreBoundsCheckPtr and spectreMaskIndexPtr to the MacroAssembler;
+
+Implement MacroAssembler::branch{Add,Sub,Mul}Ptr;
+
+Differential Revision: https://phabricator.services.mozilla.com/D105861
+---
+ .../mips-shared/CodeGenerator-mips-shared.cpp |  30 ++--
+ .../MacroAssembler-mips-shared-inl.h          |  53 +++++-
+ .../MacroAssembler-mips-shared.cpp            |  37 ++---
+ .../mips-shared/MacroAssembler-mips-shared.h  |  20 +--
+ js/src/jit/mips32/MacroAssembler-mips32-inl.h |  15 ++
+ js/src/jit/mips32/MacroAssembler-mips32.cpp   |  18 ++-
+ js/src/jit/mips32/MacroAssembler-mips32.h     |  51 +++++-
+ js/src/jit/mips64/MacroAssembler-mips64-inl.h |  24 +++
+ js/src/jit/mips64/MacroAssembler-mips64.cpp   | 152 +++++++++++++++++-
+ js/src/jit/mips64/MacroAssembler-mips64.h     |  29 +++-
+ 10 files changed, 354 insertions(+), 75 deletions(-)
+
+diff --git a/js/src/jit/mips-shared/CodeGenerator-mips-shared.cpp b/js/src/jit/mips-shared/CodeGenerator-mips-shared.cpp
+index 9dd5a21..2deee85 100644
+--- a/js/src/jit/mips-shared/CodeGenerator-mips-shared.cpp
++++ b/js/src/jit/mips-shared/CodeGenerator-mips-shared.cpp
+@@ -273,11 +273,11 @@ void CodeGenerator::visitAddI(LAddI* ins) {
+ 
+   Label overflow;
+   if (rhs->isConstant()) {
+-    masm.ma_addTestOverflow(ToRegister(dest), ToRegister(lhs),
+-                            Imm32(ToInt32(rhs)), &overflow);
++    masm.ma_add32TestOverflow(ToRegister(dest), ToRegister(lhs),
++                              Imm32(ToInt32(rhs)), &overflow);
+   } else {
+-    masm.ma_addTestOverflow(ToRegister(dest), ToRegister(lhs), ToRegister(rhs),
+-                            &overflow);
++    masm.ma_add32TestOverflow(ToRegister(dest), ToRegister(lhs),
++                              ToRegister(rhs), &overflow);
+   }
+ 
+   bailoutFrom(&overflow, ins->snapshot());
+@@ -316,11 +316,11 @@ void CodeGenerator::visitSubI(LSubI* ins) {
+ 
+   Label overflow;
+   if (rhs->isConstant()) {
+-    masm.ma_subTestOverflow(ToRegister(dest), ToRegister(lhs),
+-                            Imm32(ToInt32(rhs)), &overflow);
++    masm.ma_sub32TestOverflow(ToRegister(dest), ToRegister(lhs),
++                              Imm32(ToInt32(rhs)), &overflow);
+   } else {
+-    masm.ma_subTestOverflow(ToRegister(dest), ToRegister(lhs), ToRegister(rhs),
+-                            &overflow);
++    masm.ma_sub32TestOverflow(ToRegister(dest), ToRegister(lhs),
++                              ToRegister(rhs), &overflow);
+   }
+ 
+   bailoutFrom(&overflow, ins->snapshot());
+@@ -378,7 +378,7 @@ void CodeGenerator::visitMulI(LMulI* ins) {
+       case 2:
+         if (mul->canOverflow()) {
+           Label mulTwoOverflow;
+-          masm.ma_addTestOverflow(dest, src, src, &mulTwoOverflow);
++          masm.ma_add32TestOverflow(dest, src, src, &mulTwoOverflow);
+ 
+           bailoutFrom(&mulTwoOverflow, ins->snapshot());
+         } else {
+@@ -432,8 +432,8 @@ void CodeGenerator::visitMulI(LMulI* ins) {
+ 
+         if (mul->canOverflow()) {
+           Label mulConstOverflow;
+-          masm.ma_mul_branch_overflow(dest, ToRegister(lhs),
+-                                      Imm32(ToInt32(rhs)), &mulConstOverflow);
++          masm.ma_mul32TestOverflow(dest, ToRegister(lhs), Imm32(ToInt32(rhs)),
++                                    &mulConstOverflow);
+ 
+           bailoutFrom(&mulConstOverflow, ins->snapshot());
+         } else {
+@@ -445,8 +445,8 @@ void CodeGenerator::visitMulI(LMulI* ins) {
+     Label multRegOverflow;
+ 
+     if (mul->canOverflow()) {
+-      masm.ma_mul_branch_overflow(dest, ToRegister(lhs), ToRegister(rhs),
+-                                  &multRegOverflow);
++      masm.ma_mul32TestOverflow(dest, ToRegister(lhs), ToRegister(rhs),
++                                &multRegOverflow);
+       bailoutFrom(&multRegOverflow, ins->snapshot());
+     } else {
+       masm.as_mul(dest, ToRegister(lhs), ToRegister(rhs));
+@@ -2056,8 +2056,8 @@ void CodeGenerator::visitWasmAddOffset(LWasmAddOffset* lir) {
+   Register out = ToRegister(lir->output());
+ 
+   Label ok;
+-  masm.ma_addTestCarry(Assembler::CarryClear, out, base, Imm32(mir->offset()),
+-                       &ok);
++  masm.ma_add32TestCarry(Assembler::CarryClear, out, base, Imm32(mir->offset()),
++                         &ok);
+   masm.wasmTrap(wasm::Trap::OutOfBounds, mir->bytecodeOffset());
+   masm.bind(&ok);
+ }
+diff --git a/js/src/jit/mips-shared/MacroAssembler-mips-shared-inl.h b/js/src/jit/mips-shared/MacroAssembler-mips-shared-inl.h
+index e650772..86620bd 100644
+--- a/js/src/jit/mips-shared/MacroAssembler-mips-shared-inl.h
++++ b/js/src/jit/mips-shared/MacroAssembler-mips-shared-inl.h
+@@ -519,11 +519,11 @@ void MacroAssembler::branchAdd32(Condition cond, T src, Register dest,
+                                  Label* overflow) {
+   switch (cond) {
+     case Overflow:
+-      ma_addTestOverflow(dest, dest, src, overflow);
++      ma_add32TestOverflow(dest, dest, src, overflow);
+       break;
+     case CarryClear:
+     case CarrySet:
+-      ma_addTestCarry(cond, dest, dest, src, overflow);
++      ma_add32TestCarry(cond, dest, dest, src, overflow);
+       break;
+     default:
+       MOZ_CRASH("NYI");
+@@ -535,7 +535,7 @@ void MacroAssembler::branchSub32(Condition cond, T src, Register dest,
+                                  Label* overflow) {
+   switch (cond) {
+     case Overflow:
+-      ma_subTestOverflow(dest, dest, src, overflow);
++      ma_sub32TestOverflow(dest, dest, src, overflow);
+       break;
+     case NonZero:
+     case Zero:
+@@ -553,7 +553,7 @@ template <typename T>
+ void MacroAssembler::branchMul32(Condition cond, T src, Register dest,
+                                  Label* overflow) {
+   MOZ_ASSERT(cond == Assembler::Overflow);
+-  ma_mul_branch_overflow(dest, dest, src, overflow);
++  ma_mul32TestOverflow(dest, dest, src, overflow);
+ }
+ 
+ template <typename T>
+@@ -573,18 +573,42 @@ void MacroAssembler::branchNeg32(Condition cond, Register reg, Label* label) {
+ template <typename T>
+ void MacroAssembler::branchAddPtr(Condition cond, T src, Register dest,
+                                   Label* label) {
+-  MOZ_CRASH("NYI");
++  switch (cond) {
++    case Overflow:
++      ma_addPtrTestOverflow(dest, dest, src, label);
++      break;
++    case CarryClear:
++    case CarrySet:
++      ma_addPtrTestCarry(cond, dest, dest, src, label);
++      break;
++    default:
++      MOZ_CRASH("NYI");
++  }
+ }
+ 
+ template <typename T>
+ void MacroAssembler::branchSubPtr(Condition cond, T src, Register dest,
+                                   Label* label) {
+-  MOZ_CRASH("NYI");
++  switch (cond) {
++    case Overflow:
++      ma_subPtrTestOverflow(dest, dest, src, label);
++      break;
++    case NonZero:
++    case Zero:
++    case Signed:
++    case NotSigned:
++      subPtr(src, dest);
++      ma_b(dest, dest, label, cond);
++      break;
++    default:
++      MOZ_CRASH("NYI");
++  }
+ }
+ 
+ void MacroAssembler::branchMulPtr(Condition cond, Register src, Register dest,
+                                   Label* label) {
+-  MOZ_CRASH("NYI");
++  MOZ_ASSERT(cond == Assembler::Overflow);
++  ma_mulPtrTestOverflow(dest, dest, src, label);
+ }
+ 
+ void MacroAssembler::decBranchPtr(Condition cond, Register lhs, Imm32 rhs,
+@@ -985,6 +1009,21 @@ void MacroAssembler::spectreBoundsCheck32(Register index, const Address& length,
+   branch32(Assembler::BelowOrEqual, length, index, failure);
+ }
+ 
++void MacroAssembler::spectreBoundsCheckPtr(Register index, Register length,
++                                           Register maybeScratch,
++                                           Label* failure) {
++  MOZ_RELEASE_ASSERT(!JitOptions.spectreIndexMasking);
++  branchPtr(Assembler::BelowOrEqual, length, index, failure);
++}
++
++void MacroAssembler::spectreBoundsCheckPtr(Register index,
++                                           const Address& length,
++                                           Register maybeScratch,
++                                           Label* failure) {
++  MOZ_RELEASE_ASSERT(!JitOptions.spectreIndexMasking);
++  branchPtr(Assembler::BelowOrEqual, length, index, failure);
++}
++
+ void MacroAssembler::spectreMovePtr(Condition cond, Register src,
+                                     Register dest) {
+   MOZ_CRASH();
+diff --git a/js/src/jit/mips-shared/MacroAssembler-mips-shared.cpp b/js/src/jit/mips-shared/MacroAssembler-mips-shared.cpp
+index d9b5451..5cb74ce 100644
+--- a/js/src/jit/mips-shared/MacroAssembler-mips-shared.cpp
++++ b/js/src/jit/mips-shared/MacroAssembler-mips-shared.cpp
+@@ -276,9 +276,9 @@ void MacroAssemblerMIPSShared::ma_addu(Register rd, Imm32 imm) {
+   ma_addu(rd, rd, imm);
+ }
+ 
+-void MacroAssemblerMIPSShared::ma_addTestCarry(Condition cond, Register rd,
+-                                               Register rs, Register rt,
+-                                               Label* overflow) {
++void MacroAssemblerMIPSShared::ma_add32TestCarry(Condition cond, Register rd,
++                                                 Register rs, Register rt,
++                                                 Label* overflow) {
+   MOZ_ASSERT(cond == Assembler::CarrySet || cond == Assembler::CarryClear);
+   MOZ_ASSERT_IF(rd == rs, rt != rd);
+   as_addu(rd, rs, rt);
+@@ -287,11 +287,11 @@ void MacroAssemblerMIPSShared::ma_addTestCarry(Condition cond, Register rd,
+        cond == Assembler::CarrySet ? Assembler::NonZero : Assembler::Zero);
+ }
+ 
+-void MacroAssemblerMIPSShared::ma_addTestCarry(Condition cond, Register rd,
+-                                               Register rs, Imm32 imm,
+-                                               Label* overflow) {
++void MacroAssemblerMIPSShared::ma_add32TestCarry(Condition cond, Register rd,
++                                                 Register rs, Imm32 imm,
++                                                 Label* overflow) {
+   ma_li(ScratchRegister, imm);
+-  ma_addTestCarry(cond, rd, rs, ScratchRegister, overflow);
++  ma_add32TestCarry(cond, rd, rs, ScratchRegister, overflow);
+ }
+ 
+ // Subtract.
+@@ -312,13 +312,14 @@ void MacroAssemblerMIPSShared::ma_subu(Register rd, Register rs) {
+   as_subu(rd, rd, rs);
+ }
+ 
+-void MacroAssemblerMIPSShared::ma_subTestOverflow(Register rd, Register rs,
+-                                                  Imm32 imm, Label* overflow) {
++void MacroAssemblerMIPSShared::ma_sub32TestOverflow(Register rd, Register rs,
++                                                    Imm32 imm,
++                                                    Label* overflow) {
+   if (imm.value != INT32_MIN) {
+-    asMasm().ma_addTestOverflow(rd, rs, Imm32(-imm.value), overflow);
++    asMasm().ma_add32TestOverflow(rd, rs, Imm32(-imm.value), overflow);
+   } else {
+     ma_li(ScratchRegister, Imm32(imm.value));
+-    asMasm().ma_subTestOverflow(rd, rs, ScratchRegister, overflow);
++    asMasm().ma_sub32TestOverflow(rd, rs, ScratchRegister, overflow);
+   }
+ }
+ 
+@@ -327,9 +328,9 @@ void MacroAssemblerMIPSShared::ma_mul(Register rd, Register rs, Imm32 imm) {
+   as_mul(rd, rs, ScratchRegister);
+ }
+ 
+-void MacroAssemblerMIPSShared::ma_mul_branch_overflow(Register rd, Register rs,
+-                                                      Register rt,
+-                                                      Label* overflow) {
++void MacroAssemblerMIPSShared::ma_mul32TestOverflow(Register rd, Register rs,
++                                                    Register rt,
++                                                    Label* overflow) {
+ #ifdef MIPSR6
+   if (rd == rs) {
+     ma_move(SecondScratchReg, rs);
+@@ -346,11 +347,11 @@ void MacroAssemblerMIPSShared::ma_mul_branch_overflow(Register rd, Register rs,
+   ma_b(ScratchRegister, SecondScratchReg, overflow, Assembler::NotEqual);
+ }
+ 
+-void MacroAssemblerMIPSShared::ma_mul_branch_overflow(Register rd, Register rs,
+-                                                      Imm32 imm,
+-                                                      Label* overflow) {
++void MacroAssemblerMIPSShared::ma_mul32TestOverflow(Register rd, Register rs,
++                                                    Imm32 imm,
++                                                    Label* overflow) {
+   ma_li(ScratchRegister, imm);
+-  ma_mul_branch_overflow(rd, rs, ScratchRegister, overflow);
++  ma_mul32TestOverflow(rd, rs, ScratchRegister, overflow);
+ }
+ 
+ void MacroAssemblerMIPSShared::ma_div_branch_overflow(Register rd, Register rs,
+diff --git a/js/src/jit/mips-shared/MacroAssembler-mips-shared.h b/js/src/jit/mips-shared/MacroAssembler-mips-shared.h
+index 3edc2ce..88238ac 100644
+--- a/js/src/jit/mips-shared/MacroAssembler-mips-shared.h
++++ b/js/src/jit/mips-shared/MacroAssembler-mips-shared.h
+@@ -133,23 +133,24 @@ class MacroAssemblerMIPSShared : public Assembler {
+   void ma_addu(Register rd, Register rs, Imm32 imm);
+   void ma_addu(Register rd, Register rs);
+   void ma_addu(Register rd, Imm32 imm);
+-  void ma_addTestCarry(Condition cond, Register rd, Register rs, Register rt,
+-                       Label* overflow);
+-  void ma_addTestCarry(Condition cond, Register rd, Register rs, Imm32 imm,
+-                       Label* overflow);
++  void ma_add32TestCarry(Condition cond, Register rd, Register rs, Register rt,
++                         Label* overflow);
++  void ma_add32TestCarry(Condition cond, Register rd, Register rs, Imm32 imm,
++                         Label* overflow);
+ 
+   // subtract
+   void ma_subu(Register rd, Register rs, Imm32 imm);
+   void ma_subu(Register rd, Register rs);
+   void ma_subu(Register rd, Imm32 imm);
+-  void ma_subTestOverflow(Register rd, Register rs, Imm32 imm, Label* overflow);
++  void ma_sub32TestOverflow(Register rd, Register rs, Imm32 imm,
++                            Label* overflow);
+ 
+   // multiplies.  For now, there are only few that we care about.
+   void ma_mul(Register rd, Register rs, Imm32 imm);
+-  void ma_mul_branch_overflow(Register rd, Register rs, Register rt,
+-                              Label* overflow);
+-  void ma_mul_branch_overflow(Register rd, Register rs, Imm32 imm,
+-                              Label* overflow);
++  void ma_mul32TestOverflow(Register rd, Register rs, Register rt,
++                            Label* overflow);
++  void ma_mul32TestOverflow(Register rd, Register rs, Imm32 imm,
++                            Label* overflow);
+ 
+   // divisions
+   void ma_div_branch_overflow(Register rd, Register rs, Register rt,
+@@ -202,6 +203,7 @@ class MacroAssemblerMIPSShared : public Assembler {
+ 
+   void ma_cmp_set(Register dst, Register lhs, Register rhs, Condition c);
+   void ma_cmp_set(Register dst, Register lhs, Imm32 imm, Condition c);
++  // void ma_cmp_set(Register dst, Address address, Imm32 imm, Condition c);
+   void ma_cmp_set_double(Register dst, FloatRegister lhs, FloatRegister rhs,
+                          DoubleCondition c);
+   void ma_cmp_set_float32(Register dst, FloatRegister lhs, FloatRegister rhs,
+diff --git a/js/src/jit/mips32/MacroAssembler-mips32-inl.h b/js/src/jit/mips32/MacroAssembler-mips32-inl.h
+index 743c1d7..78edb4a 100644
+--- a/js/src/jit/mips32/MacroAssembler-mips32-inl.h
++++ b/js/src/jit/mips32/MacroAssembler-mips32-inl.h
+@@ -68,6 +68,10 @@ void MacroAssembler::move32To64SignExtend(Register src, Register64 dest) {
+   ma_sra(dest.high, dest.low, Imm32(31));
+ }
+ 
++void MacroAssembler::move32SignExtendToPtr(Register src, Register dest) {
++  move32(src, dest);
++}
++
+ void MacroAssembler::move32ZeroExtendToPtr(Register src, Register dest) {
+   move32(src, dest);
+ }
+@@ -938,6 +942,17 @@ void MacroAssembler::branchTruncateFloat32MaybeModUint32(FloatRegister src,
+ //}}} check_macroassembler_style
+ // ===============================================================
+ 
++void MacroAssembler::cmpPtrMovePtr(Condition cond, Register lhs, Register rhs,
++                                   Register src, Register dest) {
++  cmp32Move32(cond, lhs, rhs, src, dest);
++}
++
++void MacroAssembler::cmpPtrMovePtr(Condition cond, Register lhs,
++                                   const Address& rhs, Register src,
++                                   Register dest) {
++  cmp32Move32(cond, lhs, rhs, src, dest);
++}
++
+ void MacroAssemblerMIPSCompat::incrementInt32Value(const Address& addr) {
+   asMasm().add32(Imm32(1), ToPayload(addr));
+ }
+diff --git a/js/src/jit/mips32/MacroAssembler-mips32.cpp b/js/src/jit/mips32/MacroAssembler-mips32.cpp
+index 49b59f7..2fd4936 100644
+--- a/js/src/jit/mips32/MacroAssembler-mips32.cpp
++++ b/js/src/jit/mips32/MacroAssembler-mips32.cpp
+@@ -116,6 +116,12 @@ void MacroAssemblerMIPSCompat::convertDoubleToFloat32(FloatRegister src,
+   as_cvtsd(dest, src);
+ }
+ 
++void MacroAssemblerMIPSCompat::convertDoubleToPtr(FloatRegister src,
++                                                  Register dest, Label* fail,
++                                                  bool negativeZeroCheck) {
++  convertDoubleToInt32(src, dest, fail, negativeZeroCheck);
++}
++
+ const int CauseBitPos = int(Assembler::CauseI);
+ const int CauseBitCount = 1 + int(Assembler::CauseV) - int(Assembler::CauseI);
+ const int CauseIOrVMask = ((1 << int(Assembler::CauseI)) |
+@@ -207,8 +213,8 @@ void MacroAssemblerMIPS::ma_liPatchable(Register dest, ImmWord imm) {
+ // Arithmetic-based ops.
+ 
+ // Add.
+-void MacroAssemblerMIPS::ma_addTestOverflow(Register rd, Register rs,
+-                                            Register rt, Label* overflow) {
++void MacroAssemblerMIPS::ma_add32TestOverflow(Register rd, Register rs,
++                                              Register rt, Label* overflow) {
+   MOZ_ASSERT_IF(rs == rd, rs != rt);
+   MOZ_ASSERT(rs != ScratchRegister);
+   MOZ_ASSERT(rt != ScratchRegister);
+@@ -234,8 +240,8 @@ void MacroAssemblerMIPS::ma_addTestOverflow(Register rd, Register rs,
+   ma_b(SecondScratchReg, Imm32(0), overflow, Assembler::LessThan);
+ }
+ 
+-void MacroAssemblerMIPS::ma_addTestOverflow(Register rd, Register rs, Imm32 imm,
+-                                            Label* overflow) {
++void MacroAssemblerMIPS::ma_add32TestOverflow(Register rd, Register rs,
++                                              Imm32 imm, Label* overflow) {
+   MOZ_ASSERT(rs != ScratchRegister);
+   MOZ_ASSERT(rs != SecondScratchReg);
+   MOZ_ASSERT(rd != ScratchRegister);
+@@ -268,8 +274,8 @@ void MacroAssemblerMIPS::ma_addTestOverflow(Register rd, Register rs, Imm32 imm,
+ }
+ 
+ // Subtract.
+-void MacroAssemblerMIPS::ma_subTestOverflow(Register rd, Register rs,
+-                                            Register rt, Label* overflow) {
++void MacroAssemblerMIPS::ma_sub32TestOverflow(Register rd, Register rs,
++                                              Register rt, Label* overflow) {
+   // The rs == rt case should probably be folded at MIR stage.
+   // Happens for Number_isInteger*. Not worth specializing here.
+   MOZ_ASSERT_IF(rs == rd, rs != rt);
+diff --git a/js/src/jit/mips32/MacroAssembler-mips32.h b/js/src/jit/mips32/MacroAssembler-mips32.h
+index 142fcdc..cde0c3b 100644
+--- a/js/src/jit/mips32/MacroAssembler-mips32.h
++++ b/js/src/jit/mips32/MacroAssembler-mips32.h
+@@ -72,7 +72,7 @@ class MacroAssemblerMIPS : public MacroAssemblerMIPSShared {
+   using MacroAssemblerMIPSShared::ma_sd;
+   using MacroAssemblerMIPSShared::ma_ss;
+   using MacroAssemblerMIPSShared::ma_store;
+-  using MacroAssemblerMIPSShared::ma_subTestOverflow;
++  using MacroAssemblerMIPSShared::ma_sub32TestOverflow;
+ 
+   void ma_li(Register dest, CodeLabel* label);
+ 
+@@ -90,13 +90,50 @@ class MacroAssemblerMIPS : public MacroAssemblerMIPSShared {
+ 
+   // arithmetic based ops
+   // add
+-  void ma_addTestOverflow(Register rd, Register rs, Register rt,
+-                          Label* overflow);
+-  void ma_addTestOverflow(Register rd, Register rs, Imm32 imm, Label* overflow);
++  void ma_add32TestOverflow(Register rd, Register rs, Register rt,
++                            Label* overflow);
++  void ma_add32TestOverflow(Register rd, Register rs, Imm32 imm,
++                            Label* overflow);
++
++  void ma_addPtrTestOverflow(Register rd, Register rs, Register rt,
++                             Label* overflow) {
++    ma_add32TestOverflow(rd, rs, rt, overflow);
++  }
++
++  void ma_addPtrTestOverflow(Register rd, Register rs, Imm32 imm,
++                             Label* overflow) {
++    ma_add32TestOverflow(rd, rs, imm, overflow);
++  }
++
++  void ma_addPtrTestCarry(Condition cond, Register rd, Register rs, Register rt,
++                          Label* overflow) {
++    ma_add32TestCarry(cond, rd, rs, rt, overflow);
++  }
++
++  void ma_addPtrTestCarry(Condition cond, Register rd, Register rs, Imm32 imm,
++                          Label* overflow) {
++    ma_add32TestCarry(cond, rd, rs, imm, overflow);
++  }
+ 
+   // subtract
+-  void ma_subTestOverflow(Register rd, Register rs, Register rt,
+-                          Label* overflow);
++  void ma_sub32TestOverflow(Register rd, Register rs, Register rt,
++                            Label* overflow);
++
++  void ma_subPtrTestOverflow(Register rd, Register rs, Register rt,
++                             Label* overflow) {
++    ma_sub32TestOverflow(rd, rs, rt, overflow);
++  }
++
++  void ma_subPtrTestOverflow(Register rd, Register rs, Imm32 imm,
++                             Label* overflow) {
++    ma_li(ScratchRegister, imm);
++    ma_sub32TestOverflow(rd, rs, ScratchRegister, overflow);
++  }
++
++  void ma_mulPtrTestOverflow(Register rd, Register rs, Register rt,
++                             Label* overflow) {
++    ma_mul32TestOverflow(rd, rs, rt, overflow);
++  }
+ 
+   // memory
+   // shortcut for when we know we're transferring 32 bits of data
+@@ -202,6 +239,8 @@ class MacroAssemblerMIPSCompat : public MacroAssemblerMIPS {
+   void convertDoubleToFloat32(FloatRegister src, FloatRegister dest);
+   void convertDoubleToInt32(FloatRegister src, Register dest, Label* fail,
+                             bool negativeZeroCheck = true);
++  void convertDoubleToPtr(FloatRegister src, Register dest, Label* fail,
++                          bool negativeZeroCheck = true);
+   void convertFloat32ToInt32(FloatRegister src, Register dest, Label* fail,
+                              bool negativeZeroCheck = true);
+ 
+diff --git a/js/src/jit/mips64/MacroAssembler-mips64-inl.h b/js/src/jit/mips64/MacroAssembler-mips64-inl.h
+index 5a48662..958d83e 100644
+--- a/js/src/jit/mips64/MacroAssembler-mips64-inl.h
++++ b/js/src/jit/mips64/MacroAssembler-mips64-inl.h
+@@ -56,6 +56,10 @@ void MacroAssembler::move32To64SignExtend(Register src, Register64 dest) {
+   ma_sll(dest.reg, src, Imm32(0));
+ }
+ 
++void MacroAssembler::move32SignExtendToPtr(Register src, Register dest) {
++  ma_sll(dest, src, Imm32(0));
++}
++
+ void MacroAssembler::move32ZeroExtendToPtr(Register src, Register dest) {
+   ma_dext(dest, src, Imm32(0), Imm32(32));
+ }
+@@ -751,6 +755,26 @@ inline void MacroAssembler::cmp32Set(Assembler::Condition cond, Address lhs,
+   cmp32Set(cond, ScratchRegister, rhs, dest);
+ }
+ 
++void MacroAssembler::cmpPtrMovePtr(Condition cond, Register lhs, Register rhs,
++                                   Register src, Register dest) {
++  Register scratch = ScratchRegister;
++  MOZ_ASSERT(src != scratch && dest != scratch);
++  cmpPtrSet(cond, lhs, rhs, scratch);
++#ifdef MIPSR6
++  as_selnez(src, src, scratch);
++  as_seleqz(dest, dest, scratch);
++  as_or(dest, dest, src);
++#else
++  as_movn(dest, src, scratch);
++#endif
++}
++
++void MacroAssembler::cmpPtrMovePtr(Condition cond, Register lhs,
++                                   const Address& rhs, Register src,
++                                   Register dest) {
++  MOZ_CRASH("NYI");
++}
++
+ void MacroAssemblerMIPS64Compat::incrementInt32Value(const Address& addr) {
+   asMasm().add32(Imm32(1), addr);
+ }
+diff --git a/js/src/jit/mips64/MacroAssembler-mips64.cpp b/js/src/jit/mips64/MacroAssembler-mips64.cpp
+index 3bfa5d3..72ddf92 100644
+--- a/js/src/jit/mips64/MacroAssembler-mips64.cpp
++++ b/js/src/jit/mips64/MacroAssembler-mips64.cpp
+@@ -124,6 +124,22 @@ void MacroAssemblerMIPS64Compat::convertDoubleToInt32(FloatRegister src,
+   ma_b(ScratchRegister, Imm32(0), fail, Assembler::NotEqual);
+ }
+ 
++void MacroAssemblerMIPS64Compat::convertDoubleToPtr(FloatRegister src,
++                                                    Register dest, Label* fail,
++                                                    bool negativeZeroCheck) {
++  if (negativeZeroCheck) {
++    moveFromDouble(src, dest);
++    ma_drol(dest, dest, Imm32(1));
++    ma_b(dest, Imm32(1), fail, Assembler::Equal);
++  }
++  as_truncld(ScratchDoubleReg, src);
++  as_cfc1(ScratchRegister, Assembler::FCSR);
++  moveFromDouble(ScratchDoubleReg, dest);
++  ma_ext(ScratchRegister, ScratchRegister, CauseBitPos, CauseBitCount);
++  as_andi(ScratchRegister, ScratchRegister, CauseIOrVMask);
++  ma_b(ScratchRegister, Imm32(0), fail, Assembler::NotEqual);
++}
++
+ // Checks whether a float32 is representable as a 32-bit integer. If so, the
+ // integer is written to the output register. Otherwise, a bailout is taken to
+ // the given snapshot. This function overwrites the scratch float register.
+@@ -387,15 +403,15 @@ void MacroAssemblerMIPS64::ma_daddu(Register rd, Imm32 imm) {
+   ma_daddu(rd, rd, imm);
+ }
+ 
+-void MacroAssemblerMIPS64::ma_addTestOverflow(Register rd, Register rs,
+-                                              Register rt, Label* overflow) {
++void MacroAssemblerMIPS64::ma_add32TestOverflow(Register rd, Register rs,
++                                                Register rt, Label* overflow) {
+   as_daddu(SecondScratchReg, rs, rt);
+   as_addu(rd, rs, rt);
+   ma_b(rd, SecondScratchReg, overflow, Assembler::NotEqual);
+ }
+ 
+-void MacroAssemblerMIPS64::ma_addTestOverflow(Register rd, Register rs,
+-                                              Imm32 imm, Label* overflow) {
++void MacroAssemblerMIPS64::ma_add32TestOverflow(Register rd, Register rs,
++                                                Imm32 imm, Label* overflow) {
+   // Check for signed range because of as_daddiu
+   if (Imm16::IsInSignedRange(imm.value)) {
+     as_daddiu(SecondScratchReg, rs, imm.value);
+@@ -403,7 +419,67 @@ void MacroAssemblerMIPS64::ma_addTestOverflow(Register rd, Register rs,
+     ma_b(rd, SecondScratchReg, overflow, Assembler::NotEqual);
+   } else {
+     ma_li(ScratchRegister, imm);
+-    ma_addTestOverflow(rd, rs, ScratchRegister, overflow);
++    ma_add32TestOverflow(rd, rs, ScratchRegister, overflow);
++  }
++}
++
++void MacroAssemblerMIPS64::ma_addPtrTestOverflow(Register rd, Register rs,
++                                                 Register rt, Label* overflow) {
++  SecondScratchRegisterScope scratch2(asMasm());
++  MOZ_ASSERT_IF(rs == rd, rs != rt);
++  MOZ_ASSERT(rd != rt);
++  MOZ_ASSERT(rd != scratch2);
++
++  if (rs == rt) {
++    as_daddu(rd, rs, rs);
++    as_xor(scratch2, rs, rd);
++  } else {
++    ScratchRegisterScope scratch(asMasm());
++    MOZ_ASSERT(rs != scratch);
++    MOZ_ASSERT(rt != scratch);
++    MOZ_ASSERT(rd != scratch);
++
++    // If the sign of rs and rt are different, no overflow
++    as_xor(scratch, rs, rt);
++    as_nor(scratch, scratch, zero);
++
++    as_daddu(rd, rs, rt);
++    as_xor(scratch2, rd, rt);
++    as_and(scratch2, scratch2, scratch);
++  }
++
++  ma_b(scratch2, zero, overflow, Assembler::LessThan);
++}
++
++void MacroAssemblerMIPS64::ma_addPtrTestOverflow(Register rd, Register rs,
++                                                 Imm32 imm, Label* overflow) {
++  ma_li(ScratchRegister, imm);
++  ma_addPtrTestOverflow(rd, rs, ScratchRegister, overflow);
++}
++
++void MacroAssemblerMIPS64::ma_addPtrTestCarry(Condition cond, Register rd,
++                                              Register rs, Register rt,
++                                              Label* overflow) {
++  SecondScratchRegisterScope scratch2(asMasm());
++  as_daddu(rd, rs, rt);
++  as_sltu(scratch2, rd, rt);
++  ma_b(scratch2, scratch2, overflow,
++       cond == Assembler::CarrySet ? Assembler::NonZero : Assembler::Zero);
++}
++
++void MacroAssemblerMIPS64::ma_addPtrTestCarry(Condition cond, Register rd,
++                                              Register rs, Imm32 imm,
++                                              Label* overflow) {
++  // Check for signed range because of as_daddiu
++  if (Imm16::IsInSignedRange(imm.value)) {
++    SecondScratchRegisterScope scratch2(asMasm());
++    as_daddiu(rd, rs, imm.value);
++    as_sltiu(scratch2, rd, imm.value);
++    ma_b(scratch2, scratch2, overflow,
++         cond == Assembler::CarrySet ? Assembler::NonZero : Assembler::Zero);
++  } else {
++    ma_li(ScratchRegister, imm);
++    ma_addPtrTestCarry(cond, rd, rs, ScratchRegister, overflow);
+   }
+ }
+ 
+@@ -425,13 +501,50 @@ void MacroAssemblerMIPS64::ma_dsubu(Register rd, Imm32 imm) {
+   ma_dsubu(rd, rd, imm);
+ }
+ 
+-void MacroAssemblerMIPS64::ma_subTestOverflow(Register rd, Register rs,
+-                                              Register rt, Label* overflow) {
++void MacroAssemblerMIPS64::ma_sub32TestOverflow(Register rd, Register rs,
++                                                Register rt, Label* overflow) {
+   as_dsubu(SecondScratchReg, rs, rt);
+   as_subu(rd, rs, rt);
+   ma_b(rd, SecondScratchReg, overflow, Assembler::NotEqual);
+ }
+ 
++void MacroAssemblerMIPS64::ma_subPtrTestOverflow(Register rd, Register rs,
++                                                 Register rt, Label* overflow) {
++  SecondScratchRegisterScope scratch2(asMasm());
++  MOZ_ASSERT_IF(rs == rd, rs != rt);
++  MOZ_ASSERT(rd != rt);
++  MOZ_ASSERT(rs != scratch2);
++  MOZ_ASSERT(rt != scratch2);
++  MOZ_ASSERT(rd != scratch2);
++
++  Register rs_copy = rs;
++
++  if (rs == rd) {
++    ma_move(scratch2, rs);
++    rs_copy = scratch2;
++  }
++
++  {
++    ScratchRegisterScope scratch(asMasm());
++    MOZ_ASSERT(rd != scratch);
++
++    as_dsubu(rd, rs, rt);
++    // If the sign of rs and rt are the same, no overflow
++    as_xor(scratch, rs_copy, rt);
++    // Check if the sign of rd and rs are the same
++    as_xor(scratch2, rd, rs_copy);
++    as_and(scratch2, scratch2, scratch);
++  }
++
++  ma_b(scratch2, zero, overflow, Assembler::LessThan);
++}
++
++void MacroAssemblerMIPS64::ma_subPtrTestOverflow(Register rd, Register rs,
++                                                 Imm32 imm, Label* overflow) {
++  ma_li(ScratchRegister, imm);
++  ma_subPtrTestOverflow(rd, rs, ScratchRegister, overflow);
++}
++
+ void MacroAssemblerMIPS64::ma_dmult(Register rs, Imm32 imm) {
+   ma_li(ScratchRegister, imm);
+ #ifdef MIPSR6
+@@ -443,8 +556,25 @@ void MacroAssemblerMIPS64::ma_dmult(Register rs, Imm32 imm) {
+ #endif
+ }
+ 
+-// Memory.
++void MacroAssemblerMIPS64::ma_mulPtrTestOverflow(Register rd, Register rs,
++                                                 Register rt, Label* overflow) {
++#ifdef MIPSR6
++  if (rd == rs) {
++    ma_move(SecondScratchReg, rs);
++    rs = SecondScratchReg;
++  }
++  as_dmul(rd, rs, rt);
++  as_dmuh(SecondScratchReg, rs, rt);
++#else
++  as_dmult(rs, rt);
++  as_mflo(rd);
++  as_mfhi(SecondScratchReg);
++#endif
++  as_dsra32(ScratchRegister, rd, 63);
++  ma_b(ScratchRegister, SecondScratchReg, overflow, Assembler::NotEqual);
++}
+ 
++// Memory.
+ void MacroAssemblerMIPS64::ma_load(Register dest, Address address,
+                                    LoadStoreSize size,
+                                    LoadStoreExtension extension) {
+@@ -790,6 +920,12 @@ void MacroAssemblerMIPS64::ma_cmp_set(Register rd, Register rs, ImmPtr imm,
+   ma_cmp_set(rd, rs, ImmWord(uintptr_t(imm.value)), c);
+ }
+ 
++void MacroAssemblerMIPS64::ma_cmp_set(Register rd, Address address, Imm32 imm,
++                                      Condition c) {
++  ma_load(ScratchRegister, address, SizeWord, SignExtend);
++  ma_cmp_set(rd, ScratchRegister, imm, c);
++}
++
+ // fp instructions
+ void MacroAssemblerMIPS64::ma_lid(FloatRegister dest, double value) {
+   ImmWord imm(mozilla::BitwiseCast<uint64_t>(value));
+diff --git a/js/src/jit/mips64/MacroAssembler-mips64.h b/js/src/jit/mips64/MacroAssembler-mips64.h
+index b6581a7..b18e262 100644
+--- a/js/src/jit/mips64/MacroAssembler-mips64.h
++++ b/js/src/jit/mips64/MacroAssembler-mips64.h
+@@ -68,7 +68,7 @@ class MacroAssemblerMIPS64 : public MacroAssemblerMIPSShared {
+   using MacroAssemblerMIPSShared::ma_sd;
+   using MacroAssemblerMIPSShared::ma_ss;
+   using MacroAssemblerMIPSShared::ma_store;
+-  using MacroAssemblerMIPSShared::ma_subTestOverflow;
++  using MacroAssemblerMIPSShared::ma_sub32TestOverflow;
+ 
+   void ma_li(Register dest, CodeLabel* label);
+   void ma_li(Register dest, ImmWord imm);
+@@ -113,19 +113,33 @@ class MacroAssemblerMIPS64 : public MacroAssemblerMIPSShared {
+   void ma_daddu(Register rd, Register rs, Imm32 imm);
+   void ma_daddu(Register rd, Register rs);
+   void ma_daddu(Register rd, Imm32 imm);
+-  void ma_addTestOverflow(Register rd, Register rs, Register rt,
++  void ma_add32TestOverflow(Register rd, Register rs, Register rt,
++                            Label* overflow);
++  void ma_add32TestOverflow(Register rd, Register rs, Imm32 imm,
++                            Label* overflow);
++  void ma_addPtrTestOverflow(Register rd, Register rs, Register rt,
++                             Label* overflow);
++  void ma_addPtrTestOverflow(Register rd, Register rs, Imm32 imm,
++                             Label* overflow);
++  void ma_addPtrTestCarry(Condition cond, Register rd, Register rs, Register rt,
++                          Label* overflow);
++  void ma_addPtrTestCarry(Condition cond, Register rd, Register rs, Imm32 imm,
+                           Label* overflow);
+-  void ma_addTestOverflow(Register rd, Register rs, Imm32 imm, Label* overflow);
+-
+   // subtract
+   void ma_dsubu(Register rd, Register rs, Imm32 imm);
+   void ma_dsubu(Register rd, Register rs);
+   void ma_dsubu(Register rd, Imm32 imm);
+-  void ma_subTestOverflow(Register rd, Register rs, Register rt,
+-                          Label* overflow);
++  void ma_sub32TestOverflow(Register rd, Register rs, Register rt,
++                            Label* overflow);
++  void ma_subPtrTestOverflow(Register rd, Register rs, Register rt,
++                             Label* overflow);
++  void ma_subPtrTestOverflow(Register rd, Register rs, Imm32 imm,
++                             Label* overflow);
+ 
+   // multiplies.  For now, there are only few that we care about.
+   void ma_dmult(Register rs, Imm32 imm);
++  void ma_mulPtrTestOverflow(Register rd, Register rs, Register rt,
++                             Label* overflow);
+ 
+   // stack
+   void ma_pop(Register r);
+@@ -166,6 +180,7 @@ class MacroAssemblerMIPS64 : public MacroAssemblerMIPSShared {
+ 
+   void ma_cmp_set(Register dst, Register lhs, ImmWord imm, Condition c);
+   void ma_cmp_set(Register dst, Register lhs, ImmPtr imm, Condition c);
++  void ma_cmp_set(Register dst, Address address, Imm32 imm, Condition c);
+ 
+   // These functions abstract the access to high part of the double precision
+   // float register. They are intended to work on both 32 bit and 64 bit
+@@ -196,6 +211,8 @@ class MacroAssemblerMIPS64Compat : public MacroAssemblerMIPS64 {
+   void convertDoubleToFloat32(FloatRegister src, FloatRegister dest);
+   void convertDoubleToInt32(FloatRegister src, Register dest, Label* fail,
+                             bool negativeZeroCheck = true);
++  void convertDoubleToPtr(FloatRegister src, Register dest, Label* fail,
++                          bool negativeZeroCheck = true);
+   void convertFloat32ToInt32(FloatRegister src, Register dest, Label* fail,
+                              bool negativeZeroCheck = true);
+ 

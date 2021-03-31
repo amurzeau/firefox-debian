@@ -1,5 +1,8 @@
 fixes/Allow-.js-preference-files-to-set-locked-prefs-with-.patch
 fixes/Bug-1526653-Include-struct-definitions-for-user_vfp-.patch
+fixes/Bug-1685662-MIPS-Implement-some-changes.-r-jandem.patch
+fixes/Bug-1685662-MIPS64-Fix-register-conflict-in-ma_addPt.patch
+fixes/Bug-1700520-Use-PREFER_INLINE-on-large-SWGL-function.patch
 porting/Add-xptcall-support-for-SH4-processors.patch
 porting/NSS-Fix-FTBFS-on-Hurd-because-of-MAXPATHLEN.patch
 porting/Work-around-Debian-bug-844357.patch
