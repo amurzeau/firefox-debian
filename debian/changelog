@@ -1,3 +1,15 @@
+firefox (87.0-2) unstable; urgency=medium
+
+  * js/src/jit/mips-shared/CodeGenerator-mips-shared.cpp,
+    js/src/jit/mips-shared/MacroAssembler-mips-shared*,
+    js/src/jit/mips*/MacroAssembler-mips*: Add missing JIT functions.
+  * js/src/jit/mips64/MacroAssembler-mips64.cpp: Fix register conflict
+    in ma_addPtrTestOverflow. bz#1685662.
+  * gfx/wr/swgl/src/blend.h, gfx/wr/swgl/src/gl.cc: Don't use always_inline
+    on large SWGL functions. bz#1700520.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 31 Mar 2021 10:12:40 +0900
+
 firefox (87.0-1) unstable; urgency=medium
 
   * New upstream release.
