@@ -28,6 +28,18 @@ search-input-box =
             [windows] 在選項中尋找
            *[other] 在偏好設定中尋找
         }
+settings-page-title = 設定
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = 搜尋選項
 managed-notice = 您的瀏覽器受到組織管理。
 category-list =
     .aria-label = 分類
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = 同步
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = { -brand-short-name } 實驗
 category-experimental =
     .tooltiptext = { -brand-short-name } 實驗
 pane-experimental-subtitle = 調整設定前請務必小心！
 pane-experimental-search-results-header = { -brand-short-name } 實驗功能: 調整設定前請務必小心！
 pane-experimental-description = 調整進階設定，可能會影響 { -brand-short-name } 的效能或安全性。
+pane-experimental-description2 = 調整進階設定，可能會影響 { -brand-short-name } 的效能或安全性。
 pane-experimental-reset =
     .label = 回復為預設值
     .accesskey = R
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] 抱歉！沒有「<span data-l10n-name="query"></span>」的選項搜尋結果。
        *[other] 抱歉！沒有「<span data-l10n-name="query"></span>」的偏好設定搜尋結果。
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = 抱歉！沒有「<span data-l10n-name="query"></span>」的選項搜尋結果。
 search-results-help-link = 需要幫忙嗎？請到 <a data-l10n-name="url">{ -brand-short-name } 技術支援</a>
 
 ## General Section
@@ -357,6 +375,9 @@ update-application-check-choose =
 update-application-manual =
     .label = 不要檢查更新（不建議，可能會有安全性風險）
     .accesskey = N
+update-application-background-enabled =
+    .label = 當 { -brand-short-name } 未執行時
+    .accesskey = w
 update-application-warning-cross-user-setting = 此設定將套用到本電腦上的所有 Windows 帳號及此份 { -brand-short-name } 的所有 { -brand-short-name } 設定檔。
 update-application-use-service =
     .label = 在背景服務當中安裝更新
@@ -368,6 +389,15 @@ update-setting-write-failure-title = 儲存更新偏好設定時發生錯誤
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
     { -brand-short-name } 遇到錯誤，並未儲存此變更。請注意: 調整此更新偏好設定，需要能夠寫入下列檔案的權限。您或您的系統管理員可以透過授予使用者此檔案的完整控制權，來解決本問題。
+    
+    無法寫入下列檔案: { $path }
+update-setting-write-failure-title2 = 儲存更新設定時發生錯誤
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name } 遇到錯誤，並未儲存此變更。請注意: 調整此更新選項，需要能夠寫入下列檔案的權限。您或您的系統管理員可以透過授予使用者此檔案的完整控制權，來解決本問題。
     
     無法寫入下列檔案: { $path }
 update-in-progress-title = 更新中
@@ -563,6 +593,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = 於隱私瀏覽視窗中顯示搜尋建議
 suggestions-addressbar-settings-generic = 修改其他網址列建議偏好設定
+suggestions-addressbar-settings-generic2 = 修改其他網址列建議設定
 search-suggestions-cant-show = 由於您已經設定 { -brand-short-name } 不要記住瀏覽紀錄，網址列中將不會顯示建議搜尋結果。
 search-one-click-header = 快捷搜尋引擎清單
 search-one-click-header2 = 搜尋快速鍵
@@ -597,6 +628,8 @@ containers-back-button =
             [windows] 回到選項
            *[other] 回到偏好設定
         }
+containers-back-button2 =
+    .aria-label = 回到選項頁面
 containers-header = 容器分頁
 containers-add-button =
     .label = 新增容器
@@ -606,6 +639,8 @@ containers-new-tab-check =
     .accesskey = S
 containers-preferences-button =
     .label = 偏好設定
+containers-settings-button =
+    .label = 選項
 containers-remove-button =
     .label = 移除
 
@@ -616,6 +651,10 @@ sync-signedout-caption = 把 Web 隨身帶著走
 sync-signedout-description = 在您所有裝置間同步書籤、歷史紀錄、分頁、密碼、附加元件與偏好設定。
 sync-signedout-account-signin2 =
     .label = 登入 { -sync-brand-short-name }…
+    .accesskey = i
+sync-signedout-description2 = 在您所有裝置間同步書籤、歷史紀錄、分頁、密碼、附加元件與各種選項。
+sync-signedout-account-signin3 =
+    .label = 登入進行同步…
     .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -656,6 +695,10 @@ prefs-sync-setup =
     .label = 設定 { -sync-brand-short-name }…
     .accesskey = S
 prefs-sync-offer-setup-label = 在您所有裝置間同步書籤、歷史紀錄、分頁、密碼、附加元件與偏好設定。
+prefs-sync-turn-on-syncing =
+    .label = 開啟同步…
+    .accesskey = s
+prefs-sync-offer-setup-label2 = 在您所有裝置間同步書籤、歷史紀錄、分頁、密碼、附加元件與各種選項。
 prefs-sync-now =
     .labelnotsyncing = 立刻同步
     .accesskeynotsyncing = N
@@ -676,6 +719,7 @@ sync-currently-syncing-prefs =
         [windows] 選項
        *[other] 偏好設定
     }
+sync-currently-syncing-settings = 選項
 sync-change-options =
     .label = 修改…
     .accesskey = C
@@ -722,6 +766,10 @@ sync-engine-prefs =
            *[other] 偏好設定
         }
     .tooltiptext = 您調整過的一般、隱私權、安全性設定
+    .accesskey = s
+sync-engine-settings =
+    .label = 選項
+    .tooltiptext = 您更改過的一般、隱私權與安全性選項
     .accesskey = s
 
 ## The device name controls.
@@ -1137,6 +1185,11 @@ space-alert-under-5gb-ok-button =
     .label = 好，知道了
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } 的磁碟空間不足，網站內容可能無法正確顯示。請點擊「瞭解更多」清理磁碟空間，讓您有更好的瀏覽體驗。
+space-alert-over-5gb-settings-button =
+    .label = 開啟選項
+    .accesskey = O
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name } 的磁碟空間不足。</strong>網站內容可能無法正確顯示。您可以到「選項 > 隱私權與安全性 > Cookie 與網站資料」清除目前儲存的網站資料。
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name } 的磁碟空間不足。</strong>網站內容可能無法正確顯示。請點擊「瞭解更多」清理磁碟空間，讓您有更好的瀏覽體驗。
 
 ## Privacy Section - HTTPS-Only
 

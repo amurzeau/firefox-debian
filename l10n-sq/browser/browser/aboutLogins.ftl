@@ -16,8 +16,9 @@ login-app-promo-apple =
 login-filter =
     .placeholder = Kërkoni te Kredenciale Hyrjesh
 create-login-button = Krijoni Kredenciale të Reja Hyrjeje
-fxaccounts-sign-in-text = Merrni fjalëkalimet tuaj në pajisjet tuaja të tjera
+fxaccounts-sign-in-text = Merrini fjalëkalimet tuaj në pajisjet tuaja të tjera
 fxaccounts-sign-in-button = Hyni te { -sync-brand-short-name }-u
+fxaccounts-sign-in-sync-button = Për njëkohësime, bëni hyrjen
 fxaccounts-avatar-button =
     .title = Administroni llogari
 
@@ -70,11 +71,15 @@ about-logins-list-item-vulnerable-password-icon =
 
 login-intro-heading = Po shihni për kredenciale hyrjesh tuajat të ruajtura? Ujdisni { -sync-brand-short-name }.
 about-logins-login-intro-heading-logged-out = Po shihni për kredenciale hyrjesh tuajat të ruajtura? Ujdisni { -sync-brand-short-name } ose Importojini.
+about-logins-login-intro-heading-logged-out2 = Po kërkoni për kredencialet tuaj të ruajtur të hyrjeve? Aktivizoni njëkohësimin, që të importohen.
 about-logins-login-intro-heading-logged-in = S’u gjetën kredenciale të njëkohësuar hyrjesh.
 login-intro-description = Nëse ruajtët kredenciale tuajat hyrjesh te { -brand-product-name } në një pajisje tjetër, ja se si t’i merrni këtu:
 login-intro-instruction-fxa = Krijoni ose hyni te  { -fxaccount-brand-name } e juaj te pajisja ku janë ruajtur kredencialet tuaja të hyrjeve
 login-intro-instruction-fxa-settings = Sigurohuni se keni përzgjedhur kutizën Kredenciale Hyrjeshte Rregullime { -sync-brand-short-name }
 about-logins-intro-instruction-help = Për më tepër ndihmë, vizitoni <a data-l10n-name="help-link">Asistencë { -lockwise-brand-short-name }</a>
+login-intro-instructions-fxa = Krijoni ose hyni te  { -fxaccount-brand-name } juaja te pajisja ku janë ruajtur kredencialet tuaja të hyrjeve
+login-intro-instructions-fxa-settings = Kaloni te Rregullime > Njëkohësim > Aktivizoni njëkohësim… Përzgjidhni kutizën Kredenciale Hyrjesh dhe fjalëkalime.
+login-intro-instructions-fxa-help = Për më tepër ndihmë, vizitoni <a data-l10n-name="help-link">Asistencë { -lockwise-brand-short-name }</a>.
 about-logins-intro-import = Nëse kredencialet tuaj për hyrje janë ruajtur në një shfletues tjetër, mund t’i <a data-l10n-name="import-link">importoni ata te { -lockwise-brand-short-name }</a>
 about-logins-intro-import2 = Nëse kredencialet tuaja për hyrje janë ruajtur jashtë { -brand-product-name }-it, mund t’i <a data-l10n-name="import-browser-link">importoni që nga një shfletues tjetër</a> ose <a data-l10n-name="import-file-link">prej një kartele</a>
 
@@ -204,7 +209,7 @@ about-logins-confirm-export-dialog-title = Eksportoni kredenciale hyrjesh dhe fj
 about-logins-confirm-export-dialog-message = Fjalëkalimet tuaj do të ruhen si tekst i lexueshëm (p.sh., BadP@ssw0rd), ndaj, cilido që mund të hapë kartelën e eksportuar, mund t’i shohë.
 about-logins-confirm-export-dialog-confirm-button = Eksportoni…
 about-logins-alert-import-title = Importim i Plotësuar
-about-logins-alert-import-message = Shihni përmbledhje të hollësishme të importimit
+about-logins-alert-import-message = Shihni Përmbledhje të hollësishme të Importimit
 confirm-discard-changes-dialog-title = Të hidhen tej këto ndryshime?
 confirm-discard-changes-dialog-message = Do të humbin krejt ndryshimet e paruajtura.
 confirm-discard-changes-dialog-confirm-button = Hidhe tej
@@ -308,7 +313,46 @@ about-logins-import-dialog-error-unable-to-read-description = Sigurohuni se për
 about-logins-import-dialog-error-no-logins-imported = S’janë importuar kredenciale
 about-logins-import-dialog-error-learn-more = Mësoni më tepër
 about-logins-import-dialog-error-try-again = Riprovoni…
+about-logins-import-dialog-error-try-import-again = Riprovoni Importim…
 about-logins-import-dialog-error-cancel = Anuloje
+about-logins-import-report-title = Përmbledhje Importimi
+about-logins-import-report-description = Kredenciale hyrjesh dhe fjalëkalime të importuar te { -brand-short-name }.
+#
+# Variables:
+#  $number (number) - The number of the row
+about-logins-import-report-row-index = Rreshti { $number }
+about-logins-import-report-row-description-no-change = Përsëdytje: Përputhje ekzakte kredenciale ekzistuese hyrjeje
+about-logins-import-report-row-description-modified = U përditësuan kredenciale ekzistuese hyrjeje
+about-logins-import-report-row-description-added = U shtuan kredenciale të reja hyrjeje
+about-logins-import-report-row-description-error = Gabim: Fushë që mungon
+
+##
+## Variables:
+##  $field (String) - The name of the field from the CSV file for example url, username or password
+
+about-logins-import-report-row-description-error-multiple-values = Gabim: Vlera të shumta për { $field }
+about-logins-import-report-row-description-error-missing-field = Gabim: Mungon { $field }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-report-added =
+    { $count ->
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">U shtuan kredenciale të reja hyrjesh</div>
+    }
+about-logins-import-report-modified =
+    { $count ->
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">U përditësuan kredenciale ekzistues hyrjesh</div>
+    }
+about-logins-import-report-no-change =
+    { $count ->
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Kredenciale të përsëdytur hyrjesh</div> <div data-l10n-name="not-imported">(të paimportuar)</div>
+    }
+about-logins-import-report-error =
+    { $count ->
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Gabime</div> <div data-l10n-name="not-imported">(të paimportuar)</div>
+    }
 
 ## Logins import report page
 

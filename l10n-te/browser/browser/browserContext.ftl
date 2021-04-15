@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = ఒక పేజీ వెనుకకు వెళ్ళండి ({ $shortcut })
     .aria-label = వెనుకకు
     .accesskey = B
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = వెనుకకు
+    .accesskey = B
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = ఒక పేజీ ముందుకు వెళ్ళండి ({ $shortcut })
     .aria-label = ముందుకు
     .accesskey = F
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = ముందుకు
+    .accesskey = F
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = మళ్ళీ లోడుచేయి
     .accesskey = R
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = మళ్ళీ లోడుచేయి
+    .accesskey = R
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = ఆపివేయి
     .accesskey = S
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = ఆపివేయి
+    .accesskey = S
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -86,6 +108,12 @@ main-context-menu-bookmark-add =
     .aria-label = ఈ పేజీని ఇష్టాంశముచేయి
     .accesskey = m
     .tooltiptext = ఈ పేజీను ఇష్టాంశముచేయుము
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = పేజీని ఇష్టాంశంగా గుర్తించు
+    .accesskey = m
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -131,12 +159,20 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = ఈమెయిలు చిరునామాను కాపీచేయి
     .accesskey = E
 main-context-menu-copy-link =
     .label = లింకు స్థానాన్ని కాపీచేయి
     .accesskey = a
+main-context-menu-copy-link-simple =
+    .label = లంకె కాపీచేయి
+    .accesskey = L
 
 ## Media (video/audio) controls
 ##
@@ -179,6 +215,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = హాస్యాస్పదం (2×)
     .accesskey = L
+main-context-menu-media-play-speed-2 =
+    .label = వేగం
+    .accesskey = d
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = లూప్
     .accesskey = L
@@ -226,6 +275,15 @@ main-context-menu-video-copy-location =
     .accesskey = o
 main-context-menu-audio-copy-location =
     .label = ధ్వని స్థానాన్ని కాపీచేయి
+    .accesskey = o
+main-context-menu-image-copy-link =
+    .label = బొమ్మ లంకెను కాపీచేయి
+    .accesskey = o
+main-context-menu-video-copy-link =
+    .label = వీడియో లంకెను కాపీచేయి
+    .accesskey = o
+main-context-menu-audio-copy-link =
+    .label = ఆడియో లంకెను కాపీచేయి
     .accesskey = o
 main-context-menu-image-save-as =
     .label = బొమ్మని ఇలా భద్రపరచు…
@@ -275,6 +333,20 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = సృష్టించిన సంకేతపదాన్ని వాడు…
     .accesskey = G
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = భద్రపరచిన ప్రవేశాన్ని వాడు
+    .accesskey = o
+main-context-menu-use-saved-password =
+    .label = భద్రపరచిన సంకేతపదాన్ని వాడు
+    .accesskey = o
+
+##
+
 main-context-menu-keyword =
     .label = ఈ శోధనకు కీలక పదాన్ని చేర్చండి…
     .accesskey = K
@@ -317,6 +389,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = ఎంపిక మూలాన్ని చూడండి
     .accesskey = e
+main-context-menu-take-screenshot =
+    .label = తెరపట్టు తీయి
+    .accesskey = T
 main-context-menu-view-page-source =
     .label = పేజీ మూలాన్ని చూడండి
     .accesskey = V

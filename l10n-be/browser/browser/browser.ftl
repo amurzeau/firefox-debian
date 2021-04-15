@@ -266,11 +266,28 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Дадаць закладку
+bookmarks-edit-bookmark = Рэдагаваць закладку
+bookmark-panel-cancel =
+    .label = Скасаваць
+    .accesskey = С
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Выдаліць { $count } закладку
+            [few] Выдаліць { $count } закладкі
+           *[many] Выдаліць { $count } закладак
+        }
+    .accesskey = В
 bookmark-panel-show-editor-checkbox =
     .label = Паказваць рэдактар пры захаванні
     .accesskey = П
 bookmark-panel-done-button =
     .label = Гатова
+bookmark-panel-save-button =
+    .label = Захаваць
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -290,6 +307,8 @@ identity-passive-loaded = Некаторыя часткі гэтай старо�
 identity-active-loaded = Вы адключылі ахову на гэтай старонцы.
 identity-weak-encryption = Гэта старонка ўжывае слабы тып шыфравання.
 identity-insecure-login-forms = Лагіны, уведзеныя на гэтай старонцы, могуць быць скампраметаваны.
+identity-permissions =
+    .value = Дазволы
 identity-https-only-connection-upgraded = (абноўлена да HTTPS)
 identity-https-only-label = Рэжым «Толькі HTTPS»
 identity-https-only-dropdown-on =
@@ -301,8 +320,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Уключыце рэжым "толькі HTTPS", калі хочаце, каб { -brand-short-name } па магчымасці абнаўляў злучэння.
 identity-https-only-info-turn-off2 = Калі старонка выглядае няспраўнай, магчыма, вы захочаце адключыць рэжым "Толькі HTTPS" для гэтага сайта, каб перазагрузіць праз небяспечны HTTP.
 identity-https-only-info-no-upgrade = Не ўдалося абнавіць злучэнне з HTTP.
-identity-permissions =
-    .value = Дазволы
 identity-permissions-storage-access-header = Міжсайтавыя кукі
 identity-permissions-storage-access-hint = Гэтыя ўдзельнікі могуць выкарыстоўваць міжсайтавыя кукі і дадзеныя сайта, пакуль вы знаходзіцеся на гэтым сайце.
 identity-permissions-reload-hint = Магчыма, вам спатрэбіцца перазагрузіць старонку, каб змены пачалі дзейнічаць.
@@ -350,8 +367,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Граецца
-browser-tab-audio-muted = Без гуку
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = ПРАЙГРАЕЦЦА
 # This label should be written in all capital letters if your locale supports them.
@@ -360,6 +375,32 @@ browser-tab-audio-muted2 = БЕЗ ГУКУ
 browser-tab-audio-blocked = АЎТАПРАЙГРАВАННЕ ЗАБЛАКАВАНА
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = ВЫЯВА-Ў-ВЫЯВЕ
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] ПРЫБРАЦЬ ГУК КАРТКІ
+        [one] ПРЫБРАЦЬ ГУК КАРТКІ
+        [few] ПРЫБРАЦЬ ГУК { $count } КАРТАК
+       *[many] ПРЫБРАЦЬ ГУК { $count } КАРТАК
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] УЗНАВІЦЬ ГУК КАРТКІ
+        [one] УЗНАВІЦЬ ГУК КАРТКІ
+        [few] УЗНАВІЦЬ ГУК { $count } КАРТАК
+       *[many] УЗНАВІЦЬ ГУК { $count } КАРТАК
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] ПРАЙГРАЦЬ КАРТКУ
+        [one] ПРАЙГРАЦЬ КАРТКУ
+        [few] ПРАЙГРАЦЬ { $count } КАРТКІ
+       *[many] ПРАЙГРАЦЬ { $count } КАРТАК
+    }
 
 ## Bookmarks toolbar items
 
@@ -511,6 +552,13 @@ urlbar-result-action-tabtosearch-web = Шукайце з дапамогай { $e
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Шукайце ў { $engine } наўпрост з адраснага радка
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Капіраваць
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -552,8 +600,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Паказаць усе закладкі
-bookmarks-recent-bookmarks =
-    .value = Нядаўнія закладкі
 bookmarks-manage-bookmarks =
     .label = Кіраванне закладкамі
 bookmarks-recent-bookmarks-panel =
@@ -574,12 +620,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Схаваць бакавую панэль закладак
            *[other] Паказаць бакавую панэль закладак
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Схаваць паліцу закладак
-           *[other] Паказаць паліцу закладак
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -626,12 +666,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Закладкі
-library-bookmarks-bookmark-this-page =
-    .label = Дадаць закладку на старонку
-library-bookmarks-bookmark-edit =
-    .label = Правіць гэтую закладку
 library-recent-activity-title =
     .value = Апошняя актыўнасць
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Захаваць у { -pocket-brand-name }
+    .tooltiptext = Захаваць у { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Дадаткі і тэмы
+    .tooltiptext = Кіруйце сваімі дадаткамі і тэмамі ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Налады
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Адкрыць налады ({ $shortcut })
+           *[other] Адкрыць налады
+        }
 
 ## More items
 
@@ -658,3 +717,9 @@ panel-save-update-password = Пароль
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = Выдаліць { $name }?
 addon-removal-abuse-report-checkbox = Паведаміць пра гэта пашырэнне ў { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Кіраванне ўліковым запісам
+remote-tabs-sync-now = Сінхранізаваць зараз

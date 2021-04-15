@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = Asader n lqem { -brand-shorter-name }
+appmenuitem-update-banner2 =
+    .label-update-downloading = Asader n lqem { -brand-shorter-name }
+    .label-update-available = Lqem yella — sader tura
+    .label-update-manual = Lqem yella — sader tura
+    .label-update-unsupported = Yegguma ad yettuleqqem
+    .label-update-restart = Lqem yella — ales asenker tura
 appmenuitem-protection-dashboard-title = Ammesten n tfelwit n usenqed
 appmenuitem-customize-mode =
     .label = Sagen…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = Awalen uffiren
 appmenuitem-extensions-and-themes =
     .label = Iseɣzaf d yisental
+appmenuitem-addons-and-themes =
+    .label = Izegrar d yisental
 appmenuitem-find-in-page =
     .label = Af deg usebter…
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Mdel umuɣ n usnas
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Eǧǧ
+           *[other] Ffeɣ
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Ldi umuɣ n usnas
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Mdel umuɣ n usnas
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Mtawi tura
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Mtawi tura
-    .value = Mtawi tura
+appmenu-remote-tabs-sign-into-sync =
+    .label = Qqen ɣer Sync…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Rmed amtawi…
+appmenuitem-fxa-toolbar-sync-now2 = Mtawi tura
 appmenuitem-fxa-manage-account = Sefrek amiḍan
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = Amtawi aneggaru { $time }
     .label = Amtawi aneggaru { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Mtawi sakin sekles isefka
+appmenu-fxa-sync-and-save-data2 = Mtawi sakin sekles isefka
 appmenu-fxa-signed-in-label = Kcem
 appmenu-fxa-setup-sync =
     .label = Rmed amtawi…
@@ -135,18 +159,6 @@ appmenu-help-header =
 appmenu-about =
     .label = Ɣef { -brand-shorter-name }
     .accesskey = Γ
-appmenu-help-product =
-    .label = Tallelt { -brand-shorter-name }
-    .accesskey = a
-appmenu-help-show-tour =
-    .label = Tirza fessusen ɣer { -brand-shorter-name }
-    .accesskey = r
-appmenu-help-import-from-another-browser =
-    .label = Kter seg iminig nniḍen…
-    .accesskey = K
-appmenu-help-keyboard-shortcuts =
-    .label = Inegzumen n unasiw
-    .accesskey = I
 appmenu-get-help =
     .label = Awi tallalt
     .accesskey = A
@@ -155,6 +167,9 @@ appmenu-help-troubleshooting-info =
     .accesskey = Γ
 appmenu-help-taskmanager =
     .label = Amsefrak n twuri
+appmenu-help-more-troubleshooting-info =
+    .label = Ugar n telɣut n usellek
+    .accesskey = U
 appmenu-help-report-site-issue =
     .label = Azen ugur ɣef usmel…
 appmenu-help-feedback-page =
@@ -174,8 +189,8 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Askar n ferru n wuguren
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Askar n usellek…
     .accesskey = A
 appmenu-help-exit-troubleshoot-mode =
     .label = Sens askar n ferru n wuguren
@@ -191,13 +206,10 @@ appmenu-help-not-deceptive =
     .label = Mačči d asmel web n ukellex…
     .accesskey = d
 
-##
-
-appmenu-help-check-for-update =
-    .label = Senqed ma llan ileqman…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Sagen afeggag n yifeca…
+appmenu-taskmanager =
+    .label = Amsefrak n twuri
 appmenu-developer-tools-subheader = Ifecka n yiminig

@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = Đang tải xuống bản cập nhật { -brand-shorter-name }
+appmenuitem-update-banner2 =
+    .label-update-downloading = Đang tải xuống bản cập nhật { -brand-shorter-name }
+    .label-update-available = Bản cập nhật đã có sẵn — tải xuống ngay
+    .label-update-manual = Bản cập nhật đã có sẵn — tải xuống ngay
+    .label-update-unsupported = Không thể cập nhật
+    .label-update-restart = Bản cập nhật đã có sẵn — khởi động lại ngay
 appmenuitem-protection-dashboard-title = Bảng điều khiển bảo vệ
 appmenuitem-customize-mode =
     .label = Tùy biến…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = Mật khẩu
 appmenuitem-extensions-and-themes =
     .label = Tiện ích mở rộng và chủ đề
+appmenuitem-addons-and-themes =
+    .label = Tiện ích mở rộng và chủ đề
 appmenuitem-find-in-page =
     .label = Tìm trong trang…
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Đóng menu ứng dụng
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Thoát
+           *[other] Thoát
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Mở menu ứng dụng
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Đóng menu ứng dụng
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Đồng bộ ngay
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Đồng bộ ngay
-    .value = Đồng bộ ngay
+appmenu-remote-tabs-sign-into-sync =
+    .label = Đăng nhập để đồng bộ hóa…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Bật đồng bộ hóa…
+appmenuitem-fxa-toolbar-sync-now2 = Đồng bộ ngay
 appmenuitem-fxa-manage-account = Quản lý tài khoản
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = Đồng bộ hóa lần cuối { $time }
     .label = Đồng bộ hóa lần cuối { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Đồng bộ hóa và lưu dữ liệu
+appmenu-fxa-sync-and-save-data2 = Đồng bộ hóa và lưu dữ liệu
 appmenu-fxa-signed-in-label = Đăng nhập
 appmenu-fxa-setup-sync =
     .label = Bật đồng bộ hóa…
@@ -135,29 +159,17 @@ appmenu-help-header =
 appmenu-about =
     .label = Về { -brand-shorter-name }
     .accesskey = A
-appmenu-help-product =
-    .label = Trợ giúp { -brand-shorter-name }
-    .accesskey = H
-appmenu-help-show-tour =
-    .label = Các tính năng cơ bản của { -brand-shorter-name }
-    .accesskey = o
-appmenu-help-import-from-another-browser =
-    .label = Nhập dữ liệu từ trình duyệt khác…
-    .accesskey = I
-appmenu-help-keyboard-shortcuts =
-    .label = Các phím tắt bàn phím
-    .accesskey = K
 appmenu-get-help =
     .label = Nhận trợ giúp
     .accesskey = H
 appmenu-help-troubleshooting-info =
     .label = Thông tin xử lý sự cố
     .accesskey = T
+appmenu-help-taskmanager =
+    .label = Quản lý tác vụ
 appmenu-help-more-troubleshooting-info =
     .label = Thông tin xử lý sự cố khác
     .accesskey = T
-appmenu-help-taskmanager =
-    .label = Quản lý tác vụ
 appmenu-help-report-site-issue =
     .label = Báo cáo vấn đề về trang…
 appmenu-help-feedback-page =
@@ -177,8 +189,8 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Chế độ xử lý sự cố
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Chế độ xử lý sự cố…
     .accesskey = M
 appmenu-help-exit-troubleshoot-mode =
     .label = Tắt chế độ xử lý sự cố
@@ -194,13 +206,10 @@ appmenu-help-not-deceptive =
     .label = Đây không phải là một trang lừa đảo…
     .accesskey = d
 
-##
-
-appmenu-help-check-for-update =
-    .label = Kiểm tra cập nhật…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Tùy biến thanh công cụ…
+appmenu-taskmanager =
+    .label = Quản lý tác vụ
 appmenu-developer-tools-subheader = Công cụ của trình duyệt

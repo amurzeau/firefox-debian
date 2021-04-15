@@ -173,6 +173,15 @@ onboarding-multistage-set-default-subtitle = Malsnosć, wěstota a priwatnosć k
 onboarding-multistage-set-default-primary-button-label = K standardoju cyniś
 onboarding-multistage-set-default-secondary-button-label = Nic něnto
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-pin-default-header = Zachopśo, aby <span data-l10n-name="zap">{ -brand-short-name }</span> jano jadno kliknjenje zdalony był
+onboarding-multistage-pin-default-subtitle = Malsne, wěste a priwatne pśeglědowanje kuždy raz, gaž web wužywaśo.
+# The "settings" here refers to "Windows 10 Settings App" and not the browser's
+onboarding-multistage-pin-default-waiting-subtitle = Wubjeŕśo { -brand-short-name } z webwobglědowakow, gaž waše nastajenja wócynjaśo
+# The "settings" here refers to "Windows 10 Settings App" and not the browser's
+onboarding-multistage-pin-default-help-text = To { -brand-short-name } k nadawkowej rědce pśpijo a nastajenja wócynja
+onboarding-multistage-pin-default-primary-button-label = { -brand-short-name } k primarnemu wobglědowakoju cyniś
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "more" should stay inside the span.
 onboarding-multistage-import-header = Importěrujśo swóje gronidła, cytańske znamjenja a <span data-l10n-name="zap">wěcej</span>
 onboarding-multistage-import-subtitle = Sćo do toho wužywał drugi wobglědowak? Jo lažko, wšykno do { -brand-short-name } pśenjasć.

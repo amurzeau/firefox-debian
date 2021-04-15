@@ -169,7 +169,7 @@ delete-ssl-override-impact = 만약 서버 예외를 삭제하면, 해당 서버
 delete-ca-cert-title =
     .title = CA 인증서 삭제 또는 신뢰 안 함
 delete-ca-cert-confirm = CA 인증서 삭제를 요청하셨습니다. 기본 제공 인증서의 경우 모든 신뢰가 제거되며 동일한 효과가 있습니다. 삭제 또는 신뢰 안 함으로 하시겠습니까?
-delete-ca-cert-impact = 만약 인증 기관 (CA) 인증서를 삭제하거나 신뢰 안 함으로 하면, 이 응용 프로그램은 해당 CA에서 발급한 인증서를 더 이상 신뢰하지 않습니다.
+delete-ca-cert-impact = 만약 인증 기관 (CA) 인증서를 삭제하거나 신뢰 안 함으로 하면, 이 애플리케이션은 해당 CA에서 발급한 인증서를 더 이상 신뢰하지 않습니다.
 delete-email-cert-title =
     .title = 전자 메일 인증서 삭제
 delete-email-cert-confirm = 다른 사람의 전자 메일 인증서를 삭제하시겠습니까?
@@ -225,7 +225,7 @@ temporary-override = 임시
 
 ## Add Security Exception dialog
 
-add-exception-branded-warning = { -brand-short-name } 프로그램  웹 사이트 신원 확인 방식을 다시 설정합니다.
+add-exception-branded-warning = { -brand-short-name }가 사이트를 식별하는 방법을 사용자가 다시 설정하려고 합니다.
 add-exception-invalid-header = 이 사이트는 유효하지 않은 정보로 인증을 시도하고 있습니다.
 add-exception-domain-mismatch-short = 잘못된 사이트
 add-exception-domain-mismatch-long = 이 인증서는 다른 웹 사이트의 인증서로서 누군가 이 사이트를 사칭하고 있을 수 있습니다.

@@ -202,6 +202,18 @@ search-one-offs-context-set-as-default =
 
 ## Bookmark Panel
 
+bookmark-panel-cancel =
+    .label = ரத்து
+    .accesskey = C
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] புத்தகக்குறியை நீக்கு
+           *[other] புத்தகக்குறிகளை { $count } நீக்கு
+        }
+    .accesskey = R
 bookmark-panel-show-editor-checkbox =
     .label = சேமிக்கும்பொருட்டு தொகுப்பதைக் காண்பி
     .accesskey = S
@@ -259,6 +271,11 @@ browser-window-close-button =
     .tooltiptext = மூடுக
 
 ## Tab actions
+
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
 
 
 ## Bookmarks toolbar items
@@ -337,8 +354,6 @@ pointerlock-warning-no-domain = இந்த ஆவணம் உங்கள் 
 
 bookmarks-show-all-bookmarks =
     .label = அனைத்தையும் காண்பி
-bookmarks-recent-bookmarks =
-    .value = சமீபத்திய புத்தகக்குறிகள்
 bookmarks-toolbar-chevron =
     .tooltiptext = இன்னும் காண்பி
 bookmarks-sidebar-content =
@@ -354,12 +369,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] புத்தகக்குறிகள் பக்கப்பட்டையை மறை
            *[other] புத்தகக்குறிகள் பக்கப்பட்டையைக் காட்டு
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] புத்தகக்குறிகள் கருவிப்பட்டையை மறை
-           *[other] புத்தகக்குறிகள் கருவிப்பட்டையைக் காட்டு
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -390,10 +399,12 @@ bookmarks-toolbar-placeholder-button =
 
 library-bookmarks-menu =
     .label = புத்தகக்குறிகள்
-library-bookmarks-bookmark-this-page =
-    .label = புத்தகக்குறியிடு
-library-bookmarks-bookmark-edit =
-    .label = புத்தகக்குறியைத் திருத்து
+
+## Pocket toolbar button
+
+
+## Customize Toolbar Buttons
+
 
 ## More items
 
@@ -404,3 +415,12 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = இந்த தளத்தில் சில பாடல் அல்லது காணொளி DRM மென்பொருளைப் பயன்படுத்துகிறது, { -brand-short-name } நீங்கள் அதை செய்ய விட்டால் வசதிகளைக் குறைக்க கூடும்.
+
+## Password save/update panel
+
+
+## Add-on removal warning
+
+
+## Remote / Synced tabs
+

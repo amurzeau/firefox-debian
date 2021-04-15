@@ -11,10 +11,11 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Встановити політики, за якими WebExtensions можуть отримувати доступ через chrome.storage.managed.
+policy-AllowedDomainsForApps = Визначте домени, яким дозволено отримати доступ до Google Workspace.
 policy-AppAutoUpdate = Увімкнути або вимкнути автоматичне оновлення програми.
 policy-AppUpdateURL = Встановити власну URL-адресу для оновлення програми.
 policy-Authentication = Налаштувати інтегровану автентифікацію для підтримуваних вебсайтів.
-policy-BackgroundAppUpdate = Увімкнути чи вимкнути службу фонового оновлення, яка оновлює браузер, коли він не працює.
+policy-BackgroundAppUpdate2 = Увімкнути чи вимкнути службу фонового оновлення.
 policy-BlockAboutAddons = Заблокувати доступ до керування додатками (about:addons).
 policy-BlockAboutConfig = Заблокувати доступ до сторінки about:config.
 policy-BlockAboutProfiles = Заблокувати доступ до сторінки about:profiles.
@@ -96,7 +97,7 @@ policy-PasswordManagerEnabled = Увімкнути збереження паро
 policy-PDFjs = Вимкнути або налаштувати PDF.js, вбудований засіб перегляду файлів PDF у { -brand-short-name }.
 policy-Permissions2 = Налаштувати дозволи для камери, мікрофона, розташування, сповіщень та автовідтворення.
 policy-PictureInPicture = Увімкнути чи вимкнути Зображення в зображенні.
-policy-PopupBlocking = Дозволити певним вебсайтам типово відображати виринаючі вікна.
+policy-PopupBlocking = Дозволити певним вебсайтам завжди показувати спливні вікна.
 policy-Preferences = Встановити і зафіксувати значення для набору налаштувань.
 policy-PromptForDownloadLocation = Запитувати, де зберігати файли під час завантаження.
 policy-Proxy = Налаштувати параметри проксі.
@@ -107,6 +108,7 @@ policy-SearchEngines = Налаштувати засіб пошуку. Ця по
 policy-SearchSuggestEnabled = Увімкнути чи вимкнути пропозиції пошуку.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Встановити модулі PKCS #11.
+policy-ShowHomeButton = Показувати кнопку домівки на панелі інструментів.
 policy-SSLVersionMax = Встановити максимальну версію SSL.
 policy-SSLVersionMin = Встановити мінімальну версію SSL.
 policy-SupportMenu = Додати власний елемент меню підтримки в меню довідки.

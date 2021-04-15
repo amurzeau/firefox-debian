@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = Aktualizaciju { -brand-shorter-name } ześěgnuś
+appmenuitem-update-banner2 =
+    .label-update-downloading = Aktualizaciju { -brand-shorter-name } ześěgnuś
+    .label-update-available = Aktualizacija k dispoziciji – něnto ześěgnuś
+    .label-update-manual = Aktualizacija k dispoziciji – něnto ześěgnuś
+    .label-update-unsupported = Aktualizěrowanje njejo móžne
+    .label-update-restart = Aktualizacija k dispoziciji – něnto znowego startowaś
 appmenuitem-protection-dashboard-title = Pśeglěd šćitow
 appmenuitem-customize-mode =
     .label = Pśiměriś…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = Gronidła
 appmenuitem-extensions-and-themes =
     .label = Rozšyrjenja a drastwy
+appmenuitem-addons-and-themes =
+    .label = Dodanki a drastwy
 appmenuitem-find-in-page =
     .label = Na boku pytaś…
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Nałožeński meni zacyniś
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Skóńcyś
+           *[other] Skóńcyś
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Nałožeński meni wócyniś
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Nałožeński meni zacyniś
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Něnto synchronizěrowaś
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Něnto synchronizěrowaś
-    .value = Něnto synchronizěrowaś
+appmenu-remote-tabs-sign-into-sync =
+    .label = Pla Sync pśizjawiś…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Sync zmóžniś…
+appmenuitem-fxa-toolbar-sync-now2 = Něnto synchronizěrowaś
 appmenuitem-fxa-manage-account = Konto zastojaś
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = Slědna synchronizacija: { $time }
     .label = Slědna synchronizacija: { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Synchronizěrowaś a daty składowaś
+appmenu-fxa-sync-and-save-data2 = Synchronizěrowaś a daty składowaś
 appmenu-fxa-signed-in-label = Pśizjawiś
 appmenu-fxa-setup-sync =
     .label = Synchronizaciju zmóžniś…
@@ -135,29 +159,17 @@ appmenu-help-header =
 appmenu-about =
     .label = Wó { -brand-shorter-name }
     .accesskey = W
-appmenu-help-product =
-    .label = { -brand-shorter-name } - Pomoc
-    .accesskey = m
-appmenu-help-show-tour =
-    .label = { -brand-shorter-name } - Tura
-    .accesskey = T
-appmenu-help-import-from-another-browser =
-    .label = Z drugego wobglědowaka importěrowaś…
-    .accesskey = d
-appmenu-help-keyboard-shortcuts =
-    .label = Tastowe skrotconki
-    .accesskey = T
 appmenu-get-help =
     .label = Pomoc se wobstaraś
     .accesskey = P
 appmenu-help-troubleshooting-info =
     .label = Informacije za rozwězowanje problemow
     .accesskey = I
+appmenu-help-taskmanager =
+    .label = Zastojnik nadawkow
 appmenu-help-more-troubleshooting-info =
     .label = Dalšne informacije za rozwězowanje problemow
     .accesskey = D
-appmenu-help-taskmanager =
-    .label = Zastojnik nadawkow
 appmenu-help-report-site-issue =
     .label = Sedłowy problem k wěsći daś…
 appmenu-help-feedback-page =
@@ -177,8 +189,8 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Modus za rozwězowanje problemow
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Modus za rozwězowanje problemow…
     .accesskey = M
 appmenu-help-exit-troubleshoot-mode =
     .label = Modus za rozwězowanje problemow znjemóžniś
@@ -194,13 +206,10 @@ appmenu-help-not-deceptive =
     .label = To njejo wobšudnikojske sedło…
     .accesskey = d
 
-##
-
-appmenu-help-check-for-update =
-    .label = Za aktualizacijami pśeglědaś…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Symbolowu rědku pśiměriś…
+appmenu-taskmanager =
+    .label = Zastojnik nadawkow
 appmenu-developer-tools-subheader = Rědy wobglědowaka

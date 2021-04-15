@@ -6,8 +6,26 @@
 ## App Menu
 
 appmenuitem-update-banner =
-    .label-update-downloading = Преузимање { -brand-shorter-name } ажурирања
-appmenuitem-protection-dashboard-title = Сигурносна командна табла
+    .label-update-downloading =
+        Преузимање ажурирања { -brand-shorter-name.gender ->
+            [masculine] { -brand-shorter-name(case: "gen") }
+            [feminine] { -brand-shorter-name(case: "gen") }
+            [neuter] { -brand-shorter-name(case: "gen") }
+           *[other] програма { -brand-shorter-name }
+        }
+appmenuitem-update-banner2 =
+    .label-update-downloading =
+        Преузимање ажурирања { -brand-shorter-name.gender ->
+            [masculine] { -brand-shorter-name(case: "gen") }
+            [feminine] { -brand-shorter-name(case: "gen") }
+            [neuter] { -brand-shorter-name(case: "gen") }
+           *[other] програма { -brand-shorter-name }
+        }
+    .label-update-available = Доступно је ажурирање – преузмите га
+    .label-update-manual = Доступно је ажурирање – преузмите га
+    .label-update-unsupported = Ажурирање није успело
+    .label-update-restart = Доступно је ажурирање – рестартујте прегледач
+appmenuitem-protection-dashboard-title = Контролна табла заштите
 appmenuitem-customize-mode =
     .label = Прилагоди…
 
@@ -20,13 +38,29 @@ appmenuitem-new-private-window =
 appmenuitem-passwords =
     .label = Лозинке
 appmenuitem-extensions-and-themes =
-    .label = Проширења и теме
+    .label = Додаци и теме
+appmenuitem-addons-and-themes =
+    .label = Додаци и теме
 appmenuitem-find-in-page =
     .label = Пронађи на страници…
 appmenuitem-more-tools =
     .label = Више алатки
 appmenuitem-exit =
     .label = Излаз
+appmenu-menu-button-closed =
+    .tooltiptext = Отвори мени програма
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Затвори мени програма
+    .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label = Изађи
+appmenu-menu-button-closed2 =
+    .tooltiptext = Отвори мени програма
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Затвори мени програма
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -35,7 +69,7 @@ appmenuitem-settings =
 ## Zoom and Fullscreen Controls
 
 appmenuitem-zoom-enlarge =
-    .label = Увећајте
+    .label = Увећај
 appmenuitem-zoom-reduce =
     .label = Смањите
 appmenuitem-fullscreen =
@@ -44,7 +78,28 @@ appmenuitem-fullscreen =
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
-    .label = Синхронизуј сада
+    .label = Синхронизуј
+appmenu-remote-tabs-sign-into-sync =
+    .label = Пријавите се ради синхронизације…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Укључи синхронизацију
+appmenuitem-fxa-toolbar-sync-now2 = Синхронизуј
+appmenuitem-fxa-manage-account = Управљај налогом
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Последња синхронизација { $time }
+    .label = Последња синхронизација { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = Синхронизуј и сачувај податке
+appmenu-fxa-sync-and-save-data2 = Синхронизуј и сачувај податке
+appmenu-fxa-signed-in-label = Пријави ме
+appmenu-fxa-setup-sync =
+    .label = Укључи синхронизацију
+appmenu-fxa-show-more-tabs = Прикажи још картица
 appmenuitem-save-page =
     .label = Сачувај страницу као…
 
@@ -54,8 +109,8 @@ whatsnew-panel-header = Шта је ново
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =
-    .label = Обавести о новим функцијама
-    .accesskey = f
+    .label = Обавести ме о новим функцијама
+    .accesskey = О
 
 ## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
@@ -72,10 +127,8 @@ profiler-popup-learn-more = Сазнајте више
 profiler-popup-settings =
     .value = Подешавања
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
-profiler-popup-edit-settings = Измени подешавања…
-profiler-popup-disabled =
-    Profiler је тренутно онемогућен, вероватно због отвореног прозора
-    за приватно прегледање.
+profiler-popup-edit-settings = Уреди подешавања…
+profiler-popup-disabled = Profiler је тренутно онемогућен, највероватније због отвореног прозора за приватно прегледање
 profiler-popup-recording-screen = Снимање…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
@@ -108,63 +161,73 @@ appmenu-reopen-all-windows = Поново отвори све прозоре
 ## Help panel
 
 appmenu-help-header =
-    .title = { -brand-shorter-name } помоћ
+    .title =
+        Помоћ за { -brand-shorter-name.gender ->
+            [masculine] { -brand-shorter-name(case: "acc") }
+            [feminine] { -brand-shorter-name(case: "acc") }
+            [neuter] { -brand-shorter-name(case: "acc") }
+           *[other] програм { -brand-shorter-name }
+        }
 appmenu-about =
-    .label = О програму { -brand-shorter-name }
+    .label =
+        О { -brand-shorter-name.gender ->
+            [masculine] { -brand-shorter-name(case: "loc") }
+            [feminine] { -brand-shorter-name(case: "loc") }
+            [neuter] { -brand-shorter-name(case: "loc") }
+           *[other] програму { -brand-shorter-name }
+        }
     .accesskey = О
-appmenu-help-product =
-    .label = Помоћ за { -brand-shorter-name }
-    .accesskey = H
-appmenu-help-show-tour =
-    .label = { -brand-shorter-name } водич
-    .accesskey = o
-appmenu-help-import-from-another-browser =
-    .label = Увезите из другог прегледача…
-    .accesskey = I
-appmenu-help-keyboard-shortcuts =
-    .label = Пречице на тастатури
-    .accesskey = K
 appmenu-get-help =
     .label = Потражи помоћ
-    .accesskey = H
+    .accesskey = П
 appmenu-help-troubleshooting-info =
-    .label = Подаци о решавању проблема
-    .accesskey = T
+    .label = Решавање проблема
+    .accesskey = Р
 appmenu-help-taskmanager =
-    .label = Управник задатака
+    .label = Менаџер задатака
+appmenu-help-more-troubleshooting-info =
+    .label = Подаци о решавању проблема
+    .accesskey = д
 appmenu-help-report-site-issue =
     .label = Пријави проблем на сајту…
 appmenu-help-feedback-page =
     .label = Пошаљи повратне информације
-    .accesskey = S
+    .accesskey = ш
 
 ## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
 appmenu-help-safe-mode-without-addons =
     .label = Рестартуј са онемогућеним додацима
-    .accesskey = R
+    .accesskey = Р
 appmenu-help-safe-mode-with-addons =
     .label = Рестартуј са омогућеним додацима
     .accesskey = R
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Режим за решавање проблема…
+    .accesskey = ж
+appmenu-help-exit-troubleshoot-mode =
+    .label = Искључи режим за решавање проблема
+    .accesskey = ж
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
 appmenu-help-report-deceptive-site =
-    .label = Пријави обманљив сајт…
-    .accesskey = D
+    .label = Пријави обмањујућ сајт…
+    .accesskey = б
 appmenu-help-not-deceptive =
-    .label = Ово није обманљив сајт…
-    .accesskey = d
-
-##
-
-appmenu-help-check-for-update =
-    .label = Провери ажурирања…
+    .label = Ово није обмањујућ сајт…
+    .accesskey = б
 
 ## More Tools
 
 appmenu-customizetoolbar =
-    .label = Прилагоди алатну траку…
-appmenu-developer-tools-subheader = Алати прегледача
+    .label = Прилагоди траку са алаткама…
+appmenu-taskmanager =
+    .label = Менаџер задатака
+appmenu-developer-tools-subheader = Алатке прегледача

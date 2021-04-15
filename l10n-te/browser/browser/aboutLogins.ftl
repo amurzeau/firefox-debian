@@ -29,6 +29,7 @@ menu =
 about-logins-menu-menuitem-import-from-another-browser = మరో విహారిణి నుండి దిగుమతిచేయి…
 about-logins-menu-menuitem-import-from-a-file = ఒక దస్త్రం నుండి దిగుమతించు…
 about-logins-menu-menuitem-export-logins = ప్రవేశాలను ఎగుమతించు…
+about-logins-menu-menuitem-remove-all-logins = ప్రవేశాలన్నిటినీ తొలగించు…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] ఎంపికలు
@@ -179,6 +180,7 @@ about-logins-confirm-remove-all-sync-dialog-title =
 about-logins-confirm-export-dialog-title = ప్రవేశాలను, సంకేతపదాలను ఎగుమతిచేయి
 about-logins-confirm-export-dialog-confirm-button = ఎగుమతించు…
 about-logins-alert-import-title = దిగుమతి పూర్తయింది
+about-logins-alert-import-message = వివరణాత్మక దిగుమతి సారాంశాన్ని చూడండి
 confirm-discard-changes-dialog-title = భద్రపరచని మార్పులను విస్మరించాలా?
 confirm-discard-changes-dialog-message = భద్రపరచని మార్పులన్నీ కోల్పోతారు.
 confirm-discard-changes-dialog-confirm-button = విస్మరించు
@@ -247,9 +249,27 @@ about-logins-import-file-picker-tsv-filter-title =
 about-logins-import-dialog-title = దిగుమతి పూర్తయింది
 about-logins-import-dialog-done = పూర్తయింది
 about-logins-import-dialog-error-title = దిగుమతి లోపం
+about-logins-import-dialog-error-file-format-title = ఫైలు ఫార్మాటు సమస్య
 about-logins-import-dialog-error-learn-more = ఇంకా తెలుసుకోండి
 about-logins-import-dialog-error-try-again = మళ్ళీ ప్రయత్నించండి…
 about-logins-import-dialog-error-cancel = రద్దుచేయి
+about-logins-import-report-title = దిగుమతి సారాంశం
+#
+# Variables:
+#  $number (number) - The number of the row
+about-logins-import-report-row-index = అడ్డువరుస{ $number }
+about-logins-import-report-row-description-added = కొత్త ప్రవేశం చేర్చబడింది
+
+##
+## Variables:
+##  $field (String) - The name of the field from the CSV file for example url, username or password
+
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
 
 ## Logins import report page
 
+about-logins-import-report-page-title = దిగుమతి సారాంశ నివేదిక

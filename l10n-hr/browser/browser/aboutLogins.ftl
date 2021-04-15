@@ -18,6 +18,7 @@ login-filter =
 create-login-button = Stvori novu prijavu
 fxaccounts-sign-in-text = Preuzmi lozinke na drugim uređajima
 fxaccounts-sign-in-button = Prijavi se u { -sync-brand-short-name }
+fxaccounts-sign-in-sync-button = Prijavi se za sinkronizaciju
 fxaccounts-avatar-button =
     .title = Upravljaj računom
 
@@ -71,11 +72,15 @@ about-logins-list-item-vulnerable-password-icon =
 
 login-intro-heading = Tražiš svoje spremljene prijave? Postavi { -sync-brand-short-name }.
 about-logins-login-intro-heading-logged-out = Tražiš svoje spremljene prijave? Postavi { -sync-brand-short-name } ili ih uvezi.
+about-logins-login-intro-heading-logged-out2 = Tražiš spremljene prijave? Uključi sinkronizaciju ili ih uvezi.
 about-logins-login-intro-heading-logged-in = Nema sinkroniziranih prijava.
 login-intro-description = Ako su tvoje prijave spremljene u { -brand-product-name }u na jednom drugom uređaju, evo kako ih ovdje možeš preuzeti:
 login-intro-instruction-fxa = Otvori račun ili se prijavi na svoj { -fxaccount-brand-name }, na uređaju gdje su tvoje prijave spremljene
 login-intro-instruction-fxa-settings = Provjeri, je li potvrdni okvir prijave označen u { -sync-brand-short-name } postavkama
 about-logins-intro-instruction-help = Posjeti <a data-l10n-name="help-link">{ -lockwise-brand-short-name } podršku</a> za dodatnu pomoć
+login-intro-instructions-fxa = Stvori ili prijavi se na svoj { -fxaccount-brand-name } na uređaju gdje su spremljene tvoje prijave.
+login-intro-instructions-fxa-settings = Idi u Postavke > Sinkronizacija > Uključi sinkronizaciju… Odaberi opciju "Prijave i lozinke".
+login-intro-instructions-fxa-help = Posjeti <a data-l10n-name="help-link">podršku za { -lockwise-brand-short-name }</a> za više pomoći.
 about-logins-intro-import = Ako su tvoje prijave spremljene u jednom drugom pregledniku, možeš ih <a data-l10n-name="import-link"> uvesti u { -lockwise-brand-short-name } </a>
 about-logins-intro-import2 = Ako su tvoje prijave spremljene izvan { -brand-product-name }a, možeš ih <a data-l10n-name="import-browser-link">uvesti iz jednog drugog preglednika</a> ili <a data-l10n-name="import-file-link">iz jedne datoteke</a>
 
@@ -298,9 +303,9 @@ about-logins-import-dialog-items-added =
     }
 about-logins-import-dialog-items-modified =
     { $count ->
-        [one] <span>Ažurirano postojećih prijava:</span> <span data-l10n-name="count">{ $count }</span>
-        [few] <span>Ažurirano postojećih prijava:</span> <span data-l10n-name="count">{ $count }</span>
-       *[other] <span>Ažurirano postojećih prijava:</span> <span data-l10n-name="count">{ $count }</span>
+        [one] <span>Aktualizirane su postojeće prijave:</span> <span data-l10n-name="count">{ $count }</span>
+        [few] <span>Aktualizirane su postojeće prijave:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Aktualizirane su postojeće prijave:</span> <span data-l10n-name="count">{ $count }</span>
     }
 about-logins-import-dialog-items-no-change =
     { $count ->
@@ -327,15 +332,16 @@ about-logins-import-dialog-error-unable-to-read-description = Provjeri je li oda
 about-logins-import-dialog-error-no-logins-imported = Nije uvezena nijedna prijava
 about-logins-import-dialog-error-learn-more = Saznaj više
 about-logins-import-dialog-error-try-again = Pokušaj ponovno…
+about-logins-import-dialog-error-try-import-again = Pokušaj ponovno uvesti…
 about-logins-import-dialog-error-cancel = Odustani
 about-logins-import-report-title = Sažetak uvoza
 about-logins-import-report-description = Prijave i lozinke uvezene u { -brand-short-name }.
 #
 # Variables:
 #  $number (number) - The number of the row
-about-logins-import-report-row-index = Redak { $number }
+about-logins-import-report-row-index = { $number }. redak
 about-logins-import-report-row-description-no-change = Duplikat: točno podudaranje postojeće prijave
-about-logins-import-report-row-description-modified = Postojeća prijava je ažurirana
+about-logins-import-report-row-description-modified = Postojeća prijava je aktualizirana
 about-logins-import-report-row-description-added = Dodana je nova prijava
 about-logins-import-report-row-description-error = Greška: nedostaje polje
 
@@ -358,9 +364,9 @@ about-logins-import-report-added =
     }
 about-logins-import-report-modified =
     { $count ->
-        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">postojeća prijava ažurirana</div>
-        [few] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">postojeće prijave ažurirane</div>
-       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">postojećih prijava ažurirano</div>
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">postojeća prijava je aktualizirana</div>
+        [few] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">postojeće prijave su aktualizirane</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">postojećih prijava je aktualizirano</div>
     }
 about-logins-import-report-no-change =
     { $count ->

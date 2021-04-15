@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Μετάβαση μια σελίδα πίσω ({ $shortcut })
     .aria-label = Πίσω
     .accesskey = Π
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Πίσω
+    .accesskey = Π
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Μετάβαση μια σελίδα μπροστά ({ $shortcut })
     .aria-label = Μπροστά
     .accesskey = Μ
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Μπροστά
+    .accesskey = Μ
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Ανανέωση
     .accesskey = Α
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Ανανέωση
+    .accesskey = Α
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Διακοπή
     .accesskey = Δ
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Διακοπή
+    .accesskey = Δ
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Δημιουργία σελιδοδείκτη
     .accesskey = δ
     .tooltiptext = Δημιουργία σελιδοδείκτη για αυτή τη σελίδα
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Προσθήκη σελιδοδείκτη
+    .accesskey = λ
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Επεξεργασία σελιδοδείκτη
+    .accesskey = ξ
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Άνοιγμα συνδέσμου σε νέα θεματική καρτέλα
     .accesskey = κ
-main-context-menu-open-link-container =
-    .label = Άνοιγμα συνδέσμου σε νέα θεματική καρτέλα
-    .accesskey = υ
 main-context-menu-open-link-new-window =
     .label = Άνοιγμα συνδέσμου σε νέο παράθυρο
     .accesskey = δ
@@ -124,7 +155,7 @@ main-context-menu-bookmark-this-link =
     .label = Προσθήκη στους σελιδοδείκτες
     .accesskey = δ
 main-context-menu-bookmark-link =
-    .label = Προσθήκη συνδέσμου σε σελιδοδείκτη
+    .label = Προσθήκη σελιδοδείκτη συνδέσμου
     .accesskey = κ
 main-context-menu-save-link =
     .label = Αποθήκευση συνδέσμου ως…
@@ -233,6 +264,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Εικόνα εντός εικόνας
     .accesskey = ν
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Προβολή σε εικόνα εντός εικόνας
+    .accesskey = ο
 main-context-menu-image-reload =
     .label = Ανανέωση εικόνας
     .accesskey = ν
@@ -242,6 +278,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = Προβολή βίντεο
     .accesskey = β
+main-context-menu-image-view-new-tab =
+    .label = Άνοιγμα εικόνας σε νέα καρτέλα
+    .accesskey = ε
+main-context-menu-video-view-new-tab =
+    .label = Άνοιγμα βίντεο σε νέα καρτέλα
+    .accesskey = σ
 main-context-menu-image-copy =
     .label = Αντιγραφή εικόνας
     .accesskey = γ
@@ -290,6 +332,9 @@ main-context-menu-audio-save-as =
 main-context-menu-video-image-save-as =
     .label = Αποθήκευση στιγμιότυπου ως…
     .accesskey = ς
+main-context-menu-video-take-snapshot =
+    .label = Λήψη στιγμιότυπου…
+    .accesskey = τ
 main-context-menu-video-email =
     .label = Αποστολή βίντεο…
     .accesskey = σ
@@ -319,11 +364,23 @@ main-context-menu-generate-new-password =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+main-context-menu-use-saved-login =
+    .label = Χρήση αποθηκευμένης σύνδεσης
+    .accesskey = υ
+main-context-menu-use-saved-password =
+    .label = Χρήση αποθηκευμένου κωδικού πρόσβασης
+    .accesskey = υ
 
 ##
 
+main-context-menu-suggest-strong-password =
+    .label = Πρόταση ισχυρού κωδικού πρόσβασης…
+    .accesskey = σ
 main-context-menu-manage-logins =
     .label = Διαχείριση συνδέσεων…
+    .accesskey = Δ
+main-context-menu-manage-logins2 =
+    .label = Διαχείριση συνδέσεων
     .accesskey = Δ
 main-context-menu-keyword =
     .label = Προσθήκη λέξης-κλειδιού για αυτή την αναζήτηση…

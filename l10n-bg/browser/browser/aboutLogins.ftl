@@ -29,6 +29,7 @@ menu =
 about-logins-menu-menuitem-import-from-another-browser = Внасяне от друг мрежов четец…
 about-logins-menu-menuitem-import-from-a-file = Внасяне от файл…
 about-logins-menu-menuitem-export-logins = Изнасяне на регистрации…
+about-logins-menu-menuitem-remove-all-logins = Премахване на всички регистрации…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Настройки
@@ -160,9 +161,31 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Изтриване на регистрацията?
 confirm-delete-dialog-message = Действието е необратимо.
 about-logins-confirm-remove-dialog-confirm-button = Премахване
+about-logins-confirm-remove-all-dialog-confirm-button-label =
+    { $count ->
+        [one] Премахване
+       *[other] Премахване на всички
+    }
+about-logins-confirm-remove-all-dialog-checkbox-label =
+    { $count ->
+        [one] Да, премахване на регистрацията
+       *[other] Да, премахване на регистрациите
+    }
+about-logins-confirm-remove-all-dialog-title =
+    { $count ->
+        [one] Премахване на { $count } регистрация?
+       *[other] Премахване на { $count } регистрации?
+    }
+about-logins-confirm-remove-all-sync-dialog-title =
+    { $count ->
+        [one] Премахване на { $count } регистрация от всички устройства?
+       *[other] Премахване на { $count } регистрации от всички устройства?
+    }
 about-logins-confirm-export-dialog-title = Изнасяне на регистрации и пароли
 about-logins-confirm-export-dialog-message = Вашите пароли ще бъдат запазени като четим текст (например Лош@Пар0ла), така че всеки, който има достъп до изнесения файл ще може да ги види.
 about-logins-confirm-export-dialog-confirm-button = Изнасяне…
+about-logins-alert-import-title = Внасянето е завършено
+about-logins-alert-import-message = Подробен доклад за процеса
 confirm-discard-changes-dialog-title = Отказвате се от промените?
 confirm-discard-changes-dialog-message = Незапазените промени ще бъдат изгубени.
 confirm-discard-changes-dialog-confirm-button = Отхвърляне
@@ -180,6 +203,7 @@ about-logins-breach-alert-learn-more-link = Научете повече
 ## Vulnerable Password notification
 
 about-logins-vulnerable-alert-title = Уязвима парола
+about-logins-vulnerable-alert-text2 = Тази парола е използвана в друга сметка, вероятно жертва на изтичане на данни. Преизползването на информация за удостоверяване излага на риск всички ваши сметки. Сменете паролата.
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
 about-logins-vulnerable-alert-link = Към { $hostname }
@@ -223,3 +247,53 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] Документ на CSV
        *[other] Файл на CSV
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] Документ на TSV
+       *[other] Файл на TSV
+    }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = Внасянето е завършено
+about-logins-import-dialog-items-added =
+    { $count ->
+       *[other] <span>Добавени регистрации:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+       *[other] <span>Обновени регистрации:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+        [one] <span>Грешки:</span> <span data-l10n-name="count">{ $count }</span><span data-l10n-name="meta">(не внесена)</span>
+       *[other] <span>Грешки:</span> <span data-l10n-name="count">{ $count }</span><span data-l10n-name="meta">(не внесени)</span>
+    }
+about-logins-import-dialog-done = Готово
+about-logins-import-dialog-error-title = Грешка при внасяне
+about-logins-import-dialog-error-conflicting-values-title = Множество конфликтни стойности за една регистрация
+about-logins-import-dialog-error-file-permission-title = Грешка при прочитане на файл
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } няма права за четене върху файла. Променете правата на файла.
+about-logins-import-dialog-error-unable-to-read-title = Грешка при анализ на файл
+about-logins-import-dialog-error-unable-to-read-description = Уверете се, че избраният файл е CSV или TSV.
+about-logins-import-dialog-error-no-logins-imported = Не са внесени регистраци
+about-logins-import-dialog-error-learn-more = Научете повече
+about-logins-import-dialog-error-try-again = Нов опит…
+about-logins-import-dialog-error-cancel = Отказ
+
+##
+## Variables:
+##  $field (String) - The name of the field from the CSV file for example url, username or password
+
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+
+## Logins import report page
+

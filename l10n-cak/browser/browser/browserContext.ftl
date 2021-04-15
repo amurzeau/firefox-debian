@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Titzolïx jun ruxaq ({ $shortcut })
     .aria-label = Chi rij
     .accesskey = B
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Chi rij
+    .accesskey = B
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Jun chik ruxaq ({ $shortcut })
     .aria-label = Jun chik
     .accesskey = F
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Jun chik
+    .accesskey = F
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Tisamajïx chik
     .accesskey = s
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Tisamajïx chik
+    .accesskey = s
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -63,6 +75,10 @@ toolbar-button-reload =
 
 main-context-menu-stop =
     .aria-label = Tiq'at
+    .accesskey = S
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Tiq'at
     .accesskey = S
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
@@ -86,6 +102,18 @@ main-context-menu-bookmark-add =
     .aria-label = Titz'aqatisäx re ruxaq re' pa taq yaketal
     .accesskey = m
     .tooltiptext = Titz'aqatisäx re ruxaq k'amaya'l re' pa taq yaketal
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Yaketal Ruxaq
+    .accesskey = e
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Tinuk' Yaketal
+    .accesskey = e
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +139,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Tijaq ximonel pa k'ak'a' ajk'wayöl ruwi'
     .accesskey = w
-main-context-menu-open-link-container =
-    .label = Tijaq Ximonel pa K'ak'a' Ajk'wayöl
-    .accesskey = k
 main-context-menu-open-link-new-window =
     .label = Tijaq ximonel tzij pa jun k'ak'a' Tzuwäch
     .accesskey = T
@@ -347,6 +372,9 @@ main-context-menu-suggest-strong-password =
     .accesskey = Ü
 main-context-menu-manage-logins =
     .label = Kenuk'samajïx ri taq Kitikirisab'al Moloj…
+    .accesskey = K
+main-context-menu-manage-logins2 =
+    .label = Kenuk'samajïx ri taq Kitikirisab'al Moloj
     .accesskey = K
 main-context-menu-keyword =
     .label = Titz'aqatisäx jun ewan tzij richin re Rukanoxik re'…

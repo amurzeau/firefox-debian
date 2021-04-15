@@ -11,10 +11,11 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Definir directivas a las qualas WebExtensions pon acceder via chrome.storage.managed.
+policy-AllowedDomainsForApps = Definescha las domenas che dastgan acceder a Google Workspace.
 policy-AppAutoUpdate = Activar u deactivar l'actualisaziun automatica da l'applicaziun.
 policy-AppUpdateURL = Definir ina URL dad actualisaziun persunalisada per l'applicaziun.
 policy-Authentication = Configurar l'autentificaziun integrada per websites che la sustegnan.
-policy-BackgroundAppUpdate = Activar u deactivar il sistem d'actualisaziun davos las culissas che actualisescha il navigatur cura ch'el n'è betg en funcziun.
+policy-BackgroundAppUpdate2 = Activar u deactivar las actualisaziuns davos las culissas.
 policy-BlockAboutAddons = Bloccar l'access a l'administraziun da supplements (about:addons).
 policy-BlockAboutConfig = Bloccar l'access a la pagina about:config.
 policy-BlockAboutProfiles = Bloccar l'access a la pagina about:profiles.
@@ -107,6 +108,7 @@ policy-SearchEngines = Configurar ils parameters da maschinas da tschertgar. Que
 policy-SearchSuggestEnabled = Activar u deactivar propostas da tschertga.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Installar moduls PKCS #11.
+policy-ShowHomeButton = Mussar il buttun da la pagina da partenza en la trav d'utensils.
 policy-SSLVersionMax = Definir la versiun maximala da SSL.
 policy-SSLVersionMin = Definir la versiun minimala da SSL.
 policy-SupportMenu = Agiuntar in element da menu persunalisà en il menu d'agid.

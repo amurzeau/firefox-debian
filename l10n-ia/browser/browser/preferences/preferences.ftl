@@ -28,6 +28,18 @@ search-input-box =
             [windows] Cercar in le optiones
            *[other] Cercar in le preferentias
         }
+settings-page-title = Parametros
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 16em
+    .placeholder = Cercar in parametros
 managed-notice = Tu navigator debe ser gerite per tu organisation.
 category-list =
     .aria-label = Categorias
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Sync
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = Experimentos de { -brand-short-name }
 category-experimental =
     .tooltiptext = Experimentos de { -brand-short-name }
 pane-experimental-subtitle = Proceder con cautela
 pane-experimental-search-results-header = Experimentos { -brand-short-name }: continuar con attention
 pane-experimental-description = Cambiar le preferentias avantiate de configuration pote haber impacto sur le prestationes e le securitate de { -brand-short-name }.
+pane-experimental-description2 = Cambiar parametros de configuration avantiate pote haber impacto sur le prestationes e le securitate de { -brand-short-name }.
 pane-experimental-reset =
     .label = Restaurar predefinitiones
     .accesskey = R
@@ -98,7 +114,7 @@ extension-controlled-web-notifications = Un extension, <img data-l10n-name="icon
 extension-controlled-default-search = Un extension, <img data-l10n-name="icon"/> { $name }, ha definite le motor de recerca ordinari.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
-extension-controlled-privacy-containers = Un extension, <img data-l10n-name="icon"/> { $name }, require schedas contextual.
+extension-controlled-privacy-containers = Un extension, <img data-l10n-name="icon"/> { $name }, require schedas contentor.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlled-websites-content-blocking-all-trackers = Le extension <img data-l10n-name="icon"/>{ $name } controla iste configuration.
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] Pardono! Il ha nulle resultato in le optiones pro “<span data-l10n-name="query"></span>”.
        *[other] Pardono! Il ha nulle resultato in le preferentias pro “<span data-l10n-name="query"></span>”.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Pardono! Il ha nulle resultato in le parametros pro “<span data-l10n-name="query"></span>”.
 search-results-help-link = Require adjuta? Visita <a data-l10n-name="url">Assistentia de { -brand-short-name }</a>
 
 ## General Section
@@ -168,34 +186,34 @@ show-tabs-in-taskbar =
     .label = Monstrar vistas preliminar del schedas in le barra de cargas de Windows
     .accesskey = v
 browser-containers-enabled =
-    .label = Activar schedas contextual
+    .label = Activar schedas contentor
     .accesskey = n
 browser-containers-learn-more = Saper plus
 browser-containers-settings =
     .label = Parametros…
     .accesskey = P
-containers-disable-alert-title = Clauder tote le schedas contextual?
+containers-disable-alert-title = Clauder tote le schedas contentor?
 containers-disable-alert-desc =
     { $tabCount ->
-        [one] Si tu disactiva le schedas contextual ora, { $tabCount } scheda contextual essera claudite. Desira tu vermente disactivar le schedas contextual?
-       *[other] Si tu disactiva le schedas contextual ora, { $tabCount } schedas contextual essera claudite. Desira tu vermente disactivar le schedas contextual?
+        [one] Si tu disactiva le schedas contentor ora, { $tabCount } scheda contentor essera claudite. Desira tu vermente disactivar le schedas contentor?
+       *[other] Si tu disactiva le schedas contentor ora, { $tabCount } schedas contentor essera claudite. Desira tu vermente disactivar le schedas contentor?
     }
 containers-disable-alert-ok-button =
     { $tabCount ->
-        [one] Clauder { $tabCount } scheda contextual
-       *[other] Clauder { $tabCount } schedas contextual
+        [one] Clauder { $tabCount } scheda contentor
+       *[other] Clauder { $tabCount } schedas contentor
     }
 containers-disable-alert-cancel-button = Mantener active
-containers-remove-alert-title = Remover iste contexto?
+containers-remove-alert-title = Remover iste contentor?
 # Variables:
 #   $count (Number) - Number of tabs that will be closed.
 containers-remove-alert-msg =
     { $count ->
-        [one] Si tu remove iste contexto ora, { $count } scheda contextual essera claudite. Es tu secur de voler remover iste contexto?
-       *[other] Si tu remove iste contexto ora, { $count } schedas contextual essera claudite. Es tu secur de voler remover iste contexto?
+        [one] Si tu remove iste contentor ora, { $count } scheda contentor essera claudite. Es tu secur de voler remover iste contentor?
+       *[other] Si tu remove iste contentor ora, { $count } schedas contentor essera claudite. Es tu secur de voler remover iste contentor?
     }
-containers-remove-ok-button = Remover iste contexto
-containers-remove-cancel-button = Non remover iste contexto
+containers-remove-ok-button = Remover iste contentor
+containers-remove-cancel-button = Non remover iste contentor
 
 ## General Section - Language & Appearance
 
@@ -259,7 +277,7 @@ download-choose-folder =
     .label =
         { PLATFORM() ->
             [macos] Eliger…
-           *[other] Perquirer…
+           *[other] Percurrer…
         }
     .accesskey =
         { PLATFORM() ->
@@ -369,6 +387,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Non cercar jammais actualisationes (non recommendate)
     .accesskey = N
+update-application-background-enabled =
+    .label = Quando { -brand-short-name } non es in execution
+    .accesskey = Q
 update-application-warning-cross-user-setting = Iste configuration sera applicate a tote le contos de Windows e profilos de { -brand-short-name } per iste installation de { -brand-short-name }.
 update-application-use-service =
     .label = Usar un servicio in secunde plano pro installar le actualisationes
@@ -380,6 +401,15 @@ update-setting-write-failure-title = Impossibile registrar preferentias de actua
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
     { -brand-short-name } ha incontrate un error e non ha potite registrar iste cambiamento. Nota que modificar iste preferentia de actualisation necessita le permission de scriber al file mentionate infra. Tu, o un administrator de systema, pote forsan corriger le problema per conceder al gruppo Usatores le controlo complete de iste file.
+    
+    Impossibile scriber al file: { $path }
+update-setting-write-failure-title2 = Impossibile registrar parametros de actualisation
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name } ha incontrate un error e non ha potite registrar iste cambiamento. Nota que modificar iste parametro de actualisation necessita le permission de scriber al file mentionate infra. Tu, o un administrator de systema, pote forsan corriger le problema per conceder al gruppo Usatores le controlo complete de iste file.
     
     Impossibile scriber al file: { $path }
 update-in-progress-title = Actualisation in curso
@@ -579,6 +609,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Monstrar suggestiones de recerca in fenestras private
 suggestions-addressbar-settings-generic = Cambiar preferentias pro altere suggestiones in le barra de adresse
+suggestions-addressbar-settings-generic2 = Cambiar parametros pro altere suggestiones in le barra de adresse
 search-suggestions-cant-show = Le suggestiones de recerca non essera monstrate inter le resultatos del barra de adresse perque tu ha configurate { -brand-short-name } pro non memorisar jammais le chronologia.
 search-one-click-header = Motores de recerca a un sol clic
 search-one-click-header2 = Accessos directe pro le recerca
@@ -613,15 +644,19 @@ containers-back-button =
             [windows] Retornar al optiones
            *[other] Retornar al preferentias
         }
-containers-header = Schedas contextual
+containers-back-button2 =
+    .aria-label = Retornar al configuration
+containers-header = Schedas contentor
 containers-add-button =
-    .label = Adder un nove contexto
+    .label = Adder un nove contentor
     .accesskey = A
 containers-new-tab-check =
-    .label = Seliger un contexto pro cata nove scheda
+    .label = Seliger un contentor pro cata nove scheda
     .accesskey = S
 containers-preferences-button =
     .label = Preferentias
+containers-settings-button =
+    .label = Parametros
 containers-remove-button =
     .label = Remover
 
@@ -632,6 +667,10 @@ sync-signedout-caption = Porta le web con te
 sync-signedout-description = Synchronisa tu marcapaginas, chronologia, contrasignos, additivos, e preferentias inter tote tu apparatos.
 sync-signedout-account-signin2 =
     .label = Aperir session in { -sync-brand-short-name }…
+    .accesskey = A
+sync-signedout-description2 = Synchronisa tu marcapaginas, chronologia, contrasignos, additivos, e parametros inter tote tu apparatos.
+sync-signedout-account-signin3 =
+    .label = Aperi session pro synchronisar…
     .accesskey = A
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -672,6 +711,10 @@ prefs-sync-setup =
     .label = Configuration de { -sync-brand-short-name }…
     .accesskey = C
 prefs-sync-offer-setup-label = Synchronisa tu marcapaginas, chronologia, contrasignos, additivos e preferentias inter tote tu apparatos.
+prefs-sync-turn-on-syncing =
+    .label = Activar synchronisation…
+    .accesskey = s
+prefs-sync-offer-setup-label2 = Synchronisa tu marcapaginas, chronologia, contrasignos, additivos, e parametros inter tote tu apparatos.
 prefs-sync-now =
     .labelnotsyncing = Synchronisar ora
     .accesskeynotsyncing = o
@@ -683,7 +726,7 @@ sync-currently-syncing-heading = Tu synchronisa actualmente iste elementos:
 sync-currently-syncing-bookmarks = Marcapaginas
 sync-currently-syncing-history = Chronologia
 sync-currently-syncing-tabs = Schedas aperte
-sync-currently-syncing-logins-passwords = Connexiones e contrasignos
+sync-currently-syncing-logins-passwords = Contos e contrasignos
 sync-currently-syncing-addresses = Adresses
 sync-currently-syncing-creditcards = Cartas de credito
 sync-currently-syncing-addons = Additivos
@@ -692,6 +735,7 @@ sync-currently-syncing-prefs =
         [windows] Optiones
        *[other] Preferentias
     }
+sync-currently-syncing-settings = Parametros
 sync-change-options =
     .label = Cambiar…
     .accesskey = C
@@ -716,7 +760,7 @@ sync-engine-tabs =
     .tooltiptext = Un lista de lo que es aperte sur tote le apparatos synchronisate
     .accesskey = T
 sync-engine-logins-passwords =
-    .label = Credentiales e contrasignos
+    .label = Contos e contrasignos
     .tooltiptext = Nomines de usator e contrasignos que tu ha salvate
     .accesskey = C
 sync-engine-addresses =
@@ -739,6 +783,10 @@ sync-engine-prefs =
         }
     .tooltiptext = Parametros gederal, de confidentialitate e de securitate que tu modificava
     .accesskey = S
+sync-engine-settings =
+    .label = Parametros
+    .tooltiptext = Parametros general, de confidentialitate e securitate que tu ha cambiate
+    .accesskey = s
 
 ## The device name controls.
 
@@ -761,11 +809,11 @@ privacy-header = Confidentialitate del navigator
 ## Privacy Section - Logins and Passwords
 
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
-pane-privacy-logins-and-passwords-header = Authenticationes e contrasignos
+pane-privacy-logins-and-passwords-header = Contos e contrasignos
     .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
-    .label = Demanda de salvar authenticationes e contrasignos de sito
+    .label = Proponer de salvar contos e contrasignos pro sitos web
     .accesskey = r
 forms-exceptions =
     .label = Exceptiones…
@@ -895,9 +943,9 @@ sitedata-option-block-cross-site-trackers =
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Traciatores inter sitos e de retes social
 sitedata-option-block-cross-site-tracking-cookies-including-social-media =
-    .label = Le cookies traciator inter-sitos — include cookies de retes social
+    .label = Le cookies de traciamento inter sitos, incluse le cookies de retes social
 sitedata-option-block-cross-site-cookies-including-social-media =
-    .label = Le cookies inter-sitos — include cookies de retes social
+    .label = Le cookies inter sitos, incluse le cookies de retes social
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Traciatores inter sitos e de social media, e isolar le cookies restante
 sitedata-option-block-unvisited =
@@ -971,7 +1019,7 @@ content-blocking-etp-standard-desc = Equilibrio inter protection e rendimento. L
 content-blocking-etp-strict-desc = Protection reinfortiate, ma certe sitos o contento pote non functionar correctemente.
 content-blocking-etp-custom-desc = Elige qual traciatores e scripts blocar.
 content-blocking-private-windows = Contento de traciamento in fenestras private
-content-blocking-cross-site-cookies = Cookies inter-sitos
+content-blocking-cross-site-cookies = Cookies inter sitos
 content-blocking-cross-site-tracking-cookies = Cookies de traciamento inter sitos
 content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies de traciamento inter sitos, e isolar le cookies restante
 content-blocking-social-media-trackers = Traciatores de retes social
@@ -1153,6 +1201,11 @@ space-alert-under-5gb-ok-button =
     .label = De accordo
     .accesskey = D
 space-alert-under-5gb-message = { -brand-short-name } non ha bastante spatio de disco disponibile. Le contento de sitos web pote non esser monstrate correctemente. Visita “Apprender plus” pro optimisar le uso de tu disco pro un melior experientia de navigation.
+space-alert-over-5gb-settings-button =
+    .label = Aperir le parametros
+    .accesskey = A
+space-alert-over-5gb-message2 = <strong>Le spatio de disco disponibile a { -brand-short-name } es quasi exhaurite.</strong> Le contento de sitos web pote non monstrar se correctemente. Tu pote eliminar datos immagazinate in Parametros > Confidentialitate & Securitate > Cookies e Datos de sito.
+space-alert-under-5gb-message2 = <strong>Le spatio de disco disponibile a { -brand-short-name } es quasi exhaurite.</strong> Le contento de sitos web pote non monstrar se correctemente. Visita “Apprender plus” pro optimisar le uso de tu disco pro un melior experientia de navigation.
 
 ## Privacy Section - HTTPS-Only
 

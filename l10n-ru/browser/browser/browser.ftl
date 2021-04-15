@@ -268,11 +268,28 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Добавить закладку
+bookmarks-edit-bookmark = Изменить закладку
+bookmark-panel-cancel =
+    .label = Отмена
+    .accesskey = м
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Удалить { $count } закладку
+            [few] Удалить { $count } закладки
+           *[many] Удалить { $count } закладок
+        }
+    .accesskey = а
 bookmark-panel-show-editor-checkbox =
     .label = Показывать редактор при сохранении
     .accesskey = ы
 bookmark-panel-done-button =
     .label = Готово
+bookmark-panel-save-button =
+    .label = Сохранить
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -292,6 +309,8 @@ identity-passive-loaded = Части этой страницы (такие ка�
 identity-active-loaded = Вы отключили защиту на этой странице.
 identity-weak-encryption = Эта страница использует слабое шифрование.
 identity-insecure-login-forms = Учётные данные, вводимые на этой странице, могут быть скомпрометированы.
+identity-permissions =
+    .value = Разрешения
 identity-https-only-connection-upgraded = (переключено на HTTPS)
 identity-https-only-label = Режим «Только HTTPS»
 identity-https-only-dropdown-on =
@@ -303,8 +322,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Включите для этого сайта Режим «Только HTTPS», если хотите, чтобы { -brand-short-name } по возможности переключался на безопасное соединение.
 identity-https-only-info-turn-off2 = Если страница кажется сломанной, вы можете отключить для этого сайта режим «Только HTTPS», чтобы перезагрузить его с использованием незащищённого HTTP.
 identity-https-only-info-no-upgrade = Невозможно переключить соединение с HTTP.
-identity-permissions =
-    .value = Разрешения
 identity-permissions-storage-access-header = Межсайтовые куки
 identity-permissions-storage-access-hint = Следующие стороны могут использовать межсайтовые куки и данные сайта, пока вы находитесь на этом сайте.
 identity-permissions-reload-hint = Чтобы изменения возымели действие, вам, возможно, потребуется перезагрузить страницу.
@@ -352,8 +369,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Проигрывается
-browser-tab-audio-muted = Звук отключён
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = ВОСПРОИЗВОДИТСЯ
 # This label should be written in all capital letters if your locale supports them.
@@ -361,7 +376,33 @@ browser-tab-audio-muted2 = БЕЗ ЗВУКА
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-blocked = АВТОВОСПРОИЗВЕДЕНИЕ ЗАБЛОКИРОВАНО
 # This label should be written in all capital letters if your locale supports them.
-browser-tab-audio-pip = КАРТИНКА-В-КАРТИНКЕ
+browser-tab-audio-pip = КАРТИНКА В КАРТИНКЕ
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] УБРАТЬ ЗВУК ВО ВКЛАДКЕ
+        [one] УБРАТЬ ЗВУК В { $count } ВКЛАДКЕ
+        [few] УБРАТЬ ЗВУК В { $count } ВКЛАДКАХ
+       *[many] УБРАТЬ ЗВУК В { $count } ВКЛАДКАХ
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] ВОССТАНОВИТЬ ЗВУК ВО ВКЛАДКЕ
+        [one] ВОССТАНОВИТЬ ЗВУК В { $count } ВКЛАДКЕ
+        [few] ВОССТАНОВИТЬ ЗВУК В { $count } ВКЛАДКАХ
+       *[many] ВОССТАНОВИТЬ ЗВУК В { $count } ВКЛАДКАХ
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] ВОСПРОИЗВЕСТИ ЗВУК ВО ВКЛАДКЕ
+        [one] ВОСПРОИЗВЕСТИ ЗВУК В { $count } ВКЛАДКЕ
+        [few] ВОСПРОИЗВЕСТИ ЗВУК В { $count } ВКЛАДКАХ
+       *[many] ВОСПРОИЗВЕСТИ ЗВУК В { $count } ВКЛАДКАХ
+    }
 
 ## Bookmarks toolbar items
 
@@ -513,6 +554,13 @@ urlbar-result-action-tabtosearch-web = Ищите в { $engine } прямо в �
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Ищите на { $engine } прямо в адресной строке
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Копировать
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -554,8 +602,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Показать все закладки
-bookmarks-recent-bookmarks =
-    .value = Недавно добавленные закладки
 bookmarks-manage-bookmarks =
     .label = Управление закладками
 bookmarks-recent-bookmarks-panel =
@@ -576,12 +622,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Скрыть боковую панель закладок
            *[other] Показать боковую панель закладок
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Скрыть панель закладок
-           *[other] Показать панель закладок
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -628,12 +668,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Закладки
-library-bookmarks-bookmark-this-page =
-    .label = Добавить страницу в закладки
-library-bookmarks-bookmark-edit =
-    .label = Редактировать эту закладку
 library-recent-activity-title =
     .value = Последние действия
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Сохранить в { -pocket-brand-name }
+    .tooltiptext = Сохранить в { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Дополнения и темы
+    .tooltiptext = Управляйте своими дополнениями и темами ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Настройки
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Открыть настройки ({ $shortcut })
+           *[other] Открыть настройки
+        }
 
 ## More items
 
@@ -660,3 +719,9 @@ panel-save-update-password = Пароль
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = Удалить { $name }?
 addon-removal-abuse-report-checkbox = Пожаловаться на это расширение в { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Управление аккаунтом
+remote-tabs-sync-now = Синхронизировать

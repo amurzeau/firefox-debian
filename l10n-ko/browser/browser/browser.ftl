@@ -256,11 +256,23 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = 북마크 추가
+bookmarks-edit-bookmark = 북마크 편집
+bookmark-panel-cancel =
+    .label = 취소
+    .accesskey = C
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label = 북마크 { $count }개 삭제
+    .accesskey = R
 bookmark-panel-show-editor-checkbox =
     .label = 저장할 때 편집기 표시
     .accesskey = S
 bookmark-panel-done-button =
     .label = 완료
+bookmark-panel-save-button =
+    .label = 저장
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -280,6 +292,8 @@ identity-passive-loaded = 페이지의 일부(이미지 등)가 안전하지 않
 identity-active-loaded = 이 페이지에서 보호를 비활성화하셨습니다.
 identity-weak-encryption = 이 페이지는 약한 암호화를 사용합니다.
 identity-insecure-login-forms = 이 페이지에 입력된 로그인 정보는 노출될 수 있습니다.
+identity-permissions =
+    .value = 권한
 identity-https-only-connection-upgraded = (HTTPS로 업그레이드됨)
 identity-https-only-label = HTTPS 전용 모드
 identity-https-only-dropdown-on =
@@ -291,8 +305,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = { -brand-short-name }가 가능한 경우 연결을 업그레이드하도록 하려면 이 사이트에 대해 HTTPS 전용 모드를 켜세요.
 identity-https-only-info-turn-off2 = 페이지가 손상된 것 같으면 이 사이트가 안전하지 않은 HTTP를 사용하여 다시 로드되도록 HTTPS 전용 모드를 끌 수 있습니다.
 identity-https-only-info-no-upgrade = HTTP에서 연결을 업그레이드할 수 없습니다.
-identity-permissions =
-    .value = 권한
 identity-permissions-storage-access-header = 교차 사이트 쿠키
 identity-permissions-storage-access-hint = 이 당사자는 사용자가 이 사이트에 있는 동안 교차 사이트 쿠키 및 사이트 데이터를 사용할 수 있습니다.
 identity-permissions-reload-hint = 변경 사항을 적용하려면 페이지를 다시 로드해야할 수도 있습니다.
@@ -340,8 +352,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = 재생 중
-browser-tab-audio-muted = 음소거됨
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = 재생 중
 # This label should be written in all capital letters if your locale supports them.
@@ -350,6 +360,26 @@ browser-tab-audio-muted2 = 음소거됨
 browser-tab-audio-blocked = 자동 재생 차단됨
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = 화면 속 화면
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] 탭 음소거
+       *[other] 탭 { $count }개 음소거
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] 탭 음소거 해제
+       *[other] 탭 { $count }개 음소거 해제
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] 탭 재생
+       *[other] 탭 { $count }개 재생
+    }
 
 ## Bookmarks toolbar items
 
@@ -501,6 +531,13 @@ urlbar-result-action-tabtosearch-web = 주소 표시줄에서 직접 { $engine }
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = 주소 표시줄에서 직접 { $engine } 검색
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = 복사
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -542,8 +579,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = 모든 북마크 보기
-bookmarks-recent-bookmarks =
-    .value = 최근 북마크됨
 bookmarks-manage-bookmarks =
     .label = 북마크 관리
 bookmarks-recent-bookmarks-panel =
@@ -556,7 +591,7 @@ bookmarks-sidebar-content =
 bookmarks-menu-button =
     .label = 북마크 메뉴
 bookmarks-other-bookmarks-menu =
-    .label = 다른 북마크
+    .label = 기타 북마크
 bookmarks-mobile-bookmarks-menu =
     .label = 모바일 북마크
 bookmarks-tools-sidebar-visibility =
@@ -564,12 +599,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] 북마크 탐색창 숨기기
            *[other] 북마크 탐색창 보기
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] 북마크 도구 모음 숨기기
-           *[other] 북마크 도구 모음 표시
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -616,12 +645,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = 북마크
-library-bookmarks-bookmark-this-page =
-    .label = 이 페이지 북마크
-library-bookmarks-bookmark-edit =
-    .label = 이 북마크 편집
 library-recent-activity-title =
     .value = 최근 활동
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = { -pocket-brand-name }에 저장
+    .tooltiptext = { -pocket-brand-name }에 저장
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = 부가 기능 및 테마
+    .tooltiptext = 부가 기능 및 테마 관리 ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = 설정
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] 설정 열기 ({ $shortcut })
+           *[other] 설정 열기
+        }
 
 ## More items
 
@@ -648,3 +696,9 @@ panel-save-update-password = 비밀번호
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = { $name } 부가 기능을 제거하시겠습니까?
 addon-removal-abuse-report-checkbox = 이 확장 기능을 { -vendor-short-name }에 신고
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = 계정 관리
+remote-tabs-sync-now = 지금 동기화

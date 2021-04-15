@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = { -brand-shorter-name } განახლების ჩამოტვირთვა
+appmenuitem-update-banner2 =
+    .label-update-downloading = ჩამოიტვირთება ახალი { -brand-shorter-name }
+    .label-update-available = განახლება ხელმისაწვდომია — ახლავე ჩამოტვირთვა
+    .label-update-manual = განახლება ხელმისაწვდომია — ახლავე ჩამოტვირთვა
+    .label-update-unsupported = განახლება ვერ ხერხდება
+    .label-update-restart = განახლება ხელმისაწვდომია — ახლავე გადატვირთვა
 appmenuitem-protection-dashboard-title = დაცვის მაჩვენებლები
 appmenuitem-customize-mode =
     .label = მორგება…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = პაროლები
 appmenuitem-extensions-and-themes =
     .label = გაფართოებები და თემები
+appmenuitem-addons-and-themes =
+    .label = დამატებები და თემები
 appmenuitem-find-in-page =
     .label = პოვნა გვერდზე...
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = პროგრამის მენიუს დახურვა
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] დახურვა
+           *[other] გასვლა
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = პროგრამის მენიუს გახსნა
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = პროგრამის მენიუს დახურვა
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = დასინქრონება ახლავე
-appmenuitem-fxa-toolbar-sync-now =
-    .label = დასინქრონება ახლავე
-    .value = დასინქრონება ახლავე
+appmenu-remote-tabs-sign-into-sync =
+    .label = სინქრონიზაციაში შესვლა…
+appmenu-remote-tabs-turn-on-sync =
+    .label = დასინქრონების ჩართვა…
+appmenuitem-fxa-toolbar-sync-now2 = დასინქრონება ახლავე
 appmenuitem-fxa-manage-account = ანგარიშის მართვა
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = ბოლო დასინქრონება { $tim
     .label = ბოლო დასინქრონება { $time }
 appmenu-fxa-sync-and-save-data =
     .value = დასინქრონება და შენახვა
+appmenu-fxa-sync-and-save-data2 = დასინქრონება და შენახვა
 appmenu-fxa-signed-in-label = შესვლა
 appmenu-fxa-setup-sync =
     .label = დასინქრონების ჩართვა…
@@ -135,29 +159,17 @@ appmenu-help-header =
 appmenu-about =
     .label = { -brand-shorter-name } შესახებ
     .accesskey = შ
-appmenu-help-product =
-    .label = { -brand-shorter-name } დახმარება
-    .accesskey = დ
-appmenu-help-show-tour =
-    .label = { -brand-shorter-name } გზამკვლევი
-    .accesskey = ზ
-appmenu-help-import-from-another-browser =
-    .label = გადმოტანა სხვა ბრაუზერიდან…
-    .accesskey = ტ
-appmenu-help-keyboard-shortcuts =
-    .label = კლავიატურის მალსახმობები
-    .accesskey = კ
 appmenu-get-help =
     .label = დახმარება
     .accesskey = დ
 appmenu-help-troubleshooting-info =
     .label = ხარვეზის აღმოფხვრის მონაცემები
     .accesskey = ფ
-appmenu-help-more-troubleshooting-info =
-    .label = ხარვეზის აღმოფხვრის ვრცელი მონაცემები
-    .accesskey = ფ
 appmenu-help-taskmanager =
     .label = ამოცანათა მმართველი
+appmenu-help-more-troubleshooting-info =
+    .label = მონაცემები ხარვეზის აღმოსაფხვრელად
+    .accesskey = ფ
 appmenu-help-report-site-issue =
     .label = საიტის ხარვეზის მოხსენება…
 appmenu-help-feedback-page =
@@ -177,9 +189,9 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = ხარვეზის აღმოფხვრის რეჟიმი
-    .accesskey = ჟ
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = ხარვეზის აღმოფხვრის რეჟიმი…
+    .accesskey = ხ
 appmenu-help-exit-troubleshoot-mode =
     .label = ხარვეზის აღმოფხვრის რეჟიმის გამორთვა
     .accesskey = ჟ
@@ -194,13 +206,10 @@ appmenu-help-not-deceptive =
     .label = ეს თაღლითური საიტი არაა…
     .accesskey = ე
 
-##
-
-appmenu-help-check-for-update =
-    .label = შემოწმება განახლებებზე…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = ხელსაწყოთა ზოლის მორგება...
+appmenu-taskmanager =
+    .label = ამოცანათა მმართველი
 appmenu-developer-tools-subheader = ბრაუზერის ხელსაწყოები

@@ -248,6 +248,20 @@ search-one-offs-context-set-as-default-private =
 
 ## Bookmark Panel
 
+bookmark-panel-cancel =
+    .label = Sguir dheth
+    .accesskey = C
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Thoir air falbh { $count } chomharra-lìn
+            [two] Thoir air falbh { $count } chomharra-lìn
+            [few] Thoir air falbh { $count } chomharran-lìn
+           *[other] Thoir air falbh { $count } comharra-lìn
+        }
+    .accesskey = R
 bookmark-panel-show-editor-checkbox =
     .label = Seall an deasaiche nuair a nithear sàbhaladh
     .accesskey = S
@@ -314,6 +328,11 @@ browser-window-close-button =
     .tooltiptext = Dùin
 
 ## Tab actions
+
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
 
 
 ## Bookmarks toolbar items
@@ -398,8 +417,6 @@ pointerlock-warning-no-domain = Tha smachd aig an sgrìobhainn seo air an tomhai
 
 bookmarks-show-all-bookmarks =
     .label = Seall a h-uile comharra-lìn
-bookmarks-recent-bookmarks =
-    .value = Comharran-lìn a rinn thu o chionn goirid
 bookmarks-toolbar-chevron =
     .tooltiptext = Tuilleadh chomharran-lìn
 bookmarks-sidebar-content =
@@ -415,12 +432,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Falaich bàr-taoibh nan comharra-lìn
            *[other] Seall bàr-taoibh nan comharra-lìn
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Falaich bàr-inneal nan comharra-lìn
-           *[other] Seall bàr nan comharra-lìn
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -451,10 +462,15 @@ bookmarks-toolbar-placeholder-button =
 
 library-bookmarks-menu =
     .label = Comharran-lìn
-library-bookmarks-bookmark-this-page =
-    .label = Cruthaich comharra-lìn dhan duilleag seo
-library-bookmarks-bookmark-edit =
-    .label = Deasaich an comharra-lìn seo
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Sàbhail ann am { -pocket-brand-name }
+    .tooltiptext = Sàbhail ann am { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
 
 ## More items
 
@@ -465,3 +481,12 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = Tha cuid dhen fhuaim no video air an làrach seo a' cleachdadh bathar-bog DRM agus dh'fhaoidte gun cuingich seo na 's urrainn dhut a dhèanamh leis ann am { -brand-short-name }.
+
+## Password save/update panel
+
+
+## Add-on removal warning
+
+
+## Remote / Synced tabs
+

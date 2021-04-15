@@ -62,7 +62,7 @@ urlbar-eme-notification-anchor =
 urlbar-web-authn-anchor =
     .tooltiptext = 打开 Web 认证面板
 urlbar-canvas-notification-anchor =
-    .tooltiptext = 管理画布(canvas)提取权限
+    .tooltiptext = 管理 Canvas 获取权限
 urlbar-web-rtc-share-microphone-notification-anchor =
     .tooltiptext = 管理您是否与该网站共享麦克风
 urlbar-default-notification-anchor =
@@ -256,11 +256,23 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = 新建书签
+bookmarks-edit-bookmark = 编辑书签
+bookmark-panel-cancel =
+    .label = 取消
+    .accesskey = C
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label = 移除 { $count } 个书签
+    .accesskey = R
 bookmark-panel-show-editor-checkbox =
     .label = 保存时显示编辑器
     .accesskey = S
 bookmark-panel-done-button =
     .label = 完成
+bookmark-panel-save-button =
+    .label = 保存
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -280,6 +292,8 @@ identity-passive-loaded = 此页面上部分内容不安全（例如图像）。
 identity-active-loaded = 您在此页面上已禁用保护。
 identity-weak-encryption = 此页面使用较弱加密。
 identity-insecure-login-forms = 在此网页上输入的登录信息可能会泄露。
+identity-permissions =
+    .value = 权限
 identity-https-only-connection-upgraded = （升级为 HTTPS）
 identity-https-only-label = HTTPS-Only 模式
 identity-https-only-dropdown-on =
@@ -291,8 +305,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = 若想要 { -brand-short-name } 尽可能升级为安全连接，请对此网站开启 HTTPS-Only 模式。
 identity-https-only-info-turn-off2 = 若页面看起来不正常，则可能需要对此网站关闭 HTTPS-Only 模式，使用不安全的 HTTP 重新载入。
 identity-https-only-info-no-upgrade = 无法将网站连接从 HTTP 升级。
-identity-permissions =
-    .value = 权限
 identity-permissions-storage-access-header = 跨网站 Cookie
 identity-permissions-storage-access-hint = 当您在此网站上时，以下各方可以使用跨网站 Cookie 和网站数据。
 identity-permissions-reload-hint = 您可能需要重新载入此页面以应用更改。
@@ -340,16 +352,34 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = 正在播放
-browser-tab-audio-muted = 静音
 # This label should be written in all capital letters if your locale supports them.
-browser-tab-audio-playing2 = 正在播放
+browser-tab-audio-playing2 = 播放声音中
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-muted2 = 静音
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-blocked = 已阻止自动播放
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = 画中画
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] 静音标签页
+       *[other] 静音 { $count } 个标签页
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] 取消静音标签页
+       *[other] 取消静音 { $count } 个标签页
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] 播放标签页
+       *[other] 播放 { $count } 个标签页
+    }
 
 ## Bookmarks toolbar items
 
@@ -501,6 +531,13 @@ urlbar-result-action-tabtosearch-web = 直接从地址栏 { $engine } 一下
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = 直接从地址栏在 { $engine } 上搜索
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = 复制
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -542,8 +579,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = 管理所有书签
-bookmarks-recent-bookmarks =
-    .value = 最近的书签
 bookmarks-manage-bookmarks =
     .label = 管理书签
 bookmarks-recent-bookmarks-panel =
@@ -564,12 +599,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] 隐藏书签侧栏
            *[other] 显示书签侧栏
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] 隐藏书签工具栏
-           *[other] 查看书签工具栏
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -616,12 +645,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = 书签
-library-bookmarks-bookmark-this-page =
-    .label = 为此页添加书签
-library-bookmarks-bookmark-edit =
-    .label = 编辑此书签
 library-recent-activity-title =
     .value = 近期动态
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = 保存到 { -pocket-brand-name }
+    .tooltiptext = 保存到 { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = 扩展和主题
+    .tooltiptext = 管理您的扩展和主题（{ $shortcut }）
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = 设置
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] 打开设置（{ $shortcut }）
+           *[other] 打开设置
+        }
 
 ## More items
 
@@ -634,7 +682,7 @@ more-menu-go-offline =
 eme-notifications-drm-content-playing = 此网站的一些音频或视频使用了含数字版权管理（DRM）的软件，这可能会限制 { -brand-short-name } 能让您使用的功能。
 eme-notifications-drm-content-playing-manage = 管理设置
 eme-notifications-drm-content-playing-manage-accesskey = M
-eme-notifications-drm-content-playing-dismiss = 了解！
+eme-notifications-drm-content-playing-dismiss = 知道了
 eme-notifications-drm-content-playing-dismiss-accesskey = D
 
 ## Password save/update panel
@@ -648,3 +696,9 @@ panel-save-update-password = 密码
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = 要移除 { $name } 吗？
 addon-removal-abuse-report-checkbox = 向 { -vendor-short-name } 举报此扩展
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = 管理账户
+remote-tabs-sync-now = 立即同步

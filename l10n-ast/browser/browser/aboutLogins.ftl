@@ -18,6 +18,7 @@ login-filter =
 create-login-button = Crear un aniciu de sesión
 fxaccounts-sign-in-text = Consigui les tos contraseñes n'otros preseos
 fxaccounts-sign-in-button = Aniciar sesión en { -sync-brand-short-name }
+fxaccounts-sign-in-sync-button = Aniciar sesión pa sincronizar
 fxaccounts-avatar-button =
     .title = Xestionar la cuenta
 
@@ -52,7 +53,6 @@ login-list-sort-label-text = Ordenar por:
 login-list-name-option = Nome (A-Z)
 login-list-name-reverse-option = Nome (Z-A)
 about-logins-login-list-alerts-option = Alertes
-login-list-last-changed-option = Última modificación
 login-list-last-used-option = Últimu usu
 login-list-intro-title = Nun s'atoparon anicios de sesión
 login-list-intro-description = Equí van amosase les contraseñes cuando les guardes en { -brand-product-name }.
@@ -70,11 +70,13 @@ about-logins-list-item-vulnerable-password-icon =
 
 login-intro-heading = ¿Busques los anicios de sesión guardaos? Configura { -sync-brand-short-name }.
 about-logins-login-intro-heading-logged-out = ¿Busques los anicios de sesión guardaos? Configura { -sync-brand-short-name } o impórtalos.
+about-logins-login-intro-heading-logged-out2 = ¿Busques los tos anicios de sesión guardaos? Activa la sincronización pa importalos.
 about-logins-login-intro-heading-logged-in = Nun s'atoparon anicios de sesión sincronizaos.
 login-intro-description = Si guardesti los anicios de sesión nel { -brand-product-name } d'otru preséu, esti ye'l mou de tenelos equí:
 login-intro-instruction-fxa = Crea una { -fxaccount-brand-name } o anicia sesión nel preséu onde se guarden los tos anicios de sesión
 login-intro-instruction-fxa-settings = Asegúrate de que marcares el caxellu «Anicios de sesión» nos axustes de { -sync-brand-short-name }
 about-logins-intro-instruction-help = Visita'l <a data-l10n-name="help-link">Sofitu de { -lockwise-brand-short-name }</a> pa más ayuda
+login-intro-instructions-fxa-help = Visita'l <a data-l10n-name="help-link">Sofitu de { -lockwise-brand-short-name }</a> pa más ayuda.
 about-logins-intro-import = Si los tos anicios de sesión tán guardaos n'otru restolador, pues <a data-l10n-name="import-link">importalos a { -lockwise-brand-short-name }</a>
 about-logins-intro-import2 = Si los tos anicios de sesión tán guardaos fuera de { -brand-product-name }, pues <a data-l10n-name="import-browser-link">importalos d'otru restolador</a> o <a data-l10n-name="import-file-link">d'un ficheru</a>
 
@@ -100,7 +102,6 @@ login-item-copied-password-button-text = ¡Copióse!
 login-item-save-changes-button = Guardar los cambeos
 login-item-save-new-button = Guardar
 login-item-cancel-button = Encaboxar
-login-item-time-changed = Última modificación: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
 login-item-time-created = Data de creación: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = Últimu usu: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
 
@@ -221,7 +222,7 @@ about-logins-breach-alert-date = Esti arrampuñamientu asocedió'l { DATETIME($d
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
 about-logins-breach-alert-link = Dir a { $hostname }
-about-logins-breach-alert-learn-more-link = Deprender más
+about-logins-breach-alert-learn-more-link = Lleer más
 
 ## Vulnerable Password notification
 
@@ -230,7 +231,7 @@ about-logins-vulnerable-alert-text2 = Esta contraseña usóse n'otra cuenta que 
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
 about-logins-vulnerable-alert-link = Dir a { $hostname }
-about-logins-vulnerable-alert-learn-more-link = Deprender más
+about-logins-vulnerable-alert-learn-more-link = Lleer más
 
 ## Error Messages
 
@@ -314,10 +315,11 @@ about-logins-import-dialog-error-file-permission-description = { -brand-short-na
 about-logins-import-dialog-error-unable-to-read-title = Nun ye posible analizar el ficheru
 about-logins-import-dialog-error-unable-to-read-description = Asegúrate de qu'esbillesti un ficheru CSV o TSV.
 about-logins-import-dialog-error-no-logins-imported = Nun s'importó nengún aniciu de sesión
-about-logins-import-dialog-error-learn-more = Deprender más
+about-logins-import-dialog-error-learn-more = Lleer más
 about-logins-import-dialog-error-try-again = Retentar…
 about-logins-import-dialog-error-cancel = Encaboxar
 about-logins-import-report-title = Sumariu de la importación
+about-logins-import-report-description = Anicios de sesión y contraseñes importaos a { -brand-short-name }.
 #
 # Variables:
 #  $number (number) - The number of the row
@@ -333,6 +335,11 @@ about-logins-import-report-row-description-error-missing-field = Fallu: Falta { 
 ## Variables:
 ##  $count (number) - The number of affected elements
 
+about-logins-import-report-added =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div><div data-l10n-name="details">Aniciu de sesión nuevu</div>
+       *[other] <div data-l10n-name="count">{ $count }</div><div data-l10n-name="details">Anicios de sesión nuevos</div>
+    }
 
 ## Logins import report page
 

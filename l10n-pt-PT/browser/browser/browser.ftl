@@ -264,11 +264,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Adicionar marcador
+bookmarks-edit-bookmark = Editar marcador
+bookmark-panel-cancel =
+    .label = Cancelar
+    .accesskey = C
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Remover marcador
+           *[other] Remover { $count } marcadores
+        }
+    .accesskey = R
 bookmark-panel-show-editor-checkbox =
     .label = Mostrar o editor ao guardar
     .accesskey = s
 bookmark-panel-done-button =
     .label = Feito
+bookmark-panel-save-button =
+    .label = Guardar
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -288,6 +304,8 @@ identity-passive-loaded = Partes desta página não são seguras (tais como imag
 identity-active-loaded = Desativou a proteção nesta página.
 identity-weak-encryption = Esta página utiliza encriptação fraca.
 identity-insecure-login-forms = Credenciais introduzidas nesta página podem ser comprometidas.
+identity-permissions =
+    .value = Permissões
 identity-https-only-connection-upgraded = (atualizado para HTTPS)
 identity-https-only-label = Modo apenas HTTPS
 identity-https-only-dropdown-on =
@@ -299,8 +317,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Ative o modo Apenas HTTPS para este site se quiser que o { -brand-short-name } atualize para uma ligação segura sempre que for possível.
 identity-https-only-info-turn-off2 = Se o site parecer estragado, pode querer desativar o modo Apenas HTTPS para este site para recarregar utilizando o HTTP não-seguro.
 identity-https-only-info-no-upgrade = Não foi possível atualizar a ligação de HTTP.
-identity-permissions =
-    .value = Permissões
 identity-permissions-storage-access-header = Cookies inter-sites
 identity-permissions-storage-access-hint = Estas entidades podem utilizar cookies inter-sites e dados do site enquanto estiver neste site.
 identity-permissions-reload-hint = Poderá ter de recarregar a página para as alterações se aplicarem.
@@ -348,8 +364,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = A reproduzir
-browser-tab-audio-muted = Silenciado
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = A REPRODUZIR
 # This label should be written in all capital letters if your locale supports them.
@@ -358,6 +372,29 @@ browser-tab-audio-muted2 = SILENCIADO
 browser-tab-audio-blocked = REPRODUÇÃO AUTOMÁTICA BLOQUEADA
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = IMAGEM NA IMAGEM
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] SILENCIAR SEPARADOR
+        [one] SILENCIAR SEPARADOR
+       *[other] SILENCIAR { $count } SEPARADORES
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] REPOR SOM NO SEPARADOR
+        [one] REPOR SOM NO SEPARADOR
+       *[other] REPOR SOM EM { $count } SEPARADORES
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] REPRODUZIR SEPARADOR
+        [one] REPRODUZIR SEPARADOR
+       *[other] REPRODUZIR { $count } SEPARADORES
+    }
 
 ## Bookmarks toolbar items
 
@@ -509,6 +546,13 @@ urlbar-result-action-tabtosearch-web = Pesquisar com o { $engine } diretamente d
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Pesquisar o { $engine } diretamente da barra de endereço
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Copiar
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -550,8 +594,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Mostrar todos os marcadores
-bookmarks-recent-bookmarks =
-    .value = Marcadores recentes
 bookmarks-manage-bookmarks =
     .label = Gerir marcadores
 bookmarks-recent-bookmarks-panel =
@@ -572,12 +614,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Ocultar barra lateral de marcadores
            *[other] Ver barra lateral de marcadores
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Ocultar barra de ferramentas de marcadores
-           *[other] Ver barra de ferramentas de marcadores
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -624,12 +660,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Marcadores
-library-bookmarks-bookmark-this-page =
-    .label = Adicionar esta página aos marcadores
-library-bookmarks-bookmark-edit =
-    .label = Editar este marcador
 library-recent-activity-title =
     .value = Atividade recente
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Guardar no { -pocket-brand-name }
+    .tooltiptext = Guardar no { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Extensões e temas
+    .tooltiptext = Faça a gestão das suas extensões e temas ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Definições
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Abrir definições ({ $shortcut })
+           *[other] Abrir definições
+        }
 
 ## More items
 
@@ -656,3 +711,9 @@ panel-save-update-password = Palavra-passe
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = Remover { $name }?
 addon-removal-abuse-report-checkbox = Reportar esta extensão à { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Gerir conta
+remote-tabs-sync-now = Sincronizar agora

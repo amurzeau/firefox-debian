@@ -264,11 +264,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Embojuaju Techaukaha
+bookmarks-edit-bookmark = Embosako’i Techaukaha
+bookmark-panel-cancel =
+    .label = Heja
+    .accesskey = C
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Techaukaha ñemboguete
+           *[other] { $count } techaukaha ñemboguete
+        }
+    .accesskey = R
 bookmark-panel-show-editor-checkbox =
     .label = Ehechauka mbosako’iha eñongatúvo
     .accesskey = S
 bookmark-panel-done-button =
     .label = Mohu’ã
+bookmark-panel-save-button =
+    .label = Ñongatu
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -288,6 +304,8 @@ identity-passive-loaded = Ko kuatiarogue pehẽ heta hendápe nda’ijeroviapái
 identity-active-loaded = Ndereguerekói pa’ũ ko kuatiaroguépe g̃uarã.
 identity-weak-encryption = Ko kuatiarogue oipuru ñangarekoha ikangýva.
 identity-insecure-login-forms = Ojehaiva’ekue jeike hag̃ua ko kuatiaroguépe oñemondakuaa.
+identity-permissions =
+    .value = Moneĩ
 identity-https-only-connection-upgraded = (HTTPS hekopyahupyre)
 identity-https-only-label = HTTPS ayvúpe año
 identity-https-only-dropdown-on =
@@ -299,8 +317,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Emyandy HTTPS ayvu añoite ko tendápe g̃uarã eipotáramo { -brand-short-name } ombohekopyahu nde jeike ikatu vove.
 identity-https-only-info-turn-off2 = Pe tenda ndoikoporãirõ, ikatu emboguese pe HTTPS ayvu añoite emyanyhẽjey hag̃ua eipurúvo HTTP jeike hekorosã’ỹva.
 identity-https-only-info-no-upgrade = Ndaikatúi embohekopyahu jeike HTTP guive.
-identity-permissions =
-    .value = Moneĩ
 identity-permissions-storage-access-header = Kookie tenda ojuasáva
 identity-permissions-storage-access-hint = Ko’ãva ikatu oipuru kookie ha tenda ojuasáva mba’ekuaarã eime aja ko tendápe.
 identity-permissions-reload-hint = Ikatu hína kuatiarogue emyanyhẽjey umi moambuepyre oñemboheko hag̃ua.
@@ -348,8 +364,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Ñemboheta
-browser-tab-audio-muted = Mokirirĩ
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = ÑEMBOSARÁIPE
 # This label should be written in all capital letters if your locale supports them.
@@ -358,6 +372,29 @@ browser-tab-audio-muted2 = OGUEPYRE
 browser-tab-audio-blocked = AUTOPLAY JOKOPYRE
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = PICTURE-IN-PICTURE
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] EMOKIRIRĨ TENDAYKE
+        [one] EMOKIRIRĨ TENDAYKE
+       *[other] EMOKIRIRĨ { $count } TENDAYKEKUÉRA
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] EMYANDY TENDAYKE
+        [one] EMYANDY TENDAYKE
+       *[other] EMYANDY { $count } TENDAYKEKUÉRA
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] EMBOPU TENDAYKE
+        [one] EMBOPU TENDAYKE
+       *[other] EMBOPU { $count } TENDAYKEKUÉRA
+    }
 
 ## Bookmarks toolbar items
 
@@ -377,9 +414,13 @@ popup-select-microphone =
 popup-select-camera-device =
     .value = Ta’ãnganohẽha:
     .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = Ta’ãnganohẽha
 popup-select-microphone-device =
     .value = Ñe’ẽatãha:
     .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Ñe’ẽatãha
 popup-all-windows-shared = Oñemosarambíta opaite ovetã ojehecháva mba’erechahápe.
 popup-screen-sharing-not-now =
     .label = Ani ko’ág̃a
@@ -505,6 +546,13 @@ urlbar-result-action-tabtosearch-web = Eheka { $engine } ndive kundaharape renda
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Eheka { $engine } ndive kundaharape renda guive
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Monguatia
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -546,8 +594,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Opaite techaukaha jehechauka
-bookmarks-recent-bookmarks =
-    .value = Oñembokurusu ramóva
 bookmarks-manage-bookmarks =
     .label = Eñangareko techaukaháre
 bookmarks-recent-bookmarks-panel =
@@ -568,12 +614,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Eñomi Techaukaha Renda Yke
            *[other] Techaukaha ra’ãngarupa yke recha
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Eñomi Techaukaha Rembipuru Renda
-           *[other] Techaukaha renda jehecha
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -620,12 +660,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Techaukaha
-library-bookmarks-bookmark-this-page =
-    .label = Kuatiarogue mbojoapy
-library-bookmarks-bookmark-edit =
-    .label = Ko techaukaha mbosako’i
 library-recent-activity-title =
     .value = Tembiapo ramovegua
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Eñongatu { -pocket-brand-name }-pe
+    .tooltiptext = Eñongatu { -pocket-brand-name }-pe
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Moĩmbaha ha téma
+    .tooltiptext = Eñangareko ne moĩmbaha ha téma ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Ñemboheko
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Ñemboheko ijurujáva ({ $shortcut })
+           *[other] Ñemboheko ijurujáva
+        }
 
 ## More items
 
@@ -640,3 +699,21 @@ eme-notifications-drm-content-playing-manage = Eñangareko ñembohekóre
 eme-notifications-drm-content-playing-manage-accesskey = M
 eme-notifications-drm-content-playing-dismiss = Mosẽ
 eme-notifications-drm-content-playing-dismiss-accesskey = D
+
+## Password save/update panel
+
+panel-save-update-username = Puruhára réra
+panel-save-update-password = Ñe’ẽñemi
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = ¿Emboguete { $name }?
+addon-removal-abuse-report-checkbox = Emomarandu ko jepysokue rehegua { -vendor-short-name }-pe
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Mba’ete Ñangarekoha
+remote-tabs-sync-now = Embojuehe ko’ág̃a

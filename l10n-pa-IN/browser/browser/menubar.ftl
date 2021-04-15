@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = ਮੇਰੀਆਂ ਪਸੰਦਾਂ
 menu-application-services =
     .label = ਸਰਵਿਸਾਂ
 menu-application-hide-this =
@@ -111,6 +113,9 @@ menu-edit =
 menu-edit-find-on =
     .label = …ਇਸ ਸਫ਼ੇ ਉੱਤੇ ਲੱਭੋ
     .accesskey = F
+menu-edit-find-in-page =
+    .label = …ਸਫ਼ੇ ਵਿੱਚ ਲੱਭੋ
+    .accesskey = F
 menu-edit-find-again =
     .label = ਮੁੜ ਖੋਜ
     .accesskey = g
@@ -128,6 +133,9 @@ menu-view-toolbars-menu =
     .accesskey = T
 menu-view-customize-toolbar =
     .label = …ਪਸੰਦ
+    .accesskey = C
+menu-view-customize-toolbar2 =
+    .label = …ਟੂਲਬਾਰ ਨੂੰ ਕਸਟਮਾਈਜ਼ ਕਰੋ
     .accesskey = C
 menu-view-sidebar =
     .label = ਸਾਈਡਬਾਰ
@@ -219,6 +227,8 @@ menu-bookmarks-show-all =
     .label = ਸਭ ਬੁੱਕਮਾਰਕਾਂ ਨੂੰ ਵੇਖੋ
 menu-bookmark-this-page =
     .label = ਇਹ ਸਫ਼ੇ ਨੂੰ ਬੁੱਕਮਾਰਕ ਕਰੋ
+menu-bookmark-current-tab =
+    .label = ਮੌਜੂਦਾ ਟੈਬ ਨੂੰ ਬੁੱਕਮਾਰਕ ਕਰੋ
 menu-bookmark-edit =
     .label = ਇਹ ਬੁੱਕਮਾਰਕ ਨੂੰ ਸੋਧੋ
 menu-bookmarks-all-tabs =
@@ -244,8 +254,17 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = …{ -brand-product-name } ਲਈ ਸਾਇਨ ਇਨ ਕਰੋ
     .accesskey = g
+menu-tools-addons-and-themes =
+    .label = ਐਡ-ਆਨ ਤੇ ਥੀਮ
+    .accesskey = A
+menu-tools-fxa-sign-in2 =
+    .label = ਸਾਈਨ ਇਨ ਕਰੋ
+    .accesskey = g
 menu-tools-turn-on-sync =
     .label = …{ -sync-brand-short-name } ਚਾਲੂ ਕਰੋ
+    .accesskey = n
+menu-tools-turn-on-sync2 =
+    .label = …ਸਿੰਕ ਨੂੰ ਚਾਲੂ ਕਰੋ
     .accesskey = n
 menu-tools-sync-now =
     .label = ਹੁਣੇ ਸਿੰਕ ਕਰੋ
@@ -256,12 +275,25 @@ menu-tools-fxa-re-auth =
 menu-tools-web-developer =
     .label = ਵੈੱਬ ਡਿਵੈਲਪਰ
     .accesskey = W
+menu-tools-browser-tools =
+    .label = ਬਰਾਊਜ਼ਰ ਟੂਲ
+    .accesskey = B
+menu-tools-task-manager =
+    .label = ਟਾਸਕ ਮੈਨੇਜਰ
+    .accesskey = M
 menu-tools-page-source =
     .label = ਸਫ਼ੇ ਦਾ ਸਰੋਤ
     .accesskey = o
 menu-tools-page-info =
     .label = ਸਫ਼ੇ ਦੀ ਜਾਣਕਾਰੀ
     .accesskey = I
+menu-settings =
+    .label = ਸੈਟਿੰਗਾਂ
+    .accesskey =
+        { PLATFORM() ->
+            [windows] S
+           *[other] n
+        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -285,15 +317,6 @@ menu-window-bring-all-to-front =
     .label = ਸਭ ਤੋਂ ਅੱਗੇ ਲਿਆਓ
 
 ## Help Menu
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
 
 
 # NOTE: For Engineers, any additions or changes to Help menu strings should
@@ -325,11 +348,11 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = ਸਮੱਸਿਆ ਹੱਲ ਜਾਣਕਾਰੀ
     .accesskey = T
+menu-help-taskmanager =
+    .label = ਟਾਸਕ ਮੈਨੇਜਰ
 menu-help-more-troubleshooting-info =
     .label = ਹੋਰ ਸਮੱਸਿਆ ਹੱਲ ਜਾਣਕਾਰੀ
     .accesskey = T
-menu-help-taskmanager =
-    .label = ਟਾਸਕ ਮੈਨੇਜਰ
 menu-help-report-site-issue =
     .label = …ਸਾਈਟ ਮਸਲੇ ਬਾਰੇ ਜਾਣਕਾਰੀ ਦਿਓ
 menu-help-feedback-page =
@@ -341,8 +364,8 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = ਐਡ-ਆਨ ਸਮਰੱਥ ਕਰਕੇ ਮੁੜ-ਚਾਲੂ ਕਰੋ
     .accesskey = R
-menu-help-enter-troubleshoot-mode =
-    .label = ਸਮੱਸਿਆ ਨਿਪਟਾਰਾ ਢੰਗ
+menu-help-enter-troubleshoot-mode2 =
+    .label = ਸਮੱਸਿਆ ਨਿਪਟਾਰਾ ਢੰਗ…
     .accesskey = M
 menu-help-exit-troubleshoot-mode =
     .label = ਸਮੱਸਿਆ ਨਿਪਟਾਰਾ ਢੰਗ ਬੰਦ ਹੈ
@@ -355,6 +378,3 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = ਇਹ ਭਰਮਪੂਰਨ ਸਾਈਟ ਨਹੀਂ ਹੈ…
     .accesskey = d
-menu-help-check-for-update =
-    .label = …ਅੱਪਡੇਟਾਂ ਲਈ ਜਾਂਚ ਕਰੋ
-    .accesskey = C

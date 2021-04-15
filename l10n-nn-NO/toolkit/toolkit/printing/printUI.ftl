@@ -38,7 +38,6 @@ printui-scale-fit-to-page-width = Tilpass til sidebreidda
 printui-scale-pcent = Skalering
 # Section title (noun) for the two-sided print options
 printui-two-sided-printing = Tosidig utskrift
-printui-duplex-checkbox = Skriv ut på begge sider
 printui-two-sided-printing-off = Av
 # Flip the sheet as if it were bound along its long edge.
 printui-two-sided-printing-long-edge = Vend på langsida
@@ -57,14 +56,19 @@ printui-margins-default = Standard
 printui-margins-min = Minimum
 printui-margins-none = Ingen
 printui-margins-custom-inches = Eigendefinert (tommar)
+printui-margins-custom-mm = Tilpassa (mm)
 printui-margins-custom-top = Topp
 printui-margins-custom-top-inches = Topp (tommar)
+printui-margins-custom-top-mm = Topp (mm)
 printui-margins-custom-bottom = Botn
 printui-margins-custom-bottom-inches = Botn (tommar)
+printui-margins-custom-bottom-mm = Botn (mm)
 printui-margins-custom-left = Venstre
 printui-margins-custom-left-inches = Venstre (tommar)
+printui-margins-custom-left-mm = Venstre (mm)
 printui-margins-custom-right = Høgre
 printui-margins-custom-right-inches = Høgre (tommar)
+printui-margins-custom-right-mm = Høgre (mm)
 printui-system-dialog-link = Skriv ut ved hjelp av systemdialogvindauget…
 printui-primary-button = Skriv ut
 printui-primary-button-save = Lagre

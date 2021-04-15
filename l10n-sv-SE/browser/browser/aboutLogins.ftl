@@ -18,6 +18,7 @@ login-filter =
 create-login-button = Skapa ny inloggning
 fxaccounts-sign-in-text = Få dina lösenord på dina andra enheter
 fxaccounts-sign-in-button = Logga in på { -sync-brand-short-name }
+fxaccounts-sign-in-sync-button = Logga in för att synkronisera
 fxaccounts-avatar-button =
     .title = Hantera konto
 
@@ -70,11 +71,15 @@ about-logins-list-item-vulnerable-password-icon =
 
 login-intro-heading = Letar du efter dina sparade inloggningar? Konfigurera{ -sync-brand-short-name }.
 about-logins-login-intro-heading-logged-out = Letar du efter dina sparade inloggningar? Konfigurera { -sync-brand-short-name } eller importera dem.
+about-logins-login-intro-heading-logged-out2 = Letar du efter dina sparade inloggningar? Aktivera synkronisering eller importera dem.
 about-logins-login-intro-heading-logged-in = Inga synkroniserade inloggningar hittades.
 login-intro-description = Om du sparat dina inloggningar i { -brand-product-name } på en annan enhet, så här får du dem hit:
 login-intro-instruction-fxa = Skapa eller logga in på ditt { -fxaccount-brand-name } på enheten där dina inloggningar sparades
 login-intro-instruction-fxa-settings = Se till att du har markerat kryssrutan för inloggningar i { -sync-brand-short-name } inställningar
 about-logins-intro-instruction-help = Besök <a data-l10n-name="help-link">{ -lockwise-brand-short-name } support</a> för mer hjälp
+login-intro-instructions-fxa = Skapa eller logga in på ditt { -fxaccount-brand-name } på enheten där dina inloggningar sparas.
+login-intro-instructions-fxa-settings = Gå till Inställningar > Synkronisering > Aktivera synkronisering… Markera kryssrutan Inloggningar och lösenord.
+login-intro-instructions-fxa-help = Besök <a data-l10n-name="help-link">{ -lockwise-brand-short-name } support</a> för mer hjälp.
 about-logins-intro-import = Om dina inloggningar finns sparade i en annan webbläsare kan du <a data-l10n-name="import-link">importera dem till { -lockwise-brand-short-name }</a>
 about-logins-intro-import2 = Om dina inloggningar sparas utanför { -brand-product-name } kan du  <a data-l10n-name="import-browser-link">importera dem från en annan webbläsare</a> eller <a data-l10n-name="import-file-link">från en fil</a>
 
@@ -316,6 +321,7 @@ about-logins-import-dialog-error-unable-to-read-description = Se till att du har
 about-logins-import-dialog-error-no-logins-imported = Inga inloggningar har importerats
 about-logins-import-dialog-error-learn-more = Läs mer
 about-logins-import-dialog-error-try-again = Försök igen…
+about-logins-import-dialog-error-try-import-again = Försök importera igen…
 about-logins-import-dialog-error-cancel = Avbryt
 about-logins-import-report-title = Importera sammanfattning
 about-logins-import-report-description = Inloggningar och lösenord importerade till { -brand-short-name }.

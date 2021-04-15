@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Ir un pagina retro ({ $shortcut })
     .aria-label = Retro
     .accesskey = R
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Retro
+    .accesskey = R
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Ir un pagina avante ({ $shortcut })
     .aria-label = Avante
     .accesskey = A
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Avante
+    .accesskey = A
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Recargar
     .accesskey = R
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Recargar
+    .accesskey = R
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Stoppar
     .accesskey = S
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Stoppar
+    .accesskey = S
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Adder un marcapaginas
     .accesskey = m
     .tooltiptext = Adder un marcapaginas sur iste pagina
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Marcar le pagina
+    .accesskey = c
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Rediger marcapaginas
+    .accesskey = m
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -109,11 +143,8 @@ main-context-menu-open-link-new-tab =
     .label = Aperir le ligamine in un nove scheda
     .accesskey = s
 main-context-menu-open-link-container-tab =
-    .label = Aperir le ligamine in un nove scheda contextual
+    .label = Aperir le ligamine in un nove scheda contentor
     .accesskey = c
-main-context-menu-open-link-container =
-    .label = Aperir le ligamine in un nove continitor
-    .accesskey = v
 main-context-menu-open-link-new-window =
     .label = Aperir le ligamine in un nove fenestra
     .accesskey = f
@@ -342,8 +373,14 @@ main-context-menu-use-saved-password =
 
 ##
 
+main-context-menu-suggest-strong-password =
+    .label = Suggerer un contrasigno forte…
+    .accesskey = S
 main-context-menu-manage-logins =
     .label = Gerer credentiales…
+    .accesskey = G
+main-context-menu-manage-logins2 =
+    .label = Gerer credentiales
     .accesskey = G
 main-context-menu-keyword =
     .label = Adder un parola clave pro iste recerca…
@@ -387,6 +424,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Vider le codice fonte del selection
     .accesskey = e
+main-context-menu-take-screenshot =
+    .label = Capturar un instantaneo de schermo
+    .accesskey = C
 main-context-menu-view-page-source =
     .label = Vider le codice fonte del pagina
     .accesskey = V

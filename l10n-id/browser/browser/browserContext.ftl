@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Mundur satu laman ({ $shortcut })
     .aria-label = Mundur
     .accesskey = K
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Mundur
+    .accesskey = K
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Maju satu laman ({ $shortcut })
     .aria-label = Maju
     .accesskey = M
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Maju
+    .accesskey = M
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Muat Ulang
     .accesskey = U
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Muat Ulang
+    .accesskey = U
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Stop
     .accesskey = S
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Stop
+    .accesskey = S
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Markahi Laman ini
     .accesskey = m
     .tooltiptext = Markahi laman ini
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Markahi Laman
+    .accesskey = M
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Edit Markah
+    .accesskey = E
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Buka Tautan dalam Tab Kontainer Baru
     .accesskey = k
-main-context-menu-open-link-container =
-    .label = Buka Tautan di Kontainer Baru
-    .accesskey = u
 main-context-menu-open-link-new-window =
     .label = Buka Tautan di Jendela Baru
     .accesskey = J
@@ -193,6 +224,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Sangat Cepat (2×)
     .accesskey = t
+main-context-menu-media-play-speed-2 =
+    .label = Kecepatan
+    .accesskey = K
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Pengulangan
     .accesskey = L
@@ -220,6 +264,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Gambar-dalam-gambar
     .accesskey = g
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Tonton dalam Format Gambar-dalam-Gambar
+    .accesskey = G
 main-context-menu-image-reload =
     .label = Muat Ulang Gambar
     .accesskey = U
@@ -228,6 +277,12 @@ main-context-menu-image-view =
     .accesskey = G
 main-context-menu-video-view =
     .label = Tampilkan Video
+    .accesskey = V
+main-context-menu-image-view-new-tab =
+    .label = Buka Gambar di Tab Baru
+    .accesskey = G
+main-context-menu-video-view-new-tab =
+    .label = Buka Video di Tab Baru
     .accesskey = V
 main-context-menu-image-copy =
     .label = Salin Gambar
@@ -277,6 +332,9 @@ main-context-menu-audio-save-as =
 main-context-menu-video-image-save-as =
     .label = Simpan Cuplikan dengan Nama…
     .accesskey = S
+main-context-menu-video-take-snapshot =
+    .label = Ambil Tangkapan Gambar Diam…
+    .accesskey = A
 main-context-menu-video-email =
     .label = Surelkan Video…
     .accesskey = k
@@ -321,6 +379,9 @@ main-context-menu-suggest-strong-password =
 main-context-menu-manage-logins =
     .label = Kelola Info Masuk…
     .accesskey = K
+main-context-menu-manage-logins2 =
+    .label = Kelola Info Masuk
+    .accesskey = K
 main-context-menu-keyword =
     .label = Tambahkan Kata Kunci untuk Pencarian ini…
     .accesskey = K
@@ -363,6 +424,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Lihat Kode Sumber Teks yang Dipilih
     .accesskey = e
+main-context-menu-take-screenshot =
+    .label = Buat Tangkapan Layar
+    .accesskey = B
 main-context-menu-view-page-source =
     .label = Lihat Kode Sumber Laman
     .accesskey = h

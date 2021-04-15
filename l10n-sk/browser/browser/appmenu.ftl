@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = Preberá sa aktualizácia aplikácie { -brand-shorter-name }
+appmenuitem-update-banner2 =
+    .label-update-downloading = Preberá sa aktualizácia pre { -brand-shorter-name }
+    .label-update-available = Dostupná aktualizácia — prevziať
+    .label-update-manual = Dostupná aktualizácia — prevziať
+    .label-update-unsupported = Nie je možné aktualizovať
+    .label-update-restart = Dostupná aktualizácia — reštartovať
 appmenuitem-protection-dashboard-title = Nástenka ochrany súkromia
 appmenuitem-customize-mode =
     .label = Prispôsobiť…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = Heslá
 appmenuitem-extensions-and-themes =
     .label = Rozšírenia a témy vzhľadu
+appmenuitem-addons-and-themes =
+    .label = Doplnky a témy
 appmenuitem-find-in-page =
     .label = Hľadať na stránke…
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Zavrie ponuku aplikácie
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Ukončiť
+           *[other] Ukončiť
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Otvorí ponuku aplikácie
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Zavrie ponuku aplikácie
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Synchronizovať teraz
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Synchronizovať teraz
-    .value = Synchronizovať teraz
+appmenu-remote-tabs-sign-into-sync =
+    .label = Prihlásiť sa k synchronizácii
+appmenu-remote-tabs-turn-on-sync =
+    .label = Zapnúť synchronizáciu…
+appmenuitem-fxa-toolbar-sync-now2 = Synchronizovať teraz
 appmenuitem-fxa-manage-account = Spravovať účet
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = Posledná synchronizácia { $time }
     .label = Posledná synchronizácia { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Synchronizovať a uložiť údaje
+appmenu-fxa-sync-and-save-data2 = Synchronizovať a uložiť údaje
 appmenu-fxa-signed-in-label = Prihlásiť sa
 appmenu-fxa-setup-sync =
     .label = Zapnúť synchronizáciu…
@@ -88,16 +112,22 @@ profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = Zobraziť ďalšie informácie
+profiler-popup-description-title =
+    .value = Zaznamenať, analyzovať a zdieľať
+profiler-popup-description = Spolupracujte na riešení problémov s výkonom zdieľaním údajov so svojím tímom.
 profiler-popup-learn-more = Ďalšie informácie
 profiler-popup-settings =
     .value = Nastavenia
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Upraviť nastavenia…
+profiler-popup-disabled = Nástroj na profilovanie je v tejto chvíli vypnutý, pravdepodobne preto, lebo máte otvorené okno súkromného prehliadania.
 profiler-popup-recording-screen = Nahrávanie…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
 profiler-popup-presets-custom =
     .label = Vlastné
+profiler-popup-start-recording-button =
+    .label = Spustiť záznam
 profiler-popup-discard-button =
     .label = Zahodiť
 profiler-popup-capture-button =
@@ -127,29 +157,17 @@ appmenu-help-header =
 appmenu-about =
     .label = O aplikácii { -brand-shorter-name }
     .accesskey = O
-appmenu-help-product =
-    .label = Pomocník prehliadača { -brand-shorter-name }
-    .accesskey = P
-appmenu-help-show-tour =
-    .label = Prehliadka prehliadača { -brand-shorter-name }
-    .accesskey = h
-appmenu-help-import-from-another-browser =
-    .label = Importovať z iného prehliadača…
-    .accesskey = I
-appmenu-help-keyboard-shortcuts =
-    .label = Klávesové skratky
-    .accesskey = K
 appmenu-get-help =
     .label = Získať pomoc
     .accesskey = Z
 appmenu-help-troubleshooting-info =
     .label = Informácie pre riešenie problémov
     .accesskey = n
+appmenu-help-taskmanager =
+    .label = Správca úloh
 appmenu-help-more-troubleshooting-info =
     .label = Ďalšie informácie pre riešenie problémov
     .accesskey = i
-appmenu-help-taskmanager =
-    .label = Správca úloh
 appmenu-help-report-site-issue =
     .label = Nahlásiť problém so stránkou…
 appmenu-help-feedback-page =
@@ -169,9 +187,9 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Režim riešenia problémov
-    .accesskey = m
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Režim riešenia problémov…
+    .accesskey = R
 appmenu-help-exit-troubleshoot-mode =
     .label = Vypnúť režim riešenia problémov
     .accesskey = m
@@ -186,13 +204,10 @@ appmenu-help-not-deceptive =
     .label = Toto nie je podvodná stránka…
     .accesskey = T
 
-##
-
-appmenu-help-check-for-update =
-    .label = Vyhľadať aktualizácie…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Upraviť panel nástrojov…
+appmenu-taskmanager =
+    .label = Správca úloh
 appmenu-developer-tools-subheader = Nástroje prehliadača

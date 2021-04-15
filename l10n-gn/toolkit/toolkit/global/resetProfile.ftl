@@ -4,6 +4,7 @@
 
 refresh-profile-dialog =
     .title = { -brand-short-name } mbopiro’y
+refresh-profile-dialog-title = ¿Eguerujey { -brand-short-name } ñemoĩporã ijypykuévape?
 refresh-profile-dialog-button =
     .label = { -brand-short-name } mbopiro’y
 refresh-profile-description = Ñepyrũ pyahu emyatyrõ hag̃ua apañuãi ha embojevyjey pe apopyre.
@@ -12,3 +13,4 @@ refresh-profile-remove = Eipe’a umi moĩmbaha ha mba’eteéva
 refresh-profile-restore = Embojevyjey pe kundaha ñemboheko yjypykuéva repykuépe
 refresh-profile = Eme’ẽ { -brand-short-name } omoĩ hag̃ua hendaitépe
 refresh-profile-button = { -brand-short-name } mbopiro’y…
+refresh-profile-learn-more = Kuaave

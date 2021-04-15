@@ -21,3 +21,11 @@ about-httpsonly-explanation-continue = Pokud se rozhodnete pokračovat, bude pro
 about-httpsonly-button-continue-to-site = Pokračovat přes nezabezpečené spojení
 about-httpsonly-button-go-back = Zpátky
 about-httpsonly-link-learn-more = Zjistit více…
+
+## Suggestion Box that only shows up if a secure connection to www can be established
+## Variables:
+##   $websiteUrl (String) - Url of the website that can be securely loded with these alternatives. Example: example.com
+
+about-httpsonly-suggestion-box-header = Možná alternativa
+about-httpsonly-suggestion-box-www-text = Našli jsme zabezpečenou verzi webu <em>www.{ $websiteUrl }</em>. Místo <em>{ $websiteUrl }</em> můžete zkusit navštívit tu.
+about-httpsonly-suggestion-box-www-button = Přejít na www.{ $websiteUrl }

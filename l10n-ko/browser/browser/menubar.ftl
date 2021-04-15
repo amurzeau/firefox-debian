@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = 설정
 menu-application-services =
     .label = 서비스
 menu-application-hide-this =
@@ -234,7 +236,7 @@ menu-bookmarks-all-tabs =
 menu-bookmarks-toolbar =
     .label = 북마크 도구 모음
 menu-bookmarks-other =
-    .label = 다른 북마크
+    .label = 기타 북마크
 menu-bookmarks-mobile =
     .label = 모바일 북마크
 
@@ -252,14 +254,17 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = { -brand-product-name }에 로그인…
     .accesskey = g
-menu-tools-extensions =
-    .label = 확장 기능 및 테마
-    .accesskey = E
+menu-tools-addons-and-themes =
+    .label = 부가 기능 및 테마
+    .accesskey = A
 menu-tools-fxa-sign-in2 =
     .label = 로그인
     .accesskey = g
 menu-tools-turn-on-sync =
     .label = { -sync-brand-short-name } 켜기…
+    .accesskey = n
+menu-tools-turn-on-sync2 =
+    .label = Sync 켜기…
     .accesskey = n
 menu-tools-sync-now =
     .label = 지금 동기화
@@ -270,12 +275,25 @@ menu-tools-fxa-re-auth =
 menu-tools-web-developer =
     .label = 웹 개발자
     .accesskey = W
+menu-tools-browser-tools =
+    .label = 브라우저 도구
+    .accesskey = B
+menu-tools-task-manager =
+    .label = 작업 관리자
+    .accesskey = M
 menu-tools-page-source =
     .label = 페이지 소스
     .accesskey = o
 menu-tools-page-info =
     .label = 페이지 정보
     .accesskey = I
+menu-settings =
+    .label = 설정
+    .accesskey =
+        { PLATFORM() ->
+            [windows] S
+           *[other] n
+        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -285,13 +303,6 @@ menu-preferences =
     .accesskey =
         { PLATFORM() ->
             [windows] O
-           *[other] n
-        }
-menu-settings =
-    .label = 설정
-    .accesskey =
-        { PLATFORM() ->
-            [windows] S
            *[other] n
         }
 menu-tools-layout-debugger =
@@ -306,15 +317,6 @@ menu-window-bring-all-to-front =
     .label = 맨 앞으로
 
 ## Help Menu
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
 
 
 # NOTE: For Engineers, any additions or changes to Help menu strings should
@@ -346,11 +348,11 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = 문제 해결 정보…
     .accesskey = T
+menu-help-taskmanager =
+    .label = 작업 관리자
 menu-help-more-troubleshooting-info =
     .label = 추가 문제 해결 정보
     .accesskey = T
-menu-help-taskmanager =
-    .label = 작업 관리자
 menu-help-report-site-issue =
     .label = 사이트 문제 보고…
 menu-help-feedback-page =
@@ -362,8 +364,8 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = 부가 기능을 켜고 다시 시작
     .accesskey = R
-menu-help-enter-troubleshoot-mode =
-    .label = 문제 해결 모드
+menu-help-enter-troubleshoot-mode2 =
+    .label = 문제 해결 모드…
     .accesskey = M
 menu-help-exit-troubleshoot-mode =
     .label = 문제 해결 모드 끄기
@@ -376,6 +378,3 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = 이 사이트는 가짜 사이트가 아닙니다…
     .accesskey = d
-menu-help-check-for-update =
-    .label = 업데이트 확인…
-    .accesskey = C

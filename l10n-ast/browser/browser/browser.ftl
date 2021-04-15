@@ -57,7 +57,7 @@ urlbar-web-rtc-share-screen-notification-anchor =
     .tooltiptext = Xestionar la compartición de les ventanes o la pantalla col sitiu
 urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Atroxar datos nel almacenamientu persistente
-urlbar-search-tips-confirm = Val, entendílo
+urlbar-search-tips-confirm = D'acuerdu, entendílo
 # Read out before Urlbar Tip text content so screenreader users know the
 # subsequent text is a tip offered by the browser. It should end in a colon or
 # localized equivalent.
@@ -69,7 +69,7 @@ urlbar-tip-icon-description =
 ## Variables:
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
-urlbar-search-tips-onboard = Teclexa menos, atopa más: Busca en «{ $engineName }» direutamente dende la barra de direiciones.
+urlbar-search-tips-onboard = Teclexa menos, atopa más: Busca direutamente en «{ $engineName }» dende la barra de direiciones.
 urlbar-search-tips-redirect-2 = Comienza la busca na barra de direiciones pa ver les suxerencies de { $engineName } y l'historial de restolar.
 # Prompts users to use the Urlbar when they are typing in the domain of a
 # search engine, e.g. google.com or amazon.com.
@@ -128,6 +128,9 @@ page-action-send-tab-not-ready =
 
 ## Auto-hide Context Menu
 
+full-screen-autohide =
+    .label = Anubrir les barres de ferramientes
+    .accesskey = A
 full-screen-exit =
     .label = Colar del mou de pantalla completa
     .accesskey = C
@@ -169,6 +172,11 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Amiestu d'un marcador
+bookmarks-edit-bookmark = Edición d'un marcador
+bookmark-panel-cancel =
+    .label = Encaboxar
+    .accesskey = E
 bookmark-panel-show-editor-checkbox =
     .label = Amosar l'editor al guardar
     .accesskey = A
@@ -193,6 +201,8 @@ identity-passive-loaded = Partes d'esta páxina nun son segures (como les imáxe
 identity-active-loaded = Desactivesti la proteición nesta páxina.
 identity-weak-encryption = Esta páxina usa un cifráu feble.
 identity-insecure-login-forms = Los anicios de sesión introducíos nesta páxina podríen tar en riesgu.
+identity-permissions =
+    .value = Permisos
 identity-https-only-connection-upgraded = (anovóse a HTTPS)
 identity-https-only-label = Mou de namás HTTPS
 identity-https-only-dropdown-on =
@@ -203,27 +213,29 @@ identity-https-only-dropdown-off-temporarily =
     .label = Non, temporalmente
 identity-https-only-info-turn-on2 = Activa'l mou de namás HTTPS pa esti sitiu si quies que { -brand-short-name } anueve la conexón cuando seya posible.
 identity-https-only-info-no-upgrade = Nun ye posible anovar la conexón a HTTPS.
-identity-permissions =
-    .value = Permisos
 identity-permissions-storage-access-header = Cookies ente sitios
 identity-permissions-storage-access-hint = Terceros puen usar cookies ente sitios y datos del sitiu mentanto tas nelli.
 identity-permissions-empty = Nun-y concediesti nengún permisu especial a esti sitiu.
 identity-clear-site-data =
     .label = Llimpiar les cookies y los datos de los sitios…
-identity-connection-not-secure-security-view = Nun tas conectáu de forma segura a esti sitiu.
-identity-connection-verified = Tas conectáu de forma segura a esti sitiu.
-identity-description-custom-root = Mozilla nun reconoz esti emisor de certificaos. Pue ser que lu amestare'l sistema operativu o un alministrador. <label data-l10n-name="link">Deprender más</label>
+identity-connection-not-secure-security-view = Nun tas conectáu de mou seguru a esti sitiu.
+identity-connection-verified = Tas conectáu de mou seguru a esti sitiu.
+identity-ev-owner-label = El certificáu emitióse pa:
+identity-description-custom-root = Mozilla nun reconoz esti emisor de certificaos. Pue ser que lu amestare'l sistema operativu o un alministrador. <label data-l10n-name="link">Lleer más</label>
+identity-remove-cert-exception =
+    .label = Quitar la esceición
+    .accesskey = Q
 identity-description-insecure = La conexón a esti sitiu nun ye privada. La información (contraseñes o tarxetes de creitu) qu'unvies podríen vela terceros.
 identity-description-weak-cipher-intro = La conexón a esti sitiu web usa un cifráu feble y nun ye privada.
 identity-description-weak-cipher-risk = Terceros puen ver la to información o modificar el comportamientu del sitiu web.
-identity-description-active-blocked = { -brand-short-name } bloquió partes d'esta páxina que nun son segures. <label data-l10n-name="link">Deprender más</label>
+identity-description-active-blocked = { -brand-short-name } bloquió partes d'esta páxina que nun son segures. <label data-l10n-name="link">Lleer más</label>
 identity-description-passive-loaded = La conexón nun ye privada y la información que compartas col sitiu podríen vela otros.
-identity-description-passive-loaded-insecure = Esti sitiu web contién conteníu que nun ye seguru (como les imáxenes). <label data-l10n-name="link">Deprender más</label>
-identity-description-passive-loaded-mixed = Magar que { -brand-short-name } bloquió dalgún conteníu, entá hai conteníu na páxina que nun ye seguru (como imáxenes). <label data-l10n-name="link">Deprender más</label>
-identity-description-active-loaded = Esti sitiu web contién conteníu que nun ye seguru (como los scripts) y la conexón a elli nun ye privada.
+identity-description-passive-loaded-insecure = Esti sitiu web inclúi conteníu que nun ye seguru (como les imáxenes). <label data-l10n-name="link">Lleer más</label>
+identity-description-passive-loaded-mixed = Magar que { -brand-short-name } bloquió dalgún conteníu, entá hai conteníu na páxina que nun ye seguru (como imáxenes). <label data-l10n-name="link">Lleer más</label>
+identity-description-active-loaded = Esti sitiu web inclúi conteníu que nun ye seguru (como los scripts) y la conexón a elli nun ye privada.
 identity-description-active-loaded-insecure = La información que compartas con esti sitiu podríen vela otros (contraseñes, mensaxes, tarxetes de creitu, etc.).
 identity-learn-more =
-    .value = Deprender más
+    .value = Lleer más
 identity-disable-mixed-content-blocking =
     .label = Desactivar la proteición pel momentu
     .accesskey = D
@@ -245,10 +257,43 @@ browser-window-close-button =
 ## Tab actions
 
 # This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = EN REPRODUCCIÓN
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = AUDIU DESACTIVÁU
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = REPROD. AUTO. BLOQUIADA
+# This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = IMAXE SOBRE IMAXE
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] DESACTIVAR L'AUDIU
+        [one] DESACTIVAR L'AUDIU
+       *[other] DESACTIVAR L'AUDIU DE { $count } LLINGÜETES
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] ACTIVAR L'AUDIU
+        [one] ACTIVAR L'AUDIU
+       *[other] ACTIVAR L'AUDIU DE { $count } LLINGÜETES
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] REPRODUCIR LA LLINGÜETA
+        [one] REPRODUCIR LA LLINGÜETA
+       *[other] REPRODUCIR { $count } LLINGÜETES
+    }
 
 ## Bookmarks toolbar items
 
+browser-import-button2 =
+    .label = Importar marcadores…
+    .tooltiptext = Importa los marcadores d'otru restolador a { -brand-short-name }.
+bookmarks-toolbar-empty-message = Pon los marcadores equí, na barra de los marcadores, p'acceder aína a ellos. <a data-l10n-name="manage-bookmarks">Xestionar los marcadores…</a>
 
 ## WebRTC Pop-up notifications
 
@@ -258,11 +303,25 @@ popup-select-camera =
 popup-select-microphone =
     .value = Micrófonu pa compartir:
     .accesskey = M
+popup-select-camera-device =
+    .value = Cámara:
+    .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = Cámara
+popup-select-microphone-device =
+    .value = Micrófonu
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Micrófonu
 popup-all-windows-shared = Van compartise toles ventanes visibles de la pantalla.
 popup-screen-sharing-not-now =
     .label = Agora non
     .accesskey = n
 popup-silence-notifications-checkbox-warning = { -brand-short-name } nun va amosar avisos mentanto teas compartiendo.
+popup-screen-sharing-block =
+    .label = Bloquiar
+    .accesskey = B
+popup-mute-notifications-checkbox = Desactivar los avisos de los sitios web mentanto se comparte
 
 ## WebRTC window or screen share tab switch warning
 
@@ -279,6 +338,8 @@ urlbar-permissions-granted =
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Estensión:
+urlbar-go-button =
+    .tooltiptext = Dir a la direición de la barra de direiciones
 urlbar-page-action-button =
     .tooltiptext = Aiciones de la páxina
 urlbar-pocket-button =
@@ -287,11 +348,23 @@ urlbar-pocket-button =
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
 
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Buscar con { $engine }
+urlbar-result-action-switch-tab = Dir pa la llingüeta
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
 
+urlbar-result-action-search-bookmarks = Buscar nos marcadores
 
 ## Full Screen and Pointer Lock UI
 
@@ -312,8 +385,10 @@ pointerlock-warning-no-domain = Esti documentu tien el control del punteru. Prim
 ## Subframe crash notification
 
 crashed-subframe-learnmore =
-    .label = Deprender más
-    .accesskey = D
+    .label = Lleer más
+    .accesskey = L
+crashed-subframe-learnmore-link =
+    .value = Lleer más
 
 ## Bookmarks panels, menus and toolbar
 
@@ -338,6 +413,8 @@ bookmarks-tools-toolbar-visibility-panel =
             [true] Anubrir la barra de los marcadores
            *[other] Amosar la barra de los marcadores
         }
+bookmarks-search =
+    .label = Buscar nos marcadores
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -345,6 +422,12 @@ bookmarks-toolbar =
     .toolbarname = Barra de los marcadores
     .accesskey = B
     .aria-label = Marcadores
+bookmarks-toolbar-menu =
+    .label = Barra de los marcadores
+bookmarks-toolbar-placeholder =
+    .title = Elementos de la barra de los marcadores
+bookmarks-toolbar-placeholder-button =
+    .label = Elementos de la barra de los marcadores
 # "Bookmark" is a verb, as in "Add current tab to bookmarks".
 bookmarks-current-tab =
     .label = Amestar la llingüeta actual a Marcadores
@@ -356,8 +439,48 @@ library-bookmarks-menu =
 library-recent-activity-title =
     .value = Actividá recién
 
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Guardar en { -pocket-brand-name }
+    .tooltiptext = Guardar en { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Complementos y estilos
+    .tooltiptext = Xestiona los tos complementos y estilos ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Axustes
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Abre los axustes ({ $shortcut })
+           *[other] Abre los axustes
+        }
+
 ## More items
 
 more-menu-go-offline =
     .label = Trabayar ensin conexón
     .accesskey = T
+
+## EME notification panel
+
+
+## Password save/update panel
+
+panel-save-update-password = Contraseña
+
+## Add-on removal warning
+
+addon-removal-abuse-report-checkbox = Informar d'esta estensión a { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Xestionar la cuenta
+remote-tabs-sync-now = Sincronizar agora

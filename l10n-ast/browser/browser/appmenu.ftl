@@ -21,12 +21,26 @@ appmenuitem-passwords =
     .label = Contraseñes
 appmenuitem-extensions-and-themes =
     .label = Estensiones y estilos
+appmenuitem-addons-and-themes =
+    .label = Complementos y estilos
 appmenuitem-find-in-page =
     .label = Atopar na páxina…
 appmenuitem-more-tools =
     .label = Más ferramientes
 appmenuitem-exit =
     .label = Colar
+appmenu-menu-button-closed =
+    .tooltiptext = Abrir el menú de l'aplicación
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Zarrar el menú de l'aplicación
+    .label = { -brand-shorter-name }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Abrir el menú de l'aplicación
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Zarrar el menú de l'aplicación
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -45,15 +59,22 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Sincronizar agora
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Sincronizar agora
-    .value = Sincronizar agora
+appmenuitem-fxa-toolbar-sync-now2 = Sincronizar agora
 appmenuitem-fxa-manage-account = Xestionar la cuenta
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Sincronizóse per última vegada { $time }
+    .label = Sincronizóse per última vegada { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Sincroniza y guarda datos
+appmenu-fxa-sync-and-save-data2 = Sincroniza y guarda datos
 appmenu-fxa-signed-in-label = Aniciar sesión
+appmenu-fxa-setup-sync =
+    .label = Activar la sincronización…
 appmenuitem-save-page =
     .label = Guardar la páxina como…
 
@@ -77,7 +98,7 @@ profiler-popup-reveal-description-button =
 profiler-popup-description-title =
     .value = Rexistra, analiza y comparti
 profiler-popup-description = Collabora na igua de problemes de rindimientu espublizando perfiles pa compartilos col to equipu.
-profiler-popup-learn-more = Deprender más
+profiler-popup-learn-more = Lleer más
 profiler-popup-settings =
     .value = Axustes
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
@@ -121,29 +142,17 @@ appmenu-help-header =
 appmenu-about =
     .label = Tocante a { -brand-shorter-name }
     .accesskey = T
-appmenu-help-product =
-    .label = Ayuda de { -brand-shorter-name }
-    .accesskey = A
-appmenu-help-show-tour =
-    .label = Percorríu per { -brand-shorter-name }
-    .accesskey = P
-appmenu-help-import-from-another-browser =
-    .label = Importar d'otru restolador…
-    .accesskey = I
-appmenu-help-keyboard-shortcuts =
-    .label = Atayos del tecláu
-    .accesskey = t
 appmenu-get-help =
     .label = Consiguir ayuda
     .accesskey = a
 appmenu-help-troubleshooting-info =
     .label = Información pa iguar problemes
     .accesskey = I
+appmenu-help-taskmanager =
+    .label = Xestor de xeres
 appmenu-help-more-troubleshooting-info =
     .label = Más información pa iguar problemes
     .accesskey = a
-appmenu-help-taskmanager =
-    .label = Xestor de xeres
 appmenu-help-report-site-issue =
     .label = Informar d'un fallu del sitiu…
 appmenu-help-feedback-page =
@@ -163,11 +172,11 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Mou d'iguar problemes
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Mou d'iguar problemes…
     .accesskey = M
 appmenu-help-exit-troubleshoot-mode =
-    .label = Desactivar el mou pa iguar problemes
+    .label = Desactivar el mou d'iguar problemes
     .accesskey = m
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
@@ -180,13 +189,10 @@ appmenu-help-not-deceptive =
     .label = Esti sitiu nun ye engañosu…
     .accesskey = e
 
-##
-
-appmenu-help-check-for-update =
-    .label = Comprobar los anovamientos…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Personalizar la barra de ferramientes…
+appmenu-taskmanager =
+    .label = Xestor de xeres
 appmenu-developer-tools-subheader = Ferramientes del restolador

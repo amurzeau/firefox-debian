@@ -11,10 +11,11 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Ange policyer som WebExtensions kan komma åt via chrome.storage.managed.
+policy-AllowedDomainsForApps = Definiera domäner som får åtkomst till Google Workspace.
 policy-AppAutoUpdate = Aktivera eller inaktivera automatisk applikationsuppdatering.
 policy-AppUpdateURL = Ange anpassad URL för programuppdateringar.
 policy-Authentication = Ställ in integrerad autentisering för webbplatser som stödjer det.
-policy-BackgroundAppUpdate = Aktivera eller inaktivera bakgrundsuppdateraren, som uppdaterar webbläsaren när den inte körs.
+policy-BackgroundAppUpdate2 = Aktivera eller inaktivera uppdateringar i bakgrunden.
 policy-BlockAboutAddons = Blockera tillgång till tilläggshanteraren (about:addons)
 policy-BlockAboutConfig = Blockera tillgång till sidan about:config.
 policy-BlockAboutProfiles = Blockera tillgång till sidan about:profiles.
@@ -107,6 +108,7 @@ policy-SearchEngines = Ange sökmotorinställningar. Denna policy finns bara på
 policy-SearchSuggestEnabled = Aktivera eller inaktivera sökförslag.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Installera PKCS #11-moduler.
+policy-ShowHomeButton = Visa hemknappen i verktygsfältet.
 policy-SSLVersionMax = Ange den maximala SSL-versionen.
 policy-SSLVersionMin = Ange den lägsta SSL-versionen.
 policy-SupportMenu = Lägg till ett anpassat menyalternativ med hjälp i hjälpmenyn.

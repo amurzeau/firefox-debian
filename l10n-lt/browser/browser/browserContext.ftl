@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Vienu tinklalapiu atgal ({ $shortcut })
     .aria-label = Atgal
     .accesskey = A
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Atgal
+    .accesskey = A
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Vienu tinklalapiu pirmyn ({ $shortcut })
     .aria-label = Pirmyn
     .accesskey = P
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Pirmyn
+    .accesskey = P
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Įkelti iš naujo
     .accesskey = n
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Įkelti iš naujo
+    .accesskey = n
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Stabdyti
     .accesskey = S
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Stabdyti
+    .accesskey = S
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = „{ -fxaccount-brand-name }“ paskyra
+    .tooltiptext = „{ -fxaccount-brand-name }“ paskyra
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Įrašyti į adresyną
     .accesskey = y
     .tooltiptext = Įtraukti šį tinklalapį į adresyną
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Įtraukti į adresyną
+    .accesskey = t
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Redaguoti adresyno įrašą
+    .accesskey = t
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Atverti saitą naujoje sudėtinėje kortelėje
     .accesskey = k
-main-context-menu-open-link-container =
-    .label = Atverti saitą naujame konteineryje
-    .accesskey = j
 main-context-menu-open-link-new-window =
     .label = Atverti saitą naujame lange
     .accesskey = l
@@ -347,6 +378,9 @@ main-context-menu-suggest-strong-password =
     .accesskey = s
 main-context-menu-manage-logins =
     .label = Tvarkyti prisijungimus…
+    .accesskey = T
+main-context-menu-manage-logins2 =
+    .label = Tvarkyti prisijungimus
     .accesskey = T
 main-context-menu-keyword =
     .label = Įdėti šios paieškos reikšminį žodį…

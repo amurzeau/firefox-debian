@@ -109,6 +109,9 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Въвеждайте малко, намирайте много: търсете с { $engineName } направо от адресната лента.
 urlbar-search-tips-redirect-2 = Започнете търсене от адресната лента, за да видите предложения от { $engineName } и историята на разглеждане.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Изберете бърз клавиш, за да намирате нужното по-бързо.
 
 ## Local search mode indicator labels in the urlbar
 
@@ -261,6 +264,18 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmark-panel-cancel =
+    .label = Отказ
+    .accesskey = о
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Премахване на отметка
+           *[other] Премахване на { $count } отметки
+        }
+    .accesskey = н
 bookmark-panel-show-editor-checkbox =
     .label = Показване на диалога при запазване
     .accesskey = п
@@ -285,6 +300,8 @@ identity-passive-loaded = Части от страницата, например
 identity-active-loaded = Изключихте защитата за тази страница.
 identity-weak-encryption = Тази странница използва слабо шифриране.
 identity-insecure-login-forms = Въведените на страницата данни за вход може да бъдат компрометирани.
+identity-permissions =
+    .value = Права
 identity-https-only-connection-upgraded = (превключено на HTTPS)
 identity-https-only-label = Режим „само HTTPS“
 identity-https-only-dropdown-on =
@@ -294,8 +311,6 @@ identity-https-only-dropdown-off =
 identity-https-only-dropdown-off-temporarily =
     .label = Временно изключено
 identity-https-only-info-no-upgrade = Връзката не може да бъде превключена от HTTP.
-identity-permissions =
-    .value = Права
 identity-permissions-reload-hint = За да бъдат приложени промените може да се наложи да презаредите страницата.
 identity-permissions-empty = Не сте дали допълнителни права на страницата.
 identity-clear-site-data =
@@ -340,6 +355,13 @@ browser-window-close-button =
     .tooltiptext = Затваряне
 
 ## Tab actions
+
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = КАРТИНА В КАРТИНАТА
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
 
 
 ## Bookmarks toolbar items
@@ -505,8 +527,6 @@ pointerlock-warning-no-domain = Този документ контролира �
 
 bookmarks-show-all-bookmarks =
     .label = Показване на всички отметки
-bookmarks-recent-bookmarks =
-    .value = Последни отметки
 bookmarks-toolbar-chevron =
     .tooltiptext = Показване на повече отметки
 bookmarks-sidebar-content =
@@ -522,12 +542,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Скриване на лентата с отметки
            *[other] Странична лента с отметки
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Скриване на страничната лента с отметки
-           *[other] Показване на лентата с отметки
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -565,10 +579,15 @@ bookmarks-toolbar-placeholder-button =
 
 library-bookmarks-menu =
     .label = Отметки
-library-bookmarks-bookmark-this-page =
-    .label = Отмятане на страницата
-library-bookmarks-bookmark-edit =
-    .label = Промяна на отметка
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Запазване в { -pocket-brand-name }
+    .tooltiptext = Запазване в { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
 
 ## More items
 
@@ -579,3 +598,17 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = Аудио или видеозапис от страницата използва софтуер за DRM, който може да ограничи какво { -brand-short-name } ви позволява да правите с тях.
+eme-notifications-drm-content-playing-dismiss = Прекратяване
+eme-notifications-drm-content-playing-dismiss-accesskey = р
+
+## Password save/update panel
+
+
+## Add-on removal warning
+
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Управление на сметка
+remote-tabs-sync-now = Синхронизиране

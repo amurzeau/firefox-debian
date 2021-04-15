@@ -264,11 +264,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Προσθήκη σελιδοδείκτη
+bookmarks-edit-bookmark = Επεξεργασία σελιδοδείκτη
+bookmark-panel-cancel =
+    .label = Ακύρωση
+    .accesskey = Α
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Αφαίρεση σελιδοδείκτη
+           *[other] Αφαίρεση { $count } σελιδοδεικτών
+        }
+    .accesskey = Α
 bookmark-panel-show-editor-checkbox =
     .label = Εμφάνιση επεξεργαστή κατά την αποθήκευση
     .accesskey = Ε
 bookmark-panel-done-button =
     .label = Τέλος
+bookmark-panel-save-button =
+    .label = Αποθήκευση
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -288,6 +304,8 @@ identity-passive-loaded = Κάποια τμήματα αυτής της σελί
 identity-active-loaded = Έχετε απενεργοποιήσει την προστασία σε αυτή τη σελίδα.
 identity-weak-encryption = Αυτή η σελίδα χρησιμοποιεί μη ισχυρή κρυπτογράφηση.
 identity-insecure-login-forms = Τα στοιχεία σύνδεσης που πληκτρολογήσατε σε αυτή την σελίδα μπορεί να διαρεύσουν.
+identity-permissions =
+    .value = Δικαιώματα
 identity-https-only-connection-upgraded = (αναβαθμίστηκε σε HTTPS)
 identity-https-only-label = Λειτουργία Μόνο-HTTPS
 identity-https-only-dropdown-on =
@@ -299,16 +317,14 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Ενεργοποιήστε τη λειτουργία Μόνο-HTTPS για αυτή την ιστοσελίδα αν θέλετε το { -brand-short-name } να αναβαθμίζει τη σύνδεση όταν είναι δυνατό.
 identity-https-only-info-turn-off2 = Αν η σελίδα φαίνεται προβληματική, δοκιμάστε να απενεργοποιήσετε τη λειτουργία Μόνο-HTTPS για ανανέωση της ιστοσελίδας με το μη ασφαλές HTTP.
 identity-https-only-info-no-upgrade = Δεν είναι δυνατή η αναβάθμιση της σύνδεσης από HTTP.
-identity-permissions =
-    .value = Δικαιώματα
 identity-permissions-storage-access-header = Cookies μεταξύ ιστοσελίδων
 identity-permissions-storage-access-hint = Αυτά τα μέρη μπορούν να χρησιμοποιήσουν cookies μεταξύ ιστοσελίδων και δεδομένα ιστότοπων όσο βρίσκεστε σε αυτή την ιστοσελίδα.
 identity-permissions-reload-hint = Ίσως χρειαστεί να φορτώσετε εκ νέου τη σελίδα για εφαρμογή των αλλαγών.
 identity-permissions-empty = Δεν έχετε χορηγήσει ειδικές άδειες στη σελίδα.
 identity-clear-site-data =
     .label = Διαγραφή cookies και δεδομένων ιστοσελίδων…
-identity-connection-not-secure-security-view = Η σύνδεσή σας σε αυτή την ιστοσελίδα δεν είναι ασφαλής.
-identity-connection-verified = Η σύνδεσή σας σε αυτή την ιστοσελίδα είναι ασφαλής.
+identity-connection-not-secure-security-view = Η σύνδεσή σας με αυτή την ιστοσελίδα δεν είναι ασφαλής.
+identity-connection-verified = Η σύνδεσή σας με αυτή την ιστοσελίδα είναι ασφαλής.
 identity-ev-owner-label = Το πιστοποιητικό εκδόθηκε για:
 identity-description-custom-root = Η Mozilla δεν αναγνωρίζει αυτό τον εκδότη πιστοποιητικών. Ενδέχεται να έχει προστεθεί από το λειτουργικό σας σύστημα ή κάποιο διαχειριστή. <label data-l10n-name="link">Μάθετε περισσότερα</label>
 identity-remove-cert-exception =
@@ -348,8 +364,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Σε αναπαραγωγή
-browser-tab-audio-muted = Σε σίγαση
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = ΑΝΑΠΑΡΑΓΩΓΗ
 # This label should be written in all capital letters if your locale supports them.
@@ -358,6 +372,26 @@ browser-tab-audio-muted2 = ΣΕ ΣΙΓΑΣΗ
 browser-tab-audio-blocked = ΦΡΑΓΗ ΑΥΤΟΜΑΤΗΣ ΑΝΑΠΑΡΑΓΩΓΗΣ
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = ΕΙΚΟΝΑ ΕΝΤΟΣ ΕΙΚΟΝΑΣ
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] ΣΙΓΑΣΗ ΚΑΡΤΕΛΑΣ
+       *[other] ΣΙΓΑΣΗ { $count } ΚΑΡΤΕΛΩΝ
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] ΑΡΣΗ ΣΙΓΑΣΗΣ ΚΑΡΤΕΛΑΣ
+       *[other] ΑΡΣΗ ΣΙΓΑΣΗΣ { $count } ΚΑΡΤΕΛΩΝ
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] ΑΝΑΠΑΡΑΓΩΓΗ ΚΑΡΤΕΛΑΣ
+       *[other] ΑΝΑΠΑΡΑΓΩΓΗ { $count } ΚΑΡΤΕΛΩΝ
+    }
 
 ## Bookmarks toolbar items
 
@@ -453,7 +487,7 @@ urlbar-placeholder-search-mode-other-tabs =
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
-    .placeholder = Αναζήτηση με { $name } ή πληκτρολόγηση διεύθυνσης
+    .placeholder = Αναζήτηση με { $name } ή εισαγωγή διεύθυνσης
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Το πρόγραμμα περιήγησης ελέγχεται απομακρυσμένα
 urlbar-permissions-granted =
@@ -509,6 +543,13 @@ urlbar-result-action-tabtosearch-web = Αναζήτηση με { $engine } απ�
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Αναζήτηση { $engine } απευθείας από τη γραμμή διευθύνσεων
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Αντιγραφή
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -550,8 +591,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Προβολή όλων των σελιδοδεικτών
-bookmarks-recent-bookmarks =
-    .value = Πρόσφατοι σελιδοδείκτες
 bookmarks-manage-bookmarks =
     .label = Διαχείριση σελιδοδεικτών
 bookmarks-recent-bookmarks-panel =
@@ -572,12 +611,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Απόκρυψη στήλης σελιδοδεικτών
            *[other] Προβολή στήλης σελιδοδεικτών
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Απόκρυψη γραμμής σελιδοδεικτών
-           *[other] Προβολή γραμμής σελιδοδεικτών
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -618,18 +651,37 @@ bookmarks-toolbar-placeholder-button =
     .label = Στοιχεία γραμμής σελιδοδεικτών
 # "Bookmark" is a verb, as in "Add current tab to bookmarks".
 bookmarks-current-tab =
-    .label = Προσθήκη σελιδοδείκτη τρέχουσας καρτέλας
+    .label = Προσθήκη σελιδοδείκτη
 
 ## Library Panel items
 
 library-bookmarks-menu =
     .label = Σελιδοδείκτες
-library-bookmarks-bookmark-this-page =
-    .label = Δημιουργία σελιδοδείκτη
-library-bookmarks-bookmark-edit =
-    .label = Επεξεργασία σελιδοδείκτη
 library-recent-activity-title =
     .value = Πρόσφατη δραστηριότητα
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Αποθήκευση στο { -pocket-brand-name }
+    .tooltiptext = Αποθήκευση στο { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Πρόσθετα και θέματα
+    .tooltiptext = Διαχειριστείτε τα πρόσθετα και τα θέματά σας ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Ρυθμίσεις
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Άνοιγμα ρυθμίσεων ({ $shortcut })
+           *[other] Άνοιγμα ρυθμίσεων
+        }
 
 ## More items
 
@@ -652,3 +704,13 @@ panel-save-update-password = Κωδικός πρόσβασης
 
 ## Add-on removal warning
 
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Αφαίρεση του { $name };
+addon-removal-abuse-report-checkbox = Αναφορά επέκτασης στη { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Διαχείριση λογαριασμού
+remote-tabs-sync-now = Συγχρονισμός τώρα

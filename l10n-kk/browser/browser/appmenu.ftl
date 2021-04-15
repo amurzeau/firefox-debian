@@ -21,6 +21,8 @@ appmenuitem-passwords =
     .label = Парольдер
 appmenuitem-extensions-and-themes =
     .label = Кеңейтулер және темалар
+appmenuitem-addons-and-themes =
+    .label = Кеңейтулер және темалар
 appmenuitem-find-in-page =
     .label = Беттен табу…
 appmenuitem-more-tools =
@@ -33,6 +35,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Қолданбалар мәзірін жабу
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Шығу
+           *[other] Шығу
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Қолданбалар мәзірін ашу
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Қолданбалар мәзірін жабу
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +65,11 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Қазір синхрондау
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Қазір синхрондау
-    .value = Қазір синхрондау
+appmenuitem-fxa-toolbar-sync-now2 = Қазір синхрондау
 appmenuitem-fxa-manage-account = Тіркелгіні басқару
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +77,7 @@ appmenu-fxa-last-sync = Соңғы синхрондалу { $time }
     .label = Соңғы синхрондалу { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Деректерді синхрондау және сақтау
+appmenu-fxa-sync-and-save-data2 = Деректерді синхрондау және сақтау
 appmenu-fxa-signed-in-label = Кіру
 appmenu-fxa-setup-sync =
     .label = Синхрондауды іске қосу…
@@ -135,29 +149,17 @@ appmenu-help-header =
 appmenu-about =
     .label = { -brand-shorter-name } туралы
     .accesskey = а
-appmenu-help-product =
-    .label = { -brand-shorter-name } көмегі
-    .accesskey = к
-appmenu-help-show-tour =
-    .label = { -brand-shorter-name } ішіне cаяхат
-    .accesskey = я
-appmenu-help-import-from-another-browser =
-    .label = Басқа браузерден импорттау…
-    .accesskey = и
-appmenu-help-keyboard-shortcuts =
-    .label = Пернетақта жарлықтары
-    .accesskey = е
 appmenu-get-help =
     .label = Көмек алу
     .accesskey = м
 appmenu-help-troubleshooting-info =
     .label = Техникалық ақпарат
     .accesskey = а
+appmenu-help-taskmanager =
+    .label = Тапсырмалар басқарушысы
 appmenu-help-more-troubleshooting-info =
     .label = Мәселелерді шешудің көбірек ақпараты
     .accesskey = ш
-appmenu-help-taskmanager =
-    .label = Тапсырмалар басқарушысы
 appmenu-help-report-site-issue =
     .label = Сайт мәселесі жөнінде хабарлау…
 appmenu-help-feedback-page =
@@ -177,8 +179,8 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Мәселелерді шешу режимі
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Мәселелерді шешу режимі…
     .accesskey = М
 appmenu-help-exit-troubleshoot-mode =
     .label = Мәселелерді шешу режимін сөндіру
@@ -194,13 +196,10 @@ appmenu-help-not-deceptive =
     .label = Бұл фишингті сайт емес…
     .accesskey = ш
 
-##
-
-appmenu-help-check-for-update =
-    .label = Жаңартуларды тексеру…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Құралдар панелін баптау…
+appmenu-taskmanager =
+    .label = Тапсырмалар басқарушысы
 appmenu-developer-tools-subheader = Браузер құралдары

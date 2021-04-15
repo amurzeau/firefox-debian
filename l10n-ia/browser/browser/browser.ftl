@@ -264,11 +264,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Adder marcapaginas
+bookmarks-edit-bookmark = Modificar marcapaginas
+bookmark-panel-cancel =
+    .label = Cancellar
+    .accesskey = C
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Remover le marcapaginas
+           *[other] Remover { $count } marcapaginas
+        }
+    .accesskey = R
 bookmark-panel-show-editor-checkbox =
     .label = Monstrar editor quando se salva
     .accesskey = M
 bookmark-panel-done-button =
     .label = Facite
+bookmark-panel-save-button =
+    .label = Salvar
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -288,6 +304,8 @@ identity-passive-loaded = Partes de iste pagina non es secur (per exemplo, imagi
 identity-active-loaded = Tu ha disactivate le protection sur iste pagina.
 identity-weak-encryption = Iste pagina usa cryptation debile.
 identity-insecure-login-forms = Credentiales inserite sur iste pagina poterea esser compromittite.
+identity-permissions =
+    .value = Permissiones
 identity-https-only-connection-upgraded = (promovite a HTTPS)
 identity-https-only-label = Modo solo HTTPS
 identity-https-only-dropdown-on =
@@ -299,10 +317,8 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Activa le modo solo HTTPS pro iste sito si tu vole que { -brand-short-name } securisa le connexion quando possibile.
 identity-https-only-info-turn-off2 = Si le pagina non functiona, prova disactivar le modo solo HTTPS pro iste sito e recargar con un connexion HTTP insecur.
 identity-https-only-info-no-upgrade = Impossibile promover le connexion HTTP.
-identity-permissions =
-    .value = Permissiones
-identity-permissions-storage-access-header = Cookies inter-sitos
-identity-permissions-storage-access-hint = Iste partes pote usar cookies inter-sitos e datos del sito durante que tu es sur iste sito.
+identity-permissions-storage-access-header = Cookies inter sitos
+identity-permissions-storage-access-hint = Iste entitates pote usar cookies inter sitos e le datos del sito durante que tu visita iste sito.
 identity-permissions-reload-hint = Il es possibile que tu debe recargar le pagina pro que le cambios se applica.
 identity-permissions-empty = Tu non ha concedite alcun permission special a iste sito.
 identity-clear-site-data =
@@ -348,8 +364,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = In reproduction
-browser-tab-audio-muted = Silentiate
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = In reproduction
 # This label should be written in all capital letters if your locale supports them.
@@ -358,6 +372,26 @@ browser-tab-audio-muted2 = Silentiate
 browser-tab-audio-blocked = Auto-reproduction blocate
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = Imagine-in-imagine
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] SILENTIAR SCHEDA
+       *[other] SILENTIAR { $count } SCHEDAS
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] DE-SILENTIAR SCHEDA
+       *[other] DE-SILENTIAR { $count } SCHEDAS
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] REPRODUCER SCHEDA
+       *[other] REPRODUCER { $count } SCHEDAS
+    }
 
 ## Bookmarks toolbar items
 
@@ -396,6 +430,10 @@ popup-silence-notifications-checkbox-warning = { -brand-short-name } non monstra
 popup-screen-sharing-block =
     .label = Blocar
     .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Blocar sempre
+    .accesskey = s
+popup-mute-notifications-checkbox = Silentiar avisos del sito web durante le compartimento
 
 ## WebRTC window or screen share tab switch warning
 
@@ -505,6 +543,13 @@ urlbar-result-action-tabtosearch-web = Cercar con { $engine } directemente ab le
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Cercar in { $engine } directemente ab le barra de adresses
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Copiar
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -546,8 +591,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Monstrar tote le marcapaginas
-bookmarks-recent-bookmarks =
-    .value = Marcapaginas recente
 bookmarks-manage-bookmarks =
     .label = Gerer marcapaginas
 bookmarks-recent-bookmarks-panel =
@@ -568,12 +611,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Celar le barra lateral de marcapaginas
            *[other] Vider le barra lateral de marcapaginas
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Celar le barra de marcapaginas
-           *[other] Vider le barra de marcapaginas
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -620,12 +657,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Marcapaginas
-library-bookmarks-bookmark-this-page =
-    .label = Adder un marcapaginas
-library-bookmarks-bookmark-edit =
-    .label = Modificar iste marcapaginas
 library-recent-activity-title =
     .value = Recente activitate
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Salvar in { -pocket-brand-name }
+    .tooltiptext = Salvar in { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Additivos e themas
+    .tooltiptext = Gere tu additivos e themas ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Parametros
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Aperi parametros ({ $shortcut })
+           *[other] Aperi parametros
+        }
 
 ## More items
 
@@ -648,3 +704,13 @@ panel-save-update-password = Contrasigno
 
 ## Add-on removal warning
 
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Remover { $name }?
+addon-removal-abuse-report-checkbox = Signalar iste extension a { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Gerer conto
+remote-tabs-sync-now = Synchronisar ora

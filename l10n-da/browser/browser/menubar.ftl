@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = Indstillinger
 menu-application-services =
     .label = Tjenester
 menu-application-hide-this =
@@ -226,7 +228,7 @@ menu-bookmarks-show-all =
 menu-bookmark-this-page =
     .label = Bogmærk denne side
 menu-bookmark-current-tab =
-    .label = Gem bogmærke til det aktuelle faneblad
+    .label = Bogmærk dette faneblad
 menu-bookmark-edit =
     .label = Rediger bogmærke
 menu-bookmarks-all-tabs =
@@ -252,15 +254,18 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Log ind på { -brand-product-name }…
     .accesskey = g
-menu-tools-extensions =
-    .label = Udvidelser og temaer
-    .accesskey = U
+menu-tools-addons-and-themes =
+    .label = Tilføjelser og temaer
+    .accesskey = T
 menu-tools-fxa-sign-in2 =
     .label = Log ind
     .accesskey = L
 menu-tools-turn-on-sync =
     .label = Aktiver { -sync-brand-short-name }…
     .accesskey = A
+menu-tools-turn-on-sync2 =
+    .label = Slå synkronisering til
+    .accesskey = S
 menu-tools-sync-now =
     .label = Synkroniser nu
     .accesskey = S
@@ -270,12 +275,25 @@ menu-tools-fxa-re-auth =
 menu-tools-web-developer =
     .label = Webudvikler
     .accesskey = W
+menu-tools-browser-tools =
+    .label = Browser-værktøj
+    .accesskey = B
+menu-tools-task-manager =
+    .label = Jobliste
+    .accesskey = J
 menu-tools-page-source =
     .label = Sidens kildekode
     .accesskey = k
 menu-tools-page-info =
     .label = Sideoplysninger
     .accesskey = o
+menu-settings =
+    .label = Indstillinger
+    .accesskey =
+        { PLATFORM() ->
+            [windows] I
+           *[other] t
+        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -286,13 +304,6 @@ menu-preferences =
         { PLATFORM() ->
             [windows] I
            *[other] I
-        }
-menu-settings =
-    .label = Indstillinger
-    .accesskey =
-        { PLATFORM() ->
-            [windows] I
-           *[other] n
         }
 menu-tools-layout-debugger =
     .label = Layout-debugger
@@ -306,15 +317,6 @@ menu-window-bring-all-to-front =
     .label = Vis alle vinduer
 
 ## Help Menu
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
 
 
 # NOTE: For Engineers, any additions or changes to Help menu strings should
@@ -346,11 +348,11 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Teknisk information…
     .accesskey = T
+menu-help-taskmanager =
+    .label = Jobliste
 menu-help-more-troubleshooting-info =
     .label = Mere teknisk information
     .accesskey = t
-menu-help-taskmanager =
-    .label = Jobliste
 menu-help-report-site-issue =
     .label = Rapportér problem med websted…
 menu-help-feedback-page =
@@ -362,12 +364,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Genstart med tilføjelser aktiveret
     .accesskey = G
-menu-help-enter-troubleshoot-mode =
-    .label = Fejlsøgnings-tilstand
+menu-help-enter-troubleshoot-mode2 =
+    .label = Fejlsøgnings-tilstand…
     .accesskey = F
 menu-help-exit-troubleshoot-mode =
     .label = Slå fejlsøgnings-tilstand fra
-    .accesskey = S
+    .accesskey = f
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =
@@ -376,6 +378,3 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Dette er ikke et vildledende websted…
     .accesskey = v
-menu-help-check-for-update =
-    .label = Søg efter opdateringer…
-    .accesskey = S

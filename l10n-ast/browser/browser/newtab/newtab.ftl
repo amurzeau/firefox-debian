@@ -6,6 +6,11 @@
 ### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = Llingüeta nueva
+newtab-settings-button =
+    .title = Personalizar la páxina «Llingüeta nueva»
+newtab-personalize-button-label = Personalizar
+    .title = Personaliza «Llingüeta nueva»
+    .aria-label = Personalizar «Llingüeta nueva»
 
 ## Search box component.
 
@@ -13,9 +18,15 @@ newtab-page-title = Llingüeta nueva
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-shortcut-header = Atayu nuevu
+newtab-topsites-edit-shortcut-header = Edición d'un atayu
 newtab-topsites-title-label = Títulu
+newtab-topsites-title-input =
+    .placeholder = Introduz un títulu
 newtab-topsites-url-label = URL
+newtab-topsites-url-input =
+    .placeholder = Teclexa o apiega una URL
 newtab-topsites-url-validation = Ríquese una URL válida
+newtab-topsites-image-url-label = URL d'imaxe personalizada
 newtab-topsites-use-image-link = Usar una imaxe personalizada…
 
 ## Top Sites - General form dialog buttons. These are verbs/actions.
@@ -36,6 +47,14 @@ newtab-confirm-delete-history-p2 = Esta aición nun pue desfacese.
 
 ## Context Menu - Action Tooltips.
 
+# General tooltip for context menus.
+newtab-menu-section-tooltip =
+    .title = Abrir el menú
+    .aria-label = Abrir el menú
+# Tooltip on an empty topsite box to open the New Top Site dialog.
+newtab-menu-topsites-placeholder-tooltip =
+    .title = Editar esti sitiu
+    .aria-label = Editar esti sitiu
 
 ## Context Menu: These strings are displayed in a context menu and are meant as a call to action for a given page.
 
@@ -44,7 +63,7 @@ newtab-menu-open-new-window = Abrir nuna ventana nueva
 newtab-menu-open-new-private-window = Abrir nuna ventana privada nueva
 newtab-menu-dismiss = Escartar
 newtab-menu-pin = Fixar
-newtab-menu-unpin = Soltar
+newtab-menu-unpin = Lliberar
 newtab-menu-delete-history = Desaniciar del historial
 newtab-menu-save-to-pocket = Guardar en { -pocket-brand-name }
 newtab-menu-delete-pocket = Desaniciar de { -pocket-brand-name }
@@ -108,6 +127,7 @@ newtab-section-menu-privacy-notice = Avisu de privacidá
 
 ## Section Headers.
 
+newtab-section-header-topsites = Sitios principales
 newtab-section-header-highlights = Lo destacao
 newtab-section-header-recent-activity = Actividá recién
 
@@ -118,13 +138,15 @@ newtab-empty-section-highlights = Comienza a restolar y equí vamos amosate dalg
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
 newtab-discovery-empty-section-topstories-loading = Cargando...
+# Displays when a layout in a section took too long to fetch articles.
+newtab-discovery-empty-section-topstories-timed-out = ¡Meca! Paez qu'esta seición nun cargó del too.
 
 ## Pocket Content Section.
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Temes populares:
 newtab-pocket-more-recommendations = Más recomendaciones
-newtab-pocket-learn-more = Deprender más
+newtab-pocket-learn-more = Lleer más
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.
@@ -133,11 +155,21 @@ newtab-error-fallback-info = Meca, asocedió daqué malo al cargar esti contení
 
 ## Customization Menu
 
+newtab-custom-shortcuts-title = Atayos
+newtab-custom-shortcuts-subtitle = Sitios que guardes o visites
+newtab-custom-row-selector =
+    { $num ->
+        [one] { $num } filera
+       *[other] { $num } fileres
+    }
+newtab-custom-sponsored-sites = Atayos patrocinaos
 newtab-custom-recent-title = Actividá recién
-newtab-custom-recent-subtitle = Una esbilla de los sitios y el conteníu de recién
+newtab-custom-recent-subtitle = Una esbilla de los sitios y el conteníu recién
+newtab-custom-close-button = Zarrar
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
 # and non-essential but also not entirely trivial and useless.
 newtab-custom-snippets-title = Cachos d'información
 newtab-custom-snippets-subtitle = Conseyos y noticies de { -vendor-short-name } y { -brand-product-name }
+newtab-custom-settings = Xestionar más axustes

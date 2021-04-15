@@ -4,11 +4,7 @@
 
 migration-wizard =
     .title = Чаробњак за увоз
-import-from =
-    { PLATFORM() ->
-        [windows] Увези подешавања, забелешке, историјат, лозинке и друге податке из:
-       *[other] Увези подешавања, забелешке, историјат, лозинке и друге податке из:
-    }
+import-from = Увези подешавања, обележиваче, историју, лозинке и остало из:
 import-from-bookmarks = Увези забелешке из:
 import-from-ie =
     .label = Microsoft Internet Explorer
@@ -49,8 +45,8 @@ import-from-firefox =
 import-from-360se =
     .label = 360 Secure Browser
     .accesskey = 3
-no-migration-sources = Није пронађен ниједан програм који садржи забелешке, историјат или лозинке.
-import-source-page-title = Увези подешавања и податке
+no-migration-sources = Није пронађен ниједан програм који садржи обележиваче, историју или лозинке.
+import-source-page-title = Увоз подешавања и података
 import-items-page-title = Ставке за увоз
 import-items-description = Изаберите ставке за увоз:
 import-permissions-page-title = Одобрите дозволе за { -brand-short-name }
@@ -62,7 +58,7 @@ import-select-profile-page-title = Избор профила
 import-select-profile-description = Следеће профиле можете увести из:
 import-done-page-title = Увоз је завршен
 import-done-description = Следеће ставке су успешно увезене:
-import-close-source-browser = Затворите одабрани прегледач пре него што наставите.
+import-close-source-browser = Затворите изабрани прегледач пре него што наставите.
 # Displays which browser the bookmarks are being imported from
 #
 # Variables:
@@ -119,11 +115,11 @@ browser-data-formdata-label =
 # This string should use the same phrase for "logins and passwords" as the
 # label in the main hamburger menu that opens about:logins.
 browser-data-passwords-checkbox =
-    .label = Сачуване пријаве и лозинке
+    .label = Сачувани подаци за пријаву
 # This string should use the same phrase for "logins and passwords" as the
 # label in the main hamburger menu that opens about:logins.
 browser-data-passwords-label =
-    .value = Сачуване пријаве и лозинке
+    .value = Сачувани подаци за пријаву
 browser-data-bookmarks-checkbox =
     .label =
         { $browser ->
@@ -143,6 +139,6 @@ browser-data-otherdata-checkbox =
 browser-data-otherdata-label =
     .label = Остали подаци
 browser-data-session-checkbox =
-    .label = Прозори и језичци
+    .label = Прозори и картице
 browser-data-session-label =
-    .value = Прозори и језичци
+    .value = Прозори и картице

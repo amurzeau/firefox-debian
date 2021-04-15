@@ -28,6 +28,18 @@ search-input-box =
             [windows] In Einstellungen suchen
            *[other] In Einstellungen suchen
         }
+settings-page-title = Einstellungen
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = In Einstellungen suchen
 managed-notice = Der Browser wird durch Ihre Organisation verwaltet.
 category-list =
     .aria-label = Kategorien
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Synchronisation
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = { -brand-short-name }-Experimente
 category-experimental =
     .tooltiptext = { -brand-short-name }-Experimente
 pane-experimental-subtitle = Vorsicht!
 pane-experimental-search-results-header = { -brand-short-name } Experimente: Vorsicht!
 pane-experimental-description = Das Ändern von erweiterten Konfigurationseinstellungen kann sich auf die Leistung und Sicherheit von { -brand-short-name } auswirken.
+pane-experimental-description2 = Das Ändern von erweiterten Konfigurationseinstellungen kann sich auf die Leistung und Sicherheit von { -brand-short-name } auswirken.
 pane-experimental-reset =
     .label = Standard wiederherstellen
     .accesskey = w
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] Keine Treffer in den Einstellungen für "<span data-l10n-name="query"></span>".
        *[other] Keine Treffer in den Einstellungen für "<span data-l10n-name="query"></span>".
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Keine Treffer in den Einstellungen für "<span data-l10n-name="query"></span>".
 search-results-help-link = Benötigen Sie Hilfe? Dann besuchen Sie die <a data-l10n-name="url">Hilfeseite für { -brand-short-name }</a>.
 
 ## General Section
@@ -369,6 +387,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Nicht nach Updates suchen (nicht empfohlen)
     .accesskey = d
+update-application-background-enabled =
+    .label = Wenn { -brand-short-name } nicht ausgeführt wird
+    .accesskey = W
 update-application-warning-cross-user-setting = Diese Einstellung betrifft alle Windows-Konten und { -brand-short-name }-Profile, welche diese Installation von { -brand-short-name } verwenden.
 update-application-use-service =
     .label = Einen Hintergrunddienst verwenden, um Updates zu installieren
@@ -380,6 +401,15 @@ update-setting-write-failure-title = Fehler beim Speichern der Update-Einstellun
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
     { -brand-short-name } bemerkte einen Fehler und hat diese Änderung nicht gespeichert. Das Setzen dieser Update-Einstellung benötigt Schreibrechte für die unten genannte Datei. Sie oder ein Systemadministrator können das Problem eventuell beheben, indem Sie der Gruppe "Benutzer" vollständige Kontrolle über die Datei gewähren.
+    
+    Konnte folgende Datei nicht speichern: { $path }
+update-setting-write-failure-title2 = Fehler beim Speichern der Update-Einstellungen
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name } bemerkte einen Fehler und hat diese Änderung nicht gespeichert. Das Ändern dieser Update-Einstellung benötigt Schreibrechte für die unten genannte Datei. Sie oder ein Systemadministrator können das Problem eventuell beheben, indem Sie der Gruppe "Benutzer" vollständige Kontrolle über die Datei gewähren.
     
     Konnte folgende Datei nicht speichern: { $path }
 update-in-progress-title = Update wird durchgeführt
@@ -579,6 +609,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Suchvorschläge in privaten Fenstern anzeigen
 suggestions-addressbar-settings-generic = Einstellungen für andere Vorschläge in der Adressleiste ändern
+suggestions-addressbar-settings-generic2 = Einstellungen für andere Vorschläge in der Adressleiste ändern
 search-suggestions-cant-show = Suchvorschläge werden nicht in der Adressleiste angezeigt, weil { -brand-short-name } angewiesen wurde, keine Chronik zu speichern.
 search-one-click-header = Ein-Klick-Suchmaschinen
 search-one-click-header2 = Suchmaschinen-Schlüsselwörter
@@ -613,6 +644,8 @@ containers-back-button =
             [windows] Zurück zu den Einstellungen
            *[other] Zurück zu den Einstellungen
         }
+containers-back-button2 =
+    .aria-label = Zurück zu den Einstellungen
 containers-header = Tab-Umgebungen
 containers-add-button =
     .label = Neue Umgebung hinzufügen
@@ -621,6 +654,8 @@ containers-new-tab-check =
     .label = Tab-Umgebung für jeden neuen Tab wählen
     .accesskey = w
 containers-preferences-button =
+    .label = Einstellungen
+containers-settings-button =
     .label = Einstellungen
 containers-remove-button =
     .label = Löschen
@@ -633,6 +668,10 @@ sync-signedout-description = Synchronisieren Sie Ihre Lesezeichen, Chronik, Tabs
 sync-signedout-account-signin2 =
     .label = Bei { -sync-brand-short-name } anmelden…
     .accesskey = B
+sync-signedout-description2 = Synchronisieren Sie Ihre Lesezeichen, Chronik, Tabs, Passwörter, Add-ons und Einstellungen zwischen allen Ihren Geräten.
+sync-signedout-account-signin3 =
+    .label = Zum Synchronisieren anmelden…
+    .accesskey = S
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -672,6 +711,10 @@ prefs-sync-setup =
     .label = { -sync-brand-short-name } einrichten…
     .accesskey = e
 prefs-sync-offer-setup-label = Synchronisieren Sie Ihre Lesezeichen, Chronik, Tabs, Passwörter, Add-ons und Einstellungen zwischen allen Ihren Geräten.
+prefs-sync-turn-on-syncing =
+    .label = Synchronisation aktivieren…
+    .accesskey = S
+prefs-sync-offer-setup-label2 = Synchronisieren Sie Ihre Lesezeichen, Chronik, Tabs, Passwörter, Add-ons und Einstellungen zwischen allen Ihren Geräten.
 prefs-sync-now =
     .labelnotsyncing = Jetzt synchronisieren
     .accesskeynotsyncing = J
@@ -692,6 +735,7 @@ sync-currently-syncing-prefs =
         [windows] Einstellungen
        *[other] Einstellungen
     }
+sync-currently-syncing-settings = Einstellungen
 sync-change-options =
     .label = Ändern…
     .accesskey = Ä
@@ -737,6 +781,10 @@ sync-engine-prefs =
             [windows] Einstellungen
            *[other] Einstellungen
         }
+    .tooltiptext = Durch Sie geänderte allgemeine, Datenschutz- und Sicherheitseinstellungen
+    .accesskey = E
+sync-engine-settings =
+    .label = Einstellungen
     .tooltiptext = Durch Sie geänderte allgemeine, Datenschutz- und Sicherheitseinstellungen
     .accesskey = E
 
@@ -1153,6 +1201,11 @@ space-alert-under-5gb-ok-button =
     .label = OK
     .accesskey = O
 space-alert-under-5gb-message = { -brand-short-name } verfügt über nur noch wenig freien Speicherplatz. Website-Inhalte werden vielleicht nicht richtig angezeigt. Besuchen Sie "Weitere Informationen", um die Speichernutzung für ein besseres Weberlebnis zu optimieren.
+space-alert-over-5gb-settings-button =
+    .label = Einstellungen öffnen
+    .accesskey = E
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name } verfügt über nur noch wenig freien Speicherplatz.</strong> Website-Inhalte werden vielleicht nicht richtig angezeigt. Sie können gespeicherte Daten im Menü Einstellungen > Datenschutz & Sicherheit > Cookies und Website-Daten löschen.
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name } verfügt über nur noch wenig freien Speicherplatz.</strong> Website-Inhalte werden vielleicht nicht richtig angezeigt. Besuchen Sie "Weitere Informationen", um die Speichernutzung für ein besseres Weberlebnis zu optimieren.
 
 ## Privacy Section - HTTPS-Only
 

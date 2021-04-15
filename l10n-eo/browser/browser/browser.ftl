@@ -264,11 +264,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Aldoni legosignon
+bookmarks-edit-bookmark = Modifi legosignon
+bookmark-panel-cancel =
+    .label = Nuligi
+    .accesskey = N
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Forigi legosignon
+           *[other] Forigi { $count } legosignojn
+        }
+    .accesskey = F
 bookmark-panel-show-editor-checkbox =
     .label = Montri redaktilon dum konservo
     .accesskey = M
 bookmark-panel-done-button =
     .label = Preta
+bookmark-panel-save-button =
+    .label = Konservi
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -288,6 +304,8 @@ identity-passive-loaded = Partoj de tiu ĉi paĝo ne estas sekuraj (bildoj, ekze
 identity-active-loaded = Mi malaktivigis protekton en tiu ĉi paĝo.
 identity-weak-encryption = Tiu ĉi paĝo uzas malfortan ĉifradon.
 identity-insecure-login-forms = Akreditiloj uzitaj en tiu ĉi paĝo povus esti riskitaj.
+identity-permissions =
+    .value = Permesoj
 identity-https-only-connection-upgraded = (ŝanĝita al HTTPS)
 identity-https-only-label = HTTPS-nura reĝimo
 identity-https-only-dropdown-on =
@@ -299,8 +317,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Ŝaltu la HTTPS-nuran reĝimon por tiu ĉi retejo se vi volas ke { -brand-short-name } ŝanĝu la konekton, se tio eblas.
 identity-https-only-info-turn-off2 = Se la paĝo ne bone funkcias, vi povas malŝalti la HTTPS-nuran reĝimon por tiu ĉi retejo, por reŝargi ĝin per nesekura HTTP.
 identity-https-only-info-no-upgrade = Ne eblas ŝanĝi la konekton HTTP.
-identity-permissions =
-    .value = Permesoj
 identity-permissions-storage-access-header = Interretejaj kuketoj
 identity-permissions-storage-access-hint = Tiuj ĉi aliaj partoprenantoj povas uzi interretejajn kuketojn kaj retejajn datumojn dum vi estas en tiu ĉi retejo,
 identity-permissions-reload-hint = Vi eble bezonos reŝargi la paĝon por ke la ŝanĝoj estu aplikitaj.
@@ -348,8 +364,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Ludanta
-browser-tab-audio-muted = Silentigita
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = LUDANTA
 # This label should be written in all capital letters if your locale supports them.
@@ -358,6 +372,26 @@ browser-tab-audio-muted2 = SILENTIGITA
 browser-tab-audio-blocked = AŬTOMATA LUDADO BLOKITA
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = BILDO-EN-BILDO
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] SILENTIGI LANGETON
+       *[other] SILENTIGI { $count } LANGETOJN
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] MALSILENTIGI LANGETON
+       *[other] MALSILENTIGI { $count } LANGETOJN
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] LUDI LANGETON
+       *[other] LUDI { $count } LANGETOJN
+    }
 
 ## Bookmarks toolbar items
 
@@ -509,6 +543,13 @@ urlbar-result-action-tabtosearch-web = Serĉi per { $engine } rekte el la adresa
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Serĉi per { $engine } rekte el la adresa strio
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Kopii
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -550,8 +591,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Montri ĉiujn legosignojn
-bookmarks-recent-bookmarks =
-    .value = Ĵusaj legosignoj
 bookmarks-manage-bookmarks =
     .label = Administri legosignojn
 bookmarks-recent-bookmarks-panel =
@@ -572,12 +611,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Kaŝi flankan strion de legosignoj
            *[other] Montri flankan strion de legosignoj
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Kaŝi ilaron de legosignoj
-           *[other] Montri ilaron de legosignoj
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -624,12 +657,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Legosignoj
-library-bookmarks-bookmark-this-page =
-    .label = Aldoni legosignon por tiu ĉi paĝo
-library-bookmarks-bookmark-edit =
-    .label = Redakti tiun ĉi legosignon
 library-recent-activity-title =
     .value = Ĵusa agado
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Konservi en { -pocket-brand-name }
+    .tooltiptext = Konservi en { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Aldonaĵoj kaj etosoj
+    .tooltiptext = Administri viajn aldonaĵojn kaj etosojn ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Agordoj
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Malfermi agordojn ({ $shortcut })
+           *[other] Malfermi agordojn
+        }
 
 ## More items
 
@@ -656,3 +708,9 @@ panel-save-update-password = Pasvorto
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = Ĉu forigi { $name }?
 addon-removal-abuse-report-checkbox = Denunci tiun ĉi etendaĵon al { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Administri konton
+remote-tabs-sync-now = Speguli nun

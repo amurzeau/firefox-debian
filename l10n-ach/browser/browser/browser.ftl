@@ -230,6 +230,18 @@ search-one-offs-context-set-as-default-private =
 
 ## Bookmark Panel
 
+bookmark-panel-cancel =
+    .label = Juki
+    .accesskey = U
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Kwany alama buk
+           *[other] Kwany alama buk { $count }
+        }
+    .accesskey = K
 bookmark-panel-done-button =
     .label = Otum
 # Width of the bookmark panel.
@@ -292,6 +304,11 @@ browser-window-close-button =
     .tooltiptext = Lor
 
 ## Tab actions
+
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
 
 
 ## Bookmarks toolbar items
@@ -406,8 +423,6 @@ pointerlock-warning-no-domain = Jami eni Tye ki twero i kom lacim ma megi. Dii E
 
 bookmarks-show-all-bookmarks =
     .label = Nyut alamabuk weng
-bookmarks-recent-bookmarks =
-    .value = Ma kiketo Alamabuk cokki
 bookmarks-toolbar-chevron =
     .tooltiptext = Nyut alama buk mukene
 bookmarks-sidebar-content =
@@ -423,12 +438,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Kan lanyut nget me alamabuk
            *[other] Nen gintic alama buk ma inget
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Kan gitic me alamabuk
-           *[other] Nen gintic alama buk
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -466,10 +475,15 @@ bookmarks-toolbar-placeholder-button =
 
 library-bookmarks-menu =
     .label = Alamabuk
-library-bookmarks-bookmark-this-page =
-    .label = Ket alama buk i pot buk man
-library-bookmarks-bookmark-edit =
-    .label = Yub alama buk man
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Gwok i { -pocket-brand-name }
+    .tooltiptext = Gwok i { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
 
 ## More items
 
@@ -480,3 +494,12 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = Dwon ki vidio mogo i kakube man tiyo ki purugram me DRM, ma romo gengo { -brand-short-name } mene ma weko itiyo kwede.
+
+## Password save/update panel
+
+
+## Add-on removal warning
+
+
+## Remote / Synced tabs
+

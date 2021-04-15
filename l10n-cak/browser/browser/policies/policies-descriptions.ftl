@@ -14,7 +14,7 @@ policy-3rdparty = Ke'ajikib'a' taq na'ojil richin chi ri WebExtensions yetikïr 
 policy-AppAutoUpdate = Ketzij o kechup ri ruyonil kik'exoj taq chokoy.
 policy-AppUpdateURL = Tiya' jun ichinan URL richin nik'ex ri chokoy.
 policy-Authentication = Tib'an runuk'ulem ri chijun jikib'an pa taq ajk'amaya'l ruxaq nikiya' q'ij.
-policy-BackgroundAppUpdate = Titzij o tichup ri k'exoj pa ruka'n k'ojlib'äl, ri nuk'ëx ri okik'amaya'l toq man nokisäx ta.
+policy-BackgroundAppUpdate2 = Titzij o tichup ri ruk'wzoj pa ruka'n k'ojlib'äl.
 policy-BlockAboutAddons = Tiq'at rokem ri Runuk'samajel Chokoy (about:addons).
 policy-BlockAboutConfig = Tiq'at okem pa ri about:config ruxaq.
 policy-BlockAboutProfiles = Tiq'at okem pa ri about:profiles ruxaq.
@@ -107,6 +107,7 @@ policy-SearchEngines = Tib'an runuk'ulem ri kanob'äl. Re na'ojil re' xa xe okel
 policy-SearchSuggestEnabled = Titzij o tichup ri kichilab'exik kanoxïk.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Keyak PKCS #11 taq juperaj.
+policy-ShowHomeButton = Tik'ut ri rupitz'b'al tikirib'al pa ri rukajtz'ik samajib'äl.
 policy-SSLVersionMax = Tijikib'äx ri nïm ruwäch SSL.
 policy-SSLVersionMin = Tijikib'äx ri ko'öl ruwäch SSL
 policy-SupportMenu = Titz'aqatisäx jun ruch'akulal ruk'utsamaj ichinan tob'äl pa ruk'utsamaj tob'äl.

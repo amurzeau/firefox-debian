@@ -28,6 +28,18 @@ search-input-box =
             [windows] Najdi v možnostih
            *[other] Najdi v nastavitvah
         }
+settings-page-title = Nastavitve
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Najdi v nastavitvah
 managed-notice = Vaš brskalnik upravlja vaša organizacija.
 category-list =
     .aria-label = Kategorije
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Sinhronizacija
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = { -brand-short-name }ovi poskusi
 category-experimental =
     .tooltiptext = { -brand-short-name }ovi poskusi
 pane-experimental-subtitle = Nadaljujte previdno
 pane-experimental-search-results-header = { -brand-short-name }ovi poskusi: nadaljujte previdno
-pane-experimental-description = Spreminjanje naprednih nastavitev lahko vpliva na delovanje ali varnost { -brand-short-name }a.
+pane-experimental-description = Spreminjanje naprednih nastavitev lahko vpliva na delovanje ali varnost { -brand-short-name(sklon: "rodilnik") }.
+pane-experimental-description2 = Spreminjanje naprednih nastavitev lahko vpliva na delovanje ali varnost { -brand-short-name(sklon: "rodilnik") }.
 pane-experimental-reset =
     .label = Ponastavi privzeto
     .accesskey = P
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] Oprostite! V možnostih ni zadetkov za “<span data-l10n-name="query"></span>”.
        *[other] Oprostite! V nastavitvah ni zadetkov za “<span data-l10n-name="query"></span>”.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Oprostite! V nastavitvah ni zadetkov za “<span data-l10n-name="query"></span>”.
 search-results-help-link = Potrebujete pomoč? Obiščite <a data-l10n-name="url">Podpora za { -brand-short-name }</a>
 
 ## General Section
@@ -231,7 +249,7 @@ choose-language-description = Izberite prednosten jezik za prikazovanje strani
 choose-button =
     .label = Izberi …
     .accesskey = e
-choose-browser-language-description = Izberite jezike, v katerih naj bodo prikazani meniji, sporočila in obvestila { -brand-short-name }a.
+choose-browser-language-description = Izberite jezike, v katerih naj bodo prikazani meniji, sporočila in obvestila { -brand-short-name(sklon: "rodilnik") }.
 manage-browser-languages-button =
     .label = Nastavi pomožne jezike …
     .accesskey = m
@@ -329,7 +347,7 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 applications-use-plugin-in =
     .label = Uporabi { $plugin-name } (v { -brand-short-name })
 applications-open-inapp =
-    .label = Odpri v { -brand-short-name }u
+    .label = Odpri v { -brand-short-name(sklon: "mestnik") }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -359,7 +377,7 @@ play-drm-content =
     .label = Predvajaj vsebino, zaščiteno z DRM
     .accesskey = P
 play-drm-content-learn-more = Več o tem
-update-application-title = Posodobitve { -brand-short-name }a
+update-application-title = Posodobitve { -brand-short-name(sklon: "rodilnik") }
 update-application-description = Ohranite { -brand-short-name } posodobljen za najboljšo zmogljivost, stabilnost in varnost.
 update-application-version = Različica { $version } <a data-l10n-name="learn-more">Novosti</a>
 update-history =
@@ -375,7 +393,10 @@ update-application-check-choose =
 update-application-manual =
     .label = nikoli ne preverja posodobitev (ni priporočeno)
     .accesskey = N
-update-application-warning-cross-user-setting = Ta nastavitev bo uveljavljena v vseh uporabniških računih sistema Windows in { -brand-short-name }ovih profilih, ki uporabljajo to različico { -brand-short-name }a.
+update-application-background-enabled =
+    .label = Ko se { -brand-short-name } ne izvaja
+    .accesskey = n
+update-application-warning-cross-user-setting = Ta nastavitev bo uveljavljena v vseh uporabniških računih sistema Windows in profilih { -brand-short-name(sklon: "rodilnik") }, ki uporabljajo to različico.
 update-application-use-service =
     .label = Uporabi storitev za nameščanje posodobitev v ozadju
     .accesskey = s
@@ -386,6 +407,15 @@ update-setting-write-failure-title = Napaka pri shranjevanju nastavitev posodobi
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
     { -brand-short-name } je naletel na napako in te spremembe ni shranil. Upoštevajte, da takšna nastavitev posodobitev zahteva dovoljenje za pisanje v spodnjo datoteko. Napako lahko morda odpravite sami ali vaš skrbnik sistema, tako da skupini Users omogoči popoln dostop do te datoteke.
+    
+    Ni mogoče pisati v datoteko: { $path }
+update-setting-write-failure-title2 = Napaka pri shranjevanju nastavitev posodobitev
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name } je naletel na napako in te spremembe ni shranil. Upoštevajte, da spreminjanje te nastavitve posodobitev zahteva dovoljenje za pisanje v spodnjo datoteko. Napako lahko morda odpravite sami ali vaš skrbnik sistema, tako da skupini Users omogoči popoln dostop do te datoteke.
     
     Ni mogoče pisati v datoteko: { $path }
 update-in-progress-title = Posodobitev v teku
@@ -409,7 +439,7 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Omejitev procesov vsebine
     .accesskey = O
 performance-limit-content-process-enabled-desc = Dodatni procesi vsebine lahko pospešijo delovanje pri uporabi večjega števila zavihkov, a tudi porabijo več pomnilnika.
-performance-limit-content-process-blocked-desc = Število procesov vsebine je mogoče spreminjati samo v večprocesnem { -brand-short-name }u. <a data-l10n-name="learn-more">Kako izveste, ali je večprocesni način omogočen</a>
+performance-limit-content-process-blocked-desc = Število procesov vsebine je mogoče spreminjati samo v večprocesnem { -brand-short-name(sklon: "mestnik") }. <a data-l10n-name="learn-more">Kako izveste, ali je večprocesni način omogočen</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
@@ -587,6 +617,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Prikazuj predloge iskanja v zasebnih oknih
 suggestions-addressbar-settings-generic = Spremeni nastavitve drugih predlogov naslovne vrstice
+suggestions-addressbar-settings-generic2 = Spremeni nastavitve drugih predlogov naslovne vrstice
 search-suggestions-cant-show = Predlogi iskanja v vrstici z naslovom ne bodo prikazani, ker ste { -brand-short-name } nastavili tako, da si nikoli ne zapomni zgodovine.
 search-one-click-header = Iskalniki, dostopni z enim klikom
 search-one-click-header2 = Bližnjice za iskanje
@@ -621,6 +652,8 @@ containers-back-button =
             [windows] Nazaj na možnosti
            *[other] Nazaj na nastavitve
         }
+containers-back-button2 =
+    .aria-label = Nazaj na nastavitve
 containers-header = Vsebniški zavihki
 containers-add-button =
     .label = Dodaj nov vsebnik
@@ -629,6 +662,8 @@ containers-new-tab-check =
     .label = Izberi vsebnik za vsak nov zavihek
     .accesskey = I
 containers-preferences-button =
+    .label = Nastavitve
+containers-settings-button =
     .label = Nastavitve
 containers-remove-button =
     .label = Odstrani
@@ -641,6 +676,10 @@ sync-signedout-description = Sinhronizirajte zaznamke, zgodovino, zavihke, gesla
 sync-signedout-account-signin2 =
     .label = Prijava v { -sync-brand-short-name } …
     .accesskey = i
+sync-signedout-description2 = Sinhronizirajte zaznamke, zgodovino, zavihke, gesla, dodatke in nastavitve vseh vaših naprav.
+sync-signedout-account-signin3 =
+    .label = Prijava v sinhronizacijo …
+    .accesskey = P
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -680,6 +719,10 @@ prefs-sync-setup =
     .label = Nastavi { -sync-brand-short-name } …
     .accesskey = s
 prefs-sync-offer-setup-label = Sinhronizirajte zaznamke, zgodovino, zavihke, gesla, dodatke in nastavitve vseh vaših naprav.
+prefs-sync-turn-on-syncing =
+    .label = Vklopi sinhronizacijo …
+    .accesskey = s
+prefs-sync-offer-setup-label2 = Sinhronizirajte zaznamke, zgodovino, zavihke, gesla, dodatke in nastavitve vseh vaših naprav.
 prefs-sync-now =
     .labelnotsyncing = Sinhroniziraj zdaj
     .accesskeynotsyncing = z
@@ -700,6 +743,7 @@ sync-currently-syncing-prefs =
         [windows] Možnosti
        *[other] Nastavitve
     }
+sync-currently-syncing-settings = Nastavitve
 sync-change-options =
     .label = Spremeni …
     .accesskey = S
@@ -747,6 +791,10 @@ sync-engine-prefs =
         }
     .tooltiptext = Spremenjene splošne nastavitve ter nastavitve zasebnosti in varnosti
     .accesskey = N
+sync-engine-settings =
+    .label = Nastavitve
+    .tooltiptext = Splošne nastavitve ter nastavitve zasebnosti in varnosti, ki ste jih spremenili
+    .accesskey = s
 
 ## The device name controls.
 
@@ -887,7 +935,7 @@ sitedata-learn-more = Več o tem
 sitedata-delete-on-close =
     .label = Izbriši piškotke in podatke strani, ko se { -brand-short-name } zapre
     .accesskey = z
-sitedata-delete-on-close-private-browsing = V načinu stalnega zasebnega brskanja bodo piškotki in podatki strani izbrisani ob vsakem zaprtju { -brand-short-name }a.
+sitedata-delete-on-close-private-browsing = V načinu stalnega zasebnega brskanja bodo piškotki in podatki strani izbrisani ob vsakem zaprtju { -brand-short-name(sklon: "rodilnik") }.
 sitedata-allow-cookies-option =
     .label = Sprejemaj piškotke in podatke strani
     .accesskey = S
@@ -976,6 +1024,7 @@ content-blocking-etp-standard-desc = Uravnotežena zaščita in delovanje. Stran
 content-blocking-etp-strict-desc = Močnejša zaščita, ki pa lahko povzroči nedelovanje nekaterih strani ali vsebine.
 content-blocking-etp-custom-desc = Izberite, katere sledilce in skripte želite zavračati.
 content-blocking-private-windows = Sledilno vsebino v zasebnih oknih
+content-blocking-cross-site-cookies = Spletni piškotki
 content-blocking-cross-site-tracking-cookies = Spletne sledilne piškotke
 content-blocking-cross-site-tracking-cookies-plus-isolate = Spletne sledilce in izoliraj preostale piškotke
 content-blocking-social-media-trackers = Sledilce družbenih omrežij
@@ -1049,7 +1098,7 @@ permissions-notification-settings =
     .accesskey = t
 permissions-notification-link = Več o tem
 permissions-notification-pause =
-    .label = Ne prikazuj obvestil do naslednjega zagona { -brand-short-name }a
+    .label = Ne prikazuj obvestil do naslednjega zagona { -brand-short-name(sklon: "rodilnik") }
     .accesskey = u
 permissions-autoplay = Samodejno predvajanje
 permissions-autoplay-settings =
@@ -1074,8 +1123,8 @@ permissions-a11y-privacy-link = Več o tem
 
 ## Privacy Section - Data Collection
 
-collection-header = Zbiranje in uporaba podatkov { -brand-short-name }a
-collection-description = Trudimo se, da vam ponudimo izbiro in da zbiramo samo tisto, kar potrebujemo za razvoj in izboljšave { -brand-short-name }a za vse uporabnike. Pred sprejemanjem osebnih podatkov vas vedno vprašamo za dovoljenje.
+collection-header = Zbiranje in uporaba podatkov { -brand-short-name(sklon: "rodilnik") }
+collection-description = Trudimo se, da vam ponudimo izbiro in da zbiramo samo tisto, kar potrebujemo za razvoj in izboljšave { -brand-short-name(sklon: "rodilnik") } za vse uporabnike. Pred sprejemanjem osebnih podatkov vas vedno vprašamo za dovoljenje.
 collection-privacy-notice = Obvestilo o zasebnosti
 collection-health-report-telemetry-disabled = Organizaciji { -vendor-short-name } ne dovoljujete več zajemanja tehničnih podatkov in podatkov o uporabi. Vsi pretekli podatki bodo izbrisani v 30 dneh.
 collection-health-report-telemetry-disabled-link = Več o tem
@@ -1084,16 +1133,16 @@ collection-health-report =
     .accesskey = h
 collection-health-report-link = Več o tem
 collection-studies =
-    .label = { -brand-short-name }u dovoli nameščanje in izvajanje raziskav
-collection-studies-link = Prikaži raziskave { -brand-short-name }a
+    .label = { -brand-short-name(sklon: "dajalnik") } dovoli nameščanje in izvajanje raziskav
+collection-studies-link = Prikaži raziskave { -brand-short-name(sklon: "rodilnik") }
 addon-recommendations =
-    .label = { -brand-short-name }u dovoli prilagojena priporočila o razširitvah
+    .label = { -brand-short-name(sklon: "dajalnik") } dovoli prilagojena priporočila o razširitvah
 addon-recommendations-link = Več o tem
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Pošiljanje podatkov je onemogočeno za to nastavitev graditve
 collection-backlogged-crash-reports =
-    .label = { -brand-short-name }u dovoli, da v vašem imenu pošilja poročila o sesutju iz zaloge
+    .label = { -brand-short-name(sklon: "dajalnik") } dovoli, da v vašem imenu pošilja poročila o sesutjih iz zaloge
     .accesskey = z
 collection-backlogged-crash-reports-link = Več o tem
 
@@ -1157,11 +1206,16 @@ space-alert-under-5gb-ok-button =
     .label = V redu, razumem
     .accesskey = V
 space-alert-under-5gb-message = Brskalniku { -brand-short-name } zmanjkuje prostora na disku. Strani se morda ne bodo prikazovale pravilno. Obiščite "Več o tem" za optimizacijo uporabe prostora na disku in boljšo izkušnjo brskanja po spletu.
+space-alert-over-5gb-settings-button =
+    .label = Odpri nastavitve
+    .accesskey = O
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name(sklon: "dajalnik") } zmanjkuje prostora.</strong> Vsebina spletnih strani morda ne bo prikazana pravilno. Shranjene podatke lahko izbrišete v Nastavitve > Zasebnost in varnost > Piškotki in podatki strani.
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name(sklon: "dajalnik") } zmanjkuje prostora na disku.</strong> Strani se morda ne bodo prikazovale pravilno. Kliknite "Več o tem" za optimizacijo uporabe prostora na disku in boljšo izkušnjo pri brskanju po spletu.
 
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = Način "samo HTTPS"
-httpsonly-description = HTTPS zagotavlja varno, šifrirano povezavo med { -brand-short-name }om in spletnimi mesti, ki jih obiščete. Večina spletnih mest podpira HTTPS, in če je omogočen način "samo HTTPS", bo { -brand-short-name } nadgradil vse povezave na HTTPS.
+httpsonly-description = HTTPS zagotavlja varno, šifrirano povezavo med { -brand-short-name(sklon: "orodnik") } in spletnimi mesti, ki jih obiščete. Večina spletnih mest podpira HTTPS in če je omogočen način "samo HTTPS", bo { -brand-short-name } nadgradil vse povezave na HTTPS.
 httpsonly-learn-more = Več o tem
 httpsonly-radio-enabled =
     .label = Omogoči način "samo HTTPS" v vseh oknih

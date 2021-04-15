@@ -28,6 +28,18 @@ search-input-box =
             [windows] Recercar dins Opcions
            *[other] Recercar dins Preferéncias
         }
+settings-page-title = Paramètres
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 19em
+    .placeholder = Cercar pels paramètres
 managed-notice = Vòstra organizacion gerís vòstre navegador.
 category-list =
     .aria-label = Categorias
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Sincronizacion
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = Experiéncias de { -brand-short-name }
 category-experimental =
     .tooltiptext = Experiéncias de { -brand-short-name }
 pane-experimental-subtitle = Agissètz amb prudéncia
 pane-experimental-search-results-header = Experiéncias de { -brand-short-name } : siatz atentiu
 pane-experimental-description = Cambiar las configuracions avançadas pòt influenciar las performanças o la seguretat de { -brand-short-name }.
+pane-experimental-description2 = Cambiar las configuracions avançadas pòt influenciar las performanças o la seguretat de { -brand-short-name }.
 pane-experimental-reset =
     .label = Restablir los paramètres per defaut
     .accesskey = R
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] Desolat ! I a pas de resultats dins Opcions per « <span data-l10n-name="query"></span> ».
        *[other] Desolat ! I a pas de resultats dins Preferéncias per « <span data-l10n-name="query"></span> ».
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Desolat ! I a pas de resultats dins los Paramètres per « <span data-l10n-name="query"></span> ».
 search-results-help-link = Vos cal d’ajuda ? Consultatz l’<a data-l10n-name="url">Assisténcia de { -brand-short-name }</a>
 
 ## General Section
@@ -369,6 +387,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Verificar pas jamai las mesas a jorns (pas recomandat)
     .accesskey = N
+update-application-background-enabled =
+    .label = Quand { -brand-short-name } es pas aviat
+    .accesskey = Q
 update-application-warning-cross-user-setting = Aqueste paramètres s’aplicarà a totes los comptes Windows e perfils { -brand-short-name } qu’utilizant aquesta installacion de { -brand-short-name }.
 update-application-use-service =
     .label = Utilizar un servici en rèireplan per installar las mesas a jorn
@@ -379,7 +400,16 @@ update-setting-write-failure-title = Error en enregistrant las preferéncias de 
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
-    { -brand-short-name } a rencontrat una error e pas enregistrat aquesta modificacion. Notatz que modificar aqueste preferéncia de mesa a jorn requerís la permission d’escriure sul fichièr çai-jos. Vosautres o un administrator sistèma podètz benlèu corregir aquò en donant al grop Users l’accès complet a aqueste fichièr.
+    { -brand-short-name } a rencontrat una error e pas enregistrat aquesta modificacion. Notatz que modificar aquesta preferéncia de mesa a jorn requerís la permission d’escriure sul fichièr çai-jos. Vosautres o un administrator sistèma podètz benlèu corregir aquò en donant al grop Users l’accès complet a aqueste fichièr.
+    
+    Escritura impossibla sul fichièr : { $path }
+update-setting-write-failure-title2 = Error en enregistrant los paramètres de mesas a jorn
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name } a rencontrat una error e a pas enregistrat aquesta modificacion. Notatz que definir aqueste paramètre de mesa a jorn requerís la permission d’escriure sul fichièr çai-jos. Vosautres o un administrator sistèma podètz benlèu corregir aquò en donant al grop Users l’accès complet a aqueste fichièr.
     
     Escritura impossibla sul fichièr : { $path }
 update-in-progress-title = Actualizacion en cors
@@ -579,6 +609,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Mostrar las suggestions de recèrca en navegacion privada
 suggestions-addressbar-settings-generic = Cambiar las preferéncias per las suggestions de la barra d’adreça
+suggestions-addressbar-settings-generic2 = Cambiar los paramètres per las suggestions de la barra d’adreça
 search-suggestions-cant-show = Recercar las suggestions que son pas afichadas dins los resultats de la barra d'adreça qu'avètz configurat { -brand-short-name } per pas jamai servar l'istoric.
 search-one-click-header = Motor de recèrca en un clic
 search-one-click-header2 = Acorchis de recèrca
@@ -613,6 +644,8 @@ containers-back-button =
             [windows] Tornar a las opcions
            *[other] Tornar a las preferéncias
         }
+containers-back-button2 =
+    .aria-label = Tornar als paramètres
 containers-header = Onglets de contenedor
 containers-add-button =
     .label = Apondre un contenedor novèl
@@ -622,6 +655,8 @@ containers-new-tab-check =
     .accesskey = S
 containers-preferences-button =
     .label = Preferéncias
+containers-settings-button =
+    .label = Paramètres
 containers-remove-button =
     .label = Suprimir
 
@@ -633,6 +668,10 @@ sync-signedout-description = Sincronizatz vòstres marcapaginas, istoric, onglet
 sync-signedout-account-signin2 =
     .label = Se connectar a { -sync-brand-short-name }…
     .accesskey = c
+sync-signedout-description2 = Sincronizar vòstres marcapaginas, istoric, onglets, senhals, moduls, e paramètres per totes vòstres periferics.
+sync-signedout-account-signin3 =
+    .label = Connexion per sincronizar…
+    .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -672,6 +711,10 @@ prefs-sync-setup =
     .label = Configurar { -sync-brand-short-name }…
     .accesskey = C
 prefs-sync-offer-setup-label = Sincronizar vòstres marcapaginas, istoric, onglets, senhals, moduls, e preferéncias per totes vòstres periferics.
+prefs-sync-turn-on-syncing =
+    .label = Activar la sincronizacion…
+    .accesskey = s
+prefs-sync-offer-setup-label2 = Sincronizar vòstres marcapaginas, istoric, onglets, senhals, moduls, e paramètres per totes vòstres periferics.
 prefs-sync-now =
     .labelnotsyncing = Sincronizar ara
     .accesskeynotsyncing = n
@@ -692,6 +735,7 @@ sync-currently-syncing-prefs =
         [windows] Opcions
        *[other] Preferéncias
     }
+sync-currently-syncing-settings = Paramètres
 sync-change-options =
     .label = Modificar…
     .accesskey = M
@@ -739,6 +783,10 @@ sync-engine-prefs =
         }
     .tooltiptext = Los paramètres qu’avètz cambiat dins General, Vida Privada e Seguretat
     .accesskey = s
+sync-engine-settings =
+    .label = Paramètres
+    .tooltiptext = Paramètres generals, de confidencialitat e de seguretat que cambiaretz
+    .accesskey = P
 
 ## The device name controls.
 
@@ -1153,6 +1201,11 @@ space-alert-under-5gb-ok-button =
     .label = Òc, plan comprés
     .accesskey = O
 space-alert-under-5gb-message = { -brand-short-name } a pas mai d'espaci disc. Los contenguts del site web pòdon s'afichar pas coma cal. Clicatz « Ne saber mai » per optimizar l'utilizacion de vòstre disc per melhorar la navegacion.
+space-alert-over-5gb-settings-button =
+    .label = Dobrir los paramètres
+    .accesskey = D
+space-alert-over-5gb-message2 = { -brand-short-name } manca d’espaci disc. Lo contengut dels sites web poiriá s’afichar mal. Podètz escafar las donadas de site enregistradas dins Paramètres > Vida privada e seguretat > Cookies e donadas de sites.
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name } a pas mai d'espaci disc.</strong> Los contenguts del site web pòdon s'afichar pas coma cal. Clicatz « Ne saber mai » per optimizar l'utilizacion de vòstre disc per melhorar la navegacion.
 
 ## Privacy Section - HTTPS-Only
 

@@ -127,7 +127,7 @@ onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } sizin için
 onboarding-lockwise-strong-passwords-button = Hesaplarınızı yönetin
 onboarding-facebook-container-title = Facebook’un sınırlarını belirleyin
 onboarding-facebook-container-text2 = { -facebook-container-brand-name } profilinizi diğer sitelerden ayrı tutar, böylece Facebook’ reklamlarının sizi hedeflemesini zorlaştırır.
-onboarding-facebook-container-button = Eklentiyi yükle
+onboarding-facebook-container-button = Uzantıyı yükle
 onboarding-import-browser-settings-title = Yer imlerinizi, parolalarınızı ve daha fazlasını içe aktarın
 onboarding-import-browser-settings-text = Hemen başlayın: Chrome’daki sitelerinizi ve ayarlarınızı taşıyın.
 onboarding-import-browser-settings-button = Chrome verilerini içe aktar
@@ -142,8 +142,8 @@ return-to-amo-sub-header = Harika! { -brand-short-name } yüklendi
 #
 # Variables:
 #   $addon-name (String) - Name of the add-on
-return-to-amo-addon-header = Şimdi <icon></icon><b>{ $addon-name }</b> eklentisine bir bakalım.
-return-to-amo-extension-button = Eklentiyi ekle
+return-to-amo-addon-header = Şimdi <icon></icon><b>{ $addon-name }</b> uzantısına bir bakalım.
+return-to-amo-extension-button = Uzantıyı ekle
 return-to-amo-get-started-button = { -brand-short-name } tarayıcısını kullanmaya başla
 onboarding-not-now-button-label = Daha sonra
 
@@ -154,8 +154,8 @@ return-to-amo-subtitle = Harika! { -brand-short-name } yüklendi
 #
 # Variables:
 #   $addon-name (String) - Name of the add-on
-return-to-amo-addon-title = Şimdi <img data-l10n-name="icon"/> <b>{ $addon-name }</b> eklentisine bir bakalım.
-return-to-amo-add-extension-label = Eklentiyi yükle
+return-to-amo-addon-title = Şimdi <img data-l10n-name="icon"/> <b>{ $addon-name }</b> uzantısına bir bakalım.
+return-to-amo-add-extension-label = Uzantıyı ekle
 
 ## Multistage 3-screen onboarding flow strings (about:welcome pages)
 
@@ -172,6 +172,15 @@ onboarding-multistage-set-default-header = { -brand-short-name } <span data-l10n
 onboarding-multistage-set-default-subtitle = Her seferinde hızlı, güvenli ve gizli gezinti.
 onboarding-multistage-set-default-primary-button-label = Varsayılan yap
 onboarding-multistage-set-default-secondary-button-label = Daha sonra
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-pin-default-header = <span data-l10n-name="zap">{ -brand-short-name }</span> tarayıcınız bir tık kadar yakınınızda
+onboarding-multistage-pin-default-subtitle = Her seferinde hızlı, güvenli ve gizli gezinti.
+# The "settings" here refers to "Windows 10 Settings App" and not the browser's
+onboarding-multistage-pin-default-waiting-subtitle = Ayarlarınız açılınca “Web tarayıcısı” altından { -brand-short-name } seçeneğini seçin
+# The "settings" here refers to "Windows 10 Settings App" and not the browser's
+onboarding-multistage-pin-default-help-text = Bu işlem, { -brand-short-name } tarayıcınızı görev çubuğuna sabitleyecek ve ayarları açacak
+onboarding-multistage-pin-default-primary-button-label = { -brand-short-name } tarayıcısını varsayılan tarayıcım yap
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "more" should stay inside the span.
 onboarding-multistage-import-header = Parolalarınızı, yer imlerinizi ve <span data-l10n-name="zap">daha fazlasını</span> içe aktarın

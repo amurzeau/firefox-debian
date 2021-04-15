@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = A transferir atualização do { -brand-shorter-name }
+appmenuitem-update-banner2 =
+    .label-update-downloading = A transferir a atualização do { -brand-shorter-name }
+    .label-update-available = Atualização disponível — transferir agora
+    .label-update-manual = Atualização disponível — transferir agora
+    .label-update-unsupported = Não foi possível atualizar
+    .label-update-restart = Atualização disponível — reiniciar agora
 appmenuitem-protection-dashboard-title = Painel das proteções
 appmenuitem-customize-mode =
     .label = Personalizar…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = Palavras-passe
 appmenuitem-extensions-and-themes =
     .label = Temas e extensões
+appmenuitem-addons-and-themes =
+    .label = Extras e temas
 appmenuitem-find-in-page =
     .label = Localizar na página…
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Fechar menu da aplicação
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Sair
+           *[other] Sair
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Abrir menu da aplicação
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Fechar menu da aplicação
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Sincronizar agora
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Sincronizar agora
-    .value = Sincronizar agora
+appmenu-remote-tabs-sign-into-sync =
+    .label = Iniciar sessão para sincronizar…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Ativar a sincronização…
+appmenuitem-fxa-toolbar-sync-now2 = Sincronizar agora
 appmenuitem-fxa-manage-account = Gerir conta
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = Última sincronização { $time }
     .label = Última sincronização { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Sincronizar e guardar dados
+appmenu-fxa-sync-and-save-data2 = Sincronizar e guardar dados
 appmenu-fxa-signed-in-label = Iniciar sessão
 appmenu-fxa-setup-sync =
     .label = Ativar a sincronização ...
@@ -135,29 +159,17 @@ appmenu-help-header =
 appmenu-about =
     .label = Acerca do { -brand-shorter-name }
     .accesskey = A
-appmenu-help-product =
-    .label = Ajuda do { -brand-shorter-name }
-    .accesskey = u
-appmenu-help-show-tour =
-    .label = Visita ao { -brand-shorter-name }
-    .accesskey = o
-appmenu-help-import-from-another-browser =
-    .label = Importar de outro navegador…
-    .accesskey = I
-appmenu-help-keyboard-shortcuts =
-    .label = Atalhos de teclado
-    .accesskey = h
 appmenu-get-help =
     .label = Obter ajuda
     .accesskey = j
 appmenu-help-troubleshooting-info =
     .label = Informação para resolução de problemas
     .accesskey = r
+appmenu-help-taskmanager =
+    .label = Gestor de tarefas
 appmenu-help-more-troubleshooting-info =
     .label = Mais informação para diagnóstico de problemas
     .accesskey = g
-appmenu-help-taskmanager =
-    .label = Gestor de tarefas
 appmenu-help-report-site-issue =
     .label = Reportar problema do site…
 appmenu-help-feedback-page =
@@ -177,8 +189,8 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Modo de diagnóstico
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Modo de diagnóstico…
     .accesskey = M
 appmenu-help-exit-troubleshoot-mode =
     .label = Desligar o modo de diagnóstico
@@ -194,13 +206,10 @@ appmenu-help-not-deceptive =
     .label = Este não é um site decetivo…
     .accesskey = d
 
-##
-
-appmenu-help-check-for-update =
-    .label = Procurar por atualizações…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Personalizar barra de ferramentas…
+appmenu-taskmanager =
+    .label = Gestor de tarefas
 appmenu-developer-tools-subheader = Ferramentas do navegador

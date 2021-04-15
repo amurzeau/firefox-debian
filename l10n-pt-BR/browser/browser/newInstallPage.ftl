@@ -15,7 +15,7 @@ changed-desc-dedicated = Para tornar mais fácil e seguro alternar entre instala
 lost = <b>Você não perdeu nenhum dado pessoal nem personalização.</b> Se você já tiver salvo informações no Firefox neste computador, elas ainda estão disponíveis em outra instalação do Firefox.
 options-title = Quais são minhas opções?
 options-do-nothing = Se não fizer nada, seus dados de perfil no { -brand-short-name } serão diferentes dos dados de perfil em outras instalações do Firefox.
-options-use-sync = Se quiser que todos os seus dados de perfil sejam os mesmos em todas as instalações do Firefox, pode usar uma { -fxaccount-brand-name } para mantê-los sincronizados.
+options-use-sync = Se quiser que todos os seus dados de perfil sejam os mesmos em todas as instalações do Firefox, pode usar uma { -fxaccount-brand-name } para manter sincronizados.
 resources = Recursos:
 support-link = Como usar o gerenciador de perfis (artigo de suporte)
 sync-header = Entre na sua { -fxaccount-brand-name }, ou crie uma
@@ -25,4 +25,5 @@ sync-input =
 sync-button = Continuar
 sync-terms = Ao continuar, você concorda com os <a data-l10n-name="terms">Termos do serviço</a> e o <a data-l10n-name="privacy">Aviso de privacidade</a>.
 sync-first = Primeira vez usando o { -sync-brand-name }? Você precisa se identificar em cada instalação do Firefox para sincronizar suas informações.
+new-install-sync-first = Primeira vez usando a sincronização? Você precisa entrar na sua conta em cada instalação do Firefox para sincronizar suas informações.
 sync-learn = Saiba mais

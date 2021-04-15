@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Siirry sivu taaksepäin ({ $shortcut })
     .aria-label = Edellinen
     .accesskey = E
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Edellinen
+    .accesskey = E
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Siirry sivu eteenpäin ({ $shortcut })
     .aria-label = Seuraava
     .accesskey = e
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Seuraava
+    .accesskey = e
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Päivitä
     .accesskey = P
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Päivitä
+    .accesskey = P
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Pysäytä
     .accesskey = P
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Pysäytä
+    .accesskey = P
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name(capitalization: "sentence") }
+    .tooltiptext = { -fxaccount-brand-name(capitalization: "sentence") }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Lisää sivu kirjanmerkkeihin
     .accesskey = k
     .tooltiptext = Lisää kirjanmerkki
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Lisää sivu kirjanmerkkeihin
+    .accesskey = m
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Muokkaa kirjanmerkkiä
+    .accesskey = M
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -120,6 +154,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = Lisää kohde kirjanmerkkeihin
     .accesskey = A
+main-context-menu-bookmark-link =
+    .label = Lisää linkki kirjanmerkkeihin
+    .accesskey = L
 main-context-menu-save-link =
     .label = Tallenna kohde levylle…
     .accesskey = T
@@ -162,8 +199,8 @@ main-context-menu-media-pause =
 ##
 
 main-context-menu-media-mute =
-    .label = Mykistä ääni
-    .accesskey = M
+    .label = Vaimenna ääni
+    .accesskey = V
 main-context-menu-media-unmute =
     .label = Palauta ääni
     .accesskey = ä
@@ -187,6 +224,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Älytön (2×)
     .accesskey = Ä
+main-context-menu-media-play-speed-2 =
+    .label = Nopeus
+    .accesskey = N
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Jatkuva toisto
     .accesskey = J
@@ -214,6 +264,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Kuva kuvassa
     .accesskey = K
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Katso Kuva kuvassa -tilassa
+    .accesskey = K
 main-context-menu-image-reload =
     .label = Lataa kuva
     .accesskey = L
@@ -223,6 +278,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = Näytä video
     .accesskey = N
+main-context-menu-image-view-new-tab =
+    .label = Avaa kuva uuteen välilehteen
+    .accesskey = A
+main-context-menu-video-view-new-tab =
+    .label = Avaa video uuteen välilehteen
+    .accesskey = v
 main-context-menu-image-copy =
     .label = Kopioi kuva
     .accesskey = u
@@ -271,6 +332,9 @@ main-context-menu-audio-save-as =
 main-context-menu-video-image-save-as =
     .label = Tallenna ruutukaappaus nimellä…
     .accesskey = T
+main-context-menu-video-take-snapshot =
+    .label = Ota kuva…
+    .accesskey = O
 main-context-menu-video-email =
     .label = Lähetä video…
     .accesskey = L
@@ -315,6 +379,9 @@ main-context-menu-suggest-strong-password =
 main-context-menu-manage-logins =
     .label = Hallitse kirjautumistietoja…
     .accesskey = H
+main-context-menu-manage-logins2 =
+    .label = Hallitse kirjautumistietoja
+    .accesskey = H
 main-context-menu-keyword =
     .label = Lisää pikakomento tälle haulle…
     .accesskey = L
@@ -357,6 +424,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Näytä valinnan lähdekoodi
     .accesskey = n
+main-context-menu-take-screenshot =
+    .label = Ota kuvakaappaus
+    .accesskey = O
 main-context-menu-view-page-source =
     .label = Näytä sivun lähdekoodi
     .accesskey = k
@@ -373,10 +443,10 @@ main-context-menu-inspect-element =
     .label = Inspect Element
     .accesskey = Q
 main-context-menu-inspect =
-    .label = Tarkista
+    .label = Tarkastele
     .accesskey = T
 main-context-menu-inspect-a11y-properties =
-    .label = Inspect Accessibility Properties
+    .label = Tarkastele saavutettavuusominaisuuksia
 main-context-menu-eme-learn-more =
     .label = Lue lisää DRM-suojauksesta…
     .accesskey = D

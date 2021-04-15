@@ -4,7 +4,7 @@
 
 reload-tab =
     .label = Recargar pestaña
-    .accesskey = g
+    .accesskey = R
 select-all-tabs =
     .label = Seleccionar todas las pestañas
     .accesskey = S
@@ -51,6 +51,9 @@ bookmark-tab =
 reopen-in-container =
     .label = Reabrir en contenedor
     .accesskey = r
+tab-context-open-in-new-container-tab =
+    .label = Abrir en nueva pestaña contenedora
+    .accesskey = e
 move-to-start =
     .label = Mover al inicio
     .accesskey = I
@@ -92,6 +95,14 @@ move-tabs =
 move-tab =
     .label = Mover pestaña
     .accesskey = v
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Reabrir pestaña cerrada
+            [one] Reabrir pestaña cerrada
+           *[other] Reabrir pestañas cerradas
+        }
+    .accesskey = p
 tab-context-close-tabs =
     .label =
         { $tabCount ->

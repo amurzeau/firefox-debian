@@ -136,7 +136,7 @@ urlbar-screen-blocked =
 urlbar-persistent-storage-blocked =
     .tooltiptext = Ви заблокували постійне сховище для цього вебсайту.
 urlbar-popup-blocked =
-    .tooltiptext = Ви заблокували виринаючі вікна для цього вебсайту.
+    .tooltiptext = Ви заблокували спливні вікна для цього вебсайту.
 urlbar-autoplay-media-blocked =
     .tooltiptext = Ви заблокували автовідтворення медіа зі звуком для цього вебсайту.
 urlbar-canvas-blocked =
@@ -266,11 +266,28 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Додати закладку
+bookmarks-edit-bookmark = Редагувати закладку
+bookmark-panel-cancel =
+    .label = Скасувати
+    .accesskey = С
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Прибрати закладку
+            [few] Прибрати { $count } закладки
+           *[many] Прибрати { $count } закладок
+        }
+    .accesskey = П
 bookmark-panel-show-editor-checkbox =
     .label = Показати редактор при збереженні
     .accesskey = к
 bookmark-panel-done-button =
     .label = Готово
+bookmark-panel-save-button =
+    .label = Зберегти
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -290,6 +307,8 @@ identity-passive-loaded = Частини цієї сторінки (такі я�
 identity-active-loaded = Ви вимкнули захист на цій сторінці.
 identity-weak-encryption = Ця сторінка використовує слабке шифрування.
 identity-insecure-login-forms = Паролі, введені на цій сторінці, можуть бути скомпрометовані.
+identity-permissions =
+    .value = Дозволи
 identity-https-only-connection-upgraded = (оновлено до HTTPS)
 identity-https-only-label = HTTPS-режим
 identity-https-only-dropdown-on =
@@ -301,8 +320,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Увімкніть HTTPS-режим для цього сайту, якщо ви хочете, щоб { -brand-short-name } оновив з'єднання, коли це можливо.
 identity-https-only-info-turn-off2 = Якщо сторінка виглядає пошкодженою, можливо, ви захочете вимкнути HTTPS-режим для цього сайту, щоб перезавантажити його в незахищеному режимі HTTP.
 identity-https-only-info-no-upgrade = Не вдалося змінити з'єднання з HTTP.
-identity-permissions =
-    .value = Дозволи
 identity-permissions-storage-access-header = Куки сторонніх сайтів
 identity-permissions-storage-access-hint = Ці сторони сайти можуть використовувати куки стеження між сайтами та дані сайту, поки ви перебуваєте на поточному вебсайті.
 identity-permissions-reload-hint = Для застосування змін, можливо, доведеться перезавантажити сторінку.
@@ -350,8 +367,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Відтворення
-browser-tab-audio-muted = Без звуку
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = ВІДТВОРЕННЯ
 # This label should be written in all capital letters if your locale supports them.
@@ -360,6 +375,29 @@ browser-tab-audio-muted2 = БЕЗ ЗВУКУ
 browser-tab-audio-blocked = АВТОВІДТВОРЕННЯ ЗАБЛОКОВАНО
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = ЗОБРАЖЕННЯ В ЗОБРАЖЕННІ
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [one] ВИМКНУТИ ЗВУК ВКЛАДКИ
+        [few] ВИМКНУТИ ЗВУК { $count } ВКЛАДОК
+       *[many] ВИМКНУТИ ЗВУК { $count } ВКЛАДОК
+    }
+browser-tab-unmute =
+    { $count ->
+        [one] УВІМКНУТИ ЗВУК ВКЛАДКИ
+        [few] УВІМКНУТИ ЗВУК { $count } ВКЛАДОК
+       *[many] УВІМКНУТИ ЗВУК { $count } ВКЛАДОК
+    }
+browser-tab-unblock =
+    { $count ->
+        [one] ВІДТВОРИТИ ВКЛАДКУ
+        [few] ВІДТВОРИТИ { $count } ВКЛАДКИ
+       *[many] ВІДТВОРИТИ { $count } ВКЛАДОК
+    }
 
 ## Bookmarks toolbar items
 
@@ -511,6 +549,13 @@ urlbar-result-action-tabtosearch-web = Шукати за допомогою { $e
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Шукати з { $engine } безпосередньо в панелі адреси
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Копіювати
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -552,8 +597,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Показати всі закладки
-bookmarks-recent-bookmarks =
-    .value = Останні закладки
 bookmarks-manage-bookmarks =
     .label = Керувати закладками
 bookmarks-recent-bookmarks-panel =
@@ -573,12 +616,6 @@ bookmarks-tools-sidebar-visibility =
     .label =
         { $isVisible ->
             [true] Приховати бічну панель закладок
-           *[other] Показати панель закладок
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Приховати панель закладок
            *[other] Показати панель закладок
         }
 bookmarks-tools-toolbar-visibility-menuitem =
@@ -626,12 +663,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Закладки
-library-bookmarks-bookmark-this-page =
-    .label = Закласти цю сторінку
-library-bookmarks-bookmark-edit =
-    .label = Редагувати цю закладку
 library-recent-activity-title =
     .value = Нещодавня активність
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Зберегти в { -pocket-brand-name }
+    .tooltiptext = Зберегти в { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Додатки й теми
+    .tooltiptext = Керування додатками й темами ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Налаштування
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Відкрити налаштування ({ $shortcut })
+           *[other] Відкрити налаштування
+        }
 
 ## More items
 
@@ -658,3 +714,9 @@ panel-save-update-password = Пароль
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = Вилучити { $name }?
 addon-removal-abuse-report-checkbox = Поскаржитись на це розширення до { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Керувати обліковим записом
+remote-tabs-sync-now = Синхронізувати

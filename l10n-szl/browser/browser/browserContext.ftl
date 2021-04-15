@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Jedna strōna nazod ({ $shortcut })
     .aria-label = Nazod
     .accesskey = N
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Nazod
+    .accesskey = N
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Jedna strōna do przodku ({ $shortcut })
     .aria-label = Do przodku
     .accesskey = P
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Do przodku
+    .accesskey = P
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Przeladuj
     .accesskey = P
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Przeladuj
+    .accesskey = P
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -63,6 +75,10 @@ toolbar-button-reload =
 
 main-context-menu-stop =
     .aria-label = Zastow
+    .accesskey = Z
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Zastow
     .accesskey = Z
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
@@ -86,6 +102,18 @@ main-context-menu-bookmark-add =
     .aria-label = Przidej ta strōna do zokłodek
     .accesskey = z
     .tooltiptext = Przidej ta strōna do zokłodek
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Przidej strōna do zokłodek
+    .accesskey = p
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Edytuj zokłodka
+    .accesskey = p
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +139,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Ôtwōrz link we nowyj kōntynerowyj karcie
     .accesskey = r
-main-context-menu-open-link-container =
-    .label = Ôdewrzij link we nowym kōntynerze
-    .accesskey = w
 main-context-menu-open-link-new-window =
     .label = Ôtwōrz link we nowym ôknie
     .accesskey = N
@@ -193,6 +218,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Absurdalnie (2×)
     .accesskey = A
+main-context-menu-media-play-speed-2 =
+    .label = Gibkość
+    .accesskey = g
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Pyntla
     .accesskey = P
@@ -220,6 +258,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Ôbroz we ôbrazie
     .accesskey = i
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Ôglōndej ze "Ôbroz w ôbrazie"
+    .accesskey = o
 main-context-menu-image-reload =
     .label = Przeladuj ôbroz
     .accesskey = P
@@ -229,6 +272,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = Pokoż video
     .accesskey = i
+main-context-menu-image-view-new-tab =
+    .label = Ôdewrzij ôbroz w nowyj karcie
+    .accesskey = b
+main-context-menu-video-view-new-tab =
+    .label = Ôdewrzij film w nowyj karcie
+    .accesskey = d
 main-context-menu-image-copy =
     .label = Skopiuj ôbroz
     .accesskey = j
@@ -277,6 +326,9 @@ main-context-menu-audio-save-as =
 main-context-menu-video-image-save-as =
     .label = Spamiyntej migowka za…
     .accesskey = S
+main-context-menu-video-take-snapshot =
+    .label = Chyć migowka…
+    .accesskey = C
 main-context-menu-video-email =
     .label = Poślij emaila z wideo…
     .accesskey = a
@@ -301,6 +353,26 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = Użyj wygenerowanego hasła…
     .accesskey = G
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = Użyj spamiyntanych danych logowanio
+    .accesskey = u
+main-context-menu-use-saved-password =
+    .label = Użyj spamiyntanego hasła
+    .accesskey = u
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = Doradź siylne hasło…
+    .accesskey = S
+main-context-menu-manage-logins =
+    .label = Regiyruj danymi logowanio…
+    .accesskey = R
 main-context-menu-keyword =
     .label = Przidej kluczowe słowo do tego wyszukowanio…
     .accesskey = K
@@ -343,6 +415,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Pokoż zdrzōdło wyboru
     .accesskey = w
+main-context-menu-take-screenshot =
+    .label = Zrōb ôbroz ekranu
+    .accesskey = Z
 main-context-menu-view-page-source =
     .label = Pokoż zdrzōdło strōny
     .accesskey = P

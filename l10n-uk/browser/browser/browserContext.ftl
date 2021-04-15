@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Назад на одну сторінку ({ $shortcut })
     .aria-label = Назад
     .accesskey = Н
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Назад
+    .accesskey = Н
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Вперед на одну сторінку ({ $shortcut })
     .aria-label = Вперед
     .accesskey = В
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Вперед
+    .accesskey = В
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Оновити
     .accesskey = О
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Оновити
+    .accesskey = О
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Зупинити
     .accesskey = З
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Зупинити
+    .accesskey = З
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Закласти цю сторінку
     .accesskey = к
     .tooltiptext = Закласти цю сторінку
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Закласти сторінку
+    .accesskey = З
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Редагувати закладку
+    .accesskey = Р
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Відкрити посилання в новій вкладці контейнера
     .accesskey = к
-main-context-menu-open-link-container =
-    .label = Відкрити посилання в новому контейнері
-    .accesskey = в
 main-context-menu-open-link-new-window =
     .label = Відкрити посилання в новому вікні
     .accesskey = к
@@ -348,6 +379,9 @@ main-context-menu-suggest-strong-password =
 main-context-menu-manage-logins =
     .label = Керувати паролями…
     .accesskey = п
+main-context-menu-manage-logins2 =
+    .label = Керувати паролями
+    .accesskey = К
 main-context-menu-keyword =
     .label = Створити скорочення для цього пошуку…
     .accesskey = д

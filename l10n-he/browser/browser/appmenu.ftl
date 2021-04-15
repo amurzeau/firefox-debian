@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = בתהליך הורדת עדכון ל־{ -brand-shorter-name }
+appmenuitem-update-banner2 =
+    .label-update-downloading = בתהליך הורדת עדכון ל־{ -brand-shorter-name }
+    .label-update-available = עדכון זמין — הורדה כעת
+    .label-update-manual = עדכון זמין — הורדה כעת
+    .label-update-unsupported = לא ניתן לעדכן
+    .label-update-restart = עדכון זמין — הפעלה מחדש כעת
 appmenuitem-protection-dashboard-title = לוח הגנות
 appmenuitem-customize-mode =
     .label = התאמה אישית…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = ססמאות
 appmenuitem-extensions-and-themes =
     .label = הרחבות וערכות נושא
+appmenuitem-addons-and-themes =
+    .label = תוספות וערכות נושא
 appmenuitem-find-in-page =
     .label = חיפוש בדף…
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = סגירת תפריט היישום
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] יציאה
+           *[other] יציאה
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = פתיחת תפריט היישום
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = סגירת תפריט היישום
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = סנכרון כעת
-appmenuitem-fxa-toolbar-sync-now =
-    .label = סנכרון כעת
-    .value = סנכרון כעת
+appmenu-remote-tabs-sign-into-sync =
+    .label = כניסה כדי לסנכרן…
+appmenu-remote-tabs-turn-on-sync =
+    .label = הפעלת סנכרון…
+appmenuitem-fxa-toolbar-sync-now2 = סנכרון כעת
 appmenuitem-fxa-manage-account = ניהול חשבון
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name(case: "a") }
+appmenu-fxa-header2 = { -fxaccount-brand-name(case: "a") }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = סונכרן לאחרונה { $time }
     .label = סונכרן לאחרונה { $time }
 appmenu-fxa-sync-and-save-data =
     .value = סנכרון ושמירת נתונים
+appmenu-fxa-sync-and-save-data2 = סנכרון ושמירת נתונים
 appmenu-fxa-signed-in-label = כניסה
 appmenu-fxa-setup-sync =
     .label = הפעלת סנכרון…
@@ -132,29 +156,17 @@ appmenu-help-header =
 appmenu-about =
     .label = על אודות { -brand-shorter-name }
     .accesskey = א
-appmenu-help-product =
-    .label = עזרה עבור { -brand-shorter-name }
-    .accesskey = ע
-appmenu-help-show-tour =
-    .label = סיור ב־{ -brand-shorter-name }
-    .accesskey = ס
-appmenu-help-import-from-another-browser =
-    .label = ייבוא מדפדפן אחר…
-    .accesskey = י
-appmenu-help-keyboard-shortcuts =
-    .label = קיצורי מקלדת
-    .accesskey = ק
 appmenu-get-help =
     .label = קבלת עזרה
     .accesskey = ע
 appmenu-help-troubleshooting-info =
     .label = מידע לפתרון בעיות
     .accesskey = מ
+appmenu-help-taskmanager =
+    .label = מנהל משימות
 appmenu-help-more-troubleshooting-info =
     .label = מידע נוסף לפתרון בעיות
     .accesskey = מ
-appmenu-help-taskmanager =
-    .label = מנהל משימות
 appmenu-help-report-site-issue =
     .label = דיווח על בעיה באתר…
 appmenu-help-feedback-page =
@@ -174,8 +186,8 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = מצב לפתרון בעיות
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = מצב לפתרון בעיות…
     .accesskey = פ
 appmenu-help-exit-troubleshoot-mode =
     .label = כיבוי מצב לפתרון בעיות
@@ -191,13 +203,10 @@ appmenu-help-not-deceptive =
     .label = אתר זה אינו אתר מטעה…
     .accesskey = א
 
-##
-
-appmenu-help-check-for-update =
-    .label = בדיקה אחר עדכונים…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = התאמה אישית של סרגל הכלים…
+appmenu-taskmanager =
+    .label = מנהל משימות
 appmenu-developer-tools-subheader = כלי דפדפן

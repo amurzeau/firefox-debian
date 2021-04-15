@@ -28,6 +28,18 @@ search-input-box =
             [windows] Zoeken in opties
            *[other] Zoeken in voorkeuren
         }
+settings-page-title = Instellingen
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Zoeken in Instellingen
 managed-notice = Uw browser wordt door uw organisatie beheerd.
 category-list =
     .aria-label = Categorieën
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Synchronisatie
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = { -brand-short-name }-experimenten
 category-experimental =
     .tooltiptext = { -brand-short-name }-experimenten
 pane-experimental-subtitle = Ga voorzichtig verder
 pane-experimental-search-results-header = { -brand-short-name }-experimenten: voorzichtigheid geadviseerd
 pane-experimental-description = Het wijzigen van geavanceerde configuratievoorkeuren kan de prestaties of veiligheid van { -brand-short-name } beïnvloeden.
+pane-experimental-description2 = Het wijzigen van geavanceerde configuratie-instellingen kan de prestaties of veiligheid van { -brand-short-name } beïnvloeden.
 pane-experimental-reset =
     .label = Standaardwaarden herstellen
     .accesskey = h
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] Sorry! Er zijn geen resultaten in Opties voor ‘<span data-l10n-name="query"></span>’.
        *[other] Sorry! Er zijn geen resultaten in Voorkeuren voor ‘<span data-l10n-name="query"></span>’.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Sorry! Er zijn geen resultaten in Instellingen voor ‘<span data-l10n-name="query"></span>’.
 search-results-help-link = Hulp nodig? Bezoek <a data-l10n-name="url">{ -brand-short-name } Support</a>
 
 ## General Section
@@ -369,6 +387,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Nooit controleren op updates (niet aanbevolen)
     .accesskey = N
+update-application-background-enabled =
+    .label = Als { -brand-short-name } niet wordt uitgevoerd
+    .accesskey = A
 update-application-warning-cross-user-setting = Deze instelling is van toepassing op alle Windows-accounts en { -brand-short-name }-profielen die deze installatie van { -brand-short-name } gebruiken.
 update-application-use-service =
     .label = Een achtergrondservice gebruiken om updates te installeren
@@ -380,6 +401,15 @@ update-setting-write-failure-title = Fout bij opslaan updatevoorkeuren
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
     { -brand-short-name } heeft een fout aangetroffen en heeft deze wijziging niet opgeslagen. Merk op dat voor het instellen van deze updatevoorkeur schrijfrechten voor onderstaand bestand benodigd zijn. U of uw systeembeheerder kan deze fout oplossen door de groep Gebruikers volledige toegang tot dit bestand te geven.
+    
+    Kon niet schrijven naar bestand: { $path }
+update-setting-write-failure-title2 = Fout bij opslaan update-instellingen
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name } heeft een fout aangetroffen en heeft deze wijziging niet opgeslagen. Merk op dat voor het instellen van deze update-instelling schrijfrechten voor onderstaand bestand benodigd zijn. U of uw systeembeheerder kan deze fout oplossen door de groep Gebruikers volledige toegang tot dit bestand te geven.
     
     Kon niet schrijven naar bestand: { $path }
 update-in-progress-title = Update wordt uitgevoerd
@@ -579,6 +609,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Zoeksuggesties weergeven in privévensters
 suggestions-addressbar-settings-generic = Voorkeuren voor overige adresbalksuggesties wijzigen
+suggestions-addressbar-settings-generic2 = Instellingen voor overige adresbalksuggesties wijzigen
 search-suggestions-cant-show = Zoeksuggesties worden niet in locatiebalkresultaten getoond, omdat u { -brand-short-name } hebt geconfigureerd om nooit geschiedenis te onthouden.
 search-one-click-header = Eén-klik-zoekmachines
 search-one-click-header2 = Zoeksnelkoppelingen
@@ -613,6 +644,8 @@ containers-back-button =
             [windows] Terug naar Opties
            *[other] Terug naar Voorkeuren
         }
+containers-back-button2 =
+    .aria-label = Terug naar Instellingen
 containers-header = Containertabbladen
 containers-add-button =
     .label = Nieuwe container toevoegen
@@ -622,6 +655,8 @@ containers-new-tab-check =
     .accesskey = S
 containers-preferences-button =
     .label = Voorkeuren
+containers-settings-button =
+    .label = Instellingen
 containers-remove-button =
     .label = Verwijderen
 
@@ -633,6 +668,10 @@ sync-signedout-description = Synchroniseer uw bladwijzers, geschiedenis, tabblad
 sync-signedout-account-signin2 =
     .label = Aanmelden bij { -sync-brand-short-name }…
     .accesskey = A
+sync-signedout-description2 = Synchroniseer uw bladwijzers, geschiedenis, tabbladen, wachtwoorden, add-ons en instellingen op al uw apparaten.
+sync-signedout-account-signin3 =
+    .label = Aanmelden om te synchroniseren…
+    .accesskey = a
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -672,6 +711,10 @@ prefs-sync-setup =
     .label = { -sync-brand-short-name } instellen…
     .accesskey = s
 prefs-sync-offer-setup-label = Synchroniseer uw bladwijzers, geschiedenis, tabbladen, wachtwoorden, add-ons en voorkeuren op al uw apparaten.
+prefs-sync-turn-on-syncing =
+    .label = Synchronisatie inschakelen…
+    .accesskey = S
+prefs-sync-offer-setup-label2 = Synchroniseer uw bladwijzers, geschiedenis, tabbladen, wachtwoorden, add-ons en instellingen op al uw apparaten.
 prefs-sync-now =
     .labelnotsyncing = Nu synchroniseren
     .accesskeynotsyncing = N
@@ -692,6 +735,7 @@ sync-currently-syncing-prefs =
         [windows] Opties
        *[other] Voorkeuren
     }
+sync-currently-syncing-settings = Instellingen
 sync-change-options =
     .label = Wijzigen…
     .accesskey = W
@@ -739,6 +783,10 @@ sync-engine-prefs =
         }
     .tooltiptext = Algemene, privacy- en beveiligingsinstellingen die u hebt gewijzigd
     .accesskey = O
+sync-engine-settings =
+    .label = Instellingen
+    .tooltiptext = Door u gewijzigde algemene, privacy- en beveiligingsinstellingen
+    .accesskey = s
 
 ## The device name controls.
 
@@ -1153,6 +1201,11 @@ space-alert-under-5gb-ok-button =
     .label = OK, begrepen
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } heeft bijna geen schijfruimte meer. Inhoud van websites wordt mogelijk niet goed weergegeven. Bezoek ‘Meer info’ om uw schijfgebruik te optimaliseren voor betere prestaties.
+space-alert-over-5gb-settings-button =
+    .label = Instellingen openen
+    .accesskey = o
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name } heeft bijna geen schijfruimte meer.</strong> Inhoud van websites wordt mogelijk niet goed weergegeven. U kunt opgeslagen gegevens wissen in Instellingen > Privacy & Beveiliging > Cookies en websitegegevens.
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name } heeft bijna geen schijfruimte meer.</strong> Inhoud van websites wordt mogelijk niet goed weergegeven. Bezoek ‘Meer info’ om uw schijfgebruik te optimaliseren voor betere prestaties.
 
 ## Privacy Section - HTTPS-Only
 

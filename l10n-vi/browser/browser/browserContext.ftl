@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Trở lại trang trước ({ $shortcut })
     .aria-label = Quay lại
     .accesskey = B
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Quay lại
+    .accesskey = B
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Tiến đến một trang ({ $shortcut })
     .aria-label = Tiếc tục
     .accesskey = F
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Tiến
+    .accesskey = F
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Tải lại
     .accesskey = R
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Tải lại
+    .accesskey = R
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Dừng
     .accesskey = S
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Dừng
+    .accesskey = S
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Đánh dấu trang này
     .accesskey = m
     .tooltiptext = Đánh dấu trang này
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Đánh dấu trang
+    .accesskey = m
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Chỉnh sửa dấu trang
+    .accesskey = m
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -95,13 +129,13 @@ main-context-menu-bookmark-add-with-shortcut =
 main-context-menu-bookmark-change =
     .aria-label = Chỉnh sửa dấu trang này
     .accesskey = m
-    .tooltiptext = Chỉnh sửa trang đánh dấu này
+    .tooltiptext = Chỉnh sửa dấu trang này
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 main-context-menu-bookmark-change-with-shortcut =
     .aria-label = Chỉnh sửa dấu trang này
     .accesskey = m
-    .tooltiptext = Chỉnh sửa trang đánh dấu này ({ $shortcut })
+    .tooltiptext = Chỉnh sửa dấu trang này ({ $shortcut })
 main-context-menu-open-link =
     .label = Mở liên kết
     .accesskey = O
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Mở lên kết trong thẻ chứa mới
     .accesskey = b
-main-context-menu-open-link-container =
-    .label = Mở lên kết trong ngăn chứa mới
-    .accesskey = w
 main-context-menu-open-link-new-window =
     .label = Mở liên kết trong cửa sổ mới
     .accesskey = W
@@ -347,6 +378,9 @@ main-context-menu-suggest-strong-password =
     .accesskey = S
 main-context-menu-manage-logins =
     .label = Quản lý thông tin đăng nhập…
+    .accesskey = M
+main-context-menu-manage-logins2 =
+    .label = Quản lý thông tin đăng nhập
     .accesskey = M
 main-context-menu-keyword =
     .label = Tạo từ khóa cho chuỗi tìm kiếm này…

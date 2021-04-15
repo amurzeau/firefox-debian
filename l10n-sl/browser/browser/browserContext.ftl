@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Pojdi na prejšnjo stran ({ $shortcut })
     .aria-label = Nazaj
     .accesskey = z
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Nazaj
+    .accesskey = z
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Pojdi na naslednjo stran ({ $shortcut })
     .aria-label = Naprej
     .accesskey = r
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Naprej
+    .accesskey = r
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Ponovno naloži
     .accesskey = P
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Ponovno naloži
+    .accesskey = P
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Ustavi
     .accesskey = U
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Ustavi
+    .accesskey = U
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name(capitalization: "sentence") }
+    .tooltiptext = { -fxaccount-brand-name(capitalization: "sentence") }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Dodaj stran med zaznamke
     .accesskey = r
     .tooltiptext = Dodaj stran med zaznamke
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Dodaj stran med zaznamke
+    .accesskey = D
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Uredi zaznamek
+    .accesskey = U
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Odpri povezavo v novem zavihku vsebnika
     .accesskey = O
-main-context-menu-open-link-container =
-    .label = Odpri povezavo v novem vsebniku
-    .accesskey = v
 main-context-menu-open-link-new-window =
     .label = Odpri povezavo v novem oknu
     .accesskey = N
@@ -193,6 +224,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Komično (2 x)
     .accesskey = K
+main-context-menu-media-play-speed-2 =
+    .label = Hitrost
+    .accesskey = H
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0,5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1,0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1,25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1,5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Zanka
     .accesskey = Z
@@ -220,6 +264,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Slika v sliki
     .accesskey = v
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Glejte sliko v sliki
+    .accesskey = s
 main-context-menu-image-reload =
     .label = Ponovno naloži sliko
     .accesskey = P
@@ -229,6 +278,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = Pokaži video
     .accesskey = I
+main-context-menu-image-view-new-tab =
+    .label = Odpri sliko v novem zavihku
+    .accesskey = l
+main-context-menu-video-view-new-tab =
+    .label = Odpri videoposnetek v novem zavihku
+    .accesskey = n
 main-context-menu-image-copy =
     .label = Kopiraj sliko
     .accesskey = a
@@ -277,6 +332,9 @@ main-context-menu-audio-save-as =
 main-context-menu-video-image-save-as =
     .label = Shrani sličico videa kot …
     .accesskey = S
+main-context-menu-video-take-snapshot =
+    .label = Zajemi sličico …
+    .accesskey = j
 main-context-menu-video-email =
     .label = Pošlji video po e-pošti …
     .accesskey = o
@@ -301,8 +359,28 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = Uporabi ustvarjeno geslo …
     .accesskey = g
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = Uporabi shranjeno prijavo
+    .accesskey = o
+main-context-menu-use-saved-password =
+    .label = Uporabi shranjeno geslo
+    .accesskey = o
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = Predlagaj močno geslo …
+    .accesskey = m
 main-context-menu-manage-logins =
     .label = Upravljanje prijav …
+    .accesskey = U
+main-context-menu-manage-logins2 =
+    .label = Upravljanje prijav
     .accesskey = U
 main-context-menu-keyword =
     .label = Dodaj ključno besedo k iskanju …
@@ -346,6 +424,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Pokaži izvorno kodo izbora
     .accesskey = r
+main-context-menu-take-screenshot =
+    .label = Zajemi posnetek zaslona
+    .accesskey = p
 main-context-menu-view-page-source =
     .label = Pokaži izvorno kodo strani
     .accesskey = V

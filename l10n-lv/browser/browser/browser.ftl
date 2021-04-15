@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -221,6 +221,19 @@ search-one-offs-context-set-as-default =
 
 ## Bookmark Panel
 
+bookmark-panel-cancel =
+    .label = Atcelt
+    .accesskey = C
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [zero] Aizvākt grāmatzīmi
+            [one] Aizvākt grāmatzīmes ({ $count })
+           *[other] Aizvākt grāmatzīmes ({ $count })
+        }
+    .accesskey = A
 bookmark-panel-show-editor-checkbox =
     .label = Rādīt redaktoru, saglabājot
     .accesskey = S
@@ -280,6 +293,11 @@ browser-window-close-button =
 ## Tab actions
 
 
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+
 ## Bookmarks toolbar items
 
 
@@ -303,6 +321,8 @@ popup-all-windows-shared = Visi uz ekrāna redzamie logi tiks koplietoti.
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Ieraksti meklējamo tekstu vai mājas lapas adresi
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Ieraksti meklējamo tekstu vai mājas lapas adresi
 # Variables
@@ -360,8 +380,6 @@ pointerlock-warning-no-domain = Šis dokuments kontrolē kursoru. Nospiediet tau
 
 bookmarks-show-all-bookmarks =
     .label = Rādīt visas grāmatzīmes
-bookmarks-recent-bookmarks =
-    .value = Nesen saglabātās
 bookmarks-toolbar-chevron =
     .tooltiptext = Rādīt vairāk grāmatzīmju
 bookmarks-sidebar-content =
@@ -377,12 +395,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Paslēpt grāmatzīmju sānjoslu
            *[other] Atvērt grāmatzīmes sānjoslā
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Paslēpt grāmatzīmju sānjoslu
-           *[other] Attēlo grāmatzīmes sānu joslā
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -413,10 +425,12 @@ bookmarks-toolbar-placeholder-button =
 
 library-bookmarks-menu =
     .label = Grāmatzīmes
-library-bookmarks-bookmark-this-page =
-    .label = Saglabāt šo lapu grāmatzīmēs
-library-bookmarks-bookmark-edit =
-    .label = Rediģēt šo grāmatzīmi
+
+## Pocket toolbar button
+
+
+## Customize Toolbar Buttons
+
 
 ## More items
 
@@ -427,3 +441,12 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = Daži audio un video šajā lapā izmanto DRM, kas var ierobežot ko { -brand-short-name } var darīt ar tiem.
+
+## Password save/update panel
+
+
+## Add-on removal warning
+
+
+## Remote / Synced tabs
+

@@ -7,21 +7,21 @@ page-subtitle =
     Ова страница садржи техничке податке који могу бити корисни када
     покушавате да решите неки проблем. Ако вам требају одговори на често постављана питања
     о програму { -brand-short-name }, прегледајте наш <a data-l10n-name="support-link">веб сајт за подршку</a>.
-crashes-title = Извештаји о рушењу
+crashes-title = Извештаји о отказивању
 crashes-id = ID извештаја
-crashes-send-date = Поднесено
-crashes-all-reports = Сви извештаји о рушењу
-crashes-no-config = Ова апликација није подешена да приказује извештаје о рушењу.
-extensions-title = Екстензије
+crashes-send-date = Послато
+crashes-all-reports = Сви извештаји о отказивању
+crashes-no-config = Овај програм није подешен да приказује извештаје о отказивању.
+extensions-title = Додаци
 extensions-name = Назив
 extensions-enabled = Укључен
-extensions-version = Издање
+extensions-version = Верзија
 extensions-id = ID
 support-addons-title = Додаци
 support-addons-name = Назив
 support-addons-type = Тип
 support-addons-enabled = Омогућено
-support-addons-version = Издање
+support-addons-version = Верзија
 support-addons-id = ID
 security-software-title = Безбедносни софтвер
 security-software-type = Тип
@@ -31,34 +31,26 @@ security-software-antispyware = Антиспајвер
 security-software-firewall = Заштитни зид
 features-title = { -brand-short-name } могућности
 features-name = Назив
-features-version = Издање
+features-version = Верзија
 features-id = ID
 processes-title = Удаљени процеси
 processes-type = Тип
 processes-count = Број
-app-basics-title = Основе апликације
+app-basics-title = Информације о програму
 app-basics-name = Назив
-app-basics-version = Издање
+app-basics-version = Верзија
 app-basics-build-id = ID издања
 app-basics-distribution-id = ID дистрибуције
 app-basics-update-channel = Канал за ажурирање
 # This message refers to the folder used to store updates on the device,
 # as in "Folder for updates". "Update" is a noun, not a verb.
-app-basics-update-dir =
-    { PLATFORM() ->
-        [linux] Директоријум за ажурирања
-       *[other] Фасцикла за ажурирања
-    }
+app-basics-update-dir = Фасцикла за ажурирања
 app-basics-update-history = Историја ажурирања
 app-basics-show-update-history = Прикажи историјат ажурирања
 # Represents the path to the binary used to start the application.
-app-basics-binary = Бинарна апликација
-app-basics-profile-dir =
-    { PLATFORM() ->
-        [linux] Фасцикла профила
-       *[other] Фасцикла профила
-    }
-app-basics-enabled-plugins = Активирани прикључци
+app-basics-binary = Бинарна датотека програма
+app-basics-profile-dir = Фасцикла профила
+app-basics-enabled-plugins = Омогућене додатне компоненте
 app-basics-build-config = Конфигурација изградње
 app-basics-user-agent = Корисник
 app-basics-os = ОС
@@ -73,17 +65,12 @@ app-basics-launcher-process-status = Покретачки процес
 app-basics-multi-process-support = Вишепроцесорски прозори
 app-basics-fission-support = Прозори фисије
 app-basics-remote-processes-count = Удаљени процеси
-app-basics-enterprise-policies = Полисе предузећа
+app-basics-enterprise-policies = Смернице за предузећа
 app-basics-location-service-key-google = Google кључ за услуге локације
 app-basics-safebrowsing-key-google = Google кључ за безбедно прегледање
 app-basics-key-mozilla = Кључ Mozilla сервиса за локацију
 app-basics-safe-mode = Безбедни режим
-show-dir-label =
-    { PLATFORM() ->
-        [macos] Прикажи у Finder-у
-        [windows] Отвори фасциклу
-       *[other] Отвори фасциклу
-    }
+show-dir-label = Прикажи у фасцикли
 environment-variables-title = Варијабле окружења
 environment-variables-name = Назив
 environment-variables-value = Вредност
@@ -125,7 +112,7 @@ copy-raw-data-to-clipboard-label = Копирај податке у бележн
 sandbox-title = Sandbox
 sandbox-sys-call-log-title = Одбијени системски позиви
 sandbox-sys-call-index = #
-sandbox-sys-call-age = Пре неколико секунди
+sandbox-sys-call-age = пре неколико секунди
 sandbox-sys-call-pid = PID
 sandbox-sys-call-tid = TID
 sandbox-sys-call-proc-type = Тип процеса
@@ -133,11 +120,13 @@ sandbox-sys-call-number = Системски позив
 sandbox-sys-call-args = Аргументи
 safe-mode-title = Покушај безбедни режим
 restart-in-safe-mode-label = Рестартуј са онемогућеним додацима…
+troubleshoot-mode-title = Дијагностика проблема
+restart-in-troubleshoot-mode-label = Режим за решавање проблема…
 clear-startup-cache-title = Покушајте да избришете предмеморију покретања
 clear-startup-cache-label = Избриши предмеморију покретања…
 startup-cache-dialog-title = Избриши предмеморију покретања
-startup-cache-dialog-body = Поново покрените { -brand-short-name } да бисте избрисали предмеморију покретања. Ово неће променити подешавања или уклонити проширења која сте додали у { -brand-short-name }.
-restart-button-label = Поново покрени
+startup-cache-dialog-body = Рестартујте { -brand-short-name } да бисте обрисали кеш покретања. Ово неће утицати на подешавања или додатке које сте додали у { -brand-short-name }.
+restart-button-label = Рестартуј
 
 ## Media titles
 
@@ -163,15 +152,15 @@ media-capabilities-enumerate = Попис уноса базе података
 
 ##
 
-intl-title = Интернационализација & Локализација
-intl-app-title = Поставке апликације
-intl-locales-requested = Захтевани локали
-intl-locales-available = Доступни локали
-intl-locales-supported = Локали апликације
+intl-title = Интернационализација и локализација
+intl-app-title = Подешавања програма
+intl-locales-requested = Захтевани језици
+intl-locales-available = Доступни језици
+intl-locales-supported = Језици програма
 intl-locales-default = Подразумевани локал
 intl-os-title = Оперативни систем
-intl-os-prefs-system-locales = Локали система
-intl-regional-prefs = Регионалне поставке
+intl-os-prefs-system-locales = Језици система
+intl-regional-prefs = Регионална подешавања
 
 ## Remote Debugging
 ##
@@ -222,9 +211,9 @@ support-third-party-modules-up-icon =
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
     { $days ->
-        [one] Извештаји о рушењу у последњем { $days } дану
-        [few] Извештаји о рушењу у последња { $days } дана
-       *[other] Извештаји о рушењу у последњих { $days } дана
+        [one] Извештаји о отказивању за протекли { $days } дан
+        [few] Извештаји о отказивању за протекла { $days } дана
+       *[other] Извештаји о отказивању за протеклих { $days } дана
     }
 # Variables
 # $minutes (integer) - Number of minutes since crash
@@ -254,18 +243,18 @@ crashes-time-days =
 # $reports (integer) - Number of pending reports
 pending-reports =
     { $reports ->
-        [one] Сви извештаји о рушењу(укључујући { $reports } који чека да буде послат)
-        [few] Сви извештаји о рушењу(укључујући { $reports } који чекају да буду послати)
-       *[other] Сви извештаји о рушењу(укључујући { $reports } који чекају да буду послати)
+        [one] Сви извештаји о отказивању (укључујући { $reports } нерешени случај у датом периоду)
+        [few] Сви извештаји о отказивању (укључујући { $reports } нерешена случаја у датом периоду)
+       *[other] Сви извештаји о отказивању (укључујући { $reports } нерешених случаја у датом периоду)
     }
 raw-data-copied = Подаци копирани у бележницу
 text-copied = Текст копиран у бележницу
 
 ## The verb "blocked" here refers to a graphics feature such as "Direct2D" or "OpenGL layers".
 
-blocked-driver = Блокирано је за издање графичког драјвера који користите.
+blocked-driver = Блокирано због верзије драјвера графичке картице.
 blocked-gfx-card = Блокирано на графичкој картици због нерешених проблема са драјвером.
-blocked-os-version = Блокирано за издање оперативног система који користите.
+blocked-os-version = Блокирано због верзије оперативног система.
 blocked-mismatched-version = Блокирана верзија драјвера графике јер је дошло до неслагања између регистра и DLL.
 # Variables
 # $driverVersion - The graphics driver version string
@@ -302,13 +291,13 @@ gpu-active = Активан
 webgl1-wsiinfo = WebGL 1 WSI информације драјвера
 webgl1-renderer = WebGL 1 Driver Renderer
 webgl1-version = WebGL 1 верзија драјвера
-webgl1-driver-extensions = WebGL 1 екстензија драјвера
-webgl1-extensions = WebGL 1 екстензије
+webgl1-driver-extensions = WebGL 1 – проширења драјвера
+webgl1-extensions = WebGL 1 – проширења
 webgl2-wsiinfo = WebGL 2 WSI информације драјвера
 webgl2-renderer = WebGL2 Renderer
 webgl2-version = WebGL 2 верзија драјвера
-webgl2-driver-extensions = WebGL 2 екстензија драјвера
-webgl2-extensions = WebGL 2 екстензије
+webgl2-driver-extensions = WebGL 2 – проширења драјвера
+webgl2-extensions = WebGL 2 – проширења
 blocklisted-bug = На црној листи због познатих проблема
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
@@ -333,19 +322,19 @@ content-uses-tiling = Користи плочице (садржај)
 off-main-thread-paint-enabled = Нит за сликање омогућена
 off-main-thread-paint-worker-count = Thread Painting Worker бројач
 target-frame-rate = Циљана брзина освежавања тј. Framerate
-min-lib-versions = Очекивано минимално издање
-loaded-lib-versions = Издање у употреби
+min-lib-versions = Очекивана минимална верзија
+loaded-lib-versions = Верзија у употреби
 has-seccomp-bpf = Seccomp-BPF (Системско филтрирање позива)
 has-seccomp-tsync = Seccomp синхронизација нити
 has-user-namespaces = Именски простор корисника
 has-privileged-user-namespaces = Именски простор корисника за привилеговане процесе
 can-sandbox-content = Sandboxing процеса садржаја
-can-sandbox-media = Sandboxing медија прикључак
+can-sandbox-media = Медијска компонента Sandboxing
 content-sandbox-level = Ниво Sandbox процеса садржаја
 effective-content-sandbox-level = Ефективни ниво Sandbox процеса садржаја
 sandbox-proc-type-content = садржај
 sandbox-proc-type-file = садржај дадотеке
-sandbox-proc-type-media-plugin = медија прикључак
+sandbox-proc-type-media-plugin = медијска компонента
 sandbox-proc-type-data-decoder = декодер података
 startup-cache-title = Кеш покретања
 startup-cache-disk-cache-path = Путања до дисковног кеша
@@ -363,9 +352,9 @@ multi-process-windows = { $remoteWindows }/{ $totalWindows }
 multi-process-status-0 = Омогућио корисник
 multi-process-status-1 = Омогућено подразумевано
 multi-process-status-2 = Онемогућено
-multi-process-status-4 = Онемогућено од стране алата приступачности
-multi-process-status-6 = Онемогућено од стране неподржаног уноса текста
-multi-process-status-7 = Онемогућено од стране додатака
+multi-process-status-4 = Онемогућиле алатке приступачности
+multi-process-status-6 = Онемогућио неподржани метод уноса текста
+multi-process-status-7 = Онемогућили додаци
 multi-process-status-8 = Присилно онемогућено
 multi-process-status-unknown = Непознат статус
 # Variables
@@ -411,3 +400,11 @@ support-printing-clear-settings-button = Обриши сачувана поде�
 support-printing-modified-settings = Измењена подешавања штампања
 support-printing-prefs-name = Назив
 support-printing-prefs-value = Вредност
+
+## Normandy sections
+
+support-remote-experiments-title = Удаљени експерименти
+support-remote-experiments-name = Назив
+support-remote-features-title = Удаљене функције
+support-remote-features-name = Назив
+support-remote-features-status = Статус

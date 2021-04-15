@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = Možnosti
 menu-application-services =
     .label = Služby
 menu-application-hide-this =
@@ -252,30 +254,46 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Prihlásiť sa do aplikácie { -brand-product-name }…
     .accesskey = i
-menu-tools-extensions =
-    .label = Rozšírenia a témy vzhľadu
-    .accesskey = t
+menu-tools-addons-and-themes =
+    .label = Doplnky a témy
+    .accesskey = D
 menu-tools-fxa-sign-in2 =
     .label = Prihlásiť sa
     .accesskey = P
 menu-tools-turn-on-sync =
     .label = Zapnúť { -sync-brand-short-name }…
     .accesskey = n
+menu-tools-turn-on-sync2 =
+    .label = Zapnúť synchronizáciu…
+    .accesskey = c
 menu-tools-sync-now =
     .label = Synchronizovať teraz
-    .accesskey = N
+    .accesskey = c
 menu-tools-fxa-re-auth =
     .label = Znovu pripojiť k aplikácii { -brand-product-name }…
     .accesskey = r
 menu-tools-web-developer =
     .label = Webový vývojár
     .accesskey = W
+menu-tools-browser-tools =
+    .label = Nástroje prehliadača
+    .accesskey = h
+menu-tools-task-manager =
+    .label = Správca úloh
+    .accesskey = c
 menu-tools-page-source =
     .label = Zdrojový kód stránky
     .accesskey = d
 menu-tools-page-info =
     .label = Informácie o stránke
     .accesskey = I
+menu-settings =
+    .label = Nastavenia
+    .accesskey =
+        { PLATFORM() ->
+            [windows] N
+           *[other] N
+        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -286,13 +304,6 @@ menu-preferences =
         { PLATFORM() ->
             [windows] M
            *[other] M
-        }
-menu-settings =
-    .label = Nastavenia
-    .accesskey =
-        { PLATFORM() ->
-            [windows] N
-           *[other] N
         }
 menu-tools-layout-debugger =
     .label = Ladenie rozloženia
@@ -306,15 +317,6 @@ menu-window-bring-all-to-front =
     .label = Preniesť všetko do popredia
 
 ## Help Menu
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
 
 
 # NOTE: For Engineers, any additions or changes to Help menu strings should
@@ -346,11 +348,11 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Informácie pre riešenie problémov
     .accesskey = m
+menu-help-taskmanager =
+    .label = Správca úloh
 menu-help-more-troubleshooting-info =
     .label = Ďalšie informácie pre riešenie problémov
     .accesskey = i
-menu-help-taskmanager =
-    .label = Správca úloh
 menu-help-report-site-issue =
     .label = Nahlásiť problém so stránkou…
 menu-help-feedback-page =
@@ -362,9 +364,9 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Reštartovať a povoliť doplnky…
     .accesskey = R
-menu-help-enter-troubleshoot-mode =
-    .label = Režim riešenia problémov
-    .accesskey = p
+menu-help-enter-troubleshoot-mode2 =
+    .label = Režim riešenia problémov…
+    .accesskey = R
 menu-help-exit-troubleshoot-mode =
     .label = Vypnúť režim riešenia problémov
     .accesskey = r
@@ -376,6 +378,3 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Toto nie je podvodná stránka…
     .accesskey = T
-menu-help-check-for-update =
-    .label = Vyhľadať aktualizácie…
-    .accesskey = V

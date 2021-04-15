@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Go backwards one page ({ $shortcut })
     .aria-label = Backwards
     .accesskey = B
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Backwards
+    .accesskey = B
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Go forwards one page ({ $shortcut })
     .aria-label = Forwards
     .accesskey = F
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Forwards
+    .accesskey = F
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Reload
     .accesskey = R
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Reload
+    .accesskey = R
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Stop
     .accesskey = S
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Stop
+    .accesskey = S
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name(capitalization: "sentence") }
+    .tooltiptext = { -fxaccount-brand-name(capitalization: "sentence") }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Bookmark This Page
     .accesskey = m
     .tooltiptext = Bookmark this page
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Bookmark Page
+    .accesskey = m
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Edit Bookmark
+    .accesskey = m
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Open Link in New Container Tab
     .accesskey = C
-main-context-menu-open-link-container =
-    .label = Open Link in New Container
-    .accesskey = w
 main-context-menu-open-link-new-window =
     .label = Open Link in New Window
     .accesskey = W
@@ -193,6 +224,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Ludicrous (2×)
     .accesskey = L
+main-context-menu-media-play-speed-2 =
+    .label = Speed
+    .accesskey = d
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Loop
     .accesskey = L
@@ -220,6 +264,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Picture-in-Picture
     .accesskey = u
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Watch in Picture-in-Picture
+    .accesskey = u
 main-context-menu-image-reload =
     .label = Reload Image
     .accesskey = R
@@ -228,6 +277,12 @@ main-context-menu-image-view =
     .accesskey = I
 main-context-menu-video-view =
     .label = View Video
+    .accesskey = i
+main-context-menu-image-view-new-tab =
+    .label = Open Image in New Tab
+    .accesskey = I
+main-context-menu-video-view-new-tab =
+    .label = Open Video in New Tab
     .accesskey = i
 main-context-menu-image-copy =
     .label = Copy Image
@@ -277,6 +332,9 @@ main-context-menu-audio-save-as =
 main-context-menu-video-image-save-as =
     .label = Save Snapshot As…
     .accesskey = S
+main-context-menu-video-take-snapshot =
+    .label = Take Snapshot…
+    .accesskey = S
 main-context-menu-video-email =
     .label = Email Video…
     .accesskey = a
@@ -321,6 +379,9 @@ main-context-menu-suggest-strong-password =
 main-context-menu-manage-logins =
     .label = Manage Logins…
     .accesskey = M
+main-context-menu-manage-logins2 =
+    .label = Manage Logins
+    .accesskey = M
 main-context-menu-keyword =
     .label = Add a Keyword for this Search…
     .accesskey = K
@@ -363,6 +424,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = View Selection Source
     .accesskey = e
+main-context-menu-take-screenshot =
+    .label = Take Screenshot
+    .accesskey = T
 main-context-menu-view-page-source =
     .label = View Page Source
     .accesskey = V

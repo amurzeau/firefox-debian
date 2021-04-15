@@ -18,6 +18,7 @@ login-filter =
 create-login-button = Zugangsdaten hinzufügen
 fxaccounts-sign-in-text = Nutzen Sie Ihre Passwörter auf anderen Geräten
 fxaccounts-sign-in-button = Bei { -sync-brand-short-name } anmelden
+fxaccounts-sign-in-sync-button = Zum Synchronisieren anmelden
 fxaccounts-avatar-button =
     .title = Konto verwalten
 
@@ -70,11 +71,15 @@ about-logins-list-item-vulnerable-password-icon =
 
 login-intro-heading = Suchen Sie Ihre gespeicherten Zugangsdaten? Richten Sie { -sync-brand-short-name } ein.
 about-logins-login-intro-heading-logged-out = Suchen Sie Ihre gespeicherten Zugangsdaten? Richten Sie { -sync-brand-short-name } ein oder importieren Sie diese.
+about-logins-login-intro-heading-logged-out2 = Suchen Sie Ihre gespeicherten Zugangsdaten? Aktivieren Sie die Synchronisation oder importieren Sie diese.
 about-logins-login-intro-heading-logged-in = Keine synchronisierten Zugangsdaten gefunden.
 login-intro-description = Wenn Sie Ihre Zugangsdaten in { -brand-product-name } auf einem anderen Gerät gespeichert haben, können Sie diese hier abrufen:
 login-intro-instruction-fxa = Auf dem Gerät mit Ihren gespeicherten Zugangsdaten: Erstellen Sie ein { -fxaccount-brand-name } oder melden Sie sich damit an.
 login-intro-instruction-fxa-settings = Überprüfen Sie, dass das Kontrollfeld "Zugangsdaten" in den { -sync-brand-short-name }-Einstellungen ausgewählt ist.
 about-logins-intro-instruction-help = Weitere Hilfe finden Sie auf der <a data-l10n-name="help-link">Support-Seite für { -lockwise-brand-short-name }</a>.
+login-intro-instructions-fxa = Auf dem Gerät mit Ihren gespeicherten Zugangsdaten: Erstellen Sie ein { -fxaccount-brand-name } oder melden Sie sich damit an.
+login-intro-instructions-fxa-settings = Gehen Sie zu Einstellungen > Synchronisation > Synchronisation aktivieren… Wählen Sie das Kontrollfeld "Zugangsdaten und Passwörter".
+login-intro-instructions-fxa-help = Weitere Hilfe finden Sie auf der <a data-l10n-name="help-link">Hilfeseite für { -lockwise-brand-short-name }</a>.
 about-logins-intro-import = Wenn Ihre Zugangsdaten in einem anderen Browser gespeichert sind, können Sie diese in { -lockwise-brand-short-name } <a data-l10n-name="import-link">importieren</a>.
 about-logins-intro-import2 = Wenn Ihre Zugangsdaten außerhalb von { -brand-product-name } gespeichert sind, können Sie diese <a data-l10n-name="import-browser-link">aus einem anderen Browser</a> oder <a data-l10n-name="import-file-link">aus einer Datei</a> importieren.
 
@@ -316,6 +321,7 @@ about-logins-import-dialog-error-unable-to-read-description = Stellen Sie sicher
 about-logins-import-dialog-error-no-logins-imported = Es wurden keine Zugangsdaten importiert
 about-logins-import-dialog-error-learn-more = Weitere Informationen
 about-logins-import-dialog-error-try-again = Erneut versuchen…
+about-logins-import-dialog-error-try-import-again = Import erneut versuchen…
 about-logins-import-dialog-error-cancel = Abbrechen
 about-logins-import-report-title = Import-Zusammenfassung
 about-logins-import-report-description = Zugangsdaten und Passwörter wurden in { -brand-short-name } importiert.

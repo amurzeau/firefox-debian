@@ -144,7 +144,7 @@ return-to-amo-sub-header = Odlično, imate { -brand-short-name }
 #   $addon-name (String) - Name of the add-on
 return-to-amo-addon-header = Zdaj pa dodajte <icon></icon><b>{ $addon-name }.</b>
 return-to-amo-extension-button = Dodaj razširitev
-return-to-amo-get-started-button = Začnite s { -brand-short-name }om
+return-to-amo-get-started-button = Začnite s { -brand-short-name(sklon: "orodnik") }
 onboarding-not-now-button-label = Ne zdaj
 
 ## Custom Return To AMO onboarding strings
@@ -161,14 +161,23 @@ return-to-amo-add-extension-label = Dodaj razširitev
 
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = Dobrodošli v <span data-l10n-name="zap">{ -brand-short-name }u</span>
+onboarding-multistage-welcome-header = Dobrodošli v <span data-l10n-name="zap">{ -brand-short-name(sklon: "mestnik") }</span>
 onboarding-multistage-welcome-subtitle = Hiter, varen in zaseben brskalnik, ki ga podpira neprofitna organizacija.
 onboarding-multistage-welcome-primary-button-label = Začni nastavitev
 onboarding-multistage-welcome-secondary-button-label = Prijava
 onboarding-multistage-welcome-secondary-button-text = Imate račun?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "default" should stay inside the span.
+onboarding-multistage-set-default-header = Nastavite { -brand-short-name } kot <span data-l10n-name="zap">privzet brskalnik</span>
 onboarding-multistage-set-default-subtitle = Hitrost, varnost in zasebnost ob vsakem brskanju.
 onboarding-multistage-set-default-primary-button-label = Nastavi za privzeto
 onboarding-multistage-set-default-secondary-button-label = Ne zdaj
+onboarding-multistage-pin-default-subtitle = Hitro, varno in zasebno brskanje vsakič, ko obiščete splet.
+# The "settings" here refers to "Windows 10 Settings App" and not the browser's
+onboarding-multistage-pin-default-waiting-subtitle = Ko se odprejo nastavitve, v rubriki Spletni brskalnik izberite { -brand-short-name }
+# The "settings" here refers to "Windows 10 Settings App" and not the browser's
+onboarding-multistage-pin-default-help-text = S tem boste { -brand-short-name } pripeli v opravilno vrstico in odprli nastavitve
+onboarding-multistage-pin-default-primary-button-label = Nastavi { -brand-short-name } kot moj glavni brskalnik
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "more" should stay inside the span.
 onboarding-multistage-import-header = Uvozite svoja gesla, zaznamke in <span data-l10n-name="zap">drugo</span>
@@ -189,6 +198,7 @@ onboarding-welcome-steps-indicator =
 onboarding-multistage-theme-header = Izberite <span data-l10n-name="zap">videz</span>
 onboarding-multistage-theme-subtitle = Prilagodite svoj { -brand-short-name } s temo.
 onboarding-multistage-theme-primary-button-label = Shrani temo
+onboarding-multistage-theme-primary-button-label2 = Končano
 onboarding-multistage-theme-secondary-button-label = Ne zdaj
 # Automatic theme uses operating system color settings
 onboarding-multistage-theme-label-automatic = Samodejno

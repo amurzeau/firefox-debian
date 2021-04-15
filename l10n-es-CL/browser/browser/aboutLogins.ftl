@@ -18,6 +18,7 @@ login-filter =
 create-login-button = Crear nueva credencial
 fxaccounts-sign-in-text = Ten tus contraseñas en tus otros dispositivos
 fxaccounts-sign-in-button = Conectarse a { -sync-brand-short-name }
+fxaccounts-sign-in-sync-button = Conectarse para sincronizar
 fxaccounts-avatar-button =
     .title = Administrar cuenta
 
@@ -70,11 +71,15 @@ about-logins-list-item-vulnerable-password-icon =
 
 login-intro-heading = ¿Buscas tus contraseñas guardadas? Configura { -sync-brand-short-name }.
 about-logins-login-intro-heading-logged-out = ¿Buscas tus contraseñas guardadas? Configura { -sync-brand-short-name } o impórtalas.
+about-logins-login-intro-heading-logged-out2 = ¿Buscas tus credenciales guardadas? Activa la sincronización o impórtalas.
 about-logins-login-intro-heading-logged-in = No se encontraron credenciales sincronizadas.
 login-intro-description = Si guardaste tus credenciales en { -brand-product-name } en un dispositivo diferente, estas son las instrucciones para que puedas tenerlas también aquí:
 login-intro-instruction-fxa = Crea o conéctate a tu { -fxaccount-brand-name } en el dispositivo en que tienes guardadas tus credenciales
 login-intro-instruction-fxa-settings = Asegúrate de seleccionar la marca de credenciales en los ajustes de { -sync-brand-short-name }
 about-logins-intro-instruction-help = Visita el <a data-l10n-name="help-link">Soporte de { -lockwise-brand-short-name }</a> para más ayuda
+login-intro-instructions-fxa = Crea o conéctate a tu { -fxaccount-brand-name } en el dispositivo en que tienes guardadas tus credenciales
+login-intro-instructions-fxa-settings = Ve a Ajustes > Sincronizar > Activar la sincronización… Selecciona las casillas de Credenciales y contraseñas.
+login-intro-instructions-fxa-help = Visita el <a data-l10n-name="help-link">Soporte de { -lockwise-brand-short-name }</a> para más ayuda.
 about-logins-intro-import = Si tus credenciales están guardadas en otro navegador, puedes <a data-l10n-name="import-link">importarlas a { -lockwise-brand-short-name }</a>
 about-logins-intro-import2 = Si tus credenciales se guardan fuera de { -brand-product-name }, puedes <a data-l10n-name="import-browser-link">importarlas desde otro navegador</a> o <a data-l10n-name="import-file-link">desde un archivo</a>
 
@@ -316,6 +321,7 @@ about-logins-import-dialog-error-unable-to-read-description = Asegúrate de habe
 about-logins-import-dialog-error-no-logins-imported = No se importaron credenciales
 about-logins-import-dialog-error-learn-more = Aprender más
 about-logins-import-dialog-error-try-again = Volver a intentarlo…
+about-logins-import-dialog-error-try-import-again = Volver a intentar la importación…
 about-logins-import-dialog-error-cancel = Cancelar
 about-logins-import-report-title = Resumen de importación
 about-logins-import-report-description = Credenciales y contraseñas importadas a { -brand-short-name }.

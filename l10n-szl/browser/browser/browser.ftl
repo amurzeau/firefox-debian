@@ -266,6 +266,19 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmark-panel-cancel =
+    .label = Pociep
+    .accesskey = P
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Wyciep zokłodka
+            [few] Wyciep { $count } zokłodki
+           *[many] Wyciep { $count } zokłodek
+        }
+    .accesskey = W
 bookmark-panel-show-editor-checkbox =
     .label = Pokoż edytōr przi spamiyntowaniu
     .accesskey = E
@@ -290,6 +303,8 @@ identity-passive-loaded = Party tyj strōny sōm niyzabezpieczōne (bez przikło
 identity-active-loaded = Ôchrōna na tyj strōnie je zastawiōno ôd ciebie.
 identity-weak-encryption = Ta strōna używo słabego szyfrowanio.
 identity-insecure-login-forms = Dane logowanio wkludzōne na tyj strōnie mogōm być wyzdradzōne.
+identity-permissions =
+    .value = Zgody
 identity-https-only-connection-upgraded = (sztajgniynte do HTTPS)
 identity-https-only-label = Tryb "ino HTTPS"
 identity-https-only-dropdown-on =
@@ -301,8 +316,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Załōncz tryb "Ino HTTPS" do tyj strōny, jak chcesz, coby aplikacyjo { -brand-short-name } przełōnczała na niego, kej ino idzie.
 identity-https-only-info-turn-off2 = Jak strōna wyglōndo na felerno, może bydziesz chcieć wyłōnczyć tryb "Ino HTTPS" do tyj strōny, coby przeladować jōm we trybie niyzabezpieczōnego HTTP.
 identity-https-only-info-no-upgrade = Niy idzie sztajgnōńć połōnczynio ze HTTP.
-identity-permissions =
-    .value = Zgody
 identity-permissions-storage-access-header = Cookies, co śledzōm miyndzy strōnami
 identity-permissions-storage-access-hint = Te strōny poradzōm używać cookies, co śledzōm cie miyndzy strōnami, i mieć dostymp do danych tyj strōny, jak żeś na nij je.
 identity-permissions-reload-hint = Możno bydzie trza zaladować strōna jeszcze roz, coby wkludzić zmiany.
@@ -350,8 +363,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Puszczōne
-browser-tab-audio-muted = Wyłōnczōny klang
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = PUSZCZANIE
 # This label should be written in all capital letters if your locale supports them.
@@ -360,6 +371,32 @@ browser-tab-audio-muted2 = BEZ KLANGU
 browser-tab-audio-blocked = AUTOPUSZCZANIE JE ZASZPEROWANE
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = ÔBROZ WE ÔBRAZIE
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] Wyłōncz klang karty
+        [one] Wyłōncz klang { $count } karty
+        [few] Wyłōncz klang { $count } kartōw
+       *[many] Wyłōncz klang { $count } kartōw
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] Załōncz klang { $count } karty
+        [one] Załōncz klang { $count } karty
+        [few] Załōncz klang { $count } kartōw
+       *[many] Załōncz klang { $count } kartōw
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] Puść we karcie
+        [one] Puść w { $count } karcie
+        [few] Puść we { $count } kartach
+       *[many] Puść we { $count } kartach
+    }
 
 ## Bookmarks toolbar items
 
@@ -376,6 +413,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Mikrofōn do udostympniynio:
     .accesskey = M
+popup-select-camera-device =
+    .value = Kamera:
+    .accesskey = K
+popup-select-camera-icon =
+    .tooltiptext = Kamera
+popup-select-microphone-device =
+    .value = Mikrofōn:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Mikrofōn
 popup-all-windows-shared = Wszyske ôkna widziane na ekranie bydōm udostympniōne.
 popup-screen-sharing-not-now =
     .label = Niy teroz
@@ -385,6 +432,13 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = Zastow powiadōmiynia ôd { -brand-short-name } przi udostympnianiu
 popup-silence-notifications-checkbox-warning = { -brand-short-name } niy bydzie pokazować powiadōmiyń w czasie udostympnianio.
+popup-screen-sharing-block =
+    .label = Szperuj
+    .accesskey = S
+popup-screen-sharing-always-block =
+    .label = Zawdy szperuj
+    .accesskey = w
+popup-mute-notifications-checkbox = Wyłōncz powiadōmiynia ze strōn przi udostympnianiu
 
 ## WebRTC window or screen share tab switch warning
 
@@ -525,6 +579,8 @@ crashed-subframe-message = <strong>Kōnsek tyj strōny mo awaryjo.</strong>. Po�
 crashed-subframe-learnmore =
     .label = Przewiydz sie wiyncyj
     .accesskey = P
+crashed-subframe-learnmore-link =
+    .value = Przewiydz sie wiyncyj
 crashed-subframe-submit =
     .label = Poślij rapaort
     .accesskey = R
@@ -533,8 +589,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Pokoż wszyskie zokłodki
-bookmarks-recent-bookmarks =
-    .value = Niydowno przidane
 bookmarks-manage-bookmarks =
     .label = Regiyruj zokłodkami
 bookmarks-recent-bookmarks-panel =
@@ -555,12 +609,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Skryj posek ze zokłodkami na rancie
            *[other] Pokoż posek ze zokłodkami na rancie
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Skryj posek ze zokłodkami
-           *[other] Pokoż posek ze zokłodkami
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -607,12 +655,17 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Zokłodki
-library-bookmarks-bookmark-this-page =
-    .label = Przidej ta strōna do zokłodek
-library-bookmarks-bookmark-edit =
-    .label = Edytuj ta zokłodka
 library-recent-activity-title =
     .value = Niydowno aktywność
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Spamiyntej do { -pocket-brand-name(case: "gen") }
+    .tooltiptext = Spamiyntej do { -pocket-brand-name(case: "gen") }
+
+## Customize Toolbar Buttons
+
 
 ## More items
 
@@ -623,3 +676,25 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = Klang abo filmy na tyj strōnie używajōm softwaru DRM, co może zmyńszyć to, co { -brand-short-name } poradzi zrobić.
+eme-notifications-drm-content-playing-manage = Regiyruj sztalōnkami
+eme-notifications-drm-content-playing-manage-accesskey = R
+eme-notifications-drm-content-playing-dismiss = Ôdkoż
+eme-notifications-drm-content-playing-dismiss-accesskey = O
+
+## Password save/update panel
+
+panel-save-update-username = Miano ôd używocza
+panel-save-update-password = Hasło
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Skasować { $name }?
+addon-removal-abuse-report-checkbox = Dej znac ô tym rozszyrzyniu do { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Regiyruj kōntym
+remote-tabs-sync-now = Synchrōnizuj teroz

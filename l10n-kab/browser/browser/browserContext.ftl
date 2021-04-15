@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Uɣal ɣer deffir s yiwen usebter ({ $shortcut })
     .aria-label = Γer deffir
     .accesskey = D
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Ɣer deffir
+    .accesskey = D
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Aẓ ɣer zdat s yiwen usebter ({ $shortcut })
     .aria-label = Ɣer zdat
     .accesskey = Z
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Ɣer sdat
+    .accesskey = S
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Smiren
     .accesskey = M
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Smiren
+    .accesskey = S
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Seḥbes
     .accesskey = Ḥ
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Seḥbes
+    .accesskey = S
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Creḍ asebter-a
     .accesskey = c
     .tooltiptext = Creḍ asebter-a
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Creḍ asebter
+    .accesskey = ḍ
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Ẓreg tacreḍt n usebter
+    .accesskey = ḍ
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -110,9 +144,6 @@ main-context-menu-open-link-new-tab =
     .accesskey = d
 main-context-menu-open-link-container-tab =
     .label = Ldi aseɣwen deg yiccer amagbar amaynut
-    .accesskey = L
-main-context-menu-open-link-container =
-    .label = Ldi aseɣwen deg umagbar amaynut
     .accesskey = L
 main-context-menu-open-link-new-window =
     .label = Ldi aseɣwen deg usfaylu amaynut
@@ -193,6 +224,9 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Arured (×2)
     .accesskey = u
+main-context-menu-media-play-speed-2 =
+    .label = Arured
+    .accesskey = d
 main-context-menu-media-play-speed-slow-2 =
     .label = 0.5×
 main-context-menu-media-play-speed-normal-2 =
@@ -230,6 +264,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Tugna-deg-tugna
     .accesskey = u
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Wali deg Tugna-deg-tugna
+    .accesskey = u
 main-context-menu-image-reload =
     .label = Smiren tugna
     .accesskey = S
@@ -242,6 +281,9 @@ main-context-menu-video-view =
 main-context-menu-image-view-new-tab =
     .label = Ldi tugna deg yiccer amaynut
     .accesskey = L
+main-context-menu-video-view-new-tab =
+    .label = Ldi tavidyut deg yiccer amaynut
+    .accesskey = i
 main-context-menu-image-copy =
     .label = Nɣel tugna
     .accesskey = n
@@ -290,6 +332,9 @@ main-context-menu-audio-save-as =
 main-context-menu-video-image-save-as =
     .label = Sekles anɣel n ugdil s yisem…
     .accesskey = S
+main-context-menu-video-take-snapshot =
+    .label = Ṭṭef agdil…
+    .accesskey = A
 main-context-menu-video-email =
     .label = Azen tavidyut s yimayl…
     .accesskey = a
@@ -322,10 +367,19 @@ main-context-menu-generate-new-password =
 main-context-menu-use-saved-login =
     .label = Seqdec inekcam yettwakelsen
     .accesskey = k
+main-context-menu-use-saved-password =
+    .label = Seqdec awal uffir yettwaskelsen
+    .accesskey = a
 
 ##
 
+main-context-menu-suggest-strong-password =
+    .label = SuƔer awal uffir iǧehden…
+    .accesskey = S
 main-context-menu-manage-logins =
+    .label = Sefrek inekcam
+    .accesskey = S
+main-context-menu-manage-logins2 =
     .label = Sefrek inekcam
     .accesskey = S
 main-context-menu-keyword =
@@ -370,6 +424,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Wali tangalt taɣbalut n tefrant
     .accesskey = e
+main-context-menu-take-screenshot =
+    .label = Ṭṭef agdil
+    .accesskey = Ṭ
 main-context-menu-view-page-source =
     .label = Tangalt taɣbalut n usebter
     .accesskey = T

@@ -173,6 +173,15 @@ onboarding-multistage-set-default-subtitle = Brzina, sigurnost i privatnost svak
 onboarding-multistage-set-default-primary-button-label = Postavi kao zadani
 onboarding-multistage-set-default-secondary-button-label = Ne sada
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-pin-default-header = Za početak, neka <span data-l10n-name="zap">{ -brand-short-name }</span> bude udaljen samo jedan klik mišem
+onboarding-multistage-pin-default-subtitle = Brzo, sigurno i privatno pregledavanje svaki put kada koristiš web.
+# The "settings" here refers to "Windows 10 Settings App" and not the browser's
+onboarding-multistage-pin-default-waiting-subtitle = Odaberi { -brand-short-name } pod "Web-preglednik" kada se otvore tvoje postavke
+# The "settings" here refers to "Windows 10 Settings App" and not the browser's
+onboarding-multistage-pin-default-help-text = Ovo će prikvačiti { -brand-short-name } na programsku traku i otvoriti postavke
+onboarding-multistage-pin-default-primary-button-label = Postavi { -brand-short-name } kao moj primarni preglednik
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "more" should stay inside the span.
 onboarding-multistage-import-header = Uvezi svoje lozinke, <br/>zabilješke i <span data-l10n-name="zap">više</span>
 onboarding-multistage-import-subtitle = Dolaziš iz drugog preglednika? Lako je ponijeti sve u { -brand-short-name }.
@@ -189,8 +198,8 @@ onboarding-welcome-steps-indicator =
     .aria-label = Kako započeti: ekran { $current } od { $total }
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "look" should stay inside the span.
-onboarding-multistage-theme-header = Odaberite <span data-l10n-name="zap">izgled</span>
-onboarding-multistage-theme-subtitle = Prilagodite { -brand-short-name } s temom.
+onboarding-multistage-theme-header = Odaberi <span data-l10n-name="zap">izgled</span>
+onboarding-multistage-theme-subtitle = Prilagodi { -brand-short-name } s temom.
 onboarding-multistage-theme-primary-button-label = Spremi temu
 onboarding-multistage-theme-primary-button-label2 = Gotovo
 onboarding-multistage-theme-secondary-button-label = Ne sada

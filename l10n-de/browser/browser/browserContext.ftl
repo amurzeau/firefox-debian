@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Eine Seite zurück ({ $shortcut })
     .aria-label = Zurück
     .accesskey = Z
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Zurück
+    .accesskey = Z
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Eine Seite vor ({ $shortcut })
     .aria-label = Vor
     .accesskey = V
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Vor
+    .accesskey = V
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Neu laden
     .accesskey = N
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Neu laden
+    .accesskey = N
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -63,6 +75,10 @@ toolbar-button-reload =
 
 main-context-menu-stop =
     .aria-label = Stopp
+    .accesskey = p
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Stopp
     .accesskey = p
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
@@ -72,11 +88,17 @@ toolbar-button-stop =
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
 
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
+
 ## Save Page
 
 main-context-menu-page-save =
     .label = Seite speichern unter…
-    .accesskey = u
+    .accesskey = e
 toolbar-button-page-save =
     .label = { main-context-menu-page-save.label }
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Lesezeichen für diese Seite hinzufügen
     .accesskey = L
     .tooltiptext = Lesezeichen für diese Seite setzen
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Lesezeichen für Seite hinzufügen
+    .accesskey = L
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Lesezeichen bearbeiten
+    .accesskey = L
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Link in neuem Tab in Umgebung öffnen
     .accesskey = m
-main-context-menu-open-link-container =
-    .label = Link in neuer Umgebung öffnen
-    .accesskey = U
 main-context-menu-open-link-new-window =
     .label = Link in neuem Fenster öffnen
     .accesskey = F
@@ -252,7 +283,7 @@ main-context-menu-image-view-new-tab =
     .accesskey = G
 main-context-menu-video-view-new-tab =
     .label = Video in neuem Tab öffnen
-    .accesskey = V
+    .accesskey = e
 main-context-menu-image-copy =
     .label = Grafik kopieren
     .accesskey = o
@@ -267,13 +298,13 @@ main-context-menu-audio-copy-location =
     .accesskey = o
 main-context-menu-image-copy-link =
     .label = Grafikadresse kopieren
-    .accesskey = o
+    .accesskey = d
 main-context-menu-video-copy-link =
     .label = Video-Adresse kopieren
-    .accesskey = o
+    .accesskey = d
 main-context-menu-audio-copy-link =
     .label = Audio-Adresse kopieren
-    .accesskey = o
+    .accesskey = d
 main-context-menu-image-save-as =
     .label = Grafik speichern unter…
     .accesskey = u
@@ -299,11 +330,11 @@ main-context-menu-audio-save-as =
     .label = Audio speichern unter…
     .accesskey = u
 main-context-menu-video-image-save-as =
-    .label = Bildschirmfoto speichern unter…
-    .accesskey = B
+    .label = Standbild speichern unter…
+    .accesskey = b
 main-context-menu-video-take-snapshot =
-    .label = Bildschirmfoto aufnehmen…
-    .accesskey = B
+    .label = Standbild aufnehmen…
+    .accesskey = b
 main-context-menu-video-email =
     .label = Video per E-Mail senden…
     .accesskey = n
@@ -344,9 +375,12 @@ main-context-menu-use-saved-password =
 
 main-context-menu-suggest-strong-password =
     .label = Starkes Passwort vorschlagen…
-    .accesskey = v
+    .accesskey = P
 main-context-menu-manage-logins =
     .label = Zugangsdaten verwalten…
+    .accesskey = v
+main-context-menu-manage-logins2 =
+    .label = Zugangsdaten verwalten
     .accesskey = v
 main-context-menu-keyword =
     .label = Ein Schlüsselwort für diese Suche hinzufügen…
@@ -386,7 +420,7 @@ main-context-menu-frame-view-info =
     .accesskey = I
 main-context-menu-print-selection =
     .label = Auswahl drucken
-    .accesskey = c
+    .accesskey = w
 main-context-menu-view-selection-source =
     .label = Auswahl-Quelltext anzeigen
     .accesskey = A

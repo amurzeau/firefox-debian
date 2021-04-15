@@ -240,6 +240,18 @@ search-one-offs-context-set-as-default-private =
 
 ## Bookmark Panel
 
+bookmark-panel-cancel =
+    .label = Haaytu
+    .accesskey = C
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Momtu Maantorol
+           *[other] Momtu Maantore { $count }
+        }
+    .accesskey = R
 bookmark-panel-show-editor-checkbox =
     .label = Hollu taƴtorde kisnugol
     .accesskey = 5
@@ -308,6 +320,11 @@ browser-window-close-button =
     .tooltiptext = Uddu
 
 ## Tab actions
+
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
 
 
 ## Bookmarks toolbar items
@@ -395,8 +412,6 @@ pointerlock-warning-no-domain = Ndee fiilannde nana ɗowa doborde maa. Ñoƴƴu 
 
 bookmarks-show-all-bookmarks =
     .label = Hollu Maantore Fof
-bookmarks-recent-bookmarks =
-    .value = Maantoraaɗe ko Ɓooyaani
 bookmarks-toolbar-chevron =
     .tooltiptext = Hollu maantore goɗɗe
 bookmarks-sidebar-content =
@@ -411,12 +426,6 @@ bookmarks-tools-sidebar-visibility =
     .label =
         { $isVisible ->
             [true] Suuɗ Palal Sawndo Maantore
-           *[other] Hollu Palal Maantore
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Suuɗ Palal Maantore
            *[other] Hollu Palal Maantore
         }
 bookmarks-tools-toolbar-visibility-menuitem =
@@ -448,10 +457,15 @@ bookmarks-toolbar-placeholder-button =
 
 library-bookmarks-menu =
     .label = Maantore
-library-bookmarks-bookmark-this-page =
-    .label = Maantoro Ngoo Hello
-library-bookmarks-bookmark-edit =
-    .label = Taƴto Ngol Maantorol
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Danndu e { -pocket-brand-name }
+    .tooltiptext = Danndu e { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
 
 ## More items
 
@@ -462,3 +476,12 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = Yoga e ojooji e widewooji ndee lowre ena kuutoroo topirde DRM, ɗum ena haɗa { -brand-short-name } waɗde heen won e geɗe.
+
+## Password save/update panel
+
+
+## Add-on removal warning
+
+
+## Remote / Synced tabs
+

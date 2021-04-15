@@ -88,7 +88,7 @@ urlbar-plugins-notification-anchor =
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Hantera delning av din kamera och/eller mikrofon med webbplatsen
 urlbar-autoplay-notification-anchor =
-    .tooltiptext = Öppna autoplay-panelen
+    .tooltiptext = Öppna panelen automatisk uppspelning
 urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Lagra data i beständig lagring
 urlbar-addons-notification-anchor =
@@ -264,11 +264,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Lägg till bokmärke
+bookmarks-edit-bookmark = Redigera bokmärke
+bookmark-panel-cancel =
+    .label = Avbryt
+    .accesskey = A
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Ta bort bokmärke
+           *[other] Ta bort { $count } bokmärken
+        }
+    .accesskey = T
 bookmark-panel-show-editor-checkbox =
     .label = Visa redigeraren när du sparar
     .accesskey = V
 bookmark-panel-done-button =
     .label = Klar
+bookmark-panel-save-button =
+    .label = Spara
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -288,6 +304,8 @@ identity-passive-loaded = Vissa komponenter av den här sidan är inte säkra (t
 identity-active-loaded = Du har stängt av skyddet på den här sidan.
 identity-weak-encryption = Den här sidan använder en svag kryptering.
 identity-insecure-login-forms = Inloggningar som anges på den här sidan kan äventyras.
+identity-permissions =
+    .value = Behörigheter
 identity-https-only-connection-upgraded = (uppgraderad till HTTPS)
 identity-https-only-label = Endast HTTPS-läge
 identity-https-only-dropdown-on =
@@ -299,8 +317,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Aktivera endast HTTPS-läge för den här webbplatsen om du vill att { -brand-short-name } ska uppgradera anslutningen när det är möjligt.
 identity-https-only-info-turn-off2 = Om sidan verkar trasig kanske du vill stänga av endast HTTPS-läge för att den här webbplatsen ska laddas om med osäker HTTP.
 identity-https-only-info-no-upgrade = Det gick inte att uppgradera anslutningen från HTTP.
-identity-permissions =
-    .value = Behörigheter
 identity-permissions-storage-access-header = Globala kakor
 identity-permissions-storage-access-hint = Dessa parter kan använda global kakor och webbplatsinformation medan du är på denna webbplats.
 identity-permissions-reload-hint = Du kan behöva ladda om sidan för att ändringarna ska verkställas.
@@ -348,16 +364,34 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Spelar
-browser-tab-audio-muted = Tyst
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = SPELAR
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-muted2 = TYST
 # This label should be written in all capital letters if your locale supports them.
-browser-tab-audio-blocked = AUTOPLAY BLOCKAD
+browser-tab-audio-blocked = AUTOMATISK UPPSPELNING BLOCKERAD
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = BILD-I-BILD
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] STÄNG AV LJUD
+       *[other] STÄNG AV LJUD ({ $count } FLIKAR)
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] SLÅ PÅ LJUD
+       *[other] SLÅ PÅ LJUD ({ $count } FLIKAR)
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] STARTA UPPSPELNING
+       *[other] STARTA UPPSPELNING ({ $count } FLIKAR)
+    }
 
 ## Bookmarks toolbar items
 
@@ -509,6 +543,13 @@ urlbar-result-action-tabtosearch-web = Sök med { $engine } direkt från adressf
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Sök i { $engine } direkt från adressfältet
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Kopiera
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -550,8 +591,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Visa alla bokmärken
-bookmarks-recent-bookmarks =
-    .value = Nyligen bokmärkt
 bookmarks-manage-bookmarks =
     .label = Hantera bokmärken
 bookmarks-recent-bookmarks-panel =
@@ -572,12 +611,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Dölj sidofältet Bokmärken
            *[other] Visa sidofältet Bokmärken
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Dölj bokmärkesfältet
-           *[other] Visa bokmärkesfältet
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -624,12 +657,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Bokmärken
-library-bookmarks-bookmark-this-page =
-    .label = Bokmärk denna sida
-library-bookmarks-bookmark-edit =
-    .label = Redigera bokmärket
 library-recent-activity-title =
     .value = Senaste aktivitet
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Spara till { -pocket-brand-name }
+    .tooltiptext = Spara till { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Tillägg och teman
+    .tooltiptext = Hantera dina tillägg och teman ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Inställningar
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Öppna inställningar ({ $shortcut })
+           *[other] Öppna inställningar
+        }
 
 ## More items
 
@@ -656,3 +708,9 @@ panel-save-update-password = Lösenord
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = Ta bort { $name }?
 addon-removal-abuse-report-checkbox = Rapportera detta tillägg till { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Hantera konto
+remote-tabs-sync-now = Synkronisera nu

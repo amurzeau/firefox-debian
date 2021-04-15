@@ -130,14 +130,14 @@ sandbox-sys-call-number = Sistem çağrısı
 sandbox-sys-call-args = Parametreler
 safe-mode-title = Güvenli kipi deneyin
 restart-in-safe-mode-label = Eklentileri devre dışı bırakıp yeniden başlat…
-troubleshoot-mode-title = Sorunları tanıla
+troubleshoot-mode-title = Sorunları tanılayın
 restart-in-troubleshoot-mode-label = Sorun giderme modu…
 clear-startup-cache-title = Başlangıç önbelleğini temizlemeyi deneyin
 clear-startup-cache-label = Başlangıç önbelleğini temizle…
 startup-cache-dialog-title = Başlangıç önbelleğini temizle
-startup-cache-dialog-body = Başlangıç önbelleğini temizlemek için { -brand-short-name } tarayıcınızı yeniden başlatın. Bu işlem, ayarlarınızı değiştirmez ve mevcut eklentilerinizi kaldırmaz.
+startup-cache-dialog-body = Başlangıç önbelleğini temizlemek için { -brand-short-name } tarayıcınızı yeniden başlatın. Bu işlem, ayarlarınızı değiştirmez ve mevcut uzantılarınızı kaldırmaz.
 startup-cache-dialog-title2 = Başlangıç önbelleğini temizlemek için { -brand-short-name } yeniden başlatılsın mı?
-startup-cache-dialog-body2 = Bu işlem, ayarlarınızı değiştirmez ve eklentilerinizi kaldırmaz.
+startup-cache-dialog-body2 = Bu işlem, ayarlarınızı değiştirmez ve uzantılarınızı kaldırmaz.
 restart-button-label = Yeniden başlat
 
 ## Media titles

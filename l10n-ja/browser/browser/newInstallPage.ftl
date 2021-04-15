@@ -25,8 +25,9 @@ support-link = プロファイルマネージャーを使用する - サポー�
 sync-header = ログインまたは { -fxaccount-brand-name } を作成
 sync-label = メールアドレスを入力
 sync-input =
-  .placeholder = メールアドレス
+    .placeholder = メールアドレス
 sync-button = 続行
 sync-terms = 進むと、<a data-l10n-name="terms">利用規約</a>と<a data-l10n-name="privacy">プライバシーに関する通知</a>に同意したと見なします。
 sync-first = { -sync-brand-name } の利用は初めてですか？ ログインするとあなたの情報を Firefox のインストール先すべてに同期できます。
+new-install-sync-first = 同期機能の利用は初めてですか？ あなたの情報を他にインストールしたすべての Firefox と同期するにはログインしてください。
 sync-learn = 詳細

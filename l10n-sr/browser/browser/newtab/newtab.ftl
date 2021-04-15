@@ -5,12 +5,12 @@
 
 ### Firefox Home / New Tab strings for about:home / about:newtab.
 
-newtab-page-title = Нови језичак
+newtab-page-title = Нова картица
 newtab-settings-button =
-    .title = Прилагодите страницу новог језичка
+    .title = Прилагодите страницу нове картице
 newtab-personalize-button-label = Персонализуј
-    .title = Персонализуј нови језичак
-    .aria-label = Персонализуј нови језичак
+    .title = Персонализуј нову картицу
+    .aria-label = Персонализуј нову картицу
 
 ## Search box component.
 
@@ -18,7 +18,21 @@ newtab-personalize-button-label = Персонализуј
 newtab-search-box-search-button =
     .title = Претражи
     .aria-label = Претражи
-newtab-search-box-search-the-web-text = Претражи веб
+newtab-search-box-search-the-web-text = Претражи интернет
+# Variables
+#  $engine (String): the name of the user's default search engine
+newtab-search-box-handoff-text = Претражите у претраживачу { $engine } или унесите адресу
+newtab-search-box-handoff-text-no-engine = Претражите или унесите адресу
+# Variables
+#  $engine (String): the name of the user's default search engine
+newtab-search-box-handoff-input =
+    .placeholder = Претражите у претраживачу { $engine } или унесите адресу
+    .title = Претражите у претраживачу { $engine } или унесите адресу
+    .aria-label = Претражите у претраживачу { $engine } или унесите адресу
+newtab-search-box-handoff-input-no-engine =
+    .placeholder = Претражите или унесите адресу
+    .title = Претражите или унесите адресу
+    .aria-label = Претражите или унесите адресу
 newtab-search-box-search-the-web-input =
     .placeholder = Претражи веб
     .title = Претражи веб
@@ -49,14 +63,14 @@ newtab-topsites-image-validation = Нисам успео да учитам сл�
 ## Top Sites - General form dialog buttons. These are verbs/actions.
 
 newtab-topsites-cancel-button = Откажи
-newtab-topsites-delete-history-button = Уклони из историјата
+newtab-topsites-delete-history-button = Избриши из историје
 newtab-topsites-save-button = Сачувај
-newtab-topsites-preview-button = Преглед
+newtab-topsites-preview-button = Прегледај
 newtab-topsites-add-button = Додај
 
 ## Top Sites - Delete history confirmation dialog.
 
-newtab-confirm-delete-history-p1 = Да ли сте сигурни да желите да обришете све посете ове странице из ваше историје?
+newtab-confirm-delete-history-p1 = Желите ли заиста да избришете све записе о овој страници из историје?
 # "This action" refers to deleting a page from history.
 newtab-confirm-delete-history-p2 = Ова радња се не може опозвати.
 
@@ -93,28 +107,28 @@ newtab-menu-open-new-private-window = Отвори у новом приватн�
 newtab-menu-dismiss = Уклони
 newtab-menu-pin = Закачи
 newtab-menu-unpin = Откачи
-newtab-menu-delete-history = Уклони из историјата
-newtab-menu-save-to-pocket = Сачувај на { -pocket-brand-name }
-newtab-menu-delete-pocket = Обриши из { -pocket-brand-name }-а
-newtab-menu-archive-pocket = Архивирај у { -pocket-brand-name }
+newtab-menu-delete-history = Избриши из историје
+newtab-menu-save-to-pocket = Сачувај у { -pocket-brand-name(case: "loc") }
+newtab-menu-delete-pocket = Избриши из { -pocket-brand-name(case: "gen") }
+newtab-menu-archive-pocket = Архивирај у { -pocket-brand-name(case: "loc") }
 newtab-menu-show-privacy-info = Наши спонзори и ваша приватност
 
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
 newtab-privacy-modal-button-done = Готово
-newtab-privacy-modal-button-manage = Управљајте подешавањима спонзорисаног садржаја
+newtab-privacy-modal-button-manage = Управљај спонзорисаним садржајем
 newtab-privacy-modal-header = Ваша приватност је битна.
 newtab-privacy-modal-paragraph-2 =
     Поред дељења занимљивих прича, такође вам приказујемо релевантне,
     пажљиво проверен садржаје одабраних спонзора. Будите сигурни, <strong>ваши подаци претраживања
     никада не остављају вашу личну { -brand-product-name } копију</strong> — ми их не видимо,
     као ни наши спонзори.
-newtab-privacy-modal-link = Сазнајте како ради приватност на новом језичку
+newtab-privacy-modal-link = Сазнајте више о приватности на новој картици
 
 ##
 
 # Bookmark is a noun in this case, "Remove bookmark".
-newtab-menu-remove-bookmark = Уклони забелешку
+newtab-menu-remove-bookmark = Уклони обележивач
 # Bookmark is a verb here.
 newtab-menu-bookmark = Забележи
 
@@ -129,11 +143,7 @@ newtab-menu-remove-download = Уклони из историје
 ## been downloaded. The intention behind "this action" is that it will show where the downloaded file exists on the file
 ## system for each operating system.
 
-newtab-menu-show-file =
-    { PLATFORM() ->
-        [macos] Прикажи у Finder-у
-       *[other] Отвори фасциклу са преузетим садржајем
-    }
+newtab-menu-show-file = Прикажи у фасцикли
 newtab-menu-open-file = Отвори датотеку
 
 ## Card Labels: These labels are associated to pages to give
@@ -142,9 +152,9 @@ newtab-menu-open-file = Отвори датотеку
 
 newtab-label-visited = Посећено
 newtab-label-bookmarked = Забележено
-newtab-label-removed-bookmark = Забелешка је уклоњена
+newtab-label-removed-bookmark = Обележивач је уклоњен
 newtab-label-recommended = У тренду
-newtab-label-saved = Сачувано у { -pocket-brand-name }
+newtab-label-saved = Сачувано у { -pocket-brand-name(case: "loc") }
 newtab-label-download = Преузето
 # This string is used in the story cards to indicate sponsored content
 # Variables:
@@ -162,7 +172,7 @@ newtab-section-menu-remove-section = Уклони одељак
 newtab-section-menu-collapse-section = Скупи одељак
 newtab-section-menu-expand-section = Прошири одељак
 newtab-section-menu-manage-section = Управљај одељком
-newtab-section-menu-manage-webext = Управљај екстензијама
+newtab-section-menu-manage-webext = Управљај додатком
 newtab-section-menu-add-topsite = Додај омиљени сајт
 newtab-section-menu-add-search-engine = Додај претраживач
 newtab-section-menu-move-up = Помери горе
@@ -174,11 +184,11 @@ newtab-section-menu-privacy-notice = Обавештење о приватнос�
 newtab-section-collapse-section-label =
     .aria-label = Скупи одељак
 newtab-section-expand-section-label =
-    .aria-label = Рашири одељак
+    .aria-label = Прошири одељак
 
 ## Section Headers.
 
-newtab-section-header-topsites = Омиљени сајтови
+newtab-section-header-topsites = Популарни сајтови
 newtab-section-header-highlights = Истакнуто
 newtab-section-header-recent-activity = Недавна активност
 # Variables:
@@ -187,7 +197,7 @@ newtab-section-header-pocket = Предложио { $provider }
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
-newtab-empty-section-highlights = Почните са коришћењем веба а ми ћемо вам овде приказивати неке од одличних чланака, видео записа и других страница које сте скоро посетили.
+newtab-empty-section-highlights = Почните да претражујете интернет а ми ћемо вам овде приказати одличне чланке, видео-снимке и друге странице које сте недавно посетили или обележили.
 # Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 # Variables:
 #  $provider (String): Name of the content provider for this section, e.g "Pocket".
@@ -208,14 +218,14 @@ newtab-discovery-empty-section-topstories-timed-out = Упс! Нисмо мог�
 newtab-pocket-read-more = Популарне теме:
 newtab-pocket-more-recommendations = Још препорука
 newtab-pocket-learn-more = Сазнајте више
-newtab-pocket-cta-button = Преузмите { -pocket-brand-name }
-newtab-pocket-cta-text = Сачувајте приче које волите у { -pocket-brand-name } и напуните свој ум фасцинантним причама.
+newtab-pocket-cta-button = Преузми { -pocket-brand-name(case: "acc") }
+newtab-pocket-cta-text = Сачувајте приче које вам се свиђају у { -pocket-brand-name(case: "loc") } и уживајте у врхунском штиву.
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.
 
-newtab-error-fallback-info = Упс, дошло је до грешке приликом учитавања овог садржаја.
-newtab-error-fallback-refresh-link = Освежите страницу да покушате поново.
+newtab-error-fallback-info = Дошло је до грешке при учитавању овог садржаја.
+newtab-error-fallback-refresh-link = Освежите страницу да бисте покушали поново.
 
 ## Customization Menu
 
@@ -228,8 +238,8 @@ newtab-custom-row-selector =
        *[other] { $num } редова
     }
 newtab-custom-sponsored-sites = Спонзорисане пречице
-newtab-custom-pocket-title = Препоручио { -pocket-brand-name }
-newtab-custom-pocket-subtitle = Изузетан садржај који је уредио { -pocket-brand-name }, део { -brand-product-name } породице
+newtab-custom-pocket-title = Препоруке из { -pocket-brand-name(case: "gen") }
+newtab-custom-pocket-subtitle = Изузетан садржај који уређује { -pocket-brand-name }, део породице { -brand-product-name }
 newtab-custom-pocket-sponsored = Спонзорисане приче
 newtab-custom-recent-title = Недавна активност
 newtab-custom-recent-subtitle = Избор недавних сајтова и садржаја
@@ -239,5 +249,5 @@ newtab-custom-close-button = Затвори
 # expresses the idea of "a small message, shortened from something else,
 # and non-essential but also not entirely trivial and useless.
 newtab-custom-snippets-title = Исечци
-newtab-custom-snippets-subtitle = Савети и новости од { -vendor-short-name }-а и { -brand-product-name }-а
+newtab-custom-snippets-subtitle = Савети и новости везани за { -brand-product-name(case: "acc") } и организацију { -vendor-short-name }
 newtab-custom-settings = Управљај подешавањима

@@ -233,6 +233,18 @@ search-one-offs-context-set-as-default-private =
 
 ## Bookmark Panel
 
+bookmark-panel-cancel =
+    .label = Duyichin'
+    .accesskey = C
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Guxun' sa raj sun nicho' doj
+           *[other] guxun' { $count } sa rajsun nichro'
+        }
+    .accesskey = R
 bookmark-panel-show-editor-checkbox =
     .label = Digun' sa nagi'iaj 'ngà na'nïnj so'
     .accesskey = S
@@ -299,6 +311,11 @@ browser-window-close-button =
     .tooltiptext = Narán
 
 ## Tab actions
+
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
 
 
 ## Bookmarks toolbar items
@@ -387,8 +404,6 @@ pointerlock-warning-no-domain = Ñaj na nikaj ñu'unj si punterôt. Ga'ui' Esc d
 
 bookmarks-show-all-bookmarks =
     .label = Ni'io' sa raj sun nichro' doj
-bookmarks-recent-bookmarks =
-    .value = Markador nakà doj
 bookmarks-toolbar-chevron =
     .tooltiptext = Ni'io' a'ngò da'j markador
 bookmarks-sidebar-content =
@@ -404,12 +419,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Gachi hui' dukuán markador
            *[other] Ni'io riña panel markador
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Gachrī hui' dukuâ sa raj sun'
-           *[other] Ni'io riña sa gara sun'
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -447,10 +456,15 @@ bookmarks-toolbar-placeholder-button =
 
 library-bookmarks-menu =
     .label = Sa raj sun nichrò' doj
-library-bookmarks-bookmark-this-page =
-    .label = Sa raj sun nichrà' doj pagina na
-library-bookmarks-bookmark-edit =
-    .label = Nagi'io' sa arajsun nichrò' doj
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Nanín sa'aj riña { -pocket-brand-name }
+    .tooltiptext = Nanín sa'aj riña { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
 
 ## More items
 
@@ -461,3 +475,12 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = Hua 'ngo sa achráa nej si video ni rajsun ma software DRM, ga'ue dure'ej { -brand-short-name } sa 'io' 'ngàj.
+
+## Password save/update panel
+
+
+## Add-on removal warning
+
+
+## Remote / Synced tabs
+

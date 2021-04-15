@@ -342,6 +342,7 @@ key-accept-warning = Venkite priimti nepatikrintą raktą. Norėdami patikrinti 
 # Strings enigmailMsgComposeOverlay.js
 cannot-use-own-key-because = Nepavyko išsiųsti pranešimo, nes yra problema su jūsų asmeniniu raktu. { $problem }
 cannot-encrypt-because-missing = Nepavyko išsiųsti šio pranešimo su abipusiu šifravimu, nes kilo problemų su šių gavėjų raktais: { $problem }
+window-locked = Kūrimo langas yra užrakintas; siuntimas atšauktas
 # Strings in mimeDecrypt.jsm
 mime-decrypt-encrypted-part-attachment-label = Šifruota pranešimo dalis
 # Strings in keyserver.jsm
@@ -442,6 +443,7 @@ no-key-found = Nepavyko rasti jokių raktų, atitinkančių nurodytus paieškos 
 fail-key-extract = Klaida - nepavyko išgauti rakto
 # Strings used in keyRing.jsm
 fail-cancel = Klaida - rakto gavimą atšaukė vartotojas
+import-key-confirm = Ar importuoti į pranešimą įdėtą(-us) viešąjį raktą(-us)?
 fail-key-import = Klaida - nepavyko importuoti rakto
 # Strings used in trust.jsm
 key-valid-unknown = nežinomas
@@ -468,6 +470,7 @@ gen-going = Raktai jau generuojami!
 expiry-too-short = Jūsų raktas turi galioti mažiausiai vieną dieną.
 expiry-too-long = Negalite sukurti rakto, kurio galiojimo laikas baigsis daugiau nei po 100 metų.
 key-confirm = Generuoti viešą ir slaptąjį „{ $id }“ raktą?
+key-man-button-generate-key = &Sukurti raktą
 key-abort = Nutraukti raktų generavimą?
 key-man-button-generate-key-abort = &Nutraukti raktų generavimą?
 key-man-button-generate-key-continue = &Tęsti raktų generavimą
@@ -485,9 +488,15 @@ send-aborted = Siuntimas nutrauktas.
 key-not-found = Raktas „{ $key }“ nerastas
 key-revoked = Raktas „{ $key }“ buvo atšauktas
 key-expired = Raktas „{ $key }“ nebegalioja
+msg-compose-internal-error = Įvyko vidinė klaida.
+keys-to-export = Pasirinkite „OpenPGP“ raktą įterpimui
+msg-compose-cannot-save-draft = Klaida išsaugant juodraštį
 msg-compose-partially-encrypted-short = Nenutekinkite neskelbtinos informacijos - tik dalis pranešimo užšifruota.
 save-attachment-header = Išsaugoti iššifruotą priedą
+do-import-one = Importuoti „{ $name }“ ({ $id })?
 cant-import = Importuojant viešąjį raktą įvyko klaida
+unverified-reply = Įtraukta pranešimo dalis (atsakymas) tikriausiai buvo modifikuota
+key-in-message-body = Pranešimo tekste rastas raktas. Norėdami jį importuoti, pasirinkite „Importuoti raktą“
 sig-mismatch = Klaida - neatitinka parašas
 invalid-email = Klaida - netinkamas(-i) elektroninio pašto adresas (-ai)
 dlg-button-view = &Peržiūrėti
@@ -496,10 +505,15 @@ not-required = Klaida - šifruoti nereikia
 # Strings used in windows.jsm
 no-photo-available = Nuotraukos nėra
 debug-log-title = „OpenPGP“ derinimo žurnalas
+# Strings used in dialog.jsm
+repeat-prefix = Šis įspėjimas pasikartos { $count }
 repeat-suffix-singular = daugiau laiko.
 repeat-suffix-plural = daugiau kartų.
 no-repeat = Šis perspėjimas daugiau nebus rodomas.
 dlg-keep-setting = Įsiminti mano atsakymą ir daugiau nebeklausti
+dlg-button-ok = &Gerai
+dlg-button-close = &Užverti
+dlg-button-cancel = &Atsisakyti
 dlg-no-prompt = Šio dialogo daugiau neberodyti.
 enig-prompt = „OpenPGP“ pranešimas
 enig-confirm = „OpenPGP“ patvirtinimas

@@ -11,13 +11,15 @@
 
 policy-3rdparty = Imposta criteri a cui le estensioni basate su tecnologia WebExtension possono accedere via chrome.storage.managed.
 
+policy-AllowedDomainsForApps = Definisce i domini con cui è consentito accedere a Google Workspace.
+
 policy-AppAutoUpdate = Attiva o disattiva aggiornamenti automatici dell’applicazione.
 
 policy-AppUpdateURL = Imposta URL personalizzato per aggiornamento applicazione.
 
 policy-Authentication = Configura autenticazione integrata per i siti in cui è supportata.
 
-policy-BackgroundAppUpdate = Attiva o disattiva il sistema di aggiornamento in background utilizzato per aggiornare il browser quando non è in esecuzione.
+policy-BackgroundAppUpdate2 = Attiva o disattiva il sistema di aggiornamento in background.
 
 policy-BlockAboutAddons = Blocca accesso al gestore componenti aggiuntivi (about:addons).
 
@@ -177,6 +179,8 @@ policy-SearchEngines = Configura le impostazioni relative ai motori di ricerca. 
 policy-SearchSuggestEnabled = Attiva o disattiva suggerimenti di ricerca.
 
 policy-SecurityDevices = Installa moduli PKCS #11.
+
+policy-ShowHomeButton = Visualizza il pulsante Pagina iniziale nella barra degli strumenti.
 
 policy-SSLVersionMax = Imposta la versione massima di SSL.
 

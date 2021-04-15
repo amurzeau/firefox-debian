@@ -11,10 +11,11 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = WebExtensions이 chrome.storage.managed를 통해 액세스할 수 있는 정책을 설정합니다.
-policy-AppAutoUpdate = 응용 프로그램 자동 업데이트를 사용하거나 사용하지 않게 합니다.
+policy-AllowedDomainsForApps = Google Workspace에 액세스할 수 있는 도메인을 정의합니다.
+policy-AppAutoUpdate = 애플리케이션 자동 업데이트를 사용하거나 사용하지 않게 합니다.
 policy-AppUpdateURL = 커스텀 앱 업데이트 URL을 설정합니다.
 policy-Authentication = 통합 인증을 지원하는 웹 사이트를 위한 설정을 합니다.
-policy-BackgroundAppUpdate = 브라우저가 실행 중이지 않을 때 업데이트하는 백그라운드 업데이터를 사용하거나 사용하지 않게 합니다.
+policy-BackgroundAppUpdate2 = 백그라운드 업데이터를 사용하거나 사용하지 않게 합니다.
 policy-BlockAboutAddons = 부가 기능 관리자(about:addons) 접근을 차단합니다.
 policy-BlockAboutConfig = about:config 페이지 접근을 차단합니다.
 policy-BlockAboutProfiles = about:profiles 페이지 접근을 차단합니다.
@@ -65,7 +66,7 @@ policy-ExtensionSettings = 확장 기능 설치의 모든 측면을 관리합니
 policy-ExtensionUpdate = 확장 기능 자동 업데이트를 사용하거나 사용하지 않게 합니다.
 policy-FirefoxHome = Firefox 홈을 구성합니다.
 policy-FlashPlugin = 플래시 플러그인의 사용을 허용하거나 거부합니다.
-policy-Handlers = 기본 응용 프로그램 핸들러를 구성합니다.
+policy-Handlers = 기본 애플리케이션 핸들러를 구성합니다.
 policy-HardwareAcceleration = False 값이면 하드웨어 가속 기능을 끕니다.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = 홈페이지를 설정하고 선택적으로 잠급니다.
@@ -100,13 +101,14 @@ policy-PopupBlocking = 기본으로 특정 웹 사이트가 팝업을 보여주�
 policy-Preferences = 설정의 하위 집합에 대한 값을 설정하고 잠급니다.
 policy-PromptForDownloadLocation = 다운로드시 파일 저장 위치를 물어봅니다.
 policy-Proxy = 프록시 설정을 구성합니다.
-policy-RequestedLocales = 프로그램의 요청된 로케일의 목록을 설정 순서로 설정합니다.
+policy-RequestedLocales = 애플리케이션의 요청된 로케일의 목록을 설정 순서로 설정합니다.
 policy-SanitizeOnShutdown2 = 종료시 탐색 데이터를 지웁니다.
 policy-SearchBar = 검색 바의 기본 위치를 설정합니다. 사용자가 다시 재설정을 할 수 있습니다.
 policy-SearchEngines = 검색 엔진 설정을 구성합니다. 이 정책은 확장 지원 버전(ESR)에서만 가능합니다.
 policy-SearchSuggestEnabled = 검색 제안을 사용하거나 사용하지 않게 합니다.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = PKCS #11 모듈을 설치합니다.
+policy-ShowHomeButton = 도구 모음에 홈 버튼을 표시합니다.
 policy-SSLVersionMax = 최대 SSL 버전을 설정합니다.
 policy-SSLVersionMin = 최소 SSL 버전을 설정합니다.
 policy-SupportMenu = 도움말 메뉴에 사용자 지정 지원 메뉴 항목을 추가합니다.

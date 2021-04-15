@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = 正在下载 { -brand-shorter-name } 更新
+appmenuitem-update-banner2 =
+    .label-update-downloading = 正在下载 { -brand-shorter-name } 更新
+    .label-update-available = 有可用更新 — 立即下载
+    .label-update-manual = 有可用更新 — 立即下载
+    .label-update-unsupported = 无法更新
+    .label-update-restart = 有可用更新 — 立即重启
 appmenuitem-protection-dashboard-title = 保护信息面板
 appmenuitem-customize-mode =
     .label = 定制…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = 密码
 appmenuitem-extensions-and-themes =
     .label = 扩展和主题
+appmenuitem-addons-and-themes =
+    .label = 扩展和主题
 appmenuitem-find-in-page =
     .label = 在页面中查找…
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = 关闭应用程序菜单
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] 退出
+           *[other] 退出
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = 打开应用程序菜单
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = 关闭应用程序菜单
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = 立即同步
-appmenuitem-fxa-toolbar-sync-now =
-    .label = 立即同步
-    .value = 立即同步
+appmenu-remote-tabs-sign-into-sync =
+    .label = 登录以同步…
+appmenu-remote-tabs-turn-on-sync =
+    .label = 开启同步…
+appmenuitem-fxa-toolbar-sync-now2 = 立即同步
 appmenuitem-fxa-manage-account = 管理账户
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = 上次同步：{ $time }
     .label = 上次同步：{ $time }
 appmenu-fxa-sync-and-save-data =
     .value = 同步并保存数据
+appmenu-fxa-sync-and-save-data2 = 同步并保存数据
 appmenu-fxa-signed-in-label = 登录
 appmenu-fxa-setup-sync =
     .label = 开启同步...
@@ -133,29 +157,17 @@ appmenu-help-header =
 appmenu-about =
     .label = 关于 { -brand-shorter-name }
     .accesskey = A
-appmenu-help-product =
-    .label = { -brand-shorter-name } 帮助
-    .accesskey = H
-appmenu-help-show-tour =
-    .label = { -brand-shorter-name } 导览
-    .accesskey = o
-appmenu-help-import-from-another-browser =
-    .label = 从其他浏览器导入…
-    .accesskey = I
-appmenu-help-keyboard-shortcuts =
-    .label = 键盘快捷键
-    .accesskey = K
 appmenu-get-help =
     .label = 获取帮助
     .accesskey = H
 appmenu-help-troubleshooting-info =
     .label = 排障信息
     .accesskey = T
+appmenu-help-taskmanager =
+    .label = 任务管理器
 appmenu-help-more-troubleshooting-info =
     .label = 更多排障信息
     .accesskey = T
-appmenu-help-taskmanager =
-    .label = 任务管理器
 appmenu-help-report-site-issue =
     .label = 反馈网站问题…
 appmenu-help-feedback-page =
@@ -175,8 +187,8 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = 排障模式
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = 排障模式…
     .accesskey = M
 appmenu-help-exit-troubleshoot-mode =
     .label = 关闭排障模式
@@ -192,13 +204,10 @@ appmenu-help-not-deceptive =
     .label = 这不是诈骗网站…
     .accesskey = d
 
-##
-
-appmenu-help-check-for-update =
-    .label = 检查更新…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = 定制工具栏…
+appmenu-taskmanager =
+    .label = 任务管理器
 appmenu-developer-tools-subheader = 浏览器工具

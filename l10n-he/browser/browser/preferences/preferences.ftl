@@ -28,6 +28,18 @@ search-input-box =
             [windows] חיפוש באפשרויות
            *[other] חיפוש בהעדפות
         }
+settings-page-title = הגדרות
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = חיפוש בהגדרות
 managed-notice = הדפדפן שלך מנוהל על־ידי הארגון שלך.
 category-list =
     .aria-label = קטגוריות
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = סנכרון
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = ניסויים של { -brand-short-name }
 category-experimental =
     .tooltiptext = ניסויים של { -brand-short-name }
 pane-experimental-subtitle = נא להמשיך בזהירות
 pane-experimental-search-results-header = ניסויים של { -brand-short-name }: נא להמשיך בזהירות
 pane-experimental-description = שינוי העדפות התצורה המתקדמות עשוי להשפיע על הביצועים או אבטחה של { -brand-short-name }.
+pane-experimental-description2 = שינוי הגדרות התצורה המתקדמות עשוי להשפיע על הביצועים או אבטחה של { -brand-short-name }.
 pane-experimental-reset =
     .label = שחזור ברירות מחדל
     .accesskey = ש
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] אין תוצאות באפשרויות לביטוי „<span data-l10n-name="query"></span>“, עמך הסליחה.
        *[other] אין תוצאות בהעדפות לביטוי „<span data-l10n-name="query"></span>“, עמך הסליחה.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = אין תוצאות בהגדרות לביטוי ״<span data-l10n-name="query"></span>״, עמך הסליחה.
 search-results-help-link = לעזרה נוספת, נא לפנות אל <a data-l10n-name="url">אתר התמיכה של { -brand-short-name }</a>
 
 ## General Section
@@ -369,6 +387,9 @@ update-application-check-choose =
 update-application-manual =
     .label = לעולם לא לבדוק לעדכונים (לא מומלץ)
     .accesskey = ל
+update-application-background-enabled =
+    .label = כאשר { -brand-short-name } אינו פועל
+    .accesskey = כ
 update-application-warning-cross-user-setting = הגדרה זו תחול על כל חשבונות Windows ופרופילי { -brand-short-name } המשתמשים בהתקנה זו של { -brand-short-name }.
 update-application-use-service =
     .label = שימוש בשירות רקע לשם התקנת עדכונים
@@ -380,6 +401,15 @@ update-setting-write-failure-title = שגיאה בשמירת העדפות עדכ
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
     ‏{ -brand-short-name } נתקל בשגיאה ולא שמר את השינוי הזה. נא לשים לב כי שינוי ההגדרה של העדפת העדכון דורשת הרשאה לכתוב לקובץ שלהלן. ייתכן שתהיה לך או למנהל מערכת אפשרות לתקן את השגיאה על־ידי הענקת שליטה מלאה לקבוצה 'משתמשים' עבור קובץ זה.
+    
+    לא ניתן לכתוב לקובץ: { $path }
+update-setting-write-failure-title2 = שגיאה בשמירת הגדרות העדכון
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    ‏{ -brand-short-name } נתקל בשגיאה ולא שמר את השינוי הזה. נא לשים לב כי שינוי הגדרת העדכון דורשת הרשאת כתיבה לקובץ שלהלן. ייתכן שתהיה לך או למנהל מערכת אפשרות לתקן את השגיאה על־ידי הענקת שליטה מלאה לקבוצה 'משתמשים' עבור קובץ זה.
     
     לא ניתן לכתוב לקובץ: { $path }
 update-in-progress-title = העדכון בתהליך
@@ -579,6 +609,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = הצגת הצעות חיפוש בחלונות פרטיים
 suggestions-addressbar-settings-generic = שינוי העדפות עבור הצעות אחרות של שורת הכתובת
+suggestions-addressbar-settings-generic2 = שינוי הגדרות עבור הצעות אחרות של שורת הכתובת
 search-suggestions-cant-show = הצעות חיפוש לא יופיעו בתוצאות סרגל המיקום מכיוון שהגדרת ש־{ -brand-short-name } לעולם לא לזכור היסטוריה.
 search-one-click-header = מנועי חיפוש בלחיצה אחת
 search-one-click-header2 = קיצורי דרך לחיפוש
@@ -613,6 +644,8 @@ containers-back-button =
             [windows] חזרה לאפשרויות
            *[other] חזרה להעדפות
         }
+containers-back-button2 =
+    .aria-label = חזרה להגדרות
 containers-header = מגירת לשוניות
 containers-add-button =
     .label = הוספת מגירה חדשה
@@ -622,6 +655,8 @@ containers-new-tab-check =
     .accesskey = ב
 containers-preferences-button =
     .label = העדפות
+containers-settings-button =
+    .label = הגדרות
 containers-remove-button =
     .label = הסרה
 
@@ -633,6 +668,10 @@ sync-signedout-description = סנכרון הסימניות, ההיסטוריה, 
 sync-signedout-account-signin2 =
     .label = התחברות אל { -sync-brand-short-name }…
     .accesskey = ה
+sync-signedout-description2 = סנכרון הסימניות, ההיסטוריה, הלשוניות, הססמאות, ההרחבות וההגדרות בין כל המכשירים שלך.
+sync-signedout-account-signin3 =
+    .label = כניסה כדי לסנכרן
+    .accesskey = ס
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -672,6 +711,10 @@ prefs-sync-setup =
     .label = הגדרת { -sync-brand-short-name }…
     .accesskey = ג
 prefs-sync-offer-setup-label = סנכרון הסימניות, ההיסטוריה, הלשוניות, הססמאות, ההרחבות, וההעדפות בין כל המכשירים שלך.
+prefs-sync-turn-on-syncing =
+    .label = הפעלת סנכרון…
+    .accesskey = ס
+prefs-sync-offer-setup-label2 = סנכרון הסימניות, ההיסטוריה, הלשוניות, הססמאות, ההרחבות וההגדרות בין כל המכשירים שלך.
 prefs-sync-now =
     .labelnotsyncing = סנכרון כעת
     .accesskeynotsyncing = ס
@@ -692,6 +735,7 @@ sync-currently-syncing-prefs =
         [windows] אפשרויות
        *[other] העדפות
     }
+sync-currently-syncing-settings = הגדרות
 sync-change-options =
     .label = שינוי…
     .accesskey = ש
@@ -737,6 +781,10 @@ sync-engine-prefs =
             [windows] אפשרויות
            *[other] העדפות
         }
+    .tooltiptext = הגדרות כלליות, פרטיות ואבטחה ששינית
+    .accesskey = ת
+sync-engine-settings =
+    .label = הגדרות
     .tooltiptext = הגדרות כלליות, פרטיות ואבטחה ששינית
     .accesskey = ת
 
@@ -1147,6 +1195,11 @@ space-alert-under-5gb-ok-button =
     .label = בסדר, הבנתי
     .accesskey = ב
 space-alert-under-5gb-message = ל־{ -brand-short-name } אוזל שטח הדיסק. יתכן שנתוני אתרים לא יוצגו כשורה. ניתן לבקר בקישור של “מידע נוסף” כדי לייעל את אופן השימוש בדיסק לחוויית גלישה טובה יותר.
+space-alert-over-5gb-settings-button =
+    .label = פתיחת הגדרות
+    .accesskey = ה
+space-alert-over-5gb-message2 = <strong>ל־{ -brand-short-name } אוזל שטח הדיסק.</strong> יתכן שתכני אתרים לא יוצגו כשורה. ניתן למחוק נתונים שמורים בהגדרות > פרטיות ואבטחה > עוגיות ונתוני אתרים.
+space-alert-under-5gb-message2 = <strong>ל־{ -brand-short-name } אוזל שטח הדיסק.</strong> יתכן שנתוני אתרים לא יוצגו כשורה. ניתן לבקר בקישור של “מידע נוסף” כדי לייעל את אופן השימוש בדיסק לחוויית גלישה טובה יותר.
 
 ## Privacy Section - HTTPS-Only
 

@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = Pengaturan
 menu-application-services =
     .label = Layanan
 menu-application-hide-this =
@@ -252,14 +254,17 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Masuk ke { -brand-product-name }…
     .accesskey = M
-menu-tools-extensions =
-    .label = Ekstensi dan Tema
-    .accesskey = E
+menu-tools-addons-and-themes =
+    .label = Pengaya dan Tema
+    .accesskey = P
 menu-tools-fxa-sign-in2 =
     .label = Masuk
     .accesskey = M
 menu-tools-turn-on-sync =
     .label = Aktifkan { -sync-brand-short-name }…
+    .accesskey = A
+menu-tools-turn-on-sync2 =
+    .label = Aktifkan Sinkronisasi…
     .accesskey = A
 menu-tools-sync-now =
     .label = Sinkronkan Sekarang
@@ -270,12 +275,25 @@ menu-tools-fxa-re-auth =
 menu-tools-web-developer =
     .label = Pengembang Web
     .accesskey = W
+menu-tools-browser-tools =
+    .label = Alat Peramban
+    .accesskey = A
+menu-tools-task-manager =
+    .label = Pengelola Tugas
+    .accesskey = P
 menu-tools-page-source =
     .label = Kode Sumber Laman
     .accesskey = S
 menu-tools-page-info =
     .label = Informasi Laman
     .accesskey = I
+menu-settings =
+    .label = Pengaturan
+    .accesskey =
+        { PLATFORM() ->
+            [windows] P
+           *[other] P
+        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -286,13 +304,6 @@ menu-preferences =
         { PLATFORM() ->
             [windows] g
            *[other] g
-        }
-menu-settings =
-    .label = Pengaturan
-    .accesskey =
-        { PLATFORM() ->
-            [windows] P
-           *[other] P
         }
 menu-tools-layout-debugger =
     .label = Debugger Tata Letak
@@ -306,15 +317,6 @@ menu-window-bring-all-to-front =
     .label = Tampilkan Semua ke Latar Depan
 
 ## Help Menu
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
 
 
 # NOTE: For Engineers, any additions or changes to Help menu strings should
@@ -346,11 +348,11 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Informasi Pemecahan Masalah…
     .accesskey = M
+menu-help-taskmanager =
+    .label = Pengelola Tugas
 menu-help-more-troubleshooting-info =
     .label = Informasi Pemecahan Masalah Lebih Lanjut
     .accesskey = I
-menu-help-taskmanager =
-    .label = Pengelola Tugas
 menu-help-report-site-issue =
     .label = Laporkan Masalah Situs…
 menu-help-feedback-page =
@@ -362,9 +364,9 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Mulai Ulang dengan Pengaya Diaktifkan
     .accesskey = n
-menu-help-enter-troubleshoot-mode =
-    .label = Mode Pemecahan Masalah
-    .accesskey = M
+menu-help-enter-troubleshoot-mode2 =
+    .label = Mode Pemecahan Masalah…
+    .accesskey = P
 menu-help-exit-troubleshoot-mode =
     .label = Nonaktifkan Mode Pemecahan Masalah
     .accesskey = N
@@ -376,6 +378,3 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Ini bukan situs tipuan…
     .accesskey = d
-menu-help-check-for-update =
-    .label = Periksa Versi Baru…
-    .accesskey = V

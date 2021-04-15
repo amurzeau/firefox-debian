@@ -34,6 +34,9 @@ sidebar-preferences-button-title =
             [windows] Επιλογές { -brand-short-name }
            *[other] Προτιμήσεις { -brand-short-name }
         }
+addons-settings-button = Ρυθμίσεις { -brand-short-name }
+sidebar-settings-button-title =
+    .title = Ρυθμίσεις { -brand-short-name }
 show-unsigned-extensions-button =
     .label = Δεν ήταν δυνατή η επαλήθευση ορισμένων πρόσθετων
 show-all-extensions-button =
@@ -265,12 +268,10 @@ header-back-button =
 # Explanatory introduction to the list of recommended add-ons. The action word
 # ("recommends") in the final sentence is a link to external documentation.
 discopane-intro =
-    Οι επεκτάσεις και τα θέματα είναι σαν εφαρμογές για το πρόγραμμα περιήγησής σας και σας επιτρέπουν
-    να προστατεύετε τους κωδικούς πρόσβασής σας, να κάνετε λήψη βίντεο, να βρίσκετε προσφορές, να αποκλείσετε ενοχλητικές διαφημίσεις, να αλλάξετε
-    την εμφάνιση του προγράμματος περιήγησής σας και πολλά άλλα. Αυτά τα μικρά προγράμματα
-    αναπτύσσονται συνήθως από τρίτους. Ορίστε μια συλλογή που το { -brand-product-name }
-    <a data-l10n-name="learn-more-trigger">προτείνει</a> για εξαιρετική
-    ασφάλεια, επιδόσεις και λειτουργικότητα.
+    Οι επεκτάσεις και τα θέματα αποτελούν μικρές εφαρμογές για το πρόγραμμα περιήγησής σας και μπορούν να
+    χρησιμοποιηθούν για την προστασία των κωδικών πρόσβασής σας, τη λήψη βίντεο, την εύρεση προσφορών,
+    τη φραγή διαφημίσεων, την αλλαγή της εμφάνισης του προγράμματος περιήγησής σας και πολλά άλλα. Οι
+    μικρές αυτές εφαρμογές αυτές αναπτύσσονται συνήθως από τρίτους. Ορίστε μια <a data-l10n-name="learn-more-trigger">προτεινόμενη</a> συλλογή από το { -brand-product-name } για εξαιρετική ασφάλεια, επιδόσεις και λειτουργικότητα.
 # Notice to make user aware that the recommendations are personalized.
 discopane-notice-recommendations =
     Μερικές από αυτές τις προτάσεις είναι εξατομικευμένες. Βασίζονται σε άλλες
@@ -382,9 +383,6 @@ addon-detail-private-browsing-disallow = Απόρριψη
 addon-badge-recommended2 =
     .title = Το { -brand-product-name } προτείνει μόνο επεκτάσεις που πληρούν τα πρότυπα ασφαλείας και επιδόσεών μας
     .aria-label = { addon-badge-recommended2.title }
-addon-badge-line2 =
-    .title = Αυτή είναι μια επίσημη επέκταση που αναπτύχθηκε από τους δημιουργούς του { -brand-product-name }
-    .aria-label = { addon-badge-line2.title }
 # We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =

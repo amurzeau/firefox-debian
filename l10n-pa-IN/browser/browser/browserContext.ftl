@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = ਇੱਕ ਪਿਛਲੇ ਸਫ਼ੇ 'ਤੇ ਜਾਓ ({ $shortcut })
     .aria-label = ਪਿੱਛੇ
     .accesskey = B
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = ਪਿੱਛੇ
+    .accesskey = B
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = ਇੱਕ ਸਫ਼ੇ 'ਤੇ ਅੱਗੇ ਜਾਓ ({ $shortcut })
     .aria-label = ਅੱਗੇ
     .accesskey = F
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = ਅੱਗੇ
+    .accesskey = F
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = ਮੁੜ ਲੋਡ ਕਰੋ
     .accesskey = R
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = ਮੁੜ ਲੋਡ ਕਰੋ
+    .accesskey = R
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -63,6 +75,10 @@ toolbar-button-reload =
 
 main-context-menu-stop =
     .aria-label = ਰੋਕੋ
+    .accesskey = S
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = ਰੋਕੋ
     .accesskey = S
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
@@ -86,6 +102,18 @@ main-context-menu-bookmark-add =
     .aria-label = ਇਹ ਸਫ਼ੇ ਨੂੰ ਬੁੱਕਮਾਰਕ ਕਰੋ
     .accesskey = m
     .tooltiptext = ਇਹ ਸਫ਼ੇ ਨੂੰ ਬੁੱਕਮਾਰਕ ਕਰੋ
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = ਸਫ਼ਾ ਬੁੱਕਮਾਰਕ ਕਰੋ
+    .accesskey = m
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = ਬੁੱਕਮਾਰਕ ਨੂੰ ਸੋਧੋ
+    .accesskey = m
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -120,6 +148,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = ਇਹ ਲਿੰਕ ਨੂੰ ਬੁੱਕਮਾਰਕ ਕਰੋ
     .accesskey = L
+main-context-menu-bookmark-link =
+    .label = ਲਿੰਕ ਨੂੰ ਬੁੱਕਮਾਰਕ ਕਰੋ
+    .accesskey = B
 main-context-menu-save-link =
     .label = …ਲਿੰਕ ਨੂੰ ਇੰਝ ਸੰਭਾਲੋ
     .accesskey = k
@@ -131,12 +162,20 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = ਈਮੇਲ ਐਡਰੈੱਸ ਨੂੰ ਕਾਪੀ ਕਰੋ
     .accesskey = E
 main-context-menu-copy-link =
     .label = ਲਿੰਕ ਟਿਕਾਣੇ ਨੂੰ ਕਾਪੀ ਕਰੋ
     .accesskey = a
+main-context-menu-copy-link-simple =
+    .label = ਲਿੰਕ ਕਾਪੀ ਕਰੋ
+    .accesskey = L
 
 ## Media (video/audio) controls
 ##
@@ -179,6 +218,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = ਨ੍ਹੇਰੀ ਵਾਂਗ (2×)
     .accesskey = L
+main-context-menu-media-play-speed-2 =
+    .label = ਤੇਜ਼
+    .accesskey = d
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = ਲੂਪ
     .accesskey = L
@@ -206,6 +258,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = ਤਸਵੀਰ-‘ਚ-ਤਸਵੀਰ
     .accesskey = u
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = ਤਸਵੀਰ-ਚ-ਤਸਵੀਰ ਢੰਗ ਵਿੱਚ ਵੇਖੋ
+    .accesskey = u
 main-context-menu-image-reload =
     .label = ਚਿੱਤਰ ਨੂੰ ਮੁੜ-ਲੋਡ ਕਰੋ
     .accesskey = R
@@ -215,6 +272,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = ਵੀਡੀਓ ਨੂੰ ਵੇਖੋ
     .accesskey = I
+main-context-menu-image-view-new-tab =
+    .label = ਚਿੱਤਰ ਨੂੰ ਨਵੀਂ ਟੈਬ 'ਚ ਖੋਲ੍ਹੋ
+    .accesskey = I
+main-context-menu-video-view-new-tab =
+    .label = ਵੀਡੀਓ ਨੂੰ ਨਵੀਂ ਟੈਬ 'ਚ ਖੋਲ੍ਹੋ
+    .accesskey = i
 main-context-menu-image-copy =
     .label = ਚਿੱਤਰ ਨੂੰ ਕਾਪੀ ਕਰੋ
     .accesskey = y
@@ -226,6 +289,15 @@ main-context-menu-video-copy-location =
     .accesskey = o
 main-context-menu-audio-copy-location =
     .label = ਆਡੀਓ ਟਿਕਾਣੇ ਨੂੰ ਕਾਪੀ ਕਰੋ
+    .accesskey = o
+main-context-menu-image-copy-link =
+    .label = ਚਿੱਤਰ ਦੇ ਲਿੰਕ ਨੂੰ ਕਾਪੀ ਕਰੋ
+    .accesskey = o
+main-context-menu-video-copy-link =
+    .label = ਵੀਡੀਓ ਲਿੰਕ ਨੂੰ ਕਾਪੀ ਕਰੋ
+    .accesskey = o
+main-context-menu-audio-copy-link =
+    .label = ਆਡੀਓ ਲਿੰਕ ਨੂੰ ਕਾਪੀ ਕਰੋ
     .accesskey = o
 main-context-menu-image-save-as =
     .label = …ਚਿੱਤਰ ਨੂੰ ਇੰਝ ਸੰਭਾਲੋ
@@ -239,6 +311,9 @@ main-context-menu-image-set-as-background =
 main-context-menu-image-info =
     .label = ਚਿੱਤਰ ਦੀ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਖੋ
     .accesskey = f
+main-context-menu-image-set-image-as-background =
+    .label = …ਚਿੱਤਰ ਨੂੰ ਡੈਸਕਟਾਪ ਬੈਕਗਰਾਊਂਡ ਵਜੋਂ ਲਾਓ
+    .accesskey = S
 main-context-menu-image-desc =
     .label = ਵੇਰਵਿਆਂ ਨੂੰ ਵੇਖੋ
     .accesskey = D
@@ -250,6 +325,9 @@ main-context-menu-audio-save-as =
     .accesskey = v
 main-context-menu-video-image-save-as =
     .label = …ਸਨੈਪਸ਼ਾਟ ਨੂੰ ਇੰਝ ਨੂੰ ਸੰਭਾਲੋ
+    .accesskey = S
+main-context-menu-video-take-snapshot =
+    .label = …ਸਨੈਪਸ਼ਾਟ ਲਵੋ
     .accesskey = S
 main-context-menu-video-email =
     .label = …ਵੀਡੀਓ ਨੂੰ ਈਮੇਲ ਕਰੋ
@@ -275,6 +353,29 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = …ਤਿਆਰ ਕੀਤਾ ਪਾਸਵਰਡ ਵਰਤੋਂ
     .accesskey = G
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = ਸੰਭਾਲੇ ਲਾਗਇਨ ਨੂੰ ਵਰਤੋਂ
+    .accesskey = o
+main-context-menu-use-saved-password =
+    .label = ਸੰਭਾਲੇ ਪਾਸਵਰਡ ਨੂੰ ਵਰਤੋਂ
+    .accesskey = o
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = ਮਜਬੂਤ ਪਾਸਵਰਡ ਲਈ ਸੁਝਾਅ…
+    .accesskey = S
+main-context-menu-manage-logins =
+    .label = …ਲਾਗਇਨਾਂ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ
+    .accesskey = M
+main-context-menu-manage-logins2 =
+    .label = ਲਾਗਇਨਾਂ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ
+    .accesskey = M
 main-context-menu-keyword =
     .label = ਇਸ ਖੋਜ ਲਈ ਸ਼ਬਦ ਦਿਓ…
     .accesskey = K
@@ -317,6 +418,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = ਚੋਣ ਦਾ ਸਰੋਤ ਵੇਖੋ
     .accesskey = e
+main-context-menu-take-screenshot =
+    .label = ਸਕਰੀਨ-ਸ਼ਾਟ ਲਵੋ
+    .accesskey = T
 main-context-menu-view-page-source =
     .label = ਸਫ਼ੇ ਦੇ ਸਰੋਤ ਨੂੰ ਵੇਖੋ
     .accesskey = V
@@ -331,6 +435,9 @@ main-context-menu-bidi-switch-page =
     .accesskey = g
 main-context-menu-inspect-element =
     .label = ਐਲੀਮੈਂਟ ਜਾਂਚ
+    .accesskey = Q
+main-context-menu-inspect =
+    .label = ਜਾਂਚ
     .accesskey = Q
 main-context-menu-inspect-a11y-properties =
     .label = ਅਸੈੱਸਬਿਲਟੀ ਵਿਸ਼ੇਸ਼ਤਾ ਦੀ ਜਾਂਚ ਕਰੋ

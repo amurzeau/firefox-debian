@@ -49,9 +49,25 @@ ctrl-cmd-shift-pretty-prefix =
         [macos] ⇧ ⌘{ " " }
        *[other] Ctrl+Shift+
     }
+trigger-attachment-picker-key = A
+toggle-attachment-pane-key = M
+menuitem-toggle-attachment-pane =
+    .label = Vedleggspanel
+    .accesskey = V
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }
+toolbar-button-add-attachment =
+    .label = Legg ved
+    .tooltiptext = Legg ved et vedlegg ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
+add-attachment-notification-reminder =
+    .label = Legg til vedlegg …
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 menuitem-attach-files =
     .label = Fil(er) …
     .accesskey = F
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
+context-menuitem-attach-files =
+    .label = Legg ved fil(er) …
+    .accesskey = L
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count =
@@ -71,9 +87,31 @@ attachments-placeholder-tooltip =
 #   { attachment-bucket-count.accesskey } - Do not localize this message.
 key-toggle-attachment-pane =
     .key = { attachment-bucket-count.accesskey }
+expand-attachment-pane-tooltip =
+    .tooltiptext = Vis vedleggspanelet ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+collapse-attachment-pane-tooltip =
+    .tooltiptext = Skjul vedleggspanelet ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+drop-file-label-attachment =
+    { $count ->
+        [one] Legg til som vedlegg
+       *[other] Legg til som vedlegg
+    }
+drop-file-label-inline =
+    { $count ->
+        [one] Sett inn innebygd
+       *[other] Sett inn innebygd
+    }
 
 # Reorder Attachment Panel
 
+move-attachment-first-panel-button =
+    .label = Flytt først
+move-attachment-left-panel-button =
+    .label = Flytt til venstre
+move-attachment-right-panel-button =
+    .label = Flytt til høyre
+move-attachment-last-panel-button =
+    .label = Flytt sist
 button-return-receipt =
     .label = Kvittering
     .tooltiptext = Be om returkvittering for denne meldingen

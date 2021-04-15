@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Dir p'atrás una páxina ({ $shortcut })
     .aria-label = Atrás
     .accesskey = A
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Atrás
+    .accesskey = A
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Dir p'alantre una páxina ({ $shortcut })
     .aria-label = Alantre
     .accesskey = l
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Alantre
+    .accesskey = l
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Volver cargar
     .accesskey = r
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Volver cargar
+    .accesskey = r
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Parar
     .accesskey = P
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Parar
+    .accesskey = P
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Amestar esta páxina a Marcadores
     .accesskey = m
     .tooltiptext = Amestar esta páxina a Marcadores
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Amestar la páxina a Marcadores
+    .accesskey = M
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Editar el marcador
+    .accesskey = m
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -120,6 +154,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = Amestar esti enllaz a Marcadores
     .accesskey = e
+main-context-menu-bookmark-link =
+    .label = Amestar l'enllaz a Marcadores
+    .accesskey = M
 main-context-menu-save-link =
     .label = Guardar l'enllaz como…
     .accesskey = z
@@ -131,12 +168,20 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = Copiar la direición de corréu
     .accesskey = d
 main-context-menu-copy-link =
     .label = Copiar l'allugamientu del enllaz
     .accesskey = a
+main-context-menu-copy-link-simple =
+    .label = Copiar l'enllaz
+    .accesskey = l
 
 ## Media (video/audio) controls
 ##
@@ -163,22 +208,35 @@ main-context-menu-media-play-speed =
     .label = Velocidá de la reproducción
     .accesskey = V
 main-context-menu-media-play-speed-slow =
-    .label = Lenta (0.5×)
+    .label = Lenta (×0,5)
     .accesskey = L
 main-context-menu-media-play-speed-normal =
     .label = Normal
     .accesskey = N
 main-context-menu-media-play-speed-fast =
-    .label = Rápida (1.25×)
+    .label = Rápida (×1,25)
     .accesskey = R
 main-context-menu-media-play-speed-faster =
-    .label = Rapidísima (1.5×)
+    .label = Rapidísima (×1,5)
     .accesskey = a
 # "Ludicrous" is a reference to the movie "Space Balls" and is meant
 # to say that this speed is very fast.
 main-context-menu-media-play-speed-fastest =
-    .label = Desaxerada (2×)
+    .label = Desaxerada (×2)
     .accesskey = s
+main-context-menu-media-play-speed-2 =
+    .label = Velocidá
+    .accesskey = V
+main-context-menu-media-play-speed-slow-2 =
+    .label = ×0,5
+main-context-menu-media-play-speed-normal-2 =
+    .label = ×1,0
+main-context-menu-media-play-speed-fast-2 =
+    .label = ×1,25
+main-context-menu-media-play-speed-faster-2 =
+    .label = ×1,5
+main-context-menu-media-play-speed-fastest-2 =
+    .label = ×2
 main-context-menu-media-loop =
     .label = Repitición
     .accesskey = R
@@ -206,6 +264,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Imaxe sobre imaxe
     .accesskey = x
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Ver n'Imaxe sobre Imaxe
+    .accesskey = V
 main-context-menu-image-reload =
     .label = Volver cargar la imaxe
     .accesskey = r
@@ -215,6 +278,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = Ver el videu
     .accesskey = i
+main-context-menu-image-view-new-tab =
+    .label = Abrir la imaxe nuna llingüeta nueva
+    .accesskey = i
+main-context-menu-video-view-new-tab =
+    .label = Abrir el videu nuna llingüeta nueva
+    .accesskey = v
 main-context-menu-image-copy =
     .label = Copiar la imaxe
     .accesskey = x
@@ -227,6 +296,15 @@ main-context-menu-video-copy-location =
 main-context-menu-audio-copy-location =
     .label = Copiar l'allugamientu del audiu
     .accesskey = u
+main-context-menu-image-copy-link =
+    .label = Copiar l'enllaz de la imaxe
+    .accesskey = o
+main-context-menu-video-copy-link =
+    .label = Copiar l'enllaz del videu
+    .accesskey = o
+main-context-menu-audio-copy-link =
+    .label = Copiar l'enllaz del audiu
+    .accesskey = o
 main-context-menu-image-save-as =
     .label = Guardar la imaxe como…
     .accesskey = G
@@ -239,6 +317,9 @@ main-context-menu-image-set-as-background =
 main-context-menu-image-info =
     .label = Ver la información de la imaxe
     .accesskey = f
+main-context-menu-image-set-image-as-background =
+    .label = Afitar la imaxe como fondu d'escritoriu…
+    .accesskey = x
 main-context-menu-image-desc =
     .label = Ver la descripción
     .accesskey = d
@@ -251,6 +332,9 @@ main-context-menu-audio-save-as =
 main-context-menu-video-image-save-as =
     .label = Guardar la captura como…
     .accesskey = G
+main-context-menu-video-take-snapshot =
+    .label = Facer una captura…
+    .accesskey = F
 main-context-menu-video-email =
     .label = Unviar el videu per corréu
     .accesskey = a
@@ -275,6 +359,29 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = Usar una contraseña xenerada…
     .accesskey = x
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = Usar un aniciu sesión guardáu
+    .accesskey = U
+main-context-menu-use-saved-password =
+    .label = Usar una contraseña guardada
+    .accesskey = U
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = Suxerir una contraseña segura…
+    .accesskey = S
+main-context-menu-manage-logins =
+    .label = Xestionar los anicios de sesión…
+    .accesskey = X
+main-context-menu-manage-logins2 =
+    .label = Xestionar los anicios de sesión
+    .accesskey = X
 main-context-menu-keyword =
     .label = Amestar una pallabra clave pa esta busca…
     .accesskey = l
@@ -317,6 +424,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Ver l'orixe de la esbilla
     .accesskey = e
+main-context-menu-take-screenshot =
+    .label = Facer una captura
+    .accesskey = F
 main-context-menu-view-page-source =
     .label = Ver el códigu fonte de la páxina
     .accesskey = V
@@ -332,8 +442,11 @@ main-context-menu-bidi-switch-page =
 main-context-menu-inspect-element =
     .label = Inspeicionar l'elementu
     .accesskey = n
+main-context-menu-inspect =
+    .label = Inspeicionar
+    .accesskey = p
 main-context-menu-inspect-a11y-properties =
     .label = Inspeicionar les propiedaes de l'accesibilidá
 main-context-menu-eme-learn-more =
-    .label = Deprender más tocante al DRM…
-    .accesskey = D
+    .label = Lleer más tocante al DRM…
+    .accesskey = L

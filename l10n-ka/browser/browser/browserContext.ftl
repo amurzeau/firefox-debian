@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = წინა გვერდი ({ $shortcut })
     .aria-label = წინა
     .accesskey = წ
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = წინა
+    .accesskey = წ
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = მომდევნო გვერდი ({ $shortcut })
     .aria-label = მომდევნო
     .accesskey = მ
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = მომდევნო
+    .accesskey = მ
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = განახლება
     .accesskey = ნ
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = განახლება
+    .accesskey = ნ
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -63,6 +75,10 @@ toolbar-button-reload =
 
 main-context-menu-stop =
     .aria-label = შეჩერება
+    .accesskey = ჩ
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = შეჩერება
     .accesskey = ჩ
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
@@ -86,6 +102,18 @@ main-context-menu-bookmark-add =
     .aria-label = გვერდის ჩანიშვნა
     .accesskey = გ
     .tooltiptext = გვერდის ჩანიშვნა
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = გვერდის ჩანიშვნა
+    .accesskey = ნ
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = სანიშნის ჩასწორება
+    .accesskey = წ
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +139,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = ბმულის გახსნა ახალ სათავს ჩანართში
     .accesskey = ვ
-main-context-menu-open-link-container =
-    .label = ბმულის გახსნა ახალ სათავს ჩანართში
-    .accesskey = ხ
 main-context-menu-open-link-new-window =
     .label = ბმულის გახსნა ახალ ფანჯარაში
     .accesskey = ფ
@@ -270,7 +295,7 @@ main-context-menu-image-copy-link =
     .accesskey = უ
 main-context-menu-video-copy-link =
     .label = ვიდეოს ბმულის ასლი
-    .accesskey = ო
+    .accesskey = უ
 main-context-menu-audio-copy-link =
     .label = აუდიოს ბმულის ასლი
     .accesskey = ო
@@ -302,7 +327,7 @@ main-context-menu-video-image-save-as =
     .label = კადრის შენახვა როგორც…
     .accesskey = კ
 main-context-menu-video-take-snapshot =
-    .label = სურათის გადაღება
+    .label = კადრის გადაღება
     .accesskey = ღ
 main-context-menu-video-email =
     .label = ვიდეოს გაგზავნა ელფოსტით…
@@ -348,6 +373,9 @@ main-context-menu-suggest-strong-password =
 main-context-menu-manage-logins =
     .label = ანგარიშების მართვა…
     .accesskey = ვ
+main-context-menu-manage-logins2 =
+    .label = ანგარიშების მართვა…
+    .accesskey = მ
 main-context-menu-keyword =
     .label = ძიებისთვის საკვანძო სიტყვის მინიჭება…
     .accesskey = მ

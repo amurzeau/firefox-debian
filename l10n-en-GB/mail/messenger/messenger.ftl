@@ -2,7 +2,20 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# Variables:
+# $count (Number) - Number of unread messages.
+unread-messages-os-tooltip =
+    { $count ->
+        [one] 1 unread message
+       *[other] { $count } unread messages
+    }
 about-rights-notification-text = { -brand-short-name } is free and open source software, built by a community of thousands from all over the world.
+
+## Toolbar
+
+addons-and-themes-button =
+    .label = Add-ons and Themes
+    .tooltip = Manage your add-ons
 
 ## Folder Pane
 
@@ -36,3 +49,18 @@ show-recent-folders-label =
 folder-toolbar-toggle-folder-compact-view =
     .label = Compact View
     .accesskey = C
+
+## AppMenu
+
+# Since v89 we dropped the platforms distinction between Options or Preferences
+# and consolidated everything with Preferences.
+appmenu-preferences =
+    .label = Preferences
+appmenu-addons-and-themes =
+    .label = Add-ons and Themes
+appmenu-help-enter-troubleshoot-mode =
+    .label = Troubleshoot Mode…
+appmenu-help-exit-troubleshoot-mode =
+    .label = Turn Troubleshoot Mode Off
+appmenu-help-more-troubleshooting-info =
+    .label = More Troubleshooting Information

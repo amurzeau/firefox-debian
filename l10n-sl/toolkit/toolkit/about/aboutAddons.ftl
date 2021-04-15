@@ -34,6 +34,9 @@ sidebar-preferences-button-title =
             [windows] Možnosti { -brand-short-name }a
            *[other] Nastavitve { -brand-short-name }a
         }
+addons-settings-button = Nastavitve { -brand-short-name(sklon: "rodilnik") }
+sidebar-settings-button-title =
+    .title = Nastavitve { -brand-short-name(sklon: "rodilnik") }
 show-unsigned-extensions-button =
     .label = Nekaterih razširitev ni bilo mogoče potrditi
 show-all-extensions-button =
@@ -139,7 +142,7 @@ disabled-unsigned-heading =
 disabled-unsigned-description = Naslednji dodatki niso bili potrjeni za uporabo v { -brand-short-name }u. Lahko <label data-l10n-name="find-addons">jih nadomestite</label> ali zaprosite razvijalca, da jih potrdi.
 disabled-unsigned-learn-more = Več o naših prizadevanjih za večjo varnost na spletu.
 disabled-unsigned-devinfo = Razvijalcem, ki želijo potrditi svoje dodatke, priporočamo branje našega <label data-l10n-name="learn-more">priročnika</label>.
-plugin-deprecation-description = Pogrešate kaj? Nekateri vtičniki niso več podprti v { -brand-short-name }u. <label data-l10n-name="learn-more">Več o tem.</label>
+plugin-deprecation-description = Pogrešate kaj? Nekaterih vtičnikov { -brand-short-name } ne podpira več. <label data-l10n-name="learn-more">Več o tem</label>
 legacy-warning-show-legacy = Prikaži zastarele razširitve
 legacy-extensions =
     .value = Zastarele razširitve
@@ -335,7 +338,7 @@ addon-detail-last-updated-label = Zadnja posodobitev
 addon-detail-homepage-label = Domača stran
 addon-detail-rating-label = Ocena
 # Message for add-ons with a staged pending update.
-install-postponed-message = Razširitev se bo posodobila ob ponovnem zagonu { -brand-short-name }a.
+install-postponed-message = Razširitev se bo posodobila ob ponovnem zagonu { -brand-short-name(sklon: "rodilnik") }.
 install-postponed-button = Posodobi zdaj
 # The average rating that the add-on has received.
 # Variables:
@@ -384,9 +387,6 @@ addon-detail-private-browsing-disallow = Ne dovoli
 addon-badge-recommended2 =
     .title = { -brand-product-name } priporoča samo razširitve, ki ustrezajo našim standardom glede varnosti in učinkovitosti delovanja.
     .aria-label = { addon-badge-recommended2.title }
-addon-badge-line2 =
-    .title = To je uradna razširitev, ki so jo razvili ustvarjalci { -brand-product-name }a
-    .aria-label = { addon-badge-line2.title }
 # We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =

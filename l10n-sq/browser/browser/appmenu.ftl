@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = Po shkarkohet përditësim { -brand-shorter-name }-i
+appmenuitem-update-banner2 =
+    .label-update-downloading = Shkarkim përditësimi { -brand-shorter-name }
+    .label-update-available = Ka përditësim gati — shkarkojeni tani
+    .label-update-manual = Ka përditësim gati — shkarkojeni tani
+    .label-update-unsupported = S’arrihet të përditësohet
+    .label-update-restart = Ka përditësim gati — riniseni tani
 appmenuitem-protection-dashboard-title = Pult Mbrojtjesh
 appmenuitem-customize-mode =
     .label = Përshtateni…
@@ -21,12 +27,32 @@ appmenuitem-passwords =
     .label = Fjalëkalime
 appmenuitem-extensions-and-themes =
     .label = Zgjerime dhe Tema
+appmenuitem-addons-and-themes =
+    .label = Shtesa dhe Tema
 appmenuitem-find-in-page =
     .label = Gjeni Në Faqe…
 appmenuitem-more-tools =
     .label = Më Tepër Mjete
 appmenuitem-exit =
     .label = Dilni
+appmenu-menu-button-closed =
+    .tooltiptext = Hap Menu Aplikacionesh
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Mbyll Menu Aplikacionesh
+    .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Dilni
+           *[other] Dalje
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Hap Menu Aplikacioni
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Mbyll Menu Aplikacioni
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -45,6 +71,27 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Njëkohësohu Tani
+appmenu-remote-tabs-sign-into-sync =
+    .label = Hyni në Sync…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Aktivizoni Sync-un…
+appmenuitem-fxa-toolbar-sync-now2 = Njëkohësoji Tani
+appmenuitem-fxa-manage-account = Administroni Llogari
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Njëkohësuar së fundi më { $time }
+    .label = Njëkohësuar së fundi më { $time }
+appmenu-fxa-sync-and-save-data =
+    .value = Njëkohëso dhe Ruaj të Dhëna
+appmenu-fxa-sync-and-save-data2 = Njëkohëso dhe Ruaj të Dhëna
+appmenu-fxa-signed-in-label = Hyni
+appmenu-fxa-setup-sync =
+    .label = Aktivizoni Sync-un…
+appmenu-fxa-show-more-tabs = Shfaq Më Tepër Skeda
 appmenuitem-save-page =
     .label = Ruajeni Faqen Si…
 
@@ -110,18 +157,6 @@ appmenu-help-header =
 appmenu-about =
     .label = Mbi { -brand-shorter-name }-in
     .accesskey = R
-appmenu-help-product =
-    .label = Ndihmë mbi { -brand-shorter-name }-in
-    .accesskey = N
-appmenu-help-show-tour =
-    .label = Tur { -brand-shorter-name }-i
-    .accesskey = u
-appmenu-help-import-from-another-browser =
-    .label = Importoni prej Shfletuesi Tjetër…
-    .accesskey = I
-appmenu-help-keyboard-shortcuts =
-    .label = Shkurtore Tastiere
-    .accesskey = S
 appmenu-get-help =
     .label = Merrni ndihmë
     .accesskey = M
@@ -130,6 +165,9 @@ appmenu-help-troubleshooting-info =
     .accesskey = D
 appmenu-help-taskmanager =
     .label = Përgjegjës Punësh
+appmenu-help-more-troubleshooting-info =
+    .label = Më Tepër të Dhëna Diagnostikimi
+    .accesskey = D
 appmenu-help-report-site-issue =
     .label = Njoftoni Problem Sajti…
 appmenu-help-feedback-page =
@@ -146,6 +184,16 @@ appmenu-help-safe-mode-with-addons =
     .label = Rinise me Shtesat të Aktivizuara
     .accesskey = A
 
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Mënyra Diagnostikim…
+    .accesskey = D
+appmenu-help-exit-troubleshoot-mode =
+    .label = Çaktivizo Mënyrën Diagnostikim
+    .accesskey = Ç
+
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
@@ -156,13 +204,10 @@ appmenu-help-not-deceptive =
     .label = Ky s'është sajt i rremë…
     .accesskey = r
 
-##
-
-appmenu-help-check-for-update =
-    .label = Shihni për Përditësime…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Përshtateni Panelin…
+appmenu-taskmanager =
+    .label = Përgjegjës Punësh
 appmenu-developer-tools-subheader = Mjete Shfletuesi

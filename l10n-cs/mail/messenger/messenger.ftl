@@ -2,13 +2,29 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# Variables:
+# $count (Number) - Number of unread messages.
+unread-messages-os-tooltip =
+    { $count ->
+        [one] Jedna nepřečtená zpráva
+        [few] { $count } nepřečtená zprávy
+       *[other] { $count } nepřečtených zpráv
+    }
 about-rights-notification-text = { -brand-short-name } je svobodný a otevřený software vytvořený komunitou tisíců lidí z celého světa.
+
+## Toolbar
+
+addons-and-themes-button =
+    .label = Doplňky a vzhledy
+    .tooltip = Otevře správce doplňků
 
 ## Folder Pane
 
 folder-pane-toolbar =
     .toolbarname = Nástroje panelů složek
     .accesskey = a
+folder-pane-toolbar-options-button =
+    .tooltiptext = Nastavení panelu složek
 folder-pane-header-label = Složky
 
 ## Folder Toolbar Header Popup
@@ -34,3 +50,18 @@ show-recent-folders-label =
 folder-toolbar-toggle-folder-compact-view =
     .label = Kompaktní zobrazení
     .accesskey = K
+
+## AppMenu
+
+# Since v89 we dropped the platforms distinction between Options or Preferences
+# and consolidated everything with Preferences.
+appmenu-preferences =
+    .label = Předvolby
+appmenu-addons-and-themes =
+    .label = Doplňky a vzhledy
+appmenu-help-enter-troubleshoot-mode =
+    .label = Režim řešení potíží…
+appmenu-help-exit-troubleshoot-mode =
+    .label = Ukončit režim řešení potíží
+appmenu-help-more-troubleshooting-info =
+    .label = Další technické informace

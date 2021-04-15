@@ -264,11 +264,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Lesezeichen hinzufügen
+bookmarks-edit-bookmark = Lesezeichen bearbeiten
+bookmark-panel-cancel =
+    .label = Abbrechen
+    .accesskey = b
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Lesezeichen entfernen
+           *[other] { $count } Lesezeichen entfernen
+        }
+    .accesskey = e
 bookmark-panel-show-editor-checkbox =
     .label = Eigenschaften beim Speichern bearbeiten
     .accesskey = g
 bookmark-panel-done-button =
     .label = Fertig
+bookmark-panel-save-button =
+    .label = Speichern
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -288,6 +304,8 @@ identity-passive-loaded = Teile dieser Seite sind nicht sicher (wie z.B. Grafike
 identity-active-loaded = Sie haben den Schutz für diese Seite deaktiviert.
 identity-weak-encryption = Diese Seite verwendet eine schwache Verschlüsselung.
 identity-insecure-login-forms = Ihre Zugangsdaten könnten auf dieser Seite in falsche Hände geraten.
+identity-permissions =
+    .value = Berechtigungen
 identity-https-only-connection-upgraded = (zu HTTPS geändert)
 identity-https-only-label = Nur-HTTPS-Modus
 identity-https-only-dropdown-on =
@@ -299,8 +317,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Aktivieren Sie den Nur-HTTPS-Modus für diese Website, wenn { -brand-short-name } nach Möglichkeit über HTTPS verbinden soll.
 identity-https-only-info-turn-off2 = Wenn die Seite beschädigt erscheint, können Sie den Nur-HTTPS-Modus für diese Website deaktivieren, um mit nicht verschlüsseltem HTTP neu zu laden.
 identity-https-only-info-no-upgrade = Verbindung konnte nicht von HTTP geändert werden.
-identity-permissions =
-    .value = Berechtigungen
 identity-permissions-storage-access-header = Seitenübergreifende Cookies
 identity-permissions-storage-access-hint = Diese Beteiligten können Cookies und Website-Daten verwenden, während Sie sich auf dieser Website befinden.
 identity-permissions-reload-hint = Eventuell muss die Seite neu geladen werden, um die Änderungen zu übernehmen.
@@ -348,8 +364,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Wird abgespielt
-browser-tab-audio-muted = Stummgeschaltet
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = WIEDERGABE
 # This label should be written in all capital letters if your locale supports them.
@@ -358,6 +372,26 @@ browser-tab-audio-muted2 = STUMMGESCHALTET
 browser-tab-audio-blocked = BLOCKIERUNG DER WIEDERGABE
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = BILD-IM-BILD
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] TAB STUMMSCHALTEN
+       *[other] { $count } TABS STUMMSCHALTEN
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] STUMMSCHALTUNG FÜR TAB AUFHEBEN
+       *[other] STUMMSCHALTUNG FÜR { $count } TABS AUFHEBEN
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] TAB WIEDERGEBEN
+       *[other] { $count } TABS WIEDERGEBEN
+    }
 
 ## Bookmarks toolbar items
 
@@ -374,6 +408,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Zugriff auf folgendes Mikrofon erlauben:
     .accesskey = M
+popup-select-camera-device =
+    .value = Kamera:
+    .accesskey = K
+popup-select-camera-icon =
+    .tooltiptext = Kamera
+popup-select-microphone-device =
+    .value = Mikrofon:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Mikrofon
 popup-all-windows-shared = Alle sichtbaren Fenster auf dem Bildschirm werden weitergegeben.
 popup-screen-sharing-not-now =
     .label = Nicht jetzt
@@ -383,6 +427,13 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = Keine Benachrichtigungen von { -brand-short-name } anzeigen, während Ihr Bildschirm oder ein Fenster geteilt wird.
 popup-silence-notifications-checkbox-warning = { -brand-short-name } zeigt keine Benachrichtigungen an, während Sie Ihren Bildschirm oder ein Fenster teilen.
+popup-screen-sharing-block =
+    .label = Blockieren
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Immer blockieren
+    .accesskey = m
+popup-mute-notifications-checkbox = Website-Benachrichtigungen stummschalten, während ein Bildschirm oder ein Fenster geteilt wird
 
 ## WebRTC window or screen share tab switch warning
 
@@ -492,6 +543,13 @@ urlbar-result-action-tabtosearch-web = Mit { $engine } direkt aus der Adressleis
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = { $engine } direkt aus der Adressleiste durchsuchen
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Kopieren
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -533,8 +591,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Lesezeichen verwalten
-bookmarks-recent-bookmarks =
-    .value = Kürzlich als Lesezeichen gesetzt
 bookmarks-manage-bookmarks =
     .label = Lesezeichen verwalten
 bookmarks-recent-bookmarks-panel =
@@ -555,12 +611,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Lesezeichen-Sidebar schließen
            *[other] Lesezeichen-Sidebar anzeigen
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Lesezeichen-Symbolleiste ausblenden
-           *[other] Lesezeichen-Symbolleiste anzeigen
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -607,12 +657,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Lesezeichen
-library-bookmarks-bookmark-this-page =
-    .label = Lesezeichen hinzufügen
-library-bookmarks-bookmark-edit =
-    .label = Lesezeichen bearbeiten
 library-recent-activity-title =
     .value = Neueste Aktivität
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = In { -pocket-brand-name } speichern
+    .tooltiptext = In { -pocket-brand-name } speichern
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Add-ons und Themes
+    .tooltiptext = Add-ons und Themes verwalten ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Einstellungen
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Einstellungen öffnen ({ $shortcut })
+           *[other] Einstellungen öffnen
+        }
 
 ## More items
 
@@ -626,4 +695,22 @@ eme-notifications-drm-content-playing = Einige Audio- oder Videodateien auf dies
 eme-notifications-drm-content-playing-manage = Einstellungen verwalten
 eme-notifications-drm-content-playing-manage-accesskey = v
 eme-notifications-drm-content-playing-dismiss = Schließen
-eme-notifications-drm-content-playing-dismiss-accesskey = S
+eme-notifications-drm-content-playing-dismiss-accesskey = c
+
+## Password save/update panel
+
+panel-save-update-username = Benutzername
+panel-save-update-password = Passwort
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = { $name } entfernen?
+addon-removal-abuse-report-checkbox = Erweiterung melden an { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Konto verwalten
+remote-tabs-sync-now = Jetzt synchronisieren

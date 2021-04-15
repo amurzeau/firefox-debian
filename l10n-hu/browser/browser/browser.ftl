@@ -264,11 +264,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Könyvjelző hozzáadása
+bookmarks-edit-bookmark = Könyvjelző szerkesztése
+bookmark-panel-cancel =
+    .label = Mégse
+    .accesskey = M
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Könyvjelző törlése
+           *[other] { $count } könyvjelző törlése
+        }
+    .accesskey = t
 bookmark-panel-show-editor-checkbox =
     .label = Szerkesztő megjelenítése mentéskor
     .accesskey = e
 bookmark-panel-done-button =
     .label = Kész
+bookmark-panel-save-button =
+    .label = Mentés
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -288,6 +304,8 @@ identity-passive-loaded = A weboldal egyes részei nem biztonságosak (például
 identity-active-loaded = Kikapcsolta a védelmet ezen az oldalon.
 identity-weak-encryption = Ez az oldal gyenge titkosítást használ.
 identity-insecure-login-forms = Az oldalon megadott bejelentkezési adatok nincsenek biztonságban.
+identity-permissions =
+    .value = Engedélyek
 identity-https-only-connection-upgraded = (frissítve HTTPS-re)
 identity-https-only-label = Csak HTTPS mód
 identity-https-only-dropdown-on =
@@ -299,8 +317,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Kapcsolja be a Csak HTTPS módot ezen az oldalon, ha azt akarja, hogy a { -brand-short-name } frissítse a kapcsolatot, ha lehetséges.
 identity-https-only-info-turn-off2 = Ha az oldal nem megfelelően működik, lehet ki kell kapcsolnia a Csak HTTPS módot az oldalon, hogy nem biztonságos HTTP-vel töltse újra.
 identity-https-only-info-no-upgrade = Nem lehet frissíteni a kapcsolatot HTTP-ről.
-identity-permissions =
-    .value = Engedélyek
 identity-permissions-storage-access-header = Webhelyek közötti sütik
 identity-permissions-storage-access-hint = Ezek a felek használhatják a webhelyek közötti sütiket és a webhely adatait, amíg Ön ezen a webhelyen tartózkodik.
 identity-permissions-reload-hint = Lehet hogy újra kell töltenie az oldalt a változások érvényesítéséhez.
@@ -348,8 +364,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Lejátszás
-browser-tab-audio-muted = Némítva
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = LEJÁTSZÁS
 # This label should be written in all capital letters if your locale supports them.
@@ -358,6 +372,29 @@ browser-tab-audio-muted2 = NÉMÍTVA
 browser-tab-audio-blocked = AUTOMATIKUS LEJÁTSZÁS BLOKKOLVA
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = KÉP A KÉPBEN
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] LAP NÉMÍTÁSA
+        [one] LAP NÉMÍTÁSA
+       *[other] { $count } LAP NÉMÍTÁSA
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] LAP VISSZAHANGOSÍTÁSA
+        [one] LAP VISSZAHANGOSÍTÁSA
+       *[other] { $count } LAP VISSZAHANGOSÍTÁSA
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] LAP LEJÁTSZÁSA
+        [one] LAP LEJÁTSZÁSA
+       *[other] { $count } LAP LEJÁTSZÁSA
+    }
 
 ## Bookmarks toolbar items
 
@@ -509,6 +546,13 @@ urlbar-result-action-tabtosearch-web = Keresés a(z) { $engine } segítségével
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Keresés a(z) { $engine } webhelyen közvetlenül a címsorból
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Másolás
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -550,8 +594,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Minden könyvjelző megjelenítése
-bookmarks-recent-bookmarks =
-    .value = Nemrég könyvjelzőzött
 bookmarks-manage-bookmarks =
     .label = Könyvjelzők kezelése
 bookmarks-recent-bookmarks-panel =
@@ -572,12 +614,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Könyvjelzők oldalsáv elrejtése
            *[other] Könyvjelzők oldalsáv megjelenítése
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Könyvjelző eszköztár elrejtése
-           *[other] Könyvjelző eszköztár megjelenítése
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -624,12 +660,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Könyvjelzők
-library-bookmarks-bookmark-this-page =
-    .label = Oldal hozzáadása a könyvjelzőkhöz
-library-bookmarks-bookmark-edit =
-    .label = Könyvjelző szerkesztése
 library-recent-activity-title =
     .value = Friss tevékenység
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Mentés a { -pocket-brand-name }be
+    .tooltiptext = Mentés a { -pocket-brand-name }be
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Kiegészítők és témák
+    .tooltiptext = Kiegészítők és témák kezelése ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Beállítások
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Beállítások megnyitása ({ $shortcut })
+           *[other] Beállítások megnyitása
+        }
 
 ## More items
 
@@ -656,3 +711,9 @@ panel-save-update-password = Jelszó
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = Eltávoltja a következőt: { $name }?
 addon-removal-abuse-report-checkbox = A kiegészítő jelentése a { -vendor-short-name } felé
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Fiók kezelése
+remote-tabs-sync-now = Szinkronizálás most

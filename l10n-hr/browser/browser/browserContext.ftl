@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Idi jednu stranicu natrag ({ $shortcut })
     .aria-label = Natrag
     .accesskey = N
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Natrag
+    .accesskey = N
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Idi jednu stranicu naprijed ({ $shortcut })
     .aria-label = Naprijed
     .accesskey = a
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Naprijed
+    .accesskey = a
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Učitaj ponovo
     .accesskey = U
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Učitaj ponovo
+    .accesskey = U
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Zaustavi
     .accesskey = s
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Zaustavi
+    .accesskey = s
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -111,9 +133,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Otvori poveznicu u kontejnerskoj kartici
     .accesskey = k
-main-context-menu-open-link-container =
-    .label = Otvori poveznicu u novoj kontejnerskoj kartici
-    .accesskey = j
 main-context-menu-open-link-new-window =
     .label = Otvori poveznicu u novom prozoru
     .accesskey = n
@@ -193,6 +212,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Suludo brza (2×)
     .accesskey = u
+main-context-menu-media-play-speed-2 =
+    .label = Brzina
+    .accesskey = B
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0,5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1,0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1,25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1,5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Ponavljaj
     .accesskey = P
@@ -220,6 +252,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Slika u slici
     .accesskey = u
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Gledaj u prikazu slike-u-slici
+    .accesskey = u
 main-context-menu-image-reload =
     .label = Ponovo učitaj sliku
     .accesskey = u
@@ -228,6 +265,12 @@ main-context-menu-image-view =
     .accesskey = i
 main-context-menu-video-view =
     .label = Pogledaj video
+    .accesskey = i
+main-context-menu-image-view-new-tab =
+    .label = Otvori sliku u novoj kartici
+    .accesskey = n
+main-context-menu-video-view-new-tab =
+    .label = Otvori video u novoj kartici
     .accesskey = i
 main-context-menu-image-copy =
     .label = Kopiraj sliku
@@ -277,6 +320,9 @@ main-context-menu-audio-save-as =
 main-context-menu-video-image-save-as =
     .label = Spremi snimku kao …
     .accesskey = S
+main-context-menu-video-take-snapshot =
+    .label = Spremi snimku...
+    .accesskey = S
 main-context-menu-video-email =
     .label = Pošalji video e-poštom…
     .accesskey = a
@@ -321,6 +367,9 @@ main-context-menu-suggest-strong-password =
 main-context-menu-manage-logins =
     .label = Upravljaj prijavama…
     .accesskey = m
+main-context-menu-manage-logins2 =
+    .label = Upravljaj prijavama
+    .accesskey = m
 main-context-menu-keyword =
     .label = Dodaj ključnu riječ za ovu pretragu …
     .accesskey = k
@@ -362,6 +411,9 @@ main-context-menu-print-selection =
     .accesskey = r
 main-context-menu-view-selection-source =
     .label = Prikaži izvorni kod odabranog
+    .accesskey = e
+main-context-menu-take-screenshot =
+    .label = Snimi ekran
     .accesskey = e
 main-context-menu-view-page-source =
     .label = Prikaži izvorni kod stranice

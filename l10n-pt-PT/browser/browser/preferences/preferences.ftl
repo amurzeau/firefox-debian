@@ -28,6 +28,18 @@ search-input-box =
             [windows] Localizar nas opções
            *[other] Localizar nas preferências
         }
+settings-page-title = Definições
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Procurar nas definições
 managed-notice = O seu navegador está a ser gerido pela sua organização.
 category-list =
     .aria-label = Categorias
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Sincronizar
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = Experiências do { -brand-short-name }
 category-experimental =
     .tooltiptext = Experiências do { -brand-short-name }
 pane-experimental-subtitle = Avançar com cuidado
 pane-experimental-search-results-header = Experiências { -brand-short-name }: Prosseguir com cuidado
 pane-experimental-description = Alterar as preferências avançadas de configuração pode interferir com o desempenho ou segurança do { -brand-short-name }.
+pane-experimental-description2 = Alterar definições de configuração avançadas pode interferir com o desempenho ou segurança do { -brand-short-name }.
 pane-experimental-reset =
     .label = Repor predefinições
     .accesskey = R
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] Desculpe! Não existem resultados nas opções para “<span data-l10n-name="query"></span>”.
        *[other] Desculpe! Não existem resultados nas preferências para “<span data-l10n-name="query"></span>”.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Pedimos desculpa mas não existem resultados nas Definições para “<span data-l10n-name="query"></span>”.
 search-results-help-link = Precisa de ajuda? Visite o <a data-l10n-name="url">Apoio do { -brand-short-name }</a>
 
 ## General Section
@@ -369,6 +387,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Nunca procurar atualizações (não recomendado)
     .accesskey = N
+update-application-background-enabled =
+    .label = Quando o { -brand-short-name } não estiver em execução
+    .accesskey = u
 update-application-warning-cross-user-setting = Esta definição irá ser aplicada a todas as contas do Windows e perfis do { -brand-short-name } a utilizar esta instalação do { -brand-short-name }.
 update-application-use-service =
     .label = Utilizar um serviço em segundo plano para instalar atualizações
@@ -380,6 +401,15 @@ update-setting-write-failure-title = Erro ao guardar as preferências de atualiz
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
     O { -brand-short-name } encontrou um erro e não guardou esta alteração. Note que definir esta atualização requer permissão para escrever no ficheiro abaixo. Você ou um administrador do sistema pode resolver o erro ao conceder ao grupo Utilizadores controlo total para este ficheiro.
+    
+    Não foi possível escrever para ficheiro: { $path }
+update-setting-write-failure-title2 = Erro ao guardar as definições de atualização
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    O { -brand-short-name } encontrou um erro e não guardou esta alteração. Note que alterar esta definição de atualização requer permissão para escrever no ficheiro abaixo. Você ou um administrador do sistema pode resolver o erro atribuindo ao grupo Utilizadores controlo total para este ficheiro.
     
     Não foi possível escrever para ficheiro: { $path }
 update-in-progress-title = Atualização em progresso
@@ -579,6 +609,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Mostrar sugestões de pesquisa em janelas privadas
 suggestions-addressbar-settings-generic = Alterar preferências para outras sugestões da barra de endereços
+suggestions-addressbar-settings-generic2 = Alterar definições para outras sugestões da barra de endereços
 search-suggestions-cant-show = Sugestões de pesquisa não serão apresentadas nos resultados da barra de localização porque configurou o { -brand-short-name } para nunca memorizar histórico.
 search-one-click-header = Motores de pesquisa de um clique
 search-one-click-header2 = Pesquisar atalhos
@@ -613,6 +644,8 @@ containers-back-button =
             [windows] Voltar às Opções
            *[other] Voltar às Preferências
         }
+containers-back-button2 =
+    .aria-label = Voltar para as Definições
 containers-header = Separadores contentores
 containers-add-button =
     .label = Adicionar novo contentor
@@ -622,6 +655,8 @@ containers-new-tab-check =
     .accesskey = S
 containers-preferences-button =
     .label = Preferências
+containers-settings-button =
+    .label = Definições
 containers-remove-button =
     .label = Remover
 
@@ -633,6 +668,10 @@ sync-signedout-description = Sincronize os seus marcadores, histórico, separado
 sync-signedout-account-signin2 =
     .label = Iniciar sessão no { -sync-brand-short-name }…
     .accesskey = i
+sync-signedout-description2 = Sincronize os marcadores, histórico, separadores, palavras-passe, extras e definições entre dispositivos.
+sync-signedout-account-signin3 =
+    .label = Iniciar sessão para sincronizar…
+    .accesskey = I
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -653,7 +692,7 @@ sync-sign-out =
 sync-manage-account = Gerir conta
     .accesskey = o
 sync-signedin-unverified = { $email } não está verificado.
-sync-signedin-login-failure = Por favor inicie sessão para religar { $email }
+sync-signedin-login-failure = Por favor inicie sessão para reassociar { $email }
 sync-resend-verification =
     .label = Reenviar verificação
     .accesskey = r
@@ -672,6 +711,10 @@ prefs-sync-setup =
     .label = Configurar o { -sync-brand-short-name }…
     .accesskey = g
 prefs-sync-offer-setup-label = Sincronize os marcadores, histórico, separadores, palavras-passe, extras, e as preferências em todos os seus dispositivos.
+prefs-sync-turn-on-syncing =
+    .label = Ativar sincronização...
+    .accesskey = s
+prefs-sync-offer-setup-label2 = Sincronize os marcadores, histórico, separadores, palavras-passe, extras e definições entre todos os seus dispositivos.
 prefs-sync-now =
     .labelnotsyncing = Sincronizar agora
     .accesskeynotsyncing = N
@@ -692,6 +735,7 @@ sync-currently-syncing-prefs =
         [windows] Opções
        *[other] Preferências
     }
+sync-currently-syncing-settings = Definições
 sync-change-options =
     .label = Alterar...
     .accesskey = A
@@ -739,6 +783,10 @@ sync-engine-prefs =
         }
     .tooltiptext = Definições gerais, de privacidade, e segurança que alterou
     .accesskey = s
+sync-engine-settings =
+    .label = Definições
+    .tooltiptext = Definições gerais, de privacidade e de segurança que alterou
+    .accesskey = D
 
 ## The device name controls.
 
@@ -1153,6 +1201,11 @@ space-alert-under-5gb-ok-button =
     .label = OK, entendi
     .accesskey = K
 space-alert-under-5gb-message = O { -brand-short-name } está a ficar sem espaço em disco. Os conteúdos de sites podem não ser apresentados corretamente. Visite “Saber mais” para otimizar a utilização do seu disco e melhorar a experiência de navegação.
+space-alert-over-5gb-settings-button =
+    .label = Abrir definições
+    .accesskey = A
+space-alert-over-5gb-message2 = <strong>O { -brand-short-name } está a ficar sem espaço em disco</strong>. Os conteúdos dos sites podem não ser apresentados corretamente. Pode limpar os dados armazenados em Definições > Privacidade e segurança > Cookies e Dados de sites.
+space-alert-under-5gb-message2 = <strong>O { -brand-short-name } está a ficar sem espaço em disco</strong>. Os conteúdos de sites podem não ser apresentados corretamente. Visite “Saber mais” para otimizar a utilização do seu disco e melhorar a experiência de navegação.
 
 ## Privacy Section - HTTPS-Only
 

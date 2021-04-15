@@ -113,29 +113,17 @@ appmenu-help-header =
 appmenu-about =
     .label = { -brand-shorter-name }(r)i buruz
     .accesskey = b
-appmenu-help-product =
-    .label = { -brand-shorter-name }(r)en laguntza
-    .accesskey = l
-appmenu-help-show-tour =
-    .label = { -brand-shorter-name }(r)en itzulia
-    .accesskey = u
-appmenu-help-import-from-another-browser =
-    .label = Inportatu beste nabigatzaile batetik…
-    .accesskey = I
-appmenu-help-keyboard-shortcuts =
-    .label = Laster-teklak
-    .accesskey = s
 appmenu-get-help =
     .label = Lortu laguntza
     .accesskey = L
 appmenu-help-troubleshooting-info =
     .label = Arazoak konpontzeko informazioa…
     .accesskey = A
+appmenu-help-taskmanager =
+    .label = Ataza-kudeatzailea
 appmenu-help-more-troubleshooting-info =
     .label = Arazoak konpontzeko informazio gehiago
     .accesskey = f
-appmenu-help-taskmanager =
-    .label = Ataza-kudeatzailea
 appmenu-help-report-site-issue =
     .label = Eman gunearen arazoaren berri…
 appmenu-help-feedback-page =
@@ -155,9 +143,6 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Arazoak konpontzeko modua
-    .accesskey = z
 appmenu-help-exit-troubleshoot-mode =
     .label = Desaktibatu arazoak konpontzeko modua
     .accesskey = m
@@ -172,13 +157,10 @@ appmenu-help-not-deceptive =
     .label = Hau ez da gune iruzurtia…
     .accesskey = i
 
-##
-
-appmenu-help-check-for-update =
-    .label = Bilatu eguneraketak…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Pertsonalizatu tresna-barra…
+appmenu-taskmanager =
+    .label = Ataza-kudeatzailea
 appmenu-developer-tools-subheader = Nabigatzailearen tresnak

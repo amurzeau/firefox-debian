@@ -264,11 +264,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Rnu tacreḍt n usebter
+bookmarks-edit-bookmark = Ẓreg tacreḍt n usebter
+bookmark-panel-cancel =
+    .label = Sefsex
+    .accesskey = S
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Kkes tacreḍṭ n usebter
+           *[other] Kkes { $count } ticraḍ n yisebtar
+        }
+    .accesskey = K
 bookmark-panel-show-editor-checkbox =
     .label = Sken amaẓrag deg usekles
     .accesskey = k
 bookmark-panel-done-button =
     .label = Immed
+bookmark-panel-save-button =
+    .label = Sekles
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -288,6 +304,8 @@ identity-passive-loaded = Kra n yiḥricen deg usebter-a mačči d iɣelsanen (a
 identity-active-loaded = Tessenseḍ ammesten deg usebter-a.
 identity-weak-encryption = Asebter-a isseqdac awgelhen fessusen.
 identity-insecure-login-forms = Isem n useqdac d wawal uffir i tesqedceḍ deg usmel-a zemren ad ttwakren.
+identity-permissions =
+    .value = Tisirag
 identity-https-only-connection-upgraded = (leqqem ɣer HTTPS)
 identity-https-only-label = Askar HTTPS-Only
 identity-https-only-dropdown-on =
@@ -299,8 +317,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Rmed askar HTTPS-Only i usmel-a ma tebɣiḍ { -brand-short-name } i uleqqem n tuqqna melmi tzemreḍ.
 identity-https-only-info-turn-off2 = Ma asebter yettban yerreẓ, tzemreḍ ad tsenseḍ kan askar HTTPS i usmel-a akken ad talseḍ asali s useqdec n HTTP araɣellsan.
 identity-https-only-info-no-upgrade = Aleqqem n tuggna seg HTTP d awezɣi.
-identity-permissions =
-    .value = Tisirag
 identity-permissions-storage-access-header = Inagan n tuqqna gar yismal
 identity-permissions-storage-access-hint = Imdanen-a zemren ad sxedmen inagan n tuqqna n gar yismal d yisefka n usmel mi ara tiliḍ deg usmel-a.
 identity-permissions-reload-hint = Ahat tesriḍ ad d-tessaliḍ tikelt-nniḍen asebter akken ad yemmed wayen i tbeddleḍ.
@@ -348,8 +364,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Iteddu
-browser-tab-audio-muted = Isusem
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = TAΓURI
 # This label should be written in all capital letters if your locale supports them.
@@ -358,6 +372,29 @@ browser-tab-audio-muted2 = ISUSEM
 browser-tab-audio-blocked = TAΓURI TAWURMANT TETTUSEWḤEL
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = TUGNA-DEG-TUGNA
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] Sgugem iccer
+        [one] Sgugem iccer
+       *[other] Sgugem accaren { $count }
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] Kkes asgugem n yiccer
+        [one] Kkes asgugem n yiccer
+       *[other] Kkes asgugem n waccaren { $count }
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] ΓEṚ ICCER
+        [one] ΓEṚ ICCER
+       *[other] ΓEṚ ACCAREN N { $count }
+    }
 
 ## Bookmarks toolbar items
 
@@ -509,6 +546,13 @@ urlbar-result-action-tabtosearch-web = Nadi s { $engine } srid seg ugalis n tans
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Nadi s { $engine } srid seg ugalis n tansa
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Nɣel
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -550,8 +594,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Sken akk ticraḍ n yisebtar
-bookmarks-recent-bookmarks =
-    .value = Wid ittwacerḍen melmi kan
 bookmarks-manage-bookmarks =
     .label = Sefrek ticraḍ n yisebtar
 bookmarks-recent-bookmarks-panel =
@@ -572,12 +614,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Ffer agalis n tecraḍ n yisebtar
            *[other] Sken agalis n tecraḍ n yisebtar
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Ffer afeggag n tecraḍ n yisebtar
-           *[other] Sken afeggag n tecraḍ n yisebtar
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -624,12 +660,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Ticraḍ n yisebtar
-library-bookmarks-bookmark-this-page =
-    .label = Creḍ asebter-a
-library-bookmarks-bookmark-edit =
-    .label = Ẓreg tacreḍṭ n usebter-a
 library-recent-activity-title =
     .value = Armud n melmi kan
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Sekles ɣer { -pocket-brand-name }
+    .tooltiptext = Sekles ɣer { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Izegrar d yisental
+    .tooltiptext = Sefrek izegrar d yisental inek·inem ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Iɣewwaren
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Ldi iɣewwaren ({ $shortcut })
+           *[other] Ldi iɣewwaren
+        }
 
 ## More items
 
@@ -641,7 +696,9 @@ more-menu-go-offline =
 
 eme-notifications-drm-content-playing = Kra n imeslawen neɣ timwaliyin n usmel-a seqdacen aseɣẓan DRM, ayen ad igen talast i tigawin i yessirig { -brand-short-name } ɣef iferdisen-a.
 eme-notifications-drm-content-playing-manage = Sefrek iɣewwaren
+eme-notifications-drm-content-playing-manage-accesskey = M
 eme-notifications-drm-content-playing-dismiss = Zgel
+eme-notifications-drm-content-playing-dismiss-accesskey = D
 
 ## Password save/update panel
 
@@ -654,3 +711,9 @@ panel-save-update-password = Awal uffir
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = Kkes { $name }?
 addon-removal-abuse-report-checkbox = Mmel asiɣzef-a i { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Sefrek amiḍan
+remote-tabs-sync-now = Mtawi tura

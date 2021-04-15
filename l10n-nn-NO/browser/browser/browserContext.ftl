@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Gå tilbake ei side ({ $shortcut })
     .aria-label = Tilbake
     .accesskey = b
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Tilbake
+    .accesskey = b
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Gå fram ei side ({ $shortcut })
     .aria-label = Fram
     .accesskey = F
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Fram
+    .accesskey = F
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Oppdater
     .accesskey = r
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Oppdater
+    .accesskey = r
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Stopp
     .accesskey = S
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Stopp
+    .accesskey = S
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Bokmerk denne sida
     .accesskey = m
     .tooltiptext = Bokmerk denne sida
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Bokmerk sida
+    .accesskey = m
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Rediger bokmerke
+    .accesskey = m
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Opne lenke i ny innhaldsfane
     .accesskey = a
-main-context-menu-open-link-container =
-    .label = Opne lenke i ny behaldar
-    .accesskey = O
 main-context-menu-open-link-new-window =
     .label = Opne lenke i nytt vindauge
     .accesskey = O
@@ -346,7 +377,10 @@ main-context-menu-suggest-strong-password =
     .label = Foreslå sterkt passord…
     .accesskey = s
 main-context-menu-manage-logins =
-    .label = Handter inloggingar…
+    .label = Handter innloggingar…
+    .accesskey = H
+main-context-menu-manage-logins2 =
+    .label = Handter innloggingar…
     .accesskey = H
 main-context-menu-keyword =
     .label = Lag nøkkelord for dette søket…

@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = Preferenzas
 menu-application-services =
     .label = Servetschs
 menu-application-hide-this =
@@ -252,15 +254,18 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = S'annunziar tar { -brand-product-name }…
     .accesskey = z
-menu-tools-extensions =
-    .label = Extensiuns e designs
-    .accesskey = E
+menu-tools-addons-and-themes =
+    .label = Supplements e designs
+    .accesskey = S
 menu-tools-fxa-sign-in2 =
     .label = S'annunziar
     .accesskey = z
 menu-tools-turn-on-sync =
     .label = Activar { -sync-brand-short-name }…
     .accesskey = v
+menu-tools-turn-on-sync2 =
+    .label = Activar la sincronisaziun…
+    .accesskey = n
 menu-tools-sync-now =
     .label = Sincronisar ussa
     .accesskey = S
@@ -270,12 +275,25 @@ menu-tools-fxa-re-auth =
 menu-tools-web-developer =
     .label = Sviluppaders dal web
     .accesskey = w
+menu-tools-browser-tools =
+    .label = Utensils dal navigatur
+    .accesskey = U
+menu-tools-task-manager =
+    .label = Gestiun dad incumbensas
+    .accesskey = G
 menu-tools-page-source =
     .label = Mussar il code da funtauna da la pagina
     .accesskey = c
 menu-tools-page-info =
     .label = Infurmaziuns davart la pagina
     .accesskey = s
+menu-settings =
+    .label = Parameters
+    .accesskey =
+        { PLATFORM() ->
+            [windows] P
+           *[other] p
+        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -286,13 +304,6 @@ menu-preferences =
         { PLATFORM() ->
             [windows] e
            *[other] e
-        }
-menu-settings =
-    .label = Parameters
-    .accesskey =
-        { PLATFORM() ->
-            [windows] P
-           *[other] p
         }
 menu-tools-layout-debugger =
     .label = Debugadi da layout
@@ -306,15 +317,6 @@ menu-window-bring-all-to-front =
     .label = Prender tuts enavant
 
 ## Help Menu
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
 
 
 # NOTE: For Engineers, any additions or changes to Help menu strings should
@@ -346,11 +348,11 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Infurmaziuns per schliar problems
     .accesskey = p
+menu-help-taskmanager =
+    .label = Task Manager
 menu-help-more-troubleshooting-info =
     .label = Dapli infurmaziuns per schliar problems
     .accesskey = D
-menu-help-taskmanager =
-    .label = Task Manager
 menu-help-report-site-issue =
     .label = Rapportar in problem cun la pagina…
 menu-help-feedback-page =
@@ -362,8 +364,8 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Reaviar ed activar ils supplements
     .accesskey = R
-menu-help-enter-troubleshoot-mode =
-    .label = Modus per schliar problems
+menu-help-enter-troubleshoot-mode2 =
+    .label = Modus per schliar problems…
     .accesskey = M
 menu-help-exit-troubleshoot-mode =
     .label = Deactivar il modus per schliar problems
@@ -376,6 +378,3 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Quai n'è betg ina website che engiona…
     .accesskey = e
-menu-help-check-for-update =
-    .label = Tschertgar actualisaziuns…
-    .accesskey = c

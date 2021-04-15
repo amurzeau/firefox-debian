@@ -10,6 +10,8 @@ preferences-title =
             [windows] Inställningar
            *[other] Inställningar
         }
+preferences-tab-title =
+    .title = Inställningar
 category-list =
     .aria-label = Kategorier
 pane-general-title = Allmänt
@@ -90,6 +92,7 @@ update-in-progress-ok-button = &Ignorera
 update-in-progress-cancel-button = &Fortsätt
 account-button = Kontoinställningar
 addons-button = Tillägg & teman
+open-addons-sidebar-button = Tillägg och teman
 
 ## OS Authentication dialog
 
@@ -163,8 +166,14 @@ customize-alert-label =
     .label = Anpassa…
     .accesskey = n
 tray-icon-label =
-    .label = Visa ikon i aktivitetsfältet
+    .label = Visa en ikon i aktivitetsfältet
     .accesskey = a
+biff-use-system-alert =
+    .label = Använd systemavisering
+tray-icon-unread-label =
+    .label = Visa en ikon i aktivitetsfältet för olästa meddelanden
+    .accesskey = a
+tray-icon-unread-description = Rekommenderas när du använder små knappar i aktivitetsfältet
 mail-system-sound-label =
     .label = Systemets standardljud för ny e-post
     .accesskey = S
@@ -702,6 +711,17 @@ search-input-box =
             [windows] Sök i inställningar
            *[other] Sök i inställningar
         }
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-preferences-input =
+    .style = width: 15.4em
+    .placeholder = Sök i inställningar
 
 ## Preferences UI Search Results
 

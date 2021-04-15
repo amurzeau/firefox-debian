@@ -4,39 +4,49 @@
 
 bookmark-overlay-name =
     .value = Назив:
-    .accesskey = N
-
+    .accesskey = Н
 bookmark-overlay-location =
     .value = Адреса:
-    .accesskey = L
-
+    .accesskey = А
 bookmark-overlay-folder =
     .value = Фасцикла:
-
+bookmark-overlay-name-2 =
+    .value = Назив
+    .accesskey = Н
+bookmark-overlay-url =
+    .value = Адреса
+    .accesskey = А
+# Location refers to the position of the bookmark within the browser's
+# bookmarks, not to its URL or address.
+bookmark-overlay-location-2 =
+    .value = Положај
+    .accesskey = П
 bookmark-overlay-choose =
-    .label = Избор…
-
+    .label = Одабери…
 bookmark-overlay-folders-expander =
-    .tooltiptext = Прикажи све директоријуме са забелешкама
+    .tooltiptext = Прикажи све фасцикле са обележивачима
     .tooltiptextdown = { bookmark-overlay-folders-expander.tooltiptext }
     .tooltiptextup = Сакриј
-
 bookmark-overlay-new-folder-button =
     .label = Нова фасцикла
     .accesskey = o
-
 bookmark-overlay-tags =
     .value = Ознаке:
     .accesskey = T
-
+bookmark-overlay-tags-2 =
+    .value = Ознаке
+    .accesskey = О
 bookmark-overlay-tags-empty-description =
-    .placeholder = Раздвајају се запетама
-
+    .placeholder = Раздвајају се зарезима
 bookmark-overlay-tags-expander =
     .tooltiptext = Прикажи све ознаке
     .tooltiptextdown = { bookmark-overlay-tags-expander.tooltiptext }
     .tooltiptextup = Сакриј
-
 bookmark-overlay-keyword =
     .value = Кључна реч:
     .accesskey = K
+bookmark-overlay-keyword-2 =
+    .value = Кључна реч
+    .accesskey = К
+bookmark-overlay-tags-caption-label = Помоћу ознака можете да организујете обележиваче и претражујете их из траке за адресу
+bookmark-overlay-keyword-caption-label = Помоћу кључних речи можете да отварате обележиваче директно из траке за адресу

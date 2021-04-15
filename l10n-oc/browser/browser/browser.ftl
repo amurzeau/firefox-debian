@@ -264,11 +264,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Apondre als marcapaginas
+bookmarks-edit-bookmark = Modificar lo marcapagina
+bookmark-panel-cancel =
+    .label = Anullar
+    .accesskey = A
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Suprimir lo marcapagina
+           *[other] Suprimir los { $count } marcapaginas
+        }
+    .accesskey = S
 bookmark-panel-show-editor-checkbox =
     .label = Mostrar l’editor en enregistrant
     .accesskey = M
 bookmark-panel-done-button =
     .label = Acabar
+bookmark-panel-save-button =
+    .label = Enregistrar
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -288,6 +304,8 @@ identity-passive-loaded = D'elements de la pagina son pas segurs (coma los imatg
 identity-active-loaded = Avètz desactivat la proteccion sus aquela pagina.
 identity-weak-encryption = Aquela pagina utiliza un chiframent flac.
 identity-insecure-login-forms = Los identificants marcats sus aquela pagina pòdon far perilh.
+identity-permissions =
+    .value = Permissions
 identity-https-only-connection-upgraded = (passada al HTTPS)
 identity-https-only-label = Mòde HTTPS sonque
 identity-https-only-dropdown-on =
@@ -299,8 +317,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Activar lo mòde HTTPS solament per aqueste site se volètz que { -brand-short-name } passe la connexion en mòde securizat s’es possible.
 identity-https-only-info-turn-off2 = Se la page sembla copada, ensajatz de desactivar lo mòde HTTPS sonque per tornar cargar lo site en HTTP pas segur.
 identity-https-only-info-no-upgrade = Passatge de la connexion en HTTPS impossible.
-identity-permissions =
-    .value = Permissions
 identity-permissions-storage-access-header = Cookies intersites
 identity-permissions-storage-access-hint = Aquestas parts pòdon utilizar los cookies intersites e las donadas de sites pendent vòstra navegacion sul site.
 identity-permissions-reload-hint = Benlèu deuriatz actualizar la pagina per que s'apliquen los cambiaments.
@@ -348,8 +364,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Lectura
-browser-tab-audio-muted = Mut
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = LECTURA
 # This label should be written in all capital letters if your locale supports them.
@@ -357,7 +371,30 @@ browser-tab-audio-muted2 = MUT
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-blocked = LECTURA AUTO BLOCADA
 # This label should be written in all capital letters if your locale supports them.
-browser-tab-audio-pip = VIDÈO-INCRUSTADA
+browser-tab-audio-pip = VIDÈO INCRUSTADA
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] AMUDIR L’ONGLET
+        [one] AMUDIR L’ONGLET
+       *[other] AMUDIR LOS { $count } ONGLETS
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] RESTABLIR LO SON DE L’ONGLET
+        [one] RESTABLIR LO SON DE L’ONGLET
+       *[other] RESTABLIR LO SON DELS { $count } ONGLETS
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] LEGIR L’ONGLET
+        [one] LEGIR L’ONGLET
+       *[other] LEGIR { $count } ONGLETS
+    }
 
 ## Bookmarks toolbar items
 
@@ -509,6 +546,13 @@ urlbar-result-action-tabtosearch-web = Cercar amb { $engine } dirèctament dins 
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Cercar dins { $engine } dirèctament dins la barra d’adreça
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Copiar
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -550,8 +594,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Afichar totes los marcapaginas
-bookmarks-recent-bookmarks =
-    .value = Marcats recentament
 bookmarks-manage-bookmarks =
     .label = Gerir los marcapaginas
 bookmarks-recent-bookmarks-panel =
@@ -572,12 +614,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Amagar la barra laterala d'onglets
            *[other] Afichar la barra laterala d'onglets
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Amagar la barra personala
-           *[other] Afichar la barra personala
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -624,12 +660,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Marcapaginas
-library-bookmarks-bookmark-this-page =
-    .label = Marcar aquesta pagina
-library-bookmarks-bookmark-edit =
-    .label = Modificar aqueste marcapagina
 library-recent-activity-title =
     .value = Activitat recenta
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Enregistrar dins { -pocket-brand-name }
+    .tooltiptext = Enregistrar dins { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Moduls complementaris e tèmas
+    .tooltiptext = Gerissètz los moduls e los tèmas ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Paramètres
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Dobrir los paramètres ({ $shortcut })
+           *[other] Dobrir los paramètres
+        }
 
 ## More items
 
@@ -656,3 +711,9 @@ panel-save-update-password = Senhal
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = Suprimir { $name } ?
 addon-removal-abuse-report-checkbox = Senhalar aquesta extension a { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Gestion del compte
+remote-tabs-sync-now = Sincronizar ara

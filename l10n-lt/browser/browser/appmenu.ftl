@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = Atsiunčiamas „{ -brand-shorter-name };“ naujinimas
+appmenuitem-update-banner2 =
+    .label-update-downloading = Atsiunčiamas „{ -brand-shorter-name }“ naujinimas
+    .label-update-available = Galimas naujinimas — atsiųsti dabar
+    .label-update-manual = Galimas naujinimas — atsiųsti dabar
+    .label-update-unsupported = Naujinimas nepavyko
+    .label-update-restart = Galimas naujinimas — paleisti iš naujo dabar
 appmenuitem-protection-dashboard-title = Apsaugos skydelis
 appmenuitem-customize-mode =
     .label = Tvarkyti…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = Slaptažodžiai
 appmenuitem-extensions-and-themes =
     .label = Priedai ir grafiniai apvalkalai
+appmenuitem-addons-and-themes =
+    .label = Priedai ir grafiniai apvalkalai
 appmenuitem-find-in-page =
     .label = Rasti tinklalapyje…
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Užverti programos meniu
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Išeiti
+           *[other] Išeiti
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Atverti programos meniu
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Užverti programos meniu
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Sinchronizuoti dabar
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Sinchronizuoti dabar
-    .value = Sinchronizuoti dabar
+appmenu-remote-tabs-sign-into-sync =
+    .label = Prisijungti sinchronizavimui…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Įjungti sinchronizavimą…
+appmenuitem-fxa-toolbar-sync-now2 = Sinchronizuoti dabar
 appmenuitem-fxa-manage-account = Tvarkyti paskyrą
 appmenu-fxa-header =
-    .title = { -fxaccount-brand-name }
+    .title = „{ -fxaccount-brand-name }“ paskyra
+appmenu-fxa-header2 = „{ -fxaccount-brand-name }“ paskyra
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = Paskiausiai sinchronizuota { $time }
     .label = Paskiausiai sinchronizuota { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Sinchronizuoti ir įrašyti duomenis
+appmenu-fxa-sync-and-save-data2 = Sinchronizuoti ir įrašyti duomenis
 appmenu-fxa-signed-in-label = Prisijungti
 appmenu-fxa-setup-sync =
     .label = Įjungti sinchronizavimą…
@@ -133,29 +157,17 @@ appmenu-help-header =
 appmenu-about =
     .label = Apie „{ -brand-shorter-name }“
     .accesskey = A
-appmenu-help-product =
-    .label = „{ -brand-shorter-name }“ žinynas
-    .accesskey = ž
-appmenu-help-show-tour =
-    .label = Įvadas į „{ -brand-shorter-name }“
-    .accesskey = v
-appmenu-help-import-from-another-browser =
-    .label = Importuoti iš kitos naršyklės…
-    .accesskey = I
-appmenu-help-keyboard-shortcuts =
-    .label = Spartieji klavišai
-    .accesskey = k
 appmenu-get-help =
     .label = Žinynas ir pagalba
     .accesskey = Ž
 appmenu-help-troubleshooting-info =
     .label = Informacija problemų sprendimui
     .accesskey = r
+appmenu-help-taskmanager =
+    .label = Užduočių tvarkytuvė
 appmenu-help-more-troubleshooting-info =
     .label = Daugiau informacijos problemų sprendimui
     .accesskey = p
-appmenu-help-taskmanager =
-    .label = Užduočių tvarkytuvė
 appmenu-help-report-site-issue =
     .label = Pranešti apie svetainės problemą…
 appmenu-help-feedback-page =
@@ -175,11 +187,11 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Problemų sprendimo veiksena
-    .accesskey = m
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Trikčių šalinimo veiksena…
+    .accesskey = v
 appmenu-help-exit-troubleshoot-mode =
-    .label = Išjungti problemų sprendimo veikseną
+    .label = Išjungti trikčių šalinimo veikseną
     .accesskey = m
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
@@ -192,13 +204,10 @@ appmenu-help-not-deceptive =
     .label = Tai nėra apgaulinga svetainė…
     .accesskey = g
 
-##
-
-appmenu-help-check-for-update =
-    .label = Ieškoti naujinimų…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Tvarkyti priemonių juostą…
+appmenu-taskmanager =
+    .label = Užduočių tvarkytuvė
 appmenu-developer-tools-subheader = Naršyklės įrankiai

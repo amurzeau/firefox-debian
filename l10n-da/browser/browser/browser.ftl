@@ -264,11 +264,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Tilføj bogmærke
+bookmarks-edit-bookmark = Rediger Bogmærke
+bookmark-panel-cancel =
+    .label = Afbryd
+    .accesskey = A
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Fjern bogmærke
+           *[other] Fjern { $count } bogmærker
+        }
+    .accesskey = F
 bookmark-panel-show-editor-checkbox =
     .label = Vis editor, når der gemmes
     .accesskey = V
 bookmark-panel-done-button =
     .label = Færdig
+bookmark-panel-save-button =
+    .label = Gem
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -288,6 +304,8 @@ identity-passive-loaded = Dele af denne side (såsom billeder) er ikke sikre.
 identity-active-loaded = Du har slået beskyttelse fra på denne side.
 identity-weak-encryption = Denne side bruger svag kryptering.
 identity-insecure-login-forms = Logins foretaget på denne side kan blive kompromitteret.
+identity-permissions =
+    .value = Tilladelser
 identity-https-only-connection-upgraded = (opgraderet til HTTPS)
 identity-https-only-label = Tilstanden Kun-HTTPS
 identity-https-only-dropdown-on =
@@ -299,8 +317,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Slå tilstanden kun-HTTPS til for dette websted, hvis du vil have { -brand-short-name } til at opgradere forbindelsen, når det er muligt.
 identity-https-only-info-turn-off2 = Hvis denne side ikke fungerer korrekt, kan du prøve at slå tilstanden kun-HTTPS fra for dette websted for at genindlæse den ved hjælp af usikker HTTP.
 identity-https-only-info-no-upgrade = Kunne ikke opgradere forbindelsen fra HTTP.
-identity-permissions =
-    .value = Tilladelser
 identity-permissions-storage-access-header = Cookies på tværs af websteder
 identity-permissions-storage-access-hint = Disse parter kan anvende webstedsdata og cookies på tværs af websteder, mens du besøger dette websted.
 identity-permissions-reload-hint = Du skal muligvis genindlæse siden, før at ændringerne slår igennem.
@@ -348,8 +364,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Afspiller
-browser-tab-audio-muted = Lyd slået fra
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = AFSPILLER
 # This label should be written in all capital letters if your locale supports them.
@@ -358,6 +372,29 @@ browser-tab-audio-muted2 = LYD SLÅET FRA
 browser-tab-audio-blocked = AUTOPLAY BLOKERET
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = BILLEDE-I-BILLEDE
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] SLÅ LYD FRA I FANEBLAD
+        [one] SLÅ LYD FRA I FANEBLAD
+       *[other] SLÅ LYD FRA I { $count } FANEBLADE
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] SLÅ LYD TIL I FANEBLAD
+        [one] SLÅ LYD TIL I FANEBLAD
+       *[other] SLÅ LYD TIL I { $count } FANEBLADE
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] AFSPIL FANEBLAD
+        [one] AFSPIL FANEBLAD
+       *[other] AFSPIL { $count } FANEBLADE
+    }
 
 ## Bookmarks toolbar items
 
@@ -509,6 +546,13 @@ urlbar-result-action-tabtosearch-web = Søg med { $engine } direkte fra adressef
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Søg med { $engine } direkte fra adressefeltet
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Kopiér
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -550,13 +594,11 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Vis alle bogmærker
-bookmarks-recent-bookmarks =
-    .value = Seneste bogmærker
 bookmarks-manage-bookmarks =
     .label = Håndter bogmærker
 bookmarks-recent-bookmarks-panel =
     .value = Seneste bogmærker
-bookmarks-recent-bookmarks-panel-subheader = Senester bogmærker
+bookmarks-recent-bookmarks-panel-subheader = Seneste bogmærker
 bookmarks-toolbar-chevron =
     .tooltiptext = Vis flere bogmærker
 bookmarks-sidebar-content =
@@ -572,12 +614,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Skjul bogmærker i sidepanel
            *[other] Vis bogmærker i sidepanel
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Skjul bogmærkelinjen
-           *[other] Vis bogmærkelinjen
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -618,18 +654,37 @@ bookmarks-toolbar-placeholder-button =
     .label = Bogmærkelinje-elementer
 # "Bookmark" is a verb, as in "Add current tab to bookmarks".
 bookmarks-current-tab =
-    .label = Gem bogmærke til det aktuelle faneblad
+    .label = Bogmærk dette faneblad
 
 ## Library Panel items
 
 library-bookmarks-menu =
     .label = Bogmærker
-library-bookmarks-bookmark-this-page =
-    .label = Bogmærk denne side
-library-bookmarks-bookmark-edit =
-    .label = Rediger bogmærke
 library-recent-activity-title =
     .value = Seneste aktivitet
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Gem til { -pocket-brand-name }
+    .tooltiptext = Gem til { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Tilføjelser og temaer
+    .tooltiptext = Håndter dine tilføjelser og temaer ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Indstillinger
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Åbn indstillinger ({ $shortcut })
+           *[other] Åbn indstillinger
+        }
 
 ## More items
 
@@ -656,3 +711,9 @@ panel-save-update-password = Adgangskode
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = Fjern { $name }?
 addon-removal-abuse-report-checkbox = Rapporter denne udvidelse til { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Håndter konto
+remote-tabs-sync-now = Synkroniser nu

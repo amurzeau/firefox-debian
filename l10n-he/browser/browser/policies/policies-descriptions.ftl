@@ -11,10 +11,11 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = הגדרת מדיניות שהרחבות WebExtensions יכולות לגשת אליהן באמצעות chrome.storage.managed.
+policy-AllowedDomainsForApps = הגדרת שמות מתחם המורשים לגשת ל־Google Workspace.
 policy-AppAutoUpdate = הפעלה או השבתה של עדכון אוטומטי ליישום.
 policy-AppUpdateURL = הגדרת כתובת מותאמת אישית לעדכון היישום.
 policy-Authentication = הגדרת אימות משולב לאתרים שתומכים בזה.
-policy-BackgroundAppUpdate = הפעלה או השבתה של שירות העדכון ברקע, שמעדכן את הדפדפן כשהוא אינו פועל.
+policy-BackgroundAppUpdate2 = הפעלה או השבתה של שירות המעדכן ברקע.
 policy-BlockAboutAddons = חסימת הגישה למנהל התוספות (about:addons).
 policy-BlockAboutConfig = חסימת הגישה לעמוד about:config.
 policy-BlockAboutProfiles = חסימת הגישה לעמוד about:profiles.
@@ -105,6 +106,7 @@ policy-SearchEngines = הגדרת תצורת מנועי החיפוש. מדיני
 policy-SearchSuggestEnabled = הפעלה או השבתה של הצעות חיפוש.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = התקנת מודולי PKCS #11.
+policy-ShowHomeButton = הצגת כפתור הבית בסרגל הכלים.
 policy-SSLVersionMax = הגדרת גרסת ה־SSL המקסימלית.
 policy-SSLVersionMin = הגדרת גרסת ה־SSL המינימלית.
 policy-SupportMenu = הוספת תפריט תמיכה בהתאמה אישית לתפריט העזרה.

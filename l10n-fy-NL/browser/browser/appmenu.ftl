@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = { -brand-shorter-name }-fernijing wurdt download
+appmenuitem-update-banner2 =
+    .label-update-downloading = { -brand-shorter-name }-fernijingen downloade
+    .label-update-available = Update beschikbaar – no downloade
+    .label-update-manual = Update beschikbaar – no downloade
+    .label-update-unsupported = Kin net bywurkje
+    .label-update-restart = Fernijing beskikber – no opnij starte
 appmenuitem-protection-dashboard-title = Befeiligingsdashboerd
 appmenuitem-customize-mode =
     .label = Oanpasse…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = Wachtwurden
 appmenuitem-extensions-and-themes =
     .label = Utwreidingen en Tema’s
+appmenuitem-addons-and-themes =
+    .label = Add-ons en tema’s
 appmenuitem-find-in-page =
     .label = Sykje op side…
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Tapassingsmenu slute
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Ofslute
+           *[other] Ofslute
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Tapassingsmenu iepenje
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Tapassingsmenu slute
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = No syngronisearje
-appmenuitem-fxa-toolbar-sync-now =
-    .label = No syngronisearje
-    .value = No syngronisearje
+appmenu-remote-tabs-sign-into-sync =
+    .label = Oanmelde by Sync…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Syngronisaasje ynskeakelje…
+appmenuitem-fxa-toolbar-sync-now2 = No syngronisearje
 appmenuitem-fxa-manage-account = Account beheare
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = Lêst syngronisearre: { $time }
     .label = Lêst syngronisearre: { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Syngronisearje en gegevens bewarje
+appmenu-fxa-sync-and-save-data2 = Syngronisearje en gegevens bewarje
 appmenu-fxa-signed-in-label = Oanmelde
 appmenu-fxa-setup-sync =
     .label = Syngronisaasje ynskeakelje…
@@ -135,29 +159,17 @@ appmenu-help-header =
 appmenu-about =
     .label = Oer { -brand-shorter-name }
     .accesskey = O
-appmenu-help-product =
-    .label = { -brand-shorter-name } Help
-    .accesskey = H
-appmenu-help-show-tour =
-    .label = { -brand-shorter-name }-toer
-    .accesskey = o
-appmenu-help-import-from-another-browser =
-    .label = Ymportearje fan in oare browser út…
-    .accesskey = Y
-appmenu-help-keyboard-shortcuts =
-    .label = Fluchtoetsen
-    .accesskey = t
 appmenu-get-help =
     .label = Help krije
     .accesskey = H
 appmenu-help-troubleshooting-info =
     .label = Probleemoplossingsynformaasje
     .accesskey = P
+appmenu-help-taskmanager =
+    .label = Taakbehearder
 appmenu-help-more-troubleshooting-info =
     .label = Mear probleemoplossingsynformaasje
     .accesskey = p
-appmenu-help-taskmanager =
-    .label = Taakbehearder
 appmenu-help-report-site-issue =
     .label = Websiteprobleem rapportearje…
 appmenu-help-feedback-page =
@@ -177,9 +189,9 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Probleemoplossingsmodus
-    .accesskey = m
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Probleemoplossingsmodus…
+    .accesskey = u
 appmenu-help-exit-troubleshoot-mode =
     .label = Probleemoplossingsmodus útskeakelje
     .accesskey = m
@@ -194,13 +206,10 @@ appmenu-help-not-deceptive =
     .label = Dit is gjin misliedende website…
     .accesskey = m
 
-##
-
-appmenu-help-check-for-update =
-    .label = Kontrolearje op fernijingen…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Arkbalke oanpasse…
+appmenu-taskmanager =
+    .label = Taakbehearder
 appmenu-developer-tools-subheader = Browserhelpmidelen

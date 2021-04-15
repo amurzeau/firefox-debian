@@ -11,9 +11,11 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Beleidsregels instellen zodat WebExtensions via chrome.storage.managed toegang kunnen krijgen.
+policy-AllowedDomainsForApps = Definieer domeinen die toegang hebben tot Google Workspace.
 policy-AppAutoUpdate = Automatische applicatie-update in- of uitschakelen.
 policy-AppUpdateURL = Aangepaste app-update-URL instellen.
 policy-Authentication = Geïntegreerde authenticatie configureren voor websites die dit ondersteunen.
+policy-BackgroundAppUpdate2 = Achtergrondupdates in- of uitschakelen.
 policy-BlockAboutAddons = Toegang tot de Add-onbeheerder (about:addons) blokkeren.
 policy-BlockAboutConfig = Toegang tot de about:config-pagina blokkeren.
 policy-BlockAboutProfiles = Toegang tot de about:profiles-pagina blokkeren.
@@ -106,6 +108,7 @@ policy-SearchEngines = Instellingen voor zoekmachines configureren. Deze beleids
 policy-SearchSuggestEnabled = Zoeksuggesties inschakelen of uitschakelen.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = PKCS #11-modules installeren.
+policy-ShowHomeButton = De startpaginaknop op de werkbalk tonen.
 policy-SSLVersionMax = De maximale SSL-versie instellen.
 policy-SSLVersionMin = De minimale SSL-versie instellen.
 policy-SupportMenu = Een aangepast menu-item voor ondersteuning aan het menu Help toevoegen.

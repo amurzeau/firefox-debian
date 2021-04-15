@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = Загрузка обновления { -brand-shorter-name }
+appmenuitem-update-banner2 =
+    .label-update-downloading = Загрузка обновления { -brand-shorter-name }
+    .label-update-available = Обновление доступно — загрузить сейчас
+    .label-update-manual = Обновление доступно — загрузить сейчас
+    .label-update-unsupported = Не удалось выполнить обновление
+    .label-update-restart = Обновление доступно — перезапустить сейчас
 appmenuitem-protection-dashboard-title = Панель состояния защиты
 appmenuitem-customize-mode =
     .label = Персонализация…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = Пароли
 appmenuitem-extensions-and-themes =
     .label = Расширения и темы
+appmenuitem-addons-and-themes =
+    .label = Дополнения и темы
 appmenuitem-find-in-page =
     .label = Найти на странице…
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Закрыть меню приложения
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Выход
+           *[other] Выход
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Открыть меню приложения
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Закрыть меню приложения
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Синхронизировать
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Синхронизировать
-    .value = Синхронизировать
+appmenu-remote-tabs-sign-into-sync =
+    .label = Войти в Синхронизацию…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Включить синхронизацию…
+appmenuitem-fxa-toolbar-sync-now2 = Синхронизировать
 appmenuitem-fxa-manage-account = Управление аккаунтом
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = Последняя синхронизация { $time }
     .label = Последняя синхронизация { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Синхронизация и сохранение данных
+appmenu-fxa-sync-and-save-data2 = Синхронизация и сохранение данных
 appmenu-fxa-signed-in-label = Войти
 appmenu-fxa-setup-sync =
     .label = Включить синхронизацию…
@@ -135,29 +159,17 @@ appmenu-help-header =
 appmenu-about =
     .label = О { -brand-shorter-name }
     .accesskey = О
-appmenu-help-product =
-    .label = Справка { -brand-shorter-name }
-    .accesskey = к
-appmenu-help-show-tour =
-    .label = Знакомство с { -brand-shorter-name }
-    .accesskey = м
-appmenu-help-import-from-another-browser =
-    .label = Импорт из другого браузера…
-    .accesskey = п
-appmenu-help-keyboard-shortcuts =
-    .label = Сочетания клавиш
-    .accesskey = ч
 appmenu-get-help =
     .label = Получить помощь
     .accesskey = ч
 appmenu-help-troubleshooting-info =
     .label = Информация для решения проблем
     .accesskey = а
+appmenu-help-taskmanager =
+    .label = Диспетчер задач
 appmenu-help-more-troubleshooting-info =
     .label = Информация для решения проблем
     .accesskey = а
-appmenu-help-taskmanager =
-    .label = Диспетчер задач
 appmenu-help-report-site-issue =
     .label = Сообщить о проблеме с сайтом…
 appmenu-help-feedback-page =
@@ -177,9 +189,9 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Безопасный режим
-    .accesskey = п
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Безопасный режим…
+    .accesskey = й
 appmenu-help-exit-troubleshoot-mode =
     .label = Отключить безопасный режим
     .accesskey = п
@@ -194,13 +206,10 @@ appmenu-help-not-deceptive =
     .label = Это не поддельный сайт…
     .accesskey = е
 
-##
-
-appmenu-help-check-for-update =
-    .label = Проверить наличие обновлений…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Персонализация панели инструментов…
+appmenu-taskmanager =
+    .label = Диспетчер задач
 appmenu-developer-tools-subheader = Инструменты браузера

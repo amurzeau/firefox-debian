@@ -261,6 +261,18 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmark-panel-cancel =
+    .label = Kanselahin
+    .accesskey = C
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Tanggalin ang Bookmark
+           *[other] Magtanggal ng { $count } mga Bookmark
+        }
+    .accesskey = R
 bookmark-panel-show-editor-checkbox =
     .label = Ipakita ang editor kapag nagse-save
     .accesskey = S
@@ -285,6 +297,8 @@ identity-passive-loaded = Ang mga bahagi ng pahinang ito ay hindi ligtas (tulad 
 identity-active-loaded = Hindi mo pinagana ang proteksyon sa pahinang ito.
 identity-weak-encryption = Ang pahinang ito ay gumagamit ng mahina na pag-encrypt.
 identity-insecure-login-forms = Ang mga pag-login na ipinasok sa pahinang ito ay maaaring makompromiso.
+identity-permissions =
+    .value = Mga Pahintulot
 identity-https-only-connection-upgraded = (inupgrade na sa HTTPS)
 identity-https-only-label = HTTPS-Only Mode
 identity-https-only-dropdown-on =
@@ -294,8 +308,6 @@ identity-https-only-dropdown-off =
 identity-https-only-dropdown-off-temporarily =
     .label = Pansamantalang nakasara
 identity-https-only-info-no-upgrade = Hindi kayang mag-upgrade ng koneksyon mula sa HTTP.
-identity-permissions =
-    .value = Mga Pahintulot
 identity-permissions-reload-hint = Maaaring kailangan mong i-reload ang pahina para mag-aplay ang mga pagbabago.
 identity-permissions-empty = Hindi mo ipinagkaloob ang site na ito anumang espesyal na pahintulot.
 identity-clear-site-data =
@@ -340,6 +352,11 @@ browser-window-close-button =
     .tooltiptext = Isara
 
 ## Tab actions
+
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
 
 
 ## Bookmarks toolbar items
@@ -494,8 +511,6 @@ crashed-subframe-learnmore =
 
 bookmarks-show-all-bookmarks =
     .label = Ipakita Lahat ng mga Bookmark
-bookmarks-recent-bookmarks =
-    .value = Mga Na-bookmark Kamakailan
 bookmarks-toolbar-chevron =
     .tooltiptext = Magpakita ng karagdagang mga bookmark
 bookmarks-sidebar-content =
@@ -510,12 +525,6 @@ bookmarks-tools-sidebar-visibility =
     .label =
         { $isVisible ->
             [true] Itago ang Bookmark Sidebar
-           *[other] Ipakita ang Bookmark Sidebar
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Itago ang Bookmark Toolbar
            *[other] Ipakita ang Bookmark Sidebar
         }
 bookmarks-tools-toolbar-visibility-menuitem =
@@ -554,10 +563,15 @@ bookmarks-toolbar-placeholder-button =
 
 library-bookmarks-menu =
     .label = Mga bookmark
-library-bookmarks-bookmark-this-page =
-    .label = i-Bookmark ang Pahinang Ito
-library-bookmarks-bookmark-edit =
-    .label = i-Edit ang bookmark na ito
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = I-save sa { -pocket-brand-name }
+    .tooltiptext = I-save sa { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
 
 ## More items
 
@@ -568,3 +582,12 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = Ang ilang mga audio o video sa site na ito ay gumagamit ng software na DRM, na maaaring limitahan ang { -brand-short-name } sa kung ano ang maaaring mong gawin dito.
+
+## Password save/update panel
+
+
+## Add-on removal warning
+
+
+## Remote / Synced tabs
+

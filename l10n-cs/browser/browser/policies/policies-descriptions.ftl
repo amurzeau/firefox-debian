@@ -11,9 +11,11 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Nastavení pravidel, ke kterým mají přístup rozšíření skrze chrome.storage.managed.
+policy-AllowedDomainsForApps = Nastavení domén, které mají povolený přístup ke Google Workspace.
 policy-AppAutoUpdate = Vypnutí nebo zapnutí automatických aktualizací aplikace.
 policy-AppUpdateURL = Nastavení vlastní URL pro aktualizace aplikace.
 policy-Authentication = Konfigurace integrované autentizace webových stránek, které ji podporují.
+policy-BackgroundAppUpdate2 = Povolení nebo zákaz aktualizací na pozadí.
 policy-BlockAboutAddons = Zablokování přístupu do správce doplňků (about:addons).
 policy-BlockAboutConfig = Zablokování přístupu do editoru předvoleb (about:config).
 policy-BlockAboutProfiles = Zablokování přístupu do správce profilů (about:profiles).
@@ -133,9 +135,10 @@ policy-RequestedLocales = Nastavení seznamu požadovaných jazyků pro zobrazen
 policy-SanitizeOnShutdown2 = Vymazání dat o prohlížení během vypnutí.
 policy-SearchBar = Nastavení výchozího umístění vyhledávacího pole. Uživatel ho může přemístit.
 policy-SearchEngines = Nastavení vyhledávačů. Toto pravidlo je dostupné jen pro verzi s rozšířenou podporou (ESR).
-policy-SearchSuggestEnabled = Povolení nebo zákaz našeptávače pro vyhledávání.
+policy-SearchSuggestEnabled = Povolení nebo zákaz našeptávání dotazů pro vyhledávač.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Instalace modulů PKCS #11.
+policy-ShowHomeButton = Zobrazení domovského tlačítka na liště.
 policy-SSLVersionMax = Nastavení maximální verze SSL.
 policy-SSLVersionMin = Nastavení minimální verze SSL.
 policy-SupportMenu = Přidání vlastní položky nabídky s nápovědou.

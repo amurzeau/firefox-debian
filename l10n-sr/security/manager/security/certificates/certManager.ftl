@@ -70,7 +70,7 @@ certmgr-expires-on = Истиче
 certmgr-expires-label =
     .label = Истиче
 certmgr-email =
-    .label = Адреса е-поште
+    .label = Имејл-адреса
 certmgr-serial =
     .label = Серијски број
 certmgr-view =
@@ -138,7 +138,7 @@ pkcs12-dup-data = Сертификат и затворени кључ већ п�
 
 choose-p12-backup-file-dialog = Име датотеке за резервну копију
 file-browse-pkcs12-spec = PKCS12 датотеке
-choose-p12-restore-file-dialog = Датотека потврде за увоз
+choose-p12-restore-file-dialog = Увоз датотеке сертификата
 
 ## Import certificate(s) file dialog
 

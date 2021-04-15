@@ -28,6 +28,18 @@ search-input-box =
             [windows] Najít v možnostech
            *[other] Najít v předvolbách
         }
+settings-page-title = Nastavení
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Najít nastavení
 managed-notice = Tento prohlížeč je spravován vaší organizací.
 category-list =
     .aria-label = Kategorie
@@ -46,12 +58,22 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Synchronizace
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = Experimenty { -brand-short-name(case: "gen") }
 category-experimental =
     .tooltiptext = Experimenty { -brand-short-name(case: "gen") }
 pane-experimental-subtitle = Tady pozor!
 pane-experimental-search-results-header = Experimenty { -brand-short-name(case: "gen") }: Postupujte obezřetně!
 pane-experimental-description = Změny v pokročilé konfiguraci mohou negativně ovlivnit výkon a bezpečnost aplikace { -brand-short-name }.
+pane-experimental-description2 =
+    Změny v pokročilém nastavení mohou negativně ovlivnit výkon a bezpečnost { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "gen") }
+        [feminine] { -brand-short-name(case: "gen") }
+        [neuter] { -brand-short-name(case: "gen") }
+       *[other] aplikace { -brand-short-name }
+    }.
 pane-experimental-reset =
     .label = Obnovit výchozí nastavení
     .accesskey = O
@@ -157,6 +179,8 @@ search-results-empty-message =
         [windows] Je nám líto, pro „<span data-l10n-name="query"></span>“ jsme v možnostech nic nenašli.
        *[other] Je nám líto, pro „<span data-l10n-name="query"></span>“ jsme v předvolbách nic nenašli.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Je nám líto, pro „<span data-l10n-name="query"></span>“ jsme v nastavení nic nenašli.
 search-results-help-link =
     Potřebujete pomoc? Navštivte <a data-l10n-name="url">Podporu { -brand-short-name.gender ->
         [masculine] { -brand-short-name(case: "gen") }
@@ -457,6 +481,15 @@ update-application-check-choose =
 update-application-manual =
     .label = Nikdy nevyhledávat aktualizace (nedoporučeno)
     .accesskey = N
+update-application-background-enabled =
+    .label =
+        { -brand-short-name.gender ->
+            [masculine] Když je { -brand-short-name } vypnutý
+            [feminine] Když je { -brand-short-name } vypnutá
+            [neuter] Když je { -brand-short-name } vypnuté
+           *[other] Když je aplikace vypnutá
+        }
+    .accesskey = v
 update-application-warning-cross-user-setting =
     Toto nastavení ovlivní všechny uživatele systému Windows a jejich profily { -brand-short-name.gender ->
         [masculine] { -brand-short-name(case: "gen") }
@@ -481,6 +514,20 @@ update-setting-write-failure-message =
     } problém při ukládání změny nastavení. Změna těchto nastavení vyžaduje oprávnění k zápisu do níže uvedeného souboru. Vy nebo správce vašeho systému můžete tento problém vyřešit přidělením úplných oprávnění k tomuto souboru pro skupinu Users.
     
     Není možný zápis do souboru: { $path }
+update-setting-write-failure-title2 = Chyba při ukládání nastavení aktualizací
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name.gender ->
+        [masculine] { -brand-short-name } zaznamenal
+        [feminine] { -brand-short-name } zaznamenala
+        [neuter] { -brand-short-name } zaznamenalo
+       *[other] Aplikace { -brand-short-name } zaznamenala
+    } problém při ukládání změny nastavení. Změna těchto nastavení vyžaduje oprávnění k zápisu do níže uvedeného souboru. Vy nebo správce vašeho systému můžete tento problém vyřešit přidělením úplných oprávnění k tomuto souboru pro skupinu Users.
+    
+        Není možný zápis do souboru: { $path }
 update-in-progress-title = Probíhá aktualizace
 update-in-progress-message =
     { -brand-short-name.gender ->
@@ -690,13 +737,13 @@ search-engine-default-private-desc-2 = Vyberte odlišný výchozí vyhledávač 
 search-separate-default-engine =
     .label = Použít tento vyhledávač jako výchozí také v režimu anonymního prohlížení
     .accesskey = u
-search-suggestions-header = Našeptávání
+search-suggestions-header = Našeptávání dotazů pro vyhledávač
 search-suggestions-desc = Zvolte si, zda a jak má prohlížeč zobrazovat návrhy od vyhledávače.
 search-suggestions-option =
-    .label = Našeptávat vyhledávání
+    .label = Našeptávat dotazy pro vyhledávač
     .accesskey = n
 search-show-suggestions-url-bar-option =
-    .label = Našeptávat vyhledávání také v adresním řádku
+    .label = Našeptávat dotazy pro vyhledávač také v adresním řádku
     .accesskey = e
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
@@ -704,10 +751,11 @@ search-show-suggestions-url-bar-option =
 # "ahead" refers to location (appearing most proximate to), not time
 # (appearing before).
 search-show-suggestions-above-history-option =
-    .label = Našeptávat vyhledávání v adresním řádku nad stránkami z historie prohlížení
+    .label = Našeptávat dotazy pro vyhledávač v adresním řádku nad stránkami z historie prohlížení
 search-show-suggestions-private-windows =
-    .label = Našeptávat vyhledávání také v anonymních oknech
+    .label = Našeptávat dotazy pro vyhledávač také v anonymních oknech
 suggestions-addressbar-settings-generic = Změnit předvolby našeptávání v adresním řádku
+suggestions-addressbar-settings-generic2 = Změnit nastavení našeptávání v adresním řádku
 search-suggestions-cant-show =
     Návrhy vyhledávání se nebudou adresním řádku zobrazovat, protože jste { -brand-short-name.gender ->
         [masculine] { -brand-short-name(case: "acc") }
@@ -721,7 +769,7 @@ search-suggestions-cant-show =
        *[other] nepamatovala
     } historii.
 search-one-click-header = Vyhledávání jedním klepnutím
-search-one-click-header2 = Zkratky vyhledávání
+search-one-click-header2 = Vyhledávače
 search-one-click-desc = Vyberte další vyhledávače, které se zobrazí v nabídce adresního řádku a vyhledávacího pole.
 search-choose-engine-column =
     .label = Vyhledávač
@@ -753,6 +801,8 @@ containers-back-button =
             [windows] Zpět do Možností
            *[other] Zpět do Předvoleb
         }
+containers-back-button2 =
+    .aria-label = Zpět do nastavení
 containers-header = Kontejnerové panely
 containers-add-button =
     .label = Přidat kontejner
@@ -762,6 +812,8 @@ containers-new-tab-check =
     .accesskey = t
 containers-preferences-button =
     .label = Předvolby
+containers-settings-button =
+    .label = Nastavení
 containers-remove-button =
     .label = Odstranit
 
@@ -772,6 +824,10 @@ sync-signedout-caption = Vezměte si web s sebou
 sync-signedout-description = Synchronizujte své záložky, historii, panely, hesla, doplňky a předvolby ve všech svých zařízeních.
 sync-signedout-account-signin2 =
     .label = Přihlášení k { -sync-brand-short-name(case: "dat") }…
+    .accesskey = i
+sync-signedout-description2 = Synchronizujte své záložky, historii, panely, hesla, doplňky a nastavení ve všech svých zařízeních.
+sync-signedout-account-signin3 =
+    .label = Přihlásit se k synchronizaci…
     .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -812,6 +868,10 @@ prefs-sync-setup =
     .label = Nastavit { -sync-brand-short-name(case: "acc") }…
     .accesskey = N
 prefs-sync-offer-setup-label = Synchronizujte své záložky, historii, panely, hesla, doplňky a předvolby ve všech svých zařízeních.
+prefs-sync-turn-on-syncing =
+    .label = Zapnout synchronizaci…
+    .accesskey = s
+prefs-sync-offer-setup-label2 = Synchronizujte své záložky, historii, panely, hesla, doplňky a nastavení ve všech svých zařízeních.
 prefs-sync-now =
     .labelnotsyncing = Synchronizovat
     .accesskeynotsyncing = S
@@ -832,6 +892,7 @@ sync-currently-syncing-prefs =
         [windows] Možnosti
        *[other] Předvolby
     }
+sync-currently-syncing-settings = Nastavení
 sync-change-options =
     .label = Změnit…
     .accesskey = Z
@@ -883,6 +944,10 @@ sync-engine-prefs =
             [windows] M
            *[other] P
         }
+sync-engine-settings =
+    .label = Nastavení
+    .tooltiptext = Nastavení v sekcích Obecné a Soukromí a zabezpečení
+    .accesskey = s
 
 ## The device name controls.
 
@@ -1098,7 +1163,7 @@ addressbar-locbar-topsites-option =
 addressbar-locbar-engines-option =
     .label = Vyhledávače
     .accesskey = a
-addressbar-suggestions-settings = Nastavit našeptávání vyhledávače
+addressbar-suggestions-settings = Nastavit našeptávání dotazů pro vyhledávač
 
 ## Privacy Section - Content Blocking
 
@@ -1247,13 +1312,7 @@ collection-description =
        *[other] aplikace { -brand-short-name }
     }. Před odesíláním osobních dat vždy žádáme o váš souhlas.
 collection-privacy-notice = Zásady ochrany osobních údajů
-collection-health-report-telemetry-disabled =
-    Odesílat { -vendor-short-name.gender ->
-        [masculine] { -vendor-short-name(case: "dat") }
-        [feminine] { -vendor-short-name(case: "dat") }
-        [neuter] { -vendor-short-name(case: "dat") }
-       *[other] společnosti { -vendor-short-name }
-    } technická data a data o interakcích není nadále povoleno. Všechna historická data budou smazána během 30 dnů.
+collection-health-report-telemetry-disabled = Odesílat { -vendor-short-name(case: "dat") } technická data a data o interakcích není nadále povoleno. Všechna historická data budou smazána během 30 dnů.
 collection-health-report-telemetry-disabled-link = Zjistit více
 collection-health-report =
     .label =
@@ -1374,6 +1433,23 @@ space-alert-under-5gb-message =
         [neuter] { -brand-short-name(case: "dat") }
        *[other] Aplikaci { -brand-short-name }
     } dochází místo na disku. Obsah webové stránky se nemusí zobrazit správně. Klepněte na „Dozvědět se více“ o optimalizaci využití disku k lepšímu prohlížení webu.
+space-alert-over-5gb-settings-button =
+    .label = Otevřít Nastavení
+    .accesskey = O
+space-alert-over-5gb-message2 =
+    <strong>{ -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "dat") }
+        [feminine] { -brand-short-name(case: "dat") }
+        [neuter] { -brand-short-name(case: "dat") }
+       *[other] Aplikaci { -brand-short-name }
+    } dochází místo na disku.</strong> Obsah webové stránky se nemusí zobrazit správně. Uložená data stránky můžete vymazat v Nastavení  > Soukromí a zabezpečení > Cookies a data stránek.
+space-alert-under-5gb-message2 =
+    <strong>{ -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "dat") }
+        [feminine] { -brand-short-name(case: "dat") }
+        [neuter] { -brand-short-name(case: "dat") }
+       *[other] Aplikaci { -brand-short-name }
+    } dochází místo na disku.</strong> Obsah webové stránky se nemusí zobrazit správně. Klepněte na „Dozvědět se více“ o optimalizaci využití disku k lepšímu prohlížení webu.
 
 ## Privacy Section - HTTPS-Only
 

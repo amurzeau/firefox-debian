@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = Llwytho diweddariad { -brand-shorter-name } i lawr
+appmenuitem-update-banner2 =
+    .label-update-downloading = Llwytho diweddariad { -brand-shorter-name } i lawr
+    .label-update-available = Diweddariad ar gael — llwythwch i lawr nawr
+    .label-update-manual = Diweddariad ar gael — llwythwch i lawr nawr
+    .label-update-unsupported = Methu diweddaru
+    .label-update-restart = Diweddariad ar gael — ail gychwynnwch nawr
 appmenuitem-protection-dashboard-title = Bwrdd Gwaith Diogelwch
 appmenuitem-customize-mode =
     .label = Cyfaddasu…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = Cyfrineiriau
 appmenuitem-extensions-and-themes =
     .label = Estyniadau a Themâu
+appmenuitem-addons-and-themes =
+    .label = Ychwanegion a Themâu
 appmenuitem-find-in-page =
     .label = Canfod ar Dudalen…
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Cau Dewislen y Rhaglen
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Gadael
+           *[other] Gadael
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Agor Dewislen y Rhaglen
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Cau Dewislen y Rhaglen
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Cydweddu Nawr
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Cydweddu Nawr
-    .value = Cydweddu Nawr
+appmenu-remote-tabs-sign-into-sync =
+    .label = Mewngofnodi i Sync…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Cychwyn Sync…
+appmenuitem-fxa-toolbar-sync-now2 = Cydweddu Nawr
 appmenuitem-fxa-manage-account = Rheoli Cyfrif
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = Cydweddwyd diwethaf { $time }
     .label = Cydweddwyd diwethaf { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Cydweddu a Chadw Data
+appmenu-fxa-sync-and-save-data2 = Cydweddu a chadw data
 appmenu-fxa-signed-in-label = Mewngofnodi
 appmenu-fxa-setup-sync =
     .label = Cychwyn Cydweddu…
@@ -135,29 +159,17 @@ appmenu-help-header =
 appmenu-about =
     .label = Ynghylch { -brand-shorter-name }
     .accesskey = n
-appmenu-help-product =
-    .label = Cymorth { -brand-shorter-name }
-    .accesskey = m
-appmenu-help-show-tour =
-    .label = Cyflwyno { -brand-shorter-name }
-    .accesskey = C
-appmenu-help-import-from-another-browser =
-    .label = Mewnforio o Borwr arall ...
-    .accesskey = M
-appmenu-help-keyboard-shortcuts =
-    .label = Llwybrau Byr Bysellfwrdd
-    .accesskey = B
 appmenu-get-help =
     .label = Derbyn Cymorth
     .accesskey = D
 appmenu-help-troubleshooting-info =
     .label = Gwybodaeth am Ddatrys Problemau
     .accesskey = G
+appmenu-help-taskmanager =
+    .label = Rheolwr Tasgau
 appmenu-help-more-troubleshooting-info =
     .label = Rhagor o Wybodaeth Datrys Problemau
     .accesskey = D
-appmenu-help-taskmanager =
-    .label = Rheolwr Tasgau
 appmenu-help-report-site-issue =
     .label = Adrodd ar Fater Gwefan…
 appmenu-help-feedback-page =
@@ -177,9 +189,9 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Y Modd Datrys Problemau
-    .accesskey = P
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Y Modd Datrys Problemau…
+    .accesskey = M
 appmenu-help-exit-troubleshoot-mode =
     .label = Diffodd y Modd Dartrys Problemau
     .accesskey = D
@@ -194,13 +206,10 @@ appmenu-help-not-deceptive =
     .label = Nid yw hon yn wefan twyllodrus…
     .accesskey = t
 
-##
-
-appmenu-help-check-for-update =
-    .label = Gwirio am Ddiweddariadau…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Cyfaddasu'r Bar Offer…
+appmenu-taskmanager =
+    .label = Rheolwr Tasgau
 appmenu-developer-tools-subheader = Offer y Porwr

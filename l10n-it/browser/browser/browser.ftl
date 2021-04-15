@@ -261,11 +261,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Aggiungi segnalibro
+bookmarks-edit-bookmark = Modifica segnalibro
+bookmark-panel-cancel =
+    .label = Annulla
+    .accesskey = A
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [1] Elimina segnalibro
+           *[other] Elimina { $count } segnalibri
+        }
+    .accesskey = s
 bookmark-panel-show-editor-checkbox =
     .label = Visualizza editor quando si salva
     .accesskey = V
 bookmark-panel-done-button =
     .label = Fatto
+bookmark-panel-save-button =
+    .label = Salva
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -285,6 +301,8 @@ identity-passive-loaded = Alcuni elementi di questa pagina non sono sicuri (ad e
 identity-active-loaded = La protezione è disattivata per questa pagina.
 identity-weak-encryption = Questa pagina utilizza una crittografia debole.
 identity-insecure-login-forms = Gli accessi effettuati in questa pagina potrebbero essere vulnerabili.
+identity-permissions =
+    .value = Permessi
 identity-https-only-connection-upgraded = (aggiornato a HTTPS)
 identity-https-only-label = Modalità solo HTTPS
 identity-https-only-dropdown-on =
@@ -296,8 +314,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Attivare la modalità solo HTTPS per fare in modo che { -brand-short-name } aggiorni la connessione quando possibile.
 identity-https-only-info-turn-off2 = Se la pagina non funziona correttamente, provare a disattivare per questo sito la modalità solo HTTPS per ricaricare utilizzando una connessione non sicura HTTP.
 identity-https-only-info-no-upgrade = Impossibile aggiornare la connessione da HTTP.
-identity-permissions =
-    .value = Permessi
 identity-permissions-storage-access-header = Cookie intersito
 identity-permissions-storage-access-hint = Questi soggetti possono utilizzare cookie intersito e dati dei siti web quando ti trovi in questo sito.
 identity-permissions-reload-hint = Potrebbe essere necessario ricaricare la pagina per rendere effettive le modifiche.
@@ -345,8 +361,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Riproduzione in corso
-browser-tab-audio-muted = Audio disattivato
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = RIPRODUZIONE IN CORSO
 # This label should be written in all capital letters if your locale supports them.
@@ -365,13 +379,11 @@ browser-tab-mute =
         [1] DISATTIVA AUDIO
        *[other] DISATTIVA AUDIO ({ $count } SCHEDE)
     }
-
 browser-tab-unmute =
     { $count ->
         [1] ATTIVA AUDIO
        *[other] ATTIVA AUDIO ({ $count } SCHEDE)
     }
-
 browser-tab-unblock =
     { $count ->
         [1] AVVIA RIPRODUZIONE
@@ -383,7 +395,7 @@ browser-tab-unblock =
 browser-import-button2 =
     .label = Importa segnalibri…
     .tooltiptext = Importa i segnalibri di un altro browser in { -brand-short-name }.
-bookmarks-toolbar-empty-message = Salva i tuoi segnalibri qui, nella Barra dei segnalibri, per accedervi più rapidamente. <a data-l10n-name="manage-bookmarks">Gestisci i segnalibri…</a>
+bookmarks-toolbar-empty-message = Salva i tuoi segnalibri qui, nella barra dei segnalibri, per accedervi più rapidamente. <a data-l10n-name="manage-bookmarks">Gestisci i segnalibri…</a>
 
 ## WebRTC Pop-up notifications
 
@@ -410,16 +422,15 @@ popup-screen-sharing-not-now =
 popup-screen-sharing-never =
     .label = Mai
     .accesskey = M
+popup-silence-notifications-checkbox = Disattiva notifiche di { -brand-short-name } durante la condivisione
+popup-silence-notifications-checkbox-warning = { -brand-short-name } non visualizzerà notifiche durante la condivisione.
 popup-screen-sharing-block =
     .label = Blocca
     .accesskey = B
 popup-screen-sharing-always-block =
     .label = Blocca sempre
     .accesskey = s
-
 popup-mute-notifications-checkbox = Disattiva notifiche dai siti web durante la condivisione
-popup-silence-notifications-checkbox = Disattiva notifiche di { -brand-short-name } durante la condivisione
-popup-silence-notifications-checkbox-warning = { -brand-short-name } non visualizzerà notifiche durante la condivisione.
 
 ## WebRTC window or screen share tab switch warning
 
@@ -437,9 +448,9 @@ enable-devtools-popup-description = Per utilizzare la scorciatoia da tastiera F1
 ## URL Bar
 
 urlbar-default-placeholder =
-    .defaultPlaceholder = Inserisci un indirizzo o avvia una ricerca
+    .defaultPlaceholder = Cerca o inserisci un indirizzo
 urlbar-placeholder =
-    .placeholder = Inserisci un indirizzo o avvia una ricerca
+    .placeholder = Cerca o inserisci un indirizzo
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -527,6 +538,13 @@ urlbar-result-action-tabtosearch-web = Cerca con { $engine } direttamente dalla 
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Cerca in { $engine } direttamente dalla barra degli indirizzi
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Copia
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -568,8 +586,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Visualizza tutti i segnalibri
-bookmarks-recent-bookmarks =
-    .value = Aggiunti di recente
 bookmarks-manage-bookmarks =
     .label = Gestisci segnalibri
 bookmarks-recent-bookmarks-panel =
@@ -590,12 +606,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Nascondi la barra laterale dei segnalibri
            *[other] Visualizza la barra laterale dei segnalibri
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Nascondi la barra dei segnalibri
-           *[other] Visualizza la barra dei segnalibri
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -642,12 +652,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Segnalibri
-library-bookmarks-bookmark-this-page =
-    .label = Aggiungi pagina ai segnalibri
-library-bookmarks-bookmark-edit =
-    .label = Modifica segnalibro
 library-recent-activity-title =
     .value = Attività recente
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Salva in { -pocket-brand-name }
+    .tooltiptext = Salva in { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Componenti aggiuntivi e temi
+    .tooltiptext = Gestisci componenti aggiuntivi e temi ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Impostazioni
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Apri le impostazioni ({ $shortcut })
+           *[other] Apri le impostazioni
+        }
 
 ## More items
 
@@ -674,3 +703,9 @@ panel-save-update-password = Password
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = Rimuovere { $name }?
 addon-removal-abuse-report-checkbox = Segnala questa estensione a { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Gestisci account
+remote-tabs-sync-now = Sincronizza adesso

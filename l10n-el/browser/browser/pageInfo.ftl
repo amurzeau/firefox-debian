@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/. --
 
 page-info-window =
-    .style = width: 530px; min-height: 480px;
+    .style = width: 600px; min-height: 550px;
 copy =
     .key = C
 menu-copy =
@@ -115,6 +115,9 @@ security-site-data-cookies = Ναι, cookies και { $value } { $unit } δεδ�
 security-site-data-only = Ναι, { $value } { $unit } δεδομένων ιστοσελίδων
 security-site-data-cookies-only = Ναι, cookies
 security-site-data-no = Όχι
+
+##
+
 image-size-unknown = Άγνωστο
 page-info-not-specified =
     .value = Δεν έχει καθοριστεί
@@ -141,7 +144,7 @@ general-strict-mode =
     .value = Λειτουργία σύμφωνα με τα πρότυπα
 page-info-security-no-owner =
     .value = Αυτή η ιστοσελίδα δεν παρέχει πληροφορίες ιδιοκτησίας.
-media-select-folder = Επιλέξτε ένα φάκελο για αποθήκευση εικόνων
+media-select-folder = Επιλέξτε έναν φάκελο για αποθήκευση εικόνων
 media-unknown-not-cached =
     .value = Άγνωστο (όχι σε μνήμη cache)
 permissions-use-default =
@@ -226,6 +229,6 @@ media-block-image =
 # Variables:
 #   $website (string) — The url of the website pageInfo is getting info for
 page-info-page =
-    .title = Πληροφορίες σελίδας - { $website }
+    .title = Πληροφορίες σελίδας — { $website }
 page-info-frame =
-    .title = Πληροφορίες πλαισίου - { $website }
+    .title = Πληροφορίες πλαισίου — { $website }

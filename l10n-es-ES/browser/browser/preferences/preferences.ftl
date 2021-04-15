@@ -28,6 +28,18 @@ search-input-box =
             [windows] Encontrar en Opciones
            *[other] Encontrar en Preferencias
         }
+settings-page-title = Ajustes
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Buscar en ajustes
 managed-notice = Su navegador está siendo administrado por su organización.
 category-list =
     .aria-label = Categorías
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Sincronización
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = Experimentos de { -brand-short-name }
 category-experimental =
     .tooltiptext = Experimentos de { -brand-short-name }
 pane-experimental-subtitle = Continuar con precaución
 pane-experimental-search-results-header = Experimentos de { -brand-short-name }: Proceder con precaución
 pane-experimental-description = Cambiar las preferencias de configuración avanzada puede afectar el rendimiento o la seguridad de { -brand-short-name }.
+pane-experimental-description2 = Cambiar los ajustes de configuración avanzada puede afectar el rendimiento o la seguridad de { -brand-short-name }.
 pane-experimental-reset =
     .label = Restaurar predeterminados
     .accesskey = R
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] ¡Lo sentimos! No hay resultados para "<span data-l10n-name="query"></span>" en Opciones.
        *[other] ¡Lo sentimos! No hay resultados para "<span data-l10n-name="query"></span>" en Preferencias.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = ¡Lo sentimos! No hay resultados para "<span data-l10n-name="query"></span>" en los ajustes.
 search-results-help-link = ¿Necesita ayuda? Visite <a data-l10n-name="url">Ayuda de { -brand-short-name }</a>
 
 ## General Section
@@ -369,6 +387,9 @@ update-application-check-choose =
 update-application-manual =
     .label = No buscar actualizaciones (no recomendado)
     .accesskey = N
+update-application-background-enabled =
+    .label = Cuando { -brand-short-name } no se esté ejecutando
+    .accesskey = C
 update-application-warning-cross-user-setting = Esta configuración se aplicará a todas las cuentas de Windows y los perfiles { -brand-short-name } usando esta instalación de { -brand-short-name }.
 update-application-use-service =
     .label = Usar un servicio en segundo plano para instalar actualizaciones
@@ -380,6 +401,15 @@ update-setting-write-failure-title = Error al guardar las preferencias de actual
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
     { -brand-short-name } ha encontrado un error y no ha guardado los cambios.  Tenga en cuenta que establecer esta preferencia de actualización requiere permiso para escribir en el archivo indicado a continuación. Usted o un administrador del sistema pueden resolver el error otorgando al grupo de Usuarios el control total de este archivo.
+    
+    No se puede escribir en el archivo: { $path }
+update-setting-write-failure-title2 = Error al guardar los ajustes de actualización
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name } ha encontrado un error y no ha guardado este cambio.  Tenga en cuenta que establecer este ajuste de actualización requiere permiso para escribir en el archivo indicado a continuación. Usted o un administrador del sistema pueden resolver el error otorgando al grupo de Usuarios el control total de este archivo.
     
     No se puede escribir en el archivo: { $path }
 update-in-progress-title = Actualización en curso
@@ -432,7 +462,7 @@ browsing-picture-in-picture-toggle-enabled =
     .accesskey = A
 browsing-picture-in-picture-learn-more = Saber más
 browsing-media-control =
-    .label = Controle los medios con el teclado, los auriculares o la interfaz virtual
+    .label = Controlar los medios con el teclado, los auriculares o la interfaz virtual
     .accesskey = v
 browsing-media-control-learn-more = Saber más
 browsing-cfr-recommendations =
@@ -579,6 +609,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Mostrar sugerencias de búsqueda en ventanas privadas
 suggestions-addressbar-settings-generic = Cambiar preferencias para otras sugerencias de la barra de direcciones
+suggestions-addressbar-settings-generic2 = Cambiar configuración para otras sugerencias de la barra de direcciones
 search-suggestions-cant-show = Las sugerencias de búsqueda no se mostrarán en los resultados de la barra de direcciones porque ha configurado { -brand-short-name } para que nunca recuerde el historial.
 search-one-click-header = Buscadores con un clic
 search-one-click-header2 = Atajos de búsqueda
@@ -613,6 +644,8 @@ containers-back-button =
             [windows] Volver a Opciones
            *[other] Volver a Preferencias
         }
+containers-back-button2 =
+    .aria-label = Volver a los ajustes
 containers-header = Pestañas contenedoras
 containers-add-button =
     .label = Añadir nuevo contenedor
@@ -622,6 +655,8 @@ containers-new-tab-check =
     .accesskey = S
 containers-preferences-button =
     .label = Preferencias
+containers-settings-button =
+    .label = Ajustes
 containers-remove-button =
     .label = Eliminar
 
@@ -632,6 +667,10 @@ sync-signedout-caption = Llévese la web con usted
 sync-signedout-description = Sincronice sus marcadores, historial, pestañas, contraseñas, complementos y preferencias en todos sus dispositivos.
 sync-signedout-account-signin2 =
     .label = Iniciar sesión en{ -sync-brand-short-name }…
+    .accesskey = I
+sync-signedout-description2 = Sincronice sus marcadores, historial, pestañas, contraseñas, complementos y ajustes en todos sus dispositivos.
+sync-signedout-account-signin3 =
+    .label = Iniciar sesión para sincronizar…
     .accesskey = I
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -672,6 +711,10 @@ prefs-sync-setup =
     .label = Configurar { -sync-brand-short-name }…
     .accesskey = C
 prefs-sync-offer-setup-label = Sincronice sus marcadores, historial, pestañas, contraseñas, complementos y preferencias en todos sus dispositivos.
+prefs-sync-turn-on-syncing =
+    .label = Activar la sincronización…
+    .accesskey = s
+prefs-sync-offer-setup-label2 = Sincronice sus marcadores, historial, pestañas, contraseñas, complementos y ajustes en todos sus dispositivos.
 prefs-sync-now =
     .labelnotsyncing = Sincronizar ahora
     .accesskeynotsyncing = N
@@ -692,6 +735,7 @@ sync-currently-syncing-prefs =
         [windows] Opciones
        *[other] Preferencias
     }
+sync-currently-syncing-settings = Ajustes
 sync-change-options =
     .label = Cambiar…
     .accesskey = C
@@ -739,6 +783,10 @@ sync-engine-prefs =
         }
     .tooltiptext = Configuración general, de privacidad y de seguridad que ha cambiado
     .accesskey = S
+sync-engine-settings =
+    .label = Ajustes
+    .tooltiptext = Cambios en los ajustes de General, Privacidad y Seguridad
+    .accesskey = s
 
 ## The device name controls.
 
@@ -963,7 +1011,7 @@ enhanced-tracking-protection-setting-strict =
     .accesskey = r
 enhanced-tracking-protection-setting-custom =
     .label = Personalizado
-    .accesskey = C
+    .accesskey = P
 
 ##
 
@@ -1153,18 +1201,23 @@ space-alert-under-5gb-ok-button =
     .label = De acuerdo, entendido
     .accesskey = u
 space-alert-under-5gb-message = { -brand-short-name } se está quedando sin espacio en disco. Los contenidos del sitio web pueden no mostrarse correctamente. Visite "Saber más" para optimizar su uso de disco para mejorar la experiencia de navegación.
+space-alert-over-5gb-settings-button =
+    .label = Abrir ajustes
+    .accesskey = A
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name } se está quedando sin espacio en disco. </strong>Los contenidos del sitio web pueden no mostrarse correctamente. Puede limpiar los datos de sitios guardados en Ajustes > Privacidad & Seguridad> Cookies y datos del sitio.
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name } se está quedando sin espacio en disco.</strong> Los contenidos del sitio web pueden no mostrarse correctamente. Visite “Saber más” para optimizar su uso de disco y mejorar la experiencia de navegación.
 
 ## Privacy Section - HTTPS-Only
 
-httpsonly-header = Modo sólo-HTTPS
-httpsonly-description = HTTPS proporciona una conexión segura y cifrada entre { -brand-short-name } y los sitios web que visita. La mayoría de los sitios web admiten HTTPS, y si el modo sólo-HTTPS está habilitado, entonces { -brand-short-name } actualizará todas las conexiones a HTTPS.
+httpsonly-header = Modo solo-HTTPS
+httpsonly-description = HTTPS proporciona una conexión segura y cifrada entre { -brand-short-name } y los sitios web que visita. La mayoría de los sitios web admiten HTTPS, y si el modo solo-HTTPS está habilitado, entonces { -brand-short-name } actualizará todas las conexiones a HTTPS.
 httpsonly-learn-more = Más información
 httpsonly-radio-enabled =
-    .label = Activar el modo sólo-HTTPS en todas las ventanas
+    .label = Activar el modo solo-HTTPS en todas las ventanas
 httpsonly-radio-enabled-pbm =
-    .label = Habilite el modo sólo-HTTPS solamente en ventanas privadas
+    .label = Activar el modo solo-HTTPS solamente en ventanas privadas
 httpsonly-radio-disabled =
-    .label = No habilitar el modo sólo-HTTPS
+    .label = No activar el modo solo-HTTPS
 
 ## The following strings are used in the Download section of settings
 

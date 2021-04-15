@@ -9,11 +9,22 @@ menu-view-charset =
     .label = Codificación de texto
     .accesskey = c
 
+## Tools Menu
+
+# Since v89 we dropped the platforms distinction between Options or Preferences
+# and consolidated everything with Preferences.
+menu-tools-preferences =
+    .label = Preferencias
+    .accesskey = P
+menu-addons-and-themes =
+    .label = Complementos y temas
+    .accesskey = a
+
 ## Help Menu
 
 menu-help-enter-troubleshoot-mode =
     .label = Modo de resolución de problemas…
-    .accesskey = T
+    .accesskey = b
 menu-help-exit-troubleshoot-mode =
     .label = Desactivar el modo de resolución de problemas
     .accesskey = O

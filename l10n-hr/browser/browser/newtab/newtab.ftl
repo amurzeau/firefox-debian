@@ -19,6 +19,20 @@ newtab-search-box-search-button =
     .title = Traži
     .aria-label = Traži
 newtab-search-box-search-the-web-text = Pretraži web
+# Variables
+#  $engine (String): the name of the user's default search engine
+newtab-search-box-handoff-text = Traži pomoću { $engine } ili upiši adresu
+newtab-search-box-handoff-text-no-engine = Traži ili upiši adresu
+# Variables
+#  $engine (String): the name of the user's default search engine
+newtab-search-box-handoff-input =
+    .placeholder = Traži pomoću { $engine } ili upiši adresu
+    .title = Traži pomoću { $engine } ili upiši adresu
+    .aria-label = Traži pomoću { $engine } ili upiši adresu
+newtab-search-box-handoff-input-no-engine =
+    .placeholder = Traži ili upiši adresu
+    .title = Traži ili upiši adresu
+    .aria-label = Traži ili upiši adresu
 newtab-search-box-search-the-web-input =
     .placeholder = Pretraži web
     .title = Pretraži web
@@ -200,7 +214,7 @@ newtab-discovery-empty-section-topstories-content = Kasnije potraži daljnje pri
 newtab-discovery-empty-section-topstories-try-again-button = Pokušaj ponovo
 newtab-discovery-empty-section-topstories-loading = Učitavanje…
 # Displays when a layout in a section took too long to fetch articles.
-newtab-discovery-empty-section-topstories-timed-out = Uh! Skoro smo učitali ovaj odjeljak, ali nismo uspjeli do kraja.
+newtab-discovery-empty-section-topstories-timed-out = Uh! Nismo potpuno učitali ovaj odjeljak.
 
 ## Pocket Content Section.
 
@@ -223,9 +237,9 @@ newtab-custom-shortcuts-title = Prečaci
 newtab-custom-shortcuts-subtitle = Stranice koje spremiš ili posjetiš
 newtab-custom-row-selector =
     { $num ->
-        [one] { $num } red
-        [few] { $num } reda
-       *[other] { $num } redova
+        [one] { $num } redak
+        [few] { $num } retka
+       *[other] { $num } redaka
     }
 newtab-custom-sponsored-sites = Sponzorirani prečaci
 newtab-custom-pocket-title = Preporuke iz { -pocket-brand-name }a

@@ -205,6 +205,14 @@ search-one-offs-context-set-as-default =
 
 ## Bookmark Panel
 
+bookmark-panel-cancel =
+    .label = បោះបង់
+    .accesskey = C
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label = លុប​ចំណាំ { $count } ចេញ
+    .accesskey = R
 bookmark-panel-show-editor-checkbox =
     .label = បង្ហាញកម្មវិធីកែសម្រួលនៅពេលកំពុងរក្សាទុក
     .accesskey = ប
@@ -262,6 +270,11 @@ browser-window-close-button =
     .tooltiptext = បិទ
 
 ## Tab actions
+
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
 
 
 ## Bookmarks toolbar items
@@ -344,8 +357,6 @@ pointerlock-warning-no-domain = ឯកសារនេះ​មាន​សិទ
 
 bookmarks-show-all-bookmarks =
     .label = បង្ហាញ​ចំណាំ​ទាំងអស់
-bookmarks-recent-bookmarks =
-    .value = ដែល​បាន​ចំណាំ​ថ្មីៗ
 bookmarks-toolbar-chevron =
     .tooltiptext = បង្ហាញ​ចំណាំ​​ថែមទៀត
 bookmarks-sidebar-content =
@@ -360,12 +371,6 @@ bookmarks-tools-sidebar-visibility =
     .label =
         { $isVisible ->
             [true] លាក់​របារ​ឧបករណ៍​ចំណាំ
-           *[other] មើល​របារ​ឧបករណ៍​ចំណាំ
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] លាក់របារឧបករណ៍ចំណាំ
            *[other] មើល​របារ​ឧបករណ៍​ចំណាំ
         }
 bookmarks-tools-toolbar-visibility-menuitem =
@@ -397,10 +402,12 @@ bookmarks-toolbar-placeholder-button =
 
 library-bookmarks-menu =
     .label = ចំណាំ
-library-bookmarks-bookmark-this-page =
-    .label = ចំណាំ​ទំព័រ​នេះ
-library-bookmarks-bookmark-edit =
-    .label = កែ​សម្រួល​ចំណាំ​នេះ
+
+## Pocket toolbar button
+
+
+## Customize Toolbar Buttons
+
 
 ## More items
 
@@ -411,3 +418,12 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = វីដេអូ និង​អូឌីយ៉ូ​មួយ​ចំនួន​នៅ​លើ​វេបសាយ​នេះ​ប្រើ​កម្មវិធី DRM ដែល​អាច​ដាក់​ដែន​កំណត់​ការ​ធ្វើ​របស់​អ្នក​ជាមួយ { -brand-short-name } ។
+
+## Password save/update panel
+
+
+## Add-on removal warning
+
+
+## Remote / Synced tabs
+

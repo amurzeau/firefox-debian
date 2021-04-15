@@ -28,6 +28,18 @@ search-input-box =
             [windows] Søk i innstillinger
            *[other] Søk i innstillinger
         }
+settings-page-title = Innstillinger
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Søk i innstillinger
 managed-notice = Nettleseren din administreres av organisasjonen din.
 category-list =
     .aria-label = Kategorier
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Synkronisering
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = { -brand-short-name }-eksperiment
 category-experimental =
     .tooltiptext = { -brand-short-name }-eksperiment
 pane-experimental-subtitle = Fortsett med forsiktighet
 pane-experimental-search-results-header = { -brand-short-name }-eksperimenter: Fortsett med forsiktighet
 pane-experimental-description = Endrer du avanserte konfigurasjonsinnstillinger kan det påvirke ytelse eller sikkerhet i { -brand-short-name }.
+pane-experimental-description2 = Endrer du avanserte konfigurasjonsinnstillinger kan det påvirke ytelse eller sikkerhet i { -brand-short-name }.
 pane-experimental-reset =
     .label = Gjenopprett standard
     .accesskey = G
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] Beklager! Det er ingen resultat i innstillinger for «<span data-l10n-name="query"></span>».
        *[other] Beklager! Det er ingen resultat i innstillinger for «<span data-l10n-name="query"></span>».
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Beklager! Det er ingen resultat i innstillinger for «<span data-l10n-name="query"></span>».
 search-results-help-link = Trenger du hjelp? Gå til <a data-l10n-name="url">{ -brand-short-name } brukerstøtte</a>
 
 ## General Section
@@ -369,6 +387,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Se aldri etter oppdateringer (anbefales ikke)
     .accesskey = s
+update-application-background-enabled =
+    .label = Når { -brand-short-name } ikke kjører
+    .accesskey = N
 update-application-warning-cross-user-setting = Denne innstillingen gjelder for alle Windows-kontoer og { -brand-short-name }-profiler som bruker denne installasjonen av { -brand-short-name }.
 update-application-use-service =
     .label = Bruk en bakgrunnstjeneste for å installere oppdateringer
@@ -379,6 +400,15 @@ update-setting-write-failure-title = Kunne ikke lagre oppdateringsinnstillinger
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
+    { -brand-short-name } oppdaget en feil og lagret ikke denne endringen. Merk, for å kunne lagre endringen av denne oppdateringsinnstillingen, kreves det tillatelse til å skrive til filen nedenfor. Du eller en systemadministrator kan muligens løse feilen ved å gi gruppen Brukere full tilgang til denne filen.
+    
+    Kunne ikke skrive til filen: { $path }
+update-setting-write-failure-title2 = Kunne ikke lagre oppdateringsinnstillinger
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
     { -brand-short-name } oppdaget en feil og lagret ikke denne endringen. Merk, for å kunne lagre endringen av denne oppdateringsinnstillingen, kreves det tillatelse til å skrive til filen nedenfor. Du eller en systemadministrator kan muligens løse feilen ved å gi gruppen Brukere full tilgang til denne filen.
     
     Kunne ikke skrive til filen: { $path }
@@ -579,6 +609,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Vis søkeforslag i private vindu
 suggestions-addressbar-settings-generic = Endre innstillinger for andre adresselinjeforslag
+suggestions-addressbar-settings-generic2 = Endre innstillinger for andre adresselinjeforslag
 search-suggestions-cant-show = Søkeforslag vil ikke vises i adresselinjeresultatene fordi du har konfigurert { -brand-short-name } til å aldri huske historikk.
 search-one-click-header = Ettklikks søkemotorer
 search-one-click-header2 = Søkesnarveier
@@ -613,6 +644,8 @@ containers-back-button =
             [windows] Tilbake til innstillinger
            *[other] Tilbake til innstillinger
         }
+containers-back-button2 =
+    .aria-label = Tilbake til innstillinger
 containers-header = Innholdsfaner
 containers-add-button =
     .label = Legg til ny beholder
@@ -621,6 +654,8 @@ containers-new-tab-check =
     .label = Velg en beholder for hver ny fane
     .accesskey = V
 containers-preferences-button =
+    .label = Innstillinger
+containers-settings-button =
     .label = Innstillinger
 containers-remove-button =
     .label = Fjern
@@ -633,6 +668,10 @@ sync-signedout-description = Synkroniser bokmerker, historikk, faner, passord, u
 sync-signedout-account-signin2 =
     .label = Logg inn på { -sync-brand-short-name }…
     .accesskey = i
+sync-signedout-description2 = Synkroniser bokmerker, historikk, faner, passord, utvidelser og innstillinger på tvers av alle enhetene dine.
+sync-signedout-account-signin3 =
+    .label = Logg inn for å synkronisere…
+    .accesskey = L
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -672,6 +711,10 @@ prefs-sync-setup =
     .label = Konfigurer { -sync-brand-short-name }
     .accesskey = K
 prefs-sync-offer-setup-label = Synkroniser bokmerker, historikk, faner, passord, utvidelser og innstillinger på tvers av alle enhetene dine.
+prefs-sync-turn-on-syncing =
+    .label = Slå på synkronisering…
+    .accesskey = S
+prefs-sync-offer-setup-label2 = Synkroniser bokmerker, historikk, faner, passord, utvidelser og innstillinger på tvers av alle enhetene dine.
 prefs-sync-now =
     .labelnotsyncing = Synkroniser nå
     .accesskeynotsyncing = n
@@ -692,6 +735,7 @@ sync-currently-syncing-prefs =
         [windows] Innstillinger
        *[other] Innstillinger
     }
+sync-currently-syncing-settings = Innstillinger
 sync-change-options =
     .label = Endre…
     .accesskey = E
@@ -739,6 +783,10 @@ sync-engine-prefs =
         }
     .tooltiptext = Generelle, personvern- og sikkerhetsinnstillinger du har endret
     .accesskey = I
+sync-engine-settings =
+    .label = Innstillinger
+    .tooltiptext = Generelle, personvern- og sikkerhetsinnstillinger du har endret
+    .accesskey = n
 
 ## The device name controls.
 
@@ -1153,6 +1201,11 @@ space-alert-under-5gb-ok-button =
     .label = OK, jeg skjønner
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } er i ferd med å gå tom for plass på disken. Det kan hende at innholdet på nettsiden ikke vises ordentlig. Gå til «Les mer» for å optimalisere diskbruken din for en bedre nettleseropplevelse.
+space-alert-over-5gb-settings-button =
+    .label = Åpne Innstillinger
+    .accesskey = p
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name } er i ferd med å gå tom for plass på disken.</strong> Det kan hende at innholdet på nettstedet ikke vises ordentlig. Du kan tømme lagret data i Innstillinger > Personern og sikkerhet > Infokapsler og nettstedsdata.
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name } er i ferd med å gå tom for plass på disken.</strong> Det kan hende at innholdet på nettsiden ikke vises ordentlig. Gå til «Les mer» for å optimalisere diskbruken din for en bedre nettleseropplevelse.
 
 ## Privacy Section - HTTPS-Only
 

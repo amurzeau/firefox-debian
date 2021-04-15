@@ -11,9 +11,11 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Nastavi, do katerih pravilnikov lahko dostopajo razširitve WebExtensions preko chrome.storage.managed.
+policy-AllowedDomainsForApps = Določite domene, ki jim je dovoljen dostop do Google Workspace.
 policy-AppAutoUpdate = Omogoči ali onemogoči samodejne posodobitve programa.
 policy-AppUpdateURL = Nastavi poljuben URL za posodobitve programa.
 policy-Authentication = Nastavi integrirano overjanje za spletne strani, ki ga podpirajo.
+policy-BackgroundAppUpdate2 = Omogoči ali onemogoči storitev za posodobitve v ozadju.
 policy-BlockAboutAddons = Zavrni dostop do upravitelja dodatkov (about:addons).
 policy-BlockAboutConfig = Zavrni dostop do strani about:config.
 policy-BlockAboutProfiles = Zavrni dostop do strani about:profiles.
@@ -29,10 +31,10 @@ policy-DisableBuiltinPDFViewer = Onemogoči PDF.js, pregledovalnik PDF brskalnik
 policy-DisableDefaultBrowserAgent = Prepreči privzetemu uporabniškemu agentu izvajanje kakršnihkoli ukrepov. To velja samo za Windows, druge platforme nimajo agenta.
 policy-DisableDeveloperTools = Zavrni dostop do razvojnih orodij.
 policy-DisableFeedbackCommands = Onemogoči ukaze v meniju Pomoč za pošiljanje povratnih informacij ("Povratne informacije" in "Prijavi zavajajočo stran").
-policy-DisableFirefoxAccounts = Onemogoči storitve na osnovi { -fxaccount-brand-name }ov, na primer Sync.
+policy-DisableFirefoxAccounts = Onemogoči storitve na osnovi { -fxaccount-brand-name }ov, na primer sinhronizacijo.
 # Firefox Screenshots is the name of the feature, and should not be translated.
 policy-DisableFirefoxScreenshots = Onemogoči možnost Firefox Screenshots.
-policy-DisableFirefoxStudies = { -brand-short-name }u prepreči izvajanje raziskav.
+policy-DisableFirefoxStudies = { -brand-short-name(sklon: "dajalnik") } prepreči izvajanje raziskav.
 policy-DisableForgetButton = Prepreči dostop do gumba Pozabi.
 policy-DisableFormHistory = Ne shranjuj zgodovine iskanja in obrazcev.
 policy-DisableMasterPasswordCreation = Če je "true", glavnega gesla ni mogoče ustvariti.
@@ -86,7 +88,7 @@ policy-PrimaryPassword = Zahtevaj ali prepreči uporabo glavnega gesla.
 policy-NetworkPrediction = Omogoči ali onemogoči napovedovanje omrežja (vnaprejšnje pridobivanje DNS).
 policy-NewTabPage = Omogoči ali onemogoči stran novega zavihka.
 policy-NoDefaultBookmarks = Onemogoči ustvarjanje privzetih zaznamkov, vključenih v { -brand-short-name }, in Pametnih zaznamkov (Najbolj obiskano, Nedavne oznake). Opomba: ta pravilnik je uveljavljen, samo če je nastavljen pred prvo uporabo profila.
-policy-OfferToSaveLogins = Vsili shranjevanje prijav in gesel v { -brand-short-name }u. Možna je tako vrednost "true" kot "false".
+policy-OfferToSaveLogins = Vsili ponujanje shranjevanja prijav in gesel v { -brand-short-name }u. Možna je tako vrednost "true" kot "false".
 policy-OfferToSaveLoginsDefault = Nastavi privzeto vrednost, ki dovoljuje shranjevanje prijav in gesel v { -brand-short-name }u. Možna je tako vrednost "true" kot "false".
 policy-OverrideFirstRunPage = Preglasi stran prvega zagona. Če želite onemogočiti prikaz strani prvega zagona, nastavite pravilnik na prazno vrednost.
 policy-OverridePostUpdatePage = Preglasi stran "Kaj je novega", ki se odpre po posodobitvi. Če želite onemogočiti prikaz strani po posodobitvi, nastavite pravilnik na prazno vrednost.
@@ -106,6 +108,7 @@ policy-SearchEngines = Nastavi iskalnike. Ta pravilnik je na voljo le v izdaji E
 policy-SearchSuggestEnabled = Omogoči ali onemogoči predloge iskanja.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Namesti module PKCS #11.
+policy-ShowHomeButton = Prikaži gumb Domov v orodni vrstici.
 policy-SSLVersionMax = Nastavi najnovejšo dovoljeno različico SSL.
 policy-SSLVersionMin = Nastavi najstarejšo dovoljeno različico SSL.
 policy-SupportMenu = Dodaj poljubno povezavo za podporo v meni Pomoč.

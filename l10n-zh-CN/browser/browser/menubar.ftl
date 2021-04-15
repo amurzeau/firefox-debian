@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = 偏好设置
 menu-application-services =
     .label = 服务
 menu-application-hide-this =
@@ -252,30 +254,46 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = 登录到 { -brand-product-name }…
     .accesskey = g
-menu-tools-extensions =
+menu-tools-addons-and-themes =
     .label = 扩展和主题
-    .accesskey = E
+    .accesskey = A
 menu-tools-fxa-sign-in2 =
     .label = 登录
     .accesskey = g
 menu-tools-turn-on-sync =
     .label = 开启{ -sync-brand-short-name }…
     .accesskey = n
+menu-tools-turn-on-sync2 =
+    .label = 开启同步…
+    .accesskey = n
 menu-tools-sync-now =
     .label = 立即同步
     .accesskey = S
 menu-tools-fxa-re-auth =
-    .label = 重新绑定 { -brand-product-name }…
+    .label = 重新连接 { -brand-product-name }…
     .accesskey = R
 menu-tools-web-developer =
     .label = Web 开发者
     .accesskey = W
+menu-tools-browser-tools =
+    .label = 浏览器工具
+    .accesskey = B
+menu-tools-task-manager =
+    .label = 任务管理器
+    .accesskey = M
 menu-tools-page-source =
     .label = 页面源代码
     .accesskey = o
 menu-tools-page-info =
     .label = 页面信息
     .accesskey = I
+menu-settings =
+    .label = 设置
+    .accesskey =
+        { PLATFORM() ->
+            [windows] S
+           *[other] n
+        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -285,13 +303,6 @@ menu-preferences =
     .accesskey =
         { PLATFORM() ->
             [windows] O
-           *[other] n
-        }
-menu-settings =
-    .label = 设置
-    .accesskey =
-        { PLATFORM() ->
-            [windows] S
            *[other] n
         }
 menu-tools-layout-debugger =
@@ -306,15 +317,6 @@ menu-window-bring-all-to-front =
     .label = 全部前置
 
 ## Help Menu
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
 
 
 # NOTE: For Engineers, any additions or changes to Help menu strings should
@@ -346,11 +348,11 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = 故障排除信息
     .accesskey = T
+menu-help-taskmanager =
+    .label = 任务管理器
 menu-help-more-troubleshooting-info =
     .label = 更多故障排除信息
     .accesskey = T
-menu-help-taskmanager =
-    .label = 任务管理器
 menu-help-report-site-issue =
     .label = 反馈网站问题…
 menu-help-feedback-page =
@@ -362,8 +364,8 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = 重启浏览器并启用附加组件
     .accesskey = R
-menu-help-enter-troubleshoot-mode =
-    .label = 故障排除模式
+menu-help-enter-troubleshoot-mode2 =
+    .label = 排障模式…
     .accesskey = M
 menu-help-exit-troubleshoot-mode =
     .label = 关闭故障排除模式
@@ -376,6 +378,3 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = 这不是诈骗网站…
     .accesskey = d
-menu-help-check-for-update =
-    .label = 检查更新…
-    .accesskey = C

@@ -11,10 +11,11 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Állítson be házirendeket, amelyeket a WebExtensionök a chrome.storage.managed segítségével érhetnek el.
+policy-AllowedDomainsForApps = Adja meg azokat a domaineket, amelyek hozzáférhetnek a Google Workspace-hez.
 policy-AppAutoUpdate = Az automatikus alkalmazásfrissítés engedélyezése vagy letiltása.
 policy-AppUpdateURL = Egyéni alkalmazás-frissítési URL megadása.
 policy-Authentication = Integrált hitelesítés beállítása azokhoz a weboldalakhoz, melyek támogatják.
-policy-BackgroundAppUpdate = Engedélyezze vagy tiltsa le a háttérfrissítőt, amely frissíti a böngészőt, ha az nem fut.
+policy-BackgroundAppUpdate2 = Engedélyezze vagy tiltsa le a háttérfrissítőt.
 policy-BlockAboutAddons = Hozzáférés blokkolása a Kiegészítőkezelőhöz (about:addons).
 policy-BlockAboutConfig = Hozzáférés blokkolása az about:config oldalhoz.
 policy-BlockAboutProfiles = Hozzáférés blokkolása az about:profiles oldalhoz.
@@ -107,6 +108,7 @@ policy-SearchEngines = Keresőszolgáltatások beállításainak konfigurálása
 policy-SearchSuggestEnabled = A keresési javaslatok engedélyezése vagy letiltása.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = PKCS #11 modulok telepítése.
+policy-ShowHomeButton = A kezdőoldal gomb megjelenítése az eszköztáron.
 policy-SSLVersionMax = A legmagasabb SSL verzió beállítása.
 policy-SSLVersionMin = A legkisebb SSL verzió beállítása.
 policy-SupportMenu = Egyéni támogatási menüpont hozzáadása a súgó menühöz.

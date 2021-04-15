@@ -7,7 +7,7 @@ profiles-subtitle = 이 페이지에서는 프로필을 관리할 수 있습니�
 profiles-create = 새 프로필 만들기
 profiles-restart-title = 다시 시작
 profiles-restart-in-safe-mode = 부가 기능을 끄고 다시 시작…
-profiles-restart-normal = 정상적으로 다시 시작…
+profiles-restart-normal = 일반 모드로 다시 시작…
 profiles-conflict = { -brand-product-name }의 다른 복사본이 프로필을 변경했습니다. 변경하기 전에 { -brand-short-name }를 다시 시작해야 합니다.
 profiles-flush-fail-title = 변경 내용이 저장되지 않음
 profiles-flush-conflict = { profiles-conflict }
@@ -26,7 +26,7 @@ profiles-rootdir = 루트 디렉터리
 # In case localDir and rootDir are equal, localDir is not shown.
 profiles-localdir = 로컬 디렉터리
 profiles-current-profile = 이 프로필은 사용 중이므로 삭제할 수 없습니다.
-profiles-in-use-profile = 이 프로필을 다른 프로그램에서 사용하고 있기 때문에 삭제할 수 없습니다.
+profiles-in-use-profile = 이 프로필을 다른 애플리케이션에서 사용하고 있기 때문에 삭제할 수 없습니다.
 profiles-rename = 이름 변경
 profiles-remove = 삭제
 profiles-set-as-default = 기본 프로필로 설정

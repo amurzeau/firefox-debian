@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = { -brand-shorter-name } güncellemesi indiriliyor
+appmenuitem-update-banner2 =
+    .label-update-downloading = { -brand-shorter-name } güncellemesi indiriliyor
+    .label-update-available = Güncelleme var: Şimdi indir
+    .label-update-manual = Güncelleme var: Şimdi indir
+    .label-update-unsupported = Güncelleme yapılamadı
+    .label-update-restart = Güncelleme var: Yeniden başlat
 appmenuitem-protection-dashboard-title = Korumalar panosu
 appmenuitem-customize-mode =
     .label = Özelleştir…
@@ -20,6 +26,8 @@ appmenuitem-new-private-window =
 appmenuitem-passwords =
     .label = Parolalar
 appmenuitem-extensions-and-themes =
+    .label = Uzantılar ve temalar
+appmenuitem-addons-and-themes =
     .label = Eklentiler ve temalar
 appmenuitem-find-in-page =
     .label = Sayfada bul…
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Uygulama menüsünü kapat
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Çık
+           *[other] Çık
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Uygulama menüsünü aç
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Uygulama menüsünü kapat
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Şimdi eşitle
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Şimdi eşitle
-    .value = Şimdi eşitle
+appmenu-remote-tabs-sign-into-sync =
+    .label = Eşitlemek için giriş yap…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Eşitlemeyi başlat…
+appmenuitem-fxa-toolbar-sync-now2 = Şimdi eşitle
 appmenuitem-fxa-manage-account = Hesabı yönet
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = Son eşitleme: { $time }
     .label = Son eşitleme: { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Verileri eşitle ve kaydet
+appmenu-fxa-sync-and-save-data2 = Verileri eşitle ve kaydet
 appmenu-fxa-signed-in-label = Giriş yap
 appmenu-fxa-setup-sync =
     .label = Eşitlemeyi aç…
@@ -133,29 +157,17 @@ appmenu-help-header =
 appmenu-about =
     .label = { -brand-shorter-name } hakkında
     .accesskey = h
-appmenu-help-product =
-    .label = { -brand-shorter-name } yardımı
-    .accesskey = m
-appmenu-help-show-tour =
-    .label = { -brand-shorter-name } turu
-    .accesskey = u
-appmenu-help-import-from-another-browser =
-    .label = Başka bir tarayıcıdan içe aktar…
-    .accesskey = B
-appmenu-help-keyboard-shortcuts =
-    .label = Klavye kısayolları
-    .accesskey = K
 appmenu-get-help =
     .label = Yardım al
     .accesskey = Y
 appmenu-help-troubleshooting-info =
     .label = Sorun giderme bilgileri
     .accesskey = b
+appmenu-help-taskmanager =
+    .label = Görev yöneticisi
 appmenu-help-more-troubleshooting-info =
     .label = Sorun giderme bilgileri
     .accesskey = S
-appmenu-help-taskmanager =
-    .label = Görev yöneticisi
 appmenu-help-report-site-issue =
     .label = Siteyle ilgili sorun bildir…
 appmenu-help-feedback-page =
@@ -175,9 +187,9 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Sorun giderme modu
-    .accesskey = m
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Sorun giderme modu…
+    .accesskey = M
 appmenu-help-exit-troubleshoot-mode =
     .label = Sorun giderme modunu kapat
     .accesskey = m
@@ -192,13 +204,10 @@ appmenu-help-not-deceptive =
     .label = Bu site aldatıcı değil…
     .accesskey = d
 
-##
-
-appmenu-help-check-for-update =
-    .label = Güncellemeleri denetle…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Araç çubuğunu özelleştir…
+appmenu-taskmanager =
+    .label = Görev yöneticisi
 appmenu-developer-tools-subheader = Tarayıcı araçları

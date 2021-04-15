@@ -33,14 +33,14 @@ pill-action-edit =
     .label = Editar dirección
     .accesskey = e
 pill-action-move-to =
-    .label = Mover a
+    .label = Mover a Destinatario
     .accesskey = t
 pill-action-move-cc =
     .label = Mover a CC
     .accesskey = c
 pill-action-move-bcc =
     .label = Mover a CCO
-    .accesskey = b
+    .accesskey = o
 
 # Attachment widget
 
@@ -53,7 +53,7 @@ trigger-attachment-picker-key = A
 toggle-attachment-pane-key = M
 menuitem-toggle-attachment-pane =
     .label = Panel de adjuntos
-    .accesskey = m
+    .accesskey = n
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }
 toolbar-button-add-attachment =
     .label = Adjuntar
@@ -63,11 +63,11 @@ add-attachment-notification-reminder =
     .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 menuitem-attach-files =
     .label = Archivo(s)…
-    .accesskey = F
+    .accesskey = A
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
 context-menuitem-attach-files =
     .label = Adjuntar archivo(s)…
-    .accesskey = F
+    .accesskey = j
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count =

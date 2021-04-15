@@ -264,6 +264,18 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmark-panel-cancel =
+    .label = Loobu
+    .accesskey = L
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Eemalda järjehoidja
+           *[other] Eemalda järjehoidjad ({ $count })
+        }
+    .accesskey = E
 bookmark-panel-show-editor-checkbox =
     .label = Lisamisel kuvatakse seda dialoogi
     .accesskey = d
@@ -288,6 +300,8 @@ identity-passive-loaded = Mõned selle lehe osad on ebaturvalised (nt pildid).
 identity-active-loaded = Kaitse sellel lehel on keelatud.
 identity-weak-encryption = See leht kasutab nõrka krüpteeringut.
 identity-insecure-login-forms = Sellele lehele sisestatavad kasutajakonto andmed võivad ohus olla.
+identity-permissions =
+    .value = Õigused
 identity-https-only-connection-upgraded = (uuendati HTTPSile)
 identity-https-only-label = Ainult HTTPS-režiim
 identity-https-only-dropdown-on =
@@ -296,8 +310,6 @@ identity-https-only-dropdown-off =
     .label = väljas
 identity-https-only-dropdown-off-temporarily =
     .label = ajutiselt väljas
-identity-permissions =
-    .value = Õigused
 identity-permissions-reload-hint = Muudatuste rakendumiseks pead võib-olla lehe uuesti laadima.
 identity-permissions-empty = Sellele saidile pole tagatud ühtki eriõigust.
 identity-clear-site-data =
@@ -338,6 +350,11 @@ browser-window-close-button =
     .tooltiptext = Sulge
 
 ## Tab actions
+
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
 
 
 ## Bookmarks toolbar items
@@ -426,8 +443,6 @@ pointerlock-warning-no-domain = See dokument kontrollib sinu kursori tegevust. K
 
 bookmarks-show-all-bookmarks =
     .label = Kuva kõiki järjehoidjaid
-bookmarks-recent-bookmarks =
-    .value = Viimati järjehoidjatesse lisatud
 bookmarks-toolbar-chevron =
     .tooltiptext = Veel järjehoidjaid
 bookmarks-sidebar-content =
@@ -443,12 +458,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Peida järjehoidjate külgriba
            *[other] Kuva järjehoidjate külgriba
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Peida järjehoidjariba
-           *[other] Kuva järjehoidjariba
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -486,10 +495,15 @@ bookmarks-toolbar-placeholder-button =
 
 library-bookmarks-menu =
     .label = Järjehoidjad
-library-bookmarks-bookmark-this-page =
-    .label = Lisa see veebileht järjehoidjatesse
-library-bookmarks-bookmark-edit =
-    .label = Muuda seda järjehoidjat
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Salvesta { -pocket-brand-name }isse
+    .tooltiptext = Salvesta { -pocket-brand-name }isse
+
+## Customize Toolbar Buttons
+
 
 ## More items
 
@@ -500,3 +514,12 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = Osa sellel lehel olevast audiost või videost kasutab DRM-tarkvara, mis võib piirata seda, mida { -brand-short-name } saab lubada sul sellega teha.
+
+## Password save/update panel
+
+
+## Add-on removal warning
+
+
+## Remote / Synced tabs
+

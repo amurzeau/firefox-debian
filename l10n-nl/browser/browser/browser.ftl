@@ -266,11 +266,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Bladwijzer toevoegen
+bookmarks-edit-bookmark = Bladwijzer bewerken
+bookmark-panel-cancel =
+    .label = Annuleren
+    .accesskey = A
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Bladwijzer verwijderen
+           *[other] Bladwijzers verwijderen ({ $count })
+        }
+    .accesskey = v
 bookmark-panel-show-editor-checkbox =
     .label = Editor tonen bij opslaan
     .accesskey = E
 bookmark-panel-done-button =
     .label = Gereed
+bookmark-panel-save-button =
+    .label = Opslaan
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -290,6 +306,8 @@ identity-passive-loaded = Onderdelen van deze pagina zijn niet beveiligd (zoals 
 identity-active-loaded = U hebt bescherming op deze pagina uitgeschakeld.
 identity-weak-encryption = Deze pagina gebruikt zwakke versleuteling.
 identity-insecure-login-forms = Ingevoerde aanmeldingen op deze pagina zouden kunnen worden onderschept.
+identity-permissions =
+    .value = Toestemmingen
 identity-https-only-connection-upgraded = (geüpgraded naar HTTPS)
 identity-https-only-label = Alleen-HTTPS-modus
 identity-https-only-dropdown-on =
@@ -301,8 +319,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Schakel Alleen-HTTPS voor deze website in als u wilt dat { -brand-short-name } indien mogelijk de verbinding upgradet.
 identity-https-only-info-turn-off2 = Als de website niet lijkt te werken, dan kunt u proberen de Alleen-HTTPS-modus voor deze website uit te schakelen en de pagina te vernieuwen met het onveilige HTTP.
 identity-https-only-info-no-upgrade = Kan HTTP-verbinding niet upgraden.
-identity-permissions =
-    .value = Toestemmingen
 identity-permissions-storage-access-header = Cross-sitecookies
 identity-permissions-storage-access-hint = Deze partijen kunnen tijdens uw bezoek aan deze website cross-sitecookies en websitegegevens gebruiken.
 identity-permissions-reload-hint = Mogelijk dient u de pagina te vernieuwen om wijzigingen van kracht te laten worden.
@@ -350,8 +366,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Wordt afgespeeld
-browser-tab-audio-muted = Gedempt
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = AFSPELEN
 # This label should be written in all capital letters if your locale supports them.
@@ -360,6 +374,29 @@ browser-tab-audio-muted2 = GEDEMPT
 browser-tab-audio-blocked = AUTOMATISCH AFSPELEN GEBLOKKEERD
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = PICTURE-IN-PICTURE
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] TABBLAD DEMPEN
+        [one] TABBLAD DEMPEN
+       *[other] { $count } TABBLADEN DEMPEN
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] TABBLAD DEMPEN OPHEFFEN
+        [one] TABBLAD DEMPEN OPHEFFEN
+       *[other] { $count } TABBLADEN DEMPEN OPHEFFEN
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] TABBLAD AFSPELEN
+        [one] TABBLAD AFSPELEN
+       *[other] { $count } TABBLADEN AFSPELEN
+    }
 
 ## Bookmarks toolbar items
 
@@ -379,9 +416,13 @@ popup-select-microphone =
 popup-select-camera-device =
     .value = Camera:
     .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = Camera
 popup-select-microphone-device =
     .value = Microfoon:
     .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Microfoon
 popup-all-windows-shared = Alle zichtbare vensters op uw scherm worden gedeeld.
 popup-screen-sharing-not-now =
     .label = Niet nu
@@ -507,6 +548,13 @@ urlbar-result-action-tabtosearch-web = Met { $engine } rechtstreeks vanuit de ad
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = { $engine } rechtstreeks vanuit de adresbalk doorzoeken
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Kopiëren
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -548,8 +596,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Alle bladwijzers tonen
-bookmarks-recent-bookmarks =
-    .value = Recent aangemaakte bladwijzers
 bookmarks-manage-bookmarks =
     .label = Bladwijzers beheren
 bookmarks-recent-bookmarks-panel =
@@ -570,12 +616,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Bladwijzerzijbalk verbergen
            *[other] Bladwijzerzijbalk weergeven
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Bladwijzerwerkbalk verbergen
-           *[other] Bladwijzerwerkbalk weergeven
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -622,12 +662,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Bladwijzers
-library-bookmarks-bookmark-this-page =
-    .label = Bladwijzer voor deze pagina maken
-library-bookmarks-bookmark-edit =
-    .label = Deze bladwijzer bewerken
 library-recent-activity-title =
     .value = Recente activiteit
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Opslaan naar { -pocket-brand-name }
+    .tooltiptext = Opslaan naar { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Add-ons en thema’s
+    .tooltiptext = Uw add-ons en thema’s beheren ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Instellingen
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Instellingen openen ({ $shortcut })
+           *[other] Instellingen openen
+        }
 
 ## More items
 
@@ -642,3 +701,21 @@ eme-notifications-drm-content-playing-manage = Instellingen beheren
 eme-notifications-drm-content-playing-manage-accesskey = b
 eme-notifications-drm-content-playing-dismiss = Sluiten
 eme-notifications-drm-content-playing-dismiss-accesskey = S
+
+## Password save/update panel
+
+panel-save-update-username = Gebruikersnaam
+panel-save-update-password = Wachtwoord
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = { $name } verwijderen?
+addon-removal-abuse-report-checkbox = Deze extensie rapporteren aan { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Account beheren
+remote-tabs-sync-now = Nu synchroniseren

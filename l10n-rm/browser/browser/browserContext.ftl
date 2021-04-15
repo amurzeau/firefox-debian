@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Ina pagina enavos ({ $shortcut })
     .aria-label = Enavos
     .accesskey = E
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Enavos
+    .accesskey = E
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Ina pagina enavant ({ $shortcut })
     .aria-label = Enavant
     .accesskey = n
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Enavant
+    .accesskey = n
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Chargiar danovamain
     .accesskey = r
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Chargiar danovamain
+    .accesskey = r
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Stop
     .accesskey = S
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Stop
+    .accesskey = S
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Agiuntar in segnapagina per la pagina
     .accesskey = t
     .tooltiptext = Agiuntar in segnapagina
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Agiuntar in segnapagina per la pagina
+    .accesskey = n
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Modifitgar il segnapagina
+    .accesskey = M
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Avrir la colliaziun en in nov tab da container
     .accesskey = C
-main-context-menu-open-link-container =
-    .label = Avrir la colliaziun en in nov container
-    .accesskey = v
 main-context-menu-open-link-new-window =
     .label = Avrir la colliaziun en ina nova fanestra
     .accesskey = f
@@ -347,6 +378,9 @@ main-context-menu-suggest-strong-password =
     .accesskey = P
 main-context-menu-manage-logins =
     .label = Administrar las datas d'annunzia…
+    .accesskey = m
+main-context-menu-manage-logins2 =
+    .label = Administrar las datas d'annunzia
     .accesskey = m
 main-context-menu-keyword =
     .label = Agiuntar in pled magic per questa tschertga…

@@ -14,6 +14,13 @@ duplicate-tab =
 duplicate-tabs =
     .label = كرّر الألسنة
     .accesskey = ك
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = أغلِق الألسنة على اليمين
+    .accesskey = م
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = أغلق الألسنة على اليسار
     .accesskey = س
@@ -44,6 +51,9 @@ bookmark-tab =
 reopen-in-container =
     .label = أعِد فتحه في الحاوية
     .accesskey = ع
+tab-context-open-in-new-container-tab =
+    .label = افتح في لسانٍ حاوٍ جديد
+    .accesskey = س
 move-to-start =
     .label = انقل إلى البداية
     .accesskey = د
@@ -56,6 +66,11 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = أغلِق أكثر من لسان
     .accesskey = ك
+tab-context-share-url =
+    .label = شارِك
+    .accesskey = ش
+tab-context-share-more =
+    .label = أكثر
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -84,6 +99,18 @@ move-tabs =
 move-tab =
     .label = انقل اللسان
     .accesskey = ق
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] أعِد فتح اللسان المغلق
+            [zero] أعِد فتح اللسان المغلق
+            [one] أعِد فتح اللسان المغلق
+            [two] أعِد فتح اللسانين المغلقين
+            [few] أعِد فتح الألسنة المغلقة
+            [many] أعِد فتح الألسنة المغلقة
+           *[other] أعِد فتح الألسنة المغلقة
+        }
+    .accesskey = ع
 tab-context-close-tabs =
     .label =
         { $tabCount ->

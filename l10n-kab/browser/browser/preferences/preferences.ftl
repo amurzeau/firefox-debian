@@ -28,6 +28,18 @@ search-input-box =
             [windows] Af deg iɣewwaṛen
            *[other] Af deg ismenyifen
         }
+settings-page-title = Iɣewwaren
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Af deg yiɣewwaren
 managed-notice = Iminig-ik tessefrak-it tuddsa-ik.
 category-list =
     .aria-label = Taggayin
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Sync
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = { -brand-short-name } Tirma
 category-experimental =
     .tooltiptext = { -brand-short-name } Tirma
 pane-experimental-subtitle = Kemmel, maca ɣur-k.
 pane-experimental-search-results-header = { -brand-short-name } Tirma: ddu kan s leεqel
 pane-experimental-description = Abeddel n yismenyifen n twila leqqayen zemren ad ḥazen tamlellit neɣ taɣellist n { -brand-short-name }.
+pane-experimental-description2 = Abeddel n yiɣewwaren n twila lqayen zemren ad ḥazen tamlellit neɣ taɣellist n { -brand-short-name }.
 pane-experimental-reset =
     .label = Err-d iɣewwaren imezwer
     .accesskey = R
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] Nesḥasef! Ulac igemaḍ deg iɣewwaṛen i "<span data-l10n-name="query"></span>".
        *[other] Nesḥasef! Ulac igmaḍ deg ismenyifen i "<span data-l10n-name="query"></span>"
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Nesḥassef! Ulac igmaḍ deg yiɣewwaren i "<span data-l10n-name="query"></span>"
 search-results-help-link = Tesriḍ tallelt? Rzu γer <a data-l10n-name="url">{ -brand-short-name } Tallelt</a>
 
 ## General Section
@@ -369,6 +387,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Werǧin ad tnadiḍ ileqman (mačči d ayen ilhan)
     .accesskey = W
+update-application-background-enabled =
+    .label = Mi ara yili { -brand-short-name } ur iteddu ara
+    .accesskey = M
 update-application-warning-cross-user-setting = Aɣewwaṛ-a ad yeḍḍu ɣef yimiḍanen meṛṛa n Windows akked yimeɣna { -brand-short-name } i yesseqdacen asbeddi n { -brand-short-name }.
 update-application-use-service =
     .label = Seqdec ameẓlu n ugilal i usebded n ileqman
@@ -380,6 +401,15 @@ update-setting-write-failure-title = Tuccḍa deg usekles n yismenyifen n uleqqe
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
     { -brand-short-name } yemmuger-d tuccḍa ihi ur izmir ara ad isekles abeddel-a. Ẓeṛ d akken abeddel n usmenyif-a n uleqqem, yesra tasiregt n tira deg ufaylu ddaw-a. Kečč neɣ andbal n unagraw, tzemreḍ ahat ad tesseɣtiḍ tuccḍa s umuddun n tisrag ummid ɣer ufaylu-a i ugraw Users.
+    
+    Ur yezmir ad yaru deg ufaylu: { $path }
+update-setting-write-failure-title2 = Tuccḍa deg usekles n yiɣewwaren n uleqqem
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name } yemmuger-d tuccḍa ihi ur izmir ara ad isekles abeddel-a. Ẓer belli abeddel n uɣewwar-a n uleqqem, yesra tasiregt n tira deg ufaylu ddaw-a. Kečč neɣ andbal n unagraw, tzemreḍ ahat ad tesseɣtiḍ tuccḍa s umuddun n tisrag ummid ɣer ufaylu-a i ugraw Users.
     
     Ur yezmir ad yaru deg ufaylu: { $path }
 update-in-progress-title = Aleqqem itteddu
@@ -579,6 +609,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Sken isumar n unadi deg isfuyla n tunigin tusligin
 suggestions-addressbar-settings-generic = Snifel ismenyifen i yisumar n ufeggag n tansa
+suggestions-addressbar-settings-generic2 = Snifel iɣewwaren i yisumar n ufeggag n tansa
 search-suggestions-cant-show = Anadi n isumar ur d ittwaskan ara deg yigmaḍ n ufeggag n tansa acku tsewleḍ { -brand-short-name } akken ur iḥerrez ara azray.
 search-one-click-header = Imseddayen n unadi ara tkecmeḍ s yiwen n usiti
 search-one-click-header2 = Nadi inegzumen
@@ -613,6 +644,8 @@ containers-back-button =
             [windows] Uɣal ɣer iɣewwaṛen
            *[other] Uɣal ɣer ismenyifen
         }
+containers-back-button2 =
+    .aria-label = Uɣal ɣer yiɣewwaren
 containers-header = Iccaren imagbaren
 containers-add-button =
     .label = Rnu amagbar-nniḍen
@@ -622,6 +655,8 @@ containers-new-tab-check =
     .accesskey = F
 containers-preferences-button =
     .label = Ismenyifen
+containers-settings-button =
+    .label = Iɣewwaren
 containers-remove-button =
     .label = Kkes
 
@@ -633,6 +668,10 @@ sync-signedout-description = Semtawi ticraḍ-inek n yisebtar, azray, accaren, a
 sync-signedout-account-signin2 =
     .label = Qqen ɣer { -sync-brand-short-name }…
     .accesskey = Q
+sync-signedout-description2 = Semtawi ticraḍ-inek n isebtar, amazray, awalen uffiren, izegrar, d yiɣewwaren akked ibenkan-inek akk.
+sync-signedout-account-signin3 =
+    .label = Kcem akken ad yemtawi…
+    .accesskey = c
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -672,6 +711,10 @@ prefs-sync-setup =
     .label = Sbadu { -sync-brand-short-name }...
     .accesskey = S
 prefs-sync-offer-setup-label = Mtawi ticraḍ-ik n yisebtar, azray, iccaren, awalen uffiren, izegrar akked ismenyifen gar yibenkan-ik.
+prefs-sync-turn-on-syncing =
+    .label = Rmed amtawi…
+    .accesskey = m
+prefs-sync-offer-setup-label2 = Semtawi ticraḍ-inek n isebtar, amazray, awalen uffiren, izegrar, d yiɣewwaren akked ibenkan-inek akk.
 prefs-sync-now =
     .labelnotsyncing = Mtawi tura
     .accesskeynotsyncing = T
@@ -692,6 +735,7 @@ sync-currently-syncing-prefs =
         [windows] Iɣewwaṛen
        *[other] Ismenyifen
     }
+sync-currently-syncing-settings = Iɣewwaren
 sync-change-options =
     .label = Snifel…
     .accesskey = f
@@ -739,6 +783,10 @@ sync-engine-prefs =
         }
     .tooltiptext = Amatu, tabaḍnit, akked yiɣewwaren n tɣellist ttubeddlen
     .accesskey = y
+sync-engine-settings =
+    .label = Iɣewwaren
+    .tooltiptext = Iɣewwaren s umata, n tbaḍnit akked tɣellist i tbeddleḍ
+    .accesskey = i
 
 ## The device name controls.
 
@@ -1153,6 +1201,11 @@ space-alert-under-5gb-ok-button =
     .label = IH awi-t-id
     .accesskey = H
 space-alert-under-5gb-message = Amkan n udebṣi iteddu ad yaweḍ ar { -brand-short-name }. Igburen n usmel web ur d-ttbanen ara akken iwata.  Ddu ar "Issin ugar" akken ad tseggmeḍ aseqdec n udebṣi-ik akken tarmit n tunigin ad tuɣal tfaz.
+space-alert-over-5gb-settings-button =
+    .label = Ldi iɣewwaren
+    .accesskey = L
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name } iteddu ad iεeddi i tallunt n udebṣi. Igburen n usmel web ur d-ttbanen ara akken iwata. Tzemreḍ ad tsefḍeḍ isefka n usmel deg yiɣewwaren > Tabaḍnit & Taɣellist > Inagan n tuqqna d yisefka n usmel.
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name }iteddu ad iεeddi i tallunt n uḍebsi. </strong> Igburen n usmel web yezmer ur d-ttbanen ara akken iwata.  Ddu ɣer "Issin ugar" akken ad tseggmeḍ aseqdec n udebṣi-inek·inem akken tarmit n tunigin ad tuɣal tgerrez.
 
 ## Privacy Section - HTTPS-Only
 

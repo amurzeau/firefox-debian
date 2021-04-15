@@ -264,11 +264,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Kirjanmerkin lisääminen
+bookmarks-edit-bookmark = Kirjanmerkin muokkaus
+bookmark-panel-cancel =
+    .label = Peruuta
+    .accesskey = P
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Poista kirjanmerkki
+           *[other] Poista { $count } kirjanmerkkiä
+        }
+    .accesskey = P
 bookmark-panel-show-editor-checkbox =
     .label = Näytä muokkaus tallennettaessa
     .accesskey = m
 bookmark-panel-done-button =
     .label = Valmis
+bookmark-panel-save-button =
+    .label = Tallenna
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -288,6 +304,8 @@ identity-passive-loaded = Tällä sivulla on suojaamatonta sisältöä (kuten ku
 identity-active-loaded = Suojaamattoman sisällön estäminen on otettu pois päältä sivustolla.
 identity-weak-encryption = Sivusto käyttää heikkoa salausta.
 identity-insecure-login-forms = Tälle sivulle kirjoitettujen kirjautumistietojen turvallisuus voi vaarantua.
+identity-permissions =
+    .value = Käyttöoikeudet
 identity-https-only-connection-upgraded = (päivitetty HTTPS:ksi)
 identity-https-only-label = Vain HTTPS -tila
 identity-https-only-dropdown-on =
@@ -299,8 +317,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Ota Vain HTTPS -tila käyttöön tälle sivustolle, jos haluat, että { -brand-short-name } päivittää suojattuun yhteyteen mikäli mahdollista.
 identity-https-only-info-turn-off2 = Jos sivu näyttää rikkinäiseltä, saatat haluta poistaa Vain HTTPS -tilan käytöstä ja näin ladata sivun uudestaan käyttäen suojaamatonta HTTP:tä.
 identity-https-only-info-no-upgrade = Yhteyden päivittäminen HTTP:stä epäonnistui.
-identity-permissions =
-    .value = Käyttöoikeudet
 identity-permissions-storage-access-header = Sivustorajat ylittävät evästeet
 identity-permissions-storage-access-hint = Nämä osapuolet voivat käyttää sivustorajat ylittäviä evästeitä ja sivustotietoja, kun olet tällä sivustolla.
 identity-permissions-reload-hint = Sivu tarvitsee ehkä päivittää, jotta muutokset tulevat voimaan.
@@ -348,8 +364,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Toistetaan
-browser-tab-audio-muted = Vaimennettu
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = TOISTETAAN
 # This label should be written in all capital letters if your locale supports them.
@@ -358,6 +372,27 @@ browser-tab-audio-muted2 = VAIMENNETTU
 browser-tab-audio-blocked = ÄÄNENTOISTO ESTETTY
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = KUVA KUVASSA
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] VAIMENNA VÄLILEHTI
+       *[other] VAIMENNA { $count } VÄLILEHTEÄ
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] PALAUTA ÄÄNI VÄLILEHTEEN
+       *[other] PALAUTA ÄÄNI { $count } VÄLILEHTEEN
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] TOISTA ÄÄNI VÄLILEHDELLÄ
+        [one] TOISTA ÄÄNI VÄLILEHDELLÄ
+       *[other] TOISTA ÄÄNI { $count } VÄLILEHDELLÄ
+    }
 
 ## Bookmarks toolbar items
 
@@ -377,9 +412,13 @@ popup-select-microphone =
 popup-select-camera-device =
     .value = Kamera:
     .accesskey = K
+popup-select-camera-icon =
+    .tooltiptext = Kamera
 popup-select-microphone-device =
     .value = Mikrofoni:
     .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Mikrofoni
 popup-all-windows-shared = Kaikki näkyvissä olevat ikkunat jaetaan.
 popup-screen-sharing-not-now =
     .label = Ei nyt
@@ -395,7 +434,7 @@ popup-screen-sharing-block =
 popup-screen-sharing-always-block =
     .label = Estä aina
     .accesskey = a
-popup-mute-notifications-checkbox = Mykistä verkkosivustojen ilmoitukset jakamisen aikana
+popup-mute-notifications-checkbox = Vaimenna sivustojen ilmoitukset jakamisen aikana
 
 ## WebRTC window or screen share tab switch warning
 
@@ -413,11 +452,11 @@ enable-devtools-popup-description = Voit käyttää F12-pikanäppäintä, kun ol
 ## URL Bar
 
 urlbar-default-placeholder =
-    .defaultPlaceholder = Kirjoita osoite tai hakutermi
+    .defaultPlaceholder = Kirjoita osoite tai hakusana
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
-    .placeholder = Kirjoita osoite tai hakutermi
+    .placeholder = Kirjoita osoite tai hakusana
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -505,6 +544,13 @@ urlbar-result-action-tabtosearch-web = Hae hakukoneella { $engine } suoraan osoi
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Hae hakukoneella { $engine } suoraan osoitepalkista
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Kopioi
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -546,8 +592,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Näytä kaikki kirjanmerkit
-bookmarks-recent-bookmarks =
-    .value = Viimeksi lisätyt
 bookmarks-manage-bookmarks =
     .label = Järjestele kirjanmerkkejä
 bookmarks-recent-bookmarks-panel =
@@ -568,12 +612,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Piilota kirjanmerkkien sivupaneeli
            *[other] Näytä kirjanmerkkien sivupaneeli
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Piilota kirjanmerkkipalkki
-           *[other] Näytä kirjanmerkkipalkki
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -620,12 +658,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Kirjanmerkit
-library-bookmarks-bookmark-this-page =
-    .label = Lisää sivu kirjanmerkkeihin
-library-bookmarks-bookmark-edit =
-    .label = Muokkaa kirjanmerkkiä
 library-recent-activity-title =
     .value = Viimeisin toiminta
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Tallenna { -pocket-brand-name }-palveluun
+    .tooltiptext = Tallenna { -pocket-brand-name }-palveluun
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Lisäosat ja teemat
+    .tooltiptext = Hallitse lisäosia ja teemoja ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Asetukset
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Avaa asetukset ({ $shortcut })
+           *[other] Avaa asetuket
+        }
 
 ## More items
 
@@ -639,4 +696,22 @@ eme-notifications-drm-content-playing = Osa sivuston äänitteistä tai videoist
 eme-notifications-drm-content-playing-manage = Hallitse asetuksia
 eme-notifications-drm-content-playing-manage-accesskey = H
 eme-notifications-drm-content-playing-dismiss = Hylkää
-eme-notifications-drm-content-playing-dismiss-accesskey = Y
+eme-notifications-drm-content-playing-dismiss-accesskey = y
+
+## Password save/update panel
+
+panel-save-update-username = Käyttäjätunnus
+panel-save-update-password = Salasana
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Poistetaanko { $name }?
+addon-removal-abuse-report-checkbox = Raportoi tämä laajennus { -vendor-short-name }lle
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Hallinnoi tiliä
+remote-tabs-sync-now = Synkronoi nyt

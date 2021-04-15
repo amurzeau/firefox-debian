@@ -10,14 +10,14 @@
 about-webrtc-document-title = WebRTC
 # "about:webrtc" is a internal browser URL and should not be
 # translated. This string is used as a title for a file save dialog box.
-about-webrtc-save-page-dialog-title = сними about:webrtc као
+about-webrtc-save-page-dialog-title = Чување странице about:webrtc
 
 ## AEC is an abbreviation for Acoustic Echo Cancellation.
 
-about-webrtc-aec-logging-msg-label = AEC бележење
-about-webrtc-aec-logging-off-state-label = Започни AEC бележење
-about-webrtc-aec-logging-on-state-label = Заустави AEC бележење
-about-webrtc-aec-logging-on-state-msg = AEC бележење је активно (причајте са позиваоцем неколико минута и затим зауставите бележење)
+about-webrtc-aec-logging-msg-label = AEC евидентирање
+about-webrtc-aec-logging-off-state-label = Започни AEC евидентирање
+about-webrtc-aec-logging-on-state-label = Заустави AEC евидентирање
+about-webrtc-aec-logging-on-state-msg = AEC евидентирање је активно (разговарајте са позиваоцем неколико минута па зауставите евидентирање)
 
 ##
 
@@ -36,6 +36,8 @@ about-webrtc-local-sdp-heading-answer = Локални SDP (Одговор)
 about-webrtc-remote-sdp-heading = Удаљени SDP
 about-webrtc-remote-sdp-heading-offer = Удаљени SDP (Понуда)
 about-webrtc-remote-sdp-heading-answer = Удаљени SDP (Одговор)
+about-webrtc-sdp-history-heading = Историја SDP-а
+about-webrtc-sdp-parsing-errors-heading = Грешке при рашчлањивању SDP-а
 
 ##
 
@@ -56,14 +58,10 @@ about-webrtc-ice-pair-bytes-sent = Послато бајтова:
 about-webrtc-ice-pair-bytes-received = Примљено бајтова:
 about-webrtc-ice-component-id = ИБ компоненте
 
-##
-
-
 ## "Avg." is an abbreviation for Average. These are used as data labels.
 
-
-##
-
+about-webrtc-avg-bitrate-label = Средња брзина преноса:
+about-webrtc-avg-framerate-label = Средња брзина кадрова:
 
 ## These adjectives are used to label a line of statistics collected for a peer
 ## connection. The data represents either the local or remote end of the
@@ -81,16 +79,16 @@ about-webrtc-nominated = Номиновани
 # the localized javascript string representation of "true" or are left blank.
 # This represents an attribute of an ICE candidate.
 about-webrtc-selected = Одабрани
-about-webrtc-save-page-label = Сними страницу
+about-webrtc-save-page-label = Сачувај страницу као…
 about-webrtc-debug-mode-msg-label = Режим за отклањање грешака
 about-webrtc-debug-mode-off-state-label = Покрени режим за отклањање грешака
 about-webrtc-debug-mode-on-state-label = Заустави режим за отклањање грешака
-about-webrtc-stats-heading = Статистике сесије
-about-webrtc-stats-clear = Обриши историјат
-about-webrtc-log-heading = Дневник конекције
-about-webrtc-log-clear = Обриши дневник
-about-webrtc-log-show-msg = Прикажи дневник
-    .title = кликните да проширите овај одељак
+about-webrtc-stats-heading = Статистика сесије
+about-webrtc-stats-clear = Обриши историју
+about-webrtc-log-heading = Евиденција везе
+about-webrtc-log-clear = Обриши евиденцију
+about-webrtc-log-show-msg = прикажи евиденцију
+    .title = кликните да бисте проширили овај одељак
 about-webrtc-log-hide-msg = Сакриј дневник
     .title = кликните да смањите овај одељак
 
@@ -111,17 +109,22 @@ about-webrtc-remote-candidate = Удаљени кандидат
 about-webrtc-raw-candidates-heading = Сви нови кандидати
 about-webrtc-raw-local-candidate = Нови локални кандидат
 about-webrtc-raw-remote-candidate = Нови удаљени кандидат
-about-webrtc-raw-cand-show-msg = прикажи нове кандидате
-    .title = кликните да проширите овај одељак
+about-webrtc-raw-cand-show-msg = прикажи необрађене кандидате
+    .title = кликните да бисте проширили овај одељак
 about-webrtc-raw-cand-hide-msg = сакриј нове кандидате
     .title = кликните да смањите овај одељак
 about-webrtc-priority = Приоритет
 about-webrtc-fold-show-msg = прикажи детаље
-    .title = кликните да проширите овај одељак
+    .title = кликните да бисте проширили овај одељак
 about-webrtc-fold-hide-msg = сакриј детаље
     .title = кликните да смањите овај одељак
+about-webrtc-dropped-frames-label = Испуштени кадрови:
+about-webrtc-discarded-packets-label = Одбачени пакети:
 about-webrtc-decoder-label = Декодер
 about-webrtc-encoder-label = Енкодер
+about-webrtc-show-tab-label = Прикажи картицу
+about-webrtc-width-px = Ширина (у пикселима)
+about-webrtc-height-px = Висина (у пикселима)
 
 ## SSRCs are identifiers that represent endpoints in an RTP stream
 
@@ -135,9 +138,9 @@ about-webrtc-encoder-label = Енкодер
 ##  $path (String) - The path to which the file is saved.
 
 about-webrtc-save-page-msg = страница је снимљена на: { $path }
-about-webrtc-debug-mode-off-state-msg = дневник за праћење се може пронаћи на: { $path }
-about-webrtc-debug-mode-on-state-msg = режим за отклањање грешка је активиран, дневник за праћење на: { $path }
-about-webrtc-aec-logging-off-state-msg = забележене датотеке дневника можете пронаћи у: { $path }
+about-webrtc-debug-mode-off-state-msg = евиденција праћења се налази у: { $path }
+about-webrtc-debug-mode-on-state-msg = режим за отклањање грешака је активан, евиденција праћења је у: { $path }
+about-webrtc-aec-logging-off-state-msg = датотеке евиденција се налазе у: { $path }
 
 ##
 

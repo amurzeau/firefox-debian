@@ -261,6 +261,18 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmark-panel-cancel =
+    .label = Cancelar
+    .accesskey = C
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Eliminar o marcapachinas
+           *[other] Eliminar os { $count } marcapachinas
+        }
+    .accesskey = R
 bookmark-panel-show-editor-checkbox =
     .label = Amostrar l'editor mientres se grava
     .accesskey = A
@@ -331,6 +343,11 @@ browser-window-close-button =
     .tooltiptext = Zarrar
 
 ## Tab actions
+
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
 
 
 ## Bookmarks toolbar items
@@ -470,8 +487,6 @@ pointerlock-warning-no-domain = Iste documento tien lo control d'o puntero. Pret
 
 bookmarks-show-all-bookmarks =
     .label = Amostrar totz os marcapachinas
-bookmarks-recent-bookmarks =
-    .value = Pachinas marcadas recientment
 bookmarks-toolbar-chevron =
     .tooltiptext = Amostrar mas marcapachinas
 bookmarks-sidebar-content =
@@ -487,12 +502,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Amagar la barra lateral de marcapachinas
            *[other] Amostrar a barra lateral de marcapachinas
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Amagar la barra de ferramientas de marcapachinas
-           *[other] Veyer a barra de marcapachinas
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -530,10 +539,15 @@ bookmarks-toolbar-placeholder-button =
 
 library-bookmarks-menu =
     .label = Marcapachinas
-library-bookmarks-bookmark-this-page =
-    .label = Marcar ista pachina con marcapachinas
-library-bookmarks-bookmark-edit =
-    .label = Editar iste marcapachinas
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Alzar en { -pocket-brand-name }
+    .tooltiptext = Alzar en { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
 
 ## More items
 
@@ -544,3 +558,12 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = Bell audio u video d'iste puesto fan servir software DRM, o qual puet limitar o que { -brand-short-name } le deixará fer con ell.
+
+## Password save/update panel
+
+
+## Add-on removal warning
+
+
+## Remote / Synced tabs
+

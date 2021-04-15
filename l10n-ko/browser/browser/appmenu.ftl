@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = { -brand-shorter-name } 업데이트 다운로드 중
+appmenuitem-update-banner2 =
+    .label-update-downloading = { -brand-shorter-name } 업데이트 다운로드 중
+    .label-update-available = 업데이트 사용 가능 — 지금 다운로드
+    .label-update-manual = 업데이트 사용 가능 — 지금 다운로드
+    .label-update-unsupported = 업데이트할 수 없음
+    .label-update-restart = 업데이트 사용 가능 — 지금 다시 시작
 appmenuitem-protection-dashboard-title = 보호 대시보드
 appmenuitem-customize-mode =
     .label = 사용자 지정…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = 비밀번호
 appmenuitem-extensions-and-themes =
     .label = 확장 기능 및 테마
+appmenuitem-addons-and-themes =
+    .label = 부가 기능 및 테마
 appmenuitem-find-in-page =
     .label = 페이지에서 찾기…
 appmenuitem-more-tools =
@@ -28,11 +36,23 @@ appmenuitem-more-tools =
 appmenuitem-exit =
     .label = 종료
 appmenu-menu-button-closed =
-    .tooltiptext = 응용 프로그램 메뉴 열기
+    .tooltiptext = 애플리케이션 메뉴 열기
     .label = { -brand-shorter-name }
 appmenu-menu-button-opened =
-    .tooltiptext = 응용 프로그램 메뉴 닫기
+    .tooltiptext = 애플리케이션 메뉴 닫기
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] 종료
+           *[other] 종료
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = 애플리케이션 메뉴 열기
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = 애플리케이션 메뉴 닫기
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = 지금 동기화
-appmenuitem-fxa-toolbar-sync-now =
-    .label = 지금 동기화
-    .value = 지금 동기화
+appmenu-remote-tabs-sign-into-sync =
+    .label = Sync에 로그인…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Sync 켜기…
+appmenuitem-fxa-toolbar-sync-now2 = 지금 동기화
 appmenuitem-fxa-manage-account = 계정 관리
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = { $time }에 마지막으로 동기화됨
     .label = { $time }에 마지막으로 동기화됨
 appmenu-fxa-sync-and-save-data =
     .value = 데이터 동기화 및 저장
+appmenu-fxa-sync-and-save-data2 = 데이터 동기화 및 저장
 appmenu-fxa-signed-in-label = 로그인
 appmenu-fxa-setup-sync =
     .label = 동기화 켜기…
@@ -135,29 +159,17 @@ appmenu-help-header =
 appmenu-about =
     .label = { -brand-shorter-name } 정보
     .accesskey = A
-appmenu-help-product =
-    .label = { -brand-shorter-name } 도움말
-    .accesskey = H
-appmenu-help-show-tour =
-    .label = { -brand-shorter-name } 둘러보기
-    .accesskey = o
-appmenu-help-import-from-another-browser =
-    .label = 다른 브라우저에서 가져오기…
-    .accesskey = I
-appmenu-help-keyboard-shortcuts =
-    .label = 키보드 단축키
-    .accesskey = K
 appmenu-get-help =
     .label = 도움 받기
     .accesskey = H
 appmenu-help-troubleshooting-info =
     .label = 문제 해결 정보…
     .accesskey = T
+appmenu-help-taskmanager =
+    .label = 작업 관리자
 appmenu-help-more-troubleshooting-info =
     .label = 추가 문제 해결 정보
     .accesskey = T
-appmenu-help-taskmanager =
-    .label = 작업 관리자
 appmenu-help-report-site-issue =
     .label = 사이트 문제 보고…
 appmenu-help-feedback-page =
@@ -177,8 +189,8 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = 문제 해결 모드
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = 문제 해결 모드…
     .accesskey = M
 appmenu-help-exit-troubleshoot-mode =
     .label = 문제 해결 모드 끄기
@@ -194,13 +206,10 @@ appmenu-help-not-deceptive =
     .label = 이 사이트는 가짜 사이트가 아닙니다…
     .accesskey = d
 
-##
-
-appmenu-help-check-for-update =
-    .label = 업데이트 확인…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = 도구 모음 사용자 지정…
+appmenu-taskmanager =
+    .label = 작업 관리자
 appmenu-developer-tools-subheader = 브라우저 도구
