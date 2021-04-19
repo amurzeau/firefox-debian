@@ -28,6 +28,18 @@ search-input-box =
             [windows] ابحث في الخيارات
            *[other] ابحث في التفضيلات
         }
+settings-page-title = الإعدادات
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = ابحث في الإعدادات
 managed-notice = تُدير منظّمتك المتصفح الذي تستخدم الآن.
 category-list =
     .aria-label = الفئات
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = المزامنة
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = تجارب { -brand-short-name }
 category-experimental =
     .tooltiptext = تجارب { -brand-short-name }
 pane-experimental-subtitle = واصِل وأنت حذر
 pane-experimental-search-results-header = تجارب { -brand-short-name }: واصِل وأنت حذر
 pane-experimental-description = يمكن أن يؤثّر التغيير على تفضيلات الضبط المتقدمة أداء { -brand-short-name } وأمنه.
+pane-experimental-description2 = يمكن أن يؤثّر التغيير على إعدادات الضبط المتقدمة أداء { -brand-short-name } وأمنه.
 pane-experimental-reset =
     .label = استعد المبدئيات
     .accesskey = س
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] للأسف لا نتائج في الخيارات عن ”<span data-l10n-name="query"></span>“.
        *[other] للأسف لا نتائج في التفضيلات عن ”<span data-l10n-name="query"></span>“.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = للأسف لا نتائج في الإعدادات عن ”<span data-l10n-name="query"></span>“.
 search-results-help-link = أتحتاج للمساعدة؟ زُر <a data-l10n-name="url">دعم { -brand-short-name }</a>
 
 ## General Section
@@ -378,6 +396,9 @@ update-application-check-choose =
 update-application-manual =
     .label = لا يلتمس التحديثات أبدًا (غير مستحسن)
     .accesskey = د
+update-application-background-enabled =
+    .label = حين لا يعمل { -brand-short-name }
+    .accesskey = ح
 update-application-warning-cross-user-setting = سيُطبّق هذا الإعداد على كل حسابات وِندوز وملفات { -brand-short-name } الشخصية التي تستخدم هذه النسخة من { -brand-short-name }.
 update-application-use-service =
     .label = استخدم خدمة تعمل في الخلفية لتنصيب التحديثات
@@ -389,6 +410,15 @@ update-setting-write-failure-title = حدث عُطل أثناء تحديث ال�
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
     واجه { -brand-short-name } عُطلًا ولم يحفظ هذا التغيير. كي تضبط تفضيل التحديث هذا سيكون عليك تقديم تصريحك للكتابة في الملف أدناه. يمكنك أنت أو يمكن لمدير النظام أن يحلّ هذا العُطل بمنح مجموعة ”المستخدمين/Users“ التصريح الكامل للتحكّم بهذا الملف.
+    
+    تعذّرت الكتابة في الملف: { $path }
+update-setting-write-failure-title2 = حدث عُطل أثناء تحديث الإعدادات
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    واجه { -brand-short-name } عُطلًا ولم يحفظ هذا التغيير. كي تغيّر إعداد التحديث هذا سيكون عليك تقديم تصريحك للكتابة في الملف أدناه. يمكنك أنت أو يمكن لمدير النظام أن يحلّ هذا العُطل بمنح مجموعة ”المستخدمين/Users“ التصريح الكامل للتحكّم بهذا الملف.
     
     تعذّرت الكتابة في الملف: { $path }
 update-in-progress-title = يجري الآن التحديث
@@ -507,12 +537,21 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = المواقع الأكثر زيارة
 home-prefs-topsites-description = أكثر المواقع المزارة
+home-prefs-topsites-by-option-sponsored =
+    .label = أهم المواقع المموّلة
+home-prefs-shortcuts-header =
+    .label = الاختصارات
+home-prefs-shortcuts-description = المواقع التي حفظتها أو زُرتها
+home-prefs-shortcuts-by-option-sponsored =
+    .label = الاختصارات المموّلة
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
     .label = ينصح به { $provider }
+home-prefs-recommended-by-description-update = محتوى مميّز من أرجاء الوِب جمعه لك { $provider }
+home-prefs-recommended-by-description-new = محتوى مميّز جمعه لك { $provider }، وهو جزء من عائلة { -brand-product-name }
 
 ##
 
@@ -530,6 +569,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = آخر ما نُزّل
 home-prefs-highlights-option-saved-to-pocket =
     .label = الصفحات المحفوظة في { -pocket-brand-name }
+home-prefs-recent-activity-header =
+    .label = أحدث الأنشطة
+home-prefs-recent-activity-description = مختارات من المواقع والمحتويات الحديثة
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -537,6 +579,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = المقتطفات
 home-prefs-snippets-description = التحديثات من { -vendor-short-name } و{ -brand-product-name }
+home-prefs-snippets-description-new = فوائد وأخبار من { -vendor-short-name } و{ -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -579,6 +622,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = اعرض اقتراحات البحث في النوافذ الخاصة
 suggestions-addressbar-settings-generic = غيّر تفضيلات اقتراحات شريط العنوان
+suggestions-addressbar-settings-generic2 = غيّر إعدادات اقتراحات شريط العنوان
 search-suggestions-cant-show = لن تظهر اقتراحات البحث في نتائج شريط الموقع لأنّك أعددت { -brand-short-name } على ألّا يتذكر التأريخ.
 search-one-click-header = محركات البحث بنقرة واحدة
 search-one-click-header2 = اختصارات البحث
@@ -613,6 +657,8 @@ containers-back-button =
             [windows] عُد إلى الخيارات
            *[other] عُد إلى التفضيلات
         }
+containers-back-button2 =
+    .aria-label = عُد إلى الإعدادات
 containers-header = الألسنة الحاوية
 containers-add-button =
     .label = أضف حاوية جديدة
@@ -622,6 +668,8 @@ containers-new-tab-check =
     .accesskey = خ
 containers-preferences-button =
     .label = التفضيلات
+containers-settings-button =
+    .label = الإعدادات
 containers-remove-button =
     .label = أزِل
 
@@ -632,6 +680,10 @@ sync-signedout-caption = خُذ الوِب معك
 sync-signedout-description = زامن علاماتك، و تأريخك، و ألسنتك، و كلمات سرك، و إضافاتك و التفضيلات بين كل أجهزتك.
 sync-signedout-account-signin2 =
     .label = لِج إلى { -sync-brand-short-name }…
+    .accesskey = ل
+sync-signedout-description2 = زامن علاماتك، و تأريخك، و ألسنتك، و كلمات سرك، و إضافاتك و الإعدادات بين كل أجهزتك.
+sync-signedout-account-signin3 =
+    .label = لِج كي تبدأ المزامنة…
     .accesskey = ل
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -672,6 +724,10 @@ prefs-sync-setup =
     .label = اضبط { -sync-brand-short-name }…
     .accesskey = ض
 prefs-sync-offer-setup-label = زامن علاماتك، و تأريخك، و ألسنتك، و كلمات سرك، و إضافاتك و التفضيلات بين كل أجهزتك.
+prefs-sync-turn-on-syncing =
+    .label = فعّل المزامنة…
+    .accesskey = ف
+prefs-sync-offer-setup-label2 = زامن علاماتك، و تأريخك، و ألسنتك، و كلمات سرك، و إضافاتك و الإعدادات بين كل أجهزتك.
 prefs-sync-now =
     .labelnotsyncing = زامِن الآن
     .accesskeynotsyncing = م
@@ -692,6 +748,7 @@ sync-currently-syncing-prefs =
         [windows] الخيارات
        *[other] التفضيلات
     }
+sync-currently-syncing-settings = الإعدادات
 sync-change-options =
     .label = غيّرها…
     .accesskey = غ
@@ -739,6 +796,10 @@ sync-engine-prefs =
         }
     .tooltiptext = الإعدادات العامة، و إعدادات الخصوصية و الأمن التي غيرتها
     .accesskey = ت
+sync-engine-settings =
+    .label = الإعدادات
+    .tooltiptext = الإعدادات العامة وإعدادات الخصوصية والأمن التي غيّرتها
+    .accesskey = ع
 
 ## The device name controls.
 
@@ -838,12 +899,12 @@ history-header = التأريخ
 #   - Simply as "Firefox", moving the verb into each option.
 #     This will result in "Firefox" + "Will remember history", etc.
 #   - As a stand-alone message, for example "Firefox history settings:".
-history-remember-label = { -brand-short-name } سوف
-    .accesskey = س
+history-remember-label = اجعل { -brand-short-name }
+    .accesskey = ع
 history-remember-option-all =
     .label = يتذكر التأريخ
 history-remember-option-never =
-    .label = لن يتذكر التأريخ أبدًا
+    .label = لا يتذكر التأريخ أبدًا
 history-remember-option-custom =
     .label = يستخدم إعدادات مخصصة للتأريخ
 history-remember-description = سيتذكر { -brand-short-name } تأريخ التصفح، و التنزيلات، و الاستمارات، و البحث.
@@ -932,9 +993,16 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = الألسنة المفتوحة
     .accesskey = ف
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = اختصارات
+    .accesskey = خ
 addressbar-locbar-topsites-option =
     .label = المواقع الأكثر زيارة
     .accesskey = ك
+addressbar-locbar-engines-option =
+    .label = محركات البحث
+    .accesskey = ح
 addressbar-suggestions-settings = غيّر تفضيلات اقتراحات محرّك البحث
 
 ## Privacy Section - Content Blocking
@@ -1092,7 +1160,7 @@ collection-backlogged-crash-reports-link = اطّلع على المزيد
 security-header = الأمان
 security-browsing-protection = الحماية من المحتوى المخادع و البرمجيات الخبيثة
 security-enable-safe-browsing =
-    .label = احجب المحتوي الخطير و المخادع
+    .label = احجب المحتوى الخطير و المخادع
     .accesskey = ح
 security-enable-safe-browsing-link = اطّلع على المزيد
 security-block-downloads =
@@ -1144,6 +1212,11 @@ space-alert-under-5gb-ok-button =
     .label = حسنًا، فهمت
     .accesskey = ح
 space-alert-under-5gb-message = مساحة القرص قاربت على النفاذ من { -brand-short-name }. قد لا يُعرض محتوى المواقع كما ينبغي. انتقل إلى ”اطّلع على المزيد“ لتحسين استخدام القرص لتصفح أحسن.
+space-alert-over-5gb-settings-button =
+    .label = افتح الإعدادات
+    .accesskey = ف
+space-alert-over-5gb-message2 = <strong>مساحة القرص قاربت على النفاذ من { -brand-short-name }</strong>. قد لا يُعرض محتوى المواقع كما ينبغي. يمكنك مسح البيانات المحفوظة من ”الإعدادات ← الخصوصية والأمان ← الكعكات وبيانات المواقع“.
+space-alert-under-5gb-message2 = <strong>مساحة القرص قاربت على النفاذ من { -brand-short-name }</strong>. قد لا يُعرض محتوى المواقع كما ينبغي. انتقل إلى ”اطّلع على المزيد“ لتحسين استخدام القرص لتصفح أحسن.
 
 ## Privacy Section - HTTPS-Only
 

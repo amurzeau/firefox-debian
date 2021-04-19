@@ -18,6 +18,7 @@ login-filter =
 create-login-button = 新建登录信息
 fxaccounts-sign-in-text = 取得您其他设备上的密码
 fxaccounts-sign-in-button = 登录{ -sync-brand-short-name }服务
+fxaccounts-sign-in-sync-button = 登录同步服务
 fxaccounts-avatar-button =
     .title = 管理账户
 
@@ -69,13 +70,17 @@ about-logins-list-item-vulnerable-password-icon =
 
 login-intro-heading = 在找您保存的登录信息？请设置“{ -sync-brand-short-name }”。
 about-logins-login-intro-heading-logged-out = 在找您保存的登录信息？请设置{ -sync-brand-short-name }或导入。
+about-logins-login-intro-heading-logged-out2 = 在寻找您保存的登录信息？请开启同步或进行导入。
 about-logins-login-intro-heading-logged-in = 未找到同步的登录信息。
 login-intro-description = 若您曾在其他设备上将登录信息保存到 { -brand-product-name }，请按以下步骤操作：
 login-intro-instruction-fxa = 在您保存登录信息的设备，注册或登录 { -fxaccount-brand-name }
 login-intro-instruction-fxa-settings = 确定您已在“{ -sync-brand-short-name }”设置中勾选了“登录信息”复选框
 about-logins-intro-instruction-help = 若需帮助，请访问 <a data-l10n-name="help-link">{ -lockwise-brand-short-name } 用户支持</a>
+login-intro-instructions-fxa = 在您保存登录信息的设备，注册或登录 { -fxaccount-brand-name }
+login-intro-instructions-fxa-settings = 前往“设置”>“同步”>“开启同步…”，勾选“登录名和密码”复选框。
+login-intro-instructions-fxa-help = 若需帮助，请访问 <a data-l10n-name="help-link">{ -lockwise-brand-short-name } 用户支持</a>。
 about-logins-intro-import = 若登录信息保存在其他浏览器，您可以<a data-l10n-name="import-link">导入到 { -lockwise-brand-short-name }</a>
-about-logins-intro-import2 = 若您的登录信息并未存储在 { -brand-product-name }，可以<a data-l10n-name="import-browser-link">从另一款浏览器</a>或<a data-l10n-name="import-file-link">文件</a>导入
+about-logins-intro-import2 = 若您的登录信息并未存储在 { -brand-product-name }，可以<a data-l10n-name="import-browser-link">从另一浏览器</a>或<a data-l10n-name="import-file-link">文件</a>导入
 
 ## Login
 
@@ -304,6 +309,7 @@ about-logins-import-dialog-error-unable-to-read-description = 请确保已选择
 about-logins-import-dialog-error-no-logins-imported = 未导入任何登录信息
 about-logins-import-dialog-error-learn-more = 详细了解
 about-logins-import-dialog-error-try-again = 重试…
+about-logins-import-dialog-error-try-import-again = 再次尝试导入…
 about-logins-import-dialog-error-cancel = 取消
 about-logins-import-report-title = 导入摘要
 about-logins-import-report-description = 导入到 { -brand-short-name } 的登录名和密码。

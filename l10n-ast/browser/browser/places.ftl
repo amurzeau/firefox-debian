@@ -8,6 +8,12 @@ places-open =
 places-open-tab =
     .label = Abrir nuna llingüeta nueva
     .accesskey = t
+places-open-in-tab =
+    .label = Abrir nuna llingüeta nueva
+    .accesskey = l
+places-open-all-bookmarks =
+    .label = Abrir tolos marcadores
+    .accesskey = A
 places-open-all-in-tabs =
     .label = Abrir too en llingüetes
     .accesskey = o
@@ -29,6 +35,24 @@ places-new-folder =
 places-new-separator =
     .label = Separtador nuevu
     .accesskey = v
+places-open-in-window =
+    .label = Abrir nuna ventana nueva
+    .accesskey = n
+places-open-in-private-window =
+    .label = Abrir nuna ventana privada nueva
+    .accesskey = p
+places-add-bookmark =
+    .label = Amestar un marcador…
+    .accesskey = m
+places-add-folder-contextmenu =
+    .label = Amestar una carpeta…
+    .accesskey = r
+places-add-folder =
+    .label = Amestar una carpeta…
+    .accesskey = t
+places-add-separator =
+    .label = Amestar un separtador
+    .accesskey = s
 places-view =
     .label = Ver
     .accesskey = r
@@ -60,6 +84,13 @@ places-sortby-name =
 places-properties =
     .label = Propiedaes
     .accesskey = i
+# places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
+places-edit-bookmark =
+    .label = Editar el marcador…
+    .accesskey = i
+places-edit-generic =
+    .label = Editar…
+    .accesskey = i
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
     .label = Marcadores xestionaos
@@ -69,3 +100,16 @@ managed-bookmarks-subfolder =
 # This label is used for the "Other Bookmarks" folder that appears in the bookmarks toolbar.
 other-bookmarks-folder =
     .label = Otros marcadores
+# Variables:
+# $count (number) - The number of elements being selected for removal.
+places-remove-bookmark =
+    .label =
+        { $count ->
+            [1] Quitar el marcador
+            [one] Quitar el marcador
+           *[other] Quitar los marcadores
+        }
+    .accesskey = Q
+places-manage-bookmarks =
+    .label = Xestionar los marcadores
+    .accesskey = X

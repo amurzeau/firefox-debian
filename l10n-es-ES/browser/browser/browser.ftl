@@ -264,11 +264,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Añadir marcador
+bookmarks-edit-bookmark = Editar marcador
+bookmark-panel-cancel =
+    .label = Cancelar
+    .accesskey = C
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Eliminar marcador
+           *[other] Eliminar { $count } marcadores
+        }
+    .accesskey = R
 bookmark-panel-show-editor-checkbox =
     .label = Mostrar editor al guardar
     .accesskey = s
 bookmark-panel-done-button =
     .label = Hecho
+bookmark-panel-save-button =
+    .label = Guardar
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -288,6 +304,8 @@ identity-passive-loaded = Partes de esta página no son seguras (como imágenes)
 identity-active-loaded = Tiene la protección desactivada en esta página.
 identity-weak-encryption = Esta página usa cifrado débil.
 identity-insecure-login-forms = Los inicios de sesión introducidos en esta página podrían verse comprometidos.
+identity-permissions =
+    .value = Permisos
 identity-https-only-connection-upgraded = (actualizado a HTTPS)
 identity-https-only-label = Modo solo HTTPS
 identity-https-only-dropdown-on =
@@ -299,8 +317,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Active el modo solo HTTPS para este sitio si quiere que { -brand-short-name } actualice la conexión cuando sea posible.
 identity-https-only-info-turn-off2 = Si el sitio no funciona correctamente, es posible que quiera desactivar el modo solo HTTPS para volver a cargarlo usando una conexión HTTP insegura.
 identity-https-only-info-no-upgrade = No se puede actualizar la conexión desde HTTP.
-identity-permissions =
-    .value = Permisos
 identity-permissions-storage-access-header = Cookies entre sitios
 identity-permissions-storage-access-hint = Estas partes pueden usar cookies de sitios cruzados y datos del sitio mientras está en este sitio.
 identity-permissions-reload-hint = Puede que necesite recargar la página para que se apliquen los cambios.
@@ -348,8 +364,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Reproduciendo
-browser-tab-audio-muted = Silenciado
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = REPRODUCIENDO
 # This label should be written in all capital letters if your locale supports them.
@@ -358,6 +372,29 @@ browser-tab-audio-muted2 = SILENCIADO
 browser-tab-audio-blocked = REPRODUCCIÓN AUTOMÁTICA BLOQUEADA
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = PICTURE-IN-PICTURE
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] SILENCIAR PESTAÑA
+        [one] SILENCIAR { $count } PESTAÑA
+       *[other] SILENCIAR { $count } PESTAÑAS
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] DEJAR DE SILENCIAR pestaña
+        [one] DEJAR DE SILENCIAR { $count } PESTAÑA
+       *[other] DEJAR DE SILENCIAR { $count } PESTAÑAS
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] REPRODUCIR PESTAÑA
+        [one] REPRODUCIR { $count } PESTAÑA
+       *[other] REPRODUCIR { $count } PESTAÑAS
+    }
 
 ## Bookmarks toolbar items
 
@@ -374,6 +411,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Micrófono para compartir:
     .accesskey = M
+popup-select-camera-device =
+    .value = Cámara:
+    .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = Cámara
+popup-select-microphone-device =
+    .value = Micrófono:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Micrófono
 popup-all-windows-shared = Se compartirán todas las ventanas visibles en su pantalla.
 popup-screen-sharing-not-now =
     .label = Ahora no
@@ -383,6 +430,13 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = Desactivar las notificaciones de { -brand-short-name } mientras se comparte
 popup-silence-notifications-checkbox-warning = { -brand-short-name } no mostrará notificaciones mientras se está compartiendo.
+popup-screen-sharing-block =
+    .label = Bloquear
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Bloquear siempre
+    .accesskey = s
+popup-mute-notifications-checkbox = Silenciar notificaciones de la página mientras se comparte
 
 ## WebRTC window or screen share tab switch warning
 
@@ -533,8 +587,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Mostrar todos los marcadores
-bookmarks-recent-bookmarks =
-    .value = Añadidos recientemente
 bookmarks-manage-bookmarks =
     .label = Administrar marcadores
 bookmarks-recent-bookmarks-panel =
@@ -555,12 +607,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Ocultar panel lateral de marcadores
            *[other] Ver el panel lateral de marcadores
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Ocultar barra de herramientas de marcadores
-           *[other] Ver la barra de marcadores
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -607,12 +653,17 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Marcadores
-library-bookmarks-bookmark-this-page =
-    .label = Añadir esta página a marcadores
-library-bookmarks-bookmark-edit =
-    .label = Editar este marcador
 library-recent-activity-title =
     .value = Actividad reciente
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Guardar en { -pocket-brand-name }
+    .tooltiptext = Guardar en { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
 
 ## More items
 
@@ -627,3 +678,21 @@ eme-notifications-drm-content-playing-manage = Administrar ajustes
 eme-notifications-drm-content-playing-manage-accesskey = M
 eme-notifications-drm-content-playing-dismiss = Descartar
 eme-notifications-drm-content-playing-dismiss-accesskey = D
+
+## Password save/update panel
+
+panel-save-update-username = Nombre de usuario
+panel-save-update-password = Contraseña
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = ¿Eliminar { $name }?
+addon-removal-abuse-report-checkbox = Informar de esta extensión a { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Administrar cuenta
+remote-tabs-sync-now = Sincronizar ahora

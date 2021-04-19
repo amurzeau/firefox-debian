@@ -18,6 +18,7 @@ login-filter =
 create-login-button = أنشئ جلسة ولوج جديدة
 fxaccounts-sign-in-text = استعمل كلمات السر لحساباتك في أجهزتك الأخرى
 fxaccounts-sign-in-button = لِج إلى { -sync-brand-short-name }
+fxaccounts-sign-in-sync-button = لِج كي تبدأ المزامنة
 fxaccounts-avatar-button =
     .title = أدِر الحساب
 
@@ -74,11 +75,15 @@ about-logins-list-item-vulnerable-password-icon =
 
 login-intro-heading = أتبحث عن جلسات ولوجك المحفوظة؟ إذًا اضبط { -sync-brand-short-name }.
 about-logins-login-intro-heading-logged-out = أتبحث عن جلسات ولوجك المحفوظة؟ إذًا اضبط { -sync-brand-short-name } أو استورِدها.
+about-logins-login-intro-heading-logged-out2 = أتبحث عن جلسات ولوجك المحفوظة؟ فعّل المزامنة أو استورِدها.
 about-logins-login-intro-heading-logged-in = لم نجد أيّ جلسة ولوج متزامنة.
 login-intro-description = إن حفظت جلسات ولوجك في { -brand-product-name } على جهاز آخر، فهكذا يمكنك أن تزامنها هنا:
 login-intro-instruction-fxa = أنشِئ أو لِج إلى { -fxaccount-brand-name } على الأجهزة التي لديك عليها جلسات ولوج محفوظة
 login-intro-instruction-fxa-settings = تحقّق من تحديد مربع ”جلسات الولوج“ في إعدادات { -sync-brand-short-name }
 about-logins-intro-instruction-help = زُر <a data-l10n-name="help-link">دعم { -lockwise-brand-short-name }</a> لمزيد من المساعدة
+login-intro-instructions-fxa = أنشِئ أو لِج إلى { -fxaccount-brand-name } على الأجهزة التي لديك عليها جلسات ولوج محفوظة
+login-intro-instructions-fxa-settings = انتقل إلى ”الإعدادات > المزامنة > فعّل المزامنة…“ وضَع علامة على ”جلسات الولوج وكلمات السر“.
+login-intro-instructions-fxa-help = زُر <a data-l10n-name="help-link">دعم { -lockwise-brand-short-name }</a> لمزيد من المساعدة.
 about-logins-intro-import = لو كانت جلسات ولوجك محفوظة في متصفّح آخر فيمكنك <a data-l10n-name="import-link">استيرادها إلى { -lockwise-brand-short-name }</a>
 about-logins-intro-import2 = إن حفظت جلسات الولوج خارج { -brand-product-name } فيمكنك <a data-l10n-name="import-browser-link">استيرادها من متصفّح آخر</a> أو <a data-l10n-name="import-file-link">من ملف</a>
 
@@ -222,6 +227,16 @@ about-logins-confirm-remove-all-sync-dialog-title =
         [many] أتريد إزالة { $count } جلسة ولوج من كل الأجهزة؟
        *[other] أتريد إزالة { $count } جلسة ولوج من كل الأجهزة؟
     }
+about-logins-confirm-remove-all-sync-dialog-message =
+    { $count ->
+        [1] بهذا تحذف جلسة الولوج المحفوظة في { -brand-short-name } من كلّ الأجهزة المتزامنة مع { -fxaccount-brand-name } لديك. كما سيُزيل أيّ تحذيرات أخرى تظهر هنا عن تسريبات البيانات. لا يمكنك العودة عن هذا الإجراء.
+        [zero] بهذا تحذف جلسة الولوج المحفوظة في { -brand-short-name } من كلّ الأجهزة المتزامنة مع { -fxaccount-brand-name } لديك. كما سيُزيل أيّ تحذيرات أخرى تظهر هنا عن تسريبات البيانات. لا يمكنك العودة عن هذا الإجراء.
+        [one] بهذا تحذف جلسة الولوج المحفوظة في { -brand-short-name } من كلّ الأجهزة المتزامنة مع { -fxaccount-brand-name } لديك. كما سيُزيل أيّ تحذيرات أخرى تظهر هنا عن تسريبات البيانات. لا يمكنك العودة عن هذا الإجراء.
+        [two] بهذا تحذف جلستا الولوج المحفوظتان في { -brand-short-name } من كلّ الأجهزة المتزامنة مع { -fxaccount-brand-name } لديك. كما سيُزيل أيّ تحذيرات أخرى تظهر هنا عن تسريبات البيانات. لا يمكنك العودة عن هذا الإجراء.
+        [few] بهذا تحذف جلسات الولوج المحفوظة في { -brand-short-name } من كلّ الأجهزة المتزامنة مع { -fxaccount-brand-name } لديك. كما سيُزيل أيّ تحذيرات أخرى تظهر هنا عن تسريبات البيانات. لا يمكنك العودة عن هذا الإجراء.
+        [many] بهذا تحذف جلسات الولوج المحفوظة في { -brand-short-name } من كلّ الأجهزة المتزامنة مع { -fxaccount-brand-name } لديك. كما سيُزيل أيّ تحذيرات أخرى تظهر هنا عن تسريبات البيانات. لا يمكنك العودة عن هذا الإجراء.
+       *[other] بهذا تحذف جلسات الولوج المحفوظة في { -brand-short-name } من كلّ الأجهزة المتزامنة مع { -fxaccount-brand-name } لديك. كما سيُزيل أيّ تحذيرات أخرى تظهر هنا عن تسريبات البيانات. لا يمكنك العودة عن هذا الإجراء.
+    }
 about-logins-confirm-export-dialog-title = صدّر جلسات الولوج وكلمات السر
 about-logins-confirm-export-dialog-message = ستُحفظ جلسات الولوج على هيئة نص مقروء (مثلا 12345 أو BadP@ssw0rd) وبهذا يستطيع أيّ شخص معاينتها لو فتح الملف المصدّر.
 about-logins-confirm-export-dialog-confirm-button = صدّر…
@@ -330,6 +345,8 @@ about-logins-import-dialog-items-no-change =
     }
 about-logins-import-dialog-done = تمّ
 about-logins-import-dialog-error-title = عُطل أثناء الاستيراد
+about-logins-import-dialog-error-conflicting-values-title = قيم متعارضة متعدّدة لجلسة ولوج واحدة
+about-logins-import-dialog-error-conflicting-values-description = على سبيل المثال: لجلسة الولوج أكثر من اسم مستخدم واحد، أو كلمة سر واحدة، أو عنوان واحد، إلخ.
 about-logins-import-dialog-error-file-format-title = مشكلة في نسق الملف
 about-logins-import-dialog-error-file-format-description = رؤوس الأعمدة إمّا خاطئة أو ناقصة. تأكّد من أن يحتوي الملف على أعمدة اسم المستخدم وكلمة السر وعنوان الموقع.
 about-logins-import-dialog-error-file-permission-title = تعذّرت قراءة الملف
@@ -339,7 +356,30 @@ about-logins-import-dialog-error-unable-to-read-description = تأكّد من ا
 about-logins-import-dialog-error-no-logins-imported = لم تُستورد أيّ جلسات ولوج
 about-logins-import-dialog-error-learn-more = اطّلع على المزيد
 about-logins-import-dialog-error-try-again = أعِد المحاولة…
+about-logins-import-dialog-error-try-import-again = حاوِل الاستيراد ثانيةً…
 about-logins-import-dialog-error-cancel = ألغِ
+about-logins-import-report-title = ملخص الاستيراد
+about-logins-import-report-description = استوردت جلسات الولوج وكلمات السر إلى { -brand-short-name }.
+#
+# Variables:
+#  $number (number) - The number of the row
+about-logins-import-report-row-index = صف { $number }
+about-logins-import-report-row-description-no-change = متكرّر: مطابقة تامة لجلسة ولوج موجودة
+about-logins-import-report-row-description-modified = حُدّثت جلسة الولوج الموجودة
+about-logins-import-report-row-description-added = أُضيفت جلسة ولوج جديدة
+about-logins-import-report-row-description-error = خطأ: حقل مفقود
+
+##
+## Variables:
+##  $field (String) - The name of the field from the CSV file for example url, username or password
+
+about-logins-import-report-row-description-error-multiple-values = خطأ: أكثر من قيمة للحقل { $field }
+about-logins-import-report-row-description-error-missing-field = خطأ: { $field } مفقود
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
 
 ## Logins import report page
 

@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = Завантажується оновлення { -brand-shorter-name }
+appmenuitem-update-banner2 =
+    .label-update-downloading = Завантажується оновлення { -brand-shorter-name }
+    .label-update-available = Доступне оновлення — завантажити зараз
+    .label-update-manual = Доступне оновлення — завантажити зараз
+    .label-update-unsupported = Не вдається оновити
+    .label-update-restart = Доступне оновлення — перезавантажити зараз
 appmenuitem-protection-dashboard-title = Панель стану захисту
 appmenuitem-customize-mode =
     .label = Пристосування…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = Паролі
 appmenuitem-extensions-and-themes =
     .label = Розширення і теми
+appmenuitem-addons-and-themes =
+    .label = Додатки й теми
 appmenuitem-find-in-page =
     .label = Знайти на сторінці…
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Закрити меню програми
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Вийти
+           *[other] Вийти
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Відкрити меню програми
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Закрити меню програми
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Синхронізувати зараз
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Синхронізувати
-    .value = Синхронізувати
+appmenu-remote-tabs-sign-into-sync =
+    .label = Увійти до Синхронізації…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Увімкнути синхронізацію…
+appmenuitem-fxa-toolbar-sync-now2 = Синхронізувати
 appmenuitem-fxa-manage-account = Керувати обліковим записом
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = Востаннє синхронізовано { $time }
     .label = Востаннє синхронізовано { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Синхронізувати та зберегти дані
+appmenu-fxa-sync-and-save-data2 = Синхронізувати та зберегти дані
 appmenu-fxa-signed-in-label = Увійти
 appmenu-fxa-setup-sync =
     .label = Увімкнути синхронізацію…
@@ -135,29 +159,17 @@ appmenu-help-header =
 appmenu-about =
     .label = Про { -brand-shorter-name }
     .accesskey = о
-appmenu-help-product =
-    .label = Довідка { -brand-shorter-name }
-    .accesskey = Д
-appmenu-help-show-tour =
-    .label = Знайомство з { -brand-shorter-name }
-    .accesskey = й
-appmenu-help-import-from-another-browser =
-    .label = Імпорт даних з іншого браузера…
-    .accesskey = м
-appmenu-help-keyboard-shortcuts =
-    .label = Комбінації клавіш
-    .accesskey = К
 appmenu-get-help =
     .label = Отримати допомогу
     .accesskey = д
 appmenu-help-troubleshooting-info =
     .label = Усунення проблем
     .accesskey = У
+appmenu-help-taskmanager =
+    .label = Менеджер завдань
 appmenu-help-more-troubleshooting-info =
     .label = Додаткова інформація щодо усунення проблем
     .accesskey = я
-appmenu-help-taskmanager =
-    .label = Менеджер завдань
 appmenu-help-report-site-issue =
     .label = Проблема з сайтом…
 appmenu-help-feedback-page =
@@ -177,9 +189,9 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Режим усунення проблем
-    .accesskey = ж
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Режим усунення проблем…
+    .accesskey = б
 appmenu-help-exit-troubleshoot-mode =
     .label = Вимкнути режим усунення проблем
     .accesskey = и
@@ -194,13 +206,10 @@ appmenu-help-not-deceptive =
     .label = Це не шахрайський сайт…
     .accesskey = н
 
-##
-
-appmenu-help-check-for-update =
-    .label = Перевірити наявність оновлень…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Налаштувати панель інструментів…
+appmenu-taskmanager =
+    .label = Менеджер завдань
 appmenu-developer-tools-subheader = Інструменти браузера

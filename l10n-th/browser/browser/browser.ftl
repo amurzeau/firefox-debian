@@ -256,11 +256,23 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = เพิ่มที่คั่นหน้า
+bookmarks-edit-bookmark = แก้ไขที่คั่นหน้า
+bookmark-panel-cancel =
+    .label = ยกเลิก
+    .accesskey = ย
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label = เอา { $count } ที่คั่นหน้าออก
+    .accesskey = อ
 bookmark-panel-show-editor-checkbox =
     .label = แสดงตัวแก้ไขเมื่อบันทึก
     .accesskey = ส
 bookmark-panel-done-button =
     .label = เสร็จสิ้น
+bookmark-panel-save-button =
+    .label = บันทึก
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -279,7 +291,9 @@ identity-custom-root = การเชื่อมต่อถูกตรวจ
 identity-passive-loaded = บางส่วนของหน้านี้ไม่ปลอดภัย (อย่างเช่น ภาพ)
 identity-active-loaded = คุณได้ปิดใช้งานการป้องกันในหน้านี้
 identity-weak-encryption = หน้านี้ใช้การเข้ารหัสที่อ่อนแอ
-identity-insecure-login-forms = ข้อมูลการเข้าสู่ระบบที่ใส่ไว้บนหน้านี้อาจถูกบุกรุกได้
+identity-insecure-login-forms = การเข้าสู่ระบบที่ป้อนบนหน้านี้อาจถูกบุกรุกได้
+identity-permissions =
+    .value = สิทธิอนุญาต
 identity-https-only-connection-upgraded = (อัปเกรดเป็น HTTPS)
 identity-https-only-label = โหมด HTTPS-Only
 identity-https-only-dropdown-on =
@@ -291,8 +305,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = เปิดโหมด HTTPS-Only หากคุณต้องการให้ { -brand-short-name } อัปเกรดการเชื่อมต่อเมื่อเป็นไปได้
 identity-https-only-info-turn-off2 = หากหน้าดูเหมือนจะพัง คุณอาจต้องปิดโหมด HTTPS-Only สำหรับไซต์นี้เพื่อโหลดใหม่โดยใช้ HTTP ที่ไม่ปลอดภัย
 identity-https-only-info-no-upgrade = ไม่สามารถอัปเกรดการเชื่อมต่อจาก HTTP ได้
-identity-permissions =
-    .value = สิทธิอนุญาต
 identity-permissions-storage-access-header = คุกกี้ข้ามไซต์
 identity-permissions-storage-access-hint = บุคคลเหล่านี้สามารถใช้คุกกี้ข้ามไซต์และข้อมูลไซต์ในขณะที่คุณอยู่บนไซต์นี้ได้
 identity-permissions-reload-hint = คุณอาจจำเป็นต้องโหลดหน้าใหม่เพื่อให้การเปลี่ยนแปลงมีผล
@@ -307,7 +319,7 @@ identity-remove-cert-exception =
     .label = เอาข้อยกเว้นออก
     .accesskey = อ
 identity-description-insecure = การเชื่อมต่อของคุณไปยังไซต์นี้ไม่เป็นส่วนตัว ข้อมูลที่คุณแบ่งปันกับไซต์นี้สามารถดูได้โดยผู้อื่น (เช่น รหัสผ่าน, ข้อความ, บัตรเครดิต ฯลฯ)
-identity-description-insecure-login-forms = ข้อมูลการเข้าสู่ระบบที่คุณป้อนในหน้านี้ไม่ปลอดภัยและอาจถูกบุกรุกได้
+identity-description-insecure-login-forms = การเข้าสู่ระบบที่คุณป้อนบนหน้านี้ไม่ปลอดภัยและอาจถูกบุกรุกได้
 identity-description-weak-cipher-intro = การเชื่อมต่อของคุณไปยังเว็บไซต์นี้ใช้การเข้ารหัสที่อ่อนแอและไม่เป็นส่วนตัว
 identity-description-weak-cipher-risk = ผู้คนอื่น ๆ สามารถดูข้อมูลของคุณหรือเปลี่ยนแปลงลักษณะการทำงานของเว็บไซต์
 identity-description-active-blocked = { -brand-short-name } ได้ปิดกั้นบางส่วนของหน้านี้ที่ไม่ปลอดภัย <label data-l10n-name="link">เรียนรู้เพิ่มเติม</label>
@@ -340,8 +352,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = กำลังเล่น
-browser-tab-audio-muted = ปิดเสียงอยู่
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = กำลังเล่น
 # This label should be written in all capital letters if your locale supports them.
@@ -350,6 +360,26 @@ browser-tab-audio-muted2 = ปิดเสียงอยู่
 browser-tab-audio-blocked = การเล่นอัตโนมัติถูกปิดกั้น
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = ภาพที่เล่นควบคู่
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] ปิดเสียงแท็บ
+       *[other] ปิดเสียง { $count } แท็บ
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] เลิกปิดเสียงแท็บ
+       *[other] เลิกปิดเสียง { $count } แท็บ
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] เล่นแท็บ
+       *[other] เล่น { $count } แท็บ
+    }
 
 ## Bookmarks toolbar items
 
@@ -366,6 +396,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = ไมโครโฟนที่แบ่งปัน:
     .accesskey = ม
+popup-select-camera-device =
+    .value = กล้อง:
+    .accesskey = ก
+popup-select-camera-icon =
+    .tooltiptext = กล้อง
+popup-select-microphone-device =
+    .value = ไมโครโฟน:
+    .accesskey = ม
+popup-select-microphone-icon =
+    .tooltiptext = ไมโครโฟน
 popup-all-windows-shared = หน้าต่างที่ปรากฏอยู่ทั้งหมดบนหน้าจอของคุณจะถูกแบ่งปัน
 popup-screen-sharing-not-now =
     .label = ไม่ใช่ตอนนี้
@@ -375,6 +415,13 @@ popup-screen-sharing-never =
     .accesskey = ม
 popup-silence-notifications-checkbox = ปิดใช้งานการแจ้งเตือนจาก { -brand-short-name } ขณะที่แบ่งปัน
 popup-silence-notifications-checkbox-warning = { -brand-short-name } จะไม่แสดงการแจ้งเตือนขณะที่คุณกำลังแบ่งปัน
+popup-screen-sharing-block =
+    .label = ปิดกั้น
+    .accesskey = ป
+popup-screen-sharing-always-block =
+    .label = ปิดกั้นเสมอ
+    .accesskey = ส
+popup-mute-notifications-checkbox = ปิดเสียงการแจ้งเตือนเว็บไซต์ขณะแบ่งปัน
 
 ## WebRTC window or screen share tab switch warning
 
@@ -484,6 +531,13 @@ urlbar-result-action-tabtosearch-web = ค้นหาด้วย { $engine } �
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = ค้นหา { $engine } โดยตรงจากแถบที่อยู่
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = คัดลอก
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -515,6 +569,8 @@ crashed-subframe-message = <strong>เนื้อหาบางส่วนข
 crashed-subframe-learnmore =
     .label = เรียนรู้เพิ่มเติม
     .accesskey = ร
+crashed-subframe-learnmore-link =
+    .value = เรียนรู้เพิ่มเติม
 crashed-subframe-submit =
     .label = ส่งรายงาน
     .accesskey = ส
@@ -523,8 +579,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = แสดงที่คั่นหน้าทั้งหมด
-bookmarks-recent-bookmarks =
-    .value = ที่คั่นหน้าที่เพิ่มล่าสุด
 bookmarks-manage-bookmarks =
     .label = จัดการที่คั่นหน้า
 bookmarks-recent-bookmarks-panel =
@@ -545,12 +599,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] ซ่อนแถบข้างที่คั่นหน้า
            *[other] ดูแถบข้างที่คั่นหน้า
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] ซ่อนแถบเครื่องมือที่คั่นหน้า
-           *[other] ดูแถบเครื่องมือที่คั่นหน้า
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -597,12 +645,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = ที่คั่นหน้า
-library-bookmarks-bookmark-this-page =
-    .label = เพิ่มที่คั่นหน้าสำหรับหน้านี้
-library-bookmarks-bookmark-edit =
-    .label = แก้ไขที่คั่นหน้านี้
 library-recent-activity-title =
     .value = กิจกรรมล่าสุด
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = บันทึกไปยัง { -pocket-brand-name }
+    .tooltiptext = บันทึกไปยัง { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = ส่วนเสริมและชุดตกแต่ง
+    .tooltiptext = จัดการส่วนเสริมและชุดตกแต่งของคุณ ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = การตั้งค่า
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] เปิดการตั้งค่า ({ $shortcut })
+           *[other] เปิดการตั้งค่า
+        }
 
 ## More items
 
@@ -613,3 +680,25 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = เสียงหรือวิดีโอบางส่วนในไซต์นี้ใช้ซอฟต์แวร์ DRM ซึ่งอาจจะจำกัดสิ่งที่ { -brand-short-name } สามารถให้คุณทำได้
+eme-notifications-drm-content-playing-manage = จัดการการตั้งค่า
+eme-notifications-drm-content-playing-manage-accesskey = จ
+eme-notifications-drm-content-playing-dismiss = ปิด
+eme-notifications-drm-content-playing-dismiss-accesskey = ด
+
+## Password save/update panel
+
+panel-save-update-username = ชื่อผู้ใช้
+panel-save-update-password = รหัสผ่าน
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = ต้องการเอา { $name } ออกหรือไม่?
+addon-removal-abuse-report-checkbox = รายงานส่วนขยายนี้ไปยัง { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = จัดการบัญชี
+remote-tabs-sync-now = ซิงค์ตอนนี้

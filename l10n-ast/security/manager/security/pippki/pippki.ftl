@@ -5,9 +5,17 @@
 
 ## Change Password dialog
 
+change-device-password-window =
+    .title = Cambéu de la contraseña
+# Variables:
+# $tokenName (String) - Security device of the change password dialog
+change-password-token = Preséu de seguranza: { $tokenName }
+change-password-old = Contraseña actual:
+change-password-new = Contraseña nueva:
 
 ## Reset Password dialog
 
+pippki-failed-pw-change = Nun ye posible camudar la contraseña
 
 ## Reset Primary Password dialog
 
@@ -17,6 +25,7 @@
 
 ## Client Authorization Ask dialog
 
+client-auth-site-description = Esti sitiu solicitó que t'indentifiques con un certificáu:
 
 ## Set password (p12) dialog
 

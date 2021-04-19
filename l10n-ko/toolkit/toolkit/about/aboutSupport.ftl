@@ -8,7 +8,7 @@ crashes-title = 충돌 보고서
 crashes-id = 보고 ID
 crashes-send-date = 전송됨
 crashes-all-reports = 모든 충돌 보고서
-crashes-no-config = 이 프로그램은 충돌 보고서를 표시하도록 설정되어 있지 않습니다.
+crashes-no-config = 이 애플리케이션은 충돌 보고서를 표시하도록 설정되어 있지 않습니다.
 extensions-title = 확장 기능
 extensions-name = 이름
 extensions-enabled = 사용
@@ -23,8 +23,8 @@ support-addons-id = ID
 security-software-title = 보안 소프트웨어
 security-software-type = 유형
 security-software-name = 이름
-security-software-antivirus = 바이러스 방지 프로그램
-security-software-antispyware = 스파이웨어 방지 프로그램
+security-software-antivirus = 바이러스 백신 소프트웨어
+security-software-antispyware = 스파이웨어 방지 소프트웨어
 security-software-firewall = 방화벽
 features-title = { -brand-short-name } 주요 기능
 features-name = 이름
@@ -33,7 +33,7 @@ features-id = ID
 processes-title = 원격 프로세스
 processes-type = 유형
 processes-count = 수
-app-basics-title = 응용 프로그램 기본 정보
+app-basics-title = 애플리케이션 기본 정보
 app-basics-name = 이름
 app-basics-version = 버전
 app-basics-build-id = 빌드 ID
@@ -47,9 +47,9 @@ app-basics-update-dir =
        *[other] 업데이트 폴더
     }
 app-basics-update-history = 업데이트 기록
-app-basics-show-update-history = 업데이트 기록 표시
+app-basics-show-update-history = 업데이트 기록 보기
 # Represents the path to the binary used to start the application.
-app-basics-binary = 프로그램 바이너리
+app-basics-binary = 애플리케이션 바이너리
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] 프로필 저장 폴더
@@ -82,7 +82,7 @@ show-dir-label =
        *[other] 디렉터리 열기
     }
 environment-variables-title = 환경 변수
-environment-variables-name = Name
+environment-variables-name = 이름
 environment-variables-value = 값
 experimental-features-title = 실험적인 기능
 experimental-features-name = 이름
@@ -144,7 +144,7 @@ restart-button-label = 다시 시작
 
 audio-backend = 오디오 백엔드
 max-audio-channels = 최대 채널
-sample-rate = 기본 샘플 비율
+sample-rate = 기본 샘플 레이트
 roundtrip-latency = 왕복 지연 시간 (표준 편차)
 media-title = 미디어
 media-output-devices-title = 출력 기기
@@ -156,7 +156,7 @@ media-device-state = 상태
 media-device-preferred = 기본
 media-device-format = 형식
 media-device-channels = 채널
-media-device-rate = 비율
+media-device-rate = 레이트
 media-device-latency = 지연 시간
 media-capabilities-title = 미디어 기능
 # List all the entries of the database.
@@ -165,10 +165,10 @@ media-capabilities-enumerate = 데이터베이스 열거
 ##
 
 intl-title = 국제화 및 현지화
-intl-app-title = 응용 프로그램 설정
+intl-app-title = 애플리케이션 설정
 intl-locales-requested = 요청된 언어
 intl-locales-available = 사용 가능한 언어
-intl-locales-supported = 응용 프로그램 언어
+intl-locales-supported = 앱 언어
 intl-locales-default = 기본 언어
 intl-os-title = 운영 체제
 intl-os-prefs-system-locales = 시스템 언어
@@ -306,8 +306,8 @@ gpu-device-reset = 기기 초기화
 gpu-device-reset-button = 기기 초기화 시작
 uses-tiling = 타일링 사용
 content-uses-tiling = 타일링(콘텐츠) 사용
-off-main-thread-paint-enabled = 주 스레드 페인팅 끄기 활성화됨
-off-main-thread-paint-worker-count = 주 스레드 페인팅 Worker 카운트 끔
+off-main-thread-paint-enabled = 오프 메인 스레드 페인팅 활성화됨
+off-main-thread-paint-worker-count = 오프 메인 스레드 페인팅 Worker 수
 target-frame-rate = 목표 프레임 레이트
 min-lib-versions = 요구되는 최소 버전
 loaded-lib-versions = 사용 중인 버전

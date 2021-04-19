@@ -109,6 +109,9 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Tipkajte manj, najdite več: Iščite z iskalnikom { $engineName } iz vrstice z naslovom.
 urlbar-search-tips-redirect-2 = Začnite z iskanjem v naslovni vrstici ter spremljajte predloge iskalnika { $engineName } in zgodovine vašega brskanja.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Izberite to bližnjico in hitreje najdite, kar potrebujete.
 
 ## Local search mode indicator labels in the urlbar
 
@@ -265,10 +268,28 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Dodaj zaznamek
+bookmarks-edit-bookmark = Uredi zaznamek
+bookmark-panel-cancel =
+    .label = Prekliči
+    .accesskey = P
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Odstrani zaznamek
+            [two] Odstrani { $count } zaznamka
+            [few] Odstrani { $count } zaznamke
+           *[other] Odstrani { $count } zaznamkov
+        }
+    .accesskey = O
 bookmark-panel-show-editor-checkbox =
     .label = Pri shranjevanju prikaži urejevalnik
     .accesskey = j
 bookmark-panel-done-button =
+    .label = Shrani
+bookmark-panel-save-button =
     .label = Shrani
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
@@ -280,7 +301,7 @@ bookmark-panel =
 
 identity-connection-not-secure = Povezava ni varna
 identity-connection-secure = Povezava varna
-identity-connection-internal = To je varna stran { -brand-short-name }a.
+identity-connection-internal = To je varna stran { -brand-short-name(sklon: "rodilnik") }.
 identity-connection-file = Ta stran je shranjena na vašem računalniku.
 identity-extension-page = To stran je naložila razširitev.
 identity-active-blocked = { -brand-short-name } je zavrnil dele strani, ki niso varni.
@@ -289,6 +310,8 @@ identity-passive-loaded = Deli strani niso varni (npr. slike).
 identity-active-loaded = Zaščita na tej strani je onemogočena.
 identity-weak-encryption = Stran uporablja šibko šifriranje.
 identity-insecure-login-forms = Prijave, ki jih vnesete na tej strani, so lahko ogrožene.
+identity-permissions =
+    .value = Dovoljenja
 identity-https-only-connection-upgraded = (nadgrajeno na HTTPS)
 identity-https-only-label = Način "samo HTTPS"
 identity-https-only-dropdown-on =
@@ -299,8 +322,6 @@ identity-https-only-dropdown-off-temporarily =
     .label = Začasno izključeno
 identity-https-only-info-turn-on2 = Vključite način samo HTTPS za to stran, če želite, da { -brand-short-name } nadgradi povezavo, ko je to mogoče.
 identity-https-only-info-no-upgrade = Povezave ni mogoče nadgraditi s HTTP.
-identity-permissions =
-    .value = Dovoljenja
 identity-permissions-storage-access-header = Spletni piškotki
 identity-permissions-reload-hint = Za uveljavitev sprememb boste morda morali ponovno naložiti stran.
 identity-permissions-empty = Tej strani niste dodelili posebnih dovoljenj.
@@ -347,8 +368,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Predvajanje
-browser-tab-audio-muted = Nemo
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = PREDVAJANJE
 # This label should be written in all capital letters if your locale supports them.
@@ -357,6 +376,27 @@ browser-tab-audio-muted2 = NEMO
 browser-tab-audio-blocked = SAMODEJNO PREDVAJANJE ZAVRNJENO
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = SLIKA V SLIKI
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] UTIŠAJ ZAVIHEK
+        [one] UTIŠAJ { $count } ZAVIHEK
+        [two] UTIŠAJ { $count } ZAVIHKA
+        [few] UTIŠAJ { $count } ZAVIHKE
+       *[other] UTIŠAJ { $count } ZAVIHKOV
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] PREDVAJAJ ZAVIHEK
+        [one] PREDVAJAJ { $count } ZAVIHEK
+        [two] PREDVAJAJ { $count } ZAVIHKA
+        [few] PREDVAJAJ { $count } ZAVIHKE
+       *[other] PREDVAJAJ { $count } ZAVIHKOV
+    }
 
 ## Bookmarks toolbar items
 
@@ -373,6 +413,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Uporabi mikrofon:
     .accesskey = M
+popup-select-camera-device =
+    .value = Kamera:
+    .accesskey = K
+popup-select-camera-icon =
+    .tooltiptext = Kamera
+popup-select-microphone-device =
+    .value = Mikrofon:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Mikrofon
 popup-all-windows-shared = Vsa vidna okna na vašem zaslonu bodo v skupni rabi.
 popup-screen-sharing-not-now =
     .label = Ne zdaj
@@ -380,8 +430,15 @@ popup-screen-sharing-not-now =
 popup-screen-sharing-never =
     .label = Nikoli ne dovoli
     .accesskey = N
-popup-silence-notifications-checkbox = Onemogočite obvestila { -brand-short-name }a med deljenjem
+popup-silence-notifications-checkbox = Onemogočite obvestila { -brand-short-name(sklon: "rodilnik") } med deljenjem
 popup-silence-notifications-checkbox-warning = { -brand-short-name } med deljenjem ne bo prikazoval obvestil.
+popup-screen-sharing-block =
+    .label = Zavrni
+    .accesskey = Z
+popup-screen-sharing-always-block =
+    .label = Vedno zavrni
+    .accesskey = V
+popup-mute-notifications-checkbox = Med skupno rabo izklopi obvestila spletnega mesta
 
 ## WebRTC window or screen share tab switch warning
 
@@ -491,6 +548,13 @@ urlbar-result-action-tabtosearch-web = Iščite z iskalnikom { $engine } neposre
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Iščite z iskalnikom { $engine } neposredno iz naslovne vrstice
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Kopiraj
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -532,8 +596,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Prikaži vse zaznamke
-bookmarks-recent-bookmarks =
-    .value = Nedavni zaznamki
 bookmarks-manage-bookmarks =
     .label = Upravljanje zaznamkov
 bookmarks-recent-bookmarks-panel =
@@ -554,12 +616,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Skrij stransko vrstico zaznamkov
            *[other] Prikaži stransko vrstico zaznamkov
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Skrij orodno vrstico zaznamkov
-           *[other] Prikaži orodno vrstico zaznamkov
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -606,12 +662,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Zaznamki
-library-bookmarks-bookmark-this-page =
-    .label = Dodaj stran med zaznamke
-library-bookmarks-bookmark-edit =
-    .label = Uredi ta zaznamek
 library-recent-activity-title =
     .value = Nedavne dejavnosti
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Shrani v { -pocket-brand-name }
+    .tooltiptext = Shrani v { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Dodatki in teme
+    .tooltiptext = Upravljajte s svojimi dodatki in temami ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Nastavitve
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Odpri nastavitve ({ $shortcut })
+           *[other] Odpri nastavitve
+        }
 
 ## More items
 
@@ -621,6 +696,26 @@ more-menu-go-offline =
 
 ## EME notification panel
 
-eme-notifications-drm-content-playing = Zvok ali video na tej strani uporablja DRM, kar lahko omejuje delovanje { -brand-short-name }a.
+eme-notifications-drm-content-playing = Zvok ali video na tej strani uporablja DRM, kar lahko omejuje delovanje { -brand-short-name(sklon: "rodilnik") }.
+eme-notifications-drm-content-playing-manage = Upravljanje nastavitev
+eme-notifications-drm-content-playing-manage-accesskey = U
 eme-notifications-drm-content-playing-dismiss = Zapri
 eme-notifications-drm-content-playing-dismiss-accesskey = Z
+
+## Password save/update panel
+
+panel-save-update-username = Uporabniško ime
+panel-save-update-password = Geslo
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Odstranim { $name }?
+addon-removal-abuse-report-checkbox = Prijavi to razširitev organizaciji { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Upravljanje računa
+remote-tabs-sync-now = Sinhroniziraj zdaj

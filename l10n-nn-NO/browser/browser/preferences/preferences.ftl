@@ -28,6 +28,18 @@ search-input-box =
             [windows] Søk i innstillingar
            *[other] Søk i innstillingar
         }
+settings-page-title = Innstillingar
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Søk i innstillingar
 managed-notice = Nettlessaren din vert administrert av organisasjonen din.
 category-list =
     .aria-label = Kategoriar
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Synkronisering
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = { -brand-short-name }-eksperiment
 category-experimental =
     .tooltiptext = { -brand-short-name }-eksperiment
 pane-experimental-subtitle = Gå varsamt til verks
 pane-experimental-search-results-header = { -brand-short-name }-eksperiment: Fortset med varsemd
 pane-experimental-description = Endrar du avanserte konfigurasjonsinnstillingar kan det påverke yting eller sikkerheit i { -brand-short-name }.
+pane-experimental-description2 = Endrar du avanserte konfigurasjonsinnstillingar kan det påverke yting eller sikkerheit i { -brand-short-name }.
 pane-experimental-reset =
     .label = Gjenopprett standard
     .accesskey = G
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] Beklagar! Ingen resultat i Innstillingar for “<span data-l10n-name="query"></span>”.
        *[other] Beklagar! Ingen resultat i Innstillingar for “<span data-l10n-name="query"></span>”.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Orsak! Det er ingen resultat i innstillingar for «<span data-l10n-name="query"></span>».
 search-results-help-link = Treng du hjelp? Gå til <a data-l10n-name="url">{ -brand-short-name } brukarstøtte</a>
 
 ## General Section
@@ -369,6 +387,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Sjå aldri etter oppdateringar (ikkje tilrådd)
     .accesskey = a
+update-application-background-enabled =
+    .label = Når { -brand-short-name } ikkje køyrer
+    .accesskey = N
 update-application-warning-cross-user-setting = Denne innstillinga gjeld for alle Windows-kontoar og { -brand-short-name }-profilar som brukar denne installasjonen av { -brand-short-name }.
 update-application-use-service =
     .label = Bruk ei bakgrunnsteneste for å installere oppdateringar
@@ -382,6 +403,15 @@ update-setting-write-failure-message =
     { -brand-short-name } oppdaga ein feil og lagra ikkje denne endringa. Merk, for å kunne lagre endringa av denne oppdateringsinnstillinga, vert det krevd løyve til å skrive til fila nedanfor. Du eller ein systemadministrator kan kanskje løyse feilen ved å gje gruppa Brukarar full tilgang til denne fila.
     
     Klarte ikkje å skrive til fila: { $path }
+update-setting-write-failure-title2 = Klarte ikkje å lagre oppdateringsinnstillingar
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name } oppdaga ein feil og lagra ikkje denne endringa. Merk, for å kunne lagre endringa av denne oppdateringsinnstillinga, vert det krevd løyve til å skrive til fila nedanfor. Du eller ein systemadministrator kan kanskje rette feilen ved å gi gruppa Brukarar full tilgang til denne fila.
+    
+    Kunne ikke skrive til filen: { $path }
 update-in-progress-title = Oppdatering i framdrift
 update-in-progress-message = Vil du at { -brand-short-name } skal fortsetje med denne oppdateringa?
 update-in-progress-ok-button = &Avvis
@@ -579,6 +609,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Vel søkjeforslag i private vindauge
 suggestions-addressbar-settings-generic = Endre innstillingar for andre adresselinjeforslag
+suggestions-addressbar-settings-generic2 = Endre innstillingar for andre adresselinjeforslag
 search-suggestions-cant-show = Søkjeforslag vil ikkje visast i adresselinjeresultata fordi du har konfigurert { -brand-short-name } til å aldri hugse historikk.
 search-one-click-header = Eittklikks-søkjemotorar
 search-one-click-header2 = Søkesnarvegar
@@ -613,6 +644,8 @@ containers-back-button =
             [windows] Tilbake til innstillingar
            *[other] Tilbake til innstillingar
         }
+containers-back-button2 =
+    .aria-label = Tilbake til innstillingar
 containers-header = Innhaldsfaner
 containers-add-button =
     .label = Legg til ny behaldar
@@ -621,6 +654,8 @@ containers-new-tab-check =
     .label = Vel ein behaldar for kvar ny fane
     .accesskey = V
 containers-preferences-button =
+    .label = Innstillingar
+containers-settings-button =
     .label = Innstillingar
 containers-remove-button =
     .label = Fjern
@@ -633,6 +668,10 @@ sync-signedout-description = Synkroniser bokmerke, historikk, faner, passord, ut
 sync-signedout-account-signin2 =
     .label = Logg inn på { -sync-brand-short-name }…
     .accesskey = i
+sync-signedout-description2 = Synkroniser bokmerke, historikk, faner, passord, utvidingar og innstillingar på tvers av alle einingane dine.
+sync-signedout-account-signin3 =
+    .label = Logg in for å synkronisere…
+    .accesskey = L
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -672,6 +711,10 @@ prefs-sync-setup =
     .label = Konfigurer { -sync-brand-short-name }…
     .accesskey = K
 prefs-sync-offer-setup-label = Synkroniser bokmerke, historikk, faner, passord, tillegg og innstillingar på tvers av alle einingane dine.
+prefs-sync-turn-on-syncing =
+    .label = Slå på synkronisering…
+    .accesskey = S
+prefs-sync-offer-setup-label2 = Synkroniser bokmerke, historikk, faner, passord, utvidingar og innstillingar på tvers av alle einingane dine.
 prefs-sync-now =
     .labelnotsyncing = Synkroniser no
     .accesskeynotsyncing = n
@@ -692,6 +735,7 @@ sync-currently-syncing-prefs =
         [windows] Innstillingar
        *[other] Innstillingar
     }
+sync-currently-syncing-settings = Innstillingar
 sync-change-options =
     .label = Endre…
     .accesskey = E
@@ -730,7 +774,7 @@ sync-engine-creditcards =
 sync-engine-addons =
     .label = Tillegg
     .tooltiptext = Tillegg og tema for Firefox desktop
-    .accesskey = U
+    .accesskey = T
 sync-engine-prefs =
     .label =
         { PLATFORM() ->
@@ -738,6 +782,10 @@ sync-engine-prefs =
            *[other] Innstillingar
         }
     .tooltiptext = Generelle, personvern og sikkerheitsinnstillingar du har endra
+    .accesskey = n
+sync-engine-settings =
+    .label = Innstillingar
+    .tooltiptext = Generelle, personvern- og sikkerheitsinnstillingar du har endra
     .accesskey = n
 
 ## The device name controls.
@@ -1153,6 +1201,11 @@ space-alert-under-5gb-ok-button =
     .label = OK, eg forstår det
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } er i ferd med å gå tom for diskplass. Det kan vere at nettinnhaldet på sida ikkje vert vist korrekt. Gå til «Les meir» for å optimere diskbruken din for ei betre nettlesaroppleving.
+space-alert-over-5gb-settings-button =
+    .label = Opne Innstillingar
+    .accesskey = p
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name } er i ferd med å gå tom for plass på disken.</strong> Det kan hende at innhaldet på nettstaden ikkje vert vist skikkeleg. Du kan tøme lagra data i Innstillingar > Personvern og sikkerheit > Infokapslar og nettstaddata.
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name } er i ferd med å gå tom for plass på disken.</strong> Det kan hende at innhaldet på nettsida ikkje vert vist skikkeleg. Gå til «Les meir» for å optimalisere diskbruken din for ei betre nettoppleving.
 
 ## Privacy Section - HTTPS-Only
 

@@ -8,7 +8,7 @@
 newtab-page-title = Nový panel
 newtab-settings-button =
     .title = Přizpůsobení stránky nového panelu
-newtab-personalize-button-label = Přizpůsobení
+newtab-personalize-button-label = Přizpůsobit
     .title = Přizpůsobení nového panelu
     .aria-label = Přizpůsobení nového panelu
 
@@ -19,6 +19,20 @@ newtab-search-box-search-button =
     .title = Vyhledat
     .aria-label = Vyhledat
 newtab-search-box-search-the-web-text = Vyhledat na webu
+# Variables
+#  $engine (String): the name of the user's default search engine
+newtab-search-box-handoff-text = Zadejte webovou adresu nebo dotaz pro vyhledávač { $engine }
+newtab-search-box-handoff-text-no-engine = Zadejte webovou adresu nebo dotaz pro vyhledávač
+# Variables
+#  $engine (String): the name of the user's default search engine
+newtab-search-box-handoff-input =
+    .placeholder = Zadejte webovou adresu nebo dotaz pro vyhledávač { $engine }
+    .title = Zadejte webovou adresu nebo dotaz pro vyhledávač { $engine }
+    .aria-label = Zadejte webovou adresu nebo dotaz pro vyhledávač { $engine }
+newtab-search-box-handoff-input-no-engine =
+    .placeholder = Zadejte webovou adresu nebo dotaz pro vyhledávač
+    .title = Zadejte webovou adresu nebo dotaz pro vyhledávač
+    .aria-label = Zadejte webovou adresu nebo dotaz pro vyhledávač
 newtab-search-box-search-the-web-input =
     .placeholder = Vyhledat na webu
     .title = Vyhledat na webu

@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = Préférences
 menu-application-services =
     .label = Services
 menu-application-hide-this =
@@ -252,14 +254,17 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Se connecter à { -brand-product-name }…
     .accesskey = e
-menu-tools-extensions =
-    .label = Extensions et thèmes
-    .accesskey = E
+menu-tools-addons-and-themes =
+    .label = Modules complémentaires et thèmes
+    .accesskey = a
 menu-tools-fxa-sign-in2 =
     .label = Connexion
     .accesskey = C
 menu-tools-turn-on-sync =
     .label = Activer { -sync-brand-short-name }…
+    .accesskey = n
+menu-tools-turn-on-sync2 =
+    .label = Activer la synchronisation…
     .accesskey = n
 menu-tools-sync-now =
     .label = Synchroniser maintenant
@@ -270,12 +275,25 @@ menu-tools-fxa-re-auth =
 menu-tools-web-developer =
     .label = Développement web
     .accesskey = W
+menu-tools-browser-tools =
+    .label = Outils du navigateur
+    .accesskey = n
+menu-tools-task-manager =
+    .label = Gestionnaire de tâches
+    .accesskey = t
 menu-tools-page-source =
     .label = Code source de la page
     .accesskey = C
 menu-tools-page-info =
     .label = Informations sur la page
     .accesskey = I
+menu-settings =
+    .label = Paramètres
+    .accesskey =
+        { PLATFORM() ->
+            [windows] a
+           *[other] a
+        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -286,13 +304,6 @@ menu-preferences =
         { PLATFORM() ->
             [windows] O
            *[other] f
-        }
-menu-settings =
-    .label = Paramètres
-    .accesskey =
-        { PLATFORM() ->
-            [windows] a
-           *[other] a
         }
 menu-tools-layout-debugger =
     .label = Débogueur de mise en page
@@ -306,15 +317,6 @@ menu-window-bring-all-to-front =
     .label = Tout amener à l’avant-plan
 
 ## Help Menu
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
 
 
 # NOTE: For Engineers, any additions or changes to Help menu strings should
@@ -346,11 +348,11 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Informations de dépannage
     .accesskey = I
+menu-help-taskmanager =
+    .label = Gestionnaire de tâches
 menu-help-more-troubleshooting-info =
     .label = Plus d’informations de dépannage
     .accesskey = t
-menu-help-taskmanager =
-    .label = Gestionnaire de tâches
 menu-help-report-site-issue =
     .label = Signaler un problème sur ce site…
 menu-help-feedback-page =
@@ -362,8 +364,8 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Redémarrer avec les modules activés…
     .accesskey = R
-menu-help-enter-troubleshoot-mode =
-    .label = Mode de dépannage
+menu-help-enter-troubleshoot-mode2 =
+    .label = Mode de dépannage…
     .accesskey = M
 menu-help-exit-troubleshoot-mode =
     .label = Désactiver le mode de dépannage
@@ -376,6 +378,3 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Ce site n’est pas trompeur…
     .accesskey = C
-menu-help-check-for-update =
-    .label = Rechercher des mises à jour…
-    .accesskey = R

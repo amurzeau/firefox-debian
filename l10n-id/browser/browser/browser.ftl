@@ -256,11 +256,23 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Tambah markah
+bookmarks-edit-bookmark = Edit markah
+bookmark-panel-cancel =
+    .label = Batal
+    .accesskey = B
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label = Hapus { $count } Markah
+    .accesskey = H
 bookmark-panel-show-editor-checkbox =
     .label = Tampilkan editor saat menyimpan
     .accesskey = e
 bookmark-panel-done-button =
     .label = Selesai
+bookmark-panel-save-button =
+    .label = Simpan
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -280,6 +292,8 @@ identity-passive-loaded = Bagian dari laman ini tidak aman (misalnya, gambar).
 identity-active-loaded = Anda telah menonaktifkan perlindungan di laman ini.
 identity-weak-encryption = Laman ini menggunakan enkripsi lemah.
 identity-insecure-login-forms = Info masuk yang dimasukkan di laman ini bisa diketahui orang lain.
+identity-permissions =
+    .value = Izin
 identity-https-only-connection-upgraded = (ditingkatkan ke HTTPS)
 identity-https-only-label = Mode Hanya HTTPS
 identity-https-only-dropdown-on =
@@ -291,8 +305,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Nyalakan Mode HTTPS-Only untuk situs ini jika Anda ingin { -brand-short-name } meningkatkan sambungan bila memungkinkan.
 identity-https-only-info-turn-off2 = Jika laman terlihat bermasalah, Anda mungkin ingin menonaktifkan Mode HTTPS-Only lalu memuat ulang situsnya dengan HTTP yang tidak aman.
 identity-https-only-info-no-upgrade = Tidak dapat meningkatkan koneksi dari HTTP.
-identity-permissions =
-    .value = Izin
 identity-permissions-storage-access-header = Kuki lintas situs
 identity-permissions-storage-access-hint = Pihak berikut dapat menggunakan kuki lintas situs dan data situs saat Anda berada di situs ini.
 identity-permissions-reload-hint = Anda mungkin perlu memuat ulang laman untuk menerapkan perubahan.
@@ -340,8 +352,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Memutar
-browser-tab-audio-muted = Disenyapkan
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = MEMUTAR
 # This label should be written in all capital letters if your locale supports them.
@@ -350,6 +360,26 @@ browser-tab-audio-muted2 = DISENYAPKAN
 browser-tab-audio-blocked = PUTAR OTOMATIS DIBLOKIR
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = GAMBAR DALAM GAMBAR
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] SENYAPKAN { $count } TAB
+       *[other] S
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] SUARAKAN { $count } TAB
+       *[other] U
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] PUTAR { $count } TAB
+       *[other] P
+    }
 
 ## Bookmarks toolbar items
 
@@ -369,9 +399,13 @@ popup-select-microphone =
 popup-select-camera-device =
     .value = Kamera:
     .accesskey = K
+popup-select-camera-icon =
+    .tooltiptext = Kamera
 popup-select-microphone-device =
     .value = Mikrofon:
     .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Mikrofon
 popup-all-windows-shared = Semua jendela yang terlihat pada layar Anda akan dibagikan.
 popup-screen-sharing-not-now =
     .label = Jangan Sekarang
@@ -497,6 +531,8 @@ urlbar-result-action-tabtosearch-web = Cari dengan { $engine } langsung dari bil
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Cari dengan { $engine } langsung dari bilah alamat
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Salin
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -538,8 +574,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Tampilkan Semua Markah…
-bookmarks-recent-bookmarks =
-    .value = Baru Saja Dibuat Markah
 bookmarks-manage-bookmarks =
     .label = Kelola Markah
 bookmarks-recent-bookmarks-panel =
@@ -560,12 +594,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Sembunyikan Bilah Samping Markah
            *[other] Tampilkan Bilah Samping Markah
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Sembunyikan Bilah Alat Markah
-           *[other] Tampilkan Bilah Alat Markah
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -612,12 +640,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Markah
-library-bookmarks-bookmark-this-page =
-    .label = Markahi Laman ini
-library-bookmarks-bookmark-edit =
-    .label = Edit Markah Ini
 library-recent-activity-title =
     .value = Aktivitas Terkini
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Simpan ke { -pocket-brand-name }
+    .tooltiptext = Simpan ke { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Pengaya dan tema
+    .tooltiptext = Kelola pengaya dan tema ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Pengaturan
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Buka pengaturan ({ $shortcut })
+           *[other] Buka pengaturan
+        }
 
 ## More items
 
@@ -632,3 +679,21 @@ eme-notifications-drm-content-playing-manage = Kelola Pengaturan
 eme-notifications-drm-content-playing-manage-accesskey = K
 eme-notifications-drm-content-playing-dismiss = Tutup
 eme-notifications-drm-content-playing-dismiss-accesskey = T
+
+## Password save/update panel
+
+panel-save-update-username = Nama Pengguna
+panel-save-update-password = Kata Sandi
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Hapus { $name }?
+addon-removal-abuse-report-checkbox = Laporkan ekstensi ini ke { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Kelola Akun
+remote-tabs-sync-now = Sinkronkan Sekarang

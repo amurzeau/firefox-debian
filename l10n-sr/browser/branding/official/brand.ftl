@@ -13,6 +13,7 @@
 ##
 ## Reference: https://www.mozilla.org/styleguide/communications/translation/
 
+
 ## Firefox and Mozilla Brand
 ##
 ## Firefox and Mozilla must be treated as a brand.
@@ -27,11 +28,56 @@
 ## For further details, consult:
 ## https://mozilla-l10n.github.io/styleguides/mozilla_general/#brands-copyright-and-trademark
 
--brand-shorter-name = Firefox
--brand-short-name = Firefox
--brand-full-name = Mozilla Firefox
+-brand-shorter-name =
+    { $case ->
+       *[nom] Firefox
+        [gen] Firefox-а
+        [dat] Firefox-у
+        [acc] Firefox
+        [ins] Firefox-ом
+        [loc] Firefox-у
+    }
+    .gender = masculine
+-brand-short-name =
+    { $case ->
+       *[nom] Firefox
+        [gen] Firefox-а
+        [dat] Firefox-у
+        [acc] Firefox
+        [ins] Firefox-ом
+        [loc] Firefox-у
+    }
+    .gender = masculine
+-brand-full-name =
+    { $case ->
+       *[nom] Mozilla Firefox
+        [gen] Mozilla Firefox-а
+        [dat] Mozilla Firefox-у
+        [acc] Mozilla Firefox
+        [ins] Mozilla Firefox-ом
+        [loc] Mozilla Firefox-у
+    }
+    .gender = masculine
 # This brand name can be used in messages where the product name needs to
 # remain unchanged across different versions (Nightly, Beta, etc.).
--brand-product-name = Firefox
--vendor-short-name = Mozilla
-trademarkInfo = Firefox и његови логотипи су заштитни знакови Mozilla фондације.
+-brand-product-name =
+    { $case ->
+       *[nom] Firefox
+        [gen] Firefox-а
+        [dat] Firefox-у
+        [acc] Firefox
+        [ins] Firefox-ом
+        [loc] Firefox-у
+    }
+    .gender = masculine
+-vendor-short-name =
+    { $case ->
+       *[nom] Mozilla
+        [gen] Mozill-е
+        [dat] Mozill-и
+        [acc] Mozill-у
+        [ins] Mozill-ом
+        [loc] Mozill-и
+    }
+    .gender = feminine
+trademarkInfo = Firefox и његови логотипи су жигови организације Mozilla Foundation.

@@ -256,11 +256,23 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = ブックマークを追加
+bookmarks-edit-bookmark = ブックマークを編集
+bookmark-panel-cancel =
+    .label = キャンセル
+    .accesskey = C
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label = { $count } 個のブックマークを削除
+    .accesskey = R
 bookmark-panel-show-editor-checkbox =
     .label = 追加時にエディターを表示する
     .accesskey = S
 bookmark-panel-done-button =
     .label = 完了
+bookmark-panel-save-button =
+    .label = 保存
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -280,6 +292,8 @@ identity-passive-loaded = このページの一部 (画像など) は安全で�
 identity-active-loaded = このページでの保護は無効に設定されています。
 identity-weak-encryption = このページは脆弱な暗号を使用しています。
 identity-insecure-login-forms = このページのログインフォームは安全ではありません。
+identity-permissions =
+    .value = このサイトの設定
 identity-https-only-connection-upgraded = (HTTPS で接続中)
 identity-https-only-label = HTTPS-Only モード
 identity-https-only-dropdown-on =
@@ -291,8 +305,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = このサイトで { -brand-short-name } に可能な限り接続をアップグレードさせたい場合は、HTTPS-Only モードをオンにしてください。
 identity-https-only-info-turn-off2 = ページが動作しない場合は HTTPS-Only モードをオフにして、安全でない HTTP 接続でこのサイトを再読み込みするとよいでしょう。
 identity-https-only-info-no-upgrade = 接続を HTTP からアップグレードできません。
-identity-permissions =
-    .value = このサイトの設定
 identity-permissions-storage-access-header = クロスサイト Cookie
 identity-permissions-storage-access-hint = 以下のサイトが、あなたがこのサイトにいる間、クロスサイト Cookie とサイトデータにアクセスできます。
 identity-permissions-reload-hint = 変更内容を適用するには、ページの再読み込みが必要です。
@@ -340,9 +352,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = 再生中
-browser-tab-audio-muted = ミュート中
-
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = 再生中
 # This label should be written in all capital letters if your locale supports them.
@@ -351,6 +360,26 @@ browser-tab-audio-muted2 = ミュート中
 browser-tab-audio-blocked = 自動再生をブロック
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = ピクチャーインピクチャー
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] タブをミュート
+       *[other] { $count } 個のタブをミュート
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] タブのミュートを解除
+       *[other] { $count } 個のタブのミュートを解除
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] タブのメディアを再生
+       *[other] { $count } 個のタブのメディアを再生
+    }
 
 ## Bookmarks toolbar items
 
@@ -367,6 +396,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = 共有するマイク:
     .accesskey = M
+popup-select-camera-device =
+    .value = カメラ:
+    .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = カメラ
+popup-select-microphone-device =
+    .value = マイク:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = マイク
 popup-all-windows-shared = 画面に表示されているすべてのウィンドウを共有します。
 popup-screen-sharing-not-now =
     .label = 後で
@@ -376,6 +415,13 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = 共有中は { -brand-short-name } からの通知を無効にする。
 popup-silence-notifications-checkbox-warning = 共有中は { -brand-short-name } からの通知を表示しないようにします。
+popup-screen-sharing-block =
+  .label = ブロック
+  .accesskey = B
+popup-screen-sharing-always-block =
+  .label = 常にブロック
+  .accesskey = w
+popup-mute-notifications-checkbox = 共有中はウェブサイトからの通知を無効にする
 
 ## WebRTC window or screen share tab switch warning
 
@@ -517,7 +563,7 @@ crashed-subframe-learnmore =
     .label = 詳細
     .accesskey = L
 crashed-subframe-learnmore-link =
-  .value = 詳細
+    .value = 詳細
 crashed-subframe-submit =
     .label = レポートを送信
     .accesskey = S
@@ -526,8 +572,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = すべてのブックマークを表示
-bookmarks-recent-bookmarks =
-    .value = 最近のブックマーク
 bookmarks-manage-bookmarks =
     .label = ブックマークを管理
 bookmarks-recent-bookmarks-panel =
@@ -549,22 +593,18 @@ bookmarks-tools-sidebar-visibility =
             [true] ブックマークサイドバーを隠す
            *[other] ブックマークサイドバーを表示
         }
-bookmarks-tools-toolbar-visibility =
+bookmarks-tools-toolbar-visibility-menuitem =
     .label =
         { $isVisible ->
             [true] ブックマークツールバーを隠す
            *[other] ブックマークツールバーを表示
         }
-bookmarks-tools-toolbar-visibility-menuitem =
-    .label = { $isVisible ->
-       [true] ブックマークツールバーを隠す
-      *[other] ブックマークツールバーを表示
-    }
 bookmarks-tools-toolbar-visibility-panel =
-    .label = { $isVisible ->
-       [true] ブックマークツールバーを隠す
-      *[other] ブックマークツールバーを表示
-    }
+    .label =
+        { $isVisible ->
+            [true] ブックマークツールバーを隠す
+           *[other] ブックマークツールバーを表示
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -598,12 +638,17 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = ブックマーク
-library-bookmarks-bookmark-this-page =
-    .label = このページをブックマーク
-library-bookmarks-bookmark-edit =
-    .label = このブックマークを編集
 library-recent-activity-title =
     .value = 最近のアクティビティ
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = { -pocket-brand-name } に保存
+    .tooltiptext = { -pocket-brand-name } に保存
+
+## Customize Toolbar Buttons
+
 
 ## More items
 
@@ -618,3 +663,21 @@ eme-notifications-drm-content-playing-manage = 設定を管理
 eme-notifications-drm-content-playing-manage-accesskey = M
 eme-notifications-drm-content-playing-dismiss = 閉じる
 eme-notifications-drm-content-playing-dismiss-accesskey = D
+
+## Password save/update panel
+
+panel-save-update-username = ユーザー名
+panel-save-update-password = パスワード
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = { $name } を削除しますか？
+addon-removal-abuse-report-checkbox = この拡張機能を { -vendor-short-name } に報告する
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = アカウントを管理
+remote-tabs-sync-now = 今すぐ同期

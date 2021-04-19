@@ -28,6 +28,18 @@ search-input-box =
             [windows] Eheka Jeporavorãme
            *[other] Eheka Jerohoryvévape
         }
+settings-page-title = Ñemboheko
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Eheka ñembohekópe
 managed-notice = Pe kundaha rehe oñangareko atyguasu.
 category-list =
     .aria-label = Mboja’opy
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Mbojuehe
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = { -brand-short-name } Mba’epyahu
 category-experimental =
     .tooltiptext = { -brand-short-name } Mba’epyahu
 pane-experimental-subtitle = Ejapóke mbeguekatu
 pane-experimental-search-results-header = { -brand-short-name } Mba’epyahu: Ejapo mbeguekatu
 pane-experimental-description = Iñambuévo umi eguerohoryvéva ñemboheko ombyaikuaa { -brand-short-name } rembiapokue ýrõ hekorosã.
+pane-experimental-description2 = Emoambue umi moĩporã ñemboheko ombyaikuaáava { -brand-short-name } rembiapokue ýrõ hekorosã.
 pane-experimental-reset =
     .label = Embojevy tekoypykue
     .accesskey = R
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] ¡Ambyasy! ndaipóri tembiapokue jeporavorãme “<span data-l10n-name="query"></span>”-pe g̃uarã.
        *[other] ¡Ambyasy! ndaipoóri jerohoryvévape tembiapokue “<span data-l10n-name="query"></span>”.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = ¡Rombyasy! ndaipóri tapykuere “<span data-l10n-name="query"></span>” peg̃uarã moĩporãme.
 search-results-help-link = ¿Eokitevẽpa pytyvõ? Eoke <a data-l10n-name="url">{ -brand-short-name } Ñepytyvõ</a> pe
 
 ## General Section
@@ -369,6 +387,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Ani eheka ñembohekopyahu (jerovia’ỹ)
     .accesskey = N
+update-application-background-enabled =
+    .label = { -brand-short-name } nomba’apói jave
+    .accesskey = W
 update-application-warning-cross-user-setting = Ko ñemboheko ojogueraháta opaite Windows mba’ete ndive ha umi teratee { -brand-short-name } rehegua oipurúvo ko { -brand-short-name } ñemohenda.
 update-application-use-service =
     .label = Eipuru peteĩ mba’epytyvõrã mokõiha pegua remboguejy hag̃ua tekopyahu
@@ -382,6 +403,7 @@ update-setting-write-failure-message =
     { -brand-short-name } ojuhu jejavy ha noñongatúi ko moambuepy. Ehechakuaáke pe ñemboheko ko jegueroryvéva ñemboheko rehegua oikotevẽ ñemoneĩ ehai hag̃ua marandurendápe ag̃a guive. Ikatuhína nde térã peteĩ ñangarekoha apopyvusu rehegua ikatu omoĩporã jejavy ome’ẽvo Puruha atýpe oñangarekóvo ko marandurenda rehe.
     
     Ndaikatúi ojehai marandurendápe: { $path }
+update-setting-write-failure-title2 = Ojavy eñongatúvo mbohekopyahu ñemboheko
 update-in-progress-title = Oñembohekopyahuhína
 update-in-progress-message = ¿Eipotápa { -brand-short-name } omongu’ejey ñembohekopyahu?
 update-in-progress-ok-button = &Hejarei
@@ -579,6 +601,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Ehechauka jehekaha Windows ñemiguávape
 suggestions-addressbar-settings-generic = Emoambue erohoryvéva ambue ñe’ãporãpe g̃uarã kundaharape rendápe
+suggestions-addressbar-settings-generic2 = Emoambue ñemboheko ambue ñe’ãporãpe g̃uarã kundaharape rendápe
 search-suggestions-cant-show = Jeheka je’epyréva ndojekuaamo’ãi kundaharape renda apopyrépe, oñembohekóma rupi { -brand-short-name } aníke nemandu’a tembiasakuére.
 search-one-click-header = Jehekaha mongu’eha jekutu peteĩva
 search-one-click-header2 = Jeheka mbopya’eha
@@ -613,6 +636,8 @@ containers-back-button =
             [windows] Eguevi Jeporavorãme
            *[other] Eguevi Jeguerohoryvévape
         }
+containers-back-button2 =
+    .aria-label = Eguevi ñembohekópe
 containers-header = Tendayke guerekoha
 containers-add-button =
     .label = Embojuaju guerekoha pyahu
@@ -622,6 +647,8 @@ containers-new-tab-check =
     .accesskey = S
 containers-preferences-button =
     .label = Jerohoryvéva
+containers-settings-button =
+    .label = Ñemboheko
 containers-remove-button =
     .label = Mboguete
 
@@ -632,6 +659,9 @@ sync-signedout-caption = Egueraha neñanduti nendive
 sync-signedout-description = Embojuehe nde rechaukaha, tembiasakue, tendayke, ñe’ẽñemi, moĩmbaha ha jerohoryvéva opaite nemba’e’oka rupi.
 sync-signedout-account-signin2 =
     .label = Eñepyrũ tembiapo { -sync-brand-short-name }-pe…
+    .accesskey = i
+sync-signedout-account-signin3 =
+    .label = Eike embojuehe hag̃ua…
     .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -672,6 +702,9 @@ prefs-sync-setup =
     .label = Emboheko { -sync-brand-short-name }…
     .accesskey = E
 prefs-sync-offer-setup-label = Embojuehe techaukaha, tembiasakue, tendayke, ñe’ẽñemi, moĩmbaha ha jerohoryvéva opaite ne mba’e’okápe.
+prefs-sync-turn-on-syncing =
+    .label = Emyandy ñembojuehe…
+    .accesskey = s
 prefs-sync-now =
     .labelnotsyncing = Embojuehe ko’ág̃a
     .accesskeynotsyncing = N
@@ -692,6 +725,7 @@ sync-currently-syncing-prefs =
         [windows] Jerohoryvéva
        *[other] Jerohoryvéva
     }
+sync-currently-syncing-settings = Ñemboheko
 sync-change-options =
     .label = Moambue
     .accesskey = M
@@ -738,6 +772,10 @@ sync-engine-prefs =
            *[other] Jerohoryvéva
         }
     .tooltiptext = Ñangareko Pavẽ, Rekovepypegua ha Tekorosã rehegua remoambuévakuri
+    .accesskey = s
+sync-engine-settings =
+    .label = Ñemboheko
+    .tooltiptext = Ñembokeo tuichaháicha, ñemigua ha tekorosã emoambuéva
     .accesskey = s
 
 ## The device name controls.
@@ -1153,6 +1191,9 @@ space-alert-under-5gb-ok-button =
     .label = OK, arekóma
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } opyta disco pa’ũ’ỹre. Ikatu hína ñanduti renda retepy ndojehechaukái hekopete. Eike “Kuaave” eipuru porã hag̃ua disco ne kundaha hekoresãi hag̃ua avei.
+space-alert-over-5gb-settings-button =
+    .label = Embojuruja ñemboheko
+    .accesskey = O
 
 ## Privacy Section - HTTPS-Only
 

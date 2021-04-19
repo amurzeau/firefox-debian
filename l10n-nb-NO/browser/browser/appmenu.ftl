@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = Laster ned { -brand-shorter-name }-oppdatering
+appmenuitem-update-banner2 =
+    .label-update-downloading = Laster ned { -brand-shorter-name }-oppdatering
+    .label-update-available = Oppdatering tilgjengelig — last ned nå
+    .label-update-manual = Oppdatering tilgjengelig — last ned nå
+    .label-update-unsupported = Kan ikke oppdatere
+    .label-update-restart = Oppdatering tilgjengelig — start på nytt
 appmenuitem-protection-dashboard-title = Sikkerhetsoversikt
 appmenuitem-customize-mode =
     .label = Tilpass …
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = Passord
 appmenuitem-extensions-and-themes =
     .label = Utvidelser og temaer
+appmenuitem-addons-and-themes =
+    .label = Tillegg og temaer
 appmenuitem-find-in-page =
     .label = Finn på siden …
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Lukk program-meny
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Avslutt
+           *[other] Avslutt
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Åpne program-meny
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Lukk program-meny
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Synkroniser nå
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Synkroniser nå
-    .value = Synkroniser nå
+appmenu-remote-tabs-sign-into-sync =
+    .label = Logg inn for å synkronisere …
+appmenu-remote-tabs-turn-on-sync =
+    .label = Slå på synkronisering …
+appmenuitem-fxa-toolbar-sync-now2 = Synkroniser nå
 appmenuitem-fxa-manage-account = Behandle konto
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = Sist synkronisert { $time }
     .label = Sist synkronisert { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Synkroniser og lagre data
+appmenu-fxa-sync-and-save-data2 = Synkroniser og lagre data
 appmenu-fxa-signed-in-label = Logg inn
 appmenu-fxa-setup-sync =
     .label = Slå på synkronisering …
@@ -135,29 +159,17 @@ appmenu-help-header =
 appmenu-about =
     .label = Om { -brand-shorter-name }
     .accesskey = O
-appmenu-help-product =
-    .label = { -brand-shorter-name } Hjelp
-    .accesskey = H
-appmenu-help-show-tour =
-    .label = Omvisning i { -brand-shorter-name }
-    .accesskey = m
-appmenu-help-import-from-another-browser =
-    .label = Importer fra en annen nettleser…
-    .accesskey = I
-appmenu-help-keyboard-shortcuts =
-    .label = Tastatursnarveier
-    .accesskey = T
 appmenu-get-help =
     .label = Få hjelp
     .accesskey = F
 appmenu-help-troubleshooting-info =
     .label = Feilsøking
     .accesskey = F
+appmenu-help-taskmanager =
+    .label = Aktivitetsbehandler
 appmenu-help-more-troubleshooting-info =
     .label = Mer feilsøkingsinformasjon
     .accesskey = M
-appmenu-help-taskmanager =
-    .label = Aktivitetsbehandler
 appmenu-help-report-site-issue =
     .label = Rapporter problem med nettsted…
 appmenu-help-feedback-page =
@@ -177,8 +189,8 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Feilsøkingsmodus
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Feilsøkingsmodus…
     .accesskey = F
 appmenu-help-exit-troubleshoot-mode =
     .label = Slå av feilsøkingsmodus
@@ -194,13 +206,10 @@ appmenu-help-not-deceptive =
     .label = Dette er ikke et villedende nettsted …
     .accesskey = d
 
-##
-
-appmenu-help-check-for-update =
-    .label = Søk etter oppdateringer …
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Tilpass verktøylinje …
+appmenu-taskmanager =
+    .label = Aktivitetsbehandler
 appmenu-developer-tools-subheader = Nettleserverktøy

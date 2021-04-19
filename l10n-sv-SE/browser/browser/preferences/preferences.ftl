@@ -28,6 +28,18 @@ search-input-box =
             [windows] Sök i inställningar
            *[other] Sök i inställningar
         }
+settings-page-title = Inställningar
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Hitta i inställningar
 managed-notice = Din webbläsare hanteras av din organisation.
 category-list =
     .aria-label = Kategorier
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Synkronisering
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = { -brand-short-name } Experiment
 category-experimental =
     .tooltiptext = { -brand-short-name } Experiment
 pane-experimental-subtitle = Fortsätt med försiktighet
 pane-experimental-search-results-header = { -brand-short-name } Experiment: Fortsätt med försiktighet
 pane-experimental-description = Att ändra avancerade konfigurationsinställningar kan påverka { -brand-short-name }s prestanda eller säkerhet.
+pane-experimental-description2 = Att ändra avancerade konfigurationsinställningar kan påverka prestanda eller säkerhet för { -brand-short-name }.
 pane-experimental-reset =
     .label = Återställ standard
     .accesskey = t
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] Förlåt! Det finns inga resultat i Inställningar för “<span data-l10n-name="query"></span>”.
        *[other] Förlåt! Det finns inga resultat i Inställningar för “<span data-l10n-name="query"></span>”.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Förlåt! Det finns inga resultat i Inställningar för "<span data-l10n-name="query"></span>"
 search-results-help-link = Behöver du hjälp? Besök <a data-l10n-name="url">{ -brand-short-name } support</a>
 
 ## General Section
@@ -369,6 +387,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Sök aldrig efter uppdateringar (rekommenderas inte)
     .accesskey = a
+update-application-background-enabled =
+    .label = När { -brand-short-name } inte körs
+    .accesskey = N
 update-application-warning-cross-user-setting = Den här inställningen gäller alla Windows-konton och { -brand-short-name } profiler som använder den här installationen av { -brand-short-name }.
 update-application-use-service =
     .label = Använd en bakgrundstjänst för att installera uppdateringar
@@ -382,6 +403,15 @@ update-setting-write-failure-message =
     { -brand-short-name } stötte på ett fel och lagrade inte den här ändringen. Observera att ange denna uppdateringsinställning kräver tillstånd att skriva till filen nedan. Du eller en systemadministratör kan eventuellt lösa felet genom att ge användargruppen fullständig kontroll till den här filen.
     
     Kunde inte skriva till fil: { $path }
+update-setting-write-failure-title2 = Det gick inte att spara uppdateringsinställningar
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name } stötte på ett fel och sparade inte den här ändringen. Observera att ändring av denna uppdateringsinställning kräver behörighet att skriva till filen nedan. Du eller en systemadministratör kanske kan lösa felet genom att ge användargruppen full kontroll till den här filen.
+    
+    Det gick inte att skriva till filen: { $path }
 update-in-progress-title = Uppdatering pågår
 update-in-progress-message = Vill du att { -brand-short-name } ska fortsätta med denna uppdatering?
 update-in-progress-ok-button = &Ignorera
@@ -579,6 +609,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Visa sökförslag i privata fönster
 suggestions-addressbar-settings-generic = Ändra inställningar för andra förslag i adressfältet
+suggestions-addressbar-settings-generic2 = Ändra inställningar för andra förslag i adressfältet
 search-suggestions-cant-show = Sökförslag kommer inte att visas i adressfältet eftersom du har konfigurerat { -brand-short-name } att aldrig spara historik.
 search-one-click-header = Sökfältets sökmotorer
 search-one-click-header2 = Sökgenvägar
@@ -613,6 +644,8 @@ containers-back-button =
             [windows] Tillbaka till inställningar
            *[other] Tillbaka till inställningar
         }
+containers-back-button2 =
+    .aria-label = Tillbaka till inställningar
 containers-header = Innehållsflikar
 containers-add-button =
     .label = Lägg till ny behållare
@@ -621,6 +654,8 @@ containers-new-tab-check =
     .label = Välj en behållare för varje ny flik
     .accesskey = V
 containers-preferences-button =
+    .label = Inställningar
+containers-settings-button =
     .label = Inställningar
 containers-remove-button =
     .label = Ta bort
@@ -632,6 +667,10 @@ sync-signedout-caption = Ta med dig webben
 sync-signedout-description = Synkronisera dina bokmärken, historik, flikar, lösenord, tillägg och inställningar på alla dina enheter.
 sync-signedout-account-signin2 =
     .label = Logga in på { -sync-brand-short-name }…
+    .accesskey = L
+sync-signedout-description2 = Synkronisera dina bokmärken, historik, flikar, lösenord, tillägg och inställningar på alla dina enheter.
+sync-signedout-account-signin3 =
+    .label = Logga in för att synkronisera…
     .accesskey = L
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -672,6 +711,10 @@ prefs-sync-setup =
     .label = Konfigurera  { -sync-brand-short-name }…
     .accesskey = K
 prefs-sync-offer-setup-label = Synkronisera dina bokmärken, historik, flikar, lösenord, tillägg och inställningar på alla dina enheter.
+prefs-sync-turn-on-syncing =
+    .label = Aktivera synkronisering…
+    .accesskey = A
+prefs-sync-offer-setup-label2 = Synkronisera dina bokmärken, historik, flikar, lösenord, tillägg och inställningar på alla dina enheter.
 prefs-sync-now =
     .labelnotsyncing = Synkronisera nu
     .accesskeynotsyncing = n
@@ -692,6 +735,7 @@ sync-currently-syncing-prefs =
         [windows] Inställningar
        *[other] Inställningar
     }
+sync-currently-syncing-settings = Inställningar
 sync-change-options =
     .label = Ändra…
     .accesskey = n
@@ -739,6 +783,10 @@ sync-engine-prefs =
         }
     .tooltiptext = Allmänna, sekretess och säkerhetsinställningar du har ändrat
     .accesskey = n
+sync-engine-settings =
+    .label = Inställningar
+    .tooltiptext = Allmänna, sekretess- och säkerhetsinställningar som du har ändrat
+    .accesskey = s
 
 ## The device name controls.
 
@@ -1153,6 +1201,11 @@ space-alert-under-5gb-ok-button =
     .label = Ok, jag förstår
     .accesskey = k
 space-alert-under-5gb-message = { -brand-short-name } håller på att få slut på diskutrymme. Webbplatsens innehåll kanske inte visas korrekt. Besök “Läs mer” för att optimera din diskanvändning för en bättre webbupplevelse.
+space-alert-over-5gb-settings-button =
+    .label = Öppna inställningar
+    .accesskey = n
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name } håller på att få slut på diskutrymme.</strong> Webbplatsens innehåll kanske inte visas korrekt. Du kan rensa lagrad data i Inställningar>Sekretess & säkerhet>Kakor och webbplatsdata.
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name } håller på att få slut på diskutrymme.</strong> Webbplatsens innehåll kanske inte visas korrekt. Besök "Läs mer" för att optimera din diskanvändning för bättre surfupplevelse.
 
 ## Privacy Section - HTTPS-Only
 

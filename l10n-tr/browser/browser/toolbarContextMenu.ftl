@@ -10,10 +10,10 @@ toolbar-context-menu-reload-selected-tabs =
     .accesskey = z
 toolbar-context-menu-bookmark-selected-tab =
     .label = Seçili sekmeyi yer imlerine ekle…
-    .accesskey = m
+    .accesskey = S
 toolbar-context-menu-bookmark-selected-tabs =
     .label = Seçili sekmeleri yer imlerine ekle…
-    .accesskey = r
+    .accesskey = S
 toolbar-context-menu-select-all-tabs =
     .label = Tüm sekmeleri seç
     .accesskey = ü
@@ -31,19 +31,19 @@ toolbar-context-menu-reopen-closed-tabs =
             [1] Kapatılan sekmeyi yeniden aç
            *[other] Kapatılan sekmeleri yeniden aç
         }
-    .accesskey = K
+    .accesskey = a
 toolbar-context-menu-manage-extension =
-    .label = Eklentiyi yönet
-    .accesskey = E
+    .label = Uzantıyı yönet
+    .accesskey = U
 toolbar-context-menu-remove-extension =
-    .label = Eklentiyi kaldır
+    .label = Uzantıyı kaldır
     .accesskey = n
 # This label is used in the extensions toolbar buttons context menus,
 # a user can use this command to submit to Mozilla an abuse report
 # related to that extension. "Report" is a verb.
 toolbar-context-menu-report-extension =
-    .label = Eklentiyi rapor et
-    .accesskey = i
+    .label = Uzantıyı rapor et
+    .accesskey = z
 # Can appear on the same context menu as menubarCmd ("Menu Bar") and
 # personalbarCmd ("Bookmarks Toolbar"), so they should have different
 # access keys.

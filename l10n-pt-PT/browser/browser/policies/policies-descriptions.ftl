@@ -11,10 +11,11 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Definir políticas que WebExtensions podem aceder via chrome.storage.managed.
+policy-AllowedDomainsForApps = Definir os domínios com permissão para aceder ao Google Workspace.
 policy-AppAutoUpdate = Ativar ou desativar atualizações automáticas de aplicações.
 policy-AppUpdateURL = Definir um URL personalizado de atualização da aplicação.
 policy-Authentication = Configurar autenticação integrada para os sites que a suportem.
-policy-BackgroundAppUpdate = Ativar ou desativar a ferramenta de atualização em segundo plano que atualiza o navegador quando o mesmo não está a ser executado.
+policy-BackgroundAppUpdate2 = Ativar ou desativar o serviço de atualização em segundo plano.
 policy-BlockAboutAddons = Bloquear acesso ao Gestor de extras (about:addons).
 policy-BlockAboutConfig = Bloquear acesso  à página about:config.
 policy-BlockAboutProfiles = Bloquear acesso  à página about:profiles.
@@ -107,6 +108,7 @@ policy-SearchEngines = Configurar as definições de motor de pesquisa. Esta pol
 policy-SearchSuggestEnabled = Ativar ou desativar sugestões de pesquisa.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Instalar módulos PKCS #11.
+policy-ShowHomeButton = Mostrar o botão início na barra de ferramentas.
 policy-SSLVersionMax = Definir a versão máxima de SSL.
 policy-SSLVersionMin = Definir a versão mínima de SSL.
 policy-SupportMenu = Adicionar um item de menu de suporte personalizado ao menu de ajuda.

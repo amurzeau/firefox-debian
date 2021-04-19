@@ -7,8 +7,8 @@
 
 <!ENTITY loadError.label "Проблем при учитавању странице">
 <!ENTITY retry.label "Пoкушај поново">
-<!ENTITY returnToPreviousPage.label "Иди назад">
-<!ENTITY returnToPreviousPage1.label "Врати се назад (препоручено)">
+<!ENTITY returnToPreviousPage.label "Назад">
+<!ENTITY returnToPreviousPage1.label "Назад (препоручује се)">
 <!ENTITY advanced2.label "Напредно…">
 <!ENTITY viewCertificate.label "Погледај сертификат">
 
@@ -45,12 +45,14 @@
 <p>&brandShortName; из неког разлога не може да учита ову страницу.</p>
 ">
 
-<!ENTITY captivePortal.title "Пријави се на мрежу">
-<!ENTITY captivePortal.longDesc2 "<p>Морате се пријавити на ову мрежу пре него што можете приступити интернету.</p>">
+<!ENTITY captivePortal.title "Пријавите се на мрежу">
+<!ENTITY captivePortal.longDesc2 "
+<p>Морате да се пријавите на ову мрежу пре него што можете приступити интернету.</p>
+">
 
-<!ENTITY openPortalLoginPage.label2 "Отвори страницу пријаве за мрежу">
+<!ENTITY openPortalLoginPage.label2 "Отвори страницу за пријаву на мрежу">
 
-<!ENTITY malformedURI.pageTitle "Неисправан URL">
+<!ENTITY malformedURI.pageTitle "Неважећи URL">
 
 <!ENTITY netInterrupt.longDesc "&sharedLongDesc;">
 
@@ -168,7 +170,7 @@ was trying to connect. -->
 
 <!ENTITY securityOverride.exceptionButton1Label "Прихвати ризик и настави">
 
-<!ENTITY errorReporting.automatic2 "Аутоматски пријавите грешке да бисте помогли Mozilla-и да идентификује и блокира злонамере сајтове">
+<!ENTITY errorReporting.automatic2 "Пријавите грешке попут ове како би Mozilla лакше препознала и блокирала злонамерне сајтове">
 <!ENTITY errorReporting.learnMore "Сазнајте више…">
 
 <!ENTITY remoteXUL.longDesc "<p><ul><li>Обавестите власнике веб сајта о овом проблему.</li></ul></p>">
@@ -178,8 +180,8 @@ was trying to connect. -->
 <!ENTITY sslv3Used.longDesc2 "Додатне информације: SSL_ERROR_UNSUPPORTED_VERSION">
 
 <!ENTITY certerror.pagetitle2  "Упозорење: Потенцијални безбедносни ризик">
-<!ENTITY certerror.sts.pagetitle  "Не повезујем се: могућ је безбедносни проблем">
-<!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> има безбедносну полису под именом HTTP Strict Transport Security (HSTS), што значи да се &brandShortName; може повезати само безбедно. Можете додати изузетак да посетите овај сајт.">
+<!ENTITY certerror.sts.pagetitle  "Успостављање везе није успело: потенцијални безбедносни проблем">
+<!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "Сајт <span class='hostname'></span> има безбедносну политику под називом HTTP Strict Transport Security (HSTS), што значи да се &brandShortName; може повезати само на безбедан начин. Не можете да додате изузетак како бисте посетили овај сајт.">
 <!ENTITY certerror.copyToClipboard.label "Копирај текст у бележницу">
 
 <!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
@@ -189,17 +191,17 @@ was trying to connect. -->
 <!ENTITY blockedByPolicy.title "Блокиране странице">
 
 <!ENTITY certerror.mitm.longDesc "<span class='hostname'></span> је највероватније безбедна веб страница, али није могуће успоставити безбедну везу са њом. Овај проблем узрокује програм <span class='mitm-name'/>, који се налази на вашем рачунару или на вашој мрежи.">
-<!ENTITY certerror.mitm.whatCanYouDoAboutIt1 "Ако ваш антивирус садржи функцију која скенира шифроване везе (често се назива “web scanning” или “https scanning”), можете онемогућити ту функцију. Ако то не успе, можете да уклоните и поново инсталирате антивирус.">
+<!ENTITY certerror.mitm.whatCanYouDoAboutIt1 "Ако ваш антивирусни програм садржи функцију која скенира шифроване везе (позната под називом „веб-скенирање” или „HTTPS скенирање”), онемогућите је. Ако то не помогне, уклоните и поново инсталирате антивирусни програм.">
 <!ENTITY certerror.mitm.whatCanYouDoAboutIt2 "Ако сте у корпоративној мрежи, можете се обратити свом ИТ одељењу.">
 <!ENTITY certerror.mitm.whatCanYouDoAboutIt3 "Ако вам <span class='mitm-name'/> страница није позната, ово може да представља напад и не би требало да наставите на ту страницу.">
 <!ENTITY certerror.mitm.sts.whatCanYouDoAboutIt3 "Ако вам <span class='mitm-name'/> страница није позната, ово може да представљата напад и не можете ништа учинити како бисте приступили тој страници.">
 
 <!ENTITY clockSkewError.longDesc "Ваш рачунар мисли да је <span id='wrongSystemTime_systemDate1'/>, што спречава &brandShortName; да се повеже безбедно. Да бисте посетили <span class='hostname'></span>, ажурирајте ваш сат на рачунару у вашим системским подешавањима на тренутан датум, време и временску зону и освежите <span class='hostname'></span>.">
 
-<!ENTITY prefReset.longDesc "Ваше поставке безбедности можда проузрокују овај проблем. Да ли желите да вратите подразумеване поставке?">
-<!ENTITY prefReset.label "Врати подразумеване поставке">
+<!ENTITY prefReset.longDesc "Изгледа да су узрок томе ваша подешавања безбедности мреже. Желите ли да вратите подразумевана подешавања?">
+<!ENTITY prefReset.label "Врати подразумевана подешавања">
 
-<!ENTITY enableTls10.longDesc "Ова веб страница можда не подржава TLS 1.2 протокол, који је сада најмања подржано издање од стране &brandShortName;-а;. Уколико омогућите TLS 1.0 и TLS 1.1, можда се можете повезати успешно.">
+<!ENTITY enableTls10.longDesc "Овај веб-сајт можда не подржава протокол TLS 1.2, а то је минимална верзија коју подржава &brandShortName;;. Веза ће се можда успоставити ако омогућите TLS 1.0 и TLS 1.1.">
 <!ENTITY enableTls10.note "TLS 1.0 и TLS 1.1 ће бити трајно онемогућени у будућем издању.">
 <!ENTITY enableTls10.label "Омогући TLS 1.0 и 1.1">
 

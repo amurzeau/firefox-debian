@@ -264,11 +264,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Agregar marcador
+bookmarks-edit-bookmark = Editar marcador
+bookmark-panel-cancel =
+    .label = Cancelar
+    .accesskey = C
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Eliminar marcador
+           *[other] Eliminar { $count } marcadores
+        }
+    .accesskey = R
 bookmark-panel-show-editor-checkbox =
     .label = Mostrar editor al guardar
     .accesskey = s
 bookmark-panel-done-button =
     .label = Listo
+bookmark-panel-save-button =
+    .label = Guardar
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -288,6 +304,8 @@ identity-passive-loaded = Partes de esta página no son seguras (como las imáge
 identity-active-loaded = Ha deshabilitado la protección en esta página.
 identity-weak-encryption = Esta página usa cifrado débil.
 identity-insecure-login-forms = Los ingresos en esta página pueden estar comprometidos.
+identity-permissions =
+    .value = Permisos
 identity-https-only-connection-upgraded = (actualizado a HTTPS)
 identity-https-only-label = Modo solo HTTPS
 identity-https-only-dropdown-on =
@@ -299,8 +317,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Active el modo solo HTTPS para este sitio si quiere que { -brand-short-name } actualice la conexión cuando sea posible.
 identity-https-only-info-turn-off2 = Si el sitio no funciona correctamente, es posible que quiera desactivar el modo solo HTTPS para volver a cargarlo usando una conexión HTTP insegura.
 identity-https-only-info-no-upgrade = No se puede actualizar la conexión desde HTTP.
-identity-permissions =
-    .value = Permisos
 identity-permissions-storage-access-header = Cookies de sitios cruzados
 identity-permissions-storage-access-hint = Estas partes pueden usar cookies y datos de sitios cruzados mientras estás en este sitio.
 identity-permissions-reload-hint = Hay que recargar la página para que se apliquen los cambios.
@@ -348,16 +364,37 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Reproduciendo
-browser-tab-audio-muted = Mudo
 # This label should be written in all capital letters if your locale supports them.
-browser-tab-audio-playing2 = JUGANDO
+browser-tab-audio-playing2 = REPRODUCIENDO
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-muted2 = MUDO
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-blocked = REPRODUCCIÖN AUTOMÄTICA BLOQUEADA
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = PICTURE-IN-PICTURE
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] ENMUDECER PESTAÑA
+        [one] ENMUDECER PESTAÑA
+       *[other] ENMUDECER { $count } PESTAÑAS
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] DESENMUDECER PESTAÑA
+        [one] DESENMUDECER PESTAÑA
+       *[other] DESENMUDECER { $count } PESTAÑAS
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] REPRODUCIR  PESTAÑA
+        [one] REPRODUCIR  PESTAÑA
+       *[other] REPRODUCIR { $count } PESTAÑAS
+    }
 
 ## Bookmarks toolbar items
 
@@ -387,7 +424,7 @@ popup-select-microphone-icon =
 popup-all-windows-shared = Todas las ventanas visibles de su pantalla serán compartidas.
 popup-screen-sharing-not-now =
     .label = Ahora no
-    .accesskey = w
+    .accesskey = n
 popup-screen-sharing-never =
     .label = Nunca permitir
     .accesskey = N
@@ -398,7 +435,7 @@ popup-screen-sharing-block =
     .accesskey = B
 popup-screen-sharing-always-block =
     .label = Bloquear siempre
-    .accesskey = W
+    .accesskey = B
 popup-mute-notifications-checkbox = Silenciar las notificaciones de sitios web mientras se comparten
 
 ## WebRTC window or screen share tab switch warning
@@ -509,6 +546,13 @@ urlbar-result-action-tabtosearch-web = Buscar con { $engine } directamente desde
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Buscar { $engine } directamente desde la barra de direcciones
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Copiar
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -539,19 +583,17 @@ pointerlock-warning-no-domain = Este documento tiene el control de su puntero. P
 crashed-subframe-message = <strong>Parte de esta página falló.</strong> Para que { -brand-product-name } sepa sobre este problema y se arregle más rápido, enviá un informe.
 crashed-subframe-learnmore =
     .label = Conocer más
-    .accesskey = L
+    .accesskey = o
 crashed-subframe-learnmore-link =
     .value = Conocer más
 crashed-subframe-submit =
     .label = Enviar informe
-    .accesskey = S
+    .accesskey = v
 
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Mostrar todos los marcadores
-bookmarks-recent-bookmarks =
-    .value = Recientemente marcados
 bookmarks-manage-bookmarks =
     .label = Administrar marcadores
 bookmarks-recent-bookmarks-panel =
@@ -572,12 +614,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Ocultar barra lateral de marcadores
            *[other] Ver barra lateral de marcadores
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Ocultar barra de marcadores
-           *[other] Ver barra de marcadores
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -624,12 +660,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Marcadores
-library-bookmarks-bookmark-this-page =
-    .label = Marcar esta página
-library-bookmarks-bookmark-edit =
-    .label = Editar este marcador
 library-recent-activity-title =
     .value = Actividad reciente
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Guardar en { -pocket-brand-name }
+    .tooltiptext = Guardar en { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Complementos y temas
+    .tooltiptext = Administrar complementos y temas ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Configuración
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Abrir configuración ({ $shortcut })
+           *[other] Abrir configuración
+        }
 
 ## More items
 
@@ -656,3 +711,9 @@ panel-save-update-password = Contraseña
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = ¿Eliminar { $name }?
 addon-removal-abuse-report-checkbox = Informar de este complemento a { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Administrar cuenta
+remote-tabs-sync-now = Sincronizar ahora

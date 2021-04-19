@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = Nastajenja
 menu-application-services =
     .label = Słužby
 menu-application-hide-this =
@@ -252,15 +254,18 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Pla { -brand-product-name } pśizjawiś…
     .accesskey = a
-menu-tools-extensions =
-    .label = Rozšyrjenja a drastwy
-    .accesskey = R
+menu-tools-addons-and-themes =
+    .label = Dodanki a drastwy
+    .accesskey = D
 menu-tools-fxa-sign-in2 =
     .label = Pśizjawiś
     .accesskey = P
 menu-tools-turn-on-sync =
     .label = { -sync-brand-short-name } zmóžniś
     .accesskey = m
+menu-tools-turn-on-sync2 =
+    .label = Sync zmóžniś…
+    .accesskey = n
 menu-tools-sync-now =
     .label = Něnto synchronizěrowaś
     .accesskey = N
@@ -270,25 +275,31 @@ menu-tools-fxa-re-auth =
 menu-tools-web-developer =
     .label = Webwuwijaŕ
     .accesskey = W
+menu-tools-browser-tools =
+    .label = Rědy wobglědowaka
+    .accesskey = R
+menu-tools-task-manager =
+    .label = Zastojnik nadawkow
+    .accesskey = Z
 menu-tools-page-source =
     .label = Žrědłowy tekst boka
     .accesskey = t
 menu-tools-page-info =
     .label = Info wó boku
     .accesskey = I
+menu-settings =
+    .label = Nastajenja
+    .accesskey =
+        { PLATFORM() ->
+            [windows] N
+           *[other] N
+        }
 menu-preferences =
     .label =
         { PLATFORM() ->
             [windows] Nastajenja
            *[other] Nastajenja
         }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] N
-           *[other] N
-        }
-menu-settings =
-    .label = Nastajenja
     .accesskey =
         { PLATFORM() ->
             [windows] N
@@ -306,15 +317,6 @@ menu-window-bring-all-to-front =
     .label = Wšykno do prědka pśinjasć
 
 ## Help Menu
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
 
 
 # NOTE: For Engineers, any additions or changes to Help menu strings should
@@ -346,11 +348,11 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Informacije za rozwězowanje problemow
     .accesskey = I
+menu-help-taskmanager =
+    .label = Zastojnik nadawkow
 menu-help-more-troubleshooting-info =
     .label = Dalšne informacije za rozwězowanje problemow
     .accesskey = D
-menu-help-taskmanager =
-    .label = Zastojnik nadawkow
 menu-help-report-site-issue =
     .label = Sedłowy problem k wěsći daś…
 menu-help-feedback-page =
@@ -362,8 +364,8 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Ze zmóžnjonymi dodankami znowego startowaś
     .accesskey = Z
-menu-help-enter-troubleshoot-mode =
-    .label = Modus za rozwězowanje problemow
+menu-help-enter-troubleshoot-mode2 =
+    .label = Modus za rozwězowanje problemow…
     .accesskey = M
 menu-help-exit-troubleshoot-mode =
     .label = Modus za rozwězowanje problemow znjemóžniś
@@ -376,6 +378,3 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = To njejo wobšudnikojske sedło…
     .accesskey = d
-menu-help-check-for-update =
-    .label = Za aktualizacijami pśeglědaś…
-    .accesskey = Z

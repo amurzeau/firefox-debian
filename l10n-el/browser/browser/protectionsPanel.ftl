@@ -4,7 +4,7 @@
 
 protections-panel-sendreportview-error = Προέκυψε σφάλμα κατά την αποστολή της αναφοράς. Παρακαλούμε δοκιμάστε ξανά αργότερα.
 # A link shown when ETP is disabled for a site. Opens the breakage report subview when clicked.
-protections-panel-sitefixedsendreport-label = Η ιστοσελίδα διορθώθηκε; Αποστολή αναφοράς
+protections-panel-sitefixedsendreport-label = Διορθώθηκε η ιστοσελίδα; Αποστολή αναφοράς
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -21,8 +21,8 @@ protections-popup-footer-protection-label-standard = Τυπική
 # The text a screen reader speaks when focused on the info button.
 protections-panel-etp-more-info =
     .aria-label = Περισσότερες πληροφορίες σχετικά με την Ενισχυμένη προστασία από καταγραφή
-protections-panel-etp-on-header = Η ενισχυμένη προστασία από καταγραφή είναι ενεργή για αυτή την ιστοσελίδα
-protections-panel-etp-off-header = Η ενισχυμένη προστασία από καταγραφή είναι ανενεργή για αυτή την ιστοσελίδα
+protections-panel-etp-on-header = Η Ενισχυμένη προστασία από καταγραφή είναι ΕΝΕΡΓΗ για αυτή την ιστοσελίδα
+protections-panel-etp-off-header = Η Ενισχυμένη προστασία από καταγραφή είναι ΑΝΕΝΕΡΓΗ για αυτή την ιστοσελίδα
 # The link to be clicked to open the sub-panel view
 protections-panel-site-not-working = Δεν λειτουργεί η ιστοσελίδα;
 # The heading/title of the sub-panel view
@@ -50,9 +50,9 @@ protections-panel-content-blocking-fingerprinters-label = Fingerprinters
 ##   "None Detected" for categories not detected in the current page.
 ##   These strings are used in the header labels of each of these sections.
 
-protections-panel-blocking-label = Αποκλείστηκε
-protections-panel-not-blocking-label = Επιτρέπεται
-protections-panel-not-found-label = Δεν εντοπίστηκε κανένα
+protections-panel-blocking-label = Αποκλείονται
+protections-panel-not-blocking-label = Επιτρέπονται
+protections-panel-not-found-label = Δεν εντοπίστηκαν
 
 ##
 

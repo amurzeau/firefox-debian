@@ -44,6 +44,15 @@ places-open-in-private-window =
 places-add-bookmark =
     .label = Añadir marcador…
     .accesskey = B
+places-add-folder-contextmenu =
+    .label = Añadir carpeta
+    .accesskey = F
+places-add-folder =
+    .label = Añadir carpeta
+    .accesskey = o
+places-add-separator =
+    .label = Añadir separador
+    .accesskey = S
 places-view =
     .label = Ver
     .accesskey = r
@@ -75,6 +84,13 @@ places-sortby-name =
 places-properties =
     .label = Propiedades
     .accesskey = i
+# places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
+places-edit-bookmark =
+    .label = Editar marcador
+    .accesskey = i
+places-edit-generic =
+    .label = Editar...
+    .accesskey = E
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
     .label = Marcadores administrados
@@ -84,3 +100,16 @@ managed-bookmarks-subfolder =
 # This label is used for the "Other Bookmarks" folder that appears in the bookmarks toolbar.
 other-bookmarks-folder =
     .label = Otros marcadores
+# Variables:
+# $count (number) - The number of elements being selected for removal.
+places-remove-bookmark =
+    .label =
+        { $count ->
+            [1] Eliminar marcador
+            [one] Eliminar marcador
+           *[other] Eliminar marcadores
+        }
+    .accesskey = e
+places-manage-bookmarks =
+    .label = Administrar marcadores
+    .accesskey = M

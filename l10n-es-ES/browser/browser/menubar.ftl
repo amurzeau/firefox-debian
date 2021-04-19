@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = Preferencias
 menu-application-services =
     .label = Servicios
 menu-application-hide-this =
@@ -111,6 +113,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Buscar en esta página…
     .accesskey = B
+menu-edit-find-in-page =
+    .label = Buscar en la página…
+    .accesskey = F
 menu-edit-find-again =
     .label = Repetir la búsqueda
     .accesskey = q
@@ -128,6 +133,9 @@ menu-view-toolbars-menu =
     .accesskey = T
 menu-view-customize-toolbar =
     .label = Personalizar…
+    .accesskey = P
+menu-view-customize-toolbar2 =
+    .label = Personalizar la barra de herramientas…
     .accesskey = P
 menu-view-sidebar =
     .label = Panel lateral
@@ -219,6 +227,8 @@ menu-bookmarks-show-all =
     .label = Mostrar todos los marcadores
 menu-bookmark-this-page =
     .label = Añadir esta página a marcadores
+menu-bookmark-current-tab =
+    .label = Añadir pestaña actual a marcadores
 menu-bookmark-edit =
     .label = Editar este marcador
 menu-bookmarks-all-tabs =
@@ -244,8 +254,17 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Iniciar sesión en { -brand-product-name }…
     .accesskey = I
+menu-tools-addons-and-themes =
+    .label = Complementos y temas
+    .accesskey = C
+menu-tools-fxa-sign-in2 =
+    .label = Iniciar sesión
+    .accesskey = i
 menu-tools-turn-on-sync =
     .label = Activar { -sync-brand-short-name }...
+    .accesskey = n
+menu-tools-turn-on-sync2 =
+    .label = Activar la sincronización…
     .accesskey = n
 menu-tools-sync-now =
     .label = Sincronizar ahora
@@ -256,12 +275,25 @@ menu-tools-fxa-re-auth =
 menu-tools-web-developer =
     .label = Desarrollador web
     .accesskey = W
+menu-tools-browser-tools =
+    .label = Herramientas del navegador
+    .accesskey = B
+menu-tools-task-manager =
+    .label = Administrador de tareas
+    .accesskey = m
 menu-tools-page-source =
     .label = Código fuente de la página
     .accesskey = f
 menu-tools-page-info =
     .label = Información de la página
     .accesskey = I
+menu-settings =
+    .label = Ajustes
+    .accesskey =
+        { PLATFORM() ->
+            [windows] S
+           *[other] n
+        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -285,15 +317,6 @@ menu-window-bring-all-to-front =
     .label = Traer todo al frente
 
 ## Help Menu
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
 
 
 # NOTE: For Engineers, any additions or changes to Help menu strings should
@@ -325,11 +348,11 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Información para solucionar problemas
     .accesskey = f
+menu-help-taskmanager =
+    .label = Administrador de tareas
 menu-help-more-troubleshooting-info =
     .label = Más información para solucionar problemas
     .accesskey = T
-menu-help-taskmanager =
-    .label = Administrador de tareas
 menu-help-report-site-issue =
     .label = Informar de problema en sitio…
 menu-help-feedback-page =
@@ -341,8 +364,8 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Reiniciar con los complementos activados
     .accesskey = R
-menu-help-enter-troubleshoot-mode =
-    .label = Modo de resolución de problemas
+menu-help-enter-troubleshoot-mode2 =
+    .label = Modo de resolución de problemas…
     .accesskey = M
 menu-help-exit-troubleshoot-mode =
     .label = Desactivar modo de resolución de problemas
@@ -355,6 +378,3 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Este no es un sitio engañoso…
     .accesskey = E
-menu-help-check-for-update =
-    .label = Buscar actualizaciones…
-    .accesskey = c

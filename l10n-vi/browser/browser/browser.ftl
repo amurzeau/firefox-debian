@@ -256,11 +256,23 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Thêm dấu trang
+bookmarks-edit-bookmark = Chỉnh sửa dấu trang
+bookmark-panel-cancel =
+    .label = Hủy bỏ
+    .accesskey = C
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label = Xóa { $count } dấu trang
+    .accesskey = R
 bookmark-panel-show-editor-checkbox =
-    .label = Hiện trình chỉnh sửa này khi lưu
+    .label = Hiển thị trình chỉnh sửa khi lưu
     .accesskey = S
 bookmark-panel-done-button =
     .label = Xong
+bookmark-panel-save-button =
+    .label = Lưu
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -280,6 +292,8 @@ identity-passive-loaded = Có nhiều thành phân của trang không an toàn (
 identity-active-loaded = Bạn đã tắt tính năng bảo vệ trên trang này.
 identity-weak-encryption = Trang này sử dụng mã hóa yếu.
 identity-insecure-login-forms = Đăng nhập vào trang này bạn có thể bị xâm nhập.
+identity-permissions =
+    .value = Quyền hạn
 identity-https-only-connection-upgraded = (đã nâng cấp lên HTTPS)
 identity-https-only-label = Chế độ chỉ HTTPS
 identity-https-only-dropdown-on =
@@ -291,8 +305,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Bật Chế độ chỉ HTTPS cho trang web này nếu bạn muốn { -brand-short-name } nâng cấp kết nối khi có thể.
 identity-https-only-info-turn-off2 = Nếu trang có vẻ bị hỏng, bạn có thể tắt Chế độ chỉ HTTPS để trang web này tải lại sử dụng HTTP không an toàn.
 identity-https-only-info-no-upgrade = Không thể nâng cấp kết nối từ HTTP.
-identity-permissions =
-    .value = Quyền hạn
 identity-permissions-storage-access-header = Cookie trên nhiều trang web
 identity-permissions-storage-access-hint = Khi bạn mở trang web này, các trang web này có thể sử dụng cookie trên nhiều trang web và lấy thông tin của bạn trên trang web này.
 identity-permissions-reload-hint = Bạn có thể cần phải tải lại trang để các thay đổi được áp dụng.
@@ -340,8 +352,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Đang phát
-browser-tab-audio-muted = Đã tắt tiếng
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = ĐANG PHÁT
 # This label should be written in all capital letters if your locale supports them.
@@ -350,6 +360,26 @@ browser-tab-audio-muted2 = ĐÃ TẮT TIẾNG
 browser-tab-audio-blocked = TỰ ĐỘNG PHÁT BỊ CHẶN
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = HÌNH TRONG HÌNH
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] TẮT TIẾNG THẺ
+       *[other] TẮT TIẾNG { $count } THẺ
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] BỎ TẮT TIẾNG THẺ
+       *[other] BỎ TẮT TIẾNG { $count } THẺ
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] PHÁT THẺ
+       *[other] PHÁT { $count } THẺ
+    }
 
 ## Bookmarks toolbar items
 
@@ -501,6 +531,13 @@ urlbar-result-action-tabtosearch-web = Tìm kiếm với { $engine } trực ti�
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Tìm kiếm { $engine } trực tiếp từ thanh địa chỉ
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Sao chép
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -542,8 +579,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Xem tất cả dấu trang
-bookmarks-recent-bookmarks =
-    .value = Dấu trang gần đây
 bookmarks-manage-bookmarks =
     .label = Quản lý dấu trang
 bookmarks-recent-bookmarks-panel =
@@ -564,12 +599,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Ẩn thanh lề dấu trang
            *[other] Hiển thị thanh lề dấu trang
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Ẩn thanh công cụ dấu trang
-           *[other] Hiển thị thanh công cụ dấu trang
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -616,12 +645,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Dấu trang
-library-bookmarks-bookmark-this-page =
-    .label = Đánh dấu trang này
-library-bookmarks-bookmark-edit =
-    .label = Chỉnh sửa dấu trang này
 library-recent-activity-title =
     .value = Hoạt động gần đây
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Lưu vào { -pocket-brand-name }
+    .tooltiptext = Lưu vào { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Tiện ích mở rộng và chủ đề
+    .tooltiptext = Quản lý các tiện ích mở rộng và chủ đề của bạn ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Cài đặt
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Mở cài đặt ({ $shortcut })
+           *[other] Mở cài đặt
+        }
 
 ## More items
 
@@ -648,3 +696,9 @@ panel-save-update-password = Mật khẩu
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = Xóa { $name }?
 addon-removal-abuse-report-checkbox = Báo cáo tiện ích mở rộng này cho { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Quản lý tài khoản
+remote-tabs-sync-now = Đồng bộ ngay

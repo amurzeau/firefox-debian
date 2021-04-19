@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = Henter { -brand-shorter-name }-opdatering
+appmenuitem-update-banner2 =
+    .label-update-downloading = Henter { -brand-shorter-name }-opdatering
+    .label-update-available = Opdatering tilgængelig — hent nu
+    .label-update-manual = Opdatering tilgængelig — hent nu
+    .label-update-unsupported = Kan ikke opdatere
+    .label-update-restart = Opdatering tilgængelig — genstart nu
 appmenuitem-protection-dashboard-title = Oversigt over beskyttelse
 appmenuitem-customize-mode =
     .label = Tilpas…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = Adgangskoder
 appmenuitem-extensions-and-themes =
     .label = Udvidelser og temaer
+appmenuitem-addons-and-themes =
+    .label = Tilføjelser og temaer
 appmenuitem-find-in-page =
     .label = Find på side…
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Luk program-menu
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Afslut
+           *[other] Afslut
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Åbn program-menu
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Luk program-menu
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Synkroniser nu
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Synkroniser nu
-    .value = Synkroniser nu
+appmenu-remote-tabs-sign-into-sync =
+    .label = Log ind for at synkronisere…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Slå synkronisering til…
+appmenuitem-fxa-toolbar-sync-now2 = Synkroniser nu
 appmenuitem-fxa-manage-account = Håndter konto
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = Senest synkroniseret { $time }
     .label = Senest synkroniseret { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Synkroniser og gem data
+appmenu-fxa-sync-and-save-data2 = Synkroniser og gem data
 appmenu-fxa-signed-in-label = Log ind
 appmenu-fxa-setup-sync =
     .label = Slå synkronisering til…
@@ -135,34 +159,22 @@ appmenu-help-header =
 appmenu-about =
     .label = Om { -brand-shorter-name }
     .accesskey = O
-appmenu-help-product =
-    .label = Hjælp til { -brand-shorter-name }
-    .accesskey = H
-appmenu-help-show-tour =
-    .label = Rundvisning i { -brand-shorter-name }
-    .accesskey = R
-appmenu-help-import-from-another-browser =
-    .label = Importer fra en anden browser…
-    .accesskey = I
-appmenu-help-keyboard-shortcuts =
-    .label = Tastaturgenveje
-    .accesskey = u
 appmenu-get-help =
     .label = Få hjælp
     .accesskey = h
 appmenu-help-troubleshooting-info =
     .label = Teknisk information…
     .accesskey = T
+appmenu-help-taskmanager =
+    .label = Jobliste
 appmenu-help-more-troubleshooting-info =
     .label = Mere teknisk information
     .accesskey = t
-appmenu-help-taskmanager =
-    .label = Jobliste
 appmenu-help-report-site-issue =
     .label = Rapportér problem med websted…
 appmenu-help-feedback-page =
     .label = Indsend feedback…
-    .accesskey = f
+    .accesskey = n
 
 ## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
@@ -177,12 +189,12 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Fejlsøgnings-tilstand
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Fejlsøgnings-tilstand…
     .accesskey = F
 appmenu-help-exit-troubleshoot-mode =
     .label = Slå fejlsøgnings-tilstand fra
-    .accesskey = S
+    .accesskey = f
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
@@ -194,13 +206,10 @@ appmenu-help-not-deceptive =
     .label = Dette er ikke et vildledende websted…
     .accesskey = v
 
-##
-
-appmenu-help-check-for-update =
-    .label = Søg efter opdateringer…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Tilpas værktøjslinje…
+appmenu-taskmanager =
+    .label = Jobliste
 appmenu-developer-tools-subheader = Browser-værktøj

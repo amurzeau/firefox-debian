@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Gå en side tilbage ({ $shortcut })
     .aria-label = Tilbage
     .accesskey = T
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Tilbage
+    .accesskey = T
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Gå en side fremad ({ $shortcut })
     .aria-label = Fremad
     .accesskey = F
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Fremad
+    .accesskey = F
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Genindlæs
     .accesskey = G
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Genindlæs
+    .accesskey = G
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Stop
     .accesskey = S
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Stop
+    .accesskey = S
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Bogmærk denne side
     .accesskey = m
     .tooltiptext = Bogmærk denne side
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Bogmærk side
+    .accesskey = d
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Rediger bogmærke
+    .accesskey = d
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -110,9 +144,6 @@ main-context-menu-open-link-new-tab =
     .accesskey = f
 main-context-menu-open-link-container-tab =
     .label = Åbn link i nyt kontekst-faneblad
-    .accesskey = k
-main-context-menu-open-link-container =
-    .label = Åbn link i ny kontekst
     .accesskey = k
 main-context-menu-open-link-new-window =
     .label = Åbn link i nyt vindue
@@ -205,7 +236,7 @@ main-context-menu-media-play-speed-fast-2 =
 main-context-menu-media-play-speed-faster-2 =
     .label = 1,5×
 main-context-menu-media-play-speed-fastest-2 =
-    .label = 2×
+    .label = 2,0×
 main-context-menu-media-loop =
     .label = Gentag
     .accesskey = G
@@ -303,7 +334,7 @@ main-context-menu-video-image-save-as =
     .accesskey = S
 main-context-menu-video-take-snapshot =
     .label = Tag snapshot…
-    .accesskey = s
+    .accesskey = T
 main-context-menu-video-email =
     .label = Send video…
     .accesskey = d
@@ -318,10 +349,10 @@ main-context-menu-plugin-hide =
     .accesskey = p
 main-context-menu-save-to-pocket =
     .label = Gem side til { -pocket-brand-name }
-    .accesskey = k
+    .accesskey = o
 main-context-menu-send-to-device =
     .label = Send side til enhed
-    .accesskey = S
+    .accesskey = h
 main-context-menu-view-background-image =
     .label = Vis baggrundsbillede
     .accesskey = V
@@ -348,12 +379,15 @@ main-context-menu-suggest-strong-password =
 main-context-menu-manage-logins =
     .label = Håndter logins…
     .accesskey = H
+main-context-menu-manage-logins2 =
+    .label = Håndter logins
+    .accesskey = H
 main-context-menu-keyword =
     .label = Tilføj en genvej til denne søgning…
     .accesskey = s
 main-context-menu-link-send-to-device =
     .label = Send link til enhed
-    .accesskey = S
+    .accesskey = h
 main-context-menu-frame =
     .label = Denne ramme
     .accesskey = r

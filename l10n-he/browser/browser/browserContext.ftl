@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = חזרה דף אחד אחורה ({ $shortcut })
     .aria-label = אחורה
     .accesskey = ז
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = אחורה
+    .accesskey = ז
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = התקדמות דף אחד קדימה ({ $shortcut })
     .aria-label = קדימה
     .accesskey = ק
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = קדימה
+    .accesskey = ק
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = טעינה מחדש
     .accesskey = מ
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = טעינה מחדש
+    .accesskey = מ
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = עצירה
     .accesskey = ע
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = עצירה
+    .accesskey = ע
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name(case: "a") }
+    .tooltiptext = { -fxaccount-brand-name(case: "a") }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = יצירת סימנייה לדף זה
     .accesskey = ס
     .tooltiptext = יצירת סימנייה לדף זה
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = הוספת העמוד לסימניות
+    .accesskey = ס
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = עריכת סימנייה
+    .accesskey = ס
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -110,9 +144,6 @@ main-context-menu-open-link-new-tab =
     .accesskey = ל
 main-context-menu-open-link-container-tab =
     .label = פתיחת קישור במגירת לשוניות חדשה
-    .accesskey = מ
-main-context-menu-open-link-container =
-    .label = פתיחת קישור במגירה חדשה
     .accesskey = מ
 main-context-menu-open-link-new-window =
     .label = פתיחת קישור בחלון חדש
@@ -345,6 +376,9 @@ main-context-menu-suggest-strong-password =
 main-context-menu-manage-logins =
     .label = ניהול כניסות…
     .accesskey = נ
+main-context-menu-manage-logins2 =
+    .label = ניהול כניסות
+    .accesskey = כ
 main-context-menu-keyword =
     .label = הוספת מילת מפתח לחיפוש זה…
     .accesskey = ס

@@ -94,7 +94,7 @@ modified-key-prefs-title = Σημαντικές τροποποιημένες π�
 modified-prefs-name = Όνομα
 modified-prefs-value = Τιμή
 user-js-title = Προτιμήσεις user.js
-user-js-description = Ο φάκελος του προφίλ σας περιέχει το <a data-l10n-name="user-js-link">αρχείο user.js</a>, το οποίο περιέχει προτιμήσεις που δεν δημιουργήθηκαν από το { -brand-short-name }.
+user-js-description = Ο φάκελος του προφίλ σας περιέχει το <a data-l10n-name="user-js-link">αρχείο user.js</a>, στο οποίο αποθηκεύονται οι προτιμήσεις που δεν δημιουργήθηκαν από το { -brand-short-name }.
 locked-key-prefs-title = Σημαντικές κλειδωμένες προτιμήσεις
 locked-prefs-name = Όνομα
 locked-prefs-value = Τιμή
@@ -133,10 +133,14 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Ορίσματα
 safe-mode-title = Δοκιμή ασφαλούς λειτουργίας
 restart-in-safe-mode-label = Επανεκκίνηση με ανενεργά πρόσθετα…
+troubleshoot-mode-title = Διάγνωση προβλημάτων
+restart-in-troubleshoot-mode-label = Λειτουργία επίλυσης προβλημάτων…
 clear-startup-cache-title = Απαλοιφή προσωρινής μνήμης εκκίνησης
 clear-startup-cache-label = Εκκαθάριση προσωρινής μνήμης εκκίνησης…
 startup-cache-dialog-title = Εκκαθάριση προσωρινής μνήμης εκκίνησης
 startup-cache-dialog-body = Επανεκκινήστε το { -brand-short-name } για να εκκαθαρίσετε την προσωρινή μνήμη εκκίνησης. Αυτό δεν θα αλλάξει τις ρυθμίσεις σας, ούτε θα καταργήσει τις επεκτάσεις που έχετε προσθέσει στο { -brand-short-name }.
+startup-cache-dialog-title2 = Επανεκκίνηση του { -brand-short-name } για απαλοιφή προσωρινής μνήμης εκκίνησης;
+startup-cache-dialog-body2 = Αυτό δεν θα αλλάξει τις ρυθμίσεις σας, ούτε θα αφαιρέσει τις επεκτάσεις σας.
 restart-button-label = Επανεκκίνηση
 
 ## Media titles

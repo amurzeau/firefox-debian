@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = Mengunduh pembaruan { -brand-shorter-name }
+appmenuitem-update-banner2 =
+    .label-update-downloading = Mengunduh pembaruan { -brand-shorter-name }
+    .label-update-available = Versi baru tersedia — unduh sekarang
+    .label-update-manual = Versi baru tersedia — unduh sekarang
+    .label-update-unsupported = Gagal memperbarui
+    .label-update-restart = Versi baru tersedia — mulai ulang sekarang
 appmenuitem-protection-dashboard-title = Dasbor Perlindungan
 appmenuitem-customize-mode =
     .label = Ubahsuai…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = Kata Sandi
 appmenuitem-extensions-and-themes =
     .label = Ekstensi dan Tema
+appmenuitem-addons-and-themes =
+    .label = Pengaya dan Tema
 appmenuitem-find-in-page =
     .label = Temukan di Halaman…
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Tutup Menu Aplikasi
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Keluar
+           *[other] Keluar
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Buka Menu Aplikasi
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Tutup Menu Aplikasi
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Sinkronkan Sekarang
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Sinkronkan Sekarang
-    .value = Sinkronkan Sekarang
+appmenu-remote-tabs-sign-into-sync =
+    .label = Masuk ke Sinkronisasi…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Aktifkan Sinkronisasi…
+appmenuitem-fxa-toolbar-sync-now2 = Sinkronkan Sekarang
 appmenuitem-fxa-manage-account = Kelola Akun
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = Terakhir disinkronkan { $time }
     .label = Terakhir disinkronkan { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Sinkronkan dan Simpan Data
+appmenu-fxa-sync-and-save-data2 = Sinkronkan dan Simpan Data
 appmenu-fxa-signed-in-label = Masuk
 appmenu-fxa-setup-sync =
     .label = Aktifkan Sinkronisasi…
@@ -133,29 +157,17 @@ appmenu-help-header =
 appmenu-about =
     .label = Tentang { -brand-shorter-name }
     .accesskey = T
-appmenu-help-product =
-    .label = Bantuan { -brand-shorter-name }
-    .accesskey = B
-appmenu-help-show-tour =
-    .label = Tur { -brand-shorter-name }
-    .accesskey = u
-appmenu-help-import-from-another-browser =
-    .label = Impor dari Peramban Lain…
-    .accesskey = I
-appmenu-help-keyboard-shortcuts =
-    .label = Pintasan Papan Ketik
-    .accesskey = K
 appmenu-get-help =
     .label = Dapatkan Bantuan
     .accesskey = D
 appmenu-help-troubleshooting-info =
     .label = Informasi Pemecahan Masalah…
     .accesskey = M
+appmenu-help-taskmanager =
+    .label = Pengelola Tugas
 appmenu-help-more-troubleshooting-info =
     .label = Informasi Pemecahan Masalah Lebih Lanjut
     .accesskey = I
-appmenu-help-taskmanager =
-    .label = Pengelola Tugas
 appmenu-help-report-site-issue =
     .label = Laporkan Masalah Situs…
 appmenu-help-feedback-page =
@@ -175,9 +187,9 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Mode Pemecahan Masalah
-    .accesskey = M
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Mode Pemecahan Masalah…
+    .accesskey = P
 appmenu-help-exit-troubleshoot-mode =
     .label = Nonaktifkan Mode Pemecahan Masalah
     .accesskey = N
@@ -192,13 +204,10 @@ appmenu-help-not-deceptive =
     .label = Ini bukan situs tipuan…
     .accesskey = d
 
-##
-
-appmenu-help-check-for-update =
-    .label = Periksa Versi Baru…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Ubahsuai Bilah Alat…
+appmenu-taskmanager =
+    .label = Pengelola Tugas
 appmenu-developer-tools-subheader = Alat Peramban

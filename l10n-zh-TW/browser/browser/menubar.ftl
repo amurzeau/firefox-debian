@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = 偏好設定
 menu-application-services =
     .label = 服務
 menu-application-hide-this =
@@ -252,14 +254,17 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = 登入 { -brand-product-name }…
     .accesskey = g
-menu-tools-extensions =
-    .label = 擴充套件和佈景主題
-    .accesskey = E
+menu-tools-addons-and-themes =
+    .label = 附加元件與佈景主題
+    .accesskey = A
 menu-tools-fxa-sign-in2 =
     .label = 登入
     .accesskey = g
 menu-tools-turn-on-sync =
     .label = 開啟 { -sync-brand-short-name }…
+    .accesskey = n
+menu-tools-turn-on-sync2 =
+    .label = 開啟同步…
     .accesskey = n
 menu-tools-sync-now =
     .label = 立刻同步
@@ -270,12 +275,25 @@ menu-tools-fxa-re-auth =
 menu-tools-web-developer =
     .label = 網頁開發者
     .accesskey = W
+menu-tools-browser-tools =
+    .label = 瀏覽器工具
+    .accesskey = B
+menu-tools-task-manager =
+    .label = 工作管理員
+    .accesskey = M
 menu-tools-page-source =
     .label = 頁面原始碼
     .accesskey = o
 menu-tools-page-info =
     .label = 頁面資訊
     .accesskey = I
+menu-settings =
+    .label = 設定
+    .accesskey =
+        { PLATFORM() ->
+            [windows] S
+           *[other] n
+        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -285,13 +303,6 @@ menu-preferences =
     .accesskey =
         { PLATFORM() ->
             [windows] O
-           *[other] n
-        }
-menu-settings =
-    .label = 設定
-    .accesskey =
-        { PLATFORM() ->
-            [windows] S
            *[other] n
         }
 menu-tools-layout-debugger =
@@ -306,15 +317,6 @@ menu-window-bring-all-to-front =
     .label = 將此程式所有視窗移至最前
 
 ## Help Menu
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
 
 
 # NOTE: For Engineers, any additions or changes to Help menu strings should
@@ -346,11 +348,11 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = 疑難排解資訊
     .accesskey = T
+menu-help-taskmanager =
+    .label = 工作管理員
 menu-help-more-troubleshooting-info =
     .label = 更多疑難排解資訊
     .accesskey = T
-menu-help-taskmanager =
-    .label = 工作管理員
 menu-help-report-site-issue =
     .label = 回報網站問題…
 menu-help-feedback-page =
@@ -362,8 +364,8 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = 重新啟動並啟用附加元件
     .accesskey = R
-menu-help-enter-troubleshoot-mode =
-    .label = 疑難排解模式
+menu-help-enter-troubleshoot-mode2 =
+    .label = 疑難排解模式…
     .accesskey = M
 menu-help-exit-troubleshoot-mode =
     .label = 關閉疑難排解模式
@@ -376,6 +378,3 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = 這不是詐騙網站…
     .accesskey = d
-menu-help-check-for-update =
-    .label = 檢查更新…
-    .accesskey = C

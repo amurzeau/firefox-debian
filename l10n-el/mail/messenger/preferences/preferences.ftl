@@ -10,6 +10,8 @@ preferences-title =
             [windows] Επιλογές
            *[other] Προτιμήσεις
         }
+preferences-tab-title =
+    .title = Προτιμήσεις
 category-list =
     .aria-label = Κατηγορίες
 pane-general-title = Γενικά
@@ -90,6 +92,7 @@ update-in-progress-ok-button = &Απόρριψη
 update-in-progress-cancel-button = &Συνέχεια
 account-button = Ρυθμίσεις λογαριασμού
 addons-button = Επεκτάσεις & θέματα
+open-addons-sidebar-button = Πρόσθετα και θέματα
 
 ## OS Authentication dialog
 
@@ -161,6 +164,12 @@ customize-alert-label =
 tray-icon-label =
     .label = Εμφάνιση εικονιδίου στη γραμμή
     .accesskey = μ
+biff-use-system-alert =
+    .label = Χρήση ειδοποιήσεων συστήματος
+tray-icon-unread-label =
+    .label = Εμφάνιση εικονιδίου για μη αναγνωσμένα μηνύματα στη γραμμή εργασίων
+    .accesskey = φ
+tray-icon-unread-description = Προτείνεται εάν χρησιμοποιείτε μικρά κουμπιά στη γραμμή εργασιών
 mail-system-sound-label =
     .label = Προεπιλεγμένος ήχος συστήματος για νέα email
     .accesskey = Π
@@ -698,6 +707,17 @@ search-input-box =
             [windows] Εύρεση στις επιλογές
            *[other] Εύρεση στις προτιμήσεις
         }
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-preferences-input =
+    .style = width: 15.4em
+    .placeholder = Εύρεση στις προτιμήσεις
 
 ## Preferences UI Search Results
 

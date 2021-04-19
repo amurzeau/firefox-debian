@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Voltar uma página ({ $shortcut })
     .aria-label = Voltar
     .accesskey = V
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Voltar
+    .accesskey = V
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Avançar uma página ({ $shortcut })
     .aria-label = Avançar
     .accesskey = A
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Avançar
+    .accesskey = A
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Recarregar
     .accesskey = R
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Recarregar
+    .accesskey = R
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Parar
     .accesskey = P
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Parar
+    .accesskey = P
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Adicionar esta página aos favoritos
     .accesskey = m
     .tooltiptext = Adicionar aos favoritos
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Adicionar página aos favoritos
+    .accesskey = f
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Editar favorito
+    .accesskey = f
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Abrir link em nova aba contêiner
     .accesskey = c
-main-context-menu-open-link-container =
-    .label = Abrir link em novo contêiner
-    .accesskey = v
 main-context-menu-open-link-new-window =
     .label = Abrir link em nova janela
     .accesskey = A
@@ -348,8 +379,11 @@ main-context-menu-suggest-strong-password =
 main-context-menu-manage-logins =
     .label = Gerenciar contas…
     .accesskey = G
+main-context-menu-manage-logins2 =
+    .label = Gerenciar contas
+    .accesskey = G
 main-context-menu-keyword =
-    .label = Adicionar um atalho para esta pesquisa…
+    .label = Adicionar um atalho a esta pesquisa…
     .accesskey = r
 main-context-menu-link-send-to-device =
     .label = Enviar link para dispositivo

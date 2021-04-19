@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Bir sayfa geriye ({ $shortcut })
     .aria-label = Geri
     .accesskey = G
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Geri
+    .accesskey = G
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Bir sayfa ileriye ({ $shortcut })
     .aria-label = İleri
     .accesskey = e
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = İleri
+    .accesskey = e
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Tazele
     .accesskey = z
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Tazele
+    .accesskey = z
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Durdur
     .accesskey = D
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Durdur
+    .accesskey = D
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Bu sayfayı yer imlerine ekle
     .accesskey = m
     .tooltiptext = Bu sayfayı yer imlerine ekle
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Yer imlerine ekle
+    .accesskey = m
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Yer imini düzenle
+    .accesskey = m
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Bağlantıyı yeni kapsayıcı sekmede aç
     .accesskey = k
-main-context-menu-open-link-container =
-    .label = Bağlantıyı yeni kapsayıcıda aç
-    .accesskey = n
 main-context-menu-open-link-new-window =
     .label = Yeni pencerede aç
     .accesskey = e
@@ -131,7 +162,7 @@ main-context-menu-save-link =
     .accesskey = f
 main-context-menu-save-link-to-pocket =
     .label = Bağlantıyı { -pocket-brand-name }’a kaydet
-    .accesskey = o
+    .accesskey = P
 
 ## The access keys for "Copy Link Location" and "Copy Email Address"
 ## should be the same if possible; the two context menu items
@@ -193,6 +224,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Çok hızlı (2×)
     .accesskey = o
+main-context-menu-media-play-speed-2 =
+    .label = Hız
+    .accesskey = z
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0,5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1,0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1,25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1,5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Tekrarla
     .accesskey = r
@@ -220,6 +264,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Görüntü içinde görüntü
     .accesskey = G
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Görüntü içinde görüntü modunda izle
+    .accesskey = G
 main-context-menu-image-reload =
     .label = Resmi tazele
     .accesskey = t
@@ -228,6 +277,12 @@ main-context-menu-image-view =
     .accesskey = R
 main-context-menu-video-view =
     .label = Videoyu izle
+    .accesskey = V
+main-context-menu-image-view-new-tab =
+    .label = Resmi yeni sekmede aç
+    .accesskey = R
+main-context-menu-video-view-new-tab =
+    .label = Videoyu yeni sekmede aç
     .accesskey = V
 main-context-menu-image-copy =
     .label = Resmi kopyala
@@ -243,7 +298,7 @@ main-context-menu-audio-copy-location =
     .accesskey = o
 main-context-menu-image-copy-link =
     .label = Resim bağlantısını kopyala
-    .accesskey = o
+    .accesskey = l
 main-context-menu-video-copy-link =
     .label = Video bağlantısını kopyala
     .accesskey = o
@@ -277,6 +332,9 @@ main-context-menu-audio-save-as =
 main-context-menu-video-image-save-as =
     .label = Ekran görüntüsünü kaydet…
     .accesskey = E
+main-context-menu-video-take-snapshot =
+    .label = Ekran görüntüsü al…
+    .accesskey = ö
 main-context-menu-video-email =
     .label = Videoyu e-posta ile gönder…
     .accesskey = u
@@ -291,7 +349,7 @@ main-context-menu-plugin-hide =
     .accesskey = u
 main-context-menu-save-to-pocket =
     .label = Sayfayı { -pocket-brand-name }’a kaydet
-    .accesskey = k
+    .accesskey = P
 main-context-menu-send-to-device =
     .label = Sayfayı cihaza gönder
     .accesskey = ö
@@ -320,6 +378,9 @@ main-context-menu-suggest-strong-password =
     .accesskey = G
 main-context-menu-manage-logins =
     .label = Hesapları yönet…
+    .accesskey = H
+main-context-menu-manage-logins2 =
+    .label = Hesapları yönet
     .accesskey = H
 main-context-menu-keyword =
     .label = Bu arama için anahtar kelime ekle…
@@ -362,7 +423,10 @@ main-context-menu-print-selection =
     .accesskey = m
 main-context-menu-view-selection-source =
     .label = Seçimin kaynak kodunu göster
-    .accesskey = e
+    .accesskey = o
+main-context-menu-take-screenshot =
+    .label = Ekran görüntüsü al
+    .accesskey = E
 main-context-menu-view-page-source =
     .label = Sayfa kaynağını göster
     .accesskey = a

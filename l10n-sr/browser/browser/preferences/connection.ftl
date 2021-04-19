@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 connection-window =
-    .title = Поставке повезивања
+    .title = Подешавања везе
     .style =
         { PLATFORM() ->
             [macos] width: 44em
@@ -12,14 +12,14 @@ connection-window =
 connection-close-key =
     .key = w
 connection-disable-extension =
-    .label = Онемогући екстензију
+    .label = Онемогући додатак
 connection-proxy-configure = Подесите прокси за приступ интернету
 connection-proxy-option-no =
     .label = Без проксија
     .accesskey = y
 connection-proxy-option-system =
     .label = Користи системска подешавања проксија
-    .accesskey = U
+    .accesskey = К
 connection-proxy-option-auto =
     .label = Самостално откривање поставки проксија за ову мрежу
     .accesskey = w
@@ -62,8 +62,8 @@ connection-proxy-autotype =
     .label = Аутоматско подешавање проксија URL
     .accesskey = А
 connection-proxy-reload =
-    .label = Обнови
-    .accesskey = e
+    .label = Врати
+    .accesskey = В
 connection-proxy-autologin =
     .label = Не питај за аутентификацију ако је лозинка сачувана
     .accesskey = i
@@ -79,7 +79,7 @@ connection-dns-over-https-url-resolver = Користи достављача
 # Variables:
 #   $name (String) - Display name or URL for the DNS over HTTPS provider
 connection-dns-over-https-url-item-default =
-    .label = { $name } (Подразумевано)
+    .label = { $name } (подразумевано)
     .tooltiptext = Користите подразумевани URL за разрешавање DNS-а преко HTTPS-а
 connection-dns-over-https-url-custom =
     .label = Прилагођено

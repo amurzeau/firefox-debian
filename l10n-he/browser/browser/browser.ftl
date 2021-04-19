@@ -264,11 +264,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = הוספת סימנייה
+bookmarks-edit-bookmark = עריכת סימנייה
+bookmark-panel-cancel =
+    .label = ביטול
+    .accesskey = ב
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] הסרת סימנייה
+           *[other] הסרת { $count } סימניות
+        }
+    .accesskey = ס
 bookmark-panel-show-editor-checkbox =
     .label = הצגת העורך בזמן שמירה
     .accesskey = ה
 bookmark-panel-done-button =
     .label = סיום
+bookmark-panel-save-button =
+    .label = שמירה
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -288,6 +304,8 @@ identity-passive-loaded = חלקים מדף זה אינם מאובטחים (כג
 identity-active-loaded = ניטרלת את אמצעי האבטחה על דף זה.
 identity-weak-encryption = דף זה משתמש בהצפנה חלשה.
 identity-insecure-login-forms = פרטי ההתחברות המוזנים בעמוד זה עשויים להיות חשופים בפני גורמי צד שלישי.
+identity-permissions =
+    .value = הרשאות
 identity-https-only-connection-upgraded = (שודרג ל־HTTPS)
 identity-https-only-label = מצב HTTPS בלבד
 identity-https-only-dropdown-on =
@@ -299,8 +317,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = יש להפעיל את מצב HTTPS בלבד אם ברצונך ש־{ -brand-short-name } ישדרג את החיבור כשהדבר אפשרי.
 identity-https-only-info-turn-off2 = אם נראה שהדף שבור, באפשרותך לכבות את מצב ה־HTTPS בלבד עבור אתר זה כדי לטעון מחדש באמצעות HTTP לא מאובטח.
 identity-https-only-info-no-upgrade = לא ניתן לשדרג את החיבור מ־HTTP.
-identity-permissions =
-    .value = הרשאות
 identity-permissions-storage-access-header = עוגיות חוצות אתרים
 identity-permissions-reload-hint = יתכן שיהיה עליך לרענן את העמוד כדי שהשינויים ייכנסו לתוקף.
 identity-permissions-empty = לא סופקו לאתר זה הרשאות מיוחדות.
@@ -347,8 +363,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = מנגן
-browser-tab-audio-muted = מושתק
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = מנגן
 # This label should be written in all capital letters if your locale supports them.
@@ -357,6 +371,26 @@ browser-tab-audio-muted2 = מושתק
 browser-tab-audio-blocked = ניגון אוטומטי מושתק
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = תמונה בתוך תמונה
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] השתקת לשונית
+       *[other] השתקת { $count } לשוניות
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] ביטול השתקת לשונית
+       *[other] ביטול השתקת { $count } לשוניות
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] ניגון לשונית
+       *[other] ניגון { $count } לשוניות
+    }
 
 ## Bookmarks toolbar items
 
@@ -507,6 +541,13 @@ urlbar-result-action-tabtosearch-web = חיפוש באמצעות { $engine } י�
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = חיפוש ב־{ $engine } ישירות משורת הכתובת
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = העתקה
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -548,8 +589,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = הצגת כל הסימניות
-bookmarks-recent-bookmarks =
-    .value = סימניות שנוספו לאחרונה
 bookmarks-manage-bookmarks =
     .label = ניהול סימניות
 bookmarks-recent-bookmarks-panel =
@@ -570,12 +609,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] הסתרת סרגל הצד סימניות
            *[other] הצגת סרגל הצד
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] הסתרת סרגל הכלים סימניות
-           *[other] הצגת סרגל הכלים סימניות
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -622,12 +655,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = סימניות
-library-bookmarks-bookmark-this-page =
-    .label = יצירת סימנייה לדף זה
-library-bookmarks-bookmark-edit =
-    .label = עריכת סימנייה זו
 library-recent-activity-title =
     .value = פעילות אחרונה
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = שמירה אל { -pocket-brand-name }
+    .tooltiptext = שמירה אל { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = תוספות וערכות נושא
+    .tooltiptext = ניהול התוספות וערכות הנושא שלך ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = הגדרות
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] פתיחת הגדרות ({ $shortcut })
+           *[other] פתיחת הגדרות
+        }
 
 ## More items
 
@@ -654,3 +706,9 @@ panel-save-update-password = ססמה
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = להסיר את { $name }?
 addon-removal-abuse-report-checkbox = דיווח על הרחבה זו ל־{ -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = ניהול חשבון
+remote-tabs-sync-now = סנכרון כעת

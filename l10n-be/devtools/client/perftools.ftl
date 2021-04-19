@@ -16,11 +16,22 @@ perftools-intro-description =
 
 perftools-heading-settings = Поўныя налады
 perftools-heading-buffer = Налады буфера
+perftools-heading-features = Магчымасці
+perftools-heading-features-default = Магчымасці (рэкамендаваныя да ўключэння)
+perftools-heading-features-disabled = Адключаныя магчымасці
+perftools-heading-features-experimental = Эксперыментальныя
 perftools-heading-threads = Патокі
 perftools-heading-local-build = Лакальная зборка
 
 ##
 
+perftools-description-intro =
+    Запісы запускаюць <a>profiler.firefox.com</a> у новай картцы. Усе дадзеныя захоўваюцца
+    лакальна, але вы можаце зацягнуць iх для сумеснага выкарыстання.
+perftools-description-local-build =
+    Калі вы прафілюеце зборку, якую вы зкампілявалі самі, на гэтай
+    машыне, калі ласка, дадайце objdir вашай зборкі ў спіс ніжэй, каб
+    яго можна было выкарыстоўваць для пошуку інфармацыі пра сімвалы.
 
 ## The controls for the interval at which the profiler samples the code.
 
@@ -31,12 +42,16 @@ perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 
 
 # The size of the memory buffer used to store things in the profiler.
 perftools-range-entries-label = Памер буфера:
+perftools-custom-threads-label = Дадаць адмысловыя патокi па назве:
 perftools-devtools-interval-label = Інтэрвал:
 perftools-devtools-threads-label = Патокі:
 perftools-devtools-settings-label = Налады
 
 ## Various statuses that affect the current state of profiling, not typically displayed.
 
+perftools-status-private-browsing-notice =
+    Прафайлер адключаны, калі ўключана прыватнае агляданне.
+    Закройце ўсе прыватныя вокны, каб зноў уключыць прафайлер
 perftools-status-recording-stopped-by-another-tool = Запіс быў спынены іншай прыладай.
 perftools-status-restart-required = Каб уключыць гэтую функцыю, трэба перазапусціць браўзeр.
 
@@ -47,18 +62,28 @@ perftools-request-to-stop-profiler = Спыненне запісу
 ##
 
 perftools-button-start-recording = Пачаць запіс
+perftools-button-capture-recording = Захапіць запіс
 perftools-button-cancel-recording = Скасаваць запiс
 perftools-button-save-settings = Захаваць налады і вярнуцца назад
 perftools-button-restart = Перазапусціць
+perftools-button-add-directory = Дадаць каталог
+perftools-button-remove-directory = Выдаліць абранае
+perftools-button-edit-settings = Змянiць налады...
 
 ## These messages are descriptions of the threads that can be enabled for the profiler.
 
 
 ##
 
+perftools-record-all-registered-threads = Iгнараваць абранае вышэй і запісваць усе зарэгістраваныя патокі
 
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
 ## preferences are true.
 
 -profiler-brand-name = Прафайлер Firefox
+perftools-onboarding-message = <b>Новае</b>: { -profiler-brand-name } цяпер інтэграваны ў Інструменты распрацоўшчыка. <a>Даведайцеся больш</a> пра гэты новы магутны інструмент.
+# `options-context-advanced-settings` is defined in toolbox-options.ftl
+perftools-onboarding-reenable-old-panel = (На працягу абмежаванага часу вы можаце атрымаць доступ да арыгінальнай панэлі Прадукцыйнасці праз <a>{ options-context-advanced-settings }</a>)
+perftools-onboarding-close-button =
+    .aria-label = Закрыць прывiтальнае паведамленне

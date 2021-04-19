@@ -130,10 +130,14 @@ sandbox-sys-call-number = Asiwel n unagraw
 sandbox-sys-call-args = Tiɣiriyin
 safe-mode-title = Ɛreḍ deg uskar aɣelsan
 restart-in-safe-mode-label = Ales asenker s izegrar irurmiden…
+troubleshoot-mode-title = Af-d uguren
+restart-in-troubleshoot-mode-label = Askar n usellek…
 clear-startup-cache-title = Ɛreḍ ad tsefḍeḍ tanekkra tuffirt
 clear-startup-cache-label = Sfeḍ tanekkra tuffirt…
 startup-cache-dialog-title = Sfeḍ tanekkra tuffirt
 startup-cache-dialog-body = Ales asenker { -brand-short-name } i usfaḍ n tnekkra tuffirt. Ayagi ur yettbeddil ara deg yiɣewwaren-inek/inem, ur itekkes ara izegrar i terniḍ ɣer { -brand-short-name }.
+startup-cache-dialog-title2 = Ales asenker i tikkelt-nniḍen { -brand-short-name } i usfaḍ n tuffirt n usenker?
+startup-cache-dialog-body2 = Aya ur yettbeddil iɣewwaren-inek·inem, ur itekkes iseɣzaf.
 restart-button-label = Ales asenker
 
 ## Media titles
@@ -406,6 +410,7 @@ support-printing-prefs-value = Azal
 
 ## Normandy sections
 
+support-remote-experiments-title = Tirmitin tinmeggagin
 support-remote-experiments-name = Isem
 support-remote-features-title = Timahilin tinmeggayin
 support-remote-features-name = Isem

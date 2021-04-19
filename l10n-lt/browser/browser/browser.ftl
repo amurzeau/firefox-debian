@@ -266,11 +266,28 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Įtraukti adresą
+bookmarks-edit-bookmark = Redaguoti adresyno įrašą
+bookmark-panel-cancel =
+    .label = Atsisakyti
+    .accesskey = s
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Pašalinti įrašą
+            [few] Pašalinti { $count } įrašus
+           *[other] Pašalinti { $count } įrašų
+        }
+    .accesskey = P
 bookmark-panel-show-editor-checkbox =
     .label = Rodyti redagavimo formą įrašant
     .accesskey = R
 bookmark-panel-done-button =
     .label = Atlikta
+bookmark-panel-save-button =
+    .label = Įrašyti
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -290,6 +307,8 @@ identity-passive-loaded = Kai kurios šio tinklalapio dalys nėra saugios (pvz.,
 identity-active-loaded = Šiame tinklalapyje esate išjungę apsaugą.
 identity-weak-encryption = Šis tinklalapis naudoja silpną šifravimą.
 identity-insecure-login-forms = Šiame tinklalapyje įvesti prisijungimo duomenys gali būti perimti.
+identity-permissions =
+    .value = Leidimai
 identity-https-only-connection-upgraded = (naudojamas HTTPS)
 identity-https-only-label = Tik HTTPS veiksena
 identity-https-only-dropdown-on =
@@ -301,8 +320,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Įjunkite tik HTTPS veikseną šiai svetainei, jei norite, kad „{ -brand-short-name }“ naudotų saugų ryšį kai tik įmanoma.
 identity-https-only-info-turn-off2 = Jei tinklalkapis veikia netinkamai, gali tekti išjungti tik HTTPS veikseną šiai svetainei, ir įkelti iš naujo naudojant nesaugų HTTP.
 identity-https-only-info-no-upgrade = Nepavyko perkelti ryšio iš HTTP.
-identity-permissions =
-    .value = Leidimai
 identity-permissions-storage-access-header = Tarp svetainių veikiantys slapukai
 identity-permissions-storage-access-hint = Šios šalys gali naudoti tarp svetainių veikiančius slapukus ir svetainių duomenis, kai esate šioje svetainėje.
 identity-permissions-reload-hint = Kad būtų pritaikyti pakeitimai, tinklalapį galimai reikia atsiųsti iš naujo.
@@ -350,8 +367,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Groja
-browser-tab-audio-muted = Nutildyta
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = GROJA
 # This label should be written in all capital letters if your locale supports them.
@@ -360,6 +375,32 @@ browser-tab-audio-muted2 = NUTILDYTA
 browser-tab-audio-blocked = AUTOMATINIS GROJIMAS UŽBLOKUOTAS
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = VAIZDAS-VAIZDE
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] NUTILDYTI KORTELĘ
+        [one] NUTILDYTI KORTELĘ
+        [few] NUTILDYTI { $count } KORTELES
+       *[other] NUTILDYTI { $count } KORTELIŲ
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] ĮJUNGTI GARSĄ KORTELĖJE
+        [one] ĮJUNGTI GARSĄ KORTELĖJE
+        [few] ĮJUNGTI GARSĄ { $count } KORTELĖSE
+       *[other] ĮJUNGTI GARSĄ { $count } KORTELIŲ
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] GROTI KORTELĖJE
+        [one] GROTI KORTELĖJE
+        [few] GROTI { $count } KORTELĖSE
+       *[other] GROTI { $count } KORTELIŲ
+    }
 
 ## Bookmarks toolbar items
 
@@ -511,6 +552,13 @@ urlbar-result-action-tabtosearch-web = Ieškokite per „{ $engine }“ tiesiai 
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Ieškokite „{ $engine }“ tiesiai iš adreso lauko
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Kopijuoti
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -552,8 +600,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Rodyti visą adresyną
-bookmarks-recent-bookmarks =
-    .value = Paskiausiai įtraukti į adresyną
 bookmarks-manage-bookmarks =
     .label = Tvarkyti adresyną
 bookmarks-recent-bookmarks-panel =
@@ -574,12 +620,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Nerodyti adresyno parankinėje
            *[other] Rodyti adresyną parankinėje
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Slėpti adresyno juostą
-           *[other] Rodyti adresyno juostą
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -626,12 +666,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Adresynas
-library-bookmarks-bookmark-this-page =
-    .label = Įrašyti į adresyną
-library-bookmarks-bookmark-edit =
-    .label = Taisyti adresyno įrašą
 library-recent-activity-title =
     .value = Paskiausia veikla
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Įrašyti į „{ -pocket-brand-name }“
+    .tooltiptext = Įrašyti į „{ -pocket-brand-name }“
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Priedai ir grafiniai apvalkalai
+    .tooltiptext = Tvarkykite savo priedus ir grafinius apvalkalus ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Nuostatos
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Atverti nuostatas ({ $shortcut })
+           *[other] Atverti nuostatas
+        }
 
 ## More items
 
@@ -658,3 +717,9 @@ panel-save-update-password = Slaptažodis
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = Pašalinti „{ $name }“?
 addon-removal-abuse-report-checkbox = Pranešti apie šį priedą į „{ -vendor-short-name }“
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Tvarkyti paskyrą
+remote-tabs-sync-now = Sinchronizuoti dabar

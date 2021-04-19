@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = Foarkarren
 menu-application-services =
     .label = Tsjinsten
 menu-application-hide-this =
@@ -252,15 +254,18 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Oanmelde by { -brand-product-name }…
     .accesskey = m
-menu-tools-extensions =
-    .label = Utwreidingen en Tema’s
-    .accesskey = U
+menu-tools-addons-and-themes =
+    .label = Add-ons en tema’s
+    .accesskey = A
 menu-tools-fxa-sign-in2 =
     .label = Oanmelde
     .accesskey = m
 menu-tools-turn-on-sync =
     .label = { -sync-brand-short-name } ynskeakelje…
     .accesskey = y
+menu-tools-turn-on-sync2 =
+    .label = Syngronisaasje ynskeakelje…
+    .accesskey = n
 menu-tools-sync-now =
     .label = No syngronisearje
     .accesskey = N
@@ -270,12 +275,25 @@ menu-tools-fxa-re-auth =
 menu-tools-web-developer =
     .label = Webûntwikkeler
     .accesskey = W
+menu-tools-browser-tools =
+    .label = Browserhelpmiddelen
+    .accesskey = B
+menu-tools-task-manager =
+    .label = Taakbehearder
+    .accesskey = b
 menu-tools-page-source =
     .label = Sideboarne
     .accesskey = r
 menu-tools-page-info =
     .label = Side-ynfo
     .accesskey = f
+menu-settings =
+    .label = Ynstellingen
+    .accesskey =
+        { PLATFORM() ->
+            [windows] Y
+           *[other] n
+        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -286,13 +304,6 @@ menu-preferences =
         { PLATFORM() ->
             [windows] O
            *[other] F
-        }
-menu-settings =
-    .label = Ynstellingen
-    .accesskey =
-        { PLATFORM() ->
-            [windows] Y
-           *[other] n
         }
 menu-tools-layout-debugger =
     .label = Lay-out-debugger
@@ -306,15 +317,6 @@ menu-window-bring-all-to-front =
     .label = Alles nei foaren bringe
 
 ## Help Menu
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
 
 
 # NOTE: For Engineers, any additions or changes to Help menu strings should
@@ -346,11 +348,11 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Probleemoplossingsynformaasje
     .accesskey = P
+menu-help-taskmanager =
+    .label = Taakbehearder
 menu-help-more-troubleshooting-info =
     .label = Mear probleemoplossingsynformaasje
     .accesskey = p
-menu-help-taskmanager =
-    .label = Taakbehearder
 menu-help-report-site-issue =
     .label = Websiteprobleem rapportearje…
 menu-help-feedback-page =
@@ -362,9 +364,9 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Opnij starte mei ynskeakele add-ons
     .accesskey = r
-menu-help-enter-troubleshoot-mode =
-    .label = Probleemoplossingsmodus
-    .accesskey = m
+menu-help-enter-troubleshoot-mode2 =
+    .label = Probleemoplossingsmodus…
+    .accesskey = u
 menu-help-exit-troubleshoot-mode =
     .label = Probleemoplossingsmodus útskeakelje
     .accesskey = m
@@ -376,6 +378,3 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Dit is gjin misliedende website…
     .accesskey = m
-menu-help-check-for-update =
-    .label = Kontrolearje op fernijingen…
-    .accesskey = K

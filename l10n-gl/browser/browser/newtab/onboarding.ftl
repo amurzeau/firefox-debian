@@ -173,6 +173,15 @@ onboarding-multistage-set-default-subtitle = Velocidade, seguranza e privacidade
 onboarding-multistage-set-default-primary-button-label = Facer como predeterminado
 onboarding-multistage-set-default-secondary-button-label = Agora non
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-pin-default-header = Comece tendo <span data-l10n-name="zap">{ -brand-short-name }</span> a só un clic
+onboarding-multistage-pin-default-subtitle = Navegación rápida, segura e privada cada vez que use a web.
+# The "settings" here refers to "Windows 10 Settings App" and not the browser's
+onboarding-multistage-pin-default-waiting-subtitle = Escoller { -brand-short-name } en Navegador web ao se abrir a configuración
+# The "settings" here refers to "Windows 10 Settings App" and not the browser's
+onboarding-multistage-pin-default-help-text = Isto fixa { -brand-short-name } na barra de tarefas e abre a configuración
+onboarding-multistage-pin-default-primary-button-label = Tornar { -brand-short-name } no meu navegador principal
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "more" should stay inside the span.
 onboarding-multistage-import-header = Importe os seus contrasinais, <br/>marcadores e <span data-l10n-name = "zap">máis</span>
 onboarding-multistage-import-subtitle = Procede doutro navegador? É fácil traelo todo a { -brand-short-name }.
@@ -192,6 +201,7 @@ onboarding-welcome-steps-indicator =
 onboarding-multistage-theme-header = Escolla un <span data-l10n-name = "zap">aspecto</span>
 onboarding-multistage-theme-subtitle = Personalice { -brand-short-name } cun tema.
 onboarding-multistage-theme-primary-button-label = Garde o tema
+onboarding-multistage-theme-primary-button-label2 = Feito
 onboarding-multistage-theme-secondary-button-label = Agora non
 # Automatic theme uses operating system color settings
 onboarding-multistage-theme-label-automatic = Automático

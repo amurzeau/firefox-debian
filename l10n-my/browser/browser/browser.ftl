@@ -223,6 +223,14 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmark-panel-cancel =
+    .label = ပယ်​ဖျက်ပါ
+    .accesskey = C
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label = စာမှတ် { $count } ခုကို ဖျက်ရန်
+    .accesskey = R
 bookmark-panel-done-button =
     .label = ပြီးပြီ
 # Width of the bookmark panel.
@@ -243,10 +251,10 @@ identity-passive-loaded = ဒီစာမျက်နှာ၏ အစိတ်�
 identity-active-loaded = ဒီစာမျက်နှာတွင် သင်သည် ကာကွယ်မှုကို ပိတ်ထားသည်။
 identity-weak-encryption = ဒီစာမျက်နှာသည် အားနည်းသည့် ဝှက်စာစနစ်ကို သုံးထားသည်။
 identity-insecure-login-forms = ဒီစာမျက်နှာကို ဝင်ရောက်ရာတွင် အသုံးပြုသည့် အချက်အလက်များသည် တိုက်ခိုက်ခိုးယူခံရနိုင်သည်။
-identity-https-only-dropdown-on =
-    .label = ဖွင့်
 identity-permissions =
     .value = ခွင့်ပြုချက်များ
+identity-https-only-dropdown-on =
+    .label = ဖွင့်
 identity-permissions-reload-hint = ပြောင်းလဲထားသည့် အပြင်အဆင်များ သက်ရောက်မှုရှိစေရန်အတွက် ယခုစာမျက်နှာကို ပြန်လည်ခေါ်ယူရန် လိုအပ်ကောင်း လိုအပ်နိုင်ပါသည်။
 identity-permissions-empty = ယခုဆိုက်တွင် သင့်အတွက် မည်သည့် အထူးခွင့်ပြုချက်များ သက်မှတ်ပေးထားခြင်းမရှိပါ။
 identity-clear-site-data =
@@ -288,6 +296,11 @@ browser-window-close-button =
     .tooltiptext = ပိတ်ပါ
 
 ## Tab actions
+
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
 
 
 ## Bookmarks toolbar items
@@ -376,8 +389,6 @@ pointerlock-warning-no-domain = ဒီစာတမ်းသည် သင့်�
 
 bookmarks-show-all-bookmarks =
     .label = မှတ်သားချက်များအားလုံးကို ပြသပါ
-bookmarks-recent-bookmarks =
-    .value = မကြာသေးမီက မှတ်သားထားသောဝဘ်စာမျက်နှာများ
 bookmarks-toolbar-chevron =
     .tooltiptext = မှတ်သားချက်များကို ပိုမို ဖေါ်ပြသပါ
 bookmarks-sidebar-content =
@@ -393,12 +404,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] စာမှတ်များဘေးတန်းကို ပိတ်ရန်
            *[other] စာမှတ်များ ဘေးတန်းကို ပြပါ
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] စာမှတ်များအတန်းကို ပိတ်ရန်
-           *[other] စာမှတ်များ ကိရိယာအတန်းကို ပြပါ
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -429,10 +434,15 @@ bookmarks-toolbar-placeholder-button =
 
 library-bookmarks-menu =
     .label = စာမှတ်များ
-library-bookmarks-bookmark-this-page =
-    .label = ဒီစာမျက်နှာကို မှတ်သားပါ
-library-bookmarks-bookmark-edit =
-    .label = ဒီစာမှတ်ကို ပြင်ဆင်မည်
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = { -pocket-brand-name } တွင်သိမ်းပါ
+    .tooltiptext = { -pocket-brand-name } တွင်သိမ်းပါ
+
+## Customize Toolbar Buttons
+
 
 ## More items
 
@@ -443,3 +453,12 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = ဒီဆိုက်ရှိ အော်ဒီယို (သို့) ဗွီဒီယိုအချို့သည် DRM ဆော့ဖ်ဝဲ({ -brand-short-name } က သင့်ကို ပေးထားသည့် လုပ်ပိုင်ခွင့်ကို ကန့်သတ်နိုင်သည်)ကို အသုံးပြုထားသည်။
+
+## Password save/update panel
+
+
+## Add-on removal warning
+
+
+## Remote / Synced tabs
+

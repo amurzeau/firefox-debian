@@ -266,11 +266,28 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Přidat záložku
+bookmarks-edit-bookmark = Upravit záložku
+bookmark-panel-cancel =
+    .label = Zrušit
+    .accesskey = Z
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Odstranit záložku
+            [few] Odstranit { $count } záložky
+           *[other] Odstranit { $count } záložek
+        }
+    .accesskey = O
 bookmark-panel-show-editor-checkbox =
     .label = Zobrazovat editor při ukládání
     .accesskey = u
 bookmark-panel-done-button =
     .label = Hotovo
+bookmark-panel-save-button =
+    .label = Uložit
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -302,6 +319,8 @@ identity-passive-loaded = Části této stránky nejsou zabezpečené (napříkl
 identity-active-loaded = Na této stránce jste ochranu zakázali.
 identity-weak-encryption = Tento server používá slabé šifrování.
 identity-insecure-login-forms = Přihlašovací údaje zadané na této stránce mohou být vyzrazeny.
+identity-permissions =
+    .value = Oprávnění
 identity-https-only-connection-upgraded = (přepnuto na HTTPS)
 identity-https-only-label = Režim „pouze HTTPS“
 identity-https-only-dropdown-on =
@@ -319,8 +338,6 @@ identity-https-only-info-turn-on2 =
     } spojení na HTTPS, kdykoliv je to možné, zapněte pro tento server režim „pouze HTTPS“.
 identity-https-only-info-turn-off2 = Pokud se zdá, že je stránka rozbitá, zkuste vypnout režim „pouze HTTPS“, aby se znovu načetla pomocí nezabezpečeného spojení HTTP.
 identity-https-only-info-no-upgrade = Nepodařilo se přepnout spojení z HTTP.
-identity-permissions =
-    .value = Oprávnění
 identity-permissions-storage-access-header = Cross-site cookies
 identity-permissions-storage-access-hint = Tyto weby mohou používat cross-site cookies a během vaší návštěvy této stránky tak přistupovat k jejím datům.
 identity-permissions-reload-hint = Pro provedení změn může být potřeba stránku znovu načíst.
@@ -380,8 +397,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Přehrávání
-browser-tab-audio-muted = Ztlumeno
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = PŘEHRÁVÁ
 # This label should be written in all capital letters if your locale supports them.
@@ -390,6 +405,32 @@ browser-tab-audio-muted2 = ZTLUMENO
 browser-tab-audio-blocked = BLOKOVÁNO AUTO. PŘEHRÁVÁNÍ
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = OBRAZ V OBRAZE
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] Vypnout zvuk panelu
+        [one] Vypnout zvuk panelu
+        [few] Vypnout zvuk { $count } panelů
+       *[other] Vypnout zvuk { $count } panelů
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] Zapnout zvuk panelu
+        [one] Zapnout zvuk panelu
+        [few] Zapnout zvuk { $count } panelů
+       *[other] Zapnout zvuk { $count } panelů
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] Spustit přehrávání
+        [one] Spustit přehrávání
+        [few] Spustit ve { $count } panelech
+       *[other] Spustit v { $count } panelech
+    }
 
 ## Bookmarks toolbar items
 
@@ -409,9 +450,13 @@ popup-select-microphone =
 popup-select-camera-device =
     .value = Kamera:
     .accesskey = K
+popup-select-camera-icon =
+    .tooltiptext = Kamera
 popup-select-microphone-device =
     .value = Mikrofon:
     .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Mikrofon
 popup-all-windows-shared = Budou sdílena všechna viditelná okna na vaší obrazovce.
 popup-screen-sharing-not-now =
     .label = Teď ne
@@ -537,6 +582,13 @@ urlbar-result-action-tabtosearch-web = Vyhledat pomocí { $engine } přímo z ad
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Vyhledat na webu { $engine } přímo z adresního řádku
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Kopírovat
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -584,8 +636,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Zobrazit všechny záložky
-bookmarks-recent-bookmarks =
-    .value = Naposledy přidané
 bookmarks-manage-bookmarks =
     .label = Správa záložek
 bookmarks-recent-bookmarks-panel =
@@ -606,12 +656,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Skrýt postranní lištu záložek
            *[other] Zobrazit v postranní liště
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Skrýt lištu záložek
-           *[other] Zobrazit lištu záložek
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -658,12 +702,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Záložky
-library-bookmarks-bookmark-this-page =
-    .label = Přidat stránku do záložek
-library-bookmarks-bookmark-edit =
-    .label = Upravit záložku
 library-recent-activity-title =
     .value = Nedávná aktivita
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Uložit do { -pocket-brand-name(case: "gen") }
+    .tooltiptext = Uloží stránku do { -pocket-brand-name(case: "gen") }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Doplňky a vzhledy
+    .tooltiptext = Správa doplňků a motivů vzhledu ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Nastavení
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Otevře nastavení ({ $shortcut })
+           *[other] Otevře nastavení
+        }
 
 ## More items
 
@@ -684,3 +747,27 @@ eme-notifications-drm-content-playing-manage = Nastavení
 eme-notifications-drm-content-playing-manage-accesskey = N
 eme-notifications-drm-content-playing-dismiss = Zavřít
 eme-notifications-drm-content-playing-dismiss-accesskey = Z
+
+## Password save/update panel
+
+panel-save-update-username = Uživatelské jméno
+panel-save-update-password = Heslo
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Opravdu chcete odebrat rozšíření { $name }?
+addon-removal-abuse-report-checkbox =
+    Nahlásit toto rozšíření { -vendor-short-name.gender ->
+        [masculine] { -vendor-short-name(case: "dat") }
+        [feminine] { -vendor-short-name(case: "dat") }
+        [neuter] { -vendor-short-name(case: "dat") }
+       *[other] organizaci { -vendor-short-name }
+    }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Správa účtu
+remote-tabs-sync-now = Synchronizovat

@@ -264,6 +264,18 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmark-panel-cancel =
+    .label = Cancel·la
+    .accesskey = C
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Elimina l'adreça d'interés
+           *[other] Elimina { $count } adreces d'interés
+        }
+    .accesskey = E
 bookmark-panel-show-editor-checkbox =
     .label = Mostra l'editor en guardar
     .accesskey = s
@@ -288,6 +300,8 @@ identity-passive-loaded = Parts d'esta pàgina no són segures (com les imatges)
 identity-active-loaded = Heu desactivat la protecció en esta pàgina.
 identity-weak-encryption = Esta pàgina utilitza xifratge feble.
 identity-insecure-login-forms = Les dades d'inici de sessió que introduïu en esta pàgina podrien estar en risc.
+identity-permissions =
+    .value = Permisos
 identity-https-only-connection-upgraded = (actualitzat a HTTPS)
 identity-https-only-label = Mode només HTTPS
 identity-https-only-dropdown-on =
@@ -299,8 +313,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Activeu el mode només HTTPS per a este lloc si voleu que el { -brand-short-name } canvie a una connexió segura quan siga possible.
 identity-https-only-info-turn-off2 = Si pareix que la pàgina no funciona bé, podeu provar de desactivar el mode només HTTPS per a este lloc per tornar-lo a carregar amb HTTP insegur.
 identity-https-only-info-no-upgrade = No s'ha pogut actualitzar la connexió des d'HTTP.
-identity-permissions =
-    .value = Permisos
 identity-permissions-storage-access-header = Galetes entre llocs
 identity-permissions-storage-access-hint = Estos subjectes poden utilitzar galetes entre llocs i dades del lloc mentre esteu en este lloc.
 identity-permissions-reload-hint = Potser cal que actualitzeu la pàgina per aplicar els canvis.
@@ -347,6 +359,11 @@ browser-window-close-button =
     .tooltiptext = Tanca
 
 ## Tab actions
+
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
 
 
 ## Bookmarks toolbar items
@@ -514,8 +531,6 @@ pointerlock-warning-no-domain = Este document té el control del punter. Premeu 
 
 bookmarks-show-all-bookmarks =
     .label = Mostra totes les adreces d'interés
-bookmarks-recent-bookmarks =
-    .value = Afegides recentment
 bookmarks-toolbar-chevron =
     .tooltiptext = Mostra més adreces d'interés
 bookmarks-sidebar-content =
@@ -531,12 +546,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Amaga la barra lateral d'adreces d'interés
            *[other] Mostra la barra lateral de les adreces d'interés
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Amaga la barra d'eines d'adreces d'interés
-           *[other] Mostra la barra de les adreces d'interés
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -574,10 +583,15 @@ bookmarks-toolbar-placeholder-button =
 
 library-bookmarks-menu =
     .label = Adreces d'interés
-library-bookmarks-bookmark-this-page =
-    .label = Afig la pàgina a les adreces d'interés
-library-bookmarks-bookmark-edit =
-    .label = Edita esta adreça d'interés
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Guarda al { -pocket-brand-name }
+    .tooltiptext = Guarda al { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
 
 ## More items
 
@@ -588,3 +602,12 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = Este lloc conté àudio o vídeo que utilitza programari de DRM, cosa que pot limitar allò que el { -brand-short-name } vos pot permetre fer.
+
+## Password save/update panel
+
+
+## Add-on removal warning
+
+
+## Remote / Synced tabs
+

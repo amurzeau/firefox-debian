@@ -28,6 +28,18 @@ search-input-box =
             [windows] Hae asetuksista
            *[other] Hae asetuksista
         }
+settings-page-title = Asetukset
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Hae asetuksista
 managed-notice = Organisaatiosi hallitsee selaimesi asetuksia.
 category-list =
     .aria-label = Luokat
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Synkronointi
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = { -brand-short-name }-kokeilut
 category-experimental =
     .tooltiptext = { -brand-short-name }-kokeilut
 pane-experimental-subtitle = Jatka varoen
 pane-experimental-search-results-header = { -brand-short-name }-kokeilut: jatka varoen
 pane-experimental-description = Lisäasetusten muuttaminen voi vaikuttaa { -brand-short-name }in suorituskykyyn tai tietoturvaan.
+pane-experimental-description2 = Lisäasetusten muuttaminen voi vaikuttaa { -brand-short-name }in suorituskykyyn tai tietoturvaan.
 pane-experimental-reset =
     .label = Palauta oletukset
     .accesskey = P
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] Ei hakutuloksia asetuksista haulle ”<span data-l10n-name="query"></span>”.
        *[other] Ei hakutuloksia asetuksista haulle ”<span data-l10n-name="query"></span>”.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Ei hakutuloksia asetuksista haulle ”<span data-l10n-name="query"></span>”.
 search-results-help-link = Tarvitsetko apua? Avaa <a data-l10n-name="url">{ -brand-short-name }-tuki</a>
 
 ## General Section
@@ -369,6 +387,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Älä hae päivityksiä (ei suositella)
     .accesskey = Ä
+update-application-background-enabled =
+    .label = Kun { -brand-short-name } ei ole käynnissä
+    .accesskey = K
 update-application-warning-cross-user-setting = Tämä asetus koskee kaikkia Windows-tilejä ja { -brand-short-name }-profiileja, jotka käyttävät tätä { -brand-short-name }-asennusta.
 update-application-use-service =
     .label = Asenna päivitykset taustalla toimivalla palvelulla
@@ -382,6 +403,7 @@ update-setting-write-failure-message =
     { -brand-short-name } havaitsi virheen eikä tallentanut tätä muutosta. Huomaa, että tämän päivitysasetuksen muuttaminen vaatii oikeuden kirjoittaa alla olevaan tiedostoon. Sinä tai järjestelmän ylläpitäjä voi pystyä ratkaisemaan virheen antamalla täydet oikeudet tähän tiedostoon Käyttäjät-ryhmälle.
     
     Ei onnistuttu kirjoittamaan tiedostoon: { $path }
+update-setting-write-failure-title2 = Päivitysasetusten tallennusvirhe
 update-in-progress-title = Päivitys meneillään
 update-in-progress-message = Haluatko, että { -brand-short-name } jatkaa tämän päivityksen asentamista?
 update-in-progress-ok-button = &Hylkää
@@ -613,6 +635,8 @@ containers-back-button =
             [windows] Takaisin asetuksiin
            *[other] Takaisin asetuksiin
         }
+containers-back-button2 =
+    .aria-label = Takaisin asetuksiin
 containers-header = Eristetyt välilehdet
 containers-add-button =
     .label = Lisää uusi eristystila
@@ -621,6 +645,8 @@ containers-new-tab-check =
     .label = Valitse eristystila jokaiselle uudelle välilehdelle
     .accesskey = V
 containers-preferences-button =
+    .label = Asetukset
+containers-settings-button =
     .label = Asetukset
 containers-remove-button =
     .label = Poista
@@ -633,6 +659,7 @@ sync-signedout-description = Synkronoi kirjanmerkit, sivuhistoria, välilehdet, 
 sync-signedout-account-signin2 =
     .label = Kirjaudu { -sync-brand-short-name }-palveluun…
     .accesskey = i
+sync-signedout-description2 = Synkronoi kirjanmerkit, sivuhistoria, välilehdet, salasanat, lisäosat ja asetukset kaikilla laitteillasi.
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -672,6 +699,7 @@ prefs-sync-setup =
     .label = Määritä { -sync-brand-short-name }…
     .accesskey = M
 prefs-sync-offer-setup-label = Synkronoi kirjanmerkit, historia, välilehdet, salasanat, lisäosat ja asetukset kaikkien laitteidesi välillä.
+prefs-sync-offer-setup-label2 = Synkronoi kirjanmerkit, sivuhistoria, välilehdet, salasanat, lisäosat ja asetukset kaikilla laitteillasi.
 prefs-sync-now =
     .labelnotsyncing = Synkronoi nyt
     .accesskeynotsyncing = N
@@ -692,6 +720,7 @@ sync-currently-syncing-prefs =
         [windows] Asetukset
        *[other] Asetukset
     }
+sync-currently-syncing-settings = Asetukset
 sync-change-options =
     .label = Muuta…
     .accesskey = M
@@ -1153,6 +1182,9 @@ space-alert-under-5gb-ok-button =
     .label = Selvä
     .accesskey = S
 space-alert-under-5gb-message = { -brand-short-name(case: "ablative") } loppuu kohta levytila. Sivustojen sisällöt eivät ehkä näy oikein. Voit lukea levyn käytön optimoimisesta selaamisen sujuvoittamiseksi painamalla ”Lue lisää”.
+space-alert-over-5gb-settings-button =
+    .label = Avaa asetukset
+    .accesskey = A
 
 ## Privacy Section - HTTPS-Only
 

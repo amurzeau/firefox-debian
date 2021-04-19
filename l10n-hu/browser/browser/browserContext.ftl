@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Ugrás az előző oldalra ({ $shortcut })
     .aria-label = Vissza
     .accesskey = V
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Vissza
+    .accesskey = V
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Ugrás a következő oldalra ({ $shortcut })
     .aria-label = Előre
     .accesskey = E
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Előre
+    .accesskey = E
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Frissítés
     .accesskey = F
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Frissítés
+    .accesskey = F
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Leállítás
     .accesskey = L
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Leállítás
+    .accesskey = L
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Oldal hozzáadása a könyvjelzőkhöz
     .accesskey = k
     .tooltiptext = Oldal a könyvjelzők közé
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Lap könyvjelzőzése
+    .accesskey = k
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Könyvjelző szerkesztése
+    .accesskey = K
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Hivatkozás megnyitása új konténerlapon
     .accesskey = k
-main-context-menu-open-link-container =
-    .label = Hivatkozás megnyitása új konténerben
-    .accesskey = j
 main-context-menu-open-link-new-window =
     .label = Megnyitás új ablakban
     .accesskey = a
@@ -346,6 +377,9 @@ main-context-menu-suggest-strong-password =
     .label = Erős jelszó javaslata…
     .accesskey = E
 main-context-menu-manage-logins =
+    .label = Bejelentkezések kezelése…
+    .accesskey = B
+main-context-menu-manage-logins2 =
     .label = Bejelentkezések kezelése…
     .accesskey = B
 main-context-menu-keyword =

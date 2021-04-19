@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Kuatiarogue mboyveguápe jeho ({ $shortcut })
     .aria-label = Tapykue
     .accesskey = B
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Tapykue
+    .accesskey = B
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Kuatiarogue upeiguápe jeho ({ $shortcut })
     .aria-label = Tenonde
     .accesskey = F
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Tenonde
+    .accesskey = F
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Myanyhẽjey
     .accesskey = R
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Myanyhẽjey
+    .accesskey = R
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Epyta
     .accesskey = S
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Epyta
+    .accesskey = S
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Kuatiarogue mbojoapy
     .accesskey = m
     .tooltiptext = Kuatiarogue mbojoapy
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Kuatiarogue rechaukaha
+    .accesskey = m
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Techaukaha mbosako’i
+    .accesskey = m
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Juajuha tendayke pyahu ñongatuhápe jeike
     .accesskey = b
-main-context-menu-open-link-container =
-    .label = Embojuruja joajuha guerekoha pyahúpe
-    .accesskey = w
 main-context-menu-open-link-new-window =
     .label = Ovetã pyahu joajuhápe jeike
     .accesskey = W
@@ -193,6 +224,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Oiko’ỹva (2×)
     .accesskey = L
+main-context-menu-media-play-speed-2 =
+    .label = Pya’ekue
+    .accesskey = d
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Mosãha
     .accesskey = M
@@ -220,6 +264,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Ta’ãnga ta’ãngápe
     .accesskey = u
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Ehecha Picture-in-Picture-pe
+    .accesskey = u
 main-context-menu-image-reload =
     .label = Mba’era’ãnga myenyhẽjey
     .accesskey = R
@@ -228,6 +277,12 @@ main-context-menu-image-view =
     .accesskey = I
 main-context-menu-video-view =
     .label = Ta’ãngamýi jehecha
+    .accesskey = i
+main-context-menu-image-view-new-tab =
+    .label = Embojuruja ta’ãnga tendayke pyahúpe
+    .accesskey = I
+main-context-menu-video-view-new-tab =
+    .label = Embojuruja ta’ãngamýi tendayke pyahúpe
     .accesskey = i
 main-context-menu-image-copy =
     .label = Mba’era’ãnga mbohasarã
@@ -277,6 +332,9 @@ main-context-menu-audio-save-as =
 main-context-menu-video-image-save-as =
     .label = Mba’erechaha japyhypyre ñongatu pyahu…
     .accesskey = S
+main-context-menu-video-take-snapshot =
+    .label = Ta’ãnga ñenohẽ…
+    .accesskey = S
 main-context-menu-video-email =
     .label = Ta’ãngamýi mondo…
     .accesskey = a
@@ -321,6 +379,9 @@ main-context-menu-suggest-strong-password =
 main-context-menu-manage-logins =
     .label = Eñangareko tembiapo ñepyrũre…
     .accesskey = M
+main-context-menu-manage-logins2 =
+    .label = Eñangareko terarendáre
+    .accesskey = M
 main-context-menu-keyword =
     .label = Jehero mbojoapy ko jehekápe g̃uarã…
     .accesskey = K
@@ -363,6 +424,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Ayvu reñoiha poravopyre jehecha
     .accesskey = e
+main-context-menu-take-screenshot =
+    .label = Mba’erechaha jejapyhy
+    .accesskey = T
 main-context-menu-view-page-source =
     .label = Kuatiarogue ayvu reñoiha jehecha
     .accesskey = V

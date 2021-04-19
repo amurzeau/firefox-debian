@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Reculer d’une page ({ $shortcut })
     .aria-label = Page précédente
     .accesskey = P
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Page précédente
+    .accesskey = P
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Avancer d’une page ({ $shortcut })
     .aria-label = Page suivante
     .accesskey = s
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Page suivante
+    .accesskey = s
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Actualiser
     .accesskey = u
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Actualiser
+    .accesskey = u
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Arrêter
     .accesskey = r
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Arrêter
+    .accesskey = r
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name(capitalization: "uppercase") }
+    .tooltiptext = { -fxaccount-brand-name(capitalization: "uppercase") }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Marquer cette page
     .accesskey = c
     .tooltiptext = Marquer cette page
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Marquer cette page
+    .accesskey = m
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Modifier le marque-page
+    .accesskey = m
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Ouvrir le lien dans un nouvel onglet conteneur
     .accesskey = C
-main-context-menu-open-link-container =
-    .label = Ouvrir le lien dans un nouveau conteneur
-    .accesskey = c
 main-context-menu-open-link-new-window =
     .label = Ouvrir le lien dans une nouvelle fenêtre
     .accesskey = O
@@ -193,6 +224,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Démesurée (×2)
     .accesskey = D
+main-context-menu-media-play-speed-2 =
+    .label = Vitesse
+    .accesskey = V
+main-context-menu-media-play-speed-slow-2 =
+    .label = × 0,5
+main-context-menu-media-play-speed-normal-2 =
+    .label = × 1
+main-context-menu-media-play-speed-fast-2 =
+    .label = × 1,25
+main-context-menu-media-play-speed-faster-2 =
+    .label = × 1,5
+main-context-menu-media-play-speed-fastest-2 =
+    .label = × 2
 main-context-menu-media-loop =
     .label = Lire en boucle
     .accesskey = i
@@ -220,6 +264,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Incrustation vidéo
     .accesskey = u
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Regarder en mode incrustation vidéo
+    .accesskey = R
 main-context-menu-image-reload =
     .label = Actualiser l’image
     .accesskey = m
@@ -228,6 +277,12 @@ main-context-menu-image-view =
     .accesskey = h
 main-context-menu-video-view =
     .label = Afficher la vidéo
+    .accesskey = v
+main-context-menu-image-view-new-tab =
+    .label = Ouvrir l’image dans un nouvel onglet
+    .accesskey = O
+main-context-menu-video-view-new-tab =
+    .label = Ouvrir la vidéo dans un nouvel onglet
     .accesskey = v
 main-context-menu-image-copy =
     .label = Copier l’image
@@ -277,6 +332,9 @@ main-context-menu-audio-save-as =
 main-context-menu-video-image-save-as =
     .label = Enregistrer un instantané sous…
     .accesskey = n
+main-context-menu-video-take-snapshot =
+    .label = Prendre un instantané…
+    .accesskey = P
 main-context-menu-video-email =
     .label = Envoyer la vidéo par courriel…
     .accesskey = v
@@ -321,6 +379,9 @@ main-context-menu-suggest-strong-password =
 main-context-menu-manage-logins =
     .label = Gérer les identifiants…
     .accesskey = d
+main-context-menu-manage-logins2 =
+    .label = Gérer les identifiants
+    .accesskey = n
 main-context-menu-keyword =
     .label = Ajouter un mot-clé pour cette recherche…
     .accesskey = m
@@ -363,6 +424,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Code source de la sélection
     .accesskey = e
+main-context-menu-take-screenshot =
+    .label = Effectuer une capture d’écran
+    .accesskey = E
 main-context-menu-view-page-source =
     .label = Code source de la page
     .accesskey = s

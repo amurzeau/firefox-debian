@@ -28,6 +28,18 @@ search-input-box =
             [windows] Rechercher dans les options
            *[other] Rechercher dans les préférences
         }
+settings-page-title = Paramètres
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 19em
+    .placeholder = Rechercher dans les paramètres
 managed-notice = Votre navigateur est géré par votre organisation.
 category-list =
     .aria-label = Catégories
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Synchronisation
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = Expériences de { -brand-short-name }
 category-experimental =
     .tooltiptext = Expériences de { -brand-short-name }
 pane-experimental-subtitle = Agissez avec précaution
 pane-experimental-search-results-header = Expériences de { -brand-short-name } : gardez l’œil ouvert
 pane-experimental-description = Modifier les préférences de configuration avancées peut affecter les performances et la sécurité de { -brand-short-name }.
+pane-experimental-description2 = Modifier les paramètres de configuration avancés peut affecter les performances et la sécurité de { -brand-short-name }.
 pane-experimental-reset =
     .label = Configuration par défaut
     .accesskey = d
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] Désolé, il n’y a aucun résultat dans les options pour « <span data-l10n-name="query"></span> ».
        *[other] Désolé, il n’y a aucun résultat dans les préférences pour « <span data-l10n-name="query"></span> ».
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Désolé, il n’y a aucun résultat dans les paramètres pour « <span data-l10n-name="query"></span> ».
 search-results-help-link = Besoin d’aide ? Consultez <a data-l10n-name="url">l’assistance de { -brand-short-name }</a>
 
 ## General Section
@@ -369,6 +387,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Ne jamais vérifier les mises à jour (déconseillé)
     .accesskey = N
+update-application-background-enabled =
+    .label = Quand { -brand-short-name } n'est pas lancé
+    .accesskey = Q
 update-application-warning-cross-user-setting = Ce paramètre s’appliquera à tous les comptes Windows et profils { -brand-short-name } utilisant cette installation de { -brand-short-name }.
 update-application-use-service =
     .label = Utiliser un service en arrière-plan pour installer les mises à jour
@@ -380,6 +401,15 @@ update-setting-write-failure-title = Erreur lors de l’enregistrement des préf
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
     { -brand-short-name } a rencontré une erreur et n’a pas enregistré cette modification. Notez que modifier cette préférence de mise à jour nécessite la permission d’écriture pour le fichier ci-dessous. Vous, ou un administrateur système, pouvez peut-être corriger l’erreur en accordant au groupe Users l’accès complet à ce fichier.
+    
+    Écriture impossible dans le fichier : { $path }
+update-setting-write-failure-title2 = Erreur lors de l’enregistrement des paramètres de mise à jour
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name } a rencontré une erreur et n’a pas enregistré cette modification. Notez que modifier ce paramètre de mise à jour nécessite la permission d’écriture pour le fichier ci-dessous. Vous, ou un administrateur système, pouvez peut-être corriger l’erreur en accordant au groupe Users l’accès complet à ce fichier.
     
     Écriture impossible dans le fichier : { $path }
 update-in-progress-title = Mise à jour en cours
@@ -579,6 +609,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Afficher les suggestions de recherche dans les fenêtres de navigation privée
 suggestions-addressbar-settings-generic = Modifier les préférences pour les suggestions de la barre d’adresse
+suggestions-addressbar-settings-generic2 = Modifier les paramètres pour les suggestions de la barre d’adresse
 search-suggestions-cant-show = Les suggestions de recherche ne seront pas affichées parmi les résultats de la barre d’adresse car vous avez configuré { -brand-short-name } de façon à ce qu’il ne conserve jamais l’historique.
 search-one-click-header = Moteurs de recherche accessibles en un clic
 search-one-click-header2 = Raccourcis de recherche
@@ -613,6 +644,8 @@ containers-back-button =
             [windows] Retour aux options
            *[other] Retour aux préférences
         }
+containers-back-button2 =
+    .aria-label = Retour aux paramètres
 containers-header = Onglets conteneurs
 containers-add-button =
     .label = Ajouter un nouveau conteneur
@@ -622,6 +655,8 @@ containers-new-tab-check =
     .accesskey = S
 containers-preferences-button =
     .label = Préférences
+containers-settings-button =
+    .label = Paramètres
 containers-remove-button =
     .label = Supprimer
 
@@ -633,6 +668,10 @@ sync-signedout-description = Synchronisez marque-pages, historique, onglets, mot
 sync-signedout-account-signin2 =
     .label = Se connecter à { -sync-brand-short-name }…
     .accesskey = S
+sync-signedout-description2 = Synchronisez marque-pages, historique, onglets, mots de passe, modules complémentaires et paramètres entre tous vos appareils.
+sync-signedout-account-signin3 =
+    .label = Se connecter pour synchroniser…
+    .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -672,6 +711,10 @@ prefs-sync-setup =
     .label = Configurer { -sync-brand-short-name }…
     .accesskey = C
 prefs-sync-offer-setup-label = Synchronisez marque-pages, historique, onglets, mots de passe, modules complémentaires et préférences entre tous vos appareils.
+prefs-sync-turn-on-syncing =
+    .label = Activer la synchronisation…
+    .accesskey = s
+prefs-sync-offer-setup-label2 = Synchronisez marque-pages, historique, onglets, mots de passe, modules complémentaires et paramètres entre tous vos appareils.
 prefs-sync-now =
     .labelnotsyncing = Synchroniser maintenant
     .accesskeynotsyncing = m
@@ -692,6 +735,7 @@ sync-currently-syncing-prefs =
         [windows] Options
        *[other] Préférences
     }
+sync-currently-syncing-settings = Paramètres
 sync-change-options =
     .label = Modifier…
     .accesskey = M
@@ -737,6 +781,10 @@ sync-engine-prefs =
             [windows] Options
            *[other] Préférences
         }
+    .tooltiptext = Les paramètres que vous avez modifiés dans les sections Général, Vie privée et Sécurité
+    .accesskey = s
+sync-engine-settings =
+    .label = Paramètres
     .tooltiptext = Les paramètres que vous avez modifiés dans les sections Général, Vie privée et Sécurité
     .accesskey = s
 
@@ -1153,6 +1201,11 @@ space-alert-under-5gb-ok-button =
     .label = OK
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } n’a plus assez d’espace disque. Le contenu des sites web pourrait ne pas s’afficher correctement. Cliquez sur « En savoir plus » pour optimiser l’utilisation de votre disque et ainsi améliorer votre navigation.
+space-alert-over-5gb-settings-button =
+    .label = Ouvrir les paramètres
+    .accesskey = O
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name } n’a plus assez d’espace disque.</strong> Le contenu des sites web pourrait ne pas s’afficher correctement. Vous pouvez effacer les données de sites enregistrées depuis Paramètres > Vie privée et sécurité > Cookies et données de sites.
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name } n’a plus assez d’espace disque.</strong> Le contenu des sites web pourrait ne pas s’afficher correctement. Cliquez sur « En savoir plus » pour optimiser l’utilisation de votre disque et ainsi améliorer votre navigation.
 
 ## Privacy Section - HTTPS-Only
 

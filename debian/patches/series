@@ -1,15 +1,12 @@
 fixes/Allow-.js-preference-files-to-set-locked-prefs-with-.patch
 fixes/Bug-1526653-Include-struct-definitions-for-user_vfp-.patch
-fixes/Bug-1685662-MIPS-Implement-some-changes.-r-jandem.patch
 fixes/Bug-1685662-MIPS64-Fix-register-conflict-in-ma_addPt.patch
-fixes/Bug-1700520-Use-PREFER_INLINE-on-large-SWGL-function.patch
 porting/Add-xptcall-support-for-SH4-processors.patch
 porting/NSS-Fix-FTBFS-on-Hurd-because-of-MAXPATHLEN.patch
 porting/Work-around-Debian-bug-844357.patch
 porting/Use-NEON_FLAGS-instead-of-VPX_ASFLAGS-for-libaom-neo.patch
 porting/Work-around-GCC-ICE-on-mips-i386-and-s390x.patch
 porting/Work-around-another-GCC-ICE-on-arm.patch
-prefs/Set-javascript.options.showInConsole.patch
 prefs/Set-DPI-to-system-settings.patch
 prefs/Don-t-auto-disable-extensions-in-system-directories.patch
 debian-hacks/Avoid-wrong-sessionstore-data-to-keep-windows-out-of.patch

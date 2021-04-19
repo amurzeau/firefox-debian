@@ -28,6 +28,18 @@ search-input-box =
             [windows] 설정에서 찾기
            *[other] 설정에서 찾기
         }
+settings-page-title = 설정
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = 설정에서 찾기
 managed-notice = 조직에서 브라우저를 관리하고 있습니다.
 category-list =
     .aria-label = 카테고리
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Sync
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = { -brand-short-name } 실험
 category-experimental =
     .tooltiptext = { -brand-short-name } 실험
 pane-experimental-subtitle = 주의해서 진행하세요
 pane-experimental-search-results-header = { -brand-short-name } 실험: 주의해서 진행하세요
 pane-experimental-description = 고급 구성 설정을 변경하면 { -brand-short-name }의 성능 또는 보안에 영향을 줄 수 있습니다.
+pane-experimental-description2 = 고급 구성 설정을 변경하면 { -brand-short-name }의 성능 또는 보안에 영향을 줄 수 있습니다.
 pane-experimental-reset =
     .label = 기본값으로 복원
     .accesskey = R
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] 죄송합니다! “<span data-l10n-name="query"></span>”옵션에 대한 결과가 없습니다.
        *[other] 죄송합니다! “<span data-l10n-name="query"></span>”설정에 대한 결과가 없습니다.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = 죄송합니다! 설정에서 “<span data-l10n-name="query"></span>”에 대한 결과가 없습니다.
 search-results-help-link = 도움이 필요하세요? <a data-l10n-name="url">{ -brand-short-name } 지원</a>에 방문하세요.
 
 ## General Section
@@ -238,7 +256,7 @@ check-user-spelling =
 
 ## General Section - Files and Applications
 
-files-and-applications-title = 파일 및 응용 프로그램
+files-and-applications-title = 파일 및 애플리케이션
 download-header = 다운로드
 download-save-to =
     .label = 저장 위치
@@ -257,10 +275,10 @@ download-choose-folder =
 download-always-ask-where =
     .label = 파일을 저장할 위치를 항상 묻기
     .accesskey = A
-applications-header = 응용 프로그램
-applications-description = { -brand-short-name }가 웹에서 다운로드한 파일이나 탐색하는 동안에 사용하는 응용 프로그램을 처리하는 방법을 선택하세요.
+applications-header = 애플리케이션
+applications-description = { -brand-short-name }가 웹에서 다운로드한 파일이나 탐색하는 동안에 사용하는 애플리케이션을 처리하는 방법을 선택하세요.
 applications-filter =
-    .placeholder = 파일 형식 또는 응용 프로그램 검색
+    .placeholder = 파일 형식 또는 애플리케이션 검색
 applications-type-column =
     .label = 콘텐츠 유형
     .accesskey = T
@@ -283,15 +301,15 @@ applications-use-app-default =
 applications-use-os-default =
     .label =
         { PLATFORM() ->
-            [macos] macOS 기본 응용 프로그램 사용
-            [windows] Windows 기본 응용 프로그램 사용
-           *[other] 시스템 기본 응용 프로그램 사용
+            [macos] macOS 기본 애플리케이션 사용
+            [windows] Windows 기본 애플리케이션 사용
+           *[other] 시스템 기본 애플리케이션 사용
         }
 applications-use-other =
-    .label = 다른 프로그램 사용…
-applications-select-helper = 도우미 응용 프로그램 선택
+    .label = 다른 애플리케이션 사용…
+applications-select-helper = 도우미 애플리케이션 선택
 applications-manage-app =
-    .label = 응용 프로그램 세부사항…
+    .label = 애플리케이션 세부사항…
 applications-always-ask =
     .label = 항상 물어 보기
 applications-type-pdf = Portable Document Format (PDF)
@@ -357,6 +375,9 @@ update-application-check-choose =
 update-application-manual =
     .label = 업데이트 확인 안 함 (권장하지 않음)
     .accesskey = N
+update-application-background-enabled =
+    .label = { -brand-short-name }가 실행 중이 아닐 때
+    .accesskey = W
 update-application-warning-cross-user-setting = 이 설정은 이 { -brand-short-name } 설치를 사용하는 모든 Windows 계정 및 { -brand-short-name } 프로필에 적용됩니다.
 update-application-use-service =
     .label = 업데이트 설치 시 백그라운드 작업으로 하기
@@ -367,7 +388,16 @@ update-setting-write-failure-title = 업데이트 설정 저장 중 오류 발�
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
-    오류가 발생하여 { -brand-short-name }가 이 변경 내용을 저장하지 않았습니다. 이 업데이트 환경 설정을 하려면 아래 파일에 쓰기 권한이 필요합니다. 사용자나 시스템 관리자가 사용자 그룹에 이 파일에 대한 모든 권한을 부여하여 오류를 해결할 수 있습니다.
+    오류가 발생하여 { -brand-short-name }가 이 변경 내용을 저장하지 않았습니다. 이 업데이트 설정을 하려면 아래 파일에 쓰기 권한이 필요합니다. 사용자나 시스템 관리자가 사용자 그룹에 이 파일에 대한 모든 권한을 부여하여 오류를 해결할 수 있습니다.
+    
+    파일에 쓸 수 없음: { $path }
+update-setting-write-failure-title2 = 업데이트 설정 저장 중 오류 발생
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    오류가 발생하여 { -brand-short-name }가 이 변경 내용을 저장하지 않았습니다. 이 업데이트 설정을 변경하려면 아래 파일에 쓰기 권한이 필요합니다. 사용자나 시스템 관리자가 사용자 그룹에 이 파일에 대한 모든 권한을 부여하여 오류를 해결할 수 있습니다.
     
     파일에 쓸 수 없음: { $path }
 update-in-progress-title = 업데이트 진행 중
@@ -563,6 +593,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = 사생활 보호 창에 검색 제안 표시
 suggestions-addressbar-settings-generic = 다른 주소 표시줄 제안에 대한 설정 변경
+suggestions-addressbar-settings-generic2 = 다른 주소 표시줄 제안에 대한 설정 변경
 search-suggestions-cant-show = 방문 기록을 저장하지 않도록 { -brand-short-name }를 설정했기 때문에 검색 제안이 주소 표시 줄 결과에 표시되지 않습니다.
 search-one-click-header = 원클릭 검색 엔진
 search-one-click-header2 = 검색 바로 가기
@@ -597,6 +628,8 @@ containers-back-button =
             [windows] 설정으로 돌아가기
            *[other] 설정으로 돌아가기
         }
+containers-back-button2 =
+    .aria-label = 설정으로 돌아가기
 containers-header = 컨테이너 탭
 containers-add-button =
     .label = 새 컨테이너 추가
@@ -605,6 +638,8 @@ containers-new-tab-check =
     .label = 새 탭마다 컨테이너 선택
     .accesskey = S
 containers-preferences-button =
+    .label = 설정
+containers-settings-button =
     .label = 설정
 containers-remove-button =
     .label = 삭제
@@ -616,6 +651,10 @@ sync-signedout-caption = 웹과 함께 하세요.
 sync-signedout-description = 북마크, 기록, 탭, 비밀번호, 부가 기능, 설정을 모든 기기에 걸쳐 동기화하세요.
 sync-signedout-account-signin2 =
     .label = { -sync-brand-short-name }에 로그인…
+    .accesskey = i
+sync-signedout-description2 = 북마크, 기록, 탭, 비밀번호, 부가 기능, 설정을 모든 기기에 걸쳐 동기화하세요.
+sync-signedout-account-signin3 =
+    .label = Sync에 로그인…
     .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -656,6 +695,10 @@ prefs-sync-setup =
     .label = { -sync-brand-short-name } 설정…
     .accesskey = S
 prefs-sync-offer-setup-label = 북마크, 기록, 탭, 비밀번호, 부가 기능 및 설정을 모든 기기에 걸쳐 동기화하세요.
+prefs-sync-turn-on-syncing =
+    .label = 동기화 켜기…
+    .accesskey = s
+prefs-sync-offer-setup-label2 = 북마크, 기록, 탭, 비밀번호, 부가 기능, 설정을 모든 기기에 걸쳐 동기화하세요.
 prefs-sync-now =
     .labelnotsyncing = 지금 동기화
     .accesskeynotsyncing = N
@@ -676,6 +719,7 @@ sync-currently-syncing-prefs =
         [windows] 설정
        *[other] 설정
     }
+sync-currently-syncing-settings = 설정
 sync-change-options =
     .label = 변경…
     .accesskey = C
@@ -723,6 +767,10 @@ sync-engine-prefs =
         }
     .tooltiptext = 사용자가 변경한 일반, 개인 정보 및 보안 설정
     .accesskey = S
+sync-engine-settings =
+    .label = 설정
+    .tooltiptext = 변경한 일반, 개인 정보 및 보안 설정
+    .accesskey = s
 
 ## The device name controls.
 
@@ -1137,6 +1185,11 @@ space-alert-under-5gb-ok-button =
     .label = 확인
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } 디스크 용량이 부족합니다. 웹 사이트 내용이 제대로 표시되지 않을 수 있습니다. 더 나은 인터넷 경험을 위해 디스크 용량을 최적화하는 방법을 알아보려면 “더 알아보기”를 방문하세요.
+space-alert-over-5gb-settings-button =
+    .label = 설정 열기
+    .accesskey = O
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name } 디스크 용량이 부족합니다.</strong> 웹 사이트 내용이 제대로 표시되지 않을 수 있습니다. 설정 > 개인 정보 및 보안 > 쿠키 및 사이트 데이터에서 저장된 데이터를 지울 수 있습니다.
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name } 디스크 용량이 부족합니다.</strong> 웹 사이트 내용이 제대로 표시되지 않을 수 있습니다. 더 나은 인터넷 경험을 위해 디스크 용량을 최적화하는 방법을 알아보려면 “더 알아보기”를 방문하세요.
 
 ## Privacy Section - HTTPS-Only
 

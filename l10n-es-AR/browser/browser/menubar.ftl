@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = Preferencias
 menu-application-services =
     .label = Servicios
 menu-application-hide-this =
@@ -112,8 +114,8 @@ menu-edit-find-on =
     .label = Buscar en esta página…
     .accesskey = B
 menu-edit-find-in-page =
-    .label = Encontrar en la página…
-    .accesskey = F
+    .label = Buscar en la página…
+    .accesskey = B
 menu-edit-find-again =
     .label = Buscar de nuevo
     .accesskey = n
@@ -134,7 +136,7 @@ menu-view-customize-toolbar =
     .accesskey = P
 menu-view-customize-toolbar2 =
     .label = Personalizar barra de herramientas…
-    .accesskey = C
+    .accesskey = z
 menu-view-sidebar =
     .label = Barra lateral
     .accesskey = e
@@ -252,14 +254,17 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Ingresar a { -brand-product-name }…
     .accesskey = g
-menu-tools-extensions =
+menu-tools-addons-and-themes =
     .label = Complementos y temas
-    .accesskey = E
+    .accesskey = A
 menu-tools-fxa-sign-in2 =
     .label = Iniciar sesión
-    .accesskey = g
+    .accesskey = I
 menu-tools-turn-on-sync =
     .label = Habilitar { -sync-brand-short-name }...
+    .accesskey = n
+menu-tools-turn-on-sync2 =
+    .label = Habilitar Sync…
     .accesskey = n
 menu-tools-sync-now =
     .label = Sincronizar ahora
@@ -270,12 +275,25 @@ menu-tools-fxa-re-auth =
 menu-tools-web-developer =
     .label = Desarrollador web
     .accesskey = w
+menu-tools-browser-tools =
+    .label = Herramientas del navegador
+    .accesskey = H
+menu-tools-task-manager =
+    .label = Administrador de tareas
+    .accesskey = M
 menu-tools-page-source =
     .label = Código fuente
     .accesskey = o
 menu-tools-page-info =
     .label = Información de la página
     .accesskey = I
+menu-settings =
+    .label = Configuración
+    .accesskey =
+        { PLATFORM() ->
+            [windows] S
+           *[other] n
+        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -287,16 +305,9 @@ menu-preferences =
             [windows] O
            *[other] n
         }
-menu-settings =
-    .label = Configuración
-    .accesskey =
-        { PLATFORM() ->
-            [windows] S
-           *[other] n
-        }
 menu-tools-layout-debugger =
     .label = Depurador de diseño
-    .accesskey = L
+    .accesskey = u
 
 ## Window Menu
 
@@ -306,15 +317,6 @@ menu-window-bring-all-to-front =
     .label = Traer todo al frente
 
 ## Help Menu
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
 
 
 # NOTE: For Engineers, any additions or changes to Help menu strings should
@@ -336,21 +338,21 @@ menu-help-show-tour =
     .accesskey = o
 menu-help-import-from-another-browser =
     .label = Importar desde otro navegador…
-    .accesskey = l
+    .accesskey = I
 menu-help-keyboard-shortcuts =
     .label = Atajos de teclado
     .accesskey = t
 menu-get-help =
     .label = Obtener ayuda
-    .accesskey = H
+    .accesskey = y
 menu-help-troubleshooting-info =
     .label = Información para resolver problemas
     .accesskey = p
-menu-help-more-troubleshooting-info =
-    .label = Más información para resolución de problemas
-    .accesskey = T
 menu-help-taskmanager =
     .label = Administrador de tareas
+menu-help-more-troubleshooting-info =
+    .label = Más información para resolución de problemas
+    .accesskey = r
 menu-help-report-site-issue =
     .label = Informar problema con el sitio…
 menu-help-feedback-page =
@@ -362,8 +364,8 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Reiniciar con los complementos habilitados
     .accesskey = R
-menu-help-enter-troubleshoot-mode =
-    .label = Modo de resolución de problemas
+menu-help-enter-troubleshoot-mode2 =
+    .label = Modo de resolución de problemas…
     .accesskey = M
 menu-help-exit-troubleshoot-mode =
     .label = Desactivar el modo de resolución de problemas
@@ -376,6 +378,3 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Este sitio no es engañoso…
     .accesskey = e
-menu-help-check-for-update =
-    .label = Verificar si hay actualizaciones...
-    .accesskey = C

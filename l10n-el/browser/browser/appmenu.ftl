@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = Λήψη της ενημέρωσης του { -brand-shorter-name }
+appmenuitem-update-banner2 =
+    .label-update-downloading = Λήψη ενημέρωσης του { -brand-shorter-name }
+    .label-update-available = Διαθέσιμη ενημέρωση — λήψη τώρα
+    .label-update-manual = Διαθέσιμη ενημέρωση — λήψη τώρα
+    .label-update-unsupported = Αδυναμία ενημέρωσης
+    .label-update-restart = Διαθέσιμη ενημέρωση — επανεκκίνηση τώρα
 appmenuitem-protection-dashboard-title = Πίνακας προστασίας
 appmenuitem-customize-mode =
     .label = Προσαρμογή…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = Κωδικοί πρόσβασης
 appmenuitem-extensions-and-themes =
     .label = Επεκτάσεις και θέματα
+appmenuitem-addons-and-themes =
+    .label = Πρόσθετα και θέματα
 appmenuitem-find-in-page =
     .label = Εύρεση στη σελίδα…
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Κλείσιμο μενού εφαρμογής
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Έξοδος
+           *[other] Έξοδος
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Άνοιγμα μενού εφαρμογής
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Κλείσιμο μενού εφαρμογής
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Συγχρονισμός τώρα
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Συγχρονισμός τώρα
-    .value = Συγχρονισμός τώρα
+appmenu-remote-tabs-sign-into-sync =
+    .label = Σύνδεση στο Sync…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Ενεργοποίηση Sync…
+appmenuitem-fxa-toolbar-sync-now2 = Συγχρονισμός τώρα
 appmenuitem-fxa-manage-account = Διαχείριση λογαριασμού
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = Τελευταίος συγχρονισμός: { $time }
     .label = Τελευταίος συγχρονισμός: { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Συγχρονισμός και αποθήκευση δεδομένων
+appmenu-fxa-sync-and-save-data2 = Συγχρονισμός και αποθήκευση δεδομένων
 appmenu-fxa-signed-in-label = Σύνδεση
 appmenu-fxa-setup-sync =
     .label = Ενεργοποίηση συγχρονισμού…
@@ -135,29 +159,17 @@ appmenu-help-header =
 appmenu-about =
     .label = Σχετικά με το { -brand-shorter-name }
     .accesskey = τ
-appmenu-help-product =
-    .label = Βοήθεια για το { -brand-shorter-name }
-    .accesskey = Β
-appmenu-help-show-tour =
-    .label = Ξενάγηση στο { -brand-shorter-name }
-    .accesskey = Ξ
-appmenu-help-import-from-another-browser =
-    .label = Εισαγωγή από άλλο φυλλομετρητή…
-    .accesskey = Ε
-appmenu-help-keyboard-shortcuts =
-    .label = Συντομεύσεις πληκτρολογίου
-    .accesskey = υ
 appmenu-get-help =
     .label = Λήψη βοήθειας
     .accesskey = β
 appmenu-help-troubleshooting-info =
     .label = Πληροφορίες επίλυσης προβλημάτων
     .accesskey = Π
-appmenu-help-more-troubleshooting-info =
-    .label = Περισσότερες πληροφορίες επίλυσης προβλημάτων
-    .accesskey = Π
 appmenu-help-taskmanager =
     .label = Διαχείριση εργασιών
+appmenu-help-more-troubleshooting-info =
+    .label = Πληροφορίες επίλυσης προβλημάτων
+    .accesskey = Π
 appmenu-help-report-site-issue =
     .label = Αναφορά ζητήματος ιστοσελίδας…
 appmenu-help-feedback-page =
@@ -177,8 +189,8 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Λειτουργία επίλυσης προβλημάτων
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Λειτουργία επίλυσης προβλημάτων…
     .accesskey = Λ
 appmenu-help-exit-troubleshoot-mode =
     .label = Απενεργοποίηση λειτουργίας επίλυσης προβλημάτων
@@ -194,13 +206,10 @@ appmenu-help-not-deceptive =
     .label = Αυτή δεν είναι παραπλανητική ιστοσελίδα…
     .accesskey = δ
 
-##
-
-appmenu-help-check-for-update =
-    .label = Έλεγχος για ενημερώσεις…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Προσαρμογή γραμμής εργαλειών…
+appmenu-taskmanager =
+    .label = Διαχείριση εργασιών
 appmenu-developer-tools-subheader = Εργαλεία προγράμματος περιήγησης

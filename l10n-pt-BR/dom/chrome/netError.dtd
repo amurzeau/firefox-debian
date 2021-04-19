@@ -42,7 +42,7 @@
 
 <!ENTITY unsafeContentType.title "Tipo de arquivo não seguro">
 <!ENTITY unsafeContentType.longDesc "<ul> 
-<li>Por favor, contate os responsáveis pelo site para informá-los deste problema.</li> 
+<li>Entre em contato com os responsáveis pelo site para informar o problema.</li> 
 </ul>">
 
 <!ENTITY netReset.title "Conexão interrompida">
@@ -77,7 +77,7 @@
 
 <!ENTITY securityOverride.linkText "Ou pode adicionar uma exceção…">
 <!ENTITY securityOverride.warningContent "<p>Você não deve adicionar uma exceção se estiver usando uma conexão com a internet que não confie totalmente ou se não costumava ver um alerta para este servidor.</p> 
-<p>Caso ainda deseje adicionar uma exceção para este site, pode fazê-lo nas configurações avançadas de criptografia.</p>">
+<p>Caso ainda queira adicionar uma exceção para este site, pode fazer isso nas configurações avançadas de criptografia.</p>">
 
 <!ENTITY cspBlocked.title "Bloqueado pela política de segurança de conteúdo">
 <!ENTITY cspBlocked.longDesc "<p>O navegador impediu esta página de carregar desta forma porque a política de segurança de conteúdo da página não permite.</p>">
@@ -89,7 +89,7 @@
 <!ENTITY corruptedContentErrorv2.longDesc "<p>The page you are trying to view cannot be shown because an error in the data transmission was detected.</p><ul><li>Please contact the website owners to inform them of this problem.</li></ul>">
 
 <!ENTITY remoteXUL.title "XUL remoto">
-<!ENTITY remoteXUL.longDesc "<p><ul><li>Por favor, contate os responsáveis pelo site para informá-los deste problema.</li></ul></p>">
+<!ENTITY remoteXUL.longDesc "<p><ul><li>Entre em contato com os responsáveis pelo site para informar o problema.</li></ul></p>">
 
 <!ENTITY inadequateSecurityError.title "Sua conexão não é segura">
 <!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate

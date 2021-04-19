@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = Nuostatos
 menu-application-services =
     .label = Paslaugos
 menu-application-hide-this =
@@ -252,7 +254,7 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Prisijungti prie „{ -brand-product-name }“…
     .accesskey = g
-menu-tools-extensions =
+menu-tools-addons-and-themes =
     .label = Priedai ir grafiniai apvalkalai
     .accesskey = P
 menu-tools-fxa-sign-in2 =
@@ -260,6 +262,9 @@ menu-tools-fxa-sign-in2 =
     .accesskey = g
 menu-tools-turn-on-sync =
     .label = Įjungti „{ -sync-brand-short-name }“…
+    .accesskey = n
+menu-tools-turn-on-sync2 =
+    .label = Įjungti sinchronizavimą…
     .accesskey = n
 menu-tools-sync-now =
     .label = Sinchronizuoti dabar
@@ -270,25 +275,31 @@ menu-tools-fxa-re-auth =
 menu-tools-web-developer =
     .label = Saityno kūrėjams
     .accesskey = k
+menu-tools-browser-tools =
+    .label = Naršyklės priemonės
+    .accesskey = N
+menu-tools-task-manager =
+    .label = Užduočių tvarkytuvė
+    .accesskey = t
 menu-tools-page-source =
     .label = Pirminis tekstas
     .accesskey = e
 menu-tools-page-info =
     .label = Informacija apie tinklalapį
     .accesskey = I
+menu-settings =
+    .label = Nuostatos
+    .accesskey =
+        { PLATFORM() ->
+            [windows] N
+           *[other] N
+        }
 menu-preferences =
     .label =
         { PLATFORM() ->
             [windows] Nuostatos
            *[other] Nuostatos
         }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] N
-           *[other] N
-        }
-menu-settings =
-    .label = Nuostatos
     .accesskey =
         { PLATFORM() ->
             [windows] N
@@ -306,15 +317,6 @@ menu-window-bring-all-to-front =
     .label = Viską į priekinį planą
 
 ## Help Menu
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
 
 
 # NOTE: For Engineers, any additions or changes to Help menu strings should
@@ -346,11 +348,11 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Informacija problemų sprendimui
     .accesskey = r
+menu-help-taskmanager =
+    .label = Užduočių tvarkytuvė
 menu-help-more-troubleshooting-info =
     .label = Daugiau informacijos problemų sprendimui
     .accesskey = p
-menu-help-taskmanager =
-    .label = Užduočių tvarkytuvė
 menu-help-report-site-issue =
     .label = Pranešti apie svetainės problemą…
 menu-help-feedback-page =
@@ -362,9 +364,9 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Perleisti programą su išjungtais priedais
     .accesskey = r
-menu-help-enter-troubleshoot-mode =
-    .label = Problemų sprendimo veiksena
-    .accesskey = m
+menu-help-enter-troubleshoot-mode2 =
+    .label = Trikčių šalinimo veiksena…
+    .accesskey = v
 menu-help-exit-troubleshoot-mode =
     .label = Išjungti problemų sprendimo veikseną
     .accesskey = m
@@ -376,6 +378,3 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Tai nėra apgaulinga svetainė…
     .accesskey = g
-menu-help-check-for-update =
-    .label = Ieškoti naujinimų…
-    .accesskey = I

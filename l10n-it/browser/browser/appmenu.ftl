@@ -7,6 +7,18 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = Download aggiornamento di { -brand-shorter-name } in corso
+appmenuitem-update-banner2 =
+    .label-update-downloading = Download aggiornamento di { -brand-shorter-name } in corso
+    .label-update-available = Aggiornamento disponibile — scarica adesso
+    .label-update-manual = Aggiornamento disponibile — scarica adesso
+    .label-update-unsupported = Aggiornamento non riuscito
+    .label-update-restart = Aggiornamento disponibile — riavvia adesso
+appmenuitem-update-banner3 =
+    .label-update-downloading = Download aggiornamento di { -brand-shorter-name } in corso
+    .label-update-available = Aggiornamento disponibile — scarica adesso
+    .label-update-manual = Aggiornamento disponibile — scarica adesso
+    .label-update-unsupported = Aggiornamento non riuscito - sistema non compatibile
+    .label-update-restart = Aggiornamento disponibile — riavvia adesso
 appmenuitem-protection-dashboard-title = Pannello protezioni
 appmenuitem-customize-mode =
     .label = Personalizza…
@@ -21,6 +33,8 @@ appmenuitem-passwords =
     .label = Password
 appmenuitem-extensions-and-themes =
     .label = Estensioni e temi
+appmenuitem-addons-and-themes =
+    .label = Componenti aggiuntivi e temi
 appmenuitem-find-in-page =
     .label = Trova nella pagina…
 appmenuitem-more-tools =
@@ -33,6 +47,14 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Chiudi menu applicazione
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label = Esci
+appmenu-menu-button-closed2 =
+    .tooltiptext = Apri menu applicazione
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Chiudi menu applicazione
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,10 +73,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Sincronizza adesso
+appmenu-remote-tabs-sign-into-sync =
+    .label = Accedi per sincronizzare…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Attiva sincronizzazione…
 appmenuitem-fxa-toolbar-sync-now2 = Sincronizza adesso
 appmenuitem-fxa-manage-account = Gestisci account
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -62,6 +89,7 @@ appmenu-fxa-last-sync = Ultima sincronizzazione: { $time }
     .label = Ultima sincronizzazione: { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Sincronizza e salva i dati
+appmenu-fxa-sync-and-save-data2 = Sincronizza e salva i dati
 appmenu-fxa-signed-in-label = Accedi
 appmenu-fxa-setup-sync =
     .label = Attiva sincronizzazione…
@@ -133,29 +161,17 @@ appmenu-help-header =
 appmenu-about =
     .label = Informazioni su { -brand-shorter-name }
     .accesskey = I
-appmenu-help-product =
-    .label = Guida di { -brand-shorter-name }
-    .accesskey = G
-appmenu-help-show-tour =
-    .label = Panoramica di { -brand-shorter-name }
-    .accesskey = o
-appmenu-help-import-from-another-browser =
-    .label = Importa da un altro browser…
-    .accesskey = b
-appmenu-help-keyboard-shortcuts =
-    .label = Scorciatoie da tastiera
-    .accesskey = S
 appmenu-get-help =
     .label = Ottieni assistenza
     .accesskey = O
 appmenu-help-troubleshooting-info =
     .label = Risoluzione dei problemi
     .accesskey = R
-appmenu-help-more-troubleshooting-info =
-    .label = Altre informazioni per la risoluzione di problemi
-    .accesskey = r
 appmenu-help-taskmanager =
     .label = Gestione attività
+appmenu-help-more-troubleshooting-info =
+    .label = Altre info per la risoluzione di problemi
+    .accesskey = r
 appmenu-help-report-site-issue =
     .label = Segnala problema con questo sito…
 appmenu-help-feedback-page =
@@ -175,8 +191,8 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Modalità risoluzione problemi
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Modalità risoluzione problemi…
     .accesskey = M
 appmenu-help-exit-troubleshoot-mode =
     .label = Disattiva Modalità risoluzione problemi
@@ -192,13 +208,10 @@ appmenu-help-not-deceptive =
     .label = Non è un sito ingannevole…
     .accesskey = e
 
-##
-
-appmenu-help-check-for-update =
-    .label = Controlla aggiornamenti…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Personalizza barra degli strumenti…
+appmenu-taskmanager =
+    .label = Gestione attività
 appmenu-developer-tools-subheader = Strumenti del browser

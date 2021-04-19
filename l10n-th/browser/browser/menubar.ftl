@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = ค่ากำหนด
 menu-application-services =
     .label = บริการ
 menu-application-hide-this =
@@ -111,6 +113,9 @@ menu-edit =
 menu-edit-find-on =
     .label = ค้นหาในหน้านี้…
     .accesskey = ค
+menu-edit-find-in-page =
+    .label = ค้นหาในหน้า…
+    .accesskey = ค
 menu-edit-find-again =
     .label = ค้นหาอีกครั้ง
     .accesskey = น
@@ -128,6 +133,9 @@ menu-view-toolbars-menu =
     .accesskey = ถ
 menu-view-customize-toolbar =
     .label = ปรับแต่ง…
+    .accesskey = ป
+menu-view-customize-toolbar2 =
+    .label = ปรับแต่งแถบเครื่องมือ…
     .accesskey = ป
 menu-view-sidebar =
     .label = แถบข้าง
@@ -219,6 +227,8 @@ menu-bookmarks-show-all =
     .label = แสดงที่คั่นหน้าทั้งหมด
 menu-bookmark-this-page =
     .label = เพิ่มที่คั่นหน้าสำหรับหน้านี้
+menu-bookmark-current-tab =
+    .label = เพิ่มที่คั่นหน้าแท็บปัจจุบัน
 menu-bookmark-edit =
     .label = แก้ไขที่คั่นหน้านี้
 menu-bookmarks-all-tabs =
@@ -244,9 +254,18 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = ลงชื่อเข้า { -brand-product-name }…
     .accesskey = g
+menu-tools-addons-and-themes =
+    .label = ส่วนเสริมและชุดตกแต่ง
+    .accesskey = ส
+menu-tools-fxa-sign-in2 =
+    .label = ลงชื่อเข้า
+    .accesskey = ล
 menu-tools-turn-on-sync =
     .label = เปิด { -sync-brand-short-name }…
     .accesskey = n
+menu-tools-turn-on-sync2 =
+    .label = เปิด Sync…
+    .accesskey = เ
 menu-tools-sync-now =
     .label = ซิงค์ตอนนี้
     .accesskey = ง
@@ -256,12 +275,25 @@ menu-tools-fxa-re-auth =
 menu-tools-web-developer =
     .label = นักพัฒนาเว็บ
     .accesskey = พ
+menu-tools-browser-tools =
+    .label = เครื่องมือสำหรับเบราว์เซอร์
+    .accesskey = บ
+menu-tools-task-manager =
+    .label = ตัวจัดการงาน
+    .accesskey = ต
 menu-tools-page-source =
     .label = ต้นฉบับหน้า
     .accesskey = ต
 menu-tools-page-info =
     .label = ข้อมูลหน้า
     .accesskey = ข
+menu-settings =
+    .label = การตั้งค่า
+    .accesskey =
+        { PLATFORM() ->
+            [windows] ก
+           *[other] า
+        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -285,15 +317,6 @@ menu-window-bring-all-to-front =
     .label = นำทั้งหมดมาข้างหน้า
 
 ## Help Menu
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
 
 
 # NOTE: For Engineers, any additions or changes to Help menu strings should
@@ -327,6 +350,9 @@ menu-help-troubleshooting-info =
     .accesskey = ป
 menu-help-taskmanager =
     .label = ตัวจัดการงาน
+menu-help-more-troubleshooting-info =
+    .label = ข้อมูลการแก้ไขปัญหาเพิ่มเติม
+    .accesskey = ข
 menu-help-report-site-issue =
     .label = รายงานปัญหาไซต์…
 menu-help-feedback-page =
@@ -338,6 +364,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = เริ่มการทำงานใหม่พร้อมเปิดใช้งานส่วนเสริม
     .accesskey = ร
+menu-help-enter-troubleshoot-mode2 =
+    .label = โหมดแก้ไขปัญหา…
+    .accesskey = ห
+menu-help-exit-troubleshoot-mode =
+    .label = ปิดโหมดแก้ไขปัญหา
+    .accesskey = ด
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =
@@ -346,6 +378,3 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = นี่ไม่ใช่ไซต์หลอกลวง…
     .accesskey = ห
-menu-help-check-for-update =
-    .label = ตรวจสอบการอัปเดต…
-    .accesskey = C

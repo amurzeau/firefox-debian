@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Gå tilbake en side ({ $shortcut })
     .aria-label = Tilbake
     .accesskey = b
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Tilbake
+    .accesskey = b
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Gå frem en side ({ $shortcut })
     .aria-label = Frem
     .accesskey = F
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Frem
+    .accesskey = F
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Oppdater
     .accesskey = r
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Oppdater
+    .accesskey = r
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Stopp
     .accesskey = S
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Stopp
+    .accesskey = S
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Bokmerk denne siden
     .accesskey = m
     .tooltiptext = Bokmerk denne siden
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Bokmerk side
+    .accesskey = m
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Rediger bokmerke
+    .accesskey = m
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Åpne lenke i ny innholdsfane
     .accesskey = a
-main-context-menu-open-link-container =
-    .label = Åpne lenke i ny beholder
-    .accesskey = p
 main-context-menu-open-link-new-window =
     .label = Åpne lenke i nytt vindu
     .accesskey = Å
@@ -193,6 +224,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Latterlig høy (2×)
     .accesskey = L
+main-context-menu-media-play-speed-2 =
+    .label = Hastighet
+    .accesskey = H
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Repeter
     .accesskey = R
@@ -220,6 +264,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Bilde-i-bilde
     .accesskey = d
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Se på i bilde-i-bilde
+    .accesskey = S
 main-context-menu-image-reload =
     .label = Oppdater bilde
     .accesskey = l
@@ -229,6 +278,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = Vis video
     .accesskey = V
+main-context-menu-image-view-new-tab =
+    .label = Åpne bilde i ny fane
+    .accesskey = p
+main-context-menu-video-view-new-tab =
+    .label = Åpne video i ny fane
+    .accesskey = p
 main-context-menu-image-copy =
     .label = Kopier bilde
     .accesskey = l
@@ -277,6 +332,9 @@ main-context-menu-audio-save-as =
 main-context-menu-video-image-save-as =
     .label = Lagre øyeblikksbilde som …
     .accesskey = L
+main-context-menu-video-take-snapshot =
+    .label = Ta et øyeblikksbilde …
+    .accesskey = T
 main-context-menu-video-email =
     .label = Send video …
     .accesskey = n
@@ -321,6 +379,9 @@ main-context-menu-suggest-strong-password =
 main-context-menu-manage-logins =
     .label = Behandle innlogginger…
     .accesskey = B
+main-context-menu-manage-logins2 =
+    .label = Behandle innlogginger…
+    .accesskey = B
 main-context-menu-keyword =
     .label = Lag nøkkelord for dette søket …
     .accesskey = n
@@ -363,6 +424,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Vis kildekode for valgt tekst
     .accesskey = k
+main-context-menu-take-screenshot =
+    .label = Ta skjermbilde
+    .accesskey = T
 main-context-menu-view-page-source =
     .label = Vis kildekode
     .accesskey = k

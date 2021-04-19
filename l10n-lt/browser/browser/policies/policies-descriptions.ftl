@@ -11,10 +11,11 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Nustatykite strategijas, kurias „WebExtensions“ galės pasiekti per „chrome.storage.managed“.
+policy-AllowedDomainsForApps = Nurodyti domenus, kuriems leidžiama pasiekti „Google Workspace“.
 policy-AppAutoUpdate = Įjungti arba išjungti automatinius programos naujinimus.
 policy-AppUpdateURL = Nustatyti pasirinktinį programos naujinimų URL.
 policy-Authentication = Keisti integruotą autentikaciją ją palaikančioms svetainėms.
-policy-BackgroundAppUpdate = Įjungti arba išjungti foninę atnaujinimų tarnybą, kuri atnaujina naršyklę kai ji nėra paleista.
+policy-BackgroundAppUpdate2 = Įjungti arba išjungti foninio naujinimo tarnybą.
 policy-BlockAboutAddons = Blokuoti prieigą prie priedų valdymo (about:addons).
 policy-BlockAboutConfig = Blokuoti prieigą prie about:config puslapio.
 policy-BlockAboutProfiles = Blokuoti prieigą prie about:profiles puslapio.
@@ -107,6 +108,7 @@ policy-SearchEngines = Konfigūruoti ieškyklių nuostatas. Ši strategija galim
 policy-SearchSuggestEnabled = Įjungti arba išjungti paieškos žodžių siūlymus.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Diegti PKCS #11 modulius.
+policy-ShowHomeButton = Rodyti pradžios mygtuką priemonių juostoje.
 policy-SSLVersionMax = Nustatyti didžiausią SSL versiją.
 policy-SSLVersionMin = Nustatyti mažiausią SSL versiją.
 policy-SupportMenu = Pridėti specialų pagalbos meniu elementą į žinyno meniu.

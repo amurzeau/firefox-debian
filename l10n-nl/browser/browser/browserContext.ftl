@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Een pagina terug gaan ({ $shortcut })
     .aria-label = Terug
     .accesskey = T
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Terug
+    .accesskey = T
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Een pagina vooruit gaan ({ $shortcut })
     .aria-label = Vooruit
     .accesskey = V
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Vooruit
+    .accesskey = V
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Vernieuwen
     .accesskey = r
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Vernieuwen
+    .accesskey = r
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Stoppen
     .accesskey = S
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Stoppen
+    .accesskey = S
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Bladwijzer voor deze pagina maken
     .accesskey = m
     .tooltiptext = Bladwijzer voor deze pagina maken
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Bladwijzer van pagina maken
+    .accesskey = m
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Bladwijzer bewerken
+    .accesskey = w
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Koppeling openen in nieuw containertabblad
     .accesskey = c
-main-context-menu-open-link-container =
-    .label = Koppeling openen in nieuwe container
-    .accesskey = w
 main-context-menu-open-link-new-window =
     .label = Koppeling openen in nieuw venster
     .accesskey = v
@@ -196,6 +227,16 @@ main-context-menu-media-play-speed-fastest =
 main-context-menu-media-play-speed-2 =
     .label = Snelheid
     .accesskey = d
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0,5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1,0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1,25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1,5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Herhalen
     .accesskey = H
@@ -240,6 +281,9 @@ main-context-menu-video-view =
 main-context-menu-image-view-new-tab =
     .label = Afbeelding openen in nieuw tabblad
     .accesskey = A
+main-context-menu-video-view-new-tab =
+    .label = Video openen in nieuw tabblad
+    .accesskey = i
 main-context-menu-image-copy =
     .label = Afbeelding kopiëren
     .accesskey = k
@@ -288,6 +332,9 @@ main-context-menu-audio-save-as =
 main-context-menu-video-image-save-as =
     .label = Momentopname opslaan als…
     .accesskey = M
+main-context-menu-video-take-snapshot =
+    .label = Momentopname maken…
+    .accesskey = M
 main-context-menu-video-email =
     .label = Video e-mailen…
     .accesskey = l
@@ -332,6 +379,9 @@ main-context-menu-suggest-strong-password =
 main-context-menu-manage-logins =
     .label = Aanmeldingen beheren…
     .accesskey = b
+main-context-menu-manage-logins2 =
+    .label = Aanmeldingen beheren
+    .accesskey = b
 main-context-menu-keyword =
     .label = Sleutelwoord voor deze zoekopdracht toevoegen…
     .accesskey = S
@@ -374,6 +424,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Bron van selectie bekijken
     .accesskey = B
+main-context-menu-take-screenshot =
+    .label = Schermafbeelding maken
+    .accesskey = h
 main-context-menu-view-page-source =
     .label = Paginabron bekijken
     .accesskey = b

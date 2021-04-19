@@ -78,7 +78,7 @@ onboarding-benefit-products-text = Faça as coisas com uma família de ferrament
 # Firefox Personal Data Promise is the way we honor your data in everything we
 # make and do. We take less data. We keep it safe. And we make sure that we are
 # transparent about how we use it."
-onboarding-benefit-privacy-text = Tudo o que fazemos honra nossa promessa de como lidar com dados pessoais: Coletar pouco. Manter seguro. Sem segredos.
+onboarding-benefit-privacy-text = Tudo o que fazemos honra nosso compromisso de como lidar com dados pessoais: Coletar pouco. Manter seguro. Sem segredos.
 onboarding-benefit-sync-title = { -sync-brand-short-name }
 onboarding-benefit-sync-text = Tenha seus favoritos, senhas, histórico e muito mais onde quer que use o { -brand-product-name }.
 onboarding-benefit-monitor-title = { -monitor-brand-short-name }
@@ -172,6 +172,15 @@ onboarding-multistage-set-default-header = Torne o { -brand-short-name } seu <sp
 onboarding-multistage-set-default-subtitle = Velocidade, segurança e privacidade sempre que você navega.
 onboarding-multistage-set-default-primary-button-label = Tornar padrão
 onboarding-multistage-set-default-secondary-button-label = Agora não
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-pin-default-header = Comece deixando o <span data-l10n-name="zap">{ -brand-short-name }</span> a um clique de distância
+onboarding-multistage-pin-default-subtitle = Navegação rápida, segura e privativa, sempre que você usa a web.
+# The "settings" here refers to "Windows 10 Settings App" and not the browser's
+onboarding-multistage-pin-default-waiting-subtitle = Escolha { -brand-short-name } em 'Navegador web' quando abrir as configurações
+# The "settings" here refers to "Windows 10 Settings App" and not the browser's
+onboarding-multistage-pin-default-help-text = Isso fixa o { -brand-short-name } na barra de tarefas e abre as configurações
+onboarding-multistage-pin-default-primary-button-label = Tornar o { -brand-short-name } meu navegador principal
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "more" should stay inside the span.
 onboarding-multistage-import-header = Importe suas senhas, favoritos e <span data-l10n-name="zap">mais</span>

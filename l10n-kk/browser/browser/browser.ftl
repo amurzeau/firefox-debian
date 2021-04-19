@@ -264,6 +264,18 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmark-panel-cancel =
+    .label = Бас тарту
+    .accesskey = с
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Бетбелгіні өшіру
+           *[other] Бетбелгілерді ({ $count }) өшіру
+        }
+    .accesskey = ш
 bookmark-panel-show-editor-checkbox =
     .label = Сақтау кезінде түзеткішті көрсету
     .accesskey = с
@@ -288,6 +300,8 @@ identity-passive-loaded = Бұл парақтың кейбір бөліктер�
 identity-active-loaded = Бұл парақта қорғанысты сөндіргенсіз.
 identity-weak-encryption = Бұл парақ әлсіз шифрлеуді қолданады.
 identity-insecure-login-forms = Бұл парақта енгізілген логин ақпаратына бөтен адамдардың қолы жетуі мүмкін.
+identity-permissions =
+    .value = Рұқсаттар
 identity-https-only-connection-upgraded = (HTTPS дейін жаңартылды)
 identity-https-only-label = Тек-HTTPS режимі
 identity-https-only-dropdown-on =
@@ -299,8 +313,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = { -brand-short-name } мүмкін болған кезде байланысты қауіпсіз нұсқасына жаңартуы үшін, бұл сайт үшін тек-HTTPS режимін іске қосыңыз.
 identity-https-only-info-turn-off2 = Егер парақ бұзылған сияқты көрінсе, сіз оны қауіпсіз емес HTTP арқылы қайта жүктеу үшін осы сайт үшін тек-HTTPS режимін өшіре аласыз.
 identity-https-only-info-no-upgrade = Байланысты HTTP-дан жаңарту мүмкін емес.
-identity-permissions =
-    .value = Рұқсаттар
 identity-permissions-storage-access-header = Сайтаралық cookie файлдары
 identity-permissions-storage-access-hint = Бұл тараптар сіз осы сайтта болған кезде сайтаралық cookie файлдарын және сайт деректерін қолдана алады.
 identity-permissions-reload-hint = Өзгерістер іске асуы үшін бұл парақты қайта жүктеуіңіз керек болуы мүмкін.
@@ -348,8 +360,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Ойнатуда
-browser-tab-audio-muted = Дыбысы өшірілген
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = ОЙНАТУДА
 # This label should be written in all capital letters if your locale supports them.
@@ -358,6 +368,11 @@ browser-tab-audio-muted2 = ДЫБЫСЫ БАСЫЛҒАН
 browser-tab-audio-blocked = АВТООЙНАТУ БҰҒАТТАЛҒАН
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = СУРЕТТЕГІ СУРЕТ
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
 
 ## Bookmarks toolbar items
 
@@ -377,9 +392,13 @@ popup-select-microphone =
 popup-select-camera-device =
     .value = Камера:
     .accesskey = К
+popup-select-camera-icon =
+    .tooltiptext = Камера
 popup-select-microphone-device =
     .value = Микрофон:
     .accesskey = М
+popup-select-microphone-icon =
+    .tooltiptext = Микрофон
 popup-all-windows-shared = Экраныңыздаға барлық көрінетін терезелермен бөлісетін боласыз.
 popup-screen-sharing-not-now =
     .label = Қазір емес
@@ -546,8 +565,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Барлық бетбелгілерді көрсету
-bookmarks-recent-bookmarks =
-    .value = Соңынан қосылғандар
 bookmarks-manage-bookmarks =
     .label = Бетбелгілерді басқару
 bookmarks-recent-bookmarks-panel =
@@ -568,12 +585,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Бетбелгілер бүйір панелін жасыру
            *[other] Бүйір панелін қарау
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Бетбелгілер құралдар панелін жасыру
-           *[other] Бетбелгілер панелін қарау
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -620,12 +631,17 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Бетбелгілер
-library-bookmarks-bookmark-this-page =
-    .label = Бұл бетті бетбелгілерге қосу
-library-bookmarks-bookmark-edit =
-    .label = Бетбелгіні түзету
 library-recent-activity-title =
     .value = Соңғы белсенділік
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = { -pocket-brand-name }-ке сақтау
+    .tooltiptext = { -pocket-brand-name }-ке сақтау
+
+## Customize Toolbar Buttons
+
 
 ## More items
 
@@ -640,3 +656,21 @@ eme-notifications-drm-content-playing-manage = Баптауларды басқа
 eme-notifications-drm-content-playing-manage-accesskey = б
 eme-notifications-drm-content-playing-dismiss = Тайдыру
 eme-notifications-drm-content-playing-dismiss-accesskey = д
+
+## Password save/update panel
+
+panel-save-update-username = Пайдаланушы аты
+panel-save-update-password = Пароль
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = { $name } өшіру керек пе?
+addon-removal-abuse-report-checkbox = Бұл кеңейту туралы { -vendor-short-name } адресіне шағым жасау
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Тіркелгіні басқару
+remote-tabs-sync-now = Қазір синхрондау

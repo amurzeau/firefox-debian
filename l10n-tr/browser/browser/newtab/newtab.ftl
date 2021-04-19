@@ -19,6 +19,20 @@ newtab-search-box-search-button =
     .title = Ara
     .aria-label = Ara
 newtab-search-box-search-the-web-text = Web’de ara
+# Variables
+#  $engine (String): the name of the user's default search engine
+newtab-search-box-handoff-text = { $engine } ile arama yapın veya adres yazın
+newtab-search-box-handoff-text-no-engine = Arama yapın veya adres yazın
+# Variables
+#  $engine (String): the name of the user's default search engine
+newtab-search-box-handoff-input =
+    .placeholder = { $engine } ile arama yapın veya adres yazın
+    .title = { $engine } ile arama yapın veya adres yazın
+    .aria-label = { $engine } ile arama yapın veya adres yazın
+newtab-search-box-handoff-input-no-engine =
+    .placeholder = Arama yapın veya adres yazın
+    .title = Arama yapın veya adres yazın
+    .aria-label = Arama yapın veya adres yazın
 newtab-search-box-search-the-web-input =
     .placeholder = Web’de ara
     .title = Web’de ara
@@ -158,7 +172,7 @@ newtab-section-menu-remove-section = Bölümü kaldır
 newtab-section-menu-collapse-section = Bölümü daralt
 newtab-section-menu-expand-section = Bölümü genişlet
 newtab-section-menu-manage-section = Bölümü yönet
-newtab-section-menu-manage-webext = Eklentiyi yönet
+newtab-section-menu-manage-webext = Uzantıyı yönet
 newtab-section-menu-add-topsite = Sık kullanılan site ekle
 newtab-section-menu-add-search-engine = Arama motoru ekle
 newtab-section-menu-move-up = Yukarı taşı

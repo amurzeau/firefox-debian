@@ -264,11 +264,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Legg til bokmerke
+bookmarks-edit-bookmark = Rediger bokmerke
+bookmark-panel-cancel =
+    .label = Avbryt
+    .accesskey = A
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [1] Fjern bokmerke
+           *[other] Fjern { $count } bokmerker
+        }
+    .accesskey = F
 bookmark-panel-show-editor-checkbox =
     .label = Vis redigerer ved lagring
     .accesskey = s
 bookmark-panel-done-button =
     .label = Ferdig
+bookmark-panel-save-button =
+    .label = Lagre
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -288,6 +304,8 @@ identity-passive-loaded = Deler av denne siden er ikke sikker (f.eks. bilder).
 identity-active-loaded = Du har slått av beskyttelse på denne siden.
 identity-weak-encryption = Denne siden bruker svak kryptering.
 identity-insecure-login-forms = Innloggingsinfo skrevet inn på denne kan leses av en tredjepart.
+identity-permissions =
+    .value = Tillatelser
 identity-https-only-connection-upgraded = (oppgradert til HTTPS)
 identity-https-only-label = Kun-HTTPS-modus
 identity-https-only-dropdown-on =
@@ -299,8 +317,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Slå på kun-HTTPS-modus for dette nettstedet hvis du vil at { -brand-short-name } skal oppgradere til en sikker tilkobling når det er mulig.
 identity-https-only-info-turn-off2 = Hvis nettsiden virker ødelagt, kan det være lurt å slå av kun-HTTPS-modus for dette nettstedet for å laste inn på nytt ved hjelp av usikker HTTP.
 identity-https-only-info-no-upgrade = Kan ikke å oppgradere tilkoblingen fra HTTP.
-identity-permissions =
-    .value = Tillatelser
 identity-permissions-storage-access-header = Infokapsler på tvers av nettsteder
 identity-permissions-storage-access-hint = Disse partene kan bruke infokapsler på tvers av nettsteder og nettsteddata mens du er på dette nettstedet.
 identity-permissions-reload-hint = Du må kanskje laste siden på nytt for at endringene skal gjelde.
@@ -348,8 +364,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Spiller av
-browser-tab-audio-muted = Dempet
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = SPILLER AV
 # This label should be written in all capital letters if your locale supports them.
@@ -358,6 +372,26 @@ browser-tab-audio-muted2 = DEMPET
 browser-tab-audio-blocked = AUTOAVSPILLING BLOKKERT
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = BILDE-I-BILDE
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] SLÅ AV LYD I FANE
+       *[other] SLÅ AV LYD I { $count } FANER
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] SLÅ PÅ LYD I FANE
+       *[other] SLÅ PÅ LYD I { $count } FANER
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] SPILL AV FANE
+       *[other] SPILL AV { $count } FANER
+    }
 
 ## Bookmarks toolbar items
 
@@ -377,9 +411,13 @@ popup-select-microphone =
 popup-select-camera-device =
     .value = Kamera:
     .accesskey = K
+popup-select-camera-icon =
+    .tooltiptext = Kamera
 popup-select-microphone-device =
     .value = Mikrofon:
     .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Mikrofon
 popup-all-windows-shared = Alle synlige vinduer på skjermen vil deles.
 popup-screen-sharing-not-now =
     .label = Ikke nå
@@ -505,6 +543,13 @@ urlbar-result-action-tabtosearch-web = Søk med { $engine } direkte fra adressel
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Søk i { $engine } direkte fra adresselinjen
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Kopier
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -546,8 +591,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Vis alle bokmerker
-bookmarks-recent-bookmarks =
-    .value = Nylig bokmerket
 bookmarks-manage-bookmarks =
     .label = Behandle bokmerker
 bookmarks-recent-bookmarks-panel =
@@ -568,12 +611,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Skjul bokmerkesidestolpen
            *[other] Vis bokmerkesidestolpen
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Skjul bokmerkeverktøylinje
-           *[other] Vis bokmerkeverktøylinje
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -620,12 +657,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Bokmerker
-library-bookmarks-bookmark-this-page =
-    .label = Bokmerk denne siden
-library-bookmarks-bookmark-edit =
-    .label = Rediger dette bokmerket
 library-recent-activity-title =
     .value = Nylig aktivitet
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Lagre til { -pocket-brand-name }
+    .tooltiptext = Lagre til { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Tillegg og tema
+    .tooltiptext = Behandle tilleggene og temaene dine ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Innstillinger
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Åpne innstillinger ({ $shortcut })
+           *[other] Åpne innstillinger
+        }
 
 ## More items
 
@@ -640,3 +696,21 @@ eme-notifications-drm-content-playing-manage = Behandle innstillinger
 eme-notifications-drm-content-playing-manage-accesskey = B
 eme-notifications-drm-content-playing-dismiss = Ignorer
 eme-notifications-drm-content-playing-dismiss-accesskey = I
+
+## Password save/update panel
+
+panel-save-update-username = Brukernavn
+panel-save-update-password = Passord
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Fjern { $name }?
+addon-removal-abuse-report-checkbox = Rapporter denne utvidelsen til { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Behandle konto
+remote-tabs-sync-now = Synkroniser nå

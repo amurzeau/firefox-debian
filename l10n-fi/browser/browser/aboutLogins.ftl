@@ -18,6 +18,7 @@ login-filter =
 create-login-button = Luo uusi kirjautumistieto
 fxaccounts-sign-in-text = Käytä salasanojasi kaikilla laitteillasi
 fxaccounts-sign-in-button = Kirjaudu { -sync-brand-short-name }-palveluun
+fxaccounts-sign-in-sync-button = Kirjaudu synkronoidaksesi
 fxaccounts-avatar-button =
     .title = Hallitse tiliä
 
@@ -281,7 +282,7 @@ about-logins-import-dialog-items-modified =
     }
 about-logins-import-dialog-items-no-change =
     { $count ->
-       *[other] <span>Löydettiin päällekkäisiä kirjautumistietoja:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ei tuotu)</span>
+       *[other] <span>Löydettiin kirjautumistietojen kopioita:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ei tuotu)</span>
     }
 about-logins-import-dialog-items-error =
     { $count ->
@@ -300,8 +301,15 @@ about-logins-import-dialog-error-unable-to-read-description = Tarkista, että va
 about-logins-import-dialog-error-no-logins-imported = Kirjautumistietoja ei ole tuotu
 about-logins-import-dialog-error-learn-more = Lisätietoja
 about-logins-import-dialog-error-try-again = Yritä uudelleen…
+about-logins-import-dialog-error-try-import-again = Yritä tuontia uudelleen…
 about-logins-import-dialog-error-cancel = Peruuta
 about-logins-import-report-title = Tuonnin yhteenveto
+about-logins-import-report-description = { -brand-short-name }iin tuotavat käyttäjätunnukset ja salasanat.
+#
+# Variables:
+#  $number (number) - The number of the row
+about-logins-import-report-row-index = Rivi { $number }
+about-logins-import-report-row-description-no-change = Kopio: Olemassa olevan kirjautumistiedon tarkka kopio
 about-logins-import-report-row-description-modified = Olemassa oleva kirjautumistieto päivitetty
 about-logins-import-report-row-description-added = Uusi kirjautumistieto lisätty
 about-logins-import-report-row-description-error = Virhe: Puuttuva kenttä
@@ -324,6 +332,14 @@ about-logins-import-report-added =
 about-logins-import-report-modified =
     { $count ->
        *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">olemassa olevaa kirjautumistietoa päivitetty</div>
+    }
+about-logins-import-report-no-change =
+    { $count ->
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">kirjautumistietojen kopiota</div> <div data-l10n-name="not-imported">(ei tuotu)</div>
+    }
+about-logins-import-report-error =
+    { $count ->
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">virhettä</div> <div data-l10n-name="not-imported">(ei tuotu)</div>
     }
 
 ## Logins import report page

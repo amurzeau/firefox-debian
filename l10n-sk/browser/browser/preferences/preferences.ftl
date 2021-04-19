@@ -28,6 +28,18 @@ search-input-box =
             [windows] Hľadať
            *[other] Hľadať
         }
+settings-page-title = Nastavenia
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Hľadať v nastaveniach
 managed-notice = Váš prehliadač spravuje vaša organizácia.
 category-list =
     .aria-label = Kategórie
@@ -46,16 +58,20 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
-pane-experimental-title = Experimenty aplikácie { -brand-short-name }
+pane-sync-title3 = Synchronizácia
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
+pane-experimental-title = Experimenty prehliadača { -brand-short-name }
 category-experimental =
-    .tooltiptext = Experimenty aplikácie { -brand-short-name }
+    .tooltiptext = Experimenty prehliadača { -brand-short-name }
 pane-experimental-subtitle = Buďte obozretní
 pane-experimental-search-results-header = Experimenty { -brand-short-name(case: "gen") }: Pokračujte s opatrnosťou
-pane-experimental-description = Zmeny v pokročilej konfigurácii môžu ovplyvniť výkon a bezpečnosť aplikácie { -brand-short-name }.
+pane-experimental-description = Zmeny v pokročilej konfigurácii môžu ovplyvniť výkon a bezpečnosť prehliadača { -brand-short-name }.
+pane-experimental-description2 = Zmeny v pokročilej konfigurácii môžu ovplyvniť výkon a bezpečnosť prehliadača { -brand-short-name }.
 pane-experimental-reset =
     .label = Obnoviť predvolené nastavenia
     .accesskey = O
-help-button-label = Podpora aplikácie { -brand-short-name }
+help-button-label = Podpora pre prehliadač { -brand-short-name }
 addons-button-label = Rozšírenia a témy vzhľadu
 focus-search =
     .key = f
@@ -104,7 +120,7 @@ extension-controlled-privacy-containers = Rozšírenie <img data-l10n-name="icon
 extension-controlled-websites-content-blocking-all-trackers = Toto nastavenie spravuje rozšírenie <img data-l10n-name="icon"/> { $name }.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
-extension-controlled-proxy-config = Rozšírenie <img data-l10n-name="icon"/> { $name } kontroluje pripojenie aplikácie { -brand-short-name } k internetu.
+extension-controlled-proxy-config = Rozšírenie <img data-l10n-name="icon"/> { $name } kontroluje pripojenie prehliadača { -brand-short-name } k internetu.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -121,7 +137,9 @@ search-results-empty-message =
         [windows] Mrzí nás to, no pre hľadaný výraz “<span data-l10n-name="query"></span>” sme v možnostiach nič nenašli.
        *[other] Mrzí nás to, no pre hľadaný výraz “<span data-l10n-name="query"></span>” sme v možnostiach nič nenašli.
     }
-search-results-help-link = Potrebujete pomoc? Navštívte <a data-l10n-name="url">podporu aplikácie { -brand-short-name }</a>
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Mrzí nás to, ale pre hľadaný výraz “<span data-l10n-name="query"></span>” sme v možnostiach nič nenašli.
+search-results-help-link = Potrebujete pomoc? Navštívte <a data-l10n-name="url">stránku podpory pre prehliadač { -brand-short-name }</a>
 
 ## General Section
 
@@ -159,7 +177,7 @@ warn-on-close-multiple-tabs =
     .label = Upozorniť pri zatváraní viacerých kariet
     .accesskey = o
 warn-on-open-many-tabs =
-    .label = Upozorniť, ak by otvorenie viacerých kariet spôsobilo spomalenie aplikácie { -brand-short-name }
+    .label = Upozorniť, ak by otvorenie viacerých kariet spôsobilo spomalenie prehliadača { -brand-short-name }
     .accesskey = U
 switch-links-to-new-tabs =
     .label = Pri otvorení odkazu na novej karte ju preniesť do popredia
@@ -228,7 +246,7 @@ choose-language-description = Vyberte jazyky pre zobrazovanie webových stránok
 choose-button =
     .label = Vybrať…
     .accesskey = V
-choose-browser-language-description = Vyberte si jazyk, v ktorom sa majú zobrazovať ponuky, správy a oznámenia aplikácie { -brand-short-name }.
+choose-browser-language-description = Vyberte si jazyk, v ktorom sa majú zobrazovať ponuky, správy a oznámenia prehliadača { -brand-short-name }.
 manage-browser-languages-button =
     .label = Vybrať alternatívy
     .accesskey = a
@@ -324,7 +342,7 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 # Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
-    .label = Použiť { $plugin-name } (v aplikácii { -brand-short-name })
+    .label = Použiť { $plugin-name } (v prehliadači { -brand-short-name })
 applications-open-inapp =
     .label = Otvoriť v aplikácii { -brand-short-name }
 
@@ -372,6 +390,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Nevyhľadávať aktualizácie (neodporúča sa)
     .accesskey = N
+update-application-background-enabled =
+    .label = Ak { -brand-short-name } nie je spustený
+    .accesskey = A
 update-application-warning-cross-user-setting = Toto nastavenie sa vzťahuje na všetky účty v systéme Windows a profily aplikácie { -brand-short-name } používajúce túto inštaláciu aplikácie { -brand-short-name }.
 update-application-use-service =
     .label = Na inštaláciu aktualizácií používať službu na pozadí
@@ -383,6 +404,15 @@ update-setting-write-failure-title = Chyba pri ukladaní nastavení aktualizáci
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
     Aplikácia { -brand-short-name } sa stretla s chybou a túto zmenu neuložila. Berte na vedomie, že upravenie tejto možnosti vyžaduje povolenie na zápis do tohto súboru. Vy alebo váš správca systému môžete túto chybu vyriešiť udelením správnych povolení.
+    
+    Nebolo možné zapísať do súboru: { $path }
+update-setting-write-failure-title2 = Chyba pri ukladaní nastavení pre aktualizácie
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    Aplikácia { -brand-short-name } zaznamenala chybu a túto zmenu neuložila. Berte na vedomie, že upravenie toho nastavenia vyžaduje povolenie na zápis do nižšie uvedeného súboru. Vy alebo váš správca systému môžete túto chybu vyriešiť udelením správnych povolení pre skupinu Používatelia,
     
     Nebolo možné zapísať do súboru: { $path }
 update-in-progress-title = Prebieha aktualizácia
@@ -406,7 +436,7 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Limit procesov obsahu
     .accesskey = L
 performance-limit-content-process-enabled-desc = Viac procesov môže zlepšiť výkon pri otvorení viacerých kariet. Spotrebujú však viac pamäte.
-performance-limit-content-process-blocked-desc = Zmena počtu procesov obsahu je možná len pri použití multiprocesového režimu aplikácie { -brand-short-name }. <a data-l10n-name="learn-more">Pozrite sa, ako môžete skontrolovať stav multiprocesového režimu</a>
+performance-limit-content-process-blocked-desc = Zmena počtu procesov s obsahom je možná len pri použití viacprocesového režimu aplikácie { -brand-short-name }. <a data-l10n-name="learn-more">Pozrite sa, ako môžete skontrolovať stav viacprocesového režimu</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
@@ -583,6 +613,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Zobrazovať návrhy vyhľadávania v súkromnom prehliadaní
 suggestions-addressbar-settings-generic = Zmeniť nastavenia návrhov v paneli s adresou
+suggestions-addressbar-settings-generic2 = Zmeniť nastavenia návrhov v paneli s adresou
 search-suggestions-cant-show = Návrhy vyhľadávania nebudú zobrazené vo výsledkoch panela s adresou, pretože ste { -brand-short-name } nastavili tak, aby si nepamätal históriu.
 search-one-click-header = Vyhľadávacie moduly na jedno kliknutie
 search-one-click-header2 = Skratky vyhľadávania
@@ -617,6 +648,8 @@ containers-back-button =
             [windows] Späť na Možnosti
            *[other] Späť na Možnosti
         }
+containers-back-button2 =
+    .aria-label = Späť na nastavenia
 containers-header = Kontajnerové karty
 containers-add-button =
     .label = Pridať nový kontajner
@@ -625,6 +658,8 @@ containers-new-tab-check =
     .label = Zobraziť výber kontajnera pri otvorení novej karty
     .accesskey = z
 containers-preferences-button =
+    .label = Nastavenia
+containers-settings-button =
     .label = Nastavenia
 containers-remove-button =
     .label = Odstrániť
@@ -637,6 +672,10 @@ sync-signedout-description = Synchronizujte si svoje záložky, históriu, karty
 sync-signedout-account-signin2 =
     .label = Prihlásiť sa do služby { -sync-brand-short-name }…
     .accesskey = i
+sync-signedout-description2 = Synchronizujte si svoje záložky, históriu, karty, heslá, doplnky a nastavenia so všetkými svojimi zariadeniami.
+sync-signedout-account-signin3 =
+    .label = Prihlásiť sa k synchronizácii
+    .accesskey = P
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -676,6 +715,10 @@ prefs-sync-setup =
     .label = Nastaviť { -sync-brand-short-name }…
     .accesskey = N
 prefs-sync-offer-setup-label = Synchronizujte si svoje záložky, históriu, karty, heslá, doplnky a nastavenia so všetkými svojimi zariadeniami.
+prefs-sync-turn-on-syncing =
+    .label = Zapnúť synchronizáciu…
+    .accesskey = Z
+prefs-sync-offer-setup-label2 = Synchronizujte si svoje záložky, históriu, karty, heslá, doplnky a nastavenia so všetkými svojimi zariadeniami.
 prefs-sync-now =
     .labelnotsyncing = Synchronizovať
     .accesskeynotsyncing = n
@@ -696,6 +739,7 @@ sync-currently-syncing-prefs =
         [windows] Možnosti
        *[other] Možnosti
     }
+sync-currently-syncing-settings = Nastavenia
 sync-change-options =
     .label = Zmeniť…
     .accesskey = Z
@@ -743,13 +787,17 @@ sync-engine-prefs =
         }
     .tooltiptext = Možnosti v sekciách Všeobecné, Súkromie a bezpečnosť, ktoré boli zmenené
     .accesskey = s
+sync-engine-settings =
+    .label = Nastavenia
+    .tooltiptext = Zmenené nastavenia v sekciách Všeobecné, Súkromie a bezpečnosť
+    .accesskey = a
 
 ## The device name controls.
 
 sync-device-name-header = Názov zariadenia
 sync-device-name-change =
     .label = Zmeniť názov zariadenia…
-    .accesskey = z
+    .accesskey = m
 sync-device-name-cancel =
     .label = Zrušiť
     .accesskey = r
@@ -1080,14 +1128,14 @@ collection-privacy-notice = Zásady ochrany súkromia
 collection-health-report-telemetry-disabled = Odosielanie technických údajov a údajov o interakcii spoločnosti { -vendor-short-name } nie je naďalej povolené. Všetky historické údaje budú odstránené v priebehu 30 dní.
 collection-health-report-telemetry-disabled-link = Ďalšie informácie
 collection-health-report =
-    .label = Povoliť aplikácii { -brand-short-name } odosielať technické údaje a údaje o interakciách spoločnosti { -vendor-short-name }
+    .label = Povoliť prehliadaču { -brand-short-name } odosielať technické údaje a údaje o interakciách spoločnosti { -vendor-short-name }
     .accesskey = o
 collection-health-report-link = Ďalšie informácie
 collection-studies =
-    .label = Povoliť aplikácii { -brand-short-name } inštalovať a spúšťať štúdie
+    .label = Povoliť prehliadaču { -brand-short-name } inštalovať a spúšťať štúdie
 collection-studies-link = Zobraziť štúdie aplikácie { -brand-short-name }
 addon-recommendations =
-    .label = Povoliť aplikácii { -brand-short-name } odporúčať rozšírenia vybrané priamo pre mňa
+    .label = Povoliť prehliadaču { -brand-short-name } odporúčať rozšírenia vybrané priamo pre mňa
 addon-recommendations-link = Ďalšie informácie
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
@@ -1157,6 +1205,11 @@ space-alert-under-5gb-ok-button =
     .label = OK, rozumiem
     .accesskey = K
 space-alert-under-5gb-message = Aplikácii { -brand-short-name } dochádza miesto na disku. Obsah webovej stránky sa nemusí zobrazovať správne. Kliknutím na “Ďalšie informácie” sa dozviete viac o optimalizovaní vyžitia disku pre lepší zážitok z prehliadania.
+space-alert-over-5gb-settings-button =
+    .label = Otvoriť nastavenia
+    .accesskey = O
+space-alert-over-5gb-message2 = <strong>Aplikácii { -brand-short-name } dochádza miesto na disku.</strong> Obsah webovej stránky sa nemusí zobrazovať správne. Uložené údaje stránok môžete odstrániť v ponuke Možnosti > Súkromie a bezpečnosť > Cookies a údaje stránok.
+space-alert-under-5gb-message2 = <strong>Aplikácii { -brand-short-name } dochádza miesto na disku.</strong> Obsah webovej stránky sa nemusí zobrazovať správne. Kliknutím na “Ďalšie informácie” sa dozviete viac o optimalizovaní vyžitia disku pre lepší zážitok z prehliadania.
 
 ## Privacy Section - HTTPS-Only
 
@@ -1168,7 +1221,7 @@ httpsonly-radio-enabled =
 httpsonly-radio-enabled-pbm =
     .label = Povoliť režim "Len HTTPS" iba v súkromných oknách
 httpsonly-radio-disabled =
-    .label = Nepovoliť režim "Len HTTPS"
+    .label = Nezapínať režim "Len HTTPS"
 
 ## The following strings are used in the Download section of settings
 

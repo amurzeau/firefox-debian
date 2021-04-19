@@ -11,9 +11,11 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = WebExtension’ların chrome.storage.managed aracılığıyla ulaşabileceği ilkeleri ayarla.
+policy-AllowedDomainsForApps = Google Workspace’e erişim izni olan etki alanlarını tanımla.
 policy-AppAutoUpdate = Otomatik uygulama güncellemesini aç veya kapat.
 policy-AppUpdateURL = Özel uygulama güncelleme URL’si ayarla.
 policy-Authentication = Destekleyen web siteleri için bütünleşik kimlik doğrulamasını yapılandır.
+policy-BackgroundAppUpdate2 = Arka plan güncelleyicisini aç veya kapat.
 policy-BlockAboutAddons = Eklenti yöneticisine (about:addons) erişimi engelle.
 policy-BlockAboutConfig = about:config sayfasına erişimi engelle.
 policy-BlockAboutProfiles = about:profiles sayfasına erişimi engelle.
@@ -59,16 +61,16 @@ policy-EncryptedMediaExtensions = Encrypted Media Extensions’ı etkinleştir v
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
-policy-Extensions = Eklentileri yükle, kaldır veya kilitle. Yükleme seçeneğinde parametre olarak URL veya yol kullanılır. Kaldırma ve kilitleme seçeneklerinde ise eklenti kimliği kullanılır.
-policy-ExtensionSettings = Eklenti kurulumunun tüm yönlerini yönet.
-policy-ExtensionUpdate = Otomatik eklenti güncellemelerini aç veya kapat.
+policy-Extensions = Uzantıları yükle, kaldır veya kilitle. Yükleme seçeneğinde parametre olarak URL veya yol kullanılır. Kaldırma ve kilitleme seçeneklerinde ise uzantı kimliği kullanılır.
+policy-ExtensionSettings = Uzantı kurulumunun tüm yönlerini yönet.
+policy-ExtensionUpdate = Otomatik uzantı güncellemelerini aç veya kapat.
 policy-FirefoxHome = Firefox giriş sayfasını yapılandır.
 policy-FlashPlugin = Flash yan uygulama kullanımını engelle ya da kullanımına izin ver.
 policy-Handlers = Varsayılan uygulama işleyicilerini yapılandır.
 policy-HardwareAcceleration = false ise donanım ivmelenmesini kapat.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Giriş sayfasını ayarla ve isteğe bağlı olarak kilitle.
-policy-InstallAddonsPermission = Belirli websitelerinin eklenti yüklemesine izin ver.
+policy-InstallAddonsPermission = Belirli web sitelerinin eklenti yüklemesine izin ver.
 policy-LegacyProfiles = Her kurulum için ayrı bir profil oluşturmayı zorunlu tutan özelliği devre dışı bırak
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
@@ -106,6 +108,7 @@ policy-SearchEngines = Arama motoru ayarlarını yapılandır. Bu ilke yalnızca
 policy-SearchSuggestEnabled = Arama önerilerini etkinleştir veya devre dışı bırak.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = PKCS #11 modüllerini yükle.
+policy-ShowHomeButton = Araç çubuğunda giriş sayfası düğmesini göster.
 policy-SSLVersionMax = Maksimum SSL sürümünü ayarla.
 policy-SSLVersionMin = Minimum SSL sürümünü ayarla.
 policy-SupportMenu = Yardım menüsüne özel bir destek menüsü öğesi ekle.

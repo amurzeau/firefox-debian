@@ -4,11 +4,14 @@
 
 refresh-profile-dialog =
     .title = Refrescar { -brand-short-name }
+refresh-profile-dialog-title = Restabilir { -brand-short-name } a su parametros predefinite?
 refresh-profile-dialog-button =
-    .label = Refrescar { -brand-short-name }
+    .label = Restabilir { -brand-short-name }
 refresh-profile-description = Recomenciar ab un stato pristine pro eliminar problemas e restaurar le rendimento.
 refresh-profile-description-details = Isto:
 refresh-profile-remove = Removera tu additivos e personalisationes
 refresh-profile-restore = Restaurara le parametros de tu navigator a lor predefinitiones
+refresh-profile-dialog-description = Comencia de novo pro resolver problemas de rendimento. Isto removera tu extensiones e personalisationes. Tu non perdera informationes essential como marcapaginas e contrasignos.
 refresh-profile = Da a { -brand-short-name } un affinamento
 refresh-profile-button = Refrescar { -brand-short-name }…
+refresh-profile-learn-more = Saper plus

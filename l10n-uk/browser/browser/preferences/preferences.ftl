@@ -28,6 +28,18 @@ search-input-box =
             [windows] Знайти в налаштуваннях
            *[other] Знайти в налаштуваннях
         }
+settings-page-title = Налаштування
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Знайти в налаштуваннях
 managed-notice = Вашим браузером керує ваша організація.
 category-list =
     .aria-label = Категорії
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Синхронізація
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = Експерименти { -brand-short-name }
 category-experimental =
     .tooltiptext = Експерименти { -brand-short-name }
 pane-experimental-subtitle = Продовжуйте обережно
 pane-experimental-search-results-header = Експерименти { -brand-short-name }: Продовжуйте з обережністю
 pane-experimental-description = Зміна розширених налаштувань може вплинути на швидкодію і безпеку { -brand-short-name }.
+pane-experimental-description2 = Зміна розширених налаштувань може вплинути на швидкодію і безпеку { -brand-short-name }.
 pane-experimental-reset =
     .label = Відновити типові
     .accesskey = В
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] Вибачте! В налаштуваннях немає результатів для “<span data-l10n-name="query"></span>”.
        *[other] Вибачте! В налаштуваннях немає результатів для “<span data-l10n-name="query"></span>”.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Перепрошуємо! В налаштуваннях немає результатів для “<span data-l10n-name="query"></span>”.
 search-results-help-link = Потрібна допомога? Відвідайте <a data-l10n-name="url">Підтримка { -brand-short-name }</a>
 
 ## General Section
@@ -372,6 +390,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Ніколи не перевіряти наявність оновлень (не рекомендовано)
     .accesskey = Н
+update-application-background-enabled =
+    .label = Коли { -brand-short-name } не запущений
+    .accesskey = К
 update-application-warning-cross-user-setting = Цей параметр застосується для всіх облікових записів Windows та профілів { -brand-short-name }, що використовують це встановлення { -brand-short-name }.
 update-application-use-service =
     .label = Використовувати фонову службу для встановлення оновлень
@@ -385,6 +406,15 @@ update-setting-write-failure-message =
     { -brand-short-name } зіткнувся з помилкою і не зберіг цю зміну. Зверніть увагу, що для встановлення цього налаштування оновлення необхідний дозвіл запису в файл нижче. Ви або системний адміністратор можуть виправити цю помилку, надавши користувачам групи повний контроль над цим файлом.
     
     Не вдалося записати в файл: { $path }
+update-setting-write-failure-title2 = Помилка збереження налаштувань оновлення
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    У програмі { -brand-short-name } сталася помилка і цю зміну не було збережено. Зауважте, щоб змінити цей параметр оновлення, потрібен дозвіл на запис у файл, наведений нижче. Ви або системний адміністратор можете виправити цю помилку, надавши групі "Користувачі" повний контроль над цим файлом.
+    
+    Не вдалося записати у файл: { $path }
 update-in-progress-title = Триває оновлення
 update-in-progress-message = Ви хочете, щоб { -brand-short-name } продовжив це оновлення?
 update-in-progress-ok-button = &Відхилити
@@ -583,6 +613,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Показувати пошукові пропозиції у приватних вікнах
 suggestions-addressbar-settings-generic = Змінити налаштування для інших пропозицій панелі адреси
+suggestions-addressbar-settings-generic2 = Змінити налаштування для інших пропозицій панелі адреси
 search-suggestions-cant-show = Пошукові пропозиції не будуть показуватись в панелі адреси, тому що ви налаштували { -brand-short-name } ніколи не запам'ятовувати історію.
 search-one-click-header = Засоби пошуку в один клік
 search-one-click-header2 = Пошукові скорочення
@@ -617,6 +648,8 @@ containers-back-button =
             [windows] Назад до налаштувань
            *[other] Назад до налаштувань
         }
+containers-back-button2 =
+    .aria-label = Назад до налаштувань
 containers-header = Контейнери вкладок
 containers-add-button =
     .label = Додати новий контейнер
@@ -625,6 +658,8 @@ containers-new-tab-check =
     .label = Вибирати контейнер для кожної нової вкладки
     .accesskey = к
 containers-preferences-button =
+    .label = Налаштування
+containers-settings-button =
     .label = Налаштування
 containers-remove-button =
     .label = Вилучити
@@ -636,6 +671,10 @@ sync-signedout-caption = Візьміть свій інтернет з собо�
 sync-signedout-description = Синхронізуйте закладки, історію, вкладки, паролі, додатки, а також налаштування на всіх своїх пристроях.
 sync-signedout-account-signin2 =
     .label = Увійти в { -sync-brand-short-name(case: "acc") }…
+    .accesskey = в
+sync-signedout-description2 = Синхронізуйте закладки, історію, вкладки, паролі, додатки, а також налаштування на всіх своїх пристроях.
+sync-signedout-account-signin3 =
+    .label = Увійти до синхронізації…
     .accesskey = в
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -676,6 +715,10 @@ prefs-sync-setup =
     .label = Налаштувати { -sync-brand-short-name(case: "acc") }
     .accesskey = л
 prefs-sync-offer-setup-label = Синхронізуйте закладки, історію, вкладки, паролі, додатки, а також налаштування на всіх своїх пристроях.
+prefs-sync-turn-on-syncing =
+    .label = Увімкнути синхронізацію…
+    .accesskey = с
+prefs-sync-offer-setup-label2 = Синхронізуйте закладки, історію, вкладки, паролі, додатки, а також налаштування на всіх своїх пристроях.
 prefs-sync-now =
     .labelnotsyncing = Синхронізувати зараз
     .accesskeynotsyncing = х
@@ -696,6 +739,7 @@ sync-currently-syncing-prefs =
         [windows] Налаштування
        *[other] Налаштування
     }
+sync-currently-syncing-settings = Налаштування
 sync-change-options =
     .label = Змінити…
     .accesskey = З
@@ -742,6 +786,10 @@ sync-engine-prefs =
            *[other] Налаштування
         }
     .tooltiptext = Налаштування, які ви змінили
+    .accesskey = Н
+sync-engine-settings =
+    .label = Налаштування
+    .tooltiptext = Змінені вами налаштування приватності, безпеки та інші
     .accesskey = Н
 
 ## The device name controls.
@@ -1056,7 +1104,7 @@ permissions-autoplay-settings =
     .label = Налаштування…
     .accesskey = т
 permissions-block-popups =
-    .label = Блокувати виринаючі вікна
+    .label = Блокувати спливні вікна
     .accesskey = Б
 permissions-block-popups-exceptions =
     .label = Винятки…
@@ -1157,6 +1205,11 @@ space-alert-under-5gb-ok-button =
     .label = Гаразд, зрозуміло
     .accesskey = Г
 space-alert-under-5gb-message = У { -brand-short-name } закінчується місце на диску. Вміст вебсайтів може показуватись неправильно. Натисніть “Докладніше”, щоб оптимізувати використання вашого диска для кращої роботи.
+space-alert-over-5gb-settings-button =
+    .label = Відкрити налаштування
+    .accesskey = В
+space-alert-over-5gb-message2 = <strong>Для { -brand-short-name } закінчується місце на диску.</strong> Вміст вебсайтів може показуватись неналежним чином. Ви можете стерти збережені дані в меню Налаштування > Приватність і безпека > Куки і дані сайтів.
+space-alert-under-5gb-message2 = <strong>Для { -brand-short-name } закінчується місце на диску.</strong> Вміст вебсайтів може показуватись неправильно. Натисніть “Докладніше”, щоб оптимізувати використання диска для кращої роботи.
 
 ## Privacy Section - HTTPS-Only
 

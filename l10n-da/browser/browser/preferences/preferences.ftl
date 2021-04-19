@@ -28,6 +28,18 @@ search-input-box =
             [windows] Søg i indstillinger
            *[other] Søg i indstillinger
         }
+settings-page-title = Indstillinger
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Find i indstillinger
 managed-notice = Din browser bliver forvaltet af din organisation.
 category-list =
     .aria-label = Kategorier
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Synkronisering
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = { -brand-short-name }-eksperimenter
 category-experimental =
     .tooltiptext = { -brand-short-name }-eksperimenter
 pane-experimental-subtitle = Fortsæt på eget ansvar
 pane-experimental-search-results-header = { -brand-short-name }-eksperimenter: Fortsæt på eget ansvar
 pane-experimental-description = Ved at ændre avancerede indstillinger kan du påvirke ydelse eller sikkerhed for { -brand-short-name }.
+pane-experimental-description2 = Ændring af avancerede indstillinger for opsætning kan påvirke ydelse eller sikkerhed for { -brand-short-name }.
 pane-experimental-reset =
     .label = Gendan standarder
     .accesskey = G
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] Der er ingen resultater for "<span data-l10n-name="query"></span>" i indstillingerne.
        *[other] Der er ingen resultater for "<span data-l10n-name="query"></span>" i indstillingerne.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Beklager, der er ingen resultater for "<span data-l10n-name="query"></span>" i indstillingerne.
 search-results-help-link = Har du brug for hjælp? Besøg <a data-l10n-name="url">Hjælp til { -brand-short-name }</a>
 
 ## General Section
@@ -369,6 +387,9 @@ update-application-check-choose =
 update-application-manual =
     .label = aldrig søge efter opdateringer (frarådes)
     .accesskey = N
+update-application-background-enabled =
+    .label = Når { -brand-short-name } ikke kører
+    .accesskey = N
 update-application-warning-cross-user-setting = Denne indstilling vil gælde alle Windows-konti og { -brand-short-name }-profiler, der anvender denne { -brand-short-name }-installation.
 update-application-use-service =
     .label = bruge en baggrundsservice til at installere opdateringer
@@ -380,6 +401,15 @@ update-setting-write-failure-title = Kunne ikke gemme indstillinger for opdateri
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
     { -brand-short-name } stødte på en fejl og gemte ikke ændringen. Bemærk, at for at kunne gemme ændringer, skal der være tilladelse til at skrive til den nedennævnte fil. Du eller en systemadministrator kan måske løse problemet ved at give gruppen Users fuld kontrol over filen.
+    
+    Kunne ikke skrive til filen: { $path }
+update-setting-write-failure-title2 = Fejl under lagring af indstillinger for opdatering
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name } stødte på en fejl og gemte ikke denne ændring. Bemærk at det kræver tilladelse til at skrive til filen nedenfor, hvis du vil ændre indstillinger for opdatering. Du eller en systemadministrator kan måske løse problemet ved at give gruppen Users fuld kontrol over denne fil.
     
     Kunne ikke skrive til filen: { $path }
 update-in-progress-title = Opdatering…
@@ -579,6 +609,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Vis søgeforslag i private vinduer
 suggestions-addressbar-settings-generic = Skift indstillinger for andre forslag i adressefeltet.
+suggestions-addressbar-settings-generic2 = Skift indstillinger for andre forslag i adressefeltet
 search-suggestions-cant-show = Søgeforslag vil ikke blive vist i adressefeltet, fordi du har sat { -brand-short-name } op til aldrig at gemme historik.
 search-one-click-header = Lyn-søgetjenester
 search-one-click-header2 = Søge-genveje
@@ -613,6 +644,8 @@ containers-back-button =
             [windows] Gå tilbage til indstillinger
            *[other] Gå tilbage til indstillinger
         }
+containers-back-button2 =
+    .aria-label = Tilbage til indstillinger
 containers-header = Kontekst-faneblade
 containers-add-button =
     .label = Tilføj ny kontekst
@@ -621,6 +654,8 @@ containers-new-tab-check =
     .label = Vælg en kontekst for hvert nyt faneblad
     .accesskey = V
 containers-preferences-button =
+    .label = Indstillinger
+containers-settings-button =
     .label = Indstillinger
 containers-remove-button =
     .label = Fjern
@@ -633,6 +668,10 @@ sync-signedout-description = Synkroniser dine bogmærker, historik, faneblade, a
 sync-signedout-account-signin2 =
     .label = Log ind på { -sync-brand-short-name }…
     .accesskey = i
+sync-signedout-description2 = Synkroniser din historik, dine bogmærker, faneblade, adgangskoder, tilføjelser og indstillinger på tværs af dine enheder.
+sync-signedout-account-signin3 =
+    .label = Log ind for at synkronisere…
+    .accesskey = L
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -672,6 +711,10 @@ prefs-sync-setup =
     .label = Indstil { -sync-brand-short-name }…
     .accesskey = I
 prefs-sync-offer-setup-label = Synkroniser bogmærker, historik, faneblade, adgangskoder, tilføjelser og indstillinger på tværs af alle dine enheder.
+prefs-sync-turn-on-syncing =
+    .label = Slå synkronisering til…
+    .accesskey = S
+prefs-sync-offer-setup-label2 = Synkroniser din historik, dine bogmærker, faneblade, adgangskoder, tilføjelser og indstillinger på tværs af dine enheder.
 prefs-sync-now =
     .labelnotsyncing = Synkroniser nu
     .accesskeynotsyncing = n
@@ -692,6 +735,7 @@ sync-currently-syncing-prefs =
         [windows] Indstillinger
        *[other] Indstillinger
     }
+sync-currently-syncing-settings = Indstillinger
 sync-change-options =
     .label = Skift…
     .accesskey = S
@@ -738,6 +782,10 @@ sync-engine-prefs =
            *[other] Indstillinger
         }
     .tooltiptext = Generelle indstillinger samt indstillinger for privatliv og sikkerhed
+    .accesskey = I
+sync-engine-settings =
+    .label = Indstillinger
+    .tooltiptext = Generelle indstillinger, samt indstillinger for privatliv og sikkerhed, som du har ændret
     .accesskey = I
 
 ## The device name controls.
@@ -1153,6 +1201,15 @@ space-alert-under-5gb-ok-button =
     .label = OK
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } er ved at løbe tør for diskplads. Websteds-indhold bliver muligvis ikke vist korrekt. Klik på "Læs mere" og lær, hvordan du kan få en bedre browsing-oplevelse ved at optimere diskforbrug.
+space-alert-over-5gb-settings-button =
+    .label = Åbn indstillinger
+    .accesskey = b
+space-alert-over-5gb-message2 =
+    <strong>{ -brand-short-name } er ved at løbe tør for diskplads</strong> 
+    Indhold på websteder vises måske ikke korrekt. Du kan slette gemte data i Indstillinger > Privatliv & sikkerhed > Cookies og websteds-data
+space-alert-under-5gb-message2 =
+    <strong>{ -brand-short-name } er ved at løbe tør for diskplads</strong> 
+    Indhold på websteder vises måske ikke korrekt. Klik på "Læs mere" for at optimere dit diskforbrug og få en bedre browsing-oplevelse.
 
 ## Privacy Section - HTTPS-Only
 

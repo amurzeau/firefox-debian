@@ -263,6 +263,19 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmark-panel-cancel =
+    .label = Renunță
+    .accesskey = C
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Elimină marcajul
+            [few] Elimină { $count } marcaje
+           *[other] Elimină { $count } de marcaje
+        }
+    .accesskey = R
 bookmark-panel-show-editor-checkbox =
     .label = Afișează editorul la salvare
     .accesskey = S
@@ -333,6 +346,11 @@ browser-window-close-button =
     .tooltiptext = Închide
 
 ## Tab actions
+
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
 
 
 ## Bookmarks toolbar items
@@ -472,8 +490,6 @@ pointerlock-warning-no-domain = Documentul controlează acum cursorul. Apasă Es
 
 bookmarks-show-all-bookmarks =
     .label = Afișează toate marcajele
-bookmarks-recent-bookmarks =
-    .value = Marcate recent
 bookmarks-toolbar-chevron =
     .tooltiptext = Afișează mai multe marcaje
 bookmarks-sidebar-content =
@@ -489,12 +505,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Ascunde bara laterală de marcaje
            *[other] Vezi bara laterală de marcaje
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Ascunde bara de marcaje
-           *[other] Vezi bara de marcaje
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -532,10 +542,15 @@ bookmarks-toolbar-placeholder-button =
 
 library-bookmarks-menu =
     .label = Marcaje
-library-bookmarks-bookmark-this-page =
-    .label = Marchează pagina
-library-bookmarks-bookmark-edit =
-    .label = Editează acest marcaj
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Salvează în { -pocket-brand-name }
+    .tooltiptext = Salvează în { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
 
 ## More items
 
@@ -546,3 +561,12 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = Unele elemente audio sau video de pe acest site folosesc programe DRM, care pot limita ceea ce îți permite { -brand-short-name } să faci cu ele.
+
+## Password save/update panel
+
+
+## Add-on removal warning
+
+
+## Remote / Synced tabs
+

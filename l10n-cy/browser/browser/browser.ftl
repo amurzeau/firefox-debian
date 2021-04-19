@@ -272,11 +272,31 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Ychwanegu Nod Tudalen
+bookmarks-edit-bookmark = Golygu Nod Tudalen
+bookmark-panel-cancel =
+    .label = Diddymu
+    .accesskey = D
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [zero] Dileu dim Nodau Tudalen
+            [one] Dileu { $count } Nod Tudalen
+            [two] Dileu { $count } Nod Tudalen
+            [few] Dileu { $count } Nod Tudalen
+            [many] Dileu { $count } Nod Tudalen
+           *[other] Dileu { $count } Nod Tudalen
+        }
+    .accesskey = T
 bookmark-panel-show-editor-checkbox =
     .label = Dangos y golygydd wrth gadw
     .accesskey = D
 bookmark-panel-done-button =
     .label = Gorffen
+bookmark-panel-save-button =
+    .label = Cadw
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -296,6 +316,8 @@ identity-passive-loaded = Nid yw rhannau o'r dudalen hon yn ddiogel (megis delwe
 identity-active-loaded = Rydych wedi analluogi diogelwch ar y dudalen hon.
 identity-weak-encryption = Mae'r dudalen hon yn defnyddio amgryptiad gwan.
 identity-insecure-login-forms = Gall mewngofnodion sy'n cael eu cyflwyno ar y dudalen hon gael eu cyfaddawdu.
+identity-permissions =
+    .value = Caniatâd
 identity-https-only-connection-upgraded = (wedi'i uwchraddio i HTTPS)
 identity-https-only-label = Modd HTTPS-yn-Unig
 identity-https-only-dropdown-on =
@@ -307,8 +329,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Trowch y Modd HTTPS-yn-Unig ymlaen os ydych chi am i { -brand-short-name } uwchraddio'r cysylltiad lle'n bosibl.
 identity-https-only-info-turn-off2 = Os yw'r wefan yn ymddangos wedi torri, efallai yr hoffech chi ddiffodd Modd HTTPS-yn-Unig i'w ail-lwytho gan ddefnyddio HTTP anniogel.
 identity-https-only-info-no-upgrade = Methu uwchraddio'r cysylltiad o HTTP.
-identity-permissions =
-    .value = Caniatâd
 identity-permissions-storage-access-header = Cwcis traws-gwefan
 identity-permissions-storage-access-hint = Gall y partïon hyn ddefnyddio cwcis traws-gwefan a data gwefan tra'ch bod chi ar y wefan hon.
 identity-permissions-reload-hint = Efallai y bydd angen ail lwytho'r dudalen i newidiadau ddod ar waith.
@@ -356,8 +376,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Chwarae
-browser-tab-audio-muted = Tewi
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = YN CHWARAE
 # This label should be written in all capital letters if your locale supports them.
@@ -366,6 +384,41 @@ browser-tab-audio-muted2 = WEDI TEWI
 browser-tab-audio-blocked = AWTOCHWARAE WEDI'I RWYSTRO
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = LLUN-MEWN-LLUN
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] MUDO TAB
+        [zero] MUDO { $count } TABIAU
+        [one] MUDO { $count } TAB
+        [two] MUDO { $count } DAB
+        [few] MUDO { $count } THAB
+        [many] MUDO { $count } THAB
+       *[other] MUDO { $count } TAB
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] DAD-FUDO TAB
+        [zero] DAD-FUDO { $count } TABIAU
+        [one] DAD-FUDO { $count } TAB
+        [two] DAD-FUDO { $count } DAB
+        [few] DAD-FUDO { $count } THAB
+        [many] DAD-FUDO { $count } THAB
+       *[other] DAD-FUDO { $count } TAB
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] CHWARAE TAB
+        [zero] CHWARAE TABIAU
+        [one] CHWARAE { $count } TAB
+        [two] CHWARAE { $count } DAB
+        [few] CHWARAE { $count } THAB
+        [many] CHWARAE { $count } THAB
+       *[other] CHWARAE { $count } TAB
+    }
 
 ## Bookmarks toolbar items
 
@@ -385,9 +438,13 @@ popup-select-microphone =
 popup-select-camera-device =
     .value = Camera:
     .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = Camera
 popup-select-microphone-device =
     .value = Meicroffon:
     .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Meicroffon
 popup-all-windows-shared = Bydd pob ffenestr gweladwy ar eich sgrin yn cael eu rhannu.
 popup-screen-sharing-not-now =
     .label = Nid Nawr
@@ -513,6 +570,13 @@ urlbar-result-action-tabtosearch-web = Chwilio gyda { $engine } yn syth o'r bar 
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Chwilio gyda { $engine } yn syth o'r bar cyfeiriad
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Copïo
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -554,8 +618,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Dangos Pob Nod Tudalen
-bookmarks-recent-bookmarks =
-    .value = Wedi gosod Nod Tudalen yn Ddiweddar
 bookmarks-manage-bookmarks =
     .label = Rheoli Nodau Tudalen
 bookmarks-recent-bookmarks-panel =
@@ -575,12 +637,6 @@ bookmarks-tools-sidebar-visibility =
     .label =
         { $isVisible ->
             [true] Cuddio'r Bar Ochr Nodau Tudalen
-           *[other] Gweld Bar Offer Nodau Tudalen
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Cuddio'r Bar Offer Nodau Tudalen
            *[other] Gweld Bar Offer Nodau Tudalen
         }
 bookmarks-tools-toolbar-visibility-menuitem =
@@ -628,12 +684,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Nodau Tudalen
-library-bookmarks-bookmark-this-page =
-    .label = Gosod Nod Tudalen i'r Dudalen
-library-bookmarks-bookmark-edit =
-    .label = Golygu'r Nod Tudalen
 library-recent-activity-title =
     .value = Gweithgareddau Diweddar
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Cadw i { -pocket-brand-name }
+    .tooltiptext = Cadw i { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Ychwanegion a Themâu
+    .tooltiptext = Rheolwch eich ychwanegion a'ch thenâu ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Gosodiadau
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Agor y gosodiadau ({ $shortcut })
+           *[other] Agor y gosodiadau
+        }
 
 ## More items
 
@@ -648,3 +723,21 @@ eme-notifications-drm-content-playing-manage = Rheoli Gosodiadau
 eme-notifications-drm-content-playing-manage-accesskey = R
 eme-notifications-drm-content-playing-dismiss = Cau
 eme-notifications-drm-content-playing-dismiss-accesskey = C
+
+## Password save/update panel
+
+panel-save-update-username = Enw Defnyddiwr
+panel-save-update-password = Cyfrinair
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Tynnu { $name }?
+addon-removal-abuse-report-checkbox = Adroddwch yr estyniad hwn i { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Rheoli Cyfrif
+remote-tabs-sync-now = Cydweddu Nawr

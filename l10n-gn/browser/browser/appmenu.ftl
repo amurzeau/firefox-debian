@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = Emboguejy { -brand-shorter-name } mbohekopyahu
+appmenuitem-update-banner2 =
+    .label-update-downloading = Emboguejy { -brand-shorter-name } ñembohekopyahu
+    .label-update-available = Embohekopyahukuaa — emboguejy ko’ág̃a
+    .label-update-manual = Embohekopyahukuaa — emboguejy ko’ág̃a
+    .label-update-unsupported = Ndaikatúi embohekopyahu
+    .label-update-restart = Embohekopyahukuaa — emoñepyrũjey ko’ág̃a
 appmenuitem-protection-dashboard-title = Ñemo’ãha renda
 appmenuitem-customize-mode =
     .label = Ñemomba’e…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = Ñe’ẽñemi
 appmenuitem-extensions-and-themes =
     .label = Jepysokue ha Téma
+appmenuitem-addons-and-themes =
+    .label = Moĩmbaha ha Téma
 appmenuitem-find-in-page =
     .label = Kuatiaroguépe jejuhu…
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Emboty tembipuru’i poravorã
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Hejarei
+           *[other] Ñesẽ
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Embojuruja Tembipuru’i Poravorã
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Emboty Tembipuru’i Poravorã
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Embojuehe ko’ág̃a
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Embojuehe ko’ág̃a
-    .value = Embojuehe ko’ág̃a
+appmenu-remote-tabs-sign-into-sync =
+    .label = Eike embojuehe hag̃ua…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Emyandy Ñembojuehe…
+appmenuitem-fxa-toolbar-sync-now2 = Embojuehe ko’ág̃a
 appmenuitem-fxa-manage-account = Mba’ete Ñangarekoha
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = Ñembojuehe ipyahuvéva { $time }
     .label = Ñembojuehe ipyahuvéva { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Embojuehe ha eñongatu mba’ekuaarã
+appmenu-fxa-sync-and-save-data2 = Embojuehe ha eñongatu mba’ekuaarã
 appmenu-fxa-signed-in-label = Tembiapo ñepyrũ
 appmenu-fxa-setup-sync =
     .label = Emyandy ñembojuehe…
@@ -135,29 +159,17 @@ appmenu-help-header =
 appmenu-about =
     .label = { -brand-shorter-name } rehegua
     .accesskey = A
-appmenu-help-product =
-    .label = { -brand-shorter-name } Oipytyvõ
-    .accesskey = O
-appmenu-help-show-tour =
-    .label = { -brand-shorter-name } rehe jeguata
-    .accesskey = o
-appmenu-help-import-from-another-browser =
-    .label = Egueru ambue kundahára guive…
-    .accesskey = l
-appmenu-help-keyboard-shortcuts =
-    .label = Tairenda mbopya’eha
-    .accesskey = K
 appmenu-get-help =
     .label = Eguereko pytyvõ
     .accesskey = H
 appmenu-help-troubleshooting-info =
     .label = Marandu apañuãi myatyrõrã
     .accesskey = T
+appmenu-help-taskmanager =
+    .label = Tembiapo ñangarekohára
 appmenu-help-more-troubleshooting-info =
     .label = Maranduve apañuãi ñemyatyrõ rehegua
     .accesskey = T
-appmenu-help-taskmanager =
-    .label = Tembiapo ñangarekohára
 appmenu-help-report-site-issue =
     .label = Eikuaauka iñapañuãiha ko Tenda…
 appmenu-help-feedback-page =
@@ -177,8 +189,8 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Mba’éicha emyatyrõta apañuãi
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Mba’éicha emyatyrõta apañuãi…
     .accesskey = M
 appmenu-help-exit-troubleshoot-mode =
     .label = Eipe’a mba’éicha emyatyrõta apañuãi
@@ -194,13 +206,10 @@ appmenu-help-not-deceptive =
     .label = Kóva ndaha’éi tenda ombotavyséva…
     .accesskey = d
 
-##
-
-appmenu-help-check-for-update =
-    .label = Ehechajey oĩpa ñembohekopyahu…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Emboava tembipuru renda…
+appmenu-taskmanager =
+    .label = Tembiapo ñangarekohára
 appmenu-developer-tools-subheader = Kundahára Rembipuru

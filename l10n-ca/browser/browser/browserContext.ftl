@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Vés una pàgina enrere ({ $shortcut })
     .aria-label = Enrere
     .accesskey = r
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Enrere
+    .accesskey = r
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Vés una pàgina endavant ({ $shortcut })
     .aria-label = Endavant
     .accesskey = d
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Endavant
+    .accesskey = d
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Actualitza
     .accesskey = z
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Actualitza
+    .accesskey = z
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Atura
     .accesskey = A
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Atura
+    .accesskey = A
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Afegeix la pàgina a les adreces d'interès
     .accesskey = d
     .tooltiptext = Afegeix la pàgina a les adreces d'interès
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Afegeix la pàgina a les adreces d'interès
+    .accesskey = A
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Edita l'adreça d'interès
+    .accesskey = E
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Obre l'enllaç en una pestanya de contenidor nova
     .accesskey = b
-main-context-menu-open-link-container =
-    .label = Obre l'enllaç en un contenidor nou
-    .accesskey = r
 main-context-menu-open-link-new-window =
     .label = Obre l'enllaç en una finestra nova
     .accesskey = f
@@ -193,6 +224,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Màxima velocitat (×2)
     .accesskey = M
+main-context-menu-media-play-speed-2 =
+    .label = Velocitat
+    .accesskey = V
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0,5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1,0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1,25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1,5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Repetició
     .accesskey = R
@@ -220,6 +264,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Imatge sobre imatge
     .accesskey = I
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Mostra en mode d'Imatge sobre Imatge
+    .accesskey = I
 main-context-menu-image-reload =
     .label = Recarrega la imatge
     .accesskey = R
@@ -229,6 +278,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = Visualitza el vídeo
     .accesskey = i
+main-context-menu-image-view-new-tab =
+    .label = Obre la imatge en una pestanya nova
+    .accesskey = i
+main-context-menu-video-view-new-tab =
+    .label = Obre el vídeo en una pestanya nova
+    .accesskey = v
 main-context-menu-image-copy =
     .label = Copia la imatge
     .accesskey = m
@@ -277,6 +332,9 @@ main-context-menu-audio-save-as =
 main-context-menu-video-image-save-as =
     .label = Anomena i desa una instantània…
     .accesskey = s
+main-context-menu-video-take-snapshot =
+    .label = Fes una instantània…
+    .accesskey = F
 main-context-menu-video-email =
     .label = Envia el vídeo per correu…
     .accesskey = a
@@ -301,8 +359,28 @@ main-context-menu-view-background-image =
 main-context-menu-generate-new-password =
     .label = Utilitza una contrasenya generada…
     .accesskey = g
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = Utilitza un inici de sessió desat
+    .accesskey = U
+main-context-menu-use-saved-password =
+    .label = Utilitza una contrasenya desada
+    .accesskey = U
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = Suggereix una contrasenya segura…
+    .accesskey = S
 main-context-menu-manage-logins =
     .label = Gestiona els inicis de sessió…
+    .accesskey = G
+main-context-menu-manage-logins2 =
+    .label = Gestiona els inicis de sessió
     .accesskey = G
 main-context-menu-keyword =
     .label = Afegeix una paraula clau per a aquesta cerca…
@@ -346,6 +424,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Codi font de la selecció
     .accesskey = e
+main-context-menu-take-screenshot =
+    .label = Fes una captura de pantalla
+    .accesskey = F
 main-context-menu-view-page-source =
     .label = Codi font de la pàgina
     .accesskey = f

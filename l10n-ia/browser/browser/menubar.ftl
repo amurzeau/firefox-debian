@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = Preferentias
 menu-application-services =
     .label = Servicios
 menu-application-hide-this =
@@ -59,7 +61,7 @@ menu-file-new-tab =
     .label = Nove scheda
     .accesskey = s
 menu-file-new-container-tab =
-    .label = Nove scheda contextual
+    .label = Nove scheda contentor
     .accesskey = c
 menu-file-new-window =
     .label = Nove fenestra
@@ -111,6 +113,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Cercar in iste pagina…
     .accesskey = r
+menu-edit-find-in-page =
+    .label = Trovar in le pagina…
+    .accesskey = T
 menu-edit-find-again =
     .label = Cercar le sequente
     .accesskey = n
@@ -222,6 +227,8 @@ menu-bookmarks-show-all =
     .label = Monstrar tote le marcapaginas
 menu-bookmark-this-page =
     .label = Adder un marcapaginas
+menu-bookmark-current-tab =
+    .label = Adder scheda actual al marcapaginas
 menu-bookmark-edit =
     .label = Modificar iste marcapaginas
 menu-bookmarks-all-tabs =
@@ -247,15 +254,18 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Aperir session in { -brand-product-name }…
     .accesskey = A
-menu-tools-extensions =
-    .label = Extensiones e themas
-    .accesskey = E
+menu-tools-addons-and-themes =
+    .label = Additivos e themas
+    .accesskey = A
 menu-tools-fxa-sign-in2 =
     .label = Aperir session
     .accesskey = g
 menu-tools-turn-on-sync =
     .label = Activar { -sync-brand-short-name }…
     .accesskey = A
+menu-tools-turn-on-sync2 =
+    .label = Activar Sync…
+    .accesskey = n
 menu-tools-sync-now =
     .label = Synchronisar ora
     .accesskey = S
@@ -265,12 +275,25 @@ menu-tools-fxa-re-auth =
 menu-tools-web-developer =
     .label = Disveloppamento web
     .accesskey = W
+menu-tools-browser-tools =
+    .label = Instrumentos de navigator
+    .accesskey = n
+menu-tools-task-manager =
+    .label = Gestor de activitate
+    .accesskey = G
 menu-tools-page-source =
     .label = Codice fonte del pagina
     .accesskey = f
 menu-tools-page-info =
     .label = Informationes del pagina
     .accesskey = I
+menu-settings =
+    .label = Parametros
+    .accesskey =
+        { PLATFORM() ->
+            [windows] S
+           *[other] l
+        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -281,13 +304,6 @@ menu-preferences =
         { PLATFORM() ->
             [windows] O
            *[other] P
-        }
-menu-settings =
-    .label = Parametros
-    .accesskey =
-        { PLATFORM() ->
-            [windows] S
-           *[other] l
         }
 menu-tools-layout-debugger =
     .label = Depurator de disposition
@@ -301,15 +317,6 @@ menu-window-bring-all-to-front =
     .label = Traher toto al avante
 
 ## Help Menu
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
 
 
 # NOTE: For Engineers, any additions or changes to Help menu strings should
@@ -341,11 +348,11 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Informationes de diagnostico
     .accesskey = I
+menu-help-taskmanager =
+    .label = Gestor de activitate
 menu-help-more-troubleshooting-info =
     .label = Altere informationes diagnostic
     .accesskey = d
-menu-help-taskmanager =
-    .label = Gestor de activitate
 menu-help-report-site-issue =
     .label = Reportar un problema con le sito…
 menu-help-feedback-page =
@@ -357,8 +364,8 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Reinitiar con le additivos active
     .accesskey = R
-menu-help-enter-troubleshoot-mode =
-    .label = Modo diagnostic
+menu-help-enter-troubleshoot-mode2 =
+    .label = Modo diagnostic…
     .accesskey = M
 menu-help-exit-troubleshoot-mode =
     .label = Disactivar modo diagnostic
@@ -371,6 +378,3 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Iste sito non es fraudulente…
     .accesskey = d
-menu-help-check-for-update =
-    .label = Verificar actualisationes…
-    .accesskey = V

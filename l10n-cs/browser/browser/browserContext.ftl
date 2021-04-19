@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Přejde na předchozí stránku ({ $shortcut })
     .aria-label = Zpět
     .accesskey = Z
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Zpět
+    .accesskey = Z
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Přejde na následující stránku ({ $shortcut })
     .aria-label = Vpřed
     .accesskey = V
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Vpřed
+    .accesskey = V
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Znovu načíst
     .accesskey = o
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Znovu načíst
+    .accesskey = o
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Zastavit
     .accesskey = s
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Zastavit
+    .accesskey = s
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name(capitalization: "upper") }
+    .tooltiptext = { -fxaccount-brand-name(capitalization: "upper") }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Přidat stránku do záložek
     .accesskey = P
     .tooltiptext = Přidá tuto stránku do záložek
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Přidat stránku do záložek
+    .accesskey = P
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Upravit záložku
+    .accesskey = p
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Otevřít odkaz v novém kontejnerovém panelu
     .accesskey = K
-main-context-menu-open-link-container =
-    .label = Otevřít odkaz v novém kontejnerovém panelu
-    .accesskey = k
 main-context-menu-open-link-new-window =
     .label = Otevřít odkaz v novém okně
     .accesskey = O
@@ -193,6 +224,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Absurdní (2 ×)
     .accesskey = A
+main-context-menu-media-play-speed-2 =
+    .label = Rychlost
+    .accesskey = r
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0,5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1,0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1,25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1,5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Smyčka
     .accesskey = S
@@ -220,6 +264,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Obraz v obraze
     .accesskey = v
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Sledovat jako obraz v obraze
+    .accesskey = o
 main-context-menu-image-reload =
     .label = Znovu načíst obrázek
     .accesskey = b
@@ -229,6 +278,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = Zobrazit video
     .accesskey = Z
+main-context-menu-image-view-new-tab =
+    .label = Otevřít obrázek v novém panelu
+    .accesskey = e
+main-context-menu-video-view-new-tab =
+    .label = Otevřít video v novém panelu
+    .accesskey = e
 main-context-menu-image-copy =
     .label = Kopírovat obrázek
     .accesskey = r
@@ -277,6 +332,9 @@ main-context-menu-audio-save-as =
 main-context-menu-video-image-save-as =
     .label = Uložit snímek jako…
     .accesskey = U
+main-context-menu-video-take-snapshot =
+    .label = Pořídit snímek…
+    .accesskey = s
 main-context-menu-video-email =
     .label = Poslat video e-mailem…
     .accesskey = a
@@ -321,6 +379,9 @@ main-context-menu-suggest-strong-password =
 main-context-menu-manage-logins =
     .label = Správa přihlašovacích údajů
     .accesskey = S
+main-context-menu-manage-logins2 =
+    .label = Správa přihlašovacích údajů
+    .accesskey = S
 main-context-menu-keyword =
     .label = Přiřadit k tomuto vyhledávání klíčové slovo…
     .accesskey = h
@@ -363,6 +424,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Zobrazit zdrojový kód výběru
     .accesskey = j
+main-context-menu-take-screenshot =
+    .label = Pořídit snímek
+    .accesskey = s
 main-context-menu-view-page-source =
     .label = Zobrazit zdrojový kód stránky
     .accesskey = r

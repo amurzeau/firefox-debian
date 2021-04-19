@@ -10,6 +10,8 @@ preferences-title =
             [windows] 選項
            *[other] 偏好設定
         }
+preferences-tab-title =
+    .title = 偏好設定
 category-list =
     .aria-label = 分類
 pane-general-title = 一般
@@ -90,6 +92,7 @@ update-in-progress-ok-button = 捨棄 (&D)
 update-in-progress-cancel-button = 繼續 (&C)
 account-button = 帳號設定
 addons-button = 擴充套件與佈景主題
+open-addons-sidebar-button = 附加元件與佈景主題
 
 ## OS Authentication dialog
 
@@ -165,6 +168,12 @@ customize-alert-label =
 tray-icon-label =
     .label = 顯示工具列圖示
     .accesskey = t
+biff-use-system-alert =
+    .label = 使用系統通知
+tray-icon-unread-label =
+    .label = 有未讀訊息時，在工作列顯示圖示
+    .accesskey = t
+tray-icon-unread-description = 建議在使用小型工作列按鈕時開啟此設定
 mail-system-sound-label =
     .label = 系統預設「收到新郵件」音效
     .accesskey = D
@@ -702,6 +711,17 @@ search-input-box =
             [windows] 搜尋選項
            *[other] 搜尋偏好設定
         }
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-preferences-input =
+    .style = width: 15.4em
+    .placeholder = 搜尋偏好設定
 
 ## Preferences UI Search Results
 

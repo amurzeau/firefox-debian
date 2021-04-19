@@ -266,11 +266,28 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Dodaj zakładkę
+bookmarks-edit-bookmark = Edytuj zakładkę
+bookmark-panel-cancel =
+    .label = Anuluj
+    .accesskey = A
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Usuń zakładkę
+            [few] Usuń { $count } zakładki
+           *[many] Usuń { $count } zakładek
+        }
+    .accesskey = U
 bookmark-panel-show-editor-checkbox =
     .label = Wyświetlanie tego okna podczas dodawania
     .accesskey = W
 bookmark-panel-done-button =
     .label = Gotowe
+bookmark-panel-save-button =
+    .label = Zachowaj
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -290,6 +307,8 @@ identity-passive-loaded = Niektóre elementy tej strony (np. obrazy) nie były p
 identity-active-loaded = Ochrona na tej stronie została wyłączona przez użytkownika.
 identity-weak-encryption = Strona używa słabego szyfrowania.
 identity-insecure-login-forms = Dane logowania wprowadzone na tej stronie nie są chronione.
+identity-permissions =
+    .value = Uprawnienia
 identity-https-only-connection-upgraded = (przełączono na protokół HTTPS)
 identity-https-only-label = Tryb używania wyłącznie protokołu HTTPS
 identity-https-only-dropdown-on =
@@ -301,8 +320,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Włącz tryb używania wyłącznie protokołu HTTPS dla tej witryny, jeśli chcesz, aby { -brand-short-name } przełączał na zabezpieczone połączenie, kiedy to możliwe.
 identity-https-only-info-turn-off2 = Jeśli strona wydaje się niepoprawnie działać, możesz wyłączyć tryb używania wyłącznie protokołu HTTPS dla tej witryny, aby odświeżyć ją za pomocą niezabezpieczonego protokołu HTTP.
 identity-https-only-info-no-upgrade = Nie można przełączyć połączenia z protokołu HTTP.
-identity-permissions =
-    .value = Uprawnienia
 identity-permissions-storage-access-header = Ciasteczka między witrynami
 identity-permissions-storage-access-hint = Te strony mogą używać ciasteczek i danych między witrynami, kiedy jesteś na tej witrynie.
 identity-permissions-reload-hint = Ponowne wczytanie strony może być konieczne, aby wprowadzone zmiany przyniosły skutek.
@@ -350,8 +367,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Odtwarzanie
-browser-tab-audio-muted = Wyciszone
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = ODTWARZANIE
 # This label should be written in all capital letters if your locale supports them.
@@ -360,6 +375,32 @@ browser-tab-audio-muted2 = WYCISZONE
 browser-tab-audio-blocked = ZABLOKOWANO AUTOMATYCZNE ODTWARZANIE
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = OBRAZ W OBRAZIE
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] WYCISZ KARTĘ
+        [one] WYCISZ { $count } KARTĘ
+        [few] WYCISZ { $count } KARTY
+       *[many] WYCISZ { $count } KART
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] WŁĄCZ DŹWIĘK
+        [one] WŁĄCZ DŹWIĘK W { $count } KARCIE
+        [few] WŁĄCZ DŹWIĘK W { $count } KARTACH
+       *[many] WŁĄCZ DŹWIĘK W { $count } KARTACH
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] ODTWARZAJ
+        [one] ODTWARZAJ W { $count } KARCIE
+        [few] ODTWARZAJ W { $count } KARTACH
+       *[many] ODTWARZAJ W { $count } KARTACH
+    }
 
 ## Bookmarks toolbar items
 
@@ -511,6 +552,13 @@ urlbar-result-action-tabtosearch-web = szukaj w { $engine } prosto z paska adr
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = szukaj na witrynie { $engine } prosto z paska adresu
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = kopiuj
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -552,8 +600,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Wyświetl wszystkie zakładki
-bookmarks-recent-bookmarks =
-    .value = Ostatnio dodane
 bookmarks-manage-bookmarks =
     .label = Zarządzaj zakładkami
 bookmarks-recent-bookmarks-panel =
@@ -574,12 +620,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Ukryj panel zakładek
            *[other] Wyświetl panel zakładek
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Ukryj pasek zakładek
-           *[other] Wyświetl pasek zakładek
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -626,12 +666,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Zakładki
-library-bookmarks-bookmark-this-page =
-    .label = Dodaj zakładkę
-library-bookmarks-bookmark-edit =
-    .label = Edytuj zakładkę
 library-recent-activity-title =
     .value = Ostatnia aktywność
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Wyślij do { -pocket-brand-name }
+    .tooltiptext = Wyślij do { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Dodatki i motywy
+    .tooltiptext = Zarządzaj dodatkami i motywami ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Ustawienia
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Otwórz ustawienia ({ $shortcut })
+           *[other] Otwórz ustawienia
+        }
 
 ## More items
 
@@ -658,3 +717,9 @@ panel-save-update-password = Hasło
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = Czy usunąć „{ $name }”?
 addon-removal-abuse-report-checkbox = Zgłoś to rozszerzenie do organizacji { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Zarządzaj kontem
+remote-tabs-sync-now = Synchronizuj teraz

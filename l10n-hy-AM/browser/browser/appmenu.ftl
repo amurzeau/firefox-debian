@@ -45,6 +45,11 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Սինք
+appmenuitem-fxa-manage-account = Կառավարել հաշիվը
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
+appmenu-fxa-signed-in-label = Մուտք գործել
 appmenuitem-save-page =
     .label = Պահպանել Էջը որպես…
 
@@ -98,18 +103,9 @@ profiler-popup-capture-shortcut =
 appmenu-about =
     .label = { -brand-shorter-name }-ի մասին
     .accesskey = մ
-appmenu-help-product =
-    .label = { -brand-shorter-name }-ի Օգնությունը
-    .accesskey = Օ
-appmenu-help-show-tour =
-    .label = Շրջայց { -brand-shorter-name }-ի հետ
-    .accesskey = ջ
-appmenu-help-import-from-another-browser =
-    .label = Ներմուծել այլ դիտարկիչից...
-    .accesskey = I
-appmenu-help-keyboard-shortcuts =
-    .label = Ստեղնաշարի պիտակներ
-    .accesskey = Ս
+appmenu-get-help =
+    .label = Ստանալ օգնություն
+    .accesskey = H
 appmenu-help-troubleshooting-info =
     .label = Անսարքության տեղեկատվություն
     .accesskey = Ա
@@ -131,6 +127,13 @@ appmenu-help-safe-mode-with-addons =
     .label = Վերամեկնարկել՝ միացնելով հավելումները
     .accesskey = Վ
 
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Խափանաշտկման կերպ…
+    .accesskey = M
+
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
@@ -141,10 +144,7 @@ appmenu-help-not-deceptive =
     .label = Սա խաբուսիկ կայք չէ...
     .accesskey = խ
 
-##
-
-appmenu-help-check-for-update =
-    .label = Ստուգել թարմացումները...
-
 ## More Tools
 
+appmenu-taskmanager =
+    .label = Առաջադրանքների ղեկավար

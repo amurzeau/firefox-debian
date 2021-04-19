@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = Ismenyifen
 menu-application-services =
     .label = Tanfiwin
 menu-application-hide-this =
@@ -252,14 +254,17 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Qqen ɣer { -brand-product-name }...
     .accesskey = q
-menu-tools-extensions =
-    .label = Iseɣzaf d yisental
+menu-tools-addons-and-themes =
+    .label = Izegrar d yisental
     .accesskey = I
 menu-tools-fxa-sign-in2 =
     .label = Kcem
     .accesskey = K
 menu-tools-turn-on-sync =
     .label = Rmed { -sync-brand-short-name }...
+    .accesskey = d
+menu-tools-turn-on-sync2 =
+    .label = Rmed amtawi…
     .accesskey = d
 menu-tools-sync-now =
     .label = Mtawi tura
@@ -270,12 +275,25 @@ menu-tools-fxa-re-auth =
 menu-tools-web-developer =
     .label = Aneflay web
     .accesskey = A
+menu-tools-browser-tools =
+    .label = Ifecka n yiminig
+    .accesskey = F
+menu-tools-task-manager =
+    .label = Amsefrak n twuri
+    .accesskey = M
 menu-tools-page-source =
     .label = Tangalt taɣbalut n usebter
     .accesskey = T
 menu-tools-page-info =
     .label = Talɣut ɣef usebter
     .accesskey = T
+menu-settings =
+    .label = Iɣewwaren
+    .accesskey =
+        { PLATFORM() ->
+            [windows] S
+           *[other] n
+        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -299,15 +317,6 @@ menu-window-bring-all-to-front =
     .label = Awi-d kullec ɣer sdat
 
 ## Help Menu
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
 
 
 # NOTE: For Engineers, any additions or changes to Help menu strings should
@@ -339,11 +348,11 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Talɣut n usellek
     .accesskey = Γ
+menu-help-taskmanager =
+    .label = Amsefrak n twuri
 menu-help-more-troubleshooting-info =
     .label = Ugar n talɣut n usellek
     .accesskey = T
-menu-help-taskmanager =
-    .label = Amsefrak n twuri
 menu-help-report-site-issue =
     .label = Azen ugur ɣef usmel…
 menu-help-feedback-page =
@@ -355,8 +364,11 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Ales asenker s yizegrar urmiden
     .accesskey = A
-menu-help-enter-troubleshoot-mode =
-    .label = Askar n usellek
+menu-help-enter-troubleshoot-mode2 =
+    .label = Askar n usellek…
+    .accesskey = A
+menu-help-exit-troubleshoot-mode =
+    .label = Sens askar n ferru n wuguren
     .accesskey = A
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
@@ -366,6 +378,3 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Mačči d asmel web n ukellex…
     .accesskey = d
-menu-help-check-for-update =
-    .label = Wali ma llan yileqman…
-    .accesskey = W

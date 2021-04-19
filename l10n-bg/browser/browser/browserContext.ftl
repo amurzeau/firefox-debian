@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Връщане една страница назад ({ $shortcut })
     .aria-label = Назад
     .accesskey = з
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Назад
+    .accesskey = з
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Отиване една страница напред ({ $shortcut })
     .aria-label = Напред
     .accesskey = п
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Напред
+    .accesskey = п
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Презареждане
     .accesskey = п
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Презареждане
+    .accesskey = п
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -63,6 +75,10 @@ toolbar-button-reload =
 
 main-context-menu-stop =
     .aria-label = Спиране
+    .accesskey = с
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Спиране
     .accesskey = с
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
@@ -120,6 +136,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = Отмятане на препратката
     .accesskey = О
+main-context-menu-bookmark-link =
+    .label = Отмятане на препратка
+    .accesskey = о
 main-context-menu-save-link =
     .label = Запазване на препратката като…
     .accesskey = к
@@ -131,12 +150,20 @@ main-context-menu-save-link-to-pocket =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+
+## The access keys for "Copy Link" and "Copy Email Address"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
 main-context-menu-copy-email =
     .label = Копиране на електронния адрес
     .accesskey = е
 main-context-menu-copy-link =
     .label = Копиране на препратката
     .accesskey = а
+main-context-menu-copy-link-simple =
+    .label = Копиране на препратка
+    .accesskey = к
 
 ## Media (video/audio) controls
 ##
@@ -179,6 +206,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Светкавично (2×)
     .accesskey = С
+main-context-menu-media-play-speed-2 =
+    .label = Скорост
+    .accesskey = с
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Повтаряне
     .accesskey = в
@@ -206,80 +246,126 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Картина в картината
     .accesskey = т
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Отваряне на картина в картина
+    .accesskey = к
 main-context-menu-image-reload =
     .label = Презареждане на изображение
     .accesskey = з
 main-context-menu-image-view =
-    .label = Преглед на изображението
+    .label = Преглед на изображение
     .accesskey = г
 main-context-menu-video-view =
-    .label = Показване на видео
+    .label = Преглед на видео
+    .accesskey = в
+main-context-menu-image-view-new-tab =
+    .label = Отваряне на изображение в раздел
+    .accesskey = и
+main-context-menu-video-view-new-tab =
+    .label = Отваряне на видео в раздел
     .accesskey = в
 main-context-menu-image-copy =
-    .label = Копиране на изображението
+    .label = Копиране на изображение
     .accesskey = т
 main-context-menu-image-copy-location =
-    .label = Копиране адреса на изображението
+    .label = Копиране адрес на изображение
     .accesskey = п
 main-context-menu-video-copy-location =
-    .label = Копиране адреса на видеото
+    .label = Копиране адрес на видео
     .accesskey = т
 main-context-menu-audio-copy-location =
-    .label = Копиране адреса на аудиото
+    .label = Копиране адрес на аудио
     .accesskey = т
+main-context-menu-image-copy-link =
+    .label = Копиране на препратка към изображение
+    .accesskey = и
+main-context-menu-video-copy-link =
+    .label = Копиране на препратка към видео
+    .accesskey = в
+main-context-menu-audio-copy-link =
+    .label = Копиране на препратка към аудио
+    .accesskey = а
 main-context-menu-image-save-as =
-    .label = Запазване на изображението като…
+    .label = Запазване на изображение като…
     .accesskey = ж
 main-context-menu-image-email =
-    .label = Изпращане на изображението като мейл…
+    .label = Изпращане на изображение по мейл…
     .accesskey = ж
 main-context-menu-image-set-as-background =
-    .label = Поставяне като фон на работния плот…
+    .label = Поставяне като фон на плота…
     .accesskey = П
 main-context-menu-image-info =
-    .label = Информация за изображението
+    .label = Информация за изображение
     .accesskey = И
+main-context-menu-image-set-image-as-background =
+    .label = Поставяне като фон на плота…
+    .accesskey = ф
 main-context-menu-image-desc =
-    .label = Показване на описанието
+    .label = Преглед на описание
     .accesskey = о
 main-context-menu-video-save-as =
-    .label = Запазване на видеото като…
+    .label = Запазване на видео като…
     .accesskey = в
 main-context-menu-audio-save-as =
-    .label = Запазване на аудиото като…
+    .label = Запазване на аудио като…
     .accesskey = а
 main-context-menu-video-image-save-as =
-    .label = Запазване на снимката като…
-    .accesskey = с
+    .label = Запазване на екранна снимка като…
+    .accesskey = е
+main-context-menu-video-take-snapshot =
+    .label = Правене на екранна снимка
+    .accesskey = е
 main-context-menu-video-email =
-    .label = Изпращане на видеото като мейл…
+    .label = Изпращане на видео по мейл…
     .accesskey = т
 main-context-menu-audio-email =
-    .label = Изпращане на аудиото като мейл…
+    .label = Изпращане на аудио по мейл…
     .accesskey = у
 main-context-menu-plugin-play =
-    .label = Активиране на тази приставка
+    .label = Включване на приставката
     .accesskey = т
 main-context-menu-plugin-hide =
-    .label = Скриване на тази приставка
+    .label = Скриване на приставка
     .accesskey = С
 main-context-menu-save-to-pocket =
-    .label = Запазване на страницата в { -pocket-brand-name }
+    .label = Запазване на страница в { -pocket-brand-name }
     .accesskey = с
 main-context-menu-send-to-device =
-    .label = Изпращане на страницата до устройство
+    .label = Изпращане на страница до устройство
     .accesskey = у
 main-context-menu-view-background-image =
-    .label = Преглед на фоновото изображение
+    .label = Преглед на фоново изображение
     .accesskey = ф
 main-context-menu-generate-new-password =
     .label = Генериране на парола…
     .accesskey = п
+
+## The access keys for "Use Saved Login" and "Use Saved Password"
+## should be the same if possible; the two context menu items
+## are mutually exclusive.
+
+main-context-menu-use-saved-login =
+    .label = Използване на запазена регистрация
+    .accesskey = р
+main-context-menu-use-saved-password =
+    .label = Използване на запазена парола
+    .accesskey = п
+
+##
+
+main-context-menu-suggest-strong-password =
+    .label = Предлагане на добра парола…
+    .accesskey = а
+main-context-menu-manage-logins =
+    .label = Управление на регистрации…
+    .accesskey = р
 main-context-menu-keyword =
-    .label = Добавяне на ключова дума за търсенето…
+    .label = Добавяне на ключова дума за търсене…
     .accesskey = к
 main-context-menu-link-send-to-device =
-    .label = Изпращане на препратката до устройство
+    .label = Изпращане на препратка до устройство
     .accesskey = у
 main-context-menu-frame =
     .label = Рамка
@@ -317,11 +403,14 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Изходен код на избраното
     .accesskey = к
+main-context-menu-take-screenshot =
+    .label = Снимка на екрана
+    .accesskey = е
 main-context-menu-view-page-source =
-    .label = Изходен код на страницата
+    .label = Изходен код на страница
     .accesskey = к
 main-context-menu-view-page-info =
-    .label = Информация за страницата
+    .label = Информация за страница
     .accesskey = И
 main-context-menu-bidi-switch-text =
     .label = Превключване посоката на текста
@@ -332,8 +421,11 @@ main-context-menu-bidi-switch-page =
 main-context-menu-inspect-element =
     .label = Изследване на елемента
     .accesskey = И
+main-context-menu-inspect =
+    .label = Инспектиране
+    .accesskey = с
 main-context-menu-inspect-a11y-properties =
-    .label = Изследване на достъпността
+    .label = Изследване на достъпност
 main-context-menu-eme-learn-more =
     .label = Научете повече за DRM…
     .accesskey = D

@@ -264,11 +264,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Legg til bokmerke
+bookmarks-edit-bookmark = Rediger bokmerke
+bookmark-panel-cancel =
+    .label = Avbryt
+    .accesskey = A
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Slett bokmerket
+           *[other] Slett { $count } bokmerke
+        }
+    .accesskey = r
 bookmark-panel-show-editor-checkbox =
     .label = Vis redigerar ved lagring
     .accesskey = V
 bookmark-panel-done-button =
     .label = Ferdig
+bookmark-panel-save-button =
+    .label = Lagre
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -288,6 +304,8 @@ identity-passive-loaded = Delar av denne sida er ikkje trygg (til dømes bilde).
 identity-active-loaded = Du har slått av vern på denne sida.
 identity-weak-encryption = Denne sida brukar ei svak kryptering.
 identity-insecure-login-forms = Innloggingsinfo skrive inn på denne sida kan lesast av tredjepart.
+identity-permissions =
+    .value = Løyve
 identity-https-only-connection-upgraded = (oppgradert til HTTPS)
 identity-https-only-label = Berre-HTTPS-modus
 identity-https-only-dropdown-on =
@@ -299,8 +317,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Slå på berre-HTTPS-modus for denne nettstaden dersom du vil at { -brand-short-name } skal oppgradere til ei trygg tilkopling når det er råd.
 identity-https-only-info-turn-off2 = Dersom nettsida verkar øydelagd, kan det vere lurt å slå av berre-HTTPS-modus for denne nettstadent for å laste inn på nytt ved hjelp av utrygg HTTP.
 identity-https-only-info-no-upgrade = Klarte ikkje å oppgradere kopling frå HTTP.
-identity-permissions =
-    .value = Løyve
 identity-permissions-storage-access-header = Infokapslar på tvers av nettstadar
 identity-permissions-storage-access-hint = Desse partane kan bruke infokapslar på tvers av nettstadar og nettstaddata medan du er på denne nettstaden.
 identity-permissions-reload-hint = Du må kanskje laste sida på nytt for at endringane skal gjelde.
@@ -348,8 +364,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Spelar av
-browser-tab-audio-muted = Dempa
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = SPELAR
 # This label should be written in all capital letters if your locale supports them.
@@ -358,6 +372,26 @@ browser-tab-audio-muted2 = DEMPA
 browser-tab-audio-blocked = AUTOAVSPELING BLOKKERT
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = BILDE-I-BILDE
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] SLÅ AV LYD I FANE
+       *[other] SLÅ AV LYD I { $count } FANER
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] SLÅ PÅ LYD I FANE
+       *[other] SLÅ PÅ LYD I { $count } FANER
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] SPEL AV FANE
+       *[other] SPEL AV { $count } FANER
+    }
 
 ## Bookmarks toolbar items
 
@@ -509,6 +543,13 @@ urlbar-result-action-tabtosearch-web = Søk med { $engine } direket frå adresse
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Søk i { $engine } direkte frå adresselinja
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Kopier
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -550,8 +591,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Vis alle bokmerke
-bookmarks-recent-bookmarks =
-    .value = Nyleg bokmerkt
 bookmarks-manage-bookmarks =
     .label = Handter bokmerke
 bookmarks-recent-bookmarks-panel =
@@ -572,12 +611,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Gøym bokmerkesidestolpen
            *[other] Vis sidestolpe for bokmerke
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Gøym bokmerkeverktøylinja
-           *[other] Vis verktøylinje for bokmerke
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -624,12 +657,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Bokmerke
-library-bookmarks-bookmark-this-page =
-    .label = Bokmerk denne sida
-library-bookmarks-bookmark-edit =
-    .label = Rediger dette bokmerket
 library-recent-activity-title =
     .value = Nyleg aktivitet
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Lagre til { -pocket-brand-name }
+    .tooltiptext = Lagre til { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Tillegg og tema
+    .tooltiptext = Handter tillegg og tema ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Innstillingar
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Opne innstillingar ({ $shortcut })
+           *[other] OPne innstillingar
+        }
 
 ## More items
 
@@ -656,3 +708,9 @@ panel-save-update-password = Passord
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = Fjerne { $name }?
 addon-removal-abuse-report-checkbox = Rapporter denne utvidinga til { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Handter kontoen
+remote-tabs-sync-now = Synkroniser no

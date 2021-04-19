@@ -18,6 +18,7 @@ login-filter =
 create-login-button = Rnu anekcum amaynut
 fxaccounts-sign-in-text = Kcem ɣer wawalen-ik uffiren ɣef yibenkan-nniḍen
 fxaccounts-sign-in-button = Qqen ɣer { -sync-brand-short-name }
+fxaccounts-sign-in-sync-button = Kcem akken ad yemtawi
 fxaccounts-avatar-button =
     .title = Sefrek amiḍan
 
@@ -70,11 +71,15 @@ about-logins-list-item-vulnerable-password-icon =
 
 login-intro-heading = Tettnadiḍ inekcam-ik yettwaskelsen? Swel { -sync-brand-short-name }.
 about-logins-login-intro-heading-logged-out = Tettnadiḍ inekcam-ik/im yettwaskelsen? Swel { -sync-brand-short-name } neɣ kter-iten-id.
+about-logins-login-intro-heading-logged-out2 = Tettnadiḍ ɣef yinekcam-ik·im yettwaskelsen? Rmed amtawi neɣ kter-iten-id.
 about-logins-login-intro-heading-logged-in = Ulac inekcam yemtawin i yettwafen.
 login-intro-description = Ma teskelseḍ inekcam-ik deg { -brand-product-name } ɣef ddeqs n yibenkan, a-t-an amek ara tkecmeḍ ɣur-sen.
 login-intro-instruction-fxa = Rnu neɣ qqen ɣer { -fxaccount-brand-name } inek ɣef yibenk anida ttwaskelsen yinekcam-ik.
 login-intro-instruction-fxa-settings = Ḍmed d akken trecmeḍ inekcam-ik deg yiɣewwaṛen n { -sync-brand-short-name }.
 about-logins-intro-instruction-help = Rzu ɣer <a data-l10n-name="help-link"> tallelt n { -lockwise-brand-short-name }</a> i wugar n yisallen.
+login-intro-instructions-fxa = Rnu neɣ qqen ɣer { -fxaccount-brand-name } inek·inem ɣef yibenk anida ttwaskelsen yinekcam-ik·im.
+login-intro-instructions-fxa-settings = Ddu ɣer yiɣewwaren > Rmed amtawi… Ṛcem tibewwaḍin n yinekcam akked wawalen uffiren
+login-intro-instructions-fxa-help = Rzu ɣer <a data-l10n-name="help-link">{ -lockwise-brand-short-name } tallalt</a> i wugar n yisallen.
 about-logins-intro-import = Ma yella tuqqna-inek tettwasekles deg yiminig-nniḍen, tzemreḍ <a data-l10n-name="import-link"> ad ten-id-ktereḍ seg { -lockwise-brand-short-name }
 about-logins-intro-import2 = Ma yella inekcam-ik/im ttwaskelsen beṛṛa n { -brand-product-name }, tzemreḍ <a data-l10n-name="import-browser-link"> ad ten-id-tketreḍ seg yiminig-nniḍen</a> neɣ <a data-l10n-name="import-file-link">seg ufaylu</a>
 
@@ -312,6 +317,7 @@ about-logins-import-dialog-error-unable-to-read-description = Ḍmen tferneḍ a
 about-logins-import-dialog-error-no-logins-imported = Ulac iɣmisen i d-yettwaktaren
 about-logins-import-dialog-error-learn-more = Issin ugar
 about-logins-import-dialog-error-try-again = Ɛreḍ tikkelt-nniḍen…
+about-logins-import-dialog-error-try-import-again = Ɛreḍ aktar tikkelt-nniḍen…
 about-logins-import-dialog-error-cancel = Sefsex
 about-logins-import-report-title = Agzul n uktar
 about-logins-import-report-description = Inekcam d wawalen uffiren ttwaketren ɣer { -brand-short-name }.
@@ -319,6 +325,7 @@ about-logins-import-report-description = Inekcam d wawalen uffiren ttwaketren ɣ
 # Variables:
 #  $number (number) - The number of the row
 about-logins-import-report-row-index = Izirig { $number }
+about-logins-import-report-row-description-no-change = Uslig: yemsaḍa swaswa d unekcum yellan
 about-logins-import-report-row-description-modified = Anekcam yellan yettwaleqqem
 about-logins-import-report-row-description-added = Anekcum amaynut ittwarna
 about-logins-import-report-row-description-error = Tuccḍa: Urti ixuṣṣen

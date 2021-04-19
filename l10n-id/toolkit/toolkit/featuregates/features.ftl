@@ -11,26 +11,16 @@ experimental-features-css-masonry-description = Mengaktifkan dukungan untuk fitu
 # by various online articles and is technical in nature.
 experimental-features-web-gpu2 =
     .label = API Web: WebGPU
+experimental-features-web-gpu-description2 = API baru ini menyediakan dukungan tingkat-rendah untuk melakukan komputasi dan perenderan grafis dengan menggunakan <a data-l10n-name="wikipedia">Unit Pemrosesan Grafik (GPU)</a> dari perangkat atau komputer pengguna. <a data-l10n-name="spec">Spesifikasi</a> masih dalam proses pengembangan. Lihat <a data-l10n-name="bugzilla">bug 1602129</a> untuk detail lebih lanjut.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-media-avif =
     .label = Media: AVIF
+experimental-features-media-avif-description = Jika fitur ini diaktifkan, { -brand-short-name } akan mendukung format Berkas Gambar AV1 (AVIF). Ini adalah format berkas gambar diam yang memanfaatkan kemampuan algoritme kompresi video AV1 untuk mengurangi ukuran gambar. Lihat <a data-l10n-name="bugzilla">bug 1443863</a> untuk detail lebih lanjut.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-web-api-inputmode =
     .label = API Web: inputmode
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-web-api-link-preload =
-    .label = API Web: <link rel="preload">
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-css-focus-visible =
-    .label = CSS: Pseudo-class: :focus-visible
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-web-api-beforeinput =
-    .label = API Web: Event beforeinput
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-css-constructable-stylesheets =
@@ -54,8 +44,6 @@ experimental-features-cookie-samesite-none-requires-secure2-description = Kuki d
 experimental-features-abouthome-startup-cache =
     .label = Tembolok awal about:home
 experimental-features-abouthome-startup-cache-description = Tembolok untuk dokumen about:home awal yang dimuat secara baku pada saat memulai. Tujuan dari tembolok ini adalah untuk meningkatkan kinerja proses mulai.
-experimental-features-print-preview-tab-modal =
-    .label = Desain Ulang Pratinjau Cetak
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-cookie-samesite-schemeful =
@@ -66,6 +54,7 @@ experimental-features-devtools-serviceworker-debugger-support =
 # JS JIT Warp project
 experimental-features-js-warp =
     .label = JavaScript JIT: Warp
+experimental-features-js-warp-description = Aktifkan Warp, sebuah proyek untuk meningkatkan kinerja JavaScript dan penggunaan memori.
 # Fission is the name of the feature and should not be translated.
 experimental-features-fission =
     .label = Fission (Isolasi Situs)

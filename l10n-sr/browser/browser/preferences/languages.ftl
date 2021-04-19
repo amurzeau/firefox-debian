@@ -3,36 +3,27 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 webpage-languages-window =
-    .title = Поставке језика веб странице
+    .title = Подешавања језика веб-страница
     .style = width: 40em
-
 languages-close-key =
     .key = w
-
-languages-description = Веб странице су понекад понуђене на више језика. Изаберите језик за приказивање тих страница у поставкама
-
+languages-description = Неки веб-сајтови су доступни на више језика. Одаберите језике за приказ веб-страница према жељеном редоследу.
 languages-customize-spoof-english =
     .label = Захтевај енглеске верзије веб страница ради веће приватности
-
 languages-customize-moveup =
-    .label = На горе
+    .label = Нагоре
     .accesskey = г
-
 languages-customize-movedown =
-    .label = На доле
+    .label = Надоле
     .accesskey = д
-
 languages-customize-remove =
     .label = Уклони
     .accesskey = У
-
 languages-customize-select-language =
-    .placeholder = Избор језика за додавање…
-
+    .placeholder = Изабери жељени језик…
 languages-customize-add =
     .label = Додај
     .accesskey = ј
-
 # The pattern used to generate strings presented to the user in the
 # locale selection list.
 #
@@ -45,29 +36,20 @@ languages-customize-add =
 #   $code (String) - Locale code of the locale (for example: "is", "es-CL")
 languages-code-format =
     .label = { $locale }  [{ $code }]
-
 languages-active-code-format =
     .value = { languages-code-format.label }
-
 browser-languages-window =
-    .title = { -brand-short-name } поставке језика
+    .title = Подешавања језика за { -brand-short-name }
     .style = width: 40em
-
 browser-languages-description = { -brand-short-name } ће приказивати први језик као ваш подразумевани и приказиваће алтернативне језике ако је потребно да се прикажу.
-
 browser-languages-search = Потражи више језика…
-
 browser-languages-searching =
     .label = Тражим језике…
-
 browser-languages-downloading =
-    .label = Преузимам…
-
+    .label = Преузимање…
 browser-languages-select-language =
-    .label = Изаберите језик који желите додати…
-    .placeholder = Изаберите језик који желите додати…
-
+    .label = Изаберите жељени језик…
+    .placeholder = Изаберите жељени језик…
 browser-languages-installed-label = Инсталирани језици
 browser-languages-available-label = Доступни језици
-
-browser-languages-error = { -brand-short-name } не може ажурирати ваше језике у овом тренутку. Проверите да ли сте повезани на интернет или покушајте поново.
+browser-languages-error = { -brand-short-name } тренутно не може да ажурира списак језика. Проверите да ли сте повезани на интернет или покушајте поново.

@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = Preferencies
 menu-application-services =
     .label = Servicios
 menu-application-hide-this =
@@ -252,9 +254,9 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Aniciar sesión en { -brand-product-name }…
     .accesskey = F
-menu-tools-extensions =
-    .label = Estensiones y estilos
-    .accesskey = E
+menu-tools-addons-and-themes =
+    .label = Complementos y estilos
+    .accesskey = C
 menu-tools-fxa-sign-in2 =
     .label = Aniciar sesión
     .accesskey = n
@@ -270,12 +272,25 @@ menu-tools-fxa-re-auth =
 menu-tools-web-developer =
     .label = Desendolcador web
     .accesskey = W
+menu-tools-browser-tools =
+    .label = Ferramientes del restolador
+    .accesskey = r
+menu-tools-task-manager =
+    .label = Xestor de xeres
+    .accesskey = X
 menu-tools-page-source =
     .label = Códigu fonte de la páxina
     .accesskey = o
 menu-tools-page-info =
     .label = Información de la páxina
     .accesskey = I
+menu-settings =
+    .label = Axustes
+    .accesskey =
+        { PLATFORM() ->
+            [windows] A
+           *[other] x
+        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -286,13 +301,6 @@ menu-preferences =
         { PLATFORM() ->
             [windows] O
            *[other] n
-        }
-menu-settings =
-    .label = Axustes
-    .accesskey =
-        { PLATFORM() ->
-            [windows] A
-           *[other] x
         }
 menu-tools-layout-debugger =
     .label = Depurador de distribuciones
@@ -306,15 +314,6 @@ menu-window-bring-all-to-front =
     .label = Trayer too al frente
 
 ## Help Menu
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
 
 
 # NOTE: For Engineers, any additions or changes to Help menu strings should
@@ -346,11 +345,11 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = Información pa iguar problemes
     .accesskey = i
+menu-help-taskmanager =
+    .label = Xestor de xeres
 menu-help-more-troubleshooting-info =
     .label = Más información pa iguar problemes
     .accesskey = a
-menu-help-taskmanager =
-    .label = Xestor de xeres
 menu-help-report-site-issue =
     .label = Informar d'un fallu del sitiu…
 menu-help-feedback-page =
@@ -362,11 +361,11 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Reaniciar colos complementos activaos
     .accesskey = R
-menu-help-enter-troubleshoot-mode =
-    .label = Mou d'iguar problemes
+menu-help-enter-troubleshoot-mode2 =
+    .label = Mou d'iguar problemes…
     .accesskey = M
 menu-help-exit-troubleshoot-mode =
-    .label = Desactivar el mou pa iguar problemes
+    .label = Desactivar el mou d'iguar problemes
     .accesskey = m
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
@@ -376,6 +375,3 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Esti sitiu nun ye engañosu…
     .accesskey = e
-menu-help-check-for-update =
-    .label = Comprobar los anovamientos…
-    .accesskey = C

@@ -173,6 +173,15 @@ onboarding-multistage-set-default-subtitle = 탐색할 때마다 속도, 안전 
 onboarding-multistage-set-default-primary-button-label = 기본 브라우저로
 onboarding-multistage-set-default-secondary-button-label = 나중에
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-pin-default-header = 클릭 한 번으로 <span data-l10n-name="zap">{ -brand-short-name }</span> 시작
+onboarding-multistage-pin-default-subtitle = 웹을 사용할 때마다 빠르고 안전하며 사생활 보호를 할 수 있습니다.
+# The "settings" here refers to "Windows 10 Settings App" and not the browser's
+onboarding-multistage-pin-default-waiting-subtitle = 설정이 열리면 웹 브라우저에서 { -brand-short-name }를 선택하세요
+# The "settings" here refers to "Windows 10 Settings App" and not the browser's
+onboarding-multistage-pin-default-help-text = 그러면 { -brand-short-name }가 작업 표시줄에 고정되고 설정이 열립니다
+onboarding-multistage-pin-default-primary-button-label = { -brand-short-name }를 내 기본 브라우저로 만들기
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "more" should stay inside the span.
 onboarding-multistage-import-header = 비밀번호, 북마크 및 <span data-l10n-name="zap">기타</span> 가져오기
 onboarding-multistage-import-subtitle = 다른 브라우저에서 오셨나요? 모든 것을 { -brand-short-name }에 쉽게 가져올 수 있습니다.

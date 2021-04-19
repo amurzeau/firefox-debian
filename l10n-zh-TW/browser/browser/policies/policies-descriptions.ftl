@@ -11,10 +11,11 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = 設定 WebExtension 可透過 chrome.storage.managed 存取的政策。
+policy-AllowedDomainsForApps = 指定允許存取 Google Workspace 的網域。
 policy-AppAutoUpdate = 開啟或關閉應用程式自動更新。
 policy-AppUpdateURL = 自訂應用程式更新網址。
 policy-Authentication = 為支援的網站設定整合身分驗證方式。
-policy-BackgroundAppUpdate = 啟用或停用讓瀏覽器沒有執行也能自動更新的背景更新程式。
+policy-BackgroundAppUpdate2 = 啟用或停用背景更新程式。
 policy-BlockAboutAddons = 防止開啟附加元件管理員（about:addons）。
 policy-BlockAboutConfig = 防止開啟 about:config 頁面。
 policy-BlockAboutProfiles = 防止開啟 about:profiles 頁面。
@@ -107,6 +108,7 @@ policy-SearchEngines = 調整搜尋引擎設定。此原則僅對 Extended Suppo
 policy-SearchSuggestEnabled = 啟用或停用搜尋建議。
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = 安裝 PKCS #11 模組。
+policy-ShowHomeButton = 於工具列顯示首頁按鈕。
 policy-SSLVersionMax = 設定最大 SSL 版本。
 policy-SSLVersionMin = 設定最小 SSL 版本。
 policy-SupportMenu = 於說明選單內新增自訂的技術支援項目。

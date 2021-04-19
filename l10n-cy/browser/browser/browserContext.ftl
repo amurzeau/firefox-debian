@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Nôl un tudalen ({ $shortcut })
     .aria-label = Nôl
     .accesskey = N
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Nôl
+    .accesskey = N
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Ymlaen un tudalen ({ $shortcut })
     .aria-label = Ymlaen
     .accesskey = Y
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Ymlaen
+    .accesskey = Y
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Ail-lwytho
     .accesskey = A
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Ail-lwytho
+    .accesskey = A
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Atal
     .accesskey = t
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Atal
+    .accesskey = t
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Gosod Nod Tudalen i'r Dudalen
     .accesskey = N
     .tooltiptext = Gosod nod tudalen i'r dudalen
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Gosod Nod i Dudalen
+    .accesskey = N
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Golygu Nod Tudalen
+    .accesskey = G
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Agor Dolen mewn Tab Cynhwysydd Newydd
     .accesskey = T
-main-context-menu-open-link-container =
-    .label = Agor Dolen mewn Cynhwysydd Newydd
-    .accesskey = N
 main-context-menu-open-link-new-window =
     .label = Agor Dolen mewn Ffenestr Newydd
     .accesskey = F
@@ -193,6 +224,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Hyrt (2×)
     .accesskey = H
+main-context-menu-media-play-speed-2 =
+    .label = Cyflymder
+    .accesskey = C
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Cylchu
     .accesskey = C
@@ -220,6 +264,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Llun mewn Llun
     .accesskey = L
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Gwylio yn Llun-mewn-Llun
+    .accesskey = G
 main-context-menu-image-reload =
     .label = Ail-lwytho'r Ddelwedd
     .accesskey = D
@@ -229,6 +278,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = Gwylio Fideo
     .accesskey = i
+main-context-menu-image-view-new-tab =
+    .label = Agor Delwedd mewn Tab Newydd
+    .accesskey = D
+main-context-menu-video-view-new-tab =
+    .label = Agor Fideo mewn Tab Newydd
+    .accesskey = F
 main-context-menu-image-copy =
     .label = Copïo Delwedd
     .accesskey = D
@@ -277,6 +332,9 @@ main-context-menu-audio-save-as =
 main-context-menu-video-image-save-as =
     .label = Cadw Ciplun Fel…
     .accesskey = i
+main-context-menu-video-take-snapshot =
+    .label = Cymryd Ciplun…
+    .accesskey = C
 main-context-menu-video-email =
     .label = Fideo E-bost…
     .accesskey = F
@@ -321,6 +379,9 @@ main-context-menu-suggest-strong-password =
 main-context-menu-manage-logins =
     .label = Rheoli Mewngofnodion…
     .accesskey = R
+main-context-menu-manage-logins2 =
+    .label = Rheoli Mewngofnodion
+    .accesskey = R
 main-context-menu-keyword =
     .label = Ychwanegu Allweddair i'r Chwilio…
     .accesskey = Y
@@ -363,6 +424,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Edrych ar Ffynhonnell y Dewis
     .accesskey = E
+main-context-menu-take-screenshot =
+    .label = Cymryd Llun Sgrin
+    .accesskey = L
 main-context-menu-view-page-source =
     .label = Edrych ar God Gwreiddiol y Dudalen
     .accesskey = G

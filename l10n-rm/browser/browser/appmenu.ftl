@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = Telechargiar l'actualisaziun da { -brand-shorter-name }
+appmenuitem-update-banner2 =
+    .label-update-downloading = Telechargiar l'actualisaziun da { -brand-shorter-name }
+    .label-update-available = Actualisaziun disponibla – ussa telechargiar
+    .label-update-manual = Actualisaziun disponibla – ussa telechargiar
+    .label-update-unsupported = Impussibel dad actualisar
+    .label-update-restart = Actualisaziun disponibla – ussa reaviar
 appmenuitem-protection-dashboard-title = Survista da las protecziuns
 appmenuitem-customize-mode =
     .label = Persunalisar…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = Pleds-clav
 appmenuitem-extensions-and-themes =
     .label = Extensiuns e designs
+appmenuitem-addons-and-themes =
+    .label = Supplements e designs
 appmenuitem-find-in-page =
     .label = Tschertgar en la pagina…
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Serrar il menu d'applicaziun
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Terminar
+           *[other] Terminar
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Avrir il menu d'applicaziun
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Serrar il menu d'applicaziun
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Sincronisar ussa
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Sincronisar ussa
-    .value = Sincronisar ussa
+appmenu-remote-tabs-sign-into-sync =
+    .label = S'annunziar per sincronisar…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Activar la sincronisaziun…
+appmenuitem-fxa-toolbar-sync-now2 = Sincronisar ussa
 appmenuitem-fxa-manage-account = Administrar il conto
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = Ultima sincronisaziun: { $time }
     .label = Ultima sincronisaziun: { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Sincronisar e memorisar las datas
+appmenu-fxa-sync-and-save-data2 = Sincronisar e memorisar las datas
 appmenu-fxa-signed-in-label = S'annunziar
 appmenu-fxa-setup-sync =
     .label = Activar la sincronisaziun…
@@ -135,29 +159,17 @@ appmenu-help-header =
 appmenu-about =
     .label = Davart { -brand-shorter-name }
     .accesskey = D
-appmenu-help-product =
-    .label = Agid da { -brand-shorter-name }
-    .accesskey = d
-appmenu-help-show-tour =
-    .label = Tura da { -brand-shorter-name }
-    .accesskey = u
-appmenu-help-import-from-another-browser =
-    .label = Importar dad in auter navigatur…
-    .accesskey = I
-appmenu-help-keyboard-shortcuts =
-    .label = Scursanidas da tastas
-    .accesskey = c
 appmenu-get-help =
     .label = Ir per agid
     .accesskey = I
 appmenu-help-troubleshooting-info =
     .label = Infurmaziuns per schliar problems
     .accesskey = p
+appmenu-help-taskmanager =
+    .label = Task Manager
 appmenu-help-more-troubleshooting-info =
     .label = Dapli infurmaziuns per schliar problems
     .accesskey = D
-appmenu-help-taskmanager =
-    .label = Task Manager
 appmenu-help-report-site-issue =
     .label = Rapportar in problem cun la pagina…
 appmenu-help-feedback-page =
@@ -177,8 +189,8 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Modus per schliar problems
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Modus per schliar problems…
     .accesskey = M
 appmenu-help-exit-troubleshoot-mode =
     .label = Deactivar il modus per schliar problems
@@ -194,13 +206,10 @@ appmenu-help-not-deceptive =
     .label = Quai n'è betg ina website che engiona…
     .accesskey = e
 
-##
-
-appmenu-help-check-for-update =
-    .label = Tschertgar actualisaziuns…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Persunalisar la trav d'utensils…
+appmenu-taskmanager =
+    .label = Task Manager
 appmenu-developer-tools-subheader = Utensils dal navigatur

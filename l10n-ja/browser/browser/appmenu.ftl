@@ -7,6 +7,14 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = { -brand-shorter-name } の更新をダウンロード中
+
+appmenuitem-update-banner2 =
+    .label-update-downloading = { -brand-shorter-name } の更新をダウンロード中
+    .label-update-available = 更新可能 — 今すぐダウンロード
+    .label-update-manual = 更新可能 — 今すぐダウンロード
+    .label-update-unsupported = 更新不可
+    .label-update-restart = 更新可能 — 今すぐ再起動
+
 appmenuitem-protection-dashboard-title = プライバシー保護ダッシュボード
 appmenuitem-customize-mode =
     .label = カスタマイズ...
@@ -21,19 +29,29 @@ appmenuitem-passwords =
     .label = パスワード
 appmenuitem-extensions-and-themes =
     .label = 拡張機能とテーマ
+appmenuitem-addons-and-themes =
+    .label = アドオンとテーマ
 appmenuitem-find-in-page =
     .label = このページを検索...
 appmenuitem-more-tools =
     .label = その他のツール
 appmenuitem-exit =
     .label = 終了
-
 appmenu-menu-button-closed =
     .tooltiptext = アプリケーションメニューを開きます
     .label = { -brand-shorter-name }
 appmenu-menu-button-opened =
     .tooltiptext = アプリケーションメニューを閉じます
     .label = { -brand-shorter-name }
+
+appmenuitem-exit2 =
+    .label = 終了
+appmenu-menu-button-closed2 =
+    .tooltiptext = アプリケーションメニューを開きます
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = アプリケーションメニューを閉じます
+    .label = { -brand-short-name }
 
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
@@ -54,12 +72,16 @@ appmenuitem-fullscreen =
 fxa-toolbar-sync-now =
     .label = 今すぐ同期
 
-appmenuitem-fxa-toolbar-sync-now =
-    .label = 今すぐ同期
-    .value = 今すぐ同期
+appmenu-remote-tabs-sign-into-sync =
+  .label = ログインして同期...
+appmenu-remote-tabs-turn-on-sync =
+  .label = 同期をオンにする...
+
+appmenuitem-fxa-toolbar-sync-now2 = 今すぐ同期
 appmenuitem-fxa-manage-account = アカウントを管理
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -67,11 +89,11 @@ appmenu-fxa-last-sync = 最終同期: { $time }
     .label = 最終同期: { $time }
 appmenu-fxa-sync-and-save-data =
     .value = 同期してデータを保存
+appmenu-fxa-sync-and-save-data2 = 同期してデータを保存
 appmenu-fxa-signed-in-label = ログイン
 appmenu-fxa-setup-sync =
     .label = 同期をオンにする...
 appmenu-fxa-show-more-tabs = さらにタブを表示
-
 appmenuitem-save-page =
     .label = 名前を付けてページを保存...
 
@@ -97,7 +119,7 @@ profiler-popup-description-title =
 profiler-popup-description = プロファイルを公開してあなたのチームと共有し、パフォーマンス問題に協力しましょう。
 profiler-popup-learn-more = 詳細
 profiler-popup-settings =
-  .value = 設定
+    .value = 設定
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = 設定を編集...
 profiler-popup-disabled = プライベートウィンドウを開いているため、プロファイラーは現在無効です。
@@ -137,29 +159,17 @@ appmenu-help-header =
 appmenu-about =
     .label = { -brand-shorter-name } について
     .accesskey = A
-appmenu-help-product =
-    .label = { -brand-shorter-name } ヘルプ
-    .accesskey = H
-appmenu-help-show-tour =
-    .label = { -brand-shorter-name } ツアー
-    .accesskey = o
-appmenu-help-import-from-another-browser =
-    .label = 他のブラウザーからインポート...
-    .accesskey = I
-appmenu-help-keyboard-shortcuts =
-    .label = キーボードショートカット
-    .accesskey = K
 appmenu-get-help =
     .label = ヘルプを表示
     .accesskey = H
 appmenu-help-troubleshooting-info =
     .label = トラブルシューティング情報...
     .accesskey = T
+appmenu-help-taskmanager =
+    .label = タスクマネージャー
 appmenu-help-more-troubleshooting-info =
     .label = 他のトラブルシューティング情報
     .accesskey = T
-appmenu-help-taskmanager =
-    .label = タスクマネージャー
 appmenu-help-report-site-issue =
     .label = サイトの問題を報告...
 appmenu-help-feedback-page =
@@ -179,8 +189,8 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = トラブルシューティングモード
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = トラブルシューティングモード...
     .accesskey = M
 appmenu-help-exit-troubleshoot-mode =
     .label = トラブルシューティングモードをオフにする
@@ -196,14 +206,10 @@ appmenu-help-not-deceptive =
     .label = 詐欺サイトの誤報告を指摘...
     .accesskey = d
 
-##
-
-appmenu-help-check-for-update =
-    .label = 更新を確認...
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = ツールバーをカスタマイズ...
-
+appmenu-taskmanager =
+    .label = タスクマネージャー
 appmenu-developer-tools-subheader = ブラウザーツール

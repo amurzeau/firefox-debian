@@ -28,6 +28,18 @@ search-input-box =
             [windows] Fyn yn Opsjes
            *[other] Fyn yn Foarkarren
         }
+settings-page-title = Ynstellingen
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Sykje yn Ynstellingen
 managed-notice = Jo browser wurdt troch jo organisaasje beheard.
 category-list =
     .aria-label = Kategoryen
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Syngronisaasje
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = { -brand-short-name }-eksperiminten
 category-experimental =
     .tooltiptext = { -brand-short-name }-eksperiminten
 pane-experimental-subtitle = Gean foarsichtich troch
 pane-experimental-search-results-header = { -brand-short-name }-eksperiminten: foarsichtichheid advisearre
 pane-experimental-description = It wizigjen fan avansearre konfiguraasjefoarkarren kin de prestaasjes of feilichheid fan { -brand-short-name } beynfloedzje.
+pane-experimental-description2 = It wizigjen fan avansearre konfiguraasjeynstellingen kin de prestaasjes of feilichheid fan { -brand-short-name } beynfloedzje.
 pane-experimental-reset =
     .label = Standertwearden opnij ynstelle
     .accesskey = y
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] Sorry! Der binne gjin resultaten yn Opsjes foar ‘<span data-l10n-name="query"></span>’.
        *[other] Sorry! Der binne gjin resultaten yn Foarkarren foar ‘<span data-l10n-name="query"></span>’.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Sorry! Der binne gjin resultaten yn Ynstellingen foar ‘<span data-l10n-name="query"></span>’.
 search-results-help-link = Help nedich? Besykje <a data-l10n-name="url">{ -brand-short-name }-stipe</a>
 
 ## General Section
@@ -369,6 +387,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Nea kontrolearje op fernijingen (net oanrekommandearre)
     .accesskey = N
+update-application-background-enabled =
+    .label = As { -brand-short-name } net útfierd wurdt
+    .accesskey = A
 update-application-warning-cross-user-setting = Dizze ynstelling is fan tapassing op alle Windows-accounts en { -brand-short-name }-profilen dy't dizze ynstallaasje fan { -brand-short-name } brûke.
 update-application-use-service =
     .label = Brûk in eftergrûntsjinst om fernijingen te ynstallearjen
@@ -379,6 +400,15 @@ update-setting-write-failure-title = Flater by bewarjen fernijingsfoarkarren
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
+    { -brand-short-name } hat in flater oantroffen en hat dizze wiziging net bewarre. Merk op dat foar it ynstellen fan dizze fernijingsfoarkar skriuwrjochten foar ûndersteand bestân nedich binne. Jo of jo systeembehearder kin dizze flater oplosse troch de groep ‘Gebruikers’ folsleine tagong ta dit bestân te jaan.
+    
+    Koe net skriuwe nei bestân: { $path }
+update-setting-write-failure-title2 = Flater by bewarjen fernijingsfoarkarren
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
     { -brand-short-name } hat in flater oantroffen en hat dizze wiziging net bewarre. Merk op dat foar it ynstellen fan dizze fernijingsfoarkar skriuwrjochten foar ûndersteand bestân nedich binne. Jo of jo systeembehearder kin dizze flater oplosse troch de groep ‘Gebruikers’ folsleine tagong ta dit bestân te jaan.
     
     Koe net skriuwe nei bestân: { $path }
@@ -579,6 +609,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Syksuggestjes werjaan yn priveefinsters
 suggestions-addressbar-settings-generic = Foarkarren foar oare adresbalksuggestjes wizigje
+suggestions-addressbar-settings-generic2 = Ynstellingen foar oare adresbalksuggestjs wizigje
 search-suggestions-cant-show = Sykfoarstellen wurde net yn lokaasjebalkresultaten toand, omdat jo { -brand-short-name } konfigurearre hawwe om nea skiednis te ûnthâlden.
 search-one-click-header = Ien-klik-sykmasinen
 search-one-click-header2 = Fluchkeppelingen sykje
@@ -613,6 +644,8 @@ containers-back-button =
             [windows] Tebek nei Opsjes
            *[other] Tebek nei Foarkarren
         }
+containers-back-button2 =
+    .aria-label = Tebek nei Ynstellingen
 containers-header = Kontenerljepblêden
 containers-add-button =
     .label = Nije kontener tafoegje
@@ -622,6 +655,8 @@ containers-new-tab-check =
     .accesskey = S
 containers-preferences-button =
     .label = Foarkarren
+containers-settings-button =
+    .label = Ynstellingen
 containers-remove-button =
     .label = Fuortsmite
 
@@ -633,6 +668,10 @@ sync-signedout-description = Syngronisearje jo blêdwizers, skiednis, ljepblêde
 sync-signedout-account-signin2 =
     .label = Oanmelde by { -sync-brand-short-name }…
     .accesskey = O
+sync-signedout-description2 = Syngronisearje jo blêdwizers, skiednis, ljepblêden, wachtwurden, add-ons en ynstellingen op al jo apparaten.
+sync-signedout-account-signin3 =
+    .label = Oanmelde om te syngronisearjen…
+    .accesskey = a
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -672,6 +711,10 @@ prefs-sync-setup =
     .label = { -sync-brand-short-name } ynstelle…
     .accesskey = y
 prefs-sync-offer-setup-label = Syngronisearje jo blêdwizers, skiednis, ljepblêden, wachtwurden, add-ons en foarkarren op al jo apparaten.
+prefs-sync-turn-on-syncing =
+    .label = Syngronisaasje ynskeakelje…
+    .accesskey = S
+prefs-sync-offer-setup-label2 = Syngronisearje jo blêdwizers, skiednis, ljepblêden, wachtwurden, add-ons en ynstellingen op al jo apparaten.
 prefs-sync-now =
     .labelnotsyncing = No syngronisearje
     .accesskeynotsyncing = N
@@ -692,6 +735,7 @@ sync-currently-syncing-prefs =
         [windows] Foarkarren
        *[other] Foarkarren
     }
+sync-currently-syncing-settings = Ynstellingen
 sync-change-options =
     .label = Wizigje…
     .accesskey = W
@@ -739,6 +783,10 @@ sync-engine-prefs =
         }
     .tooltiptext = Algemiene, privacy- en feilichheidsynstellingen dy't jo wizige hawwe
     .accesskey = F
+sync-engine-settings =
+    .label = Ynstellingen
+    .tooltiptext = Troch jo wizige algemiene, privacy- en befeiligingsynstellingen
+    .accesskey = s
 
 ## The device name controls.
 
@@ -1153,6 +1201,11 @@ space-alert-under-5gb-ok-button =
     .label = Ok, begrepen
     .accesskey = k
 space-alert-under-5gb-message = { -brand-short-name } hat hast gjin skiifromte mear. Ynhâld fan websites wurdt mooglik net goed werjûn. Besykje ‘Mear ynfo’ om jo skiifgebrûk te optimalisearjen foar bettere prestaasjes.
+space-alert-over-5gb-settings-button =
+    .label = Ynstellingen iepenje
+    .accesskey = i
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name } hat hast gjin skiifromte mear.</strong> Ynhâld fan websites wurdt mooglik net goed werjûn. Jo kinne bewarre gegevens wiskje yn Ynstellingen > Privacy & Befeiliging > Cookies en websitegegevens.
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name } hat hast gjin skiifromte mear.</strong> Ynhâld fan websites wurdt mooglik net goed werjûn. Besykje ‘Mear ynfo’ om jo skiifgebrûk te optimalisearjen foar bettere prestaasjes.
 
 ## Privacy Section - HTTPS-Only
 

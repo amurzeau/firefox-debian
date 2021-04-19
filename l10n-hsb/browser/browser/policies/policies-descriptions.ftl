@@ -11,10 +11,11 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Prawidła nastajić, na kotrež WebExtensions přez chrome.storage.managed přistup maja.
+policy-AllowedDomainsForApps = Definujće domeny, kotrež smědźa přistup k Google Workspace měć.
 policy-AppAutoUpdate = Awtomatiske aktualizacije nałoženjow zmóžnić abo znjemóžnić.
 policy-AppUpdateURL = Swójski aktualizowanski URL za nałoženje nastajić.
 policy-Authentication = Integrowanu awtentifikaciju za websydła konfigurować, kotrež ju podpěruja.
-policy-BackgroundAppUpdate = Pozadkowe aktualizowanje zmóžnić abo znjemóžnić, kotrež wobhladowak aktualizuje, hdyž wón njeběži.
+policy-BackgroundAppUpdate2 = Pozadkowe aktualizowanje zmóžnić abo znjemóžnić.
 policy-BlockAboutAddons = Přistup na zrjadowak přidatkow (about:addons) blokować.
 policy-BlockAboutConfig = Přistup na stronu about:config blokować.
 policy-BlockAboutProfiles = Přistup na stronu about:profiles blokować.
@@ -107,6 +108,7 @@ policy-SearchEngines = Nastajenja pytawow konfigurować. Tute prawidło je jeno�
 policy-SearchSuggestEnabled = Pytanske namjety zmóžnić abo znjemóžnić.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Module PKCS #11 instalować.
+policy-ShowHomeButton = Tłóčatko startoweje strony na symbolowej lajsće pokazać.
 policy-SSLVersionMax = Nastajće maksimalnu SSL-wersiju.
 policy-SSLVersionMin = Nastajće minimalnu SSL-wersiju.
 policy-SupportMenu = Swójski menijowy zapisk pomocy menijej pomocy přidać.

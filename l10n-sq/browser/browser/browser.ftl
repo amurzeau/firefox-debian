@@ -264,11 +264,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Shto Faqerojtës
+bookmarks-edit-bookmark = Përpunoni Faqerojtësin
+bookmark-panel-cancel =
+    .label = Anuloje
+    .accesskey = A
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Hiqe Faqerojtësin
+           *[other] Hiqi Faqerojtësit ({ $count })
+        }
+    .accesskey = H
 bookmark-panel-show-editor-checkbox =
     .label = Shfaqe përpunuesin kur bëhen ruajtje
     .accesskey = S
 bookmark-panel-done-button =
     .label = U bë
+bookmark-panel-save-button =
+    .label = Ruaje
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -288,6 +304,8 @@ identity-passive-loaded = Pjesë të kësaj faqeje (fjala vjen, figura) s'janë 
 identity-active-loaded = E keni çaktivizuar mbrojtjen për këtë faqe.
 identity-weak-encryption = Kjo faqe përdor fshehtëzim të dobët.
 identity-insecure-login-forms = Kredencialet e hyrjeve të dhëna në këtë faqe mund të komprometohen.
+identity-permissions =
+    .value = Leje
 identity-https-only-connection-upgraded = (u përmirësua në HTTPS)
 identity-https-only-label = Mënyra Vetëm-HTTPS
 identity-https-only-dropdown-on =
@@ -299,8 +317,7 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Aktivizoni Mënyrën Vetëm-HTTPS për këtë sajt, nëse doni që { -brand-short-name }-i të përmirësojë lidhjen, kur është e mundur.
 identity-https-only-info-turn-off2 = Nëse faqja duket të jetë e dëmtuar, mund të doni të çaktivizoni Mënyrën Vetëm-HTTPS- për këtë sajt, që të ringarkohet duke përdorur HTTP jo të sigurt.
 identity-https-only-info-no-upgrade = S’arrihet të përmirësohet lidhja nga HTTP.
-identity-permissions =
-    .value = Leje
+identity-permissions-storage-access-header = Cookies nga sajti në sajt
 identity-permissions-storage-access-hint = Këto palë mund të përdorin “cross-site cookies” dhe të dhëna sajtesh, ndërkohë që jeni në këtë sajt.
 identity-permissions-reload-hint = Mund t'ju duhet të ringarkoni faqen që të hyjnë në fuqi ndryshimet.
 identity-permissions-empty = S'i keni dhënë këtij sajti ndonjë leje speciale.
@@ -347,8 +364,34 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Po luhet
-browser-tab-audio-muted = Pa Zë
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = PO LUHET
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = HESHTUAR
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = VETËLUAJTJA E BLLOKUAR
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = PICTURE-IN-PICTURE
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] HESHTOJE SKEDËN
+       *[other] HESHTO { $count } SKEDA
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] KTHEJI ZËRIN SKEDËS
+       *[other] KTHEJU ZËRIN { $count } SKEDAVE
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] LUAJE SKEDËN
+       *[other] LUAJ { $count } SKEDA
+    }
 
 ## Bookmarks toolbar items
 
@@ -365,6 +408,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Mikrofon për ndarje me të tjerët:
     .accesskey = M
+popup-select-camera-device =
+    .value = Kamerë:
+    .accesskey = K
+popup-select-camera-icon =
+    .tooltiptext = Kamerë
+popup-select-microphone-device =
+    .value = Mikrofon:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Mikrofon
 popup-all-windows-shared = Do të ndahen me të tjerët krejt dritaret e dukshme në ekranin tuaj.
 popup-screen-sharing-not-now =
     .label = Jo Tani
@@ -374,6 +427,13 @@ popup-screen-sharing-never =
     .accesskey = K
 popup-silence-notifications-checkbox = Çaktivizo njoftime nga { -brand-short-name }-i, ndërkohë që bëhet ndarje me të tjerë
 popup-silence-notifications-checkbox-warning = { -brand-short-name }-i s’do të shfaqë njoftime, kur jeni duke ndarë gjëra me të tjerë.
+popup-screen-sharing-block =
+    .label = Bllokoje
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Bllokoje përherë
+    .accesskey = B
+popup-mute-notifications-checkbox = Mos shfaq njoftime sajti, kur ndahen gjëra me të tjerë
 
 ## WebRTC window or screen share tab switch warning
 
@@ -483,6 +543,13 @@ urlbar-result-action-tabtosearch-web = Kërkoni me { $engine } drejt e nga shtyl
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Kërkoni me { $engine } drejt e nga shtylla e adresave
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Kopjoje
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -514,16 +581,21 @@ crashed-subframe-message = <strong>Një pjesë e kësaj faqeje u vithis.</strong
 crashed-subframe-learnmore =
     .label = Mësoni Më Tepër
     .accesskey = M
+crashed-subframe-learnmore-link =
+    .value = Mësoni Më Tepër
 crashed-subframe-submit =
-    .label = Parashtroni Njoftim
+    .label = Parashtroni njoftim
     .accesskey = P
 
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Shfaqni Krejt Faqerojtësit
-bookmarks-recent-bookmarks =
-    .value = Faqeruajtur Së Fundi
+bookmarks-manage-bookmarks =
+    .label = Administroni Faqerojtës
+bookmarks-recent-bookmarks-panel =
+    .value = Faqerojtës Së Fundi
+bookmarks-recent-bookmarks-panel-subheader = Faqerojtës Së Fundi
 bookmarks-toolbar-chevron =
     .tooltiptext = Shfaqni më tepër faqerojtës
 bookmarks-sidebar-content =
@@ -540,17 +612,17 @@ bookmarks-tools-sidebar-visibility =
             [true] Fshihe Anështyllën e Faqerojtësve
            *[other] Shihni Anështyllë Faqerojtësish
         }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Fshihe Panelin e Faqerojtësve
-           *[other] Shihni Panel Faqerojtësish
-        }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
         { $isVisible ->
             [true] Fshihe Panelin e Faqerojtësve
            *[other] Shihni Panel Faqerojtësish
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Fshih Panel Faqerojtësish
+           *[other] Shfaq Panel Faqerojtësish
         }
 bookmarks-tools-menu-button-visibility =
     .label =
@@ -577,17 +649,39 @@ bookmarks-toolbar-placeholder =
     .title = Objekte Paneli Faqerojtësish
 bookmarks-toolbar-placeholder-button =
     .label = Objekte Paneli Faqerojtësish
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Faqeruaj Skedën e Tanishme
 
 ## Library Panel items
 
 library-bookmarks-menu =
     .label = Faqerojtës
-library-bookmarks-bookmark-this-page =
-    .label = Faqeruaje Këtë Faqe
-library-bookmarks-bookmark-edit =
-    .label = Përpunojeni Këtë Faqerojtës
 library-recent-activity-title =
     .value = Veprimtari Së fundi
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Ruajeni te { -pocket-brand-name }
+    .tooltiptext = Ruajeni te { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Shtesa dhe Tema
+    .tooltiptext = Administroni shtesat dhe temat tuaja ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Rregullime
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Hapni rregullimet ({ $shortcut })
+           *[other] Hapni rregullimet
+        }
 
 ## More items
 
@@ -598,3 +692,25 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = Audio ose video në këtë sajt përdor software DRM, çka mund të kufizojë ato që { -brand-short-name }-i mund t’ju lejojë të bëni me të.
+eme-notifications-drm-content-playing-manage = Administroni Rregullime
+eme-notifications-drm-content-playing-manage-accesskey = A
+eme-notifications-drm-content-playing-dismiss = Hidhe tej
+eme-notifications-drm-content-playing-dismiss-accesskey = H
+
+## Password save/update panel
+
+panel-save-update-username = Emër përdoruesi
+panel-save-update-password = Fjalëkalim
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Të hiqet { $name }?
+addon-removal-abuse-report-checkbox = Raportojeni këtë zgjerim te { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Administroni Llogari
+remote-tabs-sync-now = Njëkohësoji Tani

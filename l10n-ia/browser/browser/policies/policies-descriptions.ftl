@@ -11,9 +11,11 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Defini politicas al quales le WebExtensions pote acceder via chrome.storage.managed.
+policy-AllowedDomainsForApps = Defini dominios con permission de acceder a Google Workspace.
 policy-AppAutoUpdate = Activar o disactivar le actualisation automatic del application.
 policy-AppUpdateURL = Definir un URL de actualisation personalisate pro le application.
 policy-Authentication = Configurar authentication integrate pro sitos web que lo supporta.
+policy-BackgroundAppUpdate2 = Activar o disactivar le actualisator in fundo.
 policy-BlockAboutAddons = Blocar accesso al Gestor de additivos (circa:additivos).
 policy-BlockAboutConfig = Blocar accesso al pagina about:config.
 policy-BlockAboutProfiles = Blocar accesso al pagina about:profiles.
@@ -23,7 +25,7 @@ policy-CaptivePortal = Activar o disactivar supporto pro portal captive.
 policy-CertificatesDescription = Adde certificatos o usa certificatos integrate.
 policy-Cookies = Permitter o refusar al sitos web de deponer cookies.
 policy-DisabledCiphers = Disactivar cryptographias.
-policy-DefaultDownloadDirectory = Configura le directorio de discarga predefinite.
+policy-DefaultDownloadDirectory = Configurar le directorio predefinite pro discargamentos.
 policy-DisableAppUpdate = Impedir le actualisation del navigator.
 policy-DisableBuiltinPDFViewer = Disactivar PDF.js, le visor de PDF integrate in { -brand-short-name }.
 policy-DisableDefaultBrowserAgent = Impedir que le agente de navigator predefinite exeque alcun action. Applicabile solo a Windows; altere platteformas non ha iste agente.
@@ -51,7 +53,7 @@ policy-DisplayBookmarksToolbar = Monstrar le barra de marcapaginas per configura
 policy-DisplayMenuBar = Monstrar le Barra del menu de ordinario.
 policy-DNSOverHTTPS = Configura DNS sur HTTPS.
 policy-DontCheckDefaultBrowser = Disactivar le controlo Navigator predefinite al lanceamento initial.
-policy-DownloadDirectory = Configura e bloca le plica del discargas.
+policy-DownloadDirectory = Configurar e fixar le directorio de discargamentos.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Activar o disactivar le blocage de contento e optionalmente serrar lo.
 # “lock” means that the user won’t be able to change this setting
@@ -106,6 +108,7 @@ policy-SearchEngines = Configurar le parametros del motores de recerca. Iste cri
 policy-SearchSuggestEnabled = Activar o disactivar suggestiones de recerca.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Installar modulos PKCS #11.
+policy-ShowHomeButton = Monstrar le button casa sur le barra de utensiles.
 policy-SSLVersionMax = Stabilir le version SSL maxime.
 policy-SSLVersionMin = Stabilir le version SSL minime.
 policy-SupportMenu = Adder un selection de supporto personalisate al menu de adjuta.

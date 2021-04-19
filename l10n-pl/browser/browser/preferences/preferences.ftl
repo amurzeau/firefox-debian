@@ -28,6 +28,18 @@ search-input-box =
             [windows] Szukaj w opcjach
            *[other] Szukaj w preferencjach
         }
+settings-page-title = Ustawienia
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Szukaj w ustawieniach
 managed-notice = Przeglądarka jest zarządzana przez administratora
 category-list =
     .aria-label = Kategorie
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = Ustawienia dotyczące synchronizacji
+pane-sync-title3 = Synchronizacja
+category-sync3 =
+    .tooltiptext = Ustawienia dotyczące synchronizacji
 pane-experimental-title = Eksperymenty
 category-experimental =
     .tooltiptext = Eksperymenty przeglądarki { -brand-short-name }
 pane-experimental-subtitle = Zachowaj ostrożność
 pane-experimental-search-results-header = Eksperymenty przeglądarki { -brand-short-name }: zachowaj ostrożność
 pane-experimental-description = Modyfikacja zaawansowanych preferencji może wpłynąć na wydajność lub bezpieczeństwo przeglądarki { -brand-short-name }.
+pane-experimental-description2 = Modyfikacja zaawansowanych ustawień może wpłynąć na wydajność lub bezpieczeństwo przeglądarki { -brand-short-name }.
 pane-experimental-reset =
     .label = Przywróć domyślne
     .accesskey = P
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] Niestety! W opcjach niczego nie odnaleziono dla wyszukiwania „<span data-l10n-name="query"></span>”.
        *[other] Niestety! W preferencjach niczego nie odnaleziono dla wyszukiwania „<span data-l10n-name="query"></span>”.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Niestety! W ustawieniach niczego nie odnaleziono dla wyszukiwania „<span data-l10n-name="query"></span>”.
 search-results-help-link = Potrzebujesz pomocy? Odwiedź <a data-l10n-name="url">pomoc przeglądarki { -brand-short-name }</a>.
 
 ## General Section
@@ -372,6 +390,9 @@ update-application-check-choose =
 update-application-manual =
     .label = niesprawdzanie dostępności aktualizacji (niezalecane)
     .accesskey = n
+update-application-background-enabled =
+    .label = kiedy przeglądarka { -brand-short-name } nie jest włączona
+    .accesskey = k
 update-application-warning-cross-user-setting = To ustawienie będzie obowiązywać dla wszystkich kont systemu Windows i profilów programu { -brand-short-name } używających tej instalacji.
 update-application-use-service =
     .label = Używaj usługi instalowania aktualizacji działającej w tle
@@ -383,6 +404,15 @@ update-setting-write-failure-title = Błąd podczas zachowywania preferencji akt
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
     W przeglądarce { -brand-short-name } wystąpił błąd i nie zachowano tej zmiany. Zauważ, że ustawienie tej preferencji aktualizacji wymaga uprawnienia do zapisu do poniższego pliku. Ty lub administrator komputera może móc rozwiązać błąd przez udzielenie grupie „Użytkownicy” pełnej kontroli nad tym plikiem.
+    
+    Nie można zapisać do pliku: { $path }
+update-setting-write-failure-title2 = Błąd podczas zachowywania ustawień aktualizacji
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    W przeglądarce { -brand-short-name } wystąpił błąd i nie zachowano tej zmiany. Zauważ, że zmiana tego ustawienia aktualizacji wymaga uprawnienia do zapisu do poniższego pliku. Ty lub administrator komputera może móc rozwiązać błąd przez udzielenie grupie „Użytkownicy” pełnej kontroli nad tym plikiem.
     
     Nie można zapisać do pliku: { $path }
 update-in-progress-title = Trwa aktualizacja
@@ -583,6 +613,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Podpowiedzi wyszukiwania w prywatnych oknach
 suggestions-addressbar-settings-generic = Zmień preferencje innych podpowiedzi w pasku adresu
+suggestions-addressbar-settings-generic2 = Zmień ustawienia innych podpowiedzi w pasku adresu
 search-suggestions-cant-show = Podpowiedzi wyszukiwania nie będą wyświetlane w wynikach paska adresu, ponieważ wyłączono zachowywanie historii przeglądania programu { -brand-short-name }.
 search-one-click-header = Dodatkowe wyszukiwarki
 search-one-click-header2 = Skróty wyszukiwania
@@ -617,6 +648,8 @@ containers-back-button =
             [windows] Wróć do opcji
            *[other] Wróć do preferencji
         }
+containers-back-button2 =
+    .aria-label = Wróć do ustawień
 containers-header = Karty z kontekstem
 containers-add-button =
     .label = Dodaj kontekst
@@ -626,6 +659,8 @@ containers-new-tab-check =
     .accesskey = W
 containers-preferences-button =
     .label = Preferencje
+containers-settings-button =
+    .label = Ustawienia
 containers-remove-button =
     .label = Usuń
 
@@ -636,6 +671,10 @@ sync-signedout-caption = Zabierz swoją sieć ze sobą
 sync-signedout-description = Synchronizuj zakładki, historię, karty, hasła, dodatki i preferencje między wszystkimi swoimi urządzeniami.
 sync-signedout-account-signin2 =
     .label = Zaloguj się do { -sync-brand-short-name(case: "gen", capitalization: "lower") }…
+    .accesskey = Z
+sync-signedout-description2 = Synchronizuj zakładki, historię, karty, hasła, dodatki i ustawienia między wszystkimi swoimi urządzeniami.
+sync-signedout-account-signin3 =
+    .label = Zaloguj się do synchronizacji…
     .accesskey = Z
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -676,6 +715,10 @@ prefs-sync-setup =
     .label = Skonfiguruj { -sync-brand-short-name(case: "acc", capitalization: "lower") }…
     .accesskey = S
 prefs-sync-offer-setup-label = Synchronizuj zakładki, historię, karty, hasła, dodatki i preferencje między wszystkimi swoimi urządzeniami.
+prefs-sync-turn-on-syncing =
+    .label = Włącz synchronizację…
+    .accesskey = s
+prefs-sync-offer-setup-label2 = Synchronizuj zakładki, historię, karty, hasła, dodatki i ustawienia między wszystkimi swoimi urządzeniami.
 prefs-sync-now =
     .labelnotsyncing = Synchronizuj teraz
     .accesskeynotsyncing = S
@@ -696,6 +739,7 @@ sync-currently-syncing-prefs =
         [windows] opcje
        *[other] preferencje
     }
+sync-currently-syncing-settings = ustawienia
 sync-change-options =
     .label = Zmień…
     .accesskey = m
@@ -730,7 +774,7 @@ sync-engine-addresses =
 sync-engine-creditcards =
     .label = dane kart płatniczych
     .tooltiptext = Nazwiska, numery i okresy ważności (tylko na komputerach)
-    .accesskey = d
+    .accesskey = n
 sync-engine-addons =
     .label = dodatki
     .tooltiptext = Rozszerzenia i motywy w wersji na komputery
@@ -743,6 +787,10 @@ sync-engine-prefs =
         }
     .tooltiptext = Zmienione ustawienia ogólne, uruchamiania, wyszukiwania, prywatności i bezpieczeństwa
     .accesskey = e
+sync-engine-settings =
+    .label = ustawienia
+    .tooltiptext = Zmienione ustawienia ogólne, uruchamiania, wyszukiwania, prywatności i bezpieczeństwa
+    .accesskey = u
 
 ## The device name controls.
 
@@ -1157,6 +1205,11 @@ space-alert-under-5gb-ok-button =
     .label = OK
     .accesskey = O
 space-alert-under-5gb-message = Przeglądarce { -brand-short-name } zaczyna brakować miejsca na dysku. Zawartość stron może być wyświetlana niepoprawnie. Skorzystaj z odnośnika „Więcej informacji”, aby zoptymalizować użycie dysku dla lepszego przeglądania.
+space-alert-over-5gb-settings-button =
+    .label = Otwórz ustawienia
+    .accesskey = O
+space-alert-over-5gb-message2 = <strong>Przeglądarce { -brand-short-name } zaczyna brakować miejsca na dysku.</strong> Zawartość stron może być wyświetlana niepoprawnie. Przechowywane dane może wyczyścić w Ustawienia → Prywatność i bezpieczeństwo → Ciasteczka i dane stron.
+space-alert-under-5gb-message2 = <strong>Przeglądarce { -brand-short-name } zaczyna brakować miejsca na dysku.</strong> Zawartość stron może być wyświetlana niepoprawnie. Skorzystaj z odnośnika „Więcej informacji”, aby zoptymalizować użycie dysku dla lepszego przeglądania.
 
 ## Privacy Section - HTTPS-Only
 

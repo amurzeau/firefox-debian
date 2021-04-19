@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = 正在下載 { -brand-shorter-name } 更新
+appmenuitem-update-banner2 =
+    .label-update-downloading = 正在下載 { -brand-shorter-name } 更新
+    .label-update-available = 已有更新可用 — 立即下載
+    .label-update-manual = 已有更新可用 — 立即下載
+    .label-update-unsupported = 無法更新
+    .label-update-restart = 已有更新可用 — 立即重新啟動
 appmenuitem-protection-dashboard-title = 保護資訊儀錶板
 appmenuitem-customize-mode =
     .label = 自訂…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = 密碼
 appmenuitem-extensions-and-themes =
     .label = 擴充套件和佈景主題
+appmenuitem-addons-and-themes =
+    .label = 附加元件與佈景主題
 appmenuitem-find-in-page =
     .label = 在頁面中搜尋…
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = 關閉應用程式選單
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] 離開
+           *[other] 結束
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = 開啟應用程式選單
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = 關閉應用程式選單
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = 立刻同步
-appmenuitem-fxa-toolbar-sync-now =
-    .label = 立刻同步
-    .value = 立刻同步
+appmenu-remote-tabs-sign-into-sync =
+    .label = 登入進行同步…
+appmenu-remote-tabs-turn-on-sync =
+    .label = 開啟同步…
+appmenuitem-fxa-toolbar-sync-now2 = 立刻同步
 appmenuitem-fxa-manage-account = 管理帳號
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = 上次同步於 { $time }
     .label = 上次同步於 { $time }
 appmenu-fxa-sync-and-save-data =
     .value = 同步並儲存資料
+appmenu-fxa-sync-and-save-data2 = 同步並儲存資料
 appmenu-fxa-signed-in-label = 登入
 appmenu-fxa-setup-sync =
     .label = 開啟同步…
@@ -133,29 +157,17 @@ appmenu-help-header =
 appmenu-about =
     .label = 關於 { -brand-shorter-name }
     .accesskey = A
-appmenu-help-product =
-    .label = { -brand-shorter-name } 說明
-    .accesskey = H
-appmenu-help-show-tour =
-    .label = { -brand-shorter-name } 導覽
-    .accesskey = o
-appmenu-help-import-from-another-browser =
-    .label = 從另一套瀏覽器匯入…
-    .accesskey = I
-appmenu-help-keyboard-shortcuts =
-    .label = 快速鍵
-    .accesskey = K
 appmenu-get-help =
     .label = 取得幫助
     .accesskey = H
 appmenu-help-troubleshooting-info =
     .label = 疑難排解資訊
     .accesskey = T
+appmenu-help-taskmanager =
+    .label = 工作管理員
 appmenu-help-more-troubleshooting-info =
     .label = 更多疑難排解資訊
     .accesskey = T
-appmenu-help-taskmanager =
-    .label = 工作管理員
 appmenu-help-report-site-issue =
     .label = 回報網站問題…
 appmenu-help-feedback-page =
@@ -175,8 +187,8 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = 疑難排解模式
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = 疑難排解模式…
     .accesskey = M
 appmenu-help-exit-troubleshoot-mode =
     .label = 關閉疑難排解模式
@@ -192,13 +204,10 @@ appmenu-help-not-deceptive =
     .label = 這不是詐騙網站…
     .accesskey = d
 
-##
-
-appmenu-help-check-for-update =
-    .label = 檢查更新…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = 自訂工具列…
+appmenu-taskmanager =
+    .label = 工作管理員
 appmenu-developer-tools-subheader = 瀏覽器工具

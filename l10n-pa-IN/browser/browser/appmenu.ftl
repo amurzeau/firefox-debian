@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = { -brand-shorter-name } ਅੱਪਡੇਟ ਡਾਊਨਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ
+appmenuitem-update-banner2 =
+    .label-update-downloading = { -brand-shorter-name } ਅੱਪਡੇਟ ਡਾਊਨਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ
+    .label-update-available = ਅੱਪਡੇਟ ਮੌਜੂਦ ਹੈ — ਹੁਣੇ ਡਾਊਨਲੋਡ ਕਰੋ
+    .label-update-manual = ਅੱਪਡੇਟ ਮੌਜੂਦ ਹੈ — ਹੁਣੇ ਡਾਊਨਲੋਡ ਕਰੋ
+    .label-update-unsupported = ਅੱਪਡੇਟ ਲਈ ਅਸਮਰੱਥ ਹੈ
+    .label-update-restart = ਅੱਪਡੇਫ ਮੌਜੂਦ ਹੈ — ਹੁਣੇ ਮੁੜ-ਚਾਲੂ ਕਰੋ
 appmenuitem-protection-dashboard-title = ਸੁਰੱਖਿਆ ਡੈਸ਼ਬੋਰਡ
 appmenuitem-customize-mode =
     .label = …ਪਸੰਦ
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = ਪਾਸਵਰਡ
 appmenuitem-extensions-and-themes =
     .label = ਇਕਸਟੈਨਸ਼ਨਾਂ ਤੇ ਥੀਮ
+appmenuitem-addons-and-themes =
+    .label = ਐਡ-ਆਨ ਅਤੇ ਥੀਮ
 appmenuitem-find-in-page =
     .label = …ਸਫ਼ੇ ਵਿੱਚ ਲੱਭੋ
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = ਐਪਲੀਕੇਸ਼ਨ ਮੇਨੂ ਬੰਦ ਕਰੋ
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] ਬਾਹਰ
+           *[other] ਬਾਹਰ
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = ਐਪਲੀਕੇਸ਼ਨ ਮੇਨੂ ਖੋਲ੍ਹੋ
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = ਐਪਲੀਕੇਸ਼ਨ ਮੇਨੂ ਬੰਦ ਕਰੋ
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = ਹੁਣੇ ਸਿੰਕ ਕਰੋ
-appmenuitem-fxa-toolbar-sync-now =
-    .label = ਹੁਣੇ ਸਿੰਕ ਕਰੋ
-    .value = ਹੁਣੇ ਸਿੰਕ ਕਰੋ
+appmenu-remote-tabs-sign-into-sync =
+    .label = …ਸਿੰਕ ਕਰਨ ਲਈ ਸਾਈਨ ਇਨ ਕਰੋ
+appmenu-remote-tabs-turn-on-sync =
+    .label = …ਸਿੰਕ ਚਾਲੂ ਕਰੋ
+appmenuitem-fxa-toolbar-sync-now2 = ਹੁਣੇ ਸਿੰਕ ਕਰੋ
 appmenuitem-fxa-manage-account = ਖਾਤੇ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = ਪਿਛਲਾ ਸਿੰਕ ਕੀਤਾ { $time }
     .label = ਪਿਛਲਾ ਸਿੰਕ ਕੀਤਾ { $time }
 appmenu-fxa-sync-and-save-data =
     .value = ਡਾਟਾ ਸਿੰਕ ਕਰੋ ਤੇ ਸੰਭਾਲੋ
+appmenu-fxa-sync-and-save-data2 = ਡਾਟਾ ਸਿੰਕ ਕਰੋ ਤੇ ਸੰਭਾਲੋ
 appmenu-fxa-signed-in-label = ਸਾਇਨ ਇਨ
 appmenu-fxa-setup-sync =
     .label = ਸਿੰਕ ਕਰਨਾ ਚਾਲੂ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…
@@ -133,29 +157,17 @@ appmenu-help-header =
 appmenu-about =
     .label = { -brand-shorter-name } ਬਾਰੇ
     .accesskey = A
-appmenu-help-product =
-    .label = { -brand-shorter-name } ਮਦਦ
-    .accesskey = H
-appmenu-help-show-tour =
-    .label = { -brand-shorter-name } ਟੂਰ
-    .accesskey = o
-appmenu-help-import-from-another-browser =
-    .label = …ਹੋਰ ਬਰਾਊਜ਼ਰ ਤੋਂ ਦਰਾਮਦ ਕਰੋ
-    .accesskey = I
-appmenu-help-keyboard-shortcuts =
-    .label = ਕੀਬੋਰਡ ਸ਼ਾਰਟਕੱਟ
-    .accesskey = K
 appmenu-get-help =
     .label = ਮਦਦ ਲਵੋ
     .accesskey = H
 appmenu-help-troubleshooting-info =
     .label = ਸਮੱਸਿਆ ਹੱਲ ਜਾਣਕਾਰੀ
     .accesskey = T
+appmenu-help-taskmanager =
+    .label = ਟਾਸਕ ਮੈਨੇਜਰ
 appmenu-help-more-troubleshooting-info =
     .label = ਹੋਰ ਸਮੱਸਿਆ ਹੱਲ ਜਾਣਕਾਰੀ
     .accesskey = T
-appmenu-help-taskmanager =
-    .label = ਟਾਸਕ ਮੈਨੇਜਰ
 appmenu-help-report-site-issue =
     .label = …ਸਾਈਟ ਮਸਲੇ ਬਾਰੇ ਜਾਣਕਾਰੀ ਦਿਓ
 appmenu-help-feedback-page =
@@ -175,8 +187,8 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = ਸਮੱਸਿਆ ਨਿਪਟਾਰਾ ਢੰਗ
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = ਸਮੱਸਿਆ ਨਿਪਟਾਰਾ ਢੰਗ…
     .accesskey = M
 appmenu-help-exit-troubleshoot-mode =
     .label = ਸਮੱਸਿਆ ਨਿਪਟਾਰਾ ਢੰਗ ਬੰਦ ਹੈ
@@ -192,13 +204,10 @@ appmenu-help-not-deceptive =
     .label = ਇਹ ਭਰਮਪੂਰਨ ਸਾਈਟ ਨਹੀਂ ਹੈ…
     .accesskey = d
 
-##
-
-appmenu-help-check-for-update =
-    .label = …ਅੱਪਡੇਟਾਂ ਲਈ ਚੈਕ ਕਰੋ
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = …ਟੂਲਬਾਰ ਨੂੰ ਕਸਟਮਾਈਜ਼ ਕਰੋ
+appmenu-taskmanager =
+    .label = ਟਾਸਕ ਮੈਨੇਜਰ
 appmenu-developer-tools-subheader = ਬਰਾਊਜ਼ਰ ਟੂਲ

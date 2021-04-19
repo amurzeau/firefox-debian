@@ -256,11 +256,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = 新增書籤
+bookmarks-edit-bookmark = 編輯書籤
+bookmark-panel-cancel =
+    .label = 取消
+    .accesskey = C
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [1] 移除書籤
+           *[other] 移除 { $count } 筆書籤
+        }
+    .accesskey = R
 bookmark-panel-show-editor-checkbox =
     .label = 儲存時顯示編輯器
     .accesskey = S
 bookmark-panel-done-button =
     .label = 完成
+bookmark-panel-save-button =
+    .label = 儲存
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -280,6 +296,8 @@ identity-passive-loaded = 本頁面中的部分內容（例如圖片）並不安
 identity-active-loaded = 您已停用此頁面中的保護。
 identity-weak-encryption = 此頁面使用了弱強度的加密。
 identity-insecure-login-forms = 在此頁面輸入的登入資訊可能會被洩漏。
+identity-permissions =
+    .value = 權限
 identity-https-only-connection-upgraded = （升級 HTTPS）
 identity-https-only-label = 純 HTTPS 模式
 identity-https-only-dropdown-on =
@@ -291,8 +309,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = 若您想要 { -brand-short-name } 盡可能升級使用安全連線，請對此網站開啟純 HTTPS 模式。
 identity-https-only-info-turn-off2 = 若網頁外觀看起來不正常，您可能會想要針對此網站關閉純 HTTPS 模式，使用不安全的 HTTP 重新載入。
 identity-https-only-info-no-upgrade = 無法將網站連線從 HTTP 升級。
-identity-permissions =
-    .value = 權限
 identity-permissions-storage-access-header = 跨網站 Cookie
 identity-permissions-storage-access-hint = 當您開啟此網站時，這些網站可以使用跨網站 Cookie，並且取得您在此網站的資料。
 identity-permissions-reload-hint = 您可能需要重新載入頁面才能讓變更生效。
@@ -340,8 +356,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = 播放中
-browser-tab-audio-muted = 靜音
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = 播放中
 # This label should be written in all capital letters if your locale supports them.
@@ -350,6 +364,26 @@ browser-tab-audio-muted2 = 靜音
 browser-tab-audio-blocked = 已封鎖自動播放
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = 子母畫面
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] 將分頁靜音
+       *[other] 將 { $count } 個分頁靜音
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] 將分頁取消靜音
+       *[other] 將 { $count } 個分頁取消靜音
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] 播放分頁聲音
+       *[other] 播放 { $count } 個分頁的聲音
+    }
 
 ## Bookmarks toolbar items
 
@@ -501,6 +535,13 @@ urlbar-result-action-tabtosearch-web = 從網址列直接使用 { $engine } 搜�
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = 從網址列直接搜尋 { $engine }
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = 複製
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -542,8 +583,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = 顯示所有書籤
-bookmarks-recent-bookmarks =
-    .value = 最近加入的書籤
 bookmarks-manage-bookmarks =
     .label = 管理書籤
 bookmarks-recent-bookmarks-panel =
@@ -564,12 +603,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] 隱藏書籤側邊欄
            *[other] 檢視書籤欄
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] 隱藏書籤工具列
-           *[other] 檢視書籤工具列
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -616,12 +649,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = 書籤
-library-bookmarks-bookmark-this-page =
-    .label = 將本頁加入書籤
-library-bookmarks-bookmark-edit =
-    .label = 編輯此書籤
 library-recent-activity-title =
     .value = 近期動態
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = 儲存至 { -pocket-brand-name }
+    .tooltiptext = 儲存至 { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = 附加元件與佈景主題
+    .tooltiptext = 管理您的附加元件與佈景主題（{ $shortcut }）
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = 設定
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] 開啟設定頁面（{ $shortcut }）
+           *[other] 開啟設定頁面
+        }
 
 ## More items
 
@@ -648,3 +700,9 @@ panel-save-update-password = 密碼
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = 要移除 { $name } 嗎？
 addon-removal-abuse-report-checkbox = 回報此擴充套件給 { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = 管理帳號
+remote-tabs-sync-now = 立刻同步

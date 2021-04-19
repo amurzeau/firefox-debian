@@ -6,6 +6,7 @@
 <!-- LOCALIZATION NOTE : FILE Do not translate commandkeys -->
 
 <!ENTITY appmenu.tooltip                     "메뉴 열기">
+
 <!ENTITY navbarOverflow.label                "도구 더보기…">
 
 <!-- Tab context menu -->
@@ -51,6 +52,10 @@ this container is a toolbar. This avoids double-speaking. -->
 <!ENTITY fxa.menu.syncSettings2.label "&syncBrand.shortName.label; 설정">
 <!ENTITY fxa.menu.connectAnotherDevice2.label "다른 기기 연결…">
 <!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbar menu screen. The `Signed in as` text is
+     followed by the user's email. -->
 <!ENTITY fxa.menu.signin.label "&brandProductName;에 로그인">
 <!ENTITY fxa.menu.turnOnSync.label "&syncBrand.shortName.label; 켜기">
 <!ENTITY fxa.menu.firefoxServices.label "&brandProductName; 서비스">
@@ -58,7 +63,7 @@ this container is a toolbar. This avoids double-speaking. -->
 <!ENTITY fxa.menu.settings.label "설정">
 <!ENTITY fxa.menu.accountSettings.label "계정 설정">
 <!ENTITY fxa.menu.manageAccount2.label "계정 관리">
-<!ENTITY fxa.menu.signOut.label "로그 아웃…">
+<!ENTITY fxa.menu.signOut.label "로그아웃…">
 <!ENTITY fxa.menu.setupSync.label "&syncBrand.shortName.label; 설정…">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
@@ -106,7 +111,7 @@ this container is a toolbar. This avoids double-speaking. -->
 
 <!ENTITY bookmarksSubview.label             "북마크">
 <!ENTITY bookmarksMenuButton2.label         "북마크 메뉴">
-<!ENTITY bookmarksMenuButton.other.label    "다른 북마크">
+<!ENTITY bookmarksMenuButton.other.label    "기타 북마크">
 <!ENTITY bookmarksMenuButton.mobile.label   "모바일 북마크">
 <!ENTITY viewBookmarksSidebar2.label        "북마크 탐색창 보기">
 <!ENTITY hideBookmarksSidebar.label         "북마크 탐색창 숨기기">
@@ -135,7 +140,7 @@ this container is a toolbar. This avoids double-speaking. -->
 <!ENTITY preferencesCmdUnix.label       "환경 설정">
 <!ENTITY logins.label                           "로그인과 비밀번호">
 
-<!ENTITY overflowCustomizeToolbar.label       "사용자 지정…">
+<!ENTITY overflowCustomizeToolbar.label       "도구 모음 사용자 지정…">
 <!ENTITY overflowCustomizeToolbar.accesskey   "C">
 
 <!ENTITY historyMenu.label "기록">
@@ -144,6 +149,7 @@ this container is a toolbar. This avoids double-speaking. -->
 <!ENTITY historyUndoWindowMenu.label "최근에 닫은 창">
 
 <!ENTITY appMenuHistory.showAll.label "모든 기록 보기">
+
 <!ENTITY appMenuHistory.clearRecent.label "최근 기록 지우기…">
 <!ENTITY appMenuHistory.restoreSession.label "이전 세션 복원">
 <!ENTITY appMenuHistory.viewSidebar.label "기록 탐색창 보기">
@@ -152,12 +158,15 @@ this container is a toolbar. This avoids double-speaking. -->
 <!ENTITY appMenuHelp.label "도움말">
 
 <!ENTITY appMenuRemoteTabs.label "동기화된 탭">
+
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.notabs.label): This is shown beneath
      the name of a device when that device has no open tabs -->
 <!ENTITY appMenuRemoteTabs.notabs.label "열린 탭이 없음">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.showMore.label, appMenuRemoteTabs.showMore.tooltip):
      This is shown after the tabs list if we can display more tabs by clicking on the button -->
 <!ENTITY appMenuRemoteTabs.showMore.label "더보기">
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.showMore.tooltip):
+     This is shown after the tabs list if we can display more tabs by clicking on the button -->
 <!ENTITY appMenuRemoteTabs.showMore.tooltip "이 기기의 탭 더 보기">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.showAll.label, appMenuRemoteTabs.showAll.tooltip):
      This is shown after the tabs list if we can all the remaining tabs by clicking on the button -->

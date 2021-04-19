@@ -266,11 +266,28 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Dodaj zabilješku
+bookmarks-edit-bookmark = Uredi zabilješku
+bookmark-panel-cancel =
+    .label = Otkaži
+    .accesskey = d
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Ukloni { $count } zabilješku
+            [few] Ukloni { $count } zabilješke
+           *[other] Ukloni { $count } zabilješki
+        }
+    .accesskey = U
 bookmark-panel-show-editor-checkbox =
     .label = Prikaži uređivač prilikom spremanja
     .accesskey = s
 bookmark-panel-done-button =
     .label = Gotovo
+bookmark-panel-save-button =
+    .label = Spremi
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -290,6 +307,8 @@ identity-passive-loaded = Dijelovi ove stranice nisu sigurni (poput slika).
 identity-active-loaded = Zaštita je deaktivirana na ovoj stranici.
 identity-weak-encryption = Ova stranica koristi slabo šifriranje.
 identity-insecure-login-forms = Prijave na ovoj stranici mogu biti kompromitirane.
+identity-permissions =
+    .value = Dozvole
 identity-https-only-connection-upgraded = (nadograđeno na HTTPS)
 identity-https-only-label = Način rada "Samo HTTPS"
 identity-https-only-dropdown-on =
@@ -301,8 +320,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Uključi način rada „samo HTTPS” za ovu stranicu, ako želiš da { -brand-short-name } nadogradi vezu kad je to moguće.
 identity-https-only-info-turn-off2 = Ako se stranica čini slomljenom, možda ćeš htjeti isključiti način rada "samo HTTPS" za ovu stranicu i ponovno ju učitati pomoću nesigurnog HTTP-a.
 identity-https-only-info-no-upgrade = Nije moguće nadograditi vezu s HTTP-a.
-identity-permissions =
-    .value = Dozvole
 identity-permissions-storage-access-header = Međustranični kolačići
 identity-permissions-storage-access-hint = Ove stranke mogu koristiti kolačiće i podatke dijeljene među više stranica dok ste na toj stranici.
 identity-permissions-reload-hint = Stranica se možda mora ponovo učitati, kako bi se primijenile promjene.
@@ -350,8 +367,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Reprodukcija
-browser-tab-audio-muted = Isključen zvuk
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = REPRODUKCIJA
 # This label should be written in all capital letters if your locale supports them.
@@ -360,6 +375,32 @@ browser-tab-audio-muted2 = UTIŠANO
 browser-tab-audio-blocked = AUTOMATSKA REPRODUKCIJA BLOKIRANA
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = SLIKA U SLICI
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] UTIŠAJ KARTICU
+        [one] UTIŠAJ { $count } KARTICU
+        [few] UTIŠAJ { $count } KARTICE
+       *[other] UTIŠAJ { $count } KARTICA
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] PRESTANI UTIŠAVATI KARTICU
+        [one] PRESTANI UTIŠAVATI { $count } KARTICU
+        [few] PRESTANI UTIŠAVATI { $count } KARTICE
+       *[other] PRESTANI UTIŠAVATI { $count } KARTICA
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] REPRODUCIRAJ KARTICU
+        [one] REPRODUCIRAJ { $count } KARTICU
+        [few] REPRODUCIRAJ { $count } KARTICE
+       *[other] REPRODUCIRAJ { $count } KARTICA
+    }
 
 ## Bookmarks toolbar items
 
@@ -379,9 +420,13 @@ popup-select-microphone =
 popup-select-camera-device =
     .value = Kamera:
     .accesskey = K
+popup-select-camera-icon =
+    .tooltiptext = Kamera
 popup-select-microphone-device =
     .value = Mikrofon:
     .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Mikrofon
 popup-all-windows-shared = Svi vidljivi prozori na tvom ekranu će se dijeliti.
 popup-screen-sharing-not-now =
     .label = Ne sada
@@ -507,6 +552,13 @@ urlbar-result-action-tabtosearch-web = Pretraži pomoću { $engine } izravno iz 
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Pretraži { $engine } izravno iz adresne trake
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Kopiraj
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -548,8 +600,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Prikaži sve zabilješke
-bookmarks-recent-bookmarks =
-    .value = Nedavno zabilježeno
 bookmarks-manage-bookmarks =
     .label = Upravljanje zabilješkama
 bookmarks-recent-bookmarks-panel =
@@ -570,12 +620,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Sakrij bočnu traku zabilješki
            *[other] Prikaži okno zabilješki
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Sakrij alatnu traku zabilješki
-           *[other] Prikaži traku zabilješki
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -622,12 +666,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Zabilješke
-library-bookmarks-bookmark-this-page =
-    .label = Zabilježi ovu stranicu
-library-bookmarks-bookmark-edit =
-    .label = Uredi ovu zabilješku
 library-recent-activity-title =
     .value = Nedavna aktivnost
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Spremi u { -pocket-brand-name }
+    .tooltiptext = Spremi u { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Dodaci i teme
+    .tooltiptext = Upravljaj svojim dodacima i temama ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Postavke
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Otvori postavke ({ $shortcut })
+           *[other] Otvori postavke
+        }
 
 ## More items
 
@@ -642,3 +705,21 @@ eme-notifications-drm-content-playing-manage = Upravljaj postavkama
 eme-notifications-drm-content-playing-manage-accesskey = m
 eme-notifications-drm-content-playing-dismiss = Odbaci
 eme-notifications-drm-content-playing-dismiss-accesskey = d
+
+## Password save/update panel
+
+panel-save-update-username = Korisničko ime
+panel-save-update-password = Lozinka
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Ukloniti { $name }?
+addon-removal-abuse-report-checkbox = Prijavi ovaj dodatak prodavaču { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Upravljaj računom
+remote-tabs-sync-now = Sinkroniziraj sada

@@ -12,7 +12,7 @@ navbar-tooltip-instruction =
 ## Back
 
 main-context-menu-back =
-    .tooltiptext = Recuolar d'una pagina
+    .tooltiptext = Recular d’una pagina
     .aria-label = Pagina precedenta
     .accesskey = P
 navbar-tooltip-back =
@@ -22,8 +22,12 @@ toolbar-button-back =
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the Go Back command.
 main-context-menu-back-2 =
-    .tooltiptext = Recuolar d'una pagina ({ $shortcut })
+    .tooltiptext = Recular d’una pagina ({ $shortcut })
     .aria-label = Pagina precedenta
+    .accesskey = P
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Pagina precedenta
     .accesskey = P
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Avançar d'una pagina ({ $shortcut })
     .aria-label = Pagina seguenta
     .accesskey = s
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Pagina seguenta
+    .accesskey = s
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Actualizar
     .accesskey = R
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Actualizar
+    .accesskey = R
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Arrestar
     .accesskey = A
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Arrestar
+    .accesskey = A
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Marcar aquesta pagina
     .accesskey = m
     .tooltiptext = Marcar aquesta pagina
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Marcar la pagina
+    .accesskey = M
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Modificar lo marcapagina
+    .accesskey = M
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Dobrir lo ligam dins un novèl onglet contextual
     .accesskey = b
-main-context-menu-open-link-container =
-    .label = Dobrir lo ligam dins un novèl onglet contextual
-    .accesskey = c
 main-context-menu-open-link-new-window =
     .label = Dobrir lo ligam dins una fenèstra novèla
     .accesskey = o
@@ -347,6 +378,9 @@ main-context-menu-suggest-strong-password =
     .accesskey = S
 main-context-menu-manage-logins =
     .label = Gerir los identificants…
+    .accesskey = G
+main-context-menu-manage-logins2 =
+    .label = Gerir los identificants
     .accesskey = G
 main-context-menu-keyword =
     .label = Apondre un mot clau per aquesta recèrca…

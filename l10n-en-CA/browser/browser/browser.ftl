@@ -264,11 +264,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Add Bookmark
+bookmarks-edit-bookmark = Edit Bookmark
+bookmark-panel-cancel =
+    .label = Cancel
+    .accesskey = C
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Remove Bookmark
+           *[other] Remove { $count } Bookmarks
+        }
+    .accesskey = R
 bookmark-panel-show-editor-checkbox =
     .label = Show editor when saving
     .accesskey = S
 bookmark-panel-done-button =
     .label = Done
+bookmark-panel-save-button =
+    .label = Save
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -288,6 +304,8 @@ identity-passive-loaded = Parts of this page are not secure (such as images).
 identity-active-loaded = You have disabled protection on this page.
 identity-weak-encryption = This page uses weak encryption.
 identity-insecure-login-forms = Logins entered on this page could be compromised.
+identity-permissions =
+    .value = Permissions
 identity-https-only-connection-upgraded = (upgraded to HTTPS)
 identity-https-only-label = HTTPS-Only Mode
 identity-https-only-dropdown-on =
@@ -299,8 +317,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Turn on HTTPS-Only Mode for this site if you want { -brand-short-name } to upgrade the connection when possible.
 identity-https-only-info-turn-off2 = If the page seems broken, you may want to turn off HTTPS-Only Mode for this site to reload using insecure HTTP.
 identity-https-only-info-no-upgrade = Unable to upgrade connection from HTTP.
-identity-permissions =
-    .value = Permissions
 identity-permissions-storage-access-header = Cross-site cookies
 identity-permissions-storage-access-hint = These parties can use cross-site cookies and site data while you are on this site.
 identity-permissions-reload-hint = You may need to reload the page for changes to apply.
@@ -348,8 +364,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Playing
-browser-tab-audio-muted = Muted
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = PLAYING
 # This label should be written in all capital letters if your locale supports them.
@@ -358,6 +372,26 @@ browser-tab-audio-muted2 = MUTED
 browser-tab-audio-blocked = AUTOPLAY BLOCKED
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = PICTURE-IN-PICTURE
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] MUTE TAB
+       *[other] MUTE { $count } TABS
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] UNMUTE TAB
+       *[other] UNMUTE { $count } TABS
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] PLAY TAB
+       *[other] PLAY { $count } TABS
+    }
 
 ## Bookmarks toolbar items
 
@@ -509,6 +543,13 @@ urlbar-result-action-tabtosearch-web = Search with { $engine } directly from the
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Search { $engine } directly from the address bar
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Copy
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -543,15 +584,13 @@ crashed-subframe-learnmore =
 crashed-subframe-learnmore-link =
     .value = Learn More
 crashed-subframe-submit =
-    .label = Submit Report
+    .label = Submit report
     .accesskey = S
 
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Show All Bookmarks
-bookmarks-recent-bookmarks =
-    .value = Recently Bookmarked
 bookmarks-manage-bookmarks =
     .label = Manage Bookmarks
 bookmarks-recent-bookmarks-panel =
@@ -572,12 +611,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Hide Bookmarks Sidebar
            *[other] View Bookmarks Sidebar
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Hide Bookmarks Toolbar
-           *[other] View Bookmarks Toolbar
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -624,12 +657,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Bookmarks
-library-bookmarks-bookmark-this-page =
-    .label = Bookmark This Page
-library-bookmarks-bookmark-edit =
-    .label = Edit This Bookmark
 library-recent-activity-title =
     .value = Recent Activity
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Save to { -pocket-brand-name }
+    .tooltiptext = Save to { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Add-ons and themes
+    .tooltiptext = Manage your add-ons and themes ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Settings
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Open settings ({ $shortcut })
+           *[other] Open settings
+        }
 
 ## More items
 
@@ -656,3 +708,9 @@ panel-save-update-password = Password
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = Remove { $name }?
 addon-removal-abuse-report-checkbox = Report this extension to { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Manage Account
+remote-tabs-sync-now = Sync Now

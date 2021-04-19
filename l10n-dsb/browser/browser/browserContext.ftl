@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Jaden bok slědk ({ $shortcut })
     .aria-label = Slědk
     .accesskey = S
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Slědk
+    .accesskey = S
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Jaden bok doprědka ({ $shortcut })
     .aria-label = Doprědka
     .accesskey = D
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Doprědka
+    .accesskey = D
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Znowego
     .accesskey = Z
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Znowego
+    .accesskey = Z
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Stoj
     .accesskey = S
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Stoj
+    .accesskey = S
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Toś ten bok ako cytańske znamje składowaś
     .accesskey = c
     .tooltiptext = Toś ten bok ako cytańske znamje składowaś
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Bok ako cytańske znamje składowaś
+    .accesskey = B
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Cytańske znamje wobźěłaś
+    .accesskey = C
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Wótkaz w nowem kontejnerowem rejtariku wócyniś
     .accesskey = t
-main-context-menu-open-link-container =
-    .label = Wótkaz w nowem kontejnerje wócyniś
-    .accesskey = W
 main-context-menu-open-link-new-window =
     .label = Wótkaz w nowem woknje wócyniś
     .accesskey = n
@@ -347,6 +378,9 @@ main-context-menu-suggest-strong-password =
     .accesskey = M
 main-context-menu-manage-logins =
     .label = Pśizjawjenja zastojaś…
+    .accesskey = P
+main-context-menu-manage-logins2 =
+    .label = Pśizjawjenja zastojaś
     .accesskey = P
 main-context-menu-keyword =
     .label = Gronidło za toś to pytanje pśidaś…

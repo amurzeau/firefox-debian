@@ -10,6 +10,8 @@ preferences-title =
             [windows] Opties
            *[other] Voorkeuren
         }
+preferences-tab-title =
+    .title = Voorkeuren
 category-list =
     .aria-label = Categorieën
 pane-general-title = Algemeen
@@ -90,6 +92,7 @@ update-in-progress-ok-button = &Verwerpen
 update-in-progress-cancel-button = &Doorgaan
 account-button = Accountinstellingen
 addons-button = Extensies & Thema’s
+open-addons-sidebar-button = Add-ons en thema’s
 
 ## OS Authentication dialog
 
@@ -165,6 +168,12 @@ customize-alert-label =
 tray-icon-label =
     .label = Een systeemvakpictogram tonen
     .accesskey = t
+biff-use-system-alert =
+    .label = De systeemmelding gebruiken
+tray-icon-unread-label =
+    .label = Een systeemvakpictogram voor ongelezen berichten tonen
+    .accesskey = t
+tray-icon-unread-description = Aanbevolen bij gebruik van kleine taakbalkknoppen
 mail-system-sound-label =
     .label = Standaard systeemgeluid voor nieuwe e-mail
     .accesskey = S

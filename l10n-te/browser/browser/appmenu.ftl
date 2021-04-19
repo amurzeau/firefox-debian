@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = { -brand-shorter-name } తాజాకరణ దించుకుంటోంది
+appmenuitem-update-banner2 =
+    .label-update-downloading = { -brand-shorter-name } తాజాకరణను దించుకొంటూంది
+    .label-update-available = తాజాకరణ అందుబాటులో ఉంది — ఇప్పుడే దించుకోండి
+    .label-update-manual = తాజాకరణ అందుబాటులో ఉంది — ఇప్పుడే దించుకోండి
+    .label-update-unsupported = తాజాకరించలేకున్నాం
+    .label-update-restart = తాజాకరణ అందుబాటులో ఉంది — ఇప్పుడే పునఃప్రారంభించండి
 appmenuitem-protection-dashboard-title = సంరక్షణల డాష్‌బోర్డ్
 appmenuitem-customize-mode =
     .label = అభిమతీకరించు…
@@ -21,8 +27,20 @@ appmenuitem-passwords =
     .label = సంకేతపదాలు
 appmenuitem-extensions-and-themes =
     .label = పొడగింతలు, అలంకారాలు
+appmenuitem-addons-and-themes =
+    .label = పొడగింతలు, అలంకారాలు
+appmenuitem-find-in-page =
+    .label = పేజీలో వెతుకు…
 appmenuitem-more-tools =
     .label = మరిన్ని పనిముట్లు
+appmenuitem-exit =
+    .label = నిష్క్రమించు
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] నిష్క్రమించు
+           *[other] నిష్క్రమించు
+        }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -41,6 +59,11 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = ఇప్పుడు సింక్ చేయి
+appmenuitem-fxa-manage-account = ఖాతా నిర్వహణ
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
+appmenu-fxa-show-more-tabs = మరిన్ని ట్యాబులను చూపించు
 appmenuitem-save-page =
     .label = పేజీని ఇలా భద్రపరచు…
 
@@ -64,11 +87,17 @@ profiler-popup-reveal-description-button =
 profiler-popup-learn-more = ఇంకా తెలుసుకోండి
 profiler-popup-settings =
     .value = అమరికలు
+# The profiler presets list is generated elsewhere, but the custom preset is defined
+# here only.
+profiler-popup-presets-custom =
+    .label = అభిమతం
 profiler-popup-discard-button =
     .label = విస్మరించు
 
 ## History panel
 
+appmenu-reopen-all-tabs = ట్యాబులన్నింటినీ మళ్లీ తెరువు
+appmenu-reopen-all-windows = కిటికీలన్నిటినీ మళ్ళీ తెరువు
 
 ## Help panel
 
@@ -77,23 +106,14 @@ appmenu-help-header =
 appmenu-about =
     .label = { -brand-shorter-name } గురించి
     .accesskey = A
-appmenu-help-product =
-    .label = { -brand-shorter-name } సహాయం
-    .accesskey = H
-appmenu-help-show-tour =
-    .label = { -brand-shorter-name } పర్యటన
-    .accesskey = o
-appmenu-help-import-from-another-browser =
-    .label = మరో విహారిణి నుండి దిగుమతిచేయి…
-    .accesskey = I
-appmenu-help-keyboard-shortcuts =
-    .label = కీబోర్డు షార్టుకట్లు
-    .accesskey = K
 appmenu-get-help =
     .label = సహాయం పొందండి
     .accesskey = H
 appmenu-help-troubleshooting-info =
     .label = సమస్యాపరిష్కారపు సమాచారం
+    .accesskey = T
+appmenu-help-more-troubleshooting-info =
+    .label = మరింత సమస్యాపరిష్కారపు సమాచారం
     .accesskey = T
 appmenu-help-report-site-issue =
     .label = సైటులోని సమస్యను నివేదించండి…
@@ -111,6 +131,10 @@ appmenu-help-safe-mode-with-addons =
     .label = యాడ్-ఆన్స్ చేతనపరచి పునఃప్రారంభించు
     .accesskey = R
 
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
@@ -121,10 +145,6 @@ appmenu-help-not-deceptive =
     .label = ఇది ఒక మోసపూరిత సైట్ కాదు...
     .accesskey = d
 
-##
-
-appmenu-help-check-for-update =
-    .label = తాజాకరణలకై చూడు…
-
 ## More Tools
 
+appmenu-developer-tools-subheader = విహారిణి పనిముట్లు

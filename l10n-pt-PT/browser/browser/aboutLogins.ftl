@@ -18,6 +18,7 @@ login-filter =
 create-login-button = Criar nova credencial
 fxaccounts-sign-in-text = Obtenha as suas palavras-passe nos seus outros dispositivos
 fxaccounts-sign-in-button = Iniciar sessão no { -sync-brand-short-name }
+fxaccounts-sign-in-sync-button = Iniciar sessão para sincronizar
 fxaccounts-avatar-button =
     .title = Gerir conta
 
@@ -70,11 +71,15 @@ about-logins-list-item-vulnerable-password-icon =
 
 login-intro-heading = Está à procura das suas credenciais guardadas? Configure o { -sync-brand-short-name }.
 about-logins-login-intro-heading-logged-out = Está à procura das suas credenciais guardadas? Configure o { -sync-brand-short-name } ou importe as credenciais.
+about-logins-login-intro-heading-logged-out2 = À procura das suas credenciais guardadas? Ative a sincronização ou importe as credenciais.
 about-logins-login-intro-heading-logged-in = Não foram encontradas credenciais sincronizadas.
 login-intro-description = Se guardou as suas credenciais para o { -brand-product-name } num dispositivo diferente, eis como as obter aqui:
 login-intro-instruction-fxa = Crie ou inicie a sessão na sua { -fxaccount-brand-name } no dispositivo onde as suas credenciais estão guardadas
 login-intro-instruction-fxa-settings = Certifique-se que ativou a opção Credenciais nas definições do { -sync-brand-short-name }
 about-logins-intro-instruction-help = Visite o <a data-l10n-name="help-link">Apoio do { -lockwise-brand-short-name }</a> para mais ajuda
+login-intro-instructions-fxa = Crie ou inicie a sessão na sua { -fxaccount-brand-name } no dispositivo onde as suas credenciais estão guardadas
+login-intro-instructions-fxa-settings = Aceda a Definições > Sincronizar > Ativar sincronização... Marque a caixa de seleção Credenciais e palavras-passe.
+login-intro-instructions-fxa-help = Visite o <a data-l10n-name="help-link">Apoio do { -lockwise-brand-short-name }</a> para mais ajuda.
 about-logins-intro-import = Se as suas credenciais estão guardadas noutro navegador, pode <a data-l10n-name="import-link">importar as mesmas para o { -lockwise-brand-short-name }</a>
 about-logins-intro-import2 = Se as suas credenciais são guardadas fora do { -brand-product-name }, poderá <a data-l10n-name="import-browser-link">importar as mesmas de outro navegador</a> ou <a data-l10n-name="import-file-link">de um ficheiro</a>
 
@@ -313,6 +318,7 @@ about-logins-import-dialog-error-unable-to-read-description = Certifique-se que 
 about-logins-import-dialog-error-no-logins-imported = Não foram importadas credenciais
 about-logins-import-dialog-error-learn-more = Saber mais
 about-logins-import-dialog-error-try-again = Tentar novamente…
+about-logins-import-dialog-error-try-import-again = Tente importar novamente...
 about-logins-import-dialog-error-cancel = Cancelar
 about-logins-import-report-title = Resumo de importação
 about-logins-import-report-description = Credenciais e palavras-passe importadas para o { -brand-short-name }.

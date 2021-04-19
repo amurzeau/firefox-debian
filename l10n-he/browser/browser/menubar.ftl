@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = העדפות
 menu-application-services =
     .label = שירותים
 menu-application-hide-this =
@@ -252,15 +254,18 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = כניסה אל { -brand-product-name }…
     .accesskey = כ
-menu-tools-extensions =
-    .label = הרחבות וערכות נושא
-    .accesskey = ה
+menu-tools-addons-and-themes =
+    .label = תוספות וערכות נושא
+    .accesskey = ת
 menu-tools-fxa-sign-in2 =
     .label = כניסה
     .accesskey = כ
 menu-tools-turn-on-sync =
     .label = הפעלת { -sync-brand-short-name }…
     .accesskey = ה
+menu-tools-turn-on-sync2 =
+    .label = הפעלת סנכרון
+    .accesskey = ס
 menu-tools-sync-now =
     .label = סנכרון כעת
     .accesskey = ס
@@ -270,12 +275,25 @@ menu-tools-fxa-re-auth =
 menu-tools-web-developer =
     .label = כלי פיתוח
     .accesskey = כ
+menu-tools-browser-tools =
+    .label = כלי דפדפן
+    .accesskey = כ
+menu-tools-task-manager =
+    .label = מנהל משימות
+    .accesskey = מ
 menu-tools-page-source =
     .label = מקור הדף
     .accesskey = ר
 menu-tools-page-info =
     .label = מידע על הדף
     .accesskey = מ
+menu-settings =
+    .label = הגדרות
+    .accesskey =
+        { PLATFORM() ->
+            [windows] ג
+           *[other] ג
+        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -286,13 +304,6 @@ menu-preferences =
         { PLATFORM() ->
             [windows] א
            *[other] ד
-        }
-menu-settings =
-    .label = הגדרות
-    .accesskey =
-        { PLATFORM() ->
-            [windows] ג
-           *[other] ג
         }
 menu-tools-layout-debugger =
     .label = ניפוי שגיאות פריסה
@@ -306,15 +317,6 @@ menu-window-bring-all-to-front =
     .label = הבא הכול לקדמה
 
 ## Help Menu
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
 
 
 # NOTE: For Engineers, any additions or changes to Help menu strings should
@@ -346,11 +348,11 @@ menu-get-help =
 menu-help-troubleshooting-info =
     .label = מידע לפתרון בעיות
     .accesskey = מ
+menu-help-taskmanager =
+    .label = מנהל משימות
 menu-help-more-troubleshooting-info =
     .label = מידע נוסף לפתרון בעיות
     .accesskey = מ
-menu-help-taskmanager =
-    .label = מנהל משימות
 menu-help-report-site-issue =
     .label = דיווח על בעיה באתר…
 menu-help-feedback-page =
@@ -362,8 +364,8 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = הפעלה מחדש עם תוספות פעילות
     .accesskey = ח
-menu-help-enter-troubleshoot-mode =
-    .label = מצב לפתרון בעיות
+menu-help-enter-troubleshoot-mode2 =
+    .label = מצב לפתרון בעיות…
     .accesskey = פ
 menu-help-exit-troubleshoot-mode =
     .label = כיבוי מצב לפתרון בעיות
@@ -376,6 +378,3 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = אתר זה אינו אתר מטעה…
     .accesskey = א
-menu-help-check-for-update =
-    .label = בדיקה אחר עדכונים…
-    .accesskey = ב

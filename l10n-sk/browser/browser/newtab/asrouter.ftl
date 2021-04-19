@@ -144,6 +144,19 @@ cfr-whatsnew-permission-prompt-cta = Ďalšie informácie
 
 ## Fingerprinter Counter
 
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $fingerprinterCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-fingerprinter-counter-header =
+    { $fingerprinterCount ->
+        [one] Blokovaný odtlačok prehliadača
+        [few] Blokované odtlačky prehliadača
+       *[other] Blokovaných odtlačkov prehliadača
+    }
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } blokuje mnoho odtlačkov prehliadača, ktoré tajne zhromažďujú informácie o vašom zariadení a akciách, aby vytvorili váš reklamný profil.
+# Message variation when fingerprinters count is less than 10
+cfr-whatsnew-fingerprinter-counter-header-alt = Odtlačky prehliadača
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } dokáže blokovať odtlačky prehliadača, ktoré tajne zhromažďujú informácie o vašom zariadení a akciách, aby vytvorili váš reklamný profil.
 
 ## Bookmark Sync
 
@@ -198,6 +211,15 @@ cfr-doorhanger-milestone-heading =
     { $blockedCount ->
        *[other] Aplikácia { -brand-short-name } zablokovala od { $date } viac než <b>{ $blockedCount }</b> sledovacích prvkov!
     }
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (Datetime) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading2 =
+    { $blockedCount ->
+        [one] Prehliadač { -brand-short-name } zablokoval od { DATETIME($date, month: "long", year: "numeric") } viac ako <b>{ $blockedCount }</b> sledovací prvok.
+        [few] Prehliadač { -brand-short-name } zablokoval od { DATETIME($date, month: "long", year: "numeric") } viac ako <b>{ $blockedCount }</b> sledovacie prvky.
+       *[other] Prehliadač { -brand-short-name } zablokoval od { DATETIME($date, month: "long", year: "numeric") } viac ako <b>{ $blockedCount }</b> sledovacích prvkov.
+    }
 cfr-doorhanger-milestone-ok-button = Zobraziť všetko
     .accesskey = v
 cfr-doorhanger-milestone-close-button = Zavrieť
@@ -209,11 +231,13 @@ cfr-doorhanger-milestone-close-button = Zavrieť
 ## Lockwise message
 
 cfr-whatsnew-lockwise-header = Vytvárajte zabezpečené heslá s ľahkosťou
+cfr-whatsnew-lockwise-body = Nie je jednoduché vymyslieť jedinečné a bezpečné heslá pre každý účet. Pri vytváraní hesla vyberte pole pre heslo, aby ste mohli použiť bezpečné heslo vygenerované prehliadačom { -brand-shorter-name }.
 cfr-whatsnew-lockwise-icon-alt = Ikona { -lockwise-brand-short-name(case: "gen") }
 
 ## Vulnerable Passwords message
 
 cfr-whatsnew-passwords-header = Dostávajte upozornenia na zraniteľné heslá
+cfr-whatsnew-passwords-body = Hackeri vedia, že ľudia opakovane používajú rovnaké heslá. Ak ste na viacerých weboch použili rovnaké heslo a niektorý z týchto webov zasiahol únik dát, { -lockwise-brand-short-name } vás vyzve k zmene hesla na týchto stránkach.
 cfr-whatsnew-passwords-icon-alt = Ikona zraniteľného hesla
 
 ## Picture-in-Picture fullscreen message
@@ -229,6 +253,8 @@ cfr-whatsnew-pip-fullscreen-icon-alt = Ikona obrazu v obraze
 ## Protections Dashboard message
 
 cfr-whatsnew-protections-header = Prehľad ochrany na jednom mieste
+cfr-whatsnew-protections-body = Nástenka ochrany súkromia obsahuje súhrnné správy o únikoch údajov a správe hesiel. Teraz môžete sledovať, koľko únikov údajov ste vyriešili, a zistiť, či niektoré z vašich uložených hesiel mohlo byť vystavené úniku údajov.
+cfr-whatsnew-protections-cta-link = Zobraziť Nástenku ochrany súkromia
 cfr-whatsnew-protections-icon-alt = Ikona štítu
 
 ## Better PDF message
@@ -238,29 +264,52 @@ cfr-whatsnew-better-pdf-body = Dokumenty PDF sa teraz otvárajú priamo v aplik�
 
 ## DOH Message
 
+cfr-doorhanger-doh-body = Na vašom súkromí záleží. Prehliadač { -brand-short-name } teraz posiela vaše požiadavky DNS na partnerskú službu v záujme vašej ochrany zabezpečene.
 cfr-doorhanger-doh-header = Bezpečnejšie a šifrované vyhľadávanie DNS
 cfr-doorhanger-doh-primary-button = OK, rozumiem
     .accesskey = O
+cfr-doorhanger-doh-primary-button-2 = OK
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = Zakázať
+    .accesskey = Z
 
 ## Fission Experiment Message
 
+cfr-doorhanger-fission-body-approved = Na vašom súkromí záleží. Prehliadač { -brand-short-name } teraz izoluje webové stránky navzájom, čo hackerom sťažuje odcudzenie hesiel, čísiel kreditných kariet a ďalších citlivých informácií.
+cfr-doorhanger-fission-header = Izolácia stránok
+cfr-doorhanger-fission-primary-button = OK, rozumiem
+    .accesskey = r
 cfr-doorhanger-fission-secondary-button = Ďalšie informácie
     .accesskey = a
 
 ## What's new: Cookies message
 
+cfr-whatsnew-clear-cookies-header = Automatická ochrana pred záludnou taktikou sledovania
+cfr-whatsnew-clear-cookies-body = Niektoré sledovacie prvky vás presmerujú na iné webové stránky, ktoré tajne nastavujú súbory cookie. Prehliadač { -brand-short-name } teraz tieto cookies automaticky vymaže, aby vás nebolo možné sledovať.
+cfr-whatsnew-clear-cookies-image-alt = Ukážka blokovaného súboru cookie
 
 ## What's new: Media controls message
 
+cfr-whatsnew-media-keys-header = Viac ovládacích prvkov pre médiá
+cfr-whatsnew-media-keys-body = Prehrávajte a pozastavujte zvuk alebo video priamo z klávesnice alebo náhlavnej súpravy, čo uľahčuje ovládanie médií z inej karty, programu alebo dokonca aj vtedy, keď je počítač uzamknutý. Medzi skladbami sa tiež môžete pohybovať pomocou tlačidiel dopredu a dozadu.
+cfr-whatsnew-media-keys-button = Zistite ako na to
 
 ## What's new: Search shortcuts
 
+cfr-whatsnew-search-shortcuts-header = Skratky pre vyhľadávanie v paneli s adresou
+cfr-whatsnew-search-shortcuts-body = Keď teraz do panela s adresou napíšete vyhľadávací nástroj alebo konkrétny web, v návrhoch vyhľadávania sa zobrazí modrá skratka. Vyberte túto skratku a dokončite vyhľadávanie priamo z panela s adresou.
 
 ## What's new: Cookies protection
 
+cfr-whatsnew-supercookies-header = Ochrana pred škodlivými supercookies
+cfr-whatsnew-supercookies-body = Webové stránky môžu k vášmu prehliadaču tajne pripojiť „supercookie“, ktorý vás bude môcť po webe sledovať, a to aj po vymazaní súborov cookie. { -brand-short-name } teraz poskytuje silnú ochranu proti supercookies, takže ich nemožno použiť na sledovanie vašich aktivít online z jedného webu na druhý.
 
 ## What's new: Better bookmarking
 
+cfr-whatsnew-bookmarking-header = Vylepšené záložky
+cfr-whatsnew-bookmarking-body = Sledovanie obľúbených webov je jednoduchšie. Prehliadač { -brand-short-name } si teraz pamätá vaše preferované umiestnenie uložených záložiek, predvolene zobrazuje panel so záložkami na nových kartách a umožňuje ľahký prístup k ostatným záložkám prostredníctvom priečinka na paneli nástrojov.
 
 ## What's new: Cross-site cookie tracking
 
+cfr-whatsnew-cross-site-tracking-header = Komplexná ochrana pred sledovaním pomocou cookies tretích strán
+cfr-whatsnew-cross-site-tracking-body = Teraz sa môžete využiť lepšiu ochranu pred sledovaním pomocou súborov cookies. { -brand-short-name } dokáže izolovať vaše aktivity a údaje od webu, na ktorom sa momentálne nachádzate, takže informácie uložené v prehliadači sa medzi webmi nezdieľajú.

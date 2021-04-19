@@ -11,10 +11,11 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = 设置 WebExtension 可通过 chrome.storage.managed 存取的策略。
+policy-AllowedDomainsForApps = 定义允许访问 Google Workspace 的域。
 policy-AppAutoUpdate = 启用或禁用应用程序自动更新。
 policy-AppUpdateURL = 设置自定义的应用程序更新网址。
 policy-Authentication = 为支持的网站配置集成身份验证。
-policy-BackgroundAppUpdate = 启用或禁用后台更新程序，该程序可在浏览器未运行时对其进行更新。
+policy-BackgroundAppUpdate2 = 启用或禁用后台更新程序。
 policy-BlockAboutAddons = 阻止访问附加组件管理器（about:addons）。
 policy-BlockAboutConfig = 阻止访问 about:config 页面。
 policy-BlockAboutProfiles = 阻止访问 about:profiles 页面。
@@ -32,7 +33,7 @@ policy-DisableDeveloperTools = 阻止访问开发者工具。
 policy-DisableFeedbackCommands = 禁用“帮助”菜单中的“发送反馈”命令（提交反馈和举报诈骗网站）。
 policy-DisableFirefoxAccounts = 禁用 { -fxaccount-brand-name }的基础服务，包含同步。
 # Firefox Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = 禁用 Firefox Screenshots 功能。
+policy-DisableFirefoxScreenshots = 禁用 Firefox 的“截图”功能。
 policy-DisableFirefoxStudies = 阻止 { -brand-short-name } 运行研究实验。
 policy-DisableForgetButton = 阻止使用“忘记”功能。
 policy-DisableFormHistory = 不要记住搜索和表单的历史记录。
@@ -107,6 +108,7 @@ policy-SearchEngines = 配置搜索引擎设置。此策略仅适用于延长支
 policy-SearchSuggestEnabled = 启用或禁用搜索建议。
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = 安装 PKCS #11 模块。
+policy-ShowHomeButton = 在工具栏显示“主页”按钮
 policy-SSLVersionMax = 设置最高 SSL 版本。
 policy-SSLVersionMin = 设置最低 SSL 版本。
 policy-SupportMenu = 向帮助菜单自选添加技术支持项目。

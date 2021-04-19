@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = Ladataan { -brand-shorter-name }-päivitystä
+appmenuitem-update-banner2 =
+    .label-update-downloading = Ladataan { -brand-shorter-name }-päivitystä
+    .label-update-available = Päivitys saatavilla – lataa nyt
+    .label-update-manual = Päivitys saatavilla – lataa nyt
+    .label-update-unsupported = Päivittäminen ei onnistu
+    .label-update-restart = Päivitys saatavilla – käynnistä uudelleen
 appmenuitem-protection-dashboard-title = Suojausten yhteenveto
 appmenuitem-customize-mode =
     .label = Muokkaa…
@@ -21,18 +27,32 @@ appmenuitem-passwords =
     .label = Salasanat
 appmenuitem-extensions-and-themes =
     .label = Laajennukset ja teemat
+appmenuitem-addons-and-themes =
+    .label = Lisäosat ja teemat
 appmenuitem-find-in-page =
     .label = Etsi sivulta…
 appmenuitem-more-tools =
     .label = Lisää työkaluja
 appmenuitem-exit =
-    .label = Sulje
+    .label = Sulje selain
 appmenu-menu-button-closed =
     .tooltiptext = Avaa sovellusvalikko
     .label = { -brand-shorter-name }
 appmenu-menu-button-opened =
     .tooltiptext = Sulje sovellusvalikko
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Sulje selain
+           *[other] Sulje selain
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Avaa sovellusvalikko
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Sulje sovellusvalikko
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Synkronoi
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Synkronoi nyt
-    .value = Synkronoi nyt
+appmenu-remote-tabs-sign-into-sync =
+    .label = Kirjaudu synkronoidaksesi…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Ota synkronointi käyttöön…
+appmenuitem-fxa-toolbar-sync-now2 = Synkronoi nyt
 appmenuitem-fxa-manage-account = Hallinnoi tiliä
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = Viimeksi synkronoitu { $time }
     .label = Viimeksi synkronoitu { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Synkronoi ja tallenna tiedot
+appmenu-fxa-sync-and-save-data2 = Synkronoi ja tallenna tiedot
 appmenu-fxa-signed-in-label = Kirjaudu sisään
 appmenu-fxa-setup-sync =
     .label = Ota synkronointi käyttöön…
@@ -133,26 +157,6 @@ appmenu-help-header =
 appmenu-about =
     .label = Tietoja: { -brand-shorter-name }
     .accesskey = T
-appmenu-help-product =
-    .label =
-        { -brand-shorter-name.case-status ->
-            [with-cases] { -brand-shorter-name(case: "genitive") } ohje
-           *[no-cases] Ohjelman ohje
-        }
-    .accesskey = o
-appmenu-help-show-tour =
-    .label =
-        { -brand-shorter-name.case-status ->
-            [with-cases] { -brand-shorter-name(case: "genitive") } esittely
-           *[no-cases] Ohjelman esittely
-        }
-    .accesskey = e
-appmenu-help-import-from-another-browser =
-    .label = Tuo toisesta selaimesta…
-    .accesskey = s
-appmenu-help-keyboard-shortcuts =
-    .label = Näppäinkomennot
-    .accesskey = N
 appmenu-get-help =
     .label = Etsi ohjeita
     .accesskey = h
@@ -161,6 +165,9 @@ appmenu-help-troubleshooting-info =
     .accesskey = T
 appmenu-help-taskmanager =
     .label = Tehtävienhallinta
+appmenu-help-more-troubleshooting-info =
+    .label = Lisää vianmääritystietoja
+    .accesskey = v
 appmenu-help-report-site-issue =
     .label = Ilmoita sivuston ongelmasta…
 appmenu-help-feedback-page =
@@ -180,6 +187,12 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Vianmääritystila…
+    .accesskey = m
+appmenu-help-exit-troubleshoot-mode =
+    .label = Poista vianmääritystila käytöstä
+    .accesskey = P
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
@@ -191,13 +204,10 @@ appmenu-help-not-deceptive =
     .label = Tämä ei ole petollinen sivusto…
     .accesskey = p
 
-##
-
-appmenu-help-check-for-update =
-    .label = Tarkista päivitykset…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Muokkaa työkalupalkkia…
+appmenu-taskmanager =
+    .label = Tehtävienhallinta
 appmenu-developer-tools-subheader = Browser Tools

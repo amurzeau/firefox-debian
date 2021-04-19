@@ -11,8 +11,20 @@ appmenuitem-update-banner =
             [masculine] { -brand-shorter-name(case: "gen") }
             [feminine] { -brand-shorter-name(case: "gen") }
             [neuter] { -brand-shorter-name(case: "gen") }
-           *[other] aplikace { -brand-shorter-name }
+           *[other] { "" }
         }
+appmenuitem-update-banner2 =
+    .label-update-downloading =
+        Stahování aktualizace { -brand-shorter-name.gender ->
+            [masculine] { -brand-shorter-name(case: "gen") }
+            [feminine] { -brand-shorter-name(case: "gen") }
+            [neuter] { -brand-shorter-name(case: "gen") }
+           *[other] { "" }
+        }
+    .label-update-available = Nová aktualizace — stáhnout
+    .label-update-manual = Nová aktualizace — stáhnout
+    .label-update-unsupported = Nelze nainstalovat novou aktualizaci
+    .label-update-restart = Nová aktualizace — restartovat
 appmenuitem-protection-dashboard-title = Přehled ochrany soukromí
 appmenuitem-customize-mode =
     .label = Nastavení tlačítek a lišt…
@@ -27,6 +39,8 @@ appmenuitem-passwords =
     .label = Přihlašovací údaje
 appmenuitem-extensions-and-themes =
     .label = Rozšíření a vzhledy
+appmenuitem-addons-and-themes =
+    .label = Doplňky a vzhledy
 appmenuitem-find-in-page =
     .label = Najít na stránce…
 appmenuitem-more-tools =
@@ -39,6 +53,14 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Zavře nabídku aplikace
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label = Ukončit
+appmenu-menu-button-closed2 =
+    .tooltiptext = Otevře nabídku aplikace
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Zavře nabídku aplikace
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -57,12 +79,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Synchronizovat
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Synchronizovat
-    .value = Synchronizovat
+appmenu-remote-tabs-sign-into-sync =
+    .label = Přihlásit se k synchronizaci…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Zapnout synchronizaci…
+appmenuitem-fxa-toolbar-sync-now2 = Synchronizovat
 appmenuitem-fxa-manage-account = Správa účtu
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -70,6 +95,7 @@ appmenu-fxa-last-sync = Naposledy synchronizováno { $time }
     .label = Naposledy synchronizováno { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Synchronizace a ukládání dat
+appmenu-fxa-sync-and-save-data2 = Synchronizace a ukládání dat
 appmenu-fxa-signed-in-label = Přihlásit se
 appmenu-fxa-setup-sync =
     .label = Zapnout synchronizaci…
@@ -145,41 +171,17 @@ appmenu-help-header =
 appmenu-about =
     .label = O aplikaci { -brand-shorter-name }
     .accesskey = O
-appmenu-help-product =
-    .label =
-        Nápověda { -brand-shorter-name.gender ->
-            [masculine] { -brand-shorter-name(case: "gen") }
-            [feminine] { -brand-shorter-name(case: "gen") }
-            [neuter] { -brand-shorter-name(case: "gen") }
-           *[other] aplikace { -brand-shorter-name }
-        }
-    .accesskey = N
-appmenu-help-show-tour =
-    .label =
-        Průvodce { -brand-shorter-name.gender ->
-            [masculine] { -brand-shorter-name(case: "ins") }
-            [feminine] { -brand-shorter-name(case: "ins") }
-            [neuter] { -brand-shorter-name(case: "ins") }
-           *[other] aplikací { -brand-shorter-name }
-        }
-    .accesskey = P
-appmenu-help-import-from-another-browser =
-    .label = Importovat z jiného prohlížeče…
-    .accesskey = I
-appmenu-help-keyboard-shortcuts =
-    .label = Klávesové zkratky
-    .accesskey = K
 appmenu-get-help =
     .label = Získat pomoc
     .accesskey = p
 appmenu-help-troubleshooting-info =
     .label = Technické informace
     .accesskey = T
+appmenu-help-taskmanager =
+    .label = Správce úloh
 appmenu-help-more-troubleshooting-info =
     .label = Další technické informace
     .accesskey = t
-appmenu-help-taskmanager =
-    .label = Správce úloh
 appmenu-help-report-site-issue =
     .label = Nahlásit problém se stránkou…
 appmenu-help-feedback-page =
@@ -199,8 +201,8 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Režim řešení potíží
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Režim řešení potíží…
     .accesskey = m
 appmenu-help-exit-troubleshoot-mode =
     .label = Ukončit režim řešení potíží
@@ -216,13 +218,10 @@ appmenu-help-not-deceptive =
     .label = Tato stránka není klamavá…
     .accesskey = l
 
-##
-
-appmenu-help-check-for-update =
-    .label = Zkontrolovat aktualizace…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Nastavení tlačítek a lišt…
+appmenu-taskmanager =
+    .label = Správce úloh
 appmenu-developer-tools-subheader = Nástroje prohlížeče

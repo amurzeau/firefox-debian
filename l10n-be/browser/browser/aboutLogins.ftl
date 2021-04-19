@@ -18,6 +18,7 @@ login-filter =
 create-login-button = Дадаць новы лагін
 fxaccounts-sign-in-text = Атрымайце доступ да сваіх пароляў на іншых прыладах
 fxaccounts-sign-in-button = Увайсці ў { -sync-brand-short-name(case: "acc") }
+fxaccounts-sign-in-sync-button = Увайсці ў сінхранізацыю
 fxaccounts-avatar-button =
     .title = Кіраванне ўліковым запісам
 
@@ -71,11 +72,15 @@ about-logins-list-item-vulnerable-password-icon =
 
 login-intro-heading = Шукаеце захаваныя лагіны? Наладзьце { -sync-brand-short-name }.
 about-logins-login-intro-heading-logged-out = Шукаеце захаваныя лагіны? Наладзьце { -sync-brand-short-name } або імпартуйце іх.
+about-logins-login-intro-heading-logged-out2 = Шукаеце захаваныя паролі? Уключыце сінхранізацыю альбо імпартуйце іх.
 about-logins-login-intro-heading-logged-in = Сінхранізаваныя лагіны не знойдзены.
 login-intro-description = Калі вы захавалі свае лагіны ў { -brand-product-name } на іншай прыладзе, вось як атрымаць іх тут:
 login-intro-instruction-fxa = Стварыце альбо ўвайдзіце ў свой { -fxaccount-brand-name } на прыладзе, дзе захоўваюцца вашы лагіны
 login-intro-instruction-fxa-settings = Пераканайцеся, што вы ўстанавілі сцяжок Лагіны у наладах { -sync-brand-short-name }
 about-logins-intro-instruction-help = Для атрымання дадатковай даведкі наведайце <a data-l10n-name="help-link">падтрымку { -lockwise-brand-short-name }</a>
+login-intro-instructions-fxa = Стварыце або ўвайдзіце ў свой { -fxaccount-brand-name } на прыладзе, дзе захоўваюцца вашы лагіны.
+login-intro-instructions-fxa-settings = Прайдзіце ў Налады> Sync> Уключыць сінхранізацыю… Адзначце сцяжок Лагіны і паролі.
+login-intro-instructions-fxa-help = Для атрымання дадатковай даведкі наведайце <a data-l10n-name="help-link">падтрымку { -lockwise-brand-short-name }</a>.
 about-logins-intro-import = Калі вашы паролі захоўваюцца ў іншым браўзеры, вы можаце <a data-l10n-name="import-link">імпартаваць іх у { -lockwise-brand-short-name }</a>
 about-logins-intro-import2 = Калі вашы лагіны захоўваюцца па-за { -brand-product-name }, вы можаце <a data-l10n-name="import-browser-link">імпартаваць іх з іншага браўзера</a> або <a data-l10n-name="import-file-link">з файла</a>
 
@@ -327,6 +332,7 @@ about-logins-import-dialog-error-unable-to-read-description = Упэўніцес
 about-logins-import-dialog-error-no-logins-imported = Ніводзін лагін не імпартаваны
 about-logins-import-dialog-error-learn-more = Даведацца больш
 about-logins-import-dialog-error-try-again = Паспрабаваць зноў...
+about-logins-import-dialog-error-try-import-again = Паўтарыць спробу імпарту…
 about-logins-import-dialog-error-cancel = Скасаваць
 about-logins-import-report-title = Падсумаванне імпарту
 about-logins-import-report-description = Лагіны і паролі імпартаваны ў { -brand-short-name }.

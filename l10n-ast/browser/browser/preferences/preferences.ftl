@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 do-not-track-description = Unviar a los sitios web la señal «Nun me siguir» pa dici-yos que nun quies que te rastrexen
-do-not-track-learn-more = Deprender más
+do-not-track-learn-more = Lleer más
 do-not-track-option-default-content-blocking-known =
     .label = Namás cuando { -brand-short-name } tea configuráu pa bloquiar los rastrexadores conocíos
 do-not-track-option-always =
@@ -28,6 +28,18 @@ search-input-box =
             [windows] Atopar nes opciones
            *[other] Atopar nes preferencies
         }
+settings-page-title = Axustes
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Atopar n'Axustes
 managed-notice = El restolador ta xestionáu pola to organización.
 category-list =
     .aria-label = Estayes
@@ -52,6 +64,7 @@ category-experimental =
 pane-experimental-subtitle = Sigui con curiáu
 pane-experimental-search-results-header = Esperimentos de { -brand-short-name }: Vete con curiáu
 pane-experimental-description = El cambéu de la configuración avanzada pue afeutar al rindimientu o seguranza de { -brand-short-name }.
+pane-experimental-description2 = El cambéu de la configuración avanzada pue afeutar al rindimientu o seguranza de { -brand-short-name }.
 pane-experimental-reset =
     .label = Reafitar
     .accesskey = R
@@ -161,14 +174,14 @@ warn-on-open-many-tabs =
     .accesskey = l
 switch-links-to-new-tabs =
     .label = Cuando abra un enllaz nuna llingüeta, dir pa ella darréu
-    .accesskey = h
+    .accesskey = d
 show-tabs-in-taskbar =
     .label = Amosar la previsualización de llingüetes na barra de xeres de Windows
     .accesskey = x
 browser-containers-enabled =
     .label = Activar los contenedores de llingüetes
     .accesskey = c
-browser-containers-learn-more = Deprender más
+browser-containers-learn-more = Lleer más
 browser-containers-settings =
     .label = Axustes…
     .accesskey = u
@@ -350,7 +363,7 @@ drm-content-header = Conteníu con DRM (Xestión de Derechos Dixitales)
 play-drm-content =
     .label = Reproducir el conteníu controláu con DRM
     .accesskey = R
-play-drm-content-learn-more = Deprender más
+play-drm-content-learn-more = Lleer más
 update-application-title = Anovamientos de { -brand-short-name }
 update-application-description = Caltén { -brand-short-name } anováu pal meyor rindimientu, estabilidá y seguranza.
 update-application-version = Versión { $version } <a data-l10n-name="learn-more">Novedaes</a>
@@ -363,7 +376,7 @@ update-application-auto =
     .accesskey = I
 update-application-check-choose =
     .label = Comprobar los anovamientos mas déxame escoyer si instalalos
-    .accesskey = G
+    .accesskey = C
 update-application-manual =
     .label = Nun comprobar enxamás los anovamientos (nun s'aconseya)
     .accesskey = e
@@ -394,14 +407,14 @@ performance-use-recommended-settings-checkbox =
     .label = Usar los axustes de rindimientu aconseyaos
     .accesskey = U
 performance-use-recommended-settings-desc = Estos axustes adáutense al hardware y sistema operativu del ordenador.
-performance-settings-learn-more = Deprender más
+performance-settings-learn-more = Lleer más
 performance-allow-hw-accel =
     .label = Usar l'aceleración del hardware cuando tea disponible
     .accesskey = h
 performance-limit-content-process-option = Llende de procesos de conteníu
     .accesskey = L
-performance-limit-content-process-enabled-desc = Más procesos de conteníu puen ameyorar el rindimientu al usar múltiples llingüetes, mas tamién van usar más memoria.
-performance-limit-content-process-blocked-desc = Modificar el númberu de procesos de conteníu namás ye posible col { -brand-short-name } multiprocesu. <a data-l10n-name="learn-more">Deprender más tocante a cómo comprobar si'l multiprocesu ta activáu</a>
+performance-limit-content-process-enabled-desc = Más procesos de conteníu puen ameyorar el rindimientu al usar munches llingüetes, mas tamién van usar más memoria.
+performance-limit-content-process-blocked-desc = Modificar el númberu de procesos de conteníu namás ye posible col { -brand-short-name } multiprocesu. <a data-l10n-name="learn-more">Llei cómo comprobar si'l multiprocesu ta activáu</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
@@ -428,24 +441,24 @@ browsing-search-on-start-typing =
 browsing-picture-in-picture-toggle-enabled =
     .label = Activar los controles de videu nel mou imaxe sobre imaxe
     .accesskey = A
-browsing-picture-in-picture-learn-more = Deprender más
+browsing-picture-in-picture-learn-more = Lleer más
 browsing-media-control =
     .label = Controlar el conteníu multimedia pel tecláu, auriculares o interfaz virtual
     .accesskey = v
-browsing-media-control-learn-more = Deprender más
+browsing-media-control-learn-more = Lleer más
 browsing-cfr-recommendations =
     .label = Aconseyar estensiones mentanto restoles
     .accesskey = A
 browsing-cfr-features =
     .label = Aconseyar carauterístiques mentanto restoles
     .accesskey = c
-browsing-cfr-recommendations-learn-more = Deprender más
+browsing-cfr-recommendations-learn-more = Lleer más
 
 ## General Section - Proxy
 
 network-settings-title = Axustes de rede
 network-proxy-connection-description = Configura cómo se conecta { -brand-short-name } a internet.
-network-proxy-connection-learn-more = Deprender más
+network-proxy-connection-learn-more = Lleer más
 network-proxy-connection-settings =
     .label = Axustes…
     .accesskey = A
@@ -527,7 +540,7 @@ home-prefs-highlights-option-saved-to-pocket =
     .label = Páxines guardaes en { -pocket-brand-name }
 home-prefs-recent-activity-header =
     .label = Actividá recién
-home-prefs-recent-activity-description = Una esbilla de sitios y conteníu de recién
+home-prefs-recent-activity-description = Una esbilla de los sitios y conteníu recién
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -574,6 +587,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Amosar les suxerencies de busca nes ventanes privaes
 suggestions-addressbar-settings-generic = Camudar les preferencies pa otres suxerencies de la barra de direiciones
+suggestions-addressbar-settings-generic2 = Camudar los axustes pa otres suxerencies de la barra de direiciones
 search-suggestions-cant-show = Les suxerencies de busca nun van amosase na barra de direiciones porque configuresti { -brand-short-name } pa qu'enxamás recordare l'historial.
 search-one-click-header = Motores de busca nun calcu
 search-one-click-header2 = Atayos de busca
@@ -617,6 +631,8 @@ containers-new-tab-check =
     .accesskey = E
 containers-preferences-button =
     .label = Preferencies
+containers-settings-button =
+    .label = Axustes
 containers-remove-button =
     .label = Quitar
 
@@ -627,6 +643,10 @@ sync-signedout-caption = Lleva la web contigo
 sync-signedout-description = Sincroniza los marcadores, les llingüetes, l'historial, les contraseñes, los complementos y les preferencies en tolos preseos de to.
 sync-signedout-account-signin2 =
     .label = Aniciar sesión en { -sync-brand-short-name }…
+    .accesskey = i
+sync-signedout-description2 = Sincroniza los marcadores, l'historial, les contraseñes, los complementos y los axustes en tolos preseos de to.
+sync-signedout-account-signin3 =
+    .label = Aniciar sesión pa sincronizar…
     .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -660,6 +680,7 @@ sync-sign-in =
 prefs-syncing-on = Sincronización: ACTIVADA
 prefs-syncing-off = Sincronización: DESACTIVADA
 prefs-sync-offer-setup-label = Sincroniza los marcadores, les llingüetes, l'historial, les contraseñes, los complementos y les preferencies en tolos preseos de to.
+prefs-sync-offer-setup-label2 = Sincroniza los marcadores, l'historial, les contraseñes, los complementos y los axustes en tolos preseos de to.
 prefs-sync-now =
     .labelnotsyncing = Sincronizar agora
     .accesskeynotsyncing = a
@@ -680,6 +701,7 @@ sync-currently-syncing-prefs =
         [windows] Opciones
        *[other] Preferencies
     }
+sync-currently-syncing-settings = Axustes
 sync-change-options =
     .label = Camudar…
     .accesskey = C
@@ -761,7 +783,7 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Suxerir y xenerar contraseñes segures
     .accesskey = S
-forms-breach-alerts-learn-more-link = Deprender más
+forms-breach-alerts-learn-more-link = Lleer más
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Rellenar automáticamente los anicios de sesión y les contraseñes
@@ -775,7 +797,7 @@ forms-master-pw-use =
 forms-primary-pw-use =
     .label = Usar una contraseña primaria
     .accesskey = U
-forms-primary-pw-learn-more-link = Deprender más
+forms-primary-pw-learn-more-link = Lleer más
 # This string uses the former name of the Primary Password feature
 # ("Master Password" in English) so that the preferences can be found
 # when searching for the old name. The accesskey is unused.
@@ -860,11 +882,21 @@ sitedata-total-size-calculating = Calcaulando'l tamañu de la caché y los datos
 #   $value (Number) - Value of the unit (for example: 4.6, 500)
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Anguaño les cookies, los datos de los sitios y la caché tán usando { $value } { $unit } d'espaciu nel discu.
-sitedata-learn-more = Deprender más
+sitedata-learn-more = Lleer más
 sitedata-delete-on-close =
     .label = Desaniciar les cookies y los datos de los sitios al zarrar { -brand-short-name }
     .accesskey = z
 sitedata-delete-on-close-private-browsing = Nel mou de restolar en privao permanente, les cookies y los datos de los sitios van llimpiase al zarrar { -brand-short-name }.
+sitedata-allow-cookies-option =
+    .label = Aceptar les cookies y los datos de los sitios
+    .accesskey = A
+sitedata-disallow-cookies-option =
+    .label = Bloquiar les cookies y los datos de los sitios
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Tipu bloquiáu
+    .accesskey = T
 sitedata-option-block-cross-site-trackers =
     .label = Rastrexadores ente sitios
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -923,7 +955,7 @@ addressbar-suggestions-settings = Camudar les preferencies pa les suxerencies de
 
 content-blocking-enhanced-tracking-protection = Proteición ameyorada escontra'l rastrexu
 content-blocking-section-top-level-description = Los rastrexadores síguente per internet pa recoyer información tocante a los tos vezos de restolar ya intereses. { -brand-short-name } bloquia munchos d'esos rastrexadores y otros scripts maliciosos.
-content-blocking-learn-more = Deprender más
+content-blocking-learn-more = Lleer más
 content-blocking-fpi-incompatibility-warning = Tas usando Aislamientu Primariu (FPI) lo qu'anula dalgunos axustes cookies de { -brand-short-name }
 
 ## These strings are used to define the different levels of
@@ -959,8 +991,8 @@ content-blocking-fingerprinters = Xeneradores de buelgues
 content-blocking-warning-title = ¡Atención!
 content-blocking-and-isolating-etp-warning-description = Bloquiar rastrexadores y aisllar cookies pue afeutar a la funcionalidá de dalgunos sitios. Volvi cargar la páxina colos rastrexadores pa cargar tol conteníu.
 content-blocking-and-isolating-etp-warning-description-2 = Esti axuste pue causar que dalgunos sitios web nun amuesen el conteníu o funcionen correutamente. Si te paez qu'un sitiu ta estropiáu, pues desactivar la proteición escontra'l rastrexu pa esi sitiu y cargar tol conteníu.
-content-blocking-warning-learn-how = Deprender cómo
-content-blocking-reload-description = Va ser preciso recargar les llingüetes p'aplicar estos cambeos.
+content-blocking-warning-learn-how = Lleer cómo
+content-blocking-reload-description = Tienes de volver cargar les llingüetes p'aplicar estos cambeos.
 content-blocking-reload-tabs-button =
     .label = Volver cargar toles llingüetes
     .accesskey = r
@@ -1018,7 +1050,7 @@ permissions-notification = Avisos
 permissions-notification-settings =
     .label = Axustes…
     .accesskey = t
-permissions-notification-link = Deprender más
+permissions-notification-link = Lleer más
 permissions-notification-pause =
     .label = Posar los avisos hasta reaniciar { -brand-short-name }
     .accesskey = v
@@ -1041,7 +1073,7 @@ permissions-addon-exceptions =
 permissions-a11y-privacy-checkbox =
     .label = Evitar que los servicios d'accesibilidá accedan al restolador
     .accesskey = a
-permissions-a11y-privacy-link = Deprender más
+permissions-a11y-privacy-link = Lleer más
 
 ## Privacy Section - Data Collection
 
@@ -1049,23 +1081,24 @@ collection-header = Recoyida y usu de datos de { -brand-short-name }
 collection-description = Esforciámonos n'apurrite opciones y recoyer namás lo que precisamos pa fornir y ameyorar { -brand-short-name } pa tol mundu. Siempres pidimos permisu enantes de recibir información personal.
 collection-privacy-notice = Avisu de privacidá
 collection-health-report-telemetry-disabled = Yá nun permites que { -vendor-short-name } capture datos téunicos y d'interaición. Tolos datos vieyos van desaniciase en 30 díes.
+collection-health-report-telemetry-disabled-link = Lleer más
 collection-health-report =
     .label = Permitir a { -brand-short-name } qu'unvie datos téunicos y d'interaición a { -vendor-short-name }
     .accesskey = r
-collection-health-report-link = Deprender más
+collection-health-report-link = Lleer más
 collection-studies =
     .label = Permitir { -brand-short-name } qu'instale y execute estudios
 collection-studies-link = Amosar los estudios de { -brand-short-name }
 addon-recommendations =
     .label = Permitir a { -brand-short-name } qu'aconseye estensiones de forma personalizada
-addon-recommendations-link = Deprender más
+addon-recommendations-link = Lleer más
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = L'informe de datos ta desactiváu na configuración d'esta compilación
 collection-backlogged-crash-reports =
     .label = Permtir a { -brand-short-name } qu'unvie por ti los informes de casques acumulaos
     .accesskey = c
-collection-backlogged-crash-reports-link = Deprender más
+collection-backlogged-crash-reports-link = Lleer más
 
 ## Privacy Section - Security
 ##
@@ -1077,7 +1110,7 @@ security-browsing-protection = Proteición escontra'l software peligrosu y conte
 security-enable-safe-browsing =
     .label = Bloquiar el conteníu engañosu y peligrosu
     .accesskey = B
-security-enable-safe-browsing-link = Deprender más
+security-enable-safe-browsing-link = Lleer más
 security-block-downloads =
     .label = Bloquiar les descargues peligroses
     .accesskey = p
@@ -1105,8 +1138,8 @@ certs-devices =
     .label = Preseos de seguranza…
     .accesskey = P
 space-alert-learn-more-button =
-    .label = Deprender más
-    .accesskey = D
+    .label = Lleer más
+    .accesskey = L
 space-alert-over-5gb-pref-button =
     .label =
         { PLATFORM() ->
@@ -1124,15 +1157,15 @@ space-alert-over-5gb-message =
        *[other] { -brand-short-name } ta quedando ensin espaciu nel discu. El conteníu de los sitios web pue dexar d'amosase afayadizamente. Pues llimpiar los datos atroxaos en Preferencies > POrivacidá y seguranza > Cookies y datos de los sitios.
     }
 space-alert-under-5gb-ok-button =
-    .label = Val, entendílo
-    .accesskey = a
-space-alert-under-5gb-message = { -brand-short-name } ta quedando ensin espaciu nel discu. El conteníu de los sitios web pue dexar d'amosase afayadizamente. Vista «Deprender mas» pa optimiar l'usu del discu pa una esperiencia de restolar meyor.
+    .label = D'acuerdu, entendílo
+    .accesskey = D
+space-alert-under-5gb-message = { -brand-short-name } ta quedando ensin espaciu nel discu. El conteníu de los sitios web pue dexar d'amosase afayadizamente. Vista «Lleer más» pa optimiar l'usu del discu pa una esperiencia de restolar meyor.
 
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = Mou de namás HTTPS
 httpsonly-description = HTTPS apurre una conexón segura y cifrada ente { -brand-short-name } y los sitios web que visites. La mayoría d'estos sitios web sofiten HTTPS, polo que si'l mou de namás HTTPS ta activáu, { -brand-short-name } va usar HTTPS en toles conexones.
-httpsonly-learn-more = Deprender más
+httpsonly-learn-more = Lleer más
 httpsonly-radio-enabled =
     .label = Activar el mou de namás HTTPS en toles ventanes
 httpsonly-radio-enabled-pbm =

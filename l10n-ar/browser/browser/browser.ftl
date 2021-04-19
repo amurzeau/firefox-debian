@@ -272,11 +272,31 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = أضِف علامة
+bookmarks-edit-bookmark = حرّر العلامة
+bookmark-panel-cancel =
+    .label = ألغِ
+    .accesskey = ل
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [zero] لا تزل أي علامات
+            [one] أزِل العلامة
+            [two] أزِل العلامتان
+            [few] أزِل { $count } علامات
+            [many] أزِل { $count } علامة
+           *[other] أزل { $count } علامة
+        }
+    .accesskey = ع
 bookmark-panel-show-editor-checkbox =
     .label = اعرض المحرر عند الحفظ
     .accesskey = ظ
 bookmark-panel-done-button =
     .label = تمّ
+bookmark-panel-save-button =
+    .label = احفظ
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -296,6 +316,8 @@ identity-passive-loaded = بعض أجزاء هذه الصفحة غير آمنة 
 identity-active-loaded = لقد أوقفت الحماية على هذه الصفحة.
 identity-weak-encryption = تستخدم هذه الصفحة تعمية ضعيفة.
 identity-insecure-login-forms = معلومات الولوج التي تُدخلها في هذه الصفحة قد تكون مخترقة.
+identity-permissions =
+    .value = التصاريح
 identity-https-only-connection-upgraded = (ترقّى إلى HTTPS)
 identity-https-only-label = وضع HTTPS فقط
 identity-https-only-dropdown-on =
@@ -307,9 +329,8 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = فعّل وضع HTTPS فقط إن أردت من { -brand-short-name } ترقية الاتصال متى أمكن.
 identity-https-only-info-turn-off2 = إن شككت أن في الصفحة عطب، فيمكنك تعطيل وضع HTTPS فقط لإعادة تحميل هذا الموقع باستعمال بروتوكول HTTP غير الآمن.
 identity-https-only-info-no-upgrade = تعذرت ترقية الاتصال من HTTP.
-identity-permissions =
-    .value = التصاريح
 identity-permissions-storage-access-header = الكعكات بين المواقع
+identity-permissions-storage-access-hint = يمكن لهذه الأطراف استعمال الكعكات وبيانات المواقع المشتركة أثناء وجودك في هذا الموقع.
 identity-permissions-reload-hint = قد تحتاج إعادة تحميل الصفحة لتطبيق التغييرات.
 identity-permissions-empty = لم تمنح هذا الموقع أي صلاحيات خاصة.
 identity-clear-site-data =
@@ -355,12 +376,56 @@ browser-window-close-button =
 
 ## Tab actions
 
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = قيد التشغيل
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = مكتوم
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = حُجب التشغيل التلقائي
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = ڤديو معترِض
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] اكتم اللسان
+        [zero] اكتم اللسان
+        [one] اكتم اللسان
+        [two] اكتم اللسانين
+        [few] اكتم { $count } ألسنة
+        [many] اكتم { $count } لسانًا
+       *[other] اكتم { $count } لسان
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] أطلِق صوت اللسان
+        [zero] أطلِق صوت اللسان
+        [one] أطلِق صوت اللسان
+        [two] أطلِق صوت اللسانين
+        [few] أطلِق صوت { $count } ألسنة
+        [many] أطلِق صوت { $count } لسانًا
+       *[other] أطلِق صوت { $count } لسان
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] شغّل اللسان
+        [zero] شغّل اللسان
+        [one] شغّل اللسان
+        [two] شغّل اللسانين
+        [few] شغّل { $count } ألسنة
+        [many] شغّل { $count } لسانًا
+       *[other] شغّل { $count } لسان
+    }
 
 ## Bookmarks toolbar items
 
 browser-import-button2 =
     .label = استورِد العلامات…
     .tooltiptext = استورِد العلامات من متصفّح آخر إلى { -brand-short-name }.
+bookmarks-toolbar-empty-message = ضَع علاماتك هنا في شريط العلامات لتصل إليها بسرعة. <a data-l10n-name="manage-bookmarks">أدِر العلامات…</a>
 
 ## WebRTC Pop-up notifications
 
@@ -370,6 +435,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = الميكروفون الذي سيُشارك:
     .accesskey = ك
+popup-select-camera-device =
+    .value = الكمرة:
+    .accesskey = ك
+popup-select-camera-icon =
+    .tooltiptext = الكمرة
+popup-select-microphone-device =
+    .value = الميكروفون
+    .accesskey = م
+popup-select-microphone-icon =
+    .tooltiptext = الميكروفون
 popup-all-windows-shared = ستُشارك كل النوافذ الظاهرة على شاشتك.
 popup-screen-sharing-not-now =
     .label = ليس الآن
@@ -379,6 +454,13 @@ popup-screen-sharing-never =
     .accesskey = س
 popup-silence-notifications-checkbox = عطّل التنبيهات { -brand-short-name } أثناء المشاركة
 popup-silence-notifications-checkbox-warning = لن يعرض { -brand-short-name } التنبيهات أثناء المشاركة.
+popup-screen-sharing-block =
+    .label = احجبه
+    .accesskey = ح
+popup-screen-sharing-always-block =
+    .label = احجبه دائمًا
+    .accesskey = د
+popup-mute-notifications-checkbox = اكتم تنبيهات المواقع أثناء المشاركة
 
 ## WebRTC window or screen share tab switch warning
 
@@ -488,6 +570,13 @@ urlbar-result-action-tabtosearch-web = ابحث مستعملًا { $engine } م�
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = ابحث مستعملًا { $engine } مباشرة من شريط العنوان
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = انسخ
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -515,13 +604,25 @@ pointerlock-warning-no-domain = يتحكم هذا المستند في مؤشرك
 
 ## Subframe crash notification
 
+crashed-subframe-message = <strong>انهار جزء من هذه الصفحة.</strong> لإبلاغ { -brand-product-name } بهذه المشكلة وإصلاحها أسرع، رجاء أرسل بلاغا.
+crashed-subframe-learnmore =
+    .label = اطّلع على المزيد
+    .accesskey = ط
+crashed-subframe-learnmore-link =
+    .value = اطّلع على المزيد
+crashed-subframe-submit =
+    .label = أرسِل تقريرًا
+    .accesskey = س
 
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = أظهِر كل العلامات
-bookmarks-recent-bookmarks =
-    .value = المعلّم حديثا
+bookmarks-manage-bookmarks =
+    .label = أدِر العلامات
+bookmarks-recent-bookmarks-panel =
+    .value = أحدث العلامات
+bookmarks-recent-bookmarks-panel-subheader = أحدث العلامات
 bookmarks-toolbar-chevron =
     .tooltiptext = أظهِر المزيد من العلامات
 bookmarks-sidebar-content =
@@ -538,13 +639,13 @@ bookmarks-tools-sidebar-visibility =
             [true] أخفِ شريط العلامات الجانبي
            *[other] أظهِر شريط العلامات الجانبي
         }
-bookmarks-tools-toolbar-visibility =
+bookmarks-tools-toolbar-visibility-menuitem =
     .label =
         { $isVisible ->
             [true] أخفِ شريط أدوات العلامات
            *[other] أظهِر شريط أدوات العلامات
         }
-bookmarks-tools-toolbar-visibility-menuitem =
+bookmarks-tools-toolbar-visibility-panel =
     .label =
         { $isVisible ->
             [true] أخفِ شريط أدوات العلامات
@@ -575,15 +676,39 @@ bookmarks-toolbar-placeholder =
     .title = عناصر شريط العلامات
 bookmarks-toolbar-placeholder-button =
     .label = عناصر شريط العلامات
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = علّم اللسان الحالي
 
 ## Library Panel items
 
 library-bookmarks-menu =
     .label = العلامات
-library-bookmarks-bookmark-this-page =
-    .label = علّم هذه الصفحة
-library-bookmarks-bookmark-edit =
-    .label = حرّر هذه العلامة
+library-recent-activity-title =
+    .value = أحدث الأنشطة
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = احفظ في { -pocket-brand-name }
+    .tooltiptext = احفظ في { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = الإضافات والسمات
+    .tooltiptext = أدِر الإضافات والسمات لديك ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = الإعدادات
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] افتح الإعدادات ({ $shortcut })
+           *[other] الإعدادات
+        }
 
 ## More items
 
@@ -594,3 +719,25 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = تستخدم بعض الملفات الصوتية أو الفيديو على هذا الموقع برمجيات لإدارة الحقوق الرقمية، والتي قد تحد ما يستطيع { -brand-short-name } أن يسمح لك بفعله مع هذه الملفات.
+eme-notifications-drm-content-playing-manage = أدِر الإعدادات
+eme-notifications-drm-content-playing-manage-accesskey = د
+eme-notifications-drm-content-playing-dismiss = أهمِل
+eme-notifications-drm-content-playing-dismiss-accesskey = ه
+
+## Password save/update panel
+
+panel-save-update-username = اسم المستخدم
+panel-save-update-password = كلمة السر
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = أتريد إزالة { $name }؟
+addon-removal-abuse-report-checkbox = أبلِغ { -vendor-short-name } عن هذا الامتداد
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = أدِر الحساب
+remote-tabs-sync-now = زامِن الآن

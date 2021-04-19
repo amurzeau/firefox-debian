@@ -247,6 +247,18 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmark-panel-cancel =
+    .label = रद्द करें
+    .accesskey = C
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] बुकमार्क हटाएँ
+           *[other] { $count } बुकमार्क हटाएँ
+        }
+    .accesskey = R
 bookmark-panel-show-editor-checkbox =
     .label = सहेजते समय संपादक दिखाएं
     .accesskey = S
@@ -271,14 +283,14 @@ identity-passive-loaded = इस पेज का भाग सुरक्ष�
 identity-active-loaded = आपने इस पेज पर सुरक्षा निष्क्रिय कर दिए हैं.
 identity-weak-encryption = यह पेज कमजोर गोपन का उपयोग करता हैं.
 identity-insecure-login-forms = इस पृष्ठ पर अंतरित लॉग-इन्स से समझौता किया जा सकता है.
+identity-permissions =
+    .value = अनुमतियां
 identity-https-only-dropdown-on =
     .label = चालू
 identity-https-only-dropdown-off =
     .label = बंद
 identity-https-only-dropdown-off-temporarily =
     .label = अस्थाई रूप से बंद
-identity-permissions =
-    .value = अनुमतियां
 identity-permissions-reload-hint = बदलाव को लागु करने के लिए आपको पृष्ठ को फिर से लोड करने की आवश्यकता हैं.
 identity-permissions-empty = आपने इस साइट को कोई विशेष अनुमति नहीं दी है.‌‌‌
 identity-clear-site-data =
@@ -325,6 +337,11 @@ browser-window-close-button =
 ## Tab actions
 
 
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+
 ## Bookmarks toolbar items
 
 
@@ -336,6 +353,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = साझा करने के लिए माइक्रोफोन:
     .accesskey = M
+popup-select-camera-device =
+    .value = कैमरा:
+    .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = कैमरा
+popup-select-microphone-device =
+    .value = माइक्रोफोन:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = माइक्रोफोन
 popup-all-windows-shared = आपके स्क्रीन पर सभी दृश्य विंडो साझा किए जाएँगे.
 popup-screen-sharing-not-now =
     .label = अभी नहीं
@@ -439,8 +466,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = सभी बुकमार्कों को दिखाएँ
-bookmarks-recent-bookmarks =
-    .value = हाल में बुकमार्कित
 bookmarks-toolbar-chevron =
     .tooltiptext = अधिक बुकमार्क दिखाएँ
 bookmarks-sidebar-content =
@@ -456,12 +481,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] बुकमार्क साइडबार छिपाएं
            *[other] बुकमार्क बाज़ू पट्टी देखें
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] बुकमार्क टूलबार छिपाएं
-           *[other] बुकमार्क औज़ारपट्टी देखें
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -499,10 +518,15 @@ bookmarks-toolbar-placeholder-button =
 
 library-bookmarks-menu =
     .label = बुकमार्क
-library-bookmarks-bookmark-this-page =
-    .label = यह पृष्ठ बुकमार्कित करें
-library-bookmarks-bookmark-edit =
-    .label = यह बुकमार्क संपादित करें
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = { -pocket-brand-name } में सहेजें
+    .tooltiptext = { -pocket-brand-name } में सहेजें
+
+## Customize Toolbar Buttons
+
 
 ## More items
 
@@ -515,3 +539,12 @@ more-menu-go-offline =
 eme-notifications-drm-content-playing = इस साइट पर कुछ ऑडियो या वीडियो DRM सॉफ्टवेयर का उपयोग करते है, जो सिमित कर सकता है कि { -brand-short-name } आपको इसके साथ क्या करने दे सकता हैं.
 eme-notifications-drm-content-playing-manage-accesskey = M
 eme-notifications-drm-content-playing-dismiss-accesskey = D
+
+## Password save/update panel
+
+
+## Add-on removal warning
+
+
+## Remote / Synced tabs
+

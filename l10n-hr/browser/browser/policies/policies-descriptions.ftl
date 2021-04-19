@@ -81,7 +81,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Vrati se na staro pona
 policy-LocalFileLinks = Omogućite određenim web stranicama poveznice na lokalne datoteke.
 policy-ManagedBookmarks = Konfigurira popis zabilješki kojima upravlja administrator, a koje korisnik ne može mijenjati.
 policy-MasterPassword = Zahtijevaj ili spriječi upotrebu glavne lozinke.
-policy-ManualAppUpdateOnly = Dopusti samo ručnu aktualizaciju i ne obavještavaj korisnika o ažuriranjima.
+policy-ManualAppUpdateOnly = Dopusti samo ručno aktualiziranje i ne obavještavaj korisnika o novim verzijama.
 policy-PrimaryPassword = Zahtijevaj ili spriječi upotrebu glavne lozinke.
 policy-NetworkPrediction = Aktiviraj ili deaktiviraj predviđanje mreže (DNS prefetching).
 policy-NewTabPage = Aktiviraj ili deaktiviraj stranicu Nova kartica.
@@ -106,6 +106,7 @@ policy-SearchEngines = Prilagodi postavke tražilice. Ovo pravilo dostupno je sa
 policy-SearchSuggestEnabled = Aktiviraj ili deaktiviraj prijedloge za pretraživanje.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Instaliraj PKCS #11 module.
+policy-ShowHomeButton = Prikaži gumb početne stranice u alatnoj traci.
 policy-SSLVersionMax = Postavi maksimalnu SSL verziju.
 policy-SSLVersionMin = Postavi minimalnu SSL verziju.
 policy-SupportMenu = Dodaj prilagođenu stavku korisničke podrške u izbornik pomoći.

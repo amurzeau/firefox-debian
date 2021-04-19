@@ -6,10 +6,10 @@
 ## Settings
 
 site-data-settings-window =
-    .title = Управљај колачићима и подацима сајта
+    .title = Управљање колачићима и подацима о сајтовима
 site-data-settings-description = Следећи веб сајтови складиште колачиће и податке сајта на ваш рачунар. { -brand-short-name } чува податке веб сајтова са трајним складиште док их ви не обришете и брише податке веб сајтова без трајног складишта.
 site-data-search-textbox =
-    .placeholder = Претражи веб сајтове
+    .placeholder = Претражи веб-сајтове
     .accesskey = П
 site-data-column-host =
     .label = Веб сајт
@@ -28,10 +28,10 @@ site-data-button-cancel =
     .label = Откажи
     .accesskey = к
 site-data-button-save =
-    .label = Сачувај промене
+    .label = Сачувај
     .accesskey = С
 site-data-settings-dialog =
-    .buttonlabelaccept = Сачувај промене
+    .buttonlabelaccept = Сачувај
     .buttonaccesskeyaccept = С
 # Variables:
 #   $value (Number) - Value of the unit (for example: 4.6, 500)
@@ -53,5 +53,5 @@ site-data-removing-dialog =
     .title = { site-data-removing-header }
     .buttonlabelaccept = Уклони
 site-data-removing-header = Брисање колачића и података сајта
-site-data-removing-desc = Брисање колачића и података сајта вас може одјавити са веб сајтова. Да ли сте сигурни да желите да направите ове измене?
-site-data-removing-table = Колачићи и подаци следећих веб сајтова ће бити обрисани
+site-data-removing-desc = Уклањање колачића и података о сајтовима ће вас можда одјавити са веб-сајтова. Желите ли заиста да наставите?
+site-data-removing-table = Уклониће се колачићи и подаци о следећим веб-сајтовима

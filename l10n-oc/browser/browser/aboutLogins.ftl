@@ -18,6 +18,7 @@ login-filter =
 create-login-button = Crear un identificant novèl
 fxaccounts-sign-in-text = Accedissètz a vòstres senhals sus vòstres periferics
 fxaccounts-sign-in-button = Se connectar a { -sync-brand-short-name }
+fxaccounts-sign-in-sync-button = Se connectar per sincronizar
 fxaccounts-avatar-button =
     .title = Gestion del compte
 
@@ -70,11 +71,15 @@ about-logins-list-item-vulnerable-password-icon =
 
 login-intro-heading = Cercatz vòstres senhals salvats ? Configuratz { -sync-brand-short-name }.
 about-logins-login-intro-heading-logged-out = Cercatz vòstres identificants enregistrats ? Configuratz { -sync-brand-short-name } o importatz-los.
+about-logins-login-intro-heading-logged-out2 = Cercatz vòstres identificants salvats ? Activatz la sincronizacion o importatz-los.
 about-logins-login-intro-heading-logged-in = Cap d’identificant sincronizat pas trobat.
 login-intro-description = Se salvatz vòstres identificants dins { -brand-product-name } sus un autre periferics, vaquí cossí i accedir aquí :
 login-intro-instruction-fxa = Connectatz-vos o creatz un { -fxaccount-brand-name } ont son salvats los identificants.
 login-intro-instruction-fxa-settings = Asseguratz-vos qu’avètz seleccionat la casa dels identificants dins los paramètres de { -sync-brand-short-name }
 about-logins-intro-instruction-help = Consultatz <a data-l10n-name="help-link">l’assiténcia de { -lockwise-brand-short-name } per d’ajudar</a>
+login-intro-instructions-fxa = Connectatz-vos o creatz un { -fxaccount-brand-name } sul periferic ont son salvats los identificants.
+login-intro-instructions-fxa-settings = Anatz als Paramètres > Sincronizacion > Activar la sincronizacion… e marcatz la cassa « Identificants e senhals ».
+login-intro-instructions-fxa-help = Consultatz l’<a data-l10n-name="help-link">assisténcia { -lockwise-brand-short-name }</a> per mai d’ajuda.
 about-logins-intro-import = Se vòstres identificants son salvats dins un autre navegador, podètz <a data-l10n-name="import-link">los importar dins { -lockwise-brand-short-name }</a>
 about-logins-intro-import2 = Se vòstres identificants de connexion e senhals son salvats al defòra de { -brand-product-name }, podètz <a data-l10n-name="import-browser-link">los importar d‘un autre navegador estant</a> o <a data-l10n-name="import-file-link"> a partir d’un fichièr</a>
 
@@ -312,6 +317,7 @@ about-logins-import-dialog-error-unable-to-read-description = Asseguratz-vos d�
 about-logins-import-dialog-error-no-logins-imported = Cap d’identificant pas importat
 about-logins-import-dialog-error-learn-more = Ne saber mai
 about-logins-import-dialog-error-try-again = Tornar ensajar…
+about-logins-import-dialog-error-try-import-again = Ensajar d’importar de nòu…
 about-logins-import-dialog-error-cancel = Anullar
 about-logins-import-report-title = Resumit d’importacion
 about-logins-import-report-description = Identificants e senhals importats dins { -brand-short-name }.

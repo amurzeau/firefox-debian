@@ -4,3 +4,6 @@
 
 add-on-options-button =
     .title = Kiegészítőbeállítások
+atn-addons-heading-search-input =
+    .placeholder = Keresés az addons.thunderbird.net oldalon
+sidebar-preferences-button-title = { -brand-short-name } beállítások

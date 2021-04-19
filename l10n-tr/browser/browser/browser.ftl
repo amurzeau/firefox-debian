@@ -159,11 +159,11 @@ urlbar-star-add-bookmark =
 page-action-add-to-urlbar =
     .label = Adres çubuğuna ekle
 page-action-manage-extension =
-    .label = Eklentiyi yönet…
+    .label = Uzantıyı yönet…
 page-action-remove-from-urlbar =
     .label = Adres çubuğundan kaldır
 page-action-remove-extension =
-    .label = Eklentiyi kaldır
+    .label = Uzantıyı kaldır
 
 ## Page Action menu
 
@@ -264,11 +264,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Yer imi ekle
+bookmarks-edit-bookmark = Yer imini düzenle
+bookmark-panel-cancel =
+    .label = Vazgeç
+    .accesskey = z
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Yer imini sil
+           *[other] { $count } yer imini sil
+        }
+    .accesskey = s
 bookmark-panel-show-editor-checkbox =
     .label = Kaydederken düzenleyiciyi göster
     .accesskey = K
 bookmark-panel-done-button =
     .label = Tamam
+bookmark-panel-save-button =
+    .label = Kaydet
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -281,13 +297,15 @@ identity-connection-not-secure = Bağlantı güvenli değil
 identity-connection-secure = Bağlantı güvenli
 identity-connection-internal = Burası güvenli bir { -brand-short-name } sayfasıdır.
 identity-connection-file = Bu sayfa bilgisayarınızda depolanıyor.
-identity-extension-page = Bu sayfa bir eklenti üzerinden yüklendi.
+identity-extension-page = Bu sayfa bir uzantı üzerinden yüklendi.
 identity-active-blocked = { -brand-short-name } bu sayfanın güvenli olmayan kısımlarını engelledi.
 identity-custom-root = Bağlantı, Mozilla’nın tanımadığı bir sertifika yayıncısı tarafından doğrulandı.
 identity-passive-loaded = Bu sayfanın bazı kısımları (örneğin resimler) güvenli değil.
 identity-active-loaded = Bu sayfada korumayı devre dışı bıraktınız.
 identity-weak-encryption = Bu sayfada zayıf şifreleme kullanılıyor.
 identity-insecure-login-forms = Bu sayfaya girilen hesap bilgileri ele geçirilebilir.
+identity-permissions =
+    .value = İzinler
 identity-https-only-connection-upgraded = (HTTPS’e yükseltildi)
 identity-https-only-label = Yalnızca HTTPS modu
 identity-https-only-dropdown-on =
@@ -299,8 +317,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Mümkün olduğunda { -brand-short-name } tarayıcınızın güvenli bağlantıya geçmesini istiyorsanız bu site için Yalnızca HTTPS modunu açın.
 identity-https-only-info-turn-off2 = Sayfa düzgün çalışmazsa bu site için Yalnızca HTTPS modunu kapatarak siteyi güvensiz HTTP ile yüklemeyi deneyebilirsiniz.
 identity-https-only-info-no-upgrade = HTTP bağlantısı yükseltilemedi.
-identity-permissions =
-    .value = İzinler
 identity-permissions-storage-access-header = Siteler arası çerezler
 identity-permissions-storage-access-hint = Bu siteler, siz bu sitedeyken siteler diğer sitelerdeki çerezleri ve site verilerini kullanabilir.
 identity-permissions-reload-hint = Değişikliklerin uygulanması için bu sayfayı tazelemeniz gerekebilir.
@@ -348,8 +364,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Oynatılıyor
-browser-tab-audio-muted = Ses kapatıldı
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = OYNATILIYOR
 # This label should be written in all capital letters if your locale supports them.
@@ -358,6 +372,28 @@ browser-tab-audio-muted2 = SESSİZ
 browser-tab-audio-blocked = OTOMATİK OYNATMA ENGELLENDİ
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = GÖRÜNTÜ İÇİNDE GÖRÜNTÜ
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] SEKMENİN SESİNİ KAPAT
+       *[other] { $count } SEKMENİN SESİNİ KAPAT
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] SEKMENİN SESİNİ AÇ
+        [one] SEKMENİN SESİNİ AÇ
+       *[other] { $count } SEKMENİN SESİNİ AÇ
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] SEKMEYİ OYNAT
+        [one] SEKMEYİ OYNAT
+       *[other] { $count } SEKMEYİ OYNAT
+    }
 
 ## Bookmarks toolbar items
 
@@ -377,9 +413,13 @@ popup-select-microphone =
 popup-select-camera-device =
     .value = Kamera:
     .accesskey = K
+popup-select-camera-icon =
+    .tooltiptext = Kamera
 popup-select-microphone-device =
     .value = Mikrofon:
     .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Mikrofon
 popup-all-windows-shared = Ekranınızdaki tüm görünür pencereler paylaşılacaktır.
 popup-screen-sharing-not-now =
     .label = Daha sonra
@@ -458,7 +498,7 @@ urlbar-switch-to-tab =
     .value = Sekmeye geç:
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
-    .value = Eklenti:
+    .value = Uzantı:
 urlbar-go-button =
     .tooltiptext = Konum çubuğundaki adrese git
 urlbar-page-action-button =
@@ -505,6 +545,13 @@ urlbar-result-action-tabtosearch-web = { $engine } ile doğrudan adres çubuğun
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = { $engine } ile doğrudan adres çubuğundan arama yapın
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Kopyala
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -546,8 +593,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Tüm yer imlerini göster
-bookmarks-recent-bookmarks =
-    .value = Yer imlerine yeni eklenenler
 bookmarks-manage-bookmarks =
     .label = Yer imlerini yönet
 bookmarks-recent-bookmarks-panel =
@@ -568,12 +613,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Yer imleri kenar çubuğunu gizle
            *[other] Yer imleri kenar çubuğunu göster
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Yer imleri kenar çubuğunu gizle
-           *[other] Yer imleri araç çubuğunu göster
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -620,12 +659,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Yer imleri
-library-bookmarks-bookmark-this-page =
-    .label = Bu sayfayı yer imlerine ekle
-library-bookmarks-bookmark-edit =
-    .label = Bu yer imini düzenle
 library-recent-activity-title =
     .value = Son etkinlikler
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = { -pocket-brand-name }’a kaydet
+    .tooltiptext = { -pocket-brand-name }’a kaydet
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Eklentiler ve temalar
+    .tooltiptext = Eklentilerinizi ve temalarınızı yönetin ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Ayarlar
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Ayarları aç ({ $shortcut })
+           *[other] Ayarları aç
+        }
 
 ## More items
 
@@ -640,3 +698,21 @@ eme-notifications-drm-content-playing-manage = Ayarları yönet
 eme-notifications-drm-content-playing-manage-accesskey = A
 eme-notifications-drm-content-playing-dismiss = Kapat
 eme-notifications-drm-content-playing-dismiss-accesskey = K
+
+## Password save/update panel
+
+panel-save-update-username = Kullanıcı adı
+panel-save-update-password = Parola
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = { $name } kaldırılsın mı?
+addon-removal-abuse-report-checkbox = Bu uzantıyı { -vendor-short-name }’ya şikâyet et
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Hesabı yönet
+remote-tabs-sync-now = Şimdi eşitle

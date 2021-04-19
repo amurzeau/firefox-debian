@@ -28,6 +28,18 @@ search-input-box =
             [windows] Seçeneklerde ara
            *[other] Tercihlerde ara
         }
+settings-page-title = Ayarlar
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Ayarlarda ara
 managed-notice = Tarayıcınız kuruluşunuz tarafından yönetiliyor.
 category-list =
     .aria-label = Kategoriler
@@ -46,17 +58,21 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Eşitleme
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = { -brand-short-name } Deneyleri
 category-experimental =
     .tooltiptext = { -brand-short-name } Deneyleri
 pane-experimental-subtitle = Dikkatli olun
 pane-experimental-search-results-header = { -brand-short-name } deneyleri: dikkatli olun
 pane-experimental-description = Gelişmiş yapılandırma tercihlerini değiştirmek { -brand-short-name } performansını veya güvenliğini etkileyebilir.
+pane-experimental-description2 = Gelişmiş yapılandırma ayarlarını değiştirmek { -brand-short-name } performansını veya güvenliğini etkileyebilir.
 pane-experimental-reset =
     .label = Varsayılanları geri yükle
     .accesskey = V
 help-button-label = { -brand-short-name } Desteği
-addons-button-label = Eklentiler ve Temalar
+addons-button-label = Uzantılar ve Temalar
 focus-search =
     .key = f
 close-button =
@@ -83,34 +99,34 @@ restart-later = Daha sonra yeniden başlat
 
 # This string is shown to notify the user that their home page
 # is being controlled by an extension.
-extension-controlled-homepage-override = Giriş sayfanızı <img data-l10n-name="icon"/> { $name } adlı eklenti yönetiyor.
+extension-controlled-homepage-override = Giriş sayfanızı <img data-l10n-name="icon"/> { $name } adlı uzantı yönetiyor.
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
-extension-controlled-new-tab-url = Yeni Sekme sayfanızı <img data-l10n-name="icon"/> { $name } adlı eklenti yönetiyor.
+extension-controlled-new-tab-url = Yeni Sekme sayfanızı <img data-l10n-name="icon"/> { $name } adlı uzantı yönetiyor.
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
-extension-controlled-password-saving = Bu ayarı <img data-l10n-name="icon"/> { $name } adlı eklenti yönetiyor.
+extension-controlled-password-saving = Bu ayarı <img data-l10n-name="icon"/> { $name } adlı uzantı yönetiyor.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
-extension-controlled-web-notifications = Bu ayarı <img data-l10n-name="icon"/> { $name } adlı eklenti kontrol ediyor.
+extension-controlled-web-notifications = Bu ayarı <img data-l10n-name="icon"/> { $name } adlı uzantı kontrol ediyor.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
-extension-controlled-default-search = <img data-l10n-name="icon"/> { $name } eklentisi varsayılan arama motorunuzu değiştirdi.
+extension-controlled-default-search = <img data-l10n-name="icon"/> { $name } uzantısı varsayılan arama motorunuzu değiştirdi.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
-extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name } eklentisi kapsayıcı sekmelere ihtiyaç duyuyor.
+extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name } uzantısı kapsayıcı sekmelere ihtiyaç duyuyor.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = Bu ayarı <img data-l10n-name="icon"/> { $name } adlı eklenti yönetiyor.
+extension-controlled-websites-content-blocking-all-trackers = Bu ayarı <img data-l10n-name="icon"/> { $name } adlı uzantı yönetiyor.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
-extension-controlled-proxy-config = { -brand-short-name } tarayıcınızın internete nasıl bağlanacağını <img data-l10n-name="icon"/> { $name } adlı eklenti kontrol ediyor.
+extension-controlled-proxy-config = { -brand-short-name } tarayıcınızın internete nasıl bağlanacağını <img data-l10n-name="icon"/> { $name } adlı uzantı kontrol ediyor.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
 # <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
 # <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
-extension-controlled-enable = Eklentiyi etkinleştirmek için <img data-l10n-name="menu-icon"/> menüdeki <img data-l10n-name="addons-icon"/> Eklentiler bölümüne gidin.
+extension-controlled-enable = Uzantıyı etkinleştirmek için <img data-l10n-name="menu-icon"/> menüdeki <img data-l10n-name="addons-icon"/> Eklentiler bölümüne gidin.
 
 ## Preferences UI Search Results
 
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] Kusura bakmayın, seçeneklerde “<span data-l10n-name="query"></span>” ile ilgili bir sonuç bulamadık.
        *[other] Kusura bakmayın, tercihlerde “<span data-l10n-name="query"></span>” ile ilgili bir sonuç bulamadık.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Kusura bakmayın, ayarlarda “<span data-l10n-name="query"></span>” ile ilgili bir sonuç bulamadık.
 search-results-help-link = Yardım mı gerekiyor? <a data-l10n-name="url">{ -brand-short-name } Destek</a>’i ziyaret edin.
 
 ## General Section
@@ -147,7 +165,7 @@ startup-restore-previous-session =
 startup-restore-warn-on-quit =
     .label = Tarayıcıdan çıkarken beni uyar
 disable-extension =
-    .label = Eklentiyi etkisizleştir
+    .label = Uzantıyı etkisizleştir
 tabs-group-header = Sekmeler
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab, sekmeler arasında son kullanıldıkları sırayla atlasın
@@ -369,6 +387,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Hiçbir zaman denetlenmesin (Önerilmez)
     .accesskey = H
+update-application-background-enabled =
+    .label = { -brand-short-name } kapalıyken
+    .accesskey = k
 update-application-warning-cross-user-setting = Bu ayar, bu { -brand-short-name } kurulumunu kullanan tüm Windows hesaplarına ve { -brand-short-name } profillerine uygulanacaktır.
 update-application-use-service =
     .label = Güncellemeleri yüklemek için arka plan hizmetini kullan
@@ -380,6 +401,15 @@ update-setting-write-failure-title = Güncelleme tercihlerini kaydetmede hata
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
     { -brand-short-name } bir hatayla karşılaştı ve bu değişikliği kaydetmedi. Bu güncelleme tercihinin ayarlanması için aşağıdaki dosyaya yazma izninizin olması gerekir. Siz veya sistem yöneticiniz bu dosya için Kullanıcılar grubuna tam denetim vererek hatayı giderebilirsiniz.
+    
+    Dosyaya yazılamadı: { $path }
+update-setting-write-failure-title2 = Güncelleme ayarları kaydedilirken hata oluştu
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name } bir hatayla karşılaştı ve bu değişikliği kaydetmedi. Bu güncelleme ayarının değiştirilmesi için aşağıdaki dosyaya yazma izninizin olması gerekir. Siz veya sistem yöneticiniz bu dosya için Kullanıcılar grubuna tam denetim vererek hatayı giderebilirsiniz.
     
     Dosyaya yazılamadı: { $path }
 update-in-progress-title = Güncelleme sürüyor
@@ -436,7 +466,7 @@ browsing-media-control =
     .accesskey = M
 browsing-media-control-learn-more = Daha fazla bilgi al
 browsing-cfr-recommendations =
-    .label = Gezinirken yeni eklentiler öner
+    .label = Gezinirken yeni uzantılar öner
     .accesskey = G
 browsing-cfr-features =
     .label = Gezinirken yeni özellikler öner
@@ -579,6 +609,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Gizli pencerelerde arama önerilerini göster
 suggestions-addressbar-settings-generic = Diğer adres çubuğu önerileri için tercihleri değiştir
+suggestions-addressbar-settings-generic2 = Diğer adres çubuğu önerileri için ayarları değiştir
 search-suggestions-cant-show = { -brand-short-name } tarayıcısını geçmişi hatırlamayacak şekilde ayarladığınız için konum çubuğu sonuçlarında arama önerileri gösterilmeyecektir.
 search-one-click-header = Tek tıklamalı arama motorları
 search-one-click-header2 = Arama kısayolları
@@ -613,6 +644,8 @@ containers-back-button =
             [windows] Seçeneklere geri dön
            *[other] Tercihlere geri dön
         }
+containers-back-button2 =
+    .aria-label = Ayarlara dön
 containers-header = Kapsayıcı sekmeler
 containers-add-button =
     .label = Yeni kapsayıcı ekle
@@ -622,6 +655,8 @@ containers-new-tab-check =
     .accesskey = H
 containers-preferences-button =
     .label = Tercihler
+containers-settings-button =
+    .label = Ayarlar
 containers-remove-button =
     .label = Sil
 
@@ -633,6 +668,10 @@ sync-signedout-description = Yer imlerinizi, geçmişinizi, sekmelerinizi, eklen
 sync-signedout-account-signin2 =
     .label = { -sync-brand-short-name }’e giriş yap…
     .accesskey = r
+sync-signedout-description2 = Yer imlerinizi, geçmişinizi, sekmelerinizi, parolalarınızı, eklentilerinizi ve ayarlarınızı tüm cihazlarınız arasında senkronize edin.
+sync-signedout-account-signin3 =
+    .label = Eşitlemek için giriş yap…
+    .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -672,6 +711,10 @@ prefs-sync-setup =
     .label = { -sync-brand-short-name }’i kur…
     .accesskey = S
 prefs-sync-offer-setup-label = Yer imlerinizi, geçmişinizi, sekmelerinizi, eklentilerinizi ve tercihlerinizi tüm cihazlarınız arasında senkronize edin.
+prefs-sync-turn-on-syncing =
+    .label = Eşitlemeyi başlat…
+    .accesskey = E
+prefs-sync-offer-setup-label2 = Yer imlerinizi, geçmişinizi, sekmelerinizi, parolalarınızı, eklentilerinizi ve ayarlarınızı tüm cihazlarınız arasında senkronize edin.
 prefs-sync-now =
     .labelnotsyncing = Şimdi eşitle
     .accesskeynotsyncing = m
@@ -692,6 +735,7 @@ sync-currently-syncing-prefs =
         [windows] Seçenekler
        *[other] Tercihler
     }
+sync-currently-syncing-settings = Ayarlar
 sync-change-options =
     .label = Değiştir…
     .accesskey = D
@@ -729,7 +773,7 @@ sync-engine-creditcards =
     .accesskey = K
 sync-engine-addons =
     .label = Eklentiler
-    .tooltiptext = Masaüstü Firefox eklentileri ve temaları
+    .tooltiptext = Masaüstü Firefox uzantıları ve temaları
     .accesskey = t
 sync-engine-prefs =
     .label =
@@ -739,6 +783,10 @@ sync-engine-prefs =
         }
     .tooltiptext = Değiştirdiğiniz Genel, Gizlilik ve Güvenlik ayarları
     .accesskey = e
+sync-engine-settings =
+    .label = Ayarlar
+    .tooltiptext = Değiştirdiğiniz genel ayarlar, gizlilik ayarları ve güvenlik ayarları
+    .accesskey = A
 
 ## The device name controls.
 
@@ -1083,7 +1131,7 @@ collection-studies =
     .label = { -brand-short-name }, araştırmalar yükleyip çalıştırabilir
 collection-studies-link = { -brand-short-name } araştırmalarını göster
 addon-recommendations =
-    .label = { -brand-short-name }, bana özel eklenti tavsiyelerinde bulunabilir
+    .label = { -brand-short-name }, bana özel uzantı tavsiyelerinde bulunabilir
 addon-recommendations-link = Daha fazla bilgi al
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
@@ -1153,6 +1201,11 @@ space-alert-under-5gb-ok-button =
     .label = Anladım
     .accesskey = A
 space-alert-under-5gb-message = { -brand-short-name } tarafından kulllanılabilen disk alanı azaldı. Site içerikleri düzgün görüntülenemeyebilir. Daha iyi bir gezinti deneyimi içi disk kullanımınızı iyileştirmek isterseniz “Daha fazla bilgi al” sayfasını ziyaret edin.
+space-alert-over-5gb-settings-button =
+    .label = Ayarları aç
+    .accesskey = A
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name } tarafından kulllanılabilen disk alanı azaldı.</strong> Site içerikleri düzgün görüntülenemeyebilir. Depolanan verileri Ayarlar > Gizlilik ve Güvenlik > Çerezler ve site verileri kısmından temizleyebilirsiniz.
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name } tarafından kulllanılabilen disk alanı azaldı.</strong> Site içerikleri düzgün görüntülenemeyebilir. Daha iyi bir gezinti deneyimi içi disk kullanımınızı iyileştirmek isterseniz “Daha fazla bilgi al” sayfasını ziyaret edin.
 
 ## Privacy Section - HTTPS-Only
 

@@ -4,6 +4,7 @@
 
 refresh-profile-dialog =
     .title = Smiren { -brand-short-name }
+refresh-profile-dialog-title = Smiren { -brand-short-name } ɣer yiɣewwaren-ines imezwer?
 refresh-profile-dialog-button =
     .label = Smiren { -brand-short-name }
 refresh-profile-description = Senker tirirt tawurmant i weseɣti n wuguren d tmellit n yiminig.
@@ -12,3 +13,4 @@ refresh-profile-remove = Kkes aggan d izegrar-inek
 refresh-profile-restore = Err-d iɣewwaren n iminig-inek ɣer wazalen-nsen n uwennez n tazwara
 refresh-profile = Mudd cvaḥa i { -brand-short-name }
 refresh-profile-button = Smiren { -brand-short-name }…
+refresh-profile-learn-more = Issin ugar

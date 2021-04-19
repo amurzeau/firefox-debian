@@ -27,7 +27,7 @@ security-software-title = Bezpečnostný softvér
 security-software-type = Typ
 security-software-name = Názov
 security-software-antivirus = Antivírus
-security-software-antispyware = Antispajvér
+security-software-antispyware = Antispyware
 security-software-firewall = Firewall
 features-title = Funkcie aplikácie { -brand-short-name }
 features-name = Názov
@@ -62,12 +62,16 @@ app-basics-enabled-plugins = Povolené zásuvné moduly
 app-basics-build-config = Konfigurácia zostavenia
 app-basics-user-agent = Reťazec User Agent
 app-basics-os = OS
+# Rosetta is Apple's translation process to run apps containing x86_64
+# instructions on Apple Silicon. This should remain in English.
+app-basics-rosetta = Preložené pre Apple pomocou Rosetta
 app-basics-memory-use = Využitie pamäte
 app-basics-performance = Výkon
-app-basics-service-workers = Registrovaní Service Workers
+app-basics-service-workers = Registrované skripty typu worker
 app-basics-profiles = Profily
 app-basics-launcher-process-status = Spúšťací proces
 app-basics-multi-process-support = Multiprocesové okná
+app-basics-fission-support = Okná používajúce Fission
 app-basics-remote-processes-count = Vzdialené procesy
 app-basics-enterprise-policies = Podnikové pravidlá
 app-basics-location-service-key-google = Kľúč služby Google Location Service
@@ -80,6 +84,7 @@ show-dir-label =
         [windows] Otvoriť priečinok
        *[other] Otvoriť priečinok
     }
+environment-variables-title = Premenné prostredia
 environment-variables-name = Názov
 environment-variables-value = Hodnota
 experimental-features-title = Experimentálne funkcie
@@ -130,6 +135,11 @@ safe-mode-title = Vyskúšajte núdzový režim
 restart-in-safe-mode-label = Reštartovať a zakázať doplnky…
 troubleshoot-mode-title = Diagnostika problémov
 restart-in-troubleshoot-mode-label = Režim riešenia problémov…
+clear-startup-cache-title = Skúste vyčistiť vyrovnávaciu pamäť spustenia
+clear-startup-cache-label = Vymazať vyrovnávaciu pamäť spustenia…
+startup-cache-dialog-title = Vymazať vyrovnávaciu pamäť spustenia
+startup-cache-dialog-body = Vyrovnávaciu pamäť spustenia vyčistíte reštartovaním aplikácie { -brand-short-name }. Toto nezmení vaše nastavenia ani neodstráni rozšírenia, ktoré ste nainštalovali do aplikácie { -brand-short-name }.
+startup-cache-dialog-title2 = Reštartovať { -brand-short-name } a vyčistiť vyrovnávaciu pamäť spustenia?
 startup-cache-dialog-body2 = Vaše nastavenia a nainštalované rozšírenia to nijako neovplyvní.
 restart-button-label = Reštartovať
 
@@ -138,6 +148,7 @@ restart-button-label = Reštartovať
 audio-backend = Audio Backend
 max-audio-channels = Maximálny počet kanálov
 sample-rate = Preferovaný Sample Rate
+roundtrip-latency = Obojsmerné oneskorenie (odchýľka od štandardu)
 media-title = Médium
 media-output-devices-title = Výstupné zariadenia
 media-input-devices-title = Vstupné zariadenia
@@ -182,11 +193,35 @@ remote-debugging-url = URL
 ##
 
 support-third-party-modules-title = Moduly tretích strán
+support-third-party-modules-module = Súbor modulu
+support-third-party-modules-version = Verzia súboru
+support-third-party-modules-vendor = Informácie o dodávateľovi
+support-third-party-modules-occurrence = Výskyt
+support-third-party-modules-process = Typ a ID procesu
+support-third-party-modules-thread = Vlákno
+support-third-party-modules-base = Adresa Imagebase
+support-third-party-modules-uptime = Doba behu procesu (ms)
+support-third-party-modules-duration = Doba načítania (ms)
+support-third-party-modules-status = Stav
+support-third-party-modules-status-loaded = Načítané
+support-third-party-modules-status-blocked = Blokované
+support-third-party-modules-status-redirected = Presmerované
+support-third-party-modules-empty = Neboli načítané žiadne moduly tretích strán.
 support-third-party-modules-no-value = (Žiadna hodnota)
 support-third-party-modules-button-open =
     .title = Otvoriť umiestnenie súboru…
+support-third-party-modules-expand =
+    .title = Zobraziť podrobné informácie
+support-third-party-modules-collapse =
+    .title = Zbaliť podrobné informácie
+support-third-party-modules-unsigned-icon =
+    .title = Tento modul nie je podpísaný
 support-third-party-modules-folder-icon =
     .title = Otvoriť umiestnenie súboru…
+support-third-party-modules-down-icon =
+    .title = Zobraziť podrobné informácie
+support-third-party-modules-up-icon =
+    .title = Zbaliť podrobné informácie
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
@@ -283,6 +318,9 @@ blocklisted-bug = Zablokované kvôli známej chybe
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bug { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Zablokované kvôli známym problémom: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Zablokované; chybový kód { $failureCode }
 d3d11layers-crash-guard = D3D11 Compositor
@@ -312,7 +350,12 @@ effective-content-sandbox-level = Účinná úroveň sandboxu procesu s obsahom
 sandbox-proc-type-content = obsah
 sandbox-proc-type-file = obsah súboru
 sandbox-proc-type-media-plugin = zásuvný modul médií
-sandbox-proc-type-data-decoder = dekóder údajov
+sandbox-proc-type-data-decoder = dekodér údajov
+startup-cache-title = Vyrovnávacia pamäť spustenia
+startup-cache-disk-cache-path = Cesta k vyrovnávacej pamäti na disku
+startup-cache-ignore-disk-cache = Ignorovať vyrovnávaciu pamäť disku
+startup-cache-found-disk-cache-on-init = Vyrovnávacia pamäť na disku nájdená počas inicializácie
+startup-cache-wrote-to-disk-cache = Zapísané do vyrovnávacej pamäti na disku
 launcher-process-status-0 = Povolený
 launcher-process-status-1 = Zakázaný kvôli chybe
 launcher-process-status-2 = Vynútene zakázaný
@@ -333,6 +376,16 @@ multi-process-status-unknown = Neznámy stav
 # $fissionWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
 fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Zakázané experimentom
+fission-status-experiment-treatment = Povolené experimentom
+fission-status-disabled-by-e10s-env = Zakázané prostredím
+fission-status-enabled-by-env = Povolené prostredím
+fission-status-disabled-by-safe-mode = Zakázané v núdzovom režime
+fission-status-enabled-by-default = Povolené v núdzovom režime
+fission-status-disabled-by-default = Predvolene zakázané
+fission-status-enabled-by-user-pref = Povolené používateľom
+fission-status-disabled-by-user-pref = Zakázané používateľom
+fission-status-disabled-by-e10s-other = E10s zakázané
 async-pan-zoom = Asynchrónna lupa/panning
 apz-none = žiadna
 wheel-enabled = vstup kolieskom povolený
@@ -340,6 +393,7 @@ touch-enabled = dotykový vstup povolený
 drag-enabled = presúvanie posuvníka povolené
 keyboard-enabled = klávesnica povolená
 autoscroll-enabled = automatické posúvanie je povolené
+zooming-enabled = povolené gesto pre plynulé priblíženie (pinch-zoom)
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference
@@ -364,6 +418,10 @@ support-printing-prefs-value = Hodnota
 
 ## Normandy sections
 
+support-remote-experiments-title = Vzdialené experimenty
 support-remote-experiments-name = Názov
+support-remote-experiments-branch = Vetva experimentu
+support-remote-experiments-see-about-studies = Ďalšie informácie nájdete na stránke <a data-l10n-name="support-about-studies-link">about:studies</a> vrátane informácií, ako zakázať jednotlivé experimenty alebo ako zakázať spustenie tohto typu experimentu v aplikácii { -brand-short-name } v budúcnosti.
+support-remote-features-title = Vzdialené funkcie
 support-remote-features-name = Názov
 support-remote-features-status = Stav

@@ -398,7 +398,7 @@ performance-use-recommended-settings-checkbox =
 performance-use-recommended-settings-desc = Бұл баптаулар сіздің компьютеріңіздің құрылғылары және операциялық жүйесі үшін ыңғайлатылған.
 performance-settings-learn-more = Көбірек білу
 performance-allow-hw-accel =
-    .label = Қолжетерлік болса құрылғылық үдетуді қолдану
+    .label = Қолжетімді болса, құрылғылық үдетуді қолдану
     .accesskey = д
 performance-limit-content-process-option = Құрама процестерінің шегі
     .accesskey = ш
@@ -828,7 +828,7 @@ master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
 
-history-header = Тарихы
+history-header = Тарих
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.

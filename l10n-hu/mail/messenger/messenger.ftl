@@ -2,7 +2,20 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# Variables:
+# $count (Number) - Number of unread messages.
+unread-messages-os-tooltip =
+    { $count ->
+        [one] 1 olvasatlan üzenet
+       *[other] { $count } olvasatlan üzenet
+    }
 about-rights-notification-text = A { -brand-short-name } szabad és nyílt forráskódú szoftver, amit egy ezrekből álló közösség épít szerte a világból.
+
+## Toolbar
+
+addons-and-themes-button =
+    .label = Kiegészítők és témák
+    .tooltip = Saját kiegészítők kezelése
 
 ## Folder Pane
 
@@ -36,3 +49,18 @@ show-recent-folders-label =
 folder-toolbar-toggle-folder-compact-view =
     .label = Tömör nézet
     .accesskey = T
+
+## AppMenu
+
+# Since v89 we dropped the platforms distinction between Options or Preferences
+# and consolidated everything with Preferences.
+appmenu-preferences =
+    .label = Beállítások
+appmenu-addons-and-themes =
+    .label = Kiegészítők és témák
+appmenu-help-enter-troubleshoot-mode =
+    .label = Hibaelhárítási mód…
+appmenu-help-exit-troubleshoot-mode =
+    .label = Hibakeresési mód kikapcsolása
+appmenu-help-more-troubleshooting-info =
+    .label = További hibakeresési információ

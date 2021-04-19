@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Späť o jednu stránku ({ $shortcut })
     .aria-label = Naspäť
     .accesskey = N
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Naspäť
+    .accesskey = N
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Dopredu o jednu stránku ({ $shortcut })
     .aria-label = Dopredu
     .accesskey = D
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Dopredu
+    .accesskey = D
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Obnoviť
     .accesskey = O
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Obnoviť
+    .accesskey = O
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Zastaviť
     .accesskey = s
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Zastaviť
+    .accesskey = s
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name(capitalization: "sentence") }
+    .tooltiptext = { -fxaccount-brand-name(capitalization: "sentence") }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Pridať stránku medzi záložky
     .accesskey = m
     .tooltiptext = Pridá stránku medzi záložky
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Pridať stránku medzi záložky
+    .accesskey = m
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Upraviť záložku
+    .accesskey = U
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Otvoriť odkaz na novej kontajnerovej karte
     .accesskey = z
-main-context-menu-open-link-container =
-    .label = Otvoriť odkaz na novej kontajnerovej karte
-    .accesskey = k
 main-context-menu-open-link-new-window =
     .label = Otvoriť odkaz v novom okne
     .accesskey = t
@@ -302,7 +333,7 @@ main-context-menu-video-image-save-as =
     .label = Uložiť snímku ako…
     .accesskey = s
 main-context-menu-video-take-snapshot =
-    .label = Urobiť snímok
+    .label = Urobiť snímku
     .accesskey = b
 main-context-menu-video-email =
     .label = Odoslať video…
@@ -343,11 +374,14 @@ main-context-menu-use-saved-password =
 ##
 
 main-context-menu-suggest-strong-password =
-    .label = Navrhnúť silné heslo ...
+    .label = Navrhnúť silné heslo…
     .accesskey = h
 main-context-menu-manage-logins =
-    .label = Spravovať prihlásenia ...
+    .label = Spravovať prihlásenia…
     .accesskey = r
+main-context-menu-manage-logins2 =
+    .label = Spravovať prihlasovacie údaje…
+    .accesskey = h
 main-context-menu-keyword =
     .label = Pridať kľúčové slovo pre toto vyhľadávanie…
     .accesskey = d

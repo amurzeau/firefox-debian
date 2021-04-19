@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 # Page title
-about-performance-title = Управник задатака
+about-performance-title = Менаџер задатака
 
 ## Column headers
 
@@ -21,7 +21,7 @@ preloaded-tab = Претходно учитано: { $title }
 
 ## Values for the Type column
 
-type-tab = Језичак
+type-tab = Картица
 type-subframe = Подоквир
 type-tracker = Праћење
 type-addon = Додатак
@@ -53,8 +53,7 @@ size-GB = { $value } GB
 close-tab =
     .title = Затвори картицу
 show-addon =
-    .title = Прикажи у управнику додатака
-
+    .title = Прикажи у менаџеру додатака
 # Tooltip when hovering an item of the about:performance table
 # Variables:
 #   $totalDispatches (Number) - how many dispatches occurred for this page since it loaded

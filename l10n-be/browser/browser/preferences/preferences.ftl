@@ -28,6 +28,18 @@ search-input-box =
             [windows] Знайсці ў наладах
            *[other] Знайсці ў перавагах
         }
+settings-page-title = Налады
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Шукаць у наладах
 managed-notice = Вашым браўзерам кіруе ваша арганізацыя.
 category-list =
     .aria-label = Катэгорыі
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Сінхранізацыя
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = Эксперыменты { -brand-short-name }
 category-experimental =
     .tooltiptext = Эксперыменты { -brand-short-name }
 pane-experimental-subtitle = Працягвайце з асцярожнасцю
 pane-experimental-search-results-header = Эксперыменты { -brand-short-name }: працягвайце з асцярожнасцю
 pane-experimental-description = Змена пашыраных налад канфігурацыі можа паўплываць на прадукцыйнасць і бяспеку { -brand-short-name }.
+pane-experimental-description2 = Змена пашыраных налад канфігурацыі можа паўплываць на прадукцыйнасць і бяспеку { -brand-short-name }.
 pane-experimental-reset =
     .label = Аднавіць прадвызначаныя
     .accesskey = А
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] Выбачайце! У наладах няма вынікаў для “<span data-l10n-name="query"></span>”.
        *[other] Выбачайце! У перавагах няма вынікаў для “<span data-l10n-name="query"></span>”.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Выбачайце! У перавагах няма вынікаў для “<span data-l10n-name="query"></span>”.
 search-results-help-link = Патрэбна дапамога? Наведайце <a data-l10n-name="url">Падтрымка { -brand-short-name }</a>
 
 ## General Section
@@ -372,6 +390,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Ніколі не правяраць наяўнасць абнаўленняў (не рэкамендуецца)
     .accesskey = Н
+update-application-background-enabled =
+    .label = Калі { -brand-short-name } не запушчаны
+    .accesskey = К
 update-application-warning-cross-user-setting = Гэта налада дзейнічае на ўсе ўліковыя запісы Windows і профілі { -brand-short-name }, якія выкарыстоўваюць усталёўку { -brand-short-name }.
 update-application-use-service =
     .label = Выкарыстоўваць фонавую службу для ўсталявання абнаўленняў
@@ -383,6 +404,15 @@ update-setting-write-failure-title = Памылка пры захаванні н
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
     { -brand-short-name } сутыкнуўся з памылкай і не захаваў гэтую змену. Звярніце ўвагу, што ўстаноўка гэтага параметру абнаўлення патрабуе дазволу на запіс у файл ніжэй. Вы або сістэмны адміністратар можаце мець магчымасць ліквідаваць гэтую памылку, даўшы групе Карыстальнікі поўны кантроль над гэтым файлам.
+    
+    Немагчыма запісаць у файл: { $path }
+update-setting-write-failure-title2 = Памылка пры захаванні налад абнаўлення
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name } сутыкнуўся з памылкай і не захаваў гэтую змену. Звярніце ўвагу, што ўстаноўка гэтай налады абнаўлення патрабуе дазволу на запіс у файл ніжэй. Вы або сістэмны адміністратар можаце мець магчымасць ліквідаваць гэтую памылку, даўшы групе Карыстальнікі поўны кантроль над гэтым файлам.
     
     Немагчыма запісаць у файл: { $path }
 update-in-progress-title = Абнаўленне ў працэсе
@@ -583,6 +613,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Паказваць пошукавыя прапановы ў прыватных вокнах
 suggestions-addressbar-settings-generic = Змяніць налады для іншых падказак у адрасным радку
+suggestions-addressbar-settings-generic2 = Змяніць налады для іншых падказак у адрасным радку
 search-suggestions-cant-show = Пошукавыя прапановы у панэлі адрасу паказвацца не будуць, бо вы наладзілі { -brand-short-name } ніколі не запамінаць гісторыю.
 search-one-click-header = Пашукавікі ў адну пстрычку
 search-one-click-header2 = Пошукавыя скароты
@@ -617,6 +648,8 @@ containers-back-button =
             [windows] Вярнуцца да наладаў
            *[other] Вярнуцца да параметраў
         }
+containers-back-button2 =
+    .aria-label = Вярнуцца да наладаў
 containers-header = Карткі кантэйнераў
 containers-add-button =
     .label = Дадаць новы кантэйнер
@@ -625,6 +658,8 @@ containers-new-tab-check =
     .label = Выбіраць кантэйнер для кожнай новай карткі
     .accesskey = ы
 containers-preferences-button =
+    .label = Налады
+containers-settings-button =
     .label = Налады
 containers-remove-button =
     .label = Выдаліць
@@ -637,6 +672,10 @@ sync-signedout-description = Сінхранізуйце свае закладк�
 sync-signedout-account-signin2 =
     .label = Увайсці ў { -sync-brand-short-name }…
     .accesskey = ў
+sync-signedout-description2 = Сінхранізуйце свае закладкі, гісторыю, карткі, паролі, дадаткі і налады на ўсіх вашых прыладах.
+sync-signedout-account-signin3 =
+    .label = Увайсці ў сінхранізацыю
+    .accesskey = і
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -676,6 +715,10 @@ prefs-sync-setup =
     .label = Наладзіць { -sync-brand-short-name }...
     .accesskey = д
 prefs-sync-offer-setup-label = Сінхранізуйце свае закладкі, гісторыю, карткі, паролі, дадаткі і налады на ўсіх сваіх прыладах.
+prefs-sync-turn-on-syncing =
+    .label = Уключыць сінхранізацыю…
+    .accesskey = ы
+prefs-sync-offer-setup-label2 = Сінхранізуйце свае закладкі, гісторыю, карткі, паролі, дадаткі і налады на ўсіх вашых прыладах.
 prefs-sync-now =
     .labelnotsyncing = Сінхранізаваць зараз
     .accesskeynotsyncing = ь
@@ -696,6 +739,7 @@ sync-currently-syncing-prefs =
         [windows] Налады
        *[other] Параметры
     }
+sync-currently-syncing-settings = Налады
 sync-change-options =
     .label = Змяніць…
     .accesskey = м
@@ -743,6 +787,10 @@ sync-engine-prefs =
         }
     .tooltiptext = Змененыя вамі налады: Агульныя, Прыватнасць і бяспека
     .accesskey = Н
+sync-engine-settings =
+    .label = Налады
+    .tooltiptext = Налады прыватнасці, бяспекі і агульныя налады, якія вы змянілі
+    .accesskey = ы
 
 ## The device name controls.
 
@@ -1157,6 +1205,11 @@ space-alert-under-5gb-ok-button =
     .label = OK, зразумела
     .accesskey = K
 space-alert-under-5gb-message = У { -brand-short-name } сканчаецца месца на дыску. Змесціва вэб-сайтаў можа адлюстроўвацца няправільна. Клікніце “Падрабязней”, каб аптымізаваць выкарыстанне вашага дыска для паляпшэння вэб-сёрфінгу.
+space-alert-over-5gb-settings-button =
+    .label = Адкрыць налады
+    .accesskey = А
+space-alert-over-5gb-message2 = <strong>У { -brand-short-name } сканчаецца месца на дыску</strong>. Змесціва вэб-сайтаў можа адлюстроўвацца няправільна. Вы можаце выдаліць захаваныя дадзеныя ў Налады > Прыватнасць і бяспека > Кукі і дадзеныя сайтаў.
+space-alert-under-5gb-message2 = <strong>У { -brand-short-name } сканчаецца месца на дыску.</strong> Змесціва вэб-сайтаў можа адлюстроўвацца няправільна. Клікніце “Падрабязней”, каб аптымізаваць выкарыстанне вашага дыска для паляпшэння вэб-сёрфінгу.
 
 ## Privacy Section - HTTPS-Only
 

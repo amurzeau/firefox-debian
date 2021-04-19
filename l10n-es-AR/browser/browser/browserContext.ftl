@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Retroceder una página ({ $shortcut })
     .aria-label = Atrás
     .accesskey = t
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Atrás
+    .accesskey = t
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Avanzar una página ({ $shortcut })
     .aria-label = Adelante
     .accesskey = A
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Adelante
+    .accesskey = A
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Recargar
     .accesskey = R
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Recargar
+    .accesskey = R
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Detener
     .accesskey = D
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Detener
+    .accesskey = D
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Marcar esta página
     .accesskey = M
     .tooltiptext = Marcar esta página
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Marcar página
+    .accesskey = m
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Editar marcador
+    .accesskey = m
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Abrir enlace en nueva pestaña contenedora
     .accesskey = c
-main-context-menu-open-link-container =
-    .label = Abrir enlace en nueva pestaña contenedora
-    .accesskey = w
 main-context-menu-open-link-new-window =
     .label = Abrir enlace en nueva ventana
     .accesskey = v
@@ -125,7 +156,7 @@ main-context-menu-bookmark-this-link =
     .accesskey = l
 main-context-menu-bookmark-link =
     .label = Enlace de marcador
-    .accesskey = B
+    .accesskey = E
 main-context-menu-save-link =
     .label = Guardar enlace como…
     .accesskey = l
@@ -303,7 +334,7 @@ main-context-menu-video-image-save-as =
     .accesskey = G
 main-context-menu-video-take-snapshot =
     .label = Hacer captura
-    .accesskey = S
+    .accesskey = H
 main-context-menu-video-email =
     .label = Video por email…
     .accesskey = a
@@ -348,6 +379,9 @@ main-context-menu-suggest-strong-password =
 main-context-menu-manage-logins =
     .label = Administrar inicios de sesión…
     .accesskey = M
+main-context-menu-manage-logins2 =
+    .label = Administrar ingresos
+    .accesskey = m
 main-context-menu-keyword =
     .label = Agregar una palabra clave a esta búsqueda…
     .accesskey = g
@@ -410,7 +444,7 @@ main-context-menu-inspect-element =
     .accesskey = o
 main-context-menu-inspect =
     .label = Inspeccionar
-    .accesskey = Q
+    .accesskey = o
 main-context-menu-inspect-a11y-properties =
     .label = Inspeccionar las propiedades de Accesibilidad
 main-context-menu-eme-learn-more =

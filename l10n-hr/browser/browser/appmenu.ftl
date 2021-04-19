@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = Preuzimanje nadogradnje za { -brand-shorter-name }
+appmenuitem-update-banner2 =
+    .label-update-downloading = Preuzimanje dopune za { -brand-shorter-name }
+    .label-update-available = Dostupna je dopuna — preuzmi sada
+    .label-update-manual = Dostupna je dopuna — preuzmi sada
+    .label-update-unsupported = Nije moguće ažurirati
+    .label-update-restart = Dostupna je dopuna — ponovno pokreni sada
 appmenuitem-protection-dashboard-title = Nadzorna ploča zaštite
 appmenuitem-customize-mode =
     .label = Prilagodi …
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = Lozinke
 appmenuitem-extensions-and-themes =
     .label = Proširenja i teme
+appmenuitem-addons-and-themes =
+    .label = Dodaci i teme
 appmenuitem-find-in-page =
     .label = Pronađi na stranici …
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Zatvori izbornik aplikacije
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Izlaz
+           *[other] Izlaz
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Otvori izbornik aplikacije
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Zatvori izbornik aplikacije
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Sinkroniziraj sada
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Sinkroniziraj sada
-    .value = Sinkroniziraj sada
+appmenu-remote-tabs-sign-into-sync =
+    .label = Prijavi se za sinkronizaciju…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Uključi sinkronizaciju…
+appmenuitem-fxa-toolbar-sync-now2 = Sinkroniziraj sada
 appmenuitem-fxa-manage-account = Upravljaj računom
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = Posljednja sinkronizacija { $time }
     .label = Posljednja sinkronizacija { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Sinkroniziraj i spremi podatke
+appmenu-fxa-sync-and-save-data2 = Sinkroniziraj i spremi podatke
 appmenu-fxa-signed-in-label = Prijavi se
 appmenu-fxa-setup-sync =
     .label = Uključi sinkronizaciju…
@@ -133,29 +157,17 @@ appmenu-help-header =
 appmenu-about =
     .label = O { -brand-shorter-name }u
     .accesskey = O
-appmenu-help-product =
-    .label = Pomoć za { -brand-shorter-name }
-    .accesskey = P
-appmenu-help-show-tour =
-    .label = Vodič za { -brand-shorter-name }
-    .accesskey = o
-appmenu-help-import-from-another-browser =
-    .label = Uvoz iz drugog preglednika…
-    .accesskey = l
-appmenu-help-keyboard-shortcuts =
-    .label = Tipkovnički prečaci
-    .accesskey = k
 appmenu-get-help =
     .label = Potraži pomoć
     .accesskey = p
 appmenu-help-troubleshooting-info =
     .label = Rješavanje problema
     .accesskey = R
+appmenu-help-taskmanager =
+    .label = Upravljač zadataka
 appmenu-help-more-troubleshooting-info =
     .label = Više informacija za rješavanje problema
     .accesskey = v
-appmenu-help-taskmanager =
-    .label = Upravljač zadataka
 appmenu-help-report-site-issue =
     .label = Prijavi problem sa stranicom …
 appmenu-help-feedback-page =
@@ -175,9 +187,9 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
+appmenu-help-enter-troubleshoot-mode2 =
     .label = Način rada za rješavanje problema
-    .accesskey = N
+    .accesskey = m
 appmenu-help-exit-troubleshoot-mode =
     .label = Isključi način rada za rješavanje problema
     .accesskey = N
@@ -192,13 +204,10 @@ appmenu-help-not-deceptive =
     .label = Ovo nije obmanjujuća stranica…
     .accesskey = d
 
-##
-
-appmenu-help-check-for-update =
-    .label = Provjeri dostupnost dopuna…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Prilagodi alatnu traku…
+appmenu-taskmanager =
+    .label = Upravljač zadataka
 appmenu-developer-tools-subheader = Alati preglednika

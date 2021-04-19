@@ -25,6 +25,10 @@ main-context-menu-back-2 =
     .tooltiptext = Ien side tebek gean ({ $shortcut })
     .aria-label = Tebek
     .accesskey = T
+# This menuitem is only visible on macOS
+main-context-menu-back-mac =
+    .label = Tebek
+    .accesskey = T
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
@@ -46,6 +50,10 @@ main-context-menu-forward-2 =
     .tooltiptext = Ien side foarút gean ({ $shortcut })
     .aria-label = Foarút
     .accesskey = F
+# This menuitem is only visible on macOS
+main-context-menu-forward-mac =
+    .label = Foarút
+    .accesskey = F
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
@@ -56,6 +64,10 @@ toolbar-button-forward-2 =
 main-context-menu-reload =
     .aria-label = Opnij lade
     .accesskey = n
+# This menuitem is only visible on macOS
+main-context-menu-reload-mac =
+    .label = Opnij lade
+    .accesskey = n
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
 
@@ -64,6 +76,10 @@ toolbar-button-reload =
 main-context-menu-stop =
     .aria-label = Beëinigje
     .accesskey = B
+# This menuitem is only visible on macOS
+main-context-menu-stop-mac =
+    .label = Beëinigje
+    .accesskey = B
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
 
@@ -71,6 +87,12 @@ toolbar-button-stop =
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -86,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Blêdwizer foar dizze side meitsje
     .accesskey = m
     .tooltiptext = Blêdwizer foar dizze side meitsje
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Blêdwizer foar side meitsje
+    .accesskey = m
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Blêdwizer bewurkje
+    .accesskey = w
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -111,9 +145,6 @@ main-context-menu-open-link-new-tab =
 main-context-menu-open-link-container-tab =
     .label = Keppeling yn nij kontenerljepblêd iepenje
     .accesskey = k
-main-context-menu-open-link-container =
-    .label = Keppeling iepenje yn nije kontener
-    .accesskey = y
 main-context-menu-open-link-new-window =
     .label = Keppeling yn nij finster iepenje
     .accesskey = f
@@ -193,6 +224,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Healwize faasje (2×)
     .accesskey = H
+main-context-menu-media-play-speed-2 =
+    .label = Snelheid
+    .accesskey = d
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0,5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1,0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1,25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1,5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Werhelje
     .accesskey = W
@@ -220,6 +264,11 @@ main-context-menu-media-video-leave-fullscreen =
 main-context-menu-media-pip =
     .label = Picture-in-Picture
     .accesskey = u
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-watch-pip =
+    .label = Picture-in-picture besjen
+    .accesskey = u
 main-context-menu-image-reload =
     .label = Ofbylding opnij lade
     .accesskey = l
@@ -229,6 +278,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = Fideo besjen
     .accesskey = I
+main-context-menu-image-view-new-tab =
+    .label = Ofbylding iepenje yn nij ljepblêd
+    .accesskey = O
+main-context-menu-video-view-new-tab =
+    .label = Fideo iepenje yn nij ljepblêd
+    .accesskey = i
 main-context-menu-image-copy =
     .label = Ofbylding kopiearje
     .accesskey = k
@@ -277,6 +332,9 @@ main-context-menu-audio-save-as =
 main-context-menu-video-image-save-as =
     .label = Momintopname bewarje as…
     .accesskey = M
+main-context-menu-video-take-snapshot =
+    .label = Momintopname meitsje…
+    .accesskey = M
 main-context-menu-video-email =
     .label = Fideo e-maile…
     .accesskey = a
@@ -321,6 +379,9 @@ main-context-menu-suggest-strong-password =
 main-context-menu-manage-logins =
     .label = Oanmeldingen beheare…
     .accesskey = b
+main-context-menu-manage-logins2 =
+    .label = Oanmeldingen beheare
+    .accesskey = b
 main-context-menu-keyword =
     .label = Kaaiwurd foar dizze sykopdracht tafoegje…
     .accesskey = K
@@ -363,6 +424,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Boarne fan seleksje besjen
     .accesskey = B
+main-context-menu-take-screenshot =
+    .label = Skermôfbylding meitsje
+    .accesskey = k
 main-context-menu-view-page-source =
     .label = Sideboarne besjen
     .accesskey = b

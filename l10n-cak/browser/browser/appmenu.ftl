@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = Niqasäx ruk'exoj { -brand-shorter-name }
+appmenuitem-update-banner2 =
+    .label-update-downloading = Tiqasäx ruk'exoj { -brand-shorter-name }
+    .label-update-available = K'exoj wachel — tiqasäx wakami
+    .label-update-manual = K'exoj wachel — tiqasäx wakami
+    .label-update-unsupported = Man tikirel ta niqasäx
+    .label-update-restart = Kexoj wachel — titikirisäx wakami
 appmenuitem-protection-dashboard-title = Rupas taq Chajinïk
 appmenuitem-customize-mode =
     .label = Tichinäx…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = Ewan taq tzij
 appmenuitem-extensions-and-themes =
     .label = Taq K'amal chuqa' taq Wachinel
+appmenuitem-addons-and-themes =
+    .label = Taq Tz'aqat chuqa' taq Wachinel
 appmenuitem-find-in-page =
     .label = Tilitäj Pa Ruxaq…
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Titz'apïx Ruk'utsamaj Chokoy
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Tel
+           *[other] Tel
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Tijaq Ruk'utsamaj Chokoy
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Titz'apïx Ruk'utsamaj Chokoy
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Tixim Wakami
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Tixim Wakami
-    .value = Tixim Wakami
+appmenu-remote-tabs-sign-into-sync =
+    .label = Titikirisäx molojri'ïl pa Ximoj…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Titzij Ximoj…
+appmenuitem-fxa-toolbar-sync-now2 = Tixim Wakami
 appmenuitem-fxa-manage-account = Tinuk'samajïx Rub'i' Taqoya'l
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = Ruk'isib'äl ximoj { $time }
     .label = Ruk'isib'äl ximoj { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Tixim chuqa' Tiyak Tzij
+appmenu-fxa-sync-and-save-data2 = Tixim chuqa' Tiyak Tzij
 appmenu-fxa-signed-in-label = Titikirisäx Molojri'ïl
 appmenu-fxa-setup-sync =
     .label = Titzij Ximoj…
@@ -135,29 +159,17 @@ appmenu-help-header =
 appmenu-about =
     .label = Chi rij ri { -brand-shorter-name }
     .accesskey = C
-appmenu-help-product =
-    .label = { -brand-shorter-name } To'ïk
-    .accesskey = T
-appmenu-help-show-tour =
-    .label = { -brand-shorter-name } B'enam
-    .accesskey = n
-appmenu-help-import-from-another-browser =
-    .label = Tijik' pa Jun Chik Okik'amaya'l…
-    .accesskey = j
-appmenu-help-keyboard-shortcuts =
-    .label = Ruq'a' rub'ey Keyboard
-    .accesskey = K
 appmenu-get-help =
     .label = Tik'ul To'ïk
     .accesskey = o
 appmenu-help-troubleshooting-info =
     .label = Etamab'äl richin yesol taq k'ayewal
     .accesskey = E
+appmenu-help-taskmanager =
+    .label = Kinuk'samajel taq Samaj
 appmenu-help-more-troubleshooting-info =
     .label = Ch'aqa' Etamab'äl richin yesol taq k'ayewal
     .accesskey = E
-appmenu-help-taskmanager =
-    .label = Kinuk'samajel taq Samaj
 appmenu-help-report-site-issue =
     .label = Tiya' rutzijol ri ruk'ayewal Ruxaq K'amaya'l…
 appmenu-help-feedback-page =
@@ -177,8 +189,8 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Kib'anikil taq k'ayewal
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Kib'anikil Kisolik taq K'ayewal…
     .accesskey = K
 appmenu-help-exit-troubleshoot-mode =
     .label = Tichup ri Rub'anikil Kiwäch K'ayewal
@@ -194,13 +206,10 @@ appmenu-help-not-deceptive =
     .label = Re re' man q'olonel ta chi ruxaq k'amaya'l…
     .accesskey = q
 
-##
-
-appmenu-help-check-for-update =
-    .label = Tinik'öx we e k'o K'exoj…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Tichinäx Rukajtz'ik Samajib'äl…
+appmenu-taskmanager =
+    .label = Kinuk'samajel taq Samaj
 appmenu-developer-tools-subheader = Rusamajib'al Okik'amaya'l

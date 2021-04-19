@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = در حال بارگیری به‌روز رسانی { -brand-shorter-name }
+appmenuitem-update-banner2 =
+    .label-update-downloading = در حال دریافت بروزرسانیِ { -brand-shorter-name }
+    .label-update-available = بروزرسانی موجود است — شروع دریافت
+    .label-update-manual = بروزرسانی موجود است — شروع دریافت
+    .label-update-unsupported = بروزرسانی امکان‌پذیر نبود
+    .label-update-restart = بروزرسانی موجود است — راه‌انداری مجدد
 appmenuitem-protection-dashboard-title = تابلوی محافظت‌ها
 appmenuitem-customize-mode =
     .label = سفارشی‌سازی…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = گذرواژه‌ها
 appmenuitem-extensions-and-themes =
     .label = افزونه‌ها و پوسته‌ها
+appmenuitem-addons-and-themes =
+    .label = افزونه‌ها و تم‌ها
 appmenuitem-find-in-page =
     .label = پیداکردن در صفحه…
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = بستن منوی برنامه
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] خروج
+           *[other] خروج
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = باز کردن منو برنامه
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = بستن منو برنامه
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = انجام هم‌گام‌سازی
-appmenuitem-fxa-toolbar-sync-now =
-    .label = انجام همگام‌سازی
-    .value = انجام همگام‌سازی
+appmenu-remote-tabs-sign-into-sync =
+    .label = برای همگام‌سازی وارد شوید…
+appmenu-remote-tabs-turn-on-sync =
+    .label = روشن کردن همگام‌سازی…
+appmenuitem-fxa-toolbar-sync-now2 = انجام همگام‌سازی
 appmenuitem-fxa-manage-account = مدیریت حساب
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = آخرین همگام‌سازی { $time }
     .label = آخرین همگام‌سازی { $time }
 appmenu-fxa-sync-and-save-data =
     .value = همگام‌سازی و ذخیرهٔ داده‌ها
+appmenu-fxa-sync-and-save-data2 = همگام‌سازی و ذخیرهٔ داده‌ها
 appmenu-fxa-signed-in-label = ورود
 appmenu-fxa-setup-sync =
     .label = روشن کردن همگام‌سازی…
@@ -135,29 +159,17 @@ appmenu-help-header =
 appmenu-about =
     .label = دربارهٔ { -brand-shorter-name }
     .accesskey = A
-appmenu-help-product =
-    .label = راهنمای { -brand-shorter-name }
-    .accesskey = H
-appmenu-help-show-tour =
-    .label = تور معرفی { -brand-shorter-name }
-    .accesskey = o
-appmenu-help-import-from-another-browser =
-    .label = درون‌ریزی از مرورگری دیگر… (I)
-    .accesskey = I
-appmenu-help-keyboard-shortcuts =
-    .label = میانبرهای صفحه کلید
-    .accesskey = K
 appmenu-get-help =
     .label = دریافت راهنمایی
     .accesskey = H
 appmenu-help-troubleshooting-info =
     .label = اطلاعات رفع اشکال
     .accesskey = T
+appmenu-help-taskmanager =
+    .label = مدیر وظایف
 appmenu-help-more-troubleshooting-info =
     .label = اطلاعات بیشتر
     .accesskey = T
-appmenu-help-taskmanager =
-    .label = مدیر وظایف
 appmenu-help-report-site-issue =
     .label = مشکل سایت را گزارش کنید…
 appmenu-help-feedback-page =
@@ -177,9 +189,9 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = حالت عیب‌یابی
-    .accesskey = M
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = حالت عیب‌یابی…
+    .accesskey = ح
 appmenu-help-exit-troubleshoot-mode =
     .label = خاموش کردن حالت عیب‌یابی
     .accesskey = M
@@ -194,13 +206,10 @@ appmenu-help-not-deceptive =
     .label = این یک سایت گمراه‌کننده نیست…
     .accesskey = d
 
-##
-
-appmenu-help-check-for-update =
-    .label = بررسی برای بروزرسانی‌ها…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = سفارشی‌سازی نوار ابزار…
+appmenu-taskmanager =
+    .label = مدیر وظایف
 appmenu-developer-tools-subheader = ابزارهای مرورگر

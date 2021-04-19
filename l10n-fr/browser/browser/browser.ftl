@@ -264,11 +264,27 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Ajouter un marque-page
+bookmarks-edit-bookmark = Modifier le marque-page
+bookmark-panel-cancel =
+    .label = Annuler
+    .accesskey = A
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Supprimer le marque-page
+           *[other] Supprimer les { $count } marque-pages
+        }
+    .accesskey = S
 bookmark-panel-show-editor-checkbox =
     .label = Afficher l’éditeur lors de l’enregistrement
     .accesskey = A
 bookmark-panel-done-button =
     .label = Terminer
+bookmark-panel-save-button =
+    .label = Enregistrer
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -288,7 +304,9 @@ identity-passive-loaded = Des éléments de la page ne sont pas sécurisés (tel
 identity-active-loaded = Vous avez désactivé la protection sur cette page.
 identity-weak-encryption = Cette page utilise un faible niveau de chiffrement.
 identity-insecure-login-forms = Les identifiants saisis sur cette page pourraient être compromis.
-identity-https-only-connection-upgraded = (surclassé en HTTPS)
+identity-permissions =
+    .value = Permissions
+identity-https-only-connection-upgraded = (surclassée en HTTPS)
 identity-https-only-label = Mode HTTPS uniquement
 identity-https-only-dropdown-on =
     .label = Activé
@@ -299,8 +317,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Activez le mode « HTTPS uniquement » pour ce site si vous voulez que { -brand-short-name } sécurise la connexion lorsque c’est possible.
 identity-https-only-info-turn-off2 = Si la page ne semble pas fonctionnelle, vous pouvez désactiver le mode « HTTPS uniquement » pour  ce site afin de la recharger en utilisant le protocole non sécurisé HTTP.
 identity-https-only-info-no-upgrade = Impossible de sécuriser la connexion.
-identity-permissions =
-    .value = Permissions
 identity-permissions-storage-access-header = Cookies intersites
 identity-permissions-storage-access-hint = Ces organismes peuvent utiliser des cookies intersites et les données du site tant que vous êtes sur ce site.
 identity-permissions-reload-hint = Vous devrez peut-être actualiser la page pour que les changements prennent effet.
@@ -348,8 +364,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Lecture en cours
-browser-tab-audio-muted = Muet
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = LECTURE EN COURS
 # This label should be written in all capital letters if your locale supports them.
@@ -358,6 +372,29 @@ browser-tab-audio-muted2 = MUET
 browser-tab-audio-blocked = LECTURE AUTOMATIQUE BLOQUÉE
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = INCRUSTATION VIDÉO
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] COUPER LE SON DE L’ONGLET
+        [one] COUPER LE SON DE L’ONGLET
+       *[other] COUPER LE SON DE { $count } ONGLETS
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] RÉACTIVER LE SON DE L’ONGLET
+        [one] RÉACTIVER LE SON DE L’ONGLET
+       *[other] RÉACTIVER LE SON DE { $count } ONGLETS
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] LANCER LA LECTURE DE L’ONGLET
+        [one] LANCER LA LECTURE DE L’ONGLET
+       *[other] LANCER LA LECTURE DE { $count } ONGLETS
+    }
 
 ## Bookmarks toolbar items
 
@@ -377,9 +414,13 @@ popup-select-microphone =
 popup-select-camera-device =
     .value = Caméra :
     .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = Caméra
 popup-select-microphone-device =
     .value = Microphone :
     .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Microphone
 popup-all-windows-shared = L’ensemble des fenêtres visibles sur votre écran seront partagées.
 popup-screen-sharing-not-now =
     .label = Plus tard
@@ -505,6 +546,13 @@ urlbar-result-action-tabtosearch-web = Rechercher avec { $engine } directement d
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Recherche { $engine } directement depuis la barre d’adresse
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Copier
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -546,8 +594,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Afficher tous les marque-pages
-bookmarks-recent-bookmarks =
-    .value = Marqués récemment
 bookmarks-manage-bookmarks =
     .label = Organiser les marque-pages
 bookmarks-recent-bookmarks-panel =
@@ -568,12 +614,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Masquer le panneau des marque-pages
            *[other] Afficher le panneau des marque-pages
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Masquer la barre personnelle
-           *[other] Afficher la barre personnelle
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -620,12 +660,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Marque-pages
-library-bookmarks-bookmark-this-page =
-    .label = Marquer cette page
-library-bookmarks-bookmark-edit =
-    .label = Modifier ce marque-page
 library-recent-activity-title =
     .value = Activité récente
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Enregistrer dans { -pocket-brand-name }
+    .tooltiptext = Enregistrer dans { -pocket-brand-name }
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Modules complémentaires et thèmes
+    .tooltiptext = Gérer vos modules complémentaires et thèmes ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Paramètres
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Ouvrir les paramètres ({ $shortcut })
+           *[other] Ouvrir les paramètres
+        }
 
 ## More items
 
@@ -640,3 +699,21 @@ eme-notifications-drm-content-playing-manage = Gérer les paramètres
 eme-notifications-drm-content-playing-manage-accesskey = m
 eme-notifications-drm-content-playing-dismiss = Ignorer
 eme-notifications-drm-content-playing-dismiss-accesskey = n
+
+## Password save/update panel
+
+panel-save-update-username = Nom d’utilisateur
+panel-save-update-password = Mot de passe
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Supprimer { $name } ?
+addon-removal-abuse-report-checkbox = Signaler cette extension à { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Gestion du compte
+remote-tabs-sync-now = Synchroniser maintenant

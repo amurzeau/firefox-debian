@@ -28,6 +28,18 @@ search-input-box =
             [windows] Pronađi u Mogućnostima
            *[other] Pronađi u Postavkama
         }
+settings-page-title = Postavke
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Pronađi u postavkama
 managed-notice = Tvojim preglednikom upravlja tvoja organizacija.
 category-list =
     .aria-label = Kategorije
@@ -46,6 +58,9 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Sinkronizacija
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = { -brand-short-name } eksperimenti
 category-experimental =
     .tooltiptext = { -brand-short-name } eksperimenti
@@ -121,6 +136,8 @@ search-results-empty-message =
         [windows] Žao nam je! Nema rezultata u Mogućnostima za “<span data-l10n-name="query"></span>”.
        *[other] Žao nam je! Nema rezultata u Postavkama za “<span data-l10n-name="query"></span>”.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Oprosti! Među postavkama nema rezultata za “<span data-l10n-name="query"></span>”.
 search-results-help-link = Trebate pomoć? Posjetite <a data-l10n-name="url">{ -brand-short-name } podršku</a>
 
 ## General Section
@@ -386,7 +403,7 @@ update-setting-write-failure-message =
     
     Nije moguće pisati u datoteku: { $path }
 update-in-progress-title = Aktualiziranje u tijeku
-update-in-progress-message = Želiš li { -brand-short-name } nastavi s ovim aktualiziranjem?
+update-in-progress-message = Želiš li da { -brand-short-name } nastavi s ovim aktualiziranjem?
 update-in-progress-ok-button = O&dbaci
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
@@ -547,9 +564,9 @@ home-prefs-snippets-description-new = Savjeti i vijesti od { -vendor-short-name 
 home-prefs-sections-rows-option =
     .label =
         { $num ->
-            [one] { $num } red
-            [few] { $num } reda
-           *[other] { $num } reda
+            [one] { $num } redak
+            [few] { $num } retka
+           *[other] { $num } redaka
         }
 
 ## Search Section
@@ -583,6 +600,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Prikaži prijedloge za pretraživanje u privatnim prozorima
 suggestions-addressbar-settings-generic = Promijeni postavke za ostale prijedloge u adresnoj traci
+suggestions-addressbar-settings-generic2 = Promijeni postavke za ostale prijedloge adresne trake
 search-suggestions-cant-show = Prijedlozi pretraživanja neće biti prikazani u lokacijskoj traci, jer je { -brand-short-name } podešen, da ne pamti povijest.
 search-one-click-header = Tražilice jednim klikom
 search-one-click-header2 = Prečaci za pretraživanje
@@ -617,6 +635,8 @@ containers-back-button =
             [windows] Nazad na Mogućnosti
            *[other] Nazad na Mogućnosti
         }
+containers-back-button2 =
+    .aria-label = Natrag na postavke
 containers-header = Kontejnerske kartice
 containers-add-button =
     .label = Dodaj novi kontejner
@@ -625,6 +645,8 @@ containers-new-tab-check =
     .label = Odaberi kontejner za svaku novu karticu
     .accesskey = s
 containers-preferences-button =
+    .label = Postavke
+containers-settings-button =
     .label = Postavke
 containers-remove-button =
     .label = Ukloni
@@ -636,6 +658,10 @@ sync-signedout-caption = Ponesi svoj web sa sobom
 sync-signedout-description = Sinkroniziraj tvoje zabilješke, povijest, kartice, lozinke, dodatke i postavke na sve svoje uređaje.
 sync-signedout-account-signin2 =
     .label = Prijavi se u { -sync-brand-short-name }…
+    .accesskey = i
+sync-signedout-description2 = Sinkroniziraj svoje zabilješke, povijest, kartice, lozinke, dodatke i postavke kroz sve svoje uređaje.
+sync-signedout-account-signin3 =
+    .label = Prijavi se za sinkronizaciju…
     .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -676,6 +702,10 @@ prefs-sync-setup =
     .label = Postavi { -sync-brand-short-name }…
     .accesskey = P
 prefs-sync-offer-setup-label = Sinkroniziraj tvoje zabilješke, povijest, kartice, lozinke, dodatke i postavke na sve svoje uređaje.
+prefs-sync-turn-on-syncing =
+    .label = Uključi sinkronizaciju…
+    .accesskey = s
+prefs-sync-offer-setup-label2 = Sinkroniziraj svoje zabilješke, povijest, kartice, lozinke, dodatke i postavke kroz sve svoje uređaje.
 prefs-sync-now =
     .labelnotsyncing = Sinkroniziraj sada
     .accesskeynotsyncing = n
@@ -696,6 +726,7 @@ sync-currently-syncing-prefs =
         [windows] Mogućnosti
        *[other] Postavke
     }
+sync-currently-syncing-settings = Postavke
 sync-change-options =
     .label = Promijeni …
     .accesskey = P
@@ -742,6 +773,10 @@ sync-engine-prefs =
            *[other] Postavke
         }
     .tooltiptext = Opće, privatne i sigurnosne postavke koje si promijenio/la
+    .accesskey = s
+sync-engine-settings =
+    .label = Postavke
+    .tooltiptext = Općenite postavke i postavke privatnosti i sigurnosti koje ste promijenili
     .accesskey = s
 
 ## The device name controls.
@@ -1157,6 +1192,9 @@ space-alert-under-5gb-ok-button =
     .label = U redu, razumijem
     .accesskey = U
 space-alert-under-5gb-message = { -brand-short-name }u ponestaje memorije. Sadržaji stranica se možda neće dobro prikazati. Posjeti „Saznaj više” za optimiranje korištenja memorije za bolje iskustvo tijekom pregledavanja.
+space-alert-over-5gb-settings-button =
+    .label = Otvori postavke
+    .accesskey = O
 
 ## Privacy Section - HTTPS-Only
 

@@ -28,6 +28,18 @@ search-input-box =
             [windows] Εύρεση στις επιλογές
            *[other] Εύρεση στις προτιμήσεις
         }
+settings-page-title = Ρυθμίσεις
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Εύρεση στις ρυθμίσεις
 managed-notice = Το πρόγραμμα περιήγησής σας ρυθμίζεται από τον οργανισμό σας.
 category-list =
     .aria-label = Κατηγορίες
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
-pane-experimental-title = Πειράματα του { -brand-short-name }
+pane-sync-title3 = Συγχρονισμός
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
+pane-experimental-title = Πειράματα { -brand-short-name }
 category-experimental =
-    .tooltiptext = Πειράματα του { -brand-short-name }
+    .tooltiptext = Πειράματα { -brand-short-name }
 pane-experimental-subtitle = Συνεχίστε με προσοχή
 pane-experimental-search-results-header = Πειράματα { -brand-short-name }: Συνεχίστε με προσοχή
 pane-experimental-description = Η αλλαγή παραμέτρων των σύνθετων προτιμήσεων μπορεί να επηρεάσει την απόδοση ή την ασφάλεια του { -brand-short-name }.
+pane-experimental-description2 = Η αλλαγή παραμέτρων των σύνθετων ρυθμίσεων μπορεί να επηρεάσει την απόδοση ή την ασφάλεια του { -brand-short-name }.
 pane-experimental-reset =
     .label = Επαναφορά προεπιλογών
     .accesskey = Ε
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] Λυπούμαστε! Δεν υπάρχουν αποτελέσματα για το “<span data-l10n-name="query"></span>” στις Επιλογές.
        *[other] Λυπούμαστε! Δεν υπάρχουν αποτελέσματα για το “<span data-l10n-name="query"></span>” στις Προτιμήσεις.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Λυπούμαστε! Δεν υπάρχουν αποτελέσματα για το “<span data-l10n-name="query"></span>” στις ρυθμίσεις.
 search-results-help-link = Χρειάζεστε βοήθεια; Επισκεφθείτε την <a data-l10n-name="url">Υποστήριξη { -brand-short-name }</a>
 
 ## General Section
@@ -186,7 +204,7 @@ containers-disable-alert-ok-button =
        *[other] Κλείσιμο { $tabCount } θεματικών καρτελών
     }
 containers-disable-alert-cancel-button = Να παραμείνουν ενεργές
-containers-remove-alert-title = Αφαίρεση θεματικής ενότητας;
+containers-remove-alert-title = Αφαίρεση θεματικής κατηγορίας;
 # Variables:
 #   $count (Number) - Number of tabs that will be closed.
 containers-remove-alert-msg =
@@ -194,8 +212,8 @@ containers-remove-alert-msg =
         [one] Αν αφαιρέσετε αυτή τη θεματική κατηγορία τώρα, θα κλείσει { $count } θεματική καρτέλα. Θέλετε σίγουρα να αφαιρέσετε αυτή τη θεματική κατηγορία;
        *[other] Αν αφαιρέσετε αυτή τη θεματική κατηγορία τώρα, θα κλείσουν { $count } θεματικές καρτέλες. Θέλετε σίγουρα να αφαιρέσετε αυτή τη θεματική κατηγορία;
     }
-containers-remove-ok-button = Αφαίρεση αυτής της θεματικής κατηγορίας
-containers-remove-cancel-button = Να μην αφαιρεθεί η θεματική κατηγορία
+containers-remove-ok-button = Αφαίρεση θεματικής κατηγορίας
+containers-remove-cancel-button = Διατήρηση θεματικής κατηγορίας
 
 ## General Section - Language & Appearance
 
@@ -369,6 +387,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Να μην γίνεται ποτέ έλεγχος για ενημερώσεις (δεν προτείνεται)
     .accesskey = Ν
+update-application-background-enabled =
+    .label = Όταν δεν εκτελείται το { -brand-short-name }
+    .accesskey = Ό
 update-application-warning-cross-user-setting = Αυτή η ρύθμιση θα εφαρμοστεί σε όλους τους λογαριασμούς των Windows και τα προφίλ του { -brand-short-name } που χρησιμοποιούν αυτή την εγκατάσταση του { -brand-short-name }.
 update-application-use-service =
     .label = Χρήση μιας υπηρεσίας παρασκηνίου για την εγκατάσταση ενημερώσεων
@@ -382,6 +403,15 @@ update-setting-write-failure-message =
     Το { -brand-short-name } αντιμετώπισε σφάλμα και δεν αποθήκευσε αυτή την αλλαγή. Σημειώστε ότι η ρύθμιση αυτής της προτίμησης ενημερώσεων απαιτεί δικαίωμα εγγραφής στο παρακάτω αρχείο. Εσείς ή κάποιος διαχειριστής συστήματος ενδέχεται να μπορέσει να επιλύσει το σφάλμα, χορηγώντας στην ομάδα Χρήστες τον πλήρη έλεγχο για αυτό το αρχείο.
     
     Αδυναμία εγγραφής στο αρχείο: { $path }
+update-setting-write-failure-title2 = Σφάλμα αποθήκευσης ρυθμίσεων ενημερώσεων
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    Το { -brand-short-name } αντιμετώπισε σφάλμα και δεν αποθήκευσε αυτή την αλλαγή. Σημειώστε ότι η αλλαγή αυτής της επιλογής ενημερώσεων απαιτεί δικαίωμα εγγραφής στο παρακάτω αρχείο. Εσείς ή κάποιος διαχειριστής συστήματος ενδέχεται να μπορέσει να επιλύσει το σφάλμα, χορηγώντας στην ομάδα "Χρήστες" τον πλήρη έλεγχο για αυτό το αρχείο.
+    
+    Δεν ήταν δυνατή η εγγραφή στο αρχείο: { $path }
 update-in-progress-title = Ενημέρωση σε εξέλιξη
 update-in-progress-message = Θέλετε το { -brand-short-name } να συνεχίσει με αυτή την ενημέρωση;
 update-in-progress-ok-button = &Απόρριψη
@@ -439,8 +469,8 @@ browsing-cfr-recommendations =
     .label = Πρόταση επεκτάσεων κατά την περιήγησή σας
     .accesskey = Π
 browsing-cfr-features =
-    .label = Πρόταση λειτουργιών όσο περιηγείστε
-    .accesskey = ρ
+    .label = Πρόταση λειτουργιών κατά την περιήγησή σας
+    .accesskey = λ
 browsing-cfr-recommendations-learn-more = Μάθετε περισσότερα
 
 ## General Section - Proxy
@@ -579,6 +609,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Εμφάνιση προτάσεων αναζήτησης σε ιδιωτικά παράθυρα
 suggestions-addressbar-settings-generic = Αλλαγή προτιμήσεων για άλλες προτάσεις στη γραμμή διευθύνσεων
+suggestions-addressbar-settings-generic2 = Αλλαγή ρυθμίσεων για άλλες προτάσεις της γραμμής διευθύνσεων
 search-suggestions-cant-show = Οι προτάσεις αναζήτησης δεν θα εμφανίζονται στη γραμμή διευθύνσεων, καθώς έχετε ρυθμίσει το { -brand-short-name } ώστε να μην διατηρεί ποτέ το ιστορικό.
 search-one-click-header = Μηχανές αναζήτησης με ένα κλικ
 search-one-click-header2 = Συντομεύσεις αναζήτησης
@@ -613,15 +644,19 @@ containers-back-button =
             [windows] Πίσω στις επιλογές
            *[other] Πίσω στις προτιμήσεις
         }
+containers-back-button2 =
+    .aria-label = Πίσω στις ρυθμίσεις
 containers-header = Θεματικές καρτέλες
 containers-add-button =
     .label = Προσθήκη νέας θεματικής ενότητας
     .accesskey = Π
 containers-new-tab-check =
-    .label = Επιλέξτε κατηγορία για κάθε νέα καρτέλα
+    .label = Επιλογή κατηγορίας για κάθε νέα καρτέλα
     .accesskey = Ε
 containers-preferences-button =
     .label = Προτιμήσεις
+containers-settings-button =
+    .label = Ρυθμίσεις
 containers-remove-button =
     .label = Αφαίρεση
 
@@ -632,6 +667,10 @@ sync-signedout-caption = Πάρτε μαζί σας το διαδίκτυο
 sync-signedout-description = Συγχρονίστε τους σελιδοδείκτες, το ιστορικό, τις καρτέλες, τους κωδικούς πρόσβασης, τα πρόσθετα, καθώς και τις προτιμήσεις σας σε όλες τις συσκευές σας.
 sync-signedout-account-signin2 =
     .label = Σύνδεση στο { -sync-brand-short-name }…
+    .accesskey = ν
+sync-signedout-description2 = Συγχρονίστε τους σελιδοδείκτες, το ιστορικό, τις καρτέλες, τους κωδικούς πρόσβασης, τα πρόσθετα και τις ρυθμίσεις σας σε όλες τις συσκευές σας.
+sync-signedout-account-signin3 =
+    .label = Σύνδεση για συγχρονισμό…
     .accesskey = ν
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -672,6 +711,10 @@ prefs-sync-setup =
     .label = Ρύθμιση { -sync-brand-short-name }…
     .accesskey = Ρ
 prefs-sync-offer-setup-label = Συγχρονίστε τους σελιδοδείκτες, το ιστορικό, τις καρτέλες, τους κωδικούς πρόσβασης, τα πρόσθετα και τις προτιμήσεις σας με όλες τις συσκευές σας.
+prefs-sync-turn-on-syncing =
+    .label = Ενεργοποίηση συγχρονισμού…
+    .accesskey = ρ
+prefs-sync-offer-setup-label2 = Συγχρονίστε τους σελιδοδείκτες, το ιστορικό, τις καρτέλες, τους κωδικούς πρόσβασης, τα πρόσθετα και τις ρυθμίσεις σας σε όλες τις συσκευές σας.
 prefs-sync-now =
     .labelnotsyncing = Συγχρονισμός τώρα
     .accesskeynotsyncing = τ
@@ -692,6 +735,7 @@ sync-currently-syncing-prefs =
         [windows] Επιλογές
        *[other] Προτιμήσεις
     }
+sync-currently-syncing-settings = Ρυθμίσεις
 sync-change-options =
     .label = Αλλαγή…
     .accesskey = Α
@@ -739,6 +783,10 @@ sync-engine-prefs =
         }
     .tooltiptext = Γενικές ρυθμίσεις, ρυθμίσεις απορρήτου και ασφάλειας που έχετε αλλάξει
     .accesskey = ς
+sync-engine-settings =
+    .label = Ρυθμίσεις
+    .tooltiptext = Ρυθμίσεις που έχετε αλλάξει στις ενότητες "Γενικά" και "Απόρρητο & ασφάλεια"
+    .accesskey = θ
 
 ## The device name controls.
 
@@ -765,8 +813,8 @@ pane-privacy-logins-and-passwords-header = Συνδέσεις & κωδικοί �
     .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
-    .label = Ερώτηση για αποθήκευση συνδέσεων και κωδικών πρόσβασης για ιστοσελίδες
-    .accesskey = β
+    .label = Ερώτηση για αποθήκευση συνδέσεων και κωδικών πρόσβασης
+    .accesskey = ρ
 forms-exceptions =
     .label = Εξαιρέσεις…
     .accesskey = ξ
@@ -903,9 +951,9 @@ sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
 sitedata-option-block-unvisited =
     .label = Cookies από ιστοσελίδες που δεν έχετε επισκεφθεί
 sitedata-option-block-all-third-party =
-    .label = Όλα τα cookies τρίτων (ενδέχεται να προκαλέσει δυσλειτουργία σε ιστοσελίδες)
+    .label = Όλα τα cookies τρίτων (πιθανή δυσλειτουργία ιστοσελίδων)
 sitedata-option-block-all =
-    .label = Όλα τα cookies (θα προκαλέσει δυσλειτουργία σε ιστοσελίδες)
+    .label = Όλα τα cookies (προκαλεί δυσλειτουργία ιστοσελίδων)
 sitedata-clear =
     .label = Απαλοιφή δεδομένων…
     .accesskey = ι
@@ -947,7 +995,7 @@ addressbar-suggestions-settings = Αλλαγή προτιμήσεων για τ�
 ## Privacy Section - Content Blocking
 
 content-blocking-enhanced-tracking-protection = Ενισχυμένη προστασία από καταγραφή
-content-blocking-section-top-level-description = Οι ιχνηλάτες σάς ακολουθούν στο διαδίκτυο για να συλλέξουν πληροφορίες σχετικά με τις συνήθειες και τα ενδιαφέροντά σας. Το { -brand-short-name } αποκλείει πολλούς από αυτούς τους ιχνηλάτες και άλλα κακόβουλα σενάρια.
+content-blocking-section-top-level-description = Οι ιχνηλάτες σάς ακολουθούν στο διαδίκτυο για να συλλέξουν δεδομένα σχετικά με τις συνήθειες και τα ενδιαφέροντά σας. Το { -brand-short-name } αποκλείει πολλούς από αυτούς τους ιχνηλάτες και άλλα κακόβουλα σενάρια.
 content-blocking-learn-more = Μάθετε περισσότερα
 content-blocking-fpi-incompatibility-warning = Χρησιμοποιείτε τη λειτουργία First Party Isolation (FPI), που παρακάμπτει ορισμένες ρυθμίσεις του { -brand-short-name } σχετικά με τα cookies.
 
@@ -983,7 +1031,7 @@ content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Προσοχή!
 content-blocking-and-isolating-etp-warning-description = Η φραγή ιχνηλατών και η απομόνωση cookies μπορούν να επηρεάσουν τη λειτουργικότητα ορισμένων ιστοσελίδων. Φορτώστε εκ νέου μια σελίδα με ιχνηλάτες για να φορτώσετε όλο το περιεχόμενο.
-content-blocking-and-isolating-etp-warning-description-2 = Αυτή η ρύθμιση ενδέχεται να εμποδίσει την εμφάνιση περιεχομένου ή τη σωστή λειτουργία σε ορισμένες ιστοσελίδες. Αν μια ιστοσελίδα δεν λειτουργεί σωστά, μπορείτε να απενεργοποιήσετε την προστασία από καταγραφή για να γίνει φόρτωση όλου του περιεχομένου σε αυτή την ιστοσελίδα.
+content-blocking-and-isolating-etp-warning-description-2 = Αυτή η ρύθμιση ενδέχεται να εμποδίσει την εμφάνιση περιεχομένου ή τη σωστή λειτουργία ορισμένων ιστοσελίδων. Αν κάποια ιστοσελίδα δεν λειτουργεί σωστά, μπορείτε να κλείσετε την προστασία από καταγραφή για να γίνει φόρτωση όλου του περιεχομένου.
 content-blocking-warning-learn-how = Μάθετε πώς
 content-blocking-reload-description = Θα πρέπει να φορτώσετε ξανά τις καρτέλες σας για εφαρμογή των αλλαγών αυτών.
 content-blocking-reload-tabs-button =
@@ -1153,6 +1201,11 @@ space-alert-under-5gb-ok-button =
     .label = OK, το 'πιασα
     .accesskey = K
 space-alert-under-5gb-message = Το { -brand-short-name } δεν έχει επαρκή χώρο δίσκου. Το περιεχόμενο των ιστοσελίδων ενδέχεται να μην εμφανίζεται σωστά. Επισκεφθείτε το “Μάθετε περισσότερα” για να βελτιστοποιήσετε τη χρήση δίσκου σας για καλύτερη εμπειρία περιήγησης.
+space-alert-over-5gb-settings-button =
+    .label = Άνοιγμα ρυθμίσεων
+    .accesskey = Ά
+space-alert-over-5gb-message2 = <strong>Το { -brand-short-name } δεν διαθέτει επαρκή χώρο στον δίσκο.</strong> Το περιεχόμενο των ιστοσελίδων ενδέχεται να μην εμφανίζεται κανονικά. Μπορείτε να εκκαθαρίσετε τα αποθηκευμένα δεδομένα στις Ρυθμίσεις > Απόρρητο & ασφάλεια > Cookies και δεδομένα ιστοσελίδων.
+space-alert-under-5gb-message2 = <strong>Το { -brand-short-name } δεν διαθέτει επαρκή χώρο στον δίσκο.</strong> Το περιεχόμενο των ιστοσελίδων ενδέχεται να μην εμφανίζεται σωστά. Επισκεφθείτε το “Μάθετε περισσότερα” για να βελτιστοποιήσετε τη χρήση δίσκου σας για καλύτερη εμπειρία περιήγησης.
 
 ## Privacy Section - HTTPS-Only
 

@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = Einstellungen
 menu-application-services =
     .label = Dienste
 menu-application-hide-this =
@@ -109,7 +111,10 @@ menu-edit =
     .label = Bearbeiten
     .accesskey = B
 menu-edit-find-on =
-    .label = Seite durchsuchen
+    .label = Seite durchsuchen…
+    .accesskey = S
+menu-edit-find-in-page =
+    .label = Seite durchsuchen…
     .accesskey = S
 menu-edit-find-again =
     .label = Weitersuchen
@@ -129,6 +134,9 @@ menu-view-toolbars-menu =
 menu-view-customize-toolbar =
     .label = Anpassen…
     .accesskey = A
+menu-view-customize-toolbar2 =
+    .label = Symbolleiste anpassen…
+    .accesskey = a
 menu-view-sidebar =
     .label = Sidebar
     .accesskey = b
@@ -219,6 +227,8 @@ menu-bookmarks-show-all =
     .label = Lesezeichen verwalten
 menu-bookmark-this-page =
     .label = Lesezeichen hinzufügen
+menu-bookmark-current-tab =
+    .label = Aktuellen Tab als Lesezeichen hinzufügen
 menu-bookmark-edit =
     .label = Lesezeichen bearbeiten
 menu-bookmarks-all-tabs =
@@ -244,11 +254,17 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Bei { -brand-product-name } anmelden…
     .accesskey = B
-menu-tools-extensions =
-    .label = Erweiterungen und Themes
-    .accesskey = E
+menu-tools-addons-and-themes =
+    .label = Add-ons und Themes
+    .accesskey = A
+menu-tools-fxa-sign-in2 =
+    .label = Anmelden
+    .accesskey = m
 menu-tools-turn-on-sync =
     .label = { -sync-brand-short-name } aktivieren…
+    .accesskey = n
+menu-tools-turn-on-sync2 =
+    .label = Synchronisation aktivieren…
     .accesskey = n
 menu-tools-sync-now =
     .label = Jetzt synchronisieren
@@ -259,12 +275,25 @@ menu-tools-fxa-re-auth =
 menu-tools-web-developer =
     .label = Web-Entwickler
     .accesskey = W
+menu-tools-browser-tools =
+    .label = Browser-Werkzeuge
+    .accesskey = B
+menu-tools-task-manager =
+    .label = Task-Manager
+    .accesskey = M
 menu-tools-page-source =
     .label = Seitenquelltext anzeigen
     .accesskey = q
 menu-tools-page-info =
     .label = Seiteninformationen
     .accesskey = S
+menu-settings =
+    .label = Einstellungen
+    .accesskey =
+        { PLATFORM() ->
+            [windows] E
+           *[other] E
+        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -293,15 +322,6 @@ menu-window-bring-all-to-front =
 # NOTE: For Engineers, any additions or changes to Help menu strings should
 # also be reflected in the related strings in appmenu.ftl. Those strings, by
 # convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
 # Example: appmenu-get-help
 #
 # These strings are duplicated to allow for different casing depending on
@@ -323,16 +343,16 @@ menu-help-keyboard-shortcuts =
     .label = Tastenkombinationen
     .accesskey = T
 menu-get-help =
-    .label = Unterstützung erhalten
-    .accesskey = U
+    .label = Hilfe erhalten
+    .accesskey = H
 menu-help-troubleshooting-info =
     .label = Informationen zur Fehlerbehebung
     .accesskey = z
+menu-help-taskmanager =
+    .label = Task-Manager
 menu-help-more-troubleshooting-info =
     .label = Weitere Informationen zur Fehlerbehebung
     .accesskey = z
-menu-help-taskmanager =
-    .label = Task-Manager
 menu-help-report-site-issue =
     .label = Seitenproblem melden…
 menu-help-feedback-page =
@@ -344,8 +364,8 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Mit aktivierten Add-ons neu starten
     .accesskey = A
-menu-help-enter-troubleshoot-mode =
-    .label = Fehlerbehebungsmodus
+menu-help-enter-troubleshoot-mode2 =
+    .label = Fehlerbehebungsmodus…
     .accesskey = m
 menu-help-exit-troubleshoot-mode =
     .label = Fehlerbehebungsmodus deaktivieren
@@ -358,6 +378,3 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Dies ist keine betrügerische Website…
     .accesskey = g
-menu-help-check-for-update =
-    .label = Nach Updates suchen…
-    .accesskey = U

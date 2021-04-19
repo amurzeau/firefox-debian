@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = { -brand-shorter-name }-frissítés letöltése
+appmenuitem-update-banner2 =
+    .label-update-downloading = { -brand-shorter-name }-frissítés letöltése
+    .label-update-available = Frissítés érhető el – letöltés most
+    .label-update-manual = Frissítés érhető el – letöltés most
+    .label-update-unsupported = Nem frissíthető
+    .label-update-restart = Frissítés érhető el – újraindítás most
 appmenuitem-protection-dashboard-title = Védelmi vezérlőpult
 appmenuitem-customize-mode =
     .label = Testreszabás…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = Jelszavak
 appmenuitem-extensions-and-themes =
     .label = Kiegészítők és témák
+appmenuitem-addons-and-themes =
+    .label = Kiegészítők és témák
 appmenuitem-find-in-page =
     .label = Keresés az oldalon…
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Alkalmazásmenü bezárása
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Kilépés
+           *[other] Kilépés
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Alkalmazásmenü megnyitása
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Alkalmazásmenü bezárása
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Szinkronizálás
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Szinkronizálás
-    .value = Szinkronizálás
+appmenu-remote-tabs-sign-into-sync =
+    .label = Jelentkezzen be a Syncbe…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Szinkronizálás bekapcsolása…
+appmenuitem-fxa-toolbar-sync-now2 = Szinkronizálás most
 appmenuitem-fxa-manage-account = Fiók kezelése
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = Utoljára szinkronizálva: { $time }
     .label = Utoljára szinkronizálva: { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Adatok szinkronizálása és mentése
+appmenu-fxa-sync-and-save-data2 = Adatok szinkronizálása és mentése
 appmenu-fxa-signed-in-label = Bejelentkezés
 appmenu-fxa-setup-sync =
     .label = Szinkronizálás bekapcsolása…
@@ -135,29 +159,17 @@ appmenu-help-header =
 appmenu-about =
     .label = A { -brand-shorter-name } névjegye
     .accesskey = A
-appmenu-help-product =
-    .label = { -brand-shorter-name } súgó
-    .accesskey = s
-appmenu-help-show-tour =
-    .label = { -brand-shorter-name } bemutató
-    .accesskey = u
-appmenu-help-import-from-another-browser =
-    .label = Importálás egy másik böngészőből…
-    .accesskey = I
-appmenu-help-keyboard-shortcuts =
-    .label = Gyorsbillentyűk
-    .accesskey = G
 appmenu-get-help =
     .label = Segítség kérése
     .accesskey = S
 appmenu-help-troubleshooting-info =
     .label = Hibakeresési információ
     .accesskey = H
+appmenu-help-taskmanager =
+    .label = Feladatkezelő
 appmenu-help-more-troubleshooting-info =
     .label = Több hibakeresési információ
     .accesskey = T
-appmenu-help-taskmanager =
-    .label = Feladatkezelő
 appmenu-help-report-site-issue =
     .label = Hibás webhely bejelentése…
 appmenu-help-feedback-page =
@@ -177,9 +189,9 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Hibakeresési mód
-    .accesskey = H
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Hibaelhárítási mód…
+    .accesskey = m
 appmenu-help-exit-troubleshoot-mode =
     .label = Hibakeresési mód kikapcsolása
     .accesskey = m
@@ -194,13 +206,10 @@ appmenu-help-not-deceptive =
     .label = Ez nem félrevezető oldal…
     .accesskey = n
 
-##
-
-appmenu-help-check-for-update =
-    .label = Frissítések keresése…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Eszköztár testreszabása…
+appmenu-taskmanager =
+    .label = Feladatkezelő
 appmenu-developer-tools-subheader = Böngészőeszközök

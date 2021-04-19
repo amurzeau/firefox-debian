@@ -18,6 +18,7 @@ login-filter =
 create-login-button = Sukurti naują prisijungimą
 fxaccounts-sign-in-text = Turėkite savo slaptažodžius ir kituose įrenginiuose
 fxaccounts-sign-in-button = Prisijungti prie „{ -sync-brand-short-name }“
+fxaccounts-sign-in-sync-button = Prisijungti sinchronizavimui
 fxaccounts-avatar-button =
     .title = Tvarkyti paskyrą
 
@@ -71,11 +72,15 @@ about-logins-list-item-vulnerable-password-icon =
 
 login-intro-heading = Ieškote įrašytų prisijungimų? Naudokite „{ -sync-brand-short-name }“.
 about-logins-login-intro-heading-logged-out = Ieškote savo įrašytų prisijungimų? Naudokite „{ -sync-brand-short-name }“, arba importuokite juos.
+about-logins-login-intro-heading-logged-out2 = Ieškote įrašytų prisijungimų? Įjunkite sinchronizavimą arba importuokite juos.
 about-logins-login-intro-heading-logged-in = Nerasta sinchronizuotų prisijungimų.
 login-intro-description = Jeigu esate įrašę prisijungimus į „{ -brand-product-name }“ kitame įrenginyje, juos galite turėti čia:
 login-intro-instruction-fxa = Susikurkite arba prisijunkite prie savo „{ -fxaccount-brand-name }“ paskyros tame įrenginyje, kur yra prisijungimai.
 login-intro-instruction-fxa-settings = Įsitikinkite, kad „{ -sync-brand-short-name }“ nuostatose pažymėjote langelį „Prisijungimai“.
 about-logins-intro-instruction-help = Aplankę <a data-l10n-name="help-link">„{ -lockwise-brand-short-name }“ žinyną</a>, rasite daugiau informacijos
+login-intro-instructions-fxa = Susikurkite arba prisijunkite prie savo „{ -fxaccount-brand-name }“ paskyros tame įrenginyje, kur yra prisijungimai.
+login-intro-instructions-fxa-settings = Eikite į „Nuostatos“ > „Sinchronizavimas“ > „Įjungti sinchronizavimą…“ Pažymėkite „Prisijungimai ir slaptažodžiai“ pasirinkimą.
+login-intro-instructions-fxa-help = Aplankę <a data-l10n-name="help-link">„{ -lockwise-brand-short-name }“ žinyną</a>, rasite daugiau informacijos.
 about-logins-intro-import = Jeigu turite kitoje naršyklėje įrašytų prisijungimų, galite <a data-l10n-name="import-link">juos importuoti į „{ -lockwise-brand-short-name }“</a>
 about-logins-intro-import2 = Jei jūsų prisijungimai yra įrašyti kitur nei „{ -brand-product-name }“, galite <a data-l10n-name="import-browser-link">juos importuoti iš kitos naršyklės</a> arba <a data-l10n-name="import-file-link">iš failo</a>
 
@@ -206,10 +211,10 @@ about-logins-confirm-remove-all-sync-dialog-title =
     }
 about-logins-confirm-remove-all-sync-dialog-message =
     { $count ->
-        [1] Bus pašalintas į „{ -brand-short-name }“ įrašytas prisijungimas, iš visų su „{ -fxaccount-brand-name }“ susietų įrenginių. Tuo pačiu bus pašalinti čia matomi nutekėjimų pranešimai. Šis veiksmas galutinis.
-        [one] Bus pašalintas į „{ -brand-short-name }“ įrašytas prisijungimas, iš visų su „{ -fxaccount-brand-name }“ susietų įrenginių. Tuo pačiu bus pašalinti čia matomi nutekėjimų pranešimai. Šis veiksmas galutinis.
-        [few] Bus pašalinti į „{ -brand-short-name }“ įrašyti prisijungimai, iš visų su „{ -fxaccount-brand-name }“ susietų įrenginių. Tuo pačiu bus pašalinti čia matomi nutekėjimų pranešimai. Šis veiksmas galutinis.
-       *[other] Bus pašalinti į „{ -brand-short-name }“ įrašyti prisijungimai, iš visų su „{ -fxaccount-brand-name }“ susietų įrenginių. Tuo pačiu bus pašalinti čia matomi nutekėjimų pranešimai. Šis veiksmas galutinis.
+        [1] Bus pašalintas į „{ -brand-short-name }“ įrašytas prisijungimas, iš visų su „{ -fxaccount-brand-name }“ paskyra susietų įrenginių. Tuo pačiu bus pašalinti čia matomi nutekėjimų pranešimai. Šis veiksmas galutinis.
+        [one] Bus pašalintas į „{ -brand-short-name }“ įrašytas prisijungimas, iš visų su „{ -fxaccount-brand-name }“ paskyra susietų įrenginių. Tuo pačiu bus pašalinti čia matomi nutekėjimų pranešimai. Šis veiksmas galutinis.
+        [few] Bus pašalinti į „{ -brand-short-name }“ įrašyti prisijungimai, iš visų su „{ -fxaccount-brand-name }“ paskyra susietų įrenginių. Tuo pačiu bus pašalinti čia matomi nutekėjimų pranešimai. Šis veiksmas galutinis.
+       *[other] Bus pašalinti į „{ -brand-short-name }“ įrašyti prisijungimai, iš visų su „{ -fxaccount-brand-name }“ paskyra susietų įrenginių. Tuo pačiu bus pašalinti čia matomi nutekėjimų pranešimai. Šis veiksmas galutinis.
     }
 about-logins-confirm-export-dialog-title = Eksportuoti prisijungimus ir slaptažodžius
 about-logins-confirm-export-dialog-message = Jūsų slaptažodžiai bus įrašyti kaip perskaitomas tekstas (pvz., BlogasSl@ptaz0dis), tad bet kas galintis atverti eksportuotą failą galės juos peržiūrėti.
@@ -327,6 +332,7 @@ about-logins-import-dialog-error-unable-to-read-description = Įsitikinkite, kad
 about-logins-import-dialog-error-no-logins-imported = Neimportuoti jokie prisijungimai
 about-logins-import-dialog-error-learn-more = Sužinoti daugiau
 about-logins-import-dialog-error-try-again = Bandyti dar kartą…
+about-logins-import-dialog-error-try-import-again = Bandyti importuoti iš naujo…
 about-logins-import-dialog-error-cancel = Atsisakyti
 about-logins-import-report-title = Importo suvestinė
 about-logins-import-report-description = Į „{ -brand-short-name }“ importuoti prisijungimai ir slaptažodžiai.

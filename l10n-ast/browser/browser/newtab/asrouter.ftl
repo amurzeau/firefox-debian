@@ -18,9 +18,11 @@ cfr-doorhanger-extension-ok-button = Amestar agora
     .accesskey = A
 cfr-doorhanger-pintab-ok-button = Fixar esta llingüeta
     .accesskey = F
+cfr-doorhanger-extension-manage-settings-button = Xestionar los axustes de «Recomendación»
+    .accesskey = X
 cfr-doorhanger-extension-never-show-recommendation = Nun amosar esta recomendación
     .accesskey = N
-cfr-doorhanger-extension-learn-more-link = Deprender más
+cfr-doorhanger-extension-learn-more-link = Lleer más
 # This string is used on a new line below the add-on name
 # Variables:
 #   $name (String) - Add-on author name
@@ -79,7 +81,7 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
 
 cfr-protections-panel-header = Restola ensin que te sigan
 cfr-protections-panel-body = Curia los tos datos. { -brand-short-name } protéxete de la mayoría de rastrexadores comunes que siguen lo que faes en llinia.
-cfr-protections-panel-link-text = Deprender más
+cfr-protections-panel-link-text = Lleer más
 
 ## What's New toolbar button and panel
 
@@ -104,12 +106,12 @@ cfr-whatsnew-searchbar-icon-alt-text = Iconu de lente d'aumentu
 
 ## Picture-in-Picture
 
-cfr-whatsnew-pip-cta = Deprender más
+cfr-whatsnew-pip-cta = Lleer más
 
 ## Permission Prompt
 
 cfr-whatsnew-permission-prompt-body = Agora { -brand-shorter-name } bloquia que los sitios te pidan automáticamente unviate mensaxes emerxentes.
-cfr-whatsnew-permission-prompt-cta = Deprender más
+cfr-whatsnew-permission-prompt-cta = Lleer más
 
 ## Fingerprinter Counter
 
@@ -126,7 +128,7 @@ cfr-doorhanger-sync-bookmarks-ok-button = Activar { -sync-brand-short-name }
 ## Login Sync
 
 cfr-doorhanger-sync-logins-header = Nun vuelvas escaecer nin una contraseña
-cfr-doorhanger-sync-logins-body = Atroxa y sincroniza de forma segura les contraseñes en tolos preseos de to.
+cfr-doorhanger-sync-logins-body = Atroxa y sincroniza de mou seguru les contraseñes en tolos preseos de to.
 cfr-doorhanger-sync-logins-ok-button = Activar { -sync-brand-short-name }
     .accesskey = A
 
@@ -140,7 +142,7 @@ cfr-doorhanger-send-tab-ok-button = Probar «Unviar la llingüeta»
 
 ## Firefox Send
 
-cfr-doorhanger-firefox-send-header = Comparti esti PDF de forma segura
+cfr-doorhanger-firefox-send-header = Comparti esti PDF de mou seguru
 cfr-doorhanger-firefox-send-body = Caltén los tos documentos confidenciales lloñe de miraes indiscretes col cifráu de puntu a puntu y un enllaz que desapaez cuando acabes.
 cfr-doorhanger-firefox-send-ok-button = Probar { -send-brand-name }
     .accesskey = P
@@ -158,18 +160,21 @@ cfr-doorhanger-socialtracking-description = La privacidá ye importante. Agora {
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } bloquió un xenerador de buelgues nesta páxina
 cfr-doorhanger-fingerprinters-description = La privacidá ye importante. Agora { -brand-short-name } bloquia xeneradores de buelgues que recueyen cachos d'información única ya identificadora tocante al preséu pa rastrexate.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } bloquió un criptomineru nesta páxina
-cfr-doorhanger-cryptominers-description = La privacidá ye importante. Agora { -brand-short-name } bloquia criptomineros qu'usen la potencia de cálculu del ordenador pa minar moneda dixital.
+cfr-doorhanger-cryptominers-description = La privacidá ye importante. Agora { -brand-short-name } bloquia criptomineros qu'usen la potencia de cálculu del sistema pa minar moneda dixital.
 
 ## Enhanced Tracking Protection Milestones
 
 # Variables:
 #   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
-#   $date (Number) - The date we began recording the count of blocked trackers
+#   $date (String) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading =
     { $blockedCount ->
         [one] ¡{ -brand-short-name } bloquió alredor de <b>{ $blockedCount }</b> rastrexador dende'l { $date }!
        *[other] ¡{ -brand-short-name } bloquió alredor de <b>{ $blockedCount }</b> rastrexadores dende'l { $date }!
     }
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (Datetime) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading2 =
     { $blockedCount ->
         [one] ¡{ -brand-short-name } bloquió alredor de <b>{ $blockedCount }</b> rastrexador dende'l { DATETIME($date, month: "long", year: "numeric") }!
@@ -177,8 +182,6 @@ cfr-doorhanger-milestone-heading2 =
     }
 cfr-doorhanger-milestone-ok-button = Ver too
     .accesskey = V
-cfr-doorhanger-milestone-close-button = Zarrar
-    .accesskey = Z
 
 ## What’s New Panel Content for Firefox 76
 
@@ -197,6 +200,12 @@ cfr-whatsnew-pip-fullscreen-icon-alt = Iconu d'imaxe sobre imaxe
 
 ## Protections Dashboard message
 
+cfr-doorhanger-milestone-close-button = Zarrar
+    .accesskey = Z
+
+## What’s New Panel Content for Firefox 76
+## Protections Dashboard message
+
 cfr-whatsnew-protections-icon-alt = Iconu d'escudu
 
 ## Better PDF message
@@ -207,8 +216,10 @@ cfr-whatsnew-better-pdf-body = Agora los documentos PDF ábrense direutamente en
 
 cfr-doorhanger-doh-body = La privacidá ye importante. Agora { -brand-short-name } empobina de mou seguru les tos solicitúes DNS, siempres que seya posible, a un serviciu asociáu pa protexete mentanto restoles.
 cfr-doorhanger-doh-header = Busques DNS más segures y cifraes
-cfr-doorhanger-doh-primary-button = Val, entendílo
-    .accesskey = V
+cfr-doorhanger-doh-primary-button = D'acuerdu, entendílo
+    .accesskey = D
+cfr-doorhanger-doh-primary-button-2 = D'acuerdu
+    .accesskey = D
 cfr-doorhanger-doh-secondary-button = Desactivar
     .accesskey = D
 
@@ -216,10 +227,10 @@ cfr-doorhanger-doh-secondary-button = Desactivar
 
 cfr-doorhanger-fission-body-approved = La privacidá ye importante. Agora { -brand-short-name } aislla los sitios web los unos d'otros, lo que fai difícil a crackers el robu de contraseñes, númberos de tarxetes de creitu y otra información sensible.
 cfr-doorhanger-fission-header = Aisllamientu de sitios
-cfr-doorhanger-fission-primary-button = Val, entendílo
-    .accesskey = V
-cfr-doorhanger-fission-secondary-button = Deprender más
+cfr-doorhanger-fission-primary-button = D'acuerdu, entendílo
     .accesskey = D
+cfr-doorhanger-fission-secondary-button = Lleer más
+    .accesskey = L
 
 ## What's new: Cookies message
 

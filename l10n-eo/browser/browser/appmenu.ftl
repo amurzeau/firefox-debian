@@ -7,6 +7,12 @@
 
 appmenuitem-update-banner =
     .label-update-downloading = Ĝisdatigo de { -brand-shorter-name } elŝutata
+appmenuitem-update-banner2 =
+    .label-update-downloading = Ĝisdatigo de { -brand-shorter-name } elŝutata
+    .label-update-available = Ĝisdatigo disponebla — elŝuti nun
+    .label-update-manual = Ĝisdatigo disponebla — elŝuti nun
+    .label-update-unsupported = Ne eblas elŝuti la ĝisdatigon
+    .label-update-restart = Ĝisdatigo disponebla — restartigi nun
 appmenuitem-protection-dashboard-title = Panelo de protektoj
 appmenuitem-customize-mode =
     .label = Personecigi…
@@ -21,6 +27,8 @@ appmenuitem-passwords =
     .label = Pasvortoj
 appmenuitem-extensions-and-themes =
     .label = Etendaĵoj kaj etosoj
+appmenuitem-addons-and-themes =
+    .label = Aldonaĵoj kaj etosoj
 appmenuitem-find-in-page =
     .label = Serĉi en la paĝo…
 appmenuitem-more-tools =
@@ -33,6 +41,18 @@ appmenu-menu-button-closed =
 appmenu-menu-button-opened =
     .tooltiptext = Fermi menuon de programo
     .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Fini
+           *[other] Fini
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Malfermi menuon de programo
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Fermi menuon de programo
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -51,12 +71,15 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Speguli nun
-appmenuitem-fxa-toolbar-sync-now =
-    .label = Speguli nun
-    .value = Speguli nun
+appmenu-remote-tabs-sign-into-sync =
+    .label = Komenci seancon en Spegulado…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Ŝalti Speguladon…
+appmenuitem-fxa-toolbar-sync-now2 = Speguli nun
 appmenuitem-fxa-manage-account = Administri konton
 appmenu-fxa-header =
     .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -64,6 +87,7 @@ appmenu-fxa-last-sync = Laste spegulita: { $time }
     .label = Laste spegulita: { $time }
 appmenu-fxa-sync-and-save-data =
     .value = Speguli kaj konservi datumojn
+appmenu-fxa-sync-and-save-data2 = Speguli kaj konservi datumojn
 appmenu-fxa-signed-in-label = Komenci seancon
 appmenu-fxa-setup-sync =
     .label = Ŝalti speguladon…
@@ -133,29 +157,17 @@ appmenu-help-header =
 appmenu-about =
     .label = Pri { -brand-shorter-name }
     .accesskey = P
-appmenu-help-product =
-    .label = Helpo por { -brand-shorter-name }
-    .accesskey = H
-appmenu-help-show-tour =
-    .label = Prezento de { -brand-shorter-name }
-    .accesskey = r
-appmenu-help-import-from-another-browser =
-    .label = Enporti el alia retumilo…
-    .accesskey = E
-appmenu-help-keyboard-shortcuts =
-    .label = Alirklavoj
-    .accesskey = A
 appmenu-get-help =
     .label = Helpo
     .accesskey = H
 appmenu-help-troubleshooting-info =
     .label = Informoj por solvado de problemoj
     .accesskey = I
+appmenu-help-taskmanager =
+    .label = Administrilo de taskoj
 appmenu-help-more-troubleshooting-info =
     .label = Pli da problemsolva informo
     .accesskey = p
-appmenu-help-taskmanager =
-    .label = Administrilo de taskoj
 appmenu-help-report-site-issue =
     .label = Raporti problemon kun retejo…
 appmenu-help-feedback-page =
@@ -175,9 +187,9 @@ appmenu-help-safe-mode-with-addons =
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
-appmenu-help-enter-troubleshoot-mode =
-    .label = Problemsolva reĝimo
-    .accesskey = r
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Problemsolva reĝimo…
+    .accesskey = P
 appmenu-help-exit-troubleshoot-mode =
     .label = Malŝalti problemsolvan reĝimon
     .accesskey = M
@@ -192,13 +204,10 @@ appmenu-help-not-deceptive =
     .label = Tiu ĉi ne estas trompa retejo…
     .accesskey = t
 
-##
-
-appmenu-help-check-for-update =
-    .label = Kontroli ĉu estas ĝisdatigoj…
-
 ## More Tools
 
 appmenu-customizetoolbar =
     .label = Personecigi ilaron…
+appmenu-taskmanager =
+    .label = Administrilo de taskoj
 appmenu-developer-tools-subheader = Iloj de retumilo

@@ -268,11 +268,29 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Cytańske znamje pśidaś
+bookmarks-edit-bookmark = Cytańske znamje wobźěłaś
+bookmark-panel-cancel =
+    .label = Pśetergnuś
+    .accesskey = P
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Cytańske znamje wótpóraś
+            [two] { $count } cytańskej znamjeni wótpóraś
+            [few] { $count } cytańske znamjenja wótpóraś
+           *[other] { $count } cytańskich znamjenjow wótpóraś
+        }
+    .accesskey = C
 bookmark-panel-show-editor-checkbox =
     .label = Editor pśi składowanju pokazaś
     .accesskey = E
 bookmark-panel-done-button =
     .label = Dokóńcony
+bookmark-panel-save-button =
+    .label = Składowaś
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -292,6 +310,8 @@ identity-passive-loaded = Źěle toś togo boka njejsu wěste (na pśikład wobr
 identity-active-loaded = Sćo šćit na toś tom boku znjemóžnił.
 identity-weak-encryption = Toś ten bok wužywa słabe koděrowanje.
 identity-insecure-login-forms = Pśizjawjenja, kótarež zapódawaju se na toś tom boku, by mógli wobgrozone byś.
+identity-permissions =
+    .value = Pšawa
 identity-https-only-connection-upgraded = (na HTTPS zaktualizěrowany)
 identity-https-only-label = Modus jano-HTTPS
 identity-https-only-dropdown-on =
@@ -303,8 +323,6 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Zmóžniśo modus Jano-HTTPS, jolic cośo, až { -brand-short-name } zwisk aktualizěrujo, jolic móžno.
 identity-https-only-info-turn-off2 = Jolic se zda, až bok jo wobškóźony, cośo snaź  modus Jano-HTTPS za toś to sedło znjemóžniś. aby zasej njewěsty HTTP wužywał.
 identity-https-only-info-no-upgrade = Zwisk njedajo se z HTTP aktualizěrowaś.
-identity-permissions =
-    .value = Pšawa
 identity-permissions-storage-access-header = Cookieje někotarych sedłow
 identity-permissions-storage-access-hint = Toś te wobźělone mógu cookieje a sedłowe daty někotarych sedłow wužywaś, mjaztym až sćo na toś tom sedle.
 identity-permissions-reload-hint = Musyśo snaź bok znowego zacytaś, aby se změny wustatkowali.
@@ -352,8 +370,6 @@ browser-window-close-button =
 
 ## Tab actions
 
-browser-tab-audio-playing = Wótgrawanje
-browser-tab-audio-muted = Zuk wušaltowany
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = GRAJO SE
 # This label should be written in all capital letters if your locale supports them.
@@ -362,6 +378,35 @@ browser-tab-audio-muted2 = NIMY
 browser-tab-audio-blocked = AWTOMATISKE WÓTGRAŚE ZABLOKĚROWANE
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = WOBRAZ-WE-WOBRAZU
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] ZUK REJTARIKA WUŠALTOWAŚ
+        [one] ZUK { $count } REJTARIKA WUŠALTOWAŚ
+        [two] ZUK { $count } REJTARIKOWU WUŠALTOWAŚ
+        [few] ZUK { $count } REJTARIKOW WUŠALTOWAŚ
+       *[other] ZUK { $count } REJTARIKOW WUŠALTOWAŚ
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] ZUK REJTARIKOW ZAŠALTOWAŚ
+        [one] ZUK { $count } REJTARIKA ZAŠALTOWAŚ
+        [two] ZUK { $count } REJTARIKOWU ZAŠALTOWAŚ
+        [few] ZUK { $count } REJTARIKOW ZAŠALTOWAŚ
+       *[other] ZUK { $count } REJTARIKOW ZAŠALTOWAŚ
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] REJTARIK WÓTGRAŚ
+        [one] { $count } REJTARIK WÓTGRAŚ
+        [two] { $count } REJTARIKA WÓTGRAŚ
+        [few] { $count } REJTARIKI WÓTGRAŚ
+       *[other] { $count } REJTARIKOW WÓTGRAŚ
+    }
 
 ## Bookmarks toolbar items
 
@@ -513,6 +558,13 @@ urlbar-result-action-tabtosearch-web = Z { $engine } direktnje z adresowego pól
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Z { $engine } direktnje z adresowego póla pytaś
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Kopěrowaś
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -554,8 +606,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Wše cytańske znamjenja pokazaś
-bookmarks-recent-bookmarks =
-    .value = Tuchylu ako cytańske znamje składowane
 bookmarks-manage-bookmarks =
     .label = Cytańske znamjenja zastojaś
 bookmarks-recent-bookmarks-panel =
@@ -576,12 +626,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Bocnicu cytańskich znamjenjow schowaś
            *[other] Bocnicu cytańskich znamjenjow pokazaś
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Rědku cytańskich znamjenjow schowaś
-           *[other] Rědku cytańskich znamjenjow pokazaś
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -628,12 +672,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Cytańske znamjenja
-library-bookmarks-bookmark-this-page =
-    .label = Toś ten bok ako cytańske znamje składowaś
-library-bookmarks-bookmark-edit =
-    .label = Toś to cytańske znamje wobźěłaś
 library-recent-activity-title =
     .value = Nejnowša aktiwita
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Pla { -pocket-brand-name } składowaś
+    .tooltiptext = Pla { -pocket-brand-name } składowaś
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Dodanki a drastwy
+    .tooltiptext = Zastojśo swóje dodanki a drastwy ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Nastajenja
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Nastajenja wócyniś ({ $shortcut })
+           *[other] Nastajenja wócyniś
+        }
 
 ## More items
 
@@ -660,3 +723,9 @@ panel-save-update-password = Gronidło
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = { $name } wótwónoźeś?
 addon-removal-abuse-report-checkbox = { -vendor-short-name } toś to rozšyrjenje k wěsći daś
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Konto zastojaś
+remote-tabs-sync-now = Něnto synchronizěrowaś

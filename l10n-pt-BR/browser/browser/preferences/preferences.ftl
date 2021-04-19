@@ -28,6 +28,18 @@ search-input-box =
             [windows] Pesquisar em opções
            *[other] Pesquisar em preferências
         }
+settings-page-title = Configurações
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Procurar em configurações
 managed-notice = Seu navegador está sendo gerenciado por nossa organização.
 category-list =
     .aria-label = Categorias
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Sync
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = Experimentos do { -brand-short-name }
 category-experimental =
     .tooltiptext = Experimentos do { -brand-short-name }
 pane-experimental-subtitle = Prossiga com cautela
 pane-experimental-search-results-header = Experimentos no { -brand-short-name }: Prossiga com cautela
 pane-experimental-description = Alterar preferências de configuração avançadas pode afetar o desempenho ou a segurança do { -brand-short-name }.
+pane-experimental-description2 = Alterar configurações avançadas pode afetar o desempenho ou segurança do { -brand-short-name }.
 pane-experimental-reset =
     .label = Restaurar padrão
     .accesskey = R
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] Desculpa! Não há nenhum resultado nas opções para “<span data-l10n-name="query"></span>”.
        *[other] Desculpa! Não há nenhum resultado nas preferências para “<span data-l10n-name="query"></span>”.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Desculpe, não há nenhum resultado de “<span data-l10n-name="query"></span>” nas configurações.
 search-results-help-link = Precisa de ajuda? Visite o <a data-l10n-name="url">Suporte do { -brand-short-name }</a>
 
 ## General Section
@@ -369,6 +387,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Nunca verificar atualizações (não recomendado)
     .accesskey = N
+update-application-background-enabled =
+    .label = Quando o { -brand-short-name } não estiver sendo executado
+    .accesskey = Q
 update-application-warning-cross-user-setting = Esta configuração se aplica a todas as contas do Windows e perfis do { -brand-short-name } que usam esta instalação do { -brand-short-name }.
 update-application-use-service =
     .label = Usar um serviço em segundo plano para instalar atualizações
@@ -382,6 +403,15 @@ update-setting-write-failure-message =
     O { -brand-short-name } encontrou um erro e não salvou esta alteração. Note que definir esta preferência de atualização requer permissão para escrever no arquivo abaixo. Você ou um administrador do sistema deve conseguir resolver o erro dando ao grupo 'Users' total controle sobre este arquivo.
     
     Não foi possível escrever no arquivo: { $path }
+update-setting-write-failure-title2 = Erro ao salvar configurações de atualização
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    O { -brand-short-name } encontrou um erro e não salvou esta alteração. Note que alterar esta configuração de atualização requer permissão para gravar no arquivo abaixo. Você ou um administrador do sistema pode conseguir resolver o erro dando ao grupo 'Users' total controle sobre este arquivo.
+    
+    Não foi possível gravar no arquivo: { $path }
 update-in-progress-title = Atualização em andamento
 update-in-progress-message = Quer que o { -brand-short-name } continue esta atualização?
 update-in-progress-ok-button = &Descartar
@@ -579,6 +609,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Mostrar sugestões de pesquisa em janelas privativas
 suggestions-addressbar-settings-generic = Alterar preferências de outras sugestões da barra de endereços
+suggestions-addressbar-settings-generic2 = Alterar configurações de outras sugestões da barra de endereços
 search-suggestions-cant-show = As sugestões de pesquisa não serão mostradas nos resultados da barra de endereço, porque você configurou o { -brand-short-name } para nunca memorizar o histórico.
 search-one-click-header = Mecanismos de pesquisa em um clique
 search-one-click-header2 = Atalhos de pesquisa
@@ -613,6 +644,8 @@ containers-back-button =
             [windows] Voltar às Opções
            *[other] Voltar às Preferências
         }
+containers-back-button2 =
+    .aria-label = Voltar às configurações
 containers-header = Abas contêiner
 containers-add-button =
     .label = Adicionar novo contêiner
@@ -622,6 +655,8 @@ containers-new-tab-check =
     .accesskey = S
 containers-preferences-button =
     .label = Preferências
+containers-settings-button =
+    .label = Configurações
 containers-remove-button =
     .label = Remover
 
@@ -632,6 +667,10 @@ sync-signedout-caption = Leve a web com você
 sync-signedout-description = Sincronize seus favoritos, histórico, abas, senhas, extensões e preferências com todos os seus dispositivos.
 sync-signedout-account-signin2 =
     .label = Entrar no { -sync-brand-short-name }…
+    .accesskey = E
+sync-signedout-description2 = Sincronize seus favoritos, histórico, abas, senhas, extensões e configurações entre todos os seus dispositivos.
+sync-signedout-account-signin3 =
+    .label = Entrar para sincronizar…
     .accesskey = E
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -648,8 +687,8 @@ sync-mobile-promo = Instale o Firefox no <img data-l10n-name="android-icon"/> <
 sync-profile-picture =
     .tooltiptext = Alterar imagem do perfil
 sync-sign-out =
-    .label = Sair…
-    .accesskey = S
+    .label = Desconectar…
+    .accesskey = D
 sync-manage-account = Gerenciar conta
     .accesskey = o
 sync-signedin-unverified = { $email } não foi verificado.
@@ -672,6 +711,10 @@ prefs-sync-setup =
     .label = Configurar o { -sync-brand-short-name }…
     .accesskey = C
 prefs-sync-offer-setup-label = Sincronize seus favoritos, histórico, abas, senhas, extensões e preferências com todos os seus dispositivos.
+prefs-sync-turn-on-syncing =
+    .label = Ativar sincronização…
+    .accesskey = s
+prefs-sync-offer-setup-label2 = Sincronize seus favoritos, histórico, abas, senhas, extensões e configurações entre todos os seus dispositivos.
 prefs-sync-now =
     .labelnotsyncing = Sincronizar agora
     .accesskeynotsyncing = n
@@ -692,6 +735,7 @@ sync-currently-syncing-prefs =
         [windows] Opções
        *[other] Preferências
     }
+sync-currently-syncing-settings = Configurações
 sync-change-options =
     .label = Alterar…
     .accesskey = A
@@ -739,6 +783,10 @@ sync-engine-prefs =
         }
     .tooltiptext = Configurações gerais, de privacidade e de segurança que você alterou
     .accesskey = P
+sync-engine-settings =
+    .label = Configurações
+    .tooltiptext = Configurações gerais, de privacidade e segurança que você alterou
+    .accesskey = C
 
 ## The device name controls.
 
@@ -947,7 +995,7 @@ addressbar-suggestions-settings = Alterar preferências de sugestões de mecanis
 ## Privacy Section - Content Blocking
 
 content-blocking-enhanced-tracking-protection = Proteção aprimorada contra rastreamento
-content-blocking-section-top-level-description = Rastreadores seguem você por todo canto para coletar informações sobre seus interesses e hábitos de navegação. O { -brand-short-name } bloqueia muitos desses rastreadores e outros scripts maliciosos.
+content-blocking-section-top-level-description = Rastreadores tentam te seguir por todo canto para coletar informações sobre seus interesses e hábitos de navegação. O { -brand-short-name } bloqueia muitos desses rastreadores e outros códigos maliciosos.
 content-blocking-learn-more = Saiba mais
 content-blocking-fpi-incompatibility-warning = Você está usando isolamento primário (FPI), que substitui algumas configurações de cookies de { -brand-short-name }.
 
@@ -1153,6 +1201,11 @@ space-alert-under-5gb-ok-button =
     .label = OK, entendi
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } está ficando sem espaço em disco. O conteúdo do site pode não ser exibido corretamente. Visite “Saiba mais” para otimizar seu uso de disco para melhor experiência de navegação.
+space-alert-over-5gb-settings-button =
+    .label = Abrir configurações
+    .accesskey = A
+space-alert-over-5gb-message2 = <strong>O { -brand-short-name } está ficando sem espaço em disco.</strong> Conteúdos de sites podem não ser exibidos corretamente. Você pode limpar o armazenamento de dados em Configurações > Privacidade e Segurança > Cookies e dados de sites.
+space-alert-under-5gb-message2 = <strong>O { -brand-short-name } está ficando sem espaço em disco.</strong> Conteúdos de sites podem não ser exibidos corretamente. Acesse “Saiba mais” para otimizar seu uso de disco para ter uma melhor experiência de navegação.
 
 ## Privacy Section - HTTPS-Only
 

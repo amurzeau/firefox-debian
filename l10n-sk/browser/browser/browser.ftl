@@ -266,11 +266,28 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Pridať záložku
+bookmarks-edit-bookmark = Upraviť záložku
+bookmark-panel-cancel =
+    .label = Zrušiť
+    .accesskey = Z
+# Variables:
+#  $count (number): number of bookmarks that will be removed
+bookmark-panel-remove =
+    .label =
+        { $count ->
+            [one] Odstrániť záložku
+            [few] Odstrániť { $count } záložky
+           *[other] Odstrániť { $count } záložiek
+        }
+    .accesskey = O
 bookmark-panel-show-editor-checkbox =
     .label = Pri ukladaní zobrazovať editor
     .accesskey = u
 bookmark-panel-done-button =
     .label = Hotovo
+bookmark-panel-save-button =
+    .label = Uložiť
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -290,6 +307,8 @@ identity-passive-loaded = Časti tejto stránky nie sú zabezpečené (napr. obr
 identity-active-loaded = Na tejto stránke ste vypli Ochranu pred sledovaním.
 identity-weak-encryption = Táto stránka používa slabé šifrovanie.
 identity-insecure-login-forms = Prihlasovacie údaje zadané na tejto stránke by mohli byť ohrozené.
+identity-permissions =
+    .value = Povolenia
 identity-https-only-connection-upgraded = (zmenené na HTTPS)
 identity-https-only-label = Režim "Len HTTPS"
 identity-https-only-dropdown-on =
@@ -298,11 +317,11 @@ identity-https-only-dropdown-off =
     .label = Vypnutý
 identity-https-only-dropdown-off-temporarily =
     .label = Dočasne vypnutý
-identity-https-only-info-turn-on2 = Ak chcete, aby prehliadač { -brand-short-name } zmenil pripojenie na zabezpečné kedykoľvek je to možné, zapnite pre tento server režim "Len HTTPS".
+identity-https-only-info-turn-on2 = Ak chcete, aby prehliadač { -brand-short-name } zmenil pripojenie na zabezpečené kedykoľvek je to možné, zapnite pre tento server režim "Len HTTPS".
 identity-https-only-info-turn-off2 = Ak sa zdá byť stránka nefunkčná, možno budete musieť vypnúť režim "Len HTTPS" a opätovne načítať stránku pomocou nezabezpečeného protokolu HTTP.
 identity-https-only-info-no-upgrade = Nepodarilo sa zmeniť pripojenie z protokolu HTTP.
-identity-permissions =
-    .value = Povolenia
+identity-permissions-storage-access-header = Cookies tretích strán
+identity-permissions-storage-access-hint = Tieto weby môžu používať cookies tretích strán a počas návštevy tejto stránky pristupovať k údajom z nej.
 identity-permissions-reload-hint = Pre vykonanie zmien budete možno musieť stránku obnoviť.
 identity-permissions-empty = Tejto stránke ste neurčili žiadne špeciálne povolenia.
 identity-clear-site-data =
@@ -341,25 +360,54 @@ browser-window-minimize-button =
     .tooltiptext = Minimalizovať okno
 browser-window-maximize-button =
     .tooltiptext = Maximalizovať
+browser-window-restore-down-button =
+    .tooltiptext = Obnoviť nadol
 browser-window-close-button =
     .tooltiptext = Zavrieť
 
 ## Tab actions
 
-browser-tab-audio-playing = Prehráva sa
-browser-tab-audio-muted = Stlmené
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-playing2 = PREHRÁVA SA
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-muted2 = STLMENÉ
 # This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = AUTOMATICKÉ PREHRÁVANIE ZABLOKOVANÉ
+# This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = OBRAZ V OBRAZE
+
+## These labels should be written in all capital letters if your locale supports them.
+## Variables:
+##  $count (number): number of affected tabs
+
+browser-tab-mute =
+    { $count ->
+        [1] STLMIŤ KARTU
+        [one] STLMIŤ KARTU
+        [few] STLMIŤ { $count } KARTY
+       *[other] STLMIŤ { $count } KARIET
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] ZAPNÚŤ ZVUK NA KARTE
+        [one] ZAPNÚŤ ZVUK NA KARTE
+        [few] ZAPNÚŤ ZVUK NA { $count } KARTÁCH
+       *[other] ZAPNÚŤ ZVUK NA { $count } KARTÁCH
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] PREHRAŤ KARTU
+        [one] PREHRAŤ KARTU
+        [few] PREHRAŤ { $count } KARTY
+       *[other] PREHRAŤ { $count } KARIET
+    }
 
 ## Bookmarks toolbar items
 
 browser-import-button2 =
     .label = Importovať záložky…
     .tooltiptext = Importovať záložky z iného prehliadača do aplikácie { -brand-short-name }
+bookmarks-toolbar-empty-message = Ak chcete mať rýchly prístup k záložkám, umiestnite ich sem na panel záložiek. <a data-l10n-name="manage-bookmarks">Spravovať záložky…</a>
 
 ## WebRTC Pop-up notifications
 
@@ -417,6 +465,34 @@ urlbar-default-placeholder =
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Zadajte adresu alebo výraz vyhľadávania
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Vyhľadávanie na webe
+    .aria-label = Hľadať pomocou { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Zadajte hľadaný výraz
+    .aria-label = Hľadať pomocou { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Zadajte hľadaný výraz
+    .aria-label = Hľadať v záložkách
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Zadajte hľadaný výraz
+    .aria-label = Hľadať v histórii
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Zadajte hľadaný výraz
+    .aria-label = Hľadať v otvorených kartách
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -452,19 +528,45 @@ urlbar-result-action-search-in-private = Vyhľadať v súkromnom okne
 # "Search", and we would like to avoid strings like "Search MSN Search".
 # Variables
 #  $engine (String): the name of a search engine
-urlbar-result-action-search-w-engine = Vyhľadať pomocou { $engine }
+urlbar-result-action-search-w-engine = Hľadať pomocou vyhľadávača { $engine }
 urlbar-result-action-sponsored = Sponzorované
 urlbar-result-action-switch-tab = Prepnúť na kartu
 urlbar-result-action-visit = Navštíviť
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Stlačením klávesu Tab vyhľadáte pomocou { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Stlačením klávesu Tab vyhľadáte pomocou { $engine }
 # Variables
 #  $engine (String): the name of a search engine that searches the entire Web
 #  (e.g. Google).
 urlbar-result-action-tabtosearch-web = Hľadajte pomocou { $engine } priamo z panela s adresou
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Hľadajte pomocou { $engine } priamo z panela s adresou
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Kopírovať
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
 
+urlbar-result-action-search-bookmarks = Hľadať v záložkách
+urlbar-result-action-search-history = Hľadať v histórii
+urlbar-result-action-search-tabs = Hľadať v otvorených kartách
 
 ## Full Screen and Pointer Lock UI
 
@@ -484,6 +586,7 @@ pointerlock-warning-no-domain = Tento dokument má kontrolu nad vaším kurzorom
 
 ## Subframe crash notification
 
+crashed-subframe-message = <strong>Časť tejto stránky zlyhala.</strong> Ak chcete, aby sa spoločnosť { -brand-product-name } dozvedela o tomto probléme a tento mohol byť rýchlejšie vyriešený, odošlite hlásenie.
 crashed-subframe-learnmore =
     .label = Ďalšie informácie
     .accesskey = l
@@ -497,8 +600,6 @@ crashed-subframe-submit =
 
 bookmarks-show-all-bookmarks =
     .label = Zobraziť všetky záložky
-bookmarks-recent-bookmarks =
-    .value = Nedávno pridané medzi záložky
 bookmarks-manage-bookmarks =
     .label = Správa záložiek
 bookmarks-recent-bookmarks-panel =
@@ -519,12 +620,6 @@ bookmarks-tools-sidebar-visibility =
         { $isVisible ->
             [true] Skryť bočný panel Záložky
            *[other] Zobraziť bočný panel Záložky
-        }
-bookmarks-tools-toolbar-visibility =
-    .label =
-        { $isVisible ->
-            [true] Skryť panel nástrojov Záložky
-           *[other] Zobraziť panel nástrojov Záložky
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -571,12 +666,31 @@ bookmarks-current-tab =
 
 library-bookmarks-menu =
     .label = Záložky
-library-bookmarks-bookmark-this-page =
-    .label = Pridať stránku medzi záložky
-library-bookmarks-bookmark-edit =
-    .label = Upraviť túto záložku
 library-recent-activity-title =
     .value = Nedávna aktivita
+
+## Pocket toolbar button
+
+save-to-pocket-button =
+    .label = Uložiť do { -pocket-brand-name }u
+    .tooltiptext = Uložiť do { -pocket-brand-name }u
+
+## Customize Toolbar Buttons
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Doplnky a témy
+    .tooltiptext = Správa doplnkov a tém ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Nastavenia
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Otvoriť nastavenia ({ $shortcut })
+           *[other] Otvoriť nastavenia
+        }
 
 ## More items
 
@@ -603,3 +717,9 @@ panel-save-update-password = Heslo
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = Odstrániť { $name }?
 addon-removal-abuse-report-checkbox = Nahlásiť toto rozšírenie spoločnosti { -vendor-short-name }
+
+## Remote / Synced tabs
+
+remote-tabs-manage-account =
+    .label = Spravovať účet
+remote-tabs-sync-now = Synchronizovať teraz

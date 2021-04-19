@@ -10,7 +10,7 @@
 <!ENTITY  openWith.accesskey          "О">
 <!ENTITY  other.label                 "Друго…">
 
-<!ENTITY  saveFile.label              "Сними датотеку">
+<!ENTITY  saveFile.label              "Сачувај датотеку">
 <!ENTITY  saveFile.accesskey          "С">
 
 <!ENTITY  rememberChoice.label        "Користи овај избор за све датотеке овог типа.">
@@ -18,9 +18,9 @@
 
 <!ENTITY  whichIs.label              "што је:">
 
-<!ENTITY  chooseHandlerMac.label      "Избор…">
+<!ENTITY  chooseHandlerMac.label      "Одабери…">
 <!ENTITY  chooseHandlerMac.accesskey  "И">
-<!ENTITY  chooseHandler.label         "Избор…">
+<!ENTITY  chooseHandler.label         "Одабери…">
 <!ENTITY  chooseHandler.accesskey     "И">
 
 <!ENTITY  unknownPromptText.label     "Да ли желите да сачувате ову датотеку?">
