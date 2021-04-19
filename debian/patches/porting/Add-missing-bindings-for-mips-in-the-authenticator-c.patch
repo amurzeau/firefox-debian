@@ -12,7 +12,7 @@ Subject: Add missing bindings for mips* in the authenticator crate
  create mode 100644 third_party/rust/authenticator/src/linux/ioctl_mipsle.rs
 
 diff --git a/Cargo.lock b/Cargo.lock
-index a3cdbad..ae02fdf 100644
+index c41d9fc..2d46a3d 100644
 --- a/Cargo.lock
 +++ b/Cargo.lock
 @@ -183,8 +183,6 @@ dependencies = [
