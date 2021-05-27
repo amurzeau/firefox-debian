@@ -200,7 +200,6 @@ onboarding-welcome-steps-indicator =
 # automatically added to the text inside it. "look" should stay inside the span.
 onboarding-multistage-theme-header = Επιλέξτε <span data-l10n-name="zap">εμφάνιση</span>
 onboarding-multistage-theme-subtitle = Εξατομίκευση του { -brand-short-name } με ένα θέμα.
-onboarding-multistage-theme-primary-button-label = Αποθήκευση θέματος
 onboarding-multistage-theme-primary-button-label2 = Τέλος
 onboarding-multistage-theme-secondary-button-label = Όχι τώρα
 # Automatic theme uses operating system color settings
@@ -254,4 +253,87 @@ onboarding-multistage-theme-tooltip-alpenglow-2 =
 onboarding-multistage-theme-description-alpenglow =
     .aria-description =
         Χρήση πολύχρωμης εμφάνισης για τα κουμπιά,
+        τα μενού και τα παράθυρα.
+
+## Multistage MR1 onboarding strings (MR1 about:welcome pages)
+
+# "Hero Text" displayed on left side of welcome screen.
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
+# It also signals the passion users bring to Firefox, how they use
+# Firefox to pursue those passions, as well as the boldness in their
+# choice to use Firefox over a larger competitor browser.
+# An alternative title for localization is: "It starts here".
+mr1-welcome-screen-hero-text = Η φωτιά ξεκινά εδώ
+# This button will open system settings to turn on prefers-reduced-motion
+mr1-onboarding-reduce-motion-button-label = Απενεργοποίηση εφέ κίνησης
+mr1-onboarding-welcome-header = Καλώς ορίσατε στο { -brand-short-name }
+mr1-onboarding-set-default-pin-primary-button-label = Ορισμός { -brand-short-name } ως κύριου φυλλομετρητή
+    .title = Ορίζει το { -brand-short-name } ως το προεπιλεγμένο πρόγραμμα περιήγησης και το καρφιτσώνει στη γραμμή εργασιών
+mr1-onboarding-set-default-only-primary-button-label = Ορισμός { -brand-short-name } ως προεπιλεγμένου φυλλομετρητή
+mr1-onboarding-set-default-secondary-button-label = Όχι τώρα
+mr1-onboarding-sign-in-button-label = Σύνδεση
+mr1-onboarding-import-header = Μεταφέρετε όλα τα δεδομένα σας
+mr1-onboarding-import-subtitle = Εισάγετε κωδικούς πρόσβασης <br/>σελιδοδείκτες και πολλά άλλα.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
+# Variables:
+#   $previous (Str) - Previous browser name, such as Edge, Chrome
+mr1-onboarding-import-primary-button-label-attribution = Εισαγωγή από { $previous }
+# This string will be used in cases where we can't detect the previous browser name.
+mr1-onboarding-import-primary-button-label-no-attribution = Εισαγωγή από προηγούμενο πρόγραμμα περιήγησης
+mr1-onboarding-import-secondary-button-label = Όχι τώρα
+mr1-onboarding-theme-header = Κάντε το δικό σας
+mr1-onboarding-theme-subtitle = Εξατομικεύστε το { -brand-short-name } με ένα θέμα.
+mr1-onboarding-theme-primary-button-label = Αποθήκευση θέματος
+mr1-onboarding-theme-secondary-button-label = Όχι τώρα
+# System theme uses operating system color settings
+mr1-onboarding-theme-label-system = Θέμα συστήματος
+mr1-onboarding-theme-label-light = Φωτεινό
+mr1-onboarding-theme-label-dark = Σκοτεινό
+# "Alpenglow" here is the name of the theme, and should be kept in English.
+mr1-onboarding-theme-label-alpenglow = Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of system theme
+mr1-onboarding-theme-tooltip-system =
+    .title =
+        Χρήση θέματος λειτουργικού συστήματος
+        για κουμπιά, μενού και παράθυρα.
+# Input description for system theme
+mr1-onboarding-theme-description-system =
+    .aria-description =
+        Χρήση θέματος λειτουργικού συστήματος
+        για κουμπιά, μενού και παράθυρα.
+# Tooltip displayed on hover of light theme
+mr1-onboarding-theme-tooltip-light =
+    .title =
+        Χρήση φωτεινού θέματος για τα κουμπιά,
+        τα μενού και τα παράθυρα.
+# Input description for light theme
+mr1-onboarding-theme-description-light =
+    .aria-description =
+        Χρήση φωτεινού θέματος για τα κουμπιά,
+        τα μενού και τα παράθυρα.
+# Tooltip displayed on hover of dark theme
+mr1-onboarding-theme-tooltip-dark =
+    .title =
+        Χρήση σκοτεινού θέματος για τα κουμπιά,
+        τα μενού και τα παράθυρα.
+# Input description for dark theme
+mr1-onboarding-theme-description-dark =
+    .aria-description =
+        Χρήση σκοτεινού θέματος για τα κουμπιά,
+        τα μενού και τα παράθυρα.
+# Tooltip displayed on hover of Alpenglow theme
+mr1-onboarding-theme-tooltip-alpenglow =
+    .title =
+        Χρήση ενός δυναμικού, πολύχρωμου θέματος για τα κουμπιά,
+        τα μενού και τα παράθυρα.
+# Input description for Alpenglow theme
+mr1-onboarding-theme-description-alpenglow =
+    .aria-description =
+        Χρήση ενός δυναμικού, πολύχρωμου θέματος για τα κουμπιά,
         τα μενού και τα παράθυρα.

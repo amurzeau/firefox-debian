@@ -239,6 +239,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Thêm “{ $engineName }”
+    .tooltiptext = Thêm công cụ tìm kiếm “{ $engineName }”
+    .aria-label = Thêm công cụ tìm kiếm “{ $engineName }”
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Thêm dịch vụ tìm kiếm
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -281,8 +293,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Thông tin trang web { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Bảo mật kết nối cho { $host }
 identity-connection-not-secure = Kết nối không an toàn
 identity-connection-secure = Kết nối an toàn
+identity-connection-failure = Kết nối thất bại
 identity-connection-internal = Đây là một trang an toàn của { -brand-short-name }
 identity-connection-file = Trang này đã được lưu ở máy tính của bạn.
 identity-extension-page = Trang này được tải từ một tiện ích mở rộng.
@@ -307,6 +327,7 @@ identity-https-only-info-turn-off2 = Nếu trang có vẻ bị hỏng, bạn có
 identity-https-only-info-no-upgrade = Không thể nâng cấp kết nối từ HTTP.
 identity-permissions-storage-access-header = Cookie trên nhiều trang web
 identity-permissions-storage-access-hint = Khi bạn mở trang web này, các trang web này có thể sử dụng cookie trên nhiều trang web và lấy thông tin của bạn trên trang web này.
+identity-permissions-storage-access-learn-more = Tìm hiểu thêm
 identity-permissions-reload-hint = Bạn có thể cần phải tải lại trang để các thay đổi được áp dụng.
 identity-permissions-empty = Bạn chưa cấp cho trang này bất kỳ một quyền đặc biệt nào.
 identity-clear-site-data =
@@ -478,6 +499,11 @@ urlbar-placeholder-with-name =
     .placeholder = Tìm kiếm với { $name } hoặc nhập địa chỉ
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Trình duyệt đang ở trong chế độ truy cập từ xa
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Trình duyệt đang được điều khiển từ xa (lý do: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Bạn đã cấp cho trang web này các quyền bổ sung.
 urlbar-switch-to-tab =
@@ -566,9 +592,6 @@ pointerlock-warning-no-domain = Trang này có quyền điều khiển con trỏ
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Một phần của trang này đã bị vớ.</strong> Để { -brand-product-name } biết về lỗi này và sửa nó nhanh hơn, vui lòng báo cáo nó.
-crashed-subframe-learnmore =
-    .label = Tìm hiểu thêm
-    .accesskey = L
 crashed-subframe-learnmore-link =
     .value = Tìm hiểu thêm
 crashed-subframe-submit =
@@ -581,8 +604,6 @@ bookmarks-show-all-bookmarks =
     .label = Xem tất cả dấu trang
 bookmarks-manage-bookmarks =
     .label = Quản lý dấu trang
-bookmarks-recent-bookmarks-panel =
-    .value = Dấu trang gần đây
 bookmarks-recent-bookmarks-panel-subheader = Dấu trang gần đây
 bookmarks-toolbar-chevron =
     .tooltiptext = Hiện thêm các dấu trang

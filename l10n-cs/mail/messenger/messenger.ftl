@@ -65,3 +65,26 @@ appmenu-help-exit-troubleshoot-mode =
     .label = Ukončit režim řešení potíží
 appmenu-help-more-troubleshooting-info =
     .label = Další technické informace
+
+## Action Button Context Menu
+
+toolbar-context-menu-manage-extension =
+    .label = Nastavení tohoto rozšíření
+    .accesskey = e
+toolbar-context-menu-remove-extension =
+    .label = Odebrat rozšíření
+    .accesskey = d
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Opravdu chcete odebrat rozšíření { $name }?
+addon-removal-confirmation-button = Odebrat
+addon-removal-confirmation-message =
+    Opravdu chcete odebrat doplněk { $name } a jeho nastavení a data z { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "gen") }
+        [feminine] { -brand-short-name(case: "gen") }
+        [neuter] { -brand-short-name(case: "gen") }
+       *[other] aplikace { -brand-short-name }
+    }?

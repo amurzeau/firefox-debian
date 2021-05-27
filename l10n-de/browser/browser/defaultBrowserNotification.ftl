@@ -7,3 +7,16 @@ default-browser-notification-message = <strong>{ -brand-short-name } als Standar
 default-browser-notification-button =
     .label = Als Standard festlegen
     .accesskey = S
+
+## These strings are used for the default browser prompt. There are 2 variations
+## depending on the operating system (Windows vs other). The checkbox label and
+## secondary button are shared between the variants.
+
+default-browser-prompt-title-pin = { -brand-short-name } als Hauptbrowser festlegen?
+default-browser-prompt-message-pin = Haben Sie { -brand-short-name } immer zur Hand – legen Sie ihn als Standardbrowser fest und heften Sie ihn an die Taskleiste.
+default-browser-prompt-button-primary-pin = Als Hauptbrowser festlegen
+default-browser-prompt-title-alt = { -brand-short-name } als Standardbrowser festlegen?
+default-browser-prompt-message-alt = Holen Sie sich Geschwindigkeit, Sicherheit und Datenschutz bei jedem Surfen.
+default-browser-prompt-button-primary-alt = Als Standardbrowser festlegen
+default-browser-prompt-checkbox-not-again-label = Diese Nachricht nicht mehr anzeigen
+default-browser-prompt-button-secondary = Nicht jetzt

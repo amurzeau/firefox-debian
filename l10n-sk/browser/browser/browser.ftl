@@ -249,6 +249,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Pridať “{ $engineName }”
+    .tooltiptext = Pridať vyhľadávací modul “{ $engineName }”
+    .aria-label = Pridať vyhľadávací modul “{ $engineName }”
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Pridať vyhľadávací modul
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -296,8 +308,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Informácie o stránke { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Zabezpečenie pripojenia k { $host }
 identity-connection-not-secure = Pripojenie nie je zabezpečené
 identity-connection-secure = Pripojenie je zabezpečené
+identity-connection-failure = Chyba spojenia
 identity-connection-internal = Toto je bezpečná stránka prehliadača { -brand-short-name }
 identity-connection-file = Táto stránka je uložená vo vašom počítači.
 identity-extension-page = Táto stránka je načítaná z doplnku.
@@ -322,6 +342,7 @@ identity-https-only-info-turn-off2 = Ak sa zdá byť stránka nefunkčná, možn
 identity-https-only-info-no-upgrade = Nepodarilo sa zmeniť pripojenie z protokolu HTTP.
 identity-permissions-storage-access-header = Cookies tretích strán
 identity-permissions-storage-access-hint = Tieto weby môžu používať cookies tretích strán a počas návštevy tejto stránky pristupovať k údajom z nej.
+identity-permissions-storage-access-learn-more = Ďalšie informácie
 identity-permissions-reload-hint = Pre vykonanie zmien budete možno musieť stránku obnoviť.
 identity-permissions-empty = Tejto stránke ste neurčili žiadne špeciálne povolenia.
 identity-clear-site-data =
@@ -357,7 +378,7 @@ identity-more-info-link-text =
 ## Window controls
 
 browser-window-minimize-button =
-    .tooltiptext = Minimalizovať okno
+    .tooltiptext = Minimalizovať
 browser-window-maximize-button =
     .tooltiptext = Maximalizovať
 browser-window-restore-down-button =
@@ -499,6 +520,11 @@ urlbar-placeholder-with-name =
     .placeholder = Vyhľadajte cez { $name } alebo zadajte webovú adresu
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Prehliadač je ovládaný na diaľku
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Prehliadač je ovládaný na diaľku (dôvod: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Tejto stránke ste udelili dodatočné povolenia.
 urlbar-switch-to-tab =
@@ -587,9 +613,6 @@ pointerlock-warning-no-domain = Tento dokument má kontrolu nad vaším kurzorom
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Časť tejto stránky zlyhala.</strong> Ak chcete, aby sa spoločnosť { -brand-product-name } dozvedela o tomto probléme a tento mohol byť rýchlejšie vyriešený, odošlite hlásenie.
-crashed-subframe-learnmore =
-    .label = Ďalšie informácie
-    .accesskey = l
 crashed-subframe-learnmore-link =
     .value = Ďalšie informácie
 crashed-subframe-submit =
@@ -602,8 +625,6 @@ bookmarks-show-all-bookmarks =
     .label = Zobraziť všetky záložky
 bookmarks-manage-bookmarks =
     .label = Správa záložiek
-bookmarks-recent-bookmarks-panel =
-    .value = Nedávno pridané medzi záložky
 bookmarks-recent-bookmarks-panel-subheader = Nedávno pridané medzi záložky
 bookmarks-toolbar-chevron =
     .tooltiptext = Zobraziť ďalšie záložky

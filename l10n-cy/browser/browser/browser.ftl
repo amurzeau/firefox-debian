@@ -255,6 +255,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Ychwanegu “{ $engineName }”
+    .tooltiptext = Ychwanegwch beiriant chwilio “{ $engineName }”
+    .aria-label = Ychwanegwch beiriant chwilio “{ $engineName }”
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Ychwanegu peiriant chwilio
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -305,8 +317,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Manylion gwefan { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Diogelwch Cysylltiad { $host }
 identity-connection-not-secure = Cysylltiad yn anniogel
 identity-connection-secure = Cysylltiad yn ddiogel
+identity-connection-failure = Methiant cysylltiad
 identity-connection-internal = Mae hon yn dudalen { -brand-short-name } diogel.
 identity-connection-file = Mae'r dudalen hon wedi ei chadw ar eich cyfrifiadur.
 identity-extension-page = Mae'r dudalen wedi ei llwytho o estyniad.
@@ -331,6 +351,7 @@ identity-https-only-info-turn-off2 = Os yw'r wefan yn ymddangos wedi torri, efal
 identity-https-only-info-no-upgrade = Methu uwchraddio'r cysylltiad o HTTP.
 identity-permissions-storage-access-header = Cwcis traws-gwefan
 identity-permissions-storage-access-hint = Gall y partïon hyn ddefnyddio cwcis traws-gwefan a data gwefan tra'ch bod chi ar y wefan hon.
+identity-permissions-storage-access-learn-more = Dysgu rhagor
 identity-permissions-reload-hint = Efallai y bydd angen ail lwytho'r dudalen i newidiadau ddod ar waith.
 identity-permissions-empty = Nid ydych wedi rhoi i'r wefan hon unrhyw ganiatâd arbennig.
 identity-clear-site-data =
@@ -517,6 +538,11 @@ urlbar-placeholder-with-name =
     .placeholder = Chwilio gyda { $name } neu rhoi'r cyfeiriad
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Mae'r porwr o dan reolaeth bell
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Mae'r porwr o dan reolaeth bell (rheswm: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Rydych wedi rhoi caniatâd ychwanegol i'r wefan hon.
 urlbar-switch-to-tab =
@@ -605,9 +631,6 @@ pointerlock-warning-no-domain = Mae gan y ddogfen hon reolaeth o'ch pwyntydd. Pw
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Mae rhan o'r dudalen hon wedi chwalu.</strong> Er mwyn rhoi gwybod i { -brand-product-name } am y mater hwn a'i drwsio'n gynt, cyflwynwch adroddiad.
-crashed-subframe-learnmore =
-    .label = Dysgu rhagor
-    .accesskey = D
 crashed-subframe-learnmore-link =
     .value = Dysgu Rhagor
 crashed-subframe-submit =
@@ -620,8 +643,6 @@ bookmarks-show-all-bookmarks =
     .label = Dangos Pob Nod Tudalen
 bookmarks-manage-bookmarks =
     .label = Rheoli Nodau Tudalen
-bookmarks-recent-bookmarks-panel =
-    .value = Nodau Tudalen Diweddar
 bookmarks-recent-bookmarks-panel-subheader = Nodau Tudalen Diweddar
 bookmarks-toolbar-chevron =
     .tooltiptext = Dangos pob ffolder nod tudalen

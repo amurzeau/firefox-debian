@@ -7,3 +7,16 @@ default-browser-notification-message = <strong>{ -brand-short-name } varsayılan
 default-browser-notification-button =
     .label = Varsayılan olarak ayarla
     .accesskey = V
+
+## These strings are used for the default browser prompt. There are 2 variations
+## depending on the operating system (Windows vs other). The checkbox label and
+## secondary button are shared between the variants.
+
+default-browser-prompt-title-pin = { -brand-short-name } ana tarayıcınız olarak ayarlansın mı?
+default-browser-prompt-message-pin = { -brand-short-name } tarayıcınızı varsayılan tarayıcınız yapıp görev çubuğunuza sabitleyebilirsiniz.
+default-browser-prompt-button-primary-pin = Ana tarayıcı olarak ayarla
+default-browser-prompt-title-alt = { -brand-short-name } varsayılan tarayıcınız olarak ayarlansın mı?
+default-browser-prompt-message-alt = Her seferinde hızlı, güvenli ve gizli gezintiye kavuşun.
+default-browser-prompt-button-primary-alt = Varsayılan tarayıcı yap
+default-browser-prompt-checkbox-not-again-label = Bu mesajı bir daha gösterme
+default-browser-prompt-button-secondary = Daha sonra

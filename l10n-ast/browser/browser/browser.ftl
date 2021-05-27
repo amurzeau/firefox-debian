@@ -99,6 +99,8 @@ urlbar-popup-blocked =
     .tooltiptext = Bloquiesti los ventanos emerxentes d'esti sitiu web.
 urlbar-autoplay-media-blocked =
     .tooltiptext = Bloquiesti la reproducción automática con soníu pa esti sitiu web
+urlbar-canvas-blocked =
+    .tooltiptext = Bloquiesti la estraición de datos del llenzu d'esti sitiu.
 urlbar-midi-blocked =
     .tooltiptext = Bloquiesti l'accesu MIDI pa esti sitiu web.
 urlbar-install-blocked =
@@ -121,10 +123,34 @@ page-action-remove-from-urlbar =
 
 page-action-pocket-panel =
     .label = Guardar la páxina en { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Copiar l'enllaz
+page-action-copy-url-urlbar =
+    .tooltiptext = Copiar l'enllaz
+page-action-email-link-panel =
+    .label = Unviar l'enllaz per corréu…
+page-action-email-link-urlbar =
+    .tooltiptext = Unviar l'enllaz per corréu…
+page-action-share-url-panel =
+    .label = Compartir
+page-action-share-url-urlbar =
+    .tooltiptext = Compartir
 page-action-share-more-panel =
     .label = Más…
 page-action-send-tab-not-ready =
     .label = Sincronizando los preseos…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Fixar la llingüeta
+page-action-pin-tab-urlbar =
+    .tooltiptext = Fixar la llingüeta
+page-action-unpin-tab-panel =
+    .label = Lliberar la llingüeta
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Lliberar la llingüeta
 
 ## Auto-hide Context Menu
 
@@ -140,6 +166,12 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Y agora busca con:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Axustes de busca
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Camudar los axustes de busca
 search-one-offs-context-open-new-tab =
     .label = Buscar nuna llingüeta nueva
     .accesskey = l
@@ -155,6 +187,10 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Amiestu d'un motor de busca
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -182,6 +218,8 @@ bookmark-panel-show-editor-checkbox =
     .accesskey = A
 bookmark-panel-done-button =
     .label = Fecho
+bookmark-panel-save-button =
+    .label = Guardar
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -190,6 +228,13 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Información del sitiu de { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Seguranza de la conexón pa { $host }
 identity-connection-not-secure = La conexón nun ye segura
 identity-connection-secure = La conexón ye segura
 identity-connection-internal = Esto ye una páxina segura de { -brand-short-name }.
@@ -215,6 +260,7 @@ identity-https-only-info-turn-on2 = Activa'l mou de namás HTTPS pa esti sitiu s
 identity-https-only-info-no-upgrade = Nun ye posible anovar la conexón a HTTPS.
 identity-permissions-storage-access-header = Cookies ente sitios
 identity-permissions-storage-access-hint = Terceros puen usar cookies ente sitios y datos del sitiu mentanto tas nelli.
+identity-permissions-storage-access-learn-more = Lleer más
 identity-permissions-empty = Nun-y concediesti nengún permisu especial a esti sitiu.
 identity-clear-site-data =
     .label = Llimpiar les cookies y los datos de los sitios…
@@ -321,6 +367,9 @@ popup-silence-notifications-checkbox-warning = { -brand-short-name } nun va amos
 popup-screen-sharing-block =
     .label = Bloquiar
     .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Bloquiar siempres
+    .accesskey = s
 popup-mute-notifications-checkbox = Desactivar los avisos de los sitios web mentanto se comparte
 
 ## WebRTC window or screen share tab switch warning
@@ -331,6 +380,10 @@ popup-mute-notifications-checkbox = Desactivar los avisos de los sitios web ment
 
 ## URL Bar
 
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Busca con { $name } o introduz una direición
 urlbar-remote-control-notification-anchor =
     .tooltiptext = El restolador ta baxo control remotu
 urlbar-permissions-granted =
@@ -352,8 +405,12 @@ urlbar-pocket-button =
 # "Search", and we would like to avoid strings like "Search MSN Search".
 # Variables
 #  $engine (String): the name of a search engine
-urlbar-result-action-search-w-engine = Buscar con { $engine }
+urlbar-result-action-search-w-engine = Busca con { $engine }
 urlbar-result-action-switch-tab = Dir pa la llingüeta
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Buscar en «{ $engine }» direutamente dende la barra de direiciones
 # Shows the result of a formula expression being calculated, the last = sign will be shown
 # as part of the result (e.g. "= 2").
 # Variables
@@ -384,9 +441,7 @@ pointerlock-warning-no-domain = Esti documentu tien el control del punteru. Prim
 
 ## Subframe crash notification
 
-crashed-subframe-learnmore =
-    .label = Lleer más
-    .accesskey = L
+crashed-subframe-message = <strong>Cascó parte d'esta páxina.</strong> Pa facer que { -brand-product-name } sepa d'esti fallu ya igualu rápido, unvia un informe.
 crashed-subframe-learnmore-link =
     .value = Lleer más
 
@@ -394,8 +449,6 @@ crashed-subframe-learnmore-link =
 
 bookmarks-manage-bookmarks =
     .label = Xestionar los marcadores
-bookmarks-recent-bookmarks-panel =
-    .value = Marcadores de recién
 bookmarks-recent-bookmarks-panel-subheader = Marcadores de recién
 bookmarks-toolbar-chevron =
     .tooltiptext = Amosar más marcadores
@@ -470,6 +523,10 @@ more-menu-go-offline =
 
 ## EME notification panel
 
+eme-notifications-drm-content-playing-manage = Xestionar los axustes
+eme-notifications-drm-content-playing-manage-accesskey = X
+eme-notifications-drm-content-playing-dismiss = Escartar
+eme-notifications-drm-content-playing-dismiss-accesskey = E
 
 ## Password save/update panel
 

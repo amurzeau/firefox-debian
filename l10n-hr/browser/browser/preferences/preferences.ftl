@@ -83,7 +83,7 @@ feature-enable-requires-restart = { -brand-short-name } se mora ponovo pokrenuti
 feature-disable-requires-restart = { -brand-short-name } se mora ponovo pokrenuti da bi se onemogućila ova funkcija.
 should-restart-title = Ponovo pokreni { -brand-short-name }
 should-restart-ok = Ponovo pokreni { -brand-short-name } sada
-cancel-no-restart-button = Otkaži
+cancel-no-restart-button = Odustani
 restart-later = Ponovo pokreni kasnije
 
 ## Extension Control Notifications
@@ -402,6 +402,7 @@ update-setting-write-failure-message =
     { -brand-short-name } je naišao na pogrešku i nije spremio ovu promjenu. Uzmi u obzir da postavljanje postavki za ovo aktualiziranje zahtijeva dozvole za pisanje u niže navedenu datoteku. Ti ili tvoj administrator sustava možda možete otkloniti ovu grešku, tako da dozvolite grupi korisnika potpunu kontrolu nad ovom datotekom.
     
     Nije moguće pisati u datoteku: { $path }
+update-setting-write-failure-title2 = Pogreška prilikom spremanju postavki ažuriranja
 update-in-progress-title = Aktualiziranje u tijeku
 update-in-progress-message = Želiš li da { -brand-short-name } nastavi s ovim aktualiziranjem?
 update-in-progress-ok-button = O&dbaci
@@ -1011,14 +1012,16 @@ content-blocking-etp-strict-desc = Jača zaštita, ali može prouzročiti proble
 content-blocking-etp-custom-desc = Odaberi programe za praćenje i skripte koje želiš blokirati.
 content-blocking-private-windows = Praćenje sadržaja u privatnim prozorima
 content-blocking-cross-site-cookies = Međustranični kolačići
+content-blocking-cross-site-cookies-in-all-windows = Međustranični kolačići u svim prozorima (uključujući kolačiće za praćenje)
 content-blocking-cross-site-tracking-cookies = Višestranični kolačići za praćenje
+content-blocking-all-cross-site-cookies-private-windows = Međustranični kolačići u privatnim prozorima
 content-blocking-cross-site-tracking-cookies-plus-isolate = Pratitelji između više stranica, te izoliranje preostalih kolačića
 content-blocking-social-media-trackers = Programi za praćenje s društvenih mreža
 content-blocking-all-cookies = Sve kolačiće
 content-blocking-unvisited-cookies = Kolačiće s neposjećenih stranica
 content-blocking-all-windows-tracking-content = Praćenje sadržaja u svim prozorima
 content-blocking-all-third-party-cookies = Svi kolačići trećih strana
-content-blocking-cryptominers = Kripto rudari
+content-blocking-cryptominers = Kripto-rudari
 content-blocking-fingerprinters = Jedinstvene otiske
 content-blocking-warning-title = Upozorenje!
 content-blocking-and-isolating-etp-warning-description = Blokiranje pratitelja i izoliranje kolačića može utjecati na funkcionalnost nekih stranica. Ponovno učitajte stranicu sa pratiteljem kako bi se učitao sav sadržaj.
@@ -1045,7 +1048,7 @@ content-blocking-expand-section =
     .tooltiptext = Više informacija
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
-    .label = Kripto rudari
+    .label = Kripto-rudari
     .accesskey = K
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.

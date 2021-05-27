@@ -49,7 +49,7 @@ newtab-topsites-image-validation = Nabigo ang pag-load ng larawan. Subukan ang i
 
 newtab-topsites-cancel-button = Kanselahin
 newtab-topsites-delete-history-button = Burahin sa Kasaysayan
-newtab-topsites-save-button = I-save
+newtab-topsites-save-button = i-Save
 newtab-topsites-preview-button = I-preview
 newtab-topsites-add-button = Idagdag
 
@@ -90,12 +90,12 @@ newtab-menu-edit-topsites = I-edit
 newtab-menu-open-new-window = Buksan sa isang Bagong Window
 newtab-menu-open-new-private-window = Buksan sa Bagong Private Window
 newtab-menu-dismiss = Paalisin
-newtab-menu-pin = I-pin
+newtab-menu-pin = i-Pin
 newtab-menu-unpin = I-unpin
 newtab-menu-delete-history = Burahin sa Kasaysayan
 newtab-menu-save-to-pocket = I-save sa { -pocket-brand-name }
 newtab-menu-delete-pocket = I-delete sa { -pocket-brand-name }
-newtab-menu-archive-pocket = Mag-archive sa { -pocket-brand-name }
+newtab-menu-archive-pocket = I-archive sa { -pocket-brand-name }
 newtab-menu-show-privacy-info = Ang aming mga suki at iyong privacy
 
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
@@ -142,7 +142,7 @@ newtab-menu-open-file = Magbukas ng File
 newtab-label-visited = Binisita
 newtab-label-bookmarked = Naka-bookmark
 newtab-label-removed-bookmark = Natanggal na ang bookmark
-newtab-label-recommended = Nagte-trend
+newtab-label-recommended = Trending
 newtab-label-saved = Nai-save na sa { -pocket-brand-name }
 newtab-label-download = Nai-download na
 # This string is used in the story cards to indicate sponsored content

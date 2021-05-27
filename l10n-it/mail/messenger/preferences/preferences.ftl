@@ -12,6 +12,7 @@ preferences-title =
         }
 preferences-tab-title =
     .title = Preferenze
+preferences-doc-title = Preferenze
 category-list =
     .aria-label = Categorie
 pane-general-title = Generale
@@ -90,8 +91,8 @@ update-in-progress-ok-button = I&nterrompi
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Continua
-account-button = Impostazioni account
 addons-button = Estensioni e temi
+account-button = Impostazioni account
 open-addons-sidebar-button = Componenti aggiuntivi e temi
 
 ## OS Authentication dialog
@@ -260,7 +261,7 @@ offline-settings-button =
     .accesskey = N
 diskspace-legend = Spazio su disco
 offline-compact-folder =
-    .label = Compatta le cartelle se serve a risparmiare spazio
+    .label = Compatta le cartelle quando è possibile recuperare
     .accesskey = a
 compact-folder-size =
     .value = Mb in totale
@@ -326,6 +327,8 @@ quoted-text-color =
     .accesskey = o
 search-input =
     .placeholder = Cerca
+search-handler-table =
+    .placeholder = Filtra i tipi di contenuto e le azioni
 type-column-label =
     .label = Tipo di contenuto
     .accesskey = T

@@ -9,6 +9,17 @@ menu-view-charset =
     .label = Amgodiad Testun
     .accesskey = A
 
+## Tools Menu
+
+# Since v89 we dropped the platforms distinction between Options or Preferences
+# and consolidated everything with Preferences.
+menu-tools-preferences =
+    .label = Dewisiadau
+    .accesskey = D
+menu-addons-and-themes =
+    .label = Ychwanegion a Themâu
+    .accesskey = Y
+
 ## Help Menu
 
 menu-help-enter-troubleshoot-mode =
@@ -35,3 +46,18 @@ toolbar-delete-button =
 toolbar-undelete-button =
     .label = Dad-ddileu
     .tooltiptext = Dad-ddileu'r negeseuon hyn
+
+## View / Layout
+
+mail-uidensity-label =
+    .label = Dwysedd
+    .accesskey = D
+mail-uidensity-compact =
+    .label = Cryno
+    .accesskey = C
+mail-uidensity-normal =
+    .label = Arferol
+    .accesskey = A
+mail-uidensity-touch =
+    .label = Cyffwrdd
+    .accesskey = y

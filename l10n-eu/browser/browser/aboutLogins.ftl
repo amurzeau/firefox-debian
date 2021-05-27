@@ -18,6 +18,7 @@ login-filter =
 create-login-button = Sortu saio-hasiera berria
 fxaccounts-sign-in-text = Eskuratu zure pasahitzak zure beste gailuetan
 fxaccounts-sign-in-button = Hasi saioa { -sync-brand-short-name }(e)n
+fxaccounts-sign-in-sync-button = Hasi saioa sinkronizatzeko
 fxaccounts-avatar-button =
     .title = Kudeatu kontua
 
@@ -70,11 +71,15 @@ about-logins-list-item-vulnerable-password-icon =
 
 login-intro-heading = Gordetako saio-hasieren bila? Konfiguratu { -sync-brand-short-name }.
 about-logins-login-intro-heading-logged-out = Gordetako saio-hasieren bila? Konfiguratu { -sync-brand-short-name } edo inporta itzazu.
+about-logins-login-intro-heading-logged-out2 = Gordetako saio-hasieren bila? Aktibatu sinkronizazioa edo inporta itzazu.
 about-logins-login-intro-heading-logged-in = Ez da sinkronizatuta saio-hasierarik aurkitu.
 login-intro-description = Saio-hasierarik gorde baduzu beste gailu bateko { -brand-product-name }(e)n, jarraian dituzu hauek hemen eskuratzeko urratsak:
-login-intro-instruction-fxa = Sortu edo hasi saioa zure { -fxaccount-brand-name } kontuan saio-hasierak gordeta dituzun gailuan
+login-intro-instruction-fxa = Sortu edo hasi saioa zure { -fxaccount-brand-name(kasua: "n") } saio-hasierak gordeta dituzun gailuan
 login-intro-instruction-fxa-settings = Ziurtatu 'Saio-hasierak' kontrol-laukia hautatu duzula { -sync-brand-short-name } ezarpenetan
 about-logins-intro-instruction-help = Laguntza jasotzeko, bisitatu <a data-l10n-name="help-link">{ -lockwise-brand-short-name } laguntza</a>
+login-intro-instructions-fxa = Sortu edo hasi saioa zure { -fxaccount-brand-name(kasua: "n") } saio-hasierak gordeta dituzun gailuan
+login-intro-instructions-fxa-settings = Zoaz Ezarpenak > Sinkronizazioa > Gaitu sinkronizazioa… menu-aukerara eta hautatu 'Saio-hasierak eta pasahitzak' kontrol-laukia.
+login-intro-instructions-fxa-help = Laguntza jasotzeko, bisitatu <a data-l10n-name="help-link">{ -lockwise-brand-short-name } laguntza</a>.
 about-logins-intro-import = Zure saio-hasierak beste nabigatzaile batean gordeta badituzu, <a data-l10n-name="import-link">{ -lockwise-brand-short-name }(e)n inporta ditzakezu</a>
 about-logins-intro-import2 = Zure saio-hasierak { -brand-product-name }(e)tik kanpo badaude gordeta, <a data-l10n-name="import-browser-link">beste nabigatzaile batetik</a> edo <a data-l10n-name="import-file-link">fitxategi batetik</a> inporta ditzakezu
 
@@ -84,7 +89,7 @@ login-item-new-login-title = Sortu saio-hasiera berria
 login-item-edit-button = Editatu
 about-logins-login-item-remove-button = Kendu
 login-item-origin-label = Webgunearen helbidea
-login-item-tooltip-message = Ziurtatu hau bat datorrela saioa-hasten duzun webgunearen helbide zehatzarekin.
+login-item-tooltip-message = Ziurtatu hau bat datorrela saioa hasten duzun webgunearen helbide zehatzarekin.
 login-item-origin =
     .placeholder = https://www.adibidea.eus
 login-item-username-label = Erabiltzaile-izena
@@ -149,7 +154,7 @@ master-password-reload-button =
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] { -brand-product-name } erabiltzen duzun toki orotan izan nahi dituzu zure saio-hasierak? Zoaz zure { -sync-brand-short-name } aukeretara eta hautatu 'Saio-hasierak' kontrol-laukia.
-       *[other] { -brand-product-name } erabiltzen duzun toki orotan izan nahi dituzu zure saio-hasierak? Zoaz zure { -sync-brand-short-name } ezarpenetara eta hautatu 'Saio-hasierak' kontrol-laukia.
+       *[other] { -brand-product-name } erabiltzen duzun toki orotan izan nahi dituzu zure saio-hasierak? Zoaz zure { -sync-brand-short-name } hobespenetara eta hautatu 'Saio-hasierak' kontrol-laukia.
     }
 enable-password-sync-preferences-button =
     .label =
@@ -200,7 +205,7 @@ about-logins-confirm-remove-all-sync-dialog-title =
 about-logins-confirm-remove-all-sync-dialog-message =
     { $count ->
         [1] Honekin, { -brand-short-name }(e)n gordetako saio-hasiera { -fxaccount-brand-name } bidez sinkronizatutako gailu guztietatik kenduko da. Hemen agertzen diren urratzeen inguruko abisuak ere kenduko ditu honek. Ekintza hau ezingo duzu desegin.
-       *[other] Honekin, { -brand-short-name }(e)n gordetako saio-hasiera guztiak { -fxaccount-brand-name } bidez sinkronizatutako gailu guztietatik kenduko da. Hemen agertzen diren urratzeen inguruko abisuak ere kenduko ditu honek. Ekintza hau ezingo duzu desegin.
+       *[other] Honekin, { -brand-short-name }(e)n gordetako saio-hasiera guztiak { -fxaccount-brand-name(kasua: "0") } bidez sinkronizatutako gailu guztietatik kenduko da. Hemen agertzen diren urratzeen inguruko abisuak ere kenduko ditu honek. Ekintza hau ezingo duzu desegin.
     }
 about-logins-confirm-export-dialog-title = Esportatu saio-hasierak eta pasahitzak
 about-logins-confirm-export-dialog-message = Zure pasahitzak testu irakurgarri modura gordeko dira (adib. P@sahitz3skas4) beraz esportatutako fitxategia ireki dezakeen orok ikusi ahal izango ditu.
@@ -311,7 +316,46 @@ about-logins-import-dialog-error-unable-to-read-description = Ziurtatu CSV edo T
 about-logins-import-dialog-error-no-logins-imported = Ez da saio-hasierarik inportatu
 about-logins-import-dialog-error-learn-more = Argibide gehiago
 about-logins-import-dialog-error-try-again = Saiatu berriro…
+about-logins-import-dialog-error-try-import-again = Saiatu berriz inportatzen…
 about-logins-import-dialog-error-cancel = Utzi
+about-logins-import-report-title = Inportazioaren laburpena
+about-logins-import-report-description = Saio-hasiera eta pasahitzak { -brand-short-name }(e)ra inportatu dira.
+#
+# Variables:
+#  $number (number) - The number of the row
+about-logins-import-report-row-index = { $number }. errenkada
+about-logins-import-report-row-description-no-change = Bikoiztua: lehendik dagoen saio-hasiera batekin bat dator
+about-logins-import-report-row-description-modified = Lehendik dagoen saio-hasiera eguneratuta
+about-logins-import-report-row-description-added = Saio-hasiera berria gehituta
+about-logins-import-report-row-description-error = Errorea: eremua falta da
+
+##
+## Variables:
+##  $field (String) - The name of the field from the CSV file for example url, username or password
+
+about-logins-import-report-row-description-error-multiple-values = Errorea: hainbat balio { $field } eremurako
+about-logins-import-report-row-description-error-missing-field = Errorea { $field } eremua falta da
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-report-added =
+    { $count ->
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Saio-hasiera berri gehitu dira</div>
+    }
+about-logins-import-report-modified =
+    { $count ->
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Saio-hasiera eguneratu dira (lehendik zeudenak)</div>
+    }
+about-logins-import-report-no-change =
+    { $count ->
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Saio-hasiera bikoiztu</div> <div data-l10n-name="not-imported">(ez dira inportatu)</div>
+    }
+about-logins-import-report-error =
+    { $count ->
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Errore</div> <div data-l10n-name="not-imported">(ez dira inportatu)</div>
+    }
 
 ## Logins import report page
 

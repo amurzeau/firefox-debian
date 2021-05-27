@@ -80,6 +80,7 @@ login-intro-instruction-fxa = Ustvarite { -fxaccount-brand-name } ali se prijavi
 login-intro-instruction-fxa-settings = Prepričajte se, da ste v Nastavitvah { -sync-brand-short-name }a označili polje Prijave
 about-logins-intro-instruction-help = Za dodatno pomoč obiščite <a data-l10n-name="help-link">Podporo { -lockwise-brand-short-name }</a>
 login-intro-instructions-fxa = Ustvarite { -fxaccount-brand-name(capitalization: "sentence") } ali se prijavite na napravi, na kateri so shranjene vaše prijave.
+login-intro-instructions-fxa-settings = Pojdite v Nastavitve > Sinhronizacija > Vklopi sinhronizacijo … in označite Prijave in gesla.
 login-intro-instructions-fxa-help = Za dodatno pomoč obiščite <a data-l10n-name="help-link">Podporo { -lockwise-brand-short-name }</a>.
 about-logins-intro-import = Če so vaše prijave shranjene v drugem brskalniku, jih lahko <a data-l10n-name="import-link">uvozite v { -lockwise-brand-short-name }</a>
 about-logins-intro-import2 = Če so vaše prijave shranjene izven { -brand-product-name }a, jih lahko <a data-l10n-name="import-browser-link">uvozite iz drugega brskalnika</a> ali <a data-l10n-name="import-file-link">datoteke</a>
@@ -214,6 +215,14 @@ about-logins-confirm-remove-all-sync-dialog-title =
         [few] Odstrani { $count } prijave z vseh naprav?
        *[other] Odstrani { $count } prijav z vseh naprav?
     }
+about-logins-confirm-remove-all-sync-dialog-message =
+    { $count ->
+        [1] S tem boste odstranili prijavo, ki ste jo shranili v { -brand-short-name }, na vseh napravah, sinhroniziranih z vašim { -fxaccount-brand-name }om. S tem boste odstranili tudi opozorila o krajah podatkov, ki se prikažejo tukaj. Tega dejanja ne boste mogli razveljaviti.
+        [one] S tem boste odstranili prijavo, ki ste jo shranili v { -brand-short-name }, na vseh napravah, sinhroniziranih z vašim { -fxaccount-brand-name }om. S tem boste odstranili tudi opozorila o krajah podatkov, ki se prikažejo tukaj. Tega dejanja ne boste mogli razveljaviti.
+        [two] S tem boste odstranili vse prijave, ki ste jih shranili v { -brand-short-name }, na vseh napravah, sinhroniziranih z vašim { -fxaccount-brand-name }om. S tem boste odstranili tudi opozorila o krajah podatkov, ki se prikažejo tukaj. Tega dejanja ne boste mogli razveljaviti.
+        [few] S tem boste odstranili vse prijave, ki ste jih shranili v { -brand-short-name }, na vseh napravah, sinhroniziranih z vašim { -fxaccount-brand-name }om. S tem boste odstranili tudi opozorila o krajah podatkov, ki se prikažejo tukaj. Tega dejanja ne boste mogli razveljaviti.
+       *[other] S tem boste odstranili vse prijave, ki ste jih shranili v { -brand-short-name }, na vseh napravah, sinhroniziranih z vašim { -fxaccount-brand-name }om. S tem boste odstranili tudi opozorila o krajah podatkov, ki se prikažejo tukaj. Tega dejanja ne boste mogli razveljaviti.
+    }
 about-logins-confirm-export-dialog-title = Izvozite prijave in gesla
 about-logins-confirm-export-dialog-message = Vaša gesla bodo shranjena kot berljivo besedilo (npr. Sl@boG3slo), zato bodo vidna vsakomur, ki bo lahko odprl izvoženo datoteko.
 about-logins-confirm-export-dialog-confirm-button = Izvozi …
@@ -322,6 +331,7 @@ about-logins-import-dialog-error-unable-to-read-description = Prepričajte se, d
 about-logins-import-dialog-error-no-logins-imported = Uvožena ni bila nobena prijava
 about-logins-import-dialog-error-learn-more = Več o tem
 about-logins-import-dialog-error-try-again = Poskusi znova …
+about-logins-import-dialog-error-try-import-again = Poskusi znova uvoziti …
 about-logins-import-dialog-error-cancel = Prekliči
 about-logins-import-report-title = Povzetek uvoza
 about-logins-import-report-description = Prijave in gesla, uvožena v { -brand-short-name }.
@@ -329,6 +339,9 @@ about-logins-import-report-description = Prijave in gesla, uvožena v { -brand-s
 # Variables:
 #  $number (number) - The number of the row
 about-logins-import-report-row-index = Vrstica { $number }
+about-logins-import-report-row-description-no-change = Podvojitev: popolno ujemanje z obstoječo prijavo
+about-logins-import-report-row-description-modified = Obstoječa prijava posodobljena
+about-logins-import-report-row-description-added = Nova prijava dodana
 about-logins-import-report-row-description-error = Napaka: Manjkajoče polje
 
 ##
@@ -348,6 +361,27 @@ about-logins-import-report-added =
         [two] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">novi prijavi dodani</div>
         [few] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">nove prijave dodane</div>
        *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">novih prijav dodanih</div>
+    }
+about-logins-import-report-modified =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">obstoječa prijava posodobljena</div>
+        [two] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">obstoječi prijavi posodobljeni</div>
+        [few] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">obstoječe prijave posodobljene</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">obstoječih prijav posodobljenih</div>
+    }
+about-logins-import-report-no-change =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">podvojena prijava</div> <div data-l10n-name="not-imported">(ni uvoženo)</div>
+        [two] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">podvojeni prijavi</div> <div data-l10n-name="not-imported">(ni uvoženo)</div>
+        [few] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">podvojene prijave</div> <div data-l10n-name="not-imported">(ni uvoženo)</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">podvojenih prijav</div> <div data-l10n-name="not-imported">(ni uvoženo)</div>
+    }
+about-logins-import-report-error =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">napaka</div> <div data-l10n-name="not-imported">(ni uvoženo)</div>
+        [two] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">napaki</div> <div data-l10n-name="not-imported">(ni uvoženo)</div>
+        [few] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">napake</div> <div data-l10n-name="not-imported">(ni uvoženo)</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">napak</div> <div data-l10n-name="not-imported">(ni uvoženo)</div>
     }
 
 ## Logins import report page

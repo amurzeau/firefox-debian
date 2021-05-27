@@ -141,3 +141,46 @@ move-attachment-last-panel-button =
 button-return-receipt =
     .label = Derbynneb
     .tooltiptext = Gofyn am dderbynneb dychwelyd i'r neges hon
+#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
+consider-bcc-notification = Gall y  { $count } derbyniwr yn At a Cc weld cyfeiriad ei gilydd. Gallwch osgoi datgelu derbynwyr trwy ddefnyddio Bcc yn lle hynny.
+
+# Addressing Area
+
+to-compose-address-row-label =
+    .value = At
+#   $key (String) - the shortcut key for this field
+to-compose-show-address-row-menuitem =
+    .label = Maes { to-compose-address-row-label.value }
+    .accesskey = M
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+to-compose-show-address-row-label =
+    .value = { to-compose-address-row-label.value }
+    .tooltiptext = Dangos Maes { to-compose-address-row-label.value } ({ to-compose-show-address-row-menuitem.acceltext })
+cc-compose-address-row-label =
+    .value = Cc
+#   $key (String) - the shortcut key for this field
+cc-compose-show-address-row-menuitem =
+    .label = Maes { cc-compose-address-row-label.value }
+    .accesskey = M
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+cc-compose-show-address-row-label =
+    .value = { cc-compose-address-row-label.value }
+    .tooltiptext = Dangos Maes{ cc-compose-address-row-label.value } ({ cc-compose-show-address-row-menuitem.acceltext })
+bcc-compose-address-row-label =
+    .value = Bcc
+#   $key (String) - the shortcut key for this field
+bcc-compose-show-address-row-menuitem =
+    .label = Maes { bcc-compose-address-row-label.value }
+    .accesskey = a
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+bcc-compose-show-address-row-label =
+    .value = { bcc-compose-address-row-label.value }
+    .tooltiptext = Dangos Maes { bcc-compose-address-row-label.value } ({ bcc-compose-show-address-row-menuitem.acceltext })
+#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
+many-public-recipients-info = Bydd y  { $count } derbyniwr yn At a Cc weld cyfeiriad ei gilydd. Gallwch osgoi datgelu derbynwyr trwy ddefnyddio Bcc yn lle.
+many-public-recipients-bcc =
+    .label = Defnyddio Bcc yn lle hynny
+    .accesskey = D
+many-public-recipients-ignore =
+    .label = Cadw Derbynwyr yn Gyhoeddus
+    .accesskey = G

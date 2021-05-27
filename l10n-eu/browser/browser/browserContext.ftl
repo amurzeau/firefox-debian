@@ -88,6 +88,12 @@ toolbar-button-stop =
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
 
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
+
 ## Save Page
 
 main-context-menu-page-save =
@@ -102,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Egin orri honen laster-marka
     .accesskey = E
     .tooltiptext = Egin orri honen laster-marka
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Egin orriaren laster-marka
+    .accesskey = m
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Editatu laster-marka
+    .accesskey = m
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -206,6 +224,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Abiadura bizia (2×)
     .accesskey = b
+main-context-menu-media-play-speed-2 =
+    .label = Abiadura
+    .accesskey = d
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Begizta
     .accesskey = B
@@ -283,12 +314,12 @@ main-context-menu-image-email =
 main-context-menu-image-set-as-background =
     .label = Jarri idazmahaiaren atzeko planoan…
     .accesskey = J
-main-context-menu-image-info =
-    .label = Ikusi irudiaren informazioa
-    .accesskey = f
 main-context-menu-image-set-image-as-background =
     .label = Ezarri irudia idazmahaiaren atzeko plano gisa…
     .accesskey = z
+main-context-menu-image-info =
+    .label = Ikusi irudiaren informazioa
+    .accesskey = f
 main-context-menu-image-desc =
     .label = Ikusi deskribapena
     .accesskey = d
@@ -347,6 +378,9 @@ main-context-menu-suggest-strong-password =
     .accesskey = n
 main-context-menu-manage-logins =
     .label = Kudeatu saio-hasierak…
+    .accesskey = K
+main-context-menu-manage-logins2 =
+    .label = Kudeatu saio-hasierak
     .accesskey = K
 main-context-menu-keyword =
     .label = Gehitu bilaketa honentzat gako-hitza…

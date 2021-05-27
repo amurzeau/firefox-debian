@@ -249,6 +249,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Přidat „{ $engineName }“
+    .tooltiptext = Přidá vyhledávač „{ $engineName }“
+    .aria-label = Přidat vyhledávač „{ $engineName }“
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Přidat vyhledávač
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -296,8 +308,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Informace o serveru { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Zabezpečení spojení se serverem { $host }
 identity-connection-not-secure = Spojení není zabezpečené
 identity-connection-secure = Zabezpečené spojení
+identity-connection-failure = Chyba spojení
 identity-connection-internal =
     Toto je zabezpečená stránka { -brand-short-name.gender ->
         [masculine] { -brand-short-name(case: "gen") }
@@ -340,6 +360,7 @@ identity-https-only-info-turn-off2 = Pokud se zdá, že je stránka rozbitá, zk
 identity-https-only-info-no-upgrade = Nepodařilo se přepnout spojení z HTTP.
 identity-permissions-storage-access-header = Cross-site cookies
 identity-permissions-storage-access-hint = Tyto weby mohou používat cross-site cookies a během vaší návštěvy této stránky tak přistupovat k jejím datům.
+identity-permissions-storage-access-learn-more = Zjistit více
 identity-permissions-reload-hint = Pro provedení změn může být potřeba stránku znovu načíst.
 identity-permissions-empty = Tento server nemá žádná zvláštní oprávnění.
 identity-clear-site-data =
@@ -529,6 +550,11 @@ urlbar-placeholder-with-name =
     .placeholder = Zadejte webovou adresu nebo dotaz pro vyhledávač { $name }
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Prohlížeč je ovládán vzdáleně
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Prohlížeč je ovládán vzdáleně (pomocí nástroje { $component })
 urlbar-permissions-granted =
     .tooltiptext = Tomuto serveru jste udělili dodatečná oprávnění.
 urlbar-switch-to-tab =
@@ -623,9 +649,6 @@ crashed-subframe-message =
         [neuter] { -brand-product-name(case: "gen") }
        *[other] aplikace { -brand-product-name }
     } tento problém nahlásit pro zrychlení opravy, odešlete prosím hlášení.
-crashed-subframe-learnmore =
-    .label = Zjistit více
-    .accesskey = Z
 crashed-subframe-learnmore-link =
     .value = Zjistit více
 crashed-subframe-submit =
@@ -638,8 +661,6 @@ bookmarks-show-all-bookmarks =
     .label = Zobrazit všechny záložky
 bookmarks-manage-bookmarks =
     .label = Správa záložek
-bookmarks-recent-bookmarks-panel =
-    .value = Naposledy přidané
 bookmarks-recent-bookmarks-panel-subheader = Naposledy přidané
 bookmarks-toolbar-chevron =
     .tooltiptext = Zobrazí více záložek

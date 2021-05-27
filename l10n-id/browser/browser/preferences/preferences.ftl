@@ -392,6 +392,14 @@ update-setting-write-failure-message =
     
     Tidak dapat menulis ke file: { $path }
 update-setting-write-failure-title2 = Gagal menyimpan pengaturan Pemutakhiran
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name } mengalami kesalahan dan tidak menyimpan perubahan ini. Perhatikan bahwa perubahan pengaturan pembaruan ini memerlukan izin untuk menulis ke file di bawah ini. Anda atau administrator sistem mungkin dapat menyelesaikan kesalahan dengan memberikan kontrol penuh grup Pengguna ke file ini.
+    
+    Tidak dapat menulis ke file: { $path }
 update-in-progress-title = Sedang Memperbarui
 update-in-progress-message = Apakah Anda ingin { -brand-short-name } melanjutkan pembaruan ini?
 update-in-progress-ok-button = &Hapus Perubahan
@@ -759,6 +767,10 @@ sync-engine-prefs =
         }
     .tooltiptext = Setelan Umum, Privasi, dan Keamanan yang Anda ubah
     .accesskey = P
+sync-engine-settings =
+    .label = Pengaturan
+    .tooltiptext = Pengaturan Umum, Privasi, dan Keamanan yang Anda ubah
+    .accesskey = P
 
 ## The device name controls.
 
@@ -990,9 +1002,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Seimbang untuk perlindungan dan kinerja. Halaman akan dimuat secara normal.
 content-blocking-etp-strict-desc = Perlindungan yang lebih kuat, tetapi dapat menyebabkan beberapa situs atau konten rusak.
 content-blocking-etp-custom-desc = Pilih pelacak dan skrip yang akan diblokir.
+content-blocking-etp-blocking-desc = { -brand-short-name } memblokir yang berikut:
 content-blocking-private-windows = Melacak konten di Jendela Pribadi
 content-blocking-cross-site-cookies = Kuki lintas situs
+content-blocking-cross-site-cookies-in-all-windows = Kuki lintas situs di semua jendela (termasuk kuki pelacakan)
 content-blocking-cross-site-tracking-cookies = Kuki pelacakan lintas situs
+content-blocking-all-cross-site-cookies-private-windows = Kuki lintas situs di Jendela Pribadi
 content-blocking-cross-site-tracking-cookies-plus-isolate = Kuki pelacak lintas situs, dan isolasi kuki tersisa
 content-blocking-social-media-trackers = Pelacak media sosial
 content-blocking-all-cookies = Semua kuki
@@ -1112,6 +1127,8 @@ collection-backlogged-crash-reports =
     .label = Izinkan { -brand-short-name } mengirim tumpukan laporan kerusakan atas nama Anda
     .accesskey = r
 collection-backlogged-crash-reports-link = Pelajari Lebih Lanjut
+collection-backlogged-crash-reports-with-link = Izinkan { -brand-short-name } mengirim laporan kerusakan sebelumnya atas nama Anda <a data-l10n-name="crash-reports-link">Pelajari lebih lanjut</a>
+    .accesskey = l
 
 ## Privacy Section - Security
 ##
@@ -1176,6 +1193,8 @@ space-alert-under-5gb-message = { -brand-short-name } kehabisan ruang disk. Kont
 space-alert-over-5gb-settings-button =
     .label = Buka Pengaturan
     .accesskey = B
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name } kehabisan ruang disk.</strong> Konten situs web mungkin tidak dapat tampil secara tepat. Anda dapat membersihkan data tersimpan dalam Pengaturan > Privasi & Keamanan > Kuki dan Data Situs.
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name } kehabisan ruang disk.</strong> Konten situs barangkali tidak dapat ditampilkan dengan tepat. Kunjungi “Pelajari Lebih Lanjut” untuk mengoptimalkan penggunaan disk Anda untuk pengalaman penjelajahan yang lebih baik.
 
 ## Privacy Section - HTTPS-Only
 

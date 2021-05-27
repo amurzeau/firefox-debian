@@ -7,3 +7,16 @@ default-browser-notification-message = <strong>¿Emopyenda { -brand-short-name }
 default-browser-notification-button =
     .label = Emopyenda ijypykuéramo
     .accesskey = S
+
+## These strings are used for the default browser prompt. There are 2 variations
+## depending on the operating system (Windows vs other). The checkbox label and
+## secondary button are shared between the variants.
+
+default-browser-prompt-title-pin = ¿Ejapose { -brand-short-name }-gui kundahára eipuruvéva?
+default-browser-prompt-message-pin = Ereko { -brand-short-name } aig̃uite ndehegui — ejapo chugui kundahára ijypyguáva ha emboja tembiaporã rupápe.
+default-browser-prompt-button-primary-pin = Ejapo kundahára eipuruvévarõ
+default-browser-prompt-title-alt = Ejapo { -brand-short-name }-gui ne kundaha ypyguávarõ
+default-browser-prompt-message-alt = Erekosépa ipya’e, hekorosã ha hekoñemíva eikundaha vove.
+default-browser-prompt-button-primary-alt = Ejapo kundahára ijypyguávarõ
+default-browser-prompt-checkbox-not-again-label = Anive ehechauka ko ñe’ẽmondo
+default-browser-prompt-button-secondary = Ani ko’ág̃a

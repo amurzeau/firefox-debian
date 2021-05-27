@@ -184,7 +184,7 @@ main-context-menu-copy-link =
     .accesskey = z
 main-context-menu-copy-link-simple =
     .label = Copia link
-    .accesskey = k
+    .accesskey = a
 
 ## Media (video/audio) controls
 ##
@@ -427,7 +427,7 @@ main-context-menu-view-selection-source =
     .accesskey = u
 main-context-menu-take-screenshot =
     .label = Cattura schermata
-    .accesskey = C
+    .accesskey = e
 main-context-menu-view-page-source =
     .label = Visualizza sorgente pagina
     .accesskey = u

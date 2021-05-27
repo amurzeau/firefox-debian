@@ -232,6 +232,10 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = ব্যক্তিগত উইন্ডোর জন্য ডিফল্ট অনুসন্ধান ইঞ্জিন হিসেবে সেট করুন
     .accesskey = P
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = অনুসন্ধান ইঞ্জিন যোগ
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -268,6 +272,13 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = { $host } এর সাইট তথ্য
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = { $host } এর জন্য সংযোগ সুরক্ষা
 identity-connection-not-secure = সংযোগ নিরাপদ নয়
 identity-connection-secure = সংযোগ সুরক্ষিত
 identity-connection-internal = এটি একটি সুরক্ষিত { -brand-short-name } পাতা।

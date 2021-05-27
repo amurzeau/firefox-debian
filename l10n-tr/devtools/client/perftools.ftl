@@ -24,6 +24,7 @@ perftools-heading-local-build = Yerel build
 ##
 
 perftools-description-intro = Kayıtlar yeni bir sekmede <a>profiler.firefox.com</a> adresini açar. Tüm veriler cihazınızda yerel olarak depolanır. Paylaşmak istediklerinizi upload edebilirsiniz.
+perftools-description-local-build = Eğer bu makinede kendi derlediğiniz bir yapının profilini çıkarıyorsanız, lütfen yapı objdir’inizi aşağıdaki listeye ekleyin. Böylece sembol bilgilerini aramak için kullanılabilir.
 
 ## The controls for the interval at which the profiler samples the code.
 
@@ -67,12 +68,16 @@ perftools-button-edit-settings = Ayarları düzenle…
 
 perftools-thread-gecko-main =
     .title = Hem üst işlem hem de içerik işlemleri için ana işlemler
+perftools-thread-compositor =
+    .title = Sayfadaki farklı paint edilmiş elemanları bir araya getirir
 perftools-thread-dom-worker =
     .title = Bu, hem web worker’ları hem de service worker’ları işler
 perftools-thread-renderer =
     .title = WebRender etkinleştirildiğinde OpenGL çağrılarını yürüten iş parçacığı
 perftools-thread-render-backend =
     .title = WebRender RenderBackend iş parçacığı
+perftools-thread-paint-worker =
+    .title = Ana iş parçacığı dışında painting etkinleştirildiğinde painting'in gerçekleşeceği iş parçacığı
 perftools-thread-style-thread =
     .title = Stil hesaplaması birden çok iş parçacığına bölünür
 pref-thread-stream-trans =
@@ -83,16 +88,19 @@ perftools-thread-img-decoder =
     .title = Görüntü çözme iş parçacıkları
 perftools-thread-dns-resolver =
     .title = DNS çözümleme bu iş parçacığında gerçekleşir
+perftools-thread-js-helper =
+    .title = JS engine background work such as off-main-thread compiles
 
 ##
 
 perftools-record-all-registered-threads = Yukarıdaki seçimleri atla ve tüm kayıtlı iş parçacıklarını kaydet
+perftools-tools-threads-input-label =
+    .title = Bu iş parçacığı adları, profilleyicide profili çıkarılacak iş parçacıklarının virgülle ayrılmış listesidir. İç parçacığı adının dahil edilmesi için kısmi eşleşme olması yeterlidir. Adlar boşluk karakterine duyarlıdır.
 
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
 ## preferences are true.
 
--profiler-brand-name = Firefox Profilleyici
 perftools-onboarding-message = <b>Yeni</b>: { -profiler-brand-name } artık geliştirici araçlarına entegre edildi. Bu güçlü yeni araç hakkında <a>daha fazla bilgi edinin</a>.
 # `options-context-advanced-settings` is defined in toolbox-options.ftl
 perftools-onboarding-reenable-old-panel = (Sınırlı bir süre için <a>{ options-context-advanced-settings }</a> aracılığıyla eski Performans paneline erişebilirsiniz.)

@@ -1018,9 +1018,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Equilibrado para protección y rendimiento. Las páginas se cargarán normalmente.
 content-blocking-etp-strict-desc = Mayor protección, pero puede hacer que algunos sitios o contenidos fallen.
 content-blocking-etp-custom-desc = Elige qué rastreadores y scripts bloquear.
+content-blocking-etp-blocking-desc = { -brand-short-name } bloquea lo siguiente:
 content-blocking-private-windows = Contenido de rastreo en ventanas privadas
 content-blocking-cross-site-cookies = Cookies de rastreo
+content-blocking-cross-site-cookies-in-all-windows = Cookies de sitios cruzados en todas las ventanas (incluye cookies de rastreo)
 content-blocking-cross-site-tracking-cookies = Cookies de rastreo de sitios cruzados
+content-blocking-all-cross-site-cookies-private-windows = Cookies de sitios cruzados en ventanas privadas
 content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies de rastreo de sitios cruzados, y aislación del resto de las cookies
 content-blocking-social-media-trackers = Rastreadores de redes sociales
 content-blocking-all-cookies = Todas las cookies
@@ -1140,6 +1143,8 @@ collection-backlogged-crash-reports =
     .label = Permitir a { -brand-short-name } enviar reportes de fallos acumulados a tu nombre
     .accesskey = c
 collection-backlogged-crash-reports-link = Aprender más
+collection-backlogged-crash-reports-with-link = Permitir a { -brand-short-name } enviar reportes de fallos acumulados en tu nombre. <a data-l10n-name="crash-reports-link">Aprender más</a>
+    .accesskey = c
 
 ## Privacy Section - Security
 ##

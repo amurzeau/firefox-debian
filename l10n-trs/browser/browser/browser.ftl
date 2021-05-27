@@ -222,6 +222,10 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Dunâj da' nahuin man sa riña nana'uì' niganjt sa ruhuât riña Private Windows
     .accesskey = P
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Nutò' a'ngô sa ruguñu'unj ñù' nana'uì'
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -258,6 +262,13 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Si nuguàn' sîtio guendâ { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Nitāj huā ahī koneksiôn guendâ { $host }
 identity-connection-not-secure = Nitāj seguridâ nikāj koneksiôn
 identity-connection-secure = Huā seguridâ nikāj koneksiôn
 identity-connection-internal = Nitaj si hua ahī pajina nikaj ñu'unj { -brand-short-name }

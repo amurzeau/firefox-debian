@@ -58,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Sinkronizazioa
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = { -brand-short-name } esperimentuak
 category-experimental =
     .tooltiptext = { -brand-short-name } esperimentuak
 pane-experimental-subtitle = Kontuz jarraitu
 pane-experimental-search-results-header = { -brand-short-name } esperimentuak: kontuz jarraitu
 pane-experimental-description = Konfigurazio-hobespen aurreratuak aldatzeak { -brand-short-name }(r)en errendimendu edo segurtasunean eragin lezake.
+pane-experimental-description2 = Konfigurazio-hobespen aurreratuak aldatzeak { -brand-short-name }(r)en errendimendu edo segurtasunean eragin lezake.
 pane-experimental-reset =
     .label = Berrezarri lehenespenak
     .accesskey = h
@@ -110,7 +114,7 @@ extension-controlled-web-notifications = Hedapen bat, <img data-l10n-name="icon"
 extension-controlled-default-search = Hedapen batek (<img data-l10n-name="icon"/> { $name }) zure bilaketa-motor lehenetsia ezarri du.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
-extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name } hedapenak edukiontzi-fitxak behar ditu.
+extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name } hedapenak edukiontzi-fitxak gaituta egotea eskatzen du.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlled-websites-content-blocking-all-trackers = Hedapen bat, <img data-l10n-name="icon"/> { $name }, ezarpen hau kontrolatzen ari da.
@@ -133,6 +137,8 @@ search-results-empty-message =
         [windows] Barkatu! Aukeretan ez dago "<span data-l10n-name="query"></span>" bilaketarako emaitzarik.
        *[other] Barkatu! Hobespenetan ez dago "<span data-l10n-name="query"></span>" bilaketarako emaitzarik.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Barkatu! Ezarpenetan ez dago "<span data-l10n-name="query"></span>" bilaketarako emaitzarik.
 search-results-help-link = Laguntza behar duzu? Bisitatu <a data-l10n-name="url">{ -brand-short-name }(r)en laguntza</a>
 
 ## General Section
@@ -373,7 +379,7 @@ update-history =
     .accesskey = E
 update-application-allow-description = Baimendu { -brand-short-name }(r)i
 update-application-auto =
-    .label = Instalatu eguneraketak automatikoki (gomendatua)
+    .label = Eguneraketak automatikoki instalatzen (gomendatua)
     .accesskey = a
 update-application-check-choose =
     .label = Eguneraketak bilatzen baina utzi aukeratzen instalatuko diren edo ez
@@ -381,6 +387,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Ez egiaztatu inoiz eguneraketarik dagoen (ez gomendatua)
     .accesskey = n
+update-application-background-enabled =
+    .label = { -brand-short-name } ez denean exekutatzen ari
+    .accesskey = z
 update-application-warning-cross-user-setting = Ezarpen honek Windows kontu guztiei eta { -brand-short-name }(r)en instalazio hau darabilten profilei eragingo die.
 update-application-use-service =
     .label = Erabili atzeko planoko zerbitzua eguneraketak instalatzeko
@@ -392,6 +401,15 @@ update-setting-write-failure-title = Errorea eguneraketen hobespenak gordetzean
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
     { -brand-short-name }(e)k errore bat aurkitu du eta ez du aldaketa hau gorde. Kontuan izan eguneraketen hobespen hau ezartzeak azpiko fitxategia idazteko baimenak behar dituela. Zu edo sistema-kudeatzaile bat errorea konpontzeko moduan izan zaitezkete erabiltzaileen taldeari fitxategi honetarako kontrol osoa emanez.
+    
+     Ezin da fitxategira idatzi: { $path }
+update-setting-write-failure-title2 = Errorea eguneraketa-ezarpenak gordetzean
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name }(e)k errore bat aurkitu du eta ez du aldaketa hau gorde. Kontuan izan eguneraketen ezarpen hau aldatzeak azpiko fitxategia idazteko baimenak behar dituela. Zu edo sistema-kudeatzaile bat errorea konpontzeko moduan izan zaitezkete erabiltzaileen taldeari fitxategi honetarako kontrol osoa emanez.
     
      Ezin da fitxategira idatzi: { $path }
 update-in-progress-title = Eguneraketa burutzen ari da
@@ -591,10 +609,11 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Erakutsi bilaketa-iradokizunak leiho pribatuetan
 suggestions-addressbar-settings-generic = Aldatu hobespenak bilaketa-motorren bestelako iradokizunetarako
+suggestions-addressbar-settings-generic2 = Aldatu ezarpenak bilaketa-motorren bestelako iradokizunetarako
 search-suggestions-cant-show = Bilaketa-iradokizunak ez dira helbide-barran erakutsiko { -brand-short-name }(e)k historia inoiz ez gogoratzeko konfiguratu duzulako.
 search-one-click-header = Klik bakarreko bilaketa-motorrak
 search-one-click-header2 = Bilaketa-lasterbideak
-search-one-click-desc = Aukeratu gako-hitz bat idazten hastean helbide- eta bilaketa-barren azpian agertzen diren ordezko bilaketa-motorrak.
+search-one-click-desc = Aukeratu gako-hitz bat idazten hasi ahala helbide- eta bilaketa-barren azpian agertuko diren ordezko bilaketa-motorrak.
 search-choose-engine-column =
     .label = Bilaketa-motorra
 search-choose-keyword-column =
@@ -625,6 +644,8 @@ containers-back-button =
             [windows] Itzuli aukeretara
            *[other] Itzuli hobespenetara
         }
+containers-back-button2 =
+    .aria-label = Itzuli ezarpenetara
 containers-header = Edukiontzi-fitxak
 containers-add-button =
     .label = Gehitu edukiontzi berria
@@ -634,6 +655,8 @@ containers-new-tab-check =
     .accesskey = H
 containers-preferences-button =
     .label = Hobespenak
+containers-settings-button =
+    .label = Ezarpenak
 containers-remove-button =
     .label = Kendu
 
@@ -645,6 +668,10 @@ sync-signedout-description = Sinkronizatu laster-markak, historia, fitxak, pasah
 sync-signedout-account-signin2 =
     .label = Hasi saioa { -sync-brand-short-name }(e)n…
     .accesskey = H
+sync-signedout-description2 = Sinkronizatu laster-markak, historia, fitxak, pasahitzak, gehigarriak eta ezarpenak zure gailu guztien artean.
+sync-signedout-account-signin3 =
+    .label = Hasi saioa sinkronizatzeko…
+    .accesskey = s
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -684,6 +711,10 @@ prefs-sync-setup =
     .label = Konfiguratu { -sync-brand-short-name }…
     .accesskey = K
 prefs-sync-offer-setup-label = Sinkronizatu laster-markak, historia, fitxak, pasahitzak, gehigarriak eta hobespenak zure gailu guztien artean.
+prefs-sync-turn-on-syncing =
+    .label = Gaitu sinkronizazioa…
+    .accesskey = s
+prefs-sync-offer-setup-label2 = Sinkronizatu laster-markak, historia, fitxak, pasahitzak, gehigarriak eta ezarpenak zure gailu guztien artean.
 prefs-sync-now =
     .labelnotsyncing = Sinkronizatu orain
     .accesskeynotsyncing = S
@@ -704,6 +735,7 @@ sync-currently-syncing-prefs =
         [windows] Aukerak
        *[other] Hobespenak
     }
+sync-currently-syncing-settings = Ezarpenak
 sync-change-options =
     .label = Aldatu…
     .accesskey = A
@@ -751,6 +783,10 @@ sync-engine-prefs =
         }
     .tooltiptext = Aldatu dituzun 'Orokorra', 'Pribatutasuna' eta 'Segurtasuna' ataletako ezarpenak
     .accesskey = o
+sync-engine-settings =
+    .label = Ezarpenak
+    .tooltiptext = Aldatu dituzun 'Orokorra', 'Pribatutasuna' eta 'Segurtasuna' ataletako ezarpenak
+    .accesskey = z
 
 ## The device name controls.
 
@@ -984,7 +1020,9 @@ content-blocking-etp-strict-desc = Babes sendoagoa baina zenbait gune edo eduki 
 content-blocking-etp-custom-desc = Aukeratu blokeatu beharreko jarraipen-elementu eta scriptak.
 content-blocking-private-windows = Edukiaren jarraipena leiho pribatuetan
 content-blocking-cross-site-cookies = Guneen arteko cookieak
+content-blocking-cross-site-cookies-in-all-windows = Guneen arteko cookieak leiho guztietan (jarraipen-cookieak barne)
 content-blocking-cross-site-tracking-cookies = Guneen arteko cookie jarraipen-egileak
+content-blocking-all-cross-site-cookies-private-windows = Guneen arteko cookieak leiho pribatuetan
 content-blocking-cross-site-tracking-cookies-plus-isolate = Guneen arteko jarraipen cookieak; bakartu gainerako cookieak
 content-blocking-social-media-trackers = Sare sozialetako jarraipen-elementuak
 content-blocking-all-cookies = Cookie guztiak
@@ -995,7 +1033,7 @@ content-blocking-cryptominers = Kriptomeatzariak
 content-blocking-fingerprinters = Hatz-marka bidezko jarraipena egiten duten elementuak
 content-blocking-warning-title = Argi!
 content-blocking-and-isolating-etp-warning-description = Jarraipen-elementuak blokeatuz eta cookieak bakartuz gero, zenbait gunetako eginbideak kaltetu litezke. Eduki guztiak kargatzeko, berritu jarraipen-elementuak dituen orria.
-content-blocking-and-isolating-etp-warning-description-2 = Hainbat webgunek edukiak ondo ez bistaratzea edo ondo ez ibiltzea eragin lezake ezarpen honek. Gune batek hondatua badirudi, gune horretarako jarraipenaren-babesa desgaitu nahiko duzu eduki guztia karga dadin.
+content-blocking-and-isolating-etp-warning-description-2 = Hainbat webgunek edukiak ondo ez bistaratzea edo ondo ez ibiltzea eragin lezake ezarpen honek. Gune batek hondatua badirudi, gune horretarako jarraipenaren babesa desgaitu nahiko duzu eduki guztia karga dadin.
 content-blocking-warning-learn-how = Ikasi nola
 content-blocking-reload-description = Zure fitxak berritu beharko dituzu aldaketa hauek eragina izan dezaten.
 content-blocking-reload-tabs-button =
@@ -1165,6 +1203,11 @@ space-alert-under-5gb-ok-button =
     .label = Ados, ulertu dut
     .accesskey = A
 space-alert-under-5gb-message = { -brand-short-name } leku erabilgarririk gabe gelditzen ari da diskoan. Webgunearen edukiak agian ez dira ondo bistaratuko. Bisitatu "Argibide gehiago" diskoaren erabilpena optimizatu eta nabigatze-esperientzia hobetzeko.
+space-alert-over-5gb-settings-button =
+    .label = Ireki ezarpenak
+    .accesskey = k
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name } leku erabilgarririk gabe gelditzen ari da diskoan.</strong> Webgunearen edukiak agian ez dira ondo bistaratuko. Biltegiratutako datuak Ezarpenak > Pribatutasuna eta segurtasuna > Cookieak eta guneetako datuak atalean garbi ditzakezu.
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name } leku erabilgarririk gabe gelditzen ari da diskoan.</strong> Webgunearen edukiak agian ez dira ondo bistaratuko. Bisitatu "Argibide gehiago" diskoaren erabilpena optimizatu eta nabigatze-esperientzia hobetzeko.
 
 ## Privacy Section - HTTPS-Only
 

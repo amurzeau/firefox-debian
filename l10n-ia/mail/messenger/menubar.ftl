@@ -9,6 +9,17 @@ menu-view-charset =
     .label = Codification del texto
     .accesskey = C
 
+## Tools Menu
+
+# Since v89 we dropped the platforms distinction between Options or Preferences
+# and consolidated everything with Preferences.
+menu-tools-preferences =
+    .label = Preferentias
+    .accesskey = P
+menu-addons-and-themes =
+    .label = Additivos e themas
+    .accesskey = A
+
 ## Help Menu
 
 menu-help-enter-troubleshoot-mode =
@@ -35,3 +46,18 @@ toolbar-delete-button =
 toolbar-undelete-button =
     .label = Restabilir
     .tooltiptext = Restabilir le messages seligite
+
+## View / Layout
+
+mail-uidensity-label =
+    .label = Densitate
+    .accesskey = D
+mail-uidensity-compact =
+    .label = Compactar
+    .accesskey = C
+mail-uidensity-normal =
+    .label = Normal
+    .accesskey = N
+mail-uidensity-touch =
+    .label = Tactile
+    .accesskey = T

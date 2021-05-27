@@ -17,6 +17,10 @@ experimental-features-media-avif =
 experimental-features-media-avif-description = Bu özellik etkinleştirildiğinde { -brand-short-name } AV1 Görüntü Dosyası (AVIF) biçimini destekler. AVIF, görüntü boyutunu küçültmek için AV1 video sıkıştırma algoritmalarının yeteneklerinden yararlanan hareketsiz bir görüntü dosyası biçimidir. Ayrıntılar için <a data-l10n-name="bugzilla">bug 1443863</a>'e bakabilirsiniz.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
+experimental-features-media-jxl =
+    .label = Ortam: JPEG XL
+# The title of the experiment should be kept in English as it may be referenced
+# by various online articles and is technical in nature.
 experimental-features-web-api-inputmode =
     .label = Web API: inputmode
 # The title of the experiment should be kept in English as it may be referenced
@@ -56,6 +60,10 @@ experimental-features-devtools-serviceworker-debugger-support-description = Hata
 experimental-features-webrtc-global-mute-toggles =
     .label = WebRTC Global Ses Kapatma Düğmeleri
 experimental-features-webrtc-global-mute-toggles-description = WebRTC genel paylaşım göstergesine kullanıcıların mikrofonlarını ve kameralarını her yerde sessize almalarını sağlayan düğmeleri ekler.
+# Win32k Lockdown
+experimental-features-win32k-lockdown =
+    .label = Win32k kilidi
+experimental-features-win32k-lockdown-description = Tarayıcı sekmelerinde Win32k API’lerinin kullanımını devre dışı bırakır. Güvenlik artışı sağlar ancak şu anda istikrarsız veya hatalı olabilir. (Yalnızca Windows için)
 # JS JIT Warp project
 experimental-features-js-warp =
     .label = JavaScript JIT: Warp
@@ -74,3 +82,4 @@ experimental-features-http3-description = Deneysel HTTP/3 protokolü desteği.
 # Search during IME
 experimental-features-ime-search =
     .label = Adres Çubuğu: IME oluşturma sırasında sorunları göster
+experimental-features-ime-search-description = IME (Giriş Yöntemi Düzenleyicisi), standart bir klavye kullanarak Doğu Asya veya Hintçe yazı dillerinde kullanılanlar gibi karmaşık sembolleri girmenize olanak tanıyan bir araçtır. Bu deneyi etkinleştirmek, metin girmek için IME'yi kullanırken adres çubuğu panelini açık tutacak ve arama sonuçlarını ve önerileri gösterecektir. IME'nin adres çubuğu sonuçlarını örten bir panel görüntüleyebileceğini, bu nedenle bu tercihin yalnızca bu tür bir paneli kullanmayan IME'ler için önerildiğini unutmayın.

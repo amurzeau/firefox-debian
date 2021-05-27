@@ -288,6 +288,7 @@ cfr-doorhanger-doh-secondary-button = Onemogoči
 ## Fission Experiment Message
 
 cfr-doorhanger-fission-body-approved = Vaša zasebnost je pomembna. { -brand-short-name } zdaj medsebojno izolira spletna mesta ali jih izvaja v peskovnikih, kar napadalcem otežuje krajo gesel, številk kreditnih kartic in ostalih občutljivih podatkov.
+cfr-doorhanger-fission-header = Izolacija mesta
 cfr-doorhanger-fission-primary-button = V redu, razumem
     .accesskey = V
 cfr-doorhanger-fission-secondary-button = Več o tem
@@ -302,10 +303,13 @@ cfr-whatsnew-clear-cookies-image-alt = Ilustracija zavrnjenega piškotka
 ## What's new: Media controls message
 
 cfr-whatsnew-media-keys-header = Več kontrolnikov predstavnosti
+cfr-whatsnew-media-keys-body = Predvajajte in ustavite zvok ali video neposredno s tipkovnico ali slušalkami, kar olajša nadzor nad predstavnostjo z drugega zavihka ali programa ali celo, ko je računalnik zaklenjen. Med skladbami se lahko premikate tudi s tipkama naprej in nazaj.
 cfr-whatsnew-media-keys-button = Poglejte, kako
 
 ## What's new: Search shortcuts
 
+cfr-whatsnew-search-shortcuts-header = Bližnjice za iskanje v naslovni vrstici
+cfr-whatsnew-search-shortcuts-body = Ko v naslovno vrstico vnesete iskalnik ali določeno spletno mesto, se spodaj v predlogih iskanja prikaže modra bližnjica. Izberite to bližnjico, da dokončate iskanje neposredno iz naslovne vrstice.
 
 ## What's new: Cookies protection
 
@@ -315,6 +319,9 @@ cfr-whatsnew-supercookies-body = Spletna mesta lahko v vaš brskalnik skrivaj na
 ## What's new: Better bookmarking
 
 cfr-whatsnew-bookmarking-header = Boljše upravljanje zaznamkov
+cfr-whatsnew-bookmarking-body = Lažje je slediti svojim najljubšim spletnim mestom. { -brand-short-name } si zdaj zapomni želeno lokacijo shranjenih zaznamkov, privzeto prikaže orodno vrstico z zaznamki na novih zavihkih in vam omogoča enostaven dostop do ostalih zaznamkov preko mape v orodni vrstici.
 
 ## What's new: Cross-site cookie tracking
 
+cfr-whatsnew-cross-site-tracking-header = Celovita zaščita pred sledenjem s piškotki med spletnimi mesti
+cfr-whatsnew-cross-site-tracking-body = Zdaj se lahko odločite za boljšo zaščito pred sledenjem s piškotki. { -brand-short-name } lahko izolira vaše dejavnosti in podatke za spletno mesto, na katerem se trenutno nahajate, tako da se informacije, shranjene v brskalniku, ne delijo med spletnimi mesti.

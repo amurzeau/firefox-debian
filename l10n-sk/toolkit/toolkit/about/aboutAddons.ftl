@@ -10,6 +10,7 @@ search-header =
     .searchbuttonlabel = Hľadať
 search-header-shortcut =
     .key = f
+list-empty-get-extensions-message = Rozšírenia a témy získate na stránkach <a data-l10n-name="get-extensions">{ $domain }</a>
 list-empty-installed =
     .value = Nemáte nainštalované žiadne doplnky tohto typu
 list-empty-available-updates =
@@ -34,9 +35,9 @@ sidebar-preferences-button-title =
             [windows] Možnosti aplikácie { -brand-short-name }
            *[other] Možnosti aplikácie { -brand-short-name }
         }
-addons-settings-button = Nastavenia aplikácie { -brand-short-name }
+addons-settings-button = Nastavenia { -brand-short-name(case: "gen") }
 sidebar-settings-button-title =
-    .title = Nastavenia aplikácie { -brand-short-name }
+    .title = Nastavenia { -brand-short-name(case: "gen") }
 show-unsigned-extensions-button =
     .label = Niektoré rozšírenia nemohli byť overené
 show-all-extensions-button =
@@ -208,9 +209,9 @@ addon-updates-update-addons-automatically = Automaticky aktualizovať doplnky
 ## extensions-updates-update-addons-automatically.label menu item).
 
 addon-updates-reset-updates-to-automatic = Nastaviť všetky doplnky na automatické aktualizovanie
-    .accesskey = s
+    .accesskey = e
 addon-updates-reset-updates-to-manual = Nastaviť všetky doplnky na manuálne aktualizovanie
-    .accesskey = s
+    .accesskey = e
 
 ## Status messages displayed when updating add-ons
 
@@ -232,7 +233,7 @@ addon-open-about-debugging = Ladiť doplnky
 
 # This is displayed in the page options menu
 addon-manage-extensions-shortcuts = Spravovať klávesové skratky pre rozšírenia
-    .accesskey = n
+    .accesskey = S
 shortcuts-no-addons = Nemáte povolené žiadne rozšírenie.
 shortcuts-no-commands = Nasledujúce rozšírenia nemajú skratky:
 shortcuts-input =

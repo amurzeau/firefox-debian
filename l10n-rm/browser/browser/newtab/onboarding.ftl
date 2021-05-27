@@ -200,7 +200,6 @@ onboarding-welcome-steps-indicator =
 # automatically added to the text inside it. "look" should stay inside the span.
 onboarding-multistage-theme-header = Tscherna in'<span data-l10n-name="zap">apparientscha</span>
 onboarding-multistage-theme-subtitle = Persunalisescha { -brand-short-name } cun in design.
-onboarding-multistage-theme-primary-button-label = Memorisar il design
 onboarding-multistage-theme-primary-button-label2 = Finì
 onboarding-multistage-theme-secondary-button-label = Betg ussa
 # Automatic theme uses operating system color settings
@@ -254,4 +253,91 @@ onboarding-multistage-theme-tooltip-alpenglow-2 =
 onboarding-multistage-theme-description-alpenglow =
     .aria-description =
         Utilisar ina apparientscha giaglia per buttuns,
+        menus e fanestras.
+
+## Multistage MR1 onboarding strings (MR1 about:welcome pages)
+
+# "Hero Text" displayed on left side of welcome screen.
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
+# It also signals the passion users bring to Firefox, how they use
+# Firefox to pursue those passions, as well as the boldness in their
+# choice to use Firefox over a larger competitor browser.
+# An alternative title for localization is: "It starts here".
+# This text can be formatted to span multiple lines as needed.
+mr1-welcome-screen-hero-text = Fieu e flomma per cumenzar
+# Caption for background image in about:welcome. "Soraya Osorio" is the name
+# of the person and shouldn't be translated.
+mr1-onboarding-welcome-image-caption = Soraya Osorio – designra da mobiglias e fan da Firefox
+# This button will open system settings to turn on prefers-reduced-motion
+mr1-onboarding-reduce-motion-button-label = Deactivar las animaziuns
+mr1-onboarding-welcome-header = Bainvegni en { -brand-short-name }
+mr1-onboarding-set-default-pin-primary-button-label = Definir { -brand-short-name } sco mes navigatur principal
+    .title = Definescha { -brand-short-name } sco navigatur da standard ed al fixeschan en la taskbar
+mr1-onboarding-set-default-only-primary-button-label = Definir { -brand-short-name } sco mes navigatur da standard
+mr1-onboarding-set-default-secondary-button-label = Betg ussa
+mr1-onboarding-sign-in-button-label = S'annunziar
+mr1-onboarding-import-header = Prenda tut cun tai
+mr1-onboarding-import-subtitle = Importescha tes pleds-clav, <br/>segnapaginas e dapli.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
+# Variables:
+#   $previous (Str) - Previous browser name, such as Edge, Chrome
+mr1-onboarding-import-primary-button-label-attribution = Importar da { $previous }
+# This string will be used in cases where we can't detect the previous browser name.
+mr1-onboarding-import-primary-button-label-no-attribution = Importar dad in navigatur existent
+mr1-onboarding-import-secondary-button-label = Betg ussa
+mr1-onboarding-theme-header = L'adatta a tes basegns
+mr1-onboarding-theme-subtitle = Persunalisescha { -brand-short-name } cun in design.
+mr1-onboarding-theme-primary-button-label = Memorisar il design
+mr1-onboarding-theme-secondary-button-label = Betg ussa
+# System theme uses operating system color settings
+mr1-onboarding-theme-label-system = Design dal sistem
+mr1-onboarding-theme-label-light = Cler
+mr1-onboarding-theme-label-dark = Stgir
+# "Alpenglow" here is the name of the theme, and should be kept in English.
+mr1-onboarding-theme-label-alpenglow = Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of system theme
+mr1-onboarding-theme-tooltip-system =
+    .title =
+        Resguardar il design dal sistem operativ
+        per buttuns, menus e fanestras.
+# Input description for system theme
+mr1-onboarding-theme-description-system =
+    .aria-description =
+        Resguardar il design dal sistem operativ
+        per buttuns, menus e fanestras.
+# Tooltip displayed on hover of light theme
+mr1-onboarding-theme-tooltip-light =
+    .title =
+        Utilisar in design cler per buttuns,
+        menus e fanestras.
+# Input description for light theme
+mr1-onboarding-theme-description-light =
+    .aria-description =
+        Utilisar in design cler per buttuns,
+        menus e fanestras.
+# Tooltip displayed on hover of dark theme
+mr1-onboarding-theme-tooltip-dark =
+    .title =
+        Utilisar in design stgir per buttuns,
+        menus e fanestras.
+# Input description for dark theme
+mr1-onboarding-theme-description-dark =
+    .aria-description =
+        Utilisar in design stgir per buttuns,
+        menus e fanestras.
+# Tooltip displayed on hover of Alpenglow theme
+mr1-onboarding-theme-tooltip-alpenglow =
+    .title =
+        Utilisar in design dinamic e colurà per buttuns,
+        menus e fanestras.
+# Input description for Alpenglow theme
+mr1-onboarding-theme-description-alpenglow =
+    .aria-description =
+        Utilisar in design dinamic e colurà per buttuns,
         menus e fanestras.

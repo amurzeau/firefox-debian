@@ -30,8 +30,8 @@ menu-application-touch-bar =
 menu-quit =
     .label =
         { PLATFORM() ->
-            [windows] Sulje
-           *[other] Sulje
+            [windows] Sulje selain
+           *[other] Sulje selain
         }
     .accesskey =
         { PLATFORM() ->
@@ -178,13 +178,13 @@ menu-view-charset =
 ## use on macOS.
 
 menu-view-enter-full-screen =
-    .label = Siirry kokoruututilaan
+    .label = Siirry koko näytön tilaan
     .accesskey = S
 menu-view-exit-full-screen =
-    .label = Poistu kokoruututilasta
+    .label = Poistu koko näytön tilasta
     .accesskey = P
 menu-view-full-screen =
-    .label = Kokoruututila
+    .label = Koko näytön tila
     .accesskey = K
 
 ##
@@ -350,14 +350,12 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = Näppäinkomennot
     .accesskey = N
-menu-get-help =
-    .label = Etsi ohjeita
-    .accesskey = h
 menu-help-troubleshooting-info =
     .label = Tietoja ongelmatilanteisiin
     .accesskey = T
-menu-help-taskmanager =
-    .label = Tehtävienhallinta
+menu-get-help =
+    .label = Etsi ohjeita
+    .accesskey = h
 menu-help-more-troubleshooting-info =
     .label = Lisää vianmääritystietoja
     .accesskey = L

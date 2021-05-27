@@ -10,6 +10,7 @@ search-header =
     .searchbuttonlabel = Søk
 search-header-shortcut =
     .key = f
+list-empty-get-extensions-message = Last ned utvidingar og tema på <<a data-l10n-name="get-extensions">{ $domain }</a>
 list-empty-installed =
     .value = Du har ingen tillegg av denne typen installerte
 list-empty-available-updates =
@@ -239,7 +240,7 @@ shortcuts-input =
     .placeholder = Skriv inn ein snarveg
 shortcuts-browserAction2 = Aktiver verktøylinjeknapp
 shortcuts-pageAction = Aktiver sidehandling
-shortcuts-sidebarAction = Vis/skjul sidepanelet
+shortcuts-sidebarAction = Vis/gøym sidepanelet
 shortcuts-modifier-mac = Inkluder Ctrl, Alt eller ⌘
 shortcuts-modifier-other = Inkluder Ctrl eller Alt
 shortcuts-invalid = Ugyldig kombinasjon
@@ -268,7 +269,7 @@ header-back-button =
 # Explanatory introduction to the list of recommended add-ons. The action word
 # ("recommends") in the final sentence is a link to external documentation.
 discopane-intro =
-    Utvidingar og tema er som appar for nettlesaren din, og dei let deg
+    Utvidingar og tema er som appar for nettlesaren din, og dei lèt deg
     beskytte passorda dine, laste ned videoar, finne tilbod, blokkere irriterande reklame, endre
     korleis nettlesaren din ser ut, og mykje meir. Desse små programma er
     ofte utvikla av ein tredjepart. Her er eit utval { -brand-product-name }

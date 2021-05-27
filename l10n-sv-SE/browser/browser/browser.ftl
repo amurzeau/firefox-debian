@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Lägg till "{ $engineName }"
+    .tooltiptext = Lägg till sökmotor "{ $engineName }"
+    .aria-label = Lägg till sökmotor "{ $engineName }"
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Lägg till söktjänst
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Webbplatsinformation för { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Anslutningssäkerhet för { $host }
 identity-connection-not-secure = Anslutningen är inte säker
 identity-connection-secure = Anslutningen är säker
+identity-connection-failure = Anslutningsfel
 identity-connection-internal = Detta är en säker { -brand-short-name } sida.
 identity-connection-file = Den här sidan är lagrad på din dator.
 identity-extension-page = Den här sidan laddas från ett tillägg.
@@ -319,6 +339,7 @@ identity-https-only-info-turn-off2 = Om sidan verkar trasig kanske du vill stän
 identity-https-only-info-no-upgrade = Det gick inte att uppgradera anslutningen från HTTP.
 identity-permissions-storage-access-header = Globala kakor
 identity-permissions-storage-access-hint = Dessa parter kan använda global kakor och webbplatsinformation medan du är på denna webbplats.
+identity-permissions-storage-access-learn-more = Läs mer
 identity-permissions-reload-hint = Du kan behöva ladda om sidan för att ändringarna ska verkställas.
 identity-permissions-empty = Du har inte beviljat denna webbplats några särskilda rättigheter.
 identity-clear-site-data =
@@ -421,10 +442,10 @@ popup-select-microphone-icon =
 popup-all-windows-shared = Alla synliga fönster på din skärm kommer att delas.
 popup-screen-sharing-not-now =
     .label = Inte nu
-    .accesskey = w
+    .accesskey = n
 popup-screen-sharing-never =
     .label = Tillåt aldrig
-    .accesskey = N
+    .accesskey = T
 popup-silence-notifications-checkbox = Inaktivera aviseringar från { -brand-short-name } när du delar
 popup-silence-notifications-checkbox-warning = { -brand-short-name } kommer inte att visa aviseringar medan du delar.
 popup-screen-sharing-block =
@@ -490,6 +511,11 @@ urlbar-placeholder-with-name =
     .placeholder = Sök med { $name } eller ange adress
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Webbläsaren är fjärrstyrd
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Webbläsaren är fjärrstyrd (orsak: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Du har beviljat denna webbplats ytterligare behörigheter.
 urlbar-switch-to-tab =
@@ -578,9 +604,6 @@ pointerlock-warning-no-domain = Detta dokument har kontroll över pekaren. Tryck
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>En del av den här sidan kraschade.</strong> Skicka en rapport om du vill meddela { -brand-product-name } om problemet och få det åtgärdat snabbare.
-crashed-subframe-learnmore =
-    .label = Läs mer
-    .accesskey = L
 crashed-subframe-learnmore-link =
     .value = Läs mer
 crashed-subframe-submit =
@@ -593,8 +616,6 @@ bookmarks-show-all-bookmarks =
     .label = Visa alla bokmärken
 bookmarks-manage-bookmarks =
     .label = Hantera bokmärken
-bookmarks-recent-bookmarks-panel =
-    .value = Senaste bokmärken
 bookmarks-recent-bookmarks-panel-subheader = Senaste bokmärken
 bookmarks-toolbar-chevron =
     .tooltiptext = Visa fler bokmärken

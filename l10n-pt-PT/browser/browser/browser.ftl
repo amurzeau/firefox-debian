@@ -247,6 +247,10 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Adicionar motor de pesquisa
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,6 +297,13 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Informação de site para { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Segurança da ligação para { $host }
 identity-connection-not-secure = Ligação insegura
 identity-connection-secure = Ligação segura
 identity-connection-internal = Esta é uma página segura do { -brand-short-name }.
@@ -319,6 +330,7 @@ identity-https-only-info-turn-off2 = Se o site parecer estragado, pode querer de
 identity-https-only-info-no-upgrade = Não foi possível atualizar a ligação de HTTP.
 identity-permissions-storage-access-header = Cookies inter-sites
 identity-permissions-storage-access-hint = Estas entidades podem utilizar cookies inter-sites e dados do site enquanto estiver neste site.
+identity-permissions-storage-access-learn-more = Saber mais
 identity-permissions-reload-hint = Poderá ter de recarregar a página para as alterações se aplicarem.
 identity-permissions-empty = Não concedeu quaisquer permissões especiais a este site.
 identity-clear-site-data =
@@ -581,9 +593,6 @@ pointerlock-warning-no-domain = Este documento tem controlo do seu apontador. Pr
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Uma parte desta página falhou.</strong> Para tornar o problema conhecido e ajudar a que o mesmo seja resolvido mais rapidamente no { -brand-product-name }, por favor submeta um relatório.
-crashed-subframe-learnmore =
-    .label = Saber mais
-    .accesskey = b
 crashed-subframe-learnmore-link =
     .value = Saber mais
 crashed-subframe-submit =
@@ -596,8 +605,6 @@ bookmarks-show-all-bookmarks =
     .label = Mostrar todos os marcadores
 bookmarks-manage-bookmarks =
     .label = Gerir marcadores
-bookmarks-recent-bookmarks-panel =
-    .value = Marcadores recentes
 bookmarks-recent-bookmarks-panel-subheader = Marcadores recentes
 bookmarks-toolbar-chevron =
     .tooltiptext = Mostrar mais marcadores

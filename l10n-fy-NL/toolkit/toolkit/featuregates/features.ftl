@@ -19,29 +19,15 @@ experimental-features-media-avif =
 experimental-features-media-avif-description = As dizze funksje ynskeakele is, stipet { -brand-short-name } it AV1 Image File (AVIF)-formaat. Dit is in bestânsformaat foar stilsteande bylden dat gebrûk makket fan de mooglikheden fan de AV1-fideokompresje-algoritmen om de ôfbyldingsgrutte te ferlytsjen. Sjoch <a data-l10n-name="bugzilla">bug 1443863</a> foar mear details.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
+experimental-features-media-jxl =
+    .label = Media: JPEG XL
+experimental-features-media-jxl-description = As dizze funksje ynskeakele is, stipet { -brand-short-name } de JPEG XL (JXL)-yndieling. Dit is in ferbettere bestânsyndieling foar ôfbyldingen dy't in ferliesfrije oergong fan tradisjonele JPEG-bestannen stipet. Sjoch <a data-l10n-name="bugzilla">bug 1539075</a> foar mear details.
+# The title of the experiment should be kept in English as it may be referenced
+# by various online articles and is technical in nature.
 experimental-features-web-api-inputmode =
     .label = Web API: inputmode
 # "inputmode" and "contenteditable" are technical terms and shouldn't be translated.
 experimental-features-web-api-inputmode-description = Us ymplemintaasje fan it globale attribút <a data-l10n-name="mdn-inputmode">inputmode</a> is bywurke neffens <a data-l10n-name="whatwg">de WHATWG-spesifikaasje</a>, mar wy moatte ek noch oare wizigingen oanbringe, lykas it beskikber meitsjen fan bewurkbere ynhâld. Sjoch <a data-l10n-name="bugzilla">bug 1205133</a> foar mear details.
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-web-api-link-preload =
-    .label = Web API: <link rel="preload">
-# Do not translate "rel", "preload" or "link" here, as they are all HTML spec
-# values that do not get translated.
-experimental-features-web-api-link-preload-description = It attribút <a data-l10n-name="rel">rel</a> mei wearde <code>"preload"</code> op in <a data-l10n-name="link">&lt;link&gt;</a>-elemint is bedoeld om te helpen prestaasjeferbetteringen te realisearjen troch jo boarnen earder yn de libbenssyklus fan de side downloade te litten, sadat se earder beskikber binne en de werjefte fan siden minder fluch blokkearre wurdt. Lês <a data-l10n-name="readmore">‘Preloading content mei <code>rel="preload"</code>’</a> of sjoch <a data-l10n-name="bugzilla">bug 1583604</a> foar mear details.
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-css-focus-visible =
-    .label = CSS: Pseudo-class: :focus-visible
-experimental-features-css-focus-visible-description = Makket it mooglik om fokusstilen ta te passen op eleminten lykas knoppen en formulierbestjoeringen, allinnich wannear't se de fokus krigen hawwe me help fan it toetseboerd (bygelyks by it gebrûk fan tab tusken eleminten), en net wannear't se skerpsteld binne mei in mûs of oar oanwiisapparaat. Sjoch <a data-l10n-name="bugzilla">bug 1617600</a> foar mear details.
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-web-api-beforeinput =
-    .label = Web API: beforeinput Event
-# The terms "beforeinput", "input", "textarea", and "contenteditable" are technical terms
-# and shouldn't be translated.
-experimental-features-web-api-beforeinput-description = It globale <a data-l10n-name="mdn-beforeinput">beforeinput</a>-barren wurdt aktivearre op <a data-l10n-name="mdn-input">&lt;input&gt;</a>- en <a data-l10n-name="mdn-textarea">&lt;textarea&gt;</a>-eleminten, of elk elemint wêrfan it <a data-l10n-name="mdn-contenteditable">contenteditable</a>-kenmerk ynskeakele is, daliks foardat de wearde fan it elemint feroaret. Mei dit barren kinne webapps it standertgedrach fan de browser oerskriuwe foar brûkersynteraksje, webapps kinne bygelyks brûkersynfier allinnich foar spesifike tekens annulearje of kinne it plakken fan opmakke tekst allinnich wizigje mei goedkarre stilen.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-css-constructable-stylesheets =
@@ -69,9 +55,6 @@ experimental-features-cookie-samesite-none-requires-secure2-description = Foar c
 experimental-features-abouthome-startup-cache =
     .label = Opstartbuffer about:home
 experimental-features-abouthome-startup-cache-description = In opstartbuffer foar it inisjele about:home-dokumint wurdt by opstarten standert laden. It doel fan dizze buffer is it ferbetterjen fan de opstartprestaasjes.
-experimental-features-print-preview-tab-modal =
-    .label = Nij ûntwerp fan ôfdrukfoarbyld
-experimental-features-print-preview-tab-modal-description = Yntrodusearret it opnij ûntwurpen ôfdrukfoarbyld en makket ôfdrukfoarbyld beskikber op macOS. Dit kin liede ta falen en omfettet net alle ôfdrukrelatearre ynstellingen. Selektearje om tagong te krijen ta alle ôfdrukrelatearre ynstellingen ‘Ofdrukke fia it systeemdialoochfinster…’ yn it paniel Ofdrukke.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-cookie-samesite-schemeful =
@@ -86,6 +69,10 @@ experimental-features-devtools-serviceworker-debugger-support-description = Skea
 experimental-features-webrtc-global-mute-toggles =
     .label = WebRTC Global Mute-skeakelers
 experimental-features-webrtc-global-mute-toggles-description = Foeget betsjinningen ta oan de algemiene dielyndikator fan WebRTC, wêrmei brûkers harren mikrofoan- en kamerafeeds algemien dôvje kinne.
+# Win32k Lockdown
+experimental-features-win32k-lockdown =
+    .label = Win32k-beskoatteling
+experimental-features-win32k-lockdown-description = It gebrûk fan Win32k-API’s yn browserljepblêden útskeakelje. Biedt in bettere befeiliging, mar kin op dit stuit ynstabyl of gefoelich foar flaters wêze. (Allinnich Windows)
 # JS JIT Warp project
 experimental-features-js-warp =
     .label = JavaScript JIT: Warp

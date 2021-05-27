@@ -77,6 +77,7 @@ login-intro-description = اگر شما ورودتون به{ -brand-product-name
 login-intro-instruction-fxa = { -fxaccount-brand-name } خود را ایجاد کنید یا بر روی دستگاهی که ورودهای خود را ثبت کرده‌اید به این حساب وارد شوید.
 login-intro-instruction-fxa-settings = مطمئن شوید که جعبه ورود در تنظیمات { -sync-brand-short-name } را انتخاب کرده اید.
 about-logins-intro-instruction-help = برای دریافت کمک بیشتری یا پشتیبانی به  <a data-l10n-name="help-link">{ -lockwise-brand-short-name }پشتیبانی</a> مراجعه کنید
+login-intro-instructions-fxa = { -fxaccount-brand-name } خود را در دستگاهی که ورودهای شما در آن ذخیره شده‌اند ایجاد یا در آن وارد شوید.
 login-intro-instructions-fxa-settings = به تنظیمات> همگام‌سازی> روشن کردن همگام‌سازی… بروید و گزینهٔ ورودها و گذرواژها را انتخاب کنید.
 login-intro-instructions-fxa-help = برای راهنمایی بیشتر به <a data-l10n-name="help-link">{ -lockwise-brand-short-name }پشتیبانی</a> مراجعه کنید.
 about-logins-intro-import = اگر اطلاعات ورود شما، در مرورگر دیگری ثبت شده است، می‌توانید از طریق <a data-l10n-name="import-link"> آن‌ها را به { -lockwise-brand-short-name }</a> منتقل کنید.
@@ -317,6 +318,7 @@ about-logins-import-dialog-error-unable-to-read-description = مطمئن شوی�
 about-logins-import-dialog-error-no-logins-imported = هیچ اطلاعاتی وارد نشد
 about-logins-import-dialog-error-learn-more = اطلاعات بیشتر
 about-logins-import-dialog-error-try-again = تلاش مجدد…
+about-logins-import-dialog-error-try-import-again = تلاش مجدد برای درون‌ریزی…
 about-logins-import-dialog-error-cancel = انصراف
 about-logins-import-report-title = خلاصهٔ ورود اطلاعات
 about-logins-import-report-description = ورودها و گذرواژه‌ها به { -brand-short-name } وارد شدند.

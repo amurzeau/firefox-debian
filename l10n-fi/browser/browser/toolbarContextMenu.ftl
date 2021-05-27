@@ -2,6 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+toolbar-context-menu-new-tab =
+    .label = Uusi välilehti
+    .accesskey = U
 toolbar-context-menu-reload-selected-tab =
     .label = Päivitä valittu välilehti
     .accesskey = P
@@ -30,7 +33,7 @@ toolbar-context-menu-reopen-closed-tabs =
             [1] Avaa uudelleen suljettu välilehti
            *[other] Avaa uudelleen suljetut välilehdet
         }
-    .accesskey = u
+    .accesskey = d
 toolbar-context-menu-manage-extension =
     .label = Hallitse laajennusta
     .accesskey = a
@@ -52,6 +55,9 @@ toolbar-context-menu-pin-to-overflow-menu =
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Piilota automaattisesti työkalupalkkiin
     .accesskey = a
+toolbar-context-menu-auto-hide-downloads-button-2 =
+    .label = Piilota painike, kun latauslista on tyhjä
+    .accesskey = i
 toolbar-context-menu-remove-from-toolbar =
     .label = Poista työkalupalkista
     .accesskey = P
@@ -69,7 +75,7 @@ toolbar-context-menu-bookmarks-toolbar-never-show-2 =
     .accesskey = Ä
 toolbar-context-menu-bookmarks-toolbar-on-new-tab-2 =
     .label = Näytä vain uudessa välilehdessä
-    .accesskey = h
+    .accesskey = v
 toolbar-context-menu-bookmarks-show-other-bookmarks =
     .label = Näytä muut kirjanmerkit
     .accesskey = N

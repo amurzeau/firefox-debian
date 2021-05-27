@@ -12,6 +12,7 @@ preferences-title =
         }
 preferences-tab-title =
     .title = Foarkarren
+preferences-doc-title = Foarkarren
 category-list =
     .aria-label = Kategoryen
 pane-general-title = Algemien
@@ -90,8 +91,8 @@ update-in-progress-ok-button = &Ferwerpe
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Trochgean
-account-button = Accountynstellingen
 addons-button = Utwreidingen & Tema's
+account-button = Accountynstellingen
 open-addons-sidebar-button = Add-ons en tema’s
 
 ## OS Authentication dialog
@@ -326,6 +327,8 @@ quoted-text-color =
     .accesskey = K
 search-input =
     .placeholder = Sykje:
+search-handler-table =
+    .placeholder = Ynhâldtypen en aksjes filterje
 type-column-label =
     .label = Ynhâldtype
     .accesskey = t

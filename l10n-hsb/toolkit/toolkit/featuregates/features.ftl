@@ -19,6 +19,11 @@ experimental-features-media-avif =
 experimental-features-media-avif-description = Hdyž tuta funkcija je zmóžnjena, podpěruje { -brand-short-name } AVIF-format (AV1 Image File). To je datajowy format za stejace wobrazy, kotryž kmanosće algoritmusow widejokomprimowanja AV1 wužiwa, zo by wobrazowu wulkosć redukował. Hlejće <a data-l10n-name="bugzilla">zmylkowu rozprawu 1443863</a>.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
+experimental-features-media-jxl =
+    .label = Medije: JPEG XL
+experimental-features-media-jxl-description = Hdyž tuta funkcija je zmóžnjena, { -brand-short-name } format JPEG XL (XL) podpěruje. To je polěpšeny datajowy format za wobrazy, kotryž přechad bjez stratow wot tradicionelnych JPEG-datajow podpěruje. Hlejće <a data-l10n-name="bugzilla">zmylkowu rozprawu 1539075</a> za dalše podrobnosće.
+# The title of the experiment should be kept in English as it may be referenced
+# by various online articles and is technical in nature.
 experimental-features-web-api-inputmode =
     .label = Web API: inputmode
 # "inputmode" and "contenteditable" are technical terms and shouldn't be translated.

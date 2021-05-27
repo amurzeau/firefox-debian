@@ -24,6 +24,8 @@ perftools-heading-local-build = Локална верзија
 
 ## The controls for the interval at which the profiler samples the code.
 
+perftools-range-interval-label = Интервал узорковања:
+perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 2) } ms
 
 ##
 
@@ -35,6 +37,8 @@ perftools-devtools-settings-label = Подешавања
 
 ## Various statuses that affect the current state of profiling, not typically displayed.
 
+perftools-status-recording-stopped-by-another-tool = Снимање је зауставила друга алатка.
+perftools-status-restart-required = Потребно је да рестартујете прегледач да бисте омогућили ову функцију.
 
 ## These are shown briefly when the user is waiting for the profiler to respond.
 
@@ -54,6 +58,12 @@ perftools-button-edit-settings = Уреди подешавања…
 
 ## These messages are descriptions of the threads that can be enabled for the profiler.
 
+perftools-thread-gecko-main =
+    .title = Главни процеси за надређени процес и процесе садржаја
+perftools-thread-render-backend =
+    .title = WebRender RenderBackend нит
+perftools-thread-img-decoder =
+    .title = Нити за декодирање слика
 
 ##
 

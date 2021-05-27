@@ -38,8 +38,11 @@ printui-scale-fit-to-page-width = Sovita sivun leveyteen
 printui-scale-pcent = Koko
 # Section title (noun) for the two-sided print options
 printui-two-sided-printing = Kaksipuolinen tulostus
-printui-duplex-checkbox = Tulosta molemmille puolille
 printui-two-sided-printing-off = Pois päältä
+# Flip the sheet as if it were bound along its long edge.
+printui-two-sided-printing-long-edge = Käännä pitkän reunan ympäri
+# Flip the sheet as if it were bound along its short edge.
+printui-two-sided-printing-short-edge = Käännä lyhyen reunan ympäri
 # Section title for miscellaneous print options
 printui-options = Valinnat
 printui-headers-footers-checkbox = Tulosta ylä- ja alatunnisteet
@@ -53,14 +56,19 @@ printui-margins-default = Oletus
 printui-margins-min = Pienimmät
 printui-margins-none = Ei reunuksia
 printui-margins-custom-inches = Mukautettu (tuumina)
+printui-margins-custom-mm = Oma (mm)
 printui-margins-custom-top = Ylä
 printui-margins-custom-top-inches = Ylä (tuumina)
+printui-margins-custom-top-mm = Ylä (mm)
 printui-margins-custom-bottom = Ala
 printui-margins-custom-bottom-inches = Ala (tuumina)
+printui-margins-custom-bottom-mm = Ala (mm)
 printui-margins-custom-left = Vasen
 printui-margins-custom-left-inches = Vasen (tuumina)
+printui-margins-custom-left-mm = Vasen (mm)
 printui-margins-custom-right = Oikea
 printui-margins-custom-right-inches = Oikea (tuumina)
+printui-margins-custom-right-mm = Oikea (mm)
 printui-system-dialog-link = Tulosta käyttäen järjestelmän tulostusikkunaa…
 printui-primary-button = Tulosta
 printui-primary-button-save = Tallenna

@@ -22,12 +22,12 @@ serviceworker-worker-unregister = Κατάργηση εγγραφής
 # Text for the debug link displayed for an already started Service Worker. Clicking on the
 # link opens a new devtools toolbox for this service worker. The title attribute is only
 # displayed when the link is disabled.
-serviceworker-worker-debug = Εντοπισμός σφαλμάτων
-    .title = Ο εντοπισμός σφαλμάτων μπορεί να γίνει μόνο για τα εκτελούμενα service workers
+serviceworker-worker-debug = Έλεγχος σφαλμάτων
+    .title = Ο έλεγχος σφαλμάτων μπορεί να γίνει μόνο σε εκτελούμενα service worker
 # Text for the debug link displayed for an already started Service Worker, when we
 # are in multi e10s mode, which effectively disables this link.
-serviceworker-worker-debug-forbidden = Εντοπισμός σφαλμάτων
-    .title = Ο εντοπισμός σφαλμάτων των service workers μπορεί να γίνει μόνο αν είναι ανενεργό το multi e10s
+serviceworker-worker-debug-forbidden = Έλεγχος σφαλμάτων
+    .title = Ο έλεγχος σφαλμάτων των service worker μπορεί να γίνει μόνο αν είναι ανενεργό το multi e10s
 # Text for the start link displayed for a registered but not running Service Worker.
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start2 = Έναρξη
@@ -65,7 +65,7 @@ serviceworker-empty-suggestions = Εάν η τρέχουσα σελίδα πρέ
 serviceworker-empty-suggestions-console = Αναζήτηση σφαλμάτων στην κονσόλα. <a>Άνοιγμα κονσόλας</a>
 # Suggestion to use the debugger to investigate why a service worker is not registered.
 # Clicking on the link will switch from the Application panel to the debugger.
-serviceworker-empty-suggestions-debugger = Διερευνήστε την καταχώρηση Service Worker προς αναζήτηση εξαιρέσεων. <a>Άνοιγμα αποσφαλμάτωσης</a>
+serviceworker-empty-suggestions-debugger = Καταχωρήστε το service worker σας και αναζητήστε εξαιρέσεις. <a>Άνοιγμα ελέγχου σφαλμάτων</a>
 # Suggestion to go to about:debugging in order to see Service Workers for all domains.
 # Clicking on the link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging = Επιθεωρήστε Service Workers από άλλους τομείς. <a>Άνοιγμα about:debugging</a>
@@ -76,7 +76,7 @@ serviceworker-empty-intro-link = Μάθετε περισσότερα
 # Text displayed when there are no Service Workers to display for the current page,
 # introducing hints to debug Service Worker issues.
 # <a> and <span> are links that will open the webconsole and the debugger, respectively.
-serviceworker-empty-suggestions2 = Αν η τρέχουσα σελίδα θα έπρεπε να έχει service worker, μπορείτε να αναζητήσετε σφάλματα στην <a>Κονσόλα</a> ή κάντε την εγγραφή του service worker σας στον <span>Εντοπισμό σφαλμάτων</span>.
+serviceworker-empty-suggestions2 = Αν η τρέχουσα σελίδα θα έπρεπε να έχει service worker, μπορείτε να αναζητήσετε σφάλματα στην <a>Κονσόλα</a> ή να καταγράψετε το service worker σας στον <span>Έλεγχο σφαλμάτων</span>.
 # Suggestion to go to about:debugging in order to see Service Workers for all domains.
 # Link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging2 = Προβολή service workers από άλλους τομείς

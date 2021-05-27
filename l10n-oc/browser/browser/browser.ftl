@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Apondre « { $engineName } »
+    .tooltiptext = Apondre lo motor de recèrca « { $engineName } »
+    .aria-label = Apondre lo motor de recèrca « { $engineName } »
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Apondre un motor de recèrca
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Informacions pel site { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Seguretat de la connexion per { $host }
 identity-connection-not-secure = La connexion pas segura
 identity-connection-secure = Connexion segura
+identity-connection-failure = Fracàs de connexion
 identity-connection-internal = Aquò es una pagina segura de { -brand-short-name }.
 identity-connection-file = Aquela pagina es enregistrada dins vòstre ordinador.
 identity-extension-page = Aquela pagina es estada cargada d’una extension.
@@ -319,6 +339,7 @@ identity-https-only-info-turn-off2 = Se la page sembla copada, ensajatz de desac
 identity-https-only-info-no-upgrade = Passatge de la connexion en HTTPS impossible.
 identity-permissions-storage-access-header = Cookies intersites
 identity-permissions-storage-access-hint = Aquestas parts pòdon utilizar los cookies intersites e las donadas de sites pendent vòstra navegacion sul site.
+identity-permissions-storage-access-learn-more = Ne saber mai
 identity-permissions-reload-hint = Benlèu deuriatz actualizar la pagina per que s'apliquen los cambiaments.
 identity-permissions-empty = Avètz pas donat cap de permission espaciala a aquel site.
 identity-clear-site-data =
@@ -493,6 +514,11 @@ urlbar-placeholder-with-name =
     .placeholder = Recercar amb { $name } o picar una adreça
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Lo navegador es contrarotlat a distància
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Lo navigador es contrarotlat a distància (rason : { $component })
 urlbar-permissions-granted =
     .tooltiptext = Avètz donat de permissions suplementàrias a aquel site.
 urlbar-switch-to-tab =
@@ -581,9 +607,6 @@ pointerlock-warning-no-domain = Aqueste document a lo contraròtle sul vòstre g
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Part d’aquesta pagina a fracassat.</strong> Per notificar { -brand-product-name } d’aqueste problèma e que siá reglat, enviatz un rapòrt.
-crashed-subframe-learnmore =
-    .label = Ne saber mai
-    .accesskey = N
 crashed-subframe-learnmore-link =
     .value = Ne saber mai
 crashed-subframe-submit =
@@ -596,8 +619,6 @@ bookmarks-show-all-bookmarks =
     .label = Afichar totes los marcapaginas
 bookmarks-manage-bookmarks =
     .label = Gerir los marcapaginas
-bookmarks-recent-bookmarks-panel =
-    .value = Marcapaginas recents
 bookmarks-recent-bookmarks-panel-subheader = Marcapaginas recents
 bookmarks-toolbar-chevron =
     .tooltiptext = Afichar mai de marcapaginas

@@ -247,6 +247,10 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Afegeix un motor de cerca
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,6 +297,13 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Informació del lloc { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Seguretat de la connexió per a { $host }
 identity-connection-not-secure = La connexió no és segura
 identity-connection-secure = Connexió segura
 identity-connection-internal = Aquesta és una pàgina del { -brand-short-name } segura.
@@ -578,9 +589,6 @@ pointerlock-warning-no-domain = Aquest document té el control del punter. Preme
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Part d'aquesta pàgina ha fallat.</strong> Per notificar el problema al { -brand-product-name } i que s'arregli més ràpidament, envieu un informe.
-crashed-subframe-learnmore =
-    .label = Més informació
-    .accesskey = M
 crashed-subframe-learnmore-link =
     .value = Més informació
 crashed-subframe-submit =
@@ -593,8 +601,6 @@ bookmarks-show-all-bookmarks =
     .label = Mostra totes les adreces d'interès
 bookmarks-manage-bookmarks =
     .label = Gestiona les adreces d'interès
-bookmarks-recent-bookmarks-panel =
-    .value = Adreces d'interès recents
 bookmarks-recent-bookmarks-panel-subheader = Adreces d'interès recents
 bookmarks-toolbar-chevron =
     .tooltiptext = Mostra més adreces d'interès

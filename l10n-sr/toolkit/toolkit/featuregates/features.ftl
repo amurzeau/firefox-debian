@@ -6,6 +6,15 @@
 # by various online articles and is technical in nature.
 experimental-features-media-avif =
     .label = Media: AVIF
+# "Service Worker" is an API name and is usually not translated.
+experimental-features-devtools-serviceworker-debugger-support =
+    .label = Алатке за програмере: отклањање грешака сервис воркера
+# JS JIT Warp project
+experimental-features-js-warp =
+    .label = JavaScript JIT: Warp
+# Fission is the name of the feature and should not be translated.
+experimental-features-fission =
+    .label = Fission (изолација сајтова)
 experimental-features-http3 =
     .label = Протокол HTTP/3
 experimental-features-http3-description = Експериментална подршка протокола HTTP/3.

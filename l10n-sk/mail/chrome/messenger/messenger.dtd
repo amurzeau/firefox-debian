@@ -47,7 +47,7 @@
 <!ENTITY openMessageFileCmd.label "Otvoriť uložené správy…">
 <!ENTITY openMessageFileCmd.accesskey "O">
 <!ENTITY saveAsMenu.label "Uložiť ako">
-<!ENTITY saveAsMenu.accesskey "U">
+<!ENTITY saveAsMenu.accesskey "a">
 <!ENTITY saveAsFileCmd.label "Súbor">
 <!ENTITY saveAsFileCmd.accesskey "S">
 <!ENTITY saveAsFileCmd.key "s">
@@ -943,7 +943,7 @@
 <!ENTITY statusText.label "Hotovo">
 
 <!-- Mac OS X Window Menu -->
-<!ENTITY minimizeWindow.label "Minimalizovať okno">
+<!ENTITY minimizeWindow.label "Minimalizovať">
 <!ENTITY minimizeWindow.key "M">
 <!ENTITY bringAllToFront.label "Všetko preniesť do popredia">
 <!ENTITY zoomWindow.label "Lupa">

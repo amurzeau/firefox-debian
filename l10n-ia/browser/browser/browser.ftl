@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Adder “{ $engineName }”
+    .tooltiptext = Adder motor de recerca “{ $engineName }”
+    .aria-label = Adder motor de recerca “{ $engineName }”
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Adder un motor de recerca
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Informationes de sito pro { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Securitate de connexion pro { $host }
 identity-connection-not-secure = Connexion non secur
 identity-connection-secure = Connexion secur
+identity-connection-failure = Error de connexion
 identity-connection-internal = Isto es un pagina secur de { -brand-short-name }.
 identity-connection-file = Iste pagina es immagazinate in tu computator.
 identity-extension-page = Iste pagina es cargate ab un extension.
@@ -319,6 +339,7 @@ identity-https-only-info-turn-off2 = Si le pagina non functiona, prova disactiva
 identity-https-only-info-no-upgrade = Impossibile promover le connexion HTTP.
 identity-permissions-storage-access-header = Cookies inter sitos
 identity-permissions-storage-access-hint = Iste entitates pote usar cookies inter sitos e le datos del sito durante que tu visita iste sito.
+identity-permissions-storage-access-learn-more = Saper plus
 identity-permissions-reload-hint = Il es possibile que tu debe recargar le pagina pro que le cambios se applica.
 identity-permissions-empty = Tu non ha concedite alcun permission special a iste sito.
 identity-clear-site-data =
@@ -490,6 +511,11 @@ urlbar-placeholder-with-name =
     .placeholder = Cerca con { $name } o insere adresse
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Le navigator es sub controlo remote
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Le navigator es sub controlo remote (ration: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Tu ha concedite permissiones additional a iste sito web.
 urlbar-switch-to-tab =
@@ -578,9 +604,6 @@ pointerlock-warning-no-domain = Iste documento controla tu punctator. Preme Esc 
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Parte de iste pagina collabeva.</strong> Pro consentir que { -brand-product-name } sape re iste problema e on pote lo corriger plus velocemente, invia un reporto.
-crashed-subframe-learnmore =
-    .label = Saper plus
-    .accesskey = p
 crashed-subframe-learnmore-link =
     .value = Saper plus
 crashed-subframe-submit =
@@ -593,8 +616,6 @@ bookmarks-show-all-bookmarks =
     .label = Monstrar tote le marcapaginas
 bookmarks-manage-bookmarks =
     .label = Gerer marcapaginas
-bookmarks-recent-bookmarks-panel =
-    .value = Marcapaginas recente
 bookmarks-recent-bookmarks-panel-subheader = Marcapaginas recente
 bookmarks-toolbar-chevron =
     .tooltiptext = Monstrar plus marcapaginas

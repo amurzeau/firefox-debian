@@ -2,8 +2,11 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+tab-context-new-tab =
+    .label = 新建标签页
+    .accesskey = w
 reload-tab =
-    .label = 重载标签页
+    .label = 刷新标签页
     .accesskey = R
 select-all-tabs =
     .label = 选择所有标签页
@@ -28,7 +31,7 @@ close-other-tabs =
     .label = 关闭其他标签页
     .accesskey = o
 reload-tabs =
-    .label = 重载标签页
+    .label = 刷新标签页
     .accesskey = R
 pin-tab =
     .label = 固定标签页
@@ -66,15 +69,6 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = 批量关闭标签页
     .accesskey = M
-tab-context-share-url =
-    .label = 共享
-    .accesskey = h
-tab-context-share-more =
-    .label = 更多…
-
-## Variables:
-##  $tabCount (Number): the number of tabs that are affected by the action.
-
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -94,11 +88,20 @@ move-tabs =
 move-tab =
     .label = 移动标签页
     .accesskey = v
+tab-context-share-url =
+    .label = 共享
+    .accesskey = h
+tab-context-share-more =
+    .label = 更多…
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-reopen-closed-tabs =
     .label =
         { $tabCount ->
             [1] 恢复关闭的标签页
-           *[other] 恢复关闭的 { $count } 个标签页
+           *[other] 恢复关闭的 { $tabCount } 个标签页
         }
     .accesskey = o
 tab-context-close-tabs =

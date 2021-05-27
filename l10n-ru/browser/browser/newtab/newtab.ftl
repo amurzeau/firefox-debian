@@ -8,9 +8,11 @@
 newtab-page-title = Новая вкладка
 newtab-settings-button =
     .title = Настроить свою страницу новой вкладки
-newtab-personalize-button-label = Персонализировать
-    .title = Персонализировать новую вкладку
-    .aria-label = Персонализировать новую вкладку
+newtab-personalize-button-label = Настроить
+    .title = Настроить новую вкладку
+    .aria-label = Настроить новую вкладку
+newtab-personalize-dialog-label =
+    .aria-label = Настроить
 
 ## Search box component.
 
@@ -234,7 +236,7 @@ newtab-error-fallback-refresh-link = Обновить страницу, чтоб
 ## Customization Menu
 
 newtab-custom-shortcuts-title = Ярлыки
-newtab-custom-shortcuts-subtitle = Сайты, которые вы сохраняете или посещаете
+newtab-custom-shortcuts-subtitle = Сохранённые или посещаемые сайты
 newtab-custom-row-selector =
     { $num ->
         [one] { $num } строка

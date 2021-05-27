@@ -255,6 +255,10 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = ‏{ $engineName } ‏({ $alias })
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = أضف محرك بحث
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -305,6 +309,13 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = معلومات الموقع { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = أمن اتصال { $host }
 identity-connection-not-secure = الاتصال غير آمن
 identity-connection-secure = الاتصال آمن
 identity-connection-internal = هذه صفحة { -brand-short-name } آمنة.
@@ -331,6 +342,7 @@ identity-https-only-info-turn-off2 = إن شككت أن في الصفحة عطب
 identity-https-only-info-no-upgrade = تعذرت ترقية الاتصال من HTTP.
 identity-permissions-storage-access-header = الكعكات بين المواقع
 identity-permissions-storage-access-hint = يمكن لهذه الأطراف استعمال الكعكات وبيانات المواقع المشتركة أثناء وجودك في هذا الموقع.
+identity-permissions-storage-access-learn-more = اطّلع على المزيد
 identity-permissions-reload-hint = قد تحتاج إعادة تحميل الصفحة لتطبيق التغييرات.
 identity-permissions-empty = لم تمنح هذا الموقع أي صلاحيات خاصة.
 identity-clear-site-data =
@@ -605,9 +617,6 @@ pointerlock-warning-no-domain = يتحكم هذا المستند في مؤشرك
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>انهار جزء من هذه الصفحة.</strong> لإبلاغ { -brand-product-name } بهذه المشكلة وإصلاحها أسرع، رجاء أرسل بلاغا.
-crashed-subframe-learnmore =
-    .label = اطّلع على المزيد
-    .accesskey = ط
 crashed-subframe-learnmore-link =
     .value = اطّلع على المزيد
 crashed-subframe-submit =
@@ -620,8 +629,6 @@ bookmarks-show-all-bookmarks =
     .label = أظهِر كل العلامات
 bookmarks-manage-bookmarks =
     .label = أدِر العلامات
-bookmarks-recent-bookmarks-panel =
-    .value = أحدث العلامات
 bookmarks-recent-bookmarks-panel-subheader = أحدث العلامات
 bookmarks-toolbar-chevron =
     .tooltiptext = أظهِر المزيد من العلامات

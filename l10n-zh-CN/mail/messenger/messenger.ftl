@@ -63,3 +63,27 @@ appmenu-help-exit-troubleshoot-mode =
     .label = 关闭故障排除模式
 appmenu-help-more-troubleshooting-info =
     .label = 更多排障信息
+
+## Action Button Context Menu
+
+toolbar-context-menu-manage-extension =
+    .label = 管理扩展
+    .accesskey = E
+toolbar-context-menu-remove-extension =
+    .label = 移除扩展
+    .accesskey = v
+
+## Message headers
+
+message-header-address-in-address-book-icon =
+    .alt = 在通讯录中的地址
+message-header-address-not-in-address-book-icon =
+    .alt = 不在通讯录中的地址
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = 要移除 { $name } 吗？
+addon-removal-confirmation-button = 移除
+addon-removal-confirmation-message = 要从 { -brand-short-name } 中移除 { $name } 及其配置和数据吗？

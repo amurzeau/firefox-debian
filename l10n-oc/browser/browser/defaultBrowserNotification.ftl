@@ -7,3 +7,16 @@ default-browser-notification-message = <strong>Definir { -brand-short-name } com
 default-browser-notification-button =
     .label = Definir per defaut
     .accesskey = D
+
+## These strings are used for the default browser prompt. There are 2 variations
+## depending on the operating system (Windows vs other). The checkbox label and
+## secondary button are shared between the variants.
+
+default-browser-prompt-title-pin = Definir { -brand-short-name } coma navegador principal ?
+default-browser-prompt-message-pin = Gardatz { -brand-short-name } a man — definissètz-lo coma navegador per defaut e penjatz-lo a la barra de prètzfaches.
+default-browser-prompt-button-primary-pin = Definir coma navegador principal
+default-browser-prompt-title-alt = Definir { -brand-short-name } coma navegador per defaut ?
+default-browser-prompt-message-alt = Velocitat, seguretat e confidencialitat cada còp que navegatz.
+default-browser-prompt-button-primary-alt = Definir coma navegador per defaut
+default-browser-prompt-checkbox-not-again-label = Mostrar pas mai aquò messatge
+default-browser-prompt-button-secondary = Pas ara

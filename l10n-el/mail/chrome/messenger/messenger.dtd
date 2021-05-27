@@ -438,8 +438,8 @@
 <!ENTITY markAsNotJunkCmd.label "Ως επιθυμητή αλληλογραφία">
 <!ENTITY markAsNotJunkCmd.accesskey "θ">
 <!ENTITY markAsNotJunkCmd.key "j">
-<!ENTITY recalculateJunkScoreCmd.label "Εκτέλεση ελέγχων ανεπιθύμητης αλληλογραφίας">
-<!ENTITY recalculateJunkScoreCmd.accesskey "κ">
+<!ENTITY recalculateJunkScoreCmd.label "Έλεγχος για ανεπιθύμητα email">
+<!ENTITY recalculateJunkScoreCmd.accesskey "γ">
 <!ENTITY openMessageWindowCmd.label "Άνοιγμα μηνύματος">
 <!ENTITY openMessageWindowCmd.accesskey "ν">
 <!ENTITY openMessageWindowCmd.key "o">
@@ -496,7 +496,7 @@
 <!ENTITY filtersApplyToSelection.accesskey "κ">
 <!ENTITY filtersApplyToMessage.label "Εκτέλεση φίλτρων στο μήνυμα">
 <!ENTITY filtersApplyToMessage.accesskey "σ">
-<!ENTITY runJunkControls.label "Εκτέλεση ελέγχων ανεπιθύμητης αλληλογραφίας στα επιλεγμένα μηνύματα">
+<!ENTITY runJunkControls.label "Έλεγχος για ανεπιθύμητα email στον φάκελο">
 <!ENTITY runJunkControls.accesskey "κ">
 <!ENTITY deleteJunk.label "Διαγραφή σημειωμένου μηνύματος ως ανεπιθύμητο στο φάκελο">
 <!ENTITY deleteJunk.accesskey "ι">
@@ -513,14 +513,14 @@
 <!ENTITY accountManagerCmdUnix2.accesskey "θ">
 
 <!-- Developer Tools Submenu -->
-<!ENTITY devtoolsMenu.label "Εργαλεία προγραμματιστή">
+<!ENTITY devtoolsMenu.label "Εργαλεία ανάπτυξης">
 <!ENTITY devtoolsMenu.accesskey "ρ">
-<!ENTITY devToolboxCmd.label "Γραμμή εργαλείων προγραμματιστή">
+<!ENTITY devToolboxCmd.label "Εργαλειοθήκη προγραμματιστή">
 <!ENTITY devToolboxCmd.accesskey "λ">
 <!ENTITY devToolboxCmd.commandkey "i">
-<!ENTITY debugAddonsCmd.label "Εντοπισμός σφαλμάτων προσθέτων">
+<!ENTITY debugAddonsCmd.label "Έλεγχος σφαλμάτων προσθέτων">
 <!ENTITY debugAddonsCmd.accesskey "Α">
-<!ENTITY tabsDebugCmd.label "Εντοπισμός σφαλμάτων πλαισίου περιεχομένου">
+<!ENTITY tabsDebugCmd.label "Έλεγχος σφαλμάτων πλαισίου περιεχομένου">
 <!ENTITY tabsDebugCmd.accesskey "Π">
 <!ENTITY errorConsoleCmd.label "Κονσόλα σφαλμάτων">
 <!ENTITY errorConsoleCmd.accesskey "ν">
@@ -625,7 +625,7 @@
 <!ENTITY appmenuEditMenu.label "Επεξεργασία">
 <!ENTITY appmenuToolbarLayout.label "Διάταξη γραμμής εργαλείων…">
 <!ENTITY appmenuSelectThread.label "Επιλογή νήματος">
-<!ENTITY appmenuSelectFlagged.label "Επιλέξτε μηνύματα με αστέρι">
+<!ENTITY appmenuSelectFlagged.label "Επιλογή μηνυμάτων με αστέρι">
 
 <!-- Tags Menu Popup -->
 <!ENTITY addNewTag.label "Νέα ετικέτα…">

@@ -19,6 +19,11 @@ experimental-features-media-avif =
 experimental-features-media-avif-description = Med den här funktionen aktiverad stöder { -brand-short-name } AVIF-format (AV1). Detta är ett stillbildsformat som utnyttjar funktionerna i AV1-videokomprimeringsalgoritmerna för att minska bildstorleken. Se <a data-l10n-name="bugzilla">bug 1443863</a> för mer detaljer.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
+experimental-features-media-jxl =
+    .label = Media: JPEG XL
+experimental-features-media-jxl-description = Med den här funktionen aktiverad stöder { -brand-short-name } formatet JPEG XL (JXL). Detta är ett förbättrat bildfilformat som stöder förlustfri övergång från traditionella JPEG-filer. Se <a data-l10n-name="bugzilla">felrapport 1539075</a> för mer information.
+# The title of the experiment should be kept in English as it may be referenced
+# by various online articles and is technical in nature.
 experimental-features-web-api-inputmode =
     .label = Web API: inputmode
 # "inputmode" and "contenteditable" are technical terms and shouldn't be translated.
@@ -66,8 +71,8 @@ experimental-features-webrtc-global-mute-toggles =
 experimental-features-webrtc-global-mute-toggles-description = Lägg till kontroller i WebRTC:s globala delningsindikator som tillåter användare att stänga av mikrofonen och kameraflödena globalt.
 # Win32k Lockdown
 experimental-features-win32k-lockdown =
-    .label = Win32k-inaktivering
-experimental-features-win32k-lockdown-description = Inaktivera användning av Win32k API:er i webbläsarflikarna. Ger en ökad säkerhet men kan för närvarande vara instabil. (Endast Windows)
+    .label = Win32k-låsning
+experimental-features-win32k-lockdown-description = Inaktivera användning av Win32k API:er i webbläsarflikar. Ger en ökad säkerhet men kan för närvarande vara instabil. (Endast Windows)
 # JS JIT Warp project
 experimental-features-js-warp =
     .label = JavaScript JIT: Warp

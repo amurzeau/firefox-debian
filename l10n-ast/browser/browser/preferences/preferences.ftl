@@ -58,6 +58,9 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Sync
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = Esperimentos de { -brand-short-name }
 category-experimental =
     .tooltiptext = Esperimentos de { -brand-short-name }
@@ -134,6 +137,8 @@ search-results-empty-message =
         [windows] ¡Sentímoslo! Nun hai resultaos n'Opciones pa «<span data-l10n-name="query"></span>».
        *[other] ¡Sentímoslo! Nun hai resultaos en Preferencies pa «<span data-l10n-name="query"></span>».
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = ¡Sentímoslo! Nun hai nengún resultáu n'Axustes pa «<span data-l10n-name="query"></span>»
 search-results-help-link = ¿Precises ayuda? Visita <a data-l10n-name="url">Sofitu de { -brand-short-name }</a>
 
 ## General Section
@@ -380,6 +385,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Nun comprobar enxamás los anovamientos (nun s'aconseya)
     .accesskey = e
+update-application-background-enabled =
+    .label = Cuando { -brand-short-name } nun tea n'execución
+    .accesskey = C
 update-application-warning-cross-user-setting = Esti axuste va aplicase a toles cuentes de Windows y perfiles de { -brand-short-name } qu'usen esta instalación de { -brand-short-name }.
 update-application-use-service =
     .label = Usar un serviciu en segundu planu pa instalar los anovamientos
@@ -443,7 +451,7 @@ browsing-picture-in-picture-toggle-enabled =
     .accesskey = A
 browsing-picture-in-picture-learn-more = Lleer más
 browsing-media-control =
-    .label = Controlar el conteníu multimedia pel tecláu, auriculares o interfaz virtual
+    .label = Controlar el conteníu multimedia pel tecláu, pelos auriculares o pela interfaz virtual
     .accesskey = v
 browsing-media-control-learn-more = Lleer más
 browsing-cfr-recommendations =
@@ -668,6 +676,7 @@ sync-sign-out =
 sync-manage-account = Xestionar la cuenta
     .accesskey = o
 sync-signedin-unverified = { $email } ta ensin verificar.
+sync-signedin-login-failure = Anicia sesión pa volver conectate a { $email }
 sync-remove-account =
     .label = Quitar la cuenta
     .accesskey = Q
@@ -859,7 +868,7 @@ history-private-browsing-permanent =
     .label = Usar siempres el mou de restolar en privao
     .accesskey = p
 history-remember-browser-option =
-    .label = Recordar l'historial de restolar y descargues
+    .label = Recordar l'historial de restolar y de descargues
     .accesskey = r
 history-remember-search-option =
     .label = Recordar l'historial de busques y de formularios
@@ -953,7 +962,7 @@ addressbar-suggestions-settings = Camudar les preferencies pa les suxerencies de
 
 ## Privacy Section - Content Blocking
 
-content-blocking-enhanced-tracking-protection = Proteición ameyorada escontra'l rastrexu
+content-blocking-enhanced-tracking-protection = Proteición antirrastrexu ameyorada
 content-blocking-section-top-level-description = Los rastrexadores síguente per internet pa recoyer información tocante a los tos vezos de restolar ya intereses. { -brand-short-name } bloquia munchos d'esos rastrexadores y otros scripts maliciosos.
 content-blocking-learn-more = Lleer más
 content-blocking-fpi-incompatibility-warning = Tas usando Aislamientu Primariu (FPI) lo qu'anula dalgunos axustes cookies de { -brand-short-name }
@@ -977,9 +986,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Proteición y rindimientu equilibraos. Les páxines van cargar con normalidá.
 content-blocking-etp-strict-desc = Más proteición, mas pue romper dalgunos sitios o dalgún conteníu
 content-blocking-etp-custom-desc = Escueyi los rastrexadores y scripts a bloquiar
+content-blocking-etp-blocking-desc = { -brand-short-name } bloquia:
 content-blocking-private-windows = Conteníu que rastrexa nes llingüetes privaes
 content-blocking-cross-site-cookies = Cookies ente sitios
+content-blocking-cross-site-cookies-in-all-windows = Cookies ente sitios dientro de toles ventanes (incluyíes les cookies de rastrexu)
 content-blocking-cross-site-tracking-cookies = Cookies de rastrexu ente sitios
+content-blocking-all-cross-site-cookies-private-windows = Cookies ente sitios dientro de les ventanes en privao
 content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies de rastrexu ente sitios, y aisllar les cookies que queden
 content-blocking-social-media-trackers = Rastrexadores de redes sociales
 content-blocking-all-cookies = Toles cookies
@@ -990,7 +1002,7 @@ content-blocking-cryptominers = Criptomineros
 content-blocking-fingerprinters = Xeneradores de buelgues
 content-blocking-warning-title = ¡Atención!
 content-blocking-and-isolating-etp-warning-description = Bloquiar rastrexadores y aisllar cookies pue afeutar a la funcionalidá de dalgunos sitios. Volvi cargar la páxina colos rastrexadores pa cargar tol conteníu.
-content-blocking-and-isolating-etp-warning-description-2 = Esti axuste pue causar que dalgunos sitios web nun amuesen el conteníu o funcionen correutamente. Si te paez qu'un sitiu ta estropiáu, pues desactivar la proteición escontra'l rastrexu pa esi sitiu y cargar tol conteníu.
+content-blocking-and-isolating-etp-warning-description-2 = Esti axuste pue causar que dalgunos sitios web nun amuesen el conteníu o nun funcionen correutamente. Si te paez qu'un sitiu ta estropiáu, pues desactivar la proteición antirrastrexu pa esi sitiu y cargar tol conteníu.
 content-blocking-warning-learn-how = Lleer cómo
 content-blocking-reload-description = Tienes de volver cargar les llingüetes p'aplicar estos cambeos.
 content-blocking-reload-tabs-button =
@@ -1087,7 +1099,7 @@ collection-health-report =
     .accesskey = r
 collection-health-report-link = Lleer más
 collection-studies =
-    .label = Permitir { -brand-short-name } qu'instale y execute estudios
+    .label = Permitir a { -brand-short-name } qu'instale y execute estudios
 collection-studies-link = Amosar los estudios de { -brand-short-name }
 addon-recommendations =
     .label = Permitir a { -brand-short-name } qu'aconseye estensiones de forma personalizada
@@ -1159,7 +1171,7 @@ space-alert-over-5gb-message =
 space-alert-under-5gb-ok-button =
     .label = D'acuerdu, entendílo
     .accesskey = D
-space-alert-under-5gb-message = { -brand-short-name } ta quedando ensin espaciu nel discu. El conteníu de los sitios web pue dexar d'amosase afayadizamente. Vista «Lleer más» pa optimiar l'usu del discu pa una esperiencia de restolar meyor.
+space-alert-under-5gb-message = { -brand-short-name } ta quedando ensin espaciu nel discu. El conteníu de los sitios web pue dexar d'amosase afayadizamente. Visita «Lleer más» pa optimiar l'usu del discu pa una esperiencia de restolar meyor.
 
 ## Privacy Section - HTTPS-Only
 

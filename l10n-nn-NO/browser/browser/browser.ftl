@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Legg til «{ $engineName }»
+    .tooltiptext = Legg til søkjemotor «{ $engineName }»
+    .aria-label = Legg til søkjemotor «{ $engineName }»
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Legg til søkjemotor
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Nettstadinformasjon for { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Tilkoplings-sikkerheit for { $host }
 identity-connection-not-secure = Tilkoplinga er ikkje trygg
 identity-connection-secure = Tilkoplinga er trygg
+identity-connection-failure = Tilkoplingsfeil
 identity-connection-internal = Dette er ei sikker { -brand-short-name }-side.
 identity-connection-file = Denne sida er lagra på datamaskina di.
 identity-extension-page = Denne sida er lasta frå ei utviding.
@@ -319,6 +339,7 @@ identity-https-only-info-turn-off2 = Dersom nettsida verkar øydelagd, kan det v
 identity-https-only-info-no-upgrade = Klarte ikkje å oppgradere kopling frå HTTP.
 identity-permissions-storage-access-header = Infokapslar på tvers av nettstadar
 identity-permissions-storage-access-hint = Desse partane kan bruke infokapslar på tvers av nettstadar og nettstaddata medan du er på denne nettstaden.
+identity-permissions-storage-access-learn-more = Les meir
 identity-permissions-reload-hint = Du må kanskje laste sida på nytt for at endringane skal gjelde.
 identity-permissions-empty = Du har ikkje gjeve denne nettstaden spesielle løyve.
 identity-clear-site-data =
@@ -490,6 +511,11 @@ urlbar-placeholder-with-name =
     .placeholder = Søk med { $name } eller skriv inn adresse
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Nettlesaren er under fjernstyring
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Nettlesaren er under fjernkontroll (årsak: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Du har gjeve denne nettstaden ytterlegare løyve.
 urlbar-switch-to-tab =
@@ -578,9 +604,6 @@ pointerlock-warning-no-domain = Dette dokumentet har kontroll over musepeikaren.
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Ein del av denne sida krasja.</strong> For å informere { -brand-product-name } om dette problemet og få det løyst raskare, må du sende inn ein rapport.
-crashed-subframe-learnmore =
-    .label = Les meir
-    .accesskey = L
 crashed-subframe-learnmore-link =
     .value = Les meir
 crashed-subframe-submit =
@@ -593,8 +616,6 @@ bookmarks-show-all-bookmarks =
     .label = Vis alle bokmerke
 bookmarks-manage-bookmarks =
     .label = Handter bokmerke
-bookmarks-recent-bookmarks-panel =
-    .value = Nylege bokmerke
 bookmarks-recent-bookmarks-panel-subheader = Nylege bokmerke
 bookmarks-toolbar-chevron =
     .tooltiptext = Vis fleire bokmerke
@@ -621,8 +642,8 @@ bookmarks-tools-toolbar-visibility-menuitem =
 bookmarks-tools-toolbar-visibility-panel =
     .label =
         { $isVisible ->
-            [true] Vis bokmerkeverktøylinja
-           *[other] Skjul bokmerkeverktøylinja
+            [true] Gøym bokmerkeverktøylinja
+           *[other] Vis bokmerkeverktøylinja
         }
 bookmarks-tools-menu-button-visibility =
     .label =
@@ -640,11 +661,11 @@ bookmarks-bookmark-edit-panel =
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
 bookmarks-toolbar =
-    .toolbarname = Bokmerke
+    .toolbarname = Bokmerkelinje
     .accesskey = B
     .aria-label = Bokmerke
 bookmarks-toolbar-menu =
-    .label = Bokmerke
+    .label = Bokmerkelinje
 bookmarks-toolbar-placeholder =
     .title = Element i bokmerkelinja
 bookmarks-toolbar-placeholder-button =

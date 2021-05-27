@@ -247,6 +247,10 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Agregar motor de búsqueda
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -289,6 +293,13 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Información del sitio { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Seguridad de la conexión para { $host }
 identity-connection-not-secure = Conexión no segura
 identity-connection-secure = Conexión segura
 identity-connection-internal = Esta es un página { -brand-short-name } segura.
@@ -365,6 +376,18 @@ browser-window-close-button =
 ## Variables:
 ##  $count (number): number of affected tabs
 
+browser-tab-mute =
+    { $count ->
+        [1] SILENCIAR PESTAÑA
+        [one] SILENCIAR { $count } PESTAÑA
+       *[other] SILENCIAR { $count } PESTAÑAS
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] REPRODUCIR PESTAÑA
+        [one] REPRODUCIR { $count } PESTAÑA
+       *[other] REPRODUCIR { $count } PESTAÑAS
+    }
 
 ## Bookmarks toolbar items
 
@@ -381,6 +404,16 @@ popup-select-camera =
 popup-select-microphone =
     .value = Compartir Micrófono:
     .accesskey = M
+popup-select-camera-device =
+    .value = Cámara:
+    .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = Cámara
+popup-select-microphone-device =
+    .value = Micrófono:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Micrófono
 popup-all-windows-shared = Todas las ventanas visibles en tu pantalla se compartirán.
 popup-screen-sharing-not-now =
     .label = Ahora no
@@ -390,6 +423,13 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = Deshabilitar notificaciones de { -brand-short-name } mientras se comparte
 popup-silence-notifications-checkbox-warning = { -brand-short-name } no mostrará notificaciones mientras se está compartiendo.
+popup-screen-sharing-block =
+    .label = Bloquear
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Bloquear siempre
+    .accesskey = B
+popup-mute-notifications-checkbox = Silenciar las notificaciones de sitios web mientras se comparte
 
 ## WebRTC window or screen share tab switch warning
 
@@ -499,6 +539,8 @@ urlbar-result-action-tabtosearch-web = Buscar con { $engine } directamente desde
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Buscar con { $engine } directamente desde la barra de direcciones
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Copiar
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -594,6 +636,20 @@ save-to-pocket-button =
 
 ## Customize Toolbar Buttons
 
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Complementos y temas
+    .tooltiptext = Administrar complementos y temas ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Ajustes
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Abrir ajustes ({ $shortcut })
+           *[other] Abrir ajustes
+        }
 
 ## More items
 

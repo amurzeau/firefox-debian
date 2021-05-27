@@ -247,6 +247,10 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Lisa otsingumootor
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -289,6 +293,13 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Saidi { $host } teave
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Saidi { $host } ühenduse turvalisus
 identity-connection-not-secure = Ebaturvaline ühendus
 identity-connection-secure = Turvaline ühendus
 identity-connection-internal = See on turvaline { -brand-short-name }i leht.

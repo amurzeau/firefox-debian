@@ -2,6 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+toolbar-context-menu-new-tab =
+    .label = Новая вкладка
+    .accesskey = я
 toolbar-context-menu-reload-selected-tab =
     .label = Обновить выделенную вкладку
     .accesskey = к
@@ -63,10 +66,10 @@ toolbar-context-menu-remove-from-toolbar =
     .label = Убрать с панели инструментов
     .accesskey = и
 toolbar-context-menu-view-customize-toolbar =
-    .label = Персонализация…
+    .label = Настроить…
     .accesskey = о
 toolbar-context-menu-view-customize-toolbar-2 =
-    .label = Персонализация панели инструментов…
+    .label = Настройка панели инструментов…
     .accesskey = с
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Всегда отображать

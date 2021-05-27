@@ -115,3 +115,46 @@ move-attachment-last-panel-button =
 button-return-receipt =
     .label = Untfangstbefêstiging
     .tooltiptext = In ûntfangstbefêstiging foar dit berjocht freegje
+#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
+consider-bcc-notification = De { $count } ûntfangers yn Oan en Cc kinne inoars adres sjen. Jo kinne foarkomme dat ûntfangers toand wurde troch yn stee hjirfan Bcc te brûken.
+
+# Addressing Area
+
+to-compose-address-row-label =
+    .value = Oan
+#   $key (String) - the shortcut key for this field
+to-compose-show-address-row-menuitem =
+    .label = { to-compose-address-row-label.value }-fjild
+    .accesskey = T
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+to-compose-show-address-row-label =
+    .value = { to-compose-address-row-label.value }
+    .tooltiptext = { to-compose-address-row-label.value }-fjild toane ({ to-compose-show-address-row-menuitem.acceltext })
+cc-compose-address-row-label =
+    .value = Cc
+#   $key (String) - the shortcut key for this field
+cc-compose-show-address-row-menuitem =
+    .label = { cc-compose-address-row-label.value }-fjild
+    .accesskey = C
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+cc-compose-show-address-row-label =
+    .value = { cc-compose-address-row-label.value }
+    .tooltiptext = { cc-compose-address-row-label.value }-fjild toane ({ cc-compose-show-address-row-menuitem.acceltext })
+bcc-compose-address-row-label =
+    .value = Bcc
+#   $key (String) - the shortcut key for this field
+bcc-compose-show-address-row-menuitem =
+    .label = { bcc-compose-address-row-label.value }-fjild
+    .accesskey = B
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+bcc-compose-show-address-row-label =
+    .value = { bcc-compose-address-row-label.value }
+    .tooltiptext = { bcc-compose-address-row-label.value }-fjild toane ({ bcc-compose-show-address-row-menuitem.acceltext })
+#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
+many-public-recipients-info = De { $count } ûntfangers yn Oan en Cc sille de adressen fan de oaren sjen. Jo kinne foarkomme dat ûntfangers toand wurde troch yn stee hjirfan Bcc te brûken.
+many-public-recipients-bcc =
+    .label = Yn stee dêrfan Bcc brûke
+    .accesskey = Y
+many-public-recipients-ignore =
+    .label = Untfangers iepenbier litte
+    .accesskey = i

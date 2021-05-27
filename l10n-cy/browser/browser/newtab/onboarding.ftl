@@ -200,7 +200,6 @@ onboarding-welcome-steps-indicator =
 # automatically added to the text inside it. "look" should stay inside the span.
 onboarding-multistage-theme-header = Dewiswch <span data-l10n-name = "zap">olwg</span>
 onboarding-multistage-theme-subtitle = Personoli { -brand-short-name } gyda thema.
-onboarding-multistage-theme-primary-button-label = Cadw Thema
 onboarding-multistage-theme-primary-button-label2 = Gorffen
 onboarding-multistage-theme-secondary-button-label = Nid nawr
 # Automatic theme uses operating system color settings
@@ -255,3 +254,90 @@ onboarding-multistage-theme-description-alpenglow =
     .aria-description =
         Defnyddio gwedd liwgar ar gyfer botymau,
         dewislenni, a ffenestri.
+
+## Multistage MR1 onboarding strings (MR1 about:welcome pages)
+
+# "Hero Text" displayed on left side of welcome screen.
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
+# It also signals the passion users bring to Firefox, how they use
+# Firefox to pursue those passions, as well as the boldness in their
+# choice to use Firefox over a larger competitor browser.
+# An alternative title for localization is: "It starts here".
+# This text can be formatted to span multiple lines as needed.
+mr1-welcome-screen-hero-text = Mae'n cychwyn yma
+# Caption for background image in about:welcome. "Soraya Osorio" is the name
+# of the person and shouldn't be translated.
+mr1-onboarding-welcome-image-caption = Soraya Osorio - Dylunydd dodrefn, cefnogwr Firefox
+# This button will open system settings to turn on prefers-reduced-motion
+mr1-onboarding-reduce-motion-button-label = Diffodd animeiddiadau
+mr1-onboarding-welcome-header = Croeso i { -brand-short-name }
+mr1-onboarding-set-default-pin-primary-button-label = Gwneud { -brand-short-name } fy mrhif borwr
+    .title = Yn gosod { -brand-short-name } fel y porwr rhagosodedig a'i binio i'r bar tasgau
+mr1-onboarding-set-default-only-primary-button-label = Gwneud { -brand-short-name } fy mhorwr rhagosodedig
+mr1-onboarding-set-default-secondary-button-label = Nid nawr
+mr1-onboarding-sign-in-button-label = Mewngofnodi
+mr1-onboarding-import-header = Dewch â'r cyfan gyda chi
+mr1-onboarding-import-subtitle = Mewnforio'ch cyfrineiriau, <br/>nodau tudalen a rhagor.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
+# Variables:
+#   $previous (Str) - Previous browser name, such as Edge, Chrome
+mr1-onboarding-import-primary-button-label-attribution = Mewnforio o { $previous }
+# This string will be used in cases where we can't detect the previous browser name.
+mr1-onboarding-import-primary-button-label-no-attribution = Mewnforio o'r porwr blaenorol
+mr1-onboarding-import-secondary-button-label = Nid nawr
+mr1-onboarding-theme-header = Ei wneud eich un chi
+mr1-onboarding-theme-subtitle = Personoli { -brand-short-name } gyda thema.
+mr1-onboarding-theme-primary-button-label = Cadw'r thema
+mr1-onboarding-theme-secondary-button-label = Nid nawr
+# System theme uses operating system color settings
+mr1-onboarding-theme-label-system = Thema'r system
+mr1-onboarding-theme-label-light = Golau
+mr1-onboarding-theme-label-dark = Tywyll
+# "Alpenglow" here is the name of the theme, and should be kept in English.
+mr1-onboarding-theme-label-alpenglow = Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of system theme
+mr1-onboarding-theme-tooltip-system =
+    .title =
+        Dilyn thema'r system weithredu
+        ar gyfer botymau, bwydlenni, a ffenestri.
+# Input description for system theme
+mr1-onboarding-theme-description-system =
+    .aria-description =
+        Dilyn thema'r system weithredu
+        ar gyfer botymau, bwydlenni, a ffenestri.
+# Tooltip displayed on hover of light theme
+mr1-onboarding-theme-tooltip-light =
+    .title =
+        Defnyddio thema olau ar gyfer botymau,
+        dewislenni a ffenestri.
+# Input description for light theme
+mr1-onboarding-theme-description-light =
+    .aria-description =
+        Defnyddio thema olau ar gyfer botymau,
+        dewislenni a ffenestri.
+# Tooltip displayed on hover of dark theme
+mr1-onboarding-theme-tooltip-dark =
+    .title =
+        Defnyddio thema dywyll ar gyfer botymau,
+        dewislenni a ffenestri.
+# Input description for dark theme
+mr1-onboarding-theme-description-dark =
+    .aria-description =
+        Defnyddio thema dywyll ar gyfer botymau,
+        dewislenni a ffenestri.
+# Tooltip displayed on hover of Alpenglow theme
+mr1-onboarding-theme-tooltip-alpenglow =
+    .title =
+        Defnyddio thema ddeinamig, lliwgar ar gyfer botymau,
+        dewislenni a ffenestri.
+# Input description for Alpenglow theme
+mr1-onboarding-theme-description-alpenglow =
+    .aria-description =
+        Defnyddio thema ddeinamig, lliwgar ar gyfer botymau,
+        dewislenn a ffenestri.

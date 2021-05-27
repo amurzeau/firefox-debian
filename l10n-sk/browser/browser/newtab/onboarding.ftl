@@ -183,7 +183,7 @@ onboarding-multistage-pin-default-help-text = Týmto pripnete { -brand-short-nam
 onboarding-multistage-pin-default-primary-button-label = Nastavte si { -brand-short-name } ako predvolený prehliadač
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "more" should stay inside the span.
-onboarding-multistage-import-header = Importujte svoje heslá, záložky a <span data-l10n-name="zap">mnoho ďalšieho</span>
+onboarding-multistage-import-header = Importujte svoje heslá, záložky a <span data-l10n-name="zap">ďalšie položky</span>
 onboarding-multistage-import-subtitle = Prechádzate z iného prehliadača? Všetko si môžete do { -brand-short-name(case: "gen") } jednoducho preniesť.
 onboarding-multistage-import-primary-button-label = Importovať
 onboarding-multistage-import-secondary-button-label = Teraz nie
@@ -200,7 +200,6 @@ onboarding-welcome-steps-indicator =
 # automatically added to the text inside it. "look" should stay inside the span.
 onboarding-multistage-theme-header = Vyberte si <span data-l10n-name="zap">vzhľad</span>
 onboarding-multistage-theme-subtitle = Prispôsobte si { -brand-short-name }.
-onboarding-multistage-theme-primary-button-label = Uložiť vzhľad
 onboarding-multistage-theme-primary-button-label2 = Hotovo
 onboarding-multistage-theme-secondary-button-label = Teraz nie
 # Automatic theme uses operating system color settings
@@ -239,3 +238,90 @@ onboarding-multistage-theme-tooltip-alpenglow-2 =
 # Input description for Alpenglow theme
 onboarding-multistage-theme-description-alpenglow =
     .aria-description = Použije farebný vzhľad tlačidiel, ponúk a okien.
+
+## Multistage MR1 onboarding strings (MR1 about:welcome pages)
+
+# "Hero Text" displayed on left side of welcome screen.
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
+# It also signals the passion users bring to Firefox, how they use
+# Firefox to pursue those passions, as well as the boldness in their
+# choice to use Firefox over a larger competitor browser.
+# An alternative title for localization is: "It starts here".
+# This text can be formatted to span multiple lines as needed.
+mr1-welcome-screen-hero-text = Všetko začína tu
+# Caption for background image in about:welcome. "Soraya Osorio" is the name
+# of the person and shouldn't be translated.
+mr1-onboarding-welcome-image-caption = Soraya Osorio - návrhárka nábytku, fanúšička Firefoxu
+# This button will open system settings to turn on prefers-reduced-motion
+mr1-onboarding-reduce-motion-button-label = Vypnúť animácie
+mr1-onboarding-welcome-header = Víta vás { -brand-short-name }
+mr1-onboarding-set-default-pin-primary-button-label = Nastaviť { -brand-short-name } ako môj hlavný prehliadač
+    .title = Nastaví { -brand-short-name } ako predvolený prehliadač a pripne ho na panel úloh
+mr1-onboarding-set-default-only-primary-button-label = Nastaviť { -brand-short-name } ako môj predvolený prehliadač
+mr1-onboarding-set-default-secondary-button-label = Teraz nie
+mr1-onboarding-sign-in-button-label = Prihlásiť sa
+mr1-onboarding-import-header = Prineste si všetko so sebou
+mr1-onboarding-import-subtitle = Importujte svoje heslá, <br/> záložky a ďalšie položky.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
+# Variables:
+#   $previous (Str) - Previous browser name, such as Edge, Chrome
+mr1-onboarding-import-primary-button-label-attribution = Importovať z prehliadača { $previous }
+# This string will be used in cases where we can't detect the previous browser name.
+mr1-onboarding-import-primary-button-label-no-attribution = Importovať z predchádzajúceho prehliadača
+mr1-onboarding-import-secondary-button-label = Teraz nie
+mr1-onboarding-theme-header = Prispôsobte si ho podľa seba
+mr1-onboarding-theme-subtitle = Zmeňte vzhľad { -brand-short-name(case: "gen") } pomocou témy vzhľadu.
+mr1-onboarding-theme-primary-button-label = Uložiť tému
+mr1-onboarding-theme-secondary-button-label = Teraz nie
+# System theme uses operating system color settings
+mr1-onboarding-theme-label-system = Systémová téma
+mr1-onboarding-theme-label-light = Svetlá
+mr1-onboarding-theme-label-dark = Tmavá
+# "Alpenglow" here is the name of the theme, and should be kept in English.
+mr1-onboarding-theme-label-alpenglow = Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of system theme
+mr1-onboarding-theme-tooltip-system =
+    .title =
+        Nasleduje nastavenia operačného systému
+        pre tlačidlá, ponuky a okná.
+# Input description for system theme
+mr1-onboarding-theme-description-system =
+    .aria-description =
+        Nasleduje nastavenia operačného systému
+        pre tlačidlá, ponuky a okná.
+# Tooltip displayed on hover of light theme
+mr1-onboarding-theme-tooltip-light =
+    .title =
+        Použije svetlý vzhľad tlačidiel,
+        ponúk a okien.
+# Input description for light theme
+mr1-onboarding-theme-description-light =
+    .aria-description =
+        Použije svetlý vzhľad tlačidiel,
+        ponúk a okien.
+# Tooltip displayed on hover of dark theme
+mr1-onboarding-theme-tooltip-dark =
+    .title =
+        Použije tmavý vzhľad tlačidiel,
+        ponúk a okien.
+# Input description for dark theme
+mr1-onboarding-theme-description-dark =
+    .aria-description =
+        Použije tmavý vzhľad tlačidiel,
+        ponúk a okien.
+# Tooltip displayed on hover of Alpenglow theme
+mr1-onboarding-theme-tooltip-alpenglow =
+    .title =
+        Použije dynamickú, farebnú tému
+        pre tlačidlá, ponuky a okná.
+# Input description for Alpenglow theme
+mr1-onboarding-theme-description-alpenglow =
+    .aria-description =
+        Použije dynamickú, farebnú tému
+        pre tlačidlá, ponuky a okná.

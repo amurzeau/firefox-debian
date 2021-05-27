@@ -19,6 +19,11 @@ experimental-features-media-avif =
 experimental-features-media-avif-description = Gyda'r nodwedd hon wedi'i galluogi, mae { -brand-short-name } yn cefnogi fformat Ffeil Delwedd AV1 (AVIF). Mae hwn yn fformat ffeil delwedd llonydd sy'n trosoli galluoedd yr algorithmau cywasgu fideo AV1 i leihau maint delwedd. Gweler <a data-l10n-name="bugzilla">bug 1443863</a> am fwy o fanylion.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
+experimental-features-media-jxl =
+    .label = Cyfryngau: JPEG XL
+experimental-features-media-jxl-description = Gyda'r nodwedd hon wedi'i galluogi, mae { -brand-short-name } yn cefnogi fformat JPEG XL (JXL). Mae hwn yn fformat ffeil delwedd amgen sy'n cefnogi trosglwyddo  heb golled o ffeiliau JPEG traddodiadol. Darllenwch <a data-l10n-name="bugzilla">bug 1539075</a> am ragor o fanylion.
+# The title of the experiment should be kept in English as it may be referenced
+# by various online articles and is technical in nature.
 experimental-features-web-api-inputmode =
     .label = Web API: inputmode
 # "inputmode" and "contenteditable" are technical terms and shouldn't be translated.
@@ -67,7 +72,7 @@ experimental-features-webrtc-global-mute-toggles-description = Ychwanegwch ffyrd
 # Win32k Lockdown
 experimental-features-win32k-lockdown =
     .label = Win32k Lockdown
-experimental-features-win32k-lockdown-description = Analluogwch y defnydd o APIs Win32k mewn tabiau porwr. Mae'n darparu gwelliant diogelwch ond gall fod yn ansefydlog neu'n broblemus ar hyn o bryd. (Windows yn unig)
+experimental-features-win32k-lockdown-description = Analluogu'r defnydd o APIs Win32k mewn tabiau porwr. Mae'n darparu gwelliant diogelwch ond gall fod yn ansefydlog neu'n broblemus ar hyn o bryd. (Windows yn unig)
 # JS JIT Warp project
 experimental-features-js-warp =
     .label = JavaScript JIT: Warp

@@ -17,11 +17,11 @@ left edge of the tabstrip. Really we just want the string to express the idea
 that this is a lightweight and reversible action that keeps your tab where you
 can reach it easily. -->
 <!ENTITY  pinTab.label                       "Закачи картицу">
-<!ENTITY  unpinTab.label                     "Откачи језичак">
+<!ENTITY  unpinTab.label                     "Откачи картицу">
 
-<!ENTITY  listAllTabs.label      "Наброј све језичке">
+<!ENTITY  listAllTabs.label      "Прикажи све картице">
 
-<!ENTITY tabCmd.label "Нови језичак">
+<!ENTITY tabCmd.label "Нова картица">
 <!ENTITY openFileCmd.label "Отвори датотеку…">
 <!ENTITY printCmd.label "Одштампај…">
 
@@ -161,24 +161,24 @@ this container is a toolbar. This avoids double-speaking. -->
 
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.notabs.label): This is shown beneath
      the name of a device when that device has no open tabs -->
-<!ENTITY appMenuRemoteTabs.notabs.label "Нема отворених језичака">
+<!ENTITY appMenuRemoteTabs.notabs.label "Нема отворених картица">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.showMore.label, appMenuRemoteTabs.showMore.tooltip):
      This is shown after the tabs list if we can display more tabs by clicking on the button -->
 <!ENTITY appMenuRemoteTabs.showMore.label "Прикажи још">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.showMore.tooltip):
      This is shown after the tabs list if we can display more tabs by clicking on the button -->
-<!ENTITY appMenuRemoteTabs.showMore.tooltip "Прикажи више језичака са овог уређаја">
+<!ENTITY appMenuRemoteTabs.showMore.tooltip "Прикажи више картица са овог уређаја">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.showAll.label, appMenuRemoteTabs.showAll.tooltip):
      This is shown after the tabs list if we can all the remaining tabs by clicking on the button -->
 <!ENTITY appMenuRemoteTabs.showAll.label "Прикажи све">
-<!ENTITY appMenuRemoteTabs.showAll.tooltip "Прикажи све језичке са овог уређаја">
+<!ENTITY appMenuRemoteTabs.showAll.tooltip "Прикажи све картице са овог уређаја">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Укључите синхронизацију да бисте видели листу картица са других уређаја.">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.subtitle "Желите да овде видите језичке са осталих уређаја?">
+<!ENTITY appMenuRemoteTabs.noclients.subtitle "Желите ли да овде видите картице са других уређаја?">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Отвори подешавања Sync-а">
 <!ENTITY appMenuRemoteTabs.welcome.label "Погледајте листу картица са других уређаја.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Ваш налог мора бити потврђен.">
@@ -227,7 +227,7 @@ this container is a toolbar. This avoids double-speaking. -->
 <!ENTITY saveToPocketCmd.label        "Сачувај страницу у Pocket-у">
 <!ENTITY pocketMenuitem.label         "Прикажи листу у Pocket-у">
 
-<!ENTITY emailPageCmd.label           "Пошаљи линк имејлом…">
+<!ENTITY emailPageCmd.label           "Пошаљи везу имејлом…">
 
 <!ENTITY fullZoom.label                 "Зумирање">
 
@@ -285,4 +285,4 @@ this container is a toolbar. This avoids double-speaking. -->
      display a tooltip for accessibility indicator in toolbar/tabbar. It is also
      used as a textual label for the indicator used by assistive technology
      users. -->
-<!ENTITY accessibilityIndicator.tooltip "Могућности за приступачност омогућене">
+<!ENTITY accessibilityIndicator.tooltip "Функције приступачности су омогућене">

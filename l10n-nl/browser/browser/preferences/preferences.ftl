@@ -1018,9 +1018,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Gebalanceerd voor bescherming en prestaties. Pagina’s laden normaal.
 content-blocking-etp-strict-desc = Sterkere bescherming, maar kan er voor zorgen dat sommige websites of inhoud niet werken.
 content-blocking-etp-custom-desc = Kies welke trackers en scripts u wilt blokkeren.
+content-blocking-etp-blocking-desc = { -brand-short-name } blokkeert het volgende:
 content-blocking-private-windows = Volginhoud in privévensters
 content-blocking-cross-site-cookies = Cross-sitecookies
+content-blocking-cross-site-cookies-in-all-windows = Cross-site-cookies in alle vensters (inclusief trackingcookies)
 content-blocking-cross-site-tracking-cookies = Cross-site-trackingcookies
+content-blocking-all-cross-site-cookies-private-windows = Cross-site-cookies in privévensters
 content-blocking-cross-site-tracking-cookies-plus-isolate = Cross-site-trackingcookies, en de resterende cookies isoleren
 content-blocking-social-media-trackers = Sociale-mediatrackers
 content-blocking-all-cookies = Alle cookies
@@ -1140,6 +1143,8 @@ collection-backlogged-crash-reports =
     .label = { -brand-short-name } toestaan om namens u achterstallige crashrapporten te verzenden
     .accesskey = c
 collection-backlogged-crash-reports-link = Meer info
+collection-backlogged-crash-reports-with-link = { -brand-short-name } toestaan om namens u achterstallige crashrapporten te verzenden. <a data-l10n-name="crash-reports-link">Meer info</a>
+    .accesskey = c
 
 ## Privacy Section - Security
 ##

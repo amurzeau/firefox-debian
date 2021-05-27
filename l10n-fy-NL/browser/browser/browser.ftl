@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = “{ $engineName }” tafoegje
+    .tooltiptext = Sykmasine “{ $engineName }” tafoegje
+    .aria-label = Sykmasine “{ $engineName }” tafoegje
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Sykmasine tafoegje
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Sideynformaasje foar { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Ferbiningsbefeiliging foar { $host }
 identity-connection-not-secure = Ferbining net befeilige
 identity-connection-secure = Ferbining befeilige
+identity-connection-failure = Ferbiningsflater
 identity-connection-internal = Dit is in befeilige { -brand-short-name }-side.
 identity-connection-file = Dizze side is op jo kompjûter bewarre.
 identity-extension-page = Dizze side is laden fan in útwreiding út.
@@ -319,6 +339,7 @@ identity-https-only-info-turn-off2 = As de website net liket te wurkje, dan kinn
 identity-https-only-info-no-upgrade = Kin HTTP-ferbining net fernije.
 identity-permissions-storage-access-header = Cross-sitecookies
 identity-permissions-storage-access-hint = Dizze partijen kinne wylst jo besite oan dizze website cross-sitecookies en websitegegevens brûke.
+identity-permissions-storage-access-learn-more = Mear ynfo
 identity-permissions-reload-hint = It is mooglik dat jo de side opnij lade moatte om de wizigingen aktyf te meitsjen.
 identity-permissions-empty = Jo hawwe dizze website gjin spesjale tastimmingen jûn.
 identity-clear-site-data =
@@ -493,6 +514,11 @@ urlbar-placeholder-with-name =
     .placeholder = Fier sykterm foar { $name } of adres yn
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Browser wurdt op ôfstân bestjoerd
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Browser is op ôfstân ûnder kontrôle (reden: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Jo hawwe dizze website oanfoljende spesjale tastimmingen jûn.
 urlbar-switch-to-tab =
@@ -581,9 +607,6 @@ pointerlock-warning-no-domain = Dit dokumint hat de kontrôle oer jo oanwizer. D
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>In part fan dizze side is ferûngelokke.</strong> Tsjinje in rapport yn om { -brand-product-name } te ynformearjen oer dit probleem en it rapper oplost te krijen.
-crashed-subframe-learnmore =
-    .label = Mear ynfo
-    .accesskey = M
 crashed-subframe-learnmore-link =
     .value = Mear ynfo
 crashed-subframe-submit =
@@ -596,8 +619,6 @@ bookmarks-show-all-bookmarks =
     .label = Alle blêdwizers toane
 bookmarks-manage-bookmarks =
     .label = Blêdwizers beheare
-bookmarks-recent-bookmarks-panel =
-    .value = Resinte blêdwizers
 bookmarks-recent-bookmarks-panel-subheader = Resinte blêdwizers
 bookmarks-toolbar-chevron =
     .tooltiptext = Mear blêdwizers toane

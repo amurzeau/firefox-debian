@@ -1018,9 +1018,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Dengeli koruma ve performans. Sayfalar normal şekilde yüklenir.
 content-blocking-etp-strict-desc = Daha güçlü koruma, ama bazı siteler ve içerikler düzgün çalışmayabilir.
 content-blocking-etp-custom-desc = Hangi takipçilerin ve betiklerin engelleneceğini seçin.
+content-blocking-etp-blocking-desc = { -brand-short-name } aşağıdakileri engeller:
 content-blocking-private-windows = Gizli pencelerde takip amaçlı içerikler
 content-blocking-cross-site-cookies = Siteler arası çerezler
+content-blocking-cross-site-cookies-in-all-windows = Tüm pencerelerde siteler arası çerezler (takip çerezleri dahil)
 content-blocking-cross-site-tracking-cookies = Siteler arası takip çerezleri
+content-blocking-all-cross-site-cookies-private-windows = Gizli pencerelerde siteler arası çerezler
 content-blocking-cross-site-tracking-cookies-plus-isolate = Siteler arası takipçiler ve takip çerezleri, kalan çerezleri izole et
 content-blocking-social-media-trackers = Sosyal medya takipçileri
 content-blocking-all-cookies = Tüm çerezler
@@ -1140,6 +1143,8 @@ collection-backlogged-crash-reports =
     .label = { -brand-short-name } geriye dönük çökme raporlarını benim adıma gönderebilir
     .accesskey = ö
 collection-backlogged-crash-reports-link = Daha fazla bilgi al
+collection-backlogged-crash-reports-with-link = { -brand-short-name } geriye dönük çökme raporlarını benim adıma gönderebilir <a data-l10n-name="crash-reports-link">Daha fazla bilgi al</a>
+    .accesskey = d
 
 ## Privacy Section - Security
 ##

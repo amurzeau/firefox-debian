@@ -10,6 +10,9 @@ preferences-title =
             [windows] Optiones
            *[other] Preferentias
         }
+preferences-tab-title =
+    .title = Preferentias
+preferences-doc-title = Preferentias
 category-list =
     .aria-label = Categorias
 pane-general-title = General
@@ -88,8 +91,9 @@ update-in-progress-ok-button = &Discartar
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Continuar
-account-button = Parametros de contos
 addons-button = Extensiones e themas
+account-button = Parametros de contos
+open-addons-sidebar-button = Additivos e themas
 
 ## OS Authentication dialog
 
@@ -165,6 +169,12 @@ customize-alert-label =
 tray-icon-label =
     .label = Monstrar un icone del zona del avisos
     .accesskey = a
+biff-use-system-alert =
+    .label = Usar le the notification de systema
+tray-icon-unread-label =
+    .label = Monstrar un icone in le area de notification per le messages non legite
+    .accesskey = n
+tray-icon-unread-description = Recommendate quando on usa micre buttones del barra del applicationes
 mail-system-sound-label =
     .label = Sono predefinite de systema pro nove email
     .accesskey = S
@@ -317,6 +327,8 @@ quoted-text-color =
     .accesskey = o
 search-input =
     .placeholder = Cercar
+search-handler-table =
+    .placeholder = Filtra typos e actiones de contento
 type-column-label =
     .label = Typo de contento
     .accesskey = T
@@ -702,6 +714,17 @@ search-input-box =
             [windows] Cercar in optiones
            *[other] Cercar in preferentias
         }
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-preferences-input =
+    .style = width: 15.4em
+    .placeholder = Trovar in preferentias
 
 ## Preferences UI Search Results
 

@@ -982,7 +982,7 @@ addressbar-locbar-openpage-option =
     .accesskey = O
 # Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
 addressbar-locbar-shortcuts-option =
-    .label = Raccourcis
+    .label = Les raccourcis
     .accesskey = R
 addressbar-locbar-topsites-option =
     .label = Les sites les plus visités
@@ -1018,9 +1018,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Équilibré entre protection et performances. Les pages se chargeront normalement.
 content-blocking-etp-strict-desc = Protection renforcée, mais certains sites ou contenus peuvent ne pas fonctionner correctement.
 content-blocking-etp-custom-desc = Choisissez les traqueurs et les scripts à bloquer.
+content-blocking-etp-blocking-desc = { -brand-short-name } bloque les éléments suivants :
 content-blocking-private-windows = Contenu utilisé pour le pistage dans les fenêtres de navigation privée
 content-blocking-cross-site-cookies = Cookies intersites
+content-blocking-cross-site-cookies-in-all-windows = Cookies intersites dans toutes les fenêtres (inclut les cookies de pistage)
 content-blocking-cross-site-tracking-cookies = Cookies de pistage intersites
+content-blocking-all-cross-site-cookies-private-windows = Cookies intersites dans les fenêtres de navigation privée
 content-blocking-cross-site-tracking-cookies-plus-isolate = Traqueurs intersites, et isoler les cookies restants
 content-blocking-social-media-trackers = Traqueurs de réseaux sociaux
 content-blocking-all-cookies = Tous les cookies
@@ -1140,6 +1143,8 @@ collection-backlogged-crash-reports =
     .label = Autoriser { -brand-short-name } à envoyer pour vous les rapports de plantage en attente
     .accesskey = t
 collection-backlogged-crash-reports-link = En savoir plus
+collection-backlogged-crash-reports-with-link = Autoriser { -brand-short-name } à envoyer des rapports de plantage en attente en votre nom <a data-l10n-name="crash-reports-link">En savoir plus</a>
+    .accesskey = v
 
 ## Privacy Section - Security
 ##

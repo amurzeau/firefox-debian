@@ -249,6 +249,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Dodaj „{ $engineName }”
+    .tooltiptext = Dodaj wyszukiwarkę „{ $engineName }”
+    .aria-label = Dodaj wyszukiwarkę „{ $engineName }”
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Dodaj wyszukiwarkę
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -296,8 +308,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Informacje o „{ $host }”
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Bezpieczeństwo połączenia z „{ $host }”
 identity-connection-not-secure = Niezabezpieczone połączenie
 identity-connection-secure = Zabezpieczone połączenie
+identity-connection-failure = Błąd połączenia
 identity-connection-internal = To jest strona programu { -brand-short-name }.
 identity-connection-file = Strona wczytana z tego komputera.
 identity-extension-page = Ta strona została wczytana przez rozszerzenie.
@@ -322,6 +342,7 @@ identity-https-only-info-turn-off2 = Jeśli strona wydaje się niepoprawnie dzia
 identity-https-only-info-no-upgrade = Nie można przełączyć połączenia z protokołu HTTP.
 identity-permissions-storage-access-header = Ciasteczka między witrynami
 identity-permissions-storage-access-hint = Te strony mogą używać ciasteczek i danych między witrynami, kiedy jesteś na tej witrynie.
+identity-permissions-storage-access-learn-more = Więcej informacji
 identity-permissions-reload-hint = Ponowne wczytanie strony może być konieczne, aby wprowadzone zmiany przyniosły skutek.
 identity-permissions-empty = Witryna korzysta z domyślnych uprawnień.
 identity-clear-site-data =
@@ -372,7 +393,7 @@ browser-tab-audio-playing2 = ODTWARZANIE
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-muted2 = WYCISZONE
 # This label should be written in all capital letters if your locale supports them.
-browser-tab-audio-blocked = ZABLOKOWANO AUTOMATYCZNE ODTWARZANIE
+browser-tab-audio-blocked = ZABLOKOWANO AUTOODTWARZANIE
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = OBRAZ W OBRAZIE
 
@@ -499,6 +520,11 @@ urlbar-placeholder-with-name =
     .placeholder = Wprowadź adres lub szukaj w { $name }
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Przeglądarka jest zdalnie zarządzana
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Przeglądarka jest zdalnie zarządzana (przez: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Witryna korzysta z dodatkowych uprawnień.
 urlbar-switch-to-tab =
@@ -587,9 +613,6 @@ pointerlock-warning-no-domain = Dokument kontroluje teraz kursor. Naciśnij klaw
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Część tej strony uległa awarii.</strong> Prosimy to zgłosić, aby powiadomić twórców przeglądarki { -brand-product-name } o problemie i przyspieszyć jego naprawienie.
-crashed-subframe-learnmore =
-    .label = Więcej informacji
-    .accesskey = W
 crashed-subframe-learnmore-link =
     .value = Więcej informacji
 crashed-subframe-submit =
@@ -602,8 +625,6 @@ bookmarks-show-all-bookmarks =
     .label = Wyświetl wszystkie zakładki
 bookmarks-manage-bookmarks =
     .label = Zarządzaj zakładkami
-bookmarks-recent-bookmarks-panel =
-    .value = Ostatnio dodane zakładki
 bookmarks-recent-bookmarks-panel-subheader = Ostatnio dodane zakładki
 bookmarks-toolbar-chevron =
     .tooltiptext = Wyświetl więcej zakładek

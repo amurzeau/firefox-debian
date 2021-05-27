@@ -1018,9 +1018,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Equilibri entre proteccion e performança. Las pagina cargaràn normalament.
 content-blocking-etp-strict-desc = Proteccion renfortida, pòt copar unes sites o contenguts.
 content-blocking-etp-custom-desc = Causissètz quins traçadors e scripts cal blocar.
+content-blocking-etp-blocking-desc = { -brand-short-name } blocat los seguents :
 content-blocking-private-windows = Contengut utilizat per pistar dins las fenèstras de navegacion privada
 content-blocking-cross-site-cookies = Cookies intersites
+content-blocking-cross-site-cookies-in-all-windows = Cookies entresites dins totas las fenèstras (los cookies de seguiment tanben)
 content-blocking-cross-site-tracking-cookies = Cookies de seguiment entre sites
+content-blocking-all-cross-site-cookies-private-windows = Cookies intersites en fenèstras privadas
 content-blocking-cross-site-tracking-cookies-plus-isolate = Los traçadors intersites, e isolar los cookies restants
 content-blocking-social-media-trackers = Traçadors de malhums socials
 content-blocking-all-cookies = Totes los cookies
@@ -1140,6 +1143,8 @@ collection-backlogged-crash-reports =
     .label = Permetre a { -brand-short-name } d’enviar los rapòrts de bugs en espèra
     .accesskey = P
 collection-backlogged-crash-reports-link = Ne saber mai
+collection-backlogged-crash-reports-with-link = Autorizar { -brand-short-name } a enviar de rapòrt de plantatge en espèra a vòstre nom <a data-l10n-name="crash-reports-link">Ne saber mai</a>
+    .accesskey = A
 
 ## Privacy Section - Security
 ##

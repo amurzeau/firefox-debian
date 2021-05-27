@@ -9,6 +9,17 @@ menu-view-charset =
     .label = Metin kodlaması
     .accesskey = M
 
+## Tools Menu
+
+# Since v89 we dropped the platforms distinction between Options or Preferences
+# and consolidated everything with Preferences.
+menu-tools-preferences =
+    .label = Tercihler
+    .accesskey = T
+menu-addons-and-themes =
+    .label = Eklentiler ve temalar
+    .accesskey = E
+
 ## Help Menu
 
 menu-help-enter-troubleshoot-mode =
@@ -35,3 +46,18 @@ toolbar-delete-button =
 toolbar-undelete-button =
     .label = Silmeyi geri al
     .tooltiptext = Seçili iletileri silmeyi geri al
+
+## View / Layout
+
+mail-uidensity-label =
+    .label = Yoğunluk
+    .accesskey = Y
+mail-uidensity-compact =
+    .label = Kompakt
+    .accesskey = K
+mail-uidensity-normal =
+    .label = Normal
+    .accesskey = N
+mail-uidensity-touch =
+    .label = Dokunmatik
+    .accesskey = D

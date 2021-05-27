@@ -239,6 +239,10 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = เพิ่มเครื่องมือค้นหา
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -281,8 +285,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = ข้อมูลไซต์สำหรับ { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = ความปลอดภัยของการเชื่อมต่อสำหรับ { $host }
 identity-connection-not-secure = การเชื่อมต่อไม่ปลอดภัย
 identity-connection-secure = การเชื่อมต่อปลอดภัย
+identity-connection-failure = การเชื่อมต่อล้มเหลว
 identity-connection-internal = นี่คือหน้า { -brand-short-name } ที่ปลอดภัย
 identity-connection-file = หน้านี้ถูกจัดเก็บไว้ในคอมพิวเตอร์ของคุณ
 identity-extension-page = หน้านี้ถูกโหลดจากส่วนขยาย
@@ -307,6 +319,7 @@ identity-https-only-info-turn-off2 = หากหน้าดูเหมือ�
 identity-https-only-info-no-upgrade = ไม่สามารถอัปเกรดการเชื่อมต่อจาก HTTP ได้
 identity-permissions-storage-access-header = คุกกี้ข้ามไซต์
 identity-permissions-storage-access-hint = บุคคลเหล่านี้สามารถใช้คุกกี้ข้ามไซต์และข้อมูลไซต์ในขณะที่คุณอยู่บนไซต์นี้ได้
+identity-permissions-storage-access-learn-more = เรียนรู้เพิ่มเติม
 identity-permissions-reload-hint = คุณอาจจำเป็นต้องโหลดหน้าใหม่เพื่อให้การเปลี่ยนแปลงมีผล
 identity-permissions-empty = คุณไม่ได้อนุญาตไซต์นี้ด้วยสิทธิอนุญาตพิเศษใด ๆ
 identity-clear-site-data =
@@ -566,9 +579,6 @@ pointerlock-warning-no-domain = เอกสารชิ้นนี้ได้
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>เนื้อหาบางส่วนของหน้านี้ขัดข้อง</strong> หากต้องการแจ้งให้ { -brand-product-name } ทราบเกี่ยวกับปัญหานี้เพื่อให้ได้รับการแก้ไขเร็วขึ้น โปรดส่งรายงาน
-crashed-subframe-learnmore =
-    .label = เรียนรู้เพิ่มเติม
-    .accesskey = ร
 crashed-subframe-learnmore-link =
     .value = เรียนรู้เพิ่มเติม
 crashed-subframe-submit =
@@ -581,8 +591,6 @@ bookmarks-show-all-bookmarks =
     .label = แสดงที่คั่นหน้าทั้งหมด
 bookmarks-manage-bookmarks =
     .label = จัดการที่คั่นหน้า
-bookmarks-recent-bookmarks-panel =
-    .value = ที่คั่นหน้าล่าสุด
 bookmarks-recent-bookmarks-panel-subheader = ที่คั่นหน้าล่าสุด
 bookmarks-toolbar-chevron =
     .tooltiptext = แสดงที่คั่นหน้าเพิ่มเติม

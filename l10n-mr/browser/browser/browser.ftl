@@ -199,6 +199,10 @@ search-one-offs-context-open-new-tab =
 search-one-offs-context-set-as-default =
     .label = पूर्वनिर्धारित शोध इंजिन म्हणून ठरवा
     .accesskey = D
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = शोध इंजीन जोडा
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -235,6 +239,13 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = { $host } साठी साइट माहिती
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = { $host } साठी जोडणी सुरक्षा
 identity-connection-not-secure = असुरक्षित जोडणी
 identity-connection-secure = जोडणी सुरक्षित
 identity-connection-internal = हे सुरक्षित { -brand-short-name } पृष्ठ आहे.

@@ -2,6 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+tab-context-new-tab =
+    .label = Нова картица
+    .accesskey = Н
 reload-tab =
     .label = Поново учитај картицу
     .accesskey = у
@@ -18,12 +21,12 @@ duplicate-tabs =
 # In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
 close-tabs-to-the-start =
     .label = Затвори картице са леве стране
-    .accesskey = З
+    .accesskey = л
 # The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Затвори картице са десне стране
-    .accesskey = З
+    .accesskey = д
 close-other-tabs =
     .label = Затвори друге картице
     .accesskey = д
@@ -66,15 +69,6 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Затвори више картица
     .accesskey = ш
-tab-context-share-url =
-    .label = Дели
-    .accesskey = Д
-tab-context-share-more =
-    .label = Више…
-
-## Variables:
-##  $tabCount (Number): the number of tabs that are affected by the action.
-
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -96,6 +90,15 @@ move-tabs =
 move-tab =
     .label = Помери картицу
     .accesskey = м
+tab-context-share-url =
+    .label = Дели
+    .accesskey = Д
+tab-context-share-more =
+    .label = Више…
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-reopen-closed-tabs =
     .label =
         { $tabCount ->

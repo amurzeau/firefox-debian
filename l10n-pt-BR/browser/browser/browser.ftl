@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Adicionar “{ $engineName }”
+    .tooltiptext = Adicionar mecanismo de pesquisa “{ $engineName }”
+    .aria-label = Adicionar mecanismo de pesquisa “{ $engineName }”
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Adicionar mecanismo de pesquisa
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -279,8 +291,8 @@ bookmark-panel-remove =
         }
     .accesskey = E
 bookmark-panel-show-editor-checkbox =
-    .label = Exibir editor ao salvar
-    .accesskey = S
+    .label = Exibir este painel ao adicionar um favorito
+    .accesskey = x
 bookmark-panel-done-button =
     .label = Concluído
 bookmark-panel-save-button =
@@ -293,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Informações do site { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Segurança da conexão de { $host }
 identity-connection-not-secure = Conexão não segura
 identity-connection-secure = Conexão segura
+identity-connection-failure = Falha na conexão
 identity-connection-internal = Esta é uma página segura do { -brand-short-name }.
 identity-connection-file = Esta página está armazenada no seu computador.
 identity-extension-page = Esta página é carregada a partir de uma extensão.
@@ -319,6 +339,7 @@ identity-https-only-info-turn-off2 = Se a página parecer não funcionar, você 
 identity-https-only-info-no-upgrade = Não foi possível promover a conexão de HTTP.
 identity-permissions-storage-access-header = Cookies entre sites
 identity-permissions-storage-access-hint = Essas partes podem usar cookies entre sites e dados do site enquanto você estiver nesse site.
+identity-permissions-storage-access-learn-more = Saiba mais
 identity-permissions-reload-hint = Pode ser necessário recarregar a página para que as alterações sejam aplicadas.
 identity-permissions-empty = Você não concedeu permissões especiais a este site.
 identity-clear-site-data =
@@ -330,7 +351,7 @@ identity-description-custom-root = A Mozilla não reconhece esta entidade certif
 identity-remove-cert-exception =
     .label = Remover exceção
     .accesskey = R
-identity-description-insecure = Sua conexão com este site não é privativa. As informações que enviar (como senhas, mensagens, cartões de créditos, etc) podem ser vistas por outros.
+identity-description-insecure = Sua conexão com este site não é privativa. As informações que enviar (como senhas, mensagens, cartões de créditos, etc.) podem ser vistas por outros.
 identity-description-insecure-login-forms = As informações de acesso que você inserir nesta página não estão seguras e podem ser comprometidas.
 identity-description-weak-cipher-intro = Sua conexão com este site usa criptografia fraca e não é privativa.
 identity-description-weak-cipher-risk = Outras pessoas podem ver as suas informações ou modificar o comportamento do site.
@@ -339,7 +360,7 @@ identity-description-passive-loaded = Sua conexão não é privativa e as inform
 identity-description-passive-loaded-insecure = Este site tem conteúdo que não é seguro (como imagens). <label data-l10n-name="link">Saiba mais</label>
 identity-description-passive-loaded-mixed = Apesar do { -brand-short-name } ter bloqueado algum conteúdo, ainda há elementos na página que não são seguros (como imagens). <label data-l10n-name="link">Saiba mais</label>
 identity-description-active-loaded = Este site tem conteúdo que não é seguro (como scripts) e sua conexão com ele não é privativa.
-identity-description-active-loaded-insecure = Informações que você compartilhar com este site (como senhas, mensagens, cartões de créditos, etc) podem ser vistas por terceiros.
+identity-description-active-loaded-insecure = Informações que você compartilhar com este site (como senhas, mensagens, cartões de créditos, etc.) podem ser vistas por terceiros.
 identity-learn-more =
     .value = Saiba mais
 identity-disable-mixed-content-blocking =
@@ -490,6 +511,11 @@ urlbar-placeholder-with-name =
     .placeholder = Pesquise com { $name } ou digite um endereço
 urlbar-remote-control-notification-anchor =
     .tooltiptext = O navegador está sob controle remoto
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = O navegador está sob controle remoto (motivo: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Você concedeu permissões adicionais a este site.
 urlbar-switch-to-tab =
@@ -578,9 +604,6 @@ pointerlock-warning-no-domain = Este documento tem o controle do seu ponteiro. P
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Parte desta página travou.</strong> Para deixar o { -brand-product-name } ter conhecimento deste problema e corrigir mais rápido, envie um relato.
-crashed-subframe-learnmore =
-    .label = Saiba mais
-    .accesskey = S
 crashed-subframe-learnmore-link =
     .value = Saiba mais
 crashed-subframe-submit =
@@ -593,8 +616,6 @@ bookmarks-show-all-bookmarks =
     .label = Mostrar todos os favoritos
 bookmarks-manage-bookmarks =
     .label = Gerenciar favoritos
-bookmarks-recent-bookmarks-panel =
-    .value = Favoritos recentes
 bookmarks-recent-bookmarks-panel-subheader = Favoritos recentes
 bookmarks-toolbar-chevron =
     .tooltiptext = Mostrar mais favoritos

@@ -11,6 +11,8 @@ newtab-settings-button =
 newtab-personalize-button-label = Personaliziraj
     .title = Personaliziraj novu karticu
     .aria-label = Personaliziraj novu karticu
+newtab-personalize-dialog-label =
+    .aria-label = Personaliziraj
 
 ## Search box component.
 
@@ -62,7 +64,7 @@ newtab-topsites-image-validation = Neuspjelo učitavanje slike. Pokušaj jedan d
 
 ## Top Sites - General form dialog buttons. These are verbs/actions.
 
-newtab-topsites-cancel-button = Otkaži
+newtab-topsites-cancel-button = Odustani
 newtab-topsites-delete-history-button = Izbriši iz povijesti
 newtab-topsites-save-button = Spremi
 newtab-topsites-preview-button = Pregled
@@ -109,7 +111,7 @@ newtab-menu-pin = Zakači
 newtab-menu-unpin = Otkači
 newtab-menu-delete-history = Izbriši iz povijesti
 newtab-menu-save-to-pocket = Spremi u { -pocket-brand-name }
-newtab-menu-delete-pocket = Izbriši iz { -pocket-brand-name }a
+newtab-menu-delete-pocket = Izbriši iz { -pocket-brand-name(case: "gen") }
 newtab-menu-archive-pocket = Arhiviraj u { -pocket-brand-name }
 newtab-menu-show-privacy-info = Naši sponzori i tvoja privatnost
 
@@ -242,7 +244,7 @@ newtab-custom-row-selector =
        *[other] { $num } redaka
     }
 newtab-custom-sponsored-sites = Sponzorirani prečaci
-newtab-custom-pocket-title = Preporuke iz { -pocket-brand-name }a
+newtab-custom-pocket-title = Preporuke iz { -pocket-brand-name(case: "gen") }
 newtab-custom-pocket-subtitle = Izuzetan sadržaj kojeg odabire { -pocket-brand-name }, dio obitelji { -brand-product-name }
 newtab-custom-pocket-sponsored = Sponzorirane priče
 newtab-custom-recent-title = Nedavna aktivnost

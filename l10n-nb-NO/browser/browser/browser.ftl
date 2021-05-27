@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Legg til «{ $engineName }»
+    .tooltiptext = Legg til søkemotor «{ $engineName }»
+    .aria-label = Legg til søkemotor «{ $engineName }»
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Legg til søkemotor
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Nettstedsinformasjon for { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Tilkoblingssikkerhet for { $host }
 identity-connection-not-secure = Tilkoblingen er ikke sikker
 identity-connection-secure = Tilkoblingen er sikker
+identity-connection-failure = Tilkoblingsfeil
 identity-connection-internal = Dette er en sikker { -brand-short-name }-side.
 identity-connection-file = Denne siden lagres på datamaskinen din.
 identity-extension-page = Denne siden er lastet fra en utvidelse.
@@ -319,6 +339,7 @@ identity-https-only-info-turn-off2 = Hvis nettsiden virker ødelagt, kan det væ
 identity-https-only-info-no-upgrade = Kan ikke å oppgradere tilkoblingen fra HTTP.
 identity-permissions-storage-access-header = Infokapsler på tvers av nettsteder
 identity-permissions-storage-access-hint = Disse partene kan bruke infokapsler på tvers av nettsteder og nettsteddata mens du er på dette nettstedet.
+identity-permissions-storage-access-learn-more = Les mer
 identity-permissions-reload-hint = Du må kanskje laste siden på nytt for at endringene skal gjelde.
 identity-permissions-empty = Du har ikke gitt dette nettstedet noen spesialtillatelser.
 identity-clear-site-data =
@@ -490,6 +511,11 @@ urlbar-placeholder-with-name =
     .placeholder = Søk med { $name } eller skriv inn adresse
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Nettleseren er under fjernstyring
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Nettleseren er under fjernkontroll (årsak: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Du har gitt dette nettstedet noen spesialtillatelser.
 urlbar-switch-to-tab =
@@ -578,9 +604,6 @@ pointerlock-warning-no-domain = Dette dokumentet har kontroll over musepekeren d
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>En del av denne siden krasjet.</strong> For å informere { -brand-product-name } om dette problemet og få det løst raskere, må du sende inn en rapport.
-crashed-subframe-learnmore =
-    .label = Les mer
-    .accesskey = L
 crashed-subframe-learnmore-link =
     .value = Les mer
 crashed-subframe-submit =
@@ -593,8 +616,6 @@ bookmarks-show-all-bookmarks =
     .label = Vis alle bokmerker
 bookmarks-manage-bookmarks =
     .label = Behandle bokmerker
-bookmarks-recent-bookmarks-panel =
-    .value = Nylige bokmerker
 bookmarks-recent-bookmarks-panel-subheader = Nylige bokmerker
 bookmarks-toolbar-chevron =
     .tooltiptext = Vis flere bokmerker

@@ -2,18 +2,18 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-head-title = Σχετικά με τα εργαλεία προγραμματιστή
-enable-title = Ενεργοποίηση εργαλείων προγραμματιστή Firefox
-enable-inspect-element-title = Ενεργοποιήστε τα εργαλεία προγραμματιστή Firefox για να χρησιμοποιήσετε την Επιθεώρηση στοιχείου
-enable-inspect-element-message = Εξετάστε και επεξεργαστείτε HTML και CSS με την Επιθεώρηση των εργαλείων προγραμματιστή.
-enable-about-debugging-message = Αναπτύξτε και διορθώστε WebExtensions, web workers, service workers και άλλα με τα εργαλεία προγραμματιστή Firefox.
-enable-key-shortcut-message = Έχετε ενεργοποιήσει μια συντόμευση των εργαλείων προγραμματιστή. Αν το κάνατε κατά λάθος, μπορείτε να κλείσετε αυτή την καρτέλα.
-enable-menu-message = Τελειοποιήστε τους κώδικες HTML, CSS και JavaScript για την ιστοσελίδα σας με εργαλεία όπως η Επιθεώρηση και η Αποσφαλμάτωση.
-enable-common-message = Τα Εργαλεία Προγραμματιστή Firefox είναι απενεργοποιημένα από προεπιλογή για να έχετε περισσότερο έλεγχο στο πρόγραμμα περιήγησής σας.
-enable-learn-more-link = Μάθετε περισσότερα για τα Εργαλεία Προγραμματιστή
-enable-enable-button = Ενεργοποίηση εργαλείων προγραμματιστή
-enable-close-button = Κλείσιμο της Καρτέλας
-welcome-title = Καλωσορίσατε στα Εργαλεία Προγραμματιστή Firefox!
+head-title = Σχετικά με τα εργαλεία ανάπτυξης
+enable-title = Ενεργοποίηση εργαλείων ανάπτυξης Firefox
+enable-inspect-element-title = Ενεργοποιήστε τα εργαλεία ανάπτυξης του Firefox για να χρησιμοποιήσετε την Επιθεώρηση στοιχείου
+enable-inspect-element-message = Εξετάστε και επεξεργαστείτε HTML και CSS με την Επιθεώρηση των εργαλείων ανάπτυξης.
+enable-about-debugging-message = Αναπτύξτε και διορθώστε WebExtensions, web worker, service worker και πολλά άλλα με τα εργαλεία ανάπτυξης του Firefox.
+enable-key-shortcut-message = Ενεργοποιήσατε μια συντόμευση των εργαλείων ανάπτυξης. Αν το κάνατε κατά λάθος, μπορείτε να κλείσετε αυτή την καρτέλα.
+enable-menu-message = Τελειοποιήστε τα HTML, CSS και JavaScript της ιστοσελίδας σας με εργαλεία όπως η Επιθεώρηση και ο Έλεγχος σφαλμάτων.
+enable-common-message = Τα εργαλεία ανάπτυξης του Firefox είναι ανενεργά από προεπιλογή για να έχετε περισσότερο έλεγχο στο πρόγραμμα περιήγησής σας.
+enable-learn-more-link = Μάθετε περισσότερα για τα εργαλεία ανάπτυξης
+enable-enable-button = Ενεργοποίηση εργαλείων ανάπτυξης
+enable-close-button = Κλείσιμο καρτέλας
+welcome-title = Καλωσορίσατε στα εργαλεία ανάπτυξης του Firefox!
 newsletter-title = Ενημέρωση προγραμματιστών Mozilla
 newsletter-message = Λάβετε ειδήσεις, κόλπα και πόρους για προγραμματιστές απευθείας στα εισερχόμενά σας.
 newsletter-email-placeholder =
@@ -23,7 +23,7 @@ newsletter-subscribe-button = Εγγραφή
 newsletter-thanks-title = Ευχαριστούμε!
 newsletter-thanks-message = Αν δεν έχετε προηγουμένως επιβεβαιώσει την εγγραφή σας σε κάποιο newsletter σχετικό με τη Mozilla, ίσως θα πρέπει να το κάνετε. Παρακαλούμε ελέγξτε τα εισερχόμενα ή το φίλτρο ανεπιθύμητων για ένα e-mail από εμάς.
 footer-title = Firefox Developer Edition
-footer-message = Ψάχνετε περισσότερα από απλά εργαλεία προγραμματιστή; Ελέγξτε το πρόγραμμα περιήγησης Firefox που φτιάχνεται συγκεκριμένα για τους προγραμματιστές και τις σύγχρονες ροές εργασίας.
+footer-message = Ψάχνετε κάτι παραπάνω από απλά εργαλεία ανάπτυξης; Δείτε την έκδοση του Firefox που αναπτύσσεται αποκλειστικά για προγραμματιστές και σύγχρονες ροές εργασίας.
 footer-learn-more-link = Μάθετε περισσότερα
 features-learn-more = Μάθετε περισσότερα
 features-inspector-title = Επιθεώρηση
@@ -31,19 +31,19 @@ features-inspector-desc = Επιθεώρηση και βελτίωση κώδι�
 features-console-title = Κονσόλα
 features-console-desc = Καταγραφή προβλημάτων σε CSS, JavaScript, ασφάλεια και δίκτυο. <a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-debugger-title = Έλεγχος σφαλμάτων
-features-debugger-desc = Πανίσχυρη αποσφαλμάτωση JavaScript με υποστήριξη για το πλαίσιό σας. <a data-l10n-name="learn-more">{ features-learn-more }</a>
+features-debugger-desc = Ισχυρός έλεγχος σφαλμάτων JavaScript για το πλαίσιό σας. <a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-network-title = Δίκτυο
-features-network-desc = Εποπτεία των αιτημάτων δικτύου που ενδέχεται να καθυστερούν ή να αποκλείσουν την ιστοσελίδα σας. <a data-l10n-name="learn-more">{ features-learn-more }</a>
+features-network-desc = Εποπτεία των αιτημάτων δικτύου που ενδέχεται να καθυστερούν ή να αποκλείουν την ιστοσελίδα σας. <a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-storage-title = Αποθήκευση
-features-storage-desc = Προσθήκη, τροποποίηση και διαγραφή προσωρινής μνήμης, cookies, βάσεων δεδομένων και δεδομένων συνεδρίας. <a data-l10n-name="learn-more">{ features-learn-more }</a>
-features-responsive-title = Λειτ. αποκρίσιμου σχεδιασμού
+features-storage-desc = Διαχείριση κρυφής μνήμης, cookies, βάσεων δεδομένων και δεδομένων συνεδρίας. <a data-l10n-name="learn-more">{ features-learn-more }</a>
+features-responsive-title = Ευελιξία σχεδίου
 features-responsive-desc = Δοκιμή ιστοσελίδων σε εξομοιωτές συσκευών στο πρόγραμμα περιήγησής σας. <a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-visual-editing-title = Οπτική επεξεργασία
 features-visual-editing-desc = Μικρο-ρύθμιση εφέ κίνησης, στοίχισης και γεμίσματος. <a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-performance-title = Επιδόσεις
-features-performance-desc = Απελευθέρωση σημείων συμφόρησης, βελτίωση διαδικασιών, βελτιστοποίηση διαθέσιμων πόρων. <a data-l10n-name="learn-more">{ features-learn-more }</a>
+features-performance-desc = Επίλυση αποσυμφορήσεων, βελτίωση διεργασιών και διαθέσιμων πόρων. <a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-memory-title = Μνήμη
-features-memory-desc = Εύρεση διαρροών μνήμης και βελτίωση της λειτουργίας της εφαρμογής σας. <a data-l10n-name="learn-more">{ features-learn-more }</a>
+features-memory-desc = Εύρεση διαρροών μνήμης και επιτάχυνση εφαρμογής. <a data-l10n-name="learn-more">{ features-learn-more }</a>
 # Variables:
 #   $errorDescription (String) - The error that occurred e.g. 404 - Not Found
 newsletter-error-common = Αποτυχία αιτήματος εγγραφής ({ $errorDescription }).
@@ -51,4 +51,4 @@ newsletter-error-unknown = Προέκυψε απρόσμενο σφάλμα.
 newsletter-error-timeout = Έληξε ο χρόνος αίτησης για εγγραφή.
 # Variables:
 #   $shortcut (String) - The keyboard shortcut used for the tool
-welcome-message = Έχετε ενεργοποιήσει επιτυχώς τα εργαλεία προγραμματιστή! Για να ξεκινήστε, εξερευνήστε το μενού Web Developer ή να ανοίξτε τα εργαλεία με { $shortcut }.
+welcome-message = Ενεργοποιήσατε επιτυχώς τα εργαλεία ανάπτυξης! Για αρχή, εξερευνήστε το μενού ανάπτυξης web ή ανοίξτε τα εργαλεία με τον συνδυασμό { $shortcut }.

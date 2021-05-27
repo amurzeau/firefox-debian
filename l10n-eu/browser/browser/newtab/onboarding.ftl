@@ -173,6 +173,15 @@ onboarding-multistage-set-default-subtitle = Abiadura, segurtasuna eta pribatuta
 onboarding-multistage-set-default-primary-button-label = Lehenetsi
 onboarding-multistage-set-default-secondary-button-label = Une honetan ez
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-pin-default-header = Hasi <span data-l10n-name="zap">{ -brand-short-name }</span> klik bakarrera utziz
+onboarding-multistage-pin-default-subtitle = Nabigatze azkar, seguru eta pribatua weba erabiltzen duzun aldiro.
+# The "settings" here refers to "Windows 10 Settings App" and not the browser's
+onboarding-multistage-pin-default-waiting-subtitle = Ezarpenak irekitzen direnean, aukeratu { -brand-short-name } web nabigatzailearen atalean
+# The "settings" here refers to "Windows 10 Settings App" and not the browser's
+onboarding-multistage-pin-default-help-text = Honek { -brand-short-name } ataza-barran ainguratu eta ezarpenak irekiko ditu
+onboarding-multistage-pin-default-primary-button-label = Egin { -brand-short-name } nire nabigatzaile nagusia
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "more" should stay inside the span.
 onboarding-multistage-import-header = Inportatu zure pasahitzak, <br/>laster-markak eta <span data-l10n-name="zap">gehiago</span>
 onboarding-multistage-import-subtitle = Beste nabigatzaile batetik zatoz? Erraza da dena { -brand-short-name }(e)ra ekartzea.
@@ -191,7 +200,6 @@ onboarding-welcome-steps-indicator =
 # automatically added to the text inside it. "look" should stay inside the span.
 onboarding-multistage-theme-header = Aukeratu <span data-l10n-name="zap">itxura</span>
 onboarding-multistage-theme-subtitle = Pertsonalizatu { -brand-short-name } itxura batekin.
-onboarding-multistage-theme-primary-button-label = Gorde itxura
 onboarding-multistage-theme-primary-button-label2 = Eginda
 onboarding-multistage-theme-secondary-button-label = Orain ez
 # Automatic theme uses operating system color settings
@@ -246,4 +254,87 @@ onboarding-multistage-theme-tooltip-alpenglow-2 =
 onboarding-multistage-theme-description-alpenglow =
     .aria-description =
         Erabili itxura koloretsua botoi,
+        menu eta leihoentzat.
+
+## Multistage MR1 onboarding strings (MR1 about:welcome pages)
+
+# "Hero Text" displayed on left side of welcome screen.
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
+# It also signals the passion users bring to Firefox, how they use
+# Firefox to pursue those passions, as well as the boldness in their
+# choice to use Firefox over a larger competitor browser.
+# An alternative title for localization is: "It starts here".
+mr1-welcome-screen-hero-text = Dena hemen hasten da
+# This button will open system settings to turn on prefers-reduced-motion
+mr1-onboarding-reduce-motion-button-label = Desgaitu animazioak
+mr1-onboarding-welcome-header = Ongi etorri { -brand-short-name }(e)ra
+mr1-onboarding-set-default-pin-primary-button-label = Egin { -brand-short-name } nire nabigatzaile nagusia
+    .title = { -brand-short-name } nabigatzaile lehenetsi gisa ezarri eta ataza-barran ainguratzen du
+mr1-onboarding-set-default-only-primary-button-label = Egin { -brand-short-name } nire nabigatzaile lehenetsia
+mr1-onboarding-set-default-secondary-button-label = Une honetan ez
+mr1-onboarding-sign-in-button-label = Hasi saioa
+mr1-onboarding-import-header = Eraman guztia aldean
+mr1-onboarding-import-subtitle = Inportatu zure pasahitzak, <br/>laster-markak eta gehiago.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
+# Variables:
+#   $previous (Str) - Previous browser name, such as Edge, Chrome
+mr1-onboarding-import-primary-button-label-attribution = Inportatu { $previous } nabigatzailetik
+# This string will be used in cases where we can't detect the previous browser name.
+mr1-onboarding-import-primary-button-label-no-attribution = Inportatu aurreko nabigatzailetik
+mr1-onboarding-import-secondary-button-label = Une honetan ez
+mr1-onboarding-theme-header = Moldatu zure erara
+mr1-onboarding-theme-subtitle = Pertsonalizatu { -brand-short-name } itxura batekin.
+mr1-onboarding-theme-primary-button-label = Gorde itxura
+mr1-onboarding-theme-secondary-button-label = Une honetan ez
+# System theme uses operating system color settings
+mr1-onboarding-theme-label-system = Sistemaren itxura
+mr1-onboarding-theme-label-light = Argia
+mr1-onboarding-theme-label-dark = Iluna
+# "Alpenglow" here is the name of the theme, and should be kept in English.
+mr1-onboarding-theme-label-alpenglow = Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of system theme
+mr1-onboarding-theme-tooltip-system =
+    .title =
+        Errespetatu sistema eragilearen itxura
+        botoi, menu eta leihoetarako.
+# Input description for system theme
+mr1-onboarding-theme-description-system =
+    .aria-description =
+        Errespetatu sistema eragilearen itxura
+        botoi, menu eta leihoetarako.
+# Tooltip displayed on hover of light theme
+mr1-onboarding-theme-tooltip-light =
+    .title =
+        Erabili itxura argia botoi,
+        menu eta leihoentzat.
+# Input description for light theme
+mr1-onboarding-theme-description-light =
+    .aria-description =
+        Erabili itxura argia botoi,
+        menu eta leihoentzat.
+# Tooltip displayed on hover of dark theme
+mr1-onboarding-theme-tooltip-dark =
+    .title =
+        Erabili itxura iluna botoi,
+        menu eta leihoentzat.
+# Input description for dark theme
+mr1-onboarding-theme-description-dark =
+    .aria-description =
+        Erabili itxura iluna botoi,
+        menu eta leihoentzat.
+# Tooltip displayed on hover of Alpenglow theme
+mr1-onboarding-theme-tooltip-alpenglow =
+    .title =
+        Erabili itxura koloretsu eta dinamikoa botoi,
+        menu eta leihoentzat.
+# Input description for Alpenglow theme
+mr1-onboarding-theme-description-alpenglow =
+    .aria-description =
+        Erabili itxura koloretsu eta dinamikoa botoi,
         menu eta leihoentzat.

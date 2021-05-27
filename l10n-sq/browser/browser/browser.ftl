@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Shtoni “{ $engineName }”
+    .tooltiptext = Shtoni motorin e kërkimeve “{ $engineName }”
+    .aria-label = Shtoni motorin e kërkimeve “{ $engineName }”
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Shtoni motor kërkimesh
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Të dhëna Sajti për { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Siguri Lidhjeje për { $host }
 identity-connection-not-secure = Lidhje jo e sigurt
 identity-connection-secure = Lidhje e sigurt
+identity-connection-failure = Dështim lidhjeje
 identity-connection-internal = Kjo është një faqe { -brand-short-name } e sigurt.
 identity-connection-file = Kjo është faqe e depozituar në kompjuterin tuaj.
 identity-extension-page = Kjo faqe është ngarkuar nga një zgjerim.
@@ -319,6 +339,7 @@ identity-https-only-info-turn-off2 = Nëse faqja duket të jetë e dëmtuar, mun
 identity-https-only-info-no-upgrade = S’arrihet të përmirësohet lidhja nga HTTP.
 identity-permissions-storage-access-header = Cookies nga sajti në sajt
 identity-permissions-storage-access-hint = Këto palë mund të përdorin “cross-site cookies” dhe të dhëna sajtesh, ndërkohë që jeni në këtë sajt.
+identity-permissions-storage-access-learn-more = Mësoni më tepër
 identity-permissions-reload-hint = Mund t'ju duhet të ringarkoni faqen që të hyjnë në fuqi ndryshimet.
 identity-permissions-empty = S'i keni dhënë këtij sajti ndonjë leje speciale.
 identity-clear-site-data =
@@ -578,9 +599,6 @@ pointerlock-warning-no-domain = Kursori është nën kontrollin e kursorit tuaj.
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Një pjesë e kësaj faqeje u vithis.</strong> Për t’ia bërë të ditur { -brand-product-name }-it këtë çështje dhe për t’u zgjidhur më shpejt, ju lutemi, parashtroni një raport.
-crashed-subframe-learnmore =
-    .label = Mësoni Më Tepër
-    .accesskey = M
 crashed-subframe-learnmore-link =
     .value = Mësoni Më Tepër
 crashed-subframe-submit =
@@ -593,8 +611,6 @@ bookmarks-show-all-bookmarks =
     .label = Shfaqni Krejt Faqerojtësit
 bookmarks-manage-bookmarks =
     .label = Administroni Faqerojtës
-bookmarks-recent-bookmarks-panel =
-    .value = Faqerojtës Së Fundi
 bookmarks-recent-bookmarks-panel-subheader = Faqerojtës Së Fundi
 bookmarks-toolbar-chevron =
     .tooltiptext = Shfaqni më tepër faqerojtës

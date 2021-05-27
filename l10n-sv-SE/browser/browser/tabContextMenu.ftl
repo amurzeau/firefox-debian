@@ -2,6 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+tab-context-new-tab =
+    .label = Ny flik
+    .accesskey = N
 reload-tab =
     .label = Uppdatera flik
     .accesskey = U
@@ -66,15 +69,6 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Stäng flera flikar
     .accesskey = f
-tab-context-share-url =
-    .label = Dela
-    .accesskey = D
-tab-context-share-more =
-    .label = Mer…
-
-## Variables:
-##  $tabCount (Number): the number of tabs that are affected by the action.
-
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -95,13 +89,22 @@ move-tabs =
 move-tab =
     .label = Flytta flik
     .accesskey = t
+tab-context-share-url =
+    .label = Dela
+    .accesskey = D
+tab-context-share-more =
+    .label = Mer…
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-reopen-closed-tabs =
     .label =
         { $tabCount ->
             [1] Öppna stängd flik igen
            *[other] Öppna stängda flikar igen
         }
-    .accesskey = s
+    .accesskey = p
 tab-context-close-tabs =
     .label =
         { $tabCount ->

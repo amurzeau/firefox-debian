@@ -123,7 +123,7 @@ onboarding-pocket-anywhere-title = 随处阅听
 onboarding-pocket-anywhere-text2 = 可使用 { -pocket-brand-name } 应用离线保存您喜爱的故事，以便您闲暇时阅读、聆听和观看。
 onboarding-pocket-anywhere-button = 试试 { -pocket-brand-name }
 onboarding-lockwise-strong-passwords-title = 创建并存储高强度的密码
-onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } 可直接在网页表单中创建高强度密码，并将所有密码存放于同一位置。
+onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } 可直接在网页表单中创建高强度密码并集中管理。
 onboarding-lockwise-strong-passwords-button = 管理您的登录信息
 onboarding-facebook-container-title = 为 Facebook 设置边界
 onboarding-facebook-container-text2 = { -facebook-container-brand-name } 可将您的 Facebook 身份与其他网站隔离，使 Facebook 更难以通过广告定位您。
@@ -184,7 +184,7 @@ onboarding-multistage-pin-default-primary-button-label = 将 { -brand-short-name
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "more" should stay inside the span.
 onboarding-multistage-import-header = 导入您的密码、书签和<span data-l10n-name="zap">更多数据</span>
-onboarding-multistage-import-subtitle = 从其他浏览器来？将一切转移到 { -brand-short-name } 很简单。
+onboarding-multistage-import-subtitle = 从其他浏览器来？很简单就能把所有东西带来 { -brand-short-name }。
 onboarding-multistage-import-primary-button-label = 开始导入
 onboarding-multistage-import-secondary-button-label = 暂时不要
 # Info displayed in the footer of import settings screen during onboarding flow.
@@ -199,8 +199,7 @@ onboarding-welcome-steps-indicator =
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "look" should stay inside the span.
 onboarding-multistage-theme-header = 选择<span data-l10n-name="zap">外观</span>
-onboarding-multistage-theme-subtitle = 使用主题，让 { -brand-short-name } 有你的个性
-onboarding-multistage-theme-primary-button-label = 保存主题
+onboarding-multistage-theme-subtitle = 换上主题，让 { -brand-short-name } 有您的个性。
 onboarding-multistage-theme-primary-button-label2 = 完成
 onboarding-multistage-theme-secondary-button-label = 暂时不要
 # Automatic theme uses operating system color settings
@@ -239,3 +238,74 @@ onboarding-multistage-theme-tooltip-alpenglow-2 =
 # Input description for Alpenglow theme
 onboarding-multistage-theme-description-alpenglow =
     .aria-description = 使用多彩按钮、菜单、窗口外观。
+
+## Multistage MR1 onboarding strings (MR1 about:welcome pages)
+
+# "Hero Text" displayed on left side of welcome screen.
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
+# It also signals the passion users bring to Firefox, how they use
+# Firefox to pursue those passions, as well as the boldness in their
+# choice to use Firefox over a larger competitor browser.
+# An alternative title for localization is: "It starts here".
+# This text can be formatted to span multiple lines as needed.
+mr1-welcome-screen-hero-text = 星星之火 正将燎原
+# Caption for background image in about:welcome. "Soraya Osorio" is the name
+# of the person and shouldn't be translated.
+mr1-onboarding-welcome-image-caption = 索拉娅·奥索里奥（Soraya Osorio）— 家具设计师、Firefox 迷
+# This button will open system settings to turn on prefers-reduced-motion
+mr1-onboarding-reduce-motion-button-label = 关闭动画
+mr1-onboarding-welcome-header = 欢迎使用 { -brand-short-name }
+mr1-onboarding-set-default-pin-primary-button-label = 将 { -brand-short-name } 设为我的主浏览器
+    .title = 将 { -brand-short-name } 设为默认浏览器，并固定到任务栏
+mr1-onboarding-set-default-only-primary-button-label = 将 { -brand-short-name } 设为我的默认浏览器
+mr1-onboarding-set-default-secondary-button-label = 暂时不要
+mr1-onboarding-sign-in-button-label = 登录
+mr1-onboarding-import-header = 快速迁移
+mr1-onboarding-import-subtitle = 导入您的密码、书签等数据。
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
+# Variables:
+#   $previous (Str) - Previous browser name, such as Edge, Chrome
+mr1-onboarding-import-primary-button-label-attribution = 从 { $previous } 导入
+# This string will be used in cases where we can't detect the previous browser name.
+mr1-onboarding-import-primary-button-label-no-attribution = 从先前所用浏览器导入
+mr1-onboarding-import-secondary-button-label = 暂时不要
+mr1-onboarding-theme-header = 我有我的范儿
+mr1-onboarding-theme-subtitle = 换上主题，让 { -brand-short-name } 有您的个性。
+mr1-onboarding-theme-primary-button-label = 保存主题
+mr1-onboarding-theme-secondary-button-label = 暂时不要
+# System theme uses operating system color settings
+mr1-onboarding-theme-label-system = 系统主题
+mr1-onboarding-theme-label-light = 明亮
+mr1-onboarding-theme-label-dark = 深邃
+# "Alpenglow" here is the name of the theme, and should be kept in English.
+mr1-onboarding-theme-label-alpenglow = 染山霞
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of system theme
+mr1-onboarding-theme-tooltip-system =
+    .title = 跟随系统主题配色显示按钮、菜单和窗口
+# Input description for system theme
+mr1-onboarding-theme-description-system =
+    .aria-description = 跟随系统主题配色显示按钮、菜单和窗口
+# Tooltip displayed on hover of light theme
+mr1-onboarding-theme-tooltip-light =
+    .title = 为按钮、菜单和窗口使用明亮配色主题。
+# Input description for light theme
+mr1-onboarding-theme-description-light =
+    .aria-description = 为按钮、菜单和窗口使用明亮配色主题。
+# Tooltip displayed on hover of dark theme
+mr1-onboarding-theme-tooltip-dark =
+    .title = 为按钮、菜单和窗口使用深邃配色主题。
+# Input description for dark theme
+mr1-onboarding-theme-description-dark =
+    .aria-description = 为按钮、菜单和窗口使用深邃配色主题。
+# Tooltip displayed on hover of Alpenglow theme
+mr1-onboarding-theme-tooltip-alpenglow =
+    .title = 为按钮、菜单和窗口使用活力多彩配色主题。
+# Input description for Alpenglow theme
+mr1-onboarding-theme-description-alpenglow =
+    .aria-description = 为按钮、菜单和窗口使用活力多彩配色主题。

@@ -50,13 +50,13 @@
 <!ENTITY scriptsAndWindows.label "Σενάρια &amp; αρθρώματα">
 <!ENTITY keynav.label "Πλοήγηση με πληκτρολόγιο">
 <!ENTITY findAsYouType.label "Εύρεση κατά την πληκτρολόγηση">
-<!ENTITY cache.label "Προσωρινή μνήμη">
+<!ENTITY cache.label "Κρυφή μνήμη">
 <!ENTITY offlineApps.label "Εφαρμογές εκτός σύνδεσης">
 <!ENTITY proxies.label "Διακομιστές μεσολάβησης">
 <!ENTITY httpnetworking.label "Δικτύωση HTTP">
 <!ENTITY smart.label "Εγκατάσταση λογισμικού">
 <!ENTITY mousewheel.label "Τροχός ποντικιού">
 
-<!ENTITY debugging.label "Εντοπισμός σφαλμάτων">
+<!ENTITY debugging.label "Έλεγχος σφαλμάτων">
 
 <!ENTITY focusSearch.key "f">

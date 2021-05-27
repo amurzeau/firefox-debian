@@ -36,6 +36,8 @@ about-webrtc-local-sdp-heading-answer = SDP lokala (Erantzuna)
 about-webrtc-remote-sdp-heading = Urruneko SDP
 about-webrtc-remote-sdp-heading-offer = Urruneko SDP (Eskaintza)
 about-webrtc-remote-sdp-heading-answer = Urruneko SDP (Erantzuna)
+about-webrtc-sdp-history-heading = SDP historia
+about-webrtc-sdp-parsing-errors-heading = SDP analisi-erroreak
 
 ##
 
@@ -56,14 +58,10 @@ about-webrtc-ice-pair-bytes-sent = Bidalitako byteak:
 about-webrtc-ice-pair-bytes-received = Jasotako byteak:
 about-webrtc-ice-component-id = Osagaiaren IDa
 
-##
-
-
 ## "Avg." is an abbreviation for Average. These are used as data labels.
 
-
-##
-
+about-webrtc-avg-bitrate-label = B.b.ko bit-emaria:
+about-webrtc-avg-framerate-label = B.b.ko marko-emaria:
 
 ## These adjectives are used to label a line of statistics collected for a peer
 ## connection. The data represents either the local or remote end of the
@@ -120,14 +118,57 @@ about-webrtc-fold-show-msg = erakutsi xehetasunak
     .title = egin klik atal hau zabaltzeko
 about-webrtc-fold-hide-msg = ezkutatu xehetasunak
     .title = egin klik atal hau tolesteko
+about-webrtc-dropped-frames-label = Alboratutako markoak:
+about-webrtc-discarded-packets-label = Baztertutako paketeak:
 about-webrtc-decoder-label = Deskodetzailea
 about-webrtc-encoder-label = Kodetzailea
+about-webrtc-show-tab-label = Erakutsi fitxa
+about-webrtc-width-px = Zabalera (px)
+about-webrtc-height-px = Altuera (px)
+about-webrtc-consecutive-frames = Marko jarraiak
+about-webrtc-time-elapsed = Igarotako denbora (s)
+about-webrtc-estimated-framerate = Zenbatetsitako marko-emaria
+about-webrtc-rotation-degrees = Biraketa (graduak)
+about-webrtc-first-frame-timestamp = Lehen markoa jaso zeneko denbora-marka
+about-webrtc-last-frame-timestamp = Azken markoa jaso zeneko denbora-marka
 
 ## SSRCs are identifiers that represent endpoints in an RTP stream
 
+# This is an SSRC on the local side of the connection that is receiving RTP
+about-webrtc-local-receive-ssrc = Jasotzeko SSRC lokala
+# This is an SSRC on the remote side of the connection that is sending RTP
+about-webrtc-remote-send-ssrc = Bidaltzeko urruneko SSRCa
 
 ##
 
+# An option whose value will not be displayed but instead noted as having been
+# provided
+about-webrtc-configuration-element-provided = Hornitua
+# An option whose value will not be displayed but instead noted as having not
+# been provided
+about-webrtc-configuration-element-not-provided = Ez hornitua
+# The options set by the user in about:config that could impact a WebRTC call
+about-webrtc-custom-webrtc-configuration-heading = Erabiltzaileak ezarritako WebRTC hobespenak
+# Section header for estimated bandwidths of WebRTC media flows
+about-webrtc-bandwidth-stats-heading = Zenbatetsitako banda zabalera
+# The ID of the MediaStreamTrack
+about-webrtc-track-identifier = Pista-identifikatzailea
+# The estimated bandwidth available for sending WebRTC media in bytes per second
+about-webrtc-send-bandwidth-bytes-sec = Bidalitako banda zabalera (byte/seg)
+# The estimated bandwidth available for receiving WebRTC media in bytes per second
+about-webrtc-receive-bandwidth-bytes-sec = Jasotako banda zabalera (byte/seg)
+# Maximum number of bytes per second that will be padding zeros at the ends of packets
+about-webrtc-max-padding-bytes-sec = Betegarri maximoa (byte/seg)
+# The amount of time inserted between packets to keep them spaced out
+about-webrtc-pacer-delay-ms = Erritmoaren atzerapena ms
+# The amount of time it takes for a packet to travel from the local machine to the remote machine,
+# and then have a packet return
+about-webrtc-round-trip-time-ms = RTT ms
+# This is a section heading for video frame statistics for a MediaStreamTrack.
+# see https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack.
+# Variables:
+#   $track-identifier (String) - The unique identifier for the MediaStreamTrack.
+about-webrtc-frame-stats-heading = Bideoko markoen estatistikak - MediaStreamTrack IDa: { $track-identifier }
 
 ## These are paths used for saving the about:webrtc page or log files so
 ## they can be attached to bug reports.
@@ -141,6 +182,30 @@ about-webrtc-aec-logging-off-state-msg = kapturatutako erregistro-fitxategiak he
 
 ##
 
+# This is the total number of packets received on the PeerConnection.
+# Variables:
+#  $packets (Number) - The number of packets received.
+about-webrtc-received-label =
+    { $packets ->
+        [one] Pakete { $packets } jasota
+       *[other] { $packets } pakete jasota
+    }
+# This is the total number of packets lost by the PeerConnection.
+# Variables:
+#  $packets (Number) - The number of packets lost.
+about-webrtc-lost-label =
+    { $packets ->
+        [one] Pakete { $packets } galduta
+       *[other] { $packets } pakete galduta
+    }
+# This is the total number of packets sent by the PeerConnection.
+# Variables:
+#  $packets (Number) - The number of packets sent.
+about-webrtc-sent-label =
+    { $packets ->
+        [one] Pakete { $packets } bidalita
+       *[other] { $packets } pakete bidalita
+    }
 # Jitter is the variance in the arrival time of packets.
 # See: https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-jitter
 # Variables:
@@ -154,6 +219,19 @@ about-webrtc-trickle-caption-msg = Banan-banan (erantzunaren ondoren) datozen ha
 ## "SDP" is an abbreviation for Session Description Protocol, an IETF standard.
 ## See http://wikipedia.org/wiki/Session_Description_Protocol
 
+# This is used as a header for local SDP.
+# Variables:
+#  $timestamp (Number) - The Unix Epoch time at which the SDP was set.
+about-webrtc-sdp-set-at-timestamp-local = Ezarri SDP lokala { NUMBER($timestamp, useGrouping: "false") } denbora-markan
+# This is used as a header for remote SDP.
+# Variables:
+#  $timestamp (Number) - The Unix Epoch time at which the SDP was set.
+about-webrtc-sdp-set-at-timestamp-remote = Ezarri urruneko SDPa { NUMBER($timestamp, useGrouping: "false") } denbora-markan
+# This is used as a header for an SDP section contained in two columns allowing for side-by-side comparisons.
+# Variables:
+#  $timestamp (Number) - The Unix Epoch time at which the SDP was set.
+#  $relative-timestamp (Number) - The timestamp relative to the timestamp of the earliest received SDP.
+about-webrtc-sdp-set-timestamp = Denbora-marka { NUMBER($timestamp, useGrouping: "false") } (+ { $relative-timestamp } ms)
 
 ##
 

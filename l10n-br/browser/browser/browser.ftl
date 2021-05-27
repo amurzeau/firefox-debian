@@ -253,6 +253,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Ouzhpennañ “{ $engineName }”
+    .tooltiptext = Ouzhpennañ al lusker enklask { $engineName }”
+    .aria-label = Ouzhpennañ al lusker enklask “{ $engineName }”
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Ouzhpennañ ul lusker enklask
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -270,6 +282,8 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Ouzhpennañ ur sined
+bookmarks-edit-bookmark = Kemmañ ar sined
 bookmark-panel-cancel =
     .label = Nullañ
     .accesskey = N
@@ -290,6 +304,8 @@ bookmark-panel-show-editor-checkbox =
     .accesskey = S
 bookmark-panel-done-button =
     .label = Graet
+bookmark-panel-save-button =
+    .label = Enrollañ
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -298,6 +314,13 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Titouroù al lec'hienn evit { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Diogelroez ar c'hennask evit { $host }
 identity-connection-not-secure = N'eo ket diarvar ar c'hennask
 identity-connection-secure = Kennask suraet
 identity-connection-internal = Ur bajenn { -brand-short-name } diarvar eo.
@@ -323,6 +346,7 @@ identity-https-only-info-turn-on2 = Gweredekait ar mod HTTPS hepken evit al lec�
 identity-https-only-info-turn-off2 = Ma seblant bezañ torret ar bajenn e c’hallit diweredekaat ar mod HTTPS hepken evit ma vefe adkarget al lec’hienn gant HTTP diziogel.
 identity-https-only-info-no-upgrade = N'haller ket gwellaat ar c'hennask HTTP.
 identity-permissions-storage-access-header = Toupinoù etrelec'hienn
+identity-permissions-storage-access-learn-more = Gouzout hiroc’h
 identity-permissions-reload-hint = Ret eo deoc'h adkargañ ar bajenn evit arloañ ar c'hemmoù.
 identity-permissions-empty = N'ho peus roet aotre arbennik ebet d'al lec'hienn-mañ.
 identity-clear-site-data =
@@ -368,6 +392,10 @@ browser-window-close-button =
 
 ## Tab actions
 
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = O LENN
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = LENN EMGEFREEK HARZET
 
 ## These labels should be written in all capital letters if your locale supports them.
 ## Variables:
@@ -525,9 +553,6 @@ pointerlock-warning-no-domain = Meret eo ho logodenn gant an teul-mañ. Pouezit 
 
 ## Subframe crash notification
 
-crashed-subframe-learnmore =
-    .label = Gouzout hiroc’h
-    .accesskey = G
 crashed-subframe-submit =
     .label = Kas danevell
     .accesskey = K

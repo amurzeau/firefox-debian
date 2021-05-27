@@ -1022,9 +1022,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Збалансаваная ахова і прадукцыйнасць. Старонкі загружаюцца нармальна.
 content-blocking-etp-strict-desc = Больш моцная ахова, але можа прывесці да парушэння некаторых сайтаў ці змесціва.
 content-blocking-etp-custom-desc = Выберыце, якія трэкеры і скрыпты трэба заблакаваць.
+content-blocking-etp-blocking-desc = { -brand-short-name } блакуе:
 content-blocking-private-windows = Змест з элементамі сачэння ў прыватных вокнах
 content-blocking-cross-site-cookies = Міжсайтавыя кукі
+content-blocking-cross-site-cookies-in-all-windows = Міжсайтавыя файлы кукі ва ўсіх вокнах (уключна з кукамі асочвання)
 content-blocking-cross-site-tracking-cookies = Кукі сачэння між сайтамі
+content-blocking-all-cross-site-cookies-private-windows = Міжсайтавыя кукі ў прыватных вокнах
 content-blocking-cross-site-tracking-cookies-plus-isolate = Міжсайтавыя кукі сачэння, ізаляваць астатнія кукі
 content-blocking-social-media-trackers = Трэкеры сацыяльных сетак
 content-blocking-all-cookies = Усе кукі
@@ -1144,6 +1147,8 @@ collection-backlogged-crash-reports =
     .label = Дазволіць { -brand-short-name } адпраўляць назапашаныя справаздачы аб памылках ад вашага імя
     .accesskey = а
 collection-backlogged-crash-reports-link = Даведацца больш
+collection-backlogged-crash-reports-with-link = Дазволіць { -brand-short-name } адсылаць запісаныя справаздачы аб збоях ад вашага імя <a data-l10n-name="crash-reports-link">Падрабязней</a>
+    .accesskey = с
 
 ## Privacy Section - Security
 ##

@@ -2,6 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+toolbar-context-menu-new-tab =
+    .label = Nueva pestaña
+    .accesskey = w
 toolbar-context-menu-reload-selected-tab =
     .label = Recargar pestaña seleccionada
     .accesskey = R
@@ -28,8 +31,8 @@ toolbar-context-menu-undo-close-tabs =
 toolbar-context-menu-reopen-closed-tabs =
     .label =
         { $tabCount ->
-            [1] Reabrir pestañas cerrada
-            [one] Reabrir pestañas cerrada
+            [1] Reabrir pestaña cerrada
+            [one] Reabrir pestaña cerrada
            *[other] Reabrir pestañas cerradas
         }
     .accesskey = o

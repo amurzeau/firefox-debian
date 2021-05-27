@@ -107,7 +107,7 @@ urlbar-tip-icon-description =
 ## Variables:
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
-urlbar-search-tips-onboard = 적게 입력, 많이 찾기: 주소 표시줄에서 바로 { $engineName } 검색어로 검색해 보세요.
+urlbar-search-tips-onboard = 입력은 더 적게하고 더 많이 찾기: 주소 표시줄에서 바로 { $engineName } 검색해 보세요.
 urlbar-search-tips-redirect-2 = 주소 표시줄에서 검색을 시작하여 { $engineName }의 제안 및 방문 기록을 확인하세요.
 # Prompts users to use the Urlbar when they are typing in the domain of a
 # search engine, e.g. google.com or amazon.com.
@@ -239,6 +239,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = “{ $engineName }” 추가
+    .tooltiptext = “{ $engineName }” 검색 엔진 추가
+    .aria-label = “{ $engineName }” 검색 엔진 추가
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = 검색 엔진 추가
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -281,8 +293,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = { $host } 사이트 정보
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = { $host }에 대한 연결 보안
 identity-connection-not-secure = 안전하지 않은 연결
 identity-connection-secure = 안전한 연결
+identity-connection-failure = 연결 실패
 identity-connection-internal = 안전한 { -brand-short-name } 페이지입니다.
 identity-connection-file = 이 페이지는 컴퓨터에 저장되어 있습니다.
 identity-extension-page = 이 페이지는 확장 기능으로부터 로드되었습니다.
@@ -307,6 +327,7 @@ identity-https-only-info-turn-off2 = 페이지가 손상된 것 같으면 이 �
 identity-https-only-info-no-upgrade = HTTP에서 연결을 업그레이드할 수 없습니다.
 identity-permissions-storage-access-header = 교차 사이트 쿠키
 identity-permissions-storage-access-hint = 이 당사자는 사용자가 이 사이트에 있는 동안 교차 사이트 쿠키 및 사이트 데이터를 사용할 수 있습니다.
+identity-permissions-storage-access-learn-more = 더 알아보기
 identity-permissions-reload-hint = 변경 사항을 적용하려면 페이지를 다시 로드해야할 수도 있습니다.
 identity-permissions-empty = 이 사이트를 특별한 권한으로 승인하지 않았습니다.
 identity-clear-site-data =
@@ -478,6 +499,11 @@ urlbar-placeholder-with-name =
     .placeholder = { $name } 검색 또는 주소 입력
 urlbar-remote-control-notification-anchor =
     .tooltiptext = 브라우저가 원격 제어중
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = 브라우저가 원격 제어 중입니다 (이유: { $component })
 urlbar-permissions-granted =
     .tooltiptext = 이 웹 사이트에 추가 권한을 부여했습니다.
 urlbar-switch-to-tab =
@@ -566,9 +592,6 @@ pointerlock-warning-no-domain = 이 문서가 포인터를 제어하려 합니�
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>이 페이지의 일부가 손상되었습니다.</strong> { -brand-product-name }에게 이 문제를 알리고 더 빨리 해결하려면 보고서를 제출하세요.
-crashed-subframe-learnmore =
-    .label = 더 알아보기
-    .accesskey = L
 crashed-subframe-learnmore-link =
     .value = 더 알아보기
 crashed-subframe-submit =
@@ -581,8 +604,6 @@ bookmarks-show-all-bookmarks =
     .label = 모든 북마크 보기
 bookmarks-manage-bookmarks =
     .label = 북마크 관리
-bookmarks-recent-bookmarks-panel =
-    .value = 최근 북마크
 bookmarks-recent-bookmarks-panel-subheader = 최근 북마크
 bookmarks-toolbar-chevron =
     .tooltiptext = 북마크 더보기

@@ -249,6 +249,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Dodaj “{ $engineName }”
+    .tooltiptext = Dodaj tražilicu “{ $engineName }”
+    .aria-label = Dodaj tražilicu “{ $engineName }”
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Dodaj tražilicu
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -269,7 +281,7 @@ search-one-offs-history =
 bookmarks-add-bookmark = Dodaj zabilješku
 bookmarks-edit-bookmark = Uredi zabilješku
 bookmark-panel-cancel =
-    .label = Otkaži
+    .label = Odustani
     .accesskey = d
 # Variables:
 #  $count (number): number of bookmarks that will be removed
@@ -296,8 +308,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Informacije o stranici za { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Sigurnost veze za { $host }
 identity-connection-not-secure = Veza nije sigurna
 identity-connection-secure = Veza sigurna
+identity-connection-failure = Greška kod spajanja
 identity-connection-internal = Ovo je sigurna { -brand-short-name } stranica.
 identity-connection-file = Ova je stranica spremljena na tvom računalu.
 identity-extension-page = Ova stranica je učitana iz dodatka.
@@ -322,6 +342,7 @@ identity-https-only-info-turn-off2 = Ako se stranica čini slomljenom, možda ć
 identity-https-only-info-no-upgrade = Nije moguće nadograditi vezu s HTTP-a.
 identity-permissions-storage-access-header = Međustranični kolačići
 identity-permissions-storage-access-hint = Ove stranke mogu koristiti kolačiće i podatke dijeljene među više stranica dok ste na toj stranici.
+identity-permissions-storage-access-learn-more = Saznaj više
 identity-permissions-reload-hint = Stranica se možda mora ponovo učitati, kako bi se primijenile promjene.
 identity-permissions-empty = Ovoj stranici niste dali nikakva posebna dopuštenja.
 identity-clear-site-data =
@@ -499,6 +520,11 @@ urlbar-placeholder-with-name =
     .placeholder = Traži pomoću { $name } ili upiši adresu
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Preglednik se kontrolira s udaljene lokacije
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Preglednik je pod daljinskim upravljanjem (razlog: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Ovoj stranici odobrene su dodatne dozvole.
 urlbar-switch-to-tab =
@@ -587,9 +613,6 @@ pointerlock-warning-no-domain = Ovaj dokument ima kontrolu nad pokazivačem. Pri
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Dio ove stranice se srušio.</strong> Da bi { -brand-product-name } znao za ovu grešku i ispravio je, pošalji izvješće.
-crashed-subframe-learnmore =
-    .label = Saznaj više
-    .accesskey = S
 crashed-subframe-learnmore-link =
     .value = Saznaj više
 crashed-subframe-submit =
@@ -602,8 +625,6 @@ bookmarks-show-all-bookmarks =
     .label = Prikaži sve zabilješke
 bookmarks-manage-bookmarks =
     .label = Upravljanje zabilješkama
-bookmarks-recent-bookmarks-panel =
-    .value = Nedavne zabilješke
 bookmarks-recent-bookmarks-panel-subheader = Nedavne zabilješke
 bookmarks-toolbar-chevron =
     .tooltiptext = Prikaži više zabilješki

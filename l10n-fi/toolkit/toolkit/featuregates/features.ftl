@@ -19,25 +19,15 @@ experimental-features-media-avif =
 experimental-features-media-avif-description = Kun tämä ominaisuus on käytössä, { -brand-short-name } tukee AV1-kuvatiedostomuotoa (AVIF). Se on liikkumattoman kuvan tiedostomuoto, joka hyödyntää AV1-videopakkausalgoritmin keinoja kuvan koon pienentämiseksi. Lisätietoja on <a data-l10n-name="bugzilla">bugissa 1443863</a>.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
+experimental-features-media-jxl =
+    .label = Media: JPEG XL
+experimental-features-media-jxl-description = Kun tämä ominaisuus on käytössä, { -brand-short-name } tukee JPEG XL (JXL) -muotoa. Kyseessä on paranneltu kuvatiedostomuoto, joka tukee häviötöntä siirtymää perinteisistä JPEG-tiedostoista. Katso <a data-l10n-name="bugzilla">bug 1539075 -kuvaus</a> saadaksesi lisätietoja.
+# The title of the experiment should be kept in English as it may be referenced
+# by various online articles and is technical in nature.
 experimental-features-web-api-inputmode =
     .label = Web API: inputmode
 # "inputmode" and "contenteditable" are technical terms and shouldn't be translated.
 experimental-features-web-api-inputmode-description = Globaalin attribuutin <a data-l10n-name="mdn-inputmode">inputmode</a> toteutuksemme on päivitetty <a data-l10n-name="whatwg">WHATWG-määrittelyn</a> mukaisesti, mutta meidän tarvitsee vielä tehdä muitakin muutoksia, kuten mahdollistaa sen käyttö contenteditable-sisällössä. Lisätietoja on <a data-l10n-name="bugzilla">bugissa 1205133</a>.
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-web-api-link-preload =
-    .label = Web API: <link rel="preload">
-# Do not translate "rel", "preload" or "link" here, as they are all HTML spec
-# values that do not get translated.
-experimental-features-web-api-link-preload-description = <a data-l10n-name="rel">rel</a>-attribuutin arvo <code>"preload"</code> <a data-l10n-name="link">&lt;link&gt;</a>-elementissä on tarkoitettu auttamaan suorituskyvyn parantamisessa. Arvon ansiosta resurssit voidaan ladata aiemmin sivun elinkaaren aikana, minkä johdosta ne ovat saatavilla aiemmin ja siten estävät epätodennäköisemmin sivun piirtämisen. Lue lisää artikkelista <a data-l10n-name="readmore">”Preloading content with <code>rel="preload"</code>”</a> tai <a data-l10n-name="bugzilla">bugista 1583604</a>.
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-css-focus-visible =
-    .label = CSS: Pseudo-class: :focus-visible
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-web-api-beforeinput =
-    .label = Web API: beforeinput Event
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-css-constructable-stylesheets =
@@ -63,9 +53,6 @@ experimental-features-cookie-samesite-none-requires-secure2-description = Attrib
 experimental-features-abouthome-startup-cache =
     .label = about:home-sivun käynnistyksen välimuisti
 experimental-features-abouthome-startup-cache-description = Käynnistyksessä oletuksena ladattavan about:home-sivun välimuisti. Sen tarkoitus on parantaa käynnistymisen suorituskykyä.
-experimental-features-print-preview-tab-modal =
-    .label = Tulostuksen esikatselun uusi design
-experimental-features-print-preview-tab-modal-description = Ottaa käyttöön tulostuksen esikatselun uuden designin ja mahdollistaa tulostuksen esikatselun macOS-käyttöjärjestelmässä. Tämä ei välttämättä toimi täysin eikä sisällä kaikki tulostusasetuksia. Loppujen tulostusasetusten muuttamiseksi tarvitsee valita ”Tulosta käyttäen järjestelmän tulostusikkunaa…” Tulosta-paneelista.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-cookie-samesite-schemeful =
@@ -76,6 +63,14 @@ experimental-features-devtools-serviceworker-debugger-support =
     .label = Web-työkalut: Service Worker -vianjäljitys
 # "Service Worker" is an API name and is usually not translated.
 experimental-features-devtools-serviceworker-debugger-support-description = Ottaa käyttöön kokeellisen Service Worker -tuen Debugger-paneelissa. Tämä voi hidastaa web-työkaluja ja lisätä muistinkulutusta.
+# WebRTC global mute toggle controls
+experimental-features-webrtc-global-mute-toggles =
+    .label = WebRTC:n globaalit vaimennusohjaimet
+experimental-features-webrtc-global-mute-toggles-description = Lisää ohjaimet WebRTC:n globaaliin jakamisilmaisimeen. Ohjaimet mahdollistavat mikrofonin ja kameran vaimentamisen globaalisti.
+# Win32k Lockdown
+experimental-features-win32k-lockdown =
+    .label = Win32k-lukitus
+experimental-features-win32k-lockdown-description = Estä Win32k-rajapintojen käyttäminen selaimen välilehdissä. Parantaa tietoturvaa, mutta saattaa olla epävakaa tai häiriöaltis. (Vain Windowsille)
 # JS JIT Warp project
 experimental-features-js-warp =
     .label = JavaScript JIT: Warp
@@ -83,6 +78,7 @@ experimental-features-js-warp-description = Ota käyttöön Warp, projekti javaS
 # Fission is the name of the feature and should not be translated.
 experimental-features-fission =
     .label = Fission (sivustojen eristäminen)
+experimental-features-fission-description = Fission (sivustojen eristäminen) on kokeellinen ominaisuus { -brand-short-name }issa, jonka tarkoitus on tarjota lisäkerros tietoturvaongelmia vastaan suojautumisessa. Eristämällä jokaisen sivuston yksittäiseksi prosessiksi, Fission vaikeuttaa haitallisten sivustojen pääsyä muiden vierailemiesi sivustojen tietoihin. Tämä on merkittävä arkkitehtuurillinen muutos { -brand-short-name }issa ja arvostamme, jos päätät testata ja ilmoittaa mahdollisesti havaitsemistasi ongelmista. Lisätietoja on tarjolla <a data-l10n-name="wiki">wikissä</a>.
 # Support for having multiple Picture-in-Picture windows open simultaneously
 experimental-features-multi-pip =
     .label = Useita kuvia kuvassa -tuki
@@ -90,3 +86,6 @@ experimental-features-multi-pip-description = Kokeellinen tuki, jonka ansiosta u
 experimental-features-http3 =
     .label = HTTP/3-yhteyskäytäntö
 experimental-features-http3-description = Kokeellinen tuki HTTP/3-yhteyskäytännölle.
+# Search during IME
+experimental-features-ime-search =
+    .label = Osoitepalkki: näytä tulokset IME-koostamisen aikana

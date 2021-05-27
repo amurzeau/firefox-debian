@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = "{ $engineName }" hinzufügen
+    .tooltiptext = Suchmaschine "{ $engineName }" hinzufügen
+    .aria-label = Suchmaschine "{ $engineName }" hinzufügen
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Suchmaschine hinzufügen
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Website-Informationen für { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Verbindungssicherheit für { $host }
 identity-connection-not-secure = Verbindung nicht sicher
 identity-connection-secure = Verbindung sicher
+identity-connection-failure = Verbindungsfehler
 identity-connection-internal = Dies ist eine sichere { -brand-short-name }-Seite.
 identity-connection-file = Diese Seite ist auf Ihrem Computer gespeichert.
 identity-extension-page = Diese Seite wurde durch eine Erweiterung bereitgestellt.
@@ -319,6 +339,7 @@ identity-https-only-info-turn-off2 = Wenn die Seite beschädigt erscheint, könn
 identity-https-only-info-no-upgrade = Verbindung konnte nicht von HTTP geändert werden.
 identity-permissions-storage-access-header = Seitenübergreifende Cookies
 identity-permissions-storage-access-hint = Diese Beteiligten können Cookies und Website-Daten verwenden, während Sie sich auf dieser Website befinden.
+identity-permissions-storage-access-learn-more = Weitere Informationen
 identity-permissions-reload-hint = Eventuell muss die Seite neu geladen werden, um die Änderungen zu übernehmen.
 identity-permissions-empty = Der Website wurden keine besonderen Berechtigungen erteilt.
 identity-clear-site-data =
@@ -490,6 +511,11 @@ urlbar-placeholder-with-name =
     .placeholder = Mit { $name } suchen oder Adresse eingeben
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Browser wird ferngesteuert
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Browser wird ferngesteuert (Grund: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Sie haben dieser Website zusätzliche Berechtigungen erteilt.
 urlbar-switch-to-tab =
@@ -578,9 +604,6 @@ pointerlock-warning-no-domain = Dieses Dokument kontrolliert den Mauszeiger. Dr�
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Ein Teil der Seite ist abgestürzt.</strong> Übermitteln Sie bitte einen Bericht, um { -brand-product-name } über dieses Problem zu informieren und beim Beheben des Fehlers zu helfen.
-crashed-subframe-learnmore =
-    .label = Weitere Informationen
-    .accesskey = W
 crashed-subframe-learnmore-link =
     .value = Weitere Informationen
 crashed-subframe-submit =
@@ -593,8 +616,6 @@ bookmarks-show-all-bookmarks =
     .label = Lesezeichen verwalten
 bookmarks-manage-bookmarks =
     .label = Lesezeichen verwalten
-bookmarks-recent-bookmarks-panel =
-    .value = Neueste Lesezeichen
 bookmarks-recent-bookmarks-panel-subheader = Neueste Lesezeichen
 bookmarks-toolbar-chevron =
     .tooltiptext = Weitere Lesezeichen anzeigen

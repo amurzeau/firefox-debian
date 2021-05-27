@@ -180,7 +180,7 @@ onboarding-multistage-pin-default-subtitle = Rask, sikker og privat nettlesing h
 onboarding-multistage-pin-default-waiting-subtitle = Velg { -brand-short-name } under nettleser når dine innstillinger åpnes
 # The "settings" here refers to "Windows 10 Settings App" and not the browser's
 onboarding-multistage-pin-default-help-text = Dette vil feste { -brand-short-name } til oppgavelinjen og åpne innstillinger
-onboarding-multistage-pin-default-primary-button-label = Gjør { -brand-short-name } til min standardnettleser
+onboarding-multistage-pin-default-primary-button-label = Gjør { -brand-short-name } til min primære nettleser
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "more" should stay inside the span.
 onboarding-multistage-import-header = Importer passord, bokmerker og <span data-l10n-name="zap">mer</span>
@@ -204,7 +204,6 @@ onboarding-welcome-steps-indicator =
 # automatically added to the text inside it. "look" should stay inside the span.
 onboarding-multistage-theme-header = Velg et <span data-l10n-name="zap">utseende</span>
 onboarding-multistage-theme-subtitle = Tilpass { -brand-short-name } med et tema.
-onboarding-multistage-theme-primary-button-label = Lagre tema
 onboarding-multistage-theme-primary-button-label2 = Ferdig
 onboarding-multistage-theme-secondary-button-label = Ikke nå
 # Automatic theme uses operating system color settings
@@ -259,3 +258,90 @@ onboarding-multistage-theme-description-alpenglow =
     .aria-description =
         Bruk et fargerikt utseende for knapper,
         menyer og vinduer.
+
+## Multistage MR1 onboarding strings (MR1 about:welcome pages)
+
+# "Hero Text" displayed on left side of welcome screen.
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
+# It also signals the passion users bring to Firefox, how they use
+# Firefox to pursue those passions, as well as the boldness in their
+# choice to use Firefox over a larger competitor browser.
+# An alternative title for localization is: "It starts here".
+# This text can be formatted to span multiple lines as needed.
+mr1-welcome-screen-hero-text = Det begynner her
+# Caption for background image in about:welcome. "Soraya Osorio" is the name
+# of the person and shouldn't be translated.
+mr1-onboarding-welcome-image-caption = Soraya Osorio — Møbeldesigner, Firefox-fan
+# This button will open system settings to turn on prefers-reduced-motion
+mr1-onboarding-reduce-motion-button-label = Slå av animasjoner
+mr1-onboarding-welcome-header = Velkommen til { -brand-short-name }
+mr1-onboarding-set-default-pin-primary-button-label = Gjør { -brand-short-name } til min primære nettleser
+    .title = Setter { -brand-short-name } som standard nettleser og fester den til oppgavelinjen
+mr1-onboarding-set-default-only-primary-button-label = Gjør { -brand-short-name } til min standardnettleser
+mr1-onboarding-set-default-secondary-button-label = Ikke nå
+mr1-onboarding-sign-in-button-label = Logg inn
+mr1-onboarding-import-header = Ta med deg alt
+mr1-onboarding-import-subtitle = Importer dine passord, <br/>bokmerker og mer.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
+# Variables:
+#   $previous (Str) - Previous browser name, such as Edge, Chrome
+mr1-onboarding-import-primary-button-label-attribution = Importer fra { $previous }
+# This string will be used in cases where we can't detect the previous browser name.
+mr1-onboarding-import-primary-button-label-no-attribution = Importer fra forrige nettleser
+mr1-onboarding-import-secondary-button-label = Ikke nå
+mr1-onboarding-theme-header = Gjør den til din egen
+mr1-onboarding-theme-subtitle = Tilpass { -brand-short-name } med et tema.
+mr1-onboarding-theme-primary-button-label = Lagre tema
+mr1-onboarding-theme-secondary-button-label = Ikke nå
+# System theme uses operating system color settings
+mr1-onboarding-theme-label-system = Systemtema
+mr1-onboarding-theme-label-light = Lyst
+mr1-onboarding-theme-label-dark = Mørkt
+# "Alpenglow" here is the name of the theme, and should be kept in English.
+mr1-onboarding-theme-label-alpenglow = Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of system theme
+mr1-onboarding-theme-tooltip-system =
+    .title =
+        Følg operativsystemets tema
+        for knapper, menyer og vinduer.
+# Input description for system theme
+mr1-onboarding-theme-description-system =
+    .aria-description =
+        Følg operativsystemets tema
+        for knapper, menyer og vinduer.
+# Tooltip displayed on hover of light theme
+mr1-onboarding-theme-tooltip-light =
+    .title =
+        Bruk et lyst tema for knapper,
+        menyer og vinduer.
+# Input description for light theme
+mr1-onboarding-theme-description-light =
+    .aria-description =
+        Bruk et lyst tema for knapper,
+        menyer og vinduer.
+# Tooltip displayed on hover of dark theme
+mr1-onboarding-theme-tooltip-dark =
+    .title =
+        Bruk et mørkt tema for knapper,
+        menyer og vinduer.
+# Input description for dark theme
+mr1-onboarding-theme-description-dark =
+    .aria-description =
+        Bruk et mørkt tema for knapper,
+        menyer og vinduer.
+# Tooltip displayed on hover of Alpenglow theme
+mr1-onboarding-theme-tooltip-alpenglow =
+    .title =
+        Bruk et dynamisk, fargerikt tema for
+        knapper, menyer og vinduer.
+# Input description for Alpenglow theme
+mr1-onboarding-theme-description-alpenglow =
+    .aria-description =
+        Bruk et dynamisk, fargerikt tema for
+        knapper, menyer og vinduer.

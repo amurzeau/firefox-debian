@@ -2,7 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-
 ## The main browser window's title
 
 # These are the default window titles everywhere except macOS. The first two
@@ -158,6 +157,7 @@ urlbar-star-add-bookmark =
 
 page-action-add-to-urlbar =
     .label = アドレスバーに追加
+
 page-action-manage-extension =
     .label = 拡張機能を管理...
 page-action-remove-from-urlbar =
@@ -239,6 +239,10 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = 検索エンジンを追加
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -281,8 +285,16 @@ bookmark-panel =
 
 ## Identity Panel
 
-identity-connection-not-secure = 安全ではない接続
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = { $host } のサイト情報
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = { $host } への接続の安全性
+identity-connection-not-secure = 安全でない接続
 identity-connection-secure = 安全な接続
+identity-connection-failure = 接続失敗
 identity-connection-internal = このページは { -brand-short-name } の安全な内部ページです。
 identity-connection-file = これはあなたのコンピューターに保存されているページです。
 identity-extension-page = このページは拡張機能から読み込まれています。
@@ -294,6 +306,7 @@ identity-weak-encryption = このページは脆弱な暗号を使用してい�
 identity-insecure-login-forms = このページのログインフォームは安全ではありません。
 identity-permissions =
     .value = このサイトの設定
+
 identity-https-only-connection-upgraded = (HTTPS で接続中)
 identity-https-only-label = HTTPS-Only モード
 identity-https-only-dropdown-on =
@@ -305,8 +318,12 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = このサイトで { -brand-short-name } に可能な限り接続をアップグレードさせたい場合は、HTTPS-Only モードをオンにしてください。
 identity-https-only-info-turn-off2 = ページが動作しない場合は HTTPS-Only モードをオフにして、安全でない HTTP 接続でこのサイトを再読み込みするとよいでしょう。
 identity-https-only-info-no-upgrade = 接続を HTTP からアップグレードできません。
+
 identity-permissions-storage-access-header = クロスサイト Cookie
 identity-permissions-storage-access-hint = 以下のサイトが、あなたがこのサイトにいる間、クロスサイト Cookie とサイトデータにアクセスできます。
+
+identity-permissions-storage-access-learn-more = 詳細情報
+
 identity-permissions-reload-hint = 変更内容を適用するには、ページの再読み込みが必要です。
 identity-permissions-empty = このサイトに特別な権限は設定されていません。
 identity-clear-site-data =
@@ -323,7 +340,7 @@ identity-description-insecure-login-forms = このページに入力したログ
 identity-description-weak-cipher-intro = このウェブサイトとの接続には脆弱な暗号が使用されており、秘密が保たれません。
 identity-description-weak-cipher-risk = 第三者にあなたの情報を盗み見られたりウェブサイトの動作を不正に改変される可能性があります。
 identity-description-active-blocked = { -brand-short-name } がこのページ上の安全でないコンテンツをブロックしました。 <label data-l10n-name="link">詳細情報</label>
-identity-description-passive-loaded = この接続は安全ではないため、サイトと共有したあなたの情報が第三者に盗み見られる可能性があります。
+identity-description-passive-loaded = この接続は安全でないため、サイトと共有したあなたの情報が第三者に盗み見られる可能性があります。
 identity-description-passive-loaded-insecure = このウェブサイトには安全でないコンテンツ (画像など) が含まれています。 <label data-l10n-name="link">詳細情報</label>
 identity-description-passive-loaded-mixed = { -brand-short-name } が一部のコンテンツをブロックしていますが、ページ上には安全でないコンテンツ (画像など) が含まれています。 <label data-l10n-name="link">詳細情報</label>
 identity-description-active-loaded = このウェブサイトには安全でないコンテンツ (スクリプトなど) が含まれており、サイトとの接続は秘密が保たれません。
@@ -416,11 +433,11 @@ popup-screen-sharing-never =
 popup-silence-notifications-checkbox = 共有中は { -brand-short-name } からの通知を無効にする。
 popup-silence-notifications-checkbox-warning = 共有中は { -brand-short-name } からの通知を表示しないようにします。
 popup-screen-sharing-block =
-  .label = ブロック
-  .accesskey = B
+    .label = ブロック
+    .accesskey = B
 popup-screen-sharing-always-block =
-  .label = 常にブロック
-  .accesskey = w
+    .label = 常にブロック
+    .accesskey = w
 popup-mute-notifications-checkbox = 共有中はウェブサイトからの通知を無効にする
 
 ## WebRTC window or screen share tab switch warning
@@ -532,6 +549,14 @@ urlbar-result-action-tabtosearch-web = アドレスバーから直接 { $engine 
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = アドレスバーから直接 { $engine } を検索
 
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = コピー
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
+
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
@@ -559,9 +584,6 @@ pointerlock-warning-no-domain = マウスポインターは現在、このペー
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>このページの一部がクラッシュしました。</strong> { -brand-product-name } にこの問題を知らせて素早く修正するために、レポートを送信してください。
-crashed-subframe-learnmore =
-    .label = 詳細
-    .accesskey = L
 crashed-subframe-learnmore-link =
     .value = 詳細
 crashed-subframe-submit =
@@ -574,8 +596,6 @@ bookmarks-show-all-bookmarks =
     .label = すべてのブックマークを表示
 bookmarks-manage-bookmarks =
     .label = ブックマークを管理
-bookmarks-recent-bookmarks-panel =
-    .value = 最近のブックマーク
 bookmarks-recent-bookmarks-panel-subheader = 最近のブックマーク
 bookmarks-toolbar-chevron =
     .tooltiptext = 残りのブックマークを表示します
@@ -645,10 +665,24 @@ library-recent-activity-title =
 
 save-to-pocket-button =
     .label = { -pocket-brand-name } に保存
-    .tooltiptext = { -pocket-brand-name } に保存
+    .tooltiptext = { -pocket-brand-name } に保存します
 
 ## Customize Toolbar Buttons
 
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+  .label = アドオンとテーマ
+  .tooltiptext = アドオンとテーマを管理します ({ $shortcut })
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+  .label = 設定
+  .tooltiptext = { PLATFORM() ->
+      [macos] 設定を開きます ({ $shortcut })
+     *[other] 設定を開きます
+  }
 
 ## More items
 

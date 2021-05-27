@@ -1002,9 +1002,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Cân bằng để bảo vệ và hiệu suất. Các trang sẽ tải bình thường.
 content-blocking-etp-strict-desc = Bảo vệ mạnh mẽ hơn, nhưng có thể khiến một số trang web và nội dung bị phá vỡ.
 content-blocking-etp-custom-desc = Chọn trình theo dõi và tập lệnh để chặn.
+content-blocking-etp-blocking-desc = { -brand-short-name } chặn những điều sau:
 content-blocking-private-windows = Trình theo dõi nội dung trong cửa sổ riêng tư
 content-blocking-cross-site-cookies = Cookie trên nhiều trang web
+content-blocking-cross-site-cookies-in-all-windows = Cookie trên nhiều trang web trong tất cả các cửa sổ (bao gồm cookie theo dõi)
 content-blocking-cross-site-tracking-cookies = Cookie theo dõi trên nhiều trang web
+content-blocking-all-cross-site-cookies-private-windows = Cookie trên nhiều trang web trong cửa sổ riêng tư
 content-blocking-cross-site-tracking-cookies-plus-isolate = Cookie theo dõi trên nhiều trang web và cô lập các cookie còn lại
 content-blocking-social-media-trackers = Trình theo dõi truyền thông xã hội
 content-blocking-all-cookies = Tất cả cookie
@@ -1124,6 +1127,8 @@ collection-backlogged-crash-reports =
     .label = Cho phép { -brand-short-name } thay bạn gửi các báo cáo sự cố còn tồn đọng
     .accesskey = c
 collection-backlogged-crash-reports-link = Tìm hiểu thêm
+collection-backlogged-crash-reports-with-link = Cho phép { -brand-short-name } thay mặt bạn gửi báo cáo sự cố tồn đọng <a data-l10n-name="crash-reports-link">Tìm hiểu thêm</a>
+    .accesskey = c
 
 ## Privacy Section - Security
 ##

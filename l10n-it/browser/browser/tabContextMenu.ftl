@@ -2,6 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+tab-context-new-tab =
+    .label = Nuova scheda
+    .accesskey = N
 reload-tab =
     .label = Ricarica scheda
     .accesskey = R
@@ -64,7 +67,7 @@ tab-context-close-multiple-tabs =
     .accesskey = u
 tab-context-share-url =
     .label = Condividi
-    .accesskey = d
+    .accesskey = o
 tab-context-share-more =
     .label = Altro…
 

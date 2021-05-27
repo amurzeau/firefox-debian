@@ -247,6 +247,10 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Іздеу жүйесін қосу
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -264,6 +268,8 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Бетбелгіні қосу
+bookmarks-edit-bookmark = Бетбелгіні түзету
 bookmark-panel-cancel =
     .label = Бас тарту
     .accesskey = с
@@ -281,6 +287,8 @@ bookmark-panel-show-editor-checkbox =
     .accesskey = с
 bookmark-panel-done-button =
     .label = Дайын
+bookmark-panel-save-button =
+    .label = Сақтау
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -289,6 +297,13 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = { $host } үшін сайт ақпараты
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = { $host } үшін байланыс қауіпсіздігі
 identity-connection-not-secure = Байланыс қауіпсіз емес
 identity-connection-secure = Байланыс қауіпсіз
 identity-connection-internal = Бұл - қауіпсіз { -brand-short-name } беті.
@@ -315,6 +330,7 @@ identity-https-only-info-turn-off2 = Егер парақ бұзылған сия
 identity-https-only-info-no-upgrade = Байланысты HTTP-дан жаңарту мүмкін емес.
 identity-permissions-storage-access-header = Сайтаралық cookie файлдары
 identity-permissions-storage-access-hint = Бұл тараптар сіз осы сайтта болған кезде сайтаралық cookie файлдарын және сайт деректерін қолдана алады.
+identity-permissions-storage-access-learn-more = Көбірек білу
 identity-permissions-reload-hint = Өзгерістер іске асуы үшін бұл парақты қайта жүктеуіңіз керек болуы мүмкін.
 identity-permissions-empty = Бұл сайтқа арнайы рұқсаттарды берген жоқсыз.
 identity-clear-site-data =
@@ -524,6 +540,13 @@ urlbar-result-action-tabtosearch-web = { $engine } көмегімен тікел
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = { $engine } ішінен тікелей адрестік жолағынан іздеу
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Көшіру
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -552,9 +575,6 @@ pointerlock-warning-no-domain = Бұл құжат курсорыңызды ба�
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Бұл парақтың бір бөлігі құлады.</strong> Бұл мәселе туралы { -brand-product-name } хабардар ету және оны тезірек шешу үшін есептеме жіберіңіз.
-crashed-subframe-learnmore =
-    .label = Көбірек білу
-    .accesskey = л
 crashed-subframe-learnmore-link =
     .value = Көбірек білу
 crashed-subframe-submit =
@@ -567,8 +587,6 @@ bookmarks-show-all-bookmarks =
     .label = Барлық бетбелгілерді көрсету
 bookmarks-manage-bookmarks =
     .label = Бетбелгілерді басқару
-bookmarks-recent-bookmarks-panel =
-    .value = Жуырдағы бетбелгілер
 bookmarks-recent-bookmarks-panel-subheader = Жуырдағы бетбелгілер
 bookmarks-toolbar-chevron =
     .tooltiptext = Көбірек бетбелгілерді көрсету
@@ -642,6 +660,11 @@ save-to-pocket-button =
 
 ## Customize Toolbar Buttons
 
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Қосымшалар және темалар
+    .tooltiptext = Қосымшалар және темаларыңызды басқару ({ $shortcut })
 
 ## More items
 

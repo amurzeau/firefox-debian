@@ -230,6 +230,10 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = खोज ईंजन जोड़ें
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -272,6 +276,13 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = { $host } के लिए साइट की जानकारी
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = { $host } के लिए संपर्क सुरक्षा
 identity-connection-not-secure = संपर्क सुरक्षित नहीं है
 identity-connection-secure = संपर्क सुरक्षित है
 identity-connection-internal = यह एक सुरक्षित { -brand-short-name } पेज हैं.
@@ -453,9 +464,6 @@ pointerlock-warning-no-domain = इस दस्तेवाज को आपक
 
 ## Subframe crash notification
 
-crashed-subframe-learnmore =
-    .label = अधिक जानें
-    .accesskey = L
 crashed-subframe-learnmore-link =
     .value = अधिक जानें
 crashed-subframe-submit =

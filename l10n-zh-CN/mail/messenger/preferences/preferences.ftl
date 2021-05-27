@@ -12,6 +12,7 @@ preferences-title =
         }
 preferences-tab-title =
     .title = 首选项
+preferences-doc-title = 首选项
 category-list =
     .aria-label = 分类
 pane-general-title = 常规
@@ -90,8 +91,8 @@ update-in-progress-ok-button = 放弃
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = 继续
-account-button = 账户设置
 addons-button = 扩展和主题
+account-button = 账户设置
 open-addons-sidebar-button = 扩展和主题
 
 ## OS Authentication dialog
@@ -326,12 +327,12 @@ quoted-text-color =
     .accesskey = o
 search-input =
     .placeholder = 搜索
+search-handler-table =
+    .placeholder = 过滤内容类型和操作
 type-column-label =
     .label = 内容类型
     .accesskey = T
-action-column-label =
-    .label = 动作
-    .accesskey = A
+action-column-label = 操作
 save-to-label =
     .label = 保存文件至
     .accesskey = S

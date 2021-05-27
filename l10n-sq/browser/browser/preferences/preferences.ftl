@@ -28,6 +28,18 @@ search-input-box =
             [windows] Gjeni te Mundësitë
            *[other] Gjeni te Parapëlqimet
         }
+settings-page-title = Rregullime
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Gjej në Rregullime
 managed-notice = Shfletuesi juaj administrohet nga enti juaj.
 category-list =
     .aria-label = Kategori
@@ -46,12 +58,16 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Sync
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = Eksperimente { -brand-short-name }
 category-experimental =
     .tooltiptext = Eksperimente { -brand-short-name }
 pane-experimental-subtitle = Vazhdoni me Kujdes
 pane-experimental-search-results-header = Eksperimente { -brand-short-name }: Vazhdoni me Kujdes
 pane-experimental-description = Ndryshimi i parapëlqimeve për formësim të mëtejshëm mund të ketë ndikim në funksionimin dhe sigurinë e { -brand-short-name }-it.
+pane-experimental-description2 = Ndryshimi i rregullimeve të mëtejshme të formësimit mund të ketë ndikim në punimin ose sigurinë e { -brand-short-name }-it.
 pane-experimental-reset =
     .label = Rikthe Parazgjedhjet
     .accesskey = R
@@ -121,6 +137,8 @@ search-results-empty-message =
         [windows] Na ndjeni! S’ka përfundime te Mundësitë për “<span data-l10n-name="query"></span>”.
        *[other] Na ndjeni! S’ka përfundime te Parapëlqimet për “<span data-l10n-name="query"></span>”.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Na ndjeni! Te Rregullimet s’ka përfundime për “<span data-l10n-name="query"></span>”.
 search-results-help-link = Ju duhet ndihmë? Vizitoni <a data-l10n-name="url">Asistencë { -brand-short-name }</a>
 
 ## General Section
@@ -369,6 +387,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Të mos kontrollojë kurrë për përditësime (nuk rekomandohet)
     .accesskey = u
+update-application-background-enabled =
+    .label = Kur { -brand-short-name }-i nuk xhiron
+    .accesskey = K
 update-application-warning-cross-user-setting = Ky rregullim do të zbatohet mbi krejt llogaritë Windows dhe profile { -brand-short-name } që përdorin këtë instalim të { -brand-short-name }.
 update-application-use-service =
     .label = Për instalim përditësimesh përdor një shërbim në prapaskenë
@@ -382,6 +403,15 @@ update-setting-write-failure-message =
     { -brand-short-name }-i hasi një gabim dhe s’e ruajti këtë ndryshim. Kini parasysh se caktimi i këtij parapëlqimi mbi përditësimet lyp leje për shkrim te kartela më poshtë. Ju, ose një përgjegjës sistemi mund të jeni në gjendje ta zgjidhni gabimin duke i akorduar grupit Përdorues kontroll të plotë të kësaj kartele.
     
     S’u shkrua dot në kartelë: { $path }
+update-setting-write-failure-title2 = Gabim në ruajtje rregullimesh Përditësimi
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name } hasi një gabim dhe nuk e ruajti këtë ndryshim. Kini parasysh se ndryshimi i këtij rregullimi përditësimi lyp leje për shkrim te kartela më poshtë. Ju, ose përgjegjësi i sistemit tuaj, mund të jeni në gjendje të zgjidhni gabimin duke i akorduar grupit Përdorues kontroll të plotë mbi këtë kartelë.
+    
+    Could not write to file: { $path }
 update-in-progress-title = Përditësim Në Kryerje e Sipër
 update-in-progress-message = Doni që { -brand-short-name }-i të vazhdojë këtë përditësim?
 update-in-progress-ok-button = &Hidhe Tej
@@ -579,6 +609,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Shfaq sugjerime kërkimesh në Dritare Private
 suggestions-addressbar-settings-generic = Ndryshoni parapëlqime për sugjerimet të tjera shtylle adresash
+suggestions-addressbar-settings-generic2 = Ndryshoni rregullime për sugjerime të tjera shtylle adresash
 search-suggestions-cant-show = Sugjerimet për kërkime nuk do të shfaqen te shtylla e vendndodhjeve, ngaqë { -brand-short-name }-in e keni formësuar të mos mbajë kurrë mend historikun e shfletimeve.
 search-one-click-header = Motorë kërkimesh me një klikim
 search-one-click-header2 = Kërko për Shkurtore
@@ -613,6 +644,8 @@ containers-back-button =
             [windows] Mbrapsht te Mundësitë
            *[other] Mbrapsht te Parapëlqimet
         }
+containers-back-button2 =
+    .aria-label = Mbrapsht te Rregullimet
 containers-header = Skeda Kontejneri
 containers-add-button =
     .label = Shtoni Kontejner të Ri
@@ -622,6 +655,8 @@ containers-new-tab-check =
     .accesskey = P
 containers-preferences-button =
     .label = Parapëlqime
+containers-settings-button =
+    .label = Rregullime
 containers-remove-button =
     .label = Hiqe
 
@@ -633,6 +668,10 @@ sync-signedout-description = Njëkohësoni nëpër krejt pajisjet tuaja faqerojt
 sync-signedout-account-signin2 =
     .label = Hyni te { -sync-brand-short-name }-u…
     .accesskey = H
+sync-signedout-description2 = Njëkohësoni faqerojtësit tuaj, skedat, fjalëkalimet, shtesa dhe rregullime nga krejt pajisjet tuaja.
+sync-signedout-account-signin3 =
+    .label = Për njëkohësim, bëni hyrjen…
+    .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -672,6 +711,10 @@ prefs-sync-setup =
     .label = Ujdisni { -sync-brand-short-name }…
     .accesskey = U
 prefs-sync-offer-setup-label = Njëkohësoni nëpër krejt pajisjet tuaja faqerojtësit, historikun e shfletimeve, skedat, fjalëkalimet, shtesat dhe parapëlqimet tuaja.
+prefs-sync-turn-on-syncing =
+    .label = Aktivizoni njëkohësimin…
+    .accesskey = A
+prefs-sync-offer-setup-label2 = Njëkohësoni faqerojtësit tuaj, skedat, fjalëkalimet, shtesa dhe rregullime nga krejt pajisjet tuaja.
 prefs-sync-now =
     .labelnotsyncing = Njëkohësoji Tani
     .accesskeynotsyncing = N
@@ -692,6 +735,7 @@ sync-currently-syncing-prefs =
         [windows] Mundësi
        *[other] Parapëlqime
     }
+sync-currently-syncing-settings = Rregullime
 sync-change-options =
     .label = Ndryshojini…
     .accesskey = N
@@ -739,6 +783,10 @@ sync-engine-prefs =
         }
     .tooltiptext = Të dhëna të Përgjithshme, Privatësie dhe Sigurie që i keni ndryshuar ju
     .accesskey = P
+sync-engine-settings =
+    .label = Rregullime
+    .tooltiptext = Rregullime të Përgjithshme, Privatësie, dhe Sigurie që keni ndryshuar
+    .accesskey = R
 
 ## The device name controls.
 
@@ -970,9 +1018,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = E baraspeshuar për mbrojtje dhe funksionim. Faqet do të ngarkohen normalisht.
 content-blocking-etp-strict-desc = Mbrojtje më e fortë, por mund të shkaktojë mosfunksionim për disa sajte apo lëndë.
 content-blocking-etp-custom-desc = Zgjidhni cilët gjurmues dhe programthe të bllokohen.
+content-blocking-etp-blocking-desc = { -brand-short-name }-i bllokon as vijon:
 content-blocking-private-windows = Lëndë gjurmimi në Dritare Private
 content-blocking-cross-site-cookies = Cookies nga sajti në sajt
+content-blocking-cross-site-cookies-in-all-windows = “Cross-site cookies” në krejt dritaret (përfshin cookies gjurmimi)
 content-blocking-cross-site-tracking-cookies = Cookies gjurmimi nga sajte në sajte
+content-blocking-all-cross-site-cookies-private-windows = “Cross-site cookies” në Dritare Private
 content-blocking-cross-site-tracking-cookies-plus-isolate = Cookie-t për gjurmim nga sajti në sajt, dhe izolo cookie-t e mbetura
 content-blocking-social-media-trackers = Gjurmues prej mediash shoqërore
 content-blocking-all-cookies = Krejt cookie-t
@@ -1092,6 +1143,8 @@ collection-backlogged-crash-reports =
     .label = Lejojeni { -brand-short-name }-in të dërgojë njoftime të dikurshme vithisjesh në emrin tuaj
     .accesskey = L
 collection-backlogged-crash-reports-link = Mësoni Më Tepër
+collection-backlogged-crash-reports-with-link = Lejojeni { -brand-short-name }-in të dërgojë raporte vithisjesh të mëparshme në emrin tuaj <a data-l10n-name="crash-reports-link">Mësoni më tepër</a>
+    .accesskey = c
 
 ## Privacy Section - Security
 ##
@@ -1153,6 +1206,11 @@ space-alert-under-5gb-ok-button =
     .label = OK, e mora vesh
     .accesskey = O
 space-alert-under-5gb-message = Po mbaron hapësira e diskut për { -brand-short-name }. Lënda e sajtit mund të mos shfaqet si duhet. Vizitoni “Mësoni Më Tepër” që të optimizoni përdorimin tuaj të diskut oër shfletim më të mirë.
+space-alert-over-5gb-settings-button =
+    .label = Hap Rregullimet
+    .accesskey = H
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name }-it po i mbarohet hapësira në disk.</strong> Lënda e sajteve mund të mos shfaqet si duhet. Mundësi të spastroni të dhëna të depozituara që nga Rregullime > Privatësi & Siguri > Cookies dhe Të dhëna Sajtesh.
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name }-it po i mbarohet hapësira në disk.</strong> Lënda e sajteve mund të mos shfaqet si duhet. Që të optimizoni përdorimin tuaj të diskut për punim më të mirë të shfletimin, vizitoni “Mësoni Më Tepër”.
 
 ## Privacy Section - HTTPS-Only
 

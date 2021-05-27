@@ -249,6 +249,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Дадаць“{ $engineName }”
+    .tooltiptext = Дадаць пашукавік “{ $engineName }”
+    .aria-label = Дадаць пашукавік “{ $engineName }”
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Дадаць пашукавік
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -296,8 +308,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Інфармацыя аб сайце { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Бяспека злучэння з { $host }
 identity-connection-not-secure = Злучэнне не бяспечнае
 identity-connection-secure = Бяспечнае злучэнне
+identity-connection-failure = Збой злучэння
 identity-connection-internal = Гэта бяспечная { -brand-short-name } старонка.
 identity-connection-file = Гэта старонка захоўваецца на вашым камп'ютары.
 identity-extension-page = Гэтая старонка загружана з пашырэння.
@@ -322,6 +342,7 @@ identity-https-only-info-turn-off2 = Калі старонка выглядае 
 identity-https-only-info-no-upgrade = Не ўдалося абнавіць злучэнне з HTTP.
 identity-permissions-storage-access-header = Міжсайтавыя кукі
 identity-permissions-storage-access-hint = Гэтыя ўдзельнікі могуць выкарыстоўваць міжсайтавыя кукі і дадзеныя сайта, пакуль вы знаходзіцеся на гэтым сайце.
+identity-permissions-storage-access-learn-more = Даведацца больш
 identity-permissions-reload-hint = Магчыма, вам спатрэбіцца перазагрузіць старонку, каб змены пачалі дзейнічаць.
 identity-permissions-empty = Вы не давалі гэтаму сайту ніякіх адмысловых дазволаў.
 identity-clear-site-data =
@@ -499,6 +520,11 @@ urlbar-placeholder-with-name =
     .placeholder = Шукайце ў { $name } або ўвядзіце адрас
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Браўзер знаходзіцца пад аддаленым кіраваннем
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Браўзер пад дыстанцыйным кіраваннем (прычына: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Вы далі гэтаму вэб-сайту дадатковыя дазволы.
 urlbar-switch-to-tab =
@@ -587,9 +613,6 @@ pointerlock-warning-no-domain = Гэты дакумент кіруе вашым 
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Частка гэтай старонкі пацярпела крах.</strong> Каб паведаміць { -brand-product-name } пра гэту праблему і паскорыць выпраўленне, адпраўце справаздачу.
-crashed-subframe-learnmore =
-    .label = Даведацца больш
-    .accesskey = Д
 crashed-subframe-learnmore-link =
     .value = Даведацца больш
 crashed-subframe-submit =
@@ -602,8 +625,6 @@ bookmarks-show-all-bookmarks =
     .label = Паказаць усе закладкі
 bookmarks-manage-bookmarks =
     .label = Кіраванне закладкамі
-bookmarks-recent-bookmarks-panel =
-    .value = Нядаўнія закладкі
 bookmarks-recent-bookmarks-panel-subheader = Нядаўнія закладкі
 bookmarks-toolbar-chevron =
     .tooltiptext = Паказаць больш закладак

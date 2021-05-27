@@ -245,6 +245,19 @@ search-one-offs-context-set-as-default-private =
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
 
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Aggiungi “{ $engineName }”
+    .tooltiptext = Aggiungi motore di ricerca “{ $engineName }”
+    .aria-label = Aggiungi motore di ricerca “{ $engineName }”
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Aggiungi motore di ricerca
+
 ## Local search mode one-off buttons
 ## Variables:
 ##  $restrict (String): The restriction token corresponding to the search mode.
@@ -290,8 +303,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Informazioni sito { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Sicurezza connessione per { $host }
 identity-connection-not-secure = Connessione non sicura
 identity-connection-secure = Connessione sicura
+identity-connection-failure = Errore di connessione
 identity-connection-internal = Questa è una pagina sicura di { -brand-short-name }.
 identity-connection-file = Questa pagina è salvata sul dispositivo in uso.
 identity-extension-page = Questa pagina è caricata da un’estensione.
@@ -316,6 +337,7 @@ identity-https-only-info-turn-off2 = Se la pagina non funziona correttamente, pr
 identity-https-only-info-no-upgrade = Impossibile aggiornare la connessione da HTTP.
 identity-permissions-storage-access-header = Cookie intersito
 identity-permissions-storage-access-hint = Questi soggetti possono utilizzare cookie intersito e dati dei siti web quando ti trovi in questo sito.
+identity-permissions-storage-access-learn-more = Ulteriori informazioni
 identity-permissions-reload-hint = Potrebbe essere necessario ricaricare la pagina per rendere effettive le modifiche.
 identity-permissions-empty = Nessun permesso speciale associato a questo sito.
 identity-clear-site-data =
@@ -485,6 +507,11 @@ urlbar-placeholder-with-name =
     .placeholder = Cerca con { $name } o inserisci un indirizzo
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Il browser è attualmente controllato da remoto
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+  .tooltiptext = Il browser è attualmente controllato da remoto (motivo: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Sono stati concessi permessi aggiuntivi a questo sito web.
 urlbar-switch-to-tab =
@@ -573,9 +600,6 @@ pointerlock-warning-no-domain = Questo documento sta controllando il puntatore d
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Una parte di questa pagina si è bloccata.</strong> Invia una segnalazione a { -brand-product-name } per comunicare questo problema e fare in modo che venga risolto più rapidamente.
-crashed-subframe-learnmore =
-    .label = Ulteriori informazioni
-    .accesskey = U
 crashed-subframe-learnmore-link =
     .value = Ulteriori informazioni
 crashed-subframe-submit =
@@ -588,8 +612,6 @@ bookmarks-show-all-bookmarks =
     .label = Visualizza tutti i segnalibri
 bookmarks-manage-bookmarks =
     .label = Gestisci segnalibri
-bookmarks-recent-bookmarks-panel =
-    .value = Segnalibri recenti
 bookmarks-recent-bookmarks-panel-subheader = Segnalibri recenti
 bookmarks-toolbar-chevron =
     .tooltiptext = Visualizza altri segnalibri
@@ -666,8 +688,8 @@ save-to-pocket-button =
 # Variables:
 #  $shortcut (String): keyboard shortcut to open the add-ons manager
 toolbar-addons-themes-button =
-    .label = Componenti aggiuntivi e temi
-    .tooltiptext = Gestisci componenti aggiuntivi e temi ({ $shortcut })
+    .label = Estensioni e temi
+    .tooltiptext = Gestisci estensioni e temi ({ $shortcut })
 # Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
 toolbar-settings-button =

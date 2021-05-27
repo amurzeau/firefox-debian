@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Agregar "{ $engineName }"
+    .tooltiptext = Agregar buscador “{ $engineName }”
+    .aria-label = Agregar buscador “{ $engineName }”
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Agregar buscador
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Información del sitio para { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Seguridad de conexión para { $host }
 identity-connection-not-secure = Conexión insegura
 identity-connection-secure = Conexión segura
+identity-connection-failure = Fallo de conexión
 identity-connection-internal = Esta es una página de { -brand-short-name } segura.
 identity-connection-file = Esta página está guardada en su computadora.
 identity-extension-page = Esta página está cargada desde una extensión.
@@ -319,6 +339,7 @@ identity-https-only-info-turn-off2 = Si el sitio no funciona correctamente, es p
 identity-https-only-info-no-upgrade = No se puede actualizar la conexión desde HTTP.
 identity-permissions-storage-access-header = Cookies de sitios cruzados
 identity-permissions-storage-access-hint = Estas partes pueden usar cookies y datos de sitios cruzados mientras estás en este sitio.
+identity-permissions-storage-access-learn-more = Conocer más
 identity-permissions-reload-hint = Hay que recargar la página para que se apliquen los cambios.
 identity-permissions-empty = No ha dado permisos especiales a este sitio.
 identity-clear-site-data =
@@ -412,7 +433,7 @@ popup-select-microphone =
     .value = Micrófono a compartir:
     .accesskey = M
 popup-select-camera-device =
-    .value = Cámara
+    .value = Cámara:
     .accesskey = C
 popup-select-camera-icon =
     .tooltiptext = Cámara
@@ -493,6 +514,11 @@ urlbar-placeholder-with-name =
     .placeholder = Busque con { $name } o ingrese la dirección
 urlbar-remote-control-notification-anchor =
     .tooltiptext = El navegador está controlado remotamente
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = El navegador está bajo control remoto (razón: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Otorgó a este sitio web permisos adicionales.
 urlbar-switch-to-tab =
@@ -581,9 +607,6 @@ pointerlock-warning-no-domain = Este documento tiene el control de su puntero. P
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Parte de esta página falló.</strong> Para que { -brand-product-name } sepa sobre este problema y se arregle más rápido, enviá un informe.
-crashed-subframe-learnmore =
-    .label = Conocer más
-    .accesskey = o
 crashed-subframe-learnmore-link =
     .value = Conocer más
 crashed-subframe-submit =
@@ -596,8 +619,6 @@ bookmarks-show-all-bookmarks =
     .label = Mostrar todos los marcadores
 bookmarks-manage-bookmarks =
     .label = Administrar marcadores
-bookmarks-recent-bookmarks-panel =
-    .value = Marcadores recientes
 bookmarks-recent-bookmarks-panel-subheader = Marcadores recientes
 bookmarks-toolbar-chevron =
     .tooltiptext = Mostrar más marcadores

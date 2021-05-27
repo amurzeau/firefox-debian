@@ -11,6 +11,8 @@ newtab-settings-button =
 newtab-personalize-button-label = Personalizować
     .title = Nowy rajtark personalizować
     .aria-label = Nowy rajtark personalizować
+newtab-personalize-dialog-label =
+    .aria-label = Personalizować
 
 ## Search box component.
 
@@ -130,7 +132,7 @@ newtab-privacy-modal-link = Zhońće, kak priwatnosć w nowym rajtarku funguje
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = Zapołožku wotstronić
 # Bookmark is a verb here.
-newtab-menu-bookmark = Zapołožki składować
+newtab-menu-bookmark = Jako zapołožku składować
 
 ## Context Menu - Downloaded Menu. "Download" in these cases is not a verb,
 ## it is a noun. As in, "Copy the link that belongs to this downloaded item".
@@ -255,4 +257,4 @@ newtab-custom-close-button = Začinić
 # and non-essential but also not entirely trivial and useless.
 newtab-custom-snippets-title = Šlipki
 newtab-custom-snippets-subtitle = Pokiwy a nowinki wot { -vendor-short-name } a { -brand-product-name }
-newtab-custom-settings = Dlaše nastajenja rjadować
+newtab-custom-settings = Dalše nastajenja rjadować

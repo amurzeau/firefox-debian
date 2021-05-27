@@ -18,6 +18,7 @@ login-filter =
 create-login-button = Krouiñ un titour nevez
 fxaccounts-sign-in-text = Adkavit ho kerioù-tremen war ho trevnadoù all
 fxaccounts-sign-in-button = Kennaskit da { -sync-brand-short-name }
+fxaccounts-sign-in-sync-button = Kennaskañ evit goubredañ
 fxaccounts-avatar-button =
     .title = Merañ ar gont
 
@@ -73,11 +74,15 @@ about-logins-list-item-vulnerable-password-icon =
 
 login-intro-heading = Klask a rit ho titouroù kennaskañ? Arventennit { -sync-brand-short-name }.
 about-logins-login-intro-heading-logged-out = Klask a rit ho titouroù kennaskañ enroller? Arventennit { -sync-brand-short-name } pe enporzhit anezho.
+about-logins-login-intro-heading-logged-out2 = Klask a rit war-lec'h ho titouroù kennaskañ enrollet? Gweredekait Sync pe enporzhit anezho.
 about-logins-login-intro-heading-logged-in = N'eus bet kavet titour kennaskañ ebet.
 login-intro-description = M’ho peus enrollet ho titouroù kennaskañ { -brand-product-name } war un trevnad all, setu penaos kaout anezho amañ:
 login-intro-instruction-fxa = Krouit pe kennaskit d’ho { -fxaccount-brand-name } war an trevnad lec’h m’eo enrollet ho titouroù kennaskañ
 login-intro-instruction-fxa-settings = Gwiriekait ho peus diuzet ar boestoù kevaskañ Kennaskañ e arventennoù { -sync-brand-short-name }
 about-logins-intro-instruction-help = Kit war <a data-l10n-name="help-link">skoazell { -lockwise-brand-short-name }</a> evit kaout sikour
+login-intro-instructions-fxa = Krouit ur gont { -fxaccount-brand-name } pe kennaskit war un trevnad e-lec'h m'emañ ho titouroù kennaskañ enrollet.
+login-intro-instructions-fxa-settings = Mont betek Arventennoù > Sync > Gweredekaat ar goubredañ… Dibabit an titouroù kennaskañ.
+login-intro-instructions-fxa-help = Gweladennit skor <a data-l10n-name="help-link">{ -lockwise-brand-short-name }</a> evit kaout sikour.
 about-logins-intro-import = Mard eo enrollet ho titouroù kennaskañ en ur merdeer all e c’hallit <a data-l10n-name="import-link">enporzhiañ anezho e { -lockwise-brand-short-name }</a>
 about-logins-intro-import2 = Mard eo enrollet ho titouroù kennaskañ e diavaez { -brand-product-name } e c’hallit a data-l10n-name="import-browser-link">enporzhiañ anezho adalek ur merdeer all</a> pe <a data-l10n-name="import-file-link">adalek ur restr</a>
 
@@ -87,6 +92,7 @@ login-item-new-login-title = Krouiñ un titour kennaskañ nevez
 login-item-edit-button = Embann
 about-logins-login-item-remove-button = Dilemel
 login-item-origin-label = Chomlec’h al lec’hienn
+login-item-tooltip-message = Bezit sur e klot gant ar chomlec'h resis eus al lec'hiennoù lec'h ma kennaskit.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Anv arveriad
@@ -202,6 +208,7 @@ about-logins-confirm-export-dialog-title = Ezporzhiañ an titouroù kennaskañ
 about-logins-confirm-export-dialog-message = Enrollet e vo ar gerioù-tremen dindan ur stumm lennus (sk: g3rTremenF4ll) neuze e c’hallo bezañ lennet gant an holl a c’hall digeriñ ar restr ezporzhiet.
 about-logins-confirm-export-dialog-confirm-button = Ezporzhiañ…
 about-logins-alert-import-title = Echu eo gant an enporzhiañ
+about-logins-alert-import-message = Gwelout an diverrañ enporzhiañ berraet
 confirm-discard-changes-dialog-title = Dilezel ar c’hemmoù n’int ket bet enrollet?
 confirm-discard-changes-dialog-message = An holl c’hemmoù n’int ket bet enrollet a vo kollet.
 confirm-discard-changes-dialog-confirm-button = Dilezel
@@ -263,6 +270,13 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] Restr CSV
        *[other] Restr CSV
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] Teul TSV
+       *[other] Restr TSV
+    }
 
 ##
 ## Variables:
@@ -274,3 +288,16 @@ about-logins-import-dialog-error-title = Fazi enporzhiañ
 about-logins-import-dialog-error-learn-more = Gouzout hiroc’h
 about-logins-import-dialog-error-try-again = Klask en-dro…
 about-logins-import-dialog-error-cancel = Nullañ
+
+##
+## Variables:
+##  $field (String) - The name of the field from the CSV file for example url, username or password
+
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+
+## Logins import report page
+

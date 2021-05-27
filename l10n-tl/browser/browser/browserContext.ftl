@@ -88,10 +88,13 @@ toolbar-button-stop =
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
 
+## Firefox Account Button
+
+
 ## Save Page
 
 main-context-menu-page-save =
-    .label = I-save ang Pahina Bilang…
+    .label = i-Save ang Pahina Bilang…
     .accesskey = P
 toolbar-button-page-save =
     .label = { main-context-menu-page-save.label }
@@ -137,10 +140,10 @@ main-context-menu-bookmark-this-link =
     .label = i-Bookmark ang Link na Ito
     .accesskey = L
 main-context-menu-save-link =
-    .label = I-save ang Link Bilang…
+    .label = i-Save ang Link Bilang…
     .accesskey = k
 main-context-menu-save-link-to-pocket =
-    .label = I-save ang Link sa { -pocket-brand-name }
+    .label = i-Save ang Link sa { -pocket-brand-name }
     .accesskey = o
 
 ## The access keys for "Copy Link Location" and "Copy Email Address"
@@ -175,7 +178,7 @@ main-context-menu-media-pause =
 ##
 
 main-context-menu-media-mute =
-    .label = I-mute
+    .label = i-Mute
     .accesskey = M
 main-context-menu-media-unmute =
     .label = I-unmute
@@ -228,7 +231,7 @@ main-context-menu-media-pip =
     .label = Picture-in-Picture
     .accesskey = u
 main-context-menu-image-reload =
-    .label = I-reload ang Larawan
+    .label = i-Reload ang Larawan
     .accesskey = R
 main-context-menu-image-view =
     .label = Tingnan ang Larawan
@@ -249,7 +252,7 @@ main-context-menu-audio-copy-location =
     .label = Kopyahin ang Lokasyon ng Audio
     .accesskey = o
 main-context-menu-image-save-as =
-    .label = I-save ang Larawan Bilang...
+    .label = i-Save ang Larawan Bilang...
     .accesskey = v
 main-context-menu-image-email =
     .label = i-Email ang Larawan…
@@ -264,13 +267,13 @@ main-context-menu-image-desc =
     .label = Tingnan ang Paglalarawan
     .accesskey = D
 main-context-menu-video-save-as =
-    .label = I-save ang Video Bilang...
+    .label = i-Save ang Video Bilang...
     .accesskey = v
 main-context-menu-audio-save-as =
-    .label = I-Save ang Audio Bilang…
+    .label = i-Save ang Audio Bilang…
     .accesskey = v
 main-context-menu-video-image-save-as =
-    .label = I-save ang Snapshot Bilang…
+    .label = i-Save ang Snapshot Bilang…
     .accesskey = S
 main-context-menu-video-email =
     .label = i-Email ang Video…
@@ -285,7 +288,7 @@ main-context-menu-plugin-hide =
     .label = Itago ang plugin na ito
     .accesskey = H
 main-context-menu-save-to-pocket =
-    .label = I-save ang Pahina sa { -pocket-brand-name }
+    .label = i-Save ang Pahina sa { -pocket-brand-name }
     .accesskey = k
 main-context-menu-send-to-device =
     .label = Ipadala ang Pahina sa Device
@@ -329,7 +332,7 @@ main-context-menu-frame-bookmark =
     .label = i-Bookmark ang Frame na Ito
     .accesskey = m
 main-context-menu-frame-save-as =
-    .label = I-Save ang Frame Bilang…
+    .label = i-Save ang Frame Bilang…
     .accesskey = F
 main-context-menu-frame-print =
     .label = I-print ang Frame…
@@ -346,6 +349,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Ipakita ang Source Code ng Selection
     .accesskey = e
+main-context-menu-take-screenshot =
+    .label = Kumuha ng Screenshot
+    .accesskey = K
 main-context-menu-view-page-source =
     .label = Tingnan ang Source Code ng Pahina
     .accesskey = T

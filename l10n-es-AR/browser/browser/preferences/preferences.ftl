@@ -1018,16 +1018,19 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Equilibrado para protección y rendimiento. Las páginas se van a cargar normalmente.
 content-blocking-etp-strict-desc = Mayor protección, pero puede causar que algunos sitios o contenido no se carguen.
 content-blocking-etp-custom-desc = Elija qué rastreadores y secuencias de comandos quiere bloquear.
+content-blocking-etp-blocking-desc = { -brand-short-name } bloquea lo siguiente:
 content-blocking-private-windows = Rastreo de contenido en ventanas privadas
 content-blocking-cross-site-cookies = Cookies de sitios cruzados
+content-blocking-cross-site-cookies-in-all-windows = Cookies de sitios cruzados en todas las ventanas (incluye cookies de rastreo)
 content-blocking-cross-site-tracking-cookies = Cookies de rastreo de sitios cruzados
+content-blocking-all-cross-site-cookies-private-windows = Cookies de sitios cruzados en ventanas privadas
 content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies de rastreo de sitios cruzados, y aislación del resto de las cookies
 content-blocking-social-media-trackers = Rastreadores de redes sociales
 content-blocking-all-cookies = Todas las cookies
 content-blocking-unvisited-cookies = Cookies de sitios no visitados
 content-blocking-all-windows-tracking-content = Rastreo de contenido en todas las ventanas
 content-blocking-all-third-party-cookies = Todas las cookies de terceros
-content-blocking-cryptominers = Cryptominers
+content-blocking-cryptominers = Criptomineros
 content-blocking-fingerprinters = Detectores de huellas digitales
 content-blocking-warning-title = ¡Atención!
 content-blocking-and-isolating-etp-warning-description = Bloquear los rastreadores y aislar las cookies puede impactar en la funcionalidad de algunos sitios. Recargue una página con los rastreadores para cargar todo el contenido.
@@ -1054,8 +1057,8 @@ content-blocking-expand-section =
     .tooltiptext = Más información
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
-    .label = Cryptominers
-    .accesskey = y
+    .label = Criptomineros
+    .accesskey = i
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
 content-blocking-fingerprinters-label =
@@ -1140,6 +1143,8 @@ collection-backlogged-crash-reports =
     .label = Permitir que { -brand-short-name } envíe informes de fallos pendientes en su nombre
     .accesskey = n
 collection-backlogged-crash-reports-link = Conocer más
+collection-backlogged-crash-reports-with-link = Permitir que { -brand-short-name } envíe informes de fallos acumulados en su nombre <a data-l10n-name="crash-reports-link">Conocer más</a>
+    .accesskey = c
 
 ## Privacy Section - Security
 ##

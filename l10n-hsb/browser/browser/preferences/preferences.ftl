@@ -1026,9 +1026,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Wuwaženy za škit a wukon. Strony so normalnje začitaja.
 content-blocking-etp-strict-desc = Mócniši škit, ale móže zawinować, zo někotre sydła abo wobsah hižo njefunguja.
 content-blocking-etp-custom-desc = Wubjerće, kotre přesćěhowaki a skripty maja so blokować.
+content-blocking-etp-blocking-desc = { -brand-short-name } tole blokuje:
 content-blocking-private-windows = Slědowacy škit w priwatnych woknach
 content-blocking-cross-site-cookies = Placki wjacorych sydłow
+content-blocking-cross-site-cookies-in-all-windows = Placki wjacorych sydłow we wšěch woknach (wobasahuje tež slědowanske placki)
 content-blocking-cross-site-tracking-cookies = Slědowace placki mjez sydłami
+content-blocking-all-cross-site-cookies-private-windows = Placki wjacorych sydłow w priwatnych woknach
 content-blocking-cross-site-tracking-cookies-plus-isolate = Wjacore sydła slědowace placki a izolowanje zbytnych plackow
 content-blocking-social-media-trackers = Přesćěhowaki socialnych medijow
 content-blocking-all-cookies = Wšě placki
@@ -1145,9 +1148,11 @@ addon-recommendations-link = Dalše informacije
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Datowe rozprawjenje je znjemóžnjene za tutu programowu konfiguraciju
 collection-backlogged-crash-reports =
-    .label = { -brand-short-name } dowolić, njewobdźěłane spadowe rozprawy we wašim mjenje pósłać
+    .label = { -brand-short-name } dowolić, njepósłane spadowe rozprawy we wašim mjenje pósłać
     .accesskey = r
 collection-backlogged-crash-reports-link = Dalše informacije
+collection-backlogged-crash-reports-with-link = { -brand-short-name } dowolić, zo bychu so njepósłane spadowe rozprawy we wašim mjenje pósłali <a data-l10n-name="crash-reports-link">Dalše informacije</a>
+    .accesskey = d
 
 ## Privacy Section - Security
 ##

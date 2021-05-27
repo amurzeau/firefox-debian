@@ -88,6 +88,12 @@ toolbar-button-stop =
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
 
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
+
 ## Save Page
 
 main-context-menu-page-save =
@@ -102,6 +108,12 @@ main-context-menu-bookmark-add =
     .aria-label = Lakaat ur sined war ar bajenn-mañ
     .accesskey = b
     .tooltiptext = Lakaat ur sined war ar bajenn-mañ
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Kemmañ ar sined
+    .accesskey = K
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -158,6 +170,9 @@ main-context-menu-copy-email =
 main-context-menu-copy-link =
     .label = Eilañ lec'hiadur an ere
     .accesskey = l
+main-context-menu-copy-link-simple =
+    .label = Eilañ an ere
+    .accesskey = E
 
 ## Media (video/audio) controls
 ##
@@ -200,6 +215,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Tizh divuzul (2×)
     .accesskey = d
+main-context-menu-media-play-speed-2 =
+    .label = Tizhder
+    .accesskey = T
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = Dol
     .accesskey = D
@@ -236,6 +264,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = Gwelout ar video
     .accesskey = i
+main-context-menu-image-view-new-tab =
+    .label = Digeriñ ar skeudenn en un ivinell nevez
+    .accesskey = s
+main-context-menu-video-view-new-tab =
+    .label = Digeriñ ar video en un ivinell nevez
+    .accesskey = v
 main-context-menu-image-copy =
     .label = Eilañ ar skeudenn
     .accesskey = r
@@ -248,6 +282,15 @@ main-context-menu-video-copy-location =
 main-context-menu-audio-copy-location =
     .label = Eilañ lec'hiadur ar restr aodio
     .accesskey = E
+main-context-menu-image-copy-link =
+    .label = Eilañ ere ar skeudenn
+    .accesskey = E
+main-context-menu-video-copy-link =
+    .label = Eilañ ere ar video
+    .accesskey = E
+main-context-menu-audio-copy-link =
+    .label = Eilañ ere an aodio
+    .accesskey = E
 main-context-menu-image-save-as =
     .label = Enrollañ ar skeudenn evel…
     .accesskey = s
@@ -257,6 +300,9 @@ main-context-menu-image-email =
 main-context-menu-image-set-as-background =
     .label = Arventennañ evel Drekleur ar burev…
     .accesskey = l
+main-context-menu-image-set-image-as-background =
+    .label = Lakaat ar skeudenn da zrekleur ar vurev…
+    .accesskey = z
 main-context-menu-image-info =
     .label = Gwelout stlennoù ar skeudenn
     .accesskey = w
@@ -301,9 +347,21 @@ main-context-menu-generate-new-password =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+main-context-menu-use-saved-password =
+    .label = Implijout ar ger-tremen enrollet
+    .accesskey = g
 
 ##
 
+main-context-menu-suggest-strong-password =
+    .label = Kinnig ur ger-tremen kreñv…
+    .accesskey = k
+main-context-menu-manage-logins =
+    .label = Merañ an titouroù kennaskañ…
+    .accesskey = M
+main-context-menu-manage-logins2 =
+    .label = Merañ an titouroù kennaskañ
+    .accesskey = M
 main-context-menu-keyword =
     .label = Ouzhpennañ ur ger-alc'hwez evit ar c'hlask-mañ …
     .accesskey = k
@@ -346,6 +404,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Gwelout tarzh an diuzad
     .accesskey = e
+main-context-menu-take-screenshot =
+    .label = Kemer un dapadenn
+    .accesskey = K
 main-context-menu-view-page-source =
     .label = Gwelout tarzh ar bajennad
     .accesskey = t
@@ -361,6 +422,9 @@ main-context-menu-bidi-switch-page =
 main-context-menu-inspect-element =
     .label = Ensellout an elfenn
     .accesskey = E
+main-context-menu-inspect =
+    .label = Ensellout
+    .accesskey = s
 main-context-menu-inspect-a11y-properties =
     .label = Ensellout ar perzhioù haezadusted
 main-context-menu-eme-learn-more =

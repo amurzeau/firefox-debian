@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = „{ $engineName }” hozzáadása
+    .tooltiptext = „{ $engineName }” keresőszolgáltatás hozzáadása
+    .aria-label = „{ $engineName }” keresőszolgáltatás hozzáadása
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Keresőszolgáltatás hozzáadása
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Oldalinformációk erről: { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = A(z) { $host } kapcsolatának biztonsága
 identity-connection-not-secure = A kapcsolat nem biztonságos
 identity-connection-secure = A kapcsolat biztonságos
+identity-connection-failure = Kapcsolódási hiba
 identity-connection-internal = Ez egy biztonságos { -brand-short-name } oldal.
 identity-connection-file = Ez az oldal a számítógépén van tárolva.
 identity-extension-page = Ez az oldal kiegészítőből lett betöltve.
@@ -319,6 +339,7 @@ identity-https-only-info-turn-off2 = Ha az oldal nem megfelelően működik, leh
 identity-https-only-info-no-upgrade = Nem lehet frissíteni a kapcsolatot HTTP-ről.
 identity-permissions-storage-access-header = Webhelyek közötti sütik
 identity-permissions-storage-access-hint = Ezek a felek használhatják a webhelyek közötti sütiket és a webhely adatait, amíg Ön ezen a webhelyen tartózkodik.
+identity-permissions-storage-access-learn-more = További tudnivalók
 identity-permissions-reload-hint = Lehet hogy újra kell töltenie az oldalt a változások érvényesítéséhez.
 identity-permissions-empty = Nem adott speciális engedélyeket ennek az oldalnak.
 identity-clear-site-data =
@@ -493,6 +514,11 @@ urlbar-placeholder-with-name =
     .placeholder = Keressen a(z) { $name } keresővel vagy adjon meg egy címet
 urlbar-remote-control-notification-anchor =
     .tooltiptext = A böngészőt távolról irányítják
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = A böngésző távvezérlés alatt áll (ok: { $component })
 urlbar-permissions-granted =
     .tooltiptext = További engedélyeket adott ennek az oldalnak.
 urlbar-switch-to-tab =
@@ -581,9 +607,6 @@ pointerlock-warning-no-domain = Ez a dokumentum vezérli az egérmutatóját. Ny
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Az oldal egy része összeomlott.</strong> Küldjön egy jelentést a { -brand-product-name } fejlesztőinek, hogy gyorsabban elháríthassák a problémát.
-crashed-subframe-learnmore =
-    .label = További tudnivalók
-    .accesskey = T
 crashed-subframe-learnmore-link =
     .value = További tudnivalók
 crashed-subframe-submit =
@@ -596,8 +619,6 @@ bookmarks-show-all-bookmarks =
     .label = Minden könyvjelző megjelenítése
 bookmarks-manage-bookmarks =
     .label = Könyvjelzők kezelése
-bookmarks-recent-bookmarks-panel =
-    .value = Friss könyvjelzők
 bookmarks-recent-bookmarks-panel-subheader = Friss könyvjelzők
 bookmarks-toolbar-chevron =
     .tooltiptext = További könyvjelzők megjelenítése

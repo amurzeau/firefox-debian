@@ -239,6 +239,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName }（{ $alias }）
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = 添加“{ $engineName }”
+    .tooltiptext = 添加搜索引擎“{ $engineName }”
+    .aria-label = 添加搜索引擎“{ $engineName }”
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = 添加搜索引擎
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -281,8 +293,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = 网站信息：{ $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = 连接安全性：{ $host }
 identity-connection-not-secure = 不安全连接
 identity-connection-secure = 安全连接
+identity-connection-failure = 连接失败
 identity-connection-internal = 这是安全的 { -brand-short-name } 页面。
 identity-connection-file = 此页面存储在您的计算机上。
 identity-extension-page = 此页面是扩展页面。
@@ -307,6 +327,7 @@ identity-https-only-info-turn-off2 = 若页面看起来不正常，则可能需�
 identity-https-only-info-no-upgrade = 无法将网站连接从 HTTP 升级。
 identity-permissions-storage-access-header = 跨网站 Cookie
 identity-permissions-storage-access-hint = 当您在此网站上时，以下各方可以使用跨网站 Cookie 和网站数据。
+identity-permissions-storage-access-learn-more = 详细了解
 identity-permissions-reload-hint = 您可能需要重新载入此页面以应用更改。
 identity-permissions-empty = 您尚未授予此站点任何权限。
 identity-clear-site-data =
@@ -478,6 +499,11 @@ urlbar-placeholder-with-name =
     .placeholder = 使用 { $name } 搜索，或者输入网址
 urlbar-remote-control-notification-anchor =
     .tooltiptext = 浏览器正被远程控制
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = 浏览器受到远程控制（原因：{ $component }）
 urlbar-permissions-granted =
     .tooltiptext = 您已授予此站点更多权限。
 urlbar-switch-to-tab =
@@ -566,9 +592,6 @@ pointerlock-warning-no-domain = 此文档已控制您的鼠标指针。按 Esc �
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>此页面中的部分内容出现崩溃。</strong>您可以向 { -brand-product-name } 报告此问题，以尽快修复。
-crashed-subframe-learnmore =
-    .label = 详细了解
-    .accesskey = L
 crashed-subframe-learnmore-link =
     .value = 详细了解
 crashed-subframe-submit =
@@ -581,8 +604,6 @@ bookmarks-show-all-bookmarks =
     .label = 管理所有书签
 bookmarks-manage-bookmarks =
     .label = 管理书签
-bookmarks-recent-bookmarks-panel =
-    .value = 最近的书签
 bookmarks-recent-bookmarks-panel-subheader = 最近的书签
 bookmarks-toolbar-chevron =
     .tooltiptext = 显示更多书签
