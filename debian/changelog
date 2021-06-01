@@ -1,3 +1,14 @@
+firefox (89.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2021-23, also known as:
+    CVE-2021-29960, CVE-2021-29961, CVE-2021-29959, CVE-2021-29967,
+    CVE-2021-29966.
+
+  * debian/control*: Bump nss and cbindgen build dependency.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 02 Jun 2021 05:36:18 +0900
+
 firefox (88.0.1-1) unstable; urgency=medium
 
   * New upstream release.
