@@ -2,6 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+tab-context-new-tab =
+    .label = 새 탭
+    .accesskey = w
 reload-tab =
     .label = 탭 새로 고침
     .accesskey = R
@@ -66,20 +69,11 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = 여러 탭 닫기
     .accesskey = M
-tab-context-share-url =
-    .label = 공유
-    .accesskey = h
-tab-context-share-more =
-    .label = 더보기…
-
-## Variables:
-##  $tabCount (Number): the number of tabs that are affected by the action.
-
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
-            [1] 탭 닫기 취소
-           *[other] 탭 닫기 취소
+            [1] 닫은 탭 다시 열기
+           *[other] 닫은 탭 다시 열기
         }
     .accesskey = U
 close-tab =
@@ -94,6 +88,15 @@ move-tabs =
 move-tab =
     .label = 탭 이동
     .accesskey = v
+tab-context-share-url =
+    .label = 공유
+    .accesskey = h
+tab-context-share-more =
+    .label = 더보기…
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-reopen-closed-tabs =
     .label =
         { $tabCount ->

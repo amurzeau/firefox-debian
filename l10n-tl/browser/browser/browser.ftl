@@ -179,7 +179,7 @@ page-action-send-tabs-urlbar =
            *[other] Magpadala ng { $tabCount } Tab sa Device
         }
 page-action-pocket-panel =
-    .label = I-save ang Pahina sa { -pocket-brand-name }
+    .label = i-Save ang Pahina sa { -pocket-brand-name }
 page-action-copy-url-panel =
     .label = Kopyahin ang Link
 page-action-copy-url-urlbar =
@@ -201,9 +201,9 @@ page-action-send-tab-not-ready =
 # string to express the idea that this is a lightweight and reversible
 # action that keeps your tab where you can reach it easily.
 page-action-pin-tab-panel =
-    .label = I-pin ang Tab
+    .label = i-Pin ang Tab
 page-action-pin-tab-urlbar =
-    .tooltiptext = I-pin ang Tab
+    .tooltiptext = i-Pin ang Tab
 page-action-unpin-tab-panel =
     .label = I-unpin ang Tab
 page-action-unpin-tab-urlbar =
@@ -244,6 +244,10 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Magdagdag ng search engine
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -286,6 +290,13 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Impormasyon ng Site para sa { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Connection Security for { $host }
 identity-connection-not-secure = Hindi ligtas ang koneksyon
 identity-connection-secure = Ligtas na koneksyon
 identity-connection-internal = Ito ay secure na { -brand-short-name } na pahina.
@@ -447,7 +458,7 @@ urlbar-go-button =
 urlbar-page-action-button =
     .tooltiptext = Page actions
 urlbar-pocket-button =
-    .tooltiptext = I-save sa { -pocket-brand-name }
+    .tooltiptext = i-Save sa { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -503,9 +514,6 @@ pointerlock-warning-no-domain = Ang dokumentong ito ay may kontrol sa iyong poin
 
 ## Subframe crash notification
 
-crashed-subframe-learnmore =
-    .label = Alamin
-    .accesskey = l
 
 ## Bookmarks panels, menus and toolbar
 
@@ -567,11 +575,20 @@ library-bookmarks-menu =
 ## Pocket toolbar button
 
 save-to-pocket-button =
-    .label = I-save sa { -pocket-brand-name }
-    .tooltiptext = I-save sa { -pocket-brand-name }
+    .label = i-Save sa { -pocket-brand-name }
+    .tooltiptext = i-Save sa { -pocket-brand-name }
 
 ## Customize Toolbar Buttons
 
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Mga Setting
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Buksan ang mga setting ({ $shortcut })
+           *[other] Buksan ang mga setting
+        }
 
 ## More items
 

@@ -7,12 +7,12 @@ Subject: Add debian/extra-stuff to upstream build system directory traversal
  1 file changed, 3 insertions(+)
 
 diff --git a/moz.build b/moz.build
-index 7cb35bf..d23263f 100644
+index 1fe343e..9ab3669 100644
 --- a/moz.build
 +++ b/moz.build
-@@ -195,4 +195,7 @@ SPHINX_TREES["setup"] = "docs/setup"
+@@ -197,4 +197,7 @@ SPHINX_TREES["crash-reporting"] = "docs/crash-reporting"
  
- SPHINX_TREES["crash-reporting"] = "docs/crash-reporting"
+ SPHINX_TREES["performance"] = "docs/performance"
  
 +if not CONFIG["LIBXUL_SDK"]:
 +    DIRS += ["debian/extra-stuff"]

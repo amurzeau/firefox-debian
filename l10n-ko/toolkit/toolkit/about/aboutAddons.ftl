@@ -10,6 +10,7 @@ search-header =
     .searchbuttonlabel = 검색
 search-header-shortcut =
     .key = f
+list-empty-get-extensions-message = <a data-l10n-name="get-extensions">{ $domain }</a>에서 확장 기능 및 테마 받기
 list-empty-installed =
     .value = 설치한 부가 기능이 없음
 list-empty-available-updates =
@@ -274,11 +275,11 @@ privacy-policy = 개인정보처리방침
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
 #   $author (string) - The name of the add-on developer.
-created-by-author = 제작: <a data-l10n-name="author">{ $author }</a>
+created-by-author = 제작자: <a data-l10n-name="author">{ $author }</a>
 # Shows the number of daily users of the add-on.
 # Variables:
 #   $dailyUsers (number) - The number of daily users.
-user-count = 사용자: { $dailyUsers }명
+user-count = 사용자 { $dailyUsers }명
 install-extension-button = { -brand-product-name }에 추가
 install-theme-button = 테마 설치
 # The label of the button that appears after installing an add-on. Upon click,
@@ -323,7 +324,7 @@ locale-disabled-heading = 사용 안 함
 ask-to-activate-button = 활성화 요청
 always-activate-button = 항상 사용
 never-activate-button = 사용 안 함
-addon-detail-author-label = 제작
+addon-detail-author-label = 제작자
 addon-detail-version-label = 버전
 addon-detail-last-updated-label = 마지막 업데이트
 addon-detail-homepage-label = 홈페이지

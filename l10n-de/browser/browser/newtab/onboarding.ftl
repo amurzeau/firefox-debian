@@ -180,7 +180,7 @@ onboarding-multistage-pin-default-subtitle = Schnelles, sicheres und privates Su
 onboarding-multistage-pin-default-waiting-subtitle = Wähle { -brand-short-name } als Webbrowser, wenn deine Einstellungen sich öffnen
 # The "settings" here refers to "Windows 10 Settings App" and not the browser's
 onboarding-multistage-pin-default-help-text = Dies heftet { -brand-short-name } an die Taskleiste und öffnet die Einstellungen
-onboarding-multistage-pin-default-primary-button-label = { -brand-short-name } zu meinem Standardbrowser machen
+onboarding-multistage-pin-default-primary-button-label = { -brand-short-name } als primären Browser festlegen
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "more" should stay inside the span.
 onboarding-multistage-import-header = Importiere deine Passwörter, Lesezeichen und <span data-l10n-name="zap">mehr</span>
@@ -200,7 +200,6 @@ onboarding-welcome-steps-indicator =
 # automatically added to the text inside it. "look" should stay inside the span.
 onboarding-multistage-theme-header = Wähle einen <span data-l10n-name="zap">Look</span>
 onboarding-multistage-theme-subtitle = Personalisiere { -brand-short-name } mit einem Theme.
-onboarding-multistage-theme-primary-button-label = Theme speichern
 onboarding-multistage-theme-primary-button-label2 = Fertig
 onboarding-multistage-theme-secondary-button-label = Jetzt nicht
 # Automatic theme uses operating system color settings
@@ -255,3 +254,92 @@ onboarding-multistage-theme-description-alpenglow =
     .aria-description =
         Ein farbenfrohes Erscheinungsbild für Schaltflächen,
         Menüs und Fenster verwenden.
+
+## Multistage MR1 onboarding strings (MR1 about:welcome pages)
+
+# "Hero Text" displayed on left side of welcome screen.
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
+# It also signals the passion users bring to Firefox, how they use
+# Firefox to pursue those passions, as well as the boldness in their
+# choice to use Firefox over a larger competitor browser.
+# An alternative title for localization is: "It starts here".
+# This text can be formatted to span multiple lines as needed.
+mr1-welcome-screen-hero-text =
+    Wenn der Funke
+    zündet
+# Caption for background image in about:welcome. "Soraya Osorio" is the name
+# of the person and shouldn't be translated.
+mr1-onboarding-welcome-image-caption = Soraya Osorio – Möbeldesignerin, Firefox-Fan
+# This button will open system settings to turn on prefers-reduced-motion
+mr1-onboarding-reduce-motion-button-label = Animationen deaktivieren
+mr1-onboarding-welcome-header = Willkommen bei { -brand-short-name }
+mr1-onboarding-set-default-pin-primary-button-label = { -brand-short-name } als Hauptbrowser festlegen
+    .title = Setzt { -brand-short-name } als Standardbrowser und heftet ihn an die Taskleiste
+mr1-onboarding-set-default-only-primary-button-label = { -brand-short-name } als Standardbrowser festlegen
+mr1-onboarding-set-default-secondary-button-label = Nicht jetzt
+mr1-onboarding-sign-in-button-label = Anmelden
+mr1-onboarding-import-header = Nehme alles mit
+mr1-onboarding-import-subtitle = Importiere deine Passwörter, <br/>Lesezeichen und mehr.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
+# Variables:
+#   $previous (Str) - Previous browser name, such as Edge, Chrome
+mr1-onboarding-import-primary-button-label-attribution = Aus { $previous } importieren
+# This string will be used in cases where we can't detect the previous browser name.
+mr1-onboarding-import-primary-button-label-no-attribution = Aus vorherigem Browser importieren
+mr1-onboarding-import-secondary-button-label = Nicht jetzt
+mr1-onboarding-theme-header = Ganz dein Style
+mr1-onboarding-theme-subtitle = Personalisiere { -brand-short-name } mit einem Theme.
+mr1-onboarding-theme-primary-button-label = Theme speichern
+mr1-onboarding-theme-secondary-button-label = Nicht jetzt
+# System theme uses operating system color settings
+mr1-onboarding-theme-label-system = System-Theme
+mr1-onboarding-theme-label-light = Hell
+mr1-onboarding-theme-label-dark = Dunkel
+# "Alpenglow" here is the name of the theme, and should be kept in English.
+mr1-onboarding-theme-label-alpenglow = Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of system theme
+mr1-onboarding-theme-tooltip-system =
+    .title =
+        Dem Theme des Betriebssystems
+        für Schaltflächen, Menüs und Fenster folgen.
+# Input description for system theme
+mr1-onboarding-theme-description-system =
+    .aria-description =
+        Dem Theme des Betriebssystems
+        für Schaltflächen, Menüs und Fenster folgen.
+# Tooltip displayed on hover of light theme
+mr1-onboarding-theme-tooltip-light =
+    .title =
+        Ein helles Theme für Schaltflächen,
+        Menüs und Fenster verwenden.
+# Input description for light theme
+mr1-onboarding-theme-description-light =
+    .aria-description =
+        Ein helles Theme für Schaltflächen,
+        Menüs und Fenster verwenden.
+# Tooltip displayed on hover of dark theme
+mr1-onboarding-theme-tooltip-dark =
+    .title =
+        Ein dunkles Theme für Schaltflächen,
+        Menüs und Fenster verwenden.
+# Input description for dark theme
+mr1-onboarding-theme-description-dark =
+    .aria-description =
+        Ein dunkles Theme für Schaltflächen,
+        Menüs und Fenster verwenden.
+# Tooltip displayed on hover of Alpenglow theme
+mr1-onboarding-theme-tooltip-alpenglow =
+    .title =
+        Ein dynamisches, farbenfrohes Theme
+        für Schaltflächen, Menüs und Fenster verwenden.
+# Input description for Alpenglow theme
+mr1-onboarding-theme-description-alpenglow =
+    .aria-description =
+        Ein dynamisches, farbenfrohes Theme
+        für Schaltflächen, Menüs und Fenster verwenden.

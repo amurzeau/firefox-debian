@@ -64,3 +64,27 @@ appmenu-help-exit-troubleshoot-mode =
     .label = Probleemoplossingsmodus útskeakelje
 appmenu-help-more-troubleshooting-info =
     .label = Mear probleemoplossingsynformaasje
+
+## Action Button Context Menu
+
+toolbar-context-menu-manage-extension =
+    .label = Utwreiding beheare
+    .accesskey = U
+toolbar-context-menu-remove-extension =
+    .label = Utwreiding fuortsmite
+    .accesskey = f
+
+## Message headers
+
+message-header-address-in-address-book-icon =
+    .alt = Adres stiet yn it adresboek
+message-header-address-not-in-address-book-icon =
+    .alt = Adres stiet net yn it adresboek
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = { $name } fuortsmite?
+addon-removal-confirmation-button = Fuortsmite
+addon-removal-confirmation-message = { $name } en de byhearrende konfiguraasje en gegevens út { -brand-short-name } fuortsmite?

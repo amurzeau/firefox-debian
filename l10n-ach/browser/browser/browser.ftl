@@ -219,6 +219,10 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Ter calo Injin Yeny Makwongo pi Dirica me Mung
     .accesskey = D
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Med injin me yeny
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -252,6 +256,13 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Ngec me Kakube pi { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Ber bedo me Kube pi { $host }
 identity-connection-not-secure = Kube pe tye ki ber bedo
 identity-connection-secure = Kube tye ki ber bedo
 identity-connection-internal = Man potbuk me { -brand-short-name } matye ki ber bedo.

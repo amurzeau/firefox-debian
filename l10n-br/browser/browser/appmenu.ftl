@@ -5,8 +5,6 @@
 
 ## App Menu
 
-appmenuitem-update-banner =
-    .label-update-downloading = O pellgargañ hizivadenn { -brand-shorter-name }
 appmenuitem-protection-dashboard-title = Taolenn-stur ar gwarezioù
 appmenuitem-customize-mode =
     .label = Personelaat…
@@ -17,6 +15,38 @@ appmenuitem-new-window =
     .label = Prenestr nevez
 appmenuitem-new-private-window =
     .label = Prenestr merdeiñ prevez nevez
+appmenuitem-passwords =
+    .label = Gerioù-tremen
+appmenuitem-addons-and-themes =
+    .label = Enlugelladoù ha temoù
+appmenuitem-find-in-page =
+    .label = Klask er bajenn…
+appmenuitem-more-tools =
+    .label = Ostilhoù ouzhpenn
+appmenuitem-exit =
+    .label = Kuitaat
+appmenu-menu-button-closed =
+    .tooltiptext = Digeriñ lañser an arloadoù
+    .label = { -brand-shorter-name }
+appmenu-menu-button-opened =
+    .tooltiptext = Serriñ lañser an arloadoù
+    .label = { -brand-shorter-name }
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Kuitaat
+           *[other] Kuitaat
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Digeriñ lañser an arloadoù
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Serriñ lañser an arloadoù
+    .label = { -brand-short-name }
+# Settings is now used to access the browser settings across all platforms,
+# instead of Options or Preferences.
+appmenuitem-settings =
+    .label = Arventennoù
 
 ## Zoom and Fullscreen Controls
 
@@ -31,6 +61,18 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Goubredañ bremañ
+appmenu-remote-tabs-turn-on-sync =
+    .label = Gweredekaat ar c’houbredañ…
+appmenuitem-fxa-toolbar-sync-now2 = Goubredañ bremañ
+appmenuitem-fxa-manage-account = Merañ ar gont
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
+appmenu-fxa-sync-and-save-data =
+    .value = Goubredañ hag enrollañ ar roadennoù
+appmenu-fxa-sync-and-save-data2 = Goubredañ hag enrollañ ar roadennoù
+appmenu-fxa-signed-in-label = Kennaskañ
+appmenu-fxa-show-more-tabs = Diskouez muioc'h a ivinelloù
 appmenuitem-save-page =
     .label = Enrollañ ar bajenn evel…
 
@@ -51,9 +93,13 @@ profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = Diskouez muioc'h a ditouroù
+profiler-popup-description-title =
+    .value = Enrollañ, dielfennañ, rannañ
 profiler-popup-learn-more = Gouzout hiroc’h
 profiler-popup-settings =
     .value = Arventennoù
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings = Kemmañ an arventennoù…
 profiler-popup-recording-screen = Oc’h enrollañ…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
@@ -76,32 +122,26 @@ profiler-popup-capture-shortcut =
 
 ## History panel
 
+appmenu-manage-history =
+    .label = Merañ ar roll istor
+appmenu-reopen-all-tabs = Digeriñ en-dro an holl ivinelloù
+appmenu-reopen-all-windows = Digeriñ en-dro an holl prenestroù
 
 ## Help panel
 
+appmenu-help-header =
+    .title = Skoazell { -brand-shorter-name }
 appmenu-about =
     .label = A-zivout { -brand-shorter-name }
     .accesskey = A
-appmenu-help-troubleshooting-info =
-    .label = Titouroù disac'hañ
-    .accesskey = T
-appmenu-help-taskmanager =
-    .label = Ardoer trevelloù
+appmenu-get-help =
+    .label = Kaout skoazell
+    .accesskey = s
 appmenu-help-report-site-issue =
     .label = Danevell kudennoù al lec'hienn…
 appmenu-help-feedback-page =
     .label = Reiñ ho meno…
     .accesskey = m
-
-## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
-## are mutually exclusive, so it's possible to use the same accesskey for both.
-
-appmenu-help-safe-mode-without-addons =
-    .label = Adloc'hañ gant an askouezhioù diweredekaet…
-    .accesskey = r
-appmenu-help-safe-mode-with-addons =
-    .label = Adloc'hañ gant an askouezhioù diweredekaet
-    .accesskey = r
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
@@ -119,5 +159,8 @@ appmenu-help-not-deceptive =
 
 ## More Tools
 
+appmenu-customizetoolbar =
+    .label = Personelaat ar varrenn ostilhoù…
 appmenu-taskmanager =
     .label = Ardoer trevelloù
+appmenu-developer-tools-subheader = Ostilhoù ar merdeer

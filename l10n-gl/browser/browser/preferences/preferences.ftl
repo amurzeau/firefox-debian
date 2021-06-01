@@ -58,6 +58,9 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Sincronizar
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = Experimentos de { -brand-short-name }
 category-experimental =
     .tooltiptext = Experimentos de { -brand-short-name }
@@ -662,10 +665,13 @@ containers-remove-button =
 
 sync-signedout-caption = Leve a Web con vostede
 sync-signedout-description = Sincronice os marcadores, o historial, as lapelas, os contrasinais, os complementos e as preferencias en todos os seus dispositivos.
-sync-signedout-description2 = Sincronice os marcadores, o historial, as lapelas, os contrasinais, os complementos e a configuración en todos os seus dispositivos.
 sync-signedout-account-signin2 =
     .label = Identifíquese no { -sync-brand-short-name }…
     .accesskey = i
+sync-signedout-description2 = Sincronice os marcadores, o historial, as lapelas, os contrasinais, os complementos e a configuración en todos os seus dispositivos.
+sync-signedout-account-signin3 =
+    .label = Inicie sesión para sincronizar ...
+    .accesskey = I
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -705,6 +711,9 @@ prefs-sync-setup =
     .label = Configurar { -sync-brand-short-name } ...
     .accesskey = C
 prefs-sync-offer-setup-label = Sincronice os marcadores, o historial, as lapelas, os contrasinais, os complementos e as preferencias en todos os seus dispositivos.
+prefs-sync-turn-on-syncing =
+    .label = Activar a sincronización ...
+    .accesskey = s
 prefs-sync-offer-setup-label2 = Sincronice os marcadores, o historial, as lapelas, os contrasinais, os complementos e a configuración en todos os seus dispositivos.
 prefs-sync-now =
     .labelnotsyncing = Sincronizar agora
@@ -1009,9 +1018,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Equilibrado para a protección e o rendemento. As páxinas cargaranse normalmente.
 content-blocking-etp-strict-desc = Unha protección máis forte, pero pode atrapallar algúns sitios ou contido.
 content-blocking-etp-custom-desc = Escolla os rastreadores e scripts que bloquear.
+content-blocking-etp-blocking-desc = { -brand-short-name } bloquea o seguinet:
 content-blocking-private-windows = Tracexamento de contido en xanelas privadas
 content-blocking-cross-site-cookies = Rastrexadores entre sitios
+content-blocking-cross-site-cookies-in-all-windows = Cookies entre sitios en todas as xanelas  (inclúe cookies de rastrexo)
 content-blocking-cross-site-tracking-cookies = Cookies de seguimento entre sitios
+content-blocking-all-cross-site-cookies-private-windows = Cookies entre sitios en xanelas privadas
 content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies de rastrexo entre sitios e illar as cookies restantes
 content-blocking-social-media-trackers = Rastrexadores de redes sociais
 content-blocking-all-cookies = Todas as cookies
@@ -1131,6 +1143,8 @@ collection-backlogged-crash-reports =
     .label = Permitir que { -brand-short-name } envíe informes de erros pendentes no seu nome
     .accesskey = m
 collection-backlogged-crash-reports-link = Obter máis información
+collection-backlogged-crash-reports-with-link = Permitir que o { -brand-short-name } envíe informes de fallo atrasados no seu nome <a data-l10n-name="crash-reports-link">Máis información</a>
+    .accesskey = P
 
 ## Privacy Section - Security
 ##

@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = افزودن «{ $engineName }»
+    .tooltiptext = افزودن موتور جست‌وجوی «{ $engineName }»
+    .aria-label = افزودن موتور جست‌وجوی «{ $engineName }»
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = افزودن موتور جست‌وجو
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -264,6 +276,8 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = اضافه کردن نشانک
+bookmarks-edit-bookmark = ویرایش نشانک
 bookmark-panel-cancel =
     .label = لغو
     .accesskey = C
@@ -281,6 +295,8 @@ bookmark-panel-show-editor-checkbox =
     .accesskey = S
 bookmark-panel-done-button =
     .label = انجام شد
+bookmark-panel-save-button =
+    .label = ذخیره
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -289,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = اطلاعات سایت برای { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = امنیتِ اتصال برای { $host }
 identity-connection-not-secure = اتصال امن نیست
 identity-connection-secure = اتصال امن است
+identity-connection-failure = شکست در برقراری ارتباط
 identity-connection-internal = این یک صفحهٔ امن { -brand-short-name } است.
 identity-connection-file = این صفحه بر روی رایانه شما ذخیره شده است.
 identity-extension-page = این صفحه توسط یک افزونه بارگیری شده است.
@@ -313,6 +337,9 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = اگر می‌خواهید در صورت امکان { -brand-short-name } اتصال را ارتقا دهد، حالت فقط HTTPS را برای این سایت روشن کنید.
 identity-https-only-info-turn-off2 = اگر صفحه خراب به نظر می‌رسد، ممکن است بخواهید حالت فقط HTTPS را برای این سایت خاموش کنید تا سایت در حال غیر امن HTTP بارگیری شود.
 identity-https-only-info-no-upgrade = ارتقا اتصال از HTTP امکان‌پذیر نبود.
+identity-permissions-storage-access-header = کوکی‌های بین‌پایگاهی
+identity-permissions-storage-access-hint = این سازمان‌ها می‌توانند از کوکی‌های بین‌پایگاهی و داده‌های سایت‌ها در حالی که شما در این سایت هستید استفاده کنند.
+identity-permissions-storage-access-learn-more = اطلاعات بیشتر
 identity-permissions-reload-hint = ممکن است لازم باشد که صفحه را برای اعمال تغییرات دوباره بارگیری کنید.
 identity-permissions-empty = شما به این سایت هیچ دسترسی خاصی نداده‌اید.
 identity-clear-site-data =
@@ -371,6 +398,21 @@ browser-tab-audio-pip = تصویر در تصویر
 ## Variables:
 ##  $count (number): number of affected tabs
 
+browser-tab-mute =
+    { $count ->
+        [1] قطع صدای زبانه
+       *[other] قطع صدای { $count } زبانه
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] وصل صدا زبانه
+       *[other] وصل صدای { $count } زبانه
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] پخش زبانه
+       *[other] پخش { $count } زبانه
+    }
 
 ## Bookmarks toolbar items
 
@@ -412,6 +454,7 @@ popup-screen-sharing-block =
 popup-screen-sharing-always-block =
     .label = همیشه مسدود شود
     .accesskey = w
+popup-mute-notifications-checkbox = هنگام به اشتراک‌گذاری، اعلان‌های وب‌سایت‌ها بی‌صدا باشند
 
 ## WebRTC window or screen share tab switch warning
 
@@ -468,6 +511,11 @@ urlbar-placeholder-with-name =
     .placeholder = با { $name } جست‌وجو یا آدرسی وارد کنید
 urlbar-remote-control-notification-anchor =
     .tooltiptext = مرورگر تحت کنترل از راه دور است
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = مرورگر تحت کنترل از راه دور است (دلیل: { $component })
 urlbar-permissions-granted =
     .tooltiptext = به این پایگاه وب دسترسی‌های اضافی اعطا کرده‌اید.
 urlbar-switch-to-tab =
@@ -521,6 +569,13 @@ urlbar-result-action-tabtosearch-web = با { $engine } مستقیماً از ن
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = با { $engine } مستقیماً از نوار آدرس جستجو کنید
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = رونوشت
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -549,9 +604,6 @@ pointerlock-warning-no-domain = این سند کنترل مکان‌نما شم�
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>بخشی از این صفحه خراب شد.</strong> برای اطلاع { -brand-product-name } از این مسئله و رفع سریعتر آن، لطفاً گزارشی ارسال کنید.
-crashed-subframe-learnmore =
-    .label = بیشتر بدانید
-    .accesskey = L
 crashed-subframe-learnmore-link =
     .value = بیشتر بدانید
 crashed-subframe-submit =
@@ -564,8 +616,6 @@ bookmarks-show-all-bookmarks =
     .label = نمایش همهٔ نشانک‌ها
 bookmarks-manage-bookmarks =
     .label = مدیریت نشانک‌ها
-bookmarks-recent-bookmarks-panel =
-    .value = نشانک‌های اخیر
 bookmarks-recent-bookmarks-panel-subheader = نشانک‌های اخیر
 bookmarks-toolbar-chevron =
     .tooltiptext = نشانک‌های بیشتری نمایش داده شود
@@ -627,7 +677,7 @@ bookmarks-current-tab =
 ## Library Panel items
 
 library-bookmarks-menu =
-    .label = نشانک ها
+    .label = نشانک‌ها
 library-recent-activity-title =
     .value = فعالیت‌های اخیر
 
@@ -639,6 +689,20 @@ save-to-pocket-button =
 
 ## Customize Toolbar Buttons
 
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = افزونه‌ها و تم‌ها
+    .tooltiptext = افزونه‌ها و تم‌های خود را مدیریت کنید ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = تنظیمات
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] باز کردن تنظیمات ({ $shortcut })
+           *[other] باز کردن تنظیمات
+        }
 
 ## More items
 

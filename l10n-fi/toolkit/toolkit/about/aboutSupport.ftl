@@ -110,11 +110,11 @@ graphics-desktop-environment = Työpöytäympäristö
 place-database-title = Places-tietokanta
 place-database-integrity = Virheettömyys
 place-database-verify-integrity = Tarkista virheettömyys
-a11y-title = Esteettömyystoiminnot
+a11y-title = Saavutettavuus
 a11y-activated = Käytössä
-a11y-force-disabled = Estä esteettömyystoiminnot
-a11y-handler-used = Esteettömyyskäsittelijää käytetty
-a11y-instantiator = Esteettömyyden käynnistänyt ohjelma
+a11y-force-disabled = Estä saavutettavuustoiminnot
+a11y-handler-used = Saavutettavuuskäsittelijää käytetty
+a11y-instantiator = Saavutettavuuden käynnistänyt ohjelma
 library-version-title = Kirjastojen versiot
 copy-text-to-clipboard-label = Kopioi teksti leikepöydälle
 copy-raw-data-to-clipboard-label = Kopioi muokkaamaton data leikepöydälle
@@ -129,10 +129,11 @@ sandbox-sys-call-number = Järjestelmäkutsu
 sandbox-sys-call-args = Argumentit
 safe-mode-title = Kokeile vikasietotilaa
 restart-in-safe-mode-label = Käynnistä uudelleen ilman lisäosia…
+troubleshoot-mode-title = Selvitä ongelmia
+restart-in-troubleshoot-mode-label = Vianmääritystila…
 clear-startup-cache-title = Kokeile tyhjentää käynnistyksen välimuisti
 clear-startup-cache-label = Tyhjennä käynnistyksen välimuisti…
-startup-cache-dialog-title = Käynnistyksen välimuistin tyhjennys
-startup-cache-dialog-body = Käynnistyksen välimuistin tyhjentämiseksi { -brand-short-name } käynnistetään uudestaan. Tämä ei muuta asetuksia eikä poista laajennuksia, jotka on lisätty { -brand-short-name(case: "illative") }.
+startup-cache-dialog-title2 = Käynnistä { -brand-short-name } uudestaan ja tyhjennä käynnistyksen välimuisti?
 startup-cache-dialog-body2 = Tämä ei muuta asetuksiasi tai poista laajennuksia.
 restart-button-label = Käynnistä uudestaan
 
@@ -355,7 +356,7 @@ multi-process-windows = { $remoteWindows }/{ $totalWindows }
 multi-process-status-0 = Käyttäjän käyttöön ottama
 multi-process-status-1 = Käytössä oletuksena
 multi-process-status-2 = Poistettu käytöstä
-multi-process-status-4 = Poistettu käytöstä esteettömyystoimintojen takia
+multi-process-status-4 = Poistettu käytöstä saavutettavuustoimintojen takia
 multi-process-status-6 = Poistettu käytöstä ei-tuetun tekstisyötteen takia
 multi-process-status-7 = Poistettu käytöstä lisäosien takia
 multi-process-status-8 = Poistettu käytöstä pakottaen
@@ -406,6 +407,10 @@ support-printing-prefs-value = Arvo
 
 ## Normandy sections
 
+support-remote-experiments-title = Etäkokeilut
 support-remote-experiments-name = Nimi
+support-remote-experiments-branch = Kokeiluhaara
+support-remote-experiments-see-about-studies = Sivulta <a data-l10n-name="support-about-studies-link">about:studies</a> voi lukea lisätietoja, kuten miten poistaa käytöstä yksittäisiä kokeiluja tai estää { -brand-short-name } suorittamasta tällaista kokeilua tulevaisuudessa.
+support-remote-features-title = Etäominaisuudet
 support-remote-features-name = Nimi
 support-remote-features-status = Tila

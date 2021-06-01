@@ -1932,6 +1932,12 @@ class XPCShellTests(object):
 
         return status
 
+    def start_test(self, test):
+        test.start()
+
+    def test_ended(self, test):
+        pass
+
     def runTestList(
         self, tests_queue, sequential_tests, testClass, mobileArgs, **kwargs
     ):
@@ -1973,7 +1979,7 @@ class XPCShellTests(object):
             ):
                 test = tests_queue.popleft()
                 running_tests.add(test)
-                test.start()
+                self.start_test(test)
 
             # queue is full (for now) or no more new tests,
             # process the finished tests so far
@@ -1986,6 +1992,7 @@ class XPCShellTests(object):
             done_tests = set()
             for test in running_tests:
                 if test.done:
+                    self.test_ended(test)
                     done_tests.add(test)
                     test.join(
                         1
@@ -2021,8 +2028,9 @@ class XPCShellTests(object):
                     break
                 # we don't want to retry these tests
                 test.retry = False
-                test.start()
+                self.start_test(test)
                 test.join()
+                self.test_ended(test)
                 self.addTestResults(test)
                 # did the test encounter any exception?
                 if test.exception:
@@ -2042,8 +2050,9 @@ class XPCShellTests(object):
                 mobileArgs=mobileArgs,
                 **kwargs
             )
-            test.start()
+            self.start_test(test)
             test.join()
+            self.test_ended(test)
             self.addTestResults(test)
             # did the test encounter any exception?
             if test.exception:

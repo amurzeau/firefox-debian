@@ -19,6 +19,11 @@ experimental-features-media-avif =
 experimental-features-media-avif-description = Ak je táto funkcia povolená, aplikácia { -brand-short-name } podporuje formát obrazového súboru AV1 (AVIF). Toto je formát súboru statického obrázka, ktorý využíva možnosti algoritmov kompresie videa AV1 na zmenšenie veľkosti obrázka. Ďalšie informácie nájdete v bugzille, <a data-l10n-name="bugzilla">bug 1443863</a>.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
+experimental-features-media-jxl =
+    .label = Médiá: JPEG XL
+experimental-features-media-jxl-description = Ak je táto funkcia povolená, aplikácia { -brand-short-name } podporuje formát JPEG XL (JXL). Toto je vylepšený formát obrazového súboru, ktorý podporuje bezstratový prechod z tradičných súborov JPEG. Ďalšie informácie nájdete v bugzille, <a data-l10n-name="bugzilla">bug 1539075</a>.
+# The title of the experiment should be kept in English as it may be referenced
+# by various online articles and is technical in nature.
 experimental-features-web-api-inputmode =
     .label = Web API: inputmode
 # "inputmode" and "contenteditable" are technical terms and shouldn't be translated.
@@ -64,6 +69,10 @@ experimental-features-devtools-serviceworker-debugger-support-description = Povo
 experimental-features-webrtc-global-mute-toggles =
     .label = Prepínač globálneho stlmenia WebRTC
 experimental-features-webrtc-global-mute-toggles-description = Pridá do indikátora globálneho zdieľania WebRTC ovládacie prvky, ktoré umožňujú používateľom globálne stlmiť kanál mikrofónu a kamery.
+# Win32k Lockdown
+experimental-features-win32k-lockdown =
+    .label = Zakázať Win32k
+experimental-features-win32k-lockdown-description = Zakáže použitie rozhraní API Win32k na kartách prehliadača. Poskytuje to zvýšenie bezpečnosti, ale v súčasnosti môže spôsobovať nestabilné správanie (len pre Windows).
 # JS JIT Warp project
 experimental-features-js-warp =
     .label = JavaScript JIT: Warp

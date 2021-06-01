@@ -251,6 +251,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Добавить «{ $engineName }»
+    .tooltiptext = Добавить поисковую систему «{ $engineName }»
+    .aria-label = Добавить поисковую систему «{ $engineName }»
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Добавить поисковую систему
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -298,8 +310,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Информация о сайте { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Защита соединения с { $host }
 identity-connection-not-secure = Незащищённое соединение
 identity-connection-secure = Защищённое соединение
+identity-connection-failure = Ошибка соединения
 identity-connection-internal = Это встроенная страница { -brand-short-name }.
 identity-connection-file = Эта страница хранится на вашем компьютере.
 identity-extension-page = Эта страница загружена из расширения.
@@ -324,6 +344,7 @@ identity-https-only-info-turn-off2 = Если страница кажется с
 identity-https-only-info-no-upgrade = Невозможно переключить соединение с HTTP.
 identity-permissions-storage-access-header = Межсайтовые куки
 identity-permissions-storage-access-hint = Следующие стороны могут использовать межсайтовые куки и данные сайта, пока вы находитесь на этом сайте.
+identity-permissions-storage-access-learn-more = Узнать больше
 identity-permissions-reload-hint = Чтобы изменения возымели действие, вам, возможно, потребуется перезагрузить страницу.
 identity-permissions-empty = Вы не давали этому сайту каких-либо специальных разрешений.
 identity-clear-site-data =
@@ -374,7 +395,7 @@ browser-tab-audio-playing2 = ВОСПРОИЗВОДИТСЯ
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-muted2 = БЕЗ ЗВУКА
 # This label should be written in all capital letters if your locale supports them.
-browser-tab-audio-blocked = АВТОВОСПРОИЗВЕДЕНИЕ ЗАБЛОКИРОВАНО
+browser-tab-audio-blocked = АВТОЗАПУСК ЗАБЛОКИРОВАН
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = КАРТИНКА В КАРТИНКЕ
 
@@ -501,6 +522,11 @@ urlbar-placeholder-with-name =
     .placeholder = Найдите в { $name } или введите адрес
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Браузер находится под удалённым управлением
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Браузер находится под удалённым управлением (причина: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Вы предоставили этому веб-сайту дополнительные разрешения.
 urlbar-switch-to-tab =
@@ -589,9 +615,6 @@ pointerlock-warning-no-domain = Этот документ контролируе
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Часть этой страницы упала.</strong> Чтобы сообщить { -brand-product-name } об этой проблеме и ускорить её исправление, пожалуйста, отправьте сообщение.
-crashed-subframe-learnmore =
-    .label = Подробнее
-    .accesskey = о
 crashed-subframe-learnmore-link =
     .value = Узнать больше
 crashed-subframe-submit =
@@ -604,8 +627,6 @@ bookmarks-show-all-bookmarks =
     .label = Показать все закладки
 bookmarks-manage-bookmarks =
     .label = Управление закладками
-bookmarks-recent-bookmarks-panel =
-    .value = Недавние закладки
 bookmarks-recent-bookmarks-panel-subheader = Недавние закладки
 bookmarks-toolbar-chevron =
     .tooltiptext = Показать больше закладок

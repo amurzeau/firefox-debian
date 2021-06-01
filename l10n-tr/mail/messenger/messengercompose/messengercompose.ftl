@@ -117,3 +117,18 @@ move-attachment-last-panel-button =
 button-return-receipt =
     .label = Alındı onayı
     .tooltiptext = Bu ileti için alındı onayı iste
+#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
+consider-bcc-notification = Kime ve Cc alanlarındaki { $count } alıcı birbirlerinin adresini görebilir. Bunun yerine Bcc kullanarak alıcıları göstermekten kaçınabilirsiniz.
+
+# Addressing Area
+
+cc-compose-address-row-label =
+    .value = Cc
+bcc-compose-address-row-label =
+    .value = Bcc
+many-public-recipients-bcc =
+    .label = Bcc kullan
+    .accesskey = B
+many-public-recipients-ignore =
+    .label = Alıcılar herkese açık kalsın
+    .accesskey = A

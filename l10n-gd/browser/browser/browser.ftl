@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -219,7 +219,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Dèan lorg leis na leanas an turas seo:
 # This string won't wrap, so if the translated string is longer,
@@ -237,6 +237,10 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Suidhich mar an t-einnsean-luirg bunaiteachd ann an uinneagan prìobhaideach
     .accesskey = S
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Cuir einnsean-luirg ris
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -358,6 +362,8 @@ popup-all-windows-shared = Thèid gach uinneag a tha ri fhaicinn air an sgrìn a
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Cuir ann lorg no seòladh
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Cuir ann lorg no seòladh
 # Variables
@@ -412,6 +418,8 @@ pointerlock-warning-no-domain = Tha smachd aig an sgrìobhainn seo air an tomhai
 
 ## Subframe crash notification
 
+crashed-subframe-learnmore-link =
+    .value = Barrachd fiosrachaidh
 
 ## Bookmarks panels, menus and toolbar
 
@@ -471,6 +479,11 @@ save-to-pocket-button =
 
 ## Customize Toolbar Buttons
 
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Tuilleadain ’s ùrlaran
+    .tooltiptext = Stiùirich na tuilleadain ’s ùrlaran agad ({ $shortcut })
 
 ## More items
 
@@ -487,6 +500,10 @@ eme-notifications-drm-content-playing = Tha cuid dhen fhuaim no video air an là
 
 ## Add-on removal warning
 
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = A bheil thu airson { $name } a thoirt air falbh?
+addon-removal-abuse-report-checkbox = Dèan aithris air an leudachan seo gu { -vendor-short-name }
 
 ## Remote / Synced tabs
 

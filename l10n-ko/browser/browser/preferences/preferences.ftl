@@ -520,7 +520,7 @@ home-prefs-topsites-by-option-sponsored =
     .label = 스폰서 상위 사이트
 home-prefs-shortcuts-header =
     .label = 바로 가기
-home-prefs-shortcuts-description = 저장 또는 방문 사이트
+home-prefs-shortcuts-description = 저장하거나 방문한 사이트
 home-prefs-shortcuts-by-option-sponsored =
     .label = 스폰서 바로 가기
 
@@ -1002,9 +1002,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = 보호와 성능사이의 균형이 잡혀 있습니다. 페이지가 정상적으로 로드됩니다.
 content-blocking-etp-strict-desc = 더 강력한 보호 기능을 제공하지만, 일부 사이트나 콘텐츠가 손상될 수 있습니다.
 content-blocking-etp-custom-desc = 차단할 추적기와 스크립트를 선택하세요.
+content-blocking-etp-blocking-desc = { -brand-short-name }가 다음을 차단함:
 content-blocking-private-windows = 사생활 보호 창의 추적 콘텐츠
 content-blocking-cross-site-cookies = 교차 사이트 쿠키
+content-blocking-cross-site-cookies-in-all-windows = 모든 창에서 교차 사이트 쿠키 (추적 쿠키 포함)
 content-blocking-cross-site-tracking-cookies = 교차 사이트 추적 쿠키
+content-blocking-all-cross-site-cookies-private-windows = 사생활 보호 창에서 교차 사이트 쿠키
 content-blocking-cross-site-tracking-cookies-plus-isolate = 교차 사이트 추적 쿠키, 그리고 나머지 쿠키 격리
 content-blocking-social-media-trackers = 소셜 미디어 추적기
 content-blocking-all-cookies = 모든 쿠키
@@ -1019,7 +1022,7 @@ content-blocking-and-isolating-etp-warning-description-2 = 이 설정으로 인�
 content-blocking-warning-learn-how = 방법 알아보기
 content-blocking-reload-description = 변경 사항을 적용하려면 탭을 다시 로드해야 합니다.
 content-blocking-reload-tabs-button =
-    .label = 모든 탭 다시 읽기
+    .label = 모든 탭 새로 고침
     .accesskey = R
 content-blocking-tracking-content-label =
     .label = 추적 콘텐츠
@@ -1121,9 +1124,11 @@ addon-recommendations-link = 더 알아보기
 # or builds with no Telemetry support available.
 collection-health-report-disabled = 이 빌드 설정에서는 데이터 보고가 비활성화 되어 있음
 collection-backlogged-crash-reports =
-    .label = { -brand-short-name }가 사용자를 대신해서 백로그 충돌 보고서를 보낼 수 있게 함
+    .label = { -brand-short-name }가 사용자를 대신하여 백로그된 충돌 보고서를 보내도록 허용함
     .accesskey = c
 collection-backlogged-crash-reports-link = 더 알아보기
+collection-backlogged-crash-reports-with-link = { -brand-short-name }가 사용자를 대신하여 백로그된 충돌 보고서를 보내도록 허용함 <a data-l10n-name="crash-reports-link">더 알아보기</a>
+    .accesskey = c
 
 ## Privacy Section - Security
 ##

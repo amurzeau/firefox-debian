@@ -76,6 +76,9 @@ login-intro-description = ប្រសិនបើ​អ្នក​បាន​
 login-intro-instruction-fxa = បង្កើត ឬ​ចូល​ទៅ { -fxaccount-brand-name } របស់​អ្នក​នៅ​លើ​ឧបករណ៍ ត្រង់​កន្លែង​ដែល​បាន​រក្សាទុក​ការចូល​របស់​អ្នក
 login-intro-instruction-fxa-settings = ប្រាកដ​ថា អ្នក​បាន​ជ្រើសរើស​​ប្រអប់​ធីក​ការចូល​នៅ​ក្នុង​ការកំណត់ { -sync-brand-short-name }
 about-logins-intro-instruction-help = ចូល​មើល <a data-l10n-name="help-link"> { -lockwise-brand-short-name } គាំទ្រ </a> សម្រាប់ជំនួយបន្ថែម
+login-intro-instructions-fxa = បង្កើត ឬ​ចូល​ { -fxaccount-brand-name } របស់អ្នក​នៅលើ​ឧបករណ៍​ដែល​ការចូល​របស់​អ្នក​ត្រូវបាន​រក្សាទុក។
+login-intro-instructions-fxa-settings = ចូលទៅ​កាន់ ការកំណត់ > ធ្វើសមកាលកម្ម > បើក​ការធ្វើសមកាលកម្ម... ជ្រើសរើស​ប្រអប់​ការចូល និង​ពាក្យសម្ងាត់។
+login-intro-instructions-fxa-help = ចូលមើល <a data-l10n-name="help-link">{ -lockwise-brand-short-name } Support</a> សម្រាប់​ជំនួយបន្ថែម។
 about-logins-intro-import = ប្រសិនបើការចូលរបស់អ្នកត្រូវបានរក្សាទុកនៅក្នុងកម្មវិធីរុករកតាមអ៊ីនធឺណិតផ្សេងទៀតអ្នកអាច <a data-l10n-name="import-link"> នាំចូលការចូលទាំងនោះទៅក្នុង { -lockwise-brand-short-name }
 about-logins-intro-import2 = ប្រសិនបើ​ការចូល​របស់​អ្នក​ត្រូវបាន​រក្សាទុក​ក្រៅពៅ { -brand-product-name } អ្នក​អាច <a data-l10n-name="import-browser-link">នាំចូល​ការចូល​ទាំងនោះ​ពី​កម្មវិធី​រុករក​តាម​អ៊ីនធឺណិត​ផ្សេង</a> ឬ <a data-l10n-name="import-file-link">ពី​ឯកសារ</a>
 
@@ -222,6 +225,7 @@ about-logins-breach-alert-learn-more-link = ស្វែងយល់​បន្
 ## Vulnerable Password notification
 
 about-logins-vulnerable-alert-title = ពាក្យ​ស្ងាត់​ងាយរងគ្រោះ
+about-logins-vulnerable-alert-text2 = ពាក្យ​សម្ងាត់​នេះ​ត្រូវបាន​ប្រើប្រាស់​នៅលើ​គណនី​ផ្សេង​ដែល​ទំនង​ជា​មាន​ការបែកធ្លាយ​ទិន្នន័យ។ ការប្រើប្រាស់​ព័ត៌មាន​ធាតុ​បញ្ចូល​ឡើងវិញ​​អាច​បណ្ដាល​ឱ្យ​គណនី​របស់​អ្នក​មាន​ហានិភ័យ។ ផ្លាស់ប្ដូរ​ពាក្យ​សម្ងាត់​នេះ។
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
 about-logins-vulnerable-alert-link = ទៅកាន់ { $hostname }
@@ -229,6 +233,11 @@ about-logins-vulnerable-alert-learn-more-link = ស្វែងយល់​ប�
 
 ## Error Messages
 
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = ធាតុ​បញ្ចូល​សម្រាប់ { $loginTitle } ដែល​មាន​ឈ្មោះ​អ្នកប្រើប្រាស់​នោះ​មាន​រួចហើយ។ <a data-l10n-name="duplicate-link">ចូលទៅ​កាន់​ធាតុ​បញ្ចូល​ដែល​មាន​ស្រាប់?</a>
 # This is a generic error message.
 about-logins-error-message-default = បញ្ហា​មួយបានកើតឡើងខណៈពេលព្យាយាមរក្សាទុកពាក្យសម្ងាត់នេះ។
 
@@ -260,21 +269,89 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] ឯកសារ CSV
        *[other] CSV File
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] ឯកសារ TSV
+       *[other] ឯកសារ TSV
+    }
 
 ##
 ## Variables:
 ##  $count (number) - The number of affected elements
 
+about-logins-import-dialog-title = ការនាំចូល​បាន​បញ្ចប់
+about-logins-import-dialog-items-added =
+    { $count ->
+       *[other] <span>ការចូល​ថ្មី​ត្រូវបាន​បញ្ចូល៖</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+       *[other] <span>ការចូល​ដែល​មាន​ស្រាប់​ត្រូវបាន​ធ្វើ​បច្ចុប្បន្នភាព៖</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+       *[other] <span>បាន​រកឃើញ​ការចូល​ដែល​ស្ទួនគ្នា៖</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(not imported)</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+       *[other] <span>បញ្ហា៖</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(not imported)</span>
+    }
+about-logins-import-dialog-done = រួចរាល់
+about-logins-import-dialog-error-title = ការនាំចូល​មាន​បញ្ហា
+about-logins-import-dialog-error-conflicting-values-title = តម្លៃ​ស្ទួន​ច្រើន​សម្រាប់​ការចូល​មួយ
+about-logins-import-dialog-error-conflicting-values-description = ឧទាហរណ៍៖ អ្នក​ប្រើប្រាស់ ពាក្យសម្ងាត់ URLs។ល។ ច្រើន​សម្រាប់​ការចូលមួយ។
+about-logins-import-dialog-error-file-format-title = បញ្ហា​ទម្រង់​ឯកសារ
+about-logins-import-dialog-error-file-format-description = ក្បាលអត្ថបទ​ជួរឈរ​មិន​ត្រឹមត្រូវ ឬ​បាត់។ សូមប្រាកដ​ថា ឯកសារ​មាន​ជួរឈរ​សម្រាប់​ឈ្មោះ​អ្នក​ប្រើប្រាស់ ពាក្យសម្ងាត់ និង URL។
+about-logins-import-dialog-error-file-permission-title = មិន​អាច​អាន​ឯកសារ​បាន​ទេ
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } មិន​មាន​សិទ្ធិ​អនុញ្ញាត​ដើម្បី​អាន​ឯសារ​បាន​ទេ។ សាកល្បង​ផ្លាស់ប្ដូរ​សិទ្ធិ​អនុញ្ញាត​ឯកសារ។
+about-logins-import-dialog-error-unable-to-read-title = មិន​អាច​ញែក​ឯកសារ​បាន​ទេ
+about-logins-import-dialog-error-unable-to-read-description = ប្រាកដ​ថា អ្នក​បាន​ជ្រើសរើសឯកសារ CSV ឬ TSV។
+about-logins-import-dialog-error-no-logins-imported = មិន​មាន​ការចូល​ត្រូវបាន​នាំចូល​ទេ
+about-logins-import-dialog-error-learn-more = ស្វែងយល់​បន្ថែម
+about-logins-import-dialog-error-try-again = សាកល្បង​ម្ដង​ទៀត...
+about-logins-import-dialog-error-try-import-again = សាកល្បង​នាំចូល​ម្ដងទៀត...
+about-logins-import-dialog-error-cancel = បោះបង់
+about-logins-import-report-title = នាំចូល​សេចក្ដិ​សង្ខេប
+about-logins-import-report-description = ការចូល និង​ពាក្យសម្ងាត់​ត្រូវបាន​នាំចូល​ទៅ { -brand-short-name }។
+#
+# Variables:
+#  $number (number) - The number of the row
+about-logins-import-report-row-index = ជួរដេក { $number }
+about-logins-import-report-row-description-no-change = ស្ទួន៖ ត្រូវគ្នា​ជាមួយ​ការចូល​ដែល​មាន​ស្រាប់
+about-logins-import-report-row-description-modified = ការចូល​ដែល​មាន​ស្រាប់​ត្រូវបាន​ធ្វើបច្ចុប្បន្នភាព
+about-logins-import-report-row-description-added = ការចូល​ថ្មី​ត្រូវបាន​បញ្ចូល
+about-logins-import-report-row-description-error = បញ្ហា៖ មិន​បាន​បញ្ចូល​កន្លែង​ណាមួយ
 
 ##
 ## Variables:
 ##  $field (String) - The name of the field from the CSV file for example url, username or password
 
+about-logins-import-report-row-description-error-multiple-values = បញ្ហា៖ តម្លៃ​ច្រើន​សម្រាប់ { $field }
+about-logins-import-report-row-description-error-missing-field = បញ្ហា៖ បាត់ { $field }
 
 ##
 ## Variables:
 ##  $count (number) - The number of affected elements
 
+about-logins-import-report-added =
+    { $count ->
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">ការចូលថ្មី​ត្រូវបាន​បញ្ចូល</div>
+    }
+about-logins-import-report-modified =
+    { $count ->
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">ការចូល​ដែល​មាន​ស្រាប់​ត្រូវបាន​ធ្វើបច្ចុប្បន្នភាព</div>
+    }
+about-logins-import-report-no-change =
+    { $count ->
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">ការចូល​ដែល​ស្ទួនគ្នា</div> <div data-l10n-name="not-imported">(not imported)</div>
+    }
+about-logins-import-report-error =
+    { $count ->
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">បញ្ហា</div> <div data-l10n-name="not-imported">(not imported)</div>
+    }
 
 ## Logins import report page
 
+about-logins-import-report-page-title = នាំចូល​របាយការណ៍​សង្ខេប

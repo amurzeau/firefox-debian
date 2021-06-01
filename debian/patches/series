@@ -1,6 +1,5 @@
 fixes/Allow-.js-preference-files-to-set-locked-prefs-with-.patch
 fixes/Bug-1526653-Include-struct-definitions-for-user_vfp-.patch
-fixes/Bug-1685662-MIPS64-Fix-register-conflict-in-ma_addPt.patch
 porting/Add-xptcall-support-for-SH4-processors.patch
 porting/NSS-Fix-FTBFS-on-Hurd-because-of-MAXPATHLEN.patch
 porting/Work-around-Debian-bug-844357.patch
@@ -11,7 +10,6 @@ prefs/Set-DPI-to-system-settings.patch
 prefs/Don-t-auto-disable-extensions-in-system-directories.patch
 debian-hacks/Avoid-wrong-sessionstore-data-to-keep-windows-out-of.patch
 debian-hacks/Add-another-preferences-directory-for-applications-p.patch
-debian-hacks/Don-t-register-plugins-if-the-MOZILLA_DISABLE_PLUGIN.patch
 debian-hacks/Add-a-2-minutes-timeout-on-xpcshell-tests.patch
 debian-hacks/Add-debian-extra-stuff-to-upstream-build-system-dire.patch
 debian-hacks/Don-t-build-image-gtests.patch

@@ -247,6 +247,10 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Añadir buscador
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,8 +297,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Información del sitio para { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Seguridad de la conexión para { $host }
 identity-connection-not-secure = Conexión no segura
 identity-connection-secure = Conexión segura
+identity-connection-failure = Fallo de conexión
 identity-connection-internal = Esta es una página segura de { -brand-short-name }.
 identity-connection-file = Esta página se guarda en su equipo.
 identity-extension-page = Esta página está cargada desde una extensión.
@@ -319,6 +331,7 @@ identity-https-only-info-turn-off2 = Si el sitio no funciona correctamente, es p
 identity-https-only-info-no-upgrade = No se puede actualizar la conexión desde HTTP.
 identity-permissions-storage-access-header = Cookies entre sitios
 identity-permissions-storage-access-hint = Estas partes pueden usar cookies de sitios cruzados y datos del sitio mientras está en este sitio.
+identity-permissions-storage-access-learn-more = Saber más
 identity-permissions-reload-hint = Puede que necesite recargar la página para que se apliquen los cambios.
 identity-permissions-empty = No ha concedido ningún permiso especial a este sitio.
 identity-clear-site-data =
@@ -546,6 +559,13 @@ urlbar-result-action-tabtosearch-web = Buscar con { $engine } directamente desde
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Buscar con { $engine } directamente desde la barra de direcciones
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Copiar
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -574,9 +594,6 @@ pointerlock-warning-no-domain = Este documento tiene el control del puntero. Pul
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Parte de esta página falló.</strong> Para que { -brand-product-name } sepa sobre este problema y se arregle más rápido, por favor envíe un informe.
-crashed-subframe-learnmore =
-    .label = Saber más
-    .accesskey = S
 crashed-subframe-learnmore-link =
     .value = Saber más
 crashed-subframe-submit =
@@ -589,8 +606,6 @@ bookmarks-show-all-bookmarks =
     .label = Mostrar todos los marcadores
 bookmarks-manage-bookmarks =
     .label = Administrar marcadores
-bookmarks-recent-bookmarks-panel =
-    .value = Marcadores recientes
 bookmarks-recent-bookmarks-panel-subheader = Marcadores recientes
 bookmarks-toolbar-chevron =
     .tooltiptext = Mostrar más marcadores
@@ -664,6 +679,20 @@ save-to-pocket-button =
 
 ## Customize Toolbar Buttons
 
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Complementos y temas
+    .tooltiptext = Administrar complementos y temas ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Ajustes
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Abrir ajustes ({ $shortcut })
+           *[other] Abrir ajustes
+        }
 
 ## More items
 

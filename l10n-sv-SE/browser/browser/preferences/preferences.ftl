@@ -965,7 +965,7 @@ sitedata-cookies-permissions =
     .accesskey = b
 sitedata-cookies-exceptions =
     .label = Hantera undantag…
-    .accesskey = x
+    .accesskey = u
 
 ## Privacy Section - Address Bar
 
@@ -1018,9 +1018,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Balanserad för skydd och prestanda. Sidor laddas normalt.
 content-blocking-etp-strict-desc = Starkare skydd, men kan leda till att vissa webbplatser eller innehåll inte fungerar.
 content-blocking-etp-custom-desc = Välj vilka spårare och skript som ska blockeras.
+content-blocking-etp-blocking-desc = { -brand-short-name } blockerar följande:
 content-blocking-private-windows = Spårningsinnehåll i privat fönster
 content-blocking-cross-site-cookies = Globala kakor
+content-blocking-cross-site-cookies-in-all-windows = Globala kakor i alla fönster (inkluderar spårningskakor)
 content-blocking-cross-site-tracking-cookies = Globala spårningskakor
+content-blocking-all-cross-site-cookies-private-windows = Globala kakor i privata fönster
 content-blocking-cross-site-tracking-cookies-plus-isolate = Globala spårningskakor och isolera kvarvarande kakor
 content-blocking-social-media-trackers = Sociala media-spårare
 content-blocking-all-cookies = Alla kakor
@@ -1140,6 +1143,8 @@ collection-backlogged-crash-reports =
     .label = Tillåt { -brand-short-name } att skicka eftersläpande kraschrapporter för din räkning
     .accesskey = c
 collection-backlogged-crash-reports-link = Läs mer
+collection-backlogged-crash-reports-with-link = Tillåt { -brand-short-name } att skicka eftersläpande felrapporter för din räkning <a data-l10n-name="crash-reports-link">Läs mer</a>
+    .accesskey = f
 
 ## Privacy Section - Security
 ##

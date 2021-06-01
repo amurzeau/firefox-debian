@@ -2,18 +2,21 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+toolbar-context-menu-new-tab =
+    .label = Нова картица
+    .accesskey = Н
 toolbar-context-menu-reload-selected-tab =
-    .label = Поново учитај изабрани језичак
+    .label = Поново учитај изабрану картицу
     .accesskey = П
 toolbar-context-menu-reload-selected-tabs =
-    .label = Поново учитај изабране језичке
+    .label = Поново учитај изабране картице
     .accesskey = П
 toolbar-context-menu-bookmark-selected-tab =
     .label = Обележи изабрану картицу…
     .accesskey = б
 toolbar-context-menu-bookmark-selected-tabs =
-    .label = Забележи изабране језичке…
-    .accesskey = ј
+    .label = Обележи изабране картице…
+    .accesskey = О
 toolbar-context-menu-select-all-tabs =
     .label = Изабери све картице
     .accesskey = И
@@ -21,9 +24,7 @@ toolbar-context-menu-undo-close-tabs =
     .label =
         { $tabCount ->
             [1] Врати затворену картицу
-            [one] Врати затворену картицу
-            [few] Врати затворене картице
-           *[other] Врати затворених картица
+           *[other] Врати затворене картице
         }
     .accesskey = р
 toolbar-context-menu-reopen-closed-tabs =

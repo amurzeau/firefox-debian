@@ -10,11 +10,12 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
-policy-3rdparty = Ορίστε πολιτικές που μπορούν να προσπελάσουν τα WebExtensions μέσω του chrome.storage.managed.
+policy-3rdparty = Ορισμός πολιτικών που μπορούν να προσπελάσουν τα WebExtensions μέσω του chrome.storage.managed.
 policy-AllowedDomainsForApps = Καθορισμός τομέων στους οποίους επιτρέπεται πρόσβαση στο Google Workspace.
 policy-AppAutoUpdate = Ενεργοποίηση ή απενεργοποίηση αυτόματων ενημερώσεων εφαρμογής.
 policy-AppUpdateURL = Ορισμός προσαρμοσμένου URL ενημέρωσης εφαρμογής.
 policy-Authentication = Ρύθμιση ενσωματωμένης πιστοποίησης για ιστοσελίδες που την υποστηρίζουν.
+policy-AutoLaunchProtocolsFromOrigins = Καθορίστε μια λίστα με εξωτερικά πρωτόκολλα που μπορούν να χρησιμοποιηθούν από καταχωρημένες προελεύσεις χωρίς να ζητηθεί άδεια από τον χρήστη.
 policy-BackgroundAppUpdate2 = Ενεργοποίηση ή απενεργοποίηση υπηρεσίας ενημερώσεων παρασκηνίου.
 policy-BlockAboutAddons = Αποκλεισμός πρόσβασης στη Διαχείριση προσθέτων (about:addons).
 policy-BlockAboutConfig = Αποκλεισμός πρόσβασης στη σελίδα about:config.
@@ -29,7 +30,7 @@ policy-DefaultDownloadDirectory = Ορισμός προεπιλεγμένου κ
 policy-DisableAppUpdate = Αποτροπή ενημέρωσης προγράμματος περιήγησης.
 policy-DisableBuiltinPDFViewer = Απενεργοποίηση PDF.js, του ενσωματωμένου προγράμματος προβολής PDF στο { -brand-short-name }.
 policy-DisableDefaultBrowserAgent = Αποτροπή οποιασδήποτε ενέργειας από την προεπιλεγμένη λειτουργία προγράμματος περιήγησης. Ισχύει μόνο για Windows· οι άλλες πλατφόρμες δεν έχουν τέτοια υπηρεσία.
-policy-DisableDeveloperTools = Αποκλεισμός πρόσβασης στα εργαλεία προγραμματιστή.
+policy-DisableDeveloperTools = Αποκλεισμός πρόσβασης στα εργαλεία ανάπτυξης.
 policy-DisableFeedbackCommands = Απενεργοποίηση εντολών για αποστολή σχολίων από το μενού "Βοήθεια" (Υποβολή σχολίων και αναφορά παραπλανητικής ιστοσελίδας).
 policy-DisableFirefoxAccounts = Απενεργοποίηση υπηρεσιών { -fxaccount-brand-name(case: "gen", capitalization: "lower") }, καθώς και του συγχρονισμού.
 # Firefox Screenshots is the name of the feature, and should not be translated.
@@ -112,6 +113,6 @@ policy-ShowHomeButton = Εμφάνιση του κουμπιού αρχικής 
 policy-SSLVersionMax = Ορισμός μέγιστης έκδοσης SSL.
 policy-SSLVersionMin = Ορισμός ελάχιστης έκδοσης SSL.
 policy-SupportMenu = Προσθήκη προσαρμοσμένου στοιχείου μενού υποστήριξης στο μενού βοήθειας.
-policy-UserMessaging = Να μην εμφανίζονται ορισμένα μηνύματα στο χρήστη.
+policy-UserMessaging = Απόκρυψη ορισμένων μηνυμάτων από τον χρήστη.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Αποκλεισμός επίσκεψης σε ιστοσελίδες. Δείτε την τεκμηρίωση για περισσότερες λεπτομέρειες σχετικά με τη μορφή.

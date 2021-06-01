@@ -200,7 +200,6 @@ onboarding-welcome-steps-indicator =
 # automatically added to the text inside it. "look" should stay inside the span.
 onboarding-multistage-theme-header = Causissètz una <span data-l10n-name="zap">aparéncia</span>
 onboarding-multistage-theme-subtitle = Personalizatz { -brand-short-name } amb un tèma.
-onboarding-multistage-theme-primary-button-label = Enregistrar tèma
 onboarding-multistage-theme-primary-button-label2 = Acabat
 onboarding-multistage-theme-secondary-button-label = Pas ara
 # Automatic theme uses operating system color settings
@@ -254,4 +253,91 @@ onboarding-multistage-theme-tooltip-alpenglow-2 =
 onboarding-multistage-theme-description-alpenglow =
     .aria-description =
         Utilizar una aparéncia colorada pels
+        botons, menús e las fenèstras.
+
+## Multistage MR1 onboarding strings (MR1 about:welcome pages)
+
+# "Hero Text" displayed on left side of welcome screen.
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
+# It also signals the passion users bring to Firefox, how they use
+# Firefox to pursue those passions, as well as the boldness in their
+# choice to use Firefox over a larger competitor browser.
+# An alternative title for localization is: "It starts here".
+# This text can be formatted to span multiple lines as needed.
+mr1-welcome-screen-hero-text = Lo camin comença aquí
+# Caption for background image in about:welcome. "Soraya Osorio" is the name
+# of the person and shouldn't be translated.
+mr1-onboarding-welcome-image-caption = Soraya Osorio — Conceptora de mòbles, afogat de Firefox
+# This button will open system settings to turn on prefers-reduced-motion
+mr1-onboarding-reduce-motion-button-label = Desactivar las animacions
+mr1-onboarding-welcome-header = La benvenguda a { -brand-short-name }
+mr1-onboarding-set-default-pin-primary-button-label = Definir { -brand-short-name } coma navegador principal
+    .title = Definís { -brand-short-name } coma navegador per defaut e lo penja a la barra de prètzfaches
+mr1-onboarding-set-default-only-primary-button-label = Definir { -brand-short-name } coma navegador per defaut
+mr1-onboarding-set-default-secondary-button-label = Pas ara
+mr1-onboarding-sign-in-button-label = Connexion
+mr1-onboarding-import-header = O emportatz tot amb vos
+mr1-onboarding-import-subtitle = Importatz vòstres senhals, <br/>marcapaginas e encara mai.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
+# Variables:
+#   $previous (Str) - Previous browser name, such as Edge, Chrome
+mr1-onboarding-import-primary-button-label-attribution = Importar de { $previous }
+# This string will be used in cases where we can't detect the previous browser name.
+mr1-onboarding-import-primary-button-label-no-attribution = Importar d’un autre navegador
+mr1-onboarding-import-secondary-button-label = Pas ara
+mr1-onboarding-theme-header = Adaptatz-lo a vòstre estil
+mr1-onboarding-theme-subtitle = Personalizatz { -brand-short-name } amb un tèma.
+mr1-onboarding-theme-primary-button-label = Salvar lo tèma
+mr1-onboarding-theme-secondary-button-label = Pas ara
+# System theme uses operating system color settings
+mr1-onboarding-theme-label-system = Tèma sistèma
+mr1-onboarding-theme-label-light = Clar
+mr1-onboarding-theme-label-dark = Fosc
+# "Alpenglow" here is the name of the theme, and should be kept in English.
+mr1-onboarding-theme-label-alpenglow = Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of system theme
+mr1-onboarding-theme-tooltip-system =
+    .title =
+        Seguir lo tèma del sistèma operatiu
+        pels botons, menús e las fenèstras.
+# Input description for system theme
+mr1-onboarding-theme-description-system =
+    .aria-description =
+        Seguir lo tèma del sistèma operatiu
+        pels botons, menús e las fenèstras.
+# Tooltip displayed on hover of light theme
+mr1-onboarding-theme-tooltip-light =
+    .title =
+        Utilizar un tèma clar pels
+        botons, menús e las fenèstras.
+# Input description for light theme
+mr1-onboarding-theme-description-light =
+    .aria-description =
+        Utilizar un tèma clar pels
+        botons, menús e las fenèstras.
+# Tooltip displayed on hover of dark theme
+mr1-onboarding-theme-tooltip-dark =
+    .title =
+        Utilizar un fosc clar pels
+        botons, menús e las fenèstras.
+# Input description for dark theme
+mr1-onboarding-theme-description-dark =
+    .aria-description =
+        Utilizar un fosc clar pels
+        botons, menús e las fenèstras.
+# Tooltip displayed on hover of Alpenglow theme
+mr1-onboarding-theme-tooltip-alpenglow =
+    .title =
+        Utilizar un tèma colorat e dinamic pels
+        botons, menús e las fenèstras.
+# Input description for Alpenglow theme
+mr1-onboarding-theme-description-alpenglow =
+    .aria-description =
+        Utilizar un tèma colorat e dinamic pels
         botons, menús e las fenèstras.

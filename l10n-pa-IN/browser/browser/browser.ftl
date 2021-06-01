@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = “{ $engineName }” ਨੂੰ ਜੋੜੋ
+    .tooltiptext = “{ $engineName }” ਖੋਜ ਇੰਜਣ ਨੂੰ ਜੋੜੋ
+    .aria-label = “{ $engineName }” ਖੋਜ ਇੰਜਣ ਨੂੰ ਜੋੜੋ
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = ਖੋਜ ਇੰਜਣ ਨੂੰ ਜੋੜੋ
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = { $host } ਲਈ ਸਾਈਟ ਜਾਣਕਾਰੀ
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = { $host } ਲਈ ਕਨੈਕਸ਼ਨ ਸੁਰੱਖਿਆ
 identity-connection-not-secure = ਕਨੈਕਸ਼ਨ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਹੈ
 identity-connection-secure = ਕਨੈਕਸ਼ਨ ਸੁਰੱਖਿਅਤ ਹੈ
+identity-connection-failure = ਕਨੈਕਸ਼ਨ ਅਸਫ਼ਲ
 identity-connection-internal = ਇਹ ਸੁਰੱਖਿਅਤ { -brand-short-name } ਸਫ਼ਾ ਹੈ।
 identity-connection-file = ਇਹ ਸਫ਼ਾ ਤੁਹਾਡੇ ਕੰਪਿਊਟਰ ਉੱਤੇ ਸੰਭਾਲਿਆ ਹੈ।
 identity-extension-page = ਇਸ ਸਫ਼ੇ ਨੂੰ ਇਕਸਟੈਨਸ਼ਨ ਤੋਂ ਲੋਡ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।
@@ -325,6 +345,7 @@ identity-permissions-storage-access-header = ਅੰਤਰ-ਸਾਈਟ ਕੂਕ
 identity-permissions-storage-access-hint =
     ਤੁਹਾਡੇ ਵਲੋਂ ਇਸ ਸਾਈਟ ਖੋਲ੍ਹਣ ਦੇ ਦੌਰਾਨ ਇਹ ਧਿਰਾਂ ਅੰਤਰ-ਸਾਈਟ ਕੂਕੀਜ਼ ਤੇ ਸਾਈਟ ਡਾਟੇ ਨੂੰ
     ਵਰਤ ਸਕਦੀਆਂ ਹਨ।
+identity-permissions-storage-access-learn-more = ਹੋਰ ਜਾਣੋ
 identity-permissions-reload-hint = ਤਬਦੀਲੀਆਂ ਲਾਗੂ ਕਰਨ ਵਾਸਤੇ ਤੁਹਾਨੂੰ ਸਫ਼ੇ ਨੂੰ ਮੁੜ-ਲੋਡ ਕਰਨ ਦੀ ਲੋੜ ਹੋ ਸਕਦੀ ਹੈ।
 identity-permissions-empty = ਤੁਸੀਂ ਇਸ ਸਾਈਟ ਲਈ ਕੋਈ ਖਾਸ ਇਜਾਜ਼ਤਾਂ ਨਹੀਂ ਦਿੱਤੀਆਂ ਹਨ।
 identity-clear-site-data =
@@ -498,6 +519,11 @@ urlbar-placeholder-with-name =
     .placeholder = { $name } ਨਾਲ ਖੋਜੋ ਜਾਂ ਸਿਰਨਾਵਾਂ ਦਿਓ
 urlbar-remote-control-notification-anchor =
     .tooltiptext = ਬਰਾਊਜ਼ਰ ਰਿਮੋਟ ਤੋਂ ਕੰਟਰੋਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = ਬਰਾਊਜ਼ਰ ਰਿਮੋਟ ਕੰਟਰੋਲ ਅਧੀਨ ਹੈ (ਕਾਰਨ: { $component })
 urlbar-permissions-granted =
     .tooltiptext = ਤੁਸੀਂ ਇਸ ਵੈੱਬਸਾਈਟ ਨੂੰ ਹੋਰ ਇਜਾਜ਼ਤਾਂ ਦਿੱਤੀਆਂ ਹਨ।
 urlbar-switch-to-tab =
@@ -551,6 +577,13 @@ urlbar-result-action-tabtosearch-web = ਸਿਰਨਾਵਾਂ ਪੱਟੀ ਤ
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = ਸਿਰਨਾਵਾਂ ਪੱਟੀ ਤੋਂ ਸਿੱਧੀ { $engine } ਖੋਜੋ
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = ਕਾਪੀ ਕਰੋ
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -579,9 +612,6 @@ pointerlock-warning-no-domain = ਇਹ ਦਸਤਾਵੇਜ਼ ਤੁਹਾਡੇ 
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>ਇਸ ਸਫ਼ੇ ਦਾ ਹਿੱਸਾ ਨਸ਼ਟ ਹੋਇਆ।</strong> { -brand-product-name } ਨੂੰ ਇਸ ਮਸਲੇ ਬਾਰੇ ਜਾਣਕਾਰੀ ਦਿਓ ਅਤੇ ਇਸ ਨੂੰ ਛੇਤੀ ਠੀਕ ਕਰਵਾਓ, ਇਸ ਬਾਰੇ ਰਿਪੋਰਟ ਦਿਓ।
-crashed-subframe-learnmore =
-    .label = ਹੋਰ ਸਿੱਖੋ
-    .accesskey = L
 crashed-subframe-learnmore-link =
     .value = ਹੋਰ ਜਾਣੋ
 crashed-subframe-submit =
@@ -594,8 +624,6 @@ bookmarks-show-all-bookmarks =
     .label = ਸਭ ਬੁੱਕਮਾਰਕਾਂ ਨੂੰ ਵੇਖੋ
 bookmarks-manage-bookmarks =
     .label = ਬੁੱਕਮਾਰਕਾਂ ਇੰਤਜ਼ਾਮ
-bookmarks-recent-bookmarks-panel =
-    .value = ਹਾਲੀਆ ਬੁੱਕਮਾਰਕ
 bookmarks-recent-bookmarks-panel-subheader = ਹਾਲੀਆ ਬੁੱਕਮਾਰਕ
 bookmarks-toolbar-chevron =
     .tooltiptext = ਹੋਰ ਬੁੱਕਮਾਰਕਾਂ ਨੂੰ ਵੇਖੋ
@@ -669,6 +697,20 @@ save-to-pocket-button =
 
 ## Customize Toolbar Buttons
 
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = ਐਡ-ਆਨ ਅਤੇ ਥੀਮ
+    .tooltiptext = ਆਪਣੇ ਐਡ-ਆਨ ਅਤੇ ਥੀਮਾਂ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = ਸੈਟਿੰਗਾਂ
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ ({ $shortcut })
+           *[other] ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ
+        }
 
 ## More items
 

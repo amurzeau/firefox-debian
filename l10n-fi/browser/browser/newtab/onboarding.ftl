@@ -173,6 +173,15 @@ onboarding-multistage-set-default-subtitle = Nopeutta, turvallisuutta ja yksityi
 onboarding-multistage-set-default-primary-button-label = Aseta oletukseksi
 onboarding-multistage-set-default-secondary-button-label = Ei nyt
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-pin-default-header = Aloitetaan tekemällä <span data-l10n-name="zap">{ -brand-short-name }in</span> käynnistäminen helpoksi
+onboarding-multistage-pin-default-subtitle = Nopeaa, turvallista ja yksityistä verkon selaamista.
+# The "settings" here refers to "Windows 10 Settings App" and not the browser's
+onboarding-multistage-pin-default-waiting-subtitle = Valitse { -brand-short-name } Selain-kohdasta, kun asetukset avautuu
+# The "settings" here refers to "Windows 10 Settings App" and not the browser's
+onboarding-multistage-pin-default-help-text = Tämä kiinnittää { -brand-short-name }in tehtäväpalkkiin ja avaa asetukset
+onboarding-multistage-pin-default-primary-button-label = Vaihda pääselaimeksi { -brand-short-name }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "more" should stay inside the span.
 onboarding-multistage-import-header = Tuo salasanat, kirjanmerkit ja <span data-l10n-name="zap">paljon muuta</span>
 onboarding-multistage-import-subtitle = Oletko siirtymässä toisesta selaimesta? Tietojen tuominen { -brand-short-name }iin on helppoa.
@@ -190,8 +199,7 @@ onboarding-welcome-steps-indicator =
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "look" should stay inside the span.
 onboarding-multistage-theme-header = Valitse <span data-l10n-name="zap">ulkoasu</span>
-onboarding-multistage-theme-subtitle = Mukauta { -brand-short-name }ia teemalla.
-onboarding-multistage-theme-primary-button-label = Tallenna teema
+onboarding-multistage-theme-subtitle = Valitse { -brand-short-name }-teema makusi mukaan.
 onboarding-multistage-theme-primary-button-label2 = Valmis
 onboarding-multistage-theme-secondary-button-label = Ei nyt
 # Automatic theme uses operating system color settings
@@ -230,12 +238,12 @@ onboarding-multistage-theme-description-light =
 onboarding-multistage-theme-tooltip-dark-2 =
     .title =
         Käytä tummaa ulkoasua
-        painikkeille, valikoille ja ikkunoile.
+        painikkeille, valikoille ja ikkunoille.
 # Input description for dark theme
 onboarding-multistage-theme-description-dark =
     .aria-description =
         Käytä tummaa ulkoasua
-        painikkeille, valikoille ja ikkunoile.
+        painikkeille, valikoille ja ikkunoille.
 # Tooltip displayed on hover of Alpenglow theme
 onboarding-multistage-theme-tooltip-alpenglow-2 =
     .title =
@@ -245,4 +253,97 @@ onboarding-multistage-theme-tooltip-alpenglow-2 =
 onboarding-multistage-theme-description-alpenglow =
     .aria-description =
         Käytä värikästä ulkoasua
+        painikkeille, valikoille ja ikkunoille.
+
+## Multistage MR1 onboarding strings (MR1 about:welcome pages)
+
+# "Hero Text" displayed on left side of welcome screen.
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
+# It also signals the passion users bring to Firefox, how they use
+# Firefox to pursue those passions, as well as the boldness in their
+# choice to use Firefox over a larger competitor browser.
+# An alternative title for localization is: "It starts here".
+# This text can be formatted to span multiple lines as needed.
+mr1-welcome-screen-hero-text =
+    Aletaan
+    hommiin
+# Caption for background image in about:welcome. "Soraya Osorio" is the name
+# of the person and shouldn't be translated.
+mr1-onboarding-welcome-image-caption = Soraya Osorio — Huonekalujen suunnittelija, Firefox-fani
+# This button will open system settings to turn on prefers-reduced-motion
+mr1-onboarding-reduce-motion-button-label = Poista animaatiot käytöstä
+mr1-onboarding-welcome-header =
+    { -brand-short-name.case-status ->
+        [with-cases] Tervetuloa { -brand-short-name(case: "illative") }
+       *[no-cases] Tässä { -brand-short-name }, tervetuloa
+    }
+mr1-onboarding-set-default-pin-primary-button-label = Aseta { -brand-short-name } pääselaimeksi
+    .title = Asettaa { -brand-short-name }in oletusselaimeksi ja kiinnittää sen tehtäväpalkkiin
+mr1-onboarding-set-default-only-primary-button-label = Aseta { -brand-short-name } oletusselaimeksi
+mr1-onboarding-set-default-secondary-button-label = Ei nyt
+mr1-onboarding-sign-in-button-label = Kirjaudu sisään
+mr1-onboarding-import-header = Kaikki mukanasi
+mr1-onboarding-import-subtitle = Tuo salasanat, <br/>kirjanmerkit ynnä muut.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
+# Variables:
+#   $previous (Str) - Previous browser name, such as Edge, Chrome
+mr1-onboarding-import-primary-button-label-attribution = Tuo selaimesta { $previous }
+# This string will be used in cases where we can't detect the previous browser name.
+mr1-onboarding-import-primary-button-label-no-attribution = Tuo edellisestä selaimesta
+mr1-onboarding-import-secondary-button-label = Ei nyt
+mr1-onboarding-theme-header = Omalla tyylillä
+mr1-onboarding-theme-subtitle = Valitse { -brand-short-name }-teema makusi mukaan.
+mr1-onboarding-theme-primary-button-label = Tallenna teema
+mr1-onboarding-theme-secondary-button-label = Ei nyt
+# System theme uses operating system color settings
+mr1-onboarding-theme-label-system = Järjestelmän teema
+mr1-onboarding-theme-label-light = Vaalea
+mr1-onboarding-theme-label-dark = Tumma
+# "Alpenglow" here is the name of the theme, and should be kept in English.
+mr1-onboarding-theme-label-alpenglow = Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of system theme
+mr1-onboarding-theme-tooltip-system =
+    .title =
+        Seuraa käyttöjärjestelmän teemaa
+        painikkeille, valikoille ja ikkunoille.
+# Input description for system theme
+mr1-onboarding-theme-description-system =
+    .aria-description =
+        Seuraa käyttöjärjestelmän teemaa
+        painikkeille, valikoille ja ikkunoille.
+# Tooltip displayed on hover of light theme
+mr1-onboarding-theme-tooltip-light =
+    .title =
+        Käytä vaaleaa teemaa painikkeille,
+        valikoille ja ikkunoille.
+# Input description for light theme
+mr1-onboarding-theme-description-light =
+    .aria-description =
+        Käytä vaaleaa teemaa painikkeille,
+        valikoille ja ikkunoille.
+# Tooltip displayed on hover of dark theme
+mr1-onboarding-theme-tooltip-dark =
+    .title =
+        Käytä tummaa teemaa painikkeille,
+        valikoille ja ikkunoille.
+# Input description for dark theme
+mr1-onboarding-theme-description-dark =
+    .aria-description =
+        Käytä tummaa teemaa painikkeille,
+        valikoille ja ikkunoille.
+# Tooltip displayed on hover of Alpenglow theme
+mr1-onboarding-theme-tooltip-alpenglow =
+    .title =
+        Käytä dynaamista ja värikästä teemaa
+        painikkeille, valikoille ja ikkunoille.
+# Input description for Alpenglow theme
+mr1-onboarding-theme-description-alpenglow =
+    .aria-description =
+        Käytä dynaamista ja värikästä teemaa
         painikkeille, valikoille ja ikkunoille.

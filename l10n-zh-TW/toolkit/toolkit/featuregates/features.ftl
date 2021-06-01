@@ -19,6 +19,11 @@ experimental-features-media-avif =
 experimental-features-media-avif-description = 開啟此功能後，{ -brand-short-name } 就會支援 AV1 圖片檔案格式（AVIF）。這是應用了 AV1 影片壓縮演算法以縮小檔案大小的靜態圖片檔案格式。若需更多資訊，請參考 <a data-l10n-name="bugzilla">bug 1443863</a>。
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
+experimental-features-media-jxl =
+    .label = 媒體: JPEG XL 格式
+experimental-features-media-jxl-description = 開啟此功能後，{ -brand-short-name } 將支援 JPEG XL（JXL）格式，這種加強過的新版圖檔格式支援不失真壓縮，讓您可從傳統的 JPEG 格式轉型升級。若需更多資訊，請參考 <a data-l10n-name="bugzilla">bug 1539075</a>。
+# The title of the experiment should be kept in English as it may be referenced
+# by various online articles and is technical in nature.
 experimental-features-web-api-inputmode =
     .label = Web API: inputmode
 # "inputmode" and "contenteditable" are technical terms and shouldn't be translated.
@@ -66,7 +71,7 @@ experimental-features-webrtc-global-mute-toggles =
 experimental-features-webrtc-global-mute-toggles-description = 新增對 WebRTC 全域分享指示器的控制元件，讓使用者能夠完全關閉麥克風與攝影機訊號來源。
 # Win32k Lockdown
 experimental-features-win32k-lockdown =
-    .label = Win32k 鎖定
+    .label = Win32k Lockdown
 experimental-features-win32k-lockdown-description = 於瀏覽器分頁中不再使用 Win32k API。可增加安全性，但目前可能還不穩定或容易出錯。（僅適用於 Windows）
 # JS JIT Warp project
 experimental-features-js-warp =

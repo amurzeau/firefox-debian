@@ -25,7 +25,7 @@ onboarding-button-label-get-started = 시작하기
 
 ## Welcome page strings
 
-onboarding-welcome-header = { -brand-short-name }를 사용해 주셔서 감사합니다.
+onboarding-welcome-header = { -brand-short-name }에 오신 것을 환영합니다
 onboarding-welcome-body = 이제 브라우저가 있습니다.<br/>{ -brand-product-name }의 나머지를 만나 보세요.
 onboarding-welcome-learn-more = 장점 더 알아보기
 onboarding-welcome-modal-get-body = 이제 브라우저가 있습니다.<br/>{ -brand-product-name }를 최대한 활용해 보세요.
@@ -36,7 +36,7 @@ onboarding-welcome-form-header = 여기서 시작
 onboarding-join-form-body = 시작하려면 이메일 주소를 입력하세요.
 onboarding-join-form-email =
     .placeholder = 이메일 입력
-onboarding-join-form-email-error = 유효한 이메일이 필요합니다
+onboarding-join-form-email-error = 유효한 이메일이 필요함
 onboarding-join-form-legal = 계속 진행하면 <a data-l10n-name="terms">서비스 약관</a> 및 <a data-l10n-name="privacy">개인정보처리방침</a>에 동의하게 됩니다.
 onboarding-join-form-continue = 계속
 # This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
@@ -66,7 +66,7 @@ onboarding-sync-form-skip-login-button = 단계 건너뛰기
 
 ## This is part of the line "Enter your email to continue to Firefox Sync"
 
-onboarding-sync-form-header = 이메일을 입력
+onboarding-sync-form-header = 이메일 입력
 onboarding-sync-form-sub-header = 해서 { -sync-brand-name } 사용
 
 ## These are individual benefit messages shown with an image, title and
@@ -169,13 +169,13 @@ onboarding-multistage-welcome-secondary-button-text = 계정이 있으십니까?
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "default" should stay inside the span.
 onboarding-multistage-set-default-header = { -brand-short-name }를 <span data-l10n-name="zap">기본 브라우저</span>로 설정하기
-onboarding-multistage-set-default-subtitle = 탐색할 때마다 속도, 안전 및 개인 정보 보호 기능이 제공됩니다.
+onboarding-multistage-set-default-subtitle = 탐색할 때 속도, 안전 및 개인 정보 보호 기능이 제공됩니다.
 onboarding-multistage-set-default-primary-button-label = 기본 브라우저로
 onboarding-multistage-set-default-secondary-button-label = 나중에
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. { -brand-short-name } should stay inside the span.
 onboarding-multistage-pin-default-header = 클릭 한 번으로 <span data-l10n-name="zap">{ -brand-short-name }</span> 시작
-onboarding-multistage-pin-default-subtitle = 웹을 사용할 때마다 빠르고 안전하며 사생활 보호를 할 수 있습니다.
+onboarding-multistage-pin-default-subtitle = 웹을 사용할 때 빠르고 안전하며 사생활 보호를 할 수 있습니다.
 # The "settings" here refers to "Windows 10 Settings App" and not the browser's
 onboarding-multistage-pin-default-waiting-subtitle = 설정이 열리면 웹 브라우저에서 { -brand-short-name }를 선택하세요
 # The "settings" here refers to "Windows 10 Settings App" and not the browser's
@@ -200,7 +200,6 @@ onboarding-welcome-steps-indicator =
 # automatically added to the text inside it. "look" should stay inside the span.
 onboarding-multistage-theme-header = <span data-l10n-name="zap">외양</span> 선택하기
 onboarding-multistage-theme-subtitle = 테마로 { -brand-short-name }를 개인화하세요.
-onboarding-multistage-theme-primary-button-label = 테마 저장
 onboarding-multistage-theme-primary-button-label2 = 완료
 onboarding-multistage-theme-secondary-button-label = 나중에
 # Automatic theme uses operating system color settings
@@ -219,39 +218,126 @@ onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
 onboarding-multistage-theme-tooltip-automatic-2 =
     .title =
         버튼, 메뉴 및 창에
-        운영 체제의 모양을 상속.
+        운영 체제의 모양을 상속합니다.
 # Input description for automatic theme
 onboarding-multistage-theme-description-automatic-2 =
     .aria-description =
         버튼, 메뉴 및 창에
-        운영 체제의 모양을 상속.
+        운영 체제의 모양을 상속합니다.
 # Tooltip displayed on hover of light theme
 onboarding-multistage-theme-tooltip-light-2 =
     .title =
         버튼, 메뉴 및 창에
-        밝은 화면 배색을 사용.
+        밝은 화면 배색을 사용합니다.
 # Input description for light theme
 onboarding-multistage-theme-description-light =
     .aria-description =
         버튼, 메뉴 및 창에
-        밝은 화면 배색을 사용.
+        밝은 화면 배색을 사용합니다.
 # Tooltip displayed on hover of dark theme
 onboarding-multistage-theme-tooltip-dark-2 =
     .title =
         버튼, 메뉴 및 창에
-        어두운 화면 배색을 사용.
+        어두운 화면 배색을 사용합니다.
 # Input description for dark theme
 onboarding-multistage-theme-description-dark =
     .aria-description =
         버튼, 메뉴 및 창에
-        어두운 화면 배색을 사용.
+        어두운 화면 배색을 사용합니다.
 # Tooltip displayed on hover of Alpenglow theme
 onboarding-multistage-theme-tooltip-alpenglow-2 =
     .title =
         버튼, 메뉴 및 창에
-        색상형 화면 배색을 사용.
+        색상형 화면 배색을 사용합니다.
 # Input description for Alpenglow theme
 onboarding-multistage-theme-description-alpenglow =
     .aria-description =
         버튼, 메뉴 및 창에
-        색상형 화면 배색을 사용.
+        색상형 화면 배색을 사용합니다.
+
+## Multistage MR1 onboarding strings (MR1 about:welcome pages)
+
+# "Hero Text" displayed on left side of welcome screen.
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
+# It also signals the passion users bring to Firefox, how they use
+# Firefox to pursue those passions, as well as the boldness in their
+# choice to use Firefox over a larger competitor browser.
+# An alternative title for localization is: "It starts here".
+# This text can be formatted to span multiple lines as needed.
+mr1-welcome-screen-hero-text = 시작
+# Caption for background image in about:welcome. "Soraya Osorio" is the name
+# of the person and shouldn't be translated.
+mr1-onboarding-welcome-image-caption = Soraya Osorio — 가구 디자이너, Firefox 팬
+# This button will open system settings to turn on prefers-reduced-motion
+mr1-onboarding-reduce-motion-button-label = 애니메이션 끄기
+mr1-onboarding-welcome-header = { -brand-short-name }에 오신 것을 환영합니다
+mr1-onboarding-set-default-pin-primary-button-label = { -brand-short-name }를 기본 브라우저로 설정
+    .title = { -brand-short-name }를 기본 브라우저로 설정하고 작업 표시줄에 고정
+mr1-onboarding-set-default-only-primary-button-label = { -brand-short-name }를 기본 브라우저로 설정
+mr1-onboarding-set-default-secondary-button-label = 나중에
+mr1-onboarding-sign-in-button-label = 로그인
+mr1-onboarding-import-header = 모든 것을 가져오기
+mr1-onboarding-import-subtitle = 비밀번호, 북마크 등을 <br/>가져옵니다.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
+# Variables:
+#   $previous (Str) - Previous browser name, such as Edge, Chrome
+mr1-onboarding-import-primary-button-label-attribution = { $previous }에서 가져오기
+# This string will be used in cases where we can't detect the previous browser name.
+mr1-onboarding-import-primary-button-label-no-attribution = 이전 브라우저에서 가져오기
+mr1-onboarding-import-secondary-button-label = 나중에
+mr1-onboarding-theme-header = 나만의 것으로 만들기
+mr1-onboarding-theme-subtitle = 테마로 { -brand-short-name }를 개인화하세요.
+mr1-onboarding-theme-primary-button-label = 테마 저장
+mr1-onboarding-theme-secondary-button-label = 나중에
+# System theme uses operating system color settings
+mr1-onboarding-theme-label-system = 시스템 테마
+mr1-onboarding-theme-label-light = 밝게
+mr1-onboarding-theme-label-dark = 어둡게
+# "Alpenglow" here is the name of the theme, and should be kept in English.
+mr1-onboarding-theme-label-alpenglow = Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of system theme
+mr1-onboarding-theme-tooltip-system =
+    .title =
+        버튼, 메뉴 및 창에 
+        운영 체제의 테마를 따릅니다.
+# Input description for system theme
+mr1-onboarding-theme-description-system =
+    .aria-description =
+        버튼, 메뉴 및 창에 
+        운영 체제의 테마를 따릅니다.
+# Tooltip displayed on hover of light theme
+mr1-onboarding-theme-tooltip-light =
+    .title =
+        버튼, 메뉴 및 창에 
+        밝은 테마를 사용합니다.
+# Input description for light theme
+mr1-onboarding-theme-description-light =
+    .aria-description =
+        버튼, 메뉴 및 창에 
+        밝은 테마를 사용합니다.
+# Tooltip displayed on hover of dark theme
+mr1-onboarding-theme-tooltip-dark =
+    .title =
+        버튼, 메뉴 및 창에 
+        어두운 테마를 사용합니다.
+# Input description for dark theme
+mr1-onboarding-theme-description-dark =
+    .aria-description =
+        버튼, 메뉴 및 창에 
+        어두운 테마를 사용합니다.
+# Tooltip displayed on hover of Alpenglow theme
+mr1-onboarding-theme-tooltip-alpenglow =
+    .title =
+        버튼, 메뉴 및 창에 
+        역동적이고 다양한 색상의 테마를 사용합니다.
+# Input description for Alpenglow theme
+mr1-onboarding-theme-description-alpenglow =
+    .aria-description =
+        버튼, 메뉴 및 창에 
+        역동적이고 다양한 색상의 테마를 사용합니다.

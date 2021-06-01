@@ -425,7 +425,7 @@ performance-title = Desempenho
 performance-use-recommended-settings-checkbox =
     .label = Usar as configurações de desempenho recomendadas
     .accesskey = U
-performance-use-recommended-settings-desc = Essas configurações são adaptadas ao hardware e sistema operacional do seu computador.
+performance-use-recommended-settings-desc = Essas configurações são adaptadas automaticamente ao hardware e sistema operacional do computador. Desmarque se quiser modificar aceleração de hardware ou número de processos.
 performance-settings-learn-more = Saiba mais
 performance-allow-hw-accel =
     .label = Usar aceleração de hardware quando disponível
@@ -1018,9 +1018,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Balanceado entre proteção e desempenho. Páginas são carregadas normalmente.
 content-blocking-etp-strict-desc = Proteção reforçada, mas pode atrapalhar alguns sites ou conteúdos.
 content-blocking-etp-custom-desc = Escolha que rastreadores e scripts bloquear.
+content-blocking-etp-blocking-desc = { -brand-short-name } bloqueia o seguinte:
 content-blocking-private-windows = Conteúdo de rastreamento em janelas privativas
 content-blocking-cross-site-cookies = Cookies entre sites
+content-blocking-cross-site-cookies-in-all-windows = Cookies entre sites em todas as janelas (inclui cookies de rastreamento)
 content-blocking-cross-site-tracking-cookies = Cookies de rastreamento entre sites
+content-blocking-all-cross-site-cookies-private-windows = Cookies entre sites em janelas privativas
 content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies de rastreamento entre sites e isolar os cookies restantes
 content-blocking-social-media-trackers = Rastreadores de mídias sociais
 content-blocking-all-cookies = Todos os cookies
@@ -1140,6 +1143,8 @@ collection-backlogged-crash-reports =
     .label = Permitir que o { -brand-short-name } envie relatos de travamento em seu nome
     .accesskey = e
 collection-backlogged-crash-reports-link = Saiba mais
+collection-backlogged-crash-reports-with-link = Permitir que o { -brand-short-name } envie, em seu nome, relatórios acumulados de falhas <a data-l10n-name="crash-reports-link">Saiba mais</a>
+    .accesskey = f
 
 ## Privacy Section - Security
 ##

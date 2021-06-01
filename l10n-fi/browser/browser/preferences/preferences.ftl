@@ -404,6 +404,14 @@ update-setting-write-failure-message =
     
     Ei onnistuttu kirjoittamaan tiedostoon: { $path }
 update-setting-write-failure-title2 = Päivitysasetusten tallennusvirhe
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name } havaitsi virheen eikä tallentanut tätä muutosta. Huomaa, että tämän päivitysasetuksen muuttaminen vaatii oikeuden kirjoittaa alla olevaan tiedostoon. Sinä tai järjestelmän ylläpitäjä voi pystyä ratkaisemaan virheen antamalla täydet oikeudet tähän tiedostoon Käyttäjät-ryhmälle.
+    
+    Ei onnistuttu kirjoittamaan tiedostoon: { $path }
 update-in-progress-title = Päivitys meneillään
 update-in-progress-message = Haluatko, että { -brand-short-name } jatkaa tämän päivityksen asentamista?
 update-in-progress-ok-button = &Hylkää
@@ -601,6 +609,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Näytä hakuehdotukset yksityisissä ikkunoissa
 suggestions-addressbar-settings-generic = Muuta osoitepalkin muiden ehdotusten asetuksia
+suggestions-addressbar-settings-generic2 = Muuta osoitepalkin muiden ehdotusten asetuksia
 search-suggestions-cant-show = Hakuehdotuksia ei näytetä osoitepalkista tehtävistä hauista, koska olet valinnut, että { -brand-short-name } ei muista historiaa.
 search-one-click-header = Hakukoneet pikavalikossa
 search-one-click-header2 = Hakuoikotiet
@@ -660,6 +669,9 @@ sync-signedout-account-signin2 =
     .label = Kirjaudu { -sync-brand-short-name }-palveluun…
     .accesskey = i
 sync-signedout-description2 = Synkronoi kirjanmerkit, sivuhistoria, välilehdet, salasanat, lisäosat ja asetukset kaikilla laitteillasi.
+sync-signedout-account-signin3 =
+    .label = Kirjaudu synkronoidaksesi…
+    .accesskey = K
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -699,6 +711,9 @@ prefs-sync-setup =
     .label = Määritä { -sync-brand-short-name }…
     .accesskey = M
 prefs-sync-offer-setup-label = Synkronoi kirjanmerkit, historia, välilehdet, salasanat, lisäosat ja asetukset kaikkien laitteidesi välillä.
+prefs-sync-turn-on-syncing =
+    .label = Ota synkronointi käyttöön…
+    .accesskey = O
 prefs-sync-offer-setup-label2 = Synkronoi kirjanmerkit, sivuhistoria, välilehdet, salasanat, lisäosat ja asetukset kaikilla laitteillasi.
 prefs-sync-now =
     .labelnotsyncing = Synkronoi nyt
@@ -768,6 +783,10 @@ sync-engine-prefs =
         }
     .tooltiptext = Muuttamasi yleiset asetukset sekä tietosuoja- ja turvallisuusasetukset
     .accesskey = e
+sync-engine-settings =
+    .label = Asetukset
+    .tooltiptext = Muuttamasi yleiset asetukset sekä tietosuoja- ja turvallisuusasetukset
+    .accesskey = A
 
 ## The device name controls.
 
@@ -963,14 +982,14 @@ addressbar-locbar-openpage-option =
     .accesskey = a
 # Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
 addressbar-locbar-shortcuts-option =
-    .label = Oikotiet
-    .accesskey = O
+    .label = oikoteistä
+    .accesskey = o
 addressbar-locbar-topsites-option =
     .label = ykkössivustoista
     .accesskey = y
 addressbar-locbar-engines-option =
-    .label = Hakukoneet
-    .accesskey = H
+    .label = hakukoneista
+    .accesskey = h
 addressbar-suggestions-settings = Muuta hakukoneiden ehdotusten asetuksia
 
 ## Privacy Section - Content Blocking
@@ -999,9 +1018,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Tasapainotettu suojauksen ja suorituskyvyn välillä. Sivut latautuvat normaalisti.
 content-blocking-etp-strict-desc = Vahvempi suojaus, mutta saattaa aiheuttaa sivustojen tai sisällön toimimattomuutta.
 content-blocking-etp-custom-desc = Valitse, mitkä seuraimet ja komentosarjat estetään.
+content-blocking-etp-blocking-desc = { -brand-short-name } estää seuraavat:
 content-blocking-private-windows = Seurantaan tarkoitettu sisältö yksityisissä ikkunoissa
 content-blocking-cross-site-cookies = Sivustorajat ylittävät evästeet
+content-blocking-cross-site-cookies-in-all-windows = Sivustorajat ylittävät evästeet kaikissa ikkunoissa (mukaan lukien seurainevästeet)
 content-blocking-cross-site-tracking-cookies = Sivustorajat ylittävät seurainevästeet
+content-blocking-all-cross-site-cookies-private-windows = Sivustorajat ylittävät evästeet yksityisissä ikkunoissa
 content-blocking-cross-site-tracking-cookies-plus-isolate = Sivustorajat ylittävät seuraimet, eristä jäljelle jäävät evästeet
 content-blocking-social-media-trackers = Sosiaalisen median seuraimet
 content-blocking-all-cookies = Kaikki evästeet
@@ -1093,7 +1115,7 @@ permissions-addon-exceptions =
     .label = Poikkeukset…
     .accesskey = P
 permissions-a11y-privacy-checkbox =
-    .label = Estä esteettömyyspalveluja käyttämästä selaintasi
+    .label = Estä saavutettavuuspalveluja käyttämästä selaintasi
     .accesskey = v
 permissions-a11y-privacy-link = Lue lisää
 
@@ -1121,6 +1143,8 @@ collection-backlogged-crash-reports =
     .label = Salli, että { -brand-short-name } lähettää lähettämättömät kaatumisilmoitukset puolestasi
     .accesskey = e
 collection-backlogged-crash-reports-link = Lue lisää
+collection-backlogged-crash-reports-with-link = Salli, että { -brand-short-name } lähettää lähettämättömät kaatumisraportit puolestasi <a data-l10n-name="crash-reports-link">Lue lisää</a>
+    .accesskey = S
 
 ## Privacy Section - Security
 ##
@@ -1185,6 +1209,8 @@ space-alert-under-5gb-message = { -brand-short-name(case: "ablative") } loppuu k
 space-alert-over-5gb-settings-button =
     .label = Avaa asetukset
     .accesskey = A
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name(case: "ablative") } loppuu kohta levytila.</strong> Sivustojen sisällöt eivät ehkä näy oikein. Voit tyhjentää sivustotiedot avaamalla Asetukset > Tietosuoja ja turvallisuus > Evästeet ja sivustotiedot.
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name(case: "ablative") } loppuu kohta levytila.</strong> Sivustojen sisällöt eivät ehkä näy oikein. Voit lukea levyn käytön optimoimisesta selaamisen sujuvoittamiseksi painamalla ”Lue lisää”.
 
 ## Privacy Section - HTTPS-Only
 

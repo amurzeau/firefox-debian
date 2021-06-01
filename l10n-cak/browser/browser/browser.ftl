@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Titz'aqatisäx “{ $engineName }”
+    .tooltiptext = Titz'aqatisäx kanob'äl “{ $engineName }”
+    .aria-label = Titz'aqatisäx kanob'äl “{ $engineName }”
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Titz'aqatisäx Kanob'äl
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Retamab'al Ruxaq richin { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Rujikomal Okem richin { $host }
 identity-connection-not-secure = Man ütz ta okem
 identity-connection-secure = Rujikomal okem
+identity-connection-failure = Xsach ri okem
 identity-connection-internal = Re re' ütz chi { -brand-short-name } ruxaq.
 identity-connection-file = Re ruxaq k'amaya'l re' yakon pan akematz'ib'.
 identity-extension-page = Re jun ruxaq k'amaya'l re' nisamajib'ëx pa jun k'amal.
@@ -319,6 +339,7 @@ identity-https-only-info-turn-off2 = We man nisamäj ta ütz ri ruxaq, rik'in ju
 identity-https-only-info-no-upgrade = Man nitikïr ta nik'ex ri okem pa HTTP.
 identity-permissions-storage-access-header = Kicookies xoch'in taq ruxaq
 identity-permissions-storage-access-hint = Re taq peraj re' yetikïr nikokisaj kikokies xoch'in taq ruxaq chuqa' kitzij taq ruxaq toq at k'o pa re ruxaq.
+identity-permissions-storage-access-learn-more = Tetamäx ch'aqa' chik
 identity-permissions-reload-hint = Rik'in jub'a' k'o chi yatok chik pa ruxaq richin yesamäj ri taq k'exoj.
 identity-permissions-empty = Majun chi ya'oj q'ij ya'on chawe' pa re ruxaq k'amaya'l re'.
 identity-clear-site-data =
@@ -365,7 +386,7 @@ browser-window-close-button =
 ## Tab actions
 
 # This label should be written in all capital letters if your locale supports them.
-browser-tab-audio-playing2 = Netz'an
+browser-tab-audio-playing2 = Tzijon
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-muted2 = Mem
 # This label should be written in all capital letters if your locale supports them.
@@ -493,6 +514,11 @@ urlbar-placeholder-with-name =
     .placeholder = Takanoj pa { $name } o tatz'ib'aj ri rochochib'al
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Ri Okik'amaya'l k'o pa ruq'a' ri näj chajinïk
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Näj nisamajïx pe ri okik'amaya'l (aruma: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Xaya' ruwi' ya'oj q'ij chi re re ajk'amaya'l ruxaq re'.
 urlbar-switch-to-tab =
@@ -546,6 +572,13 @@ urlbar-result-action-tabtosearch-web = Tikanöx pa { $engine } pa kikajtz'ik och
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Tikanöx { $engine } pa kikajtz'ik ochochib'äl
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Tiwachib'ëx
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -574,9 +607,6 @@ pointerlock-warning-no-domain = Re ruxaq wuj re' chajin ruma ri retal ch'oy. Tap
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Xsach jun peraj ruxaq.</strong> Chi ri { -brand-product-name } nretamaj chi rij re k'ayewal chuqa' anin nich'ojmïr, tataqa' jun rutzijol.
-crashed-subframe-learnmore =
-    .label = Tetamäx Ch'aqa' Chik
-    .accesskey = T
 crashed-subframe-learnmore-link =
     .value = Tisik'ïx Ch'aqa' Chik
 crashed-subframe-submit =
@@ -589,8 +619,6 @@ bookmarks-show-all-bookmarks =
     .label = Kek'ut konojel ri taq yaketal
 bookmarks-manage-bookmarks =
     .label = Kenuk'samajïx Taq Yaketal
-bookmarks-recent-bookmarks-panel =
-    .value = K'ak'a' Taq Yaketal
 bookmarks-recent-bookmarks-panel-subheader = K'ak'a' Taq Yaketal
 bookmarks-toolbar-chevron =
     .tooltiptext = Kek'ut pe ch'aqa' chik taq yaketal
@@ -664,6 +692,20 @@ save-to-pocket-button =
 
 ## Customize Toolbar Buttons
 
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Taq tz'aqat chuqa' taq wachinel
+    .tooltiptext = Ke'anuk'samajïx ri taq atz'aqat chuqa' taq awachinel ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Taq nuk'ulem
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Kejaq ri taq runuk'ulem ({ $shortcut })
+           *[other] Kejaq ri taq runuk'ulem
+        }
 
 ## More items
 

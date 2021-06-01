@@ -10,10 +10,11 @@ search-header =
     .searchbuttonlabel = Tschertgar
 search-header-shortcut =
     .key = f
+list-empty-get-extensions-message = Visita <a data-l10n-name="get-extensions">{ $domain }</a> per installar extensiuns e designs
 list-empty-installed =
     .value = Ti n'has anc installà nagins supplements da quest tip
 list-empty-available-updates =
-    .value = Chattà naginas actualisaziuns
+    .value = Na chattà naginas actualisaziuns
 list-empty-recent-updates =
     .value = Ti n'has actualisà nagins supplements l'ultim temp
 list-empty-find-updates =
@@ -216,7 +217,7 @@ addon-updates-reset-updates-to-manual = Midar tut ils supplements sin l'actualis
 
 addon-updates-updating = Ils supplements vegnan actualisads
 addon-updates-installed = Tes supplements èn vegnids actualisads.
-addon-updates-none-found = Chattà naginas actualisaziuns
+addon-updates-none-found = Na chattà naginas actualisaziuns
 addon-updates-manual-updates-found = Mussar las actualisaziuns disponiblas
 
 ## Add-on install/debug strings for page options menu

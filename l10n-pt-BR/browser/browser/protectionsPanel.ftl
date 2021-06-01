@@ -4,7 +4,7 @@
 
 protections-panel-sendreportview-error = Houve um erro ao enviar o relatório. Tente novamente mais tarde.
 # A link shown when ETP is disabled for a site. Opens the breakage report subview when clicked.
-protections-panel-sitefixedsendreport-label = Site corrigido? Enviar relatório
+protections-panel-sitefixedsendreport-label = O site passou a funcionar? Envie um relato
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -80,18 +80,22 @@ protections-panel-cryptominers = Criptomineradores usam o poder computacional do
 protections-panel-fingerprinters = Fingerprinters coletam configurações do seu navegador e do seu computador para traçar um perfil seu. Usando esta identidade digital, eles podem rastrear você em vários sites.
 protections-panel-tracking-content = Sites podem carregar anúncios, vídeos e outros conteúdos externos com código de rastreamento. Bloquear conteúdo de rastreamento pode ajudar a carregar sites mais rápido, mas alguns botões, formulários e campos de acesso a contas podem não funcionar.
 protections-panel-social-media-trackers = Redes sociais colocam rastreadores em outros sites para seguir o que você faz, vê e assiste online. Isto permite que empresas de mídias sociais saibam mais sobre você, muito além do que você compartilha nos perfis de suas mídias sociais.
+protections-panel-description-shim-allowed = Alguns rastreadores marcados abaixo foram parcialmente desbloqueados nesta página porque você interagiu com eles.
+protections-panel-description-shim-allowed-learn-more = Saiba mais
+protections-panel-shim-allowed-indicator =
+    .tooltiptext = Rastreador desbloqueado parcialmente
 protections-panel-content-blocking-manage-settings =
     .label = Gerenciar configuração de proteção
     .accesskey = G
 protections-panel-content-blocking-breakage-report-view =
     .title = Relatar um site com problemas
-protections-panel-content-blocking-breakage-report-view-description = Bloquear certos rastreadores pode causar problemas em alguns sites. Relatar esses problemas ajuda a melhorar o { -brand-short-name } para todos. Ao enviar este relato, é enviado para a Mozilla uma URL e informações sobre configurações do seu navegador. <label data-l10n-name="learn-more">Saiba mais</label>
+protections-panel-content-blocking-breakage-report-view-description = Bloquear certos rastreadores pode causar problemas em alguns sites. Relatar esses problemas ajuda a melhorar o { -brand-short-name } para todos. Ao enviar este relato, a Mozilla recebe o endereço da página e informações sobre configurações do seu navegador. <label data-l10n-name="learn-more">Saiba mais</label>
 protections-panel-content-blocking-breakage-report-view-collection-url = URL
 protections-panel-content-blocking-breakage-report-view-collection-url-label =
     .aria-label = URL
-protections-panel-content-blocking-breakage-report-view-collection-comments = Opcional: descreva o problema
+protections-panel-content-blocking-breakage-report-view-collection-comments = Descreva o problema (opcional)
 protections-panel-content-blocking-breakage-report-view-collection-comments-label =
-    .aria-label = Opcional: descreva o problema
+    .aria-label = Descreva o problema (opcional)
 protections-panel-content-blocking-breakage-report-view-cancel =
     .label = Cancelar
 protections-panel-content-blocking-breakage-report-view-send-report =

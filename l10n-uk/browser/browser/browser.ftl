@@ -227,7 +227,7 @@ full-screen-exit =
 
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
-search-one-offs-with-title = Цього разу, пошук з:
+search-one-offs-with-title = Цього разу шукати з:
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
@@ -249,6 +249,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Додати “{ $engineName }”
+    .tooltiptext = Додати засіб пошуку “{ $engineName }”
+    .aria-label = Додати засіб пошуку “{ $engineName }”
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Додати засіб пошуку
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -296,8 +308,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Інформація про сайт для { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Безпека з'єднання для { $host }
 identity-connection-not-secure = Незахищене з'єднання
 identity-connection-secure = Захищене з'єднання
+identity-connection-failure = Збій з'єднання
 identity-connection-internal = Це захищена сторінка { -brand-short-name }.
 identity-connection-file = Ця сторінка збережена на вашому комп'ютері.
 identity-extension-page = Ця сторінка завантажена з розширення.
@@ -322,6 +342,7 @@ identity-https-only-info-turn-off2 = Якщо сторінка виглядає 
 identity-https-only-info-no-upgrade = Не вдалося змінити з'єднання з HTTP.
 identity-permissions-storage-access-header = Куки сторонніх сайтів
 identity-permissions-storage-access-hint = Ці сторони сайти можуть використовувати куки стеження між сайтами та дані сайту, поки ви перебуваєте на поточному вебсайті.
+identity-permissions-storage-access-learn-more = Докладніше
 identity-permissions-reload-hint = Для застосування змін, можливо, доведеться перезавантажити сторінку.
 identity-permissions-empty = Ви не надали цьому сайту жодних спеціальних дозволів.
 identity-clear-site-data =
@@ -496,6 +517,11 @@ urlbar-placeholder-with-name =
     .placeholder = Шукайте з { $name } або введіть адресу
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Браузер знаходиться під віддаленим керуванням
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Браузер керується ззовні (причина: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Ви надали цьому вебсайту додаткові дозволи.
 urlbar-switch-to-tab =
@@ -584,9 +610,6 @@ pointerlock-warning-no-domain = Цей документ отримав конт�
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Збій частини цієї сторінки.</strong> Надішліть звіт, щоб повідомити { -brand-product-name } про цю проблему для швидшого її розв'язання.
-crashed-subframe-learnmore =
-    .label = Дізнатися більше
-    .accesskey = Д
 crashed-subframe-learnmore-link =
     .value = Докладніше
 crashed-subframe-submit =
@@ -599,8 +622,6 @@ bookmarks-show-all-bookmarks =
     .label = Показати всі закладки
 bookmarks-manage-bookmarks =
     .label = Керувати закладками
-bookmarks-recent-bookmarks-panel =
-    .value = Недавні закладки
 bookmarks-recent-bookmarks-panel-subheader = Недавні закладки
 bookmarks-toolbar-chevron =
     .tooltiptext = Показати інші закладки

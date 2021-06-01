@@ -123,3 +123,46 @@ move-attachment-last-panel-button =
 button-return-receipt =
     .label = Potwierdzenie
     .tooltiptext = Żądaj potwierdzenia dostarczenia tej wiadomości
+#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
+consider-bcc-notification = { $count } odbiorców w polach Do i Kopia może widzieć swoje adresy. Można uniknąć ujawniania odbiorców, używając zamiast tego pola Ukryta kopia.
+
+# Addressing Area
+
+to-compose-address-row-label =
+    .value = Do
+#   $key (String) - the shortcut key for this field
+to-compose-show-address-row-menuitem =
+    .label = Pole „{ to-compose-address-row-label.value }”
+    .accesskey = D
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+to-compose-show-address-row-label =
+    .value = { to-compose-address-row-label.value }
+    .tooltiptext = Pokaż pole „{ to-compose-address-row-label.value }” ({ to-compose-show-address-row-menuitem.acceltext })
+cc-compose-address-row-label =
+    .value = Kopia
+#   $key (String) - the shortcut key for this field
+cc-compose-show-address-row-menuitem =
+    .label = Pole „{ cc-compose-address-row-label.value }”
+    .accesskey = K
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+cc-compose-show-address-row-label =
+    .value = { cc-compose-address-row-label.value }
+    .tooltiptext = Pokaż pole „{ cc-compose-address-row-label.value }” ({ cc-compose-show-address-row-menuitem.acceltext })
+bcc-compose-address-row-label =
+    .value = Ukryta kopia
+#   $key (String) - the shortcut key for this field
+bcc-compose-show-address-row-menuitem =
+    .label = Pole „{ bcc-compose-address-row-label.value }”
+    .accesskey = U
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+bcc-compose-show-address-row-label =
+    .value = { bcc-compose-address-row-label.value }
+    .tooltiptext = Pokaż pole „{ bcc-compose-address-row-label.value }” ({ bcc-compose-show-address-row-menuitem.acceltext })
+#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
+many-public-recipients-info = { $count } odbiorców w polach Do i Kopia będzie widzieć swoje adresy. Można uniknąć ujawniania odbiorców, używając zamiast tego pola Ukryta kopia.
+many-public-recipients-bcc =
+    .label = Użyj pola Ukryta kopia
+    .accesskey = U
+many-public-recipients-ignore =
+    .label = Ujawnij odbiorców
+    .accesskey = w

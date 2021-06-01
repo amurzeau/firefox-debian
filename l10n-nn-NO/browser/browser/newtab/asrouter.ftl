@@ -153,10 +153,10 @@ cfr-whatsnew-fingerprinter-counter-header =
         [one] Fingerprinter blokkert
        *[other] Fingerprinters blokkerte
     }
-cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } blokkerer mange fingerprintarar som i det skjulte samlar informasjon om eininga di og handlingane dine for å lage ein annonseringsprofil for deg.
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } blokkerer mange fingerprintarar som i løynd samlar informasjon om eininga di og handlingane dine for å lage ein annonseringsprofil av deg.
 # Message variation when fingerprinters count is less than 10
 cfr-whatsnew-fingerprinter-counter-header-alt = Fingerprinters
-cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } kan blokkere fingerprintarar som i det skjulte samlar informasjon om eininga di og handlingane dine for å lage ein annonseringsprofil for deg.
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } kan blokkere fingerprintarar som i løynd samlar informasjon om eininga di og handlingane dine for å lage ein annonseringsprofil for deg.
 
 ## Bookmark Sync
 
@@ -220,8 +220,6 @@ cfr-doorhanger-milestone-heading2 =
     }
 cfr-doorhanger-milestone-ok-button = Vis alle
     .accesskey = s
-cfr-doorhanger-milestone-close-button = Lat att
-    .accesskey = L
 
 ## What’s New Panel Content for Firefox 76
 
@@ -246,6 +244,8 @@ cfr-whatsnew-pip-fullscreen-icon-alt = Bilde-i-bilde ikon
 
 ## Protections Dashboard message
 
+cfr-doorhanger-milestone-close-button = Lat att
+    .accesskey = L
 
 ## What’s New Panel Content for Firefox 76
 ## Protections Dashboard message
@@ -264,8 +264,6 @@ cfr-whatsnew-better-pdf-body = PDF-dokument vert no opna direkte i { -brand-shor
 
 cfr-doorhanger-doh-body = Personvernet ditt betyr noko. { -brand-short-name } rutar no DNS-førespurnadane dine trygt når det er mogleg, til ei teneste levert av ein partnar, for å beskytte deg medan du surfar.
 cfr-doorhanger-doh-header = Sikrare og krypterte DNS-oppslag
-cfr-doorhanger-doh-primary-button = OK, eg skjønar
-    .accesskey = O
 cfr-doorhanger-doh-primary-button-2 = OK
     .accesskey = O
 cfr-doorhanger-doh-secondary-button = Slå av
@@ -283,7 +281,7 @@ cfr-doorhanger-fission-secondary-button = Les meir
 ## What's new: Cookies message
 
 cfr-whatsnew-clear-cookies-header = Automatisk vern mot lure sporingsmetodar
-cfr-whatsnew-clear-cookies-body = Nokre sporarar vidarekoplar deg til andre nettstadar som i hemmelegheit stiller inn infokapslar. { -brand-short-name } fjernar no automatisk infokapslane slik at du ikkje kan bli spora.
+cfr-whatsnew-clear-cookies-body = Nokre sporarar vidarekoplar deg til andre nettstadar som i løynd stiller inn infokapslar. { -brand-short-name } fjernar no automatisk infokapslane slik at du ikkje kan bli spora.
 cfr-whatsnew-clear-cookies-image-alt = Illustrasjon for blokkert infokapsel
 
 ## What's new: Media controls message
@@ -300,7 +298,7 @@ cfr-whatsnew-search-shortcuts-body = Når nå du no skriv inn ein søkjemotor el
 ## What's new: Cookies protection
 
 cfr-whatsnew-supercookies-header = Vern mot vondsinna super-infokapslar
-cfr-whatsnew-supercookies-body = Nettstadar kan i hemmelegheit leggje til ein «super-infokapsel» i nettlesaren din som kan følgje deg rundt på nettet, sjølv etter at du har fjerna infokapslane dine. { -brand-short-name } gir no eit sterkt vern mot super-infokapslar, slik at dei ikkje kan brukast til å spore aktivitetane dine på nettet frå ein nettstad til ein annan.
+cfr-whatsnew-supercookies-body = Nettstadar kan i løynd leggje til ein «super-infokapsel» i nettlesaren din som kan følgje deg rundt på nettet, sjølv etter at du har fjerna infokapslane dine. { -brand-short-name } gir no eit sterkt vern mot super-infokapslar, slik at dei ikkje kan brukast til å spore aktivitetane dine på nettet frå ein nettstad til ein annan.
 
 ## What's new: Better bookmarking
 

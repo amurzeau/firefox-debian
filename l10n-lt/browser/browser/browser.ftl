@@ -249,6 +249,10 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Ieškyklės įtraukimas
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -296,6 +300,13 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = { $host } svetainės informacija
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Ryšio saugumas su { $host }
 identity-connection-not-secure = Ryšys nesaugus
 identity-connection-secure = Ryšys saugus
 identity-connection-internal = Tai yra saugus „{ -brand-short-name }“ tinklalapis.
@@ -322,6 +333,7 @@ identity-https-only-info-turn-off2 = Jei tinklalkapis veikia netinkamai, gali te
 identity-https-only-info-no-upgrade = Nepavyko perkelti ryšio iš HTTP.
 identity-permissions-storage-access-header = Tarp svetainių veikiantys slapukai
 identity-permissions-storage-access-hint = Šios šalys gali naudoti tarp svetainių veikiančius slapukus ir svetainių duomenis, kai esate šioje svetainėje.
+identity-permissions-storage-access-learn-more = Sužinoti daugiau
 identity-permissions-reload-hint = Kad būtų pritaikyti pakeitimai, tinklalapį galimai reikia atsiųsti iš naujo.
 identity-permissions-empty = Šiai svetainei nesate suteikę jokių ypatingų leidimų.
 identity-clear-site-data =
@@ -587,9 +599,6 @@ pointerlock-warning-no-domain = Šis dokumentas valdo jūsų žymeklį. Spustel�
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Dalis šio tinklalapio užstrigo.</strong> Norėdami pranešti apie šią problemą „{ -brand-product-name }“ ir greičiau ją išspręsti, nusiųskite pranešimą.
-crashed-subframe-learnmore =
-    .label = Sužinoti daugiau
-    .accesskey = S
 crashed-subframe-learnmore-link =
     .value = Sužinoti daugiau
 crashed-subframe-submit =
@@ -602,8 +611,6 @@ bookmarks-show-all-bookmarks =
     .label = Rodyti visą adresyną
 bookmarks-manage-bookmarks =
     .label = Tvarkyti adresyną
-bookmarks-recent-bookmarks-panel =
-    .value = Paskiausi adresyno įrašai
 bookmarks-recent-bookmarks-panel-subheader = Paskiausi adresyno įrašai
 bookmarks-toolbar-chevron =
     .tooltiptext = Kiti adresai

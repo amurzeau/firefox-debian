@@ -56,6 +56,10 @@ about-debugging-sidebar-runtime-item-name-no-device =
 # Text to show in the footer of the sidebar that links to a help page
 # (currently: https://developer.mozilla.org/docs/Tools/about:debugging)
 about-debugging-sidebar-support = Sofitu pa la depuración
+# Text to show as the ALT attribute of a help icon that accompanies the help about
+# debugging link in the footer of the sidebar
+about-debugging-sidebar-support-icon =
+    .alt = Iconu d'ayuda
 # Text displayed in a sidebar button to refresh the list of USB devices. Clicking on it
 # will attempt to update the list of devices displayed in the sidebar.
 about-debugging-refresh-usb-devices-button = Refrescar los preseos
@@ -136,6 +140,9 @@ about-debugging-runtime-other-workers =
 # Title of the processes category.
 about-debugging-runtime-processes =
     .name = Procesos
+# Dedicated message for a backward compatibility issue that occurs when connecting:
+# from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
+about-debugging-browser-version-too-old-fennec = Esta versión de Firefox nun pue depurar Firefox p'Android (68). Aconseyámoste instalar Firefox Nightly p'Android nel preséu pa facer pruebes. <a>Más detalles</a>
 # Displayed for runtime info in runtime pages.
 # { $name } is brand name such as "Firefox Nightly"
 # { $version } is version such as "64.0a1"
@@ -143,6 +150,10 @@ about-debugging-runtime-name = { $name } ({ $version })
 # Text of a button displayed in Runtime pages for remote runtimes.
 # Clicking on the button will close the connection to the runtime.
 about-debugging-runtime-disconnect-button = Desconectar
+# Clicking on the header of a debug target category will expand or collapse the debug
+# target items in the category. This text is used as ’title’ attribute of the header,
+# to describe this feature.
+about-debugging-collapse-expand-debug-targets = Contrayer / Espander
 
 # Debug Targets strings
 

@@ -58,8 +58,8 @@ downloads-cmd-go-to-download-page =
     .label = Иди на станицу за преузимања
     .accesskey = G
 downloads-cmd-copy-download-link =
-    .label = Копирај линк за преузимање
-    .accesskey = К
+    .label = Копирај везу за преузимање
+    .accesskey = L
 downloads-cmd-remove-from-history =
     .label = Уклони из историје
     .accesskey = У
@@ -72,7 +72,7 @@ downloads-cmd-clear-downloads =
 # This command is shown in the context menu when downloads are blocked.
 downloads-cmd-unblock =
     .label = Дозволи преузимање
-    .accesskey = o
+    .accesskey = Д
 # This is the tooltip of the action button shown when malware is blocked.
 downloads-cmd-remove-file =
     .tooltiptext = Уклони датотеку
@@ -113,7 +113,7 @@ downloads-cancel-download =
 # the panel at all.
 downloads-history =
     .label = Прикажи сва преузимања
-    .accesskey = S
+    .accesskey = П
 # This string is shown at the top of the Download Details Panel, to indicate
 # that we are showing the details of a single download.
 downloads-details =

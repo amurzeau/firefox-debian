@@ -12,6 +12,7 @@ preferences-title =
         }
 preferences-tab-title =
     .title = Προτιμήσεις
+preferences-doc-title = Προτιμήσεις
 category-list =
     .aria-label = Κατηγορίες
 pane-general-title = Γενικά
@@ -58,8 +59,8 @@ collection-health-report-link = Μάθετε περισσότερα
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Η αναφορά δεδομένων είναι ανενεργή για αυτή την έκδοση
 collection-backlogged-crash-reports =
-    .label = Να επιτρέπεται στο { -brand-short-name } η αποστολή αναφορών σφαλμάτων που εκκρεμούν εκ μέρους σας
-    .accesskey = π
+    .label = Να επιτρέπεται στο { -brand-short-name } η αποστολή εκκρεμουσών αναφορών σφαλμάτων
+    .accesskey = σ
 collection-backlogged-crash-reports-link = Μάθετε περισσότερα
 privacy-security-header = Ασφάλεια
 privacy-scam-detection-title = Ανίχνευση απάτης
@@ -90,8 +91,8 @@ update-in-progress-ok-button = &Απόρριψη
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Συνέχεια
-account-button = Ρυθμίσεις λογαριασμού
 addons-button = Επεκτάσεις & θέματα
+account-button = Ρυθμίσεις λογαριασμού
 open-addons-sidebar-button = Πρόσθετα και θέματα
 
 ## OS Authentication dialog
@@ -268,12 +269,12 @@ compact-folder-size =
 use-cache-before =
     .value = Χρήση μέχρι
     .accesskey = μ
-use-cache-after = MB χώρου για την προσωρινή μνήμη
+use-cache-after = MB χώρου για την κρυφή μνήμη
 
 ##
 
 smart-cache-label =
-    .label = Παράκαμψη αυτόματης διαχείρισης cache
+    .label = Παράκαμψη αυτόματης διαχείρισης κρυφής μνήμης
     .accesskey = ψ
 clear-cache-button =
     .label = Εκκαθάριση τώρα
@@ -322,6 +323,8 @@ quoted-text-color =
     .accesskey = Χ
 search-input =
     .placeholder = Αναζήτηση
+search-handler-table =
+    .placeholder = Φιλτράρισμα τύπων και ενεργειών περιεχομένου
 type-column-label =
     .label = Τύπος περιεχομένου
     .accesskey = Τ

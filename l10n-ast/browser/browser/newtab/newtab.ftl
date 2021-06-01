@@ -14,9 +14,14 @@ newtab-personalize-button-label = Personalizar
 
 ## Search box component.
 
+# Variables
+#  $engine (String): the name of the user's default search engine
+newtab-search-box-handoff-text = Busca con { $engine } o introduz una direición
+newtab-search-box-text = Buscar na web
 
 ## Top Sites - General form dialog.
 
+newtab-topsites-add-search-engine-header = Amiestu d'un motor de busca
 newtab-topsites-add-shortcut-header = Atayu nuevu
 newtab-topsites-edit-shortcut-header = Edición d'un atayu
 newtab-topsites-title-label = Títulu
@@ -51,6 +56,10 @@ newtab-confirm-delete-history-p2 = Esta aición nun pue desfacese.
 newtab-menu-section-tooltip =
     .title = Abrir el menú
     .aria-label = Abrir el menú
+# Tooltip for dismiss button
+newtab-dismiss-button-tooltip =
+    .title = Quitar
+    .aria-label = Quitar
 # Tooltip on an empty topsite box to open the New Top Site dialog.
 newtab-menu-topsites-placeholder-tooltip =
     .title = Editar esti sitiu
@@ -67,7 +76,7 @@ newtab-menu-unpin = Lliberar
 newtab-menu-delete-history = Desaniciar del historial
 newtab-menu-save-to-pocket = Guardar en { -pocket-brand-name }
 newtab-menu-delete-pocket = Desaniciar de { -pocket-brand-name }
-newtab-menu-archive-pocket = Archivar en{ -pocket-brand-name }
+newtab-menu-archive-pocket = Archivar en { -pocket-brand-name }
 
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 

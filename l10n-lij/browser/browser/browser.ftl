@@ -224,6 +224,10 @@ search-one-offs-context-open-new-tab =
 search-one-offs-context-set-as-default =
     .label = Inpòsta comme motô de riçerca predefinio
     .accesskey = m
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Azonzi motô de riçerca
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -260,6 +264,9 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Informaçion do scito pe { $host }
 identity-connection-not-secure = Conescion no segua
 identity-connection-secure = Conescion segua
 identity-connection-internal = Sta chi a l'é 'na pagina segua de { -brand-short-name }.

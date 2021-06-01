@@ -2,6 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+toolbar-context-menu-new-tab =
+    .label = 새 탭
+    .accesskey = w
 toolbar-context-menu-reload-selected-tab =
     .label = 선택한 탭 새로 고침
     .accesskey = R
@@ -20,8 +23,8 @@ toolbar-context-menu-select-all-tabs =
 toolbar-context-menu-undo-close-tabs =
     .label =
         { $tabCount ->
-            [1] 탭 닫기 취소
-           *[other] 탭 닫기 취소
+            [1] 닫은 탭 다시 열기
+           *[other] 닫은 탭 다시 열기
         }
     .accesskey = U
 toolbar-context-menu-reopen-closed-tabs =

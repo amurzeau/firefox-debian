@@ -19,6 +19,11 @@ experimental-features-media-avif =
 experimental-features-media-avif-description = Con iste functionalitate activate, { -brand-short-name } supporta le formato de file de imagine AV1 (AVIF). Isto es un altere formato de file imagine que potentia le capacitates del algorithmos de compression video AV1 pro reducer le dimension imagine. Vide <a data-l10n-name="bugzilla">bug 1443863</a> pro altere detalios.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
+experimental-features-media-jxl =
+    .label = Medios: JPEG XL
+experimental-features-media-jxl-description = Con iste function activate, { -brand-short-name } supporta le formato JPEG XL (JXL). Isto es un formato de file imagine meliorate que supporta sin perditas le transition ab le traditional files JPEG. Vide <a data-l10n-name="bugzilla">bug 1539075</a> pro altere detalios.
+# The title of the experiment should be kept in English as it may be referenced
+# by various online articles and is technical in nature.
 experimental-features-web-api-inputmode =
     .label = Web API: inputmode
 # "inputmode" and "contenteditable" are technical terms and shouldn't be translated.
@@ -64,6 +69,10 @@ experimental-features-devtools-serviceworker-debugger-support-description = Acti
 experimental-features-webrtc-global-mute-toggles =
     .label = Activar/disactivar audio e video WebRTC globalmente
 experimental-features-webrtc-global-mute-toggles-description = Adder controlos al indicator de compartimento global WebRTC que permitte al usatores de silentiar globalmente le fluxos de lor microphono e camera.
+# Win32k Lockdown
+experimental-features-win32k-lockdown =
+    .label = Blocada de Win32k
+experimental-features-win32k-lockdown-description = Disactiva le uso del API Win32k in le schedas del navigator (solo in ambiente Windows). Isto garanti major securitate, ma poterea esser instabile. (Windows solmente)
 # JS JIT Warp project
 experimental-features-js-warp =
     .label = JavaScript JIT: Warp

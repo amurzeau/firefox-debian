@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Agiuntar «{ $engineName }»
+    .tooltiptext = Agiuntar la maschina da tschertgar «{ $engineName }»
+    .aria-label = Agiuntar la maschina da tschertgar «{ $engineName }»
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Agiuntar ina maschina da tschertgar
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Infurmaziuns per la site { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Segirezza da la connexiun per { $host }
 identity-connection-not-secure = Connexiun betg segirada
 identity-connection-secure = Connexiun segirada
+identity-connection-failure = Sbagl da connexiun
 identity-connection-internal = Quai è ina pagina segira da { -brand-short-name }.
 identity-connection-file = Questa pagina è memorisada sin tes computer.
 identity-extension-page = Ina extensiun ha chargià questa pagina.
@@ -319,6 +339,7 @@ identity-https-only-info-turn-off2 = Sche la pagina na funcziunescha betg endret
 identity-https-only-info-no-upgrade = Impussibel da remplazzar la connexiun HTTP.
 identity-permissions-storage-access-header = Cookies interpaginals
 identity-permissions-storage-access-hint = Questas partidas pon utilisar cookies interpaginals e datas da website durant che ti ta chattas sin questa website.
+identity-permissions-storage-access-learn-more = Ulteriuras infurmaziuns
 identity-permissions-reload-hint = Forsa stos ti chargiar da nov questa pagina per applitgar las midadas.
 identity-permissions-empty = Ti n'has betg definì autorisaziuns spezialas per questa pagina.
 identity-clear-site-data =
@@ -490,6 +511,11 @@ urlbar-placeholder-with-name =
     .placeholder = Tschertgar cun { $name } u endatar in'adressa
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Il navigatur vegn controllà a distanza
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Il navigatur vegn controllà a distanza (motiv: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Ti has concedì dretgs supplementars a questa pagina.
 urlbar-switch-to-tab =
@@ -578,9 +604,6 @@ pointerlock-warning-no-domain = Quest document controllescha il punctader. Smatg
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Ina part da questa pagina è collabada.</strong> Trametta per plaschair in rapport per infurmar { -brand-product-name } davart quest problem e gidar d'al schliar pli svelt.
-crashed-subframe-learnmore =
-    .label = Ulteriuras infurmaziuns
-    .accesskey = l
 crashed-subframe-learnmore-link =
     .value = Ulteriuras infurmaziuns
 crashed-subframe-submit =
@@ -593,8 +616,6 @@ bookmarks-show-all-bookmarks =
     .label = Mussar tut ils segnapaginas
 bookmarks-manage-bookmarks =
     .label = Administrar ils segnapaginas
-bookmarks-recent-bookmarks-panel =
-    .value = Segnapaginas novs
 bookmarks-recent-bookmarks-panel-subheader = Segnapaginas novs
 bookmarks-toolbar-chevron =
     .tooltiptext = Mussar dapli segnapaginas

@@ -11,6 +11,8 @@ newtab-settings-button =
 newtab-personalize-button-label = Εξατομίκευση
     .title = Εξατομίκευση νέας καρτέλας
     .aria-label = Εξατομίκευση νέας καρτέλας
+newtab-personalize-dialog-label =
+    .aria-label = Εξατομίκευση
 
 ## Search box component.
 
@@ -54,7 +56,7 @@ newtab-topsites-title-input =
     .placeholder = Εισάγετε έναν τίτλο
 newtab-topsites-url-label = URL
 newtab-topsites-url-input =
-    .placeholder = Πληκτρολόγηση ή επικόλληση ενός URL
+    .placeholder = Εισαγωγή ή επικόλληση URL
 newtab-topsites-url-validation = Απαιτείται έγκυρο URL
 newtab-topsites-image-url-label = URL προσαρμοσμένης εικόνας
 newtab-topsites-use-image-link = Χρήση προσαρμοσμένης εικόνας…
@@ -201,7 +203,7 @@ newtab-section-header-pocket = Προτάσεις του { $provider }
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
-newtab-empty-section-highlights = Ξεκινήστε την περιήγηση και θα σάς δείξουμε μερικά υπέροχα άρθρα, βίντεο και άλλες σελίδες που έχετε επισκεφθεί πρόσφατα ή έχετε προσθέσει στους σελιδοδείκτες σας.
+newtab-empty-section-highlights = Ξεκινήστε την περιήγηση και θα σας δείξουμε μερικά υπέροχα άρθρα, βίντεο και άλλες σελίδες που έχετε επισκεφθεί πρόσφατα ή έχετε προσθέσει στους σελιδοδείκτες σας.
 # Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 # Variables:
 #  $provider (String): Name of the content provider for this section, e.g "Pocket".
@@ -234,7 +236,7 @@ newtab-error-fallback-refresh-link = Ανανεώστε τη σελίδα για
 ## Customization Menu
 
 newtab-custom-shortcuts-title = Συντομεύσεις
-newtab-custom-shortcuts-subtitle = Ιστοσελίδες που αποθηκεύετε ή επισκέπτεστε
+newtab-custom-shortcuts-subtitle = Ιστοσελίδες από σελιδοδείκτες και ιστορικό
 newtab-custom-row-selector =
     { $num ->
         [one] { $num } σειρά
@@ -245,12 +247,12 @@ newtab-custom-pocket-title = Προτείνεται από το { -pocket-brand-
 newtab-custom-pocket-subtitle = Εξαιρετικό περιεχόμενο από το { -pocket-brand-name }, μέρος της οικογένειας του { -brand-product-name }
 newtab-custom-pocket-sponsored = Χορηγούμενα άρθρα
 newtab-custom-recent-title = Πρόσφατη δραστηριότητα
-newtab-custom-recent-subtitle = Μια συλλογή πρόσφατων ιστοσελίδων και περιεχομένου
+newtab-custom-recent-subtitle = Συλλογή πρόσφατων σελίδων και περιεχομένου
 newtab-custom-close-button = Κλείσιμο
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
 # and non-essential but also not entirely trivial and useless.
 newtab-custom-snippets-title = Αποσπάσματα
-newtab-custom-snippets-subtitle = Συμβουλές και ειδήσεις από τη { -vendor-short-name } και το { -brand-product-name }
+newtab-custom-snippets-subtitle = Συμβουλές και νέα από τη { -vendor-short-name } και το { -brand-product-name }
 newtab-custom-settings = Διαχείριση περισσότερων ρυθμίσεων

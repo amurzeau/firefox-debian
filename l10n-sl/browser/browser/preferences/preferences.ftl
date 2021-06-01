@@ -952,6 +952,8 @@ sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Spletne sledilce in sledilce družbenih omrežij
 sitedata-option-block-cross-site-tracking-cookies-including-social-media =
     .label = Spletne sledilne piškotke – vključuje piškotke družbenih omrežij
+sitedata-option-block-cross-site-cookies-including-social-media =
+    .label = Spletne piškotke – vključuje piškotke družbenih omrežij
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Spletne sledilce in sledilce družbenih omrežij ter izoliraj preostale piškotke
 sitedata-option-block-unvisited =
@@ -1003,6 +1005,7 @@ addressbar-suggestions-settings = Spremeni nastavitve predlogov iskanja
 content-blocking-enhanced-tracking-protection = Izboljšana zaščita pred sledenjem
 content-blocking-section-top-level-description = Sledilci vas spremljajo po spletu ter zbirajo podatke o vaših navadah in zanimanjih. { -brand-short-name } zavrača veliko teh sledilcev in drugih zlonamernih skriptov.
 content-blocking-learn-more = Več o tem
+content-blocking-fpi-incompatibility-warning = Uporabljate First Party Isolation (FPI), ki preglasi nekatere nastavitve piškotkov { -brand-short-name(sklon: "rodilnik") }.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1023,6 +1026,7 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Uravnotežena zaščita in delovanje. Strani bodo delovale običajno.
 content-blocking-etp-strict-desc = Močnejša zaščita, ki pa lahko povzroči nedelovanje nekaterih strani ali vsebine.
 content-blocking-etp-custom-desc = Izberite, katere sledilce in skripte želite zavračati.
+content-blocking-etp-blocking-desc = { -brand-short-name } zavrača naslednje:
 content-blocking-private-windows = Sledilno vsebino v zasebnih oknih
 content-blocking-cross-site-cookies = Spletni piškotki
 content-blocking-cross-site-tracking-cookies = Spletne sledilne piškotke
@@ -1145,6 +1149,8 @@ collection-backlogged-crash-reports =
     .label = { -brand-short-name(sklon: "dajalnik") } dovoli, da v vašem imenu pošilja poročila o sesutjih iz zaloge
     .accesskey = z
 collection-backlogged-crash-reports-link = Več o tem
+collection-backlogged-crash-reports-with-link = { -brand-short-name(sklon: "dajalnik") } dovoli, da v vašem imenu pošilja poročila o sesutjih iz zaloge <a data-l10n-name="crash-reports-link">Več o tem</a>
+    .accesskey = z
 
 ## Privacy Section - Security
 ##

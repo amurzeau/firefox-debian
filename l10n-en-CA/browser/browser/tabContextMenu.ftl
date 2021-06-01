@@ -2,6 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+tab-context-new-tab =
+    .label = New Tab
+    .accesskey = w
 reload-tab =
     .label = Reload Tab
     .accesskey = R
@@ -17,12 +20,12 @@ duplicate-tabs =
 # The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
 close-tabs-to-the-start =
-    .label = Close Tabs to the Left
+    .label = Close Tabs to Left
     .accesskey = l
 # The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
-    .label = Close Tabs to the Right
+    .label = Close Tabs to Right
     .accesskey = i
 close-other-tabs =
     .label = Close Other Tabs
@@ -66,15 +69,6 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Close Multiple Tabs
     .accesskey = M
-tab-context-share-url =
-    .label = Share
-    .accesskey = h
-tab-context-share-more =
-    .label = More…
-
-## Variables:
-##  $tabCount (Number): the number of tabs that are affected by the action.
-
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -94,6 +88,15 @@ move-tabs =
 move-tab =
     .label = Move Tab
     .accesskey = v
+tab-context-share-url =
+    .label = Share
+    .accesskey = h
+tab-context-share-more =
+    .label = More…
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-reopen-closed-tabs =
     .label =
         { $tabCount ->

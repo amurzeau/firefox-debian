@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = დაამატეთ „{ $engineName }“
+    .tooltiptext = დაემატება საძიებოდ „{ $engineName }“
+    .aria-label = დაემატება საძიებოდ „{ $engineName }“
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = საძიებო სისტემის დამატება
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = მონაცემები საიტისთვის { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = კავშირის უსაფრთხოება საიტთან { $host }
 identity-connection-not-secure = დაუცველი კავშირი
 identity-connection-secure = კავშირი დაცულია
+identity-connection-failure = კავშირი ვერ შედგა
 identity-connection-internal = { -brand-short-name } – უსაფრთხო გვერდი.
 identity-connection-file = ეს გვერდი თქვენს კომპიუტერში ინახება.
 identity-extension-page = ეს გვერდი გახსნილია გაფართოების მიერ.
@@ -319,6 +339,7 @@ identity-https-only-info-turn-off2 = თუ გვერდს ხარვე�
 identity-https-only-info-no-upgrade = ვერ ხერხდება გადასვლა HTTP-დან.
 identity-permissions-storage-access-header = საიტთაშორისი ფუნთუშები
 identity-permissions-storage-access-hint = ამ მხარეებს შეუძლია გამოიყენოს საიტთაშორისი ფუნთუშები და მონაცემები, სანამ ამ საიტზე ხართ.
+identity-permissions-storage-access-learn-more = ვრცლად
 identity-permissions-reload-hint = ცვლილებების ასამოქმედებლად შესაძლოა გვერდის ხელახლა ჩატვირთვა დაგჭირდეთ.
 identity-permissions-empty = ამ საიტისთვის განსაკუთრებული უფლებები არ მიგიციათ.
 identity-clear-site-data =
@@ -490,8 +511,13 @@ urlbar-placeholder-with-name =
     .placeholder = მოძებნეთ { $name } საძიებოთი ან შეიყვანეთ მისამართი
 urlbar-remote-control-notification-anchor =
     .tooltiptext = ბრაუზერი დაშორებული მართვის ქვეშაა
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = ბრაუზერი დაშორებული მართვის ქვეშაა (მიზეზი: { $component })
 urlbar-permissions-granted =
-    .tooltiptext = ამ საიტისთვის დამატებითი უფლებები გაქვთ მინიჭებული.
+    .tooltiptext = ამ საიტისთვის გარკვეული ნებართვები გაქვთ მითითებული.
 urlbar-switch-to-tab =
     .value = გადასვლა ჩანართზე:
 # Used to indicate that a selected autocomplete entry is provided by an extension.
@@ -543,6 +569,13 @@ urlbar-result-action-tabtosearch-web = საძიებოდ გამოი�
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = საძიებოდ გამოიყენეთ { $engine } პირდაპირ მისამართების ველიდან
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = ასლი
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -571,9 +604,6 @@ pointerlock-warning-no-domain = ეს დოკუმენტი მართ�
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>გვერდის ნაწილი უეცრად გაითიშა.</strong> თუ გსურთ { -brand-product-name } გაეცნოს ამ ხარვეზს მალე გამოსასწორებლად, გთხოვთ გაგზავნოთ მოხსენება.
-crashed-subframe-learnmore =
-    .label = ვრცლად
-    .accesskey = ლ
 crashed-subframe-learnmore-link =
     .value = ვრცლად
 crashed-subframe-submit =
@@ -586,8 +616,6 @@ bookmarks-show-all-bookmarks =
     .label = ყველა სანიშნის ჩვენება
 bookmarks-manage-bookmarks =
     .label = სანიშნების მართვა
-bookmarks-recent-bookmarks-panel =
-    .value = ბოლოს ჩანიშნული
 bookmarks-recent-bookmarks-panel-subheader = ბოლოს ჩანიშნული
 bookmarks-toolbar-chevron =
     .tooltiptext = სხვა სანიშნების გამოჩენაც
@@ -661,6 +689,20 @@ save-to-pocket-button =
 
 ## Customize Toolbar Buttons
 
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = დამატებები და თემები
+    .tooltiptext = მართეთ თქვენი დამატებები და თემები ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = პარამეტრები
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] პარამეტრების გახსნა ({ $shortcut })
+           *[other] პარამეტრების გახსნა
+        }
 
 ## More items
 

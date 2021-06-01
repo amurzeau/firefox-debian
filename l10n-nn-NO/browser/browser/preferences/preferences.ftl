@@ -186,7 +186,7 @@ show-tabs-in-taskbar =
     .label = Vis førehandsvising av faner i Windows-oppgåvelinja
     .accesskey = s
 browser-containers-enabled =
-    .label = Aktiver innehaldsfaner
+    .label = Aktiver innhaldsfaner
     .accesskey = k
 browser-containers-learn-more = Les meir
 browser-containers-settings =
@@ -836,7 +836,7 @@ forms-master-pw-use =
     .label = Bruk eit hovudpassord
     .accesskey = r
 forms-primary-pw-use =
-    .label = Bruk eit primært passord
+    .label = Bruk eit hovudpassord
     .accesskey = B
 forms-primary-pw-learn-more-link = Les meir
 # This string uses the former name of the Primary Password feature
@@ -866,7 +866,7 @@ master-password-os-auth-dialog-message-win = Skriv inn innloggingsinformasjonen 
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = opprette eit hovudpassord
 # This message can be seen by trying to add a Primary Password.
-primary-password-os-auth-dialog-message-win = Skriv inn innloggingsinformasjonen din for Windows for å lage eit hovudpassord. Dette hvil gjere kontoen din tryggare.
+primary-password-os-auth-dialog-message-win = Skriv inn innloggingsinformasjonen din for Windows for å lage eit hovudpassord. Dette vil gjere kontoen din tryggare.
 # This message can be seen by trying to add a Primary Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
@@ -1018,9 +1018,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Balansert for vern og yting. Sider vil laste normalt.
 content-blocking-etp-strict-desc = Sterkare vern, men kan føre til at nokre nettstadar eller innhald ikkje vil fungere.
 content-blocking-etp-custom-desc = Vel kva for sporarar og skript som skal blokkerast.
+content-blocking-etp-blocking-desc = { -brand-short-name } blokkerer følgjande:
 content-blocking-private-windows = Sporingsinnhald i private vindauge
 content-blocking-cross-site-cookies = Infokapslar på tvers av nettstadar
+content-blocking-cross-site-cookies-in-all-windows = Infokapslar på tvers av nettstadar i alle vindauge (inkluderer infokapslar for sporing)
 content-blocking-cross-site-tracking-cookies = Sporingsinfokapslar på tvers av nettstadar
+content-blocking-all-cross-site-cookies-private-windows = Infokapslar på tvers av nettstadar i private vindauge
 content-blocking-cross-site-tracking-cookies-plus-isolate = Sporingsinfokapsler på tvers av nettstadar, isolering av attståande infokapslar
 content-blocking-social-media-trackers = Sporing via sosiale medium
 content-blocking-all-cookies = Alle infokapslar
@@ -1140,6 +1143,8 @@ collection-backlogged-crash-reports =
     .label = Tillat { -brand-short-name } å sende etterslepne krasjrapportar på dine vegner
     .accesskey = s
 collection-backlogged-crash-reports-link = Les meir
+collection-backlogged-crash-reports-with-link = Tillat { -brand-short-name } å sende etterslepne krasjrapportar på dine vegne <a data-l10n-name="crash-reports-link">Les meir</a>
+    .accesskey = T
 
 ## Privacy Section - Security
 ##

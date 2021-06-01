@@ -10,8 +10,9 @@ search-header =
     .searchbuttonlabel = Szukaj
 search-header-shortcut =
     .key = f
+list-empty-get-extensions-message = Znajdź rozszerzenia i motywy na stronie <a data-l10n-name="get-extensions">{ $domain }</a>
 list-empty-installed =
-    .value = Brak zainstalowanych dodatków tego typu
+    .value = Nie ma zainstalowanych dodatków tego typu
 list-empty-available-updates =
     .value = Nie znaleziono aktualizacji
 list-empty-recent-updates =

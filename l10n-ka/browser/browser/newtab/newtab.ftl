@@ -11,6 +11,8 @@ newtab-settings-button =
 newtab-personalize-button-label = მორგება
     .title = ახალი ჩანართის მორგება
     .aria-label = ახალი ჩანართის მორგება
+newtab-personalize-dialog-label =
+    .aria-label = მორგება
 
 ## Search box component.
 
@@ -242,7 +244,7 @@ newtab-custom-row-selector =
     }
 newtab-custom-sponsored-sites = დაფინანსებული მალსახმობები
 newtab-custom-pocket-title = გთავაზობთ { -pocket-brand-name }
-newtab-custom-pocket-subtitle = გამორჩეული მასალები, რომელსაც { -pocket-brand-name } გთავაზობთ, { -brand-product-name }-ოჯახის ნაწილი.
+newtab-custom-pocket-subtitle = გამორჩეული მასალები, რომელთაც { -pocket-brand-name } გთავაზობთ, { -brand-product-name }-ოჯახის ნაწილი.
 newtab-custom-pocket-sponsored = დაფინანსებული ამბები
 newtab-custom-recent-title = ბოლო მოქმედებები
 newtab-custom-recent-subtitle = შერჩეული ბოლოს ნანახი საიტებისა და მასალებიდან

@@ -404,6 +404,14 @@ update-setting-write-failure-message =
     
     Ndaikatúi ojehai marandurendápe: { $path }
 update-setting-write-failure-title2 = Ojavy eñongatúvo mbohekopyahu ñemboheko
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name } ojuhu jejavy ha noñongatúi ko moambue. Ehecháke ko ñembohekopyahu moĩporã oikotevẽha ñemoneĩ ehai hag̃ua marandurenda oĩmava ko’ág̃a guive. Nde térã ñangarekoha apopyvusu pegua omoĩporãkuaa jejavy eme’ẽvo Puruhára atýpe oñangarekóvo marandurendáre.
+    
+    Ndaikatúi ojehai marandurendápe: { $path }
 update-in-progress-title = Oñembohekopyahuhína
 update-in-progress-message = ¿Eipotápa { -brand-short-name } omongu’ejey ñembohekopyahu?
 update-in-progress-ok-button = &Hejarei
@@ -660,6 +668,7 @@ sync-signedout-description = Embojuehe nde rechaukaha, tembiasakue, tendayke, ñ
 sync-signedout-account-signin2 =
     .label = Eñepyrũ tembiapo { -sync-brand-short-name }-pe…
     .accesskey = i
+sync-signedout-description2 = Embojuehe nde rechaukaha, tembiasakue, tendayke, ñe’ẽñemi, moĩmbaha ha ñemoĩporã opaite ne mba’e’okápe.
 sync-signedout-account-signin3 =
     .label = Eike embojuehe hag̃ua…
     .accesskey = i
@@ -705,6 +714,7 @@ prefs-sync-offer-setup-label = Embojuehe techaukaha, tembiasakue, tendayke, ñe�
 prefs-sync-turn-on-syncing =
     .label = Emyandy ñembojuehe…
     .accesskey = s
+prefs-sync-offer-setup-label2 = Embojuehe nde rechaukaha, tembiasakue, tendayke, ñe’ẽñemi, moĩmbaha ha ñemoĩporã opaite ne mba’e’okápe.
 prefs-sync-now =
     .labelnotsyncing = Embojuehe ko’ág̃a
     .accesskeynotsyncing = N
@@ -1008,9 +1018,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Imbytéva ñemo’ã ha tembiapokuépe g̃uarã. Umi kuatiarogue henyhẽta hekoitépe.
 content-blocking-etp-strict-desc = Ñemo’ãve, hákatu ikatu ndahetái tenda térã tetepy nahenyhẽi.
 content-blocking-etp-custom-desc = Eiporavo mba’ete tapykuehoha ha scripts ejokose.
+content-blocking-etp-blocking-desc = { -brand-short-name } ojoko ko’ãva:
 content-blocking-private-windows = Tetepy rapykueho ovetã ñemíme
 content-blocking-cross-site-cookies = Kookie tenda pa’ũme
+content-blocking-cross-site-cookies-in-all-windows = Tenda ojuasáva kookie opaite ovetãme (oĩhápe kookie tapykuehoháva)
 content-blocking-cross-site-tracking-cookies = Kookie rapykuehoha hendaitáva
+content-blocking-all-cross-site-cookies-private-windows = Tenda ojuasáva kookie Ovetã Ñemiguápe
 content-blocking-cross-site-tracking-cookies-plus-isolate = Kookie rapykueho tendápe ha eipe’a kookie hembýva
 content-blocking-social-media-trackers = Ava ñandutieta rapykuehoha
 content-blocking-all-cookies = Opavavete kookie
@@ -1130,6 +1143,8 @@ collection-backlogged-crash-reports =
     .label = Emoneĩ { -brand-short-name } omondóvo marandu jejavy rehegua nde rérape
     .accesskey = c
 collection-backlogged-crash-reports-link = Kuaave
+collection-backlogged-crash-reports-with-link = Emoneĩ { -brand-short-name } omomarandúvo jejavymeme nde rérape <a data-l10n-name="crash-reports-link">Eikuaave</a>
+    .accesskey = c
 
 ## Privacy Section - Security
 ##
@@ -1194,6 +1209,8 @@ space-alert-under-5gb-message = { -brand-short-name } opyta disco pa’ũ’ỹr
 space-alert-over-5gb-settings-button =
     .label = Embojuruja ñemboheko
     .accesskey = O
+space-alert-over-5gb-message2 = { -brand-short-name } henyhẽma idísco.</strong> Umi tetepy ñanduti rendagua ikatu ndojehechaporãi. Omopotĩkuaa mba’ekuaarã tenda ñongatupyre Ñemoĩporãme > Tekoñemi ha Tekorosã > Kookie ha tenda mba’ekuaarã.
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name } opyta disco pa’ũ’ỹre.</strong> Ikatu ñanduti renda retepy ndojehechaukaporãi. Eike “Kuaavépe” eipuru porã hag̃ua nde disco ne kundaha hekoresãi hag̃ua avei.
 
 ## Privacy Section - HTTPS-Only
 

@@ -251,6 +251,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Dodaj »{ $engineName }«
+    .tooltiptext = Dodaj iskalnik »{ $engineName }«
+    .aria-label = Dodaj iskalnik »{ $engineName }«
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Dodaj iskalnik
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -299,8 +311,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Podatki o strani za { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Varnost povezave za { $host }
 identity-connection-not-secure = Povezava ni varna
 identity-connection-secure = Povezava varna
+identity-connection-failure = Napaka pri povezovanju
 identity-connection-internal = To je varna stran { -brand-short-name(sklon: "rodilnik") }.
 identity-connection-file = Ta stran je shranjena na vašem računalniku.
 identity-extension-page = To stran je naložila razširitev.
@@ -321,8 +341,11 @@ identity-https-only-dropdown-off =
 identity-https-only-dropdown-off-temporarily =
     .label = Začasno izključeno
 identity-https-only-info-turn-on2 = Vključite način samo HTTPS za to stran, če želite, da { -brand-short-name } nadgradi povezavo, ko je to mogoče.
+identity-https-only-info-turn-off2 = Če se zdi stran pokvarjena, lahko poskusite izklopiti način "Samo HTTPS", ki bo spletno mesto znova naložil z nezavarovanim HTTP.
 identity-https-only-info-no-upgrade = Povezave ni mogoče nadgraditi s HTTP.
 identity-permissions-storage-access-header = Spletni piškotki
+identity-permissions-storage-access-hint = Te stranke lahko uporabljajo spletne piškotke in podatke strani, medtem ko ste vi na tej strani.
+identity-permissions-storage-access-learn-more = Več o tem
 identity-permissions-reload-hint = Za uveljavitev sprememb boste morda morali ponovno naložiti stran.
 identity-permissions-empty = Tej strani niste dodelili posebnih dovoljenj.
 identity-clear-site-data =
@@ -388,6 +411,14 @@ browser-tab-mute =
         [two] UTIŠAJ { $count } ZAVIHKA
         [few] UTIŠAJ { $count } ZAVIHKE
        *[other] UTIŠAJ { $count } ZAVIHKOV
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] POVRNI GLASNOST ZAVIHKA
+        [one] POVRNI GLASNOST { $count } ZAVIHKA
+        [two] POVRNI GLASNOST { $count } ZAVIHKOV
+        [few] POVRNI GLASNOST { $count } ZAVIHKOV
+       *[other] POVRNI GLASNOST { $count } ZAVIHKOV
     }
 browser-tab-unblock =
     { $count ->
@@ -495,6 +526,11 @@ urlbar-placeholder-with-name =
     .placeholder = Iščite z iskalnikom { $name } ali vnesite naslov
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Brskalnik je pod daljinskim upravljanjem
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Brskalnik je pod oddaljenim upravljanjem (razlog: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Tej strani ste dodelili dodatna dovoljenja.
 urlbar-switch-to-tab =
@@ -583,9 +619,6 @@ pointerlock-warning-no-domain = Ta dokument ima nadzor nad vašim kazalcem. Prit
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Del te strani se je sesul.</strong> Pošljite { -brand-product-name }u poročilo, da ga obvestite  o težavi in mu jo pomagate hitreje odpraviti.
-crashed-subframe-learnmore =
-    .label = Več o tem
-    .accesskey = V
 crashed-subframe-learnmore-link =
     .value = Več o tem
 crashed-subframe-submit =
@@ -598,8 +631,6 @@ bookmarks-show-all-bookmarks =
     .label = Prikaži vse zaznamke
 bookmarks-manage-bookmarks =
     .label = Upravljanje zaznamkov
-bookmarks-recent-bookmarks-panel =
-    .value = Nedavni zaznamki
 bookmarks-recent-bookmarks-panel-subheader = Nedavni zaznamki
 bookmarks-toolbar-chevron =
     .tooltiptext = Prikaži več zaznamkov

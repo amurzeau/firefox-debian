@@ -18,7 +18,7 @@ serviceworker-list-header = Service Workers
 # about:debugging to see all registered Service Workers.
 serviceworker-list-aboutdebugging = Open <a>about:debugging</a> for Service Workers from other domains
 # Text for the button to unregister a Service Worker. Displayed for active Service Workers.
-serviceworker-worker-unregister = Unregister
+serviceworker-worker-unregister = Опозови регистрацију
 # Text for the debug link displayed for an already started Service Worker. Clicking on the
 # link opens a new devtools toolbox for this service worker. The title attribute is only
 # displayed when the link is disabled.
@@ -78,6 +78,13 @@ serviceworker-empty-intro-link = Сазнајте више
 serviceworker-empty-suggestions-aboutdebugging2 = Прикажи service worker-е са других домена
 # Header for the Manifest page when we have an actual manifest
 manifest-view-header = Манифест апликације
+# Header for the Manifest page when there's no manifest to inspect
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
+manifest-empty-intro = Прво додајте манифест веб-апликације да бисте га прегледали овде. <a>Сазнајте више</a>
+# Header for the Manifest page when there's no manifest to inspect
+manifest-empty-intro2 = Манифест веб-апликације није пронађен
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
+manifest-empty-intro-link = Сазнајте како да додате манифест
 # Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
 manifest-item-warnings = Грешке и упозорења
 # Header for the Identity section of Manifest inspection displayed in the application panel.
@@ -86,6 +93,21 @@ manifest-item-identity = Идентитет
 manifest-item-presentation = Презентација
 # Header for the Icon section of Manifest inspection displayed in the application panel.
 manifest-item-icons = Иконе
+# Text displayed while we are loading the manifest file
+manifest-loading = Учитавање манифеста…
+# Text displayed when the manifest has been successfully loaded
+manifest-loaded-ok = Манифест је учитан.
+# Text displayed as a caption when there has been an error while trying to
+# load the manifest
+manifest-loaded-error = Дошло је до грешке при учитавању манифеста:
+# Text displayed as an error when there has been a Firefox DevTools error while
+# trying to load the manifest
+manifest-loaded-devtools-error = Грешка у Firefox-овим алаткама за програмере
+# Text displayed when the page has no manifest available
+manifest-non-existing = Манифест за преглед није пронађен.
+# Text displayed when the page has a manifest embedded in a Data URL and
+# thus we cannot link to it.
+manifest-json-link-data-url = Манифест је уграђен у data URL.
 # Text displayed at manifest icons to label their purpose, as declared
 # in the manifest.
 manifest-icon-purpose = Намена: <code>{ $purpose }</code>
@@ -100,6 +122,14 @@ manifest-icon-img-title = Икона са величинама: { $sizes }
 # Text displayed as the title attribute for <img> tags showing the icons in the
 # manifest, in case there's no icon size specified by the user
 manifest-icon-img-title-no-sizes = Икона ненаведене величине
+# Sidebar navigation item for Manifest sidebar item section
+sidebar-item-manifest = Манифест
+    .alt = Икона манифеста
+    .title = Манифест
+# Sidebar navigation item for Service Workers sidebar item section
+sidebar-item-service-workers = Сервис воркери
+    .alt = Икона сервис воркера
+    .title = Сервис воркери
 # Text for the ALT and TITLE attributes of the warning icon
 icon-warning =
     .alt = Икона упозорења

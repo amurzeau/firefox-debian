@@ -10,6 +10,9 @@ preferences-title =
             [windows] Dewisiadau
            *[other] Dewisiadau
         }
+preferences-tab-title =
+    .title = Dewisiadau
+preferences-doc-title = Dewisiadau
 category-list =
     .aria-label = Categorïau
 pane-general-title = Cyffredinol
@@ -88,8 +91,9 @@ update-in-progress-ok-button = &Dileu
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Parhau
-account-button = Gosodiadau'r Cyfrif
 addons-button = Estyniadau a Themâu
+account-button = Gosodiadau'r Cyfrif
+open-addons-sidebar-button = Ychwanegion a Themâu
 
 ## OS Authentication dialog
 
@@ -323,6 +327,8 @@ quoted-text-color =
     .accesskey = L
 search-input =
     .placeholder = Chwilio
+search-handler-table =
+    .placeholder = Hidlo mathau a gweithredoedd cynnwys
 type-column-label =
     .label = Math o Gynnwys
     .accesskey = M
@@ -708,6 +714,17 @@ search-input-box =
             [windows] Canfod yn Dewisiadau
            *[other] Canfod yn Dewisiadau
         }
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-preferences-input =
+    .style = width: 15.4em
+    .placeholder = Canfod yn y Dewisiadau
 
 ## Preferences UI Search Results
 

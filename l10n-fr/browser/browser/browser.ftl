@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Ajouter « { $engineName } »
+    .tooltiptext = Ajouter le moteur de recherche « { $engineName } »
+    .aria-label = Ajouter le moteur de recherche « { $engineName } »
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Ajouter un moteur de recherche
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Informations pour le site { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Sécurité de la connexion pour { $host }
 identity-connection-not-secure = Connexion non sécurisée
 identity-connection-secure = Connexion sécurisée
+identity-connection-failure = Échec de connexion
 identity-connection-internal = Cette page de { -brand-short-name } est sécurisée.
 identity-connection-file = Cette page est stockée sur votre ordinateur.
 identity-extension-page = Cette page a été chargée depuis une extension.
@@ -319,6 +339,7 @@ identity-https-only-info-turn-off2 = Si la page ne semble pas fonctionnelle, vou
 identity-https-only-info-no-upgrade = Impossible de sécuriser la connexion.
 identity-permissions-storage-access-header = Cookies intersites
 identity-permissions-storage-access-hint = Ces organismes peuvent utiliser des cookies intersites et les données du site tant que vous êtes sur ce site.
+identity-permissions-storage-access-learn-more = En savoir plus
 identity-permissions-reload-hint = Vous devrez peut-être actualiser la page pour que les changements prennent effet.
 identity-permissions-empty = Vous n’avez pas accordé de permission particulière à ce site.
 identity-clear-site-data =
@@ -581,9 +602,6 @@ pointerlock-warning-no-domain = Ce document contrôle votre pointeur. Appuyez su
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Une partie de cette page a planté.</strong> Pour informer { -brand-product-name } de ce problème et le résoudre plus rapidement, veuillez envoyer un rapport.
-crashed-subframe-learnmore =
-    .label = En savoir plus
-    .accesskey = E
 crashed-subframe-learnmore-link =
     .value = En savoir plus
 crashed-subframe-submit =
@@ -596,8 +614,6 @@ bookmarks-show-all-bookmarks =
     .label = Afficher tous les marque-pages
 bookmarks-manage-bookmarks =
     .label = Organiser les marque-pages
-bookmarks-recent-bookmarks-panel =
-    .value = Marque-pages récents
 bookmarks-recent-bookmarks-panel-subheader = Marque-pages récents
 bookmarks-toolbar-chevron =
     .tooltiptext = Afficher plus de marque-pages
@@ -674,8 +690,8 @@ save-to-pocket-button =
 # Variables:
 #  $shortcut (String): keyboard shortcut to open the add-ons manager
 toolbar-addons-themes-button =
-    .label = Modules complémentaires et thèmes
-    .tooltiptext = Gérer vos modules complémentaires et thèmes ({ $shortcut })
+    .label = Extensions et thèmes
+    .tooltiptext = Gérer vos extensions et thèmes ({ $shortcut })
 # Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
 toolbar-settings-button =

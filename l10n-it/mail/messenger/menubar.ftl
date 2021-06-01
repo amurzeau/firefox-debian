@@ -46,3 +46,18 @@ toolbar-delete-button =
 toolbar-undelete-button =
     .label = Annulla eliminazione
     .tooltiptext = Annulla eliminazione dei messaggi selezionati
+
+## View / Layout
+
+mail-uidensity-label =
+    .label = Densità
+    .accesskey = D
+mail-uidensity-compact =
+    .label = Compatta
+    .accesskey = C
+mail-uidensity-normal =
+    .label = Normale
+    .accesskey = N
+mail-uidensity-touch =
+    .label = Touch
+    .accesskey = T

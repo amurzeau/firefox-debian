@@ -2,11 +2,14 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+toolbar-context-menu-new-tab =
+    .label = Panibagong Tab
+    .accesskey = P
 toolbar-context-menu-reload-selected-tab =
-    .label = I-Reload ang napiling Tab
+    .label = i-Reload ang Napiling Tab
     .accesskey = R
 toolbar-context-menu-reload-selected-tabs =
-    .label = I-Reload ang mga napiling Tab
+    .label = i-Reload ang mga napiling Tab
     .accesskey = R
 toolbar-context-menu-bookmark-selected-tab =
     .label = i-Bookmark ang Napiling Tab…
@@ -25,6 +28,14 @@ toolbar-context-menu-undo-close-tabs =
            *[other] Buksang Muli ang mga Isinarang Tab
         }
     .accesskey = U
+toolbar-context-menu-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Muling Buksan ang Naisarang Tab
+            [one] Muling Buksan ang Naisarang Tab
+           *[other] Muling Buksan ang mga Naisarang Tab
+        }
+    .accesskey = M
 toolbar-context-menu-manage-extension =
     .label = I-manage ang Extension
     .accesskey = E
@@ -41,7 +52,7 @@ toolbar-context-menu-report-extension =
 # personalbarCmd ("Bookmarks Toolbar"), so they should have different
 # access keys.
 toolbar-context-menu-pin-to-overflow-menu =
-    .label = I-pin sa Overflow Menu
+    .label = i-Pin sa Overflow Menu
     .accesskey = P
 toolbar-context-menu-auto-hide-downloads-button =
     .label = Auto-Hide in Toolbar
@@ -52,3 +63,6 @@ toolbar-context-menu-remove-from-toolbar =
 toolbar-context-menu-view-customize-toolbar =
     .label = I-customize...
     .accesskey = c
+toolbar-context-menu-view-customize-toolbar-2 =
+    .label = i-Customize ang Toolbar…
+    .accesskey = C

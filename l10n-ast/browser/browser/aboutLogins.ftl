@@ -53,6 +53,7 @@ login-list-sort-label-text = Ordenar por:
 login-list-name-option = Nome (A-Z)
 login-list-name-reverse-option = Nome (Z-A)
 about-logins-login-list-alerts-option = Alertes
+login-list-last-changed-option = Última modificación
 login-list-last-used-option = Últimu usu
 login-list-intro-title = Nun s'atoparon anicios de sesión
 login-list-intro-description = Equí van amosase les contraseñes cuando les guardes en { -brand-product-name }.
@@ -76,6 +77,8 @@ login-intro-description = Si guardesti los anicios de sesión nel { -brand-produ
 login-intro-instruction-fxa = Crea una { -fxaccount-brand-name } o anicia sesión nel preséu onde se guarden los tos anicios de sesión
 login-intro-instruction-fxa-settings = Asegúrate de que marcares el caxellu «Anicios de sesión» nos axustes de { -sync-brand-short-name }
 about-logins-intro-instruction-help = Visita'l <a data-l10n-name="help-link">Sofitu de { -lockwise-brand-short-name }</a> pa más ayuda
+login-intro-instructions-fxa = Crea una { -fxaccount-brand-name } o anicia sesión nel preséu onde se guarden los tos anicios de sesión
+login-intro-instructions-fxa-settings = Vete p'Axustes > Sync > Activar la sincronización… Esbilla'l caxellu «Anicios de sesión y contraseñes»
 login-intro-instructions-fxa-help = Visita'l <a data-l10n-name="help-link">Sofitu de { -lockwise-brand-short-name }</a> pa más ayuda.
 about-logins-intro-import = Si los tos anicios de sesión tán guardaos n'otru restolador, pues <a data-l10n-name="import-link">importalos a { -lockwise-brand-short-name }</a>
 about-logins-intro-import2 = Si los tos anicios de sesión tán guardaos fuera de { -brand-product-name }, pues <a data-l10n-name="import-browser-link">importalos d'otru restolador</a> o <a data-l10n-name="import-file-link">d'un ficheru</a>
@@ -102,6 +105,7 @@ login-item-copied-password-button-text = ¡Copióse!
 login-item-save-changes-button = Guardar los cambeos
 login-item-save-new-button = Guardar
 login-item-cancel-button = Encaboxar
+login-item-time-changed = Última modificación: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
 login-item-time-created = Data de creación: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = Últimu usu: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
 
@@ -339,6 +343,11 @@ about-logins-import-report-added =
     { $count ->
         [one] <div data-l10n-name="count">{ $count }</div><div data-l10n-name="details">Aniciu de sesión nuevu</div>
        *[other] <div data-l10n-name="count">{ $count }</div><div data-l10n-name="details">Anicios de sesión nuevos</div>
+    }
+about-logins-import-report-modified =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Aniciu de sesión anováu</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Anicios de sesión anovaos</div>
     }
 
 ## Logins import report page

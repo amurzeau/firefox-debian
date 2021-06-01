@@ -404,6 +404,14 @@ update-setting-write-failure-message =
     
     Ne eblis skribi la dosieron: { $path }
 update-setting-write-failure-title2 = Eraro dum konservo de ĝistadigaj agordoj
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name } trovis eraron kaj ne konservis tiun ĉi ŝanĝon. Bonvolu noti ke oni bezonas povi skribi la suban dosieron, por povi agordi tiun ĉi ĝisdatigan agordon. Vi, aŭ sistema administranto povus eble solvi la eraron jene: rajtigi la grupon Users plene regi tiun ĉi dosiero.
+    
+    Ne eblis skribi la dosieron: { $path }
 update-in-progress-title = Ĝisdatigo plenumata
 update-in-progress-message = Ĉu vi volas ke { -brand-short-name } daŭrigu tiun ĉi ĝisdatigon?
 update-in-progress-ok-button = &Abandoni
@@ -1010,9 +1018,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Ekvilibrita por protekto kaj efikeco. Paĝoj ŝargiĝos normale.
 content-blocking-etp-strict-desc = Pli forta proteko, sed kelkaj retejoj aŭ enhavjo povus ne bone funkcii.
 content-blocking-etp-custom-desc = Elektu blokotajn spurilojn kaj skriptojn
+content-blocking-etp-blocking-desc = { -brand-short-name } blokas la jenon:
 content-blocking-private-windows = Spurila enhavo en privataj fenestroj
 content-blocking-cross-site-cookies = Interretejaj kuketoj
+content-blocking-cross-site-cookies-in-all-windows = Interretejajn kuketojn en ĉiuj fenestroj (tio inkluzivas spurilajn kuketojn)
 content-blocking-cross-site-tracking-cookies = Interretejaj spuriloj
+content-blocking-all-cross-site-cookies-private-windows = Interretejajn kuketojn en privataj fenestroj
 content-blocking-cross-site-tracking-cookies-plus-isolate = Interretejaj spurilaj kuketoj, kaj izoli ceterajn kuketojn
 content-blocking-social-media-trackers = Sociretaj spuriloj
 content-blocking-all-cookies = Ĉiuj kuketoj
@@ -1132,6 +1143,8 @@ collection-backlogged-crash-reports =
     .label = Permesi al { -brand-short-name } sendi antaŭe kolektitajn raportojn pri paneo
     .accesskey = p
 collection-backlogged-crash-reports-link = Pli da informo
+collection-backlogged-crash-reports-with-link = Permesi al { -brand-short-name } aŭtomate sendi ankoraŭ nesenditajn raportojn pri paneo. <a data-l10n-name="crash-reports-link">Pli da informo</a>
+    .accesskey = A
 
 ## Privacy Section - Security
 ##

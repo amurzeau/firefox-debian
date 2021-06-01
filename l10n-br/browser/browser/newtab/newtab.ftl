@@ -11,6 +11,8 @@ newtab-settings-button =
 newtab-personalize-button-label = Personelaat
     .title = Personelaat un ivinell nevez
     .aria-label = Personelaat un ivinell nevez
+newtab-personalize-dialog-label =
+    .aria-label = Personelaat
 
 ## Search box component.
 
@@ -19,16 +21,36 @@ newtab-search-box-search-button =
     .title = Klask
     .aria-label = Klask
 newtab-search-box-search-the-web-text = Klask er web
+# Variables
+#  $engine (String): the name of the user's default search engine
+newtab-search-box-handoff-text = Klask gant { $engine } pe skrivañ ur chomlecʼh
+newtab-search-box-handoff-text-no-engine = Klask pe skrivañ ur chomlecʼh
+# Variables
+#  $engine (String): the name of the user's default search engine
+newtab-search-box-handoff-input =
+    .placeholder = Klask gant { $engine } pe skrivañ ur chomlecʼh
+    .title = Klask gant { $engine } pe skrivañ ur chomlecʼh
+    .aria-label = Klask gant { $engine } pe skrivañ ur chomlecʼh
+newtab-search-box-handoff-input-no-engine =
+    .placeholder = Klask pe skrivañ ur chomlecʼh
+    .title = Klask pe skrivañ ur chomlecʼh
+    .aria-label = Klask pe skrivañ ur chomlecʼh
 newtab-search-box-search-the-web-input =
     .placeholder = Klask er web
     .title = Klask er web
+    .aria-label = Klask er web
+newtab-search-box-text = Klask er web
+newtab-search-box-input =
+    .placeholder = Klask er web
     .aria-label = Klask er web
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = Ouzhpennañ ul lusker klask
 newtab-topsites-add-topsites-header = Lec'hiennoù gwellañ nevez
-newtab-topsites-edit-topsites-header = Embann al Lec'hiennoù Gwellañ
+newtab-topsites-add-shortcut-header = Berradenn nevez
+newtab-topsites-edit-topsites-header = Kemmañ al lec'hienn wellañ
+newtab-topsites-edit-shortcut-header = Kemmañ ar verradenn
 newtab-topsites-title-label = Titl
 newtab-topsites-title-input =
     .placeholder = Enankañ un titl
@@ -210,6 +232,7 @@ newtab-error-fallback-refresh-link = Adkargit ar bajenn evit klask en-dro.
 ## Customization Menu
 
 newtab-custom-shortcuts-title = Berradennoù
+newtab-custom-shortcuts-subtitle = Lec'hiennoù bet enrollet pe gweladennet ganeoc'h
 newtab-custom-row-selector =
     { $num ->
         [one] { $num } renk
@@ -219,6 +242,16 @@ newtab-custom-row-selector =
        *[other] { $num } renk
     }
 newtab-custom-sponsored-sites = Berradurioù paeroniet
+newtab-custom-pocket-title = Erbedet gant { -pocket-brand-name }
+newtab-custom-pocket-subtitle = Danvezioù dibar dibabet gant { -pocket-brand-name }, ezel familh { -brand-product-name }
 newtab-custom-pocket-sponsored = Istorioù paeroniet
 newtab-custom-recent-title = Oberiantiz nevesañ
+newtab-custom-recent-subtitle = Un dibab lec'hiennoù ha danvezioù nevez
 newtab-custom-close-button = Serriñ
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = Notennigoù
+newtab-custom-snippets-subtitle = Tunioù ha nevezinti gant { -vendor-short-name } ha { -brand-product-name }
+newtab-custom-settings = Merañ muioc'h a arventennoù

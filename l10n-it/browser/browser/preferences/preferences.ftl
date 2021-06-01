@@ -212,6 +212,10 @@ switch-links-to-new-tabs =
     .label = Porta in primo piano le nuove schede aperte da un link
     .accesskey = P
 
+switch-to-new-tabs =
+    .label = Porta in primo piano la scheda quando si aproono link, immagini o contenuti multimediali in una nuova scheda
+    .accesskey = P
+
 show-tabs-in-taskbar =
     .label = Visualizza un’anteprima delle schede nella barra delle applicazioni di Windows
     .accesskey = V
@@ -1219,10 +1223,13 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Equilibrio tra protezione e prestazioni. Le pagine si caricheranno normalmente.
 content-blocking-etp-strict-desc = Maggiore protezione, ma alcuni siti o contenuti potrebbero non funzionare correttamente.
 content-blocking-etp-custom-desc = Scegli quali traccianti e script bloccare.
+content-blocking-etp-blocking-desc = { -brand-short-name } blocca i seguenti elementi:
 
 content-blocking-private-windows = Contenuti traccianti in finestre anonime
 content-blocking-cross-site-cookies = Cookie intersito
+content-blocking-cross-site-cookies-in-all-windows = Cookie intersito in tutte le finestre (inclusi cookie traccianti)
 content-blocking-cross-site-tracking-cookies = Cookie traccianti intersito
+content-blocking-all-cross-site-cookies-private-windows = Cookie traccianti intersito in finestre anonime
 content-blocking-cross-site-tracking-cookies-plus-isolate = Cookie traccianti intersito, isola i cookie restanti
 content-blocking-social-media-trackers = Traccianti dei social media
 content-blocking-all-cookies = Tutti i cookie
@@ -1367,6 +1374,8 @@ collection-backlogged-crash-reports =
     .label = Consenti a { -brand-short-name } di inviare segnalazioni di arresto anomalo in sospeso
     .accesskey = C
 collection-backlogged-crash-reports-link = Ulteriori informazioni
+collection-backlogged-crash-reports-with-link = Consenti a { -brand-short-name } di inviare segnalazioni di arresto anomalo in sospeso <a data-l10n-name="crash-reports-link">Ulteriori informazioni</a>
+    .accesskey = C
 
 ## Privacy Section - Security
 ##

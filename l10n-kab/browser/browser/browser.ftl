@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Rnu “{ $engineName }”
+    .tooltiptext = Rnu amsedday n unadi “{ $engineName }”
+    .aria-label = Rnu amsedday n unadi “{ $engineName }”
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Rnu amsedday n unadi
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Asmel n talɣut i { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Taɣellist n tuqqna i { $host }
 identity-connection-not-secure = Tuqqna taraɣelsant
 identity-connection-secure = Taɣellist n tuqqna
+identity-connection-failure = Tuqqna ur teddi ara
 identity-connection-internal = Wa d asebter { -brand-short-name } aɣelsan.
 identity-connection-file = Asebter-a yettwakles deg uselkim-inek.
 identity-extension-page = Asebter-a yuli-d seg usiɣzef.
@@ -319,6 +339,7 @@ identity-https-only-info-turn-off2 = Ma asebter yettban yerreẓ, tzemreḍ ad t
 identity-https-only-info-no-upgrade = Aleqqem n tuggna seg HTTP d awezɣi.
 identity-permissions-storage-access-header = Inagan n tuqqna gar yismal
 identity-permissions-storage-access-hint = Imdanen-a zemren ad sxedmen inagan n tuqqna n gar yismal d yisefka n usmel mi ara tiliḍ deg usmel-a.
+identity-permissions-storage-access-learn-more = Issin ugar
 identity-permissions-reload-hint = Ahat tesriḍ ad d-tessaliḍ tikelt-nniḍen asebter akken ad yemmed wayen i tbeddleḍ.
 identity-permissions-empty = Ur tefkiḍ ara kra n tsiregt i usmel-a.
 identity-clear-site-data =
@@ -493,6 +514,11 @@ urlbar-placeholder-with-name =
     .placeholder = Nadi s { $name } neɣ sekcem tansa
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Iminig yettwaṭṭef s wudem anmeggag
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Iinig ha-t ddaw usenqed anmeggag (ssebba: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Ɣur-k tisirag-nniḍen akken ad tkecmeḍ ɣeṛ usmel-a web.
 urlbar-switch-to-tab =
@@ -581,9 +607,6 @@ pointerlock-warning-no-domain = Isemli-a yeṭṭef asewwaṛ-ik. Sit ɣef Esc a
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Aḥric seg usebter-a yerreẓ.</strong> I wakken ad iẓer { -brand-product-name } ɣef wugur-a, ad t-iṣeggem s zzerb, ttxil-k·m azen aneqqis.
-crashed-subframe-learnmore =
-    .label = Issin ugar
-    .accesskey = I
 crashed-subframe-learnmore-link =
     .value = Issin ugar
 crashed-subframe-submit =
@@ -596,8 +619,6 @@ bookmarks-show-all-bookmarks =
     .label = Sken akk ticraḍ n yisebtar
 bookmarks-manage-bookmarks =
     .label = Sefrek ticraḍ n yisebtar
-bookmarks-recent-bookmarks-panel =
-    .value = Ticraḍ n yisebtar n melmi kan
 bookmarks-recent-bookmarks-panel-subheader = Ticraḍ n yisebtar n melmi kan
 bookmarks-toolbar-chevron =
     .tooltiptext = Sken ugar n tecraḍ n yisebtar

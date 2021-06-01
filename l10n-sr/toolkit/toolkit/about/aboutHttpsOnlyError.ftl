@@ -26,3 +26,6 @@ about-httpsonly-link-learn-more = Сазнајте више…
 ## Variables:
 ##   $websiteUrl (String) - Url of the website that can be securely loded with these alternatives. Example: example.com
 
+about-httpsonly-suggestion-box-header = Могућа алтернатива
+about-httpsonly-suggestion-box-www-text = Доступна је безбедна верзија сајта <em>www.{ $websiteUrl }</em>. Можете је посетити уместо <em>{ $websiteUrl }</em>.
+about-httpsonly-suggestion-box-www-button = Иди на www.{ $websiteUrl }

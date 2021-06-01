@@ -169,13 +169,13 @@ onboarding-multistage-welcome-secondary-button-text = Masz konto?
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "default" should stay inside the span.
 onboarding-multistage-set-default-header = Ustaw przeglądarkę { -brand-short-name } jako <span data-l10n-name="zap">domyślną</span>
-onboarding-multistage-set-default-subtitle = Szybko, bezpiecznie i prywatnie przeglądaj Internet.
+onboarding-multistage-set-default-subtitle = Zawsze szybko, bezpiecznie i prywatnie przeglądaj Internet.
 onboarding-multistage-set-default-primary-button-label = Ustaw jako domyślną
 onboarding-multistage-set-default-secondary-button-label = Nie teraz
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. { -brand-short-name } should stay inside the span.
 onboarding-multistage-pin-default-header = Zacznij od ustawienia przeglądarki <span data-l10n-name="zap">{ -brand-short-name }</span> tak, aby była zawsze pod ręką
-onboarding-multistage-pin-default-subtitle = Szybko, bezpiecznie i prywatnie przeglądaj Internet.
+onboarding-multistage-pin-default-subtitle = Zawsze szybko, bezpiecznie i prywatnie przeglądaj Internet.
 # The "settings" here refers to "Windows 10 Settings App" and not the browser's
 onboarding-multistage-pin-default-waiting-subtitle = Po otwarciu ustawień wybierz „{ -brand-short-name }” w sekcji Przeglądarka sieci Web
 # The "settings" here refers to "Windows 10 Settings App" and not the browser's
@@ -184,7 +184,7 @@ onboarding-multistage-pin-default-primary-button-label = Ustaw przeglądarkę { 
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "more" should stay inside the span.
 onboarding-multistage-import-header = Importuj hasła, <br/>zakładki i <span data-l10n-name="zap">więcej</span>
-onboarding-multistage-import-subtitle = Przechodzisz z innej przeglądarki? Przeniesienie wszystkiego do przeglądarki { -brand-short-name } jest łatwe.
+onboarding-multistage-import-subtitle = Przechodzisz z innej przeglądarki? Możesz łatwo przenieść wszystko do przeglądarki { -brand-short-name }.
 onboarding-multistage-import-primary-button-label = Zacznij import
 onboarding-multistage-import-secondary-button-label = Nie teraz
 # Info displayed in the footer of import settings screen during onboarding flow.
@@ -200,7 +200,6 @@ onboarding-welcome-steps-indicator =
 # automatically added to the text inside it. "look" should stay inside the span.
 onboarding-multistage-theme-header = Wybierz swój <span data-l10n-name="zap">wygląd</span>
 onboarding-multistage-theme-subtitle = Spersonalizuj przeglądarkę { -brand-short-name } za pomocą motywu.
-onboarding-multistage-theme-primary-button-label = Zapisz motyw
 onboarding-multistage-theme-primary-button-label2 = Gotowe
 onboarding-multistage-theme-secondary-button-label = Nie teraz
 # Automatic theme uses operating system color settings
@@ -243,3 +242,92 @@ onboarding-multistage-theme-tooltip-alpenglow-2 =
 # Input description for Alpenglow theme
 onboarding-multistage-theme-description-alpenglow =
     .aria-description = Kolorowe przyciski, menu i okna.
+
+## Multistage MR1 onboarding strings (MR1 about:welcome pages)
+
+# "Hero Text" displayed on left side of welcome screen.
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
+# It also signals the passion users bring to Firefox, how they use
+# Firefox to pursue those passions, as well as the boldness in their
+# choice to use Firefox over a larger competitor browser.
+# An alternative title for localization is: "It starts here".
+# This text can be formatted to span multiple lines as needed.
+mr1-welcome-screen-hero-text =
+    Tu zaczyna się
+    ogień
+# Caption for background image in about:welcome. "Soraya Osorio" is the name
+# of the person and shouldn't be translated.
+mr1-onboarding-welcome-image-caption = Soraya Osorio — projektantka mebli, fanka Firefoksa
+# This button will open system settings to turn on prefers-reduced-motion
+mr1-onboarding-reduce-motion-button-label = Wyłącz animacje
+mr1-onboarding-welcome-header = Witamy w przeglądarce { -brand-short-name }
+mr1-onboarding-set-default-pin-primary-button-label = Ustaw przeglądarkę { -brand-short-name } jako główną
+    .title = Ustawia przeglądarkę { -brand-short-name } jako domyślną i przypina ją do paska zadań
+mr1-onboarding-set-default-only-primary-button-label = Ustaw przeglądarkę { -brand-short-name } jako domyślną
+mr1-onboarding-set-default-secondary-button-label = Nie teraz
+mr1-onboarding-sign-in-button-label = Zaloguj się
+mr1-onboarding-import-header = Zabierz to wszystko ze sobą
+mr1-onboarding-import-subtitle = Zaimportuj swoje hasła, <br/>zakładki i nie tylko.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
+# Variables:
+#   $previous (Str) - Previous browser name, such as Edge, Chrome
+mr1-onboarding-import-primary-button-label-attribution = Importuj z przeglądarki { $previous }
+# This string will be used in cases where we can't detect the previous browser name.
+mr1-onboarding-import-primary-button-label-no-attribution = Importuj z poprzedniej przeglądarki
+mr1-onboarding-import-secondary-button-label = Nie teraz
+mr1-onboarding-theme-header = Używaj jej po swojemu
+mr1-onboarding-theme-subtitle = Spersonalizuj przeglądarkę { -brand-short-name } za pomocą motywu.
+mr1-onboarding-theme-primary-button-label = Zachowaj motyw
+mr1-onboarding-theme-secondary-button-label = Nie teraz
+# System theme uses operating system color settings
+mr1-onboarding-theme-label-system = Motyw systemu
+mr1-onboarding-theme-label-light = Jasny
+mr1-onboarding-theme-label-dark = Ciemny
+# "Alpenglow" here is the name of the theme, and should be kept in English.
+mr1-onboarding-theme-label-alpenglow = Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of system theme
+mr1-onboarding-theme-tooltip-system =
+    .title =
+        Używa motywu systemu operacyjnego
+        do wyświetlania przycisków, menu i okien.
+# Input description for system theme
+mr1-onboarding-theme-description-system =
+    .aria-description =
+        Używa motywu systemu operacyjnego
+        do wyświetlania przycisków, menu i okien.
+# Tooltip displayed on hover of light theme
+mr1-onboarding-theme-tooltip-light =
+    .title =
+        Używa jasnego motywu do wyświetlania
+        przycisków, menu i okien.
+# Input description for light theme
+mr1-onboarding-theme-description-light =
+    .aria-description =
+        Używa jasnego motywu do wyświetlania
+        przycisków, menu i okien.
+# Tooltip displayed on hover of dark theme
+mr1-onboarding-theme-tooltip-dark =
+    .title =
+        Używa ciemnego motywu do wyświetlania
+        przycisków, menu i okien.
+# Input description for dark theme
+mr1-onboarding-theme-description-dark =
+    .aria-description =
+        Używa ciemnego motywu do wyświetlania
+        przycisków, menu i okien.
+# Tooltip displayed on hover of Alpenglow theme
+mr1-onboarding-theme-tooltip-alpenglow =
+    .title =
+        Używa dynamicznego, kolorowego motywu
+        do wyświetlania przycisków, menu i okien.
+# Input description for Alpenglow theme
+mr1-onboarding-theme-description-alpenglow =
+    .aria-description =
+        Używa dynamicznego, kolorowego motywu
+        do wyświetlania przycisków, menu i okien.

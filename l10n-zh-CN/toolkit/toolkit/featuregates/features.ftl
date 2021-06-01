@@ -19,6 +19,11 @@ experimental-features-media-avif =
 experimental-features-media-avif-description = 启用后，{ -brand-short-name } 将支持 AV1 图像文件格式（AVIF）。这是一种静态图像文件格式，它利用 AV1 视频压缩算法的特性来减小图像体积。欲详细了解，请参阅 <a data-l10n-name="bugzilla">Bug 1443863</a>。
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
+experimental-features-media-jxl =
+    .label = 媒体：JPEG XL
+experimental-features-media-jxl-description = 启用此功能后，{ -brand-short-name } 将支持 JPEG XL（JXL）格式。这是一种增强的图像文件格式，支持从传统 JPEG 文件无损过渡。欲详细了解，请参阅 <a data-l10n-name="bugzilla">Bug 1539075</a>。
+# The title of the experiment should be kept in English as it may be referenced
+# by various online articles and is technical in nature.
 experimental-features-web-api-inputmode =
     .label = Web API: inputmode
 # "inputmode" and "contenteditable" are technical terms and shouldn't be translated.

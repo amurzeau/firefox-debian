@@ -224,8 +224,8 @@ default-font = Προεπιλεγμένη γραμματοσειρά
 default-font-size = Μέγεθος
     .accesskey = Μ
 advanced-fonts =
-    .label = Για προχωρημένους…
-    .accesskey = Γ
+    .label = Σύνθετα…
+    .accesskey = Σ
 colors-settings =
     .label = Χρώματα...
     .accesskey = Χ
@@ -452,8 +452,8 @@ browsing-use-onscreen-keyboard =
     .label = Εμφάνιση πληκτρολογίου αφής όταν χρειάζεται
     .accesskey = π
 browsing-use-cursor-navigation =
-    .label = Πάντα χρήση των πλήκτρων του δρομέα για πλοήγηση στις ιστοσελίδες
-    .accesskey = ω
+    .label = Πάντα χρήση των πλήκτρων του κέρσορα για πλοήγηση στις ιστοσελίδες
+    .accesskey = π
 browsing-search-on-start-typing =
     .label = Αναζήτηση κειμένου κατά την έναρξη πληκτρολόγησης
     .accesskey = ν
@@ -532,7 +532,7 @@ home-prefs-topsites-by-option-sponsored =
     .label = Χορηγούμενες κορυφαίες ιστοσελίδες
 home-prefs-shortcuts-header =
     .label = Συντομεύσεις
-home-prefs-shortcuts-description = Ιστοσελίδες που αποθηκεύετε ή επισκέπτεστε
+home-prefs-shortcuts-description = Ιστοσελίδες από σελιδοδείκτες και ιστορικό
 home-prefs-shortcuts-by-option-sponsored =
     .label = Χορηγούμενες συντομεύσεις
 
@@ -551,7 +551,7 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Χορηγούμενες ιστορίες
 home-prefs-highlights-header =
     .label = Κορυφαίες στιγμές
-home-prefs-highlights-description = Μια συλλογή ιστοσελίδων που έχετε αποθηκεύσει ή επισκεφθεί
+home-prefs-highlights-description = Μια συλλογή ιστοσελίδων από τους σελιδοδείκτες ή το ιστορικό
 home-prefs-highlights-option-visited-pages =
     .label = Σελίδες που έχετε επισκεφθεί
 home-prefs-highlights-options-bookmarks =
@@ -570,7 +570,7 @@ home-prefs-recent-activity-description = Μια συλλογή πρόσφατω�
 home-prefs-snippets-header =
     .label = Αποσπάσματα
 home-prefs-snippets-description = Ενημερώσεις από τη { -vendor-short-name } και το { -brand-product-name }
-home-prefs-snippets-description-new = Συμβουλές και ειδήσεις από τη { -vendor-short-name } και το { -brand-product-name }
+home-prefs-snippets-description-new = Συμβουλές και νέα από τη { -vendor-short-name } και το { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -922,7 +922,7 @@ sitedata-total-size-calculating = Υπολογισμός μεγέθους δεδ
 # Variables:
 #   $value (Number) - Value of the unit (for example: 4.6, 500)
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
-sitedata-total-size = Τα αποθηκευμένα cookies, δεδομένα ιστοσελίδων και η προσωρινή μνήμη, αυτή τη στιγμή, καταλαμβάνουν { $value } { $unit } χώρου στο δίσκο.
+sitedata-total-size = Αυτή τη στιγμή, τα αποθηκευμένα cookies, τα δεδομένα ιστοσελίδων και η προσωρινή μνήμη καταλαμβάνουν { $value } { $unit } χώρου στο δίσκο.
 sitedata-learn-more = Μάθετε περισσότερα
 sitedata-delete-on-close =
     .label = Διαγραφή cookies και δεδομένων ιστοσελίδων όταν κλείνει το { -brand-short-name }
@@ -982,20 +982,20 @@ addressbar-locbar-openpage-option =
     .accesskey = Ο
 # Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
 addressbar-locbar-shortcuts-option =
-    .label = Συντομεύσεις
+    .label = Συντομεύσεων
     .accesskey = Σ
 addressbar-locbar-topsites-option =
     .label = Κορυφαίων ιστοσελίδων
     .accesskey = Κ
 addressbar-locbar-engines-option =
-    .label = Μηχανές αναζήτησης
+    .label = Μηχανών αναζήτησης
     .accesskey = α
 addressbar-suggestions-settings = Αλλαγή προτιμήσεων για τις προτάσεις μηχανών αναζήτησης
 
 ## Privacy Section - Content Blocking
 
 content-blocking-enhanced-tracking-protection = Ενισχυμένη προστασία από καταγραφή
-content-blocking-section-top-level-description = Οι ιχνηλάτες σάς ακολουθούν στο διαδίκτυο για να συλλέξουν δεδομένα σχετικά με τις συνήθειες και τα ενδιαφέροντά σας. Το { -brand-short-name } αποκλείει πολλούς από αυτούς τους ιχνηλάτες και άλλα κακόβουλα σενάρια.
+content-blocking-section-top-level-description = Οι ιχνηλάτες σάς ακολουθούν στο διαδίκτυο ώστε να συλλέξουν δεδομένα για τις συνήθειες και τα ενδιαφέροντά σας. Το { -brand-short-name } αποκλείει πολλούς από αυτούς, καθώς και άλλα κακόβουλα σενάρια.
 content-blocking-learn-more = Μάθετε περισσότερα
 content-blocking-fpi-incompatibility-warning = Χρησιμοποιείτε τη λειτουργία First Party Isolation (FPI), που παρακάμπτει ορισμένες ρυθμίσεις του { -brand-short-name } σχετικά με τα cookies.
 
@@ -1018,9 +1018,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Ισορροπία μεταξύ προστασίας και επιδόσεων. Οι σελίδες θα φορτώνονται κανονικά.
 content-blocking-etp-strict-desc = Ισχυρότερη προστασία, αλλά πιθανή δυσλειτουργία μερικών ιστοσελίδων ή περιεχομένου.
 content-blocking-etp-custom-desc = Επιλέξτε ιχνηλάτες και σενάρια για αποκλεισμό.
+content-blocking-etp-blocking-desc = Το { -brand-short-name } αποκλείει τα εξής:
 content-blocking-private-windows = Περιεχόμενο καταγραφής σε ιδιωτικά παράθυρα
 content-blocking-cross-site-cookies = Cookies μεταξύ ιστοσελίδων
+content-blocking-cross-site-cookies-in-all-windows = Cookies μεταξύ ιστοσελίδων σε όλα τα παράθυρα (περιλαμβάνει cookies καταγραφής)
 content-blocking-cross-site-tracking-cookies = Cookies ιχνηλάτησης μεταξύ ιστοσελίδων
+content-blocking-all-cross-site-cookies-private-windows = Cookies μεταξύ ιστοσελίδων σε ιδιωτικά παράθυρα
 content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies ιχνηλάτησης μεταξύ ιστοσελίδων και απομόνωση των υπόλοιπων
 content-blocking-social-media-trackers = Ιχνηλάτες κοινωνικών δικτύων
 content-blocking-all-cookies = Όλα τα cookies
@@ -1119,7 +1122,7 @@ permissions-a11y-privacy-link = Μάθετε περισσότερα
 ## Privacy Section - Data Collection
 
 collection-header = Συλλογή και χρήση δεδομένων { -brand-short-name }
-collection-description = Αγωνιζόμαστε για να σάς παρέχουμε επιλογές και συλλέγουμε μόνο αυτά που χρειαζόμαστε, ώστε να παρέχουμε και να βελτιώσουμε το { -brand-short-name } για όλους. Ζητούμε πάντα την άδεια πριν λάβουμε προσωπικές πληροφορίες.
+collection-description = Αγωνιζόμαστε για να σας παρέχουμε επιλογές και συλλέγουμε μόνο αυτά που χρειαζόμαστε, ώστε να παρέχουμε και να βελτιώσουμε το { -brand-short-name } για όλους. Ζητούμε πάντα την άδεια πριν λάβουμε προσωπικές πληροφορίες.
 collection-privacy-notice = Σημείωση απορρήτου
 collection-health-report-telemetry-disabled = Δεν επιτρέπεται πλέον στο { -vendor-short-name } η συλλογή τεχνικών δεδομένων και δεδομένων αλληλεπίδρασης. Όλα τα προηγούμενα δεδομένα θα διαγραφούν μέσα σε 30 ημέρες.
 collection-health-report-telemetry-disabled-link = Μάθετε περισσότερα
@@ -1137,9 +1140,11 @@ addon-recommendations-link = Μάθετε περισσότερα
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Η αναφορά δεδομένων είναι ανενεργή για αυτή την έκδοση
 collection-backlogged-crash-reports =
-    .label = Να επιτρέπεται στο { -brand-short-name } η αποστολή αναφορών σφαλμάτων που εκκρεμούν εκ μέρους σας
+    .label = Να επιτρέπεται στο { -brand-short-name } η αποστολή εκκρεμουσών αναφορών σφαλμάτων
     .accesskey = σ
 collection-backlogged-crash-reports-link = Μάθετε περισσότερα
+collection-backlogged-crash-reports-with-link = Να επιτρέπεται στο { -brand-short-name } η αποστολή αναφορών καταρρεύσεων με καθυστέρηση <a data-l10n-name="crash-reports-link">Μάθετε περισσότερα</a>
+    .accesskey = κ
 
 ## Privacy Section - Security
 ##
@@ -1210,7 +1215,7 @@ space-alert-under-5gb-message2 = <strong>Το { -brand-short-name } δεν δι�
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = Λειτουργία Μόνο-HTTPS
-httpsonly-description = Το HTTPS παρέχει μια ασφαλή, κρυπτογραφημένη σύνδεση μεταξύ του { -brand-short-name } και των ιστοσελίδων που επισκέπτεστε. Οι περισσότερες ιστοσελίδες υποστηρίζουν HTTPS και αν είναι ενεργή η λειτουργία μόνο-HTTPS, τότε το { -brand-short-name } θα αναβαθμίζει όλες τις συνδέσεις σε HTTPS.
+httpsonly-description = Το HTTPS παρέχει μια ασφαλή, κρυπτογραφημένη σύνδεση μεταξύ του { -brand-short-name } και των ιστοσελίδων που επισκέπτεστε. Οι περισσότερες ιστοσελίδες υποστηρίζουν HTTPS και αν είναι ενεργή η λειτουργία Μόνο-HTTPS, τότε το { -brand-short-name } θα αναβαθμίζει όλες τις συνδέσεις σε HTTPS.
 httpsonly-learn-more = Μάθετε περισσότερα
 httpsonly-radio-enabled =
     .label = Ενεργοποίηση λειτουργίας Μόνο-HTTPS σε όλα τα παράθυρα

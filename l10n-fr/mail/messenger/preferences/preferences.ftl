@@ -12,6 +12,7 @@ preferences-title =
         }
 preferences-tab-title =
     .title = Préférences
+preferences-doc-title = Préférences
 category-list =
     .aria-label = Catégories
 pane-general-title = Général
@@ -90,8 +91,8 @@ update-in-progress-ok-button = &Abandonner
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Continuer
-account-button = Paramètres des comptes
 addons-button = Extensions et thèmes
+account-button = Paramètres des comptes
 open-addons-sidebar-button = Modules complémentaires et thèmes
 
 ## OS Authentication dialog
@@ -170,6 +171,9 @@ tray-icon-label =
     .accesskey = e
 biff-use-system-alert =
     .label = Utiliser la notification système
+tray-icon-unread-label =
+    .label = Afficher une icône dans la barre des tâches pour les messages non lus
+    .accesskey = t
 tray-icon-unread-description = Recommandé lorsque vous utilisez de petits boutons dans la barre des tâches
 mail-system-sound-label =
     .label = Son système par défaut pour la réception d’un nouveau message
@@ -323,6 +327,8 @@ quoted-text-color =
     .accesskey = o
 search-input =
     .placeholder = Rechercher
+search-handler-table =
+    .placeholder = Filtrer les types de contenu et les actions
 type-column-label =
     .label = Type de contenu
     .accesskey = T

@@ -12,6 +12,7 @@ preferences-title =
         }
 preferences-tab-title =
     .title = Настройки
+preferences-doc-title = Настройки
 category-list =
     .aria-label = Категории
 pane-general-title = Основные
@@ -90,8 +91,8 @@ update-in-progress-ok-button = &Отменить
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Продолжить
-account-button = Параметры учётной записи
 addons-button = Расширения и темы
+account-button = Параметры учётной записи
 open-addons-sidebar-button = Дополнения и темы
 
 ## OS Authentication dialog
@@ -326,6 +327,8 @@ quoted-text-color =
     .accesskey = в
 search-input =
     .placeholder = Поиск
+search-handler-table =
+    .placeholder = Фильтр типов контента и действий
 type-column-label =
     .label = Тип содержимого
     .accesskey = о

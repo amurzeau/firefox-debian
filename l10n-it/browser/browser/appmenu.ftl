@@ -5,8 +5,6 @@
 
 ## App Menu
 
-appmenuitem-update-banner =
-    .label-update-downloading = Download aggiornamento di { -brand-shorter-name } in corso
 appmenuitem-update-banner2 =
     .label-update-downloading = Download aggiornamento di { -brand-shorter-name } in corso
     .label-update-available = Aggiornamento disponibile — scarica adesso
@@ -31,10 +29,8 @@ appmenuitem-new-private-window =
     .label = Nuova finestra anonima
 appmenuitem-passwords =
     .label = Password
-appmenuitem-extensions-and-themes =
-    .label = Estensioni e temi
 appmenuitem-addons-and-themes =
-    .label = Componenti aggiuntivi e temi
+    .label = Estensioni e temi
 appmenuitem-find-in-page =
     .label = Trova nella pagina…
 appmenuitem-more-tools =
@@ -80,8 +76,8 @@ appmenu-remote-tabs-turn-on-sync =
 appmenuitem-fxa-toolbar-sync-now2 = Sincronizza adesso
 appmenuitem-fxa-manage-account = Gestisci account
 appmenu-fxa-header =
-    .title = { -fxaccount-brand-name }
-appmenu-fxa-header2 = { -fxaccount-brand-name }
+    .title = { -fxaccount-brand-name(capitalization: "uppercase") }
+appmenu-fxa-header2 = { -fxaccount-brand-name(capitalization: "uppercase") }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -164,11 +160,6 @@ appmenu-about =
 appmenu-get-help =
     .label = Ottieni assistenza
     .accesskey = O
-appmenu-help-troubleshooting-info =
-    .label = Risoluzione dei problemi
-    .accesskey = R
-appmenu-help-taskmanager =
-    .label = Gestione attività
 appmenu-help-more-troubleshooting-info =
     .label = Altre info per la risoluzione di problemi
     .accesskey = r
@@ -177,16 +168,6 @@ appmenu-help-report-site-issue =
 appmenu-help-feedback-page =
     .label = Invia feedback…
     .accesskey = k
-
-## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
-## are mutually exclusive, so it's possible to use the same accesskey for both.
-
-appmenu-help-safe-mode-without-addons =
-    .label = Riavvia disattivando i componenti aggiuntivi…
-    .accesskey = d
-appmenu-help-safe-mode-with-addons =
-    .label = Riavvia attivando i componenti aggiuntivi
-    .accesskey = R
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

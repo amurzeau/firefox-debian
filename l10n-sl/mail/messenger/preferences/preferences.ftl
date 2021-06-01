@@ -12,6 +12,7 @@ preferences-title =
         }
 preferences-tab-title =
     .title = Nastavitve
+preferences-doc-title = Nastavitve
 category-list =
     .aria-label = Kategorije
 pane-general-title = Splošno
@@ -90,8 +91,8 @@ update-in-progress-ok-button = &Opusti
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Nadaljuj
-account-button = Nastavitve računa
 addons-button = Razširitve in teme
+account-button = Nastavitve računa
 open-addons-sidebar-button = Dodatki in teme
 
 ## OS Authentication dialog
@@ -326,6 +327,8 @@ quoted-text-color =
     .accesskey = a
 search-input =
     .placeholder = Išči
+search-handler-table =
+    .placeholder = Filtriraj vrste vsebine in dejanja
 type-column-label =
     .label = Vrsta vsebine
     .accesskey = r

@@ -124,7 +124,7 @@ urlbar-search-mode-history = История
 urlbar-geolocation-blocked =
     .tooltiptext = Забранили сте на страницата достъп до вашето местоположение.
 urlbar-xr-blocked =
-    .tooltiptext = Блокирахте достъпа до устройства за виртуална реалност за този уебсайт.
+    .tooltiptext = Забранихте достъпа до устройства за виртуална реалност за тази страница.
 urlbar-web-notifications-blocked =
     .tooltiptext = Забранили сте на страницата да ви изпраща известия.
 urlbar-camera-blocked =
@@ -247,6 +247,10 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Добавяне на търсеща машина
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -264,6 +268,8 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Добавяне на отметка
+bookmarks-edit-bookmark = Промяна на отметка
 bookmark-panel-cancel =
     .label = Отказ
     .accesskey = о
@@ -281,6 +287,8 @@ bookmark-panel-show-editor-checkbox =
     .accesskey = п
 bookmark-panel-done-button =
     .label = Готово
+bookmark-panel-save-button =
+    .label = Запазване
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -289,6 +297,13 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Информация за { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Сигурност на връзката към { $host }
 identity-connection-not-secure = Връзката не е защитена
 identity-connection-secure = Връзката е защитена
 identity-connection-internal = Това е защитена страница на { -brand-short-name }.
@@ -311,6 +326,7 @@ identity-https-only-dropdown-off =
 identity-https-only-dropdown-off-temporarily =
     .label = Временно изключено
 identity-https-only-info-no-upgrade = Връзката не може да бъде превключена от HTTP.
+identity-permissions-storage-access-learn-more = Научете повече
 identity-permissions-reload-hint = За да бъдат приложени промените може да се наложи да презаредите страницата.
 identity-permissions-empty = Не сте дали допълнителни права на страницата.
 identity-clear-site-data =
@@ -378,6 +394,11 @@ popup-select-camera =
 popup-select-microphone =
     .value = Микрофон за споделяне:
     .accesskey = М
+popup-select-camera-device =
+    .value = Камера
+    .accesskey = К
+popup-select-camera-icon =
+    .tooltiptext = Камера
 popup-all-windows-shared = Всички видими прозорци на вашия екран ще бъдат споделени.
 popup-screen-sharing-not-now =
     .label = Не сега
@@ -549,6 +570,12 @@ bookmarks-tools-toolbar-visibility-menuitem =
             [true] Скриване на страничната лента с отметки
            *[other] Показване на лентата с отметки
         }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Скриване на лентата с отметки
+           *[other] Показване на лентата с отметки
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -603,6 +630,8 @@ eme-notifications-drm-content-playing-dismiss-accesskey = р
 
 ## Password save/update panel
 
+panel-save-update-username = Потребителско име
+panel-save-update-password = Парола
 
 ## Add-on removal warning
 

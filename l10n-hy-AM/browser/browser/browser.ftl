@@ -244,6 +244,10 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Ավելացնել որոնման ծրագիր
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -286,6 +290,13 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Տեղեկություն կայքի մասին { $host }-ի համար
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Միացման անվտանգություն { $host }-ի համար
 identity-connection-not-secure = Կապակցումը ապահով չէ
 identity-connection-secure = Կապակցումը ապահով է
 identity-connection-internal = Սա անվտանգ { -brand-short-name } էջ է:
@@ -475,9 +486,6 @@ pointerlock-warning-no-domain = Այս փաստաթուղթը ղեկավարու
 
 ## Subframe crash notification
 
-crashed-subframe-learnmore =
-    .label = Իմանալ ավելին
-    .accesskey = L
 
 ## Bookmarks panels, menus and toolbar
 

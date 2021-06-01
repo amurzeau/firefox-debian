@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Προσθήκη "{ $engineName }"
+    .tooltiptext = Προσθήκη μηχανής αναζήτησης "{ $engineName }"
+    .aria-label = Προσθήκη μηχανής αναζήτησης "{ $engineName }"
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Προσθήκη μηχανής αναζήτησης
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Πληροφορίες για τη σελίδα { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Ασφάλεια σύνδεσης για { $host }
 identity-connection-not-secure = Μη ασφαλής σύνδεση
 identity-connection-secure = Ασφαλής σύνδεση
+identity-connection-failure = Αποτυχία σύνδεσης
 identity-connection-internal = Αυτή είναι μια ασφαλής σελίδα του { -brand-short-name }.
 identity-connection-file = Αυτή η σελίδα είναι αποθηκευμένη στον υπολογιστή σας.
 identity-extension-page = Αυτή η σελίδα φορτώθηκε από μια επέκταση.
@@ -319,10 +339,11 @@ identity-https-only-info-turn-off2 = Αν η σελίδα φαίνεται πρ�
 identity-https-only-info-no-upgrade = Δεν είναι δυνατή η αναβάθμιση της σύνδεσης από HTTP.
 identity-permissions-storage-access-header = Cookies μεταξύ ιστοσελίδων
 identity-permissions-storage-access-hint = Αυτά τα μέρη μπορούν να χρησιμοποιήσουν cookies μεταξύ ιστοσελίδων και δεδομένα ιστότοπων όσο βρίσκεστε σε αυτή την ιστοσελίδα.
+identity-permissions-storage-access-learn-more = Μάθετε περισσότερα
 identity-permissions-reload-hint = Ίσως χρειαστεί να φορτώσετε εκ νέου τη σελίδα για εφαρμογή των αλλαγών.
 identity-permissions-empty = Δεν έχετε χορηγήσει ειδικές άδειες στη σελίδα.
 identity-clear-site-data =
-    .label = Διαγραφή cookies και δεδομένων ιστοσελίδων…
+    .label = Διαγραφή cookies και δεδομένων ιστοσελίδας…
 identity-connection-not-secure-security-view = Η σύνδεσή σας με αυτή την ιστοσελίδα δεν είναι ασφαλής.
 identity-connection-verified = Η σύνδεσή σας με αυτή την ιστοσελίδα είναι ασφαλής.
 identity-ev-owner-label = Το πιστοποιητικό εκδόθηκε για:
@@ -578,9 +599,6 @@ pointerlock-warning-no-domain = Αυτό το έγγραφο ελέγχει το
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Μέρος της σελίδας κατέρρευσε.</strong> Για να ενημερώσετε το { -brand-product-name } σχετικά με αυτό το ζήτημα, ώστε να διορθωθεί γρηγορότερα, παρακαλούμε υποβάλλετε μια αναφορά.
-crashed-subframe-learnmore =
-    .label = Μάθετε περισσότερα
-    .accesskey = Μ
 crashed-subframe-learnmore-link =
     .value = Μάθετε περισσότερα
 crashed-subframe-submit =
@@ -593,8 +611,6 @@ bookmarks-show-all-bookmarks =
     .label = Προβολή όλων των σελιδοδεικτών
 bookmarks-manage-bookmarks =
     .label = Διαχείριση σελιδοδεικτών
-bookmarks-recent-bookmarks-panel =
-    .value = Πρόσφατοι σελιδοδείκτες
 bookmarks-recent-bookmarks-panel-subheader = Πρόσφατοι σελιδοδείκτες
 bookmarks-toolbar-chevron =
     .tooltiptext = Προβολή περισσότερων σελιδοδεικτών

@@ -10,6 +10,7 @@ search-header =
     .searchbuttonlabel = Претражи
 search-header-shortcut =
     .key = f
+list-empty-get-extensions-message = Преузмите додатке и теме на <a data-l10n-name="get-extensions">{ $domain }</a>
 list-empty-installed =
     .value = Нисте инсталирали ниједан додатак ове врсте
 list-empty-available-updates =
@@ -31,6 +32,21 @@ preferences =
        *[other] програма { -brand-short-name }
     }
 sidebar-preferences-button-title =
+    .title =
+        Подешавања { -brand-short-name.gender ->
+            [masculine] { -brand-short-name(case: "gen") }
+            [feminine] { -brand-short-name(case: "gen") }
+            [neuter] { -brand-short-name(case: "gen") }
+           *[other] програма { -brand-short-name }
+        }
+addons-settings-button =
+    Подешавања { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "gen") }
+        [feminine] { -brand-short-name(case: "gen") }
+        [neuter] { -brand-short-name(case: "gen") }
+       *[other] програма { -brand-short-name }
+    }
+sidebar-settings-button-title =
     .title =
         Подешавања { -brand-short-name.gender ->
             [masculine] { -brand-short-name(case: "gen") }
@@ -392,7 +408,7 @@ plugin-heading = Управљајте додатним компонентама
 dictionary-heading = Управљајте речницима
 locale-heading = Управљајте језицима
 updates-heading = Управљајте ажурирањима
-discover-heading = Персонализујте { -brand-short-name(case: "acc") }
+discover-heading = Прилагоди { -brand-short-name(case: "acc") }
 shortcuts-heading = Управљајте пречицама додатака
 default-heading-search-label = Пронађите више додатака
 addons-heading-search-input =

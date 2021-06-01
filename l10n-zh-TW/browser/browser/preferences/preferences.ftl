@@ -1002,9 +1002,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = 兼顧保護與效能。網站可正常運作。
 content-blocking-etp-strict-desc = 保護更強大，但可能會導致某些網站或內容故障。
 content-blocking-etp-custom-desc = 選擇要封鎖哪些追蹤器與指令碼。
+content-blocking-etp-blocking-desc = { -brand-short-name } 封鎖下列項目:
 content-blocking-private-windows = 隱私視窗中的追蹤內容
 content-blocking-cross-site-cookies = 跨網站 Cookie
+content-blocking-cross-site-cookies-in-all-windows = 所有視窗中的跨網站 Cookie（包含追蹤用 Cookie）
 content-blocking-cross-site-tracking-cookies = 跨網站追蹤 Cookie
+content-blocking-all-cross-site-cookies-private-windows = 隱私視窗中的跨網站 Cookie
 content-blocking-cross-site-tracking-cookies-plus-isolate = 跨網站追蹤 Cookie，並隔離剩餘的 Cookie
 content-blocking-social-media-trackers = 社交媒體追蹤器
 content-blocking-all-cookies = 所有 Cookie
@@ -1124,6 +1127,8 @@ collection-backlogged-crash-reports =
     .label = 允許 { -brand-short-name } 為您傳送先前紀錄下的錯誤報告
     .accesskey = c
 collection-backlogged-crash-reports-link = 更多資訊
+collection-backlogged-crash-reports-with-link = 允許 { -brand-short-name } 以您的身分自動回報錯誤報告<a data-l10n-name="crash-reports-link">了解更多資訊</a>
+    .accesskey = c
 
 ## Privacy Section - Security
 ##

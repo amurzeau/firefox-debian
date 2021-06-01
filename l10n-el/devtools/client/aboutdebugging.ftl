@@ -18,7 +18,7 @@ about-debugging-page-title-runtime-page = Έλεγχος σφαλμάτων - Ε
 
 # Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
-about-debugging-this-firefox-runtime-name = Αυτό το { -brand-shorter-name }
+about-debugging-this-firefox-runtime-name = { -brand-shorter-name }
 # Sidebar heading for selecting the currently running instance of Firefox
 about-debugging-sidebar-this-firefox =
     .name = { about-debugging-this-firefox-runtime-name }
@@ -81,15 +81,15 @@ about-debugging-refresh-usb-devices-button = Ανανέωση συσκευών
 # Title of the Setup page.
 about-debugging-setup-title = Ρύθμιση
 # Introduction text in the Setup page to explain how to configure remote debugging.
-about-debugging-setup-intro = Ρυθμίστε τη μέθοδο σύνδεσης με την οποία επιθυμείτε να αποσφαλματώσετε απομακρυσμένα τη συσκευή σας.
+about-debugging-setup-intro = Ρυθμίστε τη μέθοδο σύνδεσης για απομακρυσμένο έλεγχο σφαλμάτων στη συσκευή σας.
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
-about-debugging-setup-this-firefox2 = Χρησιμοποιήστε το <a>{ about-debugging-this-firefox-runtime-name }</a> για να αποσφαλματώσετε τις επεκτάσεις και τα service workers σε αυτή την έκδοση του { -brand-shorter-name }.
+about-debugging-setup-this-firefox2 = Χρησιμοποιήστε την επιλογή <a>{ about-debugging-this-firefox-runtime-name }</a> για να κάνετε έλεγχο σφαλμάτων στις επεκτάσεις και τα service workers σε αυτή την έκδοση του { -brand-shorter-name }.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Σύνδεση συσκευής
 # USB section of the Setup page
 about-debugging-setup-usb-title = USB
 # Explanatory text displayed in the Setup page when USB debugging is disabled
-about-debugging-setup-usb-disabled = Η ενεργοποίηση αυτού θα κάνει λήψη και προσθήκη των απαιτούμενων στοιχείων αποσφαλμάτωσης Android USB στο { -brand-shorter-name }.
+about-debugging-setup-usb-disabled = Η ενεργοποίηση αυτής της επιλογής θα κάνει λήψη και προσθήκη των απαιτούμενων στοιχείων ελέγχου σφαλμάτων Android USB στο { -brand-shorter-name }.
 # Text of the button displayed in the USB section of the setup page when USB debugging is disabled.
 # Clicking on it will download components needed to debug USB Devices remotely.
 about-debugging-setup-usb-enable-button = Ενεργοποίηση συσκευών USB
@@ -105,20 +105,20 @@ about-debugging-setup-usb-status-updating = Ενημέρωση…
 # USB section step by step guide
 about-debugging-setup-usb-step-enable-dev-menu2 = Ενεργοποιήστε το μενού προγραμματιστών στην Android συσκευή σας.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug2 = Ενεργοποιήστε την αποσφαλμάτωση μέσω USB στο μενού προγραμματιστών Android.
+about-debugging-setup-usb-step-enable-debug2 = Ενεργοποιήστε το "Εντοπισμός σφαλμάτων μέσω USB" στο μενού προγραμματιστή Android.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug-firefox2 = Ενεργοποιήστε την αποσφαλμάτωση μέσω USB στο Firefox της Android συσκευής σας.
+about-debugging-setup-usb-step-enable-debug-firefox2 = Ενεργοποιήστε τον έλεγχο σφαλμάτων μέσω USB στο Firefox της Android συσκευής σας.
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = Συνδέστε τη συσκευή Android στον υπολογιστή σας.
 # Text shown in the USB section of the setup page with a link to troubleshoot connection errors.
 # The link goes to https://developer.mozilla.org/docs/Tools/Remote_Debugging/Debugging_over_USB
-about-debugging-setup-usb-troubleshoot = Προβλήματα σύνδεσης στη συσκευή USB; <a>Αντιμετώπιση προβλημάτων</a>
+about-debugging-setup-usb-troubleshoot = Προβλήματα σύνδεσης με τη συσκευή USB; <a>Επίλυση προβλημάτων</a>
 # Network section of the Setup page
 about-debugging-setup-network =
     .title = Τοποθεσία δικτύου
 # Text shown in the Network section of the setup page with a link to troubleshoot connection errors.
 # The link goes to https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Debugging_over_a_network
-about-debugging-setup-network-troubleshoot = Προβλήματα σύνδεσης μέσω τοποθεσίας δικτύου; <a>Αντιμετώπιση προβλημάτων</a>
+about-debugging-setup-network-troubleshoot = Προβλήματα σύνδεσης μέσω τοποθεσίας δικτύου; <a>Επίλυση προβλημάτων</a>
 # Text of a button displayed after the network locations "Host" input.
 # Clicking on it will add the new network location to the list.
 about-debugging-network-locations-add-button = Προσθήκη
@@ -127,7 +127,7 @@ about-debugging-network-locations-empty-text = Δεν έχουν προστεθ�
 # Text of the label for the text input that allows users to add new network locations in
 # the Connect page. A host is a hostname and a port separated by a colon, as suggested by
 # the input's placeholder "localhost:6080".
-about-debugging-network-locations-host-input-label = Όνομα host
+about-debugging-network-locations-host-input-label = Υπολογιστής
 # Text of a button displayed next to existing network locations in the Connect page.
 # Clicking on it removes the network location from the list.
 about-debugging-network-locations-remove-button = Αφαίρεση
@@ -179,7 +179,7 @@ about-debugging-runtime-service-workers-not-compatible = Οι ρυθμίσεις
 about-debugging-browser-version-too-old = Το συνδεδεμένο πρόγραμμα περιήγησης έχει παλιά έκδοση ({ $runtimeVersion }). Η ελάχιστη υποστηριζόμενη έκδοση είναι ({ $minVersion }).  Πρόκειται για μη υποστηριζόμενη ρύθμιση και ενδέχεται να προκαλέσει αποτυχία του DevTools. Παρακαλούμε ενημερώστε το συνδεδεμένο πρόγραμμα περιήγησης. <a>Αντιμετώπιση προβλημάτων</a>
 # Dedicated message for a backward compatibility issue that occurs when connecting:
 # from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
-about-debugging-browser-version-too-old-fennec = Αυτή η έκδοση του Firefox δεν μπορεί να χρησιμοποιηθεί για εντοπισμό σφαλμάτων στο Firefox για Android (68). Προτείνουμε να εγκαταστήσετε το Firefox για Android Nightly στο τηλέφωνό σας για δοκιμή. <a>Περισσότερες λεπτομέρειες</a>
+about-debugging-browser-version-too-old-fennec = Αυτή η έκδοση του Firefox δεν μπορεί να χρησιμοποιηθεί για έλεγχο σφαλμάτων στο Firefox για Android (68). Προτείνουμε να εγκαταστήσετε το Firefox για Android Nightly στο τηλέφωνό σας για δοκιμή. <a>Περισσότερες λεπτομέρειες</a>
 # This string is displayed in the runtime page if the remote browser version is too recent.
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
 # { $runtimeID } is the build ID of the remote browser (for instance "20181231", format is yyyyMMdd)

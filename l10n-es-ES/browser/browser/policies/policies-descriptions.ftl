@@ -11,9 +11,11 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Establezca las políticas a las que puede acceder WebExtensions mediante chrome.storage.managed.
+policy-AllowedDomainsForApps = Definir dominios autorizados para acceder a Google Workspace.
 policy-AppAutoUpdate = Activar o desactivar la actualización automática de la aplicación.
 policy-AppUpdateURL = Establecer una URL personalizada de actualización de la aplicación.
 policy-Authentication = Configurar la autenticación integrada para sitios web que la admitan.
+policy-AutoLaunchProtocolsFromOrigins = Define una lista de protocolos externos que pueden ser usados desde los orígenes que aparecen en la lista sin que se pida confirmación al usuario.
 policy-BackgroundAppUpdate2 = Activar o desactivar la actualización en segundo plano.
 policy-BlockAboutAddons = Bloquear el acceso al administrador de complementos (about:addons).
 policy-BlockAboutConfig = Bloquear el acceso a la página about:config.

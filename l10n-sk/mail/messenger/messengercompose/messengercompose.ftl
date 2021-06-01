@@ -123,3 +123,46 @@ move-attachment-last-panel-button =
 button-return-receipt =
     .label = Potvrdenka
     .tooltiptext = Požiadať o potvrdenie o prijatí tejto správy
+#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
+consider-bcc-notification = Príjemcovia v poliach Komu a Kópia (celkom { $count }) môžu navzájom vidieť svoje adresy. Zverejneniu príjemcov sa môžete vyhnúť použitím Skrytej kópie.
+
+# Addressing Area
+
+to-compose-address-row-label =
+    .value = Komu
+#   $key (String) - the shortcut key for this field
+to-compose-show-address-row-menuitem =
+    .label = Pole { to-compose-address-row-label.value }
+    .accesskey = o
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+to-compose-show-address-row-label =
+    .value = { to-compose-address-row-label.value }
+    .tooltiptext = Zobraziť pole { to-compose-address-row-label.value } ({ to-compose-show-address-row-menuitem.acceltext })
+cc-compose-address-row-label =
+    .value = Kópia
+#   $key (String) - the shortcut key for this field
+cc-compose-show-address-row-menuitem =
+    .label = Pole { cc-compose-address-row-label.value }
+    .accesskey = K
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+cc-compose-show-address-row-label =
+    .value = { cc-compose-address-row-label.value }
+    .tooltiptext = Zobraziť pole { cc-compose-address-row-label.value } ({ cc-compose-show-address-row-menuitem.acceltext })
+bcc-compose-address-row-label =
+    .value = Skrytá kópia
+#   $key (String) - the shortcut key for this field
+bcc-compose-show-address-row-menuitem =
+    .label = Pole { bcc-compose-address-row-label.value }
+    .accesskey = S
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+bcc-compose-show-address-row-label =
+    .value = { bcc-compose-address-row-label.value }
+    .tooltiptext = Zobraziť pole { bcc-compose-address-row-label.value } ({ bcc-compose-show-address-row-menuitem.acceltext })
+#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
+many-public-recipients-info = Príjemcovia (celkom { $count }) v poliach Komu a Kópia si navzájom uvidia adresy. Zverejňovaniu príjemcov sa môžete vyhnúť použitím Skrytej kópie.
+many-public-recipients-bcc =
+    .label = Použiť Skrytú kópiu
+    .accesskey = S
+many-public-recipients-ignore =
+    .label = Ponechať príjemcov viditeľných
+    .accesskey = P

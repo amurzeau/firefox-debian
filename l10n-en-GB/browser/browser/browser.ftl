@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Add “{ $engineName }”
+    .tooltiptext = Add search engine “{ $engineName }”
+    .aria-label = Add search engine “{ $engineName }”
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Add search engine
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -264,8 +276,8 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
-bookmarks-add-bookmark = Add Bookmark
-bookmarks-edit-bookmark = Edit Bookmark
+bookmarks-add-bookmark = Add bookmark
+bookmarks-edit-bookmark = Edit bookmark
 bookmark-panel-cancel =
     .label = Cancel
     .accesskey = C
@@ -274,8 +286,8 @@ bookmark-panel-cancel =
 bookmark-panel-remove =
     .label =
         { $count ->
-            [one] Remove Bookmark
-           *[other] Remove { $count } Bookmarks
+            [1] Remove bookmark
+           *[other] Remove { $count } bookmarks
         }
     .accesskey = R
 bookmark-panel-show-editor-checkbox =
@@ -293,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Site information for { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Connection security for { $host }
 identity-connection-not-secure = Connection not secure
 identity-connection-secure = Connection secure
+identity-connection-failure = Connection failure
 identity-connection-internal = This is a secure { -brand-short-name } page.
 identity-connection-file = This page is stored on your computer.
 identity-extension-page = This page is loaded from an extension.
@@ -319,10 +339,11 @@ identity-https-only-info-turn-off2 = If the page seems broken, you may want to t
 identity-https-only-info-no-upgrade = Unable to upgrade connection from HTTP.
 identity-permissions-storage-access-header = Cross-site cookies
 identity-permissions-storage-access-hint = These parties can use cross-site cookies and site data while you are on this site.
+identity-permissions-storage-access-learn-more = Learn more
 identity-permissions-reload-hint = You may need to reload the page for changes to apply.
 identity-permissions-empty = You have not granted this site any special permissions.
 identity-clear-site-data =
-    .label = Clear Cookies and Site Data…
+    .label = Clear cookies and site data…
 identity-connection-not-secure-security-view = You are not securely connected to this site.
 identity-connection-verified = You are securely connected to this site.
 identity-ev-owner-label = Certificate issued to:
@@ -490,6 +511,11 @@ urlbar-placeholder-with-name =
     .placeholder = Search with { $name } or enter address
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Browser is under remote control
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Browser is under remote control (reason: { $component })
 urlbar-permissions-granted =
     .tooltiptext = You have granted this web site additional permissions.
 urlbar-switch-to-tab =
@@ -578,11 +604,8 @@ pointerlock-warning-no-domain = This document has control of your pointer. Press
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Part of this page crashed.</strong> To let { -brand-product-name } know about this issue and get it fixed faster, please submit a report.
-crashed-subframe-learnmore =
-    .label = Learn More
-    .accesskey = L
 crashed-subframe-learnmore-link =
-    .value = Learn More
+    .value = Learn more
 crashed-subframe-submit =
     .label = Submit report
     .accesskey = S
@@ -593,8 +616,6 @@ bookmarks-show-all-bookmarks =
     .label = Show All Bookmarks
 bookmarks-manage-bookmarks =
     .label = Manage Bookmarks
-bookmarks-recent-bookmarks-panel =
-    .value = Recent Bookmarks
 bookmarks-recent-bookmarks-panel-subheader = Recent Bookmarks
 bookmarks-toolbar-chevron =
     .tooltiptext = Show more bookmarks
@@ -692,7 +713,7 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = Some audio or video on this site uses DRM software, which may limit what { -brand-short-name } can let you do with it.
-eme-notifications-drm-content-playing-manage = Manage Settings
+eme-notifications-drm-content-playing-manage = Manage settings
 eme-notifications-drm-content-playing-manage-accesskey = M
 eme-notifications-drm-content-playing-dismiss = Dismiss
 eme-notifications-drm-content-playing-dismiss-accesskey = D

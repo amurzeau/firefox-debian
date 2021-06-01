@@ -473,7 +473,7 @@ browsing-cfr-recommendations =
     .accesskey = р
 browsing-cfr-features =
     .label = Рекомендувати функції під час перегляду
-    .accesskey = ф
+    .accesskey = Р
 browsing-cfr-recommendations-learn-more = Докладніше
 
 ## General Section - Proxy
@@ -564,7 +564,7 @@ home-prefs-highlights-option-most-recent-download =
 home-prefs-highlights-option-saved-to-pocket =
     .label = Збережене в { -pocket-brand-name }
 home-prefs-recent-activity-header =
-    .label = Недавні дії
+    .label = Нещодавня активність
 home-prefs-recent-activity-description = Добірка недавніх сайтів та вмісту
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
@@ -1022,9 +1022,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Збалансований захист і швидкодія. Сторінки завантажуватимуться нормально.
 content-blocking-etp-strict-desc = Надійніший захист, але може пошкоджувати деякі сайти чи їх вміст.
 content-blocking-etp-custom-desc = Оберіть тип стеження і скриптів для блокування.
+content-blocking-etp-blocking-desc = { -brand-short-name } блокує таке:
 content-blocking-private-windows = Стеження в приватних вікнах
 content-blocking-cross-site-cookies = Куки сторонніх сайтів
+content-blocking-cross-site-cookies-in-all-windows = Куки стеження між сайтами в усіх вікнах (включно з куками стеження)
 content-blocking-cross-site-tracking-cookies = Куки стеження між сайтами
+content-blocking-all-cross-site-cookies-private-windows = Куки стеження між сайтами у приватних вікнах
 content-blocking-cross-site-tracking-cookies-plus-isolate = Стеження між сайтами та ізолювання куків, що залишилися
 content-blocking-social-media-trackers = Стеження соціальних мереж
 content-blocking-all-cookies = Усі куки
@@ -1144,6 +1147,8 @@ collection-backlogged-crash-reports =
     .label = Дозволити { -brand-short-name } надсилати від вашого імені зібрані звіти про збої
     .accesskey = н
 collection-backlogged-crash-reports-link = Докладніше
+collection-backlogged-crash-reports-with-link = Дозволити { -brand-short-name } надсилати звіти про збої від вашого імені <a data-l10n-name="crash-reports-link">Докладніше</a>
+    .accesskey = c
 
 ## Privacy Section - Security
 ##

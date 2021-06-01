@@ -2,6 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+tab-context-new-tab =
+    .label = Nová karta
+    .accesskey = N
 reload-tab =
     .label = Obnoviť kartu
     .accesskey = O
@@ -44,16 +47,16 @@ unpin-selected-tabs =
     .accesskey = r
 bookmark-selected-tabs =
     .label = Pridať karty medzi záložky…
-    .accesskey = k
+    .accesskey = a
 bookmark-tab =
     .label = Pridať kartu medzi záložky
-    .accesskey = z
+    .accesskey = a
 reopen-in-container =
     .label = Otvoriť v kontajneri
     .accesskey = e
 tab-context-open-in-new-container-tab =
     .label = Otvoriť na novej kontajnerovej karte
-    .accesskey = e
+    .accesskey = k
 move-to-start =
     .label = Presunúť na začiatok
     .accesskey = z
@@ -66,15 +69,6 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Zavrieť viaceré karty
     .accesskey = c
-tab-context-share-url =
-    .label = Zdieľať
-    .accesskey = d
-tab-context-share-more =
-    .label = Viac…
-
-## Variables:
-##  $tabCount (Number): the number of tabs that are affected by the action.
-
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -95,7 +89,16 @@ move-tabs =
     .accesskey = s
 move-tab =
     .label = Presunúť kartu
-    .accesskey = u
+    .accesskey = s
+tab-context-share-url =
+    .label = Zdieľať
+    .accesskey = e
+tab-context-share-more =
+    .label = Viac…
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-reopen-closed-tabs =
     .label =
         { $tabCount ->
@@ -118,4 +121,4 @@ tab-context-move-tabs =
             [1] Presunúť kartu
            *[other] Presunúť karty
         }
-    .accesskey = u
+    .accesskey = s

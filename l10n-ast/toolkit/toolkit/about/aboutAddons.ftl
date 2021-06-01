@@ -9,6 +9,13 @@ list-empty-installed =
     .value = Nun tienes nengún complementu instaláu d'esti tipu
 list-empty-available-updates =
     .value = Nun s'atoparon anovamientos
+list-empty-recent-updates =
+    .value = Nun anovesti nengún complementu apocayá
+list-empty-button =
+    .label = Lleer más tocante a los complementos
+help-button = Sofitu pa los complementos
+sidebar-help-button-title =
+    .title = Sofitu pa los complementos
 preferences =
     { PLATFORM() ->
         [windows] Opciones de { -brand-short-name }
@@ -23,6 +30,13 @@ sidebar-preferences-button-title =
 addons-settings-button = Axustes de { -brand-short-name }
 sidebar-settings-button-title =
     .title = Axustes de { -brand-short-name }
+show-unsigned-extensions-button =
+    .label = Dalgunes estensiones nun pudieron verificase
+show-all-extensions-button =
+    .label = Amosar toles estensiones
+cmd-show-details =
+    .label = Amosar más información
+    .accesskey = A
 cmd-preferences =
     .label =
         { PLATFORM() ->
@@ -34,10 +48,21 @@ cmd-preferences =
             [windows] O
            *[other] P
         }
+cmd-install-addon =
+    .label = Instalar
+    .accesskey = I
+cmd-contribute =
+    .label = Collaborar
+    .accesskey = C
+    .tooltiptext = Collabora col desendolcu d'esti complementu
 detail-version =
     .label = Versión
 detail-last-updated =
     .label = Últimu anovamientu
+detail-contributions-description = El desendolcador d'esti complementu pídete que lu ayudes a siguir col so desendolcu faciendo una donación
+detail-contributions-button = Collaborar
+    .title = Collabora col desendolcu d'esti complementu
+    .accesskey = C
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Execución nes ventanes privaes
 detail-private-required-description2 = Esta estensión tien accesu a les tos actividaes en llinia mentanto restoles en privao. <a data-l10n-name="learn-more">Lleer más</a>
@@ -97,9 +122,12 @@ addon-category-recent-updates-title =
 
 ## These are global warnings
 
+extensions-warning-safe-mode = Desactiváronse tolos complementos pol mou seguru
 
 ## Strings connected to add-on updates
 
+addon-updates-check-for-updates = Comprobar los anovamientos
+    .accesskey = C
 addon-updates-view-updates = Ver los anovamientos de recién
     .accesskey = V
 
@@ -135,6 +163,11 @@ addon-open-about-debugging = Depurar los complementos
 addon-manage-extensions-shortcuts = Xestionar los atayos de les estensiones
     .accesskey = X
 shortcuts-no-commands = Les estensiones de darréu nun tienen atayos:
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } úsase como atayu en más d'una ocasión. Los atayos duplicaos puen causar un comportamientu inesperáu.
+shortcuts-card-collapse-button = Amosar menos
 header-back-button =
     .title = Dir p'atrás
 
@@ -204,6 +237,14 @@ never-activate-button = Nun activar enxamás
 addon-detail-version-label = Versión
 addon-detail-last-updated-label = Últimu anovamientu
 addon-detail-rating-label = Valoración
+# Message for add-ons with a staged pending update.
+install-postponed-message = Esta estensión va anovase cuando se reanicie { -brand-short-name }
+install-postponed-button = Anovar agora
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Valoróse con { NUMBER($rating, maximumFractionDigits: 1) } de 5 estrelles
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -224,6 +265,7 @@ addon-detail-reviews-link =
 pending-uninstall-description = Quitóse <span data-l10n-name="addon-name">{ $addon }</span>
 pending-uninstall-undo-button = Desfacer
 addon-detail-updates-label = Permitir l'anovamientu automáticu
+install-update-button = Anovar
 addon-detail-private-browsing-help = Al permitilo, la estensión va tener accesu a la to actividá en llinia mentanto restoles en privao. <a data-l10n-name="learn-more">Lleer más</a>
 addon-detail-private-browsing-allow = Permitir
 addon-detail-private-browsing-disallow = Nun permitir
@@ -231,11 +273,17 @@ addon-detail-private-browsing-disallow = Nun permitir
 ## This is the tooltip text for the recommended badges for an extension in about:addons. The
 ## badge is a small icon displayed next to an extension when it is recommended on AMO.
 
+addon-badge-recommended2 =
+    .title = { -brand-product-name } aconseya namás les estensiones que cumplan colos nuesos estándares de seguranza y rindimientu
+    .aria-label = { addon-badge-recommended2.title }
 # We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
     .title = Estensión oficial fecha por Mozilla. Cumple colos estándares de seguranza y rindimientu
     .aria-label = { addon-badge-line3.title }
+addon-badge-verified2 =
+    .title = Esta estensión revisóse pa cumplir colos nuesos estándares de seguranza y rindimientu
+    .aria-label = { addon-badge-verified2.title }
 
 ##
 
@@ -262,5 +310,7 @@ updates-heading = Xestiona los anovamientos
 discover-heading = Personaliza { -brand-short-name }
 shortcuts-heading = Xestión de los atayos de les estensiones
 default-heading-search-label = Atopa más complementos
+addons-heading-search-input =
+    .placeholder = Buscar n'addons.mozilla.org
 addon-page-options-button =
     .title = Ferramientes pa tolos complementos

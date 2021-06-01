@@ -1116,9 +1116,9 @@ sitedata-option-block-cross-site-trackers =
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Sledovací cookies, např. sociálních sítí
 sitedata-option-block-cross-site-tracking-cookies-including-social-media =
-    .label = Sledovací cookies třetích stran včetně sociálních sítí
+    .label = Sledovací cross-site cookies – včetně cookies sociálních sítí
 sitedata-option-block-cross-site-cookies-including-social-media =
-    .label = Cookies třetích stran včetně sociálních sítí
+    .label = Cross-site cookies – včetně cookies sociálních sítí
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Sledovací cookies třetích stran a sociálních sítí, ostatní izolovat
 sitedata-option-block-unvisited =
@@ -1191,9 +1191,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Vyvážená ochrana a výkon. Neovlivní správné načítání webových stránek.
 content-blocking-etp-strict-desc = Silnější ochrana. Může omezit fungování některých stránek.
 content-blocking-etp-custom-desc = Vyberte sledovací prvky a skripty, které chcete zablokovat.
+content-blocking-etp-blocking-desc = { -brand-short-name } blokuje:
 content-blocking-private-windows = Sledující obsah v anonymních oknech
 content-blocking-cross-site-cookies = Cross-site cookies
+content-blocking-cross-site-cookies-in-all-windows = Všechny cookies třetích stran (včetně sledovacích cookies)
 content-blocking-cross-site-tracking-cookies = Sledovací cookies
+content-blocking-all-cross-site-cookies-private-windows = Cookies třetích stran v anonymních oknech
 content-blocking-cross-site-tracking-cookies-plus-isolate = Sledovací cookies třetích stran, ostatní izolovat
 content-blocking-social-media-trackers = Sledující prvky sociálních sítí
 content-blocking-all-cookies = Všechny cookies
@@ -1209,7 +1212,7 @@ content-blocking-warning-learn-how = Jak na to
 content-blocking-reload-description = Aby se změny projevily, načtěte znovu své panely.
 content-blocking-reload-tabs-button =
     .label = Znovu načíst všechny panely
-    .accesskey = o
+    .accesskey = n
 content-blocking-tracking-content-label =
     .label = Sledující obsah
     .accesskey = o
@@ -1361,6 +1364,14 @@ collection-backlogged-crash-reports =
         } za vás
     .accesskey = c
 collection-backlogged-crash-reports-link = Zjistit více
+collection-backlogged-crash-reports-with-link =
+    Odesílat nevyřízená hlášení o pádech { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "gen") }
+        [feminine] { -brand-short-name(case: "gen") }
+        [neuter] { -brand-short-name(case: "gen") }
+       *[other] aplikace
+    } za vás <a data-l10n-name="crash-reports-link">Zjistit více</a>
+    .accesskey = c
 
 ## Privacy Section - Security
 ##

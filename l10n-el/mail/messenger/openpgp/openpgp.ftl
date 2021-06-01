@@ -158,7 +158,7 @@ openpgp-key-man-ctx-copy-public-keys =
 openpgp-key-man-close =
     .label = Κλείσιμο
 openpgp-key-man-reload =
-    .label = Ανανέωση προσωρινής μνήμης κλειδιού
+    .label = Ανανέωση κρυφής μνήμης κλειδιού
     .accesskey = Α
 openpgp-key-man-change-expiry =
     .label = Αλλαγή ημερομηνίας λήξης
@@ -613,7 +613,7 @@ not-required = Σφάλμα - δεν απαιτείται κρυπτογράφη
 # Strings used in windows.jsm
 no-photo-available = Καμία διαθέσιμη φωτογραφία
 error-photo-path-not-readable = Η διαδρομή για τη φωτογραφία '{ $photo }' δεν είναι αναγνώσιμη
-debug-log-title = Αρχείο αποσφαλμάτωσης OpenPGP
+debug-log-title = Αρχείο ελέγχου σφαλμάτων OpenPGP
 # Strings used in dialog.jsm
 repeat-prefix = Αυτή η ειδοποίηση θα επαναληφθεί { $count }
 repeat-suffix-singular = ακόμη φορά.

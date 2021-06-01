@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Embojuaju “{ $engineName }”
+    .tooltiptext = Embojuaju jehekaha mongu’eha “{ $engineName }”
+    .aria-label = Embojuaju jehekaha mongu’eha “{ $engineName }”
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Hekaha mbojoapy
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Marandu tenda rehegua { $host } peg̃uarã
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Jeikeha hekorosãva { $host } peg̃uarã
 identity-connection-not-secure = Jeikekatu’ỹ
 identity-connection-secure = Jeikekatu
+identity-connection-failure = Jeike oiko’ỹva
 identity-connection-internal = Kóva { -brand-short-name } jeroviáva; kuatiarogue.
 identity-connection-file = Ko kuatiarogue oñeñongatu mohendahápe.
 identity-extension-page = Ko kuatiarogue oñemyanyhẽ jepysokue guive.
@@ -319,6 +339,7 @@ identity-https-only-info-turn-off2 = Pe tenda ndoikoporãirõ, ikatu emboguese p
 identity-https-only-info-no-upgrade = Ndaikatúi embohekopyahu jeike HTTP guive.
 identity-permissions-storage-access-header = Kookie tenda ojuasáva
 identity-permissions-storage-access-hint = Ko’ãva ikatu oipuru kookie ha tenda ojuasáva mba’ekuaarã eime aja ko tendápe.
+identity-permissions-storage-access-learn-more = Kuaave
 identity-permissions-reload-hint = Ikatu hína kuatiarogue emyanyhẽjey umi moambuepyre oñemboheko hag̃ua.
 identity-permissions-empty = Nome’ẽi ko tenda ñemoneĩ ha’etéva.
 identity-clear-site-data =
@@ -581,9 +602,6 @@ pointerlock-warning-no-domain = Ko kuatia oñangareko nde hekaha rehe. Eikutu Es
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Peteĩva kuatiarogue pehẽ ndokói.</strong> Oikuaa hag̃ua { -brand-product-name } ko apañuãi ha omoĩporã pya’e hag̃ua, ikatúpa emondo marandu’i.
-crashed-subframe-learnmore =
-    .label = Kuaave
-    .accesskey = L
 crashed-subframe-learnmore-link =
     .value = Kuaave
 crashed-subframe-submit =
@@ -596,8 +614,6 @@ bookmarks-show-all-bookmarks =
     .label = Opaite techaukaha jehechauka
 bookmarks-manage-bookmarks =
     .label = Eñangareko techaukaháre
-bookmarks-recent-bookmarks-panel =
-    .value = Techaukaha ramogua
 bookmarks-recent-bookmarks-panel-subheader = Techaukaha ramogua
 bookmarks-toolbar-chevron =
     .tooltiptext = Techaukaha jehechaukave

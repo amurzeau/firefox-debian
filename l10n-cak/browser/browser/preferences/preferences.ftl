@@ -1018,9 +1018,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Silan richin chajinem chuqa' rub'eyal nisamäj. Achi'el jutaqil xkesamäj ri taq ruxaq.
 content-blocking-etp-strict-desc = Nïm chajinem, xa xe chi nub'än chi jujun taq ruxaq o rupam man yesamäj ta.
 content-blocking-etp-custom-desc = Ke'acha' achike taq ojqanela' chuqa' kiskrip taq komando nawajo' ye'aq'ät
+content-blocking-etp-blocking-desc = { -brand-short-name } yeruq'ät re':
 content-blocking-private-windows = Kichajinik taq rupam pan Ichinan taq Tzuwäch
 content-blocking-cross-site-cookies = Kicookies xoch'in taq ruxaq
+content-blocking-cross-site-cookies-in-all-windows = Kicookie q'eb'an ruxaq k'amaya'l pa ronojel tzuwäch (ruk'wan ojqanel taq cookie)
 content-blocking-cross-site-tracking-cookies = kikuki kojqanik xoch'in taq ruxaq
+content-blocking-all-cross-site-cookies-private-windows = Taq kicookie q'eb'an taq ruxaq k'amaya'l pan Ichinan taq Tzuwäch
 content-blocking-cross-site-tracking-cookies-plus-isolate = Taq kikuki kojqanem xoch'in taq ruxaq chuqa' kijech'unik ri ch'aqa' chik taq kuki
 content-blocking-social-media-trackers = Kojqanela' aj winäq k'amab'ey
 content-blocking-all-cookies = Ronojel taq kuki
@@ -1140,6 +1143,8 @@ collection-backlogged-crash-reports =
     .label = Tiya' q'ij chi re { -brand-short-name } nutäq e'oyob'en kitzijol sachoj pan ab'i'
     .accesskey = c
 collection-backlogged-crash-reports-link = Tetamäx ch'aqa' chik
+collection-backlogged-crash-reports-with-link = Tiya' q'ij chi { -brand-short-name } yerutäq taq rutzijol sachoj emolon pa rub'i' <a data-l10n-name="crash-reports-link">Tetamäx ch'aqa' chik</a>
+    .accesskey = s
 
 ## Privacy Section - Security
 ##

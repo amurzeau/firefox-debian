@@ -535,7 +535,7 @@ home-prefs-topsites-by-option-sponsored =
     .label = Топ сайтов спонсоров
 home-prefs-shortcuts-header =
     .label = Ярлыки
-home-prefs-shortcuts-description = Сайты, которые вы сохраняете или посещаете
+home-prefs-shortcuts-description = Сохранённые или посещаемые сайты
 home-prefs-shortcuts-by-option-sponsored =
     .label = Спонсируемые ярлыки
 
@@ -1022,9 +1022,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Баланс защиты и производительности. Страницы будут загружаться нормально.
 content-blocking-etp-strict-desc = Усиленная защита может вызывать проблемы с некоторыми сайтами и их содержимым.
 content-blocking-etp-custom-desc = Выберите, какие трекеры и скрипты необходимо блокировать.
+content-blocking-etp-blocking-desc = { -brand-short-name } блокирует следующее:
 content-blocking-private-windows = Отслеживающее содержимое в приватных окнах
 content-blocking-cross-site-cookies = Межсайтовые куки
+content-blocking-cross-site-cookies-in-all-windows = Межсайтовые куки во всех окнах (включая отслеживающие куки)
 content-blocking-cross-site-tracking-cookies = Межсайтовые отслеживающие куки
+content-blocking-all-cross-site-cookies-private-windows = Межсайтовые куки в Приватных окнах
 content-blocking-cross-site-tracking-cookies-plus-isolate = Межсайтовые отслеживающие куки, а также изолировать оставшиеся куки
 content-blocking-social-media-trackers = Трекеры социальных сетей
 content-blocking-all-cookies = Все куки
@@ -1141,9 +1144,11 @@ addon-recommendations-link = Подробнее
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Для этой конфигурации сборки отправка данных отключена
 collection-backlogged-crash-reports =
-    .label = Разрешить { -brand-short-name } отправлять от вашего имени накопившиеся сообщения о падении
+    .label = Разрешить { -brand-short-name } отправлять от вашего имени накопившиеся сообщения о падениях
     .accesskey = ш
 collection-backlogged-crash-reports-link = Подробнее
+collection-backlogged-crash-reports-with-link = Разрешить { -brand-short-name } отправлять от вашего имени накопившиеся сообщения о падениях <a data-l10n-name="crash-reports-link">Подробнее</a>
+    .accesskey = ш
 
 ## Privacy Section - Security
 ##

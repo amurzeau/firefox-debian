@@ -246,6 +246,10 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Adaugă motor de căutare
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -289,6 +293,13 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Informațiile site-ului { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Securitatea conexiunii pentru { $host }
 identity-connection-not-secure = Conexiune nesecurizată
 identity-connection-secure = Conexiune securizată
 identity-connection-internal = Aceasta este o pagină securizată { -brand-short-name }.

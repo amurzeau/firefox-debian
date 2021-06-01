@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-do-not-track-description = Požiadať webové stránky pomocou signálu “Do Not Track”, aby vás nesledovali
+do-not-track-description = Požiadať webové stránky pomocou príznaku “Do Not Track”, aby vás nesledovali
 do-not-track-learn-more = Ďalšie informácie
 do-not-track-option-default-content-blocking-known =
     .label = Len ak je zapnuté blokovanie známych sledovacích prvkov
@@ -264,7 +264,7 @@ translate-exceptions =
 # Variables:
 #    $localeName (string) - Localized name of the locale to be used.
 use-system-locale =
-    .label = Formátovať dátumy, časy, čísla a jednotky podľa nastavenia jazyka „{ $localeName }“ z operačného systému.
+    .label = Formátovať dátumy, časy, čísla a jednotky podľa nastavenia jazyka “{ $localeName }” z operačného systému.
 check-user-spelling =
     .label = Kontrolovať pravopis počas písania
     .accesskey = K
@@ -986,14 +986,14 @@ addressbar-locbar-openpage-option =
     .accesskey = e
 # Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
 addressbar-locbar-shortcuts-option =
-    .label = Skratky
+    .label = skratky
     .accesskey = S
 addressbar-locbar-topsites-option =
-    .label = Top stránky
-    .accesskey = T
+    .label = top stránky
+    .accesskey = t
 addressbar-locbar-engines-option =
-    .label = Vyhľadávacie moduly
-    .accesskey = V
+    .label = vyhľadávacie moduly
+    .accesskey = v
 addressbar-suggestions-settings = Zmeniť nastavenia pre návrhy vyhľadávania
 
 ## Privacy Section - Content Blocking
@@ -1022,9 +1022,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Vyvážená ochrana a výkon. Neovplyvní načítanie webových stránok.
 content-blocking-etp-strict-desc = Viac blokovaného obsahu zvyšuje pravdepodobnosť, že niektoré stránky nebudú správne fungovať.
 content-blocking-etp-custom-desc = Vyberte sledovacie prvky a skripty, ktoré chcete blokovať.
+content-blocking-etp-blocking-desc = { -brand-short-name } blokuje:
 content-blocking-private-windows = Sledovací obsah je blokovaný v súkromných oknách
 content-blocking-cross-site-cookies = Cookies tretích strán
+content-blocking-cross-site-cookies-in-all-windows = Cookies tretích strán vo všetkých oknách (vrátane sledovacích cookies)
 content-blocking-cross-site-tracking-cookies = Blokované sú sledovacie cookies
+content-blocking-all-cross-site-cookies-private-windows = Cookies tretích strán v súkromných oknách
 content-blocking-cross-site-tracking-cookies-plus-isolate = Sledovacie cookies tretích strán, ostatné izolovať
 content-blocking-social-media-trackers = Blokované sú sledovacie prvky sociálnych sietí
 content-blocking-all-cookies = Všetky cookies
@@ -1128,22 +1131,24 @@ collection-privacy-notice = Zásady ochrany súkromia
 collection-health-report-telemetry-disabled = Odosielanie technických údajov a údajov o interakcii spoločnosti { -vendor-short-name } nie je naďalej povolené. Všetky historické údaje budú odstránené v priebehu 30 dní.
 collection-health-report-telemetry-disabled-link = Ďalšie informácie
 collection-health-report =
-    .label = Povoliť prehliadaču { -brand-short-name } odosielať technické údaje a údaje o interakciách spoločnosti { -vendor-short-name }
+    .label = Povoliť { -brand-short-name(case: "dat") } odosielať technické údaje a údaje o interakciách spoločnosti { -vendor-short-name }
     .accesskey = o
 collection-health-report-link = Ďalšie informácie
 collection-studies =
-    .label = Povoliť prehliadaču { -brand-short-name } inštalovať a spúšťať štúdie
+    .label = Povoliť { -brand-short-name(case: "dat") } inštalovať a spúšťať štúdie
 collection-studies-link = Zobraziť štúdie aplikácie { -brand-short-name }
 addon-recommendations =
-    .label = Povoliť prehliadaču { -brand-short-name } odporúčať rozšírenia vybrané priamo pre mňa
+    .label = Povoliť { -brand-short-name(case: "dat") } odporúčať rozšírenia vybrané priamo pre mňa
 addon-recommendations-link = Ďalšie informácie
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Odosielanie údajov je v konfigurácii tohto zostavenia zakázané
 collection-backlogged-crash-reports =
-    .label = Povoliť prehliadaču { -brand-short-name } odosielať vo vašom mene správy o zlyhaní
+    .label = Povoliť { -brand-short-name(case: "dat") } odosielať vo vašom mene správy o zlyhaní
     .accesskey = z
 collection-backlogged-crash-reports-link = Ďalšie informácie
+collection-backlogged-crash-reports-with-link = Povoliť { -brand-short-name(case: "dat") } odosielať vo vašom mene správy o zlyhaní <a data-l10n-name="crash-reports-link">Ďalšie informácie</a>
+    .accesskey = P
 
 ## Privacy Section - Security
 ##

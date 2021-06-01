@@ -218,7 +218,7 @@ full-screen-autohide =
     .label = Piilota työkalupalkit
     .accesskey = P
 full-screen-exit =
-    .label = Poistu kokoruututilasta
+    .label = Poistu koko näytön tilasta
     .accesskey = o
 
 ## Search Engine selection buttons (one-offs)
@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Lisää ”{ $engineName }”
+    .tooltiptext = Lisää hakukone ”{ $engineName }”
+    .aria-label = Lisää hakukone ”{ $engineName }”
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Lisää hakukone
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Tiedot sivustosta { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Yhteyden suojaus sivustoon { $host }
 identity-connection-not-secure = Yhteys ei ole suojattu
 identity-connection-secure = Yhteys on suojattu
+identity-connection-failure = Yhteysvirhe
 identity-connection-internal = Tämä on suojattu { -brand-short-name }-sivu.
 identity-connection-file = Sivu on tallennettu tietokoneellesi.
 identity-extension-page = Tämän sivun latasi laajennus.
@@ -319,6 +339,7 @@ identity-https-only-info-turn-off2 = Jos sivu näyttää rikkinäiseltä, saatat
 identity-https-only-info-no-upgrade = Yhteyden päivittäminen HTTP:stä epäonnistui.
 identity-permissions-storage-access-header = Sivustorajat ylittävät evästeet
 identity-permissions-storage-access-hint = Nämä osapuolet voivat käyttää sivustorajat ylittäviä evästeitä ja sivustotietoja, kun olet tällä sivustolla.
+identity-permissions-storage-access-learn-more = Lue lisää
 identity-permissions-reload-hint = Sivu tarvitsee ehkä päivittää, jotta muutokset tulevat voimaan.
 identity-permissions-empty = Sivustolle ei ole myönnetty mitään erityisoikeuksia.
 identity-clear-site-data =
@@ -491,6 +512,11 @@ urlbar-placeholder-with-name =
     .placeholder = Hae hakukoneella { $name } tai kirjoita osoite
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Selain on kauko-ohjauksessa
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Selain on etäohjauksessa (syy: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Olet myöntänyt tälle sivustolle lisäoikeuksia.
 urlbar-switch-to-tab =
@@ -565,11 +591,11 @@ urlbar-result-action-search-tabs = Etsi välilehdistä
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
 # Variables
 #  $domain (String): the domain that is full screen, e.g. "mozilla.org"
-fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> on nyt kokoruututilassa
-fullscreen-warning-no-domain = Dokumentti on nyt kokoruututilassa
-fullscreen-exit-button = Poistu kokoruututilasta (Esc)
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> on nyt koko näytön tilassa
+fullscreen-warning-no-domain = Dokumentti on nyt koko näytön tilassa
+fullscreen-exit-button = Poistu koko näytön tilasta (Esc)
 # "esc" is lowercase on mac keyboards, but uppercase elsewhere.
-fullscreen-exit-mac-button = Poistu kokoruututilasta (esc)
+fullscreen-exit-mac-button = Poistu koko näytön tilasta (esc)
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
 # Variables
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
@@ -579,9 +605,6 @@ pointerlock-warning-no-domain = Tämä sivu hallitsee hiiren osoitinta. Voit ott
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Osa tästä sivusta kaatui.</strong> Lähetäthän raportin, jotta { -brand-product-name } saa tiedon tästä ja voi korjata ongelman nopeammin.
-crashed-subframe-learnmore =
-    .label = Lue lisää
-    .accesskey = L
 crashed-subframe-learnmore-link =
     .value = Lue lisää
 crashed-subframe-submit =
@@ -594,8 +617,6 @@ bookmarks-show-all-bookmarks =
     .label = Näytä kaikki kirjanmerkit
 bookmarks-manage-bookmarks =
     .label = Järjestele kirjanmerkkejä
-bookmarks-recent-bookmarks-panel =
-    .value = Uusimmat kirjanmerkit
 bookmarks-recent-bookmarks-panel-subheader = Uusimmat kirjanmerkit
 bookmarks-toolbar-chevron =
     .tooltiptext = Näytä lisää kirjanmerkkejä
@@ -693,10 +714,10 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = Osa sivuston äänitteistä tai videoista käyttää DRM-ohjelmistoa, joka voi rajoittaa mitä { -brand-short-name } voi antaa tehdä niillä.
-eme-notifications-drm-content-playing-manage = Hallitse asetuksia
-eme-notifications-drm-content-playing-manage-accesskey = H
+eme-notifications-drm-content-playing-manage = Muokkaa asetuksia
+eme-notifications-drm-content-playing-manage-accesskey = M
 eme-notifications-drm-content-playing-dismiss = Hylkää
-eme-notifications-drm-content-playing-dismiss-accesskey = y
+eme-notifications-drm-content-playing-dismiss-accesskey = H
 
 ## Password save/update panel
 

@@ -1022,9 +1022,12 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Równowaga między bezpieczeństwem a szybkością wczytywania stron. Strony będą działać bez problemów.
 content-blocking-etp-strict-desc = Silniejsza ochrona, ale może powodować niepoprawne działanie niektórych stron.
 content-blocking-etp-custom-desc = Wybierz, które elementy śledzące i skrypty blokować:
+content-blocking-etp-blocking-desc = { -brand-short-name } blokuje:
 content-blocking-private-windows = treści z elementami śledzącymi w oknach prywatnych
 content-blocking-cross-site-cookies = ciasteczka między witrynami
+content-blocking-cross-site-cookies-in-all-windows = ciasteczka między witrynami we wszystkich oknach (w tym śledzące)
 content-blocking-cross-site-tracking-cookies = ciasteczka śledzące między witrynami
+content-blocking-all-cross-site-cookies-private-windows = ciasteczka między witrynami w prywatnych oknach
 content-blocking-cross-site-tracking-cookies-plus-isolate = ciasteczka śledzące między witrynami i izolowanie pozostałych
 content-blocking-social-media-trackers = elementy śledzące serwisów społecznościowych
 content-blocking-all-cookies = wszystkie ciasteczka
@@ -1144,6 +1147,8 @@ collection-backlogged-crash-reports =
     .label = Przesyłanie zgromadzonych zgłoszeń awarii przeglądarki { -brand-short-name }.
     .accesskey = o
 collection-backlogged-crash-reports-link = Więcej informacji
+collection-backlogged-crash-reports-with-link = Przesyłanie zgromadzonych zgłoszeń awarii przeglądarki { -brand-short-name }. <a data-l10n-name="crash-reports-link">Więcej informacji</a>
+    .accesskey = o
 
 ## Privacy Section - Security
 ##
@@ -1217,11 +1222,11 @@ httpsonly-header = Tryb używania wyłącznie protokołu HTTPS
 httpsonly-description = Protokół HTTPS zapewnia zabezpieczone, zaszyfrowane połączenie między przeglądarką { -brand-short-name } a odwiedzanymi witrynami. Większość witryn obsługuje HTTPS, a jeśli tryb używania wyłącznie protokołu HTTPS jest włączony, to { -brand-short-name } przełączy wszystkie połączenia na HTTPS.
 httpsonly-learn-more = Więcej informacji
 httpsonly-radio-enabled =
-    .label = Tryb używania wyłącznie protokołu HTTPS we wszystkich oknach
+    .label = Włącz we wszystkich oknach
 httpsonly-radio-enabled-pbm =
-    .label = Tryb używania wyłącznie protokołu HTTPS tylko w oknach prywatnych
+    .label = Włącz tylko w oknach prywatnych
 httpsonly-radio-disabled =
-    .label = Nie włączaj trybu używania wyłącznie protokołu HTTPS
+    .label = Nie włączaj
 
 ## The following strings are used in the Download section of settings
 

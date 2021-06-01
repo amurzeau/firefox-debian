@@ -249,6 +249,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = “{ $engineName }” toevoegen
+    .tooltiptext = Zoekmachine “{ $engineName }” toevoegen
+    .aria-label = Zoekmachine “{ $engineName }” toevoegen
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Zoekmachine toevoegen
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -295,8 +307,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Website-informatie voor { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Verbindingsbeveiliging voor { $host }
 identity-connection-not-secure = Verbinding niet beveiligd
 identity-connection-secure = Verbinding beveiligd
+identity-connection-failure = Verbindingsfout
 identity-connection-internal = Dit is een beveiligde { -brand-short-name }-pagina.
 identity-connection-file = Deze pagina is op uw computer opgeslagen.
 identity-extension-page = Deze pagina is geladen vanuit een extensie.
@@ -321,6 +341,7 @@ identity-https-only-info-turn-off2 = Als de website niet lijkt te werken, dan ku
 identity-https-only-info-no-upgrade = Kan HTTP-verbinding niet upgraden.
 identity-permissions-storage-access-header = Cross-sitecookies
 identity-permissions-storage-access-hint = Deze partijen kunnen tijdens uw bezoek aan deze website cross-sitecookies en websitegegevens gebruiken.
+identity-permissions-storage-access-learn-more = Meer info
 identity-permissions-reload-hint = Mogelijk dient u de pagina te vernieuwen om wijzigingen van kracht te laten worden.
 identity-permissions-empty = U hebt deze website geen speciale toestemmingen gegeven.
 identity-clear-site-data =
@@ -495,6 +516,11 @@ urlbar-placeholder-with-name =
     .placeholder = Voer zoekterm voor { $name } of adres in
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Browser wordt op afstand bestuurd
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Browser wordt op afstand beheerd (reden: { $component })
 urlbar-permissions-granted =
     .tooltiptext = U hebt deze website aanvullende toestemmingen gegeven.
 urlbar-switch-to-tab =
@@ -583,9 +609,6 @@ pointerlock-warning-no-domain = Dit document heeft de controle over uw aanwijzer
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Een deel van deze pagina is gecrasht.</strong> Dien een rapport in om { -brand-product-name } te informeren over dit probleem en het sneller opgelost te krijgen.
-crashed-subframe-learnmore =
-    .label = Meer info
-    .accesskey = M
 crashed-subframe-learnmore-link =
     .value = Meer info
 crashed-subframe-submit =
@@ -598,8 +621,6 @@ bookmarks-show-all-bookmarks =
     .label = Alle bladwijzers tonen
 bookmarks-manage-bookmarks =
     .label = Bladwijzers beheren
-bookmarks-recent-bookmarks-panel =
-    .value = Recente bladwijzers
 bookmarks-recent-bookmarks-panel-subheader = Recente bladwijzers
 bookmarks-toolbar-chevron =
     .tooltiptext = Meer bladwijzers tonen

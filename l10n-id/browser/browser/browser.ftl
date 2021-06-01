@@ -239,6 +239,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Tambahkan "{ $engineName }"
+    .tooltiptext = Tambahkan mesin pencari "{ $engineName }"
+    .aria-label = Tambahkan mesin pencari "{ $engineName }"
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Tambah mesin pencari
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -281,8 +293,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Informasi Situs untuk { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Keamanan Sambungan untuk { $host }
 identity-connection-not-secure = Sambungan tidak aman
 identity-connection-secure = Sambungan aman
+identity-connection-failure = Sambungan gagal
 identity-connection-internal = Ini adalah laman { -brand-short-name } aman.
 identity-connection-file = Laman ini tersimpan di komputer Anda.
 identity-extension-page = Laman ini dimuat dari ekstensi.
@@ -307,6 +327,7 @@ identity-https-only-info-turn-off2 = Jika laman terlihat bermasalah, Anda mungki
 identity-https-only-info-no-upgrade = Tidak dapat meningkatkan koneksi dari HTTP.
 identity-permissions-storage-access-header = Kuki lintas situs
 identity-permissions-storage-access-hint = Pihak berikut dapat menggunakan kuki lintas situs dan data situs saat Anda berada di situs ini.
+identity-permissions-storage-access-learn-more = Pelajari lebih lanjut
 identity-permissions-reload-hint = Anda mungkin perlu memuat ulang laman untuk menerapkan perubahan.
 identity-permissions-empty = Anda belum memberikan izin khusus apa pun untuk situs ini.
 identity-clear-site-data =
@@ -478,6 +499,11 @@ urlbar-placeholder-with-name =
     .placeholder = Cari lewat { $name } atau masukkan alamat
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Peramban dalam kendali jarak jauh
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Browser berada di bawah kendali jarak jauh (alasan: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Anda telah memberikan izin tambahan kepada situs web ini.
 urlbar-switch-to-tab =
@@ -533,6 +559,11 @@ urlbar-result-action-tabtosearch-web = Cari dengan { $engine } langsung dari bil
 urlbar-result-action-tabtosearch-other-engine = Cari dengan { $engine } langsung dari bilah alamat
 # Action text for copying to clipboard.
 urlbar-result-action-copy-to-clipboard = Salin
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -561,9 +592,6 @@ pointerlock-warning-no-domain = Dokumen ini memiliki kendali atas pointer Anda. 
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Sebagian dari laman ini mogok. </strong>Untuk memberi tahu { -brand-product-name } tentang masalah ini dan memperbaikinya lebih cepat, harap kirimkan laporan.
-crashed-subframe-learnmore =
-    .label = Pelajari Lebih Lanjut
-    .accesskey = P
 crashed-subframe-learnmore-link =
     .value = Pelajari Lebih Lanjut
 crashed-subframe-submit =
@@ -576,8 +604,6 @@ bookmarks-show-all-bookmarks =
     .label = Tampilkan Semua Markah…
 bookmarks-manage-bookmarks =
     .label = Kelola Markah
-bookmarks-recent-bookmarks-panel =
-    .value = Markah Terbaru
 bookmarks-recent-bookmarks-panel-subheader = Markah Terbaru
 bookmarks-toolbar-chevron =
     .tooltiptext = Tampilkan markah lainnya

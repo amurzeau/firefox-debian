@@ -3,15 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 migration-wizard =
-    .title = ਇੰਪੋਰਟ ਸਹਾਇਕ
+    .title = ਦਰਾਮਦ ਸਹਾਇਕ
 import-from =
     { PLATFORM() ->
-        [windows] ਚੋਣ, ਬੁੱਕਮਾਰਕ, ਅਤੀਤ, ਪਾਸਵਰਡ ਅਤੇ ਹੋਰ ਡਾਟਾ ਇੱਥੋਂ ਇੰਪੋਰਟ ਕਰੋ:
-       *[other] ਚੋਣ, ਬੁੱਕਮਾਰਕ, ਅਤੀਤ, ਪਾਸਵਰਡ ਅਤੇ ਹੋਰ ਡਾਟਾ ਇੱਥੋਂ ਇੰਪੋਰਟ ਕਰੋ:
+        [windows] ਚੋਣਾਂ, ਬੁੱਕਮਾਰਕ, ਅਤੀਤ, ਪਾਸਵਰਡ ਅਤੇ ਹੋਰ ਡਾਟਾ ਇੱਥੋਂ ਦਰਾਮਦ ਕਰੋ:
+       *[other] ਚੋਣਾਂ, ਬੁੱਕਮਾਰਕ, ਅਤੀਤ, ਪਾਸਵਰਡ ਅਤੇ ਹੋਰ ਡਾਟਾ ਇੱਥੋਂ ਦਰਾਮਦ ਕਰੋ:
     }
 import-from-bookmarks = ਬੁੱਕਮਾਰਕ ਇੱਥੋਂ ਇੰਪੋਰਟ:
 import-from-ie =
-    .label = ਮਾਈਕ੍ਰੋਸਾਫਟ ਇੰਟਰਨੈੱਟ ਐਕਸਪਲੋਰਰ
+    .label = Microsoft Internet Explorer
     .accesskey = M
 import-from-edge =
     .label = Microsoft Edge
@@ -23,22 +23,22 @@ import-from-edge-beta =
     .label = Microsoft Edge Beta
     .accesskey = d
 import-from-nothing =
-    .label = ਕੁਝ ਵੀ ਇੰਪੋਰਟ ਨਾ ਕਰੋ
+    .label = ਕੁਝ ਵੀ ਦਰਾਮਦ ਨਾ ਕਰੋ
     .accesskey = D
 import-from-safari =
-    .label = ਸਫ਼ਾਰੀ
+    .label = Safari
     .accesskey = S
 import-from-canary =
     .label = Chrome Canary
     .accesskey = n
 import-from-chrome =
-    .label = ਕਰੋਮ
+    .label = Chrome
     .accesskey = C
 import-from-chrome-beta =
-    .label = ਕਰੋਮ ਬੀਟਾ
+    .label = Chrome Beta
     .accesskey = B
 import-from-chrome-dev =
-    .label = ਕਰੋਮ ਡਿਵ
+    .label = Chrome Dev
     .accesskey = D
 import-from-chromium =
     .label = Chromium
@@ -47,41 +47,41 @@ import-from-firefox =
     .label = Firefox
     .accesskey = X
 import-from-360se =
-    .label = 360 ਸੁਰੱਖਿਆ ਬਰਾਊਜ਼ਰ
+    .label = 360 ਸੁਰੱਖਿਅਤ ਬਰਾਊਜ਼ਰ
     .accesskey = 3
-no-migration-sources = ਕੋਈ ਵੀ ਅਜੇਹਾ ਪਰੋਗਰਾਮ ਨਹੀਂ ਲੱਭਿਆ ਹੈ, ਜੋ  ਕਿ ਬੁੱਕਮਾਰਕ, ਅਤੀਤ ਜਾਂ ਪਾਸਵਰਡ ਡਾਟਾ ਰੱਖਦਾ ਹੋਵੇ।
-import-source-page-title = ਸੈਟਿੰਗ ਅਤੇ ਡਾਟਾ ਇੰਪੋਰਟ ਕਰੋ
-import-items-page-title = ਇੰਪੋਰਟ ਕਰਨ ਲਈ ਆਈਟਮਾਂ
-import-items-description = ਇੰਪੋਰਟ ਕਰਨ ਲਈ ਆਈਟਮਾਂ ਚੁਣੋ:
+no-migration-sources = ਕੋਈ ਵੀ ਪ੍ਰੋਗਰਾਮ ਨਹੀਂ ਲੱਭਿਆ, ਜਿਸ ਵਿੱਚ ਬੁੱਕਮਾਰਕ, ਅਤੀਤ ਜਾਂ ਪਾਸਵਰਡ ਡਾਟਾ ਹੋਵੇ।
+import-source-page-title = ਸੈਟਿੰਗਾਂ ਅਤੇ ਡਾਟਾ ਦਰਾਮਦ ਕਰੋ
+import-items-page-title = ਦਰਾਮਦ ਕਰਨ ਲਈ ਚੀਜ਼ਾਂ
+import-items-description = ਦਰਾਮਦ ਕਰਨ ਲਈ ਚੀਜ਼ਾਂ ਚੁਣੋ:
 import-permissions-page-title = { -brand-short-name } ਨੂੰ ਇਜਾਜ਼ਤਾਂ ਦਿਓ
 # Do not translate "Bookmarks.plist"; the file name is the same everywhere.
 import-permissions-description =
     macOS ਨੇ ਸਫ਼ਾਰੀ ਦੇ ਬੁੱਕਮਾਰਕ ਲਈ ਪਹੁੰਚ ਵਾਸਤੇ ਤੁਹਾਨੂੰ ਖਾਸ ਤੌਰ ਉੱਤੇ
     { -brand-short-name } ਨੂੰ ਇਜਾਜ਼ਤ ਦੇਣਾ ਜ਼ਰੂਰੀ ਕੀਤਾ ਹੈ। “ਜਾਰੀ ਰੱਖੋ“ ਨੂੰ ਕਲਿੱਕ ਕਰੋ ਅਤੇ ਫ਼ਾਇਲ ਖੋਲ੍ਹੋ ਪੈਨਲ ਵਿੱਚ “Bookmarks.plist” ਫ਼ਾਇਲ ਨੂੰ ਚੁਣੋ।
-import-migrating-page-title = ਇੰਪੋਰਟ ਕੀਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ...
-import-migrating-description = ਹੇਠ ਦਿੱਤੀਆਂ ਆਈਟਮਾਂ ਇੰਪੋਰਟ ਕੀਤੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ...
+import-migrating-page-title = …ਦਰਾਮਦ ਕੀਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ
+import-migrating-description = ਹੇਠ ਦਿੱਤੀਆਂ ਚੀਜ਼ਾਂ ਦਰਾਮਦ ਕੀਤੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ...
 import-select-profile-page-title = ਪਰੋਫਾਇਲ ਚੁਣੋ
-import-select-profile-description = ਇਹ ਪਰੋਫਾਇਲ ਇੰਪੋਰਟ ਕਰਨ ਲਈ ਉਪਲੱਬਧ ਹਨ:
-import-done-page-title = ਇੰਪੋਰਟ ਮੁਕੰਮਲ ਹੋਇਆ
-import-done-description = ਇਹ ਆਈਟਮਾਂ ਸਫਲਤਾਪੂਰਕ ਇੰਪੋਰਟ ਕੀਤੀਆਂ ਗਈਆਂ ਹਨ:
+import-select-profile-description = ਇਹ ਪਰੋਫਾਇਲ ਦਰਾਮਦ ਕਰਨ ਲਈ ਉਪਲੱਬਧ ਹਨ:
+import-done-page-title = ਦਰਾਮਦ ਮੁਕੰਮਲ ਹੋਇਆ
+import-done-description = ਇਹ ਚੀਜ਼ਾਂ ਕਾਮਯਾਬੀ ਨਾਲ ਦਰਾਮਦ ਕੀਤੀਆਂ ਗਈਆਂ ਹਨ:
 import-close-source-browser = ਜਾਰੀ ਰੱਖਣ ਤੋਂ ਪਹਿਲਾਂ ਚੁਣੇ ਗਏ ਬਰਾਊਜ਼ਰ ਦੇ ਬੰਦ ਕਰਨ ਨੂੰ ਯਕੀਨੀ ਬਣਾਓ।
 # Displays which browser the bookmarks are being imported from
 #
 # Variables:
 #   $source (String): The browser the user has chosen to import bookmarks from.
 imported-bookmarks-source = { $source } ਤੋਂ
-source-name-ie = ਇੰਟਰਨੈੱਟ ਐਕਸਪਲੋਰਰ
+source-name-ie = Internet Explorer
 source-name-edge = Microsoft Edge
 source-name-edge-beta = Microsoft Edge Beta
 source-name-safari = Safari
 source-name-canary = Google Chrome Canary
-source-name-chrome = ਗੂਗਲ ਕਰੋਮ
-source-name-chrome-beta = ਗੂਗਲ ਕਰੋਮ ਬੀਟਾ
-source-name-chrome-dev = ਗੂਗਲ ਕਰੋਮ ਡਿਵ
+source-name-chrome = Google Chrome
+source-name-chrome-beta = Google Chrome Beta
+source-name-chrome-dev = Google Chrome Dev
 source-name-chromium = Chromium
-source-name-firefox = ਮੋਜ਼ੀਲਾ ਫਾਇਰਫਾਕਸ
-source-name-360se = 360 ਸੁਰੱਖਿਆ ਬਰਾਊਜ਼ਰ
-imported-safari-reading-list = ਪੜ੍ਹਨ ਸੂਚੀ (ਸਫਾਰੀ ਤੋਂ)
+source-name-firefox = Mozilla Firefox
+source-name-360se = 360 Secure Browser
+imported-safari-reading-list = ਪੜ੍ਹਨ ਸੂਚੀ (Safari ਤੋਂ)
 imported-edge-reading-list = ਪੜ੍ਹਨ ਸੂਚੀ (Edge ਤੋਂ)
 
 ## Browser data types

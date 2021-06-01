@@ -2,12 +2,24 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# Page title
+about-processes-title = Менаџер процеса
+# The Actions column
+about-processes-column-action =
+    .title = Радње
 
 ## Tooltips
 
+about-processes-shutdown-process =
+    .title = Затвори картице и окончај процесе
+about-processes-shutdown-tab =
+    .title = Затвори картицу
 
 ## Column headers
 
+about-processes-column-name = Назив
+about-processes-column-memory-resident = Меморија
+about-processes-column-cpu-total = CPU
 
 ## Process names
 ## Variables:
@@ -15,10 +27,16 @@
 ##    $origin (String) The domain name for this process.
 ##    $type (String) The raw type for this process. Used for unknown processes.
 
+about-processes-browser-process-name = { -brand-short-name } (процес { $pid })
+about-processes-web-process-name = Веб (процес { $pid }, дељени)
+about-processes-web-isolated-process-name = Веб (процес { $pid }) за { $origin }
+about-processes-web-large-allocation = Веб (процес { $pid }, велики) за { $origin }
+about-processes-with-coop-coep-process-name = Веб (процес { $pid }, изолован од других извора) за { $origin }
 about-processes-file-process-name = Датотеке (процес { $pid })
 about-processes-extension-process-name = Додаци (процес { $pid })
 about-processes-privilegedabout-process-name = Странице About (процес { $pid })
 about-processes-plugin-process-name = Додатне компоненте (процес { $pid })
+about-processes-privilegedmozilla-process-name = Веб (процес { $pid }) за сајтове организације { -vendor-short-name }
 about-processes-gmp-plugin-process-name = Медијске компоненте Gecko (процес { $pid })
 about-processes-gpu-process-name = GPU (процес { $pid })
 about-processes-vr-process-name = VR (процес { $pid })
@@ -68,6 +86,8 @@ about-processes-frame-name-many = Подоквири ({ $number }): { $shortUrl 
 ##    $unit (String) The unit in which to display $total. See the definitions
 ##                   of `duration-unit-*`.
 
+# Special case: data is not available yet.
+about-processes-cpu-user-and-kernel-not-ready = (мерење)
 
 ## Displaying Memory (total and delta)
 ## Variables:

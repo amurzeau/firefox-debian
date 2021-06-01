@@ -12,6 +12,7 @@ preferences-title =
         }
 preferences-tab-title =
     .title = Inställningar
+preferences-doc-title = Inställningar
 category-list =
     .aria-label = Kategorier
 pane-general-title = Allmänt
@@ -90,8 +91,8 @@ update-in-progress-ok-button = &Ignorera
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Fortsätt
-account-button = Kontoinställningar
 addons-button = Tillägg & teman
+account-button = Kontoinställningar
 open-addons-sidebar-button = Tillägg och teman
 
 ## OS Authentication dialog
@@ -143,14 +144,10 @@ new-message-arrival = När ny e-post kommer:
 mail-play-sound-label =
     .label =
         { PLATFORM() ->
-            [macos] Spela följande ljudfil:
-           *[other] Spela upp ett ljud
+            [macos] Spela upp följande ljudfil:
+           *[other] Spela ett ljud
         }
-    .accesskey =
-        { PLATFORM() ->
-            [macos] d
-           *[other] u
-        }
+    .accesskey = d
 mail-play-button =
     .label = Spela upp
     .accesskey = e
@@ -326,6 +323,8 @@ quoted-text-color =
     .accesskey = F
 search-input =
     .placeholder = Sök
+search-handler-table =
+    .placeholder = Filtrera innehållstyper och åtgärder
 type-column-label =
     .label = Typ av innehåll
     .accesskey = T

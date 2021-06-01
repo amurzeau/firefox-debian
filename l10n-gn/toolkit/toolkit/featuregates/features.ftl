@@ -19,6 +19,10 @@ experimental-features-media-avif =
 experimental-features-media-avif-description = Ko tembiapoite myandypyre, { -brand-short-name } ojokupyty marandurenda ra’ãnga AV1 (AVIF) ysaja ndive. Ko marandurenda ra’ãnga opytáva oipurúva algoritmo rembiapo ta’ãngamýi AV1 moñe’ẽha omomichĩ hag̃ua ta’ãnga. Eporandu <a data-l10n-name="bugzilla">bug 1443863</a> eikuaave hag̃ua.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
+experimental-features-media-jxl =
+    .label = Media: JPEG XL
+# The title of the experiment should be kept in English as it may be referenced
+# by various online articles and is technical in nature.
 experimental-features-web-api-inputmode =
     .label = Web API: inputmode
 # "inputmode" and "contenteditable" are technical terms and shouldn't be translated.
@@ -66,7 +70,7 @@ experimental-features-webrtc-global-mute-toggles =
 experimental-features-webrtc-global-mute-toggles-description = Embojuaju moambueha WebRTC iñambuéva tuichaháicha omoneĩva puruharápe omondohóvo tuichaháicha iñe’ẽatãha ha ha’ãngamýi.
 # Win32k Lockdown
 experimental-features-win32k-lockdown =
-    .label = Win32k ñemomombyry
+    .label = Win32k jejoko
 experimental-features-win32k-lockdown-description = Eipe’a pe Win32k API jepuru kundahára rendayképe. Ome’ẽkuaa tekorosãve, hákatu naiporãmbái térã ojavykuaa. (Windows-pe añoite)
 # JS JIT Warp project
 experimental-features-js-warp =

@@ -29,8 +29,8 @@ protection-report-page-summary = { -brand-short-name } pue protexer la to privac
 # This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
 protection-report-page-summary-default = { -brand-short-name } protexe la to privacidá de forma tresparente mentanto restoles. Esto ye un sumariu personalizáu d'eses proteiciones, incluyíes les ferramientes pa tener el control de la to seguranza en llinia.
 protection-report-settings-link = Xestionar los axustes de privacidá y seguranza
-etp-card-title-always = Proteición ameyorada escontra'l rastrexu: Activada siempres
-etp-card-title-custom-not-blocking = Proteición ameyorada escontra'l rastrexu: Desactivada
+etp-card-title-always = Proteición antirrastrexu ameyorada: Activada siempres
+etp-card-title-custom-not-blocking = Proteición antirrastrexu ameyorada: Desactivada
 etp-card-content-description = { -brand-short-name } bloquia automáticamente les compañes que te siguen dafurto pela web.
 protection-report-etp-card-content-custom-not-blocking = Anguaño toles proteiciones tán desactivaes. Escueyi los rastrexadores a bloquiar xestionando los axustes de les proteiciones de { -brand-short-name }.
 protection-report-manage-protections = Xestionar los axustes
@@ -63,6 +63,7 @@ protection-report-save-passwords-button = Guardar les contraseñes
 protection-report-manage-passwords-button = Xestionar les contraseñes
     .title = Xestiona les contraseñes en { -lockwise-brand-short-name }
 lockwise-mobile-app-title = Lleva les contraseñes contigo
+lockwise-app-links = { -lockwise-brand-name } p'<a data-l10n-name="lockwise-android-inline-link">Android</a> ya <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
 lockwise-how-it-works-link = Cómo funciona
 monitor-link = Cómo funciona
 monitor-breaches-resolved-title = ¡Bien! Resolviesti tolos arrampuñamientos conocíos.

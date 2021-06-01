@@ -170,9 +170,17 @@ page-action-remove-extension =
 # Variables
 # $tabCount (integer) - Number of tabs selected
 page-action-send-tabs-panel =
-    .label = 傳送 { $tabCount } 個分頁到裝置
+    .label =
+        { $tabCount ->
+            [1] 將分頁傳送到其他裝置
+           *[other] 傳送 { $tabCount } 個到其他裝置
+        }
 page-action-send-tabs-urlbar =
-    .tooltiptext = 傳送 { $tabCount } 個分頁到裝置
+    .tooltiptext =
+        { $tabCount ->
+            [1] 將分頁傳送到其他裝置
+           *[other] 傳送 { $tabCount } 個到其他裝置
+        }
 page-action-pocket-panel =
     .label = 將頁面儲存至 { -pocket-brand-name }
 page-action-copy-url-panel =
@@ -239,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName }（{ $alias }）
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = 新增「{ $engineName }」
+    .tooltiptext = 新增「{ $engineName }」搜尋引擎
+    .aria-label = 新增「{ $engineName }」搜尋引擎
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = 新增搜尋引擎
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -285,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = { $host } 的網站資訊
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = { $host } 的連線安全性
 identity-connection-not-secure = 不安全連線
 identity-connection-secure = 安全連線
+identity-connection-failure = 連線失敗
 identity-connection-internal = 這是安全的 { -brand-short-name } 頁面。
 identity-connection-file = 此頁面位於您的電腦上。
 identity-extension-page = 此頁面是擴充套件頁面。
@@ -311,6 +339,7 @@ identity-https-only-info-turn-off2 = 若網頁外觀看起來不正常，您可�
 identity-https-only-info-no-upgrade = 無法將網站連線從 HTTP 升級。
 identity-permissions-storage-access-header = 跨網站 Cookie
 identity-permissions-storage-access-hint = 當您開啟此網站時，這些網站可以使用跨網站 Cookie，並且取得您在此網站的資料。
+identity-permissions-storage-access-learn-more = 了解更多
 identity-permissions-reload-hint = 您可能需要重新載入頁面才能讓變更生效。
 identity-permissions-empty = 您並未授予此網站任何特殊權限。
 identity-clear-site-data =
@@ -482,6 +511,11 @@ urlbar-placeholder-with-name =
     .placeholder = 使用 { $name } 搜尋或輸入網址
 urlbar-remote-control-notification-anchor =
     .tooltiptext = 瀏覽器正被遠端控制中
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = 瀏覽器正被遠端控制中（原因: { $component }）
 urlbar-permissions-granted =
     .tooltiptext = 您已授予此網站更多權限。
 urlbar-switch-to-tab =
@@ -570,9 +604,6 @@ pointerlock-warning-no-domain = 此文件可控制您的滑鼠游標，按 Esc �
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>此頁面中的部分內容發生錯誤。</strong>您同意的話，可將此問題回報給 { -brand-product-name }，讓我們更快修正。
-crashed-subframe-learnmore =
-    .label = 了解更多
-    .accesskey = L
 crashed-subframe-learnmore-link =
     .value = 了解更多
 crashed-subframe-submit =
@@ -585,8 +616,6 @@ bookmarks-show-all-bookmarks =
     .label = 顯示所有書籤
 bookmarks-manage-bookmarks =
     .label = 管理書籤
-bookmarks-recent-bookmarks-panel =
-    .value = 最近加入的書籤
 bookmarks-recent-bookmarks-panel-subheader = 最近加入的書籤
 bookmarks-toolbar-chevron =
     .tooltiptext = 顯示更多書籤

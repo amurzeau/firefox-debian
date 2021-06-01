@@ -2,6 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+toolbar-context-menu-new-tab =
+    .label = Ny fane
+    .accesskey = N
 toolbar-context-menu-reload-selected-tab =
     .label = Oppdater valde fane
     .accesskey = O
@@ -50,7 +53,7 @@ toolbar-context-menu-pin-to-overflow-menu =
     .label = Fest til overflytsmenyen
     .accesskey = F
 toolbar-context-menu-auto-hide-downloads-button =
-    .label = Skjul automatisk i verktøylinja
+    .label = Gøym automatisk i verktøylinja
     .accesskey = a
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = Gøym knapp når han er tom

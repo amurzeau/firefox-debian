@@ -18,7 +18,7 @@ login-filter =
 create-login-button = Nové prihlasovacie údaje
 fxaccounts-sign-in-text = Synchronizujte svoje heslá aj do ostatných zariadení
 fxaccounts-sign-in-button = Prihlásiť sa do služby { -sync-brand-short-name }
-fxaccounts-sign-in-sync-button = Prihlásiť sa k synchronizácii
+fxaccounts-sign-in-sync-button = Prihlásiť sa a synchronizovať
 fxaccounts-avatar-button =
     .title = Správa účtu
 
@@ -75,10 +75,10 @@ about-logins-login-intro-heading-logged-out = Hľadáte svoje uložené prihlaso
 about-logins-login-intro-heading-logged-out2 = Hľadáte svoje uložené prihlásenia? Zapnite synchronizáciu alebo ich importujte.
 about-logins-login-intro-heading-logged-in = Neboli nájdené žiadne synchronizované prihlasovacie údaje.
 login-intro-description = Ak ste si uložili prihlasovacie údaje do aplikácie { -brand-product-name } na inom zariadení, môžete ich získať takto:
-login-intro-instruction-fxa = Vytvorte si { -fxaccount-brand-name } alebo sa doň prihláste na zariadení, kde máte prihlasovacie údaje uložené
+login-intro-instruction-fxa = Vytvorte si { -fxaccount-brand-name(capitalization: "sentence") } alebo sa doň prihláste na zariadení, kde máte prihlasovacie údaje uložené
 login-intro-instruction-fxa-settings = Uistite sa, že máte v nastaveniach služby { -sync-brand-short-name } na danom zariadení zaškrtnutú možnosť synchronizácie prihlasovacích údajov
 about-logins-intro-instruction-help = Ak potrebujete ďalšiu pomoc, navštívte <a data-l10n-name="help-link">pomocníka { -lockwise-brand-short-name }</a>
-login-intro-instructions-fxa = Vytvorte si  účet { -fxaccount-brand-name } alebo sa doň prihláste na zariadení, kde máte prihlasovacie údaje uložené.
+login-intro-instructions-fxa = Vytvorte si { -fxaccount-brand-name(capitalization: "sentence") } alebo sa doň prihláste na zariadení, kde máte prihlasovacie údaje uložené.
 login-intro-instructions-fxa-settings = Prejdite do okna Nastavenia > Synchronizácia > Zapnúť synchronizáciu... Začiarknite pole Prihlasovacie údaje.
 login-intro-instructions-fxa-help = Ďalšiu pomoc nájdete na stránke <a data-l10n-name="help-link"> Podpora pre { -lockwise-brand-short-name } </a>.
 about-logins-intro-import = Ak máte prihlasovacie údaje uložené v inom prehliadači, môžete ich <a data-l10n-name="import-link">do { -lockwise-brand-short-name } importovať</a>
@@ -211,10 +211,10 @@ about-logins-confirm-remove-all-sync-dialog-title =
     }
 about-logins-confirm-remove-all-sync-dialog-message =
     { $count ->
-        [1] Týmto odstránite prihlásenie, ktoré ste uložili v aplikácii { -brand-short-name } na všetkých zariadeniach synchronizovaných pomocou účtu { -fxaccount-brand-name }. Takisto odstránite všetky upozornenia na úniky, ktoré sa tu zobrazujú. Túto akciu nebudete môcť vrátiť späť.
-        [one] Týmto odstránite prihlásenia, ktoré ste uložili v aplikácii { -brand-short-name } na všetkých zariadeniach synchronizovaných pomocou účtu { -fxaccount-brand-name }. Takisto odstránite všetky upozornenia na úniky, ktoré sa tu zobrazujú. Túto akciu nebudete môcť vrátiť späť.
-        [few] Týmto odstránite prihlásenia, ktoré ste uložili v aplikácii { -brand-short-name } na všetkých zariadeniach synchronizovaných pomocou účtu { -fxaccount-brand-name }. Takisto odstránite všetky upozornenia na úniky, ktoré sa tu zobrazujú. Túto akciu nebudete môcť vrátiť späť.
-       *[other] Týmto odstránite prihlásenia, ktoré ste uložili v aplikácii { -brand-short-name } na všetkých zariadeniach synchronizovaných pomocou účtu { -fxaccount-brand-name }. Takisto odstránite všetky upozornenia na úniky, ktoré sa tu zobrazujú. Túto akciu nebudete môcť vrátiť späť.
+        [1] Týmto odstránite prihlásenie, ktoré ste uložili v prehliadači { -brand-short-name } na všetkých zariadeniach synchronizovaných pomocou { -fxaccount-brand-name(case: "gen", capitalization: "sentence") }. Takisto odstránite všetky upozornenia na úniky, ktoré sa tu zobrazujú. Túto akciu nebudete môcť vrátiť späť.
+        [one] Týmto odstránite prihlásenia, ktoré ste uložili v prehliadači { -brand-short-name } na všetkých zariadeniach synchronizovaných pomocou { -fxaccount-brand-name(case: "gen", capitalization: "sentence") }. Takisto odstránite všetky upozornenia na úniky, ktoré sa tu zobrazujú. Túto akciu nebudete môcť vrátiť späť.
+        [few] Týmto odstránite prihlásenia, ktoré ste uložili v prehliadači { -brand-short-name } na všetkých zariadeniach synchronizovaných pomocou { -fxaccount-brand-name(case: "gen", capitalization: "sentence") }. Takisto odstránite všetky upozornenia na úniky, ktoré sa tu zobrazujú. Túto akciu nebudete môcť vrátiť späť.
+       *[other] Týmto odstránite prihlásenia, ktoré ste uložili v prehliadači { -brand-short-name } na všetkých zariadeniach synchronizovaných pomocou{ -fxaccount-brand-name(case: "gen", capitalization: "sentence") }. Takisto odstránite všetky upozornenia na úniky, ktoré sa tu zobrazujú. Túto akciu nebudete môcť vrátiť späť.
     }
 about-logins-confirm-export-dialog-title = Exportovať prihlasovacie údaje
 about-logins-confirm-export-dialog-message = Vaše heslá budú uložené v čitateľnom formáte (napr. h3slo) takže ktokoľvek, kto bude môcť otvoriť tento súbor, bude môcť zistiť vaše heslá.

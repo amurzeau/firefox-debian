@@ -119,7 +119,7 @@ onboarding-browse-privately-title = Претражујте интернет пр
 onboarding-browse-privately-text = Приватно прегледање брише историју претраге и прегледања како би остала скривена од било кога ко користи ваш рачунар.
 onboarding-browse-privately-button = Отвори приватни прозор
 onboarding-firefox-send-title = Држите своје дељене датотеке приватним
-onboarding-firefox-send-text2 = Датотеке отпремљене на { -send-brand-name(case: "acc") } заштићене су шифровањем с краја на крај и линк до њих аутоматски истиче.
+onboarding-firefox-send-text2 = Датотеке отпремљене на { -send-brand-name(case: "acc") } заштићене су шифровањем с краја на крај и веза до њих аутоматски истиче.
 onboarding-firefox-send-button = Испробајте { -send-brand-name(case: "acc") }
 onboarding-mobile-phone-title = Преузмите { -brand-product-name } на Ваш телефон
 onboarding-mobile-phone-text =
@@ -132,11 +132,11 @@ onboarding-mobile-phone-text =
 # "Mobile" is short for mobile/cellular phone, "Browser" is short for web
 # browser.
 onboarding-mobile-phone-button = Преузми мобилни прегледач
-onboarding-send-tabs-title = Пошаљите себи отворене језичке
+onboarding-send-tabs-title = Одмах пошаљите себи картице
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text2 = Једноставно делите странице са уређајима, не морате да копирате линкове нити да излазите из прегледача.
-onboarding-send-tabs-button = Почните да користите слање језичака
+onboarding-send-tabs-text2 = Једноставно делите странице са уређајима, не морате да копирате везе нити да излазите из прегледача.
+onboarding-send-tabs-button = Почните да користите слање картица
 onboarding-pocket-anywhere-title = Читајте и слушајте било где
 onboarding-pocket-anywhere-text2 = Сачувајте омиљени садржај у { -pocket-brand-name(case: "loc") } и читајте, слушајте и гледајте га без интернета у било које време.
 onboarding-pocket-anywhere-button = Испробајте { -pocket-brand-name(case: "acc") }
@@ -193,8 +193,8 @@ onboarding-multistage-set-default-header =
         [neuter] { -brand-short-name(case: "acc") }
        *[other] програм { -brand-short-name }
     } као <span data-l10n-name="zap">подразумевани</span>
-onboarding-multistage-set-default-subtitle = Брзина, сигурност и приватност сваки пут када прегледате.
-onboarding-multistage-set-default-primary-button-label = Постави као подразумевани
+onboarding-multistage-set-default-subtitle = Претражујте интернет брзо, безбедно и приватно.
+onboarding-multistage-set-default-primary-button-label = Постави као подразумеван
 onboarding-multistage-set-default-secondary-button-label = Не сада
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. { -brand-short-name } should stay inside the span.
@@ -248,7 +248,6 @@ onboarding-welcome-steps-indicator =
 # automatically added to the text inside it. "look" should stay inside the span.
 onboarding-multistage-theme-header = Изаберите <span data-l10n-name="zap">изглед</span>
 onboarding-multistage-theme-subtitle = Прилагодите { -brand-short-name } темом.
-onboarding-multistage-theme-primary-button-label = Сачувај тему
 onboarding-multistage-theme-primary-button-label2 = Готово
 onboarding-multistage-theme-secondary-button-label = Не сада
 # Automatic theme uses operating system color settings
@@ -302,4 +301,116 @@ onboarding-multistage-theme-tooltip-alpenglow-2 =
 onboarding-multistage-theme-description-alpenglow =
     .aria-description =
         Користите шарени изглед за тастере,
+        меније и прозоре.
+
+## Multistage MR1 onboarding strings (MR1 about:welcome pages)
+
+# "Hero Text" displayed on left side of welcome screen.
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
+# It also signals the passion users bring to Firefox, how they use
+# Firefox to pursue those passions, as well as the boldness in their
+# choice to use Firefox over a larger competitor browser.
+# An alternative title for localization is: "It starts here".
+mr1-welcome-screen-hero-text = Све почиње овде
+# This button will open system settings to turn on prefers-reduced-motion
+mr1-onboarding-reduce-motion-button-label = Искључи анимације
+mr1-onboarding-welcome-header =
+    Добро дошли у { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "acc") }
+        [feminine] { -brand-short-name(case: "acc") }
+        [neuter] { -brand-short-name(case: "acc") }
+       *[other] програм { -brand-short-name }
+    }
+mr1-onboarding-set-default-pin-primary-button-label =
+    Постави програм { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "acc") }
+        [feminine] { -brand-short-name(case: "acc") }
+        [neuter] { -brand-short-name(case: "acc") }
+       *[other] програм { -brand-short-name }
+    } као примарни прегледач
+    .title =
+        Sets { -brand-short-name.gender ->
+            [masculine] { -brand-short-name(case: "acc") } као подразумевани прегледач и качи га
+            [feminine] { -brand-short-name(case: "acc") } као подразумевани прегледач и качи је
+            [neuter] { -brand-short-name(case: "acc") } као подразумевани прегледач и качи га
+           *[other] програм { -brand-short-name } као подразумевани прегледач и качи га
+        } на траку задатака
+mr1-onboarding-set-default-only-primary-button-label =
+    Постави { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "acc") }
+        [feminine] { -brand-short-name(case: "acc") }
+        [neuter] { -brand-short-name(case: "acc") }
+       *[other] програм { -brand-short-name }
+    } као подразумевани прегледач
+mr1-onboarding-set-default-secondary-button-label = Не сада
+mr1-onboarding-sign-in-button-label = Пријави ме
+mr1-onboarding-import-header = Понесите све са собом
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
+# Variables:
+#   $previous (Str) - Previous browser name, such as Edge, Chrome
+mr1-onboarding-import-primary-button-label-attribution = Увези из прегледача { $previous }
+# This string will be used in cases where we can't detect the previous browser name.
+mr1-onboarding-import-primary-button-label-no-attribution = Увези из претходног прегледача
+mr1-onboarding-import-secondary-button-label = Не сада
+mr1-onboarding-theme-header = Персонализација
+mr1-onboarding-theme-subtitle =
+    Персонализујте { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "acc") }
+        [feminine] { -brand-short-name(case: "acc") }
+        [neuter] { -brand-short-name(case: "acc") }
+       *[other] програм { -brand-short-name }
+    } помоћу теме.
+mr1-onboarding-theme-primary-button-label = Сачувај тему
+mr1-onboarding-theme-secondary-button-label = Не сада
+# System theme uses operating system color settings
+mr1-onboarding-theme-label-system = Системска тема
+mr1-onboarding-theme-label-light = Светла
+mr1-onboarding-theme-label-dark = Тамна
+# "Alpenglow" here is the name of the theme, and should be kept in English.
+mr1-onboarding-theme-label-alpenglow = Алпски жар
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of system theme
+mr1-onboarding-theme-tooltip-system =
+    .title =
+        Користите тему оперативног система
+        за дугмад, меније и прозоре.
+# Input description for system theme
+mr1-onboarding-theme-description-system =
+    .aria-description =
+        Користите тему оперативног система
+        за дугмад, меније и прозоре.
+# Tooltip displayed on hover of light theme
+mr1-onboarding-theme-tooltip-light =
+    .title =
+        Користите светлу тему за дугмад,
+        меније и прозоре.
+# Input description for light theme
+mr1-onboarding-theme-description-light =
+    .aria-description =
+        Користите светлу тему за дугмад,
+        меније и прозоре.
+# Tooltip displayed on hover of dark theme
+mr1-onboarding-theme-tooltip-dark =
+    .title =
+        Користите тамну тему за дугмад,
+        меније и прозоре.
+# Input description for dark theme
+mr1-onboarding-theme-description-dark =
+    .aria-description =
+        Користите тамну тему за дугмад,
+        меније и прозоре.
+# Tooltip displayed on hover of Alpenglow theme
+mr1-onboarding-theme-tooltip-alpenglow =
+    .title =
+        Користите динамичку и живописну тему за дугмад,
+        меније и прозоре.
+# Input description for Alpenglow theme
+mr1-onboarding-theme-description-alpenglow =
+    .aria-description =
+        Користите динамичку и живописну тему за дугмад,
         меније и прозоре.

@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = “{ $engineName }” arama motorunu ekle
+    .tooltiptext = “{ $engineName }” arama motorunu ekle
+    .aria-label = “{ $engineName }” arama motorunu ekle
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Arama motoru ekle
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = { $host } site bilgileri
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = { $host } bağlantı güvenliği
 identity-connection-not-secure = Bağlantı güvenli değil
 identity-connection-secure = Bağlantı güvenli
+identity-connection-failure = Bağlantı hatası
 identity-connection-internal = Burası güvenli bir { -brand-short-name } sayfasıdır.
 identity-connection-file = Bu sayfa bilgisayarınızda depolanıyor.
 identity-extension-page = Bu sayfa bir uzantı üzerinden yüklendi.
@@ -319,6 +339,7 @@ identity-https-only-info-turn-off2 = Sayfa düzgün çalışmazsa bu site için 
 identity-https-only-info-no-upgrade = HTTP bağlantısı yükseltilemedi.
 identity-permissions-storage-access-header = Siteler arası çerezler
 identity-permissions-storage-access-hint = Bu siteler, siz bu sitedeyken siteler diğer sitelerdeki çerezleri ve site verilerini kullanabilir.
+identity-permissions-storage-access-learn-more = Daha fazla bilgi al
 identity-permissions-reload-hint = Değişikliklerin uygulanması için bu sayfayı tazelemeniz gerekebilir.
 identity-permissions-empty = Bu siteye özel bir izin vermediniz.
 identity-clear-site-data =
@@ -492,6 +513,11 @@ urlbar-placeholder-with-name =
     .placeholder = { $name } ile arama yapın veya adres yazın
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Tarayıcı uzaktan kontrol ediliyor
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Tarayıcı uzaktan kontrol ediliyor (sebep: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Bu siteye ek izinler verdiniz.
 urlbar-switch-to-tab =
@@ -580,9 +606,6 @@ pointerlock-warning-no-domain = Bu belge işaretçinizi kontrol ediyor. Kontrol�
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Bu sayfanın bir kısmı çöktü.</strong> Bize rapor göndererek sorunu bildirirseniz { -brand-product-name } tarayıcınızı daha hızlı düzeltebiliriz.
-crashed-subframe-learnmore =
-    .label = Daha fazla bilgi al
-    .accesskey = b
 crashed-subframe-learnmore-link =
     .value = Daha fazla bilgi al
 crashed-subframe-submit =
@@ -595,8 +618,6 @@ bookmarks-show-all-bookmarks =
     .label = Tüm yer imlerini göster
 bookmarks-manage-bookmarks =
     .label = Yer imlerini yönet
-bookmarks-recent-bookmarks-panel =
-    .value = Son yer imleri
 bookmarks-recent-bookmarks-panel-subheader = Son yer imleri
 bookmarks-toolbar-chevron =
     .tooltiptext = Daha fazla yer imi göster

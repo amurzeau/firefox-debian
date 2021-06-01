@@ -18,6 +18,7 @@ login-filter =
 create-login-button = Gumawa ng Panibagong Login
 fxaccounts-sign-in-text = Kuhanin ang iyong mga password sa iba mong mga device
 fxaccounts-sign-in-button = Mag-sign in sa { -sync-brand-short-name }
+fxaccounts-sign-in-sync-button = Mag-sign in sa sync
 fxaccounts-avatar-button =
     .title = I-manage ang account
 
@@ -75,6 +76,9 @@ login-intro-description = Kung nag-save ka ng mga login mo sa { -brand-product-n
 login-intro-instruction-fxa = Gumawa ng o mag-sign in sa iyong { -fxaccount-brand-name } sa device kung saan naka-save ang mga login mo
 login-intro-instruction-fxa-settings = Siguruhin na napili mo ang checkbox na Mga Login sa Mga { -sync-brand-short-name } Setting
 about-logins-intro-instruction-help = Bisitahin ang <a data-l10n-name="help-link">{ -lockwise-brand-short-name } Support</a> para sa karagdagang tulong
+login-intro-instructions-fxa = Gumawa o mag-sign in sa iyong { -fxaccount-brand-name } sa pamamagitan ng device kung saan naka-save ang mga login mo.
+login-intro-instructions-fxa-settings = Pumunta sa Mga Setting> Sync> I-on ang pag-sync ... Piliin ang checkbox ng Mga login at password.
+login-intro-instructions-fxa-help = Bisitahin ang support sa <a data-l10n-name="help-link">{ -lockwise-brand-short-name } </a> para sa karagdagang tulong.
 about-logins-intro-import = Kung ang iyong mga login ay naka-save sa ibang browser, maaari mong <a data-l10n-name="import-link"> ilipat ang mga ito sa { -lockwise-brand-short-name } </a>
 about-logins-intro-import2 = Kung naka-save ang mga login mo sa labas ng { -brand-product-name }, maaari mo <a data-l10n-name="import-browser-link">i-import ang mga ito mula sa ibang browser</a> o <a data-l10n-name="import-file-link">mula sa isang file</a>
 
@@ -97,7 +101,7 @@ login-item-password-reveal-checkbox =
 login-item-copy-password-button-text = Kopyahin
 login-item-copied-password-button-text = Nakopya na!
 login-item-save-changes-button = I-Save ang mga Pagbabago
-login-item-save-new-button = I-Save
+login-item-save-new-button = i-Save
 login-item-cancel-button = Ikansela
 login-item-time-changed = Huling binago: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
 login-item-time-created = Ginawa: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
@@ -175,6 +179,12 @@ about-logins-confirm-remove-all-dialog-confirm-button-label =
         [one] Alisin Lahat
        *[other] Alisin Lahat
     }
+about-logins-confirm-remove-all-dialog-checkbox-label =
+    { $count ->
+        [1] Sige, tangalin itong login
+        [one] Sige, tangalin itong mga login
+       *[other] Sige, tangalin ang mga login
+    }
 about-logins-confirm-remove-all-dialog-title =
     { $count ->
         [one] Alisin ang lahat ng { $count } login?
@@ -183,6 +193,7 @@ about-logins-confirm-remove-all-dialog-title =
 about-logins-confirm-export-dialog-title = Mag-export ng mga login at password
 about-logins-confirm-export-dialog-message = Mase-save ang mga password mo bilang readable text (hal., PangitNaP@ssw0rd) kaya pwede itong makita ng kahit sinong makakapagbukas ng na-export na file.
 about-logins-confirm-export-dialog-confirm-button = i-Export…
+about-logins-alert-import-title = Kumpleto na ang Pag-import
 confirm-discard-changes-dialog-title = Itapon ang mga hindi nai-save na pagbabago?
 confirm-discard-changes-dialog-message = Lahat ng hindi nai-save na mga pagbabago ay mawawala.
 confirm-discard-changes-dialog-confirm-button = Balewalain
@@ -256,7 +267,14 @@ about-logins-import-file-picker-tsv-filter-title =
 ## Variables:
 ##  $count (number) - The number of affected elements
 
+about-logins-import-dialog-title = Kumpleto na ang Pag-import
+about-logins-import-dialog-items-added =
+    { $count ->
+        [one] <span>naidagdag ang mga bagong login</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>dinagdag ang mga bagong login</span> <span data-l10n-name="count">{ $count }</span>
+    }
 about-logins-import-dialog-done = Tapos na
+about-logins-import-dialog-error-title = Error sa Pag-import
 about-logins-import-dialog-error-file-format-title = May Isyu sa Format ng File
 about-logins-import-dialog-error-file-permission-title = Hindi mabasa ang File
 about-logins-import-dialog-error-learn-more = Karagdagang kaalaman

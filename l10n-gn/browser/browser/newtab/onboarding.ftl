@@ -200,7 +200,6 @@ onboarding-welcome-steps-indicator =
 # automatically added to the text inside it. "look" should stay inside the span.
 onboarding-multistage-theme-header = Eiporavo peteĩva <span data-l10n-name="zap">ma’ẽ</span>
 onboarding-multistage-theme-subtitle = Eñemomba’e { -brand-short-name } peteĩ téma ndive
-onboarding-multistage-theme-primary-button-label = Eñongatu Téma
 onboarding-multistage-theme-primary-button-label2 = Apopyre
 onboarding-multistage-theme-secondary-button-label = Ani ko’ág̃a
 # Automatic theme uses operating system color settings
@@ -255,3 +254,86 @@ onboarding-multistage-theme-description-alpenglow =
     .aria-description =
         Eipuru isa’yetáva votõ,
         poravorã ha ovetã.
+
+## Multistage MR1 onboarding strings (MR1 about:welcome pages)
+
+# "Hero Text" displayed on left side of welcome screen.
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
+# It also signals the passion users bring to Firefox, how they use
+# Firefox to pursue those passions, as well as the boldness in their
+# choice to use Firefox over a larger competitor browser.
+# An alternative title for localization is: "It starts here".
+mr1-welcome-screen-hero-text = Tata oñepyrũ ápe
+# This button will open system settings to turn on prefers-reduced-motion
+mr1-onboarding-reduce-motion-button-label = Eipe’aite mbovy’aha
+mr1-onboarding-welcome-header = Eg̃uahẽporãite { -brand-short-name }-pe
+mr1-onboarding-set-default-pin-primary-button-label = Ajapo { -brand-short-name }-gui che kundahára aipuruvévarõ
+    .title = Areko { -brand-short-name } kundahára ypyguárõ ha ambojuaju tembiaporã rendáre
+mr1-onboarding-set-default-only-primary-button-label = Ajapo { -brand-short-name }-gui kundahára ypyguávarõ
+mr1-onboarding-set-default-secondary-button-label = Ani ko’ág̃a
+mr1-onboarding-sign-in-button-label = Eñepyrũ tembiapo
+mr1-onboarding-import-header = Eguerahapa nendive
+mr1-onboarding-import-subtitle = Emba’egueru ne ñe’ẽñemi, <br/>techaukaha ha hetave.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
+# Variables:
+#   $previous (Str) - Previous browser name, such as Edge, Chrome
+mr1-onboarding-import-primary-button-label-attribution = Emba’egueru { $previous } guive
+# This string will be used in cases where we can't detect the previous browser name.
+mr1-onboarding-import-primary-button-label-no-attribution = Emba’egueru kundahára itujavéva guive
+mr1-onboarding-import-secondary-button-label = Ani ko’ág̃a
+mr1-onboarding-theme-header = Eñemomba’e hese
+mr1-onboarding-theme-subtitle = Eñemomba’e { -brand-short-name } peteĩ téma ndive
+mr1-onboarding-theme-primary-button-label = Eñongatu téma
+mr1-onboarding-theme-secondary-button-label = Ani ko’ág̃a
+# System theme uses operating system color settings
+mr1-onboarding-theme-label-system = Téma apopyvusu
+mr1-onboarding-theme-label-light = Tesakã
+mr1-onboarding-theme-label-dark = Ypytũ
+# "Alpenglow" here is the name of the theme, and should be kept in English.
+mr1-onboarding-theme-label-alpenglow = Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of system theme
+mr1-onboarding-theme-tooltip-system =
+    .title =
+        Ehapykueho apopyvusu oku’éva téma
+        votõ, poravorã ha ovetãme g̃uarã.
+# Input description for system theme
+mr1-onboarding-theme-description-system =
+    .aria-description =
+        Ehapykueho apopyvusu oku’éva téma
+        votõ, poravorã ha ovetãme g̃uarã.
+# Tooltip displayed on hover of light theme
+mr1-onboarding-theme-tooltip-light =
+    .title =
+        Eipuru ojehechaporãva votõ,
+        poravorã ha ovetã.
+# Input description for light theme
+mr1-onboarding-theme-description-light =
+    .aria-description =
+        Eipuru ojehechaporãva votõ,
+        poravorã ha ovetã.
+# Tooltip displayed on hover of dark theme
+mr1-onboarding-theme-tooltip-dark =
+    .title =
+        Eipuru téma ypytũ votõ,
+        poravorã ha ovetãme g̃uarã.
+# Input description for dark theme
+mr1-onboarding-theme-description-dark =
+    .aria-description =
+        Eipuru téma ypytũ votõ,
+        poravorã ha ovetãme g̃uarã.
+# Tooltip displayed on hover of Alpenglow theme
+mr1-onboarding-theme-tooltip-alpenglow =
+    .title =
+        Eipuru téma hetia’e ha isa’ýva votõ,
+        poravorã ha ovetãme g̃uarã.
+# Input description for Alpenglow theme
+mr1-onboarding-theme-description-alpenglow =
+    .aria-description =
+        Eipuru téma hetia’e ha isa’ýva votõ,
+        poravorã ha ovetãme g̃uarã.

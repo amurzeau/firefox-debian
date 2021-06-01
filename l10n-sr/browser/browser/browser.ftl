@@ -76,7 +76,7 @@ urlbar-storage-access-anchor =
 urlbar-translate-notification-anchor =
     .tooltiptext = Преведи ову страницу
 urlbar-web-rtc-share-screen-notification-anchor =
-    .tooltiptext = Управљајте дељењем ваших прозора или екрана са сајтом
+    .tooltiptext = Управљајте дељењем прозора или екрана са сајтом
 urlbar-indexed-db-notification-anchor =
     .tooltiptext = Отвори панел за ванмрежно складиште
 urlbar-password-notification-anchor =
@@ -122,27 +122,27 @@ urlbar-search-mode-history = Историја
 ##
 
 urlbar-geolocation-blocked =
-    .tooltiptext = Блокирали сте локацију за овај веб сајт.
+    .tooltiptext = Овом веб-сајту сте забранили приступ локацији.
 urlbar-xr-blocked =
-    .tooltiptext = Блокирали сте приступ уређајима за виртуелну стварност за ову страници.
+    .tooltiptext = Овом веб-сајту сте забранили приступ уређајима за виртуелну реалност.
 urlbar-web-notifications-blocked =
-    .tooltiptext = Блокирали сте обавештења за овај веб сајт.
+    .tooltiptext = Блокирали сте обавештења са овог веб-сајта.
 urlbar-camera-blocked =
-    .tooltiptext = Блокирали сте камеру за овај веб сајт.
+    .tooltiptext = Овом веб-сајту сте забранили приступ камери.
 urlbar-microphone-blocked =
-    .tooltiptext = Блокирали сте микрофон за овај веб сајт.
+    .tooltiptext = Овом веб-сајту сте забранили приступ микрофону.
 urlbar-screen-blocked =
-    .tooltiptext = Блокирали сте дељење екрана за овај веб сајт.
+    .tooltiptext = Овом веб-сајту сте забранили приступ садржају екрана.
 urlbar-persistent-storage-blocked =
-    .tooltiptext = Блокирали сте трајно складиштење за овај веб сајт.
+    .tooltiptext = Овом веб-сајту сте забранили приступ трајној меморији.
 urlbar-popup-blocked =
-    .tooltiptext = Блокирали сте искачуће прозоре за овај веб сајт.
+    .tooltiptext = Блокирали сте искачуће прозоре са овог веб-сајта.
 urlbar-autoplay-media-blocked =
-    .tooltiptext = Блокирали сте аутоматско пуштање медија са звуком за овај веб сајт.
+    .tooltiptext = Блокирали сте аутоматско пуштање медија са звуком на овом веб-сајту.
 urlbar-canvas-blocked =
-    .tooltiptext = Блокирали сте екстрактовање података слике за овај веб сајт.
+    .tooltiptext = Блокирали сте издвајање података из canvas-а на овом веб-сајту.
 urlbar-midi-blocked =
-    .tooltiptext = Блокирали сте MIDI приступ за овај веб сајт.
+    .tooltiptext = Овом веб-сајту сте забранили приступ MIDI уређајима.
 urlbar-install-blocked =
     .tooltiptext = Зауставили сте инсталацију додатка за ову веб локацију.
 # Variables
@@ -190,9 +190,9 @@ page-action-copy-url-panel =
 page-action-copy-url-urlbar =
     .tooltiptext = Копирај везу
 page-action-email-link-panel =
-    .label = Пошаљи линк имејлом…
+    .label = Пошаљи везу имејлом…
 page-action-email-link-urlbar =
-    .tooltiptext = Пошаљи линк имејлом…
+    .tooltiptext = Пошаљи везу имејлом…
 page-action-share-url-panel =
     .label = Подели
 page-action-share-url-urlbar =
@@ -210,9 +210,9 @@ page-action-pin-tab-panel =
 page-action-pin-tab-urlbar =
     .tooltiptext = Закачи картицу
 page-action-unpin-tab-panel =
-    .label = Откачи језичак
+    .label = Откачи картицу
 page-action-unpin-tab-urlbar =
-    .tooltiptext = Откачи језичак
+    .tooltiptext = Откачи картицу
 
 ## Auto-hide Context Menu
 
@@ -235,8 +235,8 @@ search-one-offs-change-settings-button =
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Промени подешавања претраге
 search-one-offs-context-open-new-tab =
-    .label = Претражи у новом језичку
-    .accesskey = T
+    .label = Претражи на новој картици
+    .accesskey = П
 search-one-offs-context-set-as-default =
     .label = Постави као подразумевани претраживач
     .accesskey = П
@@ -249,6 +249,10 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Додај претраживач
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -266,8 +270,8 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
-bookmarks-add-bookmark = Додај обележивач
-bookmarks-edit-bookmark = Уреди обележивач
+bookmarks-add-bookmark = Додавање обележивача
+bookmarks-edit-bookmark = Уређивање обележивача
 bookmark-panel-cancel =
     .label = Откажи
     .accesskey = О
@@ -296,6 +300,13 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Подаци о сајту { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Безбедност везе за { $host }
 identity-connection-not-secure = Веза није безбедна
 identity-connection-secure = Веза је безбедна
 identity-connection-internal =
@@ -307,7 +318,7 @@ identity-connection-internal =
     }.
 identity-connection-file = Ова страница се складишти на рачунару.
 identity-extension-page = Ову страницу је отворио додатак.
-identity-active-blocked = { -brand-short-name } је блокирао делове странице које нису безбедне.
+identity-active-blocked = { -brand-short-name } је блокирао делове ове странице који нису безбедни.
 identity-custom-root = Везу је проверио издавач сертификата који Mozilla не препознаје.
 identity-passive-loaded = Делови ове странице нису безбедни (као што су слике).
 identity-active-loaded = Заштита на овој страници је искључена.
@@ -328,6 +339,7 @@ identity-https-only-info-turn-off2 = Ако страница делује неи
 identity-https-only-info-no-upgrade = Није могуће надоградити HTTP везу.
 identity-permissions-storage-access-header = Колачићи трећих страна
 identity-permissions-storage-access-hint = Ове стране могу користити вишестраничне колачиће и страничне податке током ваше посете страници.
+identity-permissions-storage-access-learn-more = Сазнајте више
 identity-permissions-reload-hint = Можда ћете морати поново учитати страницу да примените промене.
 identity-permissions-empty = Овом сајту нису додељене никакве посебне дозволе.
 identity-clear-site-data =
@@ -455,7 +467,7 @@ popup-mute-notifications-checkbox = Током дељења искључи об�
 sharing-warning-window = Делите { -brand-short-name }. Други људи могу да виде када пређете на нови језичак.
 sharing-warning-screen = Делите цео екран. Други људи могу да виде када пређете на нову картицу.
 sharing-warning-proceed-to-tab =
-    .label = Наставите на језичак
+    .label = Пређи на картицу
 sharing-warning-disable-for-session =
     .label = Онемогучите заштиту дељења за ову сесију
 
@@ -497,8 +509,8 @@ urlbar-placeholder-search-mode-other-history =
     .aria-label = Претражи историју
 # This placeholder is used when searching open tabs.
 urlbar-placeholder-search-mode-other-tabs =
-    .placeholder = Унеси појмове за претрагу
-    .aria-label = Претражи језичке
+    .placeholder = Унесите термин за претрагу
+    .aria-label = Претражи картице
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -508,7 +520,7 @@ urlbar-remote-control-notification-anchor =
 urlbar-permissions-granted =
     .tooltiptext = Овом веб-сајту сте одобрили додатне дозволе.
 urlbar-switch-to-tab =
-    .value = Премести на језичак:
+    .value = Пређите на картицу:
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Додатак:
@@ -536,7 +548,7 @@ urlbar-result-action-search-in-private = Претражите у приватн�
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = Претражи у претраживачу { $engine }
 urlbar-result-action-sponsored = Спонзорисано
-urlbar-result-action-switch-tab = Пребаци на језичак
+urlbar-result-action-switch-tab = Пређи на картицу
 urlbar-result-action-visit = Посети
 # Directs a user to press the Tab key to perform a search with the specified
 # engine.
@@ -572,7 +584,7 @@ urlbar-result-action-calculator-result = = { $result }
 
 urlbar-result-action-search-bookmarks = Претражи обележиваче
 urlbar-result-action-search-history = Претражи историју
-urlbar-result-action-search-tabs = Претражи језичке
+urlbar-result-action-search-tabs = Претражи картице
 
 ## Full Screen and Pointer Lock UI
 
@@ -593,9 +605,6 @@ pointerlock-warning-no-domain = Овај документ управља са в
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Део странице се срушио. </strong>Пошаљите извештај да би { -brand-product-name } сазнао за овај проблем и брже га решио.
-crashed-subframe-learnmore =
-    .label = Сазнајте више
-    .accesskey = L
 crashed-subframe-learnmore-link =
     .value = Сазнајте више
 crashed-subframe-submit =
@@ -608,8 +617,6 @@ bookmarks-show-all-bookmarks =
     .label = Прикажи све обележиваче
 bookmarks-manage-bookmarks =
     .label = Управљај обележивачима
-bookmarks-recent-bookmarks-panel =
-    .value = Недавни обележивачи
 bookmarks-recent-bookmarks-panel-subheader = Недавни обележивачи
 bookmarks-toolbar-chevron =
     .tooltiptext = Прикажи још обележивача
@@ -666,7 +673,7 @@ bookmarks-toolbar-placeholder-button =
     .label = Ставке на траци са обележивачима
 # "Bookmark" is a verb, as in "Add current tab to bookmarks".
 bookmarks-current-tab =
-    .label = Обележи тренутни језичак
+    .label = Обележи тренутну картицу
 
 ## Library Panel items
 
@@ -714,8 +721,8 @@ eme-notifications-drm-content-playing-dismiss-accesskey = О
 
 ## Password save/update panel
 
-panel-save-update-username = Корисничко име:
-panel-save-update-password = Лозинка:
+panel-save-update-username = Корисничко име
+panel-save-update-password = Лозинка
 
 ## Add-on removal warning
 

@@ -247,6 +247,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = הוספת “{ $engineName }”
+    .tooltiptext = הוספת מנוע החיפוש “{ $engineName }”
+    .aria-label = הוספת מנוע החיפוש “{ $engineName }”
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = הוספת מנוע חיפוש
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -293,8 +305,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = מידע אתר עבור { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = אבטחת החיבור עבור { $host }
 identity-connection-not-secure = החיבור אינו מאובטח
 identity-connection-secure = החיבור מאובטח
+identity-connection-failure = כשל בחיבור
 identity-connection-internal = דף זה הנו דף מאובטח של { -brand-short-name }.
 identity-connection-file = דף זה מאוחסן במחשב שלך.
 identity-extension-page = עמוד זה נטען מתוך הרחבה.
@@ -318,6 +338,7 @@ identity-https-only-info-turn-on2 = יש להפעיל את מצב HTTPS בלבד
 identity-https-only-info-turn-off2 = אם נראה שהדף שבור, באפשרותך לכבות את מצב ה־HTTPS בלבד עבור אתר זה כדי לטעון מחדש באמצעות HTTP לא מאובטח.
 identity-https-only-info-no-upgrade = לא ניתן לשדרג את החיבור מ־HTTP.
 identity-permissions-storage-access-header = עוגיות חוצות אתרים
+identity-permissions-storage-access-learn-more = מידע נוסף
 identity-permissions-reload-hint = יתכן שיהיה עליך לרענן את העמוד כדי שהשינויים ייכנסו לתוקף.
 identity-permissions-empty = לא סופקו לאתר זה הרשאות מיוחדות.
 identity-clear-site-data =
@@ -488,6 +509,11 @@ urlbar-placeholder-with-name =
     .placeholder = ‏ניתן לחפש עם { $name } או להקליד כתובת
 urlbar-remote-control-notification-anchor =
     .tooltiptext = הדפדפן נשלט מרחוק
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = הדפדפן נמצא בשליטה מרוחקת (סיבה: { $component })
 urlbar-permissions-granted =
     .tooltiptext = הענקת לאתר זה הרשאות נוספות.
 urlbar-switch-to-tab =
@@ -576,9 +602,6 @@ pointerlock-warning-no-domain = למסמך זה יש שליטה על הסמן ש
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>חלק מדף זה קרס.</strong> כדי ליידע את { -brand-product-name } על בעיה זו ולתקן אותה מהר יותר, נא לשלוח דיווח.
-crashed-subframe-learnmore =
-    .label = מידע נוסף
-    .accesskey = מ
 crashed-subframe-learnmore-link =
     .value = מידע נוסף
 crashed-subframe-submit =
@@ -591,8 +614,6 @@ bookmarks-show-all-bookmarks =
     .label = הצגת כל הסימניות
 bookmarks-manage-bookmarks =
     .label = ניהול סימניות
-bookmarks-recent-bookmarks-panel =
-    .value = סימניות אחרונות
 bookmarks-recent-bookmarks-panel-subheader = סימניות אחרונות
 bookmarks-toolbar-chevron =
     .tooltiptext = הצגת סימניות נוספות

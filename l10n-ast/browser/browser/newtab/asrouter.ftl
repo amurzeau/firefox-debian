@@ -94,6 +94,7 @@ cfr-whatsnew-button =
 cfr-whatsnew-panel-header = Novedaes
 cfr-whatsnew-fx70-title = Agora { -brand-short-name } llucha más pola to privacidá
 cfr-whatsnew-tracking-protect-title = Protéxite de los rastrexadores
+cfr-whatsnew-tracking-blocked-subtitle = Dende'l { DATETIME($earliestDate, month: "long", year: "numeric") }
 cfr-whatsnew-lockwise-take-title = Lleva les contraseñes contigo
 
 ## Search Bar
@@ -238,6 +239,7 @@ cfr-doorhanger-fission-secondary-button = Lleer más
 ## What's new: Media controls message
 
 cfr-whatsnew-media-keys-header = Más controles multimedia
+cfr-whatsnew-media-keys-button = Lleer cómo
 
 ## What's new: Search shortcuts
 

@@ -251,6 +251,18 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = „{ $engineName }“ pśidaś
+    .tooltiptext = Pytnicu „{ $engineName }“ pśidaś
+    .aria-label = Pytnicu „{ $engineName }“ pśidaś
+# When more than 5 engines are offered by a web page, they are grouped in a
+# submenu using this as its label.
+search-one-offs-add-engine-menu =
+    .label = Pytnicu pśidaś
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -299,8 +311,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Sedłowe informacije za { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Zwiskowa wěstota za { $host }
 identity-connection-not-secure = Zwisk njejo wěsty
 identity-connection-secure = Zwisk jo wěsty
+identity-connection-failure = Zwiskowa zmólka
 identity-connection-internal = To jo wěsty bok { -brand-short-name }.
 identity-connection-file = Toś ten bok jo se na wašom licadle składł.
 identity-extension-page = Toś ten bok jo se z rozšyrjenja zacytał.
@@ -325,6 +345,7 @@ identity-https-only-info-turn-off2 = Jolic se zda, až bok jo wobškóźony, co�
 identity-https-only-info-no-upgrade = Zwisk njedajo se z HTTP aktualizěrowaś.
 identity-permissions-storage-access-header = Cookieje někotarych sedłow
 identity-permissions-storage-access-hint = Toś te wobźělone mógu cookieje a sedłowe daty někotarych sedłow wužywaś, mjaztym až sćo na toś tom sedle.
+identity-permissions-storage-access-learn-more = Dalšne informacije
 identity-permissions-reload-hint = Musyśo snaź bok znowego zacytaś, aby se změny wustatkowali.
 identity-permissions-empty = Njejsćo toś tomu sedłoju wósebne pšawa pśizwólił.
 identity-clear-site-data =
@@ -505,6 +526,11 @@ urlbar-placeholder-with-name =
     .placeholder = Pytajśo z { $name } abo zapódajśo adresu
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Wobglědowak se zdaloka wóźi
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Wobglědowak se zdaloka wóźi (pśicyna: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Sćo pśizwólił toś tomu websedłoju pśidatne pšawa.
 urlbar-switch-to-tab =
@@ -593,9 +619,6 @@ pointerlock-warning-no-domain = Toś ten dokument ma kontrolu nad wašeju špěr
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Źěl toś togo boka jo wowalił.</strong> Aby { -brand-product-name } wó toś tom problemje informěrował a jen malsnjej rozwězował, pósćelśo pšosyym wowaleńsku rozpšawu.
-crashed-subframe-learnmore =
-    .label = Dalšne informacije
-    .accesskey = D
 crashed-subframe-learnmore-link =
     .value = Dalšne informacije
 crashed-subframe-submit =
@@ -608,8 +631,6 @@ bookmarks-show-all-bookmarks =
     .label = Wše cytańske znamjenja pokazaś
 bookmarks-manage-bookmarks =
     .label = Cytańske znamjenja zastojaś
-bookmarks-recent-bookmarks-panel =
-    .value = Nejnowše cytańske znamjenja
 bookmarks-recent-bookmarks-panel-subheader = Nejnowše cytańske znamjenja
 bookmarks-toolbar-chevron =
     .tooltiptext = Dalšne cytańske znamjenja pokazaś

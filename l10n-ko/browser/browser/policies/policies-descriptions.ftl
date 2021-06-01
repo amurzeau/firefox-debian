@@ -10,11 +10,12 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
-policy-3rdparty = WebExtensions이 chrome.storage.managed를 통해 액세스할 수 있는 정책을 설정합니다.
+policy-3rdparty = WebExtension이 chrome.storage.managed를 통해 액세스할 수 있는 정책을 설정합니다.
 policy-AllowedDomainsForApps = Google Workspace에 액세스할 수 있는 도메인을 정의합니다.
 policy-AppAutoUpdate = 애플리케이션 자동 업데이트를 사용하거나 사용하지 않게 합니다.
-policy-AppUpdateURL = 커스텀 앱 업데이트 URL을 설정합니다.
+policy-AppUpdateURL = 사용자 지정 앱 업데이트 URL을 설정합니다.
 policy-Authentication = 통합 인증을 지원하는 웹 사이트를 위한 설정을 합니다.
+policy-AutoLaunchProtocolsFromOrigins = 사용자에게 메시지를 표시하지 않고 나열된 출처에서 사용할 수 있는 외부 프로토콜 목록을 정의합니다.
 policy-BackgroundAppUpdate2 = 백그라운드 업데이터를 사용하거나 사용하지 않게 합니다.
 policy-BlockAboutAddons = 부가 기능 관리자(about:addons) 접근을 차단합니다.
 policy-BlockAboutConfig = about:config 페이지 접근을 차단합니다.
@@ -44,7 +45,7 @@ policy-DisablePocket = Pocket에 웹 사이트 저장하는 기능을 사용 안
 policy-DisablePrivateBrowsing = 사생활 보호 모드를 사용 안 합니다.
 policy-DisableProfileImport = 메뉴에서 다른 브라우저의 데이터를 가져오는 명령을 사용 안 합니다.
 policy-DisableProfileRefresh = about:support 페이지의 { -brand-short-name } 새로설정 버튼을 사용 안 합니다.
-policy-DisableSafeMode = 안전 모드로 다시 시작하는 기능을 사용 안 합니다. 참고: 그룹 정책을 사용해서 Shift 키를 눌러서 안전 모드로 들어가는 방법을 비활성화 하는 것은 Windows에서만 가능합니다.
+policy-DisableSafeMode = 안전 모드로 다시 시작하는 기능을 사용 안 합니다. 참고: 그룹 정책을 사용해서 Shift 키를 눌러서 안전 모드로 들어가는 방법을 비활성화하는 것은 Windows에서만 가능합니다.
 policy-DisableSecurityBypass = 사용자가 특정 보안 경고를 무시할 수 없게 합니다.
 policy-DisableSetAsDesktopBackground = 이미지를 바탕 화면 배경으로 설정하는 메뉴 명령을 사용 안 합니다.
 policy-DisableSystemAddonUpdate = 브라우저가 시스템 부가 기능의 설치 및 업데이트를 못하게 합니다.
@@ -89,9 +90,9 @@ policy-NetworkPrediction = 네트워크 예측(DNS 프리페칭)을 사용하거
 policy-NewTabPage = 새 탭 페이지를 사용하거나 사용하지 않게 합니다.
 policy-NoDefaultBookmarks = { -brand-short-name } 기본 북마크 번들과 스마트 북마크(자주 방문, 최근 태그)가 생성되지 않게 합니다. 참고: 이 정책은 프로필을 처음으로 실행하기 전에만 효과적입니다.
 policy-OfferToSaveLogins = { -brand-short-name }가 로그인과 비밀번호 기억을 제공하도록 허용하는 설정을 강제합니다. True와 false 값을 사용할 수 있습니다.
-policy-OfferToSaveLoginsDefault = 저장된 로그인과 비밀번호를 기억하도록 { -brand-short-name }가 제공하는 기본값을 설정하세요. true 및 false 값이 모두 허용됩니다.
-policy-OverrideFirstRunPage = 첫 실행 페이지를 재정의 합니다. 첫 실행 페이지를 사용 안 하려면 이 정책을 빈칸으로 설정하세요.
-policy-OverridePostUpdatePage = 업데이트 후 "새 기능" 페이지를 재정의 합니다. 업데이트 후 페이지를 사용 안 하려면 이 정책을 빈칸으로 설정하세요.
+policy-OfferToSaveLoginsDefault = 저장된 로그인과 비밀번호를 기억하도록 { -brand-short-name }가 제공하는 기본값을 설정합니다. true 및 false 값이 모두 허용됩니다.
+policy-OverrideFirstRunPage = 첫 실행 페이지를 재정의합니다. 첫 실행 페이지를 사용 안 하려면 이 정책을 빈칸으로 설정하세요.
+policy-OverridePostUpdatePage = 업데이트 후 "새 기능" 페이지를 재정의합니다. 업데이트 후 페이지를 사용 안 하려면 이 정책을 빈칸으로 설정하세요.
 policy-PasswordManagerEnabled = 비밀번호 관리자에 비밀번호 저장을 사용합니다.
 # PDF.js and PDF should not be translated
 policy-PDFjs = { -brand-short-name }에 내장된 PDF 뷰어인 PDF.js를 사용 안하거나 구성합니다.
@@ -103,7 +104,7 @@ policy-PromptForDownloadLocation = 다운로드시 파일 저장 위치를 물�
 policy-Proxy = 프록시 설정을 구성합니다.
 policy-RequestedLocales = 애플리케이션의 요청된 로케일의 목록을 설정 순서로 설정합니다.
 policy-SanitizeOnShutdown2 = 종료시 탐색 데이터를 지웁니다.
-policy-SearchBar = 검색 바의 기본 위치를 설정합니다. 사용자가 다시 재설정을 할 수 있습니다.
+policy-SearchBar = 검색 표시줄의 기본 위치를 설정합니다. 사용자가 다시 재설정을 할 수 있습니다.
 policy-SearchEngines = 검색 엔진 설정을 구성합니다. 이 정책은 확장 지원 버전(ESR)에서만 가능합니다.
 policy-SearchSuggestEnabled = 검색 제안을 사용하거나 사용하지 않게 합니다.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation

@@ -5,8 +5,6 @@
 
 ## App Menu
 
-appmenuitem-update-banner =
-    .label-update-downloading = Nagda-download ng { -brand-shorter-name } update
 appmenuitem-protection-dashboard-title = Protections Dashboard
 appmenuitem-customize-mode =
     .label = I-customize...
@@ -19,8 +17,15 @@ appmenuitem-new-private-window =
     .label = Bagong Private Window
 appmenuitem-passwords =
     .label = Mga Password
+appmenuitem-addons-and-themes =
+    .label = mga Add-on at Themes
+appmenuitem-find-in-page =
+    .label = Hanapin Sa Pahina...
 appmenuitem-exit =
     .label = Lumabas
+appmenu-menu-button-closed =
+    .tooltiptext = Buksan ang Application Menu
+    .label = { -brand-shorter-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -39,8 +44,13 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Mag-sync Na
+appmenuitem-fxa-toolbar-sync-now2 = I-sync ngayon
+appmenu-fxa-header =
+    .title = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name }
+appmenu-fxa-signed-in-label = Mag sign-in
 appmenuitem-save-page =
-    .label = I-save ang Pahina Bilang…
+    .label = i-Save ang Pahina Bilang…
 
 ## What's New panel in App menu.
 
@@ -73,6 +83,8 @@ profiler-popup-capture-shortcut =
 
 ## History panel
 
+appmenu-reopen-all-tabs = Muling Buksan ang Lahat ng mga Tab
+appmenu-reopen-all-windows = Muling buksan ang Lahat ng mga Window
 
 ## Help panel
 
@@ -82,26 +94,11 @@ appmenu-about =
 appmenu-get-help =
     .label = Humingi ng Tulong
     .accesskey = H
-appmenu-help-troubleshooting-info =
-    .label = Impormasyon para sa Troubleshooting
-    .accesskey = T
-appmenu-help-taskmanager =
-    .label = Task Manager
 appmenu-help-report-site-issue =
     .label = Mag-report ng Site Issue…
 appmenu-help-feedback-page =
     .label = Magbigay ng Katugunan...
     .accesskey = s
-
-## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
-## are mutually exclusive, so it's possible to use the same accesskey for both.
-
-appmenu-help-safe-mode-without-addons =
-    .label = Mag-restart na Naka-disable ang mga Add-on...
-    .accesskey = R
-appmenu-help-safe-mode-with-addons =
-    .label = Mag-restart nang Naka-enable ang mga Add-on
-    .accesskey = R
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
@@ -119,5 +116,7 @@ appmenu-help-not-deceptive =
 
 ## More Tools
 
+appmenu-customizetoolbar =
+    .label = i-Customize ang Toolbar…
 appmenu-taskmanager =
     .label = Task Manager

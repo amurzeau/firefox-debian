@@ -64,3 +64,27 @@ appmenu-help-exit-troubleshoot-mode =
     .label = Probleemoplossingsmodus uitschakelen
 appmenu-help-more-troubleshooting-info =
     .label = Meer probleemoplossingsinformatie
+
+## Action Button Context Menu
+
+toolbar-context-menu-manage-extension =
+    .label = Extensie beheren
+    .accesskey = E
+toolbar-context-menu-remove-extension =
+    .label = Extensie verwijderen
+    .accesskey = v
+
+## Message headers
+
+message-header-address-in-address-book-icon =
+    .alt = Adres staat in het adresboek
+message-header-address-not-in-address-book-icon =
+    .alt = Adres staat niet in het adresboek
+
+## Add-on removal warning
+
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = { $name } verwijderen?
+addon-removal-confirmation-button = Verwijderen
+addon-removal-confirmation-message = { $name } en de bijbehorende configuratie en gegevens verwijderen uit { -brand-short-name }?
