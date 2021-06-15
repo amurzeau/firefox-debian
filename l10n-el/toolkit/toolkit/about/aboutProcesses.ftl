@@ -57,12 +57,20 @@ about-processes-process-name = Διεργασία { $pid }: { $name }
 ##    $pid (String) The process id of this process, assigned by the OS.
 
 about-processes-browser-process = { -brand-short-name } ({ $pid })
+about-processes-web-process = Κοινόχρηστη διεργασία ιστού ({ $pid })
 about-processes-file-process = Αρχεία ({ $pid })
 about-processes-extension-process = Επεκτάσεις ({ $pid })
+about-processes-privilegedabout-process = Σελίδες "about:" ({ $pid })
 about-processes-plugin-process = Αρθρώματα ({ $pid })
+about-processes-privilegedmozilla-process = Σελίδες της { -vendor-short-name } ({ $pid })
+about-processes-gmp-plugin-process = Αρθρώματα πολυμέσων Gecko ({ $pid })
 about-processes-gpu-process = GPU ({ $pid })
 about-processes-vr-process = VR ({ $pid })
+about-processes-rdd-process = Αποκωδικοποιητής δεδομένων ({ $pid })
 about-processes-socket-process = Δίκτυο ({ $pid })
+about-processes-remote-sandbox-broker-process = Απομακρυσμένο Sandbox Broker ({ $pid })
+about-processes-fork-server-process = Διακομιστής fork ({ $pid })
+about-processes-preallocated-process = Προκατανεμημένο ({ $pid })
 # Unknown process names
 # Variables:
 #    $pid (String) The process id of this process, assigned by the OS.
@@ -76,8 +84,10 @@ about-processes-unknown-process = Άλλο: { $type } ({ $pid })
 
 about-processes-web-isolated-process = { $origin } ({ $pid })
 about-processes-web-large-allocation-process = { $origin } ({ $pid }, μεγάλο)
+about-processes-with-coop-coep-process = { $origin } ({ $pid }, απομονωμένο μεταξύ προελεύσεων)
 about-processes-web-isolated-process-private = { $origin } — Ιδιωτικό ({ $pid })
 about-processes-web-large-allocation-process-private = { $origin } — Ιδιωτικό ({ $pid }, μεγάλο)
+about-processes-with-coop-coep-process-private = { $origin } — Ιδιωτικό ({ $pid }, απομονωμένο μεταξύ προελεύσεων)
 
 ## Details within processes
 
@@ -92,6 +102,21 @@ about-processes-thread-summary = Νήματα ({ $number })
 #   $name (String) The name assigned to the thread.
 #   $tid (String) The thread id of this thread, assigned by the OS.
 about-processes-thread-name = Νήμα { $tid }: { $name }
+# Single-line summary of threads (non-idle process)
+# Variables:
+#    $number (Number) The number of threads in the process. Typically larger
+#                     than 30. We don't expect to ever have processes with less
+#                     than 5 threads.
+#    $active (Number) The number of active threads in the process.
+#                     The value will be greater than 0 and will never be
+#                     greater than $number.
+#    $list (String) Comma separated list of active threads.
+#                   Can be an empty string if the process is idle.
+about-processes-active-threads =
+    { $active ->
+        [one] { $active } ενεργό νήμα από { $number }: { $list }
+       *[other] { $active } ενεργά νήματα από { $number }: { $list }
+    }
 # Single-line summary of threads (idle process)
 # Variables:
 #    $number (Number) The number of threads in the process. Typically larger
@@ -103,6 +128,12 @@ about-processes-inactive-threads =
         [one] { $number } ανενεργό νήμα
        *[other] { $number } ανενεργά νήματα
     }
+# Thread details
+# Variables:
+#   $name (String) The name assigned to the thread.
+#   $tid (String) The thread id of this thread, assigned by the OS.
+about-processes-thread-name-and-id = { $name }
+    .title = ID νήματος: { $tid }
 # Tab
 # Variables:
 #   $name (String) The name of the tab (typically the title of the page, might be the url while the page is loading).
@@ -136,6 +167,9 @@ about-processes-cpu = { NUMBER($percent, maximumSignificantDigits: 2, style: "pe
 about-processes-cpu-user-and-kernel-not-ready = (μέτρηση)
 # Special case: process or thread is currently idle.
 about-processes-cpu-user-and-kernel-idle = Αδρανές ({ NUMBER($total, maximumFractionDigits: 2) }{ $unit })
+# Special case: process or thread is currently idle.
+about-processes-cpu-idle = αδρανές
+    .title = Συνολικός χρόνος CPU: { NUMBER($total, maximumFractionDigits: 2) }{ $unit }
 
 ## Displaying Memory (total and delta)
 ## Variables:

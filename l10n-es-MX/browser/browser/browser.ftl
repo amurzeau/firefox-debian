@@ -181,8 +181,6 @@ page-action-send-tabs-urlbar =
             [one] Enviar pestaña a dispositivo
            *[other] Enviar { $tabCount } pestañas a dispositivo
         }
-page-action-pocket-panel =
-    .label = Guardar página en { -pocket-brand-name }
 page-action-copy-url-panel =
     .label = Copiar enlace
 page-action-copy-url-urlbar =
@@ -247,6 +245,14 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Añadir “{ $engineName }”
+    .tooltiptext = Añadir buscador “{ $engineName }”
+    .aria-label = Añadir buscador “{ $engineName }”
 # When more than 5 engines are offered by a web page, they are grouped in a
 # submenu using this as its label.
 search-one-offs-add-engine-menu =
@@ -268,6 +274,8 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Agregar marcador
+bookmarks-edit-bookmark = Editar marcador
 bookmark-panel-cancel =
     .label = Cancelar
     .accesskey = C
@@ -285,6 +293,8 @@ bookmark-panel-show-editor-checkbox =
     .accesskey = S
 bookmark-panel-done-button =
     .label = Terminar
+bookmark-panel-save-button =
+    .label = Guardar
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -302,6 +312,7 @@ identity-header-security-with-host =
     .title = Seguridad de la conexión para { $host }
 identity-connection-not-secure = Conexión no segura
 identity-connection-secure = Conexión segura
+identity-connection-failure = Fallo de conexión
 identity-connection-internal = Esta es un página { -brand-short-name } segura.
 identity-connection-file = Esta página está almacenada en tu computadora.
 identity-extension-page = Esta página se carga desde una extensión.
@@ -326,6 +337,7 @@ identity-https-only-info-turn-off2 = Si el sitio no funciona correctamente, es p
 identity-https-only-info-no-upgrade = No se puede actualizar la conexión desde HTTP.
 identity-permissions-storage-access-header = Cookies entre sitios
 identity-permissions-storage-access-hint = Estas partes pueden usar cookies de sitios cruzados y datos del sitio mientras está en este sitio.
+identity-permissions-storage-access-learn-more = Saber más
 identity-permissions-reload-hint = Puede que tengas que recargar la página para que se apliquen los cambios.
 identity-permissions-empty = No tienes permitido en este sitio web ningún permiso especial.
 identity-clear-site-data =
@@ -371,6 +383,14 @@ browser-window-close-button =
 
 ## Tab actions
 
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = REPRODUCIENDO
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = SILENCIADO
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = AUTOREPRODUCCIÓN BLOQUEDA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = PICTURE-IN-PICTURE
 
 ## These labels should be written in all capital letters if your locale supports them.
 ## Variables:
@@ -381,6 +401,12 @@ browser-tab-mute =
         [1] SILENCIAR PESTAÑA
         [one] SILENCIAR { $count } PESTAÑA
        *[other] SILENCIAR { $count } PESTAÑAS
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] DEJAR DE SILENCIAR PESTAÑA
+        [one] DEJAR DE SILENCIAR { $count } PESTAÑA
+       *[other] DEJAR DE SILENCIAR { $count } PESTAÑAS
     }
 browser-tab-unblock =
     { $count ->
@@ -414,6 +440,8 @@ popup-select-microphone-device =
     .accesskey = M
 popup-select-microphone-icon =
     .tooltiptext = Micrófono
+popup-select-speaker-icon =
+    .tooltiptext = Altavoces
 popup-all-windows-shared = Todas las ventanas visibles en tu pantalla se compartirán.
 popup-screen-sharing-not-now =
     .label = Ahora no
@@ -486,6 +514,11 @@ urlbar-placeholder-with-name =
     .placeholder = Buscar con { $name } o ingresar una dirección
 urlbar-remote-control-notification-anchor =
     .tooltiptext = El navegador está controlado a distancia
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = El navegador está bajo control remoto (razón: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Concediste permisos adicionales a este sitio web.
 urlbar-switch-to-tab =
@@ -541,6 +574,11 @@ urlbar-result-action-tabtosearch-web = Buscar con { $engine } directamente desde
 urlbar-result-action-tabtosearch-other-engine = Buscar con { $engine } directamente desde la barra de direcciones
 # Action text for copying to clipboard.
 urlbar-result-action-copy-to-clipboard = Copiar
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -568,11 +606,18 @@ pointerlock-warning-no-domain = Este documento tiene el control de tu puntero. P
 
 ## Subframe crash notification
 
+crashed-subframe-message = <strong>Parte de esta página falló.</strong> Para que { -brand-product-name } sepa sobre este problema y se arregle más rápido, por favor envía un informe.
+crashed-subframe-learnmore-link =
+    .value = Saber más
+crashed-subframe-submit =
+    .label = Enviar informe
+    .accesskey = E
 
 ## Bookmarks panels, menus and toolbar
 
-bookmarks-show-all-bookmarks =
-    .label = Mostrar todos los marcadores
+bookmarks-manage-bookmarks =
+    .label = Administrar marcadores
+bookmarks-recent-bookmarks-panel-subheader = Marcadores recientes
 bookmarks-toolbar-chevron =
     .tooltiptext = Mostrar más marcadores
 bookmarks-sidebar-content =
@@ -594,6 +639,12 @@ bookmarks-tools-toolbar-visibility-menuitem =
         { $isVisible ->
             [true] Ocultar barra de marcadores
            *[other] Ver la barra de marcadores
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Ocultar Barra de Marcadores
+           *[other] Mostrar Barra de Marcadores
         }
 bookmarks-tools-menu-button-visibility =
     .label =
@@ -620,6 +671,9 @@ bookmarks-toolbar-placeholder =
     .title = Elementos de la barra de marcadores
 bookmarks-toolbar-placeholder-button =
     .label = Elementos de la barra de marcadores
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Agregar pestaña actual a Marcadores
 
 ## Library Panel items
 
@@ -633,6 +687,12 @@ library-recent-activity-title =
 save-to-pocket-button =
     .label = Guardar en { -pocket-brand-name }
     .tooltiptext = Guardar en { -pocket-brand-name }
+
+## Repair text encoding toolbar button
+
+repair-text-encoding-button =
+    .label = Reparar la codificación de texto
+    .tooltiptext = Adivinar la codificación de texto desde el contenido de página
 
 ## Customize Toolbar Buttons
 
@@ -660,12 +720,25 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = Algún audio o video en este sitio usa software DRM, que puede limitar lo que { -brand-short-name } te permite hacer con él.
+eme-notifications-drm-content-playing-manage = Administrar configuraciones
+eme-notifications-drm-content-playing-manage-accesskey = M
+eme-notifications-drm-content-playing-dismiss = Descartar
+eme-notifications-drm-content-playing-dismiss-accesskey = D
 
 ## Password save/update panel
 
+panel-save-update-username = Nombre de usuario
+panel-save-update-password = Contraseña
 
 ## Add-on removal warning
 
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = ¿Eliminar { $name }?
+addon-removal-abuse-report-checkbox = Informar de esta extensión a { -vendor-short-name }
 
 ## Remote / Synced tabs
 
+remote-tabs-manage-account =
+    .label = Administrar cuenta
+remote-tabs-sync-now = Sincronizar ahora

@@ -5,18 +5,14 @@
 
 ## App Menu
 
-appmenuitem-update-banner2 =
-    .label-update-downloading = { -brand-shorter-name } తాజాకరణను దించుకొంటూంది
-    .label-update-available = తాజాకరణ అందుబాటులో ఉంది — ఇప్పుడే దించుకోండి
-    .label-update-manual = తాజాకరణ అందుబాటులో ఉంది — ఇప్పుడే దించుకోండి
-    .label-update-unsupported = తాజాకరించలేకున్నాం
-    .label-update-restart = తాజాకరణ అందుబాటులో ఉంది — ఇప్పుడే పునఃప్రారంభించండి
 appmenuitem-protection-dashboard-title = సంరక్షణల డాష్‌బోర్డ్
 appmenuitem-customize-mode =
     .label = అభిమతీకరించు…
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = కొత్త ట్యాబు
 appmenuitem-new-window =
     .label = కొత్త విండో
 appmenuitem-new-private-window =
@@ -29,14 +25,6 @@ appmenuitem-find-in-page =
     .label = పేజీలో వెతుకు…
 appmenuitem-more-tools =
     .label = మరిన్ని పనిముట్లు
-appmenuitem-exit =
-    .label = నిష్క్రమించు
-appmenu-menu-button-closed =
-    .tooltiptext = అనువర్తనపు మెనూ తెరువు
-    .label = { -brand-shorter-name }
-appmenu-menu-button-opened =
-    .tooltiptext = అనువర్తనపు మెనూని మూసివేయి
-    .label = { -brand-shorter-name }
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -68,8 +56,6 @@ appmenuitem-fullscreen =
 fxa-toolbar-sync-now =
     .label = ఇప్పుడు సింక్ చేయి
 appmenuitem-fxa-manage-account = ఖాతా నిర్వహణ
-appmenu-fxa-header =
-    .title = { -fxaccount-brand-name }
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 appmenu-fxa-show-more-tabs = మరిన్ని ట్యాబులను చూపించు
 appmenuitem-save-page =
@@ -113,6 +99,15 @@ appmenu-manage-history =
     .label = చరిత్ర నిర్వహణ
 appmenu-reopen-all-tabs = ట్యాబులన్నింటినీ మళ్లీ తెరువు
 appmenu-reopen-all-windows = కిటికీలన్నిటినీ మళ్ళీ తెరువు
+appmenu-restore-session =
+    .label = మునుపటి సెషన్‌ను పునరుద్ధరించు
+appmenu-clear-history =
+    .label = ఇటీవలి చరిత్రను తుడిచివేయి…
+appmenu-recent-history-subheader = ఇటీవలి చరిత్ర
+appmenu-recently-closed-tabs =
+    .label = ఇటీవల మూసిన ట్యాబులు
+appmenu-recently-closed-windows =
+    .label = ఇటీవల మూసిన విండోలు
 
 ## Help panel
 

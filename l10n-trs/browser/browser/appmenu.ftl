@@ -5,14 +5,14 @@
 
 ## App Menu
 
-appmenuitem-update-banner =
-    .label-update-downloading = Nādunïnj sa huā nākà guendâ { -brand-shorter-name }
 appmenuitem-protection-dashboard-title = Riña màn nej sa dugumîn
 appmenuitem-customize-mode =
     .label = Nagi'iô' daj huin ruhuô'...
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = Rakïj ñanj nakàa
 appmenuitem-new-window =
     .label = Ventana nakàa
 appmenuitem-new-private-window =
@@ -50,32 +50,26 @@ whatsnew-panel-footer-checkbox =
 
 ## History panel
 
+appmenu-restore-session =
+    .label = Nagi'iaj ñunj sesión gà gachin
+appmenu-clear-history =
+    .label = Dure' riña gaché nu'...
+appmenu-recent-history-subheader = Riña gaché nu nakò'
+appmenu-recently-closed-tabs =
+    .label = Rakïj ñanj hiaj narrán nakà
+appmenu-recently-closed-windows =
+    .label = Sa hiaj narrán nakà
 
 ## Help panel
 
 appmenu-about =
     .label = rayi'î { -brand-shorter-name }
     .accesskey = r
-appmenu-help-troubleshooting-info =
-    .label = Nuguan' garasun' dàj nagi'iô' sa hua a'nan'an
-    .accesskey = N
-appmenu-help-taskmanager =
-    .label = Sa nikaj ñu'unj nej suun
 appmenu-help-report-site-issue =
     .label = Natà' si huā sa huā a'na' riña sitiô…
 appmenu-help-feedback-page =
     .label = Ga'nïnj 'ngo si nuguàn't
     .accesskey = S
-
-## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
-## are mutually exclusive, so it's possible to use the same accesskey for both.
-
-appmenu-help-safe-mode-without-addons =
-    .label = Nayi'ì ñû' ngà nej sa ga'ue nutò' giyichin'
-    .accesskey = N
-appmenu-help-safe-mode-with-addons =
-    .label = Nayi'ì ñû' ngà nej sa ga'ue nutò' hua yugui
-    .accesskey = N
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

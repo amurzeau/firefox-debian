@@ -11,6 +11,9 @@ remove-address-row-type = Odebrat pole { $type }
 remove-address-row-type-label =
     .tooltiptext = Odstraní pole { $type }
 #   $type (String) - the type of the addressing row
+remove-address-row-button =
+    .title = Odebrat pole { $type }
+#   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
@@ -118,6 +121,12 @@ move-attachment-last-panel-button =
 button-return-receipt =
     .label = Potvrzení o přijetí
     .tooltiptext = Zažádá o potvrzení o přijetí této zprávy
+#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
+consider-bcc-notification =
+    { $count ->
+        [few] Celkem { $count } adresáti v polích Komu a Kopie navzájem uvidí své adresy.
+       *[other] Celkem { $count } adresátů v polích Komu a Kopie navzájem uvidí své adresy.
+    } Pokud se tomu chcete vyhnout, použijte pole Skrytá kopie.
 
 # Addressing Area
 
@@ -152,7 +161,7 @@ bcc-compose-show-address-row-label =
     .value = { bcc-compose-address-row-label.value }
     .tooltiptext = Zobrazit pole { bcc-compose-address-row-label.value } ({ bcc-compose-show-address-row-menuitem.acceltext })
 #   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-consider-bcc-notification =
+many-public-recipients-info =
     { $count ->
         [few] Celkem { $count } adresáti v polích Komu a Kopie navzájem uvidí své adresy.
        *[other] Celkem { $count } adresátů v polích Komu a Kopie navzájem uvidí své adresy.
@@ -163,3 +172,9 @@ many-public-recipients-bcc =
 many-public-recipients-ignore =
     .label = Ponechat příjemce veřejně
     .accesskey = n
+
+## Notifications
+
+# Variables:
+# $identity (string) - The name of the used identity, most likely an email address.
+compose-missing-identity-warning = Unikátní identita odpovídající adrese odesílatele nebyla nalezena. Zpráva bude odeslána s pomocí současné adresy odesílatele a nastavení pro identitu { $identity }.

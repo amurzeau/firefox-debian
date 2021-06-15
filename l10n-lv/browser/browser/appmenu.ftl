@@ -10,6 +10,8 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = Jauna cilne
 appmenuitem-new-window =
     .label = Jauns logs
 appmenuitem-new-private-window =
@@ -38,32 +40,26 @@ whatsnew-panel-header = Kas jauns?
 
 ## History panel
 
+appmenu-restore-session =
+    .label = Atjaunot iepriekšējo sesiju
+appmenu-clear-history =
+    .label = Dzēst neseno vēsturi…
+appmenu-recent-history-subheader = Nesenā vēsture
+appmenu-recently-closed-tabs =
+    .label = Nesen aizvērtās cilnes
+appmenu-recently-closed-windows =
+    .label = Nesen aizvērtie logi
 
 ## Help panel
 
 appmenu-about =
     .label = Par { -brand-shorter-name }
     .accesskey = a
-appmenu-help-troubleshooting-info =
-    .label = Problēmu novēršanas informācija
-    .accesskey = P
-appmenu-help-taskmanager =
-    .label = Uzdevumu pārvaldnieks
 appmenu-help-report-site-issue =
     .label = Ziņot par problēmu ar lapu…
 appmenu-help-feedback-page =
     .label = Nosūtīt atsauksmi…
     .accesskey = s
-
-## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
-## are mutually exclusive, so it's possible to use the same accesskey for both.
-
-appmenu-help-safe-mode-without-addons =
-    .label = Pārstartēt ar deaktivētiem papildinājumiem…
-    .accesskey = r
-appmenu-help-safe-mode-with-addons =
-    .label = Pārstartēt ar aktivētiem papildinājumiem
-    .accesskey = r
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

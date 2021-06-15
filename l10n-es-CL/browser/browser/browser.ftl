@@ -181,8 +181,6 @@ page-action-send-tabs-urlbar =
             [one] Enviar pestaña a dispositivo
            *[other] Enviar { $tabCount } pestañas a dispositivo
         }
-page-action-pocket-panel =
-    .label = Guardar página en { -pocket-brand-name }
 page-action-copy-url-panel =
     .label = Copiar enlace
 page-action-copy-url-urlbar =
@@ -514,6 +512,11 @@ urlbar-placeholder-with-name =
     .placeholder = Busca con { $name } o ingresa una dirección
 urlbar-remote-control-notification-anchor =
     .tooltiptext = El navegador está bajo control remoto
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = El navegador está bajo control remoto (razón: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Has dado permisos adicionales a este sitio.
 urlbar-switch-to-tab =
@@ -610,8 +613,6 @@ crashed-subframe-submit =
 
 ## Bookmarks panels, menus and toolbar
 
-bookmarks-show-all-bookmarks =
-    .label = Mostrar todos los marcadores
 bookmarks-manage-bookmarks =
     .label = Gestionar marcadores
 bookmarks-recent-bookmarks-panel-subheader = Marcadores recientes
@@ -684,6 +685,12 @@ library-recent-activity-title =
 save-to-pocket-button =
     .label = Guardar en { -pocket-brand-name }
     .tooltiptext = Guardar en { -pocket-brand-name }
+
+## Repair text encoding toolbar button
+
+repair-text-encoding-button =
+    .label = Reparar codificación de texto
+    .tooltiptext = Inferir la codificación de texto desde el contenido de la página
 
 ## Customize Toolbar Buttons
 

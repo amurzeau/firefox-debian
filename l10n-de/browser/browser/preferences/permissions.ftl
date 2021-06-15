@@ -18,6 +18,12 @@ permissions-session =
 permissions-allow =
     .label = Erlauben
     .accesskey = E
+permissions-button-off =
+    .label = Ausschalten
+    .accesskey = A
+permissions-button-off-temporarily =
+    .label = Temporär ausschalten
+    .accesskey = T
 permissions-site-name =
     .label = Website
 permissions-status =
@@ -58,6 +64,10 @@ permissions-capabilities-listitem-block =
     .value = Blockieren
 permissions-capabilities-listitem-allow-session =
     .value = Für diese Sitzung erlauben
+permissions-capabilities-listitem-off =
+    .value = Aus
+permissions-capabilities-listitem-off-temporarily =
+    .value = Temporär aus
 
 ## Invalid Hostname Dialog
 
@@ -77,6 +87,13 @@ permissions-exceptions-cookie-window =
     .title = Ausnahmen - Cookies und Website-Daten
     .style = { permissions-window.style }
 permissions-exceptions-cookie-desc = Sie können festlegen, welchen Websites Sie immer oder niemals erlauben möchten, Cookies und Website-Daten zu verwenden. Geben Sie bitte die exakte Adresse der Website ein, die Sie verwalten möchten, und klicken Sie dann Blockieren, für diese Sitzung erlauben oder Erlauben.
+
+## Exceptions - HTTPS-Only Mode
+
+permissions-exceptions-https-only-window =
+    .title = Ausnahmen - Nur-HTTPS-Modus
+    .style = { permissions-window.style }
+permissions-exceptions-https-only-desc = Sie können den Nur-HTTPS-Modus für bestimmte Websites deaktivieren. { -brand-short-name } versucht dann nicht, die Verbindung zu ändern, um HTTPS für diese Websites sicherzustellen. Ausnahmen gelten nicht für private Fenster.
 
 ## Exceptions - Pop-ups
 

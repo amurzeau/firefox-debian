@@ -173,6 +173,9 @@ menu-view-page-basic-style =
 menu-view-charset =
     .label = Codification del texto
     .accesskey = C
+menu-view-repair-text-encoding =
+    .label = Corriger le codification del texto:
+    .accesskey = c
 
 ## These should match what Safari and other Apple applications
 ## use on macOS.
@@ -227,6 +230,8 @@ menu-bookmarks-show-all =
     .label = Monstrar tote le marcapaginas
 menu-bookmark-this-page =
     .label = Adder un marcapaginas
+menu-bookmarks-manage =
+    .label = Gerer marcapaginas
 menu-bookmark-current-tab =
     .label = Adder scheda actual al marcapaginas
 menu-bookmark-edit =
@@ -254,15 +259,15 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Aperir session in { -brand-product-name }…
     .accesskey = A
+menu-tools-turn-on-sync =
+    .label = Activar { -sync-brand-short-name }…
+    .accesskey = A
 menu-tools-addons-and-themes =
     .label = Additivos e themas
     .accesskey = A
 menu-tools-fxa-sign-in2 =
     .label = Aperir session
     .accesskey = g
-menu-tools-turn-on-sync =
-    .label = Activar { -sync-brand-short-name }…
-    .accesskey = A
 menu-tools-turn-on-sync2 =
     .label = Activar Sync…
     .accesskey = n
@@ -287,13 +292,6 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Informationes del pagina
     .accesskey = I
-menu-settings =
-    .label = Parametros
-    .accesskey =
-        { PLATFORM() ->
-            [windows] S
-           *[other] l
-        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -304,6 +302,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] O
            *[other] P
+        }
+menu-settings =
+    .label = Parametros
+    .accesskey =
+        { PLATFORM() ->
+            [windows] S
+           *[other] l
         }
 menu-tools-layout-debugger =
     .label = Depurator de disposition
@@ -342,14 +347,12 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = Claves de accesso directe
     .accesskey = C
-menu-get-help =
-    .label = Obtener adjuta
-    .accesskey = a
 menu-help-troubleshooting-info =
     .label = Informationes de diagnostico
     .accesskey = I
-menu-help-taskmanager =
-    .label = Gestor de activitate
+menu-get-help =
+    .label = Obtener adjuta
+    .accesskey = a
 menu-help-more-troubleshooting-info =
     .label = Altere informationes diagnostic
     .accesskey = d

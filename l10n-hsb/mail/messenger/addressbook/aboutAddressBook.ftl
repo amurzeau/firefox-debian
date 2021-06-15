@@ -24,6 +24,8 @@ about-addressbook-books-context-properties =
     .label = Kajkosće
 about-addressbook-books-context-synchronize =
     .label = Synchronizować
+about-addressbook-books-context-print =
+    .label = Ćišćeć…
 about-addressbook-books-context-delete =
     .label = Zhašeć
 
@@ -35,6 +37,8 @@ about-addressbook-search =
     .placeholder = { $name } přepytać
 about-addressbook-search-all =
     .placeholder = Wšě adresniki přepytać
+about-addressbook-sort-button =
+    .title = Lisćinowy porjad změnić
 about-addressbook-name-format-display =
     .label = Zwobraznjenske mjeno
 about-addressbook-name-format-firstlast =

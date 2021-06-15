@@ -5,12 +5,6 @@
 
 ## App Menu
 
-appmenuitem-update-banner2 =
-    .label-update-downloading = Download aggiornamento di { -brand-shorter-name } in corso
-    .label-update-available = Aggiornamento disponibile — scarica adesso
-    .label-update-manual = Aggiornamento disponibile — scarica adesso
-    .label-update-unsupported = Aggiornamento non riuscito
-    .label-update-restart = Aggiornamento disponibile — riavvia adesso
 appmenuitem-update-banner3 =
     .label-update-downloading = Download aggiornamento di { -brand-shorter-name } in corso
     .label-update-available = Aggiornamento disponibile — scarica adesso
@@ -23,6 +17,8 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = Nuova scheda
 appmenuitem-new-window =
     .label = Nuova finestra
 appmenuitem-new-private-window =
@@ -35,14 +31,6 @@ appmenuitem-find-in-page =
     .label = Trova nella pagina…
 appmenuitem-more-tools =
     .label = Altri strumenti
-appmenuitem-exit =
-    .label = Esci
-appmenu-menu-button-closed =
-    .tooltiptext = Apri menu applicazione
-    .label = { -brand-shorter-name }
-appmenu-menu-button-opened =
-    .tooltiptext = Chiudi menu applicazione
-    .label = { -brand-shorter-name }
 appmenuitem-exit2 =
     .label = Esci
 appmenu-menu-button-closed2 =
@@ -75,16 +63,12 @@ appmenu-remote-tabs-turn-on-sync =
     .label = Attiva sincronizzazione…
 appmenuitem-fxa-toolbar-sync-now2 = Sincronizza adesso
 appmenuitem-fxa-manage-account = Gestisci account
-appmenu-fxa-header =
-    .title = { -fxaccount-brand-name(capitalization: "uppercase") }
 appmenu-fxa-header2 = { -fxaccount-brand-name(capitalization: "uppercase") }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
 appmenu-fxa-last-sync = Ultima sincronizzazione: { $time }
     .label = Ultima sincronizzazione: { $time }
-appmenu-fxa-sync-and-save-data =
-    .value = Sincronizza e salva i dati
 appmenu-fxa-sync-and-save-data2 = Sincronizza e salva i dati
 appmenu-fxa-signed-in-label = Accedi
 appmenu-fxa-setup-sync =
@@ -149,6 +133,15 @@ appmenu-manage-history =
     .label = Gestisci cronologia
 appmenu-reopen-all-tabs = Riapri tutte le schede
 appmenu-reopen-all-windows = Riapri tutte le finestre
+appmenu-restore-session =
+    .label = Ripristina la sessione precedente
+appmenu-clear-history =
+    .label = Cancella la cronologia recente…
+appmenu-recent-history-subheader = Cronologia recente
+appmenu-recently-closed-tabs =
+    .label = Schede chiuse di recente
+appmenu-recently-closed-windows =
+    .label = Finestre chiuse di recente
 
 ## Help panel
 
@@ -196,3 +189,5 @@ appmenu-customizetoolbar =
 appmenu-taskmanager =
     .label = Gestione attività
 appmenu-developer-tools-subheader = Strumenti del browser
+appmenu-developer-tools-extensions =
+    .label = Estensioni per sviluppatori

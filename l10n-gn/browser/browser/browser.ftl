@@ -181,8 +181,6 @@ page-action-send-tabs-urlbar =
             [one] Emondo tendayke mba’e’okápe
            *[other] Emondo umi tendayke { $tabCount } mba’e’okápe
         }
-page-action-pocket-panel =
-    .label = Eñongatu kuatiarogue { -pocket-brand-name }-pe
 page-action-copy-url-panel =
     .label = Link Mbohasarã
 page-action-copy-url-urlbar =
@@ -427,7 +425,7 @@ bookmarks-toolbar-empty-message = Eike pya’e hag̃ua, emoĩ nde rechaukaha tec
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
-    .value = Ta’angamýi hetápe guarãva:
+    .value = Ta’angamýi hetápe g̃uarãva:
     .accesskey = C
 popup-select-microphone =
     .value = Ñe’ẽatãha hetápe g̃uarãva:
@@ -514,6 +512,11 @@ urlbar-placeholder-with-name =
     .placeholder = Eheka { $name } ndive térã emoinge kundaharape
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Kundahára oĩ ñangarekoha okayguáva poguýpe
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Kundahára oĩ ñangarekoha okaygua poguýpe (mba’ere: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Oñeme’ẽ ko ñanduti rendápe ñemoneĩ jo’a.
 urlbar-switch-to-tab =
@@ -610,8 +613,6 @@ crashed-subframe-submit =
 
 ## Bookmarks panels, menus and toolbar
 
-bookmarks-show-all-bookmarks =
-    .label = Opaite techaukaha jehechauka
 bookmarks-manage-bookmarks =
     .label = Eñangareko techaukaháre
 bookmarks-recent-bookmarks-panel-subheader = Techaukaha ramogua

@@ -5,12 +5,6 @@
 
 ## App Menu
 
-appmenuitem-update-banner2 =
-    .label-update-downloading = Ladataan { -brand-shorter-name }-päivitystä
-    .label-update-available = Päivitys saatavilla – lataa nyt
-    .label-update-manual = Päivitys saatavilla – lataa nyt
-    .label-update-unsupported = Päivittäminen ei onnistu
-    .label-update-restart = Päivitys saatavilla – käynnistä uudelleen
 appmenuitem-update-banner3 =
     .label-update-downloading = Ladataan { -brand-shorter-name }-päivitystä
     .label-update-available = Päivitys saatavilla – lataa nyt
@@ -23,6 +17,8 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = Uusi välilehti
 appmenuitem-new-window =
     .label = Uusi ikkuna
 appmenuitem-new-private-window =
@@ -35,14 +31,6 @@ appmenuitem-find-in-page =
     .label = Etsi sivulta…
 appmenuitem-more-tools =
     .label = Lisää työkaluja
-appmenuitem-exit =
-    .label = Sulje selain
-appmenu-menu-button-closed =
-    .tooltiptext = Avaa sovellusvalikko
-    .label = { -brand-shorter-name }
-appmenu-menu-button-opened =
-    .tooltiptext = Sulje sovellusvalikko
-    .label = { -brand-shorter-name }
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -79,16 +67,12 @@ appmenu-remote-tabs-turn-on-sync =
     .label = Ota synkronointi käyttöön…
 appmenuitem-fxa-toolbar-sync-now2 = Synkronoi nyt
 appmenuitem-fxa-manage-account = Hallinnoi tiliä
-appmenu-fxa-header =
-    .title = { -fxaccount-brand-name }
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
 appmenu-fxa-last-sync = Viimeksi synkronoitu { $time }
     .label = Viimeksi synkronoitu { $time }
-appmenu-fxa-sync-and-save-data =
-    .value = Synkronoi ja tallenna tiedot
 appmenu-fxa-sync-and-save-data2 = Synkronoi ja tallenna tiedot
 appmenu-fxa-signed-in-label = Kirjaudu
 appmenu-fxa-setup-sync =
@@ -151,6 +135,15 @@ appmenu-manage-history =
     .label = Hallitse historiaa
 appmenu-reopen-all-tabs = Avaa uudelleen kaikki välilehdet
 appmenu-reopen-all-windows = Avaa uudelleen kaikki ikkunat
+appmenu-restore-session =
+    .label = Palauta edellinen istunto
+appmenu-clear-history =
+    .label = Poista viimeaikaisia historiatietoja…
+appmenu-recent-history-subheader = Viimeaikainen historia
+appmenu-recently-closed-tabs =
+    .label = Suljetut välilehdet
+appmenu-recently-closed-windows =
+    .label = Suljetut ikkunat
 
 ## Help panel
 
@@ -198,3 +191,5 @@ appmenu-customizetoolbar =
 appmenu-taskmanager =
     .label = Tehtävienhallinta
 appmenu-developer-tools-subheader = Browser Tools
+appmenu-developer-tools-extensions =
+    .label = Extensions for Developers

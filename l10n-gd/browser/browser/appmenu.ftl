@@ -10,12 +10,20 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = Taba ùr
 appmenuitem-new-window =
     .label = Uinneag ùr
 appmenuitem-new-private-window =
     .label = Uinneag phrìobhaideach ùr
 appmenuitem-addons-and-themes =
     .label = Tuilleadain ’s ùrlaran
+appmenuitem-more-tools =
+    .label = Barrachd innealan
+# Settings is now used to access the browser settings across all platforms,
+# instead of Options or Preferences.
+appmenuitem-settings =
+    .label = Roghainnean
 
 ## Zoom and Fullscreen Controls
 
@@ -41,11 +49,22 @@ whatsnew-panel-header = Na tha ùr
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-settings =
+    .value = Roghainnean
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Deasaich na roghainnean…
 
 ## History panel
 
+appmenu-restore-session =
+    .label = Aisig an seisean roimhe seo
+appmenu-clear-history =
+    .label = Glan an eachdraidh faisg ort…
+appmenu-recent-history-subheader = Eachdraidh o chionn goirid
+appmenu-recently-closed-tabs =
+    .label = Tabaichean a dhùin thu o chionn ghoirid
+appmenu-recently-closed-windows =
+    .label = Uinneagan a dhùin thu o chionn ghoirid
 
 ## Help panel
 
@@ -74,5 +93,8 @@ appmenu-help-not-deceptive =
 
 ## More Tools
 
+appmenu-customizetoolbar =
+    .label = Gnàthaich am bàr-inneal...
 appmenu-taskmanager =
     .label = Manaidsear nan saothair
+appmenu-developer-tools-subheader = Innealan a’ bhrabhsair

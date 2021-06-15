@@ -105,6 +105,18 @@ main-context-menu-bookmark-add =
     .aria-label = Էջանշել այս Էջը
     .accesskey = m
     .tooltiptext = Էջանշել այս էջը
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Էջանշել էջը
+    .accesskey = m
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Խմբագրել Էջանիշը
+    .accesskey = m
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -380,6 +392,9 @@ main-context-menu-print-selection =
 main-context-menu-view-selection-source =
     .label = Դիտել Նշված Մասի Կոդը
     .accesskey = e
+main-context-menu-take-screenshot =
+    .label = Ստանալ էկրանի հանույթը
+    .accesskey = T
 main-context-menu-view-page-source =
     .label = Դիտել Էջի Կոդը
     .accesskey = Դ

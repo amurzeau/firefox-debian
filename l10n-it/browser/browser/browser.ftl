@@ -178,8 +178,6 @@ page-action-send-tabs-urlbar =
             [one] Invia scheda a dispositivo
            *[other] Invia { $tabCount } schede a dispositivo
         }
-page-action-pocket-panel =
-    .label = Salva pagina in { -pocket-brand-name }
 page-action-copy-url-panel =
     .label = Copia link
 page-action-copy-url-urlbar =
@@ -437,6 +435,8 @@ popup-select-microphone-device =
     .accesskey = M
 popup-select-microphone-icon =
     .tooltiptext = Microfono
+popup-select-speaker-icon =
+    .tooltiptext = Altoparlanti
 popup-all-windows-shared = Tutte le finestre visibili sullo schermo verranno condivise.
 popup-screen-sharing-not-now =
     .label = Non adesso
@@ -608,8 +608,6 @@ crashed-subframe-submit =
 
 ## Bookmarks panels, menus and toolbar
 
-bookmarks-show-all-bookmarks =
-    .label = Visualizza tutti i segnalibri
 bookmarks-manage-bookmarks =
     .label = Gestisci segnalibri
 bookmarks-recent-bookmarks-panel-subheader = Segnalibri recenti
@@ -682,6 +680,12 @@ library-recent-activity-title =
 save-to-pocket-button =
     .label = Salva in { -pocket-brand-name }
     .tooltiptext = Salva in { -pocket-brand-name }
+
+## Repair text encoding toolbar button
+
+repair-text-encoding-button =
+  .label = Correggi codifica testo
+  .tooltiptext = Cerca di identificare la codifica testo corretta in base al contenuto della pagina
 
 ## Customize Toolbar Buttons
 

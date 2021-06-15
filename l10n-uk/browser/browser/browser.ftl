@@ -183,8 +183,6 @@ page-action-send-tabs-urlbar =
             [few] Надіслати { $tabCount } вкладки на пристрій
            *[many] Надіслати { $tabCount } вкладок на пристрій
         }
-page-action-pocket-panel =
-    .label = Зберегти сторінку в { -pocket-brand-name }
 page-action-copy-url-panel =
     .label = Копіювати посилання
 page-action-copy-url-urlbar =
@@ -445,6 +443,8 @@ popup-select-microphone-device =
     .accesskey = М
 popup-select-microphone-icon =
     .tooltiptext = Мікрофон
+popup-select-speaker-icon =
+    .tooltiptext = Динаміки
 popup-all-windows-shared = Надасться доступ до всіх видимих вікон на вашому екрані.
 popup-screen-sharing-not-now =
     .label = Не зараз
@@ -618,8 +618,6 @@ crashed-subframe-submit =
 
 ## Bookmarks panels, menus and toolbar
 
-bookmarks-show-all-bookmarks =
-    .label = Показати всі закладки
 bookmarks-manage-bookmarks =
     .label = Керувати закладками
 bookmarks-recent-bookmarks-panel-subheader = Недавні закладки
@@ -692,6 +690,12 @@ library-recent-activity-title =
 save-to-pocket-button =
     .label = Зберегти в { -pocket-brand-name }
     .tooltiptext = Зберегти в { -pocket-brand-name }
+
+## Repair text encoding toolbar button
+
+repair-text-encoding-button =
+    .label = Виправити кодування тексту
+    .tooltiptext = Вгадувати правильне кодування тексту із вмісту сторінки
 
 ## Customize Toolbar Buttons
 

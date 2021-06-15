@@ -185,8 +185,6 @@ page-action-send-tabs-urlbar =
             [few] { $tabCount } rejtariki na rěd pósłaś
            *[other] { $tabCount } rejtarikow na rěd pósłaś
         }
-page-action-pocket-panel =
-    .label = Bok do { -pocket-brand-name } składowaś
 page-action-copy-url-panel =
     .label = Wótkaz kopěrowaś
 page-action-copy-url-urlbar =
@@ -454,6 +452,8 @@ popup-select-microphone-device =
     .accesskey = M
 popup-select-microphone-icon =
     .tooltiptext = Mikrofon
+popup-select-speaker-icon =
+    .tooltiptext = Awdiowudawańske rědy
 popup-all-windows-shared = Wšykne widobne wokna na wašej wobrazowce budu se źěliś.
 popup-screen-sharing-not-now =
     .label = Nic něnto
@@ -561,7 +561,7 @@ urlbar-result-action-search-in-private = W priwatnem woknje pytaś
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = Z { $engine } pytaś
-urlbar-result-action-sponsored = Sponsorowany
+urlbar-result-action-sponsored = Sponserowany
 urlbar-result-action-switch-tab = K rejtarikoju pśejś
 urlbar-result-action-visit = Woglědaś se
 # Directs a user to press the Tab key to perform a search with the specified
@@ -627,8 +627,6 @@ crashed-subframe-submit =
 
 ## Bookmarks panels, menus and toolbar
 
-bookmarks-show-all-bookmarks =
-    .label = Wše cytańske znamjenja pokazaś
 bookmarks-manage-bookmarks =
     .label = Cytańske znamjenja zastojaś
 bookmarks-recent-bookmarks-panel-subheader = Nejnowše cytańske znamjenja
@@ -701,6 +699,12 @@ library-recent-activity-title =
 save-to-pocket-button =
     .label = Pla { -pocket-brand-name } składowaś
     .tooltiptext = Pla { -pocket-brand-name } składowaś
+
+## Repair text encoding toolbar button
+
+repair-text-encoding-button =
+    .label = Tekstowe koděrowanje reparěrowaś
+    .tooltiptext = Korektne tekstowe koděrowanje z wopśimjeśa boka wugódaś
 
 ## Customize Toolbar Buttons
 

@@ -180,7 +180,7 @@ onboarding-multistage-pin-default-subtitle = Un navigation rapide, secur e priva
 onboarding-multistage-pin-default-waiting-subtitle = Elige { -brand-short-name } in le navigatores web al apertura de tu parametros
 # The "settings" here refers to "Windows 10 Settings App" and not the browser's
 onboarding-multistage-pin-default-help-text = Isto appunctara { -brand-short-name } al barra de activitates e aperira le parametros
-onboarding-multistage-pin-default-primary-button-label = Render { -brand-short-name } mi navigator primari
+onboarding-multistage-pin-default-primary-button-label = Facer de { -brand-short-name } mi navigator primari
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "more" should stay inside the span.
 onboarding-multistage-import-header = Importa contrasignos, marcapaginas e <span data-l10n-name="zap">plus</span>
@@ -267,15 +267,52 @@ onboarding-multistage-theme-description-alpenglow =
 mr1-welcome-screen-hero-text = Que nos comencia ci
 # Caption for background image in about:welcome. "Soraya Osorio" is the name
 # of the person and shouldn't be translated.
+# In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
+# You can see the picture in about:welcome in Nightly 90.
 mr1-onboarding-welcome-image-caption = Soraya Osorio — Designer de mobiles, fan de Firefox
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Disactivar le animationes
+
+## Title and primary button strings differ between platforms as they
+## match the OS' application context menu item action where Windows uses "pin"
+## and "taskbar" while macOS "keep" and "Dock" (proper noun).
+
+# Title used on welcome page when Firefox is not pinned
+mr1-onboarding-pin-header =
+    { PLATFORM() ->
+        [macos] Mantener { -brand-short-name } in tu Dock pro accesso facile
+       *[other] Fixar { -brand-short-name } a tu barra de activitates pro accesso facile
+    }
+# Primary button string used on welcome page when Firefox is not pinned.
+mr1-onboarding-pin-primary-button-label =
+    { PLATFORM() ->
+        [macos] Mantener in le Dock
+       *[other] Fixar al barra de activitates
+    }
+
+## Multistage MR1 onboarding strings (about:welcome pages)
+
+# This string will be used on welcome page primary button label
+# when Firefox is both pinned and default
+mr1-onboarding-get-started-primary-button-label = Comenciar
 mr1-onboarding-welcome-header = Benvenite a { -brand-short-name }
 mr1-onboarding-set-default-pin-primary-button-label = Render { -brand-short-name } mi navigator principal
     .title = Stabili { -brand-short-name } como navigator predefinite e lo adde al barra del applicationes
-mr1-onboarding-set-default-only-primary-button-label = Render { -brand-short-name } mi navigator primari?
+# This string will be used on welcome page primary button label
+# when Firefox is not default but already pinned
+mr1-onboarding-set-default-only-primary-button-label = Facer de { -brand-short-name } mi navigator primari?
 mr1-onboarding-set-default-secondary-button-label = Non ora
 mr1-onboarding-sign-in-button-label = Aperir session
+
+## Title, subtitle and primary button string used on set default onboarding screen
+## when Firefox is not default browser
+
+mr1-onboarding-default-header = Rende { -brand-short-name } tu predefinite
+mr1-onboarding-default-subtitle = Pone in autopilota velocitate, securitate e confidentialitate.
+mr1-onboarding-default-primary-button-label = Render predefinite le navigator
+
+## Multistage MR1 onboarding strings (about:welcome pages)
+
 mr1-onboarding-import-header = Porta toto con te
 mr1-onboarding-import-subtitle = Importa tu contrasignos, <br/>marcapaginas e multo plus.
 # The primary import button label will depend on whether we can detect which browser was used to download Firefox.

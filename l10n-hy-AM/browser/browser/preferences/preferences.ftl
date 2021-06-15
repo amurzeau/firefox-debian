@@ -49,7 +49,6 @@ category-experimental =
     .tooltiptext = { -brand-short-name } Փորձեր
 pane-experimental-subtitle = Շարունակեք զգուշորեն
 pane-experimental-search-results-header = { -brand-short-name }-ի փորձեր. զգուշությամբ շարունակեք
-pane-experimental-description = Նախապատվությունների ընդլայնված կազմաձևի փոփոխումը կարող է ազդել { -brand-short-name }-ի արդյունավետության կամ անվտանգության վրա:
 help-button-label = { -brand-short-name }-ի աջակցում
 addons-button-label = Ընդլայնումներ և Ոճեր
 focus-search =
@@ -313,7 +312,7 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 # Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
-    .label = Օգտագործել { $plugin-name } ({ -brand-short-name }-ում)
+    .label = Օգտագործել { $plugin-name }-ը ({ -brand-short-name })-ում
 applications-open-inapp =
     .label = Բացել { -brand-short-name }-ում
 
@@ -605,6 +604,9 @@ sync-signedout-description = Համաժամեցրեք ձեր բոլոր էջան
 sync-signedout-account-signin2 =
     .label = Մուտք գործել { -sync-brand-short-name }…
     .accesskey = i
+sync-signedout-account-signin3 =
+    .label = Մուտք գործեք՝ համաժամեցնելու համար…
+    .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -657,8 +659,8 @@ sync-currently-syncing-history = Պատմություն
 sync-currently-syncing-tabs = Բացել ներդիրները
 sync-currently-syncing-logins-passwords = Մուտքանուններ և գաղտնաբառեր
 sync-currently-syncing-addresses = Հասցեներ
-sync-currently-syncing-creditcards = Վարկային քարտեր
-sync-currently-syncing-addons = Հավելասարքեր
+sync-currently-syncing-creditcards = Բանկային քարտեր
+sync-currently-syncing-addons = Հավելումներ
 sync-currently-syncing-prefs =
     { PLATFORM() ->
         [windows] Ընտրանքներ
@@ -700,7 +702,7 @@ sync-engine-creditcards =
     .tooltiptext = Անուններ, համարներ և սպառման ամսաթվեր (միայն դեսքթոփում)
     .accesskey = C
 sync-engine-addons =
-    .label = Հավելումները
+    .label = Հավելումներ
     .tooltiptext = Ընդլայնումներ և ոճեր Firefox-ի համար
     .accesskey = Հ
 sync-engine-prefs =
@@ -899,6 +901,10 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Բացել ներդիրները
     .accesskey = Բ
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Դյուրանցումներ
+    .accesskey = S
 addressbar-locbar-topsites-option =
     .label = Լավագույն կայքեր
     .accesskey = T

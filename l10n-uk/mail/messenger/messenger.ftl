@@ -17,6 +17,9 @@ about-rights-notification-text = { -brand-short-name } є вільним про�
 addons-and-themes-button =
     .label = Додатки й теми
     .tooltip = Керування вашими додатками
+redirect-msg-button =
+    .label = Переслати
+    .tooltiptext = Переслати вибране повідомлення
 
 ## Folder Pane
 
@@ -51,6 +54,12 @@ folder-toolbar-toggle-folder-compact-view =
     .label = Компактне подання
     .accesskey = К
 
+## Menu
+
+redirect-msg-menuitem =
+    .label = Переслати
+    .accesskey = П
+
 ## AppMenu
 
 # Since v89 we dropped the platforms distinction between Options or Preferences
@@ -65,6 +74,18 @@ appmenu-help-exit-troubleshoot-mode =
     .label = Вимкнути режим усунення проблем
 appmenu-help-more-troubleshooting-info =
     .label = Додаткові відомості про усунення проблем
+appmenu-redirect-msg =
+    .label = Переслати
+
+## Context menu
+
+context-menu-redirect-msg =
+    .label = Переслати
+
+## Message header pane
+
+other-action-redirect-msg =
+    .label = Переслати
 
 ## Action Button Context Menu
 
@@ -89,3 +110,9 @@ message-header-address-not-in-address-book-icon =
 addon-removal-title = Вилучити { $name }?
 addon-removal-confirmation-button = Вилучити
 addon-removal-confirmation-message = Вилучити { $name }, а також його конфігурацію та дані з { -brand-short-name }?
+caret-browsing-prompt-title = Перегляд з курсором.
+caret-browsing-prompt-text = Натискання F7 вмикає та вимикає Перегляд з курсором. Це дає можливість помістити рухомий курсор на певний вміст, дозволяючи вам вибирати блоки тексту клавіатурою. Хочете увімкнути Перегляд з курсором?
+caret-browsing-prompt-check-text = Більше не питати.
+repair-text-encoding-button =
+    .label = Відновити кодування тексту
+    .tooltiptext = Вгадувати правильне кодування тексту із вмісту повідомлення

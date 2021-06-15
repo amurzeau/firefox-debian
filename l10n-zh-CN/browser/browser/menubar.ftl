@@ -173,6 +173,9 @@ menu-view-page-basic-style =
 menu-view-charset =
     .label = 文字编码
     .accesskey = c
+menu-view-repair-text-encoding =
+    .label = 修复文字编码
+    .accesskey = c
 
 ## These should match what Safari and other Apple applications
 ## use on macOS.
@@ -227,6 +230,8 @@ menu-bookmarks-show-all =
     .label = 管理所有书签
 menu-bookmark-this-page =
     .label = 为此页添加书签
+menu-bookmarks-manage =
+    .label = 管理书签
 menu-bookmark-current-tab =
     .label = 将当前标签页加入书签
 menu-bookmark-edit =
@@ -254,15 +259,15 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = 登录到 { -brand-product-name }…
     .accesskey = g
+menu-tools-turn-on-sync =
+    .label = 开启{ -sync-brand-short-name }…
+    .accesskey = n
 menu-tools-addons-and-themes =
     .label = 扩展和主题
     .accesskey = A
 menu-tools-fxa-sign-in2 =
     .label = 登录
     .accesskey = g
-menu-tools-turn-on-sync =
-    .label = 开启{ -sync-brand-short-name }…
-    .accesskey = n
 menu-tools-turn-on-sync2 =
     .label = 开启同步…
     .accesskey = n
@@ -287,13 +292,6 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = 页面信息
     .accesskey = I
-menu-settings =
-    .label = 设置
-    .accesskey =
-        { PLATFORM() ->
-            [windows] S
-           *[other] n
-        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -303,6 +301,13 @@ menu-preferences =
     .accesskey =
         { PLATFORM() ->
             [windows] O
+           *[other] n
+        }
+menu-settings =
+    .label = 设置
+    .accesskey =
+        { PLATFORM() ->
+            [windows] S
            *[other] n
         }
 menu-tools-layout-debugger =
@@ -342,14 +347,12 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = 键盘快捷键
     .accesskey = K
-menu-get-help =
-    .label = 获取帮助
-    .accesskey = H
 menu-help-troubleshooting-info =
     .label = 故障排除信息
     .accesskey = T
-menu-help-taskmanager =
-    .label = 任务管理器
+menu-get-help =
+    .label = 获取帮助
+    .accesskey = H
 menu-help-more-troubleshooting-info =
     .label = 更多故障排除信息
     .accesskey = T

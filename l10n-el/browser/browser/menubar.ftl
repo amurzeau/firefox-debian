@@ -173,6 +173,9 @@ menu-view-page-basic-style =
 menu-view-charset =
     .label = Κωδικοποίηση κειμένου
     .accesskey = κ
+menu-view-repair-text-encoding =
+    .label = Επιδιόρθωση κωδικοποίησης κειμένου
+    .accesskey = δ
 
 ## These should match what Safari and other Apple applications
 ## use on macOS.
@@ -227,6 +230,8 @@ menu-bookmarks-show-all =
     .label = Προβολή όλων των σελιδοδεικτών
 menu-bookmark-this-page =
     .label = Δημιουργία σελιδοδείκτη
+menu-bookmarks-manage =
+    .label = Διαχείριση σελιδοδεικτών
 menu-bookmark-current-tab =
     .label = Προσθήκη καρτέλας στους σελιδοδείκτες
 menu-bookmark-edit =
@@ -254,15 +259,15 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Σύνδεση στο { -brand-product-name }…
     .accesskey = δ
+menu-tools-turn-on-sync =
+    .label = Ενεργοποίηση { -sync-brand-short-name }…
+    .accesskey = ρ
 menu-tools-addons-and-themes =
     .label = Πρόσθετα και θέματα
     .accesskey = Π
 menu-tools-fxa-sign-in2 =
     .label = Σύνδεση
     .accesskey = δ
-menu-tools-turn-on-sync =
-    .label = Ενεργοποίηση { -sync-brand-short-name }…
-    .accesskey = ρ
 menu-tools-turn-on-sync2 =
     .label = Ενεργοποίηση Sync…
     .accesskey = ν
@@ -287,13 +292,6 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Πληροφορίες σελίδας
     .accesskey = λ
-menu-settings =
-    .label = Ρυθμίσεις
-    .accesskey =
-        { PLATFORM() ->
-            [windows] Ρ
-           *[other] θ
-        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -304,6 +302,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] Ε
            *[other] μ
+        }
+menu-settings =
+    .label = Ρυθμίσεις
+    .accesskey =
+        { PLATFORM() ->
+            [windows] Ρ
+           *[other] θ
         }
 menu-tools-layout-debugger =
     .label = Έλεγχος σφαλμάτων διάταξης

@@ -181,8 +181,6 @@ page-action-send-tabs-urlbar =
             [one] Skicka flik till enhet
            *[other] Skicka { $tabCount } flikar till enhet
         }
-page-action-pocket-panel =
-    .label = Spara sida till { -pocket-brand-name }
 page-action-copy-url-panel =
     .label = Kopiera länk
 page-action-copy-url-urlbar =
@@ -439,6 +437,8 @@ popup-select-microphone-device =
     .accesskey = M
 popup-select-microphone-icon =
     .tooltiptext = Mikrofon
+popup-select-speaker-icon =
+    .tooltiptext = Ljudenhet
 popup-all-windows-shared = Alla synliga fönster på din skärm kommer att delas.
 popup-screen-sharing-not-now =
     .label = Inte nu
@@ -612,8 +612,6 @@ crashed-subframe-submit =
 
 ## Bookmarks panels, menus and toolbar
 
-bookmarks-show-all-bookmarks =
-    .label = Visa alla bokmärken
 bookmarks-manage-bookmarks =
     .label = Hantera bokmärken
 bookmarks-recent-bookmarks-panel-subheader = Senaste bokmärken
@@ -686,6 +684,12 @@ library-recent-activity-title =
 save-to-pocket-button =
     .label = Spara till { -pocket-brand-name }
     .tooltiptext = Spara till { -pocket-brand-name }
+
+## Repair text encoding toolbar button
+
+repair-text-encoding-button =
+    .label = Reparera textkodning
+    .tooltiptext = Gissa korrekt textkodning från sidinnehåll
 
 ## Customize Toolbar Buttons
 

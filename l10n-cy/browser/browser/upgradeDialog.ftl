@@ -32,12 +32,42 @@ upgrade-dialog-new-secondary-button = Nid nawr
 # theme selection screen.
 upgrade-dialog-new-primary-win7-button = Iawn, rwy'n deall!
 
+## Pin Firefox screen
+##
+## These title, subtitle and button strings differ between platforms as they
+## match the OS' application context menu item action where Windows uses "pin"
+## and "taskbar" while macOS "keep" and "Dock" (proper noun).
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-pin-title =
+    { PLATFORM() ->
+        [macos] Cadw { -brand-short-name } yn eich Doc
+       *[other] Pinio { -brand-short-name } i'ch bar tasgau
+    }
+# The English macOS string avoids repeating "Keep" a third time, so if your
+# translations don't repeat anyway, the same string can be used cross-platform.
+upgrade-dialog-pin-subtitle =
+    { PLATFORM() ->
+        [macos] Cal mynediad hawdd i'r { -brand-short-name } diweddaraf.
+       *[other] Cadw'r { -brand-short-name } diweddaraf un o fewn cyrraedd.
+    }
+upgrade-dialog-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Cadw yn y Doc
+       *[other] Pinio i'r bar tasgau
+    }
+upgrade-dialog-pin-secondary-button = Nid nawr
+
 ## Default browser screen
 
 # This title can be explicitly wrapped to control which words are on which line.
 upgrade-dialog-default-title = Gwneud { -brand-short-name } eich prif borwr?
 upgrade-dialog-default-subtitle = Cael cyflymder, diogelwch a phreifatrwydd bob tro y byddwch chi'n pori.
 upgrade-dialog-default-primary-button = Gosod fel y porwr ragosodedig
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-default-title-2 = Gwneud { -brand-short-name } eich prif borwr
+upgrade-dialog-default-subtitle-2 = Rhowch gyflymder, diogelwch a phreifatrwydd ar awtobeilot.
+upgrade-dialog-default-primary-button-2 = Ei wneud eich prif borwr
 upgrade-dialog-default-secondary-button = Nid nawr
 
 ## Theme selection screen
@@ -46,6 +76,8 @@ upgrade-dialog-default-secondary-button = Nid nawr
 upgrade-dialog-theme-title =
     Dechrau'n lân
     gyda thema wedi'i diweddaru
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-theme-title-2 = Dechrau'n lân gyda thema newydd sgleiniog
 upgrade-dialog-theme-system = Thema'r system
     .title = Dilyn botymau, dewislenni a ffenestri thema'r system weithredu
 upgrade-dialog-theme-light = Golau

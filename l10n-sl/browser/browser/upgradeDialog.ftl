@@ -16,8 +16,9 @@ upgrade-dialog-new-subtitle = Zasnovan, da vas pripelje na cilj – hitreje
 # should stay inside the span.
 upgrade-dialog-new-alt-subtitle = Za začetek naj bo <span data-l10n-name="zap">{ -brand-short-name }</span> oddaljen samo en klik
 upgrade-dialog-new-item-menu-title = Poenostavljena orodna vrstica in meniji
-upgrade-dialog-new-item-menu-description = Postavlja pomembne stvari v ospredje, da jih lažje najdete, ko jih potrebujete.
+upgrade-dialog-new-item-menu-description = Postavite pomembne stvari v ospredje, da jih lažje najdete, ko jih potrebujete.
 upgrade-dialog-new-item-tabs-title = Sodobni zavihki
+upgrade-dialog-new-item-tabs-description = Pregledno združuje vse informacije ter pomaga pri osredotočanju in premikanju.
 upgrade-dialog-new-item-icons-title = Sveže ikone in jasnejša sporočila
 upgrade-dialog-new-item-icons-description = Pomagajo vam najti pot skozi program z manj truda.
 upgrade-dialog-new-primary-primary-button = Nastavi { -brand-short-name } kot moj glavni brskalnik
@@ -31,12 +32,21 @@ upgrade-dialog-new-secondary-button = Ne zdaj
 # theme selection screen.
 upgrade-dialog-new-primary-win7-button = Razumem!
 
+## Pin Firefox screen
+##
+## These title, subtitle and button strings differ between platforms as they
+## match the OS' application context menu item action where Windows uses "pin"
+## and "taskbar" while macOS "keep" and "Dock" (proper noun).
+
+upgrade-dialog-pin-secondary-button = Ne zdaj
+
 ## Default browser screen
 
 # This title can be explicitly wrapped to control which words are on which line.
 upgrade-dialog-default-title = Želite nastaviti { -brand-short-name } za privzeti brskalnik?
 upgrade-dialog-default-subtitle = Izberite hitrost, varnost in zasebnost ob vsakem brskanju.
 upgrade-dialog-default-primary-button = Nastavi kot privzeti brskalnik
+upgrade-dialog-default-primary-button-2 = Nastavi kot privzeti brskalnik
 upgrade-dialog-default-secondary-button = Ne zdaj
 
 ## Theme selection screen
@@ -45,6 +55,8 @@ upgrade-dialog-default-secondary-button = Ne zdaj
 upgrade-dialog-theme-title =
     Začnite znova
     s posodobljeno temo
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-theme-title-2 = Začnite znova s svežo temo
 upgrade-dialog-theme-system = Sistemska tema
     .title = Sledi temi operacijskega sistema za gumbe, menije in okna
 upgrade-dialog-theme-light = Svetla

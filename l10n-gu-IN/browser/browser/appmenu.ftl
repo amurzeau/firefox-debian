@@ -10,6 +10,8 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = નવી ટૅબ
 appmenuitem-new-window =
     .label = નવી વિન્ડો
 appmenuitem-new-private-window =
@@ -42,32 +44,26 @@ whatsnew-panel-header = નવું શું છે
 
 ## History panel
 
+appmenu-restore-session =
+    .label = પહેલાનાં સત્રને પુન:સંગ્રહો
+appmenu-clear-history =
+    .label = તાજેતરનાં ઇતિહાસને સાફ કરો…
+appmenu-recent-history-subheader = છેલ્લો ઇતિહાસ
+appmenu-recently-closed-tabs =
+    .label = છેલ્લે બધ થયેલ ટૅબ્સ
+appmenu-recently-closed-windows =
+    .label = છેલ્લે બંધ થયેલ વિન્ડો
 
 ## Help panel
 
 appmenu-about =
     .label = { -brand-shorter-name } વિશે
     .accesskey = A
-appmenu-help-troubleshooting-info =
-    .label = મુશ્કેલીનિવારણ જાણકારી
-    .accesskey = T
-appmenu-help-taskmanager =
-    .label = કાર્ય વ્યવસ્થાપક
 appmenu-help-report-site-issue =
     .label = સાઇટ સમસ્યાનો અહેવાલ આપો…
 appmenu-help-feedback-page =
     .label = પ્રતિસાદને ઉમેરો…
     .accesskey = S
-
-## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
-## are mutually exclusive, so it's possible to use the same accesskey for both.
-
-appmenu-help-safe-mode-without-addons =
-    .label = નિષ્ક્રિય થયેલ ઍડ-ઑન સાથે પુન:શરૂ કરો…
-    .accesskey = R
-appmenu-help-safe-mode-with-addons =
-    .label = અડ-ઓન્સ સક્ષમ કારી અને પુનઃ પ્રારંભ કરો
-    .accesskey = R
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

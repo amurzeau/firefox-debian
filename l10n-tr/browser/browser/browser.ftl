@@ -181,8 +181,6 @@ page-action-send-tabs-urlbar =
             [one] Sekmeyi cihaza gönder
            *[other] { $tabCount } sekmeyi cihaza gönder
         }
-page-action-pocket-panel =
-    .label = Sayfayı { -pocket-brand-name }’a kaydet
 page-action-copy-url-panel =
     .label = Bağlantıyı kopyala
 page-action-copy-url-urlbar =
@@ -441,6 +439,8 @@ popup-select-microphone-device =
     .accesskey = M
 popup-select-microphone-icon =
     .tooltiptext = Mikrofon
+popup-select-speaker-icon =
+    .tooltiptext = Hoparlör
 popup-all-windows-shared = Ekranınızdaki tüm görünür pencereler paylaşılacaktır.
 popup-screen-sharing-not-now =
     .label = Daha sonra
@@ -614,8 +614,6 @@ crashed-subframe-submit =
 
 ## Bookmarks panels, menus and toolbar
 
-bookmarks-show-all-bookmarks =
-    .label = Tüm yer imlerini göster
 bookmarks-manage-bookmarks =
     .label = Yer imlerini yönet
 bookmarks-recent-bookmarks-panel-subheader = Son yer imleri
@@ -688,6 +686,12 @@ library-recent-activity-title =
 save-to-pocket-button =
     .label = { -pocket-brand-name }’a kaydet
     .tooltiptext = { -pocket-brand-name }’a kaydet
+
+## Repair text encoding toolbar button
+
+repair-text-encoding-button =
+    .label = Metin kodlamasını onar
+    .tooltiptext = Sayfa içeriğinden doğru metin kodlamasını tahmin et
 
 ## Customize Toolbar Buttons
 

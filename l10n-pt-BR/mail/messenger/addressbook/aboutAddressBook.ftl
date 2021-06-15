@@ -24,6 +24,8 @@ about-addressbook-books-context-properties =
     .label = Propriedades
 about-addressbook-books-context-synchronize =
     .label = Sincronizar
+about-addressbook-books-context-print =
+    .label = Imprimir…
 about-addressbook-books-context-delete =
     .label = Excluir
 
@@ -35,6 +37,8 @@ about-addressbook-search =
     .placeholder = Pesquisar { $name }
 about-addressbook-search-all =
     .placeholder = Pesquisar em todos os catálogos de endereços
+about-addressbook-sort-button =
+    .title = Alterar a ordem da lista
 about-addressbook-name-format-display =
     .label = Nome de exibição
 about-addressbook-name-format-firstlast =

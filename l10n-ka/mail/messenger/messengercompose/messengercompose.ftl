@@ -11,6 +11,9 @@ remove-address-row-type = { $type } ველის მოცილება
 remove-address-row-type-label =
     .tooltiptext = { $type } ველის მოცილება
 #   $type (String) - the type of the addressing row
+remove-address-row-button =
+    .title = { $type } ველის მოცილება
+#   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
@@ -158,3 +161,9 @@ many-public-recipients-bcc =
 many-public-recipients-ignore =
     .label = მიმღებების საჯაროდ დატოვება
     .accesskey = ჯ
+
+## Notifications
+
+# Variables:
+# $identity (string) - The name of the used identity, most likely an email address.
+compose-missing-identity-warning = გამგზავნის მისამართის შესაბამისი ვინაობა ვერ მოიძებნა. შეტყობინება გაიგზავნება გამგზავნის ველში მოცემული მისამართიდან და { $identity } ვინაობის პარამეტრებით.

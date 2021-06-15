@@ -16,6 +16,9 @@ about-rights-notification-text = { -brand-short-name }, tüm dünyadan binlerce 
 addons-and-themes-button =
     .label = Eklentiler ve temalar
     .tooltip = Eklentilerinizi yönetin
+redirect-msg-button =
+    .label = Yönlendir
+    .tooltiptext = Seçilen iletiyi yönlendir
 
 ## Folder Pane
 
@@ -50,6 +53,12 @@ folder-toolbar-toggle-folder-compact-view =
     .label = Yoğun görünüm
     .accesskey = Y
 
+## Menu
+
+redirect-msg-menuitem =
+    .label = Yönlendir
+    .accesskey = Y
+
 ## AppMenu
 
 # Since v89 we dropped the platforms distinction between Options or Preferences
@@ -64,6 +73,18 @@ appmenu-help-exit-troubleshoot-mode =
     .label = Sorun giderme modunu kapat
 appmenu-help-more-troubleshooting-info =
     .label = Sorun giderme bilgileri
+appmenu-redirect-msg =
+    .label = Yönlendir
+
+## Context menu
+
+context-menu-redirect-msg =
+    .label = Yönlendir
+
+## Message header pane
+
+other-action-redirect-msg =
+    .label = Yönlendir
 
 ## Action Button Context Menu
 
@@ -74,6 +95,13 @@ toolbar-context-menu-remove-extension =
     .label = Uzantıyı kaldır
     .accesskey = n
 
+## Message headers
+
+message-header-address-in-address-book-icon =
+    .alt = Bu adres, adres defterinde mevcut
+message-header-address-not-in-address-book-icon =
+    .alt = Bu adres, adres defterinde mevcut değil
+
 ## Add-on removal warning
 
 # Variables:
@@ -81,3 +109,8 @@ toolbar-context-menu-remove-extension =
 addon-removal-title = { $name } kaldırılsın mı?
 addon-removal-confirmation-button = Kaldır
 addon-removal-confirmation-message = { $name } ile birlikte yapılandırması ve verileri { -brand-short-name } uygulamasından kaldırılsın mı?
+caret-browsing-prompt-title = Klavye ile Gezinti
+caret-browsing-prompt-check-text = Tekrar sorma.
+repair-text-encoding-button =
+    .label = Metin kodlamasını onar
+    .tooltiptext = İleti içeriğinden doğru metin kodlamasını tahmin et

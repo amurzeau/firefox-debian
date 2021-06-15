@@ -11,6 +11,9 @@ remove-address-row-type = Polo typa { $type } wotstronić
 remove-address-row-type-label =
     .tooltiptext = Polo typa { $type } wotstronić
 #   $type (String) - the type of the addressing row
+remove-address-row-button =
+    .title = Polo typa { $type } wotstronić
+#   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
@@ -45,6 +48,9 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = Do schowaneje kopije přesunyć
     .accesskey = s
+pill-action-expand-list =
+    .label = Lisćinu pokazać
+    .accesskey = i
 
 # Attachment widget
 
@@ -172,3 +178,9 @@ many-public-recipients-bcc =
 many-public-recipients-ignore =
     .label = Přijimarjow zjawnych dźeržeć
     .accesskey = P
+
+## Notifications
+
+# Variables:
+# $identity (string) - The name of the used identity, most likely an email address.
+compose-missing-identity-warning = Jónkróćna identita, kotraž adresy wotpósłarja wotpowěduje, njeje so namakała. Powěsć so wužiwajo polo Wot a nastajenja z identity { $identity } pósćele.

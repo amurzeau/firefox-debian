@@ -5,12 +5,6 @@
 
 ## App Menu
 
-appmenuitem-update-banner2 =
-    .label-update-downloading = { -brand-shorter-name } eguneraketa deskargatzen
-    .label-update-available = Eguneraketa erabilgarri — deskargatu orain
-    .label-update-manual = Eguneraketa erabilgarri — deskargatu orain
-    .label-update-unsupported = Ezin da eguneratu
-    .label-update-restart = Eguneraketa erabilgarri — berrabiarazi orain
 appmenuitem-update-banner3 =
     .label-update-downloading = { -brand-shorter-name } eguneraketa deskargatzen
     .label-update-available = Eguneraketa erabilgarri — deskargatu orain
@@ -23,6 +17,8 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = Fitxa berria
 appmenuitem-new-window =
     .label = Leiho berria
 appmenuitem-new-private-window =
@@ -35,14 +31,6 @@ appmenuitem-find-in-page =
     .label = Bilatu orrian…
 appmenuitem-more-tools =
     .label = Tresna gehiago
-appmenuitem-exit =
-    .label = Irten
-appmenu-menu-button-closed =
-    .tooltiptext = Ireki aplikazio-menua
-    .label = { -brand-shorter-name }
-appmenu-menu-button-opened =
-    .tooltiptext = Itxi aplikazio-menua
-    .label = { -brand-shorter-name }
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -79,16 +67,12 @@ appmenu-remote-tabs-turn-on-sync =
     .label = Gaitu sinkronizazioa…
 appmenuitem-fxa-toolbar-sync-now2 = Sinkronizatu orain
 appmenuitem-fxa-manage-account = Kudeatu kontua
-appmenu-fxa-header =
-    .title = { -fxaccount-brand-name }
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
 appmenu-fxa-last-sync = Azken sinkronizazioa { $time }
     .label = Azken sinkronizazioa { $time }
-appmenu-fxa-sync-and-save-data =
-    .value = Sinkronizatu eta gorde datuak
 appmenu-fxa-sync-and-save-data2 = Sinkronizatu eta gorde datuak
 appmenu-fxa-signed-in-label = Hasi saioa
 appmenu-fxa-setup-sync =
@@ -153,6 +137,15 @@ appmenu-manage-history =
     .label = Kudeatu historia
 appmenu-reopen-all-tabs = Ireki berriro fitxa guztiak
 appmenu-reopen-all-windows = Ireki berriro leiho guztiak
+appmenu-restore-session =
+    .label = Berreskuratu aurreko saioa
+appmenu-clear-history =
+    .label = Garbitu azken historia…
+appmenu-recent-history-subheader = Azken historia
+appmenu-recently-closed-tabs =
+    .label = Itxitako azken fitxak
+appmenu-recently-closed-windows =
+    .label = Itxitako azken leihoak
 
 ## Help panel
 
@@ -200,3 +193,5 @@ appmenu-customizetoolbar =
 appmenu-taskmanager =
     .label = Ataza-kudeatzailea
 appmenu-developer-tools-subheader = Nabigatzailearen tresnak
+appmenu-developer-tools-extensions =
+    .label = Garatzaileentzako hedapenak

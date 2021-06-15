@@ -5,12 +5,6 @@
 
 ## App Menu
 
-appmenuitem-update-banner2 =
-    .label-update-downloading = ჩამოიტვირთება ახალი { -brand-shorter-name }
-    .label-update-available = განახლება ხელმისაწვდომია — ახლავე ჩამოტვირთვა
-    .label-update-manual = განახლება ხელმისაწვდომია — ახლავე ჩამოტვირთვა
-    .label-update-unsupported = განახლება ვერ ხერხდება
-    .label-update-restart = განახლება ხელმისაწვდომია — ახლავე გადატვირთვა
 appmenuitem-update-banner3 =
     .label-update-downloading = ჩამოიტვირთება ახალი { -brand-shorter-name }
     .label-update-available = განახლება ხელმისაწვდომია — ჩამოტვირთვა ახლავე
@@ -23,6 +17,8 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = ახალი ჩანართი
 appmenuitem-new-window =
     .label = ახალი ფანჯარა
 appmenuitem-new-private-window =
@@ -35,14 +31,6 @@ appmenuitem-find-in-page =
     .label = პოვნა გვერდზე...
 appmenuitem-more-tools =
     .label = სხვა ხელსაწყოები
-appmenuitem-exit =
-    .label = გასვლა
-appmenu-menu-button-closed =
-    .tooltiptext = პროგრამის მენიუს გახსნა
-    .label = { -brand-shorter-name }
-appmenu-menu-button-opened =
-    .tooltiptext = პროგრამის მენიუს დახურვა
-    .label = { -brand-shorter-name }
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -79,16 +67,12 @@ appmenu-remote-tabs-turn-on-sync =
     .label = დასინქრონების ჩართვა…
 appmenuitem-fxa-toolbar-sync-now2 = დასინქრონება ახლავე
 appmenuitem-fxa-manage-account = ანგარიშის მართვა
-appmenu-fxa-header =
-    .title = { -fxaccount-brand-name }
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
 appmenu-fxa-last-sync = ბოლო დასინქრონება { $time }
     .label = ბოლო დასინქრონება { $time }
-appmenu-fxa-sync-and-save-data =
-    .value = დასინქრონება და შენახვა
 appmenu-fxa-sync-and-save-data2 = დასინქრონება და შენახვა
 appmenu-fxa-signed-in-label = შესვლა
 appmenu-fxa-setup-sync =
@@ -153,6 +137,15 @@ appmenu-manage-history =
     .label = ისტორიის მართვა
 appmenu-reopen-all-tabs = ყველა ჩანართის ხელახლა გახსნა
 appmenu-reopen-all-windows = ყველა ფანჯრის ხელახლა გახსნა
+appmenu-restore-session =
+    .label = წინა სეანსის აღდგენა
+appmenu-clear-history =
+    .label = უახლესი ისტორიის გასუფთავება…
+appmenu-recent-history-subheader = უახლესი ისტორია
+appmenu-recently-closed-tabs =
+    .label = ბოლოს დახურული ჩანართები
+appmenu-recently-closed-windows =
+    .label = ბოლოს დახურული ფანჯრები
 
 ## Help panel
 
@@ -200,3 +193,5 @@ appmenu-customizetoolbar =
 appmenu-taskmanager =
     .label = ამოცანათა მმართველი
 appmenu-developer-tools-subheader = ბრაუზერის ხელსაწყოები
+appmenu-developer-tools-extensions =
+    .label = Extensions for Developers

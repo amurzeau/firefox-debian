@@ -5,28 +5,32 @@
 
 ## App Menu
 
-appmenuitem-update-banner =
-    .label-update-downloading = Ներբեռնել { -brand-shorter-name }-ի թարմացումը
 appmenuitem-protection-dashboard-title = Պաշտպանության վահանակ
 appmenuitem-customize-mode =
     .label = Հարմարեցնել…
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = Նոր Ներդիր
 appmenuitem-new-window =
     .label = Նոր Պատուհան
 appmenuitem-new-private-window =
     .label = Սկսել Գաղտնի դիտարկում
 appmenuitem-passwords =
     .label = Գաղտնաբառեր
-appmenuitem-extensions-and-themes =
-    .label = Ընդլայնումներ և Ոճեր
+appmenuitem-addons-and-themes =
+    .label = Հավելումներ և ոճեր
 appmenuitem-find-in-page =
     .label = Գտնել էջում…
 appmenuitem-more-tools =
     .label = Լրացուցիչ գործիքներ
-appmenuitem-exit =
-    .label = Փակել
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Դուրս գալ
+           *[other] Փակել
+        }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -44,10 +48,9 @@ appmenuitem-fullscreen =
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
-    .label = Սինք
+    .label = Համաժամեցնել
+appmenuitem-fxa-toolbar-sync-now2 = Համաժամեցնել
 appmenuitem-fxa-manage-account = Կառավարել հաշիվը
-appmenu-fxa-header =
-    .title = { -fxaccount-brand-name }
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 appmenu-fxa-signed-in-label = Մուտք գործել
 appmenuitem-save-page =
@@ -97,6 +100,15 @@ profiler-popup-capture-shortcut =
 
 ## History panel
 
+appmenu-restore-session =
+    .label = Վերականգնել նախորդ աշխատաշրջանը
+appmenu-clear-history =
+    .label = Մաքրել Վերջին Պատմությունը...
+appmenu-recent-history-subheader = Վերջին պատմությունը
+appmenu-recently-closed-tabs =
+    .label = Վերջին փակված ներդիրները
+appmenu-recently-closed-windows =
+    .label = Վերջին փակված պատուհանները
 
 ## Help panel
 
@@ -106,26 +118,11 @@ appmenu-about =
 appmenu-get-help =
     .label = Ստանալ օգնություն
     .accesskey = H
-appmenu-help-troubleshooting-info =
-    .label = Անսարքության տեղեկատվություն
-    .accesskey = Ա
-appmenu-help-taskmanager =
-    .label = Առաջադրանքների ղեկավար
 appmenu-help-report-site-issue =
     .label = Զեկուցել կայքի խնդրի մասին…
 appmenu-help-feedback-page =
     .label = Ուղարկել արձագանք…
     .accesskey = Ո
-
-## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
-## are mutually exclusive, so it's possible to use the same accesskey for both.
-
-appmenu-help-safe-mode-without-addons =
-    .label = Վերամեկնարկել՝ անջատելով հավելումները…
-    .accesskey = Վ
-appmenu-help-safe-mode-with-addons =
-    .label = Վերամեկնարկել՝ միացնելով հավելումները
-    .accesskey = Վ
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
@@ -146,5 +143,10 @@ appmenu-help-not-deceptive =
 
 ## More Tools
 
+appmenu-customizetoolbar =
+    .label = Հարմարեցնել Գործիքագոտին...
 appmenu-taskmanager =
-    .label = Առաջադրանքների ղեկավար
+    .label = Խնդիրների կառավար
+appmenu-developer-tools-subheader = Զննարկչի գործիքներ
+appmenu-developer-tools-extensions =
+    .label = Ընդլայնումներ մշակողների համար

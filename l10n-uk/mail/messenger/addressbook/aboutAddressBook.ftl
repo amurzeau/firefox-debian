@@ -24,6 +24,8 @@ about-addressbook-books-context-properties =
     .label = Властивості
 about-addressbook-books-context-synchronize =
     .label = Синхронізувати
+about-addressbook-books-context-print =
+    .label = Друкувати…
 about-addressbook-books-context-delete =
     .label = Видалити
 
@@ -35,6 +37,8 @@ about-addressbook-search =
     .placeholder = Пошук { $name }
 about-addressbook-search-all =
     .placeholder = Пошук у всіх адресних книгах
+about-addressbook-sort-button =
+    .title = Змінити порядок списку
 about-addressbook-name-format-display =
     .label = Ім'я для показу
 about-addressbook-name-format-firstlast =

@@ -20,7 +20,6 @@ account-setup-name-input =
     .placeholder = Fulano
 account-setup-name-info-icon =
     .title = Seu nome, como será mostrado aos outros
-account-setup-name-warning = Digite seu nome
 account-setup-name-warning-icon =
     .title = { account-setup-name-warning }
 account-setup-email-label = Endereço de email
@@ -29,7 +28,6 @@ account-setup-email-input =
     .placeholder = fulano@example.com
 account-setup-email-info-icon =
     .title = Seu endereço de email existente
-account-setup-email-warning = Endereço de email inválido
 account-setup-email-warning-icon =
     .title = { account-setup-email-warning }
 account-setup-password-label = Senha
@@ -108,7 +106,13 @@ account-setup-forum-help = Fórum de suporte
 
 ## Results area
 
-account-setup-protocol-title = Selecione o protocolo
+# Variables:
+#  $count (Number) - Number of available protocols.
+account-setup-results-area-title =
+    { $count ->
+        [one] Configuração disponível
+       *[other] Configurações disponíveis
+    }
 # Note: IMAP is the name of a protocol.
 account-setup-result-imap = IMAP
 account-setup-result-imap-description = Mantém suas pastas e emails sincronizados em seu servidor
@@ -122,6 +126,15 @@ account-setup-incoming-title = Recebimento
 account-setup-outgoing-title = Envio
 account-setup-username-title = Nome de usuário
 account-setup-exchange-title = Servidor
+account-setup-result-smtp = SMTP
+account-setup-result-no-encryption = Sem criptografia
+account-setup-result-ssl = SSL/TLS
+account-setup-result-starttls = STARTTLS
+account-setup-result-outgoing-existing = Usar um servidor de envio SMTP já existente
+# Variables:
+#  $incoming (String): The email/username used to log into the incoming server
+#  $outgoing (String): The email/username used to log into the outgoing server
+account-setup-result-username-different = Recebimento: { $incoming }, Envio: { $outgoing }
 
 ## Error messages
 
@@ -131,32 +144,70 @@ account-setup-credentials-wrong = Falha na autenticação. Verifique o nome de u
 account-setup-find-settings-failed = O { -brand-short-name } não conseguiu encontrar as configurações de sua conta de email
 account-setup-exchange-config-unverifiable = A configuração não pôde ser verificada. Se o nome de usuário e a senha estão corretos, é provável que o administrador do servidor tenha desativado a configuração selecionada em sua conta. Experimente selecionando outro protocolo.
 
-## Manual config area
+## Manual configuration area
 
 account-setup-manual-config-title = Configurações do servidor
-account-setup-incoming-protocol-label = Protocolo de recebimento
+account-setup-incoming-server-legend = Servidor de recebimento
+account-setup-protocol-label = Protocolo:
 protocol-imap-option = { account-setup-result-imap }
 protocol-pop-option = { account-setup-result-pop }
-account-setup-outgoing-protocol-label = Protocolo de envio
-outgoing-protocol = SMTP
-account-setup-incoming-server-label = Servidor de recebimento
-account-setup-outgoing-server-label = Servidor de envio
-account-setup-incoming-port-label = Porto de recebimento
-account-setup-outoing-port-label = Porto de envio
-account-setup-incoming-ssl-label = SSL de recebimento
-account-setup-outgoing-ssl-label = SSL de envio
+protocol-exchange-option = { account-setup-result-exchange }
+account-setup-hostname-label = Servidor:
+account-setup-port-label = Porta:
+    .title = Defina o número da porta como 0 para detecção automática
+account-setup-auto-description = O { -brand-short-name } tentará detectar automaticamente os campos deixados vazios.
+account-setup-ssl-label = Segurança da conexão:
+account-setup-outgoing-server-legend = Servidores de envio
+
+## Incoming/Outgoing SSL Authentication options
+
 ssl-autodetect-option = Detectar automaticamente
+ssl-no-authentication-option = Sem autenticação
+ssl-cleartext-password-option = Senha normal
+ssl-encrypted-password-option = Senha criptografada
+
+## Incoming/Outgoing SSL options
+
 ssl-noencryption-option = Nenhum
-ssl-starttls-option = STARTTLS
-ssl-tls-option = SSL/TLS
-account-setup-incoming-auth-label = Autenticação de recebimento
-account-setup-outgoing-auth-label = Autenticação de envio
-account-setup-incoming-username-label = Nome de usuário de recebimento
-account-setup-outgoing-username-label = Nome de usuário de envio
+account-setup-auth-label = Método de autenticação:
+account-setup-username-label = Nome de usuário:
 account-setup-advanced-setup-button = Configuração avançada
     .accesskey = v
 
-## Warning insecure server
+## Warning insecure server dialog
 
+account-setup-insecure-title = Aviso!
+account-setup-insecure-incoming-title = Configuração de recebimento:
+account-setup-insecure-outgoing-title = Configuração de envio:
+# Variables:
+#  $server (String): The name of the hostname of the server the user was trying to connect to.
+account-setup-warning-cleartext = <b>{ $server }</b> não usa criptografia.
+account-setup-warning-cleartext-details = Servidores não seguros de email não usam conexões criptografadas para proteger suas senhas e informações privativas. Ao se conectar a este servidor, você pode expor essas informações.
 account-setup-insecure-server-checkbox = Eu entendo os riscos
     .accesskey = E
+account-setup-insecure-description = O { -brand-short-name } pode permitir configurar seu email usando as definições fornecidas. Entretanto, você deve entrar em contato com seu administrador ou provedor de email para falar a respeito dessas conexões impróprias. Veja mais informações nas <a data-l10n-name="thunderbird-faq-link">perguntas frequentes do Thunderbird</a>.
+insecure-dialog-cancel-button = Alterar configurações
+    .accesskey = A
+insecure-dialog-confirm-button = Confirmar
+    .accesskey = C
+
+## Warning Exchange confirmation dialog
+
+# Variables:
+#  $domain (String): The name of the server where the configuration was found, e.g. rackspace.com.
+exchange-dialog-question = O { -brand-short-name } encontrou informações de configuração da sua conta em { $domain }. Quer continuar e enviar suas credenciais?
+exchange-dialog-confirm-button = Entrar
+exchange-dialog-cancel-button = Cancelar
+
+## Alert dialogs
+
+account-setup-creation-error-title = Erro ao criar conta
+account-setup-error-server-exists = O servidor de recebimento já existe.
+account-setup-confirm-advanced-title = Confirmar configuração avançada
+account-setup-confirm-advanced-description = Este diálogo será fechado e será criada uma conta com a configuração atual, mesmo se a configuração estiver incorreta. Quer continuar?
+
+## Addon installation section
+
+account-setup-addon-install-title = Instalar
+account-setup-addon-install-intro = Uma extensão de terceiros pode permitir que você acesse sua conta de email neste servidor:
+account-setup-addon-no-protocol = Este servidor de email infelizmente não suporta protocolos abertos. { account-setup-addon-install-intro }

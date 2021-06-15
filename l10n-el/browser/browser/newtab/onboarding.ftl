@@ -263,15 +263,56 @@ onboarding-multistage-theme-description-alpenglow =
 # Firefox to pursue those passions, as well as the boldness in their
 # choice to use Firefox over a larger competitor browser.
 # An alternative title for localization is: "It starts here".
+# This text can be formatted to span multiple lines as needed.
 mr1-welcome-screen-hero-text = Η φωτιά ξεκινά εδώ
+# Caption for background image in about:welcome. "Soraya Osorio" is the name
+# of the person and shouldn't be translated.
+# In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
+# You can see the picture in about:welcome in Nightly 90.
+mr1-onboarding-welcome-image-caption = Soraya Osorio — Σχεδιάστρια επίπλων, υποστηρίκτρια του Firefox
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Απενεργοποίηση εφέ κίνησης
+
+## Title and primary button strings differ between platforms as they
+## match the OS' application context menu item action where Windows uses "pin"
+## and "taskbar" while macOS "keep" and "Dock" (proper noun).
+
+# Title used on welcome page when Firefox is not pinned
+mr1-onboarding-pin-header =
+    { PLATFORM() ->
+        [macos] Διατηρήστε το { -brand-short-name } στο Dock σας για εύκολη πρόσβαση
+       *[other] Καρφιτσώστε το { -brand-short-name } στη γραμμή εργασιών σας για εύκολη πρόσβαση
+    }
+# Primary button string used on welcome page when Firefox is not pinned.
+mr1-onboarding-pin-primary-button-label =
+    { PLATFORM() ->
+        [macos] Διατήρηση στο Dock
+       *[other] Καρφίτσωμα στη γραμμή εργασιών
+    }
+
+## Multistage MR1 onboarding strings (about:welcome pages)
+
+# This string will be used on welcome page primary button label
+# when Firefox is both pinned and default
+mr1-onboarding-get-started-primary-button-label = Έναρξη
 mr1-onboarding-welcome-header = Καλώς ορίσατε στο { -brand-short-name }
 mr1-onboarding-set-default-pin-primary-button-label = Ορισμός { -brand-short-name } ως κύριου φυλλομετρητή
     .title = Ορίζει το { -brand-short-name } ως το προεπιλεγμένο πρόγραμμα περιήγησης και το καρφιτσώνει στη γραμμή εργασιών
+# This string will be used on welcome page primary button label
+# when Firefox is not default but already pinned
 mr1-onboarding-set-default-only-primary-button-label = Ορισμός { -brand-short-name } ως προεπιλεγμένου φυλλομετρητή
 mr1-onboarding-set-default-secondary-button-label = Όχι τώρα
 mr1-onboarding-sign-in-button-label = Σύνδεση
+
+## Title, subtitle and primary button string used on set default onboarding screen
+## when Firefox is not default browser
+
+mr1-onboarding-default-header = Ορισμός { -brand-short-name } ως προεπιλογής
+mr1-onboarding-default-subtitle = Βάλτε την ταχύτητα, την ασφάλεια και το απόρρητο στον αυτόματο πιλότο.
+mr1-onboarding-default-primary-button-label = Ορισμός προεπιλεγμένου φυλλομετρητή
+
+## Multistage MR1 onboarding strings (about:welcome pages)
+
 mr1-onboarding-import-header = Μεταφέρετε όλα τα δεδομένα σας
 mr1-onboarding-import-subtitle = Εισάγετε κωδικούς πρόσβασης <br/>σελιδοδείκτες και πολλά άλλα.
 # The primary import button label will depend on whether we can detect which browser was used to download Firefox.

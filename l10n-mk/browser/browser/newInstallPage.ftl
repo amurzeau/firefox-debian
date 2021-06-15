@@ -10,10 +10,14 @@
 title = Важни Вести
 heading = Промени во вашиот профил со { -brand-short-name }
 changed-title = Што се промени?
+changed-desc-profiles = Оваа инсталација на { -brand-short-name } има нов профил. Профилот е збир на датотеки каде Firefox ги зачувува информациите како што се обележувачите, лозинките и корисничките параметри.
 options-title = Кои се моите опции?
+options-use-sync = Ако сакате сите податоци од вашиот профил да бидат исти за сите инсталации на Firefox, можете да користите { -fxaccount-brand-name } за да ги задржите во синхронизација.
 resources = Ресурси:
+sync-header = Најавете се или креирајте { -fxaccount-brand-name }
 sync-label = Внесете ја вашата е-пошта
 sync-input =
     .placeholder = Е-пошта
 sync-button = Продолжи
+sync-terms = Со продолжување, вие ги прифаќате <a data-l10n-name="terms"> Услови на услуга </a> и <a data-l10n-name="privacy"> Известување за приватност</a>.
 sync-learn = Дознајте повеќе

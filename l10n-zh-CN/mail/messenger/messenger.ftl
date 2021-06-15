@@ -15,6 +15,9 @@ about-rights-notification-text = { -brand-short-name } 是一款自由且开源�
 addons-and-themes-button =
     .label = 扩展和主题
     .tooltip = 管理您的附加组件
+redirect-msg-button =
+    .label = 重定向
+    .tooltiptext = 将选择的消息重定向
 
 ## Folder Pane
 
@@ -49,6 +52,12 @@ folder-toolbar-toggle-folder-compact-view =
     .label = 紧凑模式
     .accesskey = C
 
+## Menu
+
+redirect-msg-menuitem =
+    .label = 重定向
+    .accesskey = D
+
 ## AppMenu
 
 # Since v89 we dropped the platforms distinction between Options or Preferences
@@ -63,6 +72,18 @@ appmenu-help-exit-troubleshoot-mode =
     .label = 关闭故障排除模式
 appmenu-help-more-troubleshooting-info =
     .label = 更多排障信息
+appmenu-redirect-msg =
+    .label = 重定向
+
+## Context menu
+
+context-menu-redirect-msg =
+    .label = 重定向
+
+## Message header pane
+
+other-action-redirect-msg =
+    .label = 重定向
 
 ## Action Button Context Menu
 
@@ -87,3 +108,9 @@ message-header-address-not-in-address-book-icon =
 addon-removal-title = 要移除 { $name } 吗？
 addon-removal-confirmation-button = 移除
 addon-removal-confirmation-message = 要从 { -brand-short-name } 中移除 { $name } 及其配置和数据吗？
+caret-browsing-prompt-title = 光标浏览
+caret-browsing-prompt-text = 按 F7 来启用或禁用光标浏览。此功能将在某些内容中放置一个可移动的光标，以便您能使用键盘选择文本。您想要启用光标浏览吗？
+caret-browsing-prompt-check-text = 不再询问。
+repair-text-encoding-button =
+    .label = 修复文字编码
+    .tooltiptext = 根据消息内容猜测正确的文字编码

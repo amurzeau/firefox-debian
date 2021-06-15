@@ -5,12 +5,6 @@
 
 ## App Menu
 
-appmenuitem-update-banner2 =
-    .label-update-downloading = Lastar ned { -brand-shorter-name }-oppdatering
-    .label-update-available = Oppdatering tilgjengeleg — last ned no
-    .label-update-manual = Oppdatering tilgjengeleg — last ned no
-    .label-update-unsupported = Klarte ikkje å oppdatere
-    .label-update-restart = Oppdatering tilgjengeleg — start på nytt
 appmenuitem-update-banner3 =
     .label-update-downloading = Lastar ned { -brand-shorter-name }-oppdatering
     .label-update-available = Oppdatering tilgjengeleg — last ned no
@@ -23,6 +17,8 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = Ny fane
 appmenuitem-new-window =
     .label = Nytt vindauge
 appmenuitem-new-private-window =
@@ -35,14 +31,6 @@ appmenuitem-find-in-page =
     .label = Finn på sida…
 appmenuitem-more-tools =
     .label = Fleire verktøy
-appmenuitem-exit =
-    .label = Avslutt
-appmenu-menu-button-closed =
-    .tooltiptext = Opne program-meny
-    .label = { -brand-shorter-name }
-appmenu-menu-button-opened =
-    .tooltiptext = Lat att program-meny
-    .label = { -brand-shorter-name }
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -79,16 +67,12 @@ appmenu-remote-tabs-turn-on-sync =
     .label = Slå på Sync…
 appmenuitem-fxa-toolbar-sync-now2 = Synkroniser no
 appmenuitem-fxa-manage-account = Handter kontoen
-appmenu-fxa-header =
-    .title = { -fxaccount-brand-name }
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
 appmenu-fxa-last-sync = Sist synkronisert { $time }
     .label = Sist synkronisert { $time }
-appmenu-fxa-sync-and-save-data =
-    .value = Synkroniser og lagre data
 appmenu-fxa-sync-and-save-data2 = Synkroniser og lagre data
 appmenu-fxa-signed-in-label = Logg inn
 appmenu-fxa-setup-sync =
@@ -153,6 +137,15 @@ appmenu-manage-history =
     .label = Handter historikk
 appmenu-reopen-all-tabs = Opne alle faner på nytt
 appmenu-reopen-all-windows = Opne alle vindauge på nytt
+appmenu-restore-session =
+    .label = Bygg oppatt siste programøkt
+appmenu-clear-history =
+    .label = Tøm nyleg historikk…
+appmenu-recent-history-subheader = Nyleg historikk
+appmenu-recently-closed-tabs =
+    .label = Nyleg attlatne faner
+appmenu-recently-closed-windows =
+    .label = Nyleg attlatne vindauge
 
 ## Help panel
 
@@ -200,3 +193,5 @@ appmenu-customizetoolbar =
 appmenu-taskmanager =
     .label = Aktivitetshandterar
 appmenu-developer-tools-subheader = Nettlesarverktøy
+appmenu-developer-tools-extensions =
+    .label = Extensions for Developers

@@ -267,15 +267,56 @@ onboarding-multistage-theme-description-alpenglow =
 # Firefox to pursue those passions, as well as the boldness in their
 # choice to use Firefox over a larger competitor browser.
 # An alternative title for localization is: "It starts here".
+# This text can be formatted to span multiple lines as needed.
 mr1-welcome-screen-hero-text = O fogo começa aqui
+# Caption for background image in about:welcome. "Soraya Osorio" is the name
+# of the person and shouldn't be translated.
+# In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
+# You can see the picture in about:welcome in Nightly 90.
+mr1-onboarding-welcome-image-caption = Soraya Osorio - Designer de mobiliário, fã do Firefox
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Desativar as animações
+
+## Title and primary button strings differ between platforms as they
+## match the OS' application context menu item action where Windows uses "pin"
+## and "taskbar" while macOS "keep" and "Dock" (proper noun).
+
+# Title used on welcome page when Firefox is not pinned
+mr1-onboarding-pin-header =
+    { PLATFORM() ->
+        [macos] Mantenha o { -brand-short-name } na sua Doca para um acesso mais fácil
+       *[other] Fixe o { -brand-short-name } na sua barra de tarefas para um acesso mais fácil
+    }
+# Primary button string used on welcome page when Firefox is not pinned.
+mr1-onboarding-pin-primary-button-label =
+    { PLATFORM() ->
+        [macos] Manter na Doca
+       *[other] Fixar na barra de tarefas
+    }
+
+## Multistage MR1 onboarding strings (about:welcome pages)
+
+# This string will be used on welcome page primary button label
+# when Firefox is both pinned and default
+mr1-onboarding-get-started-primary-button-label = Começar
 mr1-onboarding-welcome-header = Bem-vindo(a) ao { -brand-short-name }
 mr1-onboarding-set-default-pin-primary-button-label = Definir o { -brand-short-name } como o meu navegador principal
     .title = Define o { -brand-short-name } como o navegador principal e fixa o mesmo à barra de tarefas
+# This string will be used on welcome page primary button label
+# when Firefox is not default but already pinned
 mr1-onboarding-set-default-only-primary-button-label = Definir o { -brand-short-name } no meu navegador principal
 mr1-onboarding-set-default-secondary-button-label = Agora não
 mr1-onboarding-sign-in-button-label = Iniciar sessão
+
+## Title, subtitle and primary button string used on set default onboarding screen
+## when Firefox is not default browser
+
+mr1-onboarding-default-header = Predefinir o { -brand-short-name }
+mr1-onboarding-default-subtitle = Coloque a velocidade, segurança e privacidade em piloto automático.
+mr1-onboarding-default-primary-button-label = Predefinir o navegador
+
+## Multistage MR1 onboarding strings (about:welcome pages)
+
 mr1-onboarding-import-header = Leve tudo consigo
 mr1-onboarding-import-subtitle = Importe as suas palavras-passe, <br/>marcadores e muito mais.
 # The primary import button label will depend on whether we can detect which browser was used to download Firefox.

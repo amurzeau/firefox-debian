@@ -6,10 +6,13 @@
 # Addressing widget
 
 #   $type (String) - the type of the addressing row
-remove-address-row-type = 移除 { $type } 字段
+remove-address-row-type = 移除 { $type } 栏
 #   $type (String) - the type of the addressing row
 remove-address-row-type-label =
-    .tooltiptext = 移除 { $type } 字段
+    .tooltiptext = 移除 { $type } 栏
+#   $type (String) - the type of the addressing row
+remove-address-row-button =
+    .title = 移除 { $type } 栏
 #   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
@@ -40,6 +43,9 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = 移动到“密送”
     .accesskey = b
+pill-action-expand-list =
+    .label = 展开列表
+    .accesskey = x
 
 # Attachment widget
 
@@ -155,3 +161,9 @@ many-public-recipients-bcc =
 many-public-recipients-ignore =
     .label = 保持收件人公开
     .accesskey = K
+
+## Notifications
+
+# Variables:
+# $identity (string) - The name of the used identity, most likely an email address.
+compose-missing-identity-warning = 找不到匹配发件人（From）地址的唯一身份。该邮件将使用当前 From 字段和 { $identity } 身份的设置发送。

@@ -181,8 +181,6 @@ page-action-send-tabs-urlbar =
             [one] Envia la pestanya a un dispositiu
            *[other] Envia { $tabCount } pestanyes a un dispositiu
         }
-page-action-pocket-panel =
-    .label = Desa la pàgina al { -pocket-brand-name }
 page-action-copy-url-panel =
     .label = Copia l'enllaç
 page-action-copy-url-urlbar =
@@ -247,6 +245,14 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Afegeix «{ $engineName }»
+    .tooltiptext = Afegeix el motor de cerca «{ $engineName }»
+    .aria-label = Afegeix el motor de cerca «{ $engineName }»
 # When more than 5 engines are offered by a web page, they are grouped in a
 # submenu using this as its label.
 search-one-offs-add-engine-menu =
@@ -306,6 +312,7 @@ identity-header-security-with-host =
     .title = Seguretat de la connexió per a { $host }
 identity-connection-not-secure = La connexió no és segura
 identity-connection-secure = Connexió segura
+identity-connection-failure = La connexió ha fallat
 identity-connection-internal = Aquesta és una pàgina del { -brand-short-name } segura.
 identity-connection-file = Aquesta pàgina està desada a l'ordinador.
 identity-extension-page = Aquesta pàgina s'ha carregat des d'una extensió.
@@ -330,6 +337,7 @@ identity-https-only-info-turn-off2 = Si sembla que la pàgina no funciona bé, p
 identity-https-only-info-no-upgrade = No s'ha pogut actualitzar la connexió des d'HTTP.
 identity-permissions-storage-access-header = Galetes entre llocs
 identity-permissions-storage-access-hint = Aquests subjectes poden utilitzar galetes entre llocs i dades del lloc mentre esteu en aquest lloc.
+identity-permissions-storage-access-learn-more = Més informació
 identity-permissions-reload-hint = Potser cal que actualitzeu la pàgina per aplicar els canvis.
 identity-permissions-empty = No heu donat cap permís especial a aquest lloc.
 identity-clear-site-data =
@@ -501,6 +509,11 @@ urlbar-placeholder-with-name =
     .placeholder = Cerqueu amb { $name } o escriviu una adreça
 urlbar-remote-control-notification-anchor =
     .tooltiptext = El navegador està sota control remot
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = El navegador està sota control remot (motiu: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Heu donat permisos addicionals a aquest lloc web.
 urlbar-switch-to-tab =
@@ -597,8 +610,6 @@ crashed-subframe-submit =
 
 ## Bookmarks panels, menus and toolbar
 
-bookmarks-show-all-bookmarks =
-    .label = Mostra totes les adreces d'interès
 bookmarks-manage-bookmarks =
     .label = Gestiona les adreces d'interès
 bookmarks-recent-bookmarks-panel-subheader = Adreces d'interès recents

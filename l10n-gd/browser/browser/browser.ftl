@@ -177,8 +177,6 @@ page-action-send-tabs-urlbar =
             [few] Cuir { $tabCount } tabaichean gun uidheam
            *[other] Cuir { $tabCount } taba gun uidheam
         }
-page-action-pocket-panel =
-    .label = Sàbhail an duilleag ann am { -pocket-brand-name }
 page-action-copy-url-panel =
     .label = Dèan lethbhreac dhen cheangal
 page-action-copy-url-urlbar =
@@ -423,8 +421,6 @@ crashed-subframe-learnmore-link =
 
 ## Bookmarks panels, menus and toolbar
 
-bookmarks-show-all-bookmarks =
-    .label = Seall a h-uile comharra-lìn
 bookmarks-toolbar-chevron =
     .tooltiptext = Tuilleadh chomharran-lìn
 bookmarks-sidebar-content =
@@ -445,6 +441,12 @@ bookmarks-tools-toolbar-visibility-menuitem =
     .label =
         { $isVisible ->
             [true] Falaich bàr-inneal nan comharra-lìn
+           *[other] Seall bàr nan comharra-lìn
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Falaich bàr nan comharra-lìn
            *[other] Seall bàr nan comharra-lìn
         }
 bookmarks-tools-menu-button-visibility =
@@ -484,6 +486,15 @@ save-to-pocket-button =
 toolbar-addons-themes-button =
     .label = Tuilleadain ’s ùrlaran
     .tooltiptext = Stiùirich na tuilleadain ’s ùrlaran agad ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Roghainnean
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Fosgail na roghainnean ({ $shortcut })
+           *[other] Fosgail na roghainnean
+        }
 
 ## More items
 
@@ -494,6 +505,7 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = Tha cuid dhen fhuaim no video air an làrach seo a' cleachdadh bathar-bog DRM agus dh'fhaoidte gun cuingich seo na 's urrainn dhut a dhèanamh leis ann am { -brand-short-name }.
+eme-notifications-drm-content-playing-manage = Stiùirich na roghainnean
 
 ## Password save/update panel
 

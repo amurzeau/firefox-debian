@@ -18,7 +18,7 @@ upgrade-dialog-new-alt-subtitle = Start med å gjere <span data-l10n-name="zap">
 upgrade-dialog-new-item-menu-title = Straumlinjeforma verktøylinje og menyar
 upgrade-dialog-new-item-menu-description = Prioriterer dei viktige tinga slik at du finn det du treng
 upgrade-dialog-new-item-tabs-title = Moderne faner
-upgrade-dialog-new-item-tabs-description = Inneheld tydleg informasjon, hjelper deg å fokusere og er lett å flytte rundt.
+upgrade-dialog-new-item-tabs-description = Inneheld tydeleg informasjon, hjelper deg å fokusere og er lett å flytte rundt.
 upgrade-dialog-new-item-icons-title = Nye ikon og tydelegare meldingar
 upgrade-dialog-new-item-icons-description = Hjelper deg med å finne vegen på ein lettare måte.
 upgrade-dialog-new-primary-primary-button = Vel { -brand-short-name } som primærnettlesar
@@ -32,12 +32,34 @@ upgrade-dialog-new-secondary-button = Ikkje no
 # theme selection screen.
 upgrade-dialog-new-primary-win7-button = OK, eg forstår!
 
+## Pin Firefox screen
+##
+## These title, subtitle and button strings differ between platforms as they
+## match the OS' application context menu item action where Windows uses "pin"
+## and "taskbar" while macOS "keep" and "Dock" (proper noun).
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-pin-title =
+    { PLATFORM() ->
+        [macos] Behald { -brand-short-name } i Dock
+       *[other] Fest { -brand-short-name } til oppgåvelinja
+    }
+upgrade-dialog-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Behald i Dock
+       *[other] Fest til oppgåvelinja
+    }
+upgrade-dialog-pin-secondary-button = Ikkje no
+
 ## Default browser screen
 
 # This title can be explicitly wrapped to control which words are on which line.
 upgrade-dialog-default-title = Bruke { -brand-short-name } som standardnettlesar?
 upgrade-dialog-default-subtitle = Få fart, sikkerheit og personvern kvar gong du surfar.
 upgrade-dialog-default-primary-button = Vel som standardnettlesar
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-default-title-2 = Bruk { -brand-short-name } som standardnettlesar
+upgrade-dialog-default-primary-button-2 = Bruk som standardnettlesar
 upgrade-dialog-default-secondary-button = Ikkje no
 
 ## Theme selection screen

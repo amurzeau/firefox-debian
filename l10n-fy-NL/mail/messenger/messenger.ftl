@@ -16,6 +16,9 @@ about-rights-notification-text = { -brand-short-name } is frije en iepenboarneso
 addons-and-themes-button =
     .label = Add-ons en tema's
     .tooltip = Jo add-ons beheare
+redirect-msg-button =
+    .label = Omliede
+    .tooltiptext = Selektearre berjocht omliede
 
 ## Folder Pane
 
@@ -50,6 +53,12 @@ folder-toolbar-toggle-folder-compact-view =
     .label = Kompakte werjefte
     .accesskey = K
 
+## Menu
+
+redirect-msg-menuitem =
+    .label = Omliede
+    .accesskey = O
+
 ## AppMenu
 
 # Since v89 we dropped the platforms distinction between Options or Preferences
@@ -64,6 +73,18 @@ appmenu-help-exit-troubleshoot-mode =
     .label = Probleemoplossingsmodus útskeakelje
 appmenu-help-more-troubleshooting-info =
     .label = Mear probleemoplossingsynformaasje
+appmenu-redirect-msg =
+    .label = Omliede
+
+## Context menu
+
+context-menu-redirect-msg =
+    .label = Omliede
+
+## Message header pane
+
+other-action-redirect-msg =
+    .label = Omliede
 
 ## Action Button Context Menu
 
@@ -88,3 +109,9 @@ message-header-address-not-in-address-book-icon =
 addon-removal-title = { $name } fuortsmite?
 addon-removal-confirmation-button = Fuortsmite
 addon-removal-confirmation-message = { $name } en de byhearrende konfiguraasje en gegevens út { -brand-short-name } fuortsmite?
+caret-browsing-prompt-title = Kursornavigaasje
+caret-browsing-prompt-text = Troch op F7 te drukken, wurdt kursornavigaasje yn- of útskeakele. Dizze funksje pleatst in beweechbere kursor yn guon ynhâld, wêrmei't jo yn steat binne tekst mei it toetseboerd te selektearjen. Wolle jo kursornavigaasje ynskeakelje?
+caret-browsing-prompt-check-text = Net mear freegje.
+repair-text-encoding-button =
+    .label = Tekstkodearring reparearje
+    .tooltiptext = Betink krekte tekstkodearring fan berjochtynhâld út

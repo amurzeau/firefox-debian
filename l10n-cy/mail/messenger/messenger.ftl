@@ -20,6 +20,9 @@ about-rights-notification-text = Mae { -brand-short-name } yn feddalwedd cod ago
 addons-and-themes-button =
     .label = Ychwanegion a Themâu
     .tooltip = Rheoli eich ychwanegion
+redirect-msg-button =
+    .label = Ailgyfeirio
+    .tooltiptext = Ailgyfeirio'r neges hon
 
 ## Folder Pane
 
@@ -54,6 +57,12 @@ folder-toolbar-toggle-folder-compact-view =
     .label = Golwg Cryno
     .accesskey = G
 
+## Menu
+
+redirect-msg-menuitem =
+    .label = Ailgyfeirio
+    .accesskey = A
+
 ## AppMenu
 
 # Since v89 we dropped the platforms distinction between Options or Preferences
@@ -68,6 +77,18 @@ appmenu-help-exit-troubleshoot-mode =
     .label = Diffodd y Modd Datrys Problemau
 appmenu-help-more-troubleshooting-info =
     .label = Rhagor o Wybodaeth i Ddatrys Problemau
+appmenu-redirect-msg =
+    .label = Ailgyfeirio
+
+## Context menu
+
+context-menu-redirect-msg =
+    .label = Ailgyfeirio
+
+## Message header pane
+
+other-action-redirect-msg =
+    .label = Ailgyfeirio
 
 ## Action Button Context Menu
 
@@ -92,3 +113,9 @@ message-header-address-not-in-address-book-icon =
 addon-removal-title = Tynnu { $name }?
 addon-removal-confirmation-button = Tynnu
 addon-removal-confirmation-message = Tynnu { $name } yn ogystal â'i ffurfweddiad a'i ddata o { -brand-short-name }?
+caret-browsing-prompt-title = Pori Caret
+caret-browsing-prompt-text = Mae pwyso F7 yn cychwyn a diffodd Pori Caret. Mae'r nodwedd hon yn gosod cyrchwr symudol ar dudalennau gwe, gan ganiatáu i chi ddewis testun gyda'r bysellfwrdd. Hoffech chi gychwyn Pori Caret?
+caret-browsing-prompt-check-text = Peidio a gofyn eto.
+repair-text-encoding-button =
+    .label = Trwsio Amgodio Testun
+    .tooltiptext = Dyfalu'r amgodiad testun cywir o gynnwys y neges

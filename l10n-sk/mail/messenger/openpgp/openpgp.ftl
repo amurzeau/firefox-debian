@@ -303,6 +303,9 @@ openpgp-keygen-external-success = ID externého kľúča GnuPG bolo uložené!
 openpgp-radio-none =
     .label = Žiadny
 openpgp-radio-none-desc = Pre túto identitu nepoužívať OpenPGP.
+openpgp-radio-key-not-usable = Tento kľúč nie je možné použiť ako osobný kľúč, pretože chýba tajný kľúč.
+openpgp-radio-key-not-accepted = Ak chcete použiť tento kľúč, musíte ho schváliť ako osobný kľúč.
+openpgp-radio-key-not-found = Tento kľúč sa nepodarilo nájsť. Ak ho chcete použiť, musíte ho naimportovať do aplikácie { -brand-short-name }.
 #   $key (String) - the expiration date of the OpenPGP key
 openpgp-radio-key-expires = Platnosť vyprší: { $date }
 openpgp-key-expires-image =
@@ -351,7 +354,7 @@ mime-decrypt-encrypted-part-concealed-data = Toto je šifrovaná časť správy.
 keyserver-error-aborted = Prerušené
 keyserver-error-unknown = Vyskytla sa neznáma chyba
 keyserver-error-server-error = Server kľúčov nahlásil chybu.
-keyserver-error-import-error = Prevzatý kľúč sa nepodarilo importovať.
+keyserver-error-import-error = Stiahnutý kľúč sa nepodarilo importovať.
 keyserver-error-unavailable = Kľúčový server nie je k dispozícii.
 keyserver-error-security-error = Kľúčový server nepodporuje šifrovaný prístup.
 keyserver-error-certificate-error = Certifikát kľúčového servera nie je platný.
@@ -413,7 +416,7 @@ import-info-details = Zobraziť podrobnosti a spravovať prijatie kľúča
 import-info-no-keys = Žiadne kľúče neboli importované.
 # Strings in enigmailKeyManager.js
 import-from-clip = Chcete importovať nejaké kľúče zo schránky?
-import-from-url = Prevziať verejný kľúč z tejto URL adresy:
+import-from-url = Stiahnuť verejný kľúč z tejto URL adresy:
 copy-to-clipbrd-failed = Vybraté kľúče sa nepodarilo skopírovať do schránky.
 copy-to-clipbrd-ok = Kľúče boli skopírované do schránky
 delete-secret-key =
@@ -643,5 +646,6 @@ dlg-button-retry = &Znova
 dlg-button-skip = &Preskočiť
 # Strings used in enigmailCommon.js
 enig-error = Chyba OpenPGP
+# Strings used in enigmailMsgBox.js
 enig-alert-title =
     .title = Upozornenie OpenPGP

@@ -5,12 +5,6 @@
 
 ## App Menu
 
-appmenuitem-update-banner2 =
-    .label-update-downloading = Tiqasäx ruk'exoj { -brand-shorter-name }
-    .label-update-available = K'exoj wachel — tiqasäx wakami
-    .label-update-manual = K'exoj wachel — tiqasäx wakami
-    .label-update-unsupported = Man tikirel ta niqasäx
-    .label-update-restart = Kexoj wachel — titikirisäx wakami
 appmenuitem-update-banner3 =
     .label-update-downloading = Niqasäx ruk'exoj { -brand-shorter-name }
     .label-update-available = Ütz k'exoj — tiqasäx wakami
@@ -23,6 +17,8 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = K'ak'a' Ruwi'
 appmenuitem-new-window =
     .label = K'ak'a' tzuwäch
 appmenuitem-new-private-window =
@@ -35,14 +31,6 @@ appmenuitem-find-in-page =
     .label = Tilitäj Pa Ruxaq…
 appmenuitem-more-tools =
     .label = Ch'aqa' Samajib'äl
-appmenuitem-exit =
-    .label = Tel
-appmenu-menu-button-closed =
-    .tooltiptext = Tijaq Ruk'utsamaj Chokoy
-    .label = { -brand-shorter-name }
-appmenu-menu-button-opened =
-    .tooltiptext = Titz'apïx Ruk'utsamaj Chokoy
-    .label = { -brand-shorter-name }
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -79,16 +67,12 @@ appmenu-remote-tabs-turn-on-sync =
     .label = Titzij Ximoj…
 appmenuitem-fxa-toolbar-sync-now2 = Tixim Wakami
 appmenuitem-fxa-manage-account = Tinuk'samajïx Rub'i' Taqoya'l
-appmenu-fxa-header =
-    .title = { -fxaccount-brand-name }
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
 appmenu-fxa-last-sync = Ruk'isib'äl ximoj { $time }
     .label = Ruk'isib'äl ximoj { $time }
-appmenu-fxa-sync-and-save-data =
-    .value = Tixim chuqa' Tiyak Tzij
 appmenu-fxa-sync-and-save-data2 = Tixim chuqa' Tiyak Tzij
 appmenu-fxa-signed-in-label = Titikirisäx Molojri'ïl
 appmenu-fxa-setup-sync =
@@ -153,6 +137,15 @@ appmenu-manage-history =
     .label = Tinuk'samajïx Natab'äl
 appmenu-reopen-all-tabs = Kejaq Chik Ronojel Ruwi'
 appmenu-reopen-all-windows = Kejaq Chik Ronojel Taq Tzuwäch
+appmenu-restore-session =
+    .label = Titzolin pa ri molojri'ïl xik'o
+appmenu-clear-history =
+    .label = Tiyuj K'ak'a' Natab'äl…
+appmenu-recent-history-subheader = K'ak'a' Natab'äl
+appmenu-recently-closed-tabs =
+    .label = Taq Ruwi' k'a b'a' Ketz'apïx
+appmenu-recently-closed-windows =
+    .label = Taq k'ajtz'ib' k'a b'a' etz'apin
 
 ## Help panel
 
@@ -200,3 +193,5 @@ appmenu-customizetoolbar =
 appmenu-taskmanager =
     .label = Kinuk'samajel taq Samaj
 appmenu-developer-tools-subheader = Rusamajib'al Okik'amaya'l
+appmenu-developer-tools-extensions =
+    .label = Kik'amal B'anonela'

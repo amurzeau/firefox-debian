@@ -11,6 +11,9 @@ remove-address-row-type = { $type } alanını kaldır
 remove-address-row-type-label =
     .tooltiptext = { $type } alanını kaldır
 #   $type (String) - the type of the addressing row
+remove-address-row-button =
+    .title = { $type } alanını kaldır
+#   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
@@ -122,13 +125,27 @@ consider-bcc-notification = Kime ve Cc alanlarındaki { $count } alıcı birbirl
 
 # Addressing Area
 
+to-compose-address-row-label =
+    .value = Alıcı
+to-compose-show-address-row-label =
+    .value = { to-compose-address-row-label.value }
+    .tooltiptext = { to-compose-address-row-label.value } alanını göster ({ to-compose-show-address-row-menuitem.acceltext })
 cc-compose-address-row-label =
     .value = Cc
+cc-compose-show-address-row-label =
+    .value = { cc-compose-address-row-label.value }
+    .tooltiptext = { cc-compose-address-row-label.value } alanını göster ({ cc-compose-show-address-row-menuitem.acceltext })
 bcc-compose-address-row-label =
     .value = Bcc
+bcc-compose-show-address-row-label =
+    .value = { bcc-compose-address-row-label.value }
+    .tooltiptext = { bcc-compose-address-row-label.value } alanını göster ({ bcc-compose-show-address-row-menuitem.acceltext })
 many-public-recipients-bcc =
     .label = Bcc kullan
     .accesskey = B
 many-public-recipients-ignore =
     .label = Alıcılar herkese açık kalsın
     .accesskey = A
+
+## Notifications
+

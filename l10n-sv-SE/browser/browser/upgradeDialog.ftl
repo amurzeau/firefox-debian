@@ -32,12 +32,42 @@ upgrade-dialog-new-secondary-button = Inte nu
 # theme selection screen.
 upgrade-dialog-new-primary-win7-button = Okej, jag förstår!
 
+## Pin Firefox screen
+##
+## These title, subtitle and button strings differ between platforms as they
+## match the OS' application context menu item action where Windows uses "pin"
+## and "taskbar" while macOS "keep" and "Dock" (proper noun).
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-pin-title =
+    { PLATFORM() ->
+        [macos] Behåll { -brand-short-name } i Dock
+       *[other] Fäst { -brand-short-name } i aktivitetsfältet
+    }
+# The English macOS string avoids repeating "Keep" a third time, so if your
+# translations don't repeat anyway, the same string can be used cross-platform.
+upgrade-dialog-pin-subtitle =
+    { PLATFORM() ->
+        [macos] Få enkel åtkomst till det modernaste { -brand-short-name } hittills.
+       *[other] Ha den senaste { -brand-short-name } nära till hands.
+    }
+upgrade-dialog-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Behåll i Dock
+       *[other] Fäst till aktivitetsfältet
+    }
+upgrade-dialog-pin-secondary-button = Inte nu
+
 ## Default browser screen
 
 # This title can be explicitly wrapped to control which words are on which line.
 upgrade-dialog-default-title = Gör { -brand-short-name } till din standardwebbläsare?
 upgrade-dialog-default-subtitle = Få hastighet, säkerhet och integritet varje gång du surfar.
 upgrade-dialog-default-primary-button = Ange som standardwebbläsare
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-default-title-2 = Gör { -brand-short-name } till din standardwebbläsare
+upgrade-dialog-default-subtitle-2 = Sätt hastighet, säkerhet och integritet på autopilot.
+upgrade-dialog-default-primary-button-2 = Gör till standardwebbläsare
 upgrade-dialog-default-secondary-button = Inte nu
 
 ## Theme selection screen
@@ -46,6 +76,8 @@ upgrade-dialog-default-secondary-button = Inte nu
 upgrade-dialog-theme-title =
     Få en ren start
     med ett uppdaterat tema
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-theme-title-2 = Få en ren start med ett nytt tema
 upgrade-dialog-theme-system = Systemtema
     .title = Följ operativsystemets tema för knappar, menyer och fönster
 upgrade-dialog-theme-light = Ljust

@@ -11,6 +11,9 @@ remove-address-row-type = Удалить поле { $type }
 remove-address-row-type-label =
     .tooltiptext = Удалить поле { $type }
 #   $type (String) - the type of the addressing row
+remove-address-row-button =
+    .title = Удалить поле { $type }
+#   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
@@ -43,6 +46,9 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = Переместить в Скрытую копию
     .accesskey = ы
+pill-action-expand-list =
+    .label = Развернуть список
+    .accesskey = в
 
 # Attachment widget
 
@@ -166,3 +172,9 @@ many-public-recipients-bcc =
 many-public-recipients-ignore =
     .label = Позволить адресатам видеть адреса друг друга
     .accesskey = в
+
+## Notifications
+
+# Variables:
+# $identity (string) - The name of the used identity, most likely an email address.
+compose-missing-identity-warning = Адрес электронной почты, соответствующий адресу в поле От:, не найден. Сообщение будет отправлено с использованием текущего адреса в поле От: и настроек адреса электронной почты { $identity }.

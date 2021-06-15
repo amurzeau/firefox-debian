@@ -185,8 +185,6 @@ page-action-send-tabs-urlbar =
             [few] { $tabCount } rajtarki na grat pósłać
            *[other] { $tabCount } rajtarkow na grat pósłać
         }
-page-action-pocket-panel =
-    .label = Stronu pola { -pocket-brand-name } składować
 page-action-copy-url-panel =
     .label = Wotkaz kopěrować
 page-action-copy-url-urlbar =
@@ -454,6 +452,8 @@ popup-select-microphone-device =
     .accesskey = M
 popup-select-microphone-icon =
     .tooltiptext = Mikrofon
+popup-select-speaker-icon =
+    .tooltiptext = Awdiowudawanske nastroje
 popup-all-windows-shared = Wšě widźomne wokna na wašej wobrazowce budu so dźělić.
 popup-screen-sharing-not-now =
     .label = Nic nětko
@@ -627,8 +627,6 @@ crashed-subframe-submit =
 
 ## Bookmarks panels, menus and toolbar
 
-bookmarks-show-all-bookmarks =
-    .label = Wšě zapołožki pokazać
 bookmarks-manage-bookmarks =
     .label = Zapołožki rjadować
 bookmarks-recent-bookmarks-panel-subheader = Najnowše zapołožki
@@ -701,6 +699,12 @@ library-recent-activity-title =
 save-to-pocket-button =
     .label = Pola { -pocket-brand-name } składować
     .tooltiptext = Pola { -pocket-brand-name } składować
+
+## Repair text encoding toolbar button
+
+repair-text-encoding-button =
+    .label = Tekstowe kodowanje reparować
+    .tooltiptext = Korektne tekstowe kodowanje z wobsaha strony wuhódać
 
 ## Customize Toolbar Buttons
 

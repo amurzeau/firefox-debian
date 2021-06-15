@@ -12,6 +12,7 @@ preferences-title =
         }
 preferences-tab-title =
     .title = Asetukset
+preferences-doc-title = Asetukset
 category-list =
     .aria-label = Luokat
 pane-general-title = Yleiset
@@ -90,8 +91,8 @@ update-in-progress-ok-button = &Hylkää
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Jatka
-account-button = Tilin asetukset
 addons-button = Laajennukset ja teemat
+account-button = Tilin asetukset
 open-addons-sidebar-button = Lisäosat ja teemat
 
 ## OS Authentication dialog
@@ -168,6 +169,12 @@ customize-alert-label =
 tray-icon-label =
     .label = Näytä ilmoitusalueen kuvake
     .accesskey = i
+biff-use-system-alert =
+    .label = Käytä järjestelmäilmoitusta
+tray-icon-unread-label =
+    .label = Näytä lukemattomien viestien kuvake ilmoitusalueella
+    .accesskey = t
+tray-icon-unread-description = Suositellaan pieniä tehtäväpalkin painikkeita käytettäessä
 mail-system-sound-label =
     .label = Järjestelmän oletusääni uudelle sähköpostille
     .accesskey = J
@@ -320,6 +327,8 @@ quoted-text-color =
     .accesskey = V
 search-input =
     .placeholder = Etsi
+search-handler-table =
+    .placeholder = Suodata sisältötyypit ja toiminnot
 type-column-label =
     .label = Sisältötyyppi
     .accesskey = S
@@ -705,6 +714,17 @@ search-input-box =
             [windows] Etsi asetuksista
            *[other] Etsi asetuksista
         }
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-preferences-input =
+    .style = width: 15.4em
+    .placeholder = Etsi asetuksista
 
 ## Preferences UI Search Results
 
