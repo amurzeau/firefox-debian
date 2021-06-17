@@ -5,12 +5,6 @@
 
 ## App Menu
 
-appmenuitem-update-banner2 =
-    .label-update-downloading = Discargamento in curso del actualisation de { -brand-shorter-name }
-    .label-update-available = Actualisation disponibile — discargar ora
-    .label-update-manual = Actualisation disponibile — discargar ora
-    .label-update-unsupported = Impossibile actualisar
-    .label-update-restart = Actualisation disponibile — reinitiar ora
 appmenuitem-update-banner3 =
     .label-update-downloading = Discargamento de actualisation de  { -brand-shorter-name } in curso
     .label-update-available = Actualisation disponibile — discargar ora
@@ -23,6 +17,8 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = Nove scheda
 appmenuitem-new-window =
     .label = Nove fenestra
 appmenuitem-new-private-window =
@@ -35,14 +31,6 @@ appmenuitem-find-in-page =
     .label = Trovar in pagina…
 appmenuitem-more-tools =
     .label = Altere utensiles
-appmenuitem-exit =
-    .label = Exir
-appmenu-menu-button-closed =
-    .tooltiptext = Aperir menu del application
-    .label = { -brand-shorter-name }
-appmenu-menu-button-opened =
-    .tooltiptext = Clauder menu del application
-    .label = { -brand-shorter-name }
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -79,16 +67,12 @@ appmenu-remote-tabs-turn-on-sync =
     .label = Activar Sync…
 appmenuitem-fxa-toolbar-sync-now2 = Synchronisar ora
 appmenuitem-fxa-manage-account = Gerer conto
-appmenu-fxa-header =
-    .title = { -fxaccount-brand-name }
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
 appmenu-fxa-last-sync = Ultime synchronisation: { $time }
     .label = Ultime synchronisation: { $time }
-appmenu-fxa-sync-and-save-data =
-    .value = Synchronisar e salvar datos
 appmenu-fxa-sync-and-save-data2 = Synchronisar e salvar datos
 appmenu-fxa-signed-in-label = Aperir session
 appmenu-fxa-setup-sync =
@@ -122,9 +106,7 @@ profiler-popup-settings =
     .value = Parametros
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Redaction de parametros...
-profiler-popup-disabled =
-    Le profilator es actualmente disactivate, multo probabilemente perque un fenestra de navigation¶
-    anonyme es aperte.
+profiler-popup-disabled = Le profilator es actualmente disactivate, multo probabilemente perque un fenestra de navigation private es aperte.
 profiler-popup-recording-screen = Registrante…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
@@ -153,6 +135,15 @@ appmenu-manage-history =
     .label = Gerer le chronologia
 appmenu-reopen-all-tabs = Reaperir tote le schedas
 appmenu-reopen-all-windows = Reaperir tote le fenestras
+appmenu-restore-session =
+    .label = Restaurar le session previe
+appmenu-clear-history =
+    .label = Vacuar le chronologia recente…
+appmenu-recent-history-subheader = Chronologia recente
+appmenu-recently-closed-tabs =
+    .label = Schedas claudite recentemente
+appmenu-recently-closed-windows =
+    .label = Fenestras claudite recentemente
 
 ## Help panel
 
@@ -200,3 +191,5 @@ appmenu-customizetoolbar =
 appmenu-taskmanager =
     .label = Gestor de activitate
 appmenu-developer-tools-subheader = Instrumentos de navigator
+appmenu-developer-tools-extensions =
+    .label = Extensiones pro disveloppatores

@@ -10,6 +10,8 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = புதிய கீற்று
 appmenuitem-new-window =
     .label = புதிய சாளரம்
 appmenuitem-new-private-window =
@@ -38,30 +40,26 @@ whatsnew-panel-header = புதியவை என்ன
 
 ## History panel
 
+appmenu-restore-session =
+    .label = முந்தைய அமர்வுக்கு மீட்டமை
+appmenu-clear-history =
+    .label = சமீபத்திய வரலாற்றைத் துடை...
+appmenu-recent-history-subheader = சமீபத்திய வரலாறு
+appmenu-recently-closed-tabs =
+    .label = சமீபத்தில் மூடப்பட்ட கீற்றுகள்
+appmenu-recently-closed-windows =
+    .label = சமீபத்தில் மூடப்பட்ட சாளரங்கள்
 
 ## Help panel
 
 appmenu-about =
     .label = { -brand-shorter-name } பற்றி
     .accesskey = A
-appmenu-help-troubleshooting-info =
-    .label = பிழைத்திருத்தல் தகவல்
-    .accesskey = T
 appmenu-help-report-site-issue =
     .label = தள சிக்கலை தெரிவி…
 appmenu-help-feedback-page =
     .label = கருத்துக்களைச் சமர்ப்பி…
     .accesskey = S
-
-## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
-## are mutually exclusive, so it's possible to use the same accesskey for both.
-
-appmenu-help-safe-mode-without-addons =
-    .label = நிரலை நீக்கியபின் மீட்துவக்கு…
-    .accesskey = R
-appmenu-help-safe-mode-with-addons =
-    .label = நிரலை நீக்கியபின் மீட்துவக்கு…
-    .accesskey = R
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

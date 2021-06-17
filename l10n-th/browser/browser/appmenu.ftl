@@ -5,12 +5,6 @@
 
 ## App Menu
 
-appmenuitem-update-banner2 =
-    .label-update-downloading = กำลังดาวน์โหลดการอัปเดต { -brand-shorter-name }
-    .label-update-available = มีการอัปเดต — ดาวน์โหลดเลย
-    .label-update-manual = มีการอัปเดต — ดาวน์โหลดเลย
-    .label-update-unsupported = ไม่สามารถอัปเดตได้
-    .label-update-restart = มีการอัปเดต — เริ่มการทำงานใหม่เลย
 appmenuitem-update-banner3 =
     .label-update-downloading = กำลังดาวน์โหลดการอัปเดต { -brand-shorter-name }
     .label-update-available = มีการอัปเดต — ดาวน์โหลดทันที
@@ -23,6 +17,8 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = แท็บใหม่
 appmenuitem-new-window =
     .label = หน้าต่างใหม่
 appmenuitem-new-private-window =
@@ -35,14 +31,6 @@ appmenuitem-find-in-page =
     .label = ค้นหาในหน้า…
 appmenuitem-more-tools =
     .label = เครื่องมือเพิ่มเติม
-appmenuitem-exit =
-    .label = ออก
-appmenu-menu-button-closed =
-    .tooltiptext = เปิดเมนูแอปพลิเคชัน
-    .label = { -brand-shorter-name }
-appmenu-menu-button-opened =
-    .tooltiptext = ปิดเมนูแอปพลิเคชัน
-    .label = { -brand-shorter-name }
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -79,17 +67,13 @@ appmenu-remote-tabs-turn-on-sync =
     .label = เปิด Sync…
 appmenuitem-fxa-toolbar-sync-now2 = ซิงค์ตอนนี้
 appmenuitem-fxa-manage-account = จัดการบัญชี
-appmenu-fxa-header =
-    .title = { -fxaccount-brand-name }
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
 appmenu-fxa-last-sync = ซิงค์ล่าสุดเมื่อ { $time }
     .label = ซิงค์ล่าสุดเมื่อ { $time }
-appmenu-fxa-sync-and-save-data =
-    .value = ซิงค์และบันทึก
-appmenu-fxa-sync-and-save-data2 = ซิงค์และบันทึก
+appmenu-fxa-sync-and-save-data2 = ซิงค์และบันทึกข้อมูล
 appmenu-fxa-signed-in-label = ลงชื่อเข้า
 appmenu-fxa-setup-sync =
     .label = เปิดการซิงค์…
@@ -151,6 +135,15 @@ appmenu-manage-history =
     .label = จัดการประวัติ
 appmenu-reopen-all-tabs = เปิดแท็บทั้งหมดใหม่
 appmenu-reopen-all-windows = เปิดหน้าต่างทั้งหมดใหม่
+appmenu-restore-session =
+    .label = เรียกคืนวาระก่อนหน้า
+appmenu-clear-history =
+    .label = ล้างประวัติล่าสุด…
+appmenu-recent-history-subheader = ประวัติล่าสุด
+appmenu-recently-closed-tabs =
+    .label = แท็บที่ปิดล่าสุด
+appmenu-recently-closed-windows =
+    .label = หน้าต่างที่ปิดล่าสุด
 
 ## Help panel
 
@@ -198,3 +191,5 @@ appmenu-customizetoolbar =
 appmenu-taskmanager =
     .label = ตัวจัดการงาน
 appmenu-developer-tools-subheader = เครื่องมือสำหรับเบราว์เซอร์
+appmenu-developer-tools-extensions =
+    .label = ส่วนขยายสำหรับนักพัฒนา

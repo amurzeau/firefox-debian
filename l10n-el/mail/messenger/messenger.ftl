@@ -16,6 +16,9 @@ about-rights-notification-text = Το { -brand-short-name } είναι δωρε�
 addons-and-themes-button =
     .label = Πρόσθετα και θέματα
     .tooltip = Διαχειριστείτε τα πρόσθετά σας
+redirect-msg-button =
+    .label = Ανακατεύθυνση
+    .tooltiptext = Ανακατεύθυνση επιλεγμένου μηνύματος
 
 ## Folder Pane
 
@@ -50,6 +53,12 @@ folder-toolbar-toggle-folder-compact-view =
     .label = Συμπτυγμένη προβολή
     .accesskey = Σ
 
+## Menu
+
+redirect-msg-menuitem =
+    .label = Ανακατεύθυνση
+    .accesskey = κ
+
 ## AppMenu
 
 # Since v89 we dropped the platforms distinction between Options or Preferences
@@ -64,6 +73,18 @@ appmenu-help-exit-troubleshoot-mode =
     .label = Απενεργοποίηση λειτουργίας επίλυσης προβλημάτων
 appmenu-help-more-troubleshooting-info =
     .label = Πληροφορίες επίλυσης προβλημάτων
+appmenu-redirect-msg =
+    .label = Ανακατεύθυνση
+
+## Context menu
+
+context-menu-redirect-msg =
+    .label = Ανακατεύθυνση
+
+## Message header pane
+
+other-action-redirect-msg =
+    .label = Ανακατεύθυνση
 
 ## Action Button Context Menu
 
@@ -88,3 +109,9 @@ message-header-address-not-in-address-book-icon =
 addon-removal-title = Αφαίρεση του { $name };
 addon-removal-confirmation-button = Αφαίρεση
 addon-removal-confirmation-message = Αφαίρεση του { $name }, των ρυθμίσεων και των δεδομένων του από το { -brand-short-name };
+caret-browsing-prompt-title = Περιήγηση με κέρσορα
+caret-browsing-prompt-text = Πατώντας το F7 (απ)ενεργοποιείται η περιήγηση με κέρσορα. Αυτή η λειτουργία τοποθετεί έναν κινούμενο κέρσορα σε ορισμένο περιεχόμενο και σας επιτρέπει να επιλέγετε κείμενο με το πληκτρολόγιο. Θέλετε να ενεργοποιήσετε τη λειτουργία;
+caret-browsing-prompt-check-text = Να μην γίνει ξανά ερώτηση.
+repair-text-encoding-button =
+    .label = Επιδιόρθωση κωδικοποίησης κειμένου
+    .tooltiptext = Υπόθεση σωστής κωδικοποίησης κειμένου από το περιεχόμενο του μηνύματος

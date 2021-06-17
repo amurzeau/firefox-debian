@@ -71,7 +71,6 @@ category-experimental =
     .tooltiptext = Esperimenti di { -brand-short-name }
 pane-experimental-subtitle = Procedere con cautela
 pane-experimental-search-results-header = Esperimenti di { -brand-short-name }: procedere con cautela
-pane-experimental-description = La modifica delle impostazioni avanzate di configurazione può compromettere le prestazioni e la sicurezza di { -brand-short-name }.
 pane-experimental-description2 = La modifica delle impostazioni avanzate di configurazione può compromettere le prestazioni e la sicurezza di { -brand-short-name }.
 
 pane-experimental-reset =
@@ -213,7 +212,7 @@ switch-links-to-new-tabs =
     .accesskey = P
 
 switch-to-new-tabs =
-    .label = Porta in primo piano la scheda quando si aproono link, immagini o contenuti multimediali in una nuova scheda
+    .label = Porta in primo piano la scheda quando si aprono link, immagini o contenuti multimediali in una nuova scheda
     .accesskey = P
 
 show-tabs-in-taskbar =
@@ -550,7 +549,7 @@ browsing-use-autoscroll =
     .accesskey = s
 
 browsing-use-smooth-scrolling =
-    .label = Utilizza lo scorrimento continuo
+    .label = Utilizza lo scorrimento fluido
     .accesskey = a
 
 browsing-use-onscreen-keyboard =
@@ -1226,7 +1225,6 @@ content-blocking-etp-custom-desc = Scegli quali traccianti e script bloccare.
 content-blocking-etp-blocking-desc = { -brand-short-name } blocca i seguenti elementi:
 
 content-blocking-private-windows = Contenuti traccianti in finestre anonime
-content-blocking-cross-site-cookies = Cookie intersito
 content-blocking-cross-site-cookies-in-all-windows = Cookie intersito in tutte le finestre (inclusi cookie traccianti)
 content-blocking-cross-site-tracking-cookies = Cookie traccianti intersito
 content-blocking-all-cross-site-cookies-private-windows = Cookie traccianti intersito in finestre anonime

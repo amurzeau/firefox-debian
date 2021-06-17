@@ -173,6 +173,9 @@ menu-view-page-basic-style =
 menu-view-charset =
     .label = Кодировка текста
     .accesskey = о
+menu-view-repair-text-encoding =
+    .label = Исправить кодировку текста
+    .accesskey = п
 
 ## These should match what Safari and other Apple applications
 ## use on macOS.
@@ -227,6 +230,8 @@ menu-bookmarks-show-all =
     .label = Показать все закладки
 menu-bookmark-this-page =
     .label = Добавить страницу
+menu-bookmarks-manage =
+    .label = Управление закладками
 menu-bookmark-current-tab =
     .label = Добавить текущую вкладку в закладки
 menu-bookmark-edit =
@@ -254,15 +259,15 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Войти в { -brand-product-name }…
     .accesskey = й
+menu-tools-turn-on-sync =
+    .label = Включить { -sync-brand-short-name(case: "accusative") }…
+    .accesskey = ю
 menu-tools-addons-and-themes =
     .label = Дополнения и темы
     .accesskey = п
 menu-tools-fxa-sign-in2 =
     .label = Войти
     .accesskey = й
-menu-tools-turn-on-sync =
-    .label = Включить { -sync-brand-short-name(case: "accusative") }…
-    .accesskey = ю
 menu-tools-turn-on-sync2 =
     .label = Включить синхронизацию…
     .accesskey = ч
@@ -287,19 +292,19 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Информация о странице
     .accesskey = ф
-menu-settings =
-    .label = Настройки
-    .accesskey =
-        { PLATFORM() ->
-            [windows] а
-           *[other] а
-        }
 menu-preferences =
     .label =
         { PLATFORM() ->
             [windows] Настройки
            *[other] Настройки
         }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] а
+           *[other] а
+        }
+menu-settings =
+    .label = Настройки
     .accesskey =
         { PLATFORM() ->
             [windows] а

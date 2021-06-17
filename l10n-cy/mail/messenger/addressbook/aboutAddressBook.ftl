@@ -24,6 +24,8 @@ about-addressbook-books-context-properties =
     .label = Priodweddau
 about-addressbook-books-context-synchronize =
     .label = Cydweddu
+about-addressbook-books-context-print =
+    .label = Argraffu…
 about-addressbook-books-context-delete =
     .label = Dileu
 
@@ -35,6 +37,8 @@ about-addressbook-search =
     .placeholder = Chwilio { $name }
 about-addressbook-search-all =
     .placeholder = Chwilio'r holl lyfrau cyfeiriadau
+about-addressbook-sort-button =
+    .title = Newid trefn y rhestr
 about-addressbook-name-format-display =
     .label = Dangos Enw
 about-addressbook-name-format-firstlast =

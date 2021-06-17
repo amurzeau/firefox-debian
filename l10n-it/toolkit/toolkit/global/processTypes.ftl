@@ -3,6 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 process-type-web = Contenuti web
+process-type-browser = Principale
 
 process-type-privilegedabout = Pagine “about” privilegiate
 
@@ -16,8 +17,26 @@ process-type-weblargeallocation = Allocazione di grandi dimensioni
 
 process-type-webisolated = Contenuti web isolati
 
+# process preallocated; may change to other types
+process-type-prealloc = Preallocato
+
+##
+## Localization for Gecko process types defined in GeckoProcessTypes.h
+##
+
+process-type-default = Principale
+process-type-tab = Scheda
+
 process-type-gpu = GPU
 
 process-type-socket = Socket
 
-process-type-prealloc = Preallocato
+# process used to decode media
+process-type-rdd = RDD
+
+##
+## Other
+##
+
+# fallback
+process-type-unknown = Sconosciuto

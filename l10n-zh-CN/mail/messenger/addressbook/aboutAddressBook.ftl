@@ -24,6 +24,8 @@ about-addressbook-books-context-properties =
     .label = 属性
 about-addressbook-books-context-synchronize =
     .label = 同步
+about-addressbook-books-context-print =
+    .label = 打印…
 about-addressbook-books-context-delete =
     .label = 删除
 
@@ -35,6 +37,8 @@ about-addressbook-search =
     .placeholder = 搜索 { $name }
 about-addressbook-search-all =
     .placeholder = 搜索所有通讯录
+about-addressbook-sort-button =
+    .title = 更改列表顺序
 about-addressbook-name-format-display =
     .label = 显示名称
 about-addressbook-name-format-firstlast =

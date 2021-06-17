@@ -65,26 +65,26 @@ openpgp-key-man-keyserver-menu =
     .label = Διακομιστής κλειδιών
     .accesskey = Δ
 openpgp-key-man-import-public-from-file =
-    .label = Εισαγωγή δημόσιου κλειδιού(ών) από αρχείο
+    .label = Εισαγωγή δημόσιων κλειδιών από αρχείο
     .accesskey = Ε
 openpgp-key-man-import-secret-from-file =
-    .label = Εισαγωγή μυστικού κλειδιού(ών) από αρχείο
+    .label = Εισαγωγή μυστικών κλειδιών από αρχείο
 openpgp-key-man-import-sig-from-file =
-    .label = Εισαγωγή ανάκλησης(εων) από αρχείο
+    .label = Εισαγωγή ανακλήσεων από αρχείο
 openpgp-key-man-import-from-clipbrd =
-    .label = Εισαγωγή κλειδιού(ών) από πρόχειρο
+    .label = Εισαγωγή κλειδιών από πρόχειρο
     .accesskey = Ε
 openpgp-key-man-import-from-url =
-    .label = Εισαγωγή κλειδιού(ών) από URL
+    .label = Εισαγωγή κλειδιών από URL
     .accesskey = U
 openpgp-key-man-export-to-file =
-    .label = Εξαγωγή δημόσιου κλειδιού(ών) σε αρχείο
+    .label = Εξαγωγή δημόσιων κλειδιών σε αρχείο
     .accesskey = Ε
 openpgp-key-man-send-keys =
-    .label = Αποστολή δημόσιου κλειδιού(ών) με email
+    .label = Αποστολή δημόσιων κλειδιών με email
     .accesskey = Α
 openpgp-key-man-backup-secret-keys =
-    .label = Αντιγραφή μυστικού κλειδιού(ών) σε αρχείο
+    .label = Αντιγραφή μυστικών κλειδιών σε αρχείο
     .accesskey = Α
 openpgp-key-man-discover-cmd =
     .label = Ανακάλυψη κλειδιών στο διαδίκτυο
@@ -104,7 +104,7 @@ openpgp-key-send-key =
     .label = Αποστολή δημόσιου κλειδιού με email
     .accesskey = Α
 openpgp-key-man-copy-to-clipbrd =
-    .label = Αντιγραφή δημόσιου κλειδιού(ών) στο πρόχειρο
+    .label = Αντιγραφή δημόσιων κλειδιών στο πρόχειρο
     .accesskey = Α
 openpgp-key-man-copy-key-ids =
     .label =
@@ -164,7 +164,7 @@ openpgp-key-man-change-expiry =
     .label = Αλλαγή ημερομηνίας λήξης
     .accesskey = μ
 openpgp-key-man-del-key =
-    .label = Διαγραφή κλειδιού(ών)
+    .label = Διαγραφή κλειδιών
     .accesskey = Δ
 openpgp-delete-key =
     .label = Διαγραφή κλειδιού
@@ -268,9 +268,9 @@ openpgp-copy-cmd-label =
 #   $identity (String) - the email address of the currently selected identity
 openpgp-description =
     { $count ->
-        [0] Το Thunderbird δεν έχει ένα προσωπικό κλειδί OpenPGP για <b>{ $identity }</b>
-        [one] Το Thunderbird βρήκε { $count } προσωπικό κλειδί OpenPGP που είναι συσχετισμένο με <b>{ $identity }</b>
-       *[other] Το Thunderbird βρήκε { $count } προσωπικά κλειδιά OpenPGP που είναι συσχετισμένα με <b>{ $identity }</b>
+        [0] Το Thunderbird δεν έχει προσωπικό κλειδί OpenPGP για το <b>{ $identity }</b>
+        [one] Το Thunderbird βρήκε { $count } προσωπικό κλειδί OpenPGP που σχετίζεται με το <b>{ $identity }</b>
+       *[other] Το Thunderbird βρήκε { $count } προσωπικά κλειδιά OpenPGP που σχετίζονται με το <b>{ $identity }</b>
     }
 #   $count (Number) - the number of configured keys associated with the current identity
 #   $key (String) - the currently selected OpenPGP key
@@ -294,6 +294,9 @@ openpgp-keygen-external-success = Το εξωτερικό αναγνωριστι
 openpgp-radio-none =
     .label = Κανένα
 openpgp-radio-none-desc = Να μην χρησιμοποιηθεί OpenPGP για αυτή την ταυτότητα.
+openpgp-radio-key-not-usable = Αυτό το κλειδί δεν μπορεί να χρησιμοποιηθεί ως προσωπικό, επειδή λείπει το μυστικό κλειδί!
+openpgp-radio-key-not-accepted = Για να χρησιμοποιήσετε αυτό το κλειδί θα πρέπει να το εγκρίνετε ως προσωπικό κλειδί!
+openpgp-radio-key-not-found = Δεν ήταν δυνατή η εύρεση του κλειδιού! Εάν θέλετε να το χρησιμοποιήσετε, πρέπει να το εισαγάγετε στο { -brand-short-name }.
 #   $key (String) - the expiration date of the OpenPGP key
 openpgp-radio-key-expires = Λήγει στις: { $date }
 openpgp-key-expires-image =
@@ -387,8 +390,8 @@ filter-term-pgpencrypted-label = Κρυπτογραφημένο κατά OpenPGP
 filter-key-required = Πρέπει να επιλέξετε ένα κλειδί παραλήπτη.
 filter-key-not-found = Δεν ήταν δυνατή η εύρεση ενός κλειδιού κρυπτογράφησης για το '{ $desc }'.
 filter-warn-key-not-secret =
-    Προειδοποίηση - η ενέργεια φίλτρου "Κρυπτογράφηση με το κλειδί" αντικαθιστά τους παραλήπτες.
-    Εάν δεν έχετε το μυστικό κλειδί για το '{ $desc }' δεν θα μπορείτε πλέον να διαβάζετε τα μηνύματα.
+    Προειδοποίηση - η ενέργεια φίλτρου "Κρυπτογράφηση με κλειδί" αντικαθιστά τους παραλήπτες.
+    Εάν δεν έχετε το μυστικό κλειδί για το '{ $desc }', δεν θα μπορείτε πλέον να διαβάζετε τα email.
 # Strings filtersWrapper.jsm
 filter-decrypt-move-label = Οριστική αποκρυπτογράφηση (OpenPGP)
 filter-decrypt-copy-label = Δημιουργία αποκρυπτογραφημένου αντιγράφου (OpenPGP)
@@ -402,7 +405,7 @@ import-info-fpr = Αποτύπωμα
 import-info-details = Προβολή λεπτομερειών και διαχείριση αποδοχής κλειδιών
 import-info-no-keys = Δεν εισήχθηκαν κλειδιά.
 # Strings in enigmailKeyManager.js
-import-from-clip = Θέλετε να εισάγετε μερικά κλειδιά από το πρόχειρο;
+import-from-clip = Θέλετε να εισαγάγετε μερικά κλειδιά από το πρόχειρο;
 import-from-url = Λήψη δημόσιου κλειδιού από αυτήν τη διεύθυνση URL:
 copy-to-clipbrd-failed = Δεν ήταν δυνατή η αντιγραφή των επιλεγμένων κλειδιών στο πρόχειρο.
 copy-to-clipbrd-ok = Τα κλειδιά αντιγράφηκαν στο πρόχειρο
@@ -449,18 +452,13 @@ openpgp-export-secret-fail = <b>Δεν ήταν δυνατή η εξαγωγή �
 # Strings in keyObj.jsm
 key-ring-pub-key-revoked = Το κλειδί { $userId } (αναγνωριστικό κλειδιού { $keyId }) είναι ανακλημένο.
 key-ring-pub-key-expired = Το κλειδί { $userId } (αναγνωριστικό κλειδιού { $keyId }) έχει λήξει.
-key-ring-key-disabled = Το κλειδί { $userId } (αναγνωριστικό κλειδιού { $keyId }) είναι απενεργοποιημένο· δεν μπορεί να χρησιμοποιηθεί.
-key-ring-key-invalid = Το κλειδί { $userId } (αναγνωριστικό κλειδιού { $keyId }) δεν είναι έγκυρο. Εξετάστε αν μπορείτε να το επαληθεύσετε σωστά.
-key-ring-key-not-trusted = Το κλειδί { $userId } (αναγνωριστικό κλειδιού { $keyId }) δεν είναι αρκετά αξιόπιστο. Ορίστε το επίπεδο εμπιστοσύνης του κλειδιού σας σε "απόλυτο" για να το χρησιμοποιήσετε για υπογραφή.
 key-ring-no-secret-key = Φαίνεται να μην έχετε το μυστικό κλειδί για { $userId } (αναγνωριστικό κλειδιού { $keyId }) στο αποθετήριο κλειδιών σας· δεν μπορείτε να χρησιμοποιήσετε το κλειδί για υπογραφή.
 key-ring-pub-key-not-for-signing = Το κλειδί { $userId } (αναγνωριστικό κλειδιού { $keyId }) δεν μπορεί να χρησιμοποιηθεί για υπογραφή.
 key-ring-pub-key-not-for-encryption = Το κλειδί { $userId } (αναγνωριστικό κλειδιού { $keyId }) δεν μπορεί να χρησιμοποιηθεί για κρυπτογράφηση.
 key-ring-sign-sub-keys-revoked = Ανακαλούνται όλα τα υποκλειδιά υπογραφής του κλειδιού { $userId } (αναγνωριστικό κλειδιού { $keyId }).
 key-ring-sign-sub-keys-expired = Όλα τα υποκλειδιά υπογραφής του κλειδιού { $userId } (αναγνωριστικό κλειδιού { $keyId }) έχουν λήξει.
-key-ring-sign-sub-keys-unusable = Όλα τα υποκλειδιά υπογραφής του κλειδιού { $userId } (αναγνωριστικό κλειδιού { $keyId }) έχουν ανακληθεί, λήξει ή δεν μπορούν να χρησιμοποιηθούν με άλλο τρόπο.
 key-ring-enc-sub-keys-revoked = Όλα τα υποκλειδιά κρυπτογράφησης του κλειδιού { $userId } (αναγνωριστικό κλειδιού { $keyId }) έχουν ανακληθεί.
 key-ring-enc-sub-keys-expired = Όλα τα υποκλειδιά κρυπτογράφησης του κλειδιού { $userId } (αναγνωριστικό κλειδιού { $keyId }) έχουν λήξει.
-key-ring-enc-sub-keys-unusable = Όλα τα υποκλειδιά κρυπτογράφησης του κλειδιού { $userId } (αναγνωριστικό κλειδιού { $keyId }) έχουν ανακληθεί, λήξει ή δεν μπορούν να χρησιμοποιηθούν με άλλο τρόπο.
 # Strings in gnupg-keylist.jsm
 keyring-photo = Φωτογραφία
 user-att-photo = Χαρακτηριστικό χρήστη (εικόνα JPEG)
@@ -633,5 +631,6 @@ dlg-button-retry = &Επανάληψη
 dlg-button-skip = &Παράλειψη
 # Strings used in enigmailCommon.js
 enig-error = Σφάλμα OpenPGP
+# Strings used in enigmailMsgBox.js
 enig-alert-title =
     .title = Ειδοποίηση OpenPGP

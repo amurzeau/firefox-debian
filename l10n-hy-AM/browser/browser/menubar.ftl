@@ -109,8 +109,11 @@ menu-edit =
     .label = Խմբագրել
     .accesskey = Խ
 menu-edit-find-on =
-    .label = Որոնում էջում…
-    .accesskey = Ո
+    .label = Գտնել այս էջում…
+    .accesskey = F
+menu-edit-find-in-page =
+    .label = Գտնել էջում…
+    .accesskey = F
 menu-edit-find-again =
     .label = Կրկին Որոնել
     .accesskey = Ո
@@ -245,15 +248,24 @@ menu-tools-fxa-sign-in =
 menu-tools-turn-on-sync =
     .label = Միացնել { -sync-brand-short-name }…
     .accesskey = n
+menu-tools-addons-and-themes =
+    .label = Հավելումներ և ոճեր
+    .accesskey = A
+menu-tools-fxa-sign-in2 =
+    .label = Մուտք գործել
+    .accesskey = g
 menu-tools-sync-now =
-    .label = Սինք
-    .accesskey = Ս
+    .label = Համաժամեցնել
+    .accesskey = o
 menu-tools-fxa-re-auth =
     .label = Վերակապակցվել { -brand-product-name }․․․
     .accesskey = R
 menu-tools-web-developer =
     .label = Վեբ մշակող
     .accesskey = Վ
+menu-tools-task-manager =
+    .label = Խնդիրների կառավար
+    .accesskey = M
 menu-tools-page-source =
     .label = Դիտել Էջի Կոդը
     .accesskey = ո
@@ -288,15 +300,6 @@ menu-window-bring-all-to-front =
 # NOTE: For Engineers, any additions or changes to Help menu strings should
 # also be reflected in the related strings in appmenu.ftl. Those strings, by
 # convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
 # Example: appmenu-get-help
 #
 # These strings are duplicated to allow for different casing depending on
@@ -320,8 +323,9 @@ menu-help-keyboard-shortcuts =
 menu-help-troubleshooting-info =
     .label = Անսարքության տեղեկատվություն
     .accesskey = Ա
-menu-help-taskmanager =
-    .label = Առաջադրանքների ղեկավար
+menu-get-help =
+    .label = Ստանալ օգնություն
+    .accesskey = H
 menu-help-report-site-issue =
     .label = Զեկուցել կայքի խնդրի մասին…
 menu-help-feedback-page =
@@ -333,6 +337,9 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Վերամեկնարկել՝ միացնելով հավելումները
     .accesskey = Վ
+menu-help-enter-troubleshoot-mode2 =
+    .label = Խափանաշտկման կերպ…
+    .accesskey = M
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

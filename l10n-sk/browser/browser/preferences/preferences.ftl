@@ -66,7 +66,6 @@ category-experimental =
     .tooltiptext = Experimenty prehliadača { -brand-short-name }
 pane-experimental-subtitle = Buďte obozretní
 pane-experimental-search-results-header = Experimenty { -brand-short-name(case: "gen") }: Pokračujte s opatrnosťou
-pane-experimental-description = Zmeny v pokročilej konfigurácii môžu ovplyvniť výkon a bezpečnosť prehliadača { -brand-short-name }.
 pane-experimental-description2 = Zmeny v pokročilej konfigurácii môžu ovplyvniť výkon a bezpečnosť prehliadača { -brand-short-name }.
 pane-experimental-reset =
     .label = Obnoviť predvolené nastavenia
@@ -134,8 +133,8 @@ search-results-header = Výsledky vyhľadávania
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message =
     { PLATFORM() ->
-        [windows] Mrzí nás to, no pre hľadaný výraz “<span data-l10n-name="query"></span>” sme v možnostiach nič nenašli.
-       *[other] Mrzí nás to, no pre hľadaný výraz “<span data-l10n-name="query"></span>” sme v možnostiach nič nenašli.
+        [windows] Mrzí nás to, no pre hľadaný výraz „<span data-l10n-name="query"></span>“ sme v možnostiach nič nenašli.
+       *[other] Mrzí nás to, no pre hľadaný výraz „<span data-l10n-name="query"></span>” sme v možnostiach nič nenašli.
     }
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message2 = Mrzí nás to, ale pre hľadaný výraz “<span data-l10n-name="query"></span>” sme v možnostiach nič nenašli.
@@ -181,6 +180,9 @@ warn-on-open-many-tabs =
     .accesskey = U
 switch-links-to-new-tabs =
     .label = Pri otvorení odkazu na novej karte ju preniesť do popredia
+    .accesskey = r
+switch-to-new-tabs =
+    .label = Pri otvorení odkazu, obrázka alebo média na novej karte túto preniesť do popredia
     .accesskey = r
 show-tabs-in-taskbar =
     .label = Zobrazovať ukážky kariet v paneli úloh systému Windows
@@ -272,7 +274,7 @@ check-user-spelling =
 ## General Section - Files and Applications
 
 files-and-applications-title = Súbory a aplikácie
-download-header = Preberanie súborov
+download-header = Sťahovanie súborov
 download-save-to =
     .label = Všetky súbory ukladať do
     .accesskey = v
@@ -291,7 +293,7 @@ download-always-ask-where =
     .label = Vždy sa opýtať, kam uložiť súbory
     .accesskey = k
 applications-header = Aplikácie
-applications-description = Čo má { -brand-short-name } urobiť so súbormi prevzatými z webu alebo s aplikáciami, ktoré používate pri prehliadaní.
+applications-description = Čo má { -brand-short-name } urobiť so súbormi stiahnutými z webu alebo s aplikáciami, ktoré používate pri prehliadaní.
 applications-filter =
     .placeholder = Hľadať typ súboru alebo aplikáciu
 applications-type-column =
@@ -560,7 +562,7 @@ home-prefs-highlights-option-visited-pages =
 home-prefs-highlights-options-bookmarks =
     .label = Záložky
 home-prefs-highlights-option-most-recent-download =
-    .label = Nedávne prevzatia
+    .label = Nedávne sťahovania
 home-prefs-highlights-option-saved-to-pocket =
     .label = Stránky uložené do služby { -pocket-brand-name }
 home-prefs-recent-activity-header =
@@ -684,7 +686,7 @@ sync-signedout-account-signin3 =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = Prevezmite si Firefox pre <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> alebo <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> pre synchronizáciu s vaším mobilným zariadením.
+sync-mobile-promo = Stiahnite si Firefox pre <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> alebo <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> pre synchronizáciu s vaším mobilným zariadením.
 
 ## Firefox Account - Signed in
 
@@ -898,13 +900,13 @@ history-remember-option-never =
     .label = Nikdy neukladať históriu prehliadania
 history-remember-option-custom =
     .label = Použiť vlastné nastavenia
-history-remember-description = { -brand-short-name } si bude pamätať históriu vášho prehliadania, preberania, formulárov a vyhľadávania.
+history-remember-description = { -brand-short-name } si bude pamätať históriu vášho prehliadania, sťahovania, formulárov a vyhľadávania.
 history-dontremember-description = { -brand-short-name } použije totožné nastavenia s režimom súkromného prehliadania a nebude si pamätať žiadnu históriu prehliadania webu.
 history-private-browsing-permanent =
     .label = Natrvalo zapnúť režim súkromného prehliadania
     .accesskey = a
 history-remember-browser-option =
-    .label = Pamätať si históriu prehliadania a prevzatých súborov
+    .label = Pamätať si históriu prehliadania a stiahnutých súborov
     .accesskey = b
 history-remember-search-option =
     .label = Pamätať si údaje zadané do formulárov a vyhľadávacieho panela
@@ -1024,7 +1026,6 @@ content-blocking-etp-strict-desc = Viac blokovaného obsahu zvyšuje pravdepodob
 content-blocking-etp-custom-desc = Vyberte sledovacie prvky a skripty, ktoré chcete blokovať.
 content-blocking-etp-blocking-desc = { -brand-short-name } blokuje:
 content-blocking-private-windows = Sledovací obsah je blokovaný v súkromných oknách
-content-blocking-cross-site-cookies = Cookies tretích strán
 content-blocking-cross-site-cookies-in-all-windows = Cookies tretích strán vo všetkých oknách (vrátane sledovacích cookies)
 content-blocking-cross-site-tracking-cookies = Blokované sú sledovacie cookies
 content-blocking-all-cross-site-cookies-private-windows = Cookies tretích strán v súkromných oknách
@@ -1162,7 +1163,7 @@ security-enable-safe-browsing =
     .accesskey = B
 security-enable-safe-browsing-link = Ďalšie informácie
 security-block-downloads =
-    .label = Blokovať preberanie nebezpečných súborov
+    .label = Blokovať sťahovanie nebezpečných súborov
     .accesskey = n
 security-block-uncommon-software =
     .label = Upozorniť ma na nechcený a nezvyčajný softvér
@@ -1231,8 +1232,8 @@ httpsonly-radio-disabled =
 ## The following strings are used in the Download section of settings
 
 desktop-folder-name = Pracovná plocha
-downloads-folder-name = Prevzaté súbory
-choose-download-folder-title = Vyberte priečinok pre prevzaté súbory:
+downloads-folder-name = Stiahnuté súbory
+choose-download-folder-title = Vyberte priečinok pre stiahnuté súbory:
 # Variables:
 #   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
 save-files-to-cloud-storage =

@@ -24,6 +24,8 @@ about-addressbook-books-context-properties =
     .label = Tulajdonságok
 about-addressbook-books-context-synchronize =
     .label = Szinkronizálás
+about-addressbook-books-context-print =
+    .label = Nyomtatás…
 about-addressbook-books-context-delete =
     .label = Törlés
 
@@ -35,6 +37,8 @@ about-addressbook-search =
     .placeholder = Keresés ebben: { $name }
 about-addressbook-search-all =
     .placeholder = Keresés az összes címjegyzékben
+about-addressbook-sort-button =
+    .title = A lista sorrendjének módosítása
 about-addressbook-name-format-display =
     .label = Megjelenő név
 about-addressbook-name-format-firstlast =

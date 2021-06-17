@@ -24,6 +24,8 @@ about-addressbook-books-context-properties =
     .label = Egenskaper
 about-addressbook-books-context-synchronize =
     .label = Synkronisera
+about-addressbook-books-context-print =
+    .label = Skriv ut…
 about-addressbook-books-context-delete =
     .label = Ta bort
 
@@ -35,6 +37,8 @@ about-addressbook-search =
     .placeholder = Sök i { $name }
 about-addressbook-search-all =
     .placeholder = Sök i alla adressböcker
+about-addressbook-sort-button =
+    .title = Ändra listordningen
 about-addressbook-name-format-display =
     .label = Visningsnamn
 about-addressbook-name-format-firstlast =

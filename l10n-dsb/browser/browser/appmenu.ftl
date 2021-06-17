@@ -5,12 +5,6 @@
 
 ## App Menu
 
-appmenuitem-update-banner2 =
-    .label-update-downloading = Aktualizaciju { -brand-shorter-name } ześěgnuś
-    .label-update-available = Aktualizacija k dispoziciji – něnto ześěgnuś
-    .label-update-manual = Aktualizacija k dispoziciji – něnto ześěgnuś
-    .label-update-unsupported = Aktualizěrowanje njejo móžne
-    .label-update-restart = Aktualizacija k dispoziciji – něnto znowego startowaś
 appmenuitem-update-banner3 =
     .label-update-downloading = Aktualizaciju { -brand-shorter-name } ześěgnuś
     .label-update-available = Aktualizacija k dispoziciji – něnto ześěgnuś
@@ -23,6 +17,8 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = Nowy rejtarik
 appmenuitem-new-window =
     .label = Nowe wokno
 appmenuitem-new-private-window =
@@ -35,14 +31,6 @@ appmenuitem-find-in-page =
     .label = Na boku pytaś…
 appmenuitem-more-tools =
     .label = Dalšne rědy
-appmenuitem-exit =
-    .label = Skóńcyś
-appmenu-menu-button-closed =
-    .tooltiptext = Nałožeński meni wócyniś
-    .label = { -brand-shorter-name }
-appmenu-menu-button-opened =
-    .tooltiptext = Nałožeński meni zacyniś
-    .label = { -brand-shorter-name }
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -79,16 +67,12 @@ appmenu-remote-tabs-turn-on-sync =
     .label = Sync zmóžniś…
 appmenuitem-fxa-toolbar-sync-now2 = Něnto synchronizěrowaś
 appmenuitem-fxa-manage-account = Konto zastojaś
-appmenu-fxa-header =
-    .title = { -fxaccount-brand-name }
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
 appmenu-fxa-last-sync = Slědna synchronizacija: { $time }
     .label = Slědna synchronizacija: { $time }
-appmenu-fxa-sync-and-save-data =
-    .value = Synchronizěrowaś a daty składowaś
 appmenu-fxa-sync-and-save-data2 = Synchronizěrowaś a daty składowaś
 appmenu-fxa-signed-in-label = Pśizjawiś
 appmenu-fxa-setup-sync =
@@ -153,6 +137,15 @@ appmenu-manage-history =
     .label = Historiju zastojaś
 appmenu-reopen-all-tabs = Wšykne rejtariki znowego wócyniś
 appmenu-reopen-all-windows = Wšykne wokna znowego wócyniś
+appmenu-restore-session =
+    .label = Pjerwjejšne pósejźenje wótnowiś
+appmenu-clear-history =
+    .label = Aktualnu historiju wuprozniś…
+appmenu-recent-history-subheader = Nejnowša historija
+appmenu-recently-closed-tabs =
+    .label = Rowno zacynjone rejtariki
+appmenu-recently-closed-windows =
+    .label = Rowno zacynjone wokna
 
 ## Help panel
 
@@ -200,3 +193,5 @@ appmenu-customizetoolbar =
 appmenu-taskmanager =
     .label = Zastojnik nadawkow
 appmenu-developer-tools-subheader = Rědy wobglědowaka
+appmenu-developer-tools-extensions =
+    .label = Rozšyrjenja za wuwijarje

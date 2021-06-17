@@ -10,6 +10,8 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = Neuvo feuggio
 appmenuitem-new-window =
     .label = Neuvo barcon
 appmenuitem-new-private-window =
@@ -42,32 +44,26 @@ whatsnew-panel-header = Cöse gh'é de neuvo
 
 ## History panel
 
+appmenu-restore-session =
+    .label = Repiggia a sescion primma
+appmenu-clear-history =
+    .label = Scancella a stöia ciù neuva…
+appmenu-recent-history-subheader = Stöia recente
+appmenu-recently-closed-tabs =
+    .label = Feuggi seræ urtimamente
+appmenu-recently-closed-windows =
+    .label = Barcoin seræ urtimamente
 
 ## Help panel
 
 appmenu-about =
     .label = Informaçioin in sce { -brand-shorter-name }
     .accesskey = I
-appmenu-help-troubleshooting-info =
-    .label = Informaçioin in sciâ soluçion di problemi
-    .accesskey = I
-appmenu-help-taskmanager =
-    .label = Gestion ativitæ
 appmenu-help-report-site-issue =
     .label = Denonçia Problema do Scito…
 appmenu-help-feedback-page =
     .label = Manda comento…
     .accesskey = M
-
-## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
-## are mutually exclusive, so it's possible to use the same accesskey for both.
-
-appmenu-help-safe-mode-without-addons =
-    .label = Arvi torna co-i conponenti azonti dizabilitæ
-    .accesskey = R
-appmenu-help-safe-mode-with-addons =
-    .label = Arvi torna co-i conponente azonti ativæ
-    .accesskey = R
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

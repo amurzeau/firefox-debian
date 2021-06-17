@@ -113,7 +113,7 @@ cfr-whatsnew-tracking-blocked-title =
        *[other] Блокираних софтвера за праћење
     }
 cfr-whatsnew-tracking-blocked-subtitle = Од { DATETIME($earliestDate, month: "long", year: "numeric") }
-cfr-whatsnew-tracking-blocked-link-text = Погледајте извештај
+cfr-whatsnew-tracking-blocked-link-text = Прикажи извештај
 cfr-whatsnew-lockwise-backup-title = Направите резервну копију лозинки
 cfr-whatsnew-lockwise-backup-body = Генеришите безбедне лозинке и приступите им свуда.
 cfr-whatsnew-lockwise-backup-link-text = Укључите резерве
@@ -197,8 +197,8 @@ cfr-doorhanger-firefox-send-ok-button = Испробајте { -send-brand-name(
 
 ## Social Tracking Protection
 
-cfr-doorhanger-socialtracking-ok-button = Погледај заштите
-    .accesskey = P
+cfr-doorhanger-socialtracking-ok-button = Прикажи заштите
+    .accesskey = з
 cfr-doorhanger-socialtracking-close-button = Затвори
     .accesskey = C
 cfr-doorhanger-socialtracking-dont-show-again = Немој ми више показивати овакве поруке
@@ -236,8 +236,8 @@ cfr-doorhanger-milestone-heading2 =
         [few] { -brand-short-name } је блокирао више од <b>{ $blockedCount }</b> програма за праћење од { DATETIME($date, month: "long", year: "numeric") }!
        *[other] { -brand-short-name } је блокирао више од <b>{ $blockedCount }</b> програма за праћење од { DATETIME($date, month: "long", year: "numeric") }!
     }
-cfr-doorhanger-milestone-ok-button = Погледај све
-    .accesskey = S
+cfr-doorhanger-milestone-ok-button = Прикажи све
+    .accesskey = П
 
 ## What’s New Panel Content for Firefox 76
 
@@ -327,3 +327,15 @@ cfr-whatsnew-bookmarking-body = Праћење омиљених страница
 
 cfr-whatsnew-cross-site-tracking-header = Свеобухватна заштита од праћења путем међустраничних колачића
 cfr-whatsnew-cross-site-tracking-body = Сада можете да укључите побољшану заштиту од праћења помоћу колачића. { -brand-short-name } може да изолује ваше активности и податке на сајту на ком се тренутно налазите, спречавајући да се подаци сачувани у прегледачу преносе на друге сајтове.
+
+## Full Video Support CFR message
+
+cfr-doorhanger-video-support-header =
+    Ажурирајте { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "acc") }
+        [feminine] { -brand-short-name(case: "acc") }
+        [neuter] { -brand-short-name(case: "acc") }
+       *[other] програм { -brand-short-name }
+    } да бисте пустили видео
+cfr-doorhanger-video-support-primary-button = Ажурирај
+    .accesskey = А

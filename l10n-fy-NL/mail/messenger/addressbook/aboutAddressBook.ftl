@@ -24,6 +24,8 @@ about-addressbook-books-context-properties =
     .label = Eigenskippen
 about-addressbook-books-context-synchronize =
     .label = Syngronisearje
+about-addressbook-books-context-print =
+    .label = Ofdrukke…
 about-addressbook-books-context-delete =
     .label = Fuortsmite
 
@@ -35,6 +37,8 @@ about-addressbook-search =
     .placeholder = { $name } trochsykje
 about-addressbook-search-all =
     .placeholder = Alle adresboeken trochsykje
+about-addressbook-sort-button =
+    .title = Listfolchoarder wizigje
 about-addressbook-name-format-display =
     .label = Werjeftenamme
 about-addressbook-name-format-firstlast =

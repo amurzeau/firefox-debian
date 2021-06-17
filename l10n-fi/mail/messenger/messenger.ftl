@@ -50,6 +50,9 @@ folder-toolbar-toggle-folder-compact-view =
     .label = Tiivis näkymä
     .accesskey = T
 
+## Menu
+
+
 ## AppMenu
 
 # Since v89 we dropped the platforms distinction between Options or Preferences
@@ -58,6 +61,12 @@ appmenu-preferences =
     .label = Asetukset
 appmenu-addons-and-themes =
     .label = Lisäosat ja teemat
+
+## Context menu
+
+
+## Message header pane
+
 
 ## Action Button Context Menu
 
@@ -68,6 +77,13 @@ toolbar-context-menu-remove-extension =
     .label = Poista laajennus
     .accesskey = P
 
+## Message headers
+
+message-header-address-in-address-book-icon =
+    .alt = Osoite on osoitekirjassa
+message-header-address-not-in-address-book-icon =
+    .alt = Osoite ei ole osoitekirjassa
+
 ## Add-on removal warning
 
 # Variables:
@@ -75,3 +91,9 @@ toolbar-context-menu-remove-extension =
 addon-removal-title = Poistetaanko { $name }?
 addon-removal-confirmation-button = Poista
 addon-removal-confirmation-message = Poistetaanko { $name } ja siihen liittyvät asetukset sekä tiedot { -brand-short-name }ista?
+caret-browsing-prompt-title = Selaus kohdistimella
+caret-browsing-prompt-text = F7-näppäimellä voit ottaa käyttöön tai poistaa käytöstä selauksen kohdistimella. Tämän toiminnon ollessa päällä osassa sisällössä on liikuteltava kohdistin, jonka avulla voit näppäimistöllä valita tekstiä. Selataanko kohdistimella?
+caret-browsing-prompt-check-text = Älä kysy uudestaan.
+repair-text-encoding-button =
+    .label = Korjaa merkistökoodaus
+    .tooltiptext = Arvaa oikea merkistökoodaus viestin sisällöstä

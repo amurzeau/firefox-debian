@@ -16,6 +16,9 @@ about-rights-notification-text = O { -brand-short-name } é um software livre e 
 addons-and-themes-button =
     .label = Extensões e temas
     .tooltip = Gerenciar extensões
+redirect-msg-button =
+    .label = Redirecionar
+    .tooltiptext = Redirecionar mensagens selecionadas
 
 ## Folder Pane
 
@@ -50,6 +53,12 @@ folder-toolbar-toggle-folder-compact-view =
     .label = Visão compacta
     .accesskey = c
 
+## Menu
+
+redirect-msg-menuitem =
+    .label = Redirecionar
+    .accesskey = d
+
 ## AppMenu
 
 # Since v89 we dropped the platforms distinction between Options or Preferences
@@ -64,6 +73,18 @@ appmenu-help-exit-troubleshoot-mode =
     .label = Desativar modo de solução de problemas
 appmenu-help-more-troubleshooting-info =
     .label = Mais informações para resolver problemas
+appmenu-redirect-msg =
+    .label = Redirecionar
+
+## Context menu
+
+context-menu-redirect-msg =
+    .label = Redirecionar
+
+## Message header pane
+
+other-action-redirect-msg =
+    .label = Redirecionar
 
 ## Action Button Context Menu
 
@@ -88,3 +109,9 @@ message-header-address-not-in-address-book-icon =
 addon-removal-title = Remover { $name }?
 addon-removal-confirmation-button = Remover
 addon-removal-confirmation-message = Remover { $name } junto com suas configurações e dados do { -brand-short-name }?
+caret-browsing-prompt-title = Navegação com cursor do teclado
+caret-browsing-prompt-text = A tecla F7 ativa ou desativa a navegação com cursor do teclado. Este recurso coloca um cursor móvel em alguns conteúdos, permitindo selecionar texto usando o teclado. Quer ativar a navegação com cursor do teclado?
+caret-browsing-prompt-check-text = Não perguntar novamente.
+repair-text-encoding-button =
+    .label = Reparar codificação de texto
+    .tooltiptext = Estimar codificação de texto correta a partir do conteúdo da mensagem

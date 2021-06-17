@@ -5,12 +5,6 @@
 
 ## App Menu
 
-appmenuitem-update-banner2 =
-    .label-update-downloading = { -brand-shorter-name }-frissítés letöltése
-    .label-update-available = Frissítés érhető el – letöltés most
-    .label-update-manual = Frissítés érhető el – letöltés most
-    .label-update-unsupported = Nem frissíthető
-    .label-update-restart = Frissítés érhető el – újraindítás most
 appmenuitem-update-banner3 =
     .label-update-downloading = { -brand-shorter-name }-frissítés letöltése
     .label-update-available = Frissítés érhető el – letöltés most
@@ -23,6 +17,8 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = Új lap
 appmenuitem-new-window =
     .label = Új ablak
 appmenuitem-new-private-window =
@@ -35,14 +31,6 @@ appmenuitem-find-in-page =
     .label = Keresés az oldalon…
 appmenuitem-more-tools =
     .label = További eszközök
-appmenuitem-exit =
-    .label = Kilépés
-appmenu-menu-button-closed =
-    .tooltiptext = Alkalmazásmenü megnyitása
-    .label = { -brand-shorter-name }
-appmenu-menu-button-opened =
-    .tooltiptext = Alkalmazásmenü bezárása
-    .label = { -brand-shorter-name }
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -79,16 +67,12 @@ appmenu-remote-tabs-turn-on-sync =
     .label = Szinkronizálás bekapcsolása…
 appmenuitem-fxa-toolbar-sync-now2 = Szinkronizálás most
 appmenuitem-fxa-manage-account = Fiók kezelése
-appmenu-fxa-header =
-    .title = { -fxaccount-brand-name }
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
 appmenu-fxa-last-sync = Utoljára szinkronizálva: { $time }
     .label = Utoljára szinkronizálva: { $time }
-appmenu-fxa-sync-and-save-data =
-    .value = Adatok szinkronizálása és mentése
 appmenu-fxa-sync-and-save-data2 = Adatok szinkronizálása és mentése
 appmenu-fxa-signed-in-label = Bejelentkezés
 appmenu-fxa-setup-sync =
@@ -153,6 +137,15 @@ appmenu-manage-history =
     .label = Előzmények kezelése
 appmenu-reopen-all-tabs = Összes lap újranyitása
 appmenu-reopen-all-windows = Összes ablak újranyitása
+appmenu-restore-session =
+    .label = Előző munkamenet helyreállítása
+appmenu-clear-history =
+    .label = Előzmények törlése…
+appmenu-recent-history-subheader = Közelmúltbeli előzmények
+appmenu-recently-closed-tabs =
+    .label = Nemrég bezárt lapok
+appmenu-recently-closed-windows =
+    .label = Nemrég bezárt ablakok
 
 ## Help panel
 
@@ -200,3 +193,5 @@ appmenu-customizetoolbar =
 appmenu-taskmanager =
     .label = Feladatkezelő
 appmenu-developer-tools-subheader = Böngészőeszközök
+appmenu-developer-tools-extensions =
+    .label = Kiegészítők fejlesztőknek

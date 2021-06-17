@@ -11,6 +11,9 @@ remove-address-row-type = Ta bort fältet { $type }
 remove-address-row-type-label =
     .tooltiptext = Ta bort { $type }-fältet
 #   $type (String) - the type of the addressing row
+remove-address-row-button =
+    .title = Ta bort { $type }-fältet
+#   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
@@ -41,6 +44,9 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = Flytta till Dold kopia
     .accesskey = D
+pill-action-expand-list =
+    .label = Expandera lista
+    .accesskey = x
 
 # Attachment widget
 
@@ -160,3 +166,9 @@ many-public-recipients-bcc =
 many-public-recipients-ignore =
     .label = Håll mottagarna offentliga
     .accesskey = H
+
+## Notifications
+
+# Variables:
+# $identity (string) - The name of the used identity, most likely an email address.
+compose-missing-identity-warning = En unik identitet som matchar Från-adressen hittades inte. Meddelandet skickas med det aktuella Från-fältet och inställningar från identitet { $identity }.

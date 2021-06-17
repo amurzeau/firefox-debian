@@ -32,12 +32,42 @@ upgrade-dialog-new-secondary-button = 나중에
 # theme selection screen.
 upgrade-dialog-new-primary-win7-button = 확인
 
+## Pin Firefox screen
+##
+## These title, subtitle and button strings differ between platforms as they
+## match the OS' application context menu item action where Windows uses "pin"
+## and "taskbar" while macOS "keep" and "Dock" (proper noun).
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-pin-title =
+    { PLATFORM() ->
+        [macos] { -brand-short-name }를 Dock에 넣기
+       *[other] { -brand-short-name }를 작업 표시줄에 고정
+    }
+# The English macOS string avoids repeating "Keep" a third time, so if your
+# translations don't repeat anyway, the same string can be used cross-platform.
+upgrade-dialog-pin-subtitle =
+    { PLATFORM() ->
+        [macos] 최신 { -brand-short-name }에 쉽게 접근
+       *[other] 최신 { -brand-short-name }를 가까운 곳에 두기
+    }
+upgrade-dialog-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Dock에 넣기
+       *[other] 작업 표시줄에 고정
+    }
+upgrade-dialog-pin-secondary-button = 나중에
+
 ## Default browser screen
 
 # This title can be explicitly wrapped to control which words are on which line.
 upgrade-dialog-default-title = { -brand-short-name }를 기본 브라우저로 설정하시겠습니까?
 upgrade-dialog-default-subtitle = 탐색할 때 속도, 안전 및 개인 정보 보호 기능이 제공됩니다.
 upgrade-dialog-default-primary-button = 기본 브라우저로 설정
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-default-title-2 = { -brand-short-name }를 기본 브라우저로 설정
+upgrade-dialog-default-subtitle-2 = 탐색할 때 속도, 안전 및 개인 정보 보호 기능이 제공됩니다.
+upgrade-dialog-default-primary-button-2 = 기본 브라우저로 설정
 upgrade-dialog-default-secondary-button = 나중에
 
 ## Theme selection screen
@@ -46,6 +76,8 @@ upgrade-dialog-default-secondary-button = 나중에
 upgrade-dialog-theme-title =
     업데이트된 테마로
     산뜻하게 시작
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-theme-title-2 = 선명한 테마로 산뜻하게 시작
 upgrade-dialog-theme-system = 시스템 테마
     .title = 버튼, 메뉴 및 창에 운영 체제의 테마를 따름
 upgrade-dialog-theme-light = 밝게

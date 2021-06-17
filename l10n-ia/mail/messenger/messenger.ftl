@@ -16,6 +16,9 @@ about-rights-notification-text = { -brand-short-name } es un software gratuite e
 addons-and-themes-button =
     .label = Additivos e themas
     .tooltip = Gerer additivos e themas
+redirect-msg-button =
+    .label = Re-diriger
+    .tooltiptext = Re-dirige le message seligite
 
 ## Folder Pane
 
@@ -50,6 +53,12 @@ folder-toolbar-toggle-folder-compact-view =
     .label = Visualisation compacte
     .accesskey = c
 
+## Menu
+
+redirect-msg-menuitem =
+    .label = Re-diriger
+    .accesskey = d
+
 ## AppMenu
 
 # Since v89 we dropped the platforms distinction between Options or Preferences
@@ -64,6 +73,18 @@ appmenu-help-exit-troubleshoot-mode =
     .label = Disactivar le modo diagnostic
 appmenu-help-more-troubleshooting-info =
     .label = Altere informationes diagnostic
+appmenu-redirect-msg =
+    .label = Re-diriger
+
+## Context menu
+
+context-menu-redirect-msg =
+    .label = Re-diriger
+
+## Message header pane
+
+other-action-redirect-msg =
+    .label = Re-diriger
 
 ## Action Button Context Menu
 
@@ -88,3 +109,9 @@ message-header-address-not-in-address-book-icon =
 addon-removal-title = Remover { $name }?
 addon-removal-confirmation-button = Remover
 addon-removal-confirmation-message = Remove { $name } e su configuration e datos ex { -brand-short-name }?
+caret-browsing-prompt-title = Navigation a cursor
+caret-browsing-prompt-text = Premer sur F7 activa o disactiva le navigation a cursor. Iste functionalitate placia un cursor mobile intra alcun contento, permittente que tu selige texto con le claviero. Desira tu activar le navigation a cursor?
+caret-browsing-prompt-check-text = Non plus demandar.
+repair-text-encoding-button =
+    .label = Corriger le codification del texto:
+    .tooltiptext = Divina le correcte codification del texto ab le contento del message

@@ -18,6 +18,12 @@ permissions-session =
 permissions-allow =
     .label = Разрешить
     .accesskey = з
+permissions-button-off =
+    .label = Отключить
+    .accesskey = ю
+permissions-button-off-temporarily =
+    .label = Временно отключить
+    .accesskey = е
 permissions-site-name =
     .label = Веб-сайт
 permissions-status =
@@ -58,6 +64,10 @@ permissions-capabilities-listitem-block =
     .value = Блокировать
 permissions-capabilities-listitem-allow-session =
     .value = Разрешить на сессию
+permissions-capabilities-listitem-off =
+    .value = Отключить
+permissions-capabilities-listitem-off-temporarily =
+    .value = Временно отключить
 
 ## Invalid Hostname Dialog
 
@@ -77,6 +87,13 @@ permissions-exceptions-cookie-window =
     .title = Исключения — Куки и данные сайтов
     .style = { permissions-window.style }
 permissions-exceptions-cookie-desc = Вы можете указать, каким веб-сайтам разрешено всегда или никогда использовать куки и данные сайтов.  Введите точный адрес сайта и нажмите кнопку «Блокировать», «Разрешить на сессию» или «Разрешить».
+
+## Exceptions - HTTPS-Only Mode
+
+permissions-exceptions-https-only-window =
+    .title = Исключения — Режим «Только HTTPS»
+    .style = { permissions-window.style }
+permissions-exceptions-https-only-desc = Вы можете отключить Режим «Только HTTPS» для определённых веб-сайтов. { -brand-short-name } не будет пытаться переключать соединение на защищённый HTTPS для этих сайтов. Исключения не распространяются на приватные окна.
 
 ## Exceptions - Pop-ups
 

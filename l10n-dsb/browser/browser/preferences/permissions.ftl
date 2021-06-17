@@ -18,12 +18,18 @@ permissions-session =
 permissions-allow =
     .label = Dowóliś
     .accesskey = D
+permissions-button-off =
+    .label = Znjemóžniś
+    .accesskey = n
+permissions-button-off-temporarily =
+    .label = Nachylu znjemóžniś
+    .accesskey = c
 permissions-site-name =
     .label = Websedło
 permissions-status =
     .label = Status
 permissions-remove =
-    .label = Websedło wowónoźeś
+    .label = Websedło wotwónoźeś
     .accesskey = w
 permissions-remove-all =
     .label = Wšykne websedła wótwónoźeś
@@ -58,6 +64,10 @@ permissions-capabilities-listitem-block =
     .value = Blokěrowaś
 permissions-capabilities-listitem-allow-session =
     .value = Za pósejźenje dowóliś
+permissions-capabilities-listitem-off =
+    .value = Znjemóžnjony
+permissions-capabilities-listitem-off-temporarily =
+    .value = Nachylu znjemóžnjony
 
 ## Invalid Hostname Dialog
 
@@ -77,6 +87,13 @@ permissions-exceptions-cookie-window =
     .title = Wuwześa - cookieje a sedłowe daty
     .style = { permissions-window.style }
 permissions-exceptions-cookie-desc = Móžośo pódaś, kótare websedła směju pśecej abo njesměju nigda cookieje a sedłowe daty wužywaś. Zapišćo eksaktnu adresu sedła, kótarež cośo zastojaś a klikniśo pótom na Blokěrowaś, Za pósejźenje dowóliś abo Dowóliś.
+
+## Exceptions - HTTPS-Only Mode
+
+permissions-exceptions-https-only-window =
+    .title = Wuwześa - Modus Jano-HTTPS
+    .style = { permissions-window.style }
+permissions-exceptions-https-only-desc = Móžóśo modus Jano-HTTPS za wěste websedła znjemóžniś. { -brand-short-name } njewopytajo, zwisk za te sedła na wěsty HTTPS aktualizěrowaś. Wuwześa za priwatne wokna njepłaśe.
 
 ## Exceptions - Pop-ups
 

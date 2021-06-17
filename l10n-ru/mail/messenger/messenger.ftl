@@ -17,6 +17,9 @@ about-rights-notification-text = { -brand-short-name } — это бесплат
 addons-and-themes-button =
     .label = Дополнения и темы
     .tooltip = Управление своими дополнениями
+redirect-msg-button =
+    .label = Перенаправить
+    .tooltiptext = Перенаправить выбранное сообщение
 
 ## Folder Pane
 
@@ -51,6 +54,12 @@ folder-toolbar-toggle-folder-compact-view =
     .label = Компактный вид
     .accesskey = п
 
+## Menu
+
+redirect-msg-menuitem =
+    .label = Перенаправить
+    .accesskey = н
+
 ## AppMenu
 
 # Since v89 we dropped the platforms distinction between Options or Preferences
@@ -65,6 +74,18 @@ appmenu-help-exit-troubleshoot-mode =
     .label = Отключить безопасный режим
 appmenu-help-more-troubleshooting-info =
     .label = Информация для решения проблем
+appmenu-redirect-msg =
+    .label = Перенаправить
+
+## Context menu
+
+context-menu-redirect-msg =
+    .label = Перенаправить
+
+## Message header pane
+
+other-action-redirect-msg =
+    .label = Перенаправить
 
 ## Action Button Context Menu
 
@@ -89,3 +110,9 @@ message-header-address-not-in-address-book-icon =
 addon-removal-title = Удалить { $name }?
 addon-removal-confirmation-button = Удалить
 addon-removal-confirmation-message = Удалить { $name }, а также его конфигурацию и данные из { -brand-short-name }?
+caret-browsing-prompt-title = Активный курсор
+caret-browsing-prompt-text = Нажатие клавиши F7 включает или выключает режим активного курсора. В этом режиме, поместив курсор в текст, вы можете выделять текст с помощью клавиатуры. Включить этот режим?
+caret-browsing-prompt-check-text = Больше не спрашивать.
+repair-text-encoding-button =
+    .label = Исправить кодировку текста
+    .tooltiptext = Угадать правильную кодировку текста по содержимому сообщения

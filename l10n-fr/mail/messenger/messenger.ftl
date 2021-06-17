@@ -16,6 +16,9 @@ about-rights-notification-text = { -brand-short-name } est un logiciel libre et 
 addons-and-themes-button =
     .label = Modules complémentaires et thèmes
     .tooltip = Gérer vos modules complémentaires
+redirect-msg-button =
+    .label = Rediriger
+    .tooltiptext = Rediriger le message sélectionné
 
 ## Folder Pane
 
@@ -50,6 +53,12 @@ folder-toolbar-toggle-folder-compact-view =
     .label = Affichage compact
     .accesskey = c
 
+## Menu
+
+redirect-msg-menuitem =
+    .label = Rediriger
+    .accesskey = d
+
 ## AppMenu
 
 # Since v89 we dropped the platforms distinction between Options or Preferences
@@ -64,6 +73,18 @@ appmenu-help-exit-troubleshoot-mode =
     .label = Désactiver le mode de dépannage
 appmenu-help-more-troubleshooting-info =
     .label = Plus d’informations de dépannage
+appmenu-redirect-msg =
+    .label = Rediriger
+
+## Context menu
+
+context-menu-redirect-msg =
+    .label = Rediriger
+
+## Message header pane
+
+other-action-redirect-msg =
+    .label = Rediriger
 
 ## Action Button Context Menu
 
@@ -88,3 +109,9 @@ message-header-address-not-in-address-book-icon =
 addon-removal-title = Supprimer { $name } ?
 addon-removal-confirmation-button = Supprimer
 addon-removal-confirmation-message = Supprimer { $name } ainsi que sa configuration et ses données de { -brand-short-name } ?
+caret-browsing-prompt-title = Navigation au curseur
+caret-browsing-prompt-text = L’appui sur F7 active ou désactive la navigation au curseur. Cette fonction place un curseur déplaçable dans certains contenus, permettant de sélectionner du texte au clavier. Désirez-vous activer la navigation au curseur ?
+caret-browsing-prompt-check-text = Ne plus demander à l’avenir.
+repair-text-encoding-button =
+    .label = Réparer l’encodage du texte
+    .tooltiptext = Détermine l’encodage correct du texte en fonction du contenu

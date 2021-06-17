@@ -11,6 +11,9 @@ remove-address-row-type = It fjild { $type } fuortsmite
 remove-address-row-type-label =
     .tooltiptext = It fjild { $type } fuortsmite
 #   $type (String) - the type of the addressing row
+remove-address-row-button =
+    .title = It fjild { $type } fuortsmite
+#   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
@@ -158,3 +161,9 @@ many-public-recipients-bcc =
 many-public-recipients-ignore =
     .label = Untfangers iepenbier litte
     .accesskey = i
+
+## Notifications
+
+# Variables:
+# $identity (string) - The name of the used identity, most likely an email address.
+compose-missing-identity-warning = Der is gjin unike identiteit lyk oan it Fan-adres fûn. It berjocht sil ferstjoerd wurde mei it aktuele Fan-fjild en ynstellingen fan de identiteit fan { $identity }.

@@ -173,6 +173,9 @@ menu-view-page-basic-style =
 menu-view-charset =
     .label = Asettengel n uḍris
     .accesskey = s
+menu-view-repair-text-encoding =
+    .label = Ṣeggem asettengel n uḍris
+    .accesskey = g
 
 ## These should match what Safari and other Apple applications
 ## use on macOS.
@@ -227,6 +230,8 @@ menu-bookmarks-show-all =
     .label = Sken akk ticraḍ n yisebtar
 menu-bookmark-this-page =
     .label = Creḍ asebter-a
+menu-bookmarks-manage =
+    .label = Sefrek ticraḍ n yisebtar
 menu-bookmark-current-tab =
     .label = Creḍ iccer amiran
 menu-bookmark-edit =
@@ -254,15 +259,15 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Qqen ɣer { -brand-product-name }...
     .accesskey = q
+menu-tools-turn-on-sync =
+    .label = Rmed { -sync-brand-short-name }...
+    .accesskey = d
 menu-tools-addons-and-themes =
     .label = Izegrar d yisental
     .accesskey = I
 menu-tools-fxa-sign-in2 =
     .label = Kcem
     .accesskey = K
-menu-tools-turn-on-sync =
-    .label = Rmed { -sync-brand-short-name }...
-    .accesskey = d
 menu-tools-turn-on-sync2 =
     .label = Rmed amtawi…
     .accesskey = d
@@ -287,13 +292,6 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Talɣut ɣef usebter
     .accesskey = T
-menu-settings =
-    .label = Iɣewwaren
-    .accesskey =
-        { PLATFORM() ->
-            [windows] S
-           *[other] n
-        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -304,6 +302,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] w
            *[other] s
+        }
+menu-settings =
+    .label = Iɣewwaren
+    .accesskey =
+        { PLATFORM() ->
+            [windows] S
+           *[other] n
         }
 menu-tools-layout-debugger =
     .label = Amseγti n tneγruft
@@ -342,14 +347,12 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = Inegzumen n unasiw
     .accesskey = I
-menu-get-help =
-    .label = Awi tallelt
-    .accesskey = A
 menu-help-troubleshooting-info =
     .label = Talɣut n usellek
     .accesskey = Γ
-menu-help-taskmanager =
-    .label = Amsefrak n twuri
+menu-get-help =
+    .label = Awi tallelt
+    .accesskey = A
 menu-help-more-troubleshooting-info =
     .label = Ugar n talɣut n usellek
     .accesskey = T

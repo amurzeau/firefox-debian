@@ -5,12 +5,6 @@
 
 ## App Menu
 
-appmenuitem-update-banner2 =
-    .label-update-downloading = Emboguejy { -brand-shorter-name } ñembohekopyahu
-    .label-update-available = Embohekopyahukuaa — emboguejy ko’ág̃a
-    .label-update-manual = Embohekopyahukuaa — emboguejy ko’ág̃a
-    .label-update-unsupported = Ndaikatúi embohekopyahu
-    .label-update-restart = Embohekopyahukuaa — emoñepyrũjey ko’ág̃a
 appmenuitem-update-banner3 =
     .label-update-downloading = Amboguejy { -brand-shorter-name } ñembohekopyahu
     .label-update-available = Eipurukuaáma ñembohekopyahu — Emboguejy ko’ág̃a
@@ -23,6 +17,8 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = Tendayke pyahu
 appmenuitem-new-window =
     .label = Ovetã pyahu
 appmenuitem-new-private-window =
@@ -35,14 +31,6 @@ appmenuitem-find-in-page =
     .label = Kuatiaroguépe jejuhu…
 appmenuitem-more-tools =
     .label = Tembipuruve
-appmenuitem-exit =
-    .label = Ñesẽ
-appmenu-menu-button-closed =
-    .tooltiptext = Embojuruja tembipuru’i poravorã
-    .label = { -brand-shorter-name }
-appmenu-menu-button-opened =
-    .tooltiptext = Emboty tembipuru’i poravorã
-    .label = { -brand-shorter-name }
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -79,16 +67,12 @@ appmenu-remote-tabs-turn-on-sync =
     .label = Emyandy Ñembojuehe…
 appmenuitem-fxa-toolbar-sync-now2 = Embojuehe ko’ág̃a
 appmenuitem-fxa-manage-account = Mba’ete Ñangarekoha
-appmenu-fxa-header =
-    .title = { -fxaccount-brand-name }
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
 appmenu-fxa-last-sync = Ñembojuehe ipyahuvéva { $time }
     .label = Ñembojuehe ipyahuvéva { $time }
-appmenu-fxa-sync-and-save-data =
-    .value = Embojuehe ha eñongatu mba’ekuaarã
 appmenu-fxa-sync-and-save-data2 = Embojuehe ha eñongatu mba’ekuaarã
 appmenu-fxa-signed-in-label = Tembiapo ñepyrũ
 appmenu-fxa-setup-sync =
@@ -153,6 +137,15 @@ appmenu-manage-history =
     .label = Tembiasakue ñangareko
 appmenu-reopen-all-tabs = Embojurujajey opaite tendayke
 appmenu-reopen-all-windows = Embojurujajey opaite ovetã
+appmenu-restore-session =
+    .label = Tembiapopa’ũ ramovéva ñembojevy
+appmenu-clear-history =
+    .label = Tembiasakue ramovéva ñemopotĩ…
+appmenu-recent-history-subheader = Tembiasakue ramovéva
+appmenu-recently-closed-tabs =
+    .label = Tendayke oñembotyramóva
+appmenu-recently-closed-windows =
+    .label = Ovetã oñembotyramóva
 
 ## Help panel
 
@@ -200,3 +193,5 @@ appmenu-customizetoolbar =
 appmenu-taskmanager =
     .label = Tembiapo ñangarekohára
 appmenu-developer-tools-subheader = Kundahára Rembipuru
+appmenu-developer-tools-extensions =
+    .label = Jepysokue mboguatahárape g̃uarã

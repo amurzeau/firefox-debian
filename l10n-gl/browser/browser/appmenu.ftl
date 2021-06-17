@@ -5,12 +5,6 @@
 
 ## App Menu
 
-appmenuitem-update-banner2 =
-    .label-update-downloading = Estase a descargar unha actualización de { -brand-shorter-name }
-    .label-update-available = Actualización dispoñíbel — descargar agora
-    .label-update-manual = Actualización dispoñíbel — descargar agora
-    .label-update-unsupported = Non foi posíbel actualizar
-    .label-update-restart = Actualización dispoñíbel — reiniciar agora
 appmenuitem-update-banner3 =
     .label-update-downloading = A descargar a actualización de { -brand-shorter-name }
     .label-update-available = Actualización dispoñíbel — descargar agora
@@ -23,6 +17,8 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = Nova lapela
 appmenuitem-new-window =
     .label = Nova xanela
 appmenuitem-new-private-window =
@@ -35,14 +31,6 @@ appmenuitem-find-in-page =
     .label = Atopar na páxina…
 appmenuitem-more-tools =
     .label = Máis ferramentas
-appmenuitem-exit =
-    .label = Saír
-appmenu-menu-button-closed =
-    .tooltiptext = Abrir menú da aplicación
-    .label = { -brand-shorter-name }
-appmenu-menu-button-opened =
-    .tooltiptext = Pechar menú da aplicación
-    .label = { -brand-shorter-name }
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -79,16 +67,12 @@ appmenu-remote-tabs-turn-on-sync =
     .label = Activar a sincronización ...
 appmenuitem-fxa-toolbar-sync-now2 = Sincronizar agora
 appmenuitem-fxa-manage-account = Xestionar conta
-appmenu-fxa-header =
-    .title = { -fxaccount-brand-name }
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
 appmenu-fxa-last-sync = Última sincronización: { $time }
     .label = Última sincronización: { $time }
-appmenu-fxa-sync-and-save-data =
-    .value = Sincronizar e gardar datos
 appmenu-fxa-sync-and-save-data2 = Sincronizar e gardar datos
 appmenu-fxa-signed-in-label = Identificarse
 appmenu-fxa-setup-sync =
@@ -153,6 +137,15 @@ appmenu-manage-history =
     .label = Xestionar o historial
 appmenu-reopen-all-tabs = Volver abrir todas as lapelas
 appmenu-reopen-all-windows = Volver abrir todas as xanelas
+appmenu-restore-session =
+    .label = Restaurar a sesión anterior
+appmenu-clear-history =
+    .label = Borrar historial recente…
+appmenu-recent-history-subheader = Historial recente
+appmenu-recently-closed-tabs =
+    .label = Lapelas pechadas recentemente
+appmenu-recently-closed-windows =
+    .label = Xanelas pechadas recentemente
 
 ## Help panel
 
@@ -200,3 +193,5 @@ appmenu-customizetoolbar =
 appmenu-taskmanager =
     .label = Xestor de tarefas
 appmenu-developer-tools-subheader = Caixa de ferramentas do navegador
+appmenu-developer-tools-extensions =
+    .label = Extensións para desenvolvedores

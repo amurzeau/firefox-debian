@@ -11,6 +11,9 @@ remove-address-row-type = Remover o campo { $type }
 remove-address-row-type-label =
     .tooltiptext = Remover o campo { $type }
 #   $type (String) - the type of the addressing row
+remove-address-row-button =
+    .title = Remover o campo { $type }
+#   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
@@ -41,6 +44,9 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = Mover para Cco
     .accesskey = o
+pill-action-expand-list =
+    .label = Expandir lista
+    .accesskey = x
 
 # Attachment widget
 
@@ -160,3 +166,9 @@ many-public-recipients-bcc =
 many-public-recipients-ignore =
     .label = Manter públicos os destinatários
     .accesskey = M
+
+## Notifications
+
+# Variables:
+# $identity (string) - The name of the used identity, most likely an email address.
+compose-missing-identity-warning = Não foi encontrada uma identidade única correspondente ao endereço do remetente. A mensagem será enviada usando o campo De atual e as configurações da identidade { $identity }.

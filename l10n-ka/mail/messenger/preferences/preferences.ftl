@@ -47,7 +47,7 @@ privacy-main-header = პირადულობა
 privacy-passwords-header = პაროლები
 privacy-junk-header = ჯართი
 collection-header = { -brand-short-name } – მონაცემთა აღრიცხვა და გამოყენება
-collection-description = ჩვენ ვცდილობთ მოგცეთ არჩევანის უფლება და აღვრიცხოთ მხოლოდ ის მონაცემები, რომლებიც დაგვეხმარება, გავაუმჯობესოთ { -brand-short-name }. ჩვენ ყოველთვის დაგეკითხებით, პირადი ინფორმაციის მიღებამდე.
+collection-description = ჩვენ ვცდილობთ მოგცეთ არჩევანის უფლება და აღვრიცხოთ მხოლოდ ის მონაცემები, რომლებიც დაგვეხმარება, გავაუმჯობესოთ { -brand-short-name }. ყოველთვის დაგეკითხებით, პირადი ინფორმაციის მიღებამდე.
 collection-privacy-notice = პირადულობის დაცვის განაცხადი
 collection-health-report-telemetry-disabled = თქვენ გააუქმეთ ნებართვა და შედეგად, { -vendor-short-name } ვეღარ შეძლებს ტექნიკური და გამოყენების მონაცემების აღრიცხვას. აქამდე შეგროვებული ყველა მონაცემი, წაიშლება 30 დღეში.
 collection-health-report-telemetry-disabled-link = ვრცლად
@@ -122,14 +122,14 @@ focus-search-shortcut-alt =
     .key = k
 general-legend = { -brand-short-name } საწყისი გვერდი
 start-page-label =
-    .label = { -brand-short-name } სეანსის დაწყებისას საწყისი გვერდის წერილების არეში ჩვენება
-    .accesskey = W
+    .label = როცა { -brand-short-name } გაეშვება, გამოჩნდეს საწყისი გვერდი წერილების არეში
+    .accesskey = რ
 location-label =
     .value = მისამართი:
-    .accesskey = o
+    .accesskey = ი
 restore-default-label =
-    .label = ნაგულისხმების აღდგენა
-    .accesskey = R
+    .label = ნაგულისხმევის აღდგენა
+    .accesskey = ღ
 default-search-engine = ნაგულისხმევი საძიებო სისტემა
 add-search-engine =
     .label = ფაილიდან დამატება
@@ -162,7 +162,7 @@ app-icon-options =
 notification-settings = შეგიძლიათ გამორთოთ ნაგულისხმევი ხმოვანი სიგნალი და სხვა ნიშნები შეტყობინებების არეში, სისტემის პარამეტრებიდან.
 animated-alert-label =
     .label = გაფრთხილების ჩვენება
-    .accesskey = S
+    .accesskey = ვ
 customize-alert-label =
     .label = მორგება…
     .accesskey = გ
@@ -182,8 +182,8 @@ mail-custom-sound-label =
     .label = შემდეგი ხმოვანი ფაილის გამოყენება
     .accesskey = ყ
 mail-browse-sound-button =
-    .label = ნუსხა…
-    .accesskey = B
+    .label = ამორჩევა…
+    .accesskey = ო
 enable-gloda-search-label =
     .label = ერთიანი ძიებისა და გზავნილთა აღრიცხვის ჩართვა
     .accesskey = ე
@@ -337,17 +337,17 @@ action-column-label =
     .accesskey = A
 save-to-label =
     .label = ფაილების შენახვა…
-    .accesskey = S
+    .accesskey = ნ
 choose-folder-label =
     .label =
         { PLATFORM() ->
             [macos] შერჩევა…
-           *[other] ნუსხა…
+           *[other] ამორჩევა…
         }
     .accesskey =
         { PLATFORM() ->
-            [macos] C
-           *[other] B
+            [macos] ე
+           *[other] ო
         }
 always-ask-label =
     .label = ფაილების შესანახი მდებარეობის ყოველ ჯერზე მითითება

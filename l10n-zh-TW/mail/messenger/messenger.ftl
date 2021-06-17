@@ -15,6 +15,9 @@ about-rights-notification-text = { -brand-short-name } 是一套自由且開放�
 addons-and-themes-button =
     .label = 附加元件與佈景主題
     .tooltip = 管理您的附加元件
+redirect-msg-button =
+    .label = 重導
+    .tooltiptext = 將選擇的訊息重新導向
 
 ## Folder Pane
 
@@ -49,6 +52,12 @@ folder-toolbar-toggle-folder-compact-view =
     .label = 精簡檢視
     .accesskey = C
 
+## Menu
+
+redirect-msg-menuitem =
+    .label = 重導
+    .accesskey = D
+
 ## AppMenu
 
 # Since v89 we dropped the platforms distinction between Options or Preferences
@@ -63,6 +72,18 @@ appmenu-help-exit-troubleshoot-mode =
     .label = 關閉疑難排解模式
 appmenu-help-more-troubleshooting-info =
     .label = 更多疑難排解資訊
+appmenu-redirect-msg =
+    .label = 重導
+
+## Context menu
+
+context-menu-redirect-msg =
+    .label = 重導
+
+## Message header pane
+
+other-action-redirect-msg =
+    .label = 重導
 
 ## Action Button Context Menu
 
@@ -87,3 +108,9 @@ message-header-address-not-in-address-book-icon =
 addon-removal-title = 要移除 { $name } 嗎？
 addon-removal-confirmation-button = 移除
 addon-removal-confirmation-message = 要從 { -brand-short-name } 移除 { $name }，以及其設定與儲存的資料嗎？
+caret-browsing-prompt-title = 鍵盤瀏覽
+caret-browsing-prompt-text = 按下 F7 鍵可切換是否開啟「鍵盤瀏覽」功能。此功能可在某些內容中顯示游標，讓您只用鍵盤就選取文字。您確定要開啟「鍵盤瀏覽」嗎？
+caret-browsing-prompt-check-text = 不要再問我。
+repair-text-encoding-button =
+    .label = 修復文字編碼
+    .tooltiptext = 根據訊息內容猜測正確的文字編碼

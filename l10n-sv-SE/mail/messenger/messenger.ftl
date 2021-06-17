@@ -16,6 +16,9 @@ about-rights-notification-text = { -brand-short-name } är fri programvara baser
 addons-and-themes-button =
     .label = Tillägg och teman
     .tooltip = Hantera dina tillägg
+redirect-msg-button =
+    .label = Omdirigera
+    .tooltiptext = Omdirigera valt meddelande
 
 ## Folder Pane
 
@@ -50,6 +53,12 @@ folder-toolbar-toggle-folder-compact-view =
     .label = Kompakt vy
     .accesskey = K
 
+## Menu
+
+redirect-msg-menuitem =
+    .label = Omdirigera
+    .accesskey = d
+
 ## AppMenu
 
 # Since v89 we dropped the platforms distinction between Options or Preferences
@@ -64,6 +73,18 @@ appmenu-help-exit-troubleshoot-mode =
     .label = Stäng av felsökningsläge
 appmenu-help-more-troubleshooting-info =
     .label = Mer felsökningsinformation
+appmenu-redirect-msg =
+    .label = Omdirigera
+
+## Context menu
+
+context-menu-redirect-msg =
+    .label = Omdirigera
+
+## Message header pane
+
+other-action-redirect-msg =
+    .label = Omdirigera
 
 ## Action Button Context Menu
 
@@ -88,3 +109,9 @@ message-header-address-not-in-address-book-icon =
 addon-removal-title = Ta bort { $name }?
 addon-removal-confirmation-button = Ta bort
 addon-removal-confirmation-message = Ta bort { $name } samt dess konfiguration och data från { -brand-short-name }?
+caret-browsing-prompt-title = Textmarkörläge
+caret-browsing-prompt-text = Genom att trycka på F7 aktiveras eller inaktiveras textmarkörläge. Denna funktion placerar en rörlig markör i innehållet, så att du kan välja text med tangentbordet. Vill du aktivera textmarkörläge?
+caret-browsing-prompt-check-text = Fråga inte igen.
+repair-text-encoding-button =
+    .label = Reparera textkodning
+    .tooltiptext = Gissa korrekt textkodning från meddelandets innehåll

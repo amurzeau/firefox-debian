@@ -32,12 +32,42 @@ upgrade-dialog-new-secondary-button = Nic nětko
 # theme selection screen.
 upgrade-dialog-new-primary-win7-button = W porjadku, sym zrozumił!
 
+## Pin Firefox screen
+##
+## These title, subtitle and button strings differ between platforms as they
+## match the OS' application context menu item action where Windows uses "pin"
+## and "taskbar" while macOS "keep" and "Dock" (proper noun).
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-pin-title =
+    { PLATFORM() ->
+        [macos] { -brand-short-name } we wašim doku wobchować
+       *[other] { -brand-short-name } k wašej nadawkowej lajsće připjeć
+    }
+# The English macOS string avoids repeating "Keep" a third time, so if your
+# translations don't repeat anyway, the same string can be used cross-platform.
+upgrade-dialog-pin-subtitle =
+    { PLATFORM() ->
+        [macos] Wobstarajće sej lochki přistup k dotal najčerstwišemu { -brand-short-name }.
+       *[other] Wobchowajće najčerstwiši { -brand-short-name } k ruce.
+    }
+upgrade-dialog-pin-primary-button =
+    { PLATFORM() ->
+        [macos] W doku wobchować
+       *[other] K nadawkowej lajsće připjeć
+    }
+upgrade-dialog-pin-secondary-button = Nic nětko
+
 ## Default browser screen
 
 # This title can be explicitly wrapped to control which words are on which line.
 upgrade-dialog-default-title = Chceće { -brand-short-name } k swojemu standardnemu wobhladowakej činić?
 upgrade-dialog-default-subtitle = Dóstanće spěšnosć, wěstotu a priwatnosć kóždy raz, hdyž přehladujeće.
 upgrade-dialog-default-primary-button = Jako standardny wobhladowak nastajić
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-default-title-2 = { -brand-short-name } k swojemu standardnemu wobhladowakej činić
+upgrade-dialog-default-subtitle-2 = Stajće spěšnosć, wěstotu a priwatnosć na awtopilot.
+upgrade-dialog-default-primary-button-2 = Jako standardny wobhladowak nastajić
 upgrade-dialog-default-secondary-button = Nic nětko
 
 ## Theme selection screen
@@ -46,6 +76,8 @@ upgrade-dialog-default-secondary-button = Nic nětko
 upgrade-dialog-theme-title =
     Mějće čisty start
     ze zaktualizowanej drastu
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-theme-title-2 = Započńće z čistym startom z čerstwej drastu
 upgrade-dialog-theme-system = Systemowa drasta
     .title = Drastu dźěłoweho systema za tłóčatka, menije a wokna wužiwać
 upgrade-dialog-theme-light = Swětły

@@ -17,6 +17,9 @@ about-rights-notification-text = { -brand-short-name } je svobodný a otevřený
 addons-and-themes-button =
     .label = Doplňky a vzhledy
     .tooltip = Otevře správce doplňků
+redirect-msg-button =
+    .label = Přesměrovat
+    .tooltiptext = Přesměruje vybranou zprávu
 
 ## Folder Pane
 
@@ -51,6 +54,12 @@ folder-toolbar-toggle-folder-compact-view =
     .label = Kompaktní zobrazení
     .accesskey = K
 
+## Menu
+
+redirect-msg-menuitem =
+    .label = Přesměrovat
+    .accesskey = m
+
 ## AppMenu
 
 # Since v89 we dropped the platforms distinction between Options or Preferences
@@ -65,6 +74,18 @@ appmenu-help-exit-troubleshoot-mode =
     .label = Ukončit režim řešení potíží
 appmenu-help-more-troubleshooting-info =
     .label = Další technické informace
+appmenu-redirect-msg =
+    .label = Přesměrovat
+
+## Context menu
+
+context-menu-redirect-msg =
+    .label = Přesměrovat
+
+## Message header pane
+
+other-action-redirect-msg =
+    .label = Přesměrovat
 
 ## Action Button Context Menu
 
@@ -74,6 +95,13 @@ toolbar-context-menu-manage-extension =
 toolbar-context-menu-remove-extension =
     .label = Odebrat rozšíření
     .accesskey = d
+
+## Message headers
+
+message-header-address-in-address-book-icon =
+    .alt = Adresa je v kontaktech
+message-header-address-not-in-address-book-icon =
+    .alt = Adresa není v kontaktech
 
 ## Add-on removal warning
 
@@ -88,3 +116,6 @@ addon-removal-confirmation-message =
         [neuter] { -brand-short-name(case: "gen") }
        *[other] aplikace { -brand-short-name }
     }?
+caret-browsing-prompt-title = Procházení stránky
+caret-browsing-prompt-text = Stisknutím klávesy F7 zapnete či vypnete funkci Procházení stránky. Ta umístí do obsahu textový kurzor, který vám umožní vybírat text pomocí klávesnice. Chcete zapnout funkci Procházení stránky?
+caret-browsing-prompt-check-text = Příště se už neptat.

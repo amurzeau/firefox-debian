@@ -18,6 +18,9 @@ about-rights-notification-text = { -brand-short-name } je darmotna softwara wote
 addons-and-themes-button =
     .label = Přidatki a drasty
     .tooltip = Waše přidatki rjadować
+redirect-msg-button =
+    .label = Dale sposrědkować
+    .tooltiptext = Wubranu powěsć dale sposrědkować
 
 ## Folder Pane
 
@@ -52,6 +55,12 @@ folder-toolbar-toggle-folder-compact-view =
     .label = Kompaktny napohlad
     .accesskey = K
 
+## Menu
+
+redirect-msg-menuitem =
+    .label = Dale sposrědkować
+    .accesskey = D
+
 ## AppMenu
 
 # Since v89 we dropped the platforms distinction between Options or Preferences
@@ -66,6 +75,18 @@ appmenu-help-exit-troubleshoot-mode =
     .label = Modus za rozrisanje problemow znjemóžnić
 appmenu-help-more-troubleshooting-info =
     .label = Dalše informacije za rozrisowanje problemow
+appmenu-redirect-msg =
+    .label = Dale sposrědkować
+
+## Context menu
+
+context-menu-redirect-msg =
+    .label = Dale sposrědkować
+
+## Message header pane
+
+other-action-redirect-msg =
+    .label = Dale sposrědkować
 
 ## Action Button Context Menu
 
@@ -90,3 +111,9 @@ message-header-address-not-in-address-book-icon =
 addon-removal-title = { $name } wotstronić?
 addon-removal-confirmation-button = Wotstronić
 addon-removal-confirmation-message = { $name } a jeho konfiguraciju a daty z { -brand-short-name } wotstronić?
+caret-browsing-prompt-title = Tastaturowa nawigacija
+caret-browsing-prompt-text = Tłóčenje tasty F7 zapina abo wupina tastaturowu nawigaciju. Tuta funkcija staja pohibliwy kursor do wobsaha a dowola wam tekst z tastaturu wubrać. Chceće nětko tastaturowu nawigaciju zapinać?
+caret-browsing-prompt-check-text = Hižo so njeprašeć.
+repair-text-encoding-button =
+    .label = Tekstowe kodowanje reparować
+    .tooltiptext = Korektne tekstowe kondowanje za wobsaha powěsće wuhódać

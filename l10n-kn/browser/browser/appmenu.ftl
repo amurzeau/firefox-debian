@@ -10,6 +10,8 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = ಹೊಸ ಹಾಳೆ
 appmenuitem-new-window =
     .label = ಹೊಸ ಕಿಟಕಿ
 appmenuitem-new-private-window =
@@ -37,30 +39,26 @@ appmenuitem-save-page =
 
 ## History panel
 
+appmenu-restore-session =
+    .label = ಹಿಂದಿನ ಅಧಿವೇಶನವನ್ನು ಮರಳಿ ಸ್ಥಾಪಿಸು
+appmenu-clear-history =
+    .label = ಇತ್ತೀಚಿನ ಇತಿಹಾಸವನ್ನು ಅಳಿಸಿಹಾಕು…
+appmenu-recent-history-subheader = ಇತ್ತೀಚಿನ ಇತಿಹಾಸ
+appmenu-recently-closed-tabs =
+    .label = ಇತ್ತೀಚೆಗೆ ಮುಚ್ಚಲಾದ ಟ್ಯಾಬ್‌ಗಳು
+appmenu-recently-closed-windows =
+    .label = ಇತ್ತೀಚಿಗೆ ಮುಚ್ಚಲಾದ ಕಿಟಕಿಗಳು
 
 ## Help panel
 
 appmenu-about =
     .label = About { -brand-shorter-name }
     .accesskey = A
-appmenu-help-troubleshooting-info =
-    .label = Troubleshooting ಮಾಹಿತಿ
-    .accesskey = T
 appmenu-help-report-site-issue =
     .label = ಜಾಲದ ತೊಂದರೆ ವರದಿ ಮಾಡಿ…
 appmenu-help-feedback-page =
     .label = Submit ಅಭಿಪ್ರಾಯ…
     .accesskey = S
-
-## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
-## are mutually exclusive, so it's possible to use the same accesskey for both.
-
-appmenu-help-safe-mode-without-addons =
-    .label = Restart ಆಡ್‌-ಆನ್‌ಗಳನ್ನು ಅಶಕ್ತಗೊಳಿಸಿದ ನಂತರ…
-    .accesskey = R
-appmenu-help-safe-mode-with-addons =
-    .label = Restart ಆಡ್‌-ಆನ್‌ಗಳನ್ನು ಅಶಕ್ತಗೊಳಿಸಿದ ನಂತರ
-    .accesskey = R
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

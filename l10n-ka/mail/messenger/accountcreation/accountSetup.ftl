@@ -20,7 +20,6 @@ account-setup-name-input =
     .placeholder = პეტრე პავლიაშვილი
 account-setup-name-info-icon =
     .title = სახელი, რომლებსაც სხვები დაინახავენ
-account-setup-name-warning = გთხოვთ მიუთითოთ თქვენი სახელი
 account-setup-name-warning-icon =
     .title = { account-setup-name-warning }
 account-setup-email-label = ელფოსტის მისამართი
@@ -29,7 +28,6 @@ account-setup-email-input =
     .placeholder = petre.pavliashvili@example.com
 account-setup-email-info-icon =
     .title = თქვენი მიმდინარე ელფოსტის მისამართი
-account-setup-email-warning = ელფოსტის არასწორი მისამართი
 account-setup-email-warning-icon =
     .title = { account-setup-email-warning }
 account-setup-password-label = პაროლი
@@ -122,6 +120,15 @@ account-setup-incoming-title = მიღებული
 account-setup-outgoing-title = გაგზავნილი
 account-setup-username-title = მომხმარებლის სახელი
 account-setup-exchange-title = სერვერი
+account-setup-result-smtp = SMTP
+account-setup-result-no-encryption = დაშიფვრის გარეშე
+account-setup-result-ssl = SSL/TLS
+account-setup-result-starttls = STARTTLS
+account-setup-result-outgoing-existing = არსებული გამავალი SMTP სერვერით სარგებლობა
+# Variables:
+#  $incoming (String): The email/username used to log into the incoming server
+#  $outgoing (String): The email/username used to log into the outgoing server
+account-setup-result-username-different = შემომავალი: { $incoming }, გამავალი: { $outgoing }
 
 ## Error messages
 
@@ -131,32 +138,70 @@ account-setup-credentials-wrong = შესვლა ვერ მოხერ�
 account-setup-find-settings-failed = { -brand-short-name } ვერ ახერხებს პარამეტრების მოძიებას, თქვენი ელფოსტის ანგარიშისთვის.
 account-setup-exchange-config-unverifiable = გამართვის პარამეტრების დამოწმება ვერ მოხერხდა. თუ თქვენი სახელი და პაროლი სწორია, შესაძლოა სერვერის ხელმძღვანელობამ გათიშა აღნიშნული პარამეტრები თქვენი ანგარიშისთვის. სცადეთ სხვა ოქმის მითითება.
 
-## Manual config area
+## Manual configuration area
 
 account-setup-manual-config-title = სერვერის პარამეტრები
-account-setup-incoming-protocol-label = შემომავალი ოქმი
+account-setup-incoming-server-legend = შემომავალი სერვერი
+account-setup-protocol-label = ოქმი:
 protocol-imap-option = { account-setup-result-imap }
 protocol-pop-option = { account-setup-result-pop }
-account-setup-outgoing-protocol-label = გამავალი ოქმი
-outgoing-protocol = SMTP
-account-setup-incoming-server-label = შემომავალი სერვერი
-account-setup-outgoing-server-label = გამავალი სერვერი
-account-setup-incoming-port-label = შემომავალი პორტი
-account-setup-outoing-port-label = გამავალი პორტი
-account-setup-incoming-ssl-label = შემომავალი SSL
-account-setup-outgoing-ssl-label = გამავალი SSL
+protocol-exchange-option = { account-setup-result-exchange }
+account-setup-hostname-label = ჰოსტის სახელი:
+account-setup-port-label = პორტი:
+    .title = მიუთითეთ პორტის ნორმარდ 0, თვითდადგენისთვის
+account-setup-auto-description = { -brand-short-name } შეეცდება თავად შეავსოს დარჩენილი ველები.
+account-setup-ssl-label = კავშირის უსაფრთხოება:
+account-setup-outgoing-server-legend = გამავალი სერვერი
+
+## Incoming/Outgoing SSL Authentication options
+
 ssl-autodetect-option = თვითამოცნობა
+ssl-no-authentication-option = ანგარიშზე შესვლის გარეშე
+ssl-cleartext-password-option = ჩვეულებრივი პაროლი
+ssl-encrypted-password-option = დაშიფრული პაროლი
+
+## Incoming/Outgoing SSL options
+
 ssl-noencryption-option = არცერთი
-ssl-starttls-option = STARTTLS
-ssl-tls-option = SSL/TLS
-account-setup-incoming-auth-label = შემომავალი დამოწმება
-account-setup-outgoing-auth-label = გამავალი დამოწმება
-account-setup-incoming-username-label = შემომავალი მომხმარებლის სახელი
-account-setup-outgoing-username-label = გამავალი მომხმარებლის სახელი
+account-setup-auth-label = ანგარიშზე შესვლის მეთოდი:
+account-setup-username-label = მომხმარებელი:
 account-setup-advanced-setup-button = გაფართოებული გამართვა
     .accesskey = ო
 
-## Warning insecure server
+## Warning insecure server dialog
 
+account-setup-insecure-title = გაფრთხილება!
+account-setup-insecure-incoming-title = შემომავალის პარამეტრები:
+account-setup-insecure-outgoing-title = გამავალის პარამეტრები:
+# Variables:
+#  $server (String): The name of the hostname of the server the user was trying to connect to.
+account-setup-warning-cleartext = <b>{ $server }</b> არ იყენებს დაშიფვრას.
+account-setup-warning-cleartext-details = ფოსტის დაუცველი სერვერები არ იყენებს დაშიფრულ კავშირებს პაროლებისა და პირადი ინფორმაციის უსაფრთხოებისთვის. ამ სერვერთან მიერთებით, შესაძლოა გამჟღავნდეს თქვენი პაროლი და პირადი მონაცემები.
 account-setup-insecure-server-checkbox = ვაცნობიერებ საფრთხეებს
     .accesskey = ც
+account-setup-insecure-description = { -brand-short-name } საშუალებას გაძლევთ ისარგებლოთ ელფოსტით, მოცემული გამართვით. თუმცა, მაინც გირჩევთ მიმართოთ ხელმძღვანელობას ან ელფოსტის მომწოდებელს, ამ დაუცველი კავშირების თაობაზე. ვრცლად იხილეთ <a data-l10n-name="thunderbird-faq-link">Thunderbird ᲮᲓᲙ</a>.
+insecure-dialog-cancel-button = პარამეტრების შეცვლა
+    .accesskey = შ
+insecure-dialog-confirm-button = დადასტურება
+    .accesskey = ტ
+
+## Warning Exchange confirmation dialog
+
+# Variables:
+#  $domain (String): The name of the server where the configuration was found, e.g. rackspace.com.
+exchange-dialog-question = { -brand-short-name } პოულობს თქვენი ანგარიშის მონაცემებს { $domain }-ზე. გსურთ, განაგრძოთ და წარადგინოთ ანგარიშის მონაცემები?
+exchange-dialog-confirm-button = შესვლა
+exchange-dialog-cancel-button = გაუქმება
+
+## Alert dialogs
+
+account-setup-creation-error-title = შეცდომა ანგარიშის შექმნისას
+account-setup-error-server-exists = შემომავალი სერვერი უკვე არსებობს.
+account-setup-confirm-advanced-title = დამატებით გამართვის დადასტურება
+account-setup-confirm-advanced-description = ეს ფანჯარა დაიხურება და ანგარიში შეიქმნება მიმდინარე პარამეტრებით, იმ შემთხვევაშიც, თუ არასწორადაა გამართული. გსურთ, განაგრძოთ?
+
+## Addon installation section
+
+account-setup-addon-install-title = ჩადგმა
+account-setup-addon-install-intro = ეს მესამე მხარის დამატება მოგცემთ წვდომის შესაძლებლობას თქვენს ელფოსტის ანგარიშთან ამ სერვერზე:
+account-setup-addon-no-protocol = ელფოსტის ამ სერვერზე, სამწუხაროდ არაა მხარდაჭერილი ღია ოქმები. { account-setup-addon-install-intro }

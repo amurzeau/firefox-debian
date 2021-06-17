@@ -18,6 +18,12 @@ permissions-session =
 permissions-allow =
     .label = Αποδοχή
     .accesskey = Α
+permissions-button-off =
+    .label = Απενεργοποίηση
+    .accesskey = ν
+permissions-button-off-temporarily =
+    .label = Προσωρινή απενεργοποίηση
+    .accesskey = α
 permissions-site-name =
     .label = Ιστοσελίδα
 permissions-status =
@@ -58,11 +64,15 @@ permissions-capabilities-listitem-block =
     .value = Φραγή
 permissions-capabilities-listitem-allow-session =
     .value = Αποδοχή για τη συνεδρία
+permissions-capabilities-listitem-off =
+    .value = Ανενεργό
+permissions-capabilities-listitem-off-temporarily =
+    .value = Προσωρινά ανενεργό
 
 ## Invalid Hostname Dialog
 
 permissions-invalid-uri-title = Άκυρο όνομα συστήματος
-permissions-invalid-uri-label = Παρακαλώ εισάγετε ένα έγκυρο όνομα συστήματος
+permissions-invalid-uri-label = Παρακαλώ εισαγάγετε ένα έγκυρο όνομα υπολογιστή
 
 ## Exceptions - Tracking Protection
 
@@ -77,6 +87,13 @@ permissions-exceptions-cookie-window =
     .title = Εξαιρέσεις - Cookies και δεδομένα ιστοσελίδων
     .style = { permissions-window.style }
 permissions-exceptions-cookie-desc = Μπορείτε να καθορίσετε σε ποιες ιστοσελίδες επιτρέπεται πάντα ή δεν επιτρέπεται ποτέ η χρήση των cookies και των δεδομένων ιστοσελίδων. Πληκτρολογήστε την ακριβή διεύθυνση της ιστοσελίδας που θέλετε να διαχειριστείτε και, στη συνέχεια, επιλέξτε "Φραγή", "Αποδοχή για αυτή τη συνεδρία, ή "Αποδοχή".
+
+## Exceptions - HTTPS-Only Mode
+
+permissions-exceptions-https-only-window =
+    .title = Εξαιρέσεις - Λειτουργία μόνο-HTTPS
+    .style = { permissions-window.style }
+permissions-exceptions-https-only-desc = Μπορείτε να απενεργοποιήσετε τη λειτουργία μόνο-HTTPS για συγκεκριμένες ιστοσελίδες. Το { -brand-short-name } δεν θα επιχειρήσει να αναβαθμίσει τη σύνδεση, ώστε να εξασφαλίσει HTTPS για αυτές τις ιστοσελίδες. Οι εξαιρέσεις δεν ισχύουν για ιδιωτικά παράθυρα.
 
 ## Exceptions - Pop-ups
 

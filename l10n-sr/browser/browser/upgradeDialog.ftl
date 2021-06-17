@@ -55,8 +55,43 @@ upgrade-dialog-new-primary-pin-button =
         [neuter] { -brand-short-name(case: "acc") }
        *[other] програм { -brand-short-name }
     } на траку задатака
+upgrade-dialog-new-primary-pin-alt-button = Закачи на траку задатака
 upgrade-dialog-new-primary-theme-button = Одабери тему
 upgrade-dialog-new-secondary-button = Не сада
+# This string is only shown on Windows 7, where we intentionally suppress the
+# theme selection screen.
+upgrade-dialog-new-primary-win7-button = Разумем
+
+## Pin Firefox screen
+##
+## These title, subtitle and button strings differ between platforms as they
+## match the OS' application context menu item action where Windows uses "pin"
+## and "taskbar" while macOS "keep" and "Dock" (proper noun).
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-pin-title =
+    { PLATFORM() ->
+        [macos]
+            Додај { -brand-short-name.gender ->
+                [masculine] { -brand-short-name(case: "acc") }
+                [feminine] { -brand-short-name(case: "acc") }
+                [neuter] { -brand-short-name(case: "acc") }
+               *[other] програм { -brand-short-name }
+            } на док
+       *[other]
+            Закачи { -brand-short-name.gender ->
+                [masculine] { -brand-short-name(case: "acc") }
+                [feminine] { -brand-short-name(case: "acc") }
+                [neuter] { -brand-short-name(case: "acc") }
+               *[other] програм { -brand-short-name }
+            } на траку задатака
+    }
+upgrade-dialog-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Додај на док
+       *[other] Закачи на траку задатака
+    }
+upgrade-dialog-pin-secondary-button = Не сада
 
 ## Default browser screen
 
@@ -70,6 +105,16 @@ upgrade-dialog-default-title =
     } као подразумевани прегледач?
 upgrade-dialog-default-subtitle = Претражујте интернет брзо, безбедно и приватно.
 upgrade-dialog-default-primary-button = Постави као подразумевани прегледач
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-default-title-2 =
+    Постави { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "acc") }
+        [feminine] { -brand-short-name(case: "acc") }
+        [neuter] { -brand-short-name(case: "acc") }
+       *[other] програм { -brand-short-name }
+    } као подразумевани прегледач
+upgrade-dialog-default-subtitle-2 = Брзина, безбедност и приватност пре свега.
+upgrade-dialog-default-primary-button-2 = Постави као подразумевани прегледач
 upgrade-dialog-default-secondary-button = Не сада
 
 ## Theme selection screen

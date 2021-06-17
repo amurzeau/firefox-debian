@@ -32,12 +32,42 @@ upgrade-dialog-new-secondary-button = Nicht jetzt
 # theme selection screen.
 upgrade-dialog-new-primary-win7-button = OK, verstanden!
 
+## Pin Firefox screen
+##
+## These title, subtitle and button strings differ between platforms as they
+## match the OS' application context menu item action where Windows uses "pin"
+## and "taskbar" while macOS "keep" and "Dock" (proper noun).
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-pin-title =
+    { PLATFORM() ->
+        [macos] Behalte { -brand-short-name } im Dock
+       *[other] Hefte { -brand-short-name } an die Taskleiste
+    }
+# The English macOS string avoids repeating "Keep" a third time, so if your
+# translations don't repeat anyway, the same string can be used cross-platform.
+upgrade-dialog-pin-subtitle =
+    { PLATFORM() ->
+        [macos] Habe den neuesten { -brand-short-name } immer zur Hand.
+       *[other] Habe den neuesten { -brand-short-name } immer zur Hand.
+    }
+upgrade-dialog-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Im Dock behalten
+       *[other] An die Taskleiste anheften
+    }
+upgrade-dialog-pin-secondary-button = Nicht jetzt
+
 ## Default browser screen
 
 # This title can be explicitly wrapped to control which words are on which line.
 upgrade-dialog-default-title = { -brand-short-name } als Standardbrowser festlegen?
 upgrade-dialog-default-subtitle = Holen Sie sich Geschwindigkeit, Sicherheit und Datenschutz bei jedem Surfen.
 upgrade-dialog-default-primary-button = Als Standardbrowser festlegen
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-default-title-2 = Lege { -brand-short-name } als Standard fest
+upgrade-dialog-default-subtitle-2 = Schalte Geschwindigkeit, Sicherheit und Datenschutz auf Autopilot.
+upgrade-dialog-default-primary-button-2 = Als Standardbrowser festlegen
 upgrade-dialog-default-secondary-button = Nicht jetzt
 
 ## Theme selection screen
@@ -46,6 +76,8 @@ upgrade-dialog-default-secondary-button = Nicht jetzt
 upgrade-dialog-theme-title =
     Starte neu durch
     mit einem aktualisierten Theme
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-theme-title-2 = Starte neu durch mit einem frischen Theme
 upgrade-dialog-theme-system = System-Theme
     .title = Den Betriebssystemeinstellungen für Schaltflächen, Menüs und Fenster folgen
 upgrade-dialog-theme-light = Hell

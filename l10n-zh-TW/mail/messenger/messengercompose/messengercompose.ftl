@@ -11,6 +11,9 @@ remove-address-row-type = 移除 { $type } 欄位
 remove-address-row-type-label =
     .tooltiptext = 移除 { $type } 欄位
 #   $type (String) - the type of the addressing row
+remove-address-row-button =
+    .title = 移除 { $type } 欄位
+#   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
@@ -40,6 +43,9 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = 移到密件副本
     .accesskey = b
+pill-action-expand-list =
+    .label = 展開清單
+    .accesskey = x
 
 # Attachment widget
 
@@ -155,3 +161,9 @@ many-public-recipients-bcc =
 many-public-recipients-ignore =
     .label = 保持收件者名單公開
     .accesskey = K
+
+## Notifications
+
+# Variables:
+# $identity (string) - The name of the used identity, most likely an email address.
+compose-missing-identity-warning = 找不到寄件地址對應的唯一識別資料。將使用目前的寄件者欄位資料，以及 { $identity } 身份的設定來寄信。

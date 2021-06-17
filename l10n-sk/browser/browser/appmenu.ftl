@@ -5,24 +5,20 @@
 
 ## App Menu
 
-appmenuitem-update-banner2 =
-    .label-update-downloading = Preberá sa aktualizácia pre { -brand-shorter-name }
-    .label-update-available = Dostupná aktualizácia — prevziať
-    .label-update-manual = Dostupná aktualizácia — prevziať
-    .label-update-unsupported = Nie je možné aktualizovať
-    .label-update-restart = Dostupná aktualizácia — reštartovať
 appmenuitem-update-banner3 =
-    .label-update-downloading = Preberá sa aktualizácia pre { -brand-shorter-name }
-    .label-update-available = Dostupná aktualizácia — prevziať
-    .label-update-manual = Dostupná aktualizácia — prevziať
-    .label-update-unsupported = Dostupná aktualizácia — nekompatibilný systém
-    .label-update-restart = Dostupná aktualizácia — reštartovať
+    .label-update-downloading = Sťahuje sa aktualizácia pre { -brand-shorter-name }
+    .label-update-available = Je dostupná aktualizácia — stiahnuť
+    .label-update-manual = Je dostupná aktualizácia — stiahnuť
+    .label-update-unsupported = Nebolo možné aktualizovať — nekompatibilný systém
+    .label-update-restart = Je dostupná aktualizácia — reštartovať
 appmenuitem-protection-dashboard-title = Nástenka ochrany súkromia
 appmenuitem-customize-mode =
     .label = Prispôsobiť…
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = Nová karta
 appmenuitem-new-window =
     .label = Nové okno
 appmenuitem-new-private-window =
@@ -35,14 +31,6 @@ appmenuitem-find-in-page =
     .label = Hľadať na stránke…
 appmenuitem-more-tools =
     .label = Ďalšie nástroje
-appmenuitem-exit =
-    .label = Ukončiť
-appmenu-menu-button-closed =
-    .tooltiptext = Otvorí ponuku aplikácie
-    .label = { -brand-shorter-name }
-appmenu-menu-button-opened =
-    .tooltiptext = Zavrie ponuku aplikácie
-    .label = { -brand-shorter-name }
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -79,16 +67,12 @@ appmenu-remote-tabs-turn-on-sync =
     .label = Zapnúť synchronizáciu…
 appmenuitem-fxa-toolbar-sync-now2 = Synchronizovať teraz
 appmenuitem-fxa-manage-account = Spravovať účet
-appmenu-fxa-header =
-    .title = { -fxaccount-brand-name }
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
 appmenu-fxa-last-sync = Posledná synchronizácia { $time }
     .label = Posledná synchronizácia { $time }
-appmenu-fxa-sync-and-save-data =
-    .value = Synchronizovať a uložiť údaje
 appmenu-fxa-sync-and-save-data2 = Synchronizovať a uložiť údaje
 appmenu-fxa-signed-in-label = Prihlásiť sa
 appmenu-fxa-setup-sync =
@@ -151,6 +135,15 @@ appmenu-manage-history =
     .label = Správa histórie
 appmenu-reopen-all-tabs = Obnoviť všetky karty
 appmenu-reopen-all-windows = Obnoviť všetky okná
+appmenu-restore-session =
+    .label = Obnoviť poslednú reláciu
+appmenu-clear-history =
+    .label = Vymazať nedávnu históriu…
+appmenu-recent-history-subheader = Nedávna história
+appmenu-recently-closed-tabs =
+    .label = Nedávno zatvorené karty
+appmenu-recently-closed-windows =
+    .label = Nedávno zatvorené okná
 
 ## Help panel
 
@@ -198,3 +191,5 @@ appmenu-customizetoolbar =
 appmenu-taskmanager =
     .label = Správca úloh
 appmenu-developer-tools-subheader = Nástroje prehliadača
+appmenu-developer-tools-extensions =
+    .label = Rozšírenia pre vývojárov

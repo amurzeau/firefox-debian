@@ -5,12 +5,6 @@
 
 ## App Menu
 
-appmenuitem-update-banner2 =
-    .label-update-downloading = Ĝisdatigo de { -brand-shorter-name } elŝutata
-    .label-update-available = Ĝisdatigo disponebla — elŝuti nun
-    .label-update-manual = Ĝisdatigo disponebla — elŝuti nun
-    .label-update-unsupported = Ne eblas elŝuti la ĝisdatigon
-    .label-update-restart = Ĝisdatigo disponebla — restartigi nun
 appmenuitem-update-banner3 =
     .label-update-downloading = Ĝisdatigo de { -brand-shorter-name } elŝutata
     .label-update-available = Ĝisdatigo disponebla — elŝuti nun
@@ -23,6 +17,8 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = Nova langeto
 appmenuitem-new-window =
     .label = Nova fenestro
 appmenuitem-new-private-window =
@@ -35,14 +31,6 @@ appmenuitem-find-in-page =
     .label = Serĉi en la paĝo…
 appmenuitem-more-tools =
     .label = Pli da iloj
-appmenuitem-exit =
-    .label = Fini
-appmenu-menu-button-closed =
-    .tooltiptext = Malfermi menuon de programo
-    .label = { -brand-shorter-name }
-appmenu-menu-button-opened =
-    .tooltiptext = Fermi menuon de programo
-    .label = { -brand-shorter-name }
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -79,16 +67,12 @@ appmenu-remote-tabs-turn-on-sync =
     .label = Ŝalti Speguladon…
 appmenuitem-fxa-toolbar-sync-now2 = Speguli nun
 appmenuitem-fxa-manage-account = Administri konton
-appmenu-fxa-header =
-    .title = { -fxaccount-brand-name }
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
 appmenu-fxa-last-sync = Laste spegulita: { $time }
     .label = Laste spegulita: { $time }
-appmenu-fxa-sync-and-save-data =
-    .value = Speguli kaj konservi datumojn
 appmenu-fxa-sync-and-save-data2 = Speguli kaj konservi datumojn
 appmenu-fxa-signed-in-label = Komenci seancon
 appmenu-fxa-setup-sync =
@@ -151,6 +135,15 @@ appmenu-manage-history =
     .label = Administri historion
 appmenu-reopen-all-tabs = Remalfermi ĉiujn langetojn
 appmenu-reopen-all-windows = Remalfermi ĉiujn fenestrojn
+appmenu-restore-session =
+    .label = Restarigi antaŭan seancon
+appmenu-clear-history =
+    .label = Viŝi ĵusan historion…
+appmenu-recent-history-subheader = Ĵusa historio
+appmenu-recently-closed-tabs =
+    .label = Antaŭ nelonge fermitaj langetoj
+appmenu-recently-closed-windows =
+    .label = Antaŭ nelonge fermitaj fenestroj
 
 ## Help panel
 
@@ -198,3 +191,5 @@ appmenu-customizetoolbar =
 appmenu-taskmanager =
     .label = Administrilo de taskoj
 appmenu-developer-tools-subheader = Iloj de retumilo
+appmenu-developer-tools-extensions =
+    .label = Etendaĵoj por programistoj

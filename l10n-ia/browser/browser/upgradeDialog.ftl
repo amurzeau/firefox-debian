@@ -16,14 +16,14 @@ upgrade-dialog-new-subtitle = Projectate pro portar te ubi tu desira, plus rapid
 # should stay inside the span.
 upgrade-dialog-new-alt-subtitle = Initia per render <span data-l10n-name="zap">{ -brand-short-name }</span> a portata de mus
 upgrade-dialog-new-item-menu-title = Barra de instrumentos e menu simplificate
-upgrade-dialog-new-item-menu-description = Prioritate al cosas importante, assi tu trovara lo que te besonia.
+upgrade-dialog-new-item-menu-description = Da le prioritate al cosas importante, assi que tu trova lo que tu require.
 upgrade-dialog-new-item-tabs-title = Schedas moderne
-upgrade-dialog-new-item-tabs-description = Contine tote informationes, plus supporto pro concentration e flexibilitate de movimento
+upgrade-dialog-new-item-tabs-description = Organisa informationes, con supporto de focalisation e movimento flexibile.
 upgrade-dialog-new-item-icons-title = Nove icones e messages plus clar
 upgrade-dialog-new-item-icons-description = Te adjuta a trovar tu via con un tocco plus legier
-upgrade-dialog-new-primary-primary-button = Render { -brand-short-name } mi navigator primari
-    .title = Predefini { -brand-short-name } como navigator e lo appuncta in le barra del activitates
-upgrade-dialog-new-primary-default-button = Render { -brand-short-name } mi navigator primari?
+upgrade-dialog-new-primary-primary-button = Facer de { -brand-short-name } mi navigator primari
+    .title = Predefini { -brand-short-name } como navigator e lo affixa sur le barra de activitates
+upgrade-dialog-new-primary-default-button = Facer de { -brand-short-name } mi navigator primari?
 upgrade-dialog-new-primary-pin-button = Adde { -brand-short-name } al barra del applicationes
 upgrade-dialog-new-primary-pin-alt-button = Appunctar al barra del activitates
 upgrade-dialog-new-primary-theme-button = Elige un thema
@@ -32,20 +32,52 @@ upgrade-dialog-new-secondary-button = Non ora
 # theme selection screen.
 upgrade-dialog-new-primary-win7-button = Ok, comprendite
 
+## Pin Firefox screen
+##
+## These title, subtitle and button strings differ between platforms as they
+## match the OS' application context menu item action where Windows uses "pin"
+## and "taskbar" while macOS "keep" and "Dock" (proper noun).
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-pin-title =
+    { PLATFORM() ->
+        [macos] Mantener { -brand-short-name } in tu Dock
+       *[other] Fixar { -brand-short-name } a tu barra de activitates
+    }
+# The English macOS string avoids repeating "Keep" a third time, so if your
+# translations don't repeat anyway, the same string can be used cross-platform.
+upgrade-dialog-pin-subtitle =
+    { PLATFORM() ->
+        [macos] Obtene jam facile accesso al plus fresc { -brand-short-name }.
+       *[other] Mantene jam le plus fresc { -brand-short-name } a portata de mano.
+    }
+upgrade-dialog-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Mantener in le Dock
+       *[other] Fixar al barra de activitates
+    }
+upgrade-dialog-pin-secondary-button = Non ora
+
 ## Default browser screen
 
 # This title can be explicitly wrapped to control which words are on which line.
 upgrade-dialog-default-title = Render { -brand-short-name } tu navigator primari?
 upgrade-dialog-default-subtitle = Obtene velocitate, securitate e confidentialitate cata vice que tu naviga.
 upgrade-dialog-default-primary-button = Eliger como navigator predefinite
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-default-title-2 = Rende { -brand-short-name } tu predefinite
+upgrade-dialog-default-subtitle-2 = Pone in autopilota velocitate, securitate e confidentialitate.
+upgrade-dialog-default-primary-button-2 = Predefinir navigator
 upgrade-dialog-default-secondary-button = Non ora
 
 ## Theme selection screen
 
 # This title can be explicitly wrapped to control which words are on which line.
 upgrade-dialog-theme-title =
-    Reinitiar
+    Refresca tu experientia
     con un nove thema
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-theme-title-2 = Initia ben con un thema nitide
 upgrade-dialog-theme-system = Thema del systema
     .title = Sequer le themas del systema operative pro buttones, menus e fenestras
 upgrade-dialog-theme-light = Clar

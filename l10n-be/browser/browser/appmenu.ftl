@@ -5,12 +5,6 @@
 
 ## App Menu
 
-appmenuitem-update-banner2 =
-    .label-update-downloading = Сцягваецца абнаўленне { -brand-shorter-name }
-    .label-update-available = Даступна абнаўленне — сцягнуць зараз
-    .label-update-manual = Даступна абнаўленне — сцягнуць зараз
-    .label-update-unsupported = Не ўдалося абнавіцца
-    .label-update-restart = Даступна абнаўленне — перазапусціць зараз
 appmenuitem-update-banner3 =
     .label-update-downloading = Сцягваецца абнаўленне { -brand-shorter-name }
     .label-update-available = Даступна абнаўленне — сцягнуць зараз
@@ -23,6 +17,8 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = Новая картка
 appmenuitem-new-window =
     .label = Новае акно
 appmenuitem-new-private-window =
@@ -35,14 +31,6 @@ appmenuitem-find-in-page =
     .label = Знайсці на старонцы…
 appmenuitem-more-tools =
     .label = Іншыя прылады
-appmenuitem-exit =
-    .label = Выйсці
-appmenu-menu-button-closed =
-    .tooltiptext = Адкрыць меню праграмы
-    .label = { -brand-shorter-name }
-appmenu-menu-button-opened =
-    .tooltiptext = Закрыць меню праграмы
-    .label = { -brand-shorter-name }
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -79,16 +67,12 @@ appmenu-remote-tabs-turn-on-sync =
     .label = Уключыць сінхранізацыю…
 appmenuitem-fxa-toolbar-sync-now2 = Сінхранізаваць зараз
 appmenuitem-fxa-manage-account = Кіраванне ўліковым запісам
-appmenu-fxa-header =
-    .title = { -fxaccount-brand-name }
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
 appmenu-fxa-last-sync = Апошняя сінхранізацыя { $time }
     .label = Апошняя сінхранізацыя { $time }
-appmenu-fxa-sync-and-save-data =
-    .value = Сінхранізаваць і захаваць дадзеныя
 appmenu-fxa-sync-and-save-data2 = Сінхранізаваць і захаваць дадзеныя
 appmenu-fxa-signed-in-label = Увайсці
 appmenu-fxa-setup-sync =
@@ -153,6 +137,15 @@ appmenu-manage-history =
     .label = Кіраванне гісторыяй
 appmenu-reopen-all-tabs = Перааадкрыць усе карткі
 appmenu-reopen-all-windows = Перааадкрыць усе вокны
+appmenu-restore-session =
+    .label = Аднавіць папярэдні сеанс
+appmenu-clear-history =
+    .label = Ачысціць нядаўнюю гісторыю…
+appmenu-recent-history-subheader = Нядаўняя гісторыя
+appmenu-recently-closed-tabs =
+    .label = Нядаўна закрытыя карткі
+appmenu-recently-closed-windows =
+    .label = Нядаўна закрытыя вокны
 
 ## Help panel
 
@@ -200,3 +193,5 @@ appmenu-customizetoolbar =
 appmenu-taskmanager =
     .label = Менеджар задач
 appmenu-developer-tools-subheader = Інструменты браўзера
+appmenu-developer-tools-extensions =
+    .label = Пашырэнні для распрацоўшчыкаў

@@ -24,6 +24,8 @@ about-addressbook-books-context-properties =
     .label = Kakosći
 about-addressbook-books-context-synchronize =
     .label = Synchronizěrowaś
+about-addressbook-books-context-print =
+    .label = Śišćaś…
 about-addressbook-books-context-delete =
     .label = Lašowaś
 
@@ -35,6 +37,8 @@ about-addressbook-search =
     .placeholder = { $name } pśepytaś
 about-addressbook-search-all =
     .placeholder = Wšykne adresniki pśepytaś
+about-addressbook-sort-button =
+    .title = Lisćinowy pórěd změniś
 about-addressbook-name-format-display =
     .label = Zwobraznjeńske mě
 about-addressbook-name-format-firstlast =

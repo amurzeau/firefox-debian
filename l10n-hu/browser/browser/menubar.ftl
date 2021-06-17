@@ -173,6 +173,9 @@ menu-view-page-basic-style =
 menu-view-charset =
     .label = Szövegkódolás
     .accesskey = d
+menu-view-repair-text-encoding =
+    .label = Szövegkódolás javítása
+    .accesskey = k
 
 ## These should match what Safari and other Apple applications
 ## use on macOS.
@@ -227,6 +230,8 @@ menu-bookmarks-show-all =
     .label = Minden könyvjelző megjelenítése
 menu-bookmark-this-page =
     .label = Oldal hozzáadása a könyvjelzőkhöz
+menu-bookmarks-manage =
+    .label = Könyvjelzők kezelése
 menu-bookmark-current-tab =
     .label = Jelenlegi lap könyvjelzőzése
 menu-bookmark-edit =
@@ -254,15 +259,15 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Bejelentkezés a { -brand-product-name }ba…
     .accesskey = B
+menu-tools-turn-on-sync =
+    .label = { -sync-brand-short-name } bekapcsolása…
+    .accesskey = b
 menu-tools-addons-and-themes =
     .label = Kiegészítők és témák
     .accesskey = K
 menu-tools-fxa-sign-in2 =
     .label = Bejelentkezés
     .accesskey = j
-menu-tools-turn-on-sync =
-    .label = { -sync-brand-short-name } bekapcsolása…
-    .accesskey = b
 menu-tools-turn-on-sync2 =
     .label = Szinkronizálás bekapcsolása…
     .accesskey = b
@@ -287,13 +292,6 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Oldal adatai
     .accesskey = O
-menu-settings =
-    .label = Beállítások
-    .accesskey =
-        { PLATFORM() ->
-            [windows] B
-           *[other] B
-        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -304,6 +302,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] e
            *[other] e
+        }
+menu-settings =
+    .label = Beállítások
+    .accesskey =
+        { PLATFORM() ->
+            [windows] B
+           *[other] B
         }
 menu-tools-layout-debugger =
     .label = Elrendezési hibakereső
@@ -342,14 +347,12 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = Gyorsbillentyűk
     .accesskey = G
-menu-get-help =
-    .label = Segítség kérése
-    .accesskey = S
 menu-help-troubleshooting-info =
     .label = Hibakeresési információ
     .accesskey = H
-menu-help-taskmanager =
-    .label = Feladatkezelő
+menu-get-help =
+    .label = Segítség kérése
+    .accesskey = S
 menu-help-more-troubleshooting-info =
     .label = Több hibakeresési információ
     .accesskey = T

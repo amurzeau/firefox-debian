@@ -28,6 +28,18 @@ search-input-box =
             [windows] Encontrar en opciones
            *[other] Encontrar en configuraciones
         }
+settings-page-title = Configuraciones
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Buscar en ajustes
 managed-notice = Tu organización gestiona el navegador.
 category-list =
     .aria-label = Categorías
@@ -46,12 +58,15 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Sincronizar
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = Experimentos de { -brand-short-name }
 category-experimental =
     .tooltiptext = Experimentos de { -brand-short-name }
 pane-experimental-subtitle = Continuar con precaución
 pane-experimental-search-results-header = Experimentos de { -brand-short-name }: proceder con precaución
-pane-experimental-description = Cambiar las preferencias de configuración avanzada puede afectar el rendimiento o la seguridad de { -brand-short-name }.
+pane-experimental-description2 = Modificar los parámetros de la configuración avanzada puede afectar el rendimiento o la seguridad de { -brand-short-name }.
 pane-experimental-reset =
     .label = Restaurar predeterminados
     .accesskey = R
@@ -121,6 +136,8 @@ search-results-empty-message =
         [windows] ¡Lo siento! No hay resultados en las opciones de “<span data-l10n-name="query"></span>”.
        *[other] ¡Lo siento! No hay resultados en las preferencias de “<span data-l10n-name="query"></span>”.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = ¡Lo siento! No hay resultados en la Configuración para "<span data-l10n-name="query"></span>".
 search-results-help-link = ¿Necesitas ayuda? Visita <a data-l10n-name="url">Apoyo de { -brand-short-name }</a>
 
 ## General Section
@@ -163,6 +180,9 @@ warn-on-open-many-tabs =
     .accesskey = d
 switch-links-to-new-tabs =
     .label = Al abrir un enlace en una nueva pestaña, cambiar a la pestaña inmediatamente
+    .accesskey = h
+switch-to-new-tabs =
+    .label = Cuando abras un enlace, imagen o un medio en una nueva pestaña, cambiar inmediatamente a ella
     .accesskey = h
 show-tabs-in-taskbar =
     .label = Mostrar vista previa de las pestañas en la barra de tareas de Windows
@@ -369,6 +389,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Nunca busque actualizaciones (no recomendado)
     .accesskey = N
+update-application-background-enabled =
+    .label = Cuando { -brand-short-name } no se esté ejecutando
+    .accesskey = C
 update-application-warning-cross-user-setting = Este ajuste se aplicará a todas las cuentas de Windows y perfiles de { -brand-short-name } usando esta instalación de { -brand-short-name }.
 update-application-use-service =
     .label = Utilizar un servicio en segundo plano para instalar las actualizaciones
@@ -380,6 +403,15 @@ update-setting-write-failure-title = Error al guardar las preferencias de actual
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
     { -brand-short-name } encontró un error y no guardó esta modificación. Observa que establecer esta preferencia de actualización requiere de permiso para escribir el archivo mostrado más abajo. Si no eres capaz, pide a un administrador que conceda al grupo Usuarios control total para este archivo.
+    
+    No se pudo escribir en el archivo: { $path }
+update-setting-write-failure-title2 = Error al guardar los ajustes de actualización
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name } encontró un error y no guardó esta modificación. Ten en cuenta que cambiar este ajuste de actualización requiere permiso para escribir en el archivo siguiente. Tú o un administrador del sistema pueden resolver el error otorgando al grupo "Usuarios" el control total de este archivo.
     
     No se pudo escribir en el archivo: { $path }
 update-in-progress-title = Actualización en curso
@@ -579,6 +611,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Mostrar sugerencias de búsqueda en ventanas privadas
 suggestions-addressbar-settings-generic = Cambia las preferencias para otras sugerencias de la barra de direcciones
+suggestions-addressbar-settings-generic2 = Cambiar la configuración para otras sugerencias de la barra de direcciones
 search-suggestions-cant-show = Las sugerencias de búsqueda no se mostrarán en los resultados de la barra de direcciones porque has configurado { -brand-short-name } para que nunca recuerde el historial.
 search-one-click-header = Buscadores con un clic
 search-one-click-header2 = Atajos de búsqueda
@@ -613,6 +646,8 @@ containers-back-button =
             [windows] Volver a Opciones
            *[other] Volver a Preferencias
         }
+containers-back-button2 =
+    .aria-label = Volver a la configuración
 containers-header = Pestañas contenedoras
 containers-add-button =
     .label = Agregar un nuevo contenedor
@@ -622,6 +657,8 @@ containers-new-tab-check =
     .accesskey = S
 containers-preferences-button =
     .label = Preferencias
+containers-settings-button =
+    .label = Configuración
 containers-remove-button =
     .label = Eliminar
 
@@ -633,6 +670,10 @@ sync-signedout-description = Sincroniza tus marcadores, historial, pestañas, co
 sync-signedout-account-signin2 =
     .label = Iniciar sesión en { -sync-brand-short-name }
     .accesskey = i
+sync-signedout-description2 = Sincroniza tus marcadores, historial, pestañas, contraseñas, complementos y configuraciones en todos tus dispositivos.
+sync-signedout-account-signin3 =
+    .label = Iniciar sesión para sincronizar...
+    .accesskey = I
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -672,6 +713,10 @@ prefs-sync-setup =
     .label = Configurar { -sync-brand-short-name }…
     .accesskey = S
 prefs-sync-offer-setup-label = Sincroniza tus marcadores, historial, pestañas, contraseñas, complementos y preferencias en todos sus dispositivos.
+prefs-sync-turn-on-syncing =
+    .label = Activar sincronización...
+    .accesskey = s
+prefs-sync-offer-setup-label2 = Sincroniza tus marcadores, historial, pestañas, contraseñas, complementos y configuraciones en todos tus dispositivos.
 prefs-sync-now =
     .labelnotsyncing = Sincronizar ahora
     .accesskeynotsyncing = N
@@ -692,6 +737,7 @@ sync-currently-syncing-prefs =
         [windows] Opciones
        *[other] Preferencias
     }
+sync-currently-syncing-settings = Configuración
 sync-change-options =
     .label = Cambiar
     .accesskey = C
@@ -739,6 +785,10 @@ sync-engine-prefs =
         }
     .tooltiptext = Configuraciones generales, de privacidad y de seguridad que has cambiado
     .accesskey = s
+sync-engine-settings =
+    .label = Configuración
+    .tooltiptext = Ajustes generales, de privacidad y de seguridad que haz modificado
+    .accesskey = C
 
 ## The device name controls.
 
@@ -970,9 +1020,11 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Equilibrada entre protección y rendimiento. Las páginas se cargarán con normalidad.
 content-blocking-etp-strict-desc = Protección más elevada, pero puede causar que algunos sitios o contenidos fallen.
 content-blocking-etp-custom-desc = Elige cuáles rastreadores y scripts quieres bloquear.
+content-blocking-etp-blocking-desc = { -brand-short-name } bloquea lo siguiente:
 content-blocking-private-windows = Contenido de rastreo en ventanas privadas
-content-blocking-cross-site-cookies = Cookies entre sitios
+content-blocking-cross-site-cookies-in-all-windows = Cookies de sitios cruzados en todas las ventanas (incluye cookies de rastreo)
 content-blocking-cross-site-tracking-cookies = Cookies de rastreo multisitio
+content-blocking-all-cross-site-cookies-private-windows = Cookies de sitios cruzados en ventanas privadas
 content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies de rastreo de sitios cruzados, y aislación del resto de las cookies
 content-blocking-social-media-trackers = Rastreadores de red social
 content-blocking-all-cookies = Todas las cookies
@@ -1092,6 +1144,8 @@ collection-backlogged-crash-reports =
     .label = Permitir que { -brand-short-name } envíe los informes de fallos pendientes en tu nombre
     .accesskey = c
 collection-backlogged-crash-reports-link = Saber más
+collection-backlogged-crash-reports-with-link = Permitir que { -brand-short-name } envié informes de fallos acumulados en tu nombre. <a data-l10n-name="crash-reports-link">Aprender más</a>
+    .accesskey = c
 
 ## Privacy Section - Security
 ##
@@ -1153,6 +1207,11 @@ space-alert-under-5gb-ok-button =
     .label = Perfecto, entendido
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } se está quedando sin espacio en el disco. Tal vez los contenidos web no se muestren correctamente. Visita "Aprende más" para optimizar el utilizo del disco y mejorar la navegación.
+space-alert-over-5gb-settings-button =
+    .label = Abrir ajustes
+    .accesskey = A
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name } se está quedando sin espacio en disco. </strong> Los contenidos del sitio web pueden no mostrarse correctamente. Puede limpiar los datos de sitios guardados en Ajustes > Privacidad y Seguridad > Cookies y datos del sitio.
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name } se está quedando sin espacio en disco. </strong> los contenidos de los sitios web no pueden mostrarse correctamente. Visita “Saber más” para optimizar el uso del disco para una mejor experiencia de navegación.
 
 ## Privacy Section - HTTPS-Only
 

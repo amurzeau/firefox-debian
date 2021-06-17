@@ -32,12 +32,42 @@ upgrade-dialog-new-secondary-button = ახლა არა
 # theme selection screen.
 upgrade-dialog-new-primary-win7-button = კარგი, გასაგებია!
 
+## Pin Firefox screen
+##
+## These title, subtitle and button strings differ between platforms as they
+## match the OS' application context menu item action where Windows uses "pin"
+## and "taskbar" while macOS "keep" and "Dock" (proper noun).
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-pin-title =
+    { PLATFORM() ->
+        [macos] დარჩეს { -brand-short-name } პროგრამების Dock-ში
+       *[other] განთავსდეს { -brand-short-name } სამუშაო ზოლზე
+    }
+# The English macOS string avoids repeating "Keep" a third time, so if your
+# translations don't repeat anyway, the same string can be used cross-platform.
+upgrade-dialog-pin-subtitle =
+    { PLATFORM() ->
+        [macos] ახლოს იქონიეთ ახალთახალი { -brand-short-name }.
+       *[other] დატოვეთ ახალთახალი { -brand-short-name } ხელმისაწვდომ ადგილას
+    }
+upgrade-dialog-pin-primary-button =
+    { PLATFORM() ->
+        [macos] დატოვება Dock-ზე
+       *[other] სამუშაო ზოლზე მიმაგრება
+    }
+upgrade-dialog-pin-secondary-button = ახლა არა
+
 ## Default browser screen
 
 # This title can be explicitly wrapped to control which words are on which line.
 upgrade-dialog-default-title = გახდეს { -brand-short-name } თქვენი ნაგულისხმევი ბრაუზერი?
 upgrade-dialog-default-subtitle = სისწრაფე, უსაფრთხოება და პირადულობა, გვერდების ყოველი მონახულებისას.
 upgrade-dialog-default-primary-button = ნაგულისხმევ ბრაუზერად დაყენება
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-default-title-2 = აქციეთ { -brand-short-name } ნაგულისხმევად
+upgrade-dialog-default-subtitle-2 = გახადეთ სიჩქარე, უსაფრთხოება და პირადულობა, თავისთავადი.
+upgrade-dialog-default-primary-button-2 = ნაგულისხმევ ბრაუზერად დაყენება
 upgrade-dialog-default-secondary-button = ახლა არა
 
 ## Theme selection screen
@@ -46,6 +76,8 @@ upgrade-dialog-default-secondary-button = ახლა არა
 upgrade-dialog-theme-title =
     სუფთა ფურცლიდან
     განახლებული გაფორმებით
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-theme-title-2 = სუფთა ფურცლიდან, ახალთახალი გაფორმებით
 upgrade-dialog-theme-system = სისტემური გაფორმება
     .title = შეუხამებს სისტემის გაფორმებას ღილაკებს, მენიუსა და ფანჯრებს
 upgrade-dialog-theme-light = ნათელი

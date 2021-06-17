@@ -32,12 +32,23 @@ upgrade-dialog-new-secondary-button = Pas ara
 # theme selection screen.
 upgrade-dialog-new-primary-win7-button = D’acòrdi, plan comprés !
 
+## Pin Firefox screen
+##
+## These title, subtitle and button strings differ between platforms as they
+## match the OS' application context menu item action where Windows uses "pin"
+## and "taskbar" while macOS "keep" and "Dock" (proper noun).
+
+upgrade-dialog-pin-secondary-button = Pas ara
+
 ## Default browser screen
 
 # This title can be explicitly wrapped to control which words are on which line.
 upgrade-dialog-default-title = Definir { -brand-short-name } coma navegador per defaut ?
 upgrade-dialog-default-subtitle = Velocitat, seguretat e confidencialitat cada còp que navegatz.
 upgrade-dialog-default-primary-button = Definir coma navegador per defaut
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-default-title-2 = Definir { -brand-short-name } coma navegador per defaut
+upgrade-dialog-default-primary-button-2 = Definir coma navegador per defaut
 upgrade-dialog-default-secondary-button = Pas ara
 
 ## Theme selection screen
@@ -46,6 +57,8 @@ upgrade-dialog-default-secondary-button = Pas ara
 upgrade-dialog-theme-title =
     Començatz ben
     amb un tèma actualizat
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-theme-title-2 = Començatz ben amb un tèma aprestat
 upgrade-dialog-theme-system = Tèma sistèma
     .title = Seguir lo tèma del sistèma operatiu pels botons, menús e las fenèstras
 upgrade-dialog-theme-light = Clar

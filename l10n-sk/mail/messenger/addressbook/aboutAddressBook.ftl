@@ -24,6 +24,8 @@ about-addressbook-books-context-properties =
     .label = Vlastnosti
 about-addressbook-books-context-synchronize =
     .label = Synchronizovať
+about-addressbook-books-context-print =
+    .label = Tlačiť…
 about-addressbook-books-context-delete =
     .label = Odstrániť
 
@@ -35,6 +37,8 @@ about-addressbook-search =
     .placeholder = Hľadať v adresári { $name }
 about-addressbook-search-all =
     .placeholder = Hľadať vo všetkých adresároch
+about-addressbook-sort-button =
+    .title = Zmeniť poradie zoznamu
 about-addressbook-name-format-display =
     .label = Zobrazované meno
 about-addressbook-name-format-firstlast =

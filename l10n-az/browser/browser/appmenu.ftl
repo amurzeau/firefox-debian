@@ -5,13 +5,13 @@
 
 ## App Menu
 
-appmenuitem-update-banner =
-    .label-update-downloading = { -brand-shorter-name } yeniləməsi endirilir
 appmenuitem-customize-mode =
     .label = Fərdiləşdir…
 
 ## Zoom Controls
 
+appmenuitem-new-tab =
+    .label = Yeni vərəq
 appmenuitem-new-window =
     .label = Yeni Pəncərə
 appmenuitem-new-private-window =
@@ -43,32 +43,26 @@ appmenuitem-save-page =
 
 ## History panel
 
+appmenu-restore-session =
+    .label = Əvvəlki Seansı Bərpa et
+appmenu-clear-history =
+    .label = Son Tarixçəni Təmizlə…
+appmenu-recent-history-subheader = Yaxın Tarixçə
+appmenu-recently-closed-tabs =
+    .label = Yeni qapanmış vərəqlər
+appmenu-recently-closed-windows =
+    .label = Yeni qapanmış pəncərələr
 
 ## Help panel
 
 appmenu-about =
     .label = { -brand-shorter-name } Haqqında
     .accesskey = H
-appmenu-help-troubleshooting-info =
-    .label = Problemlərin aradan qaldırılması üzrə məlumatlar
-    .accesskey = P
-appmenu-help-taskmanager =
-    .label = Tapşırıq idarə edicisi
 appmenu-help-report-site-issue =
     .label = Sayt Problemini Bildir…
 appmenu-help-feedback-page =
     .label = Əks əlaqə göndər…
     .accesskey = g
-
-## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
-## are mutually exclusive, so it's possible to use the same accesskey for both.
-
-appmenu-help-safe-mode-without-addons =
-    .label = Əlavələri deaktiv edərək Yenidən başla…
-    .accesskey = Y
-appmenu-help-safe-mode-with-addons =
-    .label = Əlavələri aktiv edərək Yenidən başla
-    .accesskey = Y
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

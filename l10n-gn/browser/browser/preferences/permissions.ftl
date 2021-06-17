@@ -18,6 +18,12 @@ permissions-session =
 permissions-allow =
     .label = Moneĩ
     .accesskey = A
+permissions-button-off =
+    .label = Eipe’aite
+    .accesskey = O
+permissions-button-off-temporarily =
+    .label = Jepe’a sapy’agua
+    .accesskey = T
 permissions-site-name =
     .label = Ñanduti renda
 permissions-status =
@@ -58,6 +64,10 @@ permissions-capabilities-listitem-block =
     .value = Jokoha
 permissions-capabilities-listitem-allow-session =
     .value = Tembiapópe g̃uarã moneĩ
+permissions-capabilities-listitem-off =
+    .value = Mboguepyre
+permissions-capabilities-listitem-off-temporarily =
+    .value = Jepe’a sapy’agua
 
 ## Invalid Hostname Dialog
 
@@ -77,6 +87,12 @@ permissions-exceptions-cookie-window =
     .title = Ijykepeguáva: Kookie ha tenda mba’ekuaarã
     .style = { permissions-window.style }
 permissions-exceptions-cookie-desc = Ikatu ere máva ñanduti rendápa akóinte oipuru térã araka’eve ndoipurúiva kookie ha mba’ekuaarã tendagua. Ehai ñandutirape tenda reisãmbyhyséva ha upéi ehesakutu Joko, emoneĩ tembiapo térã Emoneĩ.
+
+## Exceptions - HTTPS-Only Mode
+
+permissions-exceptions-https-only-window =
+    .title = Ykepegua – HTTPS ayvu añópe
+    .style = { permissions-window.style }
 
 ## Exceptions - Pop-ups
 

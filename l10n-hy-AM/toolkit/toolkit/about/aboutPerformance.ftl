@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 # Page title
-about-performance-title = Առաջադրանքի ղեկավար
+about-performance-title = Խնդիրների կառավար
 
 ## Column headers
 
@@ -23,7 +23,7 @@ preloaded-tab = Նախաբեռնված․ { $title }
 
 type-tab = Ներդիր
 type-subframe = Ենթաշրջանակ
-type-tracker = Հետևող
+type-tracker = Հետագծում
 type-addon = Հավելում
 type-browser = Զննարկիչ
 type-worker = Աշխատող
@@ -54,7 +54,6 @@ close-tab =
     .title = Փակել ներդիրը
 show-addon =
     .title = Ցուցադրել հավելումների կառավարչում
-
 # Tooltip when hovering an item of the about:performance table
 # Variables:
 #   $totalDispatches (Number) - how many dispatches occurred for this page since it loaded
@@ -63,5 +62,5 @@ show-addon =
 #   $durationSincePrevious (Number) - how much CPU time was used in the last 2 seconds
 item =
     .title =
-        Ուղարկումները դեռ բեռնվում են․ { $totalDispatches } ({ $totalDuration }ms)
-        Վերջին վայրկյանների ուղարկումները․ { $dispatchesSincePrevious } ({ $durationSincePrevious }ms)
+        Մշակիչի ռեսուրսները բեռնելուց սկսած՝․ { $totalDispatches } ({ $totalDuration }ms)
+        Մշակիչի ռեսուրսները վերջին վայրկյաններին՝ { $dispatchesSincePrevious } ({ $durationSincePrevious }ms)

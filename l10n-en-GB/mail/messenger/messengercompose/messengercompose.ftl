@@ -11,6 +11,9 @@ remove-address-row-type = Remove the { $type } field
 remove-address-row-type-label =
     .tooltiptext = Remove the { $type } field
 #   $type (String) - the type of the addressing row
+remove-address-row-button =
+    .title = Remove the { $type } field
+#   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
@@ -158,3 +161,9 @@ many-public-recipients-bcc =
 many-public-recipients-ignore =
     .label = Keep Recipients Public
     .accesskey = K
+
+## Notifications
+
+# Variables:
+# $identity (string) - The name of the used identity, most likely an email address.
+compose-missing-identity-warning = A unique identity matching the From address was not found. The message will be sent using the current From field and settings from identity { $identity }.

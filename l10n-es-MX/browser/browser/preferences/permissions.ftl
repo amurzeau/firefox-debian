@@ -18,6 +18,12 @@ permissions-session =
 permissions-allow =
     .label = Permitir
     .accesskey = P
+permissions-button-off =
+    .label = Desactivar
+    .accesskey = D
+permissions-button-off-temporarily =
+    .label = Desactivar temporalmente
+    .accesskey = t
 permissions-site-name =
     .label = Sitio web
 permissions-status =
@@ -58,6 +64,10 @@ permissions-capabilities-listitem-block =
     .value = Bloquear
 permissions-capabilities-listitem-allow-session =
     .value = Permitir para la sesión
+permissions-capabilities-listitem-off =
+    .value = Desactivado
+permissions-capabilities-listitem-off-temporarily =
+    .value = Desactivado temporalmente
 
 ## Invalid Hostname Dialog
 
@@ -77,6 +87,13 @@ permissions-exceptions-cookie-window =
     .title = Excepciones: Cookies y datos del sitio
     .style = { permissions-window.style }
 permissions-exceptions-cookie-desc = Puedes especificar qué sitios web pueden o no pueden utilizar siempre cookies y datos del sitio.  Escribe la dirección exacta del sitio que quieras gestionar y haz clic en Bloquear, Permitir en esta sesión o Permitir.
+
+## Exceptions - HTTPS-Only Mode
+
+permissions-exceptions-https-only-window =
+    .title = Excepciones - Modo solo HTTPS
+    .style = { permissions-window.style }
+permissions-exceptions-https-only-desc = Puedes desactivar el modo solo HTTPS para sitios web específicos. { -brand-short-name } no intentará actualizar la conexión a HTTPS seguro para esos sitios. Las excepciones no se aplican a las ventanas privadas.
 
 ## Exceptions - Pop-ups
 

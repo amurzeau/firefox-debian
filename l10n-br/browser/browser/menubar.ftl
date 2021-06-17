@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = Gwellvezioù
 menu-application-services =
     .label = Gwazerezhioù
 menu-application-hide-this =
@@ -111,6 +113,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Klask war ar bajennad-mañ…
     .accesskey = K
+menu-edit-find-in-page =
+    .label = Kavout er bajennad…
+    .accesskey = K
 menu-edit-find-again =
     .label = Klask c'hoazh
     .accesskey = h
@@ -128,6 +133,9 @@ menu-view-toolbars-menu =
     .accesskey = B
 menu-view-customize-toolbar =
     .label = Personelaat…
+    .accesskey = P
+menu-view-customize-toolbar2 =
+    .label = Personelaat ar varrenn ostilhoù…
     .accesskey = P
 menu-view-sidebar =
     .label = Barrenn gostez
@@ -207,6 +215,8 @@ menu-history-undo-menu =
     .label = Ivinelloù serret nevez zo
 menu-history-undo-window-menu =
     .label = Prenestroù serret nevez zo
+menu-history-reopen-all-tabs = Digeriñ en-dro an holl ivinelloù
+menu-history-reopen-all-windows = Digeriñ en-dro an holl brenestroù
 
 ## Bookmarks Menu
 
@@ -217,6 +227,8 @@ menu-bookmarks-show-all =
     .label = Diskouez an holl sinedoù
 menu-bookmark-this-page =
     .label = Lakaat ur sined war ar bajenn-mañ
+menu-bookmark-current-tab =
+    .label = Lakaat an ivinell vremanel er sinedoù
 menu-bookmark-edit =
     .label = Embann ar sined-mañ
 menu-bookmarks-all-tabs =
@@ -245,6 +257,15 @@ menu-tools-fxa-sign-in =
 menu-tools-turn-on-sync =
     .label = Gweredekaat { -sync-brand-short-name }…
     .accesskey = G
+menu-tools-addons-and-themes =
+    .label = Askouezhioù ha neuzioù
+    .accesskey = E
+menu-tools-fxa-sign-in2 =
+    .label = Kennaskañ
+    .accesskey = K
+menu-tools-turn-on-sync2 =
+    .label = Gweredekaat Sync
+    .accesskey = n
 menu-tools-sync-now =
     .label = Goubredañ bremañ
     .accesskey = G
@@ -254,6 +275,12 @@ menu-tools-fxa-re-auth =
 menu-tools-web-developer =
     .label = Diorroer web
     .accesskey = w
+menu-tools-browser-tools =
+    .label = Ostilhoù merdeer
+    .accesskey = O
+menu-tools-task-manager =
+    .label = Ardoer trevelloù
+    .accesskey = A
 menu-tools-page-source =
     .label = Tarzh ar bajennad
     .accesskey = b
@@ -271,6 +298,13 @@ menu-preferences =
             [windows] b
            *[other] l
         }
+menu-settings =
+    .label = Arventennoù
+    .accesskey =
+        { PLATFORM() ->
+            [windows] A
+           *[other] A
+        }
 menu-tools-layout-debugger =
     .label = Diveuger ar pajennaozañ
     .accesskey = D
@@ -283,15 +317,6 @@ menu-window-bring-all-to-front =
     .label = Lakaat pep tra war ar rakleur
 
 ## Help Menu
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
 
 
 # NOTE: For Engineers, any additions or changes to Help menu strings should
@@ -320,8 +345,12 @@ menu-help-keyboard-shortcuts =
 menu-help-troubleshooting-info =
     .label = Titouroù disac'hañ
     .accesskey = T
-menu-help-taskmanager =
-    .label = Ardoer trevelloù
+menu-get-help =
+    .label = Kaout skoazell
+    .accesskey = K
+menu-help-more-troubleshooting-info =
+    .label = Muioc'h a ditouroù disac’hañ
+    .accesskey = M
 menu-help-report-site-issue =
     .label = Danevell kudennoù al lec'hienn…
 menu-help-feedback-page =
@@ -333,6 +362,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Adloc'hañ gant an askouezhioù diweredekaet
     .accesskey = r
+menu-help-enter-troubleshoot-mode2 =
+    .label = Mod disac’hañ
+    .accesskey = M
+menu-help-exit-troubleshoot-mode =
+    .label = Diweredekaat ar mod disac’hañ
+    .accesskey = D
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =
@@ -341,6 +376,3 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = N'eo ket ul lec’hienn dagus…
     .accesskey = d
-menu-help-check-for-update =
-    .label = Klask hizivadurioù…
-    .accesskey = K
