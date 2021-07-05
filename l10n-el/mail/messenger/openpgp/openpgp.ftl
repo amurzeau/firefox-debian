@@ -32,7 +32,7 @@ openpgp-generate-key =
     .label = Δημιουργία κλειδιού
     .tooltiptext = Δημιουργεί ένα νέο σύμφωνο κλειδί OpenPGP για κρυπτογράφηση και/ή υπογραφή
 openpgp-advanced-prefs-button-label =
-    .label = Για προχωρημένους…
+    .label = Σύνθετα…
 openpgp-keygen-desc = <a data-l10n-name="openpgp-keygen-desc-link">ΣΗΜΕΙΩΣΗ: Η δημιουργία κλειδιού ενδέχεται να διαρκέσει αρκετά λεπτά για να ολοκληρωθεί.</a> Μην κλείσετε την εφαρμογή ενώ είναι σε εξέλιξη η δημιουργία του κλειδιού. Η ενεργή περιήγηση ή η εκτέλεση έντονων εργασιών δίσκου κατά τη δημιουργία του κλειδιού θα αναπληρώσει τη 'δεξαμενή τυχαιότητας' και θα επιταχύνει τη διαδικασία. Θα ενημερωθείτε όταν ολοκληρωθεί η δημιουργία του κλειδιού.
 openpgp-key-expiry-label =
     .label = Λήξη
@@ -119,7 +119,7 @@ openpgp-key-man-copy-fprs =
             [one] Αντιγραφή αποτυπώματος στο πρόχειρο
            *[other] Αντιγραφή αποτυπωμάτων στο πρόχειρο
         }
-    .accesskey = ώ
+    .accesskey = Α
 openpgp-key-man-copy-to-clipboard =
     .label =
         { $count ->
@@ -187,8 +187,8 @@ openpgp-key-man-show-invalid-keys =
     .label = Προβολή μη έγκυρων κλειδιών
     .accesskey = Π
 openpgp-key-man-show-others-keys =
-    .label = Εμφανίζει Κλειδιά Άλλων Ανθρώπων
-    .accesskey = λ
+    .label = Προβολή κλειδιών από άλλα άτομα
+    .accesskey = Π
 openpgp-key-man-user-id-label =
     .label = Όνομα
 openpgp-key-man-fingerprint-label =
@@ -280,6 +280,8 @@ openpgp-selection-status =
        *[other] Η τρέχουσα ρύθμισή σας χρησιμοποιεί το ID κλειδιού <b>{ $key }</b>
     }
 #   $key (String) - the currently selected OpenPGP key
+openpgp-selection-status-have-key = Η τρέχουσα ρύθμισή σας χρησιμοποιεί το ID κλειδιού <b>{ $key }</b>
+#   $key (String) - the currently selected OpenPGP key
 openpgp-selection-status-error = Η τρέχουσα διαμόρφωσή σας χρησιμοποιεί το κλειδί <b>{ $key }</b>, το οποίο έχει λήξει.
 openpgp-add-key-button =
     .label = Προσθήκη κλειδιού…
@@ -305,6 +307,10 @@ openpgp-key-expires-image =
 openpgp-radio-key-expired = Έληξε στις: { $date }
 openpgp-key-expired-image =
     .tooltiptext = Το κλειδί έληξε
+openpgp-key-expires-within-6-months-icon =
+    .title = Το κλειδί λήγει σε λιγότερο από 6 μήνες
+openpgp-key-has-expired-icon =
+    .title = Το κλειδί έληξε
 openpgp-key-expand-section =
     .tooltiptext = Περισσότερες πληροφορίες
 openpgp-key-revoke-title = Ανάκληση κλειδιού
@@ -575,7 +581,7 @@ quoted-printable-warn =
 minimal-line-wrapping =
     Έχετε ορίσει την αναδίπλωση γραμμής στους { $width } χαρακτήρες. Για σωστή κρυπτογράφηση και / ή υπογραφή, αυτή η τιμή πρέπει να είναι τουλάχιστον 68.
     Θέλετε να αλλάξετε τώρα την αναδίπλωση γραμμής στους 68 χαρακτήρες;
-sending-hidden-rcpt = Οι παραλήπτες BCC (κρυφή κοινοποίηση) δεν μπορούν να χρησιμοποιηθούν κατά την αποστολή ενός κρυπτογραφημένου μηνύματος. Για να στείλετε αυτό το κρυπτογραφημένο μήνυμα, αφαιρέστε τους παραλήπτες BCC ή μετακινήστε τους στο πεδίο CC.
+sending-hidden-rcpt = Οι παραλήπτες κρυφής κοινοποίησης (BCC) δεν μπορούν να χρησιμοποιηθούν κατά την αποστολή ενός κρυπτογραφημένου μηνύματος. Για να στείλετε αυτό το κρυπτογραφημένο μήνυμα, αφαιρέστε τους παραλήπτες BCC ή μετακινήστε τους στο πεδίο κοινοποίησης (CC).
 sending-news =
     Η κρυπτογραφημένη αποστολή ακυρώθηκε.
     Δεν είναι δυνατή η κρυπτογράφηση αυτού του μηνύματος, επειδή υπάρχουν παραλήπτες ομάδας συζήτησης. Στείλτε ξανά το μήνυμα χωρίς κρυπτογράφηση.

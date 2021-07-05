@@ -16,9 +16,9 @@ add-bookmark = Додај обележивач
 reader-view = Приказ читача
 # Meant to match the string displayed in an empty URL bar.
 open-location = Претражите или унесите адресу
-share = Подели
+share = Дели
 close-window = Затвори прозор
-open-sidebar = Бочне траке
+open-sidebar = Бочни панели
 # This string describes shortcuts for search.
 search-popover = Пречице за претрагу
 # Describes searches limited to a specific scope

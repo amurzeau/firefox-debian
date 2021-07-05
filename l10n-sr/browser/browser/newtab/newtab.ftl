@@ -9,8 +9,8 @@ newtab-page-title = Нова картица
 newtab-settings-button =
     .title = Прилагодите страницу нове картице
 newtab-personalize-button-label = Прилагоди
-    .title = Прилагоди нову картицу
-    .aria-label = Прилагоди нову картицу
+    .title = Промените изглед нове картице
+    .aria-label = Промените изглед нове картице
 newtab-personalize-dialog-label =
     .aria-label = Персонализација
 
@@ -94,7 +94,7 @@ newtab-dismiss-button-tooltip =
 #  $title (String): The label or hostname of the site. This is for screen readers when the context menu button is focused/active.
 newtab-menu-content-tooltip =
     .title = Отвори мени
-    .aria-label = Отвори мени поља за { $title }
+    .aria-label = Отвори контекстуални мени за { $title }
 # Tooltip on an empty topsite box to open the New Top Site dialog.
 newtab-menu-topsites-placeholder-tooltip =
     .title = Уреди овај сајт
@@ -105,7 +105,7 @@ newtab-menu-topsites-placeholder-tooltip =
 newtab-menu-edit-topsites = Уреди
 newtab-menu-open-new-window = Отвори у новом прозору
 newtab-menu-open-new-private-window = Отвори у новом приватном прозору
-newtab-menu-dismiss = Уклони
+newtab-menu-dismiss = Одбаци
 newtab-menu-pin = Закачи
 newtab-menu-unpin = Откачи
 newtab-menu-delete-history = Избриши из историје
@@ -136,8 +136,8 @@ newtab-menu-bookmark = Забележи
 ## Context Menu - Downloaded Menu. "Download" in these cases is not a verb,
 ## it is a noun. As in, "Copy the link that belongs to this downloaded item".
 
-newtab-menu-copy-download-link = Копирај везу за преузимање
-newtab-menu-go-to-download-page = Иди на станицу за преузимања
+newtab-menu-copy-download-link = Копирај адресу преузимања
+newtab-menu-go-to-download-page = Иди на страницу преузимања
 newtab-menu-remove-download = Уклони из историје
 
 ## Context Menu - Download Menu: These are platform specific strings found in the context menu of an item that has
@@ -231,7 +231,7 @@ newtab-error-fallback-refresh-link = Освежите страницу да би
 ## Customization Menu
 
 newtab-custom-shortcuts-title = Пречице
-newtab-custom-shortcuts-subtitle = Сајтови које чувате или посећујете
+newtab-custom-shortcuts-subtitle = Сачувани или посећени сајтови
 newtab-custom-row-selector =
     { $num ->
         [one] { $num } ред
@@ -250,5 +250,11 @@ newtab-custom-close-button = Затвори
 # expresses the idea of "a small message, shortened from something else,
 # and non-essential but also not entirely trivial and useless.
 newtab-custom-snippets-title = Исечци
-newtab-custom-snippets-subtitle = Савети и новости везани за { -brand-product-name(case: "acc") } и организацију { -vendor-short-name }
-newtab-custom-settings = Управљај подешавањима
+newtab-custom-snippets-subtitle =
+    Савети и новости везани за { -brand-product-name.gender ->
+        [masculine] { -brand-product-name(case: "acc") }
+        [feminine] { -brand-product-name(case: "acc") }
+        [neuter] { -brand-product-name(case: "acc") }
+       *[other] програм { -brand-product-name }
+    } и организацију { -vendor-short-name }
+newtab-custom-settings = Додатна подешавања

@@ -28,6 +28,18 @@ search-input-box =
             [windows] پیدا‌کردن در گزینه‌ها
            *[other] پیدا‌کردن در ترجیحات
         }
+settings-page-title = تنظیمات
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = جستجو در تنظیمات
 managed-notice = مرورگر شما توسط سازمان شما مدیریت می شود.
 category-list =
     .aria-label = دسته‌بندی‌ها
@@ -37,7 +49,7 @@ category-general =
 pane-home-title = خانه
 category-home =
     .tooltiptext = { pane-home-title }
-pane-search-title = جست‌وجو
+pane-search-title = جستجو
 category-search =
     .tooltiptext = { pane-search-title }
 pane-privacy-title = حریم‌خصوصی و امنیت
@@ -46,11 +58,15 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = همگام‌سازی
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = آزمایش‌های { -brand-short-name }
 category-experimental =
     .tooltiptext = آزمایش‌های { -brand-short-name }
 pane-experimental-subtitle = با هوشیاری پیش بروید
 pane-experimental-search-results-header = آزمایش‌های { -brand-short-name }: با احتیاط ادامه دهید
+pane-experimental-description2 = تغییر تنظیمات پیشرفته می‌تواند بر روی کارآیی و امنیت { -brand-short-name } تاثیر بگذارد.
 pane-experimental-reset =
     .label = بازنشانی پیش‌فرض‌ها
     .accesskey = R
@@ -86,6 +102,9 @@ extension-controlled-homepage-override = یک افزودنی، <img data-l10n-na
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = یک افزودنی، <img data-l10n-name="icon"/>{ $name }، در کنترل صفحهٔ زبانه‌ٔ جدید شماست.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = یک افزونه، <img data-l10n-name="icon"/>{ $name }، این تنظیمات را کنترل می‌کند.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = یک افزونه، <img data-l10n-name="icon"/>{ $name }، این تنظیمات را کنترل می‌کند.
@@ -117,6 +136,8 @@ search-results-empty-message =
         [windows] متاسفیم! هیچ نتیجه‌ای در گزینه‌ها برای «<span data-l10n-name="query"></span>» وجود ندارد.
        *[other] متاسفیم! هیچ نتیجه‌ای در ترجیحات برای «<span data-l10n-name="query"></span>» وجود ندارد.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = متاسفیم! هیچ نتیجه‌ای در تنظیمات برای «<span data-l10n-name="query"></span>» وجود ندارد.
 search-results-help-link = نیاز به راهنمایی دارید؟ از <a data-l10n-name="url">پشتیبانی { -brand-short-name }</a> دیدن کنید
 
 ## General Section
@@ -160,6 +181,9 @@ warn-on-open-many-tabs =
 switch-links-to-new-tabs =
     .label = هنگامی که یک پیوند را در زبانه جدید باز میکنم، بلافاصله آن زبانه نمایش داده شود
     .accesskey = ه
+switch-to-new-tabs =
+    .label = هنگام باز کردن یک پیوند، عکس یا رسانه در یک زبانهٔ جدید، سریعا به آن منتقل بشو
+    .accesskey = ن
 show-tabs-in-taskbar =
     .label = پیش‌نمایش زبانه‌ها در نوار وضعیت ویندوز
     .accesskey = ز
@@ -236,6 +260,10 @@ translate-attribution = ترجمه با <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = استثناها…
     .accesskey = س
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = در خصوص قالب تاریخ، زمان، اعداد و واحدهای اندازه‌گیری، از تنظیمات سیستم‌عامل برای «{ $localeName }» استفاده شود.
 check-user-spelling =
     .label = بررسی املا همزمان با نوشتن
     .accesskey = ن
@@ -264,7 +292,7 @@ download-always-ask-where =
 applications-header = برنامه‌ها
 applications-description = اینکه چگونه { -brand-short-name } پرونده‌های دریافت شده از وب یا برنامه‌هایی که هنگام مرور در وب از آنها استفاده می‌کنید را مدیریت کند، را انتخاب کنید.
 applications-filter =
-    .placeholder = جست‌وجو نوعِ پرونده‌ها یا برنامه‌ها
+    .placeholder = جستجوی نوعِ پرونده‌ها یا برنامه‌ها
 applications-type-column =
     .label = نوع محتوا
     .accesskey = T
@@ -284,6 +312,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = استفاده از { $app-name } (پیش‌فرض)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] استفاده از برنامهٔ پیش‌فرض macOS
+            [windows] استفاده از برنامهٔ پیش‌فرض Windows
+           *[other] استفاده از برنامهٔ پیش‌فرض سیستم
+        }
 applications-use-other =
     .label = استفاده از برنامه‌ای دیگر…
 applications-select-helper = انتخاب برنامهٔ راهنما
@@ -354,10 +389,14 @@ update-application-check-choose =
 update-application-manual =
     .label = هرگز برای بروزرسانی‌ها بررسی نکن (توصیه نمی‌شود)
     .accesskey = ه
+update-application-background-enabled =
+    .label = هنگامی که { -brand-short-name } در حال اجرا نیست
+    .accesskey = ن
 update-application-use-service =
     .label = از سرویس پس‌زمینه برای نصب بروزرسانی ها استفاده شود
     .accesskey = پ
 update-setting-write-failure-title = خطا در ذخیره کردن ترجیحات بروزرسانی
+update-setting-write-failure-title2 = خطا در هنگام ذخیرهٔ تنطیمات بروزرسانی
 update-in-progress-title = در حال بروزرسانی
 update-in-progress-message = آیا می‌خواهید { -brand-short-name } به این بروزرسانی ادامه بدهد؟
 update-in-progress-ok-button = &نادیده گرفتن
@@ -401,7 +440,7 @@ browsing-use-cursor-navigation =
     .label = در مرور صفحات همیشه از مکان‌نما استفاده شود
     .accesskey = ص
 browsing-search-on-start-typing =
-    .label = هنگامی که شروع به وارد کردن حروف می‌کنم، به دنبال متن جست‌وجو شود
+    .label = هنگامی که شروع به وارد کردن حروف می‌کنم، به دنبال متن جستجو شود
     .accesskey = ج
 browsing-picture-in-picture-toggle-enabled =
     .label = کنترل‌های ویدیویی تصویر در تصویر را فعال کنید
@@ -470,12 +509,15 @@ choose-bookmark =
 home-prefs-content-header = محتوای صفحه خانگی فایرفاکس
 home-prefs-content-description = انتخاب کنید که چه محتوایی می‌خواهید در صفحه خانگیِ فایرفاکس خود ببینید.
 home-prefs-search-header =
-    .label = جست‌وجو وب
+    .label = جستجو وب
 home-prefs-topsites-header =
     .label = سایت‌های برتر
 home-prefs-topsites-description = سایت‌هایی که بیشتر بازدید می‌کنید
+home-prefs-topsites-by-option-sponsored =
+    .label = سایت های برتر حمایت شده
 home-prefs-shortcuts-header =
     .label = میان‌برها
+home-prefs-shortcuts-description = وب‌سایت‌هایی که ذخیره یا بازدید کرده‌اید
 home-prefs-shortcuts-by-option-sponsored =
     .label = میانبرهایی از حامیان مالی
 
@@ -498,11 +540,12 @@ home-prefs-highlights-option-visited-pages =
 home-prefs-highlights-options-bookmarks =
     .label = نشانک‌ها
 home-prefs-highlights-option-most-recent-download =
-    .label = آخرین دریافت
+    .label = جدیدترین بارگیری
 home-prefs-highlights-option-saved-to-pocket =
-    .label = صفحات در { -pocket-brand-name } ذخیره شد
+    .label = صفحات ذخیره شده در { -pocket-brand-name }
 home-prefs-recent-activity-header =
     .label = فعالیت‌های اخیر
+home-prefs-recent-activity-description = منتخبی از وب‌سایت‌ها و مطالب اخیر
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -510,6 +553,7 @@ home-prefs-recent-activity-header =
 home-prefs-snippets-header =
     .label = قطعه‌ها
 home-prefs-snippets-description = بروزرسانی از { -vendor-short-name } و { -brand-product-name }
+home-prefs-snippets-description-new = نکات و اخبار از { -vendor-short-name } و { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -519,19 +563,19 @@ home-prefs-sections-rows-option =
 
 ## Search Section
 
-search-bar-header = نوار جست وجو
+search-bar-header = نوار جستجو
 search-bar-hidden =
-    .label = استفاده از نوادر آدرس برای پیمایش و جست وجو
+    .label = استفاده از نوادر آدرس برای پیمایش و جستجو
 search-bar-shown =
-    .label = اضافه کردن نوار جست‌وجو به نوار ابزار
-search-engine-default-header = موتور جست‌وجو پیش‌فرض
+    .label = اضافه کردن نوار جستجو به نوار ابزار
+search-engine-default-header = موتور جستجو پیش‌فرض
 search-separate-default-engine =
     .label = از این موتور جستجو در پنجره‌های ناشناس استفاده کنید
     .accesskey = U
 search-suggestions-header = پیشنهادهای جستجو
 search-suggestions-desc = نحوه ارائه پیشنهادات از موتورهای جستجو را انتخاب کنید.
 search-suggestions-option =
-    .label = عرضه پیشنهادهای جست‌وجو
+    .label = عرضه پیشنهادهای جستجو
     .accesskey = ج
 search-show-suggestions-url-bar-option =
     .label = نمایش پیشنهادهای جست‌و‌جو در نوار آدرس
@@ -542,16 +586,17 @@ search-show-suggestions-url-bar-option =
 # "ahead" refers to location (appearing most proximate to), not time
 # (appearing before).
 search-show-suggestions-above-history-option =
-    .label = نمایش پیشنهادات جست‌وجو در بالا ی تاریخچه مرورگر در نوار آدرس
-search-suggestions-cant-show = پیشنهادهای جست‌وجو در نوار مکان نمایش داده نخواهد شده زیرا شما { -brand-short-name } را به گونه‌ای تنظیم کرده‌اید که هیچ تاریخچه‌ای را نگه ندارد.
-search-one-click-header = موتورهای جست‌وجوی تک-کلیکی
-search-one-click-desc = در هنگام وارد کردن کلید واژه‌ها جهت جست‌وجو، موتورهای جست‌وجو جایگزین را از قسمت پایینی نوار آدرس یا نوار جست‌وجو انتخاب کنید.
+    .label = نمایش پیشنهاداتِ جستجو، پیش از تاریخچهٔ مرور در نوار آدرس
+search-suggestions-cant-show = پیشنهادهای جستجو در نوار مکان نمایش داده نخواهد شده زیرا شما { -brand-short-name } را به گونه‌ای تنظیم کرده‌اید که هیچ تاریخچه‌ای را نگه ندارد.
+search-one-click-header = موتورهای جستجوی تک-کلیکی
+search-one-click-header2 = میانبرهای جستجو
+search-one-click-desc = در هنگام وارد کردن کلید واژه‌ها جهت جستجو، موتورهای جستجو جایگزین را از قسمت پایینی نوار آدرس یا نوار جستجو انتخاب کنید.
 search-choose-engine-column =
-    .label = موتور جست‌وجو
+    .label = موتور جستجو
 search-choose-keyword-column =
     .label = کلیدواژه
 search-restore-default =
-    .label = برگرداندن موتور جست‌وجوی پیش‌فرض
+    .label = برگرداندن موتور جستجوی پیش‌فرض
     .accesskey = پ
 search-remove-engine =
     .label = حذف
@@ -559,7 +604,7 @@ search-remove-engine =
 search-add-engine =
     .label = اضافه کردن
     .accesskey = A
-search-find-more-link = پیدا کردن موتورهای جست‌وجو بیشتر
+search-find-more-link = پیدا کردن موتورهای جستجو بیشتر
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
 search-keyword-warning-title = کلیدواژهٔ تکراری
@@ -570,12 +615,22 @@ search-keyword-warning-bookmark = شما کلیدواژه‌ای انتخاب ن
 
 ## Containers Section
 
+containers-back-button =
+    .aria-label =
+        { PLATFORM() ->
+            [windows] بازگشت به گزینه‌ها
+           *[other] بازگشت به ترجیحات
+        }
+containers-back-button2 =
+    .aria-label = بازگشت به تنظیمات
 containers-header = زبانه‌های حامل
 containers-add-button =
     .label = افزودن حامل جدید
     .accesskey = ا
 containers-preferences-button =
     .label = ترجیحات
+containers-settings-button =
+    .label = تنظیمات
 containers-remove-button =
     .label = حذف
 
@@ -584,6 +639,12 @@ containers-remove-button =
 
 sync-signedout-caption = وب را با خودتان همراه کنید
 sync-signedout-description = نشانک‌ها، تاریخچه، زبانه‌ها، گذرواژه‌ها، افزونه‌ها و ترجیحات خود را در تمام دستگاه‌هایتان همگام کنید.
+sync-signedout-account-signin2 =
+    .label = ورود به { -sync-brand-short-name }…
+    .accesskey = و
+sync-signedout-account-signin3 =
+    .label = برای همگام‌سازی وارد شوید…
+    .accesskey = و
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -623,6 +684,9 @@ prefs-sync-setup =
     .label = راه اندازی { -sync-brand-short-name }...
     .accesskey = S
 prefs-sync-offer-setup-label = نشانک‌ها، تاریخچه، زبانه‌ها، گذرواژه‌ها، افزونه‌ها و ترجیحات خود را در تمام دستگاه‌هایتان همگام کنید.
+prefs-sync-turn-on-syncing =
+    .label = روشن کردن همگام‌سازی…
+    .accesskey = ر
 prefs-sync-now =
     .labelnotsyncing = هم‌اکنون همگام‌سازی کنید
     .accesskeynotsyncing = N
@@ -643,6 +707,7 @@ sync-currently-syncing-prefs =
         [windows] گزینه‌ها
        *[other] ترجیحات
     }
+sync-currently-syncing-settings = تنظیمات
 sync-change-options =
     .label = تغییر…
     .accesskey = c
@@ -690,6 +755,10 @@ sync-engine-prefs =
         }
     .tooltiptext = عمومی،‌ حریم شخصی، و تنظیمات امنیتی که شما تغییر داده اید
     .accesskey = ت
+sync-engine-settings =
+    .label = تنظیمات
+    .tooltiptext = تنظیمات عمومی، حریم‌خصوصی، و امنیتی‌ای که تغییر داده‌اید
+    .accesskey = ت
 
 ## The device name controls.
 
@@ -728,11 +797,18 @@ forms-breach-alerts =
     .label = هشدارهای مربوط به گذرواژه‌ها در خصوص سایت‌های هک شده را نمایش بده
     .accesskey = b
 forms-breach-alerts-learn-more-link = بیشتر بدانید
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
+forms-fill-logins-and-passwords =
+    .label = پُر کردن خودکار ورودها و گذرواژه‌ها
+    .accesskey = پ
 forms-saved-logins =
     .label = ورودهای ذخیره شده
     .accesskey = و
 forms-master-pw-use =
     .label = استفاده از گذرواژهٔ اصلی
+    .accesskey = ا
+forms-primary-pw-use =
+    .label = استفاده از یک گذرواژهٔ اصلی
     .accesskey = ا
 forms-primary-pw-learn-more-link = اطلاعات بیشتر
 # This string uses the former name of the Primary Password feature
@@ -742,10 +818,24 @@ forms-master-pw-change =
     .label = تنظیم گذرواژهٔ اصلی…
     .accesskey = ص
 forms-master-pw-fips-title = شما هم‌اکنون در حالت FIPS هستید. در این حالت لازم است گذرواژهٔ اصلی خالی نباشد.
+forms-primary-pw-change =
+    .label = تغییر گذرواژهٔ اصلی…
+    .accesskey = ت
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = قبلاً با عنوان Master Password شناخته می‌شد
+forms-primary-pw-fips-title = شما در حال حاضر در حالت FIPS هستید. FIPS به گذرواژه اصلیِ خالی نیاز دارد.
 forms-master-pw-fips-desc = تغییر گذرواژه شکست خورد
 
 ## OS Authentication dialog
 
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = ساخت یک گذرواژهٔ اصلی
+master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
 
@@ -767,7 +857,7 @@ history-remember-option-never =
     .label = هرگز تاریخچه را به خاطر نمی‌سپارد
 history-remember-option-custom =
     .label = تنظیمات خاصی را برای تاریخچه استفاده می‌کند
-history-remember-description = { -brand-short-name } سابقهٔ مرور، دریافت‌ها، اطلاعات فرم‌ها و تاریخچهٔ جست‌وجوهای شما را به خاطر خواهد آورد.
+history-remember-description = { -brand-short-name } سابقهٔ مرور، دریافت‌ها، اطلاعات فرم‌ها و تاریخچهٔ جستجوهای شما را به خاطر خواهد سپرد.
 history-dontremember-description = { -brand-short-name } تنظیمات حالت مرور ناشناس را استفاده خواهد کرد، و هیچ تاریخچه‌ای از مرور شما در وب نگه نخواهد داشت.
 history-private-browsing-permanent =
     .label = همیشه از حالت  مرور خصوصی استفاده کن
@@ -776,7 +866,7 @@ history-remember-browser-option =
     .label = ذخیرهٔ تاریخچهٔ دریافت‌ها و مرور
     .accesskey = b
 history-remember-search-option =
-    .label = اطلاعاتی که در فرم‌های صفحات وب و نوار جست‌وجو وارد می‌شوند به خاطر سپرده شود
+    .label = به خاطر سپردن اطلاعاتی که در فرم‌های صفحات وب و نوار جستجو وارد می‌شوند
     .accesskey = ط
 history-clear-on-close-option =
     .label = تاریخچه همیشه هنگام بستن { -brand-short-name } پاک شود
@@ -806,6 +896,20 @@ sitedata-allow-cookies-option =
 sitedata-disallow-cookies-option =
     .label = مسدودسازی کوکی‌ها و داده‌های سایت
     .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = الگوی مسدود شده
+    .accesskey = ل
+sitedata-option-block-cross-site-trackers =
+    .label = ردیاب‌های بین‌پایگاهی
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = ردیاب‌های بین‌پایگاهی و شبکه‌های اجتماعی
+sitedata-option-block-cross-site-tracking-cookies-including-social-media =
+    .label = کوکی‌های ردیاب بین‌پایگاهی — شامل کوکی‌های شبکه‌های اجتماعی
+sitedata-option-block-cross-site-cookies-including-social-media =
+    .label = کوکی‌های بین‌پایگاهی — شامل کوکی های شبکه‌های اجتماعی
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = ردیاب‌های بین‌پایگاهی و شبکه‌های اجتماعی، و ایزوله کردن سایر کوکی‌ها
 sitedata-option-block-unvisited =
     .label = کوکی‌ها از وب‌سایت‌های مشاهده نشده
 sitedata-option-block-all-third-party =
@@ -846,14 +950,16 @@ addressbar-locbar-topsites-option =
     .label = سایت‌های برتر
     .accesskey = T
 addressbar-locbar-engines-option =
-    .label = موتورهای جست‌وجو
+    .label = موتورهای جستجو
     .accesskey = a
-addressbar-suggestions-settings = تغییر ترجیحات مربوط به پیشنهادهای موتورهای جست‌وجو
+addressbar-suggestions-settings = تغییر ترجیحات مربوط به پیشنهادهای موتورهای جستجو
 
 ## Privacy Section - Content Blocking
 
 content-blocking-enhanced-tracking-protection = محفاظت پیشرفته در برابر ردیابی
+content-blocking-section-top-level-description = ردیاب‌ها شما را بصورت آنلاین دنبال می‌کنند تا اطلاعاتی راجع به عادات و علایق مرور شما جمع‌آوری کنند. { -brand-short-name } بسیاری از این ردیاب‌ها و سایر اسکریپت‌های مخرب را مسدود می‌کند.
 content-blocking-learn-more = بیشتر بدانید
+content-blocking-fpi-incompatibility-warning = شما از First Party Isolation (FPI) استفاده می‌کنید که برخی از تنظیمات کوکی‌های { -brand-short-name } را نادیده می‌گیرد.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -871,12 +977,27 @@ enhanced-tracking-protection-setting-custom =
 
 ##
 
+content-blocking-etp-standard-desc = تعادل بین کارآیی و حریم‌خصوصی. بارگیری صفحات با سرعتی عادی.
+content-blocking-etp-strict-desc = محافظتی قوی‌تر، اما ممکن است باعث از کار افتادن بعضی سایت‌ها و محتوا شود.
+content-blocking-etp-custom-desc = انتخاب کنید کدام ردیاب‌ها و اسکریپت‌ها مسدود شوند.
+content-blocking-etp-blocking-desc = { -brand-short-name } موارد زیر را مسدود می‌کند:
+content-blocking-private-windows = محتوای ردیابی در پنجره‌های ناشناس
+content-blocking-cross-site-cookies-in-all-windows = کوکی‌های بین‌پایگاهی در تمام پنجره‌ها (شامل کوکی‌های ردیاب)
+content-blocking-cross-site-tracking-cookies = کوکی‌هایِ ردیابِ بین‌پایگاهی
+content-blocking-all-cross-site-cookies-private-windows = کوکی‌های بین‌پایگاهی در پنجره‌های ناشناس
+content-blocking-cross-site-tracking-cookies-plus-isolate = کوکی‌های ردیابِ بین‌پایگاهی، و ایزوله کردن سایر کوکی‌ها
+content-blocking-social-media-trackers = ردیاب‌های شبکه‌های اجتماعی
 content-blocking-all-cookies = همه کوکی‌ها
+content-blocking-unvisited-cookies = کوکی‌های سایت‌های بازدید نشده
+content-blocking-all-windows-tracking-content = محتوای ردیابی در تمامی پنجره‌ها
 content-blocking-all-third-party-cookies = تمام کوکی‌های متفرقه
 content-blocking-cryptominers = استخراج کننده‌های رمزارزها
 content-blocking-fingerprinters = برداشت کنندگان اثر انگشت
 content-blocking-warning-title = هوشیار باشید!
+content-blocking-and-isolating-etp-warning-description = مسدود کردن ردیاب‌ها و ایزوله کردن کوکی‌ها می‌تواند بر عملکرد برخی سایت‌ها تأثیر بگذارد. برای بارگیری تمام مطالب، صفحه را مجددا بارگذاری کنید تا تمام محتوا بارگیری شود.
+content-blocking-and-isolating-etp-warning-description-2 = این تنظیم ممکن است باعث شود بعضی از وب‌سایت‌ها محتوایی نمایش ندهند یا به درستی کار نکنند. اگر سایتی خراب به نظر می‌سد، ممکن است بخواهید محافظت از ردیابی آن سایت را خاموش کنید تا همه مطالب بارگیری شود.
 content-blocking-warning-learn-how = بیشتر بدانید
+content-blocking-reload-description = برای اعمال این تغییرات باید زبانه‌های خود را دوباره بارگیری کنید.
 content-blocking-reload-tabs-button =
     .label = بارگذاری مجدد تمام زبانه‌ها
     .accesskey = R
@@ -964,6 +1085,7 @@ permissions-a11y-privacy-link = بیشتر بدانید
 collection-header = ذخیره اطلاعات و استفاده { -brand-short-name }
 collection-description = ما تمام تلاش خود را می‌کنیم که به شما حق انتخاب بدهیم و تنها اطلاعاتی را جمع‌آوری کنیم که برای بهبود { -brand-short-name } برای همه، کمک کند. ما همیشه قبل از دریافت اطلاعات شخصی از شما اجازه خواهیم گرفت.
 collection-privacy-notice = نکات حفظ حریم خصوصی
+collection-health-report-telemetry-disabled = شما دیگر به { -vendor-short-name } اجازهٔ ضبط داده‌های فنی و تعاملی را نداده‌‌اید. تمام اطلاعات قبلی تا ۳۰ روز آینده حذف خواهند شد.
 collection-health-report-telemetry-disabled-link = اطلاعات بیشتر
 collection-health-report =
     .label = اجازه دادن به { -brand-short-name } برای ارسال اطلاعاتِ فنی و رفتاری به { -vendor-short-name }
@@ -982,6 +1104,8 @@ collection-backlogged-crash-reports =
     .label = به { -brand-short-name } اجازه بده تا گزارش های پس زمینه خرابی را از طرف شما ارسال کند
     .accesskey = c
 collection-backlogged-crash-reports-link = بیشتر بدانید
+collection-backlogged-crash-reports-with-link = به { -brand-short-name } اجازه دهید گزارش‌های خرابی عقب مانده را از طرف شما ارذسال کند <a data-l10n-name="crash-reports-link">اطلاعات بیشتر</a>
+    .accesskey = ج
 
 ## Privacy Section - Security
 ##
@@ -1038,11 +1162,20 @@ space-alert-under-5gb-ok-button =
     .label = باشه،‌ متوجه شدم
     .accesskey = ب
 space-alert-under-5gb-message = فضای ذخیره سازی { -brand-short-name } تمام شده است. ممکن است محتواهای سایت‌ها خوب نمایش داده نشود.“اطلاعات بیشتر” رابرای بهبود سازی فضای ذخیره سازی خود در جهت کسب تجربه بهتری از مرورگر مشاهده کنید.
+space-alert-over-5gb-settings-button =
+    .label = باز کردن تنظیمات
+    .accesskey = ب
 
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = حالت فقط HTTPS
 httpsonly-learn-more = بیشتر بدانید
+httpsonly-radio-enabled =
+    .label = فعال‌سازی حالت فقط-HTTPS در تمام پنجره‌ها
+httpsonly-radio-enabled-pbm =
+    .label = فعال‌سازی حالت فقط-HTTPS تنها در پنجره‌های ناشناس
+httpsonly-radio-disabled =
+    .label = حالت فقط-HTTPS فعال نشود
 
 ## The following strings are used in the Download section of settings
 

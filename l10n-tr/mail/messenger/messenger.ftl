@@ -11,11 +11,23 @@ unread-messages-os-tooltip =
     }
 about-rights-notification-text = { -brand-short-name }, tüm dünyadan binlerce kişinin katkıda bulunduğu, özgür ve açık kaynaklı bir yazılımdır.
 
+## Content tabs
+
+content-tab-page-loading-icon =
+    .alt = Sayfa yükleniyor
+content-tab-security-high-icon =
+    .alt = Bağlantı güvenli
+content-tab-security-broken-icon =
+    .alt = Bağlantı güvenli değil
+
 ## Toolbar
 
 addons-and-themes-button =
-    .label = Eklentiler ve temalar
+    .label = Eklentiler ve Temalar
     .tooltip = Eklentilerinizi yönetin
+addons-and-themes-toolbarbutton =
+    .label = Eklentiler ve temalar
+    .tooltiptext = Eklentilerinizi yönetin
 redirect-msg-button =
     .label = Yönlendir
     .tooltiptext = Seçilen iletiyi yönlendir
@@ -110,6 +122,7 @@ addon-removal-title = { $name } kaldırılsın mı?
 addon-removal-confirmation-button = Kaldır
 addon-removal-confirmation-message = { $name } ile birlikte yapılandırması ve verileri { -brand-short-name } uygulamasından kaldırılsın mı?
 caret-browsing-prompt-title = Klavye ile Gezinti
+caret-browsing-prompt-text = F7 tuşu Klavye ile Gezinti özelliğini açar ve kapatır. Bu özellik, bazı içeriklerin içine hareket edebilen bir işaretçi ekleyerek metinleri klavyeyle seçebilmenizi sağlar. Klavye ile Gezinti’yi açmak istiyor musunuz?
 caret-browsing-prompt-check-text = Tekrar sorma.
 repair-text-encoding-button =
     .label = Metin kodlamasını onar

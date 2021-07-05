@@ -8,6 +8,12 @@ places-open =
 places-open-tab =
     .label = نئی ٹیب میں کھولیں
     .accesskey = ن
+places-open-in-tab =
+    .label = نئی ٹیب میں کھولیں
+    .accesskey = w
+places-open-all-bookmarks =
+    .label = تمام بُک مارکس کھولیں
+    .accesskey = O
 places-open-all-in-tabs =
     .label = تمام ٹیبوں میں کھولیں
     .accesskey = ت
@@ -29,6 +35,15 @@ places-new-folder =
 places-new-separator =
     .label = نیا جداکار
     .accesskey = ج
+places-open-in-window =
+    .label = نئی ونڈوں میں کھولیں
+    .accesskey = N
+places-open-in-private-window =
+    .label = نئے نجی دریچے میں کھولیں
+    .accesskey = P
+places-add-bookmark =
+    .label = بک مارک شامل کریں…
+    .accesskey = B
 places-view =
     .label = نظارہ
     .accesskey = ن
@@ -60,6 +75,24 @@ places-sortby-name =
 places-properties =
     .label = خواص
     .accesskey = خ
+# places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
+places-edit-bookmark =
+    .label = بُک مارک تدوین کریں
+    .accesskey = i
+places-edit-generic =
+    .label = تدوین کریں…
+    .accesskey = i
+places-edit-folder =
+    .label = فولڈر کا نام تبدیل کریں…
+    .accesskey = e
+places-remove-folder =
+    .label =
+        { $count ->
+            [1] فولڈر کو ہٹا دیں
+            [one] فولڈر کو ہٹا دیں
+           *[other] فولڈرز کو ہٹا دیں
+        }
+    .accesskey = m
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
     .label = بک مارکس منظم کریں
@@ -69,3 +102,6 @@ managed-bookmarks-subfolder =
 # This label is used for the "Other Bookmarks" folder that appears in the bookmarks toolbar.
 other-bookmarks-folder =
     .label = دیگر بک مارک
+places-manage-bookmarks =
+    .label = بک مارکس منظم کریں
+    .accesskey = M

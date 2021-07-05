@@ -53,14 +53,31 @@ about-processes-process-name = Процес { $pid }: { $name }
 ## Variables:
 ##    $pid (String) The process id of this process, assigned by the OS.
 
+about-processes-web-process = Дељени веб-процес ({ $pid })
+about-processes-file-process = Датотеке ({ $pid })
+about-processes-extension-process = Додаци ({ $pid })
+about-processes-privilegedabout-process = Странице about: ({ $pid })
+about-processes-plugin-process = Додатне компоненте ({ $pid })
+about-processes-privilegedmozilla-process = Сајтови организације { -vendor-short-name } ({ $pid })
+about-processes-gpu-process = GPU ({ $pid })
+about-processes-vr-process = VR ({ $pid })
 about-processes-rdd-process = Декодер података ({ $pid })
 about-processes-socket-process = Мрежа ({ $pid })
+about-processes-preallocated-process = Унапред додељено ({ $pid })
+# Unknown process names
+# Variables:
+#    $pid (String) The process id of this process, assigned by the OS.
+#    $type (String) The raw type for this process.
+about-processes-unknown-process = Друго: { $type } ({ $pid })
 
 ## Isolated process names
 ## Variables:
 ##    $pid (String) The process id of this process, assigned by the OS.
 ##    $origin (String) The domain name for this process.
 
+about-processes-web-isolated-process = { $origin } ({ $pid })
+about-processes-web-large-allocation-process = { $origin } ({ $pid }, велики)
+about-processes-with-coop-coep-process = { $origin } ({ $pid }, изолован са других извора)
 about-processes-web-isolated-process-private = { $origin } – приватни ({ $pid })
 about-processes-web-large-allocation-process-private = { $origin } – приватни ({ $pid }, велики)
 about-processes-with-coop-coep-process-private = { $origin } – приватни ({ $pid }, изолован са других извора)

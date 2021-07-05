@@ -109,9 +109,15 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Nas lugha de sgrìobhadh: Dèan lorg le { $engineName } o bhàr an t-seòlaidh fhèin.
 urlbar-search-tips-redirect-2 = Dèan lorg ann am bàr an t-seòlaidh ’s chì thu molaidhean o { $engineName } agus on eachdraidh bhrabhsaidh agad.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Tagh an ath-ghoirid seo a lorg na dh’fheumas tu nas luaithe.
 
 ## Local search mode indicator labels in the urlbar
 
+urlbar-search-mode-bookmarks = Comharran-lìn
+urlbar-search-mode-tabs = Tabaichean
+urlbar-search-mode-history = Eachdraidh
 
 ##
 
@@ -156,6 +162,8 @@ page-action-manage-extension =
     .label = Stiùirich an leudachan...
 page-action-remove-from-urlbar =
     .label = Thoir air falbh o bhàr an t-seòlaidh
+page-action-remove-extension =
+    .label = Thoir an leudachan air falbh
 
 ## Page Action menu
 
@@ -235,6 +243,20 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Suidhich mar an t-einnsean-luirg bunaiteachd ann an uinneagan prìobhaideach
     .accesskey = S
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Cuir “{ $engineName }” ris
+    .tooltiptext = Cuir einnsean-luirg “{ $engineName }” ris
+    .aria-label = Cuir einnsean-luirg “{ $engineName }” ris
 # When more than 5 engines are offered by a web page, they are grouped in a
 # submenu using this as its label.
 search-one-offs-add-engine-menu =
@@ -247,9 +269,17 @@ search-one-offs-add-engine-menu =
 ##    restrict their searches to certain sources (e.g., "*" to search only
 ##    bookmarks).
 
+search-one-offs-bookmarks =
+    .tooltiptext = Comharran-lìn ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Tabaichean ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Eachdraidh ({ $restrict })
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Cuir comharra-lìn ris
+bookmarks-edit-bookmark = Deasaich an comharra-lìn
 bookmark-panel-cancel =
     .label = Sguir dheth
     .accesskey = C
@@ -269,6 +299,8 @@ bookmark-panel-show-editor-checkbox =
     .accesskey = S
 bookmark-panel-done-button =
     .label = Dèanta
+bookmark-panel-save-button =
+    .label = Sàbhail
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -277,8 +309,16 @@ bookmark-panel =
 
 ## Identity Panel
 
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-site-information = Sàbhail am fiosrachadh air { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+identity-header-security-with-host =
+    .title = Tèarainteachd a’ cheangail airson { $host }
 identity-connection-not-secure = Chan eil an ceangal tèarainte
 identity-connection-secure = Tha an ceangal tèarainte
+identity-connection-failure = Dh’fhàillig leis a’ cheangal
 identity-connection-internal = Seo duilleag { -brand-short-name } tèarainte.
 identity-connection-file = Tha an duilleag seo ’ga stòradh air a’ choimpiutair agad.
 identity-extension-page = Chaidh an duilleag seo ’ga luchdadh o leudachan.
@@ -290,6 +330,20 @@ identity-weak-encryption = Tha an duilleag seo a’ cleachdadh crioptachadh lag.
 identity-insecure-login-forms = Dh’fhaoidte gu bheil cothrom air daoine air fiosrachadh clàraidh air an duilleag seo.
 identity-permissions =
     .value = Ceadan
+identity-https-only-connection-upgraded = (chaidh àrdachadh gu HTTPS)
+identity-https-only-label = Modh HTTPS a-mhàin
+identity-https-only-dropdown-on =
+    .label = Air
+identity-https-only-dropdown-off =
+    .label = Dheth
+identity-https-only-dropdown-off-temporarily =
+    .label = Dheth rè seal
+identity-https-only-info-turn-on2 = Cuir am modh HTTPS air dhan làrach seo ma thogras tu gun àrdaich { -brand-short-name } an ceangal nuair a ghabhas seo a dhèanamh.
+identity-https-only-info-turn-off2 = Ma tha coltas briste air an duilleag seo, dh’fhaoidte gu bheil thu airson am modh HTTPS a-mhàin a chur dheth dhan làrach seo agus a h-ath-luchdadh le HTTP neo-thèarainte.
+identity-https-only-info-no-upgrade = Cha b’ urrainn dhuinn an ceangal àrdachadh o HTTP.
+identity-permissions-storage-access-header = Briosgaidean thar làraichean
+identity-permissions-storage-access-hint = ’S urrainn dha na pàrtaidhean seo briosgaidean agus dàta thar làraichean a chleachdadh fhad ’s a bhios tu air an làrach seo.
+identity-permissions-storage-access-learn-more = Barrachd fiosrachaidh
 identity-permissions-reload-hint = Dh’fhaoidte gum bi agad ris an duilleag ath-luchdadh mus bi na h-atharraichean an sàs.
 identity-permissions-empty = Cha dug thu cead sònraichte sam bith dhan làrach seo.
 identity-clear-site-data =
@@ -326,19 +380,59 @@ identity-more-info-link-text =
 
 browser-window-minimize-button =
     .tooltiptext = Lughdaich
+browser-window-maximize-button =
+    .tooltiptext = Làn-mheudaich
+browser-window-restore-down-button =
+    .tooltiptext = Aisig sìos
 browser-window-close-button =
     .tooltiptext = Dùin
 
 ## Tab actions
 
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = ’GA CHLUICH
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = MÙCHTE
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = GUN CHLUICH FHÈIN-OBRACHAIL
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = DEALBH AM BROINN DEILBH
 
 ## These labels should be written in all capital letters if your locale supports them.
 ## Variables:
 ##  $count (number): number of affected tabs
 
+browser-tab-mute =
+    { $count ->
+        [1] MÙCH AN TABA
+        [one] MÙCH { $count } TABA
+        [two] MÙCH { $count } THABA
+        [few] MÙCH { $count } TABAICHEAN
+       *[other] MÙCH { $count } TABA
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] DÌ-MHUCH AN TABA
+        [one] DÌ-MHUCH { $count } TABA
+        [two] DÌ-MHUCH { $count } THABA
+        [few] DÌ-MHUCH { $count } TABAICHEAN
+       *[other] DÌ-MHUCH { $count } TABA
+    }
+browser-tab-unblock =
+    { $count ->
+        [1] CLUICH AN TABA
+        [one] CLUICH { $count } TABA
+        [two] CLUICH { $count } THABA
+        [few] CLUICH { $count } TABAICHEAN
+       *[other] CLUICH { $count } TABA
+    }
 
 ## Bookmarks toolbar items
 
+browser-import-button2 =
+    .label = Ion-phortaich comharran-lìn…
+    .tooltiptext = Ion-phortaich comharran-lìn o brabhsair eile gu { -brand-short-name }.
+bookmarks-toolbar-empty-message = Airson cothrom luath orra, cuir na comharran-lìn agad air bàr nan comharran-lìn an-seo. <a data-l10n-name="manage-bookmarks">Stiùirich na comharran-lìn…</a>
 
 ## WebRTC Pop-up notifications
 
@@ -348,13 +442,47 @@ popup-select-camera =
 popup-select-microphone =
     .value = Am micreofon a thèid a cho-roinneadh:
     .accesskey = m
+popup-select-camera-device =
+    .value = Camara:
+    .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = Camara
+popup-select-microphone-device =
+    .value = Micreofon:
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Micreofon
+popup-select-speaker-icon =
+    .tooltiptext = Glaodhairean
 popup-all-windows-shared = Thèid gach uinneag a tha ri fhaicinn air an sgrìn agad a cho-roinneadh.
+popup-screen-sharing-not-now =
+    .label = Chan ann an-dràsta
+    .accesskey = C
+popup-screen-sharing-never =
+    .label = Na ceadaich seo idir
+    .accesskey = N
+popup-silence-notifications-checkbox = Cuir na brathan o { -brand-short-name } à comas fhad ’s a bhios tu ri co-roinneadh
+popup-silence-notifications-checkbox-warning = Cha sheall { -brand-short-name } brathan fhad ’s a bhios tu ri co-roinneadh.
+popup-screen-sharing-block =
+    .label = Bac
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = Bac an-còmhnaidh
+    .accesskey = m
+popup-mute-notifications-checkbox = Mùch brathan làraichean fhad ’s a bhios tu ri co-roinneadh
 
 ## WebRTC window or screen share tab switch warning
 
+sharing-warning-window = Tha thu a’ co-roinneadh { -brand-short-name }. Chì càch nuair a ghearras tu leum gu taba ùr.
+sharing-warning-screen = Tha thu a’ co-roinneadh na sgrìn gu lèir. Chì càch nuair a ghearras tu leum gu taba ùr.
+sharing-warning-proceed-to-tab =
+    .label = Lean air adhart dhan taba
+sharing-warning-disable-for-session =
+    .label = Cuir dìon a’ cho-roinnidh à comas rè an t-seisein seo
 
 ## DevTools F12 popup
 
+enable-devtools-popup-description = Mus cleachd thu ath-ghoirid F12, feumaidh tu DevTools fhosgladh le clàr-taice an luchd-leasachaidh.
 
 ## URL Bar
 
@@ -364,12 +492,47 @@ urlbar-default-placeholder =
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Cuir ann lorg no seòladh
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Lorg air an lìon
+    .aria-label = Lorg le { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Cuir a-steach abairt-luirg
+    .aria-label = Lorg air { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Cuir a-steach abairt-luirg
+    .aria-label = Lorg sna comharran-lìn
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Cuir a-steach abairt-luirg
+    .aria-label = Lorg san eachdraidh
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Cuir a-steach abairt-luirg
+    .aria-label = Lorg sna tabaichean
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
     .placeholder = Lorg le { $name } no cuir ann seòladh
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Tha am brabhsair fo smachd cèin
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Tha am brabhsair fo smachd cèin (adhbhar: { $component })
+urlbar-permissions-granted =
+    .tooltiptext = Thug thu ceadan a bharrachd dhan làrach-lìn seo.
 urlbar-switch-to-tab =
     .value = Gearr leum gun taba:
 # Used to indicate that a selected autocomplete entry is provided by an extension.
@@ -385,18 +548,57 @@ urlbar-pocket-button =
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
 
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Lorg le { $engine } am broinn uinneag phrìobhaideach
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Lorg am broinn uinneag phrìobhaideach
 # The "with" format was chosen because the search engine name can end with
 # "Search", and we would like to avoid strings like "Search MSN Search".
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = Lorg le { $engine }
+urlbar-result-action-sponsored = Sponsairichte
 urlbar-result-action-switch-tab = Gearr leum gun taba
 urlbar-result-action-visit = Tadhail air
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Brùth air Tab a lorg le { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Brùth air Tab a lorg air { $engine }
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Lorg le { $engine } sa bhad on bhàr-sheòlaidh
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Lorg air { $engine } sa bhad on bhàr-sheòlaidh
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Dèan lethbhreac
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
 
+urlbar-result-action-search-bookmarks = Lorg sna comharran-lìn
+urlbar-result-action-search-history = Lorg san eachdraidh
+urlbar-result-action-search-tabs = Lorg sna tabaichean
 
 ## Full Screen and Pointer Lock UI
 
@@ -416,17 +618,24 @@ pointerlock-warning-no-domain = Tha smachd aig an sgrìobhainn seo air an tomhai
 
 ## Subframe crash notification
 
+crashed-subframe-message = <strong>Thuislich pàirt dhen duilleag seo.</strong> Airson innse dha { -brand-product-name } mun duilgheadas seo agus càradh fhaighinn air nas luaithe, cuir a-null aithris.
 crashed-subframe-learnmore-link =
     .value = Barrachd fiosrachaidh
+crashed-subframe-submit =
+    .label = Cuir a-null aithris
+    .accesskey = s
 
 ## Bookmarks panels, menus and toolbar
 
+bookmarks-manage-bookmarks =
+    .label = Stiùirich na comharran-lìn
+bookmarks-recent-bookmarks-panel-subheader = Comharran-lìn o chionn ghoirid
 bookmarks-toolbar-chevron =
     .tooltiptext = Tuilleadh chomharran-lìn
 bookmarks-sidebar-content =
     .aria-label = Comharran-lìn
 bookmarks-menu-button =
-    .label = Clàr-taice nan comharra-lìn
+    .label = Clàr-taice nan comharran-lìn
 bookmarks-other-bookmarks-menu =
     .label = Comharran-lìn eile
 bookmarks-mobile-bookmarks-menu =
@@ -434,50 +643,68 @@ bookmarks-mobile-bookmarks-menu =
 bookmarks-tools-sidebar-visibility =
     .label =
         { $isVisible ->
-            [true] Falaich bàr-taoibh nan comharra-lìn
-           *[other] Seall bàr-taoibh nan comharra-lìn
+            [true] Falaich bàr-taoibh nan comharran-lìn
+           *[other] Seall bàr-taoibh nan comharran-lìn
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
         { $isVisible ->
-            [true] Falaich bàr-inneal nan comharra-lìn
-           *[other] Seall bàr nan comharra-lìn
+            [true] Falaich bàr-inneal nan comharran-lìn
+           *[other] Seall bàr nan comharran-lìn
         }
 bookmarks-tools-toolbar-visibility-panel =
     .label =
         { $isVisible ->
-            [true] Falaich bàr nan comharra-lìn
-           *[other] Seall bàr nan comharra-lìn
+            [true] Falaich bàr nan comharran-lìn
+           *[other] Seall bàr nan comharran-lìn
         }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
-            [true] Thoir air falbh clàr-taice nan comharra-lìn on bhàr-inneal
-           *[other] Cuir clàr-taice nan comharra-lìn ris a’ bhàr-inneal
+            [true] Thoir air falbh clàr-taice nan comharran-lìn on bhàr-inneal
+           *[other] Cuir clàr-taice nan comharran-lìn ris a’ bhàr-inneal
         }
 bookmarks-search =
     .label = Lorg sna comharran-lìn
 bookmarks-tools =
-    .label = Innealan nan comharra-lìn
+    .label = Innealan nan comharran-lìn
 bookmarks-bookmark-edit-panel =
     .label = Deasaich an comharra-lìn seo
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Bàr nan comharran-lìn
+    .accesskey = B
+    .aria-label = Comharran-lìn
 bookmarks-toolbar-menu =
-    .label = Bàr nan comharra-lìn
+    .label = Bàr nan comharran-lìn
 bookmarks-toolbar-placeholder =
-    .title = Rudan air bàr nan comharra-lìn
+    .title = Rudan air bàr nan comharran-lìn
 bookmarks-toolbar-placeholder-button =
-    .label = Rudan air bàr nan comharra-lìn
+    .label = Rudan air bàr nan comharran-lìn
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Dèan comharra-lìn dhen taba làithreach
 
 ## Library Panel items
 
 library-bookmarks-menu =
     .label = Comharran-lìn
+library-recent-activity-title =
+    .value = Gnìomhachd o chionn ghoirid
 
 ## Pocket toolbar button
 
 save-to-pocket-button =
     .label = Sàbhail ann am { -pocket-brand-name }
     .tooltiptext = Sàbhail ann am { -pocket-brand-name }
+
+## Repair text encoding toolbar button
+
+repair-text-encoding-button =
+    .label = Càraich còdachadh an teacsa
+    .tooltiptext = Dèan tuairmse air còdachadh ceart an teacsa o shusbaint na duilleige
 
 ## Customize Toolbar Buttons
 
@@ -506,9 +733,14 @@ more-menu-go-offline =
 
 eme-notifications-drm-content-playing = Tha cuid dhen fhuaim no video air an làrach seo a' cleachdadh bathar-bog DRM agus dh'fhaoidte gun cuingich seo na 's urrainn dhut a dhèanamh leis ann am { -brand-short-name }.
 eme-notifications-drm-content-playing-manage = Stiùirich na roghainnean
+eme-notifications-drm-content-playing-manage-accesskey = S
+eme-notifications-drm-content-playing-dismiss = Leig seachad
+eme-notifications-drm-content-playing-dismiss-accesskey = d
 
 ## Password save/update panel
 
+panel-save-update-username = Ainm-cleachdaiche
+panel-save-update-password = Facal-faire
 
 ## Add-on removal warning
 
@@ -519,3 +751,6 @@ addon-removal-abuse-report-checkbox = Dèan aithris air an leudachan seo gu { -v
 
 ## Remote / Synced tabs
 
+remote-tabs-manage-account =
+    .label = Stiùirich an cunntas
+remote-tabs-sync-now = Sioncronaich an-dràsta

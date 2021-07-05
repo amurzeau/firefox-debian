@@ -52,7 +52,7 @@ urlbar-identity-button =
 ## Tooltips for images appearing in the address bar
 
 urlbar-services-notification-anchor =
-    .tooltiptext = Отвори панел за инсалацију порука
+    .tooltiptext = Отвори панел са порукама о инсталацији
 urlbar-web-notification-anchor =
     .tooltiptext = Промените да ли сајт може да приказује обавештења
 urlbar-midi-notification-anchor =
@@ -60,7 +60,7 @@ urlbar-midi-notification-anchor =
 urlbar-eme-notification-anchor =
     .tooltiptext = Управљајте употребом DRM софтвера
 urlbar-web-authn-anchor =
-    .tooltiptext = Отвори панел за веб аутентификацију
+    .tooltiptext = Отвори панел веб-аутентификације
 urlbar-canvas-notification-anchor =
     .tooltiptext = Управљајте приступом информацијама у canvas-у
 urlbar-web-rtc-share-microphone-notification-anchor =
@@ -68,9 +68,9 @@ urlbar-web-rtc-share-microphone-notification-anchor =
 urlbar-default-notification-anchor =
     .tooltiptext = Отвори панел са порукама
 urlbar-geolocation-notification-anchor =
-    .tooltiptext = Отвори панел за захтев локације
+    .tooltiptext = Отвори панел са захтевима о локацији
 urlbar-xr-notification-anchor =
-    .tooltiptext = Отворите панел дозвола за виртуелну стварност
+    .tooltiptext = Отвори панел са дозволама за виртуелну реалност
 urlbar-storage-access-anchor =
     .tooltiptext = Отвори панел са дозволама при прегледању
 urlbar-translate-notification-anchor =
@@ -78,9 +78,9 @@ urlbar-translate-notification-anchor =
 urlbar-web-rtc-share-screen-notification-anchor =
     .tooltiptext = Управљајте дељењем прозора или екрана са сајтом
 urlbar-indexed-db-notification-anchor =
-    .tooltiptext = Отвори панел за ванмрежно складиште
+    .tooltiptext = Отвори панел са порукама о офлајн меморији
 urlbar-password-notification-anchor =
-    .tooltiptext = Отвори панел за чување лозинке
+    .tooltiptext = Отвори панел са захтевом за чување лозинке
 urlbar-translated-notification-anchor =
     .tooltiptext = Управљајте преводом странице
 urlbar-plugins-notification-anchor =
@@ -94,7 +94,7 @@ urlbar-persistent-storage-notification-anchor =
 urlbar-addons-notification-anchor =
     .tooltiptext = Отвори панел са инсталацијом додатака
 urlbar-tip-help-icon =
-    .title = Потражите помоћ
+    .title = Потражи помоћ
 urlbar-search-tips-confirm = Разумем
 # Read out before Urlbar Tip text content so screenreader users know the
 # subsequent text is a tip offered by the browser. It should end in a colon or
@@ -144,15 +144,15 @@ urlbar-canvas-blocked =
 urlbar-midi-blocked =
     .tooltiptext = Овом веб-сајту сте забранили приступ MIDI уређајима.
 urlbar-install-blocked =
-    .tooltiptext = Зауставили сте инсталацију додатка за ову веб локацију.
+    .tooltiptext = Блокирали сте инсталацију додатака са овог веб-сајта.
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
-    .tooltiptext = Уреди овај обележивач ({ $shortcut })
+    .tooltiptext = Уреди обележивач ({ $shortcut })
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
-    .tooltiptext = Забележи ову страницу ({ $shortcut })
+    .tooltiptext = Обележи страницу ({ $shortcut })
 
 ## Page Action Context Menu
 
@@ -161,7 +161,7 @@ page-action-add-to-urlbar =
 page-action-manage-extension =
     .label = Управљај додатком…
 page-action-remove-from-urlbar =
-    .label = Уклони са адресне траке
+    .label = Уклони са траке за адресу
 page-action-remove-extension =
     .label = Уклони додатак
 
@@ -192,9 +192,9 @@ page-action-email-link-panel =
 page-action-email-link-urlbar =
     .tooltiptext = Пошаљи везу имејлом…
 page-action-share-url-panel =
-    .label = Подели
+    .label = Дели
 page-action-share-url-urlbar =
-    .tooltiptext = Подели
+    .tooltiptext = Дели
 page-action-share-more-panel =
     .label = Још…
 page-action-send-tab-not-ready =
@@ -225,7 +225,7 @@ full-screen-exit =
 
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
-search-one-offs-with-title = Овог пута претражи помоћу:
+search-one-offs-with-title = Претражи помоћу:
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
@@ -292,8 +292,8 @@ bookmark-panel-remove =
         }
     .accesskey = У
 bookmark-panel-show-editor-checkbox =
-    .label = Прикажи уређивач приликом чувања
-    .accesskey = S
+    .label = Прикажи уређивач при чувању
+    .accesskey = П
 bookmark-panel-done-button =
     .label = Готово
 bookmark-panel-save-button =
@@ -323,13 +323,19 @@ identity-connection-internal =
         [neuter] { -brand-short-name(case: "gen") }
        *[other] програма { -brand-short-name }
     }.
-identity-connection-file = Ова страница се складишти на рачунару.
+identity-connection-file = Ова страница је сачувана на рачунару.
 identity-extension-page = Ову страницу је отворио додатак.
-identity-active-blocked = { -brand-short-name } је блокирао делове ове странице који нису безбедни.
-identity-custom-root = Везу је проверио издавач сертификата који Mozilla не препознаје.
-identity-passive-loaded = Делови ове странице нису безбедни (као што су слике).
-identity-active-loaded = Заштита на овој страници је искључена.
-identity-weak-encryption = Страница користи слабо шифровање.
+identity-active-blocked =
+    { -brand-short-name.gender ->
+        [masculine] { -brand-short-name } је блокирао
+        [feminine] { -brand-short-name } је блокирала
+        [neuter] { -brand-short-name } је блокирало
+       *[other] Програм { -brand-short-name } је блокирао
+    } делове ове странице који нису безбедни.
+identity-custom-root = Везу је потврдио издавалац сертификата ког Mozilla не препознаје.
+identity-passive-loaded = Неки делови ове странице, попут слика, нису безбедни.
+identity-active-loaded = Онемогућили сте заштиту на овој страници.
+identity-weak-encryption = Ова страница користи слабо шифровање.
 identity-insecure-login-forms = Пријаве које су унесене на овој страници су можда угрожене.
 identity-permissions =
     .value = Дозволе
@@ -357,7 +363,7 @@ identity-ev-owner-label = Сертификат издан за:
 identity-description-custom-root = Mozilla не препознаје издавача овог сертификата. Можда је додат из вашег оперативног система или од стране администратора. <label data-l10n-name="link">Сазнајте више</label>
 identity-remove-cert-exception =
     .label = Уклони изузетак
-    .accesskey = R
+    .accesskey = У
 identity-description-insecure = Веза са овим сајтом није приватна. Информације које пошаљете (нпр. лозинке, поруке, кредитне картице итд.) могу видети други.
 identity-description-insecure-login-forms = Информације за пријаву које сте унели на овој страницу нису сигурне и могу бити угрожене.
 identity-description-weak-cipher-intro = Веза са овим сајтом користи слабо шифровање и није приватна.
@@ -372,10 +378,10 @@ identity-learn-more =
     .value = Сазнајте више
 identity-disable-mixed-content-blocking =
     .label = Онемогући заштиту
-    .accesskey = О
+    .accesskey = н
 identity-enable-mixed-content-blocking =
     .label = Омогући заштиту
-    .accesskey = E
+    .accesskey = м
 identity-more-info-link-text =
     .label = Више информација
 
@@ -393,9 +399,9 @@ browser-window-close-button =
 ## Tab actions
 
 # This label should be written in all capital letters if your locale supports them.
-browser-tab-audio-playing2 = РЕПРОДУКОВАЊЕ
+browser-tab-audio-playing2 = РЕПРОДУКУЈЕ СЕ
 # This label should be written in all capital letters if your locale supports them.
-browser-tab-audio-muted2 = УТИШАНО
+browser-tab-audio-muted2 = БЕЗ ЗВУКА
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-blocked = АУТОМАТСКА РЕПРОДУКЦИЈА БЛОКИРАНА
 # This label should be written in all capital letters if your locale supports them.
@@ -421,10 +427,10 @@ browser-tab-unmute =
     }
 browser-tab-unblock =
     { $count ->
-        [1] ПУСТИ КАРТИЦУ
-        [one] ПУСТИ { $count } КАРТИЦУ
-        [few] ПУСТИ { $count } КАРТИЦЕ
-       *[other] ПУСТИ { $count } КАРТИЦА
+        [1] ПУСТИ САДРЖАЈ ИЗ КАРТИЦЕ
+        [one] ПУСТИ САДРЖАЈ ИЗ { $count } КАРТИЦЕ
+        [few] ПУСТИ САДРЖАЈ ИЗ { $count } КАРТИЦЕ
+       *[other] ПУСТИ САДРЖАЈ ИЗ { $count } КАРТИЦА
     }
 
 ## Bookmarks toolbar items
@@ -473,7 +479,7 @@ popup-mute-notifications-checkbox = Током дељења искључи об�
 
 ## WebRTC window or screen share tab switch warning
 
-sharing-warning-window = Делите { -brand-short-name }. Други људи могу да виде када пређете на нови језичак.
+sharing-warning-window = Делите { -brand-short-name(case: "acc") }. Други људи могу да виде када пређете на нову картицу.
 sharing-warning-screen = Делите цео екран. Други људи могу да виде када пређете на нову картицу.
 sharing-warning-proceed-to-tab =
     .label = Пређи на картицу
@@ -482,7 +488,7 @@ sharing-warning-disable-for-session =
 
 ## DevTools F12 popup
 
-enable-devtools-popup-description = Да бисте користили пречицу F12, прво отворите DevTools преко Web Developer менија.
+enable-devtools-popup-description = Да бисте користили пречицу F12, из менија „За веб-програмере” отворите алатке за програмере.
 
 ## URL Bar
 
@@ -499,7 +505,7 @@ urlbar-placeholder =
 #  (e.g. Google).
 urlbar-placeholder-search-mode-web-2 =
     .placeholder = Претражите интернет
-    .aria-label = Претрага помоћу услуге { $name }
+    .aria-label = Претражите у претраживачу { $name }
 # This placeholder is used in search mode with search engines that search a
 # specific site (e.g., Amazon).
 # Variables
@@ -511,11 +517,11 @@ urlbar-placeholder-search-mode-other-engine =
 # This placeholder is used when searching bookmarks.
 urlbar-placeholder-search-mode-other-bookmarks =
     .placeholder = Унесите термин за претрагу
-    .aria-label = Претрага обележивача
+    .aria-label = Претражите обележиваче
 # This placeholder is used when searching history.
 urlbar-placeholder-search-mode-other-history =
-    .placeholder = Унеси појмове за претрагу
-    .aria-label = Претражи историју
+    .placeholder = Унесите термин за претрагу
+    .aria-label = Претражите историју
 # This placeholder is used when searching open tabs.
 urlbar-placeholder-search-mode-other-tabs =
     .placeholder = Унесите термин за претрагу
@@ -579,7 +585,7 @@ urlbar-result-action-before-tabtosearch-other = Притисните Tab да б
 # Variables
 #  $engine (String): the name of a search engine that searches the entire Web
 #  (e.g. Google).
-urlbar-result-action-tabtosearch-web = Претражите помоћу услуге { $engine } директно из траке за адресу
+urlbar-result-action-tabtosearch-web = Претражите у претраживачу { $engine } директно из траке за адресу
 # Variables
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
@@ -597,7 +603,7 @@ urlbar-result-action-calculator-result = = { $result }
 ## In these actions "Search" is a verb, followed by where the search is performed.
 
 urlbar-result-action-search-bookmarks = Претражи обележиваче
-urlbar-result-action-search-history = Претражи историју
+urlbar-result-action-search-history = Претражите историју
 urlbar-result-action-search-tabs = Претражи картице
 
 ## Full Screen and Pointer Lock UI
@@ -669,13 +675,13 @@ bookmarks-search =
 bookmarks-tools =
     .label = Алатке за обележиваче
 bookmarks-bookmark-edit-panel =
-    .label = Уреди овај обележивач
+    .label = Уреди обележивач
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
 bookmarks-toolbar =
     .toolbarname = Трака са обележивачима
-    .accesskey = Т
+    .accesskey = б
     .aria-label = Обележивачи
 bookmarks-toolbar-menu =
     .label = Трака са обележивачима

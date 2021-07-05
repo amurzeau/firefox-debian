@@ -173,6 +173,9 @@ menu-view-page-basic-style =
 menu-view-charset =
     .label = Text Encoding
     .accesskey = c
+menu-view-repair-text-encoding =
+    .label = Repair Text Encoding
+    .accesskey = c
 
 ## These should match what Safari and other Apple applications
 ## use on macOS.
@@ -227,6 +230,8 @@ menu-bookmarks-show-all =
     .label = Show All Bookmarks
 menu-bookmark-this-page =
     .label = Bookmark This Page
+menu-bookmarks-manage =
+    .label = Manage Bookmarks
 menu-bookmark-current-tab =
     .label = Bookmark Current Tab
 menu-bookmark-edit =
@@ -254,21 +259,21 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Sign In To { -brand-product-name }…
     .accesskey = g
+menu-tools-turn-on-sync =
+    .label = Turn on { -sync-brand-short-name }…
+    .accesskey = n
 menu-tools-addons-and-themes =
     .label = Add-ons and Themes
     .accesskey = A
 menu-tools-fxa-sign-in2 =
     .label = Sign In
     .accesskey = g
-menu-tools-turn-on-sync =
-    .label = Turn on { -sync-brand-short-name }…
-    .accesskey = n
 menu-tools-turn-on-sync2 =
     .label = Turn on Sync…
     .accesskey = n
 menu-tools-sync-now =
     .label = Sync Now
-    .accesskey = S
+    .accesskey = o
 menu-tools-fxa-re-auth =
     .label = Reconnect to { -brand-product-name }…
     .accesskey = R
@@ -280,20 +285,13 @@ menu-tools-browser-tools =
     .accesskey = B
 menu-tools-task-manager =
     .label = Task Manager
-    .accesskey = T
+    .accesskey = M
 menu-tools-page-source =
     .label = Page Source
     .accesskey = o
 menu-tools-page-info =
     .label = Page Info
     .accesskey = I
-menu-settings =
-    .label = Settings
-    .accesskey =
-        { PLATFORM() ->
-            [windows] S
-           *[other] n
-        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -303,6 +301,13 @@ menu-preferences =
     .accesskey =
         { PLATFORM() ->
             [windows] O
+           *[other] n
+        }
+menu-settings =
+    .label = Settings
+    .accesskey =
+        { PLATFORM() ->
+            [windows] S
            *[other] n
         }
 menu-tools-layout-debugger =
@@ -342,14 +347,12 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = Keyboard Shortcuts
     .accesskey = K
-menu-get-help =
-    .label = Get Help
-    .accesskey = H
 menu-help-troubleshooting-info =
     .label = Troubleshooting Information
     .accesskey = T
-menu-help-taskmanager =
-    .label = Task Manager
+menu-get-help =
+    .label = Get Help
+    .accesskey = H
 menu-help-more-troubleshooting-info =
     .label = More Troubleshooting Information
     .accesskey = T

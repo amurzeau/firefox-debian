@@ -15,6 +15,7 @@ pocket-panel-saved-error-generic = خطایی در هنگام تلاش برای 
 pocket-panel-saved-error-tag-length = برچسب‌ها شامل محدودیت ۲۵ حرفی می‌باشند
 pocket-panel-saved-error-only-links = تنها لینک‌ها می توانند ذخیره شوند
 pocket-panel-saved-error-not-saved = صفحه ذخیره نشد
+pocket-panel-saved-error-no-internet = برای ذخیره در { -pocket-brand-name } باید به اینترنت متصل باشید. لطفا به اینترنت متصل و دوباره تلاش کنید.
 pocket-panel-saved-page-removed = صفحه حذف شد
 pocket-panel-saved-page-saved = در ‌{ -pocket-brand-name } ذخیره شده
 pocket-panel-saved-processing-remove = در حال حذف صفحه…
@@ -33,10 +34,16 @@ pocket-panel-signup-learn-more = بیشتر بدانید
 pocket-panel-signup-login = ورود به سیستم
 pocket-panel-signup-signup-email = ثبت‌نام با ایمیل
 pocket-panel-signup-signup-cta = در { -pocket-brand-name } ثبت‌نام کنید. رایگان است.
-pocket-panel-signup-signup-firefox = ثبت نام توسط فایرفاکس
-pocket-panel-signup-tagline = مقاله‌ها و ویدئوها را با فایرفاکس ذخیره کنید و در هر زمان و دستگاهی به وسیله‌ی { -pocket-brand-name } ببینید.
-pocket-panel-signup-tagline-story-one = بر روی دکمه { -pocket-brand-name } کلیک کنید تا مقاله، ویدئو یا صفحات را از طریق فایرفاکس ذخیره کنید.
+pocket-panel-signup-signup-firefox = ثبت نام با { -brand-product-name }
+pocket-panel-signup-tagline = مقاله‌ها و ویدئوها را با { -brand-product-name } ذخیره کنید و در هر زمان و دستگاهی به وسیله‌ی { -pocket-brand-name } ببینید.
+pocket-panel-signup-tagline-story-one = بر روی دکمه { -pocket-brand-name } کلیک کنید تا مقاله، ویدئو یا صفحات را از طریق { -brand-product-name } ذخیره کنید.
 pocket-panel-signup-tagline-story-two = نمایش در { -pocket-brand-name } در هر دستگاه و در هر زمانی.
 
 ## about:pocket-home panel
 
+pocket-panel-home-my-list = فهرست من
+pocket-panel-home-welcome-back = خوش‌آمدید
+pocket-panel-home-paragraph = از { -pocket-brand-name } می‌توانید برای کاوش و ذخیرهٔ صفحات وب، مقالات، ویدئوها، پادکست‌ها و یا بازگشت به چیزی که قبلا می‌خواندید استفاده کنید.
+pocket-panel-home-explore-popular-topics = موضوعات جالب را پیدا کنید
+pocket-panel-home-discover-more = بیشتر ببینید
+pocket-panel-home-explore-more = کاوش

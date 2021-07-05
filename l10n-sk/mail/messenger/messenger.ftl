@@ -12,11 +12,26 @@ unread-messages-os-tooltip =
     }
 about-rights-notification-text = { -brand-short-name } je voľne šíriteľný otvorený softvér vytvorený spoločenstvom tisícov prispievateľov z celého sveta.
 
+## Content tabs
+
+content-tab-page-loading-icon =
+    .alt = Stránka sa načítava
+content-tab-security-high-icon =
+    .alt = Pripojenie je zabezpečené
+content-tab-security-broken-icon =
+    .alt = Pripojenie nie je zabezpečené
+
 ## Toolbar
 
 addons-and-themes-button =
     .label = Doplnky a témy
     .tooltip = Správa vašich doplnkov
+addons-and-themes-toolbarbutton =
+    .label = Doplnky a témy
+    .tooltiptext = Správa doplnkov a tém
+quick-filter-toolbarbutton =
+    .label = Rýchly filter
+    .tooltiptext = Umožní filtrovanie správ
 redirect-msg-button =
     .label = Presmerovať
     .tooltiptext = Presmerovať vybranú správu
@@ -110,3 +125,9 @@ message-header-address-not-in-address-book-icon =
 addon-removal-title = Odstrániť { $name }?
 addon-removal-confirmation-button = Odstrániť
 addon-removal-confirmation-message = Odstrániť doplnok { $name }, ako aj jeho konfiguráciu a údaje z aplikácie { -brand-short-name }?
+caret-browsing-prompt-title = Prehliadanie pomocou klávesnice
+caret-browsing-prompt-text = Stlačením klávesu F7 zapnete alebo vypnete prehliadanie pomocou klávesnice. Táto funkcia umiestni do webovej stránky posúvateľný kurzor, ktorý umožňuje označovať text pomocou klávesnice. Chcete zapnúť prehliadanie pomocou klávesnice?
+caret-browsing-prompt-check-text = Nabudúce sa už nepýtať
+repair-text-encoding-button =
+    .label = Opraviť kódovanie textu
+    .tooltiptext = Pokúsi sa odhadnúť kódovanie textu podľa obsahu správy

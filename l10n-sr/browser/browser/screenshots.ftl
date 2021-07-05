@@ -9,7 +9,7 @@ screenshot-toolbarbutton =
 screenshots-my-shots-button = Моји снимци
 screenshots-instructions = Изаберите област превлачењем мишем или кликом на страницу. Притисните Esc да бисте отказали.
 screenshots-cancel-button = Откажи
-screenshots-save-visible-button = Сачувај видљиво
+screenshots-save-visible-button = Сачувај видљиву област
 screenshots-save-page-button = Сачувај целу страницу
 screenshots-download-button = Преузми
 screenshots-download-button-tooltip = Преузми снимак екрана
@@ -21,9 +21,9 @@ screenshots-meta-key =
        *[other] Ctrl
     }
 screenshots-notification-link-copied-title = Веза је копирана
-screenshots-notification-link-copied-details = Веза до вашег снимка екрана је копиран у привремену меморију. Налепите га помоћу { screenshots-meta-key }-V.
+screenshots-notification-link-copied-details = Веза до вашег снимка екрана је копирана у привремену меморију. Налепите је помоћу { screenshots-meta-key }-V.
 screenshots-notification-image-copied-title = Снимак је копиран
-screenshots-notification-image-copied-details = Ваш снимак је копиран. Притисните { screenshots-meta-key }-V да налепите.
+screenshots-notification-image-copied-details = Снимак екрана је копиран у привремену меморију. Налепите га помоћу { screenshots-meta-key }-V.
 screenshots-request-error-title = Не ради.
 screenshots-request-error-details = Нажалост, није могуће сачувати снимак екрана. Покушајте касније.
 screenshots-connection-error-title = Повезивање са вашим снимцима екрана није могуће.

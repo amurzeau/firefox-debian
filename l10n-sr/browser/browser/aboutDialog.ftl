@@ -26,7 +26,7 @@ update-updateButton =
 update-checkingForUpdates = Провера доступности ажурирања…
 update-downloading = <img data-l10n-name="icon"/>Преузимање ажурирања — <label data-l10n-name="download-status"/>
 update-downloading-message = Преузимање ажурирања — <label data-l10n-name="download-status"/>
-update-applying = Примењујем надоградњу…
+update-applying = Примена ажурирања…
 update-failed = Ажурирање није успело. <label data-l10n-name="failed-link">Преузмите најновију верзију</label>
 update-failed-main = Ажурирање није успело. <a data-l10n-name="failed-link-main">Преузмите најновију верзију</a>
 update-adminDisabled = Системски администратор је онемогућио ажурирања
@@ -34,10 +34,16 @@ update-noUpdatesFound = { -brand-short-name } је ажуран
 update-otherInstanceHandlingUpdates = { -brand-short-name } се ажурира
 update-manual = Ажурирања су доступна на <label data-l10n-name="manual-link"/>
 update-unsupported = Не можете да извршите ажурирања на овом систему. <label data-l10n-name="unsupported-link">Сазнајте више</label>
-update-restarting = Поново покрећем…
-channel-description = Тренутно користите <label data-l10n-name="current-channel"></label> канал за ажурирање.
+update-restarting = Рестартовање…
+channel-description = Користите <label data-l10n-name="current-channel"></label> канал за ажурирања.
 warningDesc-version = { -brand-short-name } је експерименталан и може бити нестабилан.
-aboutdialog-help-user = Помоћ за { -brand-product-name }
+aboutdialog-help-user =
+    Помоћ за { -brand-product-name.gender ->
+        [masculine] { -brand-product-name(case: "acc") }
+        [feminine] { -brand-product-name(case: "acc") }
+        [neuter] { -brand-product-name(case: "acc") }
+       *[other] програм { -brand-product-name }
+    }
 aboutdialog-submit-feedback = Пошаљите повратне информације
 community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> је <label data-l10n-name="community-exp-creditsLink"> глобална заједница</label> која ради на томе да задржи веб отвореним, јавним и доступним свима.
 community-2 = { -brand-short-name } развија <label data-l10n-name="community-mozillaLink">{ -vendor-short-name }</label>, <label data-l10n-name="community-creditsLink"> глобална заједница</label> која се залаже да интернет остане отворен, јаван и доступан свима.

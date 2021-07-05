@@ -7,6 +7,9 @@ account-setup-tab-title = Hesap kurulumu
 ## Header
 
 account-setup-title = Mevcut E-posta Adresinizi Ayarlayın
+account-setup-description =
+    Mevcut e-posta adresinizi kullanmak için hesap bilgilerinizi girin.<br/>
+    { -brand-product-name } önerilen sunucu yapılandırmasını otomatik olarak arayacaktır.
 
 ## Form fields
 
@@ -103,7 +106,13 @@ account-setup-forum-help = Destek forumu
 
 ## Results area
 
-account-setup-protocol-title = Protokolü seçin
+# Variables:
+#  $count (Number) - Number of available protocols.
+account-setup-results-area-title =
+    { $count ->
+        [one] Mevcut yapılandırma
+       *[other] Mevcut yapılandırmalar
+    }
 # Note: IMAP is the name of a protocol.
 account-setup-result-imap = IMAP
 account-setup-result-imap-description = Klasörlerinizi ve e-postalarınızı sunucunuzla eşitlenmiş halde tutun
@@ -138,6 +147,7 @@ account-setup-exchange-config-unverifiable = Yapılandırma doğrulanamadı. Kul
 ## Manual configuration area
 
 account-setup-manual-config-title = Sunucu ayarları
+account-setup-incoming-server-legend = Gelen sunucusu
 account-setup-protocol-label = Protokol:
 protocol-imap-option = { account-setup-result-imap }
 protocol-pop-option = { account-setup-result-pop }
@@ -147,6 +157,7 @@ account-setup-port-label = Port:
     .title = Otomatik algılama için port numarasını 0 olarak ayarlayın
 account-setup-auto-description = { -brand-short-name }, boş bırakılan alanları otomatik olarak algılamaya çalışır.
 account-setup-ssl-label = Bağlantı güvenliği:
+account-setup-outgoing-server-legend = Giden sunucusu
 
 ## Incoming/Outgoing SSL Authentication options
 
@@ -157,6 +168,7 @@ ssl-encrypted-password-option = Şifrelenmiş parola
 
 ## Incoming/Outgoing SSL options
 
+ssl-noencryption-option = Yok
 account-setup-auth-label = Yetkilendirme yöntemi:
 account-setup-username-label = Kullanıcı adı:
 account-setup-advanced-setup-button = Gelişmiş yapılandırma
@@ -171,9 +183,13 @@ account-setup-insecure-outgoing-title = Giden posta ayarları:
 #  $server (String): The name of the hostname of the server the user was trying to connect to.
 account-setup-warning-cleartext = <b>{ $server }</b> sunucusu şifreleme kullanmıyor.
 account-setup-warning-cleartext-details = Güvensiz posta sunucuları, parolalarınızı ve özel bilgilerinizi korumak için şifrelenmiş bağlantı kullanmaz. Bu sunucuya bağlanarak parolanızı ve özel bilgilenizi ifşa ediyor olabilirsiniz.
+account-setup-insecure-server-checkbox = Riskleri anladım
+    .accesskey = R
 account-setup-insecure-description = { -brand-short-name }, mevcut yapılandırmayı kullanarak e-postalarınızı almanızı sağlayabilir ama sorunlu bağlantılarla ilgili olarak sistem yöneticinizle veya e-posta sağlayıcınızla iletişime geçmelisiniz. Daha fazla bilgi için <a data-l10n-name="thunderbird-faq-link">Thunderbird SSS</a>'ye bakın.
 insecure-dialog-cancel-button = Ayarları değiştir
     .accesskey = d
+insecure-dialog-confirm-button = Onayla
+    .accesskey = O
 
 ## Warning Exchange confirmation dialog
 
@@ -186,6 +202,7 @@ exchange-dialog-cancel-button = Vazgeç
 ## Alert dialogs
 
 account-setup-creation-error-title = Hesap Oluşturma Hatası
+account-setup-error-server-exists = Gelen sunucusu zaten var.
 account-setup-confirm-advanced-title = Gelişmiş Yapılandırmayı Onayla
 account-setup-confirm-advanced-description = Bu iletişim kutusu kapatılacak ve yapılandırma hatalı olsa bile mevcut ayarlarla bir hesap oluşturulacaktır. Devam etmek istiyor musunuz?
 

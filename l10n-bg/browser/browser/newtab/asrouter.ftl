@@ -123,7 +123,7 @@ cfr-whatsnew-lockwise-take-link-text = Вземете приложението
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Въвеждайте по-малко, улеснете се с адресната лента
-cfr-whatsnew-searchbar-body-topsites = Сега просто изберете адресната лента и полето ще се разшири с препратки към вашите предпочитани сайтове.
+cfr-whatsnew-searchbar-body-topsites = Сега просто изберете адресната лента и полето ще се разшири с препратки към вашите най-посещавани страници.
 
 ## Search bar
 
@@ -215,10 +215,12 @@ cfr-whatsnew-lockwise-icon-alt = Пиктограма на { -lockwise-brand-sho
 ## Vulnerable Passwords message
 
 cfr-whatsnew-passwords-header = Получавайте сигнали за уязвими пароли
+cfr-whatsnew-passwords-icon-alt = Икона на ключ за уязвима парола
 
 ## Picture-in-Picture fullscreen message
 
 cfr-whatsnew-pip-fullscreen-header = Картина в картината на цял екран
+cfr-whatsnew-pip-fullscreen-body = Когато поставите видеоклип в плаващ прозорец, вече можете да щракнете двукратно върху него, за да преминете на цял екран.
 cfr-whatsnew-pip-fullscreen-icon-alt = Икона за картина в картината
 
 ## Protections Dashboard message
@@ -236,12 +238,21 @@ cfr-whatsnew-protections-icon-alt = Пиктограма на щит
 
 ## DOH Message
 
+cfr-doorhanger-doh-primary-button-2 = Добре
+    .accesskey = о
+cfr-doorhanger-doh-secondary-button = Изключване
+    .accesskey = з
 
 ## Fission Experiment Message
 
+cfr-doorhanger-fission-primary-button = Добре, разбрах
+    .accesskey = Д
+cfr-doorhanger-fission-secondary-button = Научете повече
+    .accesskey = Н
 
 ## What's new: Cookies message
 
+cfr-whatsnew-clear-cookies-image-alt = Изображение с блокирана бисквитка
 
 ## What's new: Media controls message
 
@@ -256,6 +267,13 @@ cfr-whatsnew-media-keys-button = Научете как
 
 ## What's new: Better bookmarking
 
+cfr-whatsnew-bookmarking-header = По-добри отметки
 
 ## What's new: Cross-site cookie tracking
 
+
+## Full Video Support CFR message
+
+cfr-doorhanger-video-support-header = Обновете { -brand-short-name } за възпроизвеждане на видео
+cfr-doorhanger-video-support-primary-button = Обновяване
+    .accesskey = б

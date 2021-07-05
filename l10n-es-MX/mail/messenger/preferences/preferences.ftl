@@ -10,6 +10,11 @@ preferences-title =
             [windows] Opciones
            *[other] Preferencias
         }
+preferences-tab-title =
+    .title = Preferencias
+preferences-doc-title = Preferencias
+category-list =
+    .aria-label = Categorías
 pane-general-title = General
 category-general =
     .tooltiptext = { pane-general-title }
@@ -87,6 +92,8 @@ update-in-progress-ok-button = &Descartar
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Continuar
 addons-button = Extensiones y temas
+account-button = Configuración de la cuenta
+open-addons-sidebar-button = Complementos y temas
 
 ## OS Authentication dialog
 
@@ -162,6 +169,12 @@ customize-alert-label =
 tray-icon-label =
     .label = Mostrar un icono de bandeja
     .accesskey = t
+biff-use-system-alert =
+    .label = Usar la notificación del sistema
+tray-icon-unread-label =
+    .label = Mostrar un ícono en la bandeja para mensajes no leídos
+    .accesskey = t
+tray-icon-unread-description = Recomendado al usar botones pequeños en la barra de tareas
 mail-system-sound-label =
     .label = Sonido predeterminado del sistema para nuevo correo
     .accesskey = D
@@ -314,6 +327,8 @@ quoted-text-color =
     .accesskey = o
 search-input =
     .placeholder = Buscar
+search-handler-table =
+    .placeholder = Filtrar tipos de contenido y acciones
 type-column-label =
     .label = Tipo de contenido
     .accesskey = T
@@ -549,6 +564,7 @@ primary-password-button =
     .label = Cambiar contraseña principal…
     .accesskey = C
 forms-primary-pw-fips-title = En este momento se utiliza el modo FIPS. FIPS requiere una contraseña principal no vacía.
+forms-master-pw-fips-desc = El cambio de la contraseña ha fallado
 junk-description = Configuración predeterminada de correo basura. Las configuraciones específicas de cada cuenta deben ser realizadas en configuración de cuentas.
 junk-label =
     .label = Cuando marco mensajes como basura:
@@ -698,6 +714,17 @@ search-input-box =
             [windows] Buscar en Opciones
            *[other] Buscar en Preferencias
         }
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-preferences-input =
+    .style = width: 15.4em
+    .placeholder = Buscar en preferencias
 
 ## Preferences UI Search Results
 

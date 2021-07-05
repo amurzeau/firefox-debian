@@ -38,6 +38,24 @@ upgrade-dialog-new-primary-win7-button = D’acòrdi, plan comprés !
 ## match the OS' application context menu item action where Windows uses "pin"
 ## and "taskbar" while macOS "keep" and "Dock" (proper noun).
 
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-pin-title =
+    { PLATFORM() ->
+        [macos] Gardatz { -brand-short-name } al vòstre Dock
+       *[other] Penjar { -brand-short-name } a ma barra de prètzfaches
+    }
+# The English macOS string avoids repeating "Keep" a third time, so if your
+# translations don't repeat anyway, the same string can be used cross-platform.
+upgrade-dialog-pin-subtitle =
+    { PLATFORM() ->
+        [macos] Gardatz { -brand-short-name } actualizat a man.
+       *[other] Gardatz { -brand-short-name } actualizat facilament.
+    }
+upgrade-dialog-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Gardar al Dock
+       *[other] Penjar a la barra de prètzfaches
+    }
 upgrade-dialog-pin-secondary-button = Pas ara
 
 ## Default browser screen
@@ -48,6 +66,7 @@ upgrade-dialog-default-subtitle = Velocitat, seguretat e confidencialitat cada c
 upgrade-dialog-default-primary-button = Definir coma navegador per defaut
 # This title can be explicitly wrapped to control which words are on which line.
 upgrade-dialog-default-title-2 = Definir { -brand-short-name } coma navegador per defaut
+upgrade-dialog-default-subtitle-2 = La velocitat, la seguretat e la vida privada sens i pensar.
 upgrade-dialog-default-primary-button-2 = Definir coma navegador per defaut
 upgrade-dialog-default-secondary-button = Pas ara
 

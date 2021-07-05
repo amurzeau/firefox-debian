@@ -17,6 +17,30 @@ appmenuitem-new-window =
     .label = نیا ونڈوں
 appmenuitem-new-private-window =
     .label = نیا نجی ونڈوں
+appmenuitem-passwords =
+    .label = پاس ورڈ
+appmenuitem-addons-and-themes =
+    .label = ایڈ آنز اور تھیمز
+appmenuitem-find-in-page =
+    .label = صفحہ میں ڈھونڈیں…
+appmenuitem-more-tools =
+    .label = مزید ٹولز
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] باہر نکلیں
+           *[other] خروج
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = ایپلیکیشن مینو کھولیں
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = ایپلیکیشن مینو بند کریں
+    .label = { -brand-short-name }
+# Settings is now used to access the browser settings across all platforms,
+# instead of Options or Preferences.
+appmenuitem-settings =
+    .label = سیٹنگز
 
 ## Zoom and Fullscreen Controls
 
@@ -31,6 +55,18 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = ابھی Sync کریں
+appmenu-remote-tabs-sign-into-sync =
+    .label = سنک کرنے کے لئے سائن ان کریں…
+appmenu-remote-tabs-turn-on-sync =
+    .label = سینک چالو کریں…
+appmenuitem-fxa-toolbar-sync-now2 = ابھی سنک کریں
+appmenuitem-fxa-manage-account = اکاؤنٹ منظم کریں
+appmenu-fxa-header2 = { -fxaccount-brand-name(capitalization: "sentence") }
+appmenu-fxa-sync-and-save-data2 = سنک اور محفوظ کریں
+appmenu-fxa-signed-in-label = سائن ان کریں
+appmenu-fxa-setup-sync =
+    .label = سینک چالو کریں…
+appmenu-fxa-show-more-tabs = مزید ٹیبز دکھائیں
 appmenuitem-save-page =
     .label = صفحہ محفوظ کریں بطور…
 
@@ -47,6 +83,12 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-title =
+    .value = { -profiler-brand-name }
+profiler-popup-reveal-description-button =
+    .aria-label = مزید معلومات ظاہر کریں
+profiler-popup-description-title =
+    .value = ریکارڈ کریں ، تجزیہ کریں ، شیر کریں
 profiler-popup-learn-more = مزیدجانیے
 profiler-popup-settings =
     .value = سیٹنگز
@@ -63,6 +105,16 @@ profiler-popup-discard-button =
     .label = رد کريں
 profiler-popup-capture-button =
     .label = ریکارڈ کریں
+profiler-popup-start-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧1
+       *[other] 	Ctrl+Shift+1
+    }
+profiler-popup-capture-shortcut =
+    { PLATFORM() ->
+        [macos] 	⌃⇧2
+       *[other] 	Ctrl+Shift+2
+    }
 
 ## History panel
 
@@ -87,6 +139,9 @@ appmenu-help-header =
 appmenu-about =
     .label = { -brand-shorter-name } کے بارے میں
     .accesskey = A
+appmenu-get-help =
+    .label = مدد حاصل کریں
+    .accesskey = h
 appmenu-help-report-site-issue =
     .label = سائٹ مسلہ… رپورٹ کریں
 appmenu-help-feedback-page =

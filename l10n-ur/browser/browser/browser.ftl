@@ -164,8 +164,15 @@ page-action-remove-extension =
 
 ## Page Action menu
 
-page-action-pocket-panel =
-    .label = { -pocket-brand-name } میں صفحات محوظ کریں
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [1] آلہ پر  ٹیبز ارسال  کریں
+            [one] آلہ پر { $tabCount }  ٹیبز ارسال  کریں
+           *[other] آلہ پر { $tabCount }  ٹیبز ارسال  کریں
+        }
 page-action-copy-url-panel =
     .label = ربط نقل کریں
 page-action-copy-url-urlbar =
@@ -251,6 +258,8 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = بک مارک شامل کریں
+bookmarks-edit-bookmark = بکمارک شامل کریں
 bookmark-panel-cancel =
     .label = منسوخ کریں
     .accesskey = C
@@ -268,6 +277,8 @@ bookmark-panel-show-editor-checkbox =
     .accesskey = S
 bookmark-panel-done-button =
     .label = ہوگیا
+bookmark-panel-save-button =
+    .label = محفوظ کریں
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -297,6 +308,7 @@ identity-https-only-dropdown-off =
     .label = بند
 identity-https-only-dropdown-off-temporarily =
     .label = عارضی طور پر بندکریں
+identity-permissions-storage-access-learn-more = مزید سیکھیں
 identity-permissions-reload-hint = تبدیلی کو لگانے کے لیئے آپکو صفحہ کو دوبارہ لوڈ کرنے کی شاید ظرورت ہو۔
 identity-permissions-empty = آپ نے اس سائٹ کو کوئی خاص اجازتیں نہیں دیں ہے۔
 identity-clear-site-data =
@@ -341,6 +353,10 @@ browser-window-close-button =
 
 ## Tab actions
 
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = ‏‏چلا رہا ہے
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = خاموش
 
 ## These labels should be written in all capital letters if your locale supports them.
 ## Variables:
@@ -358,6 +374,18 @@ popup-select-camera =
 popup-select-microphone =
     .value = شیئر کرنے کےلیے مائیکروفون:
     .accesskey = M
+popup-select-camera-device =
+    .value = کیمرہ
+    .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = کیمرہ
+popup-select-microphone-device =
+    .value = مائیکروفون
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = مائیکروفون
+popup-select-speaker-icon =
+    .tooltiptext = اسپیکر
 popup-all-windows-shared = آپ کی سکرین پر نظر آنے والے تمام دریچے شیئر کیے جائیں گے۔
 popup-screen-sharing-not-now =
     .label = ابھی نہیں
@@ -367,6 +395,13 @@ popup-screen-sharing-never =
     .accesskey = N
 popup-silence-notifications-checkbox = اشتراک کے دوران { -brand-short-name } سے اطلاعات کو غیر فعال کریں
 popup-silence-notifications-checkbox-warning = شیئرنگ کے عمل کے دوران { -brand-short-name } اطلاعات نہیں دکھایے گا.
+popup-screen-sharing-block =
+    .label = بلاک کریں
+    .accesskey = B
+popup-screen-sharing-always-block =
+    .label = ہمیشہ بلاک کریں
+    .accesskey = w
+popup-mute-notifications-checkbox = شیئر کرتے وقت ویب سائٹ کی اطلاعات کو خاموش کریں
 
 ## WebRTC window or screen share tab switch warning
 
@@ -431,6 +466,13 @@ urlbar-result-action-search-w-engine = { $engine } سے تلاش کریں
 urlbar-result-action-sponsored = سپانسر شدہ
 urlbar-result-action-switch-tab = ٹیب پر جائیں
 urlbar-result-action-visit = دورہ
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = نقل کریں
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -438,6 +480,7 @@ urlbar-result-action-visit = دورہ
 
 urlbar-result-action-search-bookmarks = بک مارک تلاش کریں
 urlbar-result-action-search-history = سابقات تلاش کریں
+urlbar-result-action-search-tabs = تلاش ٹیبس
 
 ## Full Screen and Pointer Lock UI
 
@@ -457,11 +500,17 @@ pointerlock-warning-no-domain = اس دستاویز کہ پاس آپ کہ نشا
 
 ## Subframe crash notification
 
+crashed-subframe-learnmore-link =
+    .value = مزید سیکھیں
+crashed-subframe-submit =
+    .label = رپورٹ جمع کریں
+    .accesskey = S
 
 ## Bookmarks panels, menus and toolbar
 
-bookmarks-show-all-bookmarks =
-    .label = تمام بک مارک دکھائیں
+bookmarks-manage-bookmarks =
+    .label = بک مارکس منظم کریں
+bookmarks-recent-bookmarks-panel-subheader = حالیہ بُک مارکس
 bookmarks-toolbar-chevron =
     .tooltiptext = مزید بک مارک دکھائیں
 bookmarks-sidebar-content =
@@ -526,8 +575,20 @@ save-to-pocket-button =
     .label = { -pocket-brand-name } میں محفوظ کریں
     .tooltiptext = { -pocket-brand-name } میں محفوظ کریں
 
+## Repair text encoding toolbar button
+
+
 ## Customize Toolbar Buttons
 
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = سیٹنگز
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] سیٹنگز کھولیں ({ $shortcut })
+           *[other] سیٹنگز کھولیں
+        }
 
 ## More items
 
@@ -538,12 +599,25 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = اس سائٹ پر کچھ آڈیو یا وڈیو DRM سافٹ ویئر استعمال کرتی ہے جس کی وجہ سے جو { -brand-short-name } اس کے ساتھ آپ کو کرنے دے گا، اس پر کچھ حدود ہوں گی۔
+eme-notifications-drm-content-playing-manage = سیٹنگز منظم کریں
+eme-notifications-drm-content-playing-manage-accesskey = M
+eme-notifications-drm-content-playing-dismiss = برخاست کریں
+eme-notifications-drm-content-playing-dismiss-accesskey = D
 
 ## Password save/update panel
 
+panel-save-update-username = صارف کا نام
+panel-save-update-password = پاس ورڈ
 
 ## Add-on removal warning
 
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = { $name } کو حذف کریں؟
+addon-removal-abuse-report-checkbox = اس توسیع کی اطلاع{ -vendor-short-name } کو دیں
 
 ## Remote / Synced tabs
 
+remote-tabs-manage-account =
+    .label = اکاؤنٹ منظم کریں
+remote-tabs-sync-now = ابھی سنک کریں

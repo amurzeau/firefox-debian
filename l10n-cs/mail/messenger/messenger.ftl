@@ -12,11 +12,26 @@ unread-messages-os-tooltip =
     }
 about-rights-notification-text = { -brand-short-name } je svobodný a otevřený software vytvořený komunitou tisíců lidí z celého světa.
 
+## Content tabs
+
+content-tab-page-loading-icon =
+    .alt = Stránka se načítá
+content-tab-security-high-icon =
+    .alt = Spojení je zabezpečené
+content-tab-security-broken-icon =
+    .alt = Spojení není zabezepečené
+
 ## Toolbar
 
 addons-and-themes-button =
     .label = Doplňky a vzhledy
     .tooltip = Otevře správce doplňků
+addons-and-themes-toolbarbutton =
+    .label = Doplňky a vzhledy
+    .tooltiptext = Správa doplňků
+quick-filter-toolbarbutton =
+    .label = Rychlý filtr
+    .tooltiptext = Filtrování zpráv
 redirect-msg-button =
     .label = Přesměrovat
     .tooltiptext = Přesměruje vybranou zprávu
@@ -119,3 +134,6 @@ addon-removal-confirmation-message =
 caret-browsing-prompt-title = Procházení stránky
 caret-browsing-prompt-text = Stisknutím klávesy F7 zapnete či vypnete funkci Procházení stránky. Ta umístí do obsahu textový kurzor, který vám umožní vybírat text pomocí klávesnice. Chcete zapnout funkci Procházení stránky?
 caret-browsing-prompt-check-text = Příště se už neptat.
+repair-text-encoding-button =
+    .label = Opravit znakovou sadu textu
+    .tooltiptext = Na základě obsahu zprávy odhadne správnou znakovou sadu textu

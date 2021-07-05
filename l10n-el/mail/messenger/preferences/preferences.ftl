@@ -98,14 +98,14 @@ open-addons-sidebar-button = Πρόσθετα και θέματα
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = Για να δημιουργήσετε κύριο κωδικό πρόσβασης, εισάγετε τα διαπιστευτήρια σύνδεσης των Windows. Αυτό συμβάλλει στην προστασία των λογαριασμών σας.
+master-password-os-auth-dialog-message-win = Για να δημιουργήσετε έναν κύριο κωδικό πρόσβασης, εισαγάγετε τα διαπιστευτήρια σύνδεσης των Windows. Αυτό συμβάλλει στην προστασία των λογαριασμών σας.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Thunderbird is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = δημιουργήσει κύριο κωδικό πρόσβασης
 # This message can be seen by trying to add a Primary Password.
-primary-password-os-auth-dialog-message-win = Για να δημιουργήσετε έναν κύριο κωδικό πρόσβασης, εισάγετε τα διαπιστευτήρια των Windows σας. Αυτό θα βοηθήσει στην ασφάλεια των λογαριασμών σας.
+primary-password-os-auth-dialog-message-win = Για να δημιουργήσετε έναν κύριο κωδικό πρόσβασης, εισαγάγετε τα διαπιστευτήρια σύνδεσης των Windows. Αυτό συμβάλλει στην προστασία των λογαριασμών σας.
 # This message can be seen by trying to add a Primary Password.
 # The macOS strings are preceded by the operating system with "Thunderbird is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
@@ -223,9 +223,9 @@ search-integration-label =
 config-editor-button =
     .label = Επεξεργασία ρυθμίσεων…
     .accesskey = θ
-return-receipts-description = Καθορίστε τον τρόπο διαχείρισης των βεβαιώσεων ανάγνωσης από το { -brand-short-name }
+return-receipts-description = Καθορίστε τον τρόπο διαχείρισης των αποδεικτικών προβολής από το { -brand-short-name }
 return-receipts-button =
-    .label = Αποδεικτικά ανάγνωσης…
+    .label = Αποδεικτικά προβολής…
     .accesskey = τ
 update-app-legend = Ενημερώσεις του { -brand-short-name }
 # Variables:
@@ -287,15 +287,15 @@ default-size-label =
     .value = Μέγεθος:
     .accesskey = θ
 font-options-button =
-    .label = Για προχωρημένους…
-    .accesskey = μ
+    .label = Σύνθετα…
+    .accesskey = Σ
 color-options-button =
     .label = Χρώματα…
     .accesskey = ρ
 display-width-legend = Μηνύματα απλού κειμένου
 # Note : convert-emoticons-label 'Emoticons' are also known as 'Smileys', e.g. :-)
 convert-emoticons-label =
-    .label = Εμφάνιση emoticons ως γραφικά στοιχεία
+    .label = Εμφάνιση emoji ως γραφικών στοιχείων
     .accesskey = φ
 display-text-label = Κατά την προβολή μηνυμάτων απλού κειμένου σε παράθεση:
 style-label =
@@ -325,12 +325,8 @@ search-input =
     .placeholder = Αναζήτηση
 search-handler-table =
     .placeholder = Φιλτράρισμα τύπων και ενεργειών περιεχομένου
-type-column-label =
-    .label = Τύπος περιεχομένου
-    .accesskey = Τ
-action-column-label =
-    .label = Ενέργεια
-    .accesskey = ν
+type-column-label = Τύπος περιεχομένου
+action-column-label = Ενέργεια
 save-to-label =
     .label = Αποθήκευση αρχείων σε
     .accesskey = θ
@@ -419,11 +415,11 @@ auto-save-end = λεπτά
 ##
 
 warn-on-send-accel-key =
-    .label = Επιβεβαίωση πριν την αποστολή μηνύματος όταν γίνεται χρήση συντομεύσεων πληκτρολογίου
+    .label = Επιβεβαίωση πριν από την αποστολή μηνύματος όταν γίνεται χρήση συντομεύσεων πληκτρολογίου
     .accesskey = β
 spellcheck-label =
-    .label = Ορθογραφικός έλεγχος πριν την αποστολή
-    .accesskey = θ
+    .label = Ορθογραφικός έλεγχος πριν από την αποστολή
+    .accesskey = Ο
 spellcheck-inline-label =
     .label = Ορθογραφικός έλεγχος κατά την πληκτρολόγηση
     .accesskey = φ
@@ -438,7 +434,7 @@ font-size-label =
     .value = Μέγεθος:
     .accesskey = γ
 default-colors-label =
-    .label = Να χρησιμοποιηθούν τα προκαθορισμένα χρώματα αναγνώστη
+    .label = Χρήση προεπιλεγμένων χρωμάτων αναγνώστη
     .accesskey = π
 font-color-label =
     .value = Χρώμα κειμένου:
@@ -461,8 +457,8 @@ ab-label =
     .label = Τοπικά ευρετήρια διευθύνσεων
     .accesskey = ο
 directories-label =
-    .label = Διακομιστής καταλόγου:
-    .accesskey = κ
+    .label = Διακομιστή καταλόγου:
+    .accesskey = Δ
 directories-none-label =
     .none = Κανένας
 edit-directories-label =
@@ -472,8 +468,8 @@ email-picker-label =
     .label = Αυτόματη προσθήκη εξερχομένων διευθύνσεων email σε:
     .accesskey = τ
 default-directory-label =
-    .value = Προεπιλεγμένος κατάλογος εκκίνησης στο παράθυρο του ευρετηρίου διευθύνσεων:
-    .accesskey = Ρ
+    .value = Προεπιλεγμένος κατάλογος εκκίνησης στο παράθυρο ευρετηρίων:
+    .accesskey = Π
 default-last-label =
     .none = Τελευταία χρησιμοποιημένος κατάλογος
 attachment-label =
@@ -566,7 +562,7 @@ junk-label =
     .label = Όταν επισημαίνεται ως ανεπιθύμητο ένα μήνυμα:
     .accesskey = σ
 junk-move-label =
-    .label = Μετακίνηση στο φάκελο "Ανεπιθύμητα" του λογαριασμού
+    .label = Μετακίνηση στον φάκελο "Ανεπιθύμητα" του λογαριασμού
     .accesskey = θ
 junk-delete-label =
     .label = Διαγραφή
@@ -587,11 +583,11 @@ phishing-description = Το { -brand-short-name } μπορεί να αναλύε
 phishing-label =
     .label = Ειδοποίηση αν το τρέχον μήνυμα είναι ύποπτο για απάτη email
     .accesskey = δ
-antivirus-description = Το { -brand-short-name } μπορεί να διευκολύνει το λογισμικό προστασίας από ιούς στην ανάλυση των εισερχομένων σας για ιούς πριν την τοπική αποθήκευση.
+antivirus-description = Το { -brand-short-name } μπορεί να διευκολύνει το λογισμικό προστασίας από ιούς στην ανάλυση των εισερχομένων σας για ιούς πριν από την τοπική αποθήκευση.
 antivirus-label =
     .label = Να επιτρέπεται στο λογισμικό προστασίας από ιούς η απομόνωση ξεχωριστών εισερχόμενων μηνυμάτων
     .accesskey = ρ
-certificate-description = Όταν ένας διακομιστής ζητά ένα πιστοποιητικό:
+certificate-description = Όταν ένας διακομιστής απαιτεί προσωπικό πιστοποιητικό:
 certificate-auto =
     .label = Αυτόματη επιλογή
     .accesskey = Α
@@ -693,7 +689,7 @@ chat-variant-label =
     .value = Παραλλαγή:
     .accesskey = Π
 chat-header-label =
-    .label = Εμφάνιση επικεφαλίδας
+    .label = Εμφάνιση κεφαλίδας
     .accesskey = Ε
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible

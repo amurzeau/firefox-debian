@@ -32,12 +32,42 @@ upgrade-dialog-new-secondary-button = ไม่ใช่ตอนนี้
 # theme selection screen.
 upgrade-dialog-new-primary-win7-button = ตกลง เข้าใจแล้ว!
 
+## Pin Firefox screen
+##
+## These title, subtitle and button strings differ between platforms as they
+## match the OS' application context menu item action where Windows uses "pin"
+## and "taskbar" while macOS "keep" and "Dock" (proper noun).
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-pin-title =
+    { PLATFORM() ->
+        [macos] เก็บ { -brand-short-name } ไว้ใน Dock ของคุณ
+       *[other] ปักหมุด { -brand-short-name } เข้ากับแถบงานของคุณ
+    }
+# The English macOS string avoids repeating "Keep" a third time, so if your
+# translations don't repeat anyway, the same string can be used cross-platform.
+upgrade-dialog-pin-subtitle =
+    { PLATFORM() ->
+        [macos] เข้าถึง { -brand-short-name } ที่สดใหม่กว่าที่เคยได้อย่างง่ายดาย
+       *[other] เข้าถึง { -brand-short-name } ที่สดใหม่กว่าที่เคยได้อย่างง่ายดาย
+    }
+upgrade-dialog-pin-primary-button =
+    { PLATFORM() ->
+        [macos] เก็บไว้ใน Dock
+       *[other] ปักหมุดเข้ากับแถบงาน
+    }
+upgrade-dialog-pin-secondary-button = ไม่ใช่ตอนนี้
+
 ## Default browser screen
 
 # This title can be explicitly wrapped to control which words are on which line.
 upgrade-dialog-default-title = ต้องการทำให้ { -brand-short-name } เป็นเบราว์เซอร์เริ่มต้นของคุณหรือไม่
 upgrade-dialog-default-subtitle = รับความเร็ว ความปลอดภัย และความเป็นส่วนตัวในทุกครั้งที่คุณเรียกดู
 upgrade-dialog-default-primary-button = ตั้งเป็นเบราว์เซอร์เริ่มต้น
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-default-title-2 = ทำให้ { -brand-short-name } เป็นค่าเริ่มต้นของคุณ
+upgrade-dialog-default-subtitle-2 = พบกับความเร็ว ความปลอดภัย และความเป็นส่วนตัวแบบอัตโนมัติ
+upgrade-dialog-default-primary-button-2 = ทำให้เป็นเบราว์เซอร์เริ่มต้น
 upgrade-dialog-default-secondary-button = ไม่ใช่ตอนนี้
 
 ## Theme selection screen
@@ -46,6 +76,8 @@ upgrade-dialog-default-secondary-button = ไม่ใช่ตอนนี้
 upgrade-dialog-theme-title =
     เริ่มต้นใหม่อย่างเรียบหรู
     ด้วยชุดตกแต่งที่อัปเดตใหม่
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-theme-title-2 = เริ่มต้นใหม่อย่างเรียบหรูด้วยชุดตกแต่งที่คมชัด
 upgrade-dialog-theme-system = ชุดตกแต่งระบบ
     .title = ใช้ชุดตกแต่งสำหรับปุ่ม เมนู และหน้าต่างตามระบบปฏิบัติการ
 upgrade-dialog-theme-light = สว่าง

@@ -20,18 +20,18 @@ downloads-panel-list =
     .style = width: 74ch
 downloads-cmd-pause =
     .label = Паузирај
-    .accesskey = P
+    .accesskey = П
 downloads-cmd-resume =
     .label = Настави
-    .accesskey = R
+    .accesskey = Н
 downloads-cmd-cancel =
     .tooltiptext = Откажи
 downloads-cmd-cancel-panel =
     .aria-label = Откажи
 # This message is only displayed on Windows and Linux devices
 downloads-cmd-show-menuitem =
-    .label = Отвори фасциклу са преузетим садржајем
-    .accesskey = F
+    .label = Прикажи у фасцикли
+    .accesskey = П
 # This message is only displayed on macOS devices
 downloads-cmd-show-menuitem-mac =
     .label = Прикажи у Finder-у
@@ -40,7 +40,7 @@ downloads-cmd-use-system-default =
     .label = Отвори у системском прегледачу
     .accesskey = О
 downloads-cmd-always-use-system-default =
-    .label = Увек отвори у системском прегледачу
+    .label = Увек отварај у системском прегледачу
     .accesskey = У
 downloads-cmd-show-button =
     .tooltiptext = Прикажи у фасцикли
@@ -55,11 +55,11 @@ downloads-cmd-retry =
 downloads-cmd-retry-panel =
     .aria-label = Покушај поново
 downloads-cmd-go-to-download-page =
-    .label = Иди на станицу за преузимања
-    .accesskey = G
+    .label = Иди на страницу преузимања
+    .accesskey = И
 downloads-cmd-copy-download-link =
-    .label = Копирај везу за преузимање
-    .accesskey = L
+    .label = Копирај адресу преузимања
+    .accesskey = К
 downloads-cmd-remove-from-history =
     .label = Уклони из историје
     .accesskey = У
@@ -67,8 +67,8 @@ downloads-cmd-clear-list =
     .label = Обриши панел за преглед
     .accesskey = б
 downloads-cmd-clear-downloads =
-    .label = Обриши преузимања
-    .accesskey = D
+    .label = Обриши листу
+    .accesskey = О
 # This command is shown in the context menu when downloads are blocked.
 downloads-cmd-unblock =
     .label = Дозволи преузимање
@@ -82,9 +82,9 @@ downloads-cmd-remove-file-panel =
 # downloads are blocked. This opens a dialog where the user can choose
 # whether to unblock or remove the download. Removing is the default option.
 downloads-cmd-choose-unblock =
-    .tooltiptext = Отвори датотеку или дозволи преузимање
+    .tooltiptext = Уклони датотеку или дозволи преузимање
 downloads-cmd-choose-unblock-panel =
-    .aria-label = Отвори датотеку или дозволи преузимање
+    .aria-label = Уклони датотеку или дозволи преузимање
 # This is the tooltip of the action button shown when uncommon downloads are
 # blocked.This opens a dialog where the user can choose whether to open the
 # file or remove the download. Opening is the default option.
@@ -117,9 +117,9 @@ downloads-history =
 # This string is shown at the top of the Download Details Panel, to indicate
 # that we are showing the details of a single download.
 downloads-details =
-    .title = Детаљи преузимања
+    .title = Детаљи о преузимању
 downloads-clear-downloads-button =
-    .label = Обриши преузимања
+    .label = Обриши листу
     .tooltiptext = Брише завршена, отказана и неуспешна преузимања
 # This string is shown when there are no items in the Downloads view, when it
 # is displayed inside a browser tab.
@@ -127,4 +127,4 @@ downloads-list-empty =
     .value = Нема преузимања.
 # This string is shown when there are no items in the Downloads Panel.
 downloads-panel-empty =
-    .value = Нема преузимања у току ове сесије.
+    .value = Нема преузимања у овој сесији.

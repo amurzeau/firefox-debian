@@ -45,7 +45,7 @@
      filters are propagated between folder changes and when opening new tabs.)
      -->
 <!ENTITY quickFilterBar.sticky.tooltip
-         "Διατήρηση φίλτρων αναζήτησης κατά την αλλαγή φακέλων;">
+         "Διατήρηση φίλτρων κατά την εναλλαγή φακέλων">
 
 <!-- LOCALIZATION NOTE (quickFilterBar.unread.label):
      The label for the filter button that causes us to filter results to only
@@ -266,7 +266,7 @@
      but we can convert to a global search for them.
      -->
 <!ENTITY quickFilterBar.glodaUpsell.continueSearch
-         "Συνέχεια της αναζήτησης σε όλους τους φακέλους">
+         "Συνέχεια αναζήτησης σε όλους τους φακέλους">
 
 <!-- LOCALIZATION NOTE (quickFilterBar.glodaUpsell.pressEnterAndCurrent):
      The second line of the panel popup that tells the user we found no matches.

@@ -8,12 +8,12 @@ sanitize-prefs =
 sanitize-prefs-style =
     .style = width: 17em
 dialog-title =
-    .title = Обриши историју
+    .title = Брисање историје
     .style = width: 34em
 # When "Time range to clear" is set to "Everything", this message is used for the
 # title instead of dialog-title.
 dialog-title-everything =
-    .title = Обриши сву историју
+    .title = Брисање све историје
     .style = width: 34em
 clear-data-settings-label = При затварању { -brand-short-name } аутоматски брише све
 
@@ -26,18 +26,18 @@ clear-data-settings-label = При затварању { -brand-short-name } ау
 ## Time range to clear: (Last Hour, Today, etc.)
 
 clear-time-duration-prefix =
-    .value = Временски период за чишћење:{ " " }
+    .value = Временски опсег за брисање:{ " " }
     .accesskey = В
 clear-time-duration-value-last-hour =
-    .label = Последњи сат
+    .label = последњи сат
 clear-time-duration-value-last-2-hours =
-    .label = Последња два сата
+    .label = последња два сата
 clear-time-duration-value-last-4-hours =
-    .label = Последња четири сата
+    .label = последња четири сата
 clear-time-duration-value-today =
-    .label = Данас
+    .label = данас
 clear-time-duration-value-everything =
-    .label = Све
+    .label = све
 clear-time-duration-suffix =
     .value = { "" }
 
@@ -59,28 +59,28 @@ item-cache =
     .accesskey = ш
 item-form-search-history =
     .label = Историја образаца и претраге
-    .accesskey = з
+    .accesskey = с
 data-section-label = Подаци
 item-site-preferences =
     .label = Подешавања сајтова
     .accesskey = П
 item-offline-apps =
-    .label = Примљене податке са сајтова
-    .accesskey = П
+    .label = Офлајн садржај
+    .accesskey = ф
 sanitize-everything-undo-warning = Ова радња се не може опозвати.
 window-close =
     .key = w
 sanitize-button-ok =
-    .label = Обриши сада
+    .label = Обриши
 # The label for the default button between the user clicking it and the window
 # closing.  Indicates the items are being cleared.
 sanitize-button-clearing =
-    .label = Бришем
+    .label = Брисање
 # Warning that appears when "Time range to clear" is set to "Everything" in Clear
 # Recent History dialog, provided that the user has not modified the default set
 # of history items to clear.
-sanitize-everything-warning = Обрисаће се сва историја.
+sanitize-everything-warning = Обрисаћете сву историју.
 # Warning that appears when "Time range to clear" is set to "Everything" in Clear
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
-sanitize-selected-warning = Све изабране ставке ће бити уклоњене.
+sanitize-selected-warning = Обрисаћете све изабране ставке.

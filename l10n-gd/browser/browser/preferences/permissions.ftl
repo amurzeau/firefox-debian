@@ -18,6 +18,12 @@ permissions-session =
 permissions-allow =
     .label = Ceadaich
     .accesskey = a
+permissions-button-off =
+    .label = Cuir dheth
+    .accesskey = d
+permissions-button-off-temporarily =
+    .label = Cuir dheth rè seal
+    .accesskey = t
 permissions-site-name =
     .label = Làrach-lìn
 permissions-status =
@@ -37,8 +43,15 @@ permissions-button-ok =
 permission-dialog =
     .buttonlabelaccept = Sàbhail na h-atharraichean
     .buttonaccesskeyaccept = S
+permissions-autoplay-menu = Bun-roghainn dhan a h-uile làrach-lìn:
 permissions-searchbox =
     .placeholder = Lorg air an làrach-lìn
+permissions-capabilities-autoplay-allow =
+    .label = Ceadaich fuaim is video
+permissions-capabilities-autoplay-block =
+    .label = Bac fuaim
+permissions-capabilities-autoplay-blockall =
+    .label = Bac fuaimean is videothan
 permissions-capabilities-allow =
     .label = Ceadaich
 permissions-capabilities-block =
@@ -51,6 +64,10 @@ permissions-capabilities-listitem-block =
     .value = Cuir bacadh air
 permissions-capabilities-listitem-allow-session =
     .value = Ceadaich fad an t-seisein
+permissions-capabilities-listitem-off =
+    .value = Dheth
+permissions-capabilities-listitem-off-temporarily =
+    .value = Dheth rè seal
 
 ## Invalid Hostname Dialog
 
@@ -59,6 +76,10 @@ permissions-invalid-uri-label = Cuir a-steach ainm òstair dhligheach
 
 ## Exceptions - Tracking Protection
 
+permissions-exceptions-etp-window =
+    .title = Eisgeachdan air an dìon adhartach o thracadh
+    .style = { permissions-window.style }
+permissions-exceptions-etp-desc = Chuir thu dheth an dìon air na làraichean-lìn seo.
 
 ## Exceptions - Cookies
 
@@ -66,6 +87,13 @@ permissions-exceptions-cookie-window =
     .title = Eisgeachdan - Briosgaidean is dàta làraichean
     .style = { permissions-window.style }
 permissions-exceptions-cookie-desc = ’S urrainn dhut sònrachadh dè na làraichean-lìn aig am bi no nach bi cead an-còmhnaidh briosgaidean is dàta làraichean a chleachdadh. Cuir a-steach seòlaidh pongail na làraich a tha thu airson stiùireadh agus an uairsin briog air “Bac”, “Ceadaich rè an t-seisein” no “Ceadaich”.
+
+## Exceptions - HTTPS-Only Mode
+
+permissions-exceptions-https-only-window =
+    .title = Eisgeachdan – Modh HTTPS a-mhàin
+    .style = { permissions-window.style }
+permissions-exceptions-https-only-desc = ’S urrainn dhut am modh HTTPS a-mhàin a chur dheth do làraichean-lìn sònraichte. Chan fheuch { -brand-short-name } ris an ceangal àrdachadh gu HTTPS tèarainte dha na làraichean ud. Cha bhi na h-eisgeachdan an sàs air uinneagan prìobhaideach.
 
 ## Exceptions - Pop-ups
 
@@ -90,6 +118,10 @@ permissions-exceptions-addons-desc = 'S urrainn dhut sònrachadh dè na làraich
 
 ## Site Permissions - Autoplay
 
+permissions-site-autoplay-window =
+    .title = Roghainnean – Fèin-chluich
+    .style = { permissions-window.style }
+permissions-site-autoplay-desc = ’S urrainn dhut na làraichean nach cleachd na roghainnean fèin-chluich tùsail agad a stiùireadh an-seo.
 
 ## Site Permissions - Notifications
 
@@ -113,6 +145,13 @@ permissions-site-location-disable-desc = Cumaidh seo làrach-lìn sam bith nach 
 
 ## Site Permissions - Virtual Reality
 
+permissions-site-xr-window =
+    .title = Roghainnean – Ceadan na fìorachd bhiortail
+    .style = { permissions-window.style }
+permissions-site-xr-desc = Dh’iarr na làraichean-lìn a leanas cead airson uidheaman na fìorachd bhiortail agad inntrigeadh. ’S urrainn dhut sònrachadh dè na làraichean-lìn aig a bheil cead air na h-uidheaman fìorachd bhiortail agad. ’S urrainn dhut iarrtasan ùra air na h-uidheaman fìorachd bhiortail agad a bhacadh cuideachd.
+permissions-site-xr-disable-label =
+    .label = Bac iarrtasan ùra a dh’iarras cead air na h-uidheaman fìorachd bhiortail agad
+permissions-site-xr-disable-desc = Cumaidh seo làrach-lìn sam bith nach eil air an liosta gu h-àrd o chead iarraidh air na h-uidheaman fìorachd bhiortail agad. Ma bhacas tu cead air na h-uidheaman fìorachd bhiortail agad, dh’fhaoidte nach obraich cuid a ghleusan air làraichean-lìn tuilleadh.
 
 ## Site Permissions - Camera
 

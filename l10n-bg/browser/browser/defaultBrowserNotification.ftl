@@ -7,3 +7,17 @@ default-browser-notification-message = <strong>Задайте { -brand-short-nam
 default-browser-notification-button =
     .label = Задаване по подразбиране
     .accesskey = S
+
+## These strings are used for the default browser prompt. There are 2 variations
+## depending on the operating system (Windows vs other). The checkbox label and
+## secondary button are shared between the variants.
+
+default-browser-prompt-title-pin = Да бъде ли избран { -brand-short-name } за основен четец?
+default-browser-prompt-message-pin = Дръжте { -brand-short-name } наблизо като го направите четец по подразбиране и го закачите към лентата със задачи.
+default-browser-prompt-message-pin-mac = Дръжте { -brand-short-name } наблизо като го направите четец по подразбиране и го държите в Dock.
+default-browser-prompt-button-primary-pin = Направете основен четец
+default-browser-prompt-title-alt = Да бъде ли избран { -brand-short-name } за четец по подразбиране?
+default-browser-prompt-message-alt = Получавате скорост, безопасност и сигурност всеки път когато разглеждате.
+default-browser-prompt-button-primary-alt = Четец по подразбиране
+default-browser-prompt-checkbox-not-again-label = Спиране на този въпрос
+default-browser-prompt-button-secondary = Не сега

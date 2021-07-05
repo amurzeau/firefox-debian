@@ -4,31 +4,25 @@
 
 places-open =
     .label = Отвори
-    .accesskey = O
-places-open-in-tab =
-    .label = Отвори на новој картици
-    .accesskey = к
+    .accesskey = О
 places-open-tab =
+    .label = Отвори на новој картици
+    .accesskey = О
+places-open-in-tab =
     .label = Отвори на новој картици
     .accesskey = О
 places-open-all-bookmarks =
     .label = Отвори све обележиваче
-    .accesskey = б
+    .accesskey = О
 places-open-all-in-tabs =
     .label = Отвори све на картицама
     .accesskey = О
 places-open-window =
     .label = Отвори у новом прозору
     .accesskey = т
-places-open-in-window =
-    .label = Отвори у новом прозору
-    .accesskey = п
 places-open-private-window =
     .label = Отвори у новом приватном прозору
     .accesskey = в
-places-open-in-private-window =
-    .label = Отвори у новом приватном прозору
-    .accesskey = т
 places-new-bookmark =
     .label = Нови обележивач…
     .accesskey = б
@@ -41,6 +35,12 @@ places-new-folder =
 places-new-separator =
     .label = Нови разделник
     .accesskey = р
+places-open-in-window =
+    .label = Отвори у новом прозору
+    .accesskey = т
+places-open-in-private-window =
+    .label = Отвори у новом приватном прозору
+    .accesskey = в
 places-add-bookmark =
     .label = Додај обележивач…
     .accesskey = б
@@ -87,7 +87,7 @@ places-properties =
 # places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
 places-edit-bookmark =
     .label = Уреди обележивач…
-    .accesskey = б
+    .accesskey = е
 places-edit-generic =
     .label = Уреди…
     .accesskey = У
@@ -118,7 +118,7 @@ places-remove-bookmark =
             [1] Уклони обележивач
            *[other] Уклони обележиваче
         }
-    .accesskey = к
+    .accesskey = л
 places-manage-bookmarks =
     .label = Управљај обележивачима
     .accesskey = У

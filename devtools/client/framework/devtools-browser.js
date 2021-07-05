@@ -398,7 +398,7 @@ var gDevToolsBrowser = (exports.gDevToolsBrowser = {
         // the devtools client and also the server created in the
         // content process
         toolbox.target.on("target-destroyed", () => {
-          toolbox.target.client.close();
+          toolbox.commands.client.close();
         });
 
         return toolbox;
@@ -620,9 +620,7 @@ var gDevToolsBrowser = (exports.gDevToolsBrowser = {
     const menu = win.document.getElementById("menu_devToolbox");
 
     // Hide the "Toggle Tools" menu item if we are on about:devtools-toolbox.
-    menu.hidden =
-      gDevToolsBrowser._isAboutDevtoolsToolbox(win) ||
-      Services.prefs.getBoolPref("devtools.policy.disabled", false);
+    menu.hidden = gDevToolsBrowser._isAboutDevtoolsToolbox(win);
 
     // Add a checkmark for the "Toggle Tools" menu item if a toolbox is already opened.
     const hasToolbox = gDevToolsBrowser.hasToolboxOpened(win);

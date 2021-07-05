@@ -423,7 +423,7 @@
 <!ENTITY markThreadAsReadCmd.label "Νήμα ως αναγνωσμένο">
 <!ENTITY markThreadAsReadCmd.accesskey "Ν">
 <!ENTITY markThreadAsReadCmd.key "r">
-<!ENTITY markReadByDateCmd.label "Ως αναγνωσμένα κατά ημερομηνία…">
+<!ENTITY markReadByDateCmd.label "Ως αναγνωσμένο κατά ημερομηνία…">
 <!ENTITY markReadByDateCmd.accesskey "μ">
 <!ENTITY markReadByDateCmd.key "c">
 <!ENTITY markAllReadCmd.label "Όλων ως αναγνωσμένων">
@@ -435,7 +435,7 @@
 <!ENTITY markAsJunkCmd.label "Ως ανεπιθύμητο">
 <!ENTITY markAsJunkCmd.accesskey "ν">
 <!ENTITY markAsJunkCmd.key "j">
-<!ENTITY markAsNotJunkCmd.label "Ως επιθυμητή αλληλογραφία">
+<!ENTITY markAsNotJunkCmd.label "Ως μη ανεπιθύμητο">
 <!ENTITY markAsNotJunkCmd.accesskey "θ">
 <!ENTITY markAsNotJunkCmd.key "j">
 <!ENTITY recalculateJunkScoreCmd.label "Έλεγχος για ανεπιθύμητα email">
@@ -490,7 +490,7 @@
 <!ENTITY savedFiles.key "j">
 <!ENTITY filtersCmd2.label "Φίλτρα μηνυμάτων">
 <!ENTITY filtersCmd2.accesskey "Φ">
-<!ENTITY filtersApply.label "Εκτέλεση φίλτρων στο φάκελο">
+<!ENTITY filtersApply.label "Εκτέλεση φίλτρων στον φάκελο">
 <!ENTITY filtersApply.accesskey "κ">
 <!ENTITY filtersApplyToSelection.label "Εκτέλεση φίλτρων στα επιλεγμένα μηνύματα">
 <!ENTITY filtersApplyToSelection.accesskey "κ">
@@ -498,7 +498,7 @@
 <!ENTITY filtersApplyToMessage.accesskey "σ">
 <!ENTITY runJunkControls.label "Έλεγχος για ανεπιθύμητα email στον φάκελο">
 <!ENTITY runJunkControls.accesskey "κ">
-<!ENTITY deleteJunk.label "Διαγραφή σημειωμένου μηνύματος ως ανεπιθύμητο στο φάκελο">
+<!ENTITY deleteJunk.label "Διαγραφή επισημασμένου email ως ανεπιθύμητου στον φάκελο">
 <!ENTITY deleteJunk.accesskey "ι">
 <!ENTITY importCmd.label "Εισαγωγή…">
 <!ENTITY importCmd.accesskey "γ">
@@ -556,7 +556,7 @@
 <!ENTITY notJunkButton.label "Επιθυμητά">
 <!ENTITY addressBookButton.label "Ευρετήριο">
 <!ENTITY chatButton.label "Συνομιλία">
-<!ENTITY glodaSearch.title "Γενική αναζήτηση">
+<!ENTITY glodaSearch.title "Καθολική αναζήτηση">
 <!ENTITY searchItem.title "Γρήγορη αναζήτηση">
 <!ENTITY mailViewsToolbarItem.title "Προβολές αλληλογραφίας">
 <!ENTITY folderLocationToolbarItem.title "Τοποθεσία φακέλου">
@@ -574,7 +574,7 @@
 <!ENTITY replyAllButton.tooltip "Απάντηση στον αποστολέα και σε όλους τους παραλήπτες">
 <!ENTITY replyListButton.tooltip "Απάντηση στη λίστα αλληλογραφίας">
 <!ENTITY forwardButton.tooltip "Προώθηση επιλεγμένου μηνύματος">
-<!ENTITY forwardAsInline.tooltip "Προώθηση επιλεγμένου μηνύματος ως κείμενο μέσα στο σώμα">
+<!ENTITY forwardAsInline.tooltip "Προώθηση επιλεγμένου μηνύματος ως ενσωματωμένου κειμένου">
 <!ENTITY forwardAsAttachment.tooltip "Προώθηση επιλεγμένου μηνύματος ως συνημμένο">
 <!ENTITY fileButton.tooltip "Αρχειοθέτηση επιλεγμένου μηνύματος">
 <!ENTITY archiveButton.tooltip "Αρχειοθέτηση επιλεγμένων μηνυμάτων">
@@ -593,7 +593,7 @@
 <!ENTITY junkButton.tooltip "Επισήμανση επιλεγμένων μηνυμάτων ως ανεπιθύμητων">
 <!ENTITY notJunkButton.tooltip "Επισήμανση επιλεγμένων μηνυμάτων ως μη ανεπιθύμητων">
 <!ENTITY addressBookButton.tooltip "Μετάβαση στο ευρετήριο διευθύνσεων">
-<!ENTITY chatButton.tooltip "Εμφάνιση της καρτέλας Συνομιλίας">
+<!ENTITY chatButton.tooltip 'Εμφάνιση καρτέλας "Συνομιλία"'>
 <!ENTITY tagButton.tooltip "Ετικέτα σε μηνύματα">
 <!ENTITY compactButton.tooltip "Αφαίρεση διαγραμμένων μηνυμάτων από τον επιλεγμένο φάκελο">
 <!ENTITY appmenuButton1.tooltip "Προβολή του μενού του &brandShortName;">
@@ -630,7 +630,7 @@
 <!-- Tags Menu Popup -->
 <!ENTITY addNewTag.label "Νέα ετικέτα…">
 <!ENTITY addNewTag.accesskey "Ν">
-<!ENTITY manageTags.label "Διαχείριση των ετικετών…">
+<!ENTITY manageTags.label "Διαχείριση ετικετών…">
 <!ENTITY manageTags.accesskey "Τ">
 
 <!-- Folder Pane -->
@@ -727,7 +727,7 @@
 <!ENTITY threadColumn2.tooltip "Προβολή νημάτων μηνυμάτων">
 <!ENTITY fromColumn2.tooltip "Ταξινόμηση κατά αποστολέα">
 <!ENTITY recipientColumn2.tooltip "Ταξινόμηση κατά παραλήπτη">
-<!ENTITY correspondentColumn2.tooltip "Ταξινόμηση κατά των επιστολογράφων">
+<!ENTITY correspondentColumn2.tooltip "Ταξινόμηση κατά επιστολογράφους">
 <!ENTITY subjectColumn2.tooltip "Ταξινόμηση κατά θέμα">
 <!ENTITY dateColumn2.tooltip "Ταξινόμηση κατά ημερομηνία">
 <!ENTITY priorityColumn2.tooltip "Ταξινόμηση κατά προτεραιότητα">
@@ -758,7 +758,7 @@
 <!ENTITY contextOpenNewTab.accesskey "τ">
 <!ENTITY contextOpenConversation.label "Άνοιγμα μηνύματος σε συζήτηση">
 <!ENTITY contextOpenConversation.accesskey "ν">
-<!ENTITY contextOpenContainingFolder.label "Άνοιγμα μηνύματος στο φάκελο αποθήκευσης">
+<!ENTITY contextOpenContainingFolder.label "Άνοιγμα μηνύματος στον φάκελο αποθήκευσης">
 <!ENTITY contextOpenContainingFolder.accesskey "φ">
 <!ENTITY contextEditMsgAsNew.label "Επεξεργασία ως νέο μήνυμα">
 <!ENTITY contextEditMsgAsNew.accesskey "ω">
@@ -779,7 +779,7 @@
 <!ENTITY contextForward.accesskey "θ">
 <!ENTITY contextForwardAsMenu.label "Προώθηση ως">
 <!ENTITY contextForwardAsMenu.accesskey "ο">
-<!ENTITY contextForwardAsInline.label "Μέσα στο σώμα">
+<!ENTITY contextForwardAsInline.label "Ενσωμάτωση">
 <!ENTITY contextForwardAsInline.accesskey "Μ">
 <!ENTITY contextForwardAsAttachmentItem.label "Συνημμένο">
 <!ENTITY contextForwardAsAttachmentItem.accesskey "Σ">

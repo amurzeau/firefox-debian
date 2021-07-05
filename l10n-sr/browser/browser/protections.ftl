@@ -21,7 +21,7 @@ graph-total-tracker-summary =
        *[other] Од { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") } блокирано је <b>{ $count }</b> елемената за праћење
     }
 # Text displayed instead of the graph when in Private Mode
-graph-private-window = { -brand-short-name } наставља да блокира пратиоце у приватном режиму, али не води евиденцију о томе шта је блокирано.
+graph-private-window = { -brand-short-name } блокира елементе за праћење и у приватним прозорима, али не води евиденцију о томе шта је блокирано.
 # Weekly summary of the graph when the graph is empty in Private Mode
 graph-week-summary-private-window = Пратиоци које је { -brand-short-name } блокирао ове седмице
 protection-report-webpage-title = Контролна табла заштите
@@ -34,7 +34,13 @@ protection-report-settings-link = Управљајте подешавањима 
 etp-card-title-always = Побољшана заштита од праћења: увек укључена
 etp-card-title-custom-not-blocking = Побољшана заштита од праћења: ИСКЉУЧЕНА
 etp-card-content-description = { -brand-short-name } аутоматски спречава компаније да вас потајно прате на мрежи.
-protection-report-etp-card-content-custom-not-blocking = Све заштите су тренутно искључене. Изаберите које пратиоце желите блокирати управљајући { -brand-short-name } подешавањима заштите.
+protection-report-etp-card-content-custom-not-blocking =
+    Тренутно су онемогућене све заштите. У подешавањима { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "gen") }
+        [feminine] { -brand-short-name(case: "gen") }
+        [neuter] { -brand-short-name(case: "gen") }
+       *[other] програма { -brand-short-name }
+    } изаберите које елементе за праћење желите да блокирате.
 protection-report-manage-protections = Управљај подешавањима
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
 # capitalization for this string should match the output for your locale.
@@ -62,7 +68,7 @@ lockwise-title-logged-in2 = Менаџер лозинки
 lockwise-header-content = { -lockwise-brand-name } безбедно чува ваше лозинке у прегледачу.
 lockwise-header-content-logged-in = Безбедно чувајте и синхронизујте ваше лозинке на свим вашим уређајима.
 protection-report-save-passwords-button = Сачувај лозинке
-    .title = Сачувај лозинке у { -lockwise-brand-short-name }
+    .title = Сачувајте лозинке у { -lockwise-brand-short-name(case: "loc") }
 protection-report-manage-passwords-button = Управљај лозинкама
     .title = Управљање лозинкама помоћу { -lockwise-brand-short-name(case: "gen") }
 lockwise-mobile-app-title = Понесите ваше лозинке свугде
@@ -171,7 +177,7 @@ monitor-partial-breaches-title =
 monitor-partial-breaches-percentage = { $percentageResolved }% завршено
 monitor-partial-breaches-motivation-title-start = Супер за почетак!
 monitor-partial-breaches-motivation-title-middle = Наставите тако!
-monitor-partial-breaches-motivation-title-end = Скоро па готово! Наставите тако.
+monitor-partial-breaches-motivation-title-end = Скоро па готово! Само тако наставите.
 monitor-partial-breaches-motivation-description = Решите ваша остала цурења података уз { -monitor-brand-short-name }.
 monitor-resolve-breaches-link = Решите цурења података
     .title = Решите цурења података уз { -monitor-brand-short-name }
