@@ -1,3 +1,20 @@
+firefox (90.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2021-28, also known as:
+    CVE-2021-29970, CVE-2021-29971, CVE-2021-29972, CVE-2021-29974,
+    CVE-2021-29975, CVE-2021-29976, CVE-2021-29977.
+
+  * debian/control*:
+    - Bump nss build dependency.
+    - Remove libgtk2 build dependency.
+  * debian/browser.install.in: Don't install gtk2/libmozgtk.so.
+
+  * widget/gtk/mozgtk/moz.build: Remove old workaround for bug #844357, which
+    was fixed in binutils a long time ago.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 14 Jul 2021 06:07:27 +0900
+
 firefox (89.0.2-1) unstable; urgency=medium
 
   * New upstream release.
