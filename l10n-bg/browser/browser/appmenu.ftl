@@ -5,6 +5,12 @@
 
 ## App Menu
 
+appmenuitem-update-banner3 =
+    .label-update-downloading = Изтегляне на обновление за { -brand-shorter-name }
+    .label-update-available = Има обновление – изтеглете
+    .label-update-manual = Има обновление – изтеглете
+    .label-update-unsupported = Има обновление – несъвместима система
+    .label-update-restart = Има обновление – рестартирайте
 appmenuitem-protection-dashboard-title = Табло със защити
 appmenuitem-customize-mode =
     .label = Приспособяване…
@@ -25,6 +31,18 @@ appmenuitem-find-in-page =
     .label = Търсене в страницата
 appmenuitem-more-tools =
     .label = Още инструменти
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Изход
+           *[other] Изход
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Отваря менюто на приложението
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Затваря менюто на приложението
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -43,6 +61,10 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Синхронизиране
+appmenu-remote-tabs-sign-into-sync =
+    .label = Вписване в Sync…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Включване на Sync…
 appmenuitem-fxa-toolbar-sync-now2 = Синхронизиране
 appmenuitem-fxa-manage-account = Управление на сметка
 appmenu-fxa-header2 = { -fxaccount-brand-name }
@@ -169,3 +191,5 @@ appmenu-customizetoolbar =
 appmenu-taskmanager =
     .label = Диспечер на задачи
 appmenu-developer-tools-subheader = Инструменти за четеца
+appmenu-developer-tools-extensions =
+    .label = Разширения за разработчици

@@ -38,6 +38,24 @@ upgrade-dialog-new-primary-win7-button = Selvä, ymmärretty!
 ## match the OS' application context menu item action where Windows uses "pin"
 ## and "taskbar" while macOS "keep" and "Dock" (proper noun).
 
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-pin-title =
+    { PLATFORM() ->
+        [macos] Pidä { -brand-short-name } Dockissa
+       *[other] Kiinnitä { -brand-short-name } tehtäväpalkkiin
+    }
+# The English macOS string avoids repeating "Keep" a third time, so if your
+# translations don't repeat anyway, the same string can be used cross-platform.
+upgrade-dialog-pin-subtitle =
+    { PLATFORM() ->
+        [macos] Näin uusin { -brand-short-name } on nopeasti käytettävissä.
+       *[other] Pidä uusin { -brand-short-name } käden ulottuvilla.
+    }
+upgrade-dialog-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Pidä Dockissa
+       *[other] Kiinnitä tehtäväpalkkiin
+    }
 upgrade-dialog-pin-secondary-button = Ei nyt
 
 ## Default browser screen
@@ -48,6 +66,7 @@ upgrade-dialog-default-subtitle = Nopeutta, turvallisuutta ja yksityisyyttä jok
 upgrade-dialog-default-primary-button = Aseta oletusselaimeksi
 # This title can be explicitly wrapped to control which words are on which line.
 upgrade-dialog-default-title-2 = Aseta { -brand-short-name } oletukseksi
+upgrade-dialog-default-subtitle-2 = Aseta nopeus, turvallisuus ja yksityisyys automaattiseksi.
 upgrade-dialog-default-primary-button-2 = Aseta oletusselaimeksi
 upgrade-dialog-default-secondary-button = Ei nyt
 
@@ -57,6 +76,8 @@ upgrade-dialog-default-secondary-button = Ei nyt
 upgrade-dialog-theme-title =
     Uusi alku
     päivitetyllä teemalla
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-theme-title-2 = Uusi alku terävällä teemalla
 upgrade-dialog-theme-system = Järjestelmän teema
     .title = Seuraa käyttöjärjestelmän teemaa painikkeille, valikoille ja ikkunoille
 upgrade-dialog-theme-light = Vaalea

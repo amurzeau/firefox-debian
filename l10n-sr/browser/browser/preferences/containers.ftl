@@ -3,17 +3,17 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 containers-window-new =
-    .title = Додај нови контејнер
+    .title = Додавање контејнера
     .style = width: 45em
 # Variables
 #   $name (String) - Name of the container
 containers-window-update =
-    .title = Подешавања контејнера { $name }
+    .title = Подешавања контејнера „{ $name }”
     .style = width: 45em
 # Variables
 #   $name (String) - Name of the container
 containers-window-update-settings =
-    .title = Подешавања контејнера { $name }
+    .title = Подешавања контејнера „{ $name }”
     .style = width: 45em
 containers-window-close =
     .key = w
@@ -27,23 +27,23 @@ containers-window-close =
 # of the three messages ensures that all three labels
 # will be aligned correctly.
 -containers-labels-style = min-width: 4rem
-containers-name-label = Име
-    .accesskey = N
+containers-name-label = Назив
+    .accesskey = Н
     .style = { -containers-labels-style }
 containers-name-text =
-    .placeholder = Унесите име контејнера
-containers-icon-label = Иконица
-    .accesskey = I
+    .placeholder = Унесите назив контејнера
+containers-icon-label = Икона
+    .accesskey = И
     .style = { -containers-labels-style }
 containers-color-label = Боја
-    .accesskey = o
+    .accesskey = Б
     .style = { -containers-labels-style }
 containers-button-done =
     .label = Готово
-    .accesskey = D
+    .accesskey = Г
 containers-dialog =
     .buttonlabelaccept = Готово
-    .buttonaccesskeyaccept = D
+    .buttonaccesskeyaccept = Г
 containers-color-blue =
     .label = Плава
 containers-color-turquoise =

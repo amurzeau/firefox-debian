@@ -11,11 +11,26 @@ unread-messages-os-tooltip =
     }
 about-rights-notification-text = { -brand-short-name } è un software gratuito, libero e open source, realizzato da una comunità di migliaia di persone provenienti da tutto il mondo.
 
+## Content tabs
+
+content-tab-page-loading-icon =
+    .alt = Caricamento pagina in corso
+content-tab-security-high-icon =
+    .alt = La connessione è sicura
+content-tab-security-broken-icon =
+    .alt = La connessione non è sicura
+
 ## Toolbar
 
 addons-and-themes-button =
     .label = Componenti aggiuntivi e temi
     .tooltip = Gestisci i tuoi componenti aggiuntivi
+addons-and-themes-toolbarbutton =
+    .label = Componenti aggiuntivi e temi
+    .tooltiptext = Gestisci i tuoi componenti aggiuntivi
+quick-filter-toolbarbutton =
+    .label = Filtro veloce
+    .tooltiptext = Filtra messaggi
 redirect-msg-button =
     .label = Reindirizza
     .tooltiptext = Reindirizza il messaggio selezionato
@@ -109,3 +124,9 @@ message-header-address-not-in-address-book-icon =
 addon-removal-title = Rimuovere { $name }?
 addon-removal-confirmation-button = Rimuovi
 addon-removal-confirmation-message = Rimuovere { $name } da { -brand-short-name }, inclusi impostazioni e dati associati?
+caret-browsing-prompt-title = Navigazione nel testo
+caret-browsing-prompt-text = Premendo il tasto F7 è possibile attivare o disattivare la Navigazione nel testo. Questa funzione visualizza un cursore mobile all’interno di alcuni contenuti, consentendo di selezionare il testo attraverso la tastiera. Attivare la Navigazione nel testo?
+caret-browsing-prompt-check-text = Non chiedere nuovamente.
+repair-text-encoding-button =
+    .label = Correggi codifica testo
+    .tooltiptext = Cerca di identificare la codifica testo corretta in base al contenuto del messaggio

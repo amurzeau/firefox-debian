@@ -45,8 +45,8 @@ onboarding-join-form-signin-label = Већ имате налог?
 onboarding-join-form-signin = Пријавите се
 onboarding-start-browsing-button-label = Претражујте интернет
 onboarding-cards-dismiss =
-    .title = Уклони
-    .aria-label = Уклони
+    .title = Одбаци
+    .aria-label = Одбаци
 
 ## Welcome full page string
 
@@ -135,7 +135,7 @@ onboarding-mobile-phone-button = Преузми мобилни прегледа�
 onboarding-send-tabs-title = Одмах пошаљите себи картице
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text2 = Једноставно делите странице са уређајима, не морате да копирате везе нити да излазите из прегледача.
+onboarding-send-tabs-text2 = Једноставно делите странице са уређајима. Не морате да копирате везе нити да излазите из прегледача.
 onboarding-send-tabs-button = Почните да користите слање картица
 onboarding-pocket-anywhere-title = Читајте и слушајте било где
 onboarding-pocket-anywhere-text2 = Сачувајте омиљени садржај у { -pocket-brand-name(case: "loc") } и читајте, слушајте и гледајте га без интернета у било које време.
@@ -160,7 +160,7 @@ return-to-amo-sub-header = Одлично, добили сте { -brand-short-na
 #
 # Variables:
 #   $addon-name (String) - Name of the add-on
-return-to-amo-addon-header = Сада ћемо вам помоћи са додатком <icon></icon><b>{ $addon-name }.</b>
+return-to-amo-addon-header = Сада ће се инсталирати додатак <icon></icon><b>{ $addon-name }.</b>
 return-to-amo-extension-button = Додај додатак
 return-to-amo-get-started-button = Крените са коришћењем програма { -brand-short-name }
 onboarding-not-now-button-label = Не сада
@@ -247,7 +247,13 @@ onboarding-welcome-steps-indicator =
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "look" should stay inside the span.
 onboarding-multistage-theme-header = Изаберите <span data-l10n-name="zap">изглед</span>
-onboarding-multistage-theme-subtitle = Прилагодите { -brand-short-name } темом.
+onboarding-multistage-theme-subtitle =
+    Промените изглед { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "gen") }
+        [feminine] { -brand-short-name(case: "gen") }
+        [neuter] { -brand-short-name(case: "gen") }
+       *[other] програма { -brand-short-name }
+    } помоћу теме.
 onboarding-multistage-theme-primary-button-label2 = Готово
 onboarding-multistage-theme-secondary-button-label = Не сада
 # Automatic theme uses operating system color settings

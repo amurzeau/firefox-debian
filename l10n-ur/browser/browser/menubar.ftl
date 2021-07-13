@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = ترجیحات
 menu-application-services =
     .label = خدمات
 menu-application-hide-this =
@@ -111,6 +113,9 @@ menu-edit =
 menu-edit-find-on =
     .label = اس صفحے میں ڈھونڈیں…
     .accesskey = F
+menu-edit-find-in-page =
+    .label = صفحے میں ڈھونڈیں…
+    .accesskey = F
 menu-edit-find-again =
     .label = دوبارہ ڈھونڈیں
     .accesskey = g
@@ -128,6 +133,9 @@ menu-view-toolbars-menu =
     .accesskey = T
 menu-view-customize-toolbar =
     .label = تخصیص کریں…
+    .accesskey = C
+menu-view-customize-toolbar2 =
+    .label = ٹولبار تخصیص کریں…
     .accesskey = C
 menu-view-sidebar =
     .label = بغلی بار
@@ -219,6 +227,10 @@ menu-bookmarks-show-all =
     .label = تمام بک مارک دکھائیں
 menu-bookmark-this-page =
     .label = یہ صفحہ نشان زد کریں
+menu-bookmarks-manage =
+    .label = بک مارکس منظم کریں
+menu-bookmark-current-tab =
+    .label = موجودہ ٹیب کو بک مارک کریں
 menu-bookmark-edit =
     .label = اس بک مارک کی تدوین کریں
 menu-bookmarks-all-tabs =
@@ -247,6 +259,15 @@ menu-tools-fxa-sign-in =
 menu-tools-turn-on-sync =
     .label = { -sync-brand-short-name }…  چالو  کریں
     .accesskey = n
+menu-tools-addons-and-themes =
+    .label = ایڈ آنز اور تھیمز
+    .accesskey = A
+menu-tools-fxa-sign-in2 =
+    .label = سائن ان کریں
+    .accesskey = g
+menu-tools-turn-on-sync2 =
+    .label = سینک چالو کریں…
+    .accesskey = n
 menu-tools-sync-now =
     .label = ابھی ہمہ وقت سازی کریں
     .accesskey = S
@@ -256,6 +277,12 @@ menu-tools-fxa-re-auth =
 menu-tools-web-developer =
     .label = ویب تکمیل کار
     .accesskey = W
+menu-tools-browser-tools =
+    .label = براؤزر ٹولز
+    .accesskey = B
+menu-tools-task-manager =
+    .label = ٹاسک مینیجر
+    .accesskey = M
 menu-tools-page-source =
     .label = صفحہ ماخذ
     .accesskey = o
@@ -273,6 +300,13 @@ menu-preferences =
             [windows] O
            *[other] n
         }
+menu-settings =
+    .label = سیٹنگز
+    .accesskey =
+        { PLATFORM() ->
+            [windows] S
+           *[other] n
+        }
 menu-tools-layout-debugger =
     .label = لےآوٹ ڈیبگر
     .accesskey = L
@@ -285,15 +319,6 @@ menu-window-bring-all-to-front =
     .label = تمام سامنے لائیں
 
 ## Help Menu
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
 
 
 # NOTE: For Engineers, any additions or changes to Help menu strings should
@@ -322,8 +347,9 @@ menu-help-keyboard-shortcuts =
 menu-help-troubleshooting-info =
     .label = ازالہ کاری معلومات
     .accesskey = T
-menu-help-taskmanager =
-    .label = ٹاسک مینیجر
+menu-get-help =
+    .label = مدد حاصل کریں
+    .accesskey = H
 menu-help-report-site-issue =
     .label = سائٹ مسلہ… رپورٹ کریں
 menu-help-feedback-page =

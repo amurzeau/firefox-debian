@@ -6,24 +6,24 @@
 ### This file contains the entities needed to use the Find Bar.
 
 findbar-next =
-    .tooltiptext = Налази наредну појаву фразе
+    .tooltiptext = Пронађи следеће појављивање фразе
 findbar-previous =
-    .tooltiptext = Пронађи претходну појаву фразе
+    .tooltiptext = Пронађи претходно појављивање фразе
 findbar-find-button-close =
     .tooltiptext = Затвори траку за тражење
 findbar-highlight-all2 =
     .label = Истакни све
     .accesskey = И
-    .tooltiptext = Истакните свако појављивање фразе
+    .tooltiptext = Истиче свако појављивање фразе
 findbar-case-sensitive =
-    .label = Подудара се
-    .accesskey = П
-    .tooltiptext = Претрага са разликом малих и великих слова
+    .label = Разликуј мала и велика слова
+    .accesskey = Р
+    .tooltiptext = Узима у обзир величину слова при претрази
 findbar-match-diacritics =
-    .label = Пронађи дијакритике
-    .accesskey = и
-    .tooltiptext = Прави разлику између слова са дијакритицима и основних слова (на пример, тражење појма „resume“ неће пронаћи „résumé“)
+    .label = Дијакритика
+    .accesskey = Д
+    .tooltiptext = Разликује слова са дијакритичким знаковима и основна слова
 findbar-entire-word =
     .label = Целе речи
     .accesskey = Ц
-    .tooltiptext = Тражите само целе речи
+    .tooltiptext = Тражи само целе речи

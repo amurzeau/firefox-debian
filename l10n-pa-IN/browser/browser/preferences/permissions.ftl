@@ -18,6 +18,12 @@ permissions-session =
 permissions-allow =
     .label = ਮਨਜ਼ੂਰ ਕਰੋ
     .accesskey = A
+permissions-button-off =
+    .label = ਬੰਦ ਕਰੋ
+    .accesskey = O
+permissions-button-off-temporarily =
+    .label = ਆਰਜੀ ਤੌਰ 'ਤੇ ਬੰਦ ਕਰੋ
+    .accesskey = T
 permissions-site-name =
     .label = ਵੈੱਬਸਾਈਟ
 permissions-status =
@@ -58,6 +64,10 @@ permissions-capabilities-listitem-block =
     .value = ਪਾਬੰਦੀ
 permissions-capabilities-listitem-allow-session =
     .value = ਸ਼ੈਸ਼ਨ ਲਈ ਮਨਜ਼ੂਰ
+permissions-capabilities-listitem-off =
+    .value = ਬੰਦ
+permissions-capabilities-listitem-off-temporarily =
+    .value = ਆਰਜੀ ਤੌਰ 'ਤੇ ਬੰਦ ਹੈ
 
 ## Invalid Hostname Dialog
 
@@ -77,6 +87,13 @@ permissions-exceptions-cookie-window =
     .title = ਛੋਟਾਂ - ਕੂਕੀਜ਼ ਅਤੇ ਸਾਈਟ ਡਾਟਾ
     .style = { permissions-window.style }
 permissions-exceptions-cookie-desc = ਤੁਸੀਂ ਦੱਸ ਸਕਦੇ ਹੋ ਕਿ ਕਿਹੜੀਆਂ ਵੈਬਸਾਈਟਾਂ ਨੂੰ ਕੂਕੀਜ਼ ਅਤੇ ਸਾਈਟ ਡਾਟਾ ਵਰਤਣ ਦੀ ਇਜਾਜ਼ਤ ਨਹੀਂ ਦਿੱਤੀ ਜਾਂਦੀ ਹੈ ਉਸ ਸਾਈਟ ਦਾ ਸਹੀ ਸਿਰਨਾਵਾਂ ਲਿਖੋ, ਜਿਸ ਦਾ ਤੁਸੀਂ ਬੰਦੋਬਸਤ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ ਅਤੇ ਫਿਰ ਪਾਬੰਦੀ ਲਾਓ, ਸੈਸ਼ਨ ਲਈ ਇਜਾਜ਼ਤ ਦਿਓ, ਜਾਂ ਇਜਾਜ਼ਤ ਦਿਓ।
+
+## Exceptions - HTTPS-Only Mode
+
+permissions-exceptions-https-only-window =
+    .title = ਛੋਟ - ਸਿਰਫ਼-HTTPS ਮੋਡ
+    .style = { permissions-window.style }
+permissions-exceptions-https-only-desc = ਤੁਸੀਂ ਖਾਸ ਵੈੱਬਸਾਈਟਾਂ ਲਈ ਸਿਰਫ਼-HTTPS ਢੰਗ ਨੂੰ ਬੰਦ ਕਰ ਸਕਦੇ ਹੋ। { -brand-short-name } ਉਹਨਾਂ ਸਾਈਟਾਂ ਲਈ ਸੁਰੱਖਿਅਤ HTTPS ਕਨੈਕਸ਼ਨ ਵਾਸਤੇ ਅੱਪਗਰੇਡ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਨਹੀਂ ਕਰੇਗਾ। ਛੋਟਾਂ ਪ੍ਰਾਈਵੇਟ ਵਿੰਡੋਆਂ ਉੱਤੇ ਲਾਗੂ ਨਹੀਂ ਹੁੰਦੀਆਂ ਹਨ।
 
 ## Exceptions - Pop-ups
 

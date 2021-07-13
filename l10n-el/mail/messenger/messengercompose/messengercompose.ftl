@@ -6,13 +6,13 @@
 # Addressing widget
 
 #   $type (String) - the type of the addressing row
-remove-address-row-type = Αφαίρεση πεδίου { $type }
+remove-address-row-type = Αφαίρεση πεδίου "{ $type }"
 #   $type (String) - the type of the addressing row
 remove-address-row-type-label =
-    .tooltiptext = Αφαίρεση πεδίου { $type }
+    .tooltiptext = Αφαίρεση πεδίου "{ $type }"
 #   $type (String) - the type of the addressing row
 remove-address-row-button =
-    .title = Αφαίρεση πεδίου { $type }
+    .title = Αφαίρεση πεδίου "{ $type }"
 #   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
@@ -39,11 +39,11 @@ pill-action-move-to =
     .label = Μετακίνηση στο Προς
     .accesskey = τ
 pill-action-move-cc =
-    .label = Μετακίνηση στην Κοινοποίηση
+    .label = Μετακίνηση σε "Κοιν."
     .accesskey = κ
 pill-action-move-bcc =
-    .label = Μετακίνηση στην Κρυφή Κοινοποίηση
-    .accesskey = φ
+    .label = Μετακίνηση σε "Κρυφή κοιν."
+    .accesskey = ν
 pill-action-expand-list =
     .label = Ανάπτυξη λίστας
     .accesskey = ν
@@ -120,9 +120,9 @@ move-attachment-last-panel-button =
     .label = Μετακίνηση στο Τελευταίο
 button-return-receipt =
     .label = Αποδεικτικό
-    .tooltiptext = Απαίτηση ενός αποδεικτικού επιστροφής για αυτό το μήνυμα
+    .tooltiptext = Απαίτηση αποδεικτικού προβολής για αυτό το μήνυμα
 #   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-consider-bcc-notification = Οι { $count } παραλήπτες στα πεδία "Προς" και "Κοιν." μπορούν να δουν τις διευθύνσεις των άλλων. Μπορείτε να αποφύγετε την αποκάλυψη των παραληπτών με την "Κρ. Κοιν.".
+consider-bcc-notification = Οι { $count } παραλήπτες στα πεδία "Προς" και "Κοιν." μπορούν να δουν τις διευθύνσεις των υπολοίπων. Μπορείτε να αποφύγετε την αποκάλυψη των παραληπτών με το πεδίο "Κρυφή κοιν.".
 
 # Addressing Area
 
@@ -130,36 +130,36 @@ to-compose-address-row-label =
     .value = Προς
 #   $key (String) - the shortcut key for this field
 to-compose-show-address-row-menuitem =
-    .label = { to-compose-address-row-label.value } Πεδίο
-    .accesskey = ε
+    .label = Πεδίο "{ to-compose-address-row-label.value }"
+    .accesskey = Π
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
 to-compose-show-address-row-label =
     .value = { to-compose-address-row-label.value }
-    .tooltiptext = Εμφάνιση { to-compose-address-row-label.value } πεδίου { to-compose-show-address-row-menuitem.acceltext }
+    .tooltiptext = Εμφάνιση πεδίου "{ to-compose-address-row-label.value }" ({ to-compose-show-address-row-menuitem.acceltext })
 cc-compose-address-row-label =
-    .value = Κοιν
+    .value = Κοιν.
 #   $key (String) - the shortcut key for this field
 cc-compose-show-address-row-menuitem =
-    .label = { cc-compose-address-row-label.value } Πεδίο
+    .label = Πεδίο "{ cc-compose-address-row-label.value }"
     .accesskey = δ
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
 cc-compose-show-address-row-label =
     .value = { cc-compose-address-row-label.value }
-    .tooltiptext = Εμφάνιση { cc-compose-address-row-label.value } Πεδίου { cc-compose-show-address-row-menuitem.acceltext }
+    .tooltiptext = Εμφάνιση πεδίου "{ cc-compose-address-row-label.value }" ({ cc-compose-show-address-row-menuitem.acceltext })
 bcc-compose-address-row-label =
-    .value = Κρυφή Κοιν
+    .value = Κρυφή κοιν.
 #   $key (String) - the shortcut key for this field
 bcc-compose-show-address-row-menuitem =
-    .label = { bcc-compose-address-row-label.value } Πεδίο
+    .label = Πεδίο "{ bcc-compose-address-row-label.value }"
     .accesskey = ο
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
 bcc-compose-show-address-row-label =
     .value = { bcc-compose-address-row-label.value }
-    .tooltiptext = Εμφάνιση { bcc-compose-address-row-label.value } πεδίου { bcc-compose-show-address-row-menuitem.acceltext }
+    .tooltiptext = Εμφάνιση πεδίου "{ bcc-compose-address-row-label.value }" ({ bcc-compose-show-address-row-menuitem.acceltext })
 #   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-many-public-recipients-info = Οι { $count } αποδέκτες στο Προς και Κοιν θα βλέπουν τις διευθύνσεις των υπολοίπων αποδεκτών. Μπορείτε να αποφύγετε την αποκάλυψη των διευθύνσεων των αποδεκτών χρησιμοποιώντας αντίθετα το Κρυφή Κοιν.
+many-public-recipients-info = Οι { $count } παραλήπτες στα πεδία "Προς" και "Κοιν." θα βλέπουν τις διευθύνσεις των υπολοίπων. Μπορείτε να αποφύγετε την αποκάλυψη των παραληπτών με το πεδίο "Κρυφή κοιν.".
 many-public-recipients-bcc =
-    .label = Χρήση "Κρ. Κοιν."
+    .label = Χρήση "Κρυφή κοιν."
     .accesskey = Χ
 many-public-recipients-ignore =
     .label = Διατήρηση ορατών παραληπτών

@@ -336,6 +336,7 @@ cannot-encrypt-because-missing = Aşağıdaki alıcıların anahtarlarında soru
 window-locked = Oluşturma penceresi kilitli; gönderme iptal edildi
 # Strings in mimeDecrypt.jsm
 mime-decrypt-encrypted-part-attachment-label = Şifrelenmiş mesaj bölümü
+mime-decrypt-encrypted-part-concealed-data = Bu, şifrelenmiş bir ileti parçasıdır. Eke tıklayarak ayrı bir pencerede açmanız gerekiyor.
 # Strings in keyserver.jsm
 keyserver-error-aborted = Durduruldu
 keyserver-error-unknown = Bilinmeyen bir hata oluştu
@@ -371,6 +372,7 @@ import-info-details = Ayrıntıları görüntüle ve anahtar kabulünü yönet
 import-info-no-keys = İçe aktarılmış anahtar yok.
 # Strings in enigmailKeyManager.js
 import-from-clip = Panodan bazı anahtarları içe aktarmak istiyor musunuz?
+import-from-url = Ortak anahtarı bu adresten indir:
 copy-to-clipbrd-failed = Seçilen anahtar(lar) panoya kopyalanamadı.
 copy-to-clipbrd-ok = Anahtar(lar) panoya kopyalandı
 delete-selected-pub-key = Ortak anahtarları silmek istiyor musunuz?

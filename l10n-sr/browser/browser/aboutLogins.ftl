@@ -66,23 +66,22 @@ login-list-item-title-new-login = Нова пријава
 login-list-item-subtitle-new-login = Унесите податке за пријаву
 login-list-item-subtitle-missing-username = (нема корисничког имена)
 about-logins-list-item-breach-icon =
-    .title = Веб страница на којој долази до цурења података
+    .title = Хаковани веб-сајт
 about-logins-list-item-vulnerable-password-icon =
     .title = Рањива лозинка
 
 ## Introduction screen
 
-login-intro-heading = Тражите сачуване пријаве? Подесите { -sync-brand-short-name }.
-about-logins-login-intro-heading-logged-out = Тражите сачуване пријаве? Увезите их или подесите { -sync-brand-short-name(case: "acc") }.
+login-intro-heading = Тражите сачуване лозинке? Подесите { -sync-brand-short-name(case: "acc") }.
 about-logins-login-intro-heading-logged-out2 = Тражите сачуване лозинке? Увезите их или укључите синхронизацију.
 about-logins-login-intro-heading-logged-in = Синхронизоване пријаве нису пронађене.
 login-intro-description =
-    Ако сте сачували пријаве у { -brand-product-name.gender ->
+    Ако сте сачували лозинке у { -brand-product-name.gender ->
         [masculine] { -brand-product-name(case: "loc") }
         [feminine] { -brand-product-name(case: "loc") }
         [neuter] { -brand-product-name(case: "loc") }
        *[other] програму { -brand-product-name }
-    }на другом уређају, ево како их можете преузети овде:
+    } на другом уређају, ево како их можете преузети:
 login-intro-instruction-fxa = Региструјте се или се пријавите на { -fxaccount-brand-name(case: "acc") } на уређају на ком сте сачували лозинке
 login-intro-instruction-fxa-settings = Проверите да ли сте означили поље „Лозинке” у подешавањима { -sync-brand-short-name(case: "gen") }
 about-logins-intro-instruction-help = Посетите <a data-l10n-name="help-link">страницу подршке за { -lockwise-brand-short-name }</a>
@@ -331,9 +330,7 @@ about-logins-import-dialog-items-modified =
     }
 about-logins-import-dialog-items-no-change =
     { $count ->
-        [one] <span>Пронађен дупликат пријава:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(није увезено)</span>
-        [few] <span>Пронађена дупликата пријава:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(није увезено)</span>
-       *[other] <span>Пронађено дупликата пријава:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(није увезено)</span>
+       *[other] <span>Пронађено дупликата:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(није увезено)</span>
     }
 about-logins-import-dialog-items-error =
     { $count ->
@@ -353,7 +350,6 @@ about-logins-import-dialog-error-unable-to-read-title = Није могуће о
 about-logins-import-dialog-error-unable-to-read-description = Проверите да ли сте изабрали CSV или TSV датотеку.
 about-logins-import-dialog-error-no-logins-imported = Ниједна пријава није увезена
 about-logins-import-dialog-error-learn-more = Сазнајте више
-about-logins-import-dialog-error-try-again = Покушај поново…
 about-logins-import-dialog-error-try-import-again = Покушај увоз поново…
 about-logins-import-dialog-error-cancel = Откажи
 about-logins-import-report-title = Сажетак увоза

@@ -26,6 +26,7 @@ search-input-box =
             [windows] اختیارات میں تلاش کریں
            *[other] ترجیحات میں تلاش کریں
         }
+settings-page-title = سیٹنگ
 managed-notice = آپ کا براؤزر آپ کی تنظیم کے زیر انتظام ہے۔
 category-list =
     .aria-label = زمرہ جات
@@ -44,6 +45,9 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = سنک
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = { -brand-short-name } تجربات
 category-experimental =
     .tooltiptext = { -brand-short-name } تجربات
@@ -433,6 +437,8 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = بہترین سائٹیں
 home-prefs-topsites-description = سائٹس جو آُپ سب سے زیادہ ملاحظہ کرتے ہیں
+home-prefs-shortcuts-header =
+    .label = تیز راہ
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -536,6 +542,8 @@ containers-new-tab-check =
     .accesskey = S
 containers-preferences-button =
     .label = ترجیحات
+containers-settings-button =
+    .label = سیٹنگز
 containers-remove-button =
     .label = ہٹائیں
 
@@ -546,6 +554,9 @@ sync-signedout-caption = اپنی ویب اپنے ساتھ رکھیں
 sync-signedout-description = اپنے تمام ڈیوائس اپنے بک مارکس، سابقات، ٹیب، پاس ورڈ، ایڈ اون، اور ترجیحات کو ہم وقت ساز کریں۔
 sync-signedout-account-signin2 =
     .label = { -sync-brand-short-name } میں سائن ان کریں
+    .accesskey = i
+sync-signedout-account-signin3 =
+    .label = سنک کرنے کے لئے سائن ان کریں…
     .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -585,6 +596,9 @@ prefs-syncing-off = سنکنگ بند ہے
 prefs-sync-setup =
     .label = { -sync-brand-short-name } مرتب کریں۔
     .accesskey = S
+prefs-sync-turn-on-syncing =
+    .label = سنک چالو کریں…
+    .accesskey = s
 prefs-sync-now =
     .labelnotsyncing = ابھی ہمہ وقت سازی کریں
     .accesskeynotsyncing = ن
@@ -605,6 +619,7 @@ sync-currently-syncing-prefs =
         [windows] اختیارات
        *[other] ترجیحات
     }
+sync-currently-syncing-settings = سیٹنگز
 sync-change-options =
     .label = تبدیل…
     .accesskey = چ
@@ -822,6 +837,10 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = ٹیب کھولیے
     .accesskey = O
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = تیز راہ
+    .accesskey = S
 addressbar-locbar-topsites-option =
     .label = مقبول سائٹس
     .accesskey = T
@@ -1003,6 +1022,9 @@ space-alert-over-5gb-pref-button =
 space-alert-under-5gb-ok-button =
     .label = ٹھیک ہے مجھے سمجھ آگئی ہے
     .accesskey = K
+space-alert-over-5gb-settings-button =
+    .label = سیٹنگز کھولیں
+    .accesskey = O
 
 ## Privacy Section - HTTPS-Only
 

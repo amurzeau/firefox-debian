@@ -33,7 +33,7 @@
 <!ENTITY authMethod.accesskey "θ">
 <!ENTITY leaveOnServer.label "Διατήρηση μηνυμάτων στον διακομιστή">
 <!ENTITY leaveOnServer.accesskey "τ">
-<!ENTITY headersOnly.label "Λήψη κεφαλίδων μόνο">
+<!ENTITY headersOnly.label "Λήψη μόνο κεφαλίδων">
 <!ENTITY headersOnly.accesskey "φ">
 <!ENTITY deleteByAgeFromServer.label "Για το περισσότερο">
 <!ENTITY deleteByAgeFromServer.accesskey "π">
@@ -60,7 +60,7 @@
     maxMessengerStart.label will be followed by maxMessagesEnd.label with the number
     of messages between them
 -->
-<!ENTITY maxMessagesStart.label "Ερώτηση πριν τη λήψη περισσοτέρων από">
+<!ENTITY maxMessagesStart.label "Ερώτηση πριν από τη λήψη περισσοτέρων από">
 <!ENTITY maxMessagesStart.accesskey "ρ">
 <!-- LOCALIZATION NOTE (maxMessagesEnd.label) : see note for maxMessagesStart.label -->
 <!ENTITY maxMessagesEnd.label "μηνύματα">
@@ -71,8 +71,8 @@
 <!ENTITY abbreviate.label "Προβολή ονομάτων ομάδων συζήτησης σαν:">
 <!ENTITY abbreviateOn.label "Ολόκληρα τα ονόματα (για παράδειγμα, 'netscape.public.mozilla.mail-news')">
 <!ENTITY abbreviateOff.label "Συντόμευση ονομάτων (π.χ., 'n.p.m.mail-news')">
-<!ENTITY advancedButton.label "Για προχωρημένους…">
-<!ENTITY advancedButton.accesskey "χ">
+<!ENTITY advancedButton.label "Σύνθετα…">
+<!ENTITY advancedButton.accesskey "θ">
 <!ENTITY serverDefaultCharset2.label "Προεπιλεγμένη κωδικοποίηση χαρακτήρων:">
 <!ENTITY localPath1.label "Τοπικός φάκελος:">
 <!ENTITY localFolderPicker.label "Επιλογή τοπικού καταλόγου">

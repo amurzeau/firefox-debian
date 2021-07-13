@@ -8,6 +8,8 @@
 newtab-page-title = نیا ٹیب
 newtab-settings-button =
     .title = اپنے نئے ٹیب کہ صفحہ کی تخصیص کریں
+newtab-personalize-dialog-label =
+    .aria-label = ‏‏تخصیص کریں
 
 ## Search box component.
 
@@ -16,11 +18,15 @@ newtab-search-box-search-button =
     .title = تلاش
     .aria-label = تلاش
 newtab-search-box-search-the-web-text = ويب پر تلاش کريں
+newtab-search-box-handoff-text-no-engine = پتہ تلاش یا داخل کریں
+newtab-search-box-handoff-input-no-engine =
+    .placeholder = تلاش کریں یا پتہ داخل کریں
+    .title = تلاش کریں یا پتہ داخل کریں
+    .aria-label = تلاش کریں یا پتہ داخل کریں
 newtab-search-box-search-the-web-input =
     .placeholder = ويب پر تلاش کريں
     .title = ويب پر تلاش کريں
     .aria-label = ويب پر تلاش کريں
-newtab-search-box-text = ويب پر تلاش کريں
 newtab-search-box-input =
     .placeholder = ويب پر تلاش کريں
     .aria-label = ويب پر تلاش کريں
@@ -203,6 +209,11 @@ newtab-error-fallback-refresh-link = دوبارہ کوشش کرنے کے لئے 
 ## Customization Menu
 
 newtab-custom-shortcuts-title = تیز راہ
+newtab-custom-row-selector =
+    { $num ->
+        [one] { $num } قطار
+       *[other] { $num } قطاریں
+    }
 newtab-custom-recent-title = حالیہ سرگرمی
 newtab-custom-close-button = بند کریں
 # For the "Snippets" feature traditionally on about:home.

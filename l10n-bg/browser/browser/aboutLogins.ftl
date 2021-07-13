@@ -70,12 +70,15 @@ about-logins-list-item-vulnerable-password-icon =
 ## Introduction screen
 
 login-intro-heading = Търсите запазените си данни за вход? Настройте { -sync-brand-short-name }.
-about-logins-login-intro-heading-logged-out = Търсите запазените си данни за вход? Настройте { -sync-brand-short-name } или ги внесете.
+about-logins-login-intro-heading-logged-out2 = Търсите запазените си регистрации? Включете синхронизирането или ги внесете.
 about-logins-login-intro-heading-logged-in = Не са намерени синхронизирани регистрации.
 login-intro-description = Ако сте запазили данните си за вход в { -brand-product-name } на друго устройство, ето как да ги вземете тук:
 login-intro-instruction-fxa = Създайте или влезте в своята { -fxaccount-brand-name } на устройството, където са запазени вашите данни за вход
 login-intro-instruction-fxa-settings = Уверете се, че сте отметнали квадратчето за входни данни в настройките на { -sync-brand-short-name }
 about-logins-intro-instruction-help = Посетете <a data-l10n-name="help-link">Поддръжка за { -lockwise-brand-short-name }</a> за повече помощ.
+login-intro-instructions-fxa = Създайте или влезте в своята { -fxaccount-brand-name } на устройството, където са запазени вашите данни за вход
+login-intro-instructions-fxa-settings = Отидете в "Настройки" > Sync > Включване на синхронизиране… Изберете отметката за регистрации и пароли.
+login-intro-instructions-fxa-help = Посетете <a data-l10n-name="help-link">Поддръжка за { -lockwise-brand-short-name }</a> за повече помощ.
 about-logins-intro-import = Ако вашите регистрации са запазени в друг мрежов четец, можете да ги <a data-l10n-name="import-link">внесете във { -lockwise-brand-short-name }</a>.
 about-logins-intro-import2 = Ако вашите данни за вписване се съхраняват извън { -brand-product-name }, можете <a data-l10n-name="import-browser-link">да ги внесете от друг четец</a> или <a data-l10n-name="import-file-link">от файл</a>
 
@@ -85,6 +88,7 @@ login-item-new-login-title = Нова регистрация
 login-item-edit-button = Променяне
 about-logins-login-item-remove-button = Премахване
 login-item-origin-label = Адрес на страницата
+login-item-tooltip-message = Уверете се, че съвпада с точния адрес на страницата, в която влизате.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Потребителско име
@@ -114,7 +118,7 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
-about-logins-edit-login-os-auth-dialog-message-macosx = промени данни за вход
+about-logins-edit-login-os-auth-dialog-message-macosx = прави промени в данни за вход
 # This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = разкрие запазена парола
@@ -186,7 +190,7 @@ about-logins-confirm-export-dialog-title = Изнасяне на регистр�
 about-logins-confirm-export-dialog-message = Вашите пароли ще бъдат запазени като четим текст (например Лош@Пар0ла), така че всеки, който има достъп до изнесения файл ще може да ги види.
 about-logins-confirm-export-dialog-confirm-button = Изнасяне…
 about-logins-alert-import-title = Внасянето е завършено
-about-logins-alert-import-message = Подробен доклад за процеса
+about-logins-alert-import-message = Подробен отчет за внасянето
 confirm-discard-changes-dialog-title = Отказвате се от промените?
 confirm-discard-changes-dialog-message = Незапазените промени ще бъдат изгубени.
 confirm-discard-changes-dialog-confirm-button = Отхвърляне
@@ -269,6 +273,10 @@ about-logins-import-dialog-items-modified =
     { $count ->
        *[other] <span>Обновени регистрации:</span> <span data-l10n-name="count">{ $count }</span>
     }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+       *[other] <span>Дублиращи се регистрации:</span> <span data-l10n-name="count">{ $count }</span><span data-l10n-name="meta">(не са внесени)</span>
+    }
 about-logins-import-dialog-items-error =
     { $count ->
         [one] <span>Грешки:</span> <span data-l10n-name="count">{ $count }</span><span data-l10n-name="meta">(не внесена)</span>
@@ -277,29 +285,56 @@ about-logins-import-dialog-items-error =
 about-logins-import-dialog-done = Готово
 about-logins-import-dialog-error-title = Грешка при внасяне
 about-logins-import-dialog-error-conflicting-values-title = Множество конфликтни стойности за една регистрация
+about-logins-import-dialog-error-conflicting-values-description = Например: множество потребителски имена, пароли, адреси и т.н. за една регистрация.
+about-logins-import-dialog-error-file-format-title = Проблем с формата на файла
+about-logins-import-dialog-error-file-format-description = Неправилна или липсваща заглавна част на колона. Уверете се, че файлът включва колони за потребителско име, парола и адрес.
 about-logins-import-dialog-error-file-permission-title = Грешка при прочитане на файл
 about-logins-import-dialog-error-file-permission-description = { -brand-short-name } няма права за четене върху файла. Променете правата на файла.
 about-logins-import-dialog-error-unable-to-read-title = Грешка при анализ на файл
 about-logins-import-dialog-error-unable-to-read-description = Уверете се, че избраният файл е CSV или TSV.
 about-logins-import-dialog-error-no-logins-imported = Не са внесени регистраци
 about-logins-import-dialog-error-learn-more = Научете повече
-about-logins-import-dialog-error-try-again = Нов опит…
 about-logins-import-dialog-error-try-import-again = Опитайте внасянето отново ...
 about-logins-import-dialog-error-cancel = Отказ
+about-logins-import-report-title = Отчет за внасянето
+about-logins-import-report-description = Регистрации и пароли внесени в { -brand-short-name }.
 #
 # Variables:
 #  $number (number) - The number of the row
 about-logins-import-report-row-index = Ред { $number }
+about-logins-import-report-row-description-no-change = Дублиращи се: точно съвпадение със съществуваща регистрация
+about-logins-import-report-row-description-modified = Обновени съществуващи регистрации
+about-logins-import-report-row-description-added = Добавени нови регистрации
+about-logins-import-report-row-description-error = Грешка: Липсващо поле
 
 ##
 ## Variables:
 ##  $field (String) - The name of the field from the CSV file for example url, username or password
 
+about-logins-import-report-row-description-error-multiple-values = Грешка: Няколко стойности за { $field }
+about-logins-import-report-row-description-error-missing-field = Грешка: Липсва { $field }
 
 ##
 ## Variables:
 ##  $count (number) - The number of affected elements
 
+about-logins-import-report-added =
+    { $count ->
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Добавени нови регистрации</div>
+    }
+about-logins-import-report-modified =
+    { $count ->
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Обновени съществуващи регистрации</div>
+    }
+about-logins-import-report-no-change =
+    { $count ->
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Дублиращи се регистрации</div> <div data-l10n-name="not-imported">(не са внесени)</div>
+    }
+about-logins-import-report-error =
+    { $count ->
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Грешки</div> <div data-l10n-name="not-imported">(не са внесени)</div>
+    }
 
 ## Logins import report page
 
+about-logins-import-report-page-title = Отчет за внасянето

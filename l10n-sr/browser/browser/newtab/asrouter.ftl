@@ -68,7 +68,7 @@ cfr-doorhanger-pintab-description = Брзо приступите најпосе
 cfr-doorhanger-pintab-step1 = Кликните <b>десним тастером</b> на картицу коју желите да закачите.
 cfr-doorhanger-pintab-step2 = Из менија изаберите <b>Закачи картицу</b>.
 cfr-doorhanger-pintab-step3 = Ако је сајт ажуриран, појавиће се плава тачка на закаченој картици.
-cfr-doorhanger-pintab-animation-pause = Заустави
+cfr-doorhanger-pintab-animation-pause = Паузирај
 cfr-doorhanger-pintab-animation-resume = Настави
 
 ## Firefox Accounts Message
@@ -190,7 +190,7 @@ cfr-doorhanger-send-tab-ok-button = Испробај слање картица
 
 ## Firefox Send
 
-cfr-doorhanger-firefox-send-header = Делите овај PDF безбедно
+cfr-doorhanger-firefox-send-header = Безбедно делите овај PDF
 cfr-doorhanger-firefox-send-body = Заштитите важне документе шифровањем с краја на крај и везом који истиче када завршите.
 cfr-doorhanger-firefox-send-ok-button = Испробајте { -send-brand-name(case: "acc") }
     .accesskey = И
@@ -246,13 +246,13 @@ cfr-doorhanger-milestone-ok-button = Прикажи све
 
 cfr-whatsnew-lockwise-header = Лако правите сигурне лозинке
 cfr-whatsnew-lockwise-body = Није лако смислити јединствене и безбедне лозинке за сваки налог. Зато препустите то { -brand-shorter-name(case: "loc") }; генерисаће се безбедна лозинка када изаберете поље за унос лозинке.
-cfr-whatsnew-lockwise-icon-alt = { -lockwise-brand-short-name } иконица
+cfr-whatsnew-lockwise-icon-alt = Икона { -lockwise-brand-short-name(case: "gen") }
 
 ## Vulnerable Passwords message
 
 cfr-whatsnew-passwords-header = Добијајте упозорења о рањивим лозинкама
 cfr-whatsnew-passwords-body = Хакери знају да људи понављају своје лозинке. Ако сте користили исту лозинку на више страница и једна од њих је била жртва цурења података, видећете упозорење у { -lockwise-brand-short-name }-у са захтевом да измените вашу лозинку на тим страницама.
-cfr-whatsnew-passwords-icon-alt = Иконица рањиве лозинке
+cfr-whatsnew-passwords-icon-alt = Икона рањиве лозинке
 
 ## Picture-in-Picture fullscreen message
 

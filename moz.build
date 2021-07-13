@@ -197,6 +197,8 @@ SPHINX_TREES["crash-reporting"] = "docs/crash-reporting"
 
 SPHINX_TREES["performance"] = "docs/performance"
 
+SPHINX_TREES["metrics"] = "docs/metrics"
+
 if not CONFIG["LIBXUL_SDK"]:
     DIRS += ["debian/extra-stuff"]
 

@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = Roghainnean
 menu-application-services =
     .label = Seirbheisean
 menu-application-hide-this =
@@ -19,6 +21,8 @@ menu-application-hide-other =
     .label = Cuir càch am falach
 menu-application-show-all =
     .label = Seall na h-uile
+menu-application-touch-bar =
+    .label = Gnàthaich am bàr-suathaidh…
 
 ##
 
@@ -109,6 +113,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Lorg san duilleag seo…
     .accesskey = L
+menu-edit-find-in-page =
+    .label = Lorg air an duilleag…
+    .accesskey = L
 menu-edit-find-again =
     .label = Lorg a-rithist
     .accesskey = g
@@ -126,6 +133,9 @@ menu-view-toolbars-menu =
     .accesskey = N
 menu-view-customize-toolbar =
     .label = Gnàthaich…
+    .accesskey = c
+menu-view-customize-toolbar2 =
+    .label = Gnàthaich am bàr-inneal…
     .accesskey = c
 menu-view-sidebar =
     .label = Am bàr-taoibh
@@ -163,6 +173,9 @@ menu-view-page-basic-style =
 menu-view-charset =
     .label = Còdachadh teacsa
     .accesskey = C
+menu-view-repair-text-encoding =
+    .label = Càraich còdachadh an teacsa
+    .accesskey = c
 
 ## These should match what Safari and other Apple applications
 ## use on macOS.
@@ -205,6 +218,8 @@ menu-history-undo-menu =
     .label = Tabaichean a dhùin thu o chionn ghoirid
 menu-history-undo-window-menu =
     .label = Uinneagan a dhùin thu o chionn ghoirid
+menu-history-reopen-all-tabs = Ath-fhosgail gach taba
+menu-history-reopen-all-windows = Ath-fhosgail gach uinneag
 
 ## Bookmarks Menu
 
@@ -215,12 +230,16 @@ menu-bookmarks-show-all =
     .label = Seall a h-uile comharra-lìn
 menu-bookmark-this-page =
     .label = Cruthaich comharra-lìn dhan duilleag seo
+menu-bookmarks-manage =
+    .label = Stiùirich na comharran-lìn
+menu-bookmark-current-tab =
+    .label = Dèan comharra-lìn dhen taba làithreach
 menu-bookmark-edit =
     .label = Deasaich an comharra-lìn seo
 menu-bookmarks-all-tabs =
     .label = Dèan comharra-lìn de gach taba…
 menu-bookmarks-toolbar =
-    .label = Bàr nan comharra-lìn
+    .label = Bàr nan comharran-lìn
 menu-bookmarks-other =
     .label = Comharran-lìn eile
 menu-bookmarks-mobile =
@@ -331,6 +350,12 @@ menu-help-keyboard-shortcuts =
 menu-help-troubleshooting-info =
     .label = Taic le duilgheadasan
     .accesskey = T
+menu-get-help =
+    .label = Faigh cobhair
+    .accesskey = h
+menu-help-more-troubleshooting-info =
+    .label = Barrachd fiosrachaidh mu fhuasgladh air duilgheadasan
+    .accesskey = B
 menu-help-report-site-issue =
     .label = Dèan aithris air duilgheadas leis an làrach...
 menu-help-feedback-page =
@@ -342,6 +367,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Ath-thòisich leis na tuilleadan an comas
     .accesskey = t
+menu-help-enter-troubleshoot-mode2 =
+    .label = Modh fuasglaidh air duilgheadasan…
+    .accesskey = M
+menu-help-exit-troubleshoot-mode =
+    .label = Cuir am modh fuasglaidh air duilgheadasan dheth
+    .accesskey = m
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

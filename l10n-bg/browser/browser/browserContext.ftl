@@ -90,6 +90,9 @@ toolbar-button-stop-reload =
 
 ## Firefox Account Button
 
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -106,11 +109,17 @@ main-context-menu-bookmark-add =
     .accesskey = м
     .tooltiptext = Отмятане на страницата
 # This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Отмятане на страница
+    .accesskey = м
+# This menuitem is only visible on macOS
 # Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
 # so should probably have the same access key if possible.
 main-context-menu-bookmark-edit-mac =
     .label = Промяна на отметка
-    .accesskey = П
+    .accesskey = м
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -367,9 +376,9 @@ main-context-menu-use-saved-password =
 main-context-menu-suggest-strong-password =
     .label = Предлагане на добра парола…
     .accesskey = а
-main-context-menu-manage-logins =
+main-context-menu-manage-logins2 =
     .label = Управление на регистрации…
-    .accesskey = р
+    .accesskey = У
 main-context-menu-keyword =
     .label = Добавяне на ключова дума за търсене…
     .accesskey = к
@@ -413,6 +422,9 @@ main-context-menu-view-selection-source =
     .label = Изходен код на избраното
     .accesskey = к
 main-context-menu-take-screenshot =
+    .label = Снимка на екрана
+    .accesskey = е
+main-context-menu-take-frame-screenshot =
     .label = Снимка на екрана
     .accesskey = е
 main-context-menu-view-page-source =

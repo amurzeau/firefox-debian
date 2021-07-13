@@ -7,10 +7,10 @@ Subject: Allow to build with cargo in Debian unstable
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/build/moz.configure/rust.configure b/build/moz.configure/rust.configure
-index e3e645c..256691c 100644
+index 1650a22..5d92fc7 100644
 --- a/build/moz.configure/rust.configure
 +++ b/build/moz.configure/rust.configure
-@@ -165,7 +165,7 @@ def rust_compiler(rustc_info, cargo_info):
+@@ -171,7 +171,7 @@ def rust_compiler(rustc_info, cargo_info):
              )
          )
      rustc_min_version = Version(MINIMUM_RUST_VERSION)

@@ -279,9 +279,24 @@ mr1-onboarding-reduce-motion-button-label = Poista animaatiot käytöstä
 ## match the OS' application context menu item action where Windows uses "pin"
 ## and "taskbar" while macOS "keep" and "Dock" (proper noun).
 
+# Title used on welcome page when Firefox is not pinned
+mr1-onboarding-pin-header =
+    { PLATFORM() ->
+        [macos] Pidä { -brand-short-name } Dockissa, niin saat sen auki nopeasti
+       *[other] Kiinnitä { -brand-short-name } tehtäväpalkkiin, niin saat sen auki nopeasti
+    }
+# Primary button string used on welcome page when Firefox is not pinned.
+mr1-onboarding-pin-primary-button-label =
+    { PLATFORM() ->
+        [macos] Pidä Dockissa
+       *[other] Kiinnitä tehtäväpalkkiin
+    }
 
 ## Multistage MR1 onboarding strings (about:welcome pages)
 
+# This string will be used on welcome page primary button label
+# when Firefox is both pinned and default
+mr1-onboarding-get-started-primary-button-label = Aloita
 mr1-onboarding-welcome-header =
     { -brand-short-name.case-status ->
         [with-cases] Tervetuloa { -brand-short-name(case: "illative") }
@@ -299,6 +314,7 @@ mr1-onboarding-sign-in-button-label = Kirjaudu sisään
 ## when Firefox is not default browser
 
 mr1-onboarding-default-header = Aseta { -brand-short-name } oletukseksi
+mr1-onboarding-default-subtitle = Aseta nopeus, turvallisuus ja yksityisyys automaattiseksi.
 mr1-onboarding-default-primary-button-label = Aseta oletusselaimeksi
 
 ## Multistage MR1 onboarding strings (about:welcome pages)

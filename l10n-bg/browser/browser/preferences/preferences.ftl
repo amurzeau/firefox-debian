@@ -28,7 +28,21 @@ search-input-box =
             [windows] Търсене в настройките
            *[other] Търсене в настройките
         }
+settings-page-title = Настройки
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Търсене на настройки
 managed-notice = Мрежовият четец се управлява от вашето ведомство.
+category-list =
+    .aria-label = Категории
 pane-general-title = Основни
 category-general =
     .tooltiptext = { pane-general-title }
@@ -44,6 +58,17 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Sync
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
+pane-experimental-title = Опити с { -brand-short-name }
+category-experimental =
+    .tooltiptext = Опити с { -brand-short-name }
+pane-experimental-subtitle = Продължете с повишено внимание
+pane-experimental-search-results-header = Опити с { -brand-short-name }: Продължете с повишено внимание
+pane-experimental-reset =
+    .label = Стандартни настройки
+    .accesskey = С
 help-button-label = Поддръжка на { -brand-short-name }
 addons-button-label = Разширения и теми
 focus-search =
@@ -107,6 +132,8 @@ search-results-empty-message =
         [windows] Съжаляваме! В настройките няма резултати за „<span data-l10n-name="query"></span>“.
        *[other] Съжаляваме! В настройките няма резултати за „<span data-l10n-name="query"></span>“.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Съжаляваме! В настройките няма резултати за „<span data-l10n-name="query"></span>“.
 search-results-help-link = Имате нужда от помощ? Посетете <a data-l10n-name="url">поддръжката за { -brand-short-name }</a>
 
 ## General Section
@@ -325,6 +352,8 @@ applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -349,6 +378,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Никога да не прави проверка за обновявания (непрепоръчително)
     .accesskey = Н
+update-application-background-enabled =
+    .label = Когато { -brand-short-name } не е пуснат
+    .accesskey = н
 update-application-warning-cross-user-setting = Тази настройка ще бъде приложена към всички профили в Windows и всички профили на { -brand-short-name }, използващи тази инсталация на { -brand-short-name }.
 update-application-use-service =
     .label = Използване на услуга във фонов режим за инсталиране на обновявания
@@ -362,6 +394,15 @@ update-setting-write-failure-message =
     Поради възникнала грешка { -brand-short-name } не запази промяната.
     
     Обърнете внимание, че задаването на тази настройка за обновяване изисква права за запис във файла по-долу. Вие или системен администратор може да успеете да разрешите проблема, като предоставите на групата потребители пълни права над файла.
+    
+    Във файлa „{ $path }“ не може да бъде записвано.
+update-setting-write-failure-title2 = Грешка при запазване на настройки
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    Поради възникнала грешка { -brand-short-name } не запази промяната. Обърнете внимание, че промяната на тази настройка за обновяване изисква права за запис във файла по-долу. Вие или системния администратор може да успеете да разрешите проблема като предоставите на групата потребители пълни права над този файл.
     
     Във файлa „{ $path }“ не може да бъде записвано.
 update-in-progress-title = Обновяване е в процес на изпълнение
@@ -478,14 +519,23 @@ home-prefs-content-description = Изберете съдържанието, ко
 home-prefs-search-header =
     .label = Търсене в Мрежата
 home-prefs-topsites-header =
-    .label = Често посещавани страници
+    .label = Предпочитани страници
 home-prefs-topsites-description = Най-посещаваните от вас страници
+home-prefs-topsites-by-option-sponsored =
+    .label = Платени препратки
+home-prefs-shortcuts-header =
+    .label = Бързи клавиши
+home-prefs-shortcuts-description = Страници за преглед по-късно
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Спонсорирани препратки
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
     .label = Препоръчано от { $provider }
+home-prefs-recommended-by-description-update = Изключително съдържание от цялата мрежа, подбрано от { $provider }
+home-prefs-recommended-by-description-new = Изключително съдържание, подбрано от { $provider } част от семейството на { -brand-product-name }
 
 ##
 
@@ -503,6 +553,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = Последни изтегляния
 home-prefs-highlights-option-saved-to-pocket =
     .label = Страници, запазени в { -pocket-brand-name }
+home-prefs-recent-activity-header =
+    .label = Последна активност
+home-prefs-recent-activity-description = Избрани страници и съдържание
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -510,6 +563,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = Изрезки
 home-prefs-snippets-description = Новости от { -vendor-short-name } и { -brand-product-name }
+home-prefs-snippets-description-new = Съвети и новини от { -vendor-short-name } и { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -547,8 +601,11 @@ search-show-suggestions-above-history-option =
     .label = Показване на подсказките преди резултатите от историята при търсене от адресната лента
 search-show-suggestions-private-windows =
     .label = Показване на предложенията за търсене при поверително разглеждане
+suggestions-addressbar-settings-generic = Промяна на настройките за други предложения в адресната лента
+suggestions-addressbar-settings-generic2 = Промяна на настройките за други предложения в адресната лента
 search-suggestions-cant-show = Предложения при търсене в резултатите на адресната лента няма да бъдат показвани, защото { -brand-short-name } е настроен да не запазва историята на разглеждане.
 search-one-click-header = Търсене с едно щракване
+search-one-click-header2 = Преки пътища за търсене
 search-one-click-desc = Изберете допълнителни търсещи машини, които да се показват под адресната лента и лентата за търсене при въвеждане на текст.
 search-choose-engine-column =
     .label = Търсеща машина
@@ -560,6 +617,9 @@ search-restore-default =
 search-remove-engine =
     .label = Премахване
     .accesskey = П
+search-add-engine =
+    .label = Добавяне
+    .accesskey = Д
 search-find-more-link = Други търсещи машини
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -571,11 +631,24 @@ search-keyword-warning-bookmark = Избрали сте дума, която в�
 
 ## Containers Section
 
+containers-back-button =
+    .aria-label =
+        { PLATFORM() ->
+            [windows] Към настройките
+           *[other] Към настройките
+        }
+containers-back-button2 =
+    .aria-label = Към настройките
 containers-header = Изолирани раздели
 containers-add-button =
     .label = Нов изолатор
     .accesskey = и
+containers-new-tab-check =
+    .label = Избиране на изолатор за всеки нов раздел
+    .accesskey = р
 containers-preferences-button =
+    .label = Настройки
+containers-settings-button =
     .label = Настройки
 containers-remove-button =
     .label = Премахване
@@ -585,6 +658,13 @@ containers-remove-button =
 
 sync-signedout-caption = Вземете Мрежата със себе си
 sync-signedout-description = Синхронизирайте вашите отметки, история, раздели, добавки и настройки с всички ваши устройства.
+sync-signedout-account-signin2 =
+    .label = Вписване в { -sync-brand-short-name }…
+    .accesskey = и
+sync-signedout-description2 = Синхронизирайте вашите отметки, история, раздели, добавки и настройки с всички ваши устройства.
+sync-signedout-account-signin3 =
+    .label = Вписване в Sync…
+    .accesskey = и
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -624,6 +704,10 @@ prefs-sync-setup =
     .label = Настройка на { -sync-brand-short-name }…
     .accesskey = н
 prefs-sync-offer-setup-label = Синхронизирайте вашите отметки, история, раздели, добавки и настройки с всички ваши устройства.
+prefs-sync-turn-on-syncing =
+    .label = Включване синхронизиране
+    .accesskey = с
+prefs-sync-offer-setup-label2 = Синхронизирайте вашите отметки, история, раздели, добавки и настройки с всички ваши устройства.
 prefs-sync-now =
     .labelnotsyncing = Синхронизиране
     .accesskeynotsyncing = с
@@ -644,6 +728,7 @@ sync-currently-syncing-prefs =
         [windows] Настройки
        *[other] Настройки
     }
+sync-currently-syncing-settings = Настройки
 sync-change-options =
     .label = Променяне…
     .accesskey = П
@@ -691,6 +776,10 @@ sync-engine-prefs =
         }
     .tooltiptext = Променени настройки
     .accesskey = Н
+sync-engine-settings =
+    .label = Настройки
+    .tooltiptext = Променени настройки
+    .accesskey = с
 
 ## The device name controls.
 
@@ -739,6 +828,9 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Използване на главна парола
     .accesskey = г
+forms-primary-pw-use =
+    .label = Използване на главна парола
+    .accesskey = п
 forms-primary-pw-learn-more-link = Научете повече
 # This string uses the former name of the Primary Password feature
 # ("Master Password" in English) so that the preferences can be found
@@ -765,6 +857,7 @@ master-password-os-auth-dialog-message-macosx = създаде главна па
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = създаде основна парола
+master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
 
@@ -849,6 +942,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Управление на права…
     .accesskey = п
+sitedata-cookies-exceptions =
+    .label = Изключения…
+    .accesskey = з
 
 ## Privacy Section - Address Bar
 
@@ -862,6 +958,16 @@ addressbar-locbar-bookmarks-option =
     .accesskey = О
 addressbar-locbar-openpage-option =
     .label = Отворени раздели
+    .accesskey = р
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Бързи клавиши
+    .accesskey = л
+addressbar-locbar-topsites-option =
+    .label = Предпочитани страници
+    .accesskey = с
+addressbar-locbar-engines-option =
+    .label = Търсещи машини
     .accesskey = р
 addressbar-suggestions-settings = Настройки на предложенията от търсещите машини
 
@@ -900,6 +1006,7 @@ content-blocking-all-third-party-cookies = Всички странични би�
 content-blocking-cryptominers = Добиване на криптовалути
 content-blocking-fingerprinters = Снемане на цифров отпечатък
 content-blocking-warning-title = Внимание!
+content-blocking-and-isolating-etp-warning-description = Спирането на проследяване и изолирането на бисквитки може да се повлияе на възможностите на някои страници. Презаредете страница с проследяване, за да зареди цялото съдържание.
 content-blocking-warning-learn-how = Научете как
 content-blocking-reload-description = За да бъдат приложени промените, разделите трябва да бъдат презаредени.
 content-blocking-reload-tabs-button =
@@ -944,6 +1051,9 @@ permissions-location-settings =
     .label = Настройки…
     .accesskey = с
 permissions-xr = Виртуална реалност
+permissions-xr-settings =
+    .label = Настройки…
+    .accesskey = с
 permissions-camera = Камера
 permissions-camera-settings =
     .label = Настройки…
@@ -1066,9 +1176,14 @@ space-alert-under-5gb-ok-button =
     .label = Добре
     .accesskey = д
 space-alert-under-5gb-message = Дисковото пространство достъпно за { -brand-short-name } е на свършване. Съдържанието на страницата може да не се показва правилно. За да оптимално използване на дисковото пространство при сърфиране посетете „Научете повече“.
+space-alert-over-5gb-settings-button =
+    .label = Към Настройки
+    .accesskey = с
 
 ## Privacy Section - HTTPS-Only
 
+httpsonly-header = Режим „само HTTPS“
+httpsonly-learn-more = Научете повече
 
 ## The following strings are used in the Download section of settings
 

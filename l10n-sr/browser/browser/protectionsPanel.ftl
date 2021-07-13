@@ -9,10 +9,10 @@ protections-panel-sitefixedsendreport-label = Страница је поправ
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
 
-protections-popup-footer-protection-label-strict = Строго
-    .label = Строго
-protections-popup-footer-protection-label-custom = Прилагођено
-    .label = Прилагођено
+protections-popup-footer-protection-label-strict = Строга
+    .label = Строга
+protections-popup-footer-protection-label-custom = Прилагођена
+    .label = Прилагођена
 protections-popup-footer-protection-label-standard = Стандардно
     .label = Стандардно
 
@@ -38,7 +38,13 @@ protections-panel-not-blocking-why-etp-off-tooltip = Сви програми з�
 
 ##
 
-protections-panel-no-trackers-found = { -brand-short-name } није уочио познате пратиоце на овој страници.
+protections-panel-no-trackers-found =
+    { -brand-short-name.gender ->
+        [masculine] { -brand-short-name } на овој страници није пронашао
+        [feminine] { -brand-short-name } на овој страници није пронашла
+        [neuter] { -brand-short-name } на овој страници није пронашло
+       *[other] Програм { -brand-short-name } на овој страници није пронашао
+    } познате елементе за праћење.
 protections-panel-content-blocking-tracking-protection = Садржаји који прате
 protections-panel-content-blocking-socialblock = Елементи за праћење са друштвених мрежа
 protections-panel-content-blocking-cryptominers-label = Крипто-рудари

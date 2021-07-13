@@ -3,8 +3,8 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 calendar-ics-file-window-2 =
-    .title = Εισαγωγή συμβάντων ημερολογίου και εργασιών
-calendar-ics-file-dialog-import-event-button-label = Εισαγωγή συμβάντος
+    .title = Εισαγωγή εκδηλώσεων και εργασιών ημερολογίου
+calendar-ics-file-dialog-import-event-button-label = Εισαγωγή εκδήλωσης
 calendar-ics-file-dialog-import-task-button-label = Εισαγωγή εργασίας
 calendar-ics-file-dialog-2 =
     .buttonlabelaccept = Εισαγωγή όλων
@@ -42,4 +42,4 @@ calendar-ics-file-import-errors =
         [one] Αποτυχία εισαγωγής ενός στοιχείου. Ελέγξτε την Κονσόλα σφαλμάτων για λεπτομέρειες.
        *[other] Αποτυχία εισαγωγής { $errorsCount } στοιχείων. Ελέγξτε την Κονσόλα σφαλμάτων για λεπτομέρειες.
     }
-calendar-ics-file-dialog-no-calendars = Δεν υπάρχουν ημερολόγια που μπορούν να εισάγουν συμβάντα ή εργασίες.
+calendar-ics-file-dialog-no-calendars = Δεν υπάρχουν ημερολόγια που μπορούν να εισαγάγουν εκδηλώσεις ή εργασίες.

@@ -55,6 +55,7 @@ app-basics-rosetta = Conversione Rosetta
 app-basics-memory-use = Utilizzo memoria
 app-basics-performance = Prestazioni
 app-basics-service-workers = Service worker registrati
+app-basics-third-party = Moduli di terze parti
 app-basics-profiles = Profili
 app-basics-launcher-process-status = Processo launcher
 app-basics-multi-process-support = Finestre multiprocesso
@@ -383,6 +384,7 @@ fission-status-disabled-by-default = Disattivato per impostaz. predefinita
 fission-status-enabled-by-user-pref = Attivato da utente
 fission-status-disabled-by-user-pref = Disattivato da utente
 fission-status-disabled-by-e10s-other = E10s disattivato
+fission-status-enabled-by-rollout = Attivato da implementazione a fasi
 
 async-pan-zoom = Panoramica/zoom asincroni (APZ)
 apz-none = nessuno

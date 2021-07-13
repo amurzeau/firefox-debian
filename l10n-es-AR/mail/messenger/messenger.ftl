@@ -11,11 +11,26 @@ unread-messages-os-tooltip =
     }
 about-rights-notification-text = { -brand-short-name } es un software gratuito y de código abierto, creado por una comunidad de miles de personas de todo el mundo.
 
+## Content tabs
+
+content-tab-page-loading-icon =
+    .alt = La pagina esta cargando
+content-tab-security-high-icon =
+    .alt = La conexión es segura
+content-tab-security-broken-icon =
+    .alt = La conexión no es segura
+
 ## Toolbar
 
 addons-and-themes-button =
     .label = Complementos y temas
     .tooltip = Administrar complementos
+addons-and-themes-toolbarbutton =
+    .label = Complementos y temas
+    .tooltiptext = Administrar los complementos
+quick-filter-toolbarbutton =
+    .label = Filtro rápido
+    .tooltiptext = Filtrar mensajes
 redirect-msg-button =
     .label = Redirigir
     .tooltiptext = Redirigir el mensaje seleccionado
@@ -109,3 +124,9 @@ message-header-address-not-in-address-book-icon =
 addon-removal-title = ¿Eliminar { $name }?
 addon-removal-confirmation-button = Eliminar
 addon-removal-confirmation-message = ¿Eliminar { $name }, así como su configuración y datos de { -brand-short-name }?
+caret-browsing-prompt-title = Navegación con cursor
+caret-browsing-prompt-text = Presionando F7 se habilita o deshabilita la navegación con cursor. Esta característica coloca un cursor móvil en algún contenido, permitiendo seleccionar texto con el teclado. ¿Desea habilitar la navegación con cursor?
+caret-browsing-prompt-check-text = No preguntar de nuevo.
+repair-text-encoding-button =
+    .label = Reparar codificación de texto
+    .tooltiptext = Adivinar la codificación correcta del texto desde el mensaje

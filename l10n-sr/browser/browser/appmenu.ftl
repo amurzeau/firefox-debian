@@ -28,7 +28,7 @@ appmenuitem-new-tab =
 appmenuitem-new-window =
     .label = Нови прозор
 appmenuitem-new-private-window =
-    .label = Нови приватан прозор
+    .label = Нови приватни прозор
 appmenuitem-passwords =
     .label = Лозинке
 appmenuitem-addons-and-themes =
@@ -57,7 +57,7 @@ appmenuitem-zoom-enlarge =
 appmenuitem-zoom-reduce =
     .label = Смањите
 appmenuitem-fullscreen =
-    .label = Користи цео екран
+    .label = Преко целог екрана
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
@@ -76,7 +76,7 @@ appmenu-fxa-header2 = { -fxaccount-brand-name }
 appmenu-fxa-last-sync = Последња синхронизација { $time }
     .label = Последња синхронизација { $time }
 appmenu-fxa-sync-and-save-data2 = Синхронизуј и сачувај податке
-appmenu-fxa-signed-in-label = Пријави ме
+appmenu-fxa-signed-in-label = Пријава
 appmenu-fxa-setup-sync =
     .label = Укључи синхронизацију
 appmenu-fxa-show-more-tabs = Прикажи још картица
@@ -101,7 +101,7 @@ profiler-popup-title =
 profiler-popup-reveal-description-button =
     .aria-label = Откриј више информација
 profiler-popup-description-title =
-    .value = Снимите, анализирајте, делите
+    .value = Снимите, анализирајте и делите
 profiler-popup-description = Сарађујте на решавању проблема са перформансама дељењем профила са својим тимом.
 profiler-popup-learn-more = Сазнајте више
 profiler-popup-settings =
@@ -173,7 +173,7 @@ appmenu-help-more-troubleshooting-info =
     .label = Подаци о решавању проблема
     .accesskey = д
 appmenu-help-report-site-issue =
-    .label = Пријави проблем на сајту…
+    .label = Пријави проблем са сајтом…
 appmenu-help-feedback-page =
     .label = Пошаљи повратне информације
     .accesskey = ш
@@ -183,10 +183,10 @@ appmenu-help-feedback-page =
 
 appmenu-help-enter-troubleshoot-mode2 =
     .label = Режим за решавање проблема…
-    .accesskey = ж
+    .accesskey = Р
 appmenu-help-exit-troubleshoot-mode =
     .label = Искључи режим за решавање проблема
-    .accesskey = ж
+    .accesskey = р
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

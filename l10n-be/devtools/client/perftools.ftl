@@ -75,16 +75,39 @@ perftools-button-edit-settings = Змянiць налады...
 
 perftools-thread-gecko-main =
     .title = Асноўныя працэсы як для бацькоўскага працэсу, так і для працэсаў зместу
+perftools-thread-compositor =
+    .title = Спалучае розныя расфарбаваныя элементы на старонцы
+perftools-thread-dom-worker =
+    .title = Абслугоўвае web workers ды service workers
+perftools-thread-renderer =
+    .title = Калі WebRender уключаны, гэты паток выконвае выклікі OpenGL
+perftools-thread-render-backend =
+    .title = Паток WebRender RenderBackend
+perftools-thread-paint-worker =
+    .title = Паток, у якім адбываецца прамалёўка, калі ўключана маляванне па-за асноўным патокам
+perftools-thread-style-thread =
+    .title = Вылічэнне стыляў падзелена на некалькі патокаў
+pref-thread-stream-trans =
+    .title = Сеткавы патокавы транспарт
+perftools-thread-socket-thread =
+    .title = Паток, у якім сеткавы код выконвае любыя выклікі, якія блакуюць сокеты
+perftools-thread-img-decoder =
+    .title = Патокі дэкадавання відарысаў
+perftools-thread-dns-resolver =
+    .title = У гэтым патоку адбываецца вызначэнне DNS
+perftools-thread-js-helper =
+    .title = Фонавая праца JS-рухавіка, напрыклад, кампіляцыя па-за асноўным патокам
 
 ##
 
 perftools-record-all-registered-threads = Iгнараваць абранае вышэй і запісваць усе зарэгістраваныя патокі
+perftools-tools-threads-input-label =
+    .title = Гэтыя назвы патокаў уяўляюць сабой пералік, падзелены коскамі, які ўжываецца для ўключэння прафілявання патокаў у прафайлеры. Назва можа толькі часткова адпавядаць назве патоку для ўключэння. Прабелы ўлічваюцца.
 
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
 ## preferences are true.
 
--profiler-brand-name = Прафайлер Firefox
 perftools-onboarding-message = <b>Новае</b>: { -profiler-brand-name } цяпер інтэграваны ў Інструменты распрацоўшчыка. <a>Даведайцеся больш</a> пра гэты новы магутны інструмент.
 # `options-context-advanced-settings` is defined in toolbox-options.ftl
 perftools-onboarding-reenable-old-panel = (На працягу абмежаванага часу вы можаце атрымаць доступ да арыгінальнай панэлі Прадукцыйнасці праз <a>{ options-context-advanced-settings }</a>)

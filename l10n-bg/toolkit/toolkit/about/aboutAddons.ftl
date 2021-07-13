@@ -3,13 +3,14 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 addons-window =
-    .title = Управление на добавките
-addons-page-title = Управление на добавките
+    .title = Управление на добавки
+addons-page-title = Управление на добавки
 search-header =
     .placeholder = търсене в addons.mozilla.org
     .searchbuttonlabel = Търсене
 search-header-shortcut =
     .key = f
+list-empty-get-extensions-message = Изтеглете разширения и теми от <a data-l10n-name="get-extensions">{ $domain }</a>
 list-empty-installed =
     .value = Няма инсталирани добавки от този вид
 list-empty-available-updates =
@@ -34,6 +35,9 @@ sidebar-preferences-button-title =
             [windows] Настройки на { -brand-short-name }
            *[other] Настройки на { -brand-short-name }
         }
+addons-settings-button = Настройки на { -brand-short-name }
+sidebar-settings-button-title =
+    .title = Настройки на { -brand-short-name }
 show-unsigned-extensions-button =
     .label = Някои разширения не можаха да бъдат проверени
 show-all-extensions-button =
@@ -92,8 +96,10 @@ detail-private-browsing-label = Работa в поверителни прозо
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
 # cannot be overridden by the user.
 detail-private-disallowed-label = Не позволено в поверителни прозорци
+detail-private-disallowed-description2 = Разширението не работи докато разглеждате поверително. <a data-l10n-name="learn-more">Научете повече</a>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Изисква достъп до поверителни прозорци
+detail-private-required-description2 = Разширението има достъп до дейностите ви докато разглеждате поверително. <a data-l10n-name="learn-more">Научете повече</a>
 detail-private-browsing-on =
     .label = Разрешаване
     .tooltiptext = Включване при поверително разглеждане
@@ -229,6 +235,7 @@ shortcuts-no-addons = Нямате включени разширения.
 shortcuts-no-commands = Следните разширения нямат клавишни комбинации:
 shortcuts-input =
     .placeholder = Изберете комбинация
+shortcuts-browserAction2 = Изпълняване на действието на бутона на лентата
 shortcuts-pageAction = Изпълняване на действието със страницата
 shortcuts-sidebarAction = Превключване на страничната лента
 shortcuts-modifier-mac = Включване на Ctrl, Alt, или ⌘
@@ -236,6 +243,12 @@ shortcuts-modifier-other = Включване на Ctrl или Alt
 shortcuts-invalid = Недействителна комбинация
 shortcuts-letter = Въведете буква
 shortcuts-system = Не може да презапишете клавишна комбинация на { -brand-short-name }
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Дублиране на комбинация
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = Комбинацията { $shortcut } се използва на повече от едно място. Дублиране на клавишни комбинации могат да имат  поведение.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -294,6 +307,10 @@ remove-addon-button = Премахване
 remove-addon-disabled-button = Не може да бъде премахнато <a data-l10n-name="link"> Защо?</a>
 disable-addon-button = Изключване
 enable-addon-button = Включване
+# This is used for the toggle on the extension card, it's a checkbox and this
+# is always its label.
+extension-enable-addon-button-label =
+    .aria-label = Включване
 preferences-addon-button =
     { PLATFORM() ->
         [windows] Настройки
@@ -302,6 +319,17 @@ preferences-addon-button =
 details-addon-button = Подробности
 release-notes-addon-button = Бележки към изданието
 permissions-addon-button = Права
+extension-enabled-heading = Включени
+extension-disabled-heading = Изключени
+theme-enabled-heading = Включени
+theme-disabled-heading = Изключени
+plugin-enabled-heading = Включени
+plugin-disabled-heading = Изключени
+dictionary-enabled-heading = Включени
+dictionary-disabled-heading = Изключени
+locale-enabled-heading = Включени
+locale-disabled-heading = Изключени
+ask-to-activate-button = Питане за включване
 always-activate-button = Винаги включено
 never-activate-button = Винаги изключено
 addon-detail-author-label = Автор
@@ -309,6 +337,8 @@ addon-detail-version-label = Издание
 addon-detail-last-updated-label = Последно обновяване
 addon-detail-homepage-label = Страница
 addon-detail-rating-label = Оценка
+# Message for add-ons with a staged pending update.
+install-postponed-message = Разширението ще бъде обновено при рестарт на { -brand-short-name }
 install-postponed-button = Обновяване
 # The average rating that the add-on has received.
 # Variables:
@@ -355,6 +385,14 @@ addon-detail-private-browsing-disallow = Забраняване
 addon-badge-recommended2 =
     .title = { -brand-product-name } препоръчва само разширения, които отговарят на нашите стандарти за сигурност и производителност
     .aria-label = { addon-badge-recommended2.title }
+# We hard code "Mozilla" in the string below because the extensions are built
+# by Mozilla and we don't want forks to display "by Fork".
+addon-badge-line3 =
+    .title = Официално разширение то Mozilla. Отговаря на стандартите за сигурност и производителност
+    .aria-label = { addon-badge-line3.title }
+addon-badge-verified2 =
+    .title = Това разширение е прегледано и отговаря на нашите стандарти за сигурност и производителност
+    .aria-label = { addon-badge-verified2.title }
 
 ##
 
@@ -363,6 +401,8 @@ recent-updates-heading = Последни обновявания
 release-notes-loading = Зареждане…
 release-notes-error = За съжаление, зареждането на бележките към изданието е неуспешно.
 addon-permissions-empty = Разширението не изисква никакви права
+addon-permissions-required = Необходими права за основни възможности:
+addon-permissions-optional = Незадължителни права за допълнителни възможности:
 addon-permissions-learnmore = Научете повече за правата
 recommended-extensions-heading = Препоръчани разширения
 recommended-themes-heading = Препоръчани теми
@@ -372,11 +412,12 @@ recommended-theme-1 = Чувствате се креативни? <a data-l10n-n
 
 ## Page headings
 
-extension-heading = Управление на добавките
+extension-heading = Управление на добавки
 theme-heading = Управление на теми
 plugin-heading = Управление на приставки
 dictionary-heading = Управление на речници
 locale-heading = Управление на езици
+updates-heading = Управление на обновявания
 discover-heading = Персонализирайте вашия { -brand-short-name }
 shortcuts-heading = Управление на клавишните комбинации на разширението
 default-heading-search-label = Намерете още добавки

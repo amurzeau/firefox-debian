@@ -7,10 +7,10 @@ Subject: Allow to build with older versions of nodejs 10
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/python/mozbuild/mozbuild/nodeutil.py b/python/mozbuild/mozbuild/nodeutil.py
-index 5856227..38ca679 100644
+index 7ddd74a..7325576 100644
 --- a/python/mozbuild/mozbuild/nodeutil.py
 +++ b/python/mozbuild/mozbuild/nodeutil.py
-@@ -13,7 +13,7 @@ from mozboot.util import get_state_dir
+@@ -13,7 +13,7 @@ from mozboot.util import get_tools_dir
  from mozfile import which
  from six import PY3
  

@@ -16,11 +16,14 @@ upgrade-dialog-new-subtitle = Yettufeṣṣel i wakken ak·akem-yawi sani tebɣi
 # should stay inside the span.
 upgrade-dialog-new-alt-subtitle = Bdu s tririt <span data-l10n-name="zap">{ -brand-short-name } s usiti kan
 upgrade-dialog-new-item-menu-title = Afeggag n yifecka d wumuɣen ttwasifssen
+upgrade-dialog-new-item-menu-description = Izeggir deg wayen yesεan azal i wakken ad tafeḍ ayen iɣef tettnadiḍ.
 upgrade-dialog-new-item-tabs-title = Accaren atraren
+upgrade-dialog-new-item-icons-title = Tignitin timaynutin d yiznan ibanen ugar
 upgrade-dialog-new-primary-primary-button = Err { -brand-short-name } d iminig-iw agejdan
     .title = Yesbadu { -brand-short-name } d iminig amezwer yerna isneteḍ-it ɣer ufaggag n twuriwin
 upgrade-dialog-new-primary-default-button = Err { -brand-short-name } d iminig-iw amezwer
 upgrade-dialog-new-primary-pin-button = Rzi ɣer { -brand-short-name } ufaggag-iw n twuriwin
+upgrade-dialog-new-primary-pin-alt-button = Senteḍ ɣer ufaggag n twuriwin
 upgrade-dialog-new-primary-theme-button = Fren asentel
 upgrade-dialog-new-secondary-button = Mačči tura
 # This string is only shown on Windows 7, where we intentionally suppress the
@@ -33,6 +36,17 @@ upgrade-dialog-new-primary-win7-button = Ih, awi-t!
 ## match the OS' application context menu item action where Windows uses "pin"
 ## and "taskbar" while macOS "keep" and "Dock" (proper noun).
 
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-pin-title =
+    { PLATFORM() ->
+        [macos] Eǧǧ { -brand-short-name } deg Dock-inek·inem
+       *[other] Senteḍ { -brand-short-name } ɣef ufeggag n twuriwin
+    }
+upgrade-dialog-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Eǧǧ-it deg Dock
+       *[other] Senteḍ ɣer ufaggag n twuriwin
+    }
 upgrade-dialog-pin-secondary-button = Mačči tura
 
 ## Default browser screen
@@ -41,6 +55,8 @@ upgrade-dialog-pin-secondary-button = Mačči tura
 upgrade-dialog-default-title = Err { -brand-short-name } diminig-ik·im amezwer?
 upgrade-dialog-default-subtitle = Inig yal tikkelt s urured, s uḍman d tbaḍnit.
 upgrade-dialog-default-primary-button = Sbadu-t d iminig amezwer
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-default-title-2 = Err { -brand-short-name } d amezwer-inek·inem
 upgrade-dialog-default-primary-button-2 = Err-it d iminig amezwer
 upgrade-dialog-default-secondary-button = Mačči tura
 

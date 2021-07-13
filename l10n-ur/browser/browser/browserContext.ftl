@@ -88,6 +88,12 @@ toolbar-button-stop =
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
 
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
+
 ## Save Page
 
 main-context-menu-page-save =
@@ -102,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = یہ صفحہ نشان زد کریں
     .accesskey = m
     .tooltiptext = یہ صفحہ نشان زد کریں
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = صفحہ بکمارک کریں
+    .accesskey = m
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = بُک مارک تدوین کریں
+    .accesskey = m
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -136,6 +154,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = یہ ربط نشان زد کریں
     .accesskey = L
+main-context-menu-bookmark-link =
+    .label = بک مارک ربط
+    .accesskey = B
 main-context-menu-save-link =
     .label = ربط محفوظ کریں بطور ...
     .accesskey = k
@@ -158,6 +179,9 @@ main-context-menu-copy-email =
 main-context-menu-copy-link =
     .label = ربط محل وقوع نقل کریں
     .accesskey = a
+main-context-menu-copy-link-simple =
+    .label = ربط نقل کریں
+    .accesskey = L
 
 ## Media (video/audio) controls
 ##
@@ -200,6 +224,19 @@ main-context-menu-media-play-speed-faster =
 main-context-menu-media-play-speed-fastest =
     .label = Ludicrous (2×)
     .accesskey = L
+main-context-menu-media-play-speed-2 =
+    .label = رفتار
+    .accesskey = d
+main-context-menu-media-play-speed-slow-2 =
+    .label = 0.5×
+main-context-menu-media-play-speed-normal-2 =
+    .label = 1.0×
+main-context-menu-media-play-speed-fast-2 =
+    .label = 1.25×
+main-context-menu-media-play-speed-faster-2 =
+    .label = 1.5×
+main-context-menu-media-play-speed-fastest-2 =
+    .label = 2×
 main-context-menu-media-loop =
     .label = دہراؤ
     .accesskey = L
@@ -236,6 +273,12 @@ main-context-menu-image-view =
 main-context-menu-video-view =
     .label = وڈیو دیکھیں
     .accesskey = I
+main-context-menu-image-view-new-tab =
+    .label = تصویر نئی ٹیب میں کھولیں
+    .accesskey = I
+main-context-menu-video-view-new-tab =
+    .label = ویڈیو کو نئے ٹیب میں کھولیں
+    .accesskey = i
 main-context-menu-image-copy =
     .label = نقش نقل کریں
     .accesskey = y
@@ -248,6 +291,12 @@ main-context-menu-video-copy-location =
 main-context-menu-audio-copy-location =
     .label = سمعی محل وقوع نقل کریں
     .accesskey = o
+main-context-menu-image-copy-link =
+    .label = نقش کے رببط کی نقل کریں
+    .accesskey = o
+main-context-menu-audio-copy-link =
+    .label = صوتی لنک کاپی کریں
+    .accesskey = o
 main-context-menu-image-save-as =
     .label = نقش محفوظ کریں بطور ...
     .accesskey = v
@@ -256,6 +305,9 @@ main-context-menu-image-email =
     .accesskey = g
 main-context-menu-image-set-as-background =
     .label = ڈیسک ٹاپ پس منظر کے طور پر سیٹ کریں ...
+    .accesskey = S
+main-context-menu-image-set-image-as-background =
+    .label = نقش کو ڈیسک ٹاپ پس منظر کے طور پر سیٹ کریں ...
     .accesskey = S
 main-context-menu-image-info =
     .label = صفحہ معلومات نظارہ کریں
@@ -271,6 +323,9 @@ main-context-menu-audio-save-as =
     .accesskey = v
 main-context-menu-video-image-save-as =
     .label = سنیپ شاٹ محفوظ کریں بطور…
+    .accesskey = S
+main-context-menu-video-take-snapshot =
+    .label = اسنیپ شاٹ لیں…
     .accesskey = S
 main-context-menu-video-email =
     .label = وڈیو ای میل کریں…
@@ -301,9 +356,21 @@ main-context-menu-generate-new-password =
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
+main-context-menu-use-saved-login =
+    .label = محفوظ شدہ  لاگ ان کا استعمال کریں
+    .accesskey = p
+main-context-menu-use-saved-password =
+    .label = محفوظ شدہ پاس ورڈ استعمال کریں
+    .accesskey = o
 
 ##
 
+main-context-menu-suggest-strong-password =
+    .label = مضبوط پاس ورڈ تجویز کریں…
+    .accesskey = S
+main-context-menu-manage-logins2 =
+    .label = لاگ ان منظم کریں
+    .accesskey = M
 main-context-menu-keyword =
     .label = اس تلاش کے لیے کلیدی لفظ ڈالیں…
     .accesskey = K
@@ -340,9 +407,18 @@ main-context-menu-frame-view-source =
 main-context-menu-frame-view-info =
     .label = فریم معلومات نظارہ کریں
     .accesskey = I
+main-context-menu-print-selection =
+    .label = منتخب شدہ پرنٹ کریں
+    .accesskey = r
 main-context-menu-view-selection-source =
     .label = انتخاب ماخذ نظارہ کریں
     .accesskey = e
+main-context-menu-take-screenshot =
+    .label = ایک سکرین شاٹ لیں
+    .accesskey = T
+main-context-menu-take-frame-screenshot =
+    .label = ایک سکرین شاٹ لیں
+    .accesskey = o
 main-context-menu-view-page-source =
     .label = صفحہ ماخذ نظارہ کریں
     .accesskey = V
@@ -357,6 +433,9 @@ main-context-menu-bidi-switch-page =
     .accesskey = D
 main-context-menu-inspect-element =
     .label = عناصر چیک کریں
+    .accesskey = Q
+main-context-menu-inspect =
+    .label = تحقیق
     .accesskey = Q
 main-context-menu-inspect-a11y-properties =
     .label = رسائی کی خصوصیات کا معائنہ کریں

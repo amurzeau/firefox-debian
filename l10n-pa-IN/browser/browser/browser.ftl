@@ -181,8 +181,6 @@ page-action-send-tabs-urlbar =
             [one] ਟੈਬ ਡਿਵਾਈਸ 'ਤੇ ਭੇਜੋ
            *[other] { $tabCount } ਟੈਬਾਂ ਡਿਵਾਈਸ 'ਤੇ ਭੇਜੋ
         }
-page-action-pocket-panel =
-    .label = ਸਫ਼ੇ ਨੂੰ { -pocket-brand-name } ਵਿੱਚ ਸੰਭਾਲੋ
 page-action-copy-url-panel =
     .label = ਲਿੰਕ ਨੂੰ ਕਾਪੀ ਕਰੋ
 page-action-copy-url-urlbar =
@@ -447,6 +445,8 @@ popup-select-microphone-device =
     .accesskey = M
 popup-select-microphone-icon =
     .tooltiptext = ਮਾਈਕਰੋਫ਼ੋਨ
+popup-select-speaker-icon =
+    .tooltiptext = ਸਪੀਕਰ
 popup-all-windows-shared = ਆਪਣੀ ਸਕਰੀਨ ਤੋਂ ਸਭ ਵਿਖਾਈ ਦਿੰਦੀਆਂ ਵਿੰਡੋਜ਼ ਨੂੰ ਸਾਂਝਾ ਕੀਤਾ ਕੀਤਾ ਜਾਵੇਗਾ।
 popup-screen-sharing-not-now =
     .label = ਹੁਣੇ ਨਹੀਂ
@@ -620,8 +620,6 @@ crashed-subframe-submit =
 
 ## Bookmarks panels, menus and toolbar
 
-bookmarks-show-all-bookmarks =
-    .label = ਸਭ ਬੁੱਕਮਾਰਕਾਂ ਨੂੰ ਵੇਖੋ
 bookmarks-manage-bookmarks =
     .label = ਬੁੱਕਮਾਰਕਾਂ ਇੰਤਜ਼ਾਮ
 bookmarks-recent-bookmarks-panel-subheader = ਹਾਲੀਆ ਬੁੱਕਮਾਰਕ
@@ -694,6 +692,12 @@ library-recent-activity-title =
 save-to-pocket-button =
     .label = { -pocket-brand-name } ਵਿੱਚ ਸੰਭਾਲੋ
     .tooltiptext = { -pocket-brand-name } ਵਿੱਚ ਸੰਭਾਲੋ
+
+## Repair text encoding toolbar button
+
+repair-text-encoding-button =
+    .label = ਲਿਖਤ ਇੰਕੋਡਿੰਗ ਰਿਪੇਅਰ ਕਰੋ
+    .tooltiptext = ਸਫ਼ਾ ਸਮੱਗਰੀ ਤੋਂ ਠੀਕ ਲਿਖਤ ਇੰਕੋਡਿੰਗ ਦਾ ਅੰਦਾਜ਼ਾ ਲਾਓ
 
 ## Customize Toolbar Buttons
 

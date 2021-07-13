@@ -32,8 +32,10 @@ experimental-features-web-api-inputmode-description = Globaalin attribuutin <a d
 # by various online articles and is technical in nature.
 experimental-features-css-constructable-stylesheets =
     .label = CSS: Constructable Stylesheets
+experimental-features-css-constructable-stylesheets-description = Rakentimen lisäys <a data-l10n-name="mdn-cssstylesheet">CSSStyleSheet</a>-liittymään sekä muut tähän liittyvät muutokset mahdollistavat sen, että uusia tyyliarkkeja on mahdollista luoda suoraan ilman, että tyyliarkkia tarvitsee lisätä HTML-koodiin. Tämän myötä uudelleenkäytettävien tyyliarkkien luominen käytettäväksi <a data-l10n-name="mdn-shadowdom">Shadow DOM</a>:in kanssa on huomattavasti aiempaa helpompaa. Lue <a data-l10n-name="bugzilla">bugi 1520690</a> saadaksesi lisätietoja.
 experimental-features-devtools-color-scheme-simulation =
     .label = Web-työkalut: Väriteeman simulointi
+experimental-features-devtools-color-scheme-simulation-description = Lisää valinnan, jonka avulla voi simuloida eri väriteemoja, mikä mahdollistaa <a data-l10n-name="mdn-preferscolorscheme">@prefers-color-scheme</a>-mediakyselyjen testaamisen. Tätä mediakyselyä käyttämällä tyyliarkki pystyy mukautumaan käyttäjän tumman tai vaalean tilan valintaan käyttöliittymässään. Tämä ominaisuus mahdollistaa koodin testaamisen ilman, että joudut muuttamaan selaimen (tai käyttöjärjestelmän, jos selaimesi seuraa järjestelmänlaajuista väriteeman asetusta) asetuksia. Lue <a data-l10n-name="bugzilla1">bugi 1550804</a> ja <a data-l10n-name="bugzilla2">bugi 1137699</a> saadaksesi lisätietoja.
 experimental-features-devtools-execution-context-selector =
     .label = Web-työkalut: Suorituskontekstin valitsin
 experimental-features-devtools-execution-context-selector-description = Tämä ominaisuus näyttää konsolin komentorivillä painikkeen, josta voi vaihtaa kontekstin, missä kirjoitettu lauseke suoritetaan. Lisätietoja on <a data-l10n-name="bugzilla1">bugissa 1605154</a> ja <a data-l10n-name="bugzilla2">bugissa 1605153</a>.
@@ -89,3 +91,4 @@ experimental-features-http3-description = Kokeellinen tuki HTTP/3-yhteyskäytän
 # Search during IME
 experimental-features-ime-search =
     .label = Osoitepalkki: näytä tulokset IME-koostamisen aikana
+experimental-features-ime-search-description = IME (Input Method Editor, kirjoitustapaeditori) on työkalu, jonka avulla voit kirjoittaa tavallisella näppäimistöllä monimutkaisia symboleja, kuten itäaasialaisia tai intialaisia symboleja. Tämän kokeilun ottaminen käyttöön pitää osoitepalkin auki näyttäen hakutulokset ja -ehdotukset samalla, kun käytät tekstinsyöttöä IME:n avulla. Huomaa, että IME saattaa näyttää paneelin, peittäen osoitepalkin hakutulokset. Siksi tätä asetusta suositellaan vain, kun IME ei käytä tämäntyyppistä paneelia.

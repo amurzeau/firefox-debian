@@ -25,11 +25,38 @@ upgrade-dialog-new-primary-primary-button = Bëje { -brand-short-name }-in shfle
     .title = E vë { -brand-short-name }-in si shfletuesin parazgjedhje dhe e fikson te paneli
 upgrade-dialog-new-primary-default-button = Bëje { -brand-short-name }-in shfletuesin tim parazgjedhje
 upgrade-dialog-new-primary-pin-button = Fiksoje { -brand-short-name }-in te paneli im
+upgrade-dialog-new-primary-pin-alt-button = Fiksoje te paneli
 upgrade-dialog-new-primary-theme-button = Zgjidhni një temë
 upgrade-dialog-new-secondary-button = Jo tani
 # This string is only shown on Windows 7, where we intentionally suppress the
 # theme selection screen.
 upgrade-dialog-new-primary-win7-button = OK, e mora vesh!
+
+## Pin Firefox screen
+##
+## These title, subtitle and button strings differ between platforms as they
+## match the OS' application context menu item action where Windows uses "pin"
+## and "taskbar" while macOS "keep" and "Dock" (proper noun).
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-pin-title =
+    { PLATFORM() ->
+        [macos] Mbajeni { -brand-short-name }-in te Paneli juaj
+       *[other] Fiksojeni { -brand-short-name }-in te paneli juaj
+    }
+# The English macOS string avoids repeating "Keep" a third time, so if your
+# translations don't repeat anyway, the same string can be used cross-platform.
+upgrade-dialog-pin-subtitle =
+    { PLATFORM() ->
+        [macos] Kini përdorim të kollajtë të { -brand-short-name }-it më të freskët deri më sot.
+       *[other] Mbajeni para syve { -brand-short-name }-in më të freskët deri më sot.
+    }
+upgrade-dialog-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Mbajeni te Paneli
+       *[other] Fiksojeni te paneli
+    }
+upgrade-dialog-pin-secondary-button = Jo tani
 
 ## Default browser screen
 
@@ -37,6 +64,10 @@ upgrade-dialog-new-primary-win7-button = OK, e mora vesh!
 upgrade-dialog-default-title = Të bëhet { -brand-short-name }-i shfletuesi juaj parazgjedhje?
 upgrade-dialog-default-subtitle = Përfitoni shpejtësi, siguri dhe privatësi, sa herë që shfletoni.
 upgrade-dialog-default-primary-button = Vëre si shfletuesin parazgjedhje
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-default-title-2 = Bëjeni { -brand-short-name }-in parazgjedhjen tuaj
+upgrade-dialog-default-subtitle-2 = Kalojeni shpejtësinë, sigurinë dhe privatësinë në autopilot.
+upgrade-dialog-default-primary-button-2 = Bëjeni shfletuesin parazgjedhje
 upgrade-dialog-default-secondary-button = Jo tani
 
 ## Theme selection screen
@@ -45,6 +76,8 @@ upgrade-dialog-default-secondary-button = Jo tani
 upgrade-dialog-theme-title =
     Fillojani kthjellët
     me një temë të përditësuar
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-theme-title-2 = Kini një fillim të pastër, me një temë të kthjellët
 upgrade-dialog-theme-system = Temë sistemi
     .title = Për butona, menu dhe dritare ndiq temën e sistemit operativ
 upgrade-dialog-theme-light = E çelët

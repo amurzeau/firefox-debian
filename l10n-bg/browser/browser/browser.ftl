@@ -181,8 +181,6 @@ page-action-send-tabs-urlbar =
             [one] Изпращане на раздела до устройство
            *[other] Изпращане на { $tabCount } раздела до устройство
         }
-page-action-pocket-panel =
-    .label = Запазване на страницата в { -pocket-brand-name }
 page-action-copy-url-panel =
     .label = Копиране на препратката
 page-action-copy-url-urlbar =
@@ -247,6 +245,14 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Добавяне на „{ $engineName }“
+    .tooltiptext = Добавя търсещата машина „{ $engineName }“
+    .aria-label = Добавя търсещата машина „{ $engineName }“
 # When more than 5 engines are offered by a web page, they are grouped in a
 # submenu using this as its label.
 search-one-offs-add-engine-menu =
@@ -305,7 +311,8 @@ identity-site-information = Информация за { $host }
 identity-header-security-with-host =
     .title = Сигурност на връзката към { $host }
 identity-connection-not-secure = Връзката не е защитена
-identity-connection-secure = Връзката е защитена
+identity-connection-secure = Връзката е шифрована
+identity-connection-failure = Неуспешна връзка
 identity-connection-internal = Това е защитена страница на { -brand-short-name }.
 identity-connection-file = Страницата е запазена в компютъра.
 identity-extension-page = Страницата е отворена от разширение.
@@ -325,14 +332,18 @@ identity-https-only-dropdown-off =
     .label = Изключено
 identity-https-only-dropdown-off-temporarily =
     .label = Временно изключено
+identity-https-only-info-turn-on2 = Включете режима „Само HTTPS“ за този сайт, ако искате { -brand-short-name } да надгради връзката, когато е възможно.
+identity-https-only-info-turn-off2 = Ако страницата изглежда счупена би трябвало да изключите режима „само HTTPS“ за сайта, за да бъде презареден през незащитения протокол HTTP.
 identity-https-only-info-no-upgrade = Връзката не може да бъде превключена от HTTP.
+identity-permissions-storage-access-header = Бисквитки между сайтове
+identity-permissions-storage-access-hint = Тези страни могат да ползват бисквитки между сайтовете и данни от сайта, докато сте на него.
 identity-permissions-storage-access-learn-more = Научете повече
 identity-permissions-reload-hint = За да бъдат приложени промените може да се наложи да презаредите страницата.
 identity-permissions-empty = Не сте дали допълнителни права на страницата.
 identity-clear-site-data =
     .label = Изчистване на бисквитки и данни…
 identity-connection-not-secure-security-view = Връзката със сайта не е сигурна.
-identity-connection-verified = Връзката със сайта е сигурна.
+identity-connection-verified = Връзката със сайта е шифрована.
 identity-ev-owner-label = Сертификатът е издаден на:
 identity-description-custom-root = Mozilla не разпознава този издател на сертификати. Може да е добавен от вашата операционна система или от администратор. <label data-l10n-name="link">Научете повече</label>
 identity-remove-cert-exception =
@@ -373,18 +384,40 @@ browser-window-close-button =
 ## Tab actions
 
 # This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = ИЗПЪЛНЯВА СЕ
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = БЕЗ ЗВУК
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = АВТ. ВЪЗПРОИЗВЕЖДАНЕ СПРЯНО
+# This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-pip = КАРТИНА В КАРТИНАТА
 
 ## These labels should be written in all capital letters if your locale supports them.
 ## Variables:
 ##  $count (number): number of affected tabs
 
+browser-tab-mute =
+    { $count ->
+        [one] БЕЗ ЗВУК В РАЗДЕЛА
+       *[other] БЕЗ ЗВУЦИ В { $count } РАЗДЕЛА
+    }
+browser-tab-unmute =
+    { $count ->
+        [one] ВЪЗСТАНОВЯВАНЕ НА ЗВУКА В РАЗДЕЛА
+       *[other] ВЪЗСТАНОВЯВАНЕ НА ЗВУКА В { $count } РАЗДЕЛА
+    }
+browser-tab-unblock =
+    { $count ->
+        [one] ВЪЗПРОИЗВЕЖДАНЕ НА ЗВУК В РАЗДЕЛА
+       *[other] ВЪЗПРОИЗВЕЖДАНЕ НА ЗВУК В { $count } РАЗДЕЛА
+    }
 
 ## Bookmarks toolbar items
 
 browser-import-button2 =
     .label = Внасяне на отметки…
     .tooltiptext = Внасяне на отметки от друг четец във { -brand-short-name }.
+bookmarks-toolbar-empty-message = За бърз достъп, поставете вашите отметки тук, на лентата с отметки. <a data-l10n-name="manage-bookmarks">Управление на отметки…</a>
 
 ## WebRTC Pop-up notifications
 
@@ -399,6 +432,13 @@ popup-select-camera-device =
     .accesskey = К
 popup-select-camera-icon =
     .tooltiptext = Камера
+popup-select-microphone-device =
+    .value = Микрофон:
+    .accesskey = М
+popup-select-microphone-icon =
+    .tooltiptext = Микрофон
+popup-select-speaker-icon =
+    .tooltiptext = Високоговорители
 popup-all-windows-shared = Всички видими прозорци на вашия екран ще бъдат споделени.
 popup-screen-sharing-not-now =
     .label = Не сега
@@ -408,6 +448,13 @@ popup-screen-sharing-never =
     .accesskey = Н
 popup-silence-notifications-checkbox = Спиране на известията от { -brand-short-name }, докато споделяте
 popup-silence-notifications-checkbox-warning = { -brand-short-name } няма да показва известия, докато споделяте.
+popup-screen-sharing-block =
+    .label = Забраняване
+    .accesskey = З
+popup-screen-sharing-always-block =
+    .label = Винаги да е забранено
+    .accesskey = в
+popup-mute-notifications-checkbox = Спиране на известия докато споделяте
 
 ## WebRTC window or screen share tab switch warning
 
@@ -464,6 +511,11 @@ urlbar-placeholder-with-name =
     .placeholder = Търсете с { $name } или въведете адрес
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Четецът е под дистанционно управление
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Четецът се управлява отдалечено (причина: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Дали сте допълнителни права на страницата.
 urlbar-switch-to-tab =
@@ -517,11 +569,19 @@ urlbar-result-action-tabtosearch-web = Търсете с { $engine } дирек�
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Търсете в { $engine } директно от адресната лента
+# Action text for copying to clipboard.
+urlbar-result-action-copy-to-clipboard = Копиране
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
 
+urlbar-result-action-search-bookmarks = Търсене в отметките
 urlbar-result-action-search-history = Търсене в историята
 urlbar-result-action-search-tabs = Търсене на раздели
 
@@ -543,11 +603,18 @@ pointerlock-warning-no-domain = Този документ контролира �
 
 ## Subframe crash notification
 
+crashed-subframe-message = <strong>Част от тази страница се срина.</strong> За да уведомите { -brand-product-name } за този проблем и да го поправим по-бързо, изпратете доклад.
+crashed-subframe-learnmore-link =
+    .value = Научете повече
+crashed-subframe-submit =
+    .label = Изпращане на доклад
+    .accesskey = з
 
 ## Bookmarks panels, menus and toolbar
 
-bookmarks-show-all-bookmarks =
-    .label = Показване на всички отметки
+bookmarks-manage-bookmarks =
+    .label = Управление на отметки
+bookmarks-recent-bookmarks-panel-subheader = Последни отметки
 bookmarks-toolbar-chevron =
     .tooltiptext = Показване на повече отметки
 bookmarks-sidebar-content =
@@ -601,11 +668,16 @@ bookmarks-toolbar-placeholder =
     .title = Елементи на лентата с отметките
 bookmarks-toolbar-placeholder-button =
     .label = Елементи на лентата с отметките
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Отмятане на текущия раздел
 
 ## Library Panel items
 
 library-bookmarks-menu =
     .label = Отметки
+library-recent-activity-title =
+    .value = Последна активност
 
 ## Pocket toolbar button
 
@@ -613,8 +685,28 @@ save-to-pocket-button =
     .label = Запазване в { -pocket-brand-name }
     .tooltiptext = Запазване в { -pocket-brand-name }
 
+## Repair text encoding toolbar button
+
+repair-text-encoding-button =
+    .label = Поправка на кодировката
+    .tooltiptext = Прави предположение за кодирането на текста от съдържанието на страницата
+
 ## Customize Toolbar Buttons
 
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Добавки и теми
+    .tooltiptext = Управление на добавки и теми ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Настройки
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Отваряне на настройките ({ $shortcut })
+           *[other] Отваряне на настройките
+        }
 
 ## More items
 
@@ -625,6 +717,8 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = Аудио или видеозапис от страницата използва софтуер за DRM, който може да ограничи какво { -brand-short-name } ви позволява да правите с тях.
+eme-notifications-drm-content-playing-manage = Управление на настройките
+eme-notifications-drm-content-playing-manage-accesskey = М
 eme-notifications-drm-content-playing-dismiss = Прекратяване
 eme-notifications-drm-content-playing-dismiss-accesskey = р
 
@@ -635,6 +729,10 @@ panel-save-update-password = Парола
 
 ## Add-on removal warning
 
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Премахване на { $name }?
+addon-removal-abuse-report-checkbox = Докладване разширението на { -vendor-short-name }
 
 ## Remote / Synced tabs
 

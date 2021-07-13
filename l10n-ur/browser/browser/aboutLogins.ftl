@@ -18,6 +18,7 @@ login-filter =
 create-login-button = نیا لاگ ان بنائیں
 fxaccounts-sign-in-text = اپنے پاسورڈ  دوسرے آلات پر حاصل کریں
 fxaccounts-sign-in-button = { -sync-brand-short-name } میں  سائن ان کریں
+fxaccounts-sign-in-sync-button = سنک کرنے کے لئے سائن ان کریں
 fxaccounts-avatar-button =
     .title = اکاؤنٹ کو  منظم کریں
 
@@ -69,7 +70,6 @@ about-logins-list-item-vulnerable-password-icon =
 ## Introduction screen
 
 login-intro-heading = اپنے محفوظ شدہ لاگ ان ڈھونڈ رہے ہیں؟ { -sync-brand-short-name } مرتب کریں۔
-about-logins-login-intro-heading-logged-out = اپنے محفوظ شدہ لاگ ان ڈھونڈ رہے ہیں؟ { -sync-brand-short-name } مرتب کریں یا انھیں درآمد کریں۔
 about-logins-login-intro-heading-logged-in = کوئی سینکڈ لاگ ان نہیں ملا۔
 login-intro-description = اگر آپ نے اپنے لاگ انز { -brand-product-name } کو کسی دوسرے آلے پر محفوظ کیاہوا ہے تو، انہیں یہاں حاصل کرنے کا طریقہ یوں ہے:
 login-intro-instruction-fxa = وہ آلہ جہاں آپ کے لاگ انز محفوظ ہیں ان پر اپنا { -fxaccount-brand-name } بنائیں یا سائن ان کریں
@@ -225,6 +225,13 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] CSV دستاویز
        *[other] CSV فائل
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] TSV دستاویز
+       *[other] TSV فائل
+    }
 
 ##
 ## Variables:
@@ -232,11 +239,32 @@ about-logins-import-file-picker-csv-filter-title =
 
 about-logins-import-dialog-title = درآمد مکمل ہوئی
 about-logins-import-dialog-done = ہوگیا
+about-logins-import-dialog-error-title = درآمد میں نقص
+about-logins-import-dialog-error-conflicting-values-title = ایک لاگ ان کیلئے متعدد متضاد اقدار
 about-logins-import-dialog-error-file-format-title = فائل فارمیٹ کا مسئلہ
+about-logins-import-dialog-error-file-permission-title = فائل پڑھنے سے قاصر
 about-logins-import-dialog-error-no-logins-imported = کوئی لاگ ان امپورٹ نہیں کیا گیا ہے
 about-logins-import-dialog-error-learn-more = مزیدجانیے
-about-logins-import-dialog-error-try-again = دوبارہ کوشش کریں…
+about-logins-import-dialog-error-try-import-again = دوبارہ درآمد کرنے کی کوشش کریں…
 about-logins-import-dialog-error-cancel = منسوخ کریں
+about-logins-import-report-title = درآمد کا خلاصہ
+#
+# Variables:
+#  $number (number) - The number of the row
+about-logins-import-report-row-index = قطار{ $number }
+about-logins-import-report-row-description-modified = موجودہ لاگ ان کی تازہ کاری کر دی گئی
+about-logins-import-report-row-description-added = نیا لاگ ان شامل کیا گیا
+
+##
+## Variables:
+##  $field (String) - The name of the field from the CSV file for example url, username or password
+
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
 
 ## Logins import report page
 
+about-logins-import-report-page-title = درآمدکی خلاصہ رپورٹ

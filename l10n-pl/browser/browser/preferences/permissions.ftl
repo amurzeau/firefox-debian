@@ -18,6 +18,12 @@ permissions-session =
 permissions-allow =
     .label = Zezwalaj
     .accesskey = Z
+permissions-button-off =
+    .label = Wyłącz
+    .accesskey = W
+permissions-button-off-temporarily =
+    .label = Wyłącz tymczasowo
+    .accesskey = m
 permissions-site-name =
     .label = Witryna
 permissions-status =
@@ -58,6 +64,10 @@ permissions-capabilities-listitem-block =
     .value = blokuj
 permissions-capabilities-listitem-allow-session =
     .value = zezwalaj na czas sesji
+permissions-capabilities-listitem-off =
+    .value = wyłącz
+permissions-capabilities-listitem-off-temporarily =
+    .value = wyłącz tymczasowo
 
 ## Invalid Hostname Dialog
 
@@ -80,6 +90,10 @@ permissions-exceptions-cookie-desc = Określ zasady akceptacji ciasteczek i dan
 
 ## Exceptions - HTTPS-Only Mode
 
+permissions-exceptions-https-only-window =
+    .title = Tryb używania wyłącznie protokołu HTTPS — wyjątki
+    .style = { permissions-window.style }
+permissions-exceptions-https-only-desc = Określ, na których witrynach nie korzystać z trybu używania wyłącznie protokołu HTTPS. { -brand-short-name } nie będzie próbował przełączyć na zabezpieczone połączenie HTTPS na tych witrynach. Wyjątki nie są uwzględniane w oknach prywatnych.
 
 ## Exceptions - Pop-ups
 
