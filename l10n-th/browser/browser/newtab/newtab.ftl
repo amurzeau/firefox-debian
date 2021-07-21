@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = ปรับให้เป็นแบบส่วนตัว
     .title = ปรับแท็บใหม่ให้เป็นส่วนตัว
     .aria-label = ปรับแท็บใหม่ให้เป็นส่วนตัว
+newtab-personalize-icon-label =
+    .title = ปรับแท็บใหม่ให้เป็นส่วนตัว
+    .aria-label = ปรับแท็บใหม่ให้เป็นส่วนตัว
 newtab-personalize-dialog-label =
     .aria-label = ปรับให้เป็นแบบส่วนตัว
 
@@ -39,7 +42,6 @@ newtab-search-box-search-the-web-input =
     .placeholder = ค้นหาเว็บ
     .title = ค้นหาเว็บ
     .aria-label = ค้นหาเว็บ
-newtab-search-box-text = ค้นหาเว็บ
 newtab-search-box-input =
     .placeholder = ค้นหาเว็บ
     .aria-label = ค้นหาเว็บ

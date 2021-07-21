@@ -257,6 +257,7 @@ confirm-browser-language-change-button = Застосувати й переза�
 translate-web-pages =
     .label = Перекладати веб вміст
     .accesskey = П
+fx-translate-web-pages = { -translations-brand-name }
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = Переклад виконується <img data-l10n-name="logo"/>
@@ -281,13 +282,13 @@ download-save-to =
 download-choose-folder =
     .label =
         { PLATFORM() ->
-            [macos] Вибрати…
-           *[other] Вибрати…
+            [macos] Огляд…
+           *[other] Огляд…
         }
     .accesskey =
         { PLATFORM() ->
-            [macos] В
-           *[other] В
+            [macos] О
+           *[other] О
         }
 download-always-ask-where =
     .label = Завжди запитувати де зберегти файли
@@ -861,6 +862,10 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = Зараз ви в режимі FIPS. Для цього режиму необхідно встановити головний пароль.
 forms-master-pw-fips-desc = Не вдалося змінити пароль
+forms-windows-sso =
+    .label = Дозволити єдиний вхід Windows для облікових записів Microsoft, роботи та школи
+forms-windows-sso-learn-more-link = Докладніше
+forms-windows-sso-desc = Керування обліковими записами в налаштуваннях пристрою
 
 ## OS Authentication dialog
 
@@ -1113,6 +1118,12 @@ permissions-block-popups =
 permissions-block-popups-exceptions =
     .label = Винятки…
     .accesskey = В
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = Винятки…
+    .accesskey = В
+    .searchkeywords = popups
 permissions-addon-install-warning =
     .label = Попереджати при спробі вебсайтів встановити додаток
     .accesskey = ж

@@ -7,9 +7,11 @@ account-setup-tab-title = Configuration du compte
 ## Header
 
 account-setup-title = Configurez votre adresse électronique existante
-account-setup-description =
-    Pour utiliser votre adresse électronique actuelle, remplissez vos identifiants.<br/>
-    { -brand-product-name } recherchera automatiquement une configuration de serveur fonctionnelle et recommandée.
+account-setup-description = Pour utiliser votre adresse électronique actuelle, remplissez vos identifiants.
+account-setup-secondary-description = { -brand-product-name } recherchera automatiquement une configuration fonctionnelle et recommandée du serveur
+account-setup-success-title = Création du compte réussie
+account-setup-success-description = Vous pouvez dés maintenant utiliser ce compte avec { -brand-short-name }.
+account-setup-success-secondary-description = Vous pouvez enrichir l’expérience en connectant des services associés et en configurant des paramètres de compte avancés.
 
 ## Form fields
 
@@ -99,10 +101,16 @@ account-setup-step3-image =
 account-setup-step4-image =
     .title = Erreur de connexion
 account-setup-privacy-footnote = Vos identifiants seront utilisés conformément à notre <a data-l10n-name="privacy-policy-link">politique de confidentialité</a> et ne seront stockés que localement sur votre ordinateur.
+account-setup-step5-image =
+    .title = Compte créé
+account-setup-privacy-footnote2 = Vos informations d’identification ne sont conservées que localement, sur votre ordinateur.
 account-setup-selection-help = Vous ne savez pas quoi sélectionner ?
 account-setup-selection-error = Besoin d’aide ?
+account-setup-success-help = Vous hésitez sur les prochaines étapes ?
 account-setup-documentation-help = Documentation d’installation
 account-setup-forum-help = Forum d’assistance
+account-setup-privacy-help = Politique de confidentialité
+account-setup-getting-started = Pour commencer
 
 ## Results area
 
@@ -211,3 +219,68 @@ account-setup-confirm-advanced-description = Cette boîte de dialogue sera ferm�
 account-setup-addon-install-title = Installation
 account-setup-addon-install-intro = Un module complémentaire tiers peut vous permettre d’accéder à votre compte de messagerie sur ce serveur :
 account-setup-addon-no-protocol = Malheureusement, ce serveur de messagerie ne prend pas en charge les protocoles ouverts. { account-setup-addon-install-intro }
+
+## Success view
+
+account-setup-settings-button = Paramètres du compte
+account-setup-encryption-button = Chiffrement de bout en bout
+account-setup-signature-button = Ajout d’une signature
+account-setup-dictionaries-button = Téléchargement de dictionnaires
+account-setup-address-book-carddav-button = Se connecter à un carnet d’adresses CardDAV
+account-setup-address-book-ldap-button = Se connecter à un carnet d’adresses LDAP
+account-setup-calendar-button = Se connecter à un agenda distant
+account-setup-linked-services-title = Se connecter à vos services liés
+account-setup-linked-services-description = { -brand-short-name } a détecté d’autres services liés à votre compte de messagerie.
+account-setup-no-linked-description = Configurez d’autres services pour profiter au maximum de { -brand-short-name }.
+# Variables:
+# $count (Number) - The number of address books found during autoconfig.
+account-setup-found-address-books-description =
+    { $count ->
+        [one] { -brand-short-name } a trouvé un carnet d’adresses lié à votre compte de messagerie.
+       *[other] { -brand-short-name } a trouvé { $count } carnets d’adresses liés à votre compte de messagerie.
+    }
+# Variables:
+# $count (Number) - The number of calendars found during autoconfig.
+account-setup-found-calendars-description =
+    { $count ->
+        [one] { -brand-short-name } a trouvé un agenda lié à votre compte de messagerie.
+       *[other] { -brand-short-name } a trouvé { $count } agendas liés à votre compte de messagerie.
+    }
+account-setup-button-finish = Terminer
+    .accesskey = T
+account-setup-looking-up-address-books = Recherche de carnets d’adresses…
+account-setup-looking-up-calendars = Recherche d’agendas…
+account-setup-address-books-button = Carnets d’adresses
+account-setup-calendars-button = Agendas
+account-setup-connect-link = Connecter
+account-setup-existing-address-book = Connecté
+    .title = Carnet d’adresses déjà connecté
+account-setup-existing-calendar = Connecté
+    .title = Agenda déjà connecté
+account-setup-connect-all-calendars = Connecter tous les agendas
+account-setup-connect-all-address-books = Connecter tous les carnets d’adresses
+
+## Calendar synchronization dialog
+
+calendar-dialog-title = Connecter l’agenda
+calendar-dialog-cancel-button = Annuler
+    .accesskey = A
+calendar-dialog-confirm-button = Connecter
+    .accesskey = C
+account-setup-calendar-name-label = Nom
+account-setup-calendar-name-input =
+    .placeholder = Mon agenda
+account-setup-calendar-color-label = Couleur
+account-setup-calendar-refresh-label = Actualiser
+account-setup-calendar-refresh-manual = Manuellement
+account-setup-calendar-refresh-interval =
+    { $count ->
+        [one] Toutes les minutes
+       *[other] Toutes les { $count } minutes
+    }
+account-setup-calendar-read-only = En lecture seule
+    .accesskey = l
+account-setup-calendar-show-reminders = Afficher les alarmes
+    .accesskey = a
+account-setup-calendar-offline-support = Prise en charge du mode hors connexion
+    .accesskey = h

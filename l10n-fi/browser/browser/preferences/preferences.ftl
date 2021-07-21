@@ -857,6 +857,10 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = Olet parhaillaan FIPS-tilassa. FIPS edellyttää, että pääsalasana ei ole tyhjä.
 forms-master-pw-fips-desc = Salasanan vaihto epäonnistui
+forms-windows-sso =
+    .label = Salli Windowsin kertakirjautuminen Microsoft-, työ- ja koulutileille.
+forms-windows-sso-learn-more-link = Lisätietoja
+forms-windows-sso-desc = Hallinnoi tilejä laitteen asetuksissa
 
 ## OS Authentication dialog
 
@@ -1109,6 +1113,12 @@ permissions-block-popups =
 permissions-block-popups-exceptions =
     .label = Poikkeukset…
     .accesskey = P
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = Poikkeukset…
+    .accesskey = P
+    .searchkeywords = ponnahdukset
 permissions-addon-install-warning =
     .label = Varoita, kun sivustot yrittävät asentaa lisäosia
     .accesskey = V

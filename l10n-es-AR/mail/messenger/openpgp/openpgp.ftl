@@ -4,6 +4,16 @@
 
 e2e-intro-description = Para enviar mensajes cifrados o firmados digitalmente, debe configurar una tecnología de cifrado, ya sea OpenPGP o S/MIME.
 e2e-intro-description-more = Seleccione su clave personal para habilitar el uso de OpenPGP o su certificado personal para habilitar el uso de S/MIME. Para una clave personal o certificado usted posee la clave secreta correspondiente.
+e2e-advanced-section = Opciones avanzadas
+e2e-attach-key =
+    .label = Adjuntar mi clave pública al agregar una firma digital OpenPGP
+    .accesskey = P
+e2e-encrypt-subject =
+    .label = Cifrar el asunto de los mensajes OpenPGP
+    .accesskey = u
+e2e-encrypt-drafts =
+    .label = Guardar los borradores de mensajes en formato cifrado
+    .accesskey = r
 openpgp-key-user-id-label = Cuenta / ID de usuario
 openpgp-keygen-title-label =
     .title = Generar clave OpenPGP
@@ -597,6 +607,9 @@ no-temp-dir =
 possibly-pgp-mime = Posiblemente mensaje cifrado o firmado PGP / MIME; use la función 'Decrypt/Verify' para verificar
 cannot-send-sig-because-no-own-key = No se puede firmar digitalmente este mensaje porque todavía no configuró elcifrado de punta a punta para <{ $key }>
 cannot-send-enc-because-no-own-key = No se puede enviar este mensaje cifrado, porque todavía no configuró el cifrado de punta a punta  para <{ $key }>
+compose-menu-attach-key =
+    .label = Adjuntar mi clave pública
+    .accesskey = A
 # Strings used in decryption.jsm
 do-import-multiple =
     ¿Importar las siguientes claves?

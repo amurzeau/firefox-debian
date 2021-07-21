@@ -42,7 +42,7 @@ serviceworker-worker-start3 = Pornește
 # display the last update time of the service worker script.
 serviceworker-worker-updated = Actualizat <time>{ DATETIME($date, month: "long", year: "numeric", day: "numeric", hour: "numeric", minute: "numeric", second: "numeric") }</time>
 # Text displayed next to the URL for the source of the service worker (e-g. "Source my/path/to/worker-js")
-serviceworker-worker-source = Sursa
+serviceworker-worker-source = Sursă
 # Text displayed next to the current status of the service worker.
 serviceworker-worker-status = Stare
 
@@ -65,10 +65,10 @@ serviceworker-empty-suggestions = Dacă pagina actuală ar trebui să aibă un s
 serviceworker-empty-suggestions-console = Caută erori în consolă. <a>Deschide consola</a>
 # Suggestion to use the debugger to investigate why a service worker is not registered.
 # Clicking on the link will switch from the Application panel to the debugger.
-serviceworker-empty-suggestions-debugger = Execută pas cu pas înregistrarea scripturilor Service Worker și caută excepții. <a>Deschide depanatorul</a>
+serviceworker-empty-suggestions-debugger = Execută pas cu pas înregistrarea scripturilor service worker și caută excepții. <a>Deschide depanatorul</a>
 # Suggestion to go to about:debugging in order to see Service Workers for all domains.
 # Clicking on the link will open about:debugging in a new tab.
-serviceworker-empty-suggestions-aboutdebugging = Inspectează scripturile Service Worker de pe alte domenii. <a>Deschide about:debugging</a>
+serviceworker-empty-suggestions-aboutdebugging = Inspectează scripturile service worker din alte domenii. <a>Deschide about:debugging</a>
 # Text displayed when no service workers are visible for the current page.
 serviceworker-empty-intro2 = Nu a fost găsit niciun script service worker
 # Link will open https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers
@@ -106,7 +106,7 @@ manifest-loaded-ok = Manifest încărcat.
 manifest-loaded-error = A apărut o eroare la încărcarea manifestului:
 # Text displayed as an error when there has been a Firefox DevTools error while
 # trying to load the manifest
-manifest-loaded-devtools-error = Eroare Firefox DevTools
+manifest-loaded-devtools-error = Eroare privind DevTools Firefox
 # Text displayed when the page has no manifest available
 manifest-non-existing = Nu s-a găsit niciun manifest de inspectat.
 # Text displayed when the page has a manifest embedded in a Data URL and
@@ -131,9 +131,9 @@ sidebar-item-manifest = Manifest
     .alt = Pictogramă manifest
     .title = Manifest
 # Sidebar navigation item for Service Workers sidebar item section
-sidebar-item-service-workers = Scripturi Service Worker
-    .alt = Pictogramă scripturi Service Worker
-    .title = Scripturi Service Worker
+sidebar-item-service-workers = Scripturi service worker
+    .alt = Pictogramă pentru scripturile service worker
+    .title = Scripturi service worker
 # Text for the ALT and TITLE attributes of the warning icon
 icon-warning =
     .alt = Pictogramă de avertizare

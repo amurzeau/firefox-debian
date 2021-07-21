@@ -4,6 +4,7 @@
 
 calendar-title = 日历
 calendar-title-reminder = 提醒
+calendar-title-notification = 通知
 calendar-title-category = 分类
 dateformat-label =
     .value = 日期格式：
@@ -179,6 +180,7 @@ event-alarm-time-label =
 task-alarm-time-label =
     .value = 在任务触发前默认的提醒时间：
     .accesskey = o
+calendar-notifications-customize-label = 可到日历的属性窗口自定义各日历的通知设置。
 category-new-label = 新建分类
 category-edit-label = 编辑类别
 category-overwrite-title = 警告： 重复的名称

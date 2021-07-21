@@ -8,6 +8,14 @@
 newtab-page-title = Filă nouă
 newtab-settings-button =
     .title = Personalizează pagina pentru filă nouă
+newtab-personalize-button-label = Personalizează
+    .title = Personalizează pagina pentru filă nouă
+    .aria-label = Personalizează pagina pentru filă nouă
+newtab-personalize-icon-label =
+    .title = Personalizează pagina pentru filă nouă
+    .aria-label = Personalizează pagina pentru filă nouă
+newtab-personalize-dialog-label =
+    .aria-label = Personalizează
 
 ## Search box component.
 
@@ -16,6 +24,20 @@ newtab-search-box-search-button =
     .title = Caută
     .aria-label = Caută
 newtab-search-box-search-the-web-text = Caută pe web
+# Variables
+#  $engine (String): the name of the user's default search engine
+newtab-search-box-handoff-text = Caută cu { $engine } sau introdu adresa
+newtab-search-box-handoff-text-no-engine = Caută sau introdu adresa
+# Variables
+#  $engine (String): the name of the user's default search engine
+newtab-search-box-handoff-input =
+    .placeholder = Caută cu { $engine } sau introdu adresa
+    .title = Caută cu { $engine } sau introdu adresa
+    .aria-label = Caută cu { $engine } sau introdu adresa
+newtab-search-box-handoff-input-no-engine =
+    .placeholder = Caută sau introdu adresa
+    .title = Caută sau introdu adresa
+    .aria-label = Caută sau introdu adresa
 newtab-search-box-search-the-web-input =
     .placeholder = Caută pe web
     .title = Caută pe web
@@ -166,6 +188,7 @@ newtab-section-expand-section-label =
 
 newtab-section-header-topsites = Site-uri de top
 newtab-section-header-highlights = Evidențieri
+newtab-section-header-recent-activity = Activitate recentă
 # Variables:
 #  $provider (String): Name of the corresponding content provider.
 newtab-section-header-pocket = Recomandat de { $provider }
@@ -204,4 +227,17 @@ newtab-error-fallback-refresh-link = Reîmprospătează pagina pentru a încerca
 
 ## Customization Menu
 
+newtab-custom-shortcuts-title = Comenzi rapide
+newtab-custom-shortcuts-subtitle = Site-uri pe care le salvezi sau le vizitezi
+newtab-custom-row-selector =
+    { $num ->
+        [one] { $num } rând
+        [few] { $num } rânduri
+       *[other] { $num } de rânduri
+    }
+newtab-custom-sponsored-sites = Comenzi rapide sponsorizate
+newtab-custom-recent-title = Activitate recentă
+newtab-custom-recent-subtitle = O selecție de site-uri și conținut recente
+newtab-custom-close-button = Închide
+newtab-custom-snippets-subtitle = Sfaturi și știri de la { -vendor-short-name } și { -brand-product-name }
 newtab-custom-settings = Gestionează mai multe setări

@@ -28,7 +28,21 @@ search-input-box =
             [windows] Caută în Opțiuni
            *[other] Caută în Preferințe
         }
+settings-page-title = Setări
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Caută în Setări
 managed-notice = Browserul este gestionat de organizația ta.
+category-list =
+    .aria-label = Categorii
 pane-general-title = General
 category-general =
     .tooltiptext = { pane-general-title }
@@ -44,11 +58,15 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Sincronizare
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = Experimente { -brand-short-name }
 category-experimental =
     .tooltiptext = Experimente { -brand-short-name }
 pane-experimental-subtitle = Procedează cu grijă
 pane-experimental-search-results-header = Experimente { -brand-short-name }: Procedează cu grijă
+pane-experimental-description2 = Modificarea setărilor avansate de configurare poate afecta performanța sau securitatea din { -brand-short-name }.
 pane-experimental-reset =
     .label = Restaurează valorile implicite
     .accesskey = R
@@ -118,6 +136,8 @@ search-results-empty-message =
         [windows] Ne pare rău! Nu există rezultate în Opțiuni pentru „<span data-l10n-name="query"></span>”.
        *[other] Ne pare rău! Nu există rezultate în Preferințe pentru „<span data-l10n-name="query"></span>”.
     }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Ne pare rău! Nu există rezultate în Setări pentru „<span data-l10n-name="query"></span>”.
 search-results-help-link = Ai nevoie de ajutor? Intră pe <a data-l10n-name="url">pagina de asistență { -brand-short-name }</a>
 
 ## General Section
@@ -159,8 +179,11 @@ warn-on-open-many-tabs =
     .label = Te avertizează când deschiderea mai multor file ar putea încetini { -brand-short-name }
     .accesskey = d
 switch-links-to-new-tabs =
-    .label = La deschiderea unui link într-o filă nouă, comută imediat pe fila respectivă
-    .accesskey = C
+    .label = La deschiderea unui link într-o filă nouă, comută imediat la aceasta
+    .accesskey = h
+switch-to-new-tabs =
+    .label = Când se deschide un link, o imagine sau un conținut media într-o nouă filă, comută imediat la aceasta
+    .accesskey = h
 show-tabs-in-taskbar =
     .label = Afișează previzualizări ale filelor în bara de activități Windows
     .accesskey = k
@@ -243,7 +266,7 @@ translate-exceptions =
 # Variables:
 #    $localeName (string) - Localized name of the locale to be used.
 use-system-locale =
-    .label = Folosește setările sistemului de operare în „{ $localeName }” pentru formatul datelor, orelor, numerelor și unități de măsură.
+    .label = Folosește setările sistemului de operare în „{ $localeName }” pentru formatul datelor, orelor, numerelor și unităților de măsură.
 check-user-spelling =
     .label = Verifică ortografia pe măsură ce tastez
     .accesskey = t
@@ -369,6 +392,9 @@ update-application-check-choose =
 update-application-manual =
     .label = Să nu caute niciodată actualizări (nerecomandat)
     .accesskey = N
+update-application-background-enabled =
+    .label = Când { -brand-short-name } nu rulează
+    .accesskey = W
 update-application-warning-cross-user-setting = Această setare se va aplica pentru toate conturile Windows și profilurile { -brand-short-name } care folosesc această instalare de { -brand-short-name }.
 update-application-use-service =
     .label = Folosește un serviciu în fundal pentru a instala actualizări
@@ -431,6 +457,10 @@ browsing-picture-in-picture-toggle-enabled =
     .label = Activează comenzile video picture-in-picture
     .accesskey = E
 browsing-picture-in-picture-learn-more = Află mai multe
+browsing-media-control =
+    .label = Controlează conținutul media via tastatură, căști sau interfață virtuală
+    .accesskey = v
+browsing-media-control-learn-more = Află mai multe
 browsing-cfr-recommendations =
     .label = Recomandă extensii pe măsură ce navighezi
     .accesskey = R
@@ -494,6 +524,11 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Site-uri de top
 home-prefs-topsites-description = Site-urile pe care le vizitezi cel mai des
+home-prefs-shortcuts-header =
+    .label = Comenzi rapide
+home-prefs-shortcuts-description = Site-uri pe care le salvezi sau le vizitezi
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Comenzi rapide sponsorizate
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -518,6 +553,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = Cele mai recente descărcări
 home-prefs-highlights-option-saved-to-pocket =
     .label = Pagini salvate în { -pocket-brand-name }
+home-prefs-recent-activity-header =
+    .label = Activitate recentă
+home-prefs-recent-activity-description = O selecție de site-uri și conținut recente
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -525,6 +563,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = Fragmente
 home-prefs-snippets-description = Știri de la { -vendor-short-name } și { -brand-product-name }
+home-prefs-snippets-description-new = Sfaturi și știri de la { -vendor-short-name } și { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -564,6 +603,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Afișează sugestii de căutare în ferestrele private
 suggestions-addressbar-settings-generic = Schimbă preferințele pentru alte sugestii în bara de adrese
+suggestions-addressbar-settings-generic2 = Schimbă setările pentru alte sugestii în bara de adrese
 search-suggestions-cant-show = Sugestiile de căutare nu vor fi afișate în rezultatele din bara de adrese deoarece ai configurat { -brand-short-name } ca să nu țină minte niciodată istoricul.
 search-one-click-header = Motoare de căutare la un clic distanță
 search-one-click-header2 = Comenzi rapide pentru căutări
@@ -595,6 +635,8 @@ containers-back-button =
             [windows] Înapoi la Opțiuni
            *[other] Înapoi la Preferințe
         }
+containers-back-button2 =
+    .aria-label = Înapoi la setări
 containers-header = File container
 containers-add-button =
     .label = Adaugă un container nou
@@ -604,6 +646,8 @@ containers-new-tab-check =
     .accesskey = S
 containers-preferences-button =
     .label = Preferințe
+containers-settings-button =
+    .label = Setări
 containers-remove-button =
     .label = Elimină
 
@@ -614,6 +658,10 @@ sync-signedout-caption = Ia webul cu tine
 sync-signedout-description = Sincronizează marcajele, istoricul, filele, parolele, suplimentele și preferințele pe toate dispozitivele.
 sync-signedout-account-signin2 =
     .label = Autentifică-te în { -sync-brand-short-name }…
+    .accesskey = i
+sync-signedout-description2 = Sincronizează marcajele, istoricul, filele, parolele, suplimentele și setările pe toate dispozitivele.
+sync-signedout-account-signin3 =
+    .label = Autentifică-te pentru sincronizare…
     .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -654,6 +702,7 @@ prefs-sync-setup =
     .label = Configurare { -sync-brand-short-name }…
     .accesskey = S
 prefs-sync-offer-setup-label = Sincronizează-ți marcajele, istoricul, filele, parolele, suplimentele și preferințele pe toate dispozitivele.
+prefs-sync-offer-setup-label2 = Sincronizează marcajele, istoricul, filele, parolele, suplimentele și setările pe toate dispozitivele.
 prefs-sync-now =
     .labelnotsyncing = Sincronizează acum
     .accesskeynotsyncing = N
@@ -674,6 +723,7 @@ sync-currently-syncing-prefs =
         [windows] Opțiuni
        *[other] Preferințe
     }
+sync-currently-syncing-settings = Setări
 sync-change-options =
     .label = Modifică…
     .accesskey = C
@@ -720,6 +770,10 @@ sync-engine-prefs =
            *[other] Preferințe
         }
     .tooltiptext = Setările generale, de confidențialitate și securitate pe care le-ai schimbat
+    .accesskey = s
+sync-engine-settings =
+    .label = Setări
+    .tooltiptext = Setările pe care le-ai modificat în secțiunile General, Confidențialitate și Securitate
     .accesskey = s
 
 ## The device name controls.
@@ -789,6 +843,10 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = Denumită anterior parolă generală
 forms-primary-pw-fips-title = Acum ești în modul FIPS. FIPS nu permite inexistența unei parole primare.
 forms-master-pw-fips-desc = Schimbarea parolei a eșuat
+forms-windows-sso =
+    .label = Permite conectarea unică Windows pentru conturile Microsoft, de la locul de muncă sau de la școală
+forms-windows-sso-learn-more-link = Află mai multe
+forms-windows-sso-desc = Gestionează conturile în setările dispozitivului
 
 ## OS Authentication dialog
 
@@ -873,17 +931,21 @@ sitedata-disallow-cookies-option =
 sitedata-block-desc = Tipul conținutului blocat
     .accesskey = T
 sitedata-option-block-cross-site-trackers =
-    .label = Elemente de urmărire între site-uri
+    .label = Elemente de urmărire inter-site-uri
 sitedata-option-block-cross-site-and-social-media-trackers =
-    .label = Elemente de urmărire de pe rețele de socializare și inter-site-uri
+    .label = Elemente de urmărire ale rețelelor sociale și inter-site-uri
+sitedata-option-block-cross-site-tracking-cookies-including-social-media =
+    .label = Cookie-uri de urmărire inter-site-uri — include cookie-uri ale rețelelor sociale
+sitedata-option-block-cross-site-cookies-including-social-media =
+    .label = Cookie-uri inter-site-uri — include cookie-uri ale rețelelor sociale
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
-    .label = Elemente de urmărire între site-uri și de rețele sociale și izolează restul cookie-urilor
+    .label = Elemente de urmărire inter-site-uri și ale rețelor sociale și izolează restul cookie-urilor
 sitedata-option-block-unvisited =
     .label = Cookie-uri de pe site-uri web nevizitate
 sitedata-option-block-all-third-party =
-    .label = Toate cookie-urile de la terți (poate împiedica funcționarea site-urilor web)
+    .label = Toate cookie-urile de la terți (poate împiedica funcționarea corectă a site-urilor web)
 sitedata-option-block-all =
-    .label = Toate cookie-urile (va împiedica funcționarea site-urilor web)
+    .label = Toate cookie-urile (va împiedica funcționarea corectă a site-urilor web)
 sitedata-clear =
     .label = Șterge datele…
     .accesskey = l
@@ -910,9 +972,16 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = File deschise
     .accesskey = O
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Comenzi rapide
+    .accesskey = C
 addressbar-locbar-topsites-option =
     .label = Site-uri de top
     .accesskey = T
+addressbar-locbar-engines-option =
+    .label = Motoare de căutare
+    .accesskey = a
 addressbar-suggestions-settings = Schimbă preferințele pentru sugestiile motoarelor de căutare…
 
 ## Privacy Section - Content Blocking
@@ -940,18 +1009,22 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Echilibrat pentru protecție și performanță. Paginile se vor încărca normal.
 content-blocking-etp-strict-desc = O protecție mai puternică, dar poate provoca funcționarea necorespunzătoare a site-urilor sau a conținutului.
 content-blocking-etp-custom-desc = Alege ce elemente de urmărire și scripturi să blochezi.
-content-blocking-private-windows = Conținut de urmărire în ferestre private
-content-blocking-cross-site-tracking-cookies = Cookie-uri de urmărire între site-uri
-content-blocking-cross-site-tracking-cookies-plus-isolate = Cookie-uri de urmărire între site-uri și izolează restul cookie-urilor
-content-blocking-social-media-trackers = Elemente de urmărire de pe rețele de socializare
+content-blocking-etp-blocking-desc = { -brand-short-name } blochează următoarele:
+content-blocking-private-windows = Conținutul de urmărire în ferestre private
+content-blocking-cross-site-cookies-in-all-windows = Cookie-urile inter-site-uri în toate ferestrele (inclusiv cookie-urile de urmărire)
+content-blocking-cross-site-tracking-cookies = Cookie-uri de urmărire inter-site-uri
+content-blocking-all-cross-site-cookies-private-windows = Cookie-uri inter-site-uri în ferestrele private
+content-blocking-cross-site-tracking-cookies-plus-isolate = Cookie-uri de urmărire inter-site-uri și izolează restul cookie-urilor
+content-blocking-social-media-trackers = Elementele de urmărire ale rețelelor sociale
 content-blocking-all-cookies = Toate cookie-urile
 content-blocking-unvisited-cookies = Cookie-uri de la site-uri nevizitate
-content-blocking-all-windows-tracking-content = Conținut de urmărire în toate ferestrele
+content-blocking-all-windows-tracking-content = Conținutul de urmărire în toate ferestrele
 content-blocking-all-third-party-cookies = Toate cookie-urile de la terți
-content-blocking-cryptominers = Criptomineri
-content-blocking-fingerprinters = Generatoare de amprente digitale
+content-blocking-cryptominers = Criptominerii
+content-blocking-fingerprinters = Detectoarele de amprente digitale
 content-blocking-warning-title = Atenție!
 content-blocking-and-isolating-etp-warning-description = Blocarea elementelor de urmărire și izolarea cookie-urilor pot afecta funcționalitatea unor site-uri. Reîmprospătează pagina cu elementele de urmărire ca să încarci tot conținutul.
+content-blocking-and-isolating-etp-warning-description-2 = Această setare poate poate determina unele site-uri web să nu afișeze conținut sau să nu funcționeze corect. Dacă un site pare să fie defect, ai posibilitatea de a dezactiva protecția de urmărire pentru acel site pentru a încărca tot conținutul.
 content-blocking-warning-learn-how = Află cum
 content-blocking-reload-description = Va trebui să reîncarci filele pentru aplicarea acestor modificări.
 content-blocking-reload-tabs-button =
@@ -979,7 +1052,7 @@ content-blocking-cryptominers-label =
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
 content-blocking-fingerprinters-label =
-    .label = Generatoare de amprente digitale
+    .label = Detectoare de amprente digitale
     .accesskey = F
 
 ## Privacy Section - Tracking
@@ -1060,6 +1133,8 @@ collection-backlogged-crash-reports =
     .label = Permite ca { -brand-short-name } să trimită în numele tău rapoarte de defecțiuni înregistrate în jurnal
     .accesskey = c
 collection-backlogged-crash-reports-link = Află mai multe
+collection-backlogged-crash-reports-with-link = Permite ca { -brand-short-name } să trimită în numele tău rapoarte de defecțiuni înregistrate în jurnal <a data-l10n-name="crash-reports-link">Află mai multe</a>
+    .accesskey = c
 
 ## Privacy Section - Security
 ##
@@ -1121,6 +1196,9 @@ space-alert-under-5gb-ok-button =
     .label = OK, am înțeles
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } rămâne fără spațiu pe disc. Este posibil ca conținutul site-ului web să nu fie afișat corespunzător. Vizitează „Află mai multe” pentru a optimiza utilizarea discului în vederea unei mai bune experiențe de navigare.
+space-alert-over-5gb-settings-button =
+    .label = Deschide setările
+    .accesskey = O
 
 ## Privacy Section - HTTPS-Only
 

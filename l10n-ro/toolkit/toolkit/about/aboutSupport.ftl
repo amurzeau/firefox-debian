@@ -40,7 +40,7 @@ app-basics-title = Informații de bază privind aplicația
 app-basics-name = Nume
 app-basics-version = Versiune
 app-basics-build-id = ID-ul versiunii compilate
-app-basics-distribution-id = ID distribuție
+app-basics-distribution-id = ID de distribuție
 app-basics-update-channel = Canal de actualizare
 # This message refers to the folder used to store updates on the device,
 # as in "Folder for updates". "Update" is a noun, not a verb.
@@ -64,7 +64,8 @@ app-basics-user-agent = Agent utilizator
 app-basics-os = SO
 app-basics-memory-use = Utilizarea memoriei
 app-basics-performance = Performanță
-app-basics-service-workers = Scripturi Service Worker înregistrate
+app-basics-service-workers = Scripturi service worker înregistrate
+app-basics-third-party = Module terțe
 app-basics-profiles = Profiluri
 app-basics-launcher-process-status = Procesul lansatorului
 app-basics-multi-process-support = Ferestre multiproces
@@ -129,10 +130,10 @@ sandbox-sys-call-number = Apel sistem
 sandbox-sys-call-args = Argumente
 safe-mode-title = Încearcă modul sigur
 restart-in-safe-mode-label = Repornește cu suplimentele dezactivate…
+troubleshoot-mode-title = Diagnostică problemele
+restart-in-troubleshoot-mode-label = Mod de depanare…
 clear-startup-cache-title = Încearcă să golești cache-ul de pornire
 clear-startup-cache-label = Golește cache-ul de pornire…
-startup-cache-dialog-title = Golește cache-ul de pornire
-startup-cache-dialog-body = Repornește { -brand-short-name } pentru golirea cache-ului. Acțiunea nu îți va modifica setările și nu îți va șterge extensiile pe care le-ai adăugat în { -brand-short-name }.
 restart-button-label = Repornește
 
 ## Media titles
@@ -155,7 +156,7 @@ media-device-rate = Rată
 media-device-latency = Latență
 media-capabilities-title = Capabilități media
 # List all the entries of the database.
-media-capabilities-enumerate = Enumerare bază de date
+media-capabilities-enumerate = Enumeră baza de date
 
 ##
 
@@ -184,6 +185,8 @@ remote-debugging-url = URL
 
 ##
 
+support-third-party-modules-title = Module terțe
+support-third-party-modules-no-value = (Nicio valoare)
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
@@ -354,3 +357,21 @@ touch-warning = intrarea tactilă asincronă dezactivată datorită unei preferi
 policies-inactive = Inactiv
 policies-active = Activ
 policies-error = Eroare
+
+## Printing section
+
+support-printing-title = Tipărire
+support-printing-troubleshoot = Depanare
+support-printing-clear-settings-button = Golește setările de tipărire salvate
+support-printing-modified-settings = Setări de tipărire modificate
+support-printing-prefs-name = Nume
+support-printing-prefs-value = Valoare
+
+## Normandy sections
+
+support-remote-experiments-title = Experimente la distanță
+support-remote-experiments-name = Nume
+support-remote-experiments-see-about-studies = Consultă <a data-l10n-name="support-about-studies-link">about:studies</a> pentru mai multe informații, inclusiv cum să dezactivezi experimentele individuale sau cum să împiedici { -brand-short-name } să ruleze acest tip de experiment în viitor.
+support-remote-features-title = Funcții la distanță
+support-remote-features-name = Nume
+support-remote-features-status = Stare

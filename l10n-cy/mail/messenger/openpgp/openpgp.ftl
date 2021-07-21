@@ -4,6 +4,16 @@
 
 e2e-intro-description = I anfon negeseuon wedi'u hamgryptio neu wedi'u llofnodi'n ddigidol, mae angen i chi ffurfweddu technoleg amgryptio, naill ai OpenPGP neu S / MIME.
 e2e-intro-description-more = Dewiswch eich allwedd bersonol i alluogi defnyddio OpenPGP, neu'ch tystysgrif bersonol i alluogi defnyddio S/MIME. Ar gyfer allwedd neu dystysgrif bersonol chi sy'n berchen ar yr allwedd gyfrinachol gyfatebol.
+e2e-advanced-section = Gosodiadau uwch
+e2e-attach-key =
+    .label = Atodwch fy allwedd gyhoeddus wrth ychwanegu llofnod digidol OpenPGP
+    .accesskey = A
+e2e-encrypt-subject =
+    .label = Amgryptio destun negeseuon OpenPGP
+    .accesskey = A
+e2e-encrypt-drafts =
+    .label = Cadw negeseuon drafft mewn fformat wedi'i amgryptio
+    .accesskey = C
 openpgp-key-user-id-label = Cyfrif / ID Defnyddiwr
 openpgp-keygen-title-label =
     .title = Cynhyrchu Allwedd OpenPGP
@@ -629,6 +639,12 @@ no-temp-dir =
 possibly-pgp-mime = Neges wedi'i hamgryptio neu wedi'i llofnodi gan PGP/MIME o bosibl; defnyddiwch swyddogaeth 'Dadgryptio/Gwirio' i wirio
 cannot-send-sig-because-no-own-key = Methu llofnodi'r neges hon yn ddigidol, oherwydd nid ydych eto wedi ffurfweddu amgryptio pen-i-ben ar gyfer <{ $key }>
 cannot-send-enc-because-no-own-key = Methu anfon y neges hon wedi'i hamgryptio, oherwydd nid ydych eto wedi ffurfweddu amgryptio pen-i-ben ar gyfer <{ $key }>
+compose-menu-attach-key =
+    .label = Atodi fy Allwedd Gyhoeddus
+    .accesskey = A
+compose-menu-encrypt-subject =
+    .label = Amgryptio Pwnc
+    .accesskey = A
 # Strings used in decryption.jsm
 do-import-multiple =
     Mewnforio'r allweddi canlynol?

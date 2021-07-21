@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = Přizpůsobit
     .title = Přizpůsobení nového panelu
     .aria-label = Přizpůsobení nového panelu
+newtab-personalize-icon-label =
+    .title = Přizpůsobení nového panelu
+    .aria-label = Přizpůsobení nového panelu
 newtab-personalize-dialog-label =
     .aria-label = Přizpůsobit
 
@@ -39,7 +42,6 @@ newtab-search-box-search-the-web-input =
     .placeholder = Vyhledat na webu
     .title = Vyhledat na webu
     .aria-label = Vyhledat na webu
-newtab-search-box-text = Vyhledat na webu
 newtab-search-box-input =
     .placeholder = Vyhledat na webu
     .aria-label = Vyhledat na webu
@@ -241,7 +243,7 @@ newtab-custom-shortcuts-title = Zkratky
 newtab-custom-shortcuts-subtitle = Uložené nebo navštěvované stránky
 newtab-custom-row-selector =
     { $num ->
-        [one] Jeden řádek
+        [one] { $num } řádek
         [few] { $num } řádky
        *[other] { $num } řádků
     }

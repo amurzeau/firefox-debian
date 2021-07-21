@@ -1,2 +1,2 @@
-20210716144314
-https://hg.mozilla.org/releases/mozilla-release/rev/3d2c7096604506dc42cb52a2fe4981361fdbab46
+20210721174149
+https://hg.mozilla.org/releases/mozilla-release/rev/cda19fb46018c9cb8dc5e6127ebb2cfd04aa9be4

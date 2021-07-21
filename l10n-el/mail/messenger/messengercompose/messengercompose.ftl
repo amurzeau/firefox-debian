@@ -8,9 +8,6 @@
 #   $type (String) - the type of the addressing row
 remove-address-row-type = Αφαίρεση πεδίου "{ $type }"
 #   $type (String) - the type of the addressing row
-remove-address-row-type-label =
-    .tooltiptext = Αφαίρεση πεδίου "{ $type }"
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Αφαίρεση πεδίου "{ $type }"
 #   $type (String) - the type of the addressing row
@@ -121,8 +118,6 @@ move-attachment-last-panel-button =
 button-return-receipt =
     .label = Αποδεικτικό
     .tooltiptext = Απαίτηση αποδεικτικού προβολής για αυτό το μήνυμα
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-consider-bcc-notification = Οι { $count } παραλήπτες στα πεδία "Προς" και "Κοιν." μπορούν να δουν τις διευθύνσεις των υπολοίπων. Μπορείτε να αποφύγετε την αποκάλυψη των παραληπτών με το πεδίο "Κρυφή κοιν.".
 
 # Addressing Area
 
@@ -170,3 +165,12 @@ many-public-recipients-ignore =
 # Variables:
 # $identity (string) - The name of the used identity, most likely an email address.
 compose-missing-identity-warning = Δεν βρέθηκε μοναδική ταυτότητα που να αντιστοιχεί στη διεύθυνση "Από". Το μήνυμα θα αποσταλεί με το τρέχον πεδίο "Από" και τις ρυθμίσεις της ταυτότητας "{ $identity }".
+encrypted-bcc-ignore-button = Κατάλαβα
+
+## Editing
+
+
+# Tools
+
+compose-tool-button-remove-text-styling =
+    .tooltiptext = Κατάργηση μορφοποίησης κειμένου

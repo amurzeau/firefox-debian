@@ -257,6 +257,7 @@ confirm-browser-language-change-button = Применить и перезапу�
 translate-web-pages =
     .label = Перевод веб-страниц
     .accesskey = и
+fx-translate-web-pages = { -translations-brand-name }
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = Перевод выполняется <img data-l10n-name="logo"/>
@@ -861,6 +862,10 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = Вы работаете в режиме соответствия FIPS. При работе в этом режиме необходимо установить мастер-пароль.
 forms-master-pw-fips-desc = Смена пароля не удалась
+forms-windows-sso =
+    .label = Разрешить единый вход Windows для учётных записей Microsoft, учётных записей на работе и в учебных заведениях
+forms-windows-sso-learn-more-link = Подробнее
+forms-windows-sso-desc = Управление аккаунтами в настройках вашего устройства
 
 ## OS Authentication dialog
 
@@ -1113,6 +1118,12 @@ permissions-block-popups =
 permissions-block-popups-exceptions =
     .label = Исключения…
     .accesskey = ю
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = Исключения…
+    .accesskey = ю
+    .searchkeywords = popup
 permissions-addon-install-warning =
     .label = Предупреждать при попытке веб-сайтов установить дополнения
     .accesskey = е

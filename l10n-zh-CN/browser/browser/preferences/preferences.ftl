@@ -250,6 +250,7 @@ confirm-browser-language-change-button = 应用并重启浏览器
 translate-web-pages =
     .label = 翻译网页内容
     .accesskey = T
+fx-translate-web-pages = { -translations-brand-name }
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = 翻译由 <img data-l10n-name="logo"/> 提供
@@ -283,7 +284,7 @@ download-choose-folder =
            *[other] o
         }
 download-always-ask-where =
-    .label = 每次都问您要存到哪
+    .label = 每次都问您要存到何处
     .accesskey = A
 applications-header = 应用程序
 applications-description = 选择 { -brand-short-name } 如何处理这些文件。
@@ -390,7 +391,7 @@ update-application-background-enabled =
     .accesskey = W
 update-application-warning-cross-user-setting = 此设置将影响使用这份 { -brand-short-name } 程序的所有 Windows 账户及 { -brand-short-name } 配置文件。
 update-application-use-service =
-    .label = 使用一项系统服务以静默安装更新
+    .label = 使用后台服务静默安装更新
     .accesskey = b
 update-setting-write-failure-title = 保存“更新”首选项时出错
 # Variables:
@@ -849,6 +850,10 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = 您正处于 FIPS 模式。该模式需要一个非空的主密码。
 forms-master-pw-fips-desc = 密码修改失败
+forms-windows-sso =
+    .label = 允许面向 Microsoft 账户（个人/工作/学校）的 Windows 单点登录
+forms-windows-sso-learn-more-link = 详细了解
+forms-windows-sso-desc = 在您的设备设置中管理账户
 
 ## OS Authentication dialog
 
@@ -1101,6 +1106,12 @@ permissions-block-popups =
 permissions-block-popups-exceptions =
     .label = 例外…
     .accesskey = E
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = 例外…
+    .accesskey = e
+    .searchkeywords = popups 彈出 視窗
 permissions-addon-install-warning =
     .label = 当网站尝试安装附加组件时警告您
     .accesskey = W

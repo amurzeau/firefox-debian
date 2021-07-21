@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = Testreszabás
     .title = Új lap testreszabása
     .aria-label = Új lap testreszabása
+newtab-personalize-icon-label =
+    .title = Új lap testreszabása
+    .aria-label = Új lap testreszabása
 newtab-personalize-dialog-label =
     .aria-label = Testreszabás
 
@@ -39,7 +42,6 @@ newtab-search-box-search-the-web-input =
     .placeholder = Keresés a weben
     .title = Keresés a weben
     .aria-label = Keresés a weben
-newtab-search-box-text = Keresés a weben
 newtab-search-box-input =
     .placeholder = Keresés a weben
     .aria-label = Keresés a weben

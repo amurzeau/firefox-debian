@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = Kişiselleştir
     .title = Yeni sekmeyi kişiselleştir
     .aria-label = Yeni sekmeyi kişiselleştir
+newtab-personalize-icon-label =
+    .title = Yeni sekmeyi kişiselleştir
+    .aria-label = Yeni sekmeyi kişiselleştir
 newtab-personalize-dialog-label =
     .aria-label = Kişiselleştir
 
@@ -39,7 +42,6 @@ newtab-search-box-search-the-web-input =
     .placeholder = Web’de ara
     .title = Web’de ara
     .aria-label = Web’de ara
-newtab-search-box-text = Web’de ara
 newtab-search-box-input =
     .placeholder = Web’de ara
     .aria-label = Web’de ara

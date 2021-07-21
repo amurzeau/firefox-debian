@@ -10,6 +10,10 @@ account-setup-title = Configurar para usar seu endereço de email existente
 account-setup-description =
     Para usar seu endereço de email atual, preencha suas credenciais.<br/>
     O { -brand-product-name } irá procurar automaticamente uma configuração de servidor recomendada que esteja funcionando.
+account-setup-secondary-description = O { -brand-product-name } procura automaticamente uma configuração de servidor recomendada e que esteja funcionando.
+account-setup-success-title = Conta criada com sucesso
+account-setup-success-description = Agora você pode usar esta conta no { -brand-short-name }.
+account-setup-success-secondary-description = Você pode melhorar a experiência de uso conectando serviços relacionados e configurando preferências avançadas de contas.
 
 ## Form fields
 
@@ -98,11 +102,16 @@ account-setup-step3-image =
     .title = Configuração encontrada
 account-setup-step4-image =
     .title = Erro de conexão
-account-setup-privacy-footnote = Suas credenciais serão usadas de acordo com nossa <a data-l10n-name="privacy-policy-link">política de privacidade</a> e serão armazenadas somente localmente no seu computador.
+account-setup-step5-image =
+    .title = Conta criada
+account-setup-privacy-footnote2 = Suas credenciais são armazenadas só localmente em seu computador.
 account-setup-selection-help = Não tem certeza do que selecionar?
 account-setup-selection-error = Precisa de ajuda?
+account-setup-success-help = Não tem certeza do que fazer a seguir?
 account-setup-documentation-help = Documentação de configuração
 account-setup-forum-help = Fórum de suporte
+account-setup-privacy-help = Política de privacidade
+account-setup-getting-started = Introdução
 
 ## Results area
 
@@ -121,7 +130,8 @@ account-setup-result-pop = POP3
 account-setup-result-pop-description = Mantém suas pastas e emails em seu computador
 # Note: Exchange is the name of a product.
 account-setup-result-exchange = Exchange
-account-setup-result-exchange-description = Servidor Microsoft Exchange
+# Note: Exchange, Office365 are the name of products.
+account-setup-result-exchange2-description = Usar servidor Microsoft Exchange ou serviços na nuvem do Office365
 account-setup-incoming-title = Recebimento
 account-setup-outgoing-title = Envio
 account-setup-username-title = Nome de usuário
@@ -211,3 +221,68 @@ account-setup-confirm-advanced-description = Este diálogo será fechado e será
 account-setup-addon-install-title = Instalar
 account-setup-addon-install-intro = Uma extensão de terceiros pode permitir que você acesse sua conta de email neste servidor:
 account-setup-addon-no-protocol = Este servidor de email infelizmente não suporta protocolos abertos. { account-setup-addon-install-intro }
+
+## Success view
+
+account-setup-settings-button = Configurações de contas
+account-setup-encryption-button = Criptografia de ponta a ponta
+account-setup-signature-button = Adicionar uma assinatura
+account-setup-dictionaries-button = Baixar dicionários
+account-setup-address-book-carddav-button = Conectar a um catálogo de endereços CardDAV
+account-setup-address-book-ldap-button = Conectar a um catálogo de endereços LDAP
+account-setup-calendar-button = Conectar a uma agenda remota
+account-setup-linked-services-title = Conectar seus serviços vinculados
+account-setup-linked-services-description = O { -brand-short-name } detectou outros serviços vinculados à sua conta de email.
+account-setup-no-linked-description = Configurar outros serviços para aproveitar ao máximo sua experiência de uso do { -brand-short-name }.
+# Variables:
+# $count (Number) - The number of address books found during autoconfig.
+account-setup-found-address-books-description =
+    { $count ->
+        [one] O { -brand-short-name } encontrou um catálogo de endereços vinculado à sua conta de email.
+       *[other] O { -brand-short-name } encontrou { $count } catálogos de endereços vinculados à sua conta de email.
+    }
+# Variables:
+# $count (Number) - The number of calendars found during autoconfig.
+account-setup-found-calendars-description =
+    { $count ->
+        [one] O { -brand-short-name } encontrou uma agenda vinculada à sua conta de email.
+       *[other] O { -brand-short-name } encontrou { $count } agendas vinculadas à sua conta de email.
+    }
+account-setup-button-finish = Concluir
+    .accesskey = C
+account-setup-looking-up-address-books = Procurando catálogos de endereços…
+account-setup-looking-up-calendars = Procurando agendas…
+account-setup-address-books-button = Catálogos de endereços
+account-setup-calendars-button = Agendas
+account-setup-connect-link = Conectar
+account-setup-existing-address-book = Conectado
+    .title = Catálogo de endereços já conectado
+account-setup-existing-calendar = Conectado
+    .title = Agenda já conectada
+account-setup-connect-all-calendars = Conectar todas as agendas
+account-setup-connect-all-address-books = Conectar todos os catálogos de endereços
+
+## Calendar synchronization dialog
+
+calendar-dialog-title = Conectar agenda
+calendar-dialog-cancel-button = Cancelar
+    .accesskey = C
+calendar-dialog-confirm-button = Conectar
+    .accesskey = n
+account-setup-calendar-name-label = Nome
+account-setup-calendar-name-input =
+    .placeholder = Minha agenda
+account-setup-calendar-color-label = Cor
+account-setup-calendar-refresh-label = Atualizar
+account-setup-calendar-refresh-manual = Manualmente
+account-setup-calendar-refresh-interval =
+    { $count ->
+        [one] A cada minuto
+       *[other] A cada { $count } minutos
+    }
+account-setup-calendar-read-only = Somente leitura
+    .accesskey = l
+account-setup-calendar-show-reminders = Exibir lembretes
+    .accesskey = E
+account-setup-calendar-offline-support = Suporte offline
+    .accesskey = o

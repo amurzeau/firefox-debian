@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = התאמה אישית
     .title = התאמה אישית של דף הלשונית החדשה
     .aria-label = התאמה אישית של דף הלשונית החדשה
+newtab-personalize-icon-label =
+    .title = התאמה אישית של דף הלשונית החדשה
+    .aria-label = התאמה אישית של דף הלשונית החדשה
 newtab-personalize-dialog-label =
     .aria-label = התאמה אישית
 
@@ -39,7 +42,6 @@ newtab-search-box-search-the-web-input =
     .placeholder = חיפוש ברשת
     .title = חיפוש ברשת
     .aria-label = חיפוש ברשת
-newtab-search-box-text = חיפוש ברשת
 newtab-search-box-input =
     .placeholder = חיפוש ברשת
     .aria-label = חיפוש ברשת

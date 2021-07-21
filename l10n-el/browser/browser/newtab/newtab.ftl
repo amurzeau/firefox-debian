@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = Εξατομίκευση
     .title = Εξατομίκευση νέας καρτέλας
     .aria-label = Εξατομίκευση νέας καρτέλας
+newtab-personalize-icon-label =
+    .title = Εξατομίκευση νέας καρτέλας
+    .aria-label = Εξατομίκευση νέας καρτέλας
 newtab-personalize-dialog-label =
     .aria-label = Εξατομίκευση
 
@@ -39,7 +42,6 @@ newtab-search-box-search-the-web-input =
     .placeholder = Αναζήτηση στο διαδίκτυο
     .title = Αναζήτηση στο διαδίκτυο
     .aria-label = Αναζήτηση στο διαδίκτυο
-newtab-search-box-text = Αναζήτηση στο διαδίκτυο
 newtab-search-box-input =
     .placeholder = Αναζήτηση στο διαδίκτυο
     .aria-label = Αναζήτηση στο διαδίκτυο

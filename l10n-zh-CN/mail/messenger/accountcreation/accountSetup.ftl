@@ -10,6 +10,10 @@ account-setup-title = 设置现有的电子邮件地址
 account-setup-description =
     若要使用您现有的电子邮件地址，请填写您的凭据。<br/>
     { -brand-product-name } 将会自动查询可用并推荐使用的服务器配置。
+account-setup-secondary-description = { -brand-product-name } 将自动搜索可用的和推荐的服务器配置。
+account-setup-success-title = 成功创建账户！
+account-setup-success-description = 您可以在 { -brand-short-name } 使用此账户了。
+account-setup-success-secondary-description = 您可以连接相关服务并配置账户高级选项来提升使用体验。
 
 ## Form fields
 
@@ -98,11 +102,16 @@ account-setup-step3-image =
     .title = 找到配置
 account-setup-step4-image =
     .title = 连接错误
-account-setup-privacy-footnote = 凭据将遵循我们的<a data-l10n-name="privacy-policy-link">隐私政策</a>进行使用，且仅会存储在本地。
+account-setup-step5-image =
+    .title = 已创建账户
+account-setup-privacy-footnote2 = 您的登录凭据只会存储在您的计算机本地。
 account-setup-selection-help = 不确定要怎么选？
 account-setup-selection-error = 需要帮助？
+account-setup-success-help = 不确定接下来做什么吗？
 account-setup-documentation-help = 设置文档
 account-setup-forum-help = 支持论坛
+account-setup-privacy-help = 隐私政策
+account-setup-getting-started = 开始使用
 
 ## Results area
 
@@ -120,7 +129,8 @@ account-setup-result-pop = POP3
 account-setup-result-pop-description = 将您服务器上的各文件夹与邮件下载到本地
 # Note: Exchange is the name of a product.
 account-setup-result-exchange = Exchange
-account-setup-result-exchange-description = Microsoft Exchange 服务器
+# Note: Exchange, Office365 are the name of products.
+account-setup-result-exchange2-description = 使用 Microsoft Exchange 服务器或 Office365 云服务
 account-setup-incoming-title = 收件
 account-setup-outgoing-title = 发件
 account-setup-username-title = 用户名
@@ -210,3 +220,68 @@ account-setup-confirm-advanced-description = 此对话框将关闭，即使配�
 account-setup-addon-install-title = 安装
 account-setup-addon-install-intro = 安装第三方附加组件后，可让您访问此服务器上的邮件账户：
 account-setup-addon-no-protocol = 此邮件服务器不支持开放式协议。{ account-setup-addon-install-intro }
+
+## Success view
+
+account-setup-settings-button = 账户设置
+account-setup-encryption-button = 端到端加密
+account-setup-signature-button = 添加签名
+account-setup-dictionaries-button = 下载字典
+account-setup-address-book-carddav-button = 连接 CardDAV 通讯录
+account-setup-address-book-ldap-button = 连接 LDAP 通讯录
+account-setup-calendar-button = 连接远程日历
+account-setup-linked-services-title = 绑定您的在线服务
+account-setup-linked-services-description = { -brand-short-name } 检测到您的邮件账户可连接其他服务。
+account-setup-no-linked-description = 设置其他服务，体验 { -brand-short-name } 的更多功能。
+# Variables:
+# $count (Number) - The number of address books found during autoconfig.
+account-setup-found-address-books-description =
+    { $count ->
+        [one] { -brand-short-name } 检测到有一份通讯录与您的邮件账户连接。
+       *[other] { -brand-short-name } 检测到有 { $count } 份通讯录与您的邮件账户连接。
+    }
+# Variables:
+# $count (Number) - The number of calendars found during autoconfig.
+account-setup-found-calendars-description =
+    { $count ->
+        [one] { -brand-short-name } 检测到有一份日历与您的邮件账户连接。
+       *[other] { -brand-short-name } 检测到有 { $count } 份日历与您的邮件账户连接。
+    }
+account-setup-button-finish = 完成
+    .accesskey = F
+account-setup-looking-up-address-books = 正在查找通讯录…
+account-setup-looking-up-calendars = 正在查找日历…
+account-setup-address-books-button = 通讯录
+account-setup-calendars-button = 日历
+account-setup-connect-link = 连接
+account-setup-existing-address-book = 已连接
+    .title = 已连接该通讯录
+account-setup-existing-calendar = 已连接
+    .title = 已连接该日历
+account-setup-connect-all-calendars = 连接所有日历
+account-setup-connect-all-address-books = 连接所有通讯录
+
+## Calendar synchronization dialog
+
+calendar-dialog-title = 连接日历
+calendar-dialog-cancel-button = 取消
+    .accesskey = C
+calendar-dialog-confirm-button = 连接
+    .accesskey = n
+account-setup-calendar-name-label = 名称
+account-setup-calendar-name-input =
+    .placeholder = 我的日历
+account-setup-calendar-color-label = 颜色
+account-setup-calendar-refresh-label = 刷新
+account-setup-calendar-refresh-manual = 手动
+account-setup-calendar-refresh-interval =
+    { $count ->
+        [one] 每分钟
+       *[other] 每 { $count } 分钟
+    }
+account-setup-calendar-read-only = 只读
+    .accesskey = R
+account-setup-calendar-show-reminders = 显示提醒
+    .accesskey = S
+account-setup-calendar-offline-support = 离线支持
+    .accesskey = O

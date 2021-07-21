@@ -633,10 +633,11 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Kemerit ho web ganeoc'h
-sync-signedout-description = Goubredit ho sinedoù, roll istor, ivinelloù, gerioù-tremen, askouezhioù ha gwellvezioù dre veur a urzhiataer pe trevnad.
+sync-signedout-description = Goubredit ho sinedoù, roll istor, ivinelloù, gerioù-tremen, askouezhioù ha gwellvezioù dre veur a drevnad.
 sync-signedout-account-signin2 =
     .label = Kennaskañ ouzh { -sync-brand-short-name }...
     .accesskey = K
+sync-signedout-description2 = Goubredit ho sinedoù, roll istor, ivinelloù, gerioù-tremen, askouezhioù ha arventennoù dre veur a drevnad.
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -675,7 +676,8 @@ prefs-syncing-off = Goubredañ: KET
 prefs-sync-setup =
     .label = Arventennañ { -sync-brand-short-name }…
     .accesskey = A
-prefs-sync-offer-setup-label = Goubredit ho sinedoù, roll istor, ivinelloù, gerioù-tremen, askouezhioù ha gwellvezioù dre veur a urzhiataer pe trevnad.
+prefs-sync-offer-setup-label = Goubredit ho sinedoù, roll istor, ivinelloù, gerioù-tremen, askouezhioù ha gwellvezioù dre veur a drevnad.
+prefs-sync-offer-setup-label2 = Goubredit ho sinedoù, roll istor, ivinelloù, gerioù-tremen, askouezhioù hag arventennoù dre veur a drevnad.
 prefs-sync-now =
     .labelnotsyncing = Goubredañ bremañ
     .accesskeynotsyncing = G
@@ -963,7 +965,6 @@ content-blocking-etp-standard-desc = Kempouez etre gwarez ha digonusted. Ar paje
 content-blocking-etp-strict-desc = Gwarez kreñvoc'h, met gallout a ra lakaat lec'hiennoù ’zo da derriñ.
 content-blocking-etp-custom-desc = Dibabit pe heulier pe skript herzel.
 content-blocking-private-windows = Heulierien er prenestroù prevez
-content-blocking-cross-site-cookies = Toupinoù etrelec'hienn
 content-blocking-cross-site-tracking-cookies = Toupinoù heuliañ etre-lec'hienn
 content-blocking-social-media-trackers = Heulierien media kevredadel
 content-blocking-all-cookies = An holl doupinoù

@@ -254,6 +254,7 @@ confirm-browser-language-change-button = Toepassen en herstarten
 translate-web-pages =
     .label = Webinhoud vertalen
     .accesskey = W
+fx-translate-web-pages = { -translations-brand-name }
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = Vertalingen door <img data-l10n-name="logo"/>
@@ -857,6 +858,10 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = U bent momenteel in FIPS-modus. FIPS vereist een ingesteld hoofdwachtwoord.
 forms-master-pw-fips-desc = Wachtwoordwijziging mislukt
+forms-windows-sso =
+    .label = Windows-single-sign-on toestaan voor Microsoft-, werk- en schoolaccounts
+forms-windows-sso-learn-more-link = Meer info
+forms-windows-sso-desc = Accounts beheren in uw apparaatinstellingen
 
 ## OS Authentication dialog
 

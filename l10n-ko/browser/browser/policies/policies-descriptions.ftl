@@ -31,7 +31,7 @@ policy-DisableAppUpdate = 브라우저가 업데이트 되지 않게 합니다.
 policy-DisableBuiltinPDFViewer = { -brand-short-name }에 내장된 PDF 뷰어인 PDF.js를 사용 안 합니다.
 policy-DisableDefaultBrowserAgent = 기본 브라우저 에이전트가 작업을 수행하지 못하도록 합니다. Windows에만 적용되며 다른 플랫폼에는 에이전트가 없습니다.
 policy-DisableDeveloperTools = 개발자 도구 접근을 차단합니다.
-policy-DisableFeedbackCommands = 도움말 메뉴의 사용자 의견 보내기 명령 (사용자 의견 보내기 및 가짜 사이트 신고)을 사용 안 합니다.
+policy-DisableFeedbackCommands = 도움말 메뉴의 의견 보내기 명령 (의견 보내기 및 가짜 사이트 신고)을 사용 안 합니다.
 policy-DisableFirefoxAccounts = 동기화를 포함한 { -fxaccount-brand-name } 기반의 서비스를 사용 안 합니다.
 # Firefox Screenshots is the name of the feature, and should not be translated.
 policy-DisableFirefoxScreenshots = Firefox 스크린샷 기능을 사용 안 합니다.
@@ -116,3 +116,4 @@ policy-SupportMenu = 도움말 메뉴에 사용자 지정 지원 메뉴 항목�
 policy-UserMessaging = 사용자에게 특정 메시지를 표시하지 않습니다.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = 특정 웹 사이트 방문을 차단합니다. 자세한 형식에 대해서는 문서를 참고하세요.
+policy-Windows10SSO = Microsoft, 회사 및 학교 계정에 Windows Single Sign-On을 허용합니다.

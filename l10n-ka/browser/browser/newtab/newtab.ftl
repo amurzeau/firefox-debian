@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = მორგება
     .title = ახალი ჩანართის მორგება
     .aria-label = ახალი ჩანართის მორგება
+newtab-personalize-icon-label =
+    .title = ახალი ჩანართის მორგება
+    .aria-label = ახალი ჩანართის მორგება
 newtab-personalize-dialog-label =
     .aria-label = მორგება
 
@@ -39,7 +42,6 @@ newtab-search-box-search-the-web-input =
     .placeholder = ინტერნეტში ძიება
     .title = ინტერნეტში ძიება
     .aria-label = ინტერნეტში ძიება
-newtab-search-box-text = ინტერნეტში ძიება
 newtab-search-box-input =
     .placeholder = ინტერნეტში ძიება
     .aria-label = ინტერნეტში ძიება

@@ -33,7 +33,7 @@ about-logins-menu-menuitem-export-logins = Извези пријаве…
 about-logins-menu-menuitem-remove-all-logins = Уклони све пријаве…
 menu-menuitem-preferences = Подешавања
 about-logins-menu-menuitem-help = Помоћ
-menu-menuitem-android-app = { -lockwise-brand-short-name } за Андроид
+menu-menuitem-android-app = { -lockwise-brand-short-name } за Android
 menu-menuitem-iphone-app = { -lockwise-brand-short-name } за iPhone и iPad
 
 ## Login List
@@ -298,7 +298,7 @@ about-logins-export-file-picker-title = Извоз датотеке са при�
 # The default file name shown in the file picker when exporting saved logins.
 # This must end in .csv
 about-logins-export-file-picker-default-filename = logins.csv
-about-logins-export-file-picker-export-button = Извоз
+about-logins-export-file-picker-export-button = Извези
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
 about-logins-export-file-picker-csv-filter-title = CSV датотека
@@ -342,7 +342,7 @@ about-logins-import-dialog-done = Готово
 about-logins-import-dialog-error-title = Грешка при увозу
 about-logins-import-dialog-error-conflicting-values-title = Више конфликтних вредности за једну пријаву
 about-logins-import-dialog-error-conflicting-values-description = На пример: више корисничких имена, лозинки или URL адреса за једну пријаву.
-about-logins-import-dialog-error-file-format-title = Грешка формата датотеке
+about-logins-import-dialog-error-file-format-title = Проблем са форматом датотеке
 about-logins-import-dialog-error-file-format-description = Заглавља колона су неважећа или недостају. Проверите да ли датотека садржи колоне за корисничко име, лозинку и адресу.
 about-logins-import-dialog-error-file-permission-title = Није могуће прочитати датотеку
 about-logins-import-dialog-error-file-permission-description = { -brand-short-name } нема дозволу да прочита датотеку. Покушајте да промените дозволе датотеке.

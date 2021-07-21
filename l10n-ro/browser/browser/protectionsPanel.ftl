@@ -38,9 +38,9 @@ protections-panel-not-blocking-why-etp-off-tooltip = Toate elementele de urmări
 
 ##
 
-protections-panel-no-trackers-found = Nu s-a depistat niciun element de urmărire cunoscut de { -brand-short-name } pe această pagină.
+protections-panel-no-trackers-found = Nu s-a detectat niciun element de urmărire cunoscut de { -brand-short-name } pe această pagină.
 protections-panel-content-blocking-tracking-protection = Conținut de urmărire
-protections-panel-content-blocking-socialblock = Elemente de urmărire de pe rețele de socializare
+protections-panel-content-blocking-socialblock = Elemente de urmărire ale rețelelor sociale
 protections-panel-content-blocking-cryptominers-label = Criptomineri
 protections-panel-content-blocking-fingerprinters-label = Generatoare de amprente digitale
 
@@ -52,7 +52,7 @@ protections-panel-content-blocking-fingerprinters-label = Generatoare de amprent
 
 protections-panel-blocking-label = Blocate
 protections-panel-not-blocking-label = Permise
-protections-panel-not-found-label = Nedepistate deloc
+protections-panel-not-found-label = Niciunul detectat
 
 ##
 
@@ -75,11 +75,12 @@ protections-panel-site-not-working-view-send-report = Trimite un raport
 
 ##
 
-protections-panel-cross-site-tracking-cookies = Aceste cookie-uri te urmăresc de pe un site pe altul și adună date despre ce faci online. Sunt setate de părți terțe, precum firmele care își fac publicitate și companiile de analitică.
+protections-panel-cross-site-tracking-cookies = Aceste cookie-uri te urmăresc de pe un site pe altul și adună date despre ce faci online. Acestea sunt setate de părți terțe, precum agenții de publicitate și companiile de analitică.
 protections-panel-cryptominers = Criptomomerii folosesc puterea de calcul a sistemului tău pentru a mina bani digitali. Scripturile de criptominare îți scurg bateria, încetinesc calculatorul și îți pot crește factura la energie.
-protections-panel-fingerprinters = Generatoarele de amprente digitale îți colectează setările din browser și calculator și creează un profil despre tine. Cu această amprentă digitală, te pot urmări pe diferite site-uri web.
+protections-panel-fingerprinters = Detectoarele de amprente digitale îți colectează setările din browser și calculator și creează un profil despre tine. Cu această amprentă digitală, te pot urmări pe diferite site-uri web.
 protections-panel-tracking-content = Site-urile web pot încărca reclame externe, videoclipuri și alte conținuturi ce conțin coduri de urmărire. Blocarea conținutului de urmărire poate ajuta site-urile să se încarce mai rapid, dar este posibil ca unele butoane, formulare și câmpuri de autentificare să nu funcționeze.
 protections-panel-social-media-trackers = Rețelele de socializare plasează elemente de urmărire pe alte site-uri web pentru a urmări ce faci, ce vezi și ce urmărești online. Ele permit firmelor care dețin rețelele de socializare să afle mai multe despre tine, dincolo de ce partajezi pe profilurile de pe rețelele de socializare.
+protections-panel-description-shim-allowed-learn-more = Află mai multe
 protections-panel-content-blocking-manage-settings =
     .label = Gestionează setările pentru protecție
     .accesskey = M

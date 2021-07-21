@@ -164,7 +164,7 @@ startup-restore-previous-session =
 startup-restore-warn-on-quit =
     .label = Cảnh báo bạn khi thoát khỏi trình duyệt
 disable-extension =
-    .label = Tắt tiện ích mở rộng
+    .label = Vô hiệu hóa tiện ích mở rộng
 tabs-group-header = Thẻ
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab để chuyển qua các thẻ theo thứ tự sử dụng gần đây nhất
@@ -242,6 +242,7 @@ confirm-browser-language-change-button = Áp dụng và Khởi động lại
 translate-web-pages =
     .label = Dịch nội dung web
     .accesskey = D
+fx-translate-web-pages = { -translations-brand-name }
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = Dịch bởi <img data-l10n-name="logo"/>
@@ -841,6 +842,10 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = Bạn hiện đang ở chế độ FIPS. FIPS yêu cầu tính năng mật khẩu chính.
 forms-master-pw-fips-desc = Thay đổi mật khẩu không thành công
+forms-windows-sso =
+    .label = Cho phép Windows đăng nhập một lần cho tài khoản Microsoft, cơ quan và trường học
+forms-windows-sso-learn-more-link = Tìm hiểu thêm
+forms-windows-sso-desc = Quản lý tài khoản trong cài đặt thiết bị của bạn
 
 ## OS Authentication dialog
 
@@ -1093,6 +1098,12 @@ permissions-block-popups =
 permissions-block-popups-exceptions =
     .label = Ngoại trừ…
     .accesskey = E
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = Ngoại trừ…
+    .accesskey = E
+    .searchkeywords = cửa sổ bật lên
 permissions-addon-install-warning =
     .label = Cảnh báo khi trang web cố gắng cài đặt tiện ích
     .accesskey = W

@@ -10,6 +10,10 @@ account-setup-title = Настройка имеющейся у вас учётн
 account-setup-description =
     Чтобы использовать текущий адрес электронной почты, введите свои учетные данные. <br/>
     { -brand-product-name } автоматически выполнит поиск рабочей и рекомендованной конфигурации сервера.
+account-setup-secondary-description = { -brand-product-name } автоматически выполнит поиск рабочей и рекомендованной конфигурации сервера.
+account-setup-success-title = Учётная запись успешно создана
+account-setup-success-description = Теперь вы можете использовать эту учётную запись в { -brand-short-name }.
+account-setup-success-secondary-description = Вы можете добавить функциональность, подсоединив связанные службы и настроив дополнительные параметры учётной записи.
 
 ## Form fields
 
@@ -99,10 +103,16 @@ account-setup-step3-image =
 account-setup-step4-image =
     .title = Ошибка соединения
 account-setup-privacy-footnote = Ваши учётные данные будут использоваться в соответствии с нашей <a data-l10n-name="privacy-policy-link"> политикой конфиденциальности </a> и будут храниться только на вашем компьютере.
+account-setup-step5-image =
+    .title = Учётная запись создана
+account-setup-privacy-footnote2 = Ваши учётные данные будут храниться только локально на вашем компьютере.
 account-setup-selection-help = Не знаете, что выбрать?
 account-setup-selection-error = Нужна помощь?
+account-setup-success-help = Не уверены в своих следующих шагах?
 account-setup-documentation-help = Документация по настройке
 account-setup-forum-help = Форум поддержки
+account-setup-privacy-help = Политика приватности
+account-setup-getting-started = Начало работы
 
 ## Results area
 
@@ -212,3 +222,71 @@ account-setup-confirm-advanced-description = Это диалоговое окн�
 account-setup-addon-install-title = Установка
 account-setup-addon-install-intro = Вы можете получить доступ к учётной записи электронной почты на этом сервере с помощью стороннего дополнения:
 account-setup-addon-no-protocol = К сожалению, этот почтовый сервер не поддерживает открытые протоколы. { account-setup-addon-install-intro }
+
+## Success view
+
+account-setup-settings-button = Параметры учётной записи
+account-setup-encryption-button = Сквозное шифрование
+account-setup-signature-button = Добавить подпись
+account-setup-dictionaries-button = Загрузить словари
+account-setup-address-book-carddav-button = Подключиться к адресной книге CardDAV
+account-setup-address-book-ldap-button = Подключиться к адресной книге LDAP
+account-setup-calendar-button = Подключиться к удаленному календарю
+account-setup-linked-services-title = Подключить связанные службы
+account-setup-linked-services-description = { -brand-short-name } обнаружил другие службы, связанные с учётной записью вашей почты.
+account-setup-no-linked-description = Настройте другие службы, чтобы максимально использовать возможности { -brand-short-name }.
+# Variables:
+# $count (Number) - The number of address books found during autoconfig.
+account-setup-found-address-books-description =
+    { $count ->
+        [one] { -brand-short-name } обнаружил { $count } адресную книгу, связанную с учётной записью вашей почты.
+        [few] { -brand-short-name } обнаружил { $count } адресные книги, связанные с учётной записью вашей почты.
+       *[many] { -brand-short-name } обнаружил { $count } адресных книг, связанных с учётной записью вашей почты.
+    }
+# Variables:
+# $count (Number) - The number of calendars found during autoconfig.
+account-setup-found-calendars-description =
+    { $count ->
+        [one] { -brand-short-name } обнаружил { $count } календарь, связанный с учётной записью вашей почты.
+        [few] { -brand-short-name } обнаружил { $count } календаря, связанных с учётной записью вашей почты.
+       *[many] { -brand-short-name } обнаружил { $count } календарей, связанных с учётной записью вашей почты.
+    }
+account-setup-button-finish = Завершить
+    .accesskey = ш
+account-setup-looking-up-address-books = Поиск адресных книг…
+account-setup-looking-up-calendars = Поиск календарей…
+account-setup-address-books-button = Адресные книги
+account-setup-calendars-button = Календари
+account-setup-connect-link = Подключить
+account-setup-existing-address-book = Подключена
+    .title = Адресная книга уже подключена
+account-setup-existing-calendar = Подключён
+    .title = Календарь уже подключён
+account-setup-connect-all-calendars = Подключить все календари
+account-setup-connect-all-address-books = Подключить все адресные книги
+
+## Calendar synchronization dialog
+
+calendar-dialog-title = Подключить календарь
+calendar-dialog-cancel-button = Отмена
+    .accesskey = м
+calendar-dialog-confirm-button = Подключить
+    .accesskey = ю
+account-setup-calendar-name-label = Имя
+account-setup-calendar-name-input =
+    .placeholder = Мой календарь
+account-setup-calendar-color-label = Цвет
+account-setup-calendar-refresh-label = Обновлять
+account-setup-calendar-refresh-manual = Вручную
+account-setup-calendar-refresh-interval =
+    { $count ->
+        [one] Каждую { $count } минуту
+        [few] Каждые { $count } минуты
+       *[many] Каждые { $count } минут
+    }
+account-setup-calendar-read-only = Только для чтения
+    .accesskey = о
+account-setup-calendar-show-reminders = Показывать напоминания
+    .accesskey = к
+account-setup-calendar-offline-support = Поддержка автономной работы
+    .accesskey = в

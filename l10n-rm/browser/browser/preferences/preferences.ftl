@@ -254,6 +254,7 @@ confirm-browser-language-change-button = Applitgar e reaviar
 translate-web-pages =
     .label = Translatar cuntegn da web
     .accesskey = T
+fx-translate-web-pages = { -translations-brand-name }
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = Translaziuns da <img data-l10n-name="logo"/>
@@ -857,6 +858,10 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = Ti es actualmain en il modus FIPS. FIPS pretenda in pled-clav universal (betg vid).
 forms-master-pw-fips-desc = I n'è betg reussì da midar il pled-clav
+forms-windows-sso =
+    .label = Permetter l'utilisaziun da Windows single sign-on per ils contos Microsoft, da scola e da fatschenta
+forms-windows-sso-learn-more-link = Ulteriuras infurmaziuns
+forms-windows-sso-desc = Administrar ils contos en ils parameters da tes apparat
 
 ## OS Authentication dialog
 
@@ -1109,6 +1114,12 @@ permissions-block-popups =
 permissions-block-popups-exceptions =
     .label = Excepziuns…
     .accesskey = E
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = Excepziuns…
+    .accesskey = E
+    .searchkeywords = popups
 permissions-addon-install-warning =
     .label = Avertir, sche websites emprovan d'installar supplements
     .accesskey = i

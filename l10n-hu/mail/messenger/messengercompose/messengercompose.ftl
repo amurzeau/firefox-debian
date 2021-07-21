@@ -8,9 +8,6 @@
 #   $type (String) - the type of the addressing row
 remove-address-row-type = A(z) { $type } mező eltávolítása
 #   $type (String) - the type of the addressing row
-remove-address-row-type-label =
-    .tooltiptext = A(z) { $type } mező eltávolítása
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = A(z) { $type } mező eltávolítása
 #   $type (String) - the type of the addressing row
@@ -123,8 +120,6 @@ move-attachment-last-panel-button =
 button-return-receipt =
     .label = Visszaigazolás
     .tooltiptext = Visszaigazolás kérése az üzenetről
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-consider-bcc-notification = A címzett és másolatot kapó { $count } partner láthatja egymás e-mail-címét. Elkerülheti a címzettek közzétételét, ha helyette titkos másolatot használ.
 
 # Addressing Area
 
@@ -172,3 +167,13 @@ many-public-recipients-ignore =
 # Variables:
 # $identity (string) - The name of the used identity, most likely an email address.
 compose-missing-identity-warning = Nem található egyedi személyazonosság, amely egyezik a feladó címével. Az üzenete a jelenlegi Feladó mező, és a(z) { $identity } személyazonosság beállításaival lesz elküldve.
+encrypted-bcc-warning = Titkosított üzenet küldésekor a Titkos másolatot kapóként hozzáadott címzettjei nincsenek teljesen elrejtve. Minden címzett képes lehet azonosítani őket.
+encrypted-bcc-ignore-button = Értettem
+
+## Editing
+
+
+# Tools
+
+compose-tool-button-remove-text-styling =
+    .tooltiptext = Szövegstílus eltávolítása

@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = Persunalisar
     .title = Persunalisar novs tabs
     .aria-label = Persunalisar novs tabs
+newtab-personalize-icon-label =
+    .title = Persunalisar novs tabs
+    .aria-label = Persunalisar novs tabs
 newtab-personalize-dialog-label =
     .aria-label = Persunalisar
 
@@ -39,7 +42,6 @@ newtab-search-box-search-the-web-input =
     .placeholder = Tschertgar en il Web
     .title = Tschertgar en il Web
     .aria-label = Tschertgar en il Web
-newtab-search-box-text = Tschertgar en il web
 newtab-search-box-input =
     .placeholder = Tschertgar en il web
     .aria-label = Tschertgar en il web

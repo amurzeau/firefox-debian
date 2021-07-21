@@ -254,6 +254,7 @@ confirm-browser-language-change-button = Alkalmaz és újraindítás
 translate-web-pages =
     .label = Webtartalom fordítása
     .accesskey = f
+fx-translate-web-pages = { -translations-brand-name }
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = Fordítás: <img data-l10n-name="logo"/>
@@ -460,8 +461,8 @@ browsing-search-on-start-typing =
     .label = Szöveg keresése a keresett szó beírásának elkezdésétől
     .accesskey = d
 browsing-picture-in-picture-toggle-enabled =
-    .label = Engedélyezze a kép a képben videóvezérlést
-    .accesskey = E
+    .label = Kép a képben videóvezérlés engedélyezése
+    .accesskey = e
 browsing-picture-in-picture-learn-more = További tudnivalók
 browsing-media-control =
     .label = Média vezérlése billentyűzeten, fejhallgatón vagy virtuális felületen keresztül
@@ -857,6 +858,10 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = Korábban mesterjelszóként ismert
 forms-primary-pw-fips-title = Jelenleg FIPS-módban van. A FIPS-hez nem üres elsődleges jelszó szükséges.
 forms-master-pw-fips-desc = Sikertelen jelszóváltoztatás
+forms-windows-sso =
+    .label = Lehetővé teszi a Windows egyszeri bejelentkezésének használatát a microsoftos, munkahelyi és iskolai fiókok számára
+forms-windows-sso-learn-more-link = További tudnivalók
+forms-windows-sso-desc = Fiókok kezelése az eszközbeállításokban
 
 ## OS Authentication dialog
 
@@ -1109,6 +1114,12 @@ permissions-block-popups =
 permissions-block-popups-exceptions =
     .label = Kivételek…
     .accesskey = K
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = Kivételek…
+    .accesskey = K
+    .searchkeywords = popupok
 permissions-addon-install-warning =
     .label = Figyelmeztetés kiegészítők telepítése előtt
     .accesskey = F

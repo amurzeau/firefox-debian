@@ -18,6 +18,12 @@ permissions-session =
 permissions-allow =
     .label = Permite
     .accesskey = A
+permissions-button-off =
+    .label = Oprește
+    .accesskey = O
+permissions-button-off-temporarily =
+    .label = Oprește temporar
+    .accesskey = T
 permissions-site-name =
     .label = Site web
 permissions-status =
@@ -58,6 +64,10 @@ permissions-capabilities-listitem-block =
     .value = Blochează
 permissions-capabilities-listitem-allow-session =
     .value = Permite pentru sesiune
+permissions-capabilities-listitem-off =
+    .value = Dezactivat
+permissions-capabilities-listitem-off-temporarily =
+    .value = Dezactivat temporar
 
 ## Invalid Hostname Dialog
 
@@ -77,6 +87,13 @@ permissions-exceptions-cookie-window =
     .title = Excepții - Cookie-uri și date ale site-urilor
     .style = { permissions-window.style }
 permissions-exceptions-cookie-desc = Poți specifica ce site-uri web au întotdeauna sau niciodată permisiunea de a folosi cookie-uri și date ale site-urilor.  Tastează adresa exactă a site-ului pe care vrei să-l gestionezi și apoi dă clic pe Blochează, Permite pentru sesiune sau Permite.
+
+## Exceptions - HTTPS-Only Mode
+
+permissions-exceptions-https-only-window =
+    .title = Excepții - Mod doar HTTPS
+    .style = { permissions-window.style }
+permissions-exceptions-https-only-desc = Poți opri modul doar HTTPS pentru anumite site-uri web. { -brand-short-name } nu va încerca să actualizeze conexiunea la HTTPS securizat pentru aceste site-uri. Excepțiile nu se aplică ferestrelor private.
 
 ## Exceptions - Pop-ups
 

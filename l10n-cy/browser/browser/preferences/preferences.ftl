@@ -266,6 +266,7 @@ confirm-browser-language-change-button = Gosod ac Ailgychwyn
 translate-web-pages =
     .label = Cyfieithu cynnwys gwe
     .accesskey = C
+fx-translate-web-pages = { -translations-brand-name }
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = Cyfieithiadau gan <img data-l10n-name="logo"/>
@@ -873,6 +874,10 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = Rydych ym modd FIPS. Mae FIPS angen Prif Gyfrinair nad yw'n wag.
 forms-master-pw-fips-desc = Methu Newid eich Cyfrinair
+forms-windows-sso =
+    .label = Caniatáu mewngofnodiad unigol cyfrifon Microsoft, gwaith ac ysgol.
+forms-windows-sso-learn-more-link = Dysgu rhagor
+forms-windows-sso-desc = Rheoli cyfrifon yn eich gosodiadau dyfais
 
 ## OS Authentication dialog
 
@@ -1125,6 +1130,12 @@ permissions-block-popups =
 permissions-block-popups-exceptions =
     .label = Eithriadau…
     .accesskey = E
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = Eithriadau…
+    .accesskey = E
+    .searchkeywords = llamlenni
 permissions-addon-install-warning =
     .label = Rhybuddio pan fydd gwefan yn ceisio gosod ychwanegion
     .accesskey = y

@@ -66,7 +66,6 @@ category-experimental =
     .tooltiptext = { -brand-short-name }-eksperimenter
 pane-experimental-subtitle = Fortsæt på eget ansvar
 pane-experimental-search-results-header = { -brand-short-name }-eksperimenter: Fortsæt på eget ansvar
-pane-experimental-description = Ved at ændre avancerede indstillinger kan du påvirke ydelse eller sikkerhed for { -brand-short-name }.
 pane-experimental-description2 = Ændring af avancerede indstillinger for opsætning kan påvirke ydelse eller sikkerhed for { -brand-short-name }.
 pane-experimental-reset =
     .label = Gendan standarder
@@ -182,6 +181,9 @@ warn-on-open-many-tabs =
 switch-links-to-new-tabs =
     .label = Skift fokus til det nye faneblad, når jeg åbner et link i det
     .accesskey = S
+switch-to-new-tabs =
+    .label = Skift fokus til det nye faneblad, når jeg åbner et link, billede eller medie i det
+    .accesskey = S
 show-tabs-in-taskbar =
     .label = Vis forhåndsvisning for faneblade på Windows Proceslinje
     .accesskey = W
@@ -252,6 +254,7 @@ confirm-browser-language-change-button = Genstart
 translate-web-pages =
     .label = Oversæt webindhold
     .accesskey = O
+fx-translate-web-pages = { -translations-brand-name }
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = Oversættelser af <img data-l10n-name="logo"/>
@@ -855,6 +858,10 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = Du er i øjeblikket i FIPS-tilstand. FIPS kræver, at du bruger en hovedadgangskode.
 forms-master-pw-fips-desc = Ændring af adgangskode mislykkedes
+forms-windows-sso =
+    .label = Tillad Windows enkeltlogon for Microsoft-, arbejds- og skole-konti
+forms-windows-sso-learn-more-link = Læs mere
+forms-windows-sso-desc = Håndter konti i dine enhedsindstillinger
 
 ## OS Authentication dialog
 
@@ -1020,7 +1027,6 @@ content-blocking-etp-strict-desc = Bedre beskyttelse, men kan forhindre nogle we
 content-blocking-etp-custom-desc = Vælg selv, hvilke sporings-teknologier og scripts der skal blokeres.
 content-blocking-etp-blocking-desc = { -brand-short-name } blokerer følgende:
 content-blocking-private-windows = Sporings-indhold i private vinduer.
-content-blocking-cross-site-cookies = Cookies på tværs af websteder
 content-blocking-cross-site-cookies-in-all-windows = Cookies på tværs af websteder i alle vinduer (herunder sporingscookies)
 content-blocking-cross-site-tracking-cookies = Sporings-cookies på tværs af websteder
 content-blocking-all-cross-site-cookies-private-windows = Cookies på tværs af websteder i private vinduer
@@ -1108,6 +1114,12 @@ permissions-block-popups =
 permissions-block-popups-exceptions =
     .label = Undtagelser…
     .accesskey = U
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = Undtagelser
+    .accesskey = U
+    .searchkeywords = Pop op-vinduer
 permissions-addon-install-warning =
     .label = Advar mig når websteder forsøger at installere tilføjelser
     .accesskey = A

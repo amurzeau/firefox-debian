@@ -260,6 +260,7 @@ confirm-browser-language-change-button = Nałožić a znowa startować
 translate-web-pages =
     .label = Webwobsah přełožować
     .accesskey = W
+fx-translate-web-pages = { -translations-brand-name }
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = Přełožki wot <img data-l10n-name="logo"/>
@@ -865,6 +866,10 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = Sće tuchwilu we FIPS-modusu. FIPS sej hłowne hesło žada.
 forms-master-pw-fips-desc = Změnjenje hesła njeje so poradźiło
+forms-windows-sso =
+    .label = Jednotne přizjewjenje za konta Microsoft, dźěłowe konta a šulske konta zmóžnić
+forms-windows-sso-learn-more-link = Dalše informacije
+forms-windows-sso-desc = Konta we wašich gratowych nastajenjach rjadować
 
 ## OS Authentication dialog
 
@@ -1117,6 +1122,12 @@ permissions-block-popups =
 permissions-block-popups-exceptions =
     .label = Wuwzaća…
     .accesskey = W
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = Wuwzaća…
+    .accesskey = u
+    .searchkeywords = popup
 permissions-addon-install-warning =
     .label = Warnować, hdyž sydła pospytuja přidatki instalować
     .accesskey = W

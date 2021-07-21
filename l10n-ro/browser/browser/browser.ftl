@@ -94,7 +94,7 @@ urlbar-persistent-storage-notification-anchor =
 urlbar-addons-notification-anchor =
     .tooltiptext = Deschide panoul cu mesaje privind instalarea de suplimente
 urlbar-tip-help-icon =
-    .title = Obține asistență
+    .title = Obține ajutor
 urlbar-search-tips-confirm = OK, am înțeles
 # Read out before Urlbar Tip text content so screenreader users know the
 # subsequent text is a tip offered by the browser. It should end in a colon or
@@ -109,6 +109,9 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Scrii mai puțin, găsești mai multe: caută cu { $engineName } direct în bara de adrese.
 urlbar-search-tips-redirect-2 = Începe căutarea în bara de adrese ca să vezi sugestii de la { $engineName } și din istoricul tău de navigare.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Selectează această comandă rapidă pentru a găsi mai repede ceea ce ai nevoie.
 
 ## Local search mode indicator labels in the urlbar
 
@@ -161,53 +164,6 @@ page-action-remove-from-urlbar =
     .label = Elimină din bara de adresă
 page-action-remove-extension =
     .label = Elimină extensia
-
-## Page Action menu
-
-# Variables
-# $tabCount (integer) - Number of tabs selected
-page-action-send-tabs-panel =
-    .label =
-        { $tabCount ->
-            [one] Trimite fila către un dispozitiv
-            [few] Trimite { $tabCount } file către un dispozitiv
-           *[other] Trimite { $tabCount } de file către un dispozitiv
-        }
-page-action-send-tabs-urlbar =
-    .tooltiptext =
-        { $tabCount ->
-            [one] Trimite fila către un dispozitiv
-            [few] Trimite { $tabCount } file către un dispozitiv
-           *[other] Trimite { $tabCount } de file către un dispozitiv
-        }
-page-action-copy-url-panel =
-    .label = Copiază linkul
-page-action-copy-url-urlbar =
-    .tooltiptext = Copiază linkul
-page-action-email-link-panel =
-    .label = Trimite linkul prin e-mail…
-page-action-email-link-urlbar =
-    .tooltiptext = Trimite linkul prin e-mail…
-page-action-share-url-panel =
-    .label = Partajează
-page-action-share-url-urlbar =
-    .tooltiptext = Partajează
-page-action-share-more-panel =
-    .label = Mai multe…
-page-action-send-tab-not-ready =
-    .label = Se sincronizează dispozitivele…
-# "Pin" is being used as a metaphor for expressing the fact that these tabs
-# are "pinned" to the left edge of the tabstrip. Really we just want the
-# string to express the idea that this is a lightweight and reversible
-# action that keeps your tab where you can reach it easily.
-page-action-pin-tab-panel =
-    .label = Fixează fila
-page-action-pin-tab-urlbar =
-    .tooltiptext = Fixează fila
-page-action-unpin-tab-panel =
-    .label = Anulează fixarea filei
-page-action-unpin-tab-urlbar =
-    .tooltiptext = Anulează fixarea filei
 
 ## Auto-hide Context Menu
 
@@ -265,6 +221,8 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Adaugă un marcaj
+bookmarks-edit-bookmark = Editează marcajul
 bookmark-panel-cancel =
     .label = Renunță
     .accesskey = C
@@ -311,6 +269,9 @@ identity-weak-encryption = Această pagină folosește criptare slabă.
 identity-insecure-login-forms = Datele de autentificare introduse pe această pagină ar putea fi compromise.
 identity-permissions =
     .value = Permisiuni
+identity-https-only-label = Mod doar HTTPS
+identity-https-only-info-turn-on2 = Activează modul doar HTTPS pentru acest site dacă vrei ca { -brand-short-name } să actualizeze conexiunea atunci când este posibil.
+identity-permissions-storage-access-learn-more = Află mai multe
 identity-permissions-reload-hint = Ar putea fi nevoie să reîncarci pagina pentru a aplica modificările.
 identity-permissions-empty = Nu ai acordat acestui site nicio permisiune specială.
 identity-clear-site-data =
@@ -364,6 +325,9 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
+browser-import-button2 =
+    .label = Importă marcaje ...
+    .tooltiptext = Importă marcaje dintr-un alt browser în { -brand-short-name }
 
 ## WebRTC Pop-up notifications
 
@@ -404,6 +368,8 @@ urlbar-default-placeholder =
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Caută sau introdu adresa
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Browserul este controlat de la distanță
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -431,17 +397,15 @@ urlbar-placeholder-search-mode-other-history =
 # This placeholder is used when searching open tabs.
 urlbar-placeholder-search-mode-other-tabs =
     .placeholder = Introdu termenii de căutare
-    .aria-label = Caută în file
+    .aria-label = Caută file
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
     .placeholder = Caută cu { $name } sau introdu adresa
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Browserul este controlat de la distanță
 urlbar-permissions-granted =
     .tooltiptext = Ai acordat permisiuni suplimentare acestui site web.
 urlbar-switch-to-tab =
-    .value = Treci pe fila:
+    .value = Comută pe filă:
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Extensie:
@@ -468,13 +432,24 @@ urlbar-result-action-search-in-private = Caută într-o fereastră privată
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = Caută pe { $engine }
-urlbar-result-action-switch-tab = Comută la fila
+urlbar-result-action-switch-tab = Comută la filă
 urlbar-result-action-visit = Vizitează
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Apasă Tab pentru a căuta cu { $engine }
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Caută cu { $engine } direct din bara de adrese
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
 
+urlbar-result-action-search-tabs = Caută file
 
 ## Full Screen and Pointer Lock UI
 
@@ -494,9 +469,14 @@ pointerlock-warning-no-domain = Documentul controlează acum cursorul. Apasă Es
 
 ## Subframe crash notification
 
+crashed-subframe-learnmore-link =
+    .value = Află mai multe
 
 ## Bookmarks panels, menus and toolbar
 
+bookmarks-manage-bookmarks =
+    .label = Gestionează marcajele
+bookmarks-recent-bookmarks-panel-subheader = Marcaje recente
 bookmarks-toolbar-chevron =
     .tooltiptext = Afișează mai multe marcaje
 bookmarks-sidebar-content =
@@ -518,6 +498,12 @@ bookmarks-tools-toolbar-visibility-menuitem =
         { $isVisible ->
             [true] Ascunde bara de marcaje
            *[other] Vezi bara de marcaje
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Ascunde bara de marcaje
+           *[other] Afișează bara de marcaje
         }
 bookmarks-tools-menu-button-visibility =
     .label =
@@ -544,6 +530,9 @@ bookmarks-toolbar-placeholder =
     .title = Elemente pe bara de marcaje
 bookmarks-toolbar-placeholder-button =
     .label = Elemente pe bara de marcaje
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Marchează fila actuală
 
 ## Library Panel items
 
@@ -558,9 +547,17 @@ save-to-pocket-button =
 
 ## Repair text encoding toolbar button
 
+repair-text-encoding-button =
+    .label = Repară codarea de text
+    .tooltiptext = Determină codarea de text corectă din conținutul paginii
 
 ## Customize Toolbar Buttons
 
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Suplimente și teme
+    .tooltiptext = Gestionează-ți suplimentele și temele ({ $shortcut })
 # Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
 toolbar-settings-button =
@@ -581,6 +578,7 @@ more-menu-go-offline =
 
 eme-notifications-drm-content-playing = Unele elemente audio sau video de pe acest site folosesc programe DRM, care pot limita ceea ce îți permite { -brand-short-name } să faci cu ele.
 eme-notifications-drm-content-playing-manage = Gestionează setările
+eme-notifications-drm-content-playing-dismiss-accesskey = D
 
 ## Password save/update panel
 
@@ -590,3 +588,6 @@ eme-notifications-drm-content-playing-manage = Gestionează setările
 
 ## Remote / Synced tabs
 
+remote-tabs-manage-account =
+    .label = Gestionează contul
+remote-tabs-sync-now = Sincronizează acum

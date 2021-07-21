@@ -27,9 +27,9 @@ policy-DefaultDownloadDirectory = Setează directorul implicit de descărcare.
 policy-DisableAppUpdate = Împiedică actualizarea browserului.
 policy-DisableBuiltinPDFViewer = Dezactivează PDF.js, lectorul de fișiere PDF încorporat în { -brand-short-name }.
 policy-DisableDefaultBrowserAgent = Împiedică agentul implicit de browser să ia orice măsură. Aplicabil numai pentru Windows; alte platforme nu au agentul.
-policy-DisableDeveloperTools = Blochează accesul la uneltele de dezvoltare.
+policy-DisableDeveloperTools = Blochează accesul la instrumentele pentru dezvoltatori.
 policy-DisableFeedbackCommands = Dezactivează comenzile de trimis feedback în meniul de Ajutor (Trimite feedback și Raportează site-uri înșelătoare).
-policy-DisableFirefoxAccounts = Dezactivează serviciile pe bază necesare pentru { -fxaccount-brand-name }, inclusiv Sync
+policy-DisableFirefoxAccounts = Dezactivează serviciile bazate pe { -fxaccount-brand-name(case: "definite-article") }, inclusiv Sync.
 # Firefox Screenshots is the name of the feature, and should not be translated.
 policy-DisableFirefoxScreenshots = Dezactivează funcționalitatea de capturi de ecran din Firefox.
 policy-DisableFirefoxStudies = Împiedică efectuarea de studii de către { -brand-short-name }.
@@ -79,6 +79,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Revenire la comportame
 ##
 
 policy-LocalFileLinks = Permite anumitor site-uri web să se lege la fișiere locale.
+policy-ManagedBookmarks = Configurează o listă de marcaje gestionate de un administrator care nu poate fi modificată de utilizator.
 policy-MasterPassword = Necesită sau împiedică folosirea unei parole generale.
 policy-PrimaryPassword = Necesită sau împiedică folosirea unei parole primare.
 policy-NetworkPrediction = Activează sau dezactivează predicția de rețea (prelectură DNS).
@@ -110,3 +111,4 @@ policy-SupportMenu = Adaugă un element personalizat din meniul de asistență �
 policy-UserMessaging = Nu afișa anumite mesaje utilizatorului.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Blochează intrarea pe site-uri web. Vezi documentația pentru detalii suplimentare despre format.
+policy-Windows10SSO = Permite conectarea unică Windows pentru conturile Microsoft, de la locul de muncă sau de la școală.

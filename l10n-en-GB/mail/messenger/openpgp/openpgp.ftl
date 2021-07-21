@@ -4,6 +4,16 @@
 
 e2e-intro-description = To send encrypted or digitally signed messages, you need to configure an encryption technology, either OpenPGP or S/MIME.
 e2e-intro-description-more = Select your personal key to enable the use of OpenPGP, or your personal certificate to enable the use of S/MIME. For a personal key or certificate you own the corresponding secret key.
+e2e-advanced-section = Advanced settings
+e2e-attach-key =
+    .label = Attach my public key when adding an OpenPGP digital signature
+    .accesskey = p
+e2e-encrypt-subject =
+    .label = Encrypt the subject of OpenPGP messages
+    .accesskey = b
+e2e-encrypt-drafts =
+    .label = Store draft messages in encrypted format
+    .accesskey = r
 openpgp-key-user-id-label = Account / User ID
 openpgp-keygen-title-label =
     .title = Generate OpenPGP Key
@@ -596,6 +606,12 @@ no-temp-dir =
 possibly-pgp-mime = Possibly PGP/MIME encrypted or signed message; use 'Decrypt/Verify' function to verify
 cannot-send-sig-because-no-own-key = Cannot digitally sign this message, because you haven't yet configured end-to-end encryption for <{ $key }>
 cannot-send-enc-because-no-own-key = Cannot send this message encrypted, because you haven't yet configured end-to-end encryption for <{ $key }>
+compose-menu-attach-key =
+    .label = Attach My Public Key
+    .accesskey = A
+compose-menu-encrypt-subject =
+    .label = Subject Encryption
+    .accesskey = b
 # Strings used in decryption.jsm
 do-import-multiple =
     Import the following keys?

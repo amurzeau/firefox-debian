@@ -14,3 +14,10 @@ openpgp-compose-key-status-open-details = Gérer les clés du destinataire séle
 openpgp-recip-good = ok
 openpgp-recip-missing = aucune clé disponible
 openpgp-recip-none-accepted = aucune clé acceptée
+openpgp-compose-general-info-alias-learn-more = En savoir plus
+openpgp-compose-alias-status-direct =
+    { $count ->
+        [one] mappé sur une clé d’alias
+       *[other] mappé sur { $count } clés d’alias
+    }
+openpgp-compose-alias-status-error = Clé d’alias inutilisable/indisponible

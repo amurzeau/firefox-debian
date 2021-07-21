@@ -90,6 +90,9 @@ toolbar-button-stop-reload =
 
 ## Firefox Account Button
 
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name(case: "indefinite-article", capitalization: "upper") }
+    .tooltiptext = { -fxaccount-brand-name(case: "indefinite-article", capitalization: "upper") }
 
 ## Save Page
 
@@ -105,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = Marchează pagina
     .accesskey = m
     .tooltiptext = Marchează pagina
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = Marchează pagina
+    .accesskey = m
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = Editează marcajul
+    .accesskey = m
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -139,6 +154,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = Marchează linkul
     .accesskey = L
+main-context-menu-bookmark-link =
+    .label = Marchează linkul
+    .accesskey = B
 main-context-menu-save-link =
     .label = Salvează linkul ca…
     .accesskey = k
@@ -161,6 +179,9 @@ main-context-menu-copy-email =
 main-context-menu-copy-link =
     .label = Copiază locația linkului
     .accesskey = a
+main-context-menu-copy-link-simple =
+    .label = Copiază linkul
+    .accesskey = L
 
 ## Media (video/audio) controls
 ##
@@ -242,6 +263,9 @@ main-context-menu-video-view =
 main-context-menu-image-view-new-tab =
     .label = Deschide imaginea într-o filă nouă
     .accesskey = I
+main-context-menu-video-view-new-tab =
+    .label = Deschide videoclipul într-o filă nouă
+    .accesskey = i
 main-context-menu-image-copy =
     .label = Copiază imaginea
     .accesskey = y
@@ -256,6 +280,12 @@ main-context-menu-audio-copy-location =
     .accesskey = o
 main-context-menu-image-copy-link =
     .label = Copiază linkul imaginii
+    .accesskey = o
+main-context-menu-video-copy-link =
+    .label = Copiază linkul videoclipului
+    .accesskey = o
+main-context-menu-audio-copy-link =
+    .label = Copiază linkul fișierului audio
     .accesskey = o
 main-context-menu-image-save-as =
     .label = Salvează imaginea ca…
@@ -349,6 +379,9 @@ main-context-menu-frame-view-source =
 main-context-menu-frame-view-info =
     .label = Vezi informații despre cadru
     .accesskey = I
+main-context-menu-print-selection =
+    .label = Tipărește selecția
+    .accesskey = p
 main-context-menu-view-selection-source =
     .label = Vezi sursa selecției
     .accesskey = e
@@ -369,6 +402,9 @@ main-context-menu-bidi-switch-page =
     .accesskey = D
 main-context-menu-inspect-element =
     .label = Inspectează elementul
+    .accesskey = Q
+main-context-menu-inspect =
+    .label = Inspectează
     .accesskey = Q
 main-context-menu-inspect-a11y-properties =
     .label = Inspectează proprietățile de accesibilitate

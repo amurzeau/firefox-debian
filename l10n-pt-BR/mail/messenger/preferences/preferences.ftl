@@ -10,8 +10,6 @@ preferences-title =
             [windows] Opções
            *[other] Preferências
         }
-preferences-tab-title =
-    .title = Preferências
 preferences-doc-title = Preferências
 category-list =
     .aria-label = Categorias
@@ -261,8 +259,11 @@ offline-settings-button =
     .accesskey = o
 diskspace-legend = Espaço em disco
 offline-compact-folder =
-    .label = Condensar todas as pastas se puder liberar pelo menos
-    .accesskey = n
+    .label = Compactar todas as pastas se for liberar pelo menos
+    .accesskey = a
+offline-compact-folder-automatically =
+    .label = Perguntar sempre antes de compactar
+    .accesskey = P
 compact-folder-size =
     .value = MB no total
 

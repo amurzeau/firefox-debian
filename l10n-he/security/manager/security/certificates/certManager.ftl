@@ -215,6 +215,8 @@ cert-not-verified_algorithm-disabled = לא ניתן לאמת את אישור ה
 cert-not-verified-unknown = לא ניתן לאמת אישור זה מסיבות לא מוכרות.
 # Used when no cert is stored for an override
 no-cert-stored-for-override = (לא מאוחסן)
+# When a certificate is unavailable (for example, it has been deleted or the token it exists on has been removed).
+certificate-not-available = (לא זמין)
 
 ## Used to show whether an override is temporary or permanent
 
@@ -232,7 +234,7 @@ add-exception-expired-long = האישור אינו תקף כרגע. יתכן ש�
 add-exception-unverified-or-bad-signature-short = זהות לא ידועה
 add-exception-unverified-or-bad-signature-long = האישור אינו מהימן מכיוון שלא אומת ככזה שהונפק על־ידי רשות מהימנה המשתמשת בחתימה מאובטחת.
 add-exception-valid-short = אישור חוקי
-add-exception-valid-long = אתר זה סיפק הזדהות מאומתת וחוקית. אין צורך להוסיף חריגה עבודו.
+add-exception-valid-long = אתר זה סיפק הזדהות מאומתת וחוקית. אין צורך להוסיף חריגה עבורו.
 add-exception-checking-short = בודק מידע
 add-exception-checking-long = מתבצע ניסיון זיהוי של האתר…
 add-exception-no-cert-short = אין מידע זמין

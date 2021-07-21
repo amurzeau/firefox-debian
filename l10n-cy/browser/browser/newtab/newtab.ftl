@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = Personoli
     .title = Personoli tab newydd
     .aria-label = Personoli tab newydd
+newtab-personalize-icon-label =
+    .title = Personoli tab newydd
+    .aria-label = Personoli tab newydd
 newtab-personalize-dialog-label =
     .aria-label = Personoli
 
@@ -39,7 +42,6 @@ newtab-search-box-search-the-web-input =
     .placeholder = Chwilio'r We
     .title = Chwilio'r We
     .aria-label = Chwilio'r We
-newtab-search-box-text = Chwilio'r we
 newtab-search-box-input =
     .placeholder = Chwilio'r we
     .aria-label = Chwilio'r we

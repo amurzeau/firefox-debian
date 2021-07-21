@@ -48,6 +48,22 @@ printui-options = Επιλογές
 printui-headers-footers-checkbox = Εκτύπωση κεφαλίδων και υποσέλιδων
 printui-backgrounds-checkbox = Εκτύπωση παρασκηνίου
 printui-selection-checkbox = Εκτύπωση επιλογής μόνο
+
+## The "Format" section, select a version of the website to print. Radio
+## options to select between the original page, selected text only, or a version
+## where the page is processed with "Reader View".
+
+# The section title.
+printui-source-label = Μορφή
+# Option for printing the original page.
+printui-source-radio = Αρχική
+# Option for printing just the content a user selected prior to printing.
+printui-selection-radio = Επιλογή
+# Option for "simplifying" the page by printing the Reader View version.
+printui-simplify-page-radio = Απλοποιημένη
+
+##
+
 printui-color-mode-label = Λειτουργία χρώματος
 printui-color-mode-color = Έγχρωμο
 printui-color-mode-bw = Ασπρόμαυρο

@@ -4,6 +4,16 @@
 
 e2e-intro-description = Titkosított vagy digitálisan aláírt üzenetek küldéséhez be kell állítania egy titkosítási technológiát, az OpenPGP-t vagy az S/MIME-ot.
 e2e-intro-description-more = Válassza ki a személyes kulcsát az OpenPGP használatának engedélyezéséhez, vagy a személyes tanúsítványát az S/MIME használatához. Személyes kulcs vagy tanúsítvány esetén Ön a titkos kulcs tulajdonosa.
+e2e-advanced-section = Speciális beállítások
+e2e-attach-key =
+    .label = Saját nyilvános kulcs csatolása az OpenPGP digitális aláírás hozzáadásakor
+    .accesskey = n
+e2e-encrypt-subject =
+    .label = Az OpenPGP üzenetek tárgyának titkosítása
+    .accesskey = t
+e2e-encrypt-drafts =
+    .label = Piszkozatok titkosított formátumban tárolása
+    .accesskey = P
 openpgp-key-user-id-label = Fiók / felhasználói azonosító
 openpgp-keygen-title-label =
     .title = OpenPGP-kulcs előállítása
@@ -597,6 +607,12 @@ no-temp-dir =
 possibly-pgp-mime = Lehet, hogy PGP/MIME segítségével titkosított vagy aláírt üzenet; az ellenőrzéshez használja a „Visszafejtés/Ellenőrzés” funkciót
 cannot-send-sig-because-no-own-key = Nem lehet digitálisan aláírni ezt az üzenetet, mert még nem állította be a végpontok közti titkosítást a(z) <{ $key }> számára
 cannot-send-enc-because-no-own-key = Nem küldheti el titkosítva ezt az üzenetet, mert még nem állította be a végpontok közti titkosítást a(z) <{ $key }> számára
+compose-menu-attach-key =
+    .label = Saját nyilvános kulcs mellékelése
+    .accesskey = m
+compose-menu-encrypt-subject =
+    .label = Tárgy titkosítása
+    .accesskey = T
 # Strings used in decryption.jsm
 do-import-multiple =
     Importálja a következő kulcsokat?

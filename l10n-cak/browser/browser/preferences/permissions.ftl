@@ -18,6 +18,12 @@ permissions-session =
 permissions-allow =
     .label = Tiya' q'ij
     .accesskey = T
+permissions-button-off =
+    .label = Tichup
+    .accesskey = p
+permissions-button-off-temporarily =
+    .label = Tichup Jumej
+    .accesskey = T
 permissions-site-name =
     .label = Ruxaq Ajk'amaya'l
 permissions-status =
@@ -84,6 +90,10 @@ permissions-exceptions-cookie-desc = Yatikïr naya' ketal ri taq ajk'amaya'l rux
 
 ## Exceptions - HTTPS-Only Mode
 
+permissions-exceptions-https-only-window =
+    .title = Taq cha'oj - Xa xe Rub'anikil-HTTPS
+    .style = { permissions-window.style }
+permissions-exceptions-https-only-desc = Yatikïr nachüp ri rub'anikil HTTPS-Only kichin cha'on ajk'amaya'l taq ruxaq. { -brand-short-name } man xtutojtob'ej ta xtuk'ëx ri okem richin nijikib'äx ri HTTPS pa ri taq ruxaq ri'. Ri taq cha'oj man nokisäx pa ichinan taq tzuwäch.
 
 ## Exceptions - Pop-ups
 

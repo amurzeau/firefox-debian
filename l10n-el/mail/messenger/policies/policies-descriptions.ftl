@@ -18,7 +18,7 @@ policy-BlockAboutAddons = Αποκλεισμός πρόσβασης στη Δι�
 policy-BlockAboutConfig = Αποκλεισμός πρόσβασης στη σελίδα about:config.
 policy-BlockAboutProfiles = Αποκλεισμός πρόσβασης στη σελίδα about:profiles.
 policy-BlockAboutSupport = Αποκλεισμός πρόσβασης στη σελίδα about:support.
-policy-CaptivePortal = Ενεργοποίηση ή απενεργοποίηση υποστήριξης captive portal.
+policy-CaptivePortal = Ενεργοποίηση ή απενεργοποίηση υποστήριξης πυλών υποδοχής.
 policy-CertificatesDescription = Προσθήκη πιστοποιητικών ή χρήση ενσωματωμένων πιστοποιητικών.
 policy-Cookies = Αποδοχή ή απόρριψη τοποθέτησης cookies από ιστοσελίδες.
 policy-DisabledCiphers = Απενεργοποίηση κρυπτογράφησης.
@@ -79,7 +79,7 @@ policy-SanitizeOnShutdown2 = Εκκαθάριση δεδομένων πλοήγ�
 policy-SearchEngines = Διαμόρφωση ρυθμίσεων μηχανής αναζήτησης. Αυτή η πολιτική είναι διαθέσιμη μόνο στην έκδοση εκτεταμένης υποστήριξης (ESR).
 policy-SearchSuggestEnabled = Ενεργοποίηση ή απενεργοποίηση προτάσεων αναζήτησης.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
-policy-SecurityDevices = Εγκατάσταση προσθέτων PKCS #11.
+policy-SecurityDevices = Εγκατάσταση λειτουργικών μονάδων PKCS #11.
 policy-SSLVersionMax = Ορισμός μέγιστης έκδοσης SSL.
 policy-SSLVersionMin = Ορισμός ελάχιστης έκδοσης SSL.
 policy-SupportMenu = Προσθήκη προσαρμοσμένου στοιχείου μενού υποστήριξης στο μενού βοήθειας.

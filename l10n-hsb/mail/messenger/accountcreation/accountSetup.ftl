@@ -10,6 +10,10 @@ account-setup-title = Nastajće swoju eksistowacu e-mejlowu adresu
 account-setup-description =
     Zo byšće swoju aktualnu e-mejlowu adresu wužiwał, zapodajće swoje přizjewjenske daty.<br/>
     { -brand-product-name } budźe awtomatisce za fungowacej a doporučenej serwerowej konfiguraciju pytać.
+account-setup-secondary-description = { -brand-product-name } budźe awtomatisce za fungowacej a doporučenej serwerowej konfiguraciju pytać.
+account-setup-success-title = Konto je so wuspěšnje załožiło
+account-setup-success-description = Móžeće tute konto nětko z { -brand-short-name } wužiwać.
+account-setup-success-secondary-description = Zwjazajće podobne słužby a konfigurujće rozšěrjene kontowe nastajenja, zo byšće dožiwjenje polěpšił.
 
 ## Form fields
 
@@ -98,11 +102,16 @@ account-setup-step3-image =
     .title = Konfiguracija je so namakała
 account-setup-step4-image =
     .title = Zwiskowy zmylk
-account-setup-privacy-footnote = Waše přizjewjenske daty so po našich <a data-l10n-name="privacy-policy-link">prawidłach priwatnosće</a> wužiwaja a składuja so jenož lokalnje na wašim ličaku.
+account-setup-step5-image =
+    .title = Konto załožene
+account-setup-privacy-footnote2 = Waše přizjewjenske daty budu so jenož lokalnje na wašim ličaku składować.
 account-setup-selection-help = Njejsće sej wěsty, štož maće wubrać?
 account-setup-selection-error = Trjebaće pomoc?
+account-setup-success-help = Nochceće, što maće dale činić?
 account-setup-documentation-help = Konfiguraciska dokumentacija
 account-setup-forum-help = Forum pomocy
+account-setup-privacy-help = Prawidła priwatnosće
+account-setup-getting-started = Prěnje kroki
 
 ## Results area
 
@@ -123,7 +132,8 @@ account-setup-result-pop = POP3
 account-setup-result-pop-description = Wobchowajće swoje rjadowaki a e-mejle na swojim ličaku
 # Note: Exchange is the name of a product.
 account-setup-result-exchange = Exchange
-account-setup-result-exchange-description = Serwer Microsoft Exchange
+# Note: Exchange, Office365 are the name of products.
+account-setup-result-exchange2-description = Serwer Microsoft Exchange abo mróčelowe słužby Office 365 wužiwać
 account-setup-incoming-title = Dochadźace
 account-setup-outgoing-title = Wuchadźace
 account-setup-username-title = Wužiwarske mjeno
@@ -213,3 +223,74 @@ account-setup-confirm-advanced-description = Tutón dialog so začini a konto z 
 account-setup-addon-install-title = Instalować
 account-setup-addon-install-intro = Přidatk třećeho poskićowarja móže wam přistup na waše e-mejlowe konto na tutym serwerje zmóžnić:
 account-setup-addon-no-protocol = Tutón e-mejlowy serwer bohužel wotewrjene protokole njepodpěruje. { account-setup-addon-install-intro }
+
+## Success view
+
+account-setup-settings-button = Kontowe nastajenja
+account-setup-encryption-button = Zaklučowanje wot kónca do kónca
+account-setup-signature-button = Signaturu přidać
+account-setup-dictionaries-button = Słowniki sćahnyć
+account-setup-address-book-carddav-button = Z CardDAV-adresnikom zwjazać
+account-setup-address-book-ldap-button = Z LDAP-adresnikom zwjazać
+account-setup-calendar-button = Ze zdalenym kalenderom zwjazać
+account-setup-linked-services-title = Zwjazajće swoje zwjazane słužby
+account-setup-linked-services-description = { -brand-short-name } je druhe słužby namakał, kotrež su z wašim e-mejlowym kontom zwjazane.
+account-setup-no-linked-description = Konfigurujće swoje słužby, zo byšće najwjace ze swojeho dožiwjenja { -brand-short-name } wućahnył.
+# Variables:
+# $count (Number) - The number of address books found during autoconfig.
+account-setup-found-address-books-description =
+    { $count ->
+        [one] { -brand-short-name } je { $count } adresnik namakał, kotryž je z wašim e-mejlowym kontom zwjazany.
+        [two] { -brand-short-name } je { $count } adresnikaj namakał, kotrejž stej z wašim e-mejlowym kontom zwjazanej.
+        [few] { -brand-short-name } je { $count } adresniki namakał, kotrež su z wašim e-mejlowym kontom zwjazane.
+       *[other] { -brand-short-name } je { $count } adresnikow namakał, kotrež su z wašim e-mejlowym kontom zwjazane.
+    }
+# Variables:
+# $count (Number) - The number of calendars found during autoconfig.
+account-setup-found-calendars-description =
+    { $count ->
+        [one] { -brand-short-name } je { $count } protyku namakał, kotraž je z wašim e-mejlowym kontom zwjazana.
+        [two] { -brand-short-name } je { $count } protyce namakał, kotrejž stej z wašim e-mejlowym kontom zwjazanej.
+        [few] { -brand-short-name } je { $count } protyki namakał, kotrež su z wašim e-mejlowym kontom zwjazane.
+       *[other] { -brand-short-name } je { $count } protykow namakał, kotrež su z wašim e-mejlowym kontom zwjazane.
+    }
+account-setup-button-finish = Dokónčić
+    .accesskey = D
+account-setup-looking-up-address-books = Adresniki so pytaja…
+account-setup-looking-up-calendars = Protyki so pytaja…
+account-setup-address-books-button = Adresniki
+account-setup-calendars-button = Protyki
+account-setup-connect-link = Zwjazać
+account-setup-existing-address-book = Zwjazany
+    .title = Adresnik je hižo zwjazany
+account-setup-existing-calendar = Zwjazany
+    .title = Protyka je hižo zwjazana
+account-setup-connect-all-calendars = Wšě protyki zwjazać
+account-setup-connect-all-address-books = Wšě adresniki zwjazać
+
+## Calendar synchronization dialog
+
+calendar-dialog-title = Protyku zwjazać
+calendar-dialog-cancel-button = Přetorhnyć
+    .accesskey = P
+calendar-dialog-confirm-button = Zwjazać
+    .accesskey = a
+account-setup-calendar-name-label = Mjeno
+account-setup-calendar-name-input =
+    .placeholder = Moja protyka
+account-setup-calendar-color-label = Barba
+account-setup-calendar-refresh-label = Aktualizować
+account-setup-calendar-refresh-manual = Manuelnje
+account-setup-calendar-refresh-interval =
+    { $count ->
+        [one] Kóždu mjeńšinu
+        [two] Kóždej { $count } mjeńšinje
+        [few] Kóžde { $count } mjeńšiny
+       *[other] Kóžde { $count } mjeńšin
+    }
+account-setup-calendar-read-only = Jenož čitajomny
+    .accesskey = J
+account-setup-calendar-show-reminders = Dopomnjeća pokazać
+    .accesskey = D
+account-setup-calendar-offline-support = Podpěra offline
+    .accesskey = P

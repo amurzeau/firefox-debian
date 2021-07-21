@@ -254,6 +254,7 @@ confirm-browser-language-change-button = החלה והפעלה מחדש
 translate-web-pages =
     .label = תרגום תוכן רשת
     .accesskey = ת
+fx-translate-web-pages = { -translations-brand-name }
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = תרגום של <img data-l10n-name="logo"/>
@@ -857,6 +858,7 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = מצבך כרגע הוא FIPS. ‏FIPS דורש ססמה ראשית לא־ריקה.
 forms-master-pw-fips-desc = שינוי הססמה נכשל
+forms-windows-sso-learn-more-link = מידע נוסף
 
 ## OS Authentication dialog
 
@@ -1102,6 +1104,12 @@ permissions-block-popups =
 permissions-block-popups-exceptions =
     .label = חריגות…
     .accesskey = ר
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = חריגות…
+    .accesskey = ת
+    .searchkeywords = חלונות קופצים
 permissions-addon-install-warning =
     .label = הצגת אזהרה כשאתרים מנסים להתקין תוספות
     .accesskey = ה

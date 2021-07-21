@@ -308,6 +308,8 @@ translate-web-pages =
     .label = Traduci contenuti web
     .accesskey = T
 
+fx-translate-web-pages = { -translations-brand-name }
+
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = Traduzioni a cura di <img data-l10n-name="logo"/>
@@ -1035,6 +1037,11 @@ forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = Si è in modalità FIPS. FIPS richiede che la password principale sia impostata.
 forms-master-pw-fips-desc = Modifica della password non riuscita
 
+forms-windows-sso =
+    .label = Consenti single sign-on di Windows per account Microsoft, del lavoro o della scuola
+forms-windows-sso-learn-more-link = Ulteriori informazioni
+forms-windows-sso-desc = Gestisci account nelle impostazioni del dispositivo
+
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
@@ -1326,6 +1333,11 @@ permissions-block-popups =
 permissions-block-popups-exceptions =
     .label = Eccezioni…
     .accesskey = o
+
+permissions-block-popups-exceptions-button =
+    .label = Eccezioni…
+    .accesskey = o
+    .searchkeywords = popup
 
 permissions-addon-install-warning =
     .label = Avvisa se un sito web cerca di installare un componente aggiuntivo

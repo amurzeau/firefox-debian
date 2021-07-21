@@ -4,6 +4,16 @@
 
 e2e-intro-description = Щоб надсилати захищені або підписані цифровим підписом повідомлення, вам необхідно налаштувати технологію шифрування OpenPGP або S/MIME.
 e2e-intro-description-more = Виберіть свій особистий ключ, щоб дозволити використання OpenPGP, або ваш особистий сертифікат, щоб дозволити використання S/MIME. Для особистого ключа або сертифіката ви отримаєте відповідний секретний ключ.
+e2e-advanced-section = Розширені налаштування
+e2e-attach-key =
+    .label = Додати мій відкритий ключ під час додавання цифрового підпису OpenPGP
+    .accesskey = о
+e2e-encrypt-subject =
+    .label = Зашифрувати тему повідомлень OpenPGP
+    .accesskey = е
+e2e-encrypt-drafts =
+    .label = Шифрувати збережені чернетки повідомлень
+    .accesskey = и
 openpgp-key-user-id-label = Обліковий запис / ID користувача
 openpgp-keygen-title-label =
     .title = Створити ключ OpenPGP
@@ -605,6 +615,12 @@ no-temp-dir =
 possibly-pgp-mime = Можливо, повідомлення захищене або підписане за допомогою PGP/MIME; скористайтеся функцією 'Розшифрувати/Верифікувати' для підтвердження
 cannot-send-sig-because-no-own-key = Не вдається підписати це повідомлення цифровим підписом, оскільки ви ще не налаштували наскрізне шифрування для <{ $key }>
 cannot-send-enc-because-no-own-key = Не вдається надіслати це повідомлення захищеним, оскільки ви ще не налаштували наскрізне шифрування для <{ $key }>
+compose-menu-attach-key =
+    .label = Приєднати мій відкритий ключ
+    .accesskey = П
+compose-menu-encrypt-subject =
+    .label = Шифрування теми
+    .accesskey = Ш
 # Strings used in decryption.jsm
 do-import-multiple =
     Імпортувати ці ключі?

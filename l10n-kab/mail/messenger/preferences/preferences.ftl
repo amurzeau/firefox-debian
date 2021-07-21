@@ -10,6 +10,7 @@ preferences-title =
             [windows] Iɣewwaṛen
            *[other] Ismenyifen
         }
+preferences-doc-title = Ismenyifen
 category-list =
     .aria-label = Taggayin
 pane-general-title = Amatu
@@ -88,8 +89,9 @@ update-in-progress-ok-button = &Anef
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Kemmel
-account-button = Iɣewwaṛen n umiḍan
 addons-button = Isiɣzaf & Isental
+account-button = Iɣewwaṛen n umiḍan
+open-addons-sidebar-button = Izegrar d yisental
 
 ## OS Authentication dialog
 
@@ -165,6 +167,12 @@ customize-alert-label =
 tray-icon-label =
     .label = Sken tignit n ufeggag n unagraw
     .accesskey = n
+biff-use-system-alert =
+    .label = Seqdec alɣu n unagraw
+tray-icon-unread-label =
+    .label = Sken tignit deg ufeggag n twuriwin i yiznan ur nettwaɣra ara
+    .accesskey = t
+tray-icon-unread-description = Yettuwelleh deg useqdec n tqeffalin timeẓẓyanin n ufeggag n twuriwin
 mail-system-sound-label =
     .label = Imesli n unagraw amezwer i yimayl amaynut
     .accesskey = D
@@ -253,6 +261,9 @@ diskspace-legend = Tallunt n udebṣi
 offline-compact-folder =
     .label = Ssed akk ikaramen ma yella ad yeḥrez amkan ugar n
     .accesskey = a
+offline-compact-folder-automatically =
+    .label = Suter yal tikkelt send ad tessdeḍ
+    .accesskey = s
 compact-folder-size =
     .value = Asemday s MAṬ
 
@@ -317,6 +328,8 @@ quoted-text-color =
     .accesskey = n
 search-input =
     .placeholder = Nadi
+search-handler-table =
+    .placeholder = Sizdeg anawen d tigawin n ugbur
 type-column-label =
     .label = Tawsit n ugbur
     .accesskey = g
@@ -702,6 +715,17 @@ search-input-box =
             [windows] Af-d deg textiṛiyin
            *[other] Af-d deg yismenyafen
         }
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-preferences-input =
+    .style = width: 15.4em
+    .placeholder = Af deg yismenyifen
 
 ## Preferences UI Search Results
 

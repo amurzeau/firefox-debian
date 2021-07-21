@@ -4,6 +4,16 @@
 
 e2e-intro-description = Om fersifere of digitaal ûndertekene berjochten te ferstjoeren, moatte jo in fersiferingstechnology ynstelle, itsij OpenPGP of S/MIME.
 e2e-intro-description-more = Selektearje jo persoanlike kaai om it gebrûk fan OpenPGP mooglik te meitsjen, of jo persoanlike sertifikaat om it gebrûk fan S/MIME mooglik te meitsjen. Foar in persoanlike kaai of sertifikaat besitte jo de byhearrende geheime kaai.
+e2e-advanced-section = Avansearre ynstellingen
+e2e-attach-key =
+    .label = Myn publike kaai byfoegje as ik in digitale OpenPGP-hantekening tafoegje
+    .accesskey = p
+e2e-encrypt-subject =
+    .label = It ûnderwerp fan OpenPGP-berjochten fersiferje
+    .accesskey = d
+e2e-encrypt-drafts =
+    .label = Konseptberjochten bewarje yn fersifere opmaak
+    .accesskey = f
 openpgp-key-user-id-label = Account / Brûkers-ID
 openpgp-keygen-title-label =
     .title = OpenPGP-kaai oanmeitsje
@@ -281,6 +291,8 @@ openpgp-selection-status =
        *[other] Jo aktuele konfiguraasje brûkt kaai-ID <b>{ $key }</b>
     }
 #   $key (String) - the currently selected OpenPGP key
+openpgp-selection-status-have-key = Jo aktuele konfiguraasje brûkt kaai-ID <b>{ $key }</b>
+#   $key (String) - the currently selected OpenPGP key
 openpgp-selection-status-error = Jo aktuele konfiguraasje brûkt de kaai <b>{ $key }</b>, dy't ferfallen is.
 openpgp-add-key-button =
     .label = Kaai tafoegje…
@@ -306,6 +318,10 @@ openpgp-key-expires-image =
 openpgp-radio-key-expired = Ferrûn op: { $date }
 openpgp-key-expired-image =
     .tooltiptext = Kaai ferrûn
+openpgp-key-expires-within-6-months-icon =
+    .title = Kaai ferrint oer minder as 6 moannen
+openpgp-key-has-expired-icon =
+    .title = Kaai ferrûn
 openpgp-key-expand-section =
     .tooltiptext = Mear ynformaasje
 openpgp-key-revoke-title = Kaai ynlûke
@@ -453,18 +469,13 @@ openpgp-export-secret-fail = <b>Kin de selektearre geheime kaai net eksportearje
 # Strings in keyObj.jsm
 key-ring-pub-key-revoked = De kaai { $userId } (sleutel-ID { $keyId }) is ynlutsen.
 key-ring-pub-key-expired = De kaai { $userId } (sleutel-ID { $keyId }) is ferfallen.
-key-ring-key-disabled = De kaai { $userId } (sleutel-ID { $keyId }) is útskeakele; hy kin net brûkt wurde.
-key-ring-key-invalid = De kaai { $userId } (sleutel-ID { $keyId }) is net jildich. Oerwaach dizze korrekt te ferifiearjen.
-key-ring-key-not-trusted = De kaai { $userId } (sleutel-ID { $keyId }) wurdt net genôch fertroud. Stel it fertrouwensnivo fan jo kaai yn op ‘maksimaal’ om dizze te brûken foar ûndertekening.
 key-ring-no-secret-key = It liket oft jo de geheime kaai foar { $userId } (key ID { $keyId }) net oan jo kaaihinger hawwe; jo kinne de kaai net brûke om te ûndertekenjen.
 key-ring-pub-key-not-for-signing = De kaai { $userId } (kaai-ID { $keyId }) kin net brûkt wurde foar ûndertekening.
 key-ring-pub-key-not-for-encryption = De kaai { $userId } (kaai-ID { $keyId }) kin net brûkt wurde foar fersifering.
 key-ring-sign-sub-keys-revoked = Alle ûndertekeningssubkaaien fan kaai { $userId } (kaai-ID { $keyId }) binne ynlutsen.
 key-ring-sign-sub-keys-expired = Alle ûndertekeningssubkaaien fan kaai { $userId } (kaai-ID { $keyId }) binne ferfallen.
-key-ring-sign-sub-keys-unusable = Alle ûndertekeningssubkaaien fan kaai { $userId } (kaai-ID { $keyId }) binne ynlutsen, ferfallen of op in oare manier net brûkber.
 key-ring-enc-sub-keys-revoked = Alle fersiferingssubkaaien fan kaai { $userId } (kaai-ID { $keyId }) binne ynlutsen.
 key-ring-enc-sub-keys-expired = Alle fersiferingssubkaaien fan kaai { $userId } (kaai-ID { $keyId }) binne ferfallen.
-key-ring-enc-sub-keys-unusable = Alle fersiferingssubkaaien fan kaai { $userId } (kaai-ID { $keyId }) binne ynlutsen, ferfallen of op in oare manier net brûkber.
 # Strings in gnupg-keylist.jsm
 keyring-photo = Foto
 user-att-photo = Brûkerskenmerk (JPEG-ôfbylding)
@@ -596,6 +607,12 @@ no-temp-dir =
 possibly-pgp-mime = Mooglik PGP/MIME-fersifere of -ûndertekene berjocht; brûk de funksje ‘Untsiferje/Ferifiearje’ om te ferifiearjen
 cannot-send-sig-because-no-own-key = Kin dit berjocht net digitaal ûndertekenje, omdat jo noch gjin end-to-end-fersifering foar <{ $key }> konfigurearre hawwe
 cannot-send-enc-because-no-own-key = Kin dit berjocht net fersifere fersjoere, omdat jo noch gjin end-to-end-fersifering foar <{ $key }> konfigurearre hawwe
+compose-menu-attach-key =
+    .label = Foegje myn iepenbiere kaai ta
+    .accesskey = F
+compose-menu-encrypt-subject =
+    .label = Underwerpfersifering
+    .accesskey = f
 # Strings used in decryption.jsm
 do-import-multiple =
     De folgjende kaaien ymportearje?

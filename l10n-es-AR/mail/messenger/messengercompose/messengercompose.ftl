@@ -8,9 +8,6 @@
 #   $type (String) - the type of the addressing row
 remove-address-row-type = Elimine el campo { $type }
 #   $type (String) - the type of the addressing row
-remove-address-row-type-label =
-    .tooltiptext = Eliminar el campo { $type }
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Eliminar el campo { $type }
 #   $type (String) - the type of the addressing row
@@ -123,8 +120,6 @@ move-attachment-last-panel-button =
 button-return-receipt =
     .label = Recibo
     .tooltiptext = Pedir recibo por este mensaje
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-consider-bcc-notification = Los destinatarios de { $count } en Para y Cc pueden ver la dirección de los otros. Puede evitar revelar destinatarios usando Cco en su lugar.
 
 # Addressing Area
 
@@ -172,3 +167,13 @@ many-public-recipients-ignore =
 # Variables:
 # $identity (string) - The name of the used identity, most likely an email address.
 compose-missing-identity-warning = No se encontró una identidad única que coincida con la dirección del remitente. El mensaje se enviará usando el remitente actual y la configuración de la identidad { $identity }
+encrypted-bcc-warning = Al enviar un mensaje cifrado, los destinatarios en CCO no están totalmente ocultos. Todos los destinatarios pueden identificarlos.
+encrypted-bcc-ignore-button = Entendido
+
+## Editing
+
+
+# Tools
+
+compose-tool-button-remove-text-styling =
+    .tooltiptext = Eliminar estilo de texto

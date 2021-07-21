@@ -254,6 +254,7 @@ confirm-browser-language-change-button = Mohembiapo ha ñepyrũjey
 translate-web-pages =
     .label = Ñanduti retepy ñe’ẽasa
     .accesskey = T
+fx-translate-web-pages = { -translations-brand-name }
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = Ñe’ẽasaha <img data-l10n-name="logo"/>
@@ -857,6 +858,10 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = Ymave ojehero Ñe’ẽñemi Ha’etéva
 forms-primary-pw-fips-title = Ko’ag̃aite eime FIPS rekópe. FIPS oikotevẽ ñe’ẽñemi ñepyrũgua inandi’ỹva.
 forms-master-pw-fips-desc = Ñe’ẽñemi moambue jejavy
+forms-windows-sso =
+    .label = Emoneĩ tembiapo ñepyrũ Windows rupi Microsoft-pe, mba’apo ha mbo’ehaogua mba’ete.
+forms-windows-sso-learn-more-link = Kuaave
+forms-windows-sso-desc = Eñangareko mba’ete mba’e’oka ñembohekópe
 
 ## OS Authentication dialog
 
@@ -1109,6 +1114,12 @@ permissions-block-popups =
 permissions-block-popups-exceptions =
     .label = Oĩ’ỹva…
     .accesskey = E
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = Oĩ’ỹva…
+    .accesskey = E
+    .searchkeywords = ovetã apysẽ
 permissions-addon-install-warning =
     .label = Ehechakuaa oĩ jave tenda omohendaséva moĩmbaha.
     .accesskey = E

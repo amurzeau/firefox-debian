@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = Personcecigi
     .title = Personecigi novan langeton
     .aria-label = Personecigi novan langeton
+newtab-personalize-icon-label =
+    .title = Personecigi novan langeton
+    .aria-label = Personecigi novan langeton
 newtab-personalize-dialog-label =
     .aria-label = Personcecigi
 
@@ -39,7 +42,6 @@ newtab-search-box-search-the-web-input =
     .placeholder = Serĉi en la teksaĵo
     .title = Serĉi en la teksaĵo
     .aria-label = Serĉi en la teksaĵo
-newtab-search-box-text = Serĉi en la reto
 newtab-search-box-input =
     .placeholder = Serĉi en la reto
     .aria-label = Serĉi en la reto

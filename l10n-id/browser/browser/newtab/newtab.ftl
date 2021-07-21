@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = Personalisasikan
     .title = Personalisasikan tab baru
     .aria-label = Personalisasikan tab baru
+newtab-personalize-icon-label =
+    .title = Personalisasikan tab baru
+    .aria-label = Personalisasikan tab baru
 newtab-personalize-dialog-label =
     .aria-label = Personalisasikan
 
@@ -39,7 +42,6 @@ newtab-search-box-search-the-web-input =
     .placeholder = Cari di Web
     .title = Cari di Web
     .aria-label = Cari di Web
-newtab-search-box-text = Cari di web
 newtab-search-box-input =
     .placeholder = Cari di web
     .aria-label = Cari di web

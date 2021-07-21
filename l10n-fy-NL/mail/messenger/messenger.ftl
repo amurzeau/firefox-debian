@@ -11,11 +11,23 @@ unread-messages-os-tooltip =
     }
 about-rights-notification-text = { -brand-short-name } is frije en iepenboarnesoftware, boud troch in mienskip fan tûzenen minsken fan oer de hiele wrâld.
 
+## Content tabs
+
+content-tab-page-loading-icon =
+    .alt = De side wurdt laden
+content-tab-security-high-icon =
+    .alt = De ferbining is befeilige
+content-tab-security-broken-icon =
+    .alt = De ferbining is net befeilige
+
 ## Toolbar
 
-addons-and-themes-button =
-    .label = Add-ons en tema's
-    .tooltip = Jo add-ons beheare
+addons-and-themes-toolbarbutton =
+    .label = Add-ons en tema’s
+    .tooltiptext = Jo add-ons beheare
+quick-filter-toolbarbutton =
+    .label = Fluchfilter
+    .tooltiptext = Berjochten filterje
 redirect-msg-button =
     .label = Omliede
     .tooltiptext = Selektearre berjocht omliede
@@ -115,3 +127,9 @@ caret-browsing-prompt-check-text = Net mear freegje.
 repair-text-encoding-button =
     .label = Tekstkodearring reparearje
     .tooltiptext = Betink krekte tekstkodearring fan berjochtynhâld út
+
+## no-reply handling
+
+no-reply-title = Antwurdzjen net stipe
+no-reply-message = It antwurdadres ({ $email }) liket gjin kontrolearre adres te wêzen. Berjochten nei dit adres sille wierskynlik troch net ien lêzen wurde.
+no-reply-reply-anyway-button = Dochs antwurdzje

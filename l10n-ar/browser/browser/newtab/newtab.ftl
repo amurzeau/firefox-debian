@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = خصّص
     .title = خصّص صفحة اللسان الجديد
     .aria-label = خصّص صفحة اللسان الجديد
+newtab-personalize-icon-label =
+    .title = خصّص صفحة اللسان الجديد
+    .aria-label = خصّص صفحة اللسان الجديد
 
 ## Search box component.
 
@@ -37,7 +40,6 @@ newtab-search-box-search-the-web-input =
     .placeholder = ابحث في الوِب
     .title = ابحث في الوِب
     .aria-label = ابحث في الوِب
-newtab-search-box-text = ابحث في الوِب
 newtab-search-box-input =
     .placeholder = ابحث في الوِب
     .aria-label = ابحث في الوِب

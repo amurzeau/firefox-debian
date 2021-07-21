@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = Muokkaa
     .title = Muokkaa uutta välilehteä
     .aria-label = Muokkaa uutta välilehteä
+newtab-personalize-icon-label =
+    .title = Muokkaa uutta välilehteä
+    .aria-label = Muokkaa uutta välilehteä
 newtab-personalize-dialog-label =
     .aria-label = Muokkaa
 
@@ -39,7 +42,6 @@ newtab-search-box-search-the-web-input =
     .placeholder = Verkkohaku
     .title = Verkkohaku
     .aria-label = Verkkohaku
-newtab-search-box-text = Verkkohaku
 newtab-search-box-input =
     .placeholder = Verkkohaku
     .aria-label = Verkkohaku

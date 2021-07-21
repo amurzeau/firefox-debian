@@ -254,6 +254,7 @@ confirm-browser-language-change-button = Aplicar e reiniciar
 translate-web-pages =
     .label = Traduzir conteúdo web
     .accesskey = T
+fx-translate-web-pages = { -translations-brand-name }
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = Traduções por <img data-l10n-name="logo"/>
@@ -857,6 +858,10 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = Anteriormente conhecida como senha mestra
 forms-primary-pw-fips-title = Você está no momento no modo FIPS. O FIPS exige uma senha principal não vazia.
 forms-master-pw-fips-desc = Falha na alteração da senha
+forms-windows-sso =
+    .label = Permitir autenticação única (single sign-on) do Windows em contas da Microsoft, do trabalho e da escola
+forms-windows-sso-learn-more-link = Saiba mais
+forms-windows-sso-desc = Gerenciar contas nas configurações do seu dispositivo
 
 ## OS Authentication dialog
 
@@ -1109,6 +1114,12 @@ permissions-block-popups =
 permissions-block-popups-exceptions =
     .label = Exceções…
     .accesskey = E
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = Exceções…
+    .accesskey = E
+    .searchkeywords = popup
 permissions-addon-install-warning =
     .label = Avisar quando sites tentarem instalar extensões
     .accesskey = A

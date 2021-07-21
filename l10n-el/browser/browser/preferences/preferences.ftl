@@ -254,6 +254,7 @@ confirm-browser-language-change-button = Εφαρμογή και επανεκκ�
 translate-web-pages =
     .label = Μετάφραση περιεχομένου του ιστού
     .accesskey = τ
+fx-translate-web-pages = { -translations-brand-name }
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = Μεταφράσεις από <img data-l10n-name="logo"/>
@@ -857,6 +858,10 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = Είστε σε λειτουργία FIPS. Το FIPS απαιτεί μη κενό κύριο κωδικό πρόσβασης.
 forms-master-pw-fips-desc = Αποτυχία αλλαγής κωδικού
+forms-windows-sso =
+    .label = Να επιτρέπεται η ενιαία είσοδος των Windows για λογαριασμούς Microsoft, εργασίας και σχολείου.
+forms-windows-sso-learn-more-link = Μάθετε περισσότερα
+forms-windows-sso-desc = Διαχείριση λογαριασμών στις ρυθμίσεις συσκευής
 
 ## OS Authentication dialog
 
@@ -1109,6 +1114,12 @@ permissions-block-popups =
 permissions-block-popups-exceptions =
     .label = Εξαιρέσεις…
     .accesskey = Ε
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = Εξαιρέσεις…
+    .accesskey = Ε
+    .searchkeywords = αναδυόμενα
 permissions-addon-install-warning =
     .label = Προειδοποίηση όταν οι ιστοσελίδες προσπαθούν να εγκαταστήσουν πρόσθετα
     .accesskey = Π

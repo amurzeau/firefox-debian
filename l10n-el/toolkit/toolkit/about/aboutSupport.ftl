@@ -60,7 +60,7 @@ app-basics-profile-dir =
     }
 app-basics-enabled-plugins = Ενεργά αρθρώματα
 app-basics-build-config = Ρύθμιση δομής
-app-basics-user-agent = Πλατφόρμα χρήστη
+app-basics-user-agent = Παράγοντας χρήστη
 app-basics-os = ΛΣ
 # Rosetta is Apple's translation process to run apps containing x86_64
 # instructions on Apple Silicon. This should remain in English.
@@ -68,6 +68,7 @@ app-basics-rosetta = Μεταφρασμένο με Rosetta
 app-basics-memory-use = Χρήση μνήμης
 app-basics-performance = Επιδόσεις
 app-basics-service-workers = Εγγεγραμμένα service worker
+app-basics-third-party = Λειτουργικές μονάδες τρίτων
 app-basics-profiles = Προφίλ
 app-basics-launcher-process-status = Διεργασία εκκίνησης
 app-basics-multi-process-support = Παράθυρα πολυδιεργασιών
@@ -190,8 +191,8 @@ remote-debugging-url = URL
 
 ##
 
-support-third-party-modules-title = Πρόσθετα module τρίτων
-support-third-party-modules-module = Αρχείο module
+support-third-party-modules-title = Λειτουργικές μονάδες τρίτων
+support-third-party-modules-module = Αρχείο μονάδας
 support-third-party-modules-version = Έκδοση αρχείου
 support-third-party-modules-vendor = Πληροφορίες κατασκευαστή
 support-third-party-modules-occurrence = Εμφάνιση
@@ -204,7 +205,7 @@ support-third-party-modules-status = Κατάσταση
 support-third-party-modules-status-loaded = Φορτώθηκε
 support-third-party-modules-status-blocked = Αποκλείστηκε
 support-third-party-modules-status-redirected = Ανακατευθύνθηκε
-support-third-party-modules-empty = Δεν φορτώθηκαν πρόσθετα module τρίτων.
+support-third-party-modules-empty = Δεν φορτώθηκαν λειτουργικές μονάδες τρίτων.
 support-third-party-modules-no-value = (Καμία τιμή)
 support-third-party-modules-button-open =
     .title = Άνοιγμα τοποθεσίας αρχείου…
@@ -213,7 +214,7 @@ support-third-party-modules-expand =
 support-third-party-modules-collapse =
     .title = Σύμπτυξη λεπτομερών πληροφοριών
 support-third-party-modules-unsigned-icon =
-    .title = Αυτό το module δεν έχει υπογραφεί
+    .title = Αυτή η μονάδα δεν έχει υπογραφεί
 support-third-party-modules-folder-icon =
     .title = Άνοιγμα τοποθεσίας αρχείου…
 support-third-party-modules-down-icon =
@@ -380,6 +381,7 @@ fission-status-disabled-by-default = Απενεργοποιήθηκε από π�
 fission-status-enabled-by-user-pref = Ενεργοποιήθηκε από το χρήστη
 fission-status-disabled-by-user-pref = Απενεργοποιήθηκε από το χρήστη
 fission-status-disabled-by-e10s-other = Ανενεργό E10s
+fission-status-enabled-by-rollout = Ενεργό με σταδιακή διάθεση
 async-pan-zoom = Ασύγχρονο pan/zoom
 apz-none = κανένα
 wheel-enabled = είσοδος ρόδας ενεργή

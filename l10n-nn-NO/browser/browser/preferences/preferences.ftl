@@ -254,6 +254,7 @@ confirm-browser-language-change-button = Bruk og start på nytt
 translate-web-pages =
     .label = Omset webinnhald
     .accesskey = O
+fx-translate-web-pages = { -translations-brand-name }
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = Omsettingar av <img data-l10n-name="logo"/>
@@ -609,7 +610,7 @@ search-show-suggestions-url-bar-option =
 search-show-suggestions-above-history-option =
     .label = Vis søkjeforslag før nettlesarhistorikk i adressefeltresultata
 search-show-suggestions-private-windows =
-    .label = Vel søkjeforslag i private vindauge
+    .label = Vis søkjeforslag i private vindauge
 suggestions-addressbar-settings-generic = Endre innstillingar for andre adresselinjeforslag
 suggestions-addressbar-settings-generic2 = Endre innstillingar for andre adresselinjeforslag
 search-suggestions-cant-show = Søkjeforslag vil ikkje visast i adresselinjeresultata fordi du har konfigurert { -brand-short-name } til å aldri hugse historikk.
@@ -857,6 +858,10 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = ""
 forms-primary-pw-fips-title = Du er for tida i FIPS-modus. FIPS krev eit hovudpassord.
 forms-master-pw-fips-desc = Mislykka passordendring
+forms-windows-sso =
+    .label = Tillat Windows enkel innlogging for Microsoft-, arbeids- og skulekontoar.
+forms-windows-sso-learn-more-link = Les meir
+forms-windows-sso-desc = Handter konton i einingsinnstillingane dine
 
 ## OS Authentication dialog
 
@@ -1109,6 +1114,12 @@ permissions-block-popups =
 permissions-block-popups-exceptions =
     .label = Unntak…
     .accesskey = U
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = Unntak…
+    .accesskey = U
+    .searchkeywords = sprettoppvindauge
 permissions-addon-install-warning =
     .label = Åtvar meg når netsider vil installere tillegg
     .accesskey = Å

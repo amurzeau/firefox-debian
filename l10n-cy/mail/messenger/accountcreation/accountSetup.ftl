@@ -10,6 +10,10 @@ account-setup-title = Gosod eich Cyfrif E-bost Cyfredol
 account-setup-description =
     I ddefnyddio'ch cyfeiriad e-bost cyfredol, llenwch eich manylion. <br/>
     Bydd { -brand-product-name } yn chwilio'n awtomatig am ffurfweddid gweinydd sy'n gweithio ac sy'n cael ei argymell.
+account-setup-secondary-description = Bydd { -brand-product-name } yn chwilio'n awtomatig am ffurfweddiad gweinydd sy'n gweithio ac sy'n cael ei argymell.
+account-setup-success-title = Cyfrif wedi'i greu'n llwyddiannus
+account-setup-success-description = Nawr gallwch chi ddefnyddio'r cyfrif hwn gyda { -brand-short-name }.
+account-setup-success-secondary-description = Gallwch wella'r profiad trwy gysylltu gwasanaethau cysylltiedig a ffurfweddu gosodiadau cyfrifon uwch.
 
 ## Form fields
 
@@ -98,11 +102,16 @@ account-setup-step3-image =
     .title = Wedi canfod ffurfweddiad
 account-setup-step4-image =
     .title = Gwall cysylltiad
-account-setup-privacy-footnote = Bydd eich manylion yn cael eu defnyddio'n unol â'n polisi preifatrwydd <a data-l10n-name="privacy-policy-link">polisi preifatrwydd</a> a'u cadw'n lleol ar eich cyfrifiadur.
+account-setup-step5-image =
+    .title = Cyfrif wedi'i greu
+account-setup-privacy-footnote2 = Dim ond ar eich cyfrifiadur y bydd eich manylion yn cael eu storio'n lleol.
 account-setup-selection-help = Ddim yn siŵr beth i'w ddewis?
 account-setup-selection-error = Angen cymorth?
+account-setup-success-help = Ddim yn siŵr am eich camau nesaf?
 account-setup-documentation-help = Dogfennaeth gosod
 account-setup-forum-help = Fforwm cefnogi
+account-setup-privacy-help = Polisi preifatrwydd
+account-setup-getting-started = Cychwyn arni
 
 ## Results area
 
@@ -125,7 +134,8 @@ account-setup-result-pop = POP3
 account-setup-result-pop-description = Cadw eich ffolderi a'ch e-byst ar eich cyfrifiadur
 # Note: Exchange is the name of a product.
 account-setup-result-exchange = Exchange
-account-setup-result-exchange-description = Gweinydd Microsoft Exchange
+# Note: Exchange, Office365 are the name of products.
+account-setup-result-exchange2-description = Defnyddiwch weinydd Microsoft Exchange neu wasanaethau cwmwl Office365
 account-setup-incoming-title = Derbyn
 account-setup-outgoing-title = Anfon
 account-setup-username-title = Enw Defnyddiwr
@@ -215,3 +225,80 @@ account-setup-confirm-advanced-description = Bydd y ddeialog hon yn cael ei chau
 account-setup-addon-install-title = Gosod
 account-setup-addon-install-intro = Gall ychwanegyn trydydd parti ganiatáu i chi gael mynediad i'ch cyfrif e-bost ar y gweinydd hwn:
 account-setup-addon-no-protocol = Yn anffodus nid yw'r gweinydd e-bost hwn yn cefnogi protocolau agored. { account-setup-addon-install-intro }
+
+## Success view
+
+account-setup-settings-button = Gosodiadau cyfrif
+account-setup-encryption-button = Amgryptio pen-i-ben
+account-setup-signature-button = Ychwanegwch lofnod
+account-setup-dictionaries-button = Llwytho geiriadur i lawr
+account-setup-address-book-carddav-button = Cysylltu â llyfr cyfeiriadau CardDAV
+account-setup-address-book-ldap-button = Cysylltu â llyfr cyfeiriadau LDAP
+account-setup-calendar-button = Cysylltu â chalendr pell
+account-setup-linked-services-title = Cysylltwch eich gwasanaethau cysylltiedig
+account-setup-linked-services-description = Mae { -brand-short-name } wedi canfod gwasanaethau eraill sy'n gysylltiedig â'ch cyfrif e-bost.
+account-setup-no-linked-description = Gosod gwasanaethau eraill i gael y gorau o'ch profiad gyda { -brand-short-name }.
+# Variables:
+# $count (Number) - The number of address books found during autoconfig.
+account-setup-found-address-books-description =
+    { $count ->
+        [zero] Nid yw { -brand-short-name } wedi canfod unrhyw wasanaeth arall sy'n gysylltiedig â'ch cyfrif e-bost.
+        [one] Mae { -brand-short-name } wedi canfod { $count } gwasanaeth arall sy'n gysylltiedig â'ch cyfrif e-bost.
+        [two] Mae { -brand-short-name } wedi canfod  { $count } wasanaeth arall sy'n gysylltiedig â'ch cyfrif e-bost.
+        [few] Mae { -brand-short-name } wedi canfod  { $count } gwasanaeth arall sy'n gysylltiedig â'ch cyfrif e-bost.
+        [many] Mae { -brand-short-name } wedi canfod  { $count } gwasanaeth arall sy'n gysylltiedig â'ch cyfrif e-bost.
+       *[other] Mae { -brand-short-name } wedi canfod  { $count } gwasanaeth arall sy'n gysylltiedig â'ch cyfrif e-bost.
+    }
+# Variables:
+# $count (Number) - The number of calendars found during autoconfig.
+account-setup-found-calendars-description =
+    { $count ->
+        [zero] Nid yw { -brand-short-name } wedi canfod  unrhyw galendr arall sy'n gysylltiedig â'ch cyfrif e-bost.
+        [one] Mae { -brand-short-name } wedi canfod  { $count } calendr arall sy'n gysylltiedig â'ch cyfrif e-bost.
+        [two] Mae { -brand-short-name } wedi canfod  { $count } galendr arall sy'n gysylltiedig â'ch cyfrif e-bost.
+        [few] Mae { -brand-short-name } wedi canfod  { $count } chalendr arall sy'n gysylltiedig â'ch cyfrif e-bost.
+        [many] Mae { -brand-short-name } wedi canfod  { $count } chalendr arall sy'n gysylltiedig â'ch cyfrif e-bost.
+       *[other] Mae { -brand-short-name } wedi canfod  { $count } calendr arall sy'n gysylltiedig â'ch cyfrif e-bost.
+    }
+account-setup-button-finish = Gorffen
+    .accesskey = G
+account-setup-looking-up-address-books = Chwilio drwy lyfrau cyfeiriadau…
+account-setup-looking-up-calendars = Chwilio drwy galendrau…
+account-setup-address-books-button = Llyfrau Cyfeiriadau
+account-setup-calendars-button = Calendrau
+account-setup-connect-link = Cysylltu
+account-setup-existing-address-book = Wedi'u cysylltu
+    .title = Llyfr cyfeiriadau wedi'u cysylltu'n barod
+account-setup-existing-calendar = Wedi'u cysylltu
+    .title = Calendrau wedi'u cysylltu'n barod
+account-setup-connect-all-calendars = Cysylltu'r holl galendrau
+account-setup-connect-all-address-books = Cysylltu'r holl lyfrau cyfeiriadau
+
+## Calendar synchronization dialog
+
+calendar-dialog-title = Cysylltu calendr
+calendar-dialog-cancel-button = Diddymu
+    .accesskey = D
+calendar-dialog-confirm-button = Cysylltu
+    .accesskey = C
+account-setup-calendar-name-label = Enw
+account-setup-calendar-name-input =
+    .placeholder = Calendr
+account-setup-calendar-color-label = Lliw
+account-setup-calendar-refresh-label = Adnewyddu
+account-setup-calendar-refresh-manual = Gyda Llaw
+account-setup-calendar-refresh-interval =
+    { $count ->
+        [zero] Byth
+        [one] Pob munud
+        [two] Pob { $count } funud
+        [few] Pob { $count } munud
+        [many] Pob { $count } munud
+       *[other] Pob { $count } munud
+    }
+account-setup-calendar-read-only = Darllen yn unig
+    .accesskey = D
+account-setup-calendar-show-reminders = Dangos Atgoffwyr
+    .accesskey = A
+account-setup-calendar-offline-support = Cefnogaeth All-lein
+    .accesskey = A

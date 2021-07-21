@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = Sagen
     .title = Sagen iccer amaynut
     .aria-label = Sagen iccer amaynut
+newtab-personalize-icon-label =
+    .title = Sagen iccer amaynut
+    .aria-label = Sagen iccer amaynut
 newtab-personalize-dialog-label =
     .aria-label = Sagen
 
@@ -39,7 +42,6 @@ newtab-search-box-search-the-web-input =
     .placeholder = Nadi di Web
     .title = Nadi di Web
     .aria-label = Nadi di Web
-newtab-search-box-text = Nadi di web
 newtab-search-box-input =
     .placeholder = Nadi di web
     .aria-label = Nadi di web

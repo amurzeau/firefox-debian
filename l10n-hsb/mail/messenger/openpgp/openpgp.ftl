@@ -4,6 +4,16 @@
 
 e2e-intro-description = Zo byšće zaklučowane abo digitalnje signowane powěsće pósłał, dyrbiće zaklučowansku technologiju konfigurować, pak OpenPGP pak S/MIME.
 e2e-intro-description-more = Wubjerće swój wosobinski kluč, zo byšće wužiwanje OpenPGP zmóžnił, abo wosobinski certifikat, zo byšće wužiwanje S/MIME zmóžnił. Za wosobinski kluč abo certifikat maće wotpowědny tajny kluč.
+e2e-advanced-section = Rozšěrjene nastajenja
+e2e-attach-key =
+    .label = Mój zjawny kluč připowěsnyć, hdyž so digitalna signatura OpenPGP přidawa
+    .accesskey = P
+e2e-encrypt-subject =
+    .label = Temu OpenPGP-powěsćow zaklučować
+    .accesskey = m
+e2e-encrypt-drafts =
+    .label = Naćiskowe powěsće w zaklučowanym formaće składować
+    .accesskey = l
 openpgp-key-user-id-label = Konto/Wužiwarski ID
 openpgp-keygen-title-label =
     .title = OpenPGP-kluč wutworić
@@ -613,6 +623,12 @@ no-temp-dir =
 possibly-pgp-mime = Powěsć je snano z PGP/MIME zaklučowana abo signowana; wužiwajće funkciju ‚Dešifrować/Přepruwować‘, zo byšće to přepruwował
 cannot-send-sig-because-no-own-key = Tuta powěsć njeda so digitalnje signować, dokelž hišće njejsće zaklučowanje kónc do kónca za <{ $key }> konfigurował
 cannot-send-enc-because-no-own-key = Tuta powěsć njeda so zaklučowana pósłać, dokelž hišće njejsće zaklučowanje kónc do kónca za <{ $key }> konfigurował
+compose-menu-attach-key =
+    .label = Mój zjawny kluč připowěsnyć
+    .accesskey = l
+compose-menu-encrypt-subject =
+    .label = Zaklučowanje temy
+    .accesskey = t
 # Strings used in decryption.jsm
 do-import-multiple =
     Slědowace kluče importować?

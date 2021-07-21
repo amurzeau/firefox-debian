@@ -10,6 +10,10 @@ account-setup-title = Jo besteande e-mailadres ynstelle
 account-setup-description =
     Folje om jo aktuele e-mailadres te brûken jo oanmeldgegevens yn.<br/>
     { -brand-product-name } siket automatysk nei in wurkjende en oanrekommandearre serverkonfiguraasje.
+account-setup-secondary-description = { -brand-product-name } siket automatysk nei in wurkjende en oanrekommandearre serverkonfiguraasje.
+account-setup-success-title = Account mei sukses oanmakke
+account-setup-success-description = Jo kinne dizze account no brûke mei { -brand-short-name }.
+account-setup-success-secondary-description = Jo kinne de ûnderfining ferbetterje troch relatearre services te keppeljen en avansearre accountynstellingen te konfigurearjen.
 
 ## Form fields
 
@@ -98,11 +102,16 @@ account-setup-step3-image =
     .title = Konfiguraasje fûn
 account-setup-step4-image =
     .title = Ferbiningsflater
-account-setup-privacy-footnote = Jo oanmeldgegevens wurde brûkt yn oerienstimming mei ús <a data-l10n-name="privacy-policy-link">privacybelied</a> en wurde allinnich lokaal op jo kompjûter bewarre.
+account-setup-step5-image =
+    .title = Account oanmakke
+account-setup-privacy-footnote2 = Jo oanmeldgegevens wurde allinnich lokaal op jo kompjûter bewarre.
 account-setup-selection-help = Net wis wat jo selektearje moatte?
 account-setup-selection-error = Help nedich?
+account-setup-success-help = Twivelje jo oer jo folgjende stappen?
 account-setup-documentation-help = Ynstellingsdokumintaasje
 account-setup-forum-help = Stipefoarum
+account-setup-privacy-help = Privacybelied
+account-setup-getting-started = Oan it wurk
 
 ## Results area
 
@@ -121,7 +130,8 @@ account-setup-result-pop = POP3
 account-setup-result-pop-description = Hâld jo mappen en e-mailberjochten op jo kompjûter
 # Note: Exchange is the name of a product.
 account-setup-result-exchange = Exchange
-account-setup-result-exchange-description = Microsoft Exchange-server
+# Note: Exchange, Office365 are the name of products.
+account-setup-result-exchange2-description = Brûk de Microsoft Exchange-server of Office 365-cloudtsjinsten
 account-setup-incoming-title = Ynkommend
 account-setup-outgoing-title = Utgeand
 account-setup-username-title = Brûkersnamme
@@ -211,3 +221,68 @@ account-setup-confirm-advanced-description = Dit dialoochfinster sil sluten wurd
 account-setup-addon-install-title = Ynstallearje
 account-setup-addon-install-intro = In add-on fan tredden kin tagong jaan ta jo e-mailaccount op dizze server:
 account-setup-addon-no-protocol = Dizze e-mailserver stipet spitigernôch gjin iepen protokollen. { account-setup-addon-install-intro }
+
+## Success view
+
+account-setup-settings-button = Accountynstellingen
+account-setup-encryption-button = End-to-end-fersifering
+account-setup-signature-button = In hanttekening tafoegje
+account-setup-dictionaries-button = Wurdboeken downloade
+account-setup-address-book-carddav-button = Ferbining meitsje mei in CardDAV-adresboek
+account-setup-address-book-ldap-button = Ferbining meitsje mei in LDAP-adresboek
+account-setup-calendar-button = Ferbining meitsje mei in eksterne aginda
+account-setup-linked-services-title = Ferbining meitsje mei jo keppele services
+account-setup-linked-services-description = { -brand-short-name } hat oare services dy't oan jo e-mailaccount keppele binne detektearre.
+account-setup-no-linked-description = Oare services ynstelle om it measte út jo { -brand-short-name }-ûnderfining te heljen.
+# Variables:
+# $count (Number) - The number of address books found during autoconfig.
+account-setup-found-address-books-description =
+    { $count ->
+        [one] { -brand-short-name } hat ien adresboek dat keppele is oan jo e-mailaccount fûn.
+       *[other] { -brand-short-name } hat { $count } adresboeken dy't keppele binne oan jo e-mailaccount fûn.
+    }
+# Variables:
+# $count (Number) - The number of calendars found during autoconfig.
+account-setup-found-calendars-description =
+    { $count ->
+        [one] { -brand-short-name } hat ien adresboek dy't keppele is oan jo e-mailaccount fûn.
+       *[other] { -brand-short-name } hat { $count } adresboeken dy't keppele binne oan jo e-mailaccount fûn.
+    }
+account-setup-button-finish = Foltôgje
+    .accesskey = F
+account-setup-looking-up-address-books = Adresboeken opsykje…
+account-setup-looking-up-calendars = Aginda’s opsykje…
+account-setup-address-books-button = Adresboeken
+account-setup-calendars-button = Aginda's
+account-setup-connect-link = Ferbine
+account-setup-existing-address-book = Ferbûn
+    .title = Adresboek al ferbûn
+account-setup-existing-calendar = Ferbûn
+    .title = Aginda al ferbûn
+account-setup-connect-all-calendars = Alle aginda’s ferbine
+account-setup-connect-all-address-books = Alle adresboeken ferbine
+
+## Calendar synchronization dialog
+
+calendar-dialog-title = Aginda ferbine
+calendar-dialog-cancel-button = Annulearje
+    .accesskey = A
+calendar-dialog-confirm-button = Ferbine
+    .accesskey = b
+account-setup-calendar-name-label = Namme
+account-setup-calendar-name-input =
+    .placeholder = Myn aginda
+account-setup-calendar-color-label = Kleur
+account-setup-calendar-refresh-label = Fernije
+account-setup-calendar-refresh-manual = Hânmjittich
+account-setup-calendar-refresh-interval =
+    { $count ->
+        [one] Elke minút
+       *[other] Elke { $count } minuten
+    }
+account-setup-calendar-read-only = Allinnich-lêze
+    .accesskey = A
+account-setup-calendar-show-reminders = Omtinken toane
+    .accesskey = t
+account-setup-calendar-offline-support = Offlinestipe
+    .accesskey = O

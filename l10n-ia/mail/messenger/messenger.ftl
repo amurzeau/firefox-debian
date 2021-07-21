@@ -11,11 +11,23 @@ unread-messages-os-tooltip =
     }
 about-rights-notification-text = { -brand-short-name } es un software gratuite e open-source, producite per un communitate de milles de tote le mundo.
 
+## Content tabs
+
+content-tab-page-loading-icon =
+    .alt = Le pagina se sta a cargar
+content-tab-security-high-icon =
+    .alt = Le connexion es secur
+content-tab-security-broken-icon =
+    .alt = Le connexion non es secur
+
 ## Toolbar
 
-addons-and-themes-button =
+addons-and-themes-toolbarbutton =
     .label = Additivos e themas
-    .tooltip = Gerer additivos e themas
+    .tooltiptext = Gere tu additivos
+quick-filter-toolbarbutton =
+    .label = Filtro rapide
+    .tooltiptext = Filtrar le messages
 redirect-msg-button =
     .label = Re-diriger
     .tooltiptext = Re-dirige le message seligite
@@ -115,3 +127,9 @@ caret-browsing-prompt-check-text = Non plus demandar.
 repair-text-encoding-button =
     .label = Corriger le codification del texto:
     .tooltiptext = Divina le correcte codification del texto ab le contento del message
+
+## no-reply handling
+
+no-reply-title = Replica non supportate
+no-reply-message = Le adresse de responsa ({ $email }) non pare ser un adresse monitorate. Le messages a iste adresse probabilemente non sera legite per alcuno.
+no-reply-reply-anyway-button = Responder comocunque

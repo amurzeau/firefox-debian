@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = Personelaat
     .title = Personelaat un ivinell nevez
     .aria-label = Personelaat un ivinell nevez
+newtab-personalize-icon-label =
+    .title = Personelaat un ivinell nevez
+    .aria-label = Personelaat un ivinell nevez
 newtab-personalize-dialog-label =
     .aria-label = Personelaat
 
@@ -39,7 +42,6 @@ newtab-search-box-search-the-web-input =
     .placeholder = Klask er web
     .title = Klask er web
     .aria-label = Klask er web
-newtab-search-box-text = Klask er web
 newtab-search-box-input =
     .placeholder = Klask er web
     .aria-label = Klask er web

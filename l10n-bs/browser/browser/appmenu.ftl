@@ -5,6 +5,12 @@
 
 ## App Menu
 
+appmenuitem-update-banner3 =
+    .label-update-downloading = Preuzimam { -brand-shorter-name } nadogradnju
+    .label-update-available = Nadogradnja dostupna — preuzmite odmah
+    .label-update-manual = Nadogradnja dostupna — preuzmite odmah
+    .label-update-unsupported = Ne mogu nadograditi — sistem nekompatibilan
+    .label-update-restart = Nadogradnja dostupna — restartujte odmah
 appmenuitem-protection-dashboard-title = Dashboard zaštite
 appmenuitem-customize-mode =
     .label = Prilagođavanje…
@@ -17,6 +23,30 @@ appmenuitem-new-window =
     .label = Novi prozor
 appmenuitem-new-private-window =
     .label = Novi privatni prozor
+appmenuitem-passwords =
+    .label = Lozinke
+appmenuitem-addons-and-themes =
+    .label = Add-oni i teme
+appmenuitem-find-in-page =
+    .label = Pronađi na stranici…
+appmenuitem-more-tools =
+    .label = Više alata
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] Izlaz
+           *[other] Izlaz
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = Otvori aplikacijski meni
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Zatvori aplikacijski meni
+    .label = { -brand-short-name }
+# Settings is now used to access the browser settings across all platforms,
+# instead of Options or Preferences.
+appmenuitem-settings =
+    .label = Postavke
 
 ## Zoom and Fullscreen Controls
 
@@ -31,6 +61,22 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = Sinhronizuj sada
+appmenu-remote-tabs-sign-into-sync =
+    .label = Prijavite se za sinhronizaciju…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Uključi sinhronizaciju…
+appmenuitem-fxa-toolbar-sync-now2 = Sinhronizuj odmah
+appmenuitem-fxa-manage-account = Upravljanje računom
+appmenu-fxa-header2 = { -fxaccount-brand-name(capitalization: "sentence") }
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Sinhronizovano { $time }
+    .label = Sinhronizovano { $time }
+appmenu-fxa-signed-in-label = Prijava
+appmenu-fxa-setup-sync =
+    .label = Uključi sinhronizaciju…
+appmenu-fxa-show-more-tabs = Prikaži više tabova
 appmenuitem-save-page =
     .label = Spasi stranicu kao…
 
@@ -47,9 +93,49 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-title =
+    .value = { -profiler-brand-name }
+profiler-popup-reveal-description-button =
+    .aria-label = Prikaži više informacija
+profiler-popup-description-title =
+    .value = Snimite, analizirajte, dijelite
+profiler-popup-description = Sarađujte na problemima performansi objavljivanjem profila koje ćete podijeliti sa svojim timom.
+profiler-popup-learn-more = Saznajte više
+profiler-popup-settings =
+    .value = Postavke
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings = Uredi postavke…
+profiler-popup-disabled =
+    Profiler je trenutno onemogućen, najvjerovatnije zbog otvorenog prozora
+    Privatnog surfanja.
+profiler-popup-recording-screen = Snimam…
+# The profiler presets list is generated elsewhere, but the custom preset is defined
+# here only.
+profiler-popup-presets-custom =
+    .label = Prilagođeno
+profiler-popup-start-recording-button =
+    .label = Započni snimanje
+profiler-popup-discard-button =
+    .label = Odbaci
+profiler-popup-capture-button =
+    .label = Snimaj
+profiler-popup-start-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧1
+       *[other] Ctrl+Shift+1
+    }
+profiler-popup-capture-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧2
+       *[other] Ctrl+Shift+2
+    }
 
 ## History panel
 
+appmenu-manage-history =
+    .label = Upravljanje historijom
+appmenu-reopen-all-tabs = Otvori sve tabove
+appmenu-reopen-all-windows = Otvori sve prozore
 appmenu-restore-session =
     .label = Vrati prethodnu sesiju
 appmenu-clear-history =
@@ -62,9 +148,14 @@ appmenu-recently-closed-windows =
 
 ## Help panel
 
+appmenu-help-header =
+    .title = { -brand-shorter-name } pomoć
 appmenu-about =
     .label = O { -brand-shorter-name }u
     .accesskey = O
+appmenu-get-help =
+    .label = Pomoć
+    .accesskey = h
 appmenu-help-report-site-issue =
     .label = Prijavite problem sa stranicom…
 appmenu-help-feedback-page =
@@ -87,5 +178,10 @@ appmenu-help-not-deceptive =
 
 ## More Tools
 
+appmenu-customizetoolbar =
+    .label = Prilagodi alatnu traku…
 appmenu-taskmanager =
     .label = Task Manager
+appmenu-developer-tools-subheader = Alati browsera
+appmenu-developer-tools-extensions =
+    .label = Ekstenzije za developere

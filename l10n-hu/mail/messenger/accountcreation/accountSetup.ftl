@@ -10,6 +10,10 @@ account-setup-title = Meglévő e-mail fiók beállítása
 account-setup-description =
     A jelenlegi e-mail-címe használatához ki kell töltenie a hitelesítő adatait.<br/>
     A { -brand-product-name } automatikusan megkeresi a működő és ajánlott kiszolgálóbeállításokat.
+account-setup-secondary-description = A { -brand-product-name } automatikusan megkeresi a kiszolgáló működő és ajánlott beállításait.
+account-setup-success-title = Fiók sikeresen létrehozva
+account-setup-success-description = Most már használhatja ezt a fiókot a { -brand-short-name }del.
+account-setup-success-secondary-description = A kapcsolódó szolgáltatások összekapcsolásával, és a fiók speciális beállításainak konfigurálásával javíthatja a felhasználói élményt.
 
 ## Form fields
 
@@ -98,11 +102,16 @@ account-setup-step3-image =
     .title = Konfiguráció megtalálva
 account-setup-step4-image =
     .title = Kapcsolódási hiba
-account-setup-privacy-footnote = A hitelesítő adatait az <a data-l10n-name="privacy-policy-link">adatvédelmi irányelveink</a> szerint használjuk fel, és csak helyben tároljuk, az Ön számítógépén.
+account-setup-step5-image =
+    .title = Fiók létrehozva
+account-setup-privacy-footnote2 = A hitelesítő adatok csak helyben lesznek tárolva a számítógépen.
 account-setup-selection-help = Nem tudja, mit válasszon?
 account-setup-selection-error = Segítségre van szüksége?
+account-setup-success-help = Nem biztos a következő lépésekben?
 account-setup-documentation-help = Telepítési dokumentáció
 account-setup-forum-help = Támogatói fórum
+account-setup-privacy-help = Adatvédelmi irányelvek
+account-setup-getting-started = Első lépések
 
 ## Results area
 
@@ -121,7 +130,8 @@ account-setup-result-pop = POP3
 account-setup-result-pop-description = Mappák és e-mailek tárolása az Ön számítógépén
 # Note: Exchange is the name of a product.
 account-setup-result-exchange = Exchange
-account-setup-result-exchange-description = Microsoft Exchange Server
+# Note: Exchange, Office365 are the name of products.
+account-setup-result-exchange2-description = Microsoft Exchange vagy Office 365 felhőszolgáltatások használata
 account-setup-incoming-title = Bejövő
 account-setup-outgoing-title = Kimenő
 account-setup-username-title = Felhasználónév
@@ -211,3 +221,68 @@ account-setup-confirm-advanced-description = Ez a párbeszédpanel bezáródik, 
 account-setup-addon-install-title = Telepítés
 account-setup-addon-install-intro = Egy harmadik féltől származó kiegészítővel hozzáférhet az e-mail fiókjához ezen a kiszolgálón:
 account-setup-addon-no-protocol = Ez az e-mail-kiszolgáló sajnos nem támogatja a nyílt protokollokat. { account-setup-addon-install-intro }
+
+## Success view
+
+account-setup-settings-button = Fiókbeállítások
+account-setup-encryption-button = Végpontok közötti titkosítás
+account-setup-signature-button = Aláírás hozzáadása
+account-setup-dictionaries-button = Szótárak letöltése
+account-setup-address-book-carddav-button = Kapcsolódás egy CardDAV címjegyzékhez
+account-setup-address-book-ldap-button = Kapcsolódás egy LDAP címjegyzékhez
+account-setup-calendar-button = Kapcsolódás egy távoli naptárhoz
+account-setup-linked-services-title = Kapcsolt szolgáltatások összekapcsolása
+account-setup-linked-services-description = A { -brand-short-name } egyéb, az e-mail-fiókjához kapcsolódó szolgáltatások észlelt.
+account-setup-no-linked-description = Állítson be más szolgáltatásokat, hogy a legtöbbet hozza ki a { -brand-short-name } élményéből.
+# Variables:
+# $count (Number) - The number of address books found during autoconfig.
+account-setup-found-address-books-description =
+    { $count ->
+        [one] A { -brand-short-name } egy, az e-mail-fiókjához kapcsolódó címjegyzéket talált.
+       *[other] A { -brand-short-name } { $count }, az e-mail-fiókjához kapcsolódó címjegyzéket talált.
+    }
+# Variables:
+# $count (Number) - The number of calendars found during autoconfig.
+account-setup-found-calendars-description =
+    { $count ->
+        [one] A { -brand-short-name } egy, az e-mail-fiókjához kapcsolódó naptárat talált.
+       *[other] A { -brand-short-name } { $count }, az e-mail-fiókjához kapcsolódó naptárat talált.
+    }
+account-setup-button-finish = Befejezés
+    .accesskey = B
+account-setup-looking-up-address-books = Címjegyzékek keresése…
+account-setup-looking-up-calendars = Naptárak keresése…
+account-setup-address-books-button = Címjegyzékek
+account-setup-calendars-button = Naptárak
+account-setup-connect-link = Kapcsolódás
+account-setup-existing-address-book = Kapcsolódva
+    .title = Már kapcsolódik a címjegyzékhez
+account-setup-existing-calendar = Kapcsolódva
+    .title = Már kapcsolódik a naptárhoz
+account-setup-connect-all-calendars = Kapcsolódás az összes naptárhoz
+account-setup-connect-all-address-books = Kapcsolódás az összes címjegyzékhez
+
+## Calendar synchronization dialog
+
+calendar-dialog-title = Kapcsolódás egy naptárhoz
+calendar-dialog-cancel-button = Mégse
+    .accesskey = M
+calendar-dialog-confirm-button = Kapcsolódás
+    .accesskey = K
+account-setup-calendar-name-label = Név
+account-setup-calendar-name-input =
+    .placeholder = Saját naptár
+account-setup-calendar-color-label = Szín
+account-setup-calendar-refresh-label = Frissítés
+account-setup-calendar-refresh-manual = Kézzel
+account-setup-calendar-refresh-interval =
+    { $count ->
+        [one] Percenként
+       *[other] { $minutes } percenként
+    }
+account-setup-calendar-read-only = Csak olvasható
+    .accesskey = o
+account-setup-calendar-show-reminders = Emlékeztetők megjelenítése
+    .accesskey = E
+account-setup-calendar-offline-support = Offline támogatás
+    .accesskey = O
