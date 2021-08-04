@@ -616,6 +616,12 @@ no-temp-dir =
 possibly-pgp-mime = Správa je možno šifrovaná alebo podpísaná pomocou PGP/MIME; na overenie použite funkciu „Dešifrovať/Overiť“
 cannot-send-sig-because-no-own-key = Túto správu nie je možné digitálne podpísať, pretože ste ešte nenastavili obojstranné šifrovanie pre <{ $key }>
 cannot-send-enc-because-no-own-key = Túto správu nie je možné odoslať zašifrovanú, pretože ste ešte nenastavili obojstranné šifrovanie pre <{ $key }>
+compose-menu-attach-key =
+    .label = Priložiť môj verejný kľúč
+    .accesskey = k
+compose-menu-encrypt-subject =
+    .label = Šifrovanie predmetu
+    .accesskey = m
 # Strings used in decryption.jsm
 do-import-multiple =
     Importovať nasledujúce kľúče?

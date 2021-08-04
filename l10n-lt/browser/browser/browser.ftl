@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Valdyti papildinių naudojimą
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Tvarkyti kameros ir mikrofono naudojimą svetainėje
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Tvarkyti kitų garsiakalbių naudojimą svetainėje
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Atverti automatinio grojimo polangį
 urlbar-persistent-storage-notification-anchor =
@@ -705,3 +709,9 @@ addon-removal-abuse-report-checkbox = Pranešti apie šį priedą į „{ -vendo
 remote-tabs-manage-account =
     .label = Tvarkyti paskyrą
 remote-tabs-sync-now = Sinchronizuoti dabar
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Daugiau…

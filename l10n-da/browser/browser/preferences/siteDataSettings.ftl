@@ -54,4 +54,7 @@ site-data-removing-dialog =
     .buttonlabelaccept = Fjern
 site-data-removing-header = Fjerner cookies og websteds-data
 site-data-removing-desc = Ved at fjerne cookies og websteds-data kan du blive logget ud fra websteder, du er logget ind på. Er du sikker på, at du vil foretage ændringerne?
+# Variables:
+#   $baseDomain (String) - The single domain for which data is being removed
+site-data-removing-single-desc = Ved at fjerne cookies og websteds-data kan du blive logget ud fra websteder, du er logget ind på. Er du sikker på, at du vil fjerne cookies og websteds-data for <strong>{ $baseDomain }</strong>?
 site-data-removing-table = Cookies og websteds-data for de følgende websteder vil blive fjernet

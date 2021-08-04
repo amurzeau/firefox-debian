@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Wužiwanje tykačow rjadować
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Dźělenje wašeje kamery a /abo wašeho mikrofona ze sydłom rjadować
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Dźělenje druhich wótřerěčakow ze sydłom rjadować
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Wobłuk za awtomatiske wothraće wočinić
 urlbar-persistent-storage-notification-anchor =
@@ -709,3 +713,9 @@ addon-removal-abuse-report-checkbox = { -vendor-short-name } tute rozšěrjenje 
 remote-tabs-manage-account =
     .label = Konto rjadować
 remote-tabs-sync-now = Nětko synchronizować
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Wjace…

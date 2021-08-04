@@ -24,6 +24,11 @@ newtab-search-box-search-button =
     .title = Hanapin
     .aria-label = Hanapin
 newtab-search-box-search-the-web-text = Hanapin sa Web
+newtab-search-box-handoff-text-no-engine = Maghanap o ilagay ang address
+newtab-search-box-handoff-input-no-engine =
+    .placeholder = Hanapin o ilagay ang address
+    .title = Hanapin o ilagay ang address
+    .aria-label = Hanapin o ilagay ang address
 newtab-search-box-search-the-web-input =
     .placeholder = Hanapin sa Web
     .title = Hanapin sa Web
@@ -38,6 +43,7 @@ newtab-topsites-add-search-engine-header = Magdagdag ng Search Engine
 newtab-topsites-add-topsites-header = Bagong Top Site
 newtab-topsites-add-shortcut-header = Bagong Shortcut
 newtab-topsites-edit-topsites-header = Baguhin ang Pangunahing Site
+newtab-topsites-edit-shortcut-header = I-edit ang Shortcut
 newtab-topsites-title-label = Pamagat
 newtab-topsites-title-input =
     .placeholder = MAgbigay ng Pamagat
@@ -221,11 +227,14 @@ newtab-error-fallback-refresh-link = I-refresh ang pahina para masubukan uli.
 
 ## Customization Menu
 
+newtab-custom-shortcuts-title = Mga shortcut
+newtab-custom-shortcuts-subtitle = Mga site na nai-save o binibisita mo
 newtab-custom-row-selector =
     { $num ->
         [one] { $num } row
        *[other] { $num } rows
     }
+newtab-custom-sponsored-sites = Mga naka-sponsor na shortcut
 newtab-custom-close-button = Isara
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that

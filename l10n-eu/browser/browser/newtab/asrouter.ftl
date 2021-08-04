@@ -120,9 +120,6 @@ cfr-whatsnew-lockwise-take-link-text = Eskuratu aplikazioa
 
 cfr-whatsnew-searchbar-title = Idatzi gutxiago eta aurkitu gehiago helbide-barra erabiliz
 cfr-whatsnew-searchbar-body-topsites = Orain, hautatu helbide-barra eta kutxa bat hedatuko da zure zure gune erabilienetarako loturekin.
-
-## Search bar
-
 cfr-whatsnew-searchbar-icon-alt-text = Luparen ikonoa
 
 ## Picture-in-Picture
@@ -239,12 +236,6 @@ cfr-whatsnew-pip-fullscreen-icon-alt = Bideoa beste leiho batean eginbideko ikon
 
 ## Protections Dashboard message
 
-cfr-doorhanger-milestone-close-button = Itxi
-    .accesskey = x
-
-## What’s New Panel Content for Firefox 76
-## Protections Dashboard message
-
 cfr-whatsnew-protections-header = Babesak laburrean
 cfr-whatsnew-protections-body = Babesen panelak datu-urratzeen eta pasahitz-kudeaketaren inguruko laburpen-txostenak ditu. Ebatzi dituzun urratzeen jarraipena egin dezakezu orain eta gordetako zure pasahitzen bat datu-urratzeren batean agerian utzi den ikusi.
 cfr-whatsnew-protections-cta-link = Ikusi babesen arbela
@@ -254,6 +245,8 @@ cfr-whatsnew-protections-icon-alt = Babesaren ikonoa
 
 cfr-whatsnew-better-pdf-header = PDF esperientzia hobetua
 cfr-whatsnew-better-pdf-body = PDF dokumentuak orain zuzenean { -brand-short-name }(e)n irekitzen dira, zure lan egiteko modua erraztuz.
+cfr-doorhanger-milestone-close-button = Itxi
+    .accesskey = x
 
 ## DOH Message
 
@@ -273,34 +266,7 @@ cfr-doorhanger-fission-primary-button = Ados, ulertuta
 cfr-doorhanger-fission-secondary-button = Argibide gehiago
     .accesskey = A
 
-## What's new: Cookies message
+## Full Video Support CFR message
 
-cfr-whatsnew-clear-cookies-header = Jarraipen-taktika maltzurretatik babes automatikoa
-cfr-whatsnew-clear-cookies-body = Zenbait jarraipen-elementuk sekretupean cookieak ezartzen dituzten beste webguneetara berbideratzen zaituzte. { -brand-short-name }(e)k automatikoki garbitzen ditu cookie horiek, zure jarraipena egitea saihestuz.
-cfr-whatsnew-clear-cookies-image-alt = Blokeatutako cookiearen ilustrazioa
-
-## What's new: Media controls message
-
-cfr-whatsnew-media-keys-header = Multimedia-kontrol gehiago
-cfr-whatsnew-media-keys-body = Erreproduzitu eta pausatu audioa edo bideoa zure teklatu edo kaskoetatik zuzenean, errazagoa eginez beste fitxa edo programetako multimedia kontrolatzea, zure ordenagailua blokeatuta izanda ere. Pisten artean ere mugi zaitezke atzera eta aurrerako botoiak erabiliz.
-cfr-whatsnew-media-keys-button = Ikasi nola
-
-## What's new: Search shortcuts
-
-cfr-whatsnew-search-shortcuts-header = Bilatu lasterbideak helbide-barran
-cfr-whatsnew-search-shortcuts-body = Orain, bilaketa-motor edo gune zehatz bat helbide-barran idaztean, lasterbide urdin bat agertuko da azpiko bilaketa-iradokizunetan. Hautatu lasterbidea bilaketa zuzenean helbide-barratik burutzeko.
-
-## What's new: Cookies protection
-
-cfr-whatsnew-supercookies-header = Supercookie maltzurren aurkako babesa
-cfr-whatsnew-supercookies-body = Webguneek zure nabigatzailean "supercookie" sekretu bat erants dezakete eta webeko zure jarduna jarraitu; zuk cookieak garbitu ondoren ere bai. { -brand-short-name }(e)k orain supercookie hauen aurkako babes sendoa eskaintzen du, zure online jardueraren jarraipenik ez egiteko gune batetik bestera.
-
-## What's new: Better bookmarking
-
-cfr-whatsnew-bookmarking-header = Laster-marka hobeak
-cfr-whatsnew-bookmarking-body = Errazagoa da zure gogoko guneak kontrolpean izatea. Gordetako laster-marken kokaleku gogokoena gogoratzen du orain { -brand-short-name }(e)k, laster-marken tresna-barra lehenespenez erakusten da fitxa berrietan eta gainerako laster-marketarako sarbide erraza ematen zaizu tresna-barrako karpetaren bidez.
-
-## What's new: Cross-site cookie tracking
-
-cfr-whatsnew-cross-site-tracking-header = Guneen arteko cookien jarraipenaren aurkako babes sakona
-cfr-whatsnew-cross-site-tracking-body = Cookien jarraipenaren aurkako babes hobeagoa izatea aukera dezakezu orain. { -brand-short-name }(e)k zure ekintzak eta datuak uneko gunearen testuingurura isola ditzake, nabigatzailean gordetako informazioa webguneen artean parteka ez dadin.
+cfr-doorhanger-video-support-primary-button = Eguneratu orain
+    .accesskey = E

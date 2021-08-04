@@ -4,16 +4,17 @@
 
 head-title = Despre instrumentele pentru dezvoltatori
 enable-title = Activează instrumentele pentru dezvoltatori Firefox
-enable-inspect-element-title = Activează instrumentele de dezvoltare Firefox pentru a folosi Inspectează elementul
+enable-inspect-element-title = Activează instrumentele pentru dezvoltatori Firefox pentru a folosi Inspectează elementul
 enable-inspect-element-message = Examinează și editează HTML și CSS cu inspectorul din instrumentele pentru dezvoltatori.
 enable-about-debugging-message = Dezvoltă și depanează WebExtensions, scripturi web worker, service worker și multe altele cu instrumentele pentru dezvoltatori Firefox.
 enable-key-shortcut-message = Ai activat o comandă rapidă pentru instrumentele pentru dezvoltatori. Dacă a fost din greșeală, poți închide această filă.
 enable-menu-message = Perfecționează conținutul HTML, CSS și JavaScript de pe site cu unelte cum sunt inspectorul și depanatorul.
 enable-common-message = Instrumentele pentru dezvoltatori Firefox sunt dezactivate implicit pentru a-ți da mai mult control asupra browserului.
-enable-learn-more-link = Află mai multe despre instrumentele de dezvoltare
+enable-learn-more-link = Află mai multe despre instrumentele pentru dezvoltatori
 enable-enable-button = Activează instrumentele de dezvoltare
 enable-close-button = Închide această filă
-welcome-title = Bine ai venit la instrumentele de dezvoltare Firefox!
+
+welcome-title = Bine ai venit la instrumentele pentru dezvoltatori Firefox!
 newsletter-title = Buletinul informativ Mozilla pentru dezvoltatori
 newsletter-message = Primește știri pentru dezvoltatori, trucuri și resurse direct în căsuța poștală.
 newsletter-email-placeholder =
@@ -22,9 +23,11 @@ newsletter-privacy-label = Sunt de acord ca Mozilla să îmi gestioneze informa�
 newsletter-subscribe-button = Abonează-te
 newsletter-thanks-title = Îți mulțumim!
 newsletter-thanks-message = Dacă nu ai confirmat anterior o abonare la un buletin informativ în legătură cu Mozilla, este posibil să fie nevoie să o faci. Te rugăm să verifici mesajele primite sau dosarul spam pentru mesaje de e-mail de la noi.
+
 footer-title = Firefox Developer Edition
-footer-message = Cauți mai mult decât instrumente de dezvoltare? Aruncă o privire asupra browserului Firefox care este construit special pentru dezvoltatori și fluxuri de lucru moderne.
+footer-message = Cauți mai mult decât instrumente pentru dezvoltatori? Aruncă o privire asupra browserului Firefox care este construit special pentru dezvoltatori și fluxuri de lucru moderne.
 footer-learn-more-link = Află mai multe
+
 features-learn-more = Află mai multe
 features-inspector-title = Inspector
 features-inspector-desc = Inspectează și rafinează codul pentru a construi layouturi precise la nivel de pixel. <a data-l10n-name="learn-more">{ features-learn-more }</a>

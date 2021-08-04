@@ -10,8 +10,6 @@ preferences-title =
             [windows] Preferenzas
            *[other] Preferenzas
         }
-preferences-tab-title =
-    .title = Preferenzas
 preferences-doc-title = Preferenzas
 category-list =
     .aria-label = Categorias
@@ -263,6 +261,9 @@ diskspace-legend = Capacitad da memorisar
 offline-compact-folder =
     .label = Cumprimer tut ils ordinaturs sche quai spargna dapli che
     .accesskey = C
+offline-compact-folder-automatically =
+    .label = Adina dumandar avant che cumprimer
+    .accesskey = a
 compact-folder-size =
     .value = MB
 

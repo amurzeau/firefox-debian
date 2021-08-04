@@ -217,6 +217,8 @@ cert-not-verified-unknown = Impossible de verificar aqueste certificat per una r
 send-no-client-certificate = Enviar pas de certificat client
 # Used when no cert is stored for an override
 no-cert-stored-for-override = (pas gardat)
+# When a certificate is unavailable (for example, it has been deleted or the token it exists on has been removed).
+certificate-not-available = (Indisponible)
 
 ## Used to show whether an override is temporary or permanent
 

@@ -107,7 +107,7 @@ profiler-popup-settings =
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Змінити налаштування…
 profiler-popup-disabled =
-    Профайлер зараз вимкнений, швидше за все, через відкрите вікно
+    Profiler зараз вимкнений, швидше за все, через відкрите вікно
     приватного перегляду.
 profiler-popup-recording-screen = Запис…
 # The profiler presets list is generated elsewhere, but the custom preset is defined

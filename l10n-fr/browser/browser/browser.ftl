@@ -701,3 +701,9 @@ addon-removal-abuse-report-checkbox = Signaler cette extension à { -vendor-shor
 remote-tabs-manage-account =
     .label = Gestion du compte
 remote-tabs-sync-now = Synchroniser maintenant
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Plus…

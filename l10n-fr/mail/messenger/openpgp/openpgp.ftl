@@ -617,6 +617,12 @@ no-temp-dir =
 possibly-pgp-mime = Message potentiellement chiffré ou signé via PGP/MIME ; utilisez la fonction « Déchiffrer/Vérifier » pour vous en assurer
 cannot-send-sig-because-no-own-key = Impossible de signer numériquement ce message, car vous n’avez pas encore configuré le chiffrement de bout en bout pour <{ $key }>
 cannot-send-enc-because-no-own-key = Impossible d’envoyer ce message chiffré, car vous n’avez pas encore configuré le chiffrement de bout en bout pour <{ $key }>
+compose-menu-attach-key =
+    .label = Joindre ma clé publique
+    .accesskey = J
+compose-menu-encrypt-subject =
+    .label = Chiffrement du sujet
+    .accesskey = h
 # Strings used in decryption.jsm
 do-import-multiple = Importer les clés suivantes ? { $key }
 do-import-one = Importer { $name } ({ $id }) ?

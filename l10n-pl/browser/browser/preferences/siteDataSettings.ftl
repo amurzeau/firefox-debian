@@ -54,4 +54,7 @@ site-data-removing-dialog =
     .buttonlabelaccept = Usuń
 site-data-removing-header = Usuwanie ciasteczek i danych witryn
 site-data-removing-desc = Usunięcie ciasteczek i danych witryn może spowodować wylogowanie z niektórych witryn. Czy wprowadzić zmiany?
+# Variables:
+#   $baseDomain (String) - The single domain for which data is being removed
+site-data-removing-single-desc = Usunięcie ciasteczek i danych witryn może spowodować wylogowanie z niektórych witryn. Czy usunąć ciasteczka i dane witryny <strong>{ $baseDomain }</strong>?
 site-data-removing-table = Ciasteczka i dane stron następujących witryn zostaną usunięte:

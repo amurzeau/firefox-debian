@@ -6,4 +6,4 @@
 thunderbird-import-name = Thunderbird
 # Description of the import module
 thunderbird-import-description = Importuje poštu z priečinka profilu Thunderbirdu.
-import-select-profile-dir-or-zip = Zvoľte priečinok profilu alebo komprimovaný priečinok s profilom
+import-select-profile-zip = Zvoľte priečinok so skomprimovaným profilom

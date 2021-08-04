@@ -59,6 +59,7 @@ app-basics-enabled-plugins = Phần bổ trợ đã bật
 app-basics-build-config = Cấu hình bản dựng
 app-basics-user-agent = Chuỗi đại diện người dùng (User Agent)
 app-basics-os = Hệ điều hành
+app-basics-os-theme = Chủ đề hệ điều hành
 # Rosetta is Apple's translation process to run apps containing x86_64
 # instructions on Apple Silicon. This should remain in English.
 app-basics-rosetta = Rosetta Translated

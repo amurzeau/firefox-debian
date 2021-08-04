@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Gerir utilização de plugins
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Gerir a partilha da sua câmara e/ou microfone com o site
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Gerir a partilha de outros altifalantes com o site
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Abri painel de reprodução automática
 urlbar-persistent-storage-notification-anchor =
@@ -701,3 +705,9 @@ addon-removal-abuse-report-checkbox = Reportar esta extensão à { -vendor-short
 remote-tabs-manage-account =
     .label = Gerir conta
 remote-tabs-sync-now = Sincronizar agora
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Mais…

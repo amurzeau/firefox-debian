@@ -42,6 +42,7 @@ newtab-search-box-search-the-web-input =
     .placeholder = Vyhledat na webu
     .title = Vyhledat na webu
     .aria-label = Vyhledat na webu
+newtab-search-box-text = Vyhledat na webu
 newtab-search-box-input =
     .placeholder = Vyhledat na webu
     .aria-label = Vyhledat na webu

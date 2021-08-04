@@ -8,10 +8,10 @@ about-addressbook-title = Cudeschet d'adressas
 
 about-addressbook-toolbar-new-address-book =
     .label = Nov cudeschet d'adressas
-about-addressbook-toolbar-new-carddav-address-book =
-    .label = Nov cudeschet d'adressas CardDAV
-about-addressbook-toolbar-new-ldap-address-book =
-    .label = Nov cudeschet d'adressas LDAP
+about-addressbook-toolbar-add-carddav-address-book =
+    .label = Agiuntar in cudeschet d'adressas CardDAV
+about-addressbook-toolbar-add-ldap-address-book =
+    .label = Agiuntar in cudeschet d'adressas LDAP
 about-addressbook-toolbar-new-contact =
     .label = Nov contact
 about-addressbook-toolbar-new-list =

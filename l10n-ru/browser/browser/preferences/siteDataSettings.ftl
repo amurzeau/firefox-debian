@@ -54,4 +54,7 @@ site-data-removing-dialog =
     .buttonlabelaccept = Удалить
 site-data-removing-header = Удаление кук и данных сайтов
 site-data-removing-desc = Удаление кук и данных сайтов может привести к разрегистрации вас на веб-сайтах. Вы уверены, что хотите произвести изменения?
+# Variables:
+#   $baseDomain (String) - The single domain for which data is being removed
+site-data-removing-single-desc = Удаление кук и данных сайтов может привести к разрегистрации вас на веб-сайтах. Вы уверены, что хотите удалить куки и данные сайтов для <strong>{ $baseDomain }</strong>?
 site-data-removing-table = Куки и данные сайтов для следующих веб-сайтов будут удалены

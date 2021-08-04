@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = ניהול שימוש בתוספים חיצוניים
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = ניהול שיתוף המצלמה ו/או המיקרופון שלך עם האתר
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = ניהול שיתוף רמוקלים אחרים עם האתר
 urlbar-autoplay-notification-anchor =
     .tooltiptext = פתיחת לוח ניגון אוטומטי
 urlbar-persistent-storage-notification-anchor =
@@ -696,3 +700,9 @@ addon-removal-abuse-report-checkbox = דיווח על הרחבה זו ל־{ -ven
 remote-tabs-manage-account =
     .label = ניהול חשבון
 remote-tabs-sync-now = סנכרון כעת
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = עוד…

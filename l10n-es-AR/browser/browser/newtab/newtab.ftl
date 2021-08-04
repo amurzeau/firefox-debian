@@ -42,6 +42,7 @@ newtab-search-box-search-the-web-input =
     .placeholder = Buscar en la web
     .title = Buscar en la web
     .aria-label = Buscar en la web
+newtab-search-box-text = Buscar en la web
 newtab-search-box-input =
     .placeholder = Buscar en la web
     .aria-label = Buscar en la web
@@ -222,7 +223,7 @@ newtab-discovery-empty-section-topstories-timed-out = ¡Uy! Casi cargamos esta s
 ## Pocket Content Section.
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
-newtab-pocket-read-more = Tópicos populares:
+newtab-pocket-read-more = Temas populares:
 newtab-pocket-more-recommendations = Más recomendaciones
 newtab-pocket-learn-more = Conocer más
 newtab-pocket-cta-button = Obtener { -pocket-brand-name }

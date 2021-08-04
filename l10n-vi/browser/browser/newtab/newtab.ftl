@@ -42,6 +42,7 @@ newtab-search-box-search-the-web-input =
     .placeholder = Tìm trên mạng
     .title = Tìm trên mạng
     .aria-label = Tìm trên mạng
+newtab-search-box-text = Tìm kiếm trên mạng
 newtab-search-box-input =
     .placeholder = Tìm kiếm trên mạng
     .aria-label = Tìm kiếm trên mạng

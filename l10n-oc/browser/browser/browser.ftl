@@ -701,3 +701,9 @@ addon-removal-abuse-report-checkbox = Senhalar aquesta extension a { -vendor-sho
 remote-tabs-manage-account =
     .label = Gestion del compte
 remote-tabs-sync-now = Sincronizar ara
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Mai…

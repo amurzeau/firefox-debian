@@ -393,6 +393,15 @@ update-setting-write-failure-message =
     Degouezhet ez eus bet ur fazi gant { -brand-short-name } ha n'eo ket bet enrollet ar c'hemmoù. Kemmañ ar gwellvez-se a azgoulenn kaout an aotre da skrivañ er restr dindan. Un ardoer reizhiad pe c'hwi hoc'h unan a c'hallfe diskoulmañ ar fazi en ur aotren ar strollad Arveriaded da reoliañ ar restr-mañ.
     
     Dic'houest eo da skrivañ er restr: { $path }
+update-setting-write-failure-title2 = Fazi en ur enrollañ an arventennoù hizivaat
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    Degouezhet ez eus bet ur fazi gant { -brand-short-name } ha n’eo ket bet enrollet ar c’hemmoù. Kemmañ an arventenn-se a azgoulenn kaout an aotre da skrivañ er restr dindan. Un ardoer reizhiad pe c’hwi hoc’h unan a c’hallfe diskoulmañ ar fazi en ur aotren ar strollad Arveriaded da reoliañ ar restr-mañ.
+    
+    Dic’houest eo da skrivañ er restr: { $path }
 update-in-progress-title = Hizivadenn war ober
 update-in-progress-message = Fallout a ra deoc'h e kendalc'hfe { -brand-short-name } da hizivaat?
 update-in-progress-ok-button = &Argas
@@ -508,8 +517,10 @@ home-prefs-topsites-header =
 home-prefs-topsites-description = Al lec'hiennoù a weladennit ar muiañ
 home-prefs-topsites-by-option-sponsored =
     .label = Lec'hiennoù gwellañ paeroniet
+home-prefs-shortcuts-header =
+    .label = Berradennoù
 home-prefs-shortcuts-by-option-sponsored =
-    .label = Berradurioù paeroniet
+    .label = Berradennoù paeroniet
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -617,6 +628,8 @@ containers-back-button =
             [windows] Distreiñ d'an dibarzhioù
            *[other] Distreiñ d'ar gwellvezioù
         }
+containers-back-button2 =
+    .aria-label = Distreiñ d’an arventennoù
 containers-header = Ivinelloù endalc'her
 containers-add-button =
     .label = Ouzhpennañ un endalc'her nevez
@@ -626,6 +639,8 @@ containers-new-tab-check =
     .accesskey = D
 containers-preferences-button =
     .label = Gwellvezioù
+containers-settings-button =
+    .label = Arventennoù
 containers-remove-button =
     .label = Lemel kuit
 
@@ -638,6 +653,9 @@ sync-signedout-account-signin2 =
     .label = Kennaskañ ouzh { -sync-brand-short-name }...
     .accesskey = K
 sync-signedout-description2 = Goubredit ho sinedoù, roll istor, ivinelloù, gerioù-tremen, askouezhioù ha arventennoù dre veur a drevnad.
+sync-signedout-account-signin3 =
+    .label = Kennaskañ evit goubredañ…
+    .accesskey = K
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -677,6 +695,9 @@ prefs-sync-setup =
     .label = Arventennañ { -sync-brand-short-name }…
     .accesskey = A
 prefs-sync-offer-setup-label = Goubredit ho sinedoù, roll istor, ivinelloù, gerioù-tremen, askouezhioù ha gwellvezioù dre veur a drevnad.
+prefs-sync-turn-on-syncing =
+    .label = Gweredekaat ar goubredañ…
+    .accesskey = G
 prefs-sync-offer-setup-label2 = Goubredit ho sinedoù, roll istor, ivinelloù, gerioù-tremen, askouezhioù hag arventennoù dre veur a drevnad.
 prefs-sync-now =
     .labelnotsyncing = Goubredañ bremañ
@@ -934,6 +955,10 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Digeriñ ivinelloù
     .accesskey = D
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Berradennoù
+    .accesskey = B
 addressbar-locbar-topsites-option =
     .label = Lec'hiennoù gwellañ
     .accesskey = L

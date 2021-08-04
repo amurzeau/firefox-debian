@@ -42,6 +42,7 @@ newtab-search-box-search-the-web-input =
     .placeholder = Web pśepytaś
     .title = Web pśepytaś
     .aria-label = Web pśepytaś
+newtab-search-box-text = Web pśepytaś
 newtab-search-box-input =
     .placeholder = Web pśepytaś
     .aria-label = Web pśepytaś

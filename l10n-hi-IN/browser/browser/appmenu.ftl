@@ -19,6 +19,20 @@ appmenuitem-new-private-window =
     .label = नयी निजी विंडो
 appmenuitem-passwords =
     .label = पासवर्ड
+appmenuitem-addons-and-themes =
+    .label = ऐड-ऑन और थीम
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] छोड़ें
+           *[other] बाहर निकलें
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = एप्लिकेशन मेन्यू खोलें
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = एप्लिकेशन मेन्यू बंद करें
+    .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -37,6 +51,11 @@ appmenuitem-fullscreen =
 
 fxa-toolbar-sync-now =
     .label = अब तुल्यकालित करें
+appmenu-remote-tabs-sign-into-sync =
+    .label = सिंक करने के लिए साइन इन करें...
+appmenu-remote-tabs-turn-on-sync =
+    .label = सिंक चालू करें…
+appmenuitem-fxa-toolbar-sync-now2 = अभी सिंक करें
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 appmenu-fxa-signed-in-label = साइन इन
 appmenuitem-save-page =
@@ -60,6 +79,8 @@ profiler-popup-title =
 profiler-popup-learn-more = अधिक जानें
 profiler-popup-settings =
     .value = सेटिंग
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings = सेटिंग संपादित करें…
 profiler-popup-recording-screen = रिकॉर्डिंग…
 profiler-popup-start-recording-button =
     .label = रिकॉर्डिंग शुरू करें
@@ -76,6 +97,8 @@ profiler-popup-capture-shortcut =
 
 ## History panel
 
+appmenu-reopen-all-tabs = सभी टैब फिर से खोलें
+appmenu-reopen-all-windows = सभी विंडो फिर से खोलें
 appmenu-restore-session =
     .label = पिछला सत्र पुनर्बहाल करें
 appmenu-clear-history =
@@ -88,6 +111,8 @@ appmenu-recently-closed-windows =
 
 ## Help panel
 
+appmenu-help-header =
+    .title = { -brand-shorter-name } मदद
 appmenu-about =
     .label = { -brand-shorter-name } का परिचय
     .accesskey = A

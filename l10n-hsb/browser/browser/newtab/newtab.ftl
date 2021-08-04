@@ -42,6 +42,7 @@ newtab-search-box-search-the-web-input =
     .placeholder = Web přepytać
     .title = Web přepytać
     .aria-label = Web přepytać
+newtab-search-box-text = Web přepytać
 newtab-search-box-input =
     .placeholder = Web přepytać
     .aria-label = Web přepytać

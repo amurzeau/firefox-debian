@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = გამოყენებული მოდულების მართვა
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = საიტისთვის თქვენი კამერის და/ან მიკროფონის გაზიარების მართვა
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = საიტისთვის თქვენი დინამიკების გაზიარების მართვა
 urlbar-autoplay-notification-anchor =
     .tooltiptext = თვითგაშვების სამართავის გახსნა
 urlbar-persistent-storage-notification-anchor =
@@ -698,3 +702,9 @@ addon-removal-abuse-report-checkbox = გაფართოებაზე ს�
 remote-tabs-manage-account =
     .label = ანგარიშის მართვა
 remote-tabs-sync-now = დასინქრონება ახლავე
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = სხვა…

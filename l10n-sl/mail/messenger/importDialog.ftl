@@ -6,4 +6,4 @@
 thunderbird-import-name = Thunderbird
 # Description of the import module
 thunderbird-import-description = Uvozite pošto iz Thunderbirdove mape s profilom.
-import-select-profile-dir-or-zip = Izberite mapo s profilom ali stisnjeno mapo s profilom
+import-select-profile-zip = Izberite stisnjeno mapo s profilom

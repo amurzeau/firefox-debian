@@ -9,6 +9,8 @@ about-private-browsing-info-title = גלישה זו מתרחשת בחלון פר
 about-private-browsing-info-myths = מיתוסים נפוצים על גלישה פרטית
 about-private-browsing =
     .title = חיפוש ברשת
+about-private-browsing-search-btn =
+    .title = חיפוש ברשת
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

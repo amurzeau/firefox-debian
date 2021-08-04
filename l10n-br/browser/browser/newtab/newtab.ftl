@@ -243,7 +243,7 @@ newtab-custom-row-selector =
         [many] { $num } a renkoù
        *[other] { $num } renk
     }
-newtab-custom-sponsored-sites = Berradurioù paeroniet
+newtab-custom-sponsored-sites = Berradennoù paeroniet
 newtab-custom-pocket-title = Erbedet gant { -pocket-brand-name }
 newtab-custom-pocket-subtitle = Danvezioù dibar dibabet gant { -pocket-brand-name }, ezel familh { -brand-product-name }
 newtab-custom-pocket-sponsored = Istorioù paeroniet

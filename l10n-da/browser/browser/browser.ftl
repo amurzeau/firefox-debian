@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Administrer brug af plugins
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Administrer deling af dit kamera og/eller mikrofon med webstedet
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Håndter deling af andre højttalere med webstedet
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Åbn panelet for automatisk afspilning
 urlbar-persistent-storage-notification-anchor =
@@ -701,3 +705,9 @@ addon-removal-abuse-report-checkbox = Rapporter denne udvidelse til { -vendor-sh
 remote-tabs-manage-account =
     .label = Håndter konto
 remote-tabs-sync-now = Synkroniser nu
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Mere…

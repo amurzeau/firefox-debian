@@ -8,9 +8,6 @@
 #   $type (String) - the type of the addressing row
 remove-address-row-type = Supprimer le champ { $type }
 #   $type (String) - the type of the addressing row
-remove-address-row-type-label =
-    .tooltiptext = Supprimer le champ { $type }
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Supprimer le champ { $type }
 #   $type (String) - the type of the addressing row
@@ -169,3 +166,12 @@ many-public-recipients-ignore =
 # $identity (string) - The name of the used identity, most likely an email address.
 compose-missing-identity-warning = Une identité unique correspondant à l’adresse d’expédition n’a pas été trouvée. Le message sera envoyé en utilisant l’adresse d’expédition actuelle avec les paramètres de l’identité { $identity }.
 encrypted-bcc-warning = Lors de l’envoi d’un message chiffré, les destinataires en copie cachée ne sont pas complètement masqués. Tous les destinataires pourraient les identifier.
+encrypted-bcc-ignore-button = C’est compris
+
+## Editing
+
+
+# Tools
+
+compose-tool-button-remove-text-styling =
+    .tooltiptext = Supprimer le style du texte

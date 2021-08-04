@@ -759,3 +759,9 @@ addon-removal-abuse-report-checkbox =
 remote-tabs-manage-account =
     .label = Správa účtu
 remote-tabs-sync-now = Synchronizovat
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Více…

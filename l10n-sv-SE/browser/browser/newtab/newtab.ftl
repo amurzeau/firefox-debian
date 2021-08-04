@@ -42,6 +42,7 @@ newtab-search-box-search-the-web-input =
     .placeholder = Sök på webben
     .title = Sök på webben
     .aria-label = Sök på webben
+newtab-search-box-text = Sök på webben
 newtab-search-box-input =
     .placeholder = Sök på webben
     .aria-label = Sök på webben

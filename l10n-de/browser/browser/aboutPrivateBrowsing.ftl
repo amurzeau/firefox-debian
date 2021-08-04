@@ -9,6 +9,8 @@ about-private-browsing-info-title = Dies ist ein privates Fenster
 about-private-browsing-info-myths = Häufige Missverständnisse über das Surfen im Privaten Modus
 about-private-browsing =
     .title = Das Web durchsuchen
+about-private-browsing-search-btn =
+    .title = Das Web durchsuchen
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

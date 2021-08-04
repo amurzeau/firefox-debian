@@ -701,3 +701,9 @@ addon-removal-abuse-report-checkbox = Mmel asiɣzef-a i { -vendor-short-name }
 remote-tabs-manage-account =
     .label = Sefrek amiḍan
 remote-tabs-sync-now = Mtawi tura
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Ugar…

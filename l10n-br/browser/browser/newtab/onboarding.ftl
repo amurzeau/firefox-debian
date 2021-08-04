@@ -57,7 +57,7 @@ onboarding-fullpage-form-email =
 ## Firefox Sync modal dialog strings.
 
 onboarding-sync-welcome-header = Kemerit { -brand-product-name } ganeoc'h
-onboarding-sync-welcome-content = Tizhit o sinedoù, roll-istor, gerioù-tremen hag arventennoù all war hon holl drevnadoù.
+onboarding-sync-welcome-content = Tizhit o sinedoù, roll-istor, gerioù-tremen hag arventennoù all war ho holl drevnadoù.
 onboarding-sync-welcome-learn-more-link = Gouzout hiroc'h diwar-benn kontoù Firefox
 onboarding-sync-form-input =
     .placeholder = Postel

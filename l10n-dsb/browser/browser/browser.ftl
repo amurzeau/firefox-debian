@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Wužywanje tykacow zastojaś
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Źělenje wašeje kamery a/abo wašogo mikrofona ze sedłom zastojaś
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Źělenje drugich głosnikow ze sedłom zastojaś
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Wobceŕk za awtomatiske wótgraśe wócyniś
 urlbar-persistent-storage-notification-anchor =
@@ -709,3 +713,9 @@ addon-removal-abuse-report-checkbox = { -vendor-short-name } toś to rozšyrjenj
 remote-tabs-manage-account =
     .label = Konto zastojaś
 remote-tabs-sync-now = Něnto synchronizěrowaś
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Wěcej…

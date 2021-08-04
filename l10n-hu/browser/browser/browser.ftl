@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Bővítményhasználat kezelése
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = A kamera és/vagy mikrofon az oldallal megosztásának kezelése
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Egyéb hangszórók az oldallal történő megosztásának kezelése
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Automatikus lejátszás panel megnyitása
 urlbar-persistent-storage-notification-anchor =
@@ -701,3 +705,9 @@ addon-removal-abuse-report-checkbox = A kiegészítő jelentése a { -vendor-sho
 remote-tabs-manage-account =
     .label = Fiók kezelése
 remote-tabs-sync-now = Szinkronizálás most
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Továbbiak…

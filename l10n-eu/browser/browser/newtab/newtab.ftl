@@ -14,6 +14,8 @@ newtab-personalize-button-label = Pertsonalizatu
 newtab-personalize-icon-label =
     .title = Pertsonalizatu fitxa berria
     .aria-label = Pertsonalizatu fitxa berria
+newtab-personalize-dialog-label =
+    .aria-label = Pertsonalizatu
 
 ## Search box component.
 

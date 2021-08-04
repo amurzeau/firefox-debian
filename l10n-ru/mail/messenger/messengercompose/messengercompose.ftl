@@ -8,9 +8,6 @@
 #   $type (String) - the type of the addressing row
 remove-address-row-type = Удалить поле { $type }
 #   $type (String) - the type of the addressing row
-remove-address-row-type-label =
-    .tooltiptext = Удалить поле { $type }
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Удалить поле { $type }
 #   $type (String) - the type of the addressing row
@@ -178,3 +175,11 @@ many-public-recipients-ignore =
 compose-missing-identity-warning = Адрес электронной почты, соответствующий адресу в поле От:, не найден. Сообщение будет отправлено с использованием текущего адреса в поле От: и настроек адреса электронной почты { $identity }.
 encrypted-bcc-warning = При отправке зашифрованного сообщения получатели в поле «Скрытая копия» скрыты не полностью. Их могут идентифицировать все получатели.
 encrypted-bcc-ignore-button = Понятно
+
+## Editing
+
+
+# Tools
+
+compose-tool-button-remove-text-styling =
+    .tooltiptext = Удалить стиль текста

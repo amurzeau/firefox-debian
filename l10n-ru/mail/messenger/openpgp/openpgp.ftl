@@ -615,6 +615,12 @@ no-temp-dir =
 possibly-pgp-mime = Возможно, сообщение зашифровано или подписано PGP/MIME; используйте функцию «Расшифровать/Подтвердить» для проверки
 cannot-send-sig-because-no-own-key = Не удалось подписать это сообщение, потому что вы ещё не настроили сквозное шифрования для <{ $key }>
 cannot-send-enc-because-no-own-key = Не удалось отправить это сообщение в зашифрованном виде, потому что вы ещё не настроили сквозное шифрования для <{ $key }>
+compose-menu-attach-key =
+    .label = Прикрепить мой открытый ключ
+    .accesskey = к
+compose-menu-encrypt-subject =
+    .label = Шифрование темы
+    .accesskey = ы
 # Strings used in decryption.jsm
 do-import-multiple =
     Импортировать следующие ключи?

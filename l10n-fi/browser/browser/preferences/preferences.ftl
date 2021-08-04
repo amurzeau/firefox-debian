@@ -254,6 +254,7 @@ confirm-browser-language-change-button = Käytä ja käynnistä uudestaan
 translate-web-pages =
     .label = Käännä sivustojen sisältö
     .accesskey = n
+fx-translate-web-pages = { -translations-brand-name }
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = Sivujen kääntäjä <img data-l10n-name="logo"/>

@@ -49,6 +49,7 @@ app-basics-enabled-plugins = Plugin attivi
 app-basics-build-config = Configurazione build
 app-basics-user-agent = User agent
 app-basics-os = SO
+app-basics-os-theme = Tema SO
 # Rosetta is Apple's translation process to run apps containing x86_64
 # instructions on Apple Silicon. This should remain in English.
 app-basics-rosetta = Conversione Rosetta
@@ -117,11 +118,11 @@ sandbox-sys-call-tid = TID
 sandbox-sys-call-proc-type = Tipo processo
 sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argomenti
-troubleshoot-mode-title = Identifica e risolvi problemi
-restart-in-troubleshoot-mode-label = Modalità risoluzione problemi…
 safe-mode-title = Prova la modalità provvisoria
 restart-in-safe-mode-label = Riavvia disattivando i componenti aggiuntivi…
 
+troubleshoot-mode-title = Identifica e risolvi problemi
+restart-in-troubleshoot-mode-label = Modalità risoluzione problemi…
 clear-startup-cache-title = Prova a cancellare la cache di avvio
 clear-startup-cache-label = Cancella cache di avvio…
 startup-cache-dialog-title2 = Riavviare { -brand-short-name } per cancellare la cache di avvio?
@@ -174,6 +175,8 @@ remote-debugging-title = Debug remoto (protocollo Chromium)
 remote-debugging-accepting-connections = Connessioni accettate
 remote-debugging-url = URL
 
+##
+
 support-third-party-modules-title = Moduli di terze parti
 support-third-party-modules-module = File del modulo
 support-third-party-modules-version = Versione del file
@@ -204,8 +207,6 @@ support-third-party-modules-down-icon =
     .title = Mostra informazioni dettagliate
 support-third-party-modules-up-icon =
     .title = Nascondi informazioni dettagliate
-
-##
 
 # Variables
 # $days (Integer) - Number of days of crashes to log
@@ -384,6 +385,7 @@ fission-status-disabled-by-default = Disattivato per impostaz. predefinita
 fission-status-enabled-by-user-pref = Attivato da utente
 fission-status-disabled-by-user-pref = Disattivato da utente
 fission-status-disabled-by-e10s-other = E10s disattivato
+
 fission-status-enabled-by-rollout = Attivato da implementazione a fasi
 
 async-pan-zoom = Panoramica/zoom asincroni (APZ)

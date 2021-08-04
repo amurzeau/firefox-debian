@@ -9,6 +9,8 @@ about-private-browsing-info-title = 您已进入隐私窗口
 about-private-browsing-info-myths = 正确认识隐私浏览功能
 about-private-browsing =
     .title = 在网络上搜索
+about-private-browsing-search-btn =
+    .title = 网上搜索
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

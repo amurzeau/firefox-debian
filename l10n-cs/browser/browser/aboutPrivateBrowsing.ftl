@@ -9,6 +9,8 @@ about-private-browsing-info-title = Jste v anonymním okně
 about-private-browsing-info-myths = Časté omyly o fungování anonymního prohlížení
 about-private-browsing =
     .title = Vyhledat na webu
+about-private-browsing-search-btn =
+    .title = Vyhledat na webu
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

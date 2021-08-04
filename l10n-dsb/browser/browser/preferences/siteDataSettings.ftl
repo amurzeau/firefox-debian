@@ -54,4 +54,7 @@ site-data-removing-dialog =
     .buttonlabelaccept = Wótwónoźeś
 site-data-removing-header = Cookieje a sedłowe daty wótwónoźeś
 site-data-removing-desc = Jo móžno, až se was wótzjawjaju, gaž cookieje a sedłowe daty wótwónoźujośo. Cośo změny napšawdu pśewjasć?
+# Variables:
+#   $baseDomain (String) - The single domain for which data is being removed
+site-data-removing-single-desc = Gaž cookieje a sedłowe daty wótwónoźujośo, wótzjawijośo se snaź wót websedłow. Cośo napšawdu swóje cookieje a sedłowe daty za <strong>{ $baseDomain }</strong> wótwónoźeś?
 site-data-removing-table = Cookieje a sedłowe daty se za slědujuce websedła wótwónoźiju

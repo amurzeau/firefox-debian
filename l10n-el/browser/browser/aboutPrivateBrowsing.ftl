@@ -9,6 +9,8 @@ about-private-browsing-info-title = Βρίσκεστε σε ένα ιδιωτι�
 about-private-browsing-info-myths = Συνήθεις παρανοήσεις για την Ιδιωτική περιήγηση
 about-private-browsing =
     .title = Αναζήτηση στο διαδίκτυο
+about-private-browsing-search-btn =
+    .title = Αναζήτηση στο διαδίκτυο
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

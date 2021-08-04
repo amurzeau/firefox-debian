@@ -8,6 +8,7 @@
 ##
 
 process-type-web = Spletna vsebina
+process-type-browser = Glavni
 # process used to run privileged about pages,
 # such as about:home
 process-type-privilegedabout = Prednostna stran »about:«
@@ -30,11 +31,15 @@ process-type-prealloc = Vnaprej dodeljeno
 ## Localization for Gecko process types defined in GeckoProcessTypes.h
 ##
 
+process-type-default = Glavni
+process-type-tab = Zavihek
 # process used to communicate with the GPU for
 # graphics acceleration
 process-type-gpu = GPE
 # process used to perform network operations
 process-type-socket = Vtičnica
+# process used to decode media
+process-type-rdd = RDD
 
 ##
 ## Other

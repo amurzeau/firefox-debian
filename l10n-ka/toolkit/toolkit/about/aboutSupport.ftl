@@ -58,7 +58,8 @@ app-basics-profile-dir =
 app-basics-enabled-plugins = ჩართული მოდულები
 app-basics-build-config = ანაწყობის კონფიგურაცია
 app-basics-user-agent = მომხმარებლის პროგრამა
-app-basics-os = OS
+app-basics-os = სისტემა
+app-basics-os-theme = სისტემის იერსახე
 # Rosetta is Apple's translation process to run apps containing x86_64
 # instructions on Apple Silicon. This should remain in English.
 app-basics-rosetta = Rosetta-ს თარგმნილი

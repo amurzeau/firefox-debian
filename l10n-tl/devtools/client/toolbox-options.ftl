@@ -78,14 +78,14 @@ options-sourceeditor-autoclosebrackets-tooltip =
 options-sourceeditor-autoclosebrackets-label = I-autoclose ang mga bracket
 options-sourceeditor-expandtab-tooltip =
     .title = Gumamit ng space sa halip na tab character
-options-sourceeditor-expandtab-label = Mga-indent gamit ang space
+options-sourceeditor-expandtab-label = Mag-indent gamit ang space
 options-sourceeditor-tabsize-label = Sukat ng tab
 options-sourceeditor-keybinding-label = Keybindings
 options-sourceeditor-keybinding-default-label = Default
 
 ## Advanced section
 
-# The heading
+# The heading (this item is also used in perftools.ftl)
 options-context-advanced-settings = Mga advanced na setting
 # The label for the checkbox that toggles the HTTP cache on or off
 options-disable-http-cache-label = I-disable ang HTTP Cache (kapag nakabukas ang toolbox)
@@ -112,7 +112,7 @@ options-source-maps-label = I-enable ang mga Source Map
 options-source-maps-tooltip =
     .title = Kapag inenable ang option na ito, ang mga source ay ima-map sa mga tool.
 # The message shown for settings that trigger page reload
-options-context-triggers-page-refresh = * Kasalukuyang session lamang, nirereload ang pahina
+options-context-triggers-page-refresh = * Kasalukuyang session lang, ire-reload ang pahina
 # The label for the checkbox that toggles the display of the platform data in the
 # Profiler i.e. devtools.profiler.ui.show-platform-data a boolean preference in about:config
 options-show-platform-data-label = Ipakita ang Gecko Platform Data

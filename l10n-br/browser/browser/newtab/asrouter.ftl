@@ -245,7 +245,7 @@ cfr-whatsnew-pip-fullscreen-icon-alt = Arlun skeudenn-ouzh-skeudenn
 ## Protections Dashboard message
 
 cfr-whatsnew-protections-header = Gwarez en un taol-lagad
-cfr-whatsnew-protections-body = An taolennoù-stur gwarez zo danevelloù berradenn eno diwar-benn ar fuadurioù roadennoù ha merañ ar gerioù-tremen. Gallout a rit bremañ heuliañ war-dro pet fuadur ho 'p eus graet, ha gouzout ma c'hall ho kerioù-tremen enrollet bezañ diskouezet en ur fuadur roadennoù.
+cfr-whatsnew-protections-body = An taolennoù-stur gwarez zo danevelloù berradenn eno diwar-benn ar fuadurioù roadennoù ha merañ ar gerioù-tremen. Gallout a rit bremañ heuliañ war-dro pet fuadur ho ’p eus graet, ha gouzout ma c’hall ho kerioù-tremen enrollet bezañ diskouezet en ur fuadur roadennoù.
 cfr-whatsnew-protections-cta-link = Gwelet an taolennoù-stur gwarez
 cfr-whatsnew-protections-icon-alt = Arlun skoed
 

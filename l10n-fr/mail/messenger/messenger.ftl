@@ -22,9 +22,6 @@ content-tab-security-broken-icon =
 
 ## Toolbar
 
-addons-and-themes-button =
-    .label = Modules complémentaires et thèmes
-    .tooltip = Gérer vos modules complémentaires
 addons-and-themes-toolbarbutton =
     .label = Modules complémentaires et thèmes
     .tooltiptext = Gestion de vos modules complémentaires
@@ -130,3 +127,8 @@ caret-browsing-prompt-check-text = Ne plus demander à l’avenir.
 repair-text-encoding-button =
     .label = Réparer l’encodage du texte
     .tooltiptext = Détermine l’encodage correct du texte en fonction du contenu
+
+## no-reply handling
+
+no-reply-message = L’adresse de réponse ({ $email }) n’apparaît pas être une adresse surveillée. Les messages envoyés à cette adresse ne seront probablement pas lus.
+no-reply-reply-anyway-button = Répondre quand même

@@ -97,6 +97,8 @@ perftools-thread-dns-resolver =
     .title = Šioje gijoje vykdomos DNS užklausos
 perftools-thread-js-helper =
     .title = JS variklio foninis darbas, toks kaip kompiliavimas už pagrindinės gijos ribų
+perftools-thread-task-controller =
+    .title = TaskController gijų telkinio gijos
 
 ##
 
@@ -108,7 +110,6 @@ perftools-tools-threads-input-label =
 ## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
 ## preferences are true.
 
--profiler-brand-name = Firefox Profiler
 perftools-onboarding-message = <b>Nauja</b>: „{ -profiler-brand-name }“ dabar integruota į programuotojų priemones. <a>Sužinokite daugiau</a> apie šį naują galingą įrankį.
 # `options-context-advanced-settings` is defined in toolbox-options.ftl
 perftools-onboarding-reenable-old-panel = (kurį laiką dar galėsite pasiekti ankstesnį našumo polangį per <a>{ options-context-advanced-settings }</a>)

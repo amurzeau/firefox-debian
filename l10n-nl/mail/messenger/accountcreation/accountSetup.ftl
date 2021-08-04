@@ -102,7 +102,6 @@ account-setup-step3-image =
     .title = Configuratie gevonden
 account-setup-step4-image =
     .title = Verbindingsfout
-account-setup-privacy-footnote = Uw aanmeldgegevens worden gebruikt in overeenstemming met ons <a data-l10n-name="privacy-policy-link">privacybeleid</a> en worden alleen lokaal op uw computer opgeslagen.
 account-setup-step5-image =
     .title = Account aangemaakt
 account-setup-privacy-footnote2 = Uw aanmeldgegevens worden alleen lokaal op uw computer opgeslagen.
@@ -131,7 +130,8 @@ account-setup-result-pop = POP3
 account-setup-result-pop-description = Uw mappen en e-mailberichten op uw computer bewaren
 # Note: Exchange is the name of a product.
 account-setup-result-exchange = Exchange
-account-setup-result-exchange-description = Microsoft Exchange-server
+# Note: Exchange, Office365 are the name of products.
+account-setup-result-exchange2-description = De Microsoft Exchange-server of Office365-cloudservices gebruiken
 account-setup-incoming-title = Inkomend
 account-setup-outgoing-title = Uitgaand
 account-setup-username-title = Gebruikersnaam

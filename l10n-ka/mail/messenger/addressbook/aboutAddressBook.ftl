@@ -8,10 +8,10 @@ about-addressbook-title = მისამართების წიგნა�
 
 about-addressbook-toolbar-new-address-book =
     .label = ახალი წიგნაკი
-about-addressbook-toolbar-new-carddav-address-book =
-    .label = ახალი CardDAV წიგნაკი
-about-addressbook-toolbar-new-ldap-address-book =
-    .label = ახალი LDAP წიგნაკი
+about-addressbook-toolbar-add-carddav-address-book =
+    .label = CardDAV-წიგნაკის დამატება
+about-addressbook-toolbar-add-ldap-address-book =
+    .label = LDAP-წიგნაკის დამატება
 about-addressbook-toolbar-new-contact =
     .label = ახალი პირი
 about-addressbook-toolbar-new-list =
@@ -28,6 +28,16 @@ about-addressbook-books-context-print =
     .label = ამობეჭდვა…
 about-addressbook-books-context-delete =
     .label = წაშლა
+about-addressbook-books-context-remove =
+    .label = მოცილება
+about-addressbook-confirm-delete-book-title = წიგნაკის წაშლა
+# Variables:
+# $name (String) - Name of the address book to be deleted.
+about-addressbook-confirm-delete-book = ნამდვილად გსურთ წაიშალოს { $name } შიგთავსიანად?
+about-addressbook-confirm-remove-remote-book-title = მისამართების წიგნაკის მოცილება
+# Variables:
+# $name (String) - Name of the remote address book to be removed.
+about-addressbook-confirm-remove-remote-book = ნამდვილად გსურთ მოცილდეს { $name }?
 
 ## Cards
 
@@ -53,6 +63,56 @@ about-addressbook-sort-email-ascending =
     .label = დალაგება ელფოსტის მისამართით (ანბანურად)
 about-addressbook-sort-email-descending =
     .label = დალაგება ელფოსტის მისამართით (უკუანბანურად)
+about-addressbook-confirm-delete-mixed-title = ხალხისა და სიების წაშლა
+# Variables:
+# $count (Number) - The number of contacts and lists to be deleted. Always greater than 1.
+about-addressbook-confirm-delete-mixed = ნამდვილად გსურთ { $count } პირის და სიების წაშლა?
+# Variables:
+# $count (Number) - The number of lists to be deleted.
+about-addressbook-confirm-delete-lists-title =
+    { $count ->
+        [one] სიის წაშლა
+       *[other] სიების წაშლა
+    }
+# Variables:
+# $count (Number) - The number of lists to be deleted.
+# $name (String) - The name of the list to be deleted, if $count is 1.
+about-addressbook-confirm-delete-lists =
+    { $count ->
+        [one] ნამდვილად გსურთ, წაიშალოს სია { $name }?
+       *[other] ნამდვილად გსურთ, წაიშალოს { $count } სია?
+    }
+# Variables:
+# $count (Number) - The number of contacts to be removed.
+about-addressbook-confirm-remove-contacts-title =
+    { $count ->
+        [one] პირის მოცილება
+       *[other] ხალხის მოცილება
+    }
+# Variables:
+# $count (Number) - The number of contacts to be removed.
+# $name (String) - The name of the contact to be removed, if $count is 1.
+# $list (String) - The name of the list that contacts will be removed from.
+about-addressbook-confirm-remove-contacts =
+    { $count ->
+        [one] ნამდვილად გსურთ, მოცილდეს { $name } სიიდან { $list }?
+       *[other] ნამდვილად გსურთ, მოცილდეს { $count } პირი სიიდან { $list }?
+    }
+# Variables:
+# $count (Number) - The number of contacts to be deleted.
+about-addressbook-confirm-delete-contacts-title =
+    { $count ->
+        [one] პირის ამოშლა
+       *[other] ხალხის ამოშლა
+    }
+# Variables:
+# $count (Number) - The number of contacts to be deleted.
+# $name (String) - The name of the contact to be deleted, if $count is 1.
+about-addressbook-confirm-delete-contacts =
+    { $count ->
+        [one] ნამდვილად გსურთ, წაიშალოს { $name }?
+       *[other] ნამდვილად გსურთ, წაიშალოს { $count } პირი?
+    }
 
 ## Details
 

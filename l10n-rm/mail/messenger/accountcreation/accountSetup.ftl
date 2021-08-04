@@ -10,6 +10,10 @@ account-setup-title = Configurar tia adressa dad e-mail existenta
 account-setup-description =
     Per utilisar tia adressa dad e-mail actuala, inditgescha tias datas d'annunzia.<br/>
     { -brand-product-name } tschertga lura automaticamain la configuraziun dal server recumandada che funcziunescha.
+account-setup-secondary-description = { -brand-product-name } tschertga automaticamain la configuraziun recumandada che funcziunescha per il server.
+account-setup-success-title = Creà il conto cun success
+account-setup-success-description = Ti pos ussa utilisar quest conto cun { -brand-short-name }.
+account-setup-success-secondary-description = Ti pos meglierar tia experientscha cun connectar servetschs associads e configurar ils parameters avanzads dal conto.
 
 ## Form fields
 
@@ -98,15 +102,26 @@ account-setup-step3-image =
     .title = Chattà ina configuraziun
 account-setup-step4-image =
     .title = Errur da connexiun
-account-setup-privacy-footnote = Tias datas d'annunzia vegnan utilisadas tenor nossas <a data-l10n-name="privacy-policy-link">directivas da la protecziun da datas</a> e vegnan mo memorisadas localmain sin tes computer.
+account-setup-step5-image =
+    .title = Creà il conto
+account-setup-privacy-footnote2 = Tias infurmaziuns d'annunzia vegnan mo memorisadas local sin tes computer.
 account-setup-selection-help = Betg segir tge tscherner?
 account-setup-selection-error = Dovras agid?
+account-setup-success-help = Na sas ti betg co cuntinuar?
 account-setup-documentation-help = Documentaziun da la configuraziun
 account-setup-forum-help = Forum da support
+account-setup-privacy-help = Directivas per la protecziun da datas
+account-setup-getting-started = Entschaiver
 
 ## Results area
 
-account-setup-protocol-title = Tscherner il protocol
+# Variables:
+#  $count (Number) - Number of available protocols.
+account-setup-results-area-title =
+    { $count ->
+        [one] Configuraziun disponibla
+       *[other] Configuraziuns disponiblas
+    }
 # Note: IMAP is the name of a protocol.
 account-setup-result-imap = IMAP
 account-setup-result-imap-description = Sincronisescha tes ordinaturs ed e-mails cun tes server
@@ -115,7 +130,8 @@ account-setup-result-pop = POP3
 account-setup-result-pop-description = Salva tes ordinaturs ed e-mails sin tes computer
 # Note: Exchange is the name of a product.
 account-setup-result-exchange = Exchange
-account-setup-result-exchange-description = Microsoft Exchange Server
+# Note: Exchange, Office365 are the name of products.
+account-setup-result-exchange2-description = Utilisar il server Microsoft Exchange u servetschs da cloud da Office 365
 account-setup-incoming-title = Posta che entra
 account-setup-outgoing-title = Posta che sorta
 account-setup-username-title = Num d'utilisader
@@ -205,3 +221,68 @@ account-setup-confirm-advanced-description = Quest dialog vegn serrà ed in cont
 account-setup-addon-install-title = Installar
 account-setup-addon-install-intro = In supplement dad ina terza partida po ta pussibilitar dad acceder al conto dad e-mail sin quest server:
 account-setup-addon-no-protocol = Quest server dad e-mail na sustegna deplorablamain betg protocols averts. { account-setup-addon-install-intro }
+
+## Success view
+
+account-setup-settings-button = Parameters dal conto
+account-setup-encryption-button = Criptadi da fin a fin
+account-setup-signature-button = Agiuntar ina signatura
+account-setup-dictionaries-button = Telechargiar dicziunaris
+account-setup-address-book-carddav-button = Connectar cun in cudeschet d'adressas CardDAV
+account-setup-address-book-ldap-button = Connectar cun in cudeschet d'adressas LDAP
+account-setup-calendar-button = Connectar cun in chalender lontan
+account-setup-linked-services-title = Connectar tes servetschs associads
+account-setup-linked-services-description = { -brand-short-name } ha chattà auters servetschs associads cun tes conto dad e-mail.
+account-setup-no-linked-description = Configurar auters servetschs per optimar tia experientscha cun { -brand-short-name }.
+# Variables:
+# $count (Number) - The number of address books found during autoconfig.
+account-setup-found-address-books-description =
+    { $count ->
+        [one] { -brand-short-name } ha chattà in cudeschet d'adressas associà cun tes conto dad e-mail.
+       *[other] { -brand-short-name } ha chattà { $count } cudeschets d'adressas associads cun tes conto dad e-mail.
+    }
+# Variables:
+# $count (Number) - The number of calendars found during autoconfig.
+account-setup-found-calendars-description =
+    { $count ->
+        [one] { -brand-short-name } ha chattà in chalender associà cun tes conto dad e-mail.
+       *[other] { -brand-short-name } ha chattà { $count } chalenders associads cun tes conto dad e-mail.
+    }
+account-setup-button-finish = Finir
+    .accesskey = F
+account-setup-looking-up-address-books = Tschertgar cudeschets d'adressas…
+account-setup-looking-up-calendars = Tschertgar chalenders…
+account-setup-address-books-button = Cudeschets d'adressas
+account-setup-calendars-button = Chalenders
+account-setup-connect-link = Connectar
+account-setup-existing-address-book = Connectà
+    .title = Il cudeschet d'adressas è gia connectà
+account-setup-existing-calendar = Connectà
+    .title = Il chalender è gia connectà
+account-setup-connect-all-calendars = Connectar tut ils chalenders
+account-setup-connect-all-address-books = Connectar tut ils cudeschets d'adressas
+
+## Calendar synchronization dialog
+
+calendar-dialog-title = Connectar il chalender
+calendar-dialog-cancel-button = Interrumper
+    .accesskey = I
+calendar-dialog-confirm-button = Connectar
+    .accesskey = C
+account-setup-calendar-name-label = Num
+account-setup-calendar-name-input =
+    .placeholder = Mes chalender
+account-setup-calendar-color-label = Colur
+account-setup-calendar-refresh-label = Actualisar
+account-setup-calendar-refresh-manual = Manualmain
+account-setup-calendar-refresh-interval =
+    { $count ->
+        [one] Mintga minuta
+       *[other] Mintga { $count } minutas
+    }
+account-setup-calendar-read-only = Mo per lectura
+    .accesskey = M
+account-setup-calendar-show-reminders = Mussar las promemorias
+    .accesskey = M
+account-setup-calendar-offline-support = Support dal modus senza connexiun
+    .accesskey = S

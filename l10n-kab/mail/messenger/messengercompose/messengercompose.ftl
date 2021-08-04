@@ -8,9 +8,6 @@
 #   $type (String) - the type of the addressing row
 remove-address-row-type = Kkes urti { $type }
 #   $type (String) - the type of the addressing row
-remove-address-row-type-label =
-    .tooltiptext = Kkes urti { $type }
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Kkes urti { $type }
 #   $type (String) - the type of the addressing row
@@ -148,3 +145,11 @@ bcc-compose-show-address-row-menuitem =
 
 ## Notifications
 
+
+## Editing
+
+
+# Tools
+
+compose-tool-button-remove-text-styling =
+    .tooltiptext = Kkes aɣanib n uḍris

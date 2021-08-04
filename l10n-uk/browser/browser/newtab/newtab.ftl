@@ -42,6 +42,7 @@ newtab-search-box-search-the-web-input =
     .placeholder = Пошук в Інтернеті
     .title = Пошук в Інтернеті
     .aria-label = Пошук в Інтернеті
+newtab-search-box-text = Пошук в Інтернеті
 newtab-search-box-input =
     .placeholder = Пошук в Інтернеті
     .aria-label = Пошук в Інтернеті

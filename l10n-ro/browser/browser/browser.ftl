@@ -200,6 +200,14 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Adaugă „{ $engineName }”
+    .tooltiptext = Adaugă motorul de căutare „{ $engineName }”
+    .aria-label = Adaugă motorul de căutare „{ $engineName }”
 # When more than 5 engines are offered by a web page, they are grouped in a
 # submenu using this as its label.
 search-one-offs-add-engine-menu =
@@ -241,6 +249,8 @@ bookmark-panel-show-editor-checkbox =
     .accesskey = S
 bookmark-panel-done-button =
     .label = Terminat
+bookmark-panel-save-button =
+    .label = Salvează
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -258,6 +268,7 @@ identity-header-security-with-host =
     .title = Securitatea conexiunii pentru { $host }
 identity-connection-not-secure = Conexiune nesecurizată
 identity-connection-secure = Conexiune securizată
+identity-connection-failure = Eșec la conexiune
 identity-connection-internal = Aceasta este o pagină securizată { -brand-short-name }.
 identity-connection-file = Pagina este stocată pe calculator.
 identity-extension-page = Această pagină a fost încărcată de la o extensie.
@@ -317,6 +328,8 @@ browser-window-close-button =
 
 ## Tab actions
 
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = SE REDĂ
 
 ## These labels should be written in all capital letters if your locale supports them.
 ## Variables:
@@ -508,8 +521,8 @@ bookmarks-tools-toolbar-visibility-panel =
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
-            [true] Elimină meniul de marcaje din bara de unelte
-           *[other] Adaugă meniul de marcaje în bara de unelte
+            [true] Elimină meniul de marcaje din bara de instrumente
+           *[other] Adaugă meniul de marcaje în bara de instrumente
         }
 bookmarks-search =
     .label = Caută marcaje
@@ -578,6 +591,7 @@ more-menu-go-offline =
 
 eme-notifications-drm-content-playing = Unele elemente audio sau video de pe acest site folosesc programe DRM, care pot limita ceea ce îți permite { -brand-short-name } să faci cu ele.
 eme-notifications-drm-content-playing-manage = Gestionează setările
+eme-notifications-drm-content-playing-manage-accesskey = M
 eme-notifications-drm-content-playing-dismiss-accesskey = D
 
 ## Password save/update panel

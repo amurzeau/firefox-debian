@@ -54,4 +54,7 @@ site-data-removing-dialog =
     .buttonlabelaccept = 移除
 site-data-removing-header = 移除 Cookie 和网站数据
 site-data-removing-desc = 移除 Cookie 和网站数据可能使您的网站登录状态丢失。确定执行？
+# Variables:
+#   $baseDomain (String) - The single domain for which data is being removed
+site-data-removing-single-desc = 移除 Cookie 和网站数据后，可能会退出登录大部分网站。确定要移除 <strong>{ $baseDomain }</strong> 的 Cookie 和网站数据吗？
 site-data-removing-table = 下列网站的 Cookie 和网站数据将被移除

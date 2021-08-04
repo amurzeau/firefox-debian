@@ -9,6 +9,8 @@ about-private-browsing-info-title = Du befinder dig i et privat vindue
 about-private-browsing-info-myths = Almindelige myter om privat browsing
 about-private-browsing =
     .title = Søg på nettet
+about-private-browsing-search-btn =
+    .title = Søg på nettet
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

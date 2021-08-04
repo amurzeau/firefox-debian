@@ -127,3 +127,9 @@ caret-browsing-prompt-check-text = Dit niet meer vragen.
 repair-text-encoding-button =
     .label = Tekstcodering repareren
     .tooltiptext = De juiste tekstcodering raden uit de berichtinhoud
+
+## no-reply handling
+
+no-reply-title = Antwoord niet ondersteund
+no-reply-message = Het antwoordadres ({ $email }) lijkt geen gecontroleerd adres te zijn. Berichten naar dit adres worden waarschijnlijk door niemand gelezen.
+no-reply-reply-anyway-button = Toch antwoorden

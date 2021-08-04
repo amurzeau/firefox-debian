@@ -165,53 +165,6 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Kendu hedapena
 
-## Page Action menu
-
-# Variables
-# $tabCount (integer) - Number of tabs selected
-page-action-send-tabs-panel =
-    .label =
-        { $tabCount ->
-            [one] Bidali fitxa gailura
-           *[other] Bidali { $tabCount } fitxa gailura
-        }
-page-action-send-tabs-urlbar =
-    .tooltiptext =
-        { $tabCount ->
-            [one] Bidali fitxa gailura
-           *[other] Bidali { $tabCount } fitxa gailura
-        }
-page-action-pocket-panel =
-    .label = Gorde orria { -pocket-brand-name }-en
-page-action-copy-url-panel =
-    .label = Kopiatu lotura
-page-action-copy-url-urlbar =
-    .tooltiptext = Kopiatu lotura
-page-action-email-link-panel =
-    .label = Bidali lotura postaz…
-page-action-email-link-urlbar =
-    .tooltiptext = Bidali lotura postaz…
-page-action-share-url-panel =
-    .label = Partekatu
-page-action-share-url-urlbar =
-    .tooltiptext = Partekatu
-page-action-share-more-panel =
-    .label = Gehiago…
-page-action-send-tab-not-ready =
-    .label = Gailuak sinkronizatzen…
-# "Pin" is being used as a metaphor for expressing the fact that these tabs
-# are "pinned" to the left edge of the tabstrip. Really we just want the
-# string to express the idea that this is a lightweight and reversible
-# action that keeps your tab where you can reach it easily.
-page-action-pin-tab-panel =
-    .label = Ainguratu fitxa
-page-action-pin-tab-urlbar =
-    .tooltiptext = Ainguratu fitxa
-page-action-unpin-tab-panel =
-    .label = Desainguratu fitxa
-page-action-unpin-tab-urlbar =
-    .tooltiptext = Desainguratu fitxa
-
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -247,6 +200,14 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = Gehitu "{ $engineName }"
+    .tooltiptext = Gehitu "{ $engineName }" bilaketa-motorra
+    .aria-label = Gehitu "{ $engineName }" bilaketa-motorra
 # When more than 5 engines are offered by a web page, they are grouped in a
 # submenu using this as its label.
 search-one-offs-add-engine-menu =
@@ -306,6 +267,7 @@ identity-header-security-with-host =
     .title = Konexioaren segurtasuna { $host } ostalarirako
 identity-connection-not-secure = Konexio ez-segurua
 identity-connection-secure = Konexio segurua
+identity-connection-failure = Konexioak huts egin du
 identity-connection-internal = { -brand-short-name } orri segurua da hau.
 identity-connection-file = Orri hau zure ordenagailuan biltegiratuta dago.
 identity-extension-page = Orri hau hedapen batetik kargatu da.
@@ -430,6 +392,8 @@ popup-select-microphone-device =
     .accesskey = M
 popup-select-microphone-icon =
     .tooltiptext = Mikrofonoa
+popup-select-speaker-icon =
+    .tooltiptext = Bozgorailuak
 popup-all-windows-shared = Zure pantailan ikusgai dauden leiho guztiak partekatuko dira.
 popup-screen-sharing-not-now =
     .label = Une honetan ez
@@ -468,6 +432,8 @@ urlbar-default-placeholder =
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Idatzi bilaketa edo helbidea
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Nabigatzailea urruneko agintepean dago
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -500,8 +466,6 @@ urlbar-placeholder-search-mode-other-tabs =
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
     .placeholder = Bilatu { $name } erabiliz edo idatzi helbidea
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Nabigatzailea urruneko agintepean dago
 urlbar-permissions-granted =
     .tooltiptext = Baimen bereziak eman dizkiozu webgune honi.
 urlbar-switch-to-tab =
@@ -598,8 +562,6 @@ crashed-subframe-submit =
 
 ## Bookmarks panels, menus and toolbar
 
-bookmarks-show-all-bookmarks =
-    .label = Erakutsi laster-marka guztiak
 bookmarks-manage-bookmarks =
     .label = Kudeatu laster-markak
 bookmarks-recent-bookmarks-panel-subheader = Azken laster-markak
@@ -673,6 +635,9 @@ save-to-pocket-button =
     .label = Gorde { -pocket-brand-name }-en
     .tooltiptext = Gorde { -pocket-brand-name }-en
 
+## Repair text encoding toolbar button
+
+
 ## Customize Toolbar Buttons
 
 # Variables:
@@ -721,3 +686,6 @@ addon-removal-abuse-report-checkbox = Salatu hedapen hau { -vendor-short-name }(
 remote-tabs-manage-account =
     .label = Kudeatu kontua
 remote-tabs-sync-now = Sinkronizatu orain
+
+##
+

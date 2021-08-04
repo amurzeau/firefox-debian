@@ -9,6 +9,8 @@ about-private-browsing-info-title = You’re in a Private Window
 about-private-browsing-info-myths = Common myths about private browsing
 about-private-browsing =
     .title = Search the Web
+about-private-browsing-search-btn =
+    .title = Search the web
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

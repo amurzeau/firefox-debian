@@ -607,6 +607,12 @@ no-temp-dir =
 possibly-pgp-mime = Mogelijk PGP/MIME-versleuteld of -ondertekend bericht; gebruik de functie ‘Ontsleutelen/Verifiëren’ om te verifiëren
 cannot-send-sig-because-no-own-key = Kan dit bericht niet digitaal ondertekenen, omdat u nog geen end-to-end-versleuteling voor <{ $key }> heeft geconfigureerd
 cannot-send-enc-because-no-own-key = Kan dit bericht niet versleuteld verzenden, omdat u nog geen end-to-end-versleuteling voor <{ $key }> heeft geconfigureerd
+compose-menu-attach-key =
+    .label = Mijn openbare sleutel toevoegen
+    .accesskey = v
+compose-menu-encrypt-subject =
+    .label = Versleutelde onderwerpregel
+    .accesskey = n
 # Strings used in decryption.jsm
 do-import-multiple =
     De volgende sleutels importeren?

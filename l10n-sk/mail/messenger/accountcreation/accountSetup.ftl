@@ -102,7 +102,6 @@ account-setup-step3-image =
     .title = Konfigurácia bola nájdená
 account-setup-step4-image =
     .title = Chyba pripojenia
-account-setup-privacy-footnote = Vaše prihlasovacie údaje budú použité v súlade s našimi <a data-l10n-name="privacy-policy-link">pravidlami ochrany osobných údajov</a> a budú uložené iba lokálne vo vašom počítači.
 account-setup-step5-image =
     .title = Účet bol vytvorený
 account-setup-privacy-footnote2 = Vaše prihlasovacie údaje budú uložené iba lokálne vo vašom počítači.
@@ -132,7 +131,8 @@ account-setup-result-pop = POP3
 account-setup-result-pop-description = Ponecháva vaše priečinky a e-maily v počítači
 # Note: Exchange is the name of a product.
 account-setup-result-exchange = Exchange
-account-setup-result-exchange-description = Microsoft Exchange Server
+# Note: Exchange, Office365 are the name of products.
+account-setup-result-exchange2-description = Použiť server Microsoft Exchange alebo cloudové služby Office 365
 account-setup-incoming-title = Prichádzajúca
 account-setup-outgoing-title = Odchádzajúca
 account-setup-username-title = Používateľské meno

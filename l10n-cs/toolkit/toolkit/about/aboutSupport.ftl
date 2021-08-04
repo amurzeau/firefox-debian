@@ -65,6 +65,7 @@ app-basics-enabled-plugins = Povolené zásuvné moduly
 app-basics-build-config = Nastavení sestavení
 app-basics-user-agent = User agent
 app-basics-os = OS
+app-basics-os-theme = Vzhled systému
 # Rosetta is Apple's translation process to run apps containing x86_64
 # instructions on Apple Silicon. This should remain in English.
 app-basics-rosetta = Přeloženo pro Apple pomocí Rosetta

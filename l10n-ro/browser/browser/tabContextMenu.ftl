@@ -2,6 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+tab-context-new-tab =
+    .label = Filă nouă
+    .accesskey = w
 reload-tab =
     .label = Reîncarcă fila
     .accesskey = R
@@ -82,10 +85,24 @@ move-tabs =
 move-tab =
     .label = Mută fila
     .accesskey = v
+tab-context-share-url =
+    .label = Partajează
+    .accesskey = h
+tab-context-share-more =
+    .label = Mai multe…
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
 
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Redeschide fila închisă
+            [one] Redeschide fila închisă
+            [few] Redeschide filele închise
+           *[other] Redeschide filele închise
+        }
+    .accesskey = o
 tab-context-close-tabs =
     .label =
         { $tabCount ->
@@ -98,7 +115,7 @@ tab-context-close-tabs =
 tab-context-move-tabs =
     .label =
         { $tabCount ->
-            [1] Mută filele
+            [1] Mută fila
             [one] Mută fila
             [few] Mută filele
            *[other] Mută filele

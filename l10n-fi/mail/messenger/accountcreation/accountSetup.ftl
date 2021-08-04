@@ -98,7 +98,9 @@ account-setup-step5-image =
     .title = Tili luotu
 account-setup-selection-help = Etkö ole varma, mitä valita?
 account-setup-selection-error = Tarvitsetko apua?
+account-setup-success-help = Oletko epävarma seuraavista vaiheista?
 account-setup-forum-help = Tukipalsta
+account-setup-privacy-help = Tietosuojakäytäntö
 
 ## Results area
 
@@ -110,7 +112,6 @@ account-setup-result-pop = POP3
 account-setup-result-pop-description = Säilytä kansiot ja sähköpostit tietokoneellasi
 # Note: Exchange is the name of a product.
 account-setup-result-exchange = Exchange
-account-setup-result-exchange-description = Microsoft Exchange Server
 account-setup-incoming-title = Saapuva
 account-setup-outgoing-title = Lähtevä
 account-setup-username-title = Käyttäjätunnus

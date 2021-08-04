@@ -8,9 +8,6 @@
 #   $type (String) - the type of the addressing row
 remove-address-row-type = Odstrani polje { $type }
 #   $type (String) - the type of the addressing row
-remove-address-row-type-label =
-    .tooltiptext = Odstrani polje { $type }
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Odstrani polje { $type }
 #   $type (String) - the type of the addressing row
@@ -184,3 +181,11 @@ many-public-recipients-ignore =
 compose-missing-identity-warning = Edinstvene identitete za naslov v polju Od ni bilo mogoče najti. Sporočilo bo poslano z uporabo trenutnega polja Od in nastavitev za identiteto { $identity }.
 encrypted-bcc-warning = Ko pošiljate šifrirano sporočilo, prejemniki skrite kopije niso popolnoma skriti. Morda jih bodo lahko prepoznali vsi prejemniki.
 encrypted-bcc-ignore-button = Razumem
+
+## Editing
+
+
+# Tools
+
+compose-tool-button-remove-text-styling =
+    .tooltiptext = Odstrani oblikovanje besedila

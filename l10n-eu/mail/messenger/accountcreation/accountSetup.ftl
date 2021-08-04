@@ -102,7 +102,6 @@ account-setup-step3-image =
     .title = Konfigurazioa aurkitua
 account-setup-step4-image =
     .title = Konexio errorea
-account-setup-privacy-footnote = Zure kredentzialak gure <a data-l10n-name="privacy-policy-link"> Pribatutasun-politikaren arabera erabiliko dira </a> eta zure ordenagailuan lokalean bakarrik gordeko dira
 account-setup-step5-image =
     .title = Kontua sortua
 account-setup-privacy-footnote2 = Zure kredentzialak lokalean bakarrik, zure ordenagailuan, gordeko dira
@@ -131,7 +130,8 @@ account-setup-result-pop = POP3
 account-setup-result-pop-description = Mantendu zure karpetak eta postak zure konputagailuan
 # Note: Exchange is the name of a product.
 account-setup-result-exchange = Exchange
-account-setup-result-exchange-description = Microsoft Exchange Server
+# Note: Exchange, Office365 are the name of products.
+account-setup-result-exchange2-description = Erabili Microsoft Exchange server edo Office365 cloud zerbitzuak
 account-setup-incoming-title = Sarrerakoa
 account-setup-outgoing-title = Irteerakoa
 account-setup-username-title = Erabiltzaile-izena

@@ -8,9 +8,6 @@
 #   $type (String) - the type of the addressing row
 remove-address-row-type = Kendu { $type } eremua
 #   $type (String) - the type of the addressing row
-remove-address-row-type-label =
-    .tooltiptext = Kendu { $type } eremua
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Kendu { $type } eremua
 #   $type (String) - the type of the addressing row
@@ -172,3 +169,11 @@ many-public-recipients-ignore =
 compose-missing-identity-warning = Ez da aurkitu identitate bakarra bat datorrena Nork helbidearekin. Mezua uneko Nork eremuaz eta { $identity } identitatearen ezarpenekin bidaliko da.
 encrypted-bcc-warning = Mezu zifratua bidaltzean, Bcc hartzaileak ez daude erabat gordeta. Hartzaile guztiek hauek identifikatzeko gai dira.
 encrypted-bcc-ignore-button = Ulertua
+
+## Editing
+
+
+# Tools
+
+compose-tool-button-remove-text-styling =
+    .tooltiptext = Kendu testu estiloak

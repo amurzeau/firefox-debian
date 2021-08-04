@@ -217,6 +217,8 @@ cert-not-verified-unknown = Tega digitalnega potrdila ni bilo mogoče preveriti 
 send-no-client-certificate = Ne pošiljaj klientovega digitalnega potrdila
 # Used when no cert is stored for an override
 no-cert-stored-for-override = (Ni shranjeno)
+# When a certificate is unavailable (for example, it has been deleted or the token it exists on has been removed).
+certificate-not-available = (Ni na voljo)
 
 ## Used to show whether an override is temporary or permanent
 

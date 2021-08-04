@@ -862,7 +862,10 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = Trenutno ste v načinu FIPS. FIPS zahteva glavno geslo, ki ni prazno.
 forms-master-pw-fips-desc = Sprememba gesla neuspešna
+forms-windows-sso =
+    .label = Dovoli enotno prijavo v sistem Windows za Microsoftove, službene in šolske račune
 forms-windows-sso-learn-more-link = Več o tem
+forms-windows-sso-desc = Upravljanje računov v nastavitvah naprave
 
 ## OS Authentication dialog
 

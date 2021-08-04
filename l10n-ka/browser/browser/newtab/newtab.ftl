@@ -42,6 +42,7 @@ newtab-search-box-search-the-web-input =
     .placeholder = ინტერნეტში ძიება
     .title = ინტერნეტში ძიება
     .aria-label = ინტერნეტში ძიება
+newtab-search-box-text = ძიება ინტერნეტში
 newtab-search-box-input =
     .placeholder = ინტერნეტში ძიება
     .aria-label = ინტერნეტში ძიება

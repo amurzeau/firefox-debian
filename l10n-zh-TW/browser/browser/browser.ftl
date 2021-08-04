@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = 管理附加元件使用情況
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = 管理您是否要與網站分享攝影機及/或麥克風
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = 管理是否要與網站分享其他音效輸出裝置
 urlbar-autoplay-notification-anchor =
     .tooltiptext = 開啟自動播放面板
 urlbar-persistent-storage-notification-anchor =
@@ -698,3 +702,9 @@ addon-removal-abuse-report-checkbox = 回報此擴充套件給 { -vendor-short-n
 remote-tabs-manage-account =
     .label = 管理帳號
 remote-tabs-sync-now = 立刻同步
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = 更多…

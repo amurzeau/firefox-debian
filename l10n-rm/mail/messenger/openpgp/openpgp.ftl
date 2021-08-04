@@ -4,6 +4,16 @@
 
 e2e-intro-description = Per trametter messadis criptads u signads a moda digitala, stos ti configurar ina tecnologia da criptadi, u OpenPGP u S/MIME.
 e2e-intro-description-more = Tscherna tia clav persunala per pudair utilisar OpenPGP u tes certificat persunal per utilisar S/MIME. Ti stos avair la clav secreta associada cun la clav persunala u il certificat persunal.
+e2e-advanced-section = Parameters avanzads
+e2e-attach-key =
+    .label = Agiuntar mia clav publica sche ina signatura digitala OpenPGP vegn agiuntada
+    .accesskey = p
+e2e-encrypt-subject =
+    .label = Criptar l'object da messadis OpenPGP
+    .accesskey = b
+e2e-encrypt-drafts =
+    .label = Memorisar messadis da sboz en il format criptà
+    .accesskey = r
 openpgp-key-user-id-label = Conto / ID da l'utilisader
 openpgp-keygen-title-label =
     .title = Generar ina clav OpenPGP
@@ -597,6 +607,12 @@ no-temp-dir =
 possibly-pgp-mime = Il messadi è probablamain criptà u signà cun PGP/MIME: utilisar la funcziun «Decriptar/verifitgar»
 cannot-send-sig-because-no-own-key = Impussibel da signar digitalmain quest messadi perquai che ti n'has anc betg configurà il criptadi da fin a fin per <{ $key }>
 cannot-send-enc-because-no-own-key = Impussibel da trametter quest messadi sco messadi criptà perquai che ti n'has anc betg configurà il criptadi da fin a fin per <{ $key }>
+compose-menu-attach-key =
+    .label = Agiuntar mia clav publica
+    .accesskey = A
+compose-menu-encrypt-subject =
+    .label = Criptar l'object
+    .accesskey = b
 # Strings used in decryption.jsm
 do-import-multiple =
     Importar las suandantas clavs?

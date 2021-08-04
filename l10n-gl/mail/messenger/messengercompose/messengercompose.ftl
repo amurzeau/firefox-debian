@@ -8,8 +8,8 @@
 #   $type (String) - the type of the addressing row
 remove-address-row-type = Retirar o campo { $type }
 #   $type (String) - the type of the addressing row
-remove-address-row-type-label =
-    .tooltiptext = Retirar o campo { $type }
+remove-address-row-button =
+    .title = Retirar o campo { $type }
 #   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
@@ -41,6 +41,9 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = Mover a CCO
     .accesskey = O
+pill-action-expand-list =
+    .label = Expandir a lista
+    .accesskey = x
 
 # Attachment widget
 
@@ -116,8 +119,6 @@ move-attachment-last-panel-button =
 button-return-receipt =
     .label = Aviso de recepción
     .tooltiptext = Solicita un aviso de recepción desta mensaxe
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-consider-bcc-notification = Os { $count } destinatarios en Para e Cc poden ver os enderezos uns dos outros. Pode evitar divulgar os destinatarios usando no seu lugar Cco.
 
 # Addressing Area
 
@@ -159,3 +160,19 @@ many-public-recipients-bcc =
 many-public-recipients-ignore =
     .label = Manter os destinatarios visíbeis
     .accesskey = M
+
+## Notifications
+
+# Variables:
+# $identity (string) - The name of the used identity, most likely an email address.
+compose-missing-identity-warning = Non se atopou unha identidade única que coincida co enderezo «De». A mensaxe enviarase usando o campo «De» actual e a configuración da identidade { $identidade }.
+encrypted-bcc-warning = Ao enviar unha mensaxe cifrada, os destinatarios en «Cco» non están completamente ocultos. É posible que os outros destinatarios poidan identificalos.
+encrypted-bcc-ignore-button = Entendido
+
+## Editing
+
+
+# Tools
+
+compose-tool-button-remove-text-styling =
+    .tooltiptext = Retirar o estilo do texto

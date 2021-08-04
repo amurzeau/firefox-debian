@@ -699,3 +699,9 @@ addon-removal-abuse-report-checkbox = Raportoi tämä laajennus { -vendor-short-
 remote-tabs-manage-account =
     .label = Hallinnoi tiliä
 remote-tabs-sync-now = Synkronoi nyt
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Lisää…

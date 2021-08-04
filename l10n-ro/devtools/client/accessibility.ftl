@@ -60,7 +60,7 @@ accessibility-text-label-issue-interactive = Elementele interactive trebuie să 
 
 accessibility-text-label-issue-optgroup-label2 = Folosește un atribut <code>label</code> ca să etichetezi un <span>optgroup</span>. <a>Află mai multe</a>
 
-accessibility-text-label-issue-toolbar = Barele de unelte trebuie să fie etichetate dacă sunt mai mult de una. <a>Află mai multe</a>
+accessibility-text-label-issue-toolbar = Barele de instrumente trebuie să fie etichetate dacă sunt mai mult de una. <a>Află mai multe</a>
 
 ## Text entries for a paragraph used in the accessibility panel sidebar's checks section
 ## that describe that currently selected accessible object has a keyboard accessibility

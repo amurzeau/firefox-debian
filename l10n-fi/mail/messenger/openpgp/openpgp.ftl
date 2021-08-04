@@ -606,6 +606,12 @@ no-temp-dir =
 possibly-pgp-mime = Mahdollisesti PGP/MIME-salattu tai allekirjoitettu viesti; käytä "Pura salaus/Vahvista'-toimintoa vahvistaaksesi
 cannot-send-sig-because-no-own-key = Tätä viestiä ei voi digitaalisesti allekirjoittaa, koska et ole vielä määrittänyt päästä päähän -salausta avaimelle <{ $key }>
 cannot-send-enc-because-no-own-key = Tätä viestiä ei voi lähettää salattuna, koska et ole vielä määrittänyt päästä päähän -salausta avaimelle <{ $key }>
+compose-menu-attach-key =
+    .label = Liitä oma julkinen avain
+    .accesskey = L
+compose-menu-encrypt-subject =
+    .label = Aiheen salaus
+    .accesskey = A
 # Strings used in decryption.jsm
 do-import-multiple =
     Haluatko tuoda seuraavat avaimet?

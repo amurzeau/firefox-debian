@@ -127,3 +127,9 @@ caret-browsing-prompt-check-text = Ur d-sutur ara tikelt nniḍen.
 repair-text-encoding-button =
     .label = Ṣeggem asettengel n uḍris
     .tooltiptext = Af-d asettenggel ameɣt n uḍris seg ugbur n yizen
+
+## no-reply handling
+
+no-reply-title = Tiririt ur tettusefrak ara
+no-reply-message = Tansa n tririt ({ $email }) ur d-tban ara d tansa yettuɛassen. Iznan yettwaznen ɣer tensa-a ulac ahat win i ten-yeɣran.
+no-reply-reply-anyway-button = Err akken ibɣu yili

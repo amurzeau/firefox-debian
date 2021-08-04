@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Quản lý sử dụng phần bổ trợ
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Quản lý chia sẻ máy ảnh và/hoặc micrô với trang
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Quản lý việc chia sẻ các thiết bị âm thanh khác với trang web
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Mở bảng điều khiển tự động phát
 urlbar-persistent-storage-notification-anchor =
@@ -694,3 +698,9 @@ addon-removal-abuse-report-checkbox = Báo cáo tiện ích mở rộng này cho
 remote-tabs-manage-account =
     .label = Quản lý tài khoản
 remote-tabs-sync-now = Đồng bộ ngay
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Xem thêm…

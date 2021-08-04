@@ -71,7 +71,6 @@ about-logins-list-item-vulnerable-password-icon =
 ## Introduction screen
 
 login-intro-heading = Ieškote įrašytų prisijungimų? Naudokite „{ -sync-brand-short-name }“.
-about-logins-login-intro-heading-logged-out = Ieškote savo įrašytų prisijungimų? Naudokite „{ -sync-brand-short-name }“, arba importuokite juos.
 about-logins-login-intro-heading-logged-out2 = Ieškote įrašytų prisijungimų? Įjunkite sinchronizavimą arba importuokite juos.
 about-logins-login-intro-heading-logged-in = Nerasta sinchronizuotų prisijungimų.
 login-intro-description = Jeigu esate įrašę prisijungimus į „{ -brand-product-name }“ kitame įrenginyje, juos galite turėti čia:
@@ -331,7 +330,6 @@ about-logins-import-dialog-error-unable-to-read-title = Nepavyko išanalizuoti f
 about-logins-import-dialog-error-unable-to-read-description = Įsitikinkite, kad pasirinkote CSV arba TSV failą.
 about-logins-import-dialog-error-no-logins-imported = Neimportuoti jokie prisijungimai
 about-logins-import-dialog-error-learn-more = Sužinoti daugiau
-about-logins-import-dialog-error-try-again = Bandyti dar kartą…
 about-logins-import-dialog-error-try-import-again = Bandyti importuoti iš naujo…
 about-logins-import-dialog-error-cancel = Atsisakyti
 about-logins-import-report-title = Importo suvestinė
@@ -356,6 +354,30 @@ about-logins-import-report-row-description-error-missing-field = Klaida: trūkst
 ## Variables:
 ##  $count (number) - The number of affected elements
 
+about-logins-import-report-added =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Pridėtas naujas prisijungimas</div>
+        [few] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Pridėti nauji prisijungimai</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Pridėtų naujų prisijungimų</div>
+    }
+about-logins-import-report-modified =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Atnaujintas esamas prisijungimas</div>
+        [few] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Atnaujinti esami prisijungimai</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Atnaujintų esamų prisijungimų</div>
+    }
+about-logins-import-report-no-change =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Pasikartojantis prisijungimas</div> <div data-l10n-name="not-imported">(neimportuota)</div>
+        [few] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Pasikartojantys prisijungimai</div> <div data-l10n-name="not-imported">(neimportuota)</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Pasikartojančių prisijungimų</div> <div data-l10n-name="not-imported">(neimportuota)</div>
+    }
+about-logins-import-report-error =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Klaida</div> <div data-l10n-name="not-imported">(neimportuota)</div>
+        [few] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Klaidos</div> <div data-l10n-name="not-imported">(neimportuota)</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Klaidų</div> <div data-l10n-name="not-imported">(neimportuota)</div>
+    }
 
 ## Logins import report page
 

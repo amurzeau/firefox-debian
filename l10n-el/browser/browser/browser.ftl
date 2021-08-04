@@ -698,3 +698,9 @@ addon-removal-abuse-report-checkbox = Αναφορά επέκτασης στη {
 remote-tabs-manage-account =
     .label = Διαχείριση λογαριασμού
 remote-tabs-sync-now = Συγχρονισμός τώρα
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Περισσότερα…

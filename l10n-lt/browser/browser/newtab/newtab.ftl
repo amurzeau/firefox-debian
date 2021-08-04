@@ -42,6 +42,7 @@ newtab-search-box-search-the-web-input =
     .placeholder = Ieškokite saityne
     .title = Ieškokite saityne
     .aria-label = Ieškokite saityne
+newtab-search-box-text = Ieškokite saityne
 newtab-search-box-input =
     .placeholder = Ieškokite saityne
     .aria-label = Ieškokite saityne

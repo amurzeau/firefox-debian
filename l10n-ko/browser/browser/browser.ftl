@@ -64,7 +64,7 @@ urlbar-web-authn-anchor =
 urlbar-canvas-notification-anchor =
     .tooltiptext = 캔버스 추출 권한 관리
 urlbar-web-rtc-share-microphone-notification-anchor =
-    .tooltiptext = 사이트에서 마이크를 사용할지 관리
+    .tooltiptext = 사이트의 마이크 공유 관리
 urlbar-default-notification-anchor =
     .tooltiptext = 메시지 패널 열기
 urlbar-geolocation-notification-anchor =
@@ -76,7 +76,7 @@ urlbar-storage-access-anchor =
 urlbar-translate-notification-anchor =
     .tooltiptext = 페이지 번역
 urlbar-web-rtc-share-screen-notification-anchor =
-    .tooltiptext = 사이트에서 창이나 화면을 공유할지를 관리
+    .tooltiptext = 사이트의 창 또는 화면 공유 관리
 urlbar-indexed-db-notification-anchor =
     .tooltiptext = 오프라인 저장소 메시지 패널 열기
 urlbar-password-notification-anchor =
@@ -86,7 +86,11 @@ urlbar-translated-notification-anchor =
 urlbar-plugins-notification-anchor =
     .tooltiptext = 플러그인 사용 관리
 urlbar-web-rtc-share-devices-notification-anchor =
-    .tooltiptext = 사이트에서 카메라와 마이크를 사용할지 관리
+    .tooltiptext = 사이트의 카메라와 마이크 공유 관리
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = 사이트의 다른 스피커 공유 관리
 urlbar-autoplay-notification-anchor =
     .tooltiptext = 자동 재생 패널 열기
 urlbar-persistent-storage-notification-anchor =
@@ -694,3 +698,9 @@ addon-removal-abuse-report-checkbox = 이 확장 기능을 { -vendor-short-name 
 remote-tabs-manage-account =
     .label = 계정 관리
 remote-tabs-sync-now = 지금 동기화
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = 더보기…

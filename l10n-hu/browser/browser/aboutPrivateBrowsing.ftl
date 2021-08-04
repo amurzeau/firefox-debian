@@ -9,6 +9,8 @@ about-private-browsing-info-title = Jelenleg privát ablakban van
 about-private-browsing-info-myths = Gyakori tévhitek a privát böngészésről
 about-private-browsing =
     .title = Keresés a weben
+about-private-browsing-search-btn =
+    .title = Keresés a weben
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

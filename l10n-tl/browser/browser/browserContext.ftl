@@ -90,6 +90,9 @@ toolbar-button-stop-reload =
 
 ## Firefox Account Button
 
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
 
 ## Save Page
 
@@ -264,7 +267,7 @@ main-context-menu-media-pip =
 # This is used when right-clicking on a video in the
 # content area when the Picture-in-Picture feature is enabled.
 main-context-menu-media-watch-pip =
-    .label = Panoorin gamit ang Picture-in-Picture
+    .label = Panoorin sa Picture-in-Picture
     .accesskey = u
 main-context-menu-image-reload =
     .label = i-Reload ang Larawan
@@ -312,8 +315,8 @@ main-context-menu-image-set-as-background =
     .label = Gawing Background sa Desktop…
     .accesskey = S
 main-context-menu-image-set-image-as-background =
-    .label = Gawing Background sa Desktop ang Larawan…
-    .accesskey = G
+    .label = Itakda ang Larawan bilang Background ng Desktop…
+    .accesskey = I
 main-context-menu-image-info =
     .label = Tingnan ang Impormasyon ng Larawan
     .accesskey = f

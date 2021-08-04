@@ -217,6 +217,8 @@ cert-not-verified-unknown = Negalima patikrinti šio liudijimo (priežastys než
 send-no-client-certificate = Nesiųsti kliento liudijimo
 # Used when no cert is stored for an override
 no-cert-stored-for-override = (Neįrašytas)
+# When a certificate is unavailable (for example, it has been deleted or the token it exists on has been removed).
+certificate-not-available = (Nepasiekiamas)
 
 ## Used to show whether an override is temporary or permanent
 

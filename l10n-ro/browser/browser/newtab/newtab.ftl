@@ -239,5 +239,10 @@ newtab-custom-sponsored-sites = Comenzi rapide sponsorizate
 newtab-custom-recent-title = Activitate recentă
 newtab-custom-recent-subtitle = O selecție de site-uri și conținut recente
 newtab-custom-close-button = Închide
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = Fragmente
 newtab-custom-snippets-subtitle = Sfaturi și știri de la { -vendor-short-name } și { -brand-product-name }
 newtab-custom-settings = Gestionează mai multe setări

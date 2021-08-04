@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Управление запуском плагина
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Управление доступом сайта к вашей камере и/или микрофону
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Управление доступом сайта к другим динамикам
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Открыть панель автовоспроизведения
 urlbar-persistent-storage-notification-anchor =
@@ -705,3 +709,9 @@ addon-removal-abuse-report-checkbox = Пожаловаться на это ра�
 remote-tabs-manage-account =
     .label = Управление аккаунтом
 remote-tabs-sync-now = Синхронизировать
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Ещё…

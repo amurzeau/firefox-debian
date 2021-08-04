@@ -4,6 +4,8 @@
 
 # Short name of the import module
 thunderbird-import-name = Thunderbird
+
 # Description of the import module
 thunderbird-import-description = Tuo postit Thunderbird-profiilihakemistosta.
-import-select-profile-dir = Valitse profiilihakemisto
+
+import-select-profile-zip = Valitse zip-pakattu profiilihakemisto

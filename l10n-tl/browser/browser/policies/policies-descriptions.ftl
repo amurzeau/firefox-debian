@@ -79,8 +79,8 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Bumalik sa legacy Same
 ##
 
 policy-LocalFileLinks = Payagan ang ilang mga website na mag-link sa mga local file.
-policy-MasterPassword = Kailanganin o pigilang gumamit ng master password.
 policy-ManagedBookmarks = Nagco-configure ng isang listahan ng mga bookmark na pinamamahalaanan ng isang administrator na hindi maaaring baguhin ng user.
+policy-MasterPassword = Kailanganin o pigilang gumamit ng master password.
 policy-PrimaryPassword = Kailanganin o pigilang gumamit ng Primary Password.
 policy-NetworkPrediction = I-enable o i-disable ang network prediction (DNS prefetching).
 policy-NewTabPage = I-enable o i-disable ang New Tab page.
@@ -105,6 +105,7 @@ policy-SearchEngines = I-configure ang mga setting ng search engine. Ang policy 
 policy-SearchSuggestEnabled = I-enable o i-disable ang mga search suggestion.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Ikabit ang mga PKCS #11 module.
+policy-ShowHomeButton = Ipakita ang home button sa toolbar.
 policy-SSLVersionMax = I-set ang maximum SSL version.
 policy-SSLVersionMin = I-set ang minimum SSL version.
 policy-SupportMenu = Magdagdag ng custom support menu item sa help menu.

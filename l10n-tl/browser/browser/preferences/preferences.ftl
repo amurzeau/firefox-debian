@@ -28,6 +28,18 @@ search-input-box =
             [windows] Hanapin sa Mga Pagpipilian
            *[other] Hanapin sa Mga Kagustuhan
         }
+settings-page-title = Mga setting
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Hanapin sa Mga Setting
 managed-notice = Ang iyong browser ay mina-manage ng iyong organisasyon.
 category-list =
     .aria-label = Mga Kategorya
@@ -46,6 +58,9 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-sync-title3 = Sync
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = Mga { -brand-short-name } Experiment
 category-experimental =
     .tooltiptext = Mga { -brand-short-name } Experiment
@@ -375,7 +390,7 @@ update-application-manual =
     .label = Huwag kailanman mag-check kung may mga update (hindi rekomendado)
     .accesskey = N
 update-application-background-enabled =
-    .label = Kapag ang { -brand-short-name } ay hindi nagrurun
+    .label = Kapag ang { -brand-short-name } ay hindi tumatakbo
     .accesskey = K
 update-application-warning-cross-user-setting = Ang setting na ito ay gagamitin sa lahat ng mga Windows account at { -brand-short-name } profile na gumagamit ng installation na ito ng { -brand-short-name }.
 update-application-use-service =
@@ -675,8 +690,8 @@ sync-sign-in =
 
 ## Sync section - enabling or disabling sync.
 
-prefs-syncing-on = Syncing: ON
-prefs-syncing-off = Syncing: OFF
+prefs-syncing-on = Pag-sync: NAKABUKAS
+prefs-syncing-off = Pag-sync: NAKASARA
 prefs-sync-setup =
     .label = Mag-set up ng { -sync-brand-short-name }...
     .accesskey = S
@@ -779,7 +794,7 @@ privacy-header = Browser Privacy
 ## Privacy Section - Logins and Passwords
 
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
-pane-privacy-logins-and-passwords-header = Mga Login at mga Password
+pane-privacy-logins-and-passwords-header = Mga Login at Password
     .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =

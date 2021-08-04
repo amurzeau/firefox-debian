@@ -9,6 +9,8 @@ about-private-browsing-info-title = Ikaw ay Nasa Pribadong Window
 about-private-browsing-info-myths = Mga karaniwang pamahiin tungkol sa pribadong pagbrowse
 about-private-browsing =
     .title = Hanapin sa Web
+about-private-browsing-search-btn =
+    .title = Hanapin sa web
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

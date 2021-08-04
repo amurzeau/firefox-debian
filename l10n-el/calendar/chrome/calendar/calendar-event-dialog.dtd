@@ -45,6 +45,8 @@
 <!-- Keyboard Shortcuts -->
 <!ENTITY event.dialog.new.event.key2              "I">
 <!ENTITY event.dialog.new.task.key2               "D">
+
+<!-- Keyboard Shortcuts -->
 <!ENTITY event.dialog.new.message.key2            "N">
 <!ENTITY event.dialog.close.key                   "W">
 <!ENTITY event.dialog.save.key                    "S">
@@ -148,9 +150,9 @@
 <!ENTITY  event.menu.options.privacy.private.accesskey        "Ι">
 <!ENTITY  event.menu.options.show.time.label                  "Διαθεσιμότητα">
 <!ENTITY  event.menu.options.show.time.accesskey              "Δ">
-<!ENTITY  event.menu.options.show.time.busy.label             "Απασχολημένος">
+<!ENTITY  event.menu.options.show.time.busy.label             "Απασχολημένος/-η">
 <!ENTITY  event.menu.options.show.time.busy.accesskey         "Α">
-<!ENTITY  event.menu.options.show.time.free.label             "Διαθέσιμος">
+<!ENTITY  event.menu.options.show.time.free.label             "Διαθέσιμος/-η">
 <!ENTITY  event.menu.options.show.time.free.accesskey         "Δ">
 
 <!ENTITY event.invite.attendees.label                     "Πρόσκληση συμμετεχόντων…">
@@ -275,7 +277,7 @@
 <!ENTITY event.repeat.custom.label                      "Προσαρμογή…">
 
 <!ENTITY event.recurrence.pattern.label                 "Μοτίβο επανάληψης">
-<!ENTITY event.recurrence.occurs.label                  "Να επαναλαμβάνεται" >
+<!ENTITY event.recurrence.occurs.label                  "Επανάληψη" >
 <!ENTITY event.recurrence.day.label                     "ημερησίως" >
 <!ENTITY event.recurrence.week.label                    "εβδομαδιαίως" >
 <!ENTITY event.recurrence.month.label                   "μηνιαίως" >
@@ -286,11 +288,11 @@
 <!ENTITY event.recurrence.pattern.every.weekday.label   "μόνο τις καθημερινές" >
 
 <!ENTITY event.recurrence.pattern.weekly.every.label    "ανά" >
-<!ENTITY repeat.units.weeks.both                        "εβδομάδα/ες" >
+<!ENTITY repeat.units.weeks.both                        "εβδομάδα(ες)" >
 <!ENTITY event.recurrence.on.label                      "κάθε:" >
 
 <!ENTITY event.recurrence.pattern.monthly.every.label   "ανά" >
-<!ENTITY repeat.units.months.both                       "μήνα/ες" >
+<!ENTITY repeat.units.months.both                       "μήνα(ες)" >
 <!ENTITY event.recurrence.monthly.every.label           "κάθε" >
 <!ENTITY event.recurrence.monthly.first.label           "κάθε πρώτη">
 <!ENTITY event.recurrence.monthly.second.label          "κάθε δεύτερη">
@@ -308,8 +310,8 @@
 <!ENTITY event.recurrence.repeat.dayofmonth.label       "ημέρα του μήνα">
 <!ENTITY event.recurrence.repeat.recur.label            "Επανάληψη την/τις">
 
-<!ENTITY event.recurrence.every.label                        "ανά:" >
-<!ENTITY repeat.units.years.both                             "έτος/η" >
+<!ENTITY event.recurrence.every.label                        "κάθε:" >
+<!ENTITY repeat.units.years.both                             "έτος(η)" >
 <!ENTITY event.recurrence.pattern.yearly.every.month.label   "κάθε" >
 
 <!-- LOCALIZATON NOTE
@@ -365,8 +367,8 @@
 <!ENTITY event.recurrence.range.label                   "Εμβέλεια επανάληψης">
 <!ENTITY event.recurrence.forever.label                 "Χωρίς τέλος" >
 <!ENTITY event.recurrence.repeat.for.label              "Δημιουργία" >
-<!ENTITY event.recurrence.appointments.label            "Συνάντηση(εις)" >
-<!ENTITY event.repeat.until.label                       "Να επαναλαμβάνεται μέχρι και τις" >
+<!ENTITY event.recurrence.appointments.label            "συνάντησης(εων)" >
+<!ENTITY event.repeat.until.label                       "Επανάληψη έως τις" >
 <!ENTITY event.recurrence.preview.label                 "Προεπισκόπηση">
 
 <!-- Attendees dialog -->
@@ -376,8 +378,8 @@
 <!ENTITY event.freebusy.button.next.slot        "Επόμενο περιθώριο">
 <!ENTITY event.freebusy.button.previous.slot    "Προηγούμενο περιθώριο">
 <!ENTITY event.freebusy.zoom                    "Ζουμ:">
-<!ENTITY event.freebusy.legend.free             "Διαθέσιμος/η" >
-<!ENTITY event.freebusy.legend.busy             "Απασχολημένος/η" >
+<!ENTITY event.freebusy.legend.free             "Διαθέσιμος/-η" >
+<!ENTITY event.freebusy.legend.busy             "Απασχολημένος/-η" >
 <!ENTITY event.freebusy.legend.busy_tentative   "Με επιφύλαξη" >
 <!ENTITY event.freebusy.legend.busy_unavailable "Εκτός γραφείου" >
 <!ENTITY event.freebusy.legend.unknown          "Χωρίς πληροφορία" >

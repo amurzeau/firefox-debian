@@ -42,6 +42,7 @@ newtab-search-box-search-the-web-input =
     .placeholder = 웹 검색
     .title = 웹 검색
     .aria-label = 웹 검색
+newtab-search-box-text = 웹 검색
 newtab-search-box-input =
     .placeholder = 웹 검색
     .aria-label = 웹 검색

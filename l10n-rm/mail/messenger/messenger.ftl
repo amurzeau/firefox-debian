@@ -127,3 +127,9 @@ caret-browsing-prompt-check-text = Betg pli dumandar.
 repair-text-encoding-button =
     .label = Reparar la codaziun dal text
     .tooltiptext = Engiavinar la codaziun correcta dal text dal cuntegn dal messadi
+
+## no-reply handling
+
+no-reply-title = Respostas betg sustegnidas
+no-reply-message = L'adressa da resposta ({ $email }) na para betg dad esser ina adressa che vegn observada. Messadis a questa adressa na vegnan probablamain betg legids.
+no-reply-reply-anyway-button = Tuttina respunder

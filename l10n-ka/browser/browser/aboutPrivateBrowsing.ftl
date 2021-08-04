@@ -9,6 +9,8 @@ about-private-browsing-info-title = თქვენ იმყოფებით 
 about-private-browsing-info-myths = არასწორი წარმოდგენები პირადი თვალიერების რეჟიმის შესახებ
 about-private-browsing =
     .title = ძიება ინტერნეტში
+about-private-browsing-search-btn =
+    .title = ძიება ინტერნეტში
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

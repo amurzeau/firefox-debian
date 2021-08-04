@@ -8,9 +8,6 @@
 #   $type (String) - the type of the addressing row
 remove-address-row-type = Het veld { $type } verwijderen
 #   $type (String) - the type of the addressing row
-remove-address-row-type-label =
-    .tooltiptext = Het veld { $type } verwijderen
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Het veld { $type } verwijderen
 #   $type (String) - the type of the addressing row
@@ -170,3 +167,11 @@ many-public-recipients-ignore =
 compose-missing-identity-warning = Er is geen unieke identiteit gevonden die met het Van-adres overeenkomt. Het bericht zal worden verzonden met het Van-veld en de instellingen van identiteit { $identity }.
 encrypted-bcc-warning = Als u een versleuteld bericht verstuurt, worden ontvangers in Bcc niet volledig verborgen. Alle ontvangers kunnen ze mogelijk identificeren.
 encrypted-bcc-ignore-button = Begrepen
+
+## Editing
+
+
+# Tools
+
+compose-tool-button-remove-text-styling =
+    .tooltiptext = Tekstopmaak verwijderen
