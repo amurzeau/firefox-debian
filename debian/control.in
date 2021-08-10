@@ -20,11 +20,11 @@ Build-Depends: autotools-dev,
                python3 (>= 3.6),
                dpkg-dev,
 %if USE_SYSTEM_NSPR
-%define NSPR_VERSION 4.26
+%define NSPR_VERSION 4.32
                libnspr4-dev (>= 2:@NSPR_VERSION@~),
 %endif
 %if USE_SYSTEM_NSS
-%define NSS_VERSION 3.66
+%define NSS_VERSION 3.68
                libnss3-dev (>= 2:@NSS_VERSION@~),
 %endif
 %if USE_SYSTEM_VPX
@@ -45,7 +45,7 @@ Build-Depends: autotools-dev,
 %else
                nasm (>= 2.14) [amd64 i386],
 %endif
-               rustc (>= 1.47),
+               rustc (>= 1.51),
                cargo (>= 0.47),
 %if DIST == stretch
                gcc-mozilla (>= 7.1),
