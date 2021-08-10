@@ -1,3 +1,12 @@
+firefox-esr (78.13.0esr-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2021-34, also known as:
+    CVE-2021-29986, CVE-2021-29988, CVE-2021-29984, CVE-2021-29980,
+    CVE-2021-29985, CVE-2021-29989.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 11 Aug 2021 07:51:13 +0900
+
 firefox-esr (78.12.0esr-1) unstable; urgency=medium
 
   * New upstream release.
