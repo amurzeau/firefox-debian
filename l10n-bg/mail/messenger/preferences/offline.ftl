@@ -11,6 +11,8 @@ autodetect-online-label =
 
 startup-label = Ръчно установяване на състояние при стартиране:
 
+offline-preference-startup-label = Ръчно установяване на състояние при стартиране:
+
 status-radio-remember =
     .label = Запомняне предишното състояние на свързаност
     .accesskey = З

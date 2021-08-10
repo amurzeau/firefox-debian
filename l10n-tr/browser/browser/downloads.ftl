@@ -34,7 +34,7 @@ downloads-cmd-cancel-panel =
 downloads-cmd-show-menuitem =
     .label = Bulunduğu klasörü aç
     .accesskey = d
-  
+
 # This message is only displayed on macOS devices
 downloads-cmd-show-menuitem-mac =
     .label = Finder’da göster
@@ -129,6 +129,22 @@ downloads-show-more-information =
 # open the file using an app available in the system.
 downloads-open-file =
     .value = Dosyayı aç
+
+## Displayed when the user clicked on a download in process. Indicates that the
+## downloading file will be opened after certain amount of time using an app
+## available in the system.
+## Variables:
+##   $hours (number) - Amount of hours left till the file opens.
+##   $seconds (number) - Amount of seconds left till the file opens.
+##   $minutes (number) - Amount of minutes till the file opens.
+
+downloading-file-opens-in-hours-and-minutes = { $hours } saat { $minutes } dk sonra açılacak…
+downloading-file-opens-in-minutes = { $minutes } dk sonra açılacak…
+downloading-file-opens-in-minutes-and-seconds = { $minutes } dk { $seconds } sn sonra açılacak…
+downloading-file-opens-in-seconds = { $seconds } sn sonra açılacak…
+downloading-file-opens-in-some-time = Tamamlandığında açılacak…
+
+##
 
 # Displayed when hovering a download which is able to be retried by users,
 # indicates that it's possible to download this file again.

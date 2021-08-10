@@ -16,7 +16,7 @@ policy-AppAutoUpdate = Ativar ou desativar atualizações automáticas da aplica
 policy-AppUpdateURL = Definir URL personalizada de atualização de aplicativo.
 policy-Authentication = Configurar autenticação integrada para sites que a suportam.
 policy-AutoLaunchProtocolsFromOrigins = Definir uma lista de protocolos externos que podem ser usados a partir de origens listadas sem perguntar ao usuário.
-policy-BackgroundAppUpdate2 = Ativar ou desativar o atualizador de segundo plano.
+policy-BackgroundAppUpdate2 = Ativar ou desativar o atualizador em segundo plano.
 policy-BlockAboutAddons = Bloquear acesso ao gerenciador de extensões (about:addons).
 policy-BlockAboutConfig = Bloquear acesso à página about:config.
 policy-BlockAboutProfiles = Bloquear acesso à página about:profiles.
@@ -116,3 +116,4 @@ policy-SupportMenu = Adicionar um item de menu de suporte personalizado ao menu 
 policy-UserMessaging = Não mostrar determinadas mensagens para o usuário.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Bloquear o acesso a determinados sites. Confira a documentação para mais detalhes sobre o formato.
+policy-Windows10SSO = Permitir autenticação única (single sign-on) do Windows em contas da Microsoft, do trabalho e da escola.

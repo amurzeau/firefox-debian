@@ -502,6 +502,8 @@
 <!ENTITY deleteJunk.accesskey "ι">
 <!ENTITY importCmd.label "Εισαγωγή…">
 <!ENTITY importCmd.accesskey "γ">
+<!ENTITY exportCmd.label "Εξαγωγή…">
+<!ENTITY exportCmd.accesskey "ξ">
 <!ENTITY clearRecentHistory.label "Εκκαθάριση πρόσφατου ιστορικού…">
 <!ENTITY clearRecentHistory.accesskey "Ι">
 <!ENTITY accountManagerCmd2.label "Ρυθμίσεις λογαριασμού">
@@ -912,7 +914,7 @@
 <!ENTITY CopyNewsgroupURL.accesskey "Τ">
 <!ENTITY CreateFilterFrom.label "Δημιουργία φίλτρου από…">
 <!ENTITY CreateFilterFrom.accesskey "φ">
-<!ENTITY reportPhishingURL.label "Αναφορά email απάτης">
+<!ENTITY reportPhishingURL.label "Αναφορά απάτης μέσω email">
 <!ENTITY reportPhishingURL.accesskey "φ">
 
 <!-- Spell checker context menu items -->

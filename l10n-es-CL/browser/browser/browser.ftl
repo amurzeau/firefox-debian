@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Gestionar uso de complemento
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Gestionar compartición de la cámara y/o micrófono con el sitio
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Gestionar compartición de otros parlantes con el sitio
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Abrir panel de reproducción automática
 urlbar-persistent-storage-notification-anchor =
@@ -164,51 +168,6 @@ page-action-remove-from-urlbar =
     .label = Eliminar de la barra de direcciones
 page-action-remove-extension =
     .label = Eliminar extensión
-
-## Page Action menu
-
-# Variables
-# $tabCount (integer) - Number of tabs selected
-page-action-send-tabs-panel =
-    .label =
-        { $tabCount ->
-            [one] Enviar pestaña a dispositivo
-           *[other] Enviar { $tabCount } pestañas a dispositivo
-        }
-page-action-send-tabs-urlbar =
-    .tooltiptext =
-        { $tabCount ->
-            [one] Enviar pestaña a dispositivo
-           *[other] Enviar { $tabCount } pestañas a dispositivo
-        }
-page-action-copy-url-panel =
-    .label = Copiar enlace
-page-action-copy-url-urlbar =
-    .tooltiptext = Copiar enlace
-page-action-email-link-panel =
-    .label = Enviar enlace por email
-page-action-email-link-urlbar =
-    .tooltiptext = Enviar enlace por email
-page-action-share-url-panel =
-    .label = Compartir
-page-action-share-url-urlbar =
-    .tooltiptext = Compartir
-page-action-share-more-panel =
-    .label = Más…
-page-action-send-tab-not-ready =
-    .label = Sincronizando dispositivos…
-# "Pin" is being used as a metaphor for expressing the fact that these tabs
-# are "pinned" to the left edge of the tabstrip. Really we just want the
-# string to express the idea that this is a lightweight and reversible
-# action that keeps your tab where you can reach it easily.
-page-action-pin-tab-panel =
-    .label = Fijar pestaña
-page-action-pin-tab-urlbar =
-    .tooltiptext = Fijar pestaña
-page-action-unpin-tab-panel =
-    .label = Soltar pestaña
-page-action-unpin-tab-urlbar =
-    .tooltiptext = Soltar pestaña
 
 ## Auto-hide Context Menu
 
@@ -480,6 +439,8 @@ urlbar-default-placeholder =
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Buscar o ingresar dirección
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = El navegador está bajo control remoto
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -512,8 +473,6 @@ urlbar-placeholder-search-mode-other-tabs =
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
     .placeholder = Busca con { $name } o ingresa una dirección
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = El navegador está bajo control remoto
 # Variables
 #  $component (String): the name of the component which forces remote control.
 #    Example: "DevTools", "Marionette", "RemoteAgent".
@@ -607,6 +566,10 @@ pointerlock-warning-no-domain = Este documento tiene el control de tu puntero. P
 ## Subframe crash notification
 
 crashed-subframe-message = <strong> Parte de esta página falló. </strong> Para informar a { -brand-product-name } sobre este problema y solucionarlo más rápido, por favor envía un reporte.
+# The string for crashed-subframe-title.title should match crashed-subframe-message,
+# but without any markup.
+crashed-subframe-title =
+    .title = Parte de esta página falló. Para informar a { -brand-product-name } sobre este problema y solucionarlo más rápido, por favor envía un reporte.
 crashed-subframe-learnmore-link =
     .value = Aprender más
 crashed-subframe-submit =
@@ -742,3 +705,9 @@ addon-removal-abuse-report-checkbox = Reportar esta extensión a { -vendor-short
 remote-tabs-manage-account =
     .label = Administrar cuenta
 remote-tabs-sync-now = Sincronizar ahora
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Más…

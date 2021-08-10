@@ -88,6 +88,12 @@ toolbar-button-stop =
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
 
+## Firefox Account Button
+
+toolbar-button-fxaccount =
+    .label = { -fxaccount-brand-name }
+    .tooltiptext = { -fxaccount-brand-name }
+
 ## Save Page
 
 main-context-menu-page-save =
@@ -102,6 +108,18 @@ main-context-menu-bookmark-add =
     .aria-label = यह पृष्ठ बुकमार्कित करें
     .accesskey = m
     .tooltiptext = यह पृष्ठ बुकमार्कित करें
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-add-mac =
+    .label = पेज बुकमार्क करें
+    .accesskey = m
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-edit-mac =
+    .label = बुकमार्क संपादित करें
+    .accesskey = m
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-add-with-shortcut =
@@ -136,6 +154,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-this-link =
     .label = यह कड़ी बुकमार्कित करें
     .accesskey = L
+main-context-menu-bookmark-link =
+    .label = बुकमार्क लिंक
+    .accesskey = B
 main-context-menu-save-link =
     .label = कड़ी ऐसे सहेजें…
     .accesskey = k
@@ -158,6 +179,9 @@ main-context-menu-copy-email =
 main-context-menu-copy-link =
     .label = कड़ी स्थान की नक़ल लें
     .accesskey = a
+main-context-menu-copy-link-simple =
+    .label = लिंक कॉपी करें
+    .accesskey = L
 
 ## Media (video/audio) controls
 ##
@@ -353,6 +377,12 @@ main-context-menu-frame-view-info =
 main-context-menu-view-selection-source =
     .label = चयनित स्रोत देखें
     .accesskey = ई
+main-context-menu-take-screenshot =
+    .label = स्क्रीनशॉट लें
+    .accesskey = T
+main-context-menu-take-frame-screenshot =
+    .label = स्क्रीनशॉट लें
+    .accesskey = o
 main-context-menu-view-page-source =
     .label = पृष्ठ स्रोत देखें
     .accesskey = प

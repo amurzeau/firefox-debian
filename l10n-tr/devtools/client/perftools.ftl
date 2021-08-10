@@ -90,6 +90,8 @@ perftools-thread-dns-resolver =
     .title = DNS çözümleme bu iş parçacığında gerçekleşir
 perftools-thread-js-helper =
     .title = JS engine background work such as off-main-thread compiles
+perftools-thread-task-controller =
+    .title = TaskController iş parçacığı havuzu iş parçacıkları
 
 ##
 

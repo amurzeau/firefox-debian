@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = Postavke
 menu-application-services =
     .label = Servisi
 menu-application-hide-this =
@@ -36,16 +38,20 @@ menu-quit =
             [windows] z
            *[other] U
         }
+
 # This menu-quit-mac string is only used on macOS.
 menu-quit-mac =
     .label = Zatvori { -brand-shorter-name }
+
 # This menu-quit-button string is only used on Linux.
 menu-quit-button =
     .label = { menu-quit.label }
+
 # This menu-quit-button-win string is only used on Windows.
 menu-quit-button-win =
     .label = { menu-quit.label }
     .tooltip = Zatvori { -brand-shorter-name }
+
 menu-about =
     .label = O { -brand-shorter-name }u
     .accesskey = O
@@ -111,6 +117,9 @@ menu-edit =
 menu-edit-find-on =
     .label = Pronađi na ovoj stranici…
     .accesskey = P
+menu-edit-find-in-page =
+    .label = Pronađi na stranici…
+    .accesskey = F
 menu-edit-find-again =
     .label = Pronađi ponovo
     .accesskey = P
@@ -129,6 +138,9 @@ menu-view-toolbars-menu =
 menu-view-customize-toolbar =
     .label = Prilagođavanje…
     .accesskey = P
+menu-view-customize-toolbar2 =
+    .label = Prilagodi alatnu traku…
+    .accesskey = C
 menu-view-sidebar =
     .label = Bočna traka
     .accesskey = B
@@ -217,6 +229,8 @@ menu-bookmarks-show-all =
     .label = Prikaži sve zabilješke
 menu-bookmark-this-page =
     .label = Zabilježi ovu stranicu
+menu-bookmark-current-tab =
+    .label = Zabilježi trenutni tab
 menu-bookmark-edit =
     .label = Uredi ovu Zabilješku
 menu-bookmarks-all-tabs =
@@ -288,15 +302,6 @@ menu-window-bring-all-to-front =
 # NOTE: For Engineers, any additions or changes to Help menu strings should
 # also be reflected in the related strings in appmenu.ftl. Those strings, by
 # convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
 # Example: appmenu-get-help
 #
 # These strings are duplicated to allow for different casing depending on
@@ -320,8 +325,9 @@ menu-help-keyboard-shortcuts =
 menu-help-troubleshooting-info =
     .label = Informacije za rješavanje problema
     .accesskey = I
-menu-help-taskmanager =
-    .label = Task Manager
+menu-get-help =
+    .label = Pomoć
+    .accesskey = H
 menu-help-report-site-issue =
     .label = Prijavite problem sa stranicom…
 menu-help-feedback-page =

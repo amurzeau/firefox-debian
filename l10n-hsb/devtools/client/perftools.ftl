@@ -41,7 +41,9 @@ perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 
 
 # The size of the memory buffer used to store things in the profiler.
 perftools-range-entries-label = Wulkosć pufrowaka:
+
 perftools-custom-threads-label = Přidajće swójske nitki po mjenje:
+
 perftools-devtools-interval-label = Interwal:
 perftools-devtools-threads-label = Nitki:
 perftools-devtools-settings-label = Nastajenja
@@ -97,9 +99,13 @@ perftools-thread-dns-resolver =
 perftools-thread-js-helper =
     .title = Pozadkowe dźěło JS-ćěrjenja kaž na př. kompilowanja zwonka hłowneje nitki
 
+perftools-thread-task-controller =
+    .title = Nitki nitkoweho poola TaskController
+
 ##
 
 perftools-record-all-registered-threads = Wuběry horjeka wobeńć a wšě zregistrowane nitki natočić
+
 perftools-tools-threads-input-label =
     .title = Tute nitkowe mjena su přez komu dźělena lisćina, kotraž so wužiwa, zo by přepytowanje nitkow w profilowaku zmóžnił. Mjeno trjeba so jenož zdźěla z mjenom nitki kryć, kotrež so ma zapřijeć. Na mjezery so dźiwa.
 
@@ -107,9 +113,10 @@ perftools-tools-threads-input-label =
 ## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
 ## preferences are true.
 
--profiler-brand-name = Firefox Profiler
 perftools-onboarding-message = <b>Nowy</b>: { -profiler-brand-name } je nětko we wuwiwarskich nastrojach integrowany. <a>Dalše informacije</a> wo tutym mócnym nowym nastroju.
+
 # `options-context-advanced-settings` is defined in toolbox-options.ftl
 perftools-onboarding-reenable-old-panel = (Za wobmjezowany čas móžeće přez <a>{ options-context-advanced-settings }</a> přistup k woknu Wukon měć.
+
 perftools-onboarding-close-button =
     .aria-label = Zapokazowansku powěsć začinić

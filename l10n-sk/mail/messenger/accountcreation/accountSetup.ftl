@@ -10,6 +10,10 @@ account-setup-title = Nastavenie existujúcej e-mailovej adresy
 account-setup-description =
     Ak chcete použiť svoju existujúcu e-mailovú adresu, vyplňte svoje prihlasovacie údaje.<br/>
     { -brand-product-name } automaticky vyhľadá funkčnú a odporúčanú konfiguráciu servera.
+account-setup-secondary-description = { -brand-product-name } automaticky vyhľadá funkčnú a odporúčanú konfiguráciu servera.
+account-setup-success-title = Účet bol úspešne vytvorený
+account-setup-success-description = Teraz môžete tento účet používať v aplikácii { -brand-short-name }.
+account-setup-success-secondary-description = Svoj zážitok môžete vylepšiť pripojením súvisiacich služieb a konfiguráciou pokročilých nastavení účtu.
 
 ## Form fields
 
@@ -98,11 +102,16 @@ account-setup-step3-image =
     .title = Konfigurácia bola nájdená
 account-setup-step4-image =
     .title = Chyba pripojenia
-account-setup-privacy-footnote = Vaše prihlasovacie údaje budú použité v súlade s našimi <a data-l10n-name="privacy-policy-link">pravidlami ochrany osobných údajov</a> a budú uložené iba lokálne vo vašom počítači.
+account-setup-step5-image =
+    .title = Účet bol vytvorený
+account-setup-privacy-footnote2 = Vaše prihlasovacie údaje budú uložené iba lokálne vo vašom počítači.
 account-setup-selection-help = Neviete, čo zvoliť?
 account-setup-selection-error = Potrebujete pomoc?
+account-setup-success-help = Nie ste si istí ďalšími krokmi?
 account-setup-documentation-help = Dokumentácia k nastaveniu
 account-setup-forum-help = Fórum podpory
+account-setup-privacy-help = Zásady ochrany súkromia
+account-setup-getting-started = Začíname
 
 ## Results area
 
@@ -122,7 +131,8 @@ account-setup-result-pop = POP3
 account-setup-result-pop-description = Ponecháva vaše priečinky a e-maily v počítači
 # Note: Exchange is the name of a product.
 account-setup-result-exchange = Exchange
-account-setup-result-exchange-description = Microsoft Exchange Server
+# Note: Exchange, Office365 are the name of products.
+account-setup-result-exchange2-description = Použiť server Microsoft Exchange alebo cloudové služby Office 365
 account-setup-incoming-title = Prichádzajúca
 account-setup-outgoing-title = Odchádzajúca
 account-setup-username-title = Používateľské meno
@@ -212,3 +222,71 @@ account-setup-confirm-advanced-description = Toto dialógové okno bude zatvoren
 account-setup-addon-install-title = Nainštalovať
 account-setup-addon-install-intro = Doplnok tretej strany vám umožňuje prístup k vašej e-mailovej adrese na tomto serveri:
 account-setup-addon-no-protocol = Tento e-mailový server bohužiaľ nepodporuje otvorené protokoly. { account-setup-addon-install-intro }
+
+## Success view
+
+account-setup-settings-button = Nastavenia účtu
+account-setup-encryption-button = Obojstranné šifrovanie
+account-setup-signature-button = Pridať podpis
+account-setup-dictionaries-button = Stiahnuť slovníky
+account-setup-address-book-carddav-button = Pripojiť sa k adresáru typu CardDAV
+account-setup-address-book-ldap-button = Pripojiť sa k adresáru LDAP
+account-setup-calendar-button = Pripojiť sa k vzdialenému kalendáru
+account-setup-linked-services-title = Pripojiť prepojené služby
+account-setup-linked-services-description = { -brand-short-name } našiel ďalšie služby spojené s vaším e-mailovým účtom.
+account-setup-no-linked-description = Nastavte si ďalšie služby, aby ste zo svojho e-mailového klienta { -brand-short-name } vyťažili maximum.
+# Variables:
+# $count (Number) - The number of address books found during autoconfig.
+account-setup-found-address-books-description =
+    { $count ->
+        [one] { -brand-short-name } našiel jeden adresár prepojený s vašim e-mailovým účtom.
+        [few] { -brand-short-name } našiel { $count } adresáre prepojené s vašim e-mailovým účtom.
+       *[other] { -brand-short-name } našiel { $count } adresárov prepojených s vašim e-mailovým účtom.
+    }
+# Variables:
+# $count (Number) - The number of calendars found during autoconfig.
+account-setup-found-calendars-description =
+    { $count ->
+        [one] { -brand-short-name } našiel jeden kalendár prepojený s vašim e-mailovým účtom.
+        [few] { -brand-short-name } našiel { $count } kalendáre prepojené s vašim e-mailovým účtom.
+       *[other] { -brand-short-name } našiel { $count } kalendárov prepojených s vašim e-mailovým účtom.
+    }
+account-setup-button-finish = Dokončiť
+    .accesskey = D
+account-setup-looking-up-address-books = Vyhľadávajú sa adresáre…
+account-setup-looking-up-calendars = Vyhľadávajú sa kalendáre…
+account-setup-address-books-button = Adresáre
+account-setup-calendars-button = Kalendáre
+account-setup-connect-link = Pripojiť
+account-setup-existing-address-book = Pripojený
+    .title = Adresár je už pripojený
+account-setup-existing-calendar = Pripojený
+    .title = Kalendár je už pripojený
+account-setup-connect-all-calendars = Pripojiť všetky kalendáre
+account-setup-connect-all-address-books = Pripojiť všetky adresáre
+
+## Calendar synchronization dialog
+
+calendar-dialog-title = Pripojenie kalendára
+calendar-dialog-cancel-button = Zrušiť
+    .accesskey = Z
+calendar-dialog-confirm-button = Pripojiť
+    .accesskey = P
+account-setup-calendar-name-label = Názov
+account-setup-calendar-name-input =
+    .placeholder = Môj kalendár
+account-setup-calendar-color-label = Farba
+account-setup-calendar-refresh-label = Aktualizovať
+account-setup-calendar-refresh-manual = Manuálne
+account-setup-calendar-refresh-interval =
+    { $count ->
+        [one] každú minútu
+        [few] každé { $count } minúty
+       *[other] každých { $count } minút
+    }
+account-setup-calendar-read-only = Iba na čítanie
+    .accesskey = b
+account-setup-calendar-show-reminders = Zobrazovať upozornenia
+    .accesskey = o
+account-setup-calendar-offline-support = Podpora pre režim offline
+    .accesskey = f

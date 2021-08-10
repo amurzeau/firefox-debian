@@ -4,6 +4,7 @@
 
 # Page title
 about-processes-title = Merer argerzhoù
+
 # The Actions column
 about-processes-column-action =
     .title = Oberezhioù
@@ -27,10 +28,45 @@ about-processes-column-cpu-total = Kewerier
 ##    $origin (String) The domain name for this process.
 ##    $type (String) The raw type for this process. Used for unknown processes.
 
-about-processes-browser-process-name = { -brand-short-name } (prosesus { $pid })
+## Process names
+## Variables:
+##    $pid (String) The process id of this process, assigned by the OS.
+
+about-processes-browser-process = { -brand-short-name } ({ $pid })
+about-processes-web-process = Argerzh Web rannet ({ $pid })
+about-processes-file-process = Restroù ({ $pid })
+about-processes-extension-process = Askouezhioù ({ $pid })
+about-processes-privilegedabout-process = Pajennoù "About" ({ $pid })
+about-processes-plugin-process = Lugantoù ({ $pid })
+about-processes-privilegedmozilla-process = Lec'hiennoù { -vendor-short-name } ({ $pid })
+about-processes-gmp-plugin-process = Lugantoù liesvedia Gecko ({ $pid })
+about-processes-gpu-process = GPU ({ $pid })
+about-processes-vr-process = VR ({ $pid })
+about-processes-rdd-process = Diskoder roadennoù ({ $pid })
+about-processes-socket-process = Rouedad ({ $pid })
+about-processes-remote-sandbox-broker-process = Remote Sandbox Broker ({ $pid })
+about-processes-fork-server-process = Servijer Fork ({ $pid })
+about-processes-preallocated-process = Rakderannet ({ $pid })
+
+# Unknown process names
+# Variables:
+#    $pid (String) The process id of this process, assigned by the OS.
+#    $type (String) The raw type for this process.
+about-processes-unknown-process = All : { $type } ({ $pid })
+
+## Isolated process names
+## Variables:
+##    $pid (String) The process id of this process, assigned by the OS.
+##    $origin (String) The domain name for this process.
+
+about-processes-web-isolated-process = { $origin } ({ $pid })
+about-processes-web-large-allocation-process = { $origin } ({ $pid }, bras)
+about-processes-with-coop-coep-process = { $origin } ({ $pid }, liesorin distaget)
+about-processes-web-isolated-process-private = { $origin } — Prevez ({ $pid })
+about-processes-web-large-allocation-process-private = { $origin } — Prevez ({ $pid }, bras)
+about-processes-with-coop-coep-process-private = { $origin } — Prevez ({ $pid }, liesorin distaget)
 
 ## Details within processes
-
 
 ## Displaying CPU (percentage and total)
 ## Variables:
@@ -40,9 +76,6 @@ about-processes-browser-process-name = { -brand-short-name } (prosesus { $pid })
 ##                    its start.
 ##    $unit (String) The unit in which to display $total. See the definitions
 ##                   of `duration-unit-*`.
-
-# Common case.
-about-processes-cpu-user-and-kernel = { NUMBER($percent, maximumSignificantDigits: 2, style: "percent") } ({ NUMBER($total, maximumFractionDigits: 0) }{ $unit })
 
 ## Displaying Memory (total and delta)
 ## Variables:
@@ -55,8 +88,6 @@ about-processes-cpu-user-and-kernel = { NUMBER($percent, maximumSignificantDigit
 ##    $deltaUnit (String) The unit in which to display $delta. See the definitions
 ##                        of `memory-unit-*`.
 
-# Common case.
-about-processes-total-memory-size = { NUMBER($total, maximumFractionDigits: 0) }{ $totalUnit } ({ $deltaSign }{ NUMBER($delta, maximumFractionDigits: 0) }{ $deltaUnit })
 # Special case: no change.
 about-processes-total-memory-size-no-change = { NUMBER($total, maximumFractionDigits: 0) }{ $totalUnit }
 

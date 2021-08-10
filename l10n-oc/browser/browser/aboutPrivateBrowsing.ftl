@@ -9,6 +9,8 @@ about-private-browsing-info-title = Sètz sus una fenèstra de navegacion privad
 about-private-browsing-info-myths = Mites màgers de la navegacion privada
 about-private-browsing =
     .title = Recèrca sul web
+about-private-browsing-search-btn =
+    .title = Recercar sul web
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

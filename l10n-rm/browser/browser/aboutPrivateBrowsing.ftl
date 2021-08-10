@@ -9,6 +9,8 @@ about-private-browsing-info-title = Ti ta chattas en ina fanestra privata
 about-private-browsing-info-myths = Mitus frequents areguard il modus privat
 about-private-browsing =
     .title = Tschertgar en il web
+about-private-browsing-search-btn =
+    .title = Tschertgar en il web
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

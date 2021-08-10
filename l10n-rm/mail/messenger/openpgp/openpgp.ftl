@@ -4,6 +4,16 @@
 
 e2e-intro-description = Per trametter messadis criptads u signads a moda digitala, stos ti configurar ina tecnologia da criptadi, u OpenPGP u S/MIME.
 e2e-intro-description-more = Tscherna tia clav persunala per pudair utilisar OpenPGP u tes certificat persunal per utilisar S/MIME. Ti stos avair la clav secreta associada cun la clav persunala u il certificat persunal.
+e2e-advanced-section = Parameters avanzads
+e2e-attach-key =
+    .label = Agiuntar mia clav publica sche ina signatura digitala OpenPGP vegn agiuntada
+    .accesskey = p
+e2e-encrypt-subject =
+    .label = Criptar l'object da messadis OpenPGP
+    .accesskey = b
+e2e-encrypt-drafts =
+    .label = Memorisar messadis da sboz en il format criptà
+    .accesskey = r
 openpgp-key-user-id-label = Conto / ID da l'utilisader
 openpgp-keygen-title-label =
     .title = Generar ina clav OpenPGP
@@ -281,6 +291,8 @@ openpgp-selection-status =
        *[other] Tia configuraziun actuala utilisescha la clav cun l'ID <b>{ $key }</b>
     }
 #   $key (String) - the currently selected OpenPGP key
+openpgp-selection-status-have-key = Tia configuraziun actuala utilisescha la clav cun l'ID <b>{ $key }</b>
+#   $key (String) - the currently selected OpenPGP key
 openpgp-selection-status-error = Tia configuraziun actuala utilisescha la clav <b>{ $key }</b> ch'è scadida.
 openpgp-add-key-button =
     .label = Agiuntar ina clav…
@@ -306,6 +318,10 @@ openpgp-key-expires-image =
 openpgp-radio-key-expired = È scadì ils: { $date }
 openpgp-key-expired-image =
     .tooltiptext = Clav scadida
+openpgp-key-expires-within-6-months-icon =
+    .title = La clav scada en pli pauc che 6 mais
+openpgp-key-has-expired-icon =
+    .title = La clav è scadida
 openpgp-key-expand-section =
     .tooltiptext = Ulteriuras infurmaziuns
 openpgp-key-revoke-title = Revocar la clav
@@ -453,18 +469,13 @@ openpgp-export-secret-fail = <b>Impussibel dad exportar la clav secreta tscherni
 # Strings in keyObj.jsm
 key-ring-pub-key-revoked = La clav { $userId } (ID da clav { $keyId }) è vegnida revocada.
 key-ring-pub-key-expired = La clav { $userId } (ID da clav { $keyId }) è scadida.
-key-ring-key-disabled = La clav { $userId } (ID da clav { $keyId }) è deactivada e na po betg vegnir utilisada.
-key-ring-key-invalid = La clav { $userId } (ID da clav { $keyId }) n'è betg valida. Considerescha per plaschair da la verifitgar correctamain.
-key-ring-key-not-trusted = La clav { $userId } (ID da clav { $keyId }) n'ha betg in nivel da confidenza suffizient. Mida per plaschair il nivel da confidenza da tia clav sin «absolut» per pudair l'utilisar per signar.
 key-ring-no-secret-key = I para che ti n'hajas betg la clav secreta per { $userId } (ID da clav { $keyId }) en tes rintg da clavs; ti na pos betg utilisar la clav per signar.
 key-ring-pub-key-not-for-signing = La clav { $userId } (ID da clav { $keyId }) na po betg vegnir duvrada per signar.
 key-ring-pub-key-not-for-encryption = La clav { $userId } (ID da clav { $keyId }) na po betg vegnir duvrada per criptar.
 key-ring-sign-sub-keys-revoked = Tut las sutclavs da signatura da la clav { $userId } (ID da clav { $keyId }) èn vegnidas revocadas.
 key-ring-sign-sub-keys-expired = Tut las sutclavs da signatura da la clav { $userId } (ID da clav { $keyId }) èn scadidas.
-key-ring-sign-sub-keys-unusable = Tut las sutclavs da signatura da la clav { $userId } (ID da clav { $keyId }) èn vegnidas revocadas, èn scadidas u per in auter motiv betg utilisablas.
 key-ring-enc-sub-keys-revoked = Tut las sutclavs da criptadi da la clav { $userId } (ID da clav { $keyId }) èn vegnidas revocadas.
 key-ring-enc-sub-keys-expired = Tut las sutclavs da criptadi da la clav { $userId } (ID da clav { $keyId }) èn scadidas.
-key-ring-enc-sub-keys-unusable = Tut las sutclavs da criptadi da la clav { $userId } (ID da clav { $keyId }) èn vegnidas revocadas, èn scadidas u per in auter motiv betg utilisablas.
 # Strings in gnupg-keylist.jsm
 keyring-photo = Foto
 user-att-photo = Attribut utilisader (maletg JPEG)
@@ -596,6 +607,12 @@ no-temp-dir =
 possibly-pgp-mime = Il messadi è probablamain criptà u signà cun PGP/MIME: utilisar la funcziun «Decriptar/verifitgar»
 cannot-send-sig-because-no-own-key = Impussibel da signar digitalmain quest messadi perquai che ti n'has anc betg configurà il criptadi da fin a fin per <{ $key }>
 cannot-send-enc-because-no-own-key = Impussibel da trametter quest messadi sco messadi criptà perquai che ti n'has anc betg configurà il criptadi da fin a fin per <{ $key }>
+compose-menu-attach-key =
+    .label = Agiuntar mia clav publica
+    .accesskey = A
+compose-menu-encrypt-subject =
+    .label = Criptar l'object
+    .accesskey = b
 # Strings used in decryption.jsm
 do-import-multiple =
     Importar las suandantas clavs?

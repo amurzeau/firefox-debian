@@ -219,12 +219,10 @@ cfr-doorhanger-cryptominers-description = La tua privacy è importante. Adesso {
 #   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
 #   $date (String) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading = { -brand-short-name } ha bloccato oltre <b>{ $blockedCount }</b> elementi traccianti da { $date }.
+
 cfr-doorhanger-milestone-heading2 = { -brand-short-name } ha bloccato oltre <b>{ $blockedCount }</b> elementi traccianti da { DATETIME($date, month: "long", year: "numeric") }.
 cfr-doorhanger-milestone-ok-button = Visualizza tutto
   .accesskey = V
-
-cfr-doorhanger-milestone-close-button = Chiudi
-  .accesskey = C
 
 ## What’s New Panel Content for Firefox 76
 
@@ -258,6 +256,9 @@ cfr-whatsnew-protections-icon-alt = Icona dello scudo
 cfr-whatsnew-better-pdf-header = Esperienza migliore con i PDF
 cfr-whatsnew-better-pdf-body = Adesso è possibile aprire i documenti PDF direttamente in { -brand-short-name }, senza intralciare il tuo flusso di lavoro.
 
+cfr-doorhanger-milestone-close-button = Chiudi
+  .accesskey = C
+
 ## DOH Message
 
 cfr-doorhanger-doh-body = La tua privacy è importante. { -brand-short-name } ora indirizza in modo sicuro le richieste DNS, quando possibile, a un servizio fornito da un partner per proteggerti durante la navigazione.
@@ -275,38 +276,6 @@ cfr-doorhanger-fission-primary-button = OK, ricevuto
   .accesskey = O
 cfr-doorhanger-fission-secondary-button = Ulteriori informazioni
   .accesskey = U
-
-## What's new: Cookies message
-
-cfr-whatsnew-clear-cookies-header = Protezione automatica contro subdole tecniche di tracciamento
-cfr-whatsnew-clear-cookies-body = Alcuni elementi traccianti ti reindirizzano su altri siti web che, di nascosto, impostano cookie nel browser. Adesso { -brand-short-name } elimina automaticamente questi cookie, impedendogli di seguirti.
-cfr-whatsnew-clear-cookies-image-alt = Illustrazione cookie bloccati
-
-## What's new: Media controls message
-
-cfr-whatsnew-media-keys-header = Più controlli multimediali
-cfr-whatsnew-media-keys-body = Riproduci o metti in pausa audio e video usando direttamente la tastiera o le cuffie. In questo modo è facile gestire contenuti multimediali da un’altra scheda, un altro programma, o perfino quando il computer è bloccato. Puoi anche spostarti da una traccia all’altra usando i tasti avanti e indietro.
-cfr-whatsnew-media-keys-button = Scopri come
-
-## What's new: Search shortcuts
-
-cfr-whatsnew-search-shortcuts-header = Scorciatoie di ricerca nella barra degli indirizzi
-cfr-whatsnew-search-shortcuts-body = Quando digiti il nome di un motore di ricerca o di un sito specifico nella barra degli indirizzi, verrà visualizzata una scorciatoia di colore blu tra i suggerimenti di ricerca. Seleziona questa scorciatoia per completare la ricerca direttamente dalla barra degli indirizzi.
-
-## What's new: Cookies protection
-
-cfr-whatsnew-supercookies-header = Protezione contro i supercookie
-cfr-whatsnew-supercookies-body = I siti web possono associare al tuo browser un “supercookie” in grado di seguirti in lungo e in largo per il Web, anche dopo che hai cancellato i normali cookie. Adesso { -brand-short-name } offre un’efficace protezione contro i supercookie, impedendogli di seguire le tue attività online da un sito all’altro.
-
-## What's new: Better bookmarking
-
-cfr-whatsnew-bookmarking-header = Migliore gestione dei segnalibri
-cfr-whatsnew-bookmarking-body = Tenere traccia dei tuoi siti preferiti è ancora più semplice. { -brand-short-name } ora ricorda la tua posizione preferita per salvare i segnalibri, visualizza automaticamente la barra dei segnalibri quando apri una nuova scheda e fornisce rapido accesso agli altri segnalibri attraverso una cartella nella barra degli strumenti.
-
-## What's new: Cross-site cookie tracking
-
-cfr-whatsnew-cross-site-tracking-header = Protezione completa contro il tracciamento intersito tramite cookie
-cfr-whatsnew-cross-site-tracking-body = Ora puoi scegliere una protezione più estesa contro il tracciamento effettuato per mezzo di cookie. { -brand-short-name} può isolare le attività e i dati del sito in cui ti trovi, impedendo che le informazioni salvate nel browser vengano condivise tra siti diversi.
 
 ## Full Video Support CFR message
 

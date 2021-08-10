@@ -8,8 +8,8 @@
 #   $type (String) - the type of the addressing row
 remove-address-row-type = Allontanar il champ { $type }
 #   $type (String) - the type of the addressing row
-remove-address-row-type-label =
-    .tooltiptext = Allontanar il champ { $type }
+remove-address-row-button =
+    .title = Allontanar il champ { $type }
 #   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
@@ -41,6 +41,9 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = Spustar a «bcc»
     .accesskey = b
+pill-action-expand-list =
+    .label = Expander la glista
+    .accesskey = x
 
 # Attachment widget
 
@@ -117,8 +120,6 @@ move-attachment-last-panel-button =
 button-return-receipt =
     .label = Retschavida
     .tooltiptext = Dumandar ina conferma da retschavida per quest messadi
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-consider-bcc-notification = Ils { $count } destinaturs en ils champs A e CC vesan l'adressa in da l'auter. Ti pos zuppentar destinaturs cun utilisar Bcc.
 
 # Addressing Area
 
@@ -166,3 +167,13 @@ many-public-recipients-ignore =
 # Variables:
 # $identity (string) - The name of the used identity, most likely an email address.
 compose-missing-identity-warning = Betg chattà ina identitad univoca che correspunda a l'adressa «da». Il messadi vegn tramess cun utilisar il champ «da» actual ed ils parameters da l'identitad { $identity }.
+encrypted-bcc-warning = Cun trametter in messadi criptà n'èn ils destinaturs en Bcc betg zuppads dal tuttafatg. Tut ils destinaturs pon potenzialmain identifitgar ils auters destinaturs.
+encrypted-bcc-ignore-button = Chapì
+
+## Editing
+
+
+# Tools
+
+compose-tool-button-remove-text-styling =
+    .tooltiptext = Allontanar la formataziun dal text

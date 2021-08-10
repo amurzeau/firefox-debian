@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Кіраваць выкарыстаннем плагіна
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Кіраваць доступам сайта да вашай камеры і/або мікрафона
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Кіраваць доступам сайта да iншых дынамiкаў
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Адкрыць панэль аўтапрайгравання
 urlbar-persistent-storage-notification-anchor =
@@ -164,53 +168,6 @@ page-action-remove-from-urlbar =
     .label = Выдаліць з адраснага радка
 page-action-remove-extension =
     .label = Выдаліць пашырэнне
-
-## Page Action menu
-
-# Variables
-# $tabCount (integer) - Number of tabs selected
-page-action-send-tabs-panel =
-    .label =
-        { $tabCount ->
-            [one] Даслаць картку на прыладу
-            [few] Даслаць { $tabCount } карткі на прыладу
-           *[many] Даслаць { $tabCount } картак на прыладу
-        }
-page-action-send-tabs-urlbar =
-    .tooltiptext =
-        { $tabCount ->
-            [one] Даслаць картку на прыладу
-            [few] Даслаць { $tabCount } карткі на прыладу
-           *[many] Даслаць { $tabCount } картак на прыладу
-        }
-page-action-copy-url-panel =
-    .label = Капіяваць спасылку
-page-action-copy-url-urlbar =
-    .tooltiptext = Капіяваць спасылку
-page-action-email-link-panel =
-    .label = Даслаць спасылку эл.поштай…
-page-action-email-link-urlbar =
-    .tooltiptext = Даслаць спасылку эл.поштай…
-page-action-share-url-panel =
-    .label = Падзяліцца
-page-action-share-url-urlbar =
-    .tooltiptext = Падзяліцца
-page-action-share-more-panel =
-    .label = Больш…
-page-action-send-tab-not-ready =
-    .label = Сінхранізацыя прылад…
-# "Pin" is being used as a metaphor for expressing the fact that these tabs
-# are "pinned" to the left edge of the tabstrip. Really we just want the
-# string to express the idea that this is a lightweight and reversible
-# action that keeps your tab where you can reach it easily.
-page-action-pin-tab-panel =
-    .label = Прышпіліць картку
-page-action-pin-tab-urlbar =
-    .tooltiptext = Прышпіліць картку
-page-action-unpin-tab-panel =
-    .label = Адшпіліць картку
-page-action-unpin-tab-urlbar =
-    .tooltiptext = Адшпіліць картку
 
 ## Auto-hide Context Menu
 
@@ -486,6 +443,8 @@ urlbar-default-placeholder =
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Шукаць ці ўвесці адрас
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Браўзер знаходзіцца пад аддаленым кіраваннем
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -518,8 +477,6 @@ urlbar-placeholder-search-mode-other-tabs =
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
     .placeholder = Шукайце ў { $name } або ўвядзіце адрас
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Браўзер знаходзіцца пад аддаленым кіраваннем
 # Variables
 #  $component (String): the name of the component which forces remote control.
 #    Example: "DevTools", "Marionette", "RemoteAgent".
@@ -613,6 +570,10 @@ pointerlock-warning-no-domain = Гэты дакумент кіруе вашым 
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Частка гэтай старонкі пацярпела крах.</strong> Каб паведаміць { -brand-product-name } пра гэту праблему і паскорыць выпраўленне, адпраўце справаздачу.
+# The string for crashed-subframe-title.title should match crashed-subframe-message,
+# but without any markup.
+crashed-subframe-title =
+    .title = Частка гэтай старонкі пацярпела крах. Каб паведаміць { -brand-product-name } пра гэту праблему і паскорыць выпраўленне, адпраўце справаздачу.
 crashed-subframe-learnmore-link =
     .value = Даведацца больш
 crashed-subframe-submit =
@@ -748,3 +709,9 @@ addon-removal-abuse-report-checkbox = Паведаміць пра гэта па�
 remote-tabs-manage-account =
     .label = Кіраванне ўліковым запісам
 remote-tabs-sync-now = Сінхранізаваць зараз
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Больш...

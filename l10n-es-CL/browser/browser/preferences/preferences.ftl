@@ -254,6 +254,7 @@ confirm-browser-language-change-button = Aplicar y reiniciar
 translate-web-pages =
     .label = Traducir contenido web
     .accesskey = T
+fx-translate-web-pages = { -translations-brand-name }
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = Traducciones por <img data-l10n-name="logo"/>
@@ -821,7 +822,7 @@ forms-exceptions =
     .label = Excepciones…
     .accesskey = x
 forms-generate-passwords =
-    .label = Siguiere y genera contraseñas seguras
+    .label = Sugerir y generar contraseñas seguras
     .accesskey = u
 forms-breach-alerts =
     .label = Mostrar alertas para las contraseñas de sitios vulnerados
@@ -857,6 +858,10 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = Anteriormente conocida como contraseña maestra
 forms-primary-pw-fips-title = Actualmente estás en modo FIPS. FIPS requiere de una contraseña primaria que no esté en blanco.
 forms-master-pw-fips-desc = Falló el cambio de contraseña
+forms-windows-sso =
+    .label = Permitir un solo inicio de sesión de Windows para Microsoft, cuentas de trabajo y cuentas escolares
+forms-windows-sso-learn-more-link = Aprender más
+forms-windows-sso-desc = Gestiona las cuentas en la configuración de tu dispositivo
 
 ## OS Authentication dialog
 
@@ -1109,6 +1114,12 @@ permissions-block-popups =
 permissions-block-popups-exceptions =
     .label = Excepciones…
     .accesskey = E
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = Excepciones…
+    .accesskey = E
+    .searchkeywords = emergentes
 permissions-addon-install-warning =
     .label = Advertir cuando los sitios web intenten instalar complementos
     .accesskey = W
@@ -1144,7 +1155,7 @@ collection-backlogged-crash-reports =
     .label = Permitir a { -brand-short-name } enviar reportes de fallos acumulados a tu nombre
     .accesskey = c
 collection-backlogged-crash-reports-link = Aprender más
-collection-backlogged-crash-reports-with-link = Permitir a { -brand-short-name } enviar reportes de fallos acumulados en tu nombre. <a data-l10n-name="crash-reports-link">Aprender más</a>
+collection-backlogged-crash-reports-with-link = Permitir a { -brand-short-name } enviar reportes de fallos acumulados a tu nombre <a data-l10n-name="crash-reports-link">Aprender más</a>
     .accesskey = c
 
 ## Privacy Section - Security

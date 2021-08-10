@@ -4,6 +4,16 @@
 
 e2e-intro-description = Pour envoyer des messages chiffrés ou signés numériquement, vous devez configurer une technologie de chiffrement, soit OpenPGP soit S/MIME.
 e2e-intro-description-more = Sélectionnez votre clé personnelle pour utiliser OpenPGP, ou votre certificat personnel pour utiliser S/MIME. Vous devez posséder la clé secrète associée à la clé personnelle ou au certificat personnel.
+e2e-advanced-section = Paramètres avancés
+e2e-attach-key =
+    .label = Joindre ma clé publique lors de l’ajout d’une signature numérique OpenPGP
+    .accesskey = p
+e2e-encrypt-subject =
+    .label = Chiffrer le sujet des messages OpenPGP
+    .accesskey = C
+e2e-encrypt-drafts =
+    .label = Enregistrer les brouillons de messages en format chiffré
+    .accesskey = n
 openpgp-key-user-id-label = Compte / Identifiant utilisateur
 openpgp-keygen-title-label =
     .title = Générer une clé OpenPGP
@@ -607,6 +617,12 @@ no-temp-dir =
 possibly-pgp-mime = Message potentiellement chiffré ou signé via PGP/MIME ; utilisez la fonction « Déchiffrer/Vérifier » pour vous en assurer
 cannot-send-sig-because-no-own-key = Impossible de signer numériquement ce message, car vous n’avez pas encore configuré le chiffrement de bout en bout pour <{ $key }>
 cannot-send-enc-because-no-own-key = Impossible d’envoyer ce message chiffré, car vous n’avez pas encore configuré le chiffrement de bout en bout pour <{ $key }>
+compose-menu-attach-key =
+    .label = Joindre ma clé publique
+    .accesskey = J
+compose-menu-encrypt-subject =
+    .label = Chiffrement du sujet
+    .accesskey = h
 # Strings used in decryption.jsm
 do-import-multiple = Importer les clés suivantes ? { $key }
 do-import-one = Importer { $name } ({ $id }) ?

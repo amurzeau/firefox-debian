@@ -89,6 +89,9 @@ menu-file-save-page =
 menu-file-email-link =
     .label = Send link…
     .accesskey = l
+menu-file-share-url =
+    .label = Del
+    .accesskey = D
 menu-file-print-setup =
     .label = Sideopsætning…
     .accesskey = S
@@ -173,6 +176,9 @@ menu-view-page-basic-style =
 menu-view-charset =
     .label = Tegnkodning
     .accesskey = T
+menu-view-repair-text-encoding =
+    .label = Reparer tegnkodning
+    .accesskey = t
 
 ## These should match what Safari and other Apple applications
 ## use on macOS.
@@ -227,6 +233,8 @@ menu-bookmarks-show-all =
     .label = Vis alle bogmærker
 menu-bookmark-this-page =
     .label = Bogmærk denne side
+menu-bookmarks-manage =
+    .label = Håndter bogmærker
 menu-bookmark-current-tab =
     .label = Bogmærk dette faneblad
 menu-bookmark-edit =
@@ -254,15 +262,15 @@ menu-tools-addons =
 menu-tools-fxa-sign-in =
     .label = Log ind på { -brand-product-name }…
     .accesskey = g
+menu-tools-turn-on-sync =
+    .label = Aktiver { -sync-brand-short-name }…
+    .accesskey = A
 menu-tools-addons-and-themes =
     .label = Tilføjelser og temaer
     .accesskey = T
 menu-tools-fxa-sign-in2 =
     .label = Log ind
     .accesskey = L
-menu-tools-turn-on-sync =
-    .label = Aktiver { -sync-brand-short-name }…
-    .accesskey = A
 menu-tools-turn-on-sync2 =
     .label = Slå synkronisering til
     .accesskey = S
@@ -287,13 +295,6 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Sideoplysninger
     .accesskey = o
-menu-settings =
-    .label = Indstillinger
-    .accesskey =
-        { PLATFORM() ->
-            [windows] I
-           *[other] t
-        }
 menu-preferences =
     .label =
         { PLATFORM() ->
@@ -304,6 +305,13 @@ menu-preferences =
         { PLATFORM() ->
             [windows] I
            *[other] I
+        }
+menu-settings =
+    .label = Indstillinger
+    .accesskey =
+        { PLATFORM() ->
+            [windows] I
+           *[other] t
         }
 menu-tools-layout-debugger =
     .label = Layout-debugger
@@ -342,14 +350,12 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = Tastaturgenveje
     .accesskey = u
-menu-get-help =
-    .label = Få hjælp
-    .accesskey = h
 menu-help-troubleshooting-info =
     .label = Teknisk information…
     .accesskey = T
-menu-help-taskmanager =
-    .label = Jobliste
+menu-get-help =
+    .label = Få hjælp
+    .accesskey = h
 menu-help-more-troubleshooting-info =
     .label = Mere teknisk information
     .accesskey = t

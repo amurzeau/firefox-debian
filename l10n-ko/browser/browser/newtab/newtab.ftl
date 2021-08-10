@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = 개인화
     .title = 새 탭 개인화
     .aria-label = 새 탭 개인화
+newtab-personalize-icon-label =
+    .title = 새 탭 개인화
+    .aria-label = 새 탭 개인화
 newtab-personalize-dialog-label =
     .aria-label = 개인화
 
@@ -39,6 +42,7 @@ newtab-search-box-search-the-web-input =
     .placeholder = 웹 검색
     .title = 웹 검색
     .aria-label = 웹 검색
+newtab-search-box-text = 웹 검색
 newtab-search-box-input =
     .placeholder = 웹 검색
     .aria-label = 웹 검색

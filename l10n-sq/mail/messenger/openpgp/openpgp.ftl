@@ -4,6 +4,10 @@
 
 e2e-intro-description = Që të dërgoni mesazhe të fshehtëzuar ose të nënshkruar në mënyrë dixhitale, ju duhet të formësoni një teknologji fshehtëzimi, OpenPGP ose S/MIME.
 e2e-intro-description-more = Që të aktivizohet përdorimi i OpenGPG-së, përzgjidhni kyçin tuaj personal, ose dëshminë tuaj personale që të aktivizohet përdorimi i S/MIME-s. Për një kyç apo dëshmi personale, zotëroni kyçin përkatës të fshehtë.
+e2e-advanced-section = Rregullime të mëtejshme
+e2e-encrypt-subject =
+    .label = Fshehtëzo subjektin e mesazheve OpenPGP
+    .accesskey = F
 openpgp-key-user-id-label = Llogari / ID Përdoruesi
 openpgp-keygen-title-label =
     .title = Prodho Kyç OpenPGP
@@ -280,6 +284,8 @@ openpgp-selection-status =
        *[other] Formësimi juaj i tanishëm përdor ID kyçi <b>{ $key }</b>
     }
 #   $key (String) - the currently selected OpenPGP key
+openpgp-selection-status-have-key = Formësimi juaj i tanishëm përdor ID kyçi <b>{ $key }</b>
+#   $key (String) - the currently selected OpenPGP key
 openpgp-selection-status-error = Formësimi juaj i tanishëm përdor kyçin <b>{ $key }</b>, i cili ka skaduar.
 openpgp-add-key-button =
     .label = Shtoni Kyç…
@@ -305,6 +311,10 @@ openpgp-key-expires-image =
 openpgp-radio-key-expired = Ka skaduar më: { $date }
 openpgp-key-expired-image =
     .tooltiptext = Kyçi skadoi
+openpgp-key-expires-within-6-months-icon =
+    .title = Kyçi skadon për më pak se 6 muaj
+openpgp-key-has-expired-icon =
+    .title = Kyçi skadoi
 openpgp-key-expand-section =
     .tooltiptext = Më tepër të dhëna
 openpgp-key-revoke-title = Shfuqizojeni Kyçin
@@ -590,6 +600,12 @@ no-temp-dir =
 possibly-pgp-mime = Mesazh mundet i fshehtëzuar ose nënshkruar me PGP/MIME; përdorni funksionin 'Shfshehtëzoje/Verifikoje' për ta verifkuar
 cannot-send-sig-because-no-own-key = S’nënshkruhet dot në mënyrë dixhitale ky mesazh, ngaqë s’keni formësuar ende fshehtëzim skaj-më-skaj për <{ $key }>
 cannot-send-enc-because-no-own-key = S’mund të dërgohet i fshehtëzuar ky mesazh, ngaqë s’keni formësuar ende fshehtëzim skaj-më-skaj për <{ $key }>
+compose-menu-attach-key =
+    .label = Bashkëngjit Kyçin Tim Publik
+    .accesskey = B
+compose-menu-encrypt-subject =
+    .label = Fshehtëzim Subjekti
+    .accesskey = F
 # Strings used in decryption.jsm
 do-import-multiple =
     Të importohen kyçet vijues?

@@ -4,6 +4,16 @@
 
 e2e-intro-description = Salattujen tai digitaalisesti allekirjoitettujen viestien lähettämistä varten on määritettävä joko OpenPGP- tai S/MIME-salaustekniikka.
 e2e-intro-description-more = Ota OpenPGP käyttöösi valitsemalla henkilökohtainen avaimesi, tai S/MIME valitsemalla henkilökohtainen varmenteesi. Henkilökohtaista avainta tai varmennetta varten sinulla on vastaava oma salainen avain.
+e2e-advanced-section = Lisäasetukset
+e2e-attach-key =
+    .label = Liitä julkinen avaimeni digitaalista OpenPGP-allekirjoitusta lisätessä
+    .accesskey = G
+e2e-encrypt-subject =
+    .label = Salaa OpenPGP-viestien aihe
+    .accesskey = S
+e2e-encrypt-drafts =
+    .label = Säilytä luonnosviestit salatussa muodossa
+    .accesskey = m
 openpgp-key-user-id-label = Tili / käyttäjätunnus
 openpgp-keygen-title-label =
     .title = Luo OpenPGP-avain
@@ -279,6 +289,8 @@ openpgp-selection-status =
         [0] Ota OpenPGP-protokolla käyttöön valitsemalla voimassa oleva avain.
        *[other] Nykyinen kokoonpanosi käyttää avaimen tunnistetta <b>{ $key }</b>
     }
+#   $key (String) - the currently selected OpenPGP key
+openpgp-selection-status-have-key = Nykyinen kokoonpanosi käyttää avaimen tunnistetta <b>{ $key }</b>
 #   $key (String) - the currently selected OpenPGP key
 openpgp-selection-status-error = Nykyinen kokoonpano käyttää avainta <b>{ $key }</b>, joka on vanhentunut.
 openpgp-add-key-button =
@@ -594,6 +606,12 @@ no-temp-dir =
 possibly-pgp-mime = Mahdollisesti PGP/MIME-salattu tai allekirjoitettu viesti; käytä "Pura salaus/Vahvista'-toimintoa vahvistaaksesi
 cannot-send-sig-because-no-own-key = Tätä viestiä ei voi digitaalisesti allekirjoittaa, koska et ole vielä määrittänyt päästä päähän -salausta avaimelle <{ $key }>
 cannot-send-enc-because-no-own-key = Tätä viestiä ei voi lähettää salattuna, koska et ole vielä määrittänyt päästä päähän -salausta avaimelle <{ $key }>
+compose-menu-attach-key =
+    .label = Liitä oma julkinen avain
+    .accesskey = L
+compose-menu-encrypt-subject =
+    .label = Aiheen salaus
+    .accesskey = A
 # Strings used in decryption.jsm
 do-import-multiple =
     Haluatko tuoda seuraavat avaimet?

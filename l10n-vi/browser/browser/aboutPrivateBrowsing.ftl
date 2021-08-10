@@ -9,6 +9,8 @@ about-private-browsing-info-title = Bạn đang ở cửa sổ riêng tư
 about-private-browsing-info-myths = Những lầm tưởng phổ biến về duyệt web riêng tư
 about-private-browsing =
     .title = Tìm kiếm trên mạng
+about-private-browsing-search-btn =
+    .title = Tìm kiếm trên mạng
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

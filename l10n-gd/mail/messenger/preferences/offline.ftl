@@ -11,6 +11,8 @@ autodetect-online-label =
 
 startup-label = Staid de làimh aig àm tòiseachaidh:
 
+offline-preference-startup-label = Staid de làimh aig àm tòiseachaidh:
+
 status-radio-remember =
     .label = Cuimhnich mo roghainn air loidhne/far loidhne roimhe
     .accesskey = r

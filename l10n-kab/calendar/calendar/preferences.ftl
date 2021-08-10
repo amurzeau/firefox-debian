@@ -4,6 +4,7 @@
 
 calendar-title = Awitay
 calendar-title-reminder = Imektiyen
+calendar-title-notification = Ilɣa
 calendar-title-category = Taggayin
 dateformat-label =
     .value = Amasal n wazemz:
@@ -179,6 +180,7 @@ event-alarm-time-label =
 task-alarm-time-label =
     .value = Akud amezwer n usmekti send tawuri:
     .accesskey = u
+calendar-notifications-customize-label = Ilɣa zemren ad ttwasagnen i yal awitay deg usfaylu n tmeẓliyin n uwitay.
 category-new-label = Rnu taggayt
 category-edit-label = Ẓreg taggayt
 category-overwrite-title = Ɣur-k: Isem yella yakan

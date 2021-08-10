@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = Персоналізувати
     .title = Персоналізувати нову вкладку
     .aria-label = Персоналізувати нову вкладку
+newtab-personalize-icon-label =
+    .title = Персоналізувати нову вкладку
+    .aria-label = Персоналізувати нову вкладку
 newtab-personalize-dialog-label =
     .aria-label = Персоналізувати
 

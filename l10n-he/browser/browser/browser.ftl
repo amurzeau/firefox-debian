@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = ניהול שימוש בתוספים חיצוניים
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = ניהול שיתוף המצלמה ו/או המיקרופון שלך עם האתר
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = ניהול שיתוף רמוקלים אחרים עם האתר
 urlbar-autoplay-notification-anchor =
     .tooltiptext = פתיחת לוח ניגון אוטומטי
 urlbar-persistent-storage-notification-anchor =
@@ -164,51 +168,6 @@ page-action-remove-from-urlbar =
     .label = הסרה משורת הכתובת
 page-action-remove-extension =
     .label = הסרת הרחבה
-
-## Page Action menu
-
-# Variables
-# $tabCount (integer) - Number of tabs selected
-page-action-send-tabs-panel =
-    .label =
-        { $tabCount ->
-            [one] שליחת לשונית למכשיר
-           *[other] שליחת { $tabCount } לשוניות למכשיר
-        }
-page-action-send-tabs-urlbar =
-    .tooltiptext =
-        { $tabCount ->
-            [one] שליחת לשונית למכשיר
-           *[other] שליחת { $tabCount } לשוניות למכשיר
-        }
-page-action-copy-url-panel =
-    .label = העתקת קישור
-page-action-copy-url-urlbar =
-    .tooltiptext = העתקת קישור
-page-action-email-link-panel =
-    .label = שליחת קישור בדוא״ל…
-page-action-email-link-urlbar =
-    .tooltiptext = שליחת קישור בדוא״ל…
-page-action-share-url-panel =
-    .label = שיתוף
-page-action-share-url-urlbar =
-    .tooltiptext = שיתוף
-page-action-share-more-panel =
-    .label = עוד…
-page-action-send-tab-not-ready =
-    .label = סנכרון מכשירים…
-# "Pin" is being used as a metaphor for expressing the fact that these tabs
-# are "pinned" to the left edge of the tabstrip. Really we just want the
-# string to express the idea that this is a lightweight and reversible
-# action that keeps your tab where you can reach it easily.
-page-action-pin-tab-panel =
-    .label = נעיצת לשונית
-page-action-pin-tab-urlbar =
-    .tooltiptext = נעיצת לשונית
-page-action-unpin-tab-panel =
-    .label = ביטול נעיצת לשונית
-page-action-unpin-tab-urlbar =
-    .tooltiptext = ביטול נעיצת לשונית
 
 ## Auto-hide Context Menu
 
@@ -475,6 +434,8 @@ urlbar-default-placeholder =
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = חיפוש או הקלדת כתובת
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = הדפדפן נשלט מרחוק
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -507,8 +468,6 @@ urlbar-placeholder-search-mode-other-tabs =
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
     .placeholder = ‏ניתן לחפש עם { $name } או להקליד כתובת
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = הדפדפן נשלט מרחוק
 # Variables
 #  $component (String): the name of the component which forces remote control.
 #    Example: "DevTools", "Marionette", "RemoteAgent".
@@ -602,6 +561,10 @@ pointerlock-warning-no-domain = למסמך זה יש שליטה על הסמן ש
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>חלק מדף זה קרס.</strong> כדי ליידע את { -brand-product-name } על בעיה זו ולתקן אותה מהר יותר, נא לשלוח דיווח.
+# The string for crashed-subframe-title.title should match crashed-subframe-message,
+# but without any markup.
+crashed-subframe-title =
+    .title = חלק מדף זה קרס. כדי ליידע את { -brand-product-name } על בעיה זו ולתקן אותה מהר יותר, נא לשלוח דיווח.
 crashed-subframe-learnmore-link =
     .value = מידע נוסף
 crashed-subframe-submit =
@@ -737,3 +700,9 @@ addon-removal-abuse-report-checkbox = דיווח על הרחבה זו ל־{ -ven
 remote-tabs-manage-account =
     .label = ניהול חשבון
 remote-tabs-sync-now = סנכרון כעת
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = עוד…

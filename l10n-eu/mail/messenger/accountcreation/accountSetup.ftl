@@ -10,6 +10,10 @@ account-setup-title = Ezarri badaukazun posta elektroniko helbide bat
 account-setup-description =
     Zure unekoposta elektroniko helbidea erabiltzeko idatzi zure kredentzialak. <br/>
     { -brand-product-name } automatikoki bilatuko du badabiltzan eta gomendatutako zerbitzari konfigurazioa.
+account-setup-secondary-description = { -brand-product-name } automatikoki bilatuko du badabilen eta gomendatzen den zerbitzari konfigurazioa.
+account-setup-success-title = Kontua ondo sortu da!
+account-setup-success-description = Orain zuk { -brand-short-name } kontua erabil dezakezu.
+account-setup-success-secondary-description = Esperientzia hobetu dezakezu harremandutako zerbitzuak konektatuz eta konfigurazio aurreratuen ezarpenekin.
 
 ## Form fields
 
@@ -98,15 +102,26 @@ account-setup-step3-image =
     .title = Konfigurazioa aurkitua
 account-setup-step4-image =
     .title = Konexio errorea
-account-setup-privacy-footnote = Zure kredentzialak gure <a data-l10n-name="privacy-policy-link"> Pribatutasun-politikaren arabera erabiliko dira </a> eta zure ordenagailuan lokalean bakarrik gordeko dira
+account-setup-step5-image =
+    .title = Kontua sortua
+account-setup-privacy-footnote2 = Zure kredentzialak lokalean bakarrik, zure ordenagailuan, gordeko dira
 account-setup-selection-help = Ez dakizu zer hautatu?
 account-setup-selection-error = Laguntza bila?
+account-setup-success-help = Ez dakizu zeintzuk diren hurrengo urratsak?
 account-setup-documentation-help = Konfigurazio dokumentazioa
 account-setup-forum-help = Laguntza foroa
+account-setup-privacy-help = Pribatutasun-politika
+account-setup-getting-started = Nola hasi
 
 ## Results area
 
-account-setup-protocol-title = Hautatu protokoloa
+# Variables:
+#  $count (Number) - Number of available protocols.
+account-setup-results-area-title =
+    { $count ->
+        [one] Konfigurazio erabilgarria
+       *[other] Konfigurazio erabilgarriak
+    }
 # Note: IMAP is the name of a protocol.
 account-setup-result-imap = IMAP
 account-setup-result-imap-description = Mantendu zure karpetak eta postak sinkronizatuak zure zerbitzarian
@@ -115,7 +130,8 @@ account-setup-result-pop = POP3
 account-setup-result-pop-description = Mantendu zure karpetak eta postak zure konputagailuan
 # Note: Exchange is the name of a product.
 account-setup-result-exchange = Exchange
-account-setup-result-exchange-description = Microsoft Exchange Server
+# Note: Exchange, Office365 are the name of products.
+account-setup-result-exchange2-description = Erabili Microsoft Exchange server edo Office365 cloud zerbitzuak
 account-setup-incoming-title = Sarrerakoa
 account-setup-outgoing-title = Irteerakoa
 account-setup-username-title = Erabiltzaile-izena
@@ -205,3 +221,68 @@ account-setup-confirm-advanced-description = Elkarrizketa koadro hau itxiko da e
 account-setup-addon-install-title = Instalatu
 account-setup-addon-install-intro = Hirugarren baten gehigarriak ahalbidetu diezazuke sarbidea zure posta elektronikoari zerbitzari honetan:
 account-setup-addon-no-protocol = Posta zerbitzariak zoritzarrez ez ditu onartzen protokolo irekiak. { account-setup-addon-install-intro }
+
+## Success view
+
+account-setup-settings-button = Kontu-ezarpenak
+account-setup-encryption-button = Muturretik muturrerako enkriptatzea
+account-setup-signature-button = Gehitu sinadura
+account-setup-dictionaries-button = Deskargatu hiztegiak
+account-setup-address-book-carddav-button = CardDAV helbide-liburura konektatu
+account-setup-address-book-ldap-button = LDAP helbide-liburura konektatu
+account-setup-calendar-button = Konektatu urruneko egutegira
+account-setup-linked-services-title = Konektatu zure lotutako zerbitzuekin
+account-setup-linked-services-description = { -brand-short-name } zure postaz lotutako zerbitzu gehiago antzeman ditu.
+account-setup-no-linked-description = Konfiguratu beste zerbitzuak zure { -brand-short-name } esperientziari ahalik eta etekin handiena ateratzeko.
+# Variables:
+# $count (Number) - The number of address books found during autoconfig.
+account-setup-found-address-books-description =
+    { $count ->
+        [one] { -brand-short-name } zure postari lotutako helbide liburu bat aurkitu du.
+       *[other] { -brand-short-name } zure postari lotutako { $count } helbide liburu aurkitu ditu.
+    }
+# Variables:
+# $count (Number) - The number of calendars found during autoconfig.
+account-setup-found-calendars-description =
+    { $count ->
+        [one] { -brand-short-name } zure postari lotutako egutegi bat aurkitu du.
+       *[other] { -brand-short-name } zure postari lotutako { $count } egutegi aurkitu ditu.
+    }
+account-setup-button-finish = Amaitu
+    .accesskey = A
+account-setup-looking-up-address-books = Helbide-liburuak bilatzen…
+account-setup-looking-up-calendars = Egutegiak bilatzen…
+account-setup-address-books-button = Helbide-liburuak
+account-setup-calendars-button = Egutegiak
+account-setup-connect-link = Konektatu
+account-setup-existing-address-book = Konektatuta
+    .title = Helbide-liburua konektatua dago
+account-setup-existing-calendar = Konektatuta
+    .title = Egutegia konektatua dago
+account-setup-connect-all-calendars = Konektatu egutegi guztiak
+account-setup-connect-all-address-books = Konektatu helbide-liburu guztiak
+
+## Calendar synchronization dialog
+
+calendar-dialog-title = Konektatu egutegia
+calendar-dialog-cancel-button = Utzi
+    .accesskey = U
+calendar-dialog-confirm-button = Konektatu
+    .accesskey = K
+account-setup-calendar-name-label = Izena
+account-setup-calendar-name-input =
+    .placeholder = Nire egutegia
+account-setup-calendar-color-label = Kolorea
+account-setup-calendar-refresh-label = Berritu
+account-setup-calendar-refresh-manual = Eskuz
+account-setup-calendar-refresh-interval =
+    { $count ->
+        [one] Minutuoro
+       *[other] { $count } minututik behin
+    }
+account-setup-calendar-read-only = irakurtzeko soilik
+    .accesskey = s
+account-setup-calendar-show-reminders = Erakutsi gogorarazleak
+    .accesskey = g
+account-setup-calendar-offline-support = Lineaz kanpoko laguntza
+    .accesskey = L

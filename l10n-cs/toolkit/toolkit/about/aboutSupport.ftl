@@ -65,12 +65,14 @@ app-basics-enabled-plugins = Povolené zásuvné moduly
 app-basics-build-config = Nastavení sestavení
 app-basics-user-agent = User agent
 app-basics-os = OS
+app-basics-os-theme = Vzhled systému
 # Rosetta is Apple's translation process to run apps containing x86_64
 # instructions on Apple Silicon. This should remain in English.
 app-basics-rosetta = Přeloženo pro Apple pomocí Rosetta
 app-basics-memory-use = Spotřeba paměti
 app-basics-performance = Výkon
 app-basics-service-workers = Registrovaní Service Workers
+app-basics-third-party = Moduly třetích stran
 app-basics-profiles = Profily
 app-basics-launcher-process-status = Spouštěcí proces
 app-basics-multi-process-support = Multiprocesová okna
@@ -399,6 +401,7 @@ fission-status-disabled-by-default = Zakázáno ve výchozím nastavení
 fission-status-enabled-by-user-pref = Povoleno uživatelem
 fission-status-disabled-by-user-pref = Zakázáno uživatelem
 fission-status-disabled-by-e10s-other = Zakázáno kvůli E10S
+fission-status-enabled-by-rollout = Povoleno postupným zaváděním
 async-pan-zoom = Asynchronní lupa/panning
 apz-none = nic
 wheel-enabled = vstup kolečka povolen

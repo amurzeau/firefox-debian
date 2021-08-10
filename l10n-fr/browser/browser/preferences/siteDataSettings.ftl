@@ -54,4 +54,7 @@ site-data-removing-dialog =
     .buttonlabelaccept = Supprimer
 site-data-removing-header = Suppression des cookies et des données de sites
 site-data-removing-desc = Supprimer les cookies et les données de sites peut vous déconnecter de ces sites web. Voulez-vous vraiment effectuer ces modifications ?
+# Variables:
+#   $baseDomain (String) - The single domain for which data is being removed
+site-data-removing-single-desc = La suppression des cookies et des données de sites peut vous déconnecter de sites web. Voulez-vous vraiment supprimer les cookies et les données de sites pour <strong>{ $baseDomain }</strong> ?
 site-data-removing-table = Les cookies et les données associés aux sites suivants seront supprimés

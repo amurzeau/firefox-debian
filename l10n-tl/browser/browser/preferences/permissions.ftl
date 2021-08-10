@@ -80,6 +80,9 @@ permissions-exceptions-cookie-desc = Maaari mong tukuyin kung aling website ang 
 
 ## Exceptions - HTTPS-Only Mode
 
+permissions-exceptions-https-only-window =
+    .title = Mga Exception - HTTPS-Only Mode
+    .style = { permissions-window.style }
 
 ## Exceptions - Pop-ups
 

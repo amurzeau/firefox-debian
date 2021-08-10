@@ -14,7 +14,7 @@ downloads-panel =
 ##
 
 # The style attribute has the width of the Downloads Panel expressed using
-# a CSS unit. The longest labels that should fit are usually those of 
+# a CSS unit. The longest labels that should fit are usually those of
 # in-progress and blocked downloads.
 downloads-panel-list =
     .style = width: 70ch
@@ -41,12 +41,12 @@ downloads-cmd-show-menuitem-mac =
     .accesskey = V
 
 downloads-cmd-use-system-default =
-  .label = Åbn i systemets standard-program
-  .accesskey = s
+    .label = Åbn i systemets standard-program
+    .accesskey = s
 
 downloads-cmd-always-use-system-default =
-  .label = Åbn altid i systemets standard-program
-  .accesskey = a
+    .label = Åbn altid i systemets standard-program
+    .accesskey = a
 
 downloads-cmd-show-button =
     .tooltiptext =
@@ -129,6 +129,22 @@ downloads-show-more-information =
 # open the file using an app available in the system.
 downloads-open-file =
     .value = Åbn fil
+
+## Displayed when the user clicked on a download in process. Indicates that the
+## downloading file will be opened after certain amount of time using an app
+## available in the system.
+## Variables:
+##   $hours (number) - Amount of hours left till the file opens.
+##   $seconds (number) - Amount of seconds left till the file opens.
+##   $minutes (number) - Amount of minutes till the file opens.
+
+downloading-file-opens-in-hours-and-minutes = Åbnes om { $hours } t. og { $minutes } m…
+downloading-file-opens-in-minutes = Åbnes om { $minutes } m…
+downloading-file-opens-in-minutes-and-seconds = Åbnes om { $minutes } m. og { $seconds } s…
+downloading-file-opens-in-seconds = Åbnes om { $seconds } s…
+downloading-file-opens-in-some-time = Åbnes når afsluttet…
+
+##
 
 # Displayed when hovering a download which is able to be retried by users,
 # indicates that it's possible to download this file again.

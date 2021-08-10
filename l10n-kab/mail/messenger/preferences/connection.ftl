@@ -26,6 +26,9 @@ connection-dialog-window =
            *[other] width: 49em !important
         }
 
+connection-disable-extension =
+    .label = Sens aseɣzif
+
 connection-proxy-legend = Tawila n uqeddac apṛuksi n unekcum ar Internet
 
 proxy-type-no =
@@ -96,6 +99,9 @@ no-proxy-example = Amedya: .mozilla.org, .net.nz, 192.168.1.0/24
 
 # Note: Do not translate localhost, 127.0.0.1 and ::1.
 no-proxy-localhost-label = Tuqqniwin ɣer localhost, 127.0.0.1 ou ::1 urǧin ad ɛeddint s upṛuksi.
+
+# Do not translate "localhost", "127.0.0.1/8" and "::1". (You can translate "and".)
+connection-proxy-noproxy-localhost-desc-2 = Tuqqniwin ɣer usenneftaɣ adigan, 127.0.0.1/8, akked ::1 urǧin ad ɛeddint s upṛuksi.
 
 proxy-password-prompt =
     .label = Ur sutur ara asesteb ma yella awal uffir yettwakles

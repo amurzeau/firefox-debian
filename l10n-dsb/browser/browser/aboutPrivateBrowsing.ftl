@@ -9,6 +9,8 @@ about-private-browsing-info-title = Sćo w priwatnem woknje
 about-private-browsing-info-myths = Ceste myty wó priwatnem modusu
 about-private-browsing =
     .title = Web pśepytaś
+about-private-browsing-search-btn =
+    .title = Web pśepytaś
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

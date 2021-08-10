@@ -23,6 +23,10 @@ auth-helpTitle = Tallalt n usenqed
 
 auth-questionReceived = D wagi i d asteqsi i d-yettunefken sɣur anermis-inek(inem):
 
+auth-help-title = Tallalt n usenqed
+
+auth-question-received = D wagi i d asteqsi i d-yettunefken sɣur anermis-inek(inem):
+
 auth-yes =
     .label = Ih
 
@@ -46,9 +50,26 @@ auth-sharedSecret-label =
 
 auth-manualInstruction = Nermes bab n udiwenni i d-teɛniḍ seg ubadu-nniḍen yettussetben  am yiznan yettuzemlen OpenPGP neɣ am tilifun. Ilaq ad temyinim idsilen-nwen umḍinen. (Adsil umḍin d taqrumma n yisenqaden i d-yebadun tasarut n uwgelhen.) Ma yella adsil umḍin yemṣada, ilaq-ak·am ad tesbegneḍ deg udiwenni ddaw, tesneqdeḍ adsil umḍin.
 
+auth-manual-verification = Asenqed s ufus n udsil umḍin
+auth-question-and-answer = Asteqsi d tririt
+auth-shared-secret = Tabaḍnit tettwabḍa
+
+auth-manual-verification-label =
+    .label = { auth-manual-verification }
+
+auth-question-and-answer-label =
+    .label = { auth-question-and-answer }
+
+auth-shared-secret-label =
+    .label = { auth-shared-secret }
+
+auth-manual-instruction = Nermes bab n udiwenni i d-teɛniḍ seg ubadu-nniḍen yettussetben  am yiznan yettuzemlen OpenPGP neɣ am tilifun. Ilaq ad temyinim idsilen-nwen umḍinen. (Adsil umḍin d taqrumma n yisenqaden i d-yebadun tasarut n uwgelhen.) Ma yella adsil umḍin yemṣada, ilaq-ak·am ad tesbegneḍ deg udiwenni ddaw, tesneqdeḍ adsil umḍin.
+
 auth-how = Amek i tebɣiḍ ad tesneqdeḍ timagit n unermas-inek/inem?
 
 auth-qaInstruction = Xemmem ɣer usteqsi iwumi tiririt ad tt-yissin kan unermas-ik/im d kečč/kemm. Sekcem asteqsi d tririt-i, syen ṛǧu anermas-ik/im ad isekcem tiririt. Ma yella tiririyin ur mṣadant ara, yezmer lḥal abadu n teywalt i tseqdaceḍ ha-t-an yettuεass.
+
+auth-qa-instruction = Xemmem ɣer usteqsi iwumi tiririt ad tt-yissin kan unermas-ik/im d kečč/kemm. Sekcem asteqsi d tririt-i, syen ṛǧu anermas-ik/im ad isekcem tiririt. Ma yella tiririyin ur mṣadant ara, yezmer lḥal abadu n teywalt i tseqdaceḍ ha-t-an yettuεass.
 
 auth-question = Sekcem asteqsi:
 

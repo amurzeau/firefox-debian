@@ -34,7 +34,7 @@ downloads-cmd-cancel-panel =
 downloads-cmd-show-menuitem =
     .label = פתיחת תיקייה מכילה
     .accesskey = ת
-  
+
 # This message is only displayed on macOS devices
 downloads-cmd-show-menuitem-mac =
     .label = הצגה ב־Finder
@@ -129,6 +129,55 @@ downloads-show-more-information =
 # open the file using an app available in the system.
 downloads-open-file =
     .value = פתיחת קובץ
+
+## Displayed when the user clicked on a download in process. Indicates that the
+## downloading file will be opened after certain amount of time using an app
+## available in the system.
+## Variables:
+##   $hours (number) - Amount of hours left till the file opens.
+##   $seconds (number) - Amount of seconds left till the file opens.
+##   $minutes (number) - Amount of minutes till the file opens.
+
+downloading-file-opens-in-hours-and-minutes =
+    { $hours ->
+        [1]
+            { $minutes ->
+                [1] הקובץ ייפתח בעוד שעה ודקה אחת…
+               *[other] הקובץ ייפתח בעוד שעה ו־{ $minutes } דק’…
+            }
+        [2]
+            { $minutes ->
+                [1] הקובץ ייפתח בעוד שעתיים ודקה אחת…
+               *[other] הקובץ ייפתח בעוד שעתיים ו־{ $minutes } דק’…
+            }
+       *[other]
+            { $minutes ->
+                [1] הקובץ ייפתח בעוד { $hours } שעות ודקה אחת…
+               *[other] הקובץ ייפתח בעוד { $hours } שעות ו־{ $minutes } דק’…
+            }
+    }
+downloading-file-opens-in-minutes =
+    { $minutes ->
+        [1] הקובץ ייפתח בעוד דקה אחת…
+       *[other] הקובץ ייפתח בעוד { $minutes } דק’…
+    }
+downloading-file-opens-in-minutes-and-seconds =
+    { $minutes ->
+        [1]
+            { $seconds ->
+                [1] הקובץ ייפתח בעוד דקה ושנייה אחת…
+               *[other] הקובץ ייפתח בעוד דקה ו־{ $seconds } שנ’…
+            }
+       *[other]
+            { $seconds ->
+                [1] הקובץ ייפתח בעוד { $minutes } דקות ושנייה אחת…
+               *[other] הקובץ ייפתח בעוד { $minutes } דקות ו־{ $seconds } שנ’…
+            }
+    }
+downloading-file-opens-in-seconds = הקובץ ייפתח בעוד { $seconds } שניות…
+downloading-file-opens-in-some-time = הקובץ ייפתח כשההורדה תושלם…
+
+##
 
 # Displayed when hovering a download which is able to be retried by users,
 # indicates that it's possible to download this file again.

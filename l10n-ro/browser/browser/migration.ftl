@@ -67,7 +67,7 @@ import-select-profile-page-title = Selectează profilul
 
 import-select-profile-description = Următoarele profiluri sunt disponibile pentru a se importa din acestea:
 
-import-done-page-title = Importare încheiată
+import-done-page-title = Importare finalizată
 
 import-done-description = Următoarele elemente au fost importate cu succes:
 

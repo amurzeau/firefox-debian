@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Administrar l'utilisaziun da plug-ins
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Administrar la cundivisiun da la camera/dal microfon cun la pagina
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Administrar la cundivisiun dad auters autpledaders cun la website
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Avrir la panela da reproducziun automatica
 urlbar-persistent-storage-notification-anchor =
@@ -164,53 +168,6 @@ page-action-remove-from-urlbar =
     .label = Allontanar da la trav d'adressas
 page-action-remove-extension =
     .label = Allontanar l'extensiun
-
-## Page Action menu
-
-# Variables
-# $tabCount (integer) - Number of tabs selected
-page-action-send-tabs-panel =
-    .label =
-        { $tabCount ->
-            [one] Trametter il tab ad in apparat
-           *[other] Trametter { $tabCount } tabs ad in apparat
-        }
-page-action-send-tabs-urlbar =
-    .tooltiptext =
-        { $tabCount ->
-            [one] Trametter il tab ad in apparat
-           *[other] Trametter { $tabCount } tabs ad in apparat
-        }
-page-action-pocket-panel =
-    .label = Memorisar la pagina en { -pocket-brand-name }
-page-action-copy-url-panel =
-    .label = Copiar la colliaziun
-page-action-copy-url-urlbar =
-    .tooltiptext = Copiar la colliaziun
-page-action-email-link-panel =
-    .label = Trametter la colliaziun via e-mail…
-page-action-email-link-urlbar =
-    .tooltiptext = Trametter la colliaziun via e-mail…
-page-action-share-url-panel =
-    .label = Cundivider
-page-action-share-url-urlbar =
-    .tooltiptext = Cundivider
-page-action-share-more-panel =
-    .label = Dapli…
-page-action-send-tab-not-ready =
-    .label = Sincronisar apparats…
-# "Pin" is being used as a metaphor for expressing the fact that these tabs
-# are "pinned" to the left edge of the tabstrip. Really we just want the
-# string to express the idea that this is a lightweight and reversible
-# action that keeps your tab where you can reach it easily.
-page-action-pin-tab-panel =
-    .label = Fixar il tab
-page-action-pin-tab-urlbar =
-    .tooltiptext = Fixar il tab
-page-action-unpin-tab-panel =
-    .label = Betg pli fixar il tab
-page-action-unpin-tab-urlbar =
-    .tooltiptext = Betg pli fixar il tab
 
 ## Auto-hide Context Menu
 
@@ -439,6 +396,8 @@ popup-select-microphone-device =
     .accesskey = M
 popup-select-microphone-icon =
     .tooltiptext = Microfon
+popup-select-speaker-icon =
+    .tooltiptext = Boxas
 popup-all-windows-shared = Tut las fanestras visiblas sin tes visur vegnan cundivididas.
 popup-screen-sharing-not-now =
     .label = Betg ussa
@@ -477,6 +436,8 @@ urlbar-default-placeholder =
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Tschertgar u endatar in'adressa
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Il navigatur vegn controllà a distanza
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -509,8 +470,6 @@ urlbar-placeholder-search-mode-other-tabs =
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
     .placeholder = Tschertgar cun { $name } u endatar in'adressa
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Il navigatur vegn controllà a distanza
 # Variables
 #  $component (String): the name of the component which forces remote control.
 #    Example: "DevTools", "Marionette", "RemoteAgent".
@@ -604,6 +563,10 @@ pointerlock-warning-no-domain = Quest document controllescha il punctader. Smatg
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Ina part da questa pagina è collabada.</strong> Trametta per plaschair in rapport per infurmar { -brand-product-name } davart quest problem e gidar d'al schliar pli svelt.
+# The string for crashed-subframe-title.title should match crashed-subframe-message,
+# but without any markup.
+crashed-subframe-title =
+    .title = Ina part da questa pagina è collabada. Trametta per plaschair in rapport per infurmar { -brand-product-name } davart quest problem e per gidar d'al schliar pli svelt.
 crashed-subframe-learnmore-link =
     .value = Ulteriuras infurmaziuns
 crashed-subframe-submit =
@@ -612,8 +575,6 @@ crashed-subframe-submit =
 
 ## Bookmarks panels, menus and toolbar
 
-bookmarks-show-all-bookmarks =
-    .label = Mussar tut ils segnapaginas
 bookmarks-manage-bookmarks =
     .label = Administrar ils segnapaginas
 bookmarks-recent-bookmarks-panel-subheader = Segnapaginas novs
@@ -687,6 +648,12 @@ save-to-pocket-button =
     .label = Memorisar en { -pocket-brand-name }
     .tooltiptext = Memorisar en { -pocket-brand-name }
 
+## Repair text encoding toolbar button
+
+repair-text-encoding-button =
+    .label = Reparar la codaziun dal text
+    .tooltiptext = Engiavinar la codaziun correcta dal text dal cuntegn da la pagina
+
 ## Customize Toolbar Buttons
 
 # Variables:
@@ -735,3 +702,9 @@ addon-removal-abuse-report-checkbox = Rapportar questa extensiun a { -vendor-sho
 remote-tabs-manage-account =
     .label = Administrar il conto
 remote-tabs-sync-now = Sincronisar ussa
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Dapli…

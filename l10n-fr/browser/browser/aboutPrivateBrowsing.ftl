@@ -9,6 +9,8 @@ about-private-browsing-info-title = Cette fenêtre de navigation est privée
 about-private-browsing-info-myths = Principales idées reçues sur la navigation privée
 about-private-browsing =
     .title = Rechercher sur le Web
+about-private-browsing-search-btn =
+    .title = Rechercher sur le Web
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

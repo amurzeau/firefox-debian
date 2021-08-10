@@ -9,6 +9,8 @@ about-private-browsing-info-title = Okno w trybie prywatnym
 about-private-browsing-info-myths = Popularne mity na temat przeglądania prywatnego
 about-private-browsing =
     .title = Szukaj w Internecie
+about-private-browsing-search-btn =
+    .title = Szukaj w Internecie
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

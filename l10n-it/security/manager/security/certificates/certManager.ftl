@@ -221,6 +221,7 @@ delete-ssl-cert-title =
 delete-ssl-cert-confirm = Eliminare queste eccezioni?
 delete-ssl-cert-impact = Eliminando un’eccezione per un server si ripristinano i controlli predefiniti di sicurezza  e per questo sito verrà richiesto un certificato valido.
 
+
 delete-ssl-override-title =
     .title = Elimina eccezione certificato server
 delete-ssl-override-confirm = Eliminare l’eccezione per questo server?
@@ -290,6 +291,9 @@ send-no-client-certificate = Non inviare alcun certificato client
 
 # Used when no cert is stored for an override
 no-cert-stored-for-override = (non salvato)
+
+# When a certificate is unavailable (for example, it has been deleted or the token it exists on has been removed).
+certificate-not-available = (non disponibile)
 
 ## Used to show whether an override is temporary or permanent
 

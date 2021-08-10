@@ -54,4 +54,7 @@ site-data-removing-dialog =
     .buttonlabelaccept = Wotstronić
 site-data-removing-header = Placki a daty sydła wotstronić
 site-data-removing-desc = Je móžno, zo so was wotzjewjeja, hdyž placki a sydłowe daty wotstronjeće. Chceće změny woprawdźe přewjesć?
+# Variables:
+#   $baseDomain (String) - The single domain for which data is being removed
+site-data-removing-single-desc = Hdyž placki a sydłowe daty wotstronjeće, wotzjewiće so snano wot websydłow. Chceće woprawdźe swoje placki a sydłowe daty za <strong>{ $baseDomain }</strong> wotstronić?
 site-data-removing-table = Placki a sydłowe daty so za slědowace websydła wotstronja

@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = Preferințe
 menu-application-services =
     .label = Servicii
 menu-application-hide-this =
@@ -20,7 +22,7 @@ menu-application-hide-other =
 menu-application-show-all =
     .label = Afișează toate
 menu-application-touch-bar =
-    .label = Personalizează Bara tactilă…
+    .label = Personalizează bara tactilă…
 
 ##
 
@@ -36,16 +38,20 @@ menu-quit =
             [windows] x
            *[other] Q
         }
+
 # This menu-quit-mac string is only used on macOS.
 menu-quit-mac =
     .label = Ieși din { -brand-shorter-name }
+
 # This menu-quit-button string is only used on Linux.
 menu-quit-button =
     .label = { menu-quit.label }
+
 # This menu-quit-button-win string is only used on Windows.
 menu-quit-button-win =
     .label = { menu-quit.label }
     .tooltip = Ieși din { -brand-shorter-name }
+
 menu-about =
     .label = Despre { -brand-shorter-name }
     .accesskey = A
@@ -132,6 +138,9 @@ menu-view-toolbars-menu =
 menu-view-customize-toolbar =
     .label = Personalizează…
     .accesskey = C
+menu-view-customize-toolbar2 =
+    .label = Personalizează bara de instrumente…
+    .accesskey = C
 menu-view-sidebar =
     .label = Bară laterală
     .accesskey = e
@@ -168,6 +177,10 @@ menu-view-page-basic-style =
 menu-view-charset =
     .label = Codare de text
     .accesskey = C
+
+menu-view-repair-text-encoding =
+    .label = Repară codarea de text
+    .accesskey = c
 
 ## These should match what Safari and other Apple applications
 ## use on macOS.
@@ -211,6 +224,9 @@ menu-history-undo-menu =
 menu-history-undo-window-menu =
     .label = Ferestre închise recent
 
+menu-history-reopen-all-tabs = Redeschide toate filele
+menu-history-reopen-all-windows = Redeschise toate ferestrele
+
 ## Bookmarks Menu
 
 menu-bookmarks-menu =
@@ -220,6 +236,10 @@ menu-bookmarks-show-all =
     .label = Afișează toate marcajele
 menu-bookmark-this-page =
     .label = Marchează pagina
+menu-bookmarks-manage =
+    .label = Gestionează marcajele
+menu-bookmark-current-tab =
+    .label = Marchează fila actuală
 menu-bookmark-edit =
     .label = Editează acest marcaj
 menu-bookmarks-all-tabs =
@@ -234,7 +254,7 @@ menu-bookmarks-mobile =
 ## Tools Menu
 
 menu-tools =
-    .label = Unelte
+    .label = Instrumente
     .accesskey = T
 menu-tools-downloads =
     .label = Descărcări
@@ -248,6 +268,15 @@ menu-tools-fxa-sign-in =
 menu-tools-turn-on-sync =
     .label = Activează { -sync-brand-short-name }…
     .accesskey = n
+menu-tools-addons-and-themes =
+    .label = Suplimente și teme
+    .accesskey = A
+menu-tools-fxa-sign-in2 =
+    .label = Autentifică-te
+    .accesskey = g
+menu-tools-turn-on-sync2 =
+    .label = Activează sincronizarea
+    .accesskey = n
 menu-tools-sync-now =
     .label = Sincronizează acum
     .accesskey = S
@@ -257,6 +286,12 @@ menu-tools-fxa-re-auth =
 menu-tools-web-developer =
     .label = Dezvoltator web
     .accesskey = W
+menu-tools-browser-tools =
+    .label = Uneltele browserului
+    .accesskey = B
+menu-tools-task-manager =
+    .label = Manager de activități
+    .accesskey = M
 menu-tools-page-source =
     .label = Sursa paginii
     .accesskey = o
@@ -321,6 +356,12 @@ menu-help-keyboard-shortcuts =
 menu-help-troubleshooting-info =
     .label = Informații pentru depanare
     .accesskey = T
+menu-get-help =
+    .label = Obține ajutor
+    .accesskey = H
+menu-help-more-troubleshooting-info =
+    .label = Mai multe informații de depanare
+    .accesskey = T
 menu-help-report-site-issue =
     .label = Raportează problemă cu site-ul…
 menu-help-feedback-page =
@@ -332,6 +373,12 @@ menu-help-safe-mode-without-addons =
 menu-help-safe-mode-with-addons =
     .label = Repornește cu suplimentele activate
     .accesskey = R
+menu-help-enter-troubleshoot-mode2 =
+    .label = Mod de depanare…
+    .accesskey = M
+menu-help-exit-troubleshoot-mode =
+    .label = Oprește modul de depanare
+    .accesskey = M
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

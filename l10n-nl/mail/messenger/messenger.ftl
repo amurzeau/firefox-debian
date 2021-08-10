@@ -22,12 +22,12 @@ content-tab-security-broken-icon =
 
 ## Toolbar
 
-addons-and-themes-button =
-    .label = Add-ons en thema's
-    .tooltip = Uw add-ons beheren
 addons-and-themes-toolbarbutton =
     .label = Add-ons en thema’s
     .tooltiptext = Uw add-ons beheren
+quick-filter-toolbarbutton =
+    .label = Snelfilter
+    .tooltiptext = Berichten filteren
 redirect-msg-button =
     .label = Omleiden
     .tooltiptext = Geselecteerd bericht omleiden
@@ -127,3 +127,9 @@ caret-browsing-prompt-check-text = Dit niet meer vragen.
 repair-text-encoding-button =
     .label = Tekstcodering repareren
     .tooltiptext = De juiste tekstcodering raden uit de berichtinhoud
+
+## no-reply handling
+
+no-reply-title = Antwoord niet ondersteund
+no-reply-message = Het antwoordadres ({ $email }) lijkt geen gecontroleerd adres te zijn. Berichten naar dit adres worden waarschijnlijk door niemand gelezen.
+no-reply-reply-anyway-button = Toch antwoorden

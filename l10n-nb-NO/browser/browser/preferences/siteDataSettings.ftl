@@ -54,4 +54,7 @@ site-data-removing-dialog =
     .buttonlabelaccept = Fjern
 site-data-removing-header = Fjerner infokapsler og nettstedsdata
 site-data-removing-desc = Fjerning av infokapsler og nettstedsdata kan logge deg ut av nettsider. Er du sikker på at du vil gjøre endringene?
+# Variables:
+#   $baseDomain (String) - The single domain for which data is being removed
+site-data-removing-single-desc = Fjerning av infokapsler og nettsteddata kan logge deg ut av nettsteder. Er du sikker på at du vil fjerne infokapsler og nettsteddata for <strong>{ $baseDomain }</strong>?
 site-data-removing-table = Infokapsler og nettstedsdata fra følgende nettsteder vil bli fjernet

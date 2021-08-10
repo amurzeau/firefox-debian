@@ -165,51 +165,6 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Tanggalin ang Extension
 
-## Page Action menu
-
-# Variables
-# $tabCount (integer) - Number of tabs selected
-page-action-send-tabs-panel =
-    .label =
-        { $tabCount ->
-            [one] Ipadala ang Tab sa Device
-           *[other] Magpadala ng { $tabCount } Tab sa Device
-        }
-page-action-send-tabs-urlbar =
-    .tooltiptext =
-        { $tabCount ->
-            [one] Ipadala ang Tab sa Device
-           *[other] Magpadala ng { $tabCount } Tab sa Device
-        }
-page-action-copy-url-panel =
-    .label = Kopyahin ang Link
-page-action-copy-url-urlbar =
-    .tooltiptext = Kopyahin ang Link
-page-action-email-link-panel =
-    .label = i-Email ang Link…
-page-action-email-link-urlbar =
-    .tooltiptext = i-Email ang Link…
-page-action-share-url-panel =
-    .label = Ibahagi
-page-action-share-url-urlbar =
-    .tooltiptext = Ibahagi
-page-action-share-more-panel =
-    .label = Karagdagang detalye…
-page-action-send-tab-not-ready =
-    .label = Nag-sysync ng Devices…
-# "Pin" is being used as a metaphor for expressing the fact that these tabs
-# are "pinned" to the left edge of the tabstrip. Really we just want the
-# string to express the idea that this is a lightweight and reversible
-# action that keeps your tab where you can reach it easily.
-page-action-pin-tab-panel =
-    .label = i-Pin ang Tab
-page-action-pin-tab-urlbar =
-    .tooltiptext = i-Pin ang Tab
-page-action-unpin-tab-panel =
-    .label = I-unpin ang Tab
-page-action-unpin-tab-urlbar =
-    .tooltiptext = I-unpin ang Tab
-
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -275,6 +230,7 @@ search-one-offs-history =
 ## Bookmark Panel
 
 bookmarks-add-bookmark = Magdagdag ng bookmark
+bookmarks-edit-bookmark = I-edit ang bookmark
 bookmark-panel-cancel =
     .label = Kanselahin
     .accesskey = C
@@ -336,6 +292,7 @@ identity-https-only-info-turn-off2 = Kung mukhang sira ang pahina, maaari mong p
 identity-https-only-info-no-upgrade = Hindi kayang mag-upgrade ng koneksyon mula sa HTTP.
 identity-permissions-storage-access-header = Mga cross-site cookie
 identity-permissions-storage-access-hint = Ang mga partidong ito ay maaaring gumamit ng mga cross-site cookie at site data habang ikaw ay nasa site na ito.
+identity-permissions-storage-access-learn-more = Alamin
 identity-permissions-reload-hint = Maaaring kailangan mong i-reload ang pahina para mag-aplay ang mga pagbabago.
 identity-permissions-empty = Hindi mo ipinagkaloob ang site na ito anumang espesyal na pahintulot.
 identity-clear-site-data =
@@ -385,11 +342,25 @@ browser-window-close-button =
 browser-tab-audio-playing2 = TUMUTUGTOG
 # This label should be written in all capital letters if your locale supports them.
 browser-tab-audio-muted2 = MUTED
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = HINARANG ANG AUTOPLAY
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = PICTURE-IN-PICTURE
 
 ## These labels should be written in all capital letters if your locale supports them.
 ## Variables:
 ##  $count (number): number of affected tabs
 
+browser-tab-mute =
+    { $count ->
+        [1] I-MUTE ANG TAB
+       *[other] I-MUTE ANG MGA { $count } TAB
+    }
+browser-tab-unmute =
+    { $count ->
+        [1] I-UNMUTE TAB
+       *[other] I-UNMUTE ANG MGA { $count } TAB
+    }
 browser-tab-unblock =
     { $count ->
         [1] i-PLAY ANG TAB
@@ -398,6 +369,10 @@ browser-tab-unblock =
 
 ## Bookmarks toolbar items
 
+browser-import-button2 =
+    .label = Mag-import ng mga bookmark…
+    .tooltiptext = Mag-import ng mga bookmark mula sa ibang browser papuntang { -brand-short-name }.
+bookmarks-toolbar-empty-message = Para sa mabilis na pag-access, ilagay ang iyong mga bookmark dito sa bookmarks toolbar. <a data-l10n-name="manage-bookmarks">I-manage ang mga bookmark…</a>
 
 ## WebRTC Pop-up notifications
 
@@ -431,6 +406,10 @@ popup-silence-notifications-checkbox-warning = Hindi magpapakita ng mga notifica
 popup-screen-sharing-block =
     .label = Harangin
     .accesskey = H
+popup-screen-sharing-always-block =
+    .label = Palaging harangin
+    .accesskey = w
+popup-mute-notifications-checkbox = I-mute ang mga abiso sa website habang nagbabahagi
 
 ## WebRTC window or screen share tab switch warning
 
@@ -453,6 +432,8 @@ urlbar-default-placeholder =
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Hanapin o ilagay ang address
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Browser ay kasalukuyang nire-remote kontrol
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -485,8 +466,11 @@ urlbar-placeholder-search-mode-other-tabs =
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
     .placeholder = Maghanap gamit ang { $name } o ipasok ang address
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Browser ay kasalukuyang nire-remote kontrol
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Naka-remote control ang browser (dahilan: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Ipinagkaloob mo sa website na ito ang mga karagdagang pahintulot.
 urlbar-switch-to-tab =
@@ -520,6 +504,18 @@ urlbar-result-action-search-w-engine = Maghanap gamit ang { $engine }
 urlbar-result-action-sponsored = Sponsored
 urlbar-result-action-switch-tab = Lumipat sa Tab
 urlbar-result-action-visit = Puntahan
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Pindutin ang Tab upang maghanap gamit ang { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Pindutin ang Tab upang maghanap sa { $engine }
 # Variables
 #  $engine (String): the name of a search engine that searches the entire Web
 #  (e.g. Google).
@@ -562,9 +558,17 @@ pointerlock-warning-no-domain = Ang dokumentong ito ay may kontrol sa iyong poin
 
 ## Subframe crash notification
 
+crashed-subframe-learnmore-link =
+    .value = Alamin
+crashed-subframe-submit =
+    .label = Magsumite ng ulat
+    .accesskey = s
 
 ## Bookmarks panels, menus and toolbar
 
+bookmarks-manage-bookmarks =
+    .label = I-manage ang mga bookmark
+bookmarks-recent-bookmarks-panel-subheader = Mga bookmark kamakailan
 bookmarks-toolbar-chevron =
     .tooltiptext = Magpakita ng karagdagang mga bookmark
 bookmarks-sidebar-content =
@@ -586,6 +590,12 @@ bookmarks-tools-toolbar-visibility-menuitem =
         { $isVisible ->
             [true] Itago ang Bookmark Toolbar
            *[other] Ipakita ang Bookmark Sidebar
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Itago ang bookmarks toolbar
+           *[other] Ipakita ang bookmarks toolbar
         }
 bookmarks-tools-menu-button-visibility =
     .label =
@@ -612,11 +622,16 @@ bookmarks-toolbar-placeholder =
     .title = Mga nakalagay sa Bookmark Toolbar
 bookmarks-toolbar-placeholder-button =
     .label = Mga nakalagay sa Bookmark Toolbar
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = I-bookmark ang kasalukuyang tab
 
 ## Library Panel items
 
 library-bookmarks-menu =
     .label = Mga bookmark
+library-recent-activity-title =
+    .value = Aktibidad Kamakailan
 
 ## Pocket toolbar button
 
@@ -629,6 +644,11 @@ save-to-pocket-button =
 
 ## Customize Toolbar Buttons
 
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Mga add-on at tema
+    .tooltiptext = I-manage ang iyong mga add-on at tema ({ $shortcut })
 # Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
 toolbar-settings-button =
@@ -648,7 +668,9 @@ more-menu-go-offline =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = Ang ilang mga audio o video sa site na ito ay gumagamit ng software na DRM, na maaaring limitahan ang { -brand-short-name } sa kung ano ang maaaring mong gawin dito.
+eme-notifications-drm-content-playing-manage = I-manage ang mga setting
 eme-notifications-drm-content-playing-manage-accesskey = M
+eme-notifications-drm-content-playing-dismiss = Alisin
 eme-notifications-drm-content-playing-dismiss-accesskey = D
 
 ## Password save/update panel

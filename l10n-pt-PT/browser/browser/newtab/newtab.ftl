@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = Personalizar
     .title = Personalizar novo separador
     .aria-label = Personalizar novo separador
+newtab-personalize-icon-label =
+    .title = Personalizar novo separador
+    .aria-label = Personalizar novo separador
 newtab-personalize-dialog-label =
     .aria-label = Personalizar
 
@@ -39,6 +42,7 @@ newtab-search-box-search-the-web-input =
     .placeholder = Pesquisar na Web
     .title = Pesquisar na Web
     .aria-label = Pesquisar na Web
+newtab-search-box-text = Pesquisar na Internet
 newtab-search-box-input =
     .placeholder = Pesquisar na Internet
     .aria-label = Pesquisar na Internet

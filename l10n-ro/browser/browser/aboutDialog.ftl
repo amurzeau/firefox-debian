@@ -17,6 +17,7 @@ update-updateButton =
 
 update-checkingForUpdates = Se caută actualizări…
 update-downloading = <img data-l10n-name="icon"/>Se descarcă actualizarea — <label data-l10n-name="download-status"/>
+update-downloading-message = Se descarcă actualizarea — <label data-l10n-name="download-status"/>
 update-applying = Se aplică actualizarea…
 
 update-failed = Actualizare eșuată. <label data-l10n-name="failed-link">Descarcă cea mai recentă versiune</label>
@@ -32,9 +33,12 @@ update-unsupported = Nu poți efectua actualizări suplimentare pe acest sistem.
 
 update-restarting = Se repornește…
 
-channel-description = Acum folosești canalul de actualizare <label data-l10n-name="current-channel"></label>.
+channel-description = Folosești în prezent canalul de actualizare <label data-l10n-name="current-channel"></label>.
 
 warningDesc-version = { -brand-short-name } este experimental și poate fi instabil.
+
+aboutdialog-help-user = Ajutor pentru { -brand-product-name }
+aboutdialog-submit-feedback = Trimite feedback
 
 community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> este o <label data-l10n-name="community-exp-creditsLink">comunitate globală</label> care lucrează pentru a păstra webul deschis, public și accesibil tuturor.
 

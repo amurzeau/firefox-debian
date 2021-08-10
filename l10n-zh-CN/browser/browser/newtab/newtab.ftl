@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = 个性化
     .title = 个性化标签页
     .aria-label = 个性化标签页
+newtab-personalize-icon-label =
+    .title = 个性化标签页
+    .aria-label = 个性化标签页
 newtab-personalize-dialog-label =
     .aria-label = 个性化
 
@@ -39,9 +42,10 @@ newtab-search-box-search-the-web-input =
     .placeholder = 在网络上搜索
     .title = 在网络上搜索
     .aria-label = 在网络上搜索
+newtab-search-box-text = 网上搜索
 newtab-search-box-input =
-    .placeholder = 在网上搜索
-    .aria-label = 在网上搜索
+    .placeholder = 网上搜索
+    .aria-label = 网上搜索
 
 ## Top Sites - General form dialog.
 

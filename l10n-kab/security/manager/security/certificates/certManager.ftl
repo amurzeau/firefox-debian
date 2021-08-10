@@ -217,6 +217,8 @@ cert-not-verified-unknown = Ur izmir ara ad isenqed aselkin-agi imi taɣzint d t
 send-no-client-certificate = Ur ttazen ula d yiwen n uselkin n umsaɣ
 # Used when no cert is stored for an override
 no-cert-stored-for-override = (Ur ittukles ara)
+# When a certificate is unavailable (for example, it has been deleted or the token it exists on has been removed).
+certificate-not-available = (Ulac)
 
 ## Used to show whether an override is temporary or permanent
 

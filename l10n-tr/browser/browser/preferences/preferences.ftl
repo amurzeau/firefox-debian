@@ -254,6 +254,7 @@ confirm-browser-language-change-button = Uygula ve yeniden başlat
 translate-web-pages =
     .label = Web içeriğini çevir
     .accesskey = W
+fx-translate-web-pages = { -translations-brand-name }
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = Çeviriler: <img data-l10n-name="logo"/>
@@ -857,6 +858,10 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = Şu anda FIPS kipindesiniz. FIPS için boş olmayan bir ana parola gereklidir.
 forms-master-pw-fips-desc = Parola değiştirme başarısız
+forms-windows-sso =
+    .label = Microsoft, iş ve okul hesapları için Windows çoklu oturum açmaya izin ver
+forms-windows-sso-learn-more-link = Daha fazla bilgi al
+forms-windows-sso-desc = Hesapları cihaz ayarlarınızdan yönetebilirsiniz
 
 ## OS Authentication dialog
 
@@ -1109,6 +1114,12 @@ permissions-block-popups =
 permissions-block-popups-exceptions =
     .label = İstisnalar…
     .accesskey = a
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = İstisnalar…
+    .accesskey = s
+    .searchkeywords = açılır pencereler
 permissions-addon-install-warning =
     .label = Siteler eklenti yüklemeye çalıştığında beni uyar
     .accesskey = u

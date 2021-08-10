@@ -2,7 +2,14 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+##
+## Localization for remote types defined in RemoteType.h
+##
+
 process-type-web = Teksaĵa enhavo
+
+process-type-browser = Ĉefa
 
 # process used to run privileged about pages,
 # such as about:home
@@ -25,6 +32,16 @@ process-type-weblargeallocation = Granda asigno
 # to improve security
 process-type-webisolated = Izolita enhavo de retejoj
 
+# process preallocated; may change to other types
+process-type-prealloc = Antaŭe asignita
+
+##
+## Localization for Gecko process types defined in GeckoProcessTypes.h
+##
+
+process-type-default = Ĉefa
+process-type-tab = Langeto
+
 # process used to communicate with the GPU for
 # graphics acceleration
 process-type-gpu = GPU
@@ -32,5 +49,12 @@ process-type-gpu = GPU
 # process used to perform network operations
 process-type-socket = Konektingo
 
-# process preallocated; may change to other types
-process-type-prealloc = Antaŭe asignita
+# process used to decode media
+process-type-rdd = RDD
+
+##
+## Other
+##
+
+# fallback
+process-type-unknown = Nekonata

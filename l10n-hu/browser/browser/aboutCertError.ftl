@@ -84,7 +84,7 @@ open-in-new-window-for-csp-or-xfo-error = Webhely megnyitása új ablakban
 
 # Variables:
 # $hostname (String) - Hostname of the website blocked by csp or xfo error.
-csp-xfo-blocked-long-desc = A biztonsága érdekében a { $hostname } nem engedi a { -brand-short-name }nak, hogy megjelenítse az oldalt, ha egy másik oldalt beágyazta magába. Az oldal megtekintéséhez új ablakban kell megnyitnia.
+csp-xfo-blocked-long-desc = A biztonsága érdekében a { $hostname } nem engedi a { -brand-short-name }nak, hogy megjelenítse az oldalt, ha egy másik oldal beágyazta magába. Az oldal megtekintéséhez új ablakban kell megnyitnia.
 
 ## Messages used for certificate error titles
 

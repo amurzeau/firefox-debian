@@ -17,3 +17,4 @@ identity-name = Dearbh-aithne
 
 send-via-email = Cuir air a’ phost-d
 
+app-basics-telemetry = Dàta telemeatraidh

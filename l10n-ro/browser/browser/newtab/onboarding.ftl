@@ -72,7 +72,7 @@ onboarding-sync-form-sub-header = pentru a continua la { -sync-brand-name }.
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-text = Fii mai productiv(ă) cu o familie de unelte care îți respectă intimitatea pe toate dispozitivele.
+onboarding-benefit-products-text = Fii mai productiv(ă) cu o familie de instrumente care îți respectă intimitatea pe toate dispozitivele.
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -102,7 +102,7 @@ onboarding-data-sync-text2 = Sincronizează-ți marcajele, parolele și multe al
 onboarding-data-sync-button2 = Autentifică-te în { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Rămâi la curent cu încălcările securității datelor
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } monitorizează dacă adresa ta de e-mail a apărut într-o încălcare cunoscută a securității datelor și te alertează dacă apare într-o încălcare nouă.
-onboarding-firefox-monitor-button = Înregistrează-te pentru alerte
+onboarding-firefox-monitor-button = Înscrie-te pentru alerte
 onboarding-browse-privately-title = Navighează privat
 onboarding-browse-privately-text = Navigarea privată îți șterge căutările și istoricul de navigare pentru a le păstra secrete față de oricine altcineva folosește calculatorul.
 onboarding-browse-privately-button = Deschide o fereastră privată
@@ -159,6 +159,9 @@ onboarding-multistage-welcome-subtitle = Browserul rapid, sigur și privat susț
 onboarding-multistage-welcome-primary-button-label = Începe configurarea
 onboarding-multistage-welcome-secondary-button-label = Autentifică-te
 onboarding-multistage-welcome-secondary-button-text = Ai un cont?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "default" should stay inside the span.
+onboarding-multistage-set-default-header = Desemnează { -brand-short-name } ca browser <span data-l10n-name="zap">implicit</span>
 onboarding-multistage-set-default-secondary-button-label = Nu acum
 onboarding-multistage-pin-default-primary-button-label = Desemnează { -brand-short-name } ca browserul meu principal
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
@@ -236,11 +239,25 @@ onboarding-multistage-theme-description-alpenglow =
 
 ## Multistage MR1 onboarding strings (MR1 about:welcome pages)
 
+# This button will open system settings to turn on prefers-reduced-motion
+mr1-onboarding-reduce-motion-button-label = Dezactivează animațiile
 
 ## Title and primary button strings differ between platforms as they
 ## match the OS' application context menu item action where Windows uses "pin"
 ## and "taskbar" while macOS "keep" and "Dock" (proper noun).
 
+# Title used on welcome page when Firefox is not pinned
+mr1-onboarding-pin-header =
+    { PLATFORM() ->
+        [macos] Păstrează { -brand-short-name } în Dock pentru acces facil
+       *[other] Fixează { -brand-short-name } în bara de activități pentru acces facil
+    }
+# Primary button string used on welcome page when Firefox is not pinned.
+mr1-onboarding-pin-primary-button-label =
+    { PLATFORM() ->
+        [macos] Păstrează în Dock
+       *[other] Fixează în bara de activități
+    }
 
 ## Multistage MR1 onboarding strings (about:welcome pages)
 
@@ -254,12 +271,18 @@ mr1-onboarding-set-default-secondary-button-label = Nu acum
 ## Title, subtitle and primary button string used on set default onboarding screen
 ## when Firefox is not default browser
 
+mr1-onboarding-default-header = Desemnează { -brand-short-name } ca browser implicit
+mr1-onboarding-default-subtitle = Pune viteza, siguranța și confidențialitatea pe pilot automat.
+mr1-onboarding-default-primary-button-label = Desemnează ca browser implicit
 
 ## Multistage MR1 onboarding strings (about:welcome pages)
 
 mr1-onboarding-import-secondary-button-label = Nu acum
+mr1-onboarding-theme-subtitle = Personalizează { -brand-short-name } cu o temă.
 mr1-onboarding-theme-primary-button-label = Salvează tema
 mr1-onboarding-theme-secondary-button-label = Nu acum
+# System theme uses operating system color settings
+mr1-onboarding-theme-label-system = Tema sistemului
 # "Alpenglow" here is the name of the theme, and should be kept in English.
 mr1-onboarding-theme-label-alpenglow = Alpenglow
 

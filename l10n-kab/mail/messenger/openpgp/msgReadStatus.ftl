@@ -2,6 +2,19 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## Message Header Encryption Button
+
+message-header-show-security-info-key = S
+
+#   $type (String) - the shortcut key defined in the message-header-show-security-info-key
+message-security-button =
+    .title =
+        { PLATFORM() ->
+            [macos] Sken taɣellist n yizen (⌃ ⌘ { message-header-show-security-info-key })
+           *[other] Sken taɣellist n yizen (Ctrl+Alt+{ message-header-show-security-info-key })
+        }
+
 openpgp-view-signer-key =
     .label = Sken tasarut n unezmal
 openpgp-view-your-encryption-key =
@@ -32,3 +45,20 @@ openpgp-unknown-key-id = Tasarut d tarussint
 
 openpgp-other-enc-additional-key-ids = D timerna, izen-a yettwawgelhen i yimawlan n tsura-a:
 openpgp-other-enc-all-key-ids = Izen-a yettwawgelhen i yimawlan n tsura-a:
+
+openpgp-message-header-encrypted-ok-icon =
+    .alt = Tukksa n uwgelhen tedda akken iwata
+openpgp-message-header-encrypted-notok-icon =
+    .alt = Tukksa n uwgelhen tecceḍ
+
+openpgp-message-header-signed-ok-icon =
+    .alt = Azmul igerrzen
+# Mismatch icon is used for notok state as well
+openpgp-message-header-signed-mismatch-icon =
+    .alt = Yir azmul
+openpgp-message-header-signed-unknown-icon =
+    .alt = Addaden n uzmul ur nettwassen ara
+openpgp-message-header-signed-verified-icon =
+    .alt = Azmul yettusenqed
+openpgp-message-header-signed-unverified-icon =
+    .alt = Azmul ur nettusenqed ara

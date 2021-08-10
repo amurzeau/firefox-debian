@@ -58,13 +58,15 @@ app-basics-profile-dir =
 app-basics-enabled-plugins = ჩართული მოდულები
 app-basics-build-config = ანაწყობის კონფიგურაცია
 app-basics-user-agent = მომხმარებლის პროგრამა
-app-basics-os = OS
+app-basics-os = სისტემა
+app-basics-os-theme = სისტემის იერსახე
 # Rosetta is Apple's translation process to run apps containing x86_64
 # instructions on Apple Silicon. This should remain in English.
 app-basics-rosetta = Rosetta-ს თარგმნილი
 app-basics-memory-use = გამოყენებული მეხსიერება
 app-basics-performance = წარმადობა
 app-basics-service-workers = დარეგისტრებული Service Worker-ები
+app-basics-third-party = გარეშე მოდულები
 app-basics-profiles = პროფილები
 app-basics-launcher-process-status = გამშვები პროცესი
 app-basics-multi-process-support = მრავალპროცესიანი ფანჯრები
@@ -377,6 +379,7 @@ fission-status-disabled-by-default = გამორთული ნაგულ
 fission-status-enabled-by-user-pref = ჩართული მომხმარებლის მიერ
 fission-status-disabled-by-user-pref = გამორთული მომხმარებლის მიერ
 fission-status-disabled-by-e10s-other = E10s გამორთული
+fission-status-enabled-by-rollout = ჩართულია თანდათანობითი დანერგვით
 async-pan-zoom = ასინქრონული პანორამირება/ზომის ცვლილება
 apz-none = არაა
 wheel-enabled = რგოლით შეყვანა ჩართულია

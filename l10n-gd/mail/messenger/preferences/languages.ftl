@@ -42,3 +42,4 @@ messenger-languages-select-language =
 messenger-languages-installed-label = Cànain stàlaichte
 messenger-languages-available-label = Na cànain a tha ri fhaighinn
 
+messenger-languages-error = Chan urrainn dha { -brand-short-name } na cànain agad ùrachadh an-dràsta fhèin. Dèan cinnteach gu bheil ceangal agad ris an eadar-lìon no feuch ris a-rithist.

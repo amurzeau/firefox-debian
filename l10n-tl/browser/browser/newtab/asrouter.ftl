@@ -120,9 +120,6 @@ cfr-whatsnew-lockwise-take-link-text = Kunin ang app
 
 cfr-whatsnew-searchbar-title = Mag-type nang mas kaunti at maghanap nang mas marami sa address bar
 cfr-whatsnew-searchbar-body-topsites = Ngayon, piliin lang ang address bar, at may magpapakitang box na may mga link sa mga top site mo.
-
-## Search bar
-
 cfr-whatsnew-searchbar-icon-alt-text = Magnifying glass icon
 
 ## Picture-in-Picture
@@ -231,12 +228,6 @@ cfr-whatsnew-pip-fullscreen-icon-alt = Picture-in-picture icon
 
 ## Protections Dashboard message
 
-cfr-doorhanger-milestone-close-button = Isarado
-    .accesskey = I
-
-## What’s New Panel Content for Firefox 76
-## Protections Dashboard message
-
 cfr-whatsnew-protections-header = Mga proteksyon sa isang sulyap
 cfr-whatsnew-protections-body = Nagtataglay ang Protections Dashboard ng mga nakabuod na ulat tungkol sa mga data breach at password management. Maaari mo nang mabantayan kung ilang mga breach na ang naresolba mo, at makita kung may ilan sa mga naka-save na password ang nalantad sa data breach.
 cfr-whatsnew-protections-cta-link = Tingnan ang Protections Dashboard
@@ -246,6 +237,8 @@ cfr-whatsnew-protections-icon-alt = Shield icon
 
 cfr-whatsnew-better-pdf-header = Mas magandang PDF experience
 cfr-whatsnew-better-pdf-body = Direkta nang magbubukas ang mga PDF document sa { -brand-short-name }, kaya mas madali mo nang gawin ang mga ito.
+cfr-doorhanger-milestone-close-button = Isarado
+    .accesskey = I
 
 ## DOH Message
 
@@ -262,26 +255,8 @@ cfr-doorhanger-fission-primary-button = OK, Nakuha ko
 cfr-doorhanger-fission-secondary-button = Alamin
     .accesskey = L
 
-## What's new: Cookies message
+## Full Video Support CFR message
 
-cfr-whatsnew-clear-cookies-header = Awtomatikong proteksyon mula sa mga mapanlinlang na tracking
-cfr-whatsnew-clear-cookies-body = May ilang mga tracker na nireredirect ka sa ibang mga website na patagong naglalagay ng mga cookie. Kusa nang tinatanggal ng { -brand-short-name } ang mga cookie na ito para hindi ka masundan.
-cfr-whatsnew-clear-cookies-image-alt = Pagsasalarawan ng pagharang sa cookie
-
-## What's new: Media controls message
-
-cfr-whatsnew-media-keys-header = Karagdagang media control
-cfr-whatsnew-media-keys-body = Magpaandar o mag-pause ng audio o video direkta mula sa iyong keyboard o headset, para mas madali kontrolin ang media mula sa ibang tab, program, o kahit kapag naka-lock ang computer mo. Pwede ka rin lumipat sa iba't-ibang mga track gamit ang mga forward at back key.
-cfr-whatsnew-media-keys-button = Alamin kung papaano
-
-## What's new: Search shortcuts
-
-
-## What's new: Cookies protection
-
-
-## What's new: Better bookmarking
-
-
-## What's new: Cross-site cookie tracking
-
+cfr-doorhanger-video-support-header = I-update ang { -brand-short-name } upang mapanood ang video
+cfr-doorhanger-video-support-primary-button = Mag-update Na
+    .accesskey = u

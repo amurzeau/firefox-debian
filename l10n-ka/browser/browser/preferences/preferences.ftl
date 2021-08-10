@@ -254,6 +254,7 @@ confirm-browser-language-change-button = მიღება და ხელა�
 translate-web-pages =
     .label = ვებშიგთავსის გადათარგმნა
     .accesskey = გ
+fx-translate-web-pages = { -translations-brand-name }
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = თარგმანის მომწოდებელი <img data-l10n-name="logo"/>
@@ -857,6 +858,10 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = თქვენ FIPS-რეჟიმში იმყოფებით. FIPS-ს ესაჭიროება მთავარი პაროლი.
 forms-master-pw-fips-desc = პაროლის შეცვლა ვერ მოხერხდა
+forms-windows-sso =
+    .label = Windows-ით ერთიანად შესვლის დაშვება, Microsoft-ის, სამუშაოს ან სკოლის ანგარიშებზე
+forms-windows-sso-learn-more-link = ვრცლად
+forms-windows-sso-desc = ანგარიშების მართვა, მოწყობილობის პარამეტრებიდან
 
 ## OS Authentication dialog
 
@@ -1109,6 +1114,12 @@ permissions-block-popups =
 permissions-block-popups-exceptions =
     .label = გამონაკლისები…
     .accesskey = გ
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = გამონაკლისები…
+    .accesskey = ე
+    .searchkeywords = ამომხტომები
 permissions-addon-install-warning =
     .label = გაფრთხილება საიტების მიერ დამატების ჩადგმის მცდელობისას
     .accesskey = გ

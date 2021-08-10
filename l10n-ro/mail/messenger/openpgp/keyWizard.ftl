@@ -77,7 +77,7 @@ openpgp-keygen-import-progress-title = Se importă cheile OpenPGP…
 
 openpgp-import-success = Cheile OpenPGP au fost importate cu succes!
 
-openpgp-import-success-title = Finalizează procedura de import
+openpgp-import-success-title = Finalizează procedura de importare
 
 openpgp-import-success-description = Ca să începi utilizarea cheii OpenPGP importate pentru criptarea mesajelor de e-mail, închide această fereastră de dialog, intră în Setările contului și selectează cheia.
 

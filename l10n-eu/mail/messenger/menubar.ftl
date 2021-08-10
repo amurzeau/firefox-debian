@@ -16,6 +16,7 @@ menu-view-charset =
 menu-tools-preferences =
     .label = Hobespenak
     .accesskey = H
+
 menu-addons-and-themes =
     .label = Gehigarriak eta itxurak
     .accesskey = G
@@ -25,9 +26,11 @@ menu-addons-and-themes =
 menu-help-enter-troubleshoot-mode =
     .label = Arazoak konpontzeko modua…
     .accesskey = A
+
 menu-help-exit-troubleshoot-mode =
     .label = Desaktibatu arazoak konpontzeko modua
     .accesskey = D
+
 menu-help-more-troubleshooting-info =
     .label = Arazoak konpontzeko informazio gehiago
     .accesskey = i
@@ -47,17 +50,26 @@ toolbar-undelete-button =
     .label = Desezabatu
     .tooltiptext = Desezabatu aukeratutako mezuak
 
+## View
+
+menu-view-repair-text-encoding =
+    .label = Konpondu testu kodeketa
+    .accesskey = K
+
 ## View / Layout
 
 mail-uidensity-label =
     .label = Dentsitatea
     .accesskey = D
+
 mail-uidensity-compact =
     .label = Trinkoa
     .accesskey = T
+
 mail-uidensity-normal =
     .label = Arrunta
     .accesskey = A
+
 mail-uidensity-touch =
     .label = Ukipena
     .accesskey = U

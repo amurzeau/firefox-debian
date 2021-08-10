@@ -54,4 +54,7 @@ site-data-removing-dialog =
     .buttonlabelaccept = Xóa
 site-data-removing-header = Xóa cache và dữ liệu trang
 site-data-removing-desc = Xóa cookie và dữ liệu trang có thể khiến bạn bị đăng xuất khỏi trang web. Bạn có chắc chắn muốn thay đổi không?
+# Variables:
+#   $baseDomain (String) - The single domain for which data is being removed
+site-data-removing-single-desc = Xóa cookie và dữ liệu trang web có thể đăng xuất bạn khỏi các trang web. Bạn có chắc chắn muốn xóa cookie và dữ liệu trang web của <strong>{ $baseDomain }</strong> không?
 site-data-removing-table = Cookie và dữ liệu của các trang web sau sẽ bị xóa

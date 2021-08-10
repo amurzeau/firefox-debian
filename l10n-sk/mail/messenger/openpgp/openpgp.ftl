@@ -4,6 +4,16 @@
 
 e2e-intro-description = Ak chcete odosielať šifrované alebo digitálne podpísané správy, musíte nakonfigurovať šifrovaciu technológiu, buď OpenPGP alebo S/MIME.
 e2e-intro-description-more = Vyberte svoj osobný kľúč pre použitie OpenPGP alebo svoj osobný certifikát pre použitie S/MIME. Pre osobný kľúč alebo certifikát, pre ktorý vlastníte zodpovedajúci tajný kľúč.
+e2e-advanced-section = Rozšírené nastavenia
+e2e-attach-key =
+    .label = Pri pridávaní môjho digitálneho podpisu OpenPGP pripojiť aj môj verejný kľúč
+    .accesskey = G
+e2e-encrypt-subject =
+    .label = Šifrovať predmet správ OpenPGP
+    .accesskey = m
+e2e-encrypt-drafts =
+    .label = Koncepty správ ukladať v šifrovanom formáte
+    .accesskey = u
 openpgp-key-user-id-label = Účet / ID používateľa
 openpgp-keygen-title-label =
     .title = Vytvoriť OpenPGP kľúč
@@ -606,6 +616,12 @@ no-temp-dir =
 possibly-pgp-mime = Správa je možno šifrovaná alebo podpísaná pomocou PGP/MIME; na overenie použite funkciu „Dešifrovať/Overiť“
 cannot-send-sig-because-no-own-key = Túto správu nie je možné digitálne podpísať, pretože ste ešte nenastavili obojstranné šifrovanie pre <{ $key }>
 cannot-send-enc-because-no-own-key = Túto správu nie je možné odoslať zašifrovanú, pretože ste ešte nenastavili obojstranné šifrovanie pre <{ $key }>
+compose-menu-attach-key =
+    .label = Priložiť môj verejný kľúč
+    .accesskey = k
+compose-menu-encrypt-subject =
+    .label = Šifrovanie predmetu
+    .accesskey = m
 # Strings used in decryption.jsm
 do-import-multiple =
     Importovať nasledujúce kľúče?

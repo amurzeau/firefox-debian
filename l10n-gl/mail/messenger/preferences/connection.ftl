@@ -21,6 +21,8 @@ connection-dialog-window =
             [macos] width: 44em !important
            *[other] width: 49em !important
         }
+connection-disable-extension =
+    .label = Desactivar a extensión
 connection-proxy-legend = Configurar servidores mandatarios para acceder a Internet
 proxy-type-no =
     .label = Sen servidor mandatario

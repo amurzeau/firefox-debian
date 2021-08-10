@@ -11,15 +11,24 @@
 ## in the documentation section in about:policies.
 
 policy-AppAutoUpdate = Включва или изключва автоматичното обновяване на приложението.
+
 policy-BlockAboutConfig = Забранява достъпа до страницата „about:config“.
+
 policy-BlockAboutProfiles = Забранява достъпа до страницата „about:profiles“.
+
 policy-BlockAboutSupport = Забранява достъпа до страницата „about:support“.
+
 policy-DisableFirefoxStudies = Забранява на { -brand-short-name } да извършва изследвания.
+
 policy-DisablePasswordReveal = В запазените регистрации паролите не могат да бъдат показвани.
+
 policy-DisablePrivateBrowsing = Изключва поверителното разглеждане.
+
 policy-DisableTelemetry = Изключва телеметрията.
+
 policy-DNSOverHTTPS = Настройки на DNS през HTTPS.
-policy-InstallAddonsPermission = Разрешава на определени уебсайтове да инсталират добавки.
+
+policy-InstallAddonsPermission = Разрешава определени страници да инсталират добавки.
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
 
@@ -27,3 +36,6 @@ policy-InstallAddonsPermission = Разрешава на определени у
 ##
 
 policy-PictureInPicture = Включване/изключване картина в картината
+
+policy-Proxy = Настройки на мрежов посредник.
+

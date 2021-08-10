@@ -42,7 +42,9 @@ perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 
 
 # The size of the memory buffer used to store things in the profiler.
 perftools-range-entries-label = Buffergrutte:
+
 perftools-custom-threads-label = Oanpaste threads op namme tafoegje:
+
 perftools-devtools-interval-label = Ynterfal:
 perftools-devtools-threads-label = Threads:
 perftools-devtools-settings-label = Ynstellingen
@@ -98,9 +100,13 @@ perftools-thread-dns-resolver =
 perftools-thread-js-helper =
     .title = Eftergrûnwurk fan de JS-engine, lykas off-main-threadkompilaasjes
 
+perftools-thread-task-controller =
+    .title = TaskController-threadpoolthreads
+
 ##
 
 perftools-record-all-registered-threads = Boppesteande seleksje pasearje en alle registrearre threads opnimme
+
 perftools-tools-threads-input-label =
     .title = Dizze threadnammen binne in kommaskieden list, dy't brûkt wurdt om it profilearjen fan de threads yn de profiler mooglik te meitsjen. De namme hoecht mar in part oerien te kommen mei de threadnamme om opnommen te wurden. Gefoelich foar wytromte.
 
@@ -108,9 +114,10 @@ perftools-tools-threads-input-label =
 ## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
 ## preferences are true.
 
--profiler-brand-name = Firefox Profiler
 perftools-onboarding-message = <b>Nij</b>: { -profiler-brand-name } is no yntegrearre yn de Untwikkelershelpmiddelen. <a>Mear ynfo</a> oer dit krêftige nije helpmiddel.
+
 # `options-context-advanced-settings` is defined in toolbox-options.ftl
 perftools-onboarding-reenable-old-panel = (Jo kinne tydlik it oarspronklike paniel Prestaasjes benaderje fia <a>{ options-context-advanced-settings }</a>)
+
 perftools-onboarding-close-button =
     .aria-label = It wolkomstberjocht slute

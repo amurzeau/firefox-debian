@@ -10,14 +10,19 @@ reauth-label = Ales asenqed n timagit n unermas-inek/inem
 auth-cancel = Sefsex
 auth-cancelAccessKey = C
 
+auth-cancel-access-key = C
+
 auth-error = Tella-d tuccḍa lawan n usenqed n tmagit n unermas-ik/im.
 auth-success = Asenqed n tmagit n unermas-ik/im yedda akken iwata.
 auth-successThem = Anermas-ik/im isenqed akken ilaq timagit-ik/im. Tzemreḍ ula d kečč(kemm) ad tesneqdeḍ timagit-nsen s tikci n usteqsi-inek-inem).
+auth-success-them = Anermas-ik/im isenqed akken ilaq timagit-ik/im. Tzemreḍ ula d kečč(kemm) ad tesneqdeḍ timagit-nsen s tikci n usteqsi-inek-inem).
 auth-fail = D awezɣi ad nsenqed timagit n unermas-inek/inem.
 auth-waiting = Aṛaǧu sya ara isali unermas asenqed…
 
 finger-verify = Senqed
 finger-verify-accessKey = V
+
+finger-verify-access-key = V
 
 # Do not translate 'OTR' (name of an encryption protocol)
 buddycontextmenu-label = Rnu adsil umḍin OTR
@@ -36,6 +41,10 @@ alert-gone_insecure = Adiwenni awgelhan d { $name } yekfa.
 
 # Variables:
 #   $name (String) - the screen name of a chat contact person
+alert-gone-insecure = Adiwenni awgelhan d { $name } yekfa.
+
+# Variables:
+#   $name (String) - the screen name of a chat contact person
 finger-unseen = Timagit n { $name } mazal ur tettwasenqed ara. Asmuzget aralɣawi ur yezmir ara ad d-yili, maca s cwiṭ n lǧehd yella win ara as-yeslen. Sewḥel yal taεessast s usenqed n unermas-a.
 
 # Variables:
@@ -43,6 +52,8 @@ finger-unseen = Timagit n { $name } mazal ur tettwasenqed ara. Asmuzget aralɣaw
 finger-seen = { $name } inermes-ik-ikem)-id seg uselkim ur nettwassen ara. Asmuzget aralɣawi ur yezmir ara ad d-yili, maca s cwiṭ n lǧehd yella win ara as-yeslen. Sewḥel yal taεessast s usenqed n unermas-a.
 
 state-not_private = Adiwenni amiran mačči d uslig.
+
+state-not-private = Adiwenni amiran mačči d uslig.
 
 # Variables:
 #   $name (String) - the screen name of a chat contact person
@@ -57,6 +68,8 @@ state-private = Timagit n { $name } tettwasenqed. Adiwenni amiran d awgelhen, d 
 state-finished = { $name } yeḥbes adiwenni awgelhen yid-k/m; ilaq ad txedmeḍ am netta.
 
 state-not_private-label = Araɣelsan
+
+state-not-private-label = Araɣelsan
 state-unverified-label = Ur yettwasenqed ara
 state-private-label = Uslig
 state-finished-label = Yekfa
@@ -77,6 +90,7 @@ verify-title = Senqed timagit n unermas-inek/inem
 error-title = Tuccḍa
 success-title = Awgelhen seg yixef ɣer wayeḍ
 successThem-title = Senqed timagit n unermas-inek/inem
+success-them-title = Senqed timagit n unermas-inek·inem
 fail-title = Asenqed d awezɣi
 waiting-title = Asuter n usenqed yettwazen
 

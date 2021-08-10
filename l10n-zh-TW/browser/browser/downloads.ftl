@@ -34,7 +34,7 @@ downloads-cmd-cancel-panel =
 downloads-cmd-show-menuitem =
     .label = 開啟所在資料夾
     .accesskey = f
-  
+
 # This message is only displayed on macOS devices
 downloads-cmd-show-menuitem-mac =
     .label = 在 Finder 中顯示
@@ -129,6 +129,22 @@ downloads-show-more-information =
 # open the file using an app available in the system.
 downloads-open-file =
     .value = 開啟檔案
+
+## Displayed when the user clicked on a download in process. Indicates that the
+## downloading file will be opened after certain amount of time using an app
+## available in the system.
+## Variables:
+##   $hours (number) - Amount of hours left till the file opens.
+##   $seconds (number) - Amount of seconds left till the file opens.
+##   $minutes (number) - Amount of minutes till the file opens.
+
+downloading-file-opens-in-hours-and-minutes = 將於 { $hours } 時 { $minutes } 分後開啟…
+downloading-file-opens-in-minutes = 將於 { $minutes } 分後開啟…
+downloading-file-opens-in-minutes-and-seconds = 將於 { $minutes } 分 { $seconds } 秒後開啟…
+downloading-file-opens-in-seconds = 將於 { $seconds } 秒後開啟…
+downloading-file-opens-in-some-time = 將於下載完成時開啟…
+
+##
 
 # Displayed when hovering a download which is able to be retried by users,
 # indicates that it's possible to download this file again.

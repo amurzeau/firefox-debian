@@ -9,6 +9,8 @@ about-private-browsing-info-title = Você está em uma janela privativa
 about-private-browsing-info-myths = Mitos comuns sobre a navegação privativa
 about-private-browsing =
     .title = Pesquisar na web
+about-private-browsing-search-btn =
+    .title = Pesquisar na internet
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

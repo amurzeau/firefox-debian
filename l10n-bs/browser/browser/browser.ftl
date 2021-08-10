@@ -19,11 +19,12 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Privatno surfanje)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Privatno surfanje)
+
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -38,6 +39,7 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Privatno surfanje)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Privatno surfanje)
+
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -85,6 +87,8 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Pohrani podatke u trajno spremište
 urlbar-addons-notification-anchor =
     .tooltiptext = Otvori panel s porukama instalacije add-ona
+urlbar-tip-help-icon =
+    .title = Pomoć
 urlbar-search-tips-confirm = OK, razumijem
 # Read out before Urlbar Tip text content so screenreader users know the
 # subsequent text is a tip offered by the browser. It should end in a colon or
@@ -123,10 +127,12 @@ urlbar-popup-blocked =
     .tooltiptext = Imate blokirane pop-up prozore za ovu web stranicu.
 urlbar-canvas-blocked =
     .tooltiptext = Blokirali ste ekstrakciju canvas podataka za ovu web stranicu.
+
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Uredi ovu zabilješku ({ $shortcut })
+
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -136,39 +142,11 @@ urlbar-star-add-bookmark =
 
 page-action-add-to-urlbar =
     .label = Dodaj u adresnu traku
+
 page-action-manage-extension =
     .label = Upravljanje ekstenzijom…
 page-action-remove-from-urlbar =
     .label = Ukloni iz adresne trake
-
-## Page Action menu
-
-page-action-copy-url-panel =
-    .label = Kopiraj link
-page-action-copy-url-urlbar =
-    .tooltiptext = Kopiraj link
-page-action-email-link-panel =
-    .label = Pošalji link emailom…
-page-action-email-link-urlbar =
-    .tooltiptext = Pošalji link emailom…
-page-action-share-url-panel =
-    .label = Podijeli
-page-action-share-url-urlbar =
-    .tooltiptext = Podijeli
-page-action-send-tab-not-ready =
-    .label = Sinhronizujem uređaje…
-# "Pin" is being used as a metaphor for expressing the fact that these tabs
-# are "pinned" to the left edge of the tabstrip. Really we just want the
-# string to express the idea that this is a lightweight and reversible
-# action that keeps your tab where you can reach it easily.
-page-action-pin-tab-panel =
-    .label = Zakači tab
-page-action-pin-tab-urlbar =
-    .tooltiptext = Zakači tab
-page-action-unpin-tab-panel =
-    .label = Otkači tab
-page-action-unpin-tab-urlbar =
-    .tooltiptext = Otkači tab
 
 ## Auto-hide Context Menu
 
@@ -185,20 +163,24 @@ full-screen-exit =
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Promijeni postavke pretraživača
+
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Promijeni postavke za pretragu
+
 search-one-offs-context-open-new-tab =
     .label = Traži u novom tabu
     .accesskey = t
 search-one-offs-context-set-as-default =
     .label = Postavi kao glavni pretraživač
     .accesskey = p
+
 # Search engine one-off buttons with an @alias shortcut/keyword.
 # Variables:
 #  $engineName (String): The name of the engine.
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+
 # When more than 5 engines are offered by a web page, they are grouped in a
 # submenu using this as its label.
 search-one-offs-add-engine-menu =
@@ -223,8 +205,10 @@ search-one-offs-history =
 bookmark-panel-show-editor-checkbox =
     .label = Prikaži editor prilikom spašavanja
     .accesskey = S
+
 bookmark-panel-done-button =
     .label = Gotovo
+
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -250,6 +234,7 @@ identity-passive-loaded = Dijelovi ove stranice nisu sigurni (poput slika).
 identity-active-loaded = Onemogućili ste zaštitu na ovoj stranici.
 identity-weak-encryption = Ova stranica koristi slabu enkripciju.
 identity-insecure-login-forms = Prijave unešene na ovoj stranici mogle bi biti kompromitovane.
+
 identity-permissions-reload-hint = Možda ćete morati ponovo učitati stranicu radi primjene izmjena.
 identity-permissions-empty = Ovoj stranici niste dodijelili nikakve posebne dozvole.
 identity-remove-cert-exception =
@@ -302,6 +287,7 @@ popup-select-camera =
 popup-select-microphone =
     .value = Mikrofon za podijeliti:
     .accesskey = M
+
 popup-all-windows-shared = Svi vidljivi prozori na vašem ekranu će biti podijeljeni.
 
 ## WebRTC window or screen share tab switch warning
@@ -314,17 +300,23 @@ popup-all-windows-shared = Svi vidljivi prozori na vašem ekranu će biti podije
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Unesite termin za pretragu ili adresu
+
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Unesite termin za pretragu ili adresu
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Browser je pod udaljenom kontrolom
+
 urlbar-permissions-granted =
     .tooltiptext = Ovoj stranici ste dodijelili dodatne dozvole.
 urlbar-switch-to-tab =
     .value = Prebaci se na tab:
+
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Proširenje:
+
 urlbar-go-button =
     .tooltiptext = Idi na adresu upisanu u adresnoj traci
 urlbar-page-action-button =
@@ -353,9 +345,12 @@ urlbar-result-action-visit = Posjeti
 #  $domain (String): the domain that is full screen, e.g. "mozilla.org"
 fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> je sad preko cijelog ekrana
 fullscreen-warning-no-domain = Ovaj dokument je prikazan preko cijelog ekrana
+
+
 fullscreen-exit-button = Izađite iz cijelog ekrana (Esc)
 # "esc" is lowercase on mac keyboards, but uppercase elsewhere.
 fullscreen-exit-mac-button = Izađite iz cijelog ekrana (esc)
+
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
 # Variables
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
@@ -367,8 +362,6 @@ pointerlock-warning-no-domain = Ovaj dokument ima kontrolu nad vašim pointerom.
 
 ## Bookmarks panels, menus and toolbar
 
-bookmarks-show-all-bookmarks =
-    .label = Prikaži sve zabilješke
 bookmarks-toolbar-chevron =
     .tooltiptext = Prikaži više zabilješki
 bookmarks-sidebar-content =
@@ -403,6 +396,7 @@ bookmarks-tools =
     .label = Alati za zabilježavanje
 bookmarks-bookmark-edit-panel =
     .label = Uredi ovu Zabilješku
+
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -417,6 +411,10 @@ bookmarks-toolbar-placeholder =
 bookmarks-toolbar-placeholder-button =
     .label = Stavke trake sa zabilješkama
 
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Zabilježi trenutni tab
+
 ## Library Panel items
 
 library-bookmarks-menu =
@@ -425,8 +423,26 @@ library-bookmarks-menu =
 ## Pocket toolbar button
 
 
+## Repair text encoding toolbar button
+
+
 ## Customize Toolbar Buttons
 
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Add-oni i teme
+    .tooltiptext = Upravljanje vašim add-onima i temama ({ $shortcut })
+
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Postavke
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Otvori postavke ({ $shortcut })
+           *[other] Otvori postavke
+        }
 
 ## More items
 

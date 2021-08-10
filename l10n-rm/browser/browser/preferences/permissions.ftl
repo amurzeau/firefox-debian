@@ -5,59 +5,89 @@
 permissions-window =
     .title = Excepziuns
     .style = width: 45em
+
 permissions-close-key =
     .key = w
+
 permissions-address = Adressa da la website
     .accesskey = d
+
 permissions-block =
     .label = Bloccar
     .accesskey = B
+
 permissions-session =
     .label = Permetter per questa sesida
     .accesskey = P
+
 permissions-allow =
     .label = Permetter
     .accesskey = e
+
+permissions-button-off =
+    .label = Deactivar
+    .accesskey = D
+
+permissions-button-off-temporarily =
+    .label = Deactivar temporarmain
+    .accesskey = t
+
 permissions-site-name =
     .label = Website
+
 permissions-status =
     .label = Status
+
 permissions-remove =
     .label = Allontanar la website
     .accesskey = A
+
 permissions-remove-all =
     .label = Allontanar tut las websites
     .accesskey = t
+
 permissions-button-cancel =
     .label = Interrumper
     .accesskey = r
+
 permissions-button-ok =
     .label = Memorisar las midadas
     .accesskey = M
+
 permission-dialog =
     .buttonlabelaccept = Memorisar las midadas
     .buttonaccesskeyaccept = M
+
 permissions-autoplay-menu = Standard per tuttas websites:
+
 permissions-searchbox =
     .placeholder = Tschertgar ina website
+
 permissions-capabilities-autoplay-allow =
     .label = Permetter audio e video
 permissions-capabilities-autoplay-block =
     .label = Bloccar l'audio
 permissions-capabilities-autoplay-blockall =
     .label = Bloccar audio e video
+
 permissions-capabilities-allow =
     .label = Permetter
 permissions-capabilities-block =
     .label = Bloccar
 permissions-capabilities-prompt =
     .label = Adina dumandar
+
 permissions-capabilities-listitem-allow =
     .value = Permetter
 permissions-capabilities-listitem-block =
     .value = Bloccar
 permissions-capabilities-listitem-allow-session =
     .value = Permetter per questa sesida
+
+permissions-capabilities-listitem-off =
+    .value = Deactivà
+permissions-capabilities-listitem-off-temporarily =
+    .value = Deactivà temporarmain
 
 ## Invalid Hostname Dialog
 
@@ -77,6 +107,13 @@ permissions-exceptions-cookie-window =
     .title = Excepziuns - Cookies e datas da websites
     .style = { permissions-window.style }
 permissions-exceptions-cookie-desc = Ti pos definir per mintga website schebain ella dastga adina u mai utilisar cookies e datas da websites. Tippa l'adressa exacta da la website e clicca lura sin «Bloccar», «Permetter per questa sesida» u sin «Permetter».
+
+## Exceptions - HTTPS-Only Mode
+
+permissions-exceptions-https-only-window =
+    .title = Excepziuns - Modus mo HTTPS
+    .style = { permissions-window.style }
+permissions-exceptions-https-only-desc = Ti pos deactivar il modus Mo-HTTPS per websites specificas. { -brand-short-name } na vegn lura betg a dumandar da midar la connexiun al HTTPS segirà per questas websites. Las excepziuns na valan betg en fanestras privatas.
 
 ## Exceptions - Pop-ups
 

@@ -5,59 +5,89 @@
 permissions-window =
     .title = Excepții
     .style = width: 50em
+
 permissions-close-key =
     .key = w
+
 permissions-address = Adresa site-ului web
     .accesskey = d
+
 permissions-block =
     .label = Blochează
     .accesskey = B
+
 permissions-session =
     .label = Permite pentru sesiune
     .accesskey = s
+
 permissions-allow =
     .label = Permite
     .accesskey = A
+
+permissions-button-off =
+    .label = Oprește
+    .accesskey = O
+
+permissions-button-off-temporarily =
+    .label = Oprește temporar
+    .accesskey = T
+
 permissions-site-name =
     .label = Site web
+
 permissions-status =
     .label = Stare
+
 permissions-remove =
     .label = Elimină site-ul web
     .accesskey = R
+
 permissions-remove-all =
     .label = Elimină toate site-urile web
     .accesskey = E
+
 permissions-button-cancel =
     .label = Renunță
     .accesskey = C
+
 permissions-button-ok =
     .label = Salvează schimbările
     .accesskey = S
+
 permission-dialog =
     .buttonlabelaccept = Salvează schimbările
     .buttonaccesskeyaccept = S
+
 permissions-autoplay-menu = Implicit pentru toate site-urile web:
+
 permissions-searchbox =
     .placeholder = Caută site web
+
 permissions-capabilities-autoplay-allow =
     .label = Permite audio și video
 permissions-capabilities-autoplay-block =
     .label = Blochează audio
 permissions-capabilities-autoplay-blockall =
     .label = Blochează audio și video
+
 permissions-capabilities-allow =
     .label = Permite
 permissions-capabilities-block =
     .label = Blochează
 permissions-capabilities-prompt =
     .label = Întreabă întotdeauna
+
 permissions-capabilities-listitem-allow =
     .value = Permite
 permissions-capabilities-listitem-block =
     .value = Blochează
 permissions-capabilities-listitem-allow-session =
     .value = Permite pentru sesiune
+
+permissions-capabilities-listitem-off =
+    .value = Dezactivat
+permissions-capabilities-listitem-off-temporarily =
+    .value = Dezactivat temporar
 
 ## Invalid Hostname Dialog
 
@@ -77,6 +107,13 @@ permissions-exceptions-cookie-window =
     .title = Excepții - Cookie-uri și date ale site-urilor
     .style = { permissions-window.style }
 permissions-exceptions-cookie-desc = Poți specifica ce site-uri web au întotdeauna sau niciodată permisiunea de a folosi cookie-uri și date ale site-urilor.  Tastează adresa exactă a site-ului pe care vrei să-l gestionezi și apoi dă clic pe Blochează, Permite pentru sesiune sau Permite.
+
+## Exceptions - HTTPS-Only Mode
+
+permissions-exceptions-https-only-window =
+    .title = Excepții - Mod doar HTTPS
+    .style = { permissions-window.style }
+permissions-exceptions-https-only-desc = Poți opri modul doar HTTPS pentru anumite site-uri web. { -brand-short-name } nu va încerca să actualizeze conexiunea la HTTPS securizat pentru aceste site-uri. Excepțiile nu se aplică ferestrelor private.
 
 ## Exceptions - Pop-ups
 

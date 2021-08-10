@@ -9,6 +9,8 @@ about-private-browsing-info-title = Сіз жекелік шолу режимі�
 about-private-browsing-info-myths = Жекелік шолу туралы кең тараған аңыздар
 about-private-browsing =
     .title = Интернетте іздеу
+about-private-browsing-search-btn =
+    .title = Интернетте іздеу
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

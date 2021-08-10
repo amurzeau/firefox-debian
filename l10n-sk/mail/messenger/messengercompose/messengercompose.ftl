@@ -8,9 +8,6 @@
 #   $type (String) - the type of the addressing row
 remove-address-row-type = Odstrániť pole { $type }
 #   $type (String) - the type of the addressing row
-remove-address-row-type-label =
-    .tooltiptext = Odstrániť pole { $type }
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Odstrániť pole { $type }
 #   $type (String) - the type of the addressing row
@@ -129,8 +126,6 @@ move-attachment-last-panel-button =
 button-return-receipt =
     .label = Potvrdenka
     .tooltiptext = Požiadať o potvrdenie o prijatí tejto správy
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-consider-bcc-notification = Príjemcovia v poliach Komu a Kópia (celkom { $count }) môžu navzájom vidieť svoje adresy. Zverejneniu príjemcov sa môžete vyhnúť použitím Skrytej kópie.
 
 # Addressing Area
 
@@ -178,3 +173,13 @@ many-public-recipients-ignore =
 # Variables:
 # $identity (string) - The name of the used identity, most likely an email address.
 compose-missing-identity-warning = Unikátna identita zodpovedajúca adrese odosielateľa nebola nájdená. Správa bude odoslaná pomocou súčasnej adresy odosielateľa a nastavení pre identitu { $identity }.
+encrypted-bcc-warning = Pri odosielaní šifrovanej správy nie sú príjemcovia v skrytých kópiách úplne skrytí. Všetci príjemcovia ich môžu byť schopní identifikovať.
+encrypted-bcc-ignore-button = Rozumiem
+
+## Editing
+
+
+# Tools
+
+compose-tool-button-remove-text-styling =
+    .tooltiptext = Odstrániť štýl textu

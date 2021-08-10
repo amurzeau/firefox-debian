@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Управление запуском плагина
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Управление доступом сайта к вашей камере и/или микрофону
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Управление доступом сайта к другим динамикам
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Открыть панель автовоспроизведения
 urlbar-persistent-storage-notification-anchor =
@@ -164,55 +168,6 @@ page-action-remove-from-urlbar =
     .label = Удалить с панели адреса
 page-action-remove-extension =
     .label = Удалить расширение
-
-## Page Action menu
-
-# Variables
-# $tabCount (integer) - Number of tabs selected
-page-action-send-tabs-panel =
-    .label =
-        { $tabCount ->
-            [1] Отправить вкладку на устройство
-            [one] Отправить { $tabCount } вкладку на устройство
-            [few] Отправить { $tabCount } вкладки на устройство
-           *[many] Отправить { $tabCount } вкладок на устройство
-        }
-page-action-send-tabs-urlbar =
-    .tooltiptext =
-        { $tabCount ->
-            [1] Отправить вкладку на устройство
-            [one] Отправить { $tabCount } вкладку на устройство
-            [few] Отправить { $tabCount } вкладки на устройство
-           *[many] Отправить { $tabCount } вкладок на устройство
-        }
-page-action-copy-url-panel =
-    .label = Копировать ссылку
-page-action-copy-url-urlbar =
-    .tooltiptext = Копировать ссылку
-page-action-email-link-panel =
-    .label = Отправить ссылку по почте…
-page-action-email-link-urlbar =
-    .tooltiptext = Отправить ссылку по почте…
-page-action-share-url-panel =
-    .label = Поделиться
-page-action-share-url-urlbar =
-    .tooltiptext = Поделиться
-page-action-share-more-panel =
-    .label = Ещё…
-page-action-send-tab-not-ready =
-    .label = Синхронизация устройств…
-# "Pin" is being used as a metaphor for expressing the fact that these tabs
-# are "pinned" to the left edge of the tabstrip. Really we just want the
-# string to express the idea that this is a lightweight and reversible
-# action that keeps your tab where you can reach it easily.
-page-action-pin-tab-panel =
-    .label = Закрепить вкладку
-page-action-pin-tab-urlbar =
-    .tooltiptext = Закрепить вкладку
-page-action-unpin-tab-panel =
-    .label = Открепить вкладку
-page-action-unpin-tab-urlbar =
-    .tooltiptext = Открепить вкладку
 
 ## Auto-hide Context Menu
 
@@ -488,6 +443,8 @@ urlbar-default-placeholder =
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Введите поисковый запрос или адрес
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Браузер находится под удалённым управлением
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -520,8 +477,6 @@ urlbar-placeholder-search-mode-other-tabs =
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
     .placeholder = Найдите в { $name } или введите адрес
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Браузер находится под удалённым управлением
 # Variables
 #  $component (String): the name of the component which forces remote control.
 #    Example: "DevTools", "Marionette", "RemoteAgent".
@@ -615,6 +570,10 @@ pointerlock-warning-no-domain = Этот документ контролируе
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Часть этой страницы упала.</strong> Чтобы сообщить { -brand-product-name } об этой проблеме и ускорить её исправление, пожалуйста, отправьте сообщение.
+# The string for crashed-subframe-title.title should match crashed-subframe-message,
+# but without any markup.
+crashed-subframe-title =
+    .title = Часть этой страницы упала. Чтобы сообщить { -brand-product-name } об этой проблеме и ускорить её исправление, пожалуйста, отправьте сообщение.
 crashed-subframe-learnmore-link =
     .value = Узнать больше
 crashed-subframe-submit =
@@ -750,3 +709,9 @@ addon-removal-abuse-report-checkbox = Пожаловаться на это ра�
 remote-tabs-manage-account =
     .label = Управление аккаунтом
 remote-tabs-sync-now = Синхронизировать
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Ещё…

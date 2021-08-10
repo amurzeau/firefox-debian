@@ -54,4 +54,7 @@ site-data-removing-dialog =
     .buttonlabelaccept = Allontanar
 site-data-removing-header = Stizzar cookies e datas da websites
 site-data-removing-desc = Cun stizzar cookies e datas da websites vegns ti eventualmain deconnectà da websites. Vuls ti propi far questas midadas?
+# Variables:
+#   $baseDomain (String) - The single domain for which data is being removed
+site-data-removing-single-desc = L'eliminaziun da cookies e datas da websites po avair per consequenza che vegns deconnectà da websites. Vuls ti propi stizzar ils cookies e las datas da website per <strong>{ $baseDomain }</strong>?
 site-data-removing-table = Ils cookies e las datas da las suandantas websites vegnan stizzadas

@@ -54,4 +54,7 @@ site-data-removing-dialog =
     .buttonlabelaccept = 移除
 site-data-removing-header = 移除 Cookie 與網站資料
 site-data-removing-desc = 移除 Cookie 與網站資料後，可能會將您從大部分網站登出。確定要移除嗎？
+# Variables:
+#   $baseDomain (String) - The single domain for which data is being removed
+site-data-removing-single-desc = 移除 Cookie 與網站資料後，可能會將您從大部分網站登出。確定要移除來自 <strong>{ $baseDomain }</strong> 的 Cookie 與網站資料嗎？
 site-data-removing-table = 將移除下列網站的 Cookie 與網站資料

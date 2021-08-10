@@ -10,8 +10,6 @@ preferences-title =
             [windows] Mundësi
            *[other] Parapëlqime
         }
-preferences-tab-title =
-    .title = Parapëlqime
 preferences-doc-title = Parapëlqime
 category-list =
     .aria-label = Kategori
@@ -263,6 +261,9 @@ diskspace-legend = Hapësirë Disku
 offline-compact-folder =
     .label = Ngjeshi krejt dosjet kur kjo sjell kursim vendi
     .accesskey = N
+offline-compact-folder-automatically =
+    .label = Pyet çdo herë para ngjeshjes
+    .accesskey = P
 compact-folder-size =
     .value = MB gjithsej
 

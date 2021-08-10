@@ -64,8 +64,8 @@ category-sync3 =
 pane-experimental-title = { -brand-short-name } 실험
 category-experimental =
     .tooltiptext = { -brand-short-name } 실험
-pane-experimental-subtitle = 주의해서 진행하세요
-pane-experimental-search-results-header = { -brand-short-name } 실험: 주의해서 진행하세요
+pane-experimental-subtitle = 주의해서 사용하세요
+pane-experimental-search-results-header = { -brand-short-name } 실험: 주의해서 사용하세요
 pane-experimental-description2 = 고급 구성 설정을 변경하면 { -brand-short-name }의 성능 또는 보안에 영향을 줄 수 있습니다.
 pane-experimental-reset =
     .label = 기본값으로 복원
@@ -242,6 +242,7 @@ confirm-browser-language-change-button = 적용하고 다시 시작
 translate-web-pages =
     .label = 웹 콘텐츠 번역하기
     .accesskey = T
+fx-translate-web-pages = { -translations-brand-name }
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = 번역:  <img data-l10n-name="logo"/>
@@ -841,6 +842,10 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = 현재 FIPS 모드입니다. FIPS는 기본 비밀번호가 설정되어야 합니다.
 forms-master-pw-fips-desc = 비밀번호 변경 실패
+forms-windows-sso =
+    .label = Microsoft, 회사 및 학교 계정에 Windows Single Sign-On을 허용
+forms-windows-sso-learn-more-link = 더 알아보기
+forms-windows-sso-desc = 기기 설정에서 계정 관리
 
 ## OS Authentication dialog
 
@@ -1093,6 +1098,12 @@ permissions-block-popups =
 permissions-block-popups-exceptions =
     .label = 예외 목록…
     .accesskey = E
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = 예외…
+    .accesskey = E
+    .searchkeywords = 팝업
 permissions-addon-install-warning =
     .label = 웹 사이트가 부가 기능을 설치하려 할 때 경고
     .accesskey = W

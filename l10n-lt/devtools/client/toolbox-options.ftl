@@ -70,6 +70,11 @@ options-screenshot-clipboard-label = Įrašyti į iškarpinę
 options-screenshot-clipboard-tooltip =
     .title = Įrašo ekrano nuotrauką tiesiai į kompiuterio iškarpinę
 
+# Label for the checkbox that toggles screenshot to clipboard feature
+options-screenshot-clipboard-only-label = Įrašyti nuotrauką tik į iškarpinę
+options-screenshot-clipboard-tooltip2 =
+    .title = Įrašo ekrano nuotrauką tiesiai į kompiuterio iškarpinę
+
 # Label for the checkbox that toggles the camera shutter audio for screenshot tool
 options-screenshot-audio-label = Sugroti fotoaparato užrakto garsą
 options-screenshot-audio-tooltip =
@@ -95,7 +100,7 @@ options-sourceeditor-keybinding-default-label = Numatytieji
 
 ## Advanced section
 
-# The heading
+# The heading (this item is also used in perftools.ftl)
 options-context-advanced-settings = Sudėtingesnės nuostatos
 
 # The label for the checkbox that toggles the HTTP cache on or off
@@ -115,7 +120,6 @@ options-enable-chrome-tooltip =
 
 # The label for checkbox that toggles remote debugging, i.e. the devtools.debugger.remote-enabled preference
 options-enable-remote-label = Įgalinti nuotolinį derinimą
-
 options-enable-remote-tooltip2 =
     .title = Įjungus šią parinktį, bus galima per nuotolį derinti šią naršyklę
 

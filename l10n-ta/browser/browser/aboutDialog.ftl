@@ -7,10 +7,6 @@ aboutDialog-title =
 
 releaseNotes-link = புதியவைகள்
 
-update-checkForUpdatesButton =
-    .label = புதியவை உள்ளதா எனப்பார்
-    .accesskey = C
-
 update-updateButton =
     .label = { -brand-shorter-name } புதுப்பிக்க மீள்துவக்கு
     .accesskey = R

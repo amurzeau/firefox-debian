@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Hantera plugins som används
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Hantera delning av din kamera och/eller mikrofon med webbplatsen
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Hantera delning av andra högtalare med webbplatsen
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Öppna panelen automatisk uppspelning
 urlbar-persistent-storage-notification-anchor =
@@ -164,51 +168,6 @@ page-action-remove-from-urlbar =
     .label = Ta bort från adressfältet
 page-action-remove-extension =
     .label = Ta bort tillägg
-
-## Page Action menu
-
-# Variables
-# $tabCount (integer) - Number of tabs selected
-page-action-send-tabs-panel =
-    .label =
-        { $tabCount ->
-            [one] Skicka flik till enhet
-           *[other] Skicka { $tabCount } flikar till enhet
-        }
-page-action-send-tabs-urlbar =
-    .tooltiptext =
-        { $tabCount ->
-            [one] Skicka flik till enhet
-           *[other] Skicka { $tabCount } flikar till enhet
-        }
-page-action-copy-url-panel =
-    .label = Kopiera länk
-page-action-copy-url-urlbar =
-    .tooltiptext = Kopiera länk
-page-action-email-link-panel =
-    .label = E-posta länk…
-page-action-email-link-urlbar =
-    .tooltiptext = E-posta länk…
-page-action-share-url-panel =
-    .label = Dela
-page-action-share-url-urlbar =
-    .tooltiptext = Dela
-page-action-share-more-panel =
-    .label = Mer…
-page-action-send-tab-not-ready =
-    .label = Synkar enheter…
-# "Pin" is being used as a metaphor for expressing the fact that these tabs
-# are "pinned" to the left edge of the tabstrip. Really we just want the
-# string to express the idea that this is a lightweight and reversible
-# action that keeps your tab where you can reach it easily.
-page-action-pin-tab-panel =
-    .label = Fäst flik
-page-action-pin-tab-urlbar =
-    .tooltiptext = Fäst flik
-page-action-unpin-tab-panel =
-    .label = Lösgör flik
-page-action-unpin-tab-urlbar =
-    .tooltiptext = Lösgör flik
 
 ## Auto-hide Context Menu
 
@@ -477,6 +436,8 @@ urlbar-default-placeholder =
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Sök eller ange adress
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Webbläsaren är fjärrstyrd
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -509,8 +470,6 @@ urlbar-placeholder-search-mode-other-tabs =
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
     .placeholder = Sök med { $name } eller ange adress
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Webbläsaren är fjärrstyrd
 # Variables
 #  $component (String): the name of the component which forces remote control.
 #    Example: "DevTools", "Marionette", "RemoteAgent".
@@ -604,6 +563,10 @@ pointerlock-warning-no-domain = Detta dokument har kontroll över pekaren. Tryck
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>En del av den här sidan kraschade.</strong> Skicka en rapport om du vill meddela { -brand-product-name } om problemet och få det åtgärdat snabbare.
+# The string for crashed-subframe-title.title should match crashed-subframe-message,
+# but without any markup.
+crashed-subframe-title =
+    .title = En del av denna sida kraschade. Skicka in en rapport om du vill informera { -brand-product-name } om problemet och åtgärda det snabbare.
 crashed-subframe-learnmore-link =
     .value = Läs mer
 crashed-subframe-submit =
@@ -739,3 +702,9 @@ addon-removal-abuse-report-checkbox = Rapportera detta tillägg till { -vendor-s
 remote-tabs-manage-account =
     .label = Hantera konto
 remote-tabs-sync-now = Synkronisera nu
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Mer…

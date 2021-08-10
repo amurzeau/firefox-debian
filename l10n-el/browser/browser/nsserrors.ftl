@@ -12,16 +12,20 @@
 # $hostname (String) - Hostname of the website with SSL error.
 # $errorMessage (String) - Error message corresponding to the type of error we are experiencing.
 ssl-connection-error = Προέκυψε σφάλμα κατά την σύνδεση στο { $hostname }. { $errorMessage }
+
 # Variables:
 # $error (string) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
 cert-error-code-prefix = Κωδικός σφάλματος: { $error }
+
 psmerr-ssl-disabled = Αδυναμία ασφαλούς σύνδεσης λόγω απενεργοποίησης του πρωτοκόλλου SSL.
 psmerr-ssl2-disabled = Αδυναμία ασφαλούς σύνδεσης. επειδή η σελίδα χρησιμοποιεί μια παλαιότερη, μη ασφαλή έκδοση του πρωτοκόλλου SSL.
+
 # This is a multi-line message.
 psmerr-hostreusedissuerandserial =
     Έχετε λάβει ένα μη έγκυρο πιστοποιητικό. Παρακαλώ επικοινωνήστε με το διαχειριστή του συστήματος ή με τον αποστολέα και δώστε του αυτές τις πληροφορίες:
     
     Το πιστοποιητικό σας περιέχει τον ίδιο σειριακό αριθμό με ένα άλλο πιστοποιητικό που εκδόθηκε από την αρχή πιστοποίησης.  Παρακαλώ αποκτήστε ένα νέο πιστοποιητικό που να περιέχει έναν μοναδικό σειριακό αριθμό.
+
 ssl-error-export-only-server = Αδύνατη η επικοινωνία με ασφάλεια. Ο κόμβος δεν υποστηρίζει κρυπτογράφηση υψηλού βαθμού.
 ssl-error-us-only-server = Αδύνατη η επικοινωνία με ασφάλεια. Ο κόμβος απαιτεί κρυπτογράφηση υψηλού βαθμού που δεν υποστηρίζεται.
 ssl-error-no-cypher-overlap = Δεν ήταν δυνατή η ασφαλής επικοινωνία με τον κόμβο: κανένας κοινός αλγόριθμος κρυπτογράφησης.
@@ -264,10 +268,10 @@ sec-error-retry-old-password = Ο παλιός κωδικός πρόσβασης
 sec-error-bad-nickname = Το ψευδώνυμο του πιστοποιητικού είναι ήδη σε χρήση.
 sec-error-not-fortezza-issuer = Ο κόμβος στην αλυσίδα FORTEZZA έχει μη-FORTEZZA πιστοποιητικό.
 sec-error-cannot-move-sensitive-key = Ένα ευαίσθητο κλειδί δεν μπορεί να μετακινηθεί στην υποδοχή όπου χρειάζεται.
-sec-error-js-invalid-module-name = Άκυρο όνομα μονάδας.
-sec-error-js-invalid-dll = Άκυρη διαδρομή/όνομα αρχείου μονάδας
+sec-error-js-invalid-module-name = Μη έγκυρο όνομα μονάδας.
+sec-error-js-invalid-dll = Μη έγκυρη διαδρομή/όνομα αρχείου μονάδας
 sec-error-js-add-mod-failure = Δεν ήταν δυνατή η προσθήκη μονάδας
-sec-error-js-del-mod-failure = Δεν ήταν δυνατή η διαγραφή της μονάδας
+sec-error-js-del-mod-failure = Δεν ήταν δυνατή η διαγραφή μονάδας
 sec-error-old-krl = Το νέο KRL δεν είναι νεότερο από το τρέχον.
 sec-error-ckl-conflict = Η νέα CKL έχει διαφορετικό εκδότη από την τρέχουσα CKL. Διαγράψτε την τρέχουσα CKL.
 sec-error-cert-not-in-name-space = Η αρχή πιστοποίησης αυτού του πιστοποιητικού δεν επιτρέπεται να εκδώσει πιστοποιητικό με αυτό το όνομα.

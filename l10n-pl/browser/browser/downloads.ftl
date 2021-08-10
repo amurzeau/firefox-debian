@@ -17,7 +17,7 @@ downloads-panel =
 # a CSS unit. The longest labels that should fit are usually those of
 # in-progress and blocked downloads.
 downloads-panel-list =
-    .style = width: 60ch
+    .style = width: 70ch
 
 downloads-cmd-pause =
     .label = Wstrzymaj
@@ -129,6 +129,22 @@ downloads-show-more-information =
 # open the file using an app available in the system.
 downloads-open-file =
     .value = Otwórz plik
+
+## Displayed when the user clicked on a download in process. Indicates that the
+## downloading file will be opened after certain amount of time using an app
+## available in the system.
+## Variables:
+##   $hours (number) - Amount of hours left till the file opens.
+##   $seconds (number) - Amount of seconds left till the file opens.
+##   $minutes (number) - Amount of minutes till the file opens.
+
+downloading-file-opens-in-hours-and-minutes = Otwieranie za { $hours } godz. { $minutes } min…
+downloading-file-opens-in-minutes = Otwieranie za { $minutes } min…
+downloading-file-opens-in-minutes-and-seconds = Otwieranie za { $minutes } min { $seconds } s…
+downloading-file-opens-in-seconds = Otwieranie za { $seconds } s…
+downloading-file-opens-in-some-time = Otwieranie po ukończeniu…
+
+##
 
 # Displayed when hovering a download which is able to be retried by users,
 # indicates that it's possible to download this file again.

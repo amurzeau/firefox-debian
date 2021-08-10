@@ -54,4 +54,7 @@ site-data-removing-dialog =
     .buttonlabelaccept = წაშლა
 site-data-removing-header = ფუნთუშებისა და საიტის მონაცემების წაშლა
 site-data-removing-desc = ფუნთუშებისა და საიტის მონაცემების წაშლის შედეგად, შესაძლოა ვებსაიტებზე შესული ანგარიშებიდან გამოხვიდეთ. ნამდვილად გსურთ, განაგრძოთ?
+# Variables:
+#   $baseDomain (String) - The single domain for which data is being removed
+site-data-removing-single-desc = ფუნთუშებისა და საიტის მონაცემების წაშლით, გამოხვალთ შესული ანგარიშიდან. გსურთ წაშალოთ ფუნთუშები და მონაცემები საიტისთვის <strong>{ $baseDomain }</strong>?
 site-data-removing-table = მოცემული საიტების მონაცემები და ფუნთუშები წაიშლება

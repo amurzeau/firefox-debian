@@ -8,10 +8,10 @@ about-addressbook-title = Axenda de enderezos
 
 about-addressbook-toolbar-new-address-book =
     .label = Nova axenda de enderezos
-about-addressbook-toolbar-new-carddav-address-book =
-    .label = Nova axenda de enderezos CardDAV
-about-addressbook-toolbar-new-ldap-address-book =
-    .label = Nova axenda de enderezos LDAP
+about-addressbook-toolbar-add-carddav-address-book =
+    .label = Engadir unha axenda de enderezos CardDAV
+about-addressbook-toolbar-add-ldap-address-book =
+    .label = Engadir unha axenda de enderezos LDAP
 about-addressbook-toolbar-new-contact =
     .label = Novo contacto
 about-addressbook-toolbar-new-list =
@@ -24,8 +24,20 @@ about-addressbook-books-context-properties =
     .label = Propiedades
 about-addressbook-books-context-synchronize =
     .label = Sincronizar
+about-addressbook-books-context-print =
+    .label = Imprimir…
 about-addressbook-books-context-delete =
     .label = Eliminar
+about-addressbook-books-context-remove =
+    .label = Retirar
+about-addressbook-confirm-delete-book-title = Eliminar a axenda de enderezos
+# Variables:
+# $name (String) - Name of the address book to be deleted.
+about-addressbook-confirm-delete-book = Seguro que quere eliminar { $name } e todos os seus contactos?
+about-addressbook-confirm-remove-remote-book-title = Retirar a Axenda de Enderezos
+# Variables:
+# $name (String) - Name of the remote address book to be removed.
+about-addressbook-confirm-remove-remote-book = Desexa realmente retirar { $name }?
 
 ## Cards
 
@@ -51,6 +63,56 @@ about-addressbook-sort-email-ascending =
     .label = Ordenar por enderezo de correo electrónico (A > Z)
 about-addressbook-sort-email-descending =
     .label = Ordenar por enderezo de correo electrónico (Z > A)
+about-addressbook-confirm-delete-mixed-title = Eliminar os contactos e as listas
+# Variables:
+# $count (Number) - The number of contacts and lists to be deleted. Always greater than 1.
+about-addressbook-confirm-delete-mixed = Desexa realmente eliminar estes { $count } contactos e listas?
+# Variables:
+# $count (Number) - The number of lists to be deleted.
+about-addressbook-confirm-delete-lists-title =
+    { $count ->
+        [one] Eliminar a lista
+       *[other] Eliminar as listas
+    }
+# Variables:
+# $count (Number) - The number of lists to be deleted.
+# $name (String) - The name of the list to be deleted, if $count is 1.
+about-addressbook-confirm-delete-lists =
+    { $count ->
+        [one] Desexa realmente eliminar a lista { $name }?
+       *[other] Desexa realmente eliminar estas { $count } listas?
+    }
+# Variables:
+# $count (Number) - The number of contacts to be removed.
+about-addressbook-confirm-remove-contacts-title =
+    { $count ->
+        [one] Retirar o contacto
+       *[other] Retirar os contactos
+    }
+# Variables:
+# $count (Number) - The number of contacts to be removed.
+# $name (String) - The name of the contact to be removed, if $count is 1.
+# $list (String) - The name of the list that contacts will be removed from.
+about-addressbook-confirm-remove-contacts =
+    { $count ->
+        [one] Desexa realmente retirar a { $name } da lista { $list }?
+       *[other] Desexa realmente retirar estes { $count } contactos da lista { $list }?
+    }
+# Variables:
+# $count (Number) - The number of contacts to be deleted.
+about-addressbook-confirm-delete-contacts-title =
+    { $count ->
+        [one] Eliminar o contacto
+       *[other] Eliminar os contactos
+    }
+# Variables:
+# $count (Number) - The number of contacts to be deleted.
+# $name (String) - The name of the contact to be deleted, if $count is 1.
+about-addressbook-confirm-delete-contacts =
+    { $count ->
+        [one] Desexa realmente eliminar o contacto { $name }?
+       *[other] Desexa realmente eliminar estes { $count } contactos da lista { $list }?
+    }
 
 ## Details
 

@@ -11,6 +11,11 @@ newtab-settings-button =
 newtab-personalize-button-label = Pertsonalizatu
     .title = Pertsonalizatu fitxa berria
     .aria-label = Pertsonalizatu fitxa berria
+newtab-personalize-icon-label =
+    .title = Pertsonalizatu fitxa berria
+    .aria-label = Pertsonalizatu fitxa berria
+newtab-personalize-dialog-label =
+    .aria-label = Pertsonalizatu
 
 ## Search box component.
 
@@ -37,7 +42,6 @@ newtab-search-box-search-the-web-input =
     .placeholder = Bilatu webean
     .title = Bilatu webean
     .aria-label = Bilatu webean
-newtab-search-box-text = Bilatu webean
 newtab-search-box-input =
     .placeholder = Bilatu webean
     .aria-label = Bilatu webean

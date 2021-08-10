@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = Tinkinti
     .title = Tinkinti naują kortelę
     .aria-label = Tinkinti naują kortelę
+newtab-personalize-icon-label =
+    .title = Tinkinti naują kortelę
+    .aria-label = Tinkinti naują kortelę
 newtab-personalize-dialog-label =
     .aria-label = Tinkinti
 
@@ -39,6 +42,7 @@ newtab-search-box-search-the-web-input =
     .placeholder = Ieškokite saityne
     .title = Ieškokite saityne
     .aria-label = Ieškokite saityne
+newtab-search-box-text = Ieškokite saityne
 newtab-search-box-input =
     .placeholder = Ieškokite saityne
     .aria-label = Ieškokite saityne

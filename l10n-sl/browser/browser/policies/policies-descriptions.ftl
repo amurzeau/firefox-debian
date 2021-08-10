@@ -116,3 +116,4 @@ policy-SupportMenu = Dodaj poljubno povezavo za podporo v meni Pomoč.
 policy-UserMessaging = Uporabniku ne prikazuj določenih sporočil.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Prepreči obisk določenih spletnih mest. Za več podrobnosti o obliki glejte dokumentacijo.
+policy-Windows10SSO = Dovoli enotno prijavo v sistem Windows za Microsoftove, službene in šolske račune.

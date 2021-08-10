@@ -236,10 +236,12 @@ shortcuts-modifier-other = Enkorfañ Ctrl pe Alt
 shortcuts-invalid = Kenaozadur didalvoudek
 shortcuts-letter = Biziatait ul lizherenn
 shortcuts-system = N'haller ket flastrañ ur verradenn { -brand-short-name }
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Eilañ ar verradenn
 # String displayed when a keyboard shortcut is already assigned to more than one add-on
 # Variables:
 #   $shortcut (string) - Shortcut string for the add-on
-shortcuts-duplicate-warning-message = { $shortcut } a zo implijet evel berradenn e plegennoù disheñvel. An doublennoù berradennoù a c'hall kaout un emzalc'h dic'hortoz.
+shortcuts-duplicate-warning-message = { $shortcut } a zo implijet evel berradenn e plegennoù disheñvel. An doublennoù berradennoù a c’hall kaout un emzalc’h dic’hortoz.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -377,6 +379,7 @@ available-updates-heading = Hizivadurioù hegerz
 recent-updates-heading = Hizivadurioù nevez
 release-notes-loading = O kargañ…
 release-notes-error = Digarezit, degouezhet ez eus bet ur fazi en ur bellgargañ an notennoù handelv.
+addon-permissions-learnmore = Gouzout hiroc’h a-zivout an aotreoù
 recommended-extensions-heading = Astennoù erbedet
 recommended-themes-heading = Temoù erbedet
 

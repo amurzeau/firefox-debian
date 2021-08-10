@@ -9,6 +9,9 @@ permissions-reminder-window =
 window-close-key =
     .key = w
 
+permission-preferences-close-window =
+    .key = w
+
 website-address-label =
     .value = Адрес на уеб сайта:
     .accesskey = д

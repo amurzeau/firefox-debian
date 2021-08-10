@@ -16,6 +16,7 @@ menu-view-charset =
 menu-tools-preferences =
     .label = Preferenzas
     .accesskey = P
+
 menu-addons-and-themes =
     .label = Supplements e designs
     .accesskey = S
@@ -25,9 +26,11 @@ menu-addons-and-themes =
 menu-help-enter-troubleshoot-mode =
     .label = Modus per schliar problems…
     .accesskey = M
+
 menu-help-exit-troubleshoot-mode =
     .label = Deactivar il modus per schliar problems
     .accesskey = o
+
 menu-help-more-troubleshooting-info =
     .label = Dapli infurmaziuns per schliar problems
     .accesskey = m
@@ -47,17 +50,26 @@ toolbar-undelete-button =
     .label = Revocar il stizzar
     .tooltiptext = Revocar l'eliminaziun dals messadis tschernids
 
+## View
+
+menu-view-repair-text-encoding =
+    .label = Reparar la codaziun dal text
+    .accesskey = c
+
 ## View / Layout
 
 mail-uidensity-label =
     .label = Cumpactadad
     .accesskey = C
+
 mail-uidensity-compact =
     .label = Cumpact
     .accesskey = u
+
 mail-uidensity-normal =
     .label = Normal
     .accesskey = N
+
 mail-uidensity-touch =
     .label = Touch
     .accesskey = T

@@ -4,6 +4,16 @@
 
 e2e-intro-description = Чтобы отправлять зашифрованные сообщения или сообщения с цифровой подписью, вам необходимо настроить технологию шифрования, например, OpenPGP или S/MIME.
 e2e-intro-description-more = Выберите свой личный ключ, чтобы включить использование OpenPGP, или свой личный сертификат, чтобы разрешить использование S/MIME. Для личного ключа или сертификата у вас должен быть соответствующий секретный ключ.
+e2e-advanced-section = Дополнительные параметры
+e2e-attach-key =
+    .label = Прикреплять мой открытый ключ при добавлении цифровой подписи OpenPGP
+    .accesskey = я
+e2e-encrypt-subject =
+    .label = Шифровать тему сообщений OpenPGP
+    .accesskey = м
+e2e-encrypt-drafts =
+    .label = Хранить черновики сообщений в зашифрованном формате
+    .accesskey = ч
 openpgp-key-user-id-label = Учётная запись / Идентификатор пользователя
 openpgp-keygen-title-label =
     .title = Создать ключ OpenPGP
@@ -605,6 +615,12 @@ no-temp-dir =
 possibly-pgp-mime = Возможно, сообщение зашифровано или подписано PGP/MIME; используйте функцию «Расшифровать/Подтвердить» для проверки
 cannot-send-sig-because-no-own-key = Не удалось подписать это сообщение, потому что вы ещё не настроили сквозное шифрования для <{ $key }>
 cannot-send-enc-because-no-own-key = Не удалось отправить это сообщение в зашифрованном виде, потому что вы ещё не настроили сквозное шифрования для <{ $key }>
+compose-menu-attach-key =
+    .label = Прикрепить мой открытый ключ
+    .accesskey = к
+compose-menu-encrypt-subject =
+    .label = Шифрование темы
+    .accesskey = ы
 # Strings used in decryption.jsm
 do-import-multiple =
     Импортировать следующие ключи?

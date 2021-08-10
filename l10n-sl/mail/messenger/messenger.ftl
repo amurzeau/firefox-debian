@@ -13,11 +13,23 @@ unread-messages-os-tooltip =
     }
 about-rights-notification-text = { -brand-short-name } je brezplačen in odprtokoden program, ki ga ustvarja skupnost tisočev prostovoljcev z vsega sveta.
 
+## Content tabs
+
+content-tab-page-loading-icon =
+    .alt = Stran se nalaga
+content-tab-security-high-icon =
+    .alt = Povezava je varna
+content-tab-security-broken-icon =
+    .alt = Povezava ni zavarovana
+
 ## Toolbar
 
-addons-and-themes-button =
+addons-and-themes-toolbarbutton =
     .label = Dodatki in teme
-    .tooltip = Upravljanje dodatkov
+    .tooltiptext = Upravljanje dodatkov
+quick-filter-toolbarbutton =
+    .label = Hitri filter
+    .tooltiptext = Filtriraj sporočila
 redirect-msg-button =
     .label = Preusmeri
     .tooltiptext = Preusmeri izbrano sporočilo
@@ -117,3 +129,9 @@ caret-browsing-prompt-check-text = Ne sprašuj več.
 repair-text-encoding-button =
     .label = Popravi kodiranje besedila
     .tooltiptext = Ugani pravilni nabor znakov iz vsebine sporočila
+
+## no-reply handling
+
+no-reply-title = Odgovori niso podprti
+no-reply-message = Naslov za odgovor ({ $email }) ni videti kot spremljan naslov. Sporočil, poslanih na ta naslov, verjetno ne bo nihče prebral.
+no-reply-reply-anyway-button = Vseeno odgovori

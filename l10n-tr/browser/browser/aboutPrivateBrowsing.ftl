@@ -9,6 +9,8 @@ about-private-browsing-info-title = Gizli penceredesiniz
 about-private-browsing-info-myths = Gizli gezinti ile ilgili yaygın efsaneler
 about-private-browsing =
     .title = Web’de ara
+about-private-browsing-search-btn =
+    .title = Web’de ara
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

@@ -8,9 +8,6 @@
 #   $type (String) - the type of the addressing row
 remove-address-row-type = Het veld { $type } verwijderen
 #   $type (String) - the type of the addressing row
-remove-address-row-type-label =
-    .tooltiptext = Het veld { $type } verwijderen
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Het veld { $type } verwijderen
 #   $type (String) - the type of the addressing row
@@ -121,8 +118,6 @@ move-attachment-last-panel-button =
 button-return-receipt =
     .label = Ontvangstbevestiging
     .tooltiptext = Een ontvangstbevestiging voor dit bericht vragen
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-consider-bcc-notification = De { $count } ontvangers in Aan en Cc kunnen elkaars adres zien. U kunt voorkomen dat ontvangers worden onthuld door in plaats hiervan Bcc te gebruiken.
 
 # Addressing Area
 
@@ -170,3 +165,13 @@ many-public-recipients-ignore =
 # Variables:
 # $identity (string) - The name of the used identity, most likely an email address.
 compose-missing-identity-warning = Er is geen unieke identiteit gevonden die met het Van-adres overeenkomt. Het bericht zal worden verzonden met het Van-veld en de instellingen van identiteit { $identity }.
+encrypted-bcc-warning = Als u een versleuteld bericht verstuurt, worden ontvangers in Bcc niet volledig verborgen. Alle ontvangers kunnen ze mogelijk identificeren.
+encrypted-bcc-ignore-button = Begrepen
+
+## Editing
+
+
+# Tools
+
+compose-tool-button-remove-text-styling =
+    .tooltiptext = Tekstopmaak verwijderen

@@ -485,6 +485,7 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Լավագույն կայքեր
 home-prefs-topsites-description = Ամենաշատ այցելած կայքեր
+home-prefs-shortcuts-description = Կայքեր, որոնք պահել կամ այցելել եք
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -509,6 +510,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = Ամենավերջին ներբեռնումը
 home-prefs-highlights-option-saved-to-pocket =
     .label = { -pocket-brand-name }-ում պահված էջեր
+home-prefs-recent-activity-header =
+    .label = Վերջին ակտիվություն
+home-prefs-recent-activity-description = Վերջին կայքերի և բովանդակության ընտրում
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -516,6 +520,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = Հատվածներ
 home-prefs-snippets-description = Թարմեցումներ { -vendor-short-name }-ից և { -brand-product-name }-ից
+home-prefs-snippets-description-new = Հուշումներ և նորություններ { -vendor-short-name }-ից և { -brand-product-name }-ից
 home-prefs-sections-rows-option =
     .label =
         { $num ->

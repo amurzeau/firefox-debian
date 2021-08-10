@@ -59,12 +59,14 @@ app-basics-enabled-plugins = Engedélyezett bővítmények
 app-basics-build-config = Build konfiguráció
 app-basics-user-agent = Felhasználói ügynök
 app-basics-os = OS
+app-basics-os-theme = Operációs rendszer témája
 # Rosetta is Apple's translation process to run apps containing x86_64
 # instructions on Apple Silicon. This should remain in English.
 app-basics-rosetta = Rosettával fordított
 app-basics-memory-use = Memóriahasználat
 app-basics-performance = Teljesítmény
 app-basics-service-workers = Regisztrált Service Workerek
+app-basics-third-party = Harmadik féltől származó modulok
 app-basics-profiles = Profilok
 app-basics-launcher-process-status = Indító folyamat
 app-basics-multi-process-support = Több folyamatú ablakok
@@ -377,6 +379,7 @@ fission-status-disabled-by-default = Alapértelmezésben tiltva
 fission-status-enabled-by-user-pref = A felhasználó által engedélyezve
 fission-status-disabled-by-user-pref = A felhasználó által letiltva
 fission-status-disabled-by-e10s-other = E10s letiltva
+fission-status-enabled-by-rollout = Szakaszos bevezetés által engedélyezve
 async-pan-zoom = Aszinkron görgetés/nagyítás
 apz-none = nincs
 wheel-enabled = kerékbemenet engedélyezve

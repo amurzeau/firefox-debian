@@ -87,8 +87,8 @@ downloads-cmd-clear-list =
     .label = Vymazat tento seznam
     .accesskey = m
 downloads-cmd-clear-downloads =
-    .label = Smazat stahování
-    .accesskey = S
+    .label = Vymazat seznam
+    .accesskey = m
 
 # This command is shown in the context menu when downloads are blocked.
 downloads-cmd-unblock =
@@ -130,6 +130,22 @@ downloads-show-more-information =
 downloads-open-file =
     .value = Otevřít soubor
 
+## Displayed when the user clicked on a download in process. Indicates that the
+## downloading file will be opened after certain amount of time using an app
+## available in the system.
+## Variables:
+##   $hours (number) - Amount of hours left till the file opens.
+##   $seconds (number) - Amount of seconds left till the file opens.
+##   $minutes (number) - Amount of minutes till the file opens.
+
+downloading-file-opens-in-hours-and-minutes = Otevře se za { $hours } h { $minutes } m…
+downloading-file-opens-in-minutes = Otevře se za { $minutes } m…
+downloading-file-opens-in-minutes-and-seconds = Otevře se za { $minutes } m { $seconds } s…
+downloading-file-opens-in-seconds = Otevře se za { $seconds } s…
+downloading-file-opens-in-some-time = Otevře se po dokončení stahování…
+
+##
+
 # Displayed when hovering a download which is able to be retried by users,
 # indicates that it's possible to download this file again.
 downloads-retry-download =
@@ -153,8 +169,8 @@ downloads-details =
     .title = Podrobnosti o stahování
 
 downloads-clear-downloads-button =
-    .label = Smazat stahování
-    .tooltiptext = Smaže dokončená, zrušená či neúspěšná stahování
+    .label = Vymazat seznam
+    .tooltiptext = Vymaže seznam dokončených, zrušených i neúspěšných stahování
 
 # This string is shown when there are no items in the Downloads view, when it
 # is displayed inside a browser tab.

@@ -49,6 +49,22 @@ printui-options = Nuostatos
 printui-headers-footers-checkbox = Spausdinti antraštes ir poraštes
 printui-backgrounds-checkbox = Spausdinti foną
 printui-selection-checkbox = Spausdinti tik pažymėtą sritį
+
+## The "Format" section, select a version of the website to print. Radio
+## options to select between the original page, selected text only, or a version
+## where the page is processed with "Reader View".
+
+# The section title.
+printui-source-label = Formatas
+# Option for printing the original page.
+printui-source-radio = Originalus
+# Option for printing just the content a user selected prior to printing.
+printui-selection-radio = Pažymėta sritis
+# Option for "simplifying" the page by printing the Reader View version.
+printui-simplify-page-radio = Supaprastintas
+
+##
+
 printui-color-mode-label = Spalvotas spausdinimas
 printui-color-mode-color = Spalvotai
 printui-color-mode-bw = Juodai ir baltai

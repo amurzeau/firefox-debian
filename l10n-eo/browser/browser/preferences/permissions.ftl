@@ -5,59 +5,89 @@
 permissions-window =
     .title = Esceptoj
     .style = width: 36em
+
 permissions-close-key =
     .key = w
+
 permissions-address = Adreso de retejo
     .accesskey = A
+
 permissions-block =
     .label = Bloki
     .accesskey = B
+
 permissions-session =
     .label = Permesi dum la seanco
     .accesskey = S
+
 permissions-allow =
     .label = Permesi
     .accesskey = P
+
+permissions-button-off =
+    .label = Malŝalti
+    .accesskey = M
+
+permissions-button-off-temporarily =
+    .label = Provizore malŝalti
+    .accesskey = P
+
 permissions-site-name =
     .label = Retejo
+
 permissions-status =
     .label = Stato
+
 permissions-remove =
     .label = Forigi retejon
     .accesskey = F
+
 permissions-remove-all =
     .label = Forigi ĉiujn retejojn
     .accesskey = r
+
 permissions-button-cancel =
     .label = Nuligi
     .accesskey = N
+
 permissions-button-ok =
     .label = Konservi ŝanĝojn
     .accesskey = K
+
 permission-dialog =
     .buttonlabelaccept = Konservi ŝanĝojn
     .buttonaccesskeyaccept = K
+
 permissions-autoplay-menu = Normo por ĉiuj retejoj:
+
 permissions-searchbox =
     .placeholder = Serĉi en retejo
+
 permissions-capabilities-autoplay-allow =
     .label = Permesi sonon kaj videon
 permissions-capabilities-autoplay-block =
     .label = Bloki sonon
 permissions-capabilities-autoplay-blockall =
     .label = Bloki sonon kaj videon
+
 permissions-capabilities-allow =
     .label = Permesi
 permissions-capabilities-block =
     .label = Bloki
 permissions-capabilities-prompt =
     .label = Ĉiam demandi
+
 permissions-capabilities-listitem-allow =
     .value = Permesi
 permissions-capabilities-listitem-block =
     .value = Bloki
 permissions-capabilities-listitem-allow-session =
     .value = Permesi dum la seanco
+
+permissions-capabilities-listitem-off =
+    .value = Malŝaltita
+permissions-capabilities-listitem-off-temporarily =
+    .value = Provizore malŝaltita
 
 ## Invalid Hostname Dialog
 
@@ -77,6 +107,13 @@ permissions-exceptions-cookie-window =
     .title = Esceptoj - Kuketoj kaj retejaj datumoj
     .style = { permissions-window.style }
 permissions-exceptions-cookie-desc = Vi povas specifi la retejojn kiuj ĉiam aŭ neniam rajtos uzi kuketojn kaj retejajn datumojn. Tajpu la ekzaktan adreson de la retejo, kiun vi volas administri kaj poste alklaku Bloki, Permesi dum seanco, aŭ Permesi.
+
+## Exceptions - HTTPS-Only Mode
+
+permissions-exceptions-https-only-window =
+    .title = Esceptoj - HTTPS-nura reĝimo
+    .style = { permissions-window.style }
+permissions-exceptions-https-only-desc = Vi povas malŝalti la HTTPS-nuran reĝimon por specifaj retejoj. { -brand-short-name } ne klopodos plibonigi la konekton pero uzo de HTTPS por tiuj retejoj. Esceptoj ne aplikeblas al privataj fenestroj.
 
 ## Exceptions - Pop-ups
 

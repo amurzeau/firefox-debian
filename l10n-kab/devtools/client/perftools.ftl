@@ -79,8 +79,14 @@ perftools-thread-renderer =
     .title = Mi ara WebRender yetturmed, asqerdec i iselkamen isawalen OpenGL
 perftools-thread-render-backend =
     .title = Asqerdec n WebRender RenderBackend
+perftools-thread-style-thread =
+    .title = Asesfer n uɣanib yettwabḍa gar waṭas n yisqerdcen
 pref-thread-stream-trans =
     .title = Asiweḍ n usuddem n uzeṭṭa
+perftools-thread-img-decoder =
+    .title = Asqerdec n usettenggel n tugna
+perftools-thread-dns-resolver =
+    .title = Tifrat n DNS tḍerru deg usqerdec-a
 
 ##
 
@@ -89,4 +95,6 @@ pref-thread-stream-trans =
 ## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
 ## preferences are true.
 
--profiler-brand-name = Firefox Profiler
+perftools-onboarding-message = <b>Amaynut</b>: { -profiler-brand-name } yettwasleɣ tura deg yifecka n tneflit. <a>Issin ugar</a> qef ufecku-a amaynut yelhan.
+perftools-onboarding-close-button =
+    .aria-label = Mdel izen n uslaɣ

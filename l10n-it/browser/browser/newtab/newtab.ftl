@@ -8,7 +8,11 @@
 newtab-page-title = Nuova scheda
 newtab-settings-button =
     .title = Personalizza la pagina Nuova scheda
+
 newtab-personalize-button-label = Personalizza
+    .title = Personalizza Nuova scheda
+    .aria-label = Personalizza Nuova scheda
+newtab-personalize-icon-label =
     .title = Personalizza Nuova scheda
     .aria-label = Personalizza Nuova scheda
 newtab-personalize-dialog-label =
@@ -43,6 +47,7 @@ newtab-search-box-search-the-web-input =
     .title = Cerca sul Web
     .aria-label = Cerca sul Web
 
+newtab-search-box-text = Cerca sul Web
 newtab-search-box-input =
     .placeholder = Cerca sul Web
     .aria-label = Cerca sul Web
@@ -120,7 +125,6 @@ newtab-menu-delete-history = Elimina dalla cronologia
 newtab-menu-save-to-pocket = Salva in { -pocket-brand-name }
 newtab-menu-delete-pocket = Elimina da { -pocket-brand-name }
 newtab-menu-archive-pocket = Archivia in { -pocket-brand-name }
-
 newtab-menu-show-privacy-info = I nostri sponsor e la tua privacy
 
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
@@ -206,7 +210,6 @@ newtab-section-expand-section-label =
 newtab-section-header-topsites = Siti principali
 newtab-section-header-highlights = In evidenza
 newtab-section-header-recent-activity = Attività recente
-
 # Variables:
 #  $provider (String): Name of the corresponding content provider.
 newtab-section-header-pocket = Consigliati da { $provider }

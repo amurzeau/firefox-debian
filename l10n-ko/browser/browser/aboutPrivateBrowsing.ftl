@@ -9,6 +9,8 @@ about-private-browsing-info-title = 사생활 보호 창입니다
 about-private-browsing-info-myths = 사생활 보호 모드에 대한 일반적인 통념
 about-private-browsing =
     .title = 웹 검색
+about-private-browsing-search-btn =
+    .title = 웹 검색
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

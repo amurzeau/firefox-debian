@@ -9,6 +9,8 @@ about-private-browsing-info-title = Du är i ett privat fönster
 about-private-browsing-info-myths = Vanliga myter om privat surfning
 about-private-browsing =
     .title = Sök på nätet
+about-private-browsing-search-btn =
+    .title = Sök på webben
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

@@ -449,6 +449,12 @@
 %define L10N_TRANSITION 1
 %include @PRODUCT@-l10n.control.in
 
+%define L10N_LANG sco
+%define L10N_LANGUAGE Scots
+%undef L10N_RECOMMENDS
+%undef L10N_TRANSITION
+%include @PRODUCT@-l10n.control.in
+
 %define L10N_LANG si
 %define L10N_LANGUAGE Sinhala
 %define L10N_RECOMMENDS hunspell-si

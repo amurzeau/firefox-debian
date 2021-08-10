@@ -11,6 +11,8 @@ autodetect-online-label =
 
 startup-label = Addad s ufus di tnekra:
 
+offline-preference-startup-label = Addad s ufus di tnekra:
+
 status-radio-remember =
     .label = Cfu ɣef waddad s srid  yezrin
     .accesskey = C

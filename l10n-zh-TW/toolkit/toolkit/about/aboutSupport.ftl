@@ -62,12 +62,14 @@ app-basics-enabled-plugins = 啟用的外掛程式
 app-basics-build-config = 編譯組態
 app-basics-user-agent = 使用者代理字串（User Agent）
 app-basics-os = 作業系統
+app-basics-os-theme = 作業系統佈景主題
 # Rosetta is Apple's translation process to run apps containing x86_64
 # instructions on Apple Silicon. This should remain in English.
 app-basics-rosetta = 經 Rosetta 轉譯
 app-basics-memory-use = 記憶體使用量
 app-basics-performance = 效能
 app-basics-service-workers = 註冊的 Service Worker
+app-basics-third-party = 第三方模組
 app-basics-profiles = 設定檔
 app-basics-launcher-process-status = 啟動器處理程序
 app-basics-multi-process-support = 多程序視窗
@@ -360,6 +362,7 @@ fission-status-disabled-by-default = 預設關閉
 fission-status-enabled-by-user-pref = 由使用者開啟
 fission-status-disabled-by-user-pref = 由使用者關閉
 fission-status-disabled-by-e10s-other = 已停用 e10s
+fission-status-enabled-by-rollout = 透過分階段推出啟用
 async-pan-zoom = 異步 Pan/Zoom
 apz-none = 無
 wheel-enabled = 已啟用滾輪輸入

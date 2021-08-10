@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = Personaliseren
     .title = Nieuw tabblad personaliseren
     .aria-label = Nieuw tabblad personaliseren
+newtab-personalize-icon-label =
+    .title = Nieuw tabblad personaliseren
+    .aria-label = Nieuw tabblad personaliseren
 newtab-personalize-dialog-label =
     .aria-label = Personaliseren
 
@@ -39,6 +42,7 @@ newtab-search-box-search-the-web-input =
     .placeholder = Zoeken op het web
     .title = Zoeken op het web
     .aria-label = Zoeken op het web
+newtab-search-box-text = Zoeken op het web
 newtab-search-box-input =
     .placeholder = Zoeken op het web
     .aria-label = Zoeken op het web

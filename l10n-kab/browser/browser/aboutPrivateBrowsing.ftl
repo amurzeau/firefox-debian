@@ -9,6 +9,8 @@ about-private-browsing-info-title = Deg usfaylu uslig i telliḍ tura
 about-private-browsing-info-myths = Lmed ugar ɣef tunigin tusligt
 about-private-browsing =
     .title = Nadi di Web
+about-private-browsing-search-btn =
+    .title = Nadi di web
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

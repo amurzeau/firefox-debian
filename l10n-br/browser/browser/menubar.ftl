@@ -38,16 +38,20 @@ menu-quit =
             [windows] K
            *[other] K
         }
+
 # This menu-quit-mac string is only used on macOS.
 menu-quit-mac =
     .label = Kuitaat { -brand-shorter-name }
+
 # This menu-quit-button string is only used on Linux.
 menu-quit-button =
     .label = { menu-quit.label }
+
 # This menu-quit-button-win string is only used on Windows.
 menu-quit-button-win =
     .label = { menu-quit.label }
     .tooltip = Kuitaat { -brand-shorter-name }
+
 menu-about =
     .label = A-zivout { -brand-shorter-name }
     .accesskey = A
@@ -174,6 +178,10 @@ menu-view-charset =
     .label = Bonegadur an destenn
     .accesskey = d
 
+menu-view-repair-text-encoding =
+    .label = Ratreañ enkodadur an destenn
+    .accesskey = k
+
 ## These should match what Safari and other Apple applications
 ## use on macOS.
 
@@ -215,6 +223,7 @@ menu-history-undo-menu =
     .label = Ivinelloù serret nevez zo
 menu-history-undo-window-menu =
     .label = Prenestroù serret nevez zo
+
 menu-history-reopen-all-tabs = Digeriñ en-dro an holl ivinelloù
 menu-history-reopen-all-windows = Digeriñ en-dro an holl brenestroù
 
@@ -227,6 +236,8 @@ menu-bookmarks-show-all =
     .label = Diskouez an holl sinedoù
 menu-bookmark-this-page =
     .label = Lakaat ur sined war ar bajenn-mañ
+menu-bookmarks-manage =
+    .label = Merañ ar sinedoù
 menu-bookmark-current-tab =
     .label = Lakaat an ivinell vremanel er sinedoù
 menu-bookmark-edit =

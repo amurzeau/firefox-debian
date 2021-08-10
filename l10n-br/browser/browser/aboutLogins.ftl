@@ -290,6 +290,14 @@ about-logins-import-dialog-items-added =
         [many] <span>Titouroù kennaskañ nevez ouzhpennet:</span> <span data-l10n-name="count">{ $count }</span></span>
        *[other] <span>Titouroù kennaskañ nevez ouzhpennet:</span> <span data-l10n-name="count">{ $count }</span></span>
     }
+about-logins-import-dialog-items-error =
+    { $count ->
+        [one] <span>Fazioù:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ket enporzhiet)</span>
+        [two] <span>Fazioù:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ket enporzhiet)</span>
+        [few] <span>Fazioù:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ket enporzhiet)</span>
+        [many] <span>Fazioù:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ket enporzhiet)</span>
+       *[other] <span>Fazioù:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ket enporzhiet)</span>
+    }
 about-logins-import-dialog-done = Graet
 about-logins-import-dialog-error-title = Fazi enporzhiañ
 about-logins-import-dialog-error-conflicting-values-title = Tabut war un titour kennaskañ gant meur a dalvoud
@@ -326,6 +334,14 @@ about-logins-import-report-row-description-error-missing-field = Fazi: { $field 
 ## Variables:
 ##  $count (number) - The number of affected elements
 
+about-logins-import-report-added =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Titour kennaskañ nevez ouzhpennet</div>
+        [two] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Ditour kennaskañ nevez ouzhpennet</div>
+        [few] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Zitour kennaskañ nevez ouzhpennet</div>
+        [many] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">A Ditouroù kennaskañ nevez ouzhpennet</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Titour kennaskañ nevez ouzhpennet</div>
+    }
 
 ## Logins import report page
 

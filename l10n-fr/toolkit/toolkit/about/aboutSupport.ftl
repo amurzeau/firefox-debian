@@ -62,12 +62,14 @@ app-basics-enabled-plugins = Plugins activés
 app-basics-build-config = Configuration de compilation
 app-basics-user-agent = Agent utilisateur
 app-basics-os = Système d’exploitation
+app-basics-os-theme = Thème du système d’exploitation
 # Rosetta is Apple's translation process to run apps containing x86_64
 # instructions on Apple Silicon. This should remain in English.
 app-basics-rosetta = Traduit par Rosetta
 app-basics-memory-use = Utilisation mémoire
 app-basics-performance = Performances
 app-basics-service-workers = Service workers inscrits
+app-basics-third-party = Modules tiers
 app-basics-profiles = Profils
 app-basics-launcher-process-status = Processus de lancement
 app-basics-multi-process-support = Fenêtres multiprocessus
@@ -380,6 +382,7 @@ fission-status-disabled-by-default = Désactivées par défaut
 fission-status-enabled-by-user-pref = Activées par l’utilisateur
 fission-status-disabled-by-user-pref = Désactivées par l’utilisateur
 fission-status-disabled-by-e10s-other = Désactivées par E10s
+fission-status-enabled-by-rollout = Activé par déploiement progressif
 async-pan-zoom = Zoom/Panoramique asynchrones
 apz-none = aucun
 wheel-enabled = entrée molette activée

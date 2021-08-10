@@ -254,6 +254,7 @@ confirm-browser-language-change-button = Bruk og start om
 translate-web-pages =
     .label = Oversett webinnhold
     .accesskey = O
+fx-translate-web-pages = { -translations-brand-name }
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = Oversettelser av <img data-l10n-name="logo"/>
@@ -857,6 +858,10 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = Du er for tiden i FIPS-modus. FIPS krever at du bruker et hovedpassord.
 forms-master-pw-fips-desc = Passordendring mislyktes
+forms-windows-sso =
+    .label = Tillat Windows enkel pålogging for Microsoft, arbeids- og skolekontoer
+forms-windows-sso-learn-more-link = Les mer
+forms-windows-sso-desc = Behandle kontoer i dine enhetensinnstillinger
 
 ## OS Authentication dialog
 
@@ -1109,6 +1114,12 @@ permissions-block-popups =
 permissions-block-popups-exceptions =
     .label = Unntak …
     .accesskey = U
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = Unntak…
+    .accesskey = U
+    .searchkeywords = sprettoppvindu
 permissions-addon-install-warning =
     .label = Advar meg når nettsteder forsøker å installere utvidelser
     .accesskey = A

@@ -10,6 +10,10 @@ focus-search-shortcut =
     .key = f
 focus-search-altshortcut =
     .key = k
+focus-search-primary-shortcut =
+    .key = f
+focus-search-alt-shortcut =
+    .key = k
 copy-provider-url-cmd =
     .label = Nɣel URL
     .accesskey = N
@@ -49,6 +53,10 @@ import =
     .label = Kter…
     .accesskey = t
 close-button =
+    .label = Mdel
+    .accesskey = M
+
+password-close-button =
     .label = Mdel
     .accesskey = M
 

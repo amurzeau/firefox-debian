@@ -257,6 +257,7 @@ confirm-browser-language-change-button = Pritaikyti ir perleisti
 translate-web-pages =
     .label = Versti tinklalapių turinį
     .accesskey = V
+fx-translate-web-pages = { -translations-brand-name }
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = Vertimą teikia <img data-l10n-name="logo"/>
@@ -861,6 +862,10 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = Šiuo metu pasirinkta FIPS veiksena. Jai reikia pagrindinio slaptažodžio.
 forms-master-pw-fips-desc = Slaptažodžio pakeisti nepavyko
+forms-windows-sso =
+    .label = Leisti bendrinį „Windows“ prisijungimą, skirtą „Microsoft“, darbo, ir mokyklos paskyroms
+forms-windows-sso-learn-more-link = Sužinoti daugiau
+forms-windows-sso-desc = Tvarkykite paskyras savo įrenginio nuostatose
 
 ## OS Authentication dialog
 
@@ -1113,6 +1118,12 @@ permissions-block-popups =
 permissions-block-popups-exceptions =
     .label = Išimtys
     .accesskey = I
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = Išimtys…
+    .accesskey = I
+    .searchkeywords = popups
 permissions-addon-install-warning =
     .label = Įspėti, kai svetainės bando diegti priedus
     .accesskey = t

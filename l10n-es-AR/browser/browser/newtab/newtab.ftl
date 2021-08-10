@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = Personalizar
     .title = Personalizar la nueva pestaña
     .aria-label = Personalizar la nueva pestaña
+newtab-personalize-icon-label =
+    .title = Personalizar la nueva pestaña
+    .aria-label = Personalizar la nueva pestaña
 newtab-personalize-dialog-label =
     .aria-label = Personalizar
 
@@ -220,7 +223,7 @@ newtab-discovery-empty-section-topstories-timed-out = ¡Uy! Casi cargamos esta s
 ## Pocket Content Section.
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
-newtab-pocket-read-more = Tópicos populares:
+newtab-pocket-read-more = Temas populares:
 newtab-pocket-more-recommendations = Más recomendaciones
 newtab-pocket-learn-more = Conocer más
 newtab-pocket-cta-button = Obtener { -pocket-brand-name }

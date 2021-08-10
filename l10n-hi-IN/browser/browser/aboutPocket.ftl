@@ -40,3 +40,5 @@ pocket-panel-signup-tagline-story-two = किसी भी समय, { -pocket
 
 ## about:pocket-home panel
 
+pocket-panel-home-my-list = मेरी सूची
+pocket-panel-home-welcome-back = आपका फिर से स्वागत है

@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Wužywanje tykacow zastojaś
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Źělenje wašeje kamery a/abo wašogo mikrofona ze sedłom zastojaś
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Źělenje drugich głosnikow ze sedłom zastojaś
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Wobceŕk za awtomatiske wótgraśe wócyniś
 urlbar-persistent-storage-notification-anchor =
@@ -164,55 +168,6 @@ page-action-remove-from-urlbar =
     .label = Z adresowego póla wótwónoźeś
 page-action-remove-extension =
     .label = Rozšyrjenje wótwónoźeś
-
-## Page Action menu
-
-# Variables
-# $tabCount (integer) - Number of tabs selected
-page-action-send-tabs-panel =
-    .label =
-        { $tabCount ->
-            [one] { $tabCount } rejtarik na rěd pósłaś
-            [two] { $tabCount } rejtarika na rěd pósłaś
-            [few] { $tabCount } rejtariki na rěd pósłaś
-           *[other] { $tabCount } rejtarikow na rěd pósłaś
-        }
-page-action-send-tabs-urlbar =
-    .tooltiptext =
-        { $tabCount ->
-            [one] { $tabCount } rejtarik na rěd pósłaś
-            [two] { $tabCount } rejtarika na rěd pósłaś
-            [few] { $tabCount } rejtariki na rěd pósłaś
-           *[other] { $tabCount } rejtarikow na rěd pósłaś
-        }
-page-action-copy-url-panel =
-    .label = Wótkaz kopěrowaś
-page-action-copy-url-urlbar =
-    .tooltiptext = Wótkaz kopěrowaś
-page-action-email-link-panel =
-    .label = Wótkaz e-mailowaś…
-page-action-email-link-urlbar =
-    .tooltiptext = Wótkaz e-mailowaś…
-page-action-share-url-panel =
-    .label = Źěliś
-page-action-share-url-urlbar =
-    .tooltiptext = Źěliś
-page-action-share-more-panel =
-    .label = Wěcej…
-page-action-send-tab-not-ready =
-    .label = Rědy se synchronizěruju…
-# "Pin" is being used as a metaphor for expressing the fact that these tabs
-# are "pinned" to the left edge of the tabstrip. Really we just want the
-# string to express the idea that this is a lightweight and reversible
-# action that keeps your tab where you can reach it easily.
-page-action-pin-tab-panel =
-    .label = Rejtarik pśipěś
-page-action-pin-tab-urlbar =
-    .tooltiptext = Rejtarik pśipěś
-page-action-unpin-tab-panel =
-    .label = Rejtarik wótpěś
-page-action-unpin-tab-urlbar =
-    .tooltiptext = Rejtarik wótpěś
 
 ## Auto-hide Context Menu
 
@@ -492,6 +447,8 @@ urlbar-default-placeholder =
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Pytaś abo adresu zapódaś
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Wobglědowak se zdaloka wóźi
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -524,8 +481,6 @@ urlbar-placeholder-search-mode-other-tabs =
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
     .placeholder = Pytajśo z { $name } abo zapódajśo adresu
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Wobglědowak se zdaloka wóźi
 # Variables
 #  $component (String): the name of the component which forces remote control.
 #    Example: "DevTools", "Marionette", "RemoteAgent".
@@ -619,6 +574,10 @@ pointerlock-warning-no-domain = Toś ten dokument ma kontrolu nad wašeju špěr
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Źěl toś togo boka jo wowalił.</strong> Aby { -brand-product-name } wó toś tom problemje informěrował a jen malsnjej rozwězował, pósćelśo pšosyym wowaleńsku rozpšawu.
+# The string for crashed-subframe-title.title should match crashed-subframe-message,
+# but without any markup.
+crashed-subframe-title =
+    .title = Źěl toś togo boka jo wowalił. Aby { -brand-product-name } wó toś tom problemje informěrował a jen malsnjej rozwězował, pósćelśo pšosyym wowaleńsku rozpšawu.
 crashed-subframe-learnmore-link =
     .value = Dalšne informacije
 crashed-subframe-submit =
@@ -754,3 +713,9 @@ addon-removal-abuse-report-checkbox = { -vendor-short-name } toś to rozšyrjenj
 remote-tabs-manage-account =
     .label = Konto zastojaś
 remote-tabs-sync-now = Něnto synchronizěrowaś
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Wěcej…

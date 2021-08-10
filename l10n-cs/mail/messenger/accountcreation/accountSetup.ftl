@@ -10,6 +10,8 @@ account-setup-title = Nastavit existující e-mailový účet
 account-setup-description =
     Pro použití existující e-mailové adresy vyplňte své přihlašovací údaje.<br/>
     { -brand-product-name } se pokusí automaticky najít funkční a doporučené nastavení serveru.
+account-setup-secondary-description = { -brand-product-name } automaticky vyhledá funkční a doporučenou konfiguraci serveru.
+account-setup-success-title = Účet byl úspěšně vytvořen
 
 ## Form fields
 
@@ -110,11 +112,16 @@ account-setup-step3-image =
     .title = Konfigurace nalezena
 account-setup-step4-image =
     .title = Chyba spojení
-account-setup-privacy-footnote = Vaše přihlašovací údaje budou použity v souladu s našimi <a data-l10n-name="privacy-policy-link">zásadami ochrany osobních údajů</a> a zůstanou uloženy pouze na vašem počítači.
+account-setup-step5-image =
+    .title = Účet vytvořen
+account-setup-privacy-footnote2 = Vaše přihlašovací údaje budou uloženy jen ve vašem počítači.
 account-setup-selection-help = Nevíte, co vybrat?
 account-setup-selection-error = Potřebujete pomoci?
+account-setup-success-help = Nevíte, co dál?
 account-setup-documentation-help = Dokumentace k nastavení
 account-setup-forum-help = Fórum podpory
+account-setup-privacy-help = Zásady ochrany osobních údajů
+account-setup-getting-started = Začínáme
 
 ## Results area
 
@@ -134,7 +141,6 @@ account-setup-result-pop = POP3
 account-setup-result-pop-description = Uchová vaše složky a e-maily na vašem počítači
 # Note: Exchange is the name of a product.
 account-setup-result-exchange = Exchange
-account-setup-result-exchange-description = Server Microsoft Exchange
 account-setup-incoming-title = Příchozí
 account-setup-outgoing-title = Odchozí
 account-setup-username-title = Uživatelské jméno
@@ -236,3 +242,79 @@ account-setup-confirm-advanced-description = Toto dialogové okno bude zavřeno 
 account-setup-addon-install-title = Nainstalovat
 account-setup-addon-install-intro = Doplněk třetí strany vám může umožnit přístup k poštovnímu účtu na tomto serveru:
 account-setup-addon-no-protocol = Tento e-mailový server bohužel nepodporuje otevřené protokoly. { account-setup-addon-install-intro }
+
+## Success view
+
+account-setup-settings-button = Nastavení účtu
+account-setup-encryption-button = Koncové šifrování
+account-setup-signature-button = Přidat podpis
+account-setup-dictionaries-button = Stáhnout slovníky
+account-setup-address-book-carddav-button = Připojit adresář CardDAV
+account-setup-address-book-ldap-button = Připojit adresář LDAP
+account-setup-calendar-button = Připojit vzdálený kalendář
+account-setup-linked-services-title = Připojení propojených služeb
+# Variables:
+# $count (Number) - The number of address books found during autoconfig.
+account-setup-found-address-books-description =
+    { -brand-short-name.gender ->
+        [masculine] { -brand-short-name } našel
+        [feminine] { -brand-short-name } našla
+        [neuter] { -brand-short-name } našlo
+       *[other] Aplikace { -brand-short-name } našla
+    } { $count ->
+        [one] jeden adresář propojený s vaším e-mailovým účtem.
+        [few] { $count } adresáře propojené s vaším e-mailovým účtem.
+       *[other] { $count } adresářů propojených s vaším e-mailovým účtem.
+    }
+# Variables:
+# $count (Number) - The number of calendars found during autoconfig.
+account-setup-found-calendars-description =
+    { -brand-short-name.gender ->
+        [masculine] { -brand-short-name } našel
+        [feminine] { -brand-short-name } našla
+        [neuter] { -brand-short-name } našlo
+       *[other] Aplikace { -brand-short-name } našla
+    } { $count ->
+        [one] jeden kalendář propojený s vaším e-mailovým účtem.
+        [few] { $count } kalendáře propojené s vaším e-mailovým účtem.
+       *[other] { $count } kalendářů propojených s vaším e-mailovým účtem.
+    }
+account-setup-button-finish = Dokončit
+    .accesskey = D
+account-setup-looking-up-address-books = Vyhledávání adresářů…
+account-setup-looking-up-calendars = Vyhledávání kalendářů…
+account-setup-address-books-button = Adresáře
+account-setup-calendars-button = Kalendáře
+account-setup-connect-link = Připojit
+account-setup-existing-address-book = Připojeno
+    .title = Adresář je už připojen
+account-setup-existing-calendar = Připojeno
+    .title = Kalendář je už připojen
+account-setup-connect-all-calendars = Připojit všechny kalendáře
+account-setup-connect-all-address-books = Připojit všechny adresáře
+
+## Calendar synchronization dialog
+
+calendar-dialog-title = Připojení kalendáře
+calendar-dialog-cancel-button = Zrušit
+    .accesskey = Z
+calendar-dialog-confirm-button = Připojit
+    .accesskey = P
+account-setup-calendar-name-label = Název
+account-setup-calendar-name-input =
+    .placeholder = Můj kalendář
+account-setup-calendar-color-label = Barva
+account-setup-calendar-refresh-label = Obnovit
+account-setup-calendar-refresh-manual = Ručně
+account-setup-calendar-refresh-interval =
+    { $count ->
+        [one] Jednou za minutu
+        [few] Každé { $count } minuty
+       *[other] Každých { $count } minut
+    }
+account-setup-calendar-read-only = Pouze pro čtení
+    .accesskey = r
+account-setup-calendar-show-reminders = Zobrazovat upozornění
+    .accesskey = Z
+account-setup-calendar-offline-support = Podpora režimu offline
+    .accesskey = o

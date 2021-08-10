@@ -97,6 +97,10 @@ font-size-label =
     .value = Teɣzi:
     .accesskey = e
 
+font-size-proportional-label =
+    .value = Teɣzi:
+    .accesskey = e
+
 font-size-monospace-label =
     .value = Teɣzi:
     .accesskey = i

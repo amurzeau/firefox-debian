@@ -47,6 +47,12 @@ toolbar-undelete-button =
     .label = Restaurar
     .tooltiptext = Restaura as mensaxes seleccionadas
 
+## View
+
+menu-view-repair-text-encoding =
+    .label = Reparar a codificación do texto
+    .accesskey = c
+
 ## View / Layout
 
 mail-uidensity-label =

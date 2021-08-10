@@ -54,4 +54,7 @@ site-data-removing-dialog =
     .buttonlabelaccept = Eltávolítás
 site-data-removing-header = Sütik és oldaladatok eltávolítása
 site-data-removing-desc = A sütik és oldaladatok eltávolítása kijelentkeztetheti a weboldalakról. Biztos akarja ezeket a változásokat?
+# Variables:
+#   $baseDomain (String) - The single domain for which data is being removed
+site-data-removing-single-desc = A sütik és webhelyadatok eltávolítása kijelentkeztetheti a webhelyekről. Biztos, hogy eltávolítja a sütiket és webhelyadatokat ennél: <strong>{ $baseDomain }</strong>?
 site-data-removing-table = A következő webhelyekhez tartozó sütik és oldaladatok eltávolításra kerülnek

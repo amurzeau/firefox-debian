@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Plugin-Verwendung verwalten
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Verwalten des Zugriffs auf Ihre Kamera und/oder Ihr Mikrofon durch diese Website
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Verwalten des Zugriffs auf andere Lautsprecher durch diese Website
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Ansicht für automatische Wiedergabe öffnen
 urlbar-persistent-storage-notification-anchor =
@@ -164,51 +168,6 @@ page-action-remove-from-urlbar =
     .label = Aus Adressleiste entfernen
 page-action-remove-extension =
     .label = Erweiterung entfernen
-
-## Page Action menu
-
-# Variables
-# $tabCount (integer) - Number of tabs selected
-page-action-send-tabs-panel =
-    .label =
-        { $tabCount ->
-            [one] Tab an Gerät senden
-           *[other] { $tabCount } Tabs an Gerät senden
-        }
-page-action-send-tabs-urlbar =
-    .tooltiptext =
-        { $tabCount ->
-            [one] Tab an Gerät senden
-           *[other] { $tabCount } Tabs an Gerät senden
-        }
-page-action-copy-url-panel =
-    .label = Link-Adresse kopieren
-page-action-copy-url-urlbar =
-    .tooltiptext = Link-Adresse kopieren
-page-action-email-link-panel =
-    .label = Link per E-Mail senden…
-page-action-email-link-urlbar =
-    .tooltiptext = Link per E-Mail senden…
-page-action-share-url-panel =
-    .label = Teilen
-page-action-share-url-urlbar =
-    .tooltiptext = Teilen
-page-action-share-more-panel =
-    .label = Mehr…
-page-action-send-tab-not-ready =
-    .label = Geräte werden synchronisiert…
-# "Pin" is being used as a metaphor for expressing the fact that these tabs
-# are "pinned" to the left edge of the tabstrip. Really we just want the
-# string to express the idea that this is a lightweight and reversible
-# action that keeps your tab where you can reach it easily.
-page-action-pin-tab-panel =
-    .label = Tab anheften
-page-action-pin-tab-urlbar =
-    .tooltiptext = Tab anheften
-page-action-unpin-tab-panel =
-    .label = Tab ablösen
-page-action-unpin-tab-urlbar =
-    .tooltiptext = Tab ablösen
 
 ## Auto-hide Context Menu
 
@@ -477,6 +436,8 @@ urlbar-default-placeholder =
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Suche oder Adresse eingeben
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Browser wird ferngesteuert
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -509,8 +470,6 @@ urlbar-placeholder-search-mode-other-tabs =
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
     .placeholder = Mit { $name } suchen oder Adresse eingeben
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Browser wird ferngesteuert
 # Variables
 #  $component (String): the name of the component which forces remote control.
 #    Example: "DevTools", "Marionette", "RemoteAgent".
@@ -604,6 +563,10 @@ pointerlock-warning-no-domain = Dieses Dokument kontrolliert den Mauszeiger. Dr�
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Ein Teil der Seite ist abgestürzt.</strong> Übermitteln Sie bitte einen Bericht, um { -brand-product-name } über dieses Problem zu informieren und beim Beheben des Fehlers zu helfen.
+# The string for crashed-subframe-title.title should match crashed-subframe-message,
+# but without any markup.
+crashed-subframe-title =
+    .title = Ein Teil der Seite ist abgestürzt. Übermitteln Sie bitte einen Bericht, um { -brand-product-name } über dieses Problem zu informieren und beim Beheben des Fehlers zu helfen.
 crashed-subframe-learnmore-link =
     .value = Weitere Informationen
 crashed-subframe-submit =
@@ -739,3 +702,9 @@ addon-removal-abuse-report-checkbox = Erweiterung melden an { -vendor-short-name
 remote-tabs-manage-account =
     .label = Konto verwalten
 remote-tabs-sync-now = Jetzt synchronisieren
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Mehr…

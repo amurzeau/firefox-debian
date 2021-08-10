@@ -54,4 +54,7 @@ site-data-removing-dialog =
     .buttonlabelaccept = Ta bort
 site-data-removing-header = Tar bort kakor och webbplatsdata
 site-data-removing-desc = Om du tar bort kakor och webbplatsdata kan du loggas ut från webbplatser. Är du säker på att du vill göra dessa ändringar?
+# Variables:
+#   $baseDomain (String) - The single domain for which data is being removed
+site-data-removing-single-desc = Om du tar bort kakor och webbplatsdata kan du loggas ut från webbplatser. Är du säker på att du vill ta bort kakor och webbplatsdata för <strong>{ $baseDomain }</strong>?
 site-data-removing-table = Kakor och webbplatsdata för följande webbplatser kommer att tas bort

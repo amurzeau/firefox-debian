@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = Personalizěrowaś
     .title = Nowy rejtarik personalizěrowaś
     .aria-label = Nowy rejtarik personalizěrowaś
+newtab-personalize-icon-label =
+    .title = Nowy rejtarik personalizěrowaś
+    .aria-label = Nowy rejtarik personalizěrowaś
 newtab-personalize-dialog-label =
     .aria-label = Personalizěrowaś
 
@@ -39,6 +42,7 @@ newtab-search-box-search-the-web-input =
     .placeholder = Web pśepytaś
     .title = Web pśepytaś
     .aria-label = Web pśepytaś
+newtab-search-box-text = Web pśepytaś
 newtab-search-box-input =
     .placeholder = Web pśepytaś
     .aria-label = Web pśepytaś

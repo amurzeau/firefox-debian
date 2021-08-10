@@ -9,6 +9,8 @@ about-private-browsing-info-title = 您在隱私瀏覽視窗當中
 about-private-browsing-info-myths = 隱私瀏覽功能的常見迷思
 about-private-browsing =
     .title = 搜尋 Web
+about-private-browsing-search-btn =
+    .title = 搜尋 Web
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

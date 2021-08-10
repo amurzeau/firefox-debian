@@ -10,6 +10,9 @@ finger-intro = Idsilen umḍinen n tsura OTR n yidiwenniyen yezrin iwgelhanen se
 
 finger-screenName =
     .label = Anermis
+
+finger-screen-name =
+    .label = Anermis
 finger-verified =
     .label = Addad n usenqed
 finger-fingerprint =

@@ -13,6 +13,20 @@ bookmark-overlay-location =
 bookmark-overlay-folder =
     .value = Dosar:
 
+bookmark-overlay-name-2 =
+    .value = Nume
+    .accesskey = N
+
+bookmark-overlay-url =
+    .value = URL
+    .accesskey = U
+
+# Location refers to the position of the bookmark within the browser's
+# bookmarks, not to its URL or address.
+bookmark-overlay-location-2 =
+    .value = Locație
+    .accesskey = L
+
 bookmark-overlay-choose =
     .label = Alege…
 
@@ -29,6 +43,10 @@ bookmark-overlay-tags =
     .value = Etichete:
     .accesskey = T
 
+bookmark-overlay-tags-2 =
+    .value = Etichete
+    .accesskey = T
+
 bookmark-overlay-tags-empty-description =
     .placeholder = Separă etichetele prin virgulă
 
@@ -40,3 +58,11 @@ bookmark-overlay-tags-expander =
 bookmark-overlay-keyword =
     .value = Cuvânt cheie:
     .accesskey = K
+
+bookmark-overlay-keyword-2 =
+    .value = Cuvânt cheie
+    .accesskey = K
+
+bookmark-overlay-tags-caption-label = Folosește etichete pentru a organiza și căuta marcaje din bara de adrese
+
+bookmark-overlay-keyword-caption-label-2 = Folosește un singur cuvânt cheie pentru a deschide marcaje direct din bara de adrese

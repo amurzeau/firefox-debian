@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = Անհատականացնել
     .title = Անհատականացնել նոր ներդիրը
     .aria-label = Անհատականացնել նոր ներդիրը
+newtab-personalize-icon-label =
+    .title = Անհատականացնել նոր ներդիրը
+    .aria-label = Անհատականացնել նոր ներդիրը
 newtab-personalize-dialog-label =
     .aria-label = Անհատականացնել
 
@@ -175,6 +178,7 @@ newtab-section-expand-section-label =
 
 newtab-section-header-topsites = Լավագույն կայքեր
 newtab-section-header-highlights = Գունանշումներ
+newtab-section-header-recent-activity = Վերջին ակտիվություն
 # Variables:
 #  $provider (String): Name of the corresponding content provider.
 newtab-section-header-pocket = Առաջարկվում է { $provider }
@@ -214,4 +218,15 @@ newtab-error-fallback-refresh-link = Թարմացրեք էջը՝ կրկին փո
 ## Customization Menu
 
 newtab-custom-shortcuts-title = Դյուրանցումներ
+newtab-custom-shortcuts-subtitle = Կայքեր, որոնք պահել կամ այցելել եք
+newtab-custom-sponsored-sites = Հովանավորված դյուրանցումներ
+newtab-custom-recent-title = Վերջին ակտիվություն
+newtab-custom-recent-subtitle = Վերջին կայքերի և բովանդակության ընտրում
 newtab-custom-close-button = Փակել
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = Հատվածներ
+newtab-custom-snippets-subtitle = Հուշումներ և նորություններ { -vendor-short-name }-ից և { -brand-product-name }-ից
+newtab-custom-settings = Կառավարել լրացուցիչ կարգավորումները

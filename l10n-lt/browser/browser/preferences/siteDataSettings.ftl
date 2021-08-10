@@ -54,4 +54,7 @@ site-data-removing-dialog =
     .buttonlabelaccept = Pašalinti
 site-data-removing-header = Šalinami slapukai ir svetainių duomenys
 site-data-removing-desc = Pašalinus slapukus ir svetainių duomenis galite būti atjungti iš svetainių. Ar tikrai norite atlikti pakeitimus?
+# Variables:
+#   $baseDomain (String) - The single domain for which data is being removed
+site-data-removing-single-desc = Pašalinę slapukus ir svetainių duomenis galite būtų atjungti iš svetainių. Ar tikrai norite pašalinti <strong>{ $baseDomain }</strong> slapukus ir svetainės duomenis?
 site-data-removing-table = Šių svetainių slapukai ir susiję duomenys bus pašalinti

@@ -9,6 +9,8 @@ about-private-browsing-info-title = U bevindt zich in een privévenster
 about-private-browsing-info-myths = Veelgehoorde mythes over privénavigatie
 about-private-browsing =
     .title = Zoeken op het web
+about-private-browsing-search-btn =
+    .title = Zoeken op het web
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =

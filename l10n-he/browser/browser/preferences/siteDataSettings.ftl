@@ -54,4 +54,7 @@ site-data-removing-dialog =
     .buttonlabelaccept = הסרה
 site-data-removing-header = הסרת עוגיות ונתוני אתרים
 site-data-removing-desc = הסרת עוגיות ונתוני אתרים עשויה לנתק את המשתמש שלך מאתרים. האם ברצונך להמשיך בביצוע השינויים?
+# Variables:
+#   $baseDomain (String) - The single domain for which data is being removed
+site-data-removing-single-desc = הסרת עוגיות ונתוני אתרים עשוי לנתק את המשתמש שלך מאתרים. האם ברצונך להסיר עוגיות ונתוני אתרים עבור <strong>{ $baseDomain }</strong>?
 site-data-removing-table = עוגיות ונתוני אתרים עבור אתרי האינטרנט הבאים יימחקו

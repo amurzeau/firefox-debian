@@ -54,4 +54,7 @@ site-data-removing-dialog =
     .buttonlabelaccept = Kkes
 site-data-removing-header = Kkes Inagan n tuqna akked isefka n usmel
 site-data-removing-desc = Tuksa n inagan n tuqna akked isefka n usmel tezmer ad k-tsufeγ seg ismal. Tebγiḍ asenfel-a?
+# Variables:
+#   $baseDomain (String) - The single domain for which data is being removed
+site-data-removing-single-desc = Tukksa n yinagan n tuqqna d yisefka n usmel yezmer ad ak·akem-isuffeɣ seg yismal web. D tidet tebɣiḍ ad tekkseḍ inagan n tuqqna d yisefka n usmel i <strong>{ $baseDomain }</strong>?
 site-data-removing-table = Inagan n tuqna akked isefka n usmel n ismal-a ad ttwaksen

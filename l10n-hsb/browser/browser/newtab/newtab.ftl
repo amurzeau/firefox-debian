@@ -11,6 +11,9 @@ newtab-settings-button =
 newtab-personalize-button-label = Personalizować
     .title = Nowy rajtark personalizować
     .aria-label = Nowy rajtark personalizować
+newtab-personalize-icon-label =
+    .title = Nowy rajtark personalizować
+    .aria-label = Nowy rajtark personalizować
 newtab-personalize-dialog-label =
     .aria-label = Personalizować
 

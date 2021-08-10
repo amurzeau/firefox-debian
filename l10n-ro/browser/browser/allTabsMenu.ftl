@@ -13,7 +13,7 @@ all-tabs-menu-undo-close-tabs =
 
 # "Search" is a verb, as in "Search through tabs".
 all-tabs-menu-search-tabs =
-    .label = Caută în file
+    .label = Caută file
 
 all-tabs-menu-new-user-context =
     .label = Filă container nouă

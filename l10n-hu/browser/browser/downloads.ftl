@@ -34,7 +34,7 @@ downloads-cmd-cancel-panel =
 downloads-cmd-show-menuitem =
     .label = Tartalmazó mappa megnyitása
     .accesskey = m
-  
+
 # This message is only displayed on macOS devices
 downloads-cmd-show-menuitem-mac =
     .label = Megjelenítés a Finderben
@@ -129,6 +129,22 @@ downloads-show-more-information =
 # open the file using an app available in the system.
 downloads-open-file =
     .value = Fájl megnyitása
+
+## Displayed when the user clicked on a download in process. Indicates that the
+## downloading file will be opened after certain amount of time using an app
+## available in the system.
+## Variables:
+##   $hours (number) - Amount of hours left till the file opens.
+##   $seconds (number) - Amount of seconds left till the file opens.
+##   $minutes (number) - Amount of minutes till the file opens.
+
+downloading-file-opens-in-hours-and-minutes = Megnyitás { $days } n { $hours } ó { $minutes } p múlva…
+downloading-file-opens-in-minutes = Megnyitás { $minutes } p múlva…
+downloading-file-opens-in-minutes-and-seconds = Megnyitás { $minutes } p { $seconds } mp múlva…
+downloading-file-opens-in-seconds = Megnyitás { $seconds } mp múlva…
+downloading-file-opens-in-some-time = Megnyitás a befejezése után…
+
+##
 
 # Displayed when hovering a download which is able to be retried by users,
 # indicates that it's possible to download this file again.

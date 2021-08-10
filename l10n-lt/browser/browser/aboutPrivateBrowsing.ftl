@@ -9,6 +9,8 @@ about-private-browsing-info-title = Esate privačiojo naršymo lange
 about-private-browsing-info-myths = Dažni mitai apie privatųjį naršymą
 about-private-browsing =
     .title = Ieškokite saityne
+about-private-browsing-search-btn =
+    .title = Ieškokite saityne
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =
