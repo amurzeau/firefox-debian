@@ -1,3 +1,9 @@
+firefox-esr (91.0esr-1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 11 Aug 2021 11:05:38 +0900
+
 firefox (91.0-1) unstable; urgency=medium
 
   * New upstream release.
