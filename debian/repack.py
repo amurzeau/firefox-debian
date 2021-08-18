@@ -112,14 +112,18 @@ def filter_tar(orig, new, filt, topdir = None):
         tar = tarfile.open(orig, "r:" + file_extension(orig), URLFile(orig))
     else:
         tar = tarfile.open(orig, "r:" + file_extension(orig))
-    new_tar = tarfile.open(new + ".new", "w:" + file_extension(new))
+    new_tar = tarfile.open(new + ".new", "w:" + file_extension(new), format=tar.format)
 
     while True:
         info = tar.next()
         if not info:
             break
         if topdir:
-            info.name = "/".join([topdir] + info.name.split("/")[1:])
+            namefilt = lambda n: "/".join([topdir] + n.split("/")[1:])
+            info.name = namefilt(info.name)
+            if "path" in info.pax_headers:
+                info.pax_headers["path"] = namefilt(info.pax_headers["path"])
+
         do_filt = filt.match(info.name)
         if do_filt == None:
             print("Removing", info.name, file=sys.stderr)
