@@ -53,7 +53,7 @@ class GitImportTar(object):
                 (mark, mode) = info
                 if mode != 0o120000:
                     mode = 0o755 if (mode & 0o111) else 0o644
-                path = path[len(basedir):]
+                path = path[len(basedir):].lstrip('/')
                 if prefix != '':
                     path = prefix + '/' + path
                 self.git.write("M %o :%d %s\n" % (mode, mark, path))
