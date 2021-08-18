@@ -1,3 +1,12 @@
+firefox-esr (91.0.1esr-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2021-37, also known as CVE-2021-29991.
+
+  * debian/import-tar.py, debian/repack.py: Fixed for python 3.9.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 18 Aug 2021 10:28:37 +0900
+
 firefox-esr (91.0esr-1) experimental; urgency=medium
 
   * New upstream release.
