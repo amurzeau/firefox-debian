@@ -2751,12 +2751,24 @@ nsDOMWindowUtils::AdvanceTimeAndRefresh(int64_t aMilliseconds) {
 
 NS_IMETHODIMP
 nsDOMWindowUtils::GetLastTransactionId(uint64_t* aLastTransactionId) {
-  nsPresContext* presContext = GetPresContext();
+  nsCOMPtr<nsIDocShell> docShell = GetDocShell();
+  if (!docShell) {
+    return NS_ERROR_UNEXPECTED;
+  }
+
+  nsCOMPtr<nsIDocShellTreeItem> rootTreeItem;
+  docShell->GetInProcessRootTreeItem(getter_AddRefs(rootTreeItem));
+  docShell = do_QueryInterface(rootTreeItem);
+  if (!docShell) {
+    return NS_ERROR_UNEXPECTED;
+  }
+
+  nsPresContext* presContext = docShell->GetPresContext();
   if (!presContext) {
     return NS_ERROR_UNEXPECTED;
   }
 
-  nsRefreshDriver* driver = presContext->GetRootPresContext()->RefreshDriver();
+  nsRefreshDriver* driver = presContext->RefreshDriver();
   *aLastTransactionId = uint64_t(driver->LastTransactionId());
   return NS_OK;
 }
@@ -4420,7 +4432,9 @@ struct StateTableEntry {
 
 static constexpr StateTableEntry kManuallyManagedStates[] = {
     {"autofill", NS_EVENT_STATE_AUTOFILL},
-    {"-moz-autofill-preview", NS_EVENT_STATE_AUTOFILL_PREVIEW},
+    // :-moz-autofill-preview implies :autofill.
+    {"-moz-autofill-preview",
+     NS_EVENT_STATE_AUTOFILL_PREVIEW | NS_EVENT_STATE_AUTOFILL},
     {nullptr, EventStates()},
 };
 
