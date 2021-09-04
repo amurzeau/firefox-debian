@@ -2,8 +2,6 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!-- extracted from am-main.xul -->
-
 <!-- extracted from am-main.xhtml -->
 
 <!ENTITY accountTitle.label "Configuración de cuenta">
@@ -29,8 +27,8 @@
 <!ENTITY signatureFile.label "Adjuntar la firma desde un archivo (texto, HTML o imagen):">
 <!ENTITY signatureFile.accesskey "t">
 <!ENTITY edit.label "Editar…">
-<!ENTITY choose.label "Elegir…">
-<!ENTITY choose.accesskey "g">
+<!ENTITY choose.label "Seleccionar…">
+<!ENTITY choose.accesskey "c">
 <!ENTITY editVCard.label "Editar tarjeta…">
 <!ENTITY editVCard.accesskey "d">
 <!-- LOCALIZATION NOTE (attachVCard.label) : do not translate "vCard" in below line -->

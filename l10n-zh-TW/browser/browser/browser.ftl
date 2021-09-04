@@ -544,6 +544,19 @@ urlbar-result-action-search-bookmarks = 搜尋書籤
 urlbar-result-action-search-history = 搜尋瀏覽記錄
 urlbar-result-action-search-tabs = 搜尋分頁
 
+## Labels shown above groups of urlbar results
+
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = { $engine } 建議
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -676,6 +689,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = 離線模式
     .accesskey = k
+toolbar-overflow-customize-button =
+    .label = 自訂工具列…
+    .accesskey = C
 
 ## EME notification panel
 
@@ -708,3 +724,24 @@ remote-tabs-sync-now = 立刻同步
 # "More" item in macOS share menu
 menu-share-more =
     .label = 更多…
+ui-tour-info-panel-close =
+    .tooltiptext = 關閉
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = 允許 { $uriHost } 的彈出型視窗
+    .accesskey = p
+popups-infobar-block =
+    .label = 封鎖 { $uriHost } 的彈出型視窗
+    .accesskey = p
+
+##
+
+popups-infobar-dont-show-message =
+    .label = 擋下彈出型視窗時不顯示此訊息
+    .accesskey = D
+picture-in-picture-hide-toggle =
+    .label = 隱藏子母畫面切換按鈕
+    .accesskey = H

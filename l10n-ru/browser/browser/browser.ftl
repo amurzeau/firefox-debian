@@ -16,9 +16,9 @@
 #  $content-title (String): the title of the web content.
 browser-main-window =
     .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } (Приватный просмотр)
+    .data-title-private = { -brand-full-name } (Приватный режим)
     .data-content-title-default = { $content-title } — { -brand-full-name }
-    .data-content-title-private = { $content-title } — { -brand-full-name } (Приватный просмотр)
+    .data-content-title-private = { $content-title } — { -brand-full-name } (Приватный режим)
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -35,9 +35,9 @@ browser-main-window =
 #  $content-title (String): the title of the web content.
 browser-main-window-mac =
     .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } — (Приватный просмотр)
+    .data-title-private = { -brand-full-name } — (Приватный режим)
     .data-content-title-default = { $content-title }
-    .data-content-title-private = { $content-title } — (Приватный просмотр)
+    .data-content-title-private = { $content-title } — (Приватный режим)
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -196,7 +196,7 @@ search-one-offs-context-set-as-default =
     .label = Установить как поисковую систему по умолчанию
     .accesskey = о
 search-one-offs-context-set-as-default-private =
-    .label = Использовать данную поисковую систему по умолчанию в Приватных окнах
+    .label = Использовать как поисковую систему по умолчанию в приватных окнах
     .accesskey = З
 # Search engine one-off buttons with an @alias shortcut/keyword.
 # Variables:
@@ -551,6 +551,19 @@ urlbar-result-action-search-bookmarks = Искать в закладках
 urlbar-result-action-search-history = Искать в журнале
 urlbar-result-action-search-tabs = Искать во вкладках
 
+## Labels shown above groups of urlbar results
+
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = Предложения от { $engine }
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -569,11 +582,11 @@ pointerlock-warning-no-domain = Этот документ контролируе
 
 ## Subframe crash notification
 
-crashed-subframe-message = <strong>Часть этой страницы упала.</strong> Чтобы сообщить { -brand-product-name } об этой проблеме и ускорить её исправление, пожалуйста, отправьте сообщение.
+crashed-subframe-message = <strong>Часть этой страницы потерпела сбой.</strong> Чтобы сообщить { -brand-product-name } об этой проблеме и ускорить её исправление, отправьте отчёт.
 # The string for crashed-subframe-title.title should match crashed-subframe-message,
 # but without any markup.
 crashed-subframe-title =
-    .title = Часть этой страницы упала. Чтобы сообщить { -brand-product-name } об этой проблеме и ускорить её исправление, пожалуйста, отправьте сообщение.
+    .title = Часть этой страницы потерпела сбой. Чтобы сообщить { -brand-product-name } об этой проблеме и ускорить её исправление, отправьте отчёт.
 crashed-subframe-learnmore-link =
     .value = Узнать больше
 crashed-subframe-submit =
@@ -683,6 +696,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = Работать автономно
     .accesskey = б
+toolbar-overflow-customize-button =
+    .label = Настроить панель инструментов…
+    .accesskey = а
 
 ## EME notification panel
 
@@ -715,3 +731,24 @@ remote-tabs-sync-now = Синхронизировать
 # "More" item in macOS share menu
 menu-share-more =
     .label = Ещё…
+ui-tour-info-panel-close =
+    .tooltiptext = Закрыть
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = Разрешить всплывающие окна для { $uriHost }
+    .accesskey = Р
+popups-infobar-block =
+    .label = Заблокировать всплывающие окна для { $uriHost }
+    .accesskey = Р
+
+##
+
+popups-infobar-dont-show-message =
+    .label = Не показывать это сообщение при блокировке всплывающих окон
+    .accesskey = н
+picture-in-picture-hide-toggle =
+    .label = Скрыть переключатель «Картинка в картинке»
+    .accesskey = ы

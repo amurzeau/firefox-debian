@@ -12,6 +12,14 @@ account-setup-description =
     { -brand-product-name } se pokusí automaticky najít funkční a doporučené nastavení serveru.
 account-setup-secondary-description = { -brand-product-name } automaticky vyhledá funkční a doporučenou konfiguraci serveru.
 account-setup-success-title = Účet byl úspěšně vytvořen
+account-setup-success-description =
+    Nyní můžete tento účet používat používat v { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "loc") }
+        [feminine] { -brand-short-name(case: "loc") }
+        [neuter] { -brand-short-name(case: "loc") }
+       *[other] aplikaci { -brand-short-name }
+    }.
+account-setup-success-secondary-description = Připojení souvisejících služeb a konfigurace pokročilého nastavení účtu vám může usnadnit další práci.
 
 ## Form fields
 
@@ -141,6 +149,8 @@ account-setup-result-pop = POP3
 account-setup-result-pop-description = Uchová vaše složky a e-maily na vašem počítači
 # Note: Exchange is the name of a product.
 account-setup-result-exchange = Exchange
+# Note: Exchange, Office365 are the name of products.
+account-setup-result-exchange2-description = Použije server Microsoft Exchange nebo cloudové služby Office365
 account-setup-incoming-title = Příchozí
 account-setup-outgoing-title = Odchozí
 account-setup-username-title = Uživatelské jméno
@@ -253,6 +263,20 @@ account-setup-address-book-carddav-button = Připojit adresář CardDAV
 account-setup-address-book-ldap-button = Připojit adresář LDAP
 account-setup-calendar-button = Připojit vzdálený kalendář
 account-setup-linked-services-title = Připojení propojených služeb
+account-setup-linked-services-description =
+    { -brand-short-name.gender ->
+        [masculine] { -brand-short-name } zjistil
+        [feminine] { -brand-short-name } zjistila
+        [neuter] { -brand-short-name } zjistilo
+       *[other] Aplikace { -brand-short-name } zjistila
+    } další služby propojené s vaším e-mailovým účtem.
+account-setup-no-linked-description =
+    Nastavte si další služby, abyste { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "acc") }
+        [feminine] { -brand-short-name(case: "acc") }
+        [neuter] { -brand-short-name(case: "acc") }
+       *[other] aplikaci { -brand-short-name }
+    } využili na maximum.
 # Variables:
 # $count (Number) - The number of address books found during autoconfig.
 account-setup-found-address-books-description =

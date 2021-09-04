@@ -28,7 +28,7 @@
 <!ENTITY insertLinkCmd2.label "Σύνδεσμος…">
 <!ENTITY insertLinkCmd2.accesskey "Σ">
 <!ENTITY insertLinkCmd2.key "K">
-<!ENTITY insertAnchorCmd.label "Άγκυρα με όνομα…">
+<!ENTITY insertAnchorCmd.label "Επώνυμη άγκυρα…">
 <!ENTITY insertAnchorCmd.accesskey "α">
 <!ENTITY insertImageCmd.label "Εικόνα…">
 <!ENTITY insertImageCmd.accesskey "Ε">
@@ -139,7 +139,7 @@
 
 <!ENTITY formatRemoveStyles.key "Y">
 <!ENTITY formatRemoveLinks.key "K">
-<!ENTITY formatRemoveNamedAnchors.label "Αφαίρεση αγκυρών με όνομα">
+<!ENTITY formatRemoveNamedAnchors.label "Αφαίρεση επώνυμων αγκυρών">
 <!ENTITY formatRemoveNamedAnchors.accesskey "ρ">
 <!ENTITY formatRemoveNamedAnchors2.key "R">
 
@@ -169,7 +169,7 @@
 <!ENTITY formatlistMenu.accesskey "Λ">
 <!ENTITY noneCmd.label "Κανένα">
 <!ENTITY noneCmd.accesskey "ν">
-<!ENTITY listBulletCmd.label "Κουκίδες">
+<!ENTITY listBulletCmd.label "Κουκκίδες">
 <!ENTITY listBulletCmd.accesskey "Κ">
 <!ENTITY listNumberedCmd.label "Αριθμημένη">
 <!ENTITY listNumberedCmd.accesskey "μ">
@@ -186,8 +186,8 @@
 <!ENTITY bodyTextCmd.label "Κύριο μέρος">
 <!ENTITY bodyTextCmd.accesskey "μ">
 <!-- isn't used in menu now, but may be added in future -->
-<!ENTITY advancedPropertiesCmd.label "Προηγμένες ιδιότητες">
-<!ENTITY advancedPropertiesCmd.accesskey "γ">
+<!ENTITY advancedPropertiesCmd.label "Σύνθετες ιδιότητες">
+<!ENTITY advancedPropertiesCmd.accesskey "θ">
 
 <!-- Align menu items -->
 <!ENTITY alignMenu.label "Στοίχιση">
@@ -303,7 +303,7 @@
 <!ENTITY tableToolbarCmd.label "Πίνακας">
 <!ENTITY tableToolbarCmd.tooltip "Εισαγωγή νέου πίνακα ή επεξεργασία ιδιοτήτων επιλεγμένου πίνακα">
 <!ENTITY linkToolbarCmd.label "Σύνδεσμος">
-<!ENTITY linkToolbarCmd.tooltip "Εισαγωγή νέου ή επεξεργασία ιδιοτήτων επιλεγμένου δεσμού">
+<!ENTITY linkToolbarCmd.tooltip "Εισαγωγή νέου συνδέσμου ή επεξεργασία ιδιοτήτων επιλεγμένου">
 <!ENTITY anchorToolbarCmd.label "Άγκυρα">
 <!ENTITY anchorToolbarCmd.tooltip "Εισαγωγή νέας άγκυρας ή επεξεργασία ιδιοτήτων επιλεγμένης άγκυρας">
 <!ENTITY colorButtons.title "Χρώματα">

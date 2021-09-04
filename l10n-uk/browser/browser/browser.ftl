@@ -548,6 +548,19 @@ urlbar-result-action-search-bookmarks = Шукати в закладках
 urlbar-result-action-search-history = Шукати в історії
 urlbar-result-action-search-tabs = Шукати у вкладках
 
+## Labels shown above groups of urlbar results
+
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = Пропозиції { $engine }
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -680,6 +693,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = Працювати автономно
     .accesskey = ю
+toolbar-overflow-customize-button =
+    .label = Налаштувати панель інструментів…
+    .accesskey = Н
 
 ## EME notification panel
 
@@ -712,3 +728,24 @@ remote-tabs-sync-now = Синхронізувати
 # "More" item in macOS share menu
 menu-share-more =
     .label = Більше…
+ui-tour-info-panel-close =
+    .tooltiptext = Закрити
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = Дозволити спливні вікна для { $uriHost }
+    .accesskey = о
+popups-infobar-block =
+    .label = Блокувати спливні вікна для { $uriHost }
+    .accesskey = о
+
+##
+
+popups-infobar-dont-show-message =
+    .label = Не показувати це повідомлення при блокуванні спливних вікон
+    .accesskey = е
+picture-in-picture-hide-toggle =
+    .label = Приховати перемикач Зображення в зображенні
+    .accesskey = х

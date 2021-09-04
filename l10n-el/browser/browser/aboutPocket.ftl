@@ -11,7 +11,6 @@
 # Placeholder text for tag input
 pocket-panel-saved-add-tags =
     .placeholder = Προσθήκη ετικετών
-
 pocket-panel-saved-error-generic = Προέκυψε σφάλμα κατά την προσπάθεια αποθήκευσης στο { -pocket-brand-name }.
 pocket-panel-saved-error-tag-length = Οι ετικέτες έχουν όριο 25 χαρακτήρες
 pocket-panel-saved-error-only-links = Μόνο οι σύνδεσμοι μπορούν να αποθηκευτούν
@@ -34,7 +33,7 @@ pocket-panel-signup-already-have = Είστε ήδη χρήστης του { -po
 pocket-panel-signup-learn-more = Μάθετε περισσότερα
 pocket-panel-signup-login = Σύνδεση
 pocket-panel-signup-signup-email = Εγγραφή με email
-pocket-panel-signup-signup-cta = Εγγραφείτε στο { -pocket-brand-name }. Δωρεάν.
+pocket-panel-signup-signup-cta = Εγγραφείτε στο { -pocket-brand-name }. Είναι δωρεάν.
 pocket-panel-signup-signup-firefox = Εγγραφή με { -brand-product-name }
 pocket-panel-signup-tagline = Αποθηκεύστε άρθρα και βίντεο από το { -brand-product-name } για προβολή στο { -pocket-brand-name } από οποιαδήποτε συσκευή, ανά πάσα στιγμή.
 pocket-panel-signup-tagline-story-one = Κάντε κλικ στο κουμπί του { -pocket-brand-name } για να αποθηκεύσετε οποιοδήποτε άρθρο, βίντεο ή σελίδα από το { -brand-product-name }.
@@ -44,7 +43,7 @@ pocket-panel-signup-tagline-story-two = Προβολή στο { -pocket-brand-na
 
 pocket-panel-home-my-list = Η λίστα μου
 pocket-panel-home-welcome-back = Καλώς ορίσατε ξανά
-pocket-panel-home-paragraph = Μπορείτε να χρησιμοποιήσετε το { -pocket-brand-name } για να εξερευνήσετε και να αποθηκεύσετε ιστοσελίδες, άρθρα, βίντεο, podcast, ή για να επιστρέψετε σε αυτό που διαβάζατε.
+pocket-panel-home-paragraph = Μπορείτε να χρησιμοποιήσετε το { -pocket-brand-name } για να εξερευνήσετε και να αποθηκεύσετε ιστοσελίδες, άρθρα, βίντεο, podcast ή για να επιστρέψετε σε αυτό που διαβάζατε.
 pocket-panel-home-explore-popular-topics = Εξερεύνηση δημοφιλών θεμάτων
 pocket-panel-home-discover-more = Ανακάλυψη
 pocket-panel-home-explore-more = Εξερεύνηση

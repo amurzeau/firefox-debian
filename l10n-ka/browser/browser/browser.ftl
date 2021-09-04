@@ -544,6 +544,19 @@ urlbar-result-action-search-bookmarks = სანიშნების ძიე
 urlbar-result-action-search-history = ისტორიის ძიება
 urlbar-result-action-search-tabs = ჩანართების ძიება
 
+## Labels shown above groups of urlbar results
+
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = { $engine } შემოთავაზებები
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -676,6 +689,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = კავშირგარეშე რეჟიმი
     .accesskey = კ
+toolbar-overflow-customize-button =
+    .label = ხელსაწყოთა ზოლის მორგება…
+    .accesskey = ზ
 
 ## EME notification panel
 
@@ -708,3 +724,24 @@ remote-tabs-sync-now = დასინქრონება ახლავე
 # "More" item in macOS share menu
 menu-share-more =
     .label = სხვა…
+ui-tour-info-panel-close =
+    .tooltiptext = დახურვა
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = ამომხტომი ფანჯრების დაშვება – { $uriHost }
+    .accesskey = დ
+popups-infobar-block =
+    .label = ამომხტომი ფანჯრების აკრძალვა – { $uriHost }
+    .accesskey = დ
+
+##
+
+popups-infobar-dont-show-message =
+    .label = შეტყობინების დამალვა ამომხტარი ფანჯრის შეზღუდვისას
+    .accesskey = დ
+picture-in-picture-hide-toggle =
+    .label = ეკრანი-ეკრანში გადამრთველის დამალვა
+    .accesskey = ე

@@ -3,9 +3,9 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!-- Window title -->
-<!ENTITY siteUrl.label         " URL ιστοσελίδας:">
-<!ENTITY docSubdir.label       "Υποκατάλογος σελίδας...">
-<!ENTITY otherSubdir.label     "Υποκατάλογος εικόνας...">
+<!ENTITY siteUrl.label         "URL ιστοτόπου:">
+<!ENTITY docSubdir.label       "Υποκατάλογος σελίδας:">
+<!ENTITY otherSubdir.label     "Υποκατάλογος εικόνας:">
 
 <!ENTITY status.label          "Δημοσίευση…">
 <!ENTITY fileList.label        "Κατάσταση δημοσίευσης">

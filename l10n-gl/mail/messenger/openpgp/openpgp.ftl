@@ -505,6 +505,154 @@ delete-external-key-title = Retirar a chave GnuPG externa
 delete-external-key-description = Quer retirar este identificador de chave GnuPG externa?
 key-in-use-title = A chave OpenPGP está a ser utilizada actualmente
 delete-key-in-use-description = Non se puido proceder. A chave que seleccionou para eliminar esta a ser utilizada por esta identidade. Seleccione unha chave diferente ou non seleccione ningunha e ténteo de novo.
+revoke-key-in-use-description = Non se puido proceder. A chave que seleccionou para revogar esta a ser utilizada por esta identidade. Seleccione unha chave diferente ou non seleccione ningunha e ténteo de novo.
+# Strings used in errorHandling.jsm
+key-error-key-spec-not-found = O enderezo de correo electrónico «{ $keySpec }» non corresponde con ningunha chave do seu chaveiro.
+key-error-key-id-not-found = O identificador da chave configurada «{ $keySpec }» non foi atopado no seu chaveiro.
+key-error-not-accepted-as-personal = Non confirmou que a chave co identificador «{ $keySpec }» sexa a súa chave persoal.
+# Strings used in enigmailKeyManager.js & windows.jsm
+need-online = A función que seleccionou non está dispoñíbel no modo sen conexión. Conéctese e ténteo de novo.
+# Strings used in keyRing.jsm & keyLookupHelper.jsm
+no-key-found = Non puidemos atopar ningunha chave que coincida cos criterios de busca especificados.
+# Strings used in keyRing.jsm & GnuPGCryptoAPI.jsm
+fail-key-extract = Erro: fallou a orde de extracción da chave
+# Strings used in keyRing.jsm
+fail-cancel = Erro: a recepción da chave foi cancelada polo usuario
+not-first-block = Erro: o primeiro bloque OpenPGP non é un bloque de chave pública
+import-key-confirm = Quere importar as chaves públicas incrustadas na mensaxe?
+fail-key-import = Erro: fallou a importación da chave
+file-write-failed = Produciuse un fallo ao escribir no ficheiro { $output }
+no-pgp-block = Erro: non se atopou ningún bloque de datos blindado OpenPGP válido
+confirm-permissive-import = Fallou a importación. A chave que tenta importar pode estar corrompida ou usar atributos descoñecidos. Quere tentar importar as partes correctas? Isto pode resultar na importación de chaves incompletas e inutilizábeis.
+# Strings used in trust.jsm
+key-valid-unknown = descoñecida
+key-valid-invalid = non valida
+key-valid-disabled = desactivada
+key-valid-revoked = revogada
+key-valid-expired = caducada
+key-trust-untrusted = non fiábel
+key-trust-marginal = marxinal
+key-trust-full = fiábel
+key-trust-ultimate = absoluta
+key-trust-group = (grupo)
+# Strings used in commonWorkflows.js
+import-key-file = Importar o ficheiro de chave OpenPGP
+import-rev-file = Importar ficheiro de revogación OpenPGP
+gnupg-file = Ficheiros GnuPG
+import-keys-failed = Fallou a importación das chaves
+passphrase-prompt = Insira a frase secreta que desbloquea a seguinte chave: { $key }
+file-to-big-to-import = Este ficheiro é demasiado grande. Non importe un conxunto grande de chaves á vez.
+# Strings used in enigmailKeygen.js
+save-revoke-cert-as = Crear e gardar un certificado de revogación
+revoke-cert-ok = O certificado de revogación creouse correctamente. Pode usalo para invalidar a túa chave pública, por exemplo, no caso de que perdese a súa chave secreta.
+revoke-cert-failed = Non se puido crear o certificado de revogación.
+gen-going = A xeración da chave xa está en curso.
+keygen-missing-user-name = Non hai ningún nome especificado para a conta/identidade seleccionada. Insira un valor no campo «O seu nome» na configuración da conta.
+expiry-too-short = A súa chave debe ser válida polo menos durante un día.
+expiry-too-long = Non pode crear unha chave que caduca en máis de 100 anos.
+key-confirm = Quere xerar unha chave pública e secreta para «{ $identity }»?
+key-man-button-generate-key = &Xerar unha chave
+key-abort = Quere abortar a xeración da chave?
+key-man-button-generate-key-abort = &Abortar a xeración da chave
+key-man-button-generate-key-continue = &Continuar a xeración da chave
 
 # Strings used in enigmailMessengerOverlay.js
 
+failed-decrypt = Erro: fallou o descifrado
+fix-broken-exchange-msg-failed = Non se puido reparar esta mensaxe.
+attachment-no-match-from-signature = Non se puido facer coincidir o ficheiro da sinatura «{ $attachment }» cun anexo
+attachment-no-match-to-signature = Non se puido facer coincidir o anexo «{ $attachment }» cun ficheiro de sinatura
+signature-verified-ok = A sinatura do anexo { $attachment } verificouse correctamente
+signature-verify-failed = Non se puido verificar a sinatura do anexo { $attachment }
+decrypt-ok-no-sig =
+    Aviso
+    O descifrado foi correcto, pero a sinatura non se puido verificar correctamente
+msg-ovl-button-cont-anyway = &Continuar de todos os xeitos
+enig-content-note = *Os anexos desta mensaxe non foron asinados nin cifrados*
+# Strings used in enigmailMsgComposeOverlay.js
+msg-compose-button-send = &Enviar a mensaxe
+msg-compose-details-button-label = Detalles…
+msg-compose-details-button-access-key = D
+send-aborted = Abortouse a operación de envío.
+key-not-trusted = Non hai suficiente confianza para a chave «{ $key }»
+key-not-found = A chave «{ $key }» non se atopou
+key-revoked = A chave «{ $key }» foi revogada
+key-expired = A chave «{ $key }» caducou
+msg-compose-internal-error = Produciuse un erro interno.
+keys-to-export = Seleccione as chaves OpenPGP a inserir
+msg-compose-partially-encrypted-inlinePGP =
+    A mensaxe á que responde contiña partes cifradas e non cifradas. Se o remitente non foi capaz de descifrar orixinalmente algunhas partes da mensaxe, é posíbel que estea divulgando información confidencial que o remitente non foi quen de descifrar orixinalmente.
+    Considere eliminar todo o texto citado da súa resposta a este remitente.
+msg-compose-cannot-save-draft = Produciuse un erro ao gardar o borrador
+msg-compose-partially-encrypted-short = Coidado con divulgar información confidencial: o correo electrónico está parcialmente cifrado.
+quoted-printable-warn =
+    Activou a codificación «quoted-printable» para o envío de mensaxes. Isto pode producir un descifrado e/ou verificación incorrecta da súa mensaxe.
+    Desexa desactivar o envío de mensaxes «quoted-printable» agora?
+minimal-line-wrapping =
+    Estabeleceu o axuste de liñas en { $width } caracteres. Para un cifrado e/ou sinatura correctos, este valor ten que ser polo menos de 68.
+    Desexa cambiar o axuste de liña a 68 caracteres?
+sending-hidden-rcpt = Non se poden empregar destinatarios Cco (con copia oculta) ao enviar unha mensaxe cifrada. Para enviar esta mensaxe cifrada, elimine os destinatarios Cco ou móvaos ao campo Cc.
+sending-news =
+    Operación de envío cifrada foi abortada.
+    Esta mensaxe non se pode cifrar porque hai destinatarios dun grupo de novas. Envíe de novo a mensaxe sen cifrar.
+send-to-news-warning =
+    Aviso: está a piques de enviar un correo electrónico cifrado a un grupo de novas.
+    Isto desaconséllase porque só ten sentido se todos os membros do grupo poden descifrar a mensaxe, é dicir, a mensaxe debe cifrarse coas claves de todos os participantes do grupo. Envíe esta mensaxe só se sabe exactamente o que está a facer.
+    Quere continuar?
+save-attachment-header = Gardar o anexo descifrado
+no-temp-dir =
+    Non se puido atopar un directorio temporal no que escribir
+    Configure a variábel de contorno TEMP
+possibly-pgp-mime = Posibelmente a mensaxe está cifrada ou asinada PGP/MIME; use a función «Descifrar/Verificar» para verificar
+cannot-send-sig-because-no-own-key = Non se pode asinar dixitalmente esta mensaxe porque aínda non configurou o cifrado de extremo a extremo para <{ $key }>
+cannot-send-enc-because-no-own-key = Non se pode enviar esta mensaxe porque aínda non configurou o cifrado de extremo a extremo para <{ $key }>
+compose-menu-attach-key =
+    .label = Anexar a miña chave pública
+    .accesskey = A
+compose-menu-encrypt-subject =
+    .label = Cifraxe do asunto
+    .accesskey = C
+# Strings used in decryption.jsm
+do-import-multiple =
+    Quere importar as seguintes chaves?
+    { $key }
+do-import-one = Quere importar { $name } ({ $id })?
+cant-import = Produciuse un erro ao importar a chave pública
+unverified-reply = Probabelmente se modificou a parte da mensaxe con sangrado (resposta)
+key-in-message-body = Atopouse unha chave no corpo da mensaxe. Faga clic en «Importar a chave» para importar a chave
+sig-mismatch = Erro: a sinatura non concorda
+invalid-email = Erro: un ou máis enderezos de correo electrónico non son válidos
+attachment-pgp-key =
+    O anexo «{ $name }» que está a abrir parece ser un ficheiro de chave OpenPGP.
+    Faga clic en «Importar» para importar as chaves contidas ou en «Ver» para ver o contido do ficheiro nunha xanela do navegador
+dlg-button-view = &Ver
+# Strings used in enigmailMsgHdrViewOverlay.js
+decrypted-msg-with-format-error = Mensaxe descifrada (o formato de correo electrónico PGP corrompido foi restaurado, probabelmente a causa foi un antigo servidor de Exchange, polo que o resultado pode non ser perfecto para ler)
+# Strings used in encryption.jsm
+not-required = Erro: non se precisa cifrado
+# Strings used in windows.jsm
+no-photo-available = Non hai unha foto dispoñíbel
+error-photo-path-not-readable = A ruta da foto «{ $photo }» non é lexíbel
+debug-log-title = Rexistro de depuración OpenPGP
+# Strings used in dialog.jsm
+repeat-prefix = Esta alerta repetirase { $count }
+repeat-suffix-singular = vez máis.
+repeat-suffix-plural = veces máis.
+no-repeat = Esta alerta non se amosará de novo.
+dlg-keep-setting = Lembre a miña resposta e non me volva preguntar
+dlg-button-ok = &Vale
+dlg-button-close = &Pechar
+dlg-button-cancel = &Cancelar
+dlg-no-prompt = Non amosar esta xanela de novo.
+enig-prompt = Solicitude de OpenPGP
+enig-confirm = Confirmación de OpenPGP
+enig-alert = Alerta de OpenPGP
+enig-info = Información de OpenPGP
+# Strings used in persistentCrypto.jsm
+dlg-button-retry = &Tentar de novo
+dlg-button-skip = &Saltar
+# Strings used in enigmailCommon.js
+enig-error = Erro de OpenPGP
+# Strings used in enigmailMsgBox.js
+enig-alert-title =
+    .title = Alerta de OpenPGP
