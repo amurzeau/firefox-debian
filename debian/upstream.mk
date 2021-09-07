@@ -56,6 +56,12 @@ endif
 ifneq (,$(filter 11%,$(DEBIAN_TARGET)))
 DIST = bullseye
 endif
+ifneq (,$(filter 12%,$(DEBIAN_TARGET)))
+DIST = bookworm
+endif
+ifneq (,$(filter 13%,$(DEBIAN_TARGET)))
+DIST = trixie
+endif
 endif
 
 PRODUCT_NAME := $(DEBIAN_SOURCE)
