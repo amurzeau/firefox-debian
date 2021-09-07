@@ -20,7 +20,7 @@ PRODUCT := browser
 include debian/upstream.mk
 
 SYSTEM_LIBS = zlib ffi
-ifeq (,$(filter stretch buster,$(DIST)))
+ifeq (,$(filter stretch buster bullseye,$(DIST)))
 SYSTEM_LIBS += nspr nss
 endif
 ifeq (,$(filter stretch,$(DIST)))
