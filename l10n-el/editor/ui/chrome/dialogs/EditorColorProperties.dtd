@@ -5,7 +5,7 @@
 <!-- Window title -->
 <!ENTITY windowTitle.label "Χρώματα και φόντο σελίδας">
 <!ENTITY pageColors.label "Χρώματα σελίδας">
-<!ENTITY defaultColorsRadio.label "Προεπιλεγμένα χρώματα">
+<!ENTITY defaultColorsRadio.label "Προεπιλεγμένα χρώματα αναγνώστη (Χωρίς ορισμό χρωμάτων στη σελίδα)">
 <!ENTITY defaultColorsRadio.accessKey "γ">
 <!ENTITY defaultColorsRadio.tooltip "Χρήση των ρυθμίσεων χρώματος από το περιηγητή του αναγνώστη μόνο">
 <!ENTITY customColorsRadio.label "Χρήση προσαρμοσμένων χρωμάτων:">
@@ -14,11 +14,11 @@
 
 <!ENTITY normalText.label "Κανονικό κείμενο">
 <!ENTITY normalText.accessKey "ν">
-<!ENTITY linkText.label "Κείμενο διασύνδεσης">
+<!ENTITY linkText.label "Κείμενο συνδέσμου">
 <!ENTITY linkText.accessKey "δ">
-<!ENTITY activeLinkText.label "Χρώμα ενεργής διασύνδεσης">
+<!ENTITY activeLinkText.label "Κείμενο ενεργού συνδέσμου">
 <!ENTITY activeLinkText.accessKey "ε">
-<!ENTITY visitedLinkText.label "Χρώμα αναγνωσμένης διασύνδεσης">
+<!ENTITY visitedLinkText.label "Κείμενο ανοιγμένου συνδέσμου">
 <!ENTITY visitedLinkText.accessKey "σ">
 <!ENTITY background.label "Φόντο:">
 <!ENTITY background.accessKey "Φ">

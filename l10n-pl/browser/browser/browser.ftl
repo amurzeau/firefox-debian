@@ -551,6 +551,19 @@ urlbar-result-action-search-bookmarks = szukaj w zakładkach
 urlbar-result-action-search-history = szukaj w historii
 urlbar-result-action-search-tabs = szukaj w kartach
 
+## Labels shown above groups of urlbar results
+
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = Podpowiedzi { $engine }
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -683,6 +696,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = Pracuj w trybie offline
     .accesskey = c
+toolbar-overflow-customize-button =
+    .label = Dostosuj pasek narzędzi…
+    .accesskey = D
 
 ## EME notification panel
 
@@ -715,3 +731,24 @@ remote-tabs-sync-now = Synchronizuj teraz
 # "More" item in macOS share menu
 menu-share-more =
     .label = Więcej…
+ui-tour-info-panel-close =
+    .tooltiptext = Zamknij
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = Pozwól { $uriHost } otwierać wyskakujące okna
+    .accesskey = w
+popups-infobar-block =
+    .label = Blokuj wyskakujące okna z { $uriHost }
+    .accesskey = w
+
+##
+
+popups-infobar-dont-show-message =
+    .label = Nie pokazuj tej wiadomości, kiedy wyskakujące okna są blokowane
+    .accesskey = N
+picture-in-picture-hide-toggle =
+    .label = Ukryj przycisk „Obraz w obrazie”
+    .accesskey = U

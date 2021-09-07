@@ -98,7 +98,7 @@ urlbar-persistent-storage-notification-anchor =
 urlbar-addons-notification-anchor =
     .tooltiptext = Wobceŕk powěźeńki dodankoweje instalacije wócyniś
 urlbar-tip-help-icon =
-    .title = Pomoc se wobstaraś
+    .title = Pomoc wobstaraś
 urlbar-search-tips-confirm = W pórěźe, som zrozměł
 # Read out before Urlbar Tip text content so screenreader users know the
 # subsequent text is a tip offered by the browser. It should end in a colon or
@@ -555,6 +555,19 @@ urlbar-result-action-search-bookmarks = Cytańske znamjenja pśepytaś
 urlbar-result-action-search-history = Historiju pśepytaś
 urlbar-result-action-search-tabs = Rejtariki pśepytaś
 
+## Labels shown above groups of urlbar results
+
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = Naraźenja pytnice { $engine }
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -687,6 +700,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = Offline źěłaś
     .accesskey = O
+toolbar-overflow-customize-button =
+    .label = Symbolowu rědku pśiměriś…
+    .accesskey = S
 
 ## EME notification panel
 
@@ -719,3 +735,24 @@ remote-tabs-sync-now = Něnto synchronizěrowaś
 # "More" item in macOS share menu
 menu-share-more =
     .label = Wěcej…
+ui-tour-info-panel-close =
+    .tooltiptext = Zacyniś
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = Wuskokujuce wokna za { $uriHost } dowóliś
+    .accesskey = u
+popups-infobar-block =
+    .label = Wuskokujuce wokna za { $uriHost } blokěrowaś
+    .accesskey = u
+
+##
+
+popups-infobar-dont-show-message =
+    .label = Toś tu powěsć njepokazaś, gaž wuskokujuce wokna se blokěruju
+    .accesskey = n
+picture-in-picture-hide-toggle =
+    .label = Pśešaltowanje wobraz-we-wobrazu schowaś
+    .accesskey = P

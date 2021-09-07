@@ -127,6 +127,13 @@ button-return-receipt =
     .label = Potvrdenka
     .tooltiptext = Požiadať o potvrdenie o prijatí tejto správy
 
+# Encryption
+
+message-to-be-signed-icon =
+    .alt = Podpísať správu
+message-to-be-encrypted-icon =
+    .alt = Zašifrovať správu
+
 # Addressing Area
 
 to-compose-address-row-label =
@@ -161,12 +168,76 @@ bcc-compose-show-address-row-label =
     .tooltiptext = Zobraziť pole { bcc-compose-address-row-label.value } ({ bcc-compose-show-address-row-menuitem.acceltext })
 #   $count (Number) - the count of addresses in the "To" and "Cc" fields.
 many-public-recipients-info = Príjemcovia (celkom { $count }) v poliach Komu a Kópia si navzájom uvidia adresy. Zverejňovaniu príjemcov sa môžete vyhnúť použitím Skrytej kópie.
+to-address-row-label =
+    .value = Komu
+#   $key (String) - the shortcut key for this field
+show-to-row-main-menuitem =
+    .label = Pole Komu
+    .accesskey = m
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+# No acceltext should be shown.
+# The label should match the show-to-row-button text.
+show-to-row-extra-menuitem =
+    .label = Komu
+    .accesskey = m
+#   $key (String) - the shortcut key for this field
+show-to-row-button = Komu
+    .title = Zobraziť pole Komu ({ ctrl-cmd-shift-pretty-prefix }{ $key })
+cc-address-row-label =
+    .value = Kópia
+#   $key (String) - the shortcut key for this field
+show-cc-row-main-menuitem =
+    .label = Pole Kópia
+    .accesskey = K
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+# No acceltext should be shown.
+# The label should match the show-cc-row-button text.
+show-cc-row-extra-menuitem =
+    .label = Kópia
+    .accesskey = K
+#   $key (String) - the shortcut key for this field
+show-cc-row-button = Kópia
+    .title = Zobraziť pole Kópia ({ ctrl-cmd-shift-pretty-prefix }{ $key })
+bcc-address-row-label =
+    .value = Skrytá kópia
+#   $key (String) - the shortcut key for this field
+show-bcc-row-main-menuitem =
+    .label = Pole Skrytá kópia
+    .accesskey = S
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+# No acceltext should be shown.
+# The label should match the show-bcc-row-button text.
+show-bcc-row-extra-menuitem =
+    .label = Skrytá kópia
+    .accesskey = S
+#   $key (String) - the shortcut key for this field
+show-bcc-row-button = Skrytá kópia
+    .title = Zobraziť pole Skrytá kópia ({ ctrl-cmd-shift-pretty-prefix }{ $key })
+extra-address-rows-menu-button =
+    .title = Ostatné polia s adresou, ktoré sa majú zobraziť
+#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
+many-public-recipients-notice =
+    { $count ->
+        [one] Vaša správa má viditeľného príjemcu. Zverejňovaniu príjemcov sa môžete vyhnúť použitím Skrytej kópie.
+        [few] Príjemcovia (celkom { $count }) v poliach Komu a Kópia si navzájom uvidia adresy. Zverejňovaniu príjemcov sa môžete vyhnúť použitím Skrytej kópie.
+       *[other] Príjemcovia (celkom { $count }) v poliach Komu a Kópia si navzájom uvidia adresy. Zverejňovaniu príjemcov sa môžete vyhnúť použitím Skrytej kópie.
+    }
 many-public-recipients-bcc =
     .label = Použiť Skrytú kópiu
     .accesskey = S
 many-public-recipients-ignore =
     .label = Ponechať príjemcov viditeľných
     .accesskey = P
+many-public-recipients-prompt-title = Príliš veľa verejných príjemcov
+#   $count (Number) - the count of addresses in the public recipients fields.
+many-public-recipients-prompt-msg =
+    { $count ->
+        [one] Vaša správa má viditeľného príjemcu. Môže ísť o problém ochrany osobných údajov. Odhaleniu príjemcov sa môžete vyhnúť presunutím príjemcov z polí Komu/Kópia do poľa Skrytá kópia.
+        [few] Vaša správa má { $count } príjemcov, ktorí si budú navzájom vidieť adresy. Môže ísť o problém ochrany osobných údajov. Odhaleniu príjemcov sa môžete vyhnúť presunutím príjemcov z polí Komu/Kópia do poľa Skrytá kópia.
+       *[other] Vaša správa má { $count } príjemcov, ktorí si budú navzájom vidieť adresy. Môže ísť o problém ochrany osobných údajov. Odhaleniu príjemcov sa môžete vyhnúť presunutím príjemcov z polí Komu/Kópia do poľa Skrytá kópia.
+    }
+many-public-recipients-prompt-cancel = Zrušiť odoslanie
+many-public-recipients-prompt-send = Napriek tomu odoslať
 
 ## Notifications
 

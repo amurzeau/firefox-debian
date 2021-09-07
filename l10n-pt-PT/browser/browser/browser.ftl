@@ -547,6 +547,9 @@ urlbar-result-action-search-bookmarks = Pesquisar marcadores
 urlbar-result-action-search-history = Pesquisar histórico
 urlbar-result-action-search-tabs = Pesquisar separadores
 
+## Labels shown above groups of urlbar results
+
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -679,6 +682,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = Trabalhar offline
     .accesskey = o
+toolbar-overflow-customize-button =
+    .label = Personalizar barra de ferramentas…
+    .accesskey = P
 
 ## EME notification panel
 
@@ -711,3 +717,24 @@ remote-tabs-sync-now = Sincronizar agora
 # "More" item in macOS share menu
 menu-share-more =
     .label = Mais…
+ui-tour-info-panel-close =
+    .tooltiptext = Fechar
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = Permitir janelas de { $uriHost }
+    .accesskey = p
+popups-infobar-block =
+    .label = Bloquear pop-ups de { $uriHost }
+    .accesskey = p
+
+##
+
+popups-infobar-dont-show-message =
+    .label = Não mostrar esta mensagem quando os pop-ups são bloqueados
+    .accesskey = D
+picture-in-picture-hide-toggle =
+    .label = Ocultar o comutador de vídeo em janela flutuante
+    .accesskey = O

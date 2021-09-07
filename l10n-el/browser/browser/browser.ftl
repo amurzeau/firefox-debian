@@ -47,7 +47,7 @@ browser-main-window-title = { -brand-full-name }
 ##
 
 urlbar-identity-button =
-    .aria-label = Προβολή πληροφοριών ιστοσελίδας
+    .aria-label = Προβολή πληροφοριών ιστοτόπου
 
 ## Tooltips for images appearing in the address bar
 
@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Διαχείριση χρήσης αρθρωμάτων
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Διαχείριση του διαμοιρασμού της κάμερας και/ή του μικροφώνου σας για τον ιστοτόπο
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Διαχείριση κοινής χρήσης άλλων ηχείων με τον ιστότοπο
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Άνοιγμα πλαισίου αυτόματης αναπαραγωγής
 urlbar-persistent-storage-notification-anchor =
@@ -122,29 +126,29 @@ urlbar-search-mode-history = Ιστορικό
 ##
 
 urlbar-geolocation-blocked =
-    .tooltiptext = Έχετε αποκλείσει τις πληροφορίες τοποθεσίας για αυτή την ιστοσελίδα.
+    .tooltiptext = Έχετε αποκλείσει τις πληροφορίες τοποθεσίας σε αυτόν τον ιστότοπο.
 urlbar-xr-blocked =
-    .tooltiptext = Έχετε αποκλείσει την πρόσβαση συσκευών εικονικής πραγματικότητας για αυτή την ιστοσελίδα.
+    .tooltiptext = Έχετε αποκλείσει την πρόσβαση συσκευών εικονικής πραγματικότητας σε αυτόν τον ιστότοπο.
 urlbar-web-notifications-blocked =
-    .tooltiptext = Έχετε αποκλείσει τις ειδοποιήσεις για αυτή την ιστοσελίδα.
+    .tooltiptext = Έχετε αποκλείσει τις ειδοποιήσεις σε αυτόν τον ιστότοπο.
 urlbar-camera-blocked =
-    .tooltiptext = Έχετε αποκλείσει την κάμερά σας για αυτή την ιστοσελίδα.
+    .tooltiptext = Έχετε αποκλείσει την κάμερά σας σε αυτόν τον ιστότοπο.
 urlbar-microphone-blocked =
-    .tooltiptext = Έχετε αποκλείσει το μικρόφωνό σας για αυτή την ιστοσελίδα.
+    .tooltiptext = Έχετε αποκλείσει το μικρόφωνό σας σε αυτόν τον ιστότοπο.
 urlbar-screen-blocked =
-    .tooltiptext = Έχετε αποκλείσει τον ιστοτόπο από το μοίρασμα της οθόνης σας.
+    .tooltiptext = Έχετε αποκλείσει την κοινή χρήση οθόνης σε αυτόν τον ιστότοπο.
 urlbar-persistent-storage-blocked =
-    .tooltiptext = Έχετε αποκλείσει την επίμονη αποθήκευση για αυτή την ιστοσελίδα.
+    .tooltiptext = Έχετε αποκλείσει τη μόνιμη αποθήκευση σε αυτόν τον ιστότοπο.
 urlbar-popup-blocked =
-    .tooltiptext = Έχετε αποκλείσει τα αναδυόμενα παράθυρα για αυτή την ιστοσελίδα.
+    .tooltiptext = Έχετε αποκλείσει τα αναδυόμενα παράθυρα σε αυτόν τον ιστότοπο.
 urlbar-autoplay-media-blocked =
-    .tooltiptext = Έχετε αποκλείσει πολυμέσα αυτόματης αναπαραγωγής για αυτή την ιστοσελίδα.
+    .tooltiptext = Έχετε αποκλείσει την αυτόματη αναπαραγωγή πολυμέσων με ήχο σε αυτόν τον ιστότοπο.
 urlbar-canvas-blocked =
-    .tooltiptext = Έχετε αποκλείσει την εξαγωγή δεδομένων καμβά για αυτή την ιστοσελίδα.
+    .tooltiptext = Έχετε αποκλείσει την εξαγωγή δεδομένων καμβά σε αυτόν τον ιστότοπο.
 urlbar-midi-blocked =
-    .tooltiptext = Έχετε αποκλείσει την πρόσβαση MIDI για αυτή την ιστοσελίδα.
+    .tooltiptext = Έχετε αποκλείσει την πρόσβαση MIDI σε αυτόν τον ιστότοπο.
 urlbar-install-blocked =
-    .tooltiptext = Έχετε αποκλείσει την εγκατάσταση προσθέτων για αυτή την ιστοσελίδα.
+    .tooltiptext = Έχετε αποκλείσει την εγκατάσταση προσθέτων σε αυτόν τον ιστότοπο.
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
@@ -152,7 +156,7 @@ urlbar-star-edit-bookmark =
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
-    .tooltiptext = Δημιουργία σελιδοδείκτη για αυτή τη σελίδα ({ $shortcut })
+    .tooltiptext = Δημιουργία σελιδοδείκτη για αυτήν τη σελίδα ({ $shortcut })
 
 ## Page Action Context Menu
 
@@ -178,7 +182,7 @@ full-screen-exit =
 
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
-search-one-offs-with-title = Αυτή τη φορά, αναζήτηση με:
+search-one-offs-with-title = Αυτήν τη φορά, αναζήτηση με:
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
@@ -260,60 +264,60 @@ bookmark-panel =
 
 # Variables
 #  $host (String): the hostname of the site that is being displayed.
-identity-site-information = Πληροφορίες για τη σελίδα { $host }
+identity-site-information = Πληροφορίες ιστοτόπου για το { $host }
 # Variables
 #  $host (String): the hostname of the site that is being displayed.
 identity-header-security-with-host =
-    .title = Ασφάλεια σύνδεσης για { $host }
+    .title = Ασφάλεια σύνδεσης για το { $host }
 identity-connection-not-secure = Μη ασφαλής σύνδεση
 identity-connection-secure = Ασφαλής σύνδεση
 identity-connection-failure = Αποτυχία σύνδεσης
 identity-connection-internal = Αυτή είναι μια ασφαλής σελίδα του { -brand-short-name }.
 identity-connection-file = Αυτή η σελίδα είναι αποθηκευμένη στον υπολογιστή σας.
-identity-extension-page = Αυτή η σελίδα φορτώθηκε από μια επέκταση.
+identity-extension-page = Αυτή η σελίδα έχει φορτωθεί από μια επέκταση.
 identity-active-blocked = Το { -brand-short-name } έχει αποκλείσει επισφαλή τμήματα αυτής της σελίδας.
 identity-custom-root = Η σύνδεση επαληθεύτηκε από έναν εκδότη πιστοποιητικών που δεν αναγνωρίζεται από τη Mozilla.
-identity-passive-loaded = Κάποια τμήματα αυτής της σελίδας δεν είναι ασφαλή (π.χ. κάποιες εικόνες).
-identity-active-loaded = Έχετε απενεργοποιήσει την προστασία σε αυτή τη σελίδα.
-identity-weak-encryption = Αυτή η σελίδα χρησιμοποιεί μη ισχυρή κρυπτογράφηση.
-identity-insecure-login-forms = Τα στοιχεία σύνδεσης που πληκτρολογήσατε σε αυτή την σελίδα μπορεί να διαρεύσουν.
+identity-passive-loaded = Κάποια τμήματα αυτής της σελίδας δεν είναι ασφαλή (όπως οι εικόνες).
+identity-active-loaded = Έχετε απενεργοποιήσει την προστασία σε αυτήν τη σελίδα.
+identity-weak-encryption = Αυτή η σελίδα δεν χρησιμοποιεί ισχυρή κρυπτογράφηση.
+identity-insecure-login-forms = Τα στοιχεία σύνδεσης που εισάγονται σε αυτήν τη σελίδα ενδέχεται να υποκλαπούν.
 identity-permissions =
     .value = Δικαιώματα
 identity-https-only-connection-upgraded = (αναβαθμίστηκε σε HTTPS)
-identity-https-only-label = Λειτουργία Μόνο-HTTPS
+identity-https-only-label = Λειτουργία «Μόνο HTTPS»
 identity-https-only-dropdown-on =
-    .label = Ενεργό
+    .label = Ενεργή
 identity-https-only-dropdown-off =
-    .label = Ανενεργό
+    .label = Ανενεργή
 identity-https-only-dropdown-off-temporarily =
-    .label = Προσωρινά ανενεργό
-identity-https-only-info-turn-on2 = Ενεργοποιήστε τη λειτουργία Μόνο-HTTPS για αυτή την ιστοσελίδα αν θέλετε το { -brand-short-name } να αναβαθμίζει τη σύνδεση όταν είναι δυνατό.
-identity-https-only-info-turn-off2 = Αν η σελίδα φαίνεται προβληματική, δοκιμάστε να απενεργοποιήσετε τη λειτουργία Μόνο-HTTPS για ανανέωση της ιστοσελίδας με το μη ασφαλές HTTP.
+    .label = Προσωρινά ανενεργή
+identity-https-only-info-turn-on2 = Ενεργοποιήστε τη λειτουργία «Μόνο HTTPS» σε αυτόν τον ιστότοπο αν θέλετε το { -brand-short-name } να αναβαθμίζει τη σύνδεση όταν είναι εφικτό.
+identity-https-only-info-turn-off2 = Αν η σελίδα δεν λειτουργεί σωστά, απενεργοποιήσετε τη λειτουργία «Μόνο HTTPS» για ανανέωση του ιστοτόπου με το μη ασφαλές HTTP.
 identity-https-only-info-no-upgrade = Δεν είναι δυνατή η αναβάθμιση της σύνδεσης από HTTP.
-identity-permissions-storage-access-header = Cookies μεταξύ ιστοσελίδων
-identity-permissions-storage-access-hint = Αυτά τα μέρη μπορούν να χρησιμοποιήσουν cookies μεταξύ ιστοσελίδων και δεδομένα ιστότοπων όσο βρίσκεστε σε αυτή την ιστοσελίδα.
+identity-permissions-storage-access-header = Cookie μεταξύ ιστοτόπων
+identity-permissions-storage-access-hint = Αυτά τα μέρη μπορούν να χρησιμοποιήσουν cookie μεταξύ ιστοτόπων και δεδομένα ιστοτόπων όσο βρίσκεστε σε αυτόν τον ιστότοπο.
 identity-permissions-storage-access-learn-more = Μάθετε περισσότερα
 identity-permissions-reload-hint = Ίσως χρειαστεί να φορτώσετε εκ νέου τη σελίδα για εφαρμογή των αλλαγών.
-identity-permissions-empty = Δεν έχετε χορηγήσει ειδικές άδειες στη σελίδα.
+identity-permissions-empty = Δεν έχετε χορηγήσει ειδικές άδειες σε αυτόν τον ιστότοπο.
 identity-clear-site-data =
-    .label = Διαγραφή cookies και δεδομένων ιστοσελίδας…
-identity-connection-not-secure-security-view = Η σύνδεσή σας με αυτή την ιστοσελίδα δεν είναι ασφαλής.
-identity-connection-verified = Η σύνδεσή σας με αυτή την ιστοσελίδα είναι ασφαλής.
+    .label = Διαγραφή cookie και δεδομένων ιστοτόπου…
+identity-connection-not-secure-security-view = Η σύνδεσή σας με αυτόν τον ιστότοπο δεν είναι ασφαλής.
+identity-connection-verified = Η σύνδεσή σας με αυτόν τον ιστότοπο είναι ασφαλής.
 identity-ev-owner-label = Το πιστοποιητικό εκδόθηκε για:
-identity-description-custom-root = Η Mozilla δεν αναγνωρίζει αυτό τον εκδότη πιστοποιητικών. Ενδέχεται να έχει προστεθεί από το λειτουργικό σας σύστημα ή κάποιο διαχειριστή. <label data-l10n-name="link">Μάθετε περισσότερα</label>
+identity-description-custom-root = Η Mozilla δεν αναγνωρίζει αυτόν τον εκδότη πιστοποιητικών. Ενδέχεται να έχει προστεθεί από το λειτουργικό σας σύστημα ή κάποιο διαχειριστή. <label data-l10n-name="link">Μάθετε περισσότερα</label>
 identity-remove-cert-exception =
     .label = Αφαίρεση εξαίρεσης
     .accesskey = Ρ
-identity-description-insecure = Η σύνδεσή σας σε αυτή τη σελίδα δεν είναι ασφαλής. Πληροφορίες που υποβάλετε μπορεί να είναι ορατές σε τρίτους (όπως κωδικοί, μηνύματα, πιστωτικές κάρτες κ.α. ).
+identity-description-insecure = Η σύνδεσή σας με αυτόν τον ιστότοπο δεν είναι ιδιωτική. Οι υποβληθείσες πληροφορίες μπορεί να προβληθούν από τρίτους (όπως κωδικοί πρόσβασης, μηνύματα, πιστωτικές κάρτες κ.λπ.).
 identity-description-insecure-login-forms = Τα στοιχεία σύνδεσης που εισάγατε στη σελίδα δεν είναι ασφαλή και μπορεί να τεθούν σε κίνδυνο.
-identity-description-weak-cipher-intro = Η σύνδεση σας σε αυτή τη σελίδα χρησιμοποιεί μη ισχυρή κρυπτογράφηση και δεν είναι ασφαλής.
-identity-description-weak-cipher-risk = Τρίτοι μπορούν να δουν τις πληροφορίες σας ή να τροποποιήσουν την συμπεριφορά αυτής της ιστοσελίδας.
+identity-description-weak-cipher-intro = Η σύνδεση σας με αυτόν τον ιστότοπο δεν χρησιμοποιεί ισχυρή κρυπτογράφηση και δεν είναι ιδιωτική.
+identity-description-weak-cipher-risk = Τρίτα άτομα μπορούν να δουν τις πληροφορίες σας ή να τροποποιήσουν τη συμπεριφορά αυτού του ιστοτόπου.
 identity-description-active-blocked = Το { -brand-short-name } έχει αποκλείσει επισφαλή τμήματα αυτής της σελίδας. <label data-l10n-name="link">Μάθετε περισσότερα</label>
-identity-description-passive-loaded = Η σύνδεσή σας δεν είναι ασφαλής και πληροφορίες που μοιράζεστε με αυτή τη σελίδα μπορεί να είναι ορατές από τρίτους.
-identity-description-passive-loaded-insecure = Αυτή η σελίδα έχει περιεχόμενο που δεν είναι ασφαλές (π.χ. εικόνες). <label data-l10n-name="link">Μάθετε περισσότερα</label>
+identity-description-passive-loaded = Η σύνδεσή σας δεν είναι ιδιωτική και οι πληροφορίες που μοιράζεστε με αυτόν τον ιστότοπο μπορεί να προβληθούν από τρίτους.
+identity-description-passive-loaded-insecure = Αυτός ο ιστότοπος διαθέτει επισφαλές περιεχόμενο (όπως εικόνες). <label data-l10n-name="link">Μάθετε περισσότερα</label>
 identity-description-passive-loaded-mixed = Παρόλο που το { -brand-short-name } έχει αποκλείσει ορισμένο περιεχόμενο, υπάρχει ακόμη επισφαλές περιεχόμενο (π.χ. εικόνες). <label data-l10n-name="link">Μάθετε περισσότερα</label>
-identity-description-active-loaded = Αυτή η ιστοσελίδα έχει περιεχόμενο που δεν είναι ασφαλές (π.χ. scripts) και η σύνδεσή σας δεν είναι ασφαλής.
-identity-description-active-loaded-insecure = Πληροφορίες που μοιράζεστε με αυτή τη σελίδα μπορεί να είναι ορατές από τρίτους (όπως κωδικοί, μηνύματα, πιστωτικές κάρτες κ.α.).
+identity-description-active-loaded = Αυτός ο ιστότοπος διαθέτει επισφαλές περιεχόμενο (όπως σενάρια) και η σύνδεσή σας δεν είναι ιδιωτική.
+identity-description-active-loaded-insecure = Οι πληροφορίες που μοιράζεστε με αυτόν τον ιστότοπο μπορεί να προβληθούν από τρίτους (όπως κωδικοί πρόσβασης, μηνύματα, πιστωτικές κάρτες κ.λπ.).
 identity-learn-more =
     .value = Μάθετε περισσότερα
 identity-disable-mixed-content-blocking =
@@ -409,7 +413,7 @@ popup-screen-sharing-block =
 popup-screen-sharing-always-block =
     .label = Πάντα φραγή
     .accesskey = τ
-popup-mute-notifications-checkbox = Σίγαση ειδοποιήσεων ιστοσελίδας κατά την κοινή χρήση
+popup-mute-notifications-checkbox = Σίγαση ειδοποιήσεων ιστοτόπου κατά την κοινή χρήση
 
 ## WebRTC window or screen share tab switch warning
 
@@ -418,7 +422,7 @@ sharing-warning-screen = Μοιράζεστε ολόκληρη την οθόνη
 sharing-warning-proceed-to-tab =
     .label = Συνέχεια στην καρτέλα
 sharing-warning-disable-for-session =
-    .label = Απενεργοποίηση προστασίας κοινής χρήσης για αυτή τη συνεδρία
+    .label = Απενεργοποίηση προστασίας κοινής χρήσης για αυτήν τη συνεδρία
 
 ## DevTools F12 popup
 
@@ -448,7 +452,7 @@ urlbar-placeholder-search-mode-web-2 =
 #  $name (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-placeholder-search-mode-other-engine =
-    .placeholder = Εισάγετε όρους αναζήτησης
+    .placeholder = Εισαγωγή όρων αναζήτησης
     .aria-label = Αναζήτηση { $name }
 # This placeholder is used when searching bookmarks.
 urlbar-placeholder-search-mode-other-bookmarks =
@@ -472,7 +476,7 @@ urlbar-placeholder-with-name =
 urlbar-remote-control-notification-anchor2 =
     .tooltiptext = Ο φυλλομετρητής βρίσκεται υπό απομακρυσμένο έλεγχο (αιτία: { $component })
 urlbar-permissions-granted =
-    .tooltiptext = Έχετε χορηγήσει πρόσθετα δικαιώματα σε αυτή την ιστοσελίδα.
+    .tooltiptext = Έχετε χορηγήσει επιπλέον άδειες σε αυτόν τον ιστότοπο.
 urlbar-switch-to-tab =
     .value = Μετάβαση σε καρτέλα:
 # Used to indicate that a selected autocomplete entry is provided by an extension.
@@ -515,7 +519,7 @@ urlbar-result-action-before-tabtosearch-web = Πατήστε Tab για αναζ
 # Variables
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
-urlbar-result-action-before-tabtosearch-other = Πατήστε Tab για αναζήτηση { $engine }
+urlbar-result-action-before-tabtosearch-other = Πατήστε το Tab για αναζήτηση με { $engine }
 # Variables
 #  $engine (String): the name of a search engine that searches the entire Web
 #  (e.g. Google).
@@ -540,6 +544,19 @@ urlbar-result-action-search-bookmarks = Αναζήτηση σελιδοδεικ�
 urlbar-result-action-search-history = Αναζήτηση ιστορικού
 urlbar-result-action-search-tabs = Αναζήτηση καρτελών
 
+## Labels shown above groups of urlbar results
+
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = Προτάσεις { $engine }
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -554,11 +571,11 @@ fullscreen-exit-mac-button = Έξοδος από πλήρη οθόνη (esc)
 # Variables
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = Το <span data-l10n-name="domain">{ $domain }</span> ελέγχει τον κέρσορα. Πατήστε Esc για ανάκτηση ελέγχου.
-pointerlock-warning-no-domain = Αυτό το έγγραφο ελέγχει τον κέρσορα. Πατήστε Esc για ανάκτηση ελέγχου.
+pointerlock-warning-no-domain = Αυτό το έγγραφο ελέγχει τον κέρσορά σας. Πατήστε το Esc για ανάκτηση ελέγχου.
 
 ## Subframe crash notification
 
-crashed-subframe-message = <strong>Μέρος της σελίδας κατέρρευσε.</strong> Για να ενημερώσετε το { -brand-product-name } σχετικά με αυτό το ζήτημα, ώστε να διορθωθεί γρηγορότερα, παρακαλούμε υποβάλλετε μια αναφορά.
+crashed-subframe-message = <strong>Μέρος της σελίδας κατέρρευσε.</strong> Για να ενημερώσετε το { -brand-product-name } σχετικά με αυτό το ζήτημα, ώστε να διορθωθεί γρηγορότερα, παρακαλώ υποβάλετε μια αναφορά.
 # The string for crashed-subframe-title.title should match crashed-subframe-message,
 # but without any markup.
 crashed-subframe-title =
@@ -672,10 +689,13 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = Εργασία χωρίς σύνδεση
     .accesskey = χ
+toolbar-overflow-customize-button =
+    .label = Προσαρμογή γραμμής εργαλείων…
+    .accesskey = ο
 
 ## EME notification panel
 
-eme-notifications-drm-content-playing = Κάποιοι ήχοι ή βίντεο σε αυτή την ιστοσελίδα χρησιμοποιούν λογισμικό DRM, που ενδέχεται να περιορίσει αυτά που μπορείτε να κάνετε με το { -brand-short-name }.
+eme-notifications-drm-content-playing = Κάποιοι ήχοι ή βίντεο του ιστοτόπου χρησιμοποιούν λογισμικό DRM, που ενδέχεται να περιορίσει αυτά που μπορείτε να κάνετε με το { -brand-short-name }.
 eme-notifications-drm-content-playing-manage = Διαχείριση ρυθμίσεων
 eme-notifications-drm-content-playing-manage-accesskey = Δ
 eme-notifications-drm-content-playing-dismiss = Απόρριψη
@@ -704,3 +724,24 @@ remote-tabs-sync-now = Συγχρονισμός τώρα
 # "More" item in macOS share menu
 menu-share-more =
     .label = Περισσότερα…
+ui-tour-info-panel-close =
+    .tooltiptext = Κλείσιμο
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = Αποδοχή αναδυόμενων από { $uriHost }
+    .accesskey = ν
+popups-infobar-block =
+    .label = Φραγή αναδυόμενων από { $uriHost }
+    .accesskey = ν
+
+##
+
+popups-infobar-dont-show-message =
+    .label = Να μην εμφανίζεται αυτό το μήνυμα όταν γίνεται φραγή
+    .accesskey = Ν
+picture-in-picture-hide-toggle =
+    .label = Απόκρυψη διακόπτη εικόνας εντός εικόνας
+    .accesskey = Α

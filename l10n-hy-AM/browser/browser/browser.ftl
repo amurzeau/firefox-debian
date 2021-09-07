@@ -421,6 +421,9 @@ urlbar-result-action-visit = Այցելել
 ## In these actions "Search" is a verb, followed by where the search is performed.
 
 
+## Labels shown above groups of urlbar results
+
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -528,6 +531,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = Աշխատել անցանց
     .accesskey = տ
+toolbar-overflow-customize-button =
+    .label = Հարմարեցնել Գործիքագոտին...
+    .accesskey = C
 
 ## EME notification panel
 
@@ -546,3 +552,27 @@ panel-save-update-password = Գաղտնաբառ
 remote-tabs-manage-account =
     .label = Կառավարել հաշիվը
 remote-tabs-sync-now = Համաժամեցնել
+
+##
+
+ui-tour-info-panel-close =
+    .tooltiptext = Փակել
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = Թույլատրել ելնող պատուհաններ { $uriHost }-ից
+    .accesskey = p
+popups-infobar-block =
+    .label = Արգելել ինքնաելիցներ { $uriHost }-ից
+    .accesskey = p
+
+##
+
+popups-infobar-dont-show-message =
+    .label = Չցուցադրել սա, երբ ելնող պատուհնները արգելափակված են
+    .accesskey = D
+picture-in-picture-hide-toggle =
+    .label = Թաքցնել նկարը նկարի փոխարկիչում
+    .accesskey = H

@@ -544,6 +544,19 @@ urlbar-result-action-search-bookmarks = Sairch Buikmerks
 urlbar-result-action-search-history = Airt-Oot Historie
 urlbar-result-action-search-tabs = Sairch Tabs
 
+## Labels shown above groups of urlbar results
+
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = { $engine } Suggestions
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -676,6 +689,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = Wirk Affline
     .accesskey = k
+toolbar-overflow-customize-button =
+    .label = Mak Toolbaur Yer Ain…
+    .accesskey = M
 
 ## EME notification panel
 
@@ -708,3 +724,24 @@ remote-tabs-sync-now = Sync Noo
 # "More" item in macOS share menu
 menu-share-more =
     .label = Mair…
+ui-tour-info-panel-close =
+    .tooltiptext = Sneck
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = Alloo lowp-ups fur { $uriHost }
+    .accesskey = p
+popups-infobar-block =
+    .label = Block lowp-ups fur { $uriHost }
+    .accesskey = p
+
+##
+
+popups-infobar-dont-show-message =
+    .label = Dinnae kythe this message whan lowp-ups are blockit
+    .accesskey = D
+picture-in-picture-hide-toggle =
+    .label = Hide Pictur-in-Pictur Toggle
+    .accesskey = H

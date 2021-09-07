@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Gerir l'utilizacion dels moduls complementaris
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Actualament, partejatz vòstra camèra o vòstre microfòn amb aqueste site
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Gerir lo partatge d’autras sortidas àudio amb aqueste site
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Dobrir lo panèl de lectura automatica
 urlbar-persistent-storage-notification-anchor =
@@ -265,7 +269,7 @@ identity-site-information = Informacions pel site { $host }
 #  $host (String): the hostname of the site that is being displayed.
 identity-header-security-with-host =
     .title = Seguretat de la connexion per { $host }
-identity-connection-not-secure = La connexion pas segura
+identity-connection-not-secure = Connexion pas segura
 identity-connection-secure = Connexion segura
 identity-connection-failure = Fracàs de connexion
 identity-connection-internal = Aquò es una pagina segura de { -brand-short-name }.
@@ -543,6 +547,15 @@ urlbar-result-action-search-bookmarks = Cercar dins los marcapaginas
 urlbar-result-action-search-history = Cercar dins l’istoric
 urlbar-result-action-search-tabs = Cercar pels onglets
 
+## Labels shown above groups of urlbar results
+
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = Suggestions { $engine }
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -675,6 +688,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = Trabalhar fòra connexion
     .accesskey = T
+toolbar-overflow-customize-button =
+    .label = Personalizar la barra d'aisinas…
+    .accesskey = P
 
 ## EME notification panel
 
@@ -707,3 +723,24 @@ remote-tabs-sync-now = Sincronizar ara
 # "More" item in macOS share menu
 menu-share-more =
     .label = Mai…
+ui-tour-info-panel-close =
+    .tooltiptext = Tampar
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = Autorizar las fenèstras sorgissentas de { $uriHost }
+    .accesskey = p
+popups-infobar-block =
+    .label = Blocar las fenèstras sorgissentas de { $uriHost }
+    .accesskey = p
+
+##
+
+popups-infobar-dont-show-message =
+    .label = Afichar pas aqueste messatge quand se blòcan de fenèstras sorgissentas
+    .accesskey = u
+picture-in-picture-hide-toggle =
+    .label = Amagar lo boton Imatge incrustada
+    .accesskey = A

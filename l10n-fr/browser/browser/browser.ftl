@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Gérer l’utilisation du plugin
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Gérer le partage de la caméra et/ou du microphone avec ce site
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Gérer le partage d’autres sorties audio avec ce site
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Ouvrir le panneau de lecture automatique
 urlbar-persistent-storage-notification-anchor =
@@ -543,6 +547,19 @@ urlbar-result-action-search-bookmarks = Rechercher dans les marque-pages
 urlbar-result-action-search-history = Rechercher dans l’historique
 urlbar-result-action-search-tabs = Rechercher dans les onglets
 
+## Labels shown above groups of urlbar results
+
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = Suggestions de { $engine }
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -675,6 +692,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = Travailler hors connexion
     .accesskey = x
+toolbar-overflow-customize-button =
+    .label = Personnaliser la barre d’outils…
+    .accesskey = P
 
 ## EME notification panel
 
@@ -707,3 +727,24 @@ remote-tabs-sync-now = Synchroniser maintenant
 # "More" item in macOS share menu
 menu-share-more =
     .label = Plus…
+ui-tour-info-panel-close =
+    .tooltiptext = Fermer
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = Autoriser les popups pour { $uriHost }
+    .accesskey = p
+popups-infobar-block =
+    .label = Bloquer les popups pour { $uriHost }
+    .accesskey = p
+
+##
+
+popups-infobar-dont-show-message =
+    .label = Ne pas afficher ce message lorsque des popups sont bloqués
+    .accesskey = u
+picture-in-picture-hide-toggle =
+    .label = Masquer le bouton pour l’incrustation vidéo
+    .accesskey = M

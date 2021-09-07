@@ -544,6 +544,19 @@ urlbar-result-action-search-bookmarks = Søk i bokmerker
 urlbar-result-action-search-history = Søk i historikk
 urlbar-result-action-search-tabs = Søk i faner
 
+## Labels shown above groups of urlbar results
+
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = { $engine }-forslag
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -676,6 +689,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = Arbeid frakoblet
     .accesskey = r
+toolbar-overflow-customize-button =
+    .label = Tilpass verktøylinje…
+    .accesskey = T
 
 ## EME notification panel
 
@@ -708,3 +724,24 @@ remote-tabs-sync-now = Synkroniser nå
 # "More" item in macOS share menu
 menu-share-more =
     .label = Mer…
+ui-tour-info-panel-close =
+    .tooltiptext = Lukk
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = Tillat sprettoppvinduer fra { $uriHost }
+    .accesskey = p
+popups-infobar-block =
+    .label = Blokker sprettoppvinduer fra { $uriHost }
+    .accesskey = p
+
+##
+
+popups-infobar-dont-show-message =
+    .label = Ikke vis denne meldingen når sprettoppvinduer blokkeres
+    .accesskey = I
+picture-in-picture-hide-toggle =
+    .label = Skjul bilde-i-bilde-veksleknapp
+    .accesskey = S

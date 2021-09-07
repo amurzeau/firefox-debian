@@ -13,7 +13,7 @@
 policy-3rdparty = Ορισμός πολιτικών που μπορούν να προσπελάσουν τα WebExtensions μέσω του chrome.storage.managed.
 policy-AppAutoUpdate = Ενεργοποίηση ή απενεργοποίηση αυτόματων ενημερώσεων εφαρμογής.
 policy-AppUpdateURL = Ορισμός προσαρμοσμένου URL ενημέρωσης εφαρμογής.
-policy-Authentication = Ρύθμιση ενσωματωμένης πιστοποίησης για ιστοσελίδες που την υποστηρίζουν.
+policy-Authentication = Ρύθμιση ενσωματωμένης πιστοποίησης για ιστοτόπους που την υποστηρίζουν.
 policy-BackgroundAppUpdate2 = Ενεργοποίηση ή απενεργοποίηση υπηρεσίας ενημερώσεων παρασκηνίου.
 policy-BlockAboutAddons = Αποκλεισμός πρόσβασης στη Διαχείριση προσθέτων (about:addons).
 policy-BlockAboutConfig = Αποκλεισμός πρόσβασης στη σελίδα about:config.
@@ -21,13 +21,14 @@ policy-BlockAboutProfiles = Αποκλεισμός πρόσβασης στη σ�
 policy-BlockAboutSupport = Αποκλεισμός πρόσβασης στη σελίδα about:support.
 policy-CaptivePortal = Ενεργοποίηση ή απενεργοποίηση υποστήριξης πυλών υποδοχής.
 policy-CertificatesDescription = Προσθήκη πιστοποιητικών ή χρήση ενσωματωμένων πιστοποιητικών.
-policy-Cookies = Αποδοχή ή απόρριψη τοποθέτησης cookies από ιστοσελίδες.
+policy-Cookies = Αποδοχή ή απόρριψη τοποθέτησης cookie από ιστοτόπους.
+policy-DisableBuiltinPDFViewer = Απενεργοποίηση του PDF.js, του ενσωματωμένου προγράμματος προβολής PDF στο { -brand-short-name }.
 policy-DisabledCiphers = Απενεργοποίηση κρυπτογράφησης.
 policy-DefaultDownloadDirectory = Ορισμός προεπιλεγμένου καταλόγου λήψης.
 policy-DisableAppUpdate = Αποτροπή ενημέρωσης του { -brand-short-name }.
 policy-DisableDefaultClientAgent = Αποτροπή οποιασδήποτε ενέργειας από την προεπιλεγμένη λειτουργία πελάτη. Ισχύει μόνο για Windows· οι άλλες πλατφόρμες δεν έχουν τέτοια υπηρεσία.
 policy-DisableDeveloperTools = Αποκλεισμός πρόσβασης στα εργαλεία ανάπτυξης.
-policy-DisableFeedbackCommands = Απενεργοποίηση εντολών για αποστολή σχολίων από το μενού "Βοήθεια" (Υποβολή σχολίων και αναφορά παραπλανητικής ιστοσελίδας).
+policy-DisableFeedbackCommands = Απενεργοποίηση εντολών για αποστολή σχολίων από το μενού «Βοήθεια» («Υποβολή σχολίων» και «Αναφορά παραπλανητικού ιστοτόπου»).
 policy-DisableForgetButton = Αποτροπή πρόσβασης στο κουμπί "Διαγραφή".
 policy-DisableFormHistory = Χωρίς διατήρηση ιστορικού αναζήτησης και φορμών.
 policy-DisableMasterPasswordCreation = Αν αληθεύει, δεν μπορεί να δημιουργηθεί κύριος κωδικός πρόσβασης.
@@ -51,18 +52,20 @@ policy-EncryptedMediaExtensions = Ενεργοποίηση ή απενεργοπ
 policy-Extensions = Εγκατάσταση, απεγκατάσταση ή κλείδωμα επεκτάσεων. Η επιλογή εγκατάστασης λαμβάνει τα URLs ή τις διαδρομές ως παραμέτρους. Οι επιλογές απεγκατάστασης και κλειδώματος λαμβάνουν IDs επεκτάσεων.
 policy-ExtensionSettings = Διαχειριστείτε όλες τις πτυχές εγκατάστασης μιας επέκτασης.
 policy-ExtensionUpdate = Ενεργοποίηση ή απενεργοποίηση αυτόματων ενημερώσεων επεκτάσεων.
+policy-Handlers = Ρύθμιση προκαθορισμένων χειριστών εφαρμογών.
 policy-HardwareAcceleration = Αν είναι ψευδές, απενεργοποίηση επιτάχυνσης υλικού.
-policy-InstallAddonsPermission = Αποδοχή εγκατάστασης προσθέτων από ορισμένες ιστοσελίδες.
+policy-InstallAddonsPermission = Αποδοχή εγκατάστασης προσθέτων από ορισμένους ιστοτόπους.
 policy-LegacyProfiles = Απενεργοποίηση της λειτουργίας που απαιτεί ξεχωριστό προφίλ για κάθε εγκατάσταση.
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
 
 policy-LegacySameSiteCookieBehaviorEnabled = Ενεργοποίηση προεπιλεγμένης ρύθμισης συμπεριφοράς του παλαιού SameSite cookie.
-policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Επαναφορά στην παλαιά συμπεριφορά SameSite για cookies σε καθορισμένες ιστοσελίδες.
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Επαναφορά στην παλαιά συμπεριφορά SameSite για cookie σε καθορισμένους ιστοτόπους.
 
 ##
 
-policy-LocalFileLinks = Να επιτρέπεται σε συγκεκριμένες ιστοσελίδες η σύνδεση με τοπικά αρχεία.
+policy-LocalFileLinks = Να επιτρέπεται σε συγκεκριμένους ιστοτόπους η σύνδεση με τοπικά αρχεία.
+policy-ManualAppUpdateOnly = Αποδοχή μόνο των χειροκίνητων ενημερώσεων και να μην ειδοποιείται ο χρήστης σχετικά με ενημερώσεις.
 policy-NetworkPrediction = Ενεργοποίηση ή απενεργοποίηση πρόβλεψης δικτύου (προφόρτωση DNS).
 policy-OfferToSaveLogins = Εξαναγκασμός της ρύθμισης για να επιτρέπεται στο { -brand-short-name } η πρόταση για απομνημόνευση αποθηκευμένων συνδέσεων και κωδικών πρόσβασης. Αποδεκτές η τιμή true και η τιμή false.
 policy-OfferToSaveLoginsDefault = Ορισμός προεπιλεγμένης τιμής για να επιτρέπεται στο { -brand-short-name } η πρόταση για απομνημόνευση αποθηκευμένων συνδέσεων και κωδικών πρόσβασης. Είναι αποδεκτές οι τιμές true και false.
@@ -73,6 +76,7 @@ policy-PasswordManagerEnabled = Ενεργοποίηση αποθήκευσης 
 policy-PDFjs = Απενεργοποίηση ή ρύθμιση του PDF.js, του ενσωματωμένου προγράμματος προβολής PDF στο { -brand-short-name }.
 policy-Permissions2 = Ρύθμιση δικαιωμάτων για κάμερα, μικρόφωνο, τοποθεσία, ειδοποιήσεις και αυτόματη αναπαραγωγή.
 policy-Preferences = Ορισμός και κλείδωμα τιμής ενός υποσυνόλου προτιμήσεων.
+policy-PrimaryPassword = Να απαιτείται ή να μην επιτρέπεται η χρήση Κύριου Κωδικού.
 policy-PromptForDownloadLocation = Ερώτηση για την τοποθεσία αποθήκευσης αρχείων κατά τη λήψη.
 policy-Proxy = Ρύθμιση παραμέτρων διακομιστή μεσολάβησης.
 policy-RequestedLocales = Ορισμός λίστας απαιτούμενων γλωσσών για την εφαρμογή σε σειρά προτίμησης.
@@ -86,4 +90,4 @@ policy-SSLVersionMin = Ορισμός ελάχιστης έκδοσης SSL.
 policy-SupportMenu = Προσθήκη προσαρμοσμένου στοιχείου μενού υποστήριξης στο μενού βοήθειας.
 policy-UserMessaging = Να μην εμφανίζονται ορισμένα μηνύματα στο χρήστη.
 # “format” refers to the format used for the value of this policy.
-policy-WebsiteFilter = Αποκλεισμός επίσκεψης σε ιστοσελίδες. Δείτε την τεκμηρίωση για περισσότερες λεπτομέρειες σχετικά με τη μορφή.
+policy-WebsiteFilter = Αποκλεισμός επίσκεψης σε ιστοτόπους. Δείτε την τεκμηρίωση για περισσότερες λεπτομέρειες σχετικά με τη μορφή.

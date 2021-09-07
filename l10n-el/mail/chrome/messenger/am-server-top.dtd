@@ -43,14 +43,14 @@
 <!ENTITY downloadOnBiff.label "Αυτόματη λήψη νέων μηνυμάτων">
 <!ENTITY downloadOnBiff.accesskey "υ">
 <!ENTITY deleteMessagePrefix.label "Κατά τη διαγραφή ενός μηνύματος:">
-<!ENTITY modelMoveToTrash.label "Μετακίνηση στο φάκελο:">
+<!ENTITY modelMoveToTrash.label "Μετακίνηση στον φάκελο:">
 <!ENTITY modelMoveToTrash.accesskey "φ">
 <!ENTITY modelMarkDeleted.label "Επισήμανση ως διαγραμμένο">
 <!ENTITY modelMarkDeleted.accesskey "μ">
 <!ENTITY modelDeleteImmediately.label "Άμεση αφαίρεση">
 <!ENTITY modelDeleteImmediately.accesskey "φ">
 <!-- LOCALIZATION NOTE (expungeOnExit.label) : do not translate two of "&quot;" in below line -->
-<!ENTITY expungeOnExit.label "Εκκαθάριση (&quot;Διαγραφή&quot;) εισερχομένων κατά την έξοδο">
+<!ENTITY expungeOnExit.label "Εκκαθάριση («Διαγραφή») εισερχομένων κατά την έξοδο">
 <!ENTITY expungeOnExit.accesskey "θ">
 <!ENTITY emptyTrashOnExit.label "Άδειασμα του κάδου απορριμμάτων κατά την έξοδο">
 <!ENTITY emptyTrashOnExit.accesskey "δ">
@@ -74,7 +74,7 @@
 <!ENTITY advancedButton.label "Σύνθετα…">
 <!ENTITY advancedButton.accesskey "θ">
 <!ENTITY serverDefaultCharset2.label "Προεπιλεγμένη κωδικοποίηση χαρακτήρων:">
-<!ENTITY localPath1.label "Τοπικός φάκελος:">
+<!ENTITY localPath1.label "Τοπικός κατάλογος:">
 <!ENTITY localFolderPicker.label "Επιλογή τοπικού καταλόγου">
 <!ENTITY browseFolder.label "Περιήγηση…">
 <!ENTITY browseFolder.accesskey "γ">

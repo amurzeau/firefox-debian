@@ -7,7 +7,6 @@ page-subtitle =
     Esta páxina contién información téunica que pue ser útil cuando tentes
     d'iguar un problema. Si busques rempuestes a entrugues frecuentes tocante a
     { -brand-short-name }, visita'l nuesu <a data-l10n-name="support-link">sitiu web de sofitu</a>.
-
 crashes-title = Informes de casques
 crashes-id = ID del informe
 crashes-send-date = Data d'unviu
@@ -62,8 +61,10 @@ app-basics-enabled-plugins = Plugins activaos
 app-basics-build-config = Configuración de la compilación
 app-basics-user-agent = Axente d'usuariu
 app-basics-os = SO
+app-basics-os-theme = Estilu del SO
 app-basics-memory-use = Usu de la memoria
 app-basics-performance = Rindimientu
+app-basics-third-party = Módulos de terceros
 app-basics-profiles = Perfiles
 app-basics-fission-support = Ventanes Fission
 app-basics-remote-processes-count = Procesos remotos
@@ -98,6 +99,7 @@ graphics-desktop-environment = Entornu d'escritoriu
 place-database-integrity = Integridá
 place-database-verify-integrity = Verificar la integridá
 a11y-title = Accesibilidá
+library-version-title = Versiones de biblioteques
 copy-text-to-clipboard-label = Copiar el testu al cartafueyu
 copy-raw-data-to-clipboard-label = Copiar los datos en bruto al cartafueyu
 sandbox-sys-call-index = #
@@ -105,8 +107,9 @@ sandbox-sys-call-age = Hai segundos
 sandbox-sys-call-pid = PID
 sandbox-sys-call-tid = TID
 sandbox-sys-call-args = Argumentos
-
+troubleshoot-mode-title = Diagnostica problemes
 restart-in-troubleshoot-mode-label = Mou d'iguar problemes
+clear-startup-cache-title = Prueba a llimpiar la caché d'aniciu
 clear-startup-cache-label = Llimpiar la caché d'aniciu…
 
 ## Media titles
@@ -119,6 +122,7 @@ media-device-channels = Canales
 
 ##
 
+intl-title = Internacionalización y traducción
 intl-locales-requested = Locales solicitaes
 intl-locales-available = Locales disponibles
 intl-locales-supported = Locales de l'aplicación
@@ -146,7 +150,6 @@ support-third-party-modules-thread = Filu
 support-third-party-modules-status = Estáu
 support-third-party-modules-unsigned-icon =
     .title = Esti módulu nun ta robláu
-
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
@@ -154,7 +157,6 @@ report-crash-for-days =
         [one] Informes de casques del últimu día
        *[other] Informes de casques de los últimos { $days } díes
     }
-
 # Variables
 # $minutes (integer) - Number of minutes since crash
 crashes-time-minutes =
@@ -162,7 +164,6 @@ crashes-time-minutes =
         [one] Hai { $minutes } minutu
        *[other] Hai { $minutes } minutos
     }
-
 # Variables
 # $hours (integer) - Number of hours since crash
 crashes-time-hours =
@@ -170,7 +171,6 @@ crashes-time-hours =
         [one] Hai { $hours } hora
        *[other] Hai { $hours } hores
     }
-
 # Variables
 # $days (integer) - Number of days since crash
 crashes-time-days =
@@ -189,27 +189,30 @@ no = Non
 ## not found.
 
 found = Atopóse
-
 gpu-description = Descripción
 gpu-ram = RAM
-
+gpu-driver-version = Versión del controlador
+gpu-driver-date = Data del controlador
+webgl2-extensions = Estensiones de WebGL 2
+# Variables
+# $bugNumber (string) - String of bug number from Bugzilla
+bug-link = fallu { $bugNumber }
+d3d11layers-crash-guard = Compositor D3D11
+d3d11video-crash-guard = Descodificador de videu D3D11
+d3d9video-crash-guard = Descodificador de videu D3D9
 glcontext-crash-guard = OpenGL
-
 min-lib-versions = Versión mínima que s'espera
 loaded-lib-versions = Versión n'usu
-
 sandbox-proc-type-content = conteníu
-
+startup-cache-title = Caché d'aniciu
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
 multi-process-windows = { $remoteWindows }/{ $totalWindows }
-
 # Variables
 # $fissionWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
 fission-windows = { $fissionWindows }/{ $totalWindows }
-
 wheel-enabled = rueda del mur activada
 touch-enabled = entrada táctil activada
 drag-enabled = arrastre de la barra de desplazamientu activáu
@@ -226,6 +229,7 @@ policies-error = Fallu
 
 ## Printing section
 
+support-printing-title = Imprentación
 support-printing-troubleshoot = Igua de problemes
 support-printing-modified-settings = Axustes d'imprentación modificaos
 support-printing-prefs-name = Nome
@@ -236,7 +240,6 @@ support-printing-prefs-value = Valor
 support-remote-experiments-title = Esperimentos remotos
 support-remote-experiments-name = Nome
 support-remote-experiments-branch = Rama esperimental
-
 support-remote-features-title = Carauterístiques remotes
 support-remote-features-name = Nome
 support-remote-features-status = Estáu

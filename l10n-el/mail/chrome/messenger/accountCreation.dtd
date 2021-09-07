@@ -6,7 +6,7 @@
 <!ENTITY emailWizard.caption             "Χρήση τρέχουσας διεύθυνσης email">
 <!ENTITY name.label                      "Το όνομά σας:">
 <!ENTITY name.accesskey                  "ν">
-<!ENTITY fullname.placeholder            "Το πλήρες όνομά σας">
+<!ENTITY fullname.placeholder            "Το ονοματεπώνυμό σας">
 <!ENTITY name.text                       "Το όνομά σας, όπως θα εμφανίζεται σε τρίτους">
 <!ENTITY name.error                      "Παρακαλώ εισαγάγετε το όνομά σας">
 <!ENTITY email.label                     "Διεύθυνση email:">
@@ -69,8 +69,8 @@
      displayed on the button in manual config mode which will re-guess
      the account configuration, taking into account the settings that
      the user has manually changed. -->
-<!ENTITY half-manual-test.label          "Δοκιμή ξανά">
-<!ENTITY half-manual-test.accesskey      "ξ">
+<!ENTITY half-manual-test.label          "Νέα δοκιμή">
+<!ENTITY half-manual-test.accesskey      "έ">
 <!ENTITY manual-config.label             "Χειροκίνητη ρύθμιση…">
 <!ENTITY manual-config.accesskey         "Χ">
 <!ENTITY open-provisioner.label          "Απόκτηση νέας διεύθυνσης email…">

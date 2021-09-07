@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Správa využití zásuvného modulu
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Spravovat sdílení webkamery a/nebo mikrofonu se stránkou
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Spravovat sdílení zvukového výstupu se stránkou
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Otevřít panel automatického přehrávání
 urlbar-persistent-storage-notification-anchor =
@@ -577,6 +581,19 @@ urlbar-result-action-search-bookmarks = Hledat v záložkách
 urlbar-result-action-search-history = Hledat v historii
 urlbar-result-action-search-tabs = Najít panel
 
+## Labels shown above groups of urlbar results
+
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = Návrhy vyhledávače { $engine }
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -721,6 +738,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = Pracovat offline
     .accesskey = l
+toolbar-overflow-customize-button =
+    .label = Nastavení tlačítek a lišt…
+    .accesskey = V
 
 ## EME notification panel
 
@@ -765,3 +785,24 @@ remote-tabs-sync-now = Synchronizovat
 # "More" item in macOS share menu
 menu-share-more =
     .label = Více…
+ui-tour-info-panel-close =
+    .tooltiptext = Zavřít
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = Povolit vyskakovací okna pro { $uriHost }
+    .accesskey = P
+popups-infobar-block =
+    .label = Blokovat vyskakovací okna pro { $uriHost }
+    .accesskey = p
+
+##
+
+popups-infobar-dont-show-message =
+    .label = Při blokování vyskakovacích oken nezobrazovat tuto zprávu
+    .accesskey = n
+picture-in-picture-hide-toggle =
+    .label = Skrýt přepínač obrazu v obraze
+    .accesskey = v

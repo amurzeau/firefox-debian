@@ -547,6 +547,19 @@ urlbar-result-action-search-bookmarks = Könyvjelzők keresése
 urlbar-result-action-search-history = Előzmények keresése
 urlbar-result-action-search-tabs = Lapok keresése
 
+## Labels shown above groups of urlbar results
+
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = { $engine } javaslatok
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -679,6 +692,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = Kapcsolat nélküli munka
     .accesskey = p
+toolbar-overflow-customize-button =
+    .label = Eszköztár testreszabása…
+    .accesskey = E
 
 ## EME notification panel
 
@@ -711,3 +727,24 @@ remote-tabs-sync-now = Szinkronizálás most
 # "More" item in macOS share menu
 menu-share-more =
     .label = Továbbiak…
+ui-tour-info-panel-close =
+    .tooltiptext = Bezárás
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = Felugró ablakok engedélyezése innen: { $uriHost }
+    .accesskey = m
+popups-infobar-block =
+    .label = Felugró ablakok tiltása innen: { $uriHost }
+    .accesskey = m
+
+##
+
+popups-infobar-dont-show-message =
+    .label = Ne jelenjen meg ez az üzenet a felugró ablakok blokkolásakor.
+    .accesskey = n
+picture-in-picture-hide-toggle =
+    .label = Kép a képben kapcsoló elrejtése
+    .accesskey = r

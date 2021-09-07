@@ -540,6 +540,19 @@ urlbar-result-action-search-bookmarks = Tìm kiếm dấu trang
 urlbar-result-action-search-history = Tìm kiếm lịch sử
 urlbar-result-action-search-tabs = Tìm kiếm thẻ
 
+## Labels shown above groups of urlbar results
+
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = Đề xuất của { $engine }
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -672,6 +685,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = Làm việc ngoại tuyến
     .accesskey = k
+toolbar-overflow-customize-button =
+    .label = Tùy biến thanh công cụ…
+    .accesskey = C
 
 ## EME notification panel
 
@@ -704,3 +720,24 @@ remote-tabs-sync-now = Đồng bộ ngay
 # "More" item in macOS share menu
 menu-share-more =
     .label = Xem thêm…
+ui-tour-info-panel-close =
+    .tooltiptext = Đóng
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = Cho phép { $uriHost } mở cửa sổ bật lên
+    .accesskey = p
+popups-infobar-block =
+    .label = Chặn cửa sổ bật lên từ { $uriHost }
+    .accesskey = p
+
+##
+
+popups-infobar-dont-show-message =
+    .label = Không hiện thông báo này khi có cửa sổ bật lên bị chặn
+    .accesskey = D
+picture-in-picture-hide-toggle =
+    .label = Ẩn nút hình trong hình
+    .accesskey = H

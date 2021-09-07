@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Sefrek aseqdec n yizegrar
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Sefrek beṭṭu n tkamirat-ik d/neɣ asawaḍ-ik d usmel
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Sefrek beṭṭu n yimsemɣren n yimesli akked usmel-a
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Ldi agalis n urar awurman
 urlbar-persistent-storage-notification-anchor =
@@ -543,6 +547,19 @@ urlbar-result-action-search-bookmarks = Nadi ticraḍ n yisebtar
 urlbar-result-action-search-history = Nadi deg umazray
 urlbar-result-action-search-tabs = Nadi deg waccaren
 
+## Labels shown above groups of urlbar results
+
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = Isumar { $engine }
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -675,6 +692,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = Mahel war tuqqna
     .accesskey = k
+toolbar-overflow-customize-button =
+    .label = Sagen afeggag n yifecka…
+    .accesskey = M
 
 ## EME notification panel
 
@@ -707,3 +727,24 @@ remote-tabs-sync-now = Mtawi tura
 # "More" item in macOS share menu
 menu-share-more =
     .label = Ugar…
+ui-tour-info-panel-close =
+    .tooltiptext = Mdel
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = Sireg isfuyla udhimen i { $uriHost }
+    .accesskey = p
+popups-infobar-block =
+    .label = Sewḥel isfuyla udhimen i { $uriHost }
+    .accesskey = p
+
+##
+
+popups-infobar-dont-show-message =
+    .label = Ur d-skan ara izen-a ticki isfuyla udhimen weḥlen
+    .accesskey = D
+picture-in-picture-hide-toggle =
+    .label = Ffer asfaylu tugna deg tugna
+    .accesskey = H
