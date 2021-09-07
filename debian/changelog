@@ -1,3 +1,15 @@
+firefox (92.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2021-38, also known as:
+    CVE-2021-38491, CVE-2021-38493, CVE-2021-38494.
+
+  * debian/rules: Build against embedded nspr and nss on bullseye.
+  * debian/upstream.mk: Add bookworm and trixie.
+  * debian/control*: Bump nss build dependency.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 08 Sep 2021 07:57:38 +0900
+
 firefox (91.0.1-1) unstable; urgency=medium
 
   * New upstream release.
