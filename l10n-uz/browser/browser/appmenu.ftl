@@ -5,17 +5,22 @@
 
 ## App Menu
 
-appmenuitem-customize-mode =
-    .label = Moslash…
-
-## Zoom Controls
-
 appmenuitem-new-tab =
     .label = Yangi varaq
 appmenuitem-new-window =
     .label = Yangi oyna
 appmenuitem-new-private-window =
     .label = Yangi maxfiy oyna
+appmenuitem-history =
+    .label = Tarix
+appmenuitem-downloads =
+    .label = Yuklanmalar
+appmenuitem-print =
+    .label = Chop qilish…
+appmenuitem-zoom =
+    .value = Masshtab
+appmenuitem-help =
+    .label = Yordam
 
 ## Zoom and Fullscreen Controls
 
@@ -23,15 +28,23 @@ appmenuitem-zoom-enlarge =
     .label = Kattalashtirish
 appmenuitem-zoom-reduce =
     .label = Kichiklashtirish
-
 appmenuitem-fullscreen =
     .label = Butun ekran
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
-fxa-toolbar-sync-now =
-    .label = Sinxronlash
-
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = Ochiq varaqlar yoʻq
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = Varaqlar roʻyxatini boshqa qurilmada koʻrish uchun sinxronizatsiyani yoqing.
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = Bu yerdagi varaqlarni boshqa qurilmalarda koʻrishni xohlaysizmi?
+appmenu-remote-tabs-connectdevice =
+    .label = Boshqa qurilmaga ulanish
+appmenu-remote-tabs-welcome = Boshqa qurilmalaridagi varaqlar roʻyxatini koʻring.
+appmenu-remote-tabs-unverified = Hisobingiz tasdiqlanishi kerak.
+appmenuitem-fxa-sign-in = { -brand-product-name } hisobiga kirish
 appmenuitem-save-page =
     .label = Sahifani saqlash…
 
@@ -85,4 +98,3 @@ appmenu-help-not-deceptive =
 
 appmenu-taskmanager =
     .label = Vazifa menejeri
-

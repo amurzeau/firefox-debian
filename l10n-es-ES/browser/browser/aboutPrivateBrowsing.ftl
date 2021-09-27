@@ -7,7 +7,7 @@ privatebrowsingpage-open-private-window-label = Abrir una ventana privada
 about-private-browsing-search-placeholder = Buscar en la web
 about-private-browsing-info-title = Está en una ventana privada
 about-private-browsing-info-myths = Mitos comunes sobre la navegación privada
-about-private-browsing =
+about-private-browsing-search-btn =
     .title = Buscar en la web
 # Variables
 #  $engine (String): the name of the user's default search engine
@@ -24,6 +24,12 @@ about-private-browsing-info-description = { -brand-short-name } borra su histori
 
 about-private-browsing-need-more-privacy = ¿Necesita más privacidad?
 about-private-browsing-turn-on-vpn = Pruebe { -mozilla-vpn-brand-name }
+
+about-private-browsing-info-description-simplified = { -brand-short-name } borra su historial de búsqueda y navegación al cerrar todas las ventanas privadas, pero esto no le hace anónimo.
+about-private-browsing-learn-more-link = Saber más
+
+about-private-browsing-hide-activity = Oculte su actividad y ubicación, dondequiera que esté navegando
+about-private-browsing-prominent-cta = Proteja su privacidad con { -mozilla-vpn-brand-name }
 
 # This string is the title for the banner for search engine selection
 # in a private window.

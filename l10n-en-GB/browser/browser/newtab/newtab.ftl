@@ -8,9 +8,6 @@
 newtab-page-title = New Tab
 newtab-settings-button =
     .title = Customise your New Tab page
-newtab-personalize-button-label = Personalise
-    .title = Personalise new tab
-    .aria-label = Personalise new tab
 newtab-personalize-icon-label =
     .title = Personalise new tab
     .aria-label = Personalise new tab
@@ -23,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Search
     .aria-label = Search
-newtab-search-box-search-the-web-text = Search the Web
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = Search with { $engine } or enter address
@@ -173,6 +169,11 @@ newtab-label-sponsored = { $sponsorOrSource } · Sponsored
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = Sponsored by { $sponsor }
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } min
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -252,10 +253,4 @@ newtab-custom-pocket-sponsored = Sponsored stories
 newtab-custom-recent-title = Recent activity
 newtab-custom-recent-subtitle = A selection of recent sites and content
 newtab-custom-close-button = Close
-# For the "Snippets" feature traditionally on about:home.
-# Alternative translation options: "Small Note" or something that
-# expresses the idea of "a small message, shortened from something else,
-# and non-essential but also not entirely trivial and useless.
-newtab-custom-snippets-title = Snippets
-newtab-custom-snippets-subtitle = Tips and news from { -vendor-short-name } and { -brand-product-name }
 newtab-custom-settings = Manage more settings

@@ -51,9 +51,6 @@ bookmark-selected-tabs =
 bookmark-tab =
     .label = Marcar lapela
     .accesskey = l
-reopen-in-container =
-    .label = Volver a abrir nun contedor
-    .accesskey = e
 tab-context-open-in-new-container-tab =
     .label = Abrir nunha nova lapela contedor
     .accesskey = e
@@ -68,26 +65,6 @@ move-to-new-window =
     .accesskey = x
 tab-context-close-multiple-tabs =
     .label = Pechar varias lapelas
-    .accesskey = v
-tab-context-undo-close-tabs =
-    .label =
-        { $tabCount ->
-            [1] Desfacer pechar lapela
-            [one] Desfacer pechar lapela
-           *[other] Desfacer pechar lapelas
-        }
-    .accesskey = U
-close-tab =
-    .label = Pechar lapela
-    .accesskey = c
-close-tabs =
-    .label = Pechar as lapelas
-    .accesskey = s
-move-tabs =
-    .label = Mover lapelas
-    .accesskey = v
-move-tab =
-    .label = Mover lapela
     .accesskey = v
 tab-context-share-url =
     .label = Compartir
@@ -114,6 +91,14 @@ tab-context-close-tabs =
            *[other] Pechar as lapelas
         }
     .accesskey = C
+tab-context-close-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] Pechar lapela
+            [one] Pechar { $tabCount } lapela
+           *[other] Pechar { $tabCount } lapelas
+        }
+    .accesskey = P
 tab-context-move-tabs =
     .label =
         { $tabCount ->
@@ -122,3 +107,10 @@ tab-context-move-tabs =
            *[other] Mover lapelas
         }
     .accesskey = v
+tab-context-send-tabs-to-device =
+    .label =
+        { $tabCount ->
+            [one] Enviar a lapela ao dispositivo
+           *[other] Enviar { $tabCount } lapelas ao dispositivo
+        }
+    .accesskey = n

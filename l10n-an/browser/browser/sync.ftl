@@ -2,16 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-fxa-toolbar-sync-syncing =
-    .label = Sincronizando…
-fxa-toolbar-sync-syncing-tabs =
-    .label = Sincronización d'as pestanyas…
-sync-disconnect-dialog-title = Desconnectar { -sync-brand-short-name }
 fxa-toolbar-sync-syncing2 = Sincronizando…
 sync-disconnect-dialog-title2 = Desconnectar?
 sync-disconnect-dialog-body = { -brand-product-name } deixará de sincronizar-se con la tuya cuenta, pero no borrará garra dato de navegación d'este dispositivo.
-fxa-disconnect-dialog-title = Desconnectar { -brand-product-name }?
-fxa-disconnect-dialog-body = { -brand-product-name } se desconnectará d'a tuya cuenta, pero no borrará garra dato de navegación d'este dispositivo.
 sync-disconnect-dialog-button = Desconnectar
 fxa-signout-dialog2-title = Quiers zarrar la sesión de { -fxaccount-brand-name }?
 fxa-signout-dialog-body = Los datos sincronizaus se quedarán en a tuya cuenta.
@@ -24,5 +17,10 @@ fxa-menu-turn-on-sync =
 fxa-menu-turn-on-sync-default = Activar sincronización
 fxa-menu-connect-another-device =
     .label = Connectar belatro dispositivo…
+# This is shown dynamically within "Send tab to device" in fxa menu.
+fxa-menu-send-tab-to-device-syncnotready =
+    .label = Sincronizando dispositivos…
+# This is shown within "Send tab to device" in fxa menu if account is not configured.
+fxa-menu-send-tab-to-device-description = Ninviar a l'inte una pestanya ta qualsequier dispositivo en que tiens una sesión.
 fxa-menu-sign-out =
     .label = Zarrar la sesión…

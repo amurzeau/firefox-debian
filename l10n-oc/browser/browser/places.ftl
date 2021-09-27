@@ -5,9 +5,6 @@
 places-open =
     .label = Dobrir
     .accesskey = D
-places-open-tab =
-    .label = Dobrir dins un onglet novèl
-    .accesskey = o
 places-open-in-tab =
     .label = Dobrir dins un onglet novèl
     .accesskey = D
@@ -17,26 +14,6 @@ places-open-all-bookmarks =
 places-open-all-in-tabs =
     .label = Tot dobrir dins d'onglets
     .accesskey = o
-places-open-window =
-    .label = Dobrir dins una fenèstra novèla
-    .accesskey = f
-places-open-private-window =
-    .label = Dobrir lo ligam dins una novèla fenèstra privada
-    .accesskey = p
-
-places-new-bookmark =
-    .label = Marcapagina novèl…
-    .accesskey = M
-places-new-folder-contextmenu =
-    .label = Repertòri novèl…
-    .accesskey = R
-places-new-folder =
-    .label = Repertòri novèl…
-    .accesskey = R
-places-new-separator =
-    .label = Separador novèl
-    .accesskey = S
-
 places-open-in-window =
     .label = Dobrir dins una fenèstra novèla
     .accesskey = f
@@ -82,15 +59,11 @@ places-bookmarks-search =
     .placeholder = Cercar dins los marcapaginas
 
 places-delete-domain-data =
-    .label = Doblidar aqueste site
-    .accesskey = D
+    .label = Oblidar aqueste site
+    .accesskey = O
 places-sortby-name =
     .label = Triar per nom
     .accesskey = r
-places-properties =
-    .label = Proprietats
-    .accesskey = i
-
 # places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
 places-edit-bookmark =
     .label = Modificar lo marcapagina…
@@ -105,6 +78,18 @@ places-remove-folder =
     .label =
         { $count ->
             [1] Suprimir lo dossièr
+            [one] Suprimir lo dossièr
+           *[other] Suprimir los dossièrs
+        }
+    .accesskey = S
+
+places-edit-folder2 =
+    .label = Modificar lo dossièr…
+    .accesskey = i
+places-delete-folder =
+    .label =
+        { $count ->
+            [1] Suprimir los dossièrs
             [one] Suprimir lo dossièr
            *[other] Suprimir los dossièrs
         }
@@ -132,6 +117,21 @@ places-remove-bookmark =
         }
     .accesskey = S
 
+# Variables:
+# $count (number) - The number of elements being selected for removal.
+places-delete-bookmark =
+    .label =
+        { $count ->
+            [1] Suprimir los marcapaginas
+            [one] Suprimir lo marcapagina
+           *[other] Suprimir los marcapaginas
+        }
+    .accesskey = S
+
 places-manage-bookmarks =
     .label = Gerir los marcapaginas
     .accesskey = G
+
+places-forget-about-this-site-confirmation-title = Oblidar aqueste site
+
+places-forget-about-this-site-forget = Oblidar

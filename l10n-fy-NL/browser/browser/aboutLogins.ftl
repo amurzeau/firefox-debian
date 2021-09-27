@@ -7,20 +7,12 @@ about-logins-page-title = Oanmeldingen en wachtwurden
 
 # "Google Play" and "App Store" are both branding and should not be translated
 
-login-app-promo-title = Nim jo wachtwurden oeral mei hinne
-login-app-promo-subtitle = Download de fergeze { -lockwise-brand-name }-app
-login-app-promo-android =
-    .alt = Downloade op Google Play
-login-app-promo-apple =
-    .alt = Downloade yn de App Store
-
 login-filter =
     .placeholder = Oanmeldingen sykje
 
 create-login-button = Nij oanmelding meitsje
 
 fxaccounts-sign-in-text = Bring jo wachtwurden nei jo oare apparaten
-fxaccounts-sign-in-button = Meld jo oan by { -sync-brand-short-name }
 fxaccounts-sign-in-sync-button = Oanmelde om te syngronisearjen
 fxaccounts-avatar-button =
     .title = Account beheare
@@ -40,8 +32,6 @@ menu-menuitem-preferences =
        *[other] Foarkarren
     }
 about-logins-menu-menuitem-help = Help
-menu-menuitem-android-app = { -lockwise-brand-short-name } foar Android
-menu-menuitem-iphone-app = { -lockwise-brand-short-name } foar iPhone en iPad
 
 ## Login List
 
@@ -55,6 +45,8 @@ login-list-count =
 login-list-sort-label-text = Sortearje op:
 login-list-name-option = Namme (A-Z)
 login-list-name-reverse-option = Namme (Z-A)
+login-list-username-option = Brûkersnamme (A-Z)
+login-list-username-reverse-option = Brûkersnamme (Z-A)
 about-logins-login-list-alerts-option = Warskôgingen
 login-list-last-changed-option = Lêst wizige
 login-list-last-used-option = Lêst brûkt
@@ -70,21 +62,22 @@ about-logins-list-item-breach-icon =
 about-logins-list-item-vulnerable-password-icon =
     .title = Kwetsber wachtwurd
 
-## Introduction screen
+about-logins-list-section-breach = Websites mei datalek
+about-logins-list-section-vulnerable = Kwetsbere wachtwurden
+about-logins-list-section-nothing = Gjin warskôging
+about-logins-list-section-today = Hjoed
+about-logins-list-section-yesterday = Juster
+about-logins-list-section-week = Ofrûne 7 dagen
 
-login-intro-heading = Sykje jo bewarre oanmeldingen? Stel { -sync-brand-short-name } yn.
+## Introduction screen
 
 about-logins-login-intro-heading-logged-out2 = Op syk nei jo bewarre oanmeldingen? Skeakelje syngronisaasje yn of ymportearje se.
 about-logins-login-intro-heading-logged-in = Gjin syngronisearre oanmeldingen fûn.
 login-intro-description = As jo jo oanmeldgegevens by { -brand-product-name } op in oar apparaat bewarre hawwe, kinne jo se sa ophelje:
-login-intro-instruction-fxa = Meitsje op it apparaat wêrop jo oanmeldgegevens stean in { -fxaccount-brand-name } of meld jo oan
-login-intro-instruction-fxa-settings = Soargje derfoar dat jo it fjild Oanmeldingen yn de ynstellingen fan { -sync-brand-short-name } oanfinkt hawwe
-about-logins-intro-instruction-help = Besykje <a data-l10n-name="help-link">Stipe foar { -lockwise-brand-short-name }</a> foar mear help
 login-intro-instructions-fxa = Meitsje op it apparaat wêrop jo oanmeldgegevens stean in { -fxaccount-brand-name } of meld jo oan.
 login-intro-instructions-fxa-settings = Gean nei Ynstellingen > Sync > Syngronisaasje ynskeakelje… Pleats in finkje by Oanmeldingen en wachtwurden.
 login-intro-instructions-fxa-help = Besykje <a data-l10n-name="help-link">Stipe foar { -lockwise-brand-short-name }</a> foar mear help.
 about-logins-intro-import = As jo oanmeldingen yn in oare browser bewarre wurde, kinne jo <a data-l10n-name="import-link">se ymportearje yn { -lockwise-brand-short-name }</a>
-
 about-logins-intro-import2 = As jo oanmeldingen bûten { -brand-product-name } bewarre binne, dan kinne jo se ymportearje <a data-l10n-name="import-browser-link">fan in oare browser út</a> of <a data-l10n-name = "import-file-link">fan in bestân út</a>
 
 ## Login
@@ -141,8 +134,6 @@ about-logins-copy-password-os-auth-dialog-message-macosx = kopiearje it bewarre 
 
 ## Master Password notification
 
-master-password-notification-message = Fier jo haadwachtwurd yn om bewarre oanmeldingen en wachtwurden te besjen
-
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message-win = Fier jo oanmeldgegevens foar Windows yn om jo oanmelding te eksportearjen. Hjirtroch wurdt de befeiliging fan jo accounts beskerme.
 # This message can be seen when attempting to export a password in about:logins
@@ -157,22 +148,6 @@ master-password-reload-button =
     .accesskey = O
 
 ## Password Sync notification
-
-enable-password-sync-notification-message =
-    { PLATFORM() ->
-        [windows] Wolle jo jo oanmeldingen oeral wêr't jo { -brand-product-name } brûke? Gean nei de opsjes fan { -sync-brand-short-name } en finkje it fjild Oanmeldingen oan.
-       *[other] Wolle jo jo oanmeldingen oeral wêr't jo { -brand-product-name } brûke? Gean nei de foarkarren fan { -sync-brand-short-name } en finkje it fjild Oanmeldingen oan.
-    }
-enable-password-sync-preferences-button =
-    .label =
-        { PLATFORM() ->
-            [windows] { -sync-brand-short-name }-opsjes besjen
-           *[other] { -sync-brand-short-name }-foarkarren besjen
-        }
-    .accesskey = b
-about-logins-enable-password-sync-dont-ask-again-button =
-    .label = Dit net mear freegje
-    .accesskey = D
 
 ## Dialogs
 
@@ -262,7 +237,6 @@ about-logins-error-message-duplicate-login-with-link = Der bestiet al in fermeld
 
 # This is a generic error message.
 about-logins-error-message-default = Der is in flater bard wylst it bewarjen fan dit wachtwurd.
-
 
 ## Login Export Dialog
 

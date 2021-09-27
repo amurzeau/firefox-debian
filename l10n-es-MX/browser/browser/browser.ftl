@@ -156,12 +156,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Agregar a la barra de direcciones
 page-action-manage-extension =
     .label = Administrar extensión…
-page-action-remove-from-urlbar =
-    .label = Eliminar de la barra de direcciones
 page-action-remove-extension =
     .label = Eliminar extensión
 
@@ -179,10 +175,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Esta vez, buscar con:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Cambiar preferencias de búsqueda
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Cambiar preferencias de búsqueda
 search-one-offs-context-open-new-tab =
@@ -246,8 +238,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Mostrar editor al guardar
     .accesskey = S
-bookmark-panel-done-button =
-    .label = Terminar
 bookmark-panel-save-button =
     .label = Guardar
 # Width of the bookmark panel.
@@ -277,8 +267,6 @@ identity-passive-loaded = Partes de esta página no son seguras (por ejemplo im�
 identity-active-loaded = Has deshabilitado la protección en esta página.
 identity-weak-encryption = Esta página usa encriptación débil.
 identity-insecure-login-forms = Inicios de sesión ingresados en esta página pueden ser peligrosos.
-identity-permissions =
-    .value = Permisos
 identity-https-only-connection-upgraded = (actualizado a HTTPS)
 identity-https-only-label = Modo solo HTTPS
 identity-https-only-dropdown-on =
@@ -294,7 +282,6 @@ identity-permissions-storage-access-header = Cookies entre sitios
 identity-permissions-storage-access-hint = Estas partes pueden usar cookies de sitios cruzados y datos del sitio mientras está en este sitio.
 identity-permissions-storage-access-learn-more = Saber más
 identity-permissions-reload-hint = Puede que tengas que recargar la página para que se apliquen los cambios.
-identity-permissions-empty = No tienes permitido en este sitio web ningún permiso especial.
 identity-clear-site-data =
     .label = Limpiar cookies y datos del sitio…
 identity-connection-not-secure-security-view = No se estableció una conexión segura con este sitio.
@@ -379,12 +366,6 @@ bookmarks-toolbar-empty-message = Para un acceso rápido, ubica tus marcadores a
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Compartir cámara
-    .accesskey = c
-popup-select-microphone =
-    .value = Compartir Micrófono:
-    .accesskey = M
 popup-select-camera-device =
     .value = Cámara:
     .accesskey = C
@@ -398,14 +379,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Altavoces
 popup-all-windows-shared = Todas las ventanas visibles en tu pantalla se compartirán.
-popup-screen-sharing-not-now =
-    .label = Ahora no
-    .accesskey = n
-popup-screen-sharing-never =
-    .label = Nunca permitir
-    .accesskey = N
-popup-silence-notifications-checkbox = Deshabilitar notificaciones de { -brand-short-name } mientras se comparte
-popup-silence-notifications-checkbox-warning = { -brand-short-name } no mostrará notificaciones mientras se está compartiendo.
 popup-screen-sharing-block =
     .label = Bloquear
     .accesskey = B
@@ -429,14 +402,10 @@ enable-devtools-popup-description = Para usar el atajo F12, primero abre DevTool
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Término de búsqueda o dirección
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Término de búsqueda o dirección
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = El navegador está controlado a distancia
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -485,8 +454,6 @@ urlbar-go-button =
     .tooltiptext = Ir a la dirección en la Barra de ubicaciones.
 urlbar-page-action-button =
     .tooltiptext = Acciones de la página
-urlbar-pocket-button =
-    .tooltiptext = Guardar en { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -545,6 +512,16 @@ urlbar-result-action-search-tabs = Buscar pestañas
 
 ## Labels shown above groups of urlbar results
 
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = Sugerencias de { $engine }
 
 ## Full Screen and Pointer Lock UI
 
@@ -681,6 +658,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Personalizar barra de herramientas…
     .accesskey = C
+toolbar-button-email-link =
+    .label = Enviar enlace
+    .tooltiptext = Enviar por correo un enlace a esta página
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Guardar página
+    .tooltiptext = Guardar esta página ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Abrir archivo
+    .tooltiptext = Abrir archivo ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Pestañas sincronizadas
+    .tooltiptext = Mostrar pestañas de otros dispositivos
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Nueva ventana privada
+    .tooltiptext = Abrir una nueva ventana de navegación privada ({ $shortcut })
 
 ## EME notification panel
 
@@ -734,3 +732,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Ocultar interruptor de imagen superpuesta
     .accesskey = H
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navegación
+navbar-downloads =
+    .label = Descargas
+navbar-overflow =
+    .tooltiptext = Más herramientas…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Imprimir
+    .tooltiptext = Imprimir esta página… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Imprimir
+    .tooltiptext = Imprimir esta página
+navbar-home =
+    .label = Inicio
+    .tooltiptext = Página de inicio de { -brand-short-name }
+navbar-library =
+    .label = Biblioteca
+    .tooltiptext = Ver historial, marcadores guardados y más
+navbar-search =
+    .title = Buscar
+navbar-accessibility-indicator =
+    .tooltiptext = Funciones de accesibilidad activadas
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Pestañas del navegador
+tabs-toolbar-new-tab =
+    .label = Nueva pestaña
+tabs-toolbar-list-all-tabs =
+    .label = Mostrar todas las pestañas
+    .tooltiptext = Mostrar todas las pestañas

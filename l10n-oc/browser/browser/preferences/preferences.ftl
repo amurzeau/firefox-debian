@@ -8,26 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Solament quand { -brand-short-name } es configurat per blocar los traçadors coneguts
 do-not-track-option-always =
     .label = Totjorn
-pref-page-title =
-    { PLATFORM() ->
-        [windows] Opcions
-       *[other] Preferéncias
-    }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Please keep the placeholder string short to avoid truncation.
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input-box =
-    .style = width: 15.4em
-    .placeholder =
-        { PLATFORM() ->
-            [windows] Recercar dins Opcions
-           *[other] Recercar dins Preferéncias
-        }
 settings-page-title = Paramètres
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
@@ -55,9 +35,6 @@ category-search =
 pane-privacy-title = Vida privada e seguretat
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-pane-sync-title2 = { -sync-brand-short-name }
-category-sync2 =
-    .tooltiptext = { pane-sync-title2 }
 pane-sync-title3 = Sincronizacion
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
@@ -96,21 +73,12 @@ restart-later = Reaviar mai tard
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their home page
-# is being controlled by an extension.
-extension-controlled-homepage-override = Una extension, <img data-l10n-name="icon"/> { $name }, contraròtla vòstra pagina d’acuèlh.
-# This string is shown to notify the user that their new tab page
-# is being controlled by an extension.
-extension-controlled-new-tab-url = Una extension, <img data-l10n-name="icon"/> { $name }, contraròtla la pagina Onglet novèl.
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
 extension-controlled-password-saving = Una extension, <img data-l10n-name="icon"/> { $name }, contraròtla aqueste paramètre.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Una extension, <img data-l10n-name="icon"/>{ $name }, contraròtla aqueste paramètre.
-# This string is shown to notify the user that the default search engine
-# is being controlled by an extension.
-extension-controlled-default-search = Una extension, <img data-l10n-name="icon"/> { $name }, a definit lo motor de recèrca per defaut.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = Una extension, <img data-l10n-name="icon"/> { $name }, requerís los onglets isolats.
@@ -131,25 +99,12 @@ extension-controlled-enable = Per activar aquesta extension anatz a <img data-l1
 
 search-results-header = Resultats de la recèrca
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
-search-results-empty-message =
-    { PLATFORM() ->
-        [windows] Desolat ! I a pas de resultats dins Opcions per « <span data-l10n-name="query"></span> ».
-       *[other] Desolat ! I a pas de resultats dins Preferéncias per « <span data-l10n-name="query"></span> ».
-    }
-# `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message2 = Desolat ! I a pas de resultats dins los Paramètres per « <span data-l10n-name="query"></span> ».
 search-results-help-link = Vos cal d’ajuda ? Consultatz l’<a data-l10n-name="url">Assisténcia de { -brand-short-name }</a>
 
 ## General Section
 
 startup-header = Aviada
-# { -brand-short-name } will be 'Firefox Developer Edition',
-# since this setting is only exposed in Firefox Developer Edition
-separate-profile-mode =
-    .label = Autorizar { -brand-short-name } e Firefox a s'executar a l’encòp
-use-firefox-sync = Astúcia : aquò utiliza de perfils destriats. Utilizatz { -sync-brand-short-name } per partejar de donadas entre eles.
-get-started-not-logged-in = Se connectar a { -sync-brand-short-name }…
-get-started-configured = Dobrir las preferéncias del { -sync-brand-short-name }
 always-check-default =
     .label = Totjorn verificar se { -brand-short-name } es vòstre navegador per defaut
     .accesskey = T
@@ -175,11 +130,11 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Vos avisar en tampar d'onglets multiples
     .accesskey = m
+confirm-on-close-multiple-tabs =
+    .label = Confirmar abans la tampadura de mantun onglet
+    .accesskey = a
 warn-on-open-many-tabs =
     .label = Vos avisar quand dobrir d'onglets multiples pòt alentir { -brand-short-name }
-    .accesskey = d
-switch-links-to-new-tabs =
-    .label = En dobrissent un ligam dins un onglet novèl, i anar sul pic
     .accesskey = d
 switch-to-new-tabs =
     .label = En dobrissent un ligam, imatge o mèdia dins un onglet novèl, i anar sul pic
@@ -327,10 +282,6 @@ applications-manage-app =
     .label = Detalhs de l'aplicacion…
 applications-always-ask =
     .label = Totjorn demandar
-applications-type-pdf = Portable Document Format (PDF)
-# Variables:
-#   $type (String) - the MIME type (e.g application/binary)
-applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 # Variables:
 #   $type-description (String) - Description of the type (e.g "Portable Document Format")
 #   $type (String) - the MIME type (e.g application/binary)
@@ -397,15 +348,6 @@ update-application-warning-cross-user-setting = Aqueste paramètres s’aplicar�
 update-application-use-service =
     .label = Utilizar un servici en rèireplan per installar las mesas a jorn
     .accesskey = z
-update-setting-write-failure-title = Error en enregistrant las preferéncias de mesas a jorn
-# Variables:
-#   $path (String) - Path to the configuration file
-# The newlines between the main text and the line containing the path is
-# intentional so the path is easier to identify.
-update-setting-write-failure-message =
-    { -brand-short-name } a rencontrat una error e pas enregistrat aquesta modificacion. Notatz que modificar aquesta preferéncia de mesa a jorn requerís la permission d’escriure sul fichièr çai-jos. Vosautres o un administrator sistèma podètz benlèu corregir aquò en donant al grop Users l’accès complet a aqueste fichièr.
-    
-    Escritura impossibla sul fichièr : { $path }
 update-setting-write-failure-title2 = Error en enregistrant los paramètres de mesas a jorn
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -611,10 +553,8 @@ search-show-suggestions-above-history-option =
     .label = Mostrar las suggestions avant l’istoric dins la barra d’adreça
 search-show-suggestions-private-windows =
     .label = Mostrar las suggestions de recèrca en navegacion privada
-suggestions-addressbar-settings-generic = Cambiar las preferéncias per las suggestions de la barra d’adreça
 suggestions-addressbar-settings-generic2 = Cambiar los paramètres per las suggestions de la barra d’adreça
 search-suggestions-cant-show = Recercar las suggestions que son pas afichadas dins los resultats de la barra d'adreça qu'avètz configurat { -brand-short-name } per pas jamai servar l'istoric.
-search-one-click-header = Motor de recèrca en un clic
 search-one-click-header2 = Acorchis de recèrca
 search-one-click-desc = Causissètz de motors de recerca altenatius qu'apareisson jos las barras d'adreça e de recèrca quand començatz d’escriure un mot-clau.
 search-choose-engine-column =
@@ -641,12 +581,6 @@ search-keyword-warning-bookmark = Avètz causit un mot clau que ja es utilizat p
 
 ## Containers Section
 
-containers-back-button =
-    .aria-label =
-        { PLATFORM() ->
-            [windows] Tornar a las opcions
-           *[other] Tornar a las preferéncias
-        }
 containers-back-button2 =
     .aria-label = Tornar als paramètres
 containers-header = Onglets de contenedor
@@ -656,8 +590,6 @@ containers-add-button =
 containers-new-tab-check =
     .label = Seleccionar un contenedor diferent per cada onglet novèl
     .accesskey = S
-containers-preferences-button =
-    .label = Preferéncias
 containers-settings-button =
     .label = Paramètres
 containers-remove-button =
@@ -667,10 +599,6 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Emportatz vòstre Web pertot
-sync-signedout-description = Sincronizatz vòstres marcapaginas, istoric, onglets, senhals, moduls, e preferéncias per totes vòstres periferics.
-sync-signedout-account-signin2 =
-    .label = Se connectar a { -sync-brand-short-name }…
-    .accesskey = c
 sync-signedout-description2 = Sincronizar vòstres marcapaginas, istoric, onglets, senhals, moduls, e paramètres per totes vòstres periferics.
 sync-signedout-account-signin3 =
     .label = Connexion per sincronizar…
@@ -710,10 +638,6 @@ sync-sign-in =
 
 prefs-syncing-on = Sincronizacion : ACTIVADA
 prefs-syncing-off = Sincronizacion : DESACTIVADA
-prefs-sync-setup =
-    .label = Configurar { -sync-brand-short-name }…
-    .accesskey = C
-prefs-sync-offer-setup-label = Sincronizar vòstres marcapaginas, istoric, onglets, senhals, moduls, e preferéncias per totes vòstres periferics.
 prefs-sync-turn-on-syncing =
     .label = Activar la sincronizacion…
     .accesskey = s
@@ -733,11 +657,6 @@ sync-currently-syncing-logins-passwords = Identificants e senhals
 sync-currently-syncing-addresses = Adreças
 sync-currently-syncing-creditcards = Cartas de crèdit
 sync-currently-syncing-addons = Moduls complementaris
-sync-currently-syncing-prefs =
-    { PLATFORM() ->
-        [windows] Opcions
-       *[other] Preferéncias
-    }
 sync-currently-syncing-settings = Paramètres
 sync-change-options =
     .label = Modificar…
@@ -778,14 +697,6 @@ sync-engine-addons =
     .label = los moduls complementaris
     .tooltiptext = Extensions e tèmas per Firefox per ordenador
     .accesskey = u
-sync-engine-prefs =
-    .label =
-        { PLATFORM() ->
-            [windows] Opcions
-           *[other] Preferéncias
-        }
-    .tooltiptext = Los paramètres qu’avètz cambiat dins General, Vida Privada e Seguretat
-    .accesskey = s
 sync-engine-settings =
     .label = Paramètres
     .tooltiptext = Paramètres generals, de confidencialitat e de seguretat que cambiaretz
@@ -835,9 +746,6 @@ forms-fill-logins-and-passwords =
 forms-saved-logins =
     .label = Identificants salvats…
     .accesskey = S
-forms-master-pw-use =
-    .label = Utilizar un senhal principal
-    .accesskey = U
 forms-primary-pw-use =
     .label = Utilizar un senhal principal
     .accesskey = U
@@ -848,7 +756,6 @@ forms-primary-pw-learn-more-link = Ne saber mai
 forms-master-pw-change =
     .label = Modificar lo senhal principal…
     .accesskey = M
-forms-master-pw-fips-title = Actualament, sètz en mòde FIPS. Lo mòde FIPS necessita un senhal principal pas void.
 forms-primary-pw-change =
     .label = Modificar lo senhal principal…
     .accesskey = M
@@ -865,13 +772,6 @@ forms-windows-sso-desc = Gerissètz los compte als paramètres de vòstre perife
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = Per crear un senhal màger, picatz vòstras informacions de connexion Windows. Aquò permet de servar la seguretat dels comptes.
-# This message can be seen by trying to add a Master Password.
-# The macOS strings are preceded by the operating system with "Firefox is trying to "
-# and includes subtitle of "Enter password for the user "xxx" to allow this." These
-# notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = crear un senhal principal
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Per crear un senhal principal, picatz vòstras informacions de connexion Windows. Aquò permet de servar la seguretat dels comptes.
 # This message can be seen by trying to add a Primary Password.
@@ -967,9 +867,6 @@ sitedata-clear =
 sitedata-settings =
     .label = Gerir las donadas…
     .accesskey = G
-sitedata-cookies-permissions =
-    .label = Gerir las autorizacions…
-    .accesskey = a
 sitedata-cookies-exceptions =
     .label = Gerir las excepcions…
     .accesskey = x
@@ -1126,10 +1023,6 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = Excepcions…
     .accesskey = E
-permissions-a11y-privacy-checkbox =
-    .label = Empachar los servicis d’accessibilitat d’accedir a vòstre navegador
-    .accesskey = a
-permissions-a11y-privacy-link = Ne saber mai
 
 ## Privacy Section - Data Collection
 
@@ -1151,10 +1044,6 @@ addon-recommendations-link = Ne saber mai
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Lo rapòrt de donadas es desactivat per aquela configuracion de compilacion
-collection-backlogged-crash-reports =
-    .label = Permetre a { -brand-short-name } d’enviar los rapòrts de bugs en espèra
-    .accesskey = P
-collection-backlogged-crash-reports-link = Ne saber mai
 collection-backlogged-crash-reports-with-link = Autorizar { -brand-short-name } a enviar de rapòrt de plantatge en espèra a vòstre nom <a data-l10n-name="crash-reports-link">Ne saber mai</a>
     .accesskey = A
 
@@ -1179,13 +1068,6 @@ security-block-uncommon-software =
 ## Privacy Section - Certificates
 
 certs-header = Certificats
-certs-personal-label = Quand un servidor demanda vòstre certificat personal
-certs-select-auto-option =
-    .label = ne seleccionar un automaticament
-    .accesskey = S
-certs-select-ask-option =
-    .label = Vos demandar cada còp
-    .accesskey = D
 certs-enable-ocsp =
     .label = Consultar los servidors respondeires OCSP per confirmar la validitat actuala de vòstres certificats
     .accesskey = C
@@ -1195,29 +1077,6 @@ certs-view =
 certs-devices =
     .label = Periferics de seguretat…
     .accesskey = P
-space-alert-learn-more-button =
-    .label = Ne saber mai
-    .accesskey = S
-space-alert-over-5gb-pref-button =
-    .label =
-        { PLATFORM() ->
-            [windows] Dobrir las opcions
-           *[other] Dobrir las preferéncias
-        }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] O
-           *[other] D
-        }
-space-alert-over-5gb-message =
-    { PLATFORM() ->
-        [windows] { -brand-short-name } manca d’espaci disc. Lo contengut dels sites web poiriá s’afichar mal. Podètz escafar las donadas de site enregistradas dins Opcions > Vida privada e seguretat > Cookies e donadas de sites.
-       *[other] { -brand-short-name } manca d’espaci disc. Lo contengut dels sites web poiriá s’afichar mal. Podètz escafar las donadas de site enregistradas dins Preferéncias > Vida privada e seguretat > Cookies e donadas de sites.
-    }
-space-alert-under-5gb-ok-button =
-    .label = Òc, plan comprés
-    .accesskey = O
-space-alert-under-5gb-message = { -brand-short-name } a pas mai d'espaci disc. Los contenguts del site web pòdon s'afichar pas coma cal. Clicatz « Ne saber mai » per optimizar l'utilizacion de vòstre disc per melhorar la navegacion.
 space-alert-over-5gb-settings-button =
     .label = Dobrir los paramètres
     .accesskey = D

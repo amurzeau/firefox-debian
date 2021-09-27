@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Pridėti į adreso lauką
 page-action-manage-extension =
     .label = Tvarkyti priedą…
-page-action-remove-from-urlbar =
-    .label = Pašalinti iš adreso lauko
 page-action-remove-extension =
     .label = Pašalinti priedą
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Šįkart ieškokite su:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Keisti paieškos nuostatas
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Keisti paieškos nuostatas
 search-one-offs-context-open-new-tab =
@@ -251,8 +243,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Rodyti redagavimo formą įrašant
     .accesskey = R
-bookmark-panel-done-button =
-    .label = Atlikta
 bookmark-panel-save-button =
     .label = Įrašyti
 # Width of the bookmark panel.
@@ -282,8 +272,6 @@ identity-passive-loaded = Kai kurios šio tinklalapio dalys nėra saugios (pvz.,
 identity-active-loaded = Šiame tinklalapyje esate išjungę apsaugą.
 identity-weak-encryption = Šis tinklalapis naudoja silpną šifravimą.
 identity-insecure-login-forms = Šiame tinklalapyje įvesti prisijungimo duomenys gali būti perimti.
-identity-permissions =
-    .value = Leidimai
 identity-https-only-connection-upgraded = (naudojamas HTTPS)
 identity-https-only-label = Tik HTTPS veiksena
 identity-https-only-dropdown-on =
@@ -299,7 +287,6 @@ identity-permissions-storage-access-header = Tarp svetainių veikiantys slapukai
 identity-permissions-storage-access-hint = Šios šalys gali naudoti tarp svetainių veikiančius slapukus ir svetainių duomenis, kai esate šioje svetainėje.
 identity-permissions-storage-access-learn-more = Sužinoti daugiau
 identity-permissions-reload-hint = Kad būtų pritaikyti pakeitimai, tinklalapį galimai reikia atsiųsti iš naujo.
-identity-permissions-empty = Šiai svetainei nesate suteikę jokių ypatingų leidimų.
 identity-clear-site-data =
     .label = Valyti slapukus ir svetainių duomenis…
 identity-connection-not-secure-security-view = Nesate saugiai prisijungę prie šios svetainės.
@@ -387,12 +374,6 @@ bookmarks-toolbar-empty-message = Spartesniam pasiekimui, patalpinkite savo adre
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Kamera, kurią leisite pasiekti:
-    .accesskey = K
-popup-select-microphone =
-    .value = Mikrofonas, kurį leisite pasiekti:
-    .accesskey = M
 popup-select-camera-device =
     .value = Kamera:
     .accesskey = K
@@ -406,14 +387,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Garsiakalbiai
 popup-all-windows-shared = Bus leidžiama matyti visus jūsų ekrane matomus langus.
-popup-screen-sharing-not-now =
-    .label = Ne dabar
-    .accesskey = b
-popup-screen-sharing-never =
-    .label = Niekada neleisti
-    .accesskey = N
-popup-silence-notifications-checkbox = Išjungti „{ -brand-short-name }“ pranešimus dalinantis
-popup-silence-notifications-checkbox-warning = „{ -brand-short-name }“ nerodys pranešimų, kai jūs dalinatės.
 popup-screen-sharing-block =
     .label = Neleisti
     .accesskey = N
@@ -437,14 +410,10 @@ enable-devtools-popup-description = Norėdami naudoti spartųjį klavišą „F1
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Įveskite adresą arba paieškos žodžius
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Įveskite adresą arba paieškos žodžius
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Naršyklė valdoma per nuotolį
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -493,8 +462,6 @@ urlbar-go-button =
     .tooltiptext = Eiti į adreso lauke surinktą adresą
 urlbar-page-action-button =
     .tooltiptext = Tinklalapio veiksmai
-urlbar-pocket-button =
-    .tooltiptext = Įrašyti į „{ -pocket-brand-name }“
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -689,6 +656,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Tvarkyti priemonių juostą…
     .accesskey = T
+toolbar-button-email-link =
+    .label = Nusiųsti saitą
+    .tooltiptext = Nusiųsti saitą el. paštu
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Įrašyti tinklalapį
+    .tooltiptext = Įrašyti šį tinklalapį ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Atverti failą
+    .tooltiptext = Atverti failą ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Sinchronizuotos kortelės
+    .tooltiptext = Rodyti korteles iš kitų įrenginių
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Naujas privataus naršymo langas
+    .tooltiptext = Atverti naują privačiojo naršymo langą ({ $shortcut })
 
 ## EME notification panel
 
@@ -742,3 +730,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Slėpti vaizdo-vaizde perjungimą
     .accesskey = S
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navigacija
+navbar-downloads =
+    .label = Atsiuntimai
+navbar-overflow =
+    .tooltiptext = Daugiau priemonių…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Spausdinti
+    .tooltiptext = Spausdinti šį tinklalapį… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Spausdinti
+    .tooltiptext = Spausdinti šį tinklalapį
+navbar-home =
+    .label = Pradžios tinklalapis
+    .tooltiptext = „{ -brand-short-name }“ pradžios tinklalapis
+navbar-library =
+    .label = Archyvas
+    .tooltiptext = Peržiūrėti žurnalą, adresyno įrašus ir daugiau
+navbar-search =
+    .title = Paieška
+navbar-accessibility-indicator =
+    .tooltiptext = Prieinamumo funkcijos įjungtos
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Kortelių juosta
+tabs-toolbar-new-tab =
+    .label = Nauja kortelė
+tabs-toolbar-list-all-tabs =
+    .label = Pateikti visas korteles
+    .tooltiptext = Pateikti visas korteles

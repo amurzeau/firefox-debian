@@ -18,6 +18,8 @@ policy-AppUpdateURL = Oanpaste app-fernijings-URL ynstelle.
 
 policy-Authentication = Yntegrearre ferifikaasje konfigurearje foar websiden dy't it stypje.
 
+policy-BackgroundAppUpdate2 = Eftergrûnfernijingen yn- of útskeakelje.
+
 policy-BlockAboutAddons = Tagong ta de add-ons-behearder (about:addons) blokkearje.
 
 policy-BlockAboutConfig = Tagong ta de side about:config blokkearje.
@@ -31,6 +33,8 @@ policy-CaptivePortal = Stipe foar hotspot-oanmeldingsside yn- of útskeakelje.
 policy-CertificatesDescription = Sertifikaten tafoegje of ynboude sertifikaten brûke.
 
 policy-Cookies = Tastean of wegerje dat websites cookies ynstelle.
+
+policy-DisableBuiltinPDFViewer = PDF.js útskeakelje, de ynboude PDF-viewer yn { -brand-short-name }.
 
 policy-DisabledCiphers = Kodearringssuites útskeakelje.
 
@@ -85,6 +89,8 @@ policy-ExtensionSettings = Alle aspekten fan ynstallaasje fan útwreidingen behe
 
 policy-ExtensionUpdate = Automatyske útwreidings-fernijingen yn- of útskeakelje.
 
+policy-Handlers = Standert tapassinghandlers konfigurearje
+
 policy-HardwareAcceleration = Wannear false, hardwarefersnelling útskeakelje.
 
 policy-InstallAddonsPermission = Tastean dat bepaalde websites add-ons ynstallearje.
@@ -100,6 +106,8 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Op spesifike websites 
 ##
 
 policy-LocalFileLinks = Spesifike websites tastean te keppeljen nei lokale bestannen.
+
+policy-ManualAppUpdateOnly = Allinnich hânmjittige fernijingen tastean en de brûker net oer fernijingen ynformearje.
 
 policy-NetworkPrediction = ‘Network prediction’ (DNS prefetching) yn- of útskeakelje.
 
@@ -119,6 +127,8 @@ policy-PDFjs = PDF.js, de yn { -brand-short-name } ynboude PDF-lêzer, útskeake
 policy-Permissions2 = Tastimmingen foar kamera, mikrofoan, lokaasje, notifikaasjes en automatysk ôfspyljen konfigurearje.
 
 policy-Preferences = De wearde foar in subset fan foarkarren ynstelle en beskoattelje.
+
+policy-PrimaryPassword = In haadwachtwurd fereaskje of foarkomme.
 
 policy-PromptForDownloadLocation = Freegje wêr't downloade bestannen bewarre wurde moatte.
 

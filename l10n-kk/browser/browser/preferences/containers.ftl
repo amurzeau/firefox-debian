@@ -7,7 +7,7 @@ containers-window-new =
     .style = width: 45em
 # Variables
 #   $name (String) - Name of the container
-containers-window-update =
+containers-window-update-settings =
     .title = { $name } контейнер баптаулары
     .style = width: 45em
 
@@ -39,10 +39,6 @@ containers-icon-label = Таңбашасы
 containers-color-label = Түсі
     .accesskey = с
     .style = { -containers-labels-style }
-
-containers-button-done =
-    .label = Дайын
-    .accesskey = Д
 
 containers-dialog =
     .buttonlabelaccept = Дайын

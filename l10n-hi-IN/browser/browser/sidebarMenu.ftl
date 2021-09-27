@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = बाज़ू पट्टी बंद करें
+
+sidebar-close-button =
+    .tooltiptext = बाज़ू पट्टी बंद करें

@@ -8,26 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Len ak je zapnuté blokovanie známych sledovacích prvkov
 do-not-track-option-always =
     .label = Vždy
-pref-page-title =
-    { PLATFORM() ->
-        [windows] Možnosti
-       *[other] Možnosti
-    }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Please keep the placeholder string short to avoid truncation.
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input-box =
-    .style = width: 15.4em
-    .placeholder =
-        { PLATFORM() ->
-            [windows] Hľadať
-           *[other] Hľadať
-        }
 settings-page-title = Nastavenia
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
@@ -55,9 +35,6 @@ category-search =
 pane-privacy-title = Súkromie a bezpečnosť
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-pane-sync-title2 = { -sync-brand-short-name }
-category-sync2 =
-    .tooltiptext = { pane-sync-title2 }
 pane-sync-title3 = Synchronizácia
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
@@ -96,21 +73,12 @@ restart-later = Reštartovať neskôr
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their home page
-# is being controlled by an extension.
-extension-controlled-homepage-override = Vašu domovskú stránku kontroluje rozšírenie <img data-l10n-name="icon"/> { $name }.
-# This string is shown to notify the user that their new tab page
-# is being controlled by an extension.
-extension-controlled-new-tab-url = Vašu stránku novej karty kontroluje rozšírenie <img data-l10n-name="icon"/> { $name }.
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
 extension-controlled-password-saving = Toto nastavenie spravuje rozšírenie <img data-l10n-name="icon"/> { $name }.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Toto nastavenie spravuje rozšírenie <img data-l10n-name="icon"/> { $name }.
-# This string is shown to notify the user that the default search engine
-# is being controlled by an extension.
-extension-controlled-default-search = Rozšírenie <img data-l10n-name="icon"/> { $name } vám nastavilo nový predvolený vyhľadávací modul.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = Rozšírenie <img data-l10n-name="icon"/> { $name } vyžaduje aktiváciu kontajnerových kariet.
@@ -131,25 +99,12 @@ extension-controlled-enable = Ak chcete toto rozšírenie povoliť, prejdite do 
 
 search-results-header = Výsledky vyhľadávania
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
-search-results-empty-message =
-    { PLATFORM() ->
-        [windows] Mrzí nás to, no pre hľadaný výraz „<span data-l10n-name="query"></span>“ sme v možnostiach nič nenašli.
-       *[other] Mrzí nás to, no pre hľadaný výraz „<span data-l10n-name="query"></span>” sme v možnostiach nič nenašli.
-    }
-# `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message2 = Mrzí nás to, ale pre hľadaný výraz “<span data-l10n-name="query"></span>” sme v možnostiach nič nenašli.
 search-results-help-link = Potrebujete pomoc? Navštívte <a data-l10n-name="url">stránku podpory pre prehliadač { -brand-short-name }</a>
 
 ## General Section
 
 startup-header = Spustenie
-# { -brand-short-name } will be 'Firefox Developer Edition',
-# since this setting is only exposed in Firefox Developer Edition
-separate-profile-mode =
-    .label = Umožniť, aby { -brand-short-name } a Firefox mohli byť spustené v rovnakom čase
-use-firefox-sync = Tip: použijú sa oddelené používateľské profily. Ak chcete medzi nimi zdieľať údaje, môžete využiť službu { -sync-brand-short-name }.
-get-started-not-logged-in = Prihlásiť sa do služby { -sync-brand-short-name }…
-get-started-configured = Otvoriť nastavenia služby { -sync-brand-short-name }
 always-check-default =
     .label = Vždy kontrolovať, či je { -brand-short-name } predvoleným prehliadačom
     .accesskey = r
@@ -160,6 +115,9 @@ set-as-my-default-browser =
     .accesskey = d
 startup-restore-previous-session =
     .label = Obnoviť predchádzajúcu reláciu
+    .accesskey = o
+startup-restore-windows-and-tabs =
+    .label = Načítať naposledy otvorené okná a karty
     .accesskey = o
 startup-restore-warn-on-quit =
     .label = Upozorniť pri ukončení prehliadača
@@ -175,12 +133,20 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Upozorniť pri zatváraní viacerých kariet
     .accesskey = o
+confirm-on-close-multiple-tabs =
+    .label = Vyžadovať potvrdenie pred zatvorením viacerých kariet naraz
+    .accesskey = V
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (String) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+confirm-on-quit-with-key =
+    .label = Vyžadovať potvrdenie pred ukončením pomocou { $quitKey }
+    .accesskey = V
 warn-on-open-many-tabs =
     .label = Upozorniť, ak by otvorenie viacerých kariet spôsobilo spomalenie prehliadača { -brand-short-name }
     .accesskey = U
-switch-links-to-new-tabs =
-    .label = Pri otvorení odkazu na novej karte ju preniesť do popredia
-    .accesskey = r
 switch-to-new-tabs =
     .label = Pri otvorení odkazu, obrázka alebo média na novej karte túto preniesť do popredia
     .accesskey = r
@@ -330,10 +296,6 @@ applications-manage-app =
     .label = Podrobnosti o aplikácii…
 applications-always-ask =
     .label = Vždy sa opýtať
-applications-type-pdf = Súbory Portable Document Format (PDF)
-# Variables:
-#   $type (String) - the MIME type (e.g application/binary)
-applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 # Variables:
 #   $type-description (String) - Description of the type (e.g "Portable Document Format")
 #   $type (String) - the MIME type (e.g application/binary)
@@ -400,15 +362,6 @@ update-application-warning-cross-user-setting = Toto nastavenie sa vzťahuje na 
 update-application-use-service =
     .label = Na inštaláciu aktualizácií používať službu na pozadí
     .accesskey = z
-update-setting-write-failure-title = Chyba pri ukladaní nastavení aktualizácií
-# Variables:
-#   $path (String) - Path to the configuration file
-# The newlines between the main text and the line containing the path is
-# intentional so the path is easier to identify.
-update-setting-write-failure-message =
-    Aplikácia { -brand-short-name } sa stretla s chybou a túto zmenu neuložila. Berte na vedomie, že upravenie tejto možnosti vyžaduje povolenie na zápis do tohto súboru. Vy alebo váš správca systému môžete túto chybu vyriešiť udelením správnych povolení.
-    
-    Nebolo možné zapísať do súboru: { $path }
 update-setting-write-failure-title2 = Chyba pri ukladaní nastavení pre aktualizácie
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -615,10 +568,8 @@ search-show-suggestions-above-history-option =
     .label = Zobrazovať návrhy vyhľadávania v paneli s adresou pred históriou prehliadania
 search-show-suggestions-private-windows =
     .label = Zobrazovať návrhy vyhľadávania v súkromnom prehliadaní
-suggestions-addressbar-settings-generic = Zmeniť nastavenia návrhov v paneli s adresou
 suggestions-addressbar-settings-generic2 = Zmeniť nastavenia návrhov v paneli s adresou
 search-suggestions-cant-show = Návrhy vyhľadávania nebudú zobrazené vo výsledkoch panela s adresou, pretože ste { -brand-short-name } nastavili tak, aby si nepamätal históriu.
-search-one-click-header = Vyhľadávacie moduly na jedno kliknutie
 search-one-click-header2 = Skratky vyhľadávania
 search-one-click-desc = Vyberte ďalšie vyhľadávacie moduly, ktoré sa zobrazia v ponuke panela s adresou a vyhľadávacieho panela.
 search-choose-engine-column =
@@ -645,12 +596,6 @@ search-keyword-warning-bookmark = Zadali ste kľúčové slovo, ktoré je v sú�
 
 ## Containers Section
 
-containers-back-button =
-    .aria-label =
-        { PLATFORM() ->
-            [windows] Späť na Možnosti
-           *[other] Späť na Možnosti
-        }
 containers-back-button2 =
     .aria-label = Späť na nastavenia
 containers-header = Kontajnerové karty
@@ -660,8 +605,6 @@ containers-add-button =
 containers-new-tab-check =
     .label = Zobraziť výber kontajnera pri otvorení novej karty
     .accesskey = z
-containers-preferences-button =
-    .label = Nastavenia
 containers-settings-button =
     .label = Nastavenia
 containers-remove-button =
@@ -671,10 +614,6 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Vezmite si svoj web so sebou
-sync-signedout-description = Synchronizujte si svoje záložky, históriu, karty, heslá, doplnky a nastavenia so všetkými svojimi zariadeniami.
-sync-signedout-account-signin2 =
-    .label = Prihlásiť sa do služby { -sync-brand-short-name }…
-    .accesskey = i
 sync-signedout-description2 = Synchronizujte si svoje záložky, históriu, karty, heslá, doplnky a nastavenia so všetkými svojimi zariadeniami.
 sync-signedout-account-signin3 =
     .label = Prihlásiť sa k synchronizácii
@@ -714,10 +653,6 @@ sync-sign-in =
 
 prefs-syncing-on = Synchronizácia je zapnutá
 prefs-syncing-off = Synchronizácia je vypnutá
-prefs-sync-setup =
-    .label = Nastaviť { -sync-brand-short-name }…
-    .accesskey = N
-prefs-sync-offer-setup-label = Synchronizujte si svoje záložky, históriu, karty, heslá, doplnky a nastavenia so všetkými svojimi zariadeniami.
 prefs-sync-turn-on-syncing =
     .label = Zapnúť synchronizáciu…
     .accesskey = Z
@@ -737,11 +672,6 @@ sync-currently-syncing-logins-passwords = Prihlasovacie údaje
 sync-currently-syncing-addresses = Adresy
 sync-currently-syncing-creditcards = Platobné karty
 sync-currently-syncing-addons = Doplnky
-sync-currently-syncing-prefs =
-    { PLATFORM() ->
-        [windows] Možnosti
-       *[other] Možnosti
-    }
 sync-currently-syncing-settings = Nastavenia
 sync-change-options =
     .label = Zmeniť…
@@ -782,14 +712,6 @@ sync-engine-addons =
     .label = Doplnky
     .tooltiptext = Rozšírenia a témy vzhľadu pre Firefox pre počítače
     .accesskey = D
-sync-engine-prefs =
-    .label =
-        { PLATFORM() ->
-            [windows] Možnosti
-           *[other] Možnosti
-        }
-    .tooltiptext = Možnosti v sekciách Všeobecné, Súkromie a bezpečnosť, ktoré boli zmenené
-    .accesskey = s
 sync-engine-settings =
     .label = Nastavenia
     .tooltiptext = Zmenené nastavenia v sekciách Všeobecné, Súkromie a bezpečnosť
@@ -839,9 +761,6 @@ forms-fill-logins-and-passwords =
 forms-saved-logins =
     .label = Uložené prihlasovacie údaje…
     .accesskey = s
-forms-master-pw-use =
-    .label = Používať hlavné heslo
-    .accesskey = e
 forms-primary-pw-use =
     .label = Používať hlavné heslo
     .accesskey = h
@@ -852,7 +771,6 @@ forms-primary-pw-learn-more-link = Ďalšie informácie
 forms-master-pw-change =
     .label = Zmeniť hlavné heslo…
     .accesskey = h
-forms-master-pw-fips-title = Momentálne používate režim FIPS. Tento režim vyžaduje nastavenie hlavného hesla.
 forms-primary-pw-change =
     .label = Zmeniť hlavné heslo…
     .accesskey = h
@@ -869,13 +787,6 @@ forms-windows-sso-desc = Spravovať účty v tomto zariadení
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = Ak chcete vytvoriť hlavné heslo, zadajte svoje prihlasovacie údaje k systému Windows. Toto opatrenie nám pomáha v zabezpečení vášho účtu.
-# This message can be seen by trying to add a Master Password.
-# The macOS strings are preceded by the operating system with "Firefox is trying to "
-# and includes subtitle of "Enter password for the user "xxx" to allow this." These
-# notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = vytvoriť hlavné heslo
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Ak chcete vytvoriť hlavné heslo, zadajte svoje prihlasovacie údaje k systému Windows. Toto opatrenie nám pomáha v zabezpečení vášho účtu.
 # This message can be seen by trying to add a Primary Password.
@@ -970,9 +881,6 @@ sitedata-clear =
     .accesskey = m
 sitedata-settings =
     .label = Spravovať údaje…
-    .accesskey = S
-sitedata-cookies-permissions =
-    .label = Spravovať povolenia…
     .accesskey = S
 sitedata-cookies-exceptions =
     .label = Správa výnimiek…
@@ -1130,10 +1038,6 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = Výnimky…
     .accesskey = V
-permissions-a11y-privacy-checkbox =
-    .label = Zabrániť službám pre zjednodušenie ovládania prístup k prehliadaču
-    .accesskey = a
-permissions-a11y-privacy-link = Ďalšie informácie
 
 ## Privacy Section - Data Collection
 
@@ -1155,10 +1059,6 @@ addon-recommendations-link = Ďalšie informácie
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Odosielanie údajov je v konfigurácii tohto zostavenia zakázané
-collection-backlogged-crash-reports =
-    .label = Povoliť { -brand-short-name(case: "dat") } odosielať vo vašom mene správy o zlyhaní
-    .accesskey = z
-collection-backlogged-crash-reports-link = Ďalšie informácie
 collection-backlogged-crash-reports-with-link = Povoliť { -brand-short-name(case: "dat") } odosielať vo vašom mene správy o zlyhaní <a data-l10n-name="crash-reports-link">Ďalšie informácie</a>
     .accesskey = P
 
@@ -1183,13 +1083,6 @@ security-block-uncommon-software =
 ## Privacy Section - Certificates
 
 certs-header = Certifikáty
-certs-personal-label = Pokiaľ server požaduje môj osobný certifikát
-certs-select-auto-option =
-    .label = Vybrať automaticky
-    .accesskey = m
-certs-select-ask-option =
-    .label = Vždy sa opýtať
-    .accesskey = V
 certs-enable-ocsp =
     .label = Aktuálnu platnosť certifikátov overovať na serveroch OCSP
     .accesskey = A
@@ -1199,29 +1092,6 @@ certs-view =
 certs-devices =
     .label = Bezpečnostné zariadenia…
     .accesskey = d
-space-alert-learn-more-button =
-    .label = Ďalšie informácie
-    .accesskey = n
-space-alert-over-5gb-pref-button =
-    .label =
-        { PLATFORM() ->
-            [windows] Otvoriť možnosti
-           *[other] Otvoriť možnosti
-        }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] O
-           *[other] O
-        }
-space-alert-over-5gb-message =
-    { PLATFORM() ->
-        [windows] Aplikácii { -brand-short-name } dochádza miesto na disku. Obsah webovej stránky sa nemusí zobrazovať správne. Uložené údaje stránok môžete odstrániť v ponuke Možnosti > Súkromie a bezpečnosť > Cookies a údaje stránok.
-       *[other] Aplikácii { -brand-short-name } dochádza miesto na disku. Obsah webovej stránky sa nemusí zobrazovať správne. Uložené údaje stránok môžete odstrániť v ponuke Možnosti > Súkromie a bezpečnosť > Cookies a údaje stránok.
-    }
-space-alert-under-5gb-ok-button =
-    .label = OK, rozumiem
-    .accesskey = K
-space-alert-under-5gb-message = Aplikácii { -brand-short-name } dochádza miesto na disku. Obsah webovej stránky sa nemusí zobrazovať správne. Kliknutím na “Ďalšie informácie” sa dozviete viac o optimalizovaní vyžitia disku pre lepší zážitok z prehliadania.
 space-alert-over-5gb-settings-button =
     .label = Otvoriť nastavenia
     .accesskey = O

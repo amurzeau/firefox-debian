@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Toevoegen aan adresbalk
 page-action-manage-extension =
     .label = Extensie beheren…
-page-action-remove-from-urlbar =
-    .label = Verwijderen van adresbalk
 page-action-remove-extension =
     .label = Extensie verwijderen
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Deze keer zoeken met:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Zoekinstellingen wijzigen
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Zoekinstellingen wijzigen
 search-one-offs-context-open-new-tab =
@@ -250,8 +242,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Editor tonen bij opslaan
     .accesskey = E
-bookmark-panel-done-button =
-    .label = Gereed
 bookmark-panel-save-button =
     .label = Opslaan
 # Width of the bookmark panel.
@@ -281,8 +271,6 @@ identity-passive-loaded = Onderdelen van deze pagina zijn niet beveiligd (zoals 
 identity-active-loaded = U hebt bescherming op deze pagina uitgeschakeld.
 identity-weak-encryption = Deze pagina gebruikt zwakke versleuteling.
 identity-insecure-login-forms = Ingevoerde aanmeldingen op deze pagina zouden kunnen worden onderschept.
-identity-permissions =
-    .value = Toestemmingen
 identity-https-only-connection-upgraded = (geüpgraded naar HTTPS)
 identity-https-only-label = Alleen-HTTPS-modus
 identity-https-only-dropdown-on =
@@ -298,7 +286,6 @@ identity-permissions-storage-access-header = Cross-sitecookies
 identity-permissions-storage-access-hint = Deze partijen kunnen tijdens uw bezoek aan deze website cross-sitecookies en websitegegevens gebruiken.
 identity-permissions-storage-access-learn-more = Meer info
 identity-permissions-reload-hint = Mogelijk dient u de pagina te vernieuwen om wijzigingen van kracht te laten worden.
-identity-permissions-empty = U hebt deze website geen speciale toestemmingen gegeven.
 identity-clear-site-data =
     .label = Cookies en websitegegevens wissen…
 identity-connection-not-secure-security-view = U hebt een onbeveiligde verbinding met deze website.
@@ -383,12 +370,6 @@ bookmarks-toolbar-empty-message = Plaats voor snelle toegang uw bladwijzers hier
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Te delen camera:
-    .accesskey = C
-popup-select-microphone =
-    .value = Te delen microfoon:
-    .accesskey = M
 popup-select-camera-device =
     .value = Camera:
     .accesskey = C
@@ -402,14 +383,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Luidsprekers
 popup-all-windows-shared = Alle zichtbare vensters op uw scherm worden gedeeld.
-popup-screen-sharing-not-now =
-    .label = Niet nu
-    .accesskey = i
-popup-screen-sharing-never =
-    .label = Nooit toestaan
-    .accesskey = N
-popup-silence-notifications-checkbox = Notificaties van { -brand-short-name } uitschakelen tijdens delen
-popup-silence-notifications-checkbox-warning = { -brand-short-name } toont geen meldingen terwijl u deelt.
 popup-screen-sharing-block =
     .label = Blokkeren
     .accesskey = B
@@ -433,14 +406,10 @@ enable-devtools-popup-description = Open eerst DevTools in het menu Webontwikkel
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Voer zoekterm of adres in
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Voer zoekterm of adres in
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Browser wordt op afstand bestuurd
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -489,8 +458,6 @@ urlbar-go-button =
     .tooltiptext = Naar het adres in de locatiebalk gaan
 urlbar-page-action-button =
     .tooltiptext = Pagina-acties
-urlbar-pocket-button =
-    .tooltiptext = Opslaan naar { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -695,6 +662,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Werkbalk aanpassen…
     .accesskey = a
+toolbar-button-email-link =
+    .label = Koppeling e-mailen
+    .tooltiptext = Een koppeling naar deze pagina e-mailen
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Pagina opslaan
+    .tooltiptext = Deze pagina opslaan ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Bestand openen
+    .tooltiptext = Een bestand openen ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Gesynchroniseerde tabbladen
+    .tooltiptext = Tabbladen van andere apparaten tonen
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Nieuw privévenster
+    .tooltiptext = Een nieuw privénavigatievenster openen ({ $shortcut })
 
 ## EME notification panel
 
@@ -745,6 +733,49 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Dit bericht niet tonen wanneer pop-ups worden geblokkeerd
     .accesskey = n
+edit-popup-settings =
+    .label = Pop-upinstellingen beheren…
+    .accesskey = b
 picture-in-picture-hide-toggle =
     .label = Picture-in-Picture-knop verbergen
     .accesskey = v
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navigatie
+navbar-downloads =
+    .label = Downloads
+navbar-overflow =
+    .tooltiptext = Meer hulpmiddelen…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Afdrukken
+    .tooltiptext = Deze pagina afdrukken… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Afdrukken
+    .tooltiptext = Deze pagina afdrukken
+navbar-home =
+    .label = Startpagina
+    .tooltiptext = { -brand-short-name }-startpagina
+navbar-library =
+    .label = Bibliotheek
+    .tooltiptext = Geschiedenis, opgeslagen bladwijzers en meer bekijken
+navbar-search =
+    .title = Zoeken
+navbar-accessibility-indicator =
+    .tooltiptext = Toegankelijkheidsfuncties ingeschakeld
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Browsertabbladen
+tabs-toolbar-new-tab =
+    .label = Nieuw tabblad
+tabs-toolbar-list-all-tabs =
+    .label = Alle tabbladtitels tonen
+    .tooltiptext = Alle tabbladtitels tonen

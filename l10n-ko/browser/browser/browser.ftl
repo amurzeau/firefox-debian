@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = 주소 표시줄에 추가
 page-action-manage-extension =
     .label = 확장 기능 관리…
-page-action-remove-from-urlbar =
-    .label = 주소 표시줄에서 제거
 page-action-remove-extension =
     .label = 확장 기능 제거
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = 이번만 검색:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = 검색 설정 변경
 search-one-offs-change-settings-compact-button =
     .tooltiptext = 검색 설정 변경
 search-one-offs-context-open-new-tab =
@@ -246,8 +238,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = 저장할 때 편집기 표시
     .accesskey = S
-bookmark-panel-done-button =
-    .label = 완료
 bookmark-panel-save-button =
     .label = 저장
 # Width of the bookmark panel.
@@ -277,8 +267,6 @@ identity-passive-loaded = 페이지의 일부(이미지 등)가 안전하지 않
 identity-active-loaded = 이 페이지에서 보호를 비활성화하셨습니다.
 identity-weak-encryption = 이 페이지는 약한 암호화를 사용합니다.
 identity-insecure-login-forms = 이 페이지에 입력된 로그인 정보는 노출될 수 있습니다.
-identity-permissions =
-    .value = 권한
 identity-https-only-connection-upgraded = (HTTPS로 업그레이드됨)
 identity-https-only-label = HTTPS 전용 모드
 identity-https-only-dropdown-on =
@@ -294,7 +282,6 @@ identity-permissions-storage-access-header = 교차 사이트 쿠키
 identity-permissions-storage-access-hint = 이 당사자는 사용자가 이 사이트에 있는 동안 교차 사이트 쿠키 및 사이트 데이터를 사용할 수 있습니다.
 identity-permissions-storage-access-learn-more = 더 알아보기
 identity-permissions-reload-hint = 변경 사항을 적용하려면 페이지를 다시 로드해야할 수도 있습니다.
-identity-permissions-empty = 이 사이트를 특별한 권한으로 승인하지 않았습니다.
 identity-clear-site-data =
     .label = 쿠키 및 사이트 데이터 지우기…
 identity-connection-not-secure-security-view = 이 사이트에 안전하게 연결되어 있지 않습니다.
@@ -376,12 +363,6 @@ bookmarks-toolbar-empty-message = 빠르게 접근하려면, 여기 북마크 �
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = 공유할 카메라:
-    .accesskey = C
-popup-select-microphone =
-    .value = 공유할 마이크:
-    .accesskey = M
 popup-select-camera-device =
     .value = 카메라:
     .accesskey = C
@@ -395,14 +376,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = 스피커
 popup-all-windows-shared = 화면에 표시되어 있는 모든 창을 공유합니다.
-popup-screen-sharing-not-now =
-    .label = 나중에
-    .accesskey = w
-popup-screen-sharing-never =
-    .label = 허용 안 함
-    .accesskey = N
-popup-silence-notifications-checkbox = 공유하는 동안 { -brand-short-name }에서 알림을 사용 안 함
-popup-silence-notifications-checkbox-warning = { -brand-short-name }는 공유하는 동안 알림을 표시하지 않습니다.
 popup-screen-sharing-block =
     .label = 차단
     .accesskey = B
@@ -426,14 +399,10 @@ enable-devtools-popup-description = F12 단축키를 사용하려면, 먼저 웹
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = 검색어 또는 주소 입력
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = 검색어 또는 주소 입력
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = 브라우저가 원격 제어중
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -482,8 +451,6 @@ urlbar-go-button =
     .tooltiptext = 주소 표시줄의 주소로 이동
 urlbar-page-action-button =
     .tooltiptext = 페이지 작업
-urlbar-pocket-button =
-    .tooltiptext = { -pocket-brand-name }에 저장
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -688,6 +655,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = 도구 모음 사용자 지정…
     .accesskey = C
+toolbar-button-email-link =
+    .label = 메일로 링크 보내기
+    .tooltiptext = 메일로 이 페이지의 링크 보내기
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = 페이지 저장
+    .tooltiptext = 이 페이지 저장 ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = 파일 열기
+    .tooltiptext = 파일 열기 ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = 동기화된 탭
+    .tooltiptext = 다른 기기의 탭 보기
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = 새 사생활 보호 창
+    .tooltiptext = 새 사생활 보호 창 열기 ({ $shortcut })
 
 ## EME notification panel
 
@@ -738,6 +726,49 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = 팝업이 차단될 때 이 메시지를 표시하지 않음
     .accesskey = D
+edit-popup-settings =
+    .label = 팝업 설정 관리…
+    .accesskey = M
 picture-in-picture-hide-toggle =
     .label = 화면 속 화면 토글 숨기기
     .accesskey = H
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = 탐색
+navbar-downloads =
+    .label = 다운로드
+navbar-overflow =
+    .tooltiptext = 도구 더보기…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = 인쇄
+    .tooltiptext = 이 페이지 인쇄… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = 인쇄
+    .tooltiptext = 이 페이지 인쇄
+navbar-home =
+    .label = 홈
+    .tooltiptext = { -brand-short-name } 홈 페이지
+navbar-library =
+    .label = 라이브러리
+    .tooltiptext = 기록, 저장된 북마크 등 보기
+navbar-search =
+    .title = 검색
+navbar-accessibility-indicator =
+    .tooltiptext = 접근성 기능 활성화됨
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = 브라우저 탭
+tabs-toolbar-new-tab =
+    .label = 새 탭
+tabs-toolbar-list-all-tabs =
+    .label = 탭 전체 목록
+    .tooltiptext = 탭 전체 목록

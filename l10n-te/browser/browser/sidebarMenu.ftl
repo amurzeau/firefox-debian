@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = పక్క పట్టీని మూయి
+
+sidebar-close-button =
+    .tooltiptext = పక్కపట్టీని మూసివేయి

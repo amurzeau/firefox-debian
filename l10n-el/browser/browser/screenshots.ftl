@@ -2,10 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-screenshots-context-menu = Λήψη στιγμιότυπου
-
-screenshots-my-shots-button = Οι λήψεις μου
-
 screenshot-toolbarbutton =
     .label = Στιγμιότυπο
     .tooltiptext = Λήψη στιγμιότυπου
@@ -39,9 +35,7 @@ screenshots-connection-error-details = Ελέγξτε τη σύνδεσή σας
 screenshots-login-error-details = Δεν μπορέσαμε να αποθηκεύσουμε την λήψη σας γιατί υπάρχει κάποιο πρόβλημα με την υπηρεσία { -screenshots-brand-name }. Προσπαθήστε ξανά αργότερα.
 
 screenshots-unshootable-page-error-title = Δεν μπορούμε να λάβουμε στιγμιότυπο αυτής της σελίδας.
-screenshots-unshootable-page-error-details = Δεν μπορεί να γίνει λήψη στιγμιότυπου καθώς αυτή δεν είναι μια τυπική σελίδα του Διαδικτύου.
-
-screenshots-self-screenshot-error-title = Δεν μπορεί να γίνει λήψη ενός στιγμιότυπου της σελίδας { -screenshots-brand-name }!
+screenshots-unshootable-page-error-details = Δεν μπορεί να γίνει λήψη στιγμιότυπου καθώς αυτή δεν είναι μια τυπική ιστοσελίδα.
 
 screenshots-empty-selection-error-title = Η επιλογή σας είναι πολύ μικρή
 

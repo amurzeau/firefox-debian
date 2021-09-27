@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Затвори бочну палету
+
+sidebar-close-button =
+    .tooltiptext = Затвори бочни панел

@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Đóng thanh lề
+
+sidebar-close-button =
+    .tooltiptext = Đóng thanh lề

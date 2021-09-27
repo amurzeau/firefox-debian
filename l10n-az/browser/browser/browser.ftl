@@ -145,12 +145,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Ünvan sətrinə əlavə et
 page-action-manage-extension =
     .label = Uzantını idarə et…
-page-action-remove-from-urlbar =
-    .label = Ünvan sətrindən sil
 
 ## Auto-hide Context Menu
 
@@ -166,10 +162,6 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Bu dəfə bununla axtarın:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Axtarış Tənzimləmələrini Dəyiş
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Axtarış tənzimləmələrinizi dəyişdir
 search-one-offs-context-open-new-tab =
@@ -211,8 +203,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Yadda saxlarkən redaktoru göstər
     .accesskey = S
-bookmark-panel-done-button =
-    .label = Bitdi
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -230,7 +220,6 @@ identity-active-loaded = Bu səhifədə qorumanı söndürmüsünüz.
 identity-weak-encryption = Bu səhifə zəif şifrləmə istifadə edir.
 identity-insecure-login-forms = Bu səhifədə girilən məlumatlar oğurlana bilər.
 identity-permissions-reload-hint = Dəyişikliklərin işləməsi üçün səhifəni yeniləyin.
-identity-permissions-empty = Bu sayta heç bir xüsusi icazə verməmisiniz.
 identity-clear-site-data =
     .label = Çərəzlər və Sayt Məlumatlarını Təmizlə…
 identity-remove-cert-exception =
@@ -277,12 +266,6 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Paylaşılacaq kamera:
-    .accesskey = c
-popup-select-microphone =
-    .value = İstifadə olunacaq Mikrofon:
-    .accesskey = M
 popup-all-windows-shared = Ekranınızda görünən bütün pəncərələr paylaşılacaq.
 
 ## WebRTC window or screen share tab switch warning
@@ -293,12 +276,8 @@ popup-all-windows-shared = Ekranınızda görünən bütün pəncərələr payla
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Ünvanı daxil et və ya axtar
 urlbar-placeholder =
     .placeholder = Ünvanı daxil et və ya axtar
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Səyyah uzaqdan idarədədir
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -312,8 +291,6 @@ urlbar-go-button =
     .tooltiptext = Ünvan Sətrindəki ünvanı aç
 urlbar-page-action-button =
     .tooltiptext = Səhifə əməliyyatları
-urlbar-pocket-button =
-    .tooltiptext = { -pocket-brand-name }-ə Saxla
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -429,6 +406,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Alət Sətrini Fərdiləşdir…
     .accesskey = C
+toolbar-button-email-link =
+    .label = Keçidi e-poçtla göndər
+    .tooltiptext = Bu səhifənin keçidini e-poçtla göndər
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Səhifəni Yadda Saxla
+    .tooltiptext = Bu səhifəni yadda saxla ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Fayl Aç
+    .tooltiptext = Fayl aç ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Sinxron Vərəqlər
+    .tooltiptext = Digər cihazlardan olan vərəqləri göstər
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Yeni Məxfi Pəncərə
+    .tooltiptext = Yeni Gizli Pəncərə aç ({ $shortcut })
 
 ## EME notification panel
 
@@ -463,3 +461,38 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Avtomatik açılan pəncərələr bloklananda bu mesajı göstərmə
     .accesskey = D
+
+# Navigator Toolbox
+
+navbar-downloads =
+    .label = Endirilənlər
+navbar-overflow =
+    .tooltiptext = Daha çox alət…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Çap Et
+    .tooltiptext = Bu səhifəni çap et… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Çap Et
+    .tooltiptext = Bu səhifəni çap et
+navbar-home =
+    .label = Ev
+    .tooltiptext = { -brand-short-name } Ana Səhifə
+navbar-library =
+    .label = Kitabxana
+    .tooltiptext = Tarixçəni, saxlanılmış əlfəcinləri və daha çox şeyi görün
+navbar-search =
+    .title = Axtar
+navbar-accessibility-indicator =
+    .tooltiptext = Əlçatanlıq Özəllikləri Aktivdir
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Brauzer vərəqləri
+tabs-toolbar-new-tab =
+    .label = Yeni vərəq
+tabs-toolbar-list-all-tabs =
+    .label = Bütün vərəqləri siyahıla
+    .tooltiptext = Bütün vərəqləri siyahıla

@@ -6,6 +6,10 @@ dock-options-window-dialog =
     .title = Dewisiadau eicon yr ap
     .style = width: 35em;
 
+dock-options-show-badge =
+    .label = Dangos eicon bathodyn
+    .accesskey = e
+
 bounce-system-dock-icon =
     .label = Bywiogi eicon yr ap pan fydd neges newydd yn cyrraedd
     .accesskey = B

@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Aldoni al adresa strio
 page-action-manage-extension =
     .label = Administri etendaĵon…
-page-action-remove-from-urlbar =
-    .label = Forigi el adresa strio
 page-action-remove-extension =
     .label = Forigi etendaĵon
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Ĉi foje serĉi per:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Ŝanĝi agordojn de serĉo
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Ŝanĝi agordojn de serĉo
 search-one-offs-context-open-new-tab =
@@ -250,8 +242,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Montri redaktilon dum konservo
     .accesskey = M
-bookmark-panel-done-button =
-    .label = Preta
 bookmark-panel-save-button =
     .label = Konservi
 # Width of the bookmark panel.
@@ -281,8 +271,6 @@ identity-passive-loaded = Partoj de tiu ĉi paĝo ne estas sekuraj (bildoj, ekze
 identity-active-loaded = Mi malaktivigis protekton en tiu ĉi paĝo.
 identity-weak-encryption = Tiu ĉi paĝo uzas malfortan ĉifradon.
 identity-insecure-login-forms = Akreditiloj uzitaj en tiu ĉi paĝo povus esti riskitaj.
-identity-permissions =
-    .value = Permesoj
 identity-https-only-connection-upgraded = (ŝanĝita al HTTPS)
 identity-https-only-label = HTTPS-nura reĝimo
 identity-https-only-dropdown-on =
@@ -298,7 +286,6 @@ identity-permissions-storage-access-header = Interretejaj kuketoj
 identity-permissions-storage-access-hint = Tiuj ĉi aliaj partoprenantoj povas uzi interretejajn kuketojn kaj retejajn datumojn dum vi estas en tiu ĉi retejo,
 identity-permissions-storage-access-learn-more = Pli da informo
 identity-permissions-reload-hint = Vi eble bezonos reŝargi la paĝon por ke la ŝanĝoj estu aplikitaj.
-identity-permissions-empty = Vi ne donis iun ajn specialan permeson al tiu ĉi retejo.
 identity-clear-site-data =
     .label = Viŝi kuketojn kaj retejajn datumojn…
 identity-connection-not-secure-security-view = Vi ne estas sekure konektita al tiu ĉi retejo.
@@ -380,12 +367,6 @@ bookmarks-toolbar-empty-message = Por rapida aliro, metu viajn legosignojn ĉi t
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Dividota filmilo:
-    .accesskey = f
-popup-select-microphone =
-    .value = Dividota mikrofono:
-    .accesskey = m
 popup-select-camera-device =
     .value = Filmilo:
     .accesskey = F
@@ -399,14 +380,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Laŭtparoliloj
 popup-all-windows-shared = Ĉiuj videblaj fenestroj en via ekrano estos dividitaj.
-popup-screen-sharing-not-now =
-    .label = Ne nun
-    .accesskey = N
-popup-screen-sharing-never =
-    .label = Neniam permesi
-    .accesskey = N
-popup-silence-notifications-checkbox = Malaktivigi sciigojn de { -brand-short-name } dum divido
-popup-silence-notifications-checkbox-warning = { -brand-short-name } ne montros sciigojn dum vi dividas.
 popup-screen-sharing-block =
     .label = Bloki
     .accesskey = B
@@ -430,14 +403,10 @@ enable-devtools-popup-description = Por uzi la ŝparvojon F12, unue malfermu la 
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Serĉu ion aŭ tajpu adreson
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Serĉu ion aŭ tajpu adreson
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = La retumilo estas sub fora regado
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -486,8 +455,6 @@ urlbar-go-button =
     .tooltiptext = Iri al la adreso en la retadresa strio
 urlbar-page-action-button =
     .tooltiptext = Retpaĝaj agoj
-urlbar-pocket-button =
-    .tooltiptext = Konservi en { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -546,6 +513,10 @@ urlbar-result-action-search-tabs = Serĉi en la langetoj
 
 ## Labels shown above groups of urlbar results
 
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
 # A label shown above the search suggestions group in the urlbar results. It
 # should use title case.
 # Variables
@@ -688,6 +659,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Personecigi ilaron…
     .accesskey = P
+toolbar-button-email-link =
+    .label = Sendi ligilon retpoŝte
+    .tooltiptext = Retpoŝte sendi ligilon al tiu ĉi paĝo
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Konservi paĝon
+    .tooltiptext = Konservi tiun ĉi paĝon ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Malfermi dosieron
+    .tooltiptext = Malfermi dosieron ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Spegulitaj langetoj
+    .tooltiptext = Montri langetojn el aliaj aparatoj
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Nova privata fenestro
+    .tooltiptext = Malfermi novan privatan retuman fenestron ({ $shortcut })
 
 ## EME notification panel
 
@@ -741,3 +733,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Kaŝi butonon de bildo en bildo
     .accesskey = K
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Esplorado
+navbar-downloads =
+    .label = Elŝutoj
+navbar-overflow =
+    .tooltiptext = Pli da iloj…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Presi
+    .tooltiptext = Presi tiun ĉi paĝon… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Presi
+    .tooltiptext = Presi ĉi tiun paĝon
+navbar-home =
+    .label = Eka paĝo
+    .tooltiptext = Eka paĝo de { -brand-short-name }
+navbar-library =
+    .label = Biblioteko
+    .tooltiptext = Vidi historion, konservitajn legosignojn kaj pli
+navbar-search =
+    .title = Serĉi
+navbar-accessibility-indicator =
+    .tooltiptext = Alireblecaj trajtoj aktivaj
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Langetoj de retumilo
+tabs-toolbar-new-tab =
+    .label = Nova langeto
+tabs-toolbar-list-all-tabs =
+    .label = Listigi ĉiujn langetojn
+    .tooltiptext = Listigi ĉiujn langetojn

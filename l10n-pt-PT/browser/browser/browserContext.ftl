@@ -11,17 +11,6 @@ navbar-tooltip-instruction =
 
 ## Back
 
-main-context-menu-back =
-    .tooltiptext = Retroceder uma página
-    .aria-label = Anterior
-    .accesskey = A
-
-navbar-tooltip-back =
-    .value = { main-context-menu-back.tooltiptext }
-
-toolbar-button-back =
-    .label = { main-context-menu-back.aria-label }
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the Go Back command.
 main-context-menu-back-2 =
@@ -41,17 +30,6 @@ toolbar-button-back-2 =
     .label = { main-context-menu-back-2.aria-label }
 
 ## Forward
-
-main-context-menu-forward =
-    .tooltiptext = Avançar uma página
-    .aria-label = Seguinte
-    .accesskey = S
-
-navbar-tooltip-forward =
-    .value = { main-context-menu-forward.tooltiptext }
-
-toolbar-button-forward =
-    .label = { main-context-menu-forward.aria-label }
 
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the Go Forward command.
@@ -116,9 +94,6 @@ main-context-menu-page-save =
     .label = Guardar página como…
     .accesskey = P
 
-toolbar-button-page-save =
-    .label = { main-context-menu-page-save.label }
-
 ## Simple menu items
 
 main-context-menu-bookmark-add =
@@ -179,10 +154,6 @@ main-context-menu-open-link-new-private-window =
     .label = Abrir ligação numa nova janela privada
     .accesskey = p
 
-main-context-menu-bookmark-this-link =
-    .label = Adicionar esta ligação aos marcadores
-    .accesskey = l
-
 main-context-menu-bookmark-link =
     .label = Adicionar ligação aos marcadores
     .accesskey = o
@@ -207,10 +178,6 @@ main-context-menu-save-link-to-pocket =
 main-context-menu-copy-email =
     .label = Copiar endereço de email
     .accesskey = e
-
-main-context-menu-copy-link =
-    .label = Copiar ligação
-    .accesskey = a
 
 main-context-menu-copy-link-simple =
     .label = Copiar ligação
@@ -239,32 +206,6 @@ main-context-menu-media-mute =
 main-context-menu-media-unmute =
     .label = Repor som
     .accesskey = m
-
-main-context-menu-media-play-speed =
-    .label = Velocidade de reprodução
-    .accesskey = V
-
-main-context-menu-media-play-speed-slow =
-    .label = Lenta (0.5×)
-    .accesskey = L
-
-main-context-menu-media-play-speed-normal =
-    .label = Normal
-    .accesskey = N
-
-main-context-menu-media-play-speed-fast =
-    .label = Rápida (1.25×)
-    .accesskey = R
-
-main-context-menu-media-play-speed-faster =
-    .label = Mais rápida (1.5×)
-    .accesskey = a
-
-# "Ludicrous" is a reference to the movie "Space Balls" and is meant
-# to say that this speed is very fast.
-main-context-menu-media-play-speed-fastest =
-    .label = Alucinante (2×)
-    .accesskey = l
 
 main-context-menu-media-play-speed-2 =
     .label = Velocidade
@@ -312,12 +253,6 @@ main-context-menu-media-video-leave-fullscreen =
 
 # This is used when right-clicking on a video in the
 # content area when the Picture-in-Picture feature is enabled.
-main-context-menu-media-pip =
-    .label = Vídeo em janela flutuante
-    .accesskey = u
-
-# This is used when right-clicking on a video in the
-# content area when the Picture-in-Picture feature is enabled.
 main-context-menu-media-watch-pip =
     .label = Ver o vídeo numa janela flutuante
     .accesskey = u
@@ -325,14 +260,6 @@ main-context-menu-media-watch-pip =
 main-context-menu-image-reload =
     .label = Recarregar imagem
     .accesskey = R
-
-main-context-menu-image-view =
-    .label = Ver imagem
-    .accesskey = i
-
-main-context-menu-video-view =
-    .label = Ver vídeo
-    .accesskey = e
 
 main-context-menu-image-view-new-tab =
     .label = Abrir imagem num novo separador
@@ -344,18 +271,6 @@ main-context-menu-video-view-new-tab =
 
 main-context-menu-image-copy =
     .label = Copiar imagem
-    .accesskey = o
-
-main-context-menu-image-copy-location =
-    .label = Copiar ligação da imagem
-    .accesskey = o
-
-main-context-menu-video-copy-location =
-    .label = Copiar ligação do vídeo
-    .accesskey = o
-
-main-context-menu-audio-copy-location =
-    .label = Copiar ligação do áudio
     .accesskey = o
 
 main-context-menu-image-copy-link =
@@ -378,10 +293,6 @@ main-context-menu-image-email =
     .label = Enviar imagem por e-mail…
     .accesskey = g
 
-main-context-menu-image-set-as-background =
-    .label = Definir como fundo do ambiente de trabalho…
-    .accesskey = e
-
 main-context-menu-image-set-image-as-background =
     .label = Definir como fundo do ambiente de trabalho…
     .accesskey = h
@@ -401,10 +312,6 @@ main-context-menu-video-save-as =
 main-context-menu-audio-save-as =
     .label = Guardar áudio como…
     .accesskey = u
-
-main-context-menu-video-image-save-as =
-    .label = Guardar captura como…
-    .accesskey = G
 
 main-context-menu-video-take-snapshot =
     .label = Tirar uma captura…
@@ -433,14 +340,6 @@ main-context-menu-save-to-pocket =
 main-context-menu-send-to-device =
     .label = Enviar página para dispositivo
     .accesskey = d
-
-main-context-menu-view-background-image =
-    .label = Ver imagem de fundo
-    .accesskey = m
-
-main-context-menu-generate-new-password =
-    .label = Utilizar uma palavra-passe gerada…
-    .accesskey = g
 
 ## The access keys for "Use Saved Login" and "Use Saved Password"
 ## should be the same if possible; the two context menu items
@@ -532,10 +431,6 @@ main-context-menu-view-page-source =
     .label = Ver fonte da página
     .accesskey = V
 
-main-context-menu-view-page-info =
-    .label = Ver informação da página
-    .accesskey = i
-
 main-context-menu-bidi-switch-text =
     .label = Mudar direção do texto
     .accesskey = x
@@ -543,10 +438,6 @@ main-context-menu-bidi-switch-text =
 main-context-menu-bidi-switch-page =
     .label = Mudar direção da página
     .accesskey = g
-
-main-context-menu-inspect-element =
-    .label = Inspecionar elemento
-    .accesskey = t
 
 main-context-menu-inspect =
     .label = Inspecionar
@@ -558,3 +449,9 @@ main-context-menu-inspect-a11y-properties =
 main-context-menu-eme-learn-more =
     .label = Saber mais acerca de DRM…
     .accesskey = D
+
+# Variables
+#   $containerName (String): The name of the current container
+main-context-menu-open-link-in-container-tab =
+    .label = Abrir ligação num novo separador { $containerName }
+    .accesskey = s

@@ -35,19 +35,14 @@ connection-proxy-http = HTTP прокси
     .accesskey = H
 connection-proxy-http-port = Порт
     .accesskey = П
-connection-proxy-http-sharing =
-    .label = FTP және HTTPS үшін де бұл проксиді қолдану
+connection-proxy-https-sharing =
+    .label = HTTPS үшін де бұл проксиді қолдану
     .accesskey = с
 
 connection-proxy-https = HTTPS проксиі
     .accesskey = п
 connection-proxy-ssl-port = Порт
     .accesskey = о
-
-connection-proxy-ftp = FTP прокси
-    .accesskey = F
-connection-proxy-ftp-port = Порт
-    .accesskey = р
 
 connection-proxy-socks = SOCKS прокси
     .accesskey = C
@@ -64,9 +59,6 @@ connection-proxy-noproxy = Келесі үшін прокси қолданбау
     .accesskey = л
 
 connection-proxy-noproxy-desc = Мысалы: .mozilla-russia.org, .net.nz, 192.168.1.0/24
-
-# Do not translate localhost, 127.0.0.1 and ::1.
-connection-proxy-noproxy-localhost-desc = localhost, 127.0.0.1, және ::1 адрестеріне байланыстар проксиді қолданбайды.
 
 # Do not translate "localhost", "127.0.0.1/8" and "::1". (You can translate "and".)
 connection-proxy-noproxy-localhost-desc-2 = localhost, 127.0.0.1/8,, және ::1 адрестеріне байланыстар проксиді қолданбайды.

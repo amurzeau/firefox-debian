@@ -118,8 +118,6 @@ urlbar-star-add-bookmark =
 
 page-action-manage-extension =
     .label = Xestionar la estensión…
-page-action-remove-from-urlbar =
-    .label = Quitar de la barra de direiciones
 
 ## Auto-hide Context Menu
 
@@ -135,10 +133,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Y agora busca con:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Axustes de busca
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Camudar los axustes de busca
 search-one-offs-context-open-new-tab =
@@ -185,8 +179,6 @@ bookmark-panel-cancel =
 bookmark-panel-show-editor-checkbox =
     .label = Amosar l'editor al guardar
     .accesskey = A
-bookmark-panel-done-button =
-    .label = Fecho
 bookmark-panel-save-button =
     .label = Guardar
 # Width of the bookmark panel.
@@ -215,8 +207,6 @@ identity-passive-loaded = Partes d'esta páxina nun son segures (como les imáxe
 identity-active-loaded = Desactivesti la proteición nesta páxina.
 identity-weak-encryption = Esta páxina usa un cifráu feble.
 identity-insecure-login-forms = Les cuentes introducíes nesta páxina podríen tar en riesgu.
-identity-permissions =
-    .value = Permisos
 identity-https-only-connection-upgraded = (anovóse a HTTPS)
 identity-https-only-label = Mou de namás HTTPS
 identity-https-only-dropdown-on =
@@ -230,7 +220,6 @@ identity-https-only-info-no-upgrade = Nun ye posible anovar la conexón a HTTPS.
 identity-permissions-storage-access-header = Cookies ente sitios
 identity-permissions-storage-access-hint = Terceros puen usar cookies ente sitios y datos del sitiu mentanto tas nelli.
 identity-permissions-storage-access-learn-more = Lleer más
-identity-permissions-empty = Nun-y concediesti nengún permisu especial a esti sitiu.
 identity-clear-site-data =
     .label = Llimpiar les cookies y los datos de los sitios…
 identity-connection-not-secure-security-view = Nun tas conectáu de mou seguru a esti sitiu.
@@ -312,12 +301,6 @@ bookmarks-toolbar-empty-message = Pon los marcadores equí, na barra de los marc
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Cámara pa compartir:
-    .accesskey = C
-popup-select-microphone =
-    .value = Micrófonu pa compartir:
-    .accesskey = M
 popup-select-camera-device =
     .value = Cámara:
     .accesskey = C
@@ -328,11 +311,9 @@ popup-select-microphone-device =
     .accesskey = M
 popup-select-microphone-icon =
     .tooltiptext = Micrófonu
+popup-select-speaker-icon =
+    .tooltiptext = Altavoces
 popup-all-windows-shared = Van compartise toles ventanes visibles de la pantalla.
-popup-screen-sharing-not-now =
-    .label = Agora non
-    .accesskey = n
-popup-silence-notifications-checkbox-warning = { -brand-short-name } nun va amosar avisos mentanto teas compartiendo.
 popup-screen-sharing-block =
     .label = Bloquiar
     .accesskey = B
@@ -349,8 +330,6 @@ popup-mute-notifications-checkbox = Desactivar los avisos de los sitios web ment
 
 ## URL Bar
 
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = El restolador ta baxo control remotu
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -364,8 +343,6 @@ urlbar-go-button =
     .tooltiptext = Dir a la direición de la barra de direiciones
 urlbar-page-action-button =
     .tooltiptext = Aiciones de la páxina
-urlbar-pocket-button =
-    .tooltiptext = Guardar en { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -391,6 +368,9 @@ urlbar-result-action-calculator-result = = { $result }
 ## In these actions "Search" is a verb, followed by where the search is performed.
 
 urlbar-result-action-search-bookmarks = Buscar nos marcadores
+
+## Labels shown above groups of urlbar results
+
 
 ## Full Screen and Pointer Lock UI
 
@@ -495,6 +475,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Personalizar la barra de ferramientes…
     .accesskey = P
+toolbar-button-email-link =
+    .label = Unviar l'enllaz per corréu
+    .tooltiptext = Unvia l'enllaz d'esta páxina per corréu
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Guardar la páxina
+    .tooltiptext = Guarda esta páxina ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Abrir un ficheru
+    .tooltiptext = Abre un ficheru ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Llingüetes sincronizaes
+    .tooltiptext = Amuesa les llingüetes d'otros preseos
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Ventana privada nueva
+    .tooltiptext = Abre una ventana nueva de Restolar en Privao ({ $shortcut })
 
 ## EME notification panel
 
@@ -522,3 +523,48 @@ remote-tabs-sync-now = Sincronizar agora
 
 ##
 
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Más…
+ui-tour-info-panel-close =
+    .tooltiptext = Zarrar
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+
+##
+
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navegación
+navbar-downloads =
+    .label = Descargues
+navbar-overflow =
+    .tooltiptext = Más ferramientes…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Imprentar
+    .tooltiptext = Imprenta esta páxina… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Imprentar
+    .tooltiptext = Imprentar esta páxina
+navbar-home =
+    .label = Aniciu
+    .tooltiptext = Páxina d'aniciu de { -brand-short-name }
+navbar-library =
+    .label = Biblioteca
+    .tooltiptext = Mira l'historial, los marcadores guardaos y más coses
+navbar-accessibility-indicator =
+    .tooltiptext = Carauterístiques de l'accesibilidá activaes
+tabs-toolbar-new-tab =
+    .label = Llingüeta nueva
+tabs-toolbar-list-all-tabs =
+    .label = Llistar toles llingüetes
+    .tooltiptext = Llistar toles llingüetes

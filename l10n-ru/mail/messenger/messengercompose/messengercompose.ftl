@@ -6,8 +6,6 @@
 # Addressing widget
 
 #   $type (String) - the type of the addressing row
-remove-address-row-type = Удалить поле { $type }
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Удалить поле { $type }
 #   $type (String) - the type of the addressing row
@@ -66,6 +64,10 @@ toolbar-button-add-attachment =
 add-attachment-notification-reminder =
     .label = Добавить вложение…
     .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+add-attachment-notification-reminder2 =
+    .label = Добавить вложение…
+    .accesskey = л
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 menuitem-attach-files =
     .label = Файл(ы)…
     .accesskey = ы
@@ -84,18 +86,6 @@ attachment-bucket-count =
            *[many] { $count } вложений
         }
     .accesskey = в
-#   $count (Number) - the number of attachments in the attachment bucket
-attachments-placeholder-tooltip =
-    .tooltiptext =
-        { $count ->
-            [1] { $count } вложение
-            [one] { $count } вложение
-            [few] { $count } вложения
-           *[many] { $count } вложений
-        }
-#   { attachment-bucket-count.accesskey } - Do not localize this message.
-key-toggle-attachment-pane =
-    .key = { attachment-bucket-count.accesskey }
 expand-attachment-pane-tooltip =
     .tooltiptext = Показать панель вложений ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =

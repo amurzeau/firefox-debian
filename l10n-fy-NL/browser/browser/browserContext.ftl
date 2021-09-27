@@ -11,17 +11,6 @@ navbar-tooltip-instruction =
 
 ## Back
 
-main-context-menu-back =
-    .tooltiptext = Ien side tebek gean
-    .aria-label = Tebek
-    .accesskey = T
-
-navbar-tooltip-back =
-    .value = { main-context-menu-back.tooltiptext }
-
-toolbar-button-back =
-    .label = { main-context-menu-back.aria-label }
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the Go Back command.
 main-context-menu-back-2 =
@@ -41,17 +30,6 @@ toolbar-button-back-2 =
     .label = { main-context-menu-back-2.aria-label }
 
 ## Forward
-
-main-context-menu-forward =
-    .tooltiptext = Ien side foarút gean
-    .aria-label = Foarút
-    .accesskey = F
-
-navbar-tooltip-forward =
-    .value = { main-context-menu-forward.tooltiptext }
-
-toolbar-button-forward =
-    .label = { main-context-menu-forward.aria-label }
 
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the Go Forward command.
@@ -116,9 +94,6 @@ main-context-menu-page-save =
     .label = Side bewarje as…
     .accesskey = b
 
-toolbar-button-page-save =
-    .label = { main-context-menu-page-save.label }
-
 ## Simple menu items
 
 main-context-menu-bookmark-add =
@@ -179,10 +154,6 @@ main-context-menu-open-link-new-private-window =
     .label = Keppeling iepenje yn nij priveefinster
     .accesskey = P
 
-main-context-menu-bookmark-this-link =
-    .label = Blêdwizer foar dizze keppeling meitsje
-    .accesskey = m
-
 main-context-menu-bookmark-link =
     .label = Blêdwizer meitsje
     .accesskey = B
@@ -207,10 +178,6 @@ main-context-menu-save-link-to-pocket =
 main-context-menu-copy-email =
     .label = E-mailadres kopiearje
     .accesskey = m
-
-main-context-menu-copy-link =
-    .label = Keppelingslokaasje kopiearje
-    .accesskey = p
 
 main-context-menu-copy-link-simple =
     .label = Keppeling kopiearje
@@ -239,32 +206,6 @@ main-context-menu-media-mute =
 main-context-menu-media-unmute =
     .label = Lûd oan
     .accesskey = L
-
-main-context-menu-media-play-speed =
-    .label = Ofspylfaasje
-    .accesskey = O
-
-main-context-menu-media-play-speed-slow =
-    .label = Stadich (0.5×)
-    .accesskey = S
-
-main-context-menu-media-play-speed-normal =
-    .label = Normaal
-    .accesskey = N
-
-main-context-menu-media-play-speed-fast =
-    .label = Fluch (1,25×)
-    .accesskey = F
-
-main-context-menu-media-play-speed-faster =
-    .label = Flugger (1.5×)
-    .accesskey = r
-
-# "Ludicrous" is a reference to the movie "Space Balls" and is meant
-# to say that this speed is very fast.
-main-context-menu-media-play-speed-fastest =
-    .label = Healwize faasje (2×)
-    .accesskey = H
 
 main-context-menu-media-play-speed-2 =
     .label = Snelheid
@@ -312,12 +253,6 @@ main-context-menu-media-video-leave-fullscreen =
 
 # This is used when right-clicking on a video in the
 # content area when the Picture-in-Picture feature is enabled.
-main-context-menu-media-pip =
-    .label = Picture-in-Picture
-    .accesskey = u
-
-# This is used when right-clicking on a video in the
-# content area when the Picture-in-Picture feature is enabled.
 main-context-menu-media-watch-pip =
     .label = Picture-in-picture besjen
     .accesskey = u
@@ -325,14 +260,6 @@ main-context-menu-media-watch-pip =
 main-context-menu-image-reload =
     .label = Ofbylding opnij lade
     .accesskey = l
-
-main-context-menu-image-view =
-    .label = Ofbylding besjen
-    .accesskey = f
-
-main-context-menu-video-view =
-    .label = Fideo besjen
-    .accesskey = I
 
 main-context-menu-image-view-new-tab =
     .label = Ofbylding iepenje yn nij ljepblêd
@@ -345,18 +272,6 @@ main-context-menu-video-view-new-tab =
 main-context-menu-image-copy =
     .label = Ofbylding kopiearje
     .accesskey = k
-
-main-context-menu-image-copy-location =
-    .label = Ofbyldingslokaasje kopiearje
-    .accesskey = o
-
-main-context-menu-video-copy-location =
-    .label = Fideolokaasje kopiearje
-    .accesskey = o
-
-main-context-menu-audio-copy-location =
-    .label = Audiolokaasje kopiearje
-    .accesskey = o
 
 main-context-menu-image-copy-link =
     .label = Ofbyldingskeppeling kopiearje
@@ -378,10 +293,6 @@ main-context-menu-image-email =
     .label = Ofbylding e-maile…
     .accesskey = a
 
-main-context-menu-image-set-as-background =
-    .label = As eftergrûn ynstelle
-    .accesskey = e
-
 main-context-menu-image-set-image-as-background =
     .label = Ofbylding as bureaublêdeftergrûn ynstelle…
     .accesskey = f
@@ -401,10 +312,6 @@ main-context-menu-video-save-as =
 main-context-menu-audio-save-as =
     .label = Bewarje audio as…
     .accesskey = a
-
-main-context-menu-video-image-save-as =
-    .label = Momintopname bewarje as…
-    .accesskey = M
 
 main-context-menu-video-take-snapshot =
     .label = Momintopname meitsje…
@@ -433,14 +340,6 @@ main-context-menu-save-to-pocket =
 main-context-menu-send-to-device =
     .label = Side nei apparaat ferstjoere
     .accesskey = p
-
-main-context-menu-view-background-image =
-    .label = Eftergrûnôfbylding besjen
-    .accesskey = g
-
-main-context-menu-generate-new-password =
-    .label = Oanmakke wachtwurd brûke…
-    .accesskey = c
 
 ## The access keys for "Use Saved Login" and "Use Saved Password"
 ## should be the same if possible; the two context menu items
@@ -532,10 +431,6 @@ main-context-menu-view-page-source =
     .label = Sideboarne besjen
     .accesskey = b
 
-main-context-menu-view-page-info =
-    .label = Side-ynfo besjen
-    .accesskey = y
-
 main-context-menu-bidi-switch-text =
     .label = Tekstrjochting draaie
     .accesskey = t
@@ -543,10 +438,6 @@ main-context-menu-bidi-switch-text =
 main-context-menu-bidi-switch-page =
     .label = Siderjochting draaie
     .accesskey = g
-
-main-context-menu-inspect-element =
-    .label = Elemint ynspektearje
-    .accesskey = E
 
 main-context-menu-inspect =
     .label = Ynspektearje
@@ -558,3 +449,9 @@ main-context-menu-inspect-a11y-properties =
 main-context-menu-eme-learn-more =
     .label = Mear ynfo oer DRM…
     .accesskey = D
+
+# Variables
+#   $containerName (String): The name of the current container
+main-context-menu-open-link-in-container-tab =
+    .label = Keppeling yn in nij { $containerName }-ljepblêd iepenje
+    .accesskey = l

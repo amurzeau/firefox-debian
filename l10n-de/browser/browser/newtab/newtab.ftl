@@ -8,9 +8,6 @@
 newtab-page-title = Neuer Tab
 newtab-settings-button =
     .title = Einstellungen für neue Tabs anpassen
-newtab-personalize-button-label = Anpassen
-    .title = Neuen Tab anpassen
-    .aria-label = Neuen Tab anpassen
 newtab-personalize-icon-label =
     .title = Neuen Tab anpassen
     .aria-label = Neuen Tab anpassen
@@ -23,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Suchen
     .aria-label = Suchen
-newtab-search-box-search-the-web-text = Das Web durchsuchen
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = Mit { $engine } suchen oder Adresse eingeben
@@ -173,6 +169,11 @@ newtab-label-sponsored = { $sponsorOrSource } · Gesponsert
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = Gesponsert von { $sponsor }
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } min
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -252,10 +253,4 @@ newtab-custom-pocket-sponsored = Gesponserte Inhalte
 newtab-custom-recent-title = Neueste Aktivität
 newtab-custom-recent-subtitle = Eine Auswahl kürzlich besuchter Websites und Inhalte
 newtab-custom-close-button = Schließen
-# For the "Snippets" feature traditionally on about:home.
-# Alternative translation options: "Small Note" or something that
-# expresses the idea of "a small message, shortened from something else,
-# and non-essential but also not entirely trivial and useless.
-newtab-custom-snippets-title = Kurzinformationen
-newtab-custom-snippets-subtitle = Tipps und Neuigkeiten von { -vendor-short-name } und { -brand-product-name }
 newtab-custom-settings = Weitere Einstellungen verwalten

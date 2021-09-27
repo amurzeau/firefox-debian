@@ -24,6 +24,14 @@ permissions-allow =
     .label = Baimendu
     .accesskey = B
 
+permissions-button-off =
+    .label = Desaktibatu
+    .accesskey = D
+
+permissions-button-off-temporarily =
+    .label = Desaktibatu behin-behinean
+    .accesskey = b
+
 permissions-site-name =
     .label = Webgunea
 
@@ -37,14 +45,6 @@ permissions-remove =
 permissions-remove-all =
     .label = Kendu webgune guztiak
     .accesskey = e
-
-permissions-button-cancel =
-    .label = Utzi
-    .accesskey = U
-
-permissions-button-ok =
-    .label = Gorde aldaketak
-    .accesskey = G
 
 permission-dialog =
     .buttonlabelaccept = Gorde aldaketak
@@ -76,6 +76,11 @@ permissions-capabilities-listitem-block =
 permissions-capabilities-listitem-allow-session =
     .value = Baimendu saiorako
 
+permissions-capabilities-listitem-off =
+    .value = Desaktibatuta
+permissions-capabilities-listitem-off-temporarily =
+    .value = Behin-behinean desaktibatuta
+
 ## Invalid Hostname Dialog
 
 permissions-invalid-uri-title = Idatzitako ostalari-izena baliogabea da
@@ -96,6 +101,7 @@ permissions-exceptions-cookie-window =
 permissions-exceptions-cookie-desc = Cookieak eta gunearen datuak beti edo inoiz ez erabiltzeko baimena duten webguneak zehatz ditzakezu. Idatzi kudeatu nahi duzun gunearen helbide zehatza eta egin klik 'Blokeatu', 'Baimendu saiorako' edo 'Baimendu' botoian.
 
 ## Exceptions - HTTPS-Only Mode
+
 
 ## Exceptions - Pop-ups
 

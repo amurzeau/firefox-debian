@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Sulge külgriba
+
+sidebar-close-button =
+    .tooltiptext = Sulge külgriba

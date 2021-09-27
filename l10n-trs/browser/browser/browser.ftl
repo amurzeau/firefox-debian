@@ -139,12 +139,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Nuto' riña dukuán direksiôn
 page-action-manage-extension =
     .label = Ganikaj ñu'un' extensiôn...
-page-action-remove-from-urlbar =
-    .label = Guxun' riña dukuán direksiôn
 
 ## Auto-hide Context Menu
 
@@ -160,10 +156,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Diû nan, nana'uì' ngà:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Naduna daj ga sa nana'uit
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Naduna daj ga sa nana'uit
 search-one-offs-context-open-new-tab =
@@ -205,8 +197,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Digun' sa nagi'iaj 'ngà na'nïnj so'
     .accesskey = S
-bookmark-panel-done-button =
-    .label = Dunahuij
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -233,10 +223,7 @@ identity-passive-loaded = Hua da'aj nej sa 'na' riña ñanj na ni sa yi'ìi huin
 identity-active-loaded = Guxunt sa dugumin pajinâ na.
 identity-weak-encryption = Ûta ninaj hua sifrado arajsun pajinâ na.
 identity-insecure-login-forms = Nej sesion ayi'ì hiuna nī nitaj si yitïnj hua ma.
-identity-permissions =
-    .value = Gachinj ni'iô'
 identity-permissions-reload-hint = Nagi'iaj nakà ñut pajinâ na da' gi'iaj sun sa nadunat.
-identity-permissions-empty = Nitaj si huaj gatut riña sitio na daj garan' ruat.
 identity-clear-site-data =
     .label = Nagi'iaj niñu' kookies nī si dato sitio...
 identity-connection-not-secure-security-view = Nitāj si huā hue'e seguridâ nikāj sitiô nan.
@@ -287,12 +274,6 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Garasun' kamara 'ngà:
-    .accesskey = C
-popup-select-microphone =
-    .value = Garasun' mikrôfono 'ngà:
-    .accesskey = M
 popup-all-windows-shared = Daran' ventana nu riña si pantayât ni ga'ue garasun nugua'ān ne'.
 
 ## WebRTC window or screen share tab switch warning
@@ -303,14 +284,10 @@ popup-all-windows-shared = Daran' ventana nu riña si pantayât ni ga'ue garasun
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Gachrūn nuguan' ruhuât nanà'uìt
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Gachrūn nuguan' ruhuât nanà'uìt
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Àsij gan' nikaj ñu'unj nej dugui' navegador
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -326,8 +303,6 @@ urlbar-go-button =
     .tooltiptext = Gun' dukuán 'na direksion
 urlbar-page-action-button =
     .tooltiptext = Sa gi'iaj pajinâ na
-urlbar-pocket-button =
-    .tooltiptext = Nanín sa'aj riña { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -442,6 +417,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Nagi'io' dukuán ma sa rajeunit'...
     .accesskey = C
+toolbar-button-email-link =
+    .label = Ga'ni' Link…
+    .tooltiptext = Ga'nï' link riña pajina na
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Na'nïn sa'
+    .tooltiptext = Na'nïnj so' pajinâ na ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Na'nïn' chrû ñanj
+    .tooltiptext = Na'nï' chrûn ñanj ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Nej rakïj ñaj guña huaa
+    .tooltiptext = Digun' nej rakïj ñanj ma riña a'ngò aga'a
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Nànin' 'ngo ventana huìi
+    .tooltiptext = Na'nï' 'ngò ventana riña gache nu huì' ({ $shortcut })
 
 ## EME notification panel
 
@@ -479,3 +475,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Ga'nïnj huì sa ni'io' riña sa ni'io' Naduna
     .accesskey = H
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Sun aché nuu
+navbar-downloads =
+    .label = Nadunïnj
+navbar-overflow =
+    .tooltiptext = Doj sa ga'ue garasun'
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Nari' ña du'ua
+    .tooltiptext = Giri' ña du'ua pajinâ na… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Nari' ña du'ua
+    .tooltiptext = Giri' ña du'ua pagina na
+navbar-home =
+    .label = Riñan gayi'ij
+    .tooltiptext = { -brand-short-name } Riña gayi'ìj
+navbar-library =
+    .label = Dukuâ ñanj
+    .tooltiptext = Ni'io' riña gaché nu', nej markador na'ní so' nī doj
+navbar-search =
+    .title = Nana'ui'
+navbar-accessibility-indicator =
+    .tooltiptext = Hua ni'nïnj da' gatu'
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Nej rakïj ñanj riña aché nu'
+tabs-toolbar-new-tab =
+    .label = Rakïj ñanj nakàa
+tabs-toolbar-list-all-tabs =
+    .label = Ni'io' nej rakïj ñanj hua ni'ninj
+    .tooltiptext = Ni'io' nej rakïj ñanj hua ni'ninj

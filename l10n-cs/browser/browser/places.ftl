@@ -5,9 +5,6 @@
 places-open =
     .label = Otevřít
     .accesskey = O
-places-open-tab =
-    .label = Otevřít v novém panelu
-    .accesskey = p
 places-open-in-tab =
     .label = Otevřít v novém panelu
     .accesskey = p
@@ -17,33 +14,12 @@ places-open-all-bookmarks =
 places-open-all-in-tabs =
     .label = Otevřít vše v panelech
     .accesskey = p
-places-open-window =
-    .label = Otevřít v novém okně
-    .accesskey = t
-places-open-private-window =
-    .label = Otevřít v novém anonymním okně
-    .accesskey = t
-
-places-new-bookmark =
-    .label = Nová záložka…
-    .accesskey = N
-places-new-folder-contextmenu =
-    .label = Nová složka…
-    .accesskey = s
-places-new-folder =
-    .label = Nová složka…
-    .accesskey = v
-places-new-separator =
-    .label = Nový oddělovač
-    .accesskey = d
-
 places-open-in-window =
     .label = Otevřít v novém okně
     .accesskey = n
 places-open-in-private-window =
     .label = Otevřít v novém anonymním okně
     .accesskey = t
-
 places-add-bookmark =
     .label = Nová záložka
     .accesskey = z
@@ -56,7 +32,6 @@ places-add-folder =
 places-add-separator =
     .label = Nový oddělovač
     .accesskey = v
-
 places-view =
     .label = Zobrazit
     .accesskey = Z
@@ -75,22 +50,16 @@ places-by-last-visited =
 places-by-day-and-site =
     .label = Podle data a serveru
     .accesskey = a
-
 places-history-search =
     .placeholder = Hledat v historii
 places-bookmarks-search =
     .placeholder = Hledat v záložkách
-
 places-delete-domain-data =
     .label = Odebrat celý web
     .accesskey = w
 places-sortby-name =
     .label = Seřadit podle názvu
     .accesskey = S
-places-properties =
-    .label = Vlastnosti
-    .accesskey = V
-
 # places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
 places-edit-bookmark =
     .label = Upravit záložku…
@@ -110,18 +79,27 @@ places-remove-folder =
            *[other] Smazat složky
         }
     .accesskey = m
-
+places-edit-folder2 =
+    .label = Upravit složku
+    .accesskey = i
+places-delete-folder =
+    .label =
+        { $count ->
+            [1] Smazat složku
+            [one] Smazat složku
+            [few] Smazat složky
+           *[other] Smazat složky
+        }
+    .accesskey = m
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
     .label = Záložky spravované správcem
 # This label is used when a managed bookmarks folder doesn't have a name.
 managed-bookmarks-subfolder =
     .label = Podsložka
-
 # This label is used for the "Other Bookmarks" folder that appears in the bookmarks toolbar.
 other-bookmarks-folder =
     .label = Ostatní záložky
-
 # Variables:
 # $count (number) - The number of elements being selected for removal.
 places-remove-bookmark =
@@ -133,7 +111,22 @@ places-remove-bookmark =
            *[other] Odebrat záložky
         }
     .accesskey = d
-
+# Variables:
+# $count (number) - The number of elements being selected for removal.
+places-delete-bookmark =
+    .label =
+        { $count ->
+            [1] Smazat záložku
+            [one] Smazat záložku
+            [few] Smazat záložky
+           *[other] Smazat záložky
+        }
+    .accesskey = m
 places-manage-bookmarks =
     .label = Správa záložek
     .accesskey = S
+places-forget-about-this-site-confirmation-title = Zapomínání této stránky
+# Variables:
+# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
+places-forget-about-this-site-confirmation-message = Tímto smažete všechna data související se serverem { $hostOrBaseDomain }, včetně historie prohlížení, cookies, mezipaměti, nastavení obsahu i uložených hesel. Opravdu to chcete provést?
+places-forget-about-this-site-forget = Zapomenout

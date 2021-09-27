@@ -5,9 +5,6 @@
 places-open =
     .label = Wočinić
     .accesskey = o
-places-open-tab =
-    .label = W nowym rajtarku wočinić
-    .accesskey = r
 places-open-in-tab =
     .label = W nowym rajtarku wočinić
     .accesskey = n
@@ -17,26 +14,6 @@ places-open-all-bookmarks =
 places-open-all-in-tabs =
     .label = Wšě w rajtarkach wočinić
     .accesskey = W
-places-open-window =
-    .label = W nowym woknje wočinić
-    .accesskey = k
-places-open-private-window =
-    .label = W nowym priwatnym woknje wočinić
-    .accesskey = n
-
-places-new-bookmark =
-    .label = Nowa zapołožka…
-    .accesskey = N
-places-new-folder-contextmenu =
-    .label = Nowy rjadowak…
-    .accesskey = r
-places-new-folder =
-    .label = Nowy rjadowak…
-    .accesskey = r
-places-new-separator =
-    .label = Nowa dźělenska linija
-    .accesskey = l
-
 places-open-in-window =
     .label = W nowym woknje wočinić
     .accesskey = o
@@ -87,10 +64,6 @@ places-delete-domain-data =
 places-sortby-name =
     .label = Po mjenje sortěrować
     .accesskey = m
-places-properties =
-    .label = Kajkosće
-    .accesskey = K
-
 # places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
 places-edit-bookmark =
     .label = Zapołožku wobdźěłać…
@@ -111,6 +84,20 @@ places-remove-folder =
            *[other] Rjadowaki wotstronić
         }
     .accesskey = s
+
+places-edit-folder2 =
+    .label = Rjadowak wobdźěłać…
+    .accesskey = d
+places-delete-folder =
+    .label =
+        { $count ->
+            [1] Rjadowak zhašeć
+            [one] Rjadowak zhašeć
+            [two] Rjadowakaj zhašeć
+            [few] Rjadowaki zhašeć
+           *[other] Rjadowaki zhašeć
+        }
+    .accesskey = R
 
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
@@ -136,6 +123,27 @@ places-remove-bookmark =
         }
     .accesskey = s
 
+# Variables:
+# $count (number) - The number of elements being selected for removal.
+places-delete-bookmark =
+    .label =
+        { $count ->
+            [1] Zapołožku zhašeć
+            [one] Zapołožku zhašeć
+            [two] Zapołožce zhašeć
+            [few] Zapołožki zhašeć
+           *[other] Zapołožki zhašeć
+        }
+    .accesskey = Z
+
 places-manage-bookmarks =
     .label = Zapołožki rjadować
     .accesskey = r
+
+places-forget-about-this-site-confirmation-title = Na tute sydło zabyć
+
+# Variables:
+# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
+places-forget-about-this-site-confirmation-message = Tuta akcija wšě daty nastupajo { $hostOrBaseDomain }, mjez druhimi historiju, hesła, placki, pufrowak a nastajenja wobsaha, wotstroni. Chceće woprawdźe pokročować?
+
+places-forget-about-this-site-forget = Zabyć

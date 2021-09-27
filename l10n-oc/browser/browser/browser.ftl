@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Apondre la barra d'adreça
 page-action-manage-extension =
     .label = Gerir l’extension…
-page-action-remove-from-urlbar =
-    .label = Levar de la barra d'adreça
 page-action-remove-extension =
     .label = Suprimir l’extension
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Aqueste còp, recercar amb :
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Paramètres de recèrca
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Cambiar los paramètres de recèrca
 search-one-offs-context-open-new-tab =
@@ -250,8 +242,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Mostrar l’editor en enregistrant
     .accesskey = M
-bookmark-panel-done-button =
-    .label = Acabar
 bookmark-panel-save-button =
     .label = Enregistrar
 # Width of the bookmark panel.
@@ -281,8 +271,6 @@ identity-passive-loaded = D'elements de la pagina son pas segurs (coma los imatg
 identity-active-loaded = Avètz desactivat la proteccion sus aquela pagina.
 identity-weak-encryption = Aquela pagina utiliza un chiframent flac.
 identity-insecure-login-forms = Los identificants marcats sus aquela pagina pòdon far perilh.
-identity-permissions =
-    .value = Permissions
 identity-https-only-connection-upgraded = (passada al HTTPS)
 identity-https-only-label = Mòde HTTPS sonque
 identity-https-only-dropdown-on =
@@ -298,7 +286,6 @@ identity-permissions-storage-access-header = Cookies intersites
 identity-permissions-storage-access-hint = Aquestas parts pòdon utilizar los cookies intersites e las donadas de sites pendent vòstra navegacion sul site.
 identity-permissions-storage-access-learn-more = Ne saber mai
 identity-permissions-reload-hint = Benlèu deuriatz actualizar la pagina per que s'apliquen los cambiaments.
-identity-permissions-empty = Avètz pas donat cap de permission espaciala a aquel site.
 identity-clear-site-data =
     .label = Escafar los cookies e las donadas de site…
 identity-connection-not-secure-security-view = Sètz pas connectat amb seguretat a aquel site.
@@ -383,12 +370,6 @@ bookmarks-toolbar-empty-message = Per un accès rapid, plaçatz los marcapaginas
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Camèra de partejar :
-    .accesskey = C
-popup-select-microphone =
-    .value = Microfòn de partejar :
-    .accesskey = M
 popup-select-camera-device =
     .value = Camèra :
     .accesskey = C
@@ -402,14 +383,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Naut-parlaires
 popup-all-windows-shared = L'ensemble de las fenèstras visiblas sus vòstre ecran seràn partejadas.
-popup-screen-sharing-not-now =
-    .label = Pas ara
-    .accesskey = P
-popup-screen-sharing-never =
-    .label = Autorizar pas jamai
-    .accesskey = p
-popup-silence-notifications-checkbox = Desactivar las notificacions de { -brand-short-name } pendent lo partatge
-popup-silence-notifications-checkbox-warning = { -brand-short-name } mostrarà pas de notificacions pendent lo partatge.
 popup-screen-sharing-block =
     .label = Blocar
     .accesskey = B
@@ -433,14 +406,10 @@ enable-devtools-popup-description = Per utilizar l’acorchi F12, dobrissètz d�
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Picar un tèrme de recercar o una adreça
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Picar un tèrme de recercar o una adreça
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Lo navegador es contrarotlat a distància
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -489,8 +458,6 @@ urlbar-go-button =
     .tooltiptext = Anar a la pagina indicada dins la barra d'adreça
 urlbar-page-action-button =
     .tooltiptext = Accions de la pagina
-urlbar-pocket-button =
-    .tooltiptext = Enregistrar dins { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -549,6 +516,10 @@ urlbar-result-action-search-tabs = Cercar pels onglets
 
 ## Labels shown above groups of urlbar results
 
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
 # A label shown above the search suggestions group in the urlbar results. It
 # should use title case.
 # Variables
@@ -691,6 +662,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Personalizar la barra d'aisinas…
     .accesskey = P
+toolbar-button-email-link =
+    .label = Madar per corrièr electronic un ligam cap a la pagina…
+    .tooltiptext = Enviar per corrièl lo ligam d’aquesta pagina
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Enregistrar la pagina
+    .tooltiptext = Enregistrar aquesta pagina ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Dobrir lo fichièr
+    .tooltiptext = Dobrir un fichièr ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Onglets sincronizats
+    .tooltiptext = Mostrar los onglets dels autres periferics
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Novèla fenèstra de navegacion privada
+    .tooltiptext = Novèla fenèstra de navegacion privada ({ $shortcut })
 
 ## EME notification panel
 
@@ -741,6 +733,49 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Afichar pas aqueste messatge quand se blòcan de fenèstras sorgissentas
     .accesskey = u
+edit-popup-settings =
+    .label = Gerir los paramètres de las popups…
+    .accesskey = G
 picture-in-picture-hide-toggle =
     .label = Amagar lo boton Imatge incrustada
     .accesskey = A
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navegacion
+navbar-downloads =
+    .label = Telecargaments
+navbar-overflow =
+    .tooltiptext = Mai d'aisinas…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Imprimir
+    .tooltiptext = Imprimir aquesta pagina… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Imprimir
+    .tooltiptext = Imprimir aquesta pagina
+navbar-home =
+    .label = Acuèlh
+    .tooltiptext = Acuèlh de { -brand-short-name }
+navbar-library =
+    .label = Bibliotèca
+    .tooltiptext = Veire l'istoric, salvar los marcapaginas, e mai
+navbar-search =
+    .title = Recercar
+navbar-accessibility-indicator =
+    .tooltiptext = Foncionalitats d’accessibilitat activadas
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Onglets del navegador
+tabs-toolbar-new-tab =
+    .label = Onglet novèl
+tabs-toolbar-list-all-tabs =
+    .label = Far la lista de totes los onglets
+    .tooltiptext = Far la lista de totes los onglets

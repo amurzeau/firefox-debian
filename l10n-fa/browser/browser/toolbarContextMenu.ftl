@@ -20,14 +20,6 @@ toolbar-context-menu-bookmark-selected-tabs =
 toolbar-context-menu-select-all-tabs =
     .label = انتخاب همه‌ی زبانه‌ها
     .accesskey = S
-toolbar-context-menu-undo-close-tabs =
-    .label =
-        { $tabCount ->
-            [1] برگرداندن زبانهٔ بسته شده
-           *[other] برگرداندن زبانه‌های بسته شده
-        }
-    .accesskey = ب
-
 toolbar-context-menu-reopen-closed-tabs =
     .label =
         { $tabCount ->
@@ -35,30 +27,24 @@ toolbar-context-menu-reopen-closed-tabs =
            *[other] باز کردن دوبارهٔ زبانه‌های بسته شده
         }
     .accesskey = ا
-
 toolbar-context-menu-manage-extension =
     .label = مدیریت افزودنی‌ها
     .accesskey = E
 toolbar-context-menu-remove-extension =
     .label = حذف افزونه
     .accesskey = v
-
 # This label is used in the extensions toolbar buttons context menus,
 # a user can use this command to submit to Mozilla an abuse report
 # related to that extension. "Report" is a verb.
 toolbar-context-menu-report-extension =
     .label = گزارش برنامهٔ ضمیمه
     .accesskey = گ
-
 # Can appear on the same context menu as menubarCmd ("Menu Bar") and
 # personalbarCmd ("Bookmarks Toolbar"), so they should have different
 # access keys.
 toolbar-context-menu-pin-to-overflow-menu =
     .label = سنجاق کردن به منو شناور
     .accesskey = س
-toolbar-context-menu-auto-hide-downloads-button =
-    .label = مخفی کردن خودکار در نوارابزار
-    .accesskey = A
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = مخفی کردن دکمه هنگام خالی بودن
     .accesskey = م
@@ -71,7 +57,6 @@ toolbar-context-menu-view-customize-toolbar =
 toolbar-context-menu-view-customize-toolbar-2 =
     .label = سفارشی‌سازی نوار ابزار…
     .accesskey = س
-
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = همیشه نمایش بده
     .accesskey = ه
@@ -81,7 +66,9 @@ toolbar-context-menu-bookmarks-toolbar-never-show-2 =
 toolbar-context-menu-bookmarks-toolbar-on-new-tab-2 =
     .label = فقط در زبانه جدید نمایش داده شود
     .accesskey = ج
-
 toolbar-context-menu-bookmarks-show-other-bookmarks =
     .label = نمایش نشانک‌های دیگر
+    .accesskey = ن
+toolbar-context-menu-menu-bar-cmd =
+    .toolbarname = نوار منو
     .accesskey = ن

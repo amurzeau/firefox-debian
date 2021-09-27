@@ -153,12 +153,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = पतापट्टी में जोड़े
 page-action-manage-extension =
     .label = एक्सटेंशन प्रबंधित करें …
-page-action-remove-from-urlbar =
-    .label = पतापट्टी से हटायें
 page-action-remove-extension =
     .label = एक्सटेंशन हटाएं
 
@@ -176,10 +172,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = इस बार, इसके साथ खोजें:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = खोज सेटिंग बदलाव
 search-one-offs-change-settings-compact-button =
     .tooltiptext = खोज सेटिंग बदले
 search-one-offs-context-open-new-tab =
@@ -235,8 +227,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = सहेजते समय संपादक दिखाएं
     .accesskey = S
-bookmark-panel-done-button =
-    .label = संपन्न
 bookmark-panel-save-button =
     .label = सहेजें
 # Width of the bookmark panel.
@@ -265,8 +255,6 @@ identity-passive-loaded = इस पेज का भाग सुरक्ष�
 identity-active-loaded = आपने इस पेज पर सुरक्षा निष्क्रिय कर दिए हैं.
 identity-weak-encryption = यह पेज कमजोर गोपन का उपयोग करता हैं.
 identity-insecure-login-forms = इस पृष्ठ पर अंतरित लॉग-इन्स से समझौता किया जा सकता है.
-identity-permissions =
-    .value = अनुमतियां
 identity-https-only-dropdown-on =
     .label = चालू
 identity-https-only-dropdown-off =
@@ -275,7 +263,6 @@ identity-https-only-dropdown-off-temporarily =
     .label = अस्थाई रूप से बंद
 identity-permissions-storage-access-learn-more = अधिक जानें
 identity-permissions-reload-hint = बदलाव को लागु करने के लिए आपको पृष्ठ को फिर से लोड करने की आवश्यकता हैं.
-identity-permissions-empty = आपने इस साइट को कोई विशेष अनुमति नहीं दी है.‌‌‌
 identity-clear-site-data =
     .label = कूकीज़ तथा साइट डेटा हटायें…
 identity-connection-not-secure-security-view = आप इस साइट से सुरक्षित रूप से नहीं जुड़े हैं।
@@ -330,12 +317,6 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = साझा करने के लिए कैमरा:
-    .accesskey = C
-popup-select-microphone =
-    .value = साझा करने के लिए माइक्रोफोन:
-    .accesskey = M
 popup-select-camera-device =
     .value = कैमरा:
     .accesskey = C
@@ -347,14 +328,6 @@ popup-select-microphone-device =
 popup-select-microphone-icon =
     .tooltiptext = माइक्रोफोन
 popup-all-windows-shared = आपके स्क्रीन पर सभी दृश्य विंडो साझा किए जाएँगे.
-popup-screen-sharing-not-now =
-    .label = अभी नहीं
-    .accesskey = w
-popup-screen-sharing-never =
-    .label = कभी अनुमति न दें
-    .accesskey = N
-popup-silence-notifications-checkbox = साझा करते समय { -brand-short-name } से अधिसूचना अक्षम करें
-popup-silence-notifications-checkbox-warning = साझा करते समय { -brand-short-name } आपके नोटिफिकेशन को प्रदर्शित नहीं करेगा।
 
 ## WebRTC window or screen share tab switch warning
 
@@ -368,14 +341,10 @@ sharing-warning-disable-for-session =
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = खोजें या पता दर्ज करें
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = खोजें या पता दर्ज करें
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = ब्राउज़र रिमोट कंट्रोल के तहत है
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -389,8 +358,6 @@ urlbar-go-button =
     .tooltiptext = स्थान पट्टी पर पता में जाएँ
 urlbar-page-action-button =
     .tooltiptext = पृष्ठ क्रियाएँ
-urlbar-pocket-button =
-    .tooltiptext = { -pocket-brand-name } में सहेजें
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -525,6 +492,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = औज़ारपट्टी अनुकूलित करें...
     .accesskey = C
+toolbar-button-email-link =
+    .label = ईमेल कडी
+    .tooltiptext = इस पृष्ठ में कोई कड़ी ईमेल करें
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = पृष्ठ सहेजें
+    .tooltiptext = इस पृष्ठ को सहेजें ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = फ़ाइल खोलें
+    .tooltiptext = फ़ाइल खोलें ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = संकलित टैब्स
+    .tooltiptext = अन्य उपकरण से टैब को दिखाएँ
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = नयी निजी विंडो
+    .tooltiptext = एक नए निजी ब्राउजिंग विंडो खोलें ({ $shortcut })
 
 ## EME notification panel
 
@@ -563,3 +551,43 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = इस संदेश को मत दिखाएँ जब पॉप-अप रोके जाते हैं
     .accesskey = डी
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = पथ प्रदर्शन
+navbar-downloads =
+    .label = डाउनलोड
+navbar-overflow =
+    .tooltiptext = अधिक औज़ार…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = छापें
+    .tooltiptext = यह पृष्ठ छापें… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = छापें
+    .tooltiptext = यह पृष्ठ छापें
+navbar-home =
+    .label = घर
+    .tooltiptext = { -brand-short-name } होम पेज
+navbar-library =
+    .label = लाइब्रे‌री
+    .tooltiptext = इतिहास, सहेजे गए बुकमार्क, और अधिक देखें
+navbar-search =
+    .title = खोज
+navbar-accessibility-indicator =
+    .tooltiptext = अभिगम्यता सुविधाएँ सक्षम
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = ब्राउजर टैब
+tabs-toolbar-new-tab =
+    .label = नया टैब
+tabs-toolbar-list-all-tabs =
+    .label = सभी टैब सूचीबद्ध करें
+    .tooltiptext = सभी टैब सूचीबद्ध करें

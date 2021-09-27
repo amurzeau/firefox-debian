@@ -13,11 +13,6 @@ crashes-id = Rapport-ID
 crashes-send-date = Ynstjoerd
 crashes-all-reports = Alle Ungelokrapporten
 crashes-no-config = Dizze applikaasje is net ynsteld om ûngelokrapporten te toanen.
-extensions-title = Utwreidingen
-extensions-name = Namme
-extensions-enabled = Ynskeakele
-extensions-version = Ferzje
-extensions-id = ID
 support-addons-title = Add-ons
 support-addons-name = Namme
 support-addons-type = Type
@@ -63,6 +58,7 @@ app-basics-enabled-plugins = Ynskeakele ynstekkers
 app-basics-build-config = Utjeftekonfiguraasje
 app-basics-user-agent = User Agent
 app-basics-os = OS
+app-basics-os-theme = OS-tema
 # Rosetta is Apple's translation process to run apps containing x86_64
 # instructions on Apple Silicon. This should remain in English.
 app-basics-rosetta = Troch Rosetta oerset
@@ -133,9 +129,6 @@ sandbox-sys-call-tid = TID
 sandbox-sys-call-proc-type = Prosestype
 sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Arguminten
-safe-mode-title = Probearje de feilige modus
-restart-in-safe-mode-label = Werstart mei útskeakele add-ons…
-
 troubleshoot-mode-title = Problemen analysearje
 restart-in-troubleshoot-mode-label = Probleemoplossingsmodus…
 clear-startup-cache-title = Opstartbuffer probearje te wiskjen
@@ -192,37 +185,6 @@ remote-debugging-accepting-connections = Akseptearret ferbiningen
 remote-debugging-url = URL
 
 ##
-
-support-third-party-modules-title = Modulen fan tredden
-support-third-party-modules-module = Modulebestân
-support-third-party-modules-version = Bestânsferzje
-support-third-party-modules-vendor = Leveransiersynfo
-support-third-party-modules-occurrence = Oantal
-support-third-party-modules-process = Prosestype & ID
-support-third-party-modules-thread = Thread
-support-third-party-modules-base = Imagebase-adres
-support-third-party-modules-uptime = Proses-uptime (ms)
-support-third-party-modules-duration = Laadtiid (ms)
-support-third-party-modules-status = Steat
-support-third-party-modules-status-loaded = Laden
-support-third-party-modules-status-blocked = Blokkearre
-support-third-party-modules-status-redirected = Omlaat
-support-third-party-modules-empty = Der binne gjin modulen fan tredden laden.
-support-third-party-modules-no-value = (Gjin wearde)
-support-third-party-modules-button-open =
-    .title = Bestânslokaasje iepenje…
-support-third-party-modules-expand =
-    .title = Detailynformaasje toane
-support-third-party-modules-collapse =
-    .title = Detailynformaasje ynklappe
-support-third-party-modules-unsigned-icon =
-    .title = Dizze module is net ûndertekene
-support-third-party-modules-folder-icon =
-    .title = Bestânslokaasje iepenje…
-support-third-party-modules-down-icon =
-    .title = Detailynformaasje toane
-support-third-party-modules-up-icon =
-    .title = Detailynformaasje ynklappe
 
 # Variables
 # $days (Integer) - Number of days of crashes to log
@@ -318,11 +280,6 @@ webgl2-renderer = Renderer fan WebGL 2-stjoerprogramma
 webgl2-version = Ferzje fan WebGL 2-stjoerprogramma
 webgl2-driver-extensions = Utwreidingen fan WebGL 2-stjoerprogramma
 webgl2-extensions = WebGL 2-útwreidingen
-blocklisted-bug = Om bekende problemen op de blokkearlist
-
-# Variables
-# $bugNumber (string) - String of bug number from Bugzilla
-bug-link = bug { $bugNumber }
 
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
@@ -333,8 +290,6 @@ support-blocklisted-bug = Blokkearre fanwegen bekende problemen: <a data-l10n-na
 unknown-failure = Op blokkearlist; flaterkoade { $failureCode }
 
 d3d11layers-crash-guard = D3D11-compositor
-d3d11video-crash-guard = D3D11-fideodecoder
-d3d9video-crash-guard = D3D9-fideodecoder
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX-fideodecoder
 
@@ -380,15 +335,6 @@ launcher-process-status-unknown = Unbekende steat
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
 multi-process-windows = { $remoteWindows }/{ $totalWindows }
-multi-process-status-0 = Ynskeakele troch brûker
-multi-process-status-1 = Standert ynskeakele
-multi-process-status-2 = Utskeakele
-multi-process-status-4 = Utskeakele troch tagonklikheidsark
-multi-process-status-6 = Utskeakele troch net-stipe tekstynfier
-multi-process-status-7 = Utskeakele troch add-ons
-multi-process-status-8 = Forsearre útskeakele
-multi-process-status-unknown = Unbekende steat
-
 # Variables
 # $fissionWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
@@ -403,7 +349,6 @@ fission-status-disabled-by-default = Standert útskeakele
 fission-status-enabled-by-user-pref = Ynskeakele troch brûker
 fission-status-disabled-by-user-pref = Utskeakele troch brûker
 fission-status-disabled-by-e10s-other = E10s útskeakele
-
 fission-status-enabled-by-rollout = Ynskeakele troch fazearre útjefte
 
 async-pan-zoom = Asyngroan panne/zoome

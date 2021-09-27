@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Adres çubuğuna ekle
 page-action-manage-extension =
     .label = Uzantıyı yönet…
-page-action-remove-from-urlbar =
-    .label = Adres çubuğundan kaldır
 page-action-remove-extension =
     .label = Uzantıyı kaldır
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Bir de bununla aramayı deneyin:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Arama ayarlarını değiştir
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Arama ayarlarını değiştir
 search-one-offs-context-open-new-tab =
@@ -250,8 +242,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Kaydederken düzenleyiciyi göster
     .accesskey = K
-bookmark-panel-done-button =
-    .label = Tamam
 bookmark-panel-save-button =
     .label = Kaydet
 # Width of the bookmark panel.
@@ -281,8 +271,6 @@ identity-passive-loaded = Bu sayfanın bazı kısımları (örneğin resimler) g
 identity-active-loaded = Bu sayfada korumayı devre dışı bıraktınız.
 identity-weak-encryption = Bu sayfada zayıf şifreleme kullanılıyor.
 identity-insecure-login-forms = Bu sayfaya girilen hesap bilgileri ele geçirilebilir.
-identity-permissions =
-    .value = İzinler
 identity-https-only-connection-upgraded = (HTTPS’e yükseltildi)
 identity-https-only-label = Yalnızca HTTPS modu
 identity-https-only-dropdown-on =
@@ -298,7 +286,6 @@ identity-permissions-storage-access-header = Siteler arası çerezler
 identity-permissions-storage-access-hint = Bu siteler, siz bu sitedeyken siteler diğer sitelerdeki çerezleri ve site verilerini kullanabilir.
 identity-permissions-storage-access-learn-more = Daha fazla bilgi al
 identity-permissions-reload-hint = Değişikliklerin uygulanması için bu sayfayı tazelemeniz gerekebilir.
-identity-permissions-empty = Bu siteye özel bir izin vermediniz.
 identity-clear-site-data =
     .label = Çerezleri ve site verilerini temizle…
 identity-connection-not-secure-security-view = Bu siteye güvenli bir şekilde bağlanmadınız.
@@ -382,12 +369,6 @@ bookmarks-toolbar-empty-message = Hızlıca erişmek istediğiniz yer imlerinizi
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Paylaşılacak kamera:
-    .accesskey = k
-popup-select-microphone =
-    .value = Paylaşılacak mikrofon:
-    .accesskey = m
 popup-select-camera-device =
     .value = Kamera:
     .accesskey = K
@@ -401,14 +382,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Hoparlör
 popup-all-windows-shared = Ekranınızdaki tüm görünür pencereler paylaşılacaktır.
-popup-screen-sharing-not-now =
-    .label = Daha sonra
-    .accesskey = D
-popup-screen-sharing-never =
-    .label = Asla izin verme
-    .accesskey = A
-popup-silence-notifications-checkbox = Paylaşırken { -brand-short-name } bildirimlerini devre dışı bırak
-popup-silence-notifications-checkbox-warning = { -brand-short-name }, paylaşım sırasında bildirimleri göstermeyecek.
 popup-screen-sharing-block =
     .label = Engelle
     .accesskey = E
@@ -432,14 +405,10 @@ enable-devtools-popup-description = F12 kısayolunu kullanmak için önce Web ge
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Arama yapın veya adres yazın
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Arama yapın veya adres yazın
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Tarayıcı uzaktan kontrol ediliyor
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -488,8 +457,6 @@ urlbar-go-button =
     .tooltiptext = Konum çubuğundaki adrese git
 urlbar-page-action-button =
     .tooltiptext = Sayfa eylemleri
-urlbar-pocket-button =
-    .tooltiptext = { -pocket-brand-name }’a kaydet
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -694,6 +661,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Araç çubuğunu özelleştir…
     .accesskey = u
+toolbar-button-email-link =
+    .label = Bağlantıyı e-postala
+    .tooltiptext = Bu sayfanın linkini e-postayla gönder
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Sayfayı kaydet
+    .tooltiptext = Bu sayfayı kaydet ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Dosya aç
+    .tooltiptext = Dosya aç ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Eşitlenmiş sekmeler
+    .tooltiptext = Diğer cihazlardaki sekmeleri göster
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Yeni gizli pencere
+    .tooltiptext = Yeni bir Gizli Gezinti penceresi aç ({ $shortcut })
 
 ## EME notification panel
 
@@ -744,6 +732,49 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Açılır pencereler engellendiğinde bu iletiyi gösterme
     .accesskey = m
+edit-popup-settings =
+    .label = Açılır pencere ayarlarını yönet…
+    .accesskey = A
 picture-in-picture-hide-toggle =
     .label = Görüntü içinde görüntü düğmesini gizle
     .accesskey = G
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Gezinme
+navbar-downloads =
+    .label = İndirilenler
+navbar-overflow =
+    .tooltiptext = Daha fazla araç…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Yazdır
+    .tooltiptext = Bu sayfayı yazdır… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Yazdır
+    .tooltiptext = Bu sayfayı yazdır
+navbar-home =
+    .label = Başlangıç
+    .tooltiptext = { -brand-short-name } Giriş Sayfası
+navbar-library =
+    .label = Arşiv
+    .tooltiptext = Geçmişinize, kayıtlı yer imlerinize ve daha fazlasına bakın
+navbar-search =
+    .title = Ara
+navbar-accessibility-indicator =
+    .tooltiptext = Erişilebilirlik özellikleri açık
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Tarayıcı sekmeleri
+tabs-toolbar-new-tab =
+    .label = Yeni sekme
+tabs-toolbar-list-all-tabs =
+    .label = Tüm sekmeleri listele
+    .tooltiptext = Tüm sekmeleri listele

@@ -8,26 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Solo cuando { -brand-short-name } esté configurado para bloquear los rastreadores conocidos
 do-not-track-option-always =
     .label = Siempre
-pref-page-title =
-    { PLATFORM() ->
-        [windows] Opciones
-       *[other] Preferencias
-    }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Please keep the placeholder string short to avoid truncation.
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input-box =
-    .style = width: 15.4em
-    .placeholder =
-        { PLATFORM() ->
-            [windows] Buscar en Opciones
-           *[other] Buscar en Preferencias
-        }
 settings-page-title = Ajustes
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
@@ -55,9 +35,6 @@ category-search =
 pane-privacy-title = Privacidad y seguridad
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-pane-sync-title2 = { -sync-brand-short-name }
-category-sync2 =
-    .tooltiptext = { pane-sync-title2 }
 pane-sync-title3 = Sincronización
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
@@ -96,21 +73,12 @@ restart-later = Reiniciar más tarde
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their home page
-# is being controlled by an extension.
-extension-controlled-homepage-override = Una extensión, <img data-l10n-name="icon"/> { $name }, está controlando tu página de inicio.
-# This string is shown to notify the user that their new tab page
-# is being controlled by an extension.
-extension-controlled-new-tab-url = Una extensión, <img data-l10n-name="icon"/> { $name }, está controlando tu página de nueva pestaña.
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
 extension-controlled-password-saving = Una extensión, <img data-l10n-name="icon"/> { $name }, está controlando este ajuste.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Una extensión, <img data-l10n-name="icon"/> { $name }, está controlando este ajuste.
-# This string is shown to notify the user that the default search engine
-# is being controlled by an extension.
-extension-controlled-default-search = Una extensión, <img data-l10n-name="icon"/> { $name }, ha ajustado tu motor de búsqueda predeterminado.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = Una extensión, <img data-l10n-name="icon"/> { $name }, requiere pestañas contenedoras.
@@ -131,25 +99,12 @@ extension-controlled-enable = Para activar la extensión ve a <img data-l10n-nam
 
 search-results-header = Resultados de búsqueda
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
-search-results-empty-message =
-    { PLATFORM() ->
-        [windows] ¡Lo sentimos! No hay resultados en Opciones para “<span data-l10n-name="query"></span>”.
-       *[other] ¡Lo sentimos! No hay resultados en Preferencias para “<span data-l10n-name="query"></span>”.
-    }
-# `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message2 = ¡Lo sentimos! No hay resultados en Ajustes para “<span data-l10n-name="query"></span>”.
 search-results-help-link = ¿Necesitas ayuda? Visita la <a data-l10n-name="url">Ayuda de { -brand-short-name }</a>
 
 ## General Section
 
 startup-header = Inicio
-# { -brand-short-name } will be 'Firefox Developer Edition',
-# since this setting is only exposed in Firefox Developer Edition
-separate-profile-mode =
-    .label = Permitir a { -brand-short-name } y Firefox ejecutarse al mismo tiempo
-use-firefox-sync = Consejo: Esto usa perfiles separados. Usa { -sync-brand-short-name } para compartir datos entre ellos.
-get-started-not-logged-in = Conectarse a { -sync-brand-short-name }…
-get-started-configured = Abrir preferencias de { -sync-brand-short-name }
 always-check-default =
     .label = Siempre revisar al inicio si { -brand-short-name } es el navegador predeterminado
     .accesskey = w
@@ -160,6 +115,9 @@ set-as-my-default-browser =
     .accesskey = D
 startup-restore-previous-session =
     .label = Restaurar sesión previa
+    .accesskey = s
+startup-restore-windows-and-tabs =
+    .label = Abrir ventanas y pestañas anteriores
     .accesskey = s
 startup-restore-warn-on-quit =
     .label = Advertir al salir del navegador
@@ -175,12 +133,20 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Advertir cuando se cierren múltiples pestañas
     .accesskey = m
+confirm-on-close-multiple-tabs =
+    .label = Confirmar antes de cerrar múltiples pestañas
+    .accesskey = m
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (String) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+confirm-on-quit-with-key =
+    .label = Confirme antes de salir con { $quitKey }
+    .accesskey = b
 warn-on-open-many-tabs =
     .label = Advertir cuando la apertura de múltiples pestañas pueda poner lento { -brand-short-name }
     .accesskey = d
-switch-links-to-new-tabs =
-    .label = Al abrir un enlace en una nueva pestaña, cambiar a ella inmediatamente
-    .accesskey = h
 switch-to-new-tabs =
     .label = Al abrir un enlace, imagen o medio en una nueva pestaña, cambiar a ella inmediatamente
     .accesskey = h
@@ -327,10 +293,6 @@ applications-manage-app =
     .label = Detalles de la aplicación…
 applications-always-ask =
     .label = Preguntar siempre
-applications-type-pdf = Formato de documento portátil (PDF)
-# Variables:
-#   $type (String) - the MIME type (e.g application/binary)
-applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 # Variables:
 #   $type-description (String) - Description of the type (e.g "Portable Document Format")
 #   $type (String) - the MIME type (e.g application/binary)
@@ -397,15 +359,6 @@ update-application-warning-cross-user-setting = Este ajuste se aplicará a todas
 update-application-use-service =
     .label = Usar un servicio en segundo plano para instalar actualizaciones
     .accesskey = U
-update-setting-write-failure-title = Error al guardar las preferencias de actualización
-# Variables:
-#   $path (String) - Path to the configuration file
-# The newlines between the main text and the line containing the path is
-# intentional so the path is easier to identify.
-update-setting-write-failure-message =
-    { -brand-short-name } encontró un error y no guardó este cambio. Nótese que ajustar esta preferencia de actualización requiere permisos para escribir al archivo a continuación. Tu o un administrador del sistema podrían resolver el error otorgándole al grupo "Usuarios" control completo para este archivo.
-    
-    No se pudo escribir al archivo: { $path }
 update-setting-write-failure-title2 = Error al guardar los ajustes de actualización
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -611,10 +564,8 @@ search-show-suggestions-above-history-option =
     .label = Mostrar sugerencias de búsqueda antes del historial de navegación en los resultados de la barra de direcciones
 search-show-suggestions-private-windows =
     .label = Mostrar sugerencias de búsqueda en ventanas privadas
-suggestions-addressbar-settings-generic = Cambia las preferencias para otras sugerencias de la barra de direcciones
 suggestions-addressbar-settings-generic2 = Cambia los ajustes para otras sugerencias de la barra de direcciones
 search-suggestions-cant-show = Las sugerencias de búsqueda no serán mostradas en la barra de direcciones porque configuraste { -brand-short-name } para que nunca recuerde el historial.
-search-one-click-header = Motores de búsqueda rápida
 search-one-click-header2 = Atajos de búsqueda
 search-one-click-desc = Elegir los motores de búsqueda alternativos que aparecen bajo la barra de direcciones y la barra de búsqueda cuando empiezas a escribir una palabra clave.
 search-choose-engine-column =
@@ -641,12 +592,6 @@ search-keyword-warning-bookmark = Has escogido una palabra clave que está siend
 
 ## Containers Section
 
-containers-back-button =
-    .aria-label =
-        { PLATFORM() ->
-            [windows] Regresar a Opciones
-           *[other] Regresar a Preferencias
-        }
 containers-back-button2 =
     .aria-label = Regresar a Ajustes
 containers-header = Pestañas contenedoras
@@ -656,8 +601,6 @@ containers-add-button =
 containers-new-tab-check =
     .label = Selecciona un contenedor para cada pestaña nueva
     .accesskey = S
-containers-preferences-button =
-    .label = Preferencias
 containers-settings-button =
     .label = Ajustes
 containers-remove-button =
@@ -667,10 +610,6 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Lleva la Web contigo
-sync-signedout-description = Sincroniza tus marcadores, historial, pestañas, contraseñas, complementos y preferencias en todos tus dispositivos.
-sync-signedout-account-signin2 =
-    .label = Conectarse a { -sync-brand-short-name }…
-    .accesskey = i
 sync-signedout-description2 = Sincroniza tus marcadores, historial, pestañas, contraseñas, complementos y ajustes en todos tus dispositivos.
 sync-signedout-account-signin3 =
     .label = Conectarse para sincronizar…
@@ -710,10 +649,6 @@ sync-sign-in =
 
 prefs-syncing-on = Sincronización: ACTIVADA
 prefs-syncing-off = Sincronización: DESACTIVADA
-prefs-sync-setup =
-    .label = Configurar { -sync-brand-short-name }…
-    .accesskey = S
-prefs-sync-offer-setup-label = Sincroniza tus marcadores, historial, pestañas, contraseñas, complementos y preferencias en todos sus dispositivos.
 prefs-sync-turn-on-syncing =
     .label = Activar la sincronización…
     .accesskey = s
@@ -733,11 +668,6 @@ sync-currently-syncing-logins-passwords = Credenciales y contraseñas
 sync-currently-syncing-addresses = Direcciones
 sync-currently-syncing-creditcards = Tarjetas de crédito
 sync-currently-syncing-addons = Complementos
-sync-currently-syncing-prefs =
-    { PLATFORM() ->
-        [windows] Opciones
-       *[other] Preferencias
-    }
 sync-currently-syncing-settings = Ajustes
 sync-change-options =
     .label = Cambiar…
@@ -778,14 +708,6 @@ sync-engine-addons =
     .label = Complementos
     .tooltiptext = Extensiones y temas para Firefox para escritorio
     .accesskey = o
-sync-engine-prefs =
-    .label =
-        { PLATFORM() ->
-            [windows] Opciones
-           *[other] Preferencias
-        }
-    .tooltiptext = Ajustes generales, de privacidad y de seguridad que has cambiado
-    .accesskey = s
 sync-engine-settings =
     .label = Ajustes
     .tooltiptext = Ajustes generales, de privacidad y de seguridad que has cambiado
@@ -835,9 +757,6 @@ forms-fill-logins-and-passwords =
 forms-saved-logins =
     .label = Credenciales guardadas…
     .accesskey = L
-forms-master-pw-use =
-    .label = Usar una contraseña maestra
-    .accesskey = U
 forms-primary-pw-use =
     .label = Usar una contraseña primaria
     .accesskey = U
@@ -848,7 +767,6 @@ forms-primary-pw-learn-more-link = Aprender más
 forms-master-pw-change =
     .label = Cambiar la contraseña maestra…
     .accesskey = m
-forms-master-pw-fips-title = Actualmente estás en modo FIPS. FIPS requiere de una contraseña maestra que no esté en blanco.
 forms-primary-pw-change =
     .label = Cambiar contraseña primaria…
     .accesskey = P
@@ -865,13 +783,6 @@ forms-windows-sso-desc = Gestiona las cuentas en la configuración de tu disposi
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = Para crear una contraseña maestra, ingresa tus credenciales de inicio de sesión de Windows. Esto ayuda a proteger la seguridad de tus cuentas.
-# This message can be seen by trying to add a Master Password.
-# The macOS strings are preceded by the operating system with "Firefox is trying to "
-# and includes subtitle of "Enter password for the user "xxx" to allow this." These
-# notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = crear una contraseña maestra
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Para crear una contraseña primaria, ingresa tus credenciales de inicio de sesión de Windows. Esto ayuda a proteger la seguridad de tus cuentas.
 # This message can be seen by trying to add a Primary Password.
@@ -967,9 +878,6 @@ sitedata-clear =
 sitedata-settings =
     .label = Gestionar datos…
     .accesskey = M
-sitedata-cookies-permissions =
-    .label = Gestionar permisos…
-    .accesskey = P
 sitedata-cookies-exceptions =
     .label = Gestionar excepciones…
     .accesskey = x
@@ -1126,10 +1034,6 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = Excepciones…
     .accesskey = E
-permissions-a11y-privacy-checkbox =
-    .label = Evitar que los servicios de accesibilidad accedan a tu navegador
-    .accesskey = a
-permissions-a11y-privacy-link = Aprender más
 
 ## Privacy Section - Data Collection
 
@@ -1151,10 +1055,6 @@ addon-recommendations-link = Aprender más
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = El reporte de datos está deshabilitado para esta configuración de compilación
-collection-backlogged-crash-reports =
-    .label = Permitir a { -brand-short-name } enviar reportes de fallos acumulados a tu nombre
-    .accesskey = c
-collection-backlogged-crash-reports-link = Aprender más
 collection-backlogged-crash-reports-with-link = Permitir a { -brand-short-name } enviar reportes de fallos acumulados a tu nombre <a data-l10n-name="crash-reports-link">Aprender más</a>
     .accesskey = c
 
@@ -1179,13 +1079,6 @@ security-block-uncommon-software =
 ## Privacy Section - Certificates
 
 certs-header = Certificados
-certs-personal-label = Cuando un servidor solicita tu certificado personal
-certs-select-auto-option =
-    .label = Seleccionar uno automáticamente
-    .accesskey = S
-certs-select-ask-option =
-    .label = Preguntar cada vez
-    .accesskey = A
 certs-enable-ocsp =
     .label = Consultar a los servidores de respuesta OCSP para confirmar la validez actual de los certificados
     .accesskey = Q
@@ -1195,29 +1088,6 @@ certs-view =
 certs-devices =
     .label = Dispositivos de seguridad…
     .accesskey = D
-space-alert-learn-more-button =
-    .label = Aprender más
-    .accesskey = L
-space-alert-over-5gb-pref-button =
-    .label =
-        { PLATFORM() ->
-            [windows] Abrir opciones
-           *[other] Abrir preferencias
-        }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] O
-           *[other] O
-        }
-space-alert-over-5gb-message =
-    { PLATFORM() ->
-        [windows] { -brand-short-name } se está quedando sin espacio en disco. Los contenidos de los sitios pueden no mostrarse correctamente. Puedes limpiar los datos almacenados en Opciones > Privacidad y seguridad > Cookies y datos de sitio.
-       *[other] { -brand-short-name } se está quedando sin espacio en disco. Los contenidos de los sitios pueden no mostrarse correctamente. Puedes limpiar los datos almacenados en Preferencias > Privacidad y seguridad > Cookies y datos de sitio.
-    }
-space-alert-under-5gb-ok-button =
-    .label = Ok, me quedó clarito
-    .accesskey = K
-space-alert-under-5gb-message = { -brand-short-name } se está quedando sin espacio en disco. Los contenidos de los sitios pueden no mostrarse correctamente. Visita "Aprender más" para optimizar tu uso de disco para una mejor experiencia de navegación.
 space-alert-over-5gb-settings-button =
     .label = Abrir Ajustes
     .accesskey = O

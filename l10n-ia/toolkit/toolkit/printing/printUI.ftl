@@ -58,8 +58,6 @@ printui-options = Optiones
 printui-headers-footers-checkbox = Imprimer capites e pedes de pagina
 printui-backgrounds-checkbox = Imprimer le fundos
 
-printui-selection-checkbox = Imprimer solmente le selection
-
 ## The "Format" section, select a version of the website to print. Radio
 ## options to select between the original page, selected text only, or a version
 ## where the page is processed with "Reader View".
@@ -84,7 +82,7 @@ printui-margins-default = Predefinite
 printui-margins-min = Minimo
 printui-margins-none = Nulle
 printui-margins-custom-inches = Personalisate (pollices)
-printui-margins-custom-mm = Personalisate  (mm)
+printui-margins-custom-mm = Personalisate (mm)
 printui-margins-custom-top = Alto
 printui-margins-custom-top-inches = Superior (pollices)
 printui-margins-custom-top-mm = Superior (mm)
@@ -93,10 +91,10 @@ printui-margins-custom-bottom-inches = Inferior (pollices)
 printui-margins-custom-bottom-mm = Inferior (mm)
 printui-margins-custom-left = Sinistra
 printui-margins-custom-left-inches = Sinistre (pollices)
-printui-margins-custom-left-mm = Sinistre (mm)
+printui-margins-custom-left-mm = Sinistra (mm)
 printui-margins-custom-right = Dextra
 printui-margins-custom-right-inches = Dextere (pollices)
-printui-margins-custom-right-mm = Dextre (mm)
+printui-margins-custom-right-mm = Dextra (mm)
 
 printui-system-dialog-link = Imprimer usante le fenestra de dialogo del systema…
 

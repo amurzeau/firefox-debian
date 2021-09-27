@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Sluit kantbalk
+
+sidebar-close-button =
+    .tooltiptext = Sluit kantbalk

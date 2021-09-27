@@ -2,11 +2,6 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY popupWindowRejectCmd.label "Rechazar ventanas emergentes de este sitio web">
-<!ENTITY popupWindowRejectCmd.accesskey "R">
-<!ENTITY popupWindowAllowCmd.label "Permitir ventanas emergentes de este sitio web">
-<!ENTITY popupWindowAllowCmd.accesskey "P">
-
 <!ENTITY openLinkCmdInTab.label "Abrir enlace en una pestaña nueva">
 <!ENTITY openLinkCmdInTab.accesskey "T">
 <!ENTITY openLinkCmd.label "Abrir enlace en una ventana nueva">
@@ -152,7 +147,6 @@
 <!ENTITY spellDictionaries.accesskey "I">
 <!ENTITY spellAddDictionaries.label "Descargar más diccionarios…">
 <!ENTITY spellAddDictionaries.accesskey "D">
-
 <!ENTITY fillLoginMenu.label "Rellenar credencial">
 <!ENTITY fillLoginMenu.accesskey "R">
 <!ENTITY fillPasswordMenu.label "Rellenar contraseña">
@@ -161,6 +155,5 @@
 <!ENTITY fillUsernameMenu.accesskey "R">
 <!ENTITY noLoginSuggestions.label "(No hay sugerencias de credenciales)">
 <!ENTITY viewSavedLogins.label "Ver credenciales guardadas">
-
 <!ENTITY devtoolsInspect.label "Inspeccionar elemento">
 <!ENTITY devtoolsInspect.accesskey "n">

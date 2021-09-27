@@ -156,12 +156,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = أضف إلى شريط العناوين
 page-action-manage-extension =
     .label = أدِر الامتدادات…
-page-action-remove-from-urlbar =
-    .label = أزل من شريط العناوين
 page-action-remove-extension =
     .label = أزِل الامتداد
 
@@ -179,10 +175,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = الآن فقط ابحث باستعمال:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = غيّر إعدادات البحث
 search-one-offs-change-settings-compact-button =
     .tooltiptext = غيّر إعدادات البحث
 search-one-offs-context-open-new-tab =
@@ -242,8 +234,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = اعرض المحرر عند الحفظ
     .accesskey = ظ
-bookmark-panel-done-button =
-    .label = تمّ
 bookmark-panel-save-button =
     .label = احفظ
 # Width of the bookmark panel.
@@ -273,8 +263,6 @@ identity-passive-loaded = بعض أجزاء هذه الصفحة غير آمنة 
 identity-active-loaded = لقد أوقفت الحماية على هذه الصفحة.
 identity-weak-encryption = تستخدم هذه الصفحة تعمية ضعيفة.
 identity-insecure-login-forms = معلومات الولوج التي تُدخلها في هذه الصفحة قد تكون مخترقة.
-identity-permissions =
-    .value = التصاريح
 identity-https-only-connection-upgraded = (ترقّى إلى HTTPS)
 identity-https-only-label = وضع HTTPS فقط
 identity-https-only-dropdown-on =
@@ -290,7 +278,6 @@ identity-permissions-storage-access-header = الكعكات بين المواق�
 identity-permissions-storage-access-hint = يمكن لهذه الأطراف استعمال الكعكات وبيانات المواقع المشتركة أثناء وجودك في هذا الموقع.
 identity-permissions-storage-access-learn-more = اطّلع على المزيد
 identity-permissions-reload-hint = قد تحتاج إعادة تحميل الصفحة لتطبيق التغييرات.
-identity-permissions-empty = لم تمنح هذا الموقع أي صلاحيات خاصة.
 identity-clear-site-data =
     .label = امسح الكعكات و بيانات المواقع…
 identity-connection-not-secure-security-view = لست متصلا مع هذا الموقع بأمان.
@@ -387,12 +374,6 @@ bookmarks-toolbar-empty-message = ضَع علاماتك هنا في شريط ا�
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = الكمرة التي ستُشارك:
-    .accesskey = م
-popup-select-microphone =
-    .value = الميكروفون الذي سيُشارك:
-    .accesskey = ك
 popup-select-camera-device =
     .value = الكمرة:
     .accesskey = ك
@@ -404,14 +385,6 @@ popup-select-microphone-device =
 popup-select-microphone-icon =
     .tooltiptext = الميكروفون
 popup-all-windows-shared = ستُشارك كل النوافذ الظاهرة على شاشتك.
-popup-screen-sharing-not-now =
-    .label = ليس الآن
-    .accesskey = ل
-popup-screen-sharing-never =
-    .label = لا تسمح أبدًا
-    .accesskey = س
-popup-silence-notifications-checkbox = عطّل التنبيهات { -brand-short-name } أثناء المشاركة
-popup-silence-notifications-checkbox-warning = لن يعرض { -brand-short-name } التنبيهات أثناء المشاركة.
 popup-screen-sharing-block =
     .label = احجبه
     .accesskey = ح
@@ -435,14 +408,10 @@ enable-devtools-popup-description = افتح أولا أدوات المطوري�
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = ابحث أو أدخل عنوانا
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = ابحث أو أدخل عنوانا
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = يخضع المتصفح للتحكم عن بعد
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -491,8 +460,6 @@ urlbar-go-button =
     .tooltiptext = انتقل للعنوان في شريط الموقع
 urlbar-page-action-button =
     .tooltiptext = إجراءات الصفحة
-urlbar-pocket-button =
-    .tooltiptext = احفظ في { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -683,6 +650,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = خصّص شريط الأدوات…
     .accesskey = ش
+toolbar-button-email-link =
+    .label = أرسل الرابط بالبريد
+    .tooltiptext = أرسل رابط لهذه الصفحة بالبريد
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = احفظ الصفحة
+    .tooltiptext = احفظ هذه الصفحة ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = افتح ملفًا
+    .tooltiptext = افتح ملفًا ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = الألسنة المُزامنة
+    .tooltiptext = اعرض الألسنة من الأجهزة الأخرى
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = نافذة خاصة جديدة
+    .tooltiptext = افتح نافذة تصفح خاصة جديدة ({ $shortcut })
 
 ## EME notification panel
 
@@ -733,3 +721,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = أخفِ زر تفعيل/تعطيل الڤديوهات المعترِضة
     .accesskey = خ
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = التنقل
+navbar-downloads =
+    .label = التنزيلات
+navbar-overflow =
+    .tooltiptext = المزيد من الأدوات…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = اطبع
+    .tooltiptext = اطبع هذه الصّفحة… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = اطبع
+    .tooltiptext = اطبع هذه الصفحة
+navbar-home =
+    .label = البداية
+    .tooltiptext = صفحة بداية { -brand-short-name }
+navbar-library =
+    .label = المكتبة
+    .tooltiptext = اعرض التأريخ، والعلامات المحفوظة وغيرها
+navbar-search =
+    .title = ابحث
+navbar-accessibility-indicator =
+    .tooltiptext = مزايا الإتاحة مفعّلة
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = ألسنة المتصفح
+tabs-toolbar-new-tab =
+    .label = لسان جديد
+tabs-toolbar-list-all-tabs =
+    .label = اسرد كل الألسنة
+    .tooltiptext = اسرد كل الألسنة

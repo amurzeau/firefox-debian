@@ -7,20 +7,12 @@ about-logins-page-title = لاگ ان اور پاس ورڈ
 
 # "Google Play" and "App Store" are both branding and should not be translated
 
-login-app-promo-title = اپنے پاس ورڈ ہر جگہ لے  جاٴییں
-login-app-promo-subtitle = { -lockwise-brand-name } ایپلیکیشن  مفت  حاصل  کریں
-login-app-promo-android =
-    .alt = Google Play سے حاصل کریں
-login-app-promo-apple =
-    .alt = App Store پر سے ڈائونلوڈ کریں
-
 login-filter =
     .placeholder = لاگ ان تلاش کریں
 
 create-login-button = نیا لاگ ان بنائیں
 
 fxaccounts-sign-in-text = اپنے پاسورڈ  دوسرے آلات پر حاصل کریں
-fxaccounts-sign-in-button = { -sync-brand-short-name } میں  سائن ان کریں
 fxaccounts-sign-in-sync-button = سنک کرنے کے لئے سائن ان کریں
 fxaccounts-avatar-button =
     .title = اکاؤنٹ کو  منظم کریں
@@ -40,8 +32,6 @@ menu-menuitem-preferences =
        *[other] ترجیحات
     }
 about-logins-menu-menuitem-help = مدد
-menu-menuitem-android-app = { -lockwise-brand-short-name }  براٴے  Android
-menu-menuitem-iphone-app = iPhone اور iPad کے لئے { -lockwise-brand-short-name }
 
 ## Login List
 
@@ -55,6 +45,7 @@ login-list-count =
 login-list-sort-label-text = کے مطابق چھانٹیں:
 login-list-name-option = نام (A-Z)
 login-list-name-reverse-option = نام  (Z-A)
+login-list-username-option = صارف کا  نام (A-Z)
 about-logins-login-list-alerts-option = انتباہات
 login-list-last-changed-option = آخری بار ترمیم کردہ
 login-list-last-used-option = آخری استعمال
@@ -70,15 +61,17 @@ about-logins-list-item-breach-icon =
 about-logins-list-item-vulnerable-password-icon =
     .title = کمزور پاسورڈ
 
-## Introduction screen
+about-logins-list-section-breach = خلاف ورزی کرنے والی ویب سائٹیں
+about-logins-list-section-vulnerable = کمزور پاسورڈ
+about-logins-list-section-nothing = کوئی انتباہ نہیں۔
+about-logins-list-section-today = آج
+about-logins-list-section-yesterday = کل
+about-logins-list-section-week = پچھلے 7 دن
 
-login-intro-heading = اپنے محفوظ شدہ لاگ ان ڈھونڈ رہے ہیں؟ { -sync-brand-short-name } مرتب کریں۔
+## Introduction screen
 
 about-logins-login-intro-heading-logged-in = کوئی سینکڈ لاگ ان نہیں ملا۔
 login-intro-description = اگر آپ نے اپنے لاگ انز { -brand-product-name } کو کسی دوسرے آلے پر محفوظ کیاہوا ہے تو، انہیں یہاں حاصل کرنے کا طریقہ یوں ہے:
-login-intro-instruction-fxa = وہ آلہ جہاں آپ کے لاگ انز محفوظ ہیں ان پر اپنا { -fxaccount-brand-name } بنائیں یا سائن ان کریں
-login-intro-instruction-fxa-settings = یقینی بنائیں کہ آپ نے { -sync-brand-short-name } کے سیٹنگز میں لاگ انس کے چیک باکس کو منتخب کیا ہے
-about-logins-intro-instruction-help = مزید مدد کے لئے <a data-l10n-name="help-link">{ -lockwise-brand-short-name } معاونت</a> پر جائیں
 about-logins-intro-import = اگر آپ کے لاگ انز کسی دوسرے براؤزر میں محفوظ ہیں تو ، آپ <a data-l10n-name="import-link"> ان کو { -lockwise-brand-short-name }</a> میں درآمد کرسکتے ہیں
 
 ## Login
@@ -128,8 +121,6 @@ about-logins-copy-password-os-auth-dialog-message-macosx = محفوظ شدہ پ�
 
 ## Master Password notification
 
-master-password-notification-message = براہ کرم محفوظ لاگ ان اور پاس ورڈز کو دیکھنے کے لئے اپنا ماسٹر پاس ورڈ درج کریں
-
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-export-password-os-auth-dialog-message-macosx = محفوظ شدہ لاگ ان اور پاس ورڈ برآمد کریں
@@ -141,17 +132,6 @@ master-password-reload-button =
     .accesskey = L
 
 ## Password Sync notification
-
-enable-password-sync-preferences-button =
-    .label =
-        { PLATFORM() ->
-            [windows] دورہ کریں  { -sync-brand-short-name } اختیارات
-           *[other] دورہ کریں{ -sync-brand-short-name }ترجیحات
-        }
-    .accesskey = V
-about-logins-enable-password-sync-dont-ask-again-button =
-    .label = مجھے دوبارہ مت پوچھیں
-    .accesskey = د
 
 ## Dialogs
 
@@ -209,7 +189,6 @@ about-logins-vulnerable-alert-learn-more-link = مزید سیکھیں
 
 # This is a generic error message.
 about-logins-error-message-default = اس پاس ورڈ کو محفوظ کرنے کی کوشش کرتے وقت ایک نقص پیش آگیا۔
-
 
 ## Login Export Dialog
 

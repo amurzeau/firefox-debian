@@ -8,9 +8,6 @@
 newtab-page-title = Nowy rajtark
 newtab-settings-button =
     .title = Stronu wašeho noweho rajtarka přiměrić
-newtab-personalize-button-label = Personalizować
-    .title = Nowy rajtark personalizować
-    .aria-label = Nowy rajtark personalizować
 newtab-personalize-icon-label =
     .title = Nowy rajtark personalizować
     .aria-label = Nowy rajtark personalizować
@@ -23,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Pytać
     .aria-label = Pytać
-newtab-search-box-search-the-web-text = Web přepytać
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = Pytajće z { $engine } abo zapodajće adresu
@@ -173,6 +169,11 @@ newtab-label-sponsored = { $sponsorOrSource } - sponsorowane
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = Sponsorowany wot { $sponsor }
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } mjeń.
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -254,10 +255,4 @@ newtab-custom-pocket-sponsored = Sponsorowane stawizny
 newtab-custom-recent-title = Najnowša aktiwita
 newtab-custom-recent-subtitle = Wuběr najnowšich sydłow a najnowšeho wobsaha
 newtab-custom-close-button = Začinić
-# For the "Snippets" feature traditionally on about:home.
-# Alternative translation options: "Small Note" or something that
-# expresses the idea of "a small message, shortened from something else,
-# and non-essential but also not entirely trivial and useless.
-newtab-custom-snippets-title = Šlipki
-newtab-custom-snippets-subtitle = Pokiwy a nowinki wot { -vendor-short-name } a { -brand-product-name }
 newtab-custom-settings = Dalše nastajenja rjadować

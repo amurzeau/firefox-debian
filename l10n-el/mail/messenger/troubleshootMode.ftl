@@ -23,7 +23,7 @@ troubleshoot-mode-change-and-restart =
     .accesskey = φ
 
 troubleshoot-mode-continue =
-    .label = Συνέχεια στη Λειτουργία επίλυσης προβλημάτων
+    .label = Συνέχεια στη λειτουργία επίλυσης προβλημάτων
     .accesskey = Σ
 
 troubleshoot-mode-quit =

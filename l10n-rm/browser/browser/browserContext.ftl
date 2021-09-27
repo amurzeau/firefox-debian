@@ -11,17 +11,6 @@ navbar-tooltip-instruction =
 
 ## Back
 
-main-context-menu-back =
-    .tooltiptext = Ina pagina enavos
-    .aria-label = Enavos
-    .accesskey = E
-
-navbar-tooltip-back =
-    .value = { main-context-menu-back.tooltiptext }
-
-toolbar-button-back =
-    .label = { main-context-menu-back.aria-label }
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the Go Back command.
 main-context-menu-back-2 =
@@ -41,17 +30,6 @@ toolbar-button-back-2 =
     .label = { main-context-menu-back-2.aria-label }
 
 ## Forward
-
-main-context-menu-forward =
-    .tooltiptext = Ina pagina enavant
-    .aria-label = Enavant
-    .accesskey = n
-
-navbar-tooltip-forward =
-    .value = { main-context-menu-forward.tooltiptext }
-
-toolbar-button-forward =
-    .label = { main-context-menu-forward.aria-label }
 
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the Go Forward command.
@@ -116,9 +94,6 @@ main-context-menu-page-save =
     .label = Memorisar la pagina sut…
     .accesskey = u
 
-toolbar-button-page-save =
-    .label = { main-context-menu-page-save.label }
-
 ## Simple menu items
 
 main-context-menu-bookmark-add =
@@ -179,10 +154,6 @@ main-context-menu-open-link-new-private-window =
     .label = Avrir la colliaziun en ina nova fanestra privata
     .accesskey = P
 
-main-context-menu-bookmark-this-link =
-    .label = Agiuntar in segnapagina per la colliaziun
-    .accesskey = l
-
 main-context-menu-bookmark-link =
     .label = Agiuntar in segnapagina per la colliaziun
     .accesskey = A
@@ -207,10 +178,6 @@ main-context-menu-save-link-to-pocket =
 main-context-menu-copy-email =
     .label = Copiar l'adressa dad e-mail
     .accesskey = e
-
-main-context-menu-copy-link =
-    .label = Copiar l'adressa da la colliaziun
-    .accesskey = C
 
 main-context-menu-copy-link-simple =
     .label = Copiar la colliaziun
@@ -239,32 +206,6 @@ main-context-menu-media-mute =
 main-context-menu-media-unmute =
     .label = Cun tun
     .accesskey = C
-
-main-context-menu-media-play-speed =
-    .label = Sveltezza da reproducziun
-    .accesskey = v
-
-main-context-menu-media-play-speed-slow =
-    .label = Plaun (0.5×)
-    .accesskey = P
-
-main-context-menu-media-play-speed-normal =
-    .label = Normal
-    .accesskey = N
-
-main-context-menu-media-play-speed-fast =
-    .label = Svelt (1.25×)
-    .accesskey = S
-
-main-context-menu-media-play-speed-faster =
-    .label = Pli svelt (1.5×)
-    .accesskey = l
-
-# "Ludicrous" is a reference to the movie "Space Balls" and is meant
-# to say that this speed is very fast.
-main-context-menu-media-play-speed-fastest =
-    .label = Stravagà (2×)
-    .accesskey = t
 
 main-context-menu-media-play-speed-2 =
     .label = Sveltezza
@@ -312,12 +253,6 @@ main-context-menu-media-video-leave-fullscreen =
 
 # This is used when right-clicking on a video in the
 # content area when the Picture-in-Picture feature is enabled.
-main-context-menu-media-pip =
-    .label = maletg-en-maletg
-    .accesskey = g
-
-# This is used when right-clicking on a video in the
-# content area when the Picture-in-Picture feature is enabled.
 main-context-menu-media-watch-pip =
     .label = Guardar sco maletg-en-maletg
     .accesskey = u
@@ -325,14 +260,6 @@ main-context-menu-media-watch-pip =
 main-context-menu-image-reload =
     .label = Rechargiar la grafica
     .accesskey = R
-
-main-context-menu-image-view =
-    .label = Mussar la grafica
-    .accesskey = i
-
-main-context-menu-video-view =
-    .label = Mussar il video
-    .accesskey = i
 
 main-context-menu-image-view-new-tab =
     .label = Avrir la grafica en in nov tab
@@ -345,18 +272,6 @@ main-context-menu-video-view-new-tab =
 main-context-menu-image-copy =
     .label = Copiar la grafica
     .accesskey = C
-
-main-context-menu-image-copy-location =
-    .label = Copiar l'adressa da la grafica
-    .accesskey = d
-
-main-context-menu-video-copy-location =
-    .label = Copiar l'adressa dal video
-    .accesskey = o
-
-main-context-menu-audio-copy-location =
-    .label = Copiar l'adressa da l'audio
-    .accesskey = o
 
 main-context-menu-image-copy-link =
     .label = Copiar la colliaziun da la grafica
@@ -378,10 +293,6 @@ main-context-menu-image-email =
     .label = Trametter la grafica per e-mail…
     .accesskey = a
 
-main-context-menu-image-set-as-background =
-    .label = Definir sco culissa…
-    .accesskey = a
-
 main-context-menu-image-set-image-as-background =
     .label = Definir il maletg sco culissa dal desktop…
     .accesskey = s
@@ -401,10 +312,6 @@ main-context-menu-video-save-as =
 main-context-menu-audio-save-as =
     .label = Memorisar l'audio sut…
     .accesskey = M
-
-main-context-menu-video-image-save-as =
-    .label = Memorisar il maletg sco…
-    .accesskey = s
 
 main-context-menu-video-take-snapshot =
     .label = Far in maletg dal visur…
@@ -433,14 +340,6 @@ main-context-menu-save-to-pocket =
 main-context-menu-send-to-device =
     .label = Trametter la pagina ad in apparat
     .accesskey = a
-
-main-context-menu-view-background-image =
-    .label = Mussar la grafica dal fund davos
-    .accesskey = M
-
-main-context-menu-generate-new-password =
-    .label = Utilisar in pled-clav generà…
-    .accesskey = U
 
 ## The access keys for "Use Saved Login" and "Use Saved Password"
 ## should be the same if possible; the two context menu items
@@ -532,10 +431,6 @@ main-context-menu-view-page-source =
     .label = Mussar il code da funtauna da la pagina
     .accesskey = a
 
-main-context-menu-view-page-info =
-    .label = Mussar infurmaziuns davart la pagina
-    .accesskey = M
-
 main-context-menu-bidi-switch-text =
     .label = Midar la direcziun dal text
     .accesskey = M
@@ -543,10 +438,6 @@ main-context-menu-bidi-switch-text =
 main-context-menu-bidi-switch-page =
     .label = Midar la direcziun da la pagina
     .accesskey = M
-
-main-context-menu-inspect-element =
-    .label = Inspectar l'element
-    .accesskey = I
 
 main-context-menu-inspect =
     .label = Inspectar
@@ -558,3 +449,9 @@ main-context-menu-inspect-a11y-properties =
 main-context-menu-eme-learn-more =
     .label = Dapli infurmaziuns davart DRM…
     .accesskey = D
+
+# Variables
+#   $containerName (String): The name of the current container
+main-context-menu-open-link-in-container-tab =
+    .label = Avrir la colliaziun en in nov tab da { $containerName }
+    .accesskey = t

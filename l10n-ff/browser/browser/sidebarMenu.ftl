@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Uddu palal sawndo
+
+sidebar-close-button =
+    .tooltiptext = Uddu palal sawndo

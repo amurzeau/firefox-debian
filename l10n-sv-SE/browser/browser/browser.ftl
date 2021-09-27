@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Lägg till i adressfältet
 page-action-manage-extension =
     .label = Hantera tillägg…
-page-action-remove-from-urlbar =
-    .label = Ta bort från adressfältet
 page-action-remove-extension =
     .label = Ta bort tillägg
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Denna gång, sök med:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Ändra sökinställningar
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Ändra sökinställningar
 search-one-offs-context-open-new-tab =
@@ -250,8 +242,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Visa redigeraren när du sparar
     .accesskey = V
-bookmark-panel-done-button =
-    .label = Klar
 bookmark-panel-save-button =
     .label = Spara
 # Width of the bookmark panel.
@@ -281,8 +271,6 @@ identity-passive-loaded = Vissa komponenter av den här sidan är inte säkra (t
 identity-active-loaded = Du har stängt av skyddet på den här sidan.
 identity-weak-encryption = Den här sidan använder en svag kryptering.
 identity-insecure-login-forms = Inloggningar som anges på den här sidan kan äventyras.
-identity-permissions =
-    .value = Behörigheter
 identity-https-only-connection-upgraded = (uppgraderad till HTTPS)
 identity-https-only-label = Endast HTTPS-läge
 identity-https-only-dropdown-on =
@@ -298,7 +286,6 @@ identity-permissions-storage-access-header = Globala kakor
 identity-permissions-storage-access-hint = Dessa parter kan använda global kakor och webbplatsinformation medan du är på denna webbplats.
 identity-permissions-storage-access-learn-more = Läs mer
 identity-permissions-reload-hint = Du kan behöva ladda om sidan för att ändringarna ska verkställas.
-identity-permissions-empty = Du har inte beviljat denna webbplats några särskilda rättigheter.
 identity-clear-site-data =
     .label = Rensa kakor och webbplatsdata…
 identity-connection-not-secure-security-view = Du är inte säkert ansluten till den här webbplatsen.
@@ -380,12 +367,6 @@ bookmarks-toolbar-empty-message = För snabb åtkomst placerar du dina bokmärke
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Kamera att dela:
-    .accesskey = K
-popup-select-microphone =
-    .value = Mikrofon att dela:
-    .accesskey = M
 popup-select-camera-device =
     .value = Kamera:
     .accesskey = K
@@ -399,14 +380,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Ljudenhet
 popup-all-windows-shared = Alla synliga fönster på din skärm kommer att delas.
-popup-screen-sharing-not-now =
-    .label = Inte nu
-    .accesskey = n
-popup-screen-sharing-never =
-    .label = Tillåt aldrig
-    .accesskey = T
-popup-silence-notifications-checkbox = Inaktivera aviseringar från { -brand-short-name } när du delar
-popup-silence-notifications-checkbox-warning = { -brand-short-name } kommer inte att visa aviseringar medan du delar.
 popup-screen-sharing-block =
     .label = Blockera
     .accesskey = B
@@ -430,14 +403,10 @@ enable-devtools-popup-description = För att använda tangentbordskommandot F12,
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Sök eller ange adress
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Sök eller ange adress
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Webbläsaren är fjärrstyrd
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -486,8 +455,6 @@ urlbar-go-button =
     .tooltiptext = Gå till adressen i adressfältet
 urlbar-page-action-button =
     .tooltiptext = Åtgärder för sida
-urlbar-pocket-button =
-    .tooltiptext = Spara till { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -692,6 +659,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Anpassa verktygsfält…
     .accesskey = n
+toolbar-button-email-link =
+    .label = E-posta länk
+    .tooltiptext = Mejla en länk till denna sidan
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Spara sida
+    .tooltiptext = Spara denna sida ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Öppna fil
+    .tooltiptext = Öppna en fil ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Synkade flikar
+    .tooltiptext = Visa flikar från andra enheter
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Nytt privat fönster
+    .tooltiptext = Öppna ett nytt privat fönster ({ $shortcut })
 
 ## EME notification panel
 
@@ -742,6 +730,49 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Visa inte det här meddelandet när popup-fönster blockeras
     .accesskey = D
+edit-popup-settings =
+    .label = Hantera popup-inställningar...
+    .accesskey = p
 picture-in-picture-hide-toggle =
     .label = Dölj bild-i-bild växling
     .accesskey = D
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navigering
+navbar-downloads =
+    .label = Filhämtaren
+navbar-overflow =
+    .tooltiptext = Fler verktyg…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Skriv ut
+    .tooltiptext = Skriv ut denna sida… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Skriv ut
+    .tooltiptext = Skriv ut denna sida
+navbar-home =
+    .label = Startsida
+    .tooltiptext = { -brand-short-name } Hemsida
+navbar-library =
+    .label = Bibliotek
+    .tooltiptext = Visa historik, sparade bokmärken och mer
+navbar-search =
+    .title = Sök
+navbar-accessibility-indicator =
+    .tooltiptext = Tillgänglighetsfunktioner aktiverade
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Webbläsarflikar
+tabs-toolbar-new-tab =
+    .label = Ny flik
+tabs-toolbar-list-all-tabs =
+    .label = Lista alla flikar
+    .tooltiptext = Lista alla flikar

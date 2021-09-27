@@ -58,6 +58,12 @@ account-provisioner-button = 註冊新的電子郵件地址
 account-setup-password-toggle =
     .title = 顯示/隱藏密碼
 
+account-setup-password-toggle-show =
+    .title = 顯示密碼明碼
+
+account-setup-password-toggle-hide =
+    .title = 隱藏密碼
+
 account-setup-remember-password = 記住密碼
     .accesskey = m
 
@@ -307,6 +313,21 @@ exchange-dialog-question = { -brand-short-name } 找到您在 { $domain } 的帳
 exchange-dialog-confirm-button = 登入
 
 exchange-dialog-cancel-button = 取消
+
+## Dismiss account creation dialog
+
+exit-dialog-title = 未設定電子郵件帳號
+
+exit-dialog-description = 您確定要取消設定過程嗎？不設定郵件帳號還是可以使用 { -brand-short-name }，但無法提供許多功能。
+
+account-setup-no-account-checkbox = 不設定電子郵件帳號，繼續使用 { -brand-short-name }
+    .accesskey = U
+
+exit-dialog-cancel-button = 繼續設定
+    .accesskey = C
+
+exit-dialog-confirm-button = 結束設定
+    .accesskey = E
 
 ## Alert dialogs
 

@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Gebrûk ynstekker beheare
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Dielen fan jo kamera en/of mikrofoan mei de website beheare
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Dielen fan jo oare lûdsprekkers mei de website beheare
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Paniel automatysk ôfspylje iepenje
 urlbar-persistent-storage-notification-anchor =
@@ -156,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Tafoegje oan adresbalke
 page-action-manage-extension =
     .label = Utwreiding beheare…
-page-action-remove-from-urlbar =
-    .label = Fuortsmite fan adresbalke
 page-action-remove-extension =
     .label = Utwreiding fuortsmite
 
@@ -179,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Diskear sykje mei:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Sykynstellingen wizigje
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Sykynstellingen wizigje
 search-one-offs-context-open-new-tab =
@@ -246,8 +242,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = By bewarjen editor toane
     .accesskey = e
-bookmark-panel-done-button =
-    .label = Klear
 bookmark-panel-save-button =
     .label = Bewarje
 # Width of the bookmark panel.
@@ -277,8 +271,6 @@ identity-passive-loaded = Underdielen fan dizze side binne net befeilige (lykas 
 identity-active-loaded = Jo hawwe befeiliging op dizze side útskeakele.
 identity-weak-encryption = Dizze side brûkt swakke befeiliging.
 identity-insecure-login-forms = Ynfierde oanmeldingen op dizze side soene oernommen wurde kinne.
-identity-permissions =
-    .value = Tastimmingen
 identity-https-only-connection-upgraded = (opwurdearre nei HTTPS)
 identity-https-only-label = Allinnich-HTTPS-modus
 identity-https-only-dropdown-on =
@@ -294,7 +286,6 @@ identity-permissions-storage-access-header = Cross-sitecookies
 identity-permissions-storage-access-hint = Dizze partijen kinne wylst jo besite oan dizze website cross-sitecookies en websitegegevens brûke.
 identity-permissions-storage-access-learn-more = Mear ynfo
 identity-permissions-reload-hint = It is mooglik dat jo de side opnij lade moatte om de wizigingen aktyf te meitsjen.
-identity-permissions-empty = Jo hawwe dizze website gjin spesjale tastimmingen jûn.
 identity-clear-site-data =
     .label = Cookies en websitegegevens wiskje…
 identity-connection-not-secure-security-view = Jo hawwe in ûnbefeilige ferbining mei dizze website.
@@ -379,12 +370,6 @@ bookmarks-toolbar-empty-message = Pleats foar snelle tagong jo blêdwizers hjir 
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Kamera om te dielen:
-    .accesskey = K
-popup-select-microphone =
-    .value = Mikrofoan om te dielen:
-    .accesskey = M
 popup-select-camera-device =
     .value = Kamera:
     .accesskey = K
@@ -398,14 +383,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Lûdsprekkers
 popup-all-windows-shared = Alle sichtbere finsters op jo skerm sille dield wurde.
-popup-screen-sharing-not-now =
-    .label = No net
-    .accesskey = t
-popup-screen-sharing-never =
-    .label = Nea tastean
-    .accesskey = a
-popup-silence-notifications-checkbox = Notifikaasjes fan { -brand-short-name } útskeakelje wylst dielen
-popup-silence-notifications-checkbox-warning = { -brand-short-name } toant gjin meldingen wylst jo diele.
 popup-screen-sharing-block =
     .label = Blokkearje
     .accesskey = B
@@ -429,14 +406,10 @@ enable-devtools-popup-description = Iepenje earst DevTools yn it menu Webûntwik
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Fier in sykterm of adres yn
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Fier in sykterm of adres yn
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Browser wurdt op ôfstân bestjoerd
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -485,8 +458,6 @@ urlbar-go-button =
     .tooltiptext = It adres yn de lokaasjebalke iepenje
 urlbar-page-action-button =
     .tooltiptext = Side-aksjes
-urlbar-pocket-button =
-    .tooltiptext = Bewarje nei { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -545,6 +516,16 @@ urlbar-result-action-search-tabs = Ljepblêden trochsykje
 
 ## Labels shown above groups of urlbar results
 
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = { $engine }-suggestjes
 
 ## Full Screen and Pointer Lock UI
 
@@ -681,6 +662,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Arkbalke wizigje…
     .accesskey = A
+toolbar-button-email-link =
+    .label = Keppeling e-maile
+    .tooltiptext = Keppeling nei dizze side e-maile
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = ­Side bewarje
+    .tooltiptext = Dizze side bewarje ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = ­Bestân iepenje
+    .tooltiptext = Bestân iepenje ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Syngroane ljepblêden
+    .tooltiptext = Ljepblêden fan oare apparaten toane
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Nij priveefinster
+    .tooltiptext = Iepenje in nij priveenavigaasjefinster ({ $shortcut })
 
 ## EME notification panel
 
@@ -710,6 +712,9 @@ remote-tabs-sync-now = No syngronisearje
 
 ##
 
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Mear…
 ui-tour-info-panel-close =
     .tooltiptext = Slute
 
@@ -728,6 +733,49 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Dit berjocht net toane as pop-upfinsters blokkearre wurde
     .accesskey = b
+edit-popup-settings =
+    .label = Pop-upynstellingen beheare…
+    .accesskey = b
 picture-in-picture-hide-toggle =
     .label = Ofbylding-yn-ôfbylding-skeakeler ferstopje
     .accesskey = O
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navigaasje
+navbar-downloads =
+    .label = Downloads
+navbar-overflow =
+    .tooltiptext = Mear ark…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Ofdrukke
+    .tooltiptext = Dizze side ôfdrukke… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Ofdrukke
+    .tooltiptext = Dizze side ôfdrukke
+navbar-home =
+    .label = Begjinside
+    .tooltiptext = { -brand-short-name }-startside
+navbar-library =
+    .label = Biblioteek
+    .tooltiptext = Skiednis, bewarre blêdwizers en mear besjen
+navbar-search =
+    .title = Sykje
+navbar-accessibility-indicator =
+    .tooltiptext = Tagonklikheidsfunksjes ynskeakele
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Browserljepblêden
+tabs-toolbar-new-tab =
+    .label = Nij ljepblêd
+tabs-toolbar-list-all-tabs =
+    .label = Alle ljepblêdtitels werjaan
+    .tooltiptext = Alle ljepblêdtitels werjaan

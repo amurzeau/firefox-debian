@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Zamknij panel boczny
+
+sidebar-close-button =
+    .tooltiptext = Zamyka panel boczny

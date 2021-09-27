@@ -5,9 +5,6 @@
 places-open =
     .label = Abrir
     .accesskey = A
-places-open-tab =
-    .label = Abrir num novo separador
-    .accesskey = s
 places-open-in-tab =
     .label = Abrir num novo separador
     .accesskey = v
@@ -17,26 +14,6 @@ places-open-all-bookmarks =
 places-open-all-in-tabs =
     .label = Abrir tudo em separadores
     .accesskey = o
-places-open-window =
-    .label = Abrir numa nova janela
-    .accesskey = n
-places-open-private-window =
-    .label = Abrir numa nova janela privada
-    .accesskey = p
-
-places-new-bookmark =
-    .label = Novo marcador…
-    .accesskey = m
-places-new-folder-contextmenu =
-    .label = Nova pasta…
-    .accesskey = p
-places-new-folder =
-    .label = Nova pasta…
-    .accesskey = a
-places-new-separator =
-    .label = Novo separador
-    .accesskey = s
-
 places-open-in-window =
     .label = Abrir numa nova janela
     .accesskey = j
@@ -87,10 +64,6 @@ places-delete-domain-data =
 places-sortby-name =
     .label = Ordenar por nome
     .accesskey = r
-places-properties =
-    .label = Propriedades
-    .accesskey = i
-
 # places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
 places-edit-bookmark =
     .label = Editar marcador…
@@ -108,6 +81,17 @@ places-remove-folder =
            *[other] Remover pastas
         }
     .accesskey = m
+
+places-edit-folder2 =
+    .label = Editar pasta…
+    .accesskey = i
+places-delete-folder =
+    .label =
+        { $count ->
+            [1] Eliminar pasta
+           *[other] Eliminar pastas
+        }
+    .accesskey = l
 
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
@@ -131,6 +115,24 @@ places-remove-bookmark =
         }
     .accesskey = e
 
+# Variables:
+# $count (number) - The number of elements being selected for removal.
+places-delete-bookmark =
+    .label =
+        { $count ->
+            [1] Eliminar marcador
+           *[other] Eliminar marcadores
+        }
+    .accesskey = l
+
 places-manage-bookmarks =
     .label = Gerir marcadores
     .accesskey = m
+
+places-forget-about-this-site-confirmation-title = Esquecer este site
+
+# Variables:
+# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
+places-forget-about-this-site-confirmation-message = Esta ação irá remover todos os dados relativos a { $hostOrBaseDomain } incluindo histórico, palavras-passe, cookies, cache e preferências de conteúdo. Tem a certeza que pretende continuar?
+
+places-forget-about-this-site-forget = Esquecer

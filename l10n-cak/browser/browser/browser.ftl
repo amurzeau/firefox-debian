@@ -156,12 +156,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Titz'aqatisäx ri Kikajtz'ik Ochochib'äl
 page-action-manage-extension =
     .label = Tinuk'samajïx K'amal…
-page-action-remove-from-urlbar =
-    .label = Tiyuj el chupam ri Kikajtz'ik Ochoch
 page-action-remove-extension =
     .label = Tiyuj K'amal
 
@@ -179,10 +175,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Wakami takanoj pa:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Kek'ëx ri taq rajowaxïk ri kanoxïk
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Tijal kinuk'ulem kanob'äl
 search-one-offs-context-open-new-tab =
@@ -246,8 +238,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Tik'ut k'exob'äl toq niyak
     .accesskey = k
-bookmark-panel-done-button =
-    .label = Xk'is
 bookmark-panel-save-button =
     .label = Tiyak
 # Width of the bookmark panel.
@@ -277,8 +267,6 @@ identity-passive-loaded = K'o man ütz ta taq ruch'akulal re ruxaq re' (achi'el 
 identity-active-loaded = Xachüp ruchajixik re ruxaq re'.
 identity-weak-encryption = Re ruxaq re' nrokisaj yamayïk chi suq'ch'ab'äl.
 identity-insecure-login-forms = Kitikirib'al taq molojri'ïl etz'ib'an pa re ruxaq k'amaya'l re' rik'in jub'a' ye'itzelan.
-identity-permissions =
-    .value = Taq ya'oj q'ij
 identity-https-only-connection-upgraded = (xk'expa HTTPS)
 identity-https-only-label = HTTPS-Only B'anikil
 identity-https-only-dropdown-on =
@@ -294,7 +282,6 @@ identity-permissions-storage-access-header = Kicookies xoch'in taq ruxaq
 identity-permissions-storage-access-hint = Re taq peraj re' yetikïr nikokisaj kikokies xoch'in taq ruxaq chuqa' kitzij taq ruxaq toq at k'o pa re ruxaq.
 identity-permissions-storage-access-learn-more = Tetamäx ch'aqa' chik
 identity-permissions-reload-hint = Rik'in jub'a' k'o chi yatok chik pa ruxaq richin yesamäj ri taq k'exoj.
-identity-permissions-empty = Majun chi ya'oj q'ij ya'on chawe' pa re ruxaq k'amaya'l re'.
 identity-clear-site-data =
     .label = Keyuj ri Kaxlanwäy chuqa' Kitzij Ruxaq K'amaya'l…
 identity-connection-not-secure-security-view = Man ütz ta ri awokem pa re ruxaq k'amaya'l re'.
@@ -379,12 +366,6 @@ bookmarks-toolbar-empty-message = Richin jun anin okem, ke'awila' ri taq ayaketa
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Rutaluxik elesäy wachib'äl
-    .accesskey = e
-popup-select-microphone =
-    .value = Q'asäy ch'ab'äl richin rutaluxik:
-    .accesskey = Q
 popup-select-camera-device =
     .value = Elesäy wachib'äl:
     .accesskey = E
@@ -398,14 +379,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Ch'ab'anela'
 popup-all-windows-shared = Xkekomonïx konojel ri tz'etel taq tzuwäch e k'o pa ri ruwäch.
-popup-screen-sharing-not-now =
-    .label = Wakami Mani
-    .accesskey = W
-popup-screen-sharing-never =
-    .label = Majub'ey Tiya' Q'ij
-    .accesskey = M
-popup-silence-notifications-checkbox = Kechup taq rutzijol { -brand-short-name } toq nikomonïx
-popup-silence-notifications-checkbox-warning = Man xkeruk'üt ta pe taq tzijol ri { -brand-short-name } toq nikomonin.
 popup-screen-sharing-block =
     .label = Tiq'at
     .accesskey = T
@@ -429,14 +402,10 @@ enable-devtools-popup-description = Richin nokisäx ri F12 chojokem, nab'ey taja
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Tikanöx o titz'ib'äx ochochib'äl
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Tikanöx o titz'ib'äx ochochib'äl
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Ri Okik'amaya'l k'o pa ruq'a' ri näj chajinïk
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -485,8 +454,6 @@ urlbar-go-button =
     .tooltiptext = Tib'e pa JAY richin ri rucholob'al taq ochochib'äl
 urlbar-page-action-button =
     .tooltiptext = Taq rub'anoj ruxaq
-urlbar-pocket-button =
-    .tooltiptext = Tiyak pa { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -545,6 +512,10 @@ urlbar-result-action-search-tabs = Kekanöx taq Ruwi'
 
 ## Labels shown above groups of urlbar results
 
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
 
 ## Full Screen and Pointer Lock UI
 
@@ -681,6 +652,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Tichinäx ri kikajtz'ik taq samajib'äl…
     .accesskey = T
+toolbar-button-email-link =
+    .label = Ximonel taqoya'l
+    .tooltiptext = Titaq pa taqoya'l jun ximöy pa re ruxaq re'
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Tiyak Ruxaq
+    .tooltiptext = Tiyak re ruxaq re' ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Tijaq Yakb'äl
+    .tooltiptext = Tijaq yakb'äl ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Ximon taq ruwi'
+    .tooltiptext = Kek'ut pe ri taq ruwi' e k'o pa ch'aqa' chik taq okisaxel
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = K'ak'a' ichinan tzuwäch
+    .tooltiptext = Tijaq jun k'ak'a' rutzuwäch ichinan okik'amaya'l ({ $shortcut })
 
 ## EME notification panel
 
@@ -710,6 +702,9 @@ remote-tabs-sync-now = Tixim Wakami
 
 ##
 
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Ch'aqa' chik…
 ui-tour-info-panel-close =
     .tooltiptext = Titz'apïx
 
@@ -731,3 +726,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Tewäx Rupitz'b'al Picture-in-Picture
     .accesskey = T
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Okem pa k'amaya'l
+navbar-downloads =
+    .label = Taq qasanïk
+navbar-overflow =
+    .tooltiptext = Ch'aqa' chik Samajib'äl…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Titz'ajb'äx
+    .tooltiptext = Titz'ajb'äx re ruxaq re'… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Titz'ajb'äx
+    .tooltiptext = Titz'ajb'äx re ruxaq re'
+navbar-home =
+    .label = Tikirib'äl
+    .tooltiptext = { -brand-short-name } Rutikirib'al Ruxaq
+navbar-library =
+    .label = Wujb'äl
+    .tooltiptext = Titz'et ri natab'äl, yakon taq yaketal, chuqa' ch'aqa' chik
+navbar-search =
+    .title = Tikanöx
+navbar-accessibility-indicator =
+    .tooltiptext = Etzijon ri taq Rub'anikil Okem
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Ruwi' kanonel
+tabs-toolbar-new-tab =
+    .label = K'ak'a' Ruwi'
+tabs-toolbar-list-all-tabs =
+    .label = Kecholajïx ronojel taq ruwi'
+    .tooltiptext = Kecholajïx ronojel taq ruwi'

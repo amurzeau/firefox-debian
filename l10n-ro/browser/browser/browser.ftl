@@ -156,12 +156,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Adaugă în bara de adresă
 page-action-manage-extension =
     .label = Gestionează extensia…
-page-action-remove-from-urlbar =
-    .label = Elimină din bara de adresă
 page-action-remove-extension =
     .label = Elimină extensia
 
@@ -179,10 +175,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = De data aceasta, caută cu:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Schimbă setările de căutare
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Schimbă setările de căutare
 search-one-offs-context-open-new-tab =
@@ -247,8 +239,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Afișează editorul la salvare
     .accesskey = S
-bookmark-panel-done-button =
-    .label = Terminat
 bookmark-panel-save-button =
     .label = Salvează
 # Width of the bookmark panel.
@@ -278,13 +268,10 @@ identity-passive-loaded = Unele părți din pagină nu sunt sigure (cum ar fi im
 identity-active-loaded = Ai dezactivat protecția pe această pagină.
 identity-weak-encryption = Această pagină folosește criptare slabă.
 identity-insecure-login-forms = Datele de autentificare introduse pe această pagină ar putea fi compromise.
-identity-permissions =
-    .value = Permisiuni
 identity-https-only-label = Mod doar HTTPS
 identity-https-only-info-turn-on2 = Activează modul doar HTTPS pentru acest site dacă vrei ca { -brand-short-name } să actualizeze conexiunea atunci când este posibil.
 identity-permissions-storage-access-learn-more = Află mai multe
 identity-permissions-reload-hint = Ar putea fi nevoie să reîncarci pagina pentru a aplica modificările.
-identity-permissions-empty = Nu ai acordat acestui site nicio permisiune specială.
 identity-clear-site-data =
     .label = Șterge cookie-urile și datele site-urilor…
 identity-connection-not-secure-security-view = Nu ești conectat în mod securizat la acest site.
@@ -344,21 +331,7 @@ browser-import-button2 =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Camera spre partajare:
-    .accesskey = C
-popup-select-microphone =
-    .value = Microfonul spre partajare:
-    .accesskey = M
 popup-all-windows-shared = Toate ferestrele vizibile pe ecran vor fi partajate.
-popup-screen-sharing-not-now =
-    .label = Nu acum
-    .accesskey = w
-popup-screen-sharing-never =
-    .label = Nu permite niciodată
-    .accesskey = N
-popup-silence-notifications-checkbox = Dezactivează notificările de la { -brand-short-name } în timpul partajărilor
-popup-silence-notifications-checkbox-warning = { -brand-short-name } nu va afișa notificări în timpul partajărilor.
 
 ## WebRTC window or screen share tab switch warning
 
@@ -375,14 +348,10 @@ enable-devtools-popup-description = Pentru a folosi comanda rapidă F12, deschid
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Caută sau introdu adresa
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Caută sau introdu adresa
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Browserul este controlat de la distanță
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -426,8 +395,6 @@ urlbar-go-button =
     .tooltiptext = Mergi la adresa din bara de adrese
 urlbar-page-action-button =
     .tooltiptext = Acțiuni pe pagină
-urlbar-pocket-button =
-    .tooltiptext = Salvează în { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -467,10 +434,6 @@ urlbar-result-action-search-tabs = Caută file
 
 ## Labels shown above groups of urlbar results
 
-# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
-# urlbar results.
-urlbar-group-firefox-suggest =
-    .label = { -firefox-suggest-brand-name }
 
 ## Full Screen and Pointer Lock UI
 
@@ -597,6 +560,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Personalizează bara de instrumente…
     .accesskey = C
+toolbar-button-email-link =
+    .label = Trimite e-mail cu linkul
+    .tooltiptext = Trimite un e-mail cu linkul către acestă pagină
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Salvează pagina
+    .tooltiptext = Salvează această pagină ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Deschide fișier
+    .tooltiptext = Deschide un fișier ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = File sincronizate
+    .tooltiptext = Afișează file de pe alte dispozitive
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Fereastră privată nouă
+    .tooltiptext = Deschide o fereastră nouă de navigare privată ({ $shortcut })
 
 ## EME notification panel
 
@@ -610,6 +594,10 @@ eme-notifications-drm-content-playing-dismiss-accesskey = D
 
 ## Add-on removal warning
 
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Elimini { $name }?
+addon-removal-abuse-report-checkbox = Raportează această extensie la { -vendor-short-name }
 
 ## Remote / Synced tabs
 
@@ -640,3 +628,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Ascunde comutatorul Picture-in-Picture
     .accesskey = H
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navigare
+navbar-downloads =
+    .label = Descărcări
+navbar-overflow =
+    .tooltiptext = Mai multe instrumente…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Tipărește
+    .tooltiptext = Tipărește pagina… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Tipărește
+    .tooltiptext = Tipărește pagina
+navbar-home =
+    .label = Pagină de start
+    .tooltiptext = Pagina de start { -brand-short-name }
+navbar-library =
+    .label = Bibliotecă
+    .tooltiptext = Vezi istoricul, marcajele salvate și multe altele
+navbar-search =
+    .title = Caută
+navbar-accessibility-indicator =
+    .tooltiptext = Funcții de accesibilitate activate
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Filele browserului
+tabs-toolbar-new-tab =
+    .label = Filă nouă
+tabs-toolbar-list-all-tabs =
+    .label = Listează toate filele
+    .tooltiptext = Listează toate filele

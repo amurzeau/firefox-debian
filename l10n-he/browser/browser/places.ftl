@@ -5,9 +5,6 @@
 places-open =
     .label = פתיחה
     .accesskey = פ
-places-open-tab =
-    .label = פתיחה בלשונית חדשה
-    .accesskey = ל
 places-open-in-tab =
     .label = פתיחה בלשונית חדשה
     .accesskey = ל
@@ -17,26 +14,6 @@ places-open-all-bookmarks =
 places-open-all-in-tabs =
     .label = פתיחת הכל בלשוניות
     .accesskey = פ
-places-open-window =
-    .label = פתיחה בחלון חדש
-    .accesskey = ח
-places-open-private-window =
-    .label = פתיחה בחלון פרטי חדש
-    .accesskey = פ
-
-places-new-bookmark =
-    .label = סימנייה חדשה…
-    .accesskey = ס
-places-new-folder-contextmenu =
-    .label = תיקייה חדשה…
-    .accesskey = ת
-places-new-folder =
-    .label = תיקייה חדשה…
-    .accesskey = ח
-places-new-separator =
-    .label = קו מפריד חדש
-    .accesskey = ק
-
 places-open-in-window =
     .label = פתיחה בחלון חדש
     .accesskey = ת
@@ -87,10 +64,6 @@ places-delete-domain-data =
 places-sortby-name =
     .label = מיון לפי שם
     .accesskey = מ
-places-properties =
-    .label = מאפיינים
-    .accesskey = מ
-
 # places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
 places-edit-bookmark =
     .label = עריכת סימנייה…
@@ -108,6 +81,18 @@ places-remove-folder =
            *[other] הסרת תיקיות
         }
     .accesskey = ס
+
+places-edit-folder2 =
+    .label = עריכת תיקייה…
+    .accesskey = ת
+places-delete-folder =
+    .label =
+        { $count ->
+            [1] מחיקת תיקייה
+            [one] מחיקת תיקייה
+           *[other] מחיקת תיקיות
+        }
+    .accesskey = מ
 
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
@@ -130,6 +115,25 @@ places-remove-bookmark =
         }
     .accesskey = ס
 
+# Variables:
+# $count (number) - The number of elements being selected for removal.
+places-delete-bookmark =
+    .label =
+        { $count ->
+            [1] מחיקת סימנייה
+            [one] מחיקת סימנייה
+           *[other] מחיקת סימניות
+        }
+    .accesskey = מ
+
 places-manage-bookmarks =
     .label = ניהול סימניות
     .accesskey = נ
+
+places-forget-about-this-site-confirmation-title = לשכוח מאתר זה
+
+# Variables:
+# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
+places-forget-about-this-site-confirmation-message = פעולה זו תסיר את כל הנתונים הקשורים ל־{ $hostOrBaseDomain } כולל היסטוריה, ססמאות, עוגיות, מטמון והעדפות תוכן. האם ברצונך להמשיך?
+
+places-forget-about-this-site-forget = לשכוח

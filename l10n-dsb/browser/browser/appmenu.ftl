@@ -12,25 +12,30 @@ appmenuitem-update-banner3 =
     .label-update-unsupported = Aktulaizacija njejo móžna – system jo inkompatibelny
     .label-update-restart = Aktualizacija k dispoziciji – něnto znowego startowaś
 appmenuitem-protection-dashboard-title = Pśeglěd šćitow
-appmenuitem-customize-mode =
-    .label = Pśiměriś…
-
-## Zoom Controls
-
 appmenuitem-new-tab =
     .label = Nowy rejtarik
 appmenuitem-new-window =
     .label = Nowe wokno
 appmenuitem-new-private-window =
     .label = Nowe priwatne wokno
+appmenuitem-history =
+    .label = Historija
+appmenuitem-downloads =
+    .label = Ześěgnjenja
 appmenuitem-passwords =
     .label = Gronidła
 appmenuitem-addons-and-themes =
     .label = Dodanki a drastwy
+appmenuitem-print =
+    .label = Śišćaś…
 appmenuitem-find-in-page =
     .label = Na boku pytaś…
+appmenuitem-zoom =
+    .value = Skalěrowaś
 appmenuitem-more-tools =
     .label = Dalšne rědy
+appmenuitem-help =
+    .label = Pomoc
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -59,13 +64,29 @@ appmenuitem-fullscreen =
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
-fxa-toolbar-sync-now =
-    .label = Něnto synchronizěrowaś
 appmenu-remote-tabs-sign-into-sync =
     .label = Pla Sync pśizjawiś…
 appmenu-remote-tabs-turn-on-sync =
     .label = Sync zmóžniś…
+# This is shown after the tabs list if we can display more tabs by clicking on the button
+appmenu-remote-tabs-showmore =
+    .label = Dalšne rejtariki pokazaś
+    .tooltiptext = Dalšne rejtariki z toś togo rěda pokazaś
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = Žedne wócynjone rejtariki
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = Synchronizěrowanje rejtarikow zašaltowaś, aby se lisćina rejtarikow z drugich rědow pokazała.
+appmenu-remote-tabs-opensettings =
+    .label = Nastajenja
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = Cośo how swóje rejtariki z drugich rědow wiźeś?
+appmenu-remote-tabs-connectdevice =
+    .label = Drugi rěd zwězaś
+appmenu-remote-tabs-welcome = Woglědajśo se lisćinu rejtarikow ze swójich rědow.
+appmenu-remote-tabs-unverified = Wašo konto musy se wobkšuśiś.
 appmenuitem-fxa-toolbar-sync-now2 = Něnto synchronizěrowaś
+appmenuitem-fxa-sign-in = Pla { -brand-product-name } pśizjawiś
 appmenuitem-fxa-manage-account = Konto zastojaś
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables

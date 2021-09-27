@@ -12,25 +12,30 @@ appmenuitem-update-banner3 =
     .label-update-unsupported = Не удалось выполнить обновление — несовместимая система
     .label-update-restart = Доступно обновление — перезапустить сейчас
 appmenuitem-protection-dashboard-title = Панель состояния защиты
-appmenuitem-customize-mode =
-    .label = Настройка…
-
-## Zoom Controls
-
 appmenuitem-new-tab =
     .label = Новая вкладка
 appmenuitem-new-window =
     .label = Новое окно
 appmenuitem-new-private-window =
     .label = Новое приватное окно
+appmenuitem-history =
+    .label = Журнал
+appmenuitem-downloads =
+    .label = Загрузки
 appmenuitem-passwords =
     .label = Пароли
 appmenuitem-addons-and-themes =
     .label = Дополнения и темы
+appmenuitem-print =
+    .label = Печать…
 appmenuitem-find-in-page =
     .label = Найти на странице…
+appmenuitem-zoom =
+    .value = Масштаб
 appmenuitem-more-tools =
     .label = Другие инструменты
+appmenuitem-help =
+    .label = Справка
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -59,13 +64,29 @@ appmenuitem-fullscreen =
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
-fxa-toolbar-sync-now =
-    .label = Синхронизировать
 appmenu-remote-tabs-sign-into-sync =
     .label = Войти в Синхронизацию…
 appmenu-remote-tabs-turn-on-sync =
     .label = Включить синхронизацию…
+# This is shown after the tabs list if we can display more tabs by clicking on the button
+appmenu-remote-tabs-showmore =
+    .label = Показать больше вкладок
+    .tooltiptext = Показать больше вкладок с этого устройства
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = Нет открытых вкладок
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = Включите синхронизацию вкладок, чтобы увидеть список вкладок с других устройств.
+appmenu-remote-tabs-opensettings =
+    .label = Настройки
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = Хотите увидеть здесь ваши вкладки с других устройств?
+appmenu-remote-tabs-connectdevice =
+    .label = Подключить другое устройство
+appmenu-remote-tabs-welcome = Просмотрите список вкладок с других устройств.
+appmenu-remote-tabs-unverified = Ваш аккаунт должен быть подтверждён.
 appmenuitem-fxa-toolbar-sync-now2 = Синхронизировать
+appmenuitem-fxa-sign-in = Войти в { -brand-product-name }
 appmenuitem-fxa-manage-account = Управление аккаунтом
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables

@@ -24,6 +24,14 @@ permissions-allow =
     .label = Рұқсат ету
     .accesskey = е
 
+permissions-button-off =
+    .label = Сөндіру
+    .accesskey = д
+
+permissions-button-off-temporarily =
+    .label = Уақытша сөндіру
+    .accesskey = т
+
 permissions-site-name =
     .label = Веб сайт
 
@@ -37,14 +45,6 @@ permissions-remove =
 permissions-remove-all =
     .label = Барлық вебсайттарды өшіру
     .accesskey = р
-
-permissions-button-cancel =
-    .label = Бас тарту
-    .accesskey = т
-
-permissions-button-ok =
-    .label = Өзгерістерді сақтау
-    .accesskey = с
 
 permission-dialog =
     .buttonlabelaccept = Өзгерістерді сақтау
@@ -76,6 +76,11 @@ permissions-capabilities-listitem-block =
 permissions-capabilities-listitem-allow-session =
     .value = Тек осы сессияға рұқсат ету
 
+permissions-capabilities-listitem-off =
+    .value = Сөндіру
+permissions-capabilities-listitem-off-temporarily =
+    .value = Уақытша сөндіру
+
 ## Invalid Hostname Dialog
 
 permissions-invalid-uri-title = Енгізілген сервер аты қате
@@ -96,6 +101,7 @@ permissions-exceptions-cookie-window =
 permissions-exceptions-cookie-desc = Қай веб-сайттарға cookies файлдарын және сайт деректерін сақтауға әрқашан немесе ешқашан рұқсат етілмегенін көрсете аласыз. Басқару үшін сайттың нақты адресін енгізіп, Бұғаттау, Тек осы сессияға рұқсат беру немесе Рұқсат етуді таңдаңыз.
 
 ## Exceptions - HTTPS-Only Mode
+
 
 ## Exceptions - Pop-ups
 

@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = 添加到地址栏
 page-action-manage-extension =
     .label = 管理扩展…
-page-action-remove-from-urlbar =
-    .label = 从地址栏移除
 page-action-remove-extension =
     .label = 移除扩展
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = 本次搜索使用：
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = 更改搜索设置
 search-one-offs-change-settings-compact-button =
     .tooltiptext = 更改搜索设置
 search-one-offs-context-open-new-tab =
@@ -246,8 +238,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = 保存时显示编辑器
     .accesskey = S
-bookmark-panel-done-button =
-    .label = 完成
 bookmark-panel-save-button =
     .label = 保存
 # Width of the bookmark panel.
@@ -277,8 +267,6 @@ identity-passive-loaded = 此页面上部分内容不安全（例如图像）。
 identity-active-loaded = 您在此页面上已禁用保护。
 identity-weak-encryption = 此页面使用较弱加密。
 identity-insecure-login-forms = 在此网页上输入的登录信息可能会泄露。
-identity-permissions =
-    .value = 权限
 identity-https-only-connection-upgraded = （升级为 HTTPS）
 identity-https-only-label = HTTPS-Only 模式
 identity-https-only-dropdown-on =
@@ -294,7 +282,6 @@ identity-permissions-storage-access-header = 跨网站 Cookie
 identity-permissions-storage-access-hint = 当您在此网站上时，以下各方可以使用跨网站 Cookie 和网站数据。
 identity-permissions-storage-access-learn-more = 详细了解
 identity-permissions-reload-hint = 您可能需要重新载入此页面以应用更改。
-identity-permissions-empty = 您尚未授予此站点任何权限。
 identity-clear-site-data =
     .label = 清除 Cookie 和网站数据…
 identity-connection-not-secure-security-view = 您并未安全地连接至此网站。
@@ -376,12 +363,6 @@ bookmarks-toolbar-empty-message = 可将书签放在书签工具栏上，方便�
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = 共享的摄像头：
-    .accesskey = C
-popup-select-microphone =
-    .value = 共享的麦克风：
-    .accesskey = M
 popup-select-camera-device =
     .value = 摄像头：
     .accesskey = C
@@ -395,14 +376,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = 音频输出设备
 popup-all-windows-shared = 您的屏幕上的所有可见窗口都将被共享。
-popup-screen-sharing-not-now =
-    .label = 暂时不要
-    .accesskey = w
-popup-screen-sharing-never =
-    .label = 永不允许
-    .accesskey = N
-popup-silence-notifications-checkbox = 共享时，不显示 { -brand-short-name } 的通知
-popup-silence-notifications-checkbox-warning = { -brand-short-name } 将不会在共享时显示通知。
 popup-screen-sharing-block =
     .label = 阻止
     .accesskey = B
@@ -426,14 +399,10 @@ enable-devtools-popup-description = 请通过“Web 开发者”菜单打开开�
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = 搜索或输入网址
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = 搜索或输入网址
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = 浏览器正被远程控制
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -482,8 +451,6 @@ urlbar-go-button =
     .tooltiptext = 转到地址栏中指向的网址
 urlbar-page-action-button =
     .tooltiptext = 页面动作
-urlbar-pocket-button =
-    .tooltiptext = 保存到 { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -688,6 +655,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = 定制工具栏…
     .accesskey = C
+toolbar-button-email-link =
+    .label = 用邮件发送链接
+    .tooltiptext = 用邮件发送此页链接
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = 保存页面
+    .tooltiptext = 保存此页 ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = 打开文件
+    .tooltiptext = 打开文件 ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = 受同步标签页
+    .tooltiptext = 显示来自其他设备的标签页
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = 新建隐私窗口
+    .tooltiptext = 新建一个隐私浏览窗口 ({ $shortcut })
 
 ## EME notification panel
 
@@ -738,6 +726,49 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = 当弹出式窗口被拦截时不显示此消息
     .accesskey = D
+edit-popup-settings =
+    .label = 管理弹出式窗口设置…
+    .accesskey = M
 picture-in-picture-hide-toggle =
     .label = 隐藏画中画切换按钮
     .accesskey = H
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = 导航
+navbar-downloads =
+    .label = 下载
+navbar-overflow =
+    .tooltiptext = 更多工具…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = 打印
+    .tooltiptext = 打印此页… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = 打印
+    .tooltiptext = 打印当前页
+navbar-home =
+    .label = 主页
+    .tooltiptext = { -brand-short-name } 主页
+navbar-library =
+    .label = 我的足迹
+    .tooltiptext = 查看浏览历史、已保存的书签等
+navbar-search =
+    .title = 搜索
+navbar-accessibility-indicator =
+    .tooltiptext = 无障碍功能已启用
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = 浏览器标签页
+tabs-toolbar-new-tab =
+    .label = 新建标签页
+tabs-toolbar-list-all-tabs =
+    .label = 列出全部标签页
+    .tooltiptext = 列出全部标签页

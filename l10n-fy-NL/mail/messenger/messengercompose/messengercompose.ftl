@@ -6,9 +6,6 @@
 # Addressing widget
 
 #   $type (String) - the type of the addressing row
-remove-address-row-type = It fjild { $type } fuortsmite
-
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = It fjild { $type } fuortsmite
 
@@ -79,6 +76,11 @@ add-attachment-notification-reminder =
     .label = Bylage tafoegje…
     .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 
+add-attachment-notification-reminder2 =
+    .label = Bylage taheakje…
+    .accesskey = B
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+
 menuitem-attach-files =
     .label = Bestân(nen)…
     .accesskey = B
@@ -97,18 +99,6 @@ attachment-bucket-count =
            *[other] { $count } bylagen
         }
     .accesskey = l
-
-#   $count (Number) - the number of attachments in the attachment bucket
-attachments-placeholder-tooltip =
-    .tooltiptext =
-        { $count ->
-            [one] { $count } bylage
-           *[other] { $count } bylagen
-        }
-
-#   { attachment-bucket-count.accesskey } - Do not localize this message.
-key-toggle-attachment-pane =
-    .key = { attachment-bucket-count.accesskey }
 
 expand-attachment-pane-tooltip =
     .tooltiptext = It bylagefinster toane ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
@@ -142,6 +132,13 @@ move-attachment-last-panel-button =
 button-return-receipt =
     .label = Untfangstbefêstiging
     .tooltiptext = In ûntfangstbefêstiging foar dit berjocht freegje
+
+# Encryption
+
+message-to-be-signed-icon =
+    .alt = Berjocht ûndertekenje
+message-to-be-encrypted-icon =
+    .alt = Berjocht fersiferje
 
 # Addressing Area
 
@@ -187,6 +184,74 @@ bcc-compose-show-address-row-label =
 #   $count (Number) - the count of addresses in the "To" and "Cc" fields.
 many-public-recipients-info = De { $count } ûntfangers yn Oan en Cc sille de adressen fan de oaren sjen. Jo kinne foarkomme dat ûntfangers toand wurde troch yn stee hjirfan Bcc te brûken.
 
+to-address-row-label =
+    .value = Oan
+
+#   $key (String) - the shortcut key for this field
+show-to-row-main-menuitem =
+    .label = Oan-fjild
+    .accesskey = O
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+
+# No acceltext should be shown.
+# The label should match the show-to-row-button text.
+show-to-row-extra-menuitem =
+    .label = Oan
+    .accesskey = O
+
+#   $key (String) - the shortcut key for this field
+show-to-row-button = Oan
+    .title = Oan-fjild toane ({ ctrl-cmd-shift-pretty-prefix }{ $key })
+
+
+cc-address-row-label =
+    .value = Cc
+
+#   $key (String) - the shortcut key for this field
+show-cc-row-main-menuitem =
+    .label = Cc-fjild
+    .accesskey = C
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+
+# No acceltext should be shown.
+# The label should match the show-cc-row-button text.
+show-cc-row-extra-menuitem =
+    .label = Cc
+    .accesskey = C
+
+#   $key (String) - the shortcut key for this field
+show-cc-row-button = Cc
+    .title = Cc-fjild toane ({ ctrl-cmd-shift-pretty-prefix }{ $key })
+
+
+bcc-address-row-label =
+    .value = Bcc
+
+#   $key (String) - the shortcut key for this field
+show-bcc-row-main-menuitem =
+    .label = Bcc-fjild
+    .accesskey = B
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+
+# No acceltext should be shown.
+# The label should match the show-bcc-row-button text.
+show-bcc-row-extra-menuitem =
+    .label = Bcc
+    .accesskey = B
+
+#   $key (String) - the shortcut key for this field
+show-bcc-row-button = Bcc
+    .title = Bcc-fjild toane ({ ctrl-cmd-shift-pretty-prefix }{ $key })
+
+extra-address-rows-menu-button =
+    .title = Oare te toanen adresfjilden
+
+#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
+many-public-recipients-notice =
+    { $count ->
+        [one] Jo berjocht hat in iepenbiere ûntfanger. Jo kinne foarkomme dat ûntfangers toand wurde troch yn stee hjirfan Bcc te brûken.
+       *[other] De { $count } ûntfangers yn Oan en Cc sille de adressen fan de oaren sjen. Jo kinne foarkomme dat ûntfangers toand wurde troch yn stee hjirfan Bcc te brûken.
+    }
 many-public-recipients-bcc =
     .label = Yn stee dêrfan Bcc brûke
     .accesskey = Y
@@ -194,6 +259,18 @@ many-public-recipients-bcc =
 many-public-recipients-ignore =
     .label = Untfangers iepenbier litte
     .accesskey = i
+
+many-public-recipients-prompt-title = Te folle iepenbiere ûntfangers
+
+#   $count (Number) - the count of addresses in the public recipients fields.
+many-public-recipients-prompt-msg =
+    { $count ->
+        [one] Jo berjocht hat in iepenbiere ûntfanger. Dit kin in privacyprobleem wêze. Jo kinne dit foarkomme troch de ûntfanger yn stee fan Oan/Cc nei Bcc te ferpleatsen.
+       *[other] Jo berjocht hat { $count } iepenbiere ûntfangers, dy't inoars adressen sjen kinne. Dit kin in privacyprobleem wêze. Jo kinne dit foarkomme troch de ûntfanger yn stee fan Oan/Cc nei Bcc te ferpleatsen.
+    }
+
+many-public-recipients-prompt-cancel = Ferstjoeren annulearje
+many-public-recipients-prompt-send = Dochs ferstjoere
 
 ## Notifications
 

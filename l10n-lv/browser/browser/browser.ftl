@@ -133,12 +133,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Pievienot adreses joslai
 page-action-manage-extension =
     .label = Pārvaldīt paplašinājumu…
-page-action-remove-from-urlbar =
-    .label = Novākt no adreses joslas
 
 ## Auto-hide Context Menu
 
@@ -151,10 +147,6 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Mainīt meklēšanas iestatījumus
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Mainīt meklēšanas iestatījumus
 search-one-offs-context-open-new-tab =
@@ -194,8 +186,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Rādīt redaktoru, saglabājot
     .accesskey = S
-bookmark-panel-done-button =
-    .label = Gatavs
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -213,7 +203,6 @@ identity-active-loaded = Nedrošu elementu aizsardzība ir deaktivēta.
 identity-weak-encryption = Šī lapa izmanto vāju šifrēšanu.
 identity-insecure-login-forms = Dati, ko ievadīsiet šajā lapā nav aizsargāti un var tikt pārtverti.
 identity-permissions-reload-hint = Lai redzētu izmaiņas iespējams būs nepieciešama lapas pārlāde.
-identity-permissions-empty = Šai lapai nav piešķirtas nekādas īpašas atļaujas.
 identity-clear-site-data =
     .label = Notīrīt sīkdatnes un lapu datus…
 identity-remove-cert-exception =
@@ -260,12 +249,6 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Izvēlies kameru:
-    .accesskey = k
-popup-select-microphone =
-    .value = Izvēlies mikrofonu:
-    .accesskey = m
 popup-all-windows-shared = Visi uz ekrāna redzamie logi tiks koplietoti.
 
 ## WebRTC window or screen share tab switch warning
@@ -276,14 +259,10 @@ popup-all-windows-shared = Visi uz ekrāna redzamie logi tiks koplietoti.
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Ieraksti meklējamo tekstu vai mājas lapas adresi
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Ieraksti meklējamo tekstu vai mājas lapas adresi
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Pārlūks tiek attālināti kontrolēts
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -401,6 +380,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Pielāgot rīkjoslu…
     .accesskey = P
+toolbar-button-email-link =
+    .label = Nosūtīt saiti
+    .tooltiptext = Nosūtīt saiti epastā
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Saglabāt lapu
+    .tooltiptext = Saglabā šo lapu ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Atvērt failu
+    .tooltiptext = Atvērt failu ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Sinhronizētās cilnes
+    .tooltiptext = Parādīt cilnes no citām ierīcēm
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Jauns privātais logs
+    .tooltiptext = Atver jaunu privātās pārlūkošanas logu ({ $shortcut })
 
 ## EME notification panel
 
@@ -435,3 +435,38 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Nerādīt šo paziņojumu, bloķējot jaunos logus
     .accesskey = D
+
+# Navigator Toolbox
+
+navbar-downloads =
+    .label = Lejupielādes
+navbar-overflow =
+    .tooltiptext = Citi rīki…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Drukāt
+    .tooltiptext = Drukāt šo lapu… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Drukāt
+    .tooltiptext = Drukāt šo lapu
+navbar-home =
+    .label = Sākumlapa
+    .tooltiptext = { -brand-short-name } sākumlapa
+navbar-library =
+    .label = Bibliotēka
+    .tooltiptext = Skatīt vēsturi, saglabātās grāmatzīmes un daudz ko citu
+navbar-search =
+    .title = Meklēt
+navbar-accessibility-indicator =
+    .tooltiptext = Aktivēti pieejamības rīki
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Pārlūka cilnes
+tabs-toolbar-new-tab =
+    .label = Jauna cilne
+tabs-toolbar-list-all-tabs =
+    .label = Visu ciļņu saraksts
+    .tooltiptext = Visu ciļņu saraksts

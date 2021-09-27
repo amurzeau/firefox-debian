@@ -5,9 +5,6 @@
 places-open =
     .label = Wócyniś
     .accesskey = c
-places-open-tab =
-    .label = W nowem rejtariku wócyniś
-    .accesskey = r
 places-open-in-tab =
     .label = W nowem rejtarku wócyniś
     .accesskey = n
@@ -17,26 +14,6 @@ places-open-all-bookmarks =
 places-open-all-in-tabs =
     .label = Wšykne w rejtarikach wócyniś
     .accesskey = W
-places-open-window =
-    .label = W nowem woknje wócyniś
-    .accesskey = n
-places-open-private-window =
-    .label = W nowem priwatnem woknje wócyniś
-    .accesskey = r
-
-places-new-bookmark =
-    .label = Nowe cytańske znamje…
-    .accesskey = N
-places-new-folder-contextmenu =
-    .label = Nowy zarědnik…
-    .accesskey = r
-places-new-folder =
-    .label = Nowy zarědnik…
-    .accesskey = r
-places-new-separator =
-    .label = Nowa źěleńska linija
-    .accesskey = l
-
 places-open-in-window =
     .label = W nowem woknje wócyniś
     .accesskey = o
@@ -87,10 +64,6 @@ places-delete-domain-data =
 places-sortby-name =
     .label = Pó mjenje sortěrowaś
     .accesskey = m
-places-properties =
-    .label = Kakosći
-    .accesskey = K
-
 # places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
 places-edit-bookmark =
     .label = Cytańske znamje wobźěłaś…
@@ -111,6 +84,20 @@ places-remove-folder =
            *[other] Zarědniki wótwónoźeś
         }
     .accesskey = t
+
+places-edit-folder2 =
+    .label = Zarědnik wobźěłaś…
+    .accesskey = Z
+places-delete-folder =
+    .label =
+        { $count ->
+            [1] Zarědnik lašowaś
+            [one] Zarědnik lašowaś
+            [two] Zarědnika lašowaś
+            [few] Zarědniki lašowaś
+           *[other] Zarědniki lašowaś
+        }
+    .accesskey = l
 
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
@@ -136,6 +123,27 @@ places-remove-bookmark =
         }
     .accesskey = t
 
+# Variables:
+# $count (number) - The number of elements being selected for removal.
+places-delete-bookmark =
+    .label =
+        { $count ->
+            [1] Cytańske znamje lašowaś
+            [one] Cytańske znamje lašowaś
+            [two] Cytańskej znamjeni lašowaś
+            [few] Cytańske znamjenja lašowaś
+           *[other] Cytańske znamjenja lašowaś
+        }
+    .accesskey = l
+
 places-manage-bookmarks =
     .label = Cytańske znamjenja zastojaś
     .accesskey = C
+
+places-forget-about-this-site-confirmation-title = Toś to sedło zabyś
+
+# Variables:
+# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
+places-forget-about-this-site-confirmation-message = Toś ta akcija wšykne daty nastupajucy { $hostOrBaseDomain }, mjazy drugimi historiju, gronidła, cookieje, pufrowak a nastajenja wopśimjeśa, wótwónoźijo. Cośo napšawdu pókšacowaś?
+
+places-forget-about-this-site-forget = Zabyś

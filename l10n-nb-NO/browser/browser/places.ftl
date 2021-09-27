@@ -5,9 +5,6 @@
 places-open =
     .label = Åpne
     .accesskey = Å
-places-open-tab =
-    .label = Åpne i ny fane
-    .accesskey = f
 places-open-in-tab =
     .label = Åpne i ny fane
     .accesskey = n
@@ -17,26 +14,6 @@ places-open-all-bookmarks =
 places-open-all-in-tabs =
     .label = Åpne alle i faner
     .accesskey = a
-places-open-window =
-    .label = Åpne i nytt vindu
-    .accesskey = p
-places-open-private-window =
-    .label = Åpne i nytt privat vindu
-    .accesskey = n
-
-places-new-bookmark =
-    .label = Nytt bokmerke …
-    .accesskey = b
-places-new-folder-contextmenu =
-    .label = Ny mappe …
-    .accesskey = m
-places-new-folder =
-    .label = Ny mappe …
-    .accesskey = m
-places-new-separator =
-    .label = Ny skillelinje
-    .accesskey = s
-
 places-open-in-window =
     .label = Åpne i nytt vindu
     .accesskey = e
@@ -87,10 +64,6 @@ places-delete-domain-data =
 places-sortby-name =
     .label = Sorter etter navn
     .accesskey = r
-places-properties =
-    .label = Egenskaper
-    .accesskey = E
-
 # places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
 places-edit-bookmark =
     .label = Rediger bokmerke …
@@ -108,6 +81,17 @@ places-remove-folder =
            *[other] Fjern mapper
         }
     .accesskey = m
+
+places-edit-folder2 =
+    .label = Rediger mappe
+    .accesskey = R
+places-delete-folder =
+    .label =
+        { $count ->
+            [1] Slett mappe
+           *[other] Slett mapper
+        }
+    .accesskey = S
 
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
@@ -130,6 +114,24 @@ places-remove-bookmark =
         }
     .accesskey = F
 
+# Variables:
+# $count (number) - The number of elements being selected for removal.
+places-delete-bookmark =
+    .label =
+        { $count ->
+            [1] Slett bokmerke
+           *[other] Slett bokmerker
+        }
+    .accesskey = S
+
 places-manage-bookmarks =
     .label = Behandle bokmerker
     .accesskey = m
+
+places-forget-about-this-site-confirmation-title = Glemmer dette nettstedet
+
+# Variables:
+# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
+places-forget-about-this-site-confirmation-message = Denne handlingen fjerner alle data relatert til { $hostOrBaseDomain }, inkludert historikk, passord, infokapsler, hurtigbuffer og innholds-innstillinger. Er du sikker på at du vil fortsette?
+
+places-forget-about-this-site-forget = Glem

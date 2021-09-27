@@ -150,12 +150,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Manzil paneliga qoʻshish
 page-action-manage-extension =
     .label = Kengaytmani boshqarish
-page-action-remove-from-urlbar =
-    .label = Manzil panelidan olib tashlash
 
 ## Auto-hide Context Menu
 
@@ -171,10 +167,6 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Bu safar quyidagi bilan izlash:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Qidiruv sozlamalarini oʻzgartirish
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Qidiruv sozlamalarini oʻzgartirish
 search-one-offs-context-open-new-tab =
@@ -213,8 +205,6 @@ bookmark-panel-cancel =
 bookmark-panel-show-editor-checkbox =
     .label = Saqlashda muharrirni ko‘rsatish
     .accesskey = S
-bookmark-panel-done-button =
-    .label = Tayyor
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -234,10 +224,7 @@ identity-passive-loaded = Ushbu sahifa qismlari xavfsiz emas (masalan, rasmlar).
 identity-active-loaded = Siz bu sahifadagi himoyani o‘chirib qo‘ygansiz.
 identity-weak-encryption = Ushbu sahifa kuchsiz kodlash usulidan foydalanadi.
 identity-insecure-login-forms = Bu sahifaga kiritilgan ma’lumotlar o‘g‘irlanishi mumkin.
-identity-permissions =
-    .value = Ruxsatlar
 identity-permissions-reload-hint = O‘zgarishlar amalga oshishi uchun sahifani yangilashingiz kerak.
-identity-permissions-empty = Bu saytga hech qanday maxsus ruxsat bermagansiz.
 identity-clear-site-data =
     .label = Kuki va sayt ma’lumotlarini tozalash
 identity-connection-not-secure-security-view = Bu saytga ishonchsiz aloqa bilan ulangansiz.
@@ -288,12 +275,6 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Bo‘lishiladigan kamera:
-    .accesskey = k
-popup-select-microphone =
-    .value = Bo‘lishish uchun mikrofon:
-    .accesskey = m
 popup-all-windows-shared = Ekraningizdagi barcha ko‘rinadigan oynalar bo‘lishiladi.
 
 ## WebRTC window or screen share tab switch warning
@@ -304,14 +285,10 @@ popup-all-windows-shared = Ekraningizdagi barcha ko‘rinadigan oynalar bo‘lis
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Izlang yoki manzilni kiriting
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Izlang yoki manzilni kiriting
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Brauzer nazorat ostida!
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -343,8 +320,6 @@ urlbar-go-button =
     .tooltiptext = Manzil panelidagi manzilga o‘tish
 urlbar-page-action-button =
     .tooltiptext = Sahifa amallari
-urlbar-pocket-button =
-    .tooltiptext = { -pocket-brand-name } xizmatiga saqlash
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -465,6 +440,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Asboblar panelini sozlash…
     .accesskey = C
+toolbar-button-email-link =
+    .label = Havolani jo‘natish
+    .tooltiptext = Sahifa havolasini jo‘natish
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Sahifani saqlash
+    .tooltiptext = Sahifani saqlash ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Faylni ochish
+    .tooltiptext = Faylni ochish ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Sinxronlangan varaqlar
+    .tooltiptext = Boshqa qurilmalardagi varaqlarni koʻrsatish
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Yangi maxfiy oyna
+    .tooltiptext = Yangi maxfiy ko‘rish oynasida ochish ({ $shortcut })
 
 ## EME notification panel
 
@@ -502,3 +498,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Rasm ichida rasm rejimini yashirish
     .accesskey = H
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navigatsiya
+navbar-downloads =
+    .label = Yuklab olishlar
+navbar-overflow =
+    .tooltiptext = Ko‘proq asboblar…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Chop qilish
+    .tooltiptext = { $shortcut } sahifasini chop qilish
+navbar-print-tab-modal-disabled =
+    .label = Chop qilish
+    .tooltiptext = Ushbu sahifani chop qilish
+navbar-home =
+    .label = Uy
+    .tooltiptext = { -brand-short-name } bosh sahifasi
+navbar-library =
+    .label = Kutubxona
+    .tooltiptext = Tarix va saqlangan xatcho‘p kabilarni ko‘rish
+navbar-search =
+    .title = Qidiruv
+navbar-accessibility-indicator =
+    .tooltiptext = Qulay funksiyalar yoqildi
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Brauzer varaqlari
+tabs-toolbar-new-tab =
+    .label = Yangi varaq
+tabs-toolbar-list-all-tabs =
+    .label = Barcha varaqlar roʻyxati
+    .tooltiptext = Barcha varaqlar roʻyxati

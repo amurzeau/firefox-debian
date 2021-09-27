@@ -88,8 +88,8 @@ perftools-thread-img-decoder =
     .title = Fadenoj pri malkodigo de bildoj
 perftools-thread-dns-resolver =
     .title = Serĉoj de DNS okazas en tiu ĉi fadeno
-perftools-thread-js-helper =
-    .title = Fonaj taskoj de la motoro JS kiel ekzemple kompilo ekster la ĉefa fadeno
+perftools-thread-task-controller =
+    .title = Fadenoj de la grupo de fadenoj de TaskController
 
 ##
 

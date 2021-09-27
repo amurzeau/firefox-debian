@@ -89,10 +89,6 @@
 <!ENTITY printCmd.label "Imprimir…">
 <!ENTITY printCmd.accesskey "I">
 <!ENTITY printCmd.key "P">
-<!ENTITY printPreviewCmd.label "Visualizar impressão">
-<!ENTITY printPreviewCmd.accesskey "z">
-<!ENTITY printSetupCmd.label "Configurar página…">
-<!ENTITY printSetupCmd.accesskey "C">
 
 <!-- Edit Menu -->
 <!ENTITY deleteMsgCmd.label "Excluir mensagem">
@@ -172,8 +168,6 @@
 <!ENTITY recentFolders.accesskey "R">
 <!ENTITY compactVersion.label "Visão compacta">
 <!ENTITY compactVersion.accesskey "c">
-<!ENTITY folderPaneBar.label "Barra de ferramentas do painel de pastas">
-<!ENTITY folderPaneBar.accesskey "F">
 
 <!-- Sort Menu -->
 <!ENTITY sortMenu.label "Ordenar por">
@@ -248,7 +242,7 @@
 <!ENTITY bodyMenu.label "Formatar mensagens como">
 <!ENTITY bodyMenu.accesskey "o">
 <!ENTITY bodyAllowHTML.label "HTML original">
-<!ENTITY bodyAllowHTML.accesskey "F">
+<!ENTITY bodyAllowHTML.accesskey "o">
 <!ENTITY bodySanitized.label "HTML simples">
 <!ENTITY bodySanitized.accesskey "s">
 <!ENTITY bodyAsPlaintext.label "Sem formatação">
@@ -468,17 +462,11 @@
 <!ENTITY addressBookCmd.label "Catálogo de endereços">
 <!ENTITY addressBookCmd.accesskey "a">
 <!ENTITY addressBookCmd.key "b">
-<!ENTITY addons.label "Extensões">
-<!ENTITY addons.accesskey "E">
-<!ENTITY addonPrefs.label "Opções da extensão">
-<!ENTITY addonPrefs.accesskey "O">
-<!ENTITY addonPrefsUnix.label "Preferências de extensões">
-<!ENTITY addonPrefsUnix.accesskey "P">
 <!ENTITY addonNoPrefs.label "Nenhuma extensão configurada.">
 <!ENTITY activitymanager.label "Gerenciador de atividade">
 <!ENTITY activitymanager.accesskey "G">
 <!ENTITY imAccountsStatus.label "Status em conversas">
-<!ENTITY imAccountsStatus.accesskey "b">
+<!ENTITY imAccountsStatus.accesskey "v">
 <!ENTITY imStatus.available          "Disponível">
 <!ENTITY imStatus.unavailable        "Ocupado">
 <!ENTITY imStatus.offline            "Desconectado">
@@ -522,8 +510,6 @@
 <!ENTITY devToolboxCmd.commandkey "i">
 <!ENTITY debugAddonsCmd.label "Depurar extensões">
 <!ENTITY debugAddonsCmd.accesskey "e">
-<!ENTITY tabsDebugCmd.label "Depurador de conteúdo">
-<!ENTITY tabsDebugCmd.accesskey "C">
 <!ENTITY errorConsoleCmd.label "Console de erros">
 <!ENTITY errorConsoleCmd.accesskey "s">
 <!ENTITY errorConsoleCmd.commandkey "j">
@@ -547,15 +533,11 @@
 <!ENTITY backButton1.label "Voltar">
 <!ENTITY goForwardButton1.label "Avançar">
 <!ENTITY deleteItem.title "Excluir">
-<!ENTITY deleteButton.label "Excluir">
-<!ENTITY undeleteButton.label "Restaurar">
 <!ENTITY markButton.label "Marcar">
 <!ENTITY printButton.label "Imprimir">
 <!ENTITY stopButton.label "Parar">
 <!ENTITY throbberItem.title "Indicador de atividade">
 <!ENTITY junkItem.title "Spam">
-<!ENTITY junkButton.label "Spam">
-<!ENTITY notJunkButton.label "Não é spam">
 <!ENTITY addressBookButton.label "Catálogo">
 <!ENTITY chatButton.label "Conversa">
 <!ENTITY glodaSearch.title "Pesquisa global">
@@ -587,19 +569,14 @@
 <!ENTITY previousMsgButton.tooltip "Mover para mensagem anterior">
 <!ENTITY goForwardButton.tooltip "Próxima mensagem">
 <!ENTITY goBackButton.tooltip "Mensagem anterior">
-<!ENTITY deleteButton.tooltip "Excluir mensagens/pastas selecionadas">
-<!ENTITY undeleteButton.tooltip "Restaurar mensagem selecionada">
 <!ENTITY markButton.tooltip "Marcar mensagens">
 <!ENTITY printButton.tooltip "Imprimir a mensagem">
 <!ENTITY stopButton.tooltip "Interromper a transferência atual">
-<!ENTITY junkButton.tooltip "Marcar mensagens selecionadas como spam">
-<!ENTITY notJunkButton.tooltip "Marcar mensagens selecionadas como não spam">
 <!ENTITY addressBookButton.tooltip "Catálogo de endereços">
 <!ENTITY chatButton.tooltip "Mostrar a aba de conversa">
 <!ENTITY tagButton.tooltip "Aplicar etiquetas em mensagens">
 <!ENTITY compactButton.tooltip "Remover as mensagens excluídas da pasta selecionada">
 <!ENTITY appmenuButton1.tooltip "Exibir o menu do &brandShortName;">
-<!ENTITY addonsButton.tooltip "Gerenciar suas extensões">
 
 <!-- Toolbar Button Popup -->
 <!ENTITY buttonMenuForwardAsInline.label "Reencaminhar como texto">
@@ -668,7 +645,7 @@
 <!ENTITY folderContextSendUnsentMessages.accesskey "E">
 <!ENTITY folderContextUnsubscribe.label "Cancelar inscrição">
 <!ENTITY folderContextUnsubscribe.accesskey "C">
-<!ENTITY folderContextMarkNewsgroupRead.label "Marcar newsgroup como lido">
+<!ENTITY folderContextMarkNewsgroupRead.label "Marcar grupo de notícias como lido">
 <!ENTITY folderContextMarkNewsgroupRead.accesskey "l">
 <!ENTITY folderContextMarkMailFolderRead.label "Marcar a pasta como lida">
 <!ENTITY folderContextMarkMailFolderRead.accesskey "l">
@@ -771,7 +748,7 @@
 <!ENTITY contextArchive.accesskey "A">
 <!ENTITY contextReplySender.label "Responder só ao remetente">
 <!ENTITY contextReplySender.accesskey "R">
-<!ENTITY contextReplyNewsgroup2.label "Responder ao grupo">
+<!ENTITY contextReplyNewsgroup2.label "Responder ao grupo de notícias">
 <!ENTITY contextReplyNewsgroup2.accesskey "p">
 <!ENTITY contextReplyAll.label "Re: Todos">
 <!ENTITY contextReplyAll.accesskey "T">
@@ -900,7 +877,7 @@
 <!ENTITY EditContact1.accesskey "E">
 <!ENTITY ViewContact.label "Ver contato">
 <!ENTITY ViewContact.accesskey "V">
-<!ENTITY SubscribeToNewsgroup.label "Inscrever o newsgroup">
+<!ENTITY SubscribeToNewsgroup.label "Inscrever-se no grupo de notícias">
 <!ENTITY SubscribeToNewsgroup.accesskey "I">
 <!ENTITY SendMessageTo.label "Nova mensagem para">
 <!ENTITY SendMessageTo.accesskey "N">
@@ -908,7 +885,7 @@
 <!ENTITY CopyEmailAddress.accesskey "o">
 <!ENTITY CopyNameAndEmailAddress.label "Copiar nome e endereço de email">
 <!ENTITY CopyNameAndEmailAddress.accesskey "N">
-<!ENTITY CopyNewsgroupName.label "Copiar o nome do newsgroup">
+<!ENTITY CopyNewsgroupName.label "Copiar o nome do grupo de notícias">
 <!ENTITY CopyNewsgroupName.accesskey "C">
 <!ENTITY CopyNewsgroupURL.label "Copiar URL do grupo de notícias">
 <!ENTITY CopyNewsgroupURL.accesskey "U">

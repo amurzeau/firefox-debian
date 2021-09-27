@@ -8,9 +8,6 @@
 newtab-page-title = Nový panel
 newtab-settings-button =
     .title = Přizpůsobení stránky nového panelu
-newtab-personalize-button-label = Přizpůsobit
-    .title = Přizpůsobení nového panelu
-    .aria-label = Přizpůsobení nového panelu
 newtab-personalize-icon-label =
     .title = Přizpůsobení nového panelu
     .aria-label = Přizpůsobení nového panelu
@@ -23,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Vyhledat
     .aria-label = Vyhledat
-newtab-search-box-search-the-web-text = Vyhledat na webu
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = Zadejte webovou adresu nebo dotaz pro vyhledávač { $engine }
@@ -175,6 +171,11 @@ newtab-label-sponsored = { $sponsorOrSource } · sponzrováno
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = Sponzorováno společností { $sponsor }
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } min.
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -255,10 +256,4 @@ newtab-custom-pocket-sponsored = Sponzorované články
 newtab-custom-recent-title = Nedávná aktivita
 newtab-custom-recent-subtitle = Výběr z nedávných stránek a obsahu
 newtab-custom-close-button = Zavřít
-# For the "Snippets" feature traditionally on about:home.
-# Alternative translation options: "Small Note" or something that
-# expresses the idea of "a small message, shortened from something else,
-# and non-essential but also not entirely trivial and useless.
-newtab-custom-snippets-title = Útržky
-newtab-custom-snippets-subtitle = Tipy a novinky od { -vendor-short-name(case: "gen") } a aplikace { -brand-product-name }
 newtab-custom-settings = Další nastavení

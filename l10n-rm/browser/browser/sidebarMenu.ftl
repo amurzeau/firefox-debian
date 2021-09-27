@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Serrar la trav laterala
+
+sidebar-close-button =
+    .tooltiptext = Serrar la trav laterala

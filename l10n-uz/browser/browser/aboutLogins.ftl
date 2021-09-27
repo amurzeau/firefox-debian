@@ -4,23 +4,11 @@
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = Login va parollar
-
-# "Google Play" and "App Store" are both branding and should not be translated
-
-login-app-promo-title = Parollaringizdan istalgan joyda foydalaning
-login-app-promo-subtitle = { -lockwise-brand-name } ilovasini bepul yuklab oling
-login-app-promo-android =
-    .alt = Google Play orqali yuklab olish mumkin
-login-app-promo-apple =
-    .alt = App Store orqali yuklab olish mumkin
-
 login-filter =
     .placeholder = Loginlarni qidirish
-
 create-login-button = Yangi login yaratish
-
 fxaccounts-sign-in-text = Boshqa qurilmalardagi parollaringizdan foydalaning
-fxaccounts-sign-in-button = { -sync-brand-short-name } hisobiga kiring
+fxaccounts-sign-in-sync-button = Sinxronlash uchun hisobingizga kiring
 fxaccounts-avatar-button =
     .title = Hisobni boshqarish
 
@@ -30,14 +18,15 @@ menu =
     .title = Menyuni ochish
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Boshqa brauzerdan import qilish
+about-logins-menu-menuitem-import-from-a-file = Fayldan import qilish
+about-logins-menu-menuitem-export-logins = Loginlarni eksport qilish…
+about-logins-menu-menuitem-remove-all-logins = Barcha loginlarni olib tashlash
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Parametrlar
        *[other] Parametrlar
     }
 about-logins-menu-menuitem-help = Yordam
-menu-menuitem-android-app = Android uchun { -lockwise-brand-short-name }
-menu-menuitem-iphone-app = iPhone va iPad uchun { -lockwise-brand-short-name }
 
 ## Login List
 
@@ -51,6 +40,8 @@ login-list-count =
 login-list-sort-label-text = Saralash:
 login-list-name-option = Nomi boʻyicha (A-Z)
 login-list-name-reverse-option = Nomi boʻyicha (Z-A)
+login-list-username-option = Foydalanuvchi nomi (A-Z)
+login-list-username-reverse-option = Foydalanuvchi nomi (Z-A)
 about-logins-login-list-alerts-option = Ogohlantirishlar
 login-list-last-changed-option = Oxirgi oʻzgartirish boʻyicha
 login-list-last-used-option = Oxirgi foydalanish boʻyicha
@@ -65,16 +56,18 @@ about-logins-list-item-breach-icon =
     .title = Hujum qilingan sayt
 about-logins-list-item-vulnerable-password-icon =
     .title = Juda kuchsiz parol
+about-logins-list-section-breach = Hujumga uchragan saytlar
+about-logins-list-section-vulnerable = Juda kuchsiz parol
+about-logins-list-section-nothing = Ogohlantirish yoʻq
+about-logins-list-section-today = Bugun
+about-logins-list-section-yesterday = Kecha
+about-logins-list-section-week = Oxirgi 7 kun
 
 ## Introduction screen
 
-login-intro-heading = Saqlangan parollaringizni qidiryapsizmi? { -sync-brand-short-name }ni sozlang.
-
+about-logins-login-intro-heading-logged-out2 = Saqlangan loginlarni izlayapsizmi? Sinxronizatsiyani yoqing yoki ularni import qiling.
 about-logins-login-intro-heading-logged-in = Sinxronlangan loginlar topilmadi
 login-intro-description = Loginlaringizni boshqa qurilmadagi { -brand-product-name } brauzeriga saqlagan boʻlsangiz, ularni olish haqida bu yerdan maʼlumot olish mumkin:
-login-intro-instruction-fxa = Yangi hisob yarating yoki loginlaringiz saqlangan qurilmadagi { -fxaccount-brand-name } hisobiga kiring
-login-intro-instruction-fxa-settings = { -sync-brand-short-name } sozlamalaridagi Loginlar maydonchasiga belgi qoʻyishingiz lozim
-about-logins-intro-instruction-help = Yana yordam olish uchun <a data-l10n-name="help-link">{ -lockwise-brand-short-name }Yordam</a> sahifasini oching
 about-logins-intro-import = Loginlaringiz boshqa brauzerga saqlangan boʻlsa, ularni <a data-l10n-name="import-link">import qilishingiz mumkin { -lockwise-brand-short-name }</a>
 
 ## Login
@@ -113,18 +106,12 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = saqlangan loginni tahrirlash
-
 # This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = saqlangan parolni koʻrsatish
-
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = saqlangan paroldan nusxa olish
-
-## Master Password notification
-
-master-password-notification-message = Saqlangan login va parollarni koʻrish uchun parol ustasiga kiring
 
 ## Primary Password notification
 
@@ -132,34 +119,14 @@ master-password-reload-button =
     .label = Kirish
     .accesskey = K
 
-## Password Sync notification
-
-enable-password-sync-notification-message =
-    { PLATFORM() ->
-        [windows] { -brand-product-name } brauzeridan xohlagan joyingizda loginlaringizga kirishni xohlaysizmi? { -sync-brand-short-name } parametriga kiring va Loginlar maydonchasiga belgi qoʻying.
-       *[other] { -brand-product-name } brauzeridan xohlagan joyingizda loginlaringizga kirishni xohlaysizmi? { -sync-brand-short-name } parametriga kiring va Loginlar maydonchasiga belgi qoʻying.
-    }
-enable-password-sync-preferences-button =
-    .label =
-        { PLATFORM() ->
-            [windows] { -sync-brand-short-name } parametrlariga kiring
-           *[other] { -sync-brand-short-name } parametrlariga kiring
-        }
-    .accesskey = V
-about-logins-enable-password-sync-dont-ask-again-button =
-    .label = Yana soʻralmasin
-    .accesskey = s
-
 ## Dialogs
 
 confirmation-dialog-cancel-button = Bekor qilish
 confirmation-dialog-dismiss-button =
     .title = Bekor qilish
-
 about-logins-confirm-remove-dialog-title = Bu login olib tashlansinmi?
 confirm-delete-dialog-message = Bu amalni orqaga qaytarib boʻlmaydi.
 about-logins-confirm-remove-dialog-confirm-button = Olib tashlash
-
 confirm-discard-changes-dialog-title = Saqlanmagan oʻzgarishlar bekor qilinsinmi?
 confirm-discard-changes-dialog-message = Barcha saqlanmagan oʻzgarishlar yoʻqoladi.
 confirm-discard-changes-dialog-confirm-button = Rad etish
@@ -190,10 +157,8 @@ about-logins-vulnerable-alert-learn-more-link = Batafsil
 # Variables:
 #   $loginTitle (String) - The title of the website associated with the login.
 about-logins-error-message-duplicate-login-with-link = { $loginTitle } uchun kiritilgan foydalanuvchi nomi allaqachon mavjud. <a data-l10n-name="duplicate-link">Mavjud yozuv ochilsinmi?</a>
-
 # This is a generic error message.
 about-logins-error-message-default = Bu parolni saqlashda xatolik yuz berdi.
-
 
 ## Login Export Dialog
 
@@ -203,17 +168,21 @@ about-logins-export-file-picker-default-filename = logins.csv
 
 ## Login Import Dialog
 
+
 ##
 ## Variables:
 ##  $count (number) - The number of affected elements
+
 
 ##
 ## Variables:
 ##  $field (String) - The name of the field from the CSV file for example url, username or password
 
+
 ##
 ## Variables:
 ##  $count (number) - The number of affected elements
+
 
 ## Logins import report page
 

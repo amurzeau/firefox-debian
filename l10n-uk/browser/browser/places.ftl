@@ -5,9 +5,6 @@
 places-open =
     .label = Відкрити
     .accesskey = В
-places-open-tab =
-    .label = Відкрити в новій вкладці
-    .accesskey = ц
 places-open-in-tab =
     .label = Відкрити в новій вкладці
     .accesskey = н
@@ -17,26 +14,6 @@ places-open-all-bookmarks =
 places-open-all-in-tabs =
     .label = Відкрити все у вкладках
     .accesskey = і
-places-open-window =
-    .label = Відкрити в новому вікні
-    .accesskey = н
-places-open-private-window =
-    .label = Відкрити в новому приватному вікні
-    .accesskey = п
-
-places-new-bookmark =
-    .label = Нова закладка…
-    .accesskey = з
-places-new-folder-contextmenu =
-    .label = Створити теку…
-    .accesskey = т
-places-new-folder =
-    .label = Створити теку…
-    .accesskey = т
-places-new-separator =
-    .label = Створити розділювач
-    .accesskey = ю
-
 places-open-in-window =
     .label = Відкрити в новому вікні
     .accesskey = о
@@ -87,10 +64,6 @@ places-delete-domain-data =
 places-sortby-name =
     .label = Впорядкувати за назвою
     .accesskey = н
-places-properties =
-    .label = Властивості
-    .accesskey = і
-
 # places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
 places-edit-bookmark =
     .label = Редагувати закладку…
@@ -110,6 +83,18 @@ places-remove-folder =
            *[many] Вилучити теки
         }
     .accesskey = и
+
+places-edit-folder2 =
+    .label = Редагувати теку…
+    .accesskey = г
+places-delete-folder =
+    .label =
+        { $count ->
+            [one] Видалити теку
+            [few] Видалити теки
+           *[many] Видалити теки
+        }
+    .accesskey = л
 
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
@@ -133,6 +118,25 @@ places-remove-bookmark =
         }
     .accesskey = ч
 
+# Variables:
+# $count (number) - The number of elements being selected for removal.
+places-delete-bookmark =
+    .label =
+        { $count ->
+            [one] Видалити закладку
+            [few] Видалити закладки
+           *[many] Видалити закладки
+        }
+    .accesskey = з
+
 places-manage-bookmarks =
     .label = Керувати закладками
     .accesskey = К
+
+places-forget-about-this-site-confirmation-title = Забути цей сайт
+
+# Variables:
+# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
+places-forget-about-this-site-confirmation-message = Ця дія вилучить усі дані, пов'язані з { $hostOrBaseDomain }, включно з історією, паролями, куками, кешем та налаштуваннями вмісту. Ви дійсно хочете продовжити?
+
+places-forget-about-this-site-forget = Забути

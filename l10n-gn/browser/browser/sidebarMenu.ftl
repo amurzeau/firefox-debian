@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Ta’ãngarupa yke mboty
+
+sidebar-close-button =
+    .tooltiptext = Ta’ãngarupa yke mboty

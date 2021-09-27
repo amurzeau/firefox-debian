@@ -8,26 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Bare når { -brand-short-name } er satt til å blokkere kjente sporere
 do-not-track-option-always =
     .label = Alltid
-pref-page-title =
-    { PLATFORM() ->
-        [windows] Innstillinger
-       *[other] Innstillinger
-    }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Please keep the placeholder string short to avoid truncation.
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input-box =
-    .style = width: 15.4em
-    .placeholder =
-        { PLATFORM() ->
-            [windows] Søk i innstillinger
-           *[other] Søk i innstillinger
-        }
 settings-page-title = Innstillinger
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
@@ -55,9 +35,6 @@ category-search =
 pane-privacy-title = Personvern og sikkerhet
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-pane-sync-title2 = { -sync-brand-short-name }
-category-sync2 =
-    .tooltiptext = { pane-sync-title2 }
 pane-sync-title3 = Synkronisering
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
@@ -96,21 +73,12 @@ restart-later = Start på nytt senere
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their home page
-# is being controlled by an extension.
-extension-controlled-homepage-override = En utvidelse, <img data-l10n-name="icon"/> { $name }, styrer din startside.
-# This string is shown to notify the user that their new tab page
-# is being controlled by an extension.
-extension-controlled-new-tab-url = En utvidelse, <img data-l10n-name="icon"/> { $name }, styrer din ny fane-side.
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
 extension-controlled-password-saving = En utvidelse, <img data-l10n-name="icon"/> { $name }, styrer denne innstillingen.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = En utvidelse, <img data-l10n-name="icon"/> { $name }, kontrollerer denne innstillingen.
-# This string is shown to notify the user that the default search engine
-# is being controlled by an extension.
-extension-controlled-default-search = En utvidelse, <img data-l10n-name="icon"/> { $name }, har endret din standardsøkemotor.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = En utvidelse, <img data-l10n-name="icon"/> { $name }, krever innholdsfaner.
@@ -131,25 +99,12 @@ extension-controlled-enable = For å aktivere utvidelsen, gå til <img data-l10n
 
 search-results-header = Søkeresultat
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
-search-results-empty-message =
-    { PLATFORM() ->
-        [windows] Beklager! Det er ingen resultat i innstillinger for «<span data-l10n-name="query"></span>».
-       *[other] Beklager! Det er ingen resultat i innstillinger for «<span data-l10n-name="query"></span>».
-    }
-# `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message2 = Beklager! Det er ingen resultat i innstillinger for «<span data-l10n-name="query"></span>».
 search-results-help-link = Trenger du hjelp? Gå til <a data-l10n-name="url">{ -brand-short-name } brukerstøtte</a>
 
 ## General Section
 
 startup-header = Startside
-# { -brand-short-name } will be 'Firefox Developer Edition',
-# since this setting is only exposed in Firefox Developer Edition
-separate-profile-mode =
-    .label = Tillat { -brand-short-name } og Firefox å kjøre samtidig
-use-firefox-sync = Tips: Dette bruker egne profiler. Bruk { -sync-brand-short-name } for å dele data mellom dem.
-get-started-not-logged-in = Logg inn på { -sync-brand-short-name }…
-get-started-configured = Åpne innstillinger for { -sync-brand-short-name }
 always-check-default =
     .label = Kontroller alltid om { -brand-short-name } er standardnettleser
     .accesskey = a
@@ -161,6 +116,9 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Gjenopprett forrige programøkt
     .accesskey = r
+startup-restore-windows-and-tabs =
+    .label = Åpne tidligere vinduer og faner
+    .accesskey = p
 startup-restore-warn-on-quit =
     .label = Advarer når du avslutter nettleseren
 disable-extension =
@@ -175,12 +133,20 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Advar meg når jeg lukker flere faner
     .accesskey = A
+confirm-on-close-multiple-tabs =
+    .label = Bekreft før lukking av flere faner
+    .accesskey = B
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (String) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+confirm-on-quit-with-key =
+    .label = Bekreft før avslutting med { $quitKey }
+    .accesskey = B
 warn-on-open-many-tabs =
     .label = Advar når åpning av mange faner samtidig kan gjøre { -brand-short-name } treg
     .accesskey = d
-switch-links-to-new-tabs =
-    .label = Når du åpner en lenke i en ny fane, bytt til fanen med en gang
-    .accesskey = N
 switch-to-new-tabs =
     .label = Når du åpner en lenke, bilde eller media i en ny fane, bytt til fanen med en gang
     .accesskey = d
@@ -327,10 +293,6 @@ applications-manage-app =
     .label = Programinformasjon …
 applications-always-ask =
     .label = Spør alltid
-applications-type-pdf = Portable Document Format (PDF)
-# Variables:
-#   $type (String) - the MIME type (e.g application/binary)
-applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 # Variables:
 #   $type-description (String) - Description of the type (e.g "Portable Document Format")
 #   $type (String) - the MIME type (e.g application/binary)
@@ -397,15 +359,6 @@ update-application-warning-cross-user-setting = Denne innstillingen gjelder for 
 update-application-use-service =
     .label = Bruk en bakgrunnstjeneste for å installere oppdateringer
     .accesskey = B
-update-setting-write-failure-title = Kunne ikke lagre oppdateringsinnstillinger
-# Variables:
-#   $path (String) - Path to the configuration file
-# The newlines between the main text and the line containing the path is
-# intentional so the path is easier to identify.
-update-setting-write-failure-message =
-    { -brand-short-name } oppdaget en feil og lagret ikke denne endringen. Merk, for å kunne lagre endringen av denne oppdateringsinnstillingen, kreves det tillatelse til å skrive til filen nedenfor. Du eller en systemadministrator kan muligens løse feilen ved å gi gruppen Brukere full tilgang til denne filen.
-    
-    Kunne ikke skrive til filen: { $path }
 update-setting-write-failure-title2 = Kunne ikke lagre oppdateringsinnstillinger
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -611,10 +564,8 @@ search-show-suggestions-above-history-option =
     .label = Vis søkeforslag før nettleserhistorikk i adressefeltsresultatene
 search-show-suggestions-private-windows =
     .label = Vis søkeforslag i private vindu
-suggestions-addressbar-settings-generic = Endre innstillinger for andre adresselinjeforslag
 suggestions-addressbar-settings-generic2 = Endre innstillinger for andre adresselinjeforslag
 search-suggestions-cant-show = Søkeforslag vil ikke vises i adresselinjeresultatene fordi du har konfigurert { -brand-short-name } til å aldri huske historikk.
-search-one-click-header = Ettklikks søkemotorer
 search-one-click-header2 = Søkesnarveier
 search-one-click-desc = Velg alternative søkemotorer som vises under adresselinjen og søkelinjen når du begynner å skrive inn et søkeord.
 search-choose-engine-column =
@@ -641,12 +592,6 @@ search-keyword-warning-bookmark = Du har valgt et nøkkelord som brukes av et an
 
 ## Containers Section
 
-containers-back-button =
-    .aria-label =
-        { PLATFORM() ->
-            [windows] Tilbake til innstillinger
-           *[other] Tilbake til innstillinger
-        }
 containers-back-button2 =
     .aria-label = Tilbake til innstillinger
 containers-header = Innholdsfaner
@@ -656,8 +601,6 @@ containers-add-button =
 containers-new-tab-check =
     .label = Velg en beholder for hver ny fane
     .accesskey = V
-containers-preferences-button =
-    .label = Innstillinger
 containers-settings-button =
     .label = Innstillinger
 containers-remove-button =
@@ -667,10 +610,6 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Ta med deg webben
-sync-signedout-description = Synkroniser bokmerker, historikk, faner, passord, utvidelser og innstillinger på tvers av alle enhetene dine.
-sync-signedout-account-signin2 =
-    .label = Logg inn på { -sync-brand-short-name }…
-    .accesskey = i
 sync-signedout-description2 = Synkroniser bokmerker, historikk, faner, passord, utvidelser og innstillinger på tvers av alle enhetene dine.
 sync-signedout-account-signin3 =
     .label = Logg inn for å synkronisere…
@@ -710,10 +649,6 @@ sync-sign-in =
 
 prefs-syncing-on = Synkronisering: PÅ
 prefs-syncing-off = Synkronisering: AV
-prefs-sync-setup =
-    .label = Konfigurer { -sync-brand-short-name }
-    .accesskey = K
-prefs-sync-offer-setup-label = Synkroniser bokmerker, historikk, faner, passord, utvidelser og innstillinger på tvers av alle enhetene dine.
 prefs-sync-turn-on-syncing =
     .label = Slå på synkronisering…
     .accesskey = S
@@ -733,11 +668,6 @@ sync-currently-syncing-logins-passwords = Innlogginger og passord
 sync-currently-syncing-addresses = Adresser
 sync-currently-syncing-creditcards = Kredittkort
 sync-currently-syncing-addons = Utvidelser
-sync-currently-syncing-prefs =
-    { PLATFORM() ->
-        [windows] Innstillinger
-       *[other] Innstillinger
-    }
 sync-currently-syncing-settings = Innstillinger
 sync-change-options =
     .label = Endre…
@@ -778,14 +708,6 @@ sync-engine-addons =
     .label = Utvidelser
     .tooltiptext = Utvidelser og temaer for Firefox for datamaskin
     .accesskey = U
-sync-engine-prefs =
-    .label =
-        { PLATFORM() ->
-            [windows] Innstillinger
-           *[other] Innstillinger
-        }
-    .tooltiptext = Generelle, personvern- og sikkerhetsinnstillinger du har endret
-    .accesskey = I
 sync-engine-settings =
     .label = Innstillinger
     .tooltiptext = Generelle, personvern- og sikkerhetsinnstillinger du har endret
@@ -835,9 +757,6 @@ forms-fill-logins-and-passwords =
 forms-saved-logins =
     .label = Lagrede innlogginger …
     .accesskey = L
-forms-master-pw-use =
-    .label = Bruk et hovedpassord
-    .accesskey = r
 forms-primary-pw-use =
     .label = Bruk et hovedpassord
     .accesskey = B
@@ -848,7 +767,6 @@ forms-primary-pw-learn-more-link = Les mer
 forms-master-pw-change =
     .label = Endre hovedpassord …
     .accesskey = d
-forms-master-pw-fips-title = Du er i FIPS-modus. FIPS krever at du bruker et hovedpassord.
 forms-primary-pw-change =
     .label = Endre hovedpassord…
     .accesskey = p
@@ -865,13 +783,6 @@ forms-windows-sso-desc = Behandle kontoer i dine enhetensinnstillinger
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = Skriv inn innloggingsinformasjonen for Windows for å opprette et hovedpassord. Dette vil gjøre kontoene dine tryggere.
-# This message can be seen by trying to add a Master Password.
-# The macOS strings are preceded by the operating system with "Firefox is trying to "
-# and includes subtitle of "Enter password for the user "xxx" to allow this." These
-# notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = opprette et hovedpassord
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Skriv inn innloggingsinformasjonen for Windows for å opprette et hovedpassord. Dette vil gjøre kontoene dine tryggere.
 # This message can be seen by trying to add a Primary Password.
@@ -966,9 +877,6 @@ sitedata-clear =
     .accesskey = a
 sitedata-settings =
     .label = Behandle data…
-    .accesskey = B
-sitedata-cookies-permissions =
-    .label = Behandle tillatelser…
     .accesskey = B
 sitedata-cookies-exceptions =
     .label = Behandle unntak…
@@ -1126,10 +1034,6 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = Unntak …
     .accesskey = U
-permissions-a11y-privacy-checkbox =
-    .label = Hindre tilgangstjenester tilgang til nettleseren din
-    .accesskey = a
-permissions-a11y-privacy-link = Les mer
 
 ## Privacy Section - Data Collection
 
@@ -1151,10 +1055,6 @@ addon-recommendations-link = Les mer
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Datarapportering er deaktivert for denne byggekonfigurasjonen
-collection-backlogged-crash-reports =
-    .label = Tillat { -brand-short-name } å sende etterslepne krasjrapporter på dine vegne
-    .accesskey = s
-collection-backlogged-crash-reports-link = Les mer
 collection-backlogged-crash-reports-with-link = Tillat { -brand-short-name } å sende etterslepne krasjrapporter på dine vegne <a data-l10n-name="crash-reports-link">Les mer</a>
     .accesskey = T
 
@@ -1179,13 +1079,6 @@ security-block-uncommon-software =
 ## Privacy Section - Certificates
 
 certs-header = Sertifikater
-certs-personal-label = Når et nettsted ber om ditt personlige sertifikat
-certs-select-auto-option =
-    .label = Velg ett automatisk
-    .accesskey = S
-certs-select-ask-option =
-    .label = Spør deg hver gang
-    .accesskey = A
 certs-enable-ocsp =
     .label = Spør OCSP-servere om å bekrefte gyldigheten til sertifikater
     .accesskey = O
@@ -1195,29 +1088,6 @@ certs-view =
 certs-devices =
     .label = Sikkerhetsenheter…
     .accesskey = e
-space-alert-learn-more-button =
-    .label = Les mer
-    .accesskey = L
-space-alert-over-5gb-pref-button =
-    .label =
-        { PLATFORM() ->
-            [windows] Åpne innstillinger
-           *[other] Åpne innstillinger
-        }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] p
-           *[other] p
-        }
-space-alert-over-5gb-message =
-    { PLATFORM() ->
-        [windows] { -brand-short-name } er i ferd med å gå tom for plass på disken. Det kan hende at innholdet på nettstedet ikke vises ordentlig. Du kan tømme lagret data i Innstillinger > Personern og sikkerhet > Infokapsler og nettstedsdata.
-       *[other] { -brand-short-name } er i ferd med å gå tom for plass på disken. Det kan hende at innholdet på nettstedet ikke vises ordentlig. Du kan tømme lagret data i Innstillinger > Personern og sikkerhet > Infokapsler og nettstedsdata.
-    }
-space-alert-under-5gb-ok-button =
-    .label = OK, jeg skjønner
-    .accesskey = K
-space-alert-under-5gb-message = { -brand-short-name } er i ferd med å gå tom for plass på disken. Det kan hende at innholdet på nettsiden ikke vises ordentlig. Gå til «Les mer» for å optimalisere diskbruken din for en bedre nettleseropplevelse.
 space-alert-over-5gb-settings-button =
     .label = Åpne Innstillinger
     .accesskey = p

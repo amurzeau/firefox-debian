@@ -20,16 +20,6 @@ toolbar-context-menu-bookmark-selected-tabs =
 toolbar-context-menu-select-all-tabs =
     .label = Pasirinkti visas korteles
     .accesskey = P
-toolbar-context-menu-undo-close-tabs =
-    .label =
-        { $tabCount ->
-            [1] Atšaukti kortelės užvėrimą
-            [one] Atšaukti kortelės užvėrimą
-            [few] Atšaukti kortelių užvėrimus
-           *[other] Atšaukti kortelių užvėrimus
-        }
-    .accesskey = t
-
 toolbar-context-menu-reopen-closed-tabs =
     .label =
         { $tabCount ->
@@ -39,30 +29,24 @@ toolbar-context-menu-reopen-closed-tabs =
            *[other] Atkurti užvertas korteles
         }
     .accesskey = r
-
 toolbar-context-menu-manage-extension =
     .label = Tvarkyti priedą
     .accesskey = p
 toolbar-context-menu-remove-extension =
     .label = Pašalinti priedą
     .accesskey = l
-
 # This label is used in the extensions toolbar buttons context menus,
 # a user can use this command to submit to Mozilla an abuse report
 # related to that extension. "Report" is a verb.
 toolbar-context-menu-report-extension =
     .label = Pranešti apie priedą
     .accesskey = n
-
 # Can appear on the same context menu as menubarCmd ("Menu Bar") and
 # personalbarCmd ("Bookmarks Toolbar"), so they should have different
 # access keys.
 toolbar-context-menu-pin-to-overflow-menu =
     .label = Įsegti į perpildymo meniu
     .accesskey = s
-toolbar-context-menu-auto-hide-downloads-button =
-    .label = Priemonių juostoje slėpti automatiškai
-    .accesskey = a
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = Slėpti mygtuką, kai tuščia
     .accesskey = S
@@ -75,7 +59,6 @@ toolbar-context-menu-view-customize-toolbar =
 toolbar-context-menu-view-customize-toolbar-2 =
     .label = Tvarkyti priemonių juostą…
     .accesskey = T
-
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Visada rodyti
     .accesskey = V
@@ -85,7 +68,9 @@ toolbar-context-menu-bookmarks-toolbar-never-show-2 =
 toolbar-context-menu-bookmarks-toolbar-on-new-tab-2 =
     .label = Rodyti tik naujoje kortelėje
     .accesskey = R
-
 toolbar-context-menu-bookmarks-show-other-bookmarks =
     .label = Rodyti kitus adresyno įrašus
     .accesskey = d
+toolbar-context-menu-menu-bar-cmd =
+    .toolbarname = Meniu juosta
+    .accesskey = M

@@ -42,4 +42,4 @@ messenger-languages-select-language =
 messenger-languages-installed-label = Εγκατεστημένες γλώσσες
 messenger-languages-available-label = Διαθέσιμες γλώσσες
 
-messenger-languages-error = Το { -brand-short-name } δεν μπορεί να αναβαθμίσει τις γλώσσες σας αυτή τη στιγμή. Ελέγξτε ότι είστε συνδεδεμένος στο διαδίκτυο ή δοκιμάστε πάλι.
+messenger-languages-error = Το { -brand-short-name } δεν μπορεί να αναβαθμίσει τις γλώσσες σας αυτήν τη στιγμή. Ελέγξτε αν έχετε συνδεθεί στο διαδίκτυο ή δοκιμάστε ξανά.

@@ -5,9 +5,6 @@
 places-open =
     .label = Tijaq
     .accesskey = T
-places-open-tab =
-    .label = Tijaq pa jun K'ak'a' Ruwi'
-    .accesskey = k
 places-open-in-tab =
     .label = Tijaq pa jun k'ak'a' ruwi'
     .accesskey = k
@@ -17,33 +14,12 @@ places-open-all-bookmarks =
 places-open-all-in-tabs =
     .label = Tiqaj Ronojel rik'in taq Ruwi'
     .accesskey = q
-places-open-window =
-    .label = Tijaq pa jun K'ak'a' Tzuwäch
-    .accesskey = k
-places-open-private-window =
-    .label = Tijaq pa jun K'ak'a' Ichinan Tzuwäch
-    .accesskey = c
-
-places-new-bookmark =
-    .label = K'ak'a' yaketal…
-    .accesskey = y
-places-new-folder-contextmenu =
-    .label = K'ak'a' Yakwuj…
-    .accesskey = Y
-places-new-folder =
-    .label = K'ak'a' yakwuj…
-    .accesskey = w
-places-new-separator =
-    .label = K'ak'a'  jachöy
-    .accesskey = j
-
 places-open-in-window =
     .label = Tijaq pa K'ak'a' Tzuwäch
     .accesskey = K
 places-open-in-private-window =
     .label = Tijaq pa K'ak'a' Ichinan Tzuwäch
     .accesskey = I
-
 places-add-bookmark =
     .label = Titz'aqatisäx Yaketal…
     .accesskey = Y
@@ -56,7 +32,6 @@ places-add-folder =
 places-add-separator =
     .label = Titz'aqatisäx Jachöy
     .accesskey = J
-
 places-view =
     .label = Titz'et
     .accesskey = t
@@ -75,22 +50,16 @@ places-by-last-visited =
 places-by-day-and-site =
     .label = Chi rajilab'al q'ij chuqa' ruxaq k'amaya'l
     .accesskey = x
-
 places-history-search =
     .placeholder = Tikanöx natab'äl
 places-bookmarks-search =
     .placeholder = Kekanöx yaketal
-
 places-delete-domain-data =
     .label = Timestäx re ruxaq k'amaya'l re'
     .accesskey = m
 places-sortby-name =
     .label = Tinuk' Chi B'i'aj
     .accesskey = n
-places-properties =
-    .label = Taq ichinil
-    .accesskey = i
-
 # places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
 places-edit-bookmark =
     .label = Tinuk' ri Yaketal…
@@ -109,18 +78,26 @@ places-remove-folder =
            *[other] Keyuj taq Yakwuj
         }
     .accesskey = y
-
+places-edit-folder2 =
+    .label = Tinuk' Molyakwuj…
+    .accesskey = n
+places-delete-folder =
+    .label =
+        { $count ->
+            [1] Tiyuj Yakwuj
+            [one] Tiyuj Yakwuj
+           *[other] Keyuj taq Yakwuj
+        }
+    .accesskey = y
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
     .label = Taq yaketal enuk'samajin
 # This label is used when a managed bookmarks folder doesn't have a name.
 managed-bookmarks-subfolder =
     .label = Achyakwuj
-
 # This label is used for the "Other Bookmarks" folder that appears in the bookmarks toolbar.
 other-bookmarks-folder =
     .label = Juley taq Yaketal
-
 # Variables:
 # $count (number) - The number of elements being selected for removal.
 places-remove-bookmark =
@@ -131,7 +108,17 @@ places-remove-bookmark =
            *[other] Keyuj taq Yaketal
         }
     .accesskey = u
-
+# Variables:
+# $count (number) - The number of elements being selected for removal.
+places-delete-bookmark =
+    .label =
+        { $count ->
+            [1] Tiyuj Yaketal
+            [one] Tiyuj Yaketal
+           *[other] Keyuj Yaketal
+        }
+    .accesskey = y
 places-manage-bookmarks =
     .label = Kenuk'samajïx Taq Yaketal
     .accesskey = K
+places-forget-about-this-site-forget = Timestäx

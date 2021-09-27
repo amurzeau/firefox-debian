@@ -2,18 +2,15 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-third-party-page-title = Informationes re modulos de tertie parte
-third-party-section-title = Lista de modulos de tertie parte in { -brand-short-name }
+third-party-page-title = Informationes sur le modulos de tertios
+third-party-section-title = Lista de modulos de tertios in { -brand-short-name }
 
 third-party-intro =
-    Iste pagina monstra le modulos de tertie-parte que ha essite injectate in tu
-    { -brand-short-name }. Ulle modulo que non es signate per Microsoft o
-    { -vendor-short-name } es considerate un modulo de tertie parte.
+    Iste pagina monstra le modulos de tertios que ha essite injectate in tu
+    { -brand-short-name }. Omne modulo que non es signate per Microsoft o
+    { -vendor-short-name } es considerate un modulo de tertios.
 
-third-party-header-module-list = Lista de modulos
-third-party-header-loading-events = Cargante eventos
-
-third-party-message-empty = Nulle modulo de tertios ha essite revelate.
+third-party-message-empty = Nulle modulo de tertios ha essite detegite.
 third-party-message-no-duration = Non registrate
 
 third-party-detail-version = Version de file
@@ -38,7 +35,7 @@ third-party-tag-background = Fundo
 third-party-unsigned-icon =
     .title = Iste modulo non es signate
 third-party-warning-icon =
-    .title = { -brand-short-name } collabeva per un codice de iste modulo
+    .title = { -brand-short-name } ha collabite executante codice de iste modulo
 
 third-party-status-loaded = Cargate
 third-party-status-blocked = Blocate

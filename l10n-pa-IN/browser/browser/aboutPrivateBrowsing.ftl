@@ -7,8 +7,8 @@ privatebrowsingpage-open-private-window-label = ਪ੍ਰਾਈਵੇਟ ਵਿ�
 about-private-browsing-search-placeholder = ਵੈੱਬ ‘ਤੇ ਲੱਭੋ
 about-private-browsing-info-title = ਤੁਸੀਂ ਪ੍ਰਾਈਵੇਟ ਵਿੰਡੋ ‘ਚ ਹੋ
 about-private-browsing-info-myths = ਪ੍ਰਾਈਵੇਟ ਬਰਾਊਜ਼ਿੰਗ ਬਾਰੇ ਗਲਤ ਧਾਰਨਾਵਾਂ
-about-private-browsing =
-    .title = ਵੈੱਬ ‘ਤੇ ਲੱਭੋ
+about-private-browsing-search-btn =
+    .title = ਵੈੱਬ ‘ਤੇ ਖੋਜੋ
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =
@@ -24,6 +24,11 @@ about-private-browsing-info-description = ਜਦੋਂ ਤੁਸੀਂ ਐਪ �
 
 about-private-browsing-need-more-privacy = ਹੋਰ ਪਰਦੇਦਾਰੀ ਦੀ ਲੋੜ ਹੈ?
 about-private-browsing-turn-on-vpn = { -mozilla-vpn-brand-name } ਅਜ਼ਮਾਓ
+
+about-private-browsing-learn-more-link = ਹੋਰ ਜਾਣੋ
+
+about-private-browsing-hide-activity = ਆਪਣੀ ਸਰਗਰਮੀ ਤੇ ਟਿਕਾਣੇ ਨੂੰ ਲੁਕਾਓ, ਜਿੱਥੇ ਵੀ ਤੁਸੀੰ ਬਰਾਊਜ਼ ਕਰੋ
+about-private-browsing-prominent-cta = { -mozilla-vpn-brand-name } ਨਾਲ ਪ੍ਰਾਈਵੇਟ ਕਰੋ
 
 # This string is the title for the banner for search engine selection
 # in a private window.

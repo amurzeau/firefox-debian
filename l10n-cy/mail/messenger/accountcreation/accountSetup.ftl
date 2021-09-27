@@ -58,6 +58,12 @@ account-provisioner-button = Cael cyfeiriad e-bost newydd
 account-setup-password-toggle =
     .title = Dangos/cuddio cyfrinair
 
+account-setup-password-toggle-show =
+    .title = Dangos cyfrinair mewn testun clir
+
+account-setup-password-toggle-hide =
+    .title = Cuddio cyfrinair
+
 account-setup-remember-password = Cofio'r cyfrinair
     .accesskey = o
 
@@ -312,6 +318,21 @@ exchange-dialog-question = Mae { -brand-short-name } wedi canfod manylion gosod 
 exchange-dialog-confirm-button = Mewngofnodi
 
 exchange-dialog-cancel-button = Diddymu
+
+## Dismiss account creation dialog
+
+exit-dialog-title = Nid oes Cyfrif E-bost wedi'i Ffurfweddu
+
+exit-dialog-description = Ydych chi'n siŵr eich bod chi am ddiddymu'r broses osod? Mae modd dal i ddefnyddio { -brand-short-name } heb gyfrif e-bost, ond fydd yna ddim llawer o nodweddion ar gael.
+
+account-setup-no-account-checkbox = Defnyddio { -brand-short-name } heb gyfrif e-bost
+    .accesskey = D
+
+exit-dialog-cancel-button = Parhau i Osod
+    .accesskey = P
+
+exit-dialog-confirm-button = Gadael Gosod
+    .accesskey = G
 
 ## Alert dialogs
 

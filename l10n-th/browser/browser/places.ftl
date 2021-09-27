@@ -5,9 +5,6 @@
 places-open =
     .label = เปิด
     .accesskey = ป
-places-open-tab =
-    .label = เปิดในแท็บใหม่
-    .accesskey = ท
 places-open-in-tab =
     .label = เปิดในแท็บใหม่
     .accesskey = w
@@ -17,26 +14,6 @@ places-open-all-bookmarks =
 places-open-all-in-tabs =
     .label = เปิดทั้งหมดในแท็บ
     .accesskey = ป
-places-open-window =
-    .label = เปิดในหน้าต่างใหม่
-    .accesskey = ห
-places-open-private-window =
-    .label = เปิดในหน้าต่างส่วนตัวใหม่
-    .accesskey = ส
-
-places-new-bookmark =
-    .label = ที่คั่นหน้าใหม่…
-    .accesskey = ม
-places-new-folder-contextmenu =
-    .label = โฟลเดอร์ใหม่…
-    .accesskey = ฟ
-places-new-folder =
-    .label = โฟลเดอร์ใหม่…
-    .accesskey = ฟ
-places-new-separator =
-    .label = ตัวแบ่งใหม่
-    .accesskey = บ
-
 places-open-in-window =
     .label = เปิดในหน้าต่างใหม่
     .accesskey = N
@@ -87,10 +64,6 @@ places-delete-domain-data =
 places-sortby-name =
     .label = เรียงตามชื่อ
     .accesskey = ร
-places-properties =
-    .label = คุณสมบัติ
-    .accesskey = ส
-
 # places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
 places-edit-bookmark =
     .label = แก้ไขที่คั่นหน้า…
@@ -108,6 +81,10 @@ places-remove-folder =
            *[other] ลบโฟลเดอร์
         }
     .accesskey = m
+
+places-edit-folder2 =
+    .label = แก้ไขโฟลเดอร์
+    .accesskey = i
 
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
@@ -133,3 +110,4 @@ places-remove-bookmark =
 places-manage-bookmarks =
     .label = จัดการที่คั่นหน้า
     .accesskey = M
+

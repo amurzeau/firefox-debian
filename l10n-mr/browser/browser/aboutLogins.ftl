@@ -4,20 +4,10 @@
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = लॉगिन व पासवर्ड
-
-# "Google Play" and "App Store" are both branding and should not be translated
-
-login-app-promo-title = आपले पासवर्ड सर्वत्र न्या
-login-app-promo-subtitle = विनामूल्य { -lockwise-brand-name } अॅप मिळवा
-login-app-promo-android =
-    .alt = Google Play वर मिळवा
-login-app-promo-apple =
-    .alt = App Store वरुन डाउनलोड करा
 login-filter =
     .placeholder = लॉगिन शोधा
 create-login-button = नविन लॉगिन बनवा
 fxaccounts-sign-in-text = आपल्या इतर उपकरणांवर आपले पासवर्ड मिळवा
-fxaccounts-sign-in-button = { -sync-brand-short-name } मध्ये साइन इन करा
 fxaccounts-sign-in-sync-button = सींक करण्यासाठी साइन इन करा
 fxaccounts-avatar-button =
     .title = खाते व्यवस्थापित करा
@@ -37,8 +27,6 @@ menu-menuitem-preferences =
        *[other] प्राधान्ये
     }
 about-logins-menu-menuitem-help = मदत
-menu-menuitem-android-app = { -lockwise-brand-short-name } Android साठी
-menu-menuitem-iphone-app = { -lockwise-brand-short-name } iPhone and iPad साठी
 
 ## Login List
 
@@ -68,12 +56,18 @@ about-logins-list-item-breach-icon =
     .title = उल्लंघीत वेबसाईट
 about-logins-list-item-vulnerable-password-icon =
     .title = असुरक्षित पासवर्ड
+about-logins-list-section-breach = ब्रीच झालेल्या वेबसाइट्स
+about-logins-list-section-vulnerable = असुरक्षित पासवर्ड
+about-logins-list-section-nothing = कोणताही अलर्ट नाही
+about-logins-list-section-today = आज
+about-logins-list-section-yesterday = काल
+about-logins-list-section-week = गेल्या 7 दिवसांत
 
 ## Introduction screen
 
+about-logins-login-intro-heading-logged-out2 = आपले जतन केलेले लॉगिन शोधत आहात? सिंक चालू करा किंवा त्यांना आयात करा.
 about-logins-login-intro-heading-logged-in = कोणतेही सिंक केलेले लॉगिन सापडले नाहीत.
 login-intro-description = आपले लॉगिन जर वेगळ्या { -brand-product-name } डिव्हाईस वर असतील तर ते कसे पाहायचे ते इथे आहे
-about-logins-intro-instruction-help = अधिक मदतीसाठी<a data-l10n-name="help-link">{ -lockwise-brand-short-name } समर्थन </a> ला भेट द्या
 
 ## Login
 
@@ -108,22 +102,21 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
-
-## Master Password notification
-
-master-password-notification-message = साठवलेले लॉगिन आणि संकेतशब्द बघायला तुमचा मास्टर संकेतशब्द टाका
+# This message can be seen when attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = जतन केलेले लॉगिन संपादित करा
+# This message can be seen when attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = जतन केलेला पासवर्ड दाखवा.
+# This message can be seen when attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = जतन केलेला पासवर्ड कॉपी करा
 
 ## Primary Password notification
 
 master-password-reload-button =
     .label = लॉग इन
     .accesskey = L
-
-## Password Sync notification
-
-about-logins-enable-password-sync-dont-ask-again-button =
-    .label = मला पुन्हा विचारू नका
-    .accesskey = D
 
 ## Dialogs
 
@@ -133,6 +126,11 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = लॉगिन मिटवायचे?
 confirm-delete-dialog-message = ही कृती बदलू शकत नाही
 about-logins-confirm-remove-dialog-confirm-button = काढा
+about-logins-confirm-remove-all-dialog-title =
+    { $count ->
+        [one] { $count } लॉगिन काढायचे का?
+       *[other] सर्व { $count } लॉगिन काढायचे का?
+    }
 about-logins-confirm-export-dialog-confirm-button = निर्यात…
 confirm-discard-changes-dialog-title = जतन न केलेले बदल टाकून द्यायचे?
 confirm-discard-changes-dialog-message = सर्व जतन न केलेले बदल गमावले जातील.
@@ -168,6 +166,25 @@ about-logins-export-file-picker-export-button = निर्यात करा
 ## Variables:
 ##  $count (number) - The number of affected elements
 
+about-logins-import-dialog-done = झाले
+about-logins-import-dialog-error-title = आयात त्रुटी
+about-logins-import-dialog-error-file-format-title = फाइल फॉरमॅट संबंधित समस्या
+about-logins-import-dialog-error-file-permission-title = फाईल वाचण्यात अक्षम
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } ला फाइल वाचण्याची परवानगी नाही. फाइल परवानग्या बदलण्याचा प्रयत्न करा.
+about-logins-import-dialog-error-unable-to-read-description = तुम्ही CSV किंवा TSV फाइल निवडल्याची खात्री करा.
+about-logins-import-dialog-error-no-logins-imported = कोणतेही लॉगिन आयात केले गेलेले नाही
+about-logins-import-dialog-error-learn-more = अधिक जाणा
+about-logins-import-dialog-error-try-import-again = पुन्हा आयात करण्याचा प्रयत्न करा…
+about-logins-import-dialog-error-cancel = रद्द करा
+about-logins-import-report-title = आयात संबंधित सारांश
+about-logins-import-report-description = लॉगिन आणि पासवर्ड { -brand-short-name } वर आयात केलेत.
+#
+# Variables:
+#  $number (number) - The number of the row
+about-logins-import-report-row-index = पंक्ती { $number }
+about-logins-import-report-row-description-no-change = डुप्लिकेट: विद्यमान लॉगिनशी अचूक मिळते.
+about-logins-import-report-row-description-modified = विद्यमान लॉगिन अद्ययावत केले
+about-logins-import-report-row-description-added = नवीन लॉगिन जोडले
 
 ##
 ## Variables:

@@ -9,6 +9,11 @@ experimental-features-css-masonry2 =
 experimental-features-css-masonry-description = Ενεργοποιεί την υποστήριξη για την πειραματική λειτουργία CSS Masonry Layout. Δείτε την <a data-l10n-name="explainer">επεξήγηση</a> για μια περιγραφή υψηλού επιπέδου της λειτουργίας. Για να παρέχετε σχόλια, σχολιάστε σε <a data-l10n-name="w3c-issue"> αυτό το ζήτημα GitHub</a> ή <a data-l10n-name="bug"> αυτό το σφάλμα </a>.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
+experimental-features-css-cascade-layers =
+    .label = CSS: Cascade Layers
+experimental-features-css-cascade-layers-description = Ενεργοποιεί την υποστήριξη για CSS Cascade Layers. Δείτε τις <a data-l10n-name="spec">προδιαγραφές (σε εξέλιξη)</a> για λεπτομέρειες. Για ζητήματα που σχετίζονται με αυτήν τη λειτουργία, αναφέρετε σφάλματα που να αποκλείουν το <a data-l10n-name="bugzilla">σφάλμα 1699215</a>.
+# The title of the experiment should be kept in English as it may be referenced
+# by various online articles and is technical in nature.
 experimental-features-web-gpu2 =
     .label = Web API: WebGPU
 experimental-features-web-gpu-description2 = Αυτό το νέο API παρέχει υποστήριξη χαμηλού επιπέδου για την εκτέλεση υπολογισμού και απόδοσης γραφικών, χρησιμοποιώντας τη <a data-l10n-name="wikipedia">κάρτα γραφικών (GPU)</a> της συσκευής ή του υπολογιστή του χρήστη. Η <a data-l10n-name="spec">προδιαγραφή</a> είναι υπό επεξεργασία. Δείτε το <a data-l10n-name="bugzilla">σφάλμα 1602129</a> για περισσότερες λεπτομέρειες.
@@ -45,11 +50,11 @@ experimental-features-devtools-compatibility-panel-description = Ένας πλε
 # Do not translate 'SameSite', 'Lax' and 'None'.
 experimental-features-cookie-samesite-lax-by-default2 =
     .label = Cookies: SameSite=Lax από προεπιλογή
-experimental-features-cookie-samesite-lax-by-default2-description = Αντιμετώπιση των cookies ως “SameSite=Lax” από προεπιλογή αν δεν καθορίζεται ιδιότητα “SameSite”. Οι προγραμματιστές πρέπει να επιλέξουν στο τρέχον status quo της απεριόριστης χρήσης, δηλώνοντας ρητά ότι “SameSite=None”.
+experimental-features-cookie-samesite-lax-by-default2-description = Αντιμετώπιση των cookies ως «SameSite=Lax» από προεπιλογή αν δεν καθορίζεται η ιδιότητα «SameSite». Οι προγραμματιστές πρέπει να εγγραφούν στο τρέχον status quo της απεριόριστης χρήσης, δηλώνοντας ρητά ότι «SameSite=None».
 # Do not translate 'SameSite', 'Lax' and 'None'.
 experimental-features-cookie-samesite-none-requires-secure2 =
-    .label = Cookies: Το SameSite=None απαιτεί την ιδιότητα "secure"
-experimental-features-cookie-samesite-none-requires-secure2-description = Τα cookies με την ιδιότητα “SameSite=None” απαιτούν την ιδιότητα "secure". Αυτή η λειτουργία απαιτεί το “Cookies: SameSite=Lax από προεπιλογή”.
+    .label = Cookies: Το SameSite=None απαιτεί την ιδιότητα «secure»
+experimental-features-cookie-samesite-none-requires-secure2-description = Τα cookies με την ιδιότητα «SameSite=None» απαιτούν την ιδιότητα «secure». Αυτή η λειτουργία απαιτεί το «Cookies: SameSite=Lax από προεπιλογή».
 # about:home should be kept in English, as it refers to the the URI for
 # the internal default home page.
 experimental-features-abouthome-startup-cache =
@@ -59,7 +64,7 @@ experimental-features-abouthome-startup-cache-description = Κρυφή μνήμ�
 # by various online articles and is technical in nature.
 experimental-features-cookie-samesite-schemeful =
     .label = Cookies: Schemeful SameSite
-experimental-features-cookie-samesite-schemeful-description = Διαχείριση των cookie ίδιου τομέα αλλά διαφορετικού μοτίβου (π.χ. http://example.com και https://example.com) ως cookie μεταξύ ιστοτόπων αντί για cookie ίδιου ιστοτόπου. Βελτιώνει την ασφάλεια, αλλά ενδέχεται να προκαλέσει προβλήματα.
+experimental-features-cookie-samesite-schemeful-description = Διαχείριση των cookies ίδιου τομέα αλλά διαφορετικού μοτίβου (π.χ. http://example.com και https://example.com) ως cookie μεταξύ ιστοτόπων αντί για cookies ίδιου ιστοτόπου. Βελτιώνει την ασφάλεια, αλλά ενδέχεται να προκαλέσει προβλήματα.
 # "Service Worker" is an API name and is usually not translated.
 experimental-features-devtools-serviceworker-debugger-support =
     .label = Εργαλεία ανάπτυξης: Έλεγχος σφαλμάτων service worker

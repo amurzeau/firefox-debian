@@ -56,6 +56,12 @@ account-provisioner-button = Nowy adres e-mail
 account-setup-password-toggle =
     .title = Widoczne hasło
 
+account-setup-password-toggle-show =
+    .title = Pokaż hasło jako tekst
+
+account-setup-password-toggle-hide =
+    .title = Ukryj hasło
+
 account-setup-remember-password = Zachowaj hasło
     .accesskey = Z
 
@@ -306,6 +312,21 @@ exchange-dialog-question = { -brand-short-name } znalazł informacje o konfigur
 exchange-dialog-confirm-button = Zaloguj się
 
 exchange-dialog-cancel-button = Anuluj
+
+## Dismiss account creation dialog
+
+exit-dialog-title = Nie skonfigurowano konta pocztowego
+
+exit-dialog-description = Czy na pewno anulować konfigurację? { -brand-short-name } może być używany bez konta pocztowego, ale wiele funkcji będzie niedostępnych.
+
+account-setup-no-account-checkbox = Używaj programu { -brand-short-name } bez konta pocztowego
+    .accesskey = U
+
+exit-dialog-cancel-button = Kontynuuj konfigurację
+    .accesskey = K
+
+exit-dialog-confirm-button = Wyjdź z konfguracji
+    .accesskey = W
 
 ## Alert dialogs
 

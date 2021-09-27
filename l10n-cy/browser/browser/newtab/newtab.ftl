@@ -20,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Chwilio
     .aria-label = Chwilio
-newtab-search-box-search-the-web-text = Chwilio'r We
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = Chwilio gyda { $engine } neu roi cyfeiriad
@@ -171,6 +170,11 @@ newtab-label-sponsored = Noddir gan { $sponsorOrSource }
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = Noddir gan { $sponsor }
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } mun
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.

@@ -3,12 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-## View Menu
-
-menu-view-charset =
-    .label = Bảng mã văn bản
-    .accesskey = c
-
 ## Tools Menu
 
 # Since v89 we dropped the platforms distinction between Options or Preferences
@@ -67,3 +61,9 @@ mail-uidensity-normal =
 mail-uidensity-touch =
     .label = Chạm
     .accesskey = T
+
+## File
+
+file-new-newsgroup-account =
+    .label = Tài khoản nhóm tin…
+    .accesskey = N

@@ -20,15 +20,6 @@ toolbar-context-menu-bookmark-selected-tabs =
 toolbar-context-menu-select-all-tabs =
     .label = Fren akk accaren
     .accesskey = F
-toolbar-context-menu-undo-close-tabs =
-    .label =
-        { $tabCount ->
-            [1] Sefsex amdal n yiccer
-            [one] Sefsex amdal n yiccer
-           *[other] Sefsex amdal n waccaren
-        }
-    .accesskey = U
-
 toolbar-context-menu-reopen-closed-tabs =
     .label =
         { $tabCount ->
@@ -37,30 +28,24 @@ toolbar-context-menu-reopen-closed-tabs =
            *[other] Ales tawaledyawt n waccaren imedlen
         }
     .accesskey = a
-
 toolbar-context-menu-manage-extension =
     .label = Sefrek isiɣzaf
     .accesskey = n
 toolbar-context-menu-remove-extension =
     .label = Kkes asiɣzef
     .accesskey = v
-
 # This label is used in the extensions toolbar buttons context menus,
 # a user can use this command to submit to Mozilla an abuse report
 # related to that extension. "Report" is a verb.
 toolbar-context-menu-report-extension =
     .label = Mmel asiɣzef
     .accesskey = u
-
 # Can appear on the same context menu as menubarCmd ("Menu Bar") and
 # personalbarCmd ("Bookmarks Toolbar"), so they should have different
 # access keys.
 toolbar-context-menu-pin-to-overflow-menu =
     .label = Senṭeḍ deg wumuɣ n tfuli
     .accesskey = R
-toolbar-context-menu-auto-hide-downloads-button =
-    .label = Tufra twurmant deg ufeggag n ifecka
-    .accesskey = A
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = Ffer taqeffalt mi ara yili d ilem
     .accesskey = F
@@ -73,7 +58,6 @@ toolbar-context-menu-view-customize-toolbar =
 toolbar-context-menu-view-customize-toolbar-2 =
     .label = Sagen afeggag n yifecka…
     .accesskey = S
-
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Sken yal tikelt
     .accesskey = A
@@ -83,7 +67,9 @@ toolbar-context-menu-bookmarks-toolbar-never-show-2 =
 toolbar-context-menu-bookmarks-toolbar-on-new-tab-2 =
     .label = Sken kan deg yiccer amaynut
     .accesskey = O
-
 toolbar-context-menu-bookmarks-show-other-bookmarks =
     .label = Sken ticraḍ n yisebtar tiyaḍ
     .accesskey = h
+toolbar-context-menu-menu-bar-cmd =
+    .toolbarname = Afeggag n wumuɣ
+    .accesskey = A

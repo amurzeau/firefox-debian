@@ -156,12 +156,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Gehitu helbide-barran
 page-action-manage-extension =
     .label = Kudeatu hedapena…
-page-action-remove-from-urlbar =
-    .label = Kendu helbide-barratik
 page-action-remove-extension =
     .label = Kendu hedapena
 
@@ -179,10 +175,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Oraingoan, bilatu honekin:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Aldatu bilaketa-ezarpenak
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Aldatu bilaketa-ezarpenak
 search-one-offs-context-open-new-tab =
@@ -246,8 +238,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Erakutsi editorea gordetzean
     .accesskey = E
-bookmark-panel-done-button =
-    .label = Eginda
 bookmark-panel-save-button =
     .label = Gorde
 # Width of the bookmark panel.
@@ -277,8 +267,6 @@ identity-passive-loaded = Orri honetako zenbait atal ez dira seguruak (adib. iru
 identity-active-loaded = Babesa desgaitu duzu orri honetan.
 identity-weak-encryption = Orri honek zifraketa ahula erabiltzen du.
 identity-insecure-login-forms = Orri honetan sartutako saio-hasierak arriskuan egon litezke.
-identity-permissions =
-    .value = Baimenak
 identity-https-only-connection-upgraded = (HTTPSra bihurtu da)
 identity-https-only-label = HTTPS-Only modua
 identity-https-only-dropdown-on =
@@ -294,7 +282,6 @@ identity-permissions-storage-access-header = Guneen arteko cookieak
 identity-permissions-storage-access-hint = Ondorengo hauek guneen arteko cookie eta datuak erabil ditzakete gune honetan zauden bitartean.
 identity-permissions-storage-access-learn-more = Argibide gehiago
 identity-permissions-reload-hint = Agian orria berritu beharko duzu aldaketek eragina izan dezaten.
-identity-permissions-empty = Ez diozu gune honi baimen berezirik eman.
 identity-clear-site-data =
     .label = Garbitu cookieak eta guneetako datuak…
 identity-connection-not-secure-security-view = Ez zaude modu seguruan konektatuta gune honetara.
@@ -376,12 +363,6 @@ bookmarks-toolbar-empty-message = Sarbide azkarra izateko, ipin itzazu laster-ma
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Partekatzeko kamera:
-    .accesskey = k
-popup-select-microphone =
-    .value = Partekatzeko mikrofonoa:
-    .accesskey = m
 popup-select-camera-device =
     .value = Kamera:
     .accesskey = K
@@ -395,14 +376,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Bozgorailuak
 popup-all-windows-shared = Zure pantailan ikusgai dauden leiho guztiak partekatuko dira.
-popup-screen-sharing-not-now =
-    .label = Une honetan ez
-    .accesskey = z
-popup-screen-sharing-never =
-    .label = Inoiz ez baimendu
-    .accesskey = n
-popup-silence-notifications-checkbox = Partekatu bitartean, desgaitu { -brand-short-name }(r)en jakinarazpenak
-popup-silence-notifications-checkbox-warning = { -brand-short-name }(e)k ez du jakinarazpenik bistaratuko partekatzen ari zaren bitartean.
 popup-screen-sharing-block =
     .label = Blokeatu
     .accesskey = B
@@ -426,14 +399,10 @@ enable-devtools-popup-description = F12 lasterbidea erabiltzeko, ireki lehenik g
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Idatzi bilaketa edo helbidea
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Idatzi bilaketa edo helbidea
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Nabigatzailea urruneko agintepean dago
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -466,6 +435,11 @@ urlbar-placeholder-search-mode-other-tabs =
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
     .placeholder = Bilatu { $name } erabiliz edo idatzi helbidea
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = Nabigatzailea urruneko kontrolpean dago (arrazoia: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Baimen bereziak eman dizkiozu webgune honi.
 urlbar-switch-to-tab =
@@ -477,8 +451,6 @@ urlbar-go-button =
     .tooltiptext = Joan kokapen-barrako helbidera
 urlbar-page-action-button =
     .tooltiptext = Orri-ekintzak
-urlbar-pocket-button =
-    .tooltiptext = Gorde { -pocket-brand-name }-en
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -537,6 +509,10 @@ urlbar-result-action-search-tabs = Bilatu fitxak
 
 ## Labels shown above groups of urlbar results
 
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
 
 ## Full Screen and Pointer Lock UI
 
@@ -640,6 +616,9 @@ save-to-pocket-button =
 
 ## Repair text encoding toolbar button
 
+repair-text-encoding-button =
+    .label = Konpondu testu-kodeketa
+    .tooltiptext = Antzeman testuaren kodeketa zuzena orriaren edukitik
 
 ## Customize Toolbar Buttons
 
@@ -666,6 +645,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Pertsonalizatu tresna-barra…
     .accesskey = P
+toolbar-button-email-link =
+    .label = Bidali lotura postaz
+    .tooltiptext = Bidali postaz orri honetarako lotura
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Gorde orria
+    .tooltiptext = Gorde orri hau ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Ireki fitxategia
+    .tooltiptext = Ireki fitxategia ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Sinkronizatutako fitxak
+    .tooltiptext = Erakutsi beste gailuetako fitxak
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Leiho pribatu berria
+    .tooltiptext = Ireki nabigatze pribatuko leiho berri bat ({ $shortcut })
 
 ## EME notification panel
 
@@ -695,6 +695,9 @@ remote-tabs-sync-now = Sinkronizatu orain
 
 ##
 
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Gehiago…
 ui-tour-info-panel-close =
     .tooltiptext = Itxi
 
@@ -716,3 +719,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Ezkutatu bideoa beste leiho batean txandakatzeko botoia
     .accesskey = E
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Nabigazioa
+navbar-downloads =
+    .label = Deskargak
+navbar-overflow =
+    .tooltiptext = Tresna gehiago…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Inprimatu
+    .tooltiptext = Inprimatu orri hau… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Inprimatu
+    .tooltiptext = Inprimatu orri hau
+navbar-home =
+    .label = Hasiera-orria
+    .tooltiptext = { -brand-short-name } hasiera-orria
+navbar-library =
+    .label = Biltegia
+    .tooltiptext = Ikusi historia, gordetako laster-markak eta gehiago
+navbar-search =
+    .title = Bilatu
+navbar-accessibility-indicator =
+    .tooltiptext = Erabilgarritasun-eginbideak gaituta
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Nabigatzailearen fitxak
+tabs-toolbar-new-tab =
+    .label = Fitxa berria
+tabs-toolbar-list-all-tabs =
+    .label = Zerrendatu fitxa guztiak
+    .tooltiptext = Zerrendatu fitxa guztiak

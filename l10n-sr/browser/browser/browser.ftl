@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Додај у траку за адресу
 page-action-manage-extension =
     .label = Управљај додатком…
-page-action-remove-from-urlbar =
-    .label = Уклони са траке за адресу
 page-action-remove-extension =
     .label = Уклони додатак
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Претражи помоћу:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Промени подешавања претраге
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Промени подешавања претраге
 search-one-offs-context-open-new-tab =
@@ -251,8 +243,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Прикажи уређивач при чувању
     .accesskey = П
-bookmark-panel-done-button =
-    .label = Готово
 bookmark-panel-save-button =
     .label = Сачувај
 # Width of the bookmark panel.
@@ -294,8 +284,6 @@ identity-passive-loaded = Неки делови ове странице, поп�
 identity-active-loaded = Онемогућили сте заштиту на овој страници.
 identity-weak-encryption = Ова страница користи слабо шифровање.
 identity-insecure-login-forms = Пријаве које су унесене на овој страници су можда угрожене.
-identity-permissions =
-    .value = Дозволе
 identity-https-only-connection-upgraded = (надограђено на HTTPS)
 identity-https-only-label = Режим „Само HTTPS”
 identity-https-only-dropdown-on =
@@ -311,7 +299,6 @@ identity-permissions-storage-access-header = Колачићи трећих ст�
 identity-permissions-storage-access-hint = Ове стране могу користити вишестраничне колачиће и страничне податке током ваше посете страници.
 identity-permissions-storage-access-learn-more = Сазнајте више
 identity-permissions-reload-hint = Можда ћете морати поново учитати страницу да примените промене.
-identity-permissions-empty = Овом сајту нису додељене никакве посебне дозволе.
 identity-clear-site-data =
     .label = Обриши колачиће и податке сајта…
 identity-connection-not-secure-security-view = Веза са овим сајтом није безбедна.
@@ -399,12 +386,6 @@ bookmarks-toolbar-empty-message = Брзо приступите обележив
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Камера за дељење:
-    .accesskey = C
-popup-select-microphone =
-    .value = Микрофон за дељење:
-    .accesskey = M
 popup-select-camera-device =
     .value = Камера:
     .accesskey = К
@@ -418,14 +399,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Звучници
 popup-all-windows-shared = Сви видљиви прозори на екрану ће бити подељени.
-popup-screen-sharing-not-now =
-    .label = Не сада
-    .accesskey = Н
-popup-screen-sharing-never =
-    .label = Блокирај
-    .accesskey = Б
-popup-silence-notifications-checkbox = Онемогућите обавештења од { -brand-short-name }-а током дељења
-popup-silence-notifications-checkbox-warning = { -brand-short-name } неће приказивати обавештења док делите.
 popup-screen-sharing-block =
     .label = Блокирај
     .accesskey = Б
@@ -449,14 +422,10 @@ enable-devtools-popup-description = Да бисте користили преч�
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Претражи или унеси адресу
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Претражи или унеси адресу
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Прегледач је под даљинским управљањем
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -505,8 +474,6 @@ urlbar-go-button =
     .tooltiptext = Приказ адресе уписане у траку за адресе
 urlbar-page-action-button =
     .tooltiptext = Радње странице
-urlbar-pocket-button =
-    .tooltiptext = Сачувај у { -pocket-brand-name(case: "loc") }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -711,6 +678,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Прилагоди траку са алаткама…
     .accesskey = П
+toolbar-button-email-link =
+    .label = Пошаљи везу имејлом
+    .tooltiptext = Пошаљи имејлом везу до ове странице
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Сачувај страницу
+    .tooltiptext = Сачувај ову страницу ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Отвори датотеку
+    .tooltiptext = Отвори датотеку ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Синхронизоване картице
+    .tooltiptext = Прикажи картице са других уређаја
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Нови приватни прозор
+    .tooltiptext = Отвори нови приватни прозор ({ $shortcut })
 
 ## EME notification panel
 

@@ -5,9 +5,6 @@
 places-open =
     .label = Ireki
     .accesskey = I
-places-open-tab =
-    .label = Ireki fitxa berri batean
-    .accesskey = x
 places-open-in-tab =
     .label = Ireki fitxa berrian
     .accesskey = b
@@ -17,26 +14,6 @@ places-open-all-bookmarks =
 places-open-all-in-tabs =
     .label = Ireki guztiak fitxetan
     .accesskey = I
-places-open-window =
-    .label = Ireki leiho berri batean
-    .accesskey = n
-places-open-private-window =
-    .label = Ireki leiho pribatu berrian
-    .accesskey = p
-
-places-new-bookmark =
-    .label = Laster-marka berria…
-    .accesskey = b
-places-new-folder-contextmenu =
-    .label = Karpeta berria…
-    .accesskey = K
-places-new-folder =
-    .label = Karpeta berria…
-    .accesskey = a
-places-new-separator =
-    .label = Bereizle berria
-    .accesskey = z
-
 places-open-in-window =
     .label = Ireki leiho berrian
     .accesskey = b
@@ -87,10 +64,6 @@ places-delete-domain-data =
 places-sortby-name =
     .label = Sailkatu izenez
     .accesskey = S
-places-properties =
-    .label = Propietateak
-    .accesskey = i
-
 # places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
 places-edit-bookmark =
     .label = Editatu laster-marka…
@@ -108,6 +81,17 @@ places-remove-folder =
            *[other] Kendu karpetak
         }
     .accesskey = n
+
+places-edit-folder2 =
+    .label = Editatu karpeta…
+    .accesskey = d
+places-delete-folder =
+    .label =
+        { $count ->
+            [1] Ezabatu karpeta
+           *[other] Ezabatu karpetak
+        }
+    .accesskey = z
 
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
@@ -133,3 +117,5 @@ places-remove-bookmark =
 places-manage-bookmarks =
     .label = Kudeatu laster-markak
     .accesskey = K
+
+places-forget-about-this-site-forget = Ahaztu

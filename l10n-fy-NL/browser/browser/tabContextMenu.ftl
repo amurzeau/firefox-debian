@@ -51,9 +51,6 @@ bookmark-selected-tabs =
 bookmark-tab =
     .label = Blêdwizer foar ljepblêd meitjse
     .accesskey = l
-reopen-in-container =
-    .label = Opnij iepenje yn kontener
-    .accesskey = e
 tab-context-open-in-new-container-tab =
     .label = Iepenje yn nij kontenerljepblêd
     .accesskey = e
@@ -69,26 +66,6 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Mear ljepblêden slute
     .accesskey = M
-tab-context-undo-close-tabs =
-    .label =
-        { $tabCount ->
-            [1] Ljepblêd slute ûngedien meitsje
-            [one] Ljepblêd slute ûngedien meitsje
-           *[other] Ljepblêden slute ûngedien meitsje
-        }
-    .accesskey = u
-close-tab =
-    .label = Ljepblêd slute
-    .accesskey = s
-close-tabs =
-    .label = Ljepblêden slute
-    .accesskey = s
-move-tabs =
-    .label = Ljepblêden ferpleatse
-    .accesskey = f
-move-tab =
-    .label = Ljepblêd ferpleatse
-    .accesskey = f
 tab-context-share-url =
     .label = Diele
     .accesskey = e
@@ -114,6 +91,14 @@ tab-context-close-tabs =
            *[other] Ljepblêden slute
         }
     .accesskey = L
+tab-context-close-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] Ljepblêd slute
+            [one] { $tabCount } ljepblêd sluten
+           *[other] { $tabCount } ljepblêden sluten
+        }
+    .accesskey = s
 tab-context-move-tabs =
     .label =
         { $tabCount ->
@@ -122,3 +107,11 @@ tab-context-move-tabs =
            *[other] Ljepblêden ferpleatse
         }
     .accesskey = f
+
+tab-context-send-tabs-to-device =
+    .label =
+        { $tabCount ->
+            [one] Ljepblêd nei apparaat ferstjoere
+           *[other] { $tabCount } ljepblêden nei apparaat ferstjoere
+        }
+    .accesskey = s

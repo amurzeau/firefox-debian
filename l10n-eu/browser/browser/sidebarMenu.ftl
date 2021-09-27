@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Itxi alboko barra
+
+sidebar-close-button =
+    .tooltiptext = Itxi alboko barra

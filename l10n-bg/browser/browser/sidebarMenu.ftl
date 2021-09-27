@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Затваряне на лентата
+
+sidebar-close-button =
+    .tooltiptext = Затваряне на лентата

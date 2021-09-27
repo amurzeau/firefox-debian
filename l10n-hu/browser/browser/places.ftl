@@ -5,9 +5,6 @@
 places-open =
     .label = Megnyitás
     .accesskey = e
-places-open-tab =
-    .label = Megnyitás új lapon
-    .accesskey = l
 places-open-in-tab =
     .label = Megnyitás új lapon
     .accesskey = l
@@ -17,26 +14,6 @@ places-open-all-bookmarks =
 places-open-all-in-tabs =
     .label = Mindegyik megnyitása külön lapon
     .accesskey = m
-places-open-window =
-    .label = Megnyitás új ablakban
-    .accesskey = a
-places-open-private-window =
-    .label = Megnyitás új privát ablakban
-    .accesskey = p
-
-places-new-bookmark =
-    .label = Új könyvjelző…
-    .accesskey = n
-places-new-folder-contextmenu =
-    .label = Új mappa…
-    .accesskey = a
-places-new-folder =
-    .label = Új mappa…
-    .accesskey = a
-places-new-separator =
-    .label = Új elválasztó
-    .accesskey = e
-
 places-open-in-window =
     .label = Megnyitás új ablakban
     .accesskey = a
@@ -87,10 +64,6 @@ places-delete-domain-data =
 places-sortby-name =
     .label = Rendezés név szerint
     .accesskey = n
-places-properties =
-    .label = Tulajdonságok
-    .accesskey = T
-
 # places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
 places-edit-bookmark =
     .label = Könyvjelző szerkesztése…
@@ -109,6 +82,18 @@ places-remove-folder =
            *[other] Mappák eltávolítása
         }
     .accesskey = M
+
+places-edit-folder2 =
+    .label = Mappa szerkesztése…
+    .accesskey = e
+places-delete-folder =
+    .label =
+        { $count ->
+            [1] Mappa törlése
+            [one] Mappa törlése
+           *[other] Mappák törlése
+        }
+    .accesskey = t
 
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
@@ -132,6 +117,25 @@ places-remove-bookmark =
         }
     .accesskey = t
 
+# Variables:
+# $count (number) - The number of elements being selected for removal.
+places-delete-bookmark =
+    .label =
+        { $count ->
+            [1] Könyvjelző törlése
+            [one] Könyvjelző törlése
+           *[other] Könyvjelzők törlése
+        }
+    .accesskey = t
+
 places-manage-bookmarks =
     .label = Könyvjelzők kezelése
     .accesskey = K
+
+places-forget-about-this-site-confirmation-title = Webhely elfelejtése
+
+# Variables:
+# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
+places-forget-about-this-site-confirmation-message = Ez a művelet eltávolítja a(z) { $hostOrBaseDomain } domainhez kapcsolódó összes adatot, beleértve az előzményeket, a jelszavakat, a sütiket, a gyorsítótárat és a tartalmi beállításokat. Biztos, hogy folytatja?
+
+places-forget-about-this-site-forget = Elfelejtés

@@ -58,6 +58,12 @@ account-provisioner-button = Wobstarajće sej e-mejlowu adresu
 account-setup-password-toggle =
     .title = Hesło pokazać/schować
 
+account-setup-password-toggle-show =
+    .title = Hesło lutym teksće pokazać
+
+account-setup-password-toggle-hide =
+    .title = Hesło schować
+
 account-setup-remember-password = Hesło sej spomjatkować
     .accesskey = m
 
@@ -310,6 +316,21 @@ exchange-dialog-question = { -brand-short-name } je informacije wo konfiguraciji
 exchange-dialog-confirm-button = Přizjewjenje
 
 exchange-dialog-cancel-button = Přetorhnyć
+
+## Dismiss account creation dialog
+
+exit-dialog-title = E-mejlowe konto skonfigurowane njeje
+
+exit-dialog-description = Chceće woprawdźe konfigurowanski proces přetorhnyć? { -brand-short-name } da so hišće bjez e-mejloweho konta wužiwać, ale wjele funkcijow k dispoziciji njebudźe.
+
+account-setup-no-account-checkbox = { -brand-short-name } bjez e-mejloweho konta wužiwać
+    .accesskey = b
+
+exit-dialog-cancel-button = Dale konfigurować
+    .accesskey = D
+
+exit-dialog-confirm-button = Konfiguracija skónčić
+    .accesskey = K
 
 ## Alert dialogs
 

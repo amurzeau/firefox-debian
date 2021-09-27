@@ -57,11 +57,18 @@ printui-options = Опциялар
 printui-headers-footers-checkbox = Үстіңгі және астыңғы тақырыптамаларды баспаға шығару
 printui-backgrounds-checkbox = Фондарды баспаға шығару
 
-printui-selection-checkbox = Тек таңдалғанды баспаға шығару
-
 ## The "Format" section, select a version of the website to print. Radio
 ## options to select between the original page, selected text only, or a version
 ## where the page is processed with "Reader View".
+
+# The section title.
+printui-source-label = Пішімі
+# Option for printing the original page.
+printui-source-radio = Түпнұсқа
+# Option for printing just the content a user selected prior to printing.
+printui-selection-radio = Таңдалған
+# Option for "simplifying" the page by printing the Reader View version.
+printui-simplify-page-radio = Жеңілдетілген
 
 ##
 
@@ -74,14 +81,19 @@ printui-margins-default = Бастапқы
 printui-margins-min = Минималды
 printui-margins-none = Жоқ
 printui-margins-custom-inches = Таңдауыңызша (дюйм)
+printui-margins-custom-mm = Таңдауыңызша (мм)
 printui-margins-custom-top = Жоғарғы
 printui-margins-custom-top-inches = Жоғарғы (дюйм)
+printui-margins-custom-top-mm = Жоғарғы (мм)
 printui-margins-custom-bottom = Төменгі
 printui-margins-custom-bottom-inches = Төменгі (дюйм)
+printui-margins-custom-bottom-mm = Төменгі (мм)
 printui-margins-custom-left = Сол жақ
 printui-margins-custom-left-inches = Сол жақ (дюйм)
+printui-margins-custom-left-mm = Сол жақ (мм)
 printui-margins-custom-right = Оң жақ
 printui-margins-custom-right-inches = Оң жақ (дюйм)
+printui-margins-custom-right-mm = Оң жақ (мм)
 
 printui-system-dialog-link = Жүйелік сұхбатын қолданып, баспаға шығару…
 

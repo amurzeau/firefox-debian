@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Loka hliðslá
+
+sidebar-close-button =
+    .tooltiptext = Loka hliðslá

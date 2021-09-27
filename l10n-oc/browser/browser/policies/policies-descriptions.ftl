@@ -22,7 +22,7 @@ policy-Authentication = Configura l’autentificacion integrada pels sites web q
 
 policy-AutoLaunchProtocolsFromOrigins = Definir una lista de protocòls extèrns que son autorizats a partir d’orginas inventoriadas sens demandar a l’utilizaire.
 
-policy-BackgroundAppUpdate2 = Activar o desactivar la mesa a jorn en rèire-plan.
+policy-BackgroundAppUpdate2 = Activar o desactivar la mesa a jorn en rèireplan.
 
 policy-BlockAboutAddons = Bloca l’accès al gestionari de moduls (about:addons).
 
@@ -64,8 +64,6 @@ policy-DisableFirefoxStudies = Empacha { -brand-short-name } d’executar d’es
 policy-DisableForgetButton = Empacha l’accès al boton d’escafament de las donadas.
 
 policy-DisableFormHistory = Conservar pas d’istoric de las recèrcas e dels formularis.
-
-policy-DisableMasterPasswordCreation = Se activat, serà impossible de crear un senhal principal.
 
 policy-DisablePrimaryPasswordCreation = Se activat, serà impossible de crear un senhal principal.
 
@@ -140,8 +138,6 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Bascular lo compòrtam
 policy-LocalFileLinks = Autorizar los sites web a utilizar los ligams locals.
 
 policy-ManagedBookmarks = Configura una lista de marcapaginas gerits per l’administrator que pòdon pas èsser modificats per l’utilizaire.
-
-policy-MasterPassword = Requerir o empachar l’utilizacion d’un senhal principal.
 
 policy-ManualAppUpdateOnly = Autorizar solament las mesas a jorn manualas e assabentar pas l’utilizaire de la disponibilitat de mesas a jorn.
 
