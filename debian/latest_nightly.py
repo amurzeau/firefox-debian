@@ -39,8 +39,8 @@ def main():
         url = location.replace('.tar.bz2', '.txt')
         assert url != location
 
-        f = urllib.request.urlopen(url)
-        print(version, ' '.join(l.rstrip() for l in f.readlines()))
+        f = urllib.request.urlopen(url.replace('-l10n', ''))
+        print(version, ' '.join(l.decode().rstrip() for l in f.readlines()))
         f.close()
     elif p[3] == 'releases':
         version = p[4]
