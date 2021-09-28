@@ -38,7 +38,7 @@
   {
     "title": "bing",
     "url": "https://www.bing.com/",
-    "image_url": "images/bing-com@2x.png",
+    "image_url": "images/bing-com@2x.svg",
     "favicon_url": "favicons/bing-com.ico"
   },
   {
@@ -50,7 +50,7 @@
   {
     "title": "duckduckgo",
     "url": "https://www.duckduckgo.com/",
-    "image_url": "images/duckduckgo-com@2x.png",
+    "image_url": "images/duckduckgo-com@2x.svg",
     "favicon_url": "favicons/duckduckgo-com.ico"
   },
   {
