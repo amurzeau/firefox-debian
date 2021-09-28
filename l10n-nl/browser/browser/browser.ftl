@@ -547,6 +547,19 @@ urlbar-result-action-search-bookmarks = Bladwijzers doorzoeken
 urlbar-result-action-search-history = Geschiedenis doorzoeken
 urlbar-result-action-search-tabs = Tabbladen doorzoeken
 
+## Labels shown above groups of urlbar results
+
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = { $engine }-suggesties
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -679,6 +692,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = Offline werken
     .accesskey = f
+toolbar-overflow-customize-button =
+    .label = Werkbalk aanpassen…
+    .accesskey = a
 
 ## EME notification panel
 
@@ -711,3 +727,24 @@ remote-tabs-sync-now = Nu synchroniseren
 # "More" item in macOS share menu
 menu-share-more =
     .label = Meer…
+ui-tour-info-panel-close =
+    .tooltiptext = Sluiten
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = Pop-ups van { $uriHost } toestaan
+    .accesskey = P
+popups-infobar-block =
+    .label = Pop-ups van { $uriHost } blokkeren
+    .accesskey = P
+
+##
+
+popups-infobar-dont-show-message =
+    .label = Dit bericht niet tonen wanneer pop-ups worden geblokkeerd
+    .accesskey = n
+picture-in-picture-hide-toggle =
+    .label = Picture-in-Picture-knop verbergen
+    .accesskey = v

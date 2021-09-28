@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Hallinnoi liitännäisen käyttöä
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Hallinnoi kameran tai mikrofonin jakamista sivustolle
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Hallinnoi muiden kaiuttimien jakamista sivuston kanssa
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Avaa automaattisen toiston paneeli
 urlbar-persistent-storage-notification-anchor =
@@ -541,6 +545,9 @@ urlbar-result-action-search-bookmarks = Etsi kirjanmerkeistä
 urlbar-result-action-search-history = Etsi historiasta
 urlbar-result-action-search-tabs = Etsi välilehdistä
 
+## Labels shown above groups of urlbar results
+
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -673,6 +680,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = Työskentele yhteydettömässä tilassa
     .accesskey = y
+toolbar-overflow-customize-button =
+    .label = Muokkaa työkalupalkkia…
+    .accesskey = M
 
 ## EME notification panel
 
@@ -705,3 +715,24 @@ remote-tabs-sync-now = Synkronoi nyt
 # "More" item in macOS share menu
 menu-share-more =
     .label = Lisää…
+ui-tour-info-panel-close =
+    .tooltiptext = Sulje
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = Salli ponnahdusikkunat osoitteesta { $uriHost }
+    .accesskey = S
+popups-infobar-block =
+    .label = Estä ponnahdusikkunat osoitteesta { $uriHost }
+    .accesskey = S
+
+##
+
+popups-infobar-dont-show-message =
+    .label = Älä näytä tätä viestiä kun ponnahdusikkuna estetään
+    .accesskey = Ä
+picture-in-picture-hide-toggle =
+    .label = Piilota kuva kuvassa -kytkin
+    .accesskey = P

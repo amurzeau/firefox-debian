@@ -540,12 +540,25 @@ urlbar-result-action-search-bookmarks = 북마크 검색
 urlbar-result-action-search-history = 기록 검색
 urlbar-result-action-search-tabs = 탭 검색
 
+## Labels shown above groups of urlbar results
+
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = { $engine } 제안
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
 # Variables
 #  $domain (String): the domain that is full screen, e.g. "mozilla.org"
-fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> 이 전체 화면 모드입니다
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> 사이트가 전체 화면 모드입니다
 fullscreen-warning-no-domain = 이 문서는 전체 화면 모드입니다
 fullscreen-exit-button = 전체 화면 종료 (Esc)
 # "esc" is lowercase on mac keyboards, but uppercase elsewhere.
@@ -672,6 +685,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = 오프라인으로 작업
     .accesskey = w
+toolbar-overflow-customize-button =
+    .label = 도구 모음 사용자 지정…
+    .accesskey = C
 
 ## EME notification panel
 
@@ -704,3 +720,24 @@ remote-tabs-sync-now = 지금 동기화
 # "More" item in macOS share menu
 menu-share-more =
     .label = 더보기…
+ui-tour-info-panel-close =
+    .tooltiptext = 닫기
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = { $uriHost }의 팝업 허용
+    .accesskey = p
+popups-infobar-block =
+    .label = { $uriHost }의 팝업 차단
+    .accesskey = p
+
+##
+
+popups-infobar-dont-show-message =
+    .label = 팝업이 차단될 때 이 메시지를 표시하지 않음
+    .accesskey = D
+picture-in-picture-hide-toggle =
+    .label = 화면 속 화면 토글 숨기기
+    .accesskey = H

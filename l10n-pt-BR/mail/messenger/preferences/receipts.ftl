@@ -3,49 +3,36 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 receipts-dialog-window =
-    .title = Confirmações de leitura
-
+    .title = Confirmação de leitura
 return-receipt-checkbox =
-    .label = Sempre solicitar uma confirmação de leitura
-    .acceskey = S
-
+    .label = Ao enviar mensagens, sempre solicitar uma confirmação de leitura
+    .accesskey = v
 receipt-arrive-label = Ao receber uma confirmação de leitura:
-
 receipt-leave-radio =
-    .label = Deixar na pasta “Entrada”
-    .acceskey = E
-
+    .label = Deixar na pasta 'Entrada'
+    .accesskey = i
 receipt-move-radio =
-    .label = Mover para a pasta “Enviados”
-    .acceskey = v
-
+    .label = Mover para a pasta 'Enviados'
+    .accesskey = m
 receipt-request-label = Ao receber uma solicitação de confirmação de leitura:
-
 receipt-return-never-radio =
     .label = Nunca enviar confirmação de leitura
-    .acceskey = N
-
+    .accesskey = n
 receipt-return-some-radio =
     .label = Permitir confirmação de leitura de algumas mensagens
-    .acceskey = r
-
+    .accesskey = r
 receipt-not-to-cc =
-    .value = Eu não estou em Para ou Cc da mensagem:
-    .acceskey = u
-
+    .value = Se eu não estiver em 'Para' ou 'Cc' da mensagem:
+    .accesskey = S
 receipt-send-never-label =
     .label = Nunca enviar
-
 receipt-send-always-label =
     .label = Sempre enviar
-
 receipt-send-ask-label =
     .label = Perguntar
-
 sender-outside-domain =
-    .value = Remetente está fora do meu domínio:
-    .acceskey = m
-
+    .value = Remetente estiver fora do meu domínio:
+    .accesskey = f
 other-cases-label =
-    .value = Nos demais casos:
-    .acceskey = o
+    .value = Em todos os outros casos:
+    .accesskey = t

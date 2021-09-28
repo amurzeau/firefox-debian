@@ -7,7 +7,7 @@
 <!-- XXX rearrange entities to match physical layout when l10n isn't an issue -->
 <!-- LOCALIZATION NOTE (clearTimeDuration.*): "Time range to clear" dropdown.
      See UI mockup at bug 480169 -->
-<!ENTITY clearTimeDuration.label          "Χρονικό διάστημα εκκαθάρισης: ">
+<!ENTITY clearTimeDuration.label          "Χρονικό διάστημα εκκαθάρισης:">
 <!ENTITY clearTimeDuration.accesskey      "τ">
 <!ENTITY clearTimeDuration.lastHour       "Τελευταία ώρα">
 <!ENTITY clearTimeDuration.last2Hours     "Τελευταίες δύο ώρες">
@@ -29,7 +29,7 @@ that require it.  -->
 
 <!ENTITY itemHistory.label                 "Ιστορικό περιήγησης">
 <!ENTITY itemHistory.accesskey             "Ι">
-<!ENTITY itemCookies.label                 "Cookies">
+<!ENTITY itemCookies.label                 "Cookie">
 <!ENTITY itemCookies.accesskey             "C">
 <!ENTITY itemCache.label                   "Κρυφή μνήμη">
 <!ENTITY itemCache.accesskey               "Κ">

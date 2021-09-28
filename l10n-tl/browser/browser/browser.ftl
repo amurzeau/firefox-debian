@@ -540,6 +540,9 @@ urlbar-result-action-search-bookmarks = Hanapin sa mga Bookmark
 urlbar-result-action-search-history = Hanapin sa Kasaysayan
 urlbar-result-action-search-tabs = Hanapin sa mga Tab
 
+## Labels shown above groups of urlbar results
+
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -664,6 +667,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = Magtrabaho nang Offline
     .accesskey = k
+toolbar-overflow-customize-button =
+    .label = I-customize ang Toolbar...
+    .accesskey = C
 
 ## EME notification panel
 
@@ -676,9 +682,41 @@ eme-notifications-drm-content-playing-dismiss-accesskey = D
 ## Password save/update panel
 
 panel-save-update-username = Username
+panel-save-update-password = Password
 
 ## Add-on removal warning
 
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Alisin { $name }?
 
 ## Remote / Synced tabs
 
+remote-tabs-sync-now = I-sync Ngayon
+
+##
+
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Higit pa...
+ui-tour-info-panel-close =
+    .tooltiptext = Isarado
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = Payagan ang mga pop-up para sa { $uriHost }
+    .accesskey = p
+popups-infobar-block =
+    .label = Harangin ang mga pop-up para sa { $uriHost }
+    .accesskey = p
+
+##
+
+popups-infobar-dont-show-message =
+    .label = Huwag ipakita ang mensaheng ito kapag hinaharang ang mga pop-up
+    .accesskey = D
+picture-in-picture-hide-toggle =
+    .label = Itago ang Toggle para sa Picture-in-Picture
+    .accesskey = H

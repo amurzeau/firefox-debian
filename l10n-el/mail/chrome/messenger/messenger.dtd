@@ -59,7 +59,7 @@
 <!ENTITY getAllNewMsgCmdPopupMenu.accesskey "λ">
 <!ENTITY getNewMsgCurrentAccountCmdPopupMenu.label "Τον τρέχοντα λογαριασμό">
 <!ENTITY getNewMsgCurrentAccountCmdPopupMenu.accesskey "Τ">
-<!ENTITY getNextNMsgCmd2.label "Λήψη νέων μηνυμάτων ειδήσεων">
+<!ENTITY getNextNMsgCmd2.label "Λήψη επόμενων μηνυμάτων συζητήσεων">
 <!ENTITY getNextNMsgCmd2.accesskey "ω">
 <!ENTITY sendUnsentCmd.label "Αποστολή μη απεσταλμένων μηνυμάτων">
 <!ENTITY sendUnsentCmd.accesskey "π">
@@ -202,8 +202,8 @@
 <!ENTITY sortByFromCmd.accesskey "π">
 <!ENTITY sortByRecipientCmd.label "Παραλήπτη">
 <!ENTITY sortByRecipientCmd.accesskey "ρ">
-<!ENTITY sortByCorrespondentCmd.label "Ανταποκριτές">
-<!ENTITY sortByCorrespondentCmd.accesskey "ν">
+<!ENTITY sortByCorrespondentCmd.label "Επιστολογράφοι">
+<!ENTITY sortByCorrespondentCmd.accesskey "π">
 <!ENTITY sortByUnreadCmd.label "Αναγνωσμένα">
 <!ENTITY sortByUnreadCmd.accesskey "γ">
 <!ENTITY sortByOrderReceivedCmd.label "Κατά σειρά παραλαβής">
@@ -593,9 +593,9 @@
 <!ENTITY printButton.tooltip "Εκτύπωση μηνύματος">
 <!ENTITY stopButton.tooltip "Διακοπή της τρέχουσας μεταφοράς">
 <!ENTITY junkButton.tooltip "Επισήμανση επιλεγμένων μηνυμάτων ως ανεπιθύμητων">
-<!ENTITY notJunkButton.tooltip "Επισήμανση επιλεγμένων μηνυμάτων ως μη ανεπιθύμητων">
+<!ENTITY notJunkButton.tooltip "Επισήμανση επιλεγμένων μηνυμάτων ως επιθυμητών">
 <!ENTITY addressBookButton.tooltip "Μετάβαση στο ευρετήριο διευθύνσεων">
-<!ENTITY chatButton.tooltip 'Εμφάνιση καρτέλας "Συνομιλία"'>
+<!ENTITY chatButton.tooltip "Εμφάνιση καρτέλας «Συνομιλία»">
 <!ENTITY tagButton.tooltip "Ετικέτα σε μηνύματα">
 <!ENTITY compactButton.tooltip "Αφαίρεση διαγραμμένων μηνυμάτων από τον επιλεγμένο φάκελο">
 <!ENTITY appmenuButton1.tooltip "Προβολή του μενού του &brandShortName;">
@@ -660,7 +660,7 @@
 <!ENTITY folderContextRemove.accesskey "φ">
 <!ENTITY folderContextCompact.label "Σύμπτυξη">
 <!ENTITY folderContextCompact.accesskey "Σ">
-<!ENTITY folderContextEmptyTrash.label "Άδειασμα του κάδου απορριμμάτων">
+<!ENTITY folderContextEmptyTrash.label "Άδειασμα απορριμμάτων">
 <!ENTITY folderContextEmptyTrash.accesskey "μ">
 <!ENTITY folderContextEmptyJunk.label "Διαγραφή ανεπιθύμητων">
 <!ENTITY folderContextEmptyJunk.accesskey "θ">
@@ -955,19 +955,19 @@
 <!ENTITY preferencesCmdMac.commandkey   ",">
 <!ENTITY preferencesCmdMac.modifiers    "accel">
 <!ENTITY servicesMenuMac.label          "Υπηρεσίες">
-<!ENTITY hideThisAppCmdMac.label        "Απόκρυψη &brandShortName;">
+<!ENTITY hideThisAppCmdMac.label        "Απόκρυψη του &brandShortName;">
 <!ENTITY hideThisAppCmdMac.commandkey   "H">
 <!ENTITY hideThisAppCmdMac.modifiers    "accel">
 <!ENTITY hideOtherAppsCmdMac.label      "Απόκρυψη άλλων">
 <!ENTITY hideOtherAppsCmdMac.commandkey "H">
 <!ENTITY hideOtherAppsCmdMac.modifiers  "accel,alt">
-<!ENTITY showAllAppsCmdMac.label        "Προβολή όλων">
+<!ENTITY showAllAppsCmdMac.label        "Εμφάνιση όλων">
 
 <!-- Mac OS X Dock Icon pop-up menu -->
 <!ENTITY dockOptions.label              "Επιλογές εικονιδίου εφαρμογής…">
 <!ENTITY writeNewMessageDock.label      "Σύνταξη νέου μηνύματος">
-<!ENTITY openAddressBookDock.label      "Άνοιγμα βιβλίου διευθύνσεων">
+<!ENTITY openAddressBookDock.label      "Άνοιγμα ευρετηρίου">
 
 <!-- Content tab Navigation buttons -->
-<!ENTITY browseBackButton.tooltip    "Μετάβαση μια σελίδα πίσω">
-<!ENTITY browseForwardButton.tooltip "Μετάβαση μια σελίδα μπροστά">
+<!ENTITY browseBackButton.tooltip    "Μετάβαση μία σελίδα πίσω">
+<!ENTITY browseForwardButton.tooltip "Μετάβαση μία σελίδα μπροστά">

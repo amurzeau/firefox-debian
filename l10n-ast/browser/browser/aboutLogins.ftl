@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
 
-about-logins-page-title = Anicios de sesión y contraseñes
+about-logins-page-title = Cuentes y contraseñes
 
 # "Google Play" and "App Store" are both branding and should not be translated
 
@@ -13,12 +13,9 @@ login-app-promo-android =
     .alt = Baxar en Google Play
 login-app-promo-apple =
     .alt = Baxar n'App Store
-
 login-filter =
-    .placeholder = Buscar anicios de sesión
-
-create-login-button = Crear un aniciu de sesión
-
+    .placeholder = Buscar cuentes
+create-login-button = Crear una cuenta
 fxaccounts-sign-in-text = Consigui les tos contraseñes n'otros preseos
 fxaccounts-sign-in-button = Aniciar sesión en { -sync-brand-short-name }
 fxaccounts-sign-in-sync-button = Aniciar sesión pa sincronizar
@@ -32,8 +29,8 @@ menu =
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Importar d'otru restolador…
 about-logins-menu-menuitem-import-from-a-file = Importar d'un ficheru…
-about-logins-menu-menuitem-export-logins = Esportar los anicios de sesión…
-about-logins-menu-menuitem-remove-all-logins = Quitar tolos anicios de sesión…
+about-logins-menu-menuitem-export-logins = Esportar les cuentes…
+about-logins-menu-menuitem-remove-all-logins = Quitar toles cuentes…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Opciones
@@ -46,11 +43,11 @@ menu-menuitem-iphone-app = { -lockwise-brand-short-name } pa iPhone y iPad
 ## Login List
 
 login-list =
-    .aria-label = Anicios de sesión que concasen cola consulta de busca
+    .aria-label = Cuentes que concasen cola consulta de busca
 login-list-count =
     { $count ->
-        [one] { $count } aniciu de sesión
-       *[other] { $count } anicios de sesión
+        [one] { $count } cuenta
+       *[other] { $count } cuentes
     }
 login-list-sort-label-text = Ordenar por:
 login-list-name-option = Nome (A-Z)
@@ -58,11 +55,11 @@ login-list-name-reverse-option = Nome (Z-A)
 about-logins-login-list-alerts-option = Alertes
 login-list-last-changed-option = Última modificación
 login-list-last-used-option = Últimu usu
-login-list-intro-title = Nun s'atoparon anicios de sesión
+login-list-intro-title = Nun s'atoparon cuentes
 login-list-intro-description = Equí van amosase les contraseñes cuando les guardes en { -brand-product-name }.
-about-logins-login-list-empty-search-title = Nun s'atoparon anicios de sesión
+about-logins-login-list-empty-search-title = Nun s'atoparon cuentes
 about-logins-login-list-empty-search-description = Nun hai resultaos que concasen cola busca.
-login-list-item-title-new-login = Aniciu de sesión nuevu
+login-list-item-title-new-login = Cuenta nueva
 login-list-item-subtitle-new-login = Introduz los datos d'aniciu de sesión
 login-list-item-subtitle-missing-username = (ensin nome d'usuariu)
 about-logins-list-item-breach-icon =
@@ -72,24 +69,22 @@ about-logins-list-item-vulnerable-password-icon =
 
 ## Introduction screen
 
-login-intro-heading = ¿Busques los anicios de sesión guardaos? Configura { -sync-brand-short-name }.
-
-about-logins-login-intro-heading-logged-out2 = ¿Busques los tos anicios de sesión guardaos? Activa la sincronización pa importalos.
-about-logins-login-intro-heading-logged-in = Nun s'atoparon anicios de sesión sincronizaos.
-login-intro-description = Si guardesti los anicios de sesión nel { -brand-product-name } d'otru preséu, esti ye'l mou de tenelos equí:
-login-intro-instruction-fxa = Crea una { -fxaccount-brand-name } o anicia sesión nel preséu onde se guarden los tos anicios de sesión
-login-intro-instruction-fxa-settings = Asegúrate de que marcares el caxellu «Anicios de sesión» nos axustes de { -sync-brand-short-name }
+login-intro-heading = ¿Busques les cuentes guardaes? Configura { -sync-brand-short-name }.
+about-logins-login-intro-heading-logged-out2 = ¿Busques les tos cuentes guardaes? Activa la sincronización pa importales.
+about-logins-login-intro-heading-logged-in = Nun s'atoparon cuentes sincronizaes.
+login-intro-description = Si guardesti les cuentes nel { -brand-product-name } d'otru preséu, esti ye'l mou de tenelos equí:
+login-intro-instruction-fxa = Crea una { -fxaccount-brand-name } o anicia sesión nel preséu onde se guarden les tos cuentes
+login-intro-instruction-fxa-settings = Asegúrate de que marquesti'l caxellu «Cuentes» nos axustes de { -sync-brand-short-name }
 about-logins-intro-instruction-help = Visita'l <a data-l10n-name="help-link">Sofitu de { -lockwise-brand-short-name }</a> pa más ayuda
-login-intro-instructions-fxa = Crea una { -fxaccount-brand-name } o anicia sesión nel preséu onde se guarden los tos anicios de sesión
-login-intro-instructions-fxa-settings = Vete p'Axustes > Sync > Activar la sincronización… Esbilla'l caxellu «Anicios de sesión y contraseñes»
+login-intro-instructions-fxa = Crea una { -fxaccount-brand-name } o anicia sesión nel preséu onde se guarden les tos cuentes
+login-intro-instructions-fxa-settings = Vete p'Axustes > Sync > Activar la sincronización… Marca'l caxellu «Cuentes y contraseñes».
 login-intro-instructions-fxa-help = Visita'l <a data-l10n-name="help-link">Sofitu de { -lockwise-brand-short-name }</a> pa más ayuda.
-about-logins-intro-import = Si los tos anicios de sesión tán guardaos n'otru restolador, pues <a data-l10n-name="import-link">importalos a { -lockwise-brand-short-name }</a>
-
-about-logins-intro-import2 = Si los tos anicios de sesión tán guardaos fuera de { -brand-product-name }, pues <a data-l10n-name="import-browser-link">importalos d'otru restolador</a> o <a data-l10n-name="import-file-link">d'un ficheru</a>
+about-logins-intro-import = Si les tos cuentes tán guardaes n'otru restolador, pues <a data-l10n-name="import-link">importales a { -lockwise-brand-short-name }</a>
+about-logins-intro-import2 = Si les tos cuentes tán guardaes fuera de { -brand-product-name }, pues <a data-l10n-name="import-browser-link">importales d'otru restolador</a> o <a data-l10n-name="import-file-link">d'un ficheru</a>
 
 ## Login
 
-login-item-new-login-title = Creación d'un aniciu de sesión
+login-item-new-login-title = Creación d'una cuenta
 login-item-edit-button = Editar
 about-logins-login-item-remove-button = Quitar
 login-item-origin-label = Direición del sitiu web
@@ -125,14 +120,12 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 about-logins-edit-login-os-auth-dialog-message-win = Pa editar l'aniciu de sesión, introduz los datos d'aniciu de sesión de Windows. Esto ayuda a protexer la seguranza de les tos cuentes.
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
-about-logins-edit-login-os-auth-dialog-message-macosx = editar l'aniciu de sesión guardáu
-
+about-logins-edit-login-os-auth-dialog-message-macosx = editar la cuenta guardada
 # This message can be seen when attempting to reveal a password in about:logins on Windows.
 about-logins-reveal-password-os-auth-dialog-message-win = Pa ver la contraseña, introduz los tos datos d'aniciu de sesión de Windows. Esto ayuda a protexer la seguranza de les tos cuentes.
 # This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = desvelar la contraseña guardada
-
 # This message can be seen when attempting to copy a password in about:logins on Windows.
 about-logins-copy-password-os-auth-dialog-message-win = Pa copiar la contraseña, introduz los tos datos d'aniciu de sesión de Windows. Esto ayuda a protexer la seguranza de les tos cuentes.
 # This message can be seen when attempting to copy a password in about:logins
@@ -141,17 +134,16 @@ about-logins-copy-password-os-auth-dialog-message-macosx = copiar la contraseña
 
 ## Master Password notification
 
-master-password-notification-message = Introduz la contraseña maestra pa ver los anicios de sesión y contraseñes guardaos
-
+master-password-notification-message = Introduz la contraseña maestra pa ver les cuentes y contraseñes guardaes
 # This message can be seen when attempting to export a password in about:logins on Windows.
-about-logins-export-password-os-auth-dialog-message-win = Pa esportar los anicios de sesión, introduz los tos datos d'aniciu de sesión de Windows. Esto ayuda a protexer la seguranza de les tos cuentes.
+about-logins-export-password-os-auth-dialog-message-win = Pa esportar les cuentes, introduz los tos datos d'aniciu de sesión de Windows. Esto ayuda a protexer la seguranza de les tos cuentes.
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
-about-logins-export-password-os-auth-dialog-message-macosx = esportar los anicios de sesión y contraseñes guardaos
+about-logins-export-password-os-auth-dialog-message-macosx = esportar les cuentes y contraseñes guardaes
 
 ## Primary Password notification
 
-about-logins-primary-password-notification-message = Introduz al contraseña primaria pa ver los anicios de sesión y contraseñes guardaos
+about-logins-primary-password-notification-message = Introduz al contraseña primaria pa ver les cuentes y contraseñes guardaes
 master-password-reload-button =
     .label = Aniciar sesión
     .accesskey = A
@@ -160,8 +152,8 @@ master-password-reload-button =
 
 enable-password-sync-notification-message =
     { PLATFORM() ->
-        [windows] ¿Quies tener los tos anicios de sesión onde uses { -brand-product-name }? Vete a les opciones de { -sync-brand-short-name } y marca'l caxellu «Anicios de sesión».
-       *[other] ¿Quies tener los tos anicios de sesión onde uses { -brand-product-name }? Vete a les preferencies de { -sync-brand-short-name } y marca'l caxellu «Anicios de sesión».
+        [windows] ¿Quies tener les tos cuentes onde uses { -brand-product-name }? Vete a les opciones de { -sync-brand-short-name } y marca'l caxellu «Cuentes».
+       *[other] ¿Quies tener les tos cuentes onde uses { -brand-product-name }? Vete a les preferencies de { -sync-brand-short-name } y marca'l caxellu «Cuentes».
     }
 enable-password-sync-preferences-button =
     .label =
@@ -179,56 +171,48 @@ about-logins-enable-password-sync-dont-ask-again-button =
 confirmation-dialog-cancel-button = Encaboxar
 confirmation-dialog-dismiss-button =
     .title = Encaboxar
-
-about-logins-confirm-remove-dialog-title = ¿Quitar esti aniciu de sesión?
+about-logins-confirm-remove-dialog-title = ¿Quitar esta cuenta?
 confirm-delete-dialog-message = Esta aición nun pue desfacese.
 about-logins-confirm-remove-dialog-confirm-button = Quitar
-
 about-logins-confirm-remove-all-dialog-confirm-button-label =
     { $count ->
         [1] Quitar
         [one] Quitar
        *[other] Quitar too
     }
-
 about-logins-confirm-remove-all-dialog-checkbox-label =
     { $count ->
-        [1] Sí, quitar esti aniciu de sesión
-        [one] Sí, quitar esti aniciu de sesión
-       *[other] Sí, quitar estos anicios de sesión
+        [1] Sí, quitar esta cuenta
+        [one] Sí, quitar esta cuenta
+       *[other] Sí, quitar estes cuentes
     }
-
 about-logins-confirm-remove-all-dialog-title =
     { $count ->
-        [one] ¿Quitar { $count } aniciu de sesión?
-       *[other] ¿Quitar { $count } anicios de sesión?
+        [one] ¿Quitar { $count } cuenta?
+       *[other] ¿Quitar { $count } cuentes?
     }
 about-logins-confirm-remove-all-dialog-message =
     { $count ->
-        [1] Esto va quitar l'aniciu de sesión que guardares en { -brand-short-name } y cualesquier alerta d'arrampuñamientu qu'apaeza equí. Nun vas ser a desfacer esta aición.
-        [one] Esto va quitar l'aniciu de sesión que guardares en { -brand-short-name } y cualesquier alerta d'arrampuñamientu qu'apaeza equí. Nun vas ser a desfacer esta aición.
-       *[other] Esto va quitar los anicios de sesión que guardares en { -brand-short-name } y cualesquier alerta d'arrampuñamientu qu'apaeza equí. Nun vas ser a desfacer esta aición.
+        [1] Esto va quitar la cuenta que guardares en { -brand-short-name } y cualesquier alerta d'arrampuñamientu qu'apaeza equí. Nun vas ser a desfacer esta aición.
+        [one] Esto va quitar la cuenta que guardares en { -brand-short-name } y cualesquier alerta d'arrampuñamientu qu'apaeza equí. Nun vas ser a desfacer esta aición.
+       *[other] Esto va quitar les cuentes que guardares en { -brand-short-name } y cualesquier alerta d'arrampuñamientu qu'apaeza equí. Nun vas ser a desfacer esta aición.
     }
-
 about-logins-confirm-remove-all-sync-dialog-title =
     { $count ->
-        [one] ¿Quitar { $count } aniciu de sesión de tolos preseos?
-       *[other] ¿Quitar { $count } anicios de sesión de tolos preseos?
+        [one] ¿Quitar { $count } cuenta de tolos preseos?
+       *[other] ¿Quitar { $count } cuentes de tolos preseos?
     }
 about-logins-confirm-remove-all-sync-dialog-message =
     { $count ->
-        [1] Esto va quitar l'aniciu de sesión que guardares nel { -brand-short-name } de tolos preseos sincronizaos cola to { -fxaccount-brand-name }. Tamién va quitar les alertes d'arrampuñamientu qu'apaezan equí. Nun vas ser a desfacer esta aición.
-        [one] Esto va quitar l'aniciu de sesión que guardares nel { -brand-short-name } de tolos preseos sincronizaos cola to { -fxaccount-brand-name }. Tamién va quitar les alertes d'arrampuñamientu qu'apaezan equí. Nun vas ser a desfacer esta aición.
-       *[other] Esto va quitar los anicios de sesión que guardares nel { -brand-short-name } de tolos preseos sincronizaos cola to { -fxaccount-brand-name }. Tamién va quitar les alertes d'arrampuñamientu qu'apaezan equí. Nun vas ser a desfacer esta aición.
+        [1] Esto va quitar la cuenta que guardares nel { -brand-short-name } de tolos preseos sincronizaos cola to { -fxaccount-brand-name }. Tamién va quitar les alertes d'arrampuñamientu qu'apaezan equí. Nun vas ser a desfacer esta aición.
+        [one] Esto va quitar la cuenta que guardares nel { -brand-short-name } de tolos preseos sincronizaos cola to { -fxaccount-brand-name }. Tamién va quitar les alertes d'arrampuñamientu qu'apaezan equí. Nun vas ser a desfacer esta aición.
+       *[other] Esto va quitar les cuentes que guardares nel { -brand-short-name } de tolos preseos sincronizaos cola to { -fxaccount-brand-name }. Tamién va quitar les alertes d'arrampuñamientu qu'apaezan equí. Nun vas ser a desfacer esta aición.
     }
-
-about-logins-confirm-export-dialog-title = Esportación d'anicios de sesión y contraseñes
+about-logins-confirm-export-dialog-title = Esportación de cuentes y contraseñes
 about-logins-confirm-export-dialog-message = Les contraseñes van guardase como testu lleíble (por exemplu: C0ntR4s4ñ4M4l4), polo que tol mundu va poder abrir el ficheru esportáu y veles.
 about-logins-confirm-export-dialog-confirm-button = Esportar…
-
 about-logins-alert-import-title = Completóse la importación
 about-logins-alert-import-message = Mira'l sumariu detalláu de la importación
-
 confirm-discard-changes-dialog-title = ¿Escartar los cambeos ensin guardar?
 confirm-discard-changes-dialog-message = Van perdese tolos cambeos ensin guardar.
 confirm-discard-changes-dialog-confirm-button = Escartar
@@ -259,15 +243,13 @@ about-logins-vulnerable-alert-learn-more-link = Lleer más
 # Variables:
 #   $loginTitle (String) - The title of the website associated with the login.
 about-logins-error-message-duplicate-login-with-link = Yá esiste una entrada pa «{ $loginTitle }» con esi nome d'usuariu. <a data-l10n-name="duplicate-link">¿Dir a la entrada esistente?</a>
-
 # This is a generic error message.
 about-logins-error-message-default = Asocedió un fallu al tentar de guardar esta contraseña.
-
 
 ## Login Export Dialog
 
 # Title of the file picker dialog
-about-logins-export-file-picker-title = Esportación del ficheru d'anicios de sesión
+about-logins-export-file-picker-title = Esportación del ficheru de cuentes
 # The default file name shown in the file picker when exporting saved logins.
 # This must end in .csv
 about-logins-export-file-picker-default-filename = anicios_sesión.csv
@@ -283,7 +265,7 @@ about-logins-export-file-picker-csv-filter-title =
 ## Login Import Dialog
 
 # Title of the file picker dialog
-about-logins-import-file-picker-title = Importación d'un ficheru d'anicios de sesión
+about-logins-import-file-picker-title = Importación d'un ficheru de cuentes
 about-logins-import-file-picker-import-button = Importar
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -307,20 +289,18 @@ about-logins-import-file-picker-tsv-filter-title =
 about-logins-import-dialog-title = Completóse la importación
 about-logins-import-dialog-items-added =
     { $count ->
-        [one] <span>Anicios de sesión amestaos:</span> <span data-l10n-name="count">{ $count }</span>
-       *[other] <span>Anicios de sesión amestaos:</span> <span data-l10n-name="count">{ $count }</span>
+        [one] <span>Cuentes amestaes:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Cuentes amestaes:</span> <span data-l10n-name="count">{ $count }</span>
     }
-
 about-logins-import-dialog-items-modified =
     { $count ->
-        [one] <span>Anicios de sesión anovaos:</span> <span data-l10n-name="count">{ $count }</span>
-       *[other] <span>Anicios de sesión anovaos:</span> <span data-l10n-name="count">{ $count }</span>
+        [one] <span>Cuentes anovaes:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Cuentes anovaes:</span> <span data-l10n-name="count">{ $count }</span>
     }
-
 about-logins-import-dialog-items-no-change =
     { $count ->
-        [one] <span>Anicios de sesión duplicaos:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(nun s'importó)</span>
-       *[other] <span>Anicios de sesión duplicaos:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(nun s'importaron)</span>
+        [one] <span>Cuentes duplicaes:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(nun s'importó)</span>
+       *[other] <span>Cuentes duplicaes:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(nun s'importaron)</span>
     }
 about-logins-import-dialog-items-error =
     { $count ->
@@ -328,23 +308,20 @@ about-logins-import-dialog-items-error =
        *[other] <span>Fallos:</span> <span data-l10n-name="count">{ $count }</span><span data-l10n-name="meta">(nun s'importaron)</span>
     }
 about-logins-import-dialog-done = Fecho
-
 about-logins-import-dialog-error-title = Fallu de la importación
-about-logins-import-dialog-error-conflicting-values-title = Un aniciu de sesión tien dellos valores en conflictu
-about-logins-import-dialog-error-conflicting-values-description = Por exemplu: nomes d'usuariu, contraseñes o URL múltiples pa un aniciu de sesión.
+about-logins-import-dialog-error-conflicting-values-title = Una cuenta tien dellos valores en conflictu
+about-logins-import-dialog-error-conflicting-values-description = Por exemplu: nomes d'usuariu, contraseñes o URL múltiples pa una cuenta.
 about-logins-import-dialog-error-file-format-title = Problemes col formatu del ficheru
 about-logins-import-dialog-error-file-format-description = Falten les testeres de les columnes o son incorreutes. Asegúrate de que'l ficheru inclúi les columnes pal nome d'usuariu, la contraseña y la URL.
 about-logins-import-dialog-error-file-permission-title = Nun ye posible lleer el ficheru
 about-logins-import-dialog-error-file-permission-description = { -brand-short-name } nun tienes permisu pa lleer el ficheru. Prueba a camudar los sos permisos.
 about-logins-import-dialog-error-unable-to-read-title = Nun ye posible analizar el ficheru
 about-logins-import-dialog-error-unable-to-read-description = Asegúrate de qu'esbillesti un ficheru CSV o TSV.
-about-logins-import-dialog-error-no-logins-imported = Nun s'importó nengún aniciu de sesión
+about-logins-import-dialog-error-no-logins-imported = Nun s'importó nenguna cuenta
 about-logins-import-dialog-error-learn-more = Lleer más
 about-logins-import-dialog-error-cancel = Encaboxar
-
 about-logins-import-report-title = Sumariu de la importación
-about-logins-import-report-description = Anicios de sesión y contraseñes importaos a { -brand-short-name }.
-
+about-logins-import-report-description = Cuentes y contraseñes importaes a { -brand-short-name }.
 #
 # Variables:
 #  $number (number) - The number of the row
@@ -362,13 +339,13 @@ about-logins-import-report-row-description-error-missing-field = Fallu: Falta { 
 
 about-logins-import-report-added =
     { $count ->
-        [one] <div data-l10n-name="count">{ $count }</div><div data-l10n-name="details">Aniciu de sesión nuevu</div>
-       *[other] <div data-l10n-name="count">{ $count }</div><div data-l10n-name="details">Anicios de sesión nuevos</div>
+        [one] <div data-l10n-name="count">{ $count }</div><div data-l10n-name="details">Cuenta nueva</div>
+       *[other] <div data-l10n-name="count">{ $count }</div><div data-l10n-name="details">Cuentes nueves</div>
     }
 about-logins-import-report-modified =
     { $count ->
-        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Aniciu de sesión anováu</div>
-       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Anicios de sesión anovaos</div>
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Cuenta anovada</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Cuentes anovaes</div>
     }
 
 ## Logins import report page
