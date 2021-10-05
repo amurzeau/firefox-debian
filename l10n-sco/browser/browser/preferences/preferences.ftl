@@ -8,26 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Anely when { -brand-short-name } is set tae block kent trackers
 do-not-track-option-always =
     .label = Ayeweys
-pref-page-title =
-    { PLATFORM() ->
-        [windows] Options
-       *[other] Preferences
-    }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Please keep the placeholder string short to avoid truncation.
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input-box =
-    .style = width: 15.4em
-    .placeholder =
-        { PLATFORM() ->
-            [windows] Airt-oot in Options
-           *[other] Airt-oot in Preferences
-        }
 settings-page-title = Settins
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
@@ -55,9 +35,6 @@ category-search =
 pane-privacy-title = Privacy & Siccarness
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-pane-sync-title2 = { -sync-brand-short-name }
-category-sync2 =
-    .tooltiptext = { pane-sync-title2 }
 pane-sync-title3 = Sync
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
@@ -96,21 +73,12 @@ restart-later = Restert Efter
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their home page
-# is being controlled by an extension.
-extension-controlled-homepage-override = An extension, <img data-l10n-name="icon"/> { $name }, is controllin yer hame page.
-# This string is shown to notify the user that their new tab page
-# is being controlled by an extension.
-extension-controlled-new-tab-url = An extension, <img data-l10n-name="icon"/> { $name }, is controllin yer New Tab page.
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
 extension-controlled-password-saving = An extension, <img data-l10n-name="icon"/> { $name }, is controllin this settin.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = An extension, <img data-l10n-name="icon"/> { $name }, is controllin this settin.
-# This string is shown to notify the user that the default search engine
-# is being controlled by an extension.
-extension-controlled-default-search = An extension, <img data-l10n-name="icon"/> { $name }, has set yer staunart airt-oot engine.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = An extension, <img data-l10n-name="icon"/> { $name }, needs Conteener Tabs.
@@ -131,25 +99,12 @@ extension-controlled-enable = To mak yaise o the extension gang tae <img data-l1
 
 search-results-header = Sairch Results
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
-search-results-empty-message =
-    { PLATFORM() ->
-        [windows] Ach! There's nae results in Options fur “<span data-l10n-name="query"></span>”.
-       *[other] Ach! There's nae results in Preferences fur “<span data-l10n-name="query"></span>”.
-    }
-# `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message2 = Ach! There's nae results in Settins fur “<span data-l10n-name="query"></span>”.
 search-results-help-link = Needin a haun? Veesit <a data-l10n-name="url">{ -brand-short-name } Hauners</a>
 
 ## General Section
 
 startup-header = Stertup
-# { -brand-short-name } will be 'Firefox Developer Edition',
-# since this setting is only exposed in Firefox Developer Edition
-separate-profile-mode =
-    .label = Alloo { -brand-short-name } and Firefox tae rin at the ane time
-use-firefox-sync = Tip: This yaises separate profiles. Yaise { -sync-brand-short-name } fur tae share data atween them.
-get-started-not-logged-in = Sign in tae { -sync-brand-short-name }…
-get-started-configured = Open { -sync-brand-short-name } preferences
 always-check-default =
     .label = Ayeweys check if { -brand-short-name } is yer staunart stravaiger
     .accesskey = y
@@ -160,6 +115,9 @@ set-as-my-default-browser =
     .accesskey = S
 startup-restore-previous-session =
     .label = Restore previous session
+    .accesskey = s
+startup-restore-windows-and-tabs =
+    .label = Open previous windaes and tabs
     .accesskey = s
 startup-restore-warn-on-quit =
     .label = Warn ye when quittin the stravaiger
@@ -175,12 +133,20 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Warn ye when sneckin mair than ane tab
     .accesskey = m
+confirm-on-close-multiple-tabs =
+    .label = Confirm afore sneckin multiple tabs
+    .accesskey = m
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (String) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+confirm-on-quit-with-key =
+    .label = Confirm afore quittin wi { $quitKey }
+    .accesskey = b
 warn-on-open-many-tabs =
     .label = Warn ye when openin mair nor ane tab micht gar { -brand-short-name } slow doon
     .accesskey = d
-switch-links-to-new-tabs =
-    .label = When ye open a link in a new tab, switch ower tae it straicht awa
-    .accesskey = h
 switch-to-new-tabs =
     .label = When ye open a link, image or media in a new tab, switch ower tae it straicht awa
     .accesskey = h
@@ -327,10 +293,6 @@ applications-manage-app =
     .label = Application Details…
 applications-always-ask =
     .label = Ayeweys speir
-applications-type-pdf = Portable Document Format (PDF)
-# Variables:
-#   $type (String) - the MIME type (e.g application/binary)
-applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 # Variables:
 #   $type-description (String) - Description of the type (e.g "Portable Document Format")
 #   $type (String) - the MIME type (e.g application/binary)
@@ -397,15 +359,6 @@ update-application-warning-cross-user-setting = This settin will applt tae aw Wi
 update-application-use-service =
     .label = Yaise a backgrund service fur tae instaw updates
     .accesskey = b
-update-setting-write-failure-title = Mishanter savin Update preferences
-# Variables:
-#   $path (String) - Path to the configuration file
-# The newlines between the main text and the line containing the path is
-# intentional so the path is easier to identify.
-update-setting-write-failure-message =
-    { -brand-short-name } cam across a mishanter and didnae save this chynge. Mind that settin this update preference needs permeesion tae write tae the file ablow. Yersel or a system admeenistrator micht be able tae sort the mishanter by giein the Yaisers group full control tae this file.
-    
-    Couldnae write tae file: { $path }
 update-setting-write-failure-title2 = Mishanter savin Update settins
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -611,10 +564,8 @@ search-show-suggestions-above-history-option =
     .label = Kythe airt-oot suggestions aheid o stravaigin historie in address baur results
 search-show-suggestions-private-windows =
     .label = Kythe airt-oot suggestions in Private Windaes
-suggestions-addressbar-settings-generic = Chynge preferences for ither address baur suggestions
 suggestions-addressbar-settings-generic2 = Chynge settins for ither address baur suggestions
 search-suggestions-cant-show = Airt-oot suggestions willnae be kythed in location baur results acause ye've confeegurt { -brand-short-name } tae nivver mind o historie.
-search-one-click-header = Ane-Click Airt-Oot Engines
 search-one-click-header2 = Sairch Shortcuts
 search-one-click-desc = Wale the ither airt-oot engines that kythe unner the address baur and sairch baur when ye stert tae inpit a keywird.
 search-choose-engine-column =
@@ -641,12 +592,6 @@ search-keyword-warning-bookmark = Ye've waled a keywird that's awready in yaise 
 
 ## Containers Section
 
-containers-back-button =
-    .aria-label =
-        { PLATFORM() ->
-            [windows] Back tae Options
-           *[other] Back tae Preferences
-        }
 containers-back-button2 =
     .aria-label = Back tae Settins
 containers-header = Conteener Tabs
@@ -656,8 +601,6 @@ containers-add-button =
 containers-new-tab-check =
     .label = Wale a conteener fur ilka new tab
     .accesskey = W
-containers-preferences-button =
-    .label = Preferences
 containers-settings-button =
     .label = Settins
 containers-remove-button =
@@ -667,10 +610,6 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Tak Yer Wab Wi Ye
-sync-signedout-description = Synchronise yer buikmerks, historie, tabs, passwirds, eik-ons, and preferences across aw yer devices.
-sync-signedout-account-signin2 =
-    .label = Sign in tae { -sync-brand-short-name }…
-    .accesskey = i
 sync-signedout-description2 = Synchronise yer buikmerks, historie, tabs, passwirds, eik-ons, and settins across aw yer devices.
 sync-signedout-account-signin3 =
     .label = Sign in tae sync…
@@ -710,10 +649,6 @@ sync-sign-in =
 
 prefs-syncing-on = Syncin: ON
 prefs-syncing-off = Syncin: AFF
-prefs-sync-setup =
-    .label = Set Up { -sync-brand-short-name }…
-    .accesskey = S
-prefs-sync-offer-setup-label = Synchronise yer buikmerks, historie, tabs, passwirds, eik-ons, and preferences across aw yer devices.
 prefs-sync-turn-on-syncing =
     .label = Turn on syncin…
     .accesskey = s
@@ -733,11 +668,6 @@ sync-currently-syncing-logins-passwords = Logins and passwirds
 sync-currently-syncing-addresses = Addresses
 sync-currently-syncing-creditcards = Credit cairds
 sync-currently-syncing-addons = Eik-ons
-sync-currently-syncing-prefs =
-    { PLATFORM() ->
-        [windows] Options
-       *[other] Preferences
-    }
 sync-currently-syncing-settings = Settins
 sync-change-options =
     .label = Chynge...
@@ -778,14 +708,6 @@ sync-engine-addons =
     .label = Eik-ons
     .tooltiptext = Extensions and themes fur Firefox desktap
     .accesskey = E
-sync-engine-prefs =
-    .label =
-        { PLATFORM() ->
-            [windows] Options
-           *[other] Preferences
-        }
-    .tooltiptext = General, Privacy, and Siccarness settins ye’ve chynged
-    .accesskey = s
 sync-engine-settings =
     .label = Settins
     .tooltiptext = General, Privacy, and Siccarness settins ye’ve chynged
@@ -835,9 +757,6 @@ forms-fill-logins-and-passwords =
 forms-saved-logins =
     .label = Saved Logins…
     .accesskey = L
-forms-master-pw-use =
-    .label = Yaise a maister passwird
-    .accesskey = Y
 forms-primary-pw-use =
     .label = Yaise a Primary Passwird
     .accesskey = Y
@@ -848,7 +767,6 @@ forms-primary-pw-learn-more-link = Lairn mair
 forms-master-pw-change =
     .label = Chynge Maister Passwird…
     .accesskey = M
-forms-master-pw-fips-title = The noo, ye're in FIPS mode. FIPS needs a Maister Passwird that isnae tuim.
 forms-primary-pw-change =
     .label = Chynge Primary Passwird…
     .accesskey = P
@@ -865,13 +783,6 @@ forms-windows-sso-desc = Manage accoonts in yer device settins
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = Tae mak a Maister Passwird, inpit yer Windaes login parteeculars. This helps wi bieldin the siccarness o yer accoonts.
-# This message can be seen by trying to add a Master Password.
-# The macOS strings are preceded by the operating system with "Firefox is trying to "
-# and includes subtitle of "Enter password for the user "xxx" to allow this." These
-# notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = mak a Maister Passwird
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Tae mak a Primary Passwird, inpit yer Windaes login parteeculars. This helps wi bieldin the siccarness o yer accoonts.
 # This message can be seen by trying to add a Primary Password.
@@ -967,9 +878,6 @@ sitedata-clear =
 sitedata-settings =
     .label = Manage Data…
     .accesskey = M
-sitedata-cookies-permissions =
-    .label = Manage Permeesions…
-    .accesskey = P
 sitedata-cookies-exceptions =
     .label = Manage Exceptions…
     .accesskey = x
@@ -1126,10 +1034,6 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = Exceptions…
     .accesskey = E
-permissions-a11y-privacy-checkbox =
-    .label = Stap accessibility services fae haein ingang tae yer stravaiger
-    .accesskey = a
-permissions-a11y-privacy-link = Lairn mair
 
 ## Privacy Section - Data Collection
 
@@ -1151,10 +1055,6 @@ addon-recommendations-link = Lairn mair
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Data reportin is disabled fur this build confeeguration
-collection-backlogged-crash-reports =
-    .label = Alloo { -brand-short-name } tae send backlogged crash reports on yer behauf
-    .accesskey = c
-collection-backlogged-crash-reports-link = Lairn mair
 collection-backlogged-crash-reports-with-link = Alloo { -brand-short-name } tae send backlogged crash reports on yer behauf <a data-l10n-name="crash-reports-link">Lairn mair</a>
     .accesskey = c
 
@@ -1179,13 +1079,6 @@ security-block-uncommon-software =
 ## Privacy Section - Certificates
 
 certs-header = Certificates
-certs-personal-label = When a server speirs efter yer personal certificate
-certs-select-auto-option =
-    .label = Wale ane automatically
-    .accesskey = W
-certs-select-ask-option =
-    .label = Speir ye ilka time
-    .accesskey = S
 certs-enable-ocsp =
     .label = Speir at OCSP responder servers tae mak siccar o the validity o certificates the noo
     .accesskey = S
@@ -1195,29 +1088,6 @@ certs-view =
 certs-devices =
     .label = Siccarness Devices…
     .accesskey = D
-space-alert-learn-more-button =
-    .label = Lairn Mair
-    .accesskey = L
-space-alert-over-5gb-pref-button =
-    .label =
-        { PLATFORM() ->
-            [windows] Open Options
-           *[other] Open Preferences
-        }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] O
-           *[other] O
-        }
-space-alert-over-5gb-message =
-    { PLATFORM() ->
-        [windows] { -brand-short-name } is rinnin oot o disk space. Wabsite contents micht no kythe richt. Ye can dicht stored data in Options > Privacy & Siccarness > Cookies and Site Data.
-       *[other] { -brand-short-name } is rinnin oot o disk space. Wabsite contents micht no kythe richt. Ye can dicht stored data in Preferences > Privacy & Siccarness > Cookies and Site Data.
-    }
-space-alert-under-5gb-ok-button =
-    .label = Awricht, Got ye
-    .accesskey = A
-space-alert-under-5gb-message = { -brand-short-name } is rinnin oot o disk space. Wabsite contents micht no kythe richt. Gang tae “Lairn Mair” to mak the maist o yer disk yaise fur a better stravaigin experience.
 space-alert-over-5gb-settings-button =
     .label = Open Settins
     .accesskey = O

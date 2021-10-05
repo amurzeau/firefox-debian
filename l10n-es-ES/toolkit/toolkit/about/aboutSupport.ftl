@@ -10,11 +10,6 @@ crashes-id = ID del informe
 crashes-send-date = Enviado
 crashes-all-reports = Todos los informes de fallo
 crashes-no-config = Esta aplicación no ha sido configurada para mostrar informes de fallos.
-extensions-title = Extensiones
-extensions-name = Nombre
-extensions-enabled = Activada
-extensions-version = Versión
-extensions-id = ID
 support-addons-title = Complementos
 support-addons-name = Nombre
 support-addons-type = Tipo
@@ -60,6 +55,7 @@ app-basics-enabled-plugins = Plugins activados
 app-basics-build-config = Configuración de compilación
 app-basics-user-agent = Agente de usuario
 app-basics-os = OS
+app-basics-os-theme = Tema del sistema operativo
 # Rosetta is Apple's translation process to run apps containing x86_64
 # instructions on Apple Silicon. This should remain in English.
 app-basics-rosetta = Traducido por Rosetta
@@ -130,9 +126,6 @@ sandbox-sys-call-tid = TID
 sandbox-sys-call-proc-type = Tipo de proceso
 sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argumentos
-safe-mode-title = Probar modo seguro
-restart-in-safe-mode-label = Reiniciar con complementos desactivados…
-
 troubleshoot-mode-title = Diagnosticar problemas
 restart-in-troubleshoot-mode-label = Modo de resolución de problemas…
 clear-startup-cache-title = Intentar limpiar la caché de inicio
@@ -189,37 +182,6 @@ remote-debugging-accepting-connections = Aceptando conexiones
 remote-debugging-url = URL
 
 ##
-
-support-third-party-modules-title = Módulos de terceros
-support-third-party-modules-module = Archivo de módulo
-support-third-party-modules-version = Versión del archivo
-support-third-party-modules-vendor = Información del fabricante
-support-third-party-modules-occurrence = Ocurrencias
-support-third-party-modules-process = Tipo de proceso e ID
-support-third-party-modules-thread = Hilo
-support-third-party-modules-base = Dirección de imagebase
-support-third-party-modules-uptime = Tiempo de actividad del proceso (ms)
-support-third-party-modules-duration = Duración de la carga (ms)
-support-third-party-modules-status = Estado
-support-third-party-modules-status-loaded = Cargado
-support-third-party-modules-status-blocked = Bloqueado
-support-third-party-modules-status-redirected = Redirigido
-support-third-party-modules-empty = No se han cargado módulos de terceros.
-support-third-party-modules-no-value = (Sin valor)
-support-third-party-modules-button-open =
-    .title = Abrir ubicación del archivo...
-support-third-party-modules-expand =
-    .title = Mostrar información detallada
-support-third-party-modules-collapse =
-    .title = Ocultar información detallada
-support-third-party-modules-unsigned-icon =
-    .title = Este módulo no está firmado
-support-third-party-modules-folder-icon =
-    .title = Abrir ubicación del archivo...
-support-third-party-modules-down-icon =
-    .title = Mostrar información detallada
-support-third-party-modules-up-icon =
-    .title = Ocultar información detallada
 
 # Variables
 # $days (Integer) - Number of days of crashes to log
@@ -315,11 +277,6 @@ webgl2-renderer = Renderizador del controlador WebGL 2
 webgl2-version = Versión del controlador WebGL 2
 webgl2-driver-extensions = Extensiones del controlador WebGL 2
 webgl2-extensions = Extensiones WebGL 2
-blocklisted-bug = Incluido en lista de bloqueo por causas desconocidas
-
-# Variables
-# $bugNumber (string) - String of bug number from Bugzilla
-bug-link = bug { $bugNumber }
 
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
@@ -330,8 +287,6 @@ support-blocklisted-bug = Lista bloqueada debido a problemas conocidos: <a data-
 unknown-failure = Incluido en lista de bloqueo; código de error { $failureCode }
 
 d3d11layers-crash-guard = Compositor D3D11
-d3d11video-crash-guard = Decodificador de vídeo D3D11
-d3d9video-crash-guard = Decodificador de vídeo D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Decodificador de vídeo WMF VPX
 
@@ -377,15 +332,6 @@ launcher-process-status-unknown = Estado desconocido
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
 multi-process-windows = { $remoteWindows }/{ $totalWindows }
-multi-process-status-0 = Habilitado por el usuario
-multi-process-status-1 = Habilitado por omisión
-multi-process-status-2 = Deshabilitado
-multi-process-status-4 = Deshabilitado por las herramientas de accesibilidad
-multi-process-status-6 = Deshabilitado por entrada de texto no admitida
-multi-process-status-7 = Deshabilitado por los complementos
-multi-process-status-8 = Deshabilitado forzosamente
-multi-process-status-unknown = Estado desconocido
-
 # Variables
 # $fissionWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
@@ -400,7 +346,6 @@ fission-status-disabled-by-default = Desactivado de forma predeterminada
 fission-status-enabled-by-user-pref = Activado por el usuario
 fission-status-disabled-by-user-pref = Desactivado por el usuario
 fission-status-disabled-by-e10s-other = E10s desactivado
-
 fission-status-enabled-by-rollout = Habilitado por el lanzamiento por fases
 
 async-pan-zoom = Encuadre/zoom asíncrono

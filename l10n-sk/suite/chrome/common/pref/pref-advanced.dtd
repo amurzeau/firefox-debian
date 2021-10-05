@@ -5,14 +5,24 @@
 <!--LOCALIZATION NOTE : FILE 'Advanced' prefs settings -->
 <!ENTITY pref.advanced.title              "Rozšírené">
 
-<!ENTITY systemPref.caption               "Systémové nastavenia">
-<!ENTITY systemPrefCheck.label            "Použiť nastavenia zo systému">
-<!ENTITY systemPrefCheck.accesskey        "u">
-<!ENTITY systemPref.desc                  "Po označení tejto možnosti &brandShortName; preberie nastavenia zo systému. Systémové nastavenia sú nadradené nad nastaveniami aplikácie &brandShortName;.">
-
 <!ENTITY prefCheckDefault.caption         "Integrácia do systému">
 <!ENTITY prefCheckDefaultClient.label     "Pri štarte kontrolovať nastavenia predvolenej aplikácie">
 <!ENTITY prefCheckDefaultClient.accesskey "k">
+
+<!ENTITY defaultClientFor.description     "Nastaviť &brandShortName; ako predvolenú aplikáciu pre:">
+<!ENTITY setDefaultBrowser.label          "Prehliadač">
+<!ENTITY setDefaultBrowser.accesskey      "r">
+<!ENTITY setDefaultMail.label             "Pošta">
+<!ENTITY setDefaultMail.accesskey         "o">
+<!ENTITY setDefaultNews.label             "Správy">
+<!ENTITY setDefaultNews.accesskey         "S">
+<!ENTITY setDefaultFeed.label             "Kanály">
+<!ENTITY setDefaultFeed.accesskey         "K">
+<!ENTITY useInternalSettings.description  "Používať poštového klienta &brandShortName; pri otváraní nasledovných odkazov v prehliadači:">
+<!ENTITY useInternalMail.label            "Pošta (mailto:)">
+<!ENTITY useInternalMail.accesskey        "m">
+<!ENTITY useInternalNews.label            "Správy (news:, snews:, nntp:)">
+<!ENTITY useInternalNews.accesskey        "w">
 
 <!ENTITY printing.label                   "Tlačí sa">
 <!ENTITY useNativePrintDialog.label       "Používať natívne dialógové okno (ak je podporované)">

@@ -69,6 +69,9 @@ about-addressbook-sort-email-ascending =
 about-addressbook-sort-email-descending =
     .label = Ordenatu Eposta helbideaz (Z > A)
 
+about-addressbook-cards-context-write =
+    .label = Idatzi
+
 about-addressbook-confirm-delete-mixed-title = Ezabatu kontaktuak eta posta-zerrendak
 # Variables:
 # $count (Number) - The number of contacts and lists to be deleted. Always greater than 1.

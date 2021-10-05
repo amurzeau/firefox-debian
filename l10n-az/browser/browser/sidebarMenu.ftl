@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Yan paneli qapat
+
+sidebar-close-button =
+    .tooltiptext = Yan paneli qapa

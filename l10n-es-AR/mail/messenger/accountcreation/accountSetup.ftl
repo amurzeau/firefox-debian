@@ -46,7 +46,7 @@ account-setup-email-info-icon =
     .title = Dirección de correo electrónico existente
 
 account-setup-email-warning-icon =
-    .title = { account-setup-email-warning }
+    .title = Dirección de correo electrónico no válida
 
 account-setup-password-label = Contraseña
     .accesskey = o
@@ -57,6 +57,12 @@ account-provisioner-button = Obtener una nueva dirección de correo electrónico
 
 account-setup-password-toggle =
     .title = Mostrar/ocultar contraseña
+
+account-setup-password-toggle-show =
+    .title = Mostrar la contraseña en texto sin cifrar
+
+account-setup-password-toggle-hide =
+    .title = Ocultar la contraseña
 
 account-setup-remember-password = Recordar contraseña
     .accesskey = n
@@ -309,6 +315,21 @@ exchange-dialog-confirm-button = Iniciar sesión
 
 exchange-dialog-cancel-button = Cancelar
 
+## Dismiss account creation dialog
+
+exit-dialog-title = No se configuró ninguna cuenta de correo electrónico
+
+exit-dialog-description = ¿Está seguro de que quiere cancelar el proceso de configuración? { -brand-short-name } aún se puede usar sin una cuenta de correo electrónico, pero muchas funciones no estarán disponibles.
+
+account-setup-no-account-checkbox = Usar { -brand-short-name } sin una cuenta de correo electrónico
+    .accesskey = U
+
+exit-dialog-cancel-button = Continuar la instalación
+    .accesskey = C
+
+exit-dialog-confirm-button = Salir de la instalación
+    .accesskey = E
+
 ## Alert dialogs
 
 account-setup-creation-error-title = Error creando cuenta
@@ -331,7 +352,7 @@ account-setup-addon-no-protocol = Este servidor de correo desafortunadamente no 
 
 account-setup-settings-button = Configuración de la cuenta
 
-account-setup-encryption-button = Cifrado de punta a punta
+account-setup-encryption-button = Cifrado de extremo a extremo
 
 account-setup-signature-button = Agregar una firma
 

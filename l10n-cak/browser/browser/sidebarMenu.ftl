@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Titz'apïx Ajxikin
+
+sidebar-close-button =
+    .tooltiptext = Titz'apïx ajxikin

@@ -18,7 +18,7 @@ about-config-caution-text = Thay đổi các tùy chọn này có thể ảnh h�
 about-config-page-title = Tùy chọn nâng cao
 
 about-config-search-input1 =
-    .placeholder = Tìm kiếm tên tùy chọn
+    .placeholder = Tìm kiếm tên tùy chỉnh
 about-config-show-all = Hiển thị tất cả
 
 about-config-show-only-modified = Chỉ hiển thị các tùy chọn đã sửa đổi
@@ -38,7 +38,7 @@ about-config-pref-delete-button =
 
 ## Labels for the type selection radio buttons shown when adding preferences.
 
-about-config-pref-add-type-boolean = Luận lí
+about-config-pref-add-type-boolean = Logic
 about-config-pref-add-type-number = Số
 about-config-pref-add-type-string = Chuỗi
 

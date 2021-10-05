@@ -8,9 +8,6 @@
 newtab-page-title = Nieuw tabblad
 newtab-settings-button =
     .title = Uw Nieuw-tabbladpagina aanpassen
-newtab-personalize-button-label = Personaliseren
-    .title = Nieuw tabblad personaliseren
-    .aria-label = Nieuw tabblad personaliseren
 newtab-personalize-icon-label =
     .title = Nieuw tabblad personaliseren
     .aria-label = Nieuw tabblad personaliseren
@@ -23,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Zoeken
     .aria-label = Zoeken
-newtab-search-box-search-the-web-text = Zoeken op het web
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = Met { $engine } zoeken of voer adres in
@@ -173,6 +169,11 @@ newtab-label-sponsored = { $sponsorOrSource } · Gesponsord
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = Gesponsord door { $sponsor }
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } min.
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -252,10 +253,4 @@ newtab-custom-pocket-sponsored = Gesponsorde verhalen
 newtab-custom-recent-title = Recente activiteit
 newtab-custom-recent-subtitle = Een selectie van recente websites en inhoud
 newtab-custom-close-button = Sluiten
-# For the "Snippets" feature traditionally on about:home.
-# Alternative translation options: "Small Note" or something that
-# expresses the idea of "a small message, shortened from something else,
-# and non-essential but also not entirely trivial and useless.
-newtab-custom-snippets-title = Snippets
-newtab-custom-snippets-subtitle = Tips en nieuws van { -vendor-short-name } en { -brand-product-name }
 newtab-custom-settings = Meer instellingen beheren

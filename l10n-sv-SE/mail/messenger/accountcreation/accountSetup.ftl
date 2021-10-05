@@ -56,6 +56,12 @@ account-provisioner-button = Skapa en ny e-postadress
 account-setup-password-toggle =
     .title = Visa/dölj lösenord
 
+account-setup-password-toggle-show =
+    .title = Visa lösenord i klartext
+
+account-setup-password-toggle-hide =
+    .title = Dölj lösenord
+
 account-setup-remember-password = Kom ihåg lösenord
     .accesskey = K
 
@@ -306,6 +312,21 @@ exchange-dialog-question = { -brand-short-name } hittade din kontoinställningsi
 exchange-dialog-confirm-button = Inloggning
 
 exchange-dialog-cancel-button = Avbryt
+
+## Dismiss account creation dialog
+
+exit-dialog-title = Inget e-postkonto har konfigurerats
+
+exit-dialog-description = Är du säker på att du vill avbryta installationsprocessen? { -brand-short-name } kan fortfarande användas utan ett e-postkonto, men många funktioner är inte tillgängliga.
+
+account-setup-no-account-checkbox = Använd { -brand-short-name } utan ett e-postkonto
+    .accesskey = A
+
+exit-dialog-cancel-button = Fortsätt installationen
+    .accesskey = F
+
+exit-dialog-confirm-button = Avsluta installationen
+    .accesskey = A
 
 ## Alert dialogs
 

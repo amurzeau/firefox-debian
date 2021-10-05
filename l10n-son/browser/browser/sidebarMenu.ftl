@@ -11,3 +11,5 @@ sidebar-menu-history =
 sidebar-menu-synced-tabs =
     .label = Kanji hangantey
 
+sidebar-close-button =
+    .tooltiptext = Ceraw-zuu daabu

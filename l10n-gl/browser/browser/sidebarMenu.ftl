@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Pechar a barra lateral
+
+sidebar-close-button =
+    .tooltiptext = Pechar a barra lateral

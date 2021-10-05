@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Embojuaju kundaharape rendáre
 page-action-manage-extension =
     .label = Moĩmbaháre Ñangareko…
-page-action-remove-from-urlbar =
-    .label = Emboguete kundaharape rendágui
 page-action-remove-extension =
     .label = Emboguete jepysokue
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Ko’ág̃a, eheka hendive:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Jeheka mba’epytyvõrã moambue
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Jeheka mba’epytyvõrã moambue
 search-one-offs-context-open-new-tab =
@@ -250,8 +242,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Ehechauka mbosako’iha eñongatúvo
     .accesskey = S
-bookmark-panel-done-button =
-    .label = Mohu’ã
 bookmark-panel-save-button =
     .label = Ñongatu
 # Width of the bookmark panel.
@@ -281,8 +271,6 @@ identity-passive-loaded = Ko kuatiarogue pehẽ heta hendápe nda’ijeroviapái
 identity-active-loaded = Ndereguerekói pa’ũ ko kuatiaroguépe g̃uarã.
 identity-weak-encryption = Ko kuatiarogue oipuru ñangarekoha ikangýva.
 identity-insecure-login-forms = Ojehaiva’ekue jeike hag̃ua ko kuatiaroguépe oñemondakuaa.
-identity-permissions =
-    .value = Moneĩ
 identity-https-only-connection-upgraded = (HTTPS hekopyahupyre)
 identity-https-only-label = HTTPS ayvúpe año
 identity-https-only-dropdown-on =
@@ -298,7 +286,6 @@ identity-permissions-storage-access-header = Kookie tenda ojuasáva
 identity-permissions-storage-access-hint = Ko’ãva ikatu oipuru kookie ha tenda ojuasáva mba’ekuaarã eime aja ko tendápe.
 identity-permissions-storage-access-learn-more = Kuaave
 identity-permissions-reload-hint = Ikatu hína kuatiarogue emyanyhẽjey umi moambuepyre oñemboheko hag̃ua.
-identity-permissions-empty = Nome’ẽi ko tenda ñemoneĩ ha’etéva.
 identity-clear-site-data =
     .label = Emopotĩ kookie ha mba’ekuaarã tendágui…
 identity-connection-not-secure-security-view = Nde jeike nahekorosãi ko tendápe.
@@ -383,12 +370,6 @@ bookmarks-toolbar-empty-message = Eike pya’e hag̃ua, emoĩ nde rechaukaha tec
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Ta’angamýi hetápe g̃uarãva:
-    .accesskey = C
-popup-select-microphone =
-    .value = Ñe’ẽatãha hetápe g̃uarãva:
-    .accesskey = M
 popup-select-camera-device =
     .value = Ta’ãnganohẽha:
     .accesskey = C
@@ -402,14 +383,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Ñe’ẽatãhakuéra
 popup-all-windows-shared = Oñemosarambíta opaite ovetã ojehecháva mba’erechahápe.
-popup-screen-sharing-not-now =
-    .label = Ani ko’ág̃a
-    .accesskey = w
-popup-screen-sharing-never =
-    .label = Ani emoneĩ araka’eve
-    .accesskey = N
-popup-silence-notifications-checkbox = Embogue momarandu’i { -brand-short-name } emoherakuã aja
-popup-silence-notifications-checkbox-warning = { -brand-short-name } ndohechaukamo’ãi momarandu’i oñemoherakuã aja.
 popup-screen-sharing-block =
     .label = Joko
     .accesskey = B
@@ -433,14 +406,10 @@ enable-devtools-popup-description = Eipurútarõ mbopya’eha F12 embojurujara�
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Ñe’ẽreka ýrõ kundaharape
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Ñe’ẽreka ýrõ kundaharape
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Kundahára oĩ ñangarekoha okayguáva poguýpe
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -489,8 +458,6 @@ urlbar-go-button =
     .tooltiptext = Kundaharape renda URL-pe jeho
 urlbar-page-action-button =
     .tooltiptext = Kuatiarogue rembiapo
-urlbar-pocket-button =
-    .tooltiptext = Eñongatu { -pocket-brand-name }-pe
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -695,6 +662,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Tembiporu rendáre ñemomba’e…
     .accesskey = T
+toolbar-button-email-link =
+    .label = Joajuha mondo
+    .tooltiptext = Peteĩ joajuha ko kuatiaroguépe mondo
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Kuatiarogue ñongatu
+    .tooltiptext = Ko kuatiarogue ñongatu ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Marandurendápe jeike
+    .tooltiptext = Marandurendápe jeike ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Tendayke oñembojuehepyre
+    .tooltiptext = Ambue mba’e’oka rendaykekuéra jehechauka
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Ovetã ñemi pyahu
+    .tooltiptext = Ovetã pyahu kundaha ñemíme jeike ({ $shortcut })
 
 ## EME notification panel
 
@@ -745,6 +733,49 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Ani rehechauka ko ñe’ẽmondo ojejokóramo ovetã apysẽ
     .accesskey = D
+edit-popup-settings =
+    .label = Eñangareko ovetã apysẽ ñembohekóre…
+    .accesskey = M
 picture-in-picture-hide-toggle =
     .label = Emokañy votõ Picture-in-Picture (PIP)
     .accesskey = H
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Ñekundaha
+navbar-downloads =
+    .label = Ñemboguejy
+navbar-overflow =
+    .tooltiptext = Tembipuruve…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Mbokuatia
+    .tooltiptext = Embokuatia ko kuatiarogue… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Mbokuatia
+    .tooltiptext = Ko kuatiarogue mbokuatia
+navbar-home =
+    .label = Ñepyrũ
+    .tooltiptext = Kuatiarogue ñepyrũ { -brand-short-name } mba’éva
+navbar-library =
+    .label = Mba’erysýi
+    .tooltiptext = Ehecha tembiasakue, ñongatupyre ha ambueve
+navbar-search =
+    .title = Heka
+navbar-accessibility-indicator =
+    .tooltiptext = Jeikekatu Reko Oñemyendýkuri
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Kundahára rendayke
+tabs-toolbar-new-tab =
+    .label = Tendayke pyahu
+tabs-toolbar-list-all-tabs =
+    .label = Opaite tendayke jehechauka
+    .tooltiptext = Opaite tendayke jehechauka

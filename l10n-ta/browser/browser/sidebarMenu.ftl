@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = பக்கப்பட்டையை மூடுக
+
+sidebar-close-button =
+    .tooltiptext = பக்கப்பட்டையை மூடு

@@ -4,20 +4,10 @@
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = Identificacións e contrasinais
-
-# "Google Play" and "App Store" are both branding and should not be translated
-
-login-app-promo-title = Leve os seus contrasinais a todas partes
-login-app-promo-subtitle = Obter a aplicación gratuíta { -lockwise-brand-name }
-login-app-promo-android =
-    .alt = Obtela a través de Google Play
-login-app-promo-apple =
-    .alt = Descárguea da App Store
 login-filter =
     .placeholder = Buscar sesións
 create-login-button = Crear novo inicio de sesión
 fxaccounts-sign-in-text = Obteña os seus contrasinais doutros dispositivos seus
-fxaccounts-sign-in-button = Conectarse a { -sync-brand-short-name }
 fxaccounts-sign-in-sync-button = Inicie sesión para sincronizar
 fxaccounts-avatar-button =
     .title = Xestionar conta
@@ -37,8 +27,6 @@ menu-menuitem-preferences =
        *[other] Preferencias
     }
 about-logins-menu-menuitem-help = Axuda
-menu-menuitem-android-app = { -lockwise-brand-short-name } para Android
-menu-menuitem-iphone-app = { -lockwise-brand-short-name } para iPhone e iPad
 
 ## Login List
 
@@ -52,6 +40,8 @@ login-list-count =
 login-list-sort-label-text = Ordenar por:
 login-list-name-option = Nome (A-Z)
 login-list-name-reverse-option = Nome (Z-A)
+login-list-username-option = Nome de usuario (A-Z)
+login-list-username-reverse-option = Nome de usuario (Z-A)
 about-logins-login-list-alerts-option = Alertas
 login-list-last-changed-option = Última modificación
 login-list-last-used-option = Usado por última vez
@@ -66,16 +56,18 @@ about-logins-list-item-breach-icon =
     .title = Sitio web comprometido
 about-logins-list-item-vulnerable-password-icon =
     .title = Contrasinal vulnerable
+about-logins-list-section-breach = Sitios web comprometidos
+about-logins-list-section-vulnerable = Contrasinais vulnerábeis
+about-logins-list-section-nothing = Sen alerta
+about-logins-list-section-today = Hoxe
+about-logins-list-section-yesterday = Onte
+about-logins-list-section-week = Últimos 7 días
 
 ## Introduction screen
 
-login-intro-heading = Busca os seus inicios de sesión gardados? Configure { -sync-brand-short-name }.
 about-logins-login-intro-heading-logged-out2 = Busca os teus inicios de sesión gardados? Active a sincronización ou impórteos.
 about-logins-login-intro-heading-logged-in = Non se atoparon outras sesións sincronizadas.
 login-intro-description = Se gardou os seus inicios de sesión en { -brand-product-name } noutro dispositivo, velaquí como conseguilos:
-login-intro-instruction-fxa = Cree ou inicie sesión no seu { -fxaccount-brand-name } no dispositivo onde se garden os seus inicios de sesión
-login-intro-instruction-fxa-settings = Asegúrese de que seleccionou a caixa de verificación de Iniciar sesión en Configuración de { -sync-brand-short-name }
-about-logins-intro-instruction-help = Visite <a data-l10n-name="help-link">{ -lockwise-brand-short-name } Vaia ao soporte </a> para obter máis axuda
 login-intro-instructions-fxa = Cree ou inicie sesión no seu { -fxaccount-brand-name } no dispositivo onde se gardan os seus inicios de sesión.
 login-intro-instructions-fxa-settings = Vaia a Configuración > Sincronizar > Activar a sincronización… Seleccione a caixa de verificación Inicios de sesión e contrasinais.
 login-intro-instructions-fxa-help = Visite <a data-l10n-name="help-link"> { -lockwise-brand-short-name } Asistencia </a> para obter máis axuda.
@@ -131,10 +123,6 @@ about-logins-copy-password-os-auth-dialog-message-win = Para copiar o seu contra
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = copiar o contrasinal gardado
-
-## Master Password notification
-
-master-password-notification-message = Introduza o seu contrasinal principal para ver as sesións e contrasinais gardados
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message-win = Para exportar os seus inicios de sesión, insira as súas credenciais de inicio de sesión en Windows. Isto axuda a protexer a seguridade das súas contas.
 # This message can be seen when attempting to export a password in about:logins
@@ -147,24 +135,6 @@ about-logins-primary-password-notification-message = Introduza o seu contrasinal
 master-password-reload-button =
     .label = Iniciar sesión
     .accesskey = I
-
-## Password Sync notification
-
-enable-password-sync-notification-message =
-    { PLATFORM() ->
-        [windows] Quere os seus inicios de sesión en calquera lugar que empregue { -brand-product-name }? Vaia ás súas opcións { -sync-brand-short-name } e seleccione a caixa de verificación Iniciar sesión.
-       *[other] Quere os seus inicios de sesión en calquera lugar que empregue { -brand-product-name }? Vaia ás súas preferencias { -sync-brand-short-name } e seleccione a caixa de verificación Iniciar sesión.
-    }
-enable-password-sync-preferences-button =
-    .label =
-        { PLATFORM() ->
-            [windows] Visitar { -sync-brand-short-name } Opcións
-           *[other] Visitar { -sync-brand-short-name } Preferencias
-        }
-    .accesskey = V
-about-logins-enable-password-sync-dont-ask-again-button =
-    .label = Non preguntar de novo
-    .accesskey = N
 
 ## Dialogs
 

@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Eik On tae Address Baur
 page-action-manage-extension =
     .label = Manage Extension…
-page-action-remove-from-urlbar =
-    .label = Remuive fae Address Baur
 page-action-remove-extension =
     .label = Remuive Extension
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = This time, sairch wi:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Chynge Sairch Settins
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Chynge sairch settins
 search-one-offs-context-open-new-tab =
@@ -250,8 +242,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Kythe editor when savin
     .accesskey = S
-bookmark-panel-done-button =
-    .label = Duin
 bookmark-panel-save-button =
     .label = Save
 # Width of the bookmark panel.
@@ -281,8 +271,6 @@ identity-passive-loaded = Pairt o this page arenae siccar (sic as images).
 identity-active-loaded = Ye've disabled bieldin on this page.
 identity-weak-encryption = The encryption on this page is stintit.
 identity-insecure-login-forms = Logins inpit on this page micht be compromised.
-identity-permissions =
-    .value = Permeesions
 identity-https-only-connection-upgraded = (upgradit tae HTTPS)
 identity-https-only-label = HTTPS-Anely Mode
 identity-https-only-dropdown-on =
@@ -298,7 +286,6 @@ identity-permissions-storage-access-header = Cross-site cookies
 identity-permissions-storage-access-hint = These pairties can yaise cross-site cookies and site data while ye're on this site.
 identity-permissions-storage-access-learn-more = Lairn mair
 identity-permissions-reload-hint = Ye'll mebbe need tae reload the page fur chynges tae wirk.
-identity-permissions-empty = Ye hinnae gied this site onie by-ordinar permeesions.
 identity-clear-site-data =
     .label = Dicht Cookies and Site Data...
 identity-connection-not-secure-security-view = Ye arenae connectit siccar tae this site.
@@ -380,12 +367,6 @@ bookmarks-toolbar-empty-message = For quick ingang, pit yer buikmerks here on th
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Camera tae share:
-    .accesskey = C
-popup-select-microphone =
-    .value = Microphone tae share:
-    .accesskey = M
 popup-select-camera-device =
     .value = Camera:
     .accesskey = C
@@ -399,14 +380,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Speakers
 popup-all-windows-shared = Aw veesible windaes on yer screen will be shared.
-popup-screen-sharing-not-now =
-    .label = No Jist Noo
-    .accesskey = o
-popup-screen-sharing-never =
-    .label = Nivver Alloo
-    .accesskey = N
-popup-silence-notifications-checkbox = Disable notifications fae { -brand-short-name } while sharin.
-popup-silence-notifications-checkbox-warning = { -brand-short-name } willnae kythe notifications while ye're sharin.
 popup-screen-sharing-block =
     .label = Block
     .accesskey = B
@@ -430,14 +403,10 @@ enable-devtools-popup-description = Fur tae yaise the F12 shortcut, first open D
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Sairch or inpit address
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Sairch or inpit address
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Wab-stravaiger is unner remote control
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -486,8 +455,6 @@ urlbar-go-button =
     .tooltiptext = Gang tae the address in the Airtin Baur
 urlbar-page-action-button =
     .tooltiptext = Page actions
-urlbar-pocket-button =
-    .tooltiptext = Save tae { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -692,6 +659,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Mak Toolbaur Yer Ain…
     .accesskey = M
+toolbar-button-email-link =
+    .label = Email Link
+    .tooltiptext = Email a link tae this page
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Save Page
+    .tooltiptext = Save this page ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Open File
+    .tooltiptext = Open a file ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Synced Tabs
+    .tooltiptext = Kythe tabs fae ither devices
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = New Private Windae
+    .tooltiptext = Open a new Private Stravaigin windae ({ $shortcut })
 
 ## EME notification panel
 
@@ -742,6 +730,49 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Dinnae kythe this message whan lowp-ups are blockit
     .accesskey = D
+edit-popup-settings =
+    .label = Manage lowp-up settins
+    .accesskey = M
 picture-in-picture-hide-toggle =
     .label = Hide Pictur-in-Pictur Toggle
     .accesskey = H
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navigation
+navbar-downloads =
+    .label = Doonloads
+navbar-overflow =
+    .tooltiptext = Mair tools…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Prent
+    .tooltiptext = Print this page… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Prent
+    .tooltiptext = Prent this page
+navbar-home =
+    .label = Hame
+    .tooltiptext = { -brand-short-name } Hame Page
+navbar-library =
+    .label = Leebrar
+    .tooltiptext = View historie, saved buikmerks, and mair
+navbar-search =
+    .title = Sairch
+navbar-accessibility-indicator =
+    .tooltiptext = Accessibility Featurs Enabled
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Stravaiger tabs
+tabs-toolbar-new-tab =
+    .label = New Tab
+tabs-toolbar-list-all-tabs =
+    .label = List aw tabs
+    .tooltiptext = List aw tabs

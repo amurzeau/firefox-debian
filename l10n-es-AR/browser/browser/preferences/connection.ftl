@@ -35,10 +35,6 @@ connection-proxy-http = Proxy HTTP
     .accesskey = x
 connection-proxy-http-port = Puerto
     .accesskey = P
-connection-proxy-http-sharing =
-    .label = Utilice este proxy también para FTP y HTTPS
-    .accesskey = s
-
 connection-proxy-https-sharing =
     .label = También usar este proxy para HTTPS
     .accesskey = s
@@ -47,11 +43,6 @@ connection-proxy-https = Proxy HTTPS
     .accesskey = H
 connection-proxy-ssl-port = Puerto
     .accesskey = o
-
-connection-proxy-ftp = Proxy FTP
-    .accesskey = F
-connection-proxy-ftp-port = Puerto
-    .accesskey = r
 
 connection-proxy-socks = Servidor SOCKS
     .accesskey = C
@@ -68,9 +59,6 @@ connection-proxy-noproxy = Sin Proxy para
     .accesskey = n
 
 connection-proxy-noproxy-desc = Ejemplo: .mozilla.org, .net.ar, 192.168.1.0/24
-
-# Do not translate localhost, 127.0.0.1 and ::1.
-connection-proxy-noproxy-localhost-desc = Las conexiones a localhost, 127.0.0.1 y ::1 nunca pasan por proxy.
 
 # Do not translate "localhost", "127.0.0.1/8" and "::1". (You can translate "and".)
 connection-proxy-noproxy-localhost-desc-2 = Las conexiones a localhost, 127.0.0.1 y ::1 nunca pasan por proxy.
@@ -108,6 +96,6 @@ connection-dns-over-https-url-item-default =
 connection-dns-over-https-url-custom =
     .label = Personalizada
     .accesskey = z
-    .tooltiptext = Ingrese su URL preferida para resolver que DNS tiene prioridad sobre HTTPS
+    .tooltiptext = Ingresar URL preferida para resolver DNS sobre HTTPS
 
 connection-dns-over-https-custom-label = Personalizada

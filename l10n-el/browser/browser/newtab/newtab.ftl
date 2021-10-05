@@ -20,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Αναζήτηση
     .aria-label = Αναζήτηση
-newtab-search-box-search-the-web-text = Αναζήτηση στο διαδίκτυο
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = Αναζήτηση με { $engine } ή εισαγωγή διεύθυνσης
@@ -72,7 +71,7 @@ newtab-topsites-add-button = Προσθήκη
 
 ## Top Sites - Delete history confirmation dialog.
 
-newtab-confirm-delete-history-p1 = Θέλετε σίγουρα να διαγράψετε κάθε παρουσία της σελίδας αυτής από το ιστορικό σας;
+newtab-confirm-delete-history-p1 = Θέλετε σίγουρα να διαγράψετε κάθε παρουσία της σελίδας από το ιστορικό σας;
 # "This action" refers to deleting a page from history.
 newtab-confirm-delete-history-p2 = Δεν είναι δυνατή η αναίρεση αυτής της ενέργειας.
 
@@ -170,6 +169,11 @@ newtab-label-sponsored = { $sponsorOrSource } · Χορηγία
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = Χορηγία από { $sponsor }
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } λεπ.
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.

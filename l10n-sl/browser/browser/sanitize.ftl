@@ -82,6 +82,10 @@ item-site-preferences =
     .label = nastavitve strani
     .accesskey = S
 
+item-site-settings =
+    .label = nastavitve strani
+    .accesskey = s
+
 item-offline-apps =
     .label = podatke pri delu brez povezave
     .accesskey = B

@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Luk sidepanel
+
+sidebar-close-button =
+    .tooltiptext = Luk sidepanel

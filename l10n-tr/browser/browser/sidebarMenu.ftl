@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Kenar çubuğunu kapat
+
+sidebar-close-button =
+    .tooltiptext = Kenar çubuğunu kapat

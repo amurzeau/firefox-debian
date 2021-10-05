@@ -51,9 +51,9 @@ bookmark-selected-tabs =
 bookmark-tab =
     .label = Бетті бетбелгілерге қосу
     .accesskey = б
-reopen-in-container =
-    .label = Контейнерде қайтадан ашу
-    .accesskey = а
+tab-context-open-in-new-container-tab =
+    .label = Жаңа контейнерлік бетте ашу
+    .accesskey = е
 move-to-start =
     .label = Басына жылжыту
     .accesskey = с
@@ -66,25 +66,6 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Бірнеше бетті жабу
     .accesskey = ш
-tab-context-undo-close-tabs =
-    .label =
-        { $tabCount ->
-            [1] Жабылған бетті қайтару
-           *[other] Жабылған беттерді қайтару
-        }
-    .accesskey = й
-close-tab =
-    .label = Бетті жабу
-    .accesskey = Б
-close-tabs =
-    .label = Беттерді жабу
-    .accesskey = б
-move-tabs =
-    .label = Беттерді жылжыту
-    .accesskey = ы
-move-tab =
-    .label = Бетті жылжыту
-    .accesskey = ы
 tab-context-share-url =
     .label = Бөлісу
     .accesskey = л
@@ -108,10 +89,25 @@ tab-context-close-tabs =
            *[other] Беттерді жабу
         }
     .accesskey = ж
+tab-context-close-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] Бетті жабу
+           *[other] { $tabCount } бетті жабу
+        }
+    .accesskey = ж
 tab-context-move-tabs =
     .label =
         { $tabCount ->
             [1] Бетті жылжыту
            *[other] Беттерді жылжыту
+        }
+    .accesskey = ы
+
+tab-context-send-tabs-to-device =
+    .label =
+        { $tabCount ->
+            [one] Бетті құрылғыға жіберу
+           *[other] Бетті { $tabCount } құрылғыға жіберу
         }
     .accesskey = ы

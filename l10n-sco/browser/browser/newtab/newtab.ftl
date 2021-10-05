@@ -8,9 +8,6 @@
 newtab-page-title = New Tab
 newtab-settings-button =
     .title = Mak yer New Tab page yer ain
-newtab-personalize-button-label = Personalise
-    .title = Personalise new tab
-    .aria-label = Personalise new tab
 newtab-personalize-icon-label =
     .title = Personalise new tab
     .aria-label = Personalise new tab
@@ -23,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Sairch
     .aria-label = Sairch
-newtab-search-box-search-the-web-text = Sairch the Wab
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = Sairch wi { $engine } or inpit address
@@ -206,7 +202,7 @@ newtab-section-header-pocket = Recommendit by { $provider }
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
-newtab-empty-section-highlights = Stairt stravaigin, and we'll shaw some o the smashin airticles, videos, and ither pages ye've recently veesitit or buikmerkt here.
+newtab-empty-section-highlights = Stert stravaigin, and we'll shaw some o the smashin airticles, videos, and ither pages ye've recently veesitit or buikmerkt here.
 # Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 # Variables:
 #  $provider (String): Name of the content provider for this section, e.g "Pocket".
@@ -252,10 +248,4 @@ newtab-custom-pocket-sponsored = Sponsored stories
 newtab-custom-recent-title = Recent activity
 newtab-custom-recent-subtitle = A walin o recent sites and content
 newtab-custom-close-button = Sneck
-# For the "Snippets" feature traditionally on about:home.
-# Alternative translation options: "Small Note" or something that
-# expresses the idea of "a small message, shortened from something else,
-# and non-essential but also not entirely trivial and useless.
-newtab-custom-snippets-title = Bitties
-newtab-custom-snippets-subtitle = Tips and news fae { -vendor-short-name } and { -brand-product-name }
 newtab-custom-settings = Manage mair settins

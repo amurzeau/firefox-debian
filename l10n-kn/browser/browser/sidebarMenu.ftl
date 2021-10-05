@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = ಬದಿಪಟ್ಟಿಯನ್ನು ಮುಚ್ಚು
+
+sidebar-close-button =
+    .tooltiptext = ಬದಿಪಟ್ಟಿಯನ್ನು ಮುಚ್ಚು

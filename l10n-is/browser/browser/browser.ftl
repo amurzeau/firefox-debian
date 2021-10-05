@@ -137,12 +137,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Bæta við í staðfestingarslá
 page-action-manage-extension =
     .label = Sýsla með viðbót…
-page-action-remove-from-urlbar =
-    .label = Fjarlægja úr staðsetningarslá
 
 ## Auto-hide Context Menu
 
@@ -155,10 +151,6 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Breyta leitarstillingum
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Breyta leitarstillingum
 search-one-offs-context-open-new-tab =
@@ -197,8 +189,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Sýna ritil þegar vistað er
     .accesskey = S
-bookmark-panel-done-button =
-    .label = Ljúka
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -217,7 +207,6 @@ identity-active-loaded = Þú hefur slökkt á vernd fyrir þessa síðu.
 identity-weak-encryption = Þessi síða notar lélega dulkóðun.
 identity-insecure-login-forms = Hugsanlega gæti þriðji aðili komist yfir allar þær skráningar sem þú setur inn á þessa síðu.
 identity-permissions-reload-hint = Þú gætir þurft að endurhlaða síðuna til að virkja breytingar.
-identity-permissions-empty = Þú hefur ekki gefið þessu vefsvæði nein sérstök réttindi.
 identity-clear-site-data =
     .label = Hreinsa vefkökur og síðugögn…
 identity-remove-cert-exception =
@@ -264,12 +253,6 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Myndavél til að deila:
-    .accesskey = y
-popup-select-microphone =
-    .value = Hljóðnemi til að deila:
-    .accesskey = m
 popup-all-windows-shared = Öllum sýnilegum gluggum á skjánum verður deilt.
 
 ## WebRTC window or screen share tab switch warning
@@ -280,12 +263,8 @@ popup-all-windows-shared = Öllum sýnilegum gluggum á skjánum verður deilt.
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Leita eða sláðu inn veffang
 urlbar-placeholder =
     .placeholder = Leita eða sláðu inn veffang
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Vafri er á fjarstýringu
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -299,8 +278,6 @@ urlbar-go-button =
     .tooltiptext = Hoppa á tengilinn sem er í staðsetningarslánni
 urlbar-page-action-button =
     .tooltiptext = Síðu aðgerðir
-urlbar-pocket-button =
-    .tooltiptext = Vista í { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -408,6 +385,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Sérsníða verkfæraslá…
     .accesskey = S
+toolbar-button-email-link =
+    .label = Senda tengil
+    .tooltiptext = Senda tengil á þessa síðu í pósti
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Vista síðu
+    .tooltiptext = Vista þessa síðu ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Opna skrá
+    .tooltiptext = Opna skrá ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Samstilltir flipar
+    .tooltiptext = Sýna flipa frá öðrum tækjum
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Nýr huliðsgluggi
+    .tooltiptext = Opna nýjan glugga í huliðsstillingu ({ $shortcut })
 
 ## EME notification panel
 
@@ -442,3 +440,38 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Ekki sýna þessi skilaboð þegar sprettigluggum er lokað
     .accesskey = D
+
+# Navigator Toolbox
+
+navbar-downloads =
+    .label = Niðurhal
+navbar-overflow =
+    .tooltiptext = Fleiri verkfæri…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Prenta
+    .tooltiptext = Prenta þessa síðu… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Prenta
+    .tooltiptext = Prenta síðu
+navbar-home =
+    .label = Heim
+    .tooltiptext = { -brand-short-name } Heimasíða
+navbar-library =
+    .label = Safn
+    .tooltiptext = Skoða feril, vistuð bókamerki, og meira
+navbar-search =
+    .title = Leita
+navbar-accessibility-indicator =
+    .tooltiptext = Aðgengi virkjað
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Vafraflipa
+tabs-toolbar-new-tab =
+    .label = Nýr flipi
+tabs-toolbar-list-all-tabs =
+    .label = Sýna alla flipa
+    .tooltiptext = Sýna alla flipa

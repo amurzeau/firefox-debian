@@ -8,10 +8,6 @@
 newtab-page-title = ਨਵੀਂ ਟੈਬ
 newtab-settings-button =
     .title = ਆਪਣੇ ਨਵੀਂ ਟੈਬ ਸਫ਼ੇ ਨੂੰ ਆਪਣੇ ਮੁਤਾਬਕ ਢਾਲੋ
-
-newtab-personalize-button-label = ਨਿੱਜੀ ਬਣਾਓ
-    .title = ਨਵੀਂ ਟੈਬ ਨਿੱਜੀ ਬਣਾਓ
-    .aria-label = ਨਵੀਂ ਟੈਬ ਨਿੱਜੀ ਬਣਾਓ
 newtab-personalize-icon-label =
     .title = ਨਵੀਂ ਟੈਬ ਨਿੱਜੀ ਬਣਾਓ
     .aria-label = ਨਵੀਂ ਟੈਬ ਨਿੱਜੀ ਬਣਾਓ
@@ -24,8 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = ਖੋਜ
     .aria-label = ਖੋਜ
-
-newtab-search-box-search-the-web-text = ਵੈੱਬ ਨੂੰ ਖੋਜੋ
 
 # Variables
 #  $engine (String): the name of the user's default search engine
@@ -47,6 +41,7 @@ newtab-search-box-search-the-web-input =
     .title = ਵੈੱਬ ਨੂੰ ਖੋਜੋ
     .aria-label = ਵੈੱਬ ਨੂੰ ਖੋਜੋ
 
+newtab-search-box-text = ਵੈੱਬ ‘ਤੇ ਖੋਜੋ
 newtab-search-box-input =
     .placeholder = ਵੈੱਬ ‘ਤੇ ਖੋਜੋ
     .aria-label = ਵੈੱਬ ‘ਤੇ ਖੋਜੋ
@@ -222,7 +217,6 @@ newtab-empty-section-highlights = ਬਰਾਊਜ਼ ਕਰਨਾ ਸ਼ੁਰ�
 #  $provider (String): Name of the content provider for this section, e.g "Pocket".
 newtab-empty-section-topstories = ਤੁਸੀਂ ਪੂਰਾ ਕਰ ਚੁੱਕੇ ਹੋ। { $provider } ਵਲੋਂ ਹੋਰ ਕਹਾਣੀਆਂ ਲਈ ਬਾਅਦ ਵਿੱਚ ਵਾਪਸ ਚੈਕ ਕਰੀਓ। ਉਡੀਕ ਨਹੀਂ ਕਰ ਸਕਦੇ? ਤਾਂ ਫੇਰ ਵੈੱਬ ਉਤੋਂ ਹੋਰ ਵਧੀਆ ਕਹਾਣੀਆਂ ਵਾਸਤੇ ਹਰਮਨਪਿਆਰੇ ਵਿਸ਼ੇ ਨੂੰ ਚੁਣੋ।
 
-
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
 newtab-discovery-empty-section-topstories-header = ਤੁਸੀਂ ਅਟਕ ਗਏ!
@@ -263,11 +257,4 @@ newtab-custom-pocket-sponsored = ਸਪਾਂਸਰ ਕੀਤੀਆਂ ਕਹਾ
 newtab-custom-recent-title = ਤਾਜ਼ਾ ਸਰਗਰਮੀ
 newtab-custom-recent-subtitle = ਤਾਜ਼ਾ ਸਾਈਟਾਂ ਤੇ ਸਮੱਗਰੀ ਦੀ ਚੋਣ
 newtab-custom-close-button = ਬੰਦ ਕਰੋ
-
-# For the "Snippets" feature traditionally on about:home.
-# Alternative translation options: "Small Note" or something that
-# expresses the idea of "a small message, shortened from something else,
-# and non-essential but also not entirely trivial and useless.
-newtab-custom-snippets-title = ਛੋਟੇ ਟੋਟਕੇ
-newtab-custom-snippets-subtitle = { -vendor-short-name } ਅਤੇ { -brand-product-name } ਵਲੋਂ ਟੋਟਕੇ ਤੇ ਖ਼ਬਰਾਂ
 newtab-custom-settings = ਹੋਰ ਸੈਟਿੰਗਾਂ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ

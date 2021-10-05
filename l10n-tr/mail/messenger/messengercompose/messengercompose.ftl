@@ -6,9 +6,6 @@
 # Addressing widget
 
 #   $type (String) - the type of the addressing row
-remove-address-row-type = { $type } alanını kaldır
-
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = { $type } alanını kaldır
 
@@ -99,19 +96,6 @@ attachment-bucket-count =
         }
     .accesskey = e
 
-#   $count (Number) - the number of attachments in the attachment bucket
-attachments-placeholder-tooltip =
-    .tooltiptext =
-        { $count ->
-            [1] { $count } ek
-            [one] { $count } ek
-           *[other] { $count } ek
-        }
-
-#   { attachment-bucket-count.accesskey } - Do not localize this message.
-key-toggle-attachment-pane =
-    .key = { attachment-bucket-count.accesskey }
-
 expand-attachment-pane-tooltip =
     .tooltiptext = Ek bölmesini göster ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 
@@ -144,6 +128,9 @@ move-attachment-last-panel-button =
 button-return-receipt =
     .label = Alındı onayı
     .tooltiptext = Bu ileti için alındı onayı iste
+
+# Encryption
+
 
 # Addressing Area
 
@@ -189,6 +176,68 @@ bcc-compose-show-address-row-label =
 #   $count (Number) - the count of addresses in the "To" and "Cc" fields.
 many-public-recipients-info = Kime ve Cc alanlarındaki { $count } alıcı birbirlerinin adresini görebilecek. Bunun yerine Bcc kullanarak alıcıları göstermekten kaçınabilirsiniz.
 
+to-address-row-label =
+    .value = Kime
+
+#   $key (String) - the shortcut key for this field
+show-to-row-main-menuitem =
+    .label = Kime alanı
+    .accesskey = K
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+
+# No acceltext should be shown.
+# The label should match the show-to-row-button text.
+show-to-row-extra-menuitem =
+    .label = Kime
+    .accesskey = K
+
+#   $key (String) - the shortcut key for this field
+show-to-row-button = Kime
+    .title = Kime alanını göster ({ ctrl-cmd-shift-pretty-prefix }{ $key })
+
+
+cc-address-row-label =
+    .value = Cc
+
+#   $key (String) - the shortcut key for this field
+show-cc-row-main-menuitem =
+    .label = Cc alanı
+    .accesskey = C
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+
+# No acceltext should be shown.
+# The label should match the show-cc-row-button text.
+show-cc-row-extra-menuitem =
+    .label = Cc
+    .accesskey = C
+
+#   $key (String) - the shortcut key for this field
+show-cc-row-button = Cc
+    .title = Cc alanını göster ({ ctrl-cmd-shift-pretty-prefix }{ $key })
+
+
+bcc-address-row-label =
+    .value = Bcc
+
+#   $key (String) - the shortcut key for this field
+show-bcc-row-main-menuitem =
+    .label = Bcc alanı
+    .accesskey = B
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+
+# No acceltext should be shown.
+# The label should match the show-bcc-row-button text.
+show-bcc-row-extra-menuitem =
+    .label = Bcc
+    .accesskey = B
+
+#   $key (String) - the shortcut key for this field
+show-bcc-row-button = Bcc
+    .title = Bcc alanını göster ({ ctrl-cmd-shift-pretty-prefix }{ $key })
+
+extra-address-rows-menu-button =
+    .title = Gösterilecek diğer adres alanları
+
 many-public-recipients-bcc =
     .label = Bcc kullan
     .accesskey = B
@@ -196,6 +245,9 @@ many-public-recipients-bcc =
 many-public-recipients-ignore =
     .label = Alıcılar herkese açık kalsın
     .accesskey = A
+
+many-public-recipients-prompt-cancel = Göndermekten vazgeç
+many-public-recipients-prompt-send = Yine de gönder
 
 ## Notifications
 
@@ -207,5 +259,8 @@ encrypted-bcc-ignore-button = Anladım
 
 ## Editing
 
+
 # Tools
 
+compose-tool-button-remove-text-styling =
+    .tooltiptext = Metin stilini kaldır

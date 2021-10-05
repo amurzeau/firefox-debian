@@ -8,9 +8,6 @@
 newtab-page-title = Nyt faneblad
 newtab-settings-button =
     .title = Tilpas siden Nyt faneblad
-newtab-personalize-button-label = Tilpas
-    .title = Tilpas nyt faneblad
-    .aria-label = Tilpas nyt faneblad
 newtab-personalize-icon-label =
     .title = Tilpas nyt faneblad
     .aria-label = Tilpas nyt faneblad
@@ -23,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Søg
     .aria-label = Søg
-newtab-search-box-search-the-web-text = Søg på internettet
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = Søg med { $engine } eller indtast adresse
@@ -174,6 +170,11 @@ newtab-label-sponsored = { $sponsorOrSource } · Sponsoreret
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = Sponsoreret af { $sponsor }
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } min
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -253,10 +254,4 @@ newtab-custom-pocket-sponsored = Sponsorerede historier
 newtab-custom-recent-title = Seneste aktivitet
 newtab-custom-recent-subtitle = Et udvalg af seneste websteder og indhold
 newtab-custom-close-button = Luk
-# For the "Snippets" feature traditionally on about:home.
-# Alternative translation options: "Small Note" or something that
-# expresses the idea of "a small message, shortened from something else,
-# and non-essential but also not entirely trivial and useless.
-newtab-custom-snippets-title = Notitser
-newtab-custom-snippets-subtitle = Tips og nyheder fra { -vendor-short-name } og { -brand-product-name }
 newtab-custom-settings = Håndter flere indstillinger

@@ -9,28 +9,6 @@ do-not-track-option-default-content-blocking-known =
 do-not-track-option-always =
     .label = Beti
 
-pref-page-title =
-    { PLATFORM() ->
-        [windows] Aukerak
-       *[other] Hobespenak
-    }
-
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Please keep the placeholder string short to avoid truncation.
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input-box =
-    .style = width: 15.4em
-    .placeholder =
-        { PLATFORM() ->
-            [windows] Bilatu aukeretan
-           *[other] Bilatu hobespenetan
-        }
-
 settings-page-title = Ezarpenak
 
 # This is used to determine the width of the search field in about:preferences,
@@ -65,10 +43,6 @@ category-search =
 pane-privacy-title = Pribatutasuna eta segurtasuna
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-
-pane-sync-title2 = { -sync-brand-short-name }
-category-sync2 =
-    .tooltiptext = { pane-sync-title2 }
 
 pane-sync-title3 = Sinkronizazioa
 category-sync3 =
@@ -113,14 +87,6 @@ restart-later = Berrabiarazi geroago
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their home page
-# is being controlled by an extension.
-extension-controlled-homepage-override = <img data-l10n-name="icon"/> { $name } hedapenak zure hasiera-orria kontrolatzen du.
-
-# This string is shown to notify the user that their new tab page
-# is being controlled by an extension.
-extension-controlled-new-tab-url = <img data-l10n-name="icon"/> { $name } hedapenak zure fitxa berriaren orria kontrolatzen du.
-
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
 extension-controlled-password-saving = Hedapen bat, <img data-l10n-name="icon"/> { $name }, ezarpen hau kontrolatzen ari da.
@@ -128,10 +94,6 @@ extension-controlled-password-saving = Hedapen bat, <img data-l10n-name="icon"/>
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Hedapen bat, <img data-l10n-name="icon"/> { $name }, ezarpen hau kontrolatzen ari da.
-
-# This string is shown to notify the user that the default search engine
-# is being controlled by an extension.
-extension-controlled-default-search = Hedapen batek (<img data-l10n-name="icon"/> { $name }) zure bilaketa-motor lehenetsia ezarri du.
 
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
@@ -157,13 +119,6 @@ extension-controlled-enable = Hedapena gaitzeko, zoaz <img data-l10n-name="addon
 search-results-header = Bilaketaren emaitzak
 
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
-search-results-empty-message =
-    { PLATFORM() ->
-        [windows] Barkatu! Aukeretan ez dago "<span data-l10n-name="query"></span>" bilaketarako emaitzarik.
-       *[other] Barkatu! Hobespenetan ez dago "<span data-l10n-name="query"></span>" bilaketarako emaitzarik.
-    }
-
-# `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message2 = Barkatu! Ezarpenetan ez dago "<span data-l10n-name="query"></span>" bilaketarako emaitzarik.
 
 search-results-help-link = Laguntza behar duzu? Bisitatu <a data-l10n-name="url">{ -brand-short-name }(r)en laguntza</a>
@@ -171,14 +126,6 @@ search-results-help-link = Laguntza behar duzu? Bisitatu <a data-l10n-name="url"
 ## General Section
 
 startup-header = Abioa
-
-# { -brand-short-name } will be 'Firefox Developer Edition',
-# since this setting is only exposed in Firefox Developer Edition
-separate-profile-mode =
-    .label = Baimendu { -brand-short-name } eta Firefox aldi berean exekutatzea
-use-firefox-sync = Aholkua: bereizitako profilak erabiltzen ditu honek. Erabili { -sync-brand-short-name } hauen artean datuak partekatzeko.
-get-started-not-logged-in = Hasi saioa { -sync-brand-short-name }(e)n…
-get-started-configured = Ireki { -sync-brand-short-name } hobespenak
 
 always-check-default =
     .label = Egiaztatu beti ea { -brand-short-name } nabigatzaile lehenetsia den
@@ -217,10 +164,6 @@ warn-on-close-multiple-tabs =
 
 warn-on-open-many-tabs =
     .label = Abisatu hainbat fitxa irekitzean honek { -brand-short-name } moteldu balezake
-    .accesskey = A
-
-switch-links-to-new-tabs =
-    .label = Aldatu fitxa berrira lotura bat fitxa berrian irekitzean
     .accesskey = A
 
 show-tabs-in-taskbar =
@@ -263,7 +206,6 @@ containers-remove-alert-msg =
 
 containers-remove-ok-button = Kendu edukiontzia
 containers-remove-cancel-button = Ez kendu edukiontzia
-
 
 ## General Section - Language & Appearance
 
@@ -406,11 +348,6 @@ applications-manage-app =
     .label = Aplikazioaren xehetasunak…
 applications-always-ask =
     .label = Galdetu beti
-applications-type-pdf = Portable Document Format (PDF)
-
-# Variables:
-#   $type (String) - the MIME type (e.g application/binary)
-applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 
 # Variables:
 #   $type-description (String) - Description of the type (e.g "Portable Document Format")
@@ -500,17 +437,6 @@ update-application-warning-cross-user-setting = Ezarpen honek Windows kontu guzt
 update-application-use-service =
     .label = Erabili atzeko planoko zerbitzua eguneraketak instalatzeko
     .accesskey = z
-
-update-setting-write-failure-title = Errorea eguneraketen hobespenak gordetzean
-
-# Variables:
-#   $path (String) - Path to the configuration file
-# The newlines between the main text and the line containing the path is
-# intentional so the path is easier to identify.
-update-setting-write-failure-message =
-    { -brand-short-name }(e)k errore bat aurkitu du eta ez du aldaketa hau gorde. Kontuan izan eguneraketen hobespen hau ezartzeak azpiko fitxategia idazteko baimenak behar dituela. Zu edo sistema-kudeatzaile bat errorea konpontzeko moduan izan zaitezkete erabiltzaileen taldeari fitxategi honetarako kontrol osoa emanez.
-    
-     Ezin da fitxategira idatzi: { $path }
 
 update-setting-write-failure-title2 = Errorea eguneraketa-ezarpenak gordetzean
 
@@ -672,7 +598,6 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Gune erabilienak
 home-prefs-topsites-description = Gehien bisitatzen dituzun guneak
-
 home-prefs-topsites-by-option-sponsored =
     .label = Babesleek hornitutako guneak
 home-prefs-shortcuts-header =
@@ -765,13 +690,9 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Erakutsi bilaketa-iradokizunak leiho pribatuetan
 
-suggestions-addressbar-settings-generic = Aldatu hobespenak bilaketa-motorren bestelako iradokizunetarako
-
 suggestions-addressbar-settings-generic2 = Aldatu ezarpenak bilaketa-motorren bestelako iradokizunetarako
 
 search-suggestions-cant-show = Bilaketa-iradokizunak ez dira helbide-barran erakutsiko { -brand-short-name }(e)k historia inoiz ez gogoratzeko konfiguratu duzulako.
-
-search-one-click-header = Klik bakarreko bilaketa-motorrak
 
 search-one-click-header2 = Bilaketa-lasterbideak
 
@@ -789,7 +710,6 @@ search-restore-default =
 search-remove-engine =
     .label = Kendu
     .accesskey = K
-
 search-add-engine =
     .label = Gehitu
     .accesskey = G
@@ -806,13 +726,6 @@ search-keyword-warning-bookmark = Aukeratu duzun gako-hitza dagoeneko laster-mar
 
 ## Containers Section
 
-containers-back-button =
-    .aria-label =
-        { PLATFORM() ->
-            [windows] Itzuli aukeretara
-           *[other] Itzuli hobespenetara
-        }
-
 containers-back-button2 =
     .aria-label = Itzuli ezarpenetara
 containers-header = Edukiontzi-fitxak
@@ -824,9 +737,6 @@ containers-new-tab-check =
     .label = Hautatu edukiontzi bat fitxa berri bakoitzeko
     .accesskey = H
 
-containers-preferences-button =
-    .label = Hobespenak
-
 containers-settings-button =
     .label = Ezarpenak
 containers-remove-button =
@@ -836,12 +746,6 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Eraman ezazu weba zurekin
-sync-signedout-description = Sinkronizatu laster-markak, historia, fitxak, pasahitzak, gehigarriak eta hobespenak zure gailu guztien artean.
-
-sync-signedout-account-signin2 =
-    .label = Hasi saioa { -sync-brand-short-name }(e)n…
-    .accesskey = H
-
 sync-signedout-description2 = Sinkronizatu laster-markak, historia, fitxak, pasahitzak, gehigarriak eta ezarpenak zure gailu guztien artean.
 
 sync-signedout-account-signin3 =
@@ -891,12 +795,6 @@ prefs-syncing-on = Sinkronizazioa: aktibo
 
 prefs-syncing-off = Sinkronizazioa: inaktibo
 
-prefs-sync-setup =
-    .label = Konfiguratu { -sync-brand-short-name }…
-    .accesskey = K
-
-prefs-sync-offer-setup-label = Sinkronizatu laster-markak, historia, fitxak, pasahitzak, gehigarriak eta hobespenak zure gailu guztien artean.
-
 prefs-sync-turn-on-syncing =
     .label = Gaitu sinkronizazioa…
     .accesskey = s
@@ -919,12 +817,6 @@ sync-currently-syncing-logins-passwords = Saio-hasierak eta pasahitzak
 sync-currently-syncing-addresses = Helbideak
 sync-currently-syncing-creditcards = Kreditu-txartelak
 sync-currently-syncing-addons = Gehigarriak
-sync-currently-syncing-prefs =
-    { PLATFORM() ->
-        [windows] Aukerak
-       *[other] Hobespenak
-    }
-
 sync-currently-syncing-settings = Ezarpenak
 
 sync-change-options =
@@ -973,15 +865,6 @@ sync-engine-addons =
     .label = Gehigarriak
     .tooltiptext = Mahaigaineko Firefoxerako hedapenak eta itxurak
     .accesskey = G
-
-sync-engine-prefs =
-    .label =
-        { PLATFORM() ->
-            [windows] Aukerak
-           *[other] Hobespenak
-        }
-    .tooltiptext = Aldatu dituzun 'Orokorra', 'Pribatutasuna' eta 'Segurtasuna' ataletako ezarpenak
-    .accesskey = o
 
 sync-engine-settings =
     .label = Ezarpenak
@@ -1038,9 +921,6 @@ forms-fill-logins-and-passwords =
 forms-saved-logins =
     .label = Gordetako saio-hasierak…
     .accesskey = s
-forms-master-pw-use =
-    .label = Erabili pasahitz nagusia
-    .accesskey = E
 forms-primary-pw-use =
     .label = Erabili pasahitz nagusia
     .accesskey = n
@@ -1051,8 +931,6 @@ forms-primary-pw-learn-more-link = Argibide gehiago
 forms-master-pw-change =
     .label = Aldatu pasahitz nagusia…
     .accesskey = A
-
-forms-master-pw-fips-title = Une honetan FIPS moduan zaude. FIPS moduak pasahitz nagusia ezartzea eskatzen du.
 forms-primary-pw-change =
     .label = Aldatu pasahitz nagusia…
     .accesskey = d
@@ -1063,17 +941,9 @@ forms-primary-pw-former-name = { "" }
 
 forms-primary-pw-fips-title = Une honetan FIPS moduan zaude. FIPS moduak pasahitz nagusia ezartzea eskatzen du.
 forms-master-pw-fips-desc = Pasahitz aldaketak huts egin du
+forms-windows-sso-learn-more-link = Argibide gehiago
 
 ## OS Authentication dialog
-
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = Pasahitz nagusi bat sortzeko, sartu zure Windows kredentzialak. Honek zure kontuen segurtasuna babesten laguntzen du.
-
-# This message can be seen by trying to add a Master Password.
-# The macOS strings are preceded by the operating system with "Firefox is trying to "
-# and includes subtitle of "Enter password for the user "xxx" to allow this." These
-# notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = sortu pasahitz nagusia
 
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Pasahitz nagusi bat sortzeko, sartu zure Windows kredentzialak. Honek zure kontuen segurtasuna babesten laguntzen du.
@@ -1192,10 +1062,6 @@ sitedata-settings =
     .label = Kudeatu datuak…
     .accesskey = K
 
-sitedata-cookies-permissions =
-    .label = Kudeatu baimenak
-    .accesskey = b
-
 sitedata-cookies-exceptions =
     .label = Kudeatu salbuespenak…
     .accesskey = s
@@ -1222,7 +1088,6 @@ addressbar-locbar-shortcuts-option =
 addressbar-locbar-topsites-option =
     .label = Gune erabilienak
     .accesskey = r
-
 addressbar-locbar-engines-option =
     .label = Bilaketa-motorrak
     .accesskey = k
@@ -1373,12 +1238,6 @@ permissions-addon-exceptions =
     .label = Salbuespenak…
     .accesskey = S
 
-permissions-a11y-privacy-checkbox =
-    .label = Eragotzi erabilgarritasun-zerbitzuei zure nabigatzailerako sarbidea
-    .accesskey = a
-
-permissions-a11y-privacy-link = Argibide gehiago
-
 ## Privacy Section - Data Collection
 
 collection-header = { -brand-short-name } datuen bilketa eta erabilera
@@ -1406,11 +1265,6 @@ addon-recommendations-link = Argibide gehiago
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Datuen berri ematea desgaituta dago eraikitze-konfigurazio honetarako
 
-collection-backlogged-crash-reports =
-    .label = Baimendu { -brand-short-name }(r)i atzeratutako hutsegite-txostenak zuregatik bidaltzea
-    .accesskey = h
-collection-backlogged-crash-reports-link = Argibide gehiago
-
 ## Privacy Section - Security
 ##
 ## It is important that wording follows the guidelines outlined on this page:
@@ -1437,16 +1291,6 @@ security-block-uncommon-software =
 
 certs-header = Ziurtagiriak
 
-certs-personal-label = Webgune batek nire ziurtagiri pertsonala eskatzen duenean:
-
-certs-select-auto-option =
-    .label = Hautatu bat automatikoki
-    .accesskey = t
-
-certs-select-ask-option =
-    .label = Galdetu beti
-    .accesskey = G
-
 certs-enable-ocsp =
     .label = Galdetu OCSP erantzule-zerbitzariei ziurtagiriak baliozkoak diren egiaztatzeko
     .accesskey = G
@@ -1458,34 +1302,6 @@ certs-view =
 certs-devices =
     .label = Segurtasun-gailuak…
     .accesskey = S
-
-space-alert-learn-more-button =
-    .label = Argibide gehiago
-    .accesskey = A
-
-space-alert-over-5gb-pref-button =
-    .label =
-        { PLATFORM() ->
-            [windows] Ireki aukerak
-           *[other] Ireki hobespenak
-        }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] I
-           *[other] I
-        }
-
-space-alert-over-5gb-message =
-    { PLATFORM() ->
-        [windows] { -brand-short-name } leku erabilgarririk gabe gelditzen ari da diskoan. Webgunearen edukiak agian ez dira ondo bistaratuko. Biltegiratutako gunearen datuak Aukerak > Pribatutasuna eta segurtasuna > Cookieak eta guneetako datuak atalean garbi ditzakezu.
-       *[other] { -brand-short-name } leku erabilgarririk gabe gelditzen ari da diskoan. Webgunearen edukiak agian ez dira ondo bistaratuko. Biltegiratutako gunearen datuak Hobespenak > Pribatutasuna eta segurtasuna > Cookieak eta guneetako datuak atalean garbi ditzakezu.
-    }
-
-space-alert-under-5gb-ok-button =
-    .label = Ados, ulertu dut
-    .accesskey = A
-
-space-alert-under-5gb-message = { -brand-short-name } leku erabilgarririk gabe gelditzen ari da diskoan. Webgunearen edukiak agian ez dira ondo bistaratuko. Bisitatu "Argibide gehiago" diskoaren erabilpena optimizatu eta nabigatze-esperientzia hobetzeko.
 
 space-alert-over-5gb-settings-button =
     .label = Ireki ezarpenak

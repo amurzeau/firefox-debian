@@ -9,12 +9,12 @@ connection-dns-over-https-url-resolver = Χρήση παρόχου
 #   $name (String) - Display name or URL for the DNS over HTTPS provider
 connection-dns-over-https-url-item-default =
     .label = { $name } (Προεπιλογή)
-    .tooltiptext = Χρήση προεπιλεγμένου URL για επίλυση DNS αντί HTTPS
+    .tooltiptext = Χρήση προεπιλεγμένου URL για επίλυση DNS over HTTPS
 
 connection-dns-over-https-url-custom =
     .label = Προσαρμοσμένο
     .accesskey = Π
-    .tooltiptext = Εισάγετε το προτιμώμενο URL για επίλυση DNS αντί HTTPS
+    .tooltiptext = Εισαγάγετε το προτιμώμενο URL σας για επίλυση DNS over HTTPS
 
 connection-dns-over-https-custom-label = Προσαρμοσμένο
 
@@ -96,9 +96,6 @@ no-proxy-label =
     .accesskey = Χ
 
 no-proxy-example = Για παράδειγμα: .mozilla.org, .net.nz, 192.168.1.0/24
-
-# Note: Do not translate localhost, 127.0.0.1 and ::1.
-no-proxy-localhost-label = Συνδέσεις στο localhost, 127.0.0.1 και ::1 δεν περνούν ποτέ μέσω διαμεσολαβητή.
 
 # Do not translate "localhost", "127.0.0.1/8" and "::1". (You can translate "and".)
 connection-proxy-noproxy-localhost-desc-2 = Οι συνδέσεις στο localhost, 127.0.0.1/8 και ::1, δεν γίνονται ποτέ μέσω διακομιστή μεσολάβησης.

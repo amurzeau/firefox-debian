@@ -8,26 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = { -brand-short-name }가 알려진 추적기를 차단하도록 설정된 경우에만
 do-not-track-option-always =
     .label = 항상
-pref-page-title =
-    { PLATFORM() ->
-        [windows] 설정
-       *[other] 환경 설정
-    }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Please keep the placeholder string short to avoid truncation.
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input-box =
-    .style = width: 15.4em
-    .placeholder =
-        { PLATFORM() ->
-            [windows] 설정에서 찾기
-           *[other] 설정에서 찾기
-        }
 settings-page-title = 설정
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
@@ -55,9 +35,6 @@ category-search =
 pane-privacy-title = 개인 정보 및 보안
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-pane-sync-title2 = { -sync-brand-short-name }
-category-sync2 =
-    .tooltiptext = { pane-sync-title2 }
 pane-sync-title3 = Sync
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
@@ -96,21 +73,12 @@ restart-later = 나중에 다시 시작
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their home page
-# is being controlled by an extension.
-extension-controlled-homepage-override = <img data-l10n-name="icon"/> { $name } 확장 기능이 홈페이지를 제어하고 있습니다.
-# This string is shown to notify the user that their new tab page
-# is being controlled by an extension.
-extension-controlled-new-tab-url = <img data-l10n-name="icon"/> { $name } 확장 기능이 새 탭 페이지를 제어하고 있습니다.
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
 extension-controlled-password-saving = <img data-l10n-name="icon"/> { $name } 확장 기능이 이 설정을 제어하고 있습니다.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = <img data-l10n-name="icon"/> { $name } 확장 기능이 이 설정을 제어하고 있습니다.
-# This string is shown to notify the user that the default search engine
-# is being controlled by an extension.
-extension-controlled-default-search = <img data-l10n-name="icon"/> { $name } 확장 기능이 기본 검색 엔진을 설정했습니다.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name } 확장 기능은 컨테이너 탭이 필요합니다.
@@ -131,25 +99,12 @@ extension-controlled-enable = 확장 기능을 사용하려면 <img data-l10n-na
 
 search-results-header = 검색 결과
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
-search-results-empty-message =
-    { PLATFORM() ->
-        [windows] 죄송합니다! “<span data-l10n-name="query"></span>”옵션에 대한 결과가 없습니다.
-       *[other] 죄송합니다! “<span data-l10n-name="query"></span>”설정에 대한 결과가 없습니다.
-    }
-# `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message2 = 죄송합니다! 설정에서 “<span data-l10n-name="query"></span>”에 대한 결과가 없습니다.
 search-results-help-link = 도움이 필요하세요? <a data-l10n-name="url">{ -brand-short-name } 지원</a>에 방문하세요.
 
 ## General Section
 
 startup-header = 시작 페이지
-# { -brand-short-name } will be 'Firefox Developer Edition',
-# since this setting is only exposed in Firefox Developer Edition
-separate-profile-mode =
-    .label = { -brand-short-name }과 Firefox 같이 돌리기
-use-firefox-sync = 팁: 이렇게 하면 프로필을 따로 쓰게 됩니다. { -sync-brand-short-name }를 써서 데이터를 공유하세요.
-get-started-not-logged-in = { -sync-brand-short-name }에 로그인…
-get-started-configured = { -sync-brand-short-name } 설정 열기
 always-check-default =
     .label = { -brand-short-name }가 기본 브라우저인지 항상 확인
     .accesskey = w
@@ -160,6 +115,9 @@ set-as-my-default-browser =
     .accesskey = D
 startup-restore-previous-session =
     .label = 이전 세션 복원
+    .accesskey = s
+startup-restore-windows-and-tabs =
+    .label = 이전 창 및 탭 열기
     .accesskey = s
 startup-restore-warn-on-quit =
     .label = 브라우저 종료시 경고
@@ -175,12 +133,20 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = 여러 개의 탭을 닫을 때 경고
     .accesskey = m
+confirm-on-close-multiple-tabs =
+    .label = 여러 탭을 닫기 전에 확인
+    .accesskey = m
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (String) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+confirm-on-quit-with-key =
+    .label = { $quitKey } 단축키로 종료하기 전에 확인
+    .accesskey = b
 warn-on-open-many-tabs =
     .label = 여러개의 탭을 열어서 { -brand-short-name }가 느려질 수 있으면 알려주기
     .accesskey = d
-switch-links-to-new-tabs =
-    .label = 링크를 새 탭에 열면 해당 탭으로 즉시 전환
-    .accesskey = h
 switch-to-new-tabs =
     .label = 링크, 이미지 또는 미디어를 새 탭에 열면 해당 탭으로 즉시 전환
     .accesskey = h
@@ -315,10 +281,6 @@ applications-manage-app =
     .label = 애플리케이션 세부사항…
 applications-always-ask =
     .label = 항상 물어 보기
-applications-type-pdf = Portable Document Format (PDF)
-# Variables:
-#   $type (String) - the MIME type (e.g application/binary)
-applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 # Variables:
 #   $type-description (String) - Description of the type (e.g "Portable Document Format")
 #   $type (String) - the MIME type (e.g application/binary)
@@ -385,15 +347,6 @@ update-application-warning-cross-user-setting = 이 설정은 이 { -brand-short
 update-application-use-service =
     .label = 업데이트 설치 시 백그라운드 작업으로 하기
     .accesskey = b
-update-setting-write-failure-title = 업데이트 설정 저장 중 오류 발생
-# Variables:
-#   $path (String) - Path to the configuration file
-# The newlines between the main text and the line containing the path is
-# intentional so the path is easier to identify.
-update-setting-write-failure-message =
-    오류가 발생하여 { -brand-short-name }가 이 변경 내용을 저장하지 않았습니다. 이 업데이트 설정을 하려면 아래 파일에 쓰기 권한이 필요합니다. 사용자나 시스템 관리자가 사용자 그룹에 이 파일에 대한 모든 권한을 부여하여 오류를 해결할 수 있습니다.
-    
-    파일에 쓸 수 없음: { $path }
 update-setting-write-failure-title2 = 업데이트 설정 저장 중 오류 발생
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -595,10 +548,8 @@ search-show-suggestions-above-history-option =
     .label = 주소 표시줄 결과의 방문 기록 앞에 검색 제안 표시
 search-show-suggestions-private-windows =
     .label = 사생활 보호 창에 검색 제안 표시
-suggestions-addressbar-settings-generic = 다른 주소 표시줄 제안에 대한 설정 변경
 suggestions-addressbar-settings-generic2 = 다른 주소 표시줄 제안에 대한 설정 변경
 search-suggestions-cant-show = 방문 기록을 저장하지 않도록 { -brand-short-name }를 설정했기 때문에 검색 제안이 주소 표시 줄 결과에 표시되지 않습니다.
-search-one-click-header = 원클릭 검색 엔진
 search-one-click-header2 = 검색 바로 가기
 search-one-click-desc = 키워드 입력을 시작했을 때 주소 표시줄과 검색 표시줄 아래에 나타날 대체 검색 엔진을 선택하세요.
 search-choose-engine-column =
@@ -625,12 +576,6 @@ search-keyword-warning-bookmark = 북마크에서 이미 사용 중인 키워드
 
 ## Containers Section
 
-containers-back-button =
-    .aria-label =
-        { PLATFORM() ->
-            [windows] 설정으로 돌아가기
-           *[other] 설정으로 돌아가기
-        }
 containers-back-button2 =
     .aria-label = 설정으로 돌아가기
 containers-header = 컨테이너 탭
@@ -640,8 +585,6 @@ containers-add-button =
 containers-new-tab-check =
     .label = 새 탭마다 컨테이너 선택
     .accesskey = S
-containers-preferences-button =
-    .label = 설정
 containers-settings-button =
     .label = 설정
 containers-remove-button =
@@ -651,10 +594,6 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = 웹과 함께 하세요.
-sync-signedout-description = 북마크, 기록, 탭, 비밀번호, 부가 기능, 설정을 모든 기기에 걸쳐 동기화하세요.
-sync-signedout-account-signin2 =
-    .label = { -sync-brand-short-name }에 로그인…
-    .accesskey = i
 sync-signedout-description2 = 북마크, 기록, 탭, 비밀번호, 부가 기능, 설정을 모든 기기에 걸쳐 동기화하세요.
 sync-signedout-account-signin3 =
     .label = Sync에 로그인…
@@ -694,10 +633,6 @@ sync-sign-in =
 
 prefs-syncing-on = 동기화 : 켜짐
 prefs-syncing-off = 동기화 : 꺼짐
-prefs-sync-setup =
-    .label = { -sync-brand-short-name } 설정…
-    .accesskey = S
-prefs-sync-offer-setup-label = 북마크, 기록, 탭, 비밀번호, 부가 기능 및 설정을 모든 기기에 걸쳐 동기화하세요.
 prefs-sync-turn-on-syncing =
     .label = 동기화 켜기…
     .accesskey = s
@@ -717,11 +652,6 @@ sync-currently-syncing-logins-passwords = 로그인과 비밀번호
 sync-currently-syncing-addresses = 주소
 sync-currently-syncing-creditcards = 신용카드
 sync-currently-syncing-addons = 부가 기능
-sync-currently-syncing-prefs =
-    { PLATFORM() ->
-        [windows] 설정
-       *[other] 설정
-    }
 sync-currently-syncing-settings = 설정
 sync-change-options =
     .label = 변경…
@@ -762,14 +692,6 @@ sync-engine-addons =
     .label = 부가 기능
     .tooltiptext = Firefox 데스크톱 용 확장 기능 및 테마
     .accesskey = A
-sync-engine-prefs =
-    .label =
-        { PLATFORM() ->
-            [windows] 설정
-           *[other] 환경 설정
-        }
-    .tooltiptext = 사용자가 변경한 일반, 개인 정보 및 보안 설정
-    .accesskey = S
 sync-engine-settings =
     .label = 설정
     .tooltiptext = 변경한 일반, 개인 정보 및 보안 설정
@@ -819,9 +741,6 @@ forms-fill-logins-and-passwords =
 forms-saved-logins =
     .label = 저장된 로그인…
     .accesskey = L
-forms-master-pw-use =
-    .label = 기본 비밀번호 사용
-    .accesskey = U
 forms-primary-pw-use =
     .label = 기본 비밀번호 사용
     .accesskey = U
@@ -832,7 +751,6 @@ forms-primary-pw-learn-more-link = 더 알아보기
 forms-master-pw-change =
     .label = 기본 비밀번호 변경…
     .accesskey = M
-forms-master-pw-fips-title = 현재 FIPS 모드입니다. FIPS는 기본 비밀번호가 설정되어야 합니다.
 forms-primary-pw-change =
     .label = 기본 비밀번호 변경…
     .accesskey = P
@@ -849,13 +767,6 @@ forms-windows-sso-desc = 기기 설정에서 계정 관리
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = 기본 비밀번호를 만들려면, Windows 로그인 자격 증명을 입력하세요. 이는 계정의 보안을 보호하는데 도움이 됩니다.
-# This message can be seen by trying to add a Master Password.
-# The macOS strings are preceded by the operating system with "Firefox is trying to "
-# and includes subtitle of "Enter password for the user "xxx" to allow this." These
-# notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = 기본 비밀번호 만들기
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = 기본 비밀번호를 만들려면, Windows 로그인 자격 증명을 입력하세요. 이는 계정의 보안을 보호하는데 도움이 됩니다.
 # This message can be seen by trying to add a Primary Password.
@@ -951,9 +862,6 @@ sitedata-clear =
 sitedata-settings =
     .label = 데이터 관리…
     .accesskey = M
-sitedata-cookies-permissions =
-    .label = 권한 관리…
-    .accesskey = P
 sitedata-cookies-exceptions =
     .label = 예외 관리…
     .accesskey = x
@@ -1110,10 +1018,6 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = 예외 목록…
     .accesskey = E
-permissions-a11y-privacy-checkbox =
-    .label = 접근성 서비스가 브라우저에 접근하지 못하게 함
-    .accesskey = a
-permissions-a11y-privacy-link = 더 알아보기
 
 ## Privacy Section - Data Collection
 
@@ -1135,10 +1039,6 @@ addon-recommendations-link = 더 알아보기
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = 이 빌드 설정에서는 데이터 보고가 비활성화 되어 있음
-collection-backlogged-crash-reports =
-    .label = { -brand-short-name }가 사용자를 대신하여 백로그된 충돌 보고서를 보내도록 허용
-    .accesskey = c
-collection-backlogged-crash-reports-link = 더 알아보기
 collection-backlogged-crash-reports-with-link = { -brand-short-name }가 사용자를 대신하여 백로그된 충돌 보고서를 보내도록 허용 <a data-l10n-name="crash-reports-link">더 알아보기</a>
     .accesskey = c
 
@@ -1163,13 +1063,6 @@ security-block-uncommon-software =
 ## Privacy Section - Certificates
 
 certs-header = 인증서
-certs-personal-label = 서버가 인증 정보를 요구할 때
-certs-select-auto-option =
-    .label = 자동으로 하나를 선택
-    .accesskey = S
-certs-select-ask-option =
-    .label = 항상 물어보기
-    .accesskey = A
 certs-enable-ocsp =
     .label = 인증서의 현재 유효성을 확인하기 위해 OCSP 응답기 서버에 쿼리
     .accesskey = Q
@@ -1179,29 +1072,6 @@ certs-view =
 certs-devices =
     .label = 보안 장치…
     .accesskey = D
-space-alert-learn-more-button =
-    .label = 더 알아보기
-    .accesskey = L
-space-alert-over-5gb-pref-button =
-    .label =
-        { PLATFORM() ->
-            [windows] 옵션 열기
-           *[other] 설정 열기
-        }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] O
-           *[other] O
-        }
-space-alert-over-5gb-message =
-    { PLATFORM() ->
-        [windows] { -brand-short-name } 디스크 용량이 부족합니다. 웹 사이트 내용이 제대로 표시되지 않을 수 있습니다. 설정 > 개인 정보 및 보안 > 쿠키 및 사이트 데이터에서 저장된 데이터를 지울 수 있습니다.
-       *[other] { -brand-short-name } 디스크 용량이 부족합니다. 웹 사이트 내용이 제대로 표시되지 않을 수 있습니다. 설정 > 개인 정보 및 보안 > 쿠키 및 사이트 데이터에서 저장된 데이터를 지울 수 있습니다.
-    }
-space-alert-under-5gb-ok-button =
-    .label = 확인
-    .accesskey = K
-space-alert-under-5gb-message = { -brand-short-name } 디스크 용량이 부족합니다. 웹 사이트 내용이 제대로 표시되지 않을 수 있습니다. 더 나은 인터넷 경험을 위해 디스크 용량을 최적화하는 방법을 알아보려면 “더 알아보기”를 방문하세요.
 space-alert-over-5gb-settings-button =
     .label = 설정 열기
     .accesskey = O

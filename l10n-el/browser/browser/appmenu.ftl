@@ -12,25 +12,30 @@ appmenuitem-update-banner3 =
     .label-update-unsupported = Αδυναμία ενημέρωσης — μη συμβατό σύστημα
     .label-update-restart = Διαθέσιμη ενημέρωση — επανεκκίνηση τώρα
 appmenuitem-protection-dashboard-title = Πίνακας προστασίας
-appmenuitem-customize-mode =
-    .label = Προσαρμογή…
-
-## Zoom Controls
-
 appmenuitem-new-tab =
     .label = Νέα καρτέλα
 appmenuitem-new-window =
     .label = Νέο παράθυρο
 appmenuitem-new-private-window =
     .label = Νέο ιδιωτικό παράθυρο
+appmenuitem-history =
+    .label = Ιστορικό
+appmenuitem-downloads =
+    .label = Λήψεις
 appmenuitem-passwords =
     .label = Κωδικοί πρόσβασης
 appmenuitem-addons-and-themes =
     .label = Πρόσθετα και θέματα
+appmenuitem-print =
+    .label = Εκτύπωση…
 appmenuitem-find-in-page =
     .label = Εύρεση στη σελίδα…
+appmenuitem-zoom =
+    .value = Ζουμ
 appmenuitem-more-tools =
     .label = Περισσότερα εργαλεία
+appmenuitem-help =
+    .label = Βοήθεια
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -59,13 +64,29 @@ appmenuitem-fullscreen =
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
-fxa-toolbar-sync-now =
-    .label = Συγχρονισμός τώρα
 appmenu-remote-tabs-sign-into-sync =
     .label = Σύνδεση στο Sync…
 appmenu-remote-tabs-turn-on-sync =
     .label = Ενεργοποίηση Sync…
+# This is shown after the tabs list if we can display more tabs by clicking on the button
+appmenu-remote-tabs-showmore =
+    .label = Εμφάνιση περισσότερων καρτελών
+    .tooltiptext = Εμφάνιση περισσότερων καρτελών αυτής της συσκευής
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = Καμία ανοικτή καρτέλα
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = Ενεργοποιήστε τον συγχρονισμό καρτελών για να δείτε μια λίστα από καρτέλες από τις άλλες σας συσκευές.
+appmenu-remote-tabs-opensettings =
+    .label = Ρυθμίσεις
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = Θέλετε να δείτε εδώ τις καρτέλες σας από άλλες συσκευές;
+appmenu-remote-tabs-connectdevice =
+    .label = Σύνδεση άλλης συσκευής
+appmenu-remote-tabs-welcome = Δείτε μια λίστα με καρτέλες από τις άλλες σας συσκευές.
+appmenu-remote-tabs-unverified = Ο λογαριασμός σας πρέπει να επαληθευτεί.
 appmenuitem-fxa-toolbar-sync-now2 = Συγχρονισμός τώρα
+appmenuitem-fxa-sign-in = Σύνδεση στο { -brand-product-name }
 appmenuitem-fxa-manage-account = Διαχείριση λογαριασμού
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
@@ -153,7 +174,7 @@ appmenu-help-header =
     .title = Βοήθεια { -brand-shorter-name }
 appmenu-about =
     .label = Σχετικά με το { -brand-shorter-name }
-    .accesskey = τ
+    .accesskey = Σ
 appmenu-get-help =
     .label = Λήψη βοήθειας
     .accesskey = β

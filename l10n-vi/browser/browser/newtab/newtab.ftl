@@ -8,9 +8,6 @@
 newtab-page-title = Thẻ mới
 newtab-settings-button =
     .title = Tùy biến trang thẻ mới
-newtab-personalize-button-label = Cá nhân hóa
-    .title = Cá nhân hóa thẻ mới
-    .aria-label = Cá nhân hóa thẻ mới
 newtab-personalize-icon-label =
     .title = Cá nhân hóa thẻ mới
     .aria-label = Cá nhân hóa thẻ mới
@@ -23,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Tìm kiếm
     .aria-label = Tìm kiếm
-newtab-search-box-search-the-web-text = Tìm trên mạng
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = Tìm kiếm với { $engine } hoặc nhập địa chỉ
@@ -173,6 +169,11 @@ newtab-label-sponsored = { $sponsorOrSource } · Được tài trợ
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = Được tài trợ bởi { $sponsor }
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } phút
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -206,7 +207,7 @@ newtab-section-header-pocket = Được đề xuất bởi { $provider }
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
-newtab-empty-section-highlights = Bắt đầu duyệt web và chúng tôi sẽ hiển thị một số bài báo, video, và các trang khác mà bạn vừa truy cập hoặc đã đánh dấu tại đây.
+newtab-empty-section-highlights = Bắt đầu duyệt web và chúng tôi sẽ hiển thị một số bài báo, video, và các trang khác mà bạn đã xem hoặc đã đánh dấu tại đây.
 # Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 # Variables:
 #  $provider (String): Name of the content provider for this section, e.g "Pocket".
@@ -251,10 +252,4 @@ newtab-custom-pocket-sponsored = Câu chuyện được tài trợ
 newtab-custom-recent-title = Hoạt động gần đây
 newtab-custom-recent-subtitle = Tuyển chọn các trang và nội dung gần đây
 newtab-custom-close-button = Đóng
-# For the "Snippets" feature traditionally on about:home.
-# Alternative translation options: "Small Note" or something that
-# expresses the idea of "a small message, shortened from something else,
-# and non-essential but also not entirely trivial and useless.
-newtab-custom-snippets-title = Ghi chú nhỏ
-newtab-custom-snippets-subtitle = Mẹo và tin tức từ { -vendor-short-name } và { -brand-product-name }
 newtab-custom-settings = Quản lý các cài đặt khác

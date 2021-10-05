@@ -7,7 +7,7 @@ privatebrowsingpage-open-private-window-label = Ireki leiho pribatua
 about-private-browsing-search-placeholder = Bilatu webean
 about-private-browsing-info-title = Leiho pribatuan zaude
 about-private-browsing-info-myths = Nabigatze pribatuari buruzko ohiko mitoak
-about-private-browsing =
+about-private-browsing-search-btn =
     .title = Bilatu webean
 # Variables
 #  $engine (String): the name of the user's default search engine
@@ -24,6 +24,8 @@ about-private-browsing-info-description = { -brand-short-name }(e)k zure bilaket
 
 about-private-browsing-need-more-privacy = Pribatutasun gehiago behar duzu?
 about-private-browsing-turn-on-vpn = Probatu { -mozilla-vpn-brand-name }
+
+about-private-browsing-learn-more-link = Argibide gehiago
 
 # This string is the title for the banner for search engine selection
 # in a private window.

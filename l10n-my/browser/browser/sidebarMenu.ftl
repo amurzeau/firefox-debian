@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = ဘေးတန်းကို ပိတ်ရန်
+
+sidebar-close-button =
+    .tooltiptext = ဘေးတန်းကို ပိတ်ပါ

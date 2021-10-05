@@ -8,9 +8,6 @@
 newtab-page-title = Új lap
 newtab-settings-button =
     .title = Az Új lap oldal személyre szabása
-newtab-personalize-button-label = Testreszabás
-    .title = Új lap testreszabása
-    .aria-label = Új lap testreszabása
 newtab-personalize-icon-label =
     .title = Új lap testreszabása
     .aria-label = Új lap testreszabása
@@ -23,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Keresés
     .aria-label = Keresés
-newtab-search-box-search-the-web-text = Keresés a weben
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = Keressen a(z) { $engine } keresővel vagy adjon meg egy címet
@@ -173,6 +169,11 @@ newtab-label-sponsored = { $sponsorOrSource } · Szponzorált
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = Szponzorálta: { $sponsor }
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } perc
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -252,10 +253,4 @@ newtab-custom-pocket-sponsored = Szponzorált történetek
 newtab-custom-recent-title = Legutóbbi tevékenység
 newtab-custom-recent-subtitle = Válogatás a legutóbbi webhelyekből és tartalmakból
 newtab-custom-close-button = Bezárás
-# For the "Snippets" feature traditionally on about:home.
-# Alternative translation options: "Small Note" or something that
-# expresses the idea of "a small message, shortened from something else,
-# and non-essential but also not entirely trivial and useless.
-newtab-custom-snippets-title = Töredékek
-newtab-custom-snippets-subtitle = Tippek és hírek a { -vendor-short-name } és a { -brand-product-name } felől
 newtab-custom-settings = További beállítások kezelése

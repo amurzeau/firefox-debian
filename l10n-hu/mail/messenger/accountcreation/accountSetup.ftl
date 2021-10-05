@@ -58,6 +58,12 @@ account-provisioner-button = Új e-mail-cím kérése
 account-setup-password-toggle =
     .title = Jelszó megjelenítése/elrejtése
 
+account-setup-password-toggle-show =
+    .title = Jelszó megjelenítése
+
+account-setup-password-toggle-hide =
+    .title = Jelszó elrejtése
+
 account-setup-remember-password = Jelszó megjegyzése
     .accesskey = m
 
@@ -308,6 +314,21 @@ exchange-dialog-question = A { -brand-short-name } megtalálta a fiókinformáci
 exchange-dialog-confirm-button = Bejelentkezés
 
 exchange-dialog-cancel-button = Mégse
+
+## Dismiss account creation dialog
+
+exit-dialog-title = Nincs e-mail-fiók beállítva
+
+exit-dialog-description = Biztos, hogy megszakítja a telepítési folyamatot? A { -brand-short-name } továbbra is használható lesz e-mail-fiók nélkül, de számos funkció nem lesz elérhető.
+
+account-setup-no-account-checkbox = A { -brand-short-name } használata e-mail-fiók nélkül
+    .accesskey = h
+
+exit-dialog-cancel-button = Beállítás folytatása
+    .accesskey = f
+
+exit-dialog-confirm-button = Kilépés a beállításból
+    .accesskey = K
 
 ## Alert dialogs
 

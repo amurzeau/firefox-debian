@@ -156,12 +156,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Przidej do poska adresy
 page-action-manage-extension =
     .label = Regyruj rozszyrzyniym…
-page-action-remove-from-urlbar =
-    .label = Wyciep z poska adresy
 page-action-remove-extension =
     .label = Wyciep rozszyrzynie
 
@@ -179,10 +175,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Poszukej we:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Zmiana sztelōnkōw szukanio
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Zmiyń sztelōnki szukanio
 search-one-offs-context-open-new-tab =
@@ -247,8 +239,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Pokoż edytōr przi spamiyntowaniu
     .accesskey = E
-bookmark-panel-done-button =
-    .label = Fertich
 bookmark-panel-save-button =
     .label = Spamiyntej
 # Width of the bookmark panel.
@@ -278,8 +268,6 @@ identity-passive-loaded = Party tyj strōny sōm niyzabezpieczōne (bez przikło
 identity-active-loaded = Ôchrōna na tyj strōnie je zastawiōno ôd ciebie.
 identity-weak-encryption = Ta strōna używo słabego szyfrowanio.
 identity-insecure-login-forms = Dane logowanio wkludzōne na tyj strōnie mogōm być wyzdradzōne.
-identity-permissions =
-    .value = Zgody
 identity-https-only-connection-upgraded = (sztajgniynte do HTTPS)
 identity-https-only-label = Tryb "ino HTTPS"
 identity-https-only-dropdown-on =
@@ -295,7 +283,6 @@ identity-permissions-storage-access-header = Cookies, co śledzōm miyndzy strō
 identity-permissions-storage-access-hint = Te strōny poradzōm używać cookies, co śledzōm cie miyndzy strōnami, i mieć dostymp do danych tyj strōny, jak żeś na nij je.
 identity-permissions-storage-access-learn-more = Przewiydz sie wiyncyj
 identity-permissions-reload-hint = Możno bydzie trza zaladować strōna jeszcze roz, coby wkludzić zmiany.
-identity-permissions-empty = Ta strōna niy dostała ôd ciebie żodnych ekstra zgōd.
 identity-clear-site-data =
     .label = Wyprōznij cookies i dane strōn…
 identity-connection-not-secure-security-view = Połōnczynie z tōm strōnōm niy ma zabezpieczōne.
@@ -383,12 +370,6 @@ bookmarks-toolbar-empty-message = Dej swoje zokłodki na posek z zokłodkami, co
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Kamera do udostympniynio:
-    .accesskey = K
-popup-select-microphone =
-    .value = Mikrofōn do udostympniynio:
-    .accesskey = M
 popup-select-camera-device =
     .value = Kamera:
     .accesskey = K
@@ -402,14 +383,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Głośniki
 popup-all-windows-shared = Wszyske ôkna widziane na ekranie bydōm udostympniōne.
-popup-screen-sharing-not-now =
-    .label = Niy teroz
-    .accesskey = N
-popup-screen-sharing-never =
-    .label = Nigdy niy przizwolej
-    .accesskey = N
-popup-silence-notifications-checkbox = Zastow powiadōmiynia ôd { -brand-short-name } przi udostympnianiu
-popup-silence-notifications-checkbox-warning = { -brand-short-name } niy bydzie pokazować powiadōmiyń w czasie udostympnianio.
 popup-screen-sharing-block =
     .label = Szperuj
     .accesskey = S
@@ -433,14 +406,10 @@ enable-devtools-popup-description = Żeby używać skrōtu F12, nojprzōd ôtwō
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Szukej abo wkludź adresa
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Szukej abo wkludź adresa
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Przeglōndarka je kōntrolowano zdalnie
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -489,8 +458,6 @@ urlbar-go-button =
     .tooltiptext = Idź do adresy podanyj we posku adresy
 urlbar-page-action-button =
     .tooltiptext = Akcyje strōny
-urlbar-pocket-button =
-    .tooltiptext = Spamiyntej do { -pocket-brand-name(case: "gen") }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -681,6 +648,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Przipasuj posek z noczyniami…
     .accesskey = p
+toolbar-button-email-link =
+    .label = Poślij link emailym
+    .tooltiptext = Poślij emailym link do tyj strōny
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Spamiyntej strōna
+    .tooltiptext = Spamiyntej ta strōna ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Ôdewrzij zbiōr
+    .tooltiptext = Ôdewrzij zbiōr ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Synchrōnizowane karty
+    .tooltiptext = Pokoż karty z inkszych maszin
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Nowe prywatne ôkno
+    .tooltiptext = Ôdewrzij nowe ôkno w trybie prywatnego przeglōndanio ({ $shortcut })
 
 ## EME notification panel
 
@@ -731,3 +719,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Skryj szalter ôbrazu we ôbrozie
     .accesskey = S
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Nawigacyjo
+navbar-downloads =
+    .label = Pobiyranie
+navbar-overflow =
+    .tooltiptext = Wiyncyj noczyń…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Durkuj
+    .tooltiptext = Durkuj ta strōna… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Durkuj
+    .tooltiptext = Durkuj ta strōna
+navbar-home =
+    .label = Dōmowo strōna
+    .tooltiptext = Dōmowo strōna { -brand-short-name }
+navbar-library =
+    .label = Bibliotyka
+    .tooltiptext = Pokoż historyjo, spamiyntane zokłodki i inksze
+navbar-search =
+    .title = Szukej
+navbar-accessibility-indicator =
+    .tooltiptext = Funkcyje dostympu sōm załōnczōne
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Karty przeglōndarki
+tabs-toolbar-new-tab =
+    .label = Nowo karta
+tabs-toolbar-list-all-tabs =
+    .label = Wykoz wszyskich kart
+    .tooltiptext = Wykoz wszyskich kart

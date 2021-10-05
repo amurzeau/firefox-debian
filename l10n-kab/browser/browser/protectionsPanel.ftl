@@ -21,10 +21,10 @@ protections-popup-footer-protection-label-standard = Alugen
 
 # The text a screen reader speaks when focused on the info button.
 protections-panel-etp-more-info =
-    .aria-label = Ugar n talɣut ɣef Ammesten mgal aḍfaṛ yettwaseǧehden
+    .aria-label = Ugar n telɣut ɣef Ummesten yettwaseǧehden mgal aḍfaṛ
 
 protections-panel-etp-on-header = Ammesten yettwaseǧehden mgal aḍfaṛ irmed i usmel-a
-protections-panel-etp-off-header = Ammesten yettwaseǧehden mgal aḍfaṛ irurmed i usmel-a
+protections-panel-etp-off-header = Ammesten yettwaseǧehden mgal aḍfaṛ yensa i usmel-a
 
 # The link to be clicked to open the sub-panel view
 protections-panel-site-not-working = Ur iteddu ara usmel?
@@ -63,7 +63,6 @@ protections-panel-not-found-label = Ur ittwaf ara
 ##
 
 protections-panel-settings-label = Iɣewwaṛen n tɣellist
-# This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
 protections-panel-protectionsdashboard-label = Ammesten n tfelwit n usenqed
 
 ## In the Site Not Working? view, we suggest turning off protections if

@@ -6,21 +6,26 @@
 ## App Menu
 
 appmenuitem-protection-dashboard-title = सुरक्षा डैशबोर्ड
-appmenuitem-customize-mode =
-    .label = मनपसंद बनाएँ…
-
-## Zoom Controls
-
 appmenuitem-new-tab =
     .label = नया टैब
 appmenuitem-new-window =
     .label = नया विंडो
 appmenuitem-new-private-window =
     .label = नयी निजी विंडो
+appmenuitem-history =
+    .label = इतिहास
+appmenuitem-downloads =
+    .label = डाउनलोड
 appmenuitem-passwords =
     .label = पासवर्ड
 appmenuitem-addons-and-themes =
     .label = ऐड-ऑन और थीम
+appmenuitem-print =
+    .label = छापें...
+appmenuitem-zoom =
+    .value = बड़ा-छोटा करें
+appmenuitem-help =
+    .label = मदद
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -49,13 +54,23 @@ appmenuitem-fullscreen =
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
-fxa-toolbar-sync-now =
-    .label = अब तुल्यकालित करें
 appmenu-remote-tabs-sign-into-sync =
     .label = सिंक करने के लिए साइन इन करें...
 appmenu-remote-tabs-turn-on-sync =
     .label = सिंक चालू करें…
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = कोई टैब खुला नहीं
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = टैब्स की सूची देखने के लिए अपने दुसरे उपकरणों से टैब संकलन खोले.
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = यहाँ अन्य डिवाइस से अपना टैब देखना चाहते हैं?
+appmenu-remote-tabs-connectdevice =
+    .label = अन्य उपकरण जोड़ें
+appmenu-remote-tabs-welcome = अपने अन्य उपकरणों से टैब की एक सूची दिखाएं।
+appmenu-remote-tabs-unverified = आपके खाते की पृष्टि करने की आवश्यकता है.
 appmenuitem-fxa-toolbar-sync-now2 = अभी सिंक करें
+appmenuitem-fxa-sign-in = { -brand-product-name } में साइन इन करें
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 appmenu-fxa-signed-in-label = साइन इन
 appmenuitem-save-page =

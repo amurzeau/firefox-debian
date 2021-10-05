@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Adder al barra de adresse
 page-action-manage-extension =
     .label = Gerer le extension…
-page-action-remove-from-urlbar =
-    .label = Remover del barra de adresse
 page-action-remove-extension =
     .label = Remover le extension
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Iste vice, cerca con:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Parametros de recerca
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Cambiar le parametros de recerca
 search-one-offs-context-open-new-tab =
@@ -250,8 +242,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Monstrar editor quando se salva
     .accesskey = M
-bookmark-panel-done-button =
-    .label = Facite
 bookmark-panel-save-button =
     .label = Salvar
 # Width of the bookmark panel.
@@ -281,8 +271,6 @@ identity-passive-loaded = Partes de iste pagina non es secur (per exemplo, imagi
 identity-active-loaded = Tu ha disactivate le protection sur iste pagina.
 identity-weak-encryption = Iste pagina usa cryptation debile.
 identity-insecure-login-forms = Credentiales inserite sur iste pagina poterea esser compromittite.
-identity-permissions =
-    .value = Permissiones
 identity-https-only-connection-upgraded = (promovite a HTTPS)
 identity-https-only-label = Modo solo HTTPS
 identity-https-only-dropdown-on =
@@ -298,7 +286,6 @@ identity-permissions-storage-access-header = Cookies inter sitos
 identity-permissions-storage-access-hint = Iste entitates pote usar cookies inter sitos e le datos del sito durante que tu visita iste sito.
 identity-permissions-storage-access-learn-more = Saper plus
 identity-permissions-reload-hint = Il es possibile que tu debe recargar le pagina pro que le cambios se applica.
-identity-permissions-empty = Tu non ha concedite alcun permission special a iste sito.
 identity-clear-site-data =
     .label = Rader cookies e datos de sitos…
 identity-connection-not-secure-security-view = Tu non es connectite con securitate a iste sito.
@@ -343,13 +330,13 @@ browser-window-close-button =
 ## Tab actions
 
 # This label should be written in all capital letters if your locale supports them.
-browser-tab-audio-playing2 = In reproduction
+browser-tab-audio-playing2 = REPRODUCTION IN CURSO
 # This label should be written in all capital letters if your locale supports them.
-browser-tab-audio-muted2 = Silentiate
+browser-tab-audio-muted2 = SILENTIATE
 # This label should be written in all capital letters if your locale supports them.
-browser-tab-audio-blocked = Auto-reproduction blocate
+browser-tab-audio-blocked = AUTOREPRODUCTION BLOCATE
 # This label should be written in all capital letters if your locale supports them.
-browser-tab-audio-pip = Imagine-in-imagine
+browser-tab-audio-pip = IMAGINE-IN-IMAGINE
 
 ## These labels should be written in all capital letters if your locale supports them.
 ## Variables:
@@ -380,12 +367,6 @@ bookmarks-toolbar-empty-message = Pro accesso rapide, placia tu marcapaginas sur
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Camera a compartir:
-    .accesskey = C
-popup-select-microphone =
-    .value = Microphono a compartir:
-    .accesskey = M
 popup-select-camera-device =
     .value = Camera:
     .accesskey = C
@@ -399,21 +380,13 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Altoparlatores
 popup-all-windows-shared = Tote le fenestras visibile sur tu schermo essera compartite.
-popup-screen-sharing-not-now =
-    .label = Non ora
-    .accesskey = o
-popup-screen-sharing-never =
-    .label = Non permitter jammais
-    .accesskey = N
-popup-silence-notifications-checkbox = Disactivar notificationes ab { -brand-short-name } durante compartimento
-popup-silence-notifications-checkbox-warning = { -brand-short-name } non monstrara notificationes durante que tu comparti.
 popup-screen-sharing-block =
     .label = Blocar
     .accesskey = B
 popup-screen-sharing-always-block =
     .label = Blocar sempre
     .accesskey = s
-popup-mute-notifications-checkbox = Silentiar avisos del sito web durante le compartimento
+popup-mute-notifications-checkbox = Silentiar notificationes del sito web durante le compartimento
 
 ## WebRTC window or screen share tab switch warning
 
@@ -430,14 +403,10 @@ enable-devtools-popup-description = Pro usar le clave de accesso directe F12, ap
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Insere un adresse o face un recerca
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Insere un adresse o face un recerca
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Le navigator es sub controlo remote
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -486,8 +455,6 @@ urlbar-go-button =
     .tooltiptext = Ir al adresse in le barra de adresses
 urlbar-page-action-button =
     .tooltiptext = Actiones del pagina
-urlbar-pocket-button =
-    .tooltiptext = Salvar in { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -555,7 +522,7 @@ urlbar-group-firefox-suggest =
 # Variables
 #  $engine (String): the name of the search engine providing the suggestions
 urlbar-group-search-suggestions =
-    .label = { $engine } Suggestiones
+    .label = Suggestiones de { $engine }
 
 ## Full Screen and Pointer Lock UI
 
@@ -575,7 +542,7 @@ pointerlock-warning-no-domain = Iste documento controla tu punctator. Preme Esc 
 
 ## Subframe crash notification
 
-crashed-subframe-message = <strong>Parte de iste pagina collabeva.</strong> Pro consentir que { -brand-product-name } sape re iste problema e on pote lo corriger plus velocemente, invia un reporto.
+crashed-subframe-message = <strong>Un parte de iste pagina ha collabite.</strong> Pro permitter que { -brand-product-name } sape de iste problema e lo corrige plus rapidemente, invia un reporto.
 # The string for crashed-subframe-title.title should match crashed-subframe-message,
 # but without any markup.
 crashed-subframe-title =
@@ -664,8 +631,8 @@ save-to-pocket-button =
 ## Repair text encoding toolbar button
 
 repair-text-encoding-button =
-    .label = Corriger le codification del texto:
-    .tooltiptext = Divina le correcte codification del texto ab le contento del pagina
+    .label = Corriger le codification del texto
+    .tooltiptext = Divinar le correcte codification del texto ab le contento del pagina
 
 ## Customize Toolbar Buttons
 
@@ -692,6 +659,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Personalisar le barra de instrumentos…
     .accesskey = P
+toolbar-button-email-link =
+    .label = Inviar le ligamine per email
+    .tooltiptext = Inviar per email un ligamine a iste pagina
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Salvar le pagina
+    .tooltiptext = Salvar iste pagina ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Aperir un file
+    .tooltiptext = Aperir un file ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Schedas synchronisate
+    .tooltiptext = Monstrar le schedas de altere apparatos
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Nove fenestra private
+    .tooltiptext = Aperir un nove fenestra de navigation private ({ $shortcut })
 
 ## EME notification panel
 
@@ -742,6 +730,49 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Non monstrar iste message quando le fenestras emergente es blocate
     .accesskey = D
+edit-popup-settings =
+    .label = Gerer parametros de fenestra emergente…
+    .accesskey = G
 picture-in-picture-hide-toggle =
     .label = Celar le commutator imagine-in-imagine
     .accesskey = C
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navigation
+navbar-downloads =
+    .label = Discargamentos
+navbar-overflow =
+    .tooltiptext = Plus instrumentos…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Imprimer
+    .tooltiptext = Imprimer iste pagina… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Imprimer
+    .tooltiptext = Imprimer iste pagina
+navbar-home =
+    .label = Initio
+    .tooltiptext = Pagina principal de { -brand-short-name }
+navbar-library =
+    .label = Bibliotheca
+    .tooltiptext = Vider chronologia, marcapaginas salvate, e plus
+navbar-search =
+    .title = Cercar
+navbar-accessibility-indicator =
+    .tooltiptext = Functionalitates de accessibilitate active
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Schedas del navigator
+tabs-toolbar-new-tab =
+    .label = Nove scheda
+tabs-toolbar-list-all-tabs =
+    .label = Listar tote le schedas
+    .tooltiptext = Listar tote le schedas

@@ -19,6 +19,9 @@ downloads-panel =
 downloads-panel-list =
     .style = width: 70ch
 
+downloads-panel-items =
+    .style = width: 40em
+
 downloads-cmd-pause =
     .label = Pausa
     .accesskey = P

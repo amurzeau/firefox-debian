@@ -133,12 +133,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Tambah ke Bar Alamat
 page-action-manage-extension =
     .label = Urus Ekstensi…
-page-action-remove-from-urlbar =
-    .label = Buang daripada Bar Alamat
 
 ## Auto-hide Context Menu
 
@@ -151,10 +147,6 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Ubah Tetapan Carian
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Ubah tetapan carian
 search-one-offs-context-open-new-tab =
@@ -189,8 +181,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Papar editor apabila menyimpan
     .accesskey = P
-bookmark-panel-done-button =
-    .label = Siap
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -208,7 +198,6 @@ identity-active-loaded = Anda telah menyahdayakan perlindungan untuk halaman ini
 identity-weak-encryption = Halaman ini menggunakan enkripsi yang lemah.
 identity-insecure-login-forms = Log masuk yang dimasukkan dalam halaman ini boleh dikompromi.
 identity-permissions-reload-hint = Anda mungkin perlu memuat semula halaman supaya perubahan ini dilaksanakan.
-identity-permissions-empty = Anda tidak memberikan laman ini sebarang keizinan khas.
 identity-clear-site-data =
     .label = Buang Kuki dan Data Laman…
 identity-remove-cert-exception =
@@ -255,12 +244,6 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Kamera untuk dikongsi:
-    .accesskey = K
-popup-select-microphone =
-    .value = Mikrofon untuk dikongsi:
-    .accesskey = M
 popup-all-windows-shared = Semua tetingkap yang kelihatan pada skrin anda akan dikongsi.
 
 ## WebRTC window or screen share tab switch warning
@@ -271,12 +254,8 @@ popup-all-windows-shared = Semua tetingkap yang kelihatan pada skrin anda akan d
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Cari atau masukkan alamat
 urlbar-placeholder =
     .placeholder = Cari atau masukkan alamat
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Pelayar berada dalam kawalan jauh
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -394,6 +373,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Penyesuaian Bar Alatan…
     .accesskey = P
+toolbar-button-email-link =
+    .label = E-mel Pautan
+    .tooltiptext = E-mel pautan ke halaman ini
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Simpan Halaman
+    .tooltiptext = Simpan halaman ini ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Buka Fail
+    .tooltiptext = Buka fail ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Tab Sync
+    .tooltiptext = Papar tab dari peranti lain
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Tetingkap Peribadi Baru
+    .tooltiptext = Buka tetingkap Pelayaran Peribadi baharu ({ $shortcut })
 
 ## EME notification panel
 
@@ -428,3 +428,38 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Jangan papar mesej ini apabila popup telah disekat
     .accesskey = J
+
+# Navigator Toolbox
+
+navbar-downloads =
+    .label = Muat turun
+navbar-overflow =
+    .tooltiptext = Alatan seterusnya…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Cetak
+    .tooltiptext = Cetak laman ini… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Cetak
+    .tooltiptext = Cetak halaman ini
+navbar-home =
+    .label = Laman
+    .tooltiptext = Laman { -brand-short-name }
+navbar-library =
+    .label = Pustaka
+    .tooltiptext = Papar sejarah, tandabuku yang disimpan dan banyak lagi
+navbar-search =
+    .title = Cari
+navbar-accessibility-indicator =
+    .tooltiptext = Ciri Ketercapaian Diaktifkan
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Tab pelayar
+tabs-toolbar-new-tab =
+    .label = Tab Baru
+tabs-toolbar-list-all-tabs =
+    .label = Senarai semua tab
+    .tooltiptext = Senarai semua tab

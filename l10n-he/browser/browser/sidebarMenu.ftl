@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = סגירת סרגל הצד
+
+sidebar-close-button =
+    .tooltiptext = סגירת סרגל הצד

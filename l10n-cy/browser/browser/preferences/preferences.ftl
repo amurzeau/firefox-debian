@@ -8,26 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Dim ond pan mae { -brand-short-name } wedi ei osod i rwystro tracwyr hysbys.
 do-not-track-option-always =
     .label = Bob tro
-pref-page-title =
-    { PLATFORM() ->
-        [windows] Opsiynau
-       *[other] Dewisiadau
-    }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Please keep the placeholder string short to avoid truncation.
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input-box =
-    .style = width: 15.4em
-    .placeholder =
-        { PLATFORM() ->
-            [windows] Canfod yn Opsiynau
-           *[other] Canfod yn Dewisiadau
-        }
 settings-page-title = Gosodiadau
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
@@ -55,9 +35,6 @@ category-search =
 pane-privacy-title = Preifatrwydd a Diogelwch
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-pane-sync-title2 = { -sync-brand-short-name }
-category-sync2 =
-    .tooltiptext = { pane-sync-title2 }
 pane-sync-title3 = Sync
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
@@ -96,21 +73,12 @@ restart-later = Ailgychwyn Rhywbryd Eto
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their home page
-# is being controlled by an extension.
-extension-controlled-homepage-override = Mae estyniad <img data-l10n-name="icon"/> { $name }, yn rheoli eich tudalen cartref.
-# This string is shown to notify the user that their new tab page
-# is being controlled by an extension.
-extension-controlled-new-tab-url = Mae estyniad <img data-l10n-name="icon"/> { $name }, yn rheoli eich tudalen Tab Newydd.
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
 extension-controlled-password-saving = Mae estyniad <img data-l10n-name="icon"/> { $name }, yn rheoli'r gosodiad hwn.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Mae estyniad <img data-l10n-name="icon"/> { $name }, yn rheoli'r gosodiad hwn.
-# This string is shown to notify the user that the default search engine
-# is being controlled by an extension.
-extension-controlled-default-search = Mae'r estyniad <img data-l10n-name="icon"/> { $name }, wedi gosod eich peiriant chwilio ragosodedig.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = Mae estyniad <img data-l10n-name="icon"/> { $name }, angen Tabiau Cynhwysydd.
@@ -131,25 +99,12 @@ extension-controlled-enable = I alluogi'r estyniad ewch i Ychwanegion <img data-
 
 search-results-header = Canlyniadau Chwilio
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
-search-results-empty-message =
-    { PLATFORM() ->
-        [windows] Ymddiheuriadau! Nid oes canlyniadau yn yr Opsiynau ar gyfer “<span data-l10n-name="query"></span>”.
-       *[other] Ymddiheuriadau! Nid os canlyniadau yn y Dewisiada.u ar gyfer “<span data-l10n-name="query"></span>”.
-    }
-# `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message2 = Ymddiheuriadau! Nid oes canlyniadau yn y Dewisiadau ar gyfer “<span data-l10n-name="query"></span>”.
 search-results-help-link = Angen help? Ewch i <a data-l10n-name="url">Cefnogaeth { -brand-short-name }</a>
 
 ## General Section
 
 startup-header = Cychwyn
-# { -brand-short-name } will be 'Firefox Developer Edition',
-# since this setting is only exposed in Firefox Developer Edition
-separate-profile-mode =
-    .label = Caniatáu i { -brand-short-name } a Firefox redeg ar yr un pryd
-use-firefox-sync = Cyngor: Mae'n defnyddio proffiliau gwahanol. Defnyddiwch { -sync-brand-short-name } i rannu data rhyngddynt.
-get-started-not-logged-in = Mewngofnodi i { -sync-brand-short-name }…
-get-started-configured = Agor dewisiadau { -sync-brand-short-name }
 always-check-default =
     .label = Wrth gychwyn, gwirio ai { -brand-short-name } yw eich porwr ragosodedig
     .accesskey = W
@@ -160,6 +115,9 @@ set-as-my-default-browser =
     .accesskey = R
 startup-restore-previous-session =
     .label = Adfer y sesiwn flaenorol
+    .accesskey = A
+startup-restore-windows-and-tabs =
+    .label = Agor ffenestri a thabiau blaenorol
     .accesskey = A
 startup-restore-warn-on-quit =
     .label = Rhybuddio wrth adael y porwr
@@ -175,12 +133,20 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Rhybuddio wrth gau mwy nag un tab
     .accesskey = g
+confirm-on-close-multiple-tabs =
+    .label = Cadarnhau cyn cau tabiau lluosog
+    .accesskey = l
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (String) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+confirm-on-quit-with-key =
+    .label = Cadarnhau cyn gadael gyda { $quitKey }
+    .accesskey = g
 warn-on-open-many-tabs =
     .label = Rhybuddio y gall agor mwy nag un tab arafu { -brand-short-name }
     .accesskey = a
-switch-links-to-new-tabs =
-    .label = Wrth agor dolen mewn tab newydd, symud yn syth iddo
-    .accesskey = W
 switch-to-new-tabs =
     .label = Wrth agor dolen, delwedd neu gyfrwng mewn tab newydd, symud yn syth iddo
     .accesskey = s
@@ -339,10 +305,6 @@ applications-manage-app =
     .label = Manylion y Rhaglen…
 applications-always-ask =
     .label = Gofyn bob tro
-applications-type-pdf = Portable Document Format (PDF)
-# Variables:
-#   $type (String) - the MIME type (e.g application/binary)
-applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 # Variables:
 #   $type-description (String) - Description of the type (e.g "Portable Document Format")
 #   $type (String) - the MIME type (e.g application/binary)
@@ -409,15 +371,6 @@ update-application-warning-cross-user-setting = Bydd y gosodiad hwn yn berthnaso
 update-application-use-service =
     .label = Defnyddio gwasanaethau cefndirol i osod diweddariadau
     .accesskey = c
-update-setting-write-failure-title = Gwall wrth gadw dewisiadau Diweddaru
-# Variables:
-#   $path (String) - Path to the configuration file
-# The newlines between the main text and the line containing the path is
-# intentional so the path is easier to identify.
-update-setting-write-failure-message =
-    Bu gwall ar { -brand-short-name } ac nid yw wedi cadw'r newid hwn. Noder bod gosod caniatâd ar gyfer y diweddariad hwn yn gofyn am ganiatâd i ysgrifennu at y ffeil isod. Efallai y byddwch chi neu weinyddwr system yn gallu datrys y gwall trwy roi rheolaeth lawn i'r ffeil hon i'r grŵp Defnyddwyr.
-    
-    Doedd dim modd ysgrifennu i ffeil: { $path }
 update-setting-write-failure-title2 = Gwall wrth gadw dewisiadau Diweddaru
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -627,10 +580,8 @@ search-show-suggestions-above-history-option =
     .label = Dangos awgrymiadau chwilio o flaen hanes yng nghanlyniadau'r bar cyfeiriadau
 search-show-suggestions-private-windows =
     .label = Dangos awgrymiadau chwilio mewn Ffenestri Preifat
-suggestions-addressbar-settings-generic = Newid dewisiadau awgrymiadau eraill y bar cyfeiriad
 suggestions-addressbar-settings-generic2 = Newid dewisiadau awgrymiadau eraill y bar cyfeiriad
 search-suggestions-cant-show = Ni fydd awgrymiadau chwilio'n cael eu dangos yn y bar lleoliad gan eich bod wedi ffurfweddu { -brand-short-name } i byth cofio hanes.
-search-one-click-header = Peiriannau Chwilio Un Clic
 search-one-click-header2 = Chwilio'r Llwybrau Byr
 search-one-click-desc = Dewis peiriant chwilio arall sy'n ymddangos o dan y bar cyfeiriad a'r bar chwilio pan fyddwch yn cychwyn allweddair.
 search-choose-engine-column =
@@ -657,12 +608,6 @@ search-keyword-warning-bookmark = Rydych wedi defnyddio allweddair sy'n cael ei 
 
 ## Containers Section
 
-containers-back-button =
-    .aria-label =
-        { PLATFORM() ->
-            [windows] Nôl i Opsiynau
-           *[other] Nol i Dewisiadau
-        }
 containers-back-button2 =
     .aria-label = Nôl i'r Gosodiadau
 containers-header = Tabiau Cynwysyddion
@@ -672,8 +617,6 @@ containers-add-button =
 containers-new-tab-check =
     .label = Dewiswch gynhwysydd ar gyfer pob tab newydd
     .accesskey = g
-containers-preferences-button =
-    .label = Dewisiadau
 containers-settings-button =
     .label = Gosodiadau
 containers-remove-button =
@@ -683,10 +626,6 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Mynd â'ch  Gwe gyda Chi
-sync-signedout-description = Cydweddwch eich nodau tudalen, hanes, tabiau, cyfrineiriau, ychwanegion a dewisiadau ymysg eich dyfeisiau i gyd.
-sync-signedout-account-signin2 =
-    .label = Mewngofnodi i { -sync-brand-short-name }…
-    .accesskey = M
 sync-signedout-description2 = Cydweddwch eich nodau tudalen, hanes, tabiau, cyfrineiriau, ychwanegion a dewisiadau ar draws eich holl ddyfeisiau.
 sync-signedout-account-signin3 =
     .label = Mewngofnodi i gydweddu…
@@ -726,10 +665,6 @@ sync-sign-in =
 
 prefs-syncing-on = Cydweddu: YMLAEN
 prefs-syncing-off = Cydweddu: DIFFODD
-prefs-sync-setup =
-    .label = Gosod { -sync-brand-short-name }
-    .accesskey = G
-prefs-sync-offer-setup-label = Cydweddwch eich nodau tudalen, hanes, tabiau, cyfrineiriau, ychwanegion a dewisiadau ar draws eich dyfeisiau i gyd.
 prefs-sync-turn-on-syncing =
     .label = Cychwyn cydweddu…
     .accesskey = C
@@ -749,11 +684,6 @@ sync-currently-syncing-logins-passwords = Mewngofnodion a chyfrineiriau
 sync-currently-syncing-addresses = Cyfeiriadau
 sync-currently-syncing-creditcards = Cardiau Credyd
 sync-currently-syncing-addons = Ychwanegion
-sync-currently-syncing-prefs =
-    { PLATFORM() ->
-        [windows] Opsiynau
-       *[other] Dewisiadau
-    }
 sync-currently-syncing-settings = Gosodiadau
 sync-change-options =
     .label = Newid…
@@ -794,14 +724,6 @@ sync-engine-addons =
     .label = Ychwanegion
     .tooltiptext = Estyniadau a themâu ar gyfer Firefox bwrdd gwaith
     .accesskey = Y
-sync-engine-prefs =
-    .label =
-        { PLATFORM() ->
-            [windows] Opsiynau
-           *[other] Dewisiadau
-        }
-    .tooltiptext = Gosodiadau Cyffredinol, Preifatrwydd a Diogelwch rydych wedi eu newid
-    .accesskey = O
 sync-engine-settings =
     .label = Gosodiadau
     .tooltiptext = Gosodiadau Cyffredinol, Preifatrwydd a Diogelwch rydych wedi'u newid
@@ -851,9 +773,6 @@ forms-fill-logins-and-passwords =
 forms-saved-logins =
     .label = Mewngofnodion wedi eu Cadw…
     .accesskey = M
-forms-master-pw-use =
-    .label = Defnyddio prif gyfrinair
-    .accesskey = D
 forms-primary-pw-use =
     .label = Defnyddio Prif Gyfrinair
     .accesskey = P
@@ -864,7 +783,6 @@ forms-primary-pw-learn-more-link = Dysgu rhagor
 forms-master-pw-change =
     .label = Newid y Prif Gyfrinair…
     .accesskey = N
-forms-master-pw-fips-title = Rydych ym modd FIPS. Mae FIPS angen Prif Gyfrinair nad yw'n wag.
 forms-primary-pw-change =
     .label = Newid y Prif Gyfrinair…
     .accesskey = N
@@ -881,13 +799,6 @@ forms-windows-sso-desc = Rheoli cyfrifon yn eich gosodiadau dyfais
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = I greu Prif Gyfrinair, rhowch eich manylion mewngofnodi Windows. Mae hyn yn helpu i amddiffyn diogelwch eich cyfrifon.
-# This message can be seen by trying to add a Master Password.
-# The macOS strings are preceded by the operating system with "Firefox is trying to "
-# and includes subtitle of "Enter password for the user "xxx" to allow this." These
-# notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = creu Prif Gyfrinair
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = I greu Prif Gyfrinair, nodwch fanylion eich mewngofnodi Windows. Mae hyn yn helpu i ddiogelu eich cyfrifon.
 # This message can be seen by trying to add a Primary Password.
@@ -982,9 +893,6 @@ sitedata-clear =
     .accesskey = l
 sitedata-settings =
     .label = Rheoli Data…
-    .accesskey = R
-sitedata-cookies-permissions =
-    .label = Rheoli Caniatâd...
     .accesskey = R
 sitedata-cookies-exceptions =
     .label = Rheoli Eithriadau…
@@ -1142,10 +1050,6 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = Eithriadau…
     .accesskey = E
-permissions-a11y-privacy-checkbox =
-    .label = Atal gwasanaethau hygyrchedd rhag cael mynediad i'ch porwr
-    .accesskey = a
-permissions-a11y-privacy-link = Dysgu rhagor
 
 ## Privacy Section - Data Collection
 
@@ -1167,10 +1071,6 @@ addon-recommendations-link = Dysgu rhagor
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Mae adrodd ar ddata wedi ei analluogi ar gyfer ffurfweddiad yr adeiledd hwn
-collection-backlogged-crash-reports =
-    .label = Caniatáu i { -brand-short-name } i anfon adroddiadau chwalu wedi eu cadw ar eich rhan
-    .accesskey = c
-collection-backlogged-crash-reports-link = Dysgu rhagor
 collection-backlogged-crash-reports-with-link = Caniatáu i { -brand-short-name } anfon adroddiadau chwalu sydd wedi'u crynhoi ar eich rhan <a data-l10n-name="crash-reports-link">Dysgu rhagor</a>
     .accesskey = C
 
@@ -1195,13 +1095,6 @@ security-block-uncommon-software =
 ## Privacy Section - Certificates
 
 certs-header = Tystysgrifau
-certs-personal-label = Pan fydd gweinydd yn gofyn am fy nhystysgrif bersonol:
-certs-select-auto-option =
-    .label = Dewis un yn awtomatig
-    .accesskey = T
-certs-select-ask-option =
-    .label = Gofyn i mi bob tro
-    .accesskey = G
 certs-enable-ocsp =
     .label = Gofyn i weinyddion atebwr OCSP i gadarnhau dilysrwydd cyfredol y tystysgrifau
     .accesskey = G
@@ -1211,29 +1104,6 @@ certs-view =
 certs-devices =
     .label = Dyfeisiau Diogelwch…
     .accesskey = y
-space-alert-learn-more-button =
-    .label = Dysgu Rhagor
-    .accesskey = D
-space-alert-over-5gb-pref-button =
-    .label =
-        { PLATFORM() ->
-            [windows] Agor Opsiynau
-           *[other] Agor Dewisiadau
-        }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] O
-           *[other] D
-        }
-space-alert-over-5gb-message =
-    { PLATFORM() ->
-        [windows] Mae { -brand-short-name } yn brin o le ar ddisg. Efallai na fydd cynnwys gwefan yn cael ei ddangos yn iawn. Mae modd i chi glirio data wedi ei storio yn Opsiynau> Preifatrwydd a Diogelwch > Cwcis a Data Gwefan.
-       *[other] Mae { -brand-short-name } yn brin o le ar ddisg. Efallai na fydd cynnwys gwefan yn cael ei ddangos yn iawn. Mae modd i chi glirio data wedi ei storio yn Dewisiadau > Preifatrwydd a Diogelwch > Cwcis a Data Gwefan.
-    }
-space-alert-under-5gb-ok-button =
-    .label = Iawn
-    .accesskey = I
-space-alert-under-5gb-message = Mae { -brand-short-name } yn brin o le ar ddisg. Efallai na fydd cynnwys gwefan yn cael ei ddangos yn iawn. Ewch i “Learn More” i wella'r defnydd o'r disg ar gyfer gwell profiad pori.
 space-alert-over-5gb-settings-button =
     .label = Agor y Gosodiadau
     .accesskey = A

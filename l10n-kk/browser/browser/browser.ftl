@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Адрес жолағына қосу
 page-action-manage-extension =
     .label = Кеңейтуді басқару…
-page-action-remove-from-urlbar =
-    .label = Адрес жолағынан алып тастау
 page-action-remove-extension =
     .label = Кеңейтуді өшіру
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Осы рет, келесімен іздеу:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Іздеу баптауларын өзгерту
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Іздеу баптауларын өзгерту
 search-one-offs-context-open-new-tab =
@@ -250,8 +242,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Сақтау кезінде түзеткішті көрсету
     .accesskey = с
-bookmark-panel-done-button =
-    .label = Дайын
 bookmark-panel-save-button =
     .label = Сақтау
 # Width of the bookmark panel.
@@ -281,8 +271,6 @@ identity-passive-loaded = Бұл парақтың кейбір бөліктер�
 identity-active-loaded = Бұл парақта қорғанысты сөндіргенсіз.
 identity-weak-encryption = Бұл парақ әлсіз шифрлеуді қолданады.
 identity-insecure-login-forms = Бұл парақта енгізілген логин ақпаратына бөтен адамдардың қолы жетуі мүмкін.
-identity-permissions =
-    .value = Рұқсаттар
 identity-https-only-connection-upgraded = (HTTPS дейін жаңартылды)
 identity-https-only-label = Тек-HTTPS режимі
 identity-https-only-dropdown-on =
@@ -298,7 +286,6 @@ identity-permissions-storage-access-header = Сайтаралық cookie фай�
 identity-permissions-storage-access-hint = Бұл тараптар сіз осы сайтта болған кезде сайтаралық cookie файлдарын және сайт деректерін қолдана алады.
 identity-permissions-storage-access-learn-more = Көбірек білу
 identity-permissions-reload-hint = Өзгерістер іске асуы үшін бұл парақты қайта жүктеуіңіз керек болуы мүмкін.
-identity-permissions-empty = Бұл сайтқа арнайы рұқсаттарды берген жоқсыз.
 identity-clear-site-data =
     .label = Cookies файлдары және сайт деректерін тазарту…
 identity-connection-not-secure-security-view = Бұл сайтқа қауіпсіз түрде байланысқан емессіз.
@@ -380,12 +367,6 @@ bookmarks-toolbar-empty-message = Жылдам қатынау үшін, бетб
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Бөлісу үшін камера:
-    .accesskey = м
-popup-select-microphone =
-    .value = Бөлісу үшін микрофон:
-    .accesskey = м
 popup-select-camera-device =
     .value = Камера:
     .accesskey = К
@@ -399,14 +380,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Динамиктер
 popup-all-windows-shared = Экраныңыздаға барлық көрінетін терезелермен бөлісетін боласыз.
-popup-screen-sharing-not-now =
-    .label = Қазір емес
-    .accesskey = м
-popup-screen-sharing-never =
-    .label = Ешқашан рұқсат етпеу
-    .accesskey = н
-popup-silence-notifications-checkbox = Бөлісу кезінде { -brand-short-name } хабарламаларын сөндіру
-popup-silence-notifications-checkbox-warning = { -brand-short-name } бөлісу кезінде хабарламаларды көрсетпейді.
 popup-screen-sharing-block =
     .label = Бұғаттау
     .accesskey = Б
@@ -430,14 +403,10 @@ enable-devtools-popup-description = F12 жарлығын қолдану үшін
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Іздеу немесе адрес
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Іздеу немесе адрес
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Браузер қашықтан басқарылуда
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -486,8 +455,6 @@ urlbar-go-button =
     .tooltiptext = Енгізілген адреске өту
 urlbar-page-action-button =
     .tooltiptext = Бет әрекеттері
-urlbar-pocket-button =
-    .tooltiptext = { -pocket-brand-name }-ке сақтау
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -546,6 +513,16 @@ urlbar-result-action-search-tabs = Беттерден іздеу
 
 ## Labels shown above groups of urlbar results
 
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = { $engine } ұсыныстары
 
 ## Full Screen and Pointer Lock UI
 
@@ -682,6 +659,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Құралдар панелін баптау…
     .accesskey = б
+toolbar-button-email-link =
+    .label = Сілтемені эл. поштамен жіберу
+    .tooltiptext = Бұл парақ сілтемесін эл. поштамен жіберу
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Парақты сақтау
+    .tooltiptext = Бұл парақты сақтау ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Файлды ашу
+    .tooltiptext = Файлды ашу ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Синхрондалған беттер
+    .tooltiptext = Басқа құрылғылардан беттерді көрсету
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Жаңа жекелік терезе
+    .tooltiptext = Жаңа жекелік шолу терезені ашу ({ $shortcut })
 
 ## EME notification panel
 
@@ -735,3 +733,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Суреттегі сурет қосқышын жасыру
     .accesskey = ы
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Навигация
+navbar-downloads =
+    .label = Жүктемелер
+navbar-overflow =
+    .tooltiptext = Көбірек құралдар…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Баспаға шығару
+    .tooltiptext = Ағымдағы бетті баспаға шығару… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Баспаға шығару
+    .tooltiptext = Ағымдағы бетті баспаға шығару
+navbar-home =
+    .label = Үйге
+    .tooltiptext = { -brand-short-name } үй беті
+navbar-library =
+    .label = Жинақталған
+    .tooltiptext = Тарихты, сақталған бетбелгілерді қарау және т.б.
+navbar-search =
+    .title = Іздеу
+navbar-accessibility-indicator =
+    .tooltiptext = Қолжетерлілік мүмкіндіктері іске қосылған
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Браузер беттері
+tabs-toolbar-new-tab =
+    .label = Жаңа бет
+tabs-toolbar-list-all-tabs =
+    .label = Барлық беттерді тізіп шығу
+    .tooltiptext = Барлық беттерді тізіп шығу

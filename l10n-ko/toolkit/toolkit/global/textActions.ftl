@@ -52,3 +52,5 @@ text-action-spell-add-dictionaries =
 text-action-spell-dictionaries =
     .label = 언어
     .accesskey = L
+text-action-search-text-box-clear =
+    .title = 지우기

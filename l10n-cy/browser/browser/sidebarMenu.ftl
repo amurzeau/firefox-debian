@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Cau'r Bar Ochr
+
+sidebar-close-button =
+    .tooltiptext = Cau'r bar ochr

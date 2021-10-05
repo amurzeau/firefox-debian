@@ -10,28 +10,28 @@
 perftools-intro-title = Parametros de profilator
 perftools-intro-description =
     Le registrationes lancea profiler.firefox.com in un nove scheda. Tote le datos es
-    immagazinate localmente, ma tu pote eliger cargar los pro compartir los.
+    immagazinate localmente, ma tu pote optar pro incargar los pro compartir los.
 
 ## All of the headings for the various sections.
 
 perftools-heading-settings = Parametros complete
 perftools-heading-buffer = Parametros de buffer
-perftools-heading-features = Functionalitates
-perftools-heading-features-default = Functionalitates (Recommendate de ordinario)
-perftools-heading-features-disabled = Functionalitates disactivate
+perftools-heading-features = Functiones
+perftools-heading-features-default = Functiones (es recommendate mantener los active)
+perftools-heading-features-disabled = Functiones disactivate
 perftools-heading-features-experimental = Experimental
-perftools-heading-threads = Argumentos
-perftools-heading-local-build = Construction local
+perftools-heading-threads = Filos
+perftools-heading-local-build = Compilation local
 
 ##
 
 perftools-description-intro =
-    Le registrationes lancea <a>profiler.firefox.com</a> in un nove scheda. Tote le datos es 
-    immagazinate localmente, ma tu pote eliger cargar los pro compartir los.
+    Le registrationes lancea <a>profiler.firefox.com</a> in un nove scheda. Tote le datos
+    es immagazinate localmente, ma tu pote optar pro incargar los pro compartir los.
 perftools-description-local-build =
-    Si tu profila un construction que tu mesme ha compilate, sur iste machina,
-     adde tu plica objdir del construction al lista infra de maniera que
-     illo pote esser usate pro cercar informationes de symbolo.
+    Si tu profila un version que tu mesme ha compilate, sur iste machina,
+     adde le directorio 'objdir' de tu compilation al lista sequente a fin que
+     illo pote esser usate pro cercar informationes sur le symbolos.
 
 ## The controls for the interval at which the profiler samples the code.
 
@@ -43,19 +43,19 @@ perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 
 # The size of the memory buffer used to store things in the profiler.
 perftools-range-entries-label = Dimension del buffer:
 
-perftools-custom-threads-label = Adder argumentos personalisate per nomine:
+perftools-custom-threads-label = Adder filos personalisate per nomine:
 
 perftools-devtools-interval-label = Intervallo:
-perftools-devtools-threads-label = Argumentos:
+perftools-devtools-threads-label = Filos:
 perftools-devtools-settings-label = Parametros
 
 ## Various statuses that affect the current state of profiling, not typically displayed.
 
 perftools-status-private-browsing-notice =
-    Le profilator es disactivate quando Navigation anonyme es activate.
-    Claude tote le Fenestras anonyme pro re-activar le profilator
-perftools-status-recording-stopped-by-another-tool = Le registration ha essite cessate per un altere instrumento.
-perftools-status-restart-required = Le navigator debe esser re-initiate pro activar iste functionalitate.
+    Le profilator es disactivate quando le navigation private es active.
+    Claude tote le fenestras private pro reactivar le profilator.
+perftools-status-recording-stopped-by-another-tool = Le registration ha essite interrumpite per un altere instrumento.
+perftools-status-restart-required = Le navigator debe esser reinitiate pro activar iste function.
 
 ## These are shown briefly when the user is waiting for the profiler to respond.
 
@@ -70,45 +70,42 @@ perftools-button-cancel-recording = Cancellar registration
 perftools-button-save-settings = Salvar parametros e retornar
 perftools-button-restart = Reinitiar
 perftools-button-add-directory = Adder un directorio
-perftools-button-remove-directory = Remover los selecte
-perftools-button-edit-settings = Rediger parametros...
+perftools-button-remove-directory = Remover le selection
+perftools-button-edit-settings = Modificar parametros...
 
 ## These messages are descriptions of the threads that can be enabled for the profiler.
 
 perftools-thread-gecko-main =
-    .title = Le principal processos sia pro le processo parente que pro le processos contento
+    .title = Le processos principal pro tanto le processo genitor como le processos de contento
 perftools-thread-compositor =
-    .title = Combina insimul differente elementos pingite sur le pagina
+    .title = Combina differente elementos pingite sur le pagina
 perftools-thread-dom-worker =
-    .title = Isto gere sia obreros de web que obreros de servicio
+    .title = Isto gere tanto le obreros de web como le obreros de servicio
 perftools-thread-renderer =
-    .title = Quando WebRender es activate, le discussion que exeque appellos OpenGL
+    .title = Quando WebRender es activate, le filo que executa le appellos a OpenGL
 perftools-thread-render-backend =
-    .title = Le discussion WebRender RenderBackend
+    .title = Le filo WebRender RenderBackend
 perftools-thread-paint-worker =
-    .title = Le argumento sur le qual on pinge, quando es activate le pictura extra argumento principal
+    .title = Quando es activate le pictura foras del filo principal, le filo sur le qual le pictura eveni
 perftools-thread-style-thread =
-    .title = Computation de stilos es scindite in plure argumentos
+    .title = Le computation de stilos es dividite in plure filos
 pref-thread-stream-trans =
-    .title = Transporto diffusion de rete
+    .title = Transporto de fluxo de rete
 perftools-thread-socket-thread =
-    .title = Le argumento ubi le codice de rete exeque ulle appellos blocante cavos
+    .title = Le filo ubi le codice de rete executa omne appellos de socket blocante
 perftools-thread-img-decoder =
-    .title = Argumentos de decodification de imagine
+    .title = Filos de decodification de imagines
 perftools-thread-dns-resolver =
-    .title = Le resolution de DNS eveni sur iste argumento
-perftools-thread-js-helper =
-    .title = Labor de fundo de motor JS como compilationes extra argumento principal
-
+    .title = Le resolution de DNS eveni sur iste filo
 perftools-thread-task-controller =
-    .title = Argumentos del gruppo de sub-processos de TaskController
+    .title = Filos del fundo commun de TaskController
 
 ##
 
-perftools-record-all-registered-threads = Ignorar selectiones supra e registrar tote le argumentos registrate
+perftools-record-all-registered-threads = Ignorar selectiones supra e memorar tote le filos registrate
 
 perftools-tools-threads-input-label =
-    .title = Iste nomines de argumento es un lista separate per virgulas que es usate pro activar le profilation del argumentos in le profilator. Le nomine debe esser solo un concordantia partial del nomine de argumento a includer. Il es sensibile al spatios blanc.
+    .title = Iste nomines de filo forma un lista separate per commas que es usate pro activar le profilation del filos in le profilator. Es sufficiente un correspondentia partial con le nomine del filo a includer. Le spatios es significative.
 
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled

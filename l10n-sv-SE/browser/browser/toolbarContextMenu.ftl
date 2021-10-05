@@ -20,15 +20,6 @@ toolbar-context-menu-bookmark-selected-tabs =
 toolbar-context-menu-select-all-tabs =
     .label = Välj alla flikar
     .accesskey = V
-toolbar-context-menu-undo-close-tabs =
-    .label =
-        { $tabCount ->
-            [1] Ångra Stäng flik
-            [one] Ångra Stäng flik
-           *[other] Ångra Stäng flikar
-        }
-    .accesskey = U
-
 toolbar-context-menu-reopen-closed-tabs =
     .label =
         { $tabCount ->
@@ -36,30 +27,24 @@ toolbar-context-menu-reopen-closed-tabs =
            *[other] Öppna stängda flikar igen
         }
     .accesskey = p
-
 toolbar-context-menu-manage-extension =
     .label = Hantera tillägg
     .accesskey = H
 toolbar-context-menu-remove-extension =
     .label = Ta bort tillägg
     .accesskey = T
-
 # This label is used in the extensions toolbar buttons context menus,
 # a user can use this command to submit to Mozilla an abuse report
 # related to that extension. "Report" is a verb.
 toolbar-context-menu-report-extension =
     .label = Rapportera tillägg
     .accesskey = R
-
 # Can appear on the same context menu as menubarCmd ("Menu Bar") and
 # personalbarCmd ("Bookmarks Toolbar"), so they should have different
 # access keys.
 toolbar-context-menu-pin-to-overflow-menu =
     .label = Fäst på spillmeny
     .accesskey = F
-toolbar-context-menu-auto-hide-downloads-button =
-    .label = Dölj automatiskt i verktygsfältet
-    .accesskey = a
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = Dölj knapp när den är tom
     .accesskey = D
@@ -72,7 +57,6 @@ toolbar-context-menu-view-customize-toolbar =
 toolbar-context-menu-view-customize-toolbar-2 =
     .label = Anpassa verktygsfält…
     .accesskey = A
-
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Visa alltid
     .accesskey = V
@@ -82,7 +66,9 @@ toolbar-context-menu-bookmarks-toolbar-never-show-2 =
 toolbar-context-menu-bookmarks-toolbar-on-new-tab-2 =
     .label = Visa endast på ny flik
     .accesskey = e
-
 toolbar-context-menu-bookmarks-show-other-bookmarks =
     .label = Visa andra bokmärken
     .accesskey = n
+toolbar-context-menu-menu-bar-cmd =
+    .toolbarname = Menyfältet
+    .accesskey = M

@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Mdel agalis adisan
+
+sidebar-close-button =
+    .tooltiptext = Mdel agalis adisan

@@ -28,12 +28,6 @@ permissions-remove =
 permissions-remove-all =
     .label = వెబ్‌సైట్లన్నీ తీసివేయి
     .accesskey = e
-permissions-button-cancel =
-    .label = రద్దుచేయి
-    .accesskey = C
-permissions-button-ok =
-    .label = మార్పులను భద్రపరచు
-    .accesskey = S
 permission-dialog =
     .buttonlabelaccept = మార్పులను భద్రపరచు
     .buttonaccesskeyaccept = S
@@ -58,6 +52,8 @@ permissions-capabilities-listitem-block =
     .value = నిరోధించు
 permissions-capabilities-listitem-allow-session =
     .value = సెషనుకి అనుమతించు
+permissions-capabilities-listitem-off-temporarily =
+    .value = తాత్కాలికంగా ఆపివేయి
 
 ## Invalid Hostname Dialog
 

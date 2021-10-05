@@ -30,14 +30,6 @@ site-data-remove-selected =
     .label = Selektearre fuortsmite
     .accesskey = f
 
-site-data-button-cancel =
-    .label = Annulearje
-    .accesskey = A
-
-site-data-button-save =
-    .label = Wizigingen bewarje
-    .accesskey = W
-
 site-data-settings-dialog =
     .buttonlabelaccept = Wizigingen bewarje
     .buttonaccesskeyaccept = W
@@ -67,5 +59,9 @@ site-data-removing-dialog =
 site-data-removing-header = Cookies en websitegegevens fuortsmite
 
 site-data-removing-desc = It fuortsmiten fan cookies en websitegegevens kin jo by websites ôfmelde. Binne jo wis dat jo de wizigingen oanbringe wolle?
+
+# Variables:
+#   $baseDomain (String) - The single domain for which data is being removed
+site-data-removing-single-desc = It fuortsmiten fan cookies en websitegegevens kin jo by websites ôfmelde. Binne jo wis dat jo cookies en websitegegevens foar <strong>{ $baseDomain }</strong> fuortsmite wolle?
 
 site-data-removing-table = Cookies en websitegegevens foar de folgjende websites sille fuortsmiten wurde

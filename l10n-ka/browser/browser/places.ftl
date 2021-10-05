@@ -5,9 +5,6 @@
 places-open =
     .label = გახსნა
     .accesskey = გ
-places-open-tab =
-    .label = გახსნა ახალ ჩანართში
-    .accesskey = ლ
 places-open-in-tab =
     .label = გახსნა ახალ ჩანართში
     .accesskey = ლ
@@ -17,26 +14,6 @@ places-open-all-bookmarks =
 places-open-all-in-tabs =
     .label = ყველას გახსნა ჩანართებში
     .accesskey = ყ
-places-open-window =
-    .label = გახსნა ახალ ფანჯარაში
-    .accesskey = ფ
-places-open-private-window =
-    .label = გახსნა ახალ პირად ფანჯარაში
-    .accesskey = პ
-
-places-new-bookmark =
-    .label = ახალი სანიშნი…
-    .accesskey = ს
-places-new-folder-contextmenu =
-    .label = ახალი საქაღალდე…
-    .accesskey = ქ
-places-new-folder =
-    .label = ახალი საქაღალდე…
-    .accesskey = ა
-places-new-separator =
-    .label = ახალი გამყოფი
-    .accesskey = გ
-
 places-open-in-window =
     .label = გახსნა ახალ ფანჯარაში
     .accesskey = ფ
@@ -87,10 +64,6 @@ places-delete-domain-data =
 places-sortby-name =
     .label = სახელით დალაგება
     .accesskey = ხ
-places-properties =
-    .label = თვისებები
-    .accesskey = თ
-
 # places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
 places-edit-bookmark =
     .label = სანიშნის ჩასწორება…
@@ -108,6 +81,17 @@ places-remove-folder =
            *[other] საქაღალდეების მოცილება
         }
     .accesskey = მ
+
+places-edit-folder2 =
+    .label = საქაღალდის ჩასწორება…
+    .accesskey = ო
+places-delete-folder =
+    .label =
+        { $count ->
+            [1] საქაღალდის წაშლა
+           *[other] საქაღალდეების წაშლა
+        }
+    .accesskey = წ
 
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
@@ -130,6 +114,24 @@ places-remove-bookmark =
         }
     .accesskey = ც
 
+# Variables:
+# $count (number) - The number of elements being selected for removal.
+places-delete-bookmark =
+    .label =
+        { $count ->
+            [1] სანიშნის წაშლა
+           *[other] სანიშნების წაშლა
+        }
+    .accesskey = წ
+
 places-manage-bookmarks =
     .label = სანიშნების მართვა
     .accesskey = მ
+
+places-forget-about-this-site-confirmation-title = ამ საიტის დავიწყება
+
+# Variables:
+# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
+places-forget-about-this-site-confirmation-message = ამ ქმედებით მოცილდება ყველა მონაცემი, რომლებიც უკავშირდება { $hostOrBaseDomain }-ს, მათ შორის ისტორია, პაროლები, ფუნთუშები, დროებითი ფაილები და შიგთავსის პარამეტრები. ნამდვილად გსურთ, განაგრძოთ?
+
+places-forget-about-this-site-forget = დავიწყება

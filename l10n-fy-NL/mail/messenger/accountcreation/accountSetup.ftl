@@ -58,6 +58,12 @@ account-provisioner-button = Krij in nij e-mailadres
 account-setup-password-toggle =
     .title = Wachtwurd toane/ferstopje
 
+account-setup-password-toggle-show =
+    .title = Wachtwurd yn platte tekst toane
+
+account-setup-password-toggle-hide =
+    .title = Wachtwurd ferstopje
+
 account-setup-remember-password = Wachtwurd ûnthâlde
     .accesskey = w
 
@@ -308,6 +314,21 @@ exchange-dialog-question = { -brand-short-name } hat jo accountynstellingen fan 
 exchange-dialog-confirm-button = Oanmelde
 
 exchange-dialog-cancel-button = Annulearje
+
+## Dismiss account creation dialog
+
+exit-dialog-title = Gjin e-mailaccount ynsteld
+
+exit-dialog-description = Binne jo wis dat jo it ynstelproses annulearje wolle? { -brand-short-name } kin noch brûkt wurde sûnder in e-mailaccount, mar in protte funksjes sille net beskikber wêze.
+
+account-setup-no-account-checkbox = { -brand-short-name } sûnder in e-mailaccount brûke
+    .accesskey = s
+
+exit-dialog-cancel-button = Fierder mei ynstellen
+    .accesskey = y
+
+exit-dialog-confirm-button = Ynstellen ôfslute
+    .accesskey = l
 
 ## Alert dialogs
 

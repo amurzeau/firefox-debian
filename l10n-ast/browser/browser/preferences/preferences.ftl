@@ -8,26 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Namás cuando { -brand-short-name } tea configuráu pa bloquiar los rastrexadores conocíos
 do-not-track-option-always =
     .label = Siempres
-pref-page-title =
-    { PLATFORM() ->
-        [windows] Opciones
-       *[other] Preferencies
-    }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Please keep the placeholder string short to avoid truncation.
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input-box =
-    .style = width: 15.4em
-    .placeholder =
-        { PLATFORM() ->
-            [windows] Atopar nes opciones
-           *[other] Atopar nes preferencies
-        }
 settings-page-title = Axustes
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
@@ -55,9 +35,6 @@ category-search =
 pane-privacy-title = Privacidá y seguranza
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-pane-sync-title2 = { -sync-brand-short-name }
-category-sync2 =
-    .tooltiptext = { pane-sync-title2 }
 pane-sync-title3 = Sync
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
@@ -96,21 +73,12 @@ restart-later = Reaniciar dempués
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their home page
-# is being controlled by an extension.
-extension-controlled-homepage-override = Una estensión, <img data-l10n-name="icon"/> { $name }, ta controlado la páxina d'aniciu.
-# This string is shown to notify the user that their new tab page
-# is being controlled by an extension.
-extension-controlled-new-tab-url = Una estensión, <img data-l10n-name="icon"/> { $name }, ta controlado la páxina «Llingüeta nueva».
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
 extension-controlled-password-saving = Una estensión, <img data-l10n-name="icon"/> { $name }, ta controlando esti axuste.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Una estensión, <img data-l10n-name="icon"/> { $name }, ta controlando esti axuste.
-# This string is shown to notify the user that the default search engine
-# is being controlled by an extension.
-extension-controlled-default-search = Una estensión, <img data-l10n-name="icon"/> { $name }, afitó'l motor de busca predetermináu.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = Una estensión, <img data-l10n-name="icon"/> { $name }, rique contenedores de llingüetes
@@ -131,23 +99,12 @@ extension-controlled-enable = P'activar la estensión vete a <img data-l10n-name
 
 search-results-header = Resultaos de la busca
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
-search-results-empty-message =
-    { PLATFORM() ->
-        [windows] ¡Sentímoslo! Nun hai resultaos n'Opciones pa «<span data-l10n-name="query"></span>».
-       *[other] ¡Sentímoslo! Nun hai resultaos en Preferencies pa «<span data-l10n-name="query"></span>».
-    }
-# `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message2 = ¡Sentímoslo! Nun hai nengún resultáu n'Axustes pa «<span data-l10n-name="query"></span>»
 search-results-help-link = ¿Precises ayuda? Visita <a data-l10n-name="url">Sofitu de { -brand-short-name }</a>
 
 ## General Section
 
 startup-header = Aniciu
-# { -brand-short-name } will be 'Firefox Developer Edition',
-# since this setting is only exposed in Firefox Developer Edition
-separate-profile-mode =
-    .label = Permitir a { -brand-short-name } y Firefox que s'executen al empar
-use-firefox-sync = Conseyu: Esto usa perfiles separtaos. Usa { -sync-brand-short-name } pa compartir datos ente ellos.
 always-check-default =
     .label = Comprobar siempres si { -brand-short-name } ye'l restolador predetermináu
     .accesskey = i
@@ -176,9 +133,6 @@ warn-on-close-multiple-tabs =
 warn-on-open-many-tabs =
     .label = Avisame cuando abrir munches llingüetes pueda facer lentu a { -brand-short-name }
     .accesskey = l
-switch-links-to-new-tabs =
-    .label = Cuando abra un enllaz nuna llingüeta, dir pa ella darréu
-    .accesskey = d
 switch-to-new-tabs =
     .label = Al abrir un enllaz, ficheru u otru tipu de conteníu nuna llingüeta nueva, dir pa ella darréu
     .accesskey = r
@@ -324,10 +278,6 @@ applications-manage-app =
     .label = Detalles de l'aplicación…
 applications-always-ask =
     .label = Entrugar siempres
-applications-type-pdf = PDF (Formatu de Documentu Portátil)
-# Variables:
-#   $type (String) - the MIME type (e.g application/binary)
-applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 # Variables:
 #   $type-description (String) - Description of the type (e.g "Portable Document Format")
 #   $type (String) - the MIME type (e.g application/binary)
@@ -394,15 +344,6 @@ update-application-warning-cross-user-setting = Esti axuste va aplicase a toles 
 update-application-use-service =
     .label = Usar un serviciu en segundu planu pa instalar los anovamientos
     .accesskey = p
-update-setting-write-failure-title = Hebo un fallu al guardar les preferencies d'anovamientu
-# Variables:
-#   $path (String) - Path to the configuration file
-# The newlines between the main text and the line containing the path is
-# intentional so the path is easier to identify.
-update-setting-write-failure-message =
-    { -brand-short-name } alcontró un fallu y nun guardó esti cambéu. Decátate que, p'afitar esta preferencia d'anovamientu, ríquese'l permisu pa escribir nel ficheru d'embaxo. Tu o un alministrador del sistema podéis ser a iguar el fallu concediendo al grupu «Usuarios» el control total d'esti ficheru.
-    
-    Nun pudo escribise nel ficheru: { $path }
 update-in-progress-title = Anovamientu en cursu
 update-in-progress-message = ¿Quies que { -brand-short-name } siga con esti anovamientu?
 update-in-progress-ok-button = &Escartar
@@ -550,7 +491,7 @@ home-prefs-highlights-option-saved-to-pocket =
     .label = Páxines guardaes en { -pocket-brand-name }
 home-prefs-recent-activity-header =
     .label = Actividá recién
-home-prefs-recent-activity-description = Una esbilla de los sitios y conteníu recién
+home-prefs-recent-activity-description = Una esbilla de los sitios y del conteníu recién
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -596,10 +537,8 @@ search-show-suggestions-above-history-option =
     .label = Nos resultaos de la barra de direiciones, amosar les suxerencies de busca enantes del historial de restolar
 search-show-suggestions-private-windows =
     .label = Amosar les suxerencies de busca nes ventanes privaes
-suggestions-addressbar-settings-generic = Camudar les preferencies pa otres suxerencies de la barra de direiciones
 suggestions-addressbar-settings-generic2 = Camudar los axustes pa otres suxerencies de la barra de direiciones
 search-suggestions-cant-show = Les suxerencies de busca nun van amosase na barra de direiciones porque configuresti { -brand-short-name } pa qu'enxamás recordare l'historial.
-search-one-click-header = Motores de busca nun calcu
 search-one-click-header2 = Atayos de busca
 search-one-click-desc = Escueyi los motores de busca alternativos qu'apaecen embaxo de la barra de direiciones y barra de busca cuando comiences a introducir una pallabra clave.
 search-choose-engine-column =
@@ -626,12 +565,6 @@ search-keyword-warning-bookmark = Escoyesti una pallabra clave qu'anguaño yá u
 
 ## Containers Section
 
-containers-back-button =
-    .aria-label =
-        { PLATFORM() ->
-            [windows] Volver a Opciones
-           *[other] Volver a Preferencies
-        }
 containers-header = Contenedores de llingüetes
 containers-add-button =
     .label = Amestar un contenedor nuevu
@@ -639,8 +572,6 @@ containers-add-button =
 containers-new-tab-check =
     .label = Esbillar un contenedor pa cada llingüeta nueva
     .accesskey = E
-containers-preferences-button =
-    .label = Preferencies
 containers-settings-button =
     .label = Axustes
 containers-remove-button =
@@ -650,10 +581,6 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Lleva la web contigo
-sync-signedout-description = Sincroniza los marcadores, les llingüetes, l'historial, les contraseñes, los complementos y les preferencies en tolos preseos de to.
-sync-signedout-account-signin2 =
-    .label = Aniciar sesión en { -sync-brand-short-name }…
-    .accesskey = i
 sync-signedout-description2 = Sincroniza los marcadores, l'historial, les contraseñes, los complementos y los axustes en tolos preseos de to.
 sync-signedout-account-signin3 =
     .label = Aniciar sesión pa sincronizar…
@@ -690,7 +617,6 @@ sync-sign-in =
 
 prefs-syncing-on = Sincronización: ACTIVADA
 prefs-syncing-off = Sincronización: DESACTIVADA
-prefs-sync-offer-setup-label = Sincroniza los marcadores, les llingüetes, l'historial, les contraseñes, los complementos y les preferencies en tolos preseos de to.
 prefs-sync-offer-setup-label2 = Sincroniza los marcadores, l'historial, les contraseñes, los complementos y los axustes en tolos preseos de to.
 prefs-sync-now =
     .labelnotsyncing = Sincronizar agora
@@ -707,11 +633,6 @@ sync-currently-syncing-logins-passwords = Cuentes y contraseñes
 sync-currently-syncing-addresses = Direiciones
 sync-currently-syncing-creditcards = Tarxetes de creitu
 sync-currently-syncing-addons = Complementos
-sync-currently-syncing-prefs =
-    { PLATFORM() ->
-        [windows] Opciones
-       *[other] Preferencies
-    }
 sync-currently-syncing-settings = Axustes
 sync-change-options =
     .label = Camudar…
@@ -752,14 +673,6 @@ sync-engine-addons =
     .label = Complementos
     .tooltiptext = Les estensiones y los estilos pal Firefox d'escritoriu
     .accesskey = C
-sync-engine-prefs =
-    .label =
-        { PLATFORM() ->
-            [windows] Opciones
-           *[other] Preferencies
-        }
-    .tooltiptext = Los axustes que camudesti en «Xeneral» y «Privacidá y seguranza»
-    .accesskey = s
 
 ## The device name controls.
 
@@ -802,9 +715,6 @@ forms-fill-logins-and-passwords =
 forms-saved-logins =
     .label = Cuentes guardaes…
     .accesskey = A
-forms-master-pw-use =
-    .label = Usar una contraseña primaria
-    .accesskey = U
 forms-primary-pw-use =
     .label = Usar una contraseña primaria
     .accesskey = U
@@ -815,7 +725,6 @@ forms-primary-pw-learn-more-link = Lleer más
 forms-master-pw-change =
     .label = Camudar la contraseña maestra…
     .accesskey = m
-forms-master-pw-fips-title = Anguaño tas nel mou FIPS. FIPS rique una contraseña maestra que nun tea balera.
 forms-primary-pw-change =
     .label = Camudar la contraseña primaria…
     .accesskey = p
@@ -828,13 +737,6 @@ forms-master-pw-fips-desc = El cambéu de la contraseña falló
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = Pa crear una contraseña maestra, introduz los tos datos d'aniciu de sesión de Windows. Esto ayuda a protexer la seguranza de les tos cuentes.
-# This message can be seen by trying to add a Master Password.
-# The macOS strings are preceded by the operating system with "Firefox is trying to "
-# and includes subtitle of "Enter password for the user "xxx" to allow this." These
-# notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = crear una contraseña maestra
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Pa crear una contraseña primaria, introduz los tos datos d'aniciu de sesión de Windows. Esto ayuda a protexer la seguranza de les tos cuentes.
 # This message can be seen by trying to add a Primary Password.
@@ -930,9 +832,6 @@ sitedata-clear =
 sitedata-settings =
     .label = Xestionar los datos…
     .accesskey = X
-sitedata-cookies-permissions =
-    .label = Xestionar los permisos…
-    .accesskey = p
 sitedata-cookies-exceptions =
     .label = Xestionar les esceiciones…
     .accesskey = X
@@ -1089,10 +988,6 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = Esceiciones…
     .accesskey = E
-permissions-a11y-privacy-checkbox =
-    .label = Evitar que los servicios d'accesibilidá accedan al restolador
-    .accesskey = a
-permissions-a11y-privacy-link = Lleer más
 
 ## Privacy Section - Data Collection
 
@@ -1114,10 +1009,6 @@ addon-recommendations-link = Lleer más
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = L'informe de datos ta desactiváu na configuración d'esta compilación
-collection-backlogged-crash-reports =
-    .label = Permtir a { -brand-short-name } qu'unvie por ti los informes de casques acumulaos
-    .accesskey = c
-collection-backlogged-crash-reports-link = Lleer más
 collection-backlogged-crash-reports-with-link = Permtir a { -brand-short-name } qu'unvie por ti los informes de casques acumulaos <a data-l10n-name="crash-reports-link">Llleer más</a>
     .accesskey = c
 
@@ -1142,13 +1033,6 @@ security-block-uncommon-software =
 ## Privacy Section - Certificates
 
 certs-header = Certificaos
-certs-personal-label = Cuando un sirvidor solicita'l to certificáu personal
-certs-select-auto-option =
-    .label = Esbillar unu automáticamente
-    .accesskey = E
-certs-select-ask-option =
-    .label = Pidilu cada vegada
-    .accesskey = c
 certs-enable-ocsp =
     .label = Consultar los sirvidores de rempuesta OCSP pa confirmar la validez actual de los certificaos
     .accesskey = C
@@ -1158,29 +1042,6 @@ certs-view =
 certs-devices =
     .label = Preseos de seguranza…
     .accesskey = P
-space-alert-learn-more-button =
-    .label = Lleer más
-    .accesskey = L
-space-alert-over-5gb-pref-button =
-    .label =
-        { PLATFORM() ->
-            [windows] Abrir les opciones
-           *[other] Abrir les preferencies
-        }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] A
-           *[other] A
-        }
-space-alert-over-5gb-message =
-    { PLATFORM() ->
-        [windows] { -brand-short-name } ta quedando ensin espaciu nel discu. El conteníu de los sitios web pue dexar d'amosase afayadizamente. Pues llimpiar los datos atroxaos en Opciones > POrivacidá y seguranza > Cookies y datos de los sitios.
-       *[other] { -brand-short-name } ta quedando ensin espaciu nel discu. El conteníu de los sitios web pue dexar d'amosase afayadizamente. Pues llimpiar los datos atroxaos en Preferencies > POrivacidá y seguranza > Cookies y datos de los sitios.
-    }
-space-alert-under-5gb-ok-button =
-    .label = D'acuerdu, entendílo
-    .accesskey = D
-space-alert-under-5gb-message = { -brand-short-name } ta quedando ensin espaciu nel discu. El conteníu de los sitios web pue dexar d'amosase afayadizamente. Visita «Lleer más» pa optimiar l'usu del discu pa una esperiencia de restolar meyor.
 
 ## Privacy Section - HTTPS-Only
 

@@ -11,14 +11,6 @@ navbar-tooltip-instruction =
 
 ## Back
 
-main-context-menu-back =
-    .tooltiptext = Назад на одну сторінку
-    .aria-label = Назад
-    .accesskey = Н
-navbar-tooltip-back =
-    .value = { main-context-menu-back.tooltiptext }
-toolbar-button-back =
-    .label = { main-context-menu-back.aria-label }
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the Go Back command.
 main-context-menu-back-2 =
@@ -36,14 +28,6 @@ toolbar-button-back-2 =
 
 ## Forward
 
-main-context-menu-forward =
-    .tooltiptext = Вперед на одну сторінку
-    .aria-label = Вперед
-    .accesskey = В
-navbar-tooltip-forward =
-    .value = { main-context-menu-forward.tooltiptext }
-toolbar-button-forward =
-    .label = { main-context-menu-forward.aria-label }
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the Go Forward command.
 main-context-menu-forward-2 =
@@ -99,8 +83,6 @@ toolbar-button-fxaccount =
 main-context-menu-page-save =
     .label = Зберегти як…
     .accesskey = б
-toolbar-button-page-save =
-    .label = { main-context-menu-page-save.label }
 
 ## Simple menu items
 
@@ -151,9 +133,6 @@ main-context-menu-open-link-new-window =
 main-context-menu-open-link-new-private-window =
     .label = Відкрити в приватному вікні
     .accesskey = и
-main-context-menu-bookmark-this-link =
-    .label = Закласти це посилання
-    .accesskey = с
 main-context-menu-bookmark-link =
     .label = Закласти посилання
     .accesskey = с
@@ -164,20 +143,12 @@ main-context-menu-save-link-to-pocket =
     .label = Зберегти посилання в { -pocket-brand-name }
     .accesskey = б
 
-## The access keys for "Copy Link Location" and "Copy Email Address"
-## should be the same if possible; the two context menu items
-## are mutually exclusive.
-
-
 ## The access keys for "Copy Link" and "Copy Email Address"
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
 
 main-context-menu-copy-email =
     .label = Копіювати адресу е-пошти
-    .accesskey = п
-main-context-menu-copy-link =
-    .label = Копіювати адресу посилання
     .accesskey = п
 main-context-menu-copy-link-simple =
     .label = Копіювати посилання
@@ -204,26 +175,6 @@ main-context-menu-media-mute =
 main-context-menu-media-unmute =
     .label = Увімкнути звук
     .accesskey = и
-main-context-menu-media-play-speed =
-    .label = Швидкість відтворення
-    .accesskey = в
-main-context-menu-media-play-speed-slow =
-    .label = Повільно (0.5×)
-    .accesskey = П
-main-context-menu-media-play-speed-normal =
-    .label = Нормально
-    .accesskey = Н
-main-context-menu-media-play-speed-fast =
-    .label = Швидко (1.25×)
-    .accesskey = к
-main-context-menu-media-play-speed-faster =
-    .label = Швидше (1.5×)
-    .accesskey = е
-# "Ludicrous" is a reference to the movie "Space Balls" and is meant
-# to say that this speed is very fast.
-main-context-menu-media-play-speed-fastest =
-    .label = Надшвидко (2×)
-    .accesskey = о
 main-context-menu-media-play-speed-2 =
     .label = Швидкість
     .accesskey = Ш
@@ -261,23 +212,12 @@ main-context-menu-media-video-leave-fullscreen =
     .accesskey = В
 # This is used when right-clicking on a video in the
 # content area when the Picture-in-Picture feature is enabled.
-main-context-menu-media-pip =
-    .label = Зображення в зображенні
-    .accesskey = З
-# This is used when right-clicking on a video in the
-# content area when the Picture-in-Picture feature is enabled.
 main-context-menu-media-watch-pip =
     .label = Дивитися в режимі "Зображення в зображенні"
     .accesskey = З
 main-context-menu-image-reload =
     .label = Перезавантажити зображення
     .accesskey = з
-main-context-menu-image-view =
-    .label = Переглянути зображення
-    .accesskey = г
-main-context-menu-video-view =
-    .label = Переглянути відео
-    .accesskey = г
 main-context-menu-image-view-new-tab =
     .label = Відкрити зображення в новій вкладці
     .accesskey = к
@@ -287,15 +227,6 @@ main-context-menu-video-view-new-tab =
 main-context-menu-image-copy =
     .label = Копіювати зображення
     .accesskey = з
-main-context-menu-image-copy-location =
-    .label = Копіювати адресу зображення
-    .accesskey = р
-main-context-menu-video-copy-location =
-    .label = Копіювати адресу відео
-    .accesskey = в
-main-context-menu-audio-copy-location =
-    .label = Копіювати адресу аудіо
-    .accesskey = у
 main-context-menu-image-copy-link =
     .label = Копіювати посилання на зображення
     .accesskey = ж
@@ -311,9 +242,6 @@ main-context-menu-image-save-as =
 main-context-menu-image-email =
     .label = Переслати зображення…
     .accesskey = ж
-main-context-menu-image-set-as-background =
-    .label = Встановити як тло робочого столу…
-    .accesskey = с
 main-context-menu-image-set-image-as-background =
     .label = Призначити тлом стільниці…
     .accesskey = ч
@@ -329,9 +257,6 @@ main-context-menu-video-save-as =
 main-context-menu-audio-save-as =
     .label = Зберегти аудіо як…
     .accesskey = а
-main-context-menu-video-image-save-as =
-    .label = Зберегти кадр як…
-    .accesskey = я
 main-context-menu-video-take-snapshot =
     .label = Зробити знімок…
     .accesskey = н
@@ -351,14 +276,8 @@ main-context-menu-save-to-pocket =
     .label = Зберегти сторінку в { -pocket-brand-name }
     .accesskey = с
 main-context-menu-send-to-device =
-    .label = Відправити сторінку на пристрій
+    .label = Надіслати сторінку на пристрій
     .accesskey = с
-main-context-menu-view-background-image =
-    .label = Переглянути зображення тла
-    .accesskey = т
-main-context-menu-generate-new-password =
-    .label = Використати згенерований пароль
-    .accesskey = з
 
 ## The access keys for "Use Saved Login" and "Use Saved Password"
 ## should be the same if possible; the two context menu items
@@ -430,18 +349,12 @@ main-context-menu-take-frame-screenshot =
 main-context-menu-view-page-source =
     .label = Програмний код сторінки
     .accesskey = а
-main-context-menu-view-page-info =
-    .label = Інформація про сторінку
-    .accesskey = І
 main-context-menu-bidi-switch-text =
     .label = Перемкнути напрям тексту на сторінці
     .accesskey = к
 main-context-menu-bidi-switch-page =
     .label = Перемкнути напрям тексту на сторінці
     .accesskey = м
-main-context-menu-inspect-element =
-    .label = Дослідити елемент
-    .accesskey = Д
 main-context-menu-inspect =
     .label = Дослідити
     .accesskey = л

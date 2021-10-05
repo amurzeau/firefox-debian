@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Stäng sidofält
+
+sidebar-close-button =
+    .tooltiptext = Stäng sidofält

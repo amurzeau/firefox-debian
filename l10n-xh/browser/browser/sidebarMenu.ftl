@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Vala iBha eseCaleni
+
+sidebar-close-button =
+    .tooltiptext = Vala ibha esecaleni

@@ -11,17 +11,6 @@ navbar-tooltip-instruction =
 
 ## Back
 
-main-context-menu-back =
-    .tooltiptext = Unu paĝo malantaŭen
-    .aria-label = Malantaŭen
-    .accesskey = M
-
-navbar-tooltip-back =
-    .value = { main-context-menu-back.tooltiptext }
-
-toolbar-button-back =
-    .label = { main-context-menu-back.aria-label }
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the Go Back command.
 main-context-menu-back-2 =
@@ -41,17 +30,6 @@ toolbar-button-back-2 =
     .label = { main-context-menu-back-2.aria-label }
 
 ## Forward
-
-main-context-menu-forward =
-    .tooltiptext = Unu paĝo antaŭen
-    .aria-label = Antaŭen
-    .accesskey = A
-
-navbar-tooltip-forward =
-    .value = { main-context-menu-forward.tooltiptext }
-
-toolbar-button-forward =
-    .label = { main-context-menu-forward.aria-label }
 
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the Go Forward command.
@@ -116,9 +94,6 @@ main-context-menu-page-save =
     .label = Konservi paĝon kiel…
     .accesskey = P
 
-toolbar-button-page-save =
-    .label = { main-context-menu-page-save.label }
-
 ## Simple menu items
 
 main-context-menu-bookmark-add =
@@ -179,10 +154,6 @@ main-context-menu-open-link-new-private-window =
     .label = Malfermi ligilon en nova privata fenestro
     .accesskey = p
 
-main-context-menu-bookmark-this-link =
-    .label = Aldoni legosignon por tiu ĉi ligilo
-    .accesskey = l
-
 main-context-menu-bookmark-link =
     .label = Aldoni legosignon por ligilo
     .accesskey = A
@@ -206,10 +177,6 @@ main-context-menu-save-link-to-pocket =
 
 main-context-menu-copy-email =
     .label = Kopii retpoŝtan adreson
-    .accesskey = a
-
-main-context-menu-copy-link =
-    .label = Kopii adreson de ligilo
     .accesskey = a
 
 main-context-menu-copy-link-simple =
@@ -239,32 +206,6 @@ main-context-menu-media-mute =
 main-context-menu-media-unmute =
     .label = Malsilentigi
     .accesskey = M
-
-main-context-menu-media-play-speed =
-    .label = Ludrapido
-    .accesskey = d
-
-main-context-menu-media-play-speed-slow =
-    .label = Malrapide (0.5×)
-    .accesskey = M
-
-main-context-menu-media-play-speed-normal =
-    .label = Normale
-    .accesskey = N
-
-main-context-menu-media-play-speed-fast =
-    .label = Rapide (1.25×)
-    .accesskey = R
-
-main-context-menu-media-play-speed-faster =
-    .label = Pli rapide (1.5×)
-    .accesskey = P
-
-# "Ludicrous" is a reference to the movie "Space Balls" and is meant
-# to say that this speed is very fast.
-main-context-menu-media-play-speed-fastest =
-    .label = Rapidege (2×)
-    .accesskey = g
 
 main-context-menu-media-play-speed-2 =
     .label = Rapido
@@ -312,12 +253,6 @@ main-context-menu-media-video-leave-fullscreen =
 
 # This is used when right-clicking on a video in the
 # content area when the Picture-in-Picture feature is enabled.
-main-context-menu-media-pip =
-    .label = Bildo en bildo
-    .accesskey = b
-
-# This is used when right-clicking on a video in the
-# content area when the Picture-in-Picture feature is enabled.
 main-context-menu-media-watch-pip =
     .label = Vidi inkrustite
     .accesskey = i
@@ -325,14 +260,6 @@ main-context-menu-media-watch-pip =
 main-context-menu-image-reload =
     .label = Reŝargi bildon
     .accesskey = R
-
-main-context-menu-image-view =
-    .label = Vidi bildon
-    .accesskey = b
-
-main-context-menu-video-view =
-    .label = Spekti videon
-    .accesskey = v
 
 main-context-menu-image-view-new-tab =
     .label = Malfermi bildon en nova langeto
@@ -345,18 +272,6 @@ main-context-menu-video-view-new-tab =
 main-context-menu-image-copy =
     .label = Kopii bildon
     .accesskey = b
-
-main-context-menu-image-copy-location =
-    .label = Kopii adreson de bildo
-    .accesskey = a
-
-main-context-menu-video-copy-location =
-    .label = Kopii adreson de filmeto
-    .accesskey = a
-
-main-context-menu-audio-copy-location =
-    .label = Kopii adreson de sono
-    .accesskey = a
 
 main-context-menu-image-copy-link =
     .label = Kopii ligilon de bildo
@@ -378,10 +293,6 @@ main-context-menu-image-email =
     .label = Sendi bildon retpoŝte…
     .accesskey = b
 
-main-context-menu-image-set-as-background =
-    .label = Difini kiel labortablan fonan bildon…
-    .accesskey = D
-
 main-context-menu-image-set-image-as-background =
     .label = Difini kiel skribotablan fonan bildon…
     .accesskey = D
@@ -400,10 +311,6 @@ main-context-menu-video-save-as =
 
 main-context-menu-audio-save-as =
     .label = Konservi sonon kiel…
-    .accesskey = K
-
-main-context-menu-video-image-save-as =
-    .label = Konservi filmetan bildon kiel…
     .accesskey = K
 
 main-context-menu-video-take-snapshot =
@@ -433,14 +340,6 @@ main-context-menu-save-to-pocket =
 main-context-menu-send-to-device =
     .label = Sendi paĝon al aparato
     .accesskey = a
-
-main-context-menu-view-background-image =
-    .label = Vidi fonan bildon
-    .accesskey = b
-
-main-context-menu-generate-new-password =
-    .label = Uzi aŭtomate kreitan pasvorton…
-    .accesskey = U
 
 ## The access keys for "Use Saved Login" and "Use Saved Password"
 ## should be the same if possible; the two context menu items
@@ -532,10 +431,6 @@ main-context-menu-view-page-source =
     .label = Vidi fonton de paĝo
     .accesskey = f
 
-main-context-menu-view-page-info =
-    .label = Vidi informon de paĝo
-    .accesskey = i
-
 main-context-menu-bidi-switch-text =
     .label = Ŝanĝi tekstodirekton
     .accesskey = a
@@ -543,10 +438,6 @@ main-context-menu-bidi-switch-text =
 main-context-menu-bidi-switch-page =
     .label = Ŝanĝi paĝodirekton
     .accesskey = D
-
-main-context-menu-inspect-element =
-    .label = Inspekti elementon
-    .accesskey = n
 
 main-context-menu-inspect =
     .label = Inspekti
@@ -558,3 +449,9 @@ main-context-menu-inspect-a11y-properties =
 main-context-menu-eme-learn-more =
     .label = Pli da informo pri DRM…
     .accesskey = i
+
+# Variables
+#   $containerName (String): The name of the current container
+main-context-menu-open-link-in-container-tab =
+    .label = Malfermi ligilon en nova langeto { $containerName }
+    .accesskey = M

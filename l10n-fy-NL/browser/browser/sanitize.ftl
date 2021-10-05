@@ -82,6 +82,10 @@ item-site-preferences =
     .label = Websidefoarkarren
     .accesskey = o
 
+item-site-settings =
+    .label = Website-ynstellingen
+    .accesskey = s
+
 item-offline-apps =
     .label = Bewarre websitegegevens
     .accesskey = g

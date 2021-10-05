@@ -82,6 +82,10 @@ item-site-preferences =
     .label = Сайттар баптаулары
     .accesskey = С
 
+item-site-settings =
+    .label = Сайт баптаулары
+    .accesskey = С
+
 item-offline-apps =
     .label = Дербес веб-сайттар деректері
     .accesskey = Д

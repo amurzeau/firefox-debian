@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Lisää osoitepalkkiin
 page-action-manage-extension =
     .label = Hallitse laajennusta…
-page-action-remove-from-urlbar =
-    .label = Poista osoitepalkista
 page-action-remove-extension =
     .label = Poista laajennus
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Tällä kertaa käytä hakuun:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Muuta hakuasetuksia
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Muuta hakuasetuksia
 search-one-offs-context-open-new-tab =
@@ -250,8 +242,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Näytä muokkaus tallennettaessa
     .accesskey = m
-bookmark-panel-done-button =
-    .label = Valmis
 bookmark-panel-save-button =
     .label = Tallenna
 # Width of the bookmark panel.
@@ -281,8 +271,6 @@ identity-passive-loaded = Tällä sivulla on suojaamatonta sisältöä (kuten ku
 identity-active-loaded = Suojaamattoman sisällön estäminen on otettu pois päältä sivustolla.
 identity-weak-encryption = Sivusto käyttää heikkoa salausta.
 identity-insecure-login-forms = Tälle sivulle kirjoitettujen kirjautumistietojen turvallisuus voi vaarantua.
-identity-permissions =
-    .value = Käyttöoikeudet
 identity-https-only-connection-upgraded = (päivitetty HTTPS:ksi)
 identity-https-only-label = Vain HTTPS -tila
 identity-https-only-dropdown-on =
@@ -298,7 +286,6 @@ identity-permissions-storage-access-header = Sivustorajat ylittävät evästeet
 identity-permissions-storage-access-hint = Nämä osapuolet voivat käyttää sivustorajat ylittäviä evästeitä ja sivustotietoja, kun olet tällä sivustolla.
 identity-permissions-storage-access-learn-more = Lue lisää
 identity-permissions-reload-hint = Sivu tarvitsee ehkä päivittää, jotta muutokset tulevat voimaan.
-identity-permissions-empty = Sivustolle ei ole myönnetty mitään erityisoikeuksia.
 identity-clear-site-data =
     .label = Poista evästeet ja sivustotiedot…
 identity-connection-not-secure-security-view = Yhteytesi tähän sivustoon ei ole suojattu.
@@ -381,12 +368,6 @@ bookmarks-toolbar-empty-message = Laita kirjanmerkkisi tänne kirjanmerkkipalkki
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Jaettava kamera:
-    .accesskey = k
-popup-select-microphone =
-    .value = Jaettava mikrofoni:
-    .accesskey = m
 popup-select-camera-device =
     .value = Kamera:
     .accesskey = K
@@ -400,14 +381,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Kaiuttimet
 popup-all-windows-shared = Kaikki näkyvissä olevat ikkunat jaetaan.
-popup-screen-sharing-not-now =
-    .label = Ei nyt
-    .accesskey = E
-popup-screen-sharing-never =
-    .label = Älä salli koskaan
-    .accesskey = Ä
-popup-silence-notifications-checkbox = Ei ilmoituksia { -brand-short-name(case: "elative") } jakamisen aikana
-popup-silence-notifications-checkbox-warning = { -brand-short-name } ei näytä ilmoituksia, kun jaat näyttöä tai ikkunaa.
 popup-screen-sharing-block =
     .label = Estä
     .accesskey = E
@@ -431,14 +404,10 @@ enable-devtools-popup-description = Voit käyttää F12-pikanäppäintä, kun ol
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Kirjoita osoite tai hakusana
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Kirjoita osoite tai hakusana
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Selain on kauko-ohjauksessa
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -487,8 +456,6 @@ urlbar-go-button =
     .tooltiptext = Siirry osoitepalkissa olevaan osoitteeseen
 urlbar-page-action-button =
     .tooltiptext = Sivun toiminnot
-urlbar-pocket-button =
-    .tooltiptext = Tallenna { -pocket-brand-name }-palveluun
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -547,6 +514,12 @@ urlbar-result-action-search-tabs = Etsi välilehdistä
 
 ## Labels shown above groups of urlbar results
 
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = { $engine }-ehdotukset
 
 ## Full Screen and Pointer Lock UI
 
@@ -683,6 +656,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Muokkaa työkalupalkkia…
     .accesskey = M
+toolbar-button-email-link =
+    .label = Lähetä linkki
+    .tooltiptext = Lähetä linkki sähköpostilla
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Tallenna sivu
+    .tooltiptext = Tallenna avoin sivu ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Avaa tiedosto
+    .tooltiptext = Avaa tiedosto ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Synkronoidut välilehdet
+    .tooltiptext = Näytä muiden laitteiden välilehdet
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Uusi yksityinen ikkuna
+    .tooltiptext = Avaa yksityinen selaaminen -ikkuna ({ $shortcut })
 
 ## EME notification panel
 
@@ -736,3 +730,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Piilota kuva kuvassa -kytkin
     .accesskey = P
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navigointi
+navbar-downloads =
+    .label = Lataukset
+navbar-overflow =
+    .tooltiptext = Lisää työkaluja…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Tulosta
+    .tooltiptext = Tulosta sivu… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Tulosta
+    .tooltiptext = Tulosta sivu
+navbar-home =
+    .label = Aloitussivu
+    .tooltiptext = { -brand-short-name }-aloitussivu
+navbar-library =
+    .label = Kirjasto
+    .tooltiptext = Katsele historiaa, tallennettuja kirjanmerkkejä ynnä muuta
+navbar-search =
+    .title = Etsi
+navbar-accessibility-indicator =
+    .tooltiptext = Saavutettavuusominaisuudet käytössä
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Selaimen välilehdet
+tabs-toolbar-new-tab =
+    .label = Uusi välilehti
+tabs-toolbar-list-all-tabs =
+    .label = Listaa kaikki välilehdet
+    .tooltiptext = Listaa kaikki välilehdet

@@ -5,9 +5,6 @@
 places-open =
     .label = Abrir
     .accesskey = r
-places-open-tab =
-    .label = Abrir em nova aba
-    .accesskey = b
 places-open-in-tab =
     .label = Abrir em nova aba
     .accesskey = v
@@ -17,26 +14,6 @@ places-open-all-bookmarks =
 places-open-all-in-tabs =
     .label = Abrir tudo em abas
     .accesskey = A
-places-open-window =
-    .label = Abrir em nova janela
-    .accesskey = A
-places-open-private-window =
-    .label = Abrir em nova janela privativa
-    .accesskey = p
-
-places-new-bookmark =
-    .label = Novo favorito…
-    .accesskey = N
-places-new-folder-contextmenu =
-    .label = Nova pasta…
-    .accesskey = v
-places-new-folder =
-    .label = Nova pasta…
-    .accesskey = v
-places-new-separator =
-    .label = Novo separador
-    .accesskey = e
-
 places-open-in-window =
     .label = Abrir em nova janela
     .accesskey = n
@@ -87,10 +64,6 @@ places-delete-domain-data =
 places-sortby-name =
     .label = Ordenar pelo nome
     .accesskey = d
-places-properties =
-    .label = Propriedades
-    .accesskey = P
-
 # places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
 places-edit-bookmark =
     .label = Editar favorito…
@@ -108,6 +81,17 @@ places-remove-folder =
            *[other] Remover pastas
         }
     .accesskey = m
+
+places-edit-folder2 =
+    .label = Editar pasta…
+    .accesskey = i
+places-delete-folder =
+    .label =
+        { $count ->
+            [1] Excluir pasta
+           *[other] Excluir pastas
+        }
+    .accesskey = x
 
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
@@ -130,6 +114,24 @@ places-remove-bookmark =
         }
     .accesskey = e
 
+# Variables:
+# $count (number) - The number of elements being selected for removal.
+places-delete-bookmark =
+    .label =
+        { $count ->
+            [1] Excluir favorito
+           *[other] Excluir favoritos
+        }
+    .accesskey = x
+
 places-manage-bookmarks =
     .label = Gerenciar favoritos
     .accesskey = G
+
+places-forget-about-this-site-confirmation-title = Esquecer este site
+
+# Variables:
+# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
+places-forget-about-this-site-confirmation-message = Esta ação remove todos os dados relacionados a { $hostOrBaseDomain }, incluindo histórico, senhas, cookies, cache e preferências de conteúdo. Tem certeza que quer continuar?
+
+places-forget-about-this-site-forget = Esquecer

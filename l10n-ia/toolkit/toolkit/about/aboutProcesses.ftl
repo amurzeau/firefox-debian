@@ -25,12 +25,6 @@ about-processes-column-cpu-total = CPU
 ## Process names
 ## Variables:
 ##    $pid (String) The process id of this process, assigned by the OS.
-##    $origin (String) The domain name for this process.
-##    $type (String) The raw type for this process. Used for unknown processes.
-
-## Process names
-## Variables:
-##    $pid (String) The process id of this process, assigned by the OS.
 
 about-processes-browser-process = { -brand-short-name } ({ $pid })
 about-processes-web-process = Processo web compartite ({ $pid })
@@ -61,7 +55,7 @@ about-processes-unknown-process = Altere: { $type } ({ $pid })
 
 about-processes-web-isolated-process = { $origin } ({ $pid })
 about-processes-web-large-allocation-process = { $origin } ({ $pid }, grande)
-about-processes-with-coop-coep-process = { $origin } ({ $pid }, cross-origin insulate)
+about-processes-with-coop-coep-process = { $origin } ({ $pid }, processo multi-origine isolate)
 about-processes-web-isolated-process-private = { $origin } — Private ({ $pid })
 about-processes-web-large-allocation-process-private = { $origin } — Private ({ $pid }, grande)
 about-processes-with-coop-coep-process-private = { $origin } — Private ({ $pid }, cross-origin insulate)
@@ -101,7 +95,7 @@ about-processes-inactive-threads =
 #   $name (String) The name assigned to the thread.
 #   $tid (String) The thread id of this thread, assigned by the OS.
 about-processes-thread-name-and-id = { $name }
-    .title = id de argumento: { $tid }
+    .title = ID del filo: { $tid }
 
 # Tab
 # Variables:

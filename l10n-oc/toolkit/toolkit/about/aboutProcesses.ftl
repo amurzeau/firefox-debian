@@ -25,12 +25,6 @@ about-processes-column-cpu-total = Processor
 ## Process names
 ## Variables:
 ##    $pid (String) The process id of this process, assigned by the OS.
-##    $origin (String) The domain name for this process.
-##    $type (String) The raw type for this process. Used for unknown processes.
-
-## Process names
-## Variables:
-##    $pid (String) The process id of this process, assigned by the OS.
 
 about-processes-browser-process = { -brand-short-name } ({ $pid })
 about-processes-web-process = Processús web partejat ({ $pid })
@@ -60,9 +54,29 @@ about-processes-unknown-process = Autre : { $type } ({ $pid })
 ##    $origin (String) The domain name for this process.
 
 about-processes-web-isolated-process = { $origin } ({ $pid })
+about-processes-web-large-allocation-process = { $origin } ({ $pid }, granda allocacion)
+about-processes-with-coop-coep-process = { $origin } ({ $pid }, processús multiorigina isolat)
 about-processes-web-isolated-process-private = { $origin } — Privat ({ $pid })
+about-processes-web-large-allocation-process-private = { $origin } — Privat ({ $pid }, granda allocacion)
+about-processes-with-coop-coep-process-private = { $origin } — Privat ({ $pid }, processús multiorigina isolat)
 
 ## Details within processes
+
+# Single-line summary of threads (non-idle process)
+# Variables:
+#    $number (Number) The number of threads in the process. Typically larger
+#                     than 30. We don't expect to ever have processes with less
+#                     than 5 threads.
+#    $active (Number) The number of active threads in the process.
+#                     The value will be greater than 0 and will never be
+#                     greater than $number.
+#    $list (String) Comma separated list of active threads.
+#                   Can be an empty string if the process is idle.
+about-processes-active-threads =
+    { $active ->
+        [one] { $active } fil actiu sus { $number } : { $list }
+       *[other] { $active } fils actius sus { $number } : { $list }
+    }
 
 # Single-line summary of threads (idle process)
 # Variables:

@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Serriñ ar varrenn gostez
+
+sidebar-close-button =
+    .tooltiptext = Serriñ ar varrenn gostez

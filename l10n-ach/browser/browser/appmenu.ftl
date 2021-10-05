@@ -5,17 +5,22 @@
 
 ## App Menu
 
-appmenuitem-customize-mode =
-    .label = Yiki…
-
-## Zoom Controls
-
 appmenuitem-new-tab =
     .label = Drica matidi manyen
 appmenuitem-new-window =
     .label = Dirica manyen
 appmenuitem-new-private-window =
     .label = Dirica manyen me mung
+appmenuitem-history =
+    .label = Gin mukato
+appmenuitem-downloads =
+    .label = Gam
+appmenuitem-print =
+    .label = Go…
+appmenuitem-zoom =
+    .value = Kwoti
+appmenuitem-help =
+    .label = Kony
 
 ## Zoom and Fullscreen Controls
 
@@ -23,22 +28,28 @@ appmenuitem-zoom-enlarge =
     .label = Kwot madit
 appmenuitem-zoom-reduce =
     .label = Jwik matidi
-
 appmenuitem-fullscreen =
     .label = Wang komputa ma opong
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
-fxa-toolbar-sync-now =
-    .label = Rib Kombedi
-
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = Dirica matino pe ayaba
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = Cak ribo dirica matidi me neno nying dirica matino ki i nyonyo ni mukene.
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = imito neno dirica matino ki nyonyo mukene?
+appmenu-remote-tabs-connectdevice =
+    .label = Kub Nyonyo Mukene
+appmenu-remote-tabs-unverified = Myero ki mok ada pa akaunt mamegi.
+appmenuitem-fxa-sign-in = Dony iyie { -brand-product-name }
 appmenuitem-save-page =
     .label = Gwok pot buk calo…
 
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Ngo Manyen
-
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =

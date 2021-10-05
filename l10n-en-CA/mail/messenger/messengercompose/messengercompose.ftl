@@ -6,8 +6,6 @@
 # Addressing widget
 
 #   $type (String) - the type of the addressing row
-remove-address-row-type = Remove the { $type } field
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Remove the { $type } field
 #   $type (String) - the type of the addressing row
@@ -64,6 +62,10 @@ toolbar-button-add-attachment =
 add-attachment-notification-reminder =
     .label = Add Attachment…
     .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+add-attachment-notification-reminder2 =
+    .label = Add Attachment…
+    .accesskey = A
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 menuitem-attach-files =
     .label = File(s)…
     .accesskey = F
@@ -80,16 +82,6 @@ attachment-bucket-count =
            *[other] { $count } Attachments
         }
     .accesskey = m
-#   $count (Number) - the number of attachments in the attachment bucket
-attachments-placeholder-tooltip =
-    .tooltiptext =
-        { $count ->
-            [1] { $count } Attachment
-           *[other] { $count } Attachments
-        }
-#   { attachment-bucket-count.accesskey } - Do not localize this message.
-key-toggle-attachment-pane =
-    .key = { attachment-bucket-count.accesskey }
 expand-attachment-pane-tooltip =
     .tooltiptext = Show the attachment pane ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
@@ -118,6 +110,13 @@ move-attachment-last-panel-button =
 button-return-receipt =
     .label = Receipt
     .tooltiptext = Request a return receipt for this message
+
+# Encryption
+
+message-to-be-signed-icon =
+    .alt = Sign message
+message-to-be-encrypted-icon =
+    .alt = Encrypt message
 
 # Addressing Area
 
@@ -153,12 +152,74 @@ bcc-compose-show-address-row-label =
     .tooltiptext = Show { bcc-compose-address-row-label.value } Field ({ bcc-compose-show-address-row-menuitem.acceltext })
 #   $count (Number) - the count of addresses in the "To" and "Cc" fields.
 many-public-recipients-info = The { $count } recipients in To and Cc will see each other’s address. You can avoid disclosing recipients by using Bcc instead.
+to-address-row-label =
+    .value = To
+#   $key (String) - the shortcut key for this field
+show-to-row-main-menuitem =
+    .label = To Field
+    .accesskey = T
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+# No acceltext should be shown.
+# The label should match the show-to-row-button text.
+show-to-row-extra-menuitem =
+    .label = To
+    .accesskey = T
+#   $key (String) - the shortcut key for this field
+show-to-row-button = To
+    .title = Show To Field ({ ctrl-cmd-shift-pretty-prefix }{ $key })
+cc-address-row-label =
+    .value = Cc
+#   $key (String) - the shortcut key for this field
+show-cc-row-main-menuitem =
+    .label = Cc Field
+    .accesskey = C
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+# No acceltext should be shown.
+# The label should match the show-cc-row-button text.
+show-cc-row-extra-menuitem =
+    .label = Cc
+    .accesskey = C
+#   $key (String) - the shortcut key for this field
+show-cc-row-button = Cc
+    .title = Show Cc Field ({ ctrl-cmd-shift-pretty-prefix }{ $key })
+bcc-address-row-label =
+    .value = Bcc
+#   $key (String) - the shortcut key for this field
+show-bcc-row-main-menuitem =
+    .label = Bcc Field
+    .accesskey = B
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+# No acceltext should be shown.
+# The label should match the show-bcc-row-button text.
+show-bcc-row-extra-menuitem =
+    .label = Bcc
+    .accesskey = B
+#   $key (String) - the shortcut key for this field
+show-bcc-row-button = Bcc
+    .title = Show Bcc Field ({ ctrl-cmd-shift-pretty-prefix }{ $key })
+extra-address-rows-menu-button =
+    .title = Other addressing fields to show
+#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
+many-public-recipients-notice =
+    { $count ->
+        [one] Your message has a public recipient. You can avoid disclosing recipients by using Bcc instead.
+       *[other] The { $count } recipients in To and Cc will see each other’s address. You can avoid disclosing recipients by using Bcc instead.
+    }
 many-public-recipients-bcc =
     .label = Use Bcc Instead
     .accesskey = U
 many-public-recipients-ignore =
     .label = Keep Recipients Public
     .accesskey = K
+many-public-recipients-prompt-title = Too Many Public Recipients
+#   $count (Number) - the count of addresses in the public recipients fields.
+many-public-recipients-prompt-msg =
+    { $count ->
+        [one] Your message has a public recipient. This may be a privacy concern. You can avoid this by moving the recipient from To/Cc to Bcc instead.
+       *[other] Your message has { $count } public recipients, who will be able to see each other’s addresses. This may be a privacy concern. You can avoid disclosing recipients by moving recipients from To/Cc to Bcc instead.
+    }
+many-public-recipients-prompt-cancel = Cancel Sending
+many-public-recipients-prompt-send = Send Anyway
 
 ## Notifications
 

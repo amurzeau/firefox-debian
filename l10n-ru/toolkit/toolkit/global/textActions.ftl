@@ -52,3 +52,5 @@ text-action-spell-add-dictionaries =
 text-action-spell-dictionaries =
     .label = Языки
     .accesskey = ы
+text-action-search-text-box-clear =
+    .title = Очистить

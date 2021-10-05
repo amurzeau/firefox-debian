@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Přidat do adresního řádku
 page-action-manage-extension =
     .label = Nastavení tohoto rozšíření
-page-action-remove-from-urlbar =
-    .label = Odebrat z adresního řádku
 page-action-remove-extension =
     .label = Odebrat rozšíření
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Vyhledat pomocí
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Změnit nastavení vyhledávání
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Změnit nastavení vyhledávání
 search-one-offs-context-open-new-tab =
@@ -251,8 +243,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Zobrazovat editor při ukládání
     .accesskey = u
-bookmark-panel-done-button =
-    .label = Hotovo
 bookmark-panel-save-button =
     .label = Uložit
 # Width of the bookmark panel.
@@ -294,8 +284,6 @@ identity-passive-loaded = Části této stránky nejsou zabezpečené (napříkl
 identity-active-loaded = Na této stránce jste ochranu zakázali.
 identity-weak-encryption = Tento server používá slabé šifrování.
 identity-insecure-login-forms = Přihlašovací údaje zadané na této stránce mohou být vyzrazeny.
-identity-permissions =
-    .value = Oprávnění
 identity-https-only-connection-upgraded = (přepnuto na HTTPS)
 identity-https-only-label = Režim „pouze HTTPS“
 identity-https-only-dropdown-on =
@@ -317,7 +305,6 @@ identity-permissions-storage-access-header = Cross-site cookies
 identity-permissions-storage-access-hint = Tyto weby mohou používat cross-site cookies a během vaší návštěvy této stránky tak přistupovat k jejím datům.
 identity-permissions-storage-access-learn-more = Zjistit více
 identity-permissions-reload-hint = Pro provedení změn může být potřeba stránku znovu načíst.
-identity-permissions-empty = Tento server nemá žádná zvláštní oprávnění.
 identity-clear-site-data =
     .label = Vymazat cookies a data stránky…
 identity-connection-not-secure-security-view = Spojení s tímto serverem není zabezpečené.
@@ -417,12 +404,6 @@ bookmarks-toolbar-empty-message = Chcete-li mít ke svým záložkám rychlý p�
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Sdílet kameru:
-    .accesskey = k
-popup-select-microphone =
-    .value = Sdílet mikrofon:
-    .accesskey = m
 popup-select-camera-device =
     .value = Kamera:
     .accesskey = K
@@ -436,14 +417,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Zvukový výstup
 popup-all-windows-shared = Budou sdílena všechna viditelná okna na vaší obrazovce.
-popup-screen-sharing-not-now =
-    .label = Teď ne
-    .accesskey = n
-popup-screen-sharing-never =
-    .label = Nikdy nepovolovat
-    .accesskey = N
-popup-silence-notifications-checkbox = Nezobrazovat oznámení od { -brand-short-name(case: "gen") } během sdílení
-popup-silence-notifications-checkbox-warning = { -brand-short-name } nebude během sdílení zobrazovat žádná oznámení.
 popup-screen-sharing-block =
     .label = Blokovat
     .accesskey = B
@@ -467,14 +440,10 @@ enable-devtools-popup-description = Pokud chcete používat zkratku F12, otevře
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Zadejte webovou adresu nebo dotaz pro vyhledávač
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Zadejte webovou adresu nebo dotaz pro vyhledávač
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Prohlížeč je ovládán vzdáleně
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -523,8 +492,6 @@ urlbar-go-button =
     .tooltiptext = Přejde na adresu v adresním řádku
 urlbar-page-action-button =
     .tooltiptext = Akce stránky
-urlbar-pocket-button =
-    .tooltiptext = Uloží do { -pocket-brand-name(case: "gen") }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -741,6 +708,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Nastavení tlačítek a lišt…
     .accesskey = V
+toolbar-button-email-link =
+    .label = Poslat odkaz e-mailem
+    .tooltiptext = Odešle odkaz na aktuální stránku
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Uložit stránku
+    .tooltiptext = Uloží aktuální stránku ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Otevřít soubor
+    .tooltiptext = Otevře soubor ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Synchronizované panely
+    .tooltiptext = Zobrazí panely z jiných zařízení
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Nové anonymní okno
+    .tooltiptext = Otevře nové anonymní okno ({ $shortcut })
 
 ## EME notification panel
 
@@ -803,6 +791,55 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Při blokování vyskakovacích oken nezobrazovat tuto zprávu
     .accesskey = n
+edit-popup-settings =
+    .label = Spravovat nastavení vyskakovacích oken…
+    .accesskey = y
 picture-in-picture-hide-toggle =
     .label = Skrýt přepínač obrazu v obraze
     .accesskey = v
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navigace
+navbar-downloads =
+    .label = Stahování
+navbar-overflow =
+    .tooltiptext = Další nástroje…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Vytisknout
+    .tooltiptext = Vytiskne tuto stránku… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Vytisknout
+    .tooltiptext = Vytiskne tuto stránku
+navbar-home =
+    .label = Domů
+    .tooltiptext =
+        Otevře domovskou stránku { -brand-short-name.gender ->
+            [masculine] { -brand-short-name(case: "gen") }
+            [feminine] { -brand-short-name(case: "gen") }
+            [neuter] { -brand-short-name(case: "gen") }
+           *[other] aplikace { -brand-short-name }
+        }
+navbar-library =
+    .label = Knihovna stránek
+    .tooltiptext = Zobrazí historii, uložené záložky, a mnoho dalšího
+navbar-search =
+    .title = Vyhledávací pole
+navbar-accessibility-indicator =
+    .tooltiptext = Funkce pro podporu přístupnosti povoleny
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Ouška panelů
+tabs-toolbar-new-tab =
+    .label = Nový panel
+tabs-toolbar-list-all-tabs =
+    .label = Seznam všech panelů
+    .tooltiptext = Seznam všech panelů

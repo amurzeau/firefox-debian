@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Bócnicu zacyniś
+
+sidebar-close-button =
+    .tooltiptext = Bócnicu zacyniś

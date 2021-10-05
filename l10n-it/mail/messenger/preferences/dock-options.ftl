@@ -6,6 +6,10 @@ dock-options-window-dialog =
     .title = Opzioni icona applicazione
     .style = width: 48em;
 
+dock-options-show-badge =
+    .label = Mostra contrassegno dell’icona
+    .accesskey = M
+
 bounce-system-dock-icon =
     .label = Anima l’icona dell’app quando arriva un nuovo messaggio
     .accesskey = i

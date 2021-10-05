@@ -35,19 +35,14 @@ connection-proxy-http = HTTP proxy-a
     .accesskey = H
 connection-proxy-http-port = Ataka
     .accesskey = t
-connection-proxy-http-sharing =
-    .label = Erabili proxy hau FTP eta HTTPS protokoloentzat ere bai
-    .accesskey = E
+connection-proxy-https-sharing =
+    .label = Erabili proxy hau HTTPS protokoloarentzat ere bai
+    .accesskey = r
 
 connection-proxy-https = HTTP proxy-a
     .accesskey = H
 connection-proxy-ssl-port = Ataka
     .accesskey = a
-
-connection-proxy-ftp = FTP proxy-a
-    .accesskey = F
-connection-proxy-ftp-port = Ataka
-    .accesskey = k
 
 connection-proxy-socks = SOCKS ostalaria
     .accesskey = C
@@ -64,9 +59,6 @@ connection-proxy-noproxy = Proxy-rik ez hauentzat
     .accesskey = n
 
 connection-proxy-noproxy-desc = Adibidez: .mozilla.org, .net.nz, 192.168.1.0/24
-
-# Do not translate localhost, 127.0.0.1 and ::1.
-connection-proxy-noproxy-localhost-desc = localhost, 127.0.0.1 eta ::1 helbideetarako konexioak inoiz ez dira proxy bidez egiten.
 
 # Do not translate "localhost", "127.0.0.1/8" and "::1". (You can translate "and".)
 connection-proxy-noproxy-localhost-desc-2 = localhost, 127.0.0.1/8 eta ::1 helbideetarako konexioak inoiz ez dira proxy bidez egiten.

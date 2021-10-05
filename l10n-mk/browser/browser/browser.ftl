@@ -102,10 +102,6 @@ urlbar-screen-blocked =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Додај во Адресна летна
-page-action-remove-from-urlbar =
-    .label = Отстрани од Адресна лента
 
 ## Auto-hide Context Menu
 
@@ -118,10 +114,6 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Промени поставки за пребарување
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Промени поставки за пребарување
 search-one-offs-context-open-new-tab =
@@ -144,8 +136,6 @@ search-one-offs-context-set-as-default =
 bookmark-panel-cancel =
     .label = Откажи
     .accesskey = О
-bookmark-panel-done-button =
-    .label = Во ред
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -164,10 +154,7 @@ identity-passive-loaded = Делови од оваа страница не се 
 identity-active-loaded = Ја исклучивте заштитата за оваа страница.
 identity-weak-encryption = Оваа страница користи слаба енкрипција.
 identity-insecure-login-forms = Најавувањата на оваа страница можат да бидат злоупотребени.
-identity-permissions =
-    .value = Дозволи
 identity-permissions-reload-hint = Можно е да треба да ја превчитате страницата за измените да имаат ефект.
-identity-permissions-empty = Немате активирано специфични дозволи за ова место.
 identity-clear-site-data =
     .label = Исчисти колачиња и податоци за мрежно место
 identity-connection-not-secure-security-view = Вие не сте безбедно поврзани со оваа страница.
@@ -216,12 +203,6 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Камера што се споделува:
-    .accesskey = П
-popup-select-microphone =
-    .value = Микрофон што се споделува:
-    .accesskey = м
 popup-all-windows-shared = Сите видливи прозорци на вашиот екран ќе бидат споделени.
 
 ## WebRTC window or screen share tab switch warning
@@ -232,14 +213,10 @@ popup-all-windows-shared = Сите видливи прозорци на ваш�
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Барај или внеси адреса
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Барај или внеси адреса
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Прелистувачот е контролиран далечински
 urlbar-switch-to-tab =
     .value = Оди до јазиче:
 # Used to indicate that a selected autocomplete entry is provided by an extension.
@@ -384,3 +361,35 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Не ја покажувај оваа порака кога се блокираат скокачки прозорци
     .accesskey = Н
+
+# Navigator Toolbox
+
+navbar-downloads =
+    .label = Преземања
+navbar-overflow =
+    .tooltiptext = Повеќе алатки...
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Печати
+    .tooltiptext = Печати ја оваа страница… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Печати
+    .tooltiptext = Ја печати оваа страница
+navbar-library =
+    .label = Библиотека
+    .tooltiptext = Преглед на историјата на прелистување, снимените обележувачи и друго
+navbar-search =
+    .title = Пребарување
+navbar-accessibility-indicator =
+    .tooltiptext = Особеностите за пристапност се овозможени
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Browser tabs
+tabs-toolbar-new-tab =
+    .label = Ново јазиче
+tabs-toolbar-list-all-tabs =
+    .label = Прикажи ги сите јазичиња
+    .tooltiptext = Прикажи ги сите јазичиња

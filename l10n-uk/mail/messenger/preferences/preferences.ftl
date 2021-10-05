@@ -5,13 +5,6 @@
 close-button =
     .aria-label = Закрити
 
-preferences-title =
-    .title =
-        { PLATFORM() ->
-            [windows] Налаштування
-           *[other] Налаштування
-        }
-
 preferences-doc-title = Налаштування
 
 category-list =
@@ -107,7 +100,7 @@ chat-notifications-title = Сповіщення
 
 chat-pane-styling-header = Стилі
 
-choose-messenger-language-description = Оберіть мову для відображення меню, повідомлень та сповіщень { -brand-short-name }.
+choose-messenger-language-description = Оберіть мову для показу меню, повідомлень та сповіщень { -brand-short-name }.
 manage-messenger-languages-button =
     .label = Вибрати альтернативні мови...
     .accesskey = м
@@ -134,21 +127,10 @@ update-in-progress-ok-button = &Відхилити
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Продовжити
 
-addons-button = Розширення і теми
-
 account-button = Налаштування облікового запису
 open-addons-sidebar-button = Додатки й теми
 
 ## OS Authentication dialog
-
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = Щоб створити головний пароль, введіть свої облікові дані входу для Windows. Це допомагає захистити ваші збережені паролі.
-
-# This message can be seen by trying to add a Master Password.
-# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
-# and includes subtitle of "Enter password for the user "xxx" to allow this." These
-# notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = створити головний пароль
 
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Щоб створити головний пароль, введіть свої облікові дані входу для Windows. Це допомагає захистити ваші збережені паролі.
@@ -201,11 +183,7 @@ mail-play-sound-label =
             [macos] Відтворити такий звуковий файл:
            *[other] Відтворити звук
         }
-    .accesskey =
-        { PLATFORM() ->
-            [macos] з
-           *[other] к
-        }
+    .accesskey = з
 mail-play-button =
     .label = Відтворити
     .accesskey = в
@@ -223,10 +201,6 @@ animated-alert-label =
 customize-alert-label =
     .label = Налаштувати…
     .accesskey = л
-
-tray-icon-label =
-    .label = Показувати піктограму в області сповіщень
-    .accesskey = і
 
 biff-use-system-alert =
     .label = Використовуйте системні сповіщення
@@ -429,9 +403,6 @@ smaller-size-item =
 quoted-text-color =
     .label = Колір:
     .accesskey = К
-
-search-input =
-    .placeholder = Пошук
 
 search-handler-table =
     .placeholder = Фільтрувати типи вмісту та дії
@@ -658,7 +629,6 @@ find-cloud-providers =
 
 cloud-account-description = Додати нову службу зберігання Filelink
 
-
 ## Privacy Tab
 
 mail-content = Вміст пошти
@@ -722,17 +692,6 @@ passwords-description = { -brand-short-name } може запам’ятовув
 passwords-button =
     .label = Збережені паролі…
     .accesskey = б
-
-master-password-description = Головний пароль захищає всі ваші паролі, але вам доведеться вводити його один раз на кожен сеанс.
-
-master-password-label =
-    .label = Встановити головний пароль
-    .accesskey = В
-
-master-password-button =
-    .label = Змінити головний пароль…
-    .accesskey = З
-
 
 primary-password-description = Головний пароль захищає всі ваші паролі, але вам доведеться вводити його один раз на кожен сеанс.
 
@@ -913,26 +872,6 @@ no-preview-description = Ця тема недоступна (вимкнений 
 chat-variant-label =
     .value = Варіант:
     .accesskey = В
-
-chat-header-label =
-    .label = Показувати заголовок
-    .accesskey = з
-
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Please keep the placeholder string short to avoid truncation.
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input-box =
-    .style = width: 15.4em
-    .placeholder =
-        { PLATFORM() ->
-            [windows] Шукати у налаштуваннях
-           *[other] Шукати у налаштуваннях
-        }
 
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible

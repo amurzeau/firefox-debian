@@ -12,7 +12,7 @@
 <!ENTITY subjectField4.label "Θέμα">
 <!ENTITY ccField4.label "Κοιν.">
 <!ENTITY bccField4.label "Κρυφή κοιν.">
-<!ENTITY newsgroupsField4.label "Ομάδες συζήτησης">
+<!ENTITY newsgroupsField4.label "Ομάδες συζητήσεων">
 <!ENTITY followupToField4.label "Σε συνέχεια του">
 <!ENTITY tagsHdr4.label "Ετικέτες">
 <!ENTITY dateField4.label "Ημερομηνία">
@@ -90,7 +90,7 @@
 <!ENTITY deleteAllAttachmentsCmd.label    "Διαγραφή όλων…">
 <!ENTITY deleteAllAttachmentsCmd.accesskey    "φ">
 
-<!ENTITY openAttachment.tooltip "Άνοιγμα του επισυναπτόμενου αρχείου">
+<!ENTITY openAttachment.tooltip "Άνοιγμα του συνημμένου αρχείου">
 
 <!ENTITY detachedAttachmentFolder.show.label        "Άνοιγμα φακέλου λήψης">
 <!ENTITY detachedAttachmentFolder.show.accesskey    "φ">

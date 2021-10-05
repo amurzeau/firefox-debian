@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Agiuntar a la trav d'adressas
 page-action-manage-extension =
     .label = Administrar il supplement…
-page-action-remove-from-urlbar =
-    .label = Allontanar da la trav d'adressas
 page-action-remove-extension =
     .label = Allontanar l'extensiun
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Per questa giada, tschertgar cun:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Midar parameters da tschertga
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Midar ils parameters per tschertgar
 search-one-offs-context-open-new-tab =
@@ -250,8 +242,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Mussar l'editur cun memorisar
     .accesskey = s
-bookmark-panel-done-button =
-    .label = Terminar
 bookmark-panel-save-button =
     .label = Memorisar
 # Width of the bookmark panel.
@@ -281,8 +271,6 @@ identity-passive-loaded = Parts da questa pagina (p.ex. maletgs) n'èn betg segi
 identity-active-loaded = Ti has deactivà la protecziun per questa pagina.
 identity-weak-encryption = Questa pagina utilisescha in criptadi flaivel.
 identity-insecure-login-forms = Infurmaziuns d'annunzia endatadas sin questa pagina èn eventualmain periclitadas.
-identity-permissions =
-    .value = Autorisaziuns
 identity-https-only-connection-upgraded = (actualisà a HTTPS)
 identity-https-only-label = Modus mo HTTPS
 identity-https-only-dropdown-on =
@@ -298,7 +286,6 @@ identity-permissions-storage-access-header = Cookies interpaginals
 identity-permissions-storage-access-hint = Questas partidas pon utilisar cookies interpaginals e datas da website durant che ti ta chattas sin questa website.
 identity-permissions-storage-access-learn-more = Ulteriuras infurmaziuns
 identity-permissions-reload-hint = Forsa stos ti chargiar da nov questa pagina per applitgar las midadas.
-identity-permissions-empty = Ti n'has betg definì autorisaziuns spezialas per questa pagina.
 identity-clear-site-data =
     .label = Stizzar ils cookies e las datas da websites…
 identity-connection-not-secure-security-view = Ti n'es betg collià a moda segira cun questa website.
@@ -380,12 +367,6 @@ bookmarks-toolbar-empty-message = Per l'access direct, plazzescha tes segnapagin
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Camera per cundivider:
-    .accesskey = C
-popup-select-microphone =
-    .value = Microfon per cundivider:
-    .accesskey = M
 popup-select-camera-device =
     .value = Camera:
     .accesskey = C
@@ -399,14 +380,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Boxas
 popup-all-windows-shared = Tut las fanestras visiblas sin tes visur vegnan cundivididas.
-popup-screen-sharing-not-now =
-    .label = Betg ussa
-    .accesskey = g
-popup-screen-sharing-never =
-    .label = Mai permetter
-    .accesskey = M
-popup-silence-notifications-checkbox = Deactivar las communicaziuns da { -brand-short-name } durant la cundivisiun
-popup-silence-notifications-checkbox-warning = { -brand-short-name } na mussa naginas communicaziuns durant la cundivisiun dal visur.
 popup-screen-sharing-block =
     .label = Bloccar
     .accesskey = B
@@ -430,14 +403,10 @@ enable-devtools-popup-description = Per utilisar la scursanida F12, l'emprim avr
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Tschertgar u endatar in'adressa
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Tschertgar u endatar in'adressa
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Il navigatur vegn controllà a distanza
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -486,8 +455,6 @@ urlbar-go-button =
     .tooltiptext = Chargiar l'adressa endatada en la trav d'adressas
 urlbar-page-action-button =
     .tooltiptext = Acziuns da pagina
-urlbar-pocket-button =
-    .tooltiptext = Memorisar en { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -546,6 +513,16 @@ urlbar-result-action-search-tabs = Tschertgar en ils tabs
 
 ## Labels shown above groups of urlbar results
 
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = Propostas da { $engine }
 
 ## Full Screen and Pointer Lock UI
 
@@ -682,6 +659,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Modifitgar la trav da simbols…
     .accesskey = M
+toolbar-button-email-link =
+    .label = Trametter la colliaziun via e-mail
+    .tooltiptext = Trametter la colliaziun via e-mail
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Memorisar la pagina
+    .tooltiptext = Memorisar la pagina ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Avrir ina datoteca
+    .tooltiptext = Avrir ina datoteca ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Tabs sincronisads
+    .tooltiptext = Mussar tabs dad auters apparats
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Nova fanestra privata
+    .tooltiptext = Avrir ina nova fanestra en il modus privat ({ $shortcut })
 
 ## EME notification panel
 
@@ -732,6 +730,49 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Betg mussar quest messadi sche fanestras popup vegnan bloccadas
     .accesskey = I
+edit-popup-settings =
+    .label = Administrar ils parameters da pop-ups…
+    .accesskey = m
 picture-in-picture-hide-toggle =
     .label = Zuppentar il buttun per activar/deactivar maletg-en-maletg
     .accesskey = Z
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navigaziun
+navbar-downloads =
+    .label = Telechargiadas
+navbar-overflow =
+    .tooltiptext = Dapli utensils…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Stampar
+    .tooltiptext = Stampar questa pagina… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Stampar
+    .tooltiptext = Stampar questa pagina
+navbar-home =
+    .label = Pagina da partenza
+    .tooltiptext = Pagina da partenza da { -brand-short-name }
+navbar-library =
+    .label = Biblioteca
+    .tooltiptext = Mussar la cronologia, ils segnapaginas e dapli
+navbar-search =
+    .title = Tschertgar
+navbar-accessibility-indicator =
+    .tooltiptext = Activà las funcziuns d'accessibilitad
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Tabs dal navigatur
+tabs-toolbar-new-tab =
+    .label = Nov tab
+tabs-toolbar-list-all-tabs =
+    .label = Far ina glista da tut ils tabs
+    .tooltiptext = Far ina glista da tut ils tabs

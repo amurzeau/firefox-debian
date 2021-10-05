@@ -12,25 +12,30 @@ appmenuitem-update-banner3 =
     .label-update-unsupported = 更新不可 — システムの互換性なし
     .label-update-restart = 更新可能 — 今すぐ再起動
 appmenuitem-protection-dashboard-title = プライバシー保護ダッシュボード
-appmenuitem-customize-mode =
-    .label = カスタマイズ...
-
-## Zoom Controls
-
 appmenuitem-new-tab =
     .label = 新しいタブ
 appmenuitem-new-window =
     .label = 新しいウィンドウ
 appmenuitem-new-private-window =
     .label = 新しいプライベートウィンドウ
+appmenuitem-history =
+    .label = 履歴
+appmenuitem-downloads =
+    .label = ダウンロード
 appmenuitem-passwords =
     .label = パスワード
 appmenuitem-addons-and-themes =
     .label = アドオンとテーマ
+appmenuitem-print =
+    .label = 印刷...
 appmenuitem-find-in-page =
     .label = このページを検索...
+appmenuitem-zoom =
+    .value = ズーム
 appmenuitem-more-tools =
     .label = その他のツール
+appmenuitem-help =
+    .label = ヘルプ
 appmenuitem-exit2 =
     .label = 終了
 appmenu-menu-button-closed2 =
@@ -55,13 +60,31 @@ appmenuitem-fullscreen =
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
-fxa-toolbar-sync-now =
-    .label = 今すぐ同期
 appmenu-remote-tabs-sign-into-sync =
     .label = ログインして同期...
 appmenu-remote-tabs-turn-on-sync =
     .label = 同期をオンにする...
+# This is shown after the tabs list if we can display more tabs by clicking on the button
+appmenu-remote-tabs-showmore =
+    .label = さらにタブを表示
+    .tooltiptext = この端末からのタブをさらに表示します
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = タブがありません
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = タブの同期をオンにすると、あなたの他の端末のタブ一覧が表示されます。
+
+appmenu-remote-tabs-opensettings =
+  .label = 設定
+
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = 他の端末のタブを表示しますか？
+appmenu-remote-tabs-connectdevice =
+    .label = 他の端末を接続
+appmenu-remote-tabs-welcome = 他の端末のタブ一覧を表示する。
+appmenu-remote-tabs-unverified = あなたのアカウントは検証する必要があります。
 appmenuitem-fxa-toolbar-sync-now2 = 今すぐ同期
+appmenuitem-fxa-sign-in = { -brand-product-name } にログイン
 appmenuitem-fxa-manage-account = アカウントを管理
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables

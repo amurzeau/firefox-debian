@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Narrun' dukuán nahuìi
+
+sidebar-close-button =
+    .tooltiptext = Narrun' dukuán nahuìi

@@ -53,7 +53,7 @@ browser-languages-window =
     .title = Налаштування мови { -brand-short-name }
     .style = width: 40em
 
-browser-languages-description = { -brand-short-name } типово відображатиме сторінки першою мовою зі списку, а інші мови у вказаному порядку, при необхідності.
+browser-languages-description = { -brand-short-name } типово показуватиме сторінки першою мовою зі списку, а інші мови у вказаному порядку, за необхідності.
 
 browser-languages-search = Пошук інших мов…
 

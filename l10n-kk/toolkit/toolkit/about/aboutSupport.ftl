@@ -10,11 +10,6 @@ crashes-id = Хабарлама ID
 crashes-send-date = Жіберілген
 crashes-all-reports = Барлық құлау туралы хабарламалары
 crashes-no-config = Бұл қолданба құлау хабарламаларын көрсетуге бапталмаған.
-extensions-title = Кеңейтулер
-extensions-name = Аты
-extensions-enabled = Іске қосулы
-extensions-version = Нұсқасы
-extensions-id = ID
 support-addons-title = Қосымшалар
 support-addons-name = Аты
 support-addons-type = Түрі
@@ -60,12 +55,14 @@ app-basics-enabled-plugins = Іске қосулы плагиндер
 app-basics-build-config = Жинау баптаулары
 app-basics-user-agent = User Agent
 app-basics-os = ОЖ
+app-basics-os-theme = ОЖ темасы
 # Rosetta is Apple's translation process to run apps containing x86_64
 # instructions on Apple Silicon. This should remain in English.
 app-basics-rosetta = Rosetta бинарлық трансляциясы
 app-basics-memory-use = Жады қолданылуы
 app-basics-performance = Өнімділік
 app-basics-service-workers = Тіркелген жұмыс үрдістері
+app-basics-third-party = Үшінші жақты модульдер
 app-basics-profiles = Профильдер
 app-basics-launcher-process-status = Жөнелтетін үрдіс
 app-basics-multi-process-support = Мультипроцесс терезелері
@@ -129,9 +126,6 @@ sandbox-sys-call-tid = TID
 sandbox-sys-call-proc-type = Процесс түрі
 sandbox-sys-call-number = Жүйелік шақыру
 sandbox-sys-call-args = Аргументтер
-safe-mode-title = Қауіпсіз режимін қолданып көру
-restart-in-safe-mode-label = Сөндірілген кеңейтулермен қайта қосу…
-
 troubleshoot-mode-title = Мәселелерді диагностикалау
 restart-in-troubleshoot-mode-label = Жөндеу режимі…
 clear-startup-cache-title = Іске қосылу кэшін тарартып көріңіз
@@ -188,37 +182,6 @@ remote-debugging-accepting-connections = Кіріс байланыстарды �
 remote-debugging-url = URL
 
 ##
-
-support-third-party-modules-title = Үшінші жақты модульдер
-support-third-party-modules-module = Модуль файлы
-support-third-party-modules-version = Файл нұсқасы
-support-third-party-modules-vendor = Өндіруші ақпараты
-support-third-party-modules-occurrence = Көшірмелер
-support-third-party-modules-process = Үрдіс түрі және идентификаторы
-support-third-party-modules-thread = Ағын
-support-third-party-modules-base = Бейненің базалық жүктелудің адресі
-support-third-party-modules-uptime = Үрдістің жұмыс істеу уақыты (мс)
-support-third-party-modules-duration = Жүктелудің ұзақтығы (мс)
-support-third-party-modules-status = Қалып-күйі
-support-third-party-modules-status-loaded = Жүктелген
-support-third-party-modules-status-blocked = Бұғатталған
-support-third-party-modules-status-redirected = Қайта бағдарланған
-support-third-party-modules-empty = Үшінші жақты модульдер жүктелмеген.
-support-third-party-modules-no-value = (Мән жоқ)
-support-third-party-modules-button-open =
-    .title = Файл орналасуын ашу…
-support-third-party-modules-expand =
-    .title = Көбірек ақпаратты көрсету
-support-third-party-modules-collapse =
-    .title = Көбірек ақпаратты жасыру
-support-third-party-modules-unsigned-icon =
-    .title = Бұл модульге қол қойылмаған
-support-third-party-modules-folder-icon =
-    .title = Файл орналасуын ашу…
-support-third-party-modules-down-icon =
-    .title = Көбірек ақпаратты көрсету
-support-third-party-modules-up-icon =
-    .title = Көбірек ақпаратты жасыру
 
 # Variables
 # $days (Integer) - Number of days of crashes to log
@@ -314,11 +277,6 @@ webgl2-renderer = WebGL 2 драйвер Renderer
 webgl2-version = WebGL 2 драйвер нұсқасы
 webgl2-driver-extensions = WebGL 2 драйвер кеңейтулері
 webgl2-extensions = WebGL 2 кеңейтулері
-blocklisted-bug = Белгілі осалдылықтар салдарынан блоктізімде
-
-# Variables
-# $bugNumber (string) - String of bug number from Bugzilla
-bug-link = ақаулық { $bugNumber }
 
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
@@ -329,8 +287,6 @@ support-blocklisted-bug = Белгілі мәселелерге байланыс
 unknown-failure = Блоктізіміде; қателік коды { $failureCode }
 
 d3d11layers-crash-guard = D3D11 араластырушысы
-d3d11video-crash-guard = D3D11 видео декодері
-d3d9video-crash-guard = D3D9 видео декодері
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX видео декодері
 
@@ -375,15 +331,6 @@ launcher-process-status-unknown = Қалып-күйі белгісіз
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
 multi-process-windows = { $remoteWindows }/{ $totalWindows }
-multi-process-status-0 = Пайдаланушымен іске қосылған
-multi-process-status-1 = Үнсіз келісім бойынша іске қосылған
-multi-process-status-2 = Сөндірулі
-multi-process-status-4 = Қолжетерлілік құралдарымен сөндірілген
-multi-process-status-6 = Қолдауы жоқ мәтіндік енгізу салдарынан сөндірілген
-multi-process-status-7 = Қосымшалармен сөндірілген
-multi-process-status-8 = Мәжбүрлі түрде сөндірілген
-multi-process-status-unknown = Қалып-күйі белгісіз
-
 # Variables
 # $fissionWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows

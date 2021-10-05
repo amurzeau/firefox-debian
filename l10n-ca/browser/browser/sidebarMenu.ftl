@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Tanca la barra lateral
+
+sidebar-close-button =
+    .tooltiptext = Tanca la barra lateral

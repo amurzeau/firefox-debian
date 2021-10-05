@@ -4,20 +4,10 @@
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = Лагіны & паролі
-
-# "Google Play" and "App Store" are both branding and should not be translated
-
-login-app-promo-title = Вазьміце свае паролі ўсюды
-login-app-promo-subtitle = Атрымаць бясплатную праграму { -lockwise-brand-name }
-login-app-promo-android =
-    .alt = Атрымаць на Google Play
-login-app-promo-apple =
-    .alt = Сцягнуць з App Store
 login-filter =
     .placeholder = Шукаць лагіны
 create-login-button = Дадаць новы лагін
 fxaccounts-sign-in-text = Атрымайце доступ да сваіх пароляў на іншых прыладах
-fxaccounts-sign-in-button = Увайсці ў { -sync-brand-short-name(case: "acc") }
 fxaccounts-sign-in-sync-button = Увайсці ў сінхранізацыю
 fxaccounts-avatar-button =
     .title = Кіраванне ўліковым запісам
@@ -37,8 +27,6 @@ menu-menuitem-preferences =
        *[other] Параметры
     }
 about-logins-menu-menuitem-help = Даведка
-menu-menuitem-android-app = { -lockwise-brand-short-name } для Android
-menu-menuitem-iphone-app = { -lockwise-brand-short-name } для iPhone і iPad
 
 ## Login List
 
@@ -78,13 +66,9 @@ about-logins-list-section-week = Апошнія 7 дзён
 
 ## Introduction screen
 
-login-intro-heading = Шукаеце захаваныя лагіны? Наладзьце { -sync-brand-short-name }.
 about-logins-login-intro-heading-logged-out2 = Шукаеце захаваныя паролі? Уключыце сінхранізацыю альбо імпартуйце іх.
 about-logins-login-intro-heading-logged-in = Сінхранізаваныя лагіны не знойдзены.
 login-intro-description = Калі вы захавалі свае лагіны ў { -brand-product-name } на іншай прыладзе, вось як атрымаць іх тут:
-login-intro-instruction-fxa = Стварыце альбо ўвайдзіце ў свой { -fxaccount-brand-name } на прыладзе, дзе захоўваюцца вашы лагіны
-login-intro-instruction-fxa-settings = Пераканайцеся, што вы ўстанавілі сцяжок Лагіны у наладах { -sync-brand-short-name }
-about-logins-intro-instruction-help = Для атрымання дадатковай даведкі наведайце <a data-l10n-name="help-link">падтрымку { -lockwise-brand-short-name }</a>
 login-intro-instructions-fxa = Стварыце або ўвайдзіце ў свой { -fxaccount-brand-name } на прыладзе, дзе захоўваюцца вашы лагіны.
 login-intro-instructions-fxa-settings = Прайдзіце ў Налады> Sync> Уключыць сінхранізацыю… Адзначце сцяжок Лагіны і паролі.
 login-intro-instructions-fxa-help = Для атрымання дадатковай даведкі наведайце <a data-l10n-name="help-link">падтрымку { -lockwise-brand-short-name }</a>.
@@ -109,7 +93,7 @@ login-item-password-label = Пароль
 login-item-password-reveal-checkbox =
     .aria-label = Паказаць пароль
 login-item-copy-password-button-text = Капіяваць
-login-item-copied-password-button-text = Скапіявана!
+login-item-copied-password-button-text = Скапіяваны!
 login-item-save-changes-button = Захаваць змены
 login-item-save-new-button = Захаваць
 login-item-cancel-button = Скасаваць
@@ -140,10 +124,6 @@ about-logins-copy-password-os-auth-dialog-message-win = Каб скапірав�
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = скапіраваць захаваны пароль
-
-## Master Password notification
-
-master-password-notification-message = Калі ласка, увядзіце ваш галоўны пароль для прагляду захаваных лагінаў і пароляў
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message-win = Каб экспартаваць вашы лагіны, увядзіце свае ўліковыя дадзеныя для ўваходу ў Windows. Гэта дапамагае захоўваць бяспеку вашых уліковых запісаў.
 # This message can be seen when attempting to export a password in about:logins
@@ -156,24 +136,6 @@ about-logins-primary-password-notification-message = Калі ласка, увя
 master-password-reload-button =
     .label = Увайсці
     .accesskey = У
-
-## Password Sync notification
-
-enable-password-sync-notification-message =
-    { PLATFORM() ->
-        [windows] Хочаце мець свае лагіны ўсюды, дзе карыстаецеся { -brand-product-name }? Перайдзіце ў налады { -sync-brand-short-name } і выберыце сцяжок Лагіны.
-       *[other] Хочаце мець свае лагіны ўсюды, дзе карыстаецеся { -brand-product-name }? Перайдзіце ў перавагі { -sync-brand-short-name } і выберыце сцяжок Лагіны.
-    }
-enable-password-sync-preferences-button =
-    .label =
-        { PLATFORM() ->
-            [windows] Адкрыць налады { -sync-brand-short-name }
-           *[other] Адкрыць налады { -sync-brand-short-name }
-        }
-    .accesskey = А
-about-logins-enable-password-sync-dont-ask-again-button =
-    .label = Больш не пытацца
-    .accesskey = а
 
 ## Dialogs
 

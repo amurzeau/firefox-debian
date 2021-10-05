@@ -34,12 +34,6 @@ permissions-remove =
 permissions-remove-all =
     .label = Eliminar todos los sitios
     .accesskey = E
-permissions-button-cancel =
-    .label = Cancelar
-    .accesskey = C
-permissions-button-ok =
-    .label = Guardar cambios
-    .accesskey = G
 permission-dialog =
     .buttonlabelaccept = Guardar cambios
     .buttonaccesskeyaccept = S
@@ -72,7 +66,7 @@ permissions-capabilities-listitem-off-temporarily =
 ## Invalid Hostname Dialog
 
 permissions-invalid-uri-title = Nombre de Host Inválido Ingresado
-permissions-invalid-uri-label = Por favor, ingrese un nombre de host válido
+permissions-invalid-uri-label = Ingrese un nombre de host válido
 
 ## Exceptions - Tracking Protection
 

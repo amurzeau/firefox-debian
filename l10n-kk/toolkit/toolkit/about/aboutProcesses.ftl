@@ -25,17 +25,33 @@ about-processes-column-cpu-total = Процессор
 ## Process names
 ## Variables:
 ##    $pid (String) The process id of this process, assigned by the OS.
-##    $origin (String) The domain name for this process.
-##    $type (String) The raw type for this process. Used for unknown processes.
 
-## Process names
-## Variables:
-##    $pid (String) The process id of this process, assigned by the OS.
+about-processes-browser-process = { -brand-short-name } ({ $pid })
+about-processes-web-process = Ортақ веб-процессі ({ $pid })
+about-processes-file-process = Файлдар ({ $pid })
+about-processes-extension-process = Кеңейтулер ({ $pid })
+about-processes-privilegedabout-process = About беттері ({ $pid })
+about-processes-plugin-process = Плагиндер ({ $pid })
+about-processes-privilegedmozilla-process = { -vendor-short-name } сайттары ({ $pid })
+about-processes-gmp-plugin-process = Gecko медиа плагиндері ({ $pid })
+about-processes-gpu-process = GPU ({ $pid })
+about-processes-vr-process = VR ({ $pid })
+about-processes-rdd-process = Деректер декодтаушы ({ $pid })
+about-processes-socket-process = Желі ({ $pid })
+
+# Unknown process names
+# Variables:
+#    $pid (String) The process id of this process, assigned by the OS.
+#    $type (String) The raw type for this process.
+about-processes-unknown-process = Басқа: { $type } ({ $pid })
 
 ## Isolated process names
 ## Variables:
 ##    $pid (String) The process id of this process, assigned by the OS.
 ##    $origin (String) The domain name for this process.
+
+about-processes-web-isolated-process = { $origin } ({ $pid })
+about-processes-web-large-allocation-process = { $origin } ({ $pid }, үлкен)
 
 ## Details within processes
 

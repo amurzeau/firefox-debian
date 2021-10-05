@@ -96,8 +96,8 @@ perftools-thread-img-decoder =
     .title = Filas de decodatge d’imatge
 perftools-thread-dns-resolver =
     .title = La resolucion DNS se passa sus aqueste fial
-perftools-thread-js-helper =
-    .title = Trabalh en rèireplan del motor JS coma las compilacions fòra fil principal
+perftools-thread-task-controller =
+    .title = Fil d’execucion del grop de fils d’execucion de TaskController
 
 ##
 

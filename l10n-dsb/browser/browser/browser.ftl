@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Adresowemu póloju pśidaś
 page-action-manage-extension =
     .label = Rozšyrjenje zastojaś…
-page-action-remove-from-urlbar =
-    .label = Z adresowego póla wótwónoźeś
 page-action-remove-extension =
     .label = Rozšyrjenje wótwónoźeś
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Něnto pytaś z:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Pytańske nastajenja
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Pytańske nastajenja změniś
 search-one-offs-context-open-new-tab =
@@ -252,8 +244,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Editor pśi składowanju pokazaś
     .accesskey = E
-bookmark-panel-done-button =
-    .label = Dokóńcony
 bookmark-panel-save-button =
     .label = Składowaś
 # Width of the bookmark panel.
@@ -283,8 +273,6 @@ identity-passive-loaded = Źěle toś togo boka njejsu wěste (na pśikład wobr
 identity-active-loaded = Sćo šćit na toś tom boku znjemóžnił.
 identity-weak-encryption = Toś ten bok wužywa słabe koděrowanje.
 identity-insecure-login-forms = Pśizjawjenja, kótarež zapódawaju se na toś tom boku, by mógli wobgrozone byś.
-identity-permissions =
-    .value = Pšawa
 identity-https-only-connection-upgraded = (na HTTPS zaktualizěrowany)
 identity-https-only-label = Modus jano-HTTPS
 identity-https-only-dropdown-on =
@@ -300,7 +288,6 @@ identity-permissions-storage-access-header = Cookieje někotarych sedłow
 identity-permissions-storage-access-hint = Toś te wobźělone mógu cookieje a sedłowe daty někotarych sedłow wužywaś, mjaztym až sćo na toś tom sedle.
 identity-permissions-storage-access-learn-more = Dalšne informacije
 identity-permissions-reload-hint = Musyśo snaź bok znowego zacytaś, aby se změny wustatkowali.
-identity-permissions-empty = Njejsćo toś tomu sedłoju wósebne pšawa pśizwólił.
 identity-clear-site-data =
     .label = Cookieje a sedłowe daty wulašowaś…
 identity-connection-not-secure-security-view = Njejsćo wěsće zwězany z toś tym sedłom.
@@ -391,12 +378,6 @@ bookmarks-toolbar-empty-message = Wótpołožćo swóje cytańske znamjenja w sy
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Kamera, kotaraž ma se gromaźe wužywaś:
-    .accesskey = K
-popup-select-microphone =
-    .value = Mikrofon, kótaryž ma se gromaźe wužywaś:
-    .accesskey = M
 popup-select-camera-device =
     .value = Kamera:
     .accesskey = K
@@ -410,14 +391,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Awdiowudawańske rědy
 popup-all-windows-shared = Wšykne widobne wokna na wašej wobrazowce budu se źěliś.
-popup-screen-sharing-not-now =
-    .label = Nic něnto
-    .accesskey = c
-popup-screen-sharing-never =
-    .label = Nigda njedowóliś
-    .accesskey = N
-popup-silence-notifications-checkbox = Powěźeńki w { -brand-short-name } znjemóžniś, mjaztym až źěliśo
-popup-silence-notifications-checkbox-warning = { -brand-short-name } njebuźo zdźělenja pokazowaś, mjaztym až źěliśo.
 popup-screen-sharing-block =
     .label = Blokěrowaś
     .accesskey = B
@@ -441,14 +414,10 @@ enable-devtools-popup-description = Aby tastu F12 wužywał, wócyńśo nejpjerw
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Pytaś abo adresu zapódaś
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Pytaś abo adresu zapódaś
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Wobglědowak se zdaloka wóźi
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -497,8 +466,6 @@ urlbar-go-button =
     .tooltiptext = K adresy w adresowem pólu
 urlbar-page-action-button =
     .tooltiptext = Akcije boka
-urlbar-pocket-button =
-    .tooltiptext = Pla { -pocket-brand-name } składowaś
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -703,6 +670,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Symbolowu rědku pśiměriś…
     .accesskey = S
+toolbar-button-email-link =
+    .label = Wótkaz e-mailowaś
+    .tooltiptext = Wótkaz na toś ten bok e-mailowaś
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Bok składowaś
+    .tooltiptext = Toś ten bok składowaś ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Dataju wócyniś
+    .tooltiptext = Dataju wócyniś ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Synchronizěrowane rejtariki
+    .tooltiptext = Rejtariki z drugich rědow pokazaś
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Nowe priwatne wokno
+    .tooltiptext = Nowe priwatne wokno wócyniś ({ $shortcut })
 
 ## EME notification panel
 
@@ -753,6 +741,49 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Toś tu powěsć njepokazaś, gaž wuskokujuce wokna se blokěruju
     .accesskey = n
+edit-popup-settings =
+    .label = Nastajenja wuskokujucych woknow zastojaś…
+    .accesskey = N
 picture-in-picture-hide-toggle =
     .label = Pśešaltowanje wobraz-we-wobrazu schowaś
     .accesskey = P
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Nawigacija
+navbar-downloads =
+    .label = Ześěgnjenja
+navbar-overflow =
+    .tooltiptext = Dalšne rědy…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Śišćaś
+    .tooltiptext = Toś ten bok śišćaś... ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Śišćaś
+    .tooltiptext = Toś ten bok śišćaś
+navbar-home =
+    .label = Startowy bok
+    .tooltiptext = Startowy bok { -brand-short-name }
+navbar-library =
+    .label = Biblioteka
+    .tooltiptext = Historiju, skłaźone cytańske znamjenja a wěcej pokazaś
+navbar-search =
+    .title = Pytaś
+navbar-accessibility-indicator =
+    .tooltiptext = Funkcije bźezbariernošći zmóžnjone
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Rejtariki wobglědowaka
+tabs-toolbar-new-tab =
+    .label = Nowy rejtarik
+tabs-toolbar-list-all-tabs =
+    .label = Wšykne rejtariki nalicyś
+    .tooltiptext = Wšykne rejtariki nalicyś

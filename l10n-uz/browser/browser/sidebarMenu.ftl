@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Yon panelni yopish
+
+sidebar-close-button =
+    .tooltiptext = Yon panelni yopish

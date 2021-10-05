@@ -5,18 +5,29 @@
 
 ## App Menu
 
+appmenuitem-update-banner3 =
+    .label-update-downloading = { -brand-shorter-name }i uuenduse allalaadimine
+    .label-update-available = Uuendus on saadaval — laadi kohe alla
+    .label-update-manual = Uuendus on saadaval — laadi kohe alla
+    .label-update-unsupported = Uuendamine pole võimalik — süsteem pole ühilduv
+    .label-update-restart = Uuendus on saadaval — taaskäivita kohe
 appmenuitem-protection-dashboard-title = Kaitsete koondpaneel
-appmenuitem-customize-mode =
-    .label = Kohanda...
-
-## Zoom Controls
-
 appmenuitem-new-tab =
     .label = Uus kaart
 appmenuitem-new-window =
     .label = Uus aken
 appmenuitem-new-private-window =
     .label = Uus privaatne aken
+appmenuitem-history =
+    .label = Ajalugu
+appmenuitem-downloads =
+    .label = Allalaadimised
+appmenuitem-print =
+    .label = Prindi…
+appmenuitem-zoom =
+    .value = Suurendamine
+appmenuitem-help =
+    .label = Abi
 
 ## Zoom and Fullscreen Controls
 
@@ -24,22 +35,29 @@ appmenuitem-zoom-enlarge =
     .label = Suurenda
 appmenuitem-zoom-reduce =
     .label = Vähenda
-
 appmenuitem-fullscreen =
     .label = Täisekraani režiim
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
-fxa-toolbar-sync-now =
-    .label = Sünkroniseeri kohe
-
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = Avatud kaarte pole
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = Teistes seadmetes avatud kaartide nägemiseks lülita sisse kaartide sünkroniseerimine.
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = Soovid näha teistes seadmetes avatud kaarte?
+appmenu-remote-tabs-connectdevice =
+    .label = Ühenda teine seade
+appmenu-remote-tabs-welcome = Vaata teistes seadmetes avatud kaartide nimekirja.
+appmenu-remote-tabs-unverified = Sinu konto vajab kinnitamist.
+appmenuitem-fxa-sign-in = Logi { -brand-product-name }i sisse
 appmenuitem-save-page =
     .label = Salvesta veebileht kui…
 
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Mis on uut?
-
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =
@@ -92,4 +110,3 @@ appmenu-help-not-deceptive =
 
 appmenu-taskmanager =
     .label = Tegumihaldur
-

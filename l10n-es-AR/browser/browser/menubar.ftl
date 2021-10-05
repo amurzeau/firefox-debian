@@ -22,7 +22,7 @@ menu-application-hide-other =
 menu-application-show-all =
     .label = Mostrar todo
 menu-application-touch-bar =
-    .label = Personalizar la Barra de herramientas…
+    .label = Personalizar la barra táctil...
 
 ##
 
@@ -113,9 +113,6 @@ menu-file-go-offline =
 menu-edit =
     .label = Editar
     .accesskey = E
-menu-edit-find-on =
-    .label = Buscar en esta página…
-    .accesskey = B
 menu-edit-find-in-page =
     .label = Buscar en la página…
     .accesskey = B
@@ -134,9 +131,6 @@ menu-view =
 menu-view-toolbars-menu =
     .label = Barras de herramientas
     .accesskey = t
-menu-view-customize-toolbar =
-    .label = Personalizar…
-    .accesskey = P
 menu-view-customize-toolbar2 =
     .label = Personalizar barra de herramientas…
     .accesskey = z
@@ -173,9 +167,6 @@ menu-view-page-style-no-style =
 menu-view-page-basic-style =
     .label = Estilo básico de página
     .accesskey = b
-menu-view-charset =
-    .label = Codificación de texto
-    .accesskey = C
 menu-view-repair-text-encoding =
     .label = Reparar codificación de texto
     .accesskey = c
@@ -229,10 +220,6 @@ menu-history-reopen-all-windows = Reabrir todas las ventanas
 menu-bookmarks-menu =
     .label = Marcadores
     .accesskey = M
-menu-bookmarks-show-all =
-    .label = Mostrar todos los marcadores
-menu-bookmark-this-page =
-    .label = Marcar esta página
 menu-bookmarks-manage =
     .label = Administrar marcadores
 menu-bookmark-current-tab =
@@ -256,15 +243,6 @@ menu-tools =
 menu-tools-downloads =
     .label = Descargas
     .accesskey = D
-menu-tools-addons =
-    .label = Complementos
-    .accesskey = o
-menu-tools-fxa-sign-in =
-    .label = Ingresar a { -brand-product-name }…
-    .accesskey = g
-menu-tools-turn-on-sync =
-    .label = Habilitar { -sync-brand-short-name }...
-    .accesskey = n
 menu-tools-addons-and-themes =
     .label = Complementos y temas
     .accesskey = A
@@ -280,9 +258,6 @@ menu-tools-sync-now =
 menu-tools-fxa-re-auth =
     .label = Reconectar a { -brand-product-name }…
     .accesskey = R
-menu-tools-web-developer =
-    .label = Desarrollador web
-    .accesskey = w
 menu-tools-browser-tools =
     .label = Herramientas del navegador
     .accesskey = H
@@ -295,19 +270,8 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Información de la página
     .accesskey = I
-menu-preferences =
-    .label =
-        { PLATFORM() ->
-            [windows] Opciones
-           *[other] Preferencias
-        }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] O
-           *[other] n
-        }
 menu-settings =
-    .label = Configuración
+    .label = Ajustes
     .accesskey =
         { PLATFORM() ->
             [windows] S
@@ -338,21 +302,6 @@ menu-window-bring-all-to-front =
 menu-help =
     .label = Ayuda
     .accesskey = y
-menu-help-product =
-    .label = Ayuda de { -brand-shorter-name }
-    .accesskey = y
-menu-help-show-tour =
-    .label = Tour de { -brand-shorter-name }
-    .accesskey = o
-menu-help-import-from-another-browser =
-    .label = Importar desde otro navegador…
-    .accesskey = I
-menu-help-keyboard-shortcuts =
-    .label = Atajos de teclado
-    .accesskey = t
-menu-help-troubleshooting-info =
-    .label = Información para resolver problemas
-    .accesskey = p
 menu-get-help =
     .label = Obtener ayuda
     .accesskey = y
@@ -364,12 +313,6 @@ menu-help-report-site-issue =
 menu-help-feedback-page =
     .label = Enviar opinión…
     .accesskey = o
-menu-help-safe-mode-without-addons =
-    .label = Reiniciar con los complementos deshabilitados…
-    .accesskey = R
-menu-help-safe-mode-with-addons =
-    .label = Reiniciar con los complementos habilitados
-    .accesskey = R
 menu-help-enter-troubleshoot-mode2 =
     .label = Modo de resolución de problemas…
     .accesskey = M

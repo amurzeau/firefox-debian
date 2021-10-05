@@ -137,12 +137,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = လိပ်စာဘားတန်းသို့ ထည့်ပါ
 page-action-manage-extension =
     .label = ပေါင်းထည့်ကိရိယာကို စီမံရန်…
-page-action-remove-from-urlbar =
-    .label = လိပ်စာဘားတန်းမှ ဖယ်ရှားပါ
 page-action-remove-extension =
     .label = တိုးချဲ့မှု ပယ်ဖျက်ပါ
 
@@ -160,10 +156,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = ယခုအကြိမ် ရှာဖွေလိုက်သည်မှာ
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = ရှာဖွေရေး အပြင်အဆင်များကို ပြောင်းလဲရန်
 search-one-offs-change-settings-compact-button =
     .tooltiptext = ရှာဖွေမှု အပြင်အဆင်များကို ပြောင်းလဲရန်
 search-one-offs-context-open-new-tab =
@@ -204,8 +196,6 @@ bookmark-panel-cancel =
 bookmark-panel-remove =
     .label = စာမှတ် { $count } ခုကို ဖျက်ရန်
     .accesskey = R
-bookmark-panel-done-button =
-    .label = ပြီးပြီ
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -224,12 +214,9 @@ identity-passive-loaded = ဒီစာမျက်နှာ၏ အစိတ်�
 identity-active-loaded = ဒီစာမျက်နှာတွင် သင်သည် ကာကွယ်မှုကို ပိတ်ထားသည်။
 identity-weak-encryption = ဒီစာမျက်နှာသည် အားနည်းသည့် ဝှက်စာစနစ်ကို သုံးထားသည်။
 identity-insecure-login-forms = ဒီစာမျက်နှာကို ဝင်ရောက်ရာတွင် အသုံးပြုသည့် အချက်အလက်များသည် တိုက်ခိုက်ခိုးယူခံရနိုင်သည်။
-identity-permissions =
-    .value = ခွင့်ပြုချက်များ
 identity-https-only-dropdown-on =
     .label = ဖွင့်
 identity-permissions-reload-hint = ပြောင်းလဲထားသည့် အပြင်အဆင်များ သက်ရောက်မှုရှိစေရန်အတွက် ယခုစာမျက်နှာကို ပြန်လည်ခေါ်ယူရန် လိုအပ်ကောင်း လိုအပ်နိုင်ပါသည်။
-identity-permissions-empty = ယခုဆိုက်တွင် သင့်အတွက် မည်သည့် အထူးခွင့်ပြုချက်များ သက်မှတ်ပေးထားခြင်းမရှိပါ။
 identity-clear-site-data =
     .label = ကွတ်ကီးများနှင့် ဝဘ်ဆိုက် အချက်အလက်အားလုံးကို ရှင်းလင်းပါ…
 identity-ev-owner-label = ထုတ်ပေးသောလက်မှတ် -
@@ -281,12 +268,6 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = ကင်မရာကို မျှဝေအသုံးပြုမည်
-    .accesskey = C
-popup-select-microphone =
-    .value = မိုက္ကရိုဖုန်းကို မျှဝေအသုံးပြုမည်
-    .accesskey = M
 popup-all-windows-shared = သင့်စကရင်ပေါ်ရှိ မြင်ရသော ဝင်းဒိုးအားလုံး မျှဝေပေးမည်။
 
 ## WebRTC window or screen share tab switch warning
@@ -299,14 +280,10 @@ sharing-warning-proceed-to-tab =
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = ရှာဖွေပါ (သို့) လိပ်စာရိုက်ပါ
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = ရှာဖွေပါ (သို့) လိပ်စာရိုက်ပါ
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = ဘရောင်ဇာသည် အဝေးရောက်ထိန်းချုပ်မှုအောက်တွင် ရှိနေသည်
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -320,8 +297,6 @@ urlbar-go-button =
     .tooltiptext = လမ်းကြောင်းအတန်းထဲရှိ လိပ်စာသို့ သွားပါ
 urlbar-page-action-button =
     .tooltiptext = စာမျက်နှာရှိ ဆောင်ရွက်နိုင်သည်များ
-urlbar-pocket-button =
-    .tooltiptext = { -pocket-brand-name } တွင်သိမ်းပါ
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -429,6 +404,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = တန်ဆာပလာအတန်းကို မွမ်းမံရန်…
     .accesskey = C
+toolbar-button-email-link =
+    .label = လင့်ခ်ကို အီးမေးလ်ပို့ရန်
+    .tooltiptext = ဤစာမျက်နှာ၏ လင့်ခ်ကို အီးမေးလ်ပို့ရန်
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = စာမျက်နှာကို သိမ်းရန်
+    .tooltiptext = စာမျက်နှာကို သိမ်းရန် ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = ဖိုင်ဖွင့်ရန်
+    .tooltiptext = ဖိုင်တစ်ဖိုင်ကို ဖွင့်ရန် ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = ချိတ်ထားသည့် တပ်ဗ်များ
+    .tooltiptext = အခြားကိရိယာများမှ တပ်ဗ်များကို ပြပါ
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = သီးသန့်ဝင်းဒိုးအသစ်
+    .tooltiptext = သီးသန့်ဝင်းဒိုးအသစ်တစ်ခုကို ဖွင့်ပါ ({ $shortcut })
 
 ## EME notification panel
 
@@ -463,3 +459,38 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = ဤစာတန်းအား pop-ups ဝင်းဒိုးများပိတ်ထားပါက ထပ်မပြပါနှင့်။
     .accesskey = D
+
+# Navigator Toolbox
+
+navbar-downloads =
+    .label = ဆွဲချချက်များ
+navbar-overflow =
+    .tooltiptext = အခြားတန်ဆာပလာများ…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = ပုံနှိပ်ရန်
+    .tooltiptext = ဤစာမျက်နှာအား ပရင့်ထုတ်ပါ ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = ပုံနှိပ်ရန်
+    .tooltiptext = ဒီစာမျက်နှာကို ပုံနှိပ်ရန်
+navbar-home =
+    .label = အဖွင့်စာမျက်နှာ
+    .tooltiptext = { -brand-short-name } အဖွင့်စာမျက်နှာ
+navbar-library =
+    .label = စာကြည့်တိုက်
+    .tooltiptext = မှတ်တမ်း၊ သိမ်းထားသည့် စာမှတ်များနှင့် အခြားစသည်တို့ကို ကြည့်ရှုရန်
+navbar-search =
+    .title = ရှာဖွေပါ
+navbar-accessibility-indicator =
+    .tooltiptext = သုံးစွဲနိုင်စွမ်းလုပ်ဆောင်ချက်များကို ဖွင့်ထားသည်
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = ဘရောက်ဆာတပ်ဗ်များ
+tabs-toolbar-new-tab =
+    .label = တပ်ဗ်အသစ်
+tabs-toolbar-list-all-tabs =
+    .label = တပ်ဗ်များအားလုံး၏ စာရင်းကို ပြပါ
+    .tooltiptext = တပ်ဗ်များအားလုံး၏ စာရင်းကို ပြပါ

@@ -120,12 +120,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = ವಿಳಾಸದ ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ
 page-action-manage-extension =
     .label = ವಿಸ್ತರಣೆಯನ್ನು ನಿರ್ವಹಿಸಿ…
-page-action-remove-from-urlbar =
-    .label = ವಿಳಾಸದ ಪಟ್ಟಿಯಿಂದ ತೆಗೆಯಿರಿ
 
 ## Auto-hide Context Menu
 
@@ -138,10 +134,6 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = ಹುಡುಕು ಸಿದ್ಧತೆಗಳನ್ನು ಬದಲಾಯಿಸು
 search-one-offs-change-settings-compact-button =
     .tooltiptext = ‍ಹುಡುಕು ಸಿದ್ಧತೆಗಳನ್ನು ಬದಲಾಯಿಸು
 search-one-offs-context-open-new-tab =
@@ -165,8 +157,6 @@ search-one-offs-add-engine-menu =
 
 ## Bookmark Panel
 
-bookmark-panel-done-button =
-    .label = ಆಯಿತು
 
 ## Identity Panel
 
@@ -178,7 +168,6 @@ identity-active-loaded = ಈ ಪುಟದಲ್ಲಿ ಸುರಕ್ಷತೆ�
 identity-weak-encryption = ಈ ಪುಟವು ದುರ್ಬಲ ಎನ್‌ಕ್ರಿಪ್ಷನ್‌ ಅನ್ನು ಬಳಸುತ್ತದೆ.
 identity-insecure-login-forms = ಈ ಪುಟದಲ್ಲಿ ನಮೂದಿಸಲಾದ ಲಾಗಿನ್‌ ವಿವರಗಳು ದುರ್ಬಳಕೆಯಾಗುವ ಸಾಧ್ಯತೆ ಇದೆ.
 identity-permissions-reload-hint = ನಿಮ್ಮ ಬದಲಾವಣೆಗಳು ಕಾಣಿಸಿಕೊಳ್ಳಲು ನೀವು ಪುಟವನ್ನು ಪುನಃ ಲೋಡಮಾಡಬೇಕಾಗುತ್ತದೆ.
-identity-permissions-empty = ನೀವು ಈ ತಾಣಕ್ಕೆ ಯಾವುದೆ ಅನುಮತಿಗಳನ್ನು ನೀಡಿಲ್ಲ.
 identity-remove-cert-exception =
     .label = ಆಕ್ಷೇಪಣೆಯನ್ನು ತೆಗೆದುಹಾಕು
     .accesskey = R
@@ -223,12 +212,6 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = ಹಂಚಬೇಕಿರುವ ಕ್ಯಾಮೆರಾ:
-    .accesskey = C
-popup-select-microphone =
-    .value = ಹಂಚಲು ಮೈಕ್ರೊಫೋನ್:
-    .accesskey = M
 popup-all-windows-shared = ನಿಮ್ಮ ತೆರೆಯಲ್ಲಿರುವ ಎಲ್ಲಾ ಗೋಚರಿಸುವ ಕಿಟಕಿಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಲಾಗುತ್ತದೆ.
 
 ## WebRTC window or screen share tab switch warning
@@ -239,12 +222,8 @@ popup-all-windows-shared = ನಿಮ್ಮ ತೆರೆಯಲ್ಲಿರುವ 
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = ವಿಳಾಸವನ್ನು ಹುಡುಕು ಅಥವಾ ನಮೂದಿಸು
 urlbar-placeholder =
     .placeholder = ವಿಳಾಸವನ್ನು ಹುಡುಕು ಅಥವಾ ನಮೂದಿಸು
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = ದೂರದಿಂದ ವೀಕ್ಷಕವು ನಿಮ್ಮ ಹಿಡಿತದಲ್ಲಿದೆ
 urlbar-switch-to-tab =
     .value = ಟ್ಯಾಬ್‌ಗೆ ಬದಲಾಯಿಸು:
 # Used to indicate that a selected autocomplete entry is provided by an extension.
@@ -358,6 +337,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = ಉಪಕರಣಪಟ್ಟಿಯನ್ನು ನನ್ನಿಚ್ಛೆಗೆ ತಕ್ಕಂತೆ ಹೊಂದಿಸು…
     .accesskey = C
+toolbar-button-email-link =
+    .label = ಕೊಂಡಿಯನ್ನು ಇಮೈಲ್ ಮಾಡು
+    .tooltiptext = ಈ ಪುಟದ ಕೊಂಡಿಯನ್ನು ವಿ-ಅಂಚೆ ಮಾಡು
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = ಪುಟ ಉಳಿಸು
+    .tooltiptext = ಈ ಪುಟ ಉಳಿಸು ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = ಕಡತವನ್ನು ತೆರೆ
+    .tooltiptext = ಕಡತವನ್ನು ತೆಗೆ ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = ಸಿಂಕ್ ಮಾಡಿದ ಟ್ಯಾಬ್‌ಗಳು
+    .tooltiptext = ‌ಇತರೆ ಸಾಧನಗಳ ಹಾಳೆಗಳನ್ನು ತೋರಿಸು
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = ಹೊಸ ಖಾಸಗಿ ಕಿಟಕಿ
+    .tooltiptext = ಒಂದು ಹೊಸ ಖಾಸಗಿ ಜಾಲಾಟ ಪರದೆಯನ್ನು ತೆರೆಯಿರಿ ({ $shortcut })
 
 ## EME notification panel
 
@@ -392,3 +392,33 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = ಪುಟಿಕೆಗಳು ಪ್ರತಿಬಂಧಿತಗೊಂಡಾಗ ಈ ಸಂದೇಶವನ್ನು ತೋರಿಸಬೇಡ
     .accesskey = D
+
+# Navigator Toolbox
+
+navbar-downloads =
+    .label = ಡೌನ್‍ಲೋಡ್‍ಗಳು
+navbar-overflow =
+    .tooltiptext = ಹೆಚ್ಚಿನ ಉಪಕರಣಗಳು…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = ಮುದ್ರಿಸು
+    .tooltiptext = ಈ ಪುಟವನ್ನು ಮುದ್ರಿಸಿ… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = ಮುದ್ರಿಸು
+    .tooltiptext = ಈ ಪುಟವನ್ನು ಮುದ್ರಿಸು
+navbar-library =
+    .label = ಲೈಬ್ರರಿ
+    .tooltiptext = ಇತಿಹಾಸ, ಉಳಿಸಿದ ಬುಕ್‍ಮಾರ್ಕ್‌ಗಳು ಮತ್ತು ಹೆಚ್ಚಿದುದನ್ನು ನೋಡಿ
+navbar-search =
+    .title = ಹುಡುಕು
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = ಜಾಲವೀಕ್ಷಣಾ ಟ್ಯಾಬ್‌ಗಳು
+tabs-toolbar-new-tab =
+    .label = ಹೊಸ ಹಾಳೆ
+tabs-toolbar-list-all-tabs =
+    .label = ಎಲ್ಲಾ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡು
+    .tooltiptext = ಎಲ್ಲಾ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡು

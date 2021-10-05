@@ -153,12 +153,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Ավելացնել Հասցեագոտում
 page-action-manage-extension =
     .label = Կառավարել ընդլայնումը...
-page-action-remove-from-urlbar =
-    .label = ՀԵռացնել Հասցեագոտուց
 page-action-remove-extension =
     .label = Հեռացնել ընդլայնումը
 
@@ -176,10 +172,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Այս անգամ որոնել հետևյալի հետ.
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Փոխել որոնման կարգավորումները
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Փոխել որոնման կարգավորումները
 search-one-offs-context-open-new-tab =
@@ -233,8 +225,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Ցուցադրել խմբագրիչում, երբ պահպանվում է
     .accesskey = S
-bookmark-panel-done-button =
-    .label = Պատրաստ է
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -261,8 +251,6 @@ identity-passive-loaded = Այս էջի մասերը անվտանգ չեն (օր
 identity-active-loaded = Դուք անջատել եք պաշտպանությունը այս էջում:
 identity-weak-encryption = Այս էջը օգտագործում է աղքատ գաղտնագրում:
 identity-insecure-login-forms = Այս էջից մուտքագրումները վտանգված են:
-identity-permissions =
-    .value = Արտոնություններ
 identity-https-only-connection-upgraded = (արդիացվել է HTTPS-ի)
 identity-https-only-label = HTTPS կերպ միայն
 identity-https-only-dropdown-on =
@@ -272,7 +260,6 @@ identity-https-only-dropdown-off =
 identity-https-only-dropdown-off-temporarily =
     .label = Ժամանակավորապես անջատված է
 identity-permissions-reload-hint = Անհրաժեշտ կլինի թարմացնել էջը, որ կիրառվեն փոփոխությունները։
-identity-permissions-empty = Դուք չեք արտոնել այս կայքին որևէ հատուկ թույլտվություն:
 identity-clear-site-data =
     .label = Ջնջել նշոցիկների և կայքի տվյալները…
 identity-connection-not-secure-security-view = Ձեր կապը այս կայքի հետ ապահով չէ։
@@ -334,21 +321,7 @@ browser-import-button2 =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Մուտք տեսախցիկին.
-    .accesskey = C
-popup-select-microphone =
-    .value = Մուտք խոսափողին.
-    .accesskey = Մ
 popup-all-windows-shared = Էկրանի բոլոր տեսանելի պատուհանները կտարածվեն:
-popup-screen-sharing-not-now =
-    .label = Ոչ հիմա
-    .accesskey = w
-popup-screen-sharing-never =
-    .label = Երբեք չթույլատրել
-    .accesskey = N
-popup-silence-notifications-checkbox = Համօգտագործելիս անջատել ծանուցումները { -brand-short-name }-ից
-popup-silence-notifications-checkbox-warning = { -brand-short-name }-ը չի ցուցադրի ծանուցումները համօգտագործելիս:
 popup-screen-sharing-block =
     .label = Արգելափակել
     .accesskey = B
@@ -371,18 +344,14 @@ enable-devtools-popup-description = F12 դյուրանցումը օգտագոր�
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Մուտքագրեք կայքի հասցե կամ որոնում
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Մուտքագրեք կայքի հասցե կամ որոնում
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Դիտարկել հեռակա կառավարմամբ
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
-    .placeholder = Որոնեք { $name }-ով կամ մուտքագրեք հասցե
+    .placeholder = Որոնեք { $name }-ում կամ մուտքագրեք հասցե
 urlbar-permissions-granted =
     .tooltiptext = Դուք տրամադրել եք այս կայքէջին լրացուցիչ թույլտվություններ:
 urlbar-switch-to-tab =
@@ -394,8 +363,6 @@ urlbar-go-button =
     .tooltiptext = Գնալ Հասցեի Տողում նշված հասցեով
 urlbar-page-action-button =
     .tooltiptext = Էջի գործույթները
-urlbar-pocket-button =
-    .tooltiptext = Պահպանել { -pocket-brand-name }-ում
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -534,10 +501,32 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Հարմարեցնել Գործիքագոտին...
     .accesskey = C
+toolbar-button-email-link =
+    .label = Հղումը ուղարկել էլ. փոստով
+    .tooltiptext = Հղումը ուղարկել էլ֊փոստով
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Պահպանել էջը
+    .tooltiptext = Պահպանել էջը ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Բացել ֆայլը
+    .tooltiptext = Բացել ֆայլ ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Համաժամեցված ներդիրներ
+    .tooltiptext = Ցուցադրել այլ սարքերի ներդիրները
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Սկսել Գաղտնի դիտարկում
+    .tooltiptext = Բացել Գաղտնի դիտարկման նոր պատուհան ({ $shortcut })
 
 ## EME notification panel
 
 eme-notifications-drm-content-playing = Այս կայքում որոշ ձայնանյութ կամ տեսանյութ օգտագործում են DRM ծրագիր, որը կարող է սահմանափակել { -brand-short-name }-ի օգտագործումը:
+eme-notifications-drm-content-playing-manage = Կառավարել կարգավորումները
 
 ## Password save/update panel
 
@@ -576,3 +565,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Թաքցնել նկարը նկարի փոխարկիչում
     .accesskey = H
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Ուղղորդում
+navbar-downloads =
+    .label = Ներբեռնումներ
+navbar-overflow =
+    .tooltiptext = Լր. գործիքներ...
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Տպել
+    .tooltiptext = Տպել էջը... ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Տպել
+    .tooltiptext = Տպել տվյալ էջը
+navbar-home =
+    .label = Տուն
+    .tooltiptext = { -brand-short-name }-ի Տնային էջ
+navbar-library =
+    .label = Շտեմարան
+    .tooltiptext = Դիտել պատմությունը, պահպանված էջանիշերը և ավելին
+navbar-search =
+    .title = Որոնում
+navbar-accessibility-indicator =
+    .tooltiptext = ՄԱտչելիության յուրահատկությունները միացված են
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Դիտարկիչի ներդիրներ
+tabs-toolbar-new-tab =
+    .label = Նոր Ներդիր
+tabs-toolbar-list-all-tabs =
+    .label = Ցուցադրել բոլոր էջերը
+    .tooltiptext = Ցուցադրել բոլոր էջերը

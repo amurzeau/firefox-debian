@@ -58,6 +58,12 @@ account-provisioner-button = Отримати нову електронну ад
 account-setup-password-toggle =
     .title = Показати/сховати пароль
 
+account-setup-password-toggle-show =
+    .title = Показати пароль відкритим текстом
+
+account-setup-password-toggle-hide =
+    .title = Сховати пароль
+
 account-setup-remember-password = Запам’ятати пароль
     .accesskey = м
 
@@ -309,6 +315,21 @@ exchange-dialog-question = { -brand-short-name } знайшов налаштув
 exchange-dialog-confirm-button = Ім'я користувача
 
 exchange-dialog-cancel-button = Скасувати
+
+## Dismiss account creation dialog
+
+exit-dialog-title = Обліковий запис електронної пошти не сконфігуровано
+
+exit-dialog-description = Ви впевнені, що хочете скасувати процес налаштування? { -brand-short-name } й надалі можна використовувати без облікового запису електронної пошти, але багато можливостей будуть недоступні.
+
+account-setup-no-account-checkbox = Користуватися { -brand-short-name } без облікового запису електронної пошти
+    .accesskey = К
+
+exit-dialog-cancel-button = Продовжити налаштування
+    .accesskey = П
+
+exit-dialog-confirm-button = Вийти з налаштування
+    .accesskey = В
 
 ## Alert dialogs
 

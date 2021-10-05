@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Xestiona o uso dos engadidos
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Xestiona o uso compartido da cámara e/ou do micrófono co sitio
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Xestionar o uso compartido doutros altofalantes co sitio
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Abre o panel de reprodución automática
 urlbar-persistent-storage-notification-anchor =
@@ -156,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Engadir á barra de enderezos
 page-action-manage-extension =
     .label = Xestionar extensión…
-page-action-remove-from-urlbar =
-    .label = Retirar da barra de enderezos
 page-action-remove-extension =
     .label = Eliminar extensión
 
@@ -179,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Esta vez, buscar en:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Cambiar configuración da busca
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Cambiar configuración da busca
 search-one-offs-context-open-new-tab =
@@ -246,8 +242,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Amosar o editor ao gardar
     .accesskey = s
-bookmark-panel-done-button =
-    .label = Feito
 bookmark-panel-save-button =
     .label = Gardar
 # Width of the bookmark panel.
@@ -277,8 +271,6 @@ identity-passive-loaded = Partes desta páxina non son seguras (como as imaxes).
 identity-active-loaded = Desactivou a protección nesta páxina.
 identity-weak-encryption = Esta páxina usa cifrado débil.
 identity-insecure-login-forms = As identificacións introducidas nesta páxina poderían estar comprometidas.
-identity-permissions =
-    .value = Permisos
 identity-https-only-connection-upgraded = (anovado a HTTPS)
 identity-https-only-label = Modo con só HTTPS
 identity-https-only-dropdown-on =
@@ -294,7 +286,6 @@ identity-permissions-storage-access-header = Rastrexadores entre sitios
 identity-permissions-storage-access-hint = Estas partes poden usar cookies e datos de sitios entre sitios mentres estea neste sitio.
 identity-permissions-storage-access-learn-more = Máis información
 identity-permissions-reload-hint = Pode ser preciso recargar a páxina para que os cambios teñan efecto.
-identity-permissions-empty = Non lle concedeu ningún permiso especial a este sitio.
 identity-clear-site-data =
     .label = Borrar cookies e datos do sitio…
 identity-connection-not-secure-security-view = Non está conectado de forma segura a este sitio.
@@ -379,12 +370,6 @@ bookmarks-toolbar-empty-message = Para un acceso rápido, coloque os seus marcad
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Cámara a compartir:
-    .accesskey = C
-popup-select-microphone =
-    .value = Micrófono a compartir:
-    .accesskey = M
 popup-select-camera-device =
     .value = Cámara:
     .accesskey = C
@@ -395,15 +380,9 @@ popup-select-microphone-device =
     .accesskey = M
 popup-select-microphone-icon =
     .tooltiptext = Micrófono
+popup-select-speaker-icon =
+    .tooltiptext = Altofalantes
 popup-all-windows-shared = Compartiranse todas as xanelas visíbeis na súa pantalla.
-popup-screen-sharing-not-now =
-    .label = Agora non
-    .accesskey = w
-popup-screen-sharing-never =
-    .label = Non permitir nunca
-    .accesskey = N
-popup-silence-notifications-checkbox = Desactivar as notificacións do { -brand-short-name } ao compartir
-popup-silence-notifications-checkbox-warning = { -brand-short-name } non mostrará notificacións mentres o comparta.
 popup-screen-sharing-block =
     .label = Bloquear
     .accesskey = B
@@ -427,14 +406,10 @@ enable-devtools-popup-description = Para usar o atallo F12, primeiro abra DevToo
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Buscar ou escribir o enderezo
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Buscar ou escribir o enderezo
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = O navegador está baixo control remoto
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -483,8 +458,6 @@ urlbar-go-button =
     .tooltiptext = Ir ao enderezo da barra de localización
 urlbar-page-action-button =
     .tooltiptext = Accións da páxina
-urlbar-pocket-button =
-    .tooltiptext = Gardar en { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -543,6 +516,16 @@ urlbar-result-action-search-tabs = Buscar nas lapelas
 
 ## Labels shown above groups of urlbar results
 
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = Sexestións de { $engine }
 
 ## Full Screen and Pointer Lock UI
 
@@ -563,6 +546,10 @@ pointerlock-warning-no-domain = Este documento ten o control do punteiro. Prema 
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Parte desta páxina petou.</strong> Para que { -brand-product-name } saiba desta incidencia se poida arranxar máis axiña, envíe un informe.
+# The string for crashed-subframe-title.title should match crashed-subframe-message,
+# but without any markup.
+crashed-subframe-title =
+    .title = Parte desta páxina quebrou. Para que o { -brand-product-name } saiba desta incidencia e se poida amañar máis axiña, envíe un informe.
 crashed-subframe-learnmore-link =
     .value = Máis información
 crashed-subframe-submit =
@@ -646,6 +633,9 @@ save-to-pocket-button =
 
 ## Repair text encoding toolbar button
 
+repair-text-encoding-button =
+    .label = Reparar codificación do texto
+    .tooltiptext = Adiviñar a codificación correcta do texto a partir do contido da páxina
 
 ## Customize Toolbar Buttons
 
@@ -672,6 +662,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Personalizar a barra de ferramentas…
     .accesskey = b
+toolbar-button-email-link =
+    .label = Enviar ligazón
+    .tooltiptext = Enviar por correo unha ligazón a esta páxina
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Gardar páxina
+    .tooltiptext = Gardar esta páxina ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Abrir ficheiro
+    .tooltiptext = Abrir un ficheiro ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Lapelas sincronizadas
+    .tooltiptext = Amosar as lapelas doutros dispositivos
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Nova xanela privada
+    .tooltiptext = Abrir unha nova xanela de navegación privada ({ $shortcut })
 
 ## EME notification panel
 
@@ -701,6 +712,9 @@ remote-tabs-sync-now = Sincronizar agora
 
 ##
 
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Máis...
 ui-tour-info-panel-close =
     .tooltiptext = Pechar
 
@@ -719,6 +733,49 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Non amosar esta mensaxe se as xanelas emerxentes están bloqueadas
     .accesskey = D
+edit-popup-settings =
+    .label = Xestionar configuración de emerxentes...
+    .accesskey = X
 picture-in-picture-hide-toggle =
     .label = Agochar «Alternar imaxe en imaxe»
     .accesskey = H
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navegación
+navbar-downloads =
+    .label = Descargas
+navbar-overflow =
+    .tooltiptext = Máis ferramentas…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Imprimir
+    .tooltiptext = Imprimir esta páxina… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Imprimir
+    .tooltiptext = Imprimir esta páxina
+navbar-home =
+    .label = Inicio
+    .tooltiptext = Páxina de inicio de { -brand-short-name }
+navbar-library =
+    .label = Biblioteca
+    .tooltiptext = Ver o historial, marcadores gardados, e moito máis
+navbar-search =
+    .title = Buscar
+navbar-accessibility-indicator =
+    .tooltiptext = Características de accesibilidade activadas
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Lapelas do navegador
+tabs-toolbar-new-tab =
+    .label = Nova lapela
+tabs-toolbar-list-all-tabs =
+    .label = Listar todas as lapelas
+    .tooltiptext = Listar todas as lapelas

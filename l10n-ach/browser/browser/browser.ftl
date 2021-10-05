@@ -136,12 +136,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Medi i Lanyut me kanonge
 page-action-manage-extension =
     .label = Lo Lamed…
-page-action-remove-from-urlbar =
-    .label = Kwany ki i lanyut me kanonge
 
 ## Auto-hide Context Menu
 
@@ -157,10 +153,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Iwangi, yeny ki:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Lok ter me yeny
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Lok ter me yeny
 search-one-offs-context-open-new-tab =
@@ -199,8 +191,6 @@ bookmark-panel-remove =
            *[other] Kwany alama buk { $count }
         }
     .accesskey = K
-bookmark-panel-done-button =
-    .label = Otum
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -227,10 +217,7 @@ identity-passive-loaded = But potbuk man pe tye ki ber bedo (calo cal).
 identity-active-loaded = I juko gwokke woko ki i potbuk man.
 identity-weak-encryption = Potbuk man tiyo ki loko ngec i kod ma goro.
 identity-insecure-login-forms = Donyo iyie ma kiketo gi i potbuk man twero bedo ki goro.
-identity-permissions =
-    .value = Twero
 identity-permissions-reload-hint = Twero mite ni myero i nwo cano potbuk wek alokaloka otime.
-identity-permissions-empty = Pe imiyo ki kakube man kit twer madito mo keken.
 identity-clear-site-data =
     .label = Jwa Angija ki Data me kakube…
 identity-connection-not-secure-security-view = Pe itye ki kube maber ki kakube man.
@@ -280,12 +267,6 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Lamak cal me anywaka:
-    .accesskey = L
-popup-select-microphone =
-    .value = Mikropon me anywaka:
-    .accesskey = M
 popup-all-windows-shared = Ki binywako dirica weng ma nen i wang kompiuta ni.
 
 ## WebRTC window or screen share tab switch warning
@@ -299,14 +280,10 @@ sharing-warning-proceed-to-tab =
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Yeny onyo ket kanonge
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Yeny onyo ket kanonge
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Ki tye ka loono layeny ki kama bor
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -322,8 +299,6 @@ urlbar-go-button =
     .tooltiptext = Cit i kanonge ma i lanyut me gintic kabedo
 urlbar-page-action-button =
     .tooltiptext = Jami atima me potbuk
-urlbar-pocket-button =
-    .tooltiptext = Gwok i { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -461,6 +436,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Yub gitic…
     .accesskey = Y
+toolbar-button-email-link =
+    .label = Kakube me email
+    .tooltiptext = Cwal email me kakube bot pot buk man
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Gwok pot buk
+    .tooltiptext = Gwok pot buk man ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Yab Pwail
+    .tooltiptext = Yab pwail ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Dirica matino ma kiribo
+    .tooltiptext = Nyut dirica matino ma i nyonyo mukene
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Dirica manyen me mung
+    .tooltiptext = Yab dirica manyen me mung me layeny ({ $shortcut })
 
 ## EME notification panel
 
@@ -495,3 +491,38 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Pe inyut kwena man kace kigengo pye-malo woko
     .accesskey = D
+
+# Navigator Toolbox
+
+navbar-downloads =
+    .label = Gam
+navbar-overflow =
+    .tooltiptext = Jami tic mukene…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Go
+    .tooltiptext = Go pot buk man… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Go
+    .tooltiptext = Go pot buk man
+navbar-home =
+    .label = Gang
+    .tooltiptext = { -brand-short-name } Acakki
+navbar-library =
+    .label = Ot gwoko buk
+    .tooltiptext = Nen mukato, alamabuk ma kigwoko, ki mapol
+navbar-search =
+    .title = Yeny
+navbar-accessibility-indicator =
+    .tooltiptext = Kicako jami me nong
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Dirica matino me layeny
+tabs-toolbar-new-tab =
+    .label = Drica matidi manyen
+tabs-toolbar-list-all-tabs =
+    .label = Rwe dirica matino weng
+    .tooltiptext = Rwe dirica matino weng

@@ -5,9 +5,6 @@
 places-open =
     .label = Agor
     .accesskey = A
-places-open-tab =
-    .label = Agor mewn Tab Newydd
-    .accesskey = w
 places-open-in-tab =
     .label = Agor mewn Tab Newydd
     .accesskey = A
@@ -17,26 +14,6 @@ places-open-all-bookmarks =
 places-open-all-in-tabs =
     .label = Agor pob Tab
     .accesskey = T
-places-open-window =
-    .label = Agor mewn Ffenestr Newydd
-    .accesskey = N
-places-open-private-window =
-    .label = Agor mewn Ffenestr Breifat Newydd
-    .accesskey = F
-
-places-new-bookmark =
-    .label = Nod Tudalen Newydd…
-    .accesskey = N
-places-new-folder-contextmenu =
-    .label = Ffolder Newydd…
-    .accesskey = F
-places-new-folder =
-    .label = Ffolder Newydd…
-    .accesskey = F
-places-new-separator =
-    .label = Ymwahanydd Newydd
-    .accesskey = Y
-
 places-open-in-window =
     .label = Agor mewn Ffenestr Newydd
     .accesskey = N
@@ -87,10 +64,6 @@ places-delete-domain-data =
 places-sortby-name =
     .label = Trefnu yn Ôl Enw
     .accesskey = r
-places-properties =
-    .label = Priodweddau
-    .accesskey = P
-
 # places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
 places-edit-bookmark =
     .label = Golygu Nod Tudalen…
@@ -113,6 +86,22 @@ places-remove-folder =
            *[other] Tynnu Ffolderi
         }
     .accesskey = F
+
+places-edit-folder2 =
+    .label = Golygu Ffolder …
+    .accesskey = G
+places-delete-folder =
+    .label =
+        { $count ->
+            [1] Dileu Ffolder
+            [zero] Dileu Ffolderi
+            [one] Dileu Ffolder
+            [two] Dileu Ffolder
+            [few] Dileu Ffolder
+            [many] Dileu Ffolder
+           *[other] Dileu Ffolder
+        }
+    .accesskey = D
 
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
@@ -140,6 +129,29 @@ places-remove-bookmark =
         }
     .accesskey = T
 
+# Variables:
+# $count (number) - The number of elements being selected for removal.
+places-delete-bookmark =
+    .label =
+        { $count ->
+            [1] Dileu Nod Tudalen
+            [zero] Dileu Nodau Tudalen
+            [one] Dileu Nod Tudalen
+            [two] Dileu Nod Tudalen
+            [few] Dileu Nod Tudalen
+            [many] Dileu Nod Tudalen
+           *[other] Dileu Nod Tudalen
+        }
+    .accesskey = D
+
 places-manage-bookmarks =
     .label = Rheoli Nodau Tudalen
     .accesskey = R
+
+places-forget-about-this-site-confirmation-title = Anghofio'r wefan hon
+
+# Variables:
+# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
+places-forget-about-this-site-confirmation-message = Bydd y weithred hon yn dileu'r holl ddata sy'n gysylltiedig â { $hostOrBaseDomain } gan gynnwys hanes, cyfrineiriau, cwcis, storfa a dewisiadau cynnwys. Ydych chi'n siŵr eich bod chi am barhau?
+
+places-forget-about-this-site-forget = Anghofio

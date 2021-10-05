@@ -8,9 +8,6 @@
 newtab-page-title = Novo separador
 newtab-settings-button =
     .title = Personalizar a sua página de novo separador
-newtab-personalize-button-label = Personalizar
-    .title = Personalizar novo separador
-    .aria-label = Personalizar novo separador
 newtab-personalize-icon-label =
     .title = Personalizar novo separador
     .aria-label = Personalizar novo separador
@@ -23,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Pesquisar
     .aria-label = Pesquisar
-newtab-search-box-search-the-web-text = Pesquisar na Web
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = Pesquisar com { $engine } ou introduzir endereço
@@ -173,6 +169,11 @@ newtab-label-sponsored = { $sponsorOrSource } · Patrocinado
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = Patrocinado por { $sponsor }
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } min
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -252,10 +253,4 @@ newtab-custom-pocket-sponsored = Histórias patrocinadas
 newtab-custom-recent-title = Atividade recente
 newtab-custom-recent-subtitle = Uma seleção de sites e conteúdos recentes
 newtab-custom-close-button = Fechar
-# For the "Snippets" feature traditionally on about:home.
-# Alternative translation options: "Small Note" or something that
-# expresses the idea of "a small message, shortened from something else,
-# and non-essential but also not entirely trivial and useless.
-newtab-custom-snippets-title = Excertos
-newtab-custom-snippets-subtitle = Dicas e notícias da { -vendor-short-name } e { -brand-product-name }
 newtab-custom-settings = Gerir mais configurações

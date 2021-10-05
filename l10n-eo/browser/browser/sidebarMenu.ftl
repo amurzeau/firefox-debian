@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Fermi flankan strion
+
+sidebar-close-button =
+    .tooltiptext = Fermi flankan strion

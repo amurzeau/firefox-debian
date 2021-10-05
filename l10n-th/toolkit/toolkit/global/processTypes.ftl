@@ -30,12 +30,15 @@ process-type-prealloc = จัดสรรไว้ล่วงหน้า
 ## Localization for Gecko process types defined in GeckoProcessTypes.h
 ##
 
+process-type-default = หลัก
 process-type-tab = แท็บ
 # process used to communicate with the GPU for
 # graphics acceleration
 process-type-gpu = GPU
 # process used to perform network operations
 process-type-socket = ซ็อกเก็ต
+# process used to decode media
+process-type-rdd = RDD
 
 ##
 ## Other

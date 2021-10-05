@@ -12,11 +12,6 @@ crashes-id = מזהה דיווח
 crashes-send-date = נשלח
 crashes-all-reports = כל דיווחי הקריסה
 crashes-no-config = יישום זה לא הוגדר להציג דיווחי קריסה.
-extensions-title = הרחבות
-extensions-name = שם
-extensions-enabled = מאופשר
-extensions-version = גרסה
-extensions-id = מזהה
 support-addons-title = תוספות
 support-addons-name = שם
 support-addons-type = סוג
@@ -124,8 +119,6 @@ sandbox-sys-call-tid = TID
 sandbox-sys-call-proc-type = סוג תהליך
 sandbox-sys-call-number = קריאת מערכת
 sandbox-sys-call-args = ארגומנטים
-safe-mode-title = לנסות במצב בטוח
-restart-in-safe-mode-label = הפעלה מחדש עם תוספות מנוטרלות…
 troubleshoot-mode-title = אבחון בעיות
 restart-in-troubleshoot-mode-label = מצב לפתרון בעיות…
 clear-startup-cache-title = לנסות לנקות את מטמון ההפעלה
@@ -255,18 +248,12 @@ webgl1-extensions = הרחבות עבור WebGL 1
 webgl2-version = גרסת מנהל התקן עבור WebGL 2
 webgl2-driver-extensions = הרחבות מנהל התקן עבור WebGL 2
 webgl2-extensions = הרחבות עבור WebGL 2
-blocklisted-bug = הוכנס לרשימה שחורה עקב בעיות ידועות
-# Variables
-# $bugNumber (string) - String of bug number from Bugzilla
-bug-link = באג { $bugNumber }
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
 support-blocklisted-bug = נחסם עקב בעיות ידועות: <a data-l10n-name="bug-link">תקלה { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = הוכנס לרשימה השחורה, קוד כישלון { $failureCode }
-d3d11video-crash-guard = מפענח הווידאו D3D11
-d3d9video-crash-guard = מפענח הווידאו D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = מפענח הווידאו WMF VPX
 reset-on-next-restart = איפוס בהפעלה מחדש הבאה
@@ -299,14 +286,6 @@ launcher-process-status-unknown = מצב לא ידוע
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
 multi-process-windows = { $remoteWindows }/{ $totalWindows }
-multi-process-status-0 = מופעל על־ידי המשתמש
-multi-process-status-1 = מופעל כברירת מחדל
-multi-process-status-2 = מנוטרל
-multi-process-status-4 = נוטרל עקב כלי נגישות
-multi-process-status-6 = נוטרל עקב קלט טקסט לא נתמך
-multi-process-status-7 = נוטרל על־ידי תוספות
-multi-process-status-8 = מושבת בכוח
-multi-process-status-unknown = מצב לא ידוע
 # Variables
 # $fissionWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
@@ -343,7 +322,7 @@ policies-error = שגיאה
 
 support-printing-title = הדפסה
 support-printing-troubleshoot = פתרון בעיות
-support-printing-clear-settings-button = ניקוי הגדרות ההדפסה השמורות
+support-printing-clear-settings-button = ניקוי הגדרות הדפסה שמורות
 support-printing-modified-settings = הגדרות הדפסה ששונו
 support-printing-prefs-name = שם
 support-printing-prefs-value = ערך

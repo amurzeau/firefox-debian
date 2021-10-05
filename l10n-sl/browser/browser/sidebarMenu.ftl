@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Zapri stransko vrstico
+
+sidebar-close-button =
+    .tooltiptext = Zapri stransko vrstico

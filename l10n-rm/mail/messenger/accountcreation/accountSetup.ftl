@@ -41,6 +41,10 @@ account-provisioner-button = Ir per ina nova adressa dad e-mail
     .accesskey = I
 account-setup-password-toggle =
     .title = Mussar/zuppentar il pled-clav
+account-setup-password-toggle-show =
+    .title = Mussar il pled-clav
+account-setup-password-toggle-hide =
+    .title = Zuppentar il pled-clav
 account-setup-remember-password = Memorisar il pled-clav
     .accesskey = m
 account-setup-exchange-label = Tias datas d'annunzia
@@ -208,6 +212,17 @@ insecure-dialog-confirm-button = Confermar
 exchange-dialog-question = { -brand-short-name } ha chattà las infurmaziuns per configurar tes conto sin { $domain }. Vuls ti cuntinuar e trametter tias infurmaziuns d'annunzia?
 exchange-dialog-confirm-button = S'annunziar
 exchange-dialog-cancel-button = Interrumper
+
+## Dismiss account creation dialog
+
+exit-dialog-title = Na configurà nagin conto dad e-mail
+exit-dialog-description = Vuls ti propi interrumper il process da configuraziun? Ins po era utilisar { -brand-short-name } senza in conto dad e-mail, ma bleras funcziuns na stattan betg a disposiziun.
+account-setup-no-account-checkbox = Utilisar { -brand-short-name } senza in conto dad e-mail
+    .accesskey = U
+exit-dialog-cancel-button = Cuntinuar cun la configuraziun
+    .accesskey = C
+exit-dialog-confirm-button = Bandunar la configuraziun
+    .accesskey = B
 
 ## Alert dialogs
 

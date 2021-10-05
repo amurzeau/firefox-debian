@@ -7,16 +7,13 @@ refresh-label = Reinitiar un conversation cryptate
 auth-label = Verificar identitate de tu contactos
 reauth-label = Reverificar le identitate de tu contactos
 auth-cancel = Cancellar
-auth-cancelAccessKey = C
 auth-cancel-access-key = C
 auth-error = Un error occurreva verificante le identitate de tu contactos.
 auth-success = Verifica del identitate de tu contactos completate con successo.
-auth-successThem = Tu contactos ha verificate con successo tu identitate. Tu pote voler verificar lor identitate assi ben per poner tu proprie question.
 auth-success-them = Tu contactos ha verificate con successo tu identitate. Tu pote voler verificar lor identitate assi ben per poner tu proprie question.
 auth-fail = Falta verificante le identitate de tu contacto.
 auth-waiting = Attendente que le contacta completa le verification…
 finger-verify = Verificar
-finger-verify-accessKey = V
 finger-verify-access-key = V
 # Do not translate 'OTR' (name of an encryption protocol)
 buddycontextmenu-label = Adder dactylogramma de OTR
@@ -28,17 +25,13 @@ alert-start = Tentativa de initiar un conversation cryptate con { $name }.
 alert-refresh = Tentativa de reinitiar le conversation cryptate con { $name }.
 # Variables:
 #   $name (String) - the screen name of a chat contact person
-alert-gone_insecure = Conversation cryptate con { $name } finite.
-# Variables:
-#   $name (String) - the screen name of a chat contact person
 alert-gone-insecure = Conversation cryptate con { $name } finite.
 # Variables:
 #   $name (String) - the screen name of a chat contact person
-finger-unseen = Le identitate de { $nomine } non ha essite ancora verificate. Casual spionage non es possibile, ma con alcuno effortio qualcuno poterea esser in ascolta. Impedi le surveliantia verificante le identitate de iste contacto.
+finger-unseen = Le identitate de { $nomine } non ha essite ancora verificate. Non es trivial interceptar le conversation, ma con alcun effortio, qualcuno poterea ascoltar. Impedi le surveliantia verificante le identitate de iste contacto.
 # Variables:
 #   $name (String) - the screen name of a chat contact person
-finger-seen = { $nomine } te continge de un computator incognite. Casual spionage non es possibile, ma con alcuno effortio qualcuno poterea esser in ascolta. Impedi le surveliantia verificante le identitate de iste contacto.
-state-not_private = Le actual conversation non es private.
+finger-seen = { $nomine } te contacta ab un computator incognite. Non es trivial interceptar le conversation, ma con alcun effortio, qualcuno poterea ascoltar. Impedi le surveliantia verificante le identitate de iste contacto.
 state-not-private = Le actual conversation non es private.
 state-generic-not-private = Le actual conversation non es private.
 # Variables:
@@ -52,7 +45,6 @@ state-generic-private = Le actual conversation es cryptate e private.
 # Variables:
 #   $name (String) - the screen name of a chat contact person
 state-finished = { $name } ha terminate su conversation cryptate con te; tu debe facer le mesmo.
-state-not_private-label = Insecur
 state-not-private-label = Insecur
 state-unverified-label = Non verificate
 state-private-label = Private
@@ -69,7 +61,6 @@ afterauth-unverified = Le identitate de { $name } non ha essite verificate.
 verify-title = Verificar identitate de tu contactos
 error-title = Error
 success-title = Cryptation end-to-end
-successThem-title = Verificar identitate de tu contactos
 success-them-title = Verifica tu identitate de contacto
 fail-title = Impossibile verificar
 waiting-title = Requesta de verification inviate

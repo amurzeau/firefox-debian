@@ -156,12 +156,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Ouzhpennañ da varenn ar chomlec’hioù
 page-action-manage-extension =
     .label = Merañ an askouezh...
-page-action-remove-from-urlbar =
-    .label = Lemel kuit diouzh ar varrenn chomlec'h
 page-action-remove-extension =
     .label = Dilemel an askouezh
 
@@ -179,10 +175,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Ar wech-mañ, klaskit gant:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Kemmañ an arventennoù klask
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Kemmañ an arventennoù klask
 search-one-offs-context-open-new-tab =
@@ -249,8 +241,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Diskouez an embanner pa enroll
     .accesskey = S
-bookmark-panel-done-button =
-    .label = Graet
 bookmark-panel-save-button =
     .label = Enrollañ
 # Width of the bookmark panel.
@@ -280,8 +270,6 @@ identity-passive-loaded = Arvarus eo lodennoù eus ar bajennad (skeudennoù, da 
 identity-active-loaded = Diweredekaet ho peus ar gwarez war ar bajenn-mañ.
 identity-weak-encryption = Enrinegañ gwan a vez arveret gant ar bajenn-mañ.
 identity-insecure-login-forms = Treuzvarc'het e c'hall bezañ an titouroù kennaskañ enanket er bajenn-mañ.
-identity-permissions =
-    .value = Aotreoù
 identity-https-only-connection-upgraded = (hizivaet da HTTPS)
 identity-https-only-label = Mod HTTPS hepken
 identity-https-only-dropdown-on =
@@ -297,7 +285,6 @@ identity-permissions-storage-access-header = Toupinoù etrelec'hienn
 identity-permissions-storage-access-hint = An aozadurioù-mañ a c'hall implijout toupinoù etre al lec’hiennoù hag ar roadennoù lec’hienn p’emaoc’h war al lec’hienn-mañ.
 identity-permissions-storage-access-learn-more = Gouzout hiroc’h
 identity-permissions-reload-hint = Ret eo deoc'h adkargañ ar bajenn evit arloañ ar c'hemmoù.
-identity-permissions-empty = N'ho peus roet aotre arbennik ebet d'al lec'hienn-mañ.
 identity-clear-site-data =
     .label = Skarzhañ an toupinoù ha roadennoù lec'hienn…
 identity-connection-not-secure-security-view = N'oc'h ket kennasket d'al lec'hienn-mañ en un doare sur.
@@ -363,12 +350,6 @@ browser-import-button2 =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Webkam da rannañ:
-    .accesskey = W
-popup-select-microphone =
-    .value = Klevell da rannañ:
-    .accesskey = K
 popup-select-camera-device =
     .value = Kamera:
     .accesskey = K
@@ -382,14 +363,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Selaouelloù
 popup-all-windows-shared = Rannet e vo an holl brenestroù gwelus war ho skramm.
-popup-screen-sharing-not-now =
-    .label = Diwezhatoc'h
-    .accesskey = D
-popup-screen-sharing-never =
-    .label = Na aotren biken
-    .accesskey = N
-popup-silence-notifications-checkbox = Diweredekaat ar rebuziñ eus { -brand-short-name } e-pad ar rannadenn
-popup-silence-notifications-checkbox-warning = { -brand-short-name } na ziskouezo ket a rebuzadurioù p’emaoc’h o rannañ.
 popup-screen-sharing-block =
     .label = Stankañ
     .accesskey = S
@@ -413,14 +386,10 @@ enable-devtools-popup-description = Evit ober gant ar verradenn F12, digorit Dev
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Bizskrivit un termen da glask pe ur chomlec'h
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Bizskrivit un termen da glask pe ur chomlec'h
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Reoliet a-bell eo ar merdeer
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -469,8 +438,6 @@ urlbar-go-button =
     .tooltiptext = Mont d'ar chomlec'h er varrenn lec'hiañ
 urlbar-page-action-button =
     .tooltiptext = Gweredoù ar bajenn
-urlbar-pocket-button =
-    .tooltiptext = Enrollañ etrezek { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -661,6 +628,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Personelaat ar varrenn ostilhoù…
     .accesskey = P
+toolbar-button-email-link =
+    .label = Kas an ere dre bostel
+    .tooltiptext = Kas ere ar bajenn-mañ dre bostel
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Enrollañ ar bajenn
+    .tooltiptext = Enrollañ ar bajenn-mañ ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Digeriñ ur restr
+    .tooltiptext = Digeriñ ur restr ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Ivinelloù goubredet
+    .tooltiptext = Diskouez ivinelloù an trevnadoù all
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Prenestr merdeiñ prevez nevez
+    .tooltiptext = Digeriñ ur prenestr merdeiñ prevez nevez ({ $shortcut })
 
 ## EME notification panel
 
@@ -711,3 +699,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Kuzhat an afell skeudenn-ouzh-skeudenn
     .accesskey = K
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Merdeiñ
+navbar-downloads =
+    .label = Pellgargadurioù
+navbar-overflow =
+    .tooltiptext = Muioc'h a ostilhoù…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Moullañ
+    .tooltiptext = Moullañ ar bajenn-mañ… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Moullañ
+    .tooltiptext = Moullañ ar bajennad-mañ
+navbar-home =
+    .label = D'ar gêr
+    .tooltiptext = Pennbajenn { -brand-short-name }
+navbar-library =
+    .label = Levraoueg
+    .tooltiptext = Gwelout ar roll istor, ar sinedoù enrollet ha muioc'h c'hoazh
+navbar-search =
+    .title = Klask
+navbar-accessibility-indicator =
+    .tooltiptext = Gweredekaet ar c'heweriusterioù haezadusted
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Ivinelloù merdeer
+tabs-toolbar-new-tab =
+    .label = Ivinell nevez
+tabs-toolbar-list-all-tabs =
+    .label = Roll an holl ivinelloù
+    .tooltiptext = Roll an holl ivinelloù

@@ -8,9 +8,6 @@
 newtab-page-title = לשונית חדשה
 newtab-settings-button =
     .title = התאמה אישית של דף הלשונית החדשה שלך
-newtab-personalize-button-label = התאמה אישית
-    .title = התאמה אישית של דף הלשונית החדשה
-    .aria-label = התאמה אישית של דף הלשונית החדשה
 newtab-personalize-icon-label =
     .title = התאמה אישית של דף הלשונית החדשה
     .aria-label = התאמה אישית של דף הלשונית החדשה
@@ -23,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = חיפוש
     .aria-label = חיפוש
-newtab-search-box-search-the-web-text = חיפוש ברשת
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = ‏ניתן לחפש עם { $engine } או להקליד כתובת
@@ -167,6 +163,15 @@ newtab-label-sponsored = { $sponsorOrSource } · ממומן
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = בחסות { $sponsor }
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time =
+    { $timeToRead ->
+        [1] ‏{ $source }  · דקה אחת
+       *[other] ‏{ $source } · { $timeToRead } דקות
+    }
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -242,10 +247,4 @@ newtab-custom-pocket-sponsored = סיפורים ממומנים
 newtab-custom-recent-title = פעילות אחרונה
 newtab-custom-recent-subtitle = מבחר של אתרים ותכנים אחרונים
 newtab-custom-close-button = סגירה
-# For the "Snippets" feature traditionally on about:home.
-# Alternative translation options: "Small Note" or something that
-# expresses the idea of "a small message, shortened from something else,
-# and non-essential but also not entirely trivial and useless.
-newtab-custom-snippets-title = פתקיות
-newtab-custom-snippets-subtitle = עצות וחדשות מ־{ -vendor-short-name } ו־{ -brand-product-name }
 newtab-custom-settings = ניהול הגדרות נוספות

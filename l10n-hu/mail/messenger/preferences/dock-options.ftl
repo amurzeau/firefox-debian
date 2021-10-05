@@ -6,6 +6,10 @@ dock-options-window-dialog =
     .title = Appikon beállításai
     .style = width: 35em;
 
+dock-options-show-badge =
+    .label = Jelvény ikon megjelenítése
+    .accesskey = J
+
 bounce-system-dock-icon =
     .label = Az appikon animálása új üzenet érkezésekor
     .accesskey = a

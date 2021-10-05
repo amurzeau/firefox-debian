@@ -5,17 +5,22 @@
 
 ## App Menu
 
-appmenuitem-customize-mode =
-    .label = රිසිකරණය...
-
-## Zoom Controls
-
 appmenuitem-new-tab =
     .label = නව ටැබයක් විවෘත කරන්න
 appmenuitem-new-window =
     .label = නව කවුළුවක්
 appmenuitem-new-private-window =
     .label = නව පුද්ගලික කවුළුව
+appmenuitem-history =
+    .label = අතීතය
+appmenuitem-downloads =
+    .label = බාගැනිම්
+appmenuitem-print =
+    .label = මුද්‍රණය...
+appmenuitem-zoom =
+    .value = විශාලනය
+appmenuitem-help =
+    .label = උදව්
 
 ## Zoom and Fullscreen Controls
 
@@ -24,9 +29,16 @@ appmenuitem-fullscreen =
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
-fxa-toolbar-sync-now =
-    .label = දැන් සම්මුහුර්ත කරන්න
-
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = විවෘත ටැබ නොමැත
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = වෙනත් උපාංගයන්ගේ සිට ටැබ් ලැයිස්තුව බැලිමට ටැබ් සම්මුහුර්ථය අරින්න (Turn on).
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = වෙනත් උපාංගයක සිට ඔබේ මෙම ටැබ් බැලීමට අවශ්‍යද?
+appmenu-remote-tabs-connectdevice =
+    .label = තවත් උපාංගයක් සබඳ කරන්න
+appmenu-remote-tabs-unverified = ඔබේ ගිනුම තහවුරු කල යුතුයි.
 appmenuitem-save-page =
     .label = පිටුව සුරකින්න...
 

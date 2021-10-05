@@ -156,12 +156,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Dodaj u adresnu traku
 page-action-manage-extension =
     .label = Upravljaj proširenjem …
-page-action-remove-from-urlbar =
-    .label = Ukloni iz adresne trake
 page-action-remove-extension =
     .label = Ukloni porširenje
 
@@ -179,10 +175,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Ovaj put traži pomoću:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Promijeni postavke pretraživača
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Promijeni postavke pretraživača
 search-one-offs-context-open-new-tab =
@@ -247,8 +239,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Prikaži uređivač prilikom spremanja
     .accesskey = s
-bookmark-panel-done-button =
-    .label = Gotovo
 bookmark-panel-save-button =
     .label = Spremi
 # Width of the bookmark panel.
@@ -278,8 +268,6 @@ identity-passive-loaded = Dijelovi ove stranice nisu sigurni (poput slika).
 identity-active-loaded = Zaštita je deaktivirana na ovoj stranici.
 identity-weak-encryption = Ova stranica koristi slabo šifriranje.
 identity-insecure-login-forms = Prijave na ovoj stranici mogu biti kompromitirane.
-identity-permissions =
-    .value = Dozvole
 identity-https-only-connection-upgraded = (nadograđeno na HTTPS)
 identity-https-only-label = Način rada "Samo HTTPS"
 identity-https-only-dropdown-on =
@@ -295,7 +283,6 @@ identity-permissions-storage-access-header = Međustranični kolačići
 identity-permissions-storage-access-hint = Ove stranke mogu koristiti kolačiće i podatke dijeljene među više stranica dok ste na toj stranici.
 identity-permissions-storage-access-learn-more = Saznaj više
 identity-permissions-reload-hint = Stranica se možda mora ponovo učitati, kako bi se primijenile promjene.
-identity-permissions-empty = Ovoj stranici niste dali nikakva posebna dopuštenja.
 identity-clear-site-data =
     .label = Izbriši kolačiće i podatke stranica …
 identity-connection-not-secure-security-view = Nisi sigurno povezan/a na ovu stranicu.
@@ -383,12 +370,6 @@ bookmarks-toolbar-empty-message = Za brzi pristup, postavi svoje zabilješke ovd
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Kamera za dijeljenje:
-    .accesskey = K
-popup-select-microphone =
-    .value = Mikrofon za dijeljenje:
-    .accesskey = M
 popup-select-camera-device =
     .value = Kamera:
     .accesskey = K
@@ -402,14 +383,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Zvučnici
 popup-all-windows-shared = Svi vidljivi prozori na tvom ekranu će se dijeliti.
-popup-screen-sharing-not-now =
-    .label = Ne sada
-    .accesskey = s
-popup-screen-sharing-never =
-    .label = Ne dozvoli nikada
-    .accesskey = N
-popup-silence-notifications-checkbox = Deaktiviraj { -brand-short-name } obavijesti tijekom dijeljenja
-popup-silence-notifications-checkbox-warning = { -brand-short-name } neće prikazivati obavijesti dok dijeliš.
 popup-screen-sharing-block =
     .label = Blokiraj
     .accesskey = B
@@ -433,14 +406,10 @@ enable-devtools-popup-description = Kako biste koristili F12 prečicu, prvo otvo
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Traži ili upiši adresu
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Traži ili upiši adresu
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Preglednik se kontrolira s udaljene lokacije
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -489,8 +458,6 @@ urlbar-go-button =
     .tooltiptext = Idi na adresu iz lokacijske trake
 urlbar-page-action-button =
     .tooltiptext = Radnje na stranici
-urlbar-pocket-button =
-    .tooltiptext = Spremi u { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -691,6 +658,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Prilagodi alatnu traku…
     .accesskey = a
+toolbar-button-email-link =
+    .label = Pošalji poveznicu e-poštom
+    .tooltiptext = Pošalji e-poštom poveznicu na ovu stranicu
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Spremi stranicu
+    .tooltiptext = Spremi ovu stranicu ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Otvori datoteku
+    .tooltiptext = Otvori datoteku ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Sinkronizirane kartice
+    .tooltiptext = Prikaži kartice s ostalih uređaja
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Novi privatni prozor
+    .tooltiptext = Otvori novi prozor za privatno pregledavanje ({ $shortcut })
 
 ## EME notification panel
 
@@ -744,3 +732,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Sakrij prekidač za slika-u-sliku
     .accesskey = S
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navigacija
+navbar-downloads =
+    .label = Preuzimanja
+navbar-overflow =
+    .tooltiptext = Više alata…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Ispiši
+    .tooltiptext = Ispiši ovu stranicu … ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Ispiši
+    .tooltiptext = Ispiši ovu stranicu
+navbar-home =
+    .label = Početna stranica
+    .tooltiptext = { -brand-short-name } početna stranica
+navbar-library =
+    .label = Biblioteka
+    .tooltiptext = Prikaz povijesti, spremljenih zabilješki i više
+navbar-search =
+    .title = Pretraga
+navbar-accessibility-indicator =
+    .tooltiptext = Funkcije pristupačnosti su aktivirane
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Kartice preglednika
+tabs-toolbar-new-tab =
+    .label = Nova kartica
+tabs-toolbar-list-all-tabs =
+    .label = Popis svih tabova
+    .tooltiptext = Popis svih tabova
