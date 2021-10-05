@@ -24,7 +24,7 @@
 <!ENTITY tablePadding.label               "Γέμισμα:">
 <!ENTITY tablePadding.accessKey           "Γ">
 <!ENTITY tablePxBetwCells.label           "εικονοστοιχεία μεταξύ κελιών">
-<!ENTITY tablePxBetwBrdrCellContent.label "εικονοστοιχεία μεταξύ πλαισίου κελιών και περιεχομένου">
+<!ENTITY tablePxBetwBrdrCellContent.label "pixel μεταξύ πλαισίου και περιεχομένου κελιού">
 <!ENTITY tableAlignment.label             "Στοίχιση πίνακα:">
 <!ENTITY tableAlignment.accessKey         "Χ">
 <!ENTITY tableCaption.label               "Λεζάντα:">
@@ -50,7 +50,7 @@
 <!ENTITY cellHorizontal.accessKey         "Ο">
 <!ENTITY cellVertical.label               "Κάθετη:">
 <!ENTITY cellVertical.accessKey           "Θ">
-<!ENTITY cellStyle.label                  "Στυλ κελιού:">
+<!ENTITY cellStyle.label                  "Μορφή κελιού:">
 <!ENTITY cellStyle.accessKey              "Υ">
 <!ENTITY cellNormal.label                 "Κανονικό">
 <!ENTITY cellHeader.label                 "Κεφαλίδα">

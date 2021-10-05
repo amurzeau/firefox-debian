@@ -542,6 +542,19 @@ urlbar-result-action-search-bookmarks = חיפוש בסימניות
 urlbar-result-action-search-history = חיפוש בהיסטוריה
 urlbar-result-action-search-tabs = חיפוש לשוניות
 
+## Labels shown above groups of urlbar results
+
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = הצעות מ־{ $engine }
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -674,6 +687,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = עבודה לא־מקוונת
     .accesskey = ל
+toolbar-overflow-customize-button =
+    .label = התאמה אישית של סרגל הכלים…
+    .accesskey = ס
 
 ## EME notification panel
 
@@ -706,3 +722,24 @@ remote-tabs-sync-now = סנכרון כעת
 # "More" item in macOS share menu
 menu-share-more =
     .label = עוד…
+ui-tour-info-panel-close =
+    .tooltiptext = סגירה
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = אפשר חלונות קופצים עבור { $uriHost }
+    .accesskey = ח
+popups-infobar-block =
+    .label = חסימת חלונות קופצים עבור { $uriHost }
+    .accesskey = ח
+
+##
+
+popups-infobar-dont-show-message =
+    .label = אל תראה הודעה זו בעת חסימת חלונות קופצים
+    .accesskey = א
+picture-in-picture-hide-toggle =
+    .label = הסתרת הכפתור של תמונה בתוך תמונה
+    .accesskey = ה

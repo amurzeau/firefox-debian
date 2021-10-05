@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Плагиндерді қолдануды басқару
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Камераңыз және/немесе микрофонмен бұл сайтпен бөлісуді басқару
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Бұл сайттың басқа динамиктерге қатынауды басқару
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Автоойнату панелін ашу
 urlbar-persistent-storage-notification-anchor =
@@ -540,6 +544,9 @@ urlbar-result-action-search-bookmarks = Бетбелгілерден іздеу
 urlbar-result-action-search-history = Тарихтан іздеу
 urlbar-result-action-search-tabs = Беттерден іздеу
 
+## Labels shown above groups of urlbar results
+
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -559,6 +566,10 @@ pointerlock-warning-no-domain = Бұл құжат курсорыңызды ба�
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Бұл парақтың бір бөлігі құлады.</strong> Бұл мәселе туралы { -brand-product-name } хабардар ету және оны тезірек шешу үшін есептеме жіберіңіз.
+# The string for crashed-subframe-title.title should match crashed-subframe-message,
+# but without any markup.
+crashed-subframe-title =
+    .title = Бұл парақтың бір бөлігі құлады. Бұл мәселе туралы { -brand-product-name } хабардар ету және оны тезірек шешу үшін есептеме жіберіңіз.
 crashed-subframe-learnmore-link =
     .value = Көбірек білу
 crashed-subframe-submit =
@@ -668,6 +679,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = Дербес жұмыс істеу
     .accesskey = Д
+toolbar-overflow-customize-button =
+    .label = Құралдар панелін баптау…
+    .accesskey = б
 
 ## EME notification panel
 
@@ -700,3 +714,24 @@ remote-tabs-sync-now = Қазір синхрондау
 # "More" item in macOS share menu
 menu-share-more =
     .label = Көбірек…
+ui-tour-info-panel-close =
+    .tooltiptext = Жабу
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = { $uriHost } үшін "атып шығатын" терезелерді болдыру
+    .accesskey = т
+popups-infobar-block =
+    .label = { $uriHost } үшін "атып шығатын" терезелерді болдырмау
+    .accesskey = т
+
+##
+
+popups-infobar-dont-show-message =
+    .label = "Атып шығатын" терезелерді болдырмау мүмкіндігі қосулы кезінде осы хабарламаны көрсетпеу
+    .accesskey = п
+picture-in-picture-hide-toggle =
+    .label = Суреттегі сурет қосқышын жасыру
+    .accesskey = ы

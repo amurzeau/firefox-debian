@@ -5978,6 +5978,7 @@ void AsyncPanZoomController::SetTestAsyncScrollOffset(const CSSPoint& aPoint) {
 
 void AsyncPanZoomController::SetTestAsyncZoom(
     const LayerToParentLayerScale& aZoom) {
+  RecursiveMutexAutoLock lock(mRecursiveMutex);
   mTestAsyncZoom = aZoom;
   ScheduleComposite();
 }
@@ -6105,10 +6106,12 @@ bool AsyncPanZoomController::MaybeAdjustDestinationForScrollSnapping(
 
 void AsyncPanZoomController::SetZoomAnimationId(
     const Maybe<uint64_t>& aZoomAnimationId) {
+  RecursiveMutexAutoLock lock(mRecursiveMutex);
   mZoomAnimationId = aZoomAnimationId;
 }
 
 Maybe<uint64_t> AsyncPanZoomController::GetZoomAnimationId() const {
+  RecursiveMutexAutoLock lock(mRecursiveMutex);
   return mZoomAnimationId;
 }
 

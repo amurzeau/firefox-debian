@@ -462,7 +462,15 @@ urlbar-result-action-tabtosearch-web = Caută cu { $engine } direct din bara de 
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
 
+urlbar-result-action-search-bookmarks = Caută în marcaje
 urlbar-result-action-search-tabs = Caută file
+
+## Labels shown above groups of urlbar results
+
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
 
 ## Full Screen and Pointer Lock UI
 
@@ -525,7 +533,7 @@ bookmarks-tools-menu-button-visibility =
            *[other] Adaugă meniul de marcaje în bara de instrumente
         }
 bookmarks-search =
-    .label = Caută marcaje
+    .label = Caută în marcaje
 bookmarks-tools =
     .label = Instrumente pentru marcaje
 bookmarks-bookmark-edit-panel =
@@ -586,6 +594,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = Lucrează offline
     .accesskey = k
+toolbar-overflow-customize-button =
+    .label = Personalizează bara de instrumente…
+    .accesskey = C
 
 ## EME notification panel
 
@@ -605,3 +616,27 @@ eme-notifications-drm-content-playing-dismiss-accesskey = D
 remote-tabs-manage-account =
     .label = Gestionează contul
 remote-tabs-sync-now = Sincronizează acum
+
+##
+
+ui-tour-info-panel-close =
+    .tooltiptext = Închide
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = Permite ferestre pop-up pentru { $uriHost }
+    .accesskey = p
+popups-infobar-block =
+    .label = Blochează ferestrele pop-up pentru { $uriHost }
+    .accesskey = p
+
+##
+
+popups-infobar-dont-show-message =
+    .label = Nu afișa acest mesaj când sunt blocate ferestre pop-up
+    .accesskey = D
+picture-in-picture-hide-toggle =
+    .label = Ascunde comutatorul Picture-in-Picture
+    .accesskey = H

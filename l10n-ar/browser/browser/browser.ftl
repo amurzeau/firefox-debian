@@ -19,7 +19,6 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (التصفح الخاص)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (التصفح الخاص)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (التصفح الخاص)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (التصفح الخاص)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -111,7 +109,6 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = اكتب بحروف أقل، و جِد نتائج أكثر: ابحث مستخدمًا { $engineName } مباشرة من شريط العنوان.
 urlbar-search-tips-redirect-2 = ابدأ البحث من شريط العنوان لترى الاقتراحات من { $engineName } و من تأريخ التصفح.
-
 # Prompts users to use the Urlbar when they are typing in the domain of a
 # search engine, e.g. google.com or amazon.com.
 urlbar-tabtosearch-onboard = اختر هذا الاختصار لتجد ما تريد بسرعة أكبر.
@@ -148,12 +145,10 @@ urlbar-midi-blocked =
     .tooltiptext = لقد حجبنا عن هذا الموقع الوصول إلى MIDI.
 urlbar-install-blocked =
     .tooltiptext = حجبت تثبيت الإضافات في هذا الموقع.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = حرّر هذه العلامة ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -163,15 +158,12 @@ urlbar-star-add-bookmark =
 
 page-action-add-to-urlbar =
     .label = أضف إلى شريط العناوين
-
 page-action-manage-extension =
     .label = أدِر الامتدادات…
 page-action-remove-from-urlbar =
     .label = أزل من شريط العناوين
 page-action-remove-extension =
     .label = أزِل الامتداد
-
-## Page Action menu
 
 ## Auto-hide Context Menu
 
@@ -187,15 +179,12 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = الآن فقط ابحث باستعمال:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = غيّر إعدادات البحث
-
 search-one-offs-change-settings-compact-button =
     .tooltiptext = غيّر إعدادات البحث
-
 search-one-offs-context-open-new-tab =
     .label = ابحث في لسان جديد
     .accesskey = س
@@ -205,14 +194,12 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = اضبطه ليكون محرّك البحث المبدئي في النوافذ الخاصة
     .accesskey = ن
-
 # Search engine one-off buttons with an @alias shortcut/keyword.
 # Variables:
 #  $engineName (String): The name of the engine.
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = ‏{ $engineName } ‏({ $alias })
-
 # When more than 5 engines are offered by a web page, they are grouped in a
 # submenu using this as its label.
 search-one-offs-add-engine-menu =
@@ -255,13 +242,10 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = اعرض المحرر عند الحفظ
     .accesskey = ظ
-
 bookmark-panel-done-button =
     .label = تمّ
-
 bookmark-panel-save-button =
     .label = احفظ
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -279,6 +263,7 @@ identity-header-security-with-host =
     .title = أمن اتصال { $host }
 identity-connection-not-secure = الاتصال غير آمن
 identity-connection-secure = الاتصال آمن
+identity-connection-failure = فشل الاتصال
 identity-connection-internal = هذه صفحة { -brand-short-name } آمنة.
 identity-connection-file = هذه الصفحة مخزنة على حاسوبك.
 identity-extension-page = حمِّلت هذه الصفحة من امتداد.
@@ -290,7 +275,6 @@ identity-weak-encryption = تستخدم هذه الصفحة تعمية ضعيف�
 identity-insecure-login-forms = معلومات الولوج التي تُدخلها في هذه الصفحة قد تكون مخترقة.
 identity-permissions =
     .value = التصاريح
-
 identity-https-only-connection-upgraded = (ترقّى إلى HTTPS)
 identity-https-only-label = وضع HTTPS فقط
 identity-https-only-dropdown-on =
@@ -302,11 +286,9 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = فعّل وضع HTTPS فقط إن أردت من { -brand-short-name } ترقية الاتصال متى أمكن.
 identity-https-only-info-turn-off2 = إن شككت أن في الصفحة عطب، فيمكنك تعطيل وضع HTTPS فقط لإعادة تحميل هذا الموقع باستعمال بروتوكول HTTP غير الآمن.
 identity-https-only-info-no-upgrade = تعذرت ترقية الاتصال من HTTP.
-
 identity-permissions-storage-access-header = الكعكات بين المواقع
 identity-permissions-storage-access-hint = يمكن لهذه الأطراف استعمال الكعكات وبيانات المواقع المشتركة أثناء وجودك في هذا الموقع.
 identity-permissions-storage-access-learn-more = اطّلع على المزيد
-
 identity-permissions-reload-hint = قد تحتاج إعادة تحميل الصفحة لتطبيق التغييرات.
 identity-permissions-empty = لم تمنح هذا الموقع أي صلاحيات خاصة.
 identity-clear-site-data =
@@ -375,7 +357,6 @@ browser-tab-mute =
         [many] اكتم { $count } لسانًا
        *[other] اكتم { $count } لسان
     }
-
 browser-tab-unmute =
     { $count ->
         [1] أطلِق صوت اللسان
@@ -386,7 +367,6 @@ browser-tab-unmute =
         [many] أطلِق صوت { $count } لسانًا
        *[other] أطلِق صوت { $count } لسان
     }
-
 browser-tab-unblock =
     { $count ->
         [1] شغّل اللسان
@@ -403,7 +383,6 @@ browser-tab-unblock =
 browser-import-button2 =
     .label = استورِد العلامات…
     .tooltiptext = استورِد العلامات من متصفّح آخر إلى { -brand-short-name }.
-
 bookmarks-toolbar-empty-message = ضَع علاماتك هنا في شريط العلامات لتصل إليها بسرعة. <a data-l10n-name="manage-bookmarks">أدِر العلامات…</a>
 
 ## WebRTC Pop-up notifications
@@ -414,7 +393,6 @@ popup-select-camera =
 popup-select-microphone =
     .value = الميكروفون الذي سيُشارك:
     .accesskey = ك
-
 popup-select-camera-device =
     .value = الكمرة:
     .accesskey = ك
@@ -426,26 +404,20 @@ popup-select-microphone-device =
 popup-select-microphone-icon =
     .tooltiptext = الميكروفون
 popup-all-windows-shared = ستُشارك كل النوافذ الظاهرة على شاشتك.
-
 popup-screen-sharing-not-now =
     .label = ليس الآن
     .accesskey = ل
-
 popup-screen-sharing-never =
     .label = لا تسمح أبدًا
     .accesskey = س
-
 popup-silence-notifications-checkbox = عطّل التنبيهات { -brand-short-name } أثناء المشاركة
 popup-silence-notifications-checkbox-warning = لن يعرض { -brand-short-name } التنبيهات أثناء المشاركة.
-
 popup-screen-sharing-block =
     .label = احجبه
     .accesskey = ح
-
 popup-screen-sharing-always-block =
     .label = احجبه دائمًا
     .accesskey = د
-
 popup-mute-notifications-checkbox = اكتم تنبيهات المواقع أثناء المشاركة
 
 ## WebRTC window or screen share tab switch warning
@@ -461,19 +433,16 @@ sharing-warning-disable-for-session =
 
 enable-devtools-popup-description = افتح أولا أدوات المطورين من قائمة مطوّري الوِب لاستعمال الاختصار F12.
 
-
 ## URL Bar
 
 urlbar-default-placeholder =
     .defaultPlaceholder = ابحث أو أدخل عنوانا
-
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = ابحث أو أدخل عنوانا
 urlbar-remote-control-notification-anchor =
     .tooltiptext = يخضع المتصفح للتحكم عن بعد
-
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -482,7 +451,6 @@ urlbar-remote-control-notification-anchor =
 urlbar-placeholder-search-mode-web-2 =
     .placeholder = ابحث في الوِب
     .aria-label = ابحث مستعملًا { $name }
-
 # This placeholder is used in search mode with search engines that search a
 # specific site (e.g., Amazon).
 # Variables
@@ -491,36 +459,34 @@ urlbar-placeholder-search-mode-web-2 =
 urlbar-placeholder-search-mode-other-engine =
     .placeholder = أدخِل نص البحث
     .aria-label = ابحث عن { $name }
-
 # This placeholder is used when searching bookmarks.
 urlbar-placeholder-search-mode-other-bookmarks =
     .placeholder = أدخِل نص البحث
     .aria-label = ابحث في العلامات
-
 # This placeholder is used when searching history.
 urlbar-placeholder-search-mode-other-history =
     .placeholder = أدخِل نص البحث
     .aria-label = ابحث في التأريخ
-
 # This placeholder is used when searching open tabs.
 urlbar-placeholder-search-mode-other-tabs =
     .placeholder = أدخِل نص البحث
     .aria-label = ابحث في الألسنة
-
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
     .placeholder = ‫ابحث مستعملًا { $name } أو أدخِل عنوانا
-
+# Variables
+#  $component (String): the name of the component which forces remote control.
+#    Example: "DevTools", "Marionette", "RemoteAgent".
+urlbar-remote-control-notification-anchor2 =
+    .tooltiptext = المتصفح في وضع التحكم عن بعد (السبب: { $component })
 urlbar-permissions-granted =
     .tooltiptext = منحت هذا الموقع صلاحيات أخرى.
 urlbar-switch-to-tab =
     .value = انتقل إلى اللسان:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = الامتداد:
-
 urlbar-go-button =
     .tooltiptext = انتقل للعنوان في شريط الموقع
 urlbar-page-action-button =
@@ -583,6 +549,9 @@ urlbar-result-action-search-bookmarks = ابحث في العلامات
 urlbar-result-action-search-history = ابحث في التأريخ
 urlbar-result-action-search-tabs = ابحث في الألسنة
 
+## Labels shown above groups of urlbar results
+
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -590,12 +559,9 @@ urlbar-result-action-search-tabs = ابحث في الألسنة
 #  $domain (String): the domain that is full screen, e.g. "mozilla.org"
 fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> يملأ الشاشة الآن
 fullscreen-warning-no-domain = يملأ هذا المستند الشاشة الآن
-
-
 fullscreen-exit-button = غادر ملء الشاشة (Esc)
 # "esc" is lowercase on mac keyboards, but uppercase elsewhere.
 fullscreen-exit-mac-button = غادر ملء الشاشة (esc)
-
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
 # Variables
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
@@ -605,7 +571,6 @@ pointerlock-warning-no-domain = يتحكم هذا المستند في مؤشرك
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>انهار جزء من هذه الصفحة.</strong> لإبلاغ { -brand-product-name } بهذه المشكلة وإصلاحها أسرع، رجاء أرسل بلاغا.
-
 crashed-subframe-learnmore-link =
     .value = اطّلع على المزيد
 crashed-subframe-submit =
@@ -657,7 +622,6 @@ bookmarks-tools =
     .label = أدوات العلامات
 bookmarks-bookmark-edit-panel =
     .label = حرّر هذه العلامة
-
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -671,7 +635,6 @@ bookmarks-toolbar-placeholder =
     .title = عناصر شريط العلامات
 bookmarks-toolbar-placeholder-button =
     .label = عناصر شريط العلامات
-
 # "Bookmark" is a verb, as in "Add current tab to bookmarks".
 bookmarks-current-tab =
     .label = علّم اللسان الحالي
@@ -691,6 +654,10 @@ save-to-pocket-button =
 
 ## Repair text encoding toolbar button
 
+repair-text-encoding-button =
+    .label = أصلِح ترميز النص
+    .tooltiptext = خمّن ترميز النص الصحيح من محتوى الصفحة
+
 ## Customize Toolbar Buttons
 
 # Variables:
@@ -698,7 +665,6 @@ save-to-pocket-button =
 toolbar-addons-themes-button =
     .label = الإضافات والسمات
     .tooltiptext = أدِر الإضافات والسمات لديك ({ $shortcut })
-
 # Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
 toolbar-settings-button =
@@ -714,6 +680,9 @@ toolbar-settings-button =
 more-menu-go-offline =
     .label = اعمل دون اتصال
     .accesskey = ع
+toolbar-overflow-customize-button =
+    .label = خصّص شريط الأدوات…
+    .accesskey = ش
 
 ## EME notification panel
 
@@ -740,3 +709,27 @@ addon-removal-abuse-report-checkbox = أبلِغ { -vendor-short-name } عن ه�
 remote-tabs-manage-account =
     .label = أدِر الحساب
 remote-tabs-sync-now = زامِن الآن
+
+##
+
+ui-tour-info-panel-close =
+    .tooltiptext = أغلق
+
+## Variables:
+##  $uriHost (String): URI host for which the popup was allowed or blocked.
+
+popups-infobar-allow =
+    .label = اسمح بالنوافذ المنبثقة من { $uriHost }
+    .accesskey = ن
+popups-infobar-block =
+    .label = احجب النوافذ المنبثقة من { $uriHost }
+    .accesskey = ن
+
+##
+
+popups-infobar-dont-show-message =
+    .label = لا تعرض هذه الرسالة عند حجب النوافذ المنبثقة
+    .accesskey = ت
+picture-in-picture-hide-toggle =
+    .label = أخفِ زر تفعيل/تعطيل الڤديوهات المعترِضة
+    .accesskey = خ

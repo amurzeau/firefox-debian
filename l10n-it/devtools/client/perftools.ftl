@@ -61,12 +61,12 @@ perftools-status-restart-required = È necessario riavviare il browser per attiv
 ## These are shown briefly when the user is waiting for the profiler to respond.
 
 perftools-request-to-stop-profiler = Interruzione registrazione in corso
-perftools-request-to-get-profile-and-stop-profiler = Cattura profilo in corso
+perftools-request-to-get-profile-and-stop-profiler = Acquisizione profilo in corso
 
 ##
 
 perftools-button-start-recording = Avvia registrazione
-perftools-button-capture-recording = Cattura registrazione
+perftools-button-capture-recording = Acquisizione registrazione
 perftools-button-cancel-recording = Annulla registrazione
 perftools-button-save-settings = Salva impostazioni e torna indietro
 perftools-button-restart = Riavvia
@@ -98,8 +98,6 @@ perftools-thread-img-decoder =
   .title = Thread per la decodifica delle immagini
 perftools-thread-dns-resolver =
   .title = La risoluzione DNS viene eseguita in questo thread
-perftools-thread-js-helper =
-  .title = Lavori in background del motore JS come compilazioni fuori dal thread principale (“off-main-thread”)
 
 perftools-thread-task-controller =
   .title = Thread del pool TaskController
