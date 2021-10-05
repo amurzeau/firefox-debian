@@ -1,3 +1,10 @@
+firefox-esr (78.15.0esr-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2021-44, also known as CVE-2021-38496, CVE-2021-38500.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 06 Oct 2021 06:18:02 +0900
+
 firefox-esr (78.14.0esr-1) unstable; urgency=medium
 
   * New upstream release.
