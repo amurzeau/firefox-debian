@@ -1,3 +1,21 @@
+firefox (93.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2021-43, also known as:
+    CVE-2021-38496, CVE-2021-38497, CVE-2021-38498, CVE-2021-32810,
+    CVE-2021-38500, CVE-2021-38501, CVE-2021-38499.
+
+  * debian/control*: Bump nss build dependency.
+  * debian/rules: Set MOZBUILD_STATE_PATH.
+
+  * Cargo.toml, Cargo.lock, third_party/rust/naga/.cargo-checksum.json,
+    third_party/rust/naga/Cargo.toml,
+    third_party/rust/wgpu-core/.cargo-checksum.json,
+    third_party/rust/wgpu-core/Cargo.toml: Work around the lack of resolver
+    feature in unstable's cargo.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 06 Oct 2021 06:53:13 +0900
+
 firefox (92.0-1) unstable; urgency=medium
 
   * New upstream release.
