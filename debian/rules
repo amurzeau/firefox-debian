@@ -83,6 +83,8 @@ SHARE_DIR := /usr/share/$($(PRODUCT))
 # Work around https://github.com/rust-lang/cargo/issues/7147
 export CARGO_HOME=$(CURDIR)/debian/.cargo
 
+export MOZBUILD_STATE_PATH = $(CURDIR)/debian/.mozbuild
+
 ifneq (,$(filter stretch,$(DIST)))
 ifneq (,$(filter amd64 i386,$(DEB_HOST_ARCH)))
 export NASM=/usr/lib/nasm-mozilla/bin/nasm
@@ -281,7 +283,7 @@ override_dh_auto_clean::
 	dh_auto_clean --builddirectory=build-$(PRODUCT)
 	dh_auto_clean --builddirectory=build-l10n
 	find . -name "*.pyc" -o -name "*.pyo" | xargs --no-run-if-empty rm -f
-	rm -rf obj-*/.mozbuild
+	rm -rf obj-*/.mozbuild $(MOZBUILD_STATE_PATH)
 
 override_dh_clean:
 	dh_clean -XCargo.toml.orig
