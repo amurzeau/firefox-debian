@@ -64,6 +64,32 @@ upgrade-dialog-default-secondary-button = Plus tard
 upgrade-dialog-theme-title-2 = Prenez un nouveau départ avec un thème rafraichi
 upgrade-dialog-theme-system = Thème du système
     .title = Suivre le thème du système pour les boutons, menus et fenêtres
+
+## Start screen
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-start-title = La vie en couleur
+upgrade-dialog-start-subtitle = De nouveaux coloris somptueux. Disponibles pendant une durée limitée.
+upgrade-dialog-start-primary-button = Découvrir ces coloris
+upgrade-dialog-start-secondary-button = Plus tard
+
+## Colorway screen
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-colorway-title = Choisissez vos couleurs
+# This is shown to users with a custom home page, so they can switch to default.
+upgrade-dialog-colorway-home-checkbox = Passer à l’accueil de Firefox avec les couleurs de votre thème
+upgrade-dialog-colorway-primary-button = Enregistrer le coloris
+upgrade-dialog-colorway-secondary-button = Conserver le thème précédent
+upgrade-dialog-colorway-theme-tooltip =
+    .title = Découvrir les thèmes par défaut
+# $colorwayName (String) - Name of colorway, e.g., Abstract, Cheers
+upgrade-dialog-colorway-colorway-tooltip =
+    .title = Voir le coloris { $colorwayName }
+upgrade-dialog-colorway-default-theme = Par défaut
+# "Auto" is short for "Automatic"
+upgrade-dialog-colorway-theme-auto = Automatique
+    .title = Suivre le thème du système d’exploitation pour les boutons, menus et fenêtres
 upgrade-dialog-theme-light = Clair
     .title = Utiliser un thème clair pour les boutons, menus et fenêtres
 upgrade-dialog-theme-dark = Sombre
@@ -74,3 +100,18 @@ upgrade-dialog-theme-keep = Conserver le thème actuel
     .title = Utiliser le thème que vous aviez installé avant la mise à jour de { -brand-short-name }
 upgrade-dialog-theme-primary-button = Enregistrer le thème
 upgrade-dialog-theme-secondary-button = Plus tard
+upgrade-dialog-colorway-variation-soft = Doux
+    .title = Utiliser ce coloris
+upgrade-dialog-colorway-variation-balanced = Équilibré
+    .title = Utiliser ce coloris
+# "Bold" is used in the sense of bravery or courage, not in the sense of
+# emphasized text.
+upgrade-dialog-colorway-variation-bold = Soutenu
+    .title = Utiliser ce coloris
+
+## Thank you screen
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-thankyou-title = Merci de nous avoir choisis
+upgrade-dialog-thankyou-subtitle = { -brand-short-name } est un navigateur indépendant soutenu par une organisation à but non lucratif. Ensemble, nous rendons le Web plus sûr, plus sain et plus privé.
+upgrade-dialog-thankyou-primary-button = Commencer la navigation

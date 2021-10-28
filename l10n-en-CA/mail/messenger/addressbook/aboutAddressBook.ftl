@@ -16,6 +16,8 @@ about-addressbook-toolbar-new-contact =
     .label = New Contact
 about-addressbook-toolbar-new-list =
     .label = New List
+about-addressbook-toolbar-import =
+    .label = Import
 
 ## Books
 
@@ -26,10 +28,14 @@ about-addressbook-books-context-synchronize =
     .label = Synchronize
 about-addressbook-books-context-print =
     .label = Print…
+about-addressbook-books-context-export =
+    .label = Export…
 about-addressbook-books-context-delete =
     .label = Delete
 about-addressbook-books-context-remove =
     .label = Remove
+about-addressbook-books-context-startup-default =
+    .label = Default startup directory
 about-addressbook-confirm-delete-book-title = Delete Address Book
 # Variables:
 # $name (String) - Name of the address book to be deleted.
@@ -126,3 +132,5 @@ about-addressbook-details-phone-numbers-header = Phone Numbers
 about-addressbook-details-home-address-header = Home Address
 about-addressbook-details-work-address-header = Work Address
 about-addressbook-details-other-info-header = Other Information
+about-addressbook-prompt-to-save-title = Save Changes?
+about-addressbook-prompt-to-save = Do you want to save your changes?

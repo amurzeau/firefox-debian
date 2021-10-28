@@ -115,6 +115,15 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = 프로파일러
+    .tooltiptext = 성능 프로파일 기록
+profiler-popup-button-recording =
+    .label = 프로파일러
+    .tooltiptext = 프로파일러가 프로파일을 기록합니다
+profiler-popup-button-capturing =
+    .label = 프로파일러
+    .tooltiptext = 프로파일러가 프로파일을 캡처합니다
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -123,10 +132,15 @@ profiler-popup-description-title =
     .value = 기록, 분석, 공유
 profiler-popup-description = 팀과 공유할 프로필을 게시하여 성능 문제에 대해 협업합니다.
 profiler-popup-learn-more = 더 알아보기
+profiler-popup-learn-more-button =
+    .label = 더 알아보기
 profiler-popup-settings =
     .value = 설정
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = 설정 편집…
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = 설정 편집…
 profiler-popup-disabled =
     프로파일러가 현재 비활성화되어 있습니다. 대부분의 경우 
     사생활 보호 창이 열려 있기 때문입니다.
@@ -151,6 +165,32 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+profiler-popup-presets-web-developer-description = 오버헤드가 낮은 대부분의 웹 앱 디버깅에 권장되는 프리셋입니다.
+profiler-popup-presets-web-developer-label =
+    .label = 웹 개발자
+profiler-popup-presets-firefox-platform-description = 내부 Firefox 플랫폼 디버깅에 권장되는 프리셋입니다.
+profiler-popup-presets-firefox-platform-label =
+    .label = Firefox 플랫폼
+profiler-popup-presets-firefox-front-end-description = 내부 Firefox 프런트 엔드 디버깅에 권장되는 프리셋입니다.
+profiler-popup-presets-firefox-front-end-label =
+    .label = Firefox 프런트 엔드
+profiler-popup-presets-firefox-graphics-description = Firefox 그래픽 성능 조사에 권장되는 프리셋입니다.
+profiler-popup-presets-firefox-graphics-label =
+    .label = Firefox 그래픽
+profiler-popup-presets-media-description = 오디오 및 비디오 문제 진단에 권장되는 프리셋입니다.
+profiler-popup-presets-media-label =
+    .label = 미디어
+profiler-popup-presets-custom-label =
+    .label = 사용자 지정
 
 ## History panel
 

@@ -115,6 +115,15 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Profiler
+    .tooltiptext = Запис профілю швидкодії
+profiler-popup-button-recording =
+    .label = Profiler
+    .tooltiptext = Profiler записує профіль
+profiler-popup-button-capturing =
+    .label = Profiler
+    .tooltiptext = Profiler захоплює вкладку
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -123,10 +132,15 @@ profiler-popup-description-title =
     .value = Записуйте, аналізуйте, діліться
 profiler-popup-description = Співпрацюйте над проблемами швидкодії, оприлюднюючи профілі для своєї команди.
 profiler-popup-learn-more = Докладніше
+profiler-popup-learn-more-button =
+    .label = Докладніше
 profiler-popup-settings =
     .value = Налаштування
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Змінити налаштування…
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Змінити налаштування…
 profiler-popup-disabled =
     Profiler зараз вимкнений, швидше за все, через відкрите вікно
     приватного перегляду.
@@ -151,6 +165,32 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+profiler-popup-presets-web-developer-description = Рекомендовані попередні налаштування для зневадження більшості вебзастосунків. З низькими споживанням ресурсів.
+profiler-popup-presets-web-developer-label =
+    .label = Веброзробник
+profiler-popup-presets-firefox-platform-description = Рекомендовані попередні налаштування для внутрішнього зневадження Firefox.
+profiler-popup-presets-firefox-platform-label =
+    .label = Платформа Firefox
+profiler-popup-presets-firefox-front-end-description = Рекомендовані попередні налаштування для внутрішнього зневадження клієнтської частини Firefox.
+profiler-popup-presets-firefox-front-end-label =
+    .label = Клієнтська частина Firefox
+profiler-popup-presets-firefox-graphics-description = Рекомендовані попередні налаштування для дослідження запису графіків швидкодії Firefox.
+profiler-popup-presets-firefox-graphics-label =
+    .label = Графіка Firefox
+profiler-popup-presets-media-description = Рекомендовані попередні налаштування для визначення проблем зі звуком та відео.
+profiler-popup-presets-media-label =
+    .label = Медіа
+profiler-popup-presets-custom-label =
+    .label = Власний
 
 ## History panel
 

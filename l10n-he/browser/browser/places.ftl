@@ -20,7 +20,6 @@ places-open-in-window =
 places-open-in-private-window =
     .label = פתיחה בחלון פרטי חדש
     .accesskey = ט
-
 places-add-bookmark =
     .label = הוספת סימנייה…
     .accesskey = מ
@@ -33,7 +32,6 @@ places-add-folder =
 places-add-separator =
     .label = הוספת קו מפריד
     .accesskey = ד
-
 places-view =
     .label = תצוגה
     .accesskey = ת
@@ -52,12 +50,12 @@ places-by-last-visited =
 places-by-day-and-site =
     .label = לפי תאריך ואתר
     .accesskey = ל
-
 places-history-search =
     .placeholder = חיפוש בהיסטוריה
+places-history =
+    .aria-label = היסטוריה
 places-bookmarks-search =
     .placeholder = חיפוש בסימניות
-
 places-delete-domain-data =
     .label = לשכוח מאתר זה
     .accesskey = ש
@@ -81,7 +79,6 @@ places-remove-folder =
            *[other] הסרת תיקיות
         }
     .accesskey = ס
-
 places-edit-folder2 =
     .label = עריכת תיקייה…
     .accesskey = ת
@@ -93,18 +90,15 @@ places-delete-folder =
            *[other] מחיקת תיקיות
         }
     .accesskey = מ
-
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
     .label = סימניות מנוהלות
 # This label is used when a managed bookmarks folder doesn't have a name.
 managed-bookmarks-subfolder =
     .label = תיקיית משנה
-
 # This label is used for the "Other Bookmarks" folder that appears in the bookmarks toolbar.
 other-bookmarks-folder =
     .label = סימניות אחרות
-
 # Variables:
 # $count (number) - The number of elements being selected for removal.
 places-remove-bookmark =
@@ -114,7 +108,6 @@ places-remove-bookmark =
            *[other] הסרת סימניות
         }
     .accesskey = ס
-
 # Variables:
 # $count (number) - The number of elements being selected for removal.
 places-delete-bookmark =
@@ -125,15 +118,94 @@ places-delete-bookmark =
            *[other] מחיקת סימניות
         }
     .accesskey = מ
-
 places-manage-bookmarks =
     .label = ניהול סימניות
     .accesskey = נ
-
 places-forget-about-this-site-confirmation-title = לשכוח מאתר זה
-
 # Variables:
 # $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
 places-forget-about-this-site-confirmation-message = פעולה זו תסיר את כל הנתונים הקשורים ל־{ $hostOrBaseDomain } כולל היסטוריה, ססמאות, עוגיות, מטמון והעדפות תוכן. האם ברצונך להמשיך?
-
 places-forget-about-this-site-forget = לשכוח
+places-library =
+    .title = ספרייה
+    .style = width:700px; height:500px;
+places-organize-button =
+    .label = ארגון
+    .tooltiptext = ארגון הסימניות שלך
+    .accesskey = א
+places-organize-button-mac =
+    .label = ארגון
+    .tooltiptext = ארגון הסימניות שלך
+places-file-close =
+    .label = סגירה
+    .accesskey = ס
+places-cmd-close =
+    .key = w
+places-view-button =
+    .label = תצוגות
+    .tooltiptext = שינוי התצוגה שלך
+    .accesskey = ת
+places-view-button-mac =
+    .label = תצוגות
+    .tooltiptext = שינוי התצוגה שלך
+places-view-menu-columns =
+    .label = הצגת עמודות
+    .accesskey = ה
+places-view-menu-sort =
+    .label = מיון
+    .accesskey = מ
+places-view-sort-unsorted =
+    .label = לא ממוין
+    .accesskey = ל
+places-view-sort-ascending =
+    .label = מיון בסדר עולה
+    .accesskey = ע
+places-view-sort-descending =
+    .label = מיון בסדר יורד
+    .accesskey = י
+places-maintenance-button =
+    .label = ייבוא וגיבוי
+    .tooltiptext = ייבוא וגיבוי הסימניות שלך
+    .accesskey = י
+places-maintenance-button-mac =
+    .label = ייבוא וגיבוי
+    .tooltiptext = ייבוא וגיבוי הסימניות שלך
+places-cmd-backup =
+    .label = גיבוי…
+    .accesskey = ג
+places-cmd-restore =
+    .label = שחזור
+    .accesskey = ש
+places-cmd-restore-from-file =
+    .label = בחירת קובץ…
+    .accesskey = ב
+places-import-bookmarks-from-html =
+    .label = ייבוא סימניות מקובץ HTML…
+    .accesskey = ב
+places-export-bookmarks-to-html =
+    .label = ייצוא סימניות לקובץ HTML…
+    .accesskey = צ
+places-import-other-browser =
+    .label = ייבוא מידע מדפדפן אחר…
+    .accesskey = ד
+places-view-sort-col-name =
+    .label = שם
+places-view-sort-col-tags =
+    .label = תגיות
+places-view-sort-col-url =
+    .label = כתובת
+places-view-sort-col-most-recent-visit =
+    .label = ביקור אחרון
+places-view-sort-col-visit-count =
+    .label = מספר ביקורים
+places-view-sort-col-date-added =
+    .label = תאריך הוספה
+places-view-sort-col-last-modified =
+    .label = שינוי אחרון
+places-cmd-find-key =
+    .key = f
+places-back-button =
+    .tooltiptext = חזרה אחורה
+places-forward-button =
+    .tooltiptext = המשך קדימה
+places-details-pane-select-an-item-description = נא לבחור פריט כדי לצפות ולערוך את המאפיינים שלו

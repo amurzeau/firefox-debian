@@ -779,3 +779,9 @@ tabs-toolbar-new-tab =
 tabs-toolbar-list-all-tabs =
     .label = Opaite tendayke jehechauka
     .tooltiptext = Opaite tendayke jehechauka
+
+## Infobar shown at startup to suggest session-restore
+
+# <img data-l10n-name="icon"/> will be replaced by the application menu icon
+restore-session-startup-suggestion-message = <strong>¿Embojuruja tendayke mboyveguáva?</strong> Ehechajeykuaa ne rembiapokue tembipuru’i poravorã guive { -brand-short-name } <img data-l10n-name="icon"/>, Rembiasakuépe.
+restore-session-startup-suggestion-button = Ehechauka mba’éichapa

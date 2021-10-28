@@ -26,7 +26,7 @@ category-list =
 pane-general-title = Allmänt
 category-general =
     .tooltiptext = { pane-general-title }
-pane-home-title = Hem
+pane-home-title = Startsida
 category-home =
     .tooltiptext = { pane-home-title }
 pane-search-title = Sök
@@ -48,7 +48,7 @@ pane-experimental-reset =
     .label = Återställ standard
     .accesskey = t
 help-button-label = Support { -brand-short-name }
-addons-button-label = Utökningar & Teman
+addons-button-label = Tillägg & teman
 focus-search =
     .key = f
 close-button =
@@ -477,8 +477,8 @@ choose-bookmark =
 
 ## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header = Innehåll Firefox-startskärm
-home-prefs-content-description = Välj vilket innehåll du vill ha på din startskärm i Firefox.
+home-prefs-content-header = Innehåll Firefox-startsida
+home-prefs-content-description = Välj vilket innehåll du vill ha på din startsida i Firefox.
 home-prefs-search-header =
     .label = Webbsök
 home-prefs-topsites-header =
@@ -504,7 +504,7 @@ home-prefs-recommended-by-description-new = Särskilt innehåll valt av { $provi
 
 home-prefs-recommended-by-learn-more = Hur fungerar det
 home-prefs-recommended-by-option-sponsored-stories =
-    .label = Sponsrade nyheter
+    .label = Sponsrade berättelser
 home-prefs-highlights-header =
     .label = Höjdpunkter
 home-prefs-highlights-description = Ett urval av sidor du har sparat eller besökt

@@ -115,6 +115,15 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Analisador
+    .tooltiptext = Gravar uma análise de desempenho
+profiler-popup-button-recording =
+    .label = Analisador
+    .tooltiptext = O analisador de desempenho está gravando um profile
+profiler-popup-button-capturing =
+    .label = Analisador
+    .tooltiptext = O analisador de desempenho está capturando um profile
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -123,10 +132,15 @@ profiler-popup-description-title =
     .value = Grave, analise, compartilhe
 profiler-popup-description = Colabore em questões de desempenho publicando profiles para compartilhar com sua equipe.
 profiler-popup-learn-more = Saiba mais
+profiler-popup-learn-more-button =
+    .label = Saiba mais
 profiler-popup-settings =
     .value = Configurações
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Editar configurações…
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Editar configurações…
 profiler-popup-disabled = O profiler está desativado no momento, provavelmente devido a estar aberta uma janela de navegação privativa.
 profiler-popup-recording-screen = Gravando…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
@@ -149,6 +163,32 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+profiler-popup-presets-web-developer-description = Ajuste prévio recomendado para depuração da maioria dos aplicativos web, com pouca sobrecarga.
+profiler-popup-presets-web-developer-label =
+    .label = Desenvolvimento web
+profiler-popup-presets-firefox-platform-description = Ajuste prévio recomendado para depuração de aspectos internos da plataforma Firefox.
+profiler-popup-presets-firefox-platform-label =
+    .label = Plataforma Firefox
+profiler-popup-presets-firefox-front-end-description = Ajuste prévio recomendado para depuração de aspectos internos da interface do usuário (front-end) do Firefox.
+profiler-popup-presets-firefox-front-end-label =
+    .label = Interface do usuário do Firefox
+profiler-popup-presets-firefox-graphics-description = Ajuste prévio recomendado para investigação de desempenho gráfico do Firefox.
+profiler-popup-presets-firefox-graphics-label =
+    .label = Gráfico do Firefox
+profiler-popup-presets-media-description = Ajuste prévio recomendado para diagnosticar problemas de áudio e vídeo.
+profiler-popup-presets-media-label =
+    .label = Mídia
+profiler-popup-presets-custom-label =
+    .label = Personalizado
 
 ## History panel
 
@@ -177,8 +217,8 @@ appmenu-get-help =
     .label = Obter ajuda
     .accesskey = a
 appmenu-help-more-troubleshooting-info =
-    .label = Mais informações técnicas
-    .accesskey = i
+    .label = Informações técnicas
+    .accesskey = I
 appmenu-help-report-site-issue =
     .label = Relatar problema no site…
 appmenu-help-feedback-page =

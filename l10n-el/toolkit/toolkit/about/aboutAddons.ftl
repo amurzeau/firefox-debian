@@ -250,6 +250,7 @@ install-theme-button = Εγκατάσταση θέματος
 # the detailed add-on view is opened, from where the add-on can be managed.
 manage-addon-button = Διαχείριση
 find-more-addons = Εύρεση περισσότερων προσθέτων
+find-more-themes = Εύρεση περισσότερων θεμάτων
 # This is a label for the button to open the "more options" menu, it is only
 # used for screen readers.
 addon-options-button =
@@ -279,6 +280,8 @@ extension-enabled-heading = Ενεργές
 extension-disabled-heading = Ανενεργές
 theme-enabled-heading = Ενεργά
 theme-disabled-heading = Ανενεργά
+theme-monochromatic-heading = Χρωματικοί συνδυασμοί
+theme-monochromatic-subheading = Νέοι, δυναμικοί χρωματικοί συνδυασμοί από το { -brand-product-name }. Διαθέσιμοι για περιορισμένο χρονικό διάστημα.
 plugin-enabled-heading = Ενεργά
 plugin-disabled-heading = Ανενεργά
 dictionary-enabled-heading = Ενεργά

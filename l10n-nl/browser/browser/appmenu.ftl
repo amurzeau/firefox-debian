@@ -115,6 +115,15 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Profiler
+    .tooltiptext = Neem een prestatieprofiel op
+profiler-popup-button-recording =
+    .label = Profiler
+    .tooltiptext = De profiler neemt een profiel op
+profiler-popup-button-capturing =
+    .label = Profiler
+    .tooltiptext = De profiler neemt een profiel op
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -123,10 +132,15 @@ profiler-popup-description-title =
     .value = Opnemen, analyseren, delen
 profiler-popup-description = Werk samen aan prestatieproblemen door profielen te publiceren om met uw team te delen.
 profiler-popup-learn-more = Meer info
+profiler-popup-learn-more-button =
+    .label = Meer info
 profiler-popup-settings =
     .value = Instellingen
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Instellingen bewerken…
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Instellingen bewerken…
 profiler-popup-disabled =
     De profiler is momenteel uitgeschakeld, waarschijnlijk omdat een privévenster
     is geopend.
@@ -151,6 +165,32 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+profiler-popup-presets-web-developer-description = Aanbevolen voorinstelling voor de meeste foutopsporing in web-apps, met lage overhead.
+profiler-popup-presets-web-developer-label =
+    .label = Webontwikkelaar
+profiler-popup-presets-firefox-platform-description = Aanbevolen voorinstelling voor interne foutopsporing in het Firefox-platform.
+profiler-popup-presets-firefox-platform-label =
+    .label = Firefox-platform
+profiler-popup-presets-firefox-front-end-description = Aanbevolen voorinstelling voor interne foutopsporing in het front-end van Firefox.
+profiler-popup-presets-firefox-front-end-label =
+    .label = Firefox-front-end
+profiler-popup-presets-firefox-graphics-description = Aanbevolen voorinstelling voor onderzoek naar grafische prestaties van Firefox.
+profiler-popup-presets-firefox-graphics-label =
+    .label = Firefox-grafisch
+profiler-popup-presets-media-description = Aanbevolen voorinstelling voor het analyseren van audio- en videoproblemen.
+profiler-popup-presets-media-label =
+    .label = Media
+profiler-popup-presets-custom-label =
+    .label = Aangepast
 
 ## History panel
 

@@ -115,6 +115,15 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Прафайлер
+    .tooltiptext = Запісаць профіль прадукцыйнасці
+profiler-popup-button-recording =
+    .label = Прафайлер
+    .tooltiptext = Прафайлер запісвае профіль
+profiler-popup-button-capturing =
+    .label = Прафайлер
+    .tooltiptext = Прафайлер захоплівае профіль
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -123,10 +132,15 @@ profiler-popup-description-title =
     .value = Запісвайце, аналізуйце, дзяліцеся
 profiler-popup-description = Супольна працуйце над праблемамі прадукцыйнасці, публікуючы профілі і дзелячыся імі з сваёй камандай.
 profiler-popup-learn-more = Падрабязней
+profiler-popup-learn-more-button =
+    .label = Падрабязней
 profiler-popup-settings =
     .value = Налады
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Змянiць налады...
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Змянiць налады...
 profiler-popup-disabled =
     Прафайлер зараз адключаны, хутчэй за ўсё, з-за адкрытага акна
     прыватнага аглядання.
@@ -151,6 +165,32 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+profiler-popup-presets-web-developer-description = Рэкамендаваны прадусталяваны варыянт для адладкі большасці вэб-прыкладанняў, з невялікімі выдаткамі.
+profiler-popup-presets-web-developer-label =
+    .label = Распрацоўшчык Сеціва
+profiler-popup-presets-firefox-platform-description = Рэкамендаваныя папярэднія налады для ўнутранай адладкі платформы Firefox.
+profiler-popup-presets-firefox-platform-label =
+    .label = Платформа Firefox
+profiler-popup-presets-firefox-front-end-description = Рэкамендаваныя папярэднія налады для ўнутранай адладкі кліенцкай часткі Firefox.
+profiler-popup-presets-firefox-front-end-label =
+    .label = Кліенцкая частка Firefox
+profiler-popup-presets-firefox-graphics-description = Рэкамендаваныя папярэднія налады для даследавання прадукцыйнасці графікі Firefox.
+profiler-popup-presets-firefox-graphics-label =
+    .label = Графіка Firefox
+profiler-popup-presets-media-description = Рэкамендаваныя папярэднія налады для дыягностыкі праблем з гукам і відэа.
+profiler-popup-presets-media-label =
+    .label = Медыя
+profiler-popup-presets-custom-label =
+    .label = Адмысловыя
 
 ## History panel
 

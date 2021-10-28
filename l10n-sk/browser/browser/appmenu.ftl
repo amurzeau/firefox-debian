@@ -115,6 +115,15 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Nástroj na profilovanie
+    .tooltiptext = Záznam výkonu
+profiler-popup-button-recording =
+    .label = Nástroj na profilovanie
+    .tooltiptext = Nástroj na profilovanie vykonáva záznam profilu
+profiler-popup-button-capturing =
+    .label = Nástroj na profilovanie
+    .tooltiptext = Nástroj na profilovanie zaznamenáva profil
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -123,10 +132,15 @@ profiler-popup-description-title =
     .value = Zaznamenať, analyzovať a zdieľať
 profiler-popup-description = Spolupracujte na riešení problémov s výkonom zdieľaním údajov so svojím tímom.
 profiler-popup-learn-more = Ďalšie informácie
+profiler-popup-learn-more-button =
+    .label = Ďalšie informácie
 profiler-popup-settings =
     .value = Nastavenia
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Upraviť nastavenia…
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Upraviť nastavenia…
 profiler-popup-disabled = Nástroj na profilovanie je v tejto chvíli vypnutý, pravdepodobne preto, lebo máte otvorené okno súkromného prehliadania.
 profiler-popup-recording-screen = Nahrávanie…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
@@ -149,6 +163,32 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+profiler-popup-presets-web-developer-description = Odporúčaná predvoľba pre väčšinu ladení webových aplikácií s nízkymi nárokmi na výkon.
+profiler-popup-presets-web-developer-label =
+    .label = Webový vývojár
+profiler-popup-presets-firefox-platform-description = Odporúčaná predvoľba pre ladenie internej platformy Firefox.
+profiler-popup-presets-firefox-platform-label =
+    .label = Platforma Firefox
+profiler-popup-presets-firefox-front-end-description = Odporúčaná predvoľba pre vnútorné ladenie klientskeho rozhrania Firefoxu.
+profiler-popup-presets-firefox-front-end-label =
+    .label = Klientske rozhranie Firefoxu
+profiler-popup-presets-firefox-graphics-description = Odporúčaná predvoľba na skúmanie výkonu grafiky vo Firefoxe.
+profiler-popup-presets-firefox-graphics-label =
+    .label = Grafika vo Firefoxe
+profiler-popup-presets-media-description = Odporúčaná predvoľba na diagnostiku problémov so zvukom a videom.
+profiler-popup-presets-media-label =
+    .label = Médiá
+profiler-popup-presets-custom-label =
+    .label = Vlastné
 
 ## History panel
 

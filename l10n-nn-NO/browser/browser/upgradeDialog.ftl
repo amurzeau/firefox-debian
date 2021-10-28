@@ -64,6 +64,31 @@ upgrade-dialog-default-secondary-button = Ikkje no
 upgrade-dialog-theme-title-2 = Få ein ny start med eit nytt tema
 upgrade-dialog-theme-system = Systemtema
     .title = Følg operativsystem-temaet for knappar, menyar og vindauge
+
+## Start screen
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-start-title = Livet i fargar
+upgrade-dialog-start-primary-button = Utforsk fargesamansetjingar
+upgrade-dialog-start-secondary-button = Ikkje no
+
+## Colorway screen
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-colorway-title = Vel palett
+# This is shown to users with a custom home page, so they can switch to default.
+upgrade-dialog-colorway-home-checkbox = Byt til Firefox-startside med temabakgrunn
+upgrade-dialog-colorway-primary-button = Lagre fargesamansetjing
+upgrade-dialog-colorway-secondary-button = Behald førre tema
+upgrade-dialog-colorway-theme-tooltip =
+    .title = Utforsk standardtema
+# $colorwayName (String) - Name of colorway, e.g., Abstract, Cheers
+upgrade-dialog-colorway-colorway-tooltip =
+    .title = Utforsk { $colorwayName }-fargesamansetjingar.
+upgrade-dialog-colorway-default-theme = Standard
+# "Auto" is short for "Automatic"
+upgrade-dialog-colorway-theme-auto = Automatisk
+    .title = Følg temaet til operativsystemet for knappar, menyar og vindauge
 upgrade-dialog-theme-light = Lyst
     .title = Bruk eit lyst tema for knappar, menyar og vindauge
 upgrade-dialog-theme-dark = Mørkt
@@ -74,3 +99,20 @@ upgrade-dialog-theme-keep = Behald tidlegare tema
     .title = Bruk temaet du hadde installert før du oppdaterte { -brand-short-name }
 upgrade-dialog-theme-primary-button = Lagre tema
 upgrade-dialog-theme-secondary-button = Ikkje no
+upgrade-dialog-colorway-variation-soft = Mjuk
+    .title = Bruk denne fargesamansetjinga
+upgrade-dialog-colorway-variation-balanced = Balansert
+    .title = Bruk denne fargesamansetjinga
+# "Bold" is used in the sense of bravery or courage, not in the sense of
+# emphasized text.
+upgrade-dialog-colorway-variation-bold = Modig
+    .title =
+        Bruk dennne fargesammensettingen
+        Bruk denne fargesamansetjinga
+
+## Thank you screen
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-thankyou-title = Takk for at du valde oss
+upgrade-dialog-thankyou-subtitle = { -brand-short-name } er ein uavhengig nettlesar som er støtta av ein ideell organisasjon. Saman gjer vi nettet tryggare, sunnare og meir privat.
+upgrade-dialog-thankyou-primary-button = Byrj surfinga

@@ -227,11 +227,26 @@ newtab-discovery-empty-section-topstories-timed-out = Jejda, při načítání o
 ## Pocket Content Section.
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
-newtab-pocket-read-more = Populární témata:
+newtab-pocket-read-more = Oblíbená témata:
+newtab-pocket-new-topics-title = Chcete další články? Podívejte se na oblíbené témata v { -pocket-brand-name(case: "loc") }.
 newtab-pocket-more-recommendations = Další doporučení
 newtab-pocket-learn-more = Zjistit více
 newtab-pocket-cta-button = Získejte { -pocket-brand-name(case: "acc") }
 newtab-pocket-cta-text = Ukládejte si články do { -pocket-brand-name(case: "gen") } a užívejte si skvělé čtení.
+newtab-pocket-pocket-firefox-family = { -pocket-brand-name } je součástí rodiny { -brand-product-name(case: "gen") }
+# A save to Pocket button that shows over the card thumbnail on hover.
+newtab-pocket-save-to-pocket = Uložit do { -pocket-brand-name(case: "gen") }
+newtab-pocket-saved-to-pocket = Uloženo do { -pocket-brand-name(case: "gen") }
+# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
+newtab-pocket-load-more-stories-button = Načíst další články
+
+## Pocket Final Card Section.
+## This is for the final card in the Pocket grid.
+
+newtab-pocket-last-card-title = Už jste všechno přečetli.
+newtab-pocket-last-card-desc = Další články zde najdete později.
+newtab-pocket-last-card-image =
+    .alt = Už jste všechno přečetli
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.

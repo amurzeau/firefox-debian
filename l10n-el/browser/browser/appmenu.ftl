@@ -115,6 +115,15 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Εργαλείο προφίλ
+    .tooltiptext = Καταγραφή προφίλ επιδόσεων
+profiler-popup-button-recording =
+    .label = Εργαλείο προφίλ
+    .tooltiptext = Το εργαλείο προφίλ καταγράφει ένα προφίλ
+profiler-popup-button-capturing =
+    .label = Εργαλείο προφίλ
+    .tooltiptext = Το εργαλείο προφίλ καταγράφει ένα προφίλ
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -123,10 +132,15 @@ profiler-popup-description-title =
     .value = Εγγραφή, ανάλυση, κοινοποίηση
 profiler-popup-description = Αντιμετωπίστε ζητήματα επιδόσεων κάνοντας κοινή χρήση των προφίλ με την ομάδα σας.
 profiler-popup-learn-more = Μάθετε περισσότερα
+profiler-popup-learn-more-button =
+    .label = Μάθετε περισσότερα
 profiler-popup-settings =
     .value = Ρυθμίσεις
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Επεξεργασία ρυθμίσεων…
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Επεξεργασία ρυθμίσεων…
 profiler-popup-disabled =
     Το εργαλείο προφίλ είναι ανενεργό αυτήν τη στιγμή, πιθανότατα επειδή είναι ανοικτό ένα παράθυρο
     ιδιωτικής περιήγησης.
@@ -151,6 +165,32 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+profiler-popup-presets-web-developer-description = Προτεινόμενη προεπιλογή για τον έλεγχο σφαλμάτων των περισσότερων εφαρμογών ιστού με χαμηλό κόστος.
+profiler-popup-presets-web-developer-label =
+    .label = Ανάπτυξη web
+profiler-popup-presets-firefox-platform-description = Προτεινόμενη προεπιλογή για τον εσωτερικό έλεγχο σφαλμάτων της πλατφόρμας του Firefox.
+profiler-popup-presets-firefox-platform-label =
+    .label = Πλατφόρμα Firefox
+profiler-popup-presets-firefox-front-end-description = Προτεινόμενη προεπιλογή για τον εσωτερικό έλεγχο σφαλμάτων του περιβάλλοντος του Firefox.
+profiler-popup-presets-firefox-front-end-label =
+    .label = Περιβάλλον Firefox
+profiler-popup-presets-firefox-graphics-description = Προτεινόμενη προεπιλογή για τη διερεύνηση επιδόσεων γραφικών του Firefox.
+profiler-popup-presets-firefox-graphics-label =
+    .label = Γραφικά Firefox
+profiler-popup-presets-media-description = Προτεινόμενη προεπιλογή για τη διάγνωση προβλημάτων ήχου και βίντεο.
+profiler-popup-presets-media-label =
+    .label = Πολυμέσα
+profiler-popup-presets-custom-label =
+    .label = Προσαρμογή
 
 ## History panel
 

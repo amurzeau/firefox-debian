@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Kudeatu pluginen erabilera
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Kudeatu zure kamera eta/edo mikrofonoa gunearekin partekatzea
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Kudeatu beste mikrofono batzuk gunearekin partekatzea
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Ireki erreprodukzio automatikoaren panela
 urlbar-persistent-storage-notification-anchor =
@@ -513,6 +517,12 @@ urlbar-result-action-search-tabs = Bilatu fitxak
 # urlbar results.
 urlbar-group-firefox-suggest =
     .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = { $engine }(r)en iradokizunak
 
 ## Full Screen and Pointer Lock UI
 
@@ -533,6 +543,10 @@ pointerlock-warning-no-domain = Dokumentu honek zure erakuslearen kontrola dauka
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Orriaren zati batek huts egin du</strong>. Arazoaren berri eman eta ahalik eta azkarren konpontzeko, bidali mesedez txostena { -brand-product-name }(r)i.
+# The string for crashed-subframe-title.title should match crashed-subframe-message,
+# but without any markup.
+crashed-subframe-title =
+    .title = Orriaren zati batek huts egin du. Arazoaren berri eman eta ahalik eta azkarren konpontzeko, bidali mesedez txostena { -brand-product-name }(r)i.
 crashed-subframe-learnmore-link =
     .value = Argibide gehiago
 crashed-subframe-submit =
@@ -716,6 +730,9 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Ez erakutsi mezu hau popup leihoak blokeatzerakoan
     .accesskey = z
+edit-popup-settings =
+    .label = Kudeatu popup leihoen ezarpenak…
+    .accesskey = K
 picture-in-picture-hide-toggle =
     .label = Ezkutatu bideoa beste leiho batean txandakatzeko botoia
     .accesskey = E
@@ -759,3 +776,9 @@ tabs-toolbar-new-tab =
 tabs-toolbar-list-all-tabs =
     .label = Zerrendatu fitxa guztiak
     .tooltiptext = Zerrendatu fitxa guztiak
+
+## Infobar shown at startup to suggest session-restore
+
+# <img data-l10n-name="icon"/> will be replaced by the application menu icon
+restore-session-startup-suggestion-message = <strong>Ireki aurreko fitxak?</strong> Aurreko zure saioa berrezar dezakezu { -brand-short-name } aplikazio-menutik <img data-l10n-name="icon"/>, Historia barnean.
+restore-session-startup-suggestion-button = Erakuts iezadazu nola

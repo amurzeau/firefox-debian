@@ -226,10 +226,25 @@ newtab-discovery-empty-section-topstories-timed-out = Hoppá! Majdnem betöltöt
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Népszerű témák:
+newtab-pocket-new-topics-title = Még több történetet szeretne? Nézze meg ezeket a népszerű témákat a { -pocket-brand-name }től.
 newtab-pocket-more-recommendations = További javaslatok
 newtab-pocket-learn-more = További tudnivalók
 newtab-pocket-cta-button = { -pocket-brand-name } beszerzése
 newtab-pocket-cta-text = Mentse az Ön által kedvelt történeteket a { -pocket-brand-name }be, és töltse fel elméjét lebilincselő olvasnivalókkal.
+newtab-pocket-pocket-firefox-family = A { -pocket-brand-name } a { -brand-product-name } család része
+# A save to Pocket button that shows over the card thumbnail on hover.
+newtab-pocket-save-to-pocket = Mentés a { -pocket-brand-name }be
+newtab-pocket-saved-to-pocket = Mentve a { -pocket-brand-name }be
+# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
+newtab-pocket-load-more-stories-button = További történetek betöltése
+
+## Pocket Final Card Section.
+## This is for the final card in the Pocket grid.
+
+newtab-pocket-last-card-title = Mindet megnézte.
+newtab-pocket-last-card-desc = Nézzen vissza később újabbakért.
+newtab-pocket-last-card-image =
+    .alt = Mindet megnézte.
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.
