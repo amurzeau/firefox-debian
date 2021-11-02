@@ -50,7 +50,7 @@
 <!ENTITY getAllNewMsgCmd2.key "d">
 <!ENTITY getNextNMsgCmd.label "Obtener 500 nuevos mensajes">
 <!ENTITY getNextNMsgCmd.accesskey "t">
-<!ENTITY sendUnsentCmd.label "Procesar mensajes no enviados">
+<!ENTITY sendUnsentCmd.label "Enviar mensajes pendientes">
 <!ENTITY sendUnsentCmd.accesskey "v">
 <!ENTITY subscribeCmd.label "Suscribirse…">
 <!ENTITY subscribeCmd.accesskey "b">
@@ -218,7 +218,7 @@
 <!ENTITY bodyAllParts.label "Todas las partes del cuerpo">
 <!ENTITY bodyAllParts.accesskey "a">
 
-<!ENTITY bodyMenuFeed.label "Feed Message Body As">
+<!ENTITY bodyMenuFeed.label "Cuerpo del mensaje como">
 <!ENTITY bodyMenuFeed.accesskey "S">
 <!ENTITY viewFeedWebPage.label "Página web">
 <!ENTITY viewFeedWebPage.accesskey "w">
@@ -520,7 +520,7 @@
 <!ENTITY folderContextEmptyTrash.accesskey "p">
 <!ENTITY folderContextEmptyJunk.label "Vaciar basura">
 <!ENTITY folderContextEmptyJunk.accesskey "V">
-<!ENTITY folderContextSendUnsentMessages.label "Enviar mensajes pendientes…">
+<!ENTITY folderContextSendUnsentMessages.label "Enviar mensajes pendientes">
 <!ENTITY folderContextSendUnsentMessages.accesskey "n">
 <!ENTITY folderContextUnsubscribe.label "Cancelar suscripción">
 <!ENTITY folderContextUnsubscribe.accesskey "u">
@@ -532,7 +532,7 @@
 <!ENTITY folderContextNew.accesskey "N">
 <!ENTITY folderContextSubscribe.label "Suscribirse…">
 <!ENTITY folderContextSubscribe.accesskey "b">
-<!ENTITY folderContextSearchMessages.label "Buscar…">
+<!ENTITY folderContextSearchMessages.label "Buscar mensajes…">
 <!ENTITY folderContextSearchMessages.accesskey "s">
 <!ENTITY folderContextProperties.label "Propiedades…">
 <!ENTITY folderContextProperties.accesskey "o">

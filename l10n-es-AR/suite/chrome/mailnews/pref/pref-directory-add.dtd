@@ -4,7 +4,7 @@
 
 <!ENTITY directoryName.label               "Nombre:">
 <!ENTITY directoryName.accesskey           "N">
-<!ENTITY directoryHostname.label           "Servidor: ">
+<!ENTITY directoryHostname.label           "Servidor:">
 <!ENTITY directoryHostname.accesskey       "o">
 <!ENTITY directoryBaseDN.label             "DN base:">
 <!ENTITY directoryBaseDN.accesskey         "b">
@@ -21,11 +21,11 @@
 <!ENTITY portNumber.accesskey              "p">
 <!ENTITY searchFilter.label                "Filtro de búsqueda: ">
 <!ENTITY searchFilter.accesskey            "F">
-<!ENTITY scope.label                       "Alcance: ">
+<!ENTITY scope.label                       "Alcance:">
 <!ENTITY scope.accesskey                   "c">
 <!ENTITY scopeOneLevel.label               "Un nivel">
 <!ENTITY scopeOneLevel.accesskey           "l">
-<!ENTITY scopeSubtree.label                "Subtree">
+<!ENTITY scopeSubtree.label                "Subárbol">
 <!ENTITY scopeSubtree.accesskey            "S">
 <!ENTITY return.label                      "No devolver más que">
 <!ENTITY return.accesskey                  "r">

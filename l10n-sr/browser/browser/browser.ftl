@@ -752,3 +752,49 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Сакриј прекидач „Слика у слици”
     .accesskey = С
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Навигација
+navbar-downloads =
+    .label = Преузимања
+navbar-overflow =
+    .tooltiptext = Више алатки…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Одштампај
+    .tooltiptext = Одштампај ову страницу… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Одштампај
+    .tooltiptext = Одштампај ову страницу
+navbar-home =
+    .label = Почетна
+    .tooltiptext = Отвори почетну страницу програма { -brand-short-name }
+navbar-library =
+    .label = Библиотека
+    .tooltiptext = Погледајте историју, сачуване обележиваче и друго
+navbar-search =
+    .title = Претрага
+navbar-accessibility-indicator =
+    .tooltiptext = Функције приступачности су омогућене
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Картице прегледача
+tabs-toolbar-new-tab =
+    .label = Нова картица
+tabs-toolbar-list-all-tabs =
+    .label = Прикажи све картице
+    .tooltiptext = Прикажи све картице
+
+## Infobar shown at startup to suggest session-restore
+
+# <img data-l10n-name="icon"/> will be replaced by the application menu icon
+restore-session-startup-suggestion-message = <strong>Отворити претходне картице?</strong> Можете повратити претходну сесију из менија програма { -brand-short-name } <img data-l10n-name="icon"/>, у одељку Историја.
+restore-session-startup-suggestion-button = Покажи ми како

@@ -64,6 +64,31 @@ upgrade-dialog-default-secondary-button = Не зараз
 upgrade-dialog-theme-title-2 = Розпочніть роботу начисто зі свіжою темою
 upgrade-dialog-theme-system = Системна тема
     .title = Використовувати тему операційної системи для кнопок, меню та вікон
+
+## Start screen
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-start-title = Життя барвисте
+upgrade-dialog-start-subtitle = Сповнені життя нові барви. Доступні впродовж обмеженого часу.
+upgrade-dialog-start-primary-button = Переглянути забарвлення
+upgrade-dialog-start-secondary-button = Не зараз
+
+## Colorway screen
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-colorway-title = Оберіть свою палітру
+upgrade-dialog-colorway-home-checkbox = Змінити тему тла домівки Firefox
+upgrade-dialog-colorway-primary-button = Зберегти забарвлення
+upgrade-dialog-colorway-secondary-button = Залишити попередню тему
+upgrade-dialog-colorway-theme-tooltip =
+    .title = Переглянути типові теми
+# $colorwayName (String) - Name of colorway, e.g., Abstract, Cheers
+upgrade-dialog-colorway-colorway-tooltip =
+    .title = Переглянути забарвлення { $colorwayName }
+upgrade-dialog-colorway-default-theme = Типові
+# "Auto" is short for "Automatic"
+upgrade-dialog-colorway-theme-auto = Авто
+    .title = Дотримуватись теми операційної системи для кнопок, меню та вікон
 upgrade-dialog-theme-light = Світла
     .title = Використовувати світлу тему для кнопок, меню та вікон
 upgrade-dialog-theme-dark = Темна
@@ -74,3 +99,18 @@ upgrade-dialog-theme-keep = Зберегти попередню
     .title = Використовувати тему, що була встановлена до оновлення { -brand-short-name }
 upgrade-dialog-theme-primary-button = Зберегти тему
 upgrade-dialog-theme-secondary-button = Не зараз
+upgrade-dialog-colorway-variation-soft = М'яке
+    .title = Застосувати це забарвлення
+upgrade-dialog-colorway-variation-balanced = Збалансоване
+    .title = Застосувати це забарвлення
+# "Bold" is used in the sense of bravery or courage, not in the sense of
+# emphasized text.
+upgrade-dialog-colorway-variation-bold = Насичене
+    .title = Застосувати це забарвлення
+
+## Thank you screen
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-thankyou-title = Дякуємо, що обрали нас
+upgrade-dialog-thankyou-subtitle = { -brand-short-name } — незалежний браузер, підтримуваний некомерційною організацією. Разом ми робимо інтернет безпечнішим, здоровішим та приватнішим.
+upgrade-dialog-thankyou-primary-button = Почати перегляд

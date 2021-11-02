@@ -76,6 +76,8 @@ appmenu-remote-tabs-showmore =
 appmenu-remote-tabs-notabs = Neniu spegulita langeto
 # This is shown when Sync is configured but syncing tabs is disabled.
 appmenu-remote-tabs-tabsnotsyncing = Ŝaltu la dividon de langetoj por vidi liston de langetoj en viaj aliaj aparatoj.
+appmenu-remote-tabs-opensettings =
+    .label = Agordoj
 # This is shown when Sync is configured but this appears to be the only device attached to
 # the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Ĉu vi volas vidi ĉi tie viajn langetojn el aliaj aparatoj?
@@ -113,6 +115,15 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Rulanalizilo
+    .tooltiptext = Registri efikecan profilon
+profiler-popup-button-recording =
+    .label = Rulanalizilo
+    .tooltiptext = La rulanalizilo registras profilon
+profiler-popup-button-capturing =
+    .label = Rulanalizilo
+    .tooltiptext = La rulanalizilo kaptas profilon
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -121,10 +132,15 @@ profiler-popup-description-title =
     .value = Registri, analizi, dividi
 profiler-popup-description = Kunlaboru pri efikecaj problemoj per publikigo de profiloj dividotaj kun via teamo.
 profiler-popup-learn-more = Pli da informo
+profiler-popup-learn-more-button =
+    .label = Pli da informo
 profiler-popup-settings =
     .value = Agordoj
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Modifi agordojn…
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Modifi agordojn…
 profiler-popup-disabled = La rulanalizilo estas nuntempe malaktiva, tre verŝajne pro tio ke fenestro de privata retumo estas malfermita.
 profiler-popup-recording-screen = Registrado…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
@@ -147,6 +163,15 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Stir+Maj+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
 
 ## History panel
 

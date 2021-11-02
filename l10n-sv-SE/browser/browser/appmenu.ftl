@@ -115,6 +115,15 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Profiler
+    .tooltiptext = Spela in en prestationsprofil
+profiler-popup-button-recording =
+    .label = Profilerare
+    .tooltiptext = Profileraren spelar in en profil
+profiler-popup-button-capturing =
+    .label = Profilerare
+    .tooltiptext = Profileraren fångar en profil
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -123,10 +132,15 @@ profiler-popup-description-title =
     .value = Spela in, analysera, dela
 profiler-popup-description = Samarbeta om prestandafrågor genom att publicera profiler för att dela med ditt team.
 profiler-popup-learn-more = Läs mer
+profiler-popup-learn-more-button =
+    .label = Läs mer
 profiler-popup-settings =
     .value = Inställningar
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Redigera inställningar…
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Redigera inställningar…
 profiler-popup-disabled =
     Profilen är för närvarande inaktiverad, troligtvis på grund av att ett privat webbläsarfönster
     är öppet.
@@ -151,6 +165,32 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+profiler-popup-presets-web-developer-description = Rekommenderad förinställning för de flesta webbappfelsökningar, med lite pålägg.
+profiler-popup-presets-web-developer-label =
+    .label = Webbutvecklare
+profiler-popup-presets-firefox-platform-description = Rekommenderad förinställning för intern felsökning av plattformar i Firefox.
+profiler-popup-presets-firefox-platform-label =
+    .label = Firefox - Plattform
+profiler-popup-presets-firefox-front-end-description = Rekommenderad förinställning för intern felsökning av front-end i Firefox.
+profiler-popup-presets-firefox-front-end-label =
+    .label = Firefox - Front-End
+profiler-popup-presets-firefox-graphics-description = Rekommenderad förinställning för utredning av grafikprestanda i Firefox.
+profiler-popup-presets-firefox-graphics-label =
+    .label = Firefox - Grafik
+profiler-popup-presets-media-description = Rekommenderad förinställning för diagnos av ljud- och videoproblem.
+profiler-popup-presets-media-label =
+    .label = Media
+profiler-popup-presets-custom-label =
+    .label = Anpassad
 
 ## History panel
 

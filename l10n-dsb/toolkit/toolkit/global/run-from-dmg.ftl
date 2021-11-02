@@ -17,3 +17,12 @@ prompt-to-install-no-button = Njeinstalěrowaś
 
 install-failed-title = Instalěrowanje { -brand-short-name } njejo se raźiło.
 install-failed-message = { -brand-short-name } njedajo se instalěrowaś, ale dalej funkcioněrujo.
+
+## Strings for a dialog that recommends to the user to start an existing
+## installation of the app in the Applications directory if one is detected,
+## rather than the app that was double-clicked in a .dmg.
+
+prompt-to-launch-existing-app-title = Eksistěrujuce nałoženje { -brand-short-name } wócyniś?
+prompt-to-launch-existing-app-message = Sćo južo zainstalěrował { -brand-short-name }. Wužywajśo zainstalěrowane nałoženje, aby na běžnem wostał a zgubjenju datow zajźował.
+prompt-to-launch-existing-app-yes-button = Eksistěrujuce wócyniś
+prompt-to-launch-existing-app-no-button = Ně, źěkujom se

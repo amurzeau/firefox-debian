@@ -115,6 +115,15 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Профайлер
+    .tooltiptext = Записать профиль производительности
+profiler-popup-button-recording =
+    .label = Профайлер
+    .tooltiptext = Профайлер записывает профиль
+profiler-popup-button-capturing =
+    .label = Профайлер
+    .tooltiptext = Профайлер захватывает профиль
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -123,16 +132,21 @@ profiler-popup-description-title =
     .value = Записывайте, анализируйте, делитесь
 profiler-popup-description = Совместная работа над производительностью с помощью публикации профилей, которыми можно поделиться со своей командой.
 profiler-popup-learn-more = Подробнее
+profiler-popup-learn-more-button =
+    .label = Подробнее
 profiler-popup-settings =
     .value = Настройки
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Изменить настройки…
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Изменить настройки…
 profiler-popup-disabled = Профайлер в настоящее время отключён, скорее всего, из-за того, что открыто приватное окно.
 profiler-popup-recording-screen = Запись…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
 profiler-popup-presets-custom =
-    .label = Пользовательские
+    .label = Персональный
 profiler-popup-start-recording-button =
     .label = Начать запись
 profiler-popup-discard-button =
@@ -149,6 +163,32 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+profiler-popup-presets-web-developer-description = Рекомендуемые настройки для отладки большинства веб-приложений с низкими накладными расходами.
+profiler-popup-presets-web-developer-label =
+    .label = Веб-разработка
+profiler-popup-presets-firefox-platform-description = Рекомендуемые настройки для внутренней отладки платформы Firefox.
+profiler-popup-presets-firefox-platform-label =
+    .label = Платформа Firefox
+profiler-popup-presets-firefox-front-end-description = Рекомендуемые настройки для внутренней отладки клиентской части Firefox.
+profiler-popup-presets-firefox-front-end-label =
+    .label = Клиентская часть Firefox
+profiler-popup-presets-firefox-graphics-description = Рекомендуемые настройки для исследования производительности графики Firefox.
+profiler-popup-presets-firefox-graphics-label =
+    .label = Графика Firefox
+profiler-popup-presets-media-description = Рекомендуемые настройки для диагностики проблем со звуком и видео.
+profiler-popup-presets-media-label =
+    .label = Медиа
+profiler-popup-presets-custom-label =
+    .label = Персональный
 
 ## History panel
 

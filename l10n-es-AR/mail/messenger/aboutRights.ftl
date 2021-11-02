@@ -14,7 +14,10 @@ rights-intro-point-5-unbranded = Si este producto incorpora servicios web, cualq
 rights-intro-point-6 = Para poder reproducir ciertos tipos de contenido de video, { -brand-short-name } descarga ciertos módulos de descifrado de contenido desde terceros.
 rights-webservices-header = Servicios de información basados en web de { -brand-full-name }
 rights-webservices = { -brand-full-name } usa servicios de información basados en la web ("Servicios") para proveer algunas de las características que puede usar en esta versión binaria de { -brand-short-name } bajo los términos descriptos debajo. Si no quiere usar alguno de los servicios o los términos no son aceptables, puede deshabilitar las características o servicio(s). Las instrucciones sobre como deshabilitar una característica o servicio en particular pueden encontrarse <a data-l10n-name="mozilla-disable-service-link">aquí</a>. Otras funcionalidades y servicios pueden deshabilitarse en las preferencias de la aplicación.
-rights-locationawarebrowsing = <strong>Navegación con ubicación geográfica: </strong>siempre es opcional.  Nunca se envía información de ubicación sin su permiso.  Si quiere deshabilitar esta característica por completo, siga estos pasos:
+rights-locationawarebrowsing =
+    <strong>Navegación con ubicación geográfica: </strong>siempre es opcional. Nunca se envía
+    información de ubicación sin su permiso. Si quiere
+    deshabilitar esta característica por completo, siga estos pasos:
 rights-locationawarebrowsing-term-1 = En la barra de direcciones ingrese <code>about:config</code>
 rights-locationawarebrowsing-term-2 = Ingrese geo.enabled
 rights-locationawarebrowsing-term-3 = Haga doble clic en la preferencia geo.enabled
@@ -32,7 +35,7 @@ rights-webservices-term-5 =
     relacionado con el uso de
     { -brand-short-name } y los servicios. La responsabilidad colectiva bajo
     estos términos no podrá exceder los U$S 500 (quinientos dólares estadounidenses). Algunas jurisdicciones
-    no permiten la exclusión o limitación de ciertos daños, por consiguiente esta
+    no permiten la exclusión o limitación de ciertos daños, por lo que esta
     exclusión y limitación puede no ser aplicable en su caso.</strong>
 rights-webservices-term-6 = De ser necesario, { -vendor-short-name } puede actualizar estos términos en forma esporádica. Estos términos no pueden ser modificados o cancelados sin el consentimiento por escrito de { -vendor-short-name }.
 rights-webservices-term-7 = Estos términos están regidos por las leyes del estado de California, EE.UU., excluyendo sus conflictos con otras estipulaciones de la ley. Si cualquier sección de estos términos no es válida o aplicable, las secciones restantes continuarán teniendo plena vigencia. En caso de existir un conflicto entre una versión traducida de estos términos y la versión en idioma inglés, la versión en inglés será la que tendrá validez.

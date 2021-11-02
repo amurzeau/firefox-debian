@@ -76,6 +76,8 @@ appmenu-remote-tabs-showmore =
 appmenu-remote-tabs-notabs = Ivinell digor ebet
 # This is shown when Sync is configured but syncing tabs is disabled.
 appmenu-remote-tabs-tabsnotsyncing = Gweredekait goubredañ an ivinelloù evit gwelout ur roll ivinelloù eus ho trevnadoù all.
+appmenu-remote-tabs-opensettings =
+    .label = Arventennoù
 # This is shown when Sync is configured but this appears to be the only device attached to
 # the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Fellout a ra deoc'h gwelout ivinelloù ho trevnadoù all amañ?
@@ -113,6 +115,15 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Aelader
+    .tooltiptext = Enrollañ un aelad digonusted
+profiler-popup-button-recording =
+    .label = Aelader
+    .tooltiptext = An aelader a enroll un aelad
+profiler-popup-button-capturing =
+    .label = Aelader
+    .tooltiptext = An aelader a enroll an aelad
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -121,10 +132,15 @@ profiler-popup-description-title =
     .value = Enrollañ, dielfennañ, rannañ
 profiler-popup-description = Kenlabourat war kudennoù digonusted en ur embann aeladoù da rannañ gant hor skipailh.
 profiler-popup-learn-more = Gouzout hiroc’h
+profiler-popup-learn-more-button =
+    .label = Gouzout hiroc’h
 profiler-popup-settings =
     .value = Arventennoù
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Kemmañ an arventennoù…
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Kemmañ an arventennoù…
 profiler-popup-disabled =
     Diweredekaet eo an aelader evit ar mare, moarvat peogwir eo digoret ur prenestr
     merdeiñ prevez.
@@ -149,6 +165,32 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+profiler-popup-presets-web-developer-description = Rakarventennoù erbedet evit diveugañ an arloadoù gant un overhead izel.
+profiler-popup-presets-web-developer-label =
+    .label = Diorroer web
+profiler-popup-presets-firefox-platform-description = Rakarventennoù erbedet evit diveugañ diabarzh savenn Firefox.
+profiler-popup-presets-firefox-platform-label =
+    .label = Savenn Firefox
+profiler-popup-presets-firefox-front-end-description = Rakarventennoù erbedet evit diveugañ rakdraf diabarzh Firefox.
+profiler-popup-presets-firefox-front-end-label =
+    .label = Rakdraf Firefox
+profiler-popup-presets-firefox-graphics-description = Rakarventennoù erbedet evit enklask digonusted kevregadoù Firefox.
+profiler-popup-presets-firefox-graphics-label =
+    .label = Kevregadoù Firefox
+profiler-popup-presets-media-description = Rakarventennoù erbedet evit dielfennañ ar c'hudennoù son ha video.
+profiler-popup-presets-media-label =
+    .label = Media
+profiler-popup-presets-custom-label =
+    .label = Personelaet
 
 ## History panel
 

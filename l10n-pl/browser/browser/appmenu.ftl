@@ -115,6 +115,15 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Profiler
+    .tooltiptext = Nagraj profil wydajności
+profiler-popup-button-recording =
+    .label = Profiler
+    .tooltiptext = Profiler nagrywa profil
+profiler-popup-button-capturing =
+    .label = Profiler
+    .tooltiptext = Profiler przechwytuje profil
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -123,10 +132,15 @@ profiler-popup-description-title =
     .value = Nagrywaj, analizuj, udostępniaj
 profiler-popup-description = Współpracuj nad problemami z wydajnością, publikując profile do udostępnienia zespołowi.
 profiler-popup-learn-more = Więcej informacji
+profiler-popup-learn-more-button =
+    .label = Więcej informacji
 profiler-popup-settings =
     .value = Ustawienia
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Zmień ustawienia…
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Zmień ustawienia…
 profiler-popup-disabled =
     Profiler jest obecnie wyłączony, najprawdopodobniej z powodu otwarcia okna
     w trybie prywatnym.
@@ -151,6 +165,32 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+profiler-popup-presets-web-developer-description = Zalecane ustawienie do debugowania większości aplikacji internetowych o niskim wpływie na wydajność.
+profiler-popup-presets-web-developer-label =
+    .label = Dla twórców witryn
+profiler-popup-presets-firefox-platform-description = Zalecane ustawienie do wewnętrznego debugowania platformy Firefoksa.
+profiler-popup-presets-firefox-platform-label =
+    .label = Platforma Firefoksa
+profiler-popup-presets-firefox-front-end-description = Zalecane ustawienie do wewnętrznego debugowania interfejsu Firefoksa.
+profiler-popup-presets-firefox-front-end-label =
+    .label = Interfejs Firefoksa
+profiler-popup-presets-firefox-graphics-description = Zalecane ustawienie do badania wydajności graficznej Firefoksa.
+profiler-popup-presets-firefox-graphics-label =
+    .label = Grafika Firefoksa
+profiler-popup-presets-media-description = Zalecane ustawienie do diagnozowania problemów z dźwiękiem i obrazem.
+profiler-popup-presets-media-label =
+    .label = Multimedia
+profiler-popup-presets-custom-label =
+    .label = Inne
 
 ## History panel
 

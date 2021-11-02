@@ -115,6 +115,15 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = پروفایلر
+    .tooltiptext = ضبط نمایهٔ عملکرد
+profiler-popup-button-recording =
+    .label = پروفایلر
+    .tooltiptext = پ
+profiler-popup-button-capturing =
+    .label = پروفایلر
+    .tooltiptext = پروفایلر در حال ضبط یک نمایه است
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -123,10 +132,15 @@ profiler-popup-description-title =
     .value = ضبط، تجزیه و تحلیل، اشتراک گذاری
 profiler-popup-description = با انتشار پروفایل‌ها، در مورد مشکلات مربوط به بهینه‌سازی همکاری کنید.
 profiler-popup-learn-more = بیشتر بدانید
+profiler-popup-learn-more-button =
+    .label = بیشتر بدانید
 profiler-popup-settings =
     .value = تنظیمات
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = ویرایش تنظیمات…
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = ویرایش تنظیمات…
 profiler-popup-disabled =
     پروفایلر در حال حاضر غیرفعال است، به احتمال زیاد به این خاطر که یک پنجرهٔ مرور ناشناس
     باز است
@@ -151,6 +165,25 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+profiler-popup-presets-web-developer-label =
+    .label = توسعه‌دهنده وب
+profiler-popup-presets-firefox-platform-label =
+    .label = پلتفرم Firefox
+profiler-popup-presets-firefox-graphics-label =
+    .label = گرافیک Firefox
+profiler-popup-presets-media-label =
+    .label = رسانه
+profiler-popup-presets-custom-label =
+    .label = سفارشی
 
 ## History panel
 

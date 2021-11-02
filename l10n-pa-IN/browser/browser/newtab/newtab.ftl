@@ -20,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = ਖੋਜ
     .aria-label = ਖੋਜ
-
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = { $engine } ਨਾਲ ਖੋਜੋ ਜਾਂ ਸਿਰਨਾਵਾਂ ਦਿਓ
@@ -35,12 +34,10 @@ newtab-search-box-handoff-input-no-engine =
     .placeholder = ਖੋਜੋ ਜਾਂ ਸਿਰਨਾਵਾਂ ਦਿਓ
     .title = ਖੋਜੋ ਜਾਂ ਸਿਰਨਾਵਾਂ ਦਿਓ
     .aria-label = ਖੋਜੋ ਜਾਂ ਸਿਰਨਾਵਾਂ ਦਿਓ
-
 newtab-search-box-search-the-web-input =
     .placeholder = ਵੈੱਬ ਨੂੰ ਖੋਜੋ
     .title = ਵੈੱਬ ਨੂੰ ਖੋਜੋ
     .aria-label = ਵੈੱਬ ਨੂੰ ਖੋਜੋ
-
 newtab-search-box-text = ਵੈੱਬ ‘ਤੇ ਖੋਜੋ
 newtab-search-box-input =
     .placeholder = ਵੈੱਬ ‘ਤੇ ਖੋਜੋ
@@ -56,12 +53,10 @@ newtab-topsites-edit-shortcut-header = ਸ਼ਾਰਟਕੱਟ ਨੂੰ ਸੋਧ
 newtab-topsites-title-label = ਸਿਰਲੇਖ
 newtab-topsites-title-input =
     .placeholder = ਸਿਰਲੇਖ ਦਿਓ
-
 newtab-topsites-url-label = URL
 newtab-topsites-url-input =
     .placeholder = ਕੋਈ URL ਲਿਖੋ ਜਾਂ ਚੇਪੋ
 newtab-topsites-url-validation = ਲੋੜੀਂਦਾ URL ਯੋਗ ਹੈ
-
 newtab-topsites-image-url-label = URL ਕਸਟਮ ਚਿੱਤਰ
 newtab-topsites-use-image-link = ਕਸਟਮ ਚਿੱਤਰ ਵਰਤੋ…
 newtab-topsites-image-validation = ਚਿੱਤਰ ਲੋਡ ਕਰਨ ਤੋਂ ਅਸਫ਼ਲ ਰਿਹਾ। ਕਿਸੇ ਵੱਖਰੇ URL ਨਾਲ ਕੋਸ਼ਿਸ਼ ਕਰੋ।
@@ -90,12 +85,10 @@ newtab-topsite-sponsored = ਸਪੌਂਸਰ ਕੀਤਾ
 newtab-menu-section-tooltip =
     .title = ਮੇਨੂ ਖੋਲ੍ਹੋ
     .aria-label = ਮੇਨੂ ਖੋਲ੍ਹੋ
-
 # Tooltip for dismiss button
 newtab-dismiss-button-tooltip =
     .title = ਹਟਾਓ
     .aria-label = ਹਟਾਓ
-
 # This tooltip is for the context menu of Pocket cards or Topsites
 # Variables:
 #  $title (String): The label or hostname of the site. This is for screen readers when the context menu button is focused/active.
@@ -167,16 +160,19 @@ newtab-label-removed-bookmark = ਬੁੱਕਮਾਰਕ ਹਟਾਇਆ
 newtab-label-recommended = ਰੁਝਾਨ
 newtab-label-saved = { -pocket-brand-name } ਵਿੱਚ ਸੰਭਾਲਿਆ
 newtab-label-download = ਡਾਊਨਲੋਡ ਕਰੋ
-
 # This string is used in the story cards to indicate sponsored content
 # Variables:
 #  $sponsorOrSource (String): This is the name of a company or their domain
 newtab-label-sponsored = { $sponsorOrSource } · ਸਪਾਂਸਰ ਕੀਤਾ
-
 # This string is used at the bottom of story cards to indicate sponsored content
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = { $sponsor } ਵਲੋਂ ਸਪਾਂਸਰ ਕੀਤਾ
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } ਮਿੰਟ
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -211,7 +207,6 @@ newtab-section-header-pocket = { $provider } ਵਲੋਂ ਸਿਫਾਰਸ਼�
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
 newtab-empty-section-highlights = ਬਰਾਊਜ਼ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰੋ ਅਤੇ ਅਸੀਂ ਕੁਝ ਵਧੀਆ ਲੇਖ, ਵਿਡੀਓ ਤੇ ਤੁਹਾਡੇ ਵਲੋਂ ਖੋਲ੍ਹੋ ਗਏ ਜਾਂ ਬੁੱਕਮਾਰਕ ਕੀਤੇ ਹੋਰ ਸਫ਼ੇ ਇੱਥੇ ਦਿਖਾਵਾਂਗੇ।
-
 # Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 # Variables:
 #  $provider (String): Name of the content provider for this section, e.g "Pocket".
@@ -230,10 +225,25 @@ newtab-discovery-empty-section-topstories-timed-out = ਓਹ ਹੋ! ਅਸੀ�
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = ਹਰਮਨਪਿਆਰੇ ਵਿਸ਼ੇ:
+newtab-pocket-new-topics-title = ਹੋਰ ਲੇਖ ਚਾਹੁੰਦੇ ਹੋ? { -pocket-brand-name } ਵਲੋਂ ਇਹ ਹਰਮਨਪਿਆਰੇ ਵਿਸ਼ੇ ਵੇਖੋ
 newtab-pocket-more-recommendations = ਹੋਰ ਸਿਫਾਰਸ਼ਾਂ
 newtab-pocket-learn-more = ਹੋਰ ਜਾਣੋ
 newtab-pocket-cta-button = { -pocket-brand-name } ਲਵੋ
 newtab-pocket-cta-text = { -pocket-brand-name } ਵਿਚ ਆਪਣੀਆਂ ਕਹਾਣੀਆਂ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰੋ, ਅਤੇ ਆਪਣੇ ਮਨ ਨੂੰ ਦਿਲਚਸਪ ਪੜ੍ਹ ਕੇ ਮਜਬੂਰ ਕਰੋ।
+newtab-pocket-pocket-firefox-family = { -pocket-brand-name } { -brand-product-name } ਗਰੁੱਪ ਦਾ ਭਾਗ ਹੈ
+# A save to Pocket button that shows over the card thumbnail on hover.
+newtab-pocket-save-to-pocket = { -pocket-brand-name } ਵਿੱਚ ਸੰਭਾਲੋ
+newtab-pocket-saved-to-pocket = { -pocket-brand-name } ਵਿੱਚ ਸੰਭਾਲਿਆ
+# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
+newtab-pocket-load-more-stories-button = ਹੋਰ ਲੇਖ ਲੋਡ ਕਰੋ
+
+## Pocket Final Card Section.
+## This is for the final card in the Pocket grid.
+
+newtab-pocket-last-card-title = ਤੁਸੀਂ ਪੂਰੇ ਕਰ ਲਏ ਹਨ!
+newtab-pocket-last-card-desc = ਹੋਰਾਂ ਲਈ ਫੇਰ ਵੇਖਿਓ।
+newtab-pocket-last-card-image =
+    .alt = ਤੁਸੀਂ ਪੂਰੇ ਕਰ ਲਏ ਹਨ!
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.

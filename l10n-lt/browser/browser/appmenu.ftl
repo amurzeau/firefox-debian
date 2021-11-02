@@ -76,6 +76,8 @@ appmenu-remote-tabs-showmore =
 appmenu-remote-tabs-notabs = Nėra atvirų kortelių
 # This is shown when Sync is configured but syncing tabs is disabled.
 appmenu-remote-tabs-tabsnotsyncing = Įjunkite kortelių sinchronizavimą, norėdami peržiūrėti kituose įrenginiuose esančias korteles.
+appmenu-remote-tabs-opensettings =
+    .label = Nustatymai
 # This is shown when Sync is configured but this appears to be the only device attached to
 # the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Norite čia matyti savo korteles iš kitų įrenginių?
@@ -113,6 +115,15 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Profiliuoklė
+    .tooltiptext = Įrašyti našumo profilį
+profiler-popup-button-recording =
+    .label = Profiliuoklė
+    .tooltiptext = Profiliuoklė įrašinėja profilį
+profiler-popup-button-capturing =
+    .label = Profiliuoklė
+    .tooltiptext = Profiliuoklė fiksuoja profilį
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -121,10 +132,15 @@ profiler-popup-description-title =
     .value = Įrašykite, analizuokite, dalinkitės
 profiler-popup-description = Bendraukite spręsdami našumo problemas, paskelbdami profilius pasidalinimui su savo komanda.
 profiler-popup-learn-more = Sužinoti daugiau
+profiler-popup-learn-more-button =
+    .label = Sužinoti daugiau
 profiler-popup-settings =
     .value = Nuostatos
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Keisti nuostatas…
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Keisti nuostatas…
 profiler-popup-disabled = Profiliuoklė šiuo metu išjungta, greičiausiai dėl atverto privačiojo naršymo lango.
 profiler-popup-recording-screen = Įrašinėjama…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
@@ -147,6 +163,32 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+profiler-popup-presets-web-developer-description = Rekomenduojamas nustatymas daugelio saityno programų derinimui, su nedidelėmis sąnaudomis.
+profiler-popup-presets-web-developer-label =
+    .label = Saityno kūrėjams
+profiler-popup-presets-firefox-platform-description = Rekomenduojamas nustatymas vidinės „Firefox“ platformos derinimui.
+profiler-popup-presets-firefox-platform-label =
+    .label = „Firefox“ platforma
+profiler-popup-presets-firefox-front-end-description = Rekomenduojamas nustatymas vidinio „Firefox“ „front-end“ derinimui.
+profiler-popup-presets-firefox-front-end-label =
+    .label = „Firefox“ front-end
+profiler-popup-presets-firefox-graphics-description = Rekomenduojamas nustatymas „Firefox“ grafinio našumo tyrinėjimui.
+profiler-popup-presets-firefox-graphics-label =
+    .label = „Firefox“ grafika
+profiler-popup-presets-media-description = Rekomenduojamas nustatymas garso ir vaizdo problemų diagnozavimui.
+profiler-popup-presets-media-label =
+    .label = Medija
+profiler-popup-presets-custom-label =
+    .label = Kitas
 
 ## History panel
 

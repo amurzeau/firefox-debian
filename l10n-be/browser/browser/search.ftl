@@ -10,12 +10,17 @@
 
 opensearch-error-duplicate-title = Памылка ўсталявання
 opensearch-error-duplicate-desc = { -brand-short-name } не можа ўсталяваць плагін пошуку з “{ $location-url }”, бо рухавік з такой назваю ўжо існуе.
-
 opensearch-error-format-title = Некарэктны фармат
 opensearch-error-format-desc = { -brand-short-name } не можа ўсталяваць пашукавік з: { $location-url }
-
 opensearch-error-download-title = Памылка сцягвання
 opensearch-error-download-desc = { -brand-short-name } не можа сцягнуць плагін пошуку з: { $location-url }
 
 ##
 
+searchbar-submit =
+    .tooltiptext = Даслаць запыт
+# This string is displayed in the search box when the input field is empty
+searchbar-input =
+    .placeholder = Пошук
+searchbar-icon =
+    .tooltiptext = Пошук

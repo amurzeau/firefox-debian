@@ -64,6 +64,32 @@ upgrade-dialog-default-secondary-button = Non ora
 upgrade-dialog-theme-title-2 = Initia ben con un thema nitide
 upgrade-dialog-theme-system = Thema del systema
     .title = Sequer le themas del systema operative pro buttones, menus e fenestras
+
+## Start screen
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-start-title = Vita in colores
+upgrade-dialog-start-subtitle = Nove tonalitates vibrante. Disponibile pro tempore limitate.
+upgrade-dialog-start-primary-button = Discoperir combinationes de colores
+upgrade-dialog-start-secondary-button = Non ora
+
+## Colorway screen
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-colorway-title = Elige tu combination de colores
+# This is shown to users with a custom home page, so they can switch to default.
+upgrade-dialog-colorway-home-checkbox = Passar al Pagina initial de Firefox con uno plano de fundo a thema
+upgrade-dialog-colorway-primary-button = Salvar combination de colores
+upgrade-dialog-colorway-secondary-button = Mantener le previe thema
+upgrade-dialog-colorway-theme-tooltip =
+    .title = Discoperi le themas predefinite
+# $colorwayName (String) - Name of colorway, e.g., Abstract, Cheers
+upgrade-dialog-colorway-colorway-tooltip =
+    .title = Discoperi le combinationes de colores { $colorwayName }
+upgrade-dialog-colorway-default-theme = Predefinite
+# "Auto" is short for "Automatic"
+upgrade-dialog-colorway-theme-auto = Auto
+    .title = Usa le mesme thema del systema operative pro buttones, menu e fenestras
 upgrade-dialog-theme-light = Clar
     .title = Usar un thema clar pro buttones, menus e fenestras
 upgrade-dialog-theme-dark = Obscur
@@ -74,3 +100,18 @@ upgrade-dialog-theme-keep = Mantener le previe
     .title = Continuar a usar le thema jam installate ante le actualisation de { -brand-short-name }
 upgrade-dialog-theme-primary-button = Salvar le thema
 upgrade-dialog-theme-secondary-button = Non ora
+upgrade-dialog-colorway-variation-soft = Legier
+    .title = Usa iste combination de colores
+upgrade-dialog-colorway-variation-balanced = Balanciate
+    .title = Usa iste combination de colores
+# "Bold" is used in the sense of bravery or courage, not in the sense of
+# emphasized text.
+upgrade-dialog-colorway-variation-bold = Forte
+    .title = Usa iste combination de colores
+
+## Thank you screen
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-thankyou-title = Gratias pro haber eligite nos
+upgrade-dialog-thankyou-subtitle = { -brand-short-name } es un navigator independente supportate per un organisation non-lucrative. Insimul, nos rende le web plus secur, plus salubre e plus private.
+upgrade-dialog-thankyou-primary-button = Comenciar a navigar

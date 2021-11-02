@@ -7,7 +7,7 @@ account-setup-tab-title = Configuration de conto
 ## Header
 
 account-setup-title = Configura tu adresse email existente
-account-setup-description = Pro usar tu actual e-mail adresse plena tu credentiales.<br/>¶ { -brand-product-name } automaticamente cercara un configuration del servitor functionante e recommendate.
+account-setup-description = Pro usar tu actual e-mail adresse plena tu credentiales.<br/> { -brand-product-name } automaticamente cercara un configuration del servitor functionante e recommendate.
 account-setup-secondary-description = { -brand-product-name } cercara automaticamente un configuration functional et recommendate del servitor.
 account-setup-success-title = Conto create con successo
 account-setup-success-description = Ora tu pote usar iste conto con { -brand-short-name }.
@@ -155,6 +155,7 @@ account-setup-credentials-incomplete = Authentication fallite. O le credentiales
 account-setup-credentials-wrong = Authentication fallite. Verifica le nomine de usator e le contrasigno
 account-setup-find-settings-failed = { -brand-short-name } non ha potite trovar le parametros pro tu conto e-mail
 account-setup-exchange-config-unverifiable = Le configuration non pote esser verificate. Si tu nomine de usator e contrasigno es correcte, il es probabile que le administrator del servitor ha disactivate le configuration seligite pro tu conto. Prova seliger un altere protocollo.
+account-setup-provisioner-error = Un error occurreva durante le configuration del tu nove conto in { -brand-short-name }. Per favor, tenta de manualmente implementar tu conto con tu credentiales.
 
 ## Manual configuration area
 

@@ -23,7 +23,7 @@ this container is a toolbar. This avoids double-speaking. -->
 <!ENTITY navbar.accessibleLabel "Навігація">
 <!ENTITY fullScreenCmd.label "На весь екран">
 
-<!ENTITY pictureInPictureHideToggle.label "Приховати перемикач Зображення в зображенні">
+<!ENTITY pictureInPictureHideToggle.label "Сховати перемикач Зображення в зображенні">
 <!ENTITY pictureInPictureHideToggle.accesskey "х">
 
 
@@ -143,7 +143,7 @@ this container is a toolbar. This avoids double-speaking. -->
 <!ENTITY uiTour.infoPanel.close "Закрити">
 
 <!ENTITY panicButton.thankyou.msg1                "Вашу недавню історію видалено.">
-<!ENTITY panicButton.thankyou.msg2                "Безпечний перегляд!">
+<!ENTITY panicButton.thankyou.msg2                "Безпечного перегляду!">
 <!ENTITY panicButton.thankyou.buttonlabel         "Дякую!">
 
 <!ENTITY sendToDevice.syncNotReady.label "Синхронізовані пристрої…">

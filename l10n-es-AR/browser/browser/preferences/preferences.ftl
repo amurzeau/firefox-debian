@@ -213,7 +213,7 @@ choose-button =
     .accesskey = o
 choose-browser-language-description = Elegir los idiomas usados para mostrar menús, mensajes y notificaciones de { -brand-short-name }.
 manage-browser-languages-button =
-    .label = Establecer alternativos...
+    .label = Establecer alternativos…
     .accesskey = l
 confirm-browser-language-change-description = Reinicie { -brand-short-name } para aplicar estos cambios
 confirm-browser-language-change-button = Aplicar y reiniciar
@@ -530,8 +530,8 @@ home-prefs-snippets-description-new = Consejos y noticias de { -vendor-short-nam
 home-prefs-sections-rows-option =
     .label =
         { $num ->
-            [one] fila de { $num }
-           *[other] filas de { $num }
+            [one] { $num } fila
+           *[other] { $num } filas
         }
 
 ## Search Section

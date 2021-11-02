@@ -632,8 +632,8 @@ library-recent-activity-title =
 ## Pocket toolbar button
 
 save-to-pocket-button =
-    .label = Uložiť do { -pocket-brand-name }u
-    .tooltiptext = Uložiť do { -pocket-brand-name }u
+    .label = Uložiť do { -pocket-brand-name(case: "gen") }
+    .tooltiptext = Uložiť do { -pocket-brand-name(case: "gen") }
 
 ## Repair text encoding toolbar button
 
@@ -783,3 +783,9 @@ tabs-toolbar-new-tab =
 tabs-toolbar-list-all-tabs =
     .label = Zoznam všetkých kariet
     .tooltiptext = Zoznam všetkých kariet
+
+## Infobar shown at startup to suggest session-restore
+
+# <img data-l10n-name="icon"/> will be replaced by the application menu icon
+restore-session-startup-suggestion-message = <strong>Chcete otvoriť predchádzajúce karty?</strong> Predchádzajúcu reláciu môžete obnoviť z ponuky { -brand-short-name(case: "gen") } <img data-l10n-name="icon"/>, v časti História.
+restore-session-startup-suggestion-button = Ako na to

@@ -115,6 +115,15 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Profilowak
+    .tooltiptext = Natočće wukonowy profil
+profiler-popup-button-recording =
+    .label = Profilowak
+    .tooltiptext = Profilowak profil natoča.
+profiler-popup-button-capturing =
+    .label = Profilowak
+    .tooltiptext = Profilowak profil zapřijima
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -123,10 +132,15 @@ profiler-popup-description-title =
     .value = Natočić, analyzować, dźělić
 profiler-popup-description = Wozjewće profile a dźělće je ze swojim teamom, zo byšće na wukonowych problemach hromadźe dźěłali.
 profiler-popup-learn-more = Dalše informacije
+profiler-popup-learn-more-button =
+    .label = Dalše informacije
 profiler-popup-settings =
     .value = Nastajenja
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Nastajenja wobdźěłać…
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Nastajenja wobdźěłać…
 profiler-popup-disabled =
     Profilowak je tuchwilu znjemóžnjeny, najskerje dokelž priwatne wokno
     je wočinjene.
@@ -151,6 +165,27 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Strg+Umsch+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+profiler-popup-presets-web-developer-label =
+    .label = Webwuwiwar
+profiler-popup-presets-firefox-platform-label =
+    .label = Platforma Firefox
+profiler-popup-presets-firefox-front-end-label =
+    .label = Frontend Firefox
+profiler-popup-presets-firefox-graphics-label =
+    .label = Grafika Firefox
+profiler-popup-presets-media-label =
+    .label = Medije
+profiler-popup-presets-custom-label =
+    .label = Swójski
 
 ## History panel
 

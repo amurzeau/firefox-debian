@@ -65,7 +65,7 @@ return-to-amo-add-extension-label = Aggiungi l’estensione
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. { -brand-short-name } should stay inside the span.
 onboarding-multistage-welcome-header = Benvenuto in <span data-l10n-name="zap">{ -brand-short-name }</span>
-onboarding-multistage-welcome-subtitle = Il browser veloce, sicuro e riservato sostenuto da un’organizzazione senza fini di lucro.
+onboarding-multistage-welcome-subtitle = Il browser veloce, sicuro e rispettoso della privacy, sostenuto da un’organizzazione senza fini di lucro.
 onboarding-multistage-welcome-primary-button-label = Avvia la configurazione
 onboarding-multistage-welcome-secondary-button-label = Accedi
 onboarding-multistage-welcome-secondary-button-text = Hai già un account?
@@ -187,6 +187,24 @@ mr1-onboarding-import-primary-button-label-attribution = Importa da { $previous 
 # This string will be used in cases where we can't detect the previous browser name.
 mr1-onboarding-import-primary-button-label-no-attribution = Importa da un browser esistente
 mr1-onboarding-import-secondary-button-label = Non adesso
+
+mr2-onboarding-colorway-header = Una vita a colori
+mr2-onboarding-colorway-subtitle = Nuove vibranti tonalità. Disponibili per un periodo limitato.
+mr2-onboarding-colorway-primary-button-label = Salva tonalità
+mr2-onboarding-colorway-secondary-button-label = Non adesso
+mr2-onboarding-colorway-label-soft = Delicata
+mr2-onboarding-colorway-label-balanced = Bilanciata
+
+# "Bold" is used in the sense of bravery or courage, not in the sense of
+# emphasized text.
+mr2-onboarding-colorway-label-bold = Forte
+
+# Automatic theme uses operating system color settings
+mr2-onboarding-theme-label-auto = Automatico
+
+# This string will be used for Default theme
+mr2-onboarding-theme-label-default = Tema predefinito
+
 
 mr1-onboarding-theme-header = Uno stile unico
 mr1-onboarding-theme-subtitle = Personalizza { -brand-short-name } con un tema.
@@ -312,3 +330,37 @@ mr1-onboarding-theme-description-alpenglow =
   .aria-description =
     Utilizza una combinazione di colori dinamica
     e variegata per pulsanti, menu e finestre.
+
+# Tooltip displayed on hover of non-default colorway theme
+# variations e.g. soft, balanced, bold
+mr2-onboarding-theme-tooltip =
+  .title = Utilizza questa tonalità.
+
+# Selector description for non-default colorway theme
+# variations e.g. soft, balanced, bold
+mr2-onboarding-theme-description =
+  .aria-description = Utilizza questa tonalità.
+
+# Tooltip displayed on hover of colorway
+# Variables:
+#   $colorwayName (String) - Name of colorway
+mr2-onboarding-colorway-tooltip =
+  .title = Scopri le tonalità { $colorwayName }.
+
+# Selector description for colorway
+# Variables:
+#   $colorwayName (String) - Name of colorway
+mr2-onboarding-colorway-description =
+  .aria-description = Scopri le tonalità { $colorwayName }.
+
+# Tooltip displayed on hover of default themes
+mr2-onboarding-default-theme-tooltip =
+  .title = Scopri i temi predefiniti.
+
+# Selector description for default themes
+mr2-onboarding-default-theme-description =
+  .aria-description = Scopri i temi predefiniti.
+
+mr2-onboarding-thank-you-header = Grazie per averci scelto
+mr2-onboarding-thank-you-text = { -brand-short-name } è un browser indipendente sostenuto da un’organizzazione senza fini di lucro. Insieme possiamo rendere il Web più sicuro, più sano e più rispettoso della privacy.
+mr2-onboarding-start-browsing-button-label = Inizia a navigare

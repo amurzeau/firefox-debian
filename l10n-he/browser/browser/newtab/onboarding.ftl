@@ -132,6 +132,19 @@ mr1-onboarding-import-primary-button-label-attribution = ייבוא מ־{ $previ
 # This string will be used in cases where we can't detect the previous browser name.
 mr1-onboarding-import-primary-button-label-no-attribution = ייבוא מהדפדפן הקודם
 mr1-onboarding-import-secondary-button-label = לא כעת
+mr2-onboarding-colorway-header = החיים בצבע
+mr2-onboarding-colorway-subtitle = ערכות צבעים חדשים ותוססים. זמינים לזמן מוגבל.
+mr2-onboarding-colorway-primary-button-label = שמירת ערכת הצבעים
+mr2-onboarding-colorway-secondary-button-label = לא כעת
+mr2-onboarding-colorway-label-soft = רך
+mr2-onboarding-colorway-label-balanced = מאוזן
+# "Bold" is used in the sense of bravery or courage, not in the sense of
+# emphasized text.
+mr2-onboarding-colorway-label-bold = נועז
+# Automatic theme uses operating system color settings
+mr2-onboarding-theme-label-auto = אוטומטי
+# This string will be used for Default theme
+mr2-onboarding-theme-label-default = ברירת מחדל
 mr1-onboarding-theme-header = התאמה לטעם האישי שלך
 mr1-onboarding-theme-subtitle = התאמה אישית של { -brand-short-name } עם ערכת נושא.
 mr1-onboarding-theme-primary-button-label = שמירת ערכת נושא
@@ -237,3 +250,33 @@ mr1-onboarding-theme-description-alpenglow =
     .aria-description =
         שימוש בערכת נושא דינאמית וצבעונית עבור כפתורים,
         תפריטים וחלונות.
+# Tooltip displayed on hover of non-default colorway theme
+# variations e.g. soft, balanced, bold
+mr2-onboarding-theme-tooltip =
+    .title = שימוש בערכת צבעים זו.
+# Selector description for non-default colorway theme
+# variations e.g. soft, balanced, bold
+mr2-onboarding-theme-description =
+    .aria-description = שימוש בערכת צבעים זו.
+# Tooltip displayed on hover of colorway
+# Variables:
+#   $colorwayName (String) - Name of colorway
+mr2-onboarding-colorway-tooltip =
+    .title = עיון בערכות צבעים מסוג { $colorwayName }.
+# Selector description for colorway
+# Variables:
+#   $colorwayName (String) - Name of colorway
+mr2-onboarding-colorway-description =
+    .aria-description = עיון בערכות צבעים מסוג { $colorwayName }.
+# Tooltip displayed on hover of default themes
+mr2-onboarding-default-theme-tooltip =
+    .title = עיון בערכות נושא ברירת מחדל.
+# Selector description for default themes
+mr2-onboarding-default-theme-description =
+    .aria-description = עיון בערכות נושא ברירת מחדל.
+
+## Strings for Thank You page
+
+mr2-onboarding-thank-you-header = תודה רבה שבחרת בנו
+mr2-onboarding-thank-you-text = ‏{ -brand-short-name } הוא דפדפן עצמאי המגובה על־ידי עמותה שאינה למטרות רווח. יחד, אנו הופכים את האינטרנט לבטוח, בריא ופרטי יותר.
+mr2-onboarding-start-browsing-button-label = התחלת גלישה

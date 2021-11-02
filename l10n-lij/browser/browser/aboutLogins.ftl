@@ -4,14 +4,9 @@
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = Login e Poule segrete
-
-# "Google Play" and "App Store" are both branding and should not be translated
-
 login-filter =
     .placeholder = Çerca inti login
-
 create-login-button = Crea neuvo login
-
 fxaccounts-sign-in-sync-button = Acedi a sync
 fxaccounts-avatar-button =
     .title = Gestisci conto
@@ -44,11 +39,13 @@ login-list-count =
 login-list-sort-label-text = Ordina pe:
 login-list-name-option = Nommi (A-Z)
 login-list-name-reverse-option = Nommi (Z-A)
+login-list-username-reverse-option = Nomme utente (Z-A)
 about-logins-login-list-alerts-option = Alarmi
 login-list-last-changed-option = Urtimo cangiamento
 login-list-last-used-option = Urtima vòtta
 login-list-intro-title = Nisciun acesso trovou
 about-logins-login-list-empty-search-title = Nisciun acesso trovou
+about-logins-login-list-empty-search-description = No gh'é exiti da teu riçerca
 login-list-item-title-new-login = Nuovo login
 login-list-item-subtitle-new-login = Scrivi e teu credensiali
 login-list-item-subtitle-missing-username = (nisciun nomme utente)
@@ -56,8 +53,15 @@ about-logins-list-item-breach-icon =
     .title = Scito ch'o viola i dæti
 about-logins-list-item-vulnerable-password-icon =
     .title = Poula segreta vulnerabile
+about-logins-list-section-breach = Scito con violaçioin
+about-logins-list-section-vulnerable = Poula segreta vulnerabile
+about-logins-list-section-nothing = Nisciun avizo
+about-logins-list-section-today = Ancheu
+about-logins-list-section-yesterday = Vei
+about-logins-list-section-week = Urtimi 7 giorni
 
 ## Introduction screen
+
 
 ## Login
 
@@ -95,12 +99,9 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = cangia l'acesso sarvou
-
 # This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = mostra e poule segrete
-
-## Master Password notification
 
 ## Primary Password notification
 
@@ -108,28 +109,29 @@ master-password-reload-button =
     .label = Intra
     .accesskey = I
 
-## Password Sync notification
-
 ## Dialogs
 
 confirmation-dialog-cancel-button = Anulla
 confirmation-dialog-dismiss-button =
     .title = Anulla
-
 about-logins-confirm-remove-dialog-title = Scancelâ st'acesso?
 confirm-delete-dialog-message = St'açion a no peu ese anula.
 about-logins-confirm-remove-dialog-confirm-button = Scancella
-
 about-logins-confirm-export-dialog-title = Espòrta acessi e poule segrete
 about-logins-confirm-export-dialog-confirm-button = Espòrta…
-
+about-logins-alert-import-title = Inportaçion terminâ
 confirm-discard-changes-dialog-confirm-button = Ignòra
 
 ## Breach Alert notification
 
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = Vànni a { $hostname }
+about-logins-breach-alert-learn-more-link = Atre informaçioin
 
 ## Vulnerable Password notification
 
+about-logins-vulnerable-alert-title = Poula segreta vulnerabile
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
 about-logins-vulnerable-alert-link = Vànni a { $hostname }
@@ -139,6 +141,10 @@ about-logins-vulnerable-alert-link = Vànni a { $hostname }
 
 ## Login Export Dialog
 
+# The default file name shown in the file picker when exporting saved logins.
+# This must end in .csv
+about-logins-export-file-picker-default-filename = acesci.csv
+about-logins-export-file-picker-export-button = Espòrta
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
 about-logins-export-file-picker-csv-filter-title =
@@ -149,11 +155,34 @@ about-logins-export-file-picker-csv-filter-title =
 
 ## Login Import Dialog
 
+# Title of the file picker dialog
+about-logins-import-file-picker-title = Inpòrta file de acesso
+about-logins-import-file-picker-import-button = Inpòrta
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-import-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] Documento CSV
+       *[other] Schedaio CSV
+    }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] Documento TSV
+       *[other] Schedaio TSV
+    }
 
 ##
 ## Variables:
 ##  $count (number) - The number of affected elements
 
+about-logins-import-dialog-title = Inportaçion terminâ
+about-logins-import-dialog-error-cancel = Anulla
+#
+# Variables:
+#  $number (number) - The number of the row
+about-logins-import-report-row-index = Linia { $number }
 
 ##
 ## Variables:

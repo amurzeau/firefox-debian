@@ -115,6 +115,15 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = 效能檢測器
+    .tooltiptext = 紀錄效能檢測檔
+profiler-popup-button-recording =
+    .label = 效能檢測器
+    .tooltiptext = 檢測器正在紀錄效能檢測檔
+profiler-popup-button-capturing =
+    .label = 效能檢測器
+    .tooltiptext = 檢測器正在紀錄效能檢測檔
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -123,10 +132,15 @@ profiler-popup-description-title =
     .value = 紀錄、分析、分享
 profiler-popup-description = 與您的團隊分享效能測量資訊，一同解決效能問題。
 profiler-popup-learn-more = 了解更多
+profiler-popup-learn-more-button =
+    .label = 了解更多
 profiler-popup-settings =
     .value = 設定
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = 編輯設定值…
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = 編輯設定值…
 profiler-popup-disabled = Profiler 目前已停用，可能是因為開啟了隱私瀏覽視窗。
 profiler-popup-recording-screen = 記錄中…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
@@ -149,6 +163,32 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+profiler-popup-presets-web-developer-description = 推薦於對大部分網頁應用程式除錯時使用，額外負荷較低。
+profiler-popup-presets-web-developer-label =
+    .label = 網頁開發者
+profiler-popup-presets-firefox-platform-description = 推薦於 Firefox 內部平台除錯時使用。
+profiler-popup-presets-firefox-platform-label =
+    .label = Firefox 平台
+profiler-popup-presets-firefox-front-end-description = 推薦於 Firefox 內部前端介面除錯時使用。
+profiler-popup-presets-firefox-front-end-label =
+    .label = Firefox 前端
+profiler-popup-presets-firefox-graphics-description = 推薦於檢查 Firefox 圖形效能問題時使用。
+profiler-popup-presets-firefox-graphics-label =
+    .label = Firefox 圖形
+profiler-popup-presets-media-description = 推薦於診斷 Firefox 影音問題時使用。
+profiler-popup-presets-media-label =
+    .label = 媒體
+profiler-popup-presets-custom-label =
+    .label = 自訂
 
 ## History panel
 

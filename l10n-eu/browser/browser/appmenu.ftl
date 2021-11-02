@@ -115,6 +115,15 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Profil sortzailea
+    .tooltiptext = Grabatu errendimenduaren profila
+profiler-popup-button-recording =
+    .label = Profil sortzailea
+    .tooltiptext = Profil sortzailea profila grabatzen ari da
+profiler-popup-button-capturing =
+    .label = Profil sortzailea
+    .tooltiptext = Profil sortzailea profila kapturatzen ari da
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -123,10 +132,15 @@ profiler-popup-description-title =
     .value = Grabatu, analizatu, partekatu
 profiler-popup-description = Elkarrekin lan egin errendimenduaren gaineko arazoetan, zure taldearekin partekatzeko profilak argitaratuz.
 profiler-popup-learn-more = Argibide gehiago
+profiler-popup-learn-more-button =
+    .label = Argibide gehiago
 profiler-popup-settings =
     .value = Ezarpenak
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Editatu ezarpenak…
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Editatu ezarpenak…
 profiler-popup-disabled =
     Profil sortzailea une honetan desgaituta dago, ziurrenik nabigatze pribatuko
     leihoa zabalik dagoelako.
@@ -151,6 +165,32 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+profiler-popup-presets-web-developer-description = Web aplikazio gehienen arazketarako gomendatutako aurrezarpena, eragin negatibo txikiarekin.
+profiler-popup-presets-web-developer-label =
+    .label = Web garapena
+profiler-popup-presets-firefox-platform-description = Firefox plataformaren barneko arazketarako gomendatutako aurrezarpena.
+profiler-popup-presets-firefox-platform-label =
+    .label = Firefox Plataforma
+profiler-popup-presets-firefox-front-end-description = Firefox frontend-aren barneko arazketarako gomendatutako aurrezarpena.
+profiler-popup-presets-firefox-front-end-label =
+    .label = Firefox Frontend
+profiler-popup-presets-firefox-graphics-description = Firefox grafikoen errendimenduaren ikerketarako gomendatutako aurrezarpena.
+profiler-popup-presets-firefox-graphics-label =
+    .label = Firefox Grafikoak
+profiler-popup-presets-media-description = Audio- eta bideo-arazoak diagnostikatzeko gomendatutako aurrezarpena.
+profiler-popup-presets-media-label =
+    .label = Multimedia
+profiler-popup-presets-custom-label =
+    .label = Pertsonalizatua
 
 ## History panel
 

@@ -115,6 +115,15 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Profiler
+    .tooltiptext = Ghi lại hồ sơ hiệu suất
+profiler-popup-button-recording =
+    .label = Profiler
+    .tooltiptext = Profiler đang ghi lại một hồ sơ
+profiler-popup-button-capturing =
+    .label = Profiler
+    .tooltiptext = Profiler đang ghi một hồ sơ
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -123,10 +132,15 @@ profiler-popup-description-title =
     .value = Ghi lại, phân tích, chia sẻ
 profiler-popup-description = Cộng tác về các vấn đề hiệu suất bằng cách xuất bản hồ sơ để chia sẻ với nhóm của bạn.
 profiler-popup-learn-more = Tìm hiểu thêm
+profiler-popup-learn-more-button =
+    .label = Tìm hiểu thêm
 profiler-popup-settings =
     .value = Cài đặt
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Chỉnh sửa cài đặt…
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Chỉnh sửa cài đặt…
 profiler-popup-disabled =
     Profiler hiện bị vô hiệu hóa, rất có thể do cửa sổ Duyệt web riêng tư
     đang mở.
@@ -151,6 +165,32 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+profiler-popup-presets-web-developer-description = Cài đặt trước được đề xuất cho hầu hết gỡ lỗi ứng dụng web, với chi phí thấp.
+profiler-popup-presets-web-developer-label =
+    .label = Web Developer
+profiler-popup-presets-firefox-platform-description = Cấu hình được đề xuất để gỡ lỗi nền tảng Firefox nội bộ.
+profiler-popup-presets-firefox-platform-label =
+    .label = Firefox Platform
+profiler-popup-presets-firefox-front-end-description = Cấu hình được đề xuất để gỡ lỗi giao diện người dùng nội bộ của Firefox.
+profiler-popup-presets-firefox-front-end-label =
+    .label = Firefox Front-End
+profiler-popup-presets-firefox-graphics-description = Cấu hình được đề xuất để điều tra hiệu suất đồ họa của Firefox.
+profiler-popup-presets-firefox-graphics-label =
+    .label = Firefox Graphics
+profiler-popup-presets-media-description = Cấu hình được đề xuất để chẩn đoán các vấn đề về âm thanh và video.
+profiler-popup-presets-media-label =
+    .label = Media
+profiler-popup-presets-custom-label =
+    .label = Tùy chỉnh
 
 ## History panel
 

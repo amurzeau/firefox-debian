@@ -20,7 +20,6 @@ places-open-in-window =
 places-open-in-private-window =
     .label = เปิดในหน้าต่างส่วนตัวใหม่
     .accesskey = P
-
 places-add-bookmark =
     .label = เพิ่มที่คั่นหน้า…
     .accesskey = B
@@ -33,7 +32,6 @@ places-add-folder =
 places-add-separator =
     .label = เพิ่มตัวแบ่ง
     .accesskey = S
-
 places-view =
     .label = มุมมอง
     .accesskey = ม
@@ -52,12 +50,12 @@ places-by-last-visited =
 places-by-day-and-site =
     .label = ตามวันที่และไซต์
     .accesskey = ต
-
 places-history-search =
     .placeholder = ค้นหาประวัติ
+places-history =
+    .aria-label = ประวัติ
 places-bookmarks-search =
     .placeholder = ค้นหาที่คั่นหน้า
-
 places-delete-domain-data =
     .label = ลืมเกี่ยวกับไซต์นี้
     .accesskey = ม
@@ -81,22 +79,18 @@ places-remove-folder =
            *[other] ลบโฟลเดอร์
         }
     .accesskey = m
-
 places-edit-folder2 =
     .label = แก้ไขโฟลเดอร์
     .accesskey = i
-
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
     .label = ที่คั่นหน้าที่ถูกจัดการ
 # This label is used when a managed bookmarks folder doesn't have a name.
 managed-bookmarks-subfolder =
     .label = โฟลเดอร์ย่อย
-
 # This label is used for the "Other Bookmarks" folder that appears in the bookmarks toolbar.
 other-bookmarks-folder =
     .label = ที่คั่นหน้าอื่น ๆ
-
 # Variables:
 # $count (number) - The number of elements being selected for removal.
 places-remove-bookmark =
@@ -106,8 +100,89 @@ places-remove-bookmark =
            *[other] เอาที่คั่นหน้าออก
         }
     .accesskey = e
-
 places-manage-bookmarks =
     .label = จัดการที่คั่นหน้า
     .accesskey = M
-
+places-library =
+    .title = ห้องสมุด
+    .style = width:700px; height:500px;
+places-organize-button =
+    .label = จัดระเบียบ
+    .tooltiptext = จัดระเบียบที่คั่นหน้าของคุณ
+    .accesskey = จ
+places-organize-button-mac =
+    .label = จัดระเบียบ
+    .tooltiptext = จัดระเบียบที่คั่นหน้าของคุณ
+places-file-close =
+    .label = ปิด
+    .accesskey = ป
+places-cmd-close =
+    .key = w
+places-view-button =
+    .label = มุมมอง
+    .tooltiptext = เปลี่ยนมุมมองของคุณ
+    .accesskey = ม
+places-view-button-mac =
+    .label = มุมมอง
+    .tooltiptext = เปลี่ยนมุมมองของคุณ
+places-view-menu-columns =
+    .label = แสดงคอลัมน์
+    .accesskey = ส
+places-view-menu-sort =
+    .label = เรียง
+    .accesskey = ร
+places-view-sort-unsorted =
+    .label = ไม่เรียง
+    .accesskey = ม
+places-view-sort-ascending =
+    .label = เรียงลำดับ A > Z
+    .accesskey = A
+places-view-sort-descending =
+    .label = เรียงลำดับ Z > A
+    .accesskey = Z
+places-maintenance-button =
+    .label = นำเข้าและสำรองข้อมูล
+    .tooltiptext = นำเข้าและสำรองที่คั่นหน้าของคุณ
+    .accesskey = น
+places-maintenance-button-mac =
+    .label = นำเข้าและสำรองข้อมูล
+    .tooltiptext = นำเข้าและสำรองที่คั่นหน้าของคุณ
+places-cmd-backup =
+    .label = สำรองข้อมูล…
+    .accesskey = ง
+places-cmd-restore =
+    .label = เรียกคืน
+    .accesskey = ร
+places-cmd-restore-from-file =
+    .label = เลือกไฟล์…
+    .accesskey = ล
+places-import-bookmarks-from-html =
+    .label = นำเข้าที่คั่นหน้าจาก HTML…
+    .accesskey = น
+places-export-bookmarks-to-html =
+    .label = ส่งออกที่คั่นหน้าเป็น HTML…
+    .accesskey = ส
+places-import-other-browser =
+    .label = นำเข้าข้อมูลจากเบราว์เซอร์อื่น…
+    .accesskey = อ
+places-view-sort-col-name =
+    .label = ชื่อ
+places-view-sort-col-tags =
+    .label = ป้ายกำกับ
+places-view-sort-col-url =
+    .label = ตำแหน่งที่ตั้ง
+places-view-sort-col-most-recent-visit =
+    .label = วันที่เยี่ยมชมล่าสุด
+places-view-sort-col-visit-count =
+    .label = จำนวนการเข้าชม
+places-view-sort-col-date-added =
+    .label = วันที่เพิ่ม
+places-view-sort-col-last-modified =
+    .label = วันที่เปลี่ยนแปลงล่าสุด
+places-cmd-find-key =
+    .key = f
+places-back-button =
+    .tooltiptext = ย้อนกลับ
+places-forward-button =
+    .tooltiptext = เดินหน้า
+places-details-pane-select-an-item-description = เลือกรายการเพื่อดูและแก้ไขคุณสมบัติ
