@@ -1422,6 +1422,15 @@
 #endif
   mirror: always
 
+#ifdef XP_WIN
+  # allow to copy clipboard data to Clipboard History/Cloud
+  # (used on sensitive data in about:logins and Private Browsing)
+-   name: clipboard.copyPrivateDataToClipboardCloudOrHistory
+    type: bool
+    value: false
+    mirror: always
+#endif
+
 #---------------------------------------------------------------------------
 # Prefs starting with "consoleservice."
 #---------------------------------------------------------------------------
@@ -1486,11 +1495,11 @@
 # 2 = bail if there are pending events
 - name: content.sink.pending_event_mode
   type: int32_t
-# ifdef XP_WIN
+#ifdef XP_WIN
   value: 1
-# else
+#else
   value: 0
-# endif
+#endif
   mirror: always
 
 # How often to probe for pending events. 1 = every token.
@@ -4700,7 +4709,7 @@
 
 - name: gfx.e10s.font-list.shared
   type: bool
-  value: true
+  value: false
   mirror: once
 
 # [Windows] Whether registry FontSubstitutes entries are used unconditionally,
@@ -4714,11 +4723,7 @@
 
 - name: gfx.font-list-omt.enabled
   type: bool
-#if defined(XP_MACOSX)
-  value: true
-#else
   value: false
-#endif
   mirror: once
 
 # Whether to load fonts (e.g. Twemoji Mozilla) bundled with the application:
@@ -9688,11 +9693,11 @@
 # Allow network detection of IPv6 related changes (bug 1245059)
 - name: network.notify.IPv6
   type: RelaxedAtomicBool
-# ifdef XP_WIN
+#ifdef XP_WIN
   value: false
-# else
+#else
   value: true
-# endif
+#endif
   mirror: always
 
 # Whether to check the dnsSuffix on network changes
