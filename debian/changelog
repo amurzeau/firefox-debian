@@ -1,3 +1,23 @@
+firefox (94.0-2) unstable; urgency=medium
+
+  * debian/firefox.in: Use `command -v` instead of `which`. Does not affect
+    this package, though.
+
+  * .cargo/config.in, Cargo.lock, Cargo.toml,
+    third_party/rust/cc/.cargo-checksum.json,
+    third_party/rust/cc/Cargo.toml, third_party/rust/cc/src/lib.rs,
+    third_party/rust/cc/src/windows_registry.rs: Update cc crate to
+    b2f6b146b75299c444e05bbde50d03705c7c4b6e, aka 1.0.71 + GCC-11 fix for
+    armhf. bz#1739040.
+  * .cargo/config.in, Cargo.lock,
+    third_party/rust/cubeb-pulse/.cargo-checksum.json,
+    third_party/rust/cubeb-pulse/src/backend/stream.rs,
+    toolkit/library/rust/shared/Cargo.toml: Upgrade cubeb-pulse to fix a race
+    condition that can lead to shutdown deadlock. bz#1735905.
+    (suspected to) Closes: #998108.
+
+ -- Mike Hommey <glandium@debian.org>  Thu, 11 Nov 2021 16:32:50 +0900
+
 firefox (94.0-1) unstable; urgency=medium
 
   * New upstream release.
