@@ -539,9 +539,8 @@ dependencies = [
 
 [[package]]
 name = "cc"
-version = "1.0.68"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4a72c244c1ff497a746a7e1fb3d14bd08420ecda70c8f25c7112f2781652d787"
+version = "1.0.71"
+source = "git+https://github.com/alexcrichton/cc-rs/?rev=b2f6b146b75299c444e05bbde50d03705c7c4b6e#b2f6b146b75299c444e05bbde50d03705c7c4b6e"
 
 [[package]]
 name = "cert_storage"
@@ -1059,7 +1058,7 @@ dependencies = [
 [[package]]
 name = "cubeb-pulse"
 version = "0.3.0"
-source = "git+https://github.com/mozilla/cubeb-pulse-rs?rev=e9e55a4529642da99e64452467ecaef9f7753531#e9e55a4529642da99e64452467ecaef9f7753531"
+source = "git+https://github.com/mozilla/cubeb-pulse-rs?rev=9695281319fcb3e40db6a32cc0661548d6192f4d#9695281319fcb3e40db6a32cc0661548d6192f4d"
 dependencies = [
  "cubeb-backend",
  "pulse",
@@ -3935,7 +3934,7 @@ dependencies = [
 [[package]]
 name = "pulse"
 version = "0.3.0"
-source = "git+https://github.com/mozilla/cubeb-pulse-rs?rev=e9e55a4529642da99e64452467ecaef9f7753531#e9e55a4529642da99e64452467ecaef9f7753531"
+source = "git+https://github.com/mozilla/cubeb-pulse-rs?rev=9695281319fcb3e40db6a32cc0661548d6192f4d#9695281319fcb3e40db6a32cc0661548d6192f4d"
 dependencies = [
  "bitflags",
  "pulse-ffi",
@@ -3944,7 +3943,7 @@ dependencies = [
 [[package]]
 name = "pulse-ffi"
 version = "0.1.0"
-source = "git+https://github.com/mozilla/cubeb-pulse-rs?rev=e9e55a4529642da99e64452467ecaef9f7753531#e9e55a4529642da99e64452467ecaef9f7753531"
+source = "git+https://github.com/mozilla/cubeb-pulse-rs?rev=9695281319fcb3e40db6a32cc0661548d6192f4d#9695281319fcb3e40db6a32cc0661548d6192f4d"
 dependencies = [
  "libc",
 ]
