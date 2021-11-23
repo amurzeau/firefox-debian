@@ -307,20 +307,33 @@ def repackage_msix(
         # Release (official) and Beta share branding.  Differentiate Beta a little bit.
         brandFullName += " Beta"
 
-    # We don't have a build at repackage-time to gives us this value, and the
+    # We don't have a build at repackage-time to give us these values, and the
     # source of truth is a branding-specific `configure.sh` shell script that we
-    # can't easily evaluate completely here.  Instead, we take the last value
-    # from `configure.sh`.
-    lines = [
-        line
-        for line in open(mozpath.join(branding, "configure.sh")).readlines()
-        if "MOZ_IGECKOBACKCHANNEL_IID" in line
-    ]
-    MOZ_IGECKOBACKCHANNEL_IID = lines[-1]
-    _, _, MOZ_IGECKOBACKCHANNEL_IID = MOZ_IGECKOBACKCHANNEL_IID.partition("=")
-    MOZ_IGECKOBACKCHANNEL_IID = MOZ_IGECKOBACKCHANNEL_IID.strip()
-    if MOZ_IGECKOBACKCHANNEL_IID.startswith(('"', "'")):
-        MOZ_IGECKOBACKCHANNEL_IID = MOZ_IGECKOBACKCHANNEL_IID[1:-1]
+    # can't easily evaluate completely here.  Instead, we choose a value from
+    # `configure.sh` depending on the channel.
+    brandingUuids = {}
+    lines = open(mozpath.join(branding, "configure.sh")).readlines()
+    # For official (release) and unofficial channels, we want the second UUID in
+    # configure.sh. For official, this is because the first set of UUIDs are for
+    # beta, but we want release. For unofficial, the first set of UUIDs are for
+    # debug builds; we assume non-debug here.
+    if channel in ("official", "unofficial"):
+        # To get the last UUID, we reverse the lines.
+        lines.reverse()
+    for key in (
+        "MOZ_IGECKOBACKCHANNEL_IID",
+        "MOZ_IHANDLERCONTROL_IID",
+        "MOZ_ASYNCIHANDLERCONTROL_IID",
+    ):
+        for line in lines:
+            if key not in line:
+                continue
+            _, _, uuid = line.partition("=")
+            uuid = uuid.strip()
+            if uuid.startswith(('"', "'")):
+                uuid = uuid[1:-1]
+            brandingUuids[key] = uuid
+            break
 
     # The convention is $MOZBUILD_STATE_PATH/cache/$FEATURE.
     output_dir = mozpath.normsep(
@@ -480,8 +493,8 @@ def repackage_msix(
         "APPX_VERSION": version,
         "MOZ_APP_DISPLAYNAME": displayname,
         "MOZ_APP_NAME": app_name,
-        "MOZ_IGECKOBACKCHANNEL_IID": MOZ_IGECKOBACKCHANNEL_IID,
     }
+    defines.update(brandingUuids)
 
     m.add_preprocess(
         mozpath.join(template, "AppxManifest.xml.in"),
