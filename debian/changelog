@@ -1,3 +1,9 @@
+firefox (94.0.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 24 Nov 2021 06:57:55 +0900
+
 firefox (94.0-2) unstable; urgency=medium
 
   * debian/firefox.in: Use `command -v` instead of `which`. Does not affect
