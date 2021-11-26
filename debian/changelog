@@ -1,3 +1,17 @@
+firefox-esr (91.3.0esr-2) unstable; urgency=medium
+
+  * debian/firefox.in: Use `command -v` instead of `which`. Closes: #996455.
+
+  * modules/fdlibm/src/math_private.h: Fix FTBFS on i386. bz#1729459.
+  * .cargo/config.in, Cargo.lock, Cargo.toml,
+    third_party/rust/cc/.cargo-checksum.json,
+    third_party/rust/cc/Cargo.toml, third_party/rust/cc/src/lib.rs,
+    third_party/rust/cc/src/windows_registry.rs: Update cc crate to
+    b2f6b146b75299c444e05bbde50d03705c7c4b6e, aka 1.0.71 + GCC-11 fix for
+    armhf. bz#1739040.
+
+ -- Mike Hommey <glandium@debian.org>  Sat, 27 Nov 2021 06:50:56 +0900
+
 firefox-esr (91.3.0esr-1) unstable; urgency=medium
 
   * New upstream release.
