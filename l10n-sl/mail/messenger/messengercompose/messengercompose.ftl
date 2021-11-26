@@ -6,8 +6,6 @@
 # Addressing widget
 
 #   $type (String) - the type of the addressing row
-remove-address-row-type = Odstrani polje { $type }
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Odstrani polje { $type }
 #   $type (String) - the type of the addressing row
@@ -68,6 +66,10 @@ toolbar-button-add-attachment =
 add-attachment-notification-reminder =
     .label = Dodaj priponko …
     .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+add-attachment-notification-reminder2 =
+    .label = Dodaj priponko …
+    .accesskey = p
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 menuitem-attach-files =
     .label = Datoteke …
     .accesskey = D
@@ -87,23 +89,14 @@ attachment-bucket-count =
            *[other] { $count } priponke
         }
     .accesskey = p
-#   $count (Number) - the number of attachments in the attachment bucket
-attachments-placeholder-tooltip =
-    .tooltiptext =
-        { $count ->
-            [1] { $count } priponka
-            [one] { $count } priponka
-            [two] { $count } priponki
-            [few] { $count } priponke
-           *[other] { $count } priponk
-        }
-#   { attachment-bucket-count.accesskey } - Do not localize this message.
-key-toggle-attachment-pane =
-    .key = { attachment-bucket-count.accesskey }
 expand-attachment-pane-tooltip =
     .tooltiptext = Prikaži podokno s priponkami ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
     .tooltiptext = Skrij podokno s priponkami ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-show =
+    .title = Prikaži podokno s priponkami ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-hide =
+    .title = Skrij podokno s priponkami ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 drop-file-label-attachment =
     { $count ->
         [one] Dodaj kot priponko
@@ -191,18 +184,34 @@ show-to-row-button = Za
     .title = Prikaži polje Za ({ ctrl-cmd-shift-pretty-prefix }{ $key })
 cc-address-row-label =
     .value = Kp
+#   $key (String) - the shortcut key for this field
+show-cc-row-main-menuitem =
+    .label = Polje Kp
+    .accesskey = K
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
 # No acceltext should be shown.
 # The label should match the show-cc-row-button text.
 show-cc-row-extra-menuitem =
     .label = Kp
     .accesskey = K
+#   $key (String) - the shortcut key for this field
+show-cc-row-button = Kp
+    .title = Prikaži polje Kp ({ ctrl-cmd-shift-pretty-prefix }{ $key })
 bcc-address-row-label =
     .value = Skp
+#   $key (String) - the shortcut key for this field
+show-bcc-row-main-menuitem =
+    .label = Polje Skp
+    .accesskey = S
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
 # No acceltext should be shown.
 # The label should match the show-bcc-row-button text.
 show-bcc-row-extra-menuitem =
     .label = Skp
     .accesskey = S
+#   $key (String) - the shortcut key for this field
+show-bcc-row-button = Skp
+    .title = Prikaži polje Skp ({ ctrl-cmd-shift-pretty-prefix }{ $key })
 extra-address-rows-menu-button =
     .title = Druga polja za naslavljanje, ki naj bodo prikazana
 #   $count (Number) - the count of addresses in the "To" and "Cc" fields.
@@ -220,6 +229,14 @@ many-public-recipients-ignore =
     .label = Naj bodo prejemniki javni
     .accesskey = N
 many-public-recipients-prompt-title = Preveč javnih prejemnikov
+#   $count (Number) - the count of addresses in the public recipients fields.
+many-public-recipients-prompt-msg =
+    { $count ->
+        [one] Sporočilo ima javnega prejemnika. Če to ogroža njegovo zasebnost, se lahko temu izognete tako, da ga premaknete iz polja Za/Kp v Skp.
+        [two] Sporočilo ima { $count } javna prejemnika. Če to ogroža njuno zasebnost, se lahko temu izognete tako, da ju premaknete iz polja Za/Kp v Skp.
+        [few] Sporočilo ima { $count } javne prejemnike. Če to ogroža njihovo zasebnost, se lahko temu izognete tako, da jih premaknete iz polja Za/Kp v Skp.
+       *[other] Sporočilo ima { $count } javnih prejemnikov. Če to ogroža njihovo zasebnost, se lahko temu izognete tako, da jih premaknete iz polja Za/Kp v Skp.
+    }
 many-public-recipients-prompt-cancel = Prekliči pošiljanje
 many-public-recipients-prompt-send = Vseeno pošlji
 

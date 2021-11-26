@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Legg til i adresselinja
 page-action-manage-extension =
     .label = Handter utviding…
-page-action-remove-from-urlbar =
-    .label = Fjern fra adresselinja
 page-action-remove-extension =
     .label = Fjern utviding
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Søk ein gong med:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Endre søkjeinnstillingar
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Endre søkjeinnstillingar
 search-one-offs-context-open-new-tab =
@@ -250,8 +242,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Vis redigerar ved lagring
     .accesskey = V
-bookmark-panel-done-button =
-    .label = Ferdig
 bookmark-panel-save-button =
     .label = Lagre
 # Width of the bookmark panel.
@@ -281,8 +271,6 @@ identity-passive-loaded = Delar av denne sida er ikkje trygg (til dømes bilde).
 identity-active-loaded = Du har slått av vern på denne sida.
 identity-weak-encryption = Denne sida brukar ei svak kryptering.
 identity-insecure-login-forms = Innloggingsinfo skrive inn på denne sida kan lesast av tredjepart.
-identity-permissions =
-    .value = Løyve
 identity-https-only-connection-upgraded = (oppgradert til HTTPS)
 identity-https-only-label = Berre-HTTPS-modus
 identity-https-only-dropdown-on =
@@ -298,7 +286,6 @@ identity-permissions-storage-access-header = Infokapslar på tvers av nettstadar
 identity-permissions-storage-access-hint = Desse partane kan bruke infokapslar på tvers av nettstadar og nettstaddata medan du er på denne nettstaden.
 identity-permissions-storage-access-learn-more = Les meir
 identity-permissions-reload-hint = Du må kanskje laste sida på nytt for at endringane skal gjelde.
-identity-permissions-empty = Du har ikkje gjeve denne nettstaden spesielle løyve.
 identity-clear-site-data =
     .label = Slett infokapslar og nettstaddata…
 identity-connection-not-secure-security-view = Du er ikkje trygt kopla til denne nettstaden.
@@ -380,12 +367,6 @@ bookmarks-toolbar-empty-message = Plasser bokmerka dine her på bokmerkeverktøy
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Kamera som vert delt:
-    .accesskey = K
-popup-select-microphone =
-    .value = Mikrofon som vert delt:
-    .accesskey = M
 popup-select-camera-device =
     .value = Kamera
     .accesskey = K
@@ -399,14 +380,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Høgtalarar
 popup-all-windows-shared = Alle synlege vindauge på skjermen vil bli delte.
-popup-screen-sharing-not-now =
-    .label = Ikkje no
-    .accesskey = n
-popup-screen-sharing-never =
-    .label = Tillat aldri
-    .accesskey = a
-popup-silence-notifications-checkbox = Deaktiver varsel frå { -brand-short-name } medan du deler
-popup-silence-notifications-checkbox-warning = { -brand-short-name } vil ikkje vise varsel medan du deler.
 popup-screen-sharing-block =
     .label = Blokker
     .accesskey = B
@@ -430,14 +403,10 @@ enable-devtools-popup-description = For å bruke F12-snarvegen, må du først op
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Søk eller skriv inn ei adresse
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Søk eller skriv inn ei adresse
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Nettlesaren er under fjernstyring
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -486,8 +455,6 @@ urlbar-go-button =
     .tooltiptext = Gå til adressa i adresselinja
 urlbar-page-action-button =
     .tooltiptext = Sidehandlingar
-urlbar-pocket-button =
-    .tooltiptext = Lagre til { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -692,6 +659,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Tilpass verktøylinja…
     .accesskey = T
+toolbar-button-email-link =
+    .label = Send lenke med e-post
+    .tooltiptext = Send ei lenke til sida med e-post
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Lagre side
+    .tooltiptext = Lagre denne sida ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Opne fil
+    .tooltiptext = Opne fil ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Synkroniserte faner
+    .tooltiptext = Vis faner frå andre einingar
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Nytt privat vindauge
+    .tooltiptext = Opne eit nytt privat nettlesarvindauge ({ $shortcut })
 
 ## EME notification panel
 
@@ -742,6 +730,53 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Ikkje vis denne meldinga når sprettoppvindauge vert blokkerte
     .accesskey = I
+edit-popup-settings =
+    .label = Handter sprettoppvindauge-innstillingar
+    .accesskey = H
 picture-in-picture-hide-toggle =
     .label = Gøym bilde-i-bilde-veksleknapp
     .accesskey = G
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navigasjon
+navbar-downloads =
+    .label = Nedlastingar
+navbar-overflow =
+    .tooltiptext = Fleire verktøy…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Skriv ut
+    .tooltiptext = Skriv ut denne sida… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Skriv ut
+    .tooltiptext = Skriv ut denne sida
+navbar-home =
+    .label = Startside
+    .tooltiptext = { -brand-short-name } Startside
+navbar-library =
+    .label = Arkiv
+    .tooltiptext = Vis historikk, lagra bokmerker med meir
+navbar-search =
+    .title = Søk
+navbar-accessibility-indicator =
+    .tooltiptext = Tilgjengefunksjonar aktiverte
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Nettlesarfaner
+tabs-toolbar-new-tab =
+    .label = Ny fane
+tabs-toolbar-list-all-tabs =
+    .label = Vis liste over alle faner
+    .tooltiptext = Vis liste over alle faner
+
+## Infobar shown at startup to suggest session-restore
+
+restore-session-startup-suggestion-button = Vis meg korleis

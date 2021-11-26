@@ -11,14 +11,6 @@ navbar-tooltip-instruction =
 
 ## Back
 
-main-context-menu-back =
-    .tooltiptext = Späť o jednu stránku
-    .aria-label = Naspäť
-    .accesskey = N
-navbar-tooltip-back =
-    .value = { main-context-menu-back.tooltiptext }
-toolbar-button-back =
-    .label = { main-context-menu-back.aria-label }
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the Go Back command.
 main-context-menu-back-2 =
@@ -36,14 +28,6 @@ toolbar-button-back-2 =
 
 ## Forward
 
-main-context-menu-forward =
-    .tooltiptext = Dopredu o jednu stránku
-    .aria-label = Dopredu
-    .accesskey = D
-navbar-tooltip-forward =
-    .value = { main-context-menu-forward.tooltiptext }
-toolbar-button-forward =
-    .label = { main-context-menu-forward.aria-label }
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the Go Forward command.
 main-context-menu-forward-2 =
@@ -99,8 +83,6 @@ toolbar-button-fxaccount =
 main-context-menu-page-save =
     .label = Uložiť stránku ako…
     .accesskey = U
-toolbar-button-page-save =
-    .label = { main-context-menu-page-save.label }
 
 ## Simple menu items
 
@@ -151,9 +133,6 @@ main-context-menu-open-link-new-window =
 main-context-menu-open-link-new-private-window =
     .label = Otvoriť odkaz v novom súkromnom okne
     .accesskey = s
-main-context-menu-bookmark-this-link =
-    .label = Pridať tento odkaz medzi záložky
-    .accesskey = i
 main-context-menu-bookmark-link =
     .label = Pridať odkaz medzi záložky
     .accesskey = o
@@ -161,13 +140,8 @@ main-context-menu-save-link =
     .label = Uložiť cieľ odkazu ako…
     .accesskey = d
 main-context-menu-save-link-to-pocket =
-    .label = Uložiť odkaz do { -pocket-brand-name }u
+    .label = Uložiť odkaz do { -pocket-brand-name(case: "gen") }
     .accesskey = o
-
-## The access keys for "Copy Link Location" and "Copy Email Address"
-## should be the same if possible; the two context menu items
-## are mutually exclusive.
-
 
 ## The access keys for "Copy Link" and "Copy Email Address"
 ## should be the same if possible; the two context menu items
@@ -176,9 +150,6 @@ main-context-menu-save-link-to-pocket =
 main-context-menu-copy-email =
     .label = Kopírovať e-mailovú adresu
     .accesskey = e
-main-context-menu-copy-link =
-    .label = Kopírovať adresu odkazu
-    .accesskey = a
 main-context-menu-copy-link-simple =
     .label = Kopírovať odkaz
     .accesskey = a
@@ -204,26 +175,6 @@ main-context-menu-media-mute =
 main-context-menu-media-unmute =
     .label = Zapnúť zvuk
     .accesskey = m
-main-context-menu-media-play-speed =
-    .label = Rýchlosť prehrávania
-    .accesskey = c
-main-context-menu-media-play-speed-slow =
-    .label = Pomalá (0.5×)
-    .accesskey = o
-main-context-menu-media-play-speed-normal =
-    .label = Normálna
-    .accesskey = N
-main-context-menu-media-play-speed-fast =
-    .label = Rýchla (1.25×)
-    .accesskey = a
-main-context-menu-media-play-speed-faster =
-    .label = Rýchlejšia (1.5×)
-    .accesskey = h
-# "Ludicrous" is a reference to the movie "Space Balls" and is meant
-# to say that this speed is very fast.
-main-context-menu-media-play-speed-fastest =
-    .label = Absurdná (2 ×)
-    .accesskey = b
 main-context-menu-media-play-speed-2 =
     .label = Rýchlosť
     .accesskey = R
@@ -261,23 +212,12 @@ main-context-menu-media-video-leave-fullscreen =
     .accesskey = U
 # This is used when right-clicking on a video in the
 # content area when the Picture-in-Picture feature is enabled.
-main-context-menu-media-pip =
-    .label = Obraz v obraze
-    .accesskey = v
-# This is used when right-clicking on a video in the
-# content area when the Picture-in-Picture feature is enabled.
 main-context-menu-media-watch-pip =
     .label = Sledovať ako obraz v obraze
     .accesskey = S
 main-context-menu-image-reload =
     .label = Znova načítať obrázok
     .accesskey = t
-main-context-menu-image-view =
-    .label = Zobraziť obrázok
-    .accesskey = b
-main-context-menu-video-view =
-    .label = Zobraziť video
-    .accesskey = b
 main-context-menu-image-view-new-tab =
     .label = Otvoriť obrázok na novej karte
     .accesskey = b
@@ -287,15 +227,6 @@ main-context-menu-video-view-new-tab =
 main-context-menu-image-copy =
     .label = Kopírovať obrázok
     .accesskey = v
-main-context-menu-image-copy-location =
-    .label = Kopírovať adresu obrázka
-    .accesskey = e
-main-context-menu-video-copy-location =
-    .label = Kopírovať adresu videa
-    .accesskey = e
-main-context-menu-audio-copy-location =
-    .label = Kopírovať adresu zvuku
-    .accesskey = e
 main-context-menu-image-copy-link =
     .label = Kopírovať odkaz na obrázok
     .accesskey = k
@@ -311,9 +242,6 @@ main-context-menu-image-save-as =
 main-context-menu-image-email =
     .label = Odoslať obrázok…
     .accesskey = r
-main-context-menu-image-set-as-background =
-    .label = Nastaviť ako pozadie pracovnej plochy…
-    .accesskey = N
 main-context-menu-image-set-image-as-background =
     .label = Nastaviť ako pozadie pracovnej plochy…
     .accesskey = p
@@ -329,9 +257,6 @@ main-context-menu-video-save-as =
 main-context-menu-audio-save-as =
     .label = Uložiť zvuk ako…
     .accesskey = U
-main-context-menu-video-image-save-as =
-    .label = Uložiť snímku ako…
-    .accesskey = s
 main-context-menu-video-take-snapshot =
     .label = Urobiť snímku
     .accesskey = b
@@ -348,17 +273,11 @@ main-context-menu-plugin-hide =
     .label = Skryť tento zásuvný modul
     .accesskey = m
 main-context-menu-save-to-pocket =
-    .label = Uložiť stránku do { -pocket-brand-name }u
+    .label = Uložiť stránku do { -pocket-brand-name(case: "gen") }
     .accesskey = k
 main-context-menu-send-to-device =
     .label = Odoslať stránku do zariadenia
     .accesskey = a
-main-context-menu-view-background-image =
-    .label = Zobraziť obrázok pozadia
-    .accesskey = b
-main-context-menu-generate-new-password =
-    .label = Použiť vygenerované heslo…
-    .accesskey = u
 
 ## The access keys for "Use Saved Login" and "Use Saved Password"
 ## should be the same if possible; the two context menu items
@@ -430,17 +349,11 @@ main-context-menu-take-frame-screenshot =
 main-context-menu-view-page-source =
     .label = Zobraziť zdrojový kód stránky
     .accesskey = k
-main-context-menu-view-page-info =
-    .label = Zobraziť informácie o stránke
-    .accesskey = i
 main-context-menu-bidi-switch-text =
     .label = Zmeniť smer textu
     .accesskey = m
 main-context-menu-bidi-switch-page =
     .label = Zmeniť smer stránky
-    .accesskey = m
-main-context-menu-inspect-element =
-    .label = Preskúmať prvok
     .accesskey = m
 main-context-menu-inspect =
     .label = Preskúmať

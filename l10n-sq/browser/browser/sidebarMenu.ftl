@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Mbylle Anështyllën
+
+sidebar-close-button =
+    .tooltiptext = Mbylleni anështyllën

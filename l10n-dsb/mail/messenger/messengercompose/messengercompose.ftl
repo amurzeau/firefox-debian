@@ -6,8 +6,6 @@
 # Addressing widget
 
 #   $type (String) - the type of the addressing row
-remove-address-row-type = Pólo typa { $type } wótwónoźeś
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Pólo typa { $type } wótwónoźeś
 #   $type (String) - the type of the addressing row
@@ -68,6 +66,10 @@ toolbar-button-add-attachment =
 add-attachment-notification-reminder =
     .label = Pśidank pśidaś…
     .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+add-attachment-notification-reminder2 =
+    .label = Pśidank pśidaś…
+    .accesskey = P
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 menuitem-attach-files =
     .label = Dataje…
     .accesskey = D
@@ -87,23 +89,14 @@ attachment-bucket-count =
            *[other] { $count } pśidankow
         }
     .accesskey = d
-#   $count (Number) - the number of attachments in the attachment bucket
-attachments-placeholder-tooltip =
-    .tooltiptext =
-        { $count ->
-            [1] { $count } pśidank
-            [one] { $count } pśidank
-            [two] { $count } pśidanka
-            [few] { $count } pśidanki
-           *[other] { $count } pśidankow
-        }
-#   { attachment-bucket-count.accesskey } - Do not localize this message.
-key-toggle-attachment-pane =
-    .key = { attachment-bucket-count.accesskey }
 expand-attachment-pane-tooltip =
     .tooltiptext = Pśidankowe wokno pokazaś ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
     .tooltiptext = Pśidankowe wokno schowaś ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-show =
+    .title = Pśidankowe wokno pokazaś ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-hide =
+    .title = Pśidankowe wokno schowaś ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 drop-file-label-attachment =
     { $count ->
         [one] Ako pśidank pśidaś

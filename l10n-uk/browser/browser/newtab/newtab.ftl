@@ -8,9 +8,6 @@
 newtab-page-title = Нова вкладка
 newtab-settings-button =
     .title = Налаштуйте свою сторінку нової вкладки
-newtab-personalize-button-label = Персоналізувати
-    .title = Персоналізувати нову вкладку
-    .aria-label = Персоналізувати нову вкладку
 newtab-personalize-icon-label =
     .title = Персоналізувати нову вкладку
     .aria-label = Персоналізувати нову вкладку
@@ -23,17 +20,16 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Пошук
     .aria-label = Пошук
-newtab-search-box-search-the-web-text = Пошук в Інтернеті
 # Variables
 #  $engine (String): the name of the user's default search engine
-newtab-search-box-handoff-text = Шукайте з { $engine } або введіть адресу
+newtab-search-box-handoff-text = Шукайте за допомогою { $engine } або введіть адресу
 newtab-search-box-handoff-text-no-engine = Введіть запит чи адресу
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-input =
-    .placeholder = Шукайте з { $engine } або введіть адресу
-    .title = Шукайте з { $engine } або введіть адресу
-    .aria-label = Шукайте з { $engine } або введіть адресу
+    .placeholder = Шукайте за допомогою { $engine } або введіть адресу
+    .title = Шукайте за допомогою { $engine } або введіть адресу
+    .aria-label = Шукайте за допомогою { $engine } або введіть адресу
 newtab-search-box-handoff-input-no-engine =
     .placeholder = Введіть запит чи адресу
     .title = Введіть запит чи адресу
@@ -173,6 +169,11 @@ newtab-label-sponsored = { $sponsorOrSource } · Спонсоровано
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = Від спонсора { $sponsor }
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } хв
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -225,10 +226,25 @@ newtab-discovery-empty-section-topstories-timed-out = Отакої! Ми май�
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Популярні теми:
+newtab-pocket-new-topics-title = Хочете ще більше розповідей? Перегляньте ці популярні теми від { -pocket-brand-name }
 newtab-pocket-more-recommendations = Інші рекомендації
 newtab-pocket-learn-more = Докладніше
 newtab-pocket-cta-button = Отримати { -pocket-brand-name }
 newtab-pocket-cta-text = Зберігайте улюблені статті в { -pocket-brand-name } і задовольніть себе захопливим читанням.
+newtab-pocket-pocket-firefox-family = { -pocket-brand-name } є частиною родини { -brand-product-name }
+# A save to Pocket button that shows over the card thumbnail on hover.
+newtab-pocket-save-to-pocket = Зберегти до { -pocket-brand-name }
+newtab-pocket-saved-to-pocket = Збережено до { -pocket-brand-name }
+# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
+newtab-pocket-load-more-stories-button = Завантажити більше матеріалів
+
+## Pocket Final Card Section.
+## This is for the final card in the Pocket grid.
+
+newtab-pocket-last-card-title = Ви все прочитали!
+newtab-pocket-last-card-desc = Перевірте згодом, щоб побачити більше.
+newtab-pocket-last-card-image =
+    .alt = Ви все прочитали
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.
@@ -253,10 +269,4 @@ newtab-custom-pocket-sponsored = Матеріали від спонсорів
 newtab-custom-recent-title = Недавня активність
 newtab-custom-recent-subtitle = Добірка недавніх сайтів та вмісту
 newtab-custom-close-button = Закрити
-# For the "Snippets" feature traditionally on about:home.
-# Alternative translation options: "Small Note" or something that
-# expresses the idea of "a small message, shortened from something else,
-# and non-essential but also not entirely trivial and useless.
-newtab-custom-snippets-title = Фрагменти
-newtab-custom-snippets-subtitle = Поради та новини від { -vendor-short-name } та { -brand-product-name }
 newtab-custom-settings = Керувати іншими налаштуваннями

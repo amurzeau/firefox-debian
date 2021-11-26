@@ -11,17 +11,6 @@ navbar-tooltip-instruction =
 
 ## Back
 
-main-context-menu-back =
-    .tooltiptext = Nôl un tudalen
-    .aria-label = Nôl
-    .accesskey = N
-
-navbar-tooltip-back =
-    .value = { main-context-menu-back.tooltiptext }
-
-toolbar-button-back =
-    .label = { main-context-menu-back.aria-label }
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the Go Back command.
 main-context-menu-back-2 =
@@ -41,17 +30,6 @@ toolbar-button-back-2 =
     .label = { main-context-menu-back-2.aria-label }
 
 ## Forward
-
-main-context-menu-forward =
-    .tooltiptext = Ymlaen un tudalen
-    .aria-label = Ymlaen
-    .accesskey = Y
-
-navbar-tooltip-forward =
-    .value = { main-context-menu-forward.tooltiptext }
-
-toolbar-button-forward =
-    .label = { main-context-menu-forward.aria-label }
 
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the Go Forward command.
@@ -116,9 +94,6 @@ main-context-menu-page-save =
     .label = Cadw Tudalen Fel…
     .accesskey = T
 
-toolbar-button-page-save =
-    .label = { main-context-menu-page-save.label }
-
 ## Simple menu items
 
 main-context-menu-bookmark-add =
@@ -179,10 +154,6 @@ main-context-menu-open-link-new-private-window =
     .label = Agor Dolen mewn Ffenestr Breifat
     .accesskey = F
 
-main-context-menu-bookmark-this-link =
-    .label = Gosod Nod Tudalen i'r Ddolen
-    .accesskey = D
-
 main-context-menu-bookmark-link =
     .label = Dolen Nod Tudalen
     .accesskey = D
@@ -207,10 +178,6 @@ main-context-menu-save-link-to-pocket =
 main-context-menu-copy-email =
     .label = Copïo Cyfeiriad E-bost
     .accesskey = E
-
-main-context-menu-copy-link =
-    .label = Copïo Lleoliad Dolen
-    .accesskey = C
 
 main-context-menu-copy-link-simple =
     .label = Copïo'r Ddolen
@@ -239,32 +206,6 @@ main-context-menu-media-mute =
 main-context-menu-media-unmute =
     .label = Dad-dewi
     .accesskey = a
-
-main-context-menu-media-play-speed =
-    .label = Cyflymder Chwarae
-    .accesskey = y
-
-main-context-menu-media-play-speed-slow =
-    .label = Araf (0.5×)
-    .accesskey = A
-
-main-context-menu-media-play-speed-normal =
-    .label = Arferol
-    .accesskey = A
-
-main-context-menu-media-play-speed-fast =
-    .label = Cyflym (1.25×)
-    .accesskey = C
-
-main-context-menu-media-play-speed-faster =
-    .label = Cyflymach (1.5×)
-    .accesskey = y
-
-# "Ludicrous" is a reference to the movie "Space Balls" and is meant
-# to say that this speed is very fast.
-main-context-menu-media-play-speed-fastest =
-    .label = Hyrt (2×)
-    .accesskey = H
 
 main-context-menu-media-play-speed-2 =
     .label = Cyflymder
@@ -312,12 +253,6 @@ main-context-menu-media-video-leave-fullscreen =
 
 # This is used when right-clicking on a video in the
 # content area when the Picture-in-Picture feature is enabled.
-main-context-menu-media-pip =
-    .label = Llun mewn Llun
-    .accesskey = L
-
-# This is used when right-clicking on a video in the
-# content area when the Picture-in-Picture feature is enabled.
 main-context-menu-media-watch-pip =
     .label = Gwylio yn Llun-mewn-Llun
     .accesskey = G
@@ -325,14 +260,6 @@ main-context-menu-media-watch-pip =
 main-context-menu-image-reload =
     .label = Ail-lwytho'r Ddelwedd
     .accesskey = D
-
-main-context-menu-image-view =
-    .label = Edrych ar Ddelwedd
-    .accesskey = E
-
-main-context-menu-video-view =
-    .label = Gwylio Fideo
-    .accesskey = i
 
 main-context-menu-image-view-new-tab =
     .label = Agor Delwedd mewn Tab Newydd
@@ -345,18 +272,6 @@ main-context-menu-video-view-new-tab =
 main-context-menu-image-copy =
     .label = Copïo Delwedd
     .accesskey = D
-
-main-context-menu-image-copy-location =
-    .label = Copïo Lleoliad Delwedd
-    .accesskey = L
-
-main-context-menu-video-copy-location =
-    .label = Copïo Lleoliad Delwedd
-    .accesskey = e
-
-main-context-menu-audio-copy-location =
-    .label = Copïo Lleoliad Delwedd
-    .accesskey = a
 
 main-context-menu-image-copy-link =
     .label = Copïo Dolen Delwedd
@@ -378,10 +293,6 @@ main-context-menu-image-email =
     .label = Delwedd E-bost…
     .accesskey = D
 
-main-context-menu-image-set-as-background =
-    .label = Gosod fel Cefndir Bwrdd Gwaith…
-    .accesskey = B
-
 main-context-menu-image-set-image-as-background =
     .label = Gosod Delwedd fel Cefndir Bwrdd Gwaith…
     .accesskey = D
@@ -401,10 +312,6 @@ main-context-menu-video-save-as =
 main-context-menu-audio-save-as =
     .label = Cadw Sain Fel…
     .accesskey = C
-
-main-context-menu-video-image-save-as =
-    .label = Cadw Ciplun Fel…
-    .accesskey = i
 
 main-context-menu-video-take-snapshot =
     .label = Cymryd Ciplun…
@@ -433,14 +340,6 @@ main-context-menu-save-to-pocket =
 main-context-menu-send-to-device =
     .label = Anfon Tudalen i Ddyfais
     .accesskey = D
-
-main-context-menu-view-background-image =
-    .label = Edrych ar Ddelwedd Gefndir
-    .accesskey = G
-
-main-context-menu-generate-new-password =
-    .label = Defnyddio Cyfrinair wedi'i Gynhyrchu
-    .accesskey = G
 
 ## The access keys for "Use Saved Login" and "Use Saved Password"
 ## should be the same if possible; the two context menu items
@@ -532,10 +431,6 @@ main-context-menu-view-page-source =
     .label = Edrych ar God Gwreiddiol y Dudalen
     .accesskey = G
 
-main-context-menu-view-page-info =
-    .label = Edrych ar Wybodaeth am y Dudalen
-    .accesskey = E
-
 main-context-menu-bidi-switch-text =
     .label = Newid Cyfeiriad Testun
     .accesskey = T
@@ -543,10 +438,6 @@ main-context-menu-bidi-switch-text =
 main-context-menu-bidi-switch-page =
     .label = Newid Cyfeiriad Tudalen
     .accesskey = N
-
-main-context-menu-inspect-element =
-    .label = Archwilio Elfen
-    .accesskey = E
 
 main-context-menu-inspect =
     .label = Arsylwi
@@ -558,3 +449,9 @@ main-context-menu-inspect-a11y-properties =
 main-context-menu-eme-learn-more =
     .label = Dysgu rhagor am DRM…
     .accesskey = D
+
+# Variables
+#   $containerName (String): The name of the current container
+main-context-menu-open-link-in-container-tab =
+    .label = Agor Dolen mewn Tab { $containerName } Newydd
+    .accesskey = A

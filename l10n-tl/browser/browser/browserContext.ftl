@@ -11,14 +11,6 @@ navbar-tooltip-instruction =
 
 ## Back
 
-main-context-menu-back =
-    .tooltiptext = Bumalik nang isang pahina
-    .aria-label = Bumalik
-    .accesskey = B
-navbar-tooltip-back =
-    .value = { main-context-menu-back.tooltiptext }
-toolbar-button-back =
-    .label = { main-context-menu-back.aria-label }
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the Go Back command.
 main-context-menu-back-2 =
@@ -36,14 +28,6 @@ toolbar-button-back-2 =
 
 ## Forward
 
-main-context-menu-forward =
-    .tooltiptext = Pumunta sa susunod na pahina
-    .aria-label = Magpatuloy
-    .accesskey = F
-navbar-tooltip-forward =
-    .value = { main-context-menu-forward.tooltiptext }
-toolbar-button-forward =
-    .label = { main-context-menu-forward.aria-label }
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the Go Forward command.
 main-context-menu-forward-2 =
@@ -99,8 +83,6 @@ toolbar-button-fxaccount =
 main-context-menu-page-save =
     .label = i-Save ang Pahina Bilang…
     .accesskey = P
-toolbar-button-page-save =
-    .label = { main-context-menu-page-save.label }
 
 ## Simple menu items
 
@@ -151,11 +133,8 @@ main-context-menu-open-link-new-window =
 main-context-menu-open-link-new-private-window =
     .label = Buksan ang Link sa Bagong Pribadong Window
     .accesskey = P
-main-context-menu-bookmark-this-link =
-    .label = i-Bookmark ang Link na Ito
-    .accesskey = L
 main-context-menu-bookmark-link =
-    .label = Link ng Bookmark
+    .label = i-Bookmark ang Link
     .accesskey = B
 main-context-menu-save-link =
     .label = i-Save ang Link Bilang…
@@ -164,11 +143,6 @@ main-context-menu-save-link-to-pocket =
     .label = i-Save ang Link sa { -pocket-brand-name }
     .accesskey = o
 
-## The access keys for "Copy Link Location" and "Copy Email Address"
-## should be the same if possible; the two context menu items
-## are mutually exclusive.
-
-
 ## The access keys for "Copy Link" and "Copy Email Address"
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
@@ -176,9 +150,6 @@ main-context-menu-save-link-to-pocket =
 main-context-menu-copy-email =
     .label = Kopyahin ang Email Address
     .accesskey = E
-main-context-menu-copy-link =
-    .label = Kopyahin ang Lokasyon ng Link
-    .accesskey = a
 main-context-menu-copy-link-simple =
     .label = Kopyahin ang Link
     .accesskey = L
@@ -204,26 +175,6 @@ main-context-menu-media-mute =
 main-context-menu-media-unmute =
     .label = I-unmute
     .accesskey = m
-main-context-menu-media-play-speed =
-    .label = Bilis ng Pagpapaandar
-    .accesskey = d
-main-context-menu-media-play-speed-slow =
-    .label = Pabagalin (0.5 ×)
-    .accesskey = S
-main-context-menu-media-play-speed-normal =
-    .label = Normal
-    .accesskey = N
-main-context-menu-media-play-speed-fast =
-    .label = Pabilisin (1.25 ×)
-    .accesskey = F
-main-context-menu-media-play-speed-faster =
-    .label = Mas mabilis (1.5 ×)
-    .accesskey = a
-# "Ludicrous" is a reference to the movie "Space Balls" and is meant
-# to say that this speed is very fast.
-main-context-menu-media-play-speed-fastest =
-    .label = Ubod nang bilis (2×)
-    .accesskey = L
 main-context-menu-media-play-speed-2 =
     .label = Bilis
     .accesskey = s
@@ -261,23 +212,12 @@ main-context-menu-media-video-leave-fullscreen =
     .accesskey = u
 # This is used when right-clicking on a video in the
 # content area when the Picture-in-Picture feature is enabled.
-main-context-menu-media-pip =
-    .label = Picture-in-Picture
-    .accesskey = u
-# This is used when right-clicking on a video in the
-# content area when the Picture-in-Picture feature is enabled.
 main-context-menu-media-watch-pip =
     .label = Panoorin sa Picture-in-Picture
     .accesskey = u
 main-context-menu-image-reload =
     .label = i-Reload ang Larawan
     .accesskey = R
-main-context-menu-image-view =
-    .label = Tingnan ang Larawan
-    .accesskey = I
-main-context-menu-video-view =
-    .label = Tingnan ang Video
-    .accesskey = i
 main-context-menu-image-view-new-tab =
     .label = Buksan ang Larawan sa Bagong Tab
     .accesskey = L
@@ -287,33 +227,21 @@ main-context-menu-video-view-new-tab =
 main-context-menu-image-copy =
     .label = Kopyahin ang Larawan
     .accesskey = y
-main-context-menu-image-copy-location =
-    .label = Kopyahin ang Lokasyon ng Larawan
-    .accesskey = o
-main-context-menu-video-copy-location =
-    .label = Kopyahin ang Lokasyon ng Video
-    .accesskey = o
-main-context-menu-audio-copy-location =
-    .label = Kopyahin ang Lokasyon ng Audio
-    .accesskey = o
 main-context-menu-image-copy-link =
-    .label = Kopyahin ang Link ng Larawan
-    .accesskey = o
+    .label = Kopyahin ang Link ng Imahe
+    .accesskey = K
 main-context-menu-video-copy-link =
     .label = Kopyahin ang Link ng Video
-    .accesskey = o
+    .accesskey = K
 main-context-menu-audio-copy-link =
     .label = Kopyahin ang Link ng Audio
-    .accesskey = o
+    .accesskey = K
 main-context-menu-image-save-as =
     .label = i-Save ang Larawan Bilang...
     .accesskey = v
 main-context-menu-image-email =
     .label = i-Email ang Larawan…
     .accesskey = g
-main-context-menu-image-set-as-background =
-    .label = Gawing Background sa Desktop…
-    .accesskey = S
 main-context-menu-image-set-image-as-background =
     .label = Itakda ang Larawan bilang Background ng Desktop…
     .accesskey = I
@@ -329,9 +257,6 @@ main-context-menu-video-save-as =
 main-context-menu-audio-save-as =
     .label = i-Save ang Audio Bilang…
     .accesskey = v
-main-context-menu-video-image-save-as =
-    .label = i-Save ang Snapshot Bilang…
-    .accesskey = S
 main-context-menu-video-take-snapshot =
     .label = Kumuha ng Snapshot...
     .accesskey = K
@@ -353,12 +278,6 @@ main-context-menu-save-to-pocket =
 main-context-menu-send-to-device =
     .label = Ipadala ang Pahina sa Device
     .accesskey = D
-main-context-menu-view-background-image =
-    .label = Ipakita ang Background Image
-    .accesskey = w
-main-context-menu-generate-new-password =
-    .label = Gumamit ng Generated Password…
-    .accesskey = G
 
 ## The access keys for "Use Saved Login" and "Use Saved Password"
 ## should be the same if possible; the two context menu items
@@ -430,18 +349,12 @@ main-context-menu-take-frame-screenshot =
 main-context-menu-view-page-source =
     .label = Tingnan ang Source Code ng Pahina
     .accesskey = T
-main-context-menu-view-page-info =
-    .label = Tingnan ang Impormasyon tungkol sa Pahina
-    .accesskey = i
 main-context-menu-bidi-switch-text =
     .label = Switch Text Direction
     .accesskey = w
 main-context-menu-bidi-switch-page =
     .label = Lumipat ng Page Direction
     .accesskey = D
-main-context-menu-inspect-element =
-    .label = Suriin ang Elemento
-    .accesskey = S
 main-context-menu-inspect =
     .label = Suriin
     .accesskey = S

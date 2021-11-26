@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Oldalsáv bezárása
+
+sidebar-close-button =
+    .tooltiptext = Oldalsáv bezárása

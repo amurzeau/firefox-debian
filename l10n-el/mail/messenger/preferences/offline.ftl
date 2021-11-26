@@ -6,10 +6,8 @@ offline-dialog-window =
     .title = Ρυθμίσεις εκτός σύνδεσης
 
 autodetect-online-label =
-    .label = Αυτόματος εντοπισμός κατάστασης δικτύου
+    .label = Αυτόματη χρήση ανιχνευμένης κατάστασης σύνδεσης
     .accesskey = ν
-
-startup-label = Κατάσταση κατά την εκκίνηση:
 
 offline-preference-startup-label = Μη αυτόματη κατάσταση κατά την εκκίνηση:
 
@@ -18,18 +16,18 @@ status-radio-remember =
     .accesskey = Δ
 
 status-radio-ask =
-    .label = Ερώτηση για ορισμό κατάστασης
+    .label = Ερώτηση για την κατάσταση σύνδεσης
     .accesskey = ώ
 
 status-radio-always-online =
-    .label = Σε σύνδεση
+    .label = Εντός σύνδεσης
     .accesskey = δ
 
 status-radio-always-offline =
     .label = Εκτός σύνδεσης
     .accesskey = κ
 
-going-online-label = Αποστολή μη απεσταλμένων κατά την σύνδεση;
+going-online-label = Αποστολή μη απεσταλμένων μηνυμάτων κατά τη σύνδεση;
 
 going-online-auto =
     .label = Ναι

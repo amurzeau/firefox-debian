@@ -11,7 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Definir politicas que WebExtensions pote acceder via chrome.storage.managed.
-policy-AppAutoUpdate = Activar o disactivar actualisationes automatic del applicationes.
+policy-AppAutoUpdate = Activar o disactivar le actualisation automatic del application.
 policy-AppUpdateURL = Definir un URL de actualisation personalisate pro le application.
 policy-Authentication = Configurar authentication integrate pro sitos web que lo supporta.
 policy-BackgroundAppUpdate2 = Activar o disactivar le actualisator in secunde plano.
@@ -26,7 +26,7 @@ policy-DisableBuiltinPDFViewer = Disactivar PDF.js, le visor de PDF integrate in
 policy-DisabledCiphers = Disactivar cryptographias.
 policy-DefaultDownloadDirectory = Selige le directorio predefinite pro discargamentos.
 policy-DisableAppUpdate = Impedir a { -brand-short-name } de actualisar.
-policy-DisableDefaultClientAgent = Impedir al application agente predefinite de interprender ulle actiones. Applicabile solo a Windows; altere systemas operative non ha le agente.
+policy-DisableDefaultClientAgent = Impedir al agente cliente predefinite de prender qualcunque action. Applicabile solo a Windows; altere systemas de operation non ha le agente.
 policy-DisableDeveloperTools = Blocar le accesso al instrumentos del disveloppamento.
 policy-DisableFeedbackCommands = Disactivar le commandos pro inviar opinion ab le menu Adjuta ("Inviar opinion" e "Denunciar un sito fraudulente").
 policy-DisableForgetButton = Impedir accesso al button Oblidar.
@@ -74,7 +74,7 @@ policy-OverridePostUpdatePage = Supplantar le pagina de “Novas” post-actuali
 policy-PasswordManagerEnabled = Activar salvamento de contrasignos al gestor de contrasignos.
 # PDF.js and PDF should not be translated
 policy-PDFjs = Disactivar o configurar PDF.js, le visor de PDF integrate in { -brand-short-name }.
-policy-Permissions2 = Configurar permissos pro camera, microphono, position, avisos e autoreproduction.
+policy-Permissions2 = Configurar permissiones pro camera, microphono, position, avisos e autoreproduction.
 policy-Preferences = Definir e blocar le valor de un sub-ensemble de preferentias.
 policy-PrimaryPassword = Requirer o impedir le empleo de un contrasigno primari.
 policy-PromptForDownloadLocation = Demandar ubi salvar le files quando on discarga.

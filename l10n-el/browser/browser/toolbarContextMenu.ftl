@@ -20,14 +20,6 @@ toolbar-context-menu-bookmark-selected-tabs =
 toolbar-context-menu-select-all-tabs =
     .label = Επιλογή όλων των καρτελών
     .accesskey = Ε
-toolbar-context-menu-undo-close-tabs =
-    .label =
-        { $tabCount ->
-            [1] Αναίρεση κλεισίματος καρτέλας
-            [one] Αναίρεση κλεισίματος καρτέλας
-           *[other] Αναίρεση κλεισίματος καρτελών
-        }
-    .accesskey = Α
 toolbar-context-menu-reopen-closed-tabs =
     .label =
         { $tabCount ->
@@ -53,9 +45,6 @@ toolbar-context-menu-report-extension =
 toolbar-context-menu-pin-to-overflow-menu =
     .label = Καρφίτσωμα στο αναδυόμενο μενού
     .accesskey = Κ
-toolbar-context-menu-auto-hide-downloads-button =
-    .label = Αυτόματη απόκρυψη στη γραμμή εργαλείων
-    .accesskey = Α
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = Απόκρυψη κουμπιού όταν είναι κενό
     .accesskey = Α
@@ -80,3 +69,6 @@ toolbar-context-menu-bookmarks-toolbar-on-new-tab-2 =
 toolbar-context-menu-bookmarks-show-other-bookmarks =
     .label = Εμφάνιση άλλων σελιδοδεικτών
     .accesskey = φ
+toolbar-context-menu-menu-bar-cmd =
+    .toolbarname = Γραμμή μενού
+    .accesskey = μ

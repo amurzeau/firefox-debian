@@ -6,8 +6,6 @@
 # Addressing widget
 
 #   $type (String) - the type of the addressing row
-remove-address-row-type = Polo typa { $type } wotstronić
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Polo typa { $type } wotstronić
 #   $type (String) - the type of the addressing row
@@ -68,6 +66,10 @@ toolbar-button-add-attachment =
 add-attachment-notification-reminder =
     .label = Přiwěšk přidać…
     .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+add-attachment-notification-reminder2 =
+    .label = Přiwěšk přidać…
+    .accesskey = P
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 menuitem-attach-files =
     .label = Dataje…
     .accesskey = D
@@ -87,23 +89,14 @@ attachment-bucket-count =
            *[other] { $count } přidatkow
         }
     .accesskey = d
-#   $count (Number) - the number of attachments in the attachment bucket
-attachments-placeholder-tooltip =
-    .tooltiptext =
-        { $count ->
-            [1] { $count } přidatk
-            [one] { $count } přidatk
-            [two] { $count } přidatkaj
-            [few] { $count } přidatki
-           *[other] { $count } přidatkow
-        }
-#   { attachment-bucket-count.accesskey } - Do not localize this message.
-key-toggle-attachment-pane =
-    .key = { attachment-bucket-count.accesskey }
 expand-attachment-pane-tooltip =
     .tooltiptext = Wobłuk přiwěškow pokazać ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
     .tooltiptext = Wobłuk přiwěškow schować ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-show =
+    .title = Wobłuk přiwěškow pokazać ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-hide =
+    .title = Wobłuk přiwěškow schować ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 drop-file-label-attachment =
     { $count ->
         [one] Jako přiwěšk přidać

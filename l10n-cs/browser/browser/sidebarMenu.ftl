@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Zavřít postranní lištu
+
+sidebar-close-button =
+    .tooltiptext = Zavře postranní lištu

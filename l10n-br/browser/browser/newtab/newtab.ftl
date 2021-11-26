@@ -8,9 +8,6 @@
 newtab-page-title = Ivinell nevez
 newtab-settings-button =
     .title = Personelait ho pajenn Ivinell Nevez
-newtab-personalize-button-label = Personelaat
-    .title = Personelaat un ivinell nevez
-    .aria-label = Personelaat un ivinell nevez
 newtab-personalize-icon-label =
     .title = Personelaat un ivinell nevez
     .aria-label = Personelaat un ivinell nevez
@@ -23,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Klask
     .aria-label = Klask
-newtab-search-box-search-the-web-text = Klask er web
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = Klask gant { $engine } pe skrivañ ur chomlecʼh
@@ -42,6 +38,7 @@ newtab-search-box-search-the-web-input =
     .placeholder = Klask er web
     .title = Klask er web
     .aria-label = Klask er web
+newtab-search-box-text = Klask er web
 newtab-search-box-input =
     .placeholder = Klask er web
     .aria-label = Klask er web
@@ -168,6 +165,11 @@ newtab-label-sponsored = { $sponsorOrSource } · paeroniet
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = Paeroniet gant { $sponsor }
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } munutenn
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -220,10 +222,25 @@ newtab-discovery-empty-section-topstories-timed-out = Chaous! N'eo ket bet karge
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Danvezioù brudet:
+newtab-pocket-new-topics-title = Fellout a ra deoc’h kaout pennadoù ouzhpenn? Sellit ouzh ar sujedoù brudet e { -pocket-brand-name }
 newtab-pocket-more-recommendations = Erbedadennoù ouzhpenn
 newtab-pocket-learn-more = Gouzout hiroc'h
 newtab-pocket-cta-button = Staliañ { -pocket-brand-name }
 newtab-pocket-cta-text = Enrollit pennadoù a-zoare e { -pocket-brand-name } ha magit ho spered gant lennadennoù boemus.
+newtab-pocket-pocket-firefox-family = { -pocket-brand-name } a zo ul lodenn eus familh { -brand-product-name }
+# A save to Pocket button that shows over the card thumbnail on hover.
+newtab-pocket-save-to-pocket = Enrollañ da { -pocket-brand-name }
+newtab-pocket-saved-to-pocket = Enrollet e { -pocket-brand-name }
+# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
+newtab-pocket-load-more-stories-button = Kargañ muioc’h a bennadoù
+
+## Pocket Final Card Section.
+## This is for the final card in the Pocket grid.
+
+newtab-pocket-last-card-title = Echuet eo ganeoc’h!
+newtab-pocket-last-card-desc = Distroit amañ diwezhatoc’h evit lenn pennadoù all.
+newtab-pocket-last-card-image =
+    .alt = Echuet eo ganeoc’h
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.
@@ -250,10 +267,4 @@ newtab-custom-pocket-sponsored = Istorioù paeroniet
 newtab-custom-recent-title = Oberiantiz nevesañ
 newtab-custom-recent-subtitle = Un dibab lec'hiennoù ha danvezioù nevez
 newtab-custom-close-button = Serriñ
-# For the "Snippets" feature traditionally on about:home.
-# Alternative translation options: "Small Note" or something that
-# expresses the idea of "a small message, shortened from something else,
-# and non-essential but also not entirely trivial and useless.
-newtab-custom-snippets-title = Notennigoù
-newtab-custom-snippets-subtitle = Tunioù ha nevezinti gant { -vendor-short-name } ha { -brand-product-name }
 newtab-custom-settings = Merañ muioc'h a arventennoù

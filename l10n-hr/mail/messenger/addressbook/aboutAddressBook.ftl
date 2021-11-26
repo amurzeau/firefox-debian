@@ -16,6 +16,8 @@ about-addressbook-toolbar-new-contact =
     .label = Novi kontakt
 about-addressbook-toolbar-new-list =
     .label = Novi popis
+about-addressbook-toolbar-import =
+    .label = Uvoz
 
 ## Books
 
@@ -26,10 +28,14 @@ about-addressbook-books-context-synchronize =
     .label = Sinkroniziraj
 about-addressbook-books-context-print =
     .label = Ispis…
+about-addressbook-books-context-export =
+    .label = Izvoz…
 about-addressbook-books-context-delete =
     .label = Obriši
 about-addressbook-books-context-remove =
     .label = Ukloni
+about-addressbook-books-context-startup-default =
+    .label = Zadana početna mapa
 about-addressbook-confirm-delete-book-title = Obriši adresar
 # Variables:
 # $name (String) - Name of the address book to be deleted.
@@ -63,6 +69,8 @@ about-addressbook-sort-email-ascending =
     .label = Poredaj po adresi e-pošte (A > Z)
 about-addressbook-sort-email-descending =
     .label = Poredaj po adresi e-pošte (Z > A)
+about-addressbook-cards-context-write =
+    .label = Piši
 about-addressbook-confirm-delete-mixed-title = Obriši kontakte i popise
 # Variables:
 # $count (Number) - The number of contacts and lists to be deleted. Always greater than 1.
@@ -130,3 +138,5 @@ about-addressbook-details-phone-numbers-header = Brojevi telefona
 about-addressbook-details-home-address-header = Adresa (kuća)
 about-addressbook-details-work-address-header = Adresa (posao)
 about-addressbook-details-other-info-header = Druge informacije
+about-addressbook-prompt-to-save-title = Spremi promjene?
+about-addressbook-prompt-to-save = Želite li spremiti promjene?

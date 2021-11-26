@@ -4,48 +4,35 @@
 
 receipts-dialog-window =
     .title = Receptas de retorno
-
-return-receipt-checkbox =
-    .label = Quando se invia messages, sempre demandar un recepta
-    .acceskey = Q
-
+return-receipt-checkbox-control =
+    .label = Quando se invia messages, sempre demandar un recepta de retorno
+    .accesskey = Q
 receipt-arrive-label = Quando un recepta arriva:
-
-receipt-leave-radio =
+receipt-leave-radio-control =
     .label = Lassar lo in mi cassa de entrata
-    .acceskey = e
-
-receipt-move-radio =
-    .label = Displaciar lo a mi dossier "Inviate"
-    .acceskey = m
-
+    .accesskey = i
+receipt-move-radio-control =
+    .label = Displaciar lo a mi dossier “Inviate”
+    .accesskey = m
 receipt-request-label = Quando io recipe un demanda de recepta:
-
-receipt-return-never-radio =
-    .label = Nunquam inviar un quitantia de retorno
-    .acceskey = N
-
-receipt-return-some-radio =
+receipt-return-never-radio-control =
+    .label = Nunquam retornar un recepta
+    .accesskey = n
+receipt-return-some-radio-control =
     .label = Permitter receptas de retorno pro alcun messages
-    .acceskey = r
-
-receipt-not-to-cc =
+    .accesskey = r
+receipt-not-to-cc-label =
     .value = Si mi adresse non es in le campo A o CC del message:
-    .acceskey = S
-
+    .accesskey = i
 receipt-send-never-label =
     .label = Nunquam inviar
-
 receipt-send-always-label =
     .label = Sempre inviar
-
 receipt-send-ask-label =
     .label = Demandar me
-
-sender-outside-domain =
+sender-outside-domain-label =
     .value = Si le mittente es externe a mi dominio:
-    .acceskey = x
-
-other-cases-label =
+    .accesskey = l
+other-cases-text-label =
     .value = In tote le altere casos:
-    .acceskey = t
+    .accesskey = t

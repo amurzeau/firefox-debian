@@ -158,7 +158,7 @@ was trying to connect. -->
 </ul>
 ">
 
-<!ENTITY cspBlocked.longDesc "<p>&brandShortName; evitó que esta página se cargue de esta forma porque tiene una política de seguridad que la deshabilita.</p>">
+<!ENTITY cspBlocked.longDesc "<p>&brandShortName; evitó que esta página se cargue de esta forma porque tiene una política de seguridad que no lo permite.</p>">
 
 <!ENTITY xfoBlocked.longDesc "<p>&brandShortName; evitó que esta página se cargue en este contexto porque la página tiene una política de opciones de X-Frame que no lo permite.</p>">
 
@@ -169,7 +169,7 @@ was trying to connect. -->
 <!ENTITY errorReporting.automatic2 "Informar errores como este para ayudar a Mozilla a identificarlo y bloquear sitios maliciosos">
 <!ENTITY errorReporting.learnMore "Conocer más…">
 
-<!ENTITY remoteXUL.longDesc "<p><ul><li>Contacte a los dueños de sitio web para informarles de este problema.</li></ul></p>">
+<!ENTITY remoteXUL.longDesc "<p><ul><li>Contacte a los dueños del sitio web para informarles de este problema.</li></ul></p>">
 
 <!-- LOCALIZATION NOTE (sslv3Used.longDesc2) - Do not translate
      "SSL_ERROR_UNSUPPORTED_VERSION". -->

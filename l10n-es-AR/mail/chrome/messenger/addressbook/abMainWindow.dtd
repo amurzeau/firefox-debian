@@ -31,12 +31,6 @@
 <!ENTITY closeCmd.label                                 "Cerrar">
 <!ENTITY closeCmd.key                                   "W">
 <!ENTITY closeCmd.accesskey                             "C">
-<!ENTITY printSetupCmd.label                            "Configurar página…">
-<!ENTITY printSetupCmd.accesskey                        "u">
-<!ENTITY printPreviewContactCmd.label                   "Vista previa del contacto">
-<!ENTITY printPreviewContactCmd.accesskey               "v">
-<!ENTITY printPreviewAddressBook.label                  "Vista previa de la libreta de direcciones">
-<!ENTITY printPreviewAddressBook.accesskey              "b">
 <!ENTITY printContactCmd.label                          "Imprimir contacto…">
 <!ENTITY printContactCmd.accesskey                      "P">
 <!ENTITY printContactCmd.key                            "P">
@@ -111,10 +105,6 @@ because displayed names don't have the comma in between. -->
 <!ENTITY importCmd.accesskey                            "I">
 <!ENTITY exportCmd.label                                "Exportar…">
 <!ENTITY exportCmd.accesskey                            "E">
-<!ENTITY preferencesCmd2.label                          "Opciones">
-<!ENTITY preferencesCmd2.accesskey                      "n">
-<!ENTITY preferencesCmdUnix.label                       "Preferencias">
-<!ENTITY preferencesCmdUnix.accesskey                   "n">
 
 <!-- Address Book Toolbar and Context Menus -->
 <!ENTITY newContactButton.label                         "Nuevo contacto">
@@ -156,12 +146,12 @@ because displayed names don't have the comma in between. -->
 <!ENTITY editMailingListPropertiesButton.tooltip        "Editar la lista de correo seleccionada">
 <!ENTITY newmsgButton.tooltip                           "Enviar un mensaje de correo">
 <!ENTITY newIM.tooltip                                  "Enviar un mensaje o conversación instantáneos">
-<!ENTITY deleteButton2.tooltip                          "Borar el ítem seleccionado">
+<!ENTITY deleteButton2.tooltip                          "Borrar el ítem seleccionado">
 
 <!ENTITY removeButton.tooltip                           "Eliminar la libreta de direcciones seleccionada">
 
 <!-- Search Bar -->
-<!ENTITY SearchNameOrEmail.label                        "El nombre o el correo electrónico contienen:">
+<!ENTITY SearchNameOrEmail.label                        "Nombre o correo electrónico">
 <!ENTITY SearchNameOrEmail.accesskey                    "n">
 <!ENTITY advancedButton.tooltip                         "Búsqueda avanzada de direcciones">
 <!ENTITY quickSearchCmd.key                             "k">
@@ -223,7 +213,7 @@ because displayed names don't have the comma in between. -->
 
 <!--  Mac OS X Window Menu -->
 <!ENTITY windowMenu.label                               "Ventana">
-<!ENTITY minimizeWindow.label                           "Minimizar ventana">
+<!ENTITY minimizeWindow.label                           "Minimizar">
 <!ENTITY minimizeWindow.key                             "m">
 <!ENTITY bringAllToFront.label                          "Traer todo al frente">
 <!ENTITY zoomWindow.label                               "Acercar ventana">

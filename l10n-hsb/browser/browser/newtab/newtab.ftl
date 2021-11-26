@@ -8,9 +8,6 @@
 newtab-page-title = Nowy rajtark
 newtab-settings-button =
     .title = Stronu wašeho noweho rajtarka přiměrić
-newtab-personalize-button-label = Personalizować
-    .title = Nowy rajtark personalizować
-    .aria-label = Nowy rajtark personalizować
 newtab-personalize-icon-label =
     .title = Nowy rajtark personalizować
     .aria-label = Nowy rajtark personalizować
@@ -23,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Pytać
     .aria-label = Pytać
-newtab-search-box-search-the-web-text = Web přepytać
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = Pytajće z { $engine } abo zapodajće adresu
@@ -173,6 +169,11 @@ newtab-label-sponsored = { $sponsorOrSource } - sponsorowane
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = Sponsorowany wot { $sponsor }
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } mjeń.
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -225,10 +226,25 @@ newtab-discovery-empty-section-topstories-timed-out = Hopla! Smy tutón wotrězk
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Woblubowane temy:
+newtab-pocket-new-topics-title = Chceće dalše stawiznički? Wobhladajće sej tute woblubowane temy z { -pocket-brand-name }
 newtab-pocket-more-recommendations = Dalše doporučenja
 newtab-pocket-learn-more = Dalše informacije
 newtab-pocket-cta-button = { -pocket-brand-name } wobstarać
 newtab-pocket-cta-text = Składujće stawizny, kotrež so wam spodobuja, w { -pocket-brand-name } a žiwće swój duch z fascinowacymi čitančkami.
+newtab-pocket-pocket-firefox-family = { -pocket-brand-name } je dźěl swójby { -brand-product-name }
+# A save to Pocket button that shows over the card thumbnail on hover.
+newtab-pocket-save-to-pocket = Do { -pocket-brand-name } składować
+newtab-pocket-saved-to-pocket = Do { -pocket-brand-name } składowany
+# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
+newtab-pocket-load-more-stories-button = Dalše stawiznički začitać
+
+## Pocket Final Card Section.
+## This is for the final card in the Pocket grid.
+
+newtab-pocket-last-card-title = Sće na běžnym!
+newtab-pocket-last-card-desc = Hladajće pozdźišo za wjace.
+newtab-pocket-last-card-image =
+    .alt = Sće na běžnym
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.
@@ -254,10 +270,4 @@ newtab-custom-pocket-sponsored = Sponsorowane stawizny
 newtab-custom-recent-title = Najnowša aktiwita
 newtab-custom-recent-subtitle = Wuběr najnowšich sydłow a najnowšeho wobsaha
 newtab-custom-close-button = Začinić
-# For the "Snippets" feature traditionally on about:home.
-# Alternative translation options: "Small Note" or something that
-# expresses the idea of "a small message, shortened from something else,
-# and non-essential but also not entirely trivial and useless.
-newtab-custom-snippets-title = Šlipki
-newtab-custom-snippets-subtitle = Pokiwy a nowinki wot { -vendor-short-name } a { -brand-product-name }
 newtab-custom-settings = Dalše nastajenja rjadować

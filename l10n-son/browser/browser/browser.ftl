@@ -128,10 +128,6 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Ceeciyan kayandiyaney barmay
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Ceeciyan kayandiyaney barmay
 search-one-offs-context-open-new-tab =
@@ -166,7 +162,6 @@ identity-active-loaded = War na jejebuyanoo kaa moɲoo woo ga.
 identity-weak-encryption = Moɲoo woo tuguyan dabaroo ga yalaafu.
 identity-insecure-login-forms = Huruyan šilbawey kaŋ goo moɲoo woo ši hima saajante.
 identity-permissions-reload-hint = War ma moɲoo zumandi taaga ka barmawey kanandi.
-identity-permissions-empty = War mana cerecere duɲeyan kul noo nungoo woo se.
 identity-remove-cert-exception =
     .label = Hasaraw kaa
     .accesskey = k
@@ -211,12 +206,6 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Biizaahaya žemna:
-    .accesskey = z
-popup-select-microphone =
-    .value = Jindezaahaya kaŋ ka žemna:
-    .accesskey = m
 popup-all-windows-shared = Zanfun kaŋ ga banga war dijoo ga kul ga žemnandi.
 
 ## WebRTC window or screen share tab switch warning
@@ -227,12 +216,8 @@ popup-all-windows-shared = Zanfun kaŋ ga banga war dijoo ga kul ga žemnandi.
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Ceeci wala aderesu dam
 urlbar-placeholder =
     .placeholder = Ceeci wala aderesu dam
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Ceecijaw goo juwal moora cire
 urlbar-switch-to-tab =
     .value = Bere kanjoo ga:
 # Used to indicate that a selected autocomplete entry is provided by an extension.
@@ -319,6 +304,27 @@ bookmarks-toolbar-placeholder-button =
 more-menu-go-offline =
     .label = Goy bila nda cinari
     .accesskey = G
+toolbar-button-email-link =
+    .label = Bataga dobu
+    .tooltiptext = Dobu sanba moɲoo woo ga
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Moɲoo gaabu
+    .tooltiptext = Moɲoo woo gaabu ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Tuku feeri
+    .tooltiptext = Tuku feeri ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Kanji hangantey
+    .tooltiptext = Jinay taney kanjey cebe
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Sutura zanfun taaga
+    .tooltiptext = Sutura ceeciyan zanfun taaga feeri ({ $shortcut })
 
 ## EME notification panel
 
@@ -353,3 +359,30 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Ši alhabaroo cebe waati kaŋ biiboŋ batawey gagayandi
     .accesskey = D
+
+# Navigator Toolbox
+
+navbar-downloads =
+    .label = Zumandiyaney
+navbar-overflow =
+    .tooltiptext = Goyjinay tontoney…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Kar
+    .tooltiptext = Moɲoo woo kar… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Kar
+    .tooltiptext = Moɲoo woo kar
+navbar-search =
+    .title = Ceeci
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Ceecikaw kanjey
+tabs-toolbar-new-tab =
+    .label = Kanji taaga
+tabs-toolbar-list-all-tabs =
+    .label = Kanjey kul šeedandi
+    .tooltiptext = Kanjey kul šeedandi

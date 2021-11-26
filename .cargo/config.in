@@ -20,7 +20,7 @@ rev = "1bb484e96ae724309e3346968e8ffd4c25e61616"
 [source."https://github.com/mozilla/cubeb-pulse-rs"]
 git = "https://github.com/mozilla/cubeb-pulse-rs"
 replace-with = "vendored-sources"
-rev = "c87b50aebfa088c1ad30c74819d4e9829f88b2e3"
+rev = "b0acd9e16c0249d61835a2d23735fbcbd8cbef64"
 
 [source."https://github.com/mozilla/cubeb-coreaudio-rs"]
 git = "https://github.com/mozilla/cubeb-coreaudio-rs"
@@ -96,6 +96,11 @@ replace-with = "vendored-sources"
 git = "https://github.com/bytecodealliance/wasmtime"
 replace-with = "vendored-sources"
 rev = "824fa69756523f2b6d49029fe25de94130b1f144"
+
+[source."https://github.com/alexcrichton/cc-rs/"]
+git = "https://github.com/alexcrichton/cc-rs/"
+replace-with = "vendored-sources"
+rev = "b2f6b146b75299c444e05bbde50d03705c7c4b6e"
 
 [source."https://github.com/PLSysSec/rlbox_lucet_sandbox/"]
 git = "https://github.com/PLSysSec/rlbox_lucet_sandbox/"

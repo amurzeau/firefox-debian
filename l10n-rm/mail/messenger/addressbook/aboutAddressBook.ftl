@@ -63,6 +63,8 @@ about-addressbook-sort-email-ascending =
     .label = Zavrar tenor l'adressa d'e-mail (A > Z)
 about-addressbook-sort-email-descending =
     .label = Zavrar tenor l'adressa d'e-mail (Z > A)
+about-addressbook-cards-context-write =
+    .label = Scriver
 about-addressbook-confirm-delete-mixed-title = Stizzar contacts e glistas
 # Variables:
 # $count (Number) - The number of contacts and lists to be deleted. Always greater than 1.

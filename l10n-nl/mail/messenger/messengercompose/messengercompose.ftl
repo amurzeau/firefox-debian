@@ -6,8 +6,6 @@
 # Addressing widget
 
 #   $type (String) - the type of the addressing row
-remove-address-row-type = Het veld { $type } verwijderen
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Het veld { $type } verwijderen
 #   $type (String) - the type of the addressing row
@@ -64,6 +62,10 @@ toolbar-button-add-attachment =
 add-attachment-notification-reminder =
     .label = Bijlage toevoegen…
     .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+add-attachment-notification-reminder2 =
+    .label = Bijlage toevoegen…
+    .accesskey = B
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 menuitem-attach-files =
     .label = Bestand(en)…
     .accesskey = B
@@ -80,20 +82,14 @@ attachment-bucket-count =
            *[other] { $count } bijlagen
         }
     .accesskey = l
-#   $count (Number) - the number of attachments in the attachment bucket
-attachments-placeholder-tooltip =
-    .tooltiptext =
-        { $count ->
-            [one] { $count } bijlage
-           *[other] { $count } bijlagen
-        }
-#   { attachment-bucket-count.accesskey } - Do not localize this message.
-key-toggle-attachment-pane =
-    .key = { attachment-bucket-count.accesskey }
 expand-attachment-pane-tooltip =
     .tooltiptext = Het bijlagevenster tonen ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
     .tooltiptext = Het bijlagevenster verbergen ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-show =
+    .title = Het bijlagevenster tonen ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-hide =
+    .title = Het bijlagevenster verbergen ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 drop-file-label-attachment =
     { $count ->
         [one] Als bijlage toevoegen

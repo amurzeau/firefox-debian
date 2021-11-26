@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = จัดการการใช้ปลั๊กอิน
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = จัดการการแบ่งปันกล้องและ/หรือไมโครโฟนของคุณกับไซต์
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = จัดการการแบ่งปันลำโพงอื่น ๆ กับไซต์
 urlbar-autoplay-notification-anchor =
     .tooltiptext = เปิดแผงการเล่นอัตโนมัติ
 urlbar-persistent-storage-notification-anchor =
@@ -156,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = เพิ่มลงในแถบที่อยู่
 page-action-manage-extension =
     .label = จัดการส่วนขยาย…
-page-action-remove-from-urlbar =
-    .label = เอาออกจากแถบที่อยู่
 page-action-remove-extension =
     .label = เอาส่วนขยายออก
 
@@ -179,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = คราวนี้ค้นหาด้วย:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = เปลี่ยนการตั้งค่าการค้นหา
 search-one-offs-change-settings-compact-button =
     .tooltiptext = เปลี่ยนการตั้งค่าการค้นหา
 search-one-offs-context-open-new-tab =
@@ -242,8 +238,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = แสดงตัวแก้ไขเมื่อบันทึก
     .accesskey = ส
-bookmark-panel-done-button =
-    .label = เสร็จสิ้น
 bookmark-panel-save-button =
     .label = บันทึก
 # Width of the bookmark panel.
@@ -273,8 +267,6 @@ identity-passive-loaded = บางส่วนของหน้านี้ไ
 identity-active-loaded = คุณได้ปิดใช้งานการป้องกันในหน้านี้
 identity-weak-encryption = หน้านี้ใช้การเข้ารหัสที่อ่อนแอ
 identity-insecure-login-forms = การเข้าสู่ระบบที่ป้อนบนหน้านี้อาจถูกบุกรุกได้
-identity-permissions =
-    .value = สิทธิอนุญาต
 identity-https-only-connection-upgraded = (อัปเกรดเป็น HTTPS)
 identity-https-only-label = โหมด HTTPS-Only
 identity-https-only-dropdown-on =
@@ -290,7 +282,6 @@ identity-permissions-storage-access-header = คุกกี้ข้ามไ�
 identity-permissions-storage-access-hint = บุคคลเหล่านี้สามารถใช้คุกกี้ข้ามไซต์และข้อมูลไซต์ในขณะที่คุณอยู่บนไซต์นี้ได้
 identity-permissions-storage-access-learn-more = เรียนรู้เพิ่มเติม
 identity-permissions-reload-hint = คุณอาจจำเป็นต้องโหลดหน้าใหม่เพื่อให้การเปลี่ยนแปลงมีผล
-identity-permissions-empty = คุณไม่ได้อนุญาตไซต์นี้ด้วยสิทธิอนุญาตพิเศษใด ๆ
 identity-clear-site-data =
     .label = ล้างคุกกี้และข้อมูลไซต์…
 identity-connection-not-secure-security-view = คุณไม่ได้เชื่อมต่ออย่างปลอดภัยไปยังไซต์นี้
@@ -372,12 +363,6 @@ bookmarks-toolbar-empty-message = วางที่คั่นหน้าข�
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = กล้องที่แบ่งปัน:
-    .accesskey = ก
-popup-select-microphone =
-    .value = ไมโครโฟนที่แบ่งปัน:
-    .accesskey = ม
 popup-select-camera-device =
     .value = กล้อง:
     .accesskey = ก
@@ -391,14 +376,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = ลำโพง
 popup-all-windows-shared = หน้าต่างที่ปรากฏอยู่ทั้งหมดบนหน้าจอของคุณจะถูกแบ่งปัน
-popup-screen-sharing-not-now =
-    .label = ไม่ใช่ตอนนี้
-    .accesskey = w
-popup-screen-sharing-never =
-    .label = ไม่อนุญาตเสมอ
-    .accesskey = ม
-popup-silence-notifications-checkbox = ปิดใช้งานการแจ้งเตือนจาก { -brand-short-name } ขณะที่แบ่งปัน
-popup-silence-notifications-checkbox-warning = { -brand-short-name } จะไม่แสดงการแจ้งเตือนขณะที่คุณกำลังแบ่งปัน
 popup-screen-sharing-block =
     .label = ปิดกั้น
     .accesskey = ป
@@ -422,14 +399,10 @@ enable-devtools-popup-description = หากต้องการใช้ท�
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = ค้นหาหรือป้อนที่อยู่
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = ค้นหาหรือป้อนที่อยู่
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = เบราว์เซอร์อยู่ภายใต้การควบคุมระยะไกล
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -478,8 +451,6 @@ urlbar-go-button =
     .tooltiptext = ไปยังที่อยู่ในแถบตำแหน่งที่ตั้ง
 urlbar-page-action-button =
     .tooltiptext = การกระทำหน้า
-urlbar-pocket-button =
-    .tooltiptext = บันทึกไปยัง { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -538,6 +509,16 @@ urlbar-result-action-search-tabs = ค้นหาแท็บ
 
 ## Labels shown above groups of urlbar results
 
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = { $engine } ข้อเสนอแนะ
 
 ## Full Screen and Pointer Lock UI
 
@@ -558,6 +539,10 @@ pointerlock-warning-no-domain = เอกสารชิ้นนี้ได้
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>เนื้อหาบางส่วนของหน้านี้ขัดข้อง</strong> หากต้องการแจ้งให้ { -brand-product-name } ทราบเกี่ยวกับปัญหานี้เพื่อให้ได้รับการแก้ไขเร็วขึ้น โปรดส่งรายงาน
+# The string for crashed-subframe-title.title should match crashed-subframe-message,
+# but without any markup.
+crashed-subframe-title =
+    .title = เนื้อหาบางส่วนของหน้านี้ขัดข้อง หากต้องการแจ้งให้ { -brand-product-name } ทราบเกี่ยวกับปัญหานี้เพื่อให้ได้รับการแก้ไขเร็วขึ้น โปรดส่งรายงาน
 crashed-subframe-learnmore-link =
     .value = เรียนรู้เพิ่มเติม
 crashed-subframe-submit =
@@ -670,6 +655,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = ปรับแต่งแถบเครื่องมือ…
     .accesskey = ป
+toolbar-button-email-link =
+    .label = ส่งอีเมลลิงก์
+    .tooltiptext = ส่งอีเมลลิงก์ไปยังหน้านี้
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = บันทึกหน้า
+    .tooltiptext = บันทึกหน้านี้ ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = เปิดไฟล์
+    .tooltiptext = เปิดไฟล์ ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = แท็บที่ซิงค์
+    .tooltiptext = แสดงแท็บจากอุปกรณ์อื่น ๆ
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = หน้าต่างส่วนตัวใหม่
+    .tooltiptext = เปิดหน้าต่างเรียกดูแบบส่วนตัวใหม่ ({ $shortcut })
 
 ## EME notification panel
 
@@ -720,6 +726,49 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = ไม่แสดงข้อความนี้เมื่อป๊อปอัปถูกปิดกั้น
     .accesskey = ข
+edit-popup-settings =
+    .label = จัดการการตั้งค่าป๊อปอัป…
+    .accesskey = จ
 picture-in-picture-hide-toggle =
     .label = ซ่อนสลับภาพที่เล่นควบคู่
     .accesskey = อ
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = การนำทาง
+navbar-downloads =
+    .label = การดาวน์โหลด
+navbar-overflow =
+    .tooltiptext = เครื่องมือเพิ่มเติม…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = พิมพ์
+    .tooltiptext = พิมพ์หน้านี้… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = พิมพ์
+    .tooltiptext = พิมพ์หน้านี้
+navbar-home =
+    .label = หน้าแรก
+    .tooltiptext = หน้าแรกของ { -brand-short-name }
+navbar-library =
+    .label = ห้องสมุด
+    .tooltiptext = ดูประวัติ, ที่คั่นหน้าที่บันทึกไว้ และอื่น ๆ
+navbar-search =
+    .title = ค้นหา
+navbar-accessibility-indicator =
+    .tooltiptext = คุณลักษณะการช่วยการเข้าถึงถูกเปิดใช้งานอยู่
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = แท็บเบราว์เซอร์
+tabs-toolbar-new-tab =
+    .label = แท็บใหม่
+tabs-toolbar-list-all-tabs =
+    .label = แสดงรายการแท็บทั้งหมด
+    .tooltiptext = แสดงรายการแท็บทั้งหมด

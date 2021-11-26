@@ -23,6 +23,13 @@ connection-dialog-window =
         }
 connection-disable-extension =
     .label = Deshabilitar extensión
+disable-extension-button = Deshabilitar el complemento
+# Variables:
+#   $name (String) - The extension that is controlling the proxy settings.
+#
+# The extension-icon is the extension's icon, or a fallback image. It should be
+# purely decoration for the actual extension name, with alt="".
+proxy-settings-controlled-by-extension = Un complemento, <img data-l10n-name="extension-icon" alt="" />{ $name }, está controlando cómo { -brand-short-name } se conecta a Internet.
 connection-proxy-legend = Configurar proxies para acceder a Internet
 proxy-type-no =
     .label = Sin proxy
@@ -43,7 +50,7 @@ http-port-label =
     .value = Puerto:
     .accesskey = p
 proxy-http-sharing =
-    .label = Use este proxy también para FTP y HTTPS
+    .label = También usar este proxy para HTTPS
     .accesskey = x
 proxy-https-label =
     .value = Proxy HTTPS:
@@ -73,8 +80,6 @@ no-proxy-label =
     .value = Sin proxy para:
     .accesskey = n
 no-proxy-example = Ejemplo: .mozilla.org, .net.ar, 192.168.1.0/24
-# Note: Do not translate localhost, 127.0.0.1 and ::1.
-no-proxy-localhost-label = Las conexiones a localhost, 127.0.0.1 y ::1 nunca pasan por proxy.
 # Do not translate "localhost", "127.0.0.1/8" and "::1". (You can translate "and".)
 connection-proxy-noproxy-localhost-desc-2 = Las conexiones a localhost, 127.0.0.1 y ::1 nunca pasan por proxy.
 proxy-password-prompt =

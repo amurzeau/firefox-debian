@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = أغلِق الشريط الجانبي
+
+sidebar-close-button =
+    .tooltiptext = أغلِق الشريط الجانبي

@@ -6,6 +6,10 @@ dock-options-window-dialog =
     .title = Programmasymboalopsjes
     .style = width: 35em;
 
+dock-options-show-badge =
+    .label = Badge-piktogram toane
+    .accesskey = p
+
 bounce-system-dock-icon =
     .label = It programmasymboal animearje as in nij berjocht binnenkomt
     .accesskey = i

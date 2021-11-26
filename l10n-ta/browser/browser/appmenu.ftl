@@ -5,17 +5,22 @@
 
 ## App Menu
 
-appmenuitem-customize-mode =
-    .label = விருப்பமை…
-
-## Zoom Controls
-
 appmenuitem-new-tab =
     .label = புதிய கீற்று
 appmenuitem-new-window =
     .label = புதிய சாளரம்
 appmenuitem-new-private-window =
     .label = புதிய கமுக்க சாளரம்
+appmenuitem-history =
+    .label = வரலாறு
+appmenuitem-downloads =
+    .label = பதிவிறக்கங்கள்
+appmenuitem-print =
+    .label = அச்சிடு…
+appmenuitem-zoom =
+    .value = பெரியதாக்கு
+appmenuitem-help =
+    .label = உதவி
 
 ## Zoom and Fullscreen Controls
 
@@ -24,9 +29,16 @@ appmenuitem-fullscreen =
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
-fxa-toolbar-sync-now =
-    .label = இப்போது ஒத்திசை
-
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = திறந்த கீற்றுகள் இல்லை
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = மற்ற கருவிகளிலிருந்து கீற்றுகளின் பட்டியலைக் காண கீற்று ஒத்திசைவை இயக்கு.
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = மற்ற கருவிகளிலிருந்து உங்கள் கீற்றுகளை இங்குப் பார்க்க விருப்பமா?
+appmenu-remote-tabs-connectdevice =
+    .label = மற்றொரு சாதனத்தை இணை
+appmenu-remote-tabs-unverified = உங்கள் கணக்கு சரிபார்க்கப்பட வேண்டும்.
 appmenuitem-save-page =
     .label = இவ்வாறு சேமி…
 

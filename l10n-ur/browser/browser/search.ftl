@@ -17,3 +17,10 @@ opensearch-error-download-desc = { -brand-short-name } تلاش پلگ ان سے
 
 ##
 
+searchbar-submit =
+    .tooltiptext = تلاش ارسال کریں
+# This string is displayed in the search box when the input field is empty
+searchbar-input =
+    .placeholder = تلاش کریں
+searchbar-icon =
+    .tooltiptext = تلاش کریں

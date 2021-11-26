@@ -4,48 +4,29 @@
 
 receipts-dialog-window =
     .title = Vastaanottokuittaukset
-
-return-receipt-checkbox =
+return-receipt-checkbox-control =
     .label = Lähetettäessä viestiä, pyydä aina vastaanottokuittaus
-    .acceskey = L
-
+    .accesskey = W
 receipt-arrive-label = Kuittauksen saapuessa:
-
-receipt-leave-radio =
-    .label = Jätä se saapuneet-kansioon
-    .acceskey = J
-
-receipt-move-radio =
-    .label = Siirrä se lähetetyt-kansioon
-    .acceskey = S
-
+receipt-leave-radio-control =
+    .label = Jätä se Saapuneet-kansioon
+    .accesskey = ä
+receipt-move-radio-control =
+    .label = Siirrä se Lähetetyt-kansioon
+    .accesskey = h
 receipt-request-label = Vastaanottaessani vastaanottokuittauspyynnön:
-
-receipt-return-never-radio =
+receipt-return-never-radio-control =
     .label = Älä koskaan lähetä vastaanottokuittausta
-    .acceskey = Ä
-
-receipt-return-some-radio =
-    .label = Lähetä kuittaus seuraavasti:
-    .acceskey = h
-
-receipt-not-to-cc =
-    .value = Kun en ole viestin vastaanottaja- tai kopio-kentässä:
-    .acceskey = K
-
+    .accesskey = Ä
 receipt-send-never-label =
     .label = Älä lähetä
-
 receipt-send-always-label =
     .label = Lähetä
-
 receipt-send-ask-label =
     .label = Kysy
-
-sender-outside-domain =
+sender-outside-domain-label =
     .value = Kun lähettäjä on verkkoalueeni ulkopuolelta:
-    .acceskey = u
-
-other-cases-label =
+    .accesskey = u
+other-cases-text-label =
     .value = Muissa tapauksissa:
-    .acceskey = M
+    .accesskey = M

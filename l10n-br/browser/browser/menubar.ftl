@@ -38,20 +38,16 @@ menu-quit =
             [windows] K
            *[other] K
         }
-
 # This menu-quit-mac string is only used on macOS.
 menu-quit-mac =
     .label = Kuitaat { -brand-shorter-name }
-
 # This menu-quit-button string is only used on Linux.
 menu-quit-button =
     .label = { menu-quit.label }
-
 # This menu-quit-button-win string is only used on Windows.
 menu-quit-button-win =
     .label = { menu-quit.label }
     .tooltip = Kuitaat { -brand-shorter-name }
-
 menu-about =
     .label = A-zivout { -brand-shorter-name }
     .accesskey = A
@@ -93,6 +89,9 @@ menu-file-save-page =
 menu-file-email-link =
     .label = Kas an ere dre bostel…
     .accesskey = K
+menu-file-share-url =
+    .label = Rannañ
+    .accesskey = R
 menu-file-print-setup =
     .label = Arventennoù ar bajenn…
     .accesskey = A
@@ -114,9 +113,6 @@ menu-file-go-offline =
 menu-edit =
     .label = Embann
     .accesskey = E
-menu-edit-find-on =
-    .label = Klask war ar bajennad-mañ…
-    .accesskey = K
 menu-edit-find-in-page =
     .label = Kavout er bajennad…
     .accesskey = K
@@ -135,9 +131,6 @@ menu-view =
 menu-view-toolbars-menu =
     .label = Barrennoù ostilhoù
     .accesskey = B
-menu-view-customize-toolbar =
-    .label = Personelaat…
-    .accesskey = P
 menu-view-customize-toolbar2 =
     .label = Personelaat ar varrenn ostilhoù…
     .accesskey = P
@@ -174,10 +167,6 @@ menu-view-page-style-no-style =
 menu-view-page-basic-style =
     .label = Stil pajennad eeun
     .accesskey = e
-menu-view-charset =
-    .label = Bonegadur an destenn
-    .accesskey = d
-
 menu-view-repair-text-encoding =
     .label = Ratreañ enkodadur an destenn
     .accesskey = k
@@ -223,7 +212,6 @@ menu-history-undo-menu =
     .label = Ivinelloù serret nevez zo
 menu-history-undo-window-menu =
     .label = Prenestroù serret nevez zo
-
 menu-history-reopen-all-tabs = Digeriñ en-dro an holl ivinelloù
 menu-history-reopen-all-windows = Digeriñ en-dro an holl brenestroù
 
@@ -232,10 +220,6 @@ menu-history-reopen-all-windows = Digeriñ en-dro an holl brenestroù
 menu-bookmarks-menu =
     .label = Sinedoù
     .accesskey = n
-menu-bookmarks-show-all =
-    .label = Diskouez an holl sinedoù
-menu-bookmark-this-page =
-    .label = Lakaat ur sined war ar bajenn-mañ
 menu-bookmarks-manage =
     .label = Merañ ar sinedoù
 menu-bookmark-current-tab =
@@ -259,15 +243,6 @@ menu-tools =
 menu-tools-downloads =
     .label = Pellgargadurioù
     .accesskey = d
-menu-tools-addons =
-    .label = Askouezhioù
-    .accesskey = A
-menu-tools-fxa-sign-in =
-    .label = Kennaskañ ouzh { -brand-product-name }…
-    .accesskey = k
-menu-tools-turn-on-sync =
-    .label = Gweredekaat { -sync-brand-short-name }…
-    .accesskey = G
 menu-tools-addons-and-themes =
     .label = Askouezhioù ha neuzioù
     .accesskey = E
@@ -283,9 +258,6 @@ menu-tools-sync-now =
 menu-tools-fxa-re-auth =
     .label = Adkennaskañ ouzh { -brand-product-name }
     .accesskey = A
-menu-tools-web-developer =
-    .label = Diorroer web
-    .accesskey = w
 menu-tools-browser-tools =
     .label = Ostilhoù merdeer
     .accesskey = O
@@ -298,17 +270,6 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Stlennoù ar bajennad
     .accesskey = t
-menu-preferences =
-    .label =
-        { PLATFORM() ->
-            [windows] Dibarzhioù
-           *[other] Gwellvezioù
-        }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] b
-           *[other] l
-        }
 menu-settings =
     .label = Arventennoù
     .accesskey =
@@ -341,21 +302,6 @@ menu-window-bring-all-to-front =
 menu-help =
     .label = Skoazell
     .accesskey = S
-menu-help-product =
-    .label = Skoazell { -brand-shorter-name }
-    .accesskey = o
-menu-help-show-tour =
-    .label = Gweladenniñ { -brand-shorter-name }
-    .accesskey = G
-menu-help-import-from-another-browser =
-    .label = Enporzhiañ eus ur merdeer all...
-    .accesskey = E
-menu-help-keyboard-shortcuts =
-    .label = Berradennoù klavier
-    .accesskey = k
-menu-help-troubleshooting-info =
-    .label = Titouroù disac'hañ
-    .accesskey = T
 menu-get-help =
     .label = Kaout skoazell
     .accesskey = K
@@ -367,12 +313,6 @@ menu-help-report-site-issue =
 menu-help-feedback-page =
     .label = Reiñ ho meno…
     .accesskey = m
-menu-help-safe-mode-without-addons =
-    .label = Adloc'hañ gant an askouezhioù diweredekaet…
-    .accesskey = r
-menu-help-safe-mode-with-addons =
-    .label = Adloc'hañ gant an askouezhioù diweredekaet
-    .accesskey = r
 menu-help-enter-troubleshoot-mode2 =
     .label = Mod disac’hañ
     .accesskey = M

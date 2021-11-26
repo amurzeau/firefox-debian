@@ -29,8 +29,8 @@
 <!ENTITY closeTabCmd.accesskey "e">
 <!ENTITY newAccountCmd.label "Cuenta…">
 <!ENTITY newAccountCmd.accesskey "a">
-<!ENTITY openMessageFileCmd.label "Abrir mensaje guardado…">
-<!ENTITY openMessageFileCmd.accesskey "m">
+<!ENTITY openMessageFileCmd.label "Abrir archivo…">
+<!ENTITY openMessageFileCmd.accesskey "v">
 <!ENTITY openAttachmentCmd.label "Adjuntos">
 <!ENTITY openAttachmentCmd.accesskey "j">
 <!ENTITY saveAsMenu.label "Guardar como">
@@ -50,11 +50,11 @@
 <!ENTITY getAllNewMsgCmd2.key "d">
 <!ENTITY getNextNMsgCmd.label "Obtener 500 nuevos mensajes">
 <!ENTITY getNextNMsgCmd.accesskey "t">
-<!ENTITY sendUnsentCmd.label "Procesar mensajes no enviados">
+<!ENTITY sendUnsentCmd.label "Enviar mensajes pendientes">
 <!ENTITY sendUnsentCmd.accesskey "v">
 <!ENTITY subscribeCmd.label "Suscribirse…">
 <!ENTITY subscribeCmd.accesskey "b">
-<!ENTITY renameFolder.label "Renombrar carpeta">
+<!ENTITY renameFolder.label "Renombrar carpeta…">
 <!ENTITY renameFolder.accesskey "R">
 <!ENTITY compactFolders.label "Compactar carpetas">
 <!ENTITY compactFolders.accesskey "C">
@@ -99,8 +99,8 @@
 <!ENTITY folderPropsFolderCmd.label "Propiedades de carpeta…">
 <!ENTITY folderPropsNewsgroupCmd.label "Propiedades del grupo…">
 <!ENTITY folderPropsCmd.accesskey "o">
-<!ENTITY accountManagerCmd.label "Configuración de cuentas…">
-<!ENTITY accountManagerCmd.accesskey "f">
+<!ENTITY accountManagerCmd.label "Opciones de cuentas de correo y noticias…">
+<!ENTITY accountManagerCmd.accesskey "n">
 <!ENTITY undoDeleteMsgCmd.label "Deshacer Borrar mensaje">
 <!ENTITY redoDeleteMsgCmd.label "Rehacer Borrar mensaje">
 <!ENTITY undoMoveMsgCmd.label "Deshacer Mover mensaje">
@@ -132,7 +132,7 @@
 <!ENTITY showMessagePaneCmd.accesskey "m">
 <!ENTITY showThreadPaneCmd.label "Vista de conversaciones">
 <!ENTITY showThreadPaneCmd.accesskey "t">
-<!ENTITY showFolderPaneCmd.label "Panel carpetas">
+<!ENTITY showFolderPaneCmd.label "Vista de carpetas">
 <!ENTITY showFolderPaneCmd.accesskey "P">
 <!-- LOCALIZATION NOTE (toggleFolderPaneCmd.key): This is only used on the
      mac platform, other platforms use VK_F9. -->
@@ -218,7 +218,7 @@
 <!ENTITY bodyAllParts.label "Todas las partes del cuerpo">
 <!ENTITY bodyAllParts.accesskey "a">
 
-<!ENTITY bodyMenuFeed.label "Feed Message Body As">
+<!ENTITY bodyMenuFeed.label "Cuerpo del mensaje como">
 <!ENTITY bodyMenuFeed.accesskey "S">
 <!ENTITY viewFeedWebPage.label "Página web">
 <!ENTITY viewFeedWebPage.accesskey "w">
@@ -482,7 +482,7 @@
 <!ENTITY contextReplySenderAndNewsgroup.accesskey "p">
 <!ENTITY contextForward.label "Reenviar">
 <!ENTITY contextForward.accesskey "v">
-<!ENTITY contextForwardAsAttachment.label "Reenviar como adjunto">
+<!ENTITY contextForwardAsAttachment.label "Reenviar como adjuntos">
 <!ENTITY contextForwardAsAttachment.accesskey "o">
 <!ENTITY contextArchive.label "Archivar">
 <!ENTITY contextArchive.accesskey "A">
@@ -520,7 +520,7 @@
 <!ENTITY folderContextEmptyTrash.accesskey "p">
 <!ENTITY folderContextEmptyJunk.label "Vaciar basura">
 <!ENTITY folderContextEmptyJunk.accesskey "V">
-<!ENTITY folderContextSendUnsentMessages.label "Enviar mensajes pendientes…">
+<!ENTITY folderContextSendUnsentMessages.label "Enviar mensajes pendientes">
 <!ENTITY folderContextSendUnsentMessages.accesskey "n">
 <!ENTITY folderContextUnsubscribe.label "Cancelar suscripción">
 <!ENTITY folderContextUnsubscribe.accesskey "u">
@@ -532,7 +532,7 @@
 <!ENTITY folderContextNew.accesskey "N">
 <!ENTITY folderContextSubscribe.label "Suscribirse…">
 <!ENTITY folderContextSubscribe.accesskey "b">
-<!ENTITY folderContextSearchMessages.label "Buscar…">
+<!ENTITY folderContextSearchMessages.label "Buscar mensajes…">
 <!ENTITY folderContextSearchMessages.accesskey "s">
 <!ENTITY folderContextProperties.label "Propiedades…">
 <!ENTITY folderContextProperties.accesskey "o">

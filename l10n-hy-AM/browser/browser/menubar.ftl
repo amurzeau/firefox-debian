@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = Նախապատվություններ
 menu-application-services =
     .label = Ծառայություններ
 menu-application-hide-this =
@@ -36,20 +38,16 @@ menu-quit =
             [windows] ա
            *[other] Q
         }
-
 # This menu-quit-mac string is only used on macOS.
 menu-quit-mac =
     .label = Փակել { -brand-shorter-name }-ը
-
 # This menu-quit-button string is only used on Linux.
 menu-quit-button =
     .label = { menu-quit.label }
-
 # This menu-quit-button-win string is only used on Windows.
 menu-quit-button-win =
     .label = { menu-quit.label }
     .tooltip = Փակել { -brand-shorter-name }-ը
-
 menu-about =
     .label = { -brand-shorter-name }-ի մասին
     .accesskey = մ
@@ -112,9 +110,6 @@ menu-file-go-offline =
 menu-edit =
     .label = Խմբագրել
     .accesskey = Խ
-menu-edit-find-on =
-    .label = Գտնել այս էջում…
-    .accesskey = F
 menu-edit-find-in-page =
     .label = Գտնել էջում…
     .accesskey = F
@@ -133,9 +128,6 @@ menu-view =
 menu-view-toolbars-menu =
     .label = Գործիքագոտիներ
     .accesskey = Գ
-menu-view-customize-toolbar =
-    .label = Հարմարեցնել…
-    .accesskey = Հ
 menu-view-sidebar =
     .label = Կողային վահանակ
     .accesskey = վ
@@ -169,9 +161,6 @@ menu-view-page-style-no-style =
 menu-view-page-basic-style =
     .label = Էջի հիմնական ոճ
     .accesskey = B
-menu-view-charset =
-    .label = Տեքստի կոդավորումը
-    .accesskey = դ
 
 ## These should match what Safari and other Apple applications
 ## use on macOS.
@@ -220,10 +209,6 @@ menu-history-undo-window-menu =
 menu-bookmarks-menu =
     .label = Էջանիշեր
     .accesskey = Է
-menu-bookmarks-show-all =
-    .label = Ցուցադրել բոլոր էջանիշերը
-menu-bookmark-this-page =
-    .label = Էջանշել Այս Էջը
 menu-bookmark-edit =
     .label = Խմբագրել այս էջանիշը
 menu-bookmarks-all-tabs =
@@ -243,15 +228,6 @@ menu-tools =
 menu-tools-downloads =
     .label = Ներբեռնումներ
     .accesskey = Ն
-menu-tools-addons =
-    .label = Հավելումներ
-    .accesskey = Հ
-menu-tools-fxa-sign-in =
-    .label = Մուտք գործել { -brand-product-name }․․․
-    .accesskey = g
-menu-tools-turn-on-sync =
-    .label = Միացնել { -sync-brand-short-name }…
-    .accesskey = n
 menu-tools-addons-and-themes =
     .label = Հավելումներ և ոճեր
     .accesskey = A
@@ -264,9 +240,9 @@ menu-tools-sync-now =
 menu-tools-fxa-re-auth =
     .label = Վերակապակցվել { -brand-product-name }․․․
     .accesskey = R
-menu-tools-web-developer =
-    .label = Վեբ մշակող
-    .accesskey = Վ
+menu-tools-browser-tools =
+    .label = Զննիչի գործիքներ
+    .accesskey = B
 menu-tools-task-manager =
     .label = Խնդիրների կառավար
     .accesskey = M
@@ -276,16 +252,12 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Էջի Մասին Տվյալներ
     .accesskey = վ
-menu-preferences =
-    .label =
-        { PLATFORM() ->
-            [windows] Կարգավորումներ
-           *[other] Նախըտրանքներ
-        }
+menu-settings =
+    .label = Կարգավորումներ
     .accesskey =
         { PLATFORM() ->
-            [windows] Կ
-           *[other] ր
+            [windows] S
+           *[other] n
         }
 menu-tools-layout-debugger =
     .label = Դասավորության վրիպազերծում
@@ -312,21 +284,6 @@ menu-window-bring-all-to-front =
 menu-help =
     .label = Օգնություն
     .accesskey = Օ
-menu-help-product =
-    .label = { -brand-shorter-name }-ի Օգնությունը
-    .accesskey = Օ
-menu-help-show-tour =
-    .label = Շրջայց { -brand-shorter-name }-ի հետ
-    .accesskey = ջ
-menu-help-import-from-another-browser =
-    .label = Ներմուծել այլ դիտարկիչից...
-    .accesskey = I
-menu-help-keyboard-shortcuts =
-    .label = Ստեղնաշարի պիտակներ
-    .accesskey = Ս
-menu-help-troubleshooting-info =
-    .label = Անսարքության տեղեկատվություն
-    .accesskey = Ա
 menu-get-help =
     .label = Ստանալ օգնություն
     .accesskey = H
@@ -335,12 +292,6 @@ menu-help-report-site-issue =
 menu-help-feedback-page =
     .label = Ուղարկել արձագանք…
     .accesskey = Ո
-menu-help-safe-mode-without-addons =
-    .label = Վերամեկնարկել՝ անջատելով հավելումները…
-    .accesskey = Վ
-menu-help-safe-mode-with-addons =
-    .label = Վերամեկնարկել՝ միացնելով հավելումները
-    .accesskey = Վ
 menu-help-enter-troubleshoot-mode2 =
     .label = Խափանաշտկման կերպ…
     .accesskey = M

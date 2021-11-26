@@ -54,9 +54,6 @@ import-label = Importar
 
 about-paragraph = Thunderbird es el lider en clientes de correo electrónico y calendario para todas las plataformas de código abierto, gratuito, tanto para el uso empresarial como el personal. Queremos mantenerlo seguro y que sea aun mejor. Una donación nos va a permitir contratar desarrolladores, pagar por la infraestructura y continuar mejorando.
 
-about-paragraph-2 = <b> ¡Thunderbird está financiado por usuarios como usted! Si le gusta Thunderbird, considere hacer una donación.</b> La mejor manera de asegurarse de que Thunderbird permanezca disponible es
-about-donation = hacer una donación
-
 about-paragraph-consider-donation = <strong>¡Thunderbird está financiado por usuarios como usted! Si le gusta Thunderbird, por favor considere hacer una donación</strong> La mejor manera de asegurar su supervivencia es <a class="more" href="%(donate)s">donando.</a>
 
 explore-link = Explore las funciones
@@ -70,4 +67,4 @@ search = Buscar mensajes
 filter = Administrar filtros de mensajes
 nntp-subscription = Administrar suscripciones a grupos de noticias
 rss-subscription = Administrar suscripciones a canales
-e2e = Cifrado de punta a punta
+e2e = Cifrado de extremo a extremo

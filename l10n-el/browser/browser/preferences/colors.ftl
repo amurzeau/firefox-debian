@@ -39,7 +39,7 @@ colors-underline-links =
     .label = Υπογράμμιση συνδέσμων
     .accesskey = Υ
 
-colors-links-header = Χρώμα συνδέσμων
+colors-links-header = Χρώματα συνδέσμων
 
 colors-unvisited-links = Σύνδεσμοι που δεν έχετε επισκεφθεί
     .accesskey = Σ

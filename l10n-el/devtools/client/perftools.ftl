@@ -113,3 +113,25 @@ perftools-onboarding-message = <b>Νέο</b>: Το { -profiler-brand-name } έχ
 perftools-onboarding-reenable-old-panel = (Για περιορισμένο χρονικό διάστημα, μπορείτε να ανοίξετε το αρχικό παράθυρο "Επιδόσεις" από τις <a>{ options-context-advanced-settings }</a>)
 perftools-onboarding-close-button =
     .aria-label = Κλείσιμο μηνύματος υποδοχής
+
+## Profiler presets
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# The same labels and descriptions are also defined in appmenu.ftl.
+
+perftools-presets-web-developer-label = Ανάπτυξη web
+perftools-presets-web-developer-description = Προτεινόμενη προεπιλογή για τον έλεγχο σφαλμάτων των περισσότερων εφαρμογών ιστού με χαμηλό κόστος.
+perftools-presets-firefox-platform-label = Πλατφόρμα Firefox
+perftools-presets-firefox-platform-description = Προτεινόμενη προεπιλογή για τον εσωτερικό έλεγχο σφαλμάτων της πλατφόρμας του Firefox.
+perftools-presets-firefox-front-end-label = Περιβάλλον Firefox
+perftools-presets-firefox-front-end-description = Προτεινόμενη προεπιλογή για τον εσωτερικό έλεγχο σφαλμάτων του περιβάλλοντος του Firefox.
+perftools-presets-firefox-graphics-label = Γραφικά Firefox
+perftools-presets-firefox-graphics-description = Προτεινόμενη προεπιλογή για τη διερεύνηση επιδόσεων γραφικών του Firefox.
+perftools-presets-media-label = Πολυμέσα
+perftools-presets-media-description = Προτεινόμενη προεπιλογή για τη διάγνωση προβλημάτων ήχου και βίντεο.
+perftools-presets-custom-label = Προσαρμογή
+
+##
+

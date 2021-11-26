@@ -66,8 +66,8 @@ openpgp-key-man-edit-menu =
     .label = Editar
     .accesskey = E
 openpgp-key-man-view-menu =
-    .label = Ver
-    .accesskey = V
+    .label = Exibir
+    .accesskey = x
 openpgp-key-man-generate-menu =
     .label = Gerar
     .accesskey = G
@@ -113,9 +113,6 @@ openpgp-key-backup-key =
 openpgp-key-send-key =
     .label = Enviar chave pública por email
     .accesskey = m
-openpgp-key-man-copy-to-clipbrd =
-    .label = Copiar chaves públicas para área de transferência
-    .accesskey = C
 openpgp-key-man-copy-key-ids =
     .label =
         { $count ->
@@ -139,8 +136,6 @@ openpgp-key-man-copy-to-clipboard =
     .accesskey = b
 openpgp-key-man-ctx-expor-to-file-label =
     .label = Exportar chaves para arquivo
-openpgp-key-man-ctx-copy-to-clipbrd-label =
-    .label = Copiar chaves públicas para área de transferência
 openpgp-key-man-ctx-copy =
     .label = Copiar
     .accesskey = C
@@ -282,16 +277,8 @@ openpgp-description =
         [one] O Thunderbird encontrou { $count } chave OpenPGP pessoal associada a <b>{ $identity }</b>
        *[other] O Thunderbird encontrou { $count } chaves OpenPGP pessoais associadas a <b>{ $identity }</b>
     }
-#   $count (Number) - the number of configured keys associated with the current identity
 #   $key (String) - the currently selected OpenPGP key
-openpgp-selection-status =
-    { $count ->
-        [0] Selecione uma chave válida para ativar o protocolo OpenPGP.
-        [one] Sua configuração atual usa o ID de chave <b>{ $key }</b>
-       *[other] Sua configuração atual usa os IDs de chave <b>{ $key }</b>
-    }
-#   $key (String) - the currently selected OpenPGP key
-openpgp-selection-status-have-key = Sua configuração atual usa ID de chave <b>{ $key }</b>
+openpgp-selection-status-have-key = Sua configuração atual usa a chave com ID <b>{ $key }</b>
 #   $key (String) - the currently selected OpenPGP key
 openpgp-selection-status-error = Sua configuração atual usa a chave <b>{ $key }</b>, que está vencida.
 openpgp-add-key-button =
@@ -312,12 +299,8 @@ openpgp-radio-key-not-accepted = Para usar esta chave, você precisa aprovar com
 openpgp-radio-key-not-found = Esta chave não foi encontrada! Se quiser usar, você precisa importar para o { -brand-short-name }.
 #   $key (String) - the expiration date of the OpenPGP key
 openpgp-radio-key-expires = Expira em: { $date }
-openpgp-key-expires-image =
-    .tooltiptext = A chave expira em menos de 6 meses
 #   $key (String) - the expiration date of the OpenPGP key
 openpgp-radio-key-expired = Expirou em: { $date }
-openpgp-key-expired-image =
-    .tooltiptext = Chave expirada
 openpgp-key-expires-within-6-months-icon =
     .title = A chave expira em menos de 6 meses
 openpgp-key-has-expired-icon =
@@ -592,7 +575,6 @@ quoted-printable-warn =
 minimal-line-wrapping =
     Você configurou a quebra de linhas em { $width } caracteres. Para criptografia e/ou assinatura correta, este valor precisa ser pelo menos 68.
     Quer alterar agora a quebra de linhas em 68 caracteres?
-sending-hidden-rcpt = Destinatários de CCO (cópia oculta) não podem ser usados ao enviar uma mensagem criptografada. Para enviar esta mensagem criptografada, remova os destinatários de CCO ou mova-os para o campo CC.
 sending-news =
     A operação de envio criptografado foi interrompida.
     Esta mensagem não pode ser criptografada porque há destinatários de grupos de notícias. Reenvie a mensagem sem criptografia.
@@ -626,7 +608,7 @@ invalid-email = Erro - Endereços de email inválidos
 attachment-pgp-key =
     O anexo '{ $name }' que você está abrindo parece ser um arquivo de chave OpenPGP.
     Clique em 'Importar' para importar as chaves contidas, ou em 'Ver' para ver o conteúdo do arquivo em uma janela do navegador
-dlg-button-view = &Ver
+dlg-button-view = E&xibir
 # Strings used in enigmailMsgHdrViewOverlay.js
 decrypted-msg-with-format-error = Mensagem descriptografada (restaurado o formato de email PGP corrompido, provavelmente causado por um servidor Exchange antigo, de modo que o resultado pode não ser perfeito para leitura)
 # Strings used in encryption.jsm
@@ -652,8 +634,6 @@ enig-info = Informação OpenPGP
 # Strings used in persistentCrypto.jsm
 dlg-button-retry = &Tentar novamente
 dlg-button-skip = &Ignorar
-# Strings used in enigmailCommon.js
-enig-error = Erro OpenPGP
 # Strings used in enigmailMsgBox.js
 enig-alert-title =
     .title = Alerta OpenPGP

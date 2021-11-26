@@ -20,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Eheka
     .aria-label = Eheka
-newtab-search-box-search-the-web-text = Ñandutivevépe Jeheka
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = Eheka { $engine } ndive térã emoinge kundaharape
@@ -169,6 +168,11 @@ newtab-label-sponsored = { $sponsorOrSource } · Tepyme’ẽmbyre
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = Ohepyme’ẽva { $sponsor }
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } min
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -221,10 +225,25 @@ newtab-discovery-empty-section-topstories-timed-out = ¡Háke! Haimete ñamyanyh
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Ñe’ẽmbyrã Ojehayhuvéva:
+newtab-pocket-new-topics-title = ¿Eipotavépa tembiasakue? Ehecha téma ojehechavéva { -pocket-brand-name } rehegua
 newtab-pocket-more-recommendations = Hetave je’eporã
 newtab-pocket-learn-more = Kuaave
 newtab-pocket-cta-button = Eguereko { -pocket-brand-name }
 newtab-pocket-cta-text = Eñongatu umi eipotáva tembiasakue { -pocket-brand-name }-pe ha emombarete ne akã ñemoñe’ẽ ha’evévape.
+newtab-pocket-pocket-firefox-family = { -pocket-brand-name } ha’e { -brand-product-name } pehẽngue
+# A save to Pocket button that shows over the card thumbnail on hover.
+newtab-pocket-save-to-pocket = Eñongatu { -pocket-brand-name }-pe
+newtab-pocket-saved-to-pocket = Eñongatu { -pocket-brand-name }-pe
+# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
+newtab-pocket-load-more-stories-button = Emyanyhẽve tembiasakue
+
+## Pocket Final Card Section.
+## This is for the final card in the Pocket grid.
+
+newtab-pocket-last-card-title = ¡Pejejokopa piko!
+newtab-pocket-last-card-desc = Ejujey eñemomanduve hag̃ua.
+newtab-pocket-last-card-image =
+    .alt = Ejujey eñemomanduve hag̃ua.
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.

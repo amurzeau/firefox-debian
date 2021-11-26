@@ -152,12 +152,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = చిరునామా పట్టీకి చేర్చండి
 page-action-manage-extension =
     .label = పొడగింత నిర్వహణ…
-page-action-remove-from-urlbar =
-    .label = చిరునామా పట్టీ నుండి తొలగించండి
 page-action-remove-extension =
     .label = పొడగింతను తొలగించు
 
@@ -175,10 +171,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = ఈ సారి దీనితో వెతుకు:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = వెతుకుడు అమరికలు
 search-one-offs-change-settings-compact-button =
     .tooltiptext = వెతుకుడు అమరికలను మార్చుకోండి
 search-one-offs-context-open-new-tab =
@@ -242,8 +234,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = భద్రపరుస్తున్నప్పుడు ఎడిటర్‌ను చూపించు
     .accesskey = S
-bookmark-panel-done-button =
-    .label = పూర్తయింది
 bookmark-panel-save-button =
     .label = భద్రపరుచు
 # Width of the bookmark panel.
@@ -273,8 +263,6 @@ identity-passive-loaded = ఈ పేజీలోని కొన్ని భా
 identity-active-loaded = ఈ పేజీకి రక్షణను మీరు అచేతనం చేసారు.
 identity-weak-encryption = ఈ పేజీ బలహీనమైన ఎన్‌క్రిప్షన్ వాడుతోంది.
 identity-insecure-login-forms = ఈ పేజీలో మీరు ఇచ్చే లాగిన్లు రాజీపడవచ్చు.
-identity-permissions =
-    .value = అనుమతులు
 identity-https-only-connection-upgraded = (HTTPSకి ఉన్నతీకరించబడింది)
 identity-https-only-label = HTTPS-మాత్రమే రీతి
 identity-https-only-dropdown-on =
@@ -288,7 +276,6 @@ identity-permissions-storage-access-header = క్రాస్-సైటు క
 identity-permissions-storage-access-hint = మీరు ఈ సైటులో ఉన్నప్పుడు ఈ పార్టీలు క్రాస్-సైటు కుకీలను, సైట్ డేటాను ఉపయోగించవచ్చు.
 identity-permissions-storage-access-learn-more = ఇంకా తెలుసుకోండి
 identity-permissions-reload-hint = మార్పులు ప్రతిఫలించడానికి మీరు ఈ పేజీని మళ్ళీ లోడు చెయ్యాల్సిరావచ్చు.
-identity-permissions-empty = ఈ సైటుకి మీరు ఎటువంటి ప్రత్యేక అనుమతులు ఇవ్వలేదు.
 identity-clear-site-data =
     .label = కుకీలను, సైటు డేటాను తుడిచివేయి…
 identity-connection-not-secure-security-view = ఈ సైటుకి మీరు సురక్షితంగా అనుసంధానం కాలేదు.
@@ -354,12 +341,6 @@ browser-import-button2 =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = పంచుకోవాల్సిన కేమెరా:
-    .accesskey = C
-popup-select-microphone =
-    .value = పంచుకోవాల్సిన మైక్రోఫోన్:
-    .accesskey = M
 popup-select-camera-device =
     .value = కెమెరా:
     .accesskey = C
@@ -373,14 +354,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = స్పీకర్లు
 popup-all-windows-shared = మీ తెర మీద కనిపించే అన్ని విండోలు పంచుకోబడతాయి.
-popup-screen-sharing-not-now =
-    .label = ఇప్పుడు కాదు
-    .accesskey = w
-popup-screen-sharing-never =
-    .label = ఎప్పటికీ అనుమతించవద్దు
-    .accesskey = N
-popup-silence-notifications-checkbox = పంచుకుంటున్నప్పుడు { -brand-short-name } నుండి గమనింపులను నిలిపివేయి
-popup-silence-notifications-checkbox-warning = మీరు పంచుకుంటున్నప్పుడు { -brand-short-name } గమనింపులను చూపించదు.
 popup-screen-sharing-block =
     .label = నిరోధించు
     .accesskey = B
@@ -404,14 +377,10 @@ enable-devtools-popup-description = F12 సత్వరమార్గాన్�
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = వెతకండి లేదా చిరునామాను ఇవ్వండి
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = వెతకండి లేదా చిరునామాను ఇవ్వండి
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = విహరణి వ్యవహిత నియంత్రణ కింద ఉంది
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -460,8 +429,6 @@ urlbar-go-button =
     .tooltiptext = ప్రాంతపు పట్టీలో ఉన్న చిరునామాకి వెళ్ళండి
 urlbar-page-action-button =
     .tooltiptext = పేజీ చర్యలు
-urlbar-pocket-button =
-    .tooltiptext = { -pocket-brand-name }‌కి భద్రపరుచు
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -494,6 +461,16 @@ urlbar-result-action-search-tabs = ట్యాబులలో వెతకం�
 
 ## Labels shown above groups of urlbar results
 
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = { $engine } సూచనలు
 
 ## Full Screen and Pointer Lock UI
 
@@ -606,6 +583,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = పనిముట్లపట్టీని మలుచుకోండి…
     .accesskey = C
+toolbar-button-email-link =
+    .label = లింకును ఈమెయిలు చేయి
+    .tooltiptext = ఈ పేజీకి లింకును ఈమెయిలు చేయి
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = పేజీని భద్రపరచు
+    .tooltiptext = ఈ పేజీని భద్రపరచు ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = ఫైలుని తెరువు
+    .tooltiptext = ఒక ఫైలుని తెరువు ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = సింకైన ట్యాబులు
+    .tooltiptext = ఇతర పరికరాల లోని ట్యాబులను చూపించు
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = కొత్త ఆంతరంగిక విండో
+    .tooltiptext = కొత్త ఆంతరంగిక విహరణ విండో తెరువు ({ $shortcut })
 
 ## EME notification panel
 
@@ -655,3 +653,38 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = పాప్-అప్‌లు నిరోధించబడినప్పుడు ఈ సందేశాన్ని చూపించవద్దు
     .accesskey = D
+
+# Navigator Toolbox
+
+navbar-downloads =
+    .label = దింపుకోళ్ళు
+navbar-overflow =
+    .tooltiptext = మరిన్ని పనిముట్లు…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = ముద్రించు
+    .tooltiptext = ఈ పేజీని ముద్రించు… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = ముద్రించు
+    .tooltiptext = ఈ పేజీని ముద్రించు
+navbar-home =
+    .label = ముంగిలి
+    .tooltiptext = { -brand-short-name } ముంగిలి పేజీ
+navbar-library =
+    .label = లైబ్రరీ
+    .tooltiptext = చరిత్ర, భద్రపరచిన ఇష్టాంశాలు, ఇంకా మరెన్నో చూడండి
+navbar-search =
+    .title = వెతకడం
+navbar-accessibility-indicator =
+    .tooltiptext = ప్రాప్యత లక్షణాలు చేతనమైవున్నాయి
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = విహారిణి ట్యాబులు
+tabs-toolbar-new-tab =
+    .label = కొత్త ట్యాబు
+tabs-toolbar-list-all-tabs =
+    .label = అన్ని ట్యాబుల జాబితా చూపించు
+    .tooltiptext = అన్ని ట్యాబుల జాబితా చూపించు

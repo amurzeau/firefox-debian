@@ -2,13 +2,11 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-
 ### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = 新しいタブ
 newtab-settings-button =
     .title = 新しいタブページをカスタマイズ
-
 newtab-personalize-icon-label =
     .title = 新しいタブをパーソナライズ
     .aria-label = 新しいタブをパーソナライズ
@@ -21,7 +19,7 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = 検索
     .aria-label = 検索
-newtab-search-box-search-the-web-text = ウェブを検索
+
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = { $engine } で検索、または URL を入力します
@@ -171,6 +169,12 @@ newtab-label-sponsored = 提供: { $sponsorOrSource }
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = 提供: { $sponsor }
 
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } 分
+
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
 
@@ -222,10 +226,28 @@ newtab-discovery-empty-section-topstories-timed-out = おおっと、このセ�
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = 人気のトピック:
+newtab-pocket-new-topics-title = 他の記事も読みたいですか？ { -pocket-brand-name } からの人気記事も見てみましょう
 newtab-pocket-more-recommendations = 他のおすすめ
 newtab-pocket-learn-more = 詳細
 newtab-pocket-cta-button = { -pocket-brand-name } を入手
 newtab-pocket-cta-text = お気に入りに記事を { -pocket-brand-name } に保存して、魅力的な読み物を思う存分楽しみましょう。
+
+newtab-pocket-pocket-firefox-family = { -pocket-brand-name } は { -brand-product-name } ファミリーの一員です
+
+# A save to Pocket button that shows over the card thumbnail on hover.
+newtab-pocket-save-to-pocket = { -pocket-brand-name } に保存します
+newtab-pocket-saved-to-pocket = { -pocket-brand-name } に保存しました
+
+# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
+newtab-pocket-load-more-stories-button = その他の記事を読み込む
+
+## Pocket Final Card Section.
+## This is for the final card in the Pocket grid.
+
+newtab-pocket-last-card-title = 最後まで読みました！
+newtab-pocket-last-card-desc = 後でもう一度確認してください。
+newtab-pocket-last-card-image =
+    .alt = 最後まで読みました
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.

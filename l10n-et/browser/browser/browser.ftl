@@ -156,12 +156,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Lisa aadressiribale
 page-action-manage-extension =
     .label = Halda laiendust…
-page-action-remove-from-urlbar =
-    .label = Eemalda aadressiribalt
 page-action-remove-extension =
     .label = Eemalda laiendus
 
@@ -179,10 +175,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Seekord soorita otsing järgneva otsingumootoriga:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Muuda otsingu sätteid
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Otsingu sätete muutmine
 search-one-offs-context-open-new-tab =
@@ -236,8 +228,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Lisamisel kuvatakse seda dialoogi
     .accesskey = d
-bookmark-panel-done-button =
-    .label = Sobib
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -264,8 +254,6 @@ identity-passive-loaded = Mõned selle lehe osad on ebaturvalised (nt pildid).
 identity-active-loaded = Kaitse sellel lehel on keelatud.
 identity-weak-encryption = See leht kasutab nõrka krüpteeringut.
 identity-insecure-login-forms = Sellele lehele sisestatavad kasutajakonto andmed võivad ohus olla.
-identity-permissions =
-    .value = Õigused
 identity-https-only-connection-upgraded = (uuendati HTTPSile)
 identity-https-only-label = Ainult HTTPS-režiim
 identity-https-only-dropdown-on =
@@ -275,7 +263,6 @@ identity-https-only-dropdown-off =
 identity-https-only-dropdown-off-temporarily =
     .label = ajutiselt väljas
 identity-permissions-reload-hint = Muudatuste rakendumiseks pead võib-olla lehe uuesti laadima.
-identity-permissions-empty = Sellele saidile pole tagatud ühtki eriõigust.
 identity-clear-site-data =
     .label = Kustuta küpsised ja saidi andmed…
 identity-connection-not-secure-security-view = Ühendus selle saidiga pole turvaline.
@@ -326,12 +313,6 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Jagatav kaamera:
-    .accesskey = J
-popup-select-microphone =
-    .value = Jagatav mikrofon:
-    .accesskey = m
 popup-all-windows-shared = Jagatakse kõiki nähtavaid aknaid sinu ekraanil.
 
 ## WebRTC window or screen share tab switch warning
@@ -342,14 +323,10 @@ popup-all-windows-shared = Jagatakse kõiki nähtavaid aknaid sinu ekraanil.
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Otsi või sisesta aadress
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Otsi või sisesta aadress
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Veebilehitseja on kaugjuhtimisel
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -365,8 +342,6 @@ urlbar-go-button =
     .tooltiptext = Mine aadressiribal olevale aadressile
 urlbar-page-action-button =
     .tooltiptext = Lehe toimingud
-urlbar-pocket-button =
-    .tooltiptext = Salvesta { -pocket-brand-name }isse
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -481,6 +456,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Kohanda tööriistariba…
     .accesskey = K
+toolbar-button-email-link =
+    .label = Saada link
+    .tooltiptext = Saada link e-postiga
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Salvesta leht
+    .tooltiptext = Salvesta see leht ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Ava fail
+    .tooltiptext = Ava fail ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Sünkroniseeritud kaardid
+    .tooltiptext = Kuva teistes seadmetes avatud kaarte
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Uus privaatne aken
+    .tooltiptext = Ava uus privaatse veebilehitsemise aken ({ $shortcut })
 
 ## EME notification panel
 
@@ -518,3 +514,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Peida pilt-pildis lüliti
     .accesskey = p
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navigatsioon
+navbar-downloads =
+    .label = Allalaadimised
+navbar-overflow =
+    .tooltiptext = Rohkem tööriistu…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Prindi
+    .tooltiptext = Prindi see leht… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Prindi
+    .tooltiptext = Prindi see leht
+navbar-home =
+    .label = Kodu
+    .tooltiptext = { -brand-short-name }i avaleht
+navbar-library =
+    .label = Kogumik
+    .tooltiptext = Vaata ajalugu, salvestatud järjehoidjaid ja muid asju
+navbar-search =
+    .title = Otsi
+navbar-accessibility-indicator =
+    .tooltiptext = Hõlbustus on lubatud
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Brauseri kaartide
+tabs-toolbar-new-tab =
+    .label = Uus kaart
+tabs-toolbar-list-all-tabs =
+    .label = Näita kõigi kaartide nimekirja
+    .tooltiptext = Näita kõigi kaartide nimekirja

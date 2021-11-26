@@ -12,6 +12,8 @@ about-addressbook-toolbar-new-contact =
     .label = Nuevo contacto
 about-addressbook-toolbar-new-list =
     .label = Nueva lista
+about-addressbook-toolbar-import =
+    .label = Importar
 
 ## Books
 
@@ -22,6 +24,8 @@ about-addressbook-books-context-synchronize =
     .label = Sincronizar
 about-addressbook-books-context-print =
     .label = Imprimir…
+about-addressbook-books-context-export =
+    .label = Exportar…
 about-addressbook-books-context-delete =
     .label = Eliminar
 about-addressbook-books-context-remove =

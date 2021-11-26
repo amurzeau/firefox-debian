@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Zatvori bočnu traku
+
+sidebar-close-button =
+    .tooltiptext = Zatvori bočnu traku

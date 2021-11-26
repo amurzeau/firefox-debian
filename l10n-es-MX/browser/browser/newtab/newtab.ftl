@@ -20,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Buscar
     .aria-label = Buscar
-newtab-search-box-search-the-web-text = Buscar en la Web
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = Buscar con { $engine } o ingresar dirección
@@ -166,6 +165,11 @@ newtab-label-sponsored = { $sponsorOrSource } · Patrocinado
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = Patrocinado por { $sponsor }
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } min
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -222,6 +226,16 @@ newtab-pocket-more-recommendations = Más recomendaciones
 newtab-pocket-learn-more = Saber más
 newtab-pocket-cta-button = Obtener { -pocket-brand-name }
 newtab-pocket-cta-text = Guarda las historias que quieras en { -pocket-brand-name } y llena tu mente con fascinantes lecturas.
+newtab-pocket-pocket-firefox-family = { -pocket-brand-name } es parte de la familia { -brand-product-name }
+# A save to Pocket button that shows over the card thumbnail on hover.
+newtab-pocket-save-to-pocket = Guardar en { -pocket-brand-name }
+newtab-pocket-saved-to-pocket = Guardado en { -pocket-brand-name }
+# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
+newtab-pocket-load-more-stories-button = Cargar más historias
+
+## Pocket Final Card Section.
+## This is for the final card in the Pocket grid.
+
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.

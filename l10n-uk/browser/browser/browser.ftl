@@ -111,7 +111,7 @@ urlbar-tip-icon-description =
 ## Variables:
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
-urlbar-search-tips-onboard = Вводьте менше, знаходьте більше: Шукайте з { $engineName } прямо з панелі адреси.
+urlbar-search-tips-onboard = Вводьте менше, знаходьте більше: Шукайте за допомогою { $engineName } прямо з панелі адреси.
 urlbar-search-tips-redirect-2 = Розпочніть пошук з адресного рядка, щоб побачити пропозиції від { $engineName } та історії перегляду.
 # Prompts users to use the Urlbar when they are typing in the domain of a
 # search engine, e.g. google.com or amazon.com.
@@ -160,20 +160,16 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Додати до панелі адреси
 page-action-manage-extension =
     .label = Керувати розширенням…
-page-action-remove-from-urlbar =
-    .label = Вилучити з панелі адреси
 page-action-remove-extension =
     .label = Вилучити розширення
 
 ## Auto-hide Context Menu
 
 full-screen-autohide =
-    .label = Приховати панелі
-    .accesskey = П
+    .label = Сховати панелі
+    .accesskey = С
 full-screen-exit =
     .label = Вийти з повноекранного режиму
     .accesskey = В
@@ -182,11 +178,7 @@ full-screen-exit =
 
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
-search-one-offs-with-title = Цього разу шукати з:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Змінити налаштування пошуку
+search-one-offs-with-title = Цього разу шукати за допомогою:
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Змінити налаштування пошуку
 search-one-offs-context-open-new-tab =
@@ -251,8 +243,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Показати редактор при збереженні
     .accesskey = к
-bookmark-panel-done-button =
-    .label = Готово
 bookmark-panel-save-button =
     .label = Зберегти
 # Width of the bookmark panel.
@@ -282,8 +272,6 @@ identity-passive-loaded = Частини цієї сторінки (такі я�
 identity-active-loaded = Ви вимкнули захист на цій сторінці.
 identity-weak-encryption = Ця сторінка використовує слабке шифрування.
 identity-insecure-login-forms = Паролі, введені на цій сторінці, можуть бути скомпрометовані.
-identity-permissions =
-    .value = Дозволи
 identity-https-only-connection-upgraded = (оновлено до HTTPS)
 identity-https-only-label = HTTPS-режим
 identity-https-only-dropdown-on =
@@ -299,7 +287,6 @@ identity-permissions-storage-access-header = Куки сторонніх сай�
 identity-permissions-storage-access-hint = Ці сторони сайти можуть використовувати куки стеження між сайтами та дані сайту, поки ви перебуваєте на поточному вебсайті.
 identity-permissions-storage-access-learn-more = Докладніше
 identity-permissions-reload-hint = Для застосування змін, можливо, доведеться перезавантажити сторінку.
-identity-permissions-empty = Ви не надали цьому сайту жодних спеціальних дозволів.
 identity-clear-site-data =
     .label = Стерти куки і дані сайтів…
 identity-connection-not-secure-security-view = Ваше з'єднання з цим сайтом незахищене.
@@ -384,12 +371,6 @@ bookmarks-toolbar-empty-message = Для швидкого доступу дод�
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Доступ до камери:
-    .accesskey = к
-popup-select-microphone =
-    .value = Доступ до мікрофону:
-    .accesskey = м
 popup-select-camera-device =
     .value = Камера:
     .accesskey = К
@@ -403,14 +384,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Динаміки
 popup-all-windows-shared = Надасться доступ до всіх видимих вікон на вашому екрані.
-popup-screen-sharing-not-now =
-    .label = Не зараз
-    .accesskey = е
-popup-screen-sharing-never =
-    .label = Ніколи не дозволяти
-    .accesskey = Н
-popup-silence-notifications-checkbox = Вимкнути сповіщення від { -brand-short-name } під час спільного доступу
-popup-silence-notifications-checkbox-warning = { -brand-short-name } не показуватиме сповіщення під час спільного доступу.
 popup-screen-sharing-block =
     .label = Блокувати
     .accesskey = Б
@@ -434,21 +407,17 @@ enable-devtools-popup-description = Щоб використовувати F12, �
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Введіть пошуковий запит чи адресу
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Введіть пошуковий запит чи адресу
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Браузер знаходиться під віддаленим керуванням
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
 #  $name (String): the name of a search engine that searches the entire Web
 #  (e.g. Google).
 urlbar-placeholder-search-mode-web-2 =
-    .placeholder = Пошук в Інтернеті
+    .placeholder = Пошук в інтернеті
     .aria-label = Шукати за допомогою { $name }
 # This placeholder is used in search mode with search engines that search a
 # specific site (e.g., Amazon).
@@ -473,7 +442,7 @@ urlbar-placeholder-search-mode-other-tabs =
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
-    .placeholder = Шукайте з { $name } або введіть адресу
+    .placeholder = Шукайте за допомогою { $name } або введіть адресу
 # Variables
 #  $component (String): the name of the component which forces remote control.
 #    Example: "DevTools", "Marionette", "RemoteAgent".
@@ -490,8 +459,6 @@ urlbar-go-button =
     .tooltiptext = Перейти за адресою з панелі адреси
 urlbar-page-action-button =
     .tooltiptext = Дії сторінки
-urlbar-pocket-button =
-    .tooltiptext = Зберегти в { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -508,7 +475,7 @@ urlbar-result-action-search-in-private = Пошук у приватному ві
 # "Search", and we would like to avoid strings like "Search MSN Search".
 # Variables
 #  $engine (String): the name of a search engine
-urlbar-result-action-search-w-engine = Шукати з { $engine }
+urlbar-result-action-search-w-engine = Шукати за допомогою { $engine }
 urlbar-result-action-sponsored = Спонсоровано
 urlbar-result-action-switch-tab = Перейти на вкладку
 urlbar-result-action-visit = Відвідати
@@ -531,7 +498,7 @@ urlbar-result-action-tabtosearch-web = Шукати за допомогою { $e
 # Variables
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
-urlbar-result-action-tabtosearch-other-engine = Шукати з { $engine } безпосередньо в панелі адреси
+urlbar-result-action-tabtosearch-other-engine = Шукати за допомогою { $engine } безпосередньо в панелі адреси
 # Action text for copying to clipboard.
 urlbar-result-action-copy-to-clipboard = Копіювати
 # Shows the result of a formula expression being calculated, the last = sign will be shown
@@ -608,13 +575,13 @@ bookmarks-mobile-bookmarks-menu =
 bookmarks-tools-sidebar-visibility =
     .label =
         { $isVisible ->
-            [true] Приховати бічну панель закладок
-           *[other] Показати панель закладок
+            [true] Сховати бічну панель закладок
+           *[other] Показати бічну панель закладок
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
         { $isVisible ->
-            [true] Приховати панель закладок
+            [true] Сховати панель закладок
            *[other] Показати панель закладок
         }
 bookmarks-tools-toolbar-visibility-panel =
@@ -696,6 +663,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Налаштувати панель інструментів…
     .accesskey = Н
+toolbar-button-email-link =
+    .label = Надіслати посилання
+    .tooltiptext = Надіслати посилання на цю сторінку е-поштою
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Зберегти сторінку
+    .tooltiptext = Зберегти цю сторінку ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Відкрити файл
+    .tooltiptext = Відкрити файл ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Синхронізовані вкладки
+    .tooltiptext = Показати вкладки з інших пристроїв
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Приватне вікно
+    .tooltiptext = Відкрити нове вікно приватного перегляду ({ $shortcut })
 
 ## EME notification panel
 
@@ -746,6 +734,55 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Не показувати це повідомлення при блокуванні спливних вікон
     .accesskey = е
+edit-popup-settings =
+    .label = Керувати налаштуваннями спливних вікон…
+    .accesskey = К
 picture-in-picture-hide-toggle =
-    .label = Приховати перемикач Зображення в зображенні
+    .label = Сховати перемикач Зображення в зображенні
     .accesskey = х
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Навігація
+navbar-downloads =
+    .label = Завантаження
+navbar-overflow =
+    .tooltiptext = Інші інструменти…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Друкувати
+    .tooltiptext = Друкувати цю сторінку… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Друкувати
+    .tooltiptext = Друкувати цю сторінку
+navbar-home =
+    .label = Домівка
+    .tooltiptext = Домівка { -brand-short-name }
+navbar-library =
+    .label = Бібліотека
+    .tooltiptext = Перегляд історії, збережених закладок та інших даних
+navbar-search =
+    .title = Пошук
+navbar-accessibility-indicator =
+    .tooltiptext = Функції доступності увімкнено
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Вкладки браузера
+tabs-toolbar-new-tab =
+    .label = Нова вкладка
+tabs-toolbar-list-all-tabs =
+    .label = Список усіх вкладок
+    .tooltiptext = Список усіх вкладок
+
+## Infobar shown at startup to suggest session-restore
+
+# <img data-l10n-name="icon"/> will be replaced by the application menu icon
+restore-session-startup-suggestion-message = <strong>Відкрити попередні вкладки?</strong> Ви можете відновити попередній сеанс у меню { -brand-short-name } <img data-l10n-name="icon"/> у розділі Історія.
+restore-session-startup-suggestion-button = Покажіть як

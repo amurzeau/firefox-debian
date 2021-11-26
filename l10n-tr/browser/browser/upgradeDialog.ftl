@@ -64,6 +64,31 @@ upgrade-dialog-default-secondary-button = Daha sonra
 upgrade-dialog-theme-title-2 = Yepyeni bir temayla temiz bir başlangıç yapın
 upgrade-dialog-theme-system = Sistem teması
     .title = Düğmeler, menüler ve pencerelerde işletim sisteminin temasını kullan
+
+## Start screen
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-start-title = Hayatınıza renk katın
+upgrade-dialog-start-subtitle = Yepyeni renk kuşakları. Sadece sınırlı bir süre için.
+upgrade-dialog-start-primary-button = Renk kuşaklarını keşfet
+upgrade-dialog-start-secondary-button = Daha sonra
+
+## Colorway screen
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-colorway-title = Paletinizi seçin
+upgrade-dialog-colorway-home-checkbox = Temalı arka plana sahip Firefox giriş sayfasına geç
+upgrade-dialog-colorway-primary-button = Renk kuşağını kaydet
+upgrade-dialog-colorway-secondary-button = Önceki temayı kullanmaya devam et
+upgrade-dialog-colorway-theme-tooltip =
+    .title = Varsayılan temaları keşfet
+# $colorwayName (String) - Name of colorway, e.g., Abstract, Cheers
+upgrade-dialog-colorway-colorway-tooltip =
+    .title = { $colorwayName } renk kuşaklarını keşfedin
+upgrade-dialog-colorway-default-theme = Varsayılan
+# "Auto" is short for "Automatic"
+upgrade-dialog-colorway-theme-auto = Otomatik
+    .title = Düğmeler, menüler ve pencereler için işletim sisteminin temasını kullan
 upgrade-dialog-theme-light = Açık
     .title = Düğmeler, menüler ve pencereler için açık bir tema kullan
 upgrade-dialog-theme-dark = Koyu
@@ -74,3 +99,18 @@ upgrade-dialog-theme-keep = Öncekini kullanmaya devam et
     .title = { -brand-short-name }’u güncellemeden önce yüklediğim temayı kullan
 upgrade-dialog-theme-primary-button = Temayı kaydet
 upgrade-dialog-theme-secondary-button = Daha sonra
+upgrade-dialog-colorway-variation-soft = Yumuşak
+    .title = Bu renk kuşağını kullan
+upgrade-dialog-colorway-variation-balanced = Dengeli
+    .title = Bu renk kuşağını kullan
+# "Bold" is used in the sense of bravery or courage, not in the sense of
+# emphasized text.
+upgrade-dialog-colorway-variation-bold = Canlı
+    .title = Bu renk kuşağını kullan
+
+## Thank you screen
+
+# This title can be explicitly wrapped to control which words are on which line.
+upgrade-dialog-thankyou-title = Bizi tercih ettiğiniz için teşekkürler
+upgrade-dialog-thankyou-subtitle = { -brand-short-name }, kâr amacı gütmeyen bir kuruluşun elinden çıkan bağımsız bir tarayıcıdır. Birlikte web’i daha güvenli, sağlıklı ve gizlilik yanlısı bir hale getiriyoruz.
+upgrade-dialog-thankyou-primary-button = Gezinmeye başla

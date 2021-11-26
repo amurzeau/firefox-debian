@@ -4,20 +4,10 @@
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = Паролі
-
-# "Google Play" and "App Store" are both branding and should not be translated
-
-login-app-promo-title = Майте доступ до своїх паролів всюди
-login-app-promo-subtitle = Отримайте безплатний додаток { -lockwise-brand-name }
-login-app-promo-android =
-    .alt = Отримати на Google Play
-login-app-promo-apple =
-    .alt = Завантажити з App Store
 login-filter =
     .placeholder = Шукати паролі
 create-login-button = Створити новий запис
 fxaccounts-sign-in-text = Отримайте доступ до своїх паролів на інших пристроях
-fxaccounts-sign-in-button = Увійдіть в { -sync-brand-short-name(case: "acc") }
 fxaccounts-sign-in-sync-button = Увійти до синхронізації
 fxaccounts-avatar-button =
     .title = Керувати обліковим записом
@@ -37,8 +27,6 @@ menu-menuitem-preferences =
        *[other] Налаштування
     }
 about-logins-menu-menuitem-help = Допомога
-menu-menuitem-android-app = { -lockwise-brand-short-name } для Android
-menu-menuitem-iphone-app = { -lockwise-brand-short-name } для iPhone та iPad
 
 ## Login List
 
@@ -78,13 +66,9 @@ about-logins-list-section-week = Останні 7 днів
 
 ## Introduction screen
 
-login-intro-heading = Шукаєте свої збережені паролі? Налаштуйте { -sync-brand-short-name(case: "acc") }.
 about-logins-login-intro-heading-logged-out2 = Шукаєте збережені паролі? Увімкніть синхронізацію або імпортуйте їх.
 about-logins-login-intro-heading-logged-in = Не знайдено синхронізованих паролів.
 login-intro-description = Якщо ви зберегли паролі в { -brand-product-name } на іншому пристрої, ось як отримати їх тут:
-login-intro-instruction-fxa = Зареєструйтеся чи увійдіть до свого { -fxaccount-brand-name(case: "gen") } на пристрої, де збережено ваші паролі
-login-intro-instruction-fxa-settings = Переконайтеся, що встановлено прапорець на Паролі в Налаштуваннях { -sync-brand-short-name(case: "dat") }
-about-logins-intro-instruction-help = Відвідайте <a data-l10n-name="help-link">Підтримку { -lockwise-brand-short-name }</a> для отримання допомоги
 login-intro-instructions-fxa = Зареєструйтеся чи увійдіть до свого { -fxaccount-brand-name(case: "gen") } на пристрої, де збережено ваші паролі
 login-intro-instructions-fxa-settings = Перейдіть до Налаштування > Синхронізація > Увімкнути синхронізацію… Позначте паролі.
 login-intro-instructions-fxa-help = Відвідайте <a data-l10n-name="help-link">Підтримку { -lockwise-brand-short-name }</a> для отримання допомоги.
@@ -140,10 +124,6 @@ about-logins-copy-password-os-auth-dialog-message-win = Щоб скопіюва�
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = копіювати збережений пароль
-
-## Master Password notification
-
-master-password-notification-message = Введіть головний пароль, щоб переглянути збережені дані входу і паролі
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message-win = Щоб експортувати паролі, введіть свої облікові дані входу для Windows. Це допомагає захистити ваші збережені паролі.
 # This message can be seen when attempting to export a password in about:logins
@@ -156,24 +136,6 @@ about-logins-primary-password-notification-message = Введіть головн
 master-password-reload-button =
     .label = Увійти
     .accesskey = в
-
-## Password Sync notification
-
-enable-password-sync-notification-message =
-    { PLATFORM() ->
-        [windows] Хочете, щоб усі ваші паролі були всюди, де ви користуєтесь { -brand-product-name }? Відкрийте налаштування { -sync-brand-short-name(case: "gen") } й встановіть прапорець на Паролі.
-       *[other] Хочете, щоб усі ваші паролі були всюди, де ви користуєтесь { -brand-product-name }? Відкрийте налаштування { -sync-brand-short-name(case: "gen") } й встановіть прапорець на Паролі.
-    }
-enable-password-sync-preferences-button =
-    .label =
-        { PLATFORM() ->
-            [windows] Відкрити налаштування { -sync-brand-short-name(case: "gen") }
-           *[other] Відкрити налаштування { -sync-brand-short-name(case: "gen") }
-        }
-    .accesskey = В
-about-logins-enable-password-sync-dont-ask-again-button =
-    .label = Не питати знову
-    .accesskey = Н
 
 ## Dialogs
 
@@ -229,7 +191,7 @@ about-logins-confirm-export-dialog-confirm-button = Експорт…
 about-logins-alert-import-title = Імпорт завершено
 about-logins-alert-import-message = Переглянути детальний підсумок імпорту
 confirm-discard-changes-dialog-title = Відхилити незбережені зміни?
-confirm-discard-changes-dialog-message = Всі незбережені зміни будуть втрачені.
+confirm-discard-changes-dialog-message = Усі незбережені зміни будуть втрачені.
 confirm-discard-changes-dialog-confirm-button = Відхилити
 
 ## Breach Alert notification

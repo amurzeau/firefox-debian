@@ -7,8 +7,6 @@ privatebrowsingpage-open-private-window-label = Abrir una ventana privada
 about-private-browsing-search-placeholder = Buscar en la web
 about-private-browsing-info-title = Está en una ventana privada
 about-private-browsing-info-myths = Mitos comunes sobre la navegación privada
-about-private-browsing =
-    .title = Buscar en la web
 about-private-browsing-search-btn =
     .title = Buscar en la web
 # Variables
@@ -25,9 +23,12 @@ about-private-browsing-not-private = Actualmente no está en una ventana privada
 about-private-browsing-info-description = { -brand-short-name } elimina su búsqueda y el historial de navegación cuando sale de la aplicación o cierra todas las pestañas y ventanas de navegación privada. Si bien esto no lo convierte en anónimo en los sitios web o en su proveedor de servicios de Internet, hace que sea más fácil mantener en privado lo que hace en línea cualquier otra persona que use esta computadora.
 about-private-browsing-need-more-privacy = ¿Necesita más privacidad?
 about-private-browsing-turn-on-vpn = Pruebe { -mozilla-vpn-brand-name }
+about-private-browsing-info-description-private-window = Ventana privada: { -brand-short-name } elimina su historial de búsqueda y navegación cuando cierra todas las ventanas privadas. Esto no lo convierte en anónimo.
 about-private-browsing-info-description-simplified = { -brand-short-name } borra el historial de búsqueda y navegación al cerrar todas las ventanas privadas, pero esto no lo hace anónimo.
 about-private-browsing-learn-more-link = Conocer más
 about-private-browsing-hide-activity = Ocultar la actividad y ubicación, en cualquier lugar que esté navegando
+about-private-browsing-get-privacy = Obtenga protecciones de privacidad dondequiera que navegue
+about-private-browsing-hide-activity-1 = Oculte la actividad de navegación y la ubicación con { -mozilla-vpn-brand-name }. Un clic crea una conexión segura, incluso en Wi-Fi público.
 about-private-browsing-prominent-cta = Manténgase privado con { -mozilla-vpn-brand-name }
 # This string is the title for the banner for search engine selection
 # in a private window.

@@ -5,17 +5,22 @@
 
 ## App Menu
 
-appmenuitem-customize-mode =
-    .label = নিজের পছন্দানুযায়ী নির্বাচন…
-
-## Zoom Controls
-
 appmenuitem-new-tab =
     .label = নতুন ট্যাব T
 appmenuitem-new-window =
     .label = নতুন উইন্ডো
 appmenuitem-new-private-window =
     .label = নতুন ব্যক্তিগত উইন্ডো
+appmenuitem-history =
+    .label = ইতিহাস
+appmenuitem-downloads =
+    .label = ডাউনলোড
+appmenuitem-print =
+    .label = মুদ্রণ…
+appmenuitem-zoom =
+    .value = বড় আকারে প্রদর্শন
+appmenuitem-help =
+    .label = সাহায্য
 
 ## Zoom and Fullscreen Controls
 
@@ -23,15 +28,23 @@ appmenuitem-zoom-enlarge =
     .label = বড় করুন
 appmenuitem-zoom-reduce =
     .label = ছোট করুন
-
 appmenuitem-fullscreen =
     .label = পূর্ণ পর্দাজুড়ে প্রদর্শন
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
-fxa-toolbar-sync-now =
-    .label = এখনই সিঙ্ক করুন
-
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = কোন ট্যাব খোলা নেই
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = আপনার অন্যান্য ডিভাইসের ট্যাবসমূহের তালিকা দেখতে, ট্যাব সিঙ্ক চালু করুন।
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = আপনি কি আপনার অন্যান্য ডিভাইসের ট্যাবসমূহ এখানে দেখতে চান?
+appmenu-remote-tabs-connectdevice =
+    .label = অন্য ডিভাইস সংযুক্ত করুন
+appmenu-remote-tabs-welcome = আপনার অন্যান্য ডিভাইসের ট্যাবের তালিকা দেখুন।
+appmenu-remote-tabs-unverified = আপনার অ্যাকাউন্ট যাচাই করা প্রয়োজন।
+appmenuitem-fxa-sign-in = { -brand-product-name } এ সাইন ইন করুন
 appmenuitem-save-page =
     .label = পাতা নতুনভাবে সংরক্ষণ…
 
@@ -42,6 +55,18 @@ whatsnew-panel-header = নতুন কি আছে
 ## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
+
+profiler-popup-button-idle =
+    .label = প্রোফাইলার
+    .tooltiptext = একটি পারফরম্যান্স প্রোফাইল রেকর্ড করুন
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
 
 
 ## History panel
@@ -85,4 +110,3 @@ appmenu-help-not-deceptive =
 
 appmenu-taskmanager =
     .label = কাজ ব্যবস্থাপক
-

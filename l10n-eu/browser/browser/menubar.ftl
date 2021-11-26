@@ -38,20 +38,16 @@ menu-quit =
             [windows] I
            *[other] I
         }
-
 # This menu-quit-mac string is only used on macOS.
 menu-quit-mac =
     .label = Irten { -brand-shorter-name }(e)tik
-
 # This menu-quit-button string is only used on Linux.
 menu-quit-button =
     .label = { menu-quit.label }
-
 # This menu-quit-button-win string is only used on Windows.
 menu-quit-button-win =
     .label = { menu-quit.label }
     .tooltip = Irten { -brand-shorter-name }(e)tik
-
 menu-about =
     .label = { -brand-shorter-name }(r)i buruz
     .accesskey = b
@@ -93,6 +89,9 @@ menu-file-save-page =
 menu-file-email-link =
     .label = Bidali lotura postaz…
     .accesskey = s
+menu-file-share-url =
+    .label = Partekatu
+    .accesskey = P
 menu-file-print-setup =
     .label = Prestatu orria…
     .accesskey = u
@@ -114,9 +113,6 @@ menu-file-go-offline =
 menu-edit =
     .label = Editatu
     .accesskey = E
-menu-edit-find-on =
-    .label = Bilatu orri honetan…
-    .accesskey = B
 menu-edit-find-in-page =
     .label = Bilatu orrian…
     .accesskey = B
@@ -135,9 +131,6 @@ menu-view =
 menu-view-toolbars-menu =
     .label = Tresna-barrak
     .accesskey = T
-menu-view-customize-toolbar =
-    .label = Pertsonalizatu…
-    .accesskey = P
 menu-view-customize-toolbar2 =
     .label = Pertsonalizatu tresna-barra…
     .accesskey = P
@@ -174,8 +167,8 @@ menu-view-page-style-no-style =
 menu-view-page-basic-style =
     .label = Oinarrizko orri-estiloa
     .accesskey = O
-menu-view-charset =
-    .label = Testuaren kodeketa
+menu-view-repair-text-encoding =
+    .label = Konpondu testu-kodeketa
     .accesskey = k
 
 ## These should match what Safari and other Apple applications
@@ -219,7 +212,6 @@ menu-history-undo-menu =
     .label = Itxitako azken fitxak
 menu-history-undo-window-menu =
     .label = Itxitako azken leihoak
-
 menu-history-reopen-all-tabs = Ireki berriro fitxa guztiak
 menu-history-reopen-all-windows = Ireki berriro leiho guztiak
 
@@ -228,10 +220,8 @@ menu-history-reopen-all-windows = Ireki berriro leiho guztiak
 menu-bookmarks-menu =
     .label = Laster-markak
     .accesskey = m
-menu-bookmarks-show-all =
-    .label = Erakutsi laster-marka guztiak
-menu-bookmark-this-page =
-    .label = Egin orriaren laster-marka
+menu-bookmarks-manage =
+    .label = Kudeatu laster-markak
 menu-bookmark-current-tab =
     .label = Egin uneko fitxaren laster-marka
 menu-bookmark-edit =
@@ -253,15 +243,6 @@ menu-tools =
 menu-tools-downloads =
     .label = Deskargak
     .accesskey = D
-menu-tools-addons =
-    .label = Gehigarriak
-    .accesskey = G
-menu-tools-fxa-sign-in =
-    .label = Hasi saioa { -brand-product-name }(e)n…
-    .accesskey = H
-menu-tools-turn-on-sync =
-    .label = Aktibatu { -sync-brand-short-name }…
-    .accesskey = A
 menu-tools-addons-and-themes =
     .label = Gehigarriak eta itxurak
     .accesskey = G
@@ -277,9 +258,6 @@ menu-tools-sync-now =
 menu-tools-fxa-re-auth =
     .label = Birkonektatu { -brand-product-name }(e)ra…
     .accesskey = B
-menu-tools-web-developer =
-    .label = Web garapena
-    .accesskey = W
 menu-tools-browser-tools =
     .label = Nabigatzailearen tresnak
     .accesskey = b
@@ -292,17 +270,6 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Orriaren informazioa
     .accesskey = i
-menu-preferences =
-    .label =
-        { PLATFORM() ->
-            [windows] Aukerak
-           *[other] Hobespenak
-        }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] A
-           *[other] n
-        }
 menu-settings =
     .label = Ezarpenak
     .accesskey =
@@ -335,21 +302,6 @@ menu-window-bring-all-to-front =
 menu-help =
     .label = Laguntza
     .accesskey = L
-menu-help-product =
-    .label = { -brand-shorter-name }(r)en laguntza
-    .accesskey = l
-menu-help-show-tour =
-    .label = { -brand-shorter-name }(r)en itzulia
-    .accesskey = u
-menu-help-import-from-another-browser =
-    .label = Inportatu beste nabigatzaile batetik…
-    .accesskey = I
-menu-help-keyboard-shortcuts =
-    .label = Laster-teklak
-    .accesskey = s
-menu-help-troubleshooting-info =
-    .label = Arazoak konpontzeko informazioa…
-    .accesskey = A
 menu-get-help =
     .label = Lortu laguntza
     .accesskey = L
@@ -361,12 +313,6 @@ menu-help-report-site-issue =
 menu-help-feedback-page =
     .label = Bidali iritzia…
     .accesskey = d
-menu-help-safe-mode-without-addons =
-    .label = Berrabiarazi gehigarriak desgaituta…
-    .accesskey = r
-menu-help-safe-mode-with-addons =
-    .label = Berrabiarazi gehigarriak gaituta
-    .accesskey = r
 menu-help-enter-troubleshoot-mode2 =
     .label = Arazoak konpontzeko modua…
     .accesskey = m

@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = הוספה לשורת הכתובת
 page-action-manage-extension =
     .label = ניהול הרחבה…
-page-action-remove-from-urlbar =
-    .label = הסרה משורת הכתובת
 page-action-remove-extension =
     .label = הסרת הרחבה
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = הפעם, לחפש באמצעות:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = שינוי הגדרות החיפוש
 search-one-offs-change-settings-compact-button =
     .tooltiptext = שינוי הגדרות החיפוש
 search-one-offs-context-open-new-tab =
@@ -250,8 +242,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = הצגת העורך בזמן שמירה
     .accesskey = ה
-bookmark-panel-done-button =
-    .label = סיום
 bookmark-panel-save-button =
     .label = שמירה
 # Width of the bookmark panel.
@@ -281,8 +271,6 @@ identity-passive-loaded = חלקים מדף זה אינם מאובטחים (כג
 identity-active-loaded = ניטרלת את אמצעי האבטחה על דף זה.
 identity-weak-encryption = דף זה משתמש בהצפנה חלשה.
 identity-insecure-login-forms = פרטי ההתחברות המוזנים בעמוד זה עשויים להיות חשופים בפני גורמי צד שלישי.
-identity-permissions =
-    .value = הרשאות
 identity-https-only-connection-upgraded = (שודרג ל־HTTPS)
 identity-https-only-label = מצב HTTPS בלבד
 identity-https-only-dropdown-on =
@@ -297,7 +285,6 @@ identity-https-only-info-no-upgrade = לא ניתן לשדרג את החיבור
 identity-permissions-storage-access-header = עוגיות חוצות אתרים
 identity-permissions-storage-access-learn-more = מידע נוסף
 identity-permissions-reload-hint = יתכן שיהיה עליך לרענן את העמוד כדי שהשינויים ייכנסו לתוקף.
-identity-permissions-empty = לא סופקו לאתר זה הרשאות מיוחדות.
 identity-clear-site-data =
     .label = ניקוי עוגיות ונתוני אתרים…
 identity-connection-not-secure-security-view = החיבור שלך לאתר זה אינו מאובטח.
@@ -379,12 +366,6 @@ bookmarks-toolbar-empty-message = לקבלת גישה מהירה, ניתן למ�
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = מצלמה לשיתוף:
-    .accesskey = צ
-popup-select-microphone =
-    .value = מיקרופון לשיתוף:
-    .accesskey = מ
 popup-select-camera-device =
     .value = מצלמה:
     .accesskey = מ
@@ -398,14 +379,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = רמקולים
 popup-all-windows-shared = ישותפו כל החלונות הגלויים על המסך.
-popup-screen-sharing-not-now =
-    .label = לא כעת
-    .accesskey = ל
-popup-screen-sharing-never =
-    .label = לעולם לא לאפשר
-    .accesskey = ע
-popup-silence-notifications-checkbox = השבתת התרעות מ־{ -brand-short-name } בזמן שיתוף
-popup-silence-notifications-checkbox-warning = ‏{ -brand-short-name } לא יציג התרעות בזמן השיתוף.
 popup-screen-sharing-block =
     .label = לחסום
     .accesskey = ח
@@ -428,14 +401,10 @@ sharing-warning-disable-for-session =
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = חיפוש או הקלדת כתובת
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = חיפוש או הקלדת כתובת
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = הדפדפן נשלט מרחוק
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -484,8 +453,6 @@ urlbar-go-button =
     .tooltiptext = מעבר לכתובת שבסרגל המיקום
 urlbar-page-action-button =
     .tooltiptext = פעולות דף
-urlbar-pocket-button =
-    .tooltiptext = שמירה אל { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -690,6 +657,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = התאמה אישית של סרגל הכלים…
     .accesskey = ס
+toolbar-button-email-link =
+    .label = שליחת קישור בדוא״ל
+    .tooltiptext = שליחת קישור לדף זה בדוא״ל
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = שמירת דף
+    .tooltiptext = שמירת דף זה ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = פתיחת קובץ
+    .tooltiptext = פתיחת קובץ ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = לשוניות מסונכרנות
+    .tooltiptext = הצגת לשוניות ממכשירים אחרים
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = חלון פרטי חדש
+    .tooltiptext = פתיחת חלון גלישה פרטית חדש ({ $shortcut })
 
 ## EME notification panel
 
@@ -740,6 +728,55 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = אל תראה הודעה זו בעת חסימת חלונות קופצים
     .accesskey = א
+edit-popup-settings =
+    .label = ניהול הגדרות של חלונות קופצים…
+    .accesskey = ח
 picture-in-picture-hide-toggle =
     .label = הסתרת הכפתור של תמונה בתוך תמונה
     .accesskey = ה
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = ניווט
+navbar-downloads =
+    .label = הורדות
+navbar-overflow =
+    .tooltiptext = כלים נוספים…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = הדפסה
+    .tooltiptext = הדפסת דף זה… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = הדפסה
+    .tooltiptext = הדפסת דף זה
+navbar-home =
+    .label = דף הבית
+    .tooltiptext = דף הבית של { -brand-short-name }
+navbar-library =
+    .label = ספרייה
+    .tooltiptext = צפייה בהיסטוריה, סימניות שמורות ועוד
+navbar-search =
+    .title = חיפוש
+navbar-accessibility-indicator =
+    .tooltiptext = תכונות נגישות מופעלות
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = לשוניות הדפדפן
+tabs-toolbar-new-tab =
+    .label = לשונית חדשה
+tabs-toolbar-list-all-tabs =
+    .label = רשימת כל הלשוניות
+    .tooltiptext = רשימת כל הלשוניות
+
+## Infobar shown at startup to suggest session-restore
+
+# <img data-l10n-name="icon"/> will be replaced by the application menu icon
+restore-session-startup-suggestion-message = <strong>לפתוח את הלשוניות הקודמות?</strong> באפשרותך לשחזר את ההפעלה הקודמת שלך מתפריט היישום של { -brand-short-name } ‏<img data-l10n-name="icon"/>, תחת היסטוריה.
+restore-session-startup-suggestion-button = להראות לך איך

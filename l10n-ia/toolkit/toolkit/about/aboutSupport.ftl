@@ -12,11 +12,6 @@ crashes-id = ID de reporto
 crashes-send-date = Submittite
 crashes-all-reports = Tote le reportos de collapso
 crashes-no-config = Iste application non ha essite configurate pro monstrar le reportos de collapso.
-extensions-title = Extensiones
-extensions-name = Nomine
-extensions-enabled = Activate
-extensions-version = Version
-extensions-id = ID
 support-addons-title = Additivos
 support-addons-name = Nomine
 support-addons-type = Typo
@@ -133,13 +128,11 @@ sandbox-sys-call-tid = TID
 sandbox-sys-call-proc-type = Typo de processo
 sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argumentos
-safe-mode-title = Probar le modo secur
-restart-in-safe-mode-label = Reinitiar con le additivos inactive…
 troubleshoot-mode-title = Diagnosticar problemas
 restart-in-troubleshoot-mode-label = Modo diagnostic…
 clear-startup-cache-title = Prova vacuar le cache de initio
 clear-startup-cache-label = Vacuar le cache de initio…
-startup-cache-dialog-title2 = Reinitiar { -brand-short-name } pro clarar le cache initial?
+startup-cache-dialog-title2 = Reinitiar { -brand-short-name } pro vacuar le cache de initio?
 startup-cache-dialog-body2 = Isto non cambiara tu parametros ni removera extensiones.
 restart-button-label = Reinitiar
 
@@ -192,36 +185,6 @@ remote-debugging-url = Adresse URL
 
 ##
 
-support-third-party-modules-title = Modulos de tertios
-support-third-party-modules-module = File del modulo
-support-third-party-modules-version = Version de file
-support-third-party-modules-vendor = Info del venditor
-support-third-party-modules-occurrence = Occurrentia
-support-third-party-modules-process = Typo e ID del processo
-support-third-party-modules-thread = Argumento
-support-third-party-modules-base = Adresse imagebase
-support-third-party-modules-uptime = Tempore de activitate del processo (ms)
-support-third-party-modules-duration = Duration del cargamento (ms)
-support-third-party-modules-status = Stato
-support-third-party-modules-status-loaded = Cargate
-support-third-party-modules-status-blocked = Blocate
-support-third-party-modules-status-redirected = Re-dirigite
-support-third-party-modules-empty = Nulle modulo de tertios ha essite cargate.
-support-third-party-modules-no-value = (Sin valor)
-support-third-party-modules-button-open =
-    .title = Aperir position del file…
-support-third-party-modules-expand =
-    .title = Monstrar informationes detaliate
-support-third-party-modules-collapse =
-    .title = Collaber informationes detaliate
-support-third-party-modules-unsigned-icon =
-    .title = Iste modulo non es signate
-support-third-party-modules-folder-icon =
-    .title = Aperir position del file…
-support-third-party-modules-down-icon =
-    .title = Monstrar informationes detaliate
-support-third-party-modules-up-icon =
-    .title = Collaber informationes detaliate
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
@@ -308,10 +271,6 @@ webgl2-renderer = Driver WebGL 2 - renditor
 webgl2-version = Driver WebGL 2 - version
 webgl2-driver-extensions = Driver WebGL 2 - extensiones
 webgl2-extensions = Extensiones WebGL 2
-blocklisted-bug = Inserite in le lista del blocates per problemas note
-# Variables
-# $bugNumber (string) - String of bug number from Bugzilla
-bug-link = error { $bugNumber }
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
 support-blocklisted-bug = Inserite in lista del blocadas per note problemas: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
@@ -319,8 +278,6 @@ support-blocklisted-bug = Inserite in lista del blocadas per note problemas: <a 
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Inserite in le lista del blocates: codice de error { $failureCode }
 d3d11layers-crash-guard = Compositor D3D11
-d3d11video-crash-guard = Decodificator de video D3D11
-d3d9video-crash-guard = Decodificator de video D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Decodificator de video WMF VPX
 reset-on-next-restart = Reinitialisar post quitar e reaperir
@@ -342,7 +299,7 @@ can-sandbox-content = Sandbox pro le processo de contento
 can-sandbox-media = Sandbox pro le plugin de media
 content-sandbox-level = Nivello de sandbox del processo de contento
 effective-content-sandbox-level = Nivello de sandbox del contento effective
-content-win32k-lockdown-state = Stato Reclusion de Win32k pro le processo de contento
+content-win32k-lockdown-state = Stato de blocamento de Win32k pro le processo de contento
 sandbox-proc-type-content = contento
 sandbox-proc-type-file = contento del file
 sandbox-proc-type-media-plugin = plugin de media
@@ -360,14 +317,6 @@ launcher-process-status-unknown = Stato incognite
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
 multi-process-windows = { $remoteWindows }/{ $totalWindows }
-multi-process-status-0 = Activate per le usator
-multi-process-status-1 = Activate per predefinition
-multi-process-status-2 = Inactive
-multi-process-status-4 = Disactivate per le instrumentos de accessibilitate
-multi-process-status-6 = Disactivate per entrata de texto non supportate
-multi-process-status-7 = Disactivate per additivos
-multi-process-status-8 = Disactivate fortiatemente
-multi-process-status-unknown = Stato incognite
 # Variables
 # $fissionWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
@@ -418,7 +367,7 @@ support-printing-prefs-value = Valor
 support-remote-experiments-title = Experimentos remote
 support-remote-experiments-name = Nomine
 support-remote-experiments-branch = Ramo experimental
-support-remote-experiments-see-about-studies = Vider <a data-l10n-name="support-about-studies-link">about:studies</a> pro altere informationes, includite como disactivar experimentos individual o impedir a { -brand-short-name } de exequer iste typo de experimento in le futuro.
+support-remote-experiments-see-about-studies = Vide <a data-l10n-name="support-about-studies-link">about:studies</a> pro plus informationes, p.ex. como disactivar experimentos individual o impedir a { -brand-short-name } de exequer iste typo de experimento in le futuro.
 support-remote-features-title = Functiones remote
 support-remote-features-name = Nomine
 support-remote-features-status = Stato

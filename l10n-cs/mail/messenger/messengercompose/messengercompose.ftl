@@ -6,8 +6,6 @@
 # Addressing widget
 
 #   $type (String) - the type of the addressing row
-remove-address-row-type = Odebrat pole { $type }
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Odebrat pole { $type }
 #   $type (String) - the type of the addressing row
@@ -66,6 +64,10 @@ toolbar-button-add-attachment =
 add-attachment-notification-reminder =
     .label = Připojit přílohu…
     .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+add-attachment-notification-reminder2 =
+    .label = Připojit přílohu…
+    .accesskey = a
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 menuitem-attach-files =
     .label = Soubor…
     .accesskey = S
@@ -84,22 +86,14 @@ attachment-bucket-count =
            *[other] { $count } příloh
         }
     .accesskey = h
-#   $count (Number) - the number of attachments in the attachment bucket
-attachments-placeholder-tooltip =
-    .tooltiptext =
-        { $count ->
-            [1] Jedna příloha
-            [one] Jedna příloha
-            [few] { $count } přílohy
-           *[other] { $count } příloh
-        }
-#   { attachment-bucket-count.accesskey } - Do not localize this message.
-key-toggle-attachment-pane =
-    .key = { attachment-bucket-count.accesskey }
 expand-attachment-pane-tooltip =
     .tooltiptext = Zobrazí lištu příloh ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
     .tooltiptext = Skryje lištu příloh ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-show =
+    .title = Zobrazí lištu příloh ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-hide =
+    .title = Skryje lištu příloh ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 drop-file-label-attachment =
     { $count ->
         [one] Přidat jako přílohu
@@ -111,13 +105,13 @@ drop-file-label-inline = Vložit do obsahu
 # Reorder Attachment Panel
 
 move-attachment-first-panel-button =
-    .label = Přesunout jako první
+    .label = Přesunout na začátek
 move-attachment-left-panel-button =
     .label = Přesunout vlevo
 move-attachment-right-panel-button =
     .label = Přesunout vpravo
 move-attachment-last-panel-button =
-    .label = Přesunout jako poslední
+    .label = Přesunout na konec
 button-return-receipt =
     .label = Potvrzení o přijetí
     .tooltiptext = Zažádá o potvrzení o přijetí této zprávy
@@ -244,7 +238,7 @@ many-public-recipients-prompt-send = Přesto odeslat
 # Variables:
 # $identity (string) - The name of the used identity, most likely an email address.
 compose-missing-identity-warning = Unikátní identita odpovídající adrese odesílatele nebyla nalezena. Zpráva bude odeslána s pomocí současné adresy odesílatele a nastavení pro identitu { $identity }.
-encrypted-bcc-warning = Při odesílání zašifrované zprávy nejsou příjemci v Bcc zcela skrytí. Všichni příjemci je mohou identifikovat.
+encrypted-bcc-warning = Při odesílání zašifrované zprávy nejsou příjemci v poli Skrytá kopie zcela utajeni. Všichni příjemci je mohou být schopni identifikovat.
 encrypted-bcc-ignore-button = Rozumím
 
 ## Editing

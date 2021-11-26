@@ -20,14 +20,6 @@ toolbar-context-menu-bookmark-selected-tabs =
 toolbar-context-menu-select-all-tabs =
     .label = ყველა ჩანართის შერჩევა
     .accesskey = შ
-toolbar-context-menu-undo-close-tabs =
-    .label =
-        { $tabCount ->
-            [1] დახურული ჩანართის დაბრუნება
-           *[other] დახურული ჩანართების დაბრუნება
-        }
-    .accesskey = ბ
-
 toolbar-context-menu-reopen-closed-tabs =
     .label =
         { $tabCount ->
@@ -35,30 +27,24 @@ toolbar-context-menu-reopen-closed-tabs =
            *[other] დახურული ჩანართების დაბრუნება
         }
     .accesskey = უ
-
 toolbar-context-menu-manage-extension =
     .label = გაფართოების მართვა
     .accesskey = ფ
 toolbar-context-menu-remove-extension =
     .label = გაფართოების ამოშლა
     .accesskey = მ
-
 # This label is used in the extensions toolbar buttons context menus,
 # a user can use this command to submit to Mozilla an abuse report
 # related to that extension. "Report" is a verb.
 toolbar-context-menu-report-extension =
     .label = გაფართოების გასაჩივრება
     .accesskey = ჩ
-
 # Can appear on the same context menu as menubarCmd ("Menu Bar") and
 # personalbarCmd ("Bookmarks Toolbar"), so they should have different
 # access keys.
 toolbar-context-menu-pin-to-overflow-menu =
     .label = ჩამოსაშლელ მენიუში მიმაგრება
     .accesskey = გ
-toolbar-context-menu-auto-hide-downloads-button =
-    .label = ხელსაწყოთა ზოლის თვითდამალვა
-    .accesskey = ვ
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = ღილაკის დამალვა როცა ცარიელია
     .accesskey = დ
@@ -71,7 +57,6 @@ toolbar-context-menu-view-customize-toolbar =
 toolbar-context-menu-view-customize-toolbar-2 =
     .label = ხელსაწყოთა ზოლის მორგება…
     .accesskey = მ
-
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = ყოველთვის გამოჩნდეს
     .accesskey = ყ
@@ -81,7 +66,9 @@ toolbar-context-menu-bookmarks-toolbar-never-show-2 =
 toolbar-context-menu-bookmarks-toolbar-on-new-tab-2 =
     .label = მხოლოდ ახალ ჩანართში გამოჩნდეს
     .accesskey = ხ
-
 toolbar-context-menu-bookmarks-show-other-bookmarks =
     .label = სხვა სანიშნების ჩვენება
     .accesskey = ჩ
+toolbar-context-menu-menu-bar-cmd =
+    .toolbarname = მენიუს ზოლი
+    .accesskey = ზ

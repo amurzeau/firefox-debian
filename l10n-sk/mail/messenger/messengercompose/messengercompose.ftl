@@ -6,8 +6,6 @@
 # Addressing widget
 
 #   $type (String) - the type of the addressing row
-remove-address-row-type = Odstrániť pole { $type }
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Odstrániť pole { $type }
 #   $type (String) - the type of the addressing row
@@ -66,6 +64,10 @@ toolbar-button-add-attachment =
 add-attachment-notification-reminder =
     .label = Pridať prílohu…
     .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+add-attachment-notification-reminder2 =
+    .label = Pridať prílohu…
+    .accesskey = h
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 menuitem-attach-files =
     .label = Súbor…
     .accesskey = S
@@ -84,22 +86,14 @@ attachment-bucket-count =
            *[other] { $count } príloh
         }
     .accesskey = r
-#   $count (Number) - the number of attachments in the attachment bucket
-attachments-placeholder-tooltip =
-    .tooltiptext =
-        { $count ->
-            [1] { $count } príloha
-            [one] { $count } príloha
-            [few] { $count } prílohy
-           *[other] { $count } príloh
-        }
-#   { attachment-bucket-count.accesskey } - Do not localize this message.
-key-toggle-attachment-pane =
-    .key = { attachment-bucket-count.accesskey }
 expand-attachment-pane-tooltip =
     .tooltiptext = Zobraziť panel príloh ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
     .tooltiptext = Skryť panel príloh ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-show =
+    .title = Zobraziť panel príloh ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-hide =
+    .title = Skryť panel príloh ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 drop-file-label-attachment =
     { $count ->
         [one] Pridať ako prílohu

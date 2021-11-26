@@ -136,12 +136,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Dodaj u adresnu traku
 page-action-manage-extension =
     .label = Upravljanje ekstenzijom…
-page-action-remove-from-urlbar =
-    .label = Ukloni iz adresne trake
 
 ## Auto-hide Context Menu
 
@@ -154,10 +150,6 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Promijeni postavke pretraživača
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Promijeni postavke za pretragu
 search-one-offs-context-open-new-tab =
@@ -196,8 +188,6 @@ search-one-offs-history =
 bookmark-panel-show-editor-checkbox =
     .label = Prikaži editor prilikom spašavanja
     .accesskey = S
-bookmark-panel-done-button =
-    .label = Gotovo
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -224,7 +214,6 @@ identity-active-loaded = Onemogućili ste zaštitu na ovoj stranici.
 identity-weak-encryption = Ova stranica koristi slabu enkripciju.
 identity-insecure-login-forms = Prijave unešene na ovoj stranici mogle bi biti kompromitovane.
 identity-permissions-reload-hint = Možda ćete morati ponovo učitati stranicu radi primjene izmjena.
-identity-permissions-empty = Ovoj stranici niste dodijelili nikakve posebne dozvole.
 identity-remove-cert-exception =
     .label = Ukloni izuzetak
     .accesskey = U
@@ -269,12 +258,6 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Kamera za podijeliti:
-    .accesskey = K
-popup-select-microphone =
-    .value = Mikrofon za podijeliti:
-    .accesskey = M
 popup-all-windows-shared = Svi vidljivi prozori na vašem ekranu će biti podijeljeni.
 
 ## WebRTC window or screen share tab switch warning
@@ -285,14 +268,10 @@ popup-all-windows-shared = Svi vidljivi prozori na vašem ekranu će biti podije
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Unesite termin za pretragu ili adresu
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Unesite termin za pretragu ili adresu
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Browser je pod udaljenom kontrolom
 urlbar-permissions-granted =
     .tooltiptext = Ovoj stranici ste dodijelili dodatne dozvole.
 urlbar-switch-to-tab =
@@ -432,6 +411,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Prilagodi alatnu traku…
     .accesskey = C
+toolbar-button-email-link =
+    .label = Pošalji link emailom
+    .tooltiptext = Pošalji link na ovu stranicu putem emaila
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Spasi stranicu
+    .tooltiptext = Spasi ovu stranicu ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Otvori fajl
+    .tooltiptext = Otvori fajl ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Sinhronizovani tabovi
+    .tooltiptext = Prikaži tabove s ostalih uređaja
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Novi privatni prozor
+    .tooltiptext = Otvori novi prozor privatnog surfanja ({ $shortcut })
 
 ## EME notification panel
 
@@ -469,3 +469,40 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Sakrij preklop sa slike u sliku
     .accesskey = H
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navigacija
+navbar-downloads =
+    .label = Preuzimanja
+navbar-overflow =
+    .tooltiptext = Više alata…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Štampaj
+    .tooltiptext = Printaj ovu stranicu… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Štampaj
+    .tooltiptext = Štampaj ovu stranicu
+navbar-library =
+    .label = Biblioteka
+    .tooltiptext = Prikaži historiju, spašene zabilješke, i više
+navbar-search =
+    .title = Pretraga
+navbar-accessibility-indicator =
+    .tooltiptext = Funkcionalnosti pristupačnosti su omogućene
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Tabovi browsera
+tabs-toolbar-new-tab =
+    .label = Novi tab
+tabs-toolbar-list-all-tabs =
+    .label = Izlistaj sve tabove
+    .tooltiptext = Izlistaj sve tabove

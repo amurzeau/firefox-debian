@@ -6,9 +6,6 @@ password-quality-meter = Mesura de la qualitat del senhal
 
 ## Change Password dialog
 
-change-password-window =
-    .title = Modificar lo senhal principal
-
 change-device-password-window =
     .title = Cambiar lo senhal
 
@@ -20,10 +17,6 @@ change-password-new = Picatz lo senhal actual :
 change-password-reenter = Tornatz picatz lo senhal :
 
 ## Reset Password dialog
-
-reset-password-window =
-    .title = Tornar inicializar lo senhal principal
-    .style = width: 40em
 
 pippki-failed-pw-change = Cambiament del senhal impossible.
 pippki-incorrect-pw = Avètz pas picat lo senhal principal actual corrècte. Tornatz ensajar.
@@ -42,8 +35,6 @@ reset-primary-password-window =
     .style = width: 40em
 reset-password-button-label =
     .label = Escafar
-reset-password-text = S'escafatz vòstre senhal principal, totes vòstres senhals Web e corrièr, vòstras donadas de formularis, vòstres certificats personals e vòstras claus privadas seràn doblidats. Volètz vertadièrament suprimir lo senhal principal ?
-
 reset-primary-password-text = Se reïnicializatz vòstre senhal principal, totes vòstres senhals e email salvats, certificats personals e vòstras claus privadas seràn oblidats. Volètz vertadièrament suprimir lo senhal principal ?
 
 pippki-reset-password-confirmation-title = Reïnicializar lo senhal principal

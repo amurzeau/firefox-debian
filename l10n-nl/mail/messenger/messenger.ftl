@@ -70,9 +70,14 @@ folder-toolbar-toggle-folder-compact-view =
 redirect-msg-menuitem =
     .label = Omleiden
     .accesskey = O
+menu-file-save-as-file =
+    .label = Bestand…
+    .accesskey = B
 
 ## AppMenu
 
+appmenu-save-as-file =
+    .label = Bestand…
 # Since v89 we dropped the platforms distinction between Options or Preferences
 # and consolidated everything with Preferences.
 appmenu-preferences =

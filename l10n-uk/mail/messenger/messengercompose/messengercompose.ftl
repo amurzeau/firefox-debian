@@ -6,8 +6,6 @@
 # Addressing widget
 
 #   $type (String) - the type of the addressing row
-remove-address-row-type = Вилучити поле { $type }
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Вилучити поле { $type }
 #   $type (String) - the type of the addressing row
@@ -66,6 +64,10 @@ toolbar-button-add-attachment =
 add-attachment-notification-reminder =
     .label = Додати вкладення…
     .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+add-attachment-notification-reminder2 =
+    .label = Додати вкладення…
+    .accesskey = о
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 menuitem-attach-files =
     .label = Файл(и)
     .accesskey = Ф
@@ -84,22 +86,14 @@ attachment-bucket-count =
            *[many] { $count } вкладень
         }
     .accesskey = в
-#   $count (Number) - the number of attachments in the attachment bucket
-attachments-placeholder-tooltip =
-    .tooltiptext =
-        { $count ->
-            [1] { $count } вкладення
-            [one] { $count } вкладення
-            [few] { $count } вкладення
-           *[many] { $count } вкладень
-        }
-#   { attachment-bucket-count.accesskey } - Do not localize this message.
-key-toggle-attachment-pane =
-    .key = { attachment-bucket-count.accesskey }
 expand-attachment-pane-tooltip =
     .tooltiptext = Показати панель вкладень ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
-    .tooltiptext = Приховати панель вкладень ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+    .tooltiptext = Сховати панель вкладень ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-show =
+    .title = Показати панель вкладень ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-hide =
+    .title = Сховати панель вкладень ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 drop-file-label-attachment =
     { $count ->
         [one] Додати як вкладення
@@ -141,7 +135,7 @@ to-compose-address-row-label =
 #   $key (String) - the shortcut key for this field
 to-compose-show-address-row-menuitem =
     .label = Поле { to-compose-address-row-label.value }
-    .accesskey = К
+    .accesskey = е
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
 to-compose-show-address-row-label =
     .value = { to-compose-address-row-label.value }
@@ -151,7 +145,7 @@ cc-compose-address-row-label =
 #   $key (String) - the shortcut key for this field
 cc-compose-show-address-row-menuitem =
     .label = Поле { cc-compose-address-row-label.value }
-    .accesskey = я
+    .accesskey = л
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
 cc-compose-show-address-row-label =
     .value = { cc-compose-address-row-label.value }
@@ -161,7 +155,7 @@ bcc-compose-address-row-label =
 #   $key (String) - the shortcut key for this field
 bcc-compose-show-address-row-menuitem =
     .label = Поле { bcc-compose-address-row-label.value }
-    .accesskey = х
+    .accesskey = о
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
 bcc-compose-show-address-row-label =
     .value = { bcc-compose-address-row-label.value }

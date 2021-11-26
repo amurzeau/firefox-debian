@@ -10,6 +10,6 @@ about-glean-description = Το <a data-l10n-name="glean-sdk-doc-link">Glean SDK<
 about-glean-warning = Η κατάχρηση αυτού του περιβάλλοντος ενδέχεται να προκαλέσει κατάρρευση του { -brand-short-name }.
 
 tag-pings-label = Προσθήκη ετικέτας σε όλα τα απεσταλμένα pings
-log-pings-label = Καταγραφή φόρτου ping σε αρχείο πριν την αποστολή;
+log-pings-label = Καταγραφή φόρτου ping σε αρχείο πριν από την αποστολή;
 send-pings-label = Αποστολή ping με όνομα
 controls-button-label = Υποβολή ρυθμίσεων

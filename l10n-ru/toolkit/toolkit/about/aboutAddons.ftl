@@ -2,8 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-addons-window =
-    .title = Управление дополнениями
 addons-page-title = Управление дополнениями
 search-header =
     .placeholder = Поиск на addons.mozilla.org
@@ -24,17 +22,6 @@ list-empty-button =
 help-button = Поддержка дополнений
 sidebar-help-button-title =
     .title = Поддержка дополнений
-preferences =
-    { PLATFORM() ->
-        [windows] Настройки { -brand-short-name }
-       *[other] Настройки { -brand-short-name }
-    }
-sidebar-preferences-button-title =
-    .title =
-        { PLATFORM() ->
-            [windows] Настройки { -brand-short-name }
-           *[other] Настройки { -brand-short-name }
-        }
 addons-settings-button = Настройки { -brand-short-name }
 sidebar-settings-button-title =
     .title = Настройки { -brand-short-name }
@@ -42,36 +29,6 @@ show-unsigned-extensions-button =
     .label = Некоторые расширения не могут быть проверены
 show-all-extensions-button =
     .label = Показать все расширения
-cmd-show-details =
-    .label = Подробнее
-    .accesskey = р
-cmd-find-updates =
-    .label = Найти обновления
-    .accesskey = а
-cmd-preferences =
-    .label =
-        { PLATFORM() ->
-            [windows] Настройки
-           *[other] Настройки
-        }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] с
-           *[other] с
-        }
-cmd-enable-theme =
-    .label = Использовать тему
-    .accesskey = п
-cmd-disable-theme =
-    .label = Больше не использовать тему
-    .accesskey = п
-cmd-install-addon =
-    .label = Установить
-    .accesskey = н
-cmd-contribute =
-    .label = Внести вклад
-    .accesskey = т
-    .tooltiptext = Внести вклад в развитие этого дополнения
 detail-version =
     .label = Версия
 detail-last-updated =
@@ -295,7 +252,8 @@ install-theme-button = Установить тему
 # The label of the button that appears after installing an add-on. Upon click,
 # the detailed add-on view is opened, from where the add-on can be managed.
 manage-addon-button = Управление
-find-more-addons = Найти больше дополнений
+find-more-addons = Найти другие дополнения
+find-more-themes = Найти другие темы
 # This is a label for the button to open the "more options" menu, it is only
 # used for screen readers.
 addon-options-button =
@@ -325,13 +283,14 @@ extension-enabled-heading = Включены
 extension-disabled-heading = Отключены
 theme-enabled-heading = Включены
 theme-disabled-heading = Отключены
+theme-monochromatic-heading = Расцветки
+theme-monochromatic-subheading = Яркие новые расцветки от { -brand-product-name }. Доступны в течение ограниченного времени.
 plugin-enabled-heading = Включены
 plugin-disabled-heading = Отключены
 dictionary-enabled-heading = Включены
 dictionary-disabled-heading = Отключены
 locale-enabled-heading = Включены
 locale-disabled-heading = Отключены
-ask-to-activate-button = Включать по запросу
 always-activate-button = Всегда включать
 never-activate-button = Никогда не включать
 addon-detail-author-label = Автор

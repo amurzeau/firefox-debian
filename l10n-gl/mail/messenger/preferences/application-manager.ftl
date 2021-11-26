@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 app-manager-window-dialog =
-    .title = Detalles do aplicativo
+    .title = Detalles da aplicación
     .style = width: 30em; min-height: 20em;
 
 remove-app-button =

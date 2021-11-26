@@ -6,17 +6,22 @@
 ## App Menu
 
 appmenuitem-protection-dashboard-title = Riña màn nej sa dugumîn
-appmenuitem-customize-mode =
-    .label = Nagi'iô' daj huin ruhuô'...
-
-## Zoom Controls
-
 appmenuitem-new-tab =
     .label = Rakïj ñanj nakàa
 appmenuitem-new-window =
     .label = Ventana nakàa
 appmenuitem-new-private-window =
     .label = Nànin' 'ngo ventana huìi
+appmenuitem-history =
+    .label = Sa gini’iājt
+appmenuitem-downloads =
+    .label = Nadunïnj
+appmenuitem-print =
+    .label = Nari' ña du'ua
+appmenuitem-zoom =
+    .value = Soom
+appmenuitem-help =
+    .label = Sa ruguñu'unj un
 
 ## Zoom and Fullscreen Controls
 
@@ -24,22 +29,29 @@ appmenuitem-zoom-enlarge =
     .label = Nāgi’iaj nichrùn’
 appmenuitem-zoom-reduce =
     .label = Nāgi’iaj gùn’
-
 appmenuitem-fullscreen =
     .label = Nagi'iaj gachrò' riña aga' sikà' ràa
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
-fxa-toolbar-sync-now =
-    .label = Gi'iaj sun nugua'ān ma
-
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = Si na'nï' rakij ñanj
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = Nachrūn si sinkronisasion rakïj ñaj da' ni'iaj nej rakïj ñaj asij riña a'ngo si agat.
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = Ni'iaj rakïj ñaj nū riña a'ngo si aga' asij ñuna ànj
+appmenu-remote-tabs-connectdevice =
+    .label = Ganachun' 'ngà a'ngo aga'a...
+appmenu-remote-tabs-welcome = Ni’iāj nej rakïj ñaj āsìj riña a'ngô nej si agâ’t.
+appmenu-remote-tabs-unverified = Da'ui' ma ganatsij ma si kuentat
+appmenuitem-fxa-sign-in = Nutà' si yuguît riña { -brand-product-name }
 appmenuitem-save-page =
     .label = Na'nïnj sà' Pâjina Gù'na…
 
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Nù huin sa nakà hua
-
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =
@@ -49,6 +61,18 @@ whatsnew-panel-footer-checkbox =
 ## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
+
+profiler-popup-button-idle =
+    .label = Sa ri perfîl
+    .tooltiptext = Gi'iaj grabândo 'ngō perfil nikāj rendimiênto
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
 
 
 ## History panel
@@ -92,4 +116,3 @@ appmenu-help-not-deceptive =
 
 appmenu-taskmanager =
     .label = Sa nikaj ñu'unj nej suun
-

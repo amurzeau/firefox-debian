@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 create-profile-window =
-    .title = Οδηγός δημιουργίας προφίλ
+    .title = Βοηθός δημιουργίας προφίλ
     .style = width: 52em; height: 35em;
 
 ## First wizard page

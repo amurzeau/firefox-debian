@@ -38,6 +38,10 @@ account-provisioner-button = Pridobite nov e-poštni naslov
     .accesskey = n
 account-setup-password-toggle =
     .title = Pokaži/skrij geslo
+account-setup-password-toggle-show =
+    .title = Pokaži geslo kot čisto besedilo
+account-setup-password-toggle-hide =
+    .title = Skrij geslo
 account-setup-remember-password = Zapomni si geslo
     .accesskey = Z
 account-setup-exchange-label = Vaša prijava
@@ -205,6 +209,17 @@ exchange-dialog-question = { -brand-short-name } je našel podatke za nastavitev
 exchange-dialog-confirm-button = Prijava
 exchange-dialog-cancel-button = Prekliči
 
+## Dismiss account creation dialog
+
+exit-dialog-title = Ni nastavljenih e-poštnih računov
+exit-dialog-description = Ali ste prepričani, da želite preklicati postopek nastavitve? { -brand-short-name } lahko uporabljate tudi brez e-poštnega računa, vendar številne možnosti ne bodo na voljo.
+account-setup-no-account-checkbox = Uporabljaj { -brand-short-name } brez e-poštnega računa
+    .accesskey = U
+exit-dialog-cancel-button = Nadaljuj nastavitev
+    .accesskey = N
+exit-dialog-confirm-button = Izhod iz nastavitve
+    .accesskey = z
+
 ## Alert dialogs
 
 account-setup-creation-error-title = Napaka pri ustvarjanju računa
@@ -227,6 +242,7 @@ account-setup-dictionaries-button = Prenesi slovarje
 account-setup-address-book-carddav-button = Poveži z imenikom CardDAV
 account-setup-address-book-ldap-button = Poveži z imenikom LDAP
 account-setup-calendar-button = Poveži z oddaljenim koledarjem
+account-setup-linked-services-title = Povežite povezane storitve
 account-setup-linked-services-description = { -brand-short-name } je zaznal druge storitve, povezane z vašim e-poštnim računom.
 # Variables:
 # $count (Number) - The number of address books found during autoconfig.

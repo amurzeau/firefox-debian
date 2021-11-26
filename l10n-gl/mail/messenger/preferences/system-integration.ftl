@@ -12,7 +12,7 @@ system-integration-dialog =
 
 default-client-intro = Usar o { -brand-short-name } como o cliente predeterminado para:
 
-unset-default-tooltip = Non é posíbel quitar o { -brand-short-name } como cliente predeterminado desde o propio { -brand-short-name }. Para facer que outro aplicativo sexa o predeterminado debe usar o seu diálogo de 'Estabelecer como predeterminado'.
+unset-default-tooltip = Non é posíbel quitar o { -brand-short-name } como cliente predeterminado desde o propio { -brand-short-name }. Para facer que outro aplicativo sexa o predeterminado debe usar o seu diálogo de «Estabelecer como predeterminado».
 
 checkbox-email-label =
     .label = Correo
@@ -23,7 +23,6 @@ checkbox-newsgroups-label =
 checkbox-feeds-label =
     .label = Fontes
     .tooltiptext = { unset-default-tooltip }
-
 checkbox-calendar-label =
     .label = Calendario
     .tooltiptext = { unset-default-tooltip }

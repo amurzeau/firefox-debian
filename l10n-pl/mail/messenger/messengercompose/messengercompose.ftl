@@ -6,8 +6,6 @@
 # Addressing widget
 
 #   $type (String) - the type of the addressing row
-remove-address-row-type = Usuń adresy z pola „{ $type }”
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Usuń adresy z pola „{ $type }”
 #   $type (String) - the type of the addressing row
@@ -66,6 +64,10 @@ toolbar-button-add-attachment =
 add-attachment-notification-reminder =
     .label = Dodaj załącznik…
     .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+add-attachment-notification-reminder2 =
+    .label = Dodaj załącznik…
+    .accesskey = D
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 menuitem-attach-files =
     .label = Plik…
     .accesskey = P
@@ -84,22 +86,14 @@ attachment-bucket-count =
            *[many] { $count } załączników
         }
     .accesskey = z
-#   $count (Number) - the number of attachments in the attachment bucket
-attachments-placeholder-tooltip =
-    .tooltiptext =
-        { $count ->
-            [1] { $count } załącznik
-            [one] { $count } załącznik
-            [few] { $count } załączniki
-           *[many] { $count } załączników
-        }
-#   { attachment-bucket-count.accesskey } - Do not localize this message.
-key-toggle-attachment-pane =
-    .key = { attachment-bucket-count.accesskey }
 expand-attachment-pane-tooltip =
     .tooltiptext = Pokaż listę załączników ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
     .tooltiptext = Ukryj listę załączników ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-show =
+    .title = Pokaż listę załączników ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-hide =
+    .title = Ukryj listę załączników ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 drop-file-label-attachment =
     { $count ->
         [one] Dodaj jako załącznik

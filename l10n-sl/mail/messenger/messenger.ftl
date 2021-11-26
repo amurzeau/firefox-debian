@@ -72,9 +72,14 @@ folder-toolbar-toggle-folder-compact-view =
 redirect-msg-menuitem =
     .label = Preusmeri
     .accesskey = u
+menu-file-save-as-file =
+    .label = Datoteko …
+    .accesskey = D
 
 ## AppMenu
 
+appmenu-save-as-file =
+    .label = Datoteko …
 # Since v89 we dropped the platforms distinction between Options or Preferences
 # and consolidated everything with Preferences.
 appmenu-preferences =

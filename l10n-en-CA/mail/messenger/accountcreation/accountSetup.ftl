@@ -41,6 +41,10 @@ account-provisioner-button = Get a new email address
     .accesskey = G
 account-setup-password-toggle =
     .title = Show/hide password
+account-setup-password-toggle-show =
+    .title = Show password in clear text
+account-setup-password-toggle-hide =
+    .title = Hide password
 account-setup-remember-password = Remember password
     .accesskey = m
 account-setup-exchange-label = Your login
@@ -153,6 +157,7 @@ account-setup-credentials-incomplete = Authentication failed. Either the entered
 account-setup-credentials-wrong = Authentication failed. Please check the username and password
 account-setup-find-settings-failed = { -brand-short-name } failed to find the settings for your email account
 account-setup-exchange-config-unverifiable = Configuration could not be verified. If your username and password are correct, it’s likely that the server administrator has disabled the selected configuration for your account. Try selecting another protocol.
+account-setup-provisioner-error = An error occurred while setting up your new account in { -brand-short-name }. Please, try to manually set up your account with your credentials.
 
 ## Manual configuration area
 
@@ -208,6 +213,17 @@ insecure-dialog-confirm-button = Confirm
 exchange-dialog-question = { -brand-short-name } found your account setup information on { $domain }. Do you want to proceed and submit your credentials?
 exchange-dialog-confirm-button = Login
 exchange-dialog-cancel-button = Cancel
+
+## Dismiss account creation dialog
+
+exit-dialog-title = No Email Account Configured
+exit-dialog-description = Are you sure you want to cancel the setup process? { -brand-short-name } can still be used without an email account, but many features will not be available.
+account-setup-no-account-checkbox = Use { -brand-short-name } without an email account
+    .accesskey = U
+exit-dialog-cancel-button = Continue Setup
+    .accesskey = C
+exit-dialog-confirm-button = Exit Setup
+    .accesskey = E
 
 ## Alert dialogs
 

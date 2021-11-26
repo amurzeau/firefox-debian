@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = მისამართების ველში დამატება
 page-action-manage-extension =
     .label = გაფართოების მართვა…
-page-action-remove-from-urlbar =
-    .label = მისამართების ველიდან მოცილება
 page-action-remove-extension =
     .label = გაფართოების მოცილება
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = მოსაძიებლად, შეგიძლიათ გამოიყენოთ:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = ძიების პარამეტრების შეცვლა
 search-one-offs-change-settings-compact-button =
     .tooltiptext = ძიების პარამეტრების შეცვლა
 search-one-offs-context-open-new-tab =
@@ -250,8 +242,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = ჩასწორების შესაძლებლობა შენახვისას
     .accesskey = ჩ
-bookmark-panel-done-button =
-    .label = მზადაა
 bookmark-panel-save-button =
     .label = შენახვა
 # Width of the bookmark panel.
@@ -281,8 +271,6 @@ identity-passive-loaded = ამ გვერდის გარკვეულ�
 identity-active-loaded = ამ გვერდზე დაცვა გამორთული გაქვთ.
 identity-weak-encryption = ეს გვერდი სუსტ დაშიფვრას იყენებს.
 identity-insecure-login-forms = ამ გვერდზე შეყვანილი ანგარიშის მონაცემები შესაძლოა მოიპარონ.
-identity-permissions =
-    .value = ნებართვები
 identity-https-only-connection-upgraded = (განახლებული HTTPS-ზე)
 identity-https-only-label = მხოლოდ-HTTPS რეჟიმი
 identity-https-only-dropdown-on =
@@ -298,7 +286,6 @@ identity-permissions-storage-access-header = საიტთაშორის�
 identity-permissions-storage-access-hint = ამ მხარეებს შეუძლია გამოიყენოს საიტთაშორისი ფუნთუშები და მონაცემები, სანამ ამ საიტზე ხართ.
 identity-permissions-storage-access-learn-more = ვრცლად
 identity-permissions-reload-hint = ცვლილებების ასამოქმედებლად შესაძლოა გვერდის ხელახლა ჩატვირთვა დაგჭირდეთ.
-identity-permissions-empty = ამ საიტისთვის განსაკუთრებული უფლებები არ მიგიციათ.
 identity-clear-site-data =
     .label = საიტის ფაილებისა და მონაცემების წაშლა…
 identity-connection-not-secure-security-view = თქვენი კავშირი ამ საიტთან არაა დაცული.
@@ -380,12 +367,6 @@ bookmarks-toolbar-empty-message = სწრაფი წვდომისთვ
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = გასაზიარებელი კამერა:
-    .accesskey = კ
-popup-select-microphone =
-    .value = გასაზიარებელი მიკროფონი:
-    .accesskey = მ
 popup-select-camera-device =
     .value = კამერა:
     .accesskey = კ
@@ -399,14 +380,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = დინამიკები
 popup-all-windows-shared = ეკრანზე ნაჩვენები ყველა ფანჯარა გაზიარდება.
-popup-screen-sharing-not-now =
-    .label = ახლა არა
-    .accesskey = ლ
-popup-screen-sharing-never =
-    .label = არასდროს დაიშვას
-    .accesskey = ა
-popup-silence-notifications-checkbox = შეჩერდეს შეტყობინებები, როცა { -brand-short-name } აზიარებს
-popup-silence-notifications-checkbox-warning = { -brand-short-name } არ გამოაჩენს შეტყობინებებს მაშინ, როცა რამეს აზიარებთ.
 popup-screen-sharing-block =
     .label = აკრძალვა
     .accesskey = ა
@@ -430,14 +403,10 @@ enable-devtools-popup-description = F12 მალსახმობის გა
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = მოძებნეთ ან შეიყვანეთ მისამართი
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = მოძებნეთ ან შეიყვანეთ მისამართი
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = ბრაუზერი დაშორებული მართვის ქვეშაა
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -486,8 +455,6 @@ urlbar-go-button =
     .tooltiptext = მისამართზე გადასვლა
 urlbar-page-action-button =
     .tooltiptext = ვებგვერდზე მოქმედებები
-urlbar-pocket-button =
-    .tooltiptext = { -pocket-brand-name }-ში შენახვა
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -692,6 +659,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = ხელსაწყოთა ზოლის მორგება…
     .accesskey = ზ
+toolbar-button-email-link =
+    .label = ბმულის ელფოსტით გაგზავნა
+    .tooltiptext = გვერდის ბმულის ელფოსტით გაგზავნა
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = გვერდის შენახვა
+    .tooltiptext = გვერდის შენახვა ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = ფაილის გახსნა
+    .tooltiptext = ფაილის გახსნა ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = დასინქ. ჩანართები
+    .tooltiptext = ჩანართები სხვა მოწყობილობებიდან
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = ახალი პირადი ფანჯარა
+    .tooltiptext = ახალი პირადი ფანჯრის გახსნა ({ $shortcut })
 
 ## EME notification panel
 
@@ -742,6 +730,49 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = შეტყობინების დამალვა ამომხტარი ფანჯრის შეზღუდვისას
     .accesskey = დ
+edit-popup-settings =
+    .label = ამომხტომების პარამეტრების მართვა…
+    .accesskey = ხ
 picture-in-picture-hide-toggle =
     .label = ეკრანი-ეკრანში გადამრთველის დამალვა
     .accesskey = ე
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = გადაადგილება
+navbar-downloads =
+    .label = ჩამოტვირთვები
+navbar-overflow =
+    .tooltiptext = დამატებითი ხელსაწყოები...
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = ამობეჭდვა
+    .tooltiptext = გვერდის ამობეჭდვა… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = ამობეჭდვა
+    .tooltiptext = გვერდის ამობეჭდვა
+navbar-home =
+    .label = საწყისი გვერდი
+    .tooltiptext = { -brand-short-name } საწყისი გვერდი
+navbar-library =
+    .label = ბიბლიოთეკა
+    .tooltiptext = იხილეთ ისტორია, შენახული სანიშნები და ა. შ.
+navbar-search =
+    .title = ძიება
+navbar-accessibility-indicator =
+    .tooltiptext = დამხმარე საშუალებები ჩართულია
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = ბრაუზერის ჩანართები
+tabs-toolbar-new-tab =
+    .label = ახალი ჩანართი
+tabs-toolbar-list-all-tabs =
+    .label = ყველა ჩანართის სია
+    .tooltiptext = ყველა ჩანართის სია

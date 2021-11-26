@@ -3,12 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-## View Menu
-
-menu-view-charset =
-    .label = Textkodning
-    .accesskey = k
-
 ## Tools Menu
 
 # Since v89 we dropped the platforms distinction between Options or Preferences
@@ -16,7 +10,6 @@ menu-view-charset =
 menu-tools-preferences =
     .label = Inställningar
     .accesskey = n
-
 menu-addons-and-themes =
     .label = Tillägg och teman
     .accesskey = T
@@ -26,11 +19,9 @@ menu-addons-and-themes =
 menu-help-enter-troubleshoot-mode =
     .label = Felsökningsläge…
     .accesskey = F
-
 menu-help-exit-troubleshoot-mode =
     .label = Stäng av felsökningsläge
     .accesskey = S
-
 menu-help-more-troubleshooting-info =
     .label = Mer felsökningsinformation
     .accesskey = M
@@ -61,15 +52,18 @@ menu-view-repair-text-encoding =
 mail-uidensity-label =
     .label = Täthet
     .accesskey = T
-
 mail-uidensity-compact =
     .label = Kompakt
     .accesskey = K
-
 mail-uidensity-normal =
     .label = Normal
     .accesskey = N
-
 mail-uidensity-touch =
     .label = Touch
     .accesskey = T
+
+## File
+
+file-new-newsgroup-account =
+    .label = Diskussionsgruppskonto…
+    .accesskey = D

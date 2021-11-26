@@ -52,3 +52,5 @@ text-action-spell-add-dictionaries =
 text-action-spell-dictionaries =
     .label = Linguas
     .accesskey = L
+text-action-search-text-box-clear =
+    .title = Vacuar

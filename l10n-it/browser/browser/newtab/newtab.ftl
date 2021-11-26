@@ -22,8 +22,6 @@ newtab-search-box-search-button =
     .title = Cerca
     .aria-label = Cerca
 
-newtab-search-box-search-the-web-text = Cerca sul Web
-
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = Cerca con { $engine } o inserisci un indirizzo
@@ -181,6 +179,12 @@ newtab-label-sponsored = { $sponsorOrSource } · Sponsorizzata
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = Sponsorizzata da { $sponsor }
 
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } min
+
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
 
@@ -234,10 +238,27 @@ newtab-discovery-empty-section-topstories-timed-out = Oops. Sembra che la sezion
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Argomenti popolari:
+newtab-pocket-new-topics-title = Vuoi ancora più storie? Dai un’occhiata agli argomenti più popolari in { -pocket-brand-name }
 newtab-pocket-more-recommendations = Altri suggerimenti
 newtab-pocket-learn-more = Ulteriori informazioni
 newtab-pocket-cta-button = Ottieni { -pocket-brand-name }
 newtab-pocket-cta-text = Salva le storie che ami in { -pocket-brand-name } e nutri la tua mente con letture appassionanti.
+newtab-pocket-pocket-firefox-family = { -pocket-brand-name } è parte della famiglia { -brand-product-name }
+
+# A save to Pocket button that shows over the card thumbnail on hover.
+newtab-pocket-save-to-pocket = Salva in { -pocket-brand-name }
+newtab-pocket-saved-to-pocket = Salvato in { -pocket-brand-name }
+
+# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
+newtab-pocket-load-more-stories-button = Carica altre storie
+
+## Pocket Final Card Section.
+## This is for the final card in the Pocket grid.
+
+newtab-pocket-last-card-title = Non c’è altro.
+newtab-pocket-last-card-desc = Controlla più tardi per nuovi contenuti.
+newtab-pocket-last-card-image =
+    .alt = Non c’è altro.
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.

@@ -14,6 +14,8 @@ duplicate-tab =
 duplicate-tabs =
     .label = অনুরূপ ট্যাব
     .accesskey = D
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = ডানদিকের ট্যাব বন্ধ করুন
     .accesskey = i
@@ -41,9 +43,6 @@ bookmark-selected-tabs =
 bookmark-tab =
     .label = বুকমার্ক ট্যাব
     .accesskey = B
-reopen-in-container =
-    .label = কনটেইনার পুনরায় খুলুন
-    .accesskey = e
 move-to-start =
     .label = শুরুতে যাও
     .accesskey = S
@@ -54,19 +53,13 @@ move-to-new-window =
     .label = নতুন উইন্ডোতে স্থানান্তর W
     .accesskey = W
 
-close-tab =
-    .label = ট্যাব বন্ধ C
-    .accesskey = C
-close-tabs =
-    .label = ট্যাব বন্ধ করুন
-    .accesskey = S
-move-tabs =
-    .label = ট্যাব স্থানান্তর
-    .accesskey = v
-move-tab =
-    .label = ট্যাব স্থানান্তর
-    .accesskey = v
-
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
 
+tab-context-send-tabs-to-device =
+    .label =
+        { $tabCount ->
+            [one] ডিভাইসে ট্যাব পাঠান
+           *[other] ডিভাইসে { $tabCount } ট্যাব পাঠান
+        }
+    .accesskey = n

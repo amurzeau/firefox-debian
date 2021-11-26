@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Lat att sidestolpen
+
+sidebar-close-button =
+    .tooltiptext = Lat att sidestolpen

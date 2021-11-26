@@ -2,13 +2,6 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!-- LOCALIZATION NOTE (quickFilterBar.qfbShowFilterBar.label):
-     The label  for the button on the tab bar that toggles the visibility of
-     the quick filter bar.
-     -->
-<!ENTITY quickFilterBar.qfbShowFilterBar.label
-         "Швидкий фільтр">
-
 <!-- LOCALIZATION NOTE (quickFilterBar.toggleBarVisibility.menu.label):
      The label to display for the "View... Toolbars..." menu item that controls
      whether the quick filter bar is visible.
@@ -199,7 +192,7 @@
 <!-- LOCALIZATION NOTE (quickFilterBar.booleanModeAll.label):
      Tooltip of the Any of / All of tagging mode selector.
      -->
-<!ENTITY quickFilterBar.booleanModeAll.label "Всі з">
+<!ENTITY quickFilterBar.booleanModeAll.label "Усі з">
 
 <!-- LOCALIZATION NOTE (quickFilterBar.booleanModeAll.tooltip):
      Tooltip of the Any of / All of tagging mode selector.

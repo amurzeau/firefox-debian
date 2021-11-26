@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Lukk sidestolpe
+
+sidebar-close-button =
+    .tooltiptext = Lukk sidestolpen

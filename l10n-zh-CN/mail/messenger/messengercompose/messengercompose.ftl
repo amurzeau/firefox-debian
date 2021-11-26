@@ -6,8 +6,6 @@
 # Addressing widget
 
 #   $type (String) - the type of the addressing row
-remove-address-row-type = 移除 { $type } 栏
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = 移除 { $type } 栏
 #   $type (String) - the type of the addressing row
@@ -63,6 +61,10 @@ toolbar-button-add-attachment =
 add-attachment-notification-reminder =
     .label = 添加附件…
     .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+add-attachment-notification-reminder2 =
+    .label = 添加附件…
+    .accesskey = A
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 menuitem-attach-files =
     .label = 文件…
     .accesskey = F
@@ -79,20 +81,14 @@ attachment-bucket-count =
            *[other] { $count } 个附件
         }
     .accesskey = m
-#   $count (Number) - the number of attachments in the attachment bucket
-attachments-placeholder-tooltip =
-    .tooltiptext =
-        { $count ->
-            [1] { $count } 个附件
-           *[other] 无附件
-        }
-#   { attachment-bucket-count.accesskey } - Do not localize this message.
-key-toggle-attachment-pane =
-    .key = { attachment-bucket-count.accesskey }
 expand-attachment-pane-tooltip =
     .tooltiptext = 显示附件窗格（{ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }）
 collapse-attachment-pane-tooltip =
     .tooltiptext = 隐藏附件窗格（{ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }）
+attachment-area-show =
+    .title = 显示附件窗格（{ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }）
+attachment-area-hide =
+    .title = 隐藏附件窗格（{ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }）
 drop-file-label-attachment =
     { $count ->
        *[other] 添加为附件

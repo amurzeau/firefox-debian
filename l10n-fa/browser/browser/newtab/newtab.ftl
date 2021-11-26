@@ -20,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = جستجو
     .aria-label = جستجو
-newtab-search-box-search-the-web-text = جستجوی وب
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = با { $engine } جستجو یا آدرسی وارد کنید
@@ -221,6 +220,14 @@ newtab-pocket-more-recommendations = توصیه‌های بیشتر
 newtab-pocket-learn-more = اطلاعات بیشتر
 newtab-pocket-cta-button = دریافت { -pocket-brand-name }
 newtab-pocket-cta-text = مطالبی که دوست دارید را در { -pocket-brand-name } ذخیره کنید، و به ذهن خود با مطالب فوق‌العاده انرژی بدهید.
+# A save to Pocket button that shows over the card thumbnail on hover.
+newtab-pocket-save-to-pocket = ذخیره در { -pocket-brand-name }
+newtab-pocket-saved-to-pocket = در ‌{ -pocket-brand-name } ذخیره شده
+
+## Pocket Final Card Section.
+## This is for the final card in the Pocket grid.
+
+newtab-pocket-last-card-desc = برای مطالب بیشتر بعدا دوباره سر بزنید.
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.

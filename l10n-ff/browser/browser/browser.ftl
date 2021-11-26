@@ -146,12 +146,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Ɓeydu to Palal Ñiiɓirɗe
 page-action-manage-extension =
     .label = Yiil Timmitere…
-page-action-remove-from-urlbar =
-    .label = Ittu e Palal Ñiiɓirɗe
 page-action-remove-extension =
     .label = Momtu timmitere
 
@@ -169,10 +165,6 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Ngol laawol, yiylo e:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Wayly Teelte Njiilaw
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Waylu teelte njiilaw
 search-one-offs-context-open-new-tab =
@@ -214,8 +206,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Hollu taƴtorde kisnugol
     .accesskey = 5
-bookmark-panel-done-button =
-    .label = Gasii
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -235,10 +225,7 @@ identity-passive-loaded = Geɗe ɗe kisaani nana e ngoo hello (wano nate).
 identity-active-loaded = A dartinii ndeenka e ngoo hello.
 identity-weak-encryption = Ngoo hello huutortoo ko gannugol jaafngol.
 identity-insecure-login-forms = Ceŋorɗe naatnaaɗe e ngoo hello ena mbawi jaayeede.
-identity-permissions =
-    .value = Jamirooje
 identity-permissions-reload-hint = Ena waawi coaklaa loowtude hello ngoo ngam bayle ɗee njaaɓa.
-identity-permissions-empty = A hokkaani ndee lowre hay yamiroore heeriinde.
 identity-clear-site-data =
     .label = Mumtu kuukiije e keɓe lowre ndee…
 identity-connection-not-secure-security-view = A seŋaaki kisngol e ndee lowre.
@@ -291,12 +278,6 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Kameraa lollinteeɗo:
-    .accesskey = K
-popup-select-microphone =
-    .value = Mikkoroo lollinteeɗo:
-    .accesskey = M
 popup-all-windows-shared = Kala henorde yiyotonde e yaynirde maaɗa maa lolline.
 
 ## WebRTC window or screen share tab switch warning
@@ -308,12 +289,8 @@ enable-devtools-popup-description = Ngam huutoraade sodorde F12, uddit tawo DevT
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Yiylo walla naatnu ñiiɓirde
 urlbar-placeholder =
     .placeholder = Yiylo walla naatnu ñiiɓirde
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Wanngorde woni ko e yuurnito woɗɗungo
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -329,8 +306,6 @@ urlbar-go-button =
     .tooltiptext = Yah to ñiiɓirde wonde e Palal Nokkuuje
 urlbar-page-action-button =
     .tooltiptext = Baɗe hello
-urlbar-pocket-button =
-    .tooltiptext = Danndu e { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -438,6 +413,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Heertin Palal Kuutorɗe…
     .accesskey = H
+toolbar-button-email-link =
+    .label = Neldu Jokkol e Iimeel
+    .tooltiptext = Neldu jokkol ngoo hello e iimeel
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Danndu Hello
+    .tooltiptext = Danndu ngoo hello ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Uddit Fiilde
+    .tooltiptext = Uddit fiilde ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Tabbe synckaaɗe
+    .tooltiptext = Hollu tabbe ummiiɗe e kaɓirɗi goɗɗi
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Henorde Suturo Hesere
+    .tooltiptext = uddit henorde wanngorde suuriinde hesere ({ $shortcut })
 
 ## EME notification panel
 
@@ -472,3 +468,38 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Hoto hollir nduu ɓatakuru so cuppitte palaama
     .accesskey = D
+
+# Navigator Toolbox
+
+navbar-downloads =
+    .label = Gaawte
+navbar-overflow =
+    .tooltiptext = Kuutorɗe goɗɗe…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Waanjito
+    .tooltiptext = Muul hello… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Waanjito
+    .tooltiptext = Waanjito ngoo hello
+navbar-home =
+    .label = Jaɓɓorgo
+    .tooltiptext = { -brand-short-name } Jaɓɓorgo
+navbar-library =
+    .label = Deftordu
+    .tooltiptext = Yiy aslol, maantore danndaaɗe, e goɗɗe
+navbar-search =
+    .title = Yiylo
+navbar-accessibility-indicator =
+    .tooltiptext = Fannuuji Weeɓitaare Kurminama
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Tabbe wanngorde
+tabs-toolbar-new-tab =
+    .label = Tabbere Hesere
+tabs-toolbar-list-all-tabs =
+    .label = Waɗ doggol tabbe kala
+    .tooltiptext = Waɗ doggol tabbe kala

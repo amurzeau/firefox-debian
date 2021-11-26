@@ -17,6 +17,8 @@ account-setup-email-label = Dirección de correo electrónico
     .accesskey = D
 account-setup-email-input =
     .placeholder = john.doe@example.com
+account-setup-password-toggle-hide =
+    .title = Ocultar contraseña
 
 ## Action buttons
 
@@ -95,6 +97,9 @@ insecure-dialog-confirm-button = Confirmar
 exchange-dialog-confirm-button = Iniciar sesión
 exchange-dialog-cancel-button = Cancelar
 
+## Dismiss account creation dialog
+
+
 ## Alert dialogs
 
 account-setup-creation-error-title = Error al crear la cuenta
@@ -105,6 +110,8 @@ account-setup-addon-install-title = Instalar
 
 ## Success view
 
+account-setup-signature-button = Agregar una firma
+account-setup-dictionaries-button = Descargar diccionarios
 account-setup-button-finish = Finalizar
     .accesskey = F
 account-setup-address-books-button = Libretas de direcciones

@@ -40,8 +40,6 @@ inactive-css-position-property-on-unpositioned-box = <strong>{ $property }</stro
 
 inactive-text-overflow-when-no-overflow = <strong>{ $property }</strong> não tem qualquer efeito neste elemento dado que <strong>overflow:hidden</strong> não está definido.
 
-inactive-outline-radius-when-outline-style-auto-or-none = <strong>{ $property }</strong> não tem qualquer efeito neste elemento porque o seu <strong>outline-style</strong> é <strong>auto</strong> ou <strong>none</strong>.
-
 inactive-css-not-for-internal-table-elements = <strong>{ $property }</strong> não tem qualquer efeito em elementos de tabelas.
 
 inactive-css-not-for-internal-table-elements-except-table-cells = <strong>{ $property }</strong> não tem qualquer efeito em elementos internos de tabelas com excepção das células da tabela.
@@ -59,6 +57,8 @@ inactive-css-not-grid-or-flex-container-fix = Experimente adicionar <strong>disp
 inactive-css-not-grid-or-flex-container-or-multicol-container-fix = Experimente adicionar <strong>display:grid</strong>, <strong>display:flex</strong>, ou <strong>columns:2</strong>. { learn-more }
 
 inactive-css-not-grid-or-flex-item-fix-2 = Experimente adicionar <strong>display:grid</strong>, <strong>display:flex</strong>, <strong>display:inline-grid</strong> ou <strong>display:inline-flex</strong>. { learn-more }
+
+inactive-css-not-grid-or-flex-item-fix-3 = Experimente adicionar <strong>display:grid</strong>, <strong>display:flex</strong>, <strong>display:inline-grid</strong>, ou <strong>display:inline-flex</strong> ao elemento pai. { learn-more }
 
 inactive-css-not-grid-item-fix-2 = Experimente adicionar <strong>display:grid</strong> ou <strong>display:inline-grid</strong> ao pai do elemento. { learn-more }
 
@@ -83,8 +83,6 @@ inactive-text-overflow-when-no-overflow-fix = Experimente adicionar <strong>over
 inactive-css-not-for-internal-table-elements-fix = Experimente definir a respetiva propriedade <strong>display</strong> para algo diferente de <strong>table-cell</strong>, <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong> ou <strong>table-footer-group</strong>. { learn-more }
 
 inactive-css-not-for-internal-table-elements-except-table-cells-fix = Experimente definir a respetiva propriedade <strong>display</strong> para algo diferente de <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong> ou <strong>table-footer-group</strong>. { learn-more }
-
-inactive-outline-radius-when-outline-style-auto-or-none-fix = Experimente definir a respetiva propriedade <strong>outline-style</strong> para algo diferente de <strong>auto</strong> ou <strong>none</strong>. { learn-more }
 
 inactive-css-not-table-fix = Experimente adicionar <strong>display:table</strong> ou <strong>display:inline-table</strong>. { learn-more }
 

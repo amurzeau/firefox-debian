@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 notifications-dialog-window =
-    .title = Προσαρμογή ειδοποίησης νέου email
+    .title = Προσαρμογή ειδοποίησης νέων email
 
 customize-alert-description = Επιλέξτε ποια πεδία θα εμφανίζονται στην ειδοποίηση:
 
@@ -26,7 +26,7 @@ sender-checkbox =
 ## to translate the whole sentence.
 
 open-time-label-before =
-    .value = Εμφάνιση ειδοποίησης νέου email για
+    .value = Εμφάνιση ειδοποίησης νέων email για
     .accesskey = ν
 
 open-time-label-after =

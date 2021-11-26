@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Добавить на панель адреса
 page-action-manage-extension =
     .label = Управление расширением…
-page-action-remove-from-urlbar =
-    .label = Удалить с панели адреса
 page-action-remove-extension =
     .label = Удалить расширение
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = В этот раз искать в:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Изменить настройки поиска
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Изменить параметры поиска
 search-one-offs-context-open-new-tab =
@@ -251,8 +243,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Показывать редактор при сохранении
     .accesskey = ы
-bookmark-panel-done-button =
-    .label = Готово
 bookmark-panel-save-button =
     .label = Сохранить
 # Width of the bookmark panel.
@@ -282,8 +272,6 @@ identity-passive-loaded = Части этой страницы (такие ка�
 identity-active-loaded = Вы отключили защиту на этой странице.
 identity-weak-encryption = Эта страница использует слабое шифрование.
 identity-insecure-login-forms = Учётные данные, вводимые на этой странице, могут быть скомпрометированы.
-identity-permissions =
-    .value = Разрешения
 identity-https-only-connection-upgraded = (переключено на HTTPS)
 identity-https-only-label = Режим «Только HTTPS»
 identity-https-only-dropdown-on =
@@ -299,7 +287,6 @@ identity-permissions-storage-access-header = Межсайтовые куки
 identity-permissions-storage-access-hint = Следующие стороны могут использовать межсайтовые куки и данные сайта, пока вы находитесь на этом сайте.
 identity-permissions-storage-access-learn-more = Узнать больше
 identity-permissions-reload-hint = Чтобы изменения возымели действие, вам, возможно, потребуется перезагрузить страницу.
-identity-permissions-empty = Вы не давали этому сайту каких-либо специальных разрешений.
 identity-clear-site-data =
     .label = Удалить куки и данные сайта…
 identity-connection-not-secure-security-view = Вы подключились к этому сайту по незащищённому соединению.
@@ -387,12 +374,6 @@ bookmarks-toolbar-empty-message = Для ускорения доступа ра�
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Доступ к камере:
-    .accesskey = к
-popup-select-microphone =
-    .value = Доступ к микрофону:
-    .accesskey = м
 popup-select-camera-device =
     .value = Камера:
     .accesskey = м
@@ -406,14 +387,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Динамики
 popup-all-windows-shared = Будет предоставлен доступ ко всем видимым окнам на вашем экране.
-popup-screen-sharing-not-now =
-    .label = Не сейчас
-    .accesskey = е
-popup-screen-sharing-never =
-    .label = Никогда не разрешать
-    .accesskey = и
-popup-silence-notifications-checkbox = Отключить уведомления { -brand-short-name }, когда к нему предоставлен доступ
-popup-silence-notifications-checkbox-warning = { -brand-short-name } не будет отображать уведомления, пока к нему предоставлен доступ.
 popup-screen-sharing-block =
     .label = Блокировать
     .accesskey = л
@@ -437,14 +410,10 @@ enable-devtools-popup-description = Чтобы использовать клав
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Введите поисковый запрос или адрес
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Введите поисковый запрос или адрес
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Браузер находится под удалённым управлением
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -493,8 +462,6 @@ urlbar-go-button =
     .tooltiptext = Перейти по введённому адресу
 urlbar-page-action-button =
     .tooltiptext = Действия на странице
-urlbar-pocket-button =
-    .tooltiptext = Сохранить в { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -699,6 +666,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Настроить панель инструментов…
     .accesskey = а
+toolbar-button-email-link =
+    .label = Отправить ссылку
+    .tooltiptext = Отправить по почте ссылку на эту страницу
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Сохранить страницу
+    .tooltiptext = Сохранить эту страницу ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Открыть файл
+    .tooltiptext = Открыть файл ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Облачные вкладки
+    .tooltiptext = Показать вкладки с других устройств
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Новое приватное окно
+    .tooltiptext = Открыть новое приватное окно ({ $shortcut })
 
 ## EME notification panel
 
@@ -749,6 +737,55 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Не показывать это сообщение при блокировке всплывающих окон
     .accesskey = н
+edit-popup-settings =
+    .label = Управление настройками всплывающих окон…
+    .accesskey = ы
 picture-in-picture-hide-toggle =
     .label = Скрыть переключатель «Картинка в картинке»
     .accesskey = ы
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Навигация
+navbar-downloads =
+    .label = Загрузки
+navbar-overflow =
+    .tooltiptext = Другие инструменты…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Печать
+    .tooltiptext = Распечатать эту страницу… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Печать
+    .tooltiptext = Распечатать эту страницу
+navbar-home =
+    .label = Домой
+    .tooltiptext = Домашняя страница { -brand-short-name }
+navbar-library =
+    .label = Библиотека
+    .tooltiptext = Просмотр истории, сохранённых закладок и многого другого
+navbar-search =
+    .title = Поиск
+navbar-accessibility-indicator =
+    .tooltiptext = Поддержка доступности включена
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Вкладки браузера
+tabs-toolbar-new-tab =
+    .label = Новая вкладка
+tabs-toolbar-list-all-tabs =
+    .label = Список всех вкладок
+    .tooltiptext = Список всех вкладок
+
+## Infobar shown at startup to suggest session-restore
+
+# <img data-l10n-name="icon"/> will be replaced by the application menu icon
+restore-session-startup-suggestion-message = <strong>Открыть предыдущие вкладки?</strong> Вы можете восстановить предыдущий сеанс из меню { -brand-short-name } <img data-l10n-name="icon"/> в разделе История.
+restore-session-startup-suggestion-button = Показать мне как

@@ -18,17 +18,16 @@
 <!ENTITY encryptionCert2.message "Certificato personal pro le cryptographia:">
 <!ENTITY digitalSign.certificate.button "Seliger…">
 <!ENTITY digitalSign.certificate.accesskey "S">
-<!ENTITY digitalSign.certificate_clear.button "Rader">
+<!ENTITY digitalSign.certificate_clear.button "Vacuar">
 <!ENTITY digitalSign.certificate_clear.accesskey "C">
 <!ENTITY encryption.certificate.button "Eliger…">
 <!ENTITY encryption.certificate.accesskey "r">
-<!ENTITY encryption.certificate_clear.button "Rader">
+<!ENTITY encryption.certificate_clear.button "Vacuar">
 <!ENTITY encryption.certificate_clear.accesskey "a">
-<!ENTITY signingGroupTitle.label "Firma digital">
-<!ENTITY signMessage2.label "Adder mi firma digital per defecto">
+<!ENTITY signingGroupTitle.label "Signatura digital">
+<!ENTITY signMessage2.label "Adder mi signatura digital per predefinition">
 <!ENTITY signMessage.accesskey "d">
-
-<!ENTITY signingCert2.message "Certificato personal pro firma digital:">
+<!ENTITY signingCert2.message "Certificato personal pro signatura digital:">
 
 <!ENTITY sendingDefaults.label "Parametros predefinite pro inviar messages">
 
@@ -50,6 +49,6 @@
 <!ENTITY certPicker.info  "Certificato:">
 <!ENTITY certPicker.detailsLabel "Detalios de certificato seligite:">
 
-<!ENTITY openpgpKey.message "Clave personal pro cryptographia e firma digital:">
+<!ENTITY openpgpKey.message "Clave personal pro cryptation e signatura digital:">
 <!ENTITY openpgpKey.button "Definir le clave personal…">
 <!ENTITY openpgpKey.accesskey "o">

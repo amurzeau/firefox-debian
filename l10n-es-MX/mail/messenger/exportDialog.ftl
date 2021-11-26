@@ -3,8 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 export-dialog-brand-name = { -brand-product-name }
-export-dialog-window =
-    .title = Exportar
+export-dialog-title = Exportar
 export-dialog =
     .buttonlabelaccept = Siguiente
 export-dialog-button-finish = Finalizar

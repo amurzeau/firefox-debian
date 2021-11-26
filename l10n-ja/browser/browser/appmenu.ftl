@@ -12,25 +12,30 @@ appmenuitem-update-banner3 =
     .label-update-unsupported = 更新不可 — システムの互換性なし
     .label-update-restart = 更新可能 — 今すぐ再起動
 appmenuitem-protection-dashboard-title = プライバシー保護ダッシュボード
-appmenuitem-customize-mode =
-    .label = カスタマイズ...
-
-## Zoom Controls
-
 appmenuitem-new-tab =
     .label = 新しいタブ
 appmenuitem-new-window =
     .label = 新しいウィンドウ
 appmenuitem-new-private-window =
     .label = 新しいプライベートウィンドウ
+appmenuitem-history =
+    .label = 履歴
+appmenuitem-downloads =
+    .label = ダウンロード
 appmenuitem-passwords =
     .label = パスワード
 appmenuitem-addons-and-themes =
     .label = アドオンとテーマ
+appmenuitem-print =
+    .label = 印刷...
 appmenuitem-find-in-page =
     .label = このページを検索...
+appmenuitem-zoom =
+    .value = ズーム
 appmenuitem-more-tools =
     .label = その他のツール
+appmenuitem-help =
+    .label = ヘルプ
 appmenuitem-exit2 =
     .label = 終了
 appmenu-menu-button-closed2 =
@@ -55,13 +60,29 @@ appmenuitem-fullscreen =
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
-fxa-toolbar-sync-now =
-    .label = 今すぐ同期
 appmenu-remote-tabs-sign-into-sync =
     .label = ログインして同期...
 appmenu-remote-tabs-turn-on-sync =
     .label = 同期をオンにする...
+# This is shown after the tabs list if we can display more tabs by clicking on the button
+appmenu-remote-tabs-showmore =
+    .label = さらにタブを表示
+    .tooltiptext = この端末からのタブをさらに表示します
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = タブがありません
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = タブの同期をオンにすると、あなたの他の端末のタブ一覧が表示されます。
+appmenu-remote-tabs-opensettings =
+    .label = 設定
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = 他の端末のタブを表示しますか？
+appmenu-remote-tabs-connectdevice =
+    .label = 他の端末を接続
+appmenu-remote-tabs-welcome = 他の端末のタブ一覧を表示する。
+appmenu-remote-tabs-unverified = あなたのアカウントは検証する必要があります。
 appmenuitem-fxa-toolbar-sync-now2 = 今すぐ同期
+appmenuitem-fxa-sign-in = { -brand-product-name } にログイン
 appmenuitem-fxa-manage-account = アカウントを管理
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
@@ -90,6 +111,15 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = プロファイラー
+    .tooltiptext = パフォーマンスプロファイルを記録します
+profiler-popup-button-recording =
+    .label = プロファイラー
+    .tooltiptext = プロファイラーがプロファイルを記録中です
+profiler-popup-button-capturing =
+    .label = プロファイラー
+    .tooltiptext = プロファイラーがプロファイルをキャプチャ中です
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -98,10 +128,15 @@ profiler-popup-description-title =
     .value = 記録、分析、共有
 profiler-popup-description = プロファイルを公開してあなたのチームと共有し、パフォーマンス問題に協力しましょう。
 profiler-popup-learn-more = 詳細
+profiler-popup-learn-more-button =
+    .label = 詳細
 profiler-popup-settings =
     .value = 設定
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = 設定を編集...
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = 設定を編集...
 profiler-popup-disabled = プライベートウィンドウを開いているため、プロファイラーは現在無効です。
 profiler-popup-recording-screen = 記録中...
 # The profiler presets list is generated elsewhere, but the custom preset is defined
@@ -124,6 +159,30 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+profiler-popup-presets-web-developer-description = 一般的なウェブアプリをデバッグするための低負荷な推奨プリセットです。
+profiler-popup-presets-web-developer-label =
+    .label = ウェブ開発
+profiler-popup-presets-firefox-platform-description = Firefox のプラットフォーム内部をデバッグするための推奨プリセットです。
+profiler-popup-presets-firefox-platform-label =
+    .label = Firefox プラットフォーム
+profiler-popup-presets-firefox-front-end-description = Firefox のフロントエンド内部をデバッグするための推奨プリセットです。
+profiler-popup-presets-firefox-front-end-label =
+    .label = Firefox フロントエンド
+profiler-popup-presets-firefox-graphics-description = Firefox のグラフィック性能を調査するための推奨プリセットです。
+profiler-popup-presets-firefox-graphics-label =
+    .label = Firefox グラフィック
+profiler-popup-presets-media-description = 音声と動画の問題を診断するための推奨プリセットです。
+profiler-popup-presets-media-label =
+    .label = メディア
+profiler-popup-presets-custom-label =
+    .label = カスタム
 
 ## History panel
 

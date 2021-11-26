@@ -20,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Hľadať
     .aria-label = Hľadať
-newtab-search-box-search-the-web-text = Vyhľadávanie na webe
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = Vyhľadávajte cez { $engine } alebo zadajte webovú adresu
@@ -110,9 +109,9 @@ newtab-menu-dismiss = Skryť
 newtab-menu-pin = Pripnúť
 newtab-menu-unpin = Odopnúť
 newtab-menu-delete-history = Odstrániť z histórie
-newtab-menu-save-to-pocket = Uložiť do služby { -pocket-brand-name }
-newtab-menu-delete-pocket = Odstrániť zo služby { -pocket-brand-name }
-newtab-menu-archive-pocket = Archivovať v službe { -pocket-brand-name }
+newtab-menu-save-to-pocket = Uložiť do { -pocket-brand-name(case: "gen") }
+newtab-menu-delete-pocket = Odstrániť z { -pocket-brand-name(case: "gen") }
+newtab-menu-archive-pocket = Archivovať v { -pocket-brand-name(case: "loc") }
 newtab-menu-show-privacy-info = Naši sponzori a vaše súkromie
 
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
@@ -156,7 +155,7 @@ newtab-label-visited = Navštívené
 newtab-label-bookmarked = V záložkách
 newtab-label-removed-bookmark = Záložka bola odstránená
 newtab-label-recommended = Trendy
-newtab-label-saved = Uložené do služby { -pocket-brand-name }
+newtab-label-saved = Uložené do { -pocket-brand-name(case: "gen") }
 newtab-label-download = Stiahnuté
 # This string is used in the story cards to indicate sponsored content
 # Variables:
@@ -166,6 +165,11 @@ newtab-label-sponsored = { $sponsorOrSource } · Sponzorované
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = Sponzorované spoločnosťou { $sponsor }
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } min.
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -218,10 +222,25 @@ newtab-discovery-empty-section-topstories-timed-out = Hups! Túto sekciu sa nepo
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Populárne témy:
+newtab-pocket-new-topics-title = Chcete ešte viac príbehov? Pozrite sa na tieto obľúbené témy z { -pocket-brand-name(case: "gen") }
 newtab-pocket-more-recommendations = Ďalšie odporúčania
 newtab-pocket-learn-more = Ďalšie informácie
 newtab-pocket-cta-button = Získajte { -pocket-brand-name }
-newtab-pocket-cta-text = Ukladajte si články do služby { -pocket-brand-name } a užívajte si skvelé čítanie.
+newtab-pocket-cta-text = Ukladajte si články do { -pocket-brand-name(case: "gen") } a užívajte si skvelé čítanie.
+newtab-pocket-pocket-firefox-family = { -pocket-brand-name } je súčasťou rodiny { -brand-product-name(case: "gen") }
+# A save to Pocket button that shows over the card thumbnail on hover.
+newtab-pocket-save-to-pocket = Uložiť do { -pocket-brand-name(case: "gen") }
+newtab-pocket-saved-to-pocket = Uložená do { -pocket-brand-name(case: "gen") }
+# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
+newtab-pocket-load-more-stories-button = Načítať ďalšie príbehy
+
+## Pocket Final Card Section.
+## This is for the final card in the Pocket grid.
+
+newtab-pocket-last-card-title = Už ste prečítali všetko!
+newtab-pocket-last-card-desc = Ďalšie príbehy tu nájdete opäť neskôr.
+newtab-pocket-last-card-image =
+    .alt = Už ste prečítali všetko
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.
@@ -241,7 +260,7 @@ newtab-custom-row-selector =
     }
 newtab-custom-sponsored-sites = Sponzorované skratky
 newtab-custom-pocket-title = Odporúčané službou { -pocket-brand-name }
-newtab-custom-pocket-subtitle = Výnimočný obsah vybraný službou { -pocket-brand-name }, ktorá je súčasťou { -brand-product-name(case: "gen") }
+newtab-custom-pocket-subtitle = Výnimočný obsah vybraný službou { -pocket-brand-name }, ktorá je súčasťou rodiny { -brand-product-name(case: "gen") }
 newtab-custom-pocket-sponsored = Sponzorované príbehy
 newtab-custom-recent-title = Nedávna aktivita
 newtab-custom-recent-subtitle = Výber z nedávno navštívených stránok a obsahu

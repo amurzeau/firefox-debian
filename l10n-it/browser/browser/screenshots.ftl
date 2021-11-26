@@ -2,13 +2,12 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-screenshots-context-menu = Acquisisci schermata
-
-screenshots-my-shots-button = Le mie immagini
-
 screenshot-toolbarbutton =
   .label = Acquisisci schermata
   .tooltiptext = Acquisisci schermata
+
+screenshot-shortcut =
+  .key = S
 
 screenshots-instructions = Trascina o fai clic su una pagina per selezionare un’area della pagina. Premi ESC per annullare.
 screenshots-cancel-button = Annulla
@@ -40,8 +39,6 @@ screenshots-login-error-details = Non è stato possibile salvare l’immagine in
 
 screenshots-unshootable-page-error-title = Non è possibile acquisire una schermata di questa pagina.
 screenshots-unshootable-page-error-details = Non è possibile acquisire una schermata in quanto non si tratta di una normale pagina web.
-
-screenshots-self-screenshot-error-title = Non è possibile acquisire una schermata di una pagina di { -screenshots-brand-name }
 
 screenshots-empty-selection-error-title = L’area selezionata è troppo piccola
 

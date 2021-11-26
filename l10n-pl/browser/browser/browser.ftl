@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Dodaj do paska adresu
 page-action-manage-extension =
     .label = Zarządzaj rozszerzeniem…
-page-action-remove-from-urlbar =
-    .label = Usuń z paska adresu
 page-action-remove-extension =
     .label = Usuń rozszerzenie
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Tym razem szukaj w:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Ustawienia wyszukiwania
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Zmień ustawienia wyszukiwania
 search-one-offs-context-open-new-tab =
@@ -251,8 +243,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Wyświetlanie tego okna podczas dodawania
     .accesskey = W
-bookmark-panel-done-button =
-    .label = Gotowe
 bookmark-panel-save-button =
     .label = Zachowaj
 # Width of the bookmark panel.
@@ -282,8 +272,6 @@ identity-passive-loaded = Niektóre elementy tej strony (np. obrazy) nie były p
 identity-active-loaded = Ochrona na tej stronie została wyłączona przez użytkownika.
 identity-weak-encryption = Strona używa słabego szyfrowania.
 identity-insecure-login-forms = Dane logowania wprowadzone na tej stronie nie są chronione.
-identity-permissions =
-    .value = Uprawnienia
 identity-https-only-connection-upgraded = (przełączono na protokół HTTPS)
 identity-https-only-label = Tryb używania wyłącznie protokołu HTTPS
 identity-https-only-dropdown-on =
@@ -299,7 +287,6 @@ identity-permissions-storage-access-header = Ciasteczka między witrynami
 identity-permissions-storage-access-hint = Te strony mogą używać ciasteczek i danych między witrynami, kiedy jesteś na tej witrynie.
 identity-permissions-storage-access-learn-more = Więcej informacji
 identity-permissions-reload-hint = Ponowne wczytanie strony może być konieczne, aby wprowadzone zmiany przyniosły skutek.
-identity-permissions-empty = Witryna korzysta z domyślnych uprawnień.
 identity-clear-site-data =
     .label = Wyczyść ciasteczka i dane witryny…
 identity-connection-not-secure-security-view = Połączenie z tą witryną nie jest zabezpieczone.
@@ -387,12 +374,6 @@ bookmarks-toolbar-empty-message = Umieść swoje zakładki na tym pasku zakłade
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Kamera do udostępnienia:
-    .accesskey = K
-popup-select-microphone =
-    .value = Mikrofon do udostępnienia:
-    .accesskey = M
 popup-select-camera-device =
     .value = Kamera:
     .accesskey = K
@@ -406,14 +387,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Głośniki
 popup-all-windows-shared = Wszystkie widoczne na ekranie okna zostaną udostępnione.
-popup-screen-sharing-not-now =
-    .label = Nie teraz
-    .accesskey = N
-popup-screen-sharing-never =
-    .label = Nigdy nie pozwalaj
-    .accesskey = d
-popup-silence-notifications-checkbox = Wyłącz powiadomienia przeglądarki { -brand-short-name } podczas udostępniania
-popup-silence-notifications-checkbox-warning = { -brand-short-name } nie będzie wyświetlał powiadomień w trakcie udostępniania.
 popup-screen-sharing-block =
     .label = Blokuj
     .accesskey = B
@@ -437,14 +410,10 @@ enable-devtools-popup-description = Aby móc użyć skrótu F12, najpierw otwór
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Wprowadź adres lub szukaj
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Wprowadź adres lub szukaj
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Przeglądarka jest zdalnie zarządzana
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -493,8 +462,6 @@ urlbar-go-button =
     .tooltiptext = Przejdź do strony o podanym adresie
 urlbar-page-action-button =
     .tooltiptext = Interakcje
-urlbar-pocket-button =
-    .tooltiptext = Wyślij do { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -699,6 +666,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Dostosuj pasek narzędzi…
     .accesskey = D
+toolbar-button-email-link =
+    .label = ­Wyślij odnośnik
+    .tooltiptext = Wyślij odnośnik do tej strony
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = ­Zapisz stronę
+    .tooltiptext = Zapisz tę stronę ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Otwórz plik
+    .tooltiptext = Otwórz plik ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Karty z innych urządzeń
+    .tooltiptext = Wyświetl karty z innych urządzeń
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Nowe okno prywatne
+    .tooltiptext = Otwórz nowe okno w trybie prywatnym ({ $shortcut })
 
 ## EME notification panel
 
@@ -742,13 +730,62 @@ popups-infobar-allow =
     .accesskey = w
 popups-infobar-block =
     .label = Blokuj wyskakujące okna z { $uriHost }
-    .accesskey = w
+    .accesskey = B
 
 ##
 
 popups-infobar-dont-show-message =
     .label = Nie pokazuj tej wiadomości, kiedy wyskakujące okna są blokowane
     .accesskey = N
+edit-popup-settings =
+    .label = Zarządzaj ustawieniami wyskakujących okien…
+    .accesskey = Z
 picture-in-picture-hide-toggle =
     .label = Ukryj przycisk „Obraz w obrazie”
     .accesskey = U
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Nawigacja
+navbar-downloads =
+    .label = Pobieranie plików
+navbar-overflow =
+    .tooltiptext = Więcej narzędzi…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Drukuj
+    .tooltiptext = Wydrukuj tę stronę… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Drukuj
+    .tooltiptext = Drukuj bieżącą stronę
+navbar-home =
+    .label = Strona startowa
+    .tooltiptext = Przejdź do strony startowej przeglądarki { -brand-short-name }
+navbar-library =
+    .label = Biblioteka
+    .tooltiptext = Wyświetl historię, zachowane zakładki i jeszcze więcej
+navbar-search =
+    .title = Znajdź
+navbar-accessibility-indicator =
+    .tooltiptext = Aktywne usługi ułatwień dostępu
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Karty przeglądarki
+tabs-toolbar-new-tab =
+    .label = Nowa karta
+tabs-toolbar-list-all-tabs =
+    .label = Pokaż wszystkie karty
+    .tooltiptext = Pokaż wszystkie karty
+
+## Infobar shown at startup to suggest session-restore
+
+# <img data-l10n-name="icon"/> will be replaced by the application menu icon
+restore-session-startup-suggestion-message = <strong>Otworzyć poprzednie karty?</strong> Możesz przywrócić poprzednią sesję w menu aplikacji { -brand-short-name } <img data-l10n-name="icon"/>, w sekcji Historia.
+restore-session-startup-suggestion-button = Pokaż, jak to zrobić

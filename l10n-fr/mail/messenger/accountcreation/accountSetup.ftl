@@ -39,6 +39,10 @@ account-provisioner-button = Obtenir une nouvelle adresse électronique
     .accesskey = b
 account-setup-password-toggle =
     .title = Afficher/masquer le mot de passe
+account-setup-password-toggle-show =
+    .title = Afficher le mot de passe
+account-setup-password-toggle-hide =
+    .title = Masquer le mot de passe
 account-setup-remember-password = Retenir le mot de passe
     .accesskey = m
 account-setup-exchange-label = Votre identifiant
@@ -151,6 +155,7 @@ account-setup-credentials-incomplete = Échec de l’authentification. Soit les 
 account-setup-credentials-wrong = Échec de l’authentification. Veuillez vérifier le nom d’utilisateur et le mot de passe
 account-setup-find-settings-failed = { -brand-short-name } n’a pas trouvé les paramètres de votre compte de messagerie
 account-setup-exchange-config-unverifiable = La configuration n’a pas pu être vérifiée. Si votre nom d’utilisateur et votre mot de passe sont corrects, il est probable que l’administrateur du serveur a désactivé la configuration sélectionnée pour votre compte. Essayez de sélectionner un autre protocole.
+account-setup-provisioner-error = Une erreur s’est produite lors de la configuration de votre nouveau compte dans { -brand-short-name }. Veuillez essayer de configurer manuellement votre compte avec vos informations d’identification.
 
 ## Manual configuration area
 
@@ -206,6 +211,17 @@ insecure-dialog-confirm-button = Confirmer
 exchange-dialog-question = { -brand-short-name } a trouvé les informations de configuration de votre compte sur { $domain }. Voulez-vous continuer et soumettre vos informations d’identification ?
 exchange-dialog-confirm-button = Connexion
 exchange-dialog-cancel-button = Annuler
+
+## Dismiss account creation dialog
+
+exit-dialog-title = Aucun compte de messagerie configuré
+exit-dialog-description = Voulez-vous vraiment annuler le processus de configuration ? { -brand-short-name } peut toujours être utilisé sans compte de messagerie, mais de nombreuses fonctionnalités ne seront pas disponibles.
+account-setup-no-account-checkbox = Utiliser { -brand-short-name } sans compte de messagerie
+    .accesskey = s
+exit-dialog-cancel-button = Continuer la configuration
+    .accesskey = C
+exit-dialog-confirm-button = Quitter la configuration
+    .accesskey = Q
 
 ## Alert dialogs
 

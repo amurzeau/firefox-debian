@@ -95,8 +95,6 @@ perftools-thread-img-decoder =
     .title = Vaizdų iškodavimo gijos
 perftools-thread-dns-resolver =
     .title = Šioje gijoje vykdomos DNS užklausos
-perftools-thread-js-helper =
-    .title = JS variklio foninis darbas, toks kaip kompiliavimas už pagrindinės gijos ribų
 perftools-thread-task-controller =
     .title = TaskController gijų telkinio gijos
 
@@ -115,3 +113,25 @@ perftools-onboarding-message = <b>Nauja</b>: „{ -profiler-brand-name }“ daba
 perftools-onboarding-reenable-old-panel = (kurį laiką dar galėsite pasiekti ankstesnį našumo polangį per <a>{ options-context-advanced-settings }</a>)
 perftools-onboarding-close-button =
     .aria-label = Užverti supažindinimo pranešimą
+
+## Profiler presets
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# The same labels and descriptions are also defined in appmenu.ftl.
+
+perftools-presets-web-developer-label = Saityno kūrėjams
+perftools-presets-web-developer-description = Rekomenduojamas nustatymas daugelio saityno programų derinimui, su nedidelėmis sąnaudomis.
+perftools-presets-firefox-platform-label = „Firefox“ platforma
+perftools-presets-firefox-platform-description = Rekomenduojamas nustatymas vidinės „Firefox“ platformos derinimui.
+perftools-presets-firefox-front-end-label = „Firefox“ front-end
+perftools-presets-firefox-front-end-description = Rekomenduojamas nustatymas vidinio „Firefox“ „front-end“ derinimui.
+perftools-presets-firefox-graphics-label = „Firefox“ grafika
+perftools-presets-firefox-graphics-description = Rekomenduojamas nustatymas „Firefox“ grafinio našumo tyrinėjimui.
+perftools-presets-media-label = Medija
+perftools-presets-media-description = Rekomenduojamas nustatymas garso ir vaizdo problemų diagnozavimui.
+perftools-presets-custom-label = Kitas
+
+##
+

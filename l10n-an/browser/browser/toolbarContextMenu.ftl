@@ -20,14 +20,6 @@ toolbar-context-menu-bookmark-selected-tabs =
 toolbar-context-menu-select-all-tabs =
     .label = Triar totas las pestanyas
     .accesskey = S
-toolbar-context-menu-undo-close-tabs =
-    .label =
-        { $tabCount ->
-            [1] Desfer tancadura de pestanyas
-            [one] Desfer la tancadura d'a pestanya
-           *[other] Desfer la tancadura d'as pestanyas
-        }
-    .accesskey = D
 toolbar-context-menu-reopen-closed-tabs =
     .label =
         { $tabCount ->
@@ -53,9 +45,6 @@ toolbar-context-menu-report-extension =
 toolbar-context-menu-pin-to-overflow-menu =
     .label = Penchar en o menú de sobreiximiento
     .accesskey = P
-toolbar-context-menu-auto-hide-downloads-button =
-    .label = Autoamagar en a barra de ferramientas
-    .accesskey = A
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = Amagar lo  botón quan siga vueda
     .accesskey = A
@@ -80,3 +69,6 @@ toolbar-context-menu-bookmarks-toolbar-on-new-tab-2 =
 toolbar-context-menu-bookmarks-show-other-bookmarks =
     .label = Amostrar atras pestanyas
     .accesskey = y
+toolbar-context-menu-menu-bar-cmd =
+    .toolbarname = Barra de menús
+    .accesskey = m

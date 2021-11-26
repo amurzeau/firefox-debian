@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Bóčnicu začinić
+
+sidebar-close-button =
+    .tooltiptext = Bóčnicu začinić

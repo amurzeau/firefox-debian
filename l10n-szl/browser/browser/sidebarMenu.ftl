@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Zawrzij posek na rancie
+
+sidebar-close-button =
+    .tooltiptext = Zawrzij posek na rancie

@@ -8,9 +8,6 @@
 newtab-page-title = Ny fane
 newtab-settings-button =
     .title = Tilpass siden for Ny fane
-newtab-personalize-button-label = Tilpass
-    .title = Tilpass ny fane-side
-    .aria-label = Tilpass ny fane-side
 newtab-personalize-icon-label =
     .title = Tilpass ny fane-side
     .aria-label = Tilpass ny fane-side
@@ -23,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Søk
     .aria-label = Søk
-newtab-search-box-search-the-web-text = Søk på nettet
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = Søk med { $engine } eller skriv inn adresse
@@ -172,6 +168,11 @@ newtab-label-sponsored = { $sponsorOrSource } · Sponset
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = Sponset av { $sponsor }
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } min
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -224,10 +225,25 @@ newtab-discovery-empty-section-topstories-timed-out = Ops! Vi lastet nesten denn
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Populære emner:
+newtab-pocket-new-topics-title = Vil du ha enda flere artikler? Se disse populære emnene fra { -pocket-brand-name }
 newtab-pocket-more-recommendations = Flere anbefalinger
 newtab-pocket-learn-more = Les mer
 newtab-pocket-cta-button = Hent { -pocket-brand-name }
 newtab-pocket-cta-text = Lagre artiklene du synes er interessante i { -pocket-brand-name }, og stimuler dine tanker med fasinerende lesermateriell.
+newtab-pocket-pocket-firefox-family = { -pocket-brand-name } er en del av { -brand-product-name }-familien.
+# A save to Pocket button that shows over the card thumbnail on hover.
+newtab-pocket-save-to-pocket = Lagre til { -pocket-brand-name }
+newtab-pocket-saved-to-pocket = Lagret til { -pocket-brand-name }
+# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
+newtab-pocket-load-more-stories-button = Last inn flere artikler
+
+## Pocket Final Card Section.
+## This is for the final card in the Pocket grid.
+
+newtab-pocket-last-card-title = Du har lest alt!
+newtab-pocket-last-card-desc = Kom tilbake senere for mer.
+newtab-pocket-last-card-image =
+    .alt = Du har lest alt
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.
@@ -251,10 +267,4 @@ newtab-custom-pocket-sponsored = Sponsede historier
 newtab-custom-recent-title = Nylig aktivitet
 newtab-custom-recent-subtitle = Et utvalg av nylige nettsteder og innhold
 newtab-custom-close-button = Lukk
-# For the "Snippets" feature traditionally on about:home.
-# Alternative translation options: "Small Note" or something that
-# expresses the idea of "a small message, shortened from something else,
-# and non-essential but also not entirely trivial and useless.
-newtab-custom-snippets-title = Snutter
-newtab-custom-snippets-subtitle = Tips og nyheter fra { -vendor-short-name } og { -brand-product-name }
 newtab-custom-settings = Behandle flere innstillinger

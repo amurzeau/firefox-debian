@@ -17,9 +17,6 @@
 <!ENTITY accountTypeMail.accesskey "E">
 <!ENTITY accountTypeNews.label "Conta de grupo de notícias">
 <!ENTITY accountTypeNews.accesskey "n">
-<!-- LOCALIZATION NOTE(accountTypeMovemail.label): do not translate 'Movemail' -->
-<!ENTITY accountTypeMovemail.label "Unix Mailspool (Movemail)">
-<!ENTITY accountTypeMovemail.accesskey "U">
 
 <!-- Entities for Identity page -->
 
@@ -124,4 +121,4 @@
 <!ENTITY deferStorage.label "Usar a Caixa de Entrada Global (armazena o correio em Pastas Locais)">
 <!ENTITY deferStorage.accesskey "g">
 <!ENTITY clickFinish.label "Clique em Concluir para salvar estas configurações e sair do assistente de contas.">
-<!ENTITY clickFinish.labelMac "Clique em Feito para salvar estas configurações e sair do assistente de contas.">
+<!ENTITY clickFinish.labelMac "Clique em 'Pronto' para salvar essas configurações e sair do assistente de contas.">

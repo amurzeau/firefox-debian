@@ -6,6 +6,10 @@ dock-options-window-dialog =
     .title = Opções do ícone
     .style = width: 35em;
 
+dock-options-show-badge =
+    .label = Exibir ícone do emblema
+    .accesskey = b
+
 bounce-system-dock-icon =
     .label = Animar ícone quando uma nova mensagem chegar
     .accesskey = i

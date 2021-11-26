@@ -38,20 +38,16 @@ menu-quit =
             [windows] e
            *[other] T
         }
-
 # This menu-quit-mac string is only used on macOS.
 menu-quit-mac =
     .label = Tel pa { -brand-shorter-name }
-
 # This menu-quit-button string is only used on Linux.
 menu-quit-button =
     .label = { menu-quit.label }
-
 # This menu-quit-button-win string is only used on Windows.
 menu-quit-button-win =
     .label = { menu-quit.label }
     .tooltip = Tel el pa { -brand-shorter-name }
-
 menu-about =
     .label = Chi rij ri { -brand-shorter-name }
     .accesskey = C
@@ -93,6 +89,9 @@ menu-file-save-page =
 menu-file-email-link =
     .label = Titaq ximonel tzij…
     .accesskey = T
+menu-file-share-url =
+    .label = Tikomonïx
+    .accesskey = k
 menu-file-print-setup =
     .label = Tib'an Runuk'ulem Ruxaq…
     .accesskey = u
@@ -114,9 +113,6 @@ menu-file-go-offline =
 menu-edit =
     .label = Nuk'b'äl
     .accesskey = N
-menu-edit-find-on =
-    .label = Tikanöx pa Re Ruxaq Re'…
-    .accesskey = R
 menu-edit-find-in-page =
     .label = Tikanöx pa Ruxaq…
     .accesskey = k
@@ -135,9 +131,6 @@ menu-view =
 menu-view-toolbars-menu =
     .label = Taq cholsamajib'äl
     .accesskey = c
-menu-view-customize-toolbar =
-    .label = Tichinäx…
-    .accesskey = T
 menu-view-customize-toolbar2 =
     .label = Tichinäx Rukajtz'ik Samajib'äl…
     .accesskey = c
@@ -174,10 +167,6 @@ menu-view-page-style-no-style =
 menu-view-page-basic-style =
     .label = Rutzub'al ruk'u'x ruxaq
     .accesskey = R
-menu-view-charset =
-    .label = Rucholajil Tz'ib'atzij
-    .accesskey = c
-
 menu-view-repair-text-encoding =
     .label = Tichojmirisäx Rub'itz'ib' Tz'ib'anïk
     .accesskey = R
@@ -223,7 +212,6 @@ menu-history-undo-menu =
     .label = Taq Ruwi' k'a b'a' Ketz'apïx
 menu-history-undo-window-menu =
     .label = Taq k'ajtz'ib' k'a b'a' etz'apin
-
 menu-history-reopen-all-tabs = Kejaq Chik Ronojel Ruwi'
 menu-history-reopen-all-windows = Kejaq Chik Ronojel Taq Tzuwäch
 
@@ -232,10 +220,6 @@ menu-history-reopen-all-windows = Kejaq Chik Ronojel Taq Tzuwäch
 menu-bookmarks-menu =
     .label = Taq yaketal
     .accesskey = y
-menu-bookmarks-show-all =
-    .label = Kek'ut konojel ri taq yaketal
-menu-bookmark-this-page =
-    .label = Titz'aqatisäx re ruxaq re' pa taq yaketal
 menu-bookmarks-manage =
     .label = Kenuk'samajïx Taq Yaketal
 menu-bookmark-current-tab =
@@ -259,15 +243,6 @@ menu-tools =
 menu-tools-downloads =
     .label = Taq qasanïk
     .accesskey = q
-menu-tools-addons =
-    .label = Taq tz'aqat
-    .accesskey = t
-menu-tools-fxa-sign-in =
-    .label = Titikirisäx Moloj Pa { -brand-product-name }...
-    .accesskey = k
-menu-tools-turn-on-sync =
-    .label = Titzij { -sync-brand-short-name }...
-    .accesskey = t
 menu-tools-addons-and-themes =
     .label = Taq Tz'aqat chuqa' taq Wachinel
     .accesskey = z
@@ -283,9 +258,6 @@ menu-tools-sync-now =
 menu-tools-fxa-re-auth =
     .label = Tok chik pa { -brand-product-name }...
     .accesskey = o
-menu-tools-web-developer =
-    .label = Nuk'unel ajk'amaya'l
-    .accesskey = a
 menu-tools-browser-tools =
     .label = Kisamajib'al Okik'amaya'l
     .accesskey = O
@@ -298,17 +270,6 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Rutzijol rij re jun ruxaq re'
     .accesskey = R
-menu-preferences =
-    .label =
-        { PLATFORM() ->
-            [windows] Taq cha'oj
-           *[other] Taq ajowab'äl
-        }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] c
-           *[other] o
-        }
 menu-settings =
     .label = Taq nuk'ulem
     .accesskey =
@@ -341,21 +302,6 @@ menu-window-bring-all-to-front =
 menu-help =
     .label = Tob'äl
     .accesskey = T
-menu-help-product =
-    .label = { -brand-shorter-name } To'ïk
-    .accesskey = T
-menu-help-show-tour =
-    .label = { -brand-shorter-name } B'enam
-    .accesskey = n
-menu-help-import-from-another-browser =
-    .label = Tijik' pa Jun Chik Okik'amaya'l…
-    .accesskey = j
-menu-help-keyboard-shortcuts =
-    .label = Ruq'a' rub'ey Keyboard
-    .accesskey = K
-menu-help-troubleshooting-info =
-    .label = Etamab'äl richin yesol taq k'ayewal
-    .accesskey = E
 menu-get-help =
     .label = Tk'ul To'ïk
     .accesskey = o
@@ -367,12 +313,6 @@ menu-help-report-site-issue =
 menu-help-feedback-page =
     .label = Ketaq taq Rutzijol…
     .accesskey = K
-menu-help-safe-mode-without-addons =
-    .label = Titikirisäx chik kik'in ri chupül taq tz'aqat…
-    .accesskey = T
-menu-help-safe-mode-with-addons =
-    .label = Titikirisäx chik rik'in Tzijïl taq Tz'aqat
-    .accesskey = T
 menu-help-enter-troubleshoot-mode2 =
     .label = Kib'anikil taq K'ayewal…
     .accesskey = K

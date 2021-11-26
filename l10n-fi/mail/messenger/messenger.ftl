@@ -61,9 +61,14 @@ folder-toolbar-toggle-folder-compact-view =
 
 ## Menu
 
+menu-file-save-as-file =
+    .label = Tiedosto…
+    .accesskey = T
 
 ## AppMenu
 
+appmenu-save-as-file =
+    .label = Tiedosto…
 # Since v89 we dropped the platforms distinction between Options or Preferences
 # and consolidated everything with Preferences.
 appmenu-preferences =

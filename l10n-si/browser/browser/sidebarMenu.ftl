@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = පැති තීරුව වසන්න
+
+sidebar-close-button =
+    .tooltiptext = පැති තීරුව වසන්න

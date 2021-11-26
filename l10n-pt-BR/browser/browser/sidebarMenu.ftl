@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Fechar painel
+
+sidebar-close-button =
+    .tooltiptext = Fechar painel

@@ -156,12 +156,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Afig a la barra d'adreces
 page-action-manage-extension =
     .label = Gestiona l'extensió…
-page-action-remove-from-urlbar =
-    .label = Elimina de la barra d'adreces
 page-action-remove-extension =
     .label = Elimina l'extensió
 
@@ -179,10 +175,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Esta vegada, cerca amb:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Canvia els paràmetres de cerca
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Canvia els paràmetres de cerca
 search-one-offs-context-open-new-tab =
@@ -238,8 +230,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Mostra l'editor en guardar
     .accesskey = s
-bookmark-panel-done-button =
-    .label = Fet
 bookmark-panel-save-button =
     .label = Guarda
 # Width of the bookmark panel.
@@ -268,8 +258,6 @@ identity-passive-loaded = Parts d'esta pàgina no són segures (com les imatges)
 identity-active-loaded = Heu desactivat la protecció en esta pàgina.
 identity-weak-encryption = Esta pàgina utilitza xifratge feble.
 identity-insecure-login-forms = Les dades d'inici de sessió que introduïu en esta pàgina podrien estar en risc.
-identity-permissions =
-    .value = Permisos
 identity-https-only-connection-upgraded = (actualitzat a HTTPS)
 identity-https-only-label = Mode només HTTPS
 identity-https-only-dropdown-on =
@@ -284,7 +272,6 @@ identity-https-only-info-no-upgrade = No s'ha pogut actualitzar la connexió des
 identity-permissions-storage-access-header = Galetes entre llocs
 identity-permissions-storage-access-hint = Estos subjectes poden utilitzar galetes entre llocs i dades del lloc mentre esteu en este lloc.
 identity-permissions-reload-hint = Potser cal que actualitzeu la pàgina per aplicar els canvis.
-identity-permissions-empty = No heu donat cap permís especial a este lloc.
 identity-clear-site-data =
     .label = Esborra les galetes i dades dels llocs…
 identity-connection-not-secure-security-view = No esteu connectat de forma segura a este lloc.
@@ -366,12 +353,6 @@ bookmarks-toolbar-empty-message = Col·loqueu les adreces d'interés ací, a la 
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Càmera per compartir:
-    .accesskey = C
-popup-select-microphone =
-    .value = Micròfon per compartir:
-    .accesskey = M
 popup-select-camera-device =
     .value = Càmera:
     .accesskey = C
@@ -383,14 +364,6 @@ popup-select-microphone-device =
 popup-select-microphone-icon =
     .tooltiptext = Micròfon
 popup-all-windows-shared = Es compartiran totes les finestres visibles de la pantalla.
-popup-screen-sharing-not-now =
-    .label = Ara no
-    .accesskey = A
-popup-screen-sharing-never =
-    .label = No permetes mai
-    .accesskey = N
-popup-silence-notifications-checkbox = Desactiva les notificacions del { -brand-short-name } mentre s'estiga compartint
-popup-silence-notifications-checkbox-warning = El { -brand-short-name } no mostrarà notificacions mentre estigueu compartint.
 popup-screen-sharing-block =
     .label = Bloca
     .accesskey = B
@@ -414,14 +387,10 @@ enable-devtools-popup-description = Per a usar la drecera F12, primer obriu DevT
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Escriviu una cerca o adreça
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Escriviu una cerca o adreça
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = El navegador està sota control remot
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -465,8 +434,6 @@ urlbar-go-button =
     .tooltiptext = Vés a l'adreça de la barra d'ubicació
 urlbar-page-action-button =
     .tooltiptext = Accions de la pàgina
-urlbar-pocket-button =
-    .tooltiptext = Guarda al { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -654,6 +621,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Personalitza la barra d'eines…
     .accesskey = P
+toolbar-button-email-link =
+    .label = Envia l'enllaç per correu
+    .tooltiptext = Envia per correu un enllaç a esta pàgina
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = ­Guarda la pàgina
+    .tooltiptext = Guarda esta pàgina ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Obri un fitxer
+    .tooltiptext = Obri un fitxer ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Pestanyes sincronitzades
+    .tooltiptext = Mostra les pestanyes d'altres dispositius
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Finestra privada nova
+    .tooltiptext = Obri una finestra de navegació privada nova ({ $shortcut })
 
 ## EME notification panel
 
@@ -704,3 +692,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Amaga el botó d'Imatge sobre imatge
     .accesskey = m
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navegació
+navbar-downloads =
+    .label = Baixades
+navbar-overflow =
+    .tooltiptext = Més eines…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Imprimeix
+    .tooltiptext = Imprimeix esta pàgina… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Imprimeix
+    .tooltiptext = Imprimeix esta pàgina
+navbar-home =
+    .label = Inici
+    .tooltiptext = Pàgina d'inici del { -brand-short-name }
+navbar-library =
+    .label = Biblioteca
+    .tooltiptext = Mostra l'historial, les adreces d'interés guardades i més
+navbar-search =
+    .title = Cerca
+navbar-accessibility-indicator =
+    .tooltiptext = Funcions d'accessibilitat activades
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Pestanyes del navegador
+tabs-toolbar-new-tab =
+    .label = Pestanya nova
+tabs-toolbar-list-all-tabs =
+    .label = Llista totes les pestanyes
+    .tooltiptext = Llista totes les pestanyes

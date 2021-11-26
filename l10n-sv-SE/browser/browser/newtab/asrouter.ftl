@@ -7,7 +7,6 @@
 
 cfr-doorhanger-extension-heading = Rekommenderade tillägg
 cfr-doorhanger-feature-heading = Rekommenderad funktion
-cfr-doorhanger-pintab-heading = Prova detta: Fäst flik
 
 ##
 
@@ -19,8 +18,6 @@ cfr-doorhanger-extension-cancel-button = Inte nu
 
 cfr-doorhanger-extension-ok-button = Lägg till nu
     .accesskey = L
-cfr-doorhanger-pintab-ok-button = Fäst denna flik
-    .accesskey = F
 
 cfr-doorhanger-extension-manage-settings-button = Hantera rekommendationsinställningar
     .accesskey = H
@@ -68,17 +65,7 @@ cfr-doorhanger-extension-total-users =
        *[other] { $total } användare
     }
 
-cfr-doorhanger-pintab-description = Få enkel åtkomst till dina mest använda webbplatser. Behåll webbplatser öppna i en flik (även när du startar om).
-
 ## These messages are steps on how to use the feature and are shown together.
-
-cfr-doorhanger-pintab-step1 = <b>Högerklicka</b> på en av flikarna du vill fästa.
-cfr-doorhanger-pintab-step2 = Välj <b>Fäst flik</b> från menyn.
-cfr-doorhanger-pintab-step3 = Om webbplatsen har en uppdatering ser du en blå punkt på din fästa flik.
-
-cfr-doorhanger-pintab-animation-pause = Pausa
-cfr-doorhanger-pintab-animation-resume = Återuppta
-
 
 ## Firefox Accounts Message
 
@@ -105,133 +92,27 @@ cfr-whatsnew-button =
     .label = Vad är nytt
     .tooltiptext = Vad är nytt
 
-cfr-whatsnew-panel-header = Vad är nytt
-
 cfr-whatsnew-release-notes-link-text = Läs versionsfakta
-
-cfr-whatsnew-fx70-title = { -brand-short-name } kämpar ännu mer för din integritet
-cfr-whatsnew-fx70-body =
-    Den senaste uppdateringen förbättrar funktionen Spårningsskydd och gör det
-    lättare än någonsin att skapa säkra lösenord för varje webbplats.
-
-cfr-whatsnew-tracking-protect-title = Skydda dig från spårare
-cfr-whatsnew-tracking-protect-body =
-    { -brand-short-name } blockerar många vanliga sociala och globala spårare som
-    följer vad du gör online.
-cfr-whatsnew-tracking-protect-link-text = Visa din rapport
-
-# This string is displayed before a large numeral that indicates the total
-# number of tracking elements blocked. Don’t add $blockedCount to your
-# localization, because it would result in the number showing twice.
-cfr-whatsnew-tracking-blocked-title =
-    { $blockedCount ->
-        [one] Spårare blockerad
-       *[other] Spårare blockerade
-    }
-cfr-whatsnew-tracking-blocked-subtitle = Sedan { DATETIME($earliestDate, month: "long", year: "numeric") }
-cfr-whatsnew-tracking-blocked-link-text = Visa rapport
-
-cfr-whatsnew-lockwise-backup-title = Säkerhetskopiera dina lösenord
-cfr-whatsnew-lockwise-backup-body = Generera nu säkra lösenord som du kan komma åt var du än loggar in.
-cfr-whatsnew-lockwise-backup-link-text = Slå på säkerhetskopior
-
-cfr-whatsnew-lockwise-take-title = Ta dina lösenord med dig
-cfr-whatsnew-lockwise-take-body =
-    Mobilappen { -lockwise-brand-short-name } låter dig säkert komma åt din
-    säkerhetskopierade lösenord var som helst.
-cfr-whatsnew-lockwise-take-link-text = Hämta appen
 
 ## Search Bar
 
-cfr-whatsnew-searchbar-title = Skriv mindre, hitta mer med adressfältet
-cfr-whatsnew-searchbar-body-topsites = Välj adressfältet och en ruta kommer att utvidgas med länkar till dina mest besökta webbplatser.
-
-## Search bar
-
-cfr-whatsnew-searchbar-icon-alt-text = Förstoringsglasikonen
-
 ## Picture-in-Picture
-
-cfr-whatsnew-pip-header = Titta på videor medans du surfar
-cfr-whatsnew-pip-body = Bild-i-bild visar upp en video i ett flytande fönster så att du kan titta medans du arbetar i andra flikar.
-cfr-whatsnew-pip-cta = Läs mer
 
 ## Permission Prompt
 
-cfr-whatsnew-permission-prompt-header = Färre irriterande popup-fönster
-cfr-whatsnew-permission-prompt-body = { -brand-shorter-name } blockerar nu webbplatser från att automatiskt fråga dig om att skicka popup-meddelanden.
-cfr-whatsnew-permission-prompt-cta = Läs mer
-
 ## Fingerprinter Counter
-
-# This string is displayed before a large numeral that indicates the total
-# number of tracking elements blocked. Don’t add $fingerprinterCount to your
-# localization, because it would result in the number showing twice.
-cfr-whatsnew-fingerprinter-counter-header =
-    { $fingerprinterCount ->
-        [one] Fingeravtrycksspårare blockerade
-       *[other] Fingeravtrycksspårare blockerade
-    }
-cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } blockerar många fingeravtrycksspårare som i hemlighet samlar in information om din enhet och åtgärder för att skapa en reklamprofil av dig.
-
-# Message variation when fingerprinters count is less than 10
-cfr-whatsnew-fingerprinter-counter-header-alt = Fingeravtrycksspårare
-cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } kan blockera många fingeravtrycksspårare som i hemlighet samlar in information om din enhet och åtgärder för att skapa en reklamprofil av dig.
 
 ## Bookmark Sync
 
-cfr-doorhanger-sync-bookmarks-header = Få det här bokmärket på din telefon
-cfr-doorhanger-sync-bookmarks-body = Ta med dig dina bokmärken, lösenord, historik, med mera överallt där du är inloggad på { -brand-product-name }.
-cfr-doorhanger-sync-bookmarks-ok-button = Slå på { -sync-brand-short-name }
-    .accesskey = T
-
 ## Login Sync
-
-cfr-doorhanger-sync-logins-header = Förlora aldrig ett lösenord igen
-cfr-doorhanger-sync-logins-body = Lagra och synkronisera dina lösenord på ett säkert sätt på alla dina enheter.
-cfr-doorhanger-sync-logins-ok-button = Slå på { -sync-brand-short-name }
-    .accesskey = S
 
 ## Send Tab
 
-cfr-doorhanger-send-tab-header = Läs detta var du än är
-cfr-doorhanger-send-tab-recipe-header = Ta med det här receptet till köket
-cfr-doorhanger-send-tab-body = Send Tab låter dig enkelt dela den här länken till din telefon eller var du än är inloggad på { -brand-product-name }.
-cfr-doorhanger-send-tab-ok-button = Prova Send Tab
-    .accesskey = S
-
 ## Firefox Send
-
-cfr-doorhanger-firefox-send-header = Dela denna PDF säkert
-cfr-doorhanger-firefox-send-body = Håll dina känsliga dokument säkra från nyfikna ögon med end-to-end-kryptering och en länk som försvinner när du är klar.
-cfr-doorhanger-firefox-send-ok-button = Prova { -send-brand-name }
-    .accesskey = P
 
 ## Social Tracking Protection
 
-cfr-doorhanger-socialtracking-ok-button = Se skydd
-    .accesskey = S
-cfr-doorhanger-socialtracking-close-button = Stäng
-    .accesskey = S
-cfr-doorhanger-socialtracking-dont-show-again = Visa mig inte meddelanden som dessa igen
-    .accesskey = V
-cfr-doorhanger-socialtracking-heading = { -brand-short-name } hindrade ett socialt nätverk från att spåra dig här
-cfr-doorhanger-socialtracking-description = Din integritet är viktig. { -brand-short-name } blockerar nu vanliga spårare för sociala medier, vilket begränsar hur mycket data de kan samla in om vad du gör online.
-cfr-doorhanger-fingerprinters-heading = { -brand-short-name } blockerade en fingeravtrycksspårare på den här sidan
-cfr-doorhanger-fingerprinters-description = Din integritet är viktig. { -brand-short-name } blockerar nu fingeravtrycksspårare, som samlar in delar av unik identifierbar information om din enhet för att spåra dig.
-cfr-doorhanger-cryptominers-heading = { -brand-short-name } blockerade en kryptogrävare på den här sidan
-cfr-doorhanger-cryptominers-description = Din integritet är viktig. { -brand-short-name } blockerar nu kryptogrävare, som använder ditt systems datakraft för att utvinna digitala pengar.
-
 ## Enhanced Tracking Protection Milestones
-
-# Variables:
-#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
-#   $date (String) - The date we began recording the count of blocked trackers
-cfr-doorhanger-milestone-heading =
-    { $blockedCount ->
-        [one] { -brand-short-name } blockerade <b>{ $blockedCount }</b> spårare sedan { $date }!
-       *[other] { -brand-short-name } blockerade över <b>{ $blockedCount }</b> spårare sedan { $date }!
-    }
 
 # Variables:
 #   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
@@ -249,39 +130,16 @@ cfr-doorhanger-milestone-ok-button = Visa alla
 
 ## Lockwise message
 
-cfr-whatsnew-lockwise-header = Skapa säkra lösenord enkelt
-cfr-whatsnew-lockwise-body = Det är svårt att tänka ut unika, säkra lösenord för varje konto. När du skapar ett lösenord väljer du lösenordsfältet för att använda ett säkert, genererat lösenord från { -brand-shorter-name }.
-cfr-whatsnew-lockwise-icon-alt = { -lockwise-brand-short-name } ikon
-
 ## Vulnerable Passwords message
-
-cfr-whatsnew-passwords-header = Få varningar om sårbara lösenord
-cfr-whatsnew-passwords-body = Hackare vet att människor återanvänder samma lösenord. Om du använder samma lösenord på flera webbplatser och en av dessa webbplatser vart med om ett dataintrång, ser du en varning i { -lockwise-brand-short-name } att du behöver ändra ditt lösenord på dessa webbplatser.
-cfr-whatsnew-passwords-icon-alt = Ikon för sårbar lösenordsnyckel
 
 ## Picture-in-Picture fullscreen message
 
-cfr-whatsnew-pip-fullscreen-header = Ta bild-i-bild helskärm
-cfr-whatsnew-pip-fullscreen-body = När du placerar en video i ett flytande fönster kan du nu dubbelklicka på det fönstret för att gå till helskärm.
-cfr-whatsnew-pip-fullscreen-icon-alt = Ikon för bild-i-bild
-
 ## Protections Dashboard message
-
-cfr-whatsnew-protections-header = Överblick över skydd
-cfr-whatsnew-protections-body = Skyddsöversikten innehåller sammanfattande rapporter om dataintrång och lösenordshantering. Du kan nu spåra hur många intrång du har löst och se om något av dina sparade lösenord kan ha blivit exponerat i ett dataintrång.
-cfr-whatsnew-protections-cta-link = Visa säkerhetsöversikt
-cfr-whatsnew-protections-icon-alt = Sköldikon
 
 ## Better PDF message
 
-cfr-whatsnew-better-pdf-header = Bättre PDF-upplevelse
-cfr-whatsnew-better-pdf-body = PDF-dokument öppnas nu direkt i { -brand-short-name } och håller ditt arbetsflöde inom räckhåll.
-
 cfr-doorhanger-milestone-close-button = Stäng
     .accesskey = S
-
-## What’s New Panel Content for Firefox 76
-## Protections Dashboard message
 
 ## DOH Message
 
@@ -301,21 +159,22 @@ cfr-doorhanger-fission-primary-button = Ok, jag förstår
 cfr-doorhanger-fission-secondary-button = Läs mer
     .accesskey = L
 
-## What's new: Cookies message
-
-## What's new: Media controls message
-
-## What's new: Search shortcuts
-
-## What's new: Cookies protection
-
-## What's new: Better bookmarking
-
-## What's new: Cross-site cookie tracking
-
 ## Full Video Support CFR message
 
 cfr-doorhanger-video-support-body = Videor på den här webbplatsen kanske inte spelas upp korrekt i den här versionen av { -brand-short-name }. Uppdatera { -brand-short-name } nu för fullständig videosupport.
 cfr-doorhanger-video-support-header = Uppdatera { -brand-short-name } för att spela upp video
 cfr-doorhanger-video-support-primary-button = Uppdatera nu
     .accesskey = U
+
+## VPN promotion dialog for public Wi-Fi users
+##
+## If a user is detected to be on a public Wi-Fi network, they are given a
+## bit of info about how to improve their privacy and then offered a button
+## to the Mozilla VPN page and a link to dismiss the dialog.
+
+spotlight-public-wifi-vpn-header = Det verkar som om du använder ett offentligt Wi-Fi
+spotlight-public-wifi-vpn-body = För att dölja din plats och surfaktivitet, överväg ett virtuellt privat nätverk. Det hjälper dig att skydda dig när du surfar på offentliga platser som flygplatser och kaféer.
+spotlight-public-wifi-vpn-primary-button = Håll dig privat med { -mozilla-vpn-brand-name }
+    .accesskey = p
+spotlight-public-wifi-vpn-link = Inte nu
+    .accesskey = I

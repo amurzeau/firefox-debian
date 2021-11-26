@@ -153,12 +153,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Anyader ta la barra d'adrezas
 page-action-manage-extension =
     .label = Chestionar la extensión…
-page-action-remove-from-urlbar =
-    .label = Borrar d'a barra d'adrezas
 page-action-remove-extension =
     .label = Borrar extensión
 
@@ -176,10 +172,6 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Esta vegada, mira con:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Cambiar os achustes de busca
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Cambiar los achustes de busca
 search-one-offs-context-open-new-tab =
@@ -233,8 +225,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Amostrar l'editor mientres se grava
     .accesskey = A
-bookmark-panel-done-button =
-    .label = Feito
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -261,10 +251,7 @@ identity-passive-loaded = Bella parte d'ista pachina no ye segura (p. eix. imach
 identity-active-loaded = Ha desactivau a protección en ista pachina.
 identity-weak-encryption = Ista pachina fa servir zifrau feble.
 identity-insecure-login-forms = Los datos de dentrada escritos en ista pachina pueden estar compromesos.
-identity-permissions =
-    .value = Permisos
 identity-permissions-reload-hint = Talment haiga de recargar la pachina pa que s'apliquen los cambios.
-identity-permissions-empty = No ha dau garra permiso especial ta iste puesto.
 identity-clear-site-data =
     .label = Borrar cookies y datos d'o puesto…
 identity-connection-not-secure-security-view = No yes connectau de traza segura a este puesto:
@@ -319,21 +306,7 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Camara ta compartir:
-    .accesskey = C
-popup-select-microphone =
-    .value = Microfono ta compartir:
-    .accesskey = M
 popup-all-windows-shared = Se compartirán todas as finestras visibles en a suya pantalla.
-popup-screen-sharing-not-now =
-    .label = No pas agora
-    .accesskey = g
-popup-screen-sharing-never =
-    .label = No permitir nunca
-    .accesskey = N
-popup-silence-notifications-checkbox = Desactivar notificacions de { -brand-short-name } mientras se comparte
-popup-silence-notifications-checkbox-warning = { -brand-short-name } no amostrará notificacions mientres compartes.
 
 ## WebRTC window or screen share tab switch warning
 
@@ -350,14 +323,10 @@ enable-devtools-popup-description = Pa emplegar l'alcorce F12, ubre en primeras 
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Termen a mirar u adreza
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Termen a mirar u adreza
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Lo navegador ye controlau a distancia
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -401,8 +370,6 @@ urlbar-go-button =
     .tooltiptext = Ir ta la URL d'a barra d'adrezas
 urlbar-page-action-button =
     .tooltiptext = Accions de pachina
-urlbar-pocket-button =
-    .tooltiptext = Alzar en { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -525,6 +492,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Personalizar la barra de ferramientas…
     .accesskey = C
+toolbar-button-email-link =
+    .label = Ninviar un vinclo
+    .tooltiptext = Ninvia por correu un vinclo ta ista pachina
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Alzar a pachina
+    .tooltiptext = Alza ista pachina ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Ubrir un fichero
+    .tooltiptext = Ubre un fichero ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Pestanyas sincronizadas
+    .tooltiptext = Amostrar las pestanyas d'atros dispositivos
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Nueva finestra privada
+    .tooltiptext = Ubrir una nueva finestra de navegación privada ({ $shortcut })
 
 ## EME notification panel
 
@@ -562,3 +550,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Amaga lo commutador d'imachen incrustada
     .accesskey = A
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navegación
+navbar-downloads =
+    .label = Descargas
+navbar-overflow =
+    .tooltiptext = Mas ferramientas...
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Imprentar
+    .tooltiptext = Imprente ista pachina... ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Imprentar
+    .tooltiptext = Imprentar ista pachina
+navbar-home =
+    .label = Inicio
+    .tooltiptext = Pachina d'inicio de { -brand-short-name }
+navbar-library =
+    .label = Reposte
+    .tooltiptext = Veyer lo historial, los marcapachinas alzaus, y mas
+navbar-search =
+    .title = Mirar
+navbar-accessibility-indicator =
+    .tooltiptext = Caracteristicas d'accesibilidat activadas
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Pestanyas d'o navegador
+tabs-toolbar-new-tab =
+    .label = Nueva pestanya
+tabs-toolbar-list-all-tabs =
+    .label = Amostrar todas as pestanyas
+    .tooltiptext = Amostrar todas as pestanyas

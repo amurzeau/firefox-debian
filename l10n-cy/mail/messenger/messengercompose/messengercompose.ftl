@@ -6,8 +6,6 @@
 # Addressing widget
 
 #   $type (String) - the type of the addressing row
-remove-address-row-type = Tynnwch y maes { $type }
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Tynnu'r maes { $type }
 #   $type (String) - the type of the addressing row
@@ -72,6 +70,10 @@ toolbar-button-add-attachment =
 add-attachment-notification-reminder =
     .label = Ychwanegu Atodiad…
     .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+add-attachment-notification-reminder2 =
+    .label = Ychwanegu Atodiad…
+    .accesskey = A
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 menuitem-attach-files =
     .label = Ffeil(iau)…
     .accesskey = F
@@ -93,25 +95,14 @@ attachment-bucket-count =
            *[other] { $count } Atodiad
         }
     .accesskey = A
-#   $count (Number) - the number of attachments in the attachment bucket
-attachments-placeholder-tooltip =
-    .tooltiptext =
-        { $count ->
-            [1] Atodiadau
-            [zero] { $count } Atodiadau
-            [one] { $count } Atodiad
-            [two] { $count } Atodiad
-            [few] { $count } Atodiad
-            [many] { $count } Atodiad
-           *[other] { $count } Atodiad
-        }
-#   { attachment-bucket-count.accesskey } - Do not localize this message.
-key-toggle-attachment-pane =
-    .key = { attachment-bucket-count.accesskey }
 expand-attachment-pane-tooltip =
     .tooltiptext = Dangos y paen atodi ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
     .tooltiptext = Cuddio'r paen atodi ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-show =
+    .title = Dangos y paen atodi ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-hide =
+    .title = Cuddio'r paen atodi ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 drop-file-label-attachment =
     { $count ->
         [zero] Ychwanegu fel Atodiadau
@@ -186,6 +177,53 @@ bcc-compose-show-address-row-label =
     .tooltiptext = Dangos Maes { bcc-compose-address-row-label.value } ({ bcc-compose-show-address-row-menuitem.acceltext })
 #   $count (Number) - the count of addresses in the "To" and "Cc" fields.
 many-public-recipients-info = Bydd y  { $count } derbyniwr yn At a Cc weld cyfeiriad ei gilydd. Gallwch osgoi datgelu derbynwyr trwy ddefnyddio Bcc yn lle.
+to-address-row-label =
+    .value = At
+#   $key (String) - the shortcut key for this field
+show-to-row-main-menuitem =
+    .label = I Faes
+    .accesskey = F
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+# No acceltext should be shown.
+# The label should match the show-to-row-button text.
+show-to-row-extra-menuitem =
+    .label = At
+    .accesskey = A
+#   $key (String) - the shortcut key for this field
+show-to-row-button = At
+    .title = Dangos i Faes ({ ctrl-cmd-shift-pretty-prefix }{ $key })
+cc-address-row-label =
+    .value = Cc
+#   $key (String) - the shortcut key for this field
+show-cc-row-main-menuitem =
+    .label = Maes Cc
+    .accesskey = C
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+# No acceltext should be shown.
+# The label should match the show-cc-row-button text.
+show-cc-row-extra-menuitem =
+    .label = Cc
+    .accesskey = C
+#   $key (String) - the shortcut key for this field
+show-cc-row-button = Cc
+    .title = Dangos Maes Cc ({ ctrl-cmd-shift-pretty-prefix }{ $key })
+bcc-address-row-label =
+    .value = Bcc
+#   $key (String) - the shortcut key for this field
+show-bcc-row-main-menuitem =
+    .label = Maes Bcc
+    .accesskey = B
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
+# No acceltext should be shown.
+# The label should match the show-bcc-row-button text.
+show-bcc-row-extra-menuitem =
+    .label = Bcc
+    .accesskey = B
+#   $key (String) - the shortcut key for this field
+show-bcc-row-button = Bcc
+    .title = Dangos Maes Bcc ({ ctrl-cmd-shift-pretty-prefix }{ $key })
+extra-address-rows-menu-button =
+    .title = Meysydd cyfeiriadau eraill i'w dangos
 #   $count (Number) - the count of addresses in the "To" and "Cc" fields.
 many-public-recipients-notice =
     { $count ->

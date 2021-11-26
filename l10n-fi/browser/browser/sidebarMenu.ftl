@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Sulje sivupaneeli
+
+sidebar-close-button =
+    .tooltiptext = Sulje sivupaneeli

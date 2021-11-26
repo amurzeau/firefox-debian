@@ -8,26 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = רק כאשר { -brand-short-name } מוגדר לחסום רכיבי מעקב מוכרים
 do-not-track-option-always =
     .label = תמיד
-pref-page-title =
-    { PLATFORM() ->
-        [windows] אפשרויות
-       *[other] העדפות
-    }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Please keep the placeholder string short to avoid truncation.
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input-box =
-    .style = width: 15.4em
-    .placeholder =
-        { PLATFORM() ->
-            [windows] חיפוש באפשרויות
-           *[other] חיפוש בהעדפות
-        }
 settings-page-title = הגדרות
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
@@ -55,9 +35,6 @@ category-search =
 pane-privacy-title = פרטיות ואבטחה
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-pane-sync-title2 = { -sync-brand-short-name }
-category-sync2 =
-    .tooltiptext = { pane-sync-title2 }
 pane-sync-title3 = סנכרון
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
@@ -96,21 +73,12 @@ restart-later = הפעלה מחדש מאוחר יותר
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their home page
-# is being controlled by an extension.
-extension-controlled-homepage-override = ההרחבה <img data-l10n-name="icon"/> { $name } שולטת על דף הבית שלך.
-# This string is shown to notify the user that their new tab page
-# is being controlled by an extension.
-extension-controlled-new-tab-url = ההרחבה <img data-l10n-name="icon"/> { $name } שולטת על דף הלשונית החדשה שלך.
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
 extension-controlled-password-saving = ההרחבה <img data-l10n-name="icon"/> { $name } שולטת על הגדרה זו.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = ההרחבה <img data-l10n-name="icon"/> { $name } שולטת על הגדרה זו.
-# This string is shown to notify the user that the default search engine
-# is being controlled by an extension.
-extension-controlled-default-search = ההרחבה <img data-l10n-name="icon"/> { $name } הגדירה את מנוע החיפוש ברירת המחדל שלך.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = ההרחבה <img data-l10n-name="icon"/> { $name } דורשת שימוש במגירת לשוניות.
@@ -131,25 +99,12 @@ extension-controlled-enable = להפעלת ההרחבה יש לגשת לתוספ
 
 search-results-header = תוצאות חיפוש
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
-search-results-empty-message =
-    { PLATFORM() ->
-        [windows] אין תוצאות באפשרויות לביטוי „<span data-l10n-name="query"></span>“, עמך הסליחה.
-       *[other] אין תוצאות בהעדפות לביטוי „<span data-l10n-name="query"></span>“, עמך הסליחה.
-    }
-# `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message2 = אין תוצאות בהגדרות לביטוי ״<span data-l10n-name="query"></span>״, עמך הסליחה.
 search-results-help-link = לעזרה נוספת, נא לפנות אל <a data-l10n-name="url">אתר התמיכה של { -brand-short-name }</a>
 
 ## General Section
 
 startup-header = הפעלה
-# { -brand-short-name } will be 'Firefox Developer Edition',
-# since this setting is only exposed in Firefox Developer Edition
-separate-profile-mode =
-    .label = לאפשר ל־{ -brand-short-name } ול־Firefox לרוץ במקביל
-use-firefox-sync = טיפ: פעולה זו מתאפשרת תודות ליצירה של שני פרופילים נפרדים. ניתן להשתמש ב־{ -sync-brand-short-name } כדי לסנכרן נתונים בניהם.
-get-started-not-logged-in = התחברות אל { -sync-brand-short-name }…
-get-started-configured = פתיחת מסך ההעדפות של { -sync-brand-short-name }
 always-check-default =
     .label = תמיד לבדוק אם { -brand-short-name } הוא דפדפן ברירת המחדל
     .accesskey = ת
@@ -161,6 +116,9 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = שחזור הפעלה קודמת
     .accesskey = ש
+startup-restore-windows-and-tabs =
+    .label = פתיחת חלונות ולשוניות קודמות
+    .accesskey = פ
 startup-restore-warn-on-quit =
     .label = הצגת אזהרה בעת סגירת הדפדפן
 disable-extension =
@@ -175,12 +133,20 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = הצגת אזהרה בעת סגירת מספר לשוניות
     .accesskey = ז
+confirm-on-close-multiple-tabs =
+    .label = הצגת אזהרה בעת סגירת מספר לשוניות
+    .accesskey = א
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (String) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+confirm-on-quit-with-key =
+    .label = הצגת אזהרה בעת יציאה באמצעות { $quitKey }
+    .accesskey = י
 warn-on-open-many-tabs =
     .label = הצגת אזהרה כאשר פתיחת מספר לשוניות עשויה להאט את { -brand-short-name }
     .accesskey = פ
-switch-links-to-new-tabs =
-    .label = מעבר מיידי בפתיחה של קישור בלשונית חדשה
-    .accesskey = מ
 switch-to-new-tabs =
     .label = בעת פתיחת קישור, תמונה או מדיה בלשונית חדשה, יש לעבור אליה מיידית
     .accesskey = ב
@@ -327,10 +293,6 @@ applications-manage-app =
     .label = פרטי יישום…
 applications-always-ask =
     .label = לשאול תמיד
-applications-type-pdf = Portable Document Format (PDF)
-# Variables:
-#   $type (String) - the MIME type (e.g application/binary)
-applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 # Variables:
 #   $type-description (String) - Description of the type (e.g "Portable Document Format")
 #   $type (String) - the MIME type (e.g application/binary)
@@ -397,15 +359,6 @@ update-application-warning-cross-user-setting = הגדרה זו תחול על כ
 update-application-use-service =
     .label = שימוש בשירות רקע לשם התקנת עדכונים
     .accesskey = ר
-update-setting-write-failure-title = שגיאה בשמירת העדפות עדכון
-# Variables:
-#   $path (String) - Path to the configuration file
-# The newlines between the main text and the line containing the path is
-# intentional so the path is easier to identify.
-update-setting-write-failure-message =
-    ‏{ -brand-short-name } נתקל בשגיאה ולא שמר את השינוי הזה. נא לשים לב כי שינוי ההגדרה של העדפת העדכון דורשת הרשאה לכתוב לקובץ שלהלן. ייתכן שתהיה לך או למנהל מערכת אפשרות לתקן את השגיאה על־ידי הענקת שליטה מלאה לקבוצה 'משתמשים' עבור קובץ זה.
-    
-    לא ניתן לכתוב לקובץ: { $path }
 update-setting-write-failure-title2 = שגיאה בשמירת הגדרות העדכון
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -611,10 +564,8 @@ search-show-suggestions-above-history-option =
     .label = הצגת הצעות חיפוש לפני היסטוריית הגלישה בתוצאות שורת הכתובת
 search-show-suggestions-private-windows =
     .label = הצגת הצעות חיפוש בחלונות פרטיים
-suggestions-addressbar-settings-generic = שינוי העדפות עבור הצעות אחרות של שורת הכתובת
 suggestions-addressbar-settings-generic2 = שינוי הגדרות עבור הצעות אחרות של שורת הכתובת
 search-suggestions-cant-show = הצעות חיפוש לא יופיעו בתוצאות סרגל המיקום מכיוון שהגדרת ש־{ -brand-short-name } לעולם לא לזכור היסטוריה.
-search-one-click-header = מנועי חיפוש בלחיצה אחת
 search-one-click-header2 = קיצורי דרך לחיפוש
 search-one-click-desc = בחירת מנועי חיפוש חלופיים שיופיעו מתחת לשורת הכתובת ושורת החיפוש עם תחילת ההקלדה של מילות מפתח.
 search-choose-engine-column =
@@ -641,12 +592,6 @@ search-keyword-warning-bookmark = בחרת להשתמש במילת מפתח שנ
 
 ## Containers Section
 
-containers-back-button =
-    .aria-label =
-        { PLATFORM() ->
-            [windows] חזרה לאפשרויות
-           *[other] חזרה להעדפות
-        }
 containers-back-button2 =
     .aria-label = חזרה להגדרות
 containers-header = מגירת לשוניות
@@ -656,8 +601,6 @@ containers-add-button =
 containers-new-tab-check =
     .label = בחירת מגירה עבור כל לשונית חדשה
     .accesskey = ב
-containers-preferences-button =
-    .label = העדפות
 containers-settings-button =
     .label = הגדרות
 containers-remove-button =
@@ -667,10 +610,6 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = קחו את הרשת עמכם
-sync-signedout-description = סנכרון הסימניות, ההיסטוריה, הלשוניות, הססמאות, ההרחבות, וההעדפות בין כל מכשיריך.
-sync-signedout-account-signin2 =
-    .label = התחברות אל { -sync-brand-short-name }…
-    .accesskey = ה
 sync-signedout-description2 = סנכרון הסימניות, ההיסטוריה, הלשוניות, הססמאות, ההרחבות וההגדרות בין כל המכשירים שלך.
 sync-signedout-account-signin3 =
     .label = כניסה כדי לסנכרן
@@ -710,10 +649,6 @@ sync-sign-in =
 
 prefs-syncing-on = סנכרון: פעיל
 prefs-syncing-off = סנכרון: כבוי
-prefs-sync-setup =
-    .label = הגדרת { -sync-brand-short-name }…
-    .accesskey = ג
-prefs-sync-offer-setup-label = סנכרון הסימניות, ההיסטוריה, הלשוניות, הססמאות, ההרחבות, וההעדפות בין כל המכשירים שלך.
 prefs-sync-turn-on-syncing =
     .label = הפעלת סנכרון…
     .accesskey = ס
@@ -733,11 +668,6 @@ sync-currently-syncing-logins-passwords = כניסות וססמאות
 sync-currently-syncing-addresses = כתובות
 sync-currently-syncing-creditcards = כרטיסי אשראי
 sync-currently-syncing-addons = תוספות
-sync-currently-syncing-prefs =
-    { PLATFORM() ->
-        [windows] אפשרויות
-       *[other] העדפות
-    }
 sync-currently-syncing-settings = הגדרות
 sync-change-options =
     .label = שינוי…
@@ -777,14 +707,6 @@ sync-engine-creditcards =
 sync-engine-addons =
     .label = תוספות
     .tooltiptext = הרחבות וערכות נושא עבור Firefox שולחני
-    .accesskey = ת
-sync-engine-prefs =
-    .label =
-        { PLATFORM() ->
-            [windows] אפשרויות
-           *[other] העדפות
-        }
-    .tooltiptext = הגדרות כלליות, פרטיות ואבטחה ששינית
     .accesskey = ת
 sync-engine-settings =
     .label = הגדרות
@@ -835,9 +757,6 @@ forms-fill-logins-and-passwords =
 forms-saved-logins =
     .label = כניסות שמורות…
     .accesskey = כ
-forms-master-pw-use =
-    .label = שימוש בססמה ראשית
-    .accesskey = ש
 forms-primary-pw-use =
     .label = שימוש בססמה ראשית
     .accesskey = ש
@@ -848,7 +767,6 @@ forms-primary-pw-learn-more-link = מידע נוסף
 forms-master-pw-change =
     .label = שינוי ססמה ראשית…
     .accesskey = נ
-forms-master-pw-fips-title = הינך כרגע במצב FIPS. ‏FIPS דורש ססמה ראשית לא־ריקה.
 forms-primary-pw-change =
     .label = שינוי ססמה ראשית…
     .accesskey = נ
@@ -862,13 +780,6 @@ forms-windows-sso-learn-more-link = מידע נוסף
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = כדי ליצור ססמה ראשית, יש להזין את פרטי הכניסה שלך ל־Windows. פעולה זאת מסייעת בהגנה על אבטחת החשבונות שלך.
-# This message can be seen by trying to add a Master Password.
-# The macOS strings are preceded by the operating system with "Firefox is trying to "
-# and includes subtitle of "Enter password for the user "xxx" to allow this." These
-# notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = ליצור ססמה ראשית
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = כדי ליצור ססמה ראשית, יש להזין את פרטי הכניסה שלך ל־Windows. פעולה זאת מסייעת בהגנה על אבטחת החשבונות שלך.
 # This message can be seen by trying to add a Primary Password.
@@ -960,9 +871,6 @@ sitedata-clear =
 sitedata-settings =
     .label = ניהול נתונים…
     .accesskey = נ
-sitedata-cookies-permissions =
-    .label = ניהול הרשאות…
-    .accesskey = ה
 sitedata-cookies-exceptions =
     .label = ניהול חריגות…
     .accesskey = ח
@@ -1020,7 +928,7 @@ content-blocking-etp-strict-desc = הגנה חזקה יותר, אך עשויה �
 content-blocking-etp-custom-desc = בחירה באילו רכיבי מעקב ותסריטים יש לחסום.
 content-blocking-etp-blocking-desc = ‏{ -brand-short-name } חוסם את הפריטים הבאים:
 content-blocking-private-windows = תוכן מעקב בחלונות פרטיים
-content-blocking-cross-site-cookies-in-all-windows = עוגיות חוצו אתרים בכל החלונות (כולל עוגיות מעקב)
+content-blocking-cross-site-cookies-in-all-windows = עוגיות חוצות אתרים בכל החלונות (כולל עוגיות מעקב)
 content-blocking-cross-site-tracking-cookies = עוגיות מעקב חוצות אתרים
 content-blocking-all-cross-site-cookies-private-windows = עוגיות חוצות אתרים בחלונות פרטיים
 content-blocking-social-media-trackers = רכיבי מעקב של מדיה חברתית
@@ -1118,10 +1026,6 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = חריגות…
     .accesskey = ח
-permissions-a11y-privacy-checkbox =
-    .label = מניעת שירותי נגישות מקבלת גישה לדפדפן שלך
-    .accesskey = נ
-permissions-a11y-privacy-link = מידע נוסף
 
 ## Privacy Section - Data Collection
 
@@ -1142,10 +1046,6 @@ addon-recommendations-link = מידע נוסף
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = דיווח נתונים מנוטרל עבור תצורת בנייה זו
-collection-backlogged-crash-reports =
-    .label = לאפשר ל־{ -brand-short-name } לשלוח דיווחי קריסות שנשמרו בשמך
-    .accesskey = ק
-collection-backlogged-crash-reports-link = מידע נוסף
 collection-backlogged-crash-reports-with-link = לאפשר ל־{ -brand-short-name } לשלוח דיווחי קריסות שנשמרו בשמך <a data-l10n-name="crash-reports-link">מידע נוסף</a>
     .accesskey = ק
 
@@ -1170,13 +1070,6 @@ security-block-uncommon-software =
 ## Privacy Section - Certificates
 
 certs-header = אישורים
-certs-personal-label = כאשר שרת מבקש את אישור האבטחה האישי שלך
-certs-select-auto-option =
-    .label = לבחור אחד באופן אוטומטי
-    .accesskey = ב
-certs-select-ask-option =
-    .label = לשאול אותך כל פעם
-    .accesskey = ש
 certs-enable-ocsp =
     .label = תשאול שרתי OCSP לאימות תקפות נוכחית של אישורי אבטחה
     .accesskey = ת
@@ -1186,29 +1079,6 @@ certs-view =
 certs-devices =
     .label = התקני אבטחה…
     .accesskey = א
-space-alert-learn-more-button =
-    .label = מידע נוסף
-    .accesskey = מ
-space-alert-over-5gb-pref-button =
-    .label =
-        { PLATFORM() ->
-            [windows] פתיחת אפשרויות
-           *[other] פתיחת העדפות
-        }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] א
-           *[other] ה
-        }
-space-alert-over-5gb-message =
-    { PLATFORM() ->
-        [windows] ל־{ -brand-short-name } אוזל שטח הדיסק. יתכן שתכני אתרים לא יוצגו כשורה. ניתן למחוק נתונים שמורים באפשרויות > פרטיות ואבטחה > עוגיות ונתוני אתרים.
-       *[other] ל־{ -brand-short-name } אוזל שטח הדיסק. יתכן שתכני אתרים לא יוצגו כשורה. ניתן למחוק נתונים שמורים בהעדפות > פרטיות ואבטחה > עוגיות ונתוני אתרים.
-    }
-space-alert-under-5gb-ok-button =
-    .label = בסדר, הבנתי
-    .accesskey = ב
-space-alert-under-5gb-message = ל־{ -brand-short-name } אוזל שטח הדיסק. יתכן שנתוני אתרים לא יוצגו כשורה. ניתן לבקר בקישור של “מידע נוסף” כדי לייעל את אופן השימוש בדיסק לחוויית גלישה טובה יותר.
 space-alert-over-5gb-settings-button =
     .label = פתיחת הגדרות
     .accesskey = ה

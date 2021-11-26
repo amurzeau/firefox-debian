@@ -30,14 +30,6 @@ site-data-remove-selected =
     .label = Eliminar lo seleccionado
     .accesskey = l
 
-site-data-button-cancel =
-    .label = Cancelar
-    .accesskey = C
-
-site-data-button-save =
-    .label = Guardar cambios
-    .accesskey = a
-
 site-data-settings-dialog =
     .buttonlabelaccept = Guardar cambios
     .buttonaccesskeyaccept = a
@@ -67,5 +59,9 @@ site-data-removing-dialog =
 site-data-removing-header = Eliminando cookies y datos del sitio
 
 site-data-removing-desc = Si elimina las cookies y datos de los sitios, puede que se cierre sesión en las webs. ¿Seguro que quiere hacer estos cambios?
+
+# Variables:
+#   $baseDomain (String) - The single domain for which data is being removed
+site-data-removing-single-desc = Eliminar las cookies y datos del sitio puede cerrar la sesión de los sitios web. ¿Está seguro de que desea eliminar las cookies y los datos del sitio para <strong>{ $baseDomain }</strong>?
 
 site-data-removing-table = Se eliminarán las cookies y datos de los siguientes sitios web

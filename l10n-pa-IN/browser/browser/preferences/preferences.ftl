@@ -8,26 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = ਸਿਰਫ਼ ਜਦੋਂ { -brand-short-name } ਨੂੰ ਜਾਣ-ਪਛਾਣੇ ਟਰੈਕਰਾਂ ਤੇ ਪਾਬੰਦੀ ਲਗਾਉਣ ਲਈ ਸੈੱਟ ਕੀਤਾ ਗਿਆ ਹੋਵੇ
 do-not-track-option-always =
     .label = ਹਮੇਸ਼ਾ
-pref-page-title =
-    { PLATFORM() ->
-        [windows] ਚੋਣਾਂ
-       *[other] ਮੇਰੀ ਪਸੰਦ
-    }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Please keep the placeholder string short to avoid truncation.
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input-box =
-    .style = width: 15.4em
-    .placeholder =
-        { PLATFORM() ->
-            [windows] ਚੋਣਾਂ 'ਚ ਲੱਭੋ
-           *[other] ਮੇਰੀ ਪਸੰਦ 'ਚ ਲੱਭੋ
-        }
 settings-page-title = ਸੈਟਿੰਗਾਂ
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
@@ -55,9 +35,6 @@ category-search =
 pane-privacy-title = ਪਰਦੇਦਾਰੀ ਤੇ ਸੁਰੱਖਿਆ
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-pane-sync-title2 = { -sync-brand-short-name }
-category-sync2 =
-    .tooltiptext = { pane-sync-title2 }
 pane-sync-title3 = ਸਿੰਕ ਕਰੋ
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
@@ -96,21 +73,12 @@ restart-later = ਬਾਅਦ ‘ਚ ਮੁੜ-ਚਾਲੂ ਕਰਿਉ
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their home page
-# is being controlled by an extension.
-extension-controlled-homepage-override = <img data-l10n-name="icon"/> { $name } ਵਾਧਰਾ ਤੁਹਾਡੇ ਮੁੱਖ ਸਫ਼ੇ ਨੂੰ ਕਾਬੂ ਕਰ ਰਿਹਾ ਹੈ।
-# This string is shown to notify the user that their new tab page
-# is being controlled by an extension.
-extension-controlled-new-tab-url = <img data-l10n-name="icon"/> { $name } ਇਕਸਟੈਨਸਨ ਤੁਹਾਡੇ ਨਵੀਂ ਟੈਬ ਸਫ਼ੇ ਨੂੰ ਕੰਟੋਰਲ ਕਰ ਰਹੀ ਹੈ।
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
 extension-controlled-password-saving = ਇਕਸਟੈਨਸ਼ਨ <img data-l10n-name="icon"/> { $name } ਇਹ ਸੈਟਿੰਗ ਨੂੰ ਕੰਟਰੋਲ ਕਰ ਰਹੀ ਹੈ।
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = ਇਕਸਟੈਨਸ਼ਨ, <img data-l10n-name="icon"/> { $name } ਇਹ ਸੈਟਿੰਗ ਨੂੰ ਕੰਟਰੋਲ ਕਰ ਰਹੀ ਹੈ।
-# This string is shown to notify the user that the default search engine
-# is being controlled by an extension.
-extension-controlled-default-search = <img data-l10n-name="icon"/> { $name } ਇਕਸਟੈਨਸਨ ਨੇ ਤੁਹਾਡਾ ਮੂਲ ਖੋਜ ਇੰਜਣ ਤਹਿ ਕੀਤਾ ਹੈ।
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = ਇਕਟੈਨਸ਼ਨ <img data-l10n-name="icon"/> { $name } ਲਈ ਕਨਟੇਨਰ ਟੈਬਾਂ ਲਈ ਚਾਹੀਦੀ ਹੈ।
@@ -131,25 +99,12 @@ extension-controlled-enable = ਵਾਧਰੇ ਨੂੰ ਸਮਰੱਥ ਕਰ�
 
 search-results-header = ਖੋਜ ਨਤੀਜੇ
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
-search-results-empty-message =
-    { PLATFORM() ->
-        [windows] ਅਫ਼ਸੋਸ! “<span data-l10n-name="query"></span>” ਲਈ ਚੋਣਾਂ ਵਿੱਚ ਕੋਈ ਨਤੀਜੇ ਨਹੀਂ ਹਨ।
-       *[other] ਅਫ਼ਸੋਸ! “<span data-l10n-name="query"></span>” ਲਈ ਪਸੰਦਾਂ ਵਿੱਚ ਕੋਈ ਨਤੀਜੇ ਨਹੀਂ ਹਨ।
-    }
-# `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message2 = ਅਫ਼ਸੋਸ! “<span data-l10n-name="query"></span>” ਲਈ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਕੋਈ ਨਤੀਜੇ ਨਹੀਂ ਹਨ।
 search-results-help-link = ਮਦਦ ਚਾਹੀਦੀ ਹੈ? <a data-l10n-name="url">{ -brand-short-name } ਸਹਿਯੋਗ</a> ਵੇਖੋ
 
 ## General Section
 
 startup-header = ਸ਼ੁਰੂਆਤ
-# { -brand-short-name } will be 'Firefox Developer Edition',
-# since this setting is only exposed in Firefox Developer Edition
-separate-profile-mode =
-    .label = { -brand-short-name } ਤੇ ਫਾਇਰਫਾਕਸ ਨੂੰ ਇੱਕੋ ਸਮੇਂ ਚੱਲਣ ਦੀ ਇਜ਼ਾਜ਼ਤ ਦਿਉ
-use-firefox-sync = ਟੋਟਕਾ: ਇਹ ਵੱਖਰੇ ਬਿਉਰੇ ਵਰਤਦੇ ਹਨ। ਉਹਨਾਂ ਵਿਚਾਲੇ ਡੇਟਾ ਸਾਂਝਾ ਕਰਨ ਲਈ { -sync-brand-short-name } ਵਰਤੋ।
-get-started-not-logged-in = { -sync-brand-short-name } ਲਈ ਸਾਈਨ ਇਨ ਕਰੋ…
-get-started-configured = { -sync-brand-short-name } ਮੇਰੀ ਪਸੰਦ ਖੋਲ੍ਹੋ
 always-check-default =
     .label = ਹਮੇਸ਼ਾ ਜਾਂਚ ਕਰੋ ਕਿ ਕੀ { -brand-short-name } ਤੁਹਾਡਾ ਮੂਲ ਬਰਾਊਜ਼ਰ ਹੈ
     .accesskey = w
@@ -160,6 +115,9 @@ set-as-my-default-browser =
     .accesskey = D
 startup-restore-previous-session =
     .label = ਪਿਛਲਾ ਸ਼ੈਸ਼ਨ ਬਹਾਲ ਕਰੋ
+    .accesskey = s
+startup-restore-windows-and-tabs =
+    .label = ਪਿਛਲੀਆਂ ਵਿੰਡੋਆਂ ਤੇ ਟੈਬਾਂ ਨੂੰ ਖੋਲ੍ਹੋ
     .accesskey = s
 startup-restore-warn-on-quit =
     .label = ਜਦੋਂ ਬਰਾਊਜ਼ਰ ਨੂੰ ਬੰਦ ਕਰੋ ਤਾਂ ਸਾਵਧਾਨ ਕਰੋ
@@ -175,12 +133,20 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = ਜਦੋਂ ਕਈ ਟੈਬਾਂ ਬੰਦ ਕਰਨੀਆਂ ਹੋਣ ਤਾਂ ਤੁਹਾਨੂੰ ਸਾਵਧਾਨ ਕਰਦਾ ਹੈ
     .accesskey = m
+confirm-on-close-multiple-tabs =
+    .label = ਕਈ ਟੈਬਾਂ ਨੂੰ ਬੰਦ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਤਸਦੀਕ ਕਰੋ
+    .accesskey = m
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (String) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+confirm-on-quit-with-key =
+    .label = { $quitKey } ਨਾਲ ਬੰਦ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਤਸਦੀਕ ਕਰੋ
+    .accesskey = b
 warn-on-open-many-tabs =
     .label = ਤੁਹਾਨੂੰ ਚੇਤਾਵਨੀ ਦਿਓ, ਜਦੋਂ ਕਈ ਟੈਬਾਂ ਖੋਲ੍ਹਣ ਨਾਲ { -brand-short-name } ਹੌਲੀ ਹੋ ਸਕਦਾ ਹੈ
     .accesskey = d
-switch-links-to-new-tabs =
-    .label = ਜਦੋਂ ਤੁਸੀਂ ਨਵੀਂ ਟੈਬ ਖੋਲ੍ਹਦੇ ਹੋ ਤਾਂ ਤੁਰੰਤ ਇਸ ਉੱਤੇ ਜਾਓ
-    .accesskey = h
 switch-to-new-tabs =
     .label = ਤੁਸੀਂ ਜਦੋਂ ਵੀ ਲਿੰਕ, ਚਿੱਤਰ ਜਾਂ ਮੀਡੀਏ ਨੂੰ ਨਵੀਂ ਟੈਬ ਵਿੱਚ ਖੋਲ੍ਹੋ ਤਾਂ ਫ਼ੌਰਨ ਉਸ ਉੱਤੇ ਜਾਓ
     .accesskey = h
@@ -254,6 +220,7 @@ confirm-browser-language-change-button = ਲਾਗੂ ਕਰਕੇ ਮੁੜ ਚ
 translate-web-pages =
     .label = ਵੈੱਬ ਸਮੱਗਰੀ ਦਾ ਉਲੱਥਾ ਕਰੋ
     .accesskey = T
+fx-translate-web-pages = { -translations-brand-name }
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = ਉਲੱਥਾ ਕੀਤਾ <img data-l10n-name="logo"/>
@@ -326,10 +293,6 @@ applications-manage-app =
     .label = …ਐਪਲੀਕੇਸ਼ਨ ਵੇਰਵਾ
 applications-always-ask =
     .label = ਹਮੇਸ਼ਾ ਪੁੱਛੋ
-applications-type-pdf = ਪੋਰਟੇਬਲ ਡੌਕੂਮੈਂਟ ਫਾਰਮੈਟ (PDF)
-# Variables:
-#   $type (String) - the MIME type (e.g application/binary)
-applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 # Variables:
 #   $type-description (String) - Description of the type (e.g "Portable Document Format")
 #   $type (String) - the MIME type (e.g application/binary)
@@ -396,15 +359,6 @@ update-application-warning-cross-user-setting = ਇਹ ਸੈਟਿੰਗ { -bra
 update-application-use-service =
     .label = ਅੱਪਡੇਟ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਬੈਕਗਰਾਊਂਡ ਸਰਵਿਸ ਵਰਤੋਂ
     .accesskey = b
-update-setting-write-failure-title = ਅਪਡੇਟ ਤਰਜੀਹਾਂ ਨੂੰ ਸੰਭਾਲਣ ਲਈ ਗਲਤੀ
-# Variables:
-#   $path (String) - Path to the configuration file
-# The newlines between the main text and the line containing the path is
-# intentional so the path is easier to identify.
-update-setting-write-failure-message =
-    { -brand-short-name } ਨੂੰ ਇੱਕ ਗਲਤੀ ਮਿਲੀ ਅਤੇ ਉਸਨੇ ਇਸ ਤਬਦੀਲੀ ਨੂੰ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਕੀਤਾ। ਯਾਦ ਰੱਖੋ ਕਿ ਇਸ ਅਪਡੇਟ ਦੀ ਪਸੰਦ ਨੂੰ ਸੈੱਟ ਕਰਨ ਲਈ ਹੇਠਾਂ ਦਿੱਤੀ ਫਾਈਲ ਤੇ ਲਿਖਣ ਲਈ ਮਨਜ਼ੂਰੀ ਦੀ ਲੋੜ ਹੈ। ਤੁਸੀਂ ਜਾਂ ਸਿਸਟਮ ਪ੍ਰਬੰਧਕ ਇਸ ਫਾਈਲ ਲਈ ਵਰਤੋਂਕਾਰ ਗਰੁੱਪ ਨੂੰ ਪੂਰਾ ਅਧਿਕਾਰ ਦੇ ਕੇ ਗਲਤੀ ਨੂੰ ਹੱਲ ਕਰ ਸਕਦੇ ਹਨ।
-    
-    ਫਾਈਲ ਉੱਤੇ ਲਿਖਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ: { $path }
 update-setting-write-failure-title2 = ਅੱਪਡੇਟ ਸੈਟਿੰਗਾਂ ਸੰਭਾਲਣ ਦੌਰਾਨ ਗ਼ਲਤੀ ਹੈ
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -610,10 +564,8 @@ search-show-suggestions-above-history-option =
     .label = ਸਿਰਨਾਵਾਂ ਪੱਟੀ ਨਤੀਜਿਆਂ ਵਿੱਚ ਬਰਾਊਜ਼ ਕਰਨ ਦੇ ਅਤੀਤ ਤੋਂ ਪਹਿਲਾਂ ਹੀ ਖੋਜ ਸੁਝਾਅ ਵੇਖਾਓ
 search-show-suggestions-private-windows =
     .label = ਪ੍ਰਾਈਵੇਟ ਵਿੰਡੋਆਂ ਵਿੱਚ ਖੋਜ ਸੁਝਾਅ ਵੇਖਾਓ
-suggestions-addressbar-settings-generic = ਹੋਰ ਸਿਰਨਾਵਾਂ ਪੱਟੀ ਸੁਝਾਆਵਾਂ ਲਈ ਪਸੰਦਾਂ ਨੂੰ ਬਦਲੋ
 suggestions-addressbar-settings-generic2 = ਹੋਰ ਸਿਰਨਾਵਾਂ ਪੱਟੀ ਸੁਝਾਆਵਾਂ ਲਈ ਸੈਟਿੰਗਾਂ ਬਦਲੋ
 search-suggestions-cant-show = ਟਿਕਾਣਾ ਖੋਜ ਨਤੀਜਿਆਂ ਵਿੱਚ ਖੋਜ ਸੁਝਾਅ ਨਹੀਂ ਵੇਖਾਏ ਜਾਣਗੇ, ਕਿਉਂਕਿ ਤੁਸੀਂ { -brand-short-name } ਨੂੰ ਕਦੇ ਵੀ ਅਤੀਤ ਯਾਦ ਨਾ ਰੱਖਣ ਲਈ ਸੰਰਚਿਤ ਕੀਤਾ ਹੈ।
-search-one-click-header = ਇੱਕ-ਕਲਿੱਕ ਖੋਜ ਇੰਜਣ
 search-one-click-header2 = ਖੋਜ ਸ਼ਾਰਟਕੱਟ
 search-one-click-desc = ਬਦਲਵੇਂ ਖੋਜ ਇੰਜਣਾਂ ਨੂੰ ਚੁਣੋ, ਜੋ ਕਿ ਸਿਰਨਾਵਾਂ ਪੱਟੀ ਅਤੇ ਖੋਜ ਪੱਟੀ 'ਚ ਦਿਖਾਈ ਦਿੰਦੇ ਹਨ, ਜਦੋਂ ਕਿ ਤੁਸੀਂ ਕੋਈ ਸ਼ਬਦ ਲਿਖਦੇ ਹੋ।
 search-choose-engine-column =
@@ -640,12 +592,6 @@ search-keyword-warning-bookmark = ਤੁਸੀਂ ਸ਼ਬਦ ਨੂੰ ਚੁ�
 
 ## Containers Section
 
-containers-back-button =
-    .aria-label =
-        { PLATFORM() ->
-            [windows] ਚੋਣਾਂ ਤੇ ਵਾਪਸ ਜਾਓ
-           *[other] ਮੇਰੀ ਪਸੰਦ ਤੇ ਵਾਪਸ ਜਾਓ
-        }
 containers-back-button2 =
     .aria-label = ਸੈਟਿੰਗਾਂ ‘ਤੇ ਵਾਪਸ ਜਾਓ
 containers-header = ਕਨਟਰੇਨਰ ਟੈਬਾਂ
@@ -655,8 +601,6 @@ containers-add-button =
 containers-new-tab-check =
     .label = ਹਰੇਕ ਨਵੀਂ ਟੈਬ ਲਈ ਕਨਟੇਨਰ ਚੁਣੋ
     .accesskey = S
-containers-preferences-button =
-    .label = ਤਰਜੀਹਾਂ
 containers-settings-button =
     .label = ਸੈਟਿੰਗਾਂ
 containers-remove-button =
@@ -666,10 +610,6 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = ਆਪਣੇ ਵੈੱਬ ਨੂੰ ਆਪਣੇ ਨਾਲ ਲੈ ਜਾਓ
-sync-signedout-description = ਆਪਣੇ ਸਾਰੇ ਡਿਵਾਈਸਾਂ ਉੱਤੇ ਆਪਣੇ ਬੁੱਕਮਾਰਕਾਂ, ਅਤੀਤ, ਟੈਬਾਂ, ਪਾਸਵਰਡਾਂ, ਐਡ-ਆਨ ਅਤੇ ਪਸੰਦਾਂ ਨੂੰ ਸੈਕਰੋਨਾਈਜ਼ ਕਰੋ।
-sync-signedout-account-signin2 =
-    .label = { -sync-brand-short-name } ਵਿੱਚ ਸਾਇਨ ਇਨ ਕਰੋ…
-    .accesskey = i
 sync-signedout-description2 = ਆਪਣੇ ਸਾਰੇ ਡਿਵਾਈਸਾਂ ਉੱਤੇ ਆਪਣੇ ਬੁੱਕਮਾਰਕਾਂ, ਅਤੀਤ, ਟੈਬਾਂ, ਪਾਸਵਰਡਾਂ, ਐਡ-ਆਨ ਅਤੇ ਸੈਟਿੰਗਾਂ ਨੂੰ ਸੈਕਰੋਨਾਈਜ਼ ਕਰੋ।
 sync-signedout-account-signin3 =
     .label = …ਸਿੰਕ ਲਈ ਸਾਈਨ ਇਨ ਕਰੋ
@@ -709,10 +649,6 @@ sync-sign-in =
 
 prefs-syncing-on = ਸਿੰਕ ਕਰਨਾ: ਚਾਲੂ ਹੈ
 prefs-syncing-off = ਸਿੰਕ ਕਰਨਾ: ਬੰਦ ਹੈ
-prefs-sync-setup =
-    .label = { -sync-brand-short-name } ਸੈਟਅੱਪ ਕਰੋ…
-    .accesskey = S
-prefs-sync-offer-setup-label = ਆਪਣੇ ਸਾਰੇ ਡਿਵਾਈਸਾਂ ਉੱਤੇ ਆਪਣੇ ਬੁੱਕਮਾਰਕਾਂ, ਅਤੀਤ, ਟੈਬਾਂ, ਪਾਸਵਰਡਾਂ, ਐਡ-ਆਨ ਅਤੇ ਪਸੰਦਾਂ ਨੂੰ ਸਿੰਕਰੋਨਾਈਜ਼ ਕਰੋ।
 prefs-sync-turn-on-syncing =
     .label = …ਸਿੰਕ ਕਰਨਾ ਚਾਲੂ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ
     .accesskey = s
@@ -732,11 +668,6 @@ sync-currently-syncing-logins-passwords = ਲਾਗਇਨ ਅਤੇ ਪਾਸਵ
 sync-currently-syncing-addresses = ਸਿਰਨਾਵੇਂ
 sync-currently-syncing-creditcards = ਕਰੈਡਿਟ ਕਾਰਡ
 sync-currently-syncing-addons = ਐਡ-ਆਨ
-sync-currently-syncing-prefs =
-    { PLATFORM() ->
-        [windows] ਚੋਣਾਂ
-       *[other] ਮੇਰੀ ਪਸੰਦ
-    }
 sync-currently-syncing-settings = ਸੈਟਿੰਗਾਂ
 sync-change-options =
     .label = ਬਦਲੋ…
@@ -777,14 +708,6 @@ sync-engine-addons =
     .label = ਐਡ-ਆਨ
     .tooltiptext = ਫ਼ਾਇਰਫਾਕਸ ਡੈਸਕਟਾਪ ਲਈ ਇਕਸਟੈਨਸ਼ਨਾਂ ਅਤੇ ਥੀਮ
     .accesskey = A
-sync-engine-prefs =
-    .label =
-        { PLATFORM() ->
-            [windows] ਚੋਣਾਂ
-           *[other] ਮੇਰੀਆਂ ਪਸੰਦਾਂ
-        }
-    .tooltiptext = ਤੁਹਾਡੇ ਵਲੋਂ ਬਦਲੀਆਂ ਗਈਆਂ ਆਮ, ਪਰਦੇਦਾਰੀ ਅਤੇ ਸੁਰੱਖਿਆ ਸੈਟਿੰਗਾਂ
-    .accesskey = S
 sync-engine-settings =
     .label = ਸੈਟਿੰਗਾਂ
     .tooltiptext = ਆਮ, ਪਰਦੇਦਾਰੀ ਅਤੇ ਸੁਰੱਖਿਆ ਸੈਟਿੰਗਾਂ, ਜੋ ਤੁਸੀਂ ਬਦਲੀਆਂ ਹਨ
@@ -834,9 +757,6 @@ forms-fill-logins-and-passwords =
 forms-saved-logins =
     .label = …ਸੰਭਾਲੇ ਹੋਏ ਲਾਗਇਨ
     .accesskey = L
-forms-master-pw-use =
-    .label = ਮਾਸਟਰ ਪਾਸਵਰਡ ਨੂੰ ਵਰਤੋਂ
-    .accesskey = U
 forms-primary-pw-use =
     .label = ਮੁੱਖ ਪਾਸਵਰਡ ਵਰਤੋਂ
     .accesskey = U
@@ -847,7 +767,6 @@ forms-primary-pw-learn-more-link = ਹੋਰ ਜਾਣੋ
 forms-master-pw-change =
     .label = …ਮਾਸਟਰ ਪਾਸਵਰਡ ਨੂੰ ਵਰਤੋਂ
     .accesskey = M
-forms-master-pw-fips-title = ਇਸ ਸਮੇਂ ਤੁਸੀਂ FIPS ਮੋਡ ਵਿੱਚ ਹੋ। FIPS ਨੂੰ ਇੱਕ ਨਾ-ਖਾਲੀ ਮਾਸਟਰ ਪਾਸਵਰਡ ਲੋੜੀਦਾ ਹੈ
 forms-primary-pw-change =
     .label = …ਮੁੱਖ ਪਾਸਵਰਡ ਬਦਲੋ
     .accesskey = P
@@ -857,16 +776,13 @@ forms-primary-pw-change =
 forms-primary-pw-former-name = ਪਹਿਲਾਂ ਮਾਸਟਰ ਪਾਸਵਰਡ ਵਜੋਂ ਜਾਣਿਆ ਜਾਂਦਾ ਹੈ
 forms-primary-pw-fips-title = ਤੁਸੀਂ ਇਸ ਵੇਲੇ FIPS ਮੋਡ ਵਿੱਚ ਹੋ। FIPS ਨੂੰ ਨਾ ਖਾਲੀ ਪਾਸਵਰਡ ਚਾਹੀਦਾ ਹੈ।
 forms-master-pw-fips-desc = ਪਾਸਵਰਡ ਨੂੰ ਬਦਲਣਾ ਫੇਲ੍ਹ ਹੋਇਆ
+forms-windows-sso =
+    .label = Microsoft, ਕੰਮ ਤੇ ਸਕੂਲ ਖਾਤਿਆਂ ਲਈ Windows ਸਿੰਗਲ ਸਾਈਨ-ਆਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿਓ
+forms-windows-sso-learn-more-link = ਹੋਰ ਸਿੱਖੋ
+forms-windows-sso-desc = ਆਪਣੀਆਂ ਡਿਵਾਈਸ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਖਾਤਿਆਂ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = ਮਾਸਟਰ ਪਾਸਵਰਡ ਬਣਾਉਣ ਲਈ ਆਪਣੀਆਂ Windows ਲਾਗਇਨ ਪਾਸਵਰਡ ਦਿਓ। ਇਸ ਤੁਹਾਡੇ ਖਾਤਿਆਂ ਦੀ ਸੁਰੱਖਿਆ ਨੂੰ ਬਚਾਉਣ ਲਈ ਮਦਦ ਕਰਦਾ ਹੈ।
-# This message can be seen by trying to add a Master Password.
-# The macOS strings are preceded by the operating system with "Firefox is trying to "
-# and includes subtitle of "Enter password for the user "xxx" to allow this." These
-# notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = ਮਾਸਟਰ ਪਾਸਵਰਡ ਬਣਾਓ
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = ਮੁੱਖ ਪਾਸਵਰਡ ਬਣਾਉਣ ਲਈ ਆਪਣੀਆਂ Windows ਲਾਗਇਨ ਪਾਸਵਰਡ ਦਿਓ। ਇਸ ਤੁਹਾਡੇ ਖਾਤਿਆਂ ਦੀ ਸੁਰੱਖਿਆ ਨੂੰ ਬਚਾਉਣ ਲਈ ਮਦਦ ਕਰਦਾ ਹੈ।
 # This message can be seen by trying to add a Primary Password.
@@ -962,9 +878,6 @@ sitedata-clear =
 sitedata-settings =
     .label = …ਡਾਟੇ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ
     .accesskey = M
-sitedata-cookies-permissions =
-    .label = …ਇਜਾਜ਼ਤਾਂ ਦਾ ਬੰਦੋਬਸਤ ਕਰੋ
-    .accesskey = P
 sitedata-cookies-exceptions =
     .label = ...ਛੋਟਾਂ ਦਾ ਬੰਦੋਬਸਤ ਕਰੋ
     .accesskey = x
@@ -1114,16 +1027,18 @@ permissions-block-popups =
 permissions-block-popups-exceptions =
     .label = …ਛੋਟਾਂ
     .accesskey = E
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = ਛੋਟ…
+    .accesskey = E
+    .searchkeywords = ਪੌਪ-ਅੱਪ
 permissions-addon-install-warning =
     .label = ਜਦੋਂ ਵੈੱਬਸਾਈਟਾਂ ਐਡ-ਆਨ ਇੰਸਟਾਲ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ਾਂ ਕਰਨ ਤਾਂ ਤੁਹਾਨੂੰ ਸਾਵਧਾਨ ਕਰੋ
     .accesskey = W
 permissions-addon-exceptions =
     .label = …ਛੋਟਾਂ
     .accesskey = E
-permissions-a11y-privacy-checkbox =
-    .label = ਅਸੈਸਬਿਲਟੀ ਸੇਵਾਵਾਂ ਨੂੰ ਆਪਣੇ ਬਰਾਊਜ਼ਰ ਲਈ ਪਹੁੰਚ ਤੋਂ ਰੋਕ ਲਗਾਓ
-    .accesskey = a
-permissions-a11y-privacy-link = ਹੋਰ ਜਾਣੋ
 
 ## Privacy Section - Data Collection
 
@@ -1145,10 +1060,6 @@ addon-recommendations-link = ਹੋਰ ਜਾਣੋ
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = ਇਸ ਬਿਲਡ ਸੰਰਚਨਾ ਲਈ ਡਾਟਾ ਰਿਪੋਰਟ ਕਰਨਾ ਅਸਮਰੱਥ ਹੈ
-collection-backlogged-crash-reports =
-    .label = { -brand-short-name } ਨੂੰ ਤੁਹਾਡੇ ਤੌਰ 'ਤੇ ਬੈਕ-ਲਾਗ ਕਰੈਸ਼ ਰਿਪੋਰਟਾਂ ਭੇਜਣ ਦੀ ਇਜਾਜ਼ਤ ਦਿਓ
-    .accesskey = c
-collection-backlogged-crash-reports-link = ਹੋਰ ਜਾਣੋ
 collection-backlogged-crash-reports-with-link = { -brand-short-name } ਨੂੰ ਤੁਹਾਡੇ ਤੌਰ ਉੱਤੇ ਬੈਕਲਾਗ ਕੀਤੀਆਂ ਕਰੈਸ਼ ਰਿਪੋਰਟਾਂ ਭੇਜਣ ਦਿਓ <a data-l10n-name="crash-reports-link">ਹੋਰ ਜਾਣੋ</a>
     .accesskey = c
 
@@ -1173,13 +1084,6 @@ security-block-uncommon-software =
 ## Privacy Section - Certificates
 
 certs-header = ਸਰਟੀਫਿਕੇਟ
-certs-personal-label = ਜਦ ਸਰਵਰ ਤੁਹਾਡੇ ਪਰਸਨਲ ਸਰਟੀਫਿਕੇਟ ਦੀ ਮੰਗ ਕਰੇ
-certs-select-auto-option =
-    .label = ਕਿਸੇ ਦੀ ਆਪਣੇ-ਆਪ ਚੋਣ ਕਰੋ
-    .accesskey = S
-certs-select-ask-option =
-    .label = ਹਰ ਵਾਰ ਤੁਹਾਨੂੰ ਪੁੱਛੋ
-    .accesskey = A
 certs-enable-ocsp =
     .label = ਕਿਊਰੀ OCSP ਜਵਾਬ-ਦੇਣ ਵਾਲੇ ਸਰਵਰਾਂ ਨੂੰ ਸਰਟੀਫਿਕੇਟਾਂ ਦੀ ਮੌਜੂਦਾ ਵੈਧਤਾ ਦੀ ਪਸ਼ਟੀ ਕਰਨ
     .accesskey = Q
@@ -1189,29 +1093,6 @@ certs-view =
 certs-devices =
     .label = …ਸੁਰੱਖਿਆ ਡਿਵਾਈਸ
     .accesskey = D
-space-alert-learn-more-button =
-    .label = ਹੋਰ ਜਾਣੋ
-    .accesskey = L
-space-alert-over-5gb-pref-button =
-    .label =
-        { PLATFORM() ->
-            [windows] ਚੋਣਾਂ ਨੂੰ ਖੋਲ੍ਹੋ
-           *[other] ਮੇਰੀਆਂ ਪਸੰਦਾਂ ਨੂੰ ਖੋਲ੍ਹੋ
-        }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] O
-           *[other] O
-        }
-space-alert-over-5gb-message =
-    { PLATFORM() ->
-        [windows] { -brand-short-name } ਲਈ ਡਿਸਕ ਥਾਂ ਖਤਮ ਹੋ ਗਈ ਹੈ। ਵੈਬਸਾਈਟ ਸਮੱਗਰੀ ਸ਼ਾਇਦ ਠੀਕ ਤਰ੍ਹਾਂ ਦਿਖਾਈ ਨਾ ਜਾ ਸਕੇ। ਤੁਸੀਂ ਚੋਣਾਂ > ਪਰਦੇਦਾਰੀ ਅਤੇ ਸੁਰੱਖਿਆ > ਕੂਕੀਜ਼ ਅਤੇ ਸਾਈਟ ਡਾਟਾ, ਵਿੱਚ ਸਟੋਰ ਕੀਤਾ ਡਾਟਾ ਮਿਟਾ ਸਕਦੇ ਹੋ।
-       *[other] { -brand-short-name } ਲਈ ਡਿਸਕ ਥਾਂ ਖਤਮ ਹੋ ਗਈ ਹੈ। ਵੈਬਸਾਈਟ ਸਮੱਗਰੀ ਸ਼ਾਇਦ ਠੀਕ ਤਰ੍ਹਾਂ ਦਿਖਾਈ ਨਾ ਜਾ ਸਕੇ। ਤੁਸੀਂ ਪਸੰਦਾਂ > ਪਰਦੇਦਾਰੀ ਅਤੇ ਸੁਰੱਖਿਆ > ਕੂਕੀਜ਼ ਅਤੇ ਸਾਈਟ ਡਾਟਾ, ਵਿੱਚ ਸਟੋਰ ਕੀਤਾ ਡਾਟਾ ਮਿਟਾ ਸਕਦੇ ਹੋ।
-    }
-space-alert-under-5gb-ok-button =
-    .label = ਠੀਕ ਹੈ, ਸਮਝ ਗਏ
-    .accesskey = K
-space-alert-under-5gb-message = { -brand-short-name } ਲਈ ਡਿਸਕ ਥਾਂ ਖਤਮ ਹੋ ਗਈ ਹੈ। ਵੈਬਸਾਈਟ ਸਮੱਗਰੀ ਸ਼ਾਇਦ ਠੀਕ ਤਰ੍ਹਾਂ ਦਿਖਾਈ ਨਾ ਜਾ ਸਕੇ। ਬਰਾਊਜ਼ ਕਰਨ ਦੇ ਬਿਹਤਰ ਤਜਰਬੇ ਲਈ ਆਪਣੀ ਡਿਸਕ ਦੀ ਵਰਤੋਂ ਨੂੰ ਅਨੁਕੂਲ ਬਣਾਉਣ ਲਈ “ਹੋਰ ਜਾਣੋ” ‘ਤੇ ਜਾਓ।
 space-alert-over-5gb-settings-button =
     .label = ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ
     .accesskey = O

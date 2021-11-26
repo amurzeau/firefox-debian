@@ -8,26 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Vain, kun { -brand-short-name } on asetettu estämään tunnetut seuraimet
 do-not-track-option-always =
     .label = Aina
-pref-page-title =
-    { PLATFORM() ->
-        [windows] Asetukset
-       *[other] Asetukset
-    }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Please keep the placeholder string short to avoid truncation.
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input-box =
-    .style = width: 15.4em
-    .placeholder =
-        { PLATFORM() ->
-            [windows] Hae asetuksista
-           *[other] Hae asetuksista
-        }
 settings-page-title = Asetukset
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
@@ -55,9 +35,6 @@ category-search =
 pane-privacy-title = Tietosuoja ja turvallisuus
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-pane-sync-title2 = { -sync-brand-short-name }
-category-sync2 =
-    .tooltiptext = { pane-sync-title2 }
 pane-sync-title3 = Synkronointi
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
@@ -96,21 +73,12 @@ restart-later = Käynnistä uudestaan myöhemmin
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their home page
-# is being controlled by an extension.
-extension-controlled-homepage-override = Laajennus, <img data-l10n-name="icon"/> { $name }, hallitsee aloitussivua.
-# This string is shown to notify the user that their new tab page
-# is being controlled by an extension.
-extension-controlled-new-tab-url = Laajennus, <img data-l10n-name="icon"/> { $name }, hallitsee Uusi välilehti -sivua.
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
 extension-controlled-password-saving = Laajennus, <img data-l10n-name="icon"/> { $name }, hallitsee tätä asetusta.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Laajennus, <img data-l10n-name="icon"/> { $name }, hallitsee tätä asetusta.
-# This string is shown to notify the user that the default search engine
-# is being controlled by an extension.
-extension-controlled-default-search = Laajennus, <img data-l10n-name="icon"/> { $name }, on asettanut oletushakukoneen.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = Laajennus, <img data-l10n-name="icon"/> { $name }, vaatii eristetyt välilehdet.
@@ -131,25 +99,12 @@ extension-controlled-enable = Ota laajennus käyttöön siirtymällä <img data-
 
 search-results-header = Hakutulokset
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
-search-results-empty-message =
-    { PLATFORM() ->
-        [windows] Ei hakutuloksia asetuksista haulle ”<span data-l10n-name="query"></span>”.
-       *[other] Ei hakutuloksia asetuksista haulle ”<span data-l10n-name="query"></span>”.
-    }
-# `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message2 = Ei hakutuloksia asetuksista haulle ”<span data-l10n-name="query"></span>”.
 search-results-help-link = Tarvitsetko apua? Avaa <a data-l10n-name="url">{ -brand-short-name }-tuki</a>
 
 ## General Section
 
 startup-header = Käynnistys
-# { -brand-short-name } will be 'Firefox Developer Edition',
-# since this setting is only exposed in Firefox Developer Edition
-separate-profile-mode =
-    .label = Salli { -brand-short-name }in ja Firefoxin olla käynnissä samaan aikaan
-use-firefox-sync = Vinkki: Tämä vaatii erilliset käyttäjäprofiilit. Synkronoi profiilien tiedot { -sync-brand-short-name }-palvelulla.
-get-started-not-logged-in = Kirjaudu { -sync-brand-short-name }-palveluun…
-get-started-configured = Avaa { -sync-brand-short-name }-asetukset
 always-check-default =
     .label = Tarkista aina, onko { -brand-short-name } oletusselain
     .accesskey = i
@@ -161,6 +116,9 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Palauta edellinen istunto
     .accesskey = P
+startup-restore-windows-and-tabs =
+    .label = Avaa aiemmat ikkunat ja välilehdet
+    .accesskey = A
 startup-restore-warn-on-quit =
     .label = Varoita, kun selainta ollaan sulkemassa
 disable-extension =
@@ -175,12 +133,20 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Varoita, kun olen sulkemassa useita välilehtiä
     .accesskey = V
+confirm-on-close-multiple-tabs =
+    .label = Vahvista ennen kuin useat välilehdet suljetaan
+    .accesskey = s
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (String) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+confirm-on-quit-with-key =
+    .label = Vahvista ennen pikanäppäimellä { $quitKey } lopettamista
+    .accesskey = L
 warn-on-open-many-tabs =
     .label = Varoita, kun useiden välilehtien avaaminen voi hidastaa { -brand-short-name }ia
     .accesskey = r
-switch-links-to-new-tabs =
-    .label = Siirry linkistä avattuun välilehteen heti
-    .accesskey = h
 switch-to-new-tabs =
     .label = Kun avaat linkin, kuvan tai median uudessa välilehdessä, vaihda siihen välittömästi
     .accesskey = K
@@ -327,10 +293,6 @@ applications-manage-app =
     .label = Sovellusten tiedot…
 applications-always-ask =
     .label = Kysy aina
-applications-type-pdf = Portable Document Format (PDF)
-# Variables:
-#   $type (String) - the MIME type (e.g application/binary)
-applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 # Variables:
 #   $type-description (String) - Description of the type (e.g "Portable Document Format")
 #   $type (String) - the MIME type (e.g application/binary)
@@ -397,15 +359,6 @@ update-application-warning-cross-user-setting = Tämä asetus koskee kaikkia Win
 update-application-use-service =
     .label = Asenna päivitykset taustalla toimivalla palvelulla
     .accesskey = u
-update-setting-write-failure-title = Päivitysasetusten tallennusvirhe
-# Variables:
-#   $path (String) - Path to the configuration file
-# The newlines between the main text and the line containing the path is
-# intentional so the path is easier to identify.
-update-setting-write-failure-message =
-    { -brand-short-name } havaitsi virheen eikä tallentanut tätä muutosta. Huomaa, että tämän päivitysasetuksen muuttaminen vaatii oikeuden kirjoittaa alla olevaan tiedostoon. Sinä tai järjestelmän ylläpitäjä voi pystyä ratkaisemaan virheen antamalla täydet oikeudet tähän tiedostoon Käyttäjät-ryhmälle.
-    
-    Ei onnistuttu kirjoittamaan tiedostoon: { $path }
 update-setting-write-failure-title2 = Päivitysasetusten tallennusvirhe
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -611,10 +564,8 @@ search-show-suggestions-above-history-option =
     .label = Näytä hakuehdotukset osoitepalkin tuloksissa ennen selaushistoriaa
 search-show-suggestions-private-windows =
     .label = Näytä hakuehdotukset yksityisissä ikkunoissa
-suggestions-addressbar-settings-generic = Muuta osoitepalkin muiden ehdotusten asetuksia
 suggestions-addressbar-settings-generic2 = Muuta osoitepalkin muiden ehdotusten asetuksia
 search-suggestions-cant-show = Hakuehdotuksia ei näytetä osoitepalkista tehtävistä hauista, koska olet valinnut, että { -brand-short-name } ei muista historiaa.
-search-one-click-header = Hakukoneet pikavalikossa
 search-one-click-header2 = Hakuoikotiet
 search-one-click-desc = Valitse vaihtoehtoiset hakukoneet, jotka ilmestyvät osoite- ja hakupalkin alalaitaan, kun alat kirjoittaa hakusanoja.
 search-choose-engine-column =
@@ -641,12 +592,6 @@ search-keyword-warning-bookmark = Annettu pikakomento on jo toisella kirjanmerki
 
 ## Containers Section
 
-containers-back-button =
-    .aria-label =
-        { PLATFORM() ->
-            [windows] Takaisin asetuksiin
-           *[other] Takaisin asetuksiin
-        }
 containers-back-button2 =
     .aria-label = Takaisin asetuksiin
 containers-header = Eristetyt välilehdet
@@ -656,8 +601,6 @@ containers-add-button =
 containers-new-tab-check =
     .label = Valitse eristystila jokaiselle uudelle välilehdelle
     .accesskey = V
-containers-preferences-button =
-    .label = Asetukset
 containers-settings-button =
     .label = Asetukset
 containers-remove-button =
@@ -667,10 +610,6 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Pidä oma selain aina mukanasi
-sync-signedout-description = Synkronoi kirjanmerkit, sivuhistoria, välilehdet, salasanat, lisäosat ja asetukset kaikilla laitteillasi.
-sync-signedout-account-signin2 =
-    .label = Kirjaudu { -sync-brand-short-name }-palveluun…
-    .accesskey = i
 sync-signedout-description2 = Synkronoi kirjanmerkit, sivuhistoria, välilehdet, salasanat, lisäosat ja asetukset kaikilla laitteillasi.
 sync-signedout-account-signin3 =
     .label = Kirjaudu synkronoidaksesi…
@@ -710,10 +649,6 @@ sync-sign-in =
 
 prefs-syncing-on = Synkronointi: PÄÄLLÄ
 prefs-syncing-off = Synkronointi: POIS PÄÄLTÄ
-prefs-sync-setup =
-    .label = Määritä { -sync-brand-short-name }…
-    .accesskey = M
-prefs-sync-offer-setup-label = Synkronoi kirjanmerkit, historia, välilehdet, salasanat, lisäosat ja asetukset kaikkien laitteidesi välillä.
 prefs-sync-turn-on-syncing =
     .label = Ota synkronointi käyttöön…
     .accesskey = O
@@ -733,11 +668,6 @@ sync-currently-syncing-logins-passwords = Käyttäjätunnukset ja salasanat
 sync-currently-syncing-addresses = Osoitteet
 sync-currently-syncing-creditcards = Luottokortit
 sync-currently-syncing-addons = Lisäosat
-sync-currently-syncing-prefs =
-    { PLATFORM() ->
-        [windows] Asetukset
-       *[other] Asetukset
-    }
 sync-currently-syncing-settings = Asetukset
 sync-change-options =
     .label = Muuta…
@@ -778,14 +708,6 @@ sync-engine-addons =
     .label = Lisäosat
     .tooltiptext = Firefoxin työpöytäversion laajennukset ja teemat
     .accesskey = i
-sync-engine-prefs =
-    .label =
-        { PLATFORM() ->
-            [windows] Asetukset
-           *[other] Asetukset
-        }
-    .tooltiptext = Muuttamasi yleiset asetukset sekä tietosuoja- ja turvallisuusasetukset
-    .accesskey = e
 sync-engine-settings =
     .label = Asetukset
     .tooltiptext = Muuttamasi yleiset asetukset sekä tietosuoja- ja turvallisuusasetukset
@@ -835,9 +757,6 @@ forms-fill-logins-and-passwords =
 forms-saved-logins =
     .label = Tallennetut kirjautumistiedot…
     .accesskey = k
-forms-master-pw-use =
-    .label = Käytä pääsalasanaa
-    .accesskey = K
 forms-primary-pw-use =
     .label = Käytä pääsalasanaa
     .accesskey = K
@@ -848,7 +767,6 @@ forms-primary-pw-learn-more-link = Lue lisää
 forms-master-pw-change =
     .label = Muuta pääsalasanaa…
     .accesskey = M
-forms-master-pw-fips-title = Olet FIPS-tilassa ja se vaatii pääsalasanan.
 forms-primary-pw-change =
     .label = Vaihda pääsalasana…
     .accesskey = V
@@ -865,13 +783,6 @@ forms-windows-sso-desc = Hallinnoi tilejä laitteen asetuksissa
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = Luo pääsalasana kirjoittamalla Windows-kirjautumistiedot. Tämä auttaa suojaamaan tilejäsi.
-# This message can be seen by trying to add a Master Password.
-# The macOS strings are preceded by the operating system with "Firefox is trying to "
-# and includes subtitle of "Enter password for the user "xxx" to allow this." These
-# notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = asettaa pääsalasanan
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Luo pääsalasana kirjoittamalla Windows-kirjautumistietosi. Tämä auttaa suojaamaan tilejäsi.
 # This message can be seen by trying to add a Primary Password.
@@ -967,9 +878,6 @@ sitedata-clear =
 sitedata-settings =
     .label = Hallitse tietoja…
     .accesskey = H
-sitedata-cookies-permissions =
-    .label = Hallitse oikeuksia…
-    .accesskey = o
 sitedata-cookies-exceptions =
     .label = Hallitse poikkeuksia…
     .accesskey = p
@@ -1126,10 +1034,6 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = Poikkeukset…
     .accesskey = P
-permissions-a11y-privacy-checkbox =
-    .label = Estä saavutettavuuspalveluja käyttämästä selaintasi
-    .accesskey = v
-permissions-a11y-privacy-link = Lue lisää
 
 ## Privacy Section - Data Collection
 
@@ -1151,10 +1055,6 @@ addon-recommendations-link = Lue lisää
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Tietojen kerääminen ei ole käytössä tässä koostamiskokoonpanossa
-collection-backlogged-crash-reports =
-    .label = Salli, että { -brand-short-name } lähettää lähettämättömät kaatumisilmoitukset puolestasi
-    .accesskey = e
-collection-backlogged-crash-reports-link = Lue lisää
 collection-backlogged-crash-reports-with-link = Salli, että { -brand-short-name } lähettää lähettämättömät kaatumisraportit puolestasi <a data-l10n-name="crash-reports-link">Lue lisää</a>
     .accesskey = S
 
@@ -1179,13 +1079,6 @@ security-block-uncommon-software =
 ## Privacy Section - Certificates
 
 certs-header = Varmenteet
-certs-personal-label = Sivuston pyytäessä varmennettasi
-certs-select-auto-option =
-    .label = valitse sellainen automaattisesti
-    .accesskey = v
-certs-select-ask-option =
-    .label = kysy joka kerta
-    .accesskey = k
 certs-enable-ocsp =
     .label = Vahvista varmenteiden kelpoisuus OCSP-vastaajapalvelimilta
     .accesskey = C
@@ -1195,29 +1088,6 @@ certs-view =
 certs-devices =
     .label = Turvallisuuslaitteet…
     .accesskey = T
-space-alert-learn-more-button =
-    .label = Lue lisää
-    .accesskey = L
-space-alert-over-5gb-pref-button =
-    .label =
-        { PLATFORM() ->
-            [windows] Avaa asetukset
-           *[other] Avaa asetukset
-        }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] A
-           *[other] A
-        }
-space-alert-over-5gb-message =
-    { PLATFORM() ->
-        [windows] { -brand-short-name(case: "ablative") } loppuu kohta levytila. Sivustojen sisällöt eivät ehkä näy oikein. Voit tyhjentää sivustotiedot avaamalla Asetukset > Tietosuoja ja turvallisuus > Evästeet ja sivustotiedot.
-       *[other] { -brand-short-name(case: "ablative") } loppuu kohta levytila. Sivustojen sisällöt eivät ehkä näy oikein. Voit tyhjentää sivustotiedot avaamalla Asetukset > Tietosuoja ja turvallisuus > Evästeet ja sivustotiedot.
-    }
-space-alert-under-5gb-ok-button =
-    .label = Selvä
-    .accesskey = S
-space-alert-under-5gb-message = { -brand-short-name(case: "ablative") } loppuu kohta levytila. Sivustojen sisällöt eivät ehkä näy oikein. Voit lukea levyn käytön optimoimisesta selaamisen sujuvoittamiseksi painamalla ”Lue lisää”.
 space-alert-over-5gb-settings-button =
     .label = Avaa asetukset
     .accesskey = A

@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Փակել կողավահանակը
+
+sidebar-close-button =
+    .tooltiptext = Փակել կողավահանակը

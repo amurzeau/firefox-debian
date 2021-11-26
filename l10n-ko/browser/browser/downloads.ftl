@@ -18,6 +18,11 @@ downloads-panel =
 # in-progress and blocked downloads.
 downloads-panel-list =
     .style = width: 70ch
+# The style attribute has the width of the Downloads Panel expressed using
+# a CSS unit. The longest labels that should fit are usually those of
+# in-progress and blocked downloads.
+downloads-panel-items =
+    .style = width: 35em
 downloads-cmd-pause =
     .label = 일시 중지
     .accesskey = P
@@ -76,7 +81,7 @@ downloads-cmd-remove-from-history =
     .label = 기록에서 삭제
     .accesskey = e
 downloads-cmd-clear-list =
-    .label = 미리보기 패널 지우기
+    .label = 미리보기 패널 정리
     .accesskey = a
 downloads-cmd-clear-downloads =
     .label = 다운로드 정리

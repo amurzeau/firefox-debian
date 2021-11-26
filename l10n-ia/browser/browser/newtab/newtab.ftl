@@ -8,9 +8,6 @@
 newtab-page-title = Nove scheda
 newtab-settings-button =
     .title = Personalisar tu pagina de nove scheda
-newtab-personalize-button-label = Personalisar
-    .title = Personalisar nove scheda
-    .aria-label = Personalisar nove scheda
 newtab-personalize-icon-label =
     .title = Personalisar nove scheda
     .aria-label = Personalisar nove scheda
@@ -23,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Cercar
     .aria-label = Cercar
-newtab-search-box-search-the-web-text = Cercar in le Web
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = Cercar con { $engine } o inserer un adresse
@@ -169,6 +165,11 @@ newtab-label-sponsored = { $sponsorOrSource } · Sponsorisate
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = Sponsorisate per { $sponsor }
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } min
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -221,10 +222,25 @@ newtab-discovery-empty-section-topstories-timed-out = Ups! Nos non ha potite car
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Subjectos popular:
+newtab-pocket-new-topics-title = Vole tu ancora plus historias? Vider iste popular argumentos de { -pocket-brand-name }
 newtab-pocket-more-recommendations = Altere recommendationes
 newtab-pocket-learn-more = Saper plus
 newtab-pocket-cta-button = Obtener { -pocket-brand-name }
 newtab-pocket-cta-text = Salva le articulos que tu ama in { -pocket-brand-name }, e alimenta tu mente con lecturas fascinante.
+newtab-pocket-pocket-firefox-family = { -pocket-brand-name } es parte del familia de { -brand-product-name }
+# A save to Pocket button that shows over the card thumbnail on hover.
+newtab-pocket-save-to-pocket = Salvar in { -pocket-brand-name }
+newtab-pocket-saved-to-pocket = Salvate in { -pocket-brand-name }
+# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
+newtab-pocket-load-more-stories-button = Cargar altere historias
+
+## Pocket Final Card Section.
+## This is for the final card in the Pocket grid.
+
+newtab-pocket-last-card-title = Vos tote es attrappate!
+newtab-pocket-last-card-desc = Controla de novo plus tarde pro altero.
+newtab-pocket-last-card-image =
+    .alt = Vos tote es attrappate
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.
@@ -248,10 +264,4 @@ newtab-custom-pocket-sponsored = Articulos sponsorisate
 newtab-custom-recent-title = Activitate recente
 newtab-custom-recent-subtitle = Un selection de sitos e contento recente
 newtab-custom-close-button = Clauder
-# For the "Snippets" feature traditionally on about:home.
-# Alternative translation options: "Small Note" or something that
-# expresses the idea of "a small message, shortened from something else,
-# and non-essential but also not entirely trivial and useless.
-newtab-custom-snippets-title = Breve novas
-newtab-custom-snippets-subtitle = Consilios e notitias de { -vendor-short-name } e { -brand-product-name }
 newtab-custom-settings = Gerer altere parametros

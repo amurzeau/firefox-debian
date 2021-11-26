@@ -113,3 +113,25 @@ perftools-onboarding-message = <b>Ipyahu</b>: { -profiler-brand-name } ko’ág�
 perftools-onboarding-reenable-old-panel = (Ndahetái aravo’ípe, ikatu eike tembiapokue ra’ãngarupa ypyguápe <a>{ options-context-advanced-settings } rupive</a>)
 perftools-onboarding-close-button =
     .aria-label = Emboty pe ñe’ẽmondo jeikegua
+
+## Profiler presets
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# The same labels and descriptions are also defined in appmenu.ftl.
+
+perftools-presets-web-developer-label = Ñanduti Mboguatahára
+perftools-presets-web-developer-description = Ñemboheko iporãva emopotĩ hag̃ua ñanduti tembipuru’i, nahenyhẽrasáiva.
+perftools-presets-firefox-platform-label = Firefox Pyendavusu
+perftools-presets-firefox-platform-description = Ñemboheko ypygua iporãva emopotĩ hag̃ua Firefox pyendavusu.
+perftools-presets-firefox-front-end-label = Firefox Rechaha
+perftools-presets-firefox-front-end-description = Ñemboheko iporãva emopotĩ hag̃ua Firefox jehechaha.
+perftools-presets-firefox-graphics-label = Firefox ra’ãngaryrugua
+perftools-presets-firefox-graphics-description = Ñemboheko ypygua iporãva ehapykuereka hag̃ua Firefox ra’ãngarenda.
+perftools-presets-media-label = Momaranduha
+perftools-presets-media-description = Ñemboheko ypygua eikuaa hag̃ua mba’epu ha ta’ãngamýi apañuãi.
+perftools-presets-custom-label = Mboavapyre
+
+##
+

@@ -11,17 +11,6 @@ navbar-tooltip-instruction =
 
 ## Back
 
-main-context-menu-back =
-    .tooltiptext = Алдыңғы бетке қайту
-    .aria-label = Артқа
-    .accesskey = а
-
-navbar-tooltip-back =
-    .value = { main-context-menu-back.tooltiptext }
-
-toolbar-button-back =
-    .label = { main-context-menu-back.aria-label }
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the Go Back command.
 main-context-menu-back-2 =
@@ -41,17 +30,6 @@ toolbar-button-back-2 =
     .label = { main-context-menu-back-2.aria-label }
 
 ## Forward
-
-main-context-menu-forward =
-    .tooltiptext = Келесі бетке өту
-    .aria-label = Алға
-    .accesskey = л
-
-navbar-tooltip-forward =
-    .value = { main-context-menu-forward.tooltiptext }
-
-toolbar-button-forward =
-    .label = { main-context-menu-forward.aria-label }
 
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the Go Forward command.
@@ -116,9 +94,6 @@ main-context-menu-page-save =
     .label = Парақты қалайша сақтау…
     .accesskey = т
 
-toolbar-button-page-save =
-    .label = { main-context-menu-page-save.label }
-
 ## Simple menu items
 
 main-context-menu-bookmark-add =
@@ -179,10 +154,6 @@ main-context-menu-open-link-new-private-window =
     .label = Сілтемені жаңа жекелік терезесінде ашу
     .accesskey = к
 
-main-context-menu-bookmark-this-link =
-    .label = Осы сілтемені бетбелгілерге қосу
-    .accesskey = л
-
 main-context-menu-bookmark-link =
     .label = Сілтемені бетбелгілерге қосу
     .accesskey = б
@@ -207,10 +178,6 @@ main-context-menu-save-link-to-pocket =
 main-context-menu-copy-email =
     .label = Электронды пошта адресін көшіріп алу
     .accesskey = п
-
-main-context-menu-copy-link =
-    .label = Сілтемені көшіру
-    .accesskey = ш
 
 main-context-menu-copy-link-simple =
     .label = Сілтемені көшіріп алу
@@ -239,32 +206,6 @@ main-context-menu-media-mute =
 main-context-menu-media-unmute =
     .label = Даусын қосу
     .accesskey = Д
-
-main-context-menu-media-play-speed =
-    .label = Ойнату жылдамдығы
-    .accesskey = й
-
-main-context-menu-media-play-speed-slow =
-    .label = Баяу (0.5×)
-    .accesskey = Б
-
-main-context-menu-media-play-speed-normal =
-    .label = Қалыпты
-    .accesskey = л
-
-main-context-menu-media-play-speed-fast =
-    .label = Жылдам (1.25×)
-    .accesskey = ы
-
-main-context-menu-media-play-speed-faster =
-    .label = Жылдамдау (1.5×)
-    .accesskey = а
-
-# "Ludicrous" is a reference to the movie "Space Balls" and is meant
-# to say that this speed is very fast.
-main-context-menu-media-play-speed-fastest =
-    .label = Өте жылдам (2×)
-    .accesskey = л
 
 main-context-menu-media-play-speed-2 =
     .label = Жылдамдық
@@ -312,12 +253,6 @@ main-context-menu-media-video-leave-fullscreen =
 
 # This is used when right-clicking on a video in the
 # content area when the Picture-in-Picture feature is enabled.
-main-context-menu-media-pip =
-    .label = Суреттегі сурет
-    .accesskey = у
-
-# This is used when right-clicking on a video in the
-# content area when the Picture-in-Picture feature is enabled.
 main-context-menu-media-watch-pip =
     .label = Суреттегі сурет режимінде қарау
     .accesskey = у
@@ -325,14 +260,6 @@ main-context-menu-media-watch-pip =
 main-context-menu-image-reload =
     .label = Суретті қайта жүктеу
     .accesskey = С
-
-main-context-menu-image-view =
-    .label = Суретті қарау
-    .accesskey = а
-
-main-context-menu-video-view =
-    .label = Видео қарау
-    .accesskey = В
 
 main-context-menu-image-view-new-tab =
     .label = Суретті жаңа бетте ашу
@@ -345,18 +272,6 @@ main-context-menu-video-view-new-tab =
 main-context-menu-image-copy =
     .label = Суретті көшіру
     .accesskey = р
-
-main-context-menu-image-copy-location =
-    .label = Суреттің сілтемесін көшіру
-    .accesskey = С
-
-main-context-menu-video-copy-location =
-    .label = Видеоның сілтемесін көшіру
-    .accesskey = В
-
-main-context-menu-audio-copy-location =
-    .label = Аудионың сілтемесін көшіру
-    .accesskey = А
 
 main-context-menu-image-copy-link =
     .label = Сурет сілтемесін көшіру
@@ -378,10 +293,6 @@ main-context-menu-image-email =
     .label = Суретті эл. поштамен жіберу…
     .accesskey = у
 
-main-context-menu-image-set-as-background =
-    .label = Жұмыс үстелінің суреті болып орналастыру…
-    .accesskey = с
-
 main-context-menu-image-set-image-as-background =
     .label = Суретті жұмыс үстелінің тұсқағазы ретінде орнату…
     .accesskey = С
@@ -401,10 +312,6 @@ main-context-menu-video-save-as =
 main-context-menu-audio-save-as =
     .label = Аудионы қалайша сақтау…
     .accesskey = А
-
-main-context-menu-video-image-save-as =
-    .label = Скриншотты қалайша сақтау…
-    .accesskey = С
 
 main-context-menu-video-take-snapshot =
     .label = Снапшотты түсіру…
@@ -433,14 +340,6 @@ main-context-menu-save-to-pocket =
 main-context-menu-send-to-device =
     .label = Парақты құрылғыға жіберу
     .accesskey = ы
-
-main-context-menu-view-background-image =
-    .label = Фон суретін қарау
-    .accesskey = н
-
-main-context-menu-generate-new-password =
-    .label = Генерацияланған парольді қолдану…
-    .accesskey = Г
 
 ## The access keys for "Use Saved Login" and "Use Saved Password"
 ## should be the same if possible; the two context menu items
@@ -532,10 +431,6 @@ main-context-menu-view-page-source =
     .label = Парақтың бастапқы кодын қарау
     .accesskey = у
 
-main-context-menu-view-page-info =
-    .label = Парақ туралы ақпарат
-    .accesskey = П
-
 main-context-menu-bidi-switch-text =
     .label = Парақтағы мәтін бағытын ауыстыру
     .accesskey = у
@@ -543,10 +438,6 @@ main-context-menu-bidi-switch-text =
 main-context-menu-bidi-switch-page =
     .label = Парақтағы мәтін бағытын ауыстыру
     .accesskey = а
-
-main-context-menu-inspect-element =
-    .label = Элементті бақылау
-    .accesskey = Э
 
 main-context-menu-inspect =
     .label = Бақылау
@@ -558,3 +449,9 @@ main-context-menu-inspect-a11y-properties =
 main-context-menu-eme-learn-more =
     .label = DRM туралы көбірек білу…
     .accesskey = D
+
+# Variables
+#   $containerName (String): The name of the current container
+main-context-menu-open-link-in-container-tab =
+    .label = Сілтемені жаңа { $containerName } бетінде ашу
+    .accesskey = т

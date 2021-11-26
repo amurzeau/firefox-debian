@@ -52,3 +52,5 @@ text-action-spell-add-dictionaries =
 text-action-spell-dictionaries =
     .label = ენები
     .accesskey = ე
+text-action-search-text-box-clear =
+    .title = გასუფთავება

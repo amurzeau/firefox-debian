@@ -9,11 +9,6 @@ crashes-id = 보고 ID
 crashes-send-date = 전송됨
 crashes-all-reports = 모든 충돌 보고서
 crashes-no-config = 이 애플리케이션은 충돌 보고서를 표시하도록 설정되어 있지 않습니다.
-extensions-title = 확장 기능
-extensions-name = 이름
-extensions-enabled = 사용
-extensions-version = 버전
-extensions-id = ID
 support-addons-title = 부가 기능
 support-addons-name = 이름
 support-addons-type = 유형
@@ -130,8 +125,6 @@ sandbox-sys-call-tid = TID
 sandbox-sys-call-proc-type = 프로세스 타입
 sandbox-sys-call-number = 시스템 콜
 sandbox-sys-call-args = 인자
-safe-mode-title = 안전 모드 사용해 보기
-restart-in-safe-mode-label = 부가 기능을 끄고 다시 시작…
 troubleshoot-mode-title = 문제 진단
 restart-in-troubleshoot-mode-label = 문제 해결 모드…
 clear-startup-cache-title = 시작 캐시 지워 보기
@@ -189,36 +182,6 @@ remote-debugging-url = URL
 
 ##
 
-support-third-party-modules-title = 제3자 모듈
-support-third-party-modules-module = 모듈 파일
-support-third-party-modules-version = 파일 버전
-support-third-party-modules-vendor = 공급업체 정보
-support-third-party-modules-occurrence = 발생 빈도
-support-third-party-modules-process = 프로세스 유형 및 ID
-support-third-party-modules-thread = 스레드
-support-third-party-modules-base = Imagebase 주소
-support-third-party-modules-uptime = 프로세스 작동 시간 (ms)
-support-third-party-modules-duration = 로드 시간 (ms)
-support-third-party-modules-status = 상태
-support-third-party-modules-status-loaded = 로드됨
-support-third-party-modules-status-blocked = 차단됨
-support-third-party-modules-status-redirected = 리디렉션됨
-support-third-party-modules-empty = 제3자 모듈이 로드되지 않았습니다.
-support-third-party-modules-no-value = (값 없음)
-support-third-party-modules-button-open =
-    .title = 파일 위치 열기…
-support-third-party-modules-expand =
-    .title = 자세한 정보 표시
-support-third-party-modules-collapse =
-    .title = 자세한 정보 접기
-support-third-party-modules-unsigned-icon =
-    .title = 이 모듈은 서명되지 않음
-support-third-party-modules-folder-icon =
-    .title = 파일 위치 열기…
-support-third-party-modules-down-icon =
-    .title = 자세한 정보 표시
-support-third-party-modules-up-icon =
-    .title = 자세한 정보 접기
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days = 지난 { $days }일간의 충돌 보고서
@@ -285,10 +248,6 @@ webgl2-renderer = WebGL2 드라이버 랜더러
 webgl2-version = WebGL 2 드라이버 버전
 webgl2-driver-extensions = WebGL 2 드라이버 확장 기능
 webgl2-extensions = WebGL 2 확장 기능
-blocklisted-bug = 알려진 문제로 인해 차단됨
-# Variables
-# $bugNumber (string) - String of bug number from Bugzilla
-bug-link = bug { $bugNumber }
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
 support-blocklisted-bug = 알려진 문제로 인해 차단됨: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
@@ -296,14 +255,12 @@ support-blocklisted-bug = 알려진 문제로 인해 차단됨: <a data-l10n-nam
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = 차단됨; 실패 코드 { $failureCode }
 d3d11layers-crash-guard = D3D11 컴포지터
-d3d11video-crash-guard = D3D11 동영상 디코더
-d3d9video-crash-guard = D3D9 동영상 디코더
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX 비디오 디코더
 reset-on-next-restart = 다음에 다시 시작할 때 초기화
 gpu-process-kill-button = GPU 프로세스 종료
 gpu-device-reset = 기기 초기화
-gpu-device-reset-button = 기기 초기화 시작
+gpu-device-reset-button = 기기 초기화 실행
 uses-tiling = 타일링 사용
 content-uses-tiling = 타일링(콘텐츠) 사용
 off-main-thread-paint-enabled = 오프 메인 스레드 페인팅 활성화됨
@@ -337,14 +294,6 @@ launcher-process-status-unknown = 알 수 없는 상태
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
 multi-process-windows = { $remoteWindows }/{ $totalWindows }
-multi-process-status-0 = 사용자에 의해 활성화됨
-multi-process-status-1 = 기본값에 의해 활성화됨
-multi-process-status-2 = 비활성화됨
-multi-process-status-4 = 접근성 도구에 의해 비활성화됨
-multi-process-status-6 = 지원되지 않는 텍스트 입력에 의해 비활성화됨
-multi-process-status-7 = 부가 기능에 의해 비활성화됨
-multi-process-status-8 = 강제로 비활성화됨
-multi-process-status-unknown = 알 수 없는 상태
 # Variables
 # $fissionWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows

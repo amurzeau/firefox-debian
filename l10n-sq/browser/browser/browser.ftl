@@ -156,12 +156,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Shtoje te Shtyllë Adresash
 page-action-manage-extension =
     .label = Administroni Zgjerime…
-page-action-remove-from-urlbar =
-    .label = Hiqe nga Shtyllë Adresash
 page-action-remove-extension =
     .label = Hiqe Zgjerimin
 
@@ -179,10 +175,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Këtë herë kërko me:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Ndryshoni Rregullime Kërkimi
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Ndryshoni rregullime kërkimi
 search-one-offs-context-open-new-tab =
@@ -246,8 +238,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Shfaqe përpunuesin kur bëhen ruajtje
     .accesskey = S
-bookmark-panel-done-button =
-    .label = U bë
 bookmark-panel-save-button =
     .label = Ruaje
 # Width of the bookmark panel.
@@ -277,8 +267,6 @@ identity-passive-loaded = Pjesë të kësaj faqeje (fjala vjen, figura) s'janë 
 identity-active-loaded = E keni çaktivizuar mbrojtjen për këtë faqe.
 identity-weak-encryption = Kjo faqe përdor fshehtëzim të dobët.
 identity-insecure-login-forms = Kredencialet e hyrjeve të dhëna në këtë faqe mund të komprometohen.
-identity-permissions =
-    .value = Leje
 identity-https-only-connection-upgraded = (u përmirësua në HTTPS)
 identity-https-only-label = Mënyra Vetëm-HTTPS
 identity-https-only-dropdown-on =
@@ -294,7 +282,6 @@ identity-permissions-storage-access-header = Cookies nga sajti në sajt
 identity-permissions-storage-access-hint = Këto palë mund të përdorin “cross-site cookies” dhe të dhëna sajtesh, ndërkohë që jeni në këtë sajt.
 identity-permissions-storage-access-learn-more = Mësoni më tepër
 identity-permissions-reload-hint = Mund t'ju duhet të ringarkoni faqen që të hyjnë në fuqi ndryshimet.
-identity-permissions-empty = S'i keni dhënë këtij sajti ndonjë leje speciale.
 identity-clear-site-data =
     .label = Spastroni Cookie-t dhe të Dhëna Sajti…
 identity-connection-not-secure-security-view = S'jeni lidhur në mënyrë të siguruar me këtë sajt.
@@ -376,12 +363,6 @@ bookmarks-toolbar-empty-message = Për përdorim të shpejtë, vendosini faqeroj
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Kamerë për ndarje me të tjerët:
-    .accesskey = K
-popup-select-microphone =
-    .value = Mikrofon për ndarje me të tjerët:
-    .accesskey = M
 popup-select-camera-device =
     .value = Kamerë:
     .accesskey = K
@@ -395,14 +376,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Altoparlantë
 popup-all-windows-shared = Do të ndahen me të tjerët krejt dritaret e dukshme në ekranin tuaj.
-popup-screen-sharing-not-now =
-    .label = Jo Tani
-    .accesskey = J
-popup-screen-sharing-never =
-    .label = Mos e Lejo Kurrë
-    .accesskey = K
-popup-silence-notifications-checkbox = Çaktivizo njoftime nga { -brand-short-name }-i, ndërkohë që bëhet ndarje me të tjerë
-popup-silence-notifications-checkbox-warning = { -brand-short-name }-i s’do të shfaqë njoftime, kur jeni duke ndarë gjëra me të tjerë.
 popup-screen-sharing-block =
     .label = Bllokoje
     .accesskey = B
@@ -426,14 +399,10 @@ enable-devtools-popup-description = Që të përdorni shkurtoren F12, së pari h
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Bëni kërkim ose jepni adresë
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Bëni kërkim ose jepni adresë
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Fshiheni Anështyllën e Faqerojtësve
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -482,8 +451,6 @@ urlbar-go-button =
     .tooltiptext = Shkoni te adresa e dhënë te Shtylla e Vendndodhjeve
 urlbar-page-action-button =
     .tooltiptext = Veprime faqeje
-urlbar-pocket-button =
-    .tooltiptext = Ruajeni te { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -674,6 +641,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Përshtateni Panelin…
     .accesskey = P
+toolbar-button-email-link =
+    .label = Dërgojeni Lidhjen me Email
+    .tooltiptext = Dërgoni me email një lidhje për te kjo faqe
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Ruaje Faqen
+    .tooltiptext = Ruajeni këtë faqe ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Hap Kartelë
+    .tooltiptext = Hapni kartelë ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Skeda të Njëkohësuara
+    .tooltiptext = Shfaqni skeda nga pajisje të tjera
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Dritare e Re Private
+    .tooltiptext = Hapni një dritare të re Shfletimi Privat ({ $shortcut })
 
 ## EME notification panel
 
@@ -724,3 +712,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Fshih Buton Picture-in-Picture
     .accesskey = F
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Lëvizje
+navbar-downloads =
+    .label = Shkarkime
+navbar-overflow =
+    .tooltiptext = Më tepër mjete…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Shtype
+    .tooltiptext = Shtypeni këtë faqe… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Shtype
+    .tooltiptext = Shtypeni këtë faqe
+navbar-home =
+    .label = Kreu
+    .tooltiptext = Faqe Hyrëse e { -brand-short-name }-it
+navbar-library =
+    .label = Arkiv
+    .tooltiptext = Shihni historikun, faqerojtësit e ruajtur, etj
+navbar-search =
+    .title = Kërkoni
+navbar-accessibility-indicator =
+    .tooltiptext = Me Veçori Përdorshmërie të Aktivizuara
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Skedash shfletuesi
+tabs-toolbar-new-tab =
+    .label = Skedë e Re
+tabs-toolbar-list-all-tabs =
+    .label = Paraqiti krejt skedat
+    .tooltiptext = Paraqiti krejt skedat

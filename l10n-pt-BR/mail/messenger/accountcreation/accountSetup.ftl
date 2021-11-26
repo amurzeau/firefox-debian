@@ -39,6 +39,10 @@ account-provisioner-button = Obter um novo endereço de email
     .accesskey = O
 account-setup-password-toggle =
     .title = Exibir/ocultar senha
+account-setup-password-toggle-show =
+    .title = Exibir senha
+account-setup-password-toggle-hide =
+    .title = Ocultar senha
 account-setup-remember-password = Memorizar senha
     .accesskey = M
 account-setup-exchange-label = Sua conta
@@ -151,6 +155,7 @@ account-setup-credentials-incomplete = Falha na autenticação. As credenciais i
 account-setup-credentials-wrong = Falha na autenticação. Verifique o nome de usuário e a senha
 account-setup-find-settings-failed = O { -brand-short-name } não conseguiu encontrar as configurações de sua conta de email
 account-setup-exchange-config-unverifiable = A configuração não pôde ser verificada. Se o nome de usuário e a senha estão corretos, é provável que o administrador do servidor tenha desativado a configuração selecionada em sua conta. Experimente selecionando outro protocolo.
+account-setup-provisioner-error = Ocorreu um erro ao configurar sua nova conta no { -brand-short-name }. Tente configurar a conta manualmente usando suas credenciais.
 
 ## Manual configuration area
 
@@ -206,6 +211,17 @@ insecure-dialog-confirm-button = Confirmar
 exchange-dialog-question = O { -brand-short-name } encontrou informações de configuração da sua conta em { $domain }. Quer continuar e enviar suas credenciais?
 exchange-dialog-confirm-button = Entrar
 exchange-dialog-cancel-button = Cancelar
+
+## Dismiss account creation dialog
+
+exit-dialog-title = Nenhuma conta de email configurada
+exit-dialog-description = Tem certeza que quer cancelar o processo de configuração? O { -brand-short-name } ainda pode ser usado sem nenhuma conta de email, mas muitos recursos não estarão disponíveis.
+account-setup-no-account-checkbox = Usar o { -brand-short-name } sem contas de email
+    .accesskey = U
+exit-dialog-cancel-button = Continuar a configuração
+    .accesskey = C
+exit-dialog-confirm-button = Sair da configuração
+    .accesskey = S
 
 ## Alert dialogs
 

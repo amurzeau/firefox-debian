@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = اضافه کردن به نوار آدرس
 page-action-manage-extension =
     .label = مدیریت افزونه…
-page-action-remove-from-urlbar =
-    .label = حذف از نوار آدرس
 page-action-remove-extension =
     .label = حذف افزونه
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = جست‌وجو با:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = تغییر تنظیمات جستجو
 search-one-offs-change-settings-compact-button =
     .tooltiptext = تغییر تنظیمات جستجو
 search-one-offs-context-open-new-tab =
@@ -250,8 +242,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = نمایش ویرایش‌گر هنگام ذخیره‌سازی
     .accesskey = S
-bookmark-panel-done-button =
-    .label = انجام شد
 bookmark-panel-save-button =
     .label = ذخیره
 # Width of the bookmark panel.
@@ -281,8 +271,6 @@ identity-passive-loaded = قسمت‌هایی از این صفحه امن نیس
 identity-active-loaded = شما محافظت را در این صفحه غیرفعال کرده‌اید.
 identity-weak-encryption = این صفحه از کدگذاری ضعیفی استفاده می‌کند.
 identity-insecure-login-forms = اطلاعات ورودی که در این صفحه وارد می‌کنید می‌توانند فاش شوند.
-identity-permissions =
-    .value = مجوزها
 identity-https-only-connection-upgraded = (ارتقا یافته به HTTPS)
 identity-https-only-label = حالت فقط HTTPS
 identity-https-only-dropdown-on =
@@ -298,7 +286,6 @@ identity-permissions-storage-access-header = کوکی‌های بین‌پایگ
 identity-permissions-storage-access-hint = این سازمان‌ها می‌توانند از کوکی‌های بین‌پایگاهی و داده‌های سایت‌ها در حالی که شما در این سایت هستید استفاده کنند.
 identity-permissions-storage-access-learn-more = اطلاعات بیشتر
 identity-permissions-reload-hint = ممکن است لازم باشد که صفحه را برای اعمال تغییرات دوباره بارگیری کنید.
-identity-permissions-empty = شما به این سایت هیچ دسترسی خاصی نداده‌اید.
 identity-clear-site-data =
     .label = حذف کوکی‌ها و اطلاعات پایگاه‌ها…
 identity-connection-not-secure-security-view = شما بطور امن به این سایت متصل نشده‌اید.
@@ -380,12 +367,6 @@ bookmarks-toolbar-empty-message = برای دسترسی سریع‌تر، نشا
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = دوربین جهت به‌اشتراک‌گذاری:
-    .accesskey = د
-popup-select-microphone =
-    .value = میکروفون جهت به‌اشتراک‌گذاری:
-    .accesskey = م
 popup-select-camera-device =
     .value = دوربین:
     .accesskey = C
@@ -399,14 +380,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = بلندگوها
 popup-all-windows-shared = همه‌ی پنجره‌هایی که مشاهده می‌کنید به اشتراک گذاشته می‌شود.
-popup-screen-sharing-not-now =
-    .label = اکنون نه (w)
-    .accesskey = w
-popup-screen-sharing-never =
-    .label = هرگز اجازه نده (N)
-    .accesskey = N
-popup-silence-notifications-checkbox = از کار انداختن آگاهی‌ها از { -brand-short-name } هنگام هم‌رسانی
-popup-silence-notifications-checkbox-warning = { -brand-short-name } هنگام هم‌رسانی، اعلان‌ها را نمایش نمی‌دهد.
 popup-screen-sharing-block =
     .label = مسدود کردن
     .accesskey = B
@@ -430,14 +403,10 @@ enable-devtools-popup-description = برای استفاده از میانبر F1
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = متنی برای جست‌وجو یا یک آدرس وارد کنید
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = متنی برای جست‌وجو یا یک آدرس وارد کنید
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = مرورگر تحت کنترل از راه دور است
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -486,8 +455,6 @@ urlbar-go-button =
     .tooltiptext = رفتن به نشانی موجود در نوار مکان
 urlbar-page-action-button =
     .tooltiptext = کنش‌های صفحه
-urlbar-pocket-button =
-    .tooltiptext = ذخیره‌سازی در { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -692,6 +659,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = سفارشی‌سازی نوار ابزار…
     .accesskey = س
+toolbar-button-email-link =
+    .label = لینک پست‌الکترونیکی
+    .tooltiptext = ایمیل کردن یک لینک به این صفحه
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = ذخیره صفحه
+    .tooltiptext = ذخیره این صفحه( { $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = باز کردن پرونده
+    .tooltiptext = باز کردن یک فایل ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = زبانه‌های همگام شده
+    .tooltiptext = نشان‌دادن زبانه‌ها از دستگاه‌های دیگر
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = پنجره ناشناس جدید
+    .tooltiptext = باز کردن پنجره جدید مرور ناشناس ({ $shortcut })
 
 ## EME notification panel
 
@@ -745,3 +733,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = مخفی کردن تصویر-در-تصویر
     .accesskey = H
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = ناوبری
+navbar-downloads =
+    .label = بارگیری‌ها
+navbar-overflow =
+    .tooltiptext = ابزارهای بیشتر…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = چاپ
+    .tooltiptext = چاپ کردن این صفحه({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = چاپ
+    .tooltiptext = چاپ کردن این صفحه
+navbar-home =
+    .label = خانه
+    .tooltiptext = صفحهٔ خانگی { -brand-short-name }
+navbar-library =
+    .label = مخزن
+    .tooltiptext = نمایش تاریخچه، نشانک‌های ذخیره شده و بیشتر
+navbar-search =
+    .title = جست‌وجو
+navbar-accessibility-indicator =
+    .tooltiptext = ویژیگی دسترسی پذیری فعال شده است
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = زبانه‌های مرورگر
+tabs-toolbar-new-tab =
+    .label = زبانه جدید
+tabs-toolbar-list-all-tabs =
+    .label = فهرست کردن همهٔ زبانه‌ها
+    .tooltiptext = فهرست کردن همهٔ زبانه‌ها

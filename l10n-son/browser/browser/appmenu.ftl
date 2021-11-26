@@ -5,17 +5,20 @@
 
 ## App Menu
 
-appmenuitem-customize-mode =
-    .label = Hanse war boŋ se…
-
-## Zoom Controls
-
 appmenuitem-new-tab =
     .label = Kanji taaga
 appmenuitem-new-window =
     .label = Zanfun taaga
 appmenuitem-new-private-window =
     .label = Sutura zanfun taaga
+appmenuitem-history =
+    .label = Taariki
+appmenuitem-print =
+    .label = Kar…
+appmenuitem-zoom =
+    .value = Bebbeerandi
+appmenuitem-help =
+    .label = Faaba
 
 ## Zoom and Fullscreen Controls
 
@@ -24,9 +27,13 @@ appmenuitem-fullscreen =
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
-fxa-toolbar-sync-now =
-    .label = Sync sohõ
-
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = Kanji kul ši feeri
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = Kanji hangandiyan tunandi ka dii kanjey maašeede jinay taney ga.
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = Ga boona ka dii war jinay taney kanjey ne wala?
 appmenuitem-save-page =
     .label = Moɲoo gaabu sanda…
 

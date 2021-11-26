@@ -4,3 +4,6 @@
 
 open-preferences-sidebar-button = { -brand-short-name } postavke
 open-addons-sidebar-button = Dodaci i teme
+account-action-add-newsgroup-account =
+    .label = Dodaj račun interesnih grupa…
+    .accesskey = n

@@ -8,9 +8,6 @@
 newtab-page-title = Yeni Sekme
 newtab-settings-button =
     .title = Yeni Sekme sayfanızı özelleştirin
-newtab-personalize-button-label = Kişiselleştir
-    .title = Yeni sekmeyi kişiselleştir
-    .aria-label = Yeni sekmeyi kişiselleştir
 newtab-personalize-icon-label =
     .title = Yeni sekmeyi kişiselleştir
     .aria-label = Yeni sekmeyi kişiselleştir
@@ -23,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Ara
     .aria-label = Ara
-newtab-search-box-search-the-web-text = Web’de ara
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = { $engine } ile arama yapın veya adres yazın
@@ -169,6 +165,11 @@ newtab-label-sponsored = { $sponsorOrSource } · Sponsorlu
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = { $sponsor } sponsorluğunda
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } dk
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -221,10 +222,25 @@ newtab-discovery-empty-section-topstories-timed-out = Hata! Bu bölüm tam olara
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Popüler konular:
+newtab-pocket-new-topics-title = Daha fazla içeriğe ne dersiniz? { -pocket-brand-name }’taki popüler konulara göz atın
 newtab-pocket-more-recommendations = Daha fazla öneri
 newtab-pocket-learn-more = Daha fazla bilgi al
 newtab-pocket-cta-button = { -pocket-brand-name }’ı edinin
 newtab-pocket-cta-text = Sevdiğiniz yazıları { -pocket-brand-name }’a kaydedin, aklınız okumaya değer şeylerle doldurun.
+newtab-pocket-pocket-firefox-family = { -pocket-brand-name }, { -brand-product-name } ailesinin bir parçasıdır
+# A save to Pocket button that shows over the card thumbnail on hover.
+newtab-pocket-save-to-pocket = { -pocket-brand-name }’a kaydet
+newtab-pocket-saved-to-pocket = { -pocket-brand-name }’a kaydedildi
+# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
+newtab-pocket-load-more-stories-button = Daha fazla içerik yükle
+
+## Pocket Final Card Section.
+## This is for the final card in the Pocket grid.
+
+newtab-pocket-last-card-title = Hepsini bitirdiniz!
+newtab-pocket-last-card-desc = Daha fazlası için daha sonra yine gelin.
+newtab-pocket-last-card-image =
+    .alt = Hepsini bitirdiniz
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.
@@ -248,10 +264,4 @@ newtab-custom-pocket-sponsored = Sponsorlu haberler
 newtab-custom-recent-title = Son etkinlikler
 newtab-custom-recent-subtitle = Son kullanılan siteler ve içeriklerden bir seçki
 newtab-custom-close-button = Kapat
-# For the "Snippets" feature traditionally on about:home.
-# Alternative translation options: "Small Note" or something that
-# expresses the idea of "a small message, shortened from something else,
-# and non-essential but also not entirely trivial and useless.
-newtab-custom-snippets-title = Duyurular
-newtab-custom-snippets-subtitle = { -vendor-short-name } ve { -brand-product-name }’tan ipuçları ve haberler
 newtab-custom-settings = Diğer ayarları yönet

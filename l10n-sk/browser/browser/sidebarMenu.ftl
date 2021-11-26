@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Zavrieť bočný panel
+
+sidebar-close-button =
+    .tooltiptext = Zavrieť bočný panel

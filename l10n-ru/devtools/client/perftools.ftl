@@ -113,3 +113,25 @@ perftools-onboarding-message = <b>Новое</b>:  В Инструменты р�
 perftools-onboarding-reenable-old-panel = (В течение ограниченного периода времени вы сможете использовать старую панель Производительности, используя <a>{ options-context-advanced-settings }</a>)
 perftools-onboarding-close-button =
     .aria-label = Закрыть приветственное сообщение
+
+## Profiler presets
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# The same labels and descriptions are also defined in appmenu.ftl.
+
+perftools-presets-web-developer-label = Веб-разработка
+perftools-presets-web-developer-description = Рекомендуемые настройки для отладки большинства веб-приложений с низкими накладными расходами.
+perftools-presets-firefox-platform-label = Платформа Firefox
+perftools-presets-firefox-platform-description = Рекомендуемые настройки для внутренней отладки платформы Firefox.
+perftools-presets-firefox-front-end-label = Клиентская часть Firefox
+perftools-presets-firefox-front-end-description = Рекомендуемые настройки для внутренней отладки клиентской части Firefox.
+perftools-presets-firefox-graphics-label = Графика Firefox
+perftools-presets-firefox-graphics-description = Рекомендуемые настройки для исследования производительности графики Firefox.
+perftools-presets-media-label = Медиа
+perftools-presets-media-description = Рекомендуемые настройки для диагностики проблем со звуком и видео.
+perftools-presets-custom-label = Персональный
+
+##
+
