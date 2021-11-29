@@ -737,6 +737,19 @@ picture-in-picture-hide-toggle =
     .label = ეკრანი-ეკრანში გადამრთველის დამალვა
     .accesskey = ე
 
+## Since the default position for PiP controls does not change for RTL layout,
+## right-to-left languages should use "Left" and "Right" as in the English strings,
+
+picture-in-picture-move-toggle-right =
+    .label = ეკრანი-ეკრანში გადამრთველის მარჯვნივ გადატანა
+    .accesskey = ჯ
+picture-in-picture-move-toggle-left =
+    .label = ეკრანი-ეკრანში გადამრთველის მარცხნივ გადატანა
+    .accesskey = ც
+
+##
+
+
 # Navigator Toolbox
 
 # This string is a spoken label that should not include
@@ -776,3 +789,9 @@ tabs-toolbar-new-tab =
 tabs-toolbar-list-all-tabs =
     .label = ყველა ჩანართის სია
     .tooltiptext = ყველა ჩანართის სია
+
+## Infobar shown at startup to suggest session-restore
+
+# <img data-l10n-name="icon"/> will be replaced by the application menu icon
+restore-session-startup-suggestion-message = <strong>გაიხსნას წინა ჩანართები?</strong> თუ გსურთ, { -brand-short-name } აღდგეს წინა მდგომარეობით, გახსენით მენიუ <img data-l10n-name="icon"/> და მონახეთ ისტორია.
+restore-session-startup-suggestion-button = მანახეთ, როგორ

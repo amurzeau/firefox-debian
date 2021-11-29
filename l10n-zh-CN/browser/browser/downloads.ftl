@@ -16,11 +16,6 @@ downloads-panel =
 # The style attribute has the width of the Downloads Panel expressed using
 # a CSS unit. The longest labels that should fit are usually those of
 # in-progress and blocked downloads.
-downloads-panel-list =
-    .style = width: 70ch
-# The style attribute has the width of the Downloads Panel expressed using
-# a CSS unit. The longest labels that should fit are usually those of
-# in-progress and blocked downloads.
 downloads-panel-items =
     .style = width: 45em
 downloads-cmd-pause =
@@ -39,31 +34,63 @@ downloads-cmd-show-menuitem =
     .accesskey = F
 # This message is only displayed on macOS devices
 downloads-cmd-show-menuitem-mac =
-    .label = 在 Finder 中显示
+    .label = 在访达中显示
+    .accesskey = F
+downloads-cmd-show-menuitem-2 =
+    .label =
+        { PLATFORM() ->
+            [macos] 在访达中显示
+           *[other] 在文件夹中显示
+        }
     .accesskey = F
 downloads-cmd-use-system-default =
     .label = 用系统查看器打开
     .accesskey = V
+# We can use the same accesskey as downloads-cmd-always-open-similar-files.
+# Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-use-system-default =
     .label = 一律使用系统查看器打开
     .accesskey = w
 downloads-cmd-show-button =
     .tooltiptext =
         { PLATFORM() ->
-            [macos] 在 Finder 中显示
+            [macos] 在访达中显示
            *[other] 打开所在文件夹
         }
 downloads-cmd-show-panel =
     .aria-label =
         { PLATFORM() ->
-            [macos] 在 Finder 中显示
+            [macos] 在访达中显示
            *[other] 打开所在文件夹
         }
 downloads-cmd-show-description =
     .value =
         { PLATFORM() ->
-            [macos] 在 Finder 中显示
+            [macos] 在访达中显示
            *[other] 打开所在文件夹
+        }
+# We can use the same accesskey as downloads-cmd-always-use-system-default.
+# Both should not be visible in the downloads context menu at the same time.
+downloads-cmd-always-open-similar-files =
+    .label = 自动打开该类型文件
+    .accesskey = w
+downloads-cmd-show-button-2 =
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] 在访达中显示
+           *[other] 在文件夹中显示
+        }
+downloads-cmd-show-panel-2 =
+    .aria-label =
+        { PLATFORM() ->
+            [macos] 在访达中显示
+           *[other] 在文件夹中显示
+        }
+downloads-cmd-show-description-2 =
+    .value =
+        { PLATFORM() ->
+            [macos] 在访达中显示
+           *[other] 在文件夹中显示
         }
 downloads-cmd-show-downloads =
     .label = 显示下载文件夹
@@ -152,6 +179,22 @@ downloads-history =
 # that we are showing the details of a single download.
 downloads-details =
     .title = 下载详情
+
+## Displayed when a site attempts to automatically download many files.
+## Variables:
+##   $num (number) - Number of blocked downloads.
+##   $url (string) - The url of the suspicious site, stripped of http, https and www prefix.
+
+downloads-files-not-downloaded =
+    { $num ->
+       *[one] 未下载文件。
+        [other] 未下载 { $num } 个文件。
+    }
+downloads-blocked-from-url = 已阻止来自 { $url } 的多个下载。
+downloads-blocked-download-detailed-info = { $url } 尝试自动下载多个文件。该网站可能临时异常，或是试图在您的设备上存储垃圾文件。
+
+##
+
 downloads-clear-downloads-button =
     .label = 清空下载列表
     .tooltiptext = 清除已完成、已取消及失败的下载项
@@ -162,3 +205,11 @@ downloads-list-empty =
 # This string is shown when there are no items in the Downloads Panel.
 downloads-panel-empty =
     .value = 这次浏览期间还未下载文件。
+# This is displayed in an item at the bottom of the Downloads Panel when there
+# are more downloads than can fit in the list in the panel.
+#   $count (number) - number of files being downloaded that are not shown in the
+#                     panel list.
+downloads-more-downloading =
+    { $count ->
+       *[other] 另有 { $count } 个文件正在下载
+    }

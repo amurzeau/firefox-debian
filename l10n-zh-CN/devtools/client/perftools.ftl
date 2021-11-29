@@ -103,7 +103,7 @@ perftools-tools-threads-input-label =
 
 perftools-onboarding-message = <b>新变化</b>：{ -profiler-brand-name }现已集成于开发者工具。<a>详细了解</a>这个功能强大的新工具。
 # `options-context-advanced-settings` is defined in toolbox-options.ftl
-perftools-onboarding-reenable-old-panel = （在短时间内，您仍可以通过<a>{ options-context-advanced-settings }</a>访问旧的“性能”面板）
+perftools-onboarding-reenable-old-panel = （短期内，您仍可以通过<a>{ options-context-advanced-settings }</a>访问旧的“性能”面板）
 perftools-onboarding-close-button =
     .aria-label = 关闭导览消息
 
@@ -121,9 +121,14 @@ perftools-presets-firefox-platform-description = 推荐在 Firefox 内部平台�
 perftools-presets-firefox-front-end-label = Firefox 前端
 perftools-presets-firefox-front-end-description = 推荐在 Firefox 内部前端调试时使用。
 perftools-presets-firefox-graphics-label = Firefox 图形
-perftools-presets-firefox-graphics-description = 推荐在检查 Firefox 图形性能问题时使用。
+perftools-presets-firefox-graphics-description = 推荐在排查 Firefox 图形性能问题时使用。
+perftools-presets-firefox-label = { -brand-shorter-name }
+perftools-presets-firefox-description = 推荐在分析 { -brand-shorter-name } 性能时使用。
+perftools-presets-graphics-label = 图形
+perftools-presets-graphics-description = 推荐在排查 { -brand-shorter-name } 图形 Bug 时使用。
 perftools-presets-media-label = 媒体
 perftools-presets-media-description = 推荐在诊断 Firefox 音视频问题时使用。
+perftools-presets-media-description2 = 推荐在排查 { -brand-shorter-name } 音视频 Bug 时使用。
 perftools-presets-custom-label = 自定义
 
 ##

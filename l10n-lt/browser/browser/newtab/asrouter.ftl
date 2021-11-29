@@ -125,15 +125,37 @@ cfr-doorhanger-video-support-header = Atnaujinkite „{ -brand-short-name }“, 
 cfr-doorhanger-video-support-primary-button = Atnaujinti dabar
     .accesskey = A
 
+## Spotlight modal shared strings
+
+spotlight-learn-more-collapsed = Sužinoti daugiau
+    .title = Išskleiskite, norėdami sužinoti daugiau apie šią funkciją
+spotlight-learn-more-expanded = Sužinoti daugiau
+    .title = Užverti
+
 ## VPN promotion dialog for public Wi-Fi users
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
 ## to the Mozilla VPN page and a link to dismiss the dialog.
 
+# This header text can be explicitly wrapped.
 spotlight-public-wifi-vpn-header = Panašu, kad naudojatės viešu „Wi-Fi“
 spotlight-public-wifi-vpn-body = Norėdami paslėpti savo buvimo vietą ir naršymo veiklą, naudokite virtualų privatų tinklą (VPN). Tai leis apsisaugoti naršant viešose vietose, pvz., oro uostuose ir kavinėse.
 spotlight-public-wifi-vpn-primary-button = Išsaugoti privatumą su „{ -mozilla-vpn-brand-name }“
     .accesskey = I
 spotlight-public-wifi-vpn-link = Ne dabar
     .accesskey = N
+
+## Total Cookie Protection Rollout
+
+# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
+# "Join an early experiment". This header text can be explicitly wrapped.
+spotlight-total-cookie-protection-header =
+    Išbandykite mūsų galingiausią
+    privatumo apsaugą
+spotlight-total-cookie-protection-body = Visapusiška slapukų apsauga neleidžia stebėjimo elementams sekti jūsų naršymą naudojant slapukus.
+# "Early access" for this feature rollout means it's a "feature preview" or
+# "soft launch" as not everybody will get it yet.
+spotlight-total-cookie-protection-expanded = „{ -brand-short-name }“ pastato užtvarą aplink slapukus, ribodama jų pasiekimą jūsų lankomoje svetainėje, todėl stebėjimo elementai negali jų naudoti jūsų sekimui. Išbandydami iš anksto, padėsite optimizuoti šį funkcionalumą, kad galėtume kurti visiems geresnį internetą.
+spotlight-total-cookie-protection-primary-button = Įjungti visapusišką slapukų apsaugą
+spotlight-total-cookie-protection-secondary-button = Ne dabar

@@ -12,6 +12,16 @@ appmenuitem-update-banner3 =
     .label-update-unsupported = تعذّر التحديث — النظام غير متطابق
     .label-update-restart = يتوفّر تحديث — أعِد التشغيل
 appmenuitem-protection-dashboard-title = لوحة الحمايات
+appmenuitem-banner-update-downloading =
+    .label = ينزّل تحديث { -brand-shorter-name }
+appmenuitem-banner-update-available =
+    .label = يتوفّر تحديث — نزّله الآن
+appmenuitem-banner-update-manual =
+    .label = يتوفّر تحديث — نزّله الآن
+appmenuitem-banner-update-unsupported =
+    .label = تعذّر التحديث — النظام غير متطابق
+appmenuitem-banner-update-restart =
+    .label = يتوفّر تحديث — أعِد التشغيل
 appmenuitem-new-tab =
     .label = لسان جديد
 appmenuitem-new-window =
@@ -76,6 +86,8 @@ appmenu-remote-tabs-showmore =
 appmenu-remote-tabs-notabs = لا ألسنة مفتوحة
 # This is shown when Sync is configured but syncing tabs is disabled.
 appmenu-remote-tabs-tabsnotsyncing = فعّل مزامنة الألسنة لعرض قائمة بالألسنة من أجهزتك الأخرى.
+appmenu-remote-tabs-opensettings =
+    .label = الإعدادات
 # This is shown when Sync is configured but this appears to be the only device attached to
 # the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = أتريد رؤية ألسنتك من الأجهزة الأخرى هنا؟

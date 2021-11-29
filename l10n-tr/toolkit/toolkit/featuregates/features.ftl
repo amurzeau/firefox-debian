@@ -6,6 +6,12 @@
 # by various online articles and is technical in nature.
 experimental-features-css-masonry2 =
     .label = CSS: Masonry Layout
+experimental-features-css-masonry-description = Deneysel CSS Masonry Layout desteğini etkinleştirir. Bu özellik hakkında daha detaylı bilgi için <a data-l10n-name="explainer">anlatıcıya</a> bakabilirsiniz. Geri bildirimde bulunmak için <a data-l10n-name="w3c-issue">GitHub’daki bu soruna</a> veya <a data-l10n-name="bug">bu bug’a</a> yorum yapabilirsiniz.
+# The title of the experiment should be kept in English as it may be referenced
+# by various online articles and is technical in nature.
+experimental-features-css-cascade-layers =
+    .label = CSS: Cascade Layers
+experimental-features-css-cascade-layers-description = CSS Cascade Layers desteğini etkinleştirir. Ayrıntılar için <a data-l10n-name="spec">henüz tamamlanmamış şartnameye</a> bakabilirsiniz. Bu özellikle ilgili hataları <a data-l10n-name="bugzilla">bug 1699215</a>’i bloke ederek rapor edebilirsiniz.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-web-gpu2 =
@@ -25,12 +31,16 @@ experimental-features-media-jxl-description = Bu özellik etkinleştirildiğinde
 # by various online articles and is technical in nature.
 experimental-features-web-api-inputmode =
     .label = Web API: inputmode
+# "inputmode" and "contenteditable" are technical terms and shouldn't be translated.
+experimental-features-web-api-inputmode-description = <a data-l10n-name="mdn-inputmode">inputmode</a> genel özniteliği uygulamamız <a data-l10n-name="whatwg">WHATWG şartnamesi</a> uyarınca güncellendi ama hâlâ yapmamız gereken bazı değişiklikler var (örn. bu özniteliği contenteditable içeriğinde kullanılabilir hale getirmek). Daha fazla bilgi için <a data-l10n-name="bugzilla">bug 1205133</a>’e bakabilirsiniz.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-css-constructable-stylesheets =
     .label = CSS: Constructable Stylesheets
+experimental-features-css-constructable-stylesheets-description = <a data-l10n-name="mdn-cssstylesheet">CSSStyleSheet</a> arayüzüne bir constructor’ın eklenmesi ve bununla ilgili çeşitli değişiklikler, yeni stil dosyalarını HTML’e eklemeye gerek kalmadan oluşturmayı mümkün kılıyor. Bu da <a data-l10n-name="mdn-shadowdom">Shadow DOM</a> ile yeniden kullanılabilen stil dosyaları oluşturmayı kolaylaştırıyor. Daha fazla bilgi için <a data-l10n-name="bugzilla">bug 1520690</a>’a bakabilirsiniz.
 experimental-features-devtools-color-scheme-simulation =
     .label = Geliştirici Araçları: Renk Şeması Simülasyonu
+experimental-features-devtools-color-scheme-simulation-description = <a data-l10n-name="mdn-preferscolorscheme">@prefers-color-scheme</a> media sorgularını denemek için farklı renk şemalarının simülasyonunu yapmanızı sağlayan bir seçenek ekler. Bu media sorgusunu kullanmak, stil dosyanızın kullanıcının açık veya koyu kullanıcı arayüzü tercihine göre değişmesini sağlar. Bu özellik, tarayıcınızın (veya tarayıcınız işletim sisteminin renk şeması ayarını kullanıyorsa işletim sisteminin) ayarlarını değiştirmeye gerek kalmadan kodunuzu test etmenize olanak tanır. Detaylı bilgi için <a data-l10n-name="bugzilla1">bug 1550804</a>’e ve <a data-l10n-name="bugzilla2">bug 1137699</a>’a bakabilirsiniz.
 experimental-features-devtools-execution-context-selector =
     .label = Geliştirici Araçları: Execution Context Selector
 experimental-features-devtools-execution-context-selector-description = Bu özellik, konsol komut satırında, girdiğiniz ifadenin çalıştırılacağı bağlamı değiştirmenizi sağlayacak bir düğme gösterir. Daha fazla bilgi için <a data-l10n-name="bugzilla1">bug 1605154</a>’e ve <a data-l10n-name="bugzilla2">bug 1605153</a>’e bakabilirsiniz.
@@ -54,6 +64,7 @@ experimental-features-abouthome-startup-cache-description = Başlangıçta varsa
 # by various online articles and is technical in nature.
 experimental-features-cookie-samesite-schemeful =
     .label = Çerezler: Schemeful SameSite
+experimental-features-cookie-samesite-schemeful-description = Aynı alan adındaki ancak farklı şemadaki sitelerin (örn. http://example.com ve https://example.com) çerezlerini aynı site olarak saymak yerine siteler arası olarak sayar. Güvenliği artırır ama bazı sitelerin bozulmasına yol açabilir.
 # "Service Worker" is an API name and is usually not translated.
 experimental-features-devtools-serviceworker-debugger-support =
     .label = Geliştirici Araçları: Service Worker hata ayıklama

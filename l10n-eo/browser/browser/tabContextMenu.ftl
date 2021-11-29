@@ -11,6 +11,12 @@ reload-tab =
 select-all-tabs =
     .label = Elekti ĉiujn langetojn
     .accesskey = E
+tab-context-play-tab =
+    .label = Ludi langeton
+    .accesskey = L
+tab-context-play-tabs =
+    .label = Ludi langetojn
+    .accesskey = L
 duplicate-tab =
     .label = Duobligi langeton
     .accesskey = D
@@ -107,7 +113,6 @@ tab-context-move-tabs =
            *[other] Movi langetojn
         }
     .accesskey = M
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

@@ -9,6 +9,8 @@ search-header =
 search-header-shortcut =
     .key = f
 list-empty-get-extensions-message = Загрузите расширения и темы на <a data-l10n-name="get-extensions">{ $domain }</a>
+list-empty-get-dictionaries-message = Загрузите словари на <a data-l10n-name="get-extensions">{ $domain }</a>
+list-empty-get-language-packs-message = Загрузите языковые пакеты на <a data-l10n-name="get-extensions">{ $domain }</a>
 list-empty-installed =
     .value = У вас не установлено ни одного дополнения данного типа
 list-empty-available-updates =
@@ -281,7 +283,7 @@ release-notes-addon-button = Примечания к выпуску
 permissions-addon-button = Разрешения
 extension-enabled-heading = Включены
 extension-disabled-heading = Отключены
-theme-enabled-heading = Включены
+theme-enabled-heading = Включена
 theme-disabled-heading = Отключены
 theme-monochromatic-heading = Расцветки
 theme-monochromatic-subheading = Яркие новые расцветки от { -brand-product-name }. Доступны в течение ограниченного времени.

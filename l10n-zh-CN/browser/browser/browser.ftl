@@ -450,7 +450,7 @@ urlbar-extension =
 urlbar-go-button =
     .tooltiptext = 转到地址栏中指向的网址
 urlbar-page-action-button =
-    .tooltiptext = 页面动作
+    .tooltiptext = 页面操作
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -732,6 +732,19 @@ edit-popup-settings =
 picture-in-picture-hide-toggle =
     .label = 隐藏画中画切换按钮
     .accesskey = H
+
+## Since the default position for PiP controls does not change for RTL layout,
+## right-to-left languages should use "Left" and "Right" as in the English strings,
+
+picture-in-picture-move-toggle-right =
+    .label = 画中画切换按钮居右
+    .accesskey = R
+picture-in-picture-move-toggle-left =
+    .label = 画中画切换按钮居左
+    .accesskey = L
+
+##
+
 
 # Navigator Toolbox
 

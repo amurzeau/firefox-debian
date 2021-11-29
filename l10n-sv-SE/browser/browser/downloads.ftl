@@ -16,11 +16,6 @@ downloads-panel =
 # The style attribute has the width of the Downloads Panel expressed using
 # a CSS unit. The longest labels that should fit are usually those of
 # in-progress and blocked downloads.
-downloads-panel-list =
-    .style = width: 70ch
-# The style attribute has the width of the Downloads Panel expressed using
-# a CSS unit. The longest labels that should fit are usually those of
-# in-progress and blocked downloads.
 downloads-panel-items =
     .style = width: 35em
 downloads-cmd-pause =
@@ -41,9 +36,18 @@ downloads-cmd-show-menuitem =
 downloads-cmd-show-menuitem-mac =
     .label = Visa i Finder
     .accesskey = F
+downloads-cmd-show-menuitem-2 =
+    .label =
+        { PLATFORM() ->
+            [macos] Visa i Finder
+           *[other] Visa i mapp
+        }
+    .accesskey = F
 downloads-cmd-use-system-default =
     .label = Öppna i systemvisaren
     .accesskey = s
+# We can use the same accesskey as downloads-cmd-always-open-similar-files.
+# Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-use-system-default =
     .label = Öppna alltid i systemvisaren
     .accesskey = a
@@ -64,6 +68,29 @@ downloads-cmd-show-description =
         { PLATFORM() ->
             [macos] Visa i Finder
            *[other] Öppna objektets mapp
+        }
+# We can use the same accesskey as downloads-cmd-always-use-system-default.
+# Both should not be visible in the downloads context menu at the same time.
+downloads-cmd-always-open-similar-files =
+    .label = Öppna alltid liknande filer
+    .accesskey = a
+downloads-cmd-show-button-2 =
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Visa i Finder
+           *[other] Visa i mapp
+        }
+downloads-cmd-show-panel-2 =
+    .aria-label =
+        { PLATFORM() ->
+            [macos] Visa i Finder
+           *[other] Visa i mapp
+        }
+downloads-cmd-show-description-2 =
+    .value =
+        { PLATFORM() ->
+            [macos] Visa i Finder
+           *[other] Visa i mapp
         }
 downloads-cmd-show-downloads =
     .label = Visa mapp för hämtade filer
@@ -152,6 +179,22 @@ downloads-history =
 # that we are showing the details of a single download.
 downloads-details =
     .title = Nedladdningsdetaljer
+
+## Displayed when a site attempts to automatically download many files.
+## Variables:
+##   $num (number) - Number of blocked downloads.
+##   $url (string) - The url of the suspicious site, stripped of http, https and www prefix.
+
+downloads-files-not-downloaded =
+    { $num ->
+        [one] Filen har inte laddats ner.
+       *[other] { $num } filer har inte laddats ned.
+    }
+downloads-blocked-from-url = Nedladdningar blockerade från { $url }.
+downloads-blocked-download-detailed-info = { $url } försökte ladda ner flera filer automatiskt. Webbplatsen kan vara trasig eller försöka lagra skräppostfiler på din enhet.
+
+##
+
 downloads-clear-downloads-button =
     .label = Rensa hämtningar
     .tooltiptext = Rensar bort slutförda, avbrutna och misslyckade hämtningar
@@ -162,3 +205,12 @@ downloads-list-empty =
 # This string is shown when there are no items in the Downloads Panel.
 downloads-panel-empty =
     .value = Inga nedladdningar för denna session.
+# This is displayed in an item at the bottom of the Downloads Panel when there
+# are more downloads than can fit in the list in the panel.
+#   $count (number) - number of files being downloaded that are not shown in the
+#                     panel list.
+downloads-more-downloading =
+    { $count ->
+        [one] { $count } fil till laddas ned
+       *[other] { $count } filer till laddas ned
+    }

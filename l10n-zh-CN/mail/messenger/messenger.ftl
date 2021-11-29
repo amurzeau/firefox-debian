@@ -75,12 +75,14 @@ menu-file-save-as-file =
 
 ## AppMenu
 
-appmenu-save-as-file =
-    .label = 文件…
 # Since v89 we dropped the platforms distinction between Options or Preferences
 # and consolidated everything with Preferences.
 appmenu-preferences =
     .label = 首选项
+appmenu-save-as-file =
+    .label = 文件…
+appmenu-settings =
+    .label = 设置
 appmenu-addons-and-themes =
     .label = 扩展和主题
 appmenu-help-enter-troubleshoot-mode =
@@ -101,6 +103,10 @@ context-menu-redirect-msg =
 
 other-action-redirect-msg =
     .label = 重定向
+message-header-msg-is-flagged =
+    .title = 星标邮件
+message-header-msg-not-flagged =
+    .title = 非星标邮件
 
 ## Action Button Context Menu
 

@@ -11,6 +11,12 @@ reload-tab =
 select-all-tabs =
     .label = Tagh gach taba
     .accesskey = S
+tab-context-play-tab =
+    .label = Cluich an taba
+    .accesskey = l
+tab-context-play-tabs =
+    .label = Cluich na tabaichean
+    .accesskey = y
 duplicate-tab =
     .label = Dùblaich an taba
     .accesskey = D
@@ -105,7 +111,6 @@ tab-context-move-tabs =
            *[other] Gluais na tabaichean
         }
     .accesskey = G
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

@@ -69,6 +69,8 @@ about-addressbook-sort-email-ascending =
     .label = E-posta adresine göre sırala (A > Z)
 about-addressbook-sort-email-descending =
     .label = E-posta adresine göre sırala (Z > A)
+about-addressbook-cards-context-write =
+    .label = Yaz
 about-addressbook-confirm-delete-mixed-title = Kişileri ve listeleri sil
 # Variables:
 # $count (Number) - The number of contacts and lists to be deleted. Always greater than 1.
@@ -130,3 +132,5 @@ about-addressbook-details-phone-numbers-header = Telefon numaraları
 about-addressbook-details-home-address-header = Ev adresi
 about-addressbook-details-work-address-header = İş adresi
 about-addressbook-details-other-info-header = Diğer bilgiler
+about-addressbook-prompt-to-save-title = Değişiklikler kaydedilsin mi?
+about-addressbook-prompt-to-save = Değişikliklerinizi kaydetmek istiyor musunuz?

@@ -161,7 +161,7 @@ urlbar-star-add-bookmark =
 ## Page Action Context Menu
 
 page-action-manage-extension =
-    .label = Správa rozšírenia…
+    .label = Spravovať rozšírenie…
 page-action-remove-extension =
     .label = Odstrániť rozšírenie
 
@@ -743,6 +743,19 @@ edit-popup-settings =
 picture-in-picture-hide-toggle =
     .label = Skryť prepínanie obrazu v obraze
     .accesskey = S
+
+## Since the default position for PiP controls does not change for RTL layout,
+## right-to-left languages should use "Left" and "Right" as in the English strings,
+
+picture-in-picture-move-toggle-right =
+    .label = Presunúť prepínač obrazu v obraze na pravú stranu
+    .accesskey = r
+picture-in-picture-move-toggle-left =
+    .label = Presunúť prepínač obrazu v obraze na ľavú stranu
+    .accesskey = u
+
+##
+
 
 # Navigator Toolbox
 

@@ -11,6 +11,12 @@ reload-tab =
 select-all-tabs =
     .label = Wšě rajtarki wubrać
     .accesskey = r
+tab-context-play-tab =
+    .label = Rajtark wothrać
+    .accesskey = R
+tab-context-play-tabs =
+    .label = Rajtarki wothrać
+    .accesskey = h
 duplicate-tab =
     .label = Rajtark podwojić
     .accesskey = T
@@ -115,7 +121,6 @@ tab-context-move-tabs =
            *[other] { $tabCount } rajtarkow přesunyć
         }
     .accesskey = s
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

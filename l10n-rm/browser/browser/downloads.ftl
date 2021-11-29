@@ -16,11 +16,6 @@ downloads-panel =
 # The style attribute has the width of the Downloads Panel expressed using
 # a CSS unit. The longest labels that should fit are usually those of
 # in-progress and blocked downloads.
-downloads-panel-list =
-    .style = width: 70ch
-# The style attribute has the width of the Downloads Panel expressed using
-# a CSS unit. The longest labels that should fit are usually those of
-# in-progress and blocked downloads.
 downloads-panel-items =
     .style = width: 35em
 downloads-cmd-pause =
@@ -41,9 +36,18 @@ downloads-cmd-show-menuitem =
 downloads-cmd-show-menuitem-mac =
     .label = Mussar en il finder
     .accesskey = f
+downloads-cmd-show-menuitem-2 =
+    .label =
+        { PLATFORM() ->
+            [macos] Mussar en il Finder
+           *[other] Mussar en l'ordinatur
+        }
+    .accesskey = F
 downloads-cmd-use-system-default =
     .label = Avrir cun il program da standard
     .accesskey = v
+# We can use the same accesskey as downloads-cmd-always-open-similar-files.
+# Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-use-system-default =
     .label = Adina avrir cun il program da standard
     .accesskey = u
@@ -64,6 +68,29 @@ downloads-cmd-show-description =
         { PLATFORM() ->
             [macos] Mussar en il finder
            *[other] Mussar l'ordinatur che cuntegna la datoteca
+        }
+# We can use the same accesskey as downloads-cmd-always-use-system-default.
+# Both should not be visible in the downloads context menu at the same time.
+downloads-cmd-always-open-similar-files =
+    .label = Adina avrir datotecas sumegliantas
+    .accesskey = v
+downloads-cmd-show-button-2 =
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Mussar en il Finder
+           *[other] Mussar en l'ordinatur
+        }
+downloads-cmd-show-panel-2 =
+    .aria-label =
+        { PLATFORM() ->
+            [macos] Mussar en il Finder
+           *[other] Mussar en l'ordinatur
+        }
+downloads-cmd-show-description-2 =
+    .value =
+        { PLATFORM() ->
+            [macos] Mussar en il Finder
+           *[other] Mussar en l'ordinatur
         }
 downloads-cmd-show-downloads =
     .label = Mussar l'ordinatur da telechargiadas
@@ -152,6 +179,22 @@ downloads-history =
 # that we are showing the details of a single download.
 downloads-details =
     .title = Detagls davart la telechargiada
+
+## Displayed when a site attempts to automatically download many files.
+## Variables:
+##   $num (number) - Number of blocked downloads.
+##   $url (string) - The url of the suspicious site, stripped of http, https and www prefix.
+
+downloads-files-not-downloaded =
+    { $num ->
+        [one] Datoteca betg telechargiada.
+       *[other] { $num } datotecas betg telechargiadas.
+    }
+downloads-blocked-from-url = Bloccà telechargiadas da { $url }.
+downloads-blocked-download-detailed-info = { $url } ha empruvà da telechargiar automaticamain pliras datotecas. La website è eventualmain donnegiada u emprova da memorisar datotecas nungiavischadas sin tes apparat.
+
+##
+
 downloads-clear-downloads-button =
     .label = Svidar la glista da telechargiadas
     .tooltiptext = Stizza tut las telechargiadas cumplettadas, interruttas u sbagliadas da la glista da telechargiadas
@@ -162,3 +205,12 @@ downloads-list-empty =
 # This string is shown when there are no items in the Downloads Panel.
 downloads-panel-empty =
     .value = Naginas telechargiadas per questa sesida.
+# This is displayed in an item at the bottom of the Downloads Panel when there
+# are more downloads than can fit in the list in the panel.
+#   $count (number) - number of files being downloaded that are not shown in the
+#                     panel list.
+downloads-more-downloading =
+    { $count ->
+        [one] { $count } telechargiada da datotecas supplementara
+       *[other] { $count } telechargiadas da datotecas supplementaras
+    }

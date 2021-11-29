@@ -62,6 +62,7 @@ about-processes-unknown-process = Egyéb: { $type } ({ $pid })
 ##    $origin (String) The domain name for this process.
 
 about-processes-web-isolated-process = { $origin } ({ $pid })
+about-processes-web-serviceworker = { $origin } ({ $pid }, serviceworker)
 about-processes-web-large-allocation-process = { $origin } ({ $pid }, nagy)
 about-processes-with-coop-coep-process = { $origin } ({ $pid }, eredet szerint elkülönítve)
 about-processes-web-isolated-process-private = { $origin } – Privát ({ $pid })
@@ -134,6 +135,13 @@ about-processes-cpu-user-and-kernel-not-ready = (mérés folyamatban)
 # Special case: process or thread is currently idle.
 about-processes-cpu-idle = tétlen
     .title = Teljes processzoridő: { NUMBER($total, maximumFractionDigits: 0) } { $unit }
+# Special case: process or thread is almost idle (using less than 0.1% of a CPU core).
+# This case only occurs on Windows where the precision of the CPU times is low.
+about-processes-cpu-almost-idle = < 0,1%
+    .title = Teljes CPU-idő: { NUMBER($total, maximumFractionDigits: 0) }{ $unit }
+# Special case: process or thread is currently idle.
+about-processes-cpu-fully-idle = tétlen
+    .title = Teljes CPU-idő: { NUMBER($total, maximumFractionDigits: 0) }{ $unit }
 
 ## Displaying Memory (total and delta)
 ## Variables:

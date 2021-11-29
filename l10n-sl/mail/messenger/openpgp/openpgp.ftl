@@ -4,6 +4,16 @@
 
 e2e-intro-description = Za pošiljanje šifriranih ali digitalno podpisanih sporočil morate nastaviti tehnologijo šifriranja, bodisi OpenPGP bodisi S/MIME.
 e2e-intro-description-more = Izberite si osebni ključ za omogočitev uporabe OpenPGP ali osebno digitalno potrdilo za omogočitev uporabe S/MIME. Za osebni ključ ali digitalno potrdilo imate ustrezen skrivni ključ.
+e2e-advanced-section = Napredne nastavitve
+e2e-attach-key =
+    .label = Ob dodajanju digitalnega podpisa OpenPGP priloži moj javni ključ
+    .accesskey = j
+e2e-encrypt-subject =
+    .label = Šifriraj zadevo sporočil OpenPGP
+    .accesskey = z
+e2e-encrypt-drafts =
+    .label = Shranjuj osnutke sporočil v šifrirani obliki
+    .accesskey = o
 openpgp-key-user-id-label = Račun/ID uporabnika
 openpgp-keygen-title-label =
     .title = Ustvari ključ OpenPGP
@@ -229,6 +239,7 @@ openpgp-key-details-fingerprint-label = Prstni odtis
 openpgp-key-details-sel-action =
     .label = Izberi dejanje …
     .accesskey = b
+openpgp-key-details-also-known-label = Domnevne alternativne identitete lastnika ključa:
 openpgp-card-details-close-window-label =
     .buttonlabelaccept = Zapri
 openpgp-acceptance-label =
@@ -265,6 +276,8 @@ openpgp-description =
        *[other] Thunderbird je našel { $count } osebnih ključev OpenPGP, povezanih z <b>{ $identity }</b>
     }
 #   $key (String) - the currently selected OpenPGP key
+openpgp-selection-status-have-key = Vaša trenutna nastavitev uporablja ID ključa <b>{ $key }</b>
+#   $key (String) - the currently selected OpenPGP key
 openpgp-selection-status-error = Vaša trenutna nastavitev uporablja ključ <b>{ $key }</b>, ki mu je pretekla veljavnost.
 openpgp-add-key-button =
     .label = Dodaj ključ …
@@ -278,10 +291,17 @@ openpgp-keygen-import-success = Ključi OpenPGP so uspešno uvoženi!
 openpgp-radio-none =
     .label = Brez
 openpgp-radio-none-desc = Ne uporabljaj OpenPGP za to identiteto.
+openpgp-radio-key-not-usable = Ta ključ ni uporaben kot osebni ključ, ker manjka tajni ključ!
+openpgp-radio-key-not-accepted = Za uporabo tega ključa ga morate odobriti kot osebni ključ!
+openpgp-radio-key-not-found = Tega ključa ni bilo mogoče najti! Za uporabo ga morate uvoziti v { -brand-short-name }.
 #   $key (String) - the expiration date of the OpenPGP key
 openpgp-radio-key-expires = Datum preteka: { $date }
 #   $key (String) - the expiration date of the OpenPGP key
 openpgp-radio-key-expired = Pretekel: { $date }
+openpgp-key-expires-within-6-months-icon =
+    .title = Ključ bo pretekel čez manj kot 6 mesecev
+openpgp-key-has-expired-icon =
+    .title = Veljavnost ključa je pretekla
 openpgp-key-expand-section =
     .tooltiptext = Več informacij
 openpgp-key-revoke-title = Prekliči ključ
@@ -305,6 +325,9 @@ key-expired-date = Ključ je pretekel { $keyExpiry }
 key-expired-simple = Ključ je pretekel
 key-revoked-simple = Ključ je bil preklican
 key-do-you-accept = Ali sprejemate ta ključ za preverjanje digitalnih podpisov in za šifriranje sporočil?
+# Strings enigmailMsgComposeOverlay.js
+cannot-use-own-key-because = Sporočila ni mogoče poslati, ker je prišlo do težave z vašim osebnim ključem. { $problem }
+cannot-encrypt-because-missing = Tega sporočila ni mogoče poslati s šifriranjem od konca do konca zaradi težav s ključi naslednjih prejemnikov: { $problem }
 # Strings in mimeDecrypt.jsm
 mime-decrypt-encrypted-part-attachment-label = Šifriran del sporočila
 mime-decrypt-encrypted-part-concealed-data = To je šifriran del sporočila. Odpreti ga morate v ločenem oknu, tako da kliknete na priponko.
@@ -404,6 +427,8 @@ key-man-button-generate-key-continue = &Nadaljuj ustvarjanje ključev
 # Strings used in enigmailMessengerOverlay.js
 
 failed-decrypt = Napaka – dešifriranje ni uspelo
+msg-ovl-button-cont-anyway = &Vseeno nadaljuj
+enig-content-note = *Priponke k temu sporočilu niso podpisane niti šifrirane*
 # Strings used in enigmailMsgComposeOverlay.js
 msg-compose-button-send = &Pošlji sporočilo
 msg-compose-details-button-label = Podrobnosti …
@@ -418,8 +443,26 @@ msg-compose-cannot-save-draft = Napaka pri shranjevanju osnutka
 save-attachment-header = Shrani dešifrirano priponko
 cannot-send-sig-because-no-own-key = Tega sporočila ni mogoče digitalno podpisati, ker še niste nastavili šifriranja od konca do konca za <{ $key }>
 cannot-send-enc-because-no-own-key = Tega sporočila ni mogoče poslati šifrirano, ker še niste nastavili šifriranja od konca do konca za <{ $key }>
+compose-menu-attach-key =
+    .label = Priloži moj javni ključ
+    .accesskey = P
+compose-menu-encrypt-subject =
+    .label = Šifriranje zadeve
+    .accesskey = z
 do-import-one = Uvozi { $name } ({ $id })?
 cant-import = Napaka pri uvažanju javnega ključa
+sig-mismatch = Napaka – Neujemanje podpisov
+invalid-email = Napaka – Neveljavni e-poštni naslovi
+# Strings used in encryption.jsm
+not-required = Napaka – šifriranje ni zahtevano
+# Strings used in windows.jsm
+no-photo-available = Ni razpoložljive fotografije
+error-photo-path-not-readable = Pot do fotografije ‘{ $photo }’ ni berljiva
+debug-log-title = Dnevnik razhroščevanja OpenPGP
+# Strings used in dialog.jsm
+repeat-prefix = To opozorilo se bo ponovilo še { $count }-
+repeat-suffix-singular = krat.
+repeat-suffix-plural = krat.
 no-repeat = To opozorilo ne bo več prikazano.
 dlg-keep-setting = Zapomni si moj odgovor in me ne vprašaj več
 dlg-button-ok = &V redu

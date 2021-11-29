@@ -121,15 +121,37 @@ cfr-doorhanger-video-support-header = Opdater { -brand-short-name } for at afspi
 cfr-doorhanger-video-support-primary-button = Opdater nu
     .accesskey = O
 
+## Spotlight modal shared strings
+
+spotlight-learn-more-collapsed = Læs mere
+    .title = Fold ud for at læse mere om funktionen
+spotlight-learn-more-expanded = Læs mere
+    .title = Luk
+
 ## VPN promotion dialog for public Wi-Fi users
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
 ## to the Mozilla VPN page and a link to dismiss the dialog.
 
+# This header text can be explicitly wrapped.
 spotlight-public-wifi-vpn-header = Det ser ud til, at du bruger et offentligt wi-fi
 spotlight-public-wifi-vpn-body = Overvej at bruge VPN (Virtuelt Privat Netværk) for at skjule din placering og din aktivitet på nettet. Det vil sørge for at beskytte dig, når du går på nettet via offentlige netværk, fx i lufthavne eller på caféer.
 spotlight-public-wifi-vpn-primary-button = Beskyt dit privatliv med { -mozilla-vpn-brand-name }
     .accesskey = B
 spotlight-public-wifi-vpn-link = Ikke nu
     .accesskey = k
+
+## Total Cookie Protection Rollout
+
+# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
+# "Join an early experiment". This header text can be explicitly wrapped.
+spotlight-total-cookie-protection-header =
+    Vær blandt de første til at teste
+    vores hidtil stærkeste privatlivs-beskyttelse
+spotlight-total-cookie-protection-body = Komplet Cookiebeskyttelse forhindrer sporingsmekanismer i at følge dig rundt på nettet.
+# "Early access" for this feature rollout means it's a "feature preview" or
+# "soft launch" as not everybody will get it yet.
+spotlight-total-cookie-protection-expanded = { -brand-short-name } bygger et hegn rundt om cookies, sådan at de kun gælder det websted, du besøger. På dén måde kan sporingsmekanismer ikke følge dig. Hvis du tester denne tidlige version, så hjælper du med til at forbedre funktionen - og du hjælper os med at gøre internettet bedre for alle.
+spotlight-total-cookie-protection-primary-button = Slå Komplet Cookiebeskyttelse til
+spotlight-total-cookie-protection-secondary-button = Ikke nu

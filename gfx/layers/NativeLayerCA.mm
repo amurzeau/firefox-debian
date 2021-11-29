@@ -29,7 +29,6 @@
 #include "mozilla/webrender/RenderMacIOSurfaceTextureHost.h"
 #include "nsCocoaFeatures.h"
 #include "ScopedGLHelpers.h"
-#include "gfxUtils.h"
 
 @interface CALayer (PrivateSetContentsOpaque)
 - (void)setContentsOpaque:(BOOL)opaque;
@@ -136,7 +135,7 @@ NativeLayerRootCA::NativeLayerRootCA(CALayer* aLayer)
     : mMutex("NativeLayerRootCA"),
       mOnscreenRepresentation(aLayer),
       mOffscreenRepresentation(MakeOffscreenRootCALayer()) {
-  NoteMouseMove();
+  mLastMouseMoveTime = TimeStamp::NowLoRes();
 }
 
 NativeLayerRootCA::~NativeLayerRootCA() {
@@ -241,7 +240,7 @@ bool NativeLayerRootCA::CommitToScreen() {
       return false;
     }
 
-    UpdateMouseMovedRecently();
+    UpdateMouseMovedRecently(lock);
     mOnscreenRepresentation.Commit(WhichRepresentation::ONSCREEN, mSublayers, mWindowIsFullscreen,
                                    mMouseMovedRecently);
 
@@ -534,26 +533,26 @@ void NativeLayerRootCA::DumpLayerTreeToFile(const char* aPath) {
 }
 
 void NativeLayerRootCA::SetWindowIsFullscreen(bool aFullscreen) {
+  MutexAutoLock lock(mMutex);
+
   if (mWindowIsFullscreen != aFullscreen) {
     mWindowIsFullscreen = aFullscreen;
 
     for (auto layer : mSublayers) {
       layer->SetRootWindowIsFullscreen(mWindowIsFullscreen);
     }
-
-    // Treat this as a mouse move, for purposes of resetting our timer.
-    NoteMouseMove();
-
-    PrepareForCommit();
-    CommitToScreen();
   }
+
+  // Treat this as a mouse move, for purposes of resetting our timer.
+  mLastMouseMoveTime = TimeStamp::NowLoRes();
 }
 
-void NativeLayerRootCA::NoteMouseMove() { mLastMouseMoveTime = TimeStamp::NowLoRes(); }
+void NativeLayerRootCA::NoteMouseMoveAtTime(const TimeStamp& aTime) {
+  MutexAutoLock lock(mMutex);
+  mLastMouseMoveTime = aTime;
+}
 
-void NativeLayerRootCA::NoteMouseMoveAtTime(const TimeStamp& aTime) { mLastMouseMoveTime = aTime; }
-
-void NativeLayerRootCA::UpdateMouseMovedRecently() {
+void NativeLayerRootCA::UpdateMouseMovedRecently(const MutexAutoLock& aProofOfLock) {
   static const double SECONDS_TO_WAIT = 2.0;
 
   bool newMouseMovedRecently =
@@ -728,7 +727,9 @@ NativeLayerCA::~NativeLayerCA() {
 }
 
 void NativeLayerCA::AttachExternalImage(wr::RenderTextureHost* aExternalImage) {
-  bool oldSpecializeVideo = ShouldSpecializeVideo();
+  MutexAutoLock lock(mMutex);
+
+  bool oldSpecializeVideo = ShouldSpecializeVideo(lock);
 
   wr::RenderMacIOSurfaceTextureHost* texture = aExternalImage->AsRenderMacIOSurfaceTextureHost();
   MOZ_ASSERT(texture);
@@ -736,7 +737,7 @@ void NativeLayerCA::AttachExternalImage(wr::RenderTextureHost* aExternalImage) {
   mSize = texture->GetSize(0);
   mDisplayRect = IntRect(IntPoint{}, mSize);
 
-  bool changedSpecializeVideo = ShouldSpecializeVideo() != oldSpecializeVideo;
+  bool changedSpecializeVideo = ShouldSpecializeVideo(lock) != oldSpecializeVideo;
 
   ForAllRepresentations([&](Representation& r) {
     r.mMutatedFrontSurface = true;
@@ -751,16 +752,24 @@ bool NativeLayerCA::IsVideo() {
   return mTextureHost;
 }
 
-bool NativeLayerCA::ShouldSpecializeVideo() {
+bool NativeLayerCA::IsVideoAndLocked(const MutexAutoLock& aProofOfLock) {
+  // Anything with a texture host is considered a video source.
+  return mTextureHost;
+}
+
+bool NativeLayerCA::ShouldSpecializeVideo(const MutexAutoLock& aProofOfLock) {
   return StaticPrefs::gfx_core_animation_specialize_video() &&
-         nsCocoaFeatures::OnHighSierraOrLater() && mRootWindowIsFullscreen && IsVideo();
+         nsCocoaFeatures::OnHighSierraOrLater() && mRootWindowIsFullscreen &&
+         IsVideoAndLocked(aProofOfLock);
 }
 
 void NativeLayerCA::SetRootWindowIsFullscreen(bool aFullscreen) {
-  bool oldSpecializeVideo = ShouldSpecializeVideo();
+  MutexAutoLock lock(mMutex);
+
+  bool oldSpecializeVideo = ShouldSpecializeVideo(lock);
   mRootWindowIsFullscreen = aFullscreen;
 
-  if (ShouldSpecializeVideo() != oldSpecializeVideo) {
+  if (ShouldSpecializeVideo(lock) != oldSpecializeVideo) {
     ForAllRepresentations([&](Representation& r) { r.mMutatedSpecializeVideo = true; });
   }
 }
@@ -776,7 +785,6 @@ void NativeLayerCA::SetSurfaceIsFlipped(bool aIsFlipped) {
 
 bool NativeLayerCA::SurfaceIsFlipped() {
   MutexAutoLock lock(mMutex);
-
   return mSurfaceIsFlipped;
 }
 
@@ -838,7 +846,7 @@ void NativeLayerCA::SetBackingScale(float aBackingScale) {
 }
 
 bool NativeLayerCA::IsOpaque() {
-  MutexAutoLock lock(mMutex);
+  // mIsOpaque is const, so no need for a lock.
   return mIsOpaque;
 }
 
@@ -1176,7 +1184,7 @@ void NativeLayerCA::ApplyChanges(WhichRepresentation aRepresentation) {
   }
   GetRepresentation(aRepresentation)
       .ApplyChanges(mSize, mIsOpaque, mPosition, mTransform, mDisplayRect, mClipRect, mBackingScale,
-                    mSurfaceIsFlipped, mSamplingFilter, ShouldSpecializeVideo(), surface);
+                    mSurfaceIsFlipped, mSamplingFilter, ShouldSpecializeVideo(lock), surface);
 }
 
 bool NativeLayerCA::HasUpdate(WhichRepresentation aRepresentation) {

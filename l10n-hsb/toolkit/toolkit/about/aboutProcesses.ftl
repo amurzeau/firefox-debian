@@ -11,7 +11,7 @@ about-processes-column-action =
 ## Tooltips
 
 about-processes-shutdown-process =
-    .title = Rajtarki znjemóžnić a proces zničić
+    .title = Rajtarki wuswobodźić a proces zničić
 about-processes-shutdown-tab =
     .title = Rajtark začinić
 # Profiler icons
@@ -64,6 +64,7 @@ about-processes-unknown-process = Druhi: { $type } ({ $pid })
 ##    $origin (String) The domain name for this process.
 
 about-processes-web-isolated-process = { $origin } ({ $pid })
+about-processes-web-serviceworker = { $origin } ({ $pid }, serviceworker)
 about-processes-web-large-allocation-process = { $origin } ({ $pid }, wulki)
 about-processes-with-coop-coep-process = { $origin } ({ $pid }, přez cross-origin izolowany)
 about-processes-web-isolated-process-private = { $origin } – priwatny ({ $pid })
@@ -140,6 +141,13 @@ about-processes-cpu-user-and-kernel-not-ready = (měri so)
 # Special case: process or thread is currently idle.
 about-processes-cpu-idle = inaktiwny
     .title = CPU-čas dohromady: { NUMBER($total, maximumFractionDigits: 2) }{ $unit }
+# Special case: process or thread is almost idle (using less than 0.1% of a CPU core).
+# This case only occurs on Windows where the precision of the CPU times is low.
+about-processes-cpu-almost-idle = < 0.1%
+    .title = Cyłkowny CPU-čas: { NUMBER($total, maximumFractionDigits: 0) }{ $unit }
+# Special case: process or thread is currently idle.
+about-processes-cpu-fully-idle = inaktiwny
+    .title = Cyłkowny CPU-čas: { NUMBER($total, maximumFractionDigits: 0) }{ $unit }
 
 ## Displaying Memory (total and delta)
 ## Variables:

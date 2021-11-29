@@ -737,6 +737,19 @@ picture-in-picture-hide-toggle =
     .label = Celar le commutator imagine-in-imagine
     .accesskey = C
 
+## Since the default position for PiP controls does not change for RTL layout,
+## right-to-left languages should use "Left" and "Right" as in the English strings,
+
+picture-in-picture-move-toggle-right =
+    .label = Mover le commutator de imagine-annidate al latere dextre
+    .accesskey = d
+picture-in-picture-move-toggle-left =
+    .label = Mover le commutator de imagine-annidate al latere sinistre
+    .accesskey = s
+
+##
+
+
 # Navigator Toolbox
 
 # This string is a spoken label that should not include
@@ -780,5 +793,5 @@ tabs-toolbar-list-all-tabs =
 ## Infobar shown at startup to suggest session-restore
 
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
-restore-session-startup-suggestion-message = <strong>Como reaperir le schedas previe?</strong> Tu pote restaurar tu previe session ab le menu <img data-l10n-name="icon"/> de { -brand-short-name } , sub Chronologia.
+restore-session-startup-suggestion-message = <strong>Reaperir schedas anterior?</strong> Tu pote restaurar tu previe session a partir del menu <img data-l10n-name="icon"/> de { -brand-short-name }, sub Chronologia.
 restore-session-startup-suggestion-button = Monstrar como

@@ -16,11 +16,6 @@ downloads-panel =
 # The style attribute has the width of the Downloads Panel expressed using
 # a CSS unit. The longest labels that should fit are usually those of
 # in-progress and blocked downloads.
-downloads-panel-list =
-    .style = width: 70ch
-# The style attribute has the width of the Downloads Panel expressed using
-# a CSS unit. The longest labels that should fit are usually those of
-# in-progress and blocked downloads.
 downloads-panel-items =
     .style = width: 35em
 downloads-cmd-pause =
@@ -41,9 +36,22 @@ downloads-cmd-show-menuitem =
 downloads-cmd-show-menuitem-mac =
     .label = Zobrazit ve Finderu
     .accesskey = F
+downloads-cmd-show-menuitem-2 =
+    .label =
+        { PLATFORM() ->
+            [macos] Zobrazit ve Finderu
+           *[other] Otevřít složku
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [macos] F
+           *[other] l
+        }
 downloads-cmd-use-system-default =
     .label = Otevřít v systémovém prohlížeči
     .accesskey = p
+# We can use the same accesskey as downloads-cmd-always-open-similar-files.
+# Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-use-system-default =
     .label = Vždy otevírat v systémovém prohlížeči
     .accesskey = V
@@ -60,6 +68,29 @@ downloads-cmd-show-panel =
            *[other] Otevřít složku
         }
 downloads-cmd-show-description =
+    .value =
+        { PLATFORM() ->
+            [macos] Zobrazit ve Finderu
+           *[other] Otevřít složku
+        }
+# We can use the same accesskey as downloads-cmd-always-use-system-default.
+# Both should not be visible in the downloads context menu at the same time.
+downloads-cmd-always-open-similar-files =
+    .label = Vždy otevírat podobné soubory
+    .accesskey = V
+downloads-cmd-show-button-2 =
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Zobrazit ve Finderu
+           *[other] Otevřít složku
+        }
+downloads-cmd-show-panel-2 =
+    .aria-label =
+        { PLATFORM() ->
+            [macos] Zobrazit ve Finderu
+           *[other] Otevřít složku
+        }
+downloads-cmd-show-description-2 =
     .value =
         { PLATFORM() ->
             [macos] Zobrazit ve Finderu
@@ -162,3 +193,13 @@ downloads-list-empty =
 # This string is shown when there are no items in the Downloads Panel.
 downloads-panel-empty =
     .value = Žádná stahování pro tuto relaci.
+# This is displayed in an item at the bottom of the Downloads Panel when there
+# are more downloads than can fit in the list in the panel.
+#   $count (number) - number of files being downloaded that are not shown in the
+#                     panel list.
+downloads-more-downloading =
+    { $count ->
+        [one] Stahuje se jeden další soubor
+        [few] Stahují se { $count } další soubory
+       *[other] Stahuje se { $count } dalších souborů
+    }

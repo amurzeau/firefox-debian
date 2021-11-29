@@ -946,6 +946,14 @@ content-blocking-all-windows-tracking-content = Contengut utilizat per pistar to
 content-blocking-all-third-party-cookies = Totes los cookies tèrces
 content-blocking-cryptominers = Minaires de criptomonedas
 content-blocking-fingerprinters = Generadors d’emprentas numericas
+# "Test pilot" is used as a verb. Possible alternatives:
+# "Be the first to try", "Join an early experiment".
+content-blocking-etp-standard-tcp-rollout-checkbox =
+    .label = Ensajatz abans lo monde la melhora foncionalitat de confidencialitat jamai concebuda
+    .accesskey = E
+# "Contains" here means "isolates", "limits".
+content-blocking-etp-standard-tcp-rollout-description = La proteccion totala contra los cookies los reten al site ont vos trobatz, doncas los traçadors los pòdon pas utilizar per vos pistar de site en site.
+content-blocking-etp-standard-tcp-rollout-learn-more = Ne saber mai
 content-blocking-warning-title = Atencion !
 content-blocking-and-isolating-etp-warning-description = Lo blocatge de traçadors e l’isolacion dels cookies pòdon aver una incidéncia sus las foncionalitats de certans sites. Tornatz cargar una pagina amb los traçadors per cargar tot lo contengut.
 content-blocking-and-isolating-etp-warning-description-2 = Aqueste paramètre pòt menar unes sites web a s’afichar mal o a quitar de s’afichar corrèctament. Se un site sembla copat, ensajatz d’aturar la proteccion contra lo seguiment per aquel site per que cargue tot lo contengut.

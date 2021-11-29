@@ -11,6 +11,12 @@ reload-tab =
 select-all-tabs =
     .label = Fren akk accaren
     .accesskey = M
+tab-context-play-tab =
+    .label = Iccer n wurar
+    .accesskey = I
+tab-context-play-tabs =
+    .label = Iccaren n wurar
+    .accesskey = y
 duplicate-tab =
     .label = Sleg iccer
     .accesskey = N
@@ -107,7 +113,6 @@ tab-context-move-tabs =
            *[other] Senkez iccaren
         }
     .accesskey = S
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

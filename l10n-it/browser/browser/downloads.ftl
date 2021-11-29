@@ -16,9 +16,6 @@ downloads-panel =
 # The style attribute has the width of the Downloads Panel expressed using
 # a CSS unit. The longest labels that should fit are usually those of
 # in-progress and blocked downloads.
-downloads-panel-list =
-    .style = width: 70ch
-
 downloads-panel-items =
     .style = width: 40em
 
@@ -202,6 +199,20 @@ downloads-history =
 downloads-details =
     .title = Dettagli download
 
+## Displayed when a site attempts to automatically download many files.
+## Variables:
+##   $num (number) - Number of blocked downloads.
+##   $url (string) - The url of the suspicious site, stripped of http, https and www prefix.
+
+downloads-files-not-downloaded = { $num ->
+    [one] File non scaricato.
+   *[other] {$num} file non scaricati.
+}
+downloads-blocked-from-url = Bloccati download da { $url }.
+downloads-blocked-download-detailed-info = { $url } ha cercato di scaricare automaticamente diversi file. È possibile che il sito contenga degli errori o che stia cercando di salvare contenuti indesiderati sul tuo dispositivo.
+
+##
+
 downloads-clear-downloads-button =
     .label = Cancella elenco download
     .tooltiptext = Rimuovi dall’elenco i download completati, annullati o non riusciti
@@ -214,3 +225,13 @@ downloads-list-empty =
 # This string is shown when there are no items in the Downloads Panel.
 downloads-panel-empty =
     .value = Nessun download per questa sessione.
+
+# This is displayed in an item at the bottom of the Downloads Panel when there
+# are more downloads than can fit in the list in the panel.
+#   $count (number) - number of files being downloaded that are not shown in the
+#                     panel list.
+downloads-more-downloading =
+    { $count ->
+        [one] { $count } altro file in download
+       *[other] Altri { $count } file in download
+    }

@@ -946,6 +946,12 @@ content-blocking-all-windows-tracking-content = Tetepy rapykuehoha opaite ovetã
 content-blocking-all-third-party-cookies = Opaite kookie mbohapyguáva
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
+# "Test pilot" is used as a verb. Possible alternatives:
+# "Be the first to try", "Join an early experiment".
+content-blocking-etp-standard-tcp-rollout-checkbox =
+    .label = Eipuru ore ñemigua rembiapoite imbaretevéva ko’ág̃a peve
+    .accesskey = T
+content-blocking-etp-standard-tcp-rollout-learn-more = Kuaave
 content-blocking-warning-title = ¡Ema’ẽmi!
 content-blocking-and-isolating-etp-warning-description = Ejokóvo tapykuehoha ha kookie ñemomombyry ikatu ombyai peteĩva tembiapoite. Emyanyhẽjey kuatiarogue tapykuehoha ndive emyanyhẽ hag̃ua opaite tetepy.
 content-blocking-and-isolating-etp-warning-description-2 = Ko ñemoĩporã ikatu peteĩva ñanduti renda ndohechaukái tetepy térã ndoikoporãmbái. Peteĩ tenda ndojehechaukaporãirõ, ikatu oipe’a ñemo’ã jehapykuehogua omyanyhẽmba hag̃ua tetepy.

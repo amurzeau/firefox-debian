@@ -5,6 +5,7 @@
 close-button =
     .aria-label = Cerrar
 preferences-doc-title = Preferencias
+preferences-doc-title2 = Ajustes
 category-list =
     .aria-label = Categorías
 pane-general-title = General
@@ -118,9 +119,15 @@ default-search-engine = Motor de búsqueda predeterminado
 add-search-engine =
     .label = Agregar desde archivo
     .accesskey = A
+add-web-search-engine =
+    .label = Agregar…
+    .accesskey = A
 remove-search-engine =
     .label = Eliminar
     .accesskey = v
+add-opensearch-provider-title = Agregar proveedor de OpenSearch
+adding-opensearch-provider-failed-title = No se pudo agregar el proveedor OpenSearch
+adding-opensearch-provider-failed-text = No se pudo agregar el proveedor de OpenSearch para { $url }.
 minimize-to-tray-label =
     .label = Mover { -brand-short-name } a la bandeja cuando es minimizado
     .accesskey = m
@@ -317,6 +324,8 @@ type-column-label =
 action-column-label =
     .label = Acción
     .accesskey = A
+type-column-header = Tipo de contenido
+action-column-header = Acción
 save-to-label =
     .label = Guardar archivos en
     .accesskey = S
@@ -685,11 +694,31 @@ search-preferences-input =
 
 ## Preferences UI Search Results
 
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-preferences-input2 =
+    .style = width: 15.4em
+    .placeholder = Buscar en ajustes
+
+## Settings UI Search Results
+
 search-results-header = Resultados de la búsqueda
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message =
     { PLATFORM() ->
         [windows] No se han encontrado resultados en Opciones para “<span data-l10n-name="query"></span>”.
        *[other] No se han encontrado resultados en Preferencias para “<span data-l10n-name="query"></span>”.
+    }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 =
+    { PLATFORM() ->
+        [windows] ¡Lo sentimos! No hay resultados en la Configuración para “<span data-l10n-name="query"></span>”.
+       *[other] ¡Lo sentimos! No hay resultados en los Ajustes para “<span data-l10n-name="query"></span>”.
     }
 search-results-help-link = ¿Necesitas ayuda? Visita el soporte de <a data-l10n-name="url">{ -brand-short-name }</a>
