@@ -11,6 +11,12 @@ reload-tab =
 select-all-tabs =
     .label = Piliin Lahat ng Tab
     .accesskey = S
+tab-context-play-tab =
+    .label = I-play ang Tab
+    .accesskey = l
+tab-context-play-tabs =
+    .label = I-play ang mga Tab
+    .accesskey = y
 duplicate-tab =
     .label = Doblehin ang Tab
     .accesskey = D
@@ -92,7 +98,6 @@ tab-context-move-tabs =
            *[other] Ilipat ang mga Tab
         }
     .accesskey = v
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

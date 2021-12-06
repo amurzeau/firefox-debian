@@ -16,11 +16,6 @@ downloads-panel =
 # The style attribute has the width of the Downloads Panel expressed using
 # a CSS unit. The longest labels that should fit are usually those of
 # in-progress and blocked downloads.
-downloads-panel-list =
-    .style = width: 70ch
-# The style attribute has the width of the Downloads Panel expressed using
-# a CSS unit. The longest labels that should fit are usually those of
-# in-progress and blocked downloads.
 downloads-panel-items =
     .style = width: 35em
 downloads-cmd-pause =
@@ -41,9 +36,18 @@ downloads-cmd-show-menuitem =
 downloads-cmd-show-menuitem-mac =
     .label = Tonen in Finder
     .accesskey = F
+downloads-cmd-show-menuitem-2 =
+    .label =
+        { PLATFORM() ->
+            [macos] Tonen in Finder
+           *[other] In map tonen
+        }
+    .accesskey = o
 downloads-cmd-use-system-default =
     .label = In systeemviewer openen
     .accesskey = v
+# We can use the same accesskey as downloads-cmd-always-open-similar-files.
+# Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-use-system-default =
     .label = Altijd in systeemviewer openen
     .accesskey = w
@@ -64,6 +68,29 @@ downloads-cmd-show-description =
         { PLATFORM() ->
             [macos] Tonen in Finder
            *[other] Bijbehorende map openen
+        }
+# We can use the same accesskey as downloads-cmd-always-use-system-default.
+# Both should not be visible in the downloads context menu at the same time.
+downloads-cmd-always-open-similar-files =
+    .label = Altijd vergelijkbare bestanden openen
+    .accesskey = t
+downloads-cmd-show-button-2 =
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Tonen in Finder
+           *[other] In map tonen
+        }
+downloads-cmd-show-panel-2 =
+    .aria-label =
+        { PLATFORM() ->
+            [macos] Tonen in Finder
+           *[other] In map tonen
+        }
+downloads-cmd-show-description-2 =
+    .value =
+        { PLATFORM() ->
+            [macos] Tonen in Finder
+           *[other] In map tonen
         }
 downloads-cmd-show-downloads =
     .label = Map Downloads tonen
@@ -152,6 +179,22 @@ downloads-history =
 # that we are showing the details of a single download.
 downloads-details =
     .title = Downloadgegevens
+
+## Displayed when a site attempts to automatically download many files.
+## Variables:
+##   $num (number) - Number of blocked downloads.
+##   $url (string) - The url of the suspicious site, stripped of http, https and www prefix.
+
+downloads-files-not-downloaded =
+    { $num ->
+        [one] Bestand niet gedownload.
+       *[other] { $num } bestanden niet gedownload.
+    }
+downloads-blocked-from-url = Downloads geblokkeerd van { $url }.
+downloads-blocked-download-detailed-info = { $url } heeft geprobeerd automatisch meerdere bestanden te downloaden. De website kan defect zijn of proberen spambestanden op uw apparaat op te slaan.
+
+##
+
 downloads-clear-downloads-button =
     .label = Downloads wissen
     .tooltiptext = Wist voltooide, geannuleerde en mislukte downloads
@@ -162,3 +205,12 @@ downloads-list-empty =
 # This string is shown when there are no items in the Downloads Panel.
 downloads-panel-empty =
     .value = Geen downloads voor deze sessie.
+# This is displayed in an item at the bottom of the Downloads Panel when there
+# are more downloads than can fit in the list in the panel.
+#   $count (number) - number of files being downloaded that are not shown in the
+#                     panel list.
+downloads-more-downloading =
+    { $count ->
+        [one] Er wordt nog { $count } bestand gedownload
+       *[other] Er worden nog { $count } bestanden gedownload
+    }

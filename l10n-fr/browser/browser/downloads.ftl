@@ -16,11 +16,6 @@ downloads-panel =
 # The style attribute has the width of the Downloads Panel expressed using
 # a CSS unit. The longest labels that should fit are usually those of
 # in-progress and blocked downloads.
-downloads-panel-list =
-    .style = width: 70ch
-# The style attribute has the width of the Downloads Panel expressed using
-# a CSS unit. The longest labels that should fit are usually those of
-# in-progress and blocked downloads.
 downloads-panel-items =
     .style = width: 40em
 downloads-cmd-pause =
@@ -41,9 +36,18 @@ downloads-cmd-show-menuitem =
 downloads-cmd-show-menuitem-mac =
     .label = Afficher dans le Finder
     .accesskey = F
+downloads-cmd-show-menuitem-2 =
+    .label =
+        { PLATFORM() ->
+            [macos] Afficher dans le Finder
+           *[other] Afficher dans le dossier
+        }
+    .accesskey = A
 downloads-cmd-use-system-default =
     .label = Ouvrir avec la visionneuse du système
     .accesskey = v
+# We can use the same accesskey as downloads-cmd-always-open-similar-files.
+# Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-use-system-default =
     .label = Toujours ouvrir avec la visionneuse du système
     .accesskey = T
@@ -64,6 +68,29 @@ downloads-cmd-show-description =
         { PLATFORM() ->
             [macos] Afficher dans le Finder
            *[other] Ouvrir le dossier contenant le fichier
+        }
+# We can use the same accesskey as downloads-cmd-always-use-system-default.
+# Both should not be visible in the downloads context menu at the same time.
+downloads-cmd-always-open-similar-files =
+    .label = Toujours ouvrir les fichiers similaires
+    .accesskey = T
+downloads-cmd-show-button-2 =
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Afficher dans le Finder
+           *[other] Afficher dans le dossier
+        }
+downloads-cmd-show-panel-2 =
+    .aria-label =
+        { PLATFORM() ->
+            [macos] Afficher dans le Finder
+           *[other] Afficher dans le dossier
+        }
+downloads-cmd-show-description-2 =
+    .value =
+        { PLATFORM() ->
+            [macos] Afficher dans le Finder
+           *[other] Afficher dans le dossier
         }
 downloads-cmd-show-downloads =
     .label = Afficher le dossier des téléchargements
@@ -152,6 +179,22 @@ downloads-history =
 # that we are showing the details of a single download.
 downloads-details =
     .title = Détails du téléchargement
+
+## Displayed when a site attempts to automatically download many files.
+## Variables:
+##   $num (number) - Number of blocked downloads.
+##   $url (string) - The url of the suspicious site, stripped of http, https and www prefix.
+
+downloads-files-not-downloaded =
+    { $num ->
+        [one] Fichier non téléchargé.
+       *[other] { $num } fichiers non téléchargés.
+    }
+downloads-blocked-from-url = Téléchargements bloqués depuis { $url }.
+downloads-blocked-download-detailed-info = { $url } a essayé de télécharger automatiquement de nombreux fichiers. Le site peut être défectueux ou en train de tenter d’enregistrer des fichiers de spam sur votre appareil.
+
+##
+
 downloads-clear-downloads-button =
     .label = Vider la liste des téléchargements
     .tooltiptext = Vider la liste des téléchargements terminés, annulés et qui ont échoué
@@ -162,3 +205,12 @@ downloads-list-empty =
 # This string is shown when there are no items in the Downloads Panel.
 downloads-panel-empty =
     .value = Aucun téléchargement pour cette session.
+# This is displayed in an item at the bottom of the Downloads Panel when there
+# are more downloads than can fit in the list in the panel.
+#   $count (number) - number of files being downloaded that are not shown in the
+#                     panel list.
+downloads-more-downloading =
+    { $count ->
+        [one] { $count } téléchargement de fichier supplémentaire
+       *[other] { $count } téléchargements de fichiers supplémentaires
+    }

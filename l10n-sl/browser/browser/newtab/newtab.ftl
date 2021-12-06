@@ -225,6 +225,7 @@ newtab-discovery-empty-section-topstories-timed-out = Ojoj! Nekaj se je zalomilo
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Priljubljene teme:
+newtab-pocket-new-topics-title = Želite še več zgodb? Oglejte si najbolj priljubljene teme iz storitve { -pocket-brand-name }
 newtab-pocket-more-recommendations = Več priporočil
 newtab-pocket-learn-more = Več o tem
 newtab-pocket-cta-button = Prenesi { -pocket-brand-name }
@@ -239,6 +240,10 @@ newtab-pocket-load-more-stories-button = Naloži več zgodb
 ## Pocket Final Card Section.
 ## This is for the final card in the Pocket grid.
 
+newtab-pocket-last-card-title = Prebrali ste vse!
+newtab-pocket-last-card-desc = Preverite pozneje za svežo vsebino.
+newtab-pocket-last-card-image =
+    .alt = Prebrali ste vse
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.

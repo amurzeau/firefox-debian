@@ -121,15 +121,37 @@ cfr-doorhanger-video-support-header = Oppdater { -brand-short-name } for å spel
 cfr-doorhanger-video-support-primary-button = Oppdater no
     .accesskey = O
 
+## Spotlight modal shared strings
+
+spotlight-learn-more-collapsed = Les meir
+    .title = Utvid for å lære meir om denne funksjonen
+spotlight-learn-more-expanded = Les meir
+    .title = Lat att
+
 ## VPN promotion dialog for public Wi-Fi users
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
 ## to the Mozilla VPN page and a link to dismiss the dialog.
 
+# This header text can be explicitly wrapped.
 spotlight-public-wifi-vpn-header = Det ser ut til at du brukar offentleg Wi-Fi
 spotlight-public-wifi-vpn-body = For å skjule posisjonen din og nettlesingsaktiviteten, bør du vurdere eit virtuelt privat nettverk. Det vil bidra til å halde deg beskytta når du surfar på offentlege stadar som flyplassar og kaféar.
 spotlight-public-wifi-vpn-primary-button = Hald deg privat med { -mozilla-vpn-brand-name }
     .accesskey = H
 spotlight-public-wifi-vpn-link = Ikkje no
     .accesskey = I
+
+## Total Cookie Protection Rollout
+
+# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
+# "Join an early experiment". This header text can be explicitly wrapped.
+spotlight-total-cookie-protection-header =
+    Test ut vår kraftigaste
+    personvernfunksjon nokon gong
+spotlight-total-cookie-protection-body = Totalt vern mot infokapslar stoppar sporarar frå å bruke infokapslar til å forfølgje deg rundt om på nettet.
+# "Early access" for this feature rollout means it's a "feature preview" or
+# "soft launch" as not everybody will get it yet.
+spotlight-total-cookie-protection-expanded = { -brand-short-name }byggjer eit gjerde rundt infokapslar, og avgrensar dei til nettstaden du er på, slik at sporarar ikkje kan bruke dei til å følgje deg. Med tidleg tilgang hjelper du til med å optimalisere denne funksjonen slik at vi kan fortsetje å byggje eit betre nett for alle.
+spotlight-total-cookie-protection-primary-button = Slå på total vern mot infokapslar
+spotlight-total-cookie-protection-secondary-button = Ikkje no

@@ -18,6 +18,22 @@ appmenuitem-update-banner3 =
     .label-update-unsupported = Ажурирање није могуће – некомпатибилан систем
     .label-update-restart = Доступно је ажурирање – рестартујте прегледач
 appmenuitem-protection-dashboard-title = Контролна табла заштите
+appmenuitem-banner-update-downloading =
+    .label =
+        Преузимање ажурирања { -brand-shorter-name.gender ->
+            [masculine] { -brand-shorter-name(case: "gen") }
+            [feminine] { -brand-shorter-name(case: "gen") }
+            [neuter] { -brand-shorter-name(case: "gen") }
+           *[other] програма { -brand-shorter-name }
+        }
+appmenuitem-banner-update-available =
+    .label = Доступно је ажурирање – преузмите га
+appmenuitem-banner-update-manual =
+    .label = Доступно је ажурирање – преузмите га
+appmenuitem-banner-update-unsupported =
+    .label = Ажурирање није могуће – некомпатибилан систем
+appmenuitem-banner-update-restart =
+    .label = Доступно је ажурирање – рестартујте прегледач
 appmenuitem-new-tab =
     .label = Нова картица
 appmenuitem-new-window =
@@ -78,6 +94,8 @@ appmenu-remote-tabs-showmore =
 appmenu-remote-tabs-notabs = Нема отворених картица
 # This is shown when Sync is configured but syncing tabs is disabled.
 appmenu-remote-tabs-tabsnotsyncing = Укључите синхронизацију да бисте видели листу картица са других уређаја.
+appmenu-remote-tabs-opensettings =
+    .label = Подешавања
 # This is shown when Sync is configured but this appears to be the only device attached to
 # the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Желите ли да овде видите картице са других уређаја?

@@ -19,6 +19,11 @@ const FeatureManifest = {
         description:
           "Used to activate only matching configurations that contain the value in `experiment`",
       },
+      extraParams: {
+        type: "json",
+        description:
+          "Query parameters values for search engine configurations.",
+      },
     },
   },
   urlbar: {
@@ -124,6 +129,20 @@ const FeatureManifest = {
       transitions: {
         type: "boolean",
         description: "Enable transition effect between screens",
+      },
+    },
+  },
+  moreFromMozilla: {
+    description:
+      "New page on about:preferences to suggest more Mozilla products",
+    hasExposure: true,
+    exposureDescription:
+      "Exposure is sent once per browsing session when the about:preferences URL is first accessed.",
+    variables: {
+      enabled: {
+        type: "boolean",
+        fallbackPref: "browser.preferences.moreFromMozilla",
+        description: "Should users see the new more from Mozilla section.",
       },
     },
   },
@@ -350,6 +369,20 @@ const FeatureManifest = {
         fallbackPref: "reader.pocket.ctaVersion",
         description:
           "What version of Pocket CTA to show in Reader Mode (Empty string is no CTA)",
+      },
+    },
+  },
+  tcpPreferences: {
+    description:
+      "Toggles the Total Cookie Protection section in about:preferences",
+    hasExposure: false,
+    isEarlyStartup: false,
+    variables: {
+      enabled: {
+        type: "boolean",
+        fallbackPref:
+          "privacy.restrict3rdpartystorage.rollout.preferences.TCPToggleInStandard",
+        description: "Turn on the section in about:preferences",
       },
     },
   },

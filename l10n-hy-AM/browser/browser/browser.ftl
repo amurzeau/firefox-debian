@@ -332,7 +332,7 @@ browser-import-button2 =
 
 popup-all-windows-shared = Էկրանի բոլոր տեսանելի պատուհանները կտարածվեն:
 popup-screen-sharing-block =
-    .label = Արգելափակել
+    .label = Արգելել
     .accesskey = B
 popup-screen-sharing-always-block =
     .label = Միշտ արգելափակել
@@ -595,6 +595,13 @@ picture-in-picture-hide-toggle =
     .label = Թաքցնել նկարը նկարի փոխարկիչում
     .accesskey = H
 
+## Since the default position for PiP controls does not change for RTL layout,
+## right-to-left languages should use "Left" and "Right" as in the English strings,
+
+
+##
+
+
 # Navigator Toolbox
 
 # This string is a spoken label that should not include
@@ -637,3 +644,5 @@ tabs-toolbar-list-all-tabs =
 
 ## Infobar shown at startup to suggest session-restore
 
+# <img data-l10n-name="icon"/> will be replaced by the application menu icon
+restore-session-startup-suggestion-message = <strong>Բացե՞լ նախորդ ներդիրները:</strong>Դուք կարող եք վերականգնել նախորդ աշխատաշրջանը { -brand-short-name }-ի հավելվածների ցանկից՝ <img data-l10n-name="icon"/>, Պատմության ներքո:

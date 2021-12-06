@@ -9,13 +9,18 @@
 ##  $scheme - the type of link that's being opened.
 ##  $appName - Name of the application that will be opened.
 
+permission-dialog-description = क्या आप इस साइट को { $scheme } लिंक खोलने देना चाहते हैं?
+permission-dialog-description-file = क्या आप इस फाइल को { $scheme } लिंक खोलने देना चाहते हैं?
+permission-dialog-description-host = क्या आप { $host } को { $scheme } लिंक खोलने देना चाहते हैं?
+permission-dialog-description-app = क्या आप इस साइट को { $appName } में { $scheme } लिंक खोलने देना चाहते हैं?
+permission-dialog-description-host-app = क्या आप { $host } को { $appName } में { $scheme } लिंक खोलने देना चाहते हैं?
+permission-dialog-description-file-app = क्या आप इस फाइल को { $appName } में { $scheme } लिंक खोलने देना चाहते हैं?
 
 ## Please keep the emphasis around the hostname and scheme (ie the
 ## `<strong>` HTML tags). Please also keep the hostname as close to the start
 ## of the sentence as your language's grammar allows.
 
 permission-dialog-remember = <strong>{ $host }</strong> को हमेशा <strong>{ $scheme }</strong> लिंक खोलने दें
-
 permission-dialog-remember-file = इस फाइल को हमेशा <strong>{ $scheme }</strong> लिंक खोलने दें
 
 ##
@@ -23,13 +28,10 @@ permission-dialog-remember-file = इस फाइल को हमेशा <st
 permission-dialog-btn-open-link =
     .label = लिंक खोलें
     .accessKey = O
-
 permission-dialog-btn-choose-app =
     .label = ऐप्लिकेशन चुनें
     .accessKey = A
-
 permission-dialog-unset-description = आपको एक ऐप्लिकेशन चुनना होगा।
-
 permission-dialog-set-change-app-link = कोई दूसरा ऐप्लिकेशन चुनें।
 
 ## Chooser dialog
@@ -39,10 +41,13 @@ permission-dialog-set-change-app-link = कोई दूसरा ऐप्ल�
 chooser-dialog =
     .buttonlabelaccept = लिंक खोलें
     .buttonaccesskeyaccept = O
-
+chooser-dialog-description = { $scheme } लिंक खोलने के लिए कोई एप्लिकेशन चुनें।
+# Please keep the emphasis around the scheme (ie the `<strong>` HTML tags).
+chooser-dialog-remember = <strong>{ $scheme }</strong> लिंक खोलने के लिए हमेशा इस एप्लिकेशन का उपयोग करें
 choose-other-app-description = अन्य अनुप्रयोग चुनें
 choose-app-btn =
     .label = चुनें…
     .accessKey = C
 choose-other-app-window-title = दूसरा अनुप्रयोग…
-
+# Displayed under the name of a protocol handler in the Launch Application dialog.
+choose-dialog-privatebrowsing-disabled = निजी विंडोज़ में अक्षम

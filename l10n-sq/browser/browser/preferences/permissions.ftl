@@ -5,68 +5,63 @@
 permissions-window =
     .title = Përjashtime
     .style = width: 36em
-
 permissions-close-key =
     .key = w
-
 permissions-address = Adresë e sajtit
     .accesskey = d
-
 permissions-block =
     .label = Bllokoje
     .accesskey = B
-
 permissions-session =
     .label = Lejoje për Sesionin
     .accesskey = S
-
 permissions-allow =
     .label = Lejoje
     .accesskey = L
-
+permissions-button-off =
+    .label = Çaktivizoje
+    .accesskey = Ç
+permissions-button-off-temporarily =
+    .label = Çaktivizoje Përkohësisht
+    .accesskey = P
 permissions-site-name =
     .label = Sajt
-
 permissions-status =
     .label = Gjendje
-
 permissions-remove =
     .label = Hiqe Sajtin
     .accesskey = H
-
 permissions-remove-all =
     .label = Hiqi Krejt Sajtet
     .accesskey = k
-
 permission-dialog =
     .buttonlabelaccept = Ruaji Ndryshimet
     .buttonaccesskeyaccept = R
-
 permissions-autoplay-menu = Parazgjedhje për krejt sajtet:
-
 permissions-searchbox =
     .placeholder = Kërko Në Sajte
-
 permissions-capabilities-autoplay-allow =
     .label = Lejo Audio dhe Video
 permissions-capabilities-autoplay-block =
     .label = Blloko Audion
 permissions-capabilities-autoplay-blockall =
     .label = Blloko Audio dhe Video
-
 permissions-capabilities-allow =
     .label = Lejoje
 permissions-capabilities-block =
     .label = Bllokoje
 permissions-capabilities-prompt =
     .label = Pyet Përherë
-
 permissions-capabilities-listitem-allow =
     .value = Lejoje
 permissions-capabilities-listitem-block =
     .value = Bllokoje
 permissions-capabilities-listitem-allow-session =
     .value = Lejoje për Sesionin
+permissions-capabilities-listitem-off =
+    .value = Off
+permissions-capabilities-listitem-off-temporarily =
+    .value = Off përkohësisht
 
 ## Invalid Hostname Dialog
 
@@ -76,7 +71,7 @@ permissions-invalid-uri-label = Ju lutemi, jepni një strehëemër të vlefshëm
 ## Exceptions - Tracking Protection
 
 permissions-exceptions-etp-window =
-    .title = Përjashtime për Mbrojtje të Thelluar Nga Gjurmimet
+    .title = Përjashtime nga Mbrojtje e Thelluar Nga Gjurmimet
     .style = { permissions-window.style }
 permissions-exceptions-etp-desc = I keni çaktivizuar mbrojtjet në këto sajte.
 
@@ -88,6 +83,11 @@ permissions-exceptions-cookie-window =
 permissions-exceptions-cookie-desc = Mund të caktoni cilëve sajte u lejohet përherë ose kurrë të përdorin cookies dhe të dhëna sajtesh. Shtypni adresën e saktë të sajtit që doni të administroni dhe mandej klikoni Bllokoje, Lejoje për Sesion, ose Lejoje.
 
 ## Exceptions - HTTPS-Only Mode
+
+permissions-exceptions-https-only-window =
+    .title = Përjashtime - Mënyra Vetëm-HTTPS
+    .style = { permissions-window.style }
+permissions-exceptions-https-only-desc = Mënyrën Vetëm-HTTPS mund ta çaktivizoni për sajte specifike. Për këto sajte, { -brand-short-name }-i s’do të provojë të përmirësojë lidhjen me HTTPS të sigurt. Përjashtimet nuk vlejnë për dritare private.
 
 ## Exceptions - Pop-ups
 

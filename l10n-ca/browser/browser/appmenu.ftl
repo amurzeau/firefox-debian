@@ -12,6 +12,16 @@ appmenuitem-update-banner3 =
     .label-update-unsupported = No s'ha pogut actualitzar — sistema incompatible
     .label-update-restart = Hi ha una actualització — reinicia ara
 appmenuitem-protection-dashboard-title = Tauler de proteccions
+appmenuitem-banner-update-downloading =
+    .label = S'està baixant l'actualització del { -brand-shorter-name }
+appmenuitem-banner-update-available =
+    .label = Hi ha una actualització — baixa-la ara
+appmenuitem-banner-update-manual =
+    .label = Hi ha una actualització — baixa-la ara
+appmenuitem-banner-update-unsupported =
+    .label = No s'ha pogut actualitzar — sistema incompatible
+appmenuitem-banner-update-restart =
+    .label = Hi ha una actualització — reinicia ara
 appmenuitem-new-tab =
     .label = Pestanya nova
 appmenuitem-new-window =
@@ -118,6 +128,12 @@ whatsnew-panel-footer-checkbox =
 profiler-popup-button-idle =
     .label = Analitzador de rendiment
     .tooltiptext = Enregistra un perfil de rendiment
+profiler-popup-button-recording =
+    .label = Analitzador de rendiment
+    .tooltiptext = L'analitzador de rendiment està enregistrant un perfil
+profiler-popup-button-capturing =
+    .label = Analitzador de rendiment
+    .tooltiptext = L'analitzador de rendiment està capturant un perfil
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -166,6 +182,23 @@ profiler-popup-capture-shortcut =
 # devtools/client/performance-new/popup/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
+profiler-popup-presets-web-developer-description = Preconfiguració recomanada per a depuració de la majoria d'aplicacions web, amb poca sobrecàrrega.
+profiler-popup-presets-web-developer-label =
+    .label = Desenvolupador web
+profiler-popup-presets-firefox-platform-description = Preconfiguració recomanada per a la depuració interna de la interfície gràfica del Firefox.
+profiler-popup-presets-firefox-platform-label =
+    .label = Plataforma del Firefox
+profiler-popup-presets-firefox-front-end-description = Preconfiguració recomanada per a la depuració interna de la interfície gràfica del Firefox.
+profiler-popup-presets-firefox-front-end-label =
+    .label = Interfície del Firefox
+profiler-popup-presets-firefox-graphics-description = Preconfiguració recomanada per a la investigació del rendiment gràfic del Firefox.
+profiler-popup-presets-firefox-graphics-label =
+    .label = Rendiment gràfic del Firefox
+profiler-popup-presets-media-description = Preconfiguració recomanada per a diagnosticar problemes d'àudio i vídeo.
+profiler-popup-presets-media-label =
+    .label = Elements multimèdia
+profiler-popup-presets-custom-label =
+    .label = Personalitzat
 
 ## History panel
 

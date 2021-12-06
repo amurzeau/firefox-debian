@@ -122,11 +122,27 @@ cfr-doorhanger-video-support-header = Leqqem { -brand-short-name } i tɣuri n tv
 cfr-doorhanger-video-support-primary-button = Leqqem tura
     .accesskey = L
 
+## Spotlight modal shared strings
+
+spotlight-learn-more-collapsed = Issin ugar
+    .title = Snefli akken ad tissineḍ ugar ɣef tmahilt
+spotlight-learn-more-expanded = Issin ugar
+    .title = Mdel
+
 ## VPN promotion dialog for public Wi-Fi users
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
 ## to the Mozilla VPN page and a link to dismiss the dialog.
 
+# This header text can be explicitly wrapped.
+spotlight-public-wifi-vpn-header = Akka yettban tseqqdaceḍ Wi-Fi azayaz
+spotlight-public-wifi-vpn-primary-button = Qqim d uslig s { -mozilla-vpn-brand-name }
+    .accesskey = Q
 spotlight-public-wifi-vpn-link = Mačči tura
     .accesskey = M
+
+## Total Cookie Protection Rollout
+
+spotlight-total-cookie-protection-primary-button = Rmed ammesten asemday mgal inagan n tuqqna
+spotlight-total-cookie-protection-secondary-button = Mačči tura

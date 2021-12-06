@@ -80,12 +80,14 @@ menu-file-save-as-file =
 
 ## AppMenu
 
-appmenu-save-as-file =
-    .label = Ffeil…
 # Since v89 we dropped the platforms distinction between Options or Preferences
 # and consolidated everything with Preferences.
 appmenu-preferences =
     .label = Dewisiadau
+appmenu-save-as-file =
+    .label = Ffeil…
+appmenu-settings =
+    .label = Gosodiadau
 appmenu-addons-and-themes =
     .label = Ychwanegion a Themâu
 appmenu-help-enter-troubleshoot-mode =
@@ -106,6 +108,10 @@ context-menu-redirect-msg =
 
 other-action-redirect-msg =
     .label = Ailgyfeirio
+message-header-msg-is-flagged =
+    .title = Neges wedi'i marcio â seren
+message-header-msg-not-flagged =
+    .title = Neges heb ei marcio â seren
 
 ## Action Button Context Menu
 

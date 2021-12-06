@@ -12,6 +12,16 @@ appmenuitem-update-banner3 =
     .label-update-unsupported = S’arrihet të përditësohet — mospërputhje sistemi
     .label-update-restart = Përditësim gati — riniseni tani
 appmenuitem-protection-dashboard-title = Pult Mbrojtjesh
+appmenuitem-banner-update-downloading =
+    .label = Po shkarkohet përditësim { -brand-shorter-name }-i
+appmenuitem-banner-update-available =
+    .label = Përditësim gati — shkarkojeni që tani
+appmenuitem-banner-update-manual =
+    .label = Përditësim gati — shkarkojeni që tani
+appmenuitem-banner-update-unsupported =
+    .label = S’arrihet të përditësohet — mospërputhje sistemi
+appmenuitem-banner-update-restart =
+    .label = Përditësim gati — riniseni tani
 appmenuitem-new-tab =
     .label = Skedë e Re
 appmenuitem-new-window =
@@ -76,6 +86,8 @@ appmenu-remote-tabs-showmore =
 appmenu-remote-tabs-notabs = S'ka skeda të hapura
 # This is shown when Sync is configured but syncing tabs is disabled.
 appmenu-remote-tabs-tabsnotsyncing = Aktivizoni njëkohësim skedash që të shihni një listë skedash nga pajisje tuajat të tjera.
+appmenu-remote-tabs-opensettings =
+    .label = Rregullime
 # This is shown when Sync is configured but this appears to be the only device attached to
 # the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Doni të shihni këtu skedat tuaja nga pajisje të tjera?
@@ -116,6 +128,12 @@ whatsnew-panel-footer-checkbox =
 profiler-popup-button-idle =
     .label = Profilizues
     .tooltiptext = Regjistro një profil funksionimi
+profiler-popup-button-recording =
+    .label = Profilizues
+    .tooltiptext = Profilizuesi po regjistron një profil
+profiler-popup-button-capturing =
+    .label = Profilizues
+    .tooltiptext = Profili po merr një profil
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -164,6 +182,30 @@ profiler-popup-capture-shortcut =
 # devtools/client/performance-new/popup/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
+profiler-popup-presets-web-developer-description = Profil i gatshëm i rekomanduar për shumicën e diagnostikimit të aplikacioneve web, me kokëçarje të pakta.
+profiler-popup-presets-web-developer-label =
+    .label = Zhvillues Web
+profiler-popup-presets-firefox-platform-description = Profil i gatshëm i rekomanduar për diagnostikim të brendshëm të platformës së Firefox-it.
+profiler-popup-presets-firefox-platform-label =
+    .label = Platformë Firefox
+profiler-popup-presets-firefox-front-end-description = Profil i gatshëm i rekomanduar për diagnostikim të brendshëm të pjesës së përparme të Firefox-it.
+profiler-popup-presets-firefox-front-end-label =
+    .label = Pjesa e Përparme e Firefox-it
+profiler-popup-presets-firefox-graphics-description = Profil i gatshëm i rekomanduar për hetim funksionimi anësh grafike të Firefox-it.
+profiler-popup-presets-firefox-graphics-label =
+    .label = Ana Grafike e Firefox-it
+profiler-popup-presets-media-description = Profil i gatshëm i rekomanduar për diagnostikim problemesh audio dhe video.
+profiler-popup-presets-firefox-description = Model i rekomanduar për profilizim { -brand-shorter-name }.
+profiler-popup-presets-firefox-label =
+    .label = { -brand-shorter-name }
+profiler-popup-presets-graphics-description = Model për hetim të metash grafike në { -brand-shorter-name }.
+profiler-popup-presets-graphics-label =
+    .label = Grafikë
+profiler-popup-presets-media-description2 = Model për hetim të metash audio dhe video nën { -brand-shorter-name }.
+profiler-popup-presets-media-label =
+    .label = Media
+profiler-popup-presets-custom-label =
+    .label = Vetjak
 
 ## History panel
 

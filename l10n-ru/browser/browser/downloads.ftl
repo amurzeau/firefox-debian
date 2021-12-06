@@ -16,19 +16,14 @@ downloads-panel =
 # The style attribute has the width of the Downloads Panel expressed using
 # a CSS unit. The longest labels that should fit are usually those of
 # in-progress and blocked downloads.
-downloads-panel-list =
-    .style = width: 70ch
-# The style attribute has the width of the Downloads Panel expressed using
-# a CSS unit. The longest labels that should fit are usually those of
-# in-progress and blocked downloads.
 downloads-panel-items =
     .style = width: 35em
 downloads-cmd-pause =
-    .label = Приостановить
-    .accesskey = н
+    .label = Пауза
+    .accesskey = з
 downloads-cmd-resume =
     .label = Возобновить
-    .accesskey = о
+    .accesskey = б
 downloads-cmd-cancel =
     .tooltiptext = Отменить
 downloads-cmd-cancel-panel =
@@ -36,17 +31,26 @@ downloads-cmd-cancel-panel =
 # This message is only displayed on Windows and Linux devices
 downloads-cmd-show-menuitem =
     .label = Открыть папку с файлом
-    .accesskey = к
+    .accesskey = а
 # This message is only displayed on macOS devices
 downloads-cmd-show-menuitem-mac =
     .label = Показать в Finder
-    .accesskey = к
+    .accesskey = а
+downloads-cmd-show-menuitem-2 =
+    .label =
+        { PLATFORM() ->
+            [macos] Показать в Finder
+           *[other] Показать в папке
+        }
+    .accesskey = а
 downloads-cmd-use-system-default =
     .label = Открыть в программе просмотра по умолчанию
-    .accesskey = ы
+    .accesskey = м
+# We can use the same accesskey as downloads-cmd-always-open-similar-files.
+# Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-use-system-default =
     .label = Всегда открывать в программе просмотра по умолчанию
-    .accesskey = е
+    .accesskey = ю
 downloads-cmd-show-button =
     .tooltiptext =
         { PLATFORM() ->
@@ -65,18 +69,41 @@ downloads-cmd-show-description =
             [macos] Показать в Finder
            *[other] Открыть папку с файлом
         }
+# We can use the same accesskey as downloads-cmd-always-use-system-default.
+# Both should not be visible in the downloads context menu at the same time.
+downloads-cmd-always-open-similar-files =
+    .label = Всегда открывать подобные файлы
+    .accesskey = й
+downloads-cmd-show-button-2 =
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Показать в Finder
+           *[other] Показать в папке
+        }
+downloads-cmd-show-panel-2 =
+    .aria-label =
+        { PLATFORM() ->
+            [macos] Показать в Finder
+           *[other] Показать в папке
+        }
+downloads-cmd-show-description-2 =
+    .value =
+        { PLATFORM() ->
+            [macos] Показать в Finder
+           *[other] Показать в папке
+        }
 downloads-cmd-show-downloads =
-    .label = Открыть папку Загрузки
+    .label = Показать папку загрузок
 downloads-cmd-retry =
     .tooltiptext = Повторить
 downloads-cmd-retry-panel =
     .aria-label = Повторить
 downloads-cmd-go-to-download-page =
     .label = Перейти на страницу загрузки
-    .accesskey = е
+    .accesskey = н
 downloads-cmd-copy-download-link =
     .label = Копировать ссылку на загрузку
-    .accesskey = п
+    .accesskey = с
 downloads-cmd-remove-from-history =
     .label = Удалить из истории
     .accesskey = л
@@ -89,7 +116,7 @@ downloads-cmd-clear-downloads =
 # This command is shown in the context menu when downloads are blocked.
 downloads-cmd-unblock =
     .label = Разрешить загрузку
-    .accesskey = ш
+    .accesskey = р
 # This is the tooltip of the action button shown when malware is blocked.
 downloads-cmd-remove-file =
     .tooltiptext = Удалить файл
@@ -99,16 +126,16 @@ downloads-cmd-remove-file-panel =
 # downloads are blocked. This opens a dialog where the user can choose
 # whether to unblock or remove the download. Removing is the default option.
 downloads-cmd-choose-unblock =
-    .tooltiptext = Удалить файл или Разрешить загрузку
+    .tooltiptext = Удалить файл или разрешить загрузку
 downloads-cmd-choose-unblock-panel =
-    .aria-label = Удалить файл или Разрешить загрузку
+    .aria-label = Удалить файл или разрешить загрузку
 # This is the tooltip of the action button shown when uncommon downloads are
 # blocked.This opens a dialog where the user can choose whether to open the
 # file or remove the download. Opening is the default option.
 downloads-cmd-choose-open =
-    .tooltiptext = Открыть или Удалить файл
+    .tooltiptext = Открыть или удалить файл
 downloads-cmd-choose-open-panel =
-    .aria-label = Открыть или Удалить файл
+    .aria-label = Открыть или удалить файл
 # Displayed when hovering a blocked download, indicates that it's possible to
 # show more information for user to take the next action.
 downloads-show-more-information =
@@ -126,10 +153,10 @@ downloads-open-file =
 ##   $seconds (number) - Amount of seconds left till the file opens.
 ##   $minutes (number) - Amount of minutes till the file opens.
 
-downloading-file-opens-in-hours-and-minutes = Откроется через { $hours }ч { $minutes }м…
-downloading-file-opens-in-minutes = Откроется через { $minutes }м…
-downloading-file-opens-in-minutes-and-seconds = Откроется через { $minutes }м { $seconds }с…
-downloading-file-opens-in-seconds = Откроется через { $seconds }с…
+downloading-file-opens-in-hours-and-minutes = Откроется через { $hours } ч { $minutes } мин…
+downloading-file-opens-in-minutes = Откроется через { $minutes } мин…
+downloading-file-opens-in-minutes-and-seconds = Откроется через { $minutes } мин { $seconds } с…
+downloading-file-opens-in-seconds = Откроется через { $seconds } с…
 downloading-file-opens-in-some-time = Откроется после завершения…
 
 ##
@@ -152,13 +179,40 @@ downloads-history =
 # that we are showing the details of a single download.
 downloads-details =
     .title = Сведения о загрузке
+
+## Displayed when a site attempts to automatically download many files.
+## Variables:
+##   $num (number) - Number of blocked downloads.
+##   $url (string) - The url of the suspicious site, stripped of http, https and www prefix.
+
+downloads-files-not-downloaded =
+    { $num ->
+        [one] { $num } файл не загружен.
+        [few] { $num } файла не загружено.
+       *[many] { $num } файлов не загружены.
+    }
+downloads-blocked-from-url = Загрузки с { $url } заблокированы.
+downloads-blocked-download-detailed-info = { $url } пытался автоматически загрузить большое число файлов. Возможно, сайт был неисправен или пытался разместить спам-файлы на вашем устройстве.
+
+##
+
 downloads-clear-downloads-button =
     .label = Очистить загрузки
     .tooltiptext = Очистить завершённые, отменённые и неудавшиеся загрузки
 # This string is shown when there are no items in the Downloads view, when it
 # is displayed inside a browser tab.
 downloads-list-empty =
-    .value = Загрузок нет
+    .value = Загрузок нет.
 # This string is shown when there are no items in the Downloads Panel.
 downloads-panel-empty =
     .value = В этой сессии загрузок не было.
+# This is displayed in an item at the bottom of the Downloads Panel when there
+# are more downloads than can fit in the list in the panel.
+#   $count (number) - number of files being downloaded that are not shown in the
+#                     panel list.
+downloads-more-downloading =
+    { $count ->
+        [one] Загружается ещё { $count } файл
+        [few] Загружается ещё { $count } файла
+       *[many] Загружается ещё { $count } файлов
+    }

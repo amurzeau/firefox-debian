@@ -5,6 +5,12 @@
 reload-tab =
     .label = ටැබ් ප්‍රතිපූරණය කරන්න
     .accesskey = R
+tab-context-play-tab =
+    .label = ටැබය ධාවනය කරන්න
+    .accesskey = l
+tab-context-play-tabs =
+    .label = ටැබ ධාවනය කරන්න
+    .accesskey = y
 duplicate-tab =
     .label = ටැබ පිටපතක්
     .accesskey = D

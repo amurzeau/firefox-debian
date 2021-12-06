@@ -122,15 +122,37 @@ cfr-doorhanger-video-support-header = { -brand-short-name } aktualisieren, um Vi
 cfr-doorhanger-video-support-primary-button = Jetzt aktualisieren
     .accesskey = a
 
+## Spotlight modal shared strings
+
+spotlight-learn-more-collapsed = Weitere Informationen
+    .title = Ausklappen, um mehr über die Funktion zu erfahren
+spotlight-learn-more-expanded = Weitere Informationen
+    .title = Schließen
+
 ## VPN promotion dialog for public Wi-Fi users
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
 ## to the Mozilla VPN page and a link to dismiss the dialog.
 
+# This header text can be explicitly wrapped.
 spotlight-public-wifi-vpn-header = Offenbar verwenden Sie öffentliches WLAN
 spotlight-public-wifi-vpn-body = Um Ihren Standort und Ihre Surfaktivitäten zu verbergen, sollten Sie ein virtuelles privates Netzwerk in Betracht ziehen. Es schützt Sie beim Surfen an öffentlichen Orten wie Flughäfen und Cafés.
 spotlight-public-wifi-vpn-primary-button = Schützen Sie Ihre Privatsphäre mit { -mozilla-vpn-brand-name }
     .accesskey = P
 spotlight-public-wifi-vpn-link = Nicht jetzt
     .accesskey = N
+
+## Total Cookie Protection Rollout
+
+# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
+# "Join an early experiment". This header text can be explicitly wrapped.
+spotlight-total-cookie-protection-header =
+    Nutzen Sie vorab unsere leistungsstärkste
+    Datenschutzerfahrung aller Zeiten
+spotlight-total-cookie-protection-body = Der vollständige Cookie-Schutz hindert Elemente zur Aktivitätenverfolgung daran, Cookies zu verwenden, um Sie im Internet zu verfolgen.
+# "Early access" for this feature rollout means it's a "feature preview" or
+# "soft launch" as not everybody will get it yet.
+spotlight-total-cookie-protection-expanded = { -brand-short-name } baut einen Zaun um Cookies und beschränkt sie auf die Website, auf der Sie sich befinden, sodass Elemente zur Aktivitätenverfolgung sie nicht verwenden können, um Ihnen zu folgen. Durch die Vorab-Nutzung helfen Sie, diese Funktion zu optimieren, damit wir weiterhin ein besseres Web für alle aufbauen können.
+spotlight-total-cookie-protection-primary-button = Vollständigen Cookie-Schutz aktivieren
+spotlight-total-cookie-protection-secondary-button = Nicht jetzt

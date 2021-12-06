@@ -16,11 +16,6 @@ downloads-panel =
 # The style attribute has the width of the Downloads Panel expressed using
 # a CSS unit. The longest labels that should fit are usually those of
 # in-progress and blocked downloads.
-downloads-panel-list =
-    .style = width: 70ch
-# The style attribute has the width of the Downloads Panel expressed using
-# a CSS unit. The longest labels that should fit are usually those of
-# in-progress and blocked downloads.
 downloads-panel-items =
     .style = width: 35em
 downloads-cmd-pause =
@@ -41,9 +36,18 @@ downloads-cmd-show-menuitem =
 downloads-cmd-show-menuitem-mac =
     .label = Finder’da göster
     .accesskey = F
+downloads-cmd-show-menuitem-2 =
+    .label =
+        { PLATFORM() ->
+            [macos] Finder’da göster
+           *[other] Klasörde göster
+        }
+    .accesskey = ö
 downloads-cmd-use-system-default =
     .label = Sistem görüntüleyicisinde aç
     .accesskey = S
+# We can use the same accesskey as downloads-cmd-always-open-similar-files.
+# Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-use-system-default =
     .label = Her zaman sistem görüntüleyicisinde aç
     .accesskey = H
@@ -64,6 +68,29 @@ downloads-cmd-show-description =
         { PLATFORM() ->
             [macos] Finder’da göster
            *[other] Bulunduğu klasörü aç
+        }
+# We can use the same accesskey as downloads-cmd-always-use-system-default.
+# Both should not be visible in the downloads context menu at the same time.
+downloads-cmd-always-open-similar-files =
+    .label = Benzer dosyaları her zaman aç
+    .accesskey = B
+downloads-cmd-show-button-2 =
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Finder’da göster
+           *[other] Klasörde göster
+        }
+downloads-cmd-show-panel-2 =
+    .aria-label =
+        { PLATFORM() ->
+            [macos] Finder’da göster
+           *[other] Klasörde göster
+        }
+downloads-cmd-show-description-2 =
+    .value =
+        { PLATFORM() ->
+            [macos] Finder’da göster
+           *[other] Klasörde göster
         }
 downloads-cmd-show-downloads =
     .label = İndirilenler klasörünü göster
@@ -152,6 +179,22 @@ downloads-history =
 # that we are showing the details of a single download.
 downloads-details =
     .title = İndirme ayrıntıları
+
+## Displayed when a site attempts to automatically download many files.
+## Variables:
+##   $num (number) - Number of blocked downloads.
+##   $url (string) - The url of the suspicious site, stripped of http, https and www prefix.
+
+downloads-files-not-downloaded =
+    { $num ->
+        [one] Dosya indirilmedi.
+       *[other] { $num } dosya indirilmedi.
+    }
+downloads-blocked-from-url = { $url } adresinden indirmeler engellendi.
+downloads-blocked-download-detailed-info = { $url } otomatik olarak birden çok dosya indirmeye çalıştı. Site bozuk olabilir veya cihazınızda spam dosyalar depolamaya çalışıyor olabilir.
+
+##
+
 downloads-clear-downloads-button =
     .label = İndirmeleri temizle
     .tooltiptext = Tamamlanan, iptal edilen ve başarısız olan indirmeleri temizler
@@ -162,3 +205,12 @@ downloads-list-empty =
 # This string is shown when there are no items in the Downloads Panel.
 downloads-panel-empty =
     .value = Bu oturumda indirme yapılmadı.
+# This is displayed in an item at the bottom of the Downloads Panel when there
+# are more downloads than can fit in the list in the panel.
+#   $count (number) - number of files being downloaded that are not shown in the
+#                     panel list.
+downloads-more-downloading =
+    { $count ->
+        [one] { $count } dosya daha indiriliyor
+       *[other] { $count } dosya daha indiriliyor
+    }

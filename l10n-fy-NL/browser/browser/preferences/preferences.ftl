@@ -5,7 +5,7 @@
 do-not-track-description = Websites in ‘Net folgje’-sinjaal stjoere om litte te witten dat jo net folge wurde wolle
 do-not-track-learn-more = Mear ynfo
 do-not-track-option-default-content-blocking-known =
-    .label = Allinnich wannear't { -brand-short-name } ynsteld is om bekende trackers te blokkearjen
+    .label = Allinnich wannear’t { -brand-short-name } ynsteld is om bekende trackers te blokkearjen
 do-not-track-option-always =
     .label = Altyd
 settings-page-title = Ynstellingen
@@ -87,7 +87,7 @@ extension-controlled-privacy-containers = In útwreiding, <img data-l10n-name="i
 extension-controlled-websites-content-blocking-all-trackers = In útwreiding, <img data-l10n-name="icon"/> { $name }, hat behear oer dizze ynstelling.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
-extension-controlled-proxy-config = De útwreiding <img data-l10n-name="icon"/> { $name } bepaalt hoe't { -brand-short-name } ferbining makket mei it ynternet.
+extension-controlled-proxy-config = De útwreiding <img data-l10n-name="icon"/> { $name } bepaalt hoe’t { -brand-short-name } ferbining makket mei it ynternet.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -207,11 +207,11 @@ preferences-zoom-text-only =
     .label = Allinnich tekst ynzoome
     .accesskey = t
 language-header = Taal
-choose-language-description = Talen kieze dêr't websites yn werjûn wurde moatte.
+choose-language-description = Talen kieze dêr’t websites yn werjûn wurde moatte.
 choose-button =
     .label = Kieze…
     .accesskey = i
-choose-browser-language-description = Kies de talen dy't brûkt wurde foar it werjaan fan menu’s, berjochten en notifikaasjes fan { -brand-short-name }.
+choose-browser-language-description = Kies de talen dy’t brûkt wurde foar it werjaan fan menu’s, berjochten en notifikaasjes fan { -brand-short-name }.
 manage-browser-languages-button =
     .label = Alternativen ynstelle…
     .accesskey = A
@@ -254,10 +254,10 @@ download-choose-folder =
            *[other] d
         }
 download-always-ask-where =
-    .label = My altyd freegje wêr't bestannen bewarre wurde moatte
+    .label = My altyd freegje wêr’t bestannen bewarre wurde moatte
     .accesskey = b
 applications-header = Applikaasjes
-applications-description = Kieze hoe't { -brand-short-name } omgiet mei de bestannen dy't jo fan it web downloade of de tapassingen dy't jo wylst it sneupen brûke.
+applications-description = Kieze hoe’t { -brand-short-name } omgiet mei de bestannen dy’t jo fan it web downloade of de tapassingen dy’t jo wylst it sneupen brûke.
 applications-filter =
     .placeholder = Bestânstypen of tapassingen sykje
 applications-type-column =
@@ -355,7 +355,7 @@ update-application-manual =
 update-application-background-enabled =
     .label = As { -brand-short-name } net útfierd wurdt
     .accesskey = A
-update-application-warning-cross-user-setting = Dizze ynstelling is fan tapassing op alle Windows-accounts en { -brand-short-name }-profilen dy't dizze ynstallaasje fan { -brand-short-name } brûke.
+update-application-warning-cross-user-setting = Dizze ynstelling is fan tapassing op alle Windows-accounts en { -brand-short-name }-profilen dy’t dizze ynstallaasje fan { -brand-short-name } brûke.
 update-application-use-service =
     .label = Brûk in eftergrûntsjinst om fernijingen te ynstallearjen
     .accesskey = a
@@ -455,7 +455,7 @@ home-restore-defaults =
 home-mode-choice-default =
     .label = Firefox-startside (Standert)
 home-mode-choice-custom =
-    .label = Oanpaste URL's
+    .label = Oanpaste URL’s
 home-mode-choice-blank =
     .label = Lege side
 home-homepage-custom-url =
@@ -507,7 +507,7 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponsore ferhalen
 home-prefs-highlights-header =
     .label = Hichtepunten
-home-prefs-highlights-description = In seleksje fan websites dy't jo bewarre of besocht hawwe
+home-prefs-highlights-description = In seleksje fan websites dy’t jo bewarre of besocht hawwe
 home-prefs-highlights-option-visited-pages =
     .label = Besochte siden
 home-prefs-highlights-options-bookmarks =
@@ -543,12 +543,12 @@ search-bar-shown =
     .label = Sykbalke yn arkbalke tafoegje
 search-engine-default-header = Standertsykmasine
 search-engine-default-desc-2 = Dit is jo standertsykmasine yn de adresbalke en de sykbalke. Jo kinne dizze op elk momint wizigje.
-search-engine-default-private-desc-2 = Kies in oare standertsykmasine dy't jo yn priveefinsters brûke wolle
+search-engine-default-private-desc-2 = Kies in oare standertsykmasine dy’t jo yn priveefinsters brûke wolle
 search-separate-default-engine =
     .label = Dizze sykmasine yn priveefinsters brûke
     .accesskey = s
 search-suggestions-header = Sykfoarstellen
-search-suggestions-desc = Kies hoe't sykfoarstellen fan sykmasinen werjûn wurde.
+search-suggestions-desc = Kies hoe’t sykfoarstellen fan sykmasinen werjûn wurde.
 search-suggestions-option =
     .label = Sykfoarstellen jaan
     .accesskey = S
@@ -567,7 +567,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic2 = Ynstellingen foar oare adresbalksuggestjs wizigje
 search-suggestions-cant-show = Sykfoarstellen wurde net yn lokaasjebalkresultaten toand, omdat jo { -brand-short-name } konfigurearre hawwe om nea skiednis te ûnthâlden.
 search-one-click-header2 = Fluchkeppelingen sykje
-search-one-click-desc = Kies de alternative sykmasinen dy't ûnder de adresbalke en sykbalke ferskine as jo in kaaiwurd begjinne yn te fieren.
+search-one-click-desc = Kies de alternative sykmasinen dy’t ûnder de adresbalke en sykbalke ferskine as jo in kaaiwurd begjinne yn te fieren.
 search-choose-engine-column =
     .label = Sykmasine
 search-choose-keyword-column =
@@ -694,7 +694,7 @@ sync-engine-tabs =
     .accesskey = b
 sync-engine-logins-passwords =
     .label = Oanmeldingen en wachtwurden
-    .tooltiptext = Oanmeldingen en wachtwurden dy't jo bewarre hawwe
+    .tooltiptext = Oanmeldingen en wachtwurden dy’t jo bewarre hawwe
     .accesskey = a
 sync-engine-addresses =
     .label = Adressen
@@ -706,7 +706,7 @@ sync-engine-creditcards =
     .accesskey = C
 sync-engine-addons =
     .label = Add-ons
-    .tooltiptext = Utwreidingen en tema's foar Firefox foar desktop
+    .tooltiptext = Utwreidingen en tema’s foar Firefox foar desktop
     .accesskey = A
 sync-engine-settings =
     .label = Ynstellingen
@@ -946,6 +946,16 @@ content-blocking-all-windows-tracking-content = Folchynhâld yn alle finsters
 content-blocking-all-third-party-cookies = Alle cookies fan tredden
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
+# "Test pilot" is used as a verb. Possible alternatives:
+# "Be the first to try", "Join an early experiment".
+content-blocking-etp-standard-tcp-rollout-checkbox =
+    .label =
+        Meitsje in testrit yn ús krêftichste privacyfunksje ea
+        privacy-ûnderfining ea
+    .accesskey = t
+# "Contains" here means "isolates", "limits".
+content-blocking-etp-standard-tcp-rollout-description = Totale cookiebeskerming slút cookies yn op de website dy’t jo besykje, sadat trackers se net brûke kinne om jo tusken websites te folgjen.
+content-blocking-etp-standard-tcp-rollout-learn-more = Mear ynfo
 content-blocking-warning-title = Let op!
 content-blocking-and-isolating-etp-warning-description = It blokkearjen fan trackers en isolearjen fan cookies kin de funksjonaliteit fan guon websites beynfloedzje. Laad in side mei trackers opnij om alle ynhâld te laden.
 content-blocking-and-isolating-etp-warning-description-2 = Dizze ynstelling kin derfoar soargje dat guon websites ynhâld net toane of net korrekt wurkje. As in website net liket te wurkjen, dan kinne jo beskerming tsjin folgjen foar dy website útskeakelje om alle ynhâld te laden.

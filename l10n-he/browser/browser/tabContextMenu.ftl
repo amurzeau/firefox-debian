@@ -11,6 +11,12 @@ reload-tab =
 select-all-tabs =
     .label = בחירת כל הלשוניות
     .accesskey = ב
+tab-context-play-tab =
+    .label = ניגון לשונית
+    .accesskey = נ
+tab-context-play-tabs =
+    .label = ניגון לשוניות
+    .accesskey = נ
 duplicate-tab =
     .label = שכפול לשונית
     .accesskey = כ
@@ -104,7 +110,6 @@ tab-context-move-tabs =
            *[other] העברת לשוניות
         }
     .accesskey = ע
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

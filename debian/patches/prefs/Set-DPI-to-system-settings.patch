@@ -7,7 +7,7 @@ Subject: Set DPI to system settings
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/modules/libpref/init/all.js b/modules/libpref/init/all.js
-index e17c1c5..283a88d 100644
+index 2cec339..7878e2e 100644
 --- a/modules/libpref/init/all.js
 +++ b/modules/libpref/init/all.js
 @@ -2353,7 +2353,7 @@ pref("bidi.browser.ui", false);

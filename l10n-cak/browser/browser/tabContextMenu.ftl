@@ -11,6 +11,12 @@ reload-tab =
 select-all-tabs =
     .label = Kecha' Ronojel Ruwi'
     .accesskey = h
+tab-context-play-tab =
+    .label = Titzij ri ruwi'
+    .accesskey = t
+tab-context-play-tabs =
+    .label = Ketzij Ruwi'
+    .accesskey = j
 duplicate-tab =
     .label = Tikamulüx Ruwi'
     .accesskey = T
@@ -99,7 +105,6 @@ tab-context-move-tabs =
            *[other] Kesilöx Ruwi'
         }
     .accesskey = s
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

@@ -10,6 +10,9 @@
 menu-tools-preferences =
     .label = Asetukset
     .accesskey = A
+menu-tools-settings =
+    .label = Asetukset
+    .accesskey = A
 menu-addons-and-themes =
     .label = Lisäosat ja teemat
     .accesskey = L
@@ -49,6 +52,9 @@ menu-view-repair-text-encoding =
 
 ## View / Layout
 
+mail-uidensity-label =
+    .label = Tiheys
+    .accesskey = h
 mail-uidensity-compact =
     .label = Tiivistä
     .accesskey = v

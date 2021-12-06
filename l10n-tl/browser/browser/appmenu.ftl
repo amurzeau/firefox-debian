@@ -12,6 +12,16 @@ appmenuitem-update-banner3 =
     .label-update-unsupported = Hindi makapag-update — hindi tugma sa system
     .label-update-restart = Mayroong update — mag-restart na
 appmenuitem-protection-dashboard-title = Protections Dashboard
+appmenuitem-banner-update-downloading =
+    .label = Nagda-download ng { -brand-shorter-name } update
+appmenuitem-banner-update-available =
+    .label = Mayroong update — i-download na
+appmenuitem-banner-update-manual =
+    .label = Mayroong update — i-download na
+appmenuitem-banner-update-unsupported =
+    .label = Hindi makapag-update — hindi tugma sa system
+appmenuitem-banner-update-restart =
+    .label = Mayroong update — mag-restart na
 appmenuitem-new-tab =
     .label = Bagong Tab
 appmenuitem-new-window =
@@ -116,6 +126,12 @@ whatsnew-panel-footer-checkbox =
 profiler-popup-button-idle =
     .label = Profiler
     .tooltiptext = Mag-record ng performance profile
+profiler-popup-button-recording =
+    .label = Profiler
+    .tooltiptext = The profiler is recording a profile
+profiler-popup-button-capturing =
+    .label = Profiler
+    .tooltiptext = The profiler is capturing a profile
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -166,6 +182,14 @@ profiler-popup-capture-shortcut =
 # devtools/client/performance-new/popup/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
+profiler-popup-presets-web-developer-label =
+    .label = Web Developer
+profiler-popup-presets-firefox-platform-label =
+    .label = Firefox Platform
+profiler-popup-presets-firefox-front-end-label =
+    .label = Firefox Front-End
+profiler-popup-presets-firefox-graphics-label =
+    .label = Firefox Graphics
 
 ## History panel
 

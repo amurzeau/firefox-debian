@@ -156,7 +156,7 @@ show-tabs-in-taskbar =
 browser-containers-enabled =
     .label = Aktivera innehållsflikar
     .accesskey = k
-browser-containers-learn-more = Lär dig mer
+browser-containers-learn-more = Läs mer
 browser-containers-settings =
     .label = Inställningar…
     .accesskey = s
@@ -946,6 +946,14 @@ content-blocking-all-windows-tracking-content = Spårningsinnehåll i alla föns
 content-blocking-all-third-party-cookies = Alla kakor från tredje part
 content-blocking-cryptominers = Kryptogrävare
 content-blocking-fingerprinters = Fingeravtrycksspårare
+# "Test pilot" is used as a verb. Possible alternatives:
+# "Be the first to try", "Join an early experiment".
+content-blocking-etp-standard-tcp-rollout-checkbox =
+    .label = Förhandstesta vår mest kraftfulla sekretessfunktion någonsin
+    .accesskey = F
+# "Contains" here means "isolates", "limits".
+content-blocking-etp-standard-tcp-rollout-description = Totalt skydd mot kakor isolerar kakor från webbplatsen du är på, så spårare inte kan använda dem för att följa dig mellan webbplatser.
+content-blocking-etp-standard-tcp-rollout-learn-more = Lär dig mer
 content-blocking-warning-title = Se upp!
 content-blocking-and-isolating-etp-warning-description = Blockering av spårare och isolering av kakor kan påverka funktionaliteten på vissa webbplatser. Ladda om en sida med spårare för att ladda allt innehåll.
 content-blocking-and-isolating-etp-warning-description-2 = Denna inställning kan göra att vissa webbplatser inte visar innehåll eller fungerar korrekt. Om en webbplats verkar trasig kanske du vill inaktivera spårningsskydd för den webbplatsen för att ladda allt innehåll.
@@ -956,7 +964,7 @@ content-blocking-reload-tabs-button =
     .accesskey = L
 content-blocking-tracking-content-label =
     .label = Spårningsinnehåll
-    .accesskey = i
+    .accesskey = r
 content-blocking-tracking-protection-option-all-windows =
     .label = I alla fönster
     .accesskey = a

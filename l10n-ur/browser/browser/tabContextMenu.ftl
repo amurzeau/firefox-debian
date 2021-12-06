@@ -11,6 +11,12 @@ reload-tab =
 select-all-tabs =
     .label = تمام ٹیب منتخب کریں
     .accesskey = S
+tab-context-play-tab =
+    .label = ٹیب چلائیں
+    .accesskey = چ
+tab-context-play-tabs =
+    .label = ٹیب چلائیں
+    .accesskey = y
 duplicate-tab =
     .label = دوهرا ٹیب
     .accesskey = D
@@ -46,6 +52,9 @@ bookmark-selected-tabs =
 bookmark-tab =
     .label = ٹیب بک مارک کریں
     .accesskey = B
+tab-context-open-in-new-container-tab =
+    .label = نئے کنٹینر ٹیب میں کھولیں۔
+    .accesskey = e
 move-to-new-window =
     .label = نئے دریچے میں بڑھائیں
     .accesskey = W
@@ -85,4 +94,3 @@ tab-context-move-tabs =
            *[other] ٹیب منتقل کریں
         }
     .accesskey = v
-

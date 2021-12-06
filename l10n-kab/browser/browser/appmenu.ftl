@@ -12,6 +12,16 @@ appmenuitem-update-banner3 =
     .label-update-unsupported = D awezɣi ad yettuleqqem — anagraw ur yemṣada ara
     .label-update-restart = Yella lqem — ales asenker tura
 appmenuitem-protection-dashboard-title = Ammesten n tfelwit n usenqed
+appmenuitem-banner-update-downloading =
+    .label = Asader n lqem { -brand-shorter-name }
+appmenuitem-banner-update-available =
+    .label = Yella lqem — sader tura
+appmenuitem-banner-update-manual =
+    .label = Yella lqem — sader tura
+appmenuitem-banner-update-unsupported =
+    .label = D awezɣi ad yettuleqqem — anagraw ur yemṣada ara
+appmenuitem-banner-update-restart =
+    .label = Yella lqem — ales asenker tura
 appmenuitem-new-tab =
     .label = Iccer amaynut
 appmenuitem-new-window =
@@ -118,6 +128,12 @@ whatsnew-panel-footer-checkbox =
 profiler-popup-button-idle =
     .label = Amaɣnay
     .tooltiptext = Sekles amaɣnu n tmellit
+profiler-popup-button-recording =
+    .label = Amaɣnay
+    .tooltiptext = Amaɣnay isseklas amaɣnu
+profiler-popup-button-capturing =
+    .label = Amaɣnay
+    .tooltiptext = Amaɣnu itegg tuṭṭfa n ugdil i umaqnu
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -168,6 +184,23 @@ profiler-popup-capture-shortcut =
 # devtools/client/performance-new/popup/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
+profiler-popup-presets-web-developer-description = Uzwirfren yettuwellhen i tuget n tseɣtit n usnas web, s uwzir fessusen maḍi.
+profiler-popup-presets-web-developer-label =
+    .label = Aneflay web
+profiler-popup-presets-firefox-platform-description = Uzwirfren yettuwellhen i tseɣtit tagensant n tɣerɣert n Firefox.
+profiler-popup-presets-firefox-platform-label =
+    .label = Tiɣerɣert n Firefox
+profiler-popup-presets-firefox-front-end-description = Uzwirfren yettuwellhen i tseɣtit tagensant n ugrudem n Firefox.
+profiler-popup-presets-firefox-front-end-label =
+    .label = Agrudem n Firefox
+profiler-popup-presets-firefox-graphics-description = Uzwirfren yettuwellhen i tezrawt n temlellit n wudlifen n Firefox.
+profiler-popup-presets-firefox-graphics-label =
+    .label = Udlifen n Firefox
+profiler-popup-presets-media-description = Uzwirfren yettuwellhen i tesleḍt n wuguren n umeslaw d tvidyut.
+profiler-popup-presets-media-label =
+    .label = Allalen n teywalt
+profiler-popup-presets-custom-label =
+    .label = Udmawan
 
 ## History panel
 

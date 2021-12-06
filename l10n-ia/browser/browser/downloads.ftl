@@ -16,11 +16,6 @@ downloads-panel =
 # The style attribute has the width of the Downloads Panel expressed using
 # a CSS unit. The longest labels that should fit are usually those of
 # in-progress and blocked downloads.
-downloads-panel-list =
-    .style = width: 70ch
-# The style attribute has the width of the Downloads Panel expressed using
-# a CSS unit. The longest labels that should fit are usually those of
-# in-progress and blocked downloads.
 downloads-panel-items =
     .style = width: 40em
 downloads-cmd-pause =
@@ -41,9 +36,18 @@ downloads-cmd-show-menuitem =
 downloads-cmd-show-menuitem-mac =
     .label = Monstrar in Finder
     .accesskey = F
+downloads-cmd-show-menuitem-2 =
+    .label =
+        { PLATFORM() ->
+            [macos] Monstrar in Finder
+           *[other] Monstrar in dossier
+        }
+    .accesskey = F
 downloads-cmd-use-system-default =
     .label = Aperir in le visor del systema
     .accesskey = v
+# We can use the same accesskey as downloads-cmd-always-open-similar-files.
+# Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-use-system-default =
     .label = Aperir sempre in le visor del systema
     .accesskey = s
@@ -64,6 +68,29 @@ downloads-cmd-show-description =
         { PLATFORM() ->
             [macos] Monstrar in Finder
            *[other] Aperir le dossier que lo contine
+        }
+# We can use the same accesskey as downloads-cmd-always-use-system-default.
+# Both should not be visible in the downloads context menu at the same time.
+downloads-cmd-always-open-similar-files =
+    .label = Semper aperir files simile
+    .accesskey = S
+downloads-cmd-show-button-2 =
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Monstrar in Finder
+           *[other] Monstrar in dossier
+        }
+downloads-cmd-show-panel-2 =
+    .aria-label =
+        { PLATFORM() ->
+            [macos] Monstrar in Finder
+           *[other] Monstrar in dossier
+        }
+downloads-cmd-show-description-2 =
+    .value =
+        { PLATFORM() ->
+            [macos] Monstrar in Finder
+           *[other] Monstrar in dossier
         }
 downloads-cmd-show-downloads =
     .label = Monstrar le dossier de discargamentos
@@ -152,6 +179,22 @@ downloads-history =
 # that we are showing the details of a single download.
 downloads-details =
     .title = Detalios del discargamento
+
+## Displayed when a site attempts to automatically download many files.
+## Variables:
+##   $num (number) - Number of blocked downloads.
+##   $url (string) - The url of the suspicious site, stripped of http, https and www prefix.
+
+downloads-files-not-downloaded =
+    { $num ->
+        [one] file non discargate
+       *[other] { $num } files non discargate.
+    }
+downloads-blocked-from-url = Discargamentos blocate per { $url }.
+downloads-blocked-download-detailed-info = { $url } tentava de discargar automaticamente plure files. Le sito pote esser corrupte o tenta de immagazinage files SPAM sur tu apparato.
+
+##
+
 downloads-clear-downloads-button =
     .label = Vacuar discargamentos
     .tooltiptext = Vacua le lista de discargamentos complete, cancellate e fallite
@@ -162,3 +205,12 @@ downloads-list-empty =
 # This string is shown when there are no items in the Downloads Panel.
 downloads-panel-empty =
     .value = Nulle discargamentos pro iste session.
+# This is displayed in an item at the bottom of the Downloads Panel when there
+# are more downloads than can fit in the list in the panel.
+#   $count (number) - number of files being downloaded that are not shown in the
+#                     panel list.
+downloads-more-downloading =
+    { $count ->
+        [one] { $count } altere file in discargamento
+       *[other] { $count } altere files in discargamento
+    }
