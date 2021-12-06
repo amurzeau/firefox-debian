@@ -11,27 +11,31 @@ appmenuitem-update-banner3 =
     .label-update-manual = Päivitys saatavilla – lataa nyt
     .label-update-unsupported = Päivitys ei onnistu – järjestelmä ei yhteensopiva
     .label-update-restart = Päivitys saatavilla – käynnistä uudelleen
-
 appmenuitem-protection-dashboard-title = Suojausten yhteenveto
-appmenuitem-customize-mode =
-    .label = Muokkaa…
-
-## Zoom Controls
-
 appmenuitem-new-tab =
     .label = Uusi välilehti
 appmenuitem-new-window =
     .label = Uusi ikkuna
 appmenuitem-new-private-window =
     .label = Uusi yksityinen ikkuna
+appmenuitem-history =
+    .label = Sivuhistoria
+appmenuitem-downloads =
+    .label = Lataukset
 appmenuitem-passwords =
     .label = Salasanat
 appmenuitem-addons-and-themes =
     .label = Lisäosat ja teemat
+appmenuitem-print =
+    .label = Tulosta…
 appmenuitem-find-in-page =
     .label = Etsi sivulta…
+appmenuitem-zoom =
+    .value = Sivun suurennus
 appmenuitem-more-tools =
     .label = Lisää työkaluja
+appmenuitem-help =
+    .label = Ohje
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -44,7 +48,6 @@ appmenu-menu-button-closed2 =
 appmenu-menu-button-opened2 =
     .tooltiptext = Sulje sovellusvalikko
     .label = { -brand-short-name }
-
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -56,21 +59,34 @@ appmenuitem-zoom-enlarge =
     .label = Lähennä
 appmenuitem-zoom-reduce =
     .label = Loitonna
-
 appmenuitem-fullscreen =
     .label = Koko näytön tila
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
-fxa-toolbar-sync-now =
-    .label = Synkronoi
-
 appmenu-remote-tabs-sign-into-sync =
     .label = Kirjaudu synkronoidaksesi…
 appmenu-remote-tabs-turn-on-sync =
     .label = Ota synkronointi käyttöön…
-
+# This is shown after the tabs list if we can display more tabs by clicking on the button
+appmenu-remote-tabs-showmore =
+    .label = Näytä lisää välilehtiä
+    .tooltiptext = Näytä lisää välilehtiä tältä laitteelta
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = Ei avoimia välilehtiä
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = Ota välilehtien synkronointi käyttöön, jotta voit katsella listaa muiden laitteidesi välilehdistä.
+appmenu-remote-tabs-opensettings =
+    .label = Asetukset
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = Haluatko nähdä muiden laitteiden välilehdet tässä?
+appmenu-remote-tabs-connectdevice =
+    .label = Yhdistä toinen laite
+appmenu-remote-tabs-welcome = Näytä lista välilehdistä muilta laitteiltasi.
+appmenu-remote-tabs-unverified = Tilisi tarvitsee vahvistaa.
 appmenuitem-fxa-toolbar-sync-now2 = Synkronoi nyt
+appmenuitem-fxa-sign-in = Kirjaudu { -brand-product-name }iin
 appmenuitem-fxa-manage-account = Hallinnoi tiliä
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
@@ -83,14 +99,12 @@ appmenu-fxa-signed-in-label = Kirjaudu
 appmenu-fxa-setup-sync =
     .label = Ota synkronointi käyttöön…
 appmenu-fxa-show-more-tabs = Näytä lisää välilehtiä
-
 appmenuitem-save-page =
     .label = Tallenna sivu nimellä…
 
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Mitä uutta
-
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =
@@ -101,54 +115,57 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Profiler
+    .tooltiptext = Record a performance profile
 profiler-popup-title =
     .value = { -profiler-brand-name }
-
 profiler-popup-reveal-description-button =
     .aria-label = Näytä lisätietoja
-
 profiler-popup-description-title =
     .value = Tallenna, analysoi, jaa
-
 profiler-popup-description = Työskentele suoprituskykyongelmien parissa yhdessä julkaisemalla profiileita ja jakamalla niitä tiimin kanssa.
-
 profiler-popup-learn-more = Lue lisää
-
+profiler-popup-learn-more-button =
+    .label = Lue lisää
 profiler-popup-settings =
     .value = Asetukset
-
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Muokkaa asetuksia…
-
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Muokkaa asetuksia…
 profiler-popup-disabled = Profiloija ei ole tällä hetkellä käytössä, todennäköisesti koska yksityisen selauksen ikkuna on auki.
-
 profiler-popup-recording-screen = Tallennetaan…
-
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
 profiler-popup-presets-custom =
     .label = Mukautettu
-
 profiler-popup-start-recording-button =
     .label = Aloita tallennus
-
 profiler-popup-discard-button =
     .label = Hylkää
-
 profiler-popup-capture-button =
     .label = Kaappaa
-
 profiler-popup-start-shortcut =
     { PLATFORM() ->
         [macos] ⌃⇧1
        *[other] Ctrl+Shift+1
     }
-
 profiler-popup-capture-shortcut =
     { PLATFORM() ->
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
 
 ## History panel
 
@@ -156,7 +173,6 @@ appmenu-manage-history =
     .label = Hallitse historiaa
 appmenu-reopen-all-tabs = Avaa uudelleen kaikki välilehdet
 appmenu-reopen-all-windows = Avaa uudelleen kaikki ikkunat
-
 appmenu-restore-session =
     .label = Palauta edellinen istunto
 appmenu-clear-history =
@@ -212,7 +228,6 @@ appmenu-customizetoolbar =
     .label = Muokkaa työkalupalkkia…
 appmenu-taskmanager =
     .label = Tehtävienhallinta
-
 appmenu-developer-tools-subheader = Browser Tools
 appmenu-developer-tools-extensions =
     .label = Extensions for Developers

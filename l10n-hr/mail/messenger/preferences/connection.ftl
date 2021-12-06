@@ -23,6 +23,13 @@ connection-dialog-window =
         }
 connection-disable-extension =
     .label = Onemogući dodatak
+disable-extension-button = Onemogući dodatak
+# Variables:
+#   $name (String) - The extension that is controlling the proxy settings.
+#
+# The extension-icon is the extension's icon, or a fallback image. It should be
+# purely decoration for the actual extension name, with alt="".
+proxy-settings-controlled-by-extension = Dodatak, <img data-l10n-name="extension-icon" alt="" /> { $name }, kontrolira kako se { -brand-short-name } povezuje na Internet.
 connection-proxy-legend = Podesite proxy za pristupanje Internetu
 proxy-type-no =
     .label = Bez proxyja
@@ -73,8 +80,6 @@ no-proxy-label =
     .value = Bez proxyja za:
     .accesskey = z
 no-proxy-example = Primjer: .mozilla.org, .net.nz, 192.168.1.0/24
-# Note: Do not translate localhost, 127.0.0.1 and ::1.
-no-proxy-localhost-label = Veze s localhost, 127.0.0.1 i ::1 nikada nisu preko proxy.
 # Do not translate "localhost", "127.0.0.1/8" and "::1". (You can translate "and".)
 connection-proxy-noproxy-localhost-desc-2 = Veze na localhost, 127.0.0.1/8, i ::1 nikada nisu preko proxy.
 proxy-password-prompt =

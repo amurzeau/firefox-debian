@@ -3,19 +3,23 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-## View Menu
-
-menu-view-charset =
-    .label = Գրույթի գաղտնագրում
-    .accesskey = c
-
 ## Tools Menu
+
+menu-addons-and-themes =
+    .label = Հավելումներ և ոճեր
+    .accesskey = A
 
 ## Help Menu
 
+
 ## Mail Toolbar
+
 
 ## View
 
+
 ## View / Layout
+
+
+## File
 

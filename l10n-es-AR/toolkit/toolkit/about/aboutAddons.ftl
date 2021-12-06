@@ -2,8 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-addons-window =
-    .title = Administrador de complementos
 addons-page-title = Administrador de complementos
 search-header =
     .placeholder = Buscar en addons.mozilla.org
@@ -24,17 +22,6 @@ list-empty-button =
 help-button = Ayuda sobre complementos
 sidebar-help-button-title =
     .title = Ayuda sobre complementos
-preferences =
-    { PLATFORM() ->
-        [windows] Opciones de { -brand-short-name }
-       *[other] Preferencias de { -brand-short-name }
-    }
-sidebar-preferences-button-title =
-    .title =
-        { PLATFORM() ->
-            [windows] Opciones de { -brand-short-name }
-           *[other] Preferencias de { -brand-short-name }
-        }
 addons-settings-button = Preferencias de { -brand-short-name }
 sidebar-settings-button-title =
     .title = Preferencias de { -brand-short-name }
@@ -42,36 +29,6 @@ show-unsigned-extensions-button =
     .label = Algunos complementos no pudieron ser verificados
 show-all-extensions-button =
     .label = Mostrar todos los complementos
-cmd-show-details =
-    .label = Mostrar más información
-    .accesskey = s
-cmd-find-updates =
-    .label = Buscar actualizaciones
-    .accesskey = B
-cmd-preferences =
-    .label =
-        { PLATFORM() ->
-            [windows] Opciones
-           *[other] Preferencias
-        }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] O
-           *[other] P
-        }
-cmd-enable-theme =
-    .label = Usar tema
-    .accesskey = U
-cmd-disable-theme =
-    .label = Dejar de usar tema
-    .accesskey = u
-cmd-install-addon =
-    .label = Instalar
-    .accesskey = I
-cmd-contribute =
-    .label = Contribuir
-    .accesskey = C
-    .tooltiptext = Contribuir al desarrollo de este complemento
 detail-version =
     .label = Versión
 detail-last-updated =
@@ -146,7 +103,7 @@ disabled-unsigned-devinfo = Los desarrolladores interesados en conseguir que sus
 plugin-deprecation-description = ¿Falta algo? Algunos plugins ya no son compatibles con { -brand-short-name }. <label data-l10n-name="learn-more">Conocer más.</label>
 legacy-warning-show-legacy = Mostrar complementos heredados
 legacy-extensions =
-    .value = Complementos heredados
+    .value = Extensiones heredadas
 legacy-extensions-description = Estos complementos no cumplen los estándares actuales de { -brand-short-name } por lo que se desactivaron. <label data-l10n-name="legacy-learn-more">Conocer sobre los cambios en los complementos</label>
 private-browsing-description2 =
     { -brand-short-name } está cambiando la forma en la que funcionan los complementos en la navegación privada. Cualquier nuevo complemento que agregue a
@@ -230,8 +187,8 @@ addon-open-about-debugging = Depurar complementos
 ## Extension shortcut management
 
 # This is displayed in the page options menu
-addon-manage-extensions-shortcuts = Administrar los accesos directos del complemento
-    .accesskey = S
+addon-manage-extensions-shortcuts = Administrar accesos directos de extensión
+    .accesskey = s
 shortcuts-no-addons = No tiene ningún complemento habilitado.
 shortcuts-no-commands = Los siguientes complementos no tienen atajos de teclado:
 shortcuts-input =
@@ -291,6 +248,7 @@ install-theme-button = Instalar tema
 # the detailed add-on view is opened, from where the add-on can be managed.
 manage-addon-button = Administrar
 find-more-addons = Buscar más complementos
+find-more-themes = Buscar más temas
 # This is a label for the button to open the "more options" menu, it is only
 # used for screen readers.
 addon-options-button =
@@ -320,13 +278,14 @@ extension-enabled-heading = Habilitado
 extension-disabled-heading = Deshabilitado
 theme-enabled-heading = Habilitado
 theme-disabled-heading = Deshabilitado
+theme-monochromatic-heading = Combinaciones de colores
+theme-monochromatic-subheading = Nuevas combinaciones de colores brillantes de { -brand-product-name }. Disponible por tiempo limitado.
 plugin-enabled-heading = Habilitado
 plugin-disabled-heading = Deshabilitado
 dictionary-enabled-heading = Habilitado
 dictionary-disabled-heading = Deshabilitado
 locale-enabled-heading = Habilitado
 locale-disabled-heading = Deshabilitado
-ask-to-activate-button = Preguntar para activar
 always-activate-button = Activar siempre
 never-activate-button = No activar nunca
 addon-detail-author-label = Autor
@@ -416,7 +375,7 @@ dictionary-heading = Administrar diccionarios
 locale-heading = Administrar idiomas
 updates-heading = Administrar sus actualizaciones
 discover-heading = Personalice su { -brand-short-name }
-shortcuts-heading = Administrar Accesos directos de extensión
+shortcuts-heading = Administrar accesos directos de extensión
 default-heading-search-label = Buscar más complementos
 addons-heading-search-input =
     .placeholder = Buscar en addons.mozilla.org

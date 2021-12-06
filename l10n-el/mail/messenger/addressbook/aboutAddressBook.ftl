@@ -16,6 +16,8 @@ about-addressbook-toolbar-new-contact =
     .label = Νέα επαφή
 about-addressbook-toolbar-new-list =
     .label = Νέα λίστα
+about-addressbook-toolbar-import =
+    .label = Εισαγωγή
 
 ## Books
 
@@ -26,14 +28,18 @@ about-addressbook-books-context-synchronize =
     .label = Συγχρονισμός
 about-addressbook-books-context-print =
     .label = Εκτύπωση…
+about-addressbook-books-context-export =
+    .label = Εξαγωγή…
 about-addressbook-books-context-delete =
     .label = Διαγραφή
 about-addressbook-books-context-remove =
     .label = Αφαίρεση
+about-addressbook-books-context-startup-default =
+    .label = Προεπιλεγμένος κατάλογος εκκίνησης
 about-addressbook-confirm-delete-book-title = Διαγραφή ευρετηρίου
 # Variables:
 # $name (String) - Name of the address book to be deleted.
-about-addressbook-confirm-delete-book = Θέλετε σίγουρα να διαγράψετε το { $name } και όλες τις επαφές του;
+about-addressbook-confirm-delete-book = Θέλετε σίγουρα να διαγράψετε το «{ $name }» και όλες τις επαφές του;
 about-addressbook-confirm-remove-remote-book-title = Αφαίρεση ευρετηρίου
 # Variables:
 # $name (String) - Name of the remote address book to be removed.
@@ -63,6 +69,8 @@ about-addressbook-sort-email-ascending =
     .label = Ταξινόμηση κατά διεύθυνση email (A > Z)
 about-addressbook-sort-email-descending =
     .label = Ταξινόμηση κατά διεύθυνση email (Z > A)
+about-addressbook-cards-context-write =
+    .label = Σύνταξη
 about-addressbook-confirm-delete-mixed-title = Διαγραφή επαφών και λιστών
 # Variables:
 # $count (Number) - The number of contacts and lists to be deleted. Always greater than 1.
@@ -124,3 +132,5 @@ about-addressbook-details-phone-numbers-header = Αριθμοί τηλεφώνο
 about-addressbook-details-home-address-header = Διεύθυνση οικίας
 about-addressbook-details-work-address-header = Διεύθυνση εργασίας
 about-addressbook-details-other-info-header = Άλλες πληροφορίες
+about-addressbook-prompt-to-save-title = Αποθήκευση αλλαγών;
+about-addressbook-prompt-to-save = Θέλετε να αποθηκεύσετε τις αλλαγές σας;

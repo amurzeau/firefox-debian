@@ -20,7 +20,15 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = որոնում
     .aria-label = որոնում
-newtab-search-box-search-the-web-text = Որոնել առցանց
+# Variables
+#  $engine (String): the name of the user's default search engine
+newtab-search-box-handoff-text = Որոնեք { $engine }-ով կամ մուտքագրեք հասցեն
+# Variables
+#  $engine (String): the name of the user's default search engine
+newtab-search-box-handoff-input =
+    .placeholder = Որոնեք { $engine }-ով կամ մուտքագրեք հասցեն
+    .title = Որոնեք { $engine }-ով կամ մուտքագրեք հասցեն
+    .aria-label = Որոնեք { $engine }-ով կամ մուտքագրեք հասցեն
 newtab-search-box-search-the-web-input =
     .placeholder = Որոնել առցանց
     .title = Որոնել առցանց
@@ -205,6 +213,10 @@ newtab-pocket-more-recommendations = Լրացուցիչ առաջարկությո
 newtab-pocket-learn-more = Իմանալ ավելին
 newtab-pocket-cta-button = Ստանալ { -pocket-brand-name }
 newtab-pocket-cta-text = Խնայեք ձեր սիրած պատմությունները { -pocket-brand-name }, և ձեր միտքը վառեցրեք հետաքրքրաշարժ ընթերցանությամբ:
+
+## Pocket Final Card Section.
+## This is for the final card in the Pocket grid.
+
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.

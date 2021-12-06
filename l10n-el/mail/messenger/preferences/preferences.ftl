@@ -4,12 +4,6 @@
 
 close-button =
     .aria-label = Κλείσιμο
-preferences-title =
-    .title =
-        { PLATFORM() ->
-            [windows] Επιλογές
-           *[other] Προτιμήσεις
-        }
 preferences-doc-title = Προτιμήσεις
 category-list =
     .aria-label = Κατηγορίες
@@ -44,10 +38,10 @@ composition-addressing-header = Διευθυνσιοδότηση
 privacy-main-header = Απόρρητο
 privacy-passwords-header = Κωδικοί πρόσβασης
 privacy-junk-header = Ανεπιθύμητα
-collection-header = Συλλογή και χρήση δεδομένων { -brand-short-name }
+collection-header = Συλλογή και χρήση δεδομένων του { -brand-short-name }
 collection-description = Προσπαθούμε να παρέχουμε επιλογές και να συλλέγουμε μόνο τα απαραίτητα, ώστε να προσφέρουμε και να βελτιώνουμε το { -brand-short-name } για όλους. Ζητούμε πάντα άδεια πριν λάβουμε προσωπικές πληροφορίες.
 collection-privacy-notice = Σημείωση απορρήτου
-collection-health-report-telemetry-disabled = Δεν επιτρέπεται πλέον στη { -vendor-short-name } η συλλογή τεχνικών δεδομένων και δεδομένων αλληλεπίδρασης. Όλα τα προηγούμενα δεδομένα θα διαγραφούν μέσα σε 30 ημέρες.
+collection-health-report-telemetry-disabled = Δεν επιτρέπεται πλέον στη { -vendor-short-name } η συλλογή τεχνικών δεδομένων και δεδομένων αλληλεπίδρασης. Όλα τα προηγούμενα δεδομένα θα διαγραφούν εντός 30 ημερών.
 collection-health-report-telemetry-disabled-link = Μάθετε περισσότερα
 collection-health-report =
     .label = Να επιτρέπεται στο { -brand-short-name } η αποστολή τεχνικών και διαδραστικών δεδομένων στη { -vendor-short-name }
@@ -55,19 +49,19 @@ collection-health-report =
 collection-health-report-link = Μάθετε περισσότερα
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
-collection-health-report-disabled = Η αναφορά δεδομένων είναι ανενεργή για αυτή την έκδοση
+collection-health-report-disabled = Η αναφορά δεδομένων είναι ανενεργή για αυτήν τη δομή
 collection-backlogged-crash-reports =
     .label = Να επιτρέπεται στο { -brand-short-name } η αποστολή εκκρεμουσών αναφορών σφαλμάτων
     .accesskey = σ
 collection-backlogged-crash-reports-link = Μάθετε περισσότερα
 privacy-security-header = Ασφάλεια
-privacy-scam-detection-title = Ανίχνευση απάτης
+privacy-scam-detection-title = Ανίχνευση απατών
 privacy-anti-virus-title = Προστασία από ιούς
 privacy-certificates-title = Πιστοποιητικά
 chat-pane-header = Συνομιλία
 chat-status-title = Κατάσταση
 chat-notifications-title = Ειδοποιήσεις
-chat-pane-styling-header = Στυλ
+chat-pane-styling-header = Μορφοποίηση
 choose-messenger-language-description = Επιλέξτε τις γλώσσες εμφάνισης για μενού, μηνύματα και ειδοποιήσεις από το { -brand-short-name }.
 manage-messenger-languages-button =
     .label = Ορισμός εναλλακτικών…
@@ -80,28 +74,20 @@ update-setting-write-failure-title = Σφάλμα αποθήκευσης προ�
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
-    Το { -brand-short-name } αντιμετώπισε σφάλμα και δεν αποθήκευσε αυτή την αλλαγή. Σημειώστε ότι η ρύθμιση αυτής της προτίμησης ενημερώσεων απαιτεί δικαίωμα εγγραφής στο παρακάτω αρχείο. Εσείς ή κάποιος διαχειριστής συστήματος ενδέχεται να μπορέσει να επιλύσει το σφάλμα, χορηγώντας στην ομάδα Χρήστες τον πλήρη έλεγχο για αυτό το αρχείο.
+    Το { -brand-short-name } αντιμετώπισε σφάλμα και δεν αποθήκευσε αυτήν την αλλαγή. Σημειώστε ότι η ρύθμιση αυτής της προτίμησης ενημερώσεων απαιτεί δικαίωμα εγγραφής στο παρακάτω αρχείο. Το σφάλμα μπορεί να επιλυθεί από εσάς ή κάποιον διαχειριστή του συστήματος, χορηγώντας στην ομάδα «Χρήστες» τον πλήρη έλεγχο για αυτό το αρχείο.
     
-    Αδυναμία εγγραφής στο αρχείο: { $path }
+    Δεν ήταν δυνατή η εγγραφή στο αρχείο: { $path }
 update-in-progress-title = Ενημέρωση σε εξέλιξη
 update-in-progress-message = Θέλετε το { -brand-short-name } να συνεχίσει με αυτή την ενημέρωση;
 update-in-progress-ok-button = &Απόρριψη
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Συνέχεια
-addons-button = Επεκτάσεις & θέματα
 account-button = Ρυθμίσεις λογαριασμού
 open-addons-sidebar-button = Πρόσθετα και θέματα
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = Για να δημιουργήσετε έναν κύριο κωδικό πρόσβασης, εισαγάγετε τα διαπιστευτήρια σύνδεσης των Windows. Αυτό συμβάλλει στην προστασία των λογαριασμών σας.
-# This message can be seen by trying to add a Master Password.
-# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
-# and includes subtitle of "Enter password for the user "xxx" to allow this." These
-# notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = δημιουργήσει κύριο κωδικό πρόσβασης
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Για να δημιουργήσετε έναν κύριο κωδικό πρόσβασης, εισαγάγετε τα διαπιστευτήρια σύνδεσης των Windows. Αυτό συμβάλλει στην προστασία των λογαριασμών σας.
 # This message can be seen by trying to add a Primary Password.
@@ -159,9 +145,6 @@ animated-alert-label =
     .accesskey = φ
 customize-alert-label =
     .label = Προσαρμογή…
-    .accesskey = μ
-tray-icon-label =
-    .label = Εμφάνιση εικονιδίου στη γραμμή
     .accesskey = μ
 biff-use-system-alert =
     .label = Χρήση ειδοποιήσεων συστήματος
@@ -261,15 +244,15 @@ offline-compact-folder-automatically =
     .label = Ερώτηση κάθε φορά πριν από τη συμπίεση
     .accesskey = κ
 compact-folder-size =
-    .value = MB στο σύνολο
+    .value = MB συνολικά
 
 ## Note: The entities use-cache-before and use-cache-after appear on a single
 ## line in preferences as follows:
 ## use-cache-before [ textbox for cache size in MB ] use-cache-after
 
 use-cache-before =
-    .value = Χρήση μέχρι
-    .accesskey = μ
+    .value = Χρήση έως
+    .accesskey = Χ
 use-cache-after = MB χώρου για την κρυφή μνήμη
 
 ##
@@ -278,8 +261,8 @@ smart-cache-label =
     .label = Παράκαμψη αυτόματης διαχείρισης κρυφής μνήμης
     .accesskey = ψ
 clear-cache-button =
-    .label = Εκκαθάριση τώρα
-    .accesskey = θ
+    .label = Απαλοιφή τώρα
+    .accesskey = π
 fonts-legend = Γραμματοσειρές & χρώματα
 default-font-label =
     .value = Προεπιλεγμένη γραμματοσειρά:
@@ -322,10 +305,8 @@ smaller-size-item =
 quoted-text-color =
     .label = Χρώμα:
     .accesskey = Χ
-search-input =
-    .placeholder = Αναζήτηση
 search-handler-table =
-    .placeholder = Φιλτράρισμα τύπων και ενεργειών περιεχομένου
+    .placeholder = Φιλτράρισμα τύπων περιεχομένου και ενεργειών
 type-column-label = Τύπος περιεχομένου
 action-column-label = Ενέργεια
 save-to-label =
@@ -343,8 +324,8 @@ choose-folder-label =
            *[other] γ
         }
 always-ask-label =
-    .label = Πάντα ερώτηση για την τοποθεσία αποθήκευσης
-    .accesskey = Π
+    .label = Να γίνεται πάντα ερώτηση για την τοποθεσία αποθήκευσης αρχείων
+    .accesskey = Ν
 display-tags-text = Οι ετικέτες μπορούν να χρησιμοποιηθούν για την ταξινόμηση και τον καθορισμό προτεραιότητας των μηνυμάτων σας.
 new-tag-button =
     .label = Νέα…
@@ -447,8 +428,8 @@ restore-html-label =
     .label = Επαναφορά προεπιλογών
     .accesskey = φ
 default-format-label =
-    .label = Χρήση της μορφής παραγράφου αντί του μορφής κειμένου κύριου μέρους από προεπιλογή
-    .accesskey = π
+    .label = Χρήση της μορφής «Παράγραφος» αντί της μορφής «Κείμενο σώματος» από προεπιλογή
+    .accesskey = Π
 format-description = Ρύθμιση συμπεριφοράς μορφής κειμένου
 send-options-label =
     .label = Επιλογές αποστολής…
@@ -458,7 +439,7 @@ ab-label =
     .label = Τοπικά ευρετήρια διευθύνσεων
     .accesskey = ο
 directories-label =
-    .label = Διακομιστή καταλόγου:
+    .label = Διακομιστής καταλόγου:
     .accesskey = Δ
 directories-none-label =
     .none = Κανένας
@@ -492,7 +473,7 @@ remove-cloud-account =
     .accesskey = Α
 find-cloud-providers =
     .value = Εύρεση περισσότερων παρόχων…
-cloud-account-description = Προσθήκη νέας υπηρεσίας αποθηκευτικού χώρου Filelink
+cloud-account-description = Προσθήκη νέας υπηρεσίας αποθηκευτικού χώρου FileLink
 
 ## Privacy Tab
 
@@ -510,7 +491,7 @@ history-label =
     .label = Απομνημόνευση ιστοτόπων και συνδέσμων που έχω επισκεφθεί
     .accesskey = ι
 cookies-label =
-    .label = Αποδοχή cookie από ιστοτόπους
+    .label = Αποδοχή cookies από ιστοτόπους
     .accesskey = δ
 third-party-label =
     .value = Αποδοχή cookies τρίτων:
@@ -538,17 +519,10 @@ do-not-track-label =
     .accesskey = λ
 learn-button =
     .label = Μάθετε περισσότερα
-passwords-description = Το { -brand-short-name } μπορεί να απομνημονεύσει τους κωδικούς πρόσβασης όλων των λογαριασμών σας.
+passwords-description = Το { -brand-short-name } μπορεί να αποθηκεύει τους κωδικούς πρόσβασης όλων των λογαριασμών σας.
 passwords-button =
     .label = Αποθηκευμένοι κωδικοί πρόσβασης…
     .accesskey = θ
-master-password-description = Ο κύριος κωδικός πρόσβασης προστατεύει όλους τους κωδικούς πρόσβασής σας, αλλά θα πρέπει να τον εισαγάγετε σε κάθε συνεδρία.
-master-password-label =
-    .label = Χρήση κύριου κωδικού πρόσβασης
-    .accesskey = ρ
-master-password-button =
-    .label = Αλλαγή κύριου κωδικού πρόσβασης…
-    .accesskey = β
 primary-password-description = Ο κύριος κωδικός πρόσβασης προστατεύει όλους τους κωδικούς πρόσβασής σας, αλλά θα πρέπει να τον εισάγετε σε κάθε συνεδρία.
 primary-password-label =
     .label = Χρήση κύριου κωδικού πρόσβασης
@@ -560,7 +534,7 @@ forms-primary-pw-fips-title = Είστε σε λειτουργία FIPS. Το FI
 forms-master-pw-fips-desc = Αποτυχία αλλαγής κωδικού πρόσβασης
 junk-description = Καθορίστε τις προεπιλεγμένες ρυθμίσεις ανεπιθύμητης αλληλογραφίας σας. Οι ρυθμίσεις για συγκεκριμένους λογαριασμούς μπορούν να τροποποιηθούν στις ρυθμίσεις λογαριασμού.
 junk-label =
-    .label = Όταν επισημαίνεται ως ανεπιθύμητο ένα μήνυμα:
+    .label = Όταν ένα μήνυμα επισημαίνεται ως ανεπιθύμητο:
     .accesskey = σ
 junk-move-label =
     .label = Μετακίνηση στον φάκελο «Ανεπιθύμητα» του λογαριασμού
@@ -569,7 +543,7 @@ junk-delete-label =
     .label = Διαγραφή
     .accesskey = δ
 junk-read-label =
-    .label = Επισήμανση ανεπιθύμητων μηνυμάτων ως αναγνωσμένα
+    .label = Επισήμανση ανεπιθύμητων μηνυμάτων ως αναγνωσμένων
     .accesskey = μ
 junk-log-label =
     .label = Ενεργοποίηση καταγραφής προσαρμοστικού φίλτρου ανεπιθύμητων
@@ -580,9 +554,9 @@ junk-log-button =
 reset-junk-button =
     .label = Επαναφορά δεδομένων εκμάθησης
     .accesskey = θ
-phishing-description = Το { -brand-short-name } μπορεί να αναλύει τα μηνύματα για πιθανές απάτες email, αναζητώντας κοινές πρακτικές που χρησιμοποιούνται για παραπλάνηση.
+phishing-description = Το { -brand-short-name } μπορεί να αναλύει τα μηνύματα για πιθανές απάτες μέσω email, αναζητώντας κοινές πρακτικές παραπλάνησης.
 phishing-label =
-    .label = Ειδοποίηση αν το τρέχον μήνυμα είναι ύποπτο για απάτη email
+    .label = Ειδοποίηση αν το τρέχον μήνυμα είναι ύποπτο για απάτη μέσω email
     .accesskey = δ
 antivirus-description = Το { -brand-short-name } μπορεί να διευκολύνει το λογισμικό προστασίας από ιούς στην ανάλυση των εισερχομένων σας για ιούς πριν από την τοπική αποθήκευση.
 antivirus-label =
@@ -596,7 +570,7 @@ certificate-ask =
     .label = Ερώτηση κάθε φορά
     .accesskey = Ε
 ocsp-label =
-    .label = Ερώτηση στους διακομιστές για OCSP ανταπόκριση ώστε να επιβεβαιωθεί η τρέχουσα εγκυρότητα των πιστοποιητικών
+    .label = Ερώτηση στους διακομιστές OCSP για την επιβεβαίωση της τρέχουσας εγκυρότητας των πιστοποιητικών
     .accesskey = δ
 certificate-button =
     .label = Διαχείριση πιστοποιητικών…
@@ -611,9 +585,9 @@ startup-label =
     .value = Κατά την εκκίνηση του { -brand-short-name }:
     .accesskey = ε
 offline-label =
-    .label = Διατήρηση λογαριασμών συνομιλίας εκτός σύνδεσης
+    .label = Διατήρηση λογαριασμών συνομιλιών εκτός σύνδεσης
 auto-connect-label =
-    .label = Αυτόματη σύνδεση λογαριασμών συνομιλίας
+    .label = Αυτόματη σύνδεση λογαριασμών συνομιλιών
 
 ## Note: idle-label is displayed first, then there's a field where the user
 ## can enter a number, and itemTime is displayed at the end of the line.
@@ -622,7 +596,7 @@ auto-connect-label =
 ## translate the whole sentence.
 
 idle-label =
-    .label = Να γνωστοποιείται στις επαφές μου ότι είμαι αδρανής μετά από
+    .label = Να εμφανίζεται στις επαφές μου ότι είμαι αδρανής μετά από
     .accesskey = δ
 idle-time-label = λεπτά αδράνειας
 
@@ -634,7 +608,7 @@ away-message-label =
 send-typing-label =
     .label = Αποστολή ειδοποιήσεων πληκτρολόγησης στις συνομιλίες
     .accesskey = σ
-notification-label = Όταν έρχονται μηνύματα που απευθύνονται σε εσάς:
+notification-label = Όταν φθάνουν μηνύματα που απευθύνονται σε εσάς:
 show-notification-label =
     .label = Εμφάνιση ειδοποίησης:
     .accesskey = ε
@@ -643,7 +617,7 @@ notification-all =
 notification-name =
     .label = μόνο με όνομα αποστολέα
 notification-empty =
-    .label = χωρίς καμία πληροφορία
+    .label = χωρίς πληροφορίες
 notification-type-label =
     .label =
         { PLATFORM() ->
@@ -678,35 +652,17 @@ style-thunderbird =
 style-bubbles =
     .label = Φούσκες
 style-dark =
-    .label = Σκούρο
+    .label = Σκουρόχρωμο
 style-paper =
     .label = Φύλλα χαρτιού
 style-simple =
     .label = Απλό
 preview-label = Προεπισκόπηση:
-no-preview-label = Μη διαθέσιμη προεπισκόπιση
-no-preview-description = Αυτό το θέμα δεν είναι έγκυρο ή διαθέσιμο αυτή τη στιγμή (ανενεργό πρόσθετο, ασφαλής λειτουργία, …).
+no-preview-label = Δεν διατίθεται προεπισκόπηση
+no-preview-description = Αυτό το θέμα δεν είναι έγκυρο ή διαθέσιμο αυτήν τη στιγμή (ανενεργό πρόσθετο, ασφαλής λειτουργία, …).
 chat-variant-label =
     .value = Παραλλαγή:
     .accesskey = Π
-chat-header-label =
-    .label = Εμφάνιση κεφαλίδας
-    .accesskey = Ε
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Please keep the placeholder string short to avoid truncation.
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input-box =
-    .style = width: 15.4em
-    .placeholder =
-        { PLATFORM() ->
-            [windows] Εύρεση στις επιλογές
-           *[other] Εύρεση στις προτιμήσεις
-        }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #

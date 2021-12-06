@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Tutup Bar Sisi
+
+sidebar-close-button =
+    .tooltiptext = Tutup bar sisi

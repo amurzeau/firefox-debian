@@ -39,6 +39,10 @@ account-provisioner-button = Yeni bir e-posta adresi al
     .accesskey = a
 account-setup-password-toggle =
     .title = Parolayı göster/gizle
+account-setup-password-toggle-show =
+    .title = Parolayı açık metin olarak göster
+account-setup-password-toggle-hide =
+    .title = Parolayı gizle
 account-setup-remember-password = Parolayı hatırla
     .accesskey = h
 account-setup-exchange-label = Kullanıcı adınız
@@ -127,6 +131,8 @@ account-setup-result-pop = POP3
 account-setup-result-pop-description = Klasörlerinizi ve e-postalarınızı bilgisayarınızda tutun
 # Note: Exchange is the name of a product.
 account-setup-result-exchange = Exchange
+# Note: Exchange, Office365 are the name of products.
+account-setup-result-exchange2-description = Microsoft Exchange sunucusunu veya Office365 bulut hizmetlerini kullanın
 account-setup-incoming-title = Gelen
 account-setup-outgoing-title = Giden
 account-setup-username-title = Kullanıcı adı
@@ -204,6 +210,15 @@ exchange-dialog-question = { -brand-short-name }, { $domain } üzerinde hesap ku
 exchange-dialog-confirm-button = Giriş yap
 exchange-dialog-cancel-button = Vazgeç
 
+## Dismiss account creation dialog
+
+account-setup-no-account-checkbox = { -brand-short-name }’ü e-posta hesabı olmadan kullan
+    .accesskey = k
+exit-dialog-cancel-button = Kuruluma devam et
+    .accesskey = d
+exit-dialog-confirm-button = Kurulumdan çık
+    .accesskey = u
+
 ## Alert dialogs
 
 account-setup-creation-error-title = Hesap Oluşturma Hatası
@@ -223,6 +238,16 @@ account-setup-settings-button = Hesap ayarları
 account-setup-encryption-button = Uçtan uca şifreleme
 account-setup-signature-button = İmza ekle
 account-setup-dictionaries-button = Sözlük indir
+account-setup-address-book-carddav-button = Bir CardDAV adres defterine bağlanın
+account-setup-address-book-ldap-button = Bir LDAP adres defterine bağlanın
+account-setup-calendar-button = Uzak bir takvime bağlanın
+# Variables:
+# $count (Number) - The number of calendars found during autoconfig.
+account-setup-found-calendars-description =
+    { $count ->
+        [one] { -brand-short-name } e-posta hesabınıza bağlı 1 takvim buldu.
+       *[other] { -brand-short-name } e-posta hesabınıza bağlı { $count } takvim buldu.
+    }
 account-setup-button-finish = Bitir
     .accesskey = B
 account-setup-looking-up-address-books = Adres defterleri aranıyor…

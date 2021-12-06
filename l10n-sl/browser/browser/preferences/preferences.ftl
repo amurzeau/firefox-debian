@@ -8,26 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Samo, ko je { -brand-short-name } nastavljen na zavračanje znanih sledilcev
 do-not-track-option-always =
     .label = Vedno
-pref-page-title =
-    { PLATFORM() ->
-        [windows] Možnosti
-       *[other] Nastavitve
-    }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Please keep the placeholder string short to avoid truncation.
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input-box =
-    .style = width: 15.4em
-    .placeholder =
-        { PLATFORM() ->
-            [windows] Najdi v možnostih
-           *[other] Najdi v nastavitvah
-        }
 settings-page-title = Nastavitve
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
@@ -55,9 +35,6 @@ category-search =
 pane-privacy-title = Zasebnost in varnost
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-pane-sync-title2 = { -sync-brand-short-name }
-category-sync2 =
-    .tooltiptext = { pane-sync-title2 }
 pane-sync-title3 = Sinhronizacija
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
@@ -96,21 +73,12 @@ restart-later = Ponovno zaženi pozneje
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their home page
-# is being controlled by an extension.
-extension-controlled-homepage-override = Razširitev <img data-l10n-name="icon"/> { $name } nadzira vašo domačo stran.
-# This string is shown to notify the user that their new tab page
-# is being controlled by an extension.
-extension-controlled-new-tab-url = Razširitev <img data-l10n-name="icon"/> { $name } nadzira vašo stran novega zavihka.
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
 extension-controlled-password-saving = To nastavitev nadzira razširitev <img data-l10n-name="icon"/> { $name }.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Razširitev <img data-l10n-name="icon"/> { $name } nadzoruje to nastavitev.
-# This string is shown to notify the user that the default search engine
-# is being controlled by an extension.
-extension-controlled-default-search = Razširitev <img data-l10n-name="icon"/> { $name } je nastavila privzeti iskalnik.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = Razširitev <img data-l10n-name="icon"/> { $name } zahteva vsebniške zavihke.
@@ -131,25 +99,12 @@ extension-controlled-enable = Da bi omogočili to razširitev, izberite <img dat
 
 search-results-header = Rezultati iskanja
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
-search-results-empty-message =
-    { PLATFORM() ->
-        [windows] Oprostite! V možnostih ni zadetkov za “<span data-l10n-name="query"></span>”.
-       *[other] Oprostite! V nastavitvah ni zadetkov za “<span data-l10n-name="query"></span>”.
-    }
-# `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message2 = Oprostite! V nastavitvah ni zadetkov za “<span data-l10n-name="query"></span>”.
 search-results-help-link = Potrebujete pomoč? Obiščite <a data-l10n-name="url">Podpora za { -brand-short-name }</a>
 
 ## General Section
 
 startup-header = Zagon
-# { -brand-short-name } will be 'Firefox Developer Edition',
-# since this setting is only exposed in Firefox Developer Edition
-separate-profile-mode =
-    .label = Dovoli, da { -brand-short-name } in Firefox tečeta sočasno
-use-firefox-sync = Nasvet: Uporabljena bosta različna profila, ki ju lahko uskladite z uporabo { -sync-brand-short-name }a.
-get-started-not-logged-in = Prijava v { -sync-brand-short-name } …
-get-started-configured = Odpri nastavitve { -sync-brand-short-name }a
 always-check-default =
     .label = Vedno preveri, ali je { -brand-short-name } privzeti brskalnik
     .accesskey = V
@@ -161,6 +116,9 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Obnovi prejšnjo sejo
     .accesskey = s
+startup-restore-windows-and-tabs =
+    .label = Naloži nazadnje odprta okna in zavihke
+    .accesskey = z
 startup-restore-warn-on-quit =
     .label = Opozori ob zapiranju brskalnika
 disable-extension =
@@ -175,11 +133,22 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Opozori ob zapiranju več zavihkov hkrati
     .accesskey = z
+confirm-on-close-multiple-tabs =
+    .label = Vprašaj za potrditev pred zapiranjem več zavihkov hkrati
+    .accesskey = t
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (String) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+confirm-on-quit-with-key =
+    .label = Vprašaj za potrditev pred zapiranjem s { $quitKey }
+    .accesskey = š
 warn-on-open-many-tabs =
     .label = Opozori, ko lahko odpiranje veliko zavihkov hkrati upočasni { -brand-short-name }
     .accesskey = v
-switch-links-to-new-tabs =
-    .label = Ko odprete povezavo v novem zavihku, takoj preklopi nanj
+switch-to-new-tabs =
+    .label = Ko odprete povezavo, sliko ali predstavnost v novem zavihku, takoj preklopi nanj
     .accesskey = o
 show-tabs-in-taskbar =
     .label = Prikaži predoglede zavihkov v opravilni vrstici Windows
@@ -330,10 +299,6 @@ applications-manage-app =
     .label = Podrobnosti programa …
 applications-always-ask =
     .label = Vedno vprašaj
-applications-type-pdf = Portable Document Format (PDF)
-# Variables:
-#   $type (String) - the MIME type (e.g application/binary)
-applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 # Variables:
 #   $type-description (String) - Description of the type (e.g "Portable Document Format")
 #   $type (String) - the MIME type (e.g application/binary)
@@ -400,15 +365,6 @@ update-application-warning-cross-user-setting = Ta nastavitev bo uveljavljena v 
 update-application-use-service =
     .label = Uporabi storitev za nameščanje posodobitev v ozadju
     .accesskey = s
-update-setting-write-failure-title = Napaka pri shranjevanju nastavitev posodobitve
-# Variables:
-#   $path (String) - Path to the configuration file
-# The newlines between the main text and the line containing the path is
-# intentional so the path is easier to identify.
-update-setting-write-failure-message =
-    { -brand-short-name } je naletel na napako in te spremembe ni shranil. Upoštevajte, da takšna nastavitev posodobitev zahteva dovoljenje za pisanje v spodnjo datoteko. Napako lahko morda odpravite sami ali vaš skrbnik sistema, tako da skupini Users omogoči popoln dostop do te datoteke.
-    
-    Ni mogoče pisati v datoteko: { $path }
 update-setting-write-failure-title2 = Napaka pri shranjevanju nastavitev posodobitev
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -616,10 +572,8 @@ search-show-suggestions-above-history-option =
     .label = Med rezultati naslovne vrstice prikaži predloge iskanja pred zgodovino brskanja
 search-show-suggestions-private-windows =
     .label = Prikazuj predloge iskanja v zasebnih oknih
-suggestions-addressbar-settings-generic = Spremeni nastavitve drugih predlogov naslovne vrstice
 suggestions-addressbar-settings-generic2 = Spremeni nastavitve drugih predlogov naslovne vrstice
 search-suggestions-cant-show = Predlogi iskanja v vrstici z naslovom ne bodo prikazani, ker ste { -brand-short-name } nastavili tako, da si nikoli ne zapomni zgodovine.
-search-one-click-header = Iskalniki, dostopni z enim klikom
 search-one-click-header2 = Bližnjice za iskanje
 search-one-click-desc = Izberite nadomestne iskalnike, ki se pojavijo pod naslovno in iskalno vrstico, ko začnete vnašati ključno besedo.
 search-choose-engine-column =
@@ -646,12 +600,6 @@ search-keyword-warning-bookmark = Izbrali ste ključno besedo, ki jo trenutno up
 
 ## Containers Section
 
-containers-back-button =
-    .aria-label =
-        { PLATFORM() ->
-            [windows] Nazaj na možnosti
-           *[other] Nazaj na nastavitve
-        }
 containers-back-button2 =
     .aria-label = Nazaj na nastavitve
 containers-header = Vsebniški zavihki
@@ -661,8 +609,6 @@ containers-add-button =
 containers-new-tab-check =
     .label = Izberi vsebnik za vsak nov zavihek
     .accesskey = I
-containers-preferences-button =
-    .label = Nastavitve
 containers-settings-button =
     .label = Nastavitve
 containers-remove-button =
@@ -672,10 +618,6 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Ponesite svoj splet s seboj
-sync-signedout-description = Sinhronizirajte zaznamke, zgodovino, zavihke, gesla, dodatke in nastavitve vseh vaših naprav.
-sync-signedout-account-signin2 =
-    .label = Prijava v { -sync-brand-short-name } …
-    .accesskey = i
 sync-signedout-description2 = Sinhronizirajte zaznamke, zgodovino, zavihke, gesla, dodatke in nastavitve vseh vaših naprav.
 sync-signedout-account-signin3 =
     .label = Prijava v sinhronizacijo …
@@ -715,10 +657,6 @@ sync-sign-in =
 
 prefs-syncing-on = Sinhronizacija: OMOGOČENO
 prefs-syncing-off = Sinhronizacija: ONEMOGOČENO
-prefs-sync-setup =
-    .label = Nastavi { -sync-brand-short-name } …
-    .accesskey = s
-prefs-sync-offer-setup-label = Sinhronizirajte zaznamke, zgodovino, zavihke, gesla, dodatke in nastavitve vseh vaših naprav.
 prefs-sync-turn-on-syncing =
     .label = Vklopi sinhronizacijo …
     .accesskey = s
@@ -738,11 +676,6 @@ sync-currently-syncing-logins-passwords = Prijave in gesla
 sync-currently-syncing-addresses = Naslovi
 sync-currently-syncing-creditcards = Kreditne kartice
 sync-currently-syncing-addons = Dodatki
-sync-currently-syncing-prefs =
-    { PLATFORM() ->
-        [windows] Možnosti
-       *[other] Nastavitve
-    }
 sync-currently-syncing-settings = Nastavitve
 sync-change-options =
     .label = Spremeni …
@@ -783,14 +716,6 @@ sync-engine-addons =
     .label = Dodatke
     .tooltiptext = Razširitve in teme Firefoxa za računalnike
     .accesskey = A
-sync-engine-prefs =
-    .label =
-        { PLATFORM() ->
-            [windows] Možnosti
-           *[other] Nastavitve
-        }
-    .tooltiptext = Spremenjene splošne nastavitve ter nastavitve zasebnosti in varnosti
-    .accesskey = N
 sync-engine-settings =
     .label = Nastavitve
     .tooltiptext = Splošne nastavitve ter nastavitve zasebnosti in varnosti, ki ste jih spremenili
@@ -840,9 +765,6 @@ forms-fill-logins-and-passwords =
 forms-saved-logins =
     .label = Shranjene prijave …
     .accesskey = H
-forms-master-pw-use =
-    .label = Uporabi glavno geslo
-    .accesskey = U
 forms-primary-pw-use =
     .label = Uporabi glavno geslo
     .accesskey = U
@@ -853,7 +775,6 @@ forms-primary-pw-learn-more-link = Več o tem
 forms-master-pw-change =
     .label = Nastavi glavno geslo …
     .accesskey = G
-forms-master-pw-fips-title = Trenutno ste v načinu FIPS. FIPS zahteva glavno geslo, ki ni prazno.
 forms-primary-pw-change =
     .label = Spremeni glavno geslo …
     .accesskey = p
@@ -870,13 +791,6 @@ forms-windows-sso-desc = Upravljanje računov v nastavitvah naprave
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = Če želite ustvariti glavno geslo, vnesite svoje podatke za prijavo v sistem Windows. To pomaga zaščititi varnost vaših računov.
-# This message can be seen by trying to add a Master Password.
-# The macOS strings are preceded by the operating system with "Firefox is trying to "
-# and includes subtitle of "Enter password for the user "xxx" to allow this." These
-# notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = create a Master Password
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Če želite ustvariti glavno geslo, vnesite svoje podatke za prijavo v sistem Windows. To pomaga zaščititi varnost vaših računov.
 # This message can be seen by trying to add a Primary Password.
@@ -972,9 +886,6 @@ sitedata-clear =
 sitedata-settings =
     .label = Upravljanje podatkov …
     .accesskey = U
-sitedata-cookies-permissions =
-    .label = Upravljanje dovoljenj ...
-    .accesskey = a
 sitedata-cookies-exceptions =
     .label = Upravljanje izjem ...
     .accesskey = z
@@ -1131,10 +1042,6 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = Izjeme …
     .accesskey = I
-permissions-a11y-privacy-checkbox =
-    .label = Storitvam za dostopnost prepreči dostop do brskalnika
-    .accesskey = a
-permissions-a11y-privacy-link = Več o tem
 
 ## Privacy Section - Data Collection
 
@@ -1156,10 +1063,6 @@ addon-recommendations-link = Več o tem
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Pošiljanje podatkov je onemogočeno za to nastavitev graditve
-collection-backlogged-crash-reports =
-    .label = { -brand-short-name(sklon: "dajalnik") } dovoli, da v vašem imenu pošilja poročila o sesutjih iz zaloge
-    .accesskey = z
-collection-backlogged-crash-reports-link = Več o tem
 collection-backlogged-crash-reports-with-link = { -brand-short-name(sklon: "dajalnik") } dovoli, da v vašem imenu pošilja poročila o sesutjih iz zaloge <a data-l10n-name="crash-reports-link">Več o tem</a>
     .accesskey = z
 
@@ -1184,13 +1087,6 @@ security-block-uncommon-software =
 ## Privacy Section - Certificates
 
 certs-header = Digitalna potrdila
-certs-personal-label = Ko strežnik zahteva vaše osebno digitalno potrdilo,
-certs-select-auto-option =
-    .label = ga izberi samodejno
-    .accesskey = s
-certs-select-ask-option =
-    .label = vsakokrat vprašaj
-    .accesskey = k
 certs-enable-ocsp =
     .label = Uporabi strežnike OCSP za potrditev trenutne veljavnosti digitalnih potrdil
     .accesskey = U
@@ -1200,29 +1096,6 @@ certs-view =
 certs-devices =
     .label = Varnostne naprave …
     .accesskey = V
-space-alert-learn-more-button =
-    .label = Več o tem
-    .accesskey = t
-space-alert-over-5gb-pref-button =
-    .label =
-        { PLATFORM() ->
-            [windows] Odpri možnosti
-           *[other] Odpri nastavitve
-        }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] O
-           *[other] O
-        }
-space-alert-over-5gb-message =
-    { PLATFORM() ->
-        [windows] { -brand-short-name }u zmanjkuje prostora. Vsebina spletnih strani morda ne bo prikazana pravilno. Shranjene podatke lahko izbrišete v Možnosti > Zasebnost in varnost > Piškotki in podatki strani.
-       *[other] { -brand-short-name }u zmanjkuje prostora. Vsebina spletnih strani morda ne bo prikazana pravilno. Shranjene podatke lahko izbrišete v Nastavitve > Zasebnost in varnost > Piškotki in podatki strani.
-    }
-space-alert-under-5gb-ok-button =
-    .label = V redu, razumem
-    .accesskey = V
-space-alert-under-5gb-message = Brskalniku { -brand-short-name } zmanjkuje prostora na disku. Strani se morda ne bodo prikazovale pravilno. Obiščite "Več o tem" za optimizacijo uporabe prostora na disku in boljšo izkušnjo brskanja po spletu.
 space-alert-over-5gb-settings-button =
     .label = Odpri nastavitve
     .accesskey = O

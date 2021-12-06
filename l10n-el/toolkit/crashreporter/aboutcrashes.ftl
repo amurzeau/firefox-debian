@@ -4,7 +4,7 @@
 
 crash-reports-title = Αναφορές κατάρρευσης
 submit-all-button-label = Υποβολή όλων
-delete-button-label = Εκκαθάριση όλων
+delete-button-label = Απαλοιφή όλων
 delete-confirm-title = Σίγουρα;
 delete-unsubmitted-description = Αυτή η ενέργεια θα διαγράψει όλες τις μη υποβληθείσες αναφορές καταρρεύσεων και δεν είναι αναστρέψιμη.
 delete-submitted-description = Αυτή η ενέργεια θα διαγράψει τη λίστα των υποβληθέντων αναφορών κατάρρευσης, αλλά όχι τα υποβληθέντα δεδομένα. Δεν είναι δυνατή η αναίρεση.

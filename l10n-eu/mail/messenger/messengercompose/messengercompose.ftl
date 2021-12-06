@@ -6,8 +6,6 @@
 # Addressing widget
 
 #   $type (String) - the type of the addressing row
-remove-address-row-type = Kendu { $type } eremua
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Kendu { $type } eremua
 #   $type (String) - the type of the addressing row
@@ -64,6 +62,10 @@ toolbar-button-add-attachment =
 add-attachment-notification-reminder =
     .label = Gehitu eranskina…
     .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+add-attachment-notification-reminder2 =
+    .label = Gehitu eranskina…
+    .accesskey = e
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 menuitem-attach-files =
     .label = Fitxategia(k)…
     .accesskey = F
@@ -81,17 +83,6 @@ attachment-bucket-count =
            *[other] { $count } eranskin
         }
     .accesskey = e
-#   $count (Number) - the number of attachments in the attachment bucket
-attachments-placeholder-tooltip =
-    .tooltiptext =
-        { $count ->
-            [1] Eranskin { $count }
-            [one] Eranskin { $count }
-           *[other] { $count } eranskin
-        }
-#   { attachment-bucket-count.accesskey } - Do not localize this message.
-key-toggle-attachment-pane =
-    .key = { attachment-bucket-count.accesskey }
 expand-attachment-pane-tooltip =
     .tooltiptext = Erakutsi eranskinen panela ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
@@ -222,6 +213,12 @@ many-public-recipients-ignore =
     .label = Mantendu hartzaileak ikusgai
     .accesskey = i
 many-public-recipients-prompt-title = Hartzaile publiko gehiegi
+#   $count (Number) - the count of addresses in the public recipients fields.
+many-public-recipients-prompt-msg =
+    { $count ->
+        [one] Zure mezuak hartzaile publikoa du. Honek pribatutasunean eragin dezake. Hau saihestu dezakezu hartzailea Nori:-tik CCedo Bcc-ra mugituta
+       *[other] Zure mezuak { $count } hartzaile publiko ditu. Honek pribatutasunean eragin dezake. Hau saihestu dezakezu hartzaileak Nori:-tik CCedo Bcc-ra mugituta
+    }
 many-public-recipients-prompt-cancel = Utzi bidalketa
 many-public-recipients-prompt-send = Jarraitu hala ere
 

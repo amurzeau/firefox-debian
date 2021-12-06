@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = アドレスバーに追加
 page-action-manage-extension =
     .label = 拡張機能を管理...
-page-action-remove-from-urlbar =
-    .label = アドレスバーから削除
 page-action-remove-extension =
     .label = 拡張機能を削除
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = 今回だけ使う検索エンジン:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = 検索設定を変更
 search-one-offs-change-settings-compact-button =
     .tooltiptext = 検索設定を変更します
 search-one-offs-context-open-new-tab =
@@ -246,8 +238,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = 追加時にエディターを表示する
     .accesskey = S
-bookmark-panel-done-button =
-    .label = 完了
 bookmark-panel-save-button =
     .label = 保存
 # Width of the bookmark panel.
@@ -277,8 +267,6 @@ identity-passive-loaded = このページの一部 (画像など) は安全で�
 identity-active-loaded = このページでの保護は無効に設定されています。
 identity-weak-encryption = このページは脆弱な暗号を使用しています。
 identity-insecure-login-forms = このページのログインフォームは安全ではありません。
-identity-permissions =
-    .value = このサイトの設定
 identity-https-only-connection-upgraded = (HTTPS で接続中)
 identity-https-only-label = HTTPS-Only モード
 identity-https-only-dropdown-on =
@@ -294,7 +282,6 @@ identity-permissions-storage-access-header = クロスサイト Cookie
 identity-permissions-storage-access-hint = 以下のサイトが、あなたがこのサイトにいる間、クロスサイト Cookie とサイトデータにアクセスできます。
 identity-permissions-storage-access-learn-more = 詳細情報
 identity-permissions-reload-hint = 変更内容を適用するには、ページの再読み込みが必要です。
-identity-permissions-empty = このサイトに特別な権限は設定されていません。
 identity-clear-site-data =
     .label = Cookie とサイトデータを消去...
 identity-connection-not-secure-security-view = このサイトとの接続は安全ではありません。
@@ -376,12 +363,6 @@ bookmarks-toolbar-empty-message = ブックマークをこのブックマーク�
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = 共有するカメラ:
-    .accesskey = C
-popup-select-microphone =
-    .value = 共有するマイク:
-    .accesskey = M
 popup-select-camera-device =
     .value = カメラ:
     .accesskey = C
@@ -395,14 +376,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = スピーカー
 popup-all-windows-shared = 画面に表示されているすべてのウィンドウを共有します。
-popup-screen-sharing-not-now =
-    .label = 後で
-    .accesskey = w
-popup-screen-sharing-never =
-    .label = 以後許可しない
-    .accesskey = N
-popup-silence-notifications-checkbox = 共有中は { -brand-short-name } からの通知を無効にする。
-popup-silence-notifications-checkbox-warning = 共有中は { -brand-short-name } からの通知を表示しないようにします。
 popup-screen-sharing-block =
     .label = ブロック
     .accesskey = B
@@ -426,14 +399,10 @@ enable-devtools-popup-description = F12 ショートカットを使うには、�
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = URL または検索語句を入力します
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = URL または検索語句を入力します
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = ブラウザーがリモート制御下にあります
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -482,8 +451,6 @@ urlbar-go-button =
     .tooltiptext = アドレスバーに入力された URL へ移動します
 urlbar-page-action-button =
     .tooltiptext = ページ操作
-urlbar-pocket-button =
-    .tooltiptext = { -pocket-brand-name } に保存
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -542,6 +509,17 @@ urlbar-result-action-search-tabs = タブを検索
 
 ## Labels shown above groups of urlbar results
 
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+  .label = { -firefox-suggest-brand-name }
+
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+  .label = { $engine } の検索候補
 
 ## Full Screen and Pointer Lock UI
 
@@ -678,6 +656,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = ツールバーをカスタマイズ...
     .accesskey = C
+toolbar-button-email-link =
+    .label = ページの URL をメールで送信
+    .tooltiptext = このページの URL をメールで送信します
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = ページを保存
+    .tooltiptext = このページを保存します ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = ファイルを開く
+    .tooltiptext = ファイルを開きます ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = 同期タブ
+    .tooltiptext = 他の端末のタブを表示します
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = 新しいプライベートウィンドウ
+    .tooltiptext = 新しいプライベートブラウジングウィンドウを開きます ({ $shortcut })
 
 ## EME notification panel
 
@@ -728,6 +727,57 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = ポップアップをブロックするとき、このメッセージを表示しない
     .accesskey = D
+
+edit-popup-settings =
+    .label = ポップアップの設定を管理...
+    .accesskey = M
+
 picture-in-picture-hide-toggle =
     .label = ピクチャーインピクチャーの切り替えボタンを隠す
     .accesskey = H
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = ナビゲーション
+navbar-downloads =
+    .label = ダウンロード
+navbar-overflow =
+    .tooltiptext = その他のツール...
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = 印刷
+    .tooltiptext = このページを印刷します... ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = 印刷
+    .tooltiptext = このページを印刷します
+navbar-home =
+    .label = ホーム
+    .tooltiptext = { -brand-short-name } のホームページです
+navbar-library =
+    .label = ブラウジングライブラリー
+    .tooltiptext = 履歴や保存したブックマークなどを表示します
+navbar-search =
+    .title = 検索
+navbar-accessibility-indicator =
+    .tooltiptext = アクセシビリティ機能が有効です
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = ブラウザータブ
+tabs-toolbar-new-tab =
+    .label = 新しいタブ
+tabs-toolbar-list-all-tabs =
+    .label = タブを一覧表示する
+    .tooltiptext = タブを一覧表示します
+
+## Infobar shown at startup to suggest session-restore
+
+# <img data-l10n-name="icon"/> will be replaced by the application menu icon
+restore-session-startup-suggestion-message = <strong>前回のタブを開きますか？</strong> { -brand-short-name } アプリケーションメニュー<img data-l10n-name="icon"/>の履歴から前回のセッションを復元できます。
+restore-session-startup-suggestion-button = 方法を確認

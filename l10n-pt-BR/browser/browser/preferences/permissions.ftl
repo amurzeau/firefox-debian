@@ -8,7 +8,7 @@ permissions-window =
 permissions-close-key =
     .key = W
 permissions-address = Endereço do site
-    .accesskey = e
+    .accesskey = E
 permissions-block =
     .label = Bloquear
     .accesskey = B
@@ -34,12 +34,6 @@ permissions-remove =
 permissions-remove-all =
     .label = Remover todos os sites
     .accesskey = t
-permissions-button-cancel =
-    .label = Cancelar
-    .accesskey = C
-permissions-button-ok =
-    .label = Salvar alterações
-    .accesskey = S
 permission-dialog =
     .buttonlabelaccept = Salvar alterações
     .buttonaccesskeyaccept = S
@@ -86,7 +80,7 @@ permissions-exceptions-etp-desc = Você desativou proteções nestes sites.
 permissions-exceptions-cookie-window =
     .title = Exceções - Cookies e dados de sites
     .style = { permissions-window.style }
-permissions-exceptions-cookie-desc = Você pode especificar que sites têm ou não permissão para armazenar cookies e dados de sites no seu computador. Digite o endereço exato de um site e clique em Permitir, Bloquear ou Permitir nesta sessão.
+permissions-exceptions-cookie-desc = Você pode especificar alguns sites para sempre ou nunca ter permissão para armazenar cookies e dados no seu computador. Digite o endereço exato de um site e clique em Permitir, Bloquear ou Permitir nesta sessão.
 
 ## Exceptions - HTTPS-Only Mode
 
@@ -98,9 +92,9 @@ permissions-exceptions-https-only-desc = Você pode desativar o modo somente HTT
 ## Exceptions - Pop-ups
 
 permissions-exceptions-popup-window =
-    .title = Sites permitidos - Popups
+    .title = Sites permitidos - Abertura de janelas
     .style = { permissions-window.style }
-permissions-exceptions-popup-desc = Você pode especificar que sites têm permissão para abrir janelas popup. Digite o endereço exato de um site e clique em Permitir.
+permissions-exceptions-popup-desc = Você pode especificar que sites têm permissão para abrir janelas. Digite o endereço exato de um site e clique em Permitir.
 
 ## Exceptions - Saved Logins
 

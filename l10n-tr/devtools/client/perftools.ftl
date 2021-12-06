@@ -88,8 +88,6 @@ perftools-thread-img-decoder =
     .title = Görüntü çözme iş parçacıkları
 perftools-thread-dns-resolver =
     .title = DNS çözümleme bu iş parçacığında gerçekleşir
-perftools-thread-js-helper =
-    .title = JS engine background work such as off-main-thread compiles
 perftools-thread-task-controller =
     .title = TaskController iş parçacığı havuzu iş parçacıkları
 
@@ -108,3 +106,19 @@ perftools-onboarding-message = <b>Yeni</b>: { -profiler-brand-name } artık geli
 perftools-onboarding-reenable-old-panel = (Sınırlı bir süre için <a>{ options-context-advanced-settings }</a> aracılığıyla eski Performans paneline erişebilirsiniz.)
 perftools-onboarding-close-button =
     .aria-label = Tanıtım mesajını kapat
+
+## Profiler presets
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# The same labels and descriptions are also defined in appmenu.ftl.
+
+perftools-presets-web-developer-label = Web geliştirici
+perftools-presets-firefox-platform-label = Firefox platformu
+perftools-presets-firefox-graphics-label = Firefox grafikleri
+perftools-presets-media-label = Ortam
+perftools-presets-custom-label = Özel
+
+##
+

@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Føj til adressefeltet
 page-action-manage-extension =
     .label = Håndter udvidelse…
-page-action-remove-from-urlbar =
-    .label = Fjern fra adressefeltet
 page-action-remove-extension =
     .label = Fjern udvidelse
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Søg denne gang med:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Skift søgeindstillinger
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Skift søgeindstillinger
 search-one-offs-context-open-new-tab =
@@ -250,8 +242,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Vis editor, når der gemmes
     .accesskey = V
-bookmark-panel-done-button =
-    .label = Færdig
 bookmark-panel-save-button =
     .label = Gem
 # Width of the bookmark panel.
@@ -281,8 +271,6 @@ identity-passive-loaded = Dele af denne side (såsom billeder) er ikke sikre.
 identity-active-loaded = Du har slået beskyttelse fra på denne side.
 identity-weak-encryption = Denne side bruger svag kryptering.
 identity-insecure-login-forms = Logins foretaget på denne side kan blive kompromitteret.
-identity-permissions =
-    .value = Tilladelser
 identity-https-only-connection-upgraded = (opgraderet til HTTPS)
 identity-https-only-label = Tilstanden Kun-HTTPS
 identity-https-only-dropdown-on =
@@ -298,7 +286,6 @@ identity-permissions-storage-access-header = Cookies på tværs af websteder
 identity-permissions-storage-access-hint = Disse parter kan anvende webstedsdata og cookies på tværs af websteder, mens du besøger dette websted.
 identity-permissions-storage-access-learn-more = Læs mere
 identity-permissions-reload-hint = Du skal muligvis genindlæse siden, før at ændringerne slår igennem.
-identity-permissions-empty = Du har ikke tildelt dette websted nogen særlige tilladelser.
 identity-clear-site-data =
     .label = Ryd cookies og webstedsdata…
 identity-connection-not-secure-security-view = Din forbindelse til webstedet er ikke sikker.
@@ -383,12 +370,6 @@ bookmarks-toolbar-empty-message = Få hurtig adgang til dine bogmærker ved at p
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Kamera til deling:
-    .accesskey = K
-popup-select-microphone =
-    .value = Mikrofon til deling:
-    .accesskey = M
 popup-select-camera-device =
     .value = Kamera:
     .accesskey = K
@@ -402,14 +383,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Højttalere
 popup-all-windows-shared = Alle synlige vinduer på din skærm vil blive delt.
-popup-screen-sharing-not-now =
-    .label = Ikke nu
-    .accesskey = n
-popup-screen-sharing-never =
-    .label = Tillad aldrig
-    .accesskey = a
-popup-silence-notifications-checkbox = Deaktiver beskeder fra { -brand-short-name } ved deling
-popup-silence-notifications-checkbox-warning = { -brand-short-name } vil ikke vise beskeder, når du deler
 popup-screen-sharing-block =
     .label = Bloker
     .accesskey = B
@@ -433,14 +406,10 @@ enable-devtools-popup-description = For at bruge F12 som genvej skal du først �
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Søg eller indtast en adresse
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Søg eller indtast en adresse
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Browseren fjernstyres
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -489,8 +458,6 @@ urlbar-go-button =
     .tooltiptext = Gå til adressen i adressefeltet
 urlbar-page-action-button =
     .tooltiptext = Sidehandlinger
-urlbar-pocket-button =
-    .tooltiptext = Gem til { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -549,6 +516,16 @@ urlbar-result-action-search-tabs = Søg i faneblade
 
 ## Labels shown above groups of urlbar results
 
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = Forslag fra { $engine }
 
 ## Full Screen and Pointer Lock UI
 
@@ -685,6 +662,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Tilpas værktøjslinje…
     .accesskey = T
+toolbar-button-email-link =
+    .label = Send link
+    .tooltiptext = Send link til siden i en mail…
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Gem side
+    .tooltiptext = Gem denne side ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Åbn fil
+    .tooltiptext = Åbn en fil ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Synkroniserede faneblade
+    .tooltiptext = Vis faneblade fra dine andre enheder
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Nyt privat vindue
+    .tooltiptext = Åbn et nyt vindue til privat browsing ({ $shortcut })
 
 ## EME notification panel
 
@@ -735,6 +733,55 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Vis ikke denne besked når pop op-vinduer bliver blokeret
     .accesskey = V
+edit-popup-settings =
+    .label = Håndter pop op-indstillinger
+    .accesskey = H
 picture-in-picture-hide-toggle =
     .label = Skjul kontakt for billed-i-billed
     .accesskey = S
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navigation
+navbar-downloads =
+    .label = Filhentning
+navbar-overflow =
+    .tooltiptext = Flere værktøjer…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Udskriv
+    .tooltiptext = Udskriv denne side… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Udskriv
+    .tooltiptext = Udskriv denne side
+navbar-home =
+    .label = Hjem
+    .tooltiptext = Startside for { -brand-short-name }
+navbar-library =
+    .label = Arkiv
+    .tooltiptext = Se historik, gemte bogmærker og andet
+navbar-search =
+    .title = Søgefelt
+navbar-accessibility-indicator =
+    .tooltiptext = Tilgængelighedsfunktioner er aktiveret
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Faneblade
+tabs-toolbar-new-tab =
+    .label = Nyt faneblad
+tabs-toolbar-list-all-tabs =
+    .label = List alle faneblade
+    .tooltiptext = List alle faneblade
+
+## Infobar shown at startup to suggest session-restore
+
+# <img data-l10n-name="icon"/> will be replaced by the application menu icon
+restore-session-startup-suggestion-message = <strong>Åbn tidligere faneblade?</strong> Du kan gendanne din tidligere session fra programmenuen i { -brand-short-name } <img data-l10n-name="icon"/> under Historik.
+restore-session-startup-suggestion-button = Vis mig hvordan

@@ -8,9 +8,6 @@
 newtab-page-title = Жаңа бет
 newtab-settings-button =
     .title = Жаңа бетті баптаңыз
-newtab-personalize-button-label = Жекелендіру
-    .title = Жаңа бетті жекелендіру
-    .aria-label = Жаңа бетті жекелендіру
 newtab-personalize-icon-label =
     .title = Жаңа бетті жекелендіру
     .aria-label = Жаңа бетті жекелендіру
@@ -23,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Іздеу
     .aria-label = Іздеу
-newtab-search-box-search-the-web-text = Интернетте іздеу
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = { $engine } көмегімен іздеу немесе адрес
@@ -173,6 +169,11 @@ newtab-label-sponsored = { $sponsorOrSource } · Демеушілік
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = { $sponsor } демеушісінен
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } мин
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -229,6 +230,17 @@ newtab-pocket-more-recommendations = Көбірек ұсыныстар
 newtab-pocket-learn-more = Көбірек білу
 newtab-pocket-cta-button = { -pocket-brand-name }-ті алу
 newtab-pocket-cta-text = Өзіңіз ұнатқан хикаяларды { -pocket-brand-name } ішіне сақтап, миіңізді тамаша оқумен толықтырыңыз.
+# A save to Pocket button that shows over the card thumbnail on hover.
+newtab-pocket-save-to-pocket = { -pocket-brand-name } ішіне сақтау
+newtab-pocket-saved-to-pocket = { -pocket-brand-name } ішіне сақталды
+
+## Pocket Final Card Section.
+## This is for the final card in the Pocket grid.
+
+newtab-pocket-last-card-title = Барлығын оқып шықтыңыз!
+newtab-pocket-last-card-desc = Көбірек көру үшін кейінірек кіріңіз.
+newtab-pocket-last-card-image =
+    .alt = Барлығын оқып шықтыңыз
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.
@@ -251,10 +263,4 @@ newtab-custom-pocket-sponsored = Демеушілер мақалалары
 newtab-custom-recent-title = Жуырдағы белсенділік
 newtab-custom-recent-subtitle = Жуырдағы сайттар мен құрама таңдауы
 newtab-custom-close-button = Жабу
-# For the "Snippets" feature traditionally on about:home.
-# Alternative translation options: "Small Note" or something that
-# expresses the idea of "a small message, shortened from something else,
-# and non-essential but also not entirely trivial and useless.
-newtab-custom-snippets-title = Үзінділер
-newtab-custom-snippets-subtitle = { -vendor-short-name } және { -brand-product-name } кеңестері және жаңалықтары
 newtab-custom-settings = Көбірек баптауларды басқару

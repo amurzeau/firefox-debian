@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = साइडबार बन्द गर्नुहोस्
+
+sidebar-close-button =
+    .tooltiptext = छेउपट्टी बन्द गर्नुहोस्

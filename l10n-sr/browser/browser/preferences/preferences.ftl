@@ -8,18 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Само када је { -brand-short-name } подешен да блокира познате елементе за праћење
 do-not-track-option-always =
     .label = Увек
-pref-page-title = Подешавања
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Please keep the placeholder string short to avoid truncation.
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input-box =
-    .style = width: 15.4em
-    .placeholder = Претражите подешавања
 settings-page-title = Подешавања
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
@@ -47,9 +35,6 @@ category-search =
 pane-privacy-title = Приватност и безбедност
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-pane-sync-title2 = { -sync-brand-short-name }
-category-sync2 =
-    .tooltiptext = { pane-sync-title2 }
 pane-sync-title3 = Синхронизација
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
@@ -112,21 +97,12 @@ restart-later = Рестартуј касније
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their home page
-# is being controlled by an extension.
-extension-controlled-homepage-override = Додатак <img data-l10n-name="icon"/> { $name } управља почетном страницом.
-# This string is shown to notify the user that their new tab page
-# is being controlled by an extension.
-extension-controlled-new-tab-url = Додатак <img data-l10n-name="icon"/> { $name } управља страницом нове картице.
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
 extension-controlled-password-saving = Додатак <img data-l10n-name="icon"/> { $name } управља овим подешавањем.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Додатак <img data-l10n-name="icon"/> { $name } управља овим подешавањем.
-# This string is shown to notify the user that the default search engine
-# is being controlled by an extension.
-extension-controlled-default-search = Додатак <img data-l10n-name="icon"/> { $name } је подесио подразумевани претраживач.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = Додатку <img data-l10n-name="icon"/> { $name } су потребне картице у контејнеру.
@@ -147,21 +123,12 @@ extension-controlled-enable = Како бисте омогућили ексте�
 
 search-results-header = Резултати претраге
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
-search-results-empty-message = У подешавањима нема резултата за „<span data-l10n-name="query"></span>”.
-# `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message2 = У подешавањима нема резултата за „<span data-l10n-name="query"></span>”.
 search-results-help-link = Треба вам помоћ? Посетите <a data-l10n-name="url">{ -brand-short-name } подршку</a>
 
 ## General Section
 
 startup-header = Покретање
-# { -brand-short-name } will be 'Firefox Developer Edition',
-# since this setting is only exposed in Firefox Developer Edition
-separate-profile-mode =
-    .label = Дозволи да { -brand-short-name } и Firefox раде у исто време
-use-firefox-sync = Савет: Ово користи одвојене профиле. Користите { -sync-brand-short-name } да делите податке између њих.
-get-started-not-logged-in = Пријавите се на { -sync-brand-short-name }…
-get-started-configured = Отвори подешавања { -sync-brand-short-name }-а
 always-check-default =
     .label = Проверавај да ли је { -brand-short-name } подразумевани прегледач
     .accesskey = р
@@ -173,6 +140,9 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Врати претходну сесију
     .accesskey = В
+startup-restore-windows-and-tabs =
+    .label = Врати претходне прозоре и картице
+    .accesskey = т
 startup-restore-warn-on-quit =
     .label = Упозори ме при изласку из прегледача
 disable-extension =
@@ -190,9 +160,6 @@ warn-on-close-multiple-tabs =
 warn-on-open-many-tabs =
     .label = Упозори ме када отварање више картица може да успори { -brand-short-name }
     .accesskey = У
-switch-links-to-new-tabs =
-    .label = Пребаци ме на новоотворену картицу
-    .accesskey = њ
 switch-to-new-tabs =
     .label = Пређи на отворену везу, слику или медијски садржај
     .accesskey = ђ
@@ -329,10 +296,6 @@ applications-manage-app =
     .label = Детаљи о апликацији…
 applications-always-ask =
     .label = Увек питај
-applications-type-pdf = Portable Document Format (PDF)
-# Variables:
-#   $type (String) - the MIME type (e.g application/binary)
-applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 # Variables:
 #   $type-description (String) - Description of the type (e.g "Portable Document Format")
 #   $type (String) - the MIME type (e.g application/binary)
@@ -435,15 +398,6 @@ update-application-warning-cross-user-setting = Ово подешавање се
 update-application-use-service =
     .label = При инсталацији ажурирања користи позадинску услугу
     .accesskey = н
-update-setting-write-failure-title = Грешка при чувању поставки за ажурирање
-# Variables:
-#   $path (String) - Path to the configuration file
-# The newlines between the main text and the line containing the path is
-# intentional so the path is easier to identify.
-update-setting-write-failure-message =
-    { -brand-short-name } је наишао на грешку и није сачувао ову промену. Имајте на уму да је за промену овог подешавања потребна дозвола за писање у датотеку испод. Ви или администратор система можете да решите грешку тако што ћете корисничкој групи дати потпуну контролу над овом датотеком.
-    
-    Није могуће писати у датотеку: { $path }
 update-setting-write-failure-title2 = Грешка при чувању подешавања ажурирања
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -656,10 +610,8 @@ search-show-suggestions-above-history-option =
     .label = Предлози за претрагу испред историје прегледања у траци за адресу
 search-show-suggestions-private-windows =
     .label = У приватним прозорима
-suggestions-addressbar-settings-generic = Измените посдешавања предлога претраживања
 suggestions-addressbar-settings-generic2 = Промените друга подешавања предлога у траци за адресу
 search-suggestions-cant-show = Предлози претраге неће бити приказани у траци за локацију зато што сте подесили да { -brand-short-name } никада не памти историју.
-search-one-click-header = Додатни претраживачи
 search-one-click-header2 = Пречице за претрагу
 search-one-click-desc = Изаберите алтернативне претраживаче који ће се појављивати испод траке за адресу и поља за претрагу при уносу кључне речи.
 search-choose-engine-column =
@@ -686,8 +638,6 @@ search-keyword-warning-bookmark = Одабрали сте кључну реч к
 
 ## Containers Section
 
-containers-back-button =
-    .aria-label = Назад на подешавања
 containers-back-button2 =
     .aria-label = Назад на подешавања
 containers-header = Картице у контејнеру
@@ -697,8 +647,6 @@ containers-add-button =
 containers-new-tab-check =
     .label = Изабери контејнер за сваку нову картицу
     .accesskey = И
-containers-preferences-button =
-    .label = Подешавања
 containers-settings-button =
     .label = Подешавања
 containers-remove-button =
@@ -708,10 +656,6 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Понесите веб са собом
-sync-signedout-description = Синхронизујте обележиваче, историју, картице, лозинке, додатке и подешавања са свим уређајима.
-sync-signedout-account-signin2 =
-    .label = Пријавите се на { -sync-brand-short-name }…
-    .accesskey = П
 sync-signedout-description2 = Синхронизујте обележиваче, историју, картице, лозинке, додатке и подешавања са свим уређајима.
 sync-signedout-account-signin3 =
     .label = Пријавите се ради синхронизације…
@@ -751,10 +695,6 @@ sync-sign-in =
 
 prefs-syncing-on = Синхронизација је укључена
 prefs-syncing-off = Синхронизација: ИСКЉУЧЕНА
-prefs-sync-setup =
-    .label = Поставите { -sync-brand-short-name }…
-    .accesskey = П
-prefs-sync-offer-setup-label = Синхронизујте обележиваче, историју, картице, лозинке, додатке и подешавања са свим уређајима.
 prefs-sync-turn-on-syncing =
     .label = Укључи синхронизацију
     .accesskey = У
@@ -774,7 +714,6 @@ sync-currently-syncing-logins-passwords = Подаци за пријаву
 sync-currently-syncing-addresses = Адресе
 sync-currently-syncing-creditcards = Кредитне картице
 sync-currently-syncing-addons = Додаци
-sync-currently-syncing-prefs = Подешавања
 sync-currently-syncing-settings = Подешавања
 sync-change-options =
     .label = Промена…
@@ -815,10 +754,6 @@ sync-engine-addons =
     .label = Додаци
     .tooltiptext = Додаци и теме за Firefox на рачунару
     .accesskey = Д
-sync-engine-prefs =
-    .label = Подешавања
-    .tooltiptext = Промењена општа подешавања, подешавања приватности и безбедности
-    .accesskey = П
 sync-engine-settings =
     .label = Подешавања
     .tooltiptext = Промењена општа подешавања, подешавања приватности и безбедности
@@ -868,9 +803,6 @@ forms-fill-logins-and-passwords =
 forms-saved-logins =
     .label = Сачуване лозинке…
     .accesskey = С
-forms-master-pw-use =
-    .label = Користи главну лозинку
-    .accesskey = л
 forms-primary-pw-use =
     .label = Користи примарну лозинку
     .accesskey = л
@@ -881,7 +813,6 @@ forms-primary-pw-learn-more-link = Сазнајте више
 forms-master-pw-change =
     .label = Промени главну лозинку…
     .accesskey = П
-forms-master-pw-fips-title = У овом тренутку налазите се у FIPS режиму. У режиму FIPS није дозвољено користити празну главну лозинку.
 forms-primary-pw-change =
     .label = Промени примарну лозинку…
     .accesskey = м
@@ -898,13 +829,6 @@ forms-windows-sso-desc = Управљајте налозима у подешав
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = Из безбедносних разлога потребно је да унесете податке за пријаву на Windows да бисте направили главну лозинку.
-# This message can be seen by trying to add a Master Password.
-# The macOS strings are preceded by the operating system with "Firefox is trying to "
-# and includes subtitle of "Enter password for the user "xxx" to allow this." These
-# notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = направи главну лозинку
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Из безбедносних разлога потребно је да унесете податке за пријаву на Windows да бисте направили примарну лозинку.
 # This message can be seen by trying to add a Primary Password.
@@ -1018,9 +942,6 @@ sitedata-clear =
 sitedata-settings =
     .label = Управљај подацима…
     .accesskey = ц
-sitedata-cookies-permissions =
-    .label = Управљам овлашћењима…
-    .accesskey = п
 sitedata-cookies-exceptions =
     .label = Управљај изузецима…
     .accesskey = з
@@ -1177,10 +1098,6 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = Изузеци
     .accesskey = И
-permissions-a11y-privacy-checkbox =
-    .label = Спречи приступ услугама приступачности мом прегледачу
-    .accesskey = а
-permissions-a11y-privacy-link = Сазнајте више
 
 ## Privacy Section - Data Collection
 
@@ -1208,10 +1125,6 @@ addon-recommendations-link = Сазнајте више
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = У овој верзији је слање података онемогућено.
-collection-backlogged-crash-reports =
-    .label = Дозволи да { -brand-short-name } шаље заостале извештаје о отказивању у моје име
-    .accesskey = љ
-collection-backlogged-crash-reports-link = Сазнајте више
 collection-backlogged-crash-reports-with-link = Дозволи да { -brand-short-name } шаље заостале извештаје о отказивању у моје име <a data-l10n-name="crash-reports-link">Сазнајте више</a>
     .accesskey = љ
 
@@ -1236,13 +1149,6 @@ security-block-uncommon-software =
 ## Privacy Section - Certificates
 
 certs-header = Сертификати
-certs-personal-label = Када сервер затражи ваш лични сертификат
-certs-select-auto-option =
-    .label = Изабери један аутоматски
-    .accesskey = ј
-certs-select-ask-option =
-    .label = Питај ме сваки пут
-    .accesskey = с
 certs-enable-ocsp =
     .label = Захтевај од OCSP сервера да потврди ваљаност сертификата
     .accesskey = З
@@ -1252,29 +1158,6 @@ certs-view =
 certs-devices =
     .label = Безбедносни уређаји…
     .accesskey = Б
-space-alert-learn-more-button =
-    .label = Сазнајте више
-    .accesskey = С
-space-alert-over-5gb-pref-button =
-    .label = Отвори подешавања
-    .accesskey = О
-space-alert-over-5gb-message =
-    { -brand-short-name.gender ->
-        [masculine] { -brand-short-name(case: "loc") }
-        [feminine] { -brand-short-name(case: "loc") }
-        [neuter] { -brand-short-name(case: "loc") }
-       *[other] Програму { -brand-short-name }
-    } понестаје слободног простора на диску. Садржај веб-сајтова се можда неће правилно приказивати. Ускладиштене податке можете обрисати у одељку Подешавања → Приватност и безбедност → Колачићи и подаци о сајтовима.
-space-alert-under-5gb-ok-button =
-    .label = Разумем
-    .accesskey = Р
-space-alert-under-5gb-message =
-    { -brand-short-name.gender ->
-        [masculine] { -brand-short-name(case: "loc") }
-        [feminine] { -brand-short-name(case: "loc") }
-        [neuter] { -brand-short-name(case: "loc") }
-       *[other] Програму { -brand-short-name }
-    } понестаје слободног простора на диску. Садржај веб-сајтова се можда неће правилно приказивати. Кликните на „Сазнајте више” да бисте оптимизовали коришћење диска ради бољег угођаја при претраживању интернета.
 space-alert-over-5gb-settings-button =
     .label = Отвори подешавања
     .accesskey = О

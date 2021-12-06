@@ -128,10 +128,6 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Tshintsha iisethingi zokukhangela
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Tshintsha iisethingi zokukhangela
 search-one-offs-context-open-new-tab =
@@ -155,8 +151,6 @@ search-one-offs-add-engine-menu =
 
 ## Bookmark Panel
 
-bookmark-panel-done-button =
-    .label = Kugqityiwe
 
 ## Identity Panel
 
@@ -169,7 +163,6 @@ identity-active-loaded = Ulucimile ukhuseleko kweli phepha.
 identity-weak-encryption = Eli phepha lisebenzisa ukukhowuda okubuthathaka.
 identity-insecure-login-forms = Iiogini ezifakwe kweli phepha zinokuba sengozini.
 identity-permissions-reload-hint = Kusenokufuneka uphinde ulifake eli phepha ukuze utshintsho lubonakale.
-identity-permissions-empty = Akunikanga le sayithi nayiphi na imvume ekhethekileyo.
 identity-remove-cert-exception =
     .label = Susa Ezikhethekileyo
     .accesskey = S
@@ -214,12 +207,6 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Ikhamera yokubolekisana:
-    .accesskey = I
-popup-select-microphone =
-    .value = Imayikhrofowuni yokubolekisana:
-    .accesskey = I
 popup-all-windows-shared = Zonke iiwindowu ezikwiskrini sakho ziya kwabiwa.
 
 ## WebRTC window or screen share tab switch warning
@@ -230,12 +217,8 @@ popup-all-windows-shared = Zonke iiwindowu ezikwiskrini sakho ziya kwabiwa.
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Khangela okanye ngenisa idilesi
 urlbar-placeholder =
     .placeholder = Khangela okanye ngenisa idilesi
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Ibhrawza iphantsi kolawulo lwerimoti
 urlbar-switch-to-tab =
     .value = Tshintshela kwithebhu:
 # Used to indicate that a selected autocomplete entry is provided by an extension.
@@ -322,6 +305,27 @@ bookmarks-toolbar-placeholder-button =
 more-menu-go-offline =
     .label = Sebenza ngaphandle kweIntanethi
     .accesskey = e
+toolbar-button-email-link =
+    .label = Ikhonkco le-imeyili
+    .tooltiptext = Thumela ngeimeyile ikhonkco kweli khasi
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Gcina iphepha
+    .tooltiptext = Gcina eli khasi ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Vula Ifayile
+    .tooltiptext = Vula ifayile ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Iithebhu Ezingqamanisiweyo
+    .tooltiptext = Bonisa iithebhu ezivela kwezinye izixhobo
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Ifestile yangasese entsha
+    .tooltiptext = Vula ifestile entsha yokubhrawuza ngasese ({ $shortcut })
 
 ## EME notification panel
 
@@ -356,3 +360,30 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Musa ukubonisa lo myalezo xa kunqandiwe okuzivelelayo
     .accesskey = D
+
+# Navigator Toolbox
+
+navbar-downloads =
+    .label = Okukhutshelwayo
+navbar-overflow =
+    .tooltiptext = Izixhobo ezingakumbi…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Printa
+    .tooltiptext = Printa eli phepha… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Printa
+    .tooltiptext = Printa eli phepha
+navbar-search =
+    .title = Khangela
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Iithebhu zokubhrawuza
+tabs-toolbar-new-tab =
+    .label = thebhu entsha
+tabs-toolbar-list-all-tabs =
+    .label = Dwelisa zonke iithebhu
+    .tooltiptext = Dwelisa zonke iithebhu

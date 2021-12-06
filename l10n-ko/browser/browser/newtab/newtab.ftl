@@ -20,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = 검색
     .aria-label = 검색
-newtab-search-box-search-the-web-text = 웹 검색
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = { $engine } 검색 또는 주소 입력
@@ -170,6 +169,11 @@ newtab-label-sponsored = { $sponsorOrSource } · 후원
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = { $sponsor } 후원
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead }분
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -222,10 +226,25 @@ newtab-discovery-empty-section-topstories-timed-out = 이런! 이 섹션을 거�
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = 인기 주제:
+newtab-pocket-new-topics-title = 더 많은 이야기를 원하세요? { -pocket-brand-name } 인기 주제 보기
 newtab-pocket-more-recommendations = 더 많은 추천
 newtab-pocket-learn-more = 더 알아보기
 newtab-pocket-cta-button = { -pocket-brand-name } 받기
 newtab-pocket-cta-text = 좋아하는 이야기를 { -pocket-brand-name }에 저장하고 재미있게 읽어 보세요.
+newtab-pocket-pocket-firefox-family = { -pocket-brand-name }은 { -brand-product-name } 제품군의 일부입니다.
+# A save to Pocket button that shows over the card thumbnail on hover.
+newtab-pocket-save-to-pocket = { -pocket-brand-name }에 저장
+newtab-pocket-saved-to-pocket = { -pocket-brand-name }에 저장
+# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
+newtab-pocket-load-more-stories-button = 더 많은 이야기 불러오기
+
+## Pocket Final Card Section.
+## This is for the final card in the Pocket grid.
+
+newtab-pocket-last-card-title = 모두 따라 잡았습니다!
+newtab-pocket-last-card-desc = 더 많은 이야기는 나중에 다시 확인해 보세요.
+newtab-pocket-last-card-image =
+    .alt = 모두 따라 잡았습니다
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.

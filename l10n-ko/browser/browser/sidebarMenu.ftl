@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = 탐색창 닫기
+
+sidebar-close-button =
+    .tooltiptext = 탐색창 닫기

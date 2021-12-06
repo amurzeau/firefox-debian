@@ -8,9 +8,6 @@
 newtab-page-title = Fitxa berria
 newtab-settings-button =
     .title = Pertsonalizatu fitxa berriaren orria
-newtab-personalize-button-label = Pertsonalizatu
-    .title = Pertsonalizatu fitxa berria
-    .aria-label = Pertsonalizatu fitxa berria
 newtab-personalize-icon-label =
     .title = Pertsonalizatu fitxa berria
     .aria-label = Pertsonalizatu fitxa berria
@@ -23,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Bilatu
     .aria-label = Bilatu
-newtab-search-box-search-the-web-text = Bilatu webean
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-text = Bilatu { $engine } erabiliz edo idatzi helbidea
@@ -42,6 +38,7 @@ newtab-search-box-search-the-web-input =
     .placeholder = Bilatu webean
     .title = Bilatu webean
     .aria-label = Bilatu webean
+newtab-search-box-text = Bilatu webean
 newtab-search-box-input =
     .placeholder = Bilatu webean
     .aria-label = Bilatu webean
@@ -171,6 +168,11 @@ newtab-label-sponsored = { $sponsorOrSource }(e)k lagundua
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = Babeslea: { $sponsor }
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } · { $timeToRead } min
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -223,10 +225,25 @@ newtab-discovery-empty-section-topstories-timed-out = Kontxo! Atal hau ia-ia kar
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Gai ezagunak:
+newtab-pocket-new-topics-title = Istorio gehiago nahi dituzu? Ikusi { -pocket-brand-name }(e)ko gai ezagun hauek
 newtab-pocket-more-recommendations = Gomendio gehiago
 newtab-pocket-learn-more = Argibide gehiago
 newtab-pocket-cta-button = Eskuratu { -pocket-brand-name }
 newtab-pocket-cta-text = Gorde gogoko dituzun istorioak { -pocket-brand-name }-en eta piztu zure gogoa irakurgai erakargarriekin.
+newtab-pocket-pocket-firefox-family = { -brand-product-name }(r)en familiakoa da { -pocket-brand-name }
+# A save to Pocket button that shows over the card thumbnail on hover.
+newtab-pocket-save-to-pocket = Gorde { -pocket-brand-name }-en
+newtab-pocket-saved-to-pocket = { -pocket-brand-name }-en gordeta
+# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
+newtab-pocket-load-more-stories-button = Kargatu istorio gehiago
+
+## Pocket Final Card Section.
+## This is for the final card in the Pocket grid.
+
+newtab-pocket-last-card-title = Egunean zaude!
+newtab-pocket-last-card-desc = Itzuli geroago gehiago aurkitzeko.
+newtab-pocket-last-card-image =
+    .alt = Egunean zaude!
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.
@@ -250,10 +267,4 @@ newtab-custom-pocket-sponsored = Babesleen istorioak
 newtab-custom-recent-title = Azken jarduera
 newtab-custom-recent-subtitle = Azken gune eta edukien hautapena
 newtab-custom-close-button = Itxi
-# For the "Snippets" feature traditionally on about:home.
-# Alternative translation options: "Small Note" or something that
-# expresses the idea of "a small message, shortened from something else,
-# and non-essential but also not entirely trivial and useless.
-newtab-custom-snippets-title = Mezu-zatiak
-newtab-custom-snippets-subtitle = { -vendor-short-name } eta { -brand-product-name }(r)en aholku eta albisteak
 newtab-custom-settings = Kudeatu ezarpen gehiago

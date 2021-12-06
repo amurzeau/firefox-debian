@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Бүйір панелін жабу
+
+sidebar-close-button =
+    .tooltiptext = Бүйір панелін жабу

@@ -7,20 +7,12 @@ about-logins-page-title = Inicios de sesión y contraseñas
 
 # "Google Play" and "App Store" are both branding and should not be translated
 
-login-app-promo-title = Llévese siempre sus contraseñas consigo
-login-app-promo-subtitle = Obtenga la aplicación gratuita { -lockwise-brand-name }
-login-app-promo-android =
-    .alt = Descargar en Google Play
-login-app-promo-apple =
-    .alt = Descargar en App Store
-
 login-filter =
     .placeholder = Buscar inicios de sesión
 
 create-login-button = Crear nuevo inicio de sesión
 
 fxaccounts-sign-in-text = Acceda a sus contraseñas en todos sus dispositivos
-fxaccounts-sign-in-button = Inicia sesión en { -sync-brand-short-name }
 fxaccounts-sign-in-sync-button = Inicie sesión para sincronizar
 fxaccounts-avatar-button =
     .title = Administrar cuenta
@@ -40,8 +32,6 @@ menu-menuitem-preferences =
        *[other] Preferencias
     }
 about-logins-menu-menuitem-help = Ayuda
-menu-menuitem-android-app = { -lockwise-brand-short-name } para Android
-menu-menuitem-iphone-app = { -lockwise-brand-short-name } para iPhone y iPad
 
 ## Login List
 
@@ -55,6 +45,8 @@ login-list-count =
 login-list-sort-label-text = Ordenar por:
 login-list-name-option = Nombre (A-Z)
 login-list-name-reverse-option = Nombre (Z-A)
+login-list-username-option = Nombre de usuario (A-Z)
+login-list-username-reverse-option = Nombre de usuario (Z-A)
 about-logins-login-list-alerts-option = Alertas
 login-list-last-changed-option = Última modificación
 login-list-last-used-option = Último uso
@@ -70,21 +62,22 @@ about-logins-list-item-breach-icon =
 about-logins-list-item-vulnerable-password-icon =
     .title = Contraseña vulnerable
 
-## Introduction screen
+about-logins-list-section-breach = Sitios web vulnerados
+about-logins-list-section-vulnerable = Contraseñas vulnerables
+about-logins-list-section-nothing = Sin alertas
+about-logins-list-section-today = Hoy
+about-logins-list-section-yesterday = Ayer
+about-logins-list-section-week = Últimos 7 días
 
-login-intro-heading = ¿Busca sus inicios de sesión guardados? Configure { -sync-brand-short-name }.
+## Introduction screen
 
 about-logins-login-intro-heading-logged-out2 = ¿Busca sus inicios de sesión guardados? Active Sync o impórtelos.
 about-logins-login-intro-heading-logged-in = No se han encontrado credenciales sincronizadas.
 login-intro-description = Si guardó sus inicios de sesión en { -brand-product-name } en un dispositivo diferente, éstos son los pasos a seguir para tenerlos aquí también:
-login-intro-instruction-fxa = Cree o inicie sesión en su { -fxaccount-brand-name } en el dispositivo donde se guardan sus inicios de sesión
-login-intro-instruction-fxa-settings = Asegúrese de haber seleccionado la casilla de Inicios de sesión en los ajustes de { -sync-brand-short-name }
-about-logins-intro-instruction-help = Consulte la <a data-l10n-name="help-link"> { -lockwise-brand-short-name } Ayuda </a> para obtener más información
 login-intro-instructions-fxa = Cree o inicie sesión en su { -fxaccount-brand-name } en el dispositivo donde se guardan sus inicios de sesión.
 login-intro-instructions-fxa-settings = Ir a Ajustes > Sync > Activar la sincronización… Seleccionar la casilla Inicios de sesión y contraseñas.
 login-intro-instructions-fxa-help = Consulte la <a data-l10n-name="help-link"> { -lockwise-brand-short-name } Ayuda </a> para obtener más información.
 about-logins-intro-import = Si sus inicios de sesión están guardados en otro navegador, puede <a data-l10n-name="import-link">importarlos en { -lockwise-brand-short-name }</a>
-
 about-logins-intro-import2 = Si sus inicios de sesión se guardan fuera de { -brand-product-name }, puede <a data-l10n-name="import-browser-link">importarlos desde otro navegador</a> o <a data-l10n-name="import-file-link">desde un archivo </a>
 
 ## Login
@@ -141,8 +134,6 @@ about-logins-copy-password-os-auth-dialog-message-macosx = copiar la contraseña
 
 ## Master Password notification
 
-master-password-notification-message = Por favor, introduzca su contraseña maestra para ver los nombres de usuario y contraseñas guardadas.
-
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message-win = Para exportar sus inicios de sesión, introduzca sus credenciales de inicio de sesión de Windows. Esto ayuda a proteger la seguridad de sus cuentas.
 # This message can be seen when attempting to export a password in about:logins
@@ -157,22 +148,6 @@ master-password-reload-button =
     .accesskey = I
 
 ## Password Sync notification
-
-enable-password-sync-notification-message =
-    { PLATFORM() ->
-        [windows] ¿Quiere ver sus inicios de sesión en todas partes donde usa { -brand-product-name }? Abra Opciones de { -sync-brand-short-name } y seleccione la casilla de verificación Inicios de sesión.
-       *[other] ¿Quiere ver sus inicios de sesión en todas partes donde usa { -brand-product-name }? Abra Preferencias de { -sync-brand-short-name } y seleccione la casilla de verificación Inicios de sesión.
-    }
-enable-password-sync-preferences-button =
-    .label =
-        { PLATFORM() ->
-            [windows] Consulte las opciones de { -sync-brand-short-name }
-           *[other] Consulte las preferencias de { -sync-brand-short-name }
-        }
-    .accesskey = V
-about-logins-enable-password-sync-dont-ask-again-button =
-    .label = No volver a preguntar
-    .accesskey = N
 
 ## Dialogs
 
@@ -262,7 +237,6 @@ about-logins-error-message-duplicate-login-with-link = Ya hay una entrada para {
 
 # This is a generic error message.
 about-logins-error-message-default = Se produjo un error al intentar guardar la contraseña.
-
 
 ## Login Export Dialog
 

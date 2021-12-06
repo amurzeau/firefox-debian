@@ -8,26 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Jen pokud je zapnuto blokování nalezených sledovacích prvků
 do-not-track-option-always =
     .label = Vždy
-pref-page-title =
-    { PLATFORM() ->
-        [windows] Možnosti
-       *[other] Předvolby
-    }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Please keep the placeholder string short to avoid truncation.
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input-box =
-    .style = width: 15.4em
-    .placeholder =
-        { PLATFORM() ->
-            [windows] Najít v možnostech
-           *[other] Najít v předvolbách
-        }
 settings-page-title = Nastavení
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
@@ -55,9 +35,6 @@ category-search =
 pane-privacy-title = Soukromí a zabezpečení
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-pane-sync-title2 = { -sync-brand-short-name }
-category-sync2 =
-    .tooltiptext = { pane-sync-title2 }
 pane-sync-title3 = Synchronizace
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
@@ -132,21 +109,12 @@ restart-later = Restartovat později
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their home page
-# is being controlled by an extension.
-extension-controlled-homepage-override = Vaši domovskou stránku spravuje rozšíření <img data-l10n-name="icon"/> { $name }.
-# This string is shown to notify the user that their new tab page
-# is being controlled by an extension.
-extension-controlled-new-tab-url = Stránku v novém panelu spravuje rozšíření <img data-l10n-name="icon"/> { $name }.
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
 extension-controlled-password-saving = Toto nastavení spravuje rozšíření <img data-l10n-name="icon"/> { $name }.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Toto nastavení spravuje rozšíření <img data-l10n-name="icon"/> { $name }.
-# This string is shown to notify the user that the default search engine
-# is being controlled by an extension.
-extension-controlled-default-search = Rozšíření <img data-l10n-name="icon"/> { $name } vám nastavilo nový výchozí vyhledávač.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name } vyžaduje kontejnerové panely.
@@ -173,12 +141,6 @@ extension-controlled-enable = Pro povolení rozšíření otevřete <img data-l1
 
 search-results-header = Výsledky hledání
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
-search-results-empty-message =
-    { PLATFORM() ->
-        [windows] Je nám líto, pro „<span data-l10n-name="query"></span>“ jsme v možnostech nic nenašli.
-       *[other] Je nám líto, pro „<span data-l10n-name="query"></span>“ jsme v předvolbách nic nenašli.
-    }
-# `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message2 = Je nám líto, pro „<span data-l10n-name="query"></span>“ jsme v nastavení nic nenašli.
 search-results-help-link =
     Potřebujete pomoc? Navštivte <a data-l10n-name="url">Podporu { -brand-short-name.gender ->
@@ -191,13 +153,6 @@ search-results-help-link =
 ## General Section
 
 startup-header = Spuštění
-# { -brand-short-name } will be 'Firefox Developer Edition',
-# since this setting is only exposed in Firefox Developer Edition
-separate-profile-mode =
-    .label = Povolit současné spuštění aplikací { -brand-short-name } a Firefox
-use-firefox-sync = Tip: Budou použity oddělené uživatelské profily. Pro sdílení dat mezi nimi můžete použít { -sync-brand-short-name(case: "acc") }.
-get-started-not-logged-in = Přihlášení k { -sync-brand-short-name(case: "dat") }…
-get-started-configured = Otevřít nastavení { -sync-brand-short-name(case: "gen") }
 always-check-default =
     .label = Kontrolovat, jestli je { -brand-short-name } výchozím webovým prohlížečem
     .accesskey = w
@@ -209,6 +164,9 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Otevřít panely z minula
     .accesskey = O
+startup-restore-windows-and-tabs =
+    .label = Otevřít předchozí okna nebo panely
+    .accesskey = p
 startup-restore-warn-on-quit =
     .label = Varovat při ukončování prohlížeče
 disable-extension =
@@ -223,6 +181,17 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Varovat při zavírání více panelů
     .accesskey = v
+confirm-on-close-multiple-tabs =
+    .label = Vždy se zeptat při zavírání více panelů
+    .accesskey = V
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (String) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+confirm-on-quit-with-key =
+    .label = Vždy se zeptat při ukončování aplikace zkratkou { $quitKey }
+    .accesskey = V
 warn-on-open-many-tabs =
     .label =
         Varovat, pokud by mohlo otevření více panelů { -brand-short-name.gender ->
@@ -232,9 +201,6 @@ warn-on-open-many-tabs =
            *[other] aplikaci { -brand-short-name }
         } zpomalit
     .accesskey = d
-switch-links-to-new-tabs =
-    .label = Přepnout na nový panel otevřený z odkazu
-    .accesskey = n
 switch-to-new-tabs =
     .label = Přepnout na nový panel otevřený z odkazu
     .accesskey = n
@@ -391,10 +357,6 @@ applications-manage-app =
     .label = Podrobnosti o aplikaci…
 applications-always-ask =
     .label = Vždy se zeptat
-applications-type-pdf = Přenositelný formát dokumentů (PDF)
-# Variables:
-#   $type (String) - the MIME type (e.g application/binary)
-applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 # Variables:
 #   $type-description (String) - Description of the type (e.g "Portable Document Format")
 #   $type (String) - the MIME type (e.g application/binary)
@@ -503,20 +465,6 @@ update-application-warning-cross-user-setting =
 update-application-use-service =
     .label = K instalaci aktualizací použít službu na pozadí
     .accesskey = b
-update-setting-write-failure-title = Chyba při ukládání nastavení aktualizací
-# Variables:
-#   $path (String) - Path to the configuration file
-# The newlines between the main text and the line containing the path is
-# intentional so the path is easier to identify.
-update-setting-write-failure-message =
-    { -brand-short-name.gender ->
-        [masculine] { -brand-short-name } zaznamenal
-        [feminine] { -brand-short-name } zaznamenala
-        [neuter] { -brand-short-name } zaznamenalo
-       *[other] Aplikace { -brand-short-name } zaznamenala
-    } problém při ukládání změny nastavení. Změna těchto nastavení vyžaduje oprávnění k zápisu do níže uvedeného souboru. Vy nebo správce vašeho systému můžete tento problém vyřešit přidělením úplných oprávnění k tomuto souboru pro skupinu Users.
-    
-    Není možný zápis do souboru: { $path }
 update-setting-write-failure-title2 = Chyba při ukládání nastavení aktualizací
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -757,7 +705,6 @@ search-show-suggestions-above-history-option =
     .label = Našeptávat dotazy pro vyhledávač v adresním řádku nad stránkami z historie prohlížení
 search-show-suggestions-private-windows =
     .label = Našeptávat dotazy pro vyhledávač také v anonymních oknech
-suggestions-addressbar-settings-generic = Změnit předvolby našeptávání v adresním řádku
 suggestions-addressbar-settings-generic2 = Změnit nastavení našeptávání v adresním řádku
 search-suggestions-cant-show =
     Návrhy vyhledávání se nebudou adresním řádku zobrazovat, protože jste { -brand-short-name.gender ->
@@ -771,7 +718,6 @@ search-suggestions-cant-show =
         [neuter] nepamatovalo
        *[other] nepamatovala
     } historii.
-search-one-click-header = Vyhledávání jedním klepnutím
 search-one-click-header2 = Vyhledávače
 search-one-click-desc = Vyberte další vyhledávače, které se zobrazí v nabídce adresního řádku a vyhledávacího pole.
 search-choose-engine-column =
@@ -798,12 +744,6 @@ search-keyword-warning-bookmark = Zvolili jste klíčové slovo, které už je p
 
 ## Containers Section
 
-containers-back-button =
-    .aria-label =
-        { PLATFORM() ->
-            [windows] Zpět do Možností
-           *[other] Zpět do Předvoleb
-        }
 containers-back-button2 =
     .aria-label = Zpět do nastavení
 containers-header = Kontejnerové panely
@@ -813,8 +753,6 @@ containers-add-button =
 containers-new-tab-check =
     .label = Zobrazit výběr kontejneru při klepnutí na tlačítko otevření nového panelu
     .accesskey = t
-containers-preferences-button =
-    .label = Předvolby
 containers-settings-button =
     .label = Nastavení
 containers-remove-button =
@@ -824,10 +762,6 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Vezměte si web s sebou
-sync-signedout-description = Synchronizujte své záložky, historii, panely, hesla, doplňky a předvolby ve všech svých zařízeních.
-sync-signedout-account-signin2 =
-    .label = Přihlášení k { -sync-brand-short-name(case: "dat") }…
-    .accesskey = i
 sync-signedout-description2 = Synchronizujte své záložky, historii, panely, hesla, doplňky a nastavení ve všech svých zařízeních.
 sync-signedout-account-signin3 =
     .label = Přihlásit se k synchronizaci…
@@ -867,10 +801,6 @@ sync-sign-in =
 
 prefs-syncing-on = Synchronizace zapnuta
 prefs-syncing-off = Synchronizace vypnuta
-prefs-sync-setup =
-    .label = Nastavit { -sync-brand-short-name(case: "acc") }…
-    .accesskey = N
-prefs-sync-offer-setup-label = Synchronizujte své záložky, historii, panely, hesla, doplňky a předvolby ve všech svých zařízeních.
 prefs-sync-turn-on-syncing =
     .label = Zapnout synchronizaci…
     .accesskey = s
@@ -890,11 +820,6 @@ sync-currently-syncing-logins-passwords = Přihlašovací údaje
 sync-currently-syncing-addresses = Adresy
 sync-currently-syncing-creditcards = Platební karty
 sync-currently-syncing-addons = Doplňky
-sync-currently-syncing-prefs =
-    { PLATFORM() ->
-        [windows] Možnosti
-       *[other] Předvolby
-    }
 sync-currently-syncing-settings = Nastavení
 sync-change-options =
     .label = Změnit…
@@ -935,18 +860,6 @@ sync-engine-addons =
     .label = Doplňky
     .tooltiptext = Rozšíření a motivy vzhledu ve Firefoxu pro počítač
     .accesskey = D
-sync-engine-prefs =
-    .label =
-        { PLATFORM() ->
-            [windows] Možnosti
-           *[other] Předvolby
-        }
-    .tooltiptext = Nastavení v sekcích Obecné a Soukromí a zabezpečení
-    .accesskey =
-        { PLATFORM() ->
-            [windows] M
-           *[other] P
-        }
 sync-engine-settings =
     .label = Nastavení
     .tooltiptext = Nastavení v sekcích Obecné a Soukromí a zabezpečení
@@ -996,9 +909,6 @@ forms-fill-logins-and-passwords =
 forms-saved-logins =
     .label = Uložené přihlašovací údaje…
     .accesskey = l
-forms-master-pw-use =
-    .label = Použít hlavní heslo
-    .accesskey = u
 forms-primary-pw-use =
     .label = Použít hlavní heslo
     .accesskey = P
@@ -1009,7 +919,6 @@ forms-primary-pw-learn-more-link = Zjistit více
 forms-master-pw-change =
     .label = Změnit hlavní heslo…
     .accesskey = m
-forms-master-pw-fips-title = Momentálně jste v režimu FIPS, který vyžaduje neprázdné hlavní heslo.
 forms-primary-pw-change =
     .label = Změnit hlavní heslo…
     .accesskey = m
@@ -1026,13 +935,6 @@ forms-windows-sso-desc = Účty můžete spravovat v nastavení svého zařízen
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = Pro nastavení hlavního hesla prosím zadejte své přihlašovací údaje k systému Windows. Toto opatření pomáhá v zabezpečení vašich účtů.
-# This message can be seen by trying to add a Master Password.
-# The macOS strings are preceded by the operating system with "Firefox is trying to "
-# and includes subtitle of "Enter password for the user "xxx" to allow this." These
-# notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = vytvořit hlavní heslo
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Pro nastavení hlavního hesla prosím zadejte své přihlašovací údaje k systému Windows. Toto opatření pomáhá v zabezpečení vašich účtů.
 # This message can be seen by trying to add a Primary Password.
@@ -1139,9 +1041,6 @@ sitedata-clear =
     .accesskey = V
 sitedata-settings =
     .label = Spravovat data…
-    .accesskey = S
-sitedata-cookies-permissions =
-    .label = Spravovat oprávnění…
     .accesskey = S
 sitedata-cookies-exceptions =
     .label = Výjimky…
@@ -1305,10 +1204,6 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = Výjimky…
     .accesskey = k
-permissions-a11y-privacy-checkbox =
-    .label = Zabránit službám pro přístupnost v přístupu k vašemu prohlížeči
-    .accesskey = a
-permissions-a11y-privacy-link = Zjistit více
 
 ## Privacy Section - Data Collection
 
@@ -1366,16 +1261,6 @@ addon-recommendations-link = Zjistit více
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Odesílání dat je zakázáno konfigurací tohoto sestavení
-collection-backlogged-crash-reports =
-    .label =
-        Odesílat nevyřízená hlášení o pádech { -brand-short-name.gender ->
-            [masculine] { -brand-short-name(case: "gen") }
-            [feminine] { -brand-short-name(case: "gen") }
-            [neuter] { -brand-short-name(case: "gen") }
-           *[other] aplikace
-        } za vás
-    .accesskey = c
-collection-backlogged-crash-reports-link = Zjistit více
 collection-backlogged-crash-reports-with-link =
     Odesílat nevyřízená hlášení o pádech { -brand-short-name.gender ->
         [masculine] { -brand-short-name(case: "gen") }
@@ -1406,13 +1291,6 @@ security-block-uncommon-software =
 ## Privacy Section - Certificates
 
 certs-header = Certifikáty
-certs-personal-label = Pokud server vyžaduje váš osobní certifikát
-certs-select-auto-option =
-    .label = Vybrat jeden automaticky
-    .accesskey = j
-certs-select-ask-option =
-    .label = Vždy se zeptat
-    .accesskey = e
 certs-enable-ocsp =
     .label = Aktuální platnost certifikátů ověřovat na serverech OCSP
     .accesskey = o
@@ -1422,40 +1300,6 @@ certs-view =
 certs-devices =
     .label = Bezpečnostní zařízení…
     .accesskey = B
-space-alert-learn-more-button =
-    .label = Zjistit více
-    .accesskey = Z
-space-alert-over-5gb-pref-button =
-    .label =
-        { PLATFORM() ->
-            [windows] Otevřít možnosti
-           *[other] Otevřít předvolby
-        }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] O
-           *[other] O
-        }
-space-alert-over-5gb-message =
-    { -brand-short-name.gender ->
-        [masculine] { -brand-short-name(case: "dat") }
-        [feminine] { -brand-short-name(case: "dat") }
-        [neuter] { -brand-short-name(case: "dat") }
-       *[other] Aplikaci { -brand-short-name }
-    } dochází místo na disku. Obsah webové stránky se nemusí zobrazit správně. Uložená data stránky můžete vymazat v { PLATFORM() ->
-        [windows] Nastavení
-       *[other] Předvolbách
-    }  > Soukromí a zabezpečení > Cookies a data stránek.
-space-alert-under-5gb-ok-button =
-    .label = OK, rozumím
-    .accesskey = K
-space-alert-under-5gb-message =
-    { -brand-short-name.gender ->
-        [masculine] { -brand-short-name(case: "dat") }
-        [feminine] { -brand-short-name(case: "dat") }
-        [neuter] { -brand-short-name(case: "dat") }
-       *[other] Aplikaci { -brand-short-name }
-    } dochází místo na disku. Obsah webové stránky se nemusí zobrazit správně. Klepněte na „Dozvědět se více“ o optimalizaci využití disku k lepšímu prohlížení webu.
 space-alert-over-5gb-settings-button =
     .label = Otevřít Nastavení
     .accesskey = O

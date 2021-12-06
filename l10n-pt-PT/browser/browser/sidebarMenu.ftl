@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Fechar barra lateral
+
+sidebar-close-button =
+    .tooltiptext = Fechar barra lateral

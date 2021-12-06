@@ -7,28 +7,6 @@ do-not-track-learn-more = مزید سیکھیں
 do-not-track-option-always =
     .label = ہمیشہ
 
-pref-page-title =
-    { PLATFORM() ->
-        [windows] اختیارات
-       *[other] ترجیحات
-    }
-
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Please keep the placeholder string short to avoid truncation.
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input-box =
-    .style = width: 15.4em
-    .placeholder =
-        { PLATFORM() ->
-            [windows] اختیارات میں تلاش کریں
-           *[other] ترجیحات میں تلاش کریں
-        }
-
 settings-page-title = سیٹنگ
 
 managed-notice = آپ کا براؤزر آپ کی تنظیم کے زیر انتظام ہے۔
@@ -51,10 +29,6 @@ category-search =
 pane-privacy-title = رازداری اور سلامتی
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-
-pane-sync-title2 = { -sync-brand-short-name }
-category-sync2 =
-    .tooltiptext = { pane-sync-title2 }
 
 pane-sync-title3 = سنک
 category-sync3 =
@@ -93,18 +67,6 @@ restart-later = بعد میں دوباره شروع کریں
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their home page
-# is being controlled by an extension.
-extension-controlled-homepage-override = ایک توسیع، <img data-l10n-name="icon"/>{ $name }، آپ کا ابتدائی صفحہ کنٹرول کر رہیہے۔
-
-# This string is shown to notify the user that their new tab page
-# is being controlled by an extension.
-extension-controlled-new-tab-url = ایک توسیع، <img data-l10n-name="icon"/>{ $name }، آپ کے نئے ٹیب کا صفحہ کنٹرول کر رہی ہیں۔
-
-# This string is shown to notify the user that the default search engine
-# is being controlled by an extension.
-extension-controlled-default-search = ایک ایکسٹینشن، <img data-l10n-name="icon"/> { $name } نے، آپکے پہلے سے طے شدہ سرچ انجن کو سیٹ کیا ہے۔
-
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = ایک ایکسٹینشن , <img data-l10n-name="icon"/> { $name }, کو کنٹینر ٹیب کی ضرورت ہے۔
@@ -118,14 +80,6 @@ search-results-help-link = مدد کی ضرورت ہے؟ <a data-l10n-name="url"
 ## General Section
 
 startup-header = سٹارٹ اپ
-
-# { -brand-short-name } will be 'Firefox Developer Edition',
-# since this setting is only exposed in Firefox Developer Edition
-separate-profile-mode =
-    .label = { -brand-short-name } اور Firefox کو ہم وقت چلنے کی اجازت دے
-use-firefox-sync = تجاویز: یہ الگ الگ پروفائل استعمال کرتا ہے۔ ان کے درمیان ڈیٹا کا اشتراک کرنے کے لئے { -sync-brand-short-name } استعمال کریں۔
-get-started-not-logged-in = { -sync-brand-short-name } میں سائن ان کریں
-get-started-configured = { -sync-brand-short-name } ترجیحات کھولیں
 
 always-check-default =
     .label = ہمیشہ جانچ پڑتال کریں کہ { -brand-short-name } آپ کا پہلے سے طے شدہ براؤزر ہے
@@ -166,10 +120,6 @@ warn-on-open-many-tabs =
     .label = متعدد ٹیب کھولنے پر شاید { -brand-short-name } آہستہ ہو تو منتبہ کریں
     .accesskey = d
 
-switch-links-to-new-tabs =
-    .label = جب میں ایک ربط نئے ٹیب میں کھولوں، تو فوراً اسی کی طرف سوئچ ہو جائیں
-    .accesskey = h
-
 show-tabs-in-taskbar =
     .label = Windows ٹاسک بار میں ٹیب پیش نظارے دکھائیں
     .accesskey = k
@@ -205,7 +155,6 @@ containers-remove-alert-msg =
 
 containers-remove-ok-button = اس حامل کو ہٹائیں
 containers-remove-cancel-button = اس حامل کو مت ہٹائیں
-
 
 ## General Section - Language & Appearance
 
@@ -332,11 +281,6 @@ applications-manage-app =
     .label = ایپلی کیشن تفاصیل…
 applications-always-ask =
     .label = ہمیشہ پوچھیں
-applications-type-pdf = پورٹبل ڈاکیومنٹ فارمیٹ (PDF)
-
-# Variables:
-#   $type (String) - the MIME type (e.g application/binary)
-applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 
 # Variables:
 #   $type-description (String) - Description of the type (e.g "Portable Document Format")
@@ -418,8 +362,6 @@ update-application-manual =
 update-application-use-service =
     .label = تازہ کاریاں تنصیب کرنے کے لیے پس منظر سروس استعمال کریں
     .accesskey = b
-
-update-setting-write-failure-title = تازہ کاری کی ترجیحات کو محفوظ کرنے میں مسلہ ہے
 
 update-in-progress-title = اپ ڈیٹ جاری ہے
 
@@ -561,9 +503,9 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = بہترین سائٹیں
 home-prefs-topsites-description = سائٹس جو آُپ سب سے زیادہ ملاحظہ کرتے ہیں
-
 home-prefs-shortcuts-header =
     .label = تیز راہ
+home-prefs-shortcuts-description = وہ سائٹس جو آپ محفوظ کرتے ہیں یا ملاحظہ کرتے ہیں۔
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -638,8 +580,6 @@ search-show-suggestions-private-windows =
 
 search-suggestions-cant-show = تلاش کردہ تجاویز محل وقوع کے بار کے نتائج میں دکھاءی نھیں جائنگے کیونکہ { -brand-short-name } سابقات کبھی یاد نہیں رکھنے پر تشکیل کردہ ہے۔
 
-search-one-click-header = ایک کلک تلاش انجن
-
 search-choose-engine-column =
     .label = تلاش انجن
 search-choose-keyword-column =
@@ -652,7 +592,6 @@ search-restore-default =
 search-remove-engine =
     .label = ہٹائیں
     .accesskey = R
-
 search-add-engine =
     .label = شامل کریں
     .accesskey = A
@@ -669,13 +608,6 @@ search-keyword-warning-bookmark = آپ نے ایسا کلیدی لفظ منتخ�
 
 ## Containers Section
 
-containers-back-button =
-    .aria-label =
-        { PLATFORM() ->
-            [windows] اختیارات پر واپس
-           *[other] ترجیحات پر واپس
-        }
-
 containers-header = حامل ٹیبز
 containers-add-button =
     .label = نئے حامل کا اضافہ کریں
@@ -684,9 +616,6 @@ containers-add-button =
 containers-new-tab-check =
     .label = ہر نئے ٹیب کے لئے ایک کنٹینر منتخب کریں
     .accesskey = S
-
-containers-preferences-button =
-    .label = ترجیحات
 
 containers-settings-button =
     .label = سیٹنگز
@@ -697,11 +626,6 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = اپنی ویب اپنے ساتھ رکھیں
-sync-signedout-description = اپنے تمام ڈیوائس اپنے بک مارکس، سابقات، ٹیب، پاس ورڈ، ایڈ اون، اور ترجیحات کو ہم وقت ساز کریں۔
-
-sync-signedout-account-signin2 =
-    .label = { -sync-brand-short-name } میں سائن ان کریں
-    .accesskey = i
 
 sync-signedout-account-signin3 =
     .label = سنک کرنے کے لئے سائن ان کریں…
@@ -750,10 +674,6 @@ prefs-syncing-on = سنکنگ چالو ہے
 
 prefs-syncing-off = سنکنگ بند ہے
 
-prefs-sync-setup =
-    .label = { -sync-brand-short-name } مرتب کریں۔
-    .accesskey = S
-
 prefs-sync-turn-on-syncing =
     .label = سنک چالو کریں…
     .accesskey = s
@@ -774,12 +694,6 @@ sync-currently-syncing-logins-passwords = لاگ ان اور پاس ورڈ
 sync-currently-syncing-addresses = پتے
 sync-currently-syncing-creditcards = کریڈٹ کارڈز
 sync-currently-syncing-addons = ایڈ اون
-sync-currently-syncing-prefs =
-    { PLATFORM() ->
-        [windows] اختیارات
-       *[other] ترجیحات
-    }
-
 sync-currently-syncing-settings = سیٹنگز
 
 sync-change-options =
@@ -823,15 +737,6 @@ sync-engine-addons =
     .label = ایڈ-اون
     .tooltiptext = Firefox ڈیسک ٹاپ کے لئے ایکسٹینشن اور تھیم
     .accesskey = A
-
-sync-engine-prefs =
-    .label =
-        { PLATFORM() ->
-            [windows] اختیارات
-           *[other] ترجیحات
-        }
-    .tooltiptext = عمومی، رازداری اور سلامتی سیٹنگیں جو آپ نے تبدیل کی
-    .accesskey = s
 
 ## The device name controls.
 
@@ -880,9 +785,6 @@ forms-fill-logins-and-passwords =
 forms-saved-logins =
     .label = محفوظ شدہ لاگ ان…
     .accesskey = L
-forms-master-pw-use =
-    .label = ماسٹر پاس ورڈ استعمال کریں
-    .accesskey = U
 forms-primary-pw-use =
     .label = بنیادی پاس ورڈ استعمال کریں
     .accesskey = U
@@ -893,8 +795,6 @@ forms-primary-pw-learn-more-link = مزید سیکھیں
 forms-master-pw-change =
     .label = ماسٹر پاس ورڈ تبدیل کریں…
     .accesskey = M
-
-forms-master-pw-fips-title = فی الحال آپ FIPS موڈ میں ہیں۔ FIPS کو ایک ناخالی ماسٹر پاس ورڈ درکار ہے۔
 forms-primary-pw-change =
     .label = بنیادی پاس ورڈ تبدیل کریں…
     .accesskey = P
@@ -906,12 +806,6 @@ forms-primary-pw-former-name = پہلے ماسٹر پاس ورڈ کے نام س�
 forms-master-pw-fips-desc = پاس ورڈ تبدیلی ناکام
 
 ## OS Authentication dialog
-
-# This message can be seen by trying to add a Master Password.
-# The macOS strings are preceded by the operating system with "Firefox is trying to "
-# and includes subtitle of "Enter password for the user "xxx" to allow this." These
-# notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = ماسٹر پاس ورڈ بنائیں
 
 # This message can be seen by trying to add a Primary Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
@@ -1013,10 +907,6 @@ sitedata-clear =
 sitedata-settings =
     .label = کوائف… منظم کریں
     .accesskey = M
-
-sitedata-cookies-permissions =
-    .label = اجازتوں کو منظم کریں…
-    .accesskey = P
 
 sitedata-cookies-exceptions =
     .label = مستثنیات کو منظم کریں…
@@ -1177,12 +1067,6 @@ permissions-addon-exceptions =
     .label = استثنیات…
     .accesskey = E
 
-permissions-a11y-privacy-checkbox =
-    .label = قابل رسائی خدمات کو اپنے براؤزر تک رسائی سے روکیں
-    .accesskey = a
-
-permissions-a11y-privacy-link = مزید سیکھیں
-
 ## Privacy Section - Data Collection
 
 collection-privacy-notice = رازداری کا نوٹس
@@ -1194,8 +1078,6 @@ collection-health-report-link = مزید سیکھیں
 collection-studies-link = { -brand-short-name } کی مطالعات دیکھیں
 
 addon-recommendations-link = مزید سیکھیں
-
-collection-backlogged-crash-reports-link = مزید سیکھیں
 
 ## Privacy Section - Security
 ##
@@ -1221,16 +1103,6 @@ security-block-uncommon-software =
 
 certs-header = تصدیق نامے
 
-certs-personal-label = جب پیش کار آپ کے ذاتی تصدیق نامہ کی درخواست کرے
-
-certs-select-auto-option =
-    .label = خودبخود ایک منتخب کریں
-    .accesskey = S
-
-certs-select-ask-option =
-    .label = مجھے ہر بار پوچھیں
-    .accesskey = A
-
 certs-enable-ocsp =
     .label = سوال OCSP ریسپانڈر سرور کی موجودہ سرٹیفکیٹ کی تصدیق کرتی ہے
     .accesskey = Q
@@ -1242,26 +1114,6 @@ certs-view =
 certs-devices =
     .label = سلامتی آلات
     .accesskey = D
-
-space-alert-learn-more-button =
-    .label = مزید سیکھیں
-    .accesskey = م
-
-space-alert-over-5gb-pref-button =
-    .label =
-        { PLATFORM() ->
-            [windows] اختیارات کھولیں
-           *[other] ترجیحات کھولیں
-        }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] O
-           *[other] O
-        }
-
-space-alert-under-5gb-ok-button =
-    .label = ٹھیک ہے مجھے سمجھ آگئی ہے
-    .accesskey = K
 
 space-alert-over-5gb-settings-button =
     .label = سیٹنگز کھولیں

@@ -7,20 +7,12 @@ about-logins-page-title = Логиндер және парольдер
 
 # "Google Play" and "App Store" are both branding and should not be translated
 
-login-app-promo-title = Парольдеріңізді барлық жерде алыңыз
-login-app-promo-subtitle = Тегін { -lockwise-brand-name } қолданбасын алыңыз
-login-app-promo-android =
-    .alt = Оны Google Play ішінен алыңыз
-login-app-promo-apple =
-    .alt = App Store ішінен жүктеп алыңыз
-
 login-filter =
     .placeholder = Логиндерден іздеу
 
 create-login-button = Жаңа логинді жасау
 
 fxaccounts-sign-in-text = Парольдеріңізді басқа құрылғыларыңызды алыңыз
-fxaccounts-sign-in-button = { -sync-brand-short-name } ішіне кіріңіз
 fxaccounts-sign-in-sync-button = Синхрондау үшін кіру
 fxaccounts-avatar-button =
     .title = Тіркелгіні басқару
@@ -40,8 +32,6 @@ menu-menuitem-preferences =
        *[other] Баптаулар
     }
 about-logins-menu-menuitem-help = Көмек
-menu-menuitem-android-app = Android үшін { -lockwise-brand-short-name }
-menu-menuitem-iphone-app = iPhone және iPad үшін { -lockwise-brand-short-name }
 
 ## Login List
 
@@ -54,6 +44,8 @@ login-list-count =
 login-list-sort-label-text = Бойынша сұрыптау:
 login-list-name-option = Аты (A-Z)
 login-list-name-reverse-option = Аты (A-Z)
+login-list-username-option = Пайдаланушы аты (А-Я)
+login-list-username-reverse-option = Пайдаланушы аты (Я-А)
 about-logins-login-list-alerts-option = Ескертулер
 login-list-last-changed-option = Соңғы рет өзгертілген
 login-list-last-used-option = Соңғы қолданылған
@@ -69,21 +61,22 @@ about-logins-list-item-breach-icon =
 about-logins-list-item-vulnerable-password-icon =
     .title = Осал пароль
 
-## Introduction screen
+about-logins-list-section-breach = Шабуылданған веб-сайттар
+about-logins-list-section-vulnerable = Осал парольдер
+about-logins-list-section-nothing = Ескерту жоқ
+about-logins-list-section-today = Бүгін
+about-logins-list-section-yesterday = Кеше
+about-logins-list-section-week = Соңғы 7 күн
 
-login-intro-heading = Сақталған логиндерді іздеудесіз бе? { -sync-brand-short-name } баптаңыз.
+## Introduction screen
 
 about-logins-login-intro-heading-logged-out2 = Сақталған логиндерді іздедіңіз бе? Синхрондауды іске қосыңыз немесе оларды импорттаңыз.
 about-logins-login-intro-heading-logged-in = Синхрондалған логиндер табылмады.
 login-intro-description = Логиндерді басқа құрылғыдағы { -brand-product-name } ішіне сақтасаңыз, оларды осында келесідей алуға болады:
-login-intro-instruction-fxa = Логиндеріңіз сақталған құрылғыда { -fxaccount-brand-name } тіркелгісін жасаңыз немесе оған кіріңіз
-login-intro-instruction-fxa-settings = { -sync-brand-short-name } баптауларында Логиндер белгіленгеніне көз жеткізіңіз
-about-logins-intro-instruction-help = Көбірек білу үшін, <a data-l10n-name="help-link">{ -lockwise-brand-short-name } қолдау көрсету сайтын</a> шолыңыз
 login-intro-instructions-fxa = Логиндеріңіз сақталған құрылғыда { -fxaccount-brand-name } тіркелгісін жасаңыз немесе оған кіріңіз.
 login-intro-instructions-fxa-settings = Баптаулар > Синхрондау > Синхрондауды іске қосу… таңдаңыз. Логиндер және парольдер жалаушасын орнатыңыз.
 login-intro-instructions-fxa-help = Көбірек білу үшін, <a data-l10n-name="help-link">{ -lockwise-brand-short-name } қолдау көрсету сайтын</a> шолыңыз.
 about-logins-intro-import = Егер сіздің логиндеріңіз басқа браузерде сақталған болса, оларды <a data-l10n-name="import-link">{ -lockwise-brand-short-name } ішіне импорттай аласыз</a>
-
 about-logins-intro-import2 = Егер сіздің логиндеріңіз { -brand-product-name } сыртында сақталса, оларды <a data-l10n-name="import-browser-link">басқа браузерден</a> немесе <a data-l10n-name="import-file-link">файлдан</a> импорттауға болады
 
 ## Login
@@ -140,8 +133,6 @@ about-logins-copy-password-os-auth-dialog-message-macosx = сақталған п
 
 ## Master Password notification
 
-master-password-notification-message = Сақталған логиндер мен парольдері қарау үшін басты парольді енгізіңіз
-
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message-win = Логиндеріңізді экспорттау үшін, Windows ішіне кірудің есептік жазба мәліметтерін енгізіңіз. Бұл тіркелгілеріңіздің қауіпсіздігін қорғауға көмектеседі.
 # This message can be seen when attempting to export a password in about:logins
@@ -156,22 +147,6 @@ master-password-reload-button =
     .accesskey = к
 
 ## Password Sync notification
-
-enable-password-sync-notification-message =
-    { PLATFORM() ->
-        [windows] Логиндеріңізді { -brand-product-name } қолданатын барлық жерде қалайсыз ба? { -sync-brand-short-name } баптауларына өтіп, Логиндерді таңдаңыз.
-       *[other] Логиндеріңізді { -brand-product-name } қолданатын барлық жерде қалайсыз ба? { -sync-brand-short-name } баптауларына өтіп, Логиндерді таңдаңыз.
-    }
-enable-password-sync-preferences-button =
-    .label =
-        { PLATFORM() ->
-            [windows] { -sync-brand-short-name } баптауларын ашыңыз
-           *[other] { -sync-brand-short-name } баптауларын ашыңыз
-        }
-    .accesskey = п
-about-logins-enable-password-sync-dont-ask-again-button =
-    .label = Келесіде осы сұрақты қоймау
-    .accesskey = д
 
 ## Dialogs
 
@@ -255,7 +230,6 @@ about-logins-error-message-duplicate-login-with-link = Осы пайдалану
 
 # This is a generic error message.
 about-logins-error-message-default = Бұл парольді сақтау кезінде қате орын алды.
-
 
 ## Login Export Dialog
 

@@ -5,26 +5,37 @@
 
 ## App Menu
 
+appmenuitem-update-banner3 =
+    .label-update-downloading = Ներբեռնվում է { -brand-shorter-name }-ի արդիացումը
+    .label-update-available = Արդիացում է մատչելի՝ ներբեռնեք հիմա
+    .label-update-manual = Արդիացում է մատչելի՝ ներբեռնեք հիմա
+    .label-update-unsupported = Անհնար է արդիացնել՝ համակարգը անհամատեղելի է
+    .label-update-restart = Մատչելի է արդիացում՝ վերագործարկեք
 appmenuitem-protection-dashboard-title = Պաշտպանության վահանակ
-appmenuitem-customize-mode =
-    .label = Հարմարեցնել…
-
-## Zoom Controls
-
 appmenuitem-new-tab =
     .label = Նոր Ներդիր
 appmenuitem-new-window =
     .label = Նոր Պատուհան
 appmenuitem-new-private-window =
     .label = Սկսել Գաղտնի դիտարկում
+appmenuitem-history =
+    .label = Պատմություն
+appmenuitem-downloads =
+    .label = Ներբեռնումներ
 appmenuitem-passwords =
     .label = Գաղտնաբառեր
 appmenuitem-addons-and-themes =
     .label = Հավելումներ և ոճեր
+appmenuitem-print =
+    .label = Տպել…
 appmenuitem-find-in-page =
     .label = Գտնել էջում…
+appmenuitem-zoom =
+    .value = Մասշտաբը
 appmenuitem-more-tools =
     .label = Լրացուցիչ գործիքներ
+appmenuitem-help =
+    .label = Օգնություն
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -47,9 +58,21 @@ appmenuitem-fullscreen =
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
-fxa-toolbar-sync-now =
-    .label = Համաժամեցնել
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = Չկան բաց ներդիրներ
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = Միացրեք ներդիրների համաժամեցումը՝ տեսնելու այլ սարքերից ձեր ներդիրների ցանկը։
+appmenu-remote-tabs-opensettings =
+    .label = Կարգավորումներ
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = Ցանկանու՞մ եք տեսնել ձեր այլ սարքերի ներդիրները:
+appmenu-remote-tabs-connectdevice =
+    .label = Կապակցվել այլ սարքի
+appmenu-remote-tabs-welcome = Դիտել ձեր մյուս սարքերի ներդիրների ցուցակը:
+appmenu-remote-tabs-unverified = Ձեր հաշիվը պետք է ստուգվի:
 appmenuitem-fxa-toolbar-sync-now2 = Համաժամեցնել
+appmenuitem-fxa-sign-in = Մուտք գործել { -brand-product-name }
 appmenuitem-fxa-manage-account = Կառավարել հաշիվը
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 appmenu-fxa-sync-and-save-data2 = Համաժամեցնել և պահել տվյալները
@@ -70,13 +93,21 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Հատկագրող
+    .tooltiptext = Գրառել իրականացման հատկագիրը
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-learn-more = Իմանալ ավելին
+profiler-popup-learn-more-button =
+    .label = Իմանալ ավելին
 profiler-popup-settings =
     .value = Կարգավորումներ
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Խմբագրել կարգավորումները…
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Խմբագրել կարգավորումները…
 profiler-popup-recording-screen = Գրանցում...
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
@@ -98,6 +129,15 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
 
 ## History panel
 
@@ -148,6 +188,6 @@ appmenu-customizetoolbar =
     .label = Հարմարեցնել Գործիքագոտին...
 appmenu-taskmanager =
     .label = Խնդիրների կառավար
-appmenu-developer-tools-subheader = Զննարկչի գործիքներ
+appmenu-developer-tools-subheader = Զննիչի գործիքներ
 appmenu-developer-tools-extensions =
     .label = Ընդլայնումներ մշակողների համար

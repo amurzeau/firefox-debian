@@ -2,8 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-addons-window =
-    .title = 부가 기능 관리자
 addons-page-title = 부가 기능 관리자
 search-header =
     .placeholder = addons.mozilla.org 검색
@@ -24,17 +22,6 @@ list-empty-button =
 help-button = 부가 기능 지원
 sidebar-help-button-title =
     .title = 부가 기능 지원
-preferences =
-    { PLATFORM() ->
-        [windows] { -brand-short-name } 설정
-       *[other] { -brand-short-name } 설정
-    }
-sidebar-preferences-button-title =
-    .title =
-        { PLATFORM() ->
-            [windows] { -brand-short-name } 설정
-           *[other] { -brand-short-name } 설정
-        }
 addons-settings-button = { -brand-short-name } 설정
 sidebar-settings-button-title =
     .title = { -brand-short-name } 설정
@@ -42,36 +29,6 @@ show-unsigned-extensions-button =
     .label = 몇몇 확장 기능은 확인을 할 수 없음
 show-all-extensions-button =
     .label = 모든 확장 기능 보기
-cmd-show-details =
-    .label = 자세히 보기
-    .accesskey = S
-cmd-find-updates =
-    .label = 업데이트 찾기
-    .accesskey = F
-cmd-preferences =
-    .label =
-        { PLATFORM() ->
-            [windows] 설정
-           *[other] 환경 설정
-        }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] O
-           *[other] P
-        }
-cmd-enable-theme =
-    .label = 테마 적용
-    .accesskey = W
-cmd-disable-theme =
-    .label = 테마 적용 중지
-    .accesskey = W
-cmd-install-addon =
-    .label = 설치
-    .accesskey = I
-cmd-contribute =
-    .label = 기여하기
-    .accesskey = C
-    .tooltiptext = 이 부가 기능의 개발에 기여하기
 detail-version =
     .label = 버전
 detail-last-updated =
@@ -286,6 +243,7 @@ install-theme-button = 테마 설치
 # the detailed add-on view is opened, from where the add-on can be managed.
 manage-addon-button = 관리
 find-more-addons = 더 많은 부가 기능 찾기
+find-more-themes = 더 많은 테마 찾기
 # This is a label for the button to open the "more options" menu, it is only
 # used for screen readers.
 addon-options-button =
@@ -315,13 +273,14 @@ extension-enabled-heading = 사용함
 extension-disabled-heading = 사용 안 함
 theme-enabled-heading = 사용함
 theme-disabled-heading = 사용 안 함
+theme-monochromatic-heading = 컬러웨이
+theme-monochromatic-subheading = { -brand-product-name }의 생동감 넘치는 새로운 컬러웨이입니다. 제한된 시간 동안 사용할 수 있습니다.
 plugin-enabled-heading = 사용함
 plugin-disabled-heading = 사용 안 함
 dictionary-enabled-heading = 사용함
 dictionary-disabled-heading = 사용 안 함
 locale-enabled-heading = 사용함
 locale-disabled-heading = 사용 안 함
-ask-to-activate-button = 활성화 요청
 always-activate-button = 항상 사용
 never-activate-button = 사용 안 함
 addon-detail-author-label = 제작자

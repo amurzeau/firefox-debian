@@ -8,26 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Pa 'z eo kefluniet { -brand-short-name } evit stankañ an heulierien anavezet nemetken.
 do-not-track-option-always =
     .label = Atav
-pref-page-title =
-    { PLATFORM() ->
-        [windows] Dibarzhioù
-       *[other] Gwellvezioù
-    }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Please keep the placeholder string short to avoid truncation.
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input-box =
-    .style = width: 15.4em
-    .placeholder =
-        { PLATFORM() ->
-            [windows] Klask en dibarzhioù
-           *[other] Klask er gwellvezioù
-        }
 settings-page-title = Arventennoù
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
@@ -55,9 +35,6 @@ category-search =
 pane-privacy-title = Buhez prevez ha diogelroez
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-pane-sync-title2 = { -sync-brand-short-name }
-category-sync2 =
-    .tooltiptext = { pane-sync-title2 }
 pane-sync-title3 = Goubredañ
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
@@ -66,6 +43,7 @@ category-experimental =
     .tooltiptext = Arnodoù { -brand-short-name }
 pane-experimental-subtitle = Kendalc'hit gant evezh
 pane-experimental-search-results-header = Arnod { -brand-short-name } : Diwall mat
+pane-experimental-description2 = Kemmañ an arventennoù kefluniañ a c’hall kaout un efed war digonusted pe diogelroez { -brand-short-name }.
 pane-experimental-reset =
     .label = Assav an arventennoù dre ziouer
     .accesskey = A
@@ -95,18 +73,9 @@ restart-later = Adloc'hañ diwezhatoc'h
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their home page
-# is being controlled by an extension.
-extension-controlled-homepage-override = Un askouezh, <img data-l10n-name="icon"/> { $name }, a zo o reoliñ ho pennbajenn.
-# This string is shown to notify the user that their new tab page
-# is being controlled by an extension.
-extension-controlled-new-tab-url = Un askouezh, <img data-l10n-name="icon"/> { $name }, a zo o reoliñ ho pajenn ivinell nevez.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Un askouezh, <img data-l10n-name="icon"/> { $name } ec'h anv, a reol an arventenn-mañ.
-# This string is shown to notify the user that the default search engine
-# is being controlled by an extension.
-extension-controlled-default-search = Kemmet eo bet ho keflusket enklask dre ziouer gant un askouezh, <img data-l10n-name="icon"/> { $name }.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = Un askouezh, <img data-l10n-name="icon"/> { $name }, a azgoulenn ivinelloù endalc'her.
@@ -127,25 +96,12 @@ extension-controlled-enable = Evit gweredekaat an askouezh, kit e Askouezhioù <
 
 search-results-header = Disoc'hoù ar c'hlask
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
-search-results-empty-message =
-    { PLATFORM() ->
-        [windows] Digarezit! N'eus disoc'h ebet en dibarzhioù evit “<span data-l10n-name="query"></span>”.
-       *[other] Digarezit! N'eus disoc'h ebet er Gwellvezioù evit “<span data-l10n-name="query"></span>”.
-    }
-# `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message2 = Digarezit! N'eus disoc'h ebet en arventennoù evit “<span data-l10n-name="query"></span>”.
 search-results-help-link = Ezhomm sikour? Gweladenniñ <a data-l10n-name="url">Skoazell { -brand-short-name }</a>
 
 ## General Section
 
 startup-header = Loc'hañ
-# { -brand-short-name } will be 'Firefox Developer Edition',
-# since this setting is only exposed in Firefox Developer Edition
-separate-profile-mode =
-    .label = Aotren { -brand-short-name } ha Firefox da erounit war un dro
-use-firefox-sync = Tun: arveret e vo aeladoù disheñvel. Arverit { -sync-brand-short-name } evit rannañ roadennoù etrezo.
-get-started-not-logged-in = Kennaskañ ouzh { -sync-brand-short-name }…
-get-started-configured = Digeriñ gwellvezioù { -sync-brand-short-name }
 always-check-default =
     .label = Gwiriañ atav ma'z eo { -brand-short-name } ho merdeer dre ziouer
     .accesskey = w
@@ -174,9 +130,6 @@ warn-on-close-multiple-tabs =
 warn-on-open-many-tabs =
     .label = Kas keloù din ma vez gorrekaet { -brand-short-name } gant digoradur meur a ivinell
     .accesskey = m
-switch-links-to-new-tabs =
-    .label = Pa zigoran un ere a zo e-barzh un ivinell nevez, diskouez anezhi diouzhtu
-    .accesskey = P
 show-tabs-in-taskbar =
     .label = Diskouez alberzioù an ivinelloù e-barzh barrenn an trevelloù
     .accesskey = i
@@ -317,10 +270,6 @@ applications-manage-app =
     .label = Munudoù an arload…
 applications-always-ask =
     .label = Goulenn bewech
-applications-type-pdf = Portable Document Format (PDF)
-# Variables:
-#   $type (String) - the MIME type (e.g application/binary)
-applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 # Variables:
 #   $type-description (String) - Description of the type (e.g "Portable Document Format")
 #   $type (String) - the MIME type (e.g application/binary)
@@ -384,15 +333,6 @@ update-application-warning-cross-user-setting = An arventenn-mañ a vo arloet d'
 update-application-use-service =
     .label = Arverañ ur gwazerezh e drekleur evit staliañ an hizivadurioù
     .accesskey = v
-update-setting-write-failure-title = Fazi en ur enrollañ ar gwellvezioù hizivaat
-# Variables:
-#   $path (String) - Path to the configuration file
-# The newlines between the main text and the line containing the path is
-# intentional so the path is easier to identify.
-update-setting-write-failure-message =
-    Degouezhet ez eus bet ur fazi gant { -brand-short-name } ha n'eo ket bet enrollet ar c'hemmoù. Kemmañ ar gwellvez-se a azgoulenn kaout an aotre da skrivañ er restr dindan. Un ardoer reizhiad pe c'hwi hoc'h unan a c'hallfe diskoulmañ ar fazi en ur aotren ar strollad Arveriaded da reoliañ ar restr-mañ.
-    
-    Dic'houest eo da skrivañ er restr: { $path }
 update-setting-write-failure-title2 = Fazi en ur enrollañ an arventennoù hizivaat
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -593,9 +533,7 @@ search-show-suggestions-above-history-option =
     .label = Diskouez an alioù klask a-us d'ar roll istor e disoc'hoù ar varrenn chomlec'h
 search-show-suggestions-private-windows =
     .label = Diskouez ar c'hinnigoù enklask er prenestroù prevez
-suggestions-addressbar-settings-generic = Kemmañ ar gwellvezioù evit ar c’hinnigoù barenn chomlec’h all
 search-suggestions-cant-show = Ne vo ket skrammet ar c'hinnigoù enklask e disoc'hoù ar varrenn chomlec'hioù dre m’ho peus kefluniet { -brand-short-name }  evit ma ne zalc'hfe ket soñj eus ho roll istor.
-search-one-click-header = Luskerioù enklask ur-c'hlik
 search-one-click-header2 = Berradennoù enklask
 search-one-click-desc = Dibabit al luskerioù enklask all diskouezet dindan ar varrenn chomlec'hioù hag ar varrenn glask pa grogit da skrivañ ur ger.
 search-choose-engine-column =
@@ -622,12 +560,6 @@ search-keyword-warning-bookmark = Dibabet hoc'h eus ur ger alc'hwez war arver ev
 
 ## Containers Section
 
-containers-back-button =
-    .aria-label =
-        { PLATFORM() ->
-            [windows] Distreiñ d'an dibarzhioù
-           *[other] Distreiñ d'ar gwellvezioù
-        }
 containers-back-button2 =
     .aria-label = Distreiñ d’an arventennoù
 containers-header = Ivinelloù endalc'her
@@ -637,8 +569,6 @@ containers-add-button =
 containers-new-tab-check =
     .label = Dibabit un endalc'her evit pep ivinell nevez
     .accesskey = D
-containers-preferences-button =
-    .label = Gwellvezioù
 containers-settings-button =
     .label = Arventennoù
 containers-remove-button =
@@ -648,10 +578,6 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Kemerit ho web ganeoc'h
-sync-signedout-description = Goubredit ho sinedoù, roll istor, ivinelloù, gerioù-tremen, askouezhioù ha gwellvezioù dre veur a drevnad.
-sync-signedout-account-signin2 =
-    .label = Kennaskañ ouzh { -sync-brand-short-name }...
-    .accesskey = K
 sync-signedout-description2 = Goubredit ho sinedoù, roll istor, ivinelloù, gerioù-tremen, askouezhioù ha arventennoù dre veur a drevnad.
 sync-signedout-account-signin3 =
     .label = Kennaskañ evit goubredañ…
@@ -691,10 +617,6 @@ sync-sign-in =
 
 prefs-syncing-on = Goubredañ: YA
 prefs-syncing-off = Goubredañ: KET
-prefs-sync-setup =
-    .label = Arventennañ { -sync-brand-short-name }…
-    .accesskey = A
-prefs-sync-offer-setup-label = Goubredit ho sinedoù, roll istor, ivinelloù, gerioù-tremen, askouezhioù ha gwellvezioù dre veur a drevnad.
 prefs-sync-turn-on-syncing =
     .label = Gweredekaat ar goubredañ…
     .accesskey = G
@@ -714,11 +636,6 @@ sync-currently-syncing-logins-passwords = Titouroù kennaskañ
 sync-currently-syncing-addresses = Chomlec'hioù
 sync-currently-syncing-creditcards = Kartennoù kred
 sync-currently-syncing-addons = Askouezhioù
-sync-currently-syncing-prefs =
-    { PLATFORM() ->
-        [windows] Dibarzhioù
-       *[other] Gwellvezioù
-    }
 sync-change-options =
     .label = Kemmañ…
     .accesskey = K
@@ -758,14 +675,6 @@ sync-engine-addons =
     .label = Askouezhioù
     .tooltiptext = Askouezhioù ha neuzioù evit Firefox war burev
     .accesskey = A
-sync-engine-prefs =
-    .label =
-        { PLATFORM() ->
-            [windows] Dibarzhioù
-           *[other] Gwellvezioù
-        }
-    .tooltiptext = Arventennoù hollek, buhez prevez ha diogelroez kemmet ganeoc'h
-    .accesskey = G
 
 ## The device name controls.
 
@@ -811,9 +720,6 @@ forms-fill-logins-and-passwords =
 forms-saved-logins =
     .label = Titouroù kennaskañ enrollet...
     .accesskey = k
-forms-master-pw-use =
-    .label = Arverañ ur ger-tremen mestr
-    .accesskey = A
 forms-primary-pw-use =
     .label = Ober gant ur ger-tremen pennañ
     .accesskey = O
@@ -824,7 +730,6 @@ forms-primary-pw-learn-more-link = Gouzout hiroc'h
 forms-master-pw-change =
     .label = Kemmañ ar ger-tremen mestr…
     .accesskey = K
-forms-master-pw-fips-title = E mod FIPS emaoc'h bremañ. Azgoulenn a ra FIPS ur ger-tremen mestr bet roet.
 forms-primary-pw-change =
     .label = Kemmañ ar ger-tremen pennañ
     .accesskey = K
@@ -837,13 +742,6 @@ forms-master-pw-fips-desc = Fazi en ur gemmañ ar ger-tremen
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = Evit krouiñ ur ger-tremen mestr, enlakait ho titouroù kennaskañ Windows. Sikour a ra da wareziñ surentez ho kontoù.
-# This message can be seen by trying to add a Master Password.
-# The macOS strings are preceded by the operating system with "Firefox is trying to "
-# and includes subtitle of "Enter password for the user "xxx" to allow this." These
-# notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = krouiñ ur ger-tremen mestr
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Evit krouiñ ur ger-tremen mestr, enlakait ho titouroù kennaskañ Windows. Sikour a ra da wareziñ surentez ho kontoù.
 # This message can be seen by trying to add a Primary Password.
@@ -934,9 +832,6 @@ sitedata-clear =
     .accesskey = S
 sitedata-settings =
     .label = Merañ ar roadennoù…
-    .accesskey = M
-sitedata-cookies-permissions =
-    .label = Merañ an aotreoù
     .accesskey = M
 sitedata-cookies-exceptions =
     .label = Merañ an nemedennoù…
@@ -1079,10 +974,6 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = Nemedennoù
     .accesskey = N
-permissions-a11y-privacy-checkbox =
-    .label = Miret ar gwazerezhioù haezadusted da haeziñ ho merdeer
-    .accesskey = g
-permissions-a11y-privacy-link = Gouzout hiroc'h
 
 ## Privacy Section - Data Collection
 
@@ -1104,10 +995,6 @@ addon-recommendations-link = Gouzout hiroc'h
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Diweredekaet eo an danevelliñ roadennoù evit kefluniadur ar c'hempunadur-mañ
-collection-backlogged-crash-reports =
-    .label = Aotren { -brand-short-name } da gas danevelloù sac'hadennoù enrollet evidoc'h
-    .accesskey = d
-collection-backlogged-crash-reports-link = Gouzout hiroc'h
 
 ## Privacy Section - Security
 ##
@@ -1130,13 +1017,6 @@ security-block-uncommon-software =
 ## Privacy Section - Certificates
 
 certs-header = Testenioù
-certs-personal-label = Pa vez goulennet ho testeni personel gant un dafariad
-certs-select-auto-option =
-    .label = Diuz unan ent emgefreek
-    .accesskey = D
-certs-select-ask-option =
-    .label = Goulenn diganin bewech
-    .accesskey = G
 certs-enable-ocsp =
     .label = Goulenn kadarnaat talvoudegezh an testenioù gant an dafariadoù OCSP
     .accesskey = G
@@ -1146,29 +1026,6 @@ certs-view =
 certs-devices =
     .label = Trevnadoù diogelroez…
     .accesskey = T
-space-alert-learn-more-button =
-    .label = Gouzout hiroc'h
-    .accesskey = G
-space-alert-over-5gb-pref-button =
-    .label =
-        { PLATFORM() ->
-            [windows] Digeriñ an dibarzhioù
-           *[other] Digeriñ ar Gwellvezioù
-        }
-    .accesskey =
-        { PLATFORM() ->
-            [windows] D
-           *[other] D
-        }
-space-alert-over-5gb-message =
-    { PLATFORM() ->
-        [windows] Ne chom ket kalz a blas evit { -brand-short-name }. Gallout a ra al lec'hiennoù bezañ skrammet en un doare fall. Gallout a rit skarzhañ ar roadennoù kadavet e Dibarzhioù > Buhez prevez ha diogelroez  > Toupinoù ha roadennoù lec'hienn.
-       *[other] Ne chom ket kalz a blas evit { -brand-short-name }. Gallout a ra al lec'hiennoù bezañ skrammet en un doare fall. Gallout a rit skarzhañ ar roadennoù kadavet e Gwellvezioù > Buhez prevez ha diogelroez  > Toupinoù ha roadennoù lec'hienn.
-    }
-space-alert-under-5gb-ok-button =
-    .label = Mat, komprenet 'm eus.
-    .accesskey = M
-space-alert-under-5gb-message = Ne chom ket kalz a blas war ar gantenn evit { -brand-short-name }. Gallout a ra al lec'hiennoù skrammañ en un doare dizereat. Gweladennit "Gouzout hiroc'h" evit gwellekaat hoc'h arver kantenn ha kaout un arnod merdeiñ gwelloc'h.
 
 ## Privacy Section - HTTPS-Only
 

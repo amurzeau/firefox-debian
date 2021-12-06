@@ -82,6 +82,10 @@ item-site-preferences =
     .label = Preferencias del sitio
     .accesskey = r
 
+item-site-settings =
+    .label = Configuración del sitio
+    .accesskey = C
+
 item-offline-apps =
     .label = Datos de sitios web sin conexión
     .accesskey = O

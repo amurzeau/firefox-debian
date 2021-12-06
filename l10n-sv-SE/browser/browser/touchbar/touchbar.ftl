@@ -7,7 +7,7 @@
 back = Tillbaka
 forward = Framåt
 reload = Ladda om
-home = Start
+home = Startsida
 fullscreen = Helskärm
 touchbar-fullscreen-exit = Avsluta helskärm
 find = Sök

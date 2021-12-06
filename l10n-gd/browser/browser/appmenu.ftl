@@ -12,25 +12,30 @@ appmenuitem-update-banner3 =
     .label-update-unsupported = Chan urrainn dhuinn ùrachadh – chan eil an siostam co-chòrdail
     .label-update-restart = Tha ùrachadh ri fhaighinn – ath-thòisich an-dràsta
 appmenuitem-protection-dashboard-title = Deas-bhòrd an dìona
-appmenuitem-customize-mode =
-    .label = Gnàthaich…
-
-## Zoom Controls
-
 appmenuitem-new-tab =
     .label = Taba ùr
 appmenuitem-new-window =
     .label = Uinneag ùr
 appmenuitem-new-private-window =
     .label = Uinneag phrìobhaideach ùr
+appmenuitem-history =
+    .label = Eachdraidh
+appmenuitem-downloads =
+    .label = Luchdaidhean a-nuas
 appmenuitem-passwords =
     .label = Faclan-faire
 appmenuitem-addons-and-themes =
     .label = Tuilleadain ’s ùrlaran
+appmenuitem-print =
+    .label = Clò-bhuail…
 appmenuitem-find-in-page =
     .label = Lorg air an duilleag…
+appmenuitem-zoom =
+    .value = Sùm
 appmenuitem-more-tools =
     .label = Barrachd innealan
+appmenuitem-help =
+    .label = Cobhair
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -59,13 +64,27 @@ appmenuitem-fullscreen =
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
-fxa-toolbar-sync-now =
-    .label = Sioncronaich an-dràsta
 appmenu-remote-tabs-sign-into-sync =
     .label = Clàraich a-steach a shioncronachadh…
 appmenu-remote-tabs-turn-on-sync =
     .label = Cuir an sioncronachadh air…
+# This is shown after the tabs list if we can display more tabs by clicking on the button
+appmenu-remote-tabs-showmore =
+    .label = Seall barrachd tabaichean
+    .tooltiptext = Seall barrachd thabaichean on uidheam seo
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = Chan eil taba fosgailte
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = Cuir air sioncronachadh nan tabaichean airson cothrom fhaighinn air na tabaichean agad o uidheaman eile.
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = A bheil thu airson na tabaichean a tha agad air uidheaman eile fhaicinn an-seo?
+appmenu-remote-tabs-connectdevice =
+    .label = Ceangail uidheam eile ris
+appmenu-remote-tabs-welcome = Seall liosta nan tabaichean a tha agad air uidheaman eile.
+appmenu-remote-tabs-unverified = Tha an cunntas agad feumach air dearbhadh.
 appmenuitem-fxa-toolbar-sync-now2 = Sioncronaich an-dràsta
+appmenuitem-fxa-sign-in = Clàraich a-steach gu { -brand-product-name }
 appmenuitem-fxa-manage-account = Stiùirich an cunntas
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
@@ -94,6 +113,9 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Pròifilear
+    .tooltiptext = Clàraich pròifil deanadais
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -102,10 +124,15 @@ profiler-popup-description-title =
     .value = Clàraich, sgrùd, co-roinn
 profiler-popup-description = Obraich còmhla air duilgheadasan leis an dèanadas a dh’fhoillseachadh pròifilean a cho-roinneas tu leis an sgioba agad.
 profiler-popup-learn-more = Barrachd fiosrachaidh
+profiler-popup-learn-more-button =
+    .label = Barrachd fiosrachaidh
 profiler-popup-settings =
     .value = Roghainnean
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Deasaich na roghainnean…
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Deasaich na roghainnean…
 profiler-popup-disabled = Tha a pròifilear à comas an-dràsta, dh’fhaoidte gu bheil uinneag a’ bhrabhsaidh phrìobhaidich fosgailte.
 profiler-popup-recording-screen = ’Ga chlàradh…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
@@ -128,6 +155,15 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
 
 ## History panel
 

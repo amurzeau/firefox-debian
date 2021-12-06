@@ -1,2 +1,2 @@
-20211028170545
-https://hg.mozilla.org/releases/mozilla-esr91/rev/8802d620459d50ea648821a15497d06efd15732b
+20211126104708
+https://hg.mozilla.org/releases/mozilla-esr91/rev/3359a85a2277bbcbcc2b5ebcc425922a23d07f34

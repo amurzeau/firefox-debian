@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Isara ang Sidebar
+
+sidebar-close-button =
+    .tooltiptext = Isara ang sidebar

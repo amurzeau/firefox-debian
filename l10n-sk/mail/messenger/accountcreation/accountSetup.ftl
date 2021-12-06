@@ -41,6 +41,10 @@ account-provisioner-button = Získať novú e-mailovú adresu
     .accesskey = n
 account-setup-password-toggle =
     .title = Zobraziť/skryť heslo
+account-setup-password-toggle-show =
+    .title = Zobraziť heslo ako čistý text
+account-setup-password-toggle-hide =
+    .title = Skryť heslo
 account-setup-remember-password = Zapamätať si heslo
     .accesskey = Z
 account-setup-exchange-label = Vaše prihlasovacie údaje
@@ -154,6 +158,7 @@ account-setup-credentials-incomplete = Overenie zlyhalo. Buď sú zadané prihla
 account-setup-credentials-wrong = Overenie zlyhalo. Skontrolujte používateľské meno a heslo
 account-setup-find-settings-failed = { -brand-short-name }u sa nepodarilo nájsť nastavenia pre váš e-mailový účet
 account-setup-exchange-config-unverifiable = Konfiguráciu sa nepodarilo overiť. Ak sú vaše používateľské meno a heslo správne, je pravdepodobné, že správca servera zakázal vybratú konfiguráciu vášho účtu. Skúste zvoliť iný protokol.
+account-setup-provisioner-error = Pri nastavovaní nového účtu v aplikácii { -brand-short-name } sa vyskytla chyba. Skúste svoj účet nastaviť ručne pomocou svojich prihlasovacích údajov.
 
 ## Manual configuration area
 
@@ -209,6 +214,17 @@ insecure-dialog-confirm-button = Potvrdiť
 exchange-dialog-question = { -brand-short-name } našiel informácie o nastavení vášho účtu na serveri { $domain }. Chcete pokračovať a odoslať svoje prihlasovacie údaje?
 exchange-dialog-confirm-button = Prihlásiť sa
 exchange-dialog-cancel-button = Zrušiť
+
+## Dismiss account creation dialog
+
+exit-dialog-title = Nie je nakonfigurovaný žiadny e-mailový účet
+exit-dialog-description = Naozaj chcete zrušiť proces nastavenia? { -brand-short-name } je stále možné používať aj bez e-mailového účtu, ale mnohé funkcie nebudú k dispozícii.
+account-setup-no-account-checkbox = Používať { -brand-short-name } bez e-mailového účtu
+    .accesskey = u
+exit-dialog-cancel-button = Pokračovať v nastavení
+    .accesskey = P
+exit-dialog-confirm-button = Ukončiť nastavenie
+    .accesskey = U
 
 ## Alert dialogs
 

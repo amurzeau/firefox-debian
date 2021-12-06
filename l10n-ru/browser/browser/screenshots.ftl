@@ -2,11 +2,11 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-screenshots-context-menu = Сделать скриншот
-screenshots-my-shots-button = Мои снимки
 screenshot-toolbarbutton =
     .label = Скриншот
     .tooltiptext = Сделать скриншот
+screenshot-shortcut =
+    .key = S
 screenshots-instructions = Потяните мышью или щёлкните по странице, чтобы выбрать область. Нажмите ESC для отмены.
 screenshots-cancel-button = Отмена
 screenshots-save-visible-button = Сохранить видимую область
@@ -31,7 +31,6 @@ screenshots-connection-error-details = Пожалуйста, проверьте 
 screenshots-login-error-details = Мы не можем сохранить ваш снимок, так как возникла проблема со службой { -screenshots-brand-name }. Пожалуйста, попробуйте позже.
 screenshots-unshootable-page-error-title = Мы не можем сделать скриншот этой страницы.
 screenshots-unshootable-page-error-details = Так как это не обычная веб-страница, мы не сможем сделать её скриншот.
-screenshots-self-screenshot-error-title = Вы не можете сделать снимок страницы { -screenshots-brand-name }.
 screenshots-empty-selection-error-title = Выбрана слишком небольшая область
 screenshots-private-window-error-title = { -screenshots-brand-name } отключены в приватном режиме
 screenshots-private-window-error-details = Приносим извинения за неудобства. Мы работаем над добавлением этой функции в будущих релизах.

@@ -12,25 +12,30 @@ appmenuitem-update-banner3 =
     .label-update-unsupported = Не вдається оновити — несумісна система
     .label-update-restart = Доступне оновлення — перезавантажити
 appmenuitem-protection-dashboard-title = Панель стану захисту
-appmenuitem-customize-mode =
-    .label = Пристосування…
-
-## Zoom Controls
-
 appmenuitem-new-tab =
     .label = Нова вкладка
 appmenuitem-new-window =
     .label = Нове вікно
 appmenuitem-new-private-window =
     .label = Приватне вікно
+appmenuitem-history =
+    .label = Історія
+appmenuitem-downloads =
+    .label = Завантаження
 appmenuitem-passwords =
     .label = Паролі
 appmenuitem-addons-and-themes =
     .label = Додатки й теми
+appmenuitem-print =
+    .label = Друкувати…
 appmenuitem-find-in-page =
     .label = Знайти на сторінці…
+appmenuitem-zoom =
+    .value = Масштаб
 appmenuitem-more-tools =
     .label = Інші інструменти
+appmenuitem-help =
+    .label = Довідка
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -59,13 +64,29 @@ appmenuitem-fullscreen =
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
-fxa-toolbar-sync-now =
-    .label = Синхронізувати зараз
 appmenu-remote-tabs-sign-into-sync =
     .label = Увійти до Синхронізації…
 appmenu-remote-tabs-turn-on-sync =
     .label = Увімкнути синхронізацію…
+# This is shown after the tabs list if we can display more tabs by clicking on the button
+appmenu-remote-tabs-showmore =
+    .label = Показати більше вкладок
+    .tooltiptext = Показати більше вкладок з цього пристрою
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = Немає відкритих вкладок
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = Увімкнути синхронізацію вкладок для можливості перегляду вашого списку вкладок з інших пристроїв.
+appmenu-remote-tabs-opensettings =
+    .label = Налаштування
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = Хочете побачити тут свої вкладки з інших пристроїв?
+appmenu-remote-tabs-connectdevice =
+    .label = Під'єднати інший пристрій
+appmenu-remote-tabs-welcome = Переглядайте список вкладок з ваших інших пристроїв.
+appmenu-remote-tabs-unverified = Ваш обліковий запис потребує підтвердження.
 appmenuitem-fxa-toolbar-sync-now2 = Синхронізувати
+appmenuitem-fxa-sign-in = Увійти в { -brand-product-name }
 appmenuitem-fxa-manage-account = Керувати обліковим записом
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
@@ -94,6 +115,15 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Profiler
+    .tooltiptext = Запис профілю швидкодії
+profiler-popup-button-recording =
+    .label = Profiler
+    .tooltiptext = Profiler записує профіль
+profiler-popup-button-capturing =
+    .label = Profiler
+    .tooltiptext = Profiler захоплює вкладку
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -102,10 +132,15 @@ profiler-popup-description-title =
     .value = Записуйте, аналізуйте, діліться
 profiler-popup-description = Співпрацюйте над проблемами швидкодії, оприлюднюючи профілі для своєї команди.
 profiler-popup-learn-more = Докладніше
+profiler-popup-learn-more-button =
+    .label = Докладніше
 profiler-popup-settings =
     .value = Налаштування
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Змінити налаштування…
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Змінити налаштування…
 profiler-popup-disabled =
     Profiler зараз вимкнений, швидше за все, через відкрите вікно
     приватного перегляду.
@@ -130,6 +165,32 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+profiler-popup-presets-web-developer-description = Рекомендовані попередні налаштування для зневадження більшості вебзастосунків. З низькими споживанням ресурсів.
+profiler-popup-presets-web-developer-label =
+    .label = Веброзробник
+profiler-popup-presets-firefox-platform-description = Рекомендовані попередні налаштування для внутрішнього зневадження Firefox.
+profiler-popup-presets-firefox-platform-label =
+    .label = Платформа Firefox
+profiler-popup-presets-firefox-front-end-description = Рекомендовані попередні налаштування для внутрішнього зневадження клієнтської частини Firefox.
+profiler-popup-presets-firefox-front-end-label =
+    .label = Клієнтська частина Firefox
+profiler-popup-presets-firefox-graphics-description = Рекомендовані попередні налаштування для дослідження запису графіків швидкодії Firefox.
+profiler-popup-presets-firefox-graphics-label =
+    .label = Графіка Firefox
+profiler-popup-presets-media-description = Рекомендовані попередні налаштування для визначення проблем зі звуком та відео.
+profiler-popup-presets-media-label =
+    .label = Медіа
+profiler-popup-presets-custom-label =
+    .label = Власний
 
 ## History panel
 

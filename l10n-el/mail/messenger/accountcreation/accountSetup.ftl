@@ -39,6 +39,10 @@ account-provisioner-button = Απόκτηση νέας διεύθυνσης emai
     .accesskey = Α
 account-setup-password-toggle =
     .title = Εμφάνιση/απόκρυψη του κωδικού πρόσβασης
+account-setup-password-toggle-show =
+    .title = Εμφάνιση κωδικού πρόσβασης σε κείμενο
+account-setup-password-toggle-hide =
+    .title = Απόκρυψη κωδικού πρόσβασης
 account-setup-remember-password = Απομνημόνευση κωδικού πρόσβασης
     .accesskey = Α
 account-setup-exchange-label = Η σύνδεσή σας
@@ -122,10 +126,10 @@ account-setup-results-area-title =
     }
 # Note: IMAP is the name of a protocol.
 account-setup-result-imap = IMAP
-account-setup-result-imap-description = Διατηρήστε συγχρονισμένους τους φακέλους και τα μηνύματα με τον διακομιστή σας
+account-setup-result-imap-description = Διατηρήστε συγχρονισμένους τους φακέλους και τα email σας με τον διακομιστή σας
 # Note: POP3 is the name of a protocol.
 account-setup-result-pop = POP3
-account-setup-result-pop-description = Διατηρήστε τους φακέλους και τα μηνύματα στον υπολογιστή σας
+account-setup-result-pop-description = Διατηρήστε τους φακέλους και τα email σας στον υπολογιστή σας
 # Note: Exchange is the name of a product.
 account-setup-result-exchange = Exchange
 # Note: Exchange, Office365 are the name of products.
@@ -150,7 +154,8 @@ account-setup-result-username-different = Εισερχόμενα: { $incoming },
 account-setup-credentials-incomplete = Η αυθεντικοποίηση απέτυχε. Είτε τα διαπιστευτήρια που εισαγάγατε είναι λάθος είτε απαιτείται ξεχωριστό όνομα χρήστη για είσοδο. Το όνομα χρήστη συνήθως είναι το όνομα χρήστη για τον τομέα στα Windows, με ή χωρίς το όνομα τομέα (για παράδειγμα janedoe ή AD\\janedoe).
 account-setup-credentials-wrong = Η αυθεντικοποίηση απέτυχε. Παρακαλούμε ελέγξτε το όνομα χρήστη και τον κωδικό πρόσβασης
 account-setup-find-settings-failed = Το { -brand-short-name } απέτυχε να εντοπίσει τις ρυθμίσεις του λογαριασμού ηλεκτρονικής αλληλογραφίας σας
-account-setup-exchange-config-unverifiable = Δεν ήταν δυνατή η επαλήθευση των ρυθμίσεων παραμέτρων. Αν το όνομα χρήστη και ο κωδικός πρόσβασής σας είναι σωστά, ο διαχειριστής διακομιστή ίσως έχει απενεργοποιήσει τις επιλεγμένες ρυθμίσεις παραμέτρων για τον λογαριασμό σας. Δοκιμάστε να επιλέξετε άλλο πρωτόκολλο.
+account-setup-exchange-config-unverifiable = Δεν ήταν δυνατή η επαλήθευση των ρυθμίσεων παραμέτρων. Αν το όνομα χρήστη και ο κωδικός πρόσβασής σας είναι σωστά, ο διαχειριστής του διακομιστή ενδέχεται να έχει απενεργοποιήσει τις επιλεγμένες ρυθμίσεις παραμέτρων για τον λογαριασμό σας. Δοκιμάστε να επιλέξετε άλλο πρωτόκολλο.
+account-setup-provisioner-error = Προέκυψε σφάλμα κατά τη ρύθμιση του νέου σας λογαριασμού στο { -brand-short-name }. Παρακαλώ δοκιμάστε να τον ρυθμίσετε χειροκίνητα με τα διαπιστευτήριά σας.
 
 ## Manual configuration area
 
@@ -193,7 +198,7 @@ account-setup-warning-cleartext = Το <b>{ $server }</b> δεν χρησιμο�
 account-setup-warning-cleartext-details = Οι επισφαλείς διακομιστές αλληλογραφίας δεν χρησιμοποιούν κρυπτογραφημένες συνδέσεις για την προστασία των κωδικών πρόσβασης και των προσωπικών σας πληροφοριών. Αν συνδεθείτε σε αυτό τον διακομιστή, οι κωδικοί πρόσβασης και οι προσωπικές σας πληροφορίες ενδέχεται να εκτεθούν.
 account-setup-insecure-server-checkbox = Κατανοώ τους κινδύνους
     .accesskey = τ
-account-setup-insecure-description = Το { -brand-short-name } μπορεί να σας επιτρέψει να κάνετε λήψη των email σας με τις παρεχόμενες ρυθμίσεις. Ωστόσο, θα πρέπει να επικοινωνήσετε με τον διαχειριστή του συστήματος ή τον πάροχο ηλεκτρονικού ταχυδρομείου σας σχετικά με αυτές τις ασυνήθιστες συνδέσεις. Δείτε τις <a data-l10n-name="thunderbird-faq-link">συχνές ερωτήσεις του Thunderbird</a> για περισσότερες πληροφορίες.
+account-setup-insecure-description = Το { -brand-short-name } σάς επιτρέπει να κάνετε λήψη των email σας με τις παρεχόμενες ρυθμίσεις. Ωστόσο, θα πρέπει να επικοινωνήσετε με τον διαχειριστή του συστήματος ή τον πάροχο ηλεκτρονικού ταχυδρομείου σας σχετικά με αυτές τις ασυνήθιστες συνδέσεις. Δείτε τις <a data-l10n-name="thunderbird-faq-link">συχνές ερωτήσεις του Thunderbird</a> για περισσότερες πληροφορίες.
 insecure-dialog-cancel-button = Αλλαγή ρυθμίσεων
     .accesskey = ρ
 insecure-dialog-confirm-button = Επιβεβαίωση
@@ -206,6 +211,17 @@ insecure-dialog-confirm-button = Επιβεβαίωση
 exchange-dialog-question = Το { -brand-short-name } βρήκε τις πληροφορίες ρύθμισης του λογαριασμού σας στο { $domain }. Θέλετε να συνεχίσετε και να υποβάλετε τα διαπιστευτήριά σας;
 exchange-dialog-confirm-button = Σύνδεση
 exchange-dialog-cancel-button = Ακύρωση
+
+## Dismiss account creation dialog
+
+exit-dialog-title = Δεν έχουν ρυθμιστεί λογαριασμοί email
+exit-dialog-description = Θέλετε σίγουρα να ακυρώσετε τη διαδικασία ρύθμισης; Το { -brand-short-name } μπορεί να χρησιμοποιηθεί ακόμα και χωρίς λογαριασμό email, αλλά πολλές λειτουργίες δεν θα είναι διαθέσιμες.
+account-setup-no-account-checkbox = Χρήση του { -brand-short-name } χωρίς λογαριασμό email
+    .accesskey = Χ
+exit-dialog-cancel-button = Συνέχεια ρύθμισης
+    .accesskey = Σ
+exit-dialog-confirm-button = Κλείσιμο ρύθμισης
+    .accesskey = Κ
 
 ## Alert dialogs
 

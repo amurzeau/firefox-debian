@@ -48,9 +48,6 @@ about-debugging-sidebar-item-connect-button-connection-failed = Αποτυχία
 about-debugging-sidebar-item-connect-button-connection-not-responding = Η σύνδεση εκκρεμεί ακόμη, ελέγξτε για μηνύματα στο πρόγραμμα περιήγησης προορισμού
 # Text displayed as connection error in sidebar item when the connection has timed out.
 about-debugging-sidebar-item-connect-button-connection-timeout = Το χρονικό όριο σύνδεσης έληξε
-# Temporary text displayed in sidebar items representing remote runtimes after
-# successfully connecting to them. Temporary UI, do not localize.
-about-debugging-sidebar-item-connected-label = Συνδέθηκε
 # Text displayed in sidebar items for remote devices where a compatible browser (eg
 # Firefox) has not been detected yet. Typically, Android phones connected via USB with
 # USB debugging enabled, but where Firefox is not started.
@@ -134,11 +131,11 @@ about-debugging-network-locations-remove-button = Αφαίρεση
 # Text used as error message if the format of the input value was invalid in the network locations form of the Setup page.
 # Variables:
 #   $host-value (string) - The input value submitted by the user in the network locations form
-about-debugging-network-location-form-invalid = Άκυρο host “{ $host-value }”. Η αναμενόμενη μορφή είναι “hostname:portnumber”.
+about-debugging-network-location-form-invalid = Μη έγκυρος κεντρικός υπολογιστής «{ $host-value }». Η αναμενόμενη μορφή είναι «όνομα-κεντρικού-υπολογιστή:αριθμός-θύρας».
 # Text used as error message if the input value was already registered in the network locations form of the Setup page.
 # Variables:
 #   $host-value (string) - The input value submitted by the user in the network locations form
-about-debugging-network-location-form-duplicate = Το host “{ $host-value }” έχει ήδη εγγραφεί
+about-debugging-network-location-form-duplicate = Ο κεντρικός υπολογιστής «{ $host-value }» έχει ήδη εγγραφεί
 
 # Runtime Page strings
 

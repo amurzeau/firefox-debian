@@ -156,12 +156,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Cuir ri bàr an t-seòlaidh
 page-action-manage-extension =
     .label = Stiùirich an leudachan...
-page-action-remove-from-urlbar =
-    .label = Thoir air falbh o bhàr an t-seòlaidh
 page-action-remove-extension =
     .label = Thoir an leudachan air falbh
 
@@ -179,10 +175,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Dèan lorg leis na leanas an turas seo:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Roghainnean luirg
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Atharraich na roghainnean luirg
 search-one-offs-context-open-new-tab =
@@ -248,8 +240,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Seall an deasaiche nuair a nithear sàbhaladh
     .accesskey = S
-bookmark-panel-done-button =
-    .label = Dèanta
 bookmark-panel-save-button =
     .label = Sàbhail
 # Width of the bookmark panel.
@@ -279,8 +269,6 @@ identity-passive-loaded = Chan eil pìosan dhen duilleag seo tèarainte (mar dhe
 identity-active-loaded = Chuir thu an dìon à comas air an duilleag seo.
 identity-weak-encryption = Tha an duilleag seo a’ cleachdadh crioptachadh lag.
 identity-insecure-login-forms = Dh’fhaoidte gu bheil cothrom air daoine air fiosrachadh clàraidh air an duilleag seo.
-identity-permissions =
-    .value = Ceadan
 identity-https-only-connection-upgraded = (chaidh àrdachadh gu HTTPS)
 identity-https-only-label = Modh HTTPS a-mhàin
 identity-https-only-dropdown-on =
@@ -296,7 +284,6 @@ identity-permissions-storage-access-header = Briosgaidean thar làraichean
 identity-permissions-storage-access-hint = ’S urrainn dha na pàrtaidhean seo briosgaidean agus dàta thar làraichean a chleachdadh fhad ’s a bhios tu air an làrach seo.
 identity-permissions-storage-access-learn-more = Barrachd fiosrachaidh
 identity-permissions-reload-hint = Dh’fhaoidte gum bi agad ris an duilleag ath-luchdadh mus bi na h-atharraichean an sàs.
-identity-permissions-empty = Cha dug thu cead sònraichte sam bith dhan làrach seo.
 identity-clear-site-data =
     .label = Falamhaich na briosgaidean is dàta nan làrach...
 identity-connection-not-secure-security-view = Chan eil ceangal tèarainte agad ris an làrach seo.
@@ -387,12 +374,6 @@ bookmarks-toolbar-empty-message = Airson cothrom luath orra, cuir na comharran-l
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = An camara a thèid a cho-roinneadh:
-    .accesskey = c
-popup-select-microphone =
-    .value = Am micreofon a thèid a cho-roinneadh:
-    .accesskey = m
 popup-select-camera-device =
     .value = Camara:
     .accesskey = C
@@ -406,14 +387,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Glaodhairean
 popup-all-windows-shared = Thèid gach uinneag a tha ri fhaicinn air an sgrìn agad a cho-roinneadh.
-popup-screen-sharing-not-now =
-    .label = Chan ann an-dràsta
-    .accesskey = C
-popup-screen-sharing-never =
-    .label = Na ceadaich seo idir
-    .accesskey = N
-popup-silence-notifications-checkbox = Cuir na brathan o { -brand-short-name } à comas fhad ’s a bhios tu ri co-roinneadh
-popup-silence-notifications-checkbox-warning = Cha sheall { -brand-short-name } brathan fhad ’s a bhios tu ri co-roinneadh.
 popup-screen-sharing-block =
     .label = Bac
     .accesskey = B
@@ -437,14 +410,10 @@ enable-devtools-popup-description = Mus cleachd thu ath-ghoirid F12, feumaidh tu
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Cuir ann lorg no seòladh
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Cuir ann lorg no seòladh
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Tha am brabhsair fo smachd cèin
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -493,8 +462,6 @@ urlbar-go-button =
     .tooltiptext = Rach dhan t-seòladh a tha ann am bàr an t-seòlaidh
 urlbar-page-action-button =
     .tooltiptext = Gnìomhan na duilleige
-urlbar-pocket-button =
-    .tooltiptext = Sàbhail ann am { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -689,6 +656,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Gnàthaich am bàr-inneal...
     .accesskey = G
+toolbar-button-email-link =
+    .label = Cuir an dealbh air a' phost-d
+    .tooltiptext = Cuir ceangal ris an duilleag seo air a' phost-d
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Sàbhail an duilleag
+    .tooltiptext = Sàbhail an duilleag seo ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Fosgail faidhle
+    .tooltiptext = Fosgail faidhle ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Tabaichean sioncronaichte
+    .tooltiptext = Seall tabaichean o uidheaman eile
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Uinneag phrìobhaideach ùr
+    .tooltiptext = Fosgail uinneag brabhsaidh phrìobhaideach ùr ({ $shortcut })
 
 ## EME notification panel
 
@@ -739,3 +727,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Falaich toglachadh dealbh am broinn deilbh
     .accesskey = h
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Seòladaireachd
+navbar-downloads =
+    .label = Luchdaidhean a-nuas
+navbar-overflow =
+    .tooltiptext = Barrachd innealan…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Clò-bhuail
+    .tooltiptext = Clò-bhuail an duilleag seo… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Clò-bhuail
+    .tooltiptext = Clò-bhuail an duilleag seo
+navbar-home =
+    .label = Dhachaigh
+    .tooltiptext = Duilleag-dhachaigh { -brand-short-name }
+navbar-library =
+    .label = Leabhar-lann
+    .tooltiptext = Seall air an eachdraidh, comharran-lìn a shàbhail thu ’s mòran a bharrachd
+navbar-search =
+    .title = Lorg
+navbar-accessibility-indicator =
+    .tooltiptext = Tha gleusan na so-ruigsinneachd an comas
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Tabaichean a' bhrabhsair
+tabs-toolbar-new-tab =
+    .label = Taba ùr
+tabs-toolbar-list-all-tabs =
+    .label = Liostaich gach taba
+    .tooltiptext = Liostaich gach taba

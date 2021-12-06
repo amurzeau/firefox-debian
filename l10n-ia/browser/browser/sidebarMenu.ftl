@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Clauder barra lateral
+
+sidebar-close-button =
+    .tooltiptext = Clauder barra lateral

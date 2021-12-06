@@ -121,3 +121,20 @@ perftools-onboarding-reenable-old-panel = (per un periodo limitato di tempo sar�
 
 perftools-onboarding-close-button =
   .aria-label = Chiudi il messaggio introduttivo
+
+perftools-presets-web-developer-description = Preset consigliato per il debug della maggior parte delle applicazioni web, con overhead limitato.
+perftools-presets-web-developer-label = Sviluppo web
+
+perftools-presets-firefox-platform-description = Preset consigliato per il debug degli aspetti interni della piattaforma di Firefox.
+perftools-presets-firefox-platform-label = Firefox - Piattaforma
+
+perftools-presets-firefox-front-end-description = Preset consigliato per il debug degli aspetti interni dell’interfaccia (front-end) di Firefox.
+perftools-presets-firefox-front-end-label = Firefox - Front-end
+
+perftools-presets-firefox-graphics-description = Preset consigliato per l’analisi delle prestazioni grafiche di Firefox.
+perftools-presets-firefox-graphics-label = Firefox - Grafica
+
+perftools-presets-media-description = Preset consigliato per la diagnosi di problemi audio e video.
+perftools-presets-media-label = Multimediale
+
+perftools-presets-custom-label = Personalizzato

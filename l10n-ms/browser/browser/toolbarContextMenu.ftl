@@ -17,27 +17,24 @@ toolbar-context-menu-bookmark-selected-tabs =
 toolbar-context-menu-select-all-tabs =
     .label = Pilih Semua Tab
     .accesskey = P
-
 toolbar-context-menu-manage-extension =
     .label = Urus Ekstensi
     .accesskey = E
 toolbar-context-menu-remove-extension =
     .label = Buang Ekstensi
     .accesskey = g
-
 # Can appear on the same context menu as menubarCmd ("Menu Bar") and
 # personalbarCmd ("Bookmarks Toolbar"), so they should have different
 # access keys.
 toolbar-context-menu-pin-to-overflow-menu =
     .label = Pin ke Menu Overflow
     .accesskey = P
-toolbar-context-menu-auto-hide-downloads-button =
-    .label = Auto-sorok di Bar Alatan
-    .accesskey = A
 toolbar-context-menu-remove-from-toolbar =
     .label = Buang daripada Bar alatan
     .accesskey = B
 toolbar-context-menu-view-customize-toolbar =
     .label = Penyesuaian…
     .accesskey = P
-
+toolbar-context-menu-menu-bar-cmd =
+    .toolbarname = Bar Menu
+    .accesskey = M

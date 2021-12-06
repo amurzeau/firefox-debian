@@ -52,3 +52,5 @@ text-action-spell-add-dictionaries =
 text-action-spell-dictionaries =
     .label = Rěcy
     .accesskey = R
+text-action-search-text-box-clear =
+    .title = Wuprozniś

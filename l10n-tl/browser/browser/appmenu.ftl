@@ -12,25 +12,30 @@ appmenuitem-update-banner3 =
     .label-update-unsupported = Hindi makapag-update — hindi tugma sa system
     .label-update-restart = Mayroong update — mag-restart na
 appmenuitem-protection-dashboard-title = Protections Dashboard
-appmenuitem-customize-mode =
-    .label = I-customize...
-
-## Zoom Controls
-
 appmenuitem-new-tab =
     .label = Bagong Tab
 appmenuitem-new-window =
     .label = Bagong Window
 appmenuitem-new-private-window =
     .label = Bagong Private Window
+appmenuitem-history =
+    .label = Kasaysayan
+appmenuitem-downloads =
+    .label = Mga Download
 appmenuitem-passwords =
     .label = Mga Password
 appmenuitem-addons-and-themes =
     .label = Mga Add-on at Tema
+appmenuitem-print =
+    .label = I-print...
 appmenuitem-find-in-page =
     .label = Hanapin Sa Pahina...
+appmenuitem-zoom =
+    .value = i-Zoom
 appmenuitem-more-tools =
     .label = Marami pang mga kagamitan
+appmenuitem-help =
+    .label = Tulong
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -59,13 +64,27 @@ appmenuitem-fullscreen =
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
-fxa-toolbar-sync-now =
-    .label = Mag-sync Na
 appmenu-remote-tabs-sign-into-sync =
     .label = Mag-sign in sa sync…
 appmenu-remote-tabs-turn-on-sync =
     .label = Buksan ang sync…
+# This is shown after the tabs list if we can display more tabs by clicking on the button
+appmenu-remote-tabs-showmore =
+    .label = Magpakita ng Marami Pang Tab
+    .tooltiptext = Magpakita ng higit pang mga tab mula sa device na ito
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = Walang bukas na tabs
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = Buksan ang pag-sync ng tab upang makita ang listahan ng mga tab mula sa iba mo pang mga device.
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = Gusto mong makita ang iyong mga tab mula sa iba pang mga device dito?
+appmenu-remote-tabs-connectdevice =
+    .label = Magkonekta ng Isa Pang Device
+appmenu-remote-tabs-welcome = Tingnan ang listahan ng mga tab mula sa iba mong mga device.
+appmenu-remote-tabs-unverified = Ang iyong account ay kailangang ma-verify.
 appmenuitem-fxa-toolbar-sync-now2 = I-sync ngayon
+appmenuitem-fxa-sign-in = Mag-sign in sa { -brand-product-name }
 appmenuitem-fxa-manage-account = Pamahalaan ang account
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
@@ -94,6 +113,9 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Profiler
+    .tooltiptext = Mag-record ng performance profile
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -102,10 +124,15 @@ profiler-popup-description-title =
     .value = Itala, pag-aralan, ibahagi
 profiler-popup-description = Makipagtulungan sa mga isyu sa performance sa pamamagitan ng pag-publish ng mga profile upang ibahagi sa iyong team.
 profiler-popup-learn-more = Alamin
+profiler-popup-learn-more-button =
+    .label = Alamin
 profiler-popup-settings =
     .value = Mga Setting
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Baguhin ang Settings…
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Baguhin ang Settings…
 profiler-popup-disabled =
     Ang profiler ay kasalukuyang nakapatay, malamang dahil nakabukas ang
     isang Private Browsing window.
@@ -130,6 +157,15 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
 
 ## History panel
 

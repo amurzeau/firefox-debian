@@ -3,12 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-## View Menu
-
-menu-view-charset =
-    .label = Kodiranje besedila
-    .accesskey = K
-
 ## Tools Menu
 
 # Since v89 we dropped the platforms distinction between Options or Preferences
@@ -16,7 +10,6 @@ menu-view-charset =
 menu-tools-preferences =
     .label = Nastavitve
     .accesskey = N
-
 menu-addons-and-themes =
     .label = Dodatki in teme
     .accesskey = D
@@ -26,11 +19,9 @@ menu-addons-and-themes =
 menu-help-enter-troubleshoot-mode =
     .label = Način za odpravljanje težav …
     .accesskey = r
-
 menu-help-exit-troubleshoot-mode =
     .label = Izključi način za odpravljanje težav
     .accesskey = I
-
 menu-help-more-troubleshooting-info =
     .label = Več podatkov za odpravljanje težav
     .accesskey = V
@@ -61,15 +52,18 @@ menu-view-repair-text-encoding =
 mail-uidensity-label =
     .label = Gostota
     .accesskey = G
-
 mail-uidensity-compact =
     .label = Strnjeno
     .accesskey = S
-
 mail-uidensity-normal =
     .label = Običajno
     .accesskey = O
-
 mail-uidensity-touch =
     .label = Dotik
     .accesskey = D
+
+## File
+
+file-new-newsgroup-account =
+    .label = Račun za novičarsko skupino …
+    .accesskey = č

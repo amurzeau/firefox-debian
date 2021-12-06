@@ -2,8 +2,11 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-account-settingsTitle = Tunnistautumisen asetukset
-account-channelTitle = Oletuskanavat
-
 account-settings-title = Tunnistautumisen asetukset
 account-channel-title = Oletuskanavat
+chat-encryption-log =
+    .label = Sisällytä päästä päähän -salatut viestit keskustelulokeihin
+chat-encryption-label = Natiivi päästä päähän -salaus
+chat-encryption-status = Salauksen tila
+chat-encryption-placeholder = Salausta ei ole alustettu.
+chat-encryption-sessions = Istunnot

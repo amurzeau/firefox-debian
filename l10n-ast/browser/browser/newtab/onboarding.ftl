@@ -3,22 +3,12 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### UI strings for the simplified onboarding modal / about:welcome
+### UI strings for the simplified onboarding / multistage about:welcome
 ### Various strings use a non-breaking space to avoid a single dangling /
 ### widowed word, so test on various window sizes if you also want this.
 
 
-## These button action text can be split onto multiple lines, so use explicit
-## newlines in translations to control where the line break appears (e.g., to
-## avoid breaking quoted text).
-
-onboarding-button-label-learn-more = Lleer más
-onboarding-button-label-get-started = Entamar
-
-## Welcome modal dialog strings
-
-
-### UI strings for the simplified onboarding / multistage about:welcome
+### UI strings for the MR1 onboarding / multistage about:welcome
 ### Various strings use a non-breaking space to avoid a single dangling /
 ### widowed word, so test on various window sizes if you also want this.
 
@@ -26,59 +16,7 @@ onboarding-button-label-get-started = Entamar
 ## Welcome page strings
 
 onboarding-welcome-header = Afáyate en { -brand-short-name }
-onboarding-welcome-body = Yá tienes el restolador, agora conoz los demás productos de { -brand-product-name }.
-onboarding-welcome-modal-get-body = Yá tienes el restolador, agora aprovecha al máximu los demás productos de { -brand-product-name }.
-onboarding-join-form-legal = Al siguir, aceptes los <a data-l10n-name="terms">Términos del Serviciu</a> y l'<a data-l10n-name="privacy">Avisu de Privacidá</a>.
-# This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
-onboarding-join-form-signin-label = ¿Yá tienes una cuenta?
 onboarding-start-browsing-button-label = Comenzar a restolar
-onboarding-cards-dismiss =
-    .title = Escartar
-    .aria-label = Escartar
-
-## Welcome full page string
-
-
-## Firefox Sync modal dialog strings.
-
-onboarding-sync-form-input =
-    .placeholder = Corréu
-onboarding-sync-form-continue-button = Siguir
-onboarding-sync-form-skip-login-button = Saltar esti pasu
-
-## This is part of the line "Enter your email to continue to Firefox Sync"
-
-
-## These are individual benefit messages shown with an image, title and
-## description.
-
-onboarding-benefit-sync-title = { -sync-brand-short-name }
-onboarding-benefit-sync-text = Lleva contigo los marcadores, les contraseñes, l'historial y más coses onde uses { -brand-product-name }.
-onboarding-benefit-monitor-title = { -monitor-brand-short-name }
-onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
-
-## These strings belong to the individual onboarding messages.
-
-
-## Each message has a title and a description of what the browser feature is.
-## Each message also has an associated button for the user to try the feature.
-## The string for the button is found above, in the UI strings section
-
-onboarding-tracking-protection-button2 = Cómo funciona
-onboarding-data-sync-title = Lleva los axustes contigo
-# "Sync" is short for synchronize.
-onboarding-data-sync-text2 = Sincroniza los marcadores, les contraseñes y más coses onde uses { -brand-product-name }.
-onboarding-data-sync-button2 = Aniciar sesión en { -sync-brand-short-name }
-onboarding-firefox-monitor-button = Rexistrase pa recibir alertes
-onboarding-browse-privately-title = Restola en privao
-onboarding-browse-privately-button = Abrir una ventana privada
-onboarding-firefox-send-text2 = Xubi ficheros a { -send-brand-name } pa compartilos con cifráu puntu a puntu y un enllaz de caduca automáticamente.
-onboarding-firefox-send-button = Probar { -send-brand-name }
-onboarding-facebook-container-text2 = { -facebook-container-brand-name } caltién el to perfil aislláu de tolo demás, asina ye más difícil que Facebook amuese publicidá personalizada.
-
-## Message strings belonging to the Return to AMO flow
-
-return-to-amo-sub-header = Mui bien, tienes { -brand-short-name }
 onboarding-not-now-button-label = Agora non
 
 ## Custom Return To AMO onboarding strings
@@ -111,6 +49,9 @@ onboarding-multistage-import-header = Importa les tos contraseñes, <br/>marcado
 onboarding-multistage-import-subtitle = ¿Vienes d'otru restolador? Importalo too a { -brand-short-name } ye perfácil.
 onboarding-multistage-import-primary-button-label = Aniciar la importación
 onboarding-multistage-import-secondary-button-label = Agora non
+
+## Multistage onboarding strings (about:welcome pages)
+
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
 # Variables:
 #   $current (Int) - Number of the current page
@@ -129,6 +70,65 @@ onboarding-multistage-theme-label-light = Claridá
 onboarding-multistage-theme-label-dark = Escuridá
 # "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
 onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+# "Hero Text" displayed on left side of welcome screen.
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
+# It also signals the passion users bring to Firefox, how they use
+# Firefox to pursue those passions, as well as the boldness in their
+# choice to use Firefox over a larger competitor browser.
+# An alternative title for localization is: "It starts here".
+# This text can be formatted to span multiple lines as needed.
+mr1-welcome-screen-hero-text = Too comienza equí
+# Caption for background image in about:welcome. "Soraya Osorio" is the name
+# of the person and shouldn't be translated.
+# In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
+# You can see the picture in about:welcome in Nightly 90.
+mr1-onboarding-welcome-image-caption = Soraya Osorio — Diseñadora de muebles y siguidora de Firefox
+
+## Title and primary button strings differ between platforms as they
+## match the OS' application context menu item action where Windows uses "pin"
+## and "taskbar" while macOS "keep" and "Dock" (proper noun).
+
+
+## Multistage MR1 onboarding strings (about:welcome pages)
+
+mr1-onboarding-welcome-header = Afáyate en { -brand-short-name }
+# This string will be used on welcome page primary button label
+# when Firefox is not default but already pinned
+mr1-onboarding-set-default-only-primary-button-label = Predeterminar { -brand-short-name }
+mr1-onboarding-set-default-secondary-button-label = Agora non
+
+## Title, subtitle and primary button string used on set default onboarding screen
+## when Firefox is not default browser
+
+
+## Multistage MR1 onboarding strings (about:welcome pages)
+
+mr1-onboarding-import-header = Trailo too
+mr1-onboarding-import-subtitle = Importa les contraseñes,<br/>los marcadores<br/>y más coses
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
+# Variables:
+#   $previous (Str) - Previous browser name, such as Edge, Chrome
+mr1-onboarding-import-primary-button-label-attribution = Importar de { $previous }
+# This string will be used in cases where we can't detect the previous browser name.
+mr1-onboarding-import-primary-button-label-no-attribution = Importar del restolador anterior
+mr1-onboarding-import-secondary-button-label = Agora non
+mr2-onboarding-colorway-header = La vida a color
+mr2-onboarding-colorway-secondary-button-label = Agora non
+mr1-onboarding-theme-subtitle = Personaliza { -brand-short-name } con un estilu.
+mr1-onboarding-theme-primary-button-label = Guardar l'estilu
+mr1-onboarding-theme-secondary-button-label = Agora non
+# System theme uses operating system color settings
+mr1-onboarding-theme-label-system = Estilu del sistema
+mr1-onboarding-theme-label-light = Claridá
+mr1-onboarding-theme-label-dark = Escuridá
+# "Alpenglow" here is the name of the theme, and should be kept in English.
+mr1-onboarding-theme-label-alpenglow = Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
 
 ## Please make sure to split the content of the title attribute into lines whose
 ## width corresponds to about 40 Latin characters, to ensure that the tooltip
@@ -178,63 +178,6 @@ onboarding-multistage-theme-description-alpenglow =
 
 ## Multistage MR1 onboarding strings (MR1 about:welcome pages)
 
-# "Hero Text" displayed on left side of welcome screen.
-# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
-# It also signals the passion users bring to Firefox, how they use
-# Firefox to pursue those passions, as well as the boldness in their
-# choice to use Firefox over a larger competitor browser.
-# An alternative title for localization is: "It starts here".
-# This text can be formatted to span multiple lines as needed.
-mr1-welcome-screen-hero-text = Too comienza equí
-# Caption for background image in about:welcome. "Soraya Osorio" is the name
-# of the person and shouldn't be translated.
-# In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
-# You can see the picture in about:welcome in Nightly 90.
-mr1-onboarding-welcome-image-caption = Soraya Osorio — Diseñadora de muebles y siguidora de Firefox
-
-## Title and primary button strings differ between platforms as they
-## match the OS' application context menu item action where Windows uses "pin"
-## and "taskbar" while macOS "keep" and "Dock" (proper noun).
-
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
-mr1-onboarding-welcome-header = Afáyate en { -brand-short-name }
-# This string will be used on welcome page primary button label
-# when Firefox is not default but already pinned
-mr1-onboarding-set-default-only-primary-button-label = Predeterminar { -brand-short-name }
-mr1-onboarding-set-default-secondary-button-label = Agora non
-
-## Title, subtitle and primary button string used on set default onboarding screen
-## when Firefox is not default browser
-
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
-mr1-onboarding-import-header = Trailo too
-mr1-onboarding-import-subtitle = Importa les contraseñes,<br/>los marcadores<br/>y más coses
-# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
-# Variables:
-#   $previous (Str) - Previous browser name, such as Edge, Chrome
-mr1-onboarding-import-primary-button-label-attribution = Importar de { $previous }
-# This string will be used in cases where we can't detect the previous browser name.
-mr1-onboarding-import-primary-button-label-no-attribution = Importar del restolador anterior
-mr1-onboarding-import-secondary-button-label = Agora non
-mr1-onboarding-theme-subtitle = Personaliza { -brand-short-name } con un estilu.
-mr1-onboarding-theme-primary-button-label = Guardar l'estilu
-mr1-onboarding-theme-secondary-button-label = Agora non
-# System theme uses operating system color settings
-mr1-onboarding-theme-label-system = Estilu del sistema
-mr1-onboarding-theme-label-light = Claridá
-mr1-onboarding-theme-label-dark = Escuridá
-# "Alpenglow" here is the name of the theme, and should be kept in English.
-mr1-onboarding-theme-label-alpenglow = Alpenglow
-
-## Please make sure to split the content of the title attribute into lines whose
-## width corresponds to about 40 Latin characters, to ensure that the tooltip
-## doesn't become too long. Line breaks will be preserved when displaying the
-## tooltip.
-
 # Tooltip displayed on hover of system theme
 mr1-onboarding-theme-tooltip-system =
     .title =
@@ -275,3 +218,9 @@ mr1-onboarding-theme-description-alpenglow =
     .aria-description =
         Usa un estilu dinámicu y coloríu pa los botones,
         les ventanes y los menús.
+
+## Strings for Thank You page
+
+mr2-onboarding-thank-you-header = Gracies por escoyenos
+mr2-onboarding-thank-you-text = { -brand-short-name } ye un restolador independiente fechu por una organización ensin ánimu de llucru. Xuntos facemos una web más segura, sana y más privada.
+mr2-onboarding-start-browsing-button-label = Comenzar a restolar

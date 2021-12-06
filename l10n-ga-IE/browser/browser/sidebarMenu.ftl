@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Dún an Barra Taoibh
+
+sidebar-close-button =
+    .tooltiptext = Dún an barra taoibh

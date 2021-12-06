@@ -142,12 +142,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Azonzi a-a bara di indirissi
 page-action-manage-extension =
     .label = Gestisci estenscioin…
-page-action-remove-from-urlbar =
-    .label = Leva da-a bara di indirissi
 page-action-remove-extension =
     .label = Scancella estenscion
 
@@ -165,10 +161,6 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Sta vòtta çerca con:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Inpostaçioin da riçerca
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Cangia inpostaçioin de riçerca
 search-one-offs-context-open-new-tab =
@@ -207,8 +199,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Fanni vedde l'editô quande sarvo
     .accesskey = F
-bookmark-panel-done-button =
-    .label = Fæto
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -230,10 +220,7 @@ identity-passive-loaded = Quarche elemento da pagina o no l'é seguo (prezempio 
 identity-active-loaded = A proteçion a l'é dizativâ pe sta pagina.
 identity-weak-encryption = Sta pagina a deuvia na cifratua debole.
 identity-insecure-login-forms = I acessi a sta pagina porieivan ese vulnerabili.
-identity-permissions =
-    .value = Permissi
 identity-permissions-reload-hint = Peu dase che ti devi arvî torna a pagina pe vedde i cangiamenti.
-identity-permissions-empty = Nisciun permisso speciale asociou a sto scito.
 identity-clear-site-data =
     .label = Scancella cookie e dæti di sciti…
 identity-connection-not-secure-security-view = Ti no ê conesso in mòddo seguo a sto scito.
@@ -284,19 +271,7 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Fòtocamera da condividde:
-    .accesskey = F
-popup-select-microphone =
-    .value = Micròfono da condividde:
-    .accesskey = M
 popup-all-windows-shared = Tutti i barcoin vixibili into schermo saian condivizi.
-popup-screen-sharing-not-now =
-    .label = Oua No
-    .accesskey = O
-popup-screen-sharing-never =
-    .label = No permette mai
-    .accesskey = N
 
 ## WebRTC window or screen share tab switch warning
 
@@ -308,12 +283,8 @@ sharing-warning-proceed-to-tab =
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Scrivi indirisso ò iniçia riçerca
 urlbar-placeholder =
     .placeholder = Scrivi indirisso ò iniçia riçerca
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Navegatô in contròllo remòtto
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -327,8 +298,6 @@ urlbar-go-button =
     .tooltiptext = Vanni a l'indirisso in sciâ bara di indirissi
 urlbar-page-action-button =
     .tooltiptext = Pagina açioin
-urlbar-pocket-button =
-    .tooltiptext = Sarva in { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -436,6 +405,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Personaliza a bara di atressi…
     .accesskey = P
+toolbar-button-email-link =
+    .label = Manda colegamento
+    .tooltiptext = Manda colegamento a sta pagina pe email
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Sarva pagina
+    .tooltiptext = Sarva sta pagina ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Arvi schedaio
+    .tooltiptext = Arvi schedaio ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Feuggi scincronizæ
+    .tooltiptext = Fanni vedde feuggi da n'atro aparato
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Neuvo barcon privòu
+    .tooltiptext = Arvi 'n neuvo barcon privòu ({ $shortcut })
 
 ## EME notification panel
 
@@ -470,3 +460,38 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = No fâ vedde sta notiçia quande i pop-up son blocæ
     .accesskey = N
+
+# Navigator Toolbox
+
+navbar-downloads =
+    .label = Descaregamenti
+navbar-overflow =
+    .tooltiptext = Atri atressi…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Stanpa
+    .tooltiptext = Stanpa sta pagina… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Stanpa
+    .tooltiptext = Stanpa questa pagina
+navbar-home =
+    .label = Pagina prinçipâ
+    .tooltiptext = Pagina prinçipâ de { -brand-short-name }
+navbar-library =
+    .label = Libraia
+    .tooltiptext = Fanni vedde stöia, segnalibbri sarvæ e atro
+navbar-search =
+    .title = Riçerca
+navbar-accessibility-indicator =
+    .tooltiptext = Fonçioin de acesibilitæ abilitæ
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Feuggi do navegatô
+tabs-toolbar-new-tab =
+    .label = Neuvo feuggio
+tabs-toolbar-list-all-tabs =
+    .label = Lista de tutti i feuggi
+    .tooltiptext = Lista de tutti i feuggi

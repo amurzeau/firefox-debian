@@ -8,7 +8,7 @@ sendoptions-dialog-window =
 send-mail-title = Μορφή κειμένου
 
 auto-downgrade-label =
-    .label = Αποστολή μηνυμάτων ως απλό κείμενο αν είναι δυνατόν
+    .label = Αποστολή μηνυμάτων ως απλού κειμένου αν είναι δυνατό
     .accesskey = α
 
 default-html-format-label = Κατά την αποστολή μηνυμάτων σε μορφή HTML και αν δεν επιθυμούν HTML όλοι οι παραλήπτες:
@@ -22,11 +22,11 @@ html-format-convert =
     .accesskey = Μ
 
 html-format-send-html =
-    .label = Αποστολή μηνύματος σε HTML οπωσδήποτε
+    .label = Αποστολή μηνύματος σε HTML ούτως ή άλλως
     .accesskey = π
 
 html-format-send-both =
-    .label = Αποστολή και σε HTML και σε απλό κείμενο
+    .label = Αποστολή μηνύματος σε HTML και απλό κείμενο
     .accesskey = κ
 
 default-html-format-info = Σημείωση: Καθορίστε την προτιμώμενη μορφή κειμένου για κάθε παραλήπτη από το ευρετήριο διευθύνσεων.

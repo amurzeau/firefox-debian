@@ -14,7 +14,7 @@ downloads-panel =
 ##
 
 # The style attribute has the width of the Downloads Panel expressed using
-# a CSS unit. The longest labels that should fit are usually those of 
+# a CSS unit. The longest labels that should fit are usually those of
 # in-progress and blocked downloads.
 downloads-panel-list =
     .style = width: 70ch
@@ -34,7 +34,7 @@ downloads-cmd-cancel-panel =
 downloads-cmd-show-menuitem =
     .label = حامل پوشہ کھولیں
     .accesskey = پ
-  
+
 # This message is only displayed on macOS devices
 downloads-cmd-show-menuitem-mac =
     .label = ڈھونڈ کار میں دکھائیں
@@ -129,6 +129,8 @@ downloads-open-file =
 ##   $hours (number) - Amount of hours left till the file opens.
 ##   $seconds (number) - Amount of seconds left till the file opens.
 ##   $minutes (number) - Amount of minutes till the file opens.
+
+downloading-file-opens-in-some-time = مکمل ہونے پر کھولیں…
 
 ##
 

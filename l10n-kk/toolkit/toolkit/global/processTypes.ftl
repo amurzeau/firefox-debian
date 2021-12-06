@@ -2,6 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
 ##
 ## Localization for remote types defined in RemoteType.h
 ##
@@ -36,6 +37,9 @@ process-type-prealloc = Алдын-ала бөлінген
 ## Localization for Gecko process types defined in GeckoProcessTypes.h
 ##
 
+process-type-default = Негізгі
+process-type-tab = Бет
+
 # process used to communicate with the GPU for
 # graphics acceleration
 process-type-gpu = GPU
@@ -43,7 +47,12 @@ process-type-gpu = GPU
 # process used to perform network operations
 process-type-socket = Сокет
 
+# process used to decode media
+process-type-rdd = RDD
+
 ##
 ## Other
 ##
 
+# fallback
+process-type-unknown = Белгісіз

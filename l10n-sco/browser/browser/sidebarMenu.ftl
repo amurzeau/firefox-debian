@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Sneck Sidebaur
+
+sidebar-close-button =
+    .tooltiptext = Sneck sidebaur

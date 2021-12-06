@@ -66,11 +66,6 @@ options-stylesheet-autocompletion-tooltip =
 options-screenshot-label = Compòrtament per las capturas d’ecran
 
 # Label for the checkbox that toggles screenshot to clipboard feature
-options-screenshot-clipboard-label = Captura d'ecran cap al pòrtapapièr
-options-screenshot-clipboard-tooltip =
-    .title = Servar la captura d'ecran dirèctament al pòrtapapièr
-
-# Label for the checkbox that toggles screenshot to clipboard feature
 options-screenshot-clipboard-only-label = Captura d'ecran cap al quichapapièrs sonque
 options-screenshot-clipboard-tooltip2 =
     .title = Servar la captura d'ecran dirèctament al pòrtapapièr
@@ -111,7 +106,7 @@ options-disable-http-cache-tooltip =
 # The label for checkbox that toggles JavaScript on or off
 options-disable-javascript-label = Activar JavaScript *
 options-disable-javascript-tooltip =
-    .title = Activar aquesta opcion desactivarà JavaScript per l'onglet corrent. Aqueste paramètre serà doblidat a la tampadura de l'onglet o de la bóstia d'aisinas.
+    .title = Activar aquesta opcion desactivarà JavaScript per l'onglet corrent. Aqueste paramètre serà oblidat a la tampadura de l'onglet o de la bóstia d'aisinas.
 
 # The label for checkbox that toggles chrome debugging, i.e. the devtools.chrome.enabled preference
 options-enable-chrome-label = Activar lo desbogatge del chrome del navegador e dels moduls

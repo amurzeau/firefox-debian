@@ -124,12 +124,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = ලිපින තීරුවට එක් කරන්න
 page-action-manage-extension =
     .label = දිගුව පාලනය කරන්න…
-page-action-remove-from-urlbar =
-    .label = ලිපින තීරුවෙන් ඉවත් කරන්න
 
 ## Auto-hide Context Menu
 
@@ -142,10 +138,6 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = සෙවුම් සැකසුම් වෙනස් කරන්න
 search-one-offs-change-settings-compact-button =
     .tooltiptext = සෙවුම් සිටුවම් වෙනස් කරන්න
 search-one-offs-context-open-new-tab =
@@ -181,8 +173,6 @@ bookmark-panel-remove =
            *[other] පිටු සලකුණු මකන්න ({ $count })
         }
     .accesskey = R
-bookmark-panel-done-button =
-    .label = කළා
 
 ## Identity Panel
 
@@ -195,7 +185,6 @@ identity-active-loaded = මෙම පිටුව සඳහා ආරක්ෂ�
 identity-weak-encryption = මෙම පිටුව දුර්වල සංකේතනයක් භාවිතා කරයි.
 identity-insecure-login-forms = මෙම පිටුවට යොදන ප්‍රවේශ තොරතුරු නිසා ව්‍යකූලවීම් සිදුවිය හැකිය.
 identity-permissions-reload-hint = වෙනස්කම් යෙදවීම සඳහා ඔබට පිටුව යළි පූරණය කිරීමට සිදුවිය හැක.
-identity-permissions-empty = ඔබ මෙම අඩවියට විශෙෂිත අවසර ලබා දී නැත.
 identity-clear-site-data =
     .label = කුකී සහ අඩවි දත්ත හිස් කරන්න...
 identity-remove-cert-exception =
@@ -242,12 +231,6 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = බෙදාගන්නා කැමරාව:
-    .accesskey = C
-popup-select-microphone =
-    .value = බෙදාගන්නා මයික්‍රෆෝනය
-    .accesskey = M
 popup-all-windows-shared = ඔබේ තිරයේ දිස්වෙන සියළු කවුළු බෙදාගැනෙනු ඇත.
 
 ## WebRTC window or screen share tab switch warning
@@ -258,12 +241,8 @@ popup-all-windows-shared = ඔබේ තිරයේ දිස්වෙන ස�
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = ලිපිනය සොයන්න හෝ ඇතුලත් කරන්න
 urlbar-placeholder =
     .placeholder = ලිපිනය සොයන්න හෝ ඇතුලත් කරන්න
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = ගවේශකය දුරස්ථ පාලනයේ පවතී
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -381,6 +360,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = මෙවලම් තීරු රිසිකරණය…
     .accesskey = C
+toolbar-button-email-link =
+    .label = ඊ-මේල් සබැඳිය
+    .tooltiptext = මෙම පිටුවට සබැඳියක් ඊ-තැපැල් කරන්න
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = පිටුව සුරකින්න
+    .tooltiptext = පිටුව සුරකින්න ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = ගොනුව විවෘත කරන්න
+    .tooltiptext = ගොනුව විවෘත කරන්න ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = සම්මුහුර්ථ කළ ටැබ
+    .tooltiptext = වෙනත් මෙවලම් වලින් ටැබ පෙන්වන්න
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = නව පුද්ගලික කවුළුව
+    .tooltiptext = නව පුද්ගලික ගවේශන කවුළුවක් විවෘත කරන්න ({ $shortcut })
 
 ## EME notification panel
 
@@ -414,3 +414,38 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = පොප්-අප් අවහිර කර ඇතිවිට මෙම පණිවිඩය පෙන්වන්න එපා
     .accesskey = D
+
+# Navigator Toolbox
+
+navbar-downloads =
+    .label = බාගැනිම්
+navbar-overflow =
+    .tooltiptext = තවත් මෙවලම්...
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = මුද්‍රණය
+    .tooltiptext = මෙම පිටුව මුදරණය කරන්න... ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = මුද්‍රණය
+    .tooltiptext = පිටුව මුද්‍රණය
+navbar-home =
+    .label = මුල් පිටුව
+    .tooltiptext = { -brand-short-name } නිවෙස් පිටුව
+navbar-library =
+    .label = පුස්තකාලය
+    .tooltiptext = ඉතිහාසය, සුරැකි පිටු සලකුණු හා තවත් දෑ බලන්න
+navbar-search =
+    .title = සොයන්න
+navbar-accessibility-indicator =
+    .tooltiptext = පිවිසුම්කාරක විශේෂාංග සක්‍රීයයි
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = ගවේෂක ටැබ්
+tabs-toolbar-new-tab =
+    .label = නව ටැබයක් විවෘත කරන්න
+tabs-toolbar-list-all-tabs =
+    .label = සියළු ටැබ් ලැයිස්තුගත කරන්න
+    .tooltiptext = සියළු ටැබ් ලැයිස්තුගත කරන්න

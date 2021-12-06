@@ -133,12 +133,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = पत्ता पट्टी मध्ये जोडा
 page-action-manage-extension =
     .label = एक्सटेन्शन व्यवस्थापित करा…
-page-action-remove-from-urlbar =
-    .label = पत्ता पट्टीमधून काढा
 
 ## Auto-hide Context Menu
 
@@ -154,10 +150,6 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = यावेळी, यासह शोधा:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = शोध सेटिंग बदला
 search-one-offs-change-settings-compact-button =
     .tooltiptext = शोध सेटिंगस बदला
 search-one-offs-context-open-new-tab =
@@ -196,8 +188,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = जतन करतांना संपादक दर्शवा
     .accesskey = S
-bookmark-panel-done-button =
-    .label = झाले
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -223,10 +213,7 @@ identity-passive-loaded = या पृष्ठावरील काही भ
 identity-active-loaded = आपण ह्या पृष्ठावरील सुरक्षा बंद केली आहे.
 identity-weak-encryption = हे पृष्ठ कमकुवत एनक्रिप्शन वापरते.
 identity-insecure-login-forms = आपण ह्या पृष्ठावर दिलेल्या लॉग इन माहितीबरोबर तडजोड होऊ शकते.
-identity-permissions =
-    .value = परवानग्या
 identity-permissions-reload-hint = आपल्याला बदल लागू करण्यासाठी पृष्ठ पुन्हा लोड करावे लागू शकते.
-identity-permissions-empty = आपण ह्या साईटला काही विशेष परवानग्या दिलेल्या नाहीत.
 identity-clear-site-data =
     .label = कुकीज आणि साईट माहिती पुसा…
 identity-connection-not-secure-security-view = आपण या साइटशी सुरक्षितपणे कनेक्ट केलेले नाही.
@@ -276,12 +263,6 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = शेअर करण्याजोगी कॅमेरा:
-    .accesskey = C
-popup-select-microphone =
-    .value = शेअर करण्याजोगी माइक्रोफोन:
-    .accesskey = M
 popup-all-windows-shared = पडद्यावरील सर्व दृष्यास्पद पटलांना शेअर केले जाईल.
 
 ## WebRTC window or screen share tab switch warning
@@ -292,12 +273,8 @@ popup-all-windows-shared = पडद्यावरील सर्व दृष
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = शोधा किंवा पत्ता द्या
 urlbar-placeholder =
     .placeholder = शोधा किंवा पत्ता द्या
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = ब्राउझर दूरस्थ नियंत्रणामध्ये आहे
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -311,8 +288,6 @@ urlbar-go-button =
     .tooltiptext = स्थान पट्टीतील पत्त्यावर जा
 urlbar-page-action-button =
     .tooltiptext = पृष्ठाच्या कृती
-urlbar-pocket-button =
-    .tooltiptext = { -pocket-brand-name } मध्ये जतन करा
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -427,6 +402,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = साधनपट्टी बदला...
     .accesskey = C
+toolbar-button-email-link =
+    .label = ईमेल दुवा
+    .tooltiptext = ह्या पृष्ठासाठीचा दुवा ईमेल करा
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = पृष्ठ संकलित करा
+    .tooltiptext = हे पृष्ठ संकलित करा ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = फाइल उघडा
+    .tooltiptext = फाइल उघडा ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = ताळमेळीत टॅब्स
+    .tooltiptext = आपल्या इतर उपकरणांवरील टॅब्स येथे दाखवा
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = नवीन खाजगी पटल
+    .tooltiptext = नवीन खाजगी ब्राउजिंग पटल उघडा ({ $shortcut })
 
 ## EME notification panel
 
@@ -464,3 +460,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = पिक्चर-इन-पिक्चर टॉगल लपवा
     .accesskey = H
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = संचारन
+navbar-downloads =
+    .label = डाउनलोड्स
+navbar-overflow =
+    .tooltiptext = आणखी साधने…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = छापा
+    .tooltiptext = ह्या पृष्ठाची छपाई करा… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = छापा
+    .tooltiptext = हे पृष्ठ छापा
+navbar-home =
+    .label = घर, आरंभस्थळ
+    .tooltiptext = { -brand-short-name } मुख्यपृष्ठ
+navbar-library =
+    .label = लायब्ररी
+    .tooltiptext = इतिहास दाखवा, जतन केलेल्या वाचनखुणा, आणि अधिक
+navbar-search =
+    .title = शोधा
+navbar-accessibility-indicator =
+    .tooltiptext = सुलभता वैशिष्ट्ये सक्षम आहेत
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = ब्राउझर टॅब्स्
+tabs-toolbar-new-tab =
+    .label = नवीन टॅब
+tabs-toolbar-list-all-tabs =
+    .label = सर्व टॅब्स्ची सूची
+    .tooltiptext = सर्व टॅब्स्ची सूची

@@ -11,27 +11,31 @@ appmenuitem-update-banner3 =
     .label-update-manual = Actualizare disponibilă — descarcă acum
     .label-update-unsupported = Nu se poate actualiza — sistem incompatibil
     .label-update-restart = Actualizare disponibilă — repornește acum
-
 appmenuitem-protection-dashboard-title = Tablou de bord privind protecțiile
-appmenuitem-customize-mode =
-    .label = Personalizează…
-
-## Zoom Controls
-
 appmenuitem-new-tab =
     .label = Filă nouă
 appmenuitem-new-window =
     .label = Fereastră nouă
 appmenuitem-new-private-window =
     .label = Fereastră privată nouă
+appmenuitem-history =
+    .label = Istoric
+appmenuitem-downloads =
+    .label = Descărcări
 appmenuitem-passwords =
     .label = Parole
 appmenuitem-addons-and-themes =
     .label = Suplimente și teme
+appmenuitem-print =
+    .label = Tipărește…
 appmenuitem-find-in-page =
     .label = Caută în pagină…
+appmenuitem-zoom =
+    .value = Zoom
 appmenuitem-more-tools =
     .label = Mai multe unelte
+appmenuitem-help =
+    .label = Ajutor
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -44,7 +48,6 @@ appmenu-menu-button-closed2 =
 appmenu-menu-button-opened2 =
     .tooltiptext = Închide meniul de aplicații
     .label = { -brand-short-name }
-
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -56,21 +59,32 @@ appmenuitem-zoom-enlarge =
     .label = Mărește
 appmenuitem-zoom-reduce =
     .label = Micșorează
-
 appmenuitem-fullscreen =
     .label = Ecran complet
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
-fxa-toolbar-sync-now =
-    .label = Sincronizează acum
-
 appmenu-remote-tabs-sign-into-sync =
     .label = Autentifică-te pentru sincronizare…
 appmenu-remote-tabs-turn-on-sync =
     .label = Activează sincronizarea…
-
+# This is shown after the tabs list if we can display more tabs by clicking on the button
+appmenu-remote-tabs-showmore =
+    .label = Afișează mai multe file
+    .tooltiptext = Afișează mai multe file de pe acest dispozitiv
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = Nicio filă deschisă
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = Activează sincronizarea filelor pentru a vedea o listă cu file de pe celelalte dispozitive.
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = Vrei să vezi aici filele de pe celelalte dispozitive?
+appmenu-remote-tabs-connectdevice =
+    .label = Conectează alt dispozitiv
+appmenu-remote-tabs-welcome = Afișează o listă cu filele de pe celelalte dispozitive.
+appmenu-remote-tabs-unverified = Contul tău trebuie verificat.
 appmenuitem-fxa-toolbar-sync-now2 = Sincronizează acum
+appmenuitem-fxa-sign-in = Autentifică-te în { -brand-product-name }
 appmenuitem-fxa-manage-account = Gestionează contul
 appmenu-fxa-header2 = { -fxaccount-brand-name(case: "indefinite-article", capitalization: "upper") }
 # Variables
@@ -83,14 +97,12 @@ appmenu-fxa-signed-in-label = Autentifică-te
 appmenu-fxa-setup-sync =
     .label = Activează sincronizarea…
 appmenu-fxa-show-more-tabs = Afișează mai multe file
-
 appmenuitem-save-page =
     .label = Salvează pagina ca…
 
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Ce este nou
-
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =
@@ -101,31 +113,42 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Profilator
+    .tooltiptext = Înregistrează un profil de performanță
 profiler-popup-title =
     .value = { -profiler-brand-name }
-
 profiler-popup-reveal-description-button =
     .aria-label = Dezvăluie mai multe informații
-
 profiler-popup-learn-more = Află mai multe
-
+profiler-popup-learn-more-button =
+    .label = Află mai multe
 profiler-popup-settings =
     .value = Setări
-
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Editează setările…
-
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Editează setările…
 profiler-popup-start-shortcut =
     { PLATFORM() ->
         [macos] ⌃⇧1
        *[other] Ctrl+Shift+1
     }
-
 profiler-popup-capture-shortcut =
     { PLATFORM() ->
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
 
 ## History panel
 
@@ -133,7 +156,6 @@ appmenu-manage-history =
     .label = Gestionează istoricul
 appmenu-reopen-all-tabs = Redeschide toate filele
 appmenu-reopen-all-windows = Redeschide toate ferestrele
-
 appmenu-restore-session =
     .label = Restaurează sesiunea anterioară
 appmenu-clear-history =
@@ -189,7 +211,6 @@ appmenu-customizetoolbar =
     .label = Personalizează bara de instrumente…
 appmenu-taskmanager =
     .label = Manager de activități
-
 appmenu-developer-tools-subheader = Instrumente pentru browser
 appmenu-developer-tools-extensions =
     .label = Extensii pentru dezvoltatori

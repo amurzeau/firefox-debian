@@ -11,15 +11,12 @@
 
 <!ENTITY accountSetupInfo2.label "Για να λαμβάνετε μηνύματα, θα πρέπει πρώτα να ρυθμίσετε έναν λογαριασμό.">
 <!ENTITY accountTypeTitle.label "Ρύθμιση νέου λογαριασμού">
-<!ENTITY accountTypeDesc2.label "Αυτός ο βοηθός θα συλλέξει τις απαραίτητες πληροφορίες για τη ρύθμιση ενός λογαριασμού. Αν δεν ξέρετε τις απαιτούμενες πληροφορίες, επικοινωνήστε με το διαχειριστή του συστήματός σας ή με τον πάροχο υπηρεσιών διαδικτύου σας.">
+<!ENTITY accountTypeDesc2.label "Αυτός ο βοηθός θα συλλέξει τις απαραίτητες πληροφορίες για τη ρύθμιση ενός λογαριασμού. Αν δεν γνωρίζετε τις απαιτούμενες πληροφορίες, επικοινωνήστε με τον διαχειριστή του συστήματός σας ή με τον πάροχο υπηρεσιών διαδικτύου σας.">
 <!ENTITY accountTypeDirections.label "Επιλέξτε το είδος του λογαριασμού που θέλετε να ρυθμίσετε:">
 <!ENTITY accountTypeMail.label "Λογαριασμός email">
 <!ENTITY accountTypeMail.accesskey "ρ">
-<!ENTITY accountTypeNews.label "Λογαριασμός ομάδας συζήτησης">
+<!ENTITY accountTypeNews.label "Λογαριασμός ομάδας συζητήσεων">
 <!ENTITY accountTypeNews.accesskey "δ">
-<!-- LOCALIZATION NOTE(accountTypeMovemail.label): do not translate 'Movemail' -->
-<!ENTITY accountTypeMovemail.label "Unix Mailspool (Movemail)">
-<!ENTITY accountTypeMovemail.accesskey "U">
 
 <!-- Entities for Identity page -->
 
@@ -65,7 +62,7 @@
 <!ENTITY incomingUsername.accesskey "χ">
 <!-- LOCALIZATION NOTE (newsServerNameDesc.label) : Do not translate "NNTP" or the "&quot;" entities in below line -->
 <!ENTITY newsServerNameDesc.label "Εισαγάγετε το όνομα του διακομιστή συζητήσεών σας (NNTP) (για παράδειγμα, «news.example.net»).">
-<!ENTITY newsServerLabel.label "Διακομιστής ομάδας συζήτησης:">
+<!ENTITY newsServerLabel.label "Διακομιστής ομάδας συζητήσεων:">
 <!ENTITY newsServerLabel.accesskey "σ">
 
 <!-- Entities for Outgoing Server page -->
@@ -88,19 +85,19 @@
      text after the "&quot;" entity in haveSmtp1.suffix3, if required grammatically.
 -->
 <!ENTITY haveSmtp1.prefix "Ο υπάρχων διακομιστής εξερχομένων σας (SMTP), «">
-<!ENTITY haveSmtp1.suffix3 "&quot;,  θα χρησιμοποιηθεί.">
+<!ENTITY haveSmtp1.suffix3 "», θα χρησιμοποιηθεί.">
 <!-- LOCALIZATION NOTE (haveSmtp2.prefix and haveSmtp2.suffix3) : Do not translate "SMTP" and "&quot;" in
      these variables. Also, translate haveSmtp2.prefix and haveSmtp2.suffix3 as a single sentence, inserting
      text after the "&quot;" entity in haveSmtp2.suffix3, if required grammatically.
 -->
 <!ENTITY haveSmtp2.prefix "Το υπάρχον όνομα χρήστη εξερχομένων σας (SMTP), «">
-<!ENTITY haveSmtp2.suffix3 "&quot;,  θα χρησιμοποιηθεί.">
+<!ENTITY haveSmtp2.suffix3 "», θα χρησιμοποιηθεί.">
 <!-- LOCALIZATION NOTE (haveSmtp3.prefix and haveSmtp3.suffix3) : Do not translate "SMTP" and "&quot;" in
      these variables. Also, translate haveSmtp3.prefix and haveSmtp3.suffix3 as a single sentence, inserting
      text after the "&quot;" entity in haveSmtp3.suffix3, if required grammatically.
 -->
 <!ENTITY haveSmtp3.prefix "Ο διακομιστής εξερχομένων σας (SMTP), «">
-<!ENTITY haveSmtp3.suffix3 "Ο &quot;, είναι όμοιος με το διακομιστή εισερχομένων σας, το όνομα χρήστη εισερχομένων θα χρησιμοποιηθεί για την πρόσβαση σε αυτόν.">
+<!ENTITY haveSmtp3.suffix3 "», είναι ίδιο με τον διακομιστή εισερχομένων σας, θα χρησιμοποιηθεί το όνομα χρήστη εισερχομένων σας για την πρόσβαση.">
 
 <!-- Entities for Account name page -->
 
@@ -113,7 +110,7 @@
 <!-- Entities for Done (Congratulations) page -->
 
 <!ENTITY completionTitle.label "Συγχαρητήρια!">
-<!ENTITY completionText.label "Βεβαιωθείτε ότι οι παρακάτω πληροφορίες είναι σωστές.">
+<!ENTITY completionText.label "Παρακαλώ βεβαιωθείτε ότι οι εξής πληροφορίες είναι σωστές.">
 <!ENTITY serverTypePrefix.label "Τύπος διακομιστή εισερχομένων:">
 <!ENTITY serverNamePrefix.label "Όνομα διακομιστή εισερχομένων:">
 <!ENTITY smtpServerNamePrefix.label "Όνομα διακομιστή εξερχόμενων (SMTP):">
@@ -121,7 +118,7 @@
 <!ENTITY downloadOnLogin.label "Λήψη μηνυμάτων τώρα">
 <!ENTITY downloadOnLogin.accesskey "ψ">
 <!ENTITY deferStorageDesc.label "Αποεπιλέξτε αυτό το κουτί για να αποθηκεύετε αλληλογραφία για αυτόν το λογαριασμό στο δικό του κατάλογο. Αυτό θα εμφανίζει αυτόν το λογαριασμό στο πρώτο επίπεδο. Σε άλλη περίπτωση, θα είναι μέρος των Τοπικών φακέλων του λογαριασμού Γενικών Εισερχομένων.">
-<!ENTITY deferStorage.label "Χρήση  Γενικών Εισερχομένων (αποθήκευση αλληλογραφίας στους Τοπικούς Φακέλους)">
-<!ENTITY deferStorage.accesskey "Γ">
+<!ENTITY deferStorage.label "Χρήση γενικών εισερχομένων (αποθήκευση email σε τοπικούς φακέλους)">
+<!ENTITY deferStorage.accesskey "γ">
 <!ENTITY clickFinish.label "Κάντε κλικ στο «Τέλος» για αποθήκευση των ρυθμίσεων και κλείσιμο του βοηθού λογαριασμών.">
 <!ENTITY clickFinish.labelMac "Κάντε κλικ στο «Τέλος» για αποθήκευση των ρυθμίσεων και κλείσιμο του βοηθού λογαριασμών.">

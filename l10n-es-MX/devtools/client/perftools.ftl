@@ -95,8 +95,6 @@ perftools-thread-img-decoder =
     .title = Hilos de decodificación de imágenes
 perftools-thread-dns-resolver =
     .title = La resolución de DNS ocurre en este hilo
-perftools-thread-js-helper =
-    .title = Trabajo en segundo plano del motor JS, como compilaciones fuera del hilo principal
 perftools-thread-task-controller =
     .title = Hilos del grupo de subprocesos de TaskController
 
@@ -115,3 +113,15 @@ perftools-onboarding-message = <b>Nuevo</b>: { -profiler-brand-name } ahora est�
 perftools-onboarding-reenable-old-panel = (Por un tiempo limitado, podrás acceder al panel de rendimiento original a través de <a>{ options-context-advanced-settings }</a>)
 perftools-onboarding-close-button =
     .aria-label = Cerrar el mensaje introductorio
+
+## Profiler presets
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# The same labels and descriptions are also defined in appmenu.ftl.
+
+perftools-presets-web-developer-label = Desarrollador web
+
+##
+

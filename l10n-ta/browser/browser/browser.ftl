@@ -132,12 +132,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = முகவரி பட்டையில் சேர்
 page-action-manage-extension =
     .label = நீட்சிகளை நிர்வகி…
-page-action-remove-from-urlbar =
-    .label = முகவரி பட்டையிலிருந்து நீக்கு
 
 ## Auto-hide Context Menu
 
@@ -150,10 +146,6 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = தேடல் அமைவுகளை மாற்று
 search-one-offs-change-settings-compact-button =
     .tooltiptext = தேடல் அமைவுகளை மாற்று
 search-one-offs-context-open-new-tab =
@@ -192,8 +184,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = சேமிக்கும்பொருட்டு தொகுப்பதைக் காண்பி
     .accesskey = S
-bookmark-panel-done-button =
-    .label = முடிந்தது
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -211,7 +201,6 @@ identity-active-loaded = நீங்கள் இப்பக்கத்தி
 identity-weak-encryption = இப்பக்கம் பாதுகாப்பற்ற மறைகுறியாக்கத்தைப் பயன்படுத்துகிறது.
 identity-insecure-login-forms = இப்பக்கத்திற்கு வரும் உள்நுழைவுகள் தாக்கப்படலாம்.
 identity-permissions-reload-hint = மாற்றங்களைச் செயற்படுத்த பக்கத்தை மீளேற்று.
-identity-permissions-empty = நீங்கள் இத்தளத்துக்கு சிறப்பு அனுமதிகள் எதையும் வழங்கவில்லை.
 identity-clear-site-data =
     .label = நினைவிகளையும் தள தரவையும் துடை…
 identity-remove-cert-exception =
@@ -258,12 +247,6 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = பகிர வேண்டிய படக்கருவி:
-    .accesskey = C
-popup-select-microphone =
-    .value = பகிர வேண்டிய ஒலிவாங்கி:
-    .accesskey = M
 popup-all-windows-shared = திரையில் பார்வையிலுள்ள அனைத்து சாளரங்களும் பகிரப்படும்.
 
 ## WebRTC window or screen share tab switch warning
@@ -274,12 +257,8 @@ popup-all-windows-shared = திரையில் பார்வையில�
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = சொல்லைத் தேடுங்கள் அல்லது முகவரியை உள்ளிடுங்கள்
 urlbar-placeholder =
     .placeholder = சொல்லைத் தேடுங்கள் அல்லது முகவரியை உள்ளிடுங்கள்
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = தொலை கட்டுப்பாட்டில் உலாவி
 urlbar-switch-to-tab =
     .value = கீற்றுக்கு மாற்று:
 # Used to indicate that a selected autocomplete entry is provided by an extension.
@@ -393,6 +372,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = கருவிப்பட்டையை விருப்பமை...
     .accesskey = C
+toolbar-button-email-link =
+    .label = மடல்
+    .tooltiptext = இப்பக்க தொடுப்பை மின்னஞ்சல் செய்
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = சேமி
+    .tooltiptext = இந்தப் பக்கத்தை சேமி ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = திற
+    .tooltiptext = கோப்பினைத் திற ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = ஒத்திசைவு
+    .tooltiptext = பிற சாதனங்களிலிருந்து கீற்றுகளைக் காட்டு
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = புதிய கமுக்க சாளரம்
+    .tooltiptext = புதிய கமுக்க சாளரத்தைத் திற ({ $shortcut })
 
 ## EME notification panel
 
@@ -427,3 +427,38 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = பாப்பப்கள் தடுக்கப்படும் போது இந்த செய்தியைக் காட்டாதே
     .accesskey = D
+
+# Navigator Toolbox
+
+navbar-downloads =
+    .label = பதிவிறக்கங்கள்
+navbar-overflow =
+    .tooltiptext = இதர கருவிகள்...
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = அச்சிடு
+    .tooltiptext = இப்பக்கத்தை அச்சிடு... ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = அச்சிடு
+    .tooltiptext = இந்தப் பக்கத்தை அச்சிடு
+navbar-home =
+    .label = இல்லம்
+    .tooltiptext = { -brand-short-name } அகப்பக்கம்
+navbar-library =
+    .label = தரவகம்
+    .tooltiptext = வரலாறு, சேமித்த புத்தகக்குறிகள், மற்றும் பலவற்றைப் பார்
+navbar-search =
+    .title = தேடு
+navbar-accessibility-indicator =
+    .tooltiptext = அணுகல்தன்மை வசதி செயற்படுத்தப்பட்டது
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = உலாவி கீற்றுகள்
+tabs-toolbar-new-tab =
+    .label = புதிய கீற்று
+tabs-toolbar-list-all-tabs =
+    .label = அனைத்து கீற்றுகளையும் பட்டியலிடு
+    .tooltiptext = அனைத்து கீற்றுகளையும் பட்டியலிடு

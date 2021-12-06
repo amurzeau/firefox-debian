@@ -20,7 +20,7 @@ duplicate-tabs =
 # The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
 close-tabs-to-the-start =
-    .label = Clauder le schedas a leve
+    .label = Clauder le schedas a sinistra
     .accesskey = l
 # The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
@@ -51,9 +51,6 @@ bookmark-selected-tabs =
 bookmark-tab =
     .label = Marcar le scheda
     .accesskey = M
-reopen-in-container =
-    .label = Reaperir in un scheda contentor
-    .accesskey = e
 tab-context-open-in-new-container-tab =
     .label = Aperir in un nove scheda contentor
     .accesskey = e
@@ -69,26 +66,6 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Clauder plure schedas
     .accesskey = p
-tab-context-undo-close-tabs =
-    .label =
-        { $tabCount ->
-            [1] Reaperir scheda claudite
-            [one] Reaperi scheda claudite
-           *[other] Reaperi schedas claudite
-        }
-    .accesskey = R
-close-tab =
-    .label = Clauder le scheda
-    .accesskey = C
-close-tabs =
-    .label = Clauder le schedas
-    .accesskey = S
-move-tabs =
-    .label = Displaciar schedas
-    .accesskey = D
-move-tab =
-    .label = Mover le scheda
-    .accesskey = v
 tab-context-share-url =
     .label = Compartir
     .accesskey = o
@@ -129,3 +106,11 @@ tab-context-move-tabs =
            *[other] Displaciar schedas
         }
     .accesskey = M
+
+tab-context-send-tabs-to-device =
+    .label =
+        { $tabCount ->
+            [one] Inviar scheda al apparato
+           *[other] Inviar { $tabCount } schedas al apparato
+        }
+    .accesskey = n

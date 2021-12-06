@@ -147,12 +147,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = ঠিকানা বারে যোগ করুন
 page-action-manage-extension =
     .label = এক্সটেনশন ব্যবস্থাপনা...
-page-action-remove-from-urlbar =
-    .label = ঠিকানা  বার থেকে অপসারণ করুন
 page-action-remove-extension =
     .label = এক্সটেনশন অপসারণ করুন
 
@@ -170,10 +166,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = এবার এর সাথে অনুসন্ধান করুন:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = অনুসন্ধান সেটিং বদল করুন
 search-one-offs-change-settings-compact-button =
     .tooltiptext = অনুসন্ধান সেটিংস পরিবর্তন করুন
 search-one-offs-context-open-new-tab =
@@ -215,8 +207,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = সংরক্ষণ করার সময় সম্পাদক দেখাও
     .accesskey = S
-bookmark-panel-done-button =
-    .label = সম্পন্ন
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -243,10 +233,7 @@ identity-passive-loaded = এই পাতার অংশগুলো নির
 identity-active-loaded = আপনি এই পাতায় সুরক্ষা বন্ধ করেছেন।
 identity-weak-encryption = এই পাতা দুর্বল এনক্রিপশন ব্যবহার করে।
 identity-insecure-login-forms = এই পাতায় লগইন করতে যে তথ্য দিয়েছেন তা চুরি হতে পারে।
-identity-permissions =
-    .value = অনুমোদন
 identity-permissions-reload-hint = পরিবর্তনগুলি প্রয়োগ করার জন্য আপনাকে পাতাটি পুনরায় লোড করার প্রয়োজন হতে পারে।
-identity-permissions-empty = আপনি এই সাইটের জন্য কোনো বিশেষ অনুমতি দেননি।
 identity-clear-site-data =
     .label = কুকি এবং সাইট ডাটা পরিষ্কার করুন…
 identity-connection-not-secure-security-view = এই সাইটে আপনার সংযোগ সুরক্ষিত নয়।
@@ -299,12 +286,6 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = যেসকল ক্যামেরা শেয়ার করা হবে: C
-    .accesskey = C
-popup-select-microphone =
-    .value = যেসকল মাইক্রোফোন শেয়ার করা হবে: M
-    .accesskey = M
 popup-all-windows-shared = আপনার স্ক্রিনের সব দৃশ্যমান উইন্ডো শেয়ার করা হবে।
 
 ## WebRTC window or screen share tab switch warning
@@ -316,14 +297,10 @@ enable-devtools-popup-description = F12 শর্টকাট ব্যবহা
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = অনুসন্ধান বা ঠিকানা দিন
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = অনুসন্ধান বা ঠিকানা দিন
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = ব্রাউজার রিমোর্ট কন্ট্রোলের আওতায়
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -339,8 +316,6 @@ urlbar-go-button =
     .tooltiptext = ঠিকানার বারে উল্লেখিত পাতা প্রদর্শন করা হবে
 urlbar-page-action-button =
     .tooltiptext = পাতা পদক্ষেপ
-urlbar-pocket-button =
-    .tooltiptext = { -pocket-brand-name } এ সংরক্ষণ করুন
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -463,6 +438,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = কাস্টোমাইজ টুলবার…
     .accesskey = C
+toolbar-button-email-link =
+    .label = ইমেইল লিঙ্ক
+    .tooltiptext = এই পাতায় একটি লিঙ্ক ইমেল করুন
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = পাতা সংরক্ষণ করুন
+    .tooltiptext = এই পাতা সংরক্ষণ করুন ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = ফাইল খুলুন
+    .tooltiptext = একটি ফাইল খুলুন ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = সিঙ্ককৃত ট্যাব
+    .tooltiptext = অন্য ডিভাইস থেকে ট্যাব দেখান
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = নতুন ব্যক্তিগত উইন্ডো
+    .tooltiptext = একটি নতুন ব্যক্তিগত ব্রাউজিং উইন্ডো খুলুন ({ $shortcut })
 
 ## EME notification panel
 
@@ -500,3 +496,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = পিকচার-ইন-পিকচার টগল লুকান
     .accesskey = H
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = ন্যাভিগেশন
+navbar-downloads =
+    .label = ডাউনলোড
+navbar-overflow =
+    .tooltiptext = আরও টুল…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = মুদ্রণ
+    .tooltiptext = এই পাতাটি মুদ্রণ করুন… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = মুদ্রণ
+    .tooltiptext = এই পাতা মুদ্রণ
+navbar-home =
+    .label = নীড়
+    .tooltiptext = { -brand-short-name } নীড় পাতা
+navbar-library =
+    .label = লাইব্রেরি
+    .tooltiptext = ইতিহাস, সংরক্ষিত বুকমার্ক এবং আরও অনেক কিছু দেখুন
+navbar-search =
+    .title = অনুসন্ধান
+navbar-accessibility-indicator =
+    .tooltiptext = প্রবেশগম্যতার ফিচারটি সক্রিয় হয়েছে
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = ব্রাউজার ট্যাব
+tabs-toolbar-new-tab =
+    .label = নতুন ট্যাব T
+tabs-toolbar-list-all-tabs =
+    .label = সব ট্যাবের তালিকা
+    .tooltiptext = সব ট্যাবের তালিকা

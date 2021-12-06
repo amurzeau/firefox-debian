@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Дадаць у адрасны радок
 page-action-manage-extension =
     .label = Кіраваць пашырэннямі…
-page-action-remove-from-urlbar =
-    .label = Выдаліць з адраснага радка
 page-action-remove-extension =
     .label = Выдаліць пашырэнне
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Гэтым разам шукаць у:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Змяніць налады пошуку
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Змяніць налады пошуку
 search-one-offs-context-open-new-tab =
@@ -251,8 +243,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Паказваць рэдактар пры захаванні
     .accesskey = П
-bookmark-panel-done-button =
-    .label = Гатова
 bookmark-panel-save-button =
     .label = Захаваць
 # Width of the bookmark panel.
@@ -282,8 +272,6 @@ identity-passive-loaded = Некаторыя часткі гэтай старо�
 identity-active-loaded = Вы адключылі ахову на гэтай старонцы.
 identity-weak-encryption = Гэта старонка ўжывае слабы тып шыфравання.
 identity-insecure-login-forms = Лагіны, уведзеныя на гэтай старонцы, могуць быць скампраметаваны.
-identity-permissions =
-    .value = Дазволы
 identity-https-only-connection-upgraded = (абноўлена да HTTPS)
 identity-https-only-label = Рэжым «Толькі HTTPS»
 identity-https-only-dropdown-on =
@@ -299,7 +287,6 @@ identity-permissions-storage-access-header = Міжсайтавыя кукі
 identity-permissions-storage-access-hint = Гэтыя ўдзельнікі могуць выкарыстоўваць міжсайтавыя кукі і дадзеныя сайта, пакуль вы знаходзіцеся на гэтым сайце.
 identity-permissions-storage-access-learn-more = Даведацца больш
 identity-permissions-reload-hint = Магчыма, вам спатрэбіцца перазагрузіць старонку, каб змены пачалі дзейнічаць.
-identity-permissions-empty = Вы не давалі гэтаму сайту ніякіх адмысловых дазволаў.
 identity-clear-site-data =
     .label = Выдаліць кукі і дадзеныя сайтаў…
 identity-connection-not-secure-security-view = Вы не злучаны бяспечна з гэтым сайтам.
@@ -387,12 +374,6 @@ bookmarks-toolbar-empty-message = Для хуткага доступу разм�
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Да якой камеры даць доступ:
-    .accesskey = З
-popup-select-microphone =
-    .value = Да якога мікрафона даць доступ:
-    .accesskey = М
 popup-select-camera-device =
     .value = Камера:
     .accesskey = К
@@ -406,14 +387,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Дынамікі
 popup-all-windows-shared = Усе бачныя вокны на вашым экране будуць абагулены.
-popup-screen-sharing-not-now =
-    .label = Не цяпер
-    .accesskey = ц
-popup-screen-sharing-never =
-    .label = Ніколі не дазваляць
-    .accesskey = і
-popup-silence-notifications-checkbox = Адключыць абвесткі ад { -brand-short-name } на час супольнага доступу
-popup-silence-notifications-checkbox-warning = { -brand-short-name } не будзе паказваць абвесткі ў час супольнага доступу.
 popup-screen-sharing-block =
     .label = Блакаваць
     .accesskey = Б
@@ -437,14 +410,10 @@ enable-devtools-popup-description = Каб выкарыстаць клавішу
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Шукаць ці ўвесці адрас
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Шукаць ці ўвесці адрас
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Браўзер знаходзіцца пад аддаленым кіраваннем
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -493,8 +462,6 @@ urlbar-go-button =
     .tooltiptext = Пайсці па адрасе, які зараз у адрасным радку
 urlbar-page-action-button =
     .tooltiptext = Дзеянні старонкі
-urlbar-pocket-button =
-    .tooltiptext = Захаваць у { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -699,6 +666,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Уладкаванне паліцы прылад…
     .accesskey = У
+toolbar-button-email-link =
+    .label = Даслаць спасылку эл.поштай
+    .tooltiptext = Даслаць спасылку на гэту старонку эл.поштай
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Захаваць старонку
+    .tooltiptext = Захаваць гэтую старонку ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Адкрыць файл
+    .tooltiptext = Адкрыць файл ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Сінхранізаваныя карткі
+    .tooltiptext = Паказваць карткі з іншых прылад
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Новае прыватнае акно
+    .tooltiptext = Адкрыць новае акно для прыватнага аглядання ({ $shortcut })
 
 ## EME notification panel
 
@@ -749,6 +737,55 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Не паказваць гэта паведамленне, калі выплыўныя вокны затрымліваюцца
     .accesskey = Н
+edit-popup-settings =
+    .label = Кіраваць наладамі ўсплыўных вокнаў…
+    .accesskey = ь
 picture-in-picture-hide-toggle =
     .label = Схаваць пераключальнік Выява ў выяве
     .accesskey = р
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Навігацыя
+navbar-downloads =
+    .label = Сцягванні
+navbar-overflow =
+    .tooltiptext = Іншыя прылады…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Друкаваць
+    .tooltiptext = Друкаваць старонку… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Друкаваць
+    .tooltiptext = Друкаваць гэтую старонку
+navbar-home =
+    .label = Дадому
+    .tooltiptext = Хатняя старонка { -brand-short-name }
+navbar-library =
+    .label = Бібліятэка
+    .tooltiptext = Паказаць гісторыю, захаваныя закладкі і іншае
+navbar-search =
+    .title = Пошук
+navbar-accessibility-indicator =
+    .tooltiptext = Магчымасці даступнасці ўключаны
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Карткі браўзера
+tabs-toolbar-new-tab =
+    .label = Новая картка
+tabs-toolbar-list-all-tabs =
+    .label = Пералічыць усе карткі
+    .tooltiptext = Пералічыць усе карткі
+
+## Infobar shown at startup to suggest session-restore
+
+# <img data-l10n-name="icon"/> will be replaced by the application menu icon
+restore-session-startup-suggestion-message = <strong>Адкрыць папярэднія карткі?</strong> Вы можаце аднавіць папярэдні сеанс з меню <img data-l10n-name="icon"/> праграмы { -brand-short-name }, у раздзеле "Гісторыя".
+restore-session-startup-suggestion-button = Паказаць мне як

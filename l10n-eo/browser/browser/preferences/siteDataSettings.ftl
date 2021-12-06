@@ -30,14 +30,6 @@ site-data-remove-selected =
     .label = Forigi elektitajn
     .accesskey = e
 
-site-data-button-cancel =
-    .label = Nuligi
-    .accesskey = N
-
-site-data-button-save =
-    .label = Konservi ŝanĝojn
-    .accesskey = K
-
 site-data-settings-dialog =
     .buttonlabelaccept = Konservi ŝanĝojn
     .buttonaccesskeyaccept = K
@@ -67,5 +59,9 @@ site-data-removing-dialog =
 site-data-removing-header = Forigo de kuketoj kaj retejaj datumoj…
 
 site-data-removing-desc = Forigo de kuketoj kaj retejaj datumoj povus fini viajn seancojn en retejoj. Ĉu vi certe volas fari tiujn ŝanĝojn?
+
+# Variables:
+#   $baseDomain (String) - The single domain for which data is being removed
+site-data-removing-single-desc = Forigo de kuketoj kaj retejaj datumoj povas fini seancojn retejajn. Ĉu vi certe volas forigi kuketojn kaj retejajn datumojn de <strong>{ $baseDomain }</strong>?
 
 site-data-removing-table = Kuketoj kaj retejaj datumoj estos forigitaj por la jenaj retejoj

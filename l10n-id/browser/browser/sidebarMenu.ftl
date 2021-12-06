@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Tutup Bilah Samping
+
+sidebar-close-button =
+    .tooltiptext = Tutup bilah samping

@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Gestiona l'ús dels complements
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Gestiona la compartició de la càmera o del micròfon amb el lloc
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Gestiona la compartició d'altres altaveus amb el lloc
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Obre la subfinestra de reproducció automàtica
 urlbar-persistent-storage-notification-anchor =
@@ -156,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Afegeix a la barra d'adreces
 page-action-manage-extension =
     .label = Gestiona l'extensió…
-page-action-remove-from-urlbar =
-    .label = Elimina de la barra d'adreces
 page-action-remove-extension =
     .label = Elimina l'extensió
 
@@ -179,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Aquesta vegada, cerca amb:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Canvia els paràmetres de cerca
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Canvia els paràmetres de cerca
 search-one-offs-context-open-new-tab =
@@ -246,8 +242,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Mostra l'editor en desar
     .accesskey = s
-bookmark-panel-done-button =
-    .label = Fet
 bookmark-panel-save-button =
     .label = Desa
 # Width of the bookmark panel.
@@ -277,8 +271,6 @@ identity-passive-loaded = Parts d'aquesta pàgina no són segures (com les imatg
 identity-active-loaded = Heu desactivat la protecció en aquesta pàgina.
 identity-weak-encryption = Aquesta pàgina utilitza xifratge feble.
 identity-insecure-login-forms = Les dades d'inici de sessió que introduïu en aquesta pàgina podrien estar en risc.
-identity-permissions =
-    .value = Permisos
 identity-https-only-connection-upgraded = (actualitzat a HTTPS)
 identity-https-only-label = Mode només HTTPS
 identity-https-only-dropdown-on =
@@ -294,7 +286,6 @@ identity-permissions-storage-access-header = Galetes entre llocs
 identity-permissions-storage-access-hint = Aquests subjectes poden utilitzar galetes entre llocs i dades del lloc mentre esteu en aquest lloc.
 identity-permissions-storage-access-learn-more = Més informació
 identity-permissions-reload-hint = Potser cal que actualitzeu la pàgina per aplicar els canvis.
-identity-permissions-empty = No heu donat cap permís especial a aquest lloc.
 identity-clear-site-data =
     .label = Esborra les galetes i dades dels llocs…
 identity-connection-not-secure-security-view = No esteu connectat de forma segura a aquest lloc.
@@ -376,12 +367,6 @@ bookmarks-toolbar-empty-message = Col·loqueu les adreces d'interès aquí, a la
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Càmera per compartir:
-    .accesskey = C
-popup-select-microphone =
-    .value = Micròfon per compartir:
-    .accesskey = M
 popup-select-camera-device =
     .value = Càmera:
     .accesskey = C
@@ -395,14 +380,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Altaveus
 popup-all-windows-shared = Es compartiran totes les finestres visibles de la pantalla.
-popup-screen-sharing-not-now =
-    .label = Ara no
-    .accesskey = A
-popup-screen-sharing-never =
-    .label = No permetis mai
-    .accesskey = N
-popup-silence-notifications-checkbox = Desactiva les notificacions del { -brand-short-name } mentre s'estigui compartint
-popup-silence-notifications-checkbox-warning = El { -brand-short-name } no mostrarà notificacions mentre estigueu compartint.
 popup-screen-sharing-block =
     .label = Bloca
     .accesskey = B
@@ -426,14 +403,10 @@ enable-devtools-popup-description = Per a usar la drecera F12, primer obriu DevT
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Escriviu una cerca o adreça
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Escriviu una cerca o adreça
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = El navegador està sota control remot
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -482,8 +455,6 @@ urlbar-go-button =
     .tooltiptext = Vés a l'adreça de la barra d'ubicació
 urlbar-page-action-button =
     .tooltiptext = Accions de la pàgina
-urlbar-pocket-button =
-    .tooltiptext = Desa al { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -542,6 +513,16 @@ urlbar-result-action-search-tabs = Cerca en les pestanyes
 
 ## Labels shown above groups of urlbar results
 
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
+# A label shown above the search suggestions group in the urlbar results. It
+# should use title case.
+# Variables
+#  $engine (String): the name of the search engine providing the suggestions
+urlbar-group-search-suggestions =
+    .label = Suggeriments del { $engine }
 
 ## Full Screen and Pointer Lock UI
 
@@ -562,6 +543,10 @@ pointerlock-warning-no-domain = Aquest document té el control del punter. Preme
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Part d'aquesta pàgina ha fallat.</strong> Per notificar el problema al { -brand-product-name } i que s'arregli més ràpidament, envieu un informe.
+# The string for crashed-subframe-title.title should match crashed-subframe-message,
+# but without any markup.
+crashed-subframe-title =
+    .title = Part d'aquesta pàgina ha fallat. Per notificar el problema al { -brand-product-name } i que s'arregli més ràpidament, envieu un informe.
 crashed-subframe-learnmore-link =
     .value = Més informació
 crashed-subframe-submit =
@@ -674,6 +659,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Personalitza la barra d'eines…
     .accesskey = P
+toolbar-button-email-link =
+    .label = Envia l'enllaç per correu
+    .tooltiptext = Envia per correu un enllaç a aquesta pàgina
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = ­Desa la pàgina
+    .tooltiptext = Desa aquesta pàgina ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Obre un fitxer
+    .tooltiptext = Obre un fitxer ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Pestanyes sincronitzades
+    .tooltiptext = Mostra les pestanyes d'altres dispositius
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Finestra privada nova
+    .tooltiptext = Obre una finestra de navegació privada nova ({ $shortcut })
 
 ## EME notification panel
 
@@ -703,6 +709,9 @@ remote-tabs-sync-now = Sincronitza ara
 
 ##
 
+# "More" item in macOS share menu
+menu-share-more =
+    .label = Més…
 ui-tour-info-panel-close =
     .tooltiptext = Tanca
 
@@ -721,6 +730,55 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = No mostris aquest missatge quan es bloquin finestres emergents
     .accesskey = n
+edit-popup-settings =
+    .label = Gestiona els paràmetres de finestres emergents…
+    .accesskey = G
 picture-in-picture-hide-toggle =
     .label = Amaga el botó d'Imatge sobre imatge
     .accesskey = m
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navegació
+navbar-downloads =
+    .label = Baixades
+navbar-overflow =
+    .tooltiptext = Més eines…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Imprimeix
+    .tooltiptext = Imprimeix aquesta pàgina… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Imprimeix
+    .tooltiptext = Imprimeix aquesta pàgina
+navbar-home =
+    .label = Inici
+    .tooltiptext = Pàgina d'inici del { -brand-short-name }
+navbar-library =
+    .label = Biblioteca
+    .tooltiptext = Mostra l'historial, les adreces d'interès desades i més
+navbar-search =
+    .title = Cerca
+navbar-accessibility-indicator =
+    .tooltiptext = Funcions d'accessibilitat activades
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Pestanyes del navegador
+tabs-toolbar-new-tab =
+    .label = Pestanya nova
+tabs-toolbar-list-all-tabs =
+    .label = Llista totes les pestanyes
+    .tooltiptext = Llista totes les pestanyes
+
+## Infobar shown at startup to suggest session-restore
+
+# <img data-l10n-name="icon"/> will be replaced by the application menu icon
+restore-session-startup-suggestion-message = <strong>Voleu obrir les pestanyes anteriors?</strong> Podeu restaurar la sessió anterior des del menú de l'aplicació del { -brand-short-name } <img data-l10n-name="icon"/>, dins l'«Historial».
+restore-session-startup-suggestion-button = Mostra com fer-ho

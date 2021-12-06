@@ -124,10 +124,6 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Verander soekinstellings
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Verander soekinstellings
 search-one-offs-context-open-new-tab =
@@ -151,8 +147,6 @@ search-one-offs-add-engine-menu =
 
 ## Bookmark Panel
 
-bookmark-panel-done-button =
-    .label = Klaar
 
 ## Identity Panel
 
@@ -165,7 +159,6 @@ identity-active-loaded = U het beskerming vir dié blad gedeaktiveer.
 identity-weak-encryption = Dié bladsy gebruik swak enkripsie.
 identity-insecure-login-forms = Aanmeldinligting ingetik op dié bladsy kan gekompromitteer word.
 identity-permissions-reload-hint = Dit is dalk nodig om die bladsy te herlaai voor veranderinge toegepas word.
-identity-permissions-empty = U het geen spesiale toestemming aan dié werf gegee nie.
 identity-remove-cert-exception =
     .label = Verwyder uitsondering
     .accesskey = r
@@ -210,12 +203,6 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Kamera om te deel:
-    .accesskey = K
-popup-select-microphone =
-    .value = Mikrofoon om te deel:
-    .accesskey = M
 popup-all-windows-shared = Alle sigbare vensters op die skerm sal gedeel word.
 
 ## WebRTC window or screen share tab switch warning
@@ -226,8 +213,6 @@ popup-all-windows-shared = Alle sigbare vensters op die skerm sal gedeel word.
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Soek of tik adres in
 urlbar-placeholder =
     .placeholder = Soek of tik adres in
 urlbar-switch-to-tab =
@@ -312,6 +297,27 @@ bookmarks-toolbar-placeholder-button =
 more-menu-go-offline =
     .label = Werk vanlyn
     .accesskey = k
+toolbar-button-email-link =
+    .label = E-pos skakel
+    .tooltiptext = E-pos 'n skakel na dié bladsy
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Stoor bladsy
+    .tooltiptext = Stoor dié bladsy… ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Open lêer
+    .tooltiptext = Open 'n lêer… ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Gesinkroniseerde oortjies
+    .tooltiptext = Wys oortjies van ander toestelle
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Nuwe private venster
+    .tooltiptext = Open 'n nuwe private blaaivenster ({ $shortcut })
 
 ## EME notification panel
 
@@ -346,3 +352,28 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Moenie weer wys wanneer opspringers geblokkeer word nie
     .accesskey = D
+
+# Navigator Toolbox
+
+navbar-downloads =
+    .label = Afgelaai
+navbar-overflow =
+    .tooltiptext = Meer gereedskap…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Druk
+    .tooltiptext = Druk hierdie bladsy… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Druk
+    .tooltiptext = Druk hierdie bladsy
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Blaaieroortjies
+tabs-toolbar-new-tab =
+    .label = Nuwe oortjie
+tabs-toolbar-list-all-tabs =
+    .label = Lys alle oortjies
+    .tooltiptext = Lys alle oortjies

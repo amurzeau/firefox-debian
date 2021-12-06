@@ -6,6 +6,10 @@ dock-options-window-dialog =
     .title = Nastajenja nałoženskeho symbola
     .style = width: 37em;
 
+dock-options-show-badge =
+    .label = Přityčk pokazać
+    .accesskey = t
+
 bounce-system-dock-icon =
     .label = Nałoženski symbol animować, hdyž nowa powěsć přińdźe
     .accesskey = a

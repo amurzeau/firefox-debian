@@ -20,13 +20,6 @@ toolbar-context-menu-bookmark-selected-tabs =
 toolbar-context-menu-select-all-tabs =
     .label = Chọn tất cả các thẻ
     .accesskey = S
-toolbar-context-menu-undo-close-tabs =
-    .label =
-        { $tabCount ->
-            [1] Mở lại thẻ vừa đóng
-           *[other] Mở lại các thẻ vừa đóng
-        }
-    .accesskey = U
 toolbar-context-menu-reopen-closed-tabs =
     .label =
         { $tabCount ->
@@ -52,9 +45,6 @@ toolbar-context-menu-report-extension =
 toolbar-context-menu-pin-to-overflow-menu =
     .label = Ghim vào menu gợi ý trên thanh địa chỉ
     .accesskey = P
-toolbar-context-menu-auto-hide-downloads-button =
-    .label = Tự động ẩn trong thanh công cụ
-    .accesskey = A
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = Ẩn nút khi danh sách trống
     .accesskey = H
@@ -79,3 +69,6 @@ toolbar-context-menu-bookmarks-toolbar-on-new-tab-2 =
 toolbar-context-menu-bookmarks-show-other-bookmarks =
     .label = Hiển thị các dấu trang khác
     .accesskey = h
+toolbar-context-menu-menu-bar-cmd =
+    .toolbarname = Thanh menu
+    .accesskey = M

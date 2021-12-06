@@ -6,8 +6,6 @@
 # Addressing widget
 
 #   $type (String) - the type of the addressing row
-remove-address-row-type = Poista { $type } -kenttä
-#   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
@@ -58,6 +56,10 @@ toolbar-button-add-attachment =
 add-attachment-notification-reminder =
     .label = Lisää liite…
     .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+add-attachment-notification-reminder2 =
+    .label = Lisää liite…
+    .accesskey = ä
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 menuitem-attach-files =
     .label = Tiedosto(t)…
     .accesskey = T
@@ -74,20 +76,14 @@ attachment-bucket-count =
            *[other] { $count } liitettä
         }
     .accesskey = m
-#   $count (Number) - the number of attachments in the attachment bucket
-attachments-placeholder-tooltip =
-    .tooltiptext =
-        { $count ->
-            [1] { $count } liite
-           *[other] { $count } liitettä
-        }
-#   { attachment-bucket-count.accesskey } - Do not localize this message.
-key-toggle-attachment-pane =
-    .key = { attachment-bucket-count.accesskey }
 expand-attachment-pane-tooltip =
     .tooltiptext = Näytä Liite-paneeli ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
     .tooltiptext = Piilota Liite-paneeli ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-show =
+    .title = Näytä liitepaneeli ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-hide =
+    .title = Piilota liitepaneeli ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 drop-file-label-attachment =
     { $count ->
         [one] Lisää liitteenä
@@ -128,6 +124,7 @@ many-public-recipients-bcc =
 many-public-recipients-ignore =
     .label = Pidä vastaanottajat julkisina
     .accesskey = P
+many-public-recipients-prompt-title = Liian monta julkista vastaanottajaa
 many-public-recipients-prompt-cancel = Peruuta lähettäminen
 many-public-recipients-prompt-send = Lähetä silti
 

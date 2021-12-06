@@ -17,24 +17,7 @@ certmgr-tab-ca =
 certmgr-mine = Tienes certificaos d'estes organizaciones que t'identifiquen
 certmgr-remembered = Estos certificaos úsense identificate nos sitios web
 certmgr-people = Tienes certificaos nel ficheru qu'identifiquen a estes persones
-certmgr-servers = Tienes certificaos nel ficheru qu'identifiquen a estos sirvidores
 certmgr-ca = Tienes certificaos nel ficheru qu'identifiquen a estes entidaes certificadores
-certmgr-detail-general-tab-title =
-    .label = Xeneral
-    .accesskey = X
-certmgr-detail-pretty-print-tab-title =
-    .label = Detalles
-    .accesskey = D
-certmgr-pending-label =
-    .value = Ta verificándose'l certificáu…
-certmgr-period-of-validity = Periodu de validez
-certmgr-fingerprints = Buelgues
-certmgr-cert-detail-commonname = Nome habitual (CN)
-certmgr-cert-detail-org = Organización (O)
-certmgr-cert-detail-orgunit = Unidá organizativa (OU)
-certmgr-cert-detail-serial-number = Númberu de serie
-certmgr-cert-detail-sha-256-fingerprint = Buelga SHA-256
-certmgr-cert-detail-sha-1-fingerprint = Buelga SHA1
 certmgr-edit-ca-cert =
     .title = Edición de los axustes d'enfotu d'una CA de certificaos
     .style = width: 48em;
@@ -53,10 +36,8 @@ certmgr-override-lifetime =
     .label = Tiempu de vida
 certmgr-token-name =
     .label = Preséu de seguranza
-certmgr-begins-on = Data d'aniciu
 certmgr-begins-label =
     .label = Data d'aniciu
-certmgr-expires-on = Data de caducidá
 certmgr-expires-label =
     .label = Data de caducidá
 certmgr-email =
@@ -114,18 +95,6 @@ edit-trust-ca = El certificáu «{ $certName }» representa a una entidá certif
 ## For Deleting Certificates
 
 delete-user-cert-confirm = ¿De xuru quies desaniciar estos certificaos?
-
-## Cert Viewer
-
-not-present =
-    .value = <Nun ye parte del certificáu>
-# Cert verification
-cert-not-verified-cert-revoked = Nun pudo verificase esti certificáu porque se revocó.
-cert-not-verified-cert-expired = Nun pudo verificase esti certificáu porque caducó.
-cert-not-verified-cert-not-trusted = Nun pudo verificase esti certificáu porque nun ye d'enfotu.
-cert-not-verified-issuer-not-trusted = Nun pudo verificase esti certificáu porque l'emisor nun ye d'enfotu.
-cert-not-verified-issuer-unknown = Nun pudo verificase esti certificáu porque l'emisor ye desconocíu.
-cert-not-verified_algorithm-disabled = Nun pudo verificase esti certificáu porque se robló con un algoritmu de robla que se desactivó por nun ser seguru.
 # Used when no cert is stored for an override
 no-cert-stored-for-override = (Nun s'atroxó)
 # When a certificate is unavailable (for example, it has been deleted or the token it exists on has been removed).
@@ -144,6 +113,7 @@ add-exception-expired-short = Información ensin anovar
 add-exception-unverified-or-bad-signature-short = Identidá desconocida
 add-exception-valid-short = Certificáu válidu
 add-exception-valid-long = Esti sitiu forne una identificación válida y verificada.  Nun hai necesidá d'amestar una esceición.
+add-exception-no-cert-long = Nun ye posible consiguir l'estáu de la identificación d'esti sitiu.
 
 ## Certificate export "Save as" and error dialogs
 

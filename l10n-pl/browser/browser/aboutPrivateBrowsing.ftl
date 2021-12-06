@@ -7,8 +7,6 @@ privatebrowsingpage-open-private-window-label = Otwórz okno w trybie prywatnym
 about-private-browsing-search-placeholder = Szukaj w Internecie
 about-private-browsing-info-title = Okno w trybie prywatnym
 about-private-browsing-info-myths = Popularne mity na temat przeglądania prywatnego
-about-private-browsing =
-    .title = Szukaj w Internecie
 about-private-browsing-search-btn =
     .title = Szukaj w Internecie
 # Variables
@@ -25,9 +23,12 @@ about-private-browsing-not-private = Okno bez aktywnego trybu prywatnego.
 about-private-browsing-info-description = { -brand-short-name } czyści historię wyszukiwania i przeglądania po wyłączeniu programu lub zamknięciu wszystkich kart i okien w trybie przeglądania prywatnego. Chociaż nie czyni to użytkownika anonimowym wobec stron internetowych ani dostawcy Internetu, to ułatwia zachowanie prywatności przed pozostałymi użytkownikami komputera.
 about-private-browsing-need-more-privacy = Potrzebujesz więcej prywatności?
 about-private-browsing-turn-on-vpn = Wypróbuj { -mozilla-vpn-brand-name }
+about-private-browsing-info-description-private-window = Przeglądanie prywatne: { -brand-short-name } czyści historię wyszukiwania i przeglądania po zamknięciu wszystkich prywatnych okien. Nie czyni to użytkownika anonimowym.
 about-private-browsing-info-description-simplified = { -brand-short-name } czyści historię wyszukiwania i przeglądania po zamknięciu wszystkich prywatnych okien, ale nie czyni to użytkownika anonimowym.
 about-private-browsing-learn-more-link = Więcej informacji
 about-private-browsing-hide-activity = Ukryj swoje działania i położenie wszędzie, gdzie przeglądasz
+about-private-browsing-get-privacy = Zapewnij sobie ochronę prywatności wszędzie, gdzie przeglądasz
+about-private-browsing-hide-activity-1 = Ukryj swoje działania w Internecie i położenie za pomocą { -mozilla-vpn-brand-name }. Jedno kliknięcie tworzy bezpieczne połączenie, nawet w publicznej sieci Wi-Fi.
 about-private-browsing-prominent-cta = Zachowaj prywatność dzięki { -mozilla-vpn-brand-name }
 # This string is the title for the banner for search engine selection
 # in a private window.

@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Adresowemu polu přidać
 page-action-manage-extension =
     .label = Rozšěrjenje rjadować…
-page-action-remove-from-urlbar =
-    .label = Z adresoweho pola wotstronić
 page-action-remove-extension =
     .label = Rozšěrjenje wotstronić
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Nětko pytać z:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Pytanske nastajenja
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Pytanske nastajenja změnić
 search-one-offs-context-open-new-tab =
@@ -252,8 +244,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Editor při składowanju pokazać
     .accesskey = E
-bookmark-panel-done-button =
-    .label = Dokónčeny
 bookmark-panel-save-button =
     .label = Składować
 # Width of the bookmark panel.
@@ -283,8 +273,6 @@ identity-passive-loaded = Dźěle tuteje strony wěste njejsu (na přikład wobr
 identity-active-loaded = Sće škit na tutej stronje znjemóžnił.
 identity-weak-encryption = Tuta strona słabe zaklučowanje wužiwa.
 identity-insecure-login-forms = Přizjewjenja, kotrež so na tutej stronje zapodawaja, móhli wohrožene być.
-identity-permissions =
-    .value = Prawa
 identity-https-only-connection-upgraded = (na HTTPS zaktualizowany)
 identity-https-only-label = Modus Jenož-HTTPS
 identity-https-only-dropdown-on =
@@ -300,7 +288,6 @@ identity-permissions-storage-access-header = Placki wjacorych sydłow
 identity-permissions-storage-access-hint = Tući wobdźěleni móža placki a sydłowe daty wjacorych sydłow wužiwać, mjeztym zo sće na tutym sydle.
 identity-permissions-storage-access-learn-more = Dalše informacije
 identity-permissions-reload-hint = Dyrbiće snano stronu znowa začitać, zo bychu so změny wuskutkowali.
-identity-permissions-empty = Njejsće tutomu sydłu wosebite prawa přizwolił.
 identity-clear-site-data =
     .label = Placki a sydłowe daty zhašeć…
 identity-connection-not-secure-security-view = Njejsće wěsće z tutym sydłom zwjazany.
@@ -391,12 +378,6 @@ bookmarks-toolbar-empty-message = Wotkładźće swoje zapołožki w symbolowej l
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Kamera, kotraž ma so hromadźe wužiwać:
-    .accesskey = K
-popup-select-microphone =
-    .value = Mikrofon, kotryž ma so hromadźe wužiwać:
-    .accesskey = M
 popup-select-camera-device =
     .value = Kamera:
     .accesskey = K
@@ -410,14 +391,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Awdiowudawanske nastroje
 popup-all-windows-shared = Wšě widźomne wokna na wašej wobrazowce budu so dźělić.
-popup-screen-sharing-not-now =
-    .label = Nic nětko
-    .accesskey = c
-popup-screen-sharing-never =
-    .label = Ženje njedowolić
-    .accesskey = e
-popup-silence-notifications-checkbox = Zdźělenja w { -brand-short-name } znjemóžnić, mjeztym zo dźěliće
-popup-silence-notifications-checkbox-warning = { -brand-short-name } njebudźe zdźělenja pokazować, mjeztym zo dźěliće.
 popup-screen-sharing-block =
     .label = Blokować
     .accesskey = B
@@ -441,14 +414,10 @@ enable-devtools-popup-description = Zo byšće tastu F12 wužiwał, wočińće n
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Pytać abo adresu zapodać
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Pytać abo adresu zapodać
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Wobhladowak so zdaloka wodźi
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -497,8 +466,6 @@ urlbar-go-button =
     .tooltiptext = K adresy w adresowym polu
 urlbar-page-action-button =
     .tooltiptext = Akcije strony
-urlbar-pocket-button =
-    .tooltiptext = Pola { -pocket-brand-name } składować
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -703,6 +670,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Symbolowu lajstu přiměrić…
     .accesskey = S
+toolbar-button-email-link =
+    .label = Wotkaz e-mejlować
+    .tooltiptext = Wotkaz k tutej stronje e-mejlować
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Stronu składować
+    .tooltiptext = Tutu stronu składować ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Dataju wočinić
+    .tooltiptext = Dataju wočinić ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Synchronizowane rajtarki
+    .tooltiptext = Rajtarki z druhich gratow pokazać
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Nowe priwatne wokno
+    .tooltiptext = Nowe priwatne wokno wočinić ({ $shortcut })
 
 ## EME notification panel
 
@@ -753,6 +741,55 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Tutu powěsć njepokazać, hdyž wuskakowace wokna so blokuja
     .accesskey = n
+edit-popup-settings =
+    .label = Nastajenja wuskakowacych woknow rjadować…
+    .accesskey = N
 picture-in-picture-hide-toggle =
     .label = Přepinanje wobraz-we-wobrazu schować
     .accesskey = P
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Nawigacija
+navbar-downloads =
+    .label = Sćehnjenja
+navbar-overflow =
+    .tooltiptext = Dalše nastroje…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Ćišćeć
+    .tooltiptext = Tutu stronu ćišćeć... ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Ćišćeć
+    .tooltiptext = Tutu stronu ćišćeć
+navbar-home =
+    .label = Startowa strona
+    .tooltiptext = Startowa strona { -brand-short-name }
+navbar-library =
+    .label = Biblioteka
+    .tooltiptext = Historiju, składowane zapołožki a wjace pokazać
+navbar-search =
+    .title = Pytać
+navbar-accessibility-indicator =
+    .tooltiptext = Funkcije bjezbarjernošće zmóžnjene
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Rajtarki wobhladowaka
+tabs-toolbar-new-tab =
+    .label = Nowy rajtark
+tabs-toolbar-list-all-tabs =
+    .label = Wšě rajtarki nalistować
+    .tooltiptext = Wšě rajtarki nalistować
+
+## Infobar shown at startup to suggest session-restore
+
+# <img data-l10n-name="icon"/> will be replaced by the application menu icon
+restore-session-startup-suggestion-message = <strong>Chceće předchadne rajtarki wočinić?</strong> Móžeće swoje předchadne posedźenje z nałoženskeho menija { -brand-short-name } <img data-l10n-name="icon"/> pod Historija wobnowić.
+restore-session-startup-suggestion-button = Pokazajće kak

@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Hozzáadás a címsávhoz
 page-action-manage-extension =
     .label = Kiegészítő kezelése…
-page-action-remove-from-urlbar =
-    .label = Eltávolítás a címsávból
 page-action-remove-extension =
     .label = Kiegészítő eltávolítása
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Ezúttal keressen a következővel:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Keresési beállítások módosítása
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Keresési beállítások módosítása
 search-one-offs-context-open-new-tab =
@@ -250,8 +242,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Szerkesztő megjelenítése mentéskor
     .accesskey = e
-bookmark-panel-done-button =
-    .label = Kész
 bookmark-panel-save-button =
     .label = Mentés
 # Width of the bookmark panel.
@@ -281,8 +271,6 @@ identity-passive-loaded = A weboldal egyes részei nem biztonságosak (például
 identity-active-loaded = Kikapcsolta a védelmet ezen az oldalon.
 identity-weak-encryption = Ez az oldal gyenge titkosítást használ.
 identity-insecure-login-forms = Az oldalon megadott bejelentkezési adatok nincsenek biztonságban.
-identity-permissions =
-    .value = Engedélyek
 identity-https-only-connection-upgraded = (frissítve HTTPS-re)
 identity-https-only-label = Csak HTTPS mód
 identity-https-only-dropdown-on =
@@ -298,7 +286,6 @@ identity-permissions-storage-access-header = Webhelyek közötti sütik
 identity-permissions-storage-access-hint = Ezek a felek használhatják a webhelyek közötti sütiket és a webhely adatait, amíg Ön ezen a webhelyen tartózkodik.
 identity-permissions-storage-access-learn-more = További tudnivalók
 identity-permissions-reload-hint = Lehet hogy újra kell töltenie az oldalt a változások érvényesítéséhez.
-identity-permissions-empty = Nem adott speciális engedélyeket ennek az oldalnak.
 identity-clear-site-data =
     .label = Sütik és oldaladatok eltávolítása…
 identity-connection-not-secure-security-view = Nem biztonságosan kapcsolódik ehhez az oldalhoz.
@@ -383,12 +370,6 @@ bookmarks-toolbar-empty-message = A gyors eléréshez a könyvjelzők ide helyez
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Megosztandó kamera:
-    .accesskey = k
-popup-select-microphone =
-    .value = Megosztandó mikrofon:
-    .accesskey = M
 popup-select-camera-device =
     .value = Kamera:
     .accesskey = K
@@ -402,14 +383,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Hangeszközök
 popup-all-windows-shared = A képernyő minden látható ablaka meg lesz osztva.
-popup-screen-sharing-not-now =
-    .label = Most nem
-    .accesskey = n
-popup-screen-sharing-never =
-    .label = Soha ne engedélyezze
-    .accesskey = S
-popup-silence-notifications-checkbox = A { -brand-short-name } értesítéseinek kikapcsolása megosztás közben
-popup-silence-notifications-checkbox-warning = A { -brand-short-name } nem fog értesítéseket megjeleníteni megosztás közben.
 popup-screen-sharing-block =
     .label = Tiltás
     .accesskey = T
@@ -433,14 +406,10 @@ enable-devtools-popup-description = Az F12 gyorsbillentyű használatához elős
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Keresés vagy cím
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Keresés vagy cím
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = A böngészőt távolról irányítják
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -489,8 +458,6 @@ urlbar-go-button =
     .tooltiptext = Ugrás a címmezőben levő címre
 urlbar-page-action-button =
     .tooltiptext = Oldalműveletek
-urlbar-pocket-button =
-    .tooltiptext = Mentés a { -pocket-brand-name }be
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -695,6 +662,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Eszköztár testreszabása…
     .accesskey = E
+toolbar-button-email-link =
+    .label = Hivatkozás küldése
+    .tooltiptext = Az oldalra mutató hivatkozás küldése e-mailben
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Oldal mentése
+    .tooltiptext = Oldal mentése ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Fájl megnyitása
+    .tooltiptext = Fájl megnyitása ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Szinkronizált lapok
+    .tooltiptext = Lapok megjelenítése más készülékekről
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Új privát ablak
+    .tooltiptext = Új privát ablak megnyitása ({ $shortcut })
 
 ## EME notification panel
 
@@ -745,6 +733,55 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Ne jelenjen meg ez az üzenet a felugró ablakok blokkolásakor.
     .accesskey = n
+edit-popup-settings =
+    .label = Felugró ablakok beállításainak kezelése…
+    .accesskey = k
 picture-in-picture-hide-toggle =
     .label = Kép a képben kapcsoló elrejtése
     .accesskey = r
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navigáció
+navbar-downloads =
+    .label = Letöltések
+navbar-overflow =
+    .tooltiptext = További eszközök…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Nyomtatás
+    .tooltiptext = Oldal kinyomtatása… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Nyomtatás
+    .tooltiptext = Oldal kinyomtatása
+navbar-home =
+    .label = Kezdőlap
+    .tooltiptext = { -brand-short-name } kezdőoldal
+navbar-library =
+    .label = Könyvtár
+    .tooltiptext = Előzmények, mentett könyvjelzők megtekintése
+navbar-search =
+    .title = Keresés
+navbar-accessibility-indicator =
+    .tooltiptext = Akadálymentesítési funkciók engedélyezve
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Böngészőlapok
+tabs-toolbar-new-tab =
+    .label = Új lap
+tabs-toolbar-list-all-tabs =
+    .label = Minden lap felsorolása
+    .tooltiptext = Minden lap felsorolása
+
+## Infobar shown at startup to suggest session-restore
+
+# <img data-l10n-name="icon"/> will be replaced by the application menu icon
+restore-session-startup-suggestion-message = <strong>Megnyitná az előző lapokat?</strong> Visszaállíthatja az előző munkamenetét a { -brand-short-name } alkalmazásmenüben <img data-l10n-name="icon"/>, az Előzmények alatt.
+restore-session-startup-suggestion-button = Mutassa meg hogyan

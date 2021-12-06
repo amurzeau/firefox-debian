@@ -6,8 +6,6 @@
 # Addressing widget
 
 #   $type (String) - the type of the addressing row
-remove-address-row-type = Remover o campo { $type }
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Remover o campo { $type }
 #   $type (String) - the type of the addressing row
@@ -64,6 +62,10 @@ toolbar-button-add-attachment =
 add-attachment-notification-reminder =
     .label = Adicionar anexo…
     .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+add-attachment-notification-reminder2 =
+    .label = Adicionar anexo…
+    .accesskey = A
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 menuitem-attach-files =
     .label = Arquivos…
     .accesskey = A
@@ -81,21 +83,14 @@ attachment-bucket-count =
            *[other] { $count } anexos
         }
     .accesskey = x
-#   $count (Number) - the number of attachments in the attachment bucket
-attachments-placeholder-tooltip =
-    .tooltiptext =
-        { $count ->
-            [1] { $count } anexo
-            [one] { $count } anexo
-           *[other] { $count } anexos
-        }
-#   { attachment-bucket-count.accesskey } - Do not localize this message.
-key-toggle-attachment-pane =
-    .key = { attachment-bucket-count.accesskey }
 expand-attachment-pane-tooltip =
     .tooltiptext = Exibir painel de anexos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
     .tooltiptext = Ocultar painel de anexos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-show =
+    .title = Exibir painel de anexos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-hide =
+    .title = Ocultar painel de anexos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 drop-file-label-attachment =
     { $count ->
         [one] Adicionar como anexo
@@ -103,8 +98,8 @@ drop-file-label-attachment =
     }
 drop-file-label-inline =
     { $count ->
-        [one] Anexar dentro da mensagem
-       *[other] Anexar dentro da mensagem
+        [one] Inserir na mensagem
+       *[other] Inserir na mensagem
     }
 
 # Reorder Attachment Panel
@@ -237,7 +232,7 @@ many-public-recipients-prompt-send = Enviar assim mesmo
 # $identity (string) - The name of the used identity, most likely an email address.
 compose-missing-identity-warning = Não foi encontrada uma identidade única correspondente ao endereço do remetente. A mensagem será enviada usando o campo De atual e as configurações da identidade { $identity }.
 encrypted-bcc-warning = Ao enviar uma mensagem criptografada, destinatários em Cco não ficam totalmente ocultos. Todos os destinatários podem conseguir identificá-los.
-encrypted-bcc-ignore-button = Entendido
+encrypted-bcc-ignore-button = Entendi
 
 ## Editing
 

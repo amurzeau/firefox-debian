@@ -58,6 +58,12 @@ account-provisioner-button = Wobstarajśo se e-mailowu adresu
 account-setup-password-toggle =
     .title = Gronidło pokazaś/schowaś
 
+account-setup-password-toggle-show =
+    .title = Gronidło w lutnem teksće pokazaś
+
+account-setup-password-toggle-hide =
+    .title = Gronidło schowaś
+
 account-setup-remember-password = Gronidło se spomniś
     .accesskey = m
 
@@ -310,6 +316,21 @@ exchange-dialog-question = { -brand-short-name } jo namakał informacije wó kon
 exchange-dialog-confirm-button = Pśizjawjenje
 
 exchange-dialog-cancel-button = Pśetergnuś
+
+## Dismiss account creation dialog
+
+exit-dialog-title = E-mailowe konto njejo skonfigurěrowane
+
+exit-dialog-description = Cośo napšawdu konfigurěrowański proces pśetergnuś? { -brand-short-name } dajo se hyšći bźez e-mailowego konta wužywaś, ale wjele funkcijow njebuźo k dispoziciji.
+
+account-setup-no-account-checkbox = { -brand-short-name } bźez e-mailowego konta wužywaś
+    .accesskey = b
+
+exit-dialog-cancel-button = Dalej konfigurěrowaś
+    .accesskey = D
+
+exit-dialog-confirm-button = Konfiguracija skóńcyś
+    .accesskey = K
 
 ## Alert dialogs
 

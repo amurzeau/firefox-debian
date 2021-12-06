@@ -10,7 +10,7 @@
 
 <!-- LOCALIZATION NOTE (clearTimeDuration.*): "Time range to clear"
      dropdown. -->
-<!ENTITY clearTimeDuration.label          "Χρονικό διάστημα εκκαθάρισης: ">
+<!ENTITY clearTimeDuration.label          "Χρονικό διάστημα απαλοιφής: ">
 <!ENTITY clearTimeDuration.accesskey      "Χ">
 <!ENTITY clearTimeDuration.lastHour       "Τελευταία ώρα">
 <!ENTITY clearTimeDuration.last2Hours     "Τελευταίες δύο ώρες">
@@ -52,7 +52,7 @@
 <!ENTITY itemCookies.label                "Cookie">
 <!ENTITY itemCookies.accesskey            "C">
 <!ENTITY itemCookiesS.accesskey           "k">
-<!ENTITY itemOfflineApps.label            "Δεδομένα ιστοσελίδων εκτός σύνδεσης">
+<!ENTITY itemOfflineApps.label            "Δεδομένα ιστοτόπων εκτός σύνδεσης">
 <!ENTITY itemOfflineApps.accesskey        "Δ">
 <!ENTITY itemOfflineAppsS.accesskey       "κ">
 <!ENTITY itemPasswords.label              "Αποθηκευμένοι κωδικοί πρόσβασης">
@@ -60,8 +60,6 @@
 <!ENTITY itemPasswordsS.accesskey         "θ">
 <!ENTITY itemSessions.label               "Επαληθευμένες συνεδρίες">
 <!ENTITY itemSessions.accesskey           "σ">
-
-<!ENTITY sanitizeButton.label            "Απαλοιφή ιδιωτικών δεδομένων">
 <!ENTITY itemSessionsS.accesskey          "δ">
 <!ENTITY itemSitePreferences.label        "Προτιμήσεις σελίδων">
 <!ENTITY itemSitePreferences.accesskey    "Π">

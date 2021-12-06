@@ -4,6 +4,7 @@
 
 import-ab-csv-window =
     .title = Импорт адресной книги из текстового файла
+import-ab-csv-dialog-title = Импорт адресной книги из текстового файла
 #   $recordNumber (Number) - The current record number of the preview data.
 import-ab-csv-preview-record-number = Предпросмотр импортируемых данных для записи { $recordNumber }
 import-ab-csv-dialog =

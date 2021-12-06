@@ -156,12 +156,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Добавяне към адресната лента
 page-action-manage-extension =
     .label = Управление на добавката…
-page-action-remove-from-urlbar =
-    .label = Премахване от адресната лента
 page-action-remove-extension =
     .label = Премахване на разширението
 
@@ -179,10 +175,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Този път търсете с:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Настройки на търсене
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Настройки на търсене
 search-one-offs-context-open-new-tab =
@@ -246,8 +238,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Показване на диалога при запазване
     .accesskey = п
-bookmark-panel-done-button =
-    .label = Готово
 bookmark-panel-save-button =
     .label = Запазване
 # Width of the bookmark panel.
@@ -277,8 +267,6 @@ identity-passive-loaded = Части от страницата, например
 identity-active-loaded = Изключихте защитата за тази страница.
 identity-weak-encryption = Тази странница използва слабо шифриране.
 identity-insecure-login-forms = Въведените на страницата данни за вход може да бъдат компрометирани.
-identity-permissions =
-    .value = Права
 identity-https-only-connection-upgraded = (превключено на HTTPS)
 identity-https-only-label = Режим „само HTTPS“
 identity-https-only-dropdown-on =
@@ -294,7 +282,6 @@ identity-permissions-storage-access-header = Бисквитки между са�
 identity-permissions-storage-access-hint = Тези страни могат да ползват бисквитки между сайтовете и данни от сайта, докато сте на него.
 identity-permissions-storage-access-learn-more = Научете повече
 identity-permissions-reload-hint = За да бъдат приложени промените може да се наложи да презаредите страницата.
-identity-permissions-empty = Не сте дали допълнителни права на страницата.
 identity-clear-site-data =
     .label = Изчистване на бисквитки и данни…
 identity-connection-not-secure-security-view = Връзката със сайта не е сигурна.
@@ -376,12 +363,6 @@ bookmarks-toolbar-empty-message = За бърз достъп, поставете
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Камера за споделяне:
-    .accesskey = К
-popup-select-microphone =
-    .value = Микрофон за споделяне:
-    .accesskey = М
 popup-select-camera-device =
     .value = Камера
     .accesskey = К
@@ -395,14 +376,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Високоговорители
 popup-all-windows-shared = Всички видими прозорци на вашия екран ще бъдат споделени.
-popup-screen-sharing-not-now =
-    .label = Не сега
-    .accesskey = а
-popup-screen-sharing-never =
-    .label = Никога
-    .accesskey = Н
-popup-silence-notifications-checkbox = Спиране на известията от { -brand-short-name }, докато споделяте
-popup-silence-notifications-checkbox-warning = { -brand-short-name } няма да показва известия, докато споделяте.
 popup-screen-sharing-block =
     .label = Забраняване
     .accesskey = З
@@ -426,14 +399,10 @@ enable-devtools-popup-description = За да използвате клавиш�
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Търсете или въведете адрес
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Търсете или въведете адрес
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Четецът е под дистанционно управление
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -482,8 +451,6 @@ urlbar-go-button =
     .tooltiptext = Зареждане на адреса в полето
 urlbar-page-action-button =
     .tooltiptext = Действия със страницата
-urlbar-pocket-button =
-    .tooltiptext = Запазване в { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -674,6 +641,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Приспособяване…
     .accesskey = П
+toolbar-button-email-link =
+    .label = Препратка по имейл
+    .tooltiptext = Изпращане на препратка към страница по ел. поща
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Запазване на страницата
+    .tooltiptext = Запазване на страницата ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Отваряне на файл
+    .tooltiptext = Отваряне на файл ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Синхронизирани раздели
+    .tooltiptext = Показване на раздели от други устройства
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Поверителен прозорец
+    .tooltiptext = Отваряне на поверителен прозорец ({ $shortcut })
 
 ## EME notification panel
 
@@ -724,3 +712,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Скриване на бутона за превключване на картина в картината
     .accesskey = с
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Навигация
+navbar-downloads =
+    .label = Изтегляния
+navbar-overflow =
+    .tooltiptext = Още инструменти…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Отпечатване
+    .tooltiptext = Отпечатване на страница… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Отпечатване
+    .tooltiptext = Отпечатване на страницата
+navbar-home =
+    .label = Начало
+    .tooltiptext = Начална страница на { -brand-short-name }
+navbar-library =
+    .label = Библиотека
+    .tooltiptext = Преглед на история, запазени отметки и други
+navbar-search =
+    .title = Търсене
+navbar-accessibility-indicator =
+    .tooltiptext = Разрешени функции за достъпност
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Раздели на четеца
+tabs-toolbar-new-tab =
+    .label = Нов раздел
+tabs-toolbar-list-all-tabs =
+    .label = Показване на всички раздели
+    .tooltiptext = Показване на всички раздели

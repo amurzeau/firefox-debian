@@ -4,20 +4,10 @@
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = Prisijungimai ir slaptažodžiai
-
-# "Google Play" and "App Store" are both branding and should not be translated
-
-login-app-promo-title = Turėkite savo slaptažodžius visur
-login-app-promo-subtitle = Naudokite nemokamą programą „{ -lockwise-brand-name }“
-login-app-promo-android =
-    .alt = Parsisiųskite iš „Google Play“
-login-app-promo-apple =
-    .alt = Parsisiųskite iš „App Store“
 login-filter =
     .placeholder = Ieškoti prisijungimų
 create-login-button = Sukurti naują prisijungimą
 fxaccounts-sign-in-text = Turėkite savo slaptažodžius ir kituose įrenginiuose
-fxaccounts-sign-in-button = Prisijungti prie „{ -sync-brand-short-name }“
 fxaccounts-sign-in-sync-button = Prisijungti sinchronizavimui
 fxaccounts-avatar-button =
     .title = Tvarkyti paskyrą
@@ -37,8 +27,6 @@ menu-menuitem-preferences =
        *[other] Nuostatos
     }
 about-logins-menu-menuitem-help = Žinynas
-menu-menuitem-android-app = „{ -lockwise-brand-short-name }“, skirta „Android“
-menu-menuitem-iphone-app = „{ -lockwise-brand-short-name }“, skirta „iPhone“ ir „iPad“
 
 ## Login List
 
@@ -53,6 +41,8 @@ login-list-count =
 login-list-sort-label-text = Rikiuoti pagal:
 login-list-name-option = Pavadinimas (A-Z)
 login-list-name-reverse-option = Pavadinimas (Z-A)
+login-list-username-option = Naudotojo vardas (A-Ž)
+login-list-username-reverse-option = Naudotojo vardas (Ž-A)
 about-logins-login-list-alerts-option = Įspėjimai
 login-list-last-changed-option = Atnaujinimo laikas
 login-list-last-used-option = Paskiausias naudojimo laikas
@@ -67,16 +57,18 @@ about-logins-list-item-breach-icon =
     .title = Pažeista svetainė
 about-logins-list-item-vulnerable-password-icon =
     .title = Pažeidžiami slaptažodžiai
+about-logins-list-section-breach = Pažeistos svetainės
+about-logins-list-section-vulnerable = Pažeidžiami slaptažodžiai
+about-logins-list-section-nothing = Įspėjimų nėra
+about-logins-list-section-today = Šiandien
+about-logins-list-section-yesterday = Vakar
+about-logins-list-section-week = Pastarosios 7 dienos
 
 ## Introduction screen
 
-login-intro-heading = Ieškote įrašytų prisijungimų? Naudokite „{ -sync-brand-short-name }“.
 about-logins-login-intro-heading-logged-out2 = Ieškote įrašytų prisijungimų? Įjunkite sinchronizavimą arba importuokite juos.
 about-logins-login-intro-heading-logged-in = Nerasta sinchronizuotų prisijungimų.
 login-intro-description = Jeigu esate įrašę prisijungimus į „{ -brand-product-name }“ kitame įrenginyje, juos galite turėti čia:
-login-intro-instruction-fxa = Susikurkite arba prisijunkite prie savo „{ -fxaccount-brand-name }“ paskyros tame įrenginyje, kur yra prisijungimai.
-login-intro-instruction-fxa-settings = Įsitikinkite, kad „{ -sync-brand-short-name }“ nuostatose pažymėjote langelį „Prisijungimai“.
-about-logins-intro-instruction-help = Aplankę <a data-l10n-name="help-link">„{ -lockwise-brand-short-name }“ žinyną</a>, rasite daugiau informacijos
 login-intro-instructions-fxa = Susikurkite arba prisijunkite prie savo „{ -fxaccount-brand-name }“ paskyros tame įrenginyje, kur yra prisijungimai.
 login-intro-instructions-fxa-settings = Eikite į „Nuostatos“ > „Sinchronizavimas“ > „Įjungti sinchronizavimą…“ Pažymėkite „Prisijungimai ir slaptažodžiai“ pasirinkimą.
 login-intro-instructions-fxa-help = Aplankę <a data-l10n-name="help-link">„{ -lockwise-brand-short-name }“ žinyną</a>, rasite daugiau informacijos.
@@ -132,10 +124,6 @@ about-logins-copy-password-os-auth-dialog-message-win = Norėdami nukopijuoti sa
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = nukopijuoti įrašytą slaptažodį
-
-## Master Password notification
-
-master-password-notification-message = Įveskite pagrindinį slaptažodį, norėdami peržiūrėti įrašytus prisijungimus ir slaptažodžius
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message-win = Norėdami eksportuoti savo prisijungimus, įveskite savo „Windows“ prisijungimo duomenis. Tai padeda apsaugoti jūsų paskyras.
 # This message can be seen when attempting to export a password in about:logins
@@ -148,24 +136,6 @@ about-logins-primary-password-notification-message = Įveskite pagrindinį slapt
 master-password-reload-button =
     .label = Prisijungti
     .accesskey = P
-
-## Password Sync notification
-
-enable-password-sync-notification-message =
-    { PLATFORM() ->
-        [windows] Norite turėti savo prisijungimus visur, kur naudojate { -brand-product-name }? Eikite į „{ -sync-brand-short-name }“ nuostatas ir pažymėkite langelį „Prisijungimai“.
-       *[other] Norite turėti savo prisijungimus visur, kur naudojate { -brand-product-name }? Eikite į „{ -sync-brand-short-name }“ nuostatas ir pažymėkite langelį „Prisijungimai“.
-    }
-enable-password-sync-preferences-button =
-    .label =
-        { PLATFORM() ->
-            [windows] Aplankyti „{ -sync-brand-short-name }“ nuostatas
-           *[other] Aplankyti „{ -sync-brand-short-name }“ nuostatas
-        }
-    .accesskey = A
-about-logins-enable-password-sync-dont-ask-again-button =
-    .label = Daugiau neklausti
-    .accesskey = D
 
 ## Dialogs
 

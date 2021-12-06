@@ -41,6 +41,8 @@ account-provisioner-button = Получить новый адрес электр
     .accesskey = ч
 account-setup-password-toggle =
     .title = Показать/скрыть пароль
+account-setup-password-toggle-hide =
+    .title = Скрыть пароль
 account-setup-remember-password = Запомнить пароль
     .accesskey = м
 account-setup-exchange-label = Ваш логин
@@ -209,6 +211,9 @@ insecure-dialog-confirm-button = Подтвердить
 exchange-dialog-question = { -brand-short-name } обнаружил информацию по настройке вашей учётной записи на { $domain }. Вы хотите продолжить и отправить свои учётные данные?
 exchange-dialog-confirm-button = Войти
 exchange-dialog-cancel-button = Отмена
+
+## Dismiss account creation dialog
+
 
 ## Alert dialogs
 

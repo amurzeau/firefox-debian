@@ -12,15 +12,15 @@
 
 policy-3rdparty = Establezca políticas de manera que las WebExtensions puedan acceder mediante chrome.storage.managed.
 policy-AllowedDomainsForApps = Definir dominios autorizados para acceder a Google Workspace.
-policy-AppAutoUpdate = Habilitar o deshabilitar las actualizaciones automáticas de las extensiones.
+policy-AppAutoUpdate = Habilitar o deshabilitar la actualización automática de la aplicación.
 policy-AppUpdateURL = Establecer la dirección URL de actualización personalizada de la aplicación.
 policy-Authentication = Configurar la autenticación integrada para los sitios web que la permiten.
 policy-AutoLaunchProtocolsFromOrigins = Defina una lista de protocolos externos que se puedan utilizar desde los orígenes enumerados sin avisarle al usuario.
 policy-BackgroundAppUpdate2 = Habilitar o deshabilitar la actualización en segundo plano.
-policy-BlockAboutAddons = Bloquear el acceso al Administrador de complementos (about: addons).
+policy-BlockAboutAddons = Bloquear acceso al administrador de complementos (about:addons).
 policy-BlockAboutConfig = Bloquear el acceso a la página about:config.
 policy-BlockAboutProfiles = Bloquear acceso a la página about:profiles.
-policy-BlockAboutSupport = Bloquear acceso a about:support.
+policy-BlockAboutSupport = Bloquear acceso a la página about:support.
 policy-Bookmarks = Crear marcadores en la Barra de herramientas de marcadores,  en el Menú de marcadores o en una carpeta específica dentro de los mismos.
 policy-CaptivePortal = Habilitar o deshabilitar el soporte de portal cautivo.
 policy-CertificatesDescription = Agregar certificados o usar certificados incorporados.
@@ -38,7 +38,6 @@ policy-DisableFirefoxScreenshots = Deshabilitar la función de Firefox Screensho
 policy-DisableFirefoxStudies = Impedir que { -brand-short-name } ejecute estudios.
 policy-DisableForgetButton = Impedir el acceso al botón Olvidar.
 policy-DisableFormHistory = No recordar la búsqueda y el historial de formularios.
-policy-DisableMasterPasswordCreation = Si se usa "true", no se puede crear una contraseña maestra.
 policy-DisablePrimaryPasswordCreation = Si es cierto, no se puede crear una contraseña maestra.
 policy-DisablePasswordReveal = No permitir que se vean las contraseñas en los inicios de sesión guardados.
 policy-DisablePocket = Deshabilitar la función de guardar páginas web a Pocket.
@@ -58,7 +57,7 @@ policy-DownloadDirectory = Establecer y bloquear la carpeta de descargas.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Habilitar o deshabilitar el bloqueo de contenido y bloquearlo opcionalmente.
 # “lock” means that the user won’t be able to change this setting
-policy-EncryptedMediaExtensions = Activar o desactivar extensiones de medios cifrados y, opcionalmente, bloquearlos.
+policy-EncryptedMediaExtensions = Habilitar o deshabilitar extensiones de medios cifrados y, opcionalmente, bloquearlos.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -68,7 +67,7 @@ policy-ExtensionUpdate = Habilitar o deshabilitar las actualizaciones automátic
 policy-FirefoxHome = Configurar inicio de Firefox.
 policy-FlashPlugin = Permitir o denegar el uso del plugin Flash.
 policy-Handlers = Configurar controladores de aplicaciones predeterminados.
-policy-HardwareAcceleration = Si es falso, desactivar la aceleración de hardware.
+policy-HardwareAcceleration = Si es falso, deshabilitar aceleración por hardware.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Establecer y bloquear opcionalmente la página de inicio.
 policy-InstallAddonsPermission = Permitir que ciertos sitios web instalen complementos.
@@ -76,14 +75,13 @@ policy-LegacyProfiles = Deshabilitar la función que impone un perfil separado p
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
 
-policy-LegacySameSiteCookieBehaviorEnabled = Habilite la configuración predeterminada de comportamiento de cookies de SameSite heredado.
-policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Vuelva al comportamiento heredado de SameSite para cookies en sitios específicos.
+policy-LegacySameSiteCookieBehaviorEnabled = Habilitar la configuración predeterminada de comportamiento de cookies de SameSite heredado.
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Volver al comportamiento heredado de SameSite para cookies en sitios específicos.
 
 ##
 
 policy-LocalFileLinks = Permitir que sitios web específicos se enlacen con archivos locales.
 policy-ManagedBookmarks = Configura una lista de marcadores administrada por un administrador que el usuario no puede cambiar.
-policy-MasterPassword = Pedir o evitar el uso de una contraseña maestra.
 policy-ManualAppUpdateOnly = Permitir solo actualizaciones manuales y no notificar al usuario sobre las mismas.
 policy-PrimaryPassword = Requerir o evitar el uso de una contraseña maestra.
 policy-NetworkPrediction = Habilitar o deshabilitar la predicción de la red (búsqueda previa de DNS).
@@ -108,7 +106,7 @@ policy-SearchBar = Configurar la ubicación predeterminada de la barra de búsqu
 policy-SearchEngines = Configurar los ajustes del buscador. Esta política solo está disponible en la versión Extended Support Release (ESR).
 policy-SearchSuggestEnabled = Habilitar o deshabilitar las sugerencias de búsqueda.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
-policy-SecurityDevices = Instale los módulos PKCS #11.
+policy-SecurityDevices = Instalar módulos PKCS #11.
 policy-ShowHomeButton = Mostrar el botón de inicio en la barra de herramientas.
 policy-SSLVersionMax = Establecer la versión máxima de SSL.
 policy-SSLVersionMin = Establecer la versión mínima de SSL.

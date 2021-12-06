@@ -6,6 +6,10 @@ dock-options-window-dialog =
     .title = Опції піктограми програми
     .style = width: 35em;
 
+dock-options-show-badge =
+    .label = Показати піктограму значка
+    .accesskey = о
+
 bounce-system-dock-icon =
     .label = Анімація піктограми при отриманні нового повідомлення
     .accesskey = і

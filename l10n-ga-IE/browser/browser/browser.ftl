@@ -138,10 +138,6 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = An uair seo, cuardaigh le:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Socruithe Cuardaigh
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Athraigh na socruithe cuardaigh
 search-one-offs-context-open-new-tab =
@@ -165,8 +161,6 @@ search-one-offs-add-engine-menu =
 
 ## Bookmark Panel
 
-bookmark-panel-done-button =
-    .label = Déanta
 
 ## Identity Panel
 
@@ -178,10 +172,7 @@ identity-passive-loaded = Tá codanna den leathanach seo neamhshlán (léithéid
 identity-active-loaded = Tá cosaint díchumasaithe agat ar an leathanach seo.
 identity-weak-encryption = Úsáideann an leathanach seo criptiú lag.
 identity-insecure-login-forms = D'fhéadfadh sonraí logáil isteach bheith i mbaol ar an leathanach seo.
-identity-permissions =
-    .value = Ceadanna
 identity-permissions-reload-hint = Ní mór duit an leathanach a athlódáil chun na hathruithe a chur i bhfeidhm.
-identity-permissions-empty = Níor thug tú aon chead speisialta don suíomh seo.
 identity-clear-site-data =
     .label = Glan na Fianáin agus Sonraí Suímh...
 identity-remove-cert-exception =
@@ -228,12 +219,6 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Ceamara le comhroinnt:
-    .accesskey = C
-popup-select-microphone =
-    .value = Micreafón le comhroinnt:
-    .accesskey = M
 popup-all-windows-shared = Comhroinnfear gach fuinneog infheicthe ar do scáileáin.
 
 ## WebRTC window or screen share tab switch warning
@@ -244,12 +229,8 @@ popup-all-windows-shared = Comhroinnfear gach fuinneog infheicthe ar do scáile�
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Cuardaigh nó cuir seoladh isteach
 urlbar-placeholder =
     .placeholder = Cuardaigh nó cuir seoladh isteach
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Tá an brabhsálaí faoi chianrialú
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -263,8 +244,6 @@ urlbar-go-button =
     .tooltiptext = Téigh go dtí an seoladh atá sa Bharra Suímh
 urlbar-page-action-button =
     .tooltiptext = Gníomhartha leathanaigh
-urlbar-pocket-button =
-    .tooltiptext = Sábháil i b{ -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -361,6 +340,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Saincheap an Barra Uirlisí…
     .accesskey = c
+toolbar-button-email-link =
+    .label = Seol an Nasc trí Ríomhphost
+    .tooltiptext = Seol nasc leis an leathanach seo trí ríomhphost
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Sábháil an Leathanach
+    .tooltiptext = Sábháil an leathanach seo ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Oscail Comhad
+    .tooltiptext = Oscail comhad ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Cluaisíní Sioncronaithe
+    .tooltiptext = Taispeáin cluaisíní ó ghléasanna eile
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Fuinneog Nua Phríobháideach
+    .tooltiptext = Oscail Fuinneog Nua Phríobháideach ({ $shortcut })
 
 ## EME notification panel
 
@@ -398,3 +398,38 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Folaigh an Scoránú Pictiúr-i-bPictiúr
     .accesskey = F
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Nascleanúint
+navbar-downloads =
+    .label = Íoslódálacha
+navbar-overflow =
+    .tooltiptext = Tuilleadh uirlisí…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Priontáil
+    .tooltiptext = Priontáil an leathanach seo… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Priontáil
+    .tooltiptext = Priontáil an leathanach seo
+navbar-home =
+    .label = Baile
+    .tooltiptext = Leathanach Baile { -brand-short-name }
+navbar-search =
+    .title = Cuardaigh
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Cluaisíní brabhsálaí
+tabs-toolbar-new-tab =
+    .label = Cluaisín Nua
+tabs-toolbar-list-all-tabs =
+    .label = Liostaigh gach cluaisín
+    .tooltiptext = Liostaigh gach cluaisín

@@ -6,6 +6,10 @@ dock-options-window-dialog =
     .title = 应用图标选项
     .style = width: 35em;
 
+dock-options-show-badge =
+    .label = 显示角标
+    .accesskey = b
+
 bounce-system-dock-icon =
     .label = 有新消息时在应用图标上显示动画
     .accesskey = i

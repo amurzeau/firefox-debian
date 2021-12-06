@@ -11,27 +11,31 @@ appmenuitem-update-banner3 =
     .label-update-manual = Actualización disponible — bajar ahora
     .label-update-unsupported = No se pudo actualizar — sistema incompatible
     .label-update-restart = Actualización disponible — reiniciar ahora
-
 appmenuitem-protection-dashboard-title = Panel de protecciones
-appmenuitem-customize-mode =
-    .label = Personalizar…
-
-## Zoom Controls
-
 appmenuitem-new-tab =
     .label = Nueva pestaña
 appmenuitem-new-window =
     .label = Nueva ventana
 appmenuitem-new-private-window =
     .label = Nueva ventana privada
+appmenuitem-history =
+    .label = Historial
+appmenuitem-downloads =
+    .label = Descargas
 appmenuitem-passwords =
     .label = Contraseñas
 appmenuitem-addons-and-themes =
     .label = Complementos y temas
+appmenuitem-print =
+    .label = Imprimir…
 appmenuitem-find-in-page =
     .label = Buscar en la página…
+appmenuitem-zoom =
+    .value = Acercar
 appmenuitem-more-tools =
     .label = Más herramientas
+appmenuitem-help =
+    .label = Ayuda
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -44,7 +48,6 @@ appmenu-menu-button-closed2 =
 appmenu-menu-button-opened2 =
     .tooltiptext = Cerrar menú de la aplicación
     .label = { -brand-short-name }
-
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -56,21 +59,34 @@ appmenuitem-zoom-enlarge =
     .label = Acercar
 appmenuitem-zoom-reduce =
     .label = Alejar
-
 appmenuitem-fullscreen =
     .label = Pantalla completa
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
-fxa-toolbar-sync-now =
-    .label = Sincronizar ahora
-
 appmenu-remote-tabs-sign-into-sync =
     .label = Conectarse para sincronizar…
 appmenu-remote-tabs-turn-on-sync =
     .label = Activar la sincronización…
-
+# This is shown after the tabs list if we can display more tabs by clicking on the button
+appmenu-remote-tabs-showmore =
+    .label = Mostrar más pestañas
+    .tooltiptext = Mostrar más pestañas de este dispositivo
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = No hay pestañas abiertas
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = Activa la sincronización de pestañas para ver una lista de las pestañas de tus otros dispositivos.
+appmenu-remote-tabs-opensettings =
+    .label = Ajustes
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = ¿Te gustaría ver las pestañas de tus otros dispositivos aquí?
+appmenu-remote-tabs-connectdevice =
+    .label = Conectar otro dispositivo
+appmenu-remote-tabs-welcome = Ver una lista de las pestañas de tus otros dispositivos.
+appmenu-remote-tabs-unverified = Tu cuenta necesita ser verificada.
 appmenuitem-fxa-toolbar-sync-now2 = Sincronizar ahora
+appmenuitem-fxa-sign-in = Conectarse a { -brand-product-name }
 appmenuitem-fxa-manage-account = Administrar cuenta
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
@@ -83,14 +99,12 @@ appmenu-fxa-signed-in-label = Conectarse
 appmenu-fxa-setup-sync =
     .label = Activar la sincronización…
 appmenu-fxa-show-more-tabs = Mostrar más pestañas
-
 appmenuitem-save-page =
     .label = Guardar página como…
 
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Qué hay de nuevo
-
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =
@@ -101,54 +115,80 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Perfilador
+    .tooltiptext = Grabar un perfil de rendimiento
+profiler-popup-button-recording =
+    .label = Perfilador
+    .tooltiptext = El perfilador está registrando un perfil
+profiler-popup-button-capturing =
+    .label = Perfilador
+    .tooltiptext = El perfilador está capturando un perfil
 profiler-popup-title =
     .value = { -profiler-brand-name }
-
 profiler-popup-reveal-description-button =
     .aria-label = Revelar más información
-
 profiler-popup-description-title =
     .value = Grabar, analizar, compartir
-
 profiler-popup-description = Colabora en problemas de rendimiento publicando perfiles para compartir con tu equipo.
-
 profiler-popup-learn-more = Aprender más
-
+profiler-popup-learn-more-button =
+    .label = Aprender más
 profiler-popup-settings =
     .value = Ajustes
-
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Editar ajustes…
-
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Editar ajustes…
 profiler-popup-disabled = El perfilador está actualmente deshabilitado, probablemente debido a una ventana de navegación privada que se encuentra abierta.
-
 profiler-popup-recording-screen = Grabando…
-
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
 profiler-popup-presets-custom =
     .label = Personalizado
-
 profiler-popup-start-recording-button =
     .label = Guardar grabación
-
 profiler-popup-discard-button =
     .label = Descartar
-
 profiler-popup-capture-button =
     .label = Capturar
-
 profiler-popup-start-shortcut =
     { PLATFORM() ->
         [macos] ⌃⇧1
        *[other] Ctrl+Shift+1
     }
-
 profiler-popup-capture-shortcut =
     { PLATFORM() ->
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+profiler-popup-presets-web-developer-description = Ajustes predeterminados recomendados para la depuración de la mayoría de las aplicaciones web, con poca sobrecarga.
+profiler-popup-presets-web-developer-label =
+    .label = Desarrollador web
+profiler-popup-presets-firefox-platform-description = Ajustes predeterminados para la depuración interna de la plataforma Firefox.
+profiler-popup-presets-firefox-platform-label =
+    .label = Plataforma Firefox
+profiler-popup-presets-firefox-front-end-description = Ajustes predeterminados para la depuración interna del front-end de Firefox.
+profiler-popup-presets-firefox-front-end-label =
+    .label = Front-end de Firefox
+profiler-popup-presets-firefox-graphics-description = Ajustes predeterminados para la investigación de rendimiento gráfico de Firefox.
+profiler-popup-presets-firefox-graphics-label =
+    .label = Gráficos de Firefox
+profiler-popup-presets-media-description = Ajustes predeterminados para el diagnóstico de problemas de audio y video.
+profiler-popup-presets-media-label =
+    .label = Medios
+profiler-popup-presets-custom-label =
+    .label = Personalizado
 
 ## History panel
 
@@ -156,7 +196,6 @@ appmenu-manage-history =
     .label = Gestionar historial
 appmenu-reopen-all-tabs = Reabrir todas las pestañas
 appmenu-reopen-all-windows = Reabrir todas las ventanas
-
 appmenu-restore-session =
     .label = Restaurar sesión anterior
 appmenu-clear-history =
@@ -212,7 +251,6 @@ appmenu-customizetoolbar =
     .label = Personalizar barra de herramientas…
 appmenu-taskmanager =
     .label = Administrador de tareas
-
 appmenu-developer-tools-subheader = Herramientas del navegador
 appmenu-developer-tools-extensions =
     .label = Extensiones para desarrolladores

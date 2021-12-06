@@ -11,17 +11,6 @@ navbar-tooltip-instruction =
 
 ## Back
 
-main-context-menu-back =
-    .tooltiptext = Siirry sivu taaksepäin
-    .aria-label = Edellinen
-    .accesskey = E
-
-navbar-tooltip-back =
-    .value = { main-context-menu-back.tooltiptext }
-
-toolbar-button-back =
-    .label = { main-context-menu-back.aria-label }
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the Go Back command.
 main-context-menu-back-2 =
@@ -41,17 +30,6 @@ toolbar-button-back-2 =
     .label = { main-context-menu-back-2.aria-label }
 
 ## Forward
-
-main-context-menu-forward =
-    .tooltiptext = Siirry sivu eteenpäin
-    .aria-label = Seuraava
-    .accesskey = e
-
-navbar-tooltip-forward =
-    .value = { main-context-menu-forward.tooltiptext }
-
-toolbar-button-forward =
-    .label = { main-context-menu-forward.aria-label }
 
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the Go Forward command.
@@ -116,9 +94,6 @@ main-context-menu-page-save =
     .label = Tallenna sivu nimellä…
     .accesskey = s
 
-toolbar-button-page-save =
-    .label = { main-context-menu-page-save.label }
-
 ## Simple menu items
 
 main-context-menu-bookmark-add =
@@ -179,10 +154,6 @@ main-context-menu-open-link-new-private-window =
     .label = Avaa uuteen yksityiseen ikkunaan
     .accesskey = y
 
-main-context-menu-bookmark-this-link =
-    .label = Lisää kohde kirjanmerkkeihin
-    .accesskey = A
-
 main-context-menu-bookmark-link =
     .label = Lisää linkki kirjanmerkkeihin
     .accesskey = L
@@ -207,10 +178,6 @@ main-context-menu-save-link-to-pocket =
 main-context-menu-copy-email =
     .label = Kopioi sähköpostiosoite
     .accesskey = s
-
-main-context-menu-copy-link =
-    .label = Kopioi linkin osoite
-    .accesskey = K
 
 main-context-menu-copy-link-simple =
     .label = Kopioi linkki
@@ -239,32 +206,6 @@ main-context-menu-media-mute =
 main-context-menu-media-unmute =
     .label = Palauta ääni
     .accesskey = ä
-
-main-context-menu-media-play-speed =
-    .label = Toistonopeus
-    .accesskey = u
-
-main-context-menu-media-play-speed-slow =
-    .label = Hidas (0,5×)
-    .accesskey = H
-
-main-context-menu-media-play-speed-normal =
-    .label = Normaali
-    .accesskey = N
-
-main-context-menu-media-play-speed-fast =
-    .label = Nopea (1,25×)
-    .accesskey = o
-
-main-context-menu-media-play-speed-faster =
-    .label = Nopeampi (1,5×)
-    .accesskey = p
-
-# "Ludicrous" is a reference to the movie "Space Balls" and is meant
-# to say that this speed is very fast.
-main-context-menu-media-play-speed-fastest =
-    .label = Älytön (2×)
-    .accesskey = Ä
 
 main-context-menu-media-play-speed-2 =
     .label = Nopeus
@@ -312,12 +253,6 @@ main-context-menu-media-video-leave-fullscreen =
 
 # This is used when right-clicking on a video in the
 # content area when the Picture-in-Picture feature is enabled.
-main-context-menu-media-pip =
-    .label = Kuva kuvassa
-    .accesskey = K
-
-# This is used when right-clicking on a video in the
-# content area when the Picture-in-Picture feature is enabled.
 main-context-menu-media-watch-pip =
     .label = Katso Kuva kuvassa -tilassa
     .accesskey = K
@@ -325,14 +260,6 @@ main-context-menu-media-watch-pip =
 main-context-menu-image-reload =
     .label = Lataa kuva
     .accesskey = L
-
-main-context-menu-image-view =
-    .label = Näytä kuva
-    .accesskey = N
-
-main-context-menu-video-view =
-    .label = Näytä video
-    .accesskey = N
 
 main-context-menu-image-view-new-tab =
     .label = Avaa kuva uuteen välilehteen
@@ -345,18 +272,6 @@ main-context-menu-video-view-new-tab =
 main-context-menu-image-copy =
     .label = Kopioi kuva
     .accesskey = u
-
-main-context-menu-image-copy-location =
-    .label = Kopioi kuvan osoite
-    .accesskey = p
-
-main-context-menu-video-copy-location =
-    .label = Kopioi videon osoite
-    .accesskey = p
-
-main-context-menu-audio-copy-location =
-    .label = Kopioi äänitteen sijainti
-    .accesskey = p
 
 main-context-menu-image-copy-link =
     .label = Kopioi kuvan linkki
@@ -378,10 +293,6 @@ main-context-menu-image-email =
     .label = Lähetä kuva…
     .accesskey = L
 
-main-context-menu-image-set-as-background =
-    .label = Aseta työpöydän taustakuvaksi…
-    .accesskey = A
-
 main-context-menu-image-set-image-as-background =
     .label = Aseta työpöydän taustakuvaksi…
     .accesskey = t
@@ -401,10 +312,6 @@ main-context-menu-video-save-as =
 main-context-menu-audio-save-as =
     .label = Tallenna äänite nimellä…
     .accesskey = e
-
-main-context-menu-video-image-save-as =
-    .label = Tallenna ruutukaappaus nimellä…
-    .accesskey = T
 
 main-context-menu-video-take-snapshot =
     .label = Ota kuva…
@@ -433,14 +340,6 @@ main-context-menu-save-to-pocket =
 main-context-menu-send-to-device =
     .label = Lähetä sivu laitteeseen
     .accesskey = L
-
-main-context-menu-view-background-image =
-    .label = Näytä taustakuva
-    .accesskey = a
-
-main-context-menu-generate-new-password =
-    .label = Käytä luotua salasanaa…
-    .accesskey = K
 
 ## The access keys for "Use Saved Login" and "Use Saved Password"
 ## should be the same if possible; the two context menu items
@@ -532,10 +431,6 @@ main-context-menu-view-page-source =
     .label = Näytä sivun lähdekoodi
     .accesskey = k
 
-main-context-menu-view-page-info =
-    .label = Näytä sivun tiedot
-    .accesskey = o
-
 main-context-menu-bidi-switch-text =
     .label = Vaihda tekstin suuntaa
     .accesskey = a
@@ -543,10 +438,6 @@ main-context-menu-bidi-switch-text =
 main-context-menu-bidi-switch-page =
     .label = Vaihda sivun suuntaa
     .accesskey = V
-
-main-context-menu-inspect-element =
-    .label = Inspect Element
-    .accesskey = Q
 
 main-context-menu-inspect =
     .label = Tarkastele
@@ -558,3 +449,9 @@ main-context-menu-inspect-a11y-properties =
 main-context-menu-eme-learn-more =
     .label = Lue lisää DRM-suojauksesta…
     .accesskey = D
+
+# Variables
+#   $containerName (String): The name of the current container
+main-context-menu-open-link-in-container-tab =
+    .label = Avaa linkki uudessa ”{ $containerName }”-välilehdessä
+    .accesskey = v

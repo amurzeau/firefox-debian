@@ -3,12 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-## View Menu
-
-menu-view-charset =
-    .label = Amgodiad Testun
-    .accesskey = A
-
 ## Tools Menu
 
 # Since v89 we dropped the platforms distinction between Options or Preferences
@@ -16,7 +10,6 @@ menu-view-charset =
 menu-tools-preferences =
     .label = Dewisiadau
     .accesskey = D
-
 menu-addons-and-themes =
     .label = Ychwanegion a Themâu
     .accesskey = Y
@@ -26,11 +19,9 @@ menu-addons-and-themes =
 menu-help-enter-troubleshoot-mode =
     .label = Y Modd Datrys Problemau…
     .accesskey = M
-
 menu-help-exit-troubleshoot-mode =
     .label = Diffodd y Modd Dartrys Problemau
     .accesskey = D
-
 menu-help-more-troubleshooting-info =
     .label = Rhagor o Wybodaeth Datrys Problemau
     .accesskey = R
@@ -61,15 +52,18 @@ menu-view-repair-text-encoding =
 mail-uidensity-label =
     .label = Dwysedd
     .accesskey = D
-
 mail-uidensity-compact =
     .label = Cryno
     .accesskey = C
-
 mail-uidensity-normal =
     .label = Arferol
     .accesskey = A
-
 mail-uidensity-touch =
     .label = Cyffwrdd
     .accesskey = y
+
+## File
+
+file-new-newsgroup-account =
+    .label = Cyfrif Grŵp Newyddion…
+    .accesskey = N

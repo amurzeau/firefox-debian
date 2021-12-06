@@ -143,12 +143,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = સરનામાં બારમાં ઉમેરો
 page-action-manage-extension =
     .label = એક્સ્ટેંશનનો વહીવટ કરો…
-page-action-remove-from-urlbar =
-    .label = સરનામાં બારમાંથી દૂર કરો
 
 ## Auto-hide Context Menu
 
@@ -164,10 +160,6 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = આ સમયે, આની સાથે શોધો:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = શોધ ના સેટિંગ્સ બદલો
 search-one-offs-change-settings-compact-button =
     .tooltiptext = શોધ ના સેટિંગ્સ બદલો
 search-one-offs-context-open-new-tab =
@@ -206,8 +198,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = સંપાદક દર્શાવે છે કે જ્યારે બચત
     .accesskey = S
-bookmark-panel-done-button =
-    .label = પૂર્ણ થયું
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -225,7 +215,6 @@ identity-active-loaded = તમે આ પૃષ્ઠ પર રક્ષણ �
 identity-weak-encryption = આ પાનું નબળા એન્ક્રિપ્શન વાપરે છે.
 identity-insecure-login-forms = આ પાનાં પર દાખલ લૉગિન્સ ચેડા થઈ શકે છે.
 identity-permissions-reload-hint = ફેરફારો લાગુ કરવા માટે તમને પૃષ્ઠને ફરીથી લોડ કરવાની જરૂર પડી શકે છે.
-identity-permissions-empty = તમે આ સાઇટને કોઈ વિશેષ મંજૂરીઓ આપ્યા નથી.
 identity-clear-site-data =
     .label = કૂકીઝ અને સાઈટ ડેટા સાફ કરો…
 identity-remove-cert-exception =
@@ -272,12 +261,6 @@ browser-window-close-button =
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = વહેંચવા માટે કૅમેરા:
-    .accesskey = C
-popup-select-microphone =
-    .value = વહેંચવા માટે માઇક્રોફોન:
-    .accesskey = M
 popup-all-windows-shared = તમારી સ્ક્રીન પર બધી દૃશ્યમાન વિન્ડો વહેંચાયેલ હશે.
 
 ## WebRTC window or screen share tab switch warning
@@ -288,12 +271,8 @@ popup-all-windows-shared = તમારી સ્ક્રીન પર બધ�
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = સરનામું શોધો અથવા દાખલ કરો
 urlbar-placeholder =
     .placeholder = સરનામું શોધો અથવા દાખલ કરો
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = બ્રાઉઝર રીમોટ કંટ્રોલ હેઠળ છે
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -307,8 +286,6 @@ urlbar-go-button =
     .tooltiptext = સ્થાન પટ્ટીમાં સરનામા પર જાવ
 urlbar-page-action-button =
     .tooltiptext = પૃષ્ઠ ક્રિયાઓ
-urlbar-pocket-button =
-    .tooltiptext = { -pocket-brand-name } પર સાચવો
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -416,6 +393,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = પોતાની રીતની સાધનપટ્ટી…
     .accesskey = C
+toolbar-button-email-link =
+    .label = ઇમેઇલ કડી
+    .tooltiptext = આ પાનામાં કડીનો ઇમેઇલ કરો
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = પાનાંને સંગ્રહો
+    .tooltiptext = આ પાનાં ({ $shortcut }) ને સંગ્રહો
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = ફાઇલ ખોલો
+    .tooltiptext = ફાઇલ ({ $shortcut }) ને ખોલો
+toolbar-button-synced-tabs =
+    .label = સમન્વિત કરેલા ટૅબ્સ
+    .tooltiptext = અન્ય ઉપકરણોમાંથી ટેબ્સ બતાવો
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = નવી ખાનગી વિન્ડો
+    .tooltiptext = નવી ખાનગી બ્રાઉઝીંગ વિન્ડો ({ $shortcut }) ને ખોલો
 
 ## EME notification panel
 
@@ -450,3 +448,38 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = જ્યારે પોપઅપ અટકાવાયેલ હોય ત્યારે આ સંદેશો બતાવશો નહિં
     .accesskey = D
+
+# Navigator Toolbox
+
+navbar-downloads =
+    .label = ડાઉનલોડ
+navbar-overflow =
+    .tooltiptext = વધારે સાધનો…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = છાપો
+    .tooltiptext = આ પાનાંને છાપો… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = છાપો
+    .tooltiptext = આ પાનું છાપો
+navbar-home =
+    .label = મુખ્ય
+    .tooltiptext = { -brand-short-name } મુખ પાનું
+navbar-library =
+    .label = લાઈબ્રેરી
+    .tooltiptext = ઇતિહાસ, સાચવેલા બુકમાર્ક્સ, અને વધુ જુઓ
+navbar-search =
+    .title = શોધો
+navbar-accessibility-indicator =
+    .tooltiptext = ઍક્સેસિબિલિટી સુવિધાઓ સક્ષમ
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = બ્રાઉઝર ટૅબ્સ
+tabs-toolbar-new-tab =
+    .label = નવી ટૅબ
+tabs-toolbar-list-all-tabs =
+    .label = બધા ટૅબ્સની યાદી કરો
+    .tooltiptext = બધા ટૅબ્સની યાદી કરો

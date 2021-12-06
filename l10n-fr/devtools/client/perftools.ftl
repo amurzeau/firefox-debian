@@ -110,3 +110,25 @@ perftools-onboarding-message = <b>Nouveau</b> : le { -profiler-brand-name } est
 perftools-onboarding-reenable-old-panel = (Pour une durée limitée, vous pouvez accéder au panneau de performances d’origine via <a>{ options-context-advanced-settings }</a>)
 perftools-onboarding-close-button =
     .aria-label = Fermer le message d’intégration
+
+## Profiler presets
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# The same labels and descriptions are also defined in appmenu.ftl.
+
+perftools-presets-web-developer-label = Développement web
+perftools-presets-web-developer-description = Réglage recommandé pour le débogage de la plupart des applications web, avec une surcharge faible.
+perftools-presets-firefox-platform-label = Plateforme Firefox
+perftools-presets-firefox-platform-description = Réglage recommandé pour le débogage interne de la plateforme Firefox.
+perftools-presets-firefox-front-end-label = Interface Firefox
+perftools-presets-firefox-front-end-description = Réglage recommandé pour le débogage interne de l’interface Firefox.
+perftools-presets-firefox-graphics-label = Performances graphiques de Firefox
+perftools-presets-firefox-graphics-description = Réglage recommandé pour l’étude des performances graphiques de Firefox.
+perftools-presets-media-label = Multimédia
+perftools-presets-media-description = Réglage recommandé pour diagnostiquer les problèmes audio et vidéo.
+perftools-presets-custom-label = Personnalisé
+
+##
+

@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = بغلی بار بند کریں
+
+sidebar-close-button =
+    .tooltiptext = بغلی بار بند کریں

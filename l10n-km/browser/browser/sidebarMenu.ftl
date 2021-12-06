@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = បិទ​របារ​ចំហៀង
+
+sidebar-close-button =
+    .tooltiptext = បិទ​របារ​ចំហៀង

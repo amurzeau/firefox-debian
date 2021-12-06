@@ -6,6 +6,10 @@ dock-options-window-dialog =
     .title = Alternativ för programikon
     .style = width: 35em;
 
+dock-options-show-badge =
+    .label = Visa märkesikon
+    .accesskey = m
+
 bounce-system-dock-icon =
     .label = Animera programikonen när nytt meddelande kommer
     .accesskey = i

@@ -41,9 +41,6 @@ bookmark-selected-tabs =
 bookmark-tab =
     .label = Azonzi feuggio a-i segnalibbri
     .accesskey = A
-reopen-in-container =
-    .label = Arvi torna in Contegnitô
-    .accesskey = e
 move-to-start =
     .label = Mescia a l'iniçio
     .accesskey = M
@@ -54,19 +51,13 @@ move-to-new-window =
     .label = Mescia inte 'n neuvo barcon
     .accesskey = M
 
-close-tab =
-    .label = Særa feuggio
-    .accesskey = S
-close-tabs =
-    .label = Særa feuggi
-    .accesskey = S
-move-tabs =
-    .label = Mescia feuggi
-    .accesskey = c
-move-tab =
-    .label = Mescia feuggio
-    .accesskey = c
-
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
 
+tab-context-send-tabs-to-device =
+    .label =
+        { $tabCount ->
+            [one] Manda feuggio a-o dispoxitivo
+           *[other] Mando { $tabCount } feuggi a-o dispoxitivo
+        }
+    .accesskey = n

@@ -156,12 +156,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Idagdag sa Address Bar
 page-action-manage-extension =
     .label = Manage Extension…
-page-action-remove-from-urlbar =
-    .label = Tanggalin sa Address Bar
 page-action-remove-extension =
     .label = Tanggalin ang Extension
 
@@ -179,10 +175,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Ngayon naman, maghanap gamit ang:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Baguhin ang mga Search Setting
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Baguhin ang mga search setting
 search-one-offs-context-open-new-tab =
@@ -246,8 +238,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Ipakita ang editor kapag nagse-save
     .accesskey = S
-bookmark-panel-done-button =
-    .label = Tapos na
 bookmark-panel-save-button =
     .label = i-Save
 # Width of the bookmark panel.
@@ -277,8 +267,6 @@ identity-passive-loaded = Ang mga bahagi ng pahinang ito ay hindi ligtas (tulad 
 identity-active-loaded = Hindi mo pinagana ang proteksyon sa pahinang ito.
 identity-weak-encryption = Ang pahinang ito ay gumagamit ng mahina na pag-encrypt.
 identity-insecure-login-forms = Ang mga pag-login na ipinasok sa pahinang ito ay maaaring makompromiso.
-identity-permissions =
-    .value = Mga Pahintulot
 identity-https-only-connection-upgraded = (inupgrade na sa HTTPS)
 identity-https-only-label = HTTPS-Only Mode
 identity-https-only-dropdown-on =
@@ -294,7 +282,6 @@ identity-permissions-storage-access-header = Mga cross-site cookie
 identity-permissions-storage-access-hint = Ang mga partidong ito ay maaaring gumamit ng mga cross-site cookie at site data habang ikaw ay nasa site na ito.
 identity-permissions-storage-access-learn-more = Alamin
 identity-permissions-reload-hint = Maaaring kailangan mong i-reload ang pahina para mag-aplay ang mga pagbabago.
-identity-permissions-empty = Hindi mo ipinagkaloob ang site na ito anumang espesyal na pahintulot.
 identity-clear-site-data =
     .label = Burahin ang mga Cookie at Site Data…
 identity-connection-not-secure-security-view = Ikaw ay hindi ligtas na nakakonekta sa site na ito.
@@ -376,12 +363,6 @@ bookmarks-toolbar-empty-message = Para sa mabilis na pag-access, ilagay ang iyon
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Camera na ibabahagi:
-    .accesskey = C
-popup-select-microphone =
-    .value = Mga mikropono na pwedeng ibahagi:
-    .accesskey = M
 popup-select-camera-device =
     .value = Camera:
     .accesskey = C
@@ -395,14 +376,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Mga Speaker
 popup-all-windows-shared = Lahat ng nakikitang window sa iyong screen ay ibabahagi.
-popup-screen-sharing-not-now =
-    .label = Hindi Ngayon
-    .accesskey = H
-popup-screen-sharing-never =
-    .label = Huwag Payagan
-    .accesskey = H
-popup-silence-notifications-checkbox = I-disable ang mga notification mula sa { -brand-short-name } habang nagbabahagi
-popup-silence-notifications-checkbox-warning = Hindi magpapakita ng mga notification ang { -brand-short-name } habang ikaw ay nagbabahagi.
 popup-screen-sharing-block =
     .label = Harangin
     .accesskey = H
@@ -426,14 +399,10 @@ enable-devtools-popup-description = Para gamitin ang F1 2 shortcut, unang buksan
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Hanapin o ilagay ang address
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Hanapin o ilagay ang address
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Browser ay kasalukuyang nire-remote kontrol
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -482,8 +451,6 @@ urlbar-go-button =
     .tooltiptext = Pumunta sa lokasyon na nasa Location Bar
 urlbar-page-action-button =
     .tooltiptext = Page actions
-urlbar-pocket-button =
-    .tooltiptext = i-Save sa { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -670,6 +637,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = I-customize ang Toolbar...
     .accesskey = C
+toolbar-button-email-link =
+    .label = Email Link
+    .tooltiptext = Mag-email ng link sa page na ito
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = i-Save ang Pahina
+    .tooltiptext = i-Save ang pahina na ito ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Magbukas ng file
+    .tooltiptext = Magbukas ng file ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Mga Naka-sync na Tab
+    .tooltiptext = Ipakita ang mga tabs mula sa ibang devices
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Bagong Private Window
+    .tooltiptext = Magbukas ng panibagong Private Browsing window ({ $shortcut })
 
 ## EME notification panel
 
@@ -720,3 +708,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Itago ang Toggle para sa Picture-in-Picture
     .accesskey = H
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navigation
+navbar-downloads =
+    .label = Mga Download
+navbar-overflow =
+    .tooltiptext = Marami pang mga kagamitan…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = I-print
+    .tooltiptext = I-print ang pahinang ito ... ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = I-print
+    .tooltiptext = I-limbag ang pahina na ito
+navbar-home =
+    .label = Home
+    .tooltiptext = { -brand-short-name } Home Page
+navbar-library =
+    .label = Library
+    .tooltiptext = Tingnan ang kasaysayan, naka-save na mga bookmark, at iba pa
+navbar-search =
+    .title = Hanapin
+navbar-accessibility-indicator =
+    .tooltiptext = Naka-enable ang mga Accessibility Feature
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Mga tab ng browser
+tabs-toolbar-new-tab =
+    .label = Bagong Tab
+tabs-toolbar-list-all-tabs =
+    .label = Ilista ang lahat ng mga tabs
+    .tooltiptext = Ilista ang lahat ng mga tabs

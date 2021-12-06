@@ -9,11 +9,13 @@ select-all-tabs =
     .label = Velja alla flipa
     .accesskey = S
 duplicate-tab =
-    .label = Afrita flipa
-    .accesskey = A
+    .label = Tvöfalda flipa
+    .accesskey = T
 duplicate-tabs =
     .label = Tvöfalda flipa
     .accesskey = D
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Loka flipum til hægri
     .accesskey = i
@@ -41,9 +43,6 @@ bookmark-selected-tabs =
 bookmark-tab =
     .label = Bókamerkja flipa
     .accesskey = B
-reopen-in-container =
-    .label = Opna aftur í innihaldsflipa
-    .accesskey = e
 move-to-start =
     .label = Færa á byrjun
     .accesskey = S
@@ -54,19 +53,13 @@ move-to-new-window =
     .label = Færa yfir í nýjan glugga
     .accesskey = g
 
-close-tab =
-    .label = Loka flipa
-    .accesskey = L
-close-tabs =
-    .label = Loka flipum
-    .accesskey = S
-move-tabs =
-    .label = Færa flipa
-    .accesskey = v
-move-tab =
-    .label = Færa flipa
-    .accesskey = v
-
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
 
+tab-context-send-tabs-to-device =
+    .label =
+        { $tabCount ->
+            [one] Senda flipa í tæki
+           *[other] Senda { $tabCount } flipa í tæki
+        }
+    .accesskey = n

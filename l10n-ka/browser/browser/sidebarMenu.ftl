@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = გვერდითი ზოლის დახურვა
+
+sidebar-close-button =
+    .tooltiptext = გვერდითი ზოლის დახურვა

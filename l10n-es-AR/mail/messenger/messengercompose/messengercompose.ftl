@@ -6,8 +6,6 @@
 # Addressing widget
 
 #   $type (String) - the type of the addressing row
-remove-address-row-type = Elimine el campo { $type }
-#   $type (String) - the type of the addressing row
 remove-address-row-button =
     .title = Eliminar el campo { $type }
 #   $type (String) - the type of the addressing row
@@ -64,6 +62,10 @@ toolbar-button-add-attachment =
 add-attachment-notification-reminder =
     .label = Agregar adjunto…
     .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+add-attachment-notification-reminder2 =
+    .label = Agregar adjunto…
+    .accesskey = A
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 menuitem-attach-files =
     .label = Archivo(s)…
     .accesskey = A
@@ -81,21 +83,14 @@ attachment-bucket-count =
            *[other] { $count } archivos adjuntos
         }
     .accesskey = m
-#   $count (Number) - the number of attachments in the attachment bucket
-attachments-placeholder-tooltip =
-    .tooltiptext =
-        { $count ->
-            [1] { $count } archivo adjunto
-            [one] { $count } archivos adjuntos
-           *[other] { $count } archivos adjuntos
-        }
-#   { attachment-bucket-count.accesskey } - Do not localize this message.
-key-toggle-attachment-pane =
-    .key = { attachment-bucket-count.accesskey }
 expand-attachment-pane-tooltip =
     .tooltiptext = Mostrar el panel de adjuntos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
     .tooltiptext = Ocultar el panel de adjuntos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key } )
+attachment-area-show =
+    .title = Mostrar el panel de adjuntos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-hide =
+    .title = Ocultar el panel de adjuntos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key } )
 drop-file-label-attachment =
     { $count ->
         [one] Agregar como adjunto
@@ -136,7 +131,7 @@ to-compose-address-row-label =
 to-compose-show-address-row-menuitem =
     .label = Campo { to-compose-address-row-label.value }
     .accesskey = T
-    .acceltext = { ctrl-cmd-shift-pretty-prefix } { $key }
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
 to-compose-show-address-row-label =
     .value = { to-compose-address-row-label.value }
     .tooltiptext = Mostrar { to-compose-address-row-label.value } Campo ({ to-compose-show-address-row-menuitem.acceltext })
@@ -146,7 +141,7 @@ cc-compose-address-row-label =
 cc-compose-show-address-row-menuitem =
     .label = Campo { cc-compose-address-row-label.value }
     .accesskey = C
-    .acceltext = { ctrl-cmd-shift-pretty-prefix } { $key }
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
 cc-compose-show-address-row-label =
     .value = { cc-compose-address-row-label.value }
     .tooltiptext = Mostrar { cc-compose-address-row-label.value } Campo { cc-compose-show-address-row-menuitem.acceltext }
@@ -156,7 +151,7 @@ bcc-compose-address-row-label =
 bcc-compose-show-address-row-menuitem =
     .label = Campo { bcc-compose-address-row-label.value }
     .accesskey = B
-    .acceltext = { ctrl-cmd-shift-pretty-prefix } { $key }
+    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
 bcc-compose-show-address-row-label =
     .value = { bcc-compose-address-row-label.value }
     .tooltiptext = Mostrar { bcc-compose-address-row-label.value } Campo { bcc-compose-show-address-row-menuitem.acceltext }

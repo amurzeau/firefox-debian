@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Pridať do panela s adresou
 page-action-manage-extension =
     .label = Správa rozšírenia…
-page-action-remove-from-urlbar =
-    .label = Odstrániť z panela s adresou
 page-action-remove-extension =
     .label = Odstrániť rozšírenie
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Vyhľadať pomocou:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Zmeniť nastavenia vyhľadávania
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Zmeniť nastavenia vyhľadávania
 search-one-offs-context-open-new-tab =
@@ -251,8 +243,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Pri ukladaní zobrazovať editor
     .accesskey = u
-bookmark-panel-done-button =
-    .label = Hotovo
 bookmark-panel-save-button =
     .label = Uložiť
 # Width of the bookmark panel.
@@ -282,8 +272,6 @@ identity-passive-loaded = Časti tejto stránky nie sú zabezpečené (napr. obr
 identity-active-loaded = Na tejto stránke ste vypli Ochranu pred sledovaním.
 identity-weak-encryption = Táto stránka používa slabé šifrovanie.
 identity-insecure-login-forms = Prihlasovacie údaje zadané na tejto stránke by mohli byť ohrozené.
-identity-permissions =
-    .value = Povolenia
 identity-https-only-connection-upgraded = (zmenené na HTTPS)
 identity-https-only-label = Režim "Len HTTPS"
 identity-https-only-dropdown-on =
@@ -299,7 +287,6 @@ identity-permissions-storage-access-header = Cookies tretích strán
 identity-permissions-storage-access-hint = Tieto weby môžu používať cookies tretích strán a počas návštevy tejto stránky pristupovať k údajom z nej.
 identity-permissions-storage-access-learn-more = Ďalšie informácie
 identity-permissions-reload-hint = Pre vykonanie zmien budete možno musieť stránku obnoviť.
-identity-permissions-empty = Tejto stránke ste neurčili žiadne špeciálne povolenia.
 identity-clear-site-data =
     .label = Vymazať cookies a údaje stránok…
 identity-connection-not-secure-security-view = Pripojenie k tejto stránke nie je zabezpečené.
@@ -387,12 +374,6 @@ bookmarks-toolbar-empty-message = Ak chcete mať rýchly prístup k záložkám,
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Zdieľať kameru:
-    .accesskey = k
-popup-select-microphone =
-    .value = Zdieľať mikrofón:
-    .accesskey = m
 popup-select-camera-device =
     .value = Kamera:
     .accesskey = K
@@ -406,14 +387,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Zvukový výstup
 popup-all-windows-shared = Všetky okná viditeľné na vašej obrazovke budú zdieľané.
-popup-screen-sharing-not-now =
-    .label = Teraz nie
-    .accesskey = n
-popup-screen-sharing-never =
-    .label = Nikdy nepovoliť
-    .accesskey = i
-popup-silence-notifications-checkbox = Nezobrazovať upozornenia z { -brand-short-name(case: "gen") } počas zdieľania
-popup-silence-notifications-checkbox-warning = { -brand-short-name } nebude počas zdieľania zobrazovať upozornenia.
 popup-screen-sharing-block =
     .label = Zakázať
     .accesskey = Z
@@ -437,14 +410,10 @@ enable-devtools-popup-description = Ak chcete použiť skratku F12, najprv otvor
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Zadajte adresu alebo výraz vyhľadávania
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Zadajte adresu alebo výraz vyhľadávania
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Prehliadač je ovládaný na diaľku
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -493,8 +462,6 @@ urlbar-go-button =
     .tooltiptext = Prejsť na adresu zadanú v paneli s adresou
 urlbar-page-action-button =
     .tooltiptext = Akcie stránky
-urlbar-pocket-button =
-    .tooltiptext = Uložiť do { -pocket-brand-name }u
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -665,8 +632,8 @@ library-recent-activity-title =
 ## Pocket toolbar button
 
 save-to-pocket-button =
-    .label = Uložiť do { -pocket-brand-name }u
-    .tooltiptext = Uložiť do { -pocket-brand-name }u
+    .label = Uložiť do { -pocket-brand-name(case: "gen") }
+    .tooltiptext = Uložiť do { -pocket-brand-name(case: "gen") }
 
 ## Repair text encoding toolbar button
 
@@ -699,6 +666,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Upraviť panel nástrojov…
     .accesskey = U
+toolbar-button-email-link =
+    .label = Odoslať odkaz
+    .tooltiptext = Umožní odoslať odkaz na túto stránku
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Uložiť stránku
+    .tooltiptext = Umožní uložiť túto stránku ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Otvoriť súbor
+    .tooltiptext = Otvorí súbor ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Synchronizované karty
+    .tooltiptext = Zobraziť karty z iných zariadení
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Nové súkromné okno
+    .tooltiptext = Otvorí nové súkromné okno ({ $shortcut })
 
 ## EME notification panel
 
@@ -749,6 +737,55 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Nezobrazovať túto správu v prípade blokovania vyskakovacích okien
     .accesskey = N
+edit-popup-settings =
+    .label = Spravovať nastavenia pre vyskakovacie okná…
+    .accesskey = S
 picture-in-picture-hide-toggle =
     .label = Skryť prepínanie obrazu v obraze
     .accesskey = S
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Navigácia
+navbar-downloads =
+    .label = Správca sťahovania súborov
+navbar-overflow =
+    .tooltiptext = Ďalšie nástroje…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Tlačiť
+    .tooltiptext = Umožní vytlačiť túto stránku… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Tlačiť
+    .tooltiptext = Umožní vytlačiť túto stránku
+navbar-home =
+    .label = Domov
+    .tooltiptext = Úvodná stránka prehliadača { -brand-short-name }
+navbar-library =
+    .label = Knižnica
+    .tooltiptext = Zobrazí históriu, uložené záložky a ďalšie
+navbar-search =
+    .title = Vyhľadávanie
+navbar-accessibility-indicator =
+    .tooltiptext = Funkcie pre zjednodušenie ovládania povolené
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Karty prehliadača
+tabs-toolbar-new-tab =
+    .label = Nová karta
+tabs-toolbar-list-all-tabs =
+    .label = Zoznam všetkých kariet
+    .tooltiptext = Zoznam všetkých kariet
+
+## Infobar shown at startup to suggest session-restore
+
+# <img data-l10n-name="icon"/> will be replaced by the application menu icon
+restore-session-startup-suggestion-message = <strong>Chcete otvoriť predchádzajúce karty?</strong> Predchádzajúcu reláciu môžete obnoviť z ponuky { -brand-short-name(case: "gen") } <img data-l10n-name="icon"/>, v časti História.
+restore-session-startup-suggestion-button = Ako na to

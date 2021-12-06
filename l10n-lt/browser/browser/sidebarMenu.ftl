@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Užverti parankinę
+
+sidebar-close-button =
+    .tooltiptext = Užverti parankinę

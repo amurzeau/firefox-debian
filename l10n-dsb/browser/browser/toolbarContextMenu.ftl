@@ -20,17 +20,6 @@ toolbar-context-menu-bookmark-selected-tabs =
 toolbar-context-menu-select-all-tabs =
     .label = Wšykne rejtariki wubraś
     .accesskey = u
-toolbar-context-menu-undo-close-tabs =
-    .label =
-        { $tabCount ->
-            [1] Zacynjony rejtarik wócyniś
-            [one] Zacynjony rejtarik wócyniś
-            [two] Zacynjonej rejtarika wócyniś
-            [few] Zacynjone rejtariki wócyniś
-           *[other] Zacynjone rejtariki wócyniś
-        }
-    .accesskey = Z
-
 toolbar-context-menu-reopen-closed-tabs =
     .label =
         { $tabCount ->
@@ -41,30 +30,24 @@ toolbar-context-menu-reopen-closed-tabs =
            *[other] Zacynjone rejtariki znowego wócyniś
         }
     .accesskey = Z
-
 toolbar-context-menu-manage-extension =
     .label = Rozšyrjenje zastojaś
     .accesskey = R
 toolbar-context-menu-remove-extension =
     .label = Rozšyrjenje wótwónoźeś
     .accesskey = t
-
 # This label is used in the extensions toolbar buttons context menus,
 # a user can use this command to submit to Mozilla an abuse report
 # related to that extension. "Report" is a verb.
 toolbar-context-menu-report-extension =
     .label = Rozšyrjenje k wěsći daś
     .accesskey = o
-
 # Can appear on the same context menu as menubarCmd ("Menu Bar") and
 # personalbarCmd ("Bookmarks Toolbar"), so they should have different
 # access keys.
 toolbar-context-menu-pin-to-overflow-menu =
     .label = K woběžkowemu menijoju pśipěś
     .accesskey = P
-toolbar-context-menu-auto-hide-downloads-button =
-    .label = W symbolowej rědce awtomatiski schowaś
-    .accesskey = s
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = Tłocašk schowaś, gaž prozne
     .accesskey = T
@@ -77,7 +60,6 @@ toolbar-context-menu-view-customize-toolbar =
 toolbar-context-menu-view-customize-toolbar-2 =
     .label = Symbolowu rědku pśiměriś…
     .accesskey = S
-
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Pśecej pokazaś
     .accesskey = P
@@ -87,7 +69,9 @@ toolbar-context-menu-bookmarks-toolbar-never-show-2 =
 toolbar-context-menu-bookmarks-toolbar-on-new-tab-2 =
     .label = Jano w nowem rejtariku pokazaś
     .accesskey = J
-
 toolbar-context-menu-bookmarks-show-other-bookmarks =
     .label = Druge cytańske znamjenja pokazaś
     .accesskey = D
+toolbar-context-menu-menu-bar-cmd =
+    .toolbarname = Menijowa rědka
+    .accesskey = M

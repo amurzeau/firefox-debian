@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Lor lanyut me nget
+
+sidebar-close-button =
+    .tooltiptext = Lor gintic ma inget

@@ -11,27 +11,31 @@ appmenuitem-update-banner3 =
     .label-update-manual = Hai un anovamientu — baxar agora
     .label-update-unsupported = Nun ye posible anovar — el sistema nun ye compatible
     .label-update-restart = Hai un anovamientu — reaniciar agora
-
 appmenuitem-protection-dashboard-title = Panel de proteiciones
-appmenuitem-customize-mode =
-    .label = Personalizar…
-
-## Zoom Controls
-
 appmenuitem-new-tab =
     .label = Llingüeta nueva
 appmenuitem-new-window =
     .label = Ventana nueva
 appmenuitem-new-private-window =
     .label = Ventana privada nueva
+appmenuitem-history =
+    .label = Historial
+appmenuitem-downloads =
+    .label = Descargues
 appmenuitem-passwords =
     .label = Contraseñes
 appmenuitem-addons-and-themes =
     .label = Complementos y estilos
+appmenuitem-print =
+    .label = Imprentar…
 appmenuitem-find-in-page =
     .label = Atopar na páxina…
+appmenuitem-zoom =
+    .value = Zoom
 appmenuitem-more-tools =
     .label = Más ferramientes
+appmenuitem-help =
+    .label = Ayuda
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -44,7 +48,6 @@ appmenu-menu-button-closed2 =
 appmenu-menu-button-opened2 =
     .tooltiptext = Zarrar el menú de l'aplicación
     .label = { -brand-short-name }
-
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -56,16 +59,23 @@ appmenuitem-zoom-enlarge =
     .label = Averar
 appmenuitem-zoom-reduce =
     .label = Alloñar
-
 appmenuitem-fullscreen =
     .label = Pantalla completa
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
-fxa-toolbar-sync-now =
-    .label = Sincronizar agora
-
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = Nun hai llingüetes abiertes
+appmenu-remote-tabs-opensettings =
+    .label = Axustes
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = ¿Quies ver equí les llingüetes d'otros preseos de to?
+appmenu-remote-tabs-connectdevice =
+    .label = Conectar otru preséu
+appmenu-remote-tabs-welcome = Ve una llista de les llingüetes d'otros preseos de to.
 appmenuitem-fxa-toolbar-sync-now2 = Sincronizar agora
+appmenuitem-fxa-sign-in = Aniciar sesión en { -brand-product-name }
 appmenuitem-fxa-manage-account = Xestionar la cuenta
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
@@ -78,14 +88,12 @@ appmenu-fxa-signed-in-label = Aniciar sesión
 appmenu-fxa-setup-sync =
     .label = Activar la sincronización…
 appmenu-fxa-show-more-tabs = Amosar más llingüetes
-
 appmenuitem-save-page =
     .label = Guardar la páxina como…
 
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Novedaes
-
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =
@@ -96,56 +104,59 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Analizador del rindimientu
+    .tooltiptext = Rexistra un perfil de rindimientu
 profiler-popup-title =
     .value = { -profiler-brand-name }
-
 profiler-popup-reveal-description-button =
     .aria-label = Desvelar más información
-
 profiler-popup-description-title =
     .value = Rexistra, analiza y comparti
-
 profiler-popup-description = Collabora na igua de problemes de rindimientu espublizando perfiles pa compartilos col to equipu.
-
 profiler-popup-learn-more = Lleer más
-
+profiler-popup-learn-more-button =
+    .label = Lleer más
 profiler-popup-settings =
     .value = Axustes
-
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Editar los axustes…
-
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Editar los axustes…
 profiler-popup-disabled =
     Anguaño l'analizador de rindimientu ta desactiváu, probablemente seya porque
     hai una llingüeta privada abierta.
-
 profiler-popup-recording-screen = Rexistrando…
-
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
 profiler-popup-presets-custom =
     .label = Preaxuste personalizáu
-
 profiler-popup-start-recording-button =
     .label = Aniciar un rexistru
-
 profiler-popup-discard-button =
     .label = Escartar
-
 profiler-popup-capture-button =
     .label = Capturar
-
 profiler-popup-start-shortcut =
     { PLATFORM() ->
         [macos] ⌃⇧1
        *[other] Ctrl+Mayús+1
     }
-
 profiler-popup-capture-shortcut =
     { PLATFORM() ->
         [macos] ⌃⇧2
        *[other] Ctrl+Mayús+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
 
 ## History panel
 
@@ -153,7 +164,6 @@ appmenu-manage-history =
     .label = Xestionar l'historial
 appmenu-reopen-all-tabs = Volver abrir toles llingüetes
 appmenu-reopen-all-windows = Volver abrir toles ventanes
-
 appmenu-restore-session =
     .label = Restaurar la sesión anterior
 appmenu-clear-history =
@@ -209,7 +219,6 @@ appmenu-customizetoolbar =
     .label = Personalizar la barra de ferramientes…
 appmenu-taskmanager =
     .label = Xestor de xeres
-
 appmenu-developer-tools-subheader = Ferramientes del restolador
 appmenu-developer-tools-extensions =
     .label = Estensiones pa desendolcadores

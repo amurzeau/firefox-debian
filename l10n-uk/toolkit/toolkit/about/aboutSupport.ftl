@@ -10,13 +10,8 @@ page-subtitle =
 crashes-title = Звіти про збої
 crashes-id = ID звіту
 crashes-send-date = Надіслано
-crashes-all-reports = Всі звіти про збої
+crashes-all-reports = Усі звіти про збої
 crashes-no-config = Ця програма не була налаштована показувати звіти про збої.
-extensions-title = Розширення
-extensions-name = Назва
-extensions-enabled = Увімкнено
-extensions-version = Версія
-extensions-id = ID
 support-addons-title = Додатки
 support-addons-name = Назва
 support-addons-type = Тип
@@ -133,8 +128,6 @@ sandbox-sys-call-tid = TID
 sandbox-sys-call-proc-type = Тип процесу
 sandbox-sys-call-number = Системний виклик
 sandbox-sys-call-args = Аргументи
-safe-mode-title = Спробувати безпечний режим
-restart-in-safe-mode-label = Перезапустити з вимкненими додатками…
 troubleshoot-mode-title = Визначення проблем
 restart-in-troubleshoot-mode-label = Режим усунення проблем…
 clear-startup-cache-title = Спробуйте очистити кеш запуску
@@ -192,36 +185,6 @@ remote-debugging-url = URL
 
 ##
 
-support-third-party-modules-title = Сторонні модулі
-support-third-party-modules-module = Файл модуля
-support-third-party-modules-version = Версія файлу
-support-third-party-modules-vendor = Інформація про постачальника
-support-third-party-modules-occurrence = Повторення
-support-third-party-modules-process = Тип процесу та ID
-support-third-party-modules-thread = Гілка
-support-third-party-modules-base = Адреса бази зображень
-support-third-party-modules-uptime = Час роботи процесу (мс)
-support-third-party-modules-duration = Тривалість завантаження (мс)
-support-third-party-modules-status = Стан
-support-third-party-modules-status-loaded = Завантажено
-support-third-party-modules-status-blocked = Заблоковано
-support-third-party-modules-status-redirected = Перенаправлено
-support-third-party-modules-empty = Не завантажено сторонніх модулів.
-support-third-party-modules-no-value = (Немає значення)
-support-third-party-modules-button-open =
-    .title = Відкрити розташування файлу…
-support-third-party-modules-expand =
-    .title = Показати подробиці
-support-third-party-modules-collapse =
-    .title = Згорнути подробиці
-support-third-party-modules-unsigned-icon =
-    .title = Цей модуль не підписаний
-support-third-party-modules-folder-icon =
-    .title = Відкрити розташування файлу…
-support-third-party-modules-down-icon =
-    .title = Показати подробиці
-support-third-party-modules-up-icon =
-    .title = Згорнути подробиці
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
@@ -258,9 +221,9 @@ crashes-time-days =
 # $reports (integer) - Number of pending reports
 pending-reports =
     { $reports ->
-        [one] Всі звіти про збої (за вказаний проміжок часу, включно з { $reports }, що очікує надсилання)
-        [few] Всі звіти про збої (за вказаний проміжок часу, включно з { $reports }, що очікує надсилання)
-       *[many] Всі звіти про збої (за вказаний проміжок часу, включно з { $reports }, що очікують надсилання)
+        [one] Усі звіти про збої (за вказаний проміжок часу, включно з { $reports }, що очікує надсилання)
+        [few] Усі звіти про збої (за вказаний проміжок часу, включно з { $reports }, що очікує надсилання)
+       *[many] Усі звіти про збої (за вказаний проміжок часу, включно з { $reports }, що очікують надсилання)
     }
 raw-data-copied = Необроблені дані скопійовано в буфер
 text-copied = Текст скопійовано в буфер
@@ -313,10 +276,6 @@ webgl2-renderer = Засіб візуалізації WebGL2
 webgl2-version = WebGL 2 - Версія драйвера
 webgl2-driver-extensions = WebGL 2 - Розширення драйвера
 webgl2-extensions = WebGL 2 - Розширення
-blocklisted-bug = Заблоковано через відомі проблеми
-# Variables
-# $bugNumber (string) - String of bug number from Bugzilla
-bug-link = вада { $bugNumber }
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
 support-blocklisted-bug = Заблоковано, у зв'язку з відомими проблемами: <a data-l10n-name="bug-link">звіт { $bugNumber }</a>
@@ -324,8 +283,6 @@ support-blocklisted-bug = Заблоковано, у зв'язку з відом
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Заблоковано; код помилки { $failureCode }
 d3d11layers-crash-guard = Композитор D3D11
-d3d11video-crash-guard = Відео декодер D3D11
-d3d9video-crash-guard = Відео декодер D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Відео декодер WMF VPX
 reset-on-next-restart = Скинути за наступного перезапуску
@@ -365,14 +322,6 @@ launcher-process-status-unknown = Невідомий стан
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
 multi-process-windows = { $remoteWindows }/{ $totalWindows }
-multi-process-status-0 = Увімкнено користувачем
-multi-process-status-1 = Типово увімкнено
-multi-process-status-2 = Вимкнено
-multi-process-status-4 = Вимкнено інструментами доступності
-multi-process-status-6 = Вимкнено через непідтримуване введення тексту
-multi-process-status-7 = Вимкнено додатками
-multi-process-status-8 = Примусово вимкнені
-multi-process-status-unknown = Невідомий стан
 # Variables
 # $fissionWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows

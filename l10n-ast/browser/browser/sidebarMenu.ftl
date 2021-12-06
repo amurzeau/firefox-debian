@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Zarrar el panel llateral
+
+sidebar-close-button =
+    .tooltiptext = Zarrar el panel llateral

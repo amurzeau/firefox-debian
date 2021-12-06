@@ -28,7 +28,7 @@ colors-text-and-background = Tèxte e rèireplan
 colors-text-header = Tèxte
     .accesskey = T
 
-colors-background = Rèire plan
+colors-background = Rèireplan
     .accesskey = R
 
 colors-use-system =

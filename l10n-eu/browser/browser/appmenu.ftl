@@ -11,27 +11,31 @@ appmenuitem-update-banner3 =
     .label-update-manual = Eguneraketa erabilgarri — deskargatu orain
     .label-update-unsupported = Ezin da eguneratu — sistema bateragaitza
     .label-update-restart = Eguneraketa erabilgarri — berrabiarazi orain
-
 appmenuitem-protection-dashboard-title = Babesen arbela
-appmenuitem-customize-mode =
-    .label = Pertsonalizatu…
-
-## Zoom Controls
-
 appmenuitem-new-tab =
     .label = Fitxa berria
 appmenuitem-new-window =
     .label = Leiho berria
 appmenuitem-new-private-window =
     .label = Leiho pribatu berria
+appmenuitem-history =
+    .label = Historia
+appmenuitem-downloads =
+    .label = Deskargak
 appmenuitem-passwords =
     .label = Pasahitzak
 appmenuitem-addons-and-themes =
     .label = Gehigarriak eta itxurak
+appmenuitem-print =
+    .label = Inprimatu…
 appmenuitem-find-in-page =
     .label = Bilatu orrian…
+appmenuitem-zoom =
+    .value = Zooma
 appmenuitem-more-tools =
     .label = Tresna gehiago
+appmenuitem-help =
+    .label = Laguntza
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
@@ -44,7 +48,6 @@ appmenu-menu-button-closed2 =
 appmenu-menu-button-opened2 =
     .tooltiptext = Itxi aplikazio-menua
     .label = { -brand-short-name }
-
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
@@ -56,21 +59,34 @@ appmenuitem-zoom-enlarge =
     .label = Gerturatu zooma
 appmenuitem-zoom-reduce =
     .label = Urrundu zooma
-
 appmenuitem-fullscreen =
     .label = Pantaila osoa
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
-fxa-toolbar-sync-now =
-    .label = Sinkronizatu orain
-
 appmenu-remote-tabs-sign-into-sync =
     .label = Hasi saioa sinkronizatzeko…
 appmenu-remote-tabs-turn-on-sync =
     .label = Gaitu sinkronizazioa…
-
+# This is shown after the tabs list if we can display more tabs by clicking on the button
+appmenu-remote-tabs-showmore =
+    .label = Erakutsi fitxa gehiago
+    .tooltiptext = Erakutsi gailu honetako fitxa gehiago
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = Irekitako fitxarik ez
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = Aktibatu fitxak sinkronizatzea zure beste gailuetako fitxen zerrenda ikusteko.
+appmenu-remote-tabs-opensettings =
+    .label = Ezarpenak
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = Beste gailuetako zure fitxak hemen ikusi nahi dituzu?
+appmenu-remote-tabs-connectdevice =
+    .label = Konektatu beste gailu bat
+appmenu-remote-tabs-welcome = Ikusi zure beste gailuetako fitxen zerrenda.
+appmenu-remote-tabs-unverified = Zure kontua egiaztatu egin behar da.
 appmenuitem-fxa-toolbar-sync-now2 = Sinkronizatu orain
+appmenuitem-fxa-sign-in = Hasi saioa { -brand-product-name }(e)n
 appmenuitem-fxa-manage-account = Kudeatu kontua
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 # Variables
@@ -83,14 +99,12 @@ appmenu-fxa-signed-in-label = Hasi saioa
 appmenu-fxa-setup-sync =
     .label = Gaitu sinkronizazioa…
 appmenu-fxa-show-more-tabs = Erakutsi fitxa gehiago
-
 appmenuitem-save-page =
     .label = Gorde orria honela…
 
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Nobedadeak
-
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =
@@ -101,56 +115,82 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = Profil sortzailea
+    .tooltiptext = Grabatu errendimenduaren profila
+profiler-popup-button-recording =
+    .label = Profil sortzailea
+    .tooltiptext = Profil sortzailea profila grabatzen ari da
+profiler-popup-button-capturing =
+    .label = Profil sortzailea
+    .tooltiptext = Profil sortzailea profila kapturatzen ari da
 profiler-popup-title =
     .value = { -profiler-brand-name }
-
 profiler-popup-reveal-description-button =
     .aria-label = Agerrarazi informazio gehiago
-
 profiler-popup-description-title =
     .value = Grabatu, analizatu, partekatu
-
 profiler-popup-description = Elkarrekin lan egin errendimenduaren gaineko arazoetan, zure taldearekin partekatzeko profilak argitaratuz.
-
 profiler-popup-learn-more = Argibide gehiago
-
+profiler-popup-learn-more-button =
+    .label = Argibide gehiago
 profiler-popup-settings =
     .value = Ezarpenak
-
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Editatu ezarpenak…
-
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Editatu ezarpenak…
 profiler-popup-disabled =
     Profil sortzailea une honetan desgaituta dago, ziurrenik nabigatze pribatuko
     leihoa zabalik dagoelako.
-
 profiler-popup-recording-screen = Grabatzen…
-
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
 profiler-popup-presets-custom =
     .label = Pertsonalizatua
-
 profiler-popup-start-recording-button =
     .label = Hasi grabatzen
-
 profiler-popup-discard-button =
     .label = Baztertu
-
 profiler-popup-capture-button =
     .label = Kapturatu
-
 profiler-popup-start-shortcut =
     { PLATFORM() ->
         [macos] ⌃⇧1
        *[other] Ctrl+Shift+1
     }
-
 profiler-popup-capture-shortcut =
     { PLATFORM() ->
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/popup/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+profiler-popup-presets-web-developer-description = Web aplikazio gehienen arazketarako gomendatutako aurrezarpena, eragin negatibo txikiarekin.
+profiler-popup-presets-web-developer-label =
+    .label = Web garapena
+profiler-popup-presets-firefox-platform-description = Firefox plataformaren barneko arazketarako gomendatutako aurrezarpena.
+profiler-popup-presets-firefox-platform-label =
+    .label = Firefox Plataforma
+profiler-popup-presets-firefox-front-end-description = Firefox frontend-aren barneko arazketarako gomendatutako aurrezarpena.
+profiler-popup-presets-firefox-front-end-label =
+    .label = Firefox Frontend
+profiler-popup-presets-firefox-graphics-description = Firefox grafikoen errendimenduaren ikerketarako gomendatutako aurrezarpena.
+profiler-popup-presets-firefox-graphics-label =
+    .label = Firefox Grafikoak
+profiler-popup-presets-media-description = Audio- eta bideo-arazoak diagnostikatzeko gomendatutako aurrezarpena.
+profiler-popup-presets-media-label =
+    .label = Multimedia
+profiler-popup-presets-custom-label =
+    .label = Pertsonalizatua
 
 ## History panel
 
@@ -158,7 +198,6 @@ appmenu-manage-history =
     .label = Kudeatu historia
 appmenu-reopen-all-tabs = Ireki berriro fitxa guztiak
 appmenu-reopen-all-windows = Ireki berriro leiho guztiak
-
 appmenu-restore-session =
     .label = Berreskuratu aurreko saioa
 appmenu-clear-history =
@@ -214,7 +253,6 @@ appmenu-customizetoolbar =
     .label = Pertsonalizatu tresna-barra…
 appmenu-taskmanager =
     .label = Ataza-kudeatzailea
-
 appmenu-developer-tools-subheader = Nabigatzailearen tresnak
 appmenu-developer-tools-extensions =
     .label = Garatzaileentzako hedapenak

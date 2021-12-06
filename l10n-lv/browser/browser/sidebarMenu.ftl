@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = Aizvērt sānu joslu
+
+sidebar-close-button =
+    .tooltiptext = Aizvērt sānu joslu

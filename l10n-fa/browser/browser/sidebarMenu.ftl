@@ -13,3 +13,6 @@ sidebar-menu-synced-tabs =
 
 sidebar-menu-close =
     .label = بستن نوار کناری
+
+sidebar-close-button =
+    .tooltiptext = بستن نوار کناری

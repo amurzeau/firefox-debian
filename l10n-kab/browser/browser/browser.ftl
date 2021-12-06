@@ -160,12 +160,8 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-add-to-urlbar =
-    .label = Rnu ɣeṛ yimedlis n tansa
 page-action-manage-extension =
     .label = Sefrek aseɣzef…
-page-action-remove-from-urlbar =
-    .label = Kkes seg ufeggag n tansa
 page-action-remove-extension =
     .label = Kkes asiɣzef
 
@@ -183,10 +179,6 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Tikkelt-agi, nadi s:
-# This string won't wrap, so if the translated string is longer,
-# consider translating it as if it said only "Search Settings".
-search-one-offs-change-settings-button =
-    .label = Iɣewwaren n unadi
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Beddel iɣewwaren n unadi
 search-one-offs-context-open-new-tab =
@@ -250,8 +242,6 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Sken amaẓrag deg usekles
     .accesskey = k
-bookmark-panel-done-button =
-    .label = Immed
 bookmark-panel-save-button =
     .label = Sekles
 # Width of the bookmark panel.
@@ -281,8 +271,6 @@ identity-passive-loaded = Kra n yiḥricen deg usebter-a mačči d iɣelsanen (a
 identity-active-loaded = Tessenseḍ ammesten deg usebter-a.
 identity-weak-encryption = Asebter-a isseqdac awgelhen fessusen.
 identity-insecure-login-forms = Isem n useqdac d wawal uffir i tesqedceḍ deg usmel-a zemren ad ttwakren.
-identity-permissions =
-    .value = Tisirag
 identity-https-only-connection-upgraded = (leqqem ɣer HTTPS)
 identity-https-only-label = Askar HTTPS-Only
 identity-https-only-dropdown-on =
@@ -298,7 +286,6 @@ identity-permissions-storage-access-header = Inagan n tuqqna gar yismal
 identity-permissions-storage-access-hint = Imdanen-a zemren ad sxedmen inagan n tuqqna n gar yismal d yisefka n usmel mi ara tiliḍ deg usmel-a.
 identity-permissions-storage-access-learn-more = Issin ugar
 identity-permissions-reload-hint = Ahat tesriḍ ad d-tessaliḍ tikelt-nniḍen asebter akken ad yemmed wayen i tbeddleḍ.
-identity-permissions-empty = Ur tefkiḍ ara kra n tsiregt i usmel-a.
 identity-clear-site-data =
     .label = Sfeḍ inagan n tuqqna akked isefka n usme…
 identity-connection-not-secure-security-view = Aqli-k ur teqqineḍ ara s wudem aɣelsan ɣeṛ usmel-a.
@@ -383,12 +370,6 @@ bookmarks-toolbar-empty-message = I unekcum s zzerb, err ticraḍ-inek·inem n y
 
 ## WebRTC Pop-up notifications
 
-popup-select-camera =
-    .value = Takamiṛat i beṭṭu:
-    .accesskey = K
-popup-select-microphone =
-    .value = Asawaḍ i beṭṭu:
-    .accesskey = S
 popup-select-camera-device =
     .value = Takamiṛat
     .accesskey = K
@@ -402,14 +383,6 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = Wid yettmeslayen
 popup-all-windows-shared = Akk isfuyla ibanen deg ugdil-ik ad ttwabḍun.
-popup-screen-sharing-not-now =
-    .label = Mačči tura
-    .accesskey = w
-popup-screen-sharing-never =
-    .label = Ur sirig ara
-    .accesskey = N
-popup-silence-notifications-checkbox = Kkes ilɣa n { -brand-short-name } di lawan n beṭṭu
-popup-silence-notifications-checkbox-warning = { -brand-short-name } ur yeskanay ara ilɣa mi ara tbeṭṭuḍ.
 popup-screen-sharing-block =
     .label = Sewḥel
     .accesskey = Ḥ
@@ -433,14 +406,10 @@ enable-devtools-popup-description = Akken ad tesqedceḍ anegzum F12, ldi qbel D
 
 ## URL Bar
 
-urlbar-default-placeholder =
-    .defaultPlaceholder = Nadi neɣ sekcem tansa
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Nadi neɣ sekcem tansa
-urlbar-remote-control-notification-anchor =
-    .tooltiptext = Iminig yettwaṭṭef s wudem anmeggag
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -489,8 +458,6 @@ urlbar-go-button =
     .tooltiptext = Ddu ɣer usebter n ufeggag n tansa
 urlbar-page-action-button =
     .tooltiptext = Asebter n tigawin
-urlbar-pocket-button =
-    .tooltiptext = Sekles ɣer { -pocket-brand-name }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -695,6 +662,27 @@ more-menu-go-offline =
 toolbar-overflow-customize-button =
     .label = Sagen afeggag n yifecka…
     .accesskey = M
+toolbar-button-email-link =
+    .label = Azen aseɣwen
+    .tooltiptext = Azen aseɣwen ɣer usebter-a
+# Variables:
+#  $shortcut (String): keyboard shortcut to save a copy of the page
+toolbar-button-save-page =
+    .label = Sekles asebter
+    .tooltiptext = Sekles asebter-a ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open a local file
+toolbar-button-open-file =
+    .label = Ldi afaylu
+    .tooltiptext = Ldi afaylu ({ $shortcut })
+toolbar-button-synced-tabs =
+    .label = Iccaren yemtawin
+    .tooltiptext = Sken iccaren seg ibenkan-nniḍen
+# Variables
+# $shortcut (string) - Keyboard shortcut to open a new private browsing window
+toolbar-button-new-private-window =
+    .label = Asfaylu amaynut n tunigin tusligt
+    .tooltiptext = Asfaylu amaynut n tunigin tusligt ({ $shortcut })
 
 ## EME notification panel
 
@@ -748,3 +736,43 @@ popups-infobar-dont-show-message =
 picture-in-picture-hide-toggle =
     .label = Ffer asfaylu tugna deg tugna
     .accesskey = H
+
+# Navigator Toolbox
+
+# This string is a spoken label that should not include
+# the word "toolbar" or such, because screen readers already know that
+# this container is a toolbar. This avoids double-speaking.
+navbar-accessible =
+    .aria-label = Tunigin
+navbar-downloads =
+    .label = Isadaren
+navbar-overflow =
+    .tooltiptext = Ugar n yifecka…
+# Variables:
+#   $shortcut (String): keyboard shortcut to print the page
+navbar-print =
+    .label = Siggez
+    .tooltiptext = Siggez asebter-a… ({ $shortcut })
+navbar-print-tab-modal-disabled =
+    .label = Siggez
+    .tooltiptext = Siggez asebtar-a
+navbar-home =
+    .label = Asebter agejdan
+    .tooltiptext = Asebter agejdan { -brand-short-name }
+navbar-library =
+    .label = Tamkarḍit
+    .tooltiptext = Sken azray, ticraḍ yettwakelsen, d wayen-nniḍen
+navbar-search =
+    .title = Nadi
+navbar-accessibility-indicator =
+    .tooltiptext = Timahilin n unekcum remdent
+# Name for the tabs toolbar as spoken by screen readers. The word
+# "toolbar" is appended automatically and should not be included in
+# in the string
+tabs-toolbar =
+    .aria-label = Accaren n yiminig
+tabs-toolbar-new-tab =
+    .label = Iccer amaynut
+tabs-toolbar-list-all-tabs =
+    .label = Bder akk accaren
+    .tooltiptext = Bder akk accaren
