@@ -1,3 +1,16 @@
+firefox (95.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2021-52, also known as:
+    CVE-2021-43536, CVE-2021-43537, CVE-2021-43538, CVE-2021-43539,
+    CVE-2021-43540, CVE-2021-43541, CVE-2021-43542, CVE-2021-43543,
+    CVE-2021-43544, CVE-2021-43545, CVE-2021-43546, MOZ-2021-0009.
+
+  * debian/browser.mozconfig.in: Explicitly disable wasm sandboxing. We don't
+    have the necessary tools yet.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 08 Dec 2021 06:38:07 +0900
+
 firefox (94.0.2-1) unstable; urgency=medium
 
   * New upstream release.
