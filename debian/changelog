@@ -1,3 +1,14 @@
+firefox-esr (91.4.0esr-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes cubeb deadlock. Closes: #998679.
+  * Fixes for mfsa2021-53, also known as:
+    CVE-2021-43536, CVE-2021-43537, CVE-2021-43538, CVE-2021-43539,
+    CVE-2021-43541, CVE-2021-43542, CVE-2021-43543, CVE-2021-43545,
+    CVE-2021-43546, MOZ-2021-0009.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 08 Dec 2021 06:38:58 +0900
+
 firefox-esr (91.3.0esr-2) unstable; urgency=medium
 
   * debian/firefox.in: Use `command -v` instead of `which`. Closes: #996455.
