@@ -50,7 +50,7 @@ Build-Depends: autotools-dev,
 %else
                rustc (>= 1.53),
 %endif
-%if DIST == buster || DIST == stretch
+%if DIST == bullseye || DIST == buster || DIST == stretch
                cargo-mozilla (>= 0.54),
 %else
                cargo (>= 0.54),
