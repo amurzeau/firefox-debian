@@ -1,3 +1,14 @@
+firefox (95.0.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+  * debian/control.in: Build against rustc-mozilla/cargo-mozilla on relevant
+    older releases.
+
+  * modules/fdlibm/src/math_private.h: Fix FTBFS on i386. bz#1729459.
+
+ -- Mike Hommey <glandium@debian.org>  Fri, 17 Dec 2021 07:05:23 +0900
+
 firefox (95.0-1) unstable; urgency=medium
 
   * New upstream release.
