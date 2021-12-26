@@ -1,0 +1,3 @@
+ac_add_options --target=arm-unknown-linux-gnueabihf
+
+mk_add_options MOZ_OBJDIR=obj-x64_False_arm_linux
