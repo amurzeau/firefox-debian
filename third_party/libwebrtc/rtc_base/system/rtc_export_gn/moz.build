@@ -71,7 +71,6 @@ if CONFIG["OS_TARGET"] == "Linux":
     DEFINES["WEBRTC_LINUX"] = True
     DEFINES["WEBRTC_POSIX"] = True
     DEFINES["_FILE_OFFSET_BITS"] = "64"
-    DEFINES["_GNU_SOURCE"] = True
     DEFINES["_LARGEFILE64_SOURCE"] = True
     DEFINES["_LARGEFILE_SOURCE"] = True
     DEFINES["__STDC_CONSTANT_MACROS"] = True
@@ -114,20 +113,11 @@ if CONFIG["CPU_ARCH"] == "arm":
     DEFINES["WEBRTC_ARCH_ARM_V7"] = True
     DEFINES["WEBRTC_HAS_NEON"] = True
 
-    OS_LIBS += [
-        "android_support",
-        "unwind"
-    ]
-
 if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "Android":
 
     DEFINES["_FORTIFY_SOURCE"] = "2"
 
 if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "Darwin":
-
-    DEFINES["_FORTIFY_SOURCE"] = "2"
-
-if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "Linux":
 
     DEFINES["_FORTIFY_SOURCE"] = "2"
 
@@ -147,6 +137,13 @@ if CONFIG["MOZ_DEBUG"] == "1" and CONFIG["OS_TARGET"] == "WINNT":
 
     DEFINES["_HAS_ITERATOR_DEBUGGING"] = "0"
 
+if CONFIG["CPU_ARCH"] == "arm" and CONFIG["OS_TARGET"] == "Android":
+
+    OS_LIBS += [
+        "android_support",
+        "unwind"
+    ]
+
 if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
 
     OS_LIBS += [
@@ -156,13 +153,37 @@ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
 if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
 
     DEFINES["CR_SYSROOT_HASH"] = "ef67b6ca8fd6e2e51515a243d043d1ea4caf45e6"
+    DEFINES["_GNU_SOURCE"] = True
+
+if CONFIG["CPU_ARCH"] == "arm" and CONFIG["OS_TARGET"] == "Linux":
+
+    DEFINES["CR_SYSROOT_HASH"] = "c2e54f675b83a61301dcdb22e8e7a2b85c01d58c"
+    DEFINES["_GNU_SOURCE"] = True
 
 if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
 
     DEFINES["CR_SYSROOT_HASH"] = "d967bcef40477dbc39acef141ff22bf73f3e7cdb"
+    DEFINES["_GNU_SOURCE"] = True
 
 if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Linux":
 
     DEFINES["CR_SYSROOT_HASH"] = "5f64b417e1018dcf8fcc81dc2714e0f264b9b911"
+    DEFINES["_GNU_SOURCE"] = True
+
+if CONFIG["CPU_ARCH"] == "aarch64" and not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "Linux":
+
+    DEFINES["_FORTIFY_SOURCE"] = "2"
+
+if CONFIG["CPU_ARCH"] == "arm" and not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "Linux":
+
+    DEFINES["_FORTIFY_SOURCE"] = "2"
+
+if CONFIG["CPU_ARCH"] == "x86" and not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "Linux":
+
+    DEFINES["_FORTIFY_SOURCE"] = "2"
+
+if CONFIG["CPU_ARCH"] == "x86_64" and not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "Linux":
+
+    DEFINES["_FORTIFY_SOURCE"] = "2"
 
 Library("rtc_export_gn")
