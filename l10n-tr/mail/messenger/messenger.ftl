@@ -2,6 +2,17 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## Window controls
+
+messenger-window-minimize-button =
+    .tooltiptext = Küçült
+messenger-window-maximize-button =
+    .tooltiptext = Ekranı kapla
+messenger-window-restore-down-button =
+    .tooltiptext = Geri küçült
+messenger-window-close-button =
+    .tooltiptext = Kapat
 # Variables:
 # $count (Number) - Number of unread messages.
 unread-messages-os-tooltip =
@@ -99,11 +110,23 @@ appmenu-redirect-msg =
 
 context-menu-redirect-msg =
     .label = Yönlendir
+mail-context-delete-messages =
+    .label =
+        { $count ->
+            [one] İletiyi sil
+           *[other] Seçilmiş iletileri sil
+        }
 
 ## Message header pane
 
 other-action-redirect-msg =
     .label = Yönlendir
+message-header-msg-flagged =
+    .title = Yıldızlı
+    .aria-label = Yıldızlı
+message-header-msg-not-flagged =
+    .title = Yıldızsız
+    .aria-label = Yıldızsız
 
 ## Action Button Context Menu
 
@@ -140,3 +163,6 @@ repair-text-encoding-button =
 no-reply-title = Yanıt desteklenmiyor
 no-reply-message = Yanıt adresi ({ $email }) izlenen bir adrese benzemiyor. Bu adrese gönderilen iletiler muhtemelen okunmayacaktır.
 no-reply-reply-anyway-button = Yine de yanıtla
+
+## error messages
+

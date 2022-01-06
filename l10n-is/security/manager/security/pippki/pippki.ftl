@@ -12,8 +12,7 @@ change-password-token = Öryggistæki: { $tokenName }
 change-password-old = Núverandi lykilorð:
 change-password-new = Nýtt lykilorð:
 change-password-reenter = Nýtt lykilorð (aftur):
-
-## Reset Password dialog
+pippki-pw-empty-warning = Geymdu lykilorðin þín og einkalyklar verða ekki vernduð.
 
 ## Reset Primary Password dialog
 
@@ -27,7 +26,7 @@ download-cert-window =
     .style = width: 46em
 download-cert-message = Þú ert beðinn um að treysta nýrri vottunarstöð (CA).
 download-cert-trust-ssl =
-    .label = Treysta CA til að auðkenna vefsvæði.
+    .label = Treysta þessum CA-vottunaraðila til að auðkenna vefsvæði.
 download-cert-trust-email =
     .label = Treysta CA til að auðkenna póst notendur.
 download-cert-message-desc = Áður en þú treystir þessum CA fyrir einhverju, ættirðu að athuga skilríki þess, stefnur þess og aðferðir (ef til eru).

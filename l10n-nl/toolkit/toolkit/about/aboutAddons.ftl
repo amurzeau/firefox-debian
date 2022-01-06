@@ -141,6 +141,9 @@ addon-category-available-updates-title =
 addon-category-recent-updates = Recente updates
 addon-category-recent-updates-title =
     .title = Recente updates
+addon-category-sitepermission = Websitemachtigingen
+addon-category-sitepermission-title =
+    .title = Websitemachtigingen
 
 ## These are global warnings
 
@@ -296,6 +299,8 @@ dictionary-enabled-heading = Ingeschakeld
 dictionary-disabled-heading = Uitgeschakeld
 locale-enabled-heading = Ingeschakeld
 locale-disabled-heading = Uitgeschakeld
+sitepermission-enabled-heading = Ingeschakeld
+sitepermission-disabled-heading = Uitgeschakeld
 always-activate-button = Altijd activeren
 never-activate-button = Nooit activeren
 addon-detail-author-label = Schrijver
@@ -372,6 +377,7 @@ addon-permissions-optional = Optionele toestemmingen voor extra functionaliteit:
 addon-permissions-learnmore = Meer info over toestemmingen
 recommended-extensions-heading = Aanbevolen extensies
 recommended-themes-heading = Aanbevolen thema’s
+addon-sitepermissions-required = Geeft <span data-l10n-name="hostname">{ $hostname }</span> de volgende mogelijkheden:
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Voelt u zich creatief? <a data-l10n-name="link"> Bouw uw eigen thema met Firefox Color.</a>
@@ -384,6 +390,7 @@ plugin-heading = Uw plug-ins beheren
 dictionary-heading = Uw woordenboeken beheren
 locale-heading = Uw talen beheren
 updates-heading = Uw updates beheren
+sitepermission-heading = Uw websitemachtigingen beheren
 discover-heading = Uw { -brand-short-name } personaliseren
 shortcuts-heading = Extensiesneltoetsen beheren
 default-heading-search-label = Meer add-ons zoeken

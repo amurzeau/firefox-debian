@@ -8,12 +8,11 @@ enable-inspect-element-title = Enable Firefox Developer Tools to use Inspect Ele
 enable-inspect-element-message = Examine and edit HTML and CSS with the Developer Tools’ Inspector.
 enable-about-debugging-message = Develop and debug WebExtensions, web workers, service workers and more with Firefox Developer Tools.
 enable-key-shortcut-message = You activated a Developer Tools shortcut. If that was a mistake, you can close this Tab.
-enable-menu-message = Perfect your website’s HTML, CSS, and JavaScript with tools like Inspector and Debugger.
+enable-menu-message = Fullkomnaðu HTML, CSS og JavaScript vefsvæðisins þíns með verkfærum eins og Inspector og Debugger.
 enable-common-message = Firefox Developer Tools are disabled by default to give you more control over your browser.
 enable-learn-more-link = Learn more about Developer Tools
 enable-enable-button = Enable Developer Tools
 enable-close-button = Close this Tab
-
 welcome-title = Welcome to Firefox Developer Tools!
 newsletter-title = Mozilla Developer Newsletter
 newsletter-message = Get developer news, tricks and resources sent straight to your inbox.
@@ -23,14 +22,12 @@ newsletter-privacy-label = I’m okay with Mozilla handling my info as explained
 newsletter-subscribe-button = Subscribe
 newsletter-thanks-title = Thanks!
 newsletter-thanks-message = If you haven’t previously confirmed a subscription to a Mozilla-related newsletter you may have to do so. Please check your inbox or your spam filter for an email from us.
-
 footer-title = Firefox Developer Edition
 footer-message = Looking for more than just Developer Tools? Check out the Firefox browser that is built specifically for developers and modern workflows.
 footer-learn-more-link = Learn more
-
 features-learn-more = Learn more
 features-inspector-title = Inspector
-features-inspector-desc = Inspect and refine code to build pixel-perfect layouts. <a data-l10n-name="learn-more">{ features-learn-more }</a>
+features-inspector-desc = Skoðaðu og fínstilltu kóða til að búa til framsetningu upp á mynddíls-nákvæmni. <a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-console-title = Console
 features-console-desc = Track CSS, JavaScript, security and network issues. <a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-debugger-title = Debugger
@@ -38,7 +35,7 @@ features-debugger-desc = Powerful JavaScript debugger with support for your fram
 features-network-title = Network
 features-network-desc = Monitor network requests that can slow or block your site. <a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-storage-title = Storage
-features-storage-desc = Add, modify and remove cache, cookies, databases and session data. <a data-l10n-name="learn-more">{ features-learn-more }</a>
+features-storage-desc = Bætta við, breyta og fjarlægja skyndiminni, vefkökur, gagnagrunna og setugögn. <a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-responsive-title = Responsive Design Mode
 features-responsive-desc = Test sites on emulated devices in your browser. <a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-visual-editing-title = Visual Editing

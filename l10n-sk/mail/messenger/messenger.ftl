@@ -2,6 +2,17 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## Window controls
+
+messenger-window-minimize-button =
+    .tooltiptext = Minimalizovať
+messenger-window-maximize-button =
+    .tooltiptext = Maximalizovať
+messenger-window-restore-down-button =
+    .tooltiptext = Obnoviť nadol
+messenger-window-close-button =
+    .tooltiptext = Zavrieť
 # Variables:
 # $count (Number) - Number of unread messages.
 unread-messages-os-tooltip =
@@ -100,13 +111,24 @@ appmenu-redirect-msg =
 
 context-menu-redirect-msg =
     .label = Presmerovať
+mail-context-delete-messages =
+    .label =
+        { $count ->
+            [one] Odstrániť správu
+            [few] Odstrániť označené správy
+           *[other] Odstrániť označené správy
+        }
+context-menu-decrypt-to-folder =
+    .label = Skopírovať ako dešifrované do
+    .accesskey = f
 
 ## Message header pane
 
 other-action-redirect-msg =
     .label = Presmerovať
-message-header-msg-is-flagged =
-    .title = Správa označená hviezdičkou
+message-header-msg-flagged =
+    .title = Označené hviezdičkou
+    .aria-label = Označené hviezdičkou
 message-header-msg-not-flagged =
     .title = Správa neoznačená hviezdičkou
 
@@ -145,3 +167,7 @@ repair-text-encoding-button =
 no-reply-title = Adresa pre odpoveď nie je podporovaná
 no-reply-message = Zdá sa, že adresa pre odpoveď ({ $email }) nie je monitorovanou adresou. Správy na túto adresu pravdepodobne nikto neprečíta.
 no-reply-reply-anyway-button = Aj tak odpovedať
+
+## error messages
+
+decrypt-and-copy-failures = { $failures } z { $total } správ sa nepodarilo dešifrovať a neboli skopírované.

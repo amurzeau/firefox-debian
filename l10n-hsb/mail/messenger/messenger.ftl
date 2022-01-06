@@ -2,6 +2,17 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## Window controls
+
+messenger-window-minimize-button =
+    .tooltiptext = Miniměrować
+messenger-window-maximize-button =
+    .tooltiptext = Maksiměrować
+messenger-window-restore-down-button =
+    .tooltiptext = Pomjeńšić
+messenger-window-close-button =
+    .tooltiptext = Začinić
 # Variables:
 # $count (Number) - Number of unread messages.
 unread-messages-os-tooltip =
@@ -101,13 +112,25 @@ appmenu-redirect-msg =
 
 context-menu-redirect-msg =
     .label = Dale sposrědkować
+mail-context-delete-messages =
+    .label =
+        { $count ->
+            [one] Powěsć zhašeć
+            [two] Wubranej powěsći zhašeć
+            [few] Wubrane powěsće zhašeć
+           *[other] Wubrane powěsće zhašeć
+        }
+context-menu-decrypt-to-folder =
+    .label = Jako dešifrowanu kopěrować do
+    .accesskey = d
 
 ## Message header pane
 
 other-action-redirect-msg =
     .label = Dale sposrědkować
-message-header-msg-is-flagged =
-    .title = Powěsć z hwěžku
+message-header-msg-flagged =
+    .title = Z hwěžku
+    .aria-label = Z hwěžku
 message-header-msg-not-flagged =
     .title = Powěsć bjez hwěžki
 
@@ -146,3 +169,7 @@ repair-text-encoding-button =
 no-reply-title = Wotmołwa so njepodpěruje
 no-reply-message = Zda so, zo wotmołwna adresa ({ $email }) dohladowana adresa njeje. Powěsće na tutu adresu so najskerje wot nikoho nječitaja.
 no-reply-reply-anyway-button = Najebać toho wotmołwić
+
+## error messages
+
+decrypt-and-copy-failures = { $failures } z { $total } powěsćow njejsu so dešifrowali a njejsu so kopěrowali.

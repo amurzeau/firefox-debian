@@ -290,12 +290,18 @@ mr2-onboarding-colorway-tooltip =
 #   $colorwayName (String) - Name of colorway
 mr2-onboarding-colorway-description =
     .aria-description = Selaa { $colorwayName }-väriteemoja.
+# Selector description for colorway
+# Variables:
+#   $colorwayName (String) - Name of colorway
+mr2-onboarding-colorway-label = Selaa { $colorwayName }-väriteemoja.
 # Tooltip displayed on hover of default themes
 mr2-onboarding-default-theme-tooltip =
     .title = Selaa oletusteemoja.
 # Selector description for default themes
 mr2-onboarding-default-theme-description =
     .aria-description = Selaa oletusteemoja.
+# Selector description for default themes
+mr2-onboarding-default-theme-label = Selaa oletusteemoja.
 
 ## Strings for Thank You page
 

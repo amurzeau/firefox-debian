@@ -2,6 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+tab-context-new-tab =
+    .label = Nowo karta
+    .accesskey = w
 reload-tab =
     .label = Przeladuj karta
     .accesskey = P
@@ -23,12 +26,12 @@ duplicate-tabs =
 # The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
 close-tabs-to-the-start =
-    .label = Zawrzij lewe karty
+    .label = Zawrzij karty z lewyj
     .accesskey = Z
 # The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
-    .label = Zawrzij prawe karty
+    .label = Zawrzij karty z prawyj
     .accesskey = i
 close-other-tabs =
     .label = Zawrzij inksze karty
@@ -54,18 +57,21 @@ bookmark-selected-tabs =
 bookmark-tab =
     .label = Przidej karta do zokłodek
     .accesskey = Z
+tab-context-open-in-new-container-tab =
+    .label = Ôtwōrz we nowyj kōntynerowyj karcie
+    .accesskey = e
 move-to-start =
     .label = Przeniyś na poczōntek
     .accesskey = C
 move-to-end =
     .label = Przeniyś na kōniec
-    .accesskey = s
+    .accesskey = n
 move-to-new-window =
-    .label = Dej do nowego ôkna
+    .label = Przeniyś do nowego ôkna
     .accesskey = O
 tab-context-close-multiple-tabs =
-    .label = Ôbier mocka kart
-    .accesskey = M
+    .label = Zawrzij wiyncyj kart
+    .accesskey = w
 tab-context-share-url =
     .label = Udostympnij
     .accesskey = U
@@ -75,6 +81,15 @@ tab-context-share-more =
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
 
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Ôtwōrz nazod zawarto karta
+            [one] Ôtwōrz nazod zawarto karta
+            [few] Ôtwōrz nazod zawarte karty
+           *[many] Ôtwōrz nazod zawarte karty
+        }
+    .accesskey = o
 tab-context-close-tabs =
     .label =
         { $tabCount ->
@@ -82,6 +97,15 @@ tab-context-close-tabs =
             [one] Zawrzij karta
             [few] Zawrzij karty
            *[many] Zawrzij karty
+        }
+    .accesskey = Z
+tab-context-close-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] Zawrzij karta
+            [one] Zawrzij { $tabCount } karta
+            [few] Zawrzij { $tabCount } karty
+           *[many] Zawrzij { $tabCount } kart
         }
     .accesskey = Z
 tab-context-move-tabs =

@@ -158,6 +158,8 @@ downloading-file-opens-in-minutes = Dobertura d’aquí { $minutes } min…
 downloading-file-opens-in-minutes-and-seconds = Dobertura d’aquí { $minutes } min { $seconds } s…
 downloading-file-opens-in-seconds = Dobertura d’aquí { $seconds } s…
 downloading-file-opens-in-some-time = Dobertura un còp acabat…
+downloading-file-click-to-open =
+    .value = Dobrir un còp acabat
 
 ##
 
@@ -191,6 +193,7 @@ downloads-files-not-downloaded =
        *[other] { $num } fichièrs pas telecargats.
     }
 downloads-blocked-from-url = Telecargaments a partir de { $url } blocats.
+downloads-blocked-download-detailed-info = { $url } a ensajat de telecargar automaticament mantun fichièr. Lo site pòt èsser defectuós o èsser a ensajar d’enregistrar de fichièrs de spam sus vòstre periferic.
 
 ##
 

@@ -2,6 +2,17 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## Window controls
+
+messenger-window-minimize-button =
+    .tooltiptext = Minimera
+messenger-window-maximize-button =
+    .tooltiptext = Maximera
+messenger-window-restore-down-button =
+    .tooltiptext = Återställ nedåt
+messenger-window-close-button =
+    .tooltiptext = Stäng
 # Variables:
 # $count (Number) - Number of unread messages.
 unread-messages-os-tooltip =
@@ -99,13 +110,23 @@ appmenu-redirect-msg =
 
 context-menu-redirect-msg =
     .label = Omdirigera
+mail-context-delete-messages =
+    .label =
+        { $count ->
+            [one] Ta bort meddelande
+           *[other] Ta bort valda meddelanden
+        }
+context-menu-decrypt-to-folder =
+    .label = Kopiera som dekrypterad till
+    .accesskey = y
 
 ## Message header pane
 
 other-action-redirect-msg =
     .label = Omdirigera
-message-header-msg-is-flagged =
-    .title = Stjärnmärkt meddelande
+message-header-msg-flagged =
+    .title = Stjärnmärkt
+    .aria-label = Stjärnmärkt
 message-header-msg-not-flagged =
     .title = Ej stjärnmärkt meddelande
 
@@ -144,3 +165,7 @@ repair-text-encoding-button =
 no-reply-title = Svar stöds inte
 no-reply-message = Svarsadressen ({ $email }) verkar inte vara en övervakad adress. Meddelanden till den här adressen kommer sannolikt inte att läsas av någon.
 no-reply-reply-anyway-button = Svara ändå
+
+## error messages
+
+decrypt-and-copy-failures = { $failures } av { $total } meddelanden kunde inte dekrypteras och kopierades inte.

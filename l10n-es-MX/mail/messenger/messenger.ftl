@@ -2,6 +2,17 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## Window controls
+
+messenger-window-minimize-button =
+    .tooltiptext = Minimizar
+messenger-window-maximize-button =
+    .tooltiptext = Maximizar
+messenger-window-restore-down-button =
+    .tooltiptext = Restaurar abajo
+messenger-window-close-button =
+    .tooltiptext = Cerrar
 # Variables:
 # $count (Number) - Number of unread messages.
 unread-messages-os-tooltip =
@@ -9,6 +20,7 @@ unread-messages-os-tooltip =
         [one] 1 mensaje no leído
        *[other] { $count } mensajes no leídos
     }
+about-rights-notification-text = { -brand-short-name } es un software gratuito y de código abierto, creado por una comunidad de miles de personas de todo el mundo.
 
 ## Content tabs
 
@@ -33,6 +45,11 @@ redirect-msg-button =
 
 ## Folder Pane
 
+folder-pane-toolbar =
+    .toolbarname = Barra de herramientas del panel de la carpeta
+    .accesskey = p
+folder-pane-toolbar-options-button =
+    .tooltiptext = Opciones del panel de carpetas
 folder-pane-header-label = Carpetas
 
 ## Folder Toolbar Header Popup
@@ -49,6 +66,9 @@ show-unread-folders-label =
 show-favorite-folders-label =
     .label = Carpetas favoritas
     .accesskey = C
+show-smart-folders-label =
+    .label = Carpetas unificadas
+    .accesskey = u
 show-recent-folders-label =
     .label = Carpetas recientes
     .accesskey = C
@@ -58,6 +78,9 @@ folder-toolbar-toggle-folder-compact-view =
 
 ## Menu
 
+redirect-msg-menuitem =
+    .label = Redirigir
+    .accesskey = d
 menu-file-save-as-file =
     .label = Archivo…
     .accesskey = F
@@ -85,9 +108,28 @@ appmenu-redirect-msg =
 
 ## Context menu
 
+context-menu-redirect-msg =
+    .label = Redirigir
+mail-context-delete-messages =
+    .label =
+        { $count ->
+            [one] Eliminar mensaje
+           *[other] Eliminar mensajes seleccionados
+        }
+context-menu-decrypt-to-folder =
+    .label = Copiar como descifrado a
+    .accesskey = y
 
 ## Message header pane
 
+other-action-redirect-msg =
+    .label = Redirigir
+message-header-msg-flagged =
+    .title = Destacados
+    .aria-label = Destacados
+message-header-msg-not-flagged =
+    .title = No destacado
+    .aria-label = No destacado
 
 ## Action Button Context Menu
 
@@ -100,6 +142,10 @@ toolbar-context-menu-remove-extension =
 
 ## Message headers
 
+message-header-address-in-address-book-icon =
+    .alt = La dirección está en la libreta de direcciones
+message-header-address-not-in-address-book-icon =
+    .alt = La dirección no está en la libreta de direcciones
 
 ## Add-on removal warning
 
@@ -107,8 +153,20 @@ toolbar-context-menu-remove-extension =
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = ¿Eliminar { $name }?
 addon-removal-confirmation-button = Eliminar
+addon-removal-confirmation-message = ¿Eliminar { $name }, así como su configuración y datos de { -brand-short-name }?
+caret-browsing-prompt-title = Navegación con cursor
+caret-browsing-prompt-text = Presionando F7 habilita o deshabilita la navegación con cursor. Esta característica coloca un cursor movible dentro de algún contenido, permitiéndote seleccionar texto con el teclado. ¿Quieres activar la navegación con cursor?
 caret-browsing-prompt-check-text = No volver a preguntar.
+repair-text-encoding-button =
+    .label = Reparar la codificación de texto
+    .tooltiptext = Escribe la codificación de texto correcta del contenido del mensaje
 
 ## no-reply handling
 
+no-reply-title = Respuesta no admitida
+no-reply-message = La dirección de respuesta ({ $email }) no parece ser una dirección supervisada. Es probable que los mensajes a esta dirección no sean leídos por nadie.
 no-reply-reply-anyway-button = Responder de todos modos
+
+## error messages
+
+decrypt-and-copy-failures = { $failures } de { $total } mensajes no pudieron ser descifrados y no fueron copiados.

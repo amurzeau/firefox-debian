@@ -2,6 +2,17 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## Window controls
+
+messenger-window-minimize-button =
+    .tooltiptext = Minimisar
+messenger-window-maximize-button =
+    .tooltiptext = Maximisar
+messenger-window-restore-down-button =
+    .tooltiptext = Restaurar
+messenger-window-close-button =
+    .tooltiptext = Clauder
 # Variables:
 # $count (Number) - Number of unread messages.
 unread-messages-os-tooltip =
@@ -99,13 +110,23 @@ appmenu-redirect-msg =
 
 context-menu-redirect-msg =
     .label = Re-diriger
+mail-context-delete-messages =
+    .label =
+        { $count ->
+            [one] Deler message
+           *[other] Deler messages selecte
+        }
+context-menu-decrypt-to-folder =
+    .label = Copiar decryptate a in
+    .accesskey = E
 
 ## Message header pane
 
 other-action-redirect-msg =
     .label = Re-diriger
-message-header-msg-is-flagged =
-    .title = Message marcate per stellas
+message-header-msg-flagged =
+    .title = Stellate
+    .aria-label = Stellate
 message-header-msg-not-flagged =
     .title = Message non marcate per stellas
 
@@ -144,3 +165,7 @@ repair-text-encoding-button =
 no-reply-title = Responsa non supportate
 no-reply-message = Le adresse de responsa ({ $email }) non pare ser un adresse monitorate. Le messages a iste adresse probabilemente non sera legite per alcuno.
 no-reply-reply-anyway-button = Responder comocunque
+
+## error messages
+
+decrypt-and-copy-failures = { $failures } de { $total } messages non pote esser decryptate e non era copiate.

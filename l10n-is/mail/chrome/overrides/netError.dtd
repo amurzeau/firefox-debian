@@ -3,7 +3,6 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd">
-
 %brandDTD;
 
 <!ENTITY loadError.label "Villa við að hlaða inn síðu">
@@ -97,7 +96,7 @@
 <!ENTITY proxyConnectFailure.title "Milliþjónn neitar tengingum">
 <!ENTITY proxyConnectFailure.longDesc "
 <ul>
-  <li>Athugaðu milliþjóna stillingar netþjóns til að ganga úr skugga um að þær séu réttar.</li>
+  <li>Athugaðu milliþjónastillingar netþjóns til að ganga úr skugga um að þær séu réttar.</li>
   <li>Hafðu samband við netkerfisstjóra til að athuga hvort milliþjónn sé
     virkur.</li>
 </ul>
@@ -116,8 +115,8 @@
 <!ENTITY redirectLoop.title "Síðan er ekki að áframsenda rétt">
 <!ENTITY redirectLoop.longDesc "
 <ul>
-  <li>Þetta vandamál er stundum vegna þess að lokað er á smákökur eða þær hafa
-    verið aftengdar.</li>
+  <li>Þetta vandamál er stundum vegna þess að lokað er á vefkökur eða þær hafa
+    verið gerðar óvirkar.</li>
 </ul>
 ">
 
@@ -159,8 +158,11 @@
 <!ENTITY cspBlocked.title "Lokað á vegna öryggisreglu">
 <!ENTITY cspBlocked.longDesc "<p>&brandShortName; kom í veg fyrir að þessi síða birtist á þennan hátt þar sem síðan inniheldur öryggisreglu sem kemur í veg fyrir það.</p>">
 
+<!ENTITY xfoBlocked.title "Lokað fyrir af X-Frame-Options reglunni">
+<!ENTITY xfoBlocked.longDesc "<p>&brandShortName; kom í veg fyrir að þessi síða birtist á þennan hátt þar sem síðan inniheldur X-Frame-Options öryggisreglu sem bannar það.</p>">
+
 <!ENTITY corruptedContentErrorv2.title "Villa skemmd gögn">
-<!ENTITY corruptedContentErrorv2.longDesc "<p>Ekki er hægt að sýna síðuna vegna villu í gagnasendingu.</p><ul><li>Hafðu samband við vefsíðueiganda til að láta hann vita af vandamálinu.</li></ul>">
+<!ENTITY corruptedContentErrorv2.longDesc "<p>Ekki er hægt að sýna síðuna vegna villu í gagnasendingu.</p><ul><li>Hafðu samband við eiganda vefsvæðisins til að láta vita af vandamálinu.</li></ul>">
 
 <!ENTITY securityOverride.linkText "Eða þú getur bætt við undantekningu…">
 <!ENTITY securityOverride.getMeOutOfHereButton "Hjálpaðu mér héðan út!">
@@ -186,3 +188,7 @@ functionality specific to thunderbird. -->
      "NS_ERROR_NET_INADEQUATE_SECURITY". -->
 <!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> notar öryggistækni sem er úrelt og er ekki örugg. Árásaraðili gæti auðveldlega náð í upplýsingar sem þú gætir talið að væru öruggar. Kerfisstjóri þarf að lagfæra netþjóninn áður áður en þú getur heimsótt vefsvæðið.</p><p>Villukóði: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
 
+<!ENTITY blockedByPolicy.title "Lokuð síða">
+
+<!ENTITY networkProtocolError.title "Villa í netsamskiptum">
+<!ENTITY networkProtocolError.longDesc "<p>Ekki er hægt að birta síðuna sem þú ert að reyna að skoða vegna þess að villa í netkerfisreglunni fannst.</p><ul><li>Hafðu samband við eigendur vefsvæðisins til að upplýsa þá um þetta vandamál.</li></ul>">

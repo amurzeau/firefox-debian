@@ -136,6 +136,9 @@ addon-category-available-updates-title =
 addon-category-recent-updates = Ñembohekopyahu ramovéva
 addon-category-recent-updates-title =
     .title = Ñembohekopyahu ramovéva
+addon-category-sitepermission = Tenda ñemoneĩ
+addon-category-sitepermission-title =
+    .title = Tenda ñemoneĩ
 
 ## These are global warnings
 
@@ -284,6 +287,8 @@ dictionary-enabled-heading = Myandypyre
 dictionary-disabled-heading = Ojepuruve’ỹva
 locale-enabled-heading = Myandypyre
 locale-disabled-heading = Ojepuruve’ỹva
+sitepermission-enabled-heading = Myandypyre
+sitepermission-disabled-heading = Pe’apyre
 always-activate-button = Emyandy tapia
 never-activate-button = Ani emyandy araka’eve
 addon-detail-author-label = Apohára
@@ -360,6 +365,7 @@ addon-permissions-optional = Ñemoneĩ potapýva tembiapoite jopoiguápe g̃uar�
 addon-permissions-learnmore = Eikuaave ñemoneĩ rehegua
 recommended-extensions-heading = Jepysokue je’eporãpyre
 recommended-themes-heading = Téma je’eporãpyre
+addon-sitepermissions-required = Ome’ẽ ko’ã jejapokuaa <span data-l10n-name="hostname">{ $hostname }</span>-pe:
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = ¿Emoheñoisépa? <a data-l10n-name="link">Emoheñoi ne temarã Firefox Color ndive.</a>
@@ -372,6 +378,7 @@ plugin-heading = Emongu’e nde mboguejyrã’i
 dictionary-heading = Emongu’e ne ñe’ẽryrukuéra
 locale-heading = Emongu’e ne ñe’ẽnguéra
 updates-heading = Eñangareko ne ñembohekopyahúre
+sitepermission-heading = Eñangareko tenda ñemoneĩre
 discover-heading = Emomba’e nde { -brand-short-name }
 shortcuts-heading = Eñangareko jepysokue jeike pya’eháre
 default-heading-search-label = Ehekave moĩmbaha

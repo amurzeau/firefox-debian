@@ -37,6 +37,9 @@ about-addressbook-books-context-remove =
 about-addressbook-books-context-startup-default =
     .label = Carpeta de inicio predeterminada
 about-addressbook-confirm-delete-book-title = Borrar libreta de direcciones
+# Variables:
+# $name (String) - Name of the address book to be deleted.
+about-addressbook-confirm-delete-book = ¿Estás seguro de que deseas eliminar { $name } y todos los contactos?
 about-addressbook-confirm-remove-remote-book-title = Eliminar libreta de direcciones
 # Variables:
 # $name (String) - Name of the remote address book to be removed.
@@ -54,6 +57,8 @@ about-addressbook-sort-button =
     .title = Cambiar el orden de la lista
 about-addressbook-name-format-display =
     .label = Mostrar nombre
+about-addressbook-name-format-firstlast =
+    .label = Nombre y apellido
 about-addressbook-name-format-lastfirst =
     .label = Apellido, nombre
 about-addressbook-sort-name-ascending =
@@ -64,13 +69,26 @@ about-addressbook-sort-email-ascending =
     .label = Ordenar por dirección de correo electrónico (A > Z)
 about-addressbook-sort-email-descending =
     .label = Ordenar por dirección de correo electrónico (Z > A)
+about-addressbook-cards-context-write =
+    .label = Escribir
 about-addressbook-confirm-delete-mixed-title = Eliminar contactos y listas
+# Variables:
+# $count (Number) - The number of contacts and lists to be deleted. Always greater than 1.
+about-addressbook-confirm-delete-mixed = ¿Estás seguro de que deseas eliminar estos { $count } contactos y listas?
 # Variables:
 # $count (Number) - The number of lists to be deleted.
 about-addressbook-confirm-delete-lists-title =
     { $count ->
         [one] Eliminar lista
        *[other] Eliminar listas
+    }
+# Variables:
+# $count (Number) - The number of lists to be deleted.
+# $name (String) - The name of the list to be deleted, if $count is 1.
+about-addressbook-confirm-delete-lists =
+    { $count ->
+        [one] ¿Estás seguro de que deseas eliminar la lista { $name }?
+       *[other] ¿Estás seguro de que deseas eliminar estas { $count } listas?
     }
 # Variables:
 # $count (Number) - The number of contacts to be removed.
@@ -80,11 +98,28 @@ about-addressbook-confirm-remove-contacts-title =
        *[other] Eliminar contactos
     }
 # Variables:
+# $count (Number) - The number of contacts to be removed.
+# $name (String) - The name of the contact to be removed, if $count is 1.
+# $list (String) - The name of the list that contacts will be removed from.
+about-addressbook-confirm-remove-contacts =
+    { $count ->
+        [one] ¿Estás seguro de que deseas eliminar a { $name } de { $list }?
+       *[other] ¿Estás seguro de que deseas eliminar estos { $count } contactos de { $list }?
+    }
+# Variables:
 # $count (Number) - The number of contacts to be deleted.
 about-addressbook-confirm-delete-contacts-title =
     { $count ->
         [one] Borrar contacto
        *[other] Borrar contactos
+    }
+# Variables:
+# $count (Number) - The number of contacts to be deleted.
+# $name (String) - The name of the contact to be deleted, if $count is 1.
+about-addressbook-confirm-delete-contacts =
+    { $count ->
+        [one] ¿Estás seguro de que deseas eliminar el contacto { $name }?
+       *[other] ¿Estás seguro de que deseas eliminar estos { $count } contactos?
     }
 
 ## Details
@@ -98,3 +133,14 @@ about-addressbook-details-home-address-header = Dirección de casa
 about-addressbook-details-work-address-header = Dirección del trabajo
 about-addressbook-details-other-info-header = Otra información
 about-addressbook-prompt-to-save-title = ¿Guardar cambios?
+about-addressbook-prompt-to-save = ¿Deseas guardar tus cambios?
+
+# Photo dialog
+
+about-addressbook-photo-drop-target = Suelta o pega una foto aquí, o haz clic para seleccionar un archivo.
+about-addressbook-photo-drop-loading = Cargando foto…
+about-addressbook-photo-drop-error = No se pudo cargar la foto.
+about-addressbook-photo-filepicker-title = Selecciona un archivo de imagen
+about-addressbook-photo-discard = Descartar foto existente
+about-addressbook-photo-cancel = Cancelar
+about-addressbook-photo-save = Guardar

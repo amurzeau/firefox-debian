@@ -99,13 +99,23 @@ appmenu-redirect-msg =
 
 context-menu-redirect-msg =
     .label = გადამისამართება
+mail-context-delete-messages =
+    .label =
+        { $count ->
+            [one] წერილების წაშლა
+           *[other] შერჩეული წერილების წაშლა
+        }
+context-menu-decrypt-to-folder =
+    .label = ასლი გაშიფრული სახით
+    .accesskey = ფ
 
 ## Message header pane
 
 other-action-redirect-msg =
     .label = გადამისამართება
-message-header-msg-is-flagged =
-    .title = ვარსკვლავიანი წერილი
+message-header-msg-flagged =
+    .title = ვარსკვლავიანი
+    .aria-label = ვარსკვლავიანი
 message-header-msg-not-flagged =
     .title = უვარსკვლავო წერილი
 
@@ -133,7 +143,7 @@ addon-removal-title = მოცილდეს { $name }?
 addon-removal-confirmation-button = მოცილება
 addon-removal-confirmation-message = მოცილდეს { $name } და გასუფთავდეს { -brand-short-name } მისი პარამეტრებისგან?
 caret-browsing-prompt-title = მაჩვენებლით გადაადგილება
-caret-browsing-prompt-text = F7-ზე დაჭერით ჩაირთვება ან გამოირთვება ტექსტში მაჩვენებლის გამოყენების შესაძლებლობა. ამის შედეგად, განთავსდება მოძრავი მაჩვენებელი, რომლის საშუალებითაც, ნებისმიერი ტექსტის კლავიატურით მონიშვნის შესაძლებლობა მოგეცემათ. გსურთ, ტექსტებში მაჩვენებლის გამოყენება?
+caret-browsing-prompt-text = F7 ღილაკით ირთვება ტექსტში მაჩვენებლის გამოყენების შესაძლებლობა. შედეგად, სხვადასხვა ტექსტში გამოჩნდება გადასაადგილებელი მაჩვენებელი, კლავიატურით მონიშვნისთვის. გსურთ, ტექსტებში მაჩვენებლის გამოყენება?
 caret-browsing-prompt-check-text = შეკითხვის გარეშე.
 repair-text-encoding-button =
     .label = ტექსტის კოდირების გასწორება
@@ -144,3 +154,7 @@ repair-text-encoding-button =
 no-reply-title = პასუხის გაცემა მხარდაუჭერელია
 no-reply-message = ჩანს, რომ მისამართი ({ $email }) ზედამხედველობის ქვეშ არაა. ამ მისამართზე გაგზავნილ პასუხებს, აღარავინ წაიკითხავს.
 no-reply-reply-anyway-button = პასუხის მიწერა მაინც
+
+## error messages
+
+decrypt-and-copy-failures = { $failures }, ჯამში { $total } წერილიდან ვერ გაიშიფრა და მათი ასლი არ აღებულა.

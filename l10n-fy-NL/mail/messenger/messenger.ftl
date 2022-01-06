@@ -2,6 +2,17 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## Window controls
+
+messenger-window-minimize-button =
+    .tooltiptext = Minimalisearje
+messenger-window-maximize-button =
+    .tooltiptext = Maksimalisearje
+messenger-window-restore-down-button =
+    .tooltiptext = Omleech opnij ynstelle
+messenger-window-close-button =
+    .tooltiptext = Slute
 # Variables:
 # $count (Number) - Number of unread messages.
 unread-messages-os-tooltip =
@@ -99,13 +110,23 @@ appmenu-redirect-msg =
 
 context-menu-redirect-msg =
     .label = Omliede
+mail-context-delete-messages =
+    .label =
+        { $count ->
+            [one] Berjocht fuortsmite
+           *[other] Selektearre berjochten fuortsmite
+        }
+context-menu-decrypt-to-folder =
+    .label = Kopiearje as ûntsifere nei
+    .accesskey = K
 
 ## Message header pane
 
 other-action-redirect-msg =
     .label = Omliede
-message-header-msg-is-flagged =
-    .title = Mei stjer markearre berjocht
+message-header-msg-flagged =
+    .title = Mei stjer
+    .aria-label = Mei stjer
 message-header-msg-not-flagged =
     .title = Net mei stjer markearre berjocht
 
@@ -144,3 +165,7 @@ repair-text-encoding-button =
 no-reply-title = Antwurdzjen net stipe
 no-reply-message = It antwurdadres ({ $email }) liket gjin kontrolearre adres te wêzen. Berjochten nei dit adres sille wierskynlik troch net ien lêzen wurde.
 no-reply-reply-anyway-button = Dochs antwurdzje
+
+## error messages
+
+decrypt-and-copy-failures = { $failures } fan { $total } berjochten koene net ûntsifere wurde en binne net kopiearre.

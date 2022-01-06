@@ -184,16 +184,31 @@ profiler-popup-capture-shortcut =
 # devtools/client/performance-new/popup/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
+profiler-popup-presets-web-developer-description = Веб-қолданбалардың көбін жөндеуге арналған, қосымша шығындары аз баптаулар жиынтығы.
 profiler-popup-presets-web-developer-label =
     .label = Веб-әзірлеуші
+profiler-popup-presets-firefox-platform-description = Firefox платформасын ішкі жөндеу үшін ұсынылған баптаулар.
 profiler-popup-presets-firefox-platform-label =
     .label = Firefox платформасы
+profiler-popup-presets-firefox-front-end-description = Firefox клиент бөілігін ішкі жөндеу үшін ұсынылған баптаулар.
+profiler-popup-presets-firefox-front-end-label =
+    .label = Firefox клиент бөлігі
+profiler-popup-presets-firefox-graphics-description = Firefox графикасы өнімділігін тексеру үшін ұсынылған баптаулар.
+profiler-popup-presets-firefox-graphics-label =
+    .label = Firefox графикасы
+profiler-popup-presets-media-description = Аудио және видео мәселелерін диагностикалау үшін ұсынылған баптаулар.
+profiler-popup-presets-firefox-description = { -brand-shorter-name } профильдеу үшін ұсынылатын баптаулар жиынтығы.
 profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
+profiler-popup-presets-graphics-description = { -brand-shorter-name } ішінде графика ақаулықтарын зерттеуге арналған баптаулар жиынтығы.
 profiler-popup-presets-graphics-label =
     .label = Графика
+profiler-popup-presets-media-description2 = { -brand-shorter-name } ішінде аудио және видео ақаулықтарын зерттеуге арналған баптаулар жиынтығы.
 profiler-popup-presets-media-label =
     .label = Медиа
+profiler-popup-presets-networking-description = { -brand-shorter-name } ішінде желі ақаулықтарын зерттеуге арналған баптаулар жиынтығы.
+profiler-popup-presets-networking-label =
+    .label = Желі
 profiler-popup-presets-custom-label =
     .label = Таңдауыңызша
 

@@ -2,6 +2,17 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## Window controls
+
+messenger-window-minimize-button =
+    .tooltiptext = Minimalizovat
+messenger-window-maximize-button =
+    .tooltiptext = Maximalizovat
+messenger-window-restore-down-button =
+    .tooltiptext = Obnovit z maximalizace
+messenger-window-close-button =
+    .tooltiptext = Zavřít
 # Variables:
 # $count (Number) - Number of unread messages.
 unread-messages-os-tooltip =
@@ -100,11 +111,27 @@ appmenu-redirect-msg =
 
 context-menu-redirect-msg =
     .label = Přesměrovat
+mail-context-delete-messages =
+    .label =
+        { $count ->
+            [one] Smazat zprávu
+            [few] Smazat vybrané zprávy
+           *[other] Smazat vybrané zprávy
+        }
+context-menu-decrypt-to-folder =
+    .label = Zkopírovat jako dešifrované do
+    .accesskey = f
 
 ## Message header pane
 
 other-action-redirect-msg =
     .label = Přesměrovat
+message-header-msg-flagged =
+    .title = S hvězdičkou
+    .aria-label = Označeno hvězdičkou
+message-header-msg-not-flagged =
+    .title = Bez hvězdičky
+    .aria-label = Neoznačeno hvězdičkou
 
 ## Action Button Context Menu
 
@@ -147,3 +174,12 @@ repair-text-encoding-button =
 no-reply-title = Adrese pro odpověď není podporovaná
 no-reply-message = Adresa pro odpověď ({ $email }) není sledovanou adresou. Zprávy odeslané na tuto adresu si nejspíše nikdo nepřečte.
 no-reply-reply-anyway-button = Přesto odpověď odeslat
+
+## error messages
+
+decrypt-and-copy-failures =
+    { $failures ->
+        [one] { $failures } z { $total } zpráv se nepodařilo dešifrovat a nemohla být zkopírována.
+        [few] { $failures } z { $total } zpráv se nepodařilo dešifrovat a nemohly být zkopírovány.
+       *[other] { $failures } z { $total } zpráv se nepodařilo dešifrovat a nemohlo být zkopírováno.
+    }

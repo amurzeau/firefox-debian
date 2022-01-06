@@ -134,6 +134,9 @@ addon-category-available-updates-title =
 addon-category-recent-updates = 最近更新
 addon-category-recent-updates-title =
     .title = 最近更新
+addon-category-sitepermission = 网站权限
+addon-category-sitepermission-title =
+    .title = 网站权限
 
 ## These are global warnings
 
@@ -281,6 +284,8 @@ dictionary-enabled-heading = 已启用
 dictionary-disabled-heading = 已禁用
 locale-enabled-heading = 已启用
 locale-disabled-heading = 已禁用
+sitepermission-enabled-heading = 已启用
+sitepermission-disabled-heading = 已禁用
 always-activate-button = 一律激活
 never-activate-button = 永不激活
 addon-detail-author-label = 作者
@@ -356,6 +361,7 @@ addon-permissions-optional = 附加功能的可选权限：
 addon-permissions-learnmore = 详细了解“权限”
 recommended-extensions-heading = 推荐扩展
 recommended-themes-heading = 推荐主题
+addon-sitepermissions-required = 授予 <span data-l10n-name="hostname">{ $hostname }</span> 以下功能：
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = 有好的创意？<a data-l10n-name="link">使用 Firefox Color 打造自己的主题。</a>
@@ -368,6 +374,7 @@ plugin-heading = 管理您的插件
 dictionary-heading = 管理您的字典
 locale-heading = 管理您的语言包
 updates-heading = 管理您的更新
+sitepermission-heading = 管理网站权限
 discover-heading = 让 { -brand-short-name } 有您的个性
 shortcuts-heading = 管理扩展快捷键
 default-heading-search-label = 寻找更多附加组件

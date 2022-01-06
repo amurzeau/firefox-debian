@@ -156,7 +156,7 @@ urlbar-star-edit-bookmark =
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
-    .tooltiptext = 为此页添加书签 ({ $shortcut })
+    .tooltiptext = 将此页面加入书签 ({ $shortcut })
 
 ## Page Action Context Menu
 
@@ -589,7 +589,7 @@ bookmarks-tools-menu-button-visibility =
            *[other] 添加书签菜单到工具栏
         }
 bookmarks-search =
-    .label = 在书签中搜索
+    .label = 搜索书签
 bookmarks-tools =
     .label = 书签工具
 bookmarks-bookmark-edit-panel =
@@ -737,10 +737,10 @@ picture-in-picture-hide-toggle =
 ## right-to-left languages should use "Left" and "Right" as in the English strings,
 
 picture-in-picture-move-toggle-right =
-    .label = 画中画切换按钮居右
+    .label = 右移画中画切换按钮
     .accesskey = R
 picture-in-picture-move-toggle-left =
-    .label = 画中画切换按钮居左
+    .label = 左移画中画切换按钮
     .accesskey = L
 
 ##

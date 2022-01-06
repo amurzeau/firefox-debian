@@ -226,13 +226,17 @@ newtab-discovery-empty-section-topstories-timed-out = Қап! Бұл санат�
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Әйгілі тақырыптар:
+newtab-pocket-new-topics-title = Көбірек оқиғаларды көргіңіз келе ме? { -pocket-brand-name } ұсынған келесі әйгілі темаларды қараңыз
 newtab-pocket-more-recommendations = Көбірек ұсыныстар
 newtab-pocket-learn-more = Көбірек білу
 newtab-pocket-cta-button = { -pocket-brand-name }-ті алу
 newtab-pocket-cta-text = Өзіңіз ұнатқан хикаяларды { -pocket-brand-name } ішіне сақтап, миіңізді тамаша оқумен толықтырыңыз.
+newtab-pocket-pocket-firefox-family = { -pocket-brand-name } өнімі { -brand-product-name } отбасының мүшесі болып табылады
 # A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save-to-pocket = { -pocket-brand-name } ішіне сақтау
 newtab-pocket-saved-to-pocket = { -pocket-brand-name } ішіне сақталды
+# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
+newtab-pocket-load-more-stories-button = Көбірек оқиғаларды жүктеу
 
 ## Pocket Final Card Section.
 ## This is for the final card in the Pocket grid.

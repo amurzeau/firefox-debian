@@ -864,6 +864,10 @@ sitedata-option-block-cross-site-tracking-cookies-including-social-media =
     .label = Guneen arteko jarraipen cookieak — sare sozialetako cookieak ere baditu
 sitedata-option-block-cross-site-cookies-including-social-media =
     .label = Guneen arteko cookieak — sare sozialetako cookieak ere baditu
+sitedata-option-block-cross-site-tracking-cookies =
+    .label = Guneen arteko jarraipen cookieak
+sitedata-option-block-cross-site-cookies =
+    .label = Guneen arteko jarraipen cookieak; bakartu guneen arteko beste cookieak
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Guneen arteko eta sare sozialetako jarraipen-elementuak; bakartu gainerako cookieak
 sitedata-option-block-unvisited =
@@ -1105,7 +1109,7 @@ space-alert-under-5gb-message2 = <strong>{ -brand-short-name } leku erabilgarrir
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = HTTPS-Only modua
-httpsonly-description = HTTPSk konexio seguru eta zifratua eskaintzen du { -brand-short-name } eta bisitatzen dituzun webguneen artean. Webgune gehienek HTTPS onartzen du eta HTTPS-Only modua gaituta badago, orduan { -brand-short-name }(e)k konexio guztiak HTTPSra bihurtuko ditu.
+httpsonly-description = HTTPSk konexio seguru eta zifratua eskaintzen du { -brand-short-name } eta bisitatzen dituzun webguneen artean. Webgune gehienek HTTPS onartzen dute eta HTTPS-Only modua gaituta badago, orduan { -brand-short-name }(e)k konexio guztiak HTTPSra bihurtuko ditu.
 httpsonly-learn-more = Argibide gehiago
 httpsonly-radio-enabled =
     .label = Gaitu HTTPS-Only modua leiho guztietan

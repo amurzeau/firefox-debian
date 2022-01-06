@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# Addressing widget
+## Addressing widget
 
 #   $type (String) - the type of the addressing row
 remove-address-row-button =
@@ -43,7 +43,7 @@ pill-action-expand-list =
     .label = Listeyi genişlet
     .accesskey = n
 
-# Attachment widget
+## Attachment widget
 
 ctrl-cmd-shift-pretty-prefix =
     { PLATFORM() ->
@@ -87,6 +87,10 @@ expand-attachment-pane-tooltip =
     .tooltiptext = Ek bölmesini göster ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
     .tooltiptext = Ek bölmesini gizle ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-show =
+    .title = Ek bölmesini göster ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-hide =
+    .title = Ek bölmesini gizle ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 drop-file-label-attachment =
     { $count ->
         [one] Dosya olarak ekle
@@ -98,7 +102,7 @@ drop-file-label-inline =
        *[other] Satır içi ekle
     }
 
-# Reorder Attachment Panel
+## Reorder Attachment Panel
 
 move-attachment-first-panel-button =
     .label = Başa taşı
@@ -112,14 +116,14 @@ button-return-receipt =
     .label = Alındı onayı
     .tooltiptext = Bu ileti için alındı onayı iste
 
-# Encryption
+## Encryption
 
 message-to-be-signed-icon =
     .alt = İletiyi imzala
 message-to-be-encrypted-icon =
     .alt = İletiyi şifrele
 
-# Addressing Area
+## Addressing Area
 
 to-compose-address-row-label =
     .value = Alıcı
@@ -223,3 +227,9 @@ encrypted-bcc-ignore-button = Anladım
 
 compose-tool-button-remove-text-styling =
     .tooltiptext = Metin stilini kaldır
+
+## FileLink messages
+
+# $provider (string) - name of the online storage service that reported the error
+# $filename (string) - name of the file that was renamed and caused the error
+cloud-file-rename-error-title = Yeniden adlandırma hatası

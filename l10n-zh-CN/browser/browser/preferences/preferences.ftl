@@ -56,9 +56,9 @@ close-button =
 
 ## Browser Restart Dialog
 
-feature-enable-requires-restart = 必须重新启动 { -brand-short-name } 才能启用此功能。
-feature-disable-requires-restart = 必须重新启动 { -brand-short-name } 才能禁用此功能。
-should-restart-title = 重新启动 { -brand-short-name }
+feature-enable-requires-restart = 必须重启 { -brand-short-name } 才能启用此功能。
+feature-disable-requires-restart = 必须重启 { -brand-short-name } 才能禁用此功能。
+should-restart-title = 重启 { -brand-short-name }
 should-restart-ok = 立即重启 { -brand-short-name }
 cancel-no-restart-button = 取消
 restart-later = 稍后重启浏览器
@@ -856,6 +856,10 @@ sitedata-option-block-cross-site-tracking-cookies-including-social-media =
     .label = 跨网站跟踪型 Cookie — 包括社交媒体跟踪器
 sitedata-option-block-cross-site-cookies-including-social-media =
     .label = 跨网站 Cookie — 包括社交媒体跟踪器
+sitedata-option-block-cross-site-tracking-cookies =
+    .label = 跨网站跟踪性 Cookie
+sitedata-option-block-cross-site-cookies =
+    .label = 跨网站跟踪性 Cookie，并隔离其余跨网站 Cookie
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = 跨网站和社交媒体跟踪器，并隔离其余的 Cookie
 sitedata-option-block-unvisited =
