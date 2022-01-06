@@ -7,6 +7,8 @@ privatebrowsingpage-open-private-window-label = Hapni Dritare Private
 about-private-browsing-search-placeholder = Kërkoni në Web
 about-private-browsing-info-title = Gjendeni në Dritare Private
 about-private-browsing-info-myths = Mite të rëndomtë mbi shfletimin privat
+about-private-browsing-search-btn =
+    .title = Kërkoni në web
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =
@@ -19,15 +21,20 @@ about-private-browsing-handoff-text = Kërkoni me { $engine } ose jepni adresë
 about-private-browsing-handoff-text-no-engine = Bëni kërkim ose jepni adresë
 about-private-browsing-not-private = Hëpërhë s'gjendeni në dritare private.
 about-private-browsing-info-description = { -brand-short-name }-i e spastron historikun tuaj të kërkimeve dhe shfletimit, kur dilni nga aplikacioni apo mbyllni krejt skedat dhe dritaret e Shfletimit Privat. Edhe pse kjo s’ju bën anonim përballë sajteve apo furnizuesit të shërbimit tuaj internet, e bën më të lehtë mbajtjen private të asaj çka bëni në internet, nga cilido tjetër që përdor këtë kompjuter.
-
 about-private-browsing-need-more-privacy = Ju duhet më tepër privatësi?
 about-private-browsing-turn-on-vpn = Provoni { -mozilla-vpn-brand-name }
-
+about-private-browsing-info-description-private-window = Dritare private: { -brand-short-name }-i spastron historikët tuaj të kërkimeve dhe shfletimit, kur mbyllni krejt dritaret private. Kjo nuk ju bën anonim.
+about-private-browsing-info-description-simplified = { -brand-short-name }-i spastron historikët tuaj të kërkimeve dhe shfletimit, kur mbyllni krejt dritaret private, por kjo nuk ju bën anonim.
+about-private-browsing-learn-more-link = Mësoni më tepër
+about-private-browsing-hide-activity = Fshihni veprimtarinë dhe vendndodhjen tuaj, kudo ku shfletoni
+about-private-browsing-get-privacy = Përfitoni mbrojtje të privatësisë, kudo ku shfletoni
+about-private-browsing-hide-activity-1 = Fshihni me { -mozilla-vpn-brand-name }-in veprimtari shfletimi dhe vendndodhje. Një klikim krijon një lidhje të sigurt, madje edhe në Wi-Fi publik.
+about-private-browsing-prominent-cta = Jini privat, me { -mozilla-vpn-brand-name }
 # This string is the title for the banner for search engine selection
 # in a private window.
 # Variables:
 #   $engineName (String) - The engine name that will currently be used for the private window.
-about-private-browsing-search-banner-title = { $engineName } është motori juaj parazgjedhje për kërkime në Dritare Private
+about-private-browsing-search-banner-title = { $engineName } është motori juaj parazgjedhje i kërkimeve në Dritare Private
 about-private-browsing-search-banner-description =
     { PLATFORM() ->
         [windows] Që të përzgjidhni një tjetër motor kërkimesh, shkoni te <a data-l10n-name="link-options">Mundësitë</a>

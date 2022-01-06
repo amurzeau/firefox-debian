@@ -5,6 +5,7 @@
 
 ## Header
 
+account-setup-success-title = Cuenta creada correctamente
 
 ## Form fields
 
@@ -17,8 +18,24 @@ account-setup-email-label = Dirección de correo electrónico
     .accesskey = D
 account-setup-email-input =
     .placeholder = john.doe@example.com
+account-setup-email-warning-icon =
+    .title = Dirección de correo electrónico no válido
+account-setup-password-label = Contraseña
+    .accesskey = C
+    .title = Opcional, solo es usará para validar el nombre de usuario
+account-provisioner-button = Obtener una nueva dirección de correo electrónico
+    .accesskey = O
+account-setup-password-toggle =
+    .title = Mostrar/ocultar contraseña
 account-setup-password-toggle-hide =
     .title = Ocultar contraseña
+account-setup-remember-password = Recordar contraseña
+    .accesskey = m
+account-setup-exchange-label = Tu inicio de sesión
+    .accesskey = i
+#   YOURDOMAIN refers to the Windows domain in ActiveDirectory. yourusername refers to the user's account name in Windows.
+account-setup-exchange-input =
+    .placeholder = TUDOMINIO\tunombredeusuario
 
 ## Action buttons
 
@@ -76,11 +93,16 @@ protocol-exchange-option = { account-setup-result-exchange }
 
 ## Incoming/Outgoing SSL Authentication options
 
+ssl-autodetect-option = Autodetectar
+ssl-no-authentication-option = Sin autenticación
+ssl-cleartext-password-option = Contraseña normal
 ssl-encrypted-password-option = Contraseña cifrada
 
 ## Incoming/Outgoing SSL options
 
 ssl-noencryption-option = Ninguno
+account-setup-auth-label = Método de autenticación:
+account-setup-username-label = Nombre de usuario:
 account-setup-advanced-setup-button = Configuración avanzada
     .accesskey = a
 
@@ -99,6 +121,10 @@ exchange-dialog-cancel-button = Cancelar
 
 ## Dismiss account creation dialog
 
+account-setup-no-account-checkbox = Usar { -brand-short-name } sin una cuenta de correo electrónico
+    .accesskey = U
+exit-dialog-cancel-button = Continuar la instalación
+    .accesskey = C
 
 ## Alert dialogs
 
@@ -110,6 +136,7 @@ account-setup-addon-install-title = Instalar
 
 ## Success view
 
+account-setup-settings-button = Ajustes de la cuenta
 account-setup-signature-button = Agregar una firma
 account-setup-dictionaries-button = Descargar diccionarios
 account-setup-button-finish = Finalizar

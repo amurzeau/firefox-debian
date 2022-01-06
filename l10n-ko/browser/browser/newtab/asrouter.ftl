@@ -12,33 +12,25 @@ cfr-doorhanger-feature-heading = 추천 기능
 
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = 왜 이게 나왔나요
-
 cfr-doorhanger-extension-cancel-button = 나중에
     .accesskey = N
-
 cfr-doorhanger-extension-ok-button = 지금 추가
     .accesskey = A
-
 cfr-doorhanger-extension-manage-settings-button = 추천 설정 관리
     .accesskey = M
-
 cfr-doorhanger-extension-never-show-recommendation = 이 추천을 표시하지 않음
     .accesskey = S
-
 cfr-doorhanger-extension-learn-more-link = 더 알아보기
-
 # This string is used on a new line below the add-on name
 # Variables:
 #   $name (String) - Add-on author name
 cfr-doorhanger-extension-author = { $name } 제작
-
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = 추천
 cfr-doorhanger-extension-notification2 = 추천
     .tooltiptext = 확장 기능 추천
     .a11y-announcement = 확장 기능 추천 사용 가능
-
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-feature-notification = 추천
@@ -63,8 +55,6 @@ cfr-doorhanger-extension-total-users =
        *[other] { $total } 사용자
     }
 
-## These messages are steps on how to use the feature and are shown together.
-
 ## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = 어디서나 북마크 동기화
@@ -85,30 +75,10 @@ cfr-protections-panel-link-text = 더 알아보기
 # This string is used by screen readers to offer a text based alternative for
 # the notification icon
 cfr-badge-reader-label-newfeature = 새 기능:
-
 cfr-whatsnew-button =
     .label = 새 기능
     .tooltiptext = 새 기능
-
 cfr-whatsnew-release-notes-link-text = 출시 정보 읽기
-
-## Search Bar
-
-## Picture-in-Picture
-
-## Permission Prompt
-
-## Fingerprinter Counter
-
-## Bookmark Sync
-
-## Login Sync
-
-## Send Tab
-
-## Firefox Send
-
-## Social Tracking Protection
 
 ## Enhanced Tracking Protection Milestones
 
@@ -121,20 +91,6 @@ cfr-doorhanger-milestone-heading2 =
     }
 cfr-doorhanger-milestone-ok-button = 모두 보기
     .accesskey = S
-
-## What’s New Panel Content for Firefox 76
-
-
-## Lockwise message
-
-## Vulnerable Passwords message
-
-## Picture-in-Picture fullscreen message
-
-## Protections Dashboard message
-
-## Better PDF message
-
 cfr-doorhanger-milestone-close-button = 닫기
     .accesskey = C
 
@@ -163,15 +119,37 @@ cfr-doorhanger-video-support-header = 동영상을 재생하려면 { -brand-shor
 cfr-doorhanger-video-support-primary-button = 지금 업데이트
     .accesskey = U
 
+## Spotlight modal shared strings
+
+spotlight-learn-more-collapsed = 더 알아보기
+    .title = 기능에 대해 더 알아보려면 확장하세요
+spotlight-learn-more-expanded = 더 알아보기
+    .title = 닫기
+
 ## VPN promotion dialog for public Wi-Fi users
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
 ## to the Mozilla VPN page and a link to dismiss the dialog.
 
+# This header text can be explicitly wrapped.
 spotlight-public-wifi-vpn-header = 공용 Wi-Fi를 사용 중인 것 같습니다
 spotlight-public-wifi-vpn-body = 위치 및 탐색 활동을 숨기려면 가상 사설망 (VPN)을 고려하세요. 공항 및 커피숍과 같은 공공 장소에서 탐색할 때 보호를 유지하는 데 도움이 됩니다.
 spotlight-public-wifi-vpn-primary-button = { -mozilla-vpn-brand-name }으로 사생활 보호 유지
     .accesskey = S
 spotlight-public-wifi-vpn-link = 나중에
     .accesskey = N
+
+## Total Cookie Protection Rollout
+
+# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
+# "Join an early experiment". This header text can be explicitly wrapped.
+spotlight-total-cookie-protection-header =
+    가장 강력한 개인 정보 보호 기능을
+    최초로 시험해 보세요
+spotlight-total-cookie-protection-body = 전체 쿠키 보호는 추적기가 쿠키를 사용하여 웹에서 사용자를 스토킹하는 것을 방지합니다.
+# "Early access" for this feature rollout means it's a "feature preview" or
+# "soft launch" as not everybody will get it yet.
+spotlight-total-cookie-protection-expanded = { -brand-short-name }는 쿠키 주위에 울타리를 치고 사용자가 있는 사이트로 제한하므로 추적기가 사용자를 팔로우하는 데 쿠키를 사용할 수 없습니다. 먼저 이용해 보시면 이 기능을 최적화하는데 도움이 되므로 저희가 모든 사용자를 위한 더 나은 웹을 계속 구축할 수 있습니다.
+spotlight-total-cookie-protection-primary-button = 전체 쿠키 보호 켜기
+spotlight-total-cookie-protection-secondary-button = 나중에

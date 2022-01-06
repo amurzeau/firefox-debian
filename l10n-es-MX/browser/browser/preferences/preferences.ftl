@@ -99,7 +99,7 @@ extension-controlled-enable = Para habilitar la extensión ve a complementos de 
 
 search-results-header = Buscar resultados
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
-search-results-empty-message2 = ¡Lo siento! No hay resultados en la Configuración para "<span data-l10n-name="query"></span>".
+search-results-empty-message2 = ¡Lo sentimos! No hay resultados en la Configuración para "<span data-l10n-name="query"></span>".
 search-results-help-link = ¿Necesitas ayuda? Visita <a data-l10n-name="url">Apoyo de { -brand-short-name }</a>
 
 ## General Section
@@ -132,6 +132,9 @@ open-new-link-as-tabs =
     .accesskey = w
 warn-on-close-multiple-tabs =
     .label = Avisarme al cerrar varias pestañas
+    .accesskey = m
+confirm-on-close-multiple-tabs =
+    .label = Confirmar antes de cerrar múltiples pestañas
     .accesskey = m
 # This string is used for the confirm before quitting preference.
 # Variables:
@@ -943,6 +946,14 @@ content-blocking-all-windows-tracking-content = Contenido de rastreo en todas la
 content-blocking-all-third-party-cookies = Todas las cookies de terceros
 content-blocking-cryptominers = Criptomineros
 content-blocking-fingerprinters = Huellas dactilares
+# "Test pilot" is used as a verb. Possible alternatives:
+# "Be the first to try", "Join an early experiment".
+content-blocking-etp-standard-tcp-rollout-checkbox =
+    .label = Prueba nuestra experiencia de privacidad más poderosa de la historia
+    .accesskey = T
+# "Contains" here means "isolates", "limits".
+content-blocking-etp-standard-tcp-rollout-description = La protección total contra las cookies contiene cookies para el sitio en el que está, así que los rastreadores no pueden usarlas para seguirte entre sitios.
+content-blocking-etp-standard-tcp-rollout-learn-more = Saber más
 content-blocking-warning-title = ¡Atención!
 content-blocking-and-isolating-etp-warning-description = Bloquear los rastreadores y aislar las cookies puede impactar en la funcionalidad de algunos sitios. Recarga una página con rastreadores para cargar todo el contenido.
 content-blocking-and-isolating-etp-warning-description-2 = Este ajuste puede hacer que algunos sitios web no muestren contenido o que no funcionen correctamente. Si un sitio parece roto, puede que desees desactivar la protección contra seguimiento para que ese sitio cargue todo el contenido.

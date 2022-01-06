@@ -50,9 +50,9 @@ about-addressbook-confirm-remove-remote-book = Θέλετε σίγουρα να 
 # Variables:
 # $name (String) - Name of the address book that will be searched.
 about-addressbook-search =
-    .placeholder = Αναζήτηση για { $name }
+    .placeholder = Αναζήτηση σε { $name }
 about-addressbook-search-all =
-    .placeholder = Αναζήτηση όλων των βιβλίων διευθύνσεων
+    .placeholder = Αναζήτηση σε όλα τα ευρετήρια
 about-addressbook-sort-button =
     .title = Αλλαγή σειράς λίστας
 about-addressbook-name-format-display =
@@ -134,3 +134,13 @@ about-addressbook-details-work-address-header = Διεύθυνση εργασί�
 about-addressbook-details-other-info-header = Άλλες πληροφορίες
 about-addressbook-prompt-to-save-title = Αποθήκευση αλλαγών;
 about-addressbook-prompt-to-save = Θέλετε να αποθηκεύσετε τις αλλαγές σας;
+
+# Photo dialog
+
+about-addressbook-photo-drop-target = Εναποθέστε ή επικολλήστε μια φωτογραφία εδώ ή κάντε κλικ για να επιλέξετε ένα αρχείο.
+about-addressbook-photo-drop-loading = Φόρτωση φωτογραφίας…
+about-addressbook-photo-drop-error = Αποτυχία φόρτωσης φωτογραφίας.
+about-addressbook-photo-filepicker-title = Επιλογή αρχείου εικόνας
+about-addressbook-photo-discard = Απόρριψη υπάρχουσας φωτογραφίας
+about-addressbook-photo-cancel = Ακύρωση
+about-addressbook-photo-save = Αποθήκευση

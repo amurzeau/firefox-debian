@@ -16,11 +16,6 @@ downloads-panel =
 # The style attribute has the width of the Downloads Panel expressed using
 # a CSS unit. The longest labels that should fit are usually those of
 # in-progress and blocked downloads.
-downloads-panel-list =
-    .style = width: 70ch
-# The style attribute has the width of the Downloads Panel expressed using
-# a CSS unit. The longest labels that should fit are usually those of
-# in-progress and blocked downloads.
 downloads-panel-items =
     .style = width: 35em
 downloads-cmd-pause =
@@ -41,9 +36,18 @@ downloads-cmd-show-menuitem =
 downloads-cmd-show-menuitem-mac =
     .label = Zobraziť vo Finderi
     .accesskey = F
+downloads-cmd-show-menuitem-2 =
+    .label =
+        { PLATFORM() ->
+            [macos] Zobraziť vo Finderi
+           *[other] Zobraziť v priečinku
+        }
+    .accesskey = b
 downloads-cmd-use-system-default =
     .label = Otvoriť v systémovom prehliadači
     .accesskey = V
+# We can use the same accesskey as downloads-cmd-always-open-similar-files.
+# Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-use-system-default =
     .label = Vždy otvoriť v systémovom prehliadači
     .accesskey = w
@@ -64,6 +68,29 @@ downloads-cmd-show-description =
         { PLATFORM() ->
             [macos] Zobraziť vo Finderi
            *[other] Otvoriť priečinok so súborom
+        }
+# We can use the same accesskey as downloads-cmd-always-use-system-default.
+# Both should not be visible in the downloads context menu at the same time.
+downloads-cmd-always-open-similar-files =
+    .label = Vždy otvárať podobné súbory
+    .accesskey = V
+downloads-cmd-show-button-2 =
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Zobraziť vo Finderi
+           *[other] Zobraziť v priečinku
+        }
+downloads-cmd-show-panel-2 =
+    .aria-label =
+        { PLATFORM() ->
+            [macos] Zobraziť vo Finderi
+           *[other] Zobraziť v priečinku
+        }
+downloads-cmd-show-description-2 =
+    .value =
+        { PLATFORM() ->
+            [macos] Zobraziť vo Finderi
+           *[other] Zobraziť v priečinku
         }
 downloads-cmd-show-downloads =
     .label = Otvoriť priečinok so stiahnutými súbormi
@@ -152,6 +179,23 @@ downloads-history =
 # that we are showing the details of a single download.
 downloads-details =
     .title = Podrobnosti o sťahovaní
+
+## Displayed when a site attempts to automatically download many files.
+## Variables:
+##   $num (number) - Number of blocked downloads.
+##   $url (string) - The url of the suspicious site, stripped of http, https and www prefix.
+
+downloads-files-not-downloaded =
+    { $num ->
+        [one] Súbor nebol stiahnutý.
+        [few] { $num } súbory neboli stiahnuté.
+       *[other] { $num } súborov nebolo stiahnutých.
+    }
+downloads-blocked-from-url = Sťahovanie je z adresy { $url } zablokované.
+downloads-blocked-download-detailed-info = Z adresy { $url } nastal pokus o automatické stiahnutie viacerých súborov. Stránka môže byť poškodená alebo sa pokúša uložiť nevyžiadané súbory do vášho zariadenia.
+
+##
+
 downloads-clear-downloads-button =
     .label = Vymazať zoznam
     .tooltiptext = Vymaže zoznam dokončených, zrušených a zlyhaných preberaní súborov
@@ -162,3 +206,13 @@ downloads-list-empty =
 # This string is shown when there are no items in the Downloads Panel.
 downloads-panel-empty =
     .value = Žiadne stiahnuté súbory v tejto relácii.
+# This is displayed in an item at the bottom of the Downloads Panel when there
+# are more downloads than can fit in the list in the panel.
+#   $count (number) - number of files being downloaded that are not shown in the
+#                     panel list.
+downloads-more-downloading =
+    { $count ->
+        [one] Sťahuje sa { $count } ďalší súbor
+        [few] Sťahujú sa { $count } ďalšie súbory
+       *[other] Sťahuje sa { $count } ďalších súborov
+    }

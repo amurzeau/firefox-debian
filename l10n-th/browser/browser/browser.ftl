@@ -518,7 +518,7 @@ urlbar-group-firefox-suggest =
 # Variables
 #  $engine (String): the name of the search engine providing the suggestions
 urlbar-group-search-suggestions =
-    .label = { $engine } ข้อเสนอแนะ
+    .label = ข้อเสนอแนะ { $engine }
 
 ## Full Screen and Pointer Lock UI
 
@@ -733,6 +733,19 @@ picture-in-picture-hide-toggle =
     .label = ซ่อนสลับภาพที่เล่นควบคู่
     .accesskey = อ
 
+## Since the default position for PiP controls does not change for RTL layout,
+## right-to-left languages should use "Left" and "Right" as in the English strings,
+
+picture-in-picture-move-toggle-right =
+    .label = เลื่อนภาพที่เล่นควบคู่สลับไปทางด้านขวา
+    .accesskey = R
+picture-in-picture-move-toggle-left =
+    .label = เลื่อนภาพที่เล่นควบคู่สลับไปทางด้านซ้าย
+    .accesskey = L
+
+##
+
+
 # Navigator Toolbox
 
 # This string is a spoken label that should not include
@@ -772,3 +785,9 @@ tabs-toolbar-new-tab =
 tabs-toolbar-list-all-tabs =
     .label = แสดงรายการแท็บทั้งหมด
     .tooltiptext = แสดงรายการแท็บทั้งหมด
+
+## Infobar shown at startup to suggest session-restore
+
+# <img data-l10n-name="icon"/> will be replaced by the application menu icon
+restore-session-startup-suggestion-message = <strong>ต้องการเปิดแท็บก่อนหน้าหรือไม่</strong> คุณสามารถเรียกคืนวาระก่อนหน้าได้จากเมนูแอปพลิเคชัน { -brand-short-name } <img data-l10n-name="icon"/> ภายใต้ ประวัติ
+restore-session-startup-suggestion-button = แสดงวิธีให้ฉันดู

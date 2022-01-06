@@ -9,6 +9,8 @@ search-header =
 search-header-shortcut =
     .key = f
 list-empty-get-extensions-message = Obtene extensiones e themas sur <a data-l10n-name="get-extensions">{ $domain }</a>
+list-empty-get-dictionaries-message = Obtene dictionarios sur <<a data-l10n-name="get-extensions">{ $domain }</a>
+list-empty-get-language-packs-message = Obtene pacchettos de linguas sur <<a data-l10n-name="get-extensions">{ $domain }</a>
 list-empty-installed =
     .value = Tu non ha additivos de iste typo installate
 list-empty-available-updates =
@@ -240,7 +242,7 @@ install-theme-button = Installar thema
 # the detailed add-on view is opened, from where the add-on can be managed.
 manage-addon-button = Gerer
 find-more-addons = Trovar altere additivos
-find-more-themes = Trova plus themas
+find-more-themes = Cercar plus themas
 # This is a label for the button to open the "more options" menu, it is only
 # used for screen readers.
 addon-options-button =

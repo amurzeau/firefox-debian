@@ -16,11 +16,6 @@ downloads-panel =
 # The style attribute has the width of the Downloads Panel expressed using
 # a CSS unit. The longest labels that should fit are usually those of
 # in-progress and blocked downloads.
-downloads-panel-list =
-    .style = width: 70ch
-# The style attribute has the width of the Downloads Panel expressed using
-# a CSS unit. The longest labels that should fit are usually those of
-# in-progress and blocked downloads.
 downloads-panel-items =
     .style = width: 35em
 downloads-cmd-pause =
@@ -41,9 +36,18 @@ downloads-cmd-show-menuitem =
 downloads-cmd-show-menuitem-mac =
     .label = Mostrar no Finder
     .accesskey = F
+downloads-cmd-show-menuitem-2 =
+    .label =
+        { PLATFORM() ->
+            [macos] Mostrar no Finder
+           *[other] Mostrar na pasta
+        }
+    .accesskey = M
 downloads-cmd-use-system-default =
     .label = Abrir no visualizador do sistema
     .accesskey = v
+# We can use the same accesskey as downloads-cmd-always-open-similar-files.
+# Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-use-system-default =
     .label = Abrir sempre no visualizador do sistema
     .accesskey = m
@@ -64,6 +68,29 @@ downloads-cmd-show-description =
         { PLATFORM() ->
             [macos] Mostrar no Finder
            *[other] Abrir pasta de destino
+        }
+# We can use the same accesskey as downloads-cmd-always-use-system-default.
+# Both should not be visible in the downloads context menu at the same time.
+downloads-cmd-always-open-similar-files =
+    .label = Abrir sempre ficheiros semelhantes
+    .accesskey = b
+downloads-cmd-show-button-2 =
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Mostrar no Finder
+           *[other] Mostrar na pasta
+        }
+downloads-cmd-show-panel-2 =
+    .aria-label =
+        { PLATFORM() ->
+            [macos] Mostrar no Finder
+           *[other] Mostrar na pasta
+        }
+downloads-cmd-show-description-2 =
+    .value =
+        { PLATFORM() ->
+            [macos] Mostrar no Finder
+           *[other] Mostrar na pasta
         }
 downloads-cmd-show-downloads =
     .label = Mostrar pasta de transferências
@@ -152,6 +179,22 @@ downloads-history =
 # that we are showing the details of a single download.
 downloads-details =
     .title = Detalhes da transferência
+
+## Displayed when a site attempts to automatically download many files.
+## Variables:
+##   $num (number) - Number of blocked downloads.
+##   $url (string) - The url of the suspicious site, stripped of http, https and www prefix.
+
+downloads-files-not-downloaded =
+    { $num ->
+        [one] Ficheiro não transferido
+       *[other] { $num } ficheiros não transferidos.
+    }
+downloads-blocked-from-url = Transferências de { $url } bloqueadas.
+downloads-blocked-download-detailed-info = { $url } tentou transferir automaticamente múltiplos ficheiros. O site pode estar com problemas ou a tentar armazenar ficheiros de spam no seu dispositivo.
+
+##
+
 downloads-clear-downloads-button =
     .label = Limpar transferências
     .tooltiptext = Limpa as transferências concluídas, canceladas e falhadas
@@ -162,3 +205,12 @@ downloads-list-empty =
 # This string is shown when there are no items in the Downloads Panel.
 downloads-panel-empty =
     .value = Sem transferências para esta sessão.
+# This is displayed in an item at the bottom of the Downloads Panel when there
+# are more downloads than can fit in the list in the panel.
+#   $count (number) - number of files being downloaded that are not shown in the
+#                     panel list.
+downloads-more-downloading =
+    { $count ->
+        [one] Está a ser transferido mais { $count } ficheiro
+       *[other] Estão a ser transferidos mais { $count } ficheiros
+    }

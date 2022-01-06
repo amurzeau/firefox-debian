@@ -76,12 +76,14 @@ menu-file-save-as-file =
 
 ## AppMenu
 
-appmenu-save-as-file =
-    .label = File…
 # Since v89 we dropped the platforms distinction between Options or Preferences
 # and consolidated everything with Preferences.
 appmenu-preferences =
     .label = Preferenze
+appmenu-save-as-file =
+    .label = File…
+appmenu-settings =
+    .label = Impostazioni
 appmenu-addons-and-themes =
     .label = Componenti aggiuntivi e temi
 appmenu-help-enter-troubleshoot-mode =
@@ -102,6 +104,10 @@ context-menu-redirect-msg =
 
 other-action-redirect-msg =
     .label = Reindirizza
+message-header-msg-is-flagged =
+    .title = Messaggio contrassegnato come speciale
+message-header-msg-not-flagged =
+    .title = Messaggio non contrassegnato come speciale
 
 ## Action Button Context Menu
 

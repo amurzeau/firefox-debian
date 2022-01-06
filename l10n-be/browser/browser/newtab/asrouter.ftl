@@ -125,15 +125,37 @@ cfr-doorhanger-video-support-header = Абнавіце { -brand-short-name } д�
 cfr-doorhanger-video-support-primary-button = Абнавіць зараз
     .accesskey = А
 
+## Spotlight modal shared strings
+
+spotlight-learn-more-collapsed = Падрабязней
+    .title = Разгарнiцe, каб даведацца больш пра гэтую функцыю
+spotlight-learn-more-expanded = Падрабязней
+    .title = Закрыць
+
 ## VPN promotion dialog for public Wi-Fi users
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
 ## to the Mozilla VPN page and a link to dismiss the dialog.
 
+# This header text can be explicitly wrapped.
 spotlight-public-wifi-vpn-header = Выглядае на тое, што вы карыстаецеся агульнадаступнай сеткай Wi-Fi
 spotlight-public-wifi-vpn-body = Каб схаваць сваё месцазнаходжанне і актыўнасць агляду, падумайце аб віртуальнай прыватнай сетцы. Гэта дапаможа абараніць вас пры агляданні ў грамадскіх месцах, такіх як аэрапорты і кавярні.
 spotlight-public-wifi-vpn-primary-button = Заставайцеся прыватнымі з { -mozilla-vpn-brand-name }
     .accesskey = ы
 spotlight-public-wifi-vpn-link = Не зараз
     .accesskey = Н
+
+## Total Cookie Protection Rollout
+
+# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
+# "Join an early experiment". This header text can be explicitly wrapped.
+spotlight-total-cookie-protection-header =
+    Выпрабуйце нашу самую магутную
+    ахову прыватнасці за ўвесь час
+spotlight-total-cookie-protection-body = Поўная ахова кукаў перашкаджае трэкерам выкарыстоўваць файлы кукі для сачэння за вамі ў інтэрнэце.
+# "Early access" for this feature rollout means it's a "feature preview" or
+# "soft launch" as not everybody will get it yet.
+spotlight-total-cookie-protection-expanded = { -brand-short-name } будуе плот вакол файлаў кукі, абмяжоўваючы іх толькі сайтам, на якім вы знаходзіцеся, таму трэкеры не могуць выкарыстоўваць іх, каб сачыць за вамі. З раннім доступам вы дапаможаце аптымізаваць гэту функцыю, каб мы маглі працягваць ствараць лепшае сеціва для ўсіх.
+spotlight-total-cookie-protection-primary-button = Уключыць поўную ахову кукаў
+spotlight-total-cookie-protection-secondary-button = Не зараз

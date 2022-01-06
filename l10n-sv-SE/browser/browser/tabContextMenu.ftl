@@ -11,6 +11,12 @@ reload-tab =
 select-all-tabs =
     .label = Välj alla flikar
     .accesskey = V
+tab-context-play-tab =
+    .label = Spela flik
+    .accesskey = S
+tab-context-play-tabs =
+    .label = Spela flikar
+    .accesskey = p
 duplicate-tab =
     .label = Duplicera flik
     .accesskey = D
@@ -105,7 +111,6 @@ tab-context-move-tabs =
            *[other] Flytta flikar
         }
     .accesskey = t
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

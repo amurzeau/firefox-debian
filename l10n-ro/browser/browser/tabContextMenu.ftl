@@ -11,6 +11,12 @@ reload-tab =
 select-all-tabs =
     .label = Selectează toate filele
     .accesskey = S
+tab-context-play-tab =
+    .label = Redă fila
+    .accesskey = l
+tab-context-play-tabs =
+    .label = Redă filele
+    .accesskey = y
 duplicate-tab =
     .label = Duplică fila
     .accesskey = D
@@ -111,7 +117,6 @@ tab-context-move-tabs =
            *[other] Mută filele
         }
     .accesskey = v
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

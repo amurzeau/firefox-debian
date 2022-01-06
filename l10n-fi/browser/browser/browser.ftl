@@ -514,6 +514,10 @@ urlbar-result-action-search-tabs = Etsi välilehdistä
 
 ## Labels shown above groups of urlbar results
 
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
 # A label shown above the search suggestions group in the urlbar results. It
 # should use title case.
 # Variables
@@ -727,6 +731,9 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Älä näytä tätä viestiä kun ponnahdusikkuna estetään
     .accesskey = Ä
+edit-popup-settings =
+    .label = Hallitse ponnahdusasetuksia…
+    .accesskey = p
 picture-in-picture-hide-toggle =
     .label = Piilota kuva kuvassa -kytkin
     .accesskey = P
@@ -773,4 +780,6 @@ tabs-toolbar-list-all-tabs =
 
 ## Infobar shown at startup to suggest session-restore
 
+# <img data-l10n-name="icon"/> will be replaced by the application menu icon
+restore-session-startup-suggestion-message = <strong>Haluatko avata aiemmat välilehdet?</strong> Voit palauttaa aiemman istunnon { -brand-short-name }in sovellusvalikosta <img data-l10n-name="icon"/> kohdasta Sivuhistoria.
 restore-session-startup-suggestion-button = Näytä ohje

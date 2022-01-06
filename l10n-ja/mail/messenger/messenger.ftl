@@ -71,12 +71,19 @@ folder-toolbar-toggle-folder-compact-view =
 redirect-msg-menuitem =
     .label = リダイレクト
     .accesskey = D
+menu-file-save-as-file =
+    .label = ファイル...
+    .accesskey = F
 
 ## AppMenu
 
 # Since v89 we dropped the platforms distinction between Options or Preferences
 # and consolidated everything with Preferences.
 appmenu-preferences =
+    .label = 設定
+appmenu-save-as-file =
+    .label = ファイル...
+appmenu-settings =
     .label = 設定
 appmenu-addons-and-themes =
     .label = アドオンとテーマ
@@ -98,6 +105,10 @@ context-menu-redirect-msg =
 
 other-action-redirect-msg =
     .label = リダイレクト
+message-header-msg-is-flagged =
+    .title = スター付きのメッセージ
+message-header-msg-not-flagged =
+    .title = スターなしのメッセージ
 
 ## Action Button Context Menu
 

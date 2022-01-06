@@ -9,6 +9,8 @@ search-header =
 search-header-shortcut =
     .key = f
 list-empty-get-extensions-message = Cewch estyniadau a themâu yn <a data-l10n-name="get-extensions">{ $domain }</a>
+list-empty-get-dictionaries-message = Cael geiriaduron o <a data-l10n-name="get-extensions">{ $domain }</a>
+list-empty-get-language-packs-message = Cael pecynnau iaith o <a data-l10n-name="get-extensions">{ $domain }</a>
 list-empty-installed =
     .value = Nid oes gennych ychwanegion o'r math yma wedi eu gosod
 list-empty-available-updates =
@@ -61,7 +63,7 @@ detail-private-browsing-on =
     .label = Caniatáu
     .tooltiptext = Caniatáu wrth Bori Preifat
 detail-private-browsing-off =
-    .label = Peidio Caniatáu
+    .label = Peidio â Chaniatáu
     .tooltiptext = Analluogi mewn Pori Preifat
 detail-home =
     .label = Tudalen Cartref
@@ -341,7 +343,7 @@ addon-badge-private-browsing-allowed2 =
     .aria-label = { addon-badge-private-browsing-allowed2.title }
 addon-detail-private-browsing-help = Pan mae'n cael ei ganiatáu, bydd yr estyniad ar gael i'ch gweithgareddau ar-lein tra byddwch yn pori'n breifat. <a data-l10n-name="learn-more"> Gwybod rhagor</a>
 addon-detail-private-browsing-allow = Caniatáu
-addon-detail-private-browsing-disallow = Peidio Caniatáu
+addon-detail-private-browsing-disallow = Peidio â Chaniatáu
 
 ## This is the tooltip text for the recommended badges for an extension in about:addons. The
 ## badge is a small icon displayed next to an extension when it is recommended on AMO.

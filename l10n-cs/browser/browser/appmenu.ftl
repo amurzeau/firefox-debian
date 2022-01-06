@@ -18,6 +18,22 @@ appmenuitem-update-banner3 =
     .label-update-unsupported = Nekompatibilní systém pro novou aktualizaci
     .label-update-restart = Nová aktualizace — restartovat
 appmenuitem-protection-dashboard-title = Přehled ochrany soukromí
+appmenuitem-banner-update-downloading =
+    .label =
+        Stahování aktualizace { -brand-shorter-name.gender ->
+            [masculine] { -brand-shorter-name(case: "gen") }
+            [feminine] { -brand-shorter-name(case: "gen") }
+            [neuter] { -brand-shorter-name(case: "gen") }
+           *[other] { "" }
+        }
+appmenuitem-banner-update-available =
+    .label = Nová aktualizace — stáhnout
+appmenuitem-banner-update-manual =
+    .label = Nová aktualizace — stáhnout
+appmenuitem-banner-update-unsupported =
+    .label = Nekompatibilní systém pro novou aktualizaci
+appmenuitem-banner-update-restart =
+    .label = Nová aktualizace — restartovat
 appmenuitem-new-tab =
     .label = Nový panel
 appmenuitem-new-window =
@@ -120,6 +136,12 @@ whatsnew-panel-footer-checkbox =
 profiler-popup-button-idle =
     .label = Profiler
     .tooltiptext = Záznam výkonu
+profiler-popup-button-recording =
+    .label = Profiler
+    .tooltiptext = Právě probíhá profilování
+profiler-popup-button-capturing =
+    .label = Profiler
+    .tooltiptext = Právě probíhá profilování
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -168,6 +190,48 @@ profiler-popup-capture-shortcut =
 # devtools/client/performance-new/popup/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
+profiler-popup-presets-web-developer-description = Doporučené nastavení s minimální režií pro ladění většiny webových aplikací.
+profiler-popup-presets-web-developer-label =
+    .label = Nástroje pro webové vývojáře
+profiler-popup-presets-firefox-platform-description = Doporučené nastavení pro interní platformy Firefoxu.
+profiler-popup-presets-firefox-platform-label =
+    .label = Firefox Platform
+profiler-popup-presets-firefox-front-end-description = Doporučené nastavení pro ladění rozhraní Firefoxu.
+profiler-popup-presets-firefox-front-end-label =
+    .label = Firefox Front-End
+profiler-popup-presets-firefox-graphics-description = Doporučené nastavení pro ladění grafického výkonu Firefoxu.
+profiler-popup-presets-firefox-graphics-label =
+    .label = Firefox Graphics
+profiler-popup-presets-media-description = Doporučené nastavení pro ladění problémů se zvukem a videem.
+profiler-popup-presets-firefox-description =
+    Doporučené nastavení pro profilování { -brand-shorter-name.gender ->
+        [masculine] { -brand-shorter-name(case: "gen") }
+        [feminine] { -brand-shorter-name(case: "gen") }
+        [neuter] { -brand-shorter-name(case: "gen") }
+       *[other] aplikace { -brand-shorter-name }
+    }.
+profiler-popup-presets-firefox-label =
+    .label = { -brand-shorter-name }
+profiler-popup-presets-graphics-description =
+    Doporučené nastavení pro ladění grafických chyb v { -brand-shorter-name.gender ->
+        [masculine] { -brand-shorter-name(case: "loc") }
+        [feminine] { -brand-shorter-name(case: "loc") }
+        [neuter] { -brand-shorter-name(case: "loc") }
+       *[other] aplikaci { -brand-shorter-name }
+    }.
+profiler-popup-presets-graphics-label =
+    .label = Grafika
+profiler-popup-presets-media-description2 =
+    Doporučené nastavení pro ladění chyb při přehrávání zvuku nebo videa v { -brand-shorter-name.gender ->
+        [masculine] { -brand-shorter-name(case: "loc") }
+        [feminine] { -brand-shorter-name(case: "loc") }
+        [neuter] { -brand-shorter-name(case: "loc") }
+       *[other] aplikaci { -brand-shorter-name }
+    }.
+profiler-popup-presets-media-label =
+    .label = Média
+profiler-popup-presets-custom-label =
+    .label = Vlastní
 
 ## History panel
 

@@ -120,15 +120,35 @@ cfr-doorhanger-video-support-header = עדכון { -brand-short-name } להפע�
 cfr-doorhanger-video-support-primary-button = עדכון כעת
     .accesskey = ע
 
+## Spotlight modal shared strings
+
+spotlight-learn-more-collapsed = מידע נוסף
+    .title = יש להרחיב כדי לקבל מידע נוסף על תכונה זו
+spotlight-learn-more-expanded = מידע נוסף
+    .title = סגירה
+
 ## VPN promotion dialog for public Wi-Fi users
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
 ## to the Mozilla VPN page and a link to dismiss the dialog.
 
+# This header text can be explicitly wrapped.
 spotlight-public-wifi-vpn-header = נראה שהתחברת לרשת אלחוטית ציבורית
 spotlight-public-wifi-vpn-body = כדי להסתיר את המיקום ואת פעילות הגלישה שלך, כדאי לשקול להשתמש ברשת וירטואלית פרטית (VPN). היא תסייע לך להתגונן בזמן גלישה במקומות ציבוריים כמו נמלי תעופה ובתי קפה.
 spotlight-public-wifi-vpn-primary-button = להישאר אנונימי עם { -mozilla-vpn-brand-name }
     .accesskey = ל
 spotlight-public-wifi-vpn-link = לא כעת
     .accesskey = ל
+
+## Total Cookie Protection Rollout
+
+# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
+# "Join an early experiment". This header text can be explicitly wrapped.
+spotlight-total-cookie-protection-header = נסו את חווית הפרטיות העוצמתית ביותר אי פעם שלנו
+spotlight-total-cookie-protection-body = הגנת עוגיות מלאה מונעת מרכיבי מעקב להשתמש בעוגיות כדי לעקוב אחריך ברחבי הרשת.
+# "Early access" for this feature rollout means it's a "feature preview" or
+# "soft launch" as not everybody will get it yet.
+spotlight-total-cookie-protection-expanded = ‏{ -brand-short-name } בונה גדר סביב עוגיות, ומבודד אותם לאתר שבו אתה נמצא, כך שעוגיות לא יכולות להשתמש בהן כדי לעקוב אחריך. הפעלת תכונה זו תסייע לנו לייעל אותה כדי שנוכל להמשיך לבנות אינטרנט טוב יותר עבור כולם.
+spotlight-total-cookie-protection-primary-button = הפעלת הגנת עוגיות מלאה
+spotlight-total-cookie-protection-secondary-button = לא כעת

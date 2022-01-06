@@ -16,11 +16,6 @@ downloads-panel =
 # The style attribute has the width of the Downloads Panel expressed using
 # a CSS unit. The longest labels that should fit are usually those of
 # in-progress and blocked downloads.
-downloads-panel-list =
-    .style = width: 70ch
-# The style attribute has the width of the Downloads Panel expressed using
-# a CSS unit. The longest labels that should fit are usually those of
-# in-progress and blocked downloads.
 downloads-panel-items =
     .style = width: 35em
 downloads-cmd-pause =
@@ -41,9 +36,18 @@ downloads-cmd-show-menuitem =
 downloads-cmd-show-menuitem-mac =
     .label = Dangos yn Finder
     .accesskey = F
+downloads-cmd-show-menuitem-2 =
+    .label =
+        { PLATFORM() ->
+            [macos] Dangos yn Finder
+           *[other] Dangos mewn Ffolder
+        }
+    .accesskey = D
 downloads-cmd-use-system-default =
     .label = Agor yn Narllenydd System
     .accesskey = N
+# We can use the same accesskey as downloads-cmd-always-open-similar-files.
+# Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-use-system-default =
     .label = Agor Bob Tro mewn Darllenydd System
     .accesskey = B
@@ -64,6 +68,29 @@ downloads-cmd-show-description =
         { PLATFORM() ->
             [macos] Dangos yn Finder
            *[other] Agor Ffolder Cynnwys
+        }
+# We can use the same accesskey as downloads-cmd-always-use-system-default.
+# Both should not be visible in the downloads context menu at the same time.
+downloads-cmd-always-open-similar-files =
+    .label = Agor Ffeiliau Tebyg Bob Tro
+    .accesskey = T
+downloads-cmd-show-button-2 =
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Dangos yn Finder
+           *[other] Dangos mewn Ffolder
+        }
+downloads-cmd-show-panel-2 =
+    .aria-label =
+        { PLATFORM() ->
+            [macos] Dangos yn Finder
+           *[other] Dangos mewn Ffolder
+        }
+downloads-cmd-show-description-2 =
+    .value =
+        { PLATFORM() ->
+            [macos] Dangos yn Finder
+           *[other] Dangos mewn Ffolder
         }
 downloads-cmd-show-downloads =
     .label = Dangos y Ffowleder Llwythi
@@ -152,6 +179,26 @@ downloads-history =
 # that we are showing the details of a single download.
 downloads-details =
     .title = Manylion y Llwytho i Lawr
+
+## Displayed when a site attempts to automatically download many files.
+## Variables:
+##   $num (number) - Number of blocked downloads.
+##   $url (string) - The url of the suspicious site, stripped of http, https and www prefix.
+
+downloads-files-not-downloaded =
+    { $num ->
+        [zero] Dim ffeiliau wedi'u llwytho i lawr.
+        [one] Ffeil heb ei llwytho i lawr.
+        [two] { $num } ffeil heb eu llwytho i lawr.
+        [few] { $num } ffeil heb eu llwytho i lawr.
+        [many] { $num } ffeil heb eu llwytho i lawr.
+       *[other] { $num } ffeil heb eu llwytho i lawr.
+    }
+downloads-blocked-from-url = Wedi rhwystro llwytho ffeiliau i lawr o { $url }.
+downloads-blocked-download-detailed-info = Ceisiodd { $url } lwytho ffeiliau lluosog i lawr yn awtomatig. Efallai fod y wefan wedi torri neu'n ceisio storio ffeiliau sbam ar eich dyfais.
+
+##
+
 downloads-clear-downloads-button =
     .label = Clirio'r Llwythi
     .tooltiptext = Yn clirio llwythi cwblhawyd, dilëwyd a methwyd
@@ -162,3 +209,16 @@ downloads-list-empty =
 # This string is shown when there are no items in the Downloads Panel.
 downloads-panel-empty =
     .value = Dim llwytho i lawr yn ystod y sesiwn yma.
+# This is displayed in an item at the bottom of the Downloads Panel when there
+# are more downloads than can fit in the list in the panel.
+#   $count (number) - number of files being downloaded that are not shown in the
+#                     panel list.
+downloads-more-downloading =
+    { $count ->
+        [zero] Dim rhagor o ffeiliau i'w llwytho i lawr
+        [one] { $count } ffeil arall yn llwytho i lawr
+        [two] { $count } ffeil arall yn llwytho i lawr
+        [few] { $count } ffeil arall yn llwytho i lawr
+        [many] { $count } ffeil arall yn llwytho i lawr
+       *[other] { $count } ffeil arall yn llwytho i lawr
+    }

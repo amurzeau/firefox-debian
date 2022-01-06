@@ -8,3 +8,30 @@ unknowncontenttype-settingschange =
             [windows] Sätteid saab muuta { -brand-short-name }i sätetes.
            *[other] Sätteid saab muuta { -brand-short-name }i eelistustes.
         }
+unknowncontenttype-intro = Avamiseks on valitud:
+unknowncontenttype-which-is = tüüp:
+unknowncontenttype-from = asukoht:
+unknowncontenttype-prompt = Kas soovid selle faili salvestada?
+unknowncontenttype-action-question = Mida peaks { -brand-short-name } selle failiga tegema?
+unknowncontenttype-open-with =
+    .label = Avama rakendusega
+    .accesskey = A
+unknowncontenttype-other =
+    .label = Muu...
+unknowncontenttype-choose-handler =
+    .label =
+        { PLATFORM() ->
+            [macos] Vali...
+           *[other] Otsi...
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [macos] V
+           *[other] O
+        }
+unknowncontenttype-save-file =
+    .label = Salvestama
+    .accesskey = S
+unknowncontenttype-remember-choice =
+    .label = Valitud toiming jäetakse antud tüüpi failide jaoks meelde
+    .accesskey = l

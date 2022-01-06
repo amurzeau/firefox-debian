@@ -11,6 +11,12 @@ reload-tab =
 select-all-tabs =
     .label = Selecionar todas as abas
     .accesskey = t
+tab-context-play-tab =
+    .label = Reproduzir som na aba
+    .accesskey = R
+tab-context-play-tabs =
+    .label = Reproduzir abas
+    .accesskey = p
 duplicate-tab =
     .label = Duplicar aba
     .accesskey = D
@@ -105,7 +111,6 @@ tab-context-move-tabs =
            *[other] Mover abas
         }
     .accesskey = v
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

@@ -717,23 +717,36 @@ ui-tour-info-panel-close =
 ##  $uriHost (String): URI host for which the popup was allowed or blocked.
 
 popups-infobar-allow =
-    .label = אפשר חלונות קופצים עבור { $uriHost }
-    .accesskey = ח
+    .label = לאפשר חלונות קופצים עבור { $uriHost }
+    .accesskey = א
 popups-infobar-block =
-    .label = חסימת חלונות קופצים עבור { $uriHost }
+    .label = לחסום חלונות קופצים עבור { $uriHost }
     .accesskey = ח
 
 ##
 
 popups-infobar-dont-show-message =
-    .label = אל תראה הודעה זו בעת חסימת חלונות קופצים
-    .accesskey = א
+    .label = לא להציג הודעה זו בעת חסימת חלונות קופצים
+    .accesskey = ל
 edit-popup-settings =
     .label = ניהול הגדרות של חלונות קופצים…
     .accesskey = ח
 picture-in-picture-hide-toggle =
     .label = הסתרת הכפתור של תמונה בתוך תמונה
     .accesskey = ה
+
+## Since the default position for PiP controls does not change for RTL layout,
+## right-to-left languages should use "Left" and "Right" as in the English strings,
+
+picture-in-picture-move-toggle-right =
+    .label = העברת הכפתור של תמונה בתוך תמונה לצד ימין
+    .accesskey = י
+picture-in-picture-move-toggle-left =
+    .label = העברת הכפתור של תמונה בתוך תמונה לצד שמאל
+    .accesskey = ש
+
+##
+
 
 # Navigator Toolbox
 

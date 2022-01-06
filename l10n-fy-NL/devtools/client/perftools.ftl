@@ -29,7 +29,7 @@ perftools-description-intro =
     Opnamen starte <a>profiler.firefox.com</a> yn in nij ljepblêd. Alle gegevens wurde lokaal
     bewarre, mar jo kinne derfoar kieze se op te laden om se te dielen.
 perftools-description-local-build =
-    As jo in build profilearje dy't jo sels, op dizze masine, kompilearre hawwe,
+    As jo in build profilearje dy’t jo sels, op dizze masine, kompilearre hawwe,
     foegje dan de objdir fan jo build oan de ûndersteande list ta, sadat
     dizze brûkt wurde kin om symboalynformaasje op te sykjen.
 
@@ -80,7 +80,7 @@ perftools-thread-compositor =
 perftools-thread-dom-worker =
     .title = Dit ferwurket sawol webworkers as serviceworkers
 perftools-thread-renderer =
-    .title = As WebRender ynskeakele is, de thread dy't OpenGL-oanroppen útfiert
+    .title = As WebRender ynskeakele is, de thread dy’t OpenGL-oanroppen útfiert
 perftools-thread-render-backend =
     .title = De WebRender RenderBackend-thread
 perftools-thread-paint-worker =
@@ -102,7 +102,7 @@ perftools-thread-task-controller =
 
 perftools-record-all-registered-threads = Boppesteande seleksje pasearje en alle registrearre threads opnimme
 perftools-tools-threads-input-label =
-    .title = Dizze threadnammen binne in kommaskieden list, dy't brûkt wurdt om it profilearjen fan de threads yn de profiler mooglik te meitsjen. De namme hoecht mar in part oerien te kommen mei de threadnamme om opnommen te wurden. Gefoelich foar wytromte.
+    .title = Dizze threadnammen binne in kommaskieden list, dy’t brûkt wurdt om it profilearjen fan de threads yn de profiler mooglik te meitsjen. De namme hoecht mar in part oerien te kommen mei de threadnamme om opnommen te wurden. Gefoelich foar wytromte.
 
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
@@ -129,8 +129,13 @@ perftools-presets-firefox-front-end-label = Firefox-front-end
 perftools-presets-firefox-front-end-description = Oanrekommandearre foarynstelling foar ynterne flateropspoaring yn it front-end fan Firefox.
 perftools-presets-firefox-graphics-label = Firefox-grafysk
 perftools-presets-firefox-graphics-description = Oanrekommandearre foarynstelling foar ûndersyk nei grafyske prestaasjes fan Firefox.
+perftools-presets-firefox-label = { -brand-shorter-name }
+perftools-presets-firefox-description = Oanrekommandearre foarynstelling foar profilearjen { -brand-shorter-name }.
+perftools-presets-graphics-label = Grafysk
+perftools-presets-graphics-description = Foarynstelling foar it ûndersykjen fan grafyske bugs yn { -brand-shorter-name }.
 perftools-presets-media-label = Media
 perftools-presets-media-description = Oanrekommandearre foarynstelling foar it analysearjen fan audio- en fideoproblemen.
+perftools-presets-media-description2 = Foarynstelling foar it ûndersykjen fan audio- en fideobugs yn { -brand-shorter-name }.
 perftools-presets-custom-label = Oanpast
 
 ##

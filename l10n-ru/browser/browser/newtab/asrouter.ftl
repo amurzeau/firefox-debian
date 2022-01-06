@@ -70,8 +70,8 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
 
 ## Protections panel
 
-cfr-protections-panel-header = Сёрфите по Интернету без слежки
-cfr-protections-panel-body = Храните свои данные при себе. { -brand-short-name } защитит вас от многих наиболее известных трекеров, которые следят за вашим поведением в Интернете.
+cfr-protections-panel-header = Работайте в Интернете без слежки
+cfr-protections-panel-body = Храните свои данные при себе. { -brand-short-name } защищает вас от большинства наиболее известных трекеров, которые следят за вами в Интернете.
 cfr-protections-panel-link-text = Подробнее
 
 ## What's New toolbar button and panel
@@ -111,7 +111,7 @@ cfr-doorhanger-doh-secondary-button = Отключить
 
 ## Fission Experiment Message
 
-cfr-doorhanger-fission-body-approved = Ваша приватность имеет значение. { -brand-short-name } теперь изолирует веб-сайты друг от друга, помещая их в так называемые «песочницы», так что теперь хакерам станет труднее украсть пароли, данные банковских карт и другую важную для вас информацию.
+cfr-doorhanger-fission-body-approved = Ваша приватность имеет значение. { -brand-short-name } теперь изолирует веб-сайты друг от друга, помещая их в так называемые «песочницы», что усложняет кражу хакерами паролей, данных банковских карт и другой вашей личной информации.
 cfr-doorhanger-fission-header = Изоляция сайта
 cfr-doorhanger-fission-primary-button = OK, понятно
     .accesskey = я
@@ -125,15 +125,37 @@ cfr-doorhanger-video-support-header = Для воспроизведения ви
 cfr-doorhanger-video-support-primary-button = Обновить сейчас
     .accesskey = с
 
+## Spotlight modal shared strings
+
+spotlight-learn-more-collapsed = Подробнее
+    .title = Разверните, чтобы узнать больше об этой функции
+spotlight-learn-more-expanded = Подробнее
+    .title = Закрыть
+
 ## VPN promotion dialog for public Wi-Fi users
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
 ## to the Mozilla VPN page and a link to dismiss the dialog.
 
+# This header text can be explicitly wrapped.
 spotlight-public-wifi-vpn-header = Похоже, что вы используете общедоступный Wi-Fi
 spotlight-public-wifi-vpn-body = Чтобы скрыть свое местоположение и активность в Интернете, рассмотрите возможность использования виртуальной частной сети (VPN). Это поможет защитить вас при работе в Интернете в общественных местах, таких как аэропорты и кафе.
 spotlight-public-wifi-vpn-primary-button = Сохраняйте приватность с { -mozilla-vpn-brand-name }
     .accesskey = п
 spotlight-public-wifi-vpn-link = Не сейчас
     .accesskey = е
+
+## Total Cookie Protection Rollout
+
+# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
+# "Join an early experiment". This header text can be explicitly wrapped.
+spotlight-total-cookie-protection-header =
+    Испытайте первыми нашу самую мощную 
+    за всё время защиту приватности
+spotlight-total-cookie-protection-body = Полная защита от кук не позволяет трекерам использовать куки, чтобы преследовать вас в сети.
+# "Early access" for this feature rollout means it's a "feature preview" or
+# "soft launch" as not everybody will get it yet.
+spotlight-total-cookie-protection-expanded = { -brand-short-name } огораживает куки, ограничивая их только сайтом, на котором вы находитесь, чтобы трекеры не могли использовать их для слежки за вами. Благодаря раннему доступу вы помогаете оптимизировать эту функцию, чтобы мы продолжали создавать лучший Интернет для всех и каждого.
+spotlight-total-cookie-protection-primary-button = Включить Полную защиту от кук
+spotlight-total-cookie-protection-secondary-button = Не сейчас

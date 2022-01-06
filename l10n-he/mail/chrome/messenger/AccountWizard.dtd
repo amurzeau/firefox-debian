@@ -11,13 +11,12 @@
 
 <!ENTITY accountSetupInfo2.label "בכדי לקבל הודעות, עליך להגדיר חשבון תחילה.">
 <!ENTITY accountTypeTitle.label "הגדרת חשבון חדש">
-<!ENTITY accountTypeDesc2.label "אשף זה יאסוף את המידע הנחוץ להגדרת חשבון. אם אינך יודע את המידע המבוקש, נא פנה למנהל המערכת או לספק האינטרנט שלך.">
-<!ENTITY accountTypeDirections.label "בחר בסוג החשבון שברצונך להגדיר:">
+<!ENTITY accountTypeDesc2.label "אשף זה יאסוף את המידע הנחוץ להגדרת חשבון. אם לא ידוע לך המידע המבוקש, נא לפנות למנהל המערכת או לספק האינטרנט שלך.">
+<!ENTITY accountTypeDirections.label "נא לבחןר בסוג החשבון שברצונך להגדיר:">
 <!ENTITY accountTypeMail.label "חשבון דוא״ל">
 <!ENTITY accountTypeMail.accesskey "ד">
 <!ENTITY accountTypeNews.label "חשבון קבוצות דיון">
 <!ENTITY accountTypeNews.accesskey "ק">
-<!-- LOCALIZATION NOTE(accountTypeMovemail.label): do not translate 'Movemail' -->
 
 <!-- Entities for Identity page -->
 
@@ -25,13 +24,13 @@
 <!ENTITY identityDesc.label "לכל חשבון יש זהות, שהיא המידע שמזהה אותך לאחרים כשהם מקבלים הודעות ממך.">
 
 <!-- LOCALIZATION NOTE (fullnameDesc.label) : do not translate two of "&quot;" in below line -->
-<!ENTITY fullnameDesc.label "הכנס את השם שתרצה שיופיע בשדה &quot;מאת&quot; של ההודעות היוצאות שלך">
+<!ENTITY fullnameDesc.label "נא להכניס את השם שברצונך שיופיע בשדה &quot;מאת&quot; של ההודעות היוצאות שלך">
 <!-- LOCALIZATION NOTE (fullnameExample.label) : use following directions for below line
   1, do not translate two of "&quot;"
   2, Use localized full name instead of "John Smith"
 -->
 <!ENTITY fullnameExample.label "(לדוגמה, &quot;אלמוני פלמוני&quot;)">
-<!ENTITY fullnameLabel.label "שמך:">
+<!ENTITY fullnameLabel.label "השם שלך:">
 <!ENTITY fullnameLabel.accesskey "ש">
 
 <!ENTITY emailLabel.label "כתובת דוא״ל:">
@@ -40,7 +39,7 @@
 <!-- Entities for Incoming Server page -->
 
 <!ENTITY incomingTitle.label "פרטי השרת הנכנס">
-<!ENTITY incomingServerTypeDesc.label "בחר את הסוג של שרת נכנס בו אתה משתמש.">
+<!ENTITY incomingServerTypeDesc.label "נא לבחור את הסוג של השרת הנכנס שבו ייעשה שימוש.">
 <!-- LOCALIZATION NOTE (imapType.label) : Do not translate "IMAP" in below line -->
 <!ENTITY imapType.label "IMAP">
 <!ENTITY imapType.accesskey "I">
@@ -58,7 +57,7 @@
 <!ENTITY incomingServer.label "שרת נכנס:">
 <!ENTITY incomingServer.accesskey "נ">
 <!-- LOCALIZATION NOTE (incomingUsername.description) : do not translate "&quot;jsmith&quot;" in below line -->
-<!ENTITY incomingUsername.description "נא להקליד את שם המשתמש לדואר הנכנס שסופק לך על ידי ספק הדוא״ל (למשל „jsmith”).">
+<!ENTITY incomingUsername.description "נא להכניס את שם המשתמש לדואר הנכנס שסופק לך על ידי ספק הדוא״ל (למשל &quot;jsmith&quot;).">
 <!ENTITY incomingUsername.label "שם משתמש:">
 <!ENTITY incomingUsername.accesskey "ש">
 <!-- LOCALIZATION NOTE (newsServerNameDesc.label) : Do not translate "NNTP" or the "&quot;" entities in below line -->
@@ -70,10 +69,10 @@
 
 <!ENTITY outgoingTitle.label "פרטי השרת היוצא">
 <!-- LOCALIZATION NOTE (outgoingServer.description) : Do not translate "SMTP" and "&quot;smtp.example.net&quot;" in below line -->
-<!ENTITY outgoingServer.description "נא להקליד את שם המשתמש של שרת הדואר היוצא שלך (SMTP) (למשל: „smtp.example.net”).">
+<!ENTITY outgoingServer.description "נא להכניס את שם המשתמש של שרת הדואר היוצא שלך (SMTP) (למשל: &quot;smtp.example.net&quot;).">
 <!ENTITY outgoingServer.label "שרת יוצא:">
 <!ENTITY outgoingServer.accesskey "י">
-<!ENTITY outgoingUsername.description "נא להקליד את שם המשתמש לדואר יוצא שסופק לך על ידי ספק הדוא״ל (בדרך כלל מדובר באותו השם כמו שם המשתמש בשרת הנכנס).">
+<!ENTITY outgoingUsername.description "נא להכניס את שם המשתמש לדואר יוצא שסופק לך על ידי ספק הדוא״ל (בדרך כלל מדובר באותו השם כמו שם המשתמש בשרת הנכנס).">
 <!ENTITY outgoingUsername.label "שם משתמש יוצא:">
 <!ENTITY outgoingUsername.accesskey "צ">
 
@@ -104,22 +103,22 @@
 
 <!ENTITY accnameTitle.label "שם החשבון">
 <!-- LOCALIZATION NOTE (accnameDesc.label) : do not translate any "&quot;" in below line -->
-<!ENTITY accnameDesc.label "הכנס את השם שבעזרתו תרצה להתייחס לחשבון זה (לדוגמה, &quot;חשבון עבודה&quot;, &quot;חשבון בית&quot;, &quot;חשבון קבוצות דיון&quot;)">
+<!ENTITY accnameDesc.label "נא להכניס את השם שבעזרתו ברצונך להתייחס לחשבון זה (לדוגמה, &quot;חשבון עבודה&quot;, &quot;חשבון בית&quot; או &quot;חשבון קבוצות דיון&quot;).">
 <!ENTITY accnameLabel.label "שם החשבון:">
 <!ENTITY accnameLabel.accesskey "A">
 
 <!-- Entities for Done (Congratulations) page -->
 
 <!ENTITY completionTitle.label "ברכותינו!">
-<!ENTITY completionText.label "אנא בדוק שהמידע שלהלן נכון.">
+<!ENTITY completionText.label "נא לוודא שהמידע שלהלן נכון.">
 <!ENTITY serverTypePrefix.label "סוג שרת נכנס:">
 <!ENTITY serverNamePrefix.label "שם שרת נכנס:">
 <!ENTITY smtpServerNamePrefix.label "שם שרת יוצא (SMTP):">
 <!ENTITY newsServerNamePrefix.label "שם שרת קבוצות דיון (NNTP):">
-<!ENTITY downloadOnLogin.label "הורד הודעות כעת">
+<!ENTITY downloadOnLogin.label "הורדת הודעות כעת">
 <!ENTITY downloadOnLogin.accesskey "ה">
-<!ENTITY deferStorageDesc.label "בטל את הסימון מתיבת סימון זאת כדי לאכסן דואר עבור חשבון זה בתיקיה נפרדת. זה יגרום לחשבון זה להופיע כחשבון בחלק העליון. אחרת, זה יהיה חלק מחשבון תיבת הדואר הנכנס הכללית בתיקיות מקומיות.">
-<!ENTITY deferStorage.label "השתמש בתיבת דואר נכנס כללית (אחסן דואר בתיקיות מקומיות)">
+<!ENTITY deferStorageDesc.label "יש לבטל את הסימון מתיבת סימון זאת כדי לאחסן דואר עבור חשבון זה בתיקייה נפרדת. פעולה זו תגרום לחשבון זה להופיע כחשבון בחלק העליון. אחרת, זה יהיה חלק מחשבון תיבת הדואר הנכנס הכללית בתיקיות מקומיות.">
+<!ENTITY deferStorage.label "שימוש בתיבת דואר נכנס כללית (אחסון דואר בתיקיות מקומיות)">
 <!ENTITY deferStorage.accesskey "כ">
-<!ENTITY clickFinish.label "לחץ על סיום כדי לשמור הגדרות אלה ולצאת מאשף החשבונות.">
-<!ENTITY clickFinish.labelMac "לחץ על סיום כדי לשמור את ההגדרות הללו ולצאת מאשף החשבונות.">
+<!ENTITY clickFinish.label "יש ללחוץ על סיום כדי לשמור הגדרות אלה ולצאת מאשף החשבונות.">
+<!ENTITY clickFinish.labelMac "יש ללחוץ על סיום כדי לשמור הגדרות אלה ולצאת מאשף החשבונות.">

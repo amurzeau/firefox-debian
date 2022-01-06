@@ -76,12 +76,14 @@ menu-file-save-as-file =
 
 ## AppMenu
 
-appmenu-save-as-file =
-    .label = Bestân…
 # Since v89 we dropped the platforms distinction between Options or Preferences
 # and consolidated everything with Preferences.
 appmenu-preferences =
     .label = Foarkarren
+appmenu-save-as-file =
+    .label = Bestân…
+appmenu-settings =
+    .label = Ynstellingen
 appmenu-addons-and-themes =
     .label = Add-ons en tema’s
 appmenu-help-enter-troubleshoot-mode =
@@ -102,6 +104,10 @@ context-menu-redirect-msg =
 
 other-action-redirect-msg =
     .label = Omliede
+message-header-msg-is-flagged =
+    .title = Mei stjer markearre berjocht
+message-header-msg-not-flagged =
+    .title = Net mei stjer markearre berjocht
 
 ## Action Button Context Menu
 
