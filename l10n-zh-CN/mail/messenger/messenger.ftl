@@ -2,6 +2,17 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## Window controls
+
+messenger-window-minimize-button =
+    .tooltiptext = 最小化
+messenger-window-maximize-button =
+    .tooltiptext = 最大化
+messenger-window-restore-down-button =
+    .tooltiptext = 向下还原
+messenger-window-close-button =
+    .tooltiptext = 关闭
 # Variables:
 # $count (Number) - Number of unread messages.
 unread-messages-os-tooltip =
@@ -98,13 +109,22 @@ appmenu-redirect-msg =
 
 context-menu-redirect-msg =
     .label = 重定向
+mail-context-delete-messages =
+    .label =
+        { $count ->
+           *[other] 删除选择的消息？
+        }
+context-menu-decrypt-to-folder =
+    .label = 复制解密消息到
+    .accesskey = y
 
 ## Message header pane
 
 other-action-redirect-msg =
     .label = 重定向
-message-header-msg-is-flagged =
-    .title = 星标邮件
+message-header-msg-flagged =
+    .title = 已加星标
+    .aria-label = 已加星标
 message-header-msg-not-flagged =
     .title = 非星标邮件
 
@@ -143,3 +163,7 @@ repair-text-encoding-button =
 no-reply-title = 不支持回复
 no-reply-message = 邮件的回复地址（{ $email }）看起来不像是有人会收件的地址。发送到此地址的邮件，不大可能被人阅读。
 no-reply-reply-anyway-button = 仍然回复
+
+## error messages
+
+decrypt-and-copy-failures = 共计 { $total } 条消息，有 { $failures } 条因解密失败而未复制。

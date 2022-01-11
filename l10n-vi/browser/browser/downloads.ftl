@@ -139,7 +139,7 @@ downloads-cmd-choose-open-panel =
 # Displayed when hovering a blocked download, indicates that it's possible to
 # show more information for user to take the next action.
 downloads-show-more-information =
-    .value = Hiện thêm thông tin
+    .value = Hiển thị thêm thông tin
 # Displayed when hovering a complete download, indicates that it's possible to
 # open the file using an app available in the system.
 downloads-open-file =
@@ -158,6 +158,8 @@ downloading-file-opens-in-minutes = Sẽ mở sau { $minutes } phút…
 downloading-file-opens-in-minutes-and-seconds = Sẽ mở sau { $minutes } phút { $seconds } giây…
 downloading-file-opens-in-seconds = Sẽ mở sau { $seconds } giây…
 downloading-file-opens-in-some-time = Sẽ mở sau khi hoàn thành…
+downloading-file-click-to-open =
+    .value = Mở khi hoàn thành
 
 ##
 

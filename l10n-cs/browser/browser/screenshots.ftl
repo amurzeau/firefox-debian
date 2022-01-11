@@ -15,6 +15,14 @@ screenshots-download-button = Stáhnout
 screenshots-download-button-tooltip = Stáhnout snímek
 screenshots-copy-button = Kopírovat
 screenshots-copy-button-tooltip = Zkopírovat snímek do schránky
+screenshots-download-button-title =
+    .title = Stáhnout snímek
+screenshots-copy-button-title =
+    .title = Zkopírovat snímek do schránky
+screenshots-cancel-button-title =
+    .title = Zrušit
+screenshots-retry-button-title =
+    .title = Zkusit snímek pořídit znovu
 screenshots-meta-key =
     { PLATFORM() ->
         [macos] ⌘

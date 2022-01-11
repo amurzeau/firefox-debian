@@ -11,6 +11,8 @@
 
 ## Application Menu (macOS only)
 
+menu-application-preferences =
+    .label = Kjörstillingar
 menu-application-services =
     .label = Þjónustur
 menu-application-hide-this =
@@ -34,20 +36,16 @@ menu-quit =
             [windows] H
            *[other] H
         }
-
 # This menu-quit-mac string is only used on macOS.
 menu-quit-mac =
     .label = Hætta í { -brand-shorter-name }
-
 # This menu-quit-button string is only used on Linux.
 menu-quit-button =
     .label = { menu-quit.label }
-
 # This menu-quit-button-win string is only used on Windows.
 menu-quit-button-win =
     .label = { menu-quit.label }
     .tooltip = Hætta í { -brand-shorter-name }
-
 menu-about =
     .label = Um { -brand-shorter-name }
     .accesskey = U
@@ -125,6 +123,9 @@ menu-view =
 menu-view-toolbars-menu =
     .label = Verkfæraslár
     .accesskey = V
+menu-view-customize-toolbar2 =
+    .label = Sérsníða verkfæraslá…
+    .accesskey = v
 menu-view-sidebar =
     .label = Hliðslá
     .accesskey = H
@@ -222,6 +223,9 @@ menu-tools =
 menu-tools-downloads =
     .label = Niðurhal
     .accesskey = N
+menu-tools-fxa-sign-in2 =
+    .label = Innskráning
+    .accesskey = I
 menu-tools-sync-now =
     .label = Samstilla núna
     .accesskey = S
@@ -232,7 +236,7 @@ menu-tools-page-info =
     .label = Upplýsingar síðu
     .accesskey = U
 menu-tools-layout-debugger =
-    .label = Útlits aflúsari
+    .label = Villuleit í útliti
     .accesskey = L
 
 ## Window Menu
@@ -243,15 +247,6 @@ menu-window-bring-all-to-front =
     .label = Endurheimta
 
 ## Help Menu
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
 
 
 # NOTE: For Engineers, any additions or changes to Help menu strings should
@@ -271,8 +266,7 @@ menu-help-feedback-page =
     .label = Senda álit…
     .accesskey = S
 # Label of the Help menu item. Either this or
-# safeb.palm.notdeceptive.label from
-# phishing-afterload-warning-message.dtd is shown.
+# menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =
     .label = Tilkynna svindlsvæði…
     .accesskey = d

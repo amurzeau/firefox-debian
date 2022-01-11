@@ -15,6 +15,14 @@ screenshots-download-button = Mboguejy
 screenshots-download-button-tooltip = Emboguejy mba’erechaha japyhypyre
 screenshots-copy-button = Monguatia
 screenshots-copy-button-tooltip = Embohasa mba’erechaha japyhypyre kuatiajokohápe
+screenshots-download-button-title =
+    .title = Emboguejy mba’erechaha japyhypyre
+screenshots-copy-button-title =
+    .title = Emboasa mba’erechaha japyhypyre kuatiajokohápe
+screenshots-cancel-button-title =
+    .title = Heja
+screenshots-retry-button-title =
+    .title = Eha’ãjey mba’erechaha jejapyhy
 screenshots-meta-key =
     { PLATFORM() ->
         [macos] ⌘

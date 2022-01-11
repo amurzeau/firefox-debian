@@ -14,7 +14,7 @@
 <!ENTITY deniedPortAccess.longDesc "<p>Umbeðið veffang bað um ákveðna gátt (t.d. <q>mozilla.org:80</q> fyrir gátt 80 á mozilla.org) sem er venjulega notað fyrir eitthvað <em>annað</em> að vafra. Vafrinn hefur lokað á beiðnina þér til verndar.</p>">
 
 <!ENTITY dnsNotFound.title "Veffang fannst ekki">
-<!ENTITY dnsNotFound.longDesc "<p>Vafrinn fann ekki vefþjóninn fyrir þetta netfang.</p><ul><li>Slóstu inn vitlaust netfang? (t.d. <q><strong>ww</strong>.mozilla.org</q> í staðinn fyrir <q><strong>www</strong>.mozilla.org</q>)</li><li>Ertu viss um að þetta vefsvæði sé til?  Vefsvæðið gæti verið útrunnið.</li><li>Geturðu tengst öðrum svæðum?  Athugaðu netstillingar og DNS stillingar tölvu.</li><li>Er tölvan varin af eldvegg eða milliþjóni?  Rangar stillingar geta haft áhrif á vafra.</li></ul>">
+<!ENTITY dnsNotFound.longDesc "<p>Vafrinn fann ekki vefþjóninn fyrir þetta netfang.</p><ul><li>Slóstu inn rangt netfang? (t.d. <q><strong>ww</strong>.mozilla.org</q> í staðinn fyrir <q><strong>www</strong>.mozilla.org</q>)</li><li>Ertu viss um að þetta vefsvæði sé til?  Vefsvæðið gæti verið útrunnið.</li><li>Geturðu tengst öðrum svæðum?  Athugaðu netstillingar og DNS stillingar tölvu.</li><li>Er tölvan varin af eldvegg eða milliþjóni?  Rangar stillingar geta haft áhrif á vafra.</li></ul>">
 
 <!ENTITY fileNotFound.title "Skrá fannst ekki">
 <!ENTITY fileNotFound.longDesc "<ul><li>Gæti verið að hluturinn hafi verið endurnefndur, fjarlægður, eða færður til?</li><li>Er stafsetningarvilla, hástafaritun, eða annarskonar stafsetningarvilla í vistfanginu?</li><li>Hefurðu nægar aðgangsheimildir fyrir hlutinn?</li></ul>">
@@ -41,7 +41,7 @@
 <!ENTITY contentEncodingError.longDesc "<p>Ekki er hægt að sýna síðuna því hún notar ógilda eða óstudda þjöppun.</p><ul><li>Hafðu samband við vefstjóra vefsvæðisins og láttu hann vita af þessu vandamáli.</li></ul>">
 
 <!ENTITY unsafeContentType.title "Óörugg skráartegund">
-<!ENTITY unsafeContentType.longDesc "<ul> <li>Hafðu samband við vefstjóra vefsvæðisins og láttu hann vita af þessu vandamáli.</li> </ul>">
+<!ENTITY unsafeContentType.longDesc "<ul> <li>Hafðu samband við eigendur vefsvæðisins og láttu þá vita af þessu vandamáli.</li> </ul>">
 
 <!ENTITY netReset.title "Tenging slitnaði">
 <!ENTITY netReset.longDesc "<p>Net rofnaði meðan verið var að semja um tengingu. Reynið aftur.</p>">
@@ -50,7 +50,7 @@
 <!ENTITY netTimeout.longDesc "<p>Umbeðið vefsvæði svaraði ekki tengingu og vafrinn hætti að bíða eftir svari.</p><ul><li>Getur verið að svæðið sé í mikilli notkun eða sé niðri tímabundið?  Reyndu aftur seinna.</li><li>Geturðu haft samband við önnur svæði? Athugaðu nettengingu tölvunnar.</li><li>Er tölvan eða netið varið af eldvegg eða milliþjóni?  Rangar stillingar geta haft áhrif á vafra.</li><li>Ennþá vandamál? Hafðu samband við kerfistjóra eða netaðila fyrir hjálp.</li></ul>">
 
 <!ENTITY unknownProtocolFound.title "Óþekkt samskiptaregla">
-<!ENTITY unknownProtocolFound.longDesc "<p>Umbeðið vistfang skilgreinir samskiptareglu (t.d. <q>wxyz://</q>) sem vafrinn kannast ekki við, þannig að vafrinn getur ekki tengst við vefsvæðið.</p><ul><li>Ertu að reyna að tengjast myndefni eða annarskonar gagnaþjónustum? athugaðu á vefsvæðinu hvort þú þurfir fleiri hluti.</li><li>Sumar samskiptareglur þarfnast forrita eða viðbóta frá þriðja aðila áður en vafrinn getur þekkt þær.</li></ul>">
+<!ENTITY unknownProtocolFound.longDesc "<p>Umbeðið vistfang skilgreinir samskiptareglu (t.d. <q>wxyz://</q>) sem vafrinn kannast ekki við, þannig að vafrinn getur ekki tengst við vefsvæðið.</p><ul><li>Ertu að reyna að tengjast myndefni eða annarskonar gagnaþjónustum? athugaðu á vefsvæðinu hvort þú þurfir fleiri hluti.</li><li>Sumar samskiptareglur þarfnast forrita eða tengiforrita frá þriðja aðila áður en vafrinn getur þekkt þær.</li></ul>">
 
 <!ENTITY proxyConnectFailure.title "Milliþjónn neitar tengingum">
 <!ENTITY proxyConnectFailure.longDesc "<p>Vafrinn er stilltur til að nota milliþjóna, en milliþjónn hafnaði tengingu.</p><ul><li>Eru vafra stillingar milliþjóns rétt stilltar? Athugaðu stillingarnar og reyndu aftur.</li><li>Leyfir milliþjónn tengingar frá þínu neti?</li><li>Ennþá vandamál? Hafðu samband við kerfistjóra eða netaðila fyrir hjálp.</li></ul>">
@@ -59,7 +59,7 @@
 <!ENTITY proxyResolveFailure.longDesc "<p>Vafrinn er stilltur til að nota milliþjóna, en milliþjónn fannst ekki.</p><ul><li>Eru vafra stillingar milliþjóns rétt stilltar? Athugaðu stillingarnar og reyndu aftur.</li><li>Leyfir milliþjónn tengingar frá þínu neti?</li><li>Ennþá vandamál? Hafðu samband við kerfistjóra eða netaðila fyrir hjálp.</li></ul>">
 
 <!ENTITY redirectLoop.title "Lykkja af endurbeiningum">
-<!ENTITY redirectLoop.longDesc "<p>Vafrinn hefur hætt að reyna að ná í umbeðinn hlut. Vefsvæðið er að endursenda beiðnina á þann hátt að því mun aldrei ljúka.</p><ul><li>Hefurðu lokað á eða gert smákökur óvirkar frá þessu vefsvæði?</li><li><em>ATHUGA</em>: Ef þú velur að taka á móti smákökum frá þessu vefsvæði og það lagar ekki vandamálið, er netþjónninn sjálfur líklega rangt stilltur en ekki tölvan þín.</li></ul>">
+<!ENTITY redirectLoop.longDesc "<p>Vafrinn hefur hætt að reyna að ná í umbeðið atriði. Vefsvæðið er að endursenda beiðnina á þann hátt að því mun aldrei ljúka.</p><ul><li>Hefurðu lokað á eða gert vefkökur óvirkar frá þessu vefsvæði?</li><li><em>ATHUGAÐU</em>: Ef þú velur að taka á móti vefkökum frá þessu vefsvæði og það lagar ekki vandamálið, er netþjónninn sjálfur líklega rangt stilltur en ekki tölvan þín.</li></ul>">
 
 <!ENTITY unknownSocketType.title "Rangt svar">
 <!ENTITY unknownSocketType.longDesc "<p>Vefsvæðið svaraði netbeiðni á óvæntan hátt þannig að vafrinn getur ekki haldið áfram.</p>">
@@ -75,6 +75,7 @@
 
 <!ENTITY cspBlocked.title "Lokað á vegna öryggisregla">
 <!ENTITY cspBlocked.longDesc "<p>Vafrinn kom í veg fyrir að þessi síða birtist á þennan hátt þar sem síðan inniheldur öryggisreglu sem kemur í veg fyrir það.</p>">
+
 
 <!ENTITY corruptedContentErrorv2.title "Villa skemmd gögn">
 <!ENTITY corruptedContentErrorv2.longDesc "<p>Ekki er hægt að sýna síðuna vegna villu í gagnasendingu.</p><ul><li>Hafðu samband við vefsíðueiganda til að láta hann vita af vandamálinu.</li></ul>">

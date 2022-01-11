@@ -2,6 +2,17 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## Window controls
+
+messenger-window-minimize-button =
+    .tooltiptext = Згорнути
+messenger-window-maximize-button =
+    .tooltiptext = Розгорнути
+messenger-window-restore-down-button =
+    .tooltiptext = Відновити вниз
+messenger-window-close-button =
+    .tooltiptext = Закрити
 # Variables:
 # $count (Number) - Number of unread messages.
 unread-messages-os-tooltip =
@@ -100,13 +111,24 @@ appmenu-redirect-msg =
 
 context-menu-redirect-msg =
     .label = Переслати
+mail-context-delete-messages =
+    .label =
+        { $count ->
+            [one] Видалити повідомлення
+            [few] Видалити вибрані повідомлення
+           *[many] Видалити вибрані повідомлення
+        }
+context-menu-decrypt-to-folder =
+    .label = Копіювати як розшифроване до
+    .accesskey = ш
 
 ## Message header pane
 
 other-action-redirect-msg =
     .label = Переслати
-message-header-msg-is-flagged =
-    .title = Повідомлення, позначене зірочкою
+message-header-msg-flagged =
+    .title = Із зіркою
+    .aria-label = Із зіркою
 message-header-msg-not-flagged =
     .title = Повідомлення, не позначене зірочкою
 
@@ -145,3 +167,7 @@ repair-text-encoding-button =
 no-reply-title = Відповідь не підтримується
 no-reply-message = Схоже що не відбувається спостереження за адресою відповіді ({ $email }). Швидше за все ніхто не прочитає повідомлення за цією адресою.
 no-reply-reply-anyway-button = Все одно відровісти
+
+## error messages
+
+decrypt-and-copy-failures = Не вдалося розшифрувати та скопіювати { $failures } з { $total } повідомлень.

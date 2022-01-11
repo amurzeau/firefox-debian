@@ -137,6 +137,9 @@ addon-category-available-updates-title =
 addon-category-recent-updates = Nyleg oppdatert
 addon-category-recent-updates-title =
     .title = Nyleg oppdatert
+addon-category-sitepermission = Nettstadløyve
+addon-category-sitepermission-title =
+    .title = Nettstadløyve
 
 ## These are global warnings
 
@@ -292,6 +295,8 @@ dictionary-enabled-heading = Slått på
 dictionary-disabled-heading = Slått av
 locale-enabled-heading = Slått på
 locale-disabled-heading = Slått av
+sitepermission-enabled-heading = Aktivert
+sitepermission-disabled-heading = Deaktivert
 always-activate-button = Alttid aktiver
 never-activate-button = Aldri aktiver
 addon-detail-author-label = Utviklar
@@ -380,6 +385,7 @@ plugin-heading = Handter programtillegga dine
 dictionary-heading = Handter ordbøkene dine
 locale-heading = Handter språka dine
 updates-heading = Handter oppdateringar
+sitepermission-heading = Handter nettstadløyva dine
 discover-heading = Tilpass { -brand-short-name }
 shortcuts-heading = Handter snarvegar for utvidingar
 default-heading-search-label = Finn fleire tillegg

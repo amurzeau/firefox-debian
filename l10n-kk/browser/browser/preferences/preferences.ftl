@@ -98,6 +98,8 @@ extension-controlled-enable = Кеңейтуді іске қосу үшін, <im
 ## Preferences UI Search Results
 
 search-results-header = Іздеу нәтижелері
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Кешіріңіз! Баптауларда "<span data-l10n-name="query"></span>" үшін нәтижелер табылмады.
 search-results-help-link = Көмек керек пе? <a data-l10n-name="url">{ -brand-short-name } қолдауы</a> шолыңыз
 
 ## General Section
@@ -134,6 +136,14 @@ warn-on-close-multiple-tabs =
 confirm-on-close-multiple-tabs =
     .label = Бірнеше бетті жаппас бұрын растау
     .accesskey = с
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (String) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+confirm-on-quit-with-key =
+    .label = { $quitKey } көмегімен шығу алдында растау
+    .accesskey = л
 warn-on-open-many-tabs =
     .label = Беттердің көп санын ашу әрекеті { -brand-short-name } жұмысын тежей алатын кезде ескерту
     .accesskey = т
@@ -769,6 +779,7 @@ forms-master-pw-fips-desc = Парольді өзгерту сәтсіз аяқ�
 forms-windows-sso =
     .label = Microsoft, жұмыс және мектеп есептік жазбаларына Windows дара кіруін рұқсат ету
 forms-windows-sso-learn-more-link = Көбірек білу
+forms-windows-sso-desc = Тіркелгілерді құрылғыңыздың баптауларында басқарыңыз
 
 ## OS Authentication dialog
 
@@ -853,6 +864,10 @@ sitedata-option-block-cross-site-tracking-cookies-including-social-media =
     .label = Сайтаралық бақылау cookie файлдары — соның ішінде әлеуметтік жүйелердің cookie файлдары
 sitedata-option-block-cross-site-cookies-including-social-media =
     .label = Сайтаралық cookie файлдары — соның ішінде әлеуметтік жүйелердің cookie файлдары
+sitedata-option-block-cross-site-tracking-cookies =
+    .label = Сайтаралық бақылайтын cookie файлдары
+sitedata-option-block-cross-site-cookies =
+    .label = Сайтаралық бақылау трекерлері, және қалған сайтаралық cookie файлдарын оқшаулау
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Сайтаралық және әлеуметтік желілер трекерлері, және қалған cookie файлдарын оқшаулау
 sitedata-option-block-unvisited =
@@ -922,8 +937,11 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Қорғаныс және өнімділік теңгерімі. Беттер әдеттегідей жүктеледі.
 content-blocking-etp-strict-desc = Қатаңырақ қорғаныс, бірақ, кейбір сайттар немесе мазмұнның бұзылуына әкеп соғуы мүмкін.
 content-blocking-etp-custom-desc = Қай трекерлер мен скрипттерді блоктауды таңдаңыз.
+content-blocking-etp-blocking-desc = { -brand-short-name } келесілерді бұғаттайды:
 content-blocking-private-windows = Жекелік шолу терезелерінде бақылайтын құрама
+content-blocking-cross-site-cookies-in-all-windows = Барлық терезелердегі сайтаралық cookie файлдары (бақылау cookie файлдарын қоса)
 content-blocking-cross-site-tracking-cookies = Сайтаралық бақылайтын cookie файлдары
+content-blocking-all-cross-site-cookies-private-windows = Жекелік шолу терезелеріндегі сайтаралық cookie файлдары
 content-blocking-cross-site-tracking-cookies-plus-isolate = Сайтаралық бақылау трекерлері, және қалған cookie файлдарын оқшаулау
 content-blocking-social-media-trackers = Әлеуметтік желілер трекерлері
 content-blocking-all-cookies = Барлық cookie файлдары
@@ -932,6 +950,13 @@ content-blocking-all-windows-tracking-content = Барлық терезелер�
 content-blocking-all-third-party-cookies = Барлық үшінші жақты cookies
 content-blocking-cryptominers = Криптомайнерлер
 content-blocking-fingerprinters = Баспаны жинаушылар
+# "Test pilot" is used as a verb. Possible alternatives:
+# "Be the first to try", "Join an early experiment".
+content-blocking-etp-standard-tcp-rollout-checkbox =
+    .label = Біздің барлық уақыттағы ен күшті жекеілкті қорғауды сынап көріңіз
+    .accesskey = т
+# "Contains" here means "isolates", "limits".
+content-blocking-etp-standard-tcp-rollout-description = Cookie файлдарынан толық қорғау сіз шолып отырған сайттың cookie файлдарын шектейді, сондықтан трекерлер оларды сайттар арасында сізді бақылап отыру үшін пайдалана алмайды.
 content-blocking-etp-standard-tcp-rollout-learn-more = Көбірек білу
 content-blocking-warning-title = Ескерту!
 content-blocking-and-isolating-etp-warning-description = Трекерлерді бұғаттау және cookie файлдарын оқшаулау кейбір сайттардың жұмысына әсер етуі мүмкін. Барлық мазмұнды жүктеу үшін трекерлермен бетті қайта жүктеңіз.
@@ -1042,6 +1067,8 @@ addon-recommendations-link = Көбірек білу
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Деректер есептемесін беру бұл жинақта сөндірілген
+collection-backlogged-crash-reports-with-link = { -brand-short-name } үшін сіздің атыңыздан жиналған құлаулар хабарламаларын жіберуді рұқсат ету <a data-l10n-name="crash-reports-link">Көбірек білу</a>
+    .accesskey = с
 
 ## Privacy Section - Security
 ##
@@ -1074,8 +1101,10 @@ certs-devices =
     .label = Қауіпсіздік құрылғылары…
     .accesskey = ы
 space-alert-over-5gb-settings-button =
-    .label = Баптаулары ашу
+    .label = Баптауларды ашу
     .accesskey = Б
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name } үшін бос орын аяқталуда</strong>. Вебсайттар құрамасы дұрыс көрсетілмеуі мүмкін. Сіз сайттардың сақталған деректерін Баптаулар > Жекелік және қауіпсіздік > Cookies файлдары және сайттар деректері ішінде өшіре аласыз.
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name } үшін бос орын аяқталуда</strong>. Вебсайттар құрамасы дұрыс көрсетілмеуі мүмкін. "Көбірек білу" сілтемесін ашып, интернетті ыңғайлы шолу үшін диск қолданылуын қалай баптау керек екенін білуіңізге болады.
 
 ## Privacy Section - HTTPS-Only
 

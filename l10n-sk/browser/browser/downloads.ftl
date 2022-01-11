@@ -50,7 +50,7 @@ downloads-cmd-use-system-default =
 # Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-use-system-default =
     .label = Vždy otvoriť v systémovom prehliadači
-    .accesskey = w
+    .accesskey = V
 downloads-cmd-show-button =
     .tooltiptext =
         { PLATFORM() ->
@@ -158,6 +158,8 @@ downloading-file-opens-in-minutes = Otvorí sa o { $minutes } m…
 downloading-file-opens-in-minutes-and-seconds = Otvorí sa o { $minutes } m { $seconds } s…
 downloading-file-opens-in-seconds = Otvorí sa o { $seconds } s…
 downloading-file-opens-in-some-time = Otvorí sa po dokončení sťahovania…
+downloading-file-click-to-open =
+    .value = Otvoriť po dokončení sťahovania
 
 ##
 

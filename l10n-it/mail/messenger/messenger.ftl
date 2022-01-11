@@ -2,6 +2,17 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## Window controls
+
+messenger-window-minimize-button =
+    .tooltiptext = Riduci a icona
+messenger-window-maximize-button =
+    .tooltiptext = Ingrandisci
+messenger-window-restore-down-button =
+    .tooltiptext = Ripristina in basso
+messenger-window-close-button =
+    .tooltiptext = Chiudi
 # Variables:
 # $count (Number) - Number of unread messages.
 unread-messages-os-tooltip =
@@ -99,13 +110,23 @@ appmenu-redirect-msg =
 
 context-menu-redirect-msg =
     .label = Reindirizza
+mail-context-delete-messages =
+    .label =
+        { $count ->
+            [one] Elimina messaggio
+           *[other] Elimina i messaggi selezionati
+        }
+context-menu-decrypt-to-folder =
+    .label = Copia come decrittato in
+    .accesskey = d
 
 ## Message header pane
 
 other-action-redirect-msg =
     .label = Reindirizza
-message-header-msg-is-flagged =
-    .title = Messaggio contrassegnato come speciale
+message-header-msg-flagged =
+    .title = Speciale
+    .aria-label = Speciale
 message-header-msg-not-flagged =
     .title = Messaggio non contrassegnato come speciale
 
@@ -144,3 +165,7 @@ repair-text-encoding-button =
 no-reply-title = Risposta non supportata
 no-reply-message = Sembra che l’indirizzo di risposta ({ $email }) non venga controllato. I messaggi inviati a questo indirizzo potrebbero non essere letti.
 no-reply-reply-anyway-button = Rispondi comunque
+
+## error messages
+
+decrypt-and-copy-failures = Non è stato possibile decrittare e copiare { $failures } di { $total } messaggi.

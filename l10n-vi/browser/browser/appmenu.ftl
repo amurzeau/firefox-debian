@@ -137,7 +137,7 @@ profiler-popup-button-capturing =
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
-    .aria-label = Hiện thêm thông tin
+    .aria-label = Hiển thị thêm thông tin
 profiler-popup-description-title =
     .value = Ghi lại, phân tích, chia sẻ
 profiler-popup-description = Cộng tác về các vấn đề hiệu suất bằng cách xuất bản hồ sơ để chia sẻ với nhóm của bạn.
@@ -186,7 +186,7 @@ profiler-popup-capture-shortcut =
 
 profiler-popup-presets-web-developer-description = Cài đặt trước được đề xuất cho hầu hết gỡ lỗi ứng dụng web, với chi phí thấp.
 profiler-popup-presets-web-developer-label =
-    .label = Web Developer
+    .label = Nhà phát triển Web
 profiler-popup-presets-firefox-platform-description = Cấu hình được đề xuất để gỡ lỗi nền tảng Firefox nội bộ.
 profiler-popup-presets-firefox-platform-label =
     .label = Firefox Platform
@@ -206,6 +206,9 @@ profiler-popup-presets-graphics-label =
 profiler-popup-presets-media-description2 = Giá trị đặt trước để điều tra lỗi âm thanh và video trong { -brand-shorter-name }.
 profiler-popup-presets-media-label =
     .label = Media
+profiler-popup-presets-networking-description = Giá trị đặt trước để điều tra lỗi mạng trong { -brand-shorter-name }.
+profiler-popup-presets-networking-label =
+    .label = Kết nối mạng
 profiler-popup-presets-custom-label =
     .label = Tùy chỉnh
 

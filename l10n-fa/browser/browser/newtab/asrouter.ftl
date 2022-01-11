@@ -84,6 +84,13 @@ cfr-whatsnew-release-notes-link-text = یادداشت‌های انتشار را
 
 ## Enhanced Tracking Protection Milestones
 
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (Datetime) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading2 =
+    { $blockedCount ->
+       *[other] { -brand-short-name } از تاریخ { DATETIME($date, month: "long", year: "numeric") } بیش از <b>{ $blockedCount }</b> ردیاب را مسدود کرده است.
+    }
 cfr-doorhanger-milestone-ok-button = نمایش همه
     .accesskey = ن
 cfr-doorhanger-milestone-close-button = بستن
@@ -91,6 +98,7 @@ cfr-doorhanger-milestone-close-button = بستن
 
 ## DOH Message
 
+cfr-doorhanger-doh-body = حریم خصوصی شما مهم است. از این پس { -brand-short-name } درخواست‌های DNS شما را هر زمان که ممکن است به صورت ایمن به یک سرویس شرکایمان هدایت می‌کند تا هنگام مرور از شما محافظت کند.
 cfr-doorhanger-doh-header = جست‌وجوی DNS رمزنگاری‌شدهٔ امن‌تر
 cfr-doorhanger-doh-primary-button-2 = بسیار خب
     .accesskey = خ
@@ -99,6 +107,8 @@ cfr-doorhanger-doh-secondary-button = از کار انداختن
 
 ## Fission Experiment Message
 
+cfr-doorhanger-fission-body-approved = حریم‌خصوصی شما مهم است. { -brand-short-name } حالا وب‌سایت‌ها را از همدیگر ایزوله یا در محیط جداگانه قرار می‌دهد، که کار هکرها را برای دزدین گذرواژه‌ها، کارت‌های اعتباری و سایر اطلاعات حساس سخت‌تر می‌کند.
+cfr-doorhanger-fission-header = ایزوله‌سازی سایت
 cfr-doorhanger-fission-primary-button = باشه،‌ متوجه شدم
     .accesskey = O
 cfr-doorhanger-fission-secondary-button = اطلاعات بیشتر
@@ -111,11 +121,37 @@ cfr-doorhanger-video-support-header = برای پخش ویدیو، { -brand-shor
 cfr-doorhanger-video-support-primary-button = هم‌اکنون بروزرسانی شود
     .accesskey = ه
 
+## Spotlight modal shared strings
+
+spotlight-learn-more-collapsed = اطلاعات بیشتر
+    .title = برای اطلاعات بیشتر کلیک کنید
+spotlight-learn-more-expanded = اطلاعات بیشتر
+    .title = بستن
+
 ## VPN promotion dialog for public Wi-Fi users
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
 ## to the Mozilla VPN page and a link to dismiss the dialog.
 
+# This header text can be explicitly wrapped.
+spotlight-public-wifi-vpn-header = به نظر می‌آید از یک Wi-Fi عمومی استفاده می‌کنید
+spotlight-public-wifi-vpn-body = برای مخفی کردن اطلاعات مرور و موقعیت مکانی خود، یک شبکه خصوصی مجازی را بررسی کنید. این کار کمک می‌کند تا هنگام مرور در مکان‌های عمومی مانند فرودگاه‌ها و کافی‌شاپ‌ها از شما محافظت شود.
+spotlight-public-wifi-vpn-primary-button = با { -mozilla-vpn-brand-name } ناشناس بمانید
+    .accesskey = ن
 spotlight-public-wifi-vpn-link = اکنون نه
     .accesskey = ن
+
+## Total Cookie Protection Rollout
+
+# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
+# "Join an early experiment". This header text can be explicitly wrapped.
+spotlight-total-cookie-protection-header =
+    اولین نفری باشید که قوی‌ترین آزمایش
+    حریم‌خصوصی ما را تست می‌کند
+spotlight-total-cookie-protection-body = محافظت کامل در برابر کوکی‌ها مانع از استفاده ردیاب‌ها از کوکی‌ها برای تعقیب شما در وب می‌شود.
+# "Early access" for this feature rollout means it's a "feature preview" or
+# "soft launch" as not everybody will get it yet.
+spotlight-total-cookie-protection-expanded = { -brand-short-name } حصاری در اطراف کوکی‌ها ایجاد می‌کند و آنها را به سایتی که در آن هستید محدود می‌کند تا ردیاب‌ها نتوانند از آنها برای دنبال کردن شما استفاده کنند. با دسترسی زودهنگام، به بهینه‌سازی این ویژگی کمک خواهید کرد تا بتوانیم به ساختن یک وبِ بهتر برای همه ادامه دهیم.
+spotlight-total-cookie-protection-primary-button = روشن کردن محافظت کامل در برابر کوکی‌ها
+spotlight-total-cookie-protection-secondary-button = اکنون نه

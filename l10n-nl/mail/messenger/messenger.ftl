@@ -2,6 +2,17 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## Window controls
+
+messenger-window-minimize-button =
+    .tooltiptext = Minimaliseren
+messenger-window-maximize-button =
+    .tooltiptext = Maximaliseren
+messenger-window-restore-down-button =
+    .tooltiptext = Omlaag herstellen
+messenger-window-close-button =
+    .tooltiptext = Sluiten
 # Variables:
 # $count (Number) - Number of unread messages.
 unread-messages-os-tooltip =
@@ -99,13 +110,23 @@ appmenu-redirect-msg =
 
 context-menu-redirect-msg =
     .label = Omleiden
+mail-context-delete-messages =
+    .label =
+        { $count ->
+            [one] Bericht verwijderen
+           *[other] Geselecteerde berichten verwijderen
+        }
+context-menu-decrypt-to-folder =
+    .label = Kopiëren als ontsleuteld naar
+    .accesskey = K
 
 ## Message header pane
 
 other-action-redirect-msg =
     .label = Omleiden
-message-header-msg-is-flagged =
-    .title = Met ster gemarkeerd bericht
+message-header-msg-flagged =
+    .title = Met ster
+    .aria-label = Met ster
 message-header-msg-not-flagged =
     .title = Niet met ster gemarkeerd bericht
 
@@ -144,3 +165,7 @@ repair-text-encoding-button =
 no-reply-title = Antwoord niet ondersteund
 no-reply-message = Het antwoordadres ({ $email }) lijkt geen gecontroleerd adres te zijn. Berichten naar dit adres worden waarschijnlijk door niemand gelezen.
 no-reply-reply-anyway-button = Toch antwoorden
+
+## error messages
+
+decrypt-and-copy-failures = { $failures } van { $total } berichten kunnen niet worden ontsleuteld en zijn niet gekopieerd.

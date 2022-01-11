@@ -136,6 +136,9 @@ addon-category-available-updates-title =
 addon-category-recent-updates = Πρόσφατες ενημερώσεις
 addon-category-recent-updates-title =
     .title = Πρόσφατες ενημερώσεις
+addon-category-sitepermission = Άδειες ιστοτόπων
+addon-category-sitepermission-title =
+    .title = Άδειες ιστοτόπων
 
 ## These are global warnings
 
@@ -290,6 +293,8 @@ dictionary-enabled-heading = Ενεργά
 dictionary-disabled-heading = Ανενεργά
 locale-enabled-heading = Ενεργές
 locale-disabled-heading = Ανενεργές
+sitepermission-enabled-heading = Ενεργές
+sitepermission-disabled-heading = Ανενεργές
 always-activate-button = Πάντα ενεργοποιημένο
 never-activate-button = Ποτέ ενεργοποιημένο
 addon-detail-author-label = Δημιουργός
@@ -366,6 +371,7 @@ addon-permissions-optional = Προαιρετικά δικαιώματα για 
 addon-permissions-learnmore = Μάθετε περισσότερα σχετικά με τα δικαιώματα
 recommended-extensions-heading = Προτεινόμενες επεκτάσεις
 recommended-themes-heading = Προτεινόμενα θέματα
+addon-sitepermissions-required = Παραχωρεί τις εξής δυνατότητες στο <span data-l10n-name="hostname">{ $hostname }</span>:
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Αισθάνεστε δημιουργικοί; <a data-l10n-name="link">Δημιουργήστε το δικό σας θέμα με το Firefox Color.</a>

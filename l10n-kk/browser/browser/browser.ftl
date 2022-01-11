@@ -730,9 +730,25 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = "Атып шығатын" терезелерді болдырмау мүмкіндігі қосулы кезінде осы хабарламаны көрсетпеу
     .accesskey = п
+edit-popup-settings =
+    .label = Атып шығатын терезелер баптаулары…
+    .accesskey = п
 picture-in-picture-hide-toggle =
     .label = Суреттегі сурет қосқышын жасыру
     .accesskey = ы
+
+## Since the default position for PiP controls does not change for RTL layout,
+## right-to-left languages should use "Left" and "Right" as in the English strings,
+
+picture-in-picture-move-toggle-right =
+    .label = Суреттегі-сурет ауыстырғышын оң жаққа жылжыту
+    .accesskey = о
+picture-in-picture-move-toggle-left =
+    .label = Суреттегі-сурет ауыстырғышын сол жаққа жылжыту
+    .accesskey = с
+
+##
+
 
 # Navigator Toolbox
 
@@ -776,4 +792,6 @@ tabs-toolbar-list-all-tabs =
 
 ## Infobar shown at startup to suggest session-restore
 
+# <img data-l10n-name="icon"/> will be replaced by the application menu icon
+restore-session-startup-suggestion-message = <strong>Алдыңғы беттерді ашу керек пе?</strong> Сіз алдыңғы сессияны { -brand-short-name } қолданба мәзірі ішіндегі <img data-l10n-name="icon"/> Тарих бөлімінен қалпына келтіре аласыз.
 restore-session-startup-suggestion-button = Қалай жасау керектігін көрсету

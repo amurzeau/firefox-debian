@@ -198,12 +198,15 @@ profiler-popup-presets-media-description = Pre-configuration recommendate pro di
 profiler-popup-presets-firefox-description = Pre-configuration recommendate pro profilar { -brand-shorter-name }.
 profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
-profiler-popup-presets-graphics-description = Pre-configuration pro investigar errores de graphica in { -brand-shorter-name }.
+profiler-popup-presets-graphics-description = Pre-configuration pro investigar errores graphic in { -brand-shorter-name }.
 profiler-popup-presets-graphics-label =
     .label = Graphica
 profiler-popup-presets-media-description2 = Pre-configuration pro investigar errores audio e video in { -brand-shorter-name }.
 profiler-popup-presets-media-label =
     .label = Multimedia
+profiler-popup-presets-networking-description = Pre-configuration pro investigar errores de rete in { -brand-shorter-name }.
+profiler-popup-presets-networking-label =
+    .label = Rete
 profiler-popup-presets-custom-label =
     .label = Personalisate
 

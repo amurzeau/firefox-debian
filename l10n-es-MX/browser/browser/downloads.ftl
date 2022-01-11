@@ -158,6 +158,8 @@ downloading-file-opens-in-minutes = Se abrirá en { $minutes }m…
 downloading-file-opens-in-minutes-and-seconds = Se abrirá en { $minutes }m { $seconds }s…
 downloading-file-opens-in-seconds = Se abrirá en { $seconds }s…
 downloading-file-opens-in-some-time = Se abrirá cuando se complete…
+downloading-file-click-to-open =
+    .value = Abrir cuando se complete
 
 ##
 
@@ -190,6 +192,7 @@ downloads-files-not-downloaded =
         [one] Archivo no descargado.
        *[other] { $num } archivos no descargados.
     }
+downloads-blocked-from-url = Descargas bloqueadas desde { $url }.
 downloads-blocked-download-detailed-info = { $url } intentó descargar automáticamente varios archivos. El sitio podría estar dañado o intentar almacenar archivos de spam en tu dispositivo.
 
 ##

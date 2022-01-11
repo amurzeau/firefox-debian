@@ -218,6 +218,8 @@ search-one-offs-history =
 
 ## Bookmark Panel
 
+bookmarks-add-bookmark = Ավելացնել էջանիշ
+bookmarks-edit-bookmark = Խմբագրել Էջանիշը
 bookmark-panel-cancel =
     .label = Չեղարկել
     .accesskey = C
@@ -233,6 +235,8 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = Ցուցադրել խմբագրիչում, երբ պահպանվում է
     .accesskey = S
+bookmark-panel-save-button =
+    .label = Պահել
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -250,6 +254,7 @@ identity-header-security-with-host =
     .title = Միացման անվտանգություն { $host }-ի համար
 identity-connection-not-secure = Կապակցումը ապահով չէ
 identity-connection-secure = Կապակցումը ապահով է
+identity-connection-failure = Կապակցումը ձախողվեց
 identity-connection-internal = Սա անվտանգ { -brand-short-name } էջ է:
 identity-connection-file = Այս էջը գտնվում է համակարգչում
 identity-extension-page = Այս էջը բեռնվել է ընդլայնումից:
@@ -330,6 +335,18 @@ browser-import-button2 =
 
 ## WebRTC Pop-up notifications
 
+popup-select-camera-device =
+    .value = Խցիկ.
+    .accesskey = C
+popup-select-camera-icon =
+    .tooltiptext = Խցիկ
+popup-select-microphone-device =
+    .value = Խոսափող.
+    .accesskey = M
+popup-select-microphone-icon =
+    .tooltiptext = Խոսափող
+popup-select-speaker-icon =
+    .tooltiptext = Բարձրախոսներ
 popup-all-windows-shared = Էկրանի բոլոր տեսանելի պատուհանները կտարածվեն:
 popup-screen-sharing-block =
     .label = Արգելել
@@ -409,14 +426,25 @@ urlbar-result-action-switch-tab = Փոխանջատել ներդիրը
 urlbar-result-action-visit = Այցելել
 # Action text for copying to clipboard.
 urlbar-result-action-copy-to-clipboard = Պատճենել
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
 
+urlbar-result-action-search-history = Որոնման պատմություն
+urlbar-result-action-search-tabs = Որոնել ներդիրներ
 
 ## Labels shown above groups of urlbar results
 
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# urlbar results.
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
 
 ## Full Screen and Pointer Lock UI
 
@@ -438,9 +466,15 @@ pointerlock-warning-no-domain = Այս փաստաթուղթը ղեկավարու
 
 crashed-subframe-learnmore-link =
     .value = Իմանալ ավելին
+crashed-subframe-submit =
+    .label = Ուղարկել զեկույց
+    .accesskey = S
 
 ## Bookmarks panels, menus and toolbar
 
+bookmarks-manage-bookmarks =
+    .label = Կառավարեք էջանիշները
+bookmarks-recent-bookmarks-panel-subheader = Վերջին Էջանիշերը
 bookmarks-toolbar-chevron =
     .tooltiptext = Ցուցադրել ավելի շատ էջանիշեր
 bookmarks-sidebar-content =
@@ -556,6 +590,9 @@ toolbar-button-new-private-window =
 
 eme-notifications-drm-content-playing = Այս կայքում որոշ ձայնանյութ կամ տեսանյութ օգտագործում են DRM ծրագիր, որը կարող է սահմանափակել { -brand-short-name }-ի օգտագործումը:
 eme-notifications-drm-content-playing-manage = Կառավարել կարգավորումները
+eme-notifications-drm-content-playing-manage-accesskey = M
+eme-notifications-drm-content-playing-dismiss = Բաց թողնել
+eme-notifications-drm-content-playing-dismiss-accesskey = D
 
 ## Password save/update panel
 
@@ -564,6 +601,9 @@ panel-save-update-password = Գաղտնաբառ
 
 ## Add-on removal warning
 
+# Variables:
+#  $name (String): The name of the addon that will be removed.
+addon-removal-title = Հեռացնե՞լ { $name }-ը:
 
 ## Remote / Synced tabs
 

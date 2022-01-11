@@ -5,6 +5,11 @@
 rights-title = Acerca de sus derechos
 rights-intro = { -brand-full-name } es software libre y de código abierto, construido por una comunidad de miles de personas de todo el mundo. Estas son algunas cosas que debes saber:
 rights-intro-point-1 = { -brand-short-name } esta disponible bajo los terminos de <a data-l10n-name="mozilla-public-license-link">Licencia Pública de Mozilla</a>. Esto quiere decir que puedes usar, copiar y distribuir { -brand-short-name } a otros. Eres tambien bienvenido a modificar el código fuente de { -brand-short-name } como tu quieras para satisfacer tus necesidades. La licencia pública de Mozilla tambien te da el derecho de distribuir tus versiones modificadas.
+rights-intro-point-2 =
+    No se concede ningún derecho de marca o licencia sobre las marcas registradas de
+    la Fundación Mozilla o cualquier parte, incluyendo sin limitación el
+    nombre o el logotipo de Thunderbird. Información adicional sobre las marcas se pueden encontrar
+    <a data-l10n-name="mozilla-trademarks-link">aquí</a>.
 rights-intro-point-3 = Algunas de las características en { -brand-short-name }, tales como el informe de fallos, te darán la opción de proporcionar información a { -vendor-short-name }. Al optar por enviar tus comentarios, le das a { -vendor-short-name } permiso para utilizar la retroalimentación para mejorar sus productos, publicar tus comentarios en sus sitios Web y distribuir los comentarios.
 rights-intro-point-4 = Cómo usamos tu información personal y comentarios presentados a { -vendor-short-name } a través de { -brand-short-name } se describe en el <a data-l10n-name="mozilla-privacy-policy-link">{ -brand-short-name } Política de Privacidad</a>.
 rights-intro-point-4-unbranded = Cualquier política de privacidad aplicable a este producto debe estar listada aquí.
@@ -13,6 +18,7 @@ rights-intro-point-5-unbranded = Si este producto incorpora servicios web, cuale
 rights-intro-point-6 = Para reproducir ciertos tipos de contenido de video, { -brand-short-name } descarga ciertos módulos de descifrado de contenido de terceros.
 rights-webservices-header = Servicios de información de { -brand-full-name } basados en web
 rights-webservices = { -brand-full-name } utiliza los servicios de información basados ​​en la web ("Servicios") para proporcionar algunas de las características previstas para su uso con esta versión binaria de { -brand-short-name } bajo los términos que se describen a continuación. Si no desea utilizar uno o más de los servicios o los términos siguientes son inaceptables, puede desactivar la función o Servicio(s). Las instrucciones sobre cómo desactivar una característica o servicio en particular se pueden encontrar<a data-l10n-name="mozilla-disable-service-link">aquí</a>. Otras características y servicios pueden ser deshabilitadas en las preferencias de la aplicación.
+rights-webservices2 = { -brand-full-name } utiliza los servicios de información basados ​​en la web ("Servicios") para proporcionar algunas de las características previstas para su uso con esta versión binaria de { -brand-short-name } bajo los términos que se describen a continuación. Si no desea utilizar uno o más de los servicios o los términos siguientes son inaceptables, puede desactivar la función o Servicio(s). Las instrucciones sobre cómo desactivar una característica o servicio en particular se pueden encontrar<a data-l10n-name="mozilla-disable-service-link">aquí</a>. Otras características y servicios pueden ser deshabilitadas en los ajustes de la aplicación.
 rights-locationawarebrowsing = <strong>Ubicación consciente de navegación: </strong>siempre es opt-in. No hay información de ubicación y es siempre enviado tu permiso. Si deseas  desactivar la función por completo, sigue estos pasos:
 rights-locationawarebrowsing-term-1 = En la barra de direcciones, escribe <code>about:config</code>
 rights-locationawarebrowsing-term-2 = Tipo geo.enabled

@@ -9,4 +9,25 @@
                        for the help button in the menubar but Gnome does not.   -->
 <!ENTITY helpMenuWin.label "Hjálp">
 <!ENTITY helpMenuWin.accesskey "H">
+<!ENTITY aboutProduct2.label "Um &brandShorterName;">
+<!ENTITY aboutProduct2.accesskey "A">
+<!ENTITY productHelp.label "&brandShortName; Hjálp">
+<!ENTITY productHelp.accesskey "H">
+<!ENTITY productHelp.commandkey "VK_F1">
+<!ENTITY productHelpMac.commandkey "?">
+<!ENTITY productHelpMac.modifiers "flýti">
 
+<!ENTITY helpKeyboardShortcuts.label "Flýtilyklar">
+<!ENTITY helpKeyboardShortcuts.accesskey "K">
+
+<!ENTITY helpFeedbackPage.label "Senda álit…">
+<!ENTITY helpFeedbackPage.accesskey "S">
+
+<!ENTITY helpShowTour2.label "&brandShorterName; Kynning">
+<!ENTITY helpShowTour2.accesskey "k">
+
+<!ENTITY helpGetInvolvedPage.label "Taktu þátt">
+<!ENTITY helpGetInvolvedPage.accesskey "T">
+
+<!ENTITY helpDonationsPage.label "Styrkja verkefnið">
+<!ENTITY helpDonationsPage.accesskey "V">

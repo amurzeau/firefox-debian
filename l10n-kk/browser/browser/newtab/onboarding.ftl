@@ -44,7 +44,14 @@ onboarding-multistage-set-default-header = { -brand-short-name } өнімін ө
 onboarding-multistage-set-default-subtitle = Әр шолудағы жылдамдық, қауіпсіздік және жекелік.
 onboarding-multistage-set-default-primary-button-label = Негізгі етіп қылу
 onboarding-multistage-set-default-secondary-button-label = Қазір емес
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-pin-default-header = <span data-l10n-name="zap">{ -brand-short-name }</span> өнімін бір шерту бойынша қолжетімді қылу арқылы бастаңыз
 onboarding-multistage-pin-default-subtitle = Сіз интернетті пайдаланатын әр кездегі жылдам, қауіпсіз және жекелік шолу.
+# The "settings" here refers to "Windows 10 Settings App" and not the browser's
+onboarding-multistage-pin-default-waiting-subtitle = Баптаулар ашық кезінде "Веб-браузер" ішінен { -brand-short-name } таңдаңыз
+# The "settings" here refers to "Windows 10 Settings App" and not the browser's
+onboarding-multistage-pin-default-help-text = Бұл { -brand-short-name } өнімін тапсырмалар панеліне бекітіп, баптауларды ашады
 onboarding-multistage-pin-default-primary-button-label = { -brand-short-name } өнімін менің негізгі браузерім қылу
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "more" should stay inside the span.
@@ -98,6 +105,12 @@ mr1-onboarding-reduce-motion-button-label = Анимацияларды сөнд�
 ## match the OS' application context menu item action where Windows uses "pin"
 ## and "taskbar" while macOS "keep" and "Dock" (proper noun).
 
+# Title used on welcome page when Firefox is not pinned
+mr1-onboarding-pin-header =
+    { PLATFORM() ->
+        [macos] Жылдам қол жеткізу үшін { -brand-short-name } өнімін Dock ішінде қалдырыңыз
+       *[other] Жылдам қол жеткізу үшін { -brand-short-name } өнімін тапсырмалар панеліне бекітіңіз
+    }
 # Primary button string used on welcome page when Firefox is not pinned.
 mr1-onboarding-pin-primary-button-label =
     { PLATFORM() ->
@@ -111,17 +124,25 @@ mr1-onboarding-pin-primary-button-label =
 # when Firefox is both pinned and default
 mr1-onboarding-get-started-primary-button-label = Бастау
 mr1-onboarding-welcome-header = { -brand-short-name } өніміне қош келдіңіз
+mr1-onboarding-set-default-pin-primary-button-label = { -brand-short-name } өнімін менің негізгі браузерім қылу
+    .title = { -brand-short-name } негізгі браузер етіп, тапсырмалар панеліне бекітеді
+# This string will be used on welcome page primary button label
+# when Firefox is not default but already pinned
+mr1-onboarding-set-default-only-primary-button-label = { -brand-short-name } өнімін менің негізгі браузерім қылу
 mr1-onboarding-set-default-secondary-button-label = Қазір емес
 mr1-onboarding-sign-in-button-label = Кіру
 
 ## Title, subtitle and primary button string used on set default onboarding screen
 ## when Firefox is not default browser
 
+mr1-onboarding-default-header = { -brand-short-name } өнімін негізгі браузер қылу
+mr1-onboarding-default-subtitle = Жылдамдық, қауіпсіздік және жекелікті автопилотқа орнатыңыз.
 mr1-onboarding-default-primary-button-label = Негізгі браузер қылу
 
 ## Multistage MR1 onboarding strings (about:welcome pages)
 
 mr1-onboarding-import-header = Барлығын өзіңізбен бірге алыңыз
+mr1-onboarding-import-subtitle = Парольдер, <br/>бетбелгілер және т.б. импорттаңыз.
 # The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
@@ -130,6 +151,8 @@ mr1-onboarding-import-primary-button-label-attribution = { $previous } ішін�
 mr1-onboarding-import-primary-button-label-no-attribution = Бұрынғы браузерден импорттау
 mr1-onboarding-import-secondary-button-label = Қазір емес
 mr2-onboarding-colorway-header = Түрлі-түсті өмір
+mr2-onboarding-colorway-subtitle = Жаңа, жарық түстер схемалары. Шектеулі уақыт ішінде ғана қолжетімді.
+mr2-onboarding-colorway-primary-button-label = Түстер схемасын сақтау
 mr2-onboarding-colorway-secondary-button-label = Қазір емес
 mr2-onboarding-colorway-label-soft = Жұмсақ
 mr2-onboarding-colorway-label-balanced = Теңгерілген
@@ -245,7 +268,39 @@ mr1-onboarding-theme-description-alpenglow =
     .aria-description =
         Батырмалар, мәзірлер және терезелер үшін
         динамикалық, түрлі-түсті теманы қолдану.
+# Tooltip displayed on hover of non-default colorway theme
+# variations e.g. soft, balanced, bold
+mr2-onboarding-theme-tooltip =
+    .title = Бұл түстер схемасын қолдану.
+# Selector description for non-default colorway theme
+# variations e.g. soft, balanced, bold
+mr2-onboarding-theme-description =
+    .aria-description = Бұл түстер схемасын қолдану.
+# Tooltip displayed on hover of colorway
+# Variables:
+#   $colorwayName (String) - Name of colorway
+mr2-onboarding-colorway-tooltip =
+    .title = { $colorwayName } түстер схемаларын шолу.
+# Selector description for colorway
+# Variables:
+#   $colorwayName (String) - Name of colorway
+mr2-onboarding-colorway-description =
+    .aria-description = { $colorwayName } түстер схемаларын шолу.
+# Selector description for colorway
+# Variables:
+#   $colorwayName (String) - Name of colorway
+mr2-onboarding-colorway-label = { $colorwayName } түстер схемаларын шолу.
+# Tooltip displayed on hover of default themes
+mr2-onboarding-default-theme-tooltip =
+    .title = Бастапқы темаларды шолу.
+# Selector description for default themes
+mr2-onboarding-default-theme-description =
+    .aria-description = Бастапқы темаларды шолу.
+# Selector description for default themes
+mr2-onboarding-default-theme-label = Бастапқы темаларды шолу.
 
 ## Strings for Thank You page
 
+mr2-onboarding-thank-you-header = Бізді таңдағаныңызға рахмет
+mr2-onboarding-thank-you-text = { -brand-short-name } — коммерциялық емес ұйым қолдайтын тәуелсіз браузер. Біз интернетті бірге қауіпсіз, сау және жеке етіп жасаймыз.
 mr2-onboarding-start-browsing-button-label = Шолуды бастау

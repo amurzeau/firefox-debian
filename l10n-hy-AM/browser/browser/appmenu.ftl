@@ -68,6 +68,8 @@ appmenuitem-fullscreen =
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
+appmenu-remote-tabs-sign-into-sync =
+    .label = Մուտք գործեք՝ համաժամեցնելու համար…
 # This is shown beneath the name of a device when that device has no open tabs
 appmenu-remote-tabs-notabs = Չկան բաց ներդիրներ
 # This is shown when Sync is configured but syncing tabs is disabled.
@@ -148,9 +150,14 @@ profiler-popup-capture-shortcut =
 # devtools/client/performance-new/popup/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
+profiler-popup-presets-media-label =
+    .label = Մեդիա
 
 ## History panel
 
+appmenu-manage-history =
+    .label = Կառավարեք պատմությունը
+appmenu-reopen-all-tabs = Վերաբացեք բոլոր ներդիրները
 appmenu-restore-session =
     .label = Վերականգնել նախորդ աշխատաշրջանը
 appmenu-clear-history =

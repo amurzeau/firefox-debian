@@ -499,8 +499,8 @@ home-prefs-shortcuts-by-option-sponsored =
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
-    .label = Рекомендовано { $provider }
-home-prefs-recommended-by-description-update = Винятково цікаві матеріали з мережі від { $provider }
+    .label = Рекомендації від { $provider }
+home-prefs-recommended-by-description-update = Добірні матеріали з Інтернету від { $provider }
 home-prefs-recommended-by-description-new = Добірні матеріали від { $provider }, що входить до родини { -brand-product-name }
 
 ##
@@ -868,6 +868,10 @@ sitedata-option-block-cross-site-tracking-cookies-including-social-media =
     .label = Куки стеження між сайтами — включають куки соціальних мереж
 sitedata-option-block-cross-site-cookies-including-social-media =
     .label = Куки сторонніх сайтів — включають куки соціальних мереж
+sitedata-option-block-cross-site-tracking-cookies =
+    .label = Куки стеження між сайтами
+sitedata-option-block-cross-site-cookies =
+    .label = Куки стеження між сайтами та ізолювання інших кук
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Стеження між сайтами та соціальних мереж, а також ізолювання куків, що залишилися
 sitedata-option-block-unvisited =

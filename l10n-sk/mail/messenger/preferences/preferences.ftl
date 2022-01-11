@@ -116,9 +116,6 @@ restore-default-label =
     .label = Obnoviť predvolenú
     .accesskey = d
 default-search-engine = Predvolený vyhľadávací modul
-add-search-engine =
-    .label = Pridať zo súboru
-    .accesskey = r
 add-web-search-engine =
     .label = Pridať…
     .accesskey = P
@@ -132,7 +129,7 @@ adding-opensearch-provider-failed-text = Nepodarilo sa pridať poskytovateľa Op
 minimize-to-tray-label =
     .label = Ak je { -brand-short-name } minimalizovaný, presunúť ho oblasti oznámení
     .accesskey = m
-new-message-arrival = Pri prijatí novej správy
+new-message-arrival = Pri prijatí novej správy:
 mail-play-sound-label =
     .label =
         { PLATFORM() ->
@@ -141,7 +138,7 @@ mail-play-sound-label =
         }
     .accesskey =
         { PLATFORM() ->
-            [macos] z
+            [macos] h
            *[other] h
         }
 mail-play-button =
@@ -320,12 +317,6 @@ quoted-text-color =
     .accesskey = a
 search-handler-table =
     .placeholder = Filtrovať typy obsahu a akcie
-type-column-label =
-    .label = Typ obsahu
-    .accesskey = T
-action-column-label =
-    .label = Akcia
-    .accesskey = A
 type-column-header = Typ obsahu
 action-column-header = Akcia
 save-to-label =

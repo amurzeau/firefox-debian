@@ -184,16 +184,31 @@ profiler-popup-capture-shortcut =
 # devtools/client/performance-new/popup/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
+profiler-popup-presets-web-developer-description = تنظیمات پیشنهادی برای بیشتر اپ‌های وب، با سربار پایین.
 profiler-popup-presets-web-developer-label =
     .label = توسعه‌دهنده وب
+profiler-popup-presets-firefox-platform-description = تنظیمات پیشنهادی برای اشکال‌زدایی از پلتفرم‌های داخلی Firefox.
 profiler-popup-presets-firefox-platform-label =
     .label = پلتفرم Firefox
+profiler-popup-presets-firefox-front-end-description = تنظیمات پیشنهادی برای اشکال‌زدایی از فرانت‌اند داخلی Firefox.
+profiler-popup-presets-firefox-front-end-label =
+    .label = فرانت‌اند Firefox
+profiler-popup-presets-firefox-graphics-description = تنظیمات پیشنهادی برای بررسی عملکرد گرافیکی Firefox.
 profiler-popup-presets-firefox-graphics-label =
     .label = گرافیک Firefox
+profiler-popup-presets-media-description = تنظیمات پیشتهادی برای تشخیص مشکلات صوتی و تصویری.
+profiler-popup-presets-firefox-description = تنظیمات پیشنهادی برای نمایه‌سازی { -brand-shorter-name }.
+profiler-popup-presets-firefox-label =
+    .label = { -brand-shorter-name }
+profiler-popup-presets-graphics-description = تنظیمات مربوط به بررسی اشکالات گرافیکی در { -brand-shorter-name }.
 profiler-popup-presets-graphics-label =
     .label = گرافیک
+profiler-popup-presets-media-description2 = تنظیمات مربوط به بررسی اشکالات صوتی و تصویری در { -brand-shorter-name }.
 profiler-popup-presets-media-label =
     .label = رسانه
+profiler-popup-presets-networking-description = تنظیمات مربوط به بررسی اشکالات شبکه در { -brand-shorter-name }.
+profiler-popup-presets-networking-label =
+    .label = شبکه
 profiler-popup-presets-custom-label =
     .label = سفارشی
 

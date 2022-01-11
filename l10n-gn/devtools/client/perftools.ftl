@@ -136,6 +136,8 @@ perftools-presets-graphics-description = Oñemoĩva ohapykuerereka hag̃ua mba�
 perftools-presets-media-label = Momaranduha
 perftools-presets-media-description = Ñemboheko ypygua eikuaa hag̃ua mba’epu ha ta’ãngamýi apañuãi.
 perftools-presets-media-description2 = Oñemoĩva ohapykuerereka hag̃ua mba’epu ha ta’ãngamýi { -brand-shorter-name }.
+perftools-presets-networking-label = Pyha
+perftools-presets-networking-description = Oñemoĩva ohapykuereka hag̃ua pyha apañuãi { -brand-shorter-name }-pe.
 perftools-presets-custom-label = Mboavapyre
 
 ##

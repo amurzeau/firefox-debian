@@ -2,6 +2,17 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## Window controls
+
+messenger-window-minimize-button =
+    .tooltiptext = Kis méret
+messenger-window-maximize-button =
+    .tooltiptext = Teljes méret
+messenger-window-restore-down-button =
+    .tooltiptext = Előző méret
+messenger-window-close-button =
+    .tooltiptext = Bezárás
 # Variables:
 # $count (Number) - Number of unread messages.
 unread-messages-os-tooltip =
@@ -99,13 +110,23 @@ appmenu-redirect-msg =
 
 context-menu-redirect-msg =
     .label = Átirányítás
+mail-context-delete-messages =
+    .label =
+        { $count ->
+            [one] Üzenet törlése
+           *[other] Kijelölt üzenetek törlése
+        }
+context-menu-decrypt-to-folder =
+    .label = Másolás visszafejtettként ide
+    .accesskey = v
 
 ## Message header pane
 
 other-action-redirect-msg =
     .label = Átirányítás
-message-header-msg-is-flagged =
-    .title = Csillagozott üzenet
+message-header-msg-flagged =
+    .title = Csillagozott
+    .aria-label = Csillagozott
 message-header-msg-not-flagged =
     .title = Nem csillagozott üzenet
 
@@ -144,3 +165,7 @@ repair-text-encoding-button =
 no-reply-title = A válasz nem támogatott
 no-reply-message = A válaszcím ({ $email }) nem tűnik figyelt címnek. Az erre a címre küldött leveleket valószínűleg senki sem fogja olvasni.
 no-reply-reply-anyway-button = Válasz mindenképp
+
+## error messages
+
+decrypt-and-copy-failures = { $failures } / { $total } üzenetet nem sikerült visszafejteni, és nem lettek másolva.

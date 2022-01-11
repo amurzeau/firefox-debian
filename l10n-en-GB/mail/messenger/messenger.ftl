@@ -2,6 +2,17 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## Window controls
+
+messenger-window-minimize-button =
+    .tooltiptext = Minimise
+messenger-window-maximize-button =
+    .tooltiptext = Maximise
+messenger-window-restore-down-button =
+    .tooltiptext = Restore Down
+messenger-window-close-button =
+    .tooltiptext = Close
 # Variables:
 # $count (Number) - Number of unread messages.
 unread-messages-os-tooltip =
@@ -99,13 +110,23 @@ appmenu-redirect-msg =
 
 context-menu-redirect-msg =
     .label = Redirect
+mail-context-delete-messages =
+    .label =
+        { $count ->
+            [one] Delete message
+           *[other] Delete selected messages
+        }
+context-menu-decrypt-to-folder =
+    .label = Copy As Decrypted To
+    .accesskey = y
 
 ## Message header pane
 
 other-action-redirect-msg =
     .label = Redirect
-message-header-msg-is-flagged =
-    .title = Star marked message
+message-header-msg-flagged =
+    .title = Starred
+    .aria-label = Starred
 message-header-msg-not-flagged =
     .title = Not star marked message
 
@@ -144,3 +165,7 @@ repair-text-encoding-button =
 no-reply-title = Reply Not Supported
 no-reply-message = The reply address ({ $email }) does not appear to be a monitored address. Messages to this address will likely not be read by anyone.
 no-reply-reply-anyway-button = Reply Anyway
+
+## error messages
+
+decrypt-and-copy-failures = { $failures } of { $total } messages could not be decrypted and were not copied.
