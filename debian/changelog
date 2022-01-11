@@ -1,3 +1,19 @@
+firefox (96.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2022-01, also known as:
+    CVE-2022-22743, CVE-2022-22742, CVE-2022-22741, CVE-2022-22740,
+    CVE-2022-22738, CVE-2022-22737, CVE-2021-4140, CVE-2022-22748,
+    CVE-2022-22745, CVE-2022-22747, CVE-2022-22739, CVE-2022-22751,
+    CVE-2022-22752.
+
+  * debian/rules:
+    - Adjust preprocessor command to upstream changes.
+    - Set an objdir when using the preprocessor, and clean that up.
+  * debian/control*: Bump nss build dependency.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 12 Jan 2022 08:03:30 +0900
+
 firefox (95.0.1-1) unstable; urgency=medium
 
   * New upstream release.
