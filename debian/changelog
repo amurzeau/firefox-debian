@@ -1,3 +1,14 @@
+firefox-esr (91.5.0esr-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2022-02, also known as:
+    CVE-2022-22743, CVE-2022-22742, CVE-2022-22741, CVE-2022-22740,
+    CVE-2022-22738, CVE-2022-22737, CVE-2021-4140, CVE-2022-22748,
+    CVE-2022-22745, CVE-2022-22744, CVE-2022-22747, CVE-2022-22739,
+    CVE-2022-22751.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 12 Jan 2022 06:58:53 +0900
+
 firefox-esr (91.4.0esr-1) unstable; urgency=medium
 
   * New upstream release.
