@@ -16,11 +16,6 @@ downloads-panel =
 # The style attribute has the width of the Downloads Panel expressed using
 # a CSS unit. The longest labels that should fit are usually those of
 # in-progress and blocked downloads.
-downloads-panel-list =
-    .style = width: 70ch
-# The style attribute has the width of the Downloads Panel expressed using
-# a CSS unit. The longest labels that should fit are usually those of
-# in-progress and blocked downloads.
 downloads-panel-items =
     .style = width: 35em
 downloads-cmd-pause =
@@ -41,9 +36,18 @@ downloads-cmd-show-menuitem =
 downloads-cmd-show-menuitem-mac =
     .label = W programje Finder pokazać
     .accesskey = F
+downloads-cmd-show-menuitem-2 =
+    .label =
+        { PLATFORM() ->
+            [macos] W Finder pokazać
+           *[other] W rjadowaku pokazać
+        }
+    .accesskey = d
 downloads-cmd-use-system-default =
     .label = W systemowym wobhladowaku wočinić
     .accesskey = h
+# We can use the same accesskey as downloads-cmd-always-open-similar-files.
+# Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-use-system-default =
     .label = Přeco w systemowym wobhladowaku wočinić
     .accesskey = P
@@ -64,6 +68,29 @@ downloads-cmd-show-description =
         { PLATFORM() ->
             [macos] W programje Finder pokazać
            *[other] Wobsahowacy rjadowak wočinić
+        }
+# We can use the same accesskey as downloads-cmd-always-use-system-default.
+# Both should not be visible in the downloads context menu at the same time.
+downloads-cmd-always-open-similar-files =
+    .label = Přeco podobne dataje wočinić
+    .accesskey = P
+downloads-cmd-show-button-2 =
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] W Finder pokazać
+           *[other] W rjadowaku pokazać
+        }
+downloads-cmd-show-panel-2 =
+    .aria-label =
+        { PLATFORM() ->
+            [macos] W Finder pokazać
+           *[other] W rjadowaku pokazać
+        }
+downloads-cmd-show-description-2 =
+    .value =
+        { PLATFORM() ->
+            [macos] W Finder pokazać
+           *[other] W rjadowaku pokazać
         }
 downloads-cmd-show-downloads =
     .label = Rjadowak sćehnjenjow pokazać
@@ -152,6 +179,24 @@ downloads-history =
 # that we are showing the details of a single download.
 downloads-details =
     .title = Sćehnjenske podrobnosće
+
+## Displayed when a site attempts to automatically download many files.
+## Variables:
+##   $num (number) - Number of blocked downloads.
+##   $url (string) - The url of the suspicious site, stripped of http, https and www prefix.
+
+downloads-files-not-downloaded =
+    { $num ->
+        [one] { $num } dataja njeje so sćahnyła.
+        [two] { $num } dataji njejstej so sćahnyłoj.
+        [few] { $num } dataje njejsu so sćahnyli.
+       *[other] { $num } datajow njeje so sćahnyło.
+    }
+downloads-blocked-from-url = Wot { $url } zablokowane sćehnjenja.
+downloads-blocked-download-detailed-info = { $url } je spytało, wjacore dataje awtomatisce sćahnyć. Sydło je snano wobškodźene abo pospytuje spamowe dataje na wašim graće składować.
+
+##
+
 downloads-clear-downloads-button =
     .label = Sćehnjenja zhašeć
     .tooltiptext = Zhaša skónčene, přetorhnjene a njeporadźene sćehnjenja
@@ -162,3 +207,14 @@ downloads-list-empty =
 # This string is shown when there are no items in the Downloads Panel.
 downloads-panel-empty =
     .value = Žane sćehnjenja za tute posedźenje.
+# This is displayed in an item at the bottom of the Downloads Panel when there
+# are more downloads than can fit in the list in the panel.
+#   $count (number) - number of files being downloaded that are not shown in the
+#                     panel list.
+downloads-more-downloading =
+    { $count ->
+        [one] { $count } dalša dataja so sćahuje
+        [two] { $count } dalšej dataji so sćahujetej
+        [few] { $count } dalša dataje so sćahuja
+       *[other] { $count } dalšich datajow so sćahuje
+    }

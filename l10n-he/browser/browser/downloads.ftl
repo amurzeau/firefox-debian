@@ -16,11 +16,6 @@ downloads-panel =
 # The style attribute has the width of the Downloads Panel expressed using
 # a CSS unit. The longest labels that should fit are usually those of
 # in-progress and blocked downloads.
-downloads-panel-list =
-    .style = width: 70ch
-# The style attribute has the width of the Downloads Panel expressed using
-# a CSS unit. The longest labels that should fit are usually those of
-# in-progress and blocked downloads.
 downloads-panel-items =
     .style = width: 35em
 downloads-cmd-pause =
@@ -41,9 +36,18 @@ downloads-cmd-show-menuitem =
 downloads-cmd-show-menuitem-mac =
     .label = הצגה ב־Finder
     .accesskey = צ
+downloads-cmd-show-menuitem-2 =
+    .label =
+        { PLATFORM() ->
+            [macos] הצגה ב־Finder
+           *[other] הצגה בתיקייה
+        }
+    .accesskey = ה
 downloads-cmd-use-system-default =
     .label = פתיחה באמצעות מציג המערכת
     .accesskey = פ
+# We can use the same accesskey as downloads-cmd-always-open-similar-files.
+# Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-use-system-default =
     .label = תמיד לפתוח באמצעות מציג המערכת
     .accesskey = ת
@@ -64,6 +68,29 @@ downloads-cmd-show-description =
         { PLATFORM() ->
             [macos] הצגה ב־Finder
            *[other] פתיחת תיקייה מכילה
+        }
+# We can use the same accesskey as downloads-cmd-always-use-system-default.
+# Both should not be visible in the downloads context menu at the same time.
+downloads-cmd-always-open-similar-files =
+    .label = תמיד לפתוח קבצים דומים
+    .accesskey = ת
+downloads-cmd-show-button-2 =
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] הצגה ב־Finder
+           *[other] הצגה בתיקייה
+        }
+downloads-cmd-show-panel-2 =
+    .aria-label =
+        { PLATFORM() ->
+            [macos] הצגה ב־Finder
+           *[other] הצגה בתיקייה
+        }
+downloads-cmd-show-description-2 =
+    .value =
+        { PLATFORM() ->
+            [macos] הצגה ב־Finder
+           *[other] הצגה בתיקייה
         }
 downloads-cmd-show-downloads =
     .label = הצגת תיקיית ההורדות
@@ -185,6 +212,22 @@ downloads-history =
 # that we are showing the details of a single download.
 downloads-details =
     .title = פרטי הורדה
+
+## Displayed when a site attempts to automatically download many files.
+## Variables:
+##   $num (number) - Number of blocked downloads.
+##   $url (string) - The url of the suspicious site, stripped of http, https and www prefix.
+
+downloads-files-not-downloaded =
+    { $num ->
+        [one] הקובץ לא הורד.
+       *[other] { $num } קבצים לא הורדו.
+    }
+downloads-blocked-from-url = הורדות נחסמו מ־{ $url }.
+downloads-blocked-download-detailed-info = האתר { $url } ניסה להוריד באופן אוטומטי מספר מרובה של קבצים. ייתכן שהאתר פועל לא כשורה, או שהוא מנסה לאחסן קובצי זבל על המכשיר שלך.
+
+##
+
 downloads-clear-downloads-button =
     .label = ניקוי הורדות
     .tooltiptext = ניקוי ההורדות שהושלמו, בוטלו ונכשלו
@@ -195,3 +238,12 @@ downloads-list-empty =
 # This string is shown when there are no items in the Downloads Panel.
 downloads-panel-empty =
     .value = אין הורדות בהפעלה זו.
+# This is displayed in an item at the bottom of the Downloads Panel when there
+# are more downloads than can fit in the list in the panel.
+#   $count (number) - number of files being downloaded that are not shown in the
+#                     panel list.
+downloads-more-downloading =
+    { $count ->
+        [one] עוד קובץ אחד בהורדה
+       *[other] עוד { $count } קבצים בהורדה
+    }

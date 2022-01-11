@@ -122,15 +122,37 @@ cfr-doorhanger-video-support-header = Actualizatz { -brand-short-name } per legi
 cfr-doorhanger-video-support-primary-button = Actualizar ara
     .accesskey = A
 
+## Spotlight modal shared strings
+
+spotlight-learn-more-collapsed = Ne saber mai
+    .title = Espandir per ne saber mai tocant aquesta foncionalitat
+spotlight-learn-more-expanded = Ne saber mai
+    .title = Tampar
+
 ## VPN promotion dialog for public Wi-Fi users
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
 ## to the Mozilla VPN page and a link to dismiss the dialog.
 
+# This header text can be explicitly wrapped.
 spotlight-public-wifi-vpn-header = Sembla qu’utilizatz un Wi-Fi public
 spotlight-public-wifi-vpn-body = Per amagar vòstre emplaçament e activitat de navegacion, pensatz al ret privat virtual. Vos ajudarà a gardar privada vòstra navegacion quand navegatz a partir de lòcs publics coma los aeropòrts e cafetariás.
 spotlight-public-wifi-vpn-primary-button = Demoratz privat amb { -mozilla-vpn-brand-name }
     .accesskey = D
 spotlight-public-wifi-vpn-link = Pas ara
     .accesskey = a
+
+## Total Cookie Protection Rollout
+
+# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
+# "Join an early experiment". This header text can be explicitly wrapped.
+spotlight-total-cookie-protection-header =
+    Ensajatz abans lo monde
+    la melhora experiéncia de confidencialitat jamai concebuda
+spotlight-total-cookie-protection-body = La proteccion totala contra los cookies empacha los traçadors d’utilizar de cookies per vos pistar pel Web.
+# "Early access" for this feature rollout means it's a "feature preview" or
+# "soft launch" as not everybody will get it yet.
+spotlight-total-cookie-protection-expanded = { -brand-short-name } crèa una barrièra a l’entorn dels cookies, per los limitar al site ont vos trobatz per dire que los traçadors pòscan pas vos pistar. En participant d’un biais anticipat, contribuissètz a optimizar aquesta foncionalitat per que poscam téner de bastir un melhor Web per tot lo monde.
+spotlight-total-cookie-protection-primary-button = Activar la proteccion totala contra los cookies
+spotlight-total-cookie-protection-secondary-button = Pas ara

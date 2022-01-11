@@ -12,6 +12,16 @@ appmenuitem-update-banner3 =
     .label-update-unsupported = Aggiornamento non riuscito - sistema non compatibile
     .label-update-restart = Aggiornamento disponibile — riavvia adesso
 appmenuitem-protection-dashboard-title = Pannello protezioni
+appmenuitem-banner-update-downloading =
+    .label = Download aggiornamento di { -brand-shorter-name } in corso
+appmenuitem-banner-update-available =
+    .label = Aggiornamento disponibile — scarica adesso
+appmenuitem-banner-update-manual =
+    .label = Aggiornamento disponibile — scarica adesso
+appmenuitem-banner-update-unsupported =
+    .label = Aggiornamento non riuscito - sistema non compatibile
+appmenuitem-banner-update-restart =
+    .label = Aggiornamento disponibile — riavvia adesso
 appmenuitem-new-tab =
     .label = Nuova scheda
 appmenuitem-new-window =
@@ -115,12 +125,11 @@ profiler-popup-button-idle =
     .label = Profiler
     .tooltiptext = Registra un profilo delle prestazioni
 profiler-popup-button-recording =
-  .label = Profiler
-  .tooltiptext = Registrazione del profilo in corso…
-
+    .label = Profiler
+    .tooltiptext = Registrazione del profilo in corso…
 profiler-popup-button-capturing =
-  .label = Profiler
-  .tooltiptext = Cattura del profilo in corso…
+    .label = Profiler
+    .tooltiptext = Cattura del profilo in corso…
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -184,10 +193,21 @@ profiler-popup-presets-firefox-graphics-description = Preset consigliato per l�
 profiler-popup-presets-firefox-graphics-label =
     .label = Firefox - Grafica
 profiler-popup-presets-media-description = Preset consigliato per la diagnosi di problemi audio e video.
-profiler-popup-presets-media-label =
-    .label = Multimediale
+
 profiler-popup-presets-custom-label =
     .label = Personalizzato
+
+profiler-popup-presets-firefox-description = Preset consigliato per la profilazione di { -brand-shorter-name }.
+profiler-popup-presets-firefox-label =
+  .label = { -brand-shorter-name }
+
+profiler-popup-presets-graphics-description = Preset per la diagnosi di problemi grafici in { -brand-shorter-name }.
+profiler-popup-presets-graphics-label =
+  .label = Grafica
+
+profiler-popup-presets-media-description2 = Preset per la diagnosi di problemi audio e video in { -brand-shorter-name }.
+profiler-popup-presets-media-label =
+    .label = Multimediale
 
 ## History panel
 

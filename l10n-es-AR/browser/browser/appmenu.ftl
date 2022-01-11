@@ -12,6 +12,16 @@ appmenuitem-update-banner3 =
     .label-update-unsupported = No se puede actualizar — sistema incompatible
     .label-update-restart = Actualización disponible — reiniciar ahora
 appmenuitem-protection-dashboard-title = Panel de protecciones
+appmenuitem-banner-update-downloading =
+    .label = Descargando actualización de { -brand-shorter-name }
+appmenuitem-banner-update-available =
+    .label = Actualización disponible — descargar ahora
+appmenuitem-banner-update-manual =
+    .label = Actualización disponible — descargar ahora
+appmenuitem-banner-update-unsupported =
+    .label = No se puede actualizar — sistema incompatible
+appmenuitem-banner-update-restart =
+    .label = Actualización disponible — reiniciar ahora
 appmenuitem-new-tab =
     .label = Nueva pestaña
 appmenuitem-new-window =
@@ -51,7 +61,7 @@ appmenu-menu-button-opened2 =
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
 appmenuitem-settings =
-    .label = Ajustes
+    .label = Preferencias
 
 ## Zoom and Fullscreen Controls
 
@@ -77,7 +87,7 @@ appmenu-remote-tabs-notabs = Sin pestañas abiertas
 # This is shown when Sync is configured but syncing tabs is disabled.
 appmenu-remote-tabs-tabsnotsyncing = Habilitar sincronización de pestañas para ver una lista de pestañás de los otros dispositivos.
 appmenu-remote-tabs-opensettings =
-    .label = Ajustes
+    .label = Preferencias
 # This is shown when Sync is configured but this appears to be the only device attached to
 # the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = ¿Desea ver las pestañas de sus otros dispositivos acá?
@@ -135,12 +145,12 @@ profiler-popup-learn-more = Conocer más
 profiler-popup-learn-more-button =
     .label = Conocer más
 profiler-popup-settings =
-    .value = Ajustes
+    .value = Preferencias
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
-profiler-popup-edit-settings = Editar Ajustes…
+profiler-popup-edit-settings = Editar Preferencias…
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings-button =
-    .label = Editar Ajustes…
+    .label = Editar Preferencias…
 profiler-popup-disabled =
     El perfilador está desactivado en este momento, muy probablemente debido a una ventana de navegación privada
     que se está abriendo.
@@ -187,6 +197,13 @@ profiler-popup-presets-firefox-graphics-description = Configuración predetermin
 profiler-popup-presets-firefox-graphics-label =
     .label = Gráficos en Firefox
 profiler-popup-presets-media-description = Configuración predeterminada para diagnosticar problemas de audio y video.
+profiler-popup-presets-firefox-description = Valor predeterminado recomendado para la creación de perfiles { -brand-shorter-name }
+profiler-popup-presets-firefox-label =
+    .label = { -brand-shorter-name }
+profiler-popup-presets-graphics-description = Preestablecido para investigar errores gráficos en { -brand-shorter-name }.
+profiler-popup-presets-graphics-label =
+    .label = Gráficos
+profiler-popup-presets-media-description2 = Preestablecido para investigar errores de audio y video en { -brand-shorter-name }.
 profiler-popup-presets-media-label =
     .label = Medios
 profiler-popup-presets-custom-label =

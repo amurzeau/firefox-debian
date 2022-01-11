@@ -11,6 +11,12 @@ reload-tab =
 select-all-tabs =
     .label = Επιλογή όλων των καρτελών
     .accesskey = Ε
+tab-context-play-tab =
+    .label = Αναπαραγωγή καρτέλας
+    .accesskey = Α
+tab-context-play-tabs =
+    .label = Αναπαραγωγή καρτελών
+    .accesskey = π
 duplicate-tab =
     .label = Αντιγραφή καρτέλας
     .accesskey = Α
@@ -103,7 +109,6 @@ tab-context-move-tabs =
            *[other] Μετακίνηση καρτελών
         }
     .accesskey = τ
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

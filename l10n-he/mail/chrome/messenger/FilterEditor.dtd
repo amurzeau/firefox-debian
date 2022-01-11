@@ -16,7 +16,7 @@
 <!ENTITY highPriorityCmd.label "גבוהה">
 <!ENTITY highestPriorityCmd.label "הכי גבוהה">
 
-<!ENTITY contextDesc.label "הפעל מסננים כאשר:">
+<!ENTITY contextDesc.label "הפעלת מסננים כאשר:">
 <!ENTITY contextIncomingMail.label "קבלת הודעת דוא״ל חדשה:">
 <!ENTITY contextIncomingMail.accesskey "ק">
 <!ENTITY contextManual.label "מורץ ידנית">
@@ -28,8 +28,8 @@
 <!ENTITY contextArchive.label "העברה לארכיון">
 <!ENTITY contextArchive.accesskey "א">
 
-<!ENTITY filterActionDesc.label "בצע פעולות אלו:">
-<!ENTITY filterActionDesc.accesskey "P">
+<!ENTITY filterActionDesc.label "ביצוע פעולות אלו:">
+<!ENTITY filterActionDesc.accesskey "ב">
 
 <!ENTITY filterActionOrderWarning.label "לתשומת לבך: פעולות המסנן תרוצנה בסדר שונה.">
 <!ENTITY filterActionOrder.label "הצגת סדר הפעולות">

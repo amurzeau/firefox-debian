@@ -9,6 +9,8 @@ search-header =
 search-header-shortcut =
     .key = f
 list-empty-get-extensions-message = იხილეთ გაფართოებები და თემები, <a data-l10n-name="get-extensions">{ $domain }</a>
+list-empty-get-dictionaries-message = ლექსიკონებისთვის, იხილეთ <a data-l10n-name="get-extensions">{ $domain }</a>
+list-empty-get-language-packs-message = ენის კრებულებისთვის, იხილეთ <a data-l10n-name="get-extensions">{ $domain }</a>
 list-empty-installed =
     .value = ამ სახის არცერთი დამატება არ გაქვთ დაყენებული
 list-empty-available-updates =
@@ -252,6 +254,7 @@ install-theme-button = თემის ჩადგმა
 # the detailed add-on view is opened, from where the add-on can be managed.
 manage-addon-button = მართვა
 find-more-addons = სხვა დამატებების მოძიება
+find-more-themes = სხვა თემების მოძიება
 # This is a label for the button to open the "more options" menu, it is only
 # used for screen readers.
 addon-options-button =
@@ -281,6 +284,8 @@ extension-enabled-heading = ჩართულია
 extension-disabled-heading = ამორთულია
 theme-enabled-heading = ჩართულია
 theme-disabled-heading = ამორთულია
+theme-monochromatic-heading = შეფერილობები
+theme-monochromatic-subheading = ახალი ხასხასა შეფერილობები, რომელთაც { -brand-product-name } გთავაზობთ. ხელმისაწვდომია მცირე დროით.
 plugin-enabled-heading = ჩართულია
 plugin-disabled-heading = ამორთულია
 dictionary-enabled-heading = ჩართულია

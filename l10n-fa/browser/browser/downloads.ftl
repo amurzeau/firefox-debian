@@ -16,11 +16,6 @@ downloads-panel =
 # The style attribute has the width of the Downloads Panel expressed using
 # a CSS unit. The longest labels that should fit are usually those of
 # in-progress and blocked downloads.
-downloads-panel-list =
-    .style = width: 70ch
-# The style attribute has the width of the Downloads Panel expressed using
-# a CSS unit. The longest labels that should fit are usually those of
-# in-progress and blocked downloads.
 downloads-panel-items =
     .style = width: 35em
 downloads-cmd-pause =
@@ -41,9 +36,18 @@ downloads-cmd-show-menuitem =
 downloads-cmd-show-menuitem-mac =
     .label = نمایش در یابنده
     .accesskey = ی
+downloads-cmd-show-menuitem-2 =
+    .label =
+        { PLATFORM() ->
+            [macos] نمایش در Finder
+           *[other] نمایش در پوشه
+        }
+    .accesskey = پ
 downloads-cmd-use-system-default =
     .label = باز کردن در نمایشگر سامانه (V)
     .accesskey = V
+# We can use the same accesskey as downloads-cmd-always-open-similar-files.
+# Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-use-system-default =
     .label = باز کردن همیشگی در نمایشگر سامانه (w)
     .accesskey = w
@@ -64,6 +68,29 @@ downloads-cmd-show-description =
         { PLATFORM() ->
             [macos] نمایش در یابنده
            *[other] باز کردن پوشهٔ محتوی پرونده
+        }
+# We can use the same accesskey as downloads-cmd-always-use-system-default.
+# Both should not be visible in the downloads context menu at the same time.
+downloads-cmd-always-open-similar-files =
+    .label = همیشه پرونده‌های مشابه باز شوند
+    .accesskey = م
+downloads-cmd-show-button-2 =
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] نمایش در Finder
+           *[other] نمایش در پوشه
+        }
+downloads-cmd-show-panel-2 =
+    .aria-label =
+        { PLATFORM() ->
+            [macos] نمایش در Finder
+           *[other] نمایش در پوشه
+        }
+downloads-cmd-show-description-2 =
+    .value =
+        { PLATFORM() ->
+            [macos] نمایش در Finder
+           *[other] نمایش در پوشه
         }
 downloads-cmd-show-downloads =
     .label = باز کردن پوشه بارگیری‌ها
@@ -152,6 +179,22 @@ downloads-history =
 # that we are showing the details of a single download.
 downloads-details =
     .title = دریافت جزئیات
+
+## Displayed when a site attempts to automatically download many files.
+## Variables:
+##   $num (number) - Number of blocked downloads.
+##   $url (string) - The url of the suspicious site, stripped of http, https and www prefix.
+
+downloads-files-not-downloaded =
+    { $num ->
+        [one] پرونده دریافت نشد.
+       *[other] { $num } پرونده دریافت نشدند.
+    }
+downloads-blocked-from-url = بارگیری‌ها از { $url } مسدود شده‌اند.
+downloads-blocked-download-detailed-info = { $url } سعی کرد به طور خودکار چندین فایل را بارگیری کند. ممکن است سایت خراب باشد یا سعی در ذخیره پرونده‌های هرزنامه در دستگاه شما داشته باشد.
+
+##
+
 downloads-clear-downloads-button =
     .label = پاک کردن دریافتی ها
     .tooltiptext = دانلودهای کامل شده و صرف نظر شده و شکست خورده را پاک میکند
@@ -162,3 +205,12 @@ downloads-list-empty =
 # This string is shown when there are no items in the Downloads Panel.
 downloads-panel-empty =
     .value = هیچ بارگیری‌ای در این نشست انجام نشده.
+# This is displayed in an item at the bottom of the Downloads Panel when there
+# are more downloads than can fit in the list in the panel.
+#   $count (number) - number of files being downloaded that are not shown in the
+#                     panel list.
+downloads-more-downloading =
+    { $count ->
+        [one] { $count } پروندهٔ بیشتر در حال دریافت هستند
+       *[other] { $count } پروندهٔ بیشتر در حال دریافت هستند
+    }

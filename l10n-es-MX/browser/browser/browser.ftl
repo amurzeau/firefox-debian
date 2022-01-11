@@ -87,6 +87,10 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Administrar uso de plugins
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Administrar compartir tu cámara y/o micrófono con el sitio
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+urlbar-web-rtc-share-speaker-notification-anchor =
+    .tooltiptext = Administrar la compartición de otros altavoces con el sitio
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Abrir panel de reproducción automática
 urlbar-persistent-storage-notification-anchor =
@@ -736,6 +740,19 @@ picture-in-picture-hide-toggle =
     .label = Ocultar interruptor de imagen superpuesta
     .accesskey = H
 
+## Since the default position for PiP controls does not change for RTL layout,
+## right-to-left languages should use "Left" and "Right" as in the English strings,
+
+picture-in-picture-move-toggle-right =
+    .label = Mover botón de Picture-in-Picture al lado derecho
+    .accesskey = R
+picture-in-picture-move-toggle-left =
+    .label = Mover botón de Picture-in-Picture al lado izquierdo
+    .accesskey = L
+
+##
+
+
 # Navigator Toolbox
 
 # This string is a spoken label that should not include
@@ -778,3 +795,6 @@ tabs-toolbar-list-all-tabs =
 
 ## Infobar shown at startup to suggest session-restore
 
+# <img data-l10n-name="icon"/> will be replaced by the application menu icon
+restore-session-startup-suggestion-message = <strong>¿Abrir pestañas anteriores?</strong> Puedes restaurar tu sesión anterior desde el menú de la aplicación { -brand-short-name } <img data-l10n-name = "icon" />, bajo Historial.
+restore-session-startup-suggestion-button = Mostrar cómo

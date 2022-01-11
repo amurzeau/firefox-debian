@@ -11,6 +11,12 @@ reload-tab =
 select-all-tabs =
     .label = Sélectionner tous les onglets
     .accesskey = S
+tab-context-play-tab =
+    .label = Lancer la lecture
+    .accesskey = L
+tab-context-play-tabs =
+    .label = Lancer la lecture
+    .accesskey = L
 duplicate-tab =
     .label = Dupliquer l’onglet
     .accesskey = D
@@ -105,7 +111,6 @@ tab-context-move-tabs =
            *[other] Déplacer les onglets
         }
     .accesskey = c
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

@@ -830,7 +830,7 @@ history-clear-on-close-settings =
     .label = Ρυθμίσεις…
     .accesskey = θ
 history-clear-button =
-    .label = Εκκαθάριση ιστορικού…
+    .label = Απαλοιφή ιστορικού…
     .accesskey = σ
 
 ## Privacy Section - Site Data
@@ -946,6 +946,14 @@ content-blocking-all-windows-tracking-content = Περιεχόμενο κατα�
 content-blocking-all-third-party-cookies = Όλα τα cookies τρίτων
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
+# "Test pilot" is used as a verb. Possible alternatives:
+# "Be the first to try", "Join an early experiment".
+content-blocking-etp-standard-tcp-rollout-checkbox =
+    .label = Δοκιμάστε την πιο ισχυρή λειτουργία απορρήτου μας
+    .accesskey = Δ
+# "Contains" here means "isolates", "limits".
+content-blocking-etp-standard-tcp-rollout-description = Η Ολική προστασία cookie περιορίζει τα cookies στον ιστότοπο που βρίσκεστε, ώστε να μην μπορούν να χρησιμοποιηθούν από ιχνηλάτες για την καταγραφή της δραστηριότητάς σας.
+content-blocking-etp-standard-tcp-rollout-learn-more = Μάθετε περισσότερα
 content-blocking-warning-title = Προσοχή!
 content-blocking-and-isolating-etp-warning-description = Η φραγή ιχνηλατών και η απομόνωση cookies μπορούν να επηρεάσουν τη λειτουργικότητα ορισμένων ιστοτόπων. Ανανεώστε μια σελίδα με ιχνηλάτες για να φορτωθεί όλο το περιεχόμενο.
 content-blocking-and-isolating-etp-warning-description-2 = Αυτή η ρύθμιση ενδέχεται να εμποδίσει την εμφάνιση περιεχομένου ή τη σωστή λειτουργία ορισμένων ιστοτόπων. Αν κάποιος ιστότοπος δεν λειτουργεί σωστά, μπορείτε να απενεργοποιήσετε την προστασία από καταγραφή για να γίνει φόρτωση όλου του περιεχομένου.

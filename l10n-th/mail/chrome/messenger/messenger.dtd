@@ -585,7 +585,7 @@
 <!ENTITY remoteContentOptionsAllowForMsg.accesskey "ส">
 <!ENTITY editRemoteContentSettings.label "แก้ไขตัวเลือกเนื้อหาระยะไกล…">
 <!ENTITY editRemoteContentSettings.accesskey "ก">
-<!ENTITY editRemoteContentSettingsUnix.label "แก้ไขค่ากำหนดเนื้อหาระยะไกล…">
+<!ENTITY editRemoteContentSettingsUnix.label "แก้ไขการกำหนดลักษณะเนื้อหาระยะไกล…">
 <!ENTITY editRemoteContentSettingsUnix.accesskey "ก">
 
 <!-- Phishing Button Popup -->
@@ -593,7 +593,7 @@
 <!ENTITY phishingOptionIgnore.accesskey "พ">
 <!ENTITY phishingOptionSettings.label "แก้ไขตัวเลือกการตรวจหาการหลอกลวง…">
 <!ENTITY phishingOptionSettings.accesskey "แ">
-<!ENTITY phishingOptionSettingsUnix.label "แก้ไขค่ากำหนดการตรวจหาการหลอกลวง…">
+<!ENTITY phishingOptionSettingsUnix.label "แก้ไขการกำหนดลักษณะการตรวจหาการหลอกลวง…">
 <!ENTITY phishingOptionSettingsUnix.accesskey "แ">
 
 <!-- AppMenu Popup -->
@@ -696,7 +696,6 @@
 <!ENTITY locationColumn.label "ตำแหน่งที่ตั้ง">
 <!ENTITY idColumn.label "ลำดับที่ได้รับ">
 <!ENTITY attachmentColumn.label "ไฟล์แนบ">
-
 <!ENTITY deleteColumn.label "ลบ">
 
 <!-- Thread Pane Tooltips -->
@@ -722,7 +721,6 @@
 <!ENTITY locationColumn2.tooltip "เรียงตามตำแหน่งที่ตั้ง">
 <!ENTITY idColumn2.tooltip "เรียงตามลำดับที่ได้รับ">
 <!ENTITY attachmentColumn2.tooltip "เรียงตามไฟล์แนบ">
-
 <!ENTITY deleteColumn.tooltip "ลบข้อความ">
 
 <!-- Thread Pane Context Menu -->
@@ -928,7 +926,7 @@
 <!ENTITY zoomWindow.label "ซูม">
 
 <!-- Mac OS X Application Menu (Cocoa widgets) -->
-<!ENTITY preferencesCmdMac2.label       "ค่ากำหนด">
+<!ENTITY preferencesCmdMac2.label       "การกำหนดลักษณะ">
 <!ENTITY preferencesCmdMac.commandkey   ",">
 <!ENTITY preferencesCmdMac.modifiers    "accel">
 <!ENTITY servicesMenuMac.label          "บริการ">

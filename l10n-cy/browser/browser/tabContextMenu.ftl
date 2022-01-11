@@ -11,6 +11,12 @@ reload-tab =
 select-all-tabs =
     .label = Dewis Pob Tab
     .accesskey = D
+tab-context-play-tab =
+    .label = Chwarae'r Tab
+    .accesskey = h
+tab-context-play-tabs =
+    .label = Chwarae Tabiau
+    .accesskey = C
 duplicate-tab =
     .label = Dyblygu Tab
     .accesskey = D
@@ -123,7 +129,6 @@ tab-context-move-tabs =
            *[other] Symud Tab
         }
     .accesskey = S
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

@@ -61,6 +61,7 @@ about-processes-unknown-process = 其他：{ $type }（{ $pid }）
 ##    $origin (String) The domain name for this process.
 
 about-processes-web-isolated-process = { $origin }（{ $pid }）
+about-processes-web-serviceworker = { $origin }（{ $pid }，Service Worker）
 about-processes-web-large-allocation-process = { $origin }（{ $pid }，大型）
 about-processes-with-coop-coep-process = { $origin }（{ $pid }，隔离跨源）
 about-processes-web-isolated-process-private = { $origin } — 私有（{ $pid }）
@@ -131,6 +132,13 @@ about-processes-cpu-user-and-kernel-not-ready = （测量中）
 # Special case: process or thread is currently idle.
 about-processes-cpu-idle = 空闲
     .title = 总 CPU 时间：{ NUMBER($total, maximumFractionDigits: 2) }{ $unit }
+# Special case: process or thread is almost idle (using less than 0.1% of a CPU core).
+# This case only occurs on Windows where the precision of the CPU times is low.
+about-processes-cpu-almost-idle = < 0.1%
+    .title = 总 CPU 时间： { NUMBER($total, maximumFractionDigits: 0) }{ $unit }
+# Special case: process or thread is currently idle.
+about-processes-cpu-fully-idle = 空闲
+    .title = 总 CPU 时间：{ NUMBER($total, maximumFractionDigits: 0) }{ $unit }
 
 ## Displaying Memory (total and delta)
 ## Variables:

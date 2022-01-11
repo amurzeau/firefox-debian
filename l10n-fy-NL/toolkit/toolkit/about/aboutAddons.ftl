@@ -9,6 +9,8 @@ search-header =
 search-header-shortcut =
     .key = f
 list-empty-get-extensions-message = Download útwreidingen en tema’s op <a data-l10n-name="get-extensions">{ $domain }</a>
+list-empty-get-dictionaries-message = Download wurdboeken op <a data-l10n-name="get-extensions">{ $domain }</a>
+list-empty-get-language-packs-message = Download taalpakketten op <a data-l10n-name="get-extensions">{ $domain }</a>
 list-empty-installed =
     .value = Jo hawwe gjin add-ons fan dit type ynstallearre
 list-empty-available-updates =
@@ -99,14 +101,14 @@ disabled-unsigned-heading =
     .value = Guon add-ons binne útskeakele
 disabled-unsigned-description = De folgjende add-ons binne net ferifiearre foar gebrûk yn { -brand-short-name }. Jo kinne <label data-l10n-name="find-addons">nei ferfangingen sykje</label> of de ûntwikkeler freegje dizze ferifiearje te litten.
 disabled-unsigned-learn-more = Mear ynfo oer ús besykjen om jo online feilich te hâlden.
-disabled-unsigned-devinfo = Untwikkelers dy't ynteresse hawwe yn it ferifiearjen litten fan harren add-ons kinne fierdergean troch ús <label data-l10n-name="learn-more">hantlieding</label> te lêzen.
+disabled-unsigned-devinfo = Untwikkelers dy’t ynteresse hawwe yn it ferifiearjen litten fan harren add-ons kinne fierdergean troch ús <label data-l10n-name="learn-more">hantlieding</label> te lêzen.
 plugin-deprecation-description = Misse jo wat? Guon ynstekkers wurde net langer stipe troch { -brand-short-name }. <label data-l10n-name="learn-more">Mear ynfo.</label>
 legacy-warning-show-legacy = Ferâldere útwreidingen toane
 legacy-extensions =
     .value = Ferâldere útwreidingen
 legacy-extensions-description = Dizze útwreidingen foldogge op dit stuit net oan de { -brand-short-name }-standerts binne dêrom de-aktivearre. <label data-l10n-name="legacy-learn-more">Lear mear oer de wizigingen oan add-ons</label>
 private-browsing-description2 =
-    { -brand-short-name } wizigt de manier wêrop útwreidingen yn priveenavigaasje wurkje. Nije útwreidingen dy't jo oan
+    { -brand-short-name } wizigt de manier wêrop útwreidingen yn priveenavigaasje wurkje. Nije útwreidingen dy’t jo oan
     { -brand-short-name } tafoegje, wurkje standert net yn priveefinsters. Utsein jo dit tastean yn de ynstellingen, wurket
     de útwreiding net yn priveenavigaasje, en hat dizze dêryn gjin tagong ta jo online-aktiviteiten.
     Dizze wiziging is oanbrocht om jo priveenavigaasje privee te hâlden.
@@ -117,9 +119,9 @@ addon-category-discover-title =
 addon-category-extension = Utwreidingen
 addon-category-extension-title =
     .title = Utwreidingen
-addon-category-theme = Tema's
+addon-category-theme = Tema’s
 addon-category-theme-title =
-    .title = Tema's
+    .title = Tema’s
 addon-category-plugin = Ynstekkers
 addon-category-plugin-title =
     .title = Ynstekkers
@@ -226,10 +228,10 @@ header-back-button =
 # Explanatory introduction to the list of recommended add-ons. The action word
 # ("recommends") in the final sentence is a link to external documentation.
 discopane-intro =
-    Utwreidingen en tema's binne as apps foar jo browser en sy litte jo wachtwurden
+    Utwreidingen en tema’s binne as apps foar jo browser en sy litte jo wachtwurden
     beskermje, fideo’s downloade, oanbiedingen fine, ferfelende advertinsjes blokkearje, wizigje
-    hoe't jo browser derút sjocht, en noch folle mear. Dizze lytse softwareprogramma's binne
-    faaks ûntwikkele troch in tredde partij. Hjir is in seleksje dy't { -brand-product-name }
+    hoe’t jo browser derút sjocht, en noch folle mear. Dizze lytse softwareprogramma's binne
+    faaks ûntwikkele troch in tredde partij. Hjir is in seleksje dy’t { -brand-product-name }
     <a data-l10n-name="learn-more-trigger">oanrekommandearret</a> foar bjusterbaarlike
     befeiliging, prestaasjes en funksjonaliteit.
 # Notice to make user aware that the recommendations are personalized.
@@ -252,7 +254,7 @@ install-theme-button = Tema ynstallearje
 # the detailed add-on view is opened, from where the add-on can be managed.
 manage-addon-button = Beheare
 find-more-addons = Mear add-ons sykje
-find-more-themes = Fyn mear tema's
+find-more-themes = Fyn mear tema’s
 # This is a label for the button to open the "more options" menu, it is only
 # used for screen readers.
 addon-options-button =
@@ -343,7 +345,7 @@ addon-detail-private-browsing-disallow = Net tastean
 ## badge is a small icon displayed next to an extension when it is recommended on AMO.
 
 addon-badge-recommended2 =
-    .title = { -brand-product-name } rekommandearret allinnich útwreidingen oan dy't foldogge oan ús noarms foar feilichheid en prestaasjes.
+    .title = { -brand-product-name } rekommandearret allinnich útwreidingen oan dy’t foldogge oan ús noarms foar feilichheid en prestaasjes.
     .aria-label = { addon-badge-recommended2.title }
 # We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
@@ -365,7 +367,7 @@ addon-permissions-required = Fereaske tastimmingen foar kernfunksjonaliteit:
 addon-permissions-optional = Opsjonele tastimmingen foar ekstra funksjonaliteit:
 addon-permissions-learnmore = Mear ynfo oer tastimmingen
 recommended-extensions-heading = Oanrekommandearre útwreidingen
-recommended-themes-heading = Oanrekommandearre tema's
+recommended-themes-heading = Oanrekommandearre tema’s
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Fiele jo jo kreätyf? <a data-l10n-name="link"> Bou jo eigen tema mei Firefox Color.</a>

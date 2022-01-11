@@ -61,6 +61,7 @@ about-processes-unknown-process = אחר: { $type } ‏({ $pid })
 ##    $origin (String) The domain name for this process.
 
 about-processes-web-isolated-process = { $origin } (‏{ $pid })
+about-processes-web-serviceworker = { $origin } (‏{ $pid },‏ serviceworker)
 about-processes-web-large-allocation-process = { $origin } (‏{ $pid }, גדול)
 about-processes-web-isolated-process-private = { $origin } — פרטי ({ $pid })
 about-processes-web-large-allocation-process-private = { $origin } — פרטי ({ $pid }, גדול)
@@ -129,8 +130,15 @@ about-processes-cpu = { NUMBER($percent, maximumSignificantDigits: 2, style: "pe
 # Special case: data is not available yet.
 about-processes-cpu-user-and-kernel-not-ready = (בתהליך מדידה)
 # Special case: process or thread is currently idle.
-about-processes-cpu-idle = בהמתנה
+about-processes-cpu-idle = חוסר פעילות
     .title = זמן מעבד כולל: { NUMBER($total, maximumFractionDigits: 2) } { $unit }
+# Special case: process or thread is almost idle (using less than 0.1% of a CPU core).
+# This case only occurs on Windows where the precision of the CPU times is low.
+about-processes-cpu-almost-idle = פחות מ־0.1%
+    .title = זמן מעבד כולל: { NUMBER($total, maximumFractionDigits: 0) } { $unit }
+# Special case: process or thread is currently idle.
+about-processes-cpu-fully-idle = חוסר פעילות
+    .title = זמן מעבד כולל: { NUMBER($total, maximumFractionDigits: 0) } { $unit }
 
 ## Displaying Memory (total and delta)
 ## Variables:

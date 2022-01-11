@@ -740,6 +740,19 @@ picture-in-picture-hide-toggle =
     .label = Amagar lo boton Imatge incrustada
     .accesskey = A
 
+## Since the default position for PiP controls does not change for RTL layout,
+## right-to-left languages should use "Left" and "Right" as in the English strings,
+
+picture-in-picture-move-toggle-right =
+    .label = Desplaçar lo boton de la vidèo incrustada a man drecha
+    .accesskey = D
+picture-in-picture-move-toggle-left =
+    .label = Desplaçar lo boton de la vidèo incrustada a man esquèrra
+    .accesskey = e
+
+##
+
+
 # Navigator Toolbox
 
 # This string is a spoken label that should not include
@@ -783,5 +796,5 @@ tabs-toolbar-list-all-tabs =
 ## Infobar shown at startup to suggest session-restore
 
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
-restore-session-startup-suggestion-message = <strong>Tornar dobrir los onglets precedent ?</strong> Podètz restablir vòstra session precedenta del menú d’aplicacion de { -brand-short-name } <img data-l10n-name="icon"/> estant jos Istoric.
+restore-session-startup-suggestion-message = <strong>Tornar dobrir los onglets precedents ?</strong> Podètz restablir vòstra session precedenta del menú d’aplicacion de { -brand-short-name } <img data-l10n-name="icon"/> estant jos Istoric.
 restore-session-startup-suggestion-button = Cossí far

@@ -11,6 +11,12 @@ reload-tab =
 select-all-tabs =
     .label = Pasirinkti visas korteles
     .accesskey = P
+tab-context-play-tab =
+    .label = Groti kortelę
+    .accesskey = G
+tab-context-play-tabs =
+    .label = Groti korteles
+    .accesskey = i
 duplicate-tab =
     .label = Dubliuoti kortelę
     .accesskey = D
@@ -111,7 +117,6 @@ tab-context-move-tabs =
            *[other] Perkelti kortelių
         }
     .accesskey = k
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

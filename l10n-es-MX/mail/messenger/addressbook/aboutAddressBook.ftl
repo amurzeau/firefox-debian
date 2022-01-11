@@ -8,6 +8,10 @@ about-addressbook-title = Libreta de direcciones
 
 about-addressbook-toolbar-new-address-book =
     .label = Nueva libreta de direcciones
+about-addressbook-toolbar-add-carddav-address-book =
+    .label = Agregar libreta de direcciones CardDAV
+about-addressbook-toolbar-add-ldap-address-book =
+    .label = Agregar libreta de direcciones LDAP
 about-addressbook-toolbar-new-contact =
     .label = Nuevo contacto
 about-addressbook-toolbar-new-list =
@@ -30,7 +34,13 @@ about-addressbook-books-context-delete =
     .label = Eliminar
 about-addressbook-books-context-remove =
     .label = Eliminar
+about-addressbook-books-context-startup-default =
+    .label = Carpeta de inicio predeterminada
 about-addressbook-confirm-delete-book-title = Borrar libreta de direcciones
+about-addressbook-confirm-remove-remote-book-title = Eliminar libreta de direcciones
+# Variables:
+# $name (String) - Name of the remote address book to be removed.
+about-addressbook-confirm-remove-remote-book = ¿Estás seguro de que deseas eliminar { $name }?
 
 ## Cards
 
@@ -38,8 +48,14 @@ about-addressbook-confirm-delete-book-title = Borrar libreta de direcciones
 # $name (String) - Name of the address book that will be searched.
 about-addressbook-search =
     .placeholder = Buscar { $name }
+about-addressbook-search-all =
+    .placeholder = Buscar en todas las libretas de direcciones
+about-addressbook-sort-button =
+    .title = Cambiar el orden de la lista
 about-addressbook-name-format-display =
     .label = Mostrar nombre
+about-addressbook-name-format-lastfirst =
+    .label = Apellido, nombre
 about-addressbook-sort-name-ascending =
     .label = Ordenar por nombre (A > Z)
 about-addressbook-sort-name-descending =
@@ -49,6 +65,13 @@ about-addressbook-sort-email-ascending =
 about-addressbook-sort-email-descending =
     .label = Ordenar por dirección de correo electrónico (Z > A)
 about-addressbook-confirm-delete-mixed-title = Eliminar contactos y listas
+# Variables:
+# $count (Number) - The number of lists to be deleted.
+about-addressbook-confirm-delete-lists-title =
+    { $count ->
+        [one] Eliminar lista
+       *[other] Eliminar listas
+    }
 # Variables:
 # $count (Number) - The number of contacts to be removed.
 about-addressbook-confirm-remove-contacts-title =
@@ -74,3 +97,4 @@ about-addressbook-details-phone-numbers-header = Números de teléfono
 about-addressbook-details-home-address-header = Dirección de casa
 about-addressbook-details-work-address-header = Dirección del trabajo
 about-addressbook-details-other-info-header = Otra información
+about-addressbook-prompt-to-save-title = ¿Guardar cambios?

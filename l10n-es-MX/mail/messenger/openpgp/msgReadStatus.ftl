@@ -6,6 +6,11 @@
 ## Message Header Encryption Button
 
 message-header-show-security-info-key = S
-
 openpgp-openpgp = OpenPGP
-
+openpgp-invalid-sig = Firma digital no válida
+openpgp-good-sig = Buena firma digital
+openpgp-unknown-key-id = Clave desconocida
+openpgp-message-header-signed-verified-icon =
+    .alt = Firma verificada
+openpgp-message-header-signed-unverified-icon =
+    .alt = Firma no verificada

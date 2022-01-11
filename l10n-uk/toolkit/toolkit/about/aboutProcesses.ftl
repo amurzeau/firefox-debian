@@ -63,6 +63,7 @@ about-processes-unknown-process = Інше: { $type } ({ $pid })
 ##    $origin (String) The domain name for this process.
 
 about-processes-web-isolated-process = { $origin } ({ $pid })
+about-processes-web-serviceworker = { $origin } ({ $pid }, serviceworker)
 about-processes-web-large-allocation-process = { $origin } ({ $pid }, великий)
 about-processes-with-coop-coep-process = { $origin } ({ $pid }, ізольовано від сторонніх джерел)
 about-processes-web-isolated-process-private = { $origin } — Приватний ({ $pid })
@@ -139,6 +140,13 @@ about-processes-cpu-user-and-kernel-not-ready = (вимірювання)
 # Special case: process or thread is currently idle.
 about-processes-cpu-idle = бездіяльний
     .title = Загальний час CPU: { NUMBER($total, maximumFractionDigits: 2) }{ $unit }
+# Special case: process or thread is almost idle (using less than 0.1% of a CPU core).
+# This case only occurs on Windows where the precision of the CPU times is low.
+about-processes-cpu-almost-idle = < 0.1%
+    .title = Загальний час CPU: { NUMBER($total, maximumFractionDigits: 0) }{ $unit }
+# Special case: process or thread is currently idle.
+about-processes-cpu-fully-idle = idle
+    .title = Загальний час CPU: { NUMBER($total, maximumFractionDigits: 0) }{ $unit }
 
 ## Displaying Memory (total and delta)
 ## Variables:

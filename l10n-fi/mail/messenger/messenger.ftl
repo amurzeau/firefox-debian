@@ -25,6 +25,12 @@ content-tab-security-broken-icon =
 addons-and-themes-toolbarbutton =
     .label = Lisäosat ja teemat
     .tooltiptext = Hallitse lisäosia
+quick-filter-toolbarbutton =
+    .label = Pikasuodatus
+    .tooltiptext = Suodata viestejä
+redirect-msg-button =
+    .label = Uudelleenohjaa
+    .tooltiptext = Uudelleenohjaa valittu viesti
 
 ## Folder Pane
 
@@ -61,26 +67,43 @@ folder-toolbar-toggle-folder-compact-view =
 
 ## Menu
 
+redirect-msg-menuitem =
+    .label = Uudelleenohjaa
+    .accesskey = d
 menu-file-save-as-file =
     .label = Tiedosto…
     .accesskey = T
 
 ## AppMenu
 
-appmenu-save-as-file =
-    .label = Tiedosto…
 # Since v89 we dropped the platforms distinction between Options or Preferences
 # and consolidated everything with Preferences.
 appmenu-preferences =
     .label = Asetukset
+appmenu-save-as-file =
+    .label = Tiedosto…
+appmenu-settings =
+    .label = Asetukset
 appmenu-addons-and-themes =
     .label = Lisäosat ja teemat
+appmenu-help-enter-troubleshoot-mode =
+    .label = Ongelmanratkaisutila…
+appmenu-help-exit-troubleshoot-mode =
+    .label = Poista ongelmanratkaisutila käytöstä
+appmenu-help-more-troubleshooting-info =
+    .label = Lisää ongelmanratkaisutietoja
+appmenu-redirect-msg =
+    .label = Uudelleenohjaa
 
 ## Context menu
 
+context-menu-redirect-msg =
+    .label = Uudelleenohjaa
 
 ## Message header pane
 
+other-action-redirect-msg =
+    .label = Uudelleenohjaa
 
 ## Action Button Context Menu
 

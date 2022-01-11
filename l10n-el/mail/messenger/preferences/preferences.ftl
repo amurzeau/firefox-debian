@@ -5,6 +5,7 @@
 close-button =
     .aria-label = Κλείσιμο
 preferences-doc-title = Προτιμήσεις
+preferences-doc-title2 = Ρυθμίσεις
 category-list =
     .aria-label = Κατηγορίες
 pane-general-title = Γενικά
@@ -118,9 +119,16 @@ default-search-engine = Προεπιλεγμένη μηχανή αναζήτησ
 add-search-engine =
     .label = Προσθήκη από αρχείο
     .accesskey = Π
+add-web-search-engine =
+    .label = Προσθήκη…
+    .accesskey = Π
 remove-search-engine =
     .label = Αφαίρεση
     .accesskey = ρ
+add-opensearch-provider-title = Προσθήκη παρόχου OpenSearch
+add-opensearch-provider-text = Εισαγάγετε το URL του παρόχου OpenSearch για προσθήκη. Χρησιμοποιήστε είτε το άμεσο URL του αρχείου περιγραφής του OpenSearch είτε ένα URL όπου μπορεί να εντοπιστεί αυτόματα.
+adding-opensearch-provider-failed-title = Αποτυχία προσθήκης παρόχου OpenSearch
+adding-opensearch-provider-failed-text = Δεν ήταν δυνατή η προσθήκη παρόχου OpenSearch για το { $url }.
 minimize-to-tray-label =
     .label = Όταν το { -brand-short-name } ελαχιστοποιείται, να γίνεται μετακίνηση στη γραμμή εργασιών
     .accesskey = ε
@@ -140,6 +148,7 @@ app-icon-options =
     .label = Επιλογές εικονιδίου εφαρμογής…
     .accesskey = Ε
 notification-settings = Οι ειδοποιήσεις και ο προεπιλεγμένος ήχος μπορούν να απενεργοποιηθούν στην καρτέλα Ειδοποιήσεις των ρυθμίσεων συστήματος.
+notification-settings2 = Οι ειδοποιήσεις και ο προεπιλεγμένος ήχος μπορούν να απενεργοποιηθούν στην καρτέλα «Ειδοποιήσεις» των ρυθμίσεων συστήματος.
 animated-alert-label =
     .label = Εμφάνιση ειδοποίησης
     .accesskey = φ
@@ -156,7 +165,7 @@ mail-system-sound-label =
     .label = Προεπιλεγμένος ήχος συστήματος για νέα email
     .accesskey = Π
 mail-custom-sound-label =
-    .label = Χρήση του ακόλουθου αρχείου ήχου
+    .label = Χρήση του εξής αρχείου ήχου
     .accesskey = Χ
 mail-browse-sound-button =
     .label = Περιήγηση…
@@ -309,6 +318,8 @@ search-handler-table =
     .placeholder = Φιλτράρισμα τύπων περιεχομένου και ενεργειών
 type-column-label = Τύπος περιεχομένου
 action-column-label = Ενέργεια
+type-column-header = Τύπος περιεχομένου
+action-column-header = Ενέργεια
 save-to-label =
     .label = Αποθήκευση αρχείων σε
     .accesskey = θ
@@ -639,7 +650,7 @@ chat-system-sound-label =
     .label = Προεπιλεγμένος ήχος συστήματος για νέα email
     .accesskey = ρ
 chat-custom-sound-label =
-    .label = Χρήση του ακόλουθου αρχείου ήχου
+    .label = Χρήση του εξής αρχείου ήχου
     .accesskey = χ
 chat-browse-sound-button =
     .label = Περιήγηση…
@@ -677,11 +688,31 @@ search-preferences-input =
 
 ## Preferences UI Search Results
 
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-preferences-input2 =
+    .style = width: 15.4em
+    .placeholder = Εύρεση στις ρυθμίσεις
+
+## Settings UI Search Results
+
 search-results-header = Αποτελέσματα αναζήτησης
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message =
     { PLATFORM() ->
         [windows] Συγγνώμη! Δεν υπάρχουν αποτελέσματα για το «<span data-l10n-name="query"></span>» στις Επιλογές.
        *[other] Συγγνώμη! Δεν υπάρχουν αποτελέσματα για το «<span data-l10n-name="query"></span>» στις Προτιμήσεις.
+    }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 =
+    { PLATFORM() ->
+        [windows] Δυστυχώς, δεν υπάρχουν αποτελέσματα για το «<span data-l10n-name="query"></span>» στις επιλογές.
+       *[other] Δυστυχώς, δεν υπάρχουν αποτελέσματα για το «<span data-l10n-name="query"></span>» στις ρυθμίσεις.
     }
 search-results-help-link = Χρειάζεστε βοήθεια; Επισκεφθείτε την <a data-l10n-name="url">Υποστήριξη { -brand-short-name }</a>

@@ -4,6 +4,8 @@
 
 account-settings-title = Autentikaasjeynstellingen
 account-channel-title = Standertkanalen
+chat-autologin =
+    .label = Oanmelde by opstarten
 chat-encryption-generic = Algemien
 chat-encryption-log =
     .label = End-to-end-fersifere berjochten yn petearlochboeken opnimme
@@ -12,7 +14,7 @@ chat-encryption-description = { $protocol } biedt end-to-end-fersifering foar ch
 chat-encryption-status = Fersiferingssteat
 chat-encryption-placeholder = Fersifering net inisjalisearre.
 chat-encryption-sessions = Sesjes
-chat-encryption-sessions-description = Om end-to-end-fersifering korrekt wurkje te litten, moatte jo de oare sesjes fertrouwe dy't op dit stuit oanmeld binne by jo account. Ynteraksje mei de oare client is fereaske om in sesje te ferifiearjen. It ferifiearjen fan in sesje kin der ta liede dat alle sesjes dy't it fertrout ek fertroud wurde troch { -brand-short-name }.
+chat-encryption-sessions-description = Om end-to-end-fersifering korrekt wurkje te litten, moatte jo de oare sesjes fertrouwe dy’t op dit stuit oanmeld binne by jo account. Ynteraksje mei de oare client is fereaske om in sesje te ferifiearjen. It ferifiearjen fan in sesje kin der ta liede dat alle sesjes dy’t it fertrout ek fertroud wurde troch { -brand-short-name }.
 chat-encryption-session-verify = ferifiearje
     .title = De identiteit fan dizze sesje ferifiearje
 chat-encryption-session-trusted = fertroud

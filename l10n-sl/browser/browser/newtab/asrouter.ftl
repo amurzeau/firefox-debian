@@ -128,14 +128,37 @@ cfr-doorhanger-video-support-header = Posodobite { -brand-short-name(sklon: "toz
 cfr-doorhanger-video-support-primary-button = Posodobi zdaj
     .accesskey = P
 
+## Spotlight modal shared strings
+
+spotlight-learn-more-collapsed = Več o tem
+    .title = Razširite, če želite izvedeti več o tej možnosti
+spotlight-learn-more-expanded = Več o tem
+    .title = Zapri
+
 ## VPN promotion dialog for public Wi-Fi users
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
 ## to the Mozilla VPN page and a link to dismiss the dialog.
 
+# This header text can be explicitly wrapped.
 spotlight-public-wifi-vpn-header = Videti je, da uporabljate javni Wi-Fi
+spotlight-public-wifi-vpn-body = Če želite skriti svojo lokacijo in dejavnost brskanja, razmislite o navideznem zasebnem omrežju (VPN). Pomagalo vas bo ščititi med brskanjem na javnih mestih, kot so letališča in kavarne.
 spotlight-public-wifi-vpn-primary-button = Ohranite zasebnost z { -mozilla-vpn-brand-name }
     .accesskey = z
 spotlight-public-wifi-vpn-link = Ne zdaj
     .accesskey = N
+
+## Total Cookie Protection Rollout
+
+# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
+# "Join an early experiment". This header text can be explicitly wrapped.
+spotlight-total-cookie-protection-header =
+    Med prvimi preizkusite našo
+    najzmogljivejšo zaščito zasebnosti doslej
+spotlight-total-cookie-protection-body = Popolna zaščita pred piškotki preprečuje sledilcem, da bi vam po spletu sledili z uporabo piškotkov.
+# "Early access" for this feature rollout means it's a "feature preview" or
+# "soft launch" as not everybody will get it yet.
+spotlight-total-cookie-protection-expanded = { -brand-short-name } ograjuje piškotke znotraj spletnega mesta, na katerem se nahajate, tako da jih sledilci ne morejo uporabiti, da bi vam sledili. Z zgodnjim dostopom boste pomagali izboljšati to zmogljivost, da bomo lahko še naprej gradili boljši splet za vse.
+spotlight-total-cookie-protection-primary-button = Vključi popolno zaščito pred piškotki
+spotlight-total-cookie-protection-secondary-button = Ne zdaj

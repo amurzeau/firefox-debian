@@ -14,6 +14,15 @@ about-processes-shutdown-process =
     .title = เลิกโหลดแท็บและหยุดการทำงานของกระบวนการ
 about-processes-shutdown-tab =
     .title = ปิดแท็บ
+# Profiler icons
+# Variables:
+#    $duration (Number) The time in seconds during which the profiler will be running.
+#                       The value will be an integer, typically less than 10.
+about-processes-profile-process =
+    .title =
+        { $duration ->
+           *[other] สร้างโปรไฟล์เธรดทั้งหมดของกระบวนการนี้เป็นเวลา { $duration } วินาที
+        }
 
 ## Column headers
 
@@ -52,6 +61,7 @@ about-processes-unknown-process = อื่น ๆ : { $type } ({ $pid })
 ##    $origin (String) The domain name for this process.
 
 about-processes-web-isolated-process = { $origin } ({ $pid })
+about-processes-web-serviceworker = { $origin } ({ $pid }, serviceworker)
 about-processes-web-large-allocation-process = { $origin } ({ $pid }, ขนาดใหญ่)
 about-processes-with-coop-coep-process = { $origin } ({ $pid }, ถูกแยก cross-origin)
 about-processes-web-isolated-process-private = { $origin } — ส่วนตัว ({ $pid })
@@ -122,6 +132,13 @@ about-processes-cpu-user-and-kernel-not-ready = (กำลังวัด)
 # Special case: process or thread is currently idle.
 about-processes-cpu-idle = ไม่ได้ใช้งาน
     .title = เวลาที่ใช้งาน CPU ทั้งหมด: { NUMBER($total, maximumFractionDigits: 2) } { $unit }
+# Special case: process or thread is almost idle (using less than 0.1% of a CPU core).
+# This case only occurs on Windows where the precision of the CPU times is low.
+about-processes-cpu-almost-idle = < 0.1%
+    .title = เวลาของ CPU ทั้งหมด: { NUMBER($total, maximumFractionDigits: 0) }{ $unit }
+# Special case: process or thread is currently idle.
+about-processes-cpu-fully-idle = ว่าง
+    .title = เวลาของ CPU ทั้งหมด: { NUMBER($total, maximumFractionDigits: 0) }{ $unit }
 
 ## Displaying Memory (total and delta)
 ## Variables:

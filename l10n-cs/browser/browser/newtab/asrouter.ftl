@@ -152,12 +152,20 @@ cfr-doorhanger-video-support-header =
 cfr-doorhanger-video-support-primary-button = Aktualizovat
     .accesskey = A
 
+## Spotlight modal shared strings
+
+spotlight-learn-more-collapsed = Zjistit více
+    .title = Zobrazit více informací o této funkci
+spotlight-learn-more-expanded = Zjistit více
+    .title = Zavřít
+
 ## VPN promotion dialog for public Wi-Fi users
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
 ## to the Mozilla VPN page and a link to dismiss the dialog.
 
+# This header text can be explicitly wrapped.
 spotlight-public-wifi-vpn-header = Zdá se, že používáte veřejnou Wi-Fi síť
 spotlight-public-wifi-vpn-body = Pokud chcete skrýt svou polohu a aktivity během prohlížení internetu, zvažte využítí služby virtuální privátní sítě. Poskytne vám ochranu během prohlížení internetu na veřejných místech, v kavárně nebo na letišti.
 spotlight-public-wifi-vpn-primary-button =
@@ -170,3 +178,17 @@ spotlight-public-wifi-vpn-primary-button =
     .accesskey = s
 spotlight-public-wifi-vpn-link = Teď ne
     .accesskey = n
+
+## Total Cookie Protection Rollout
+
+# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
+# "Join an early experiment". This header text can be explicitly wrapped.
+spotlight-total-cookie-protection-header =
+    Vyzkoušejte naši zatím nejsilnější
+    funkci na ochranu soukromí
+spotlight-total-cookie-protection-body = Úplná ochrana cookies brání sledovacím prvkům používat cookies pro vaše sledování napříč webovými stránkami.
+# "Early access" for this feature rollout means it's a "feature preview" or
+# "soft launch" as not everybody will get it yet.
+spotlight-total-cookie-protection-expanded = { -brand-short-name } ochrání vaše cookies tak, že omezí jejich dostupnost pro konkrétní stránku, kterou prohlížíte, takže je sledovací prvky nemohou používat pro vaše sledování napříč stránkami. Vykoušením této funkce nám je pomůžete dále optimalizovat pro vás i všechny ostatní uživatele.
+spotlight-total-cookie-protection-primary-button = Zapnout úplnou ochranu cookies
+spotlight-total-cookie-protection-secondary-button = Teď ne

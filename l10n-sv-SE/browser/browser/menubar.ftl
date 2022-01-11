@@ -22,7 +22,7 @@ menu-application-hide-other =
 menu-application-show-all =
     .label = Visa alla
 menu-application-touch-bar =
-    .label = Anpassa menyrad för Touch…
+    .label = Anpassa Touch Bar…
 
 ##
 
@@ -80,6 +80,15 @@ menu-file-open-file =
 menu-file-close =
     .label = Stäng
     .accesskey = ä
+# Variables:
+#  $tabCount (Number): the number of tabs that are affected by the action.
+menu-file-close-tab =
+    .label =
+        { $tabCount ->
+            [1] Stäng flik
+           *[other] Stäng { $tabCount } flikar
+        }
+    .accesskey = S
 menu-file-close-window =
     .label = Stäng fönster
     .accesskey = t

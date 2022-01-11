@@ -9,6 +9,8 @@ search-header =
 search-header-shortcut =
     .key = f
 list-empty-get-extensions-message = Отримати розширення й теми на <a data-l10n-name="get-extensions">{ $domain }</a>
+list-empty-get-dictionaries-message = Отримайте словники на <a data-l10n-name="get-extensions">{ $domain }</a>
+list-empty-get-language-packs-message = Отримайте мовні пакунки на <a data-l10n-name="get-extensions">{ $domain }</a>
 list-empty-installed =
     .value = У вас не встановлено жодного додатка цього типу
 list-empty-available-updates =
@@ -234,7 +236,7 @@ discopane-intro =
     розробляються сторонніми організаціями.
     Ось декілька <a data-l10n-name="learn-more-trigger">рекомендацій</a> від { -brand-product-name } для виняткової безпеки, швидкодії та функціональності.
 # Notice to make user aware that the recommendations are personalized.
-discopane-notice-recommendations = Деякі з цих рекомендацій персоналізовані. Вони базуються на ваших вже встановлених розширеннях, налаштуваннях профілю і статистики використання.
+discopane-notice-recommendations = Деякі з цих рекомендацій персоналізовані. Вони базуються на ваших вже встановлених розширеннях, налаштуваннях профілю і статистиці використання.
 discopane-notice-learn-more = Докладніше
 privacy-policy = Політика приватності
 # Refers to the author of an add-on, shown below the name of the add-on.
