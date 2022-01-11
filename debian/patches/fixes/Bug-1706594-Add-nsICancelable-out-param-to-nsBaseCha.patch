@@ -1,0 +1,781 @@
+From: Luca Greco <lgreco@mozilla.com>
+Date: Mon, 11 Oct 2021 11:06:47 +0000
+Subject: Bug 1706594 - Add nsICancelable out param to
+ nsBaseChannel::BeginAsyncRead virtual method. r=nika,necko-reviewers,valentin
+
+This patch introduces:
+
+- a second nsICancelable out param in nsBaseChannel::BeginAsyncRead, which is meant to be non-null
+  when the subclass is unable to set the nsIRequest out param right away (e.g because there is
+  some async work needed before the subclass is able to get an nsIRequest instance).
+  The nsICancelable does only allow the channel to cancel the underlying request (and stream pump),
+  but it doesn't allow the channel to be suspended and resumed, but that was already the case
+  for the subclasses that were already not returning an nsIRequest instance (e.g. like the
+  ExtensionProtocolHandler was doing when it is asynchrously retriving a stream from the parent
+  process).
+
+- require NotNull<nsCOMPtr<...>> in the SimpleChannel's BeginAsyncRead callback signature, to make harder
+  to overlook the requirement of returning an nsIRequest or nsICancelable.
+
+- a diagnostic assertion (from SimpleChannel's BeginAsyncRead method) to more visible fail if we still end
+  up with neither an nsIRequest or nsICancelable result as SimpleChannel callback result.
+
+- changes to ExtensionProtocolHandler, PageThumbProtocolHandler and nsAnnoProtocolHandler to adapt them
+  to the new nsBaseChannel::BeginAsyncRead signature.
+
+Differential Revision: https://phabricator.services.mozilla.com/D125545
+---
+ netwerk/base/SimpleChannel.cpp                |  25 ++++-
+ netwerk/base/SimpleChannel.h                  |   8 +-
+ netwerk/base/nsBaseChannel.cpp                |  11 +-
+ netwerk/base/nsBaseChannel.h                  |  21 +++-
+ .../protocol/res/ExtensionProtocolHandler.cpp | 102 +++++++++++++-----
+ .../protocol/res/PageThumbProtocolHandler.cpp |  65 ++++++++---
+ .../places/nsAnnoProtocolHandler.cpp          |  94 +++++++++++++---
+ 7 files changed, 262 insertions(+), 64 deletions(-)
+
+diff --git a/netwerk/base/SimpleChannel.cpp b/netwerk/base/SimpleChannel.cpp
+index c390418..adbd78e 100644
+--- a/netwerk/base/SimpleChannel.cpp
++++ b/netwerk/base/SimpleChannel.cpp
+@@ -43,15 +43,32 @@ nsresult SimpleChannel::OpenContentStream(bool async,
+ }
+ 
+ nsresult SimpleChannel::BeginAsyncRead(nsIStreamListener* listener,
+-                                       nsIRequest** request) {
++                                       nsIRequest** request,
++                                       nsICancelable** cancelableRequest) {
+   NS_ENSURE_TRUE(mCallbacks, NS_ERROR_UNEXPECTED);
+ 
+-  nsCOMPtr<nsIRequest> req;
+-  MOZ_TRY_VAR(req, mCallbacks->StartAsyncRead(listener, this));
++  RequestOrReason res = mCallbacks->StartAsyncRead(listener, this);
++
++  if (res.isErr()) {
++    return res.propagateErr();
++  }
+ 
+   mCallbacks = nullptr;
+ 
+-  req.forget(request);
++  RequestOrCancelable value = res.unwrap();
++
++  if (value.is<NotNullRequest>()) {
++    nsCOMPtr<nsIRequest> req = value.as<NotNullRequest>().get();
++    req.forget(request);
++  } else if (value.is<NotNullCancelable>()) {
++    nsCOMPtr<nsICancelable> cancelable = value.as<NotNullCancelable>().get();
++    cancelable.forget(cancelableRequest);
++  } else {
++    MOZ_ASSERT_UNREACHABLE(
++        "StartAsyncRead didn't return a NotNull nsIRequest or nsICancelable.");
++    return NS_ERROR_UNEXPECTED;
++  }
++
+   return NS_OK;
+ }
+ 
+diff --git a/netwerk/base/SimpleChannel.h b/netwerk/base/SimpleChannel.h
+index 891ed56..d469adf 100644
+--- a/netwerk/base/SimpleChannel.h
++++ b/netwerk/base/SimpleChannel.h
+@@ -25,7 +25,10 @@ class nsIURI;
+ namespace mozilla {
+ 
+ using InputStreamOrReason = Result<nsCOMPtr<nsIInputStream>, nsresult>;
+-using RequestOrReason = Result<nsCOMPtr<nsIRequest>, nsresult>;
++using NotNullRequest = NotNull<nsCOMPtr<nsIRequest>>;
++using NotNullCancelable = NotNull<nsCOMPtr<nsICancelable>>;
++using RequestOrCancelable = Variant<NotNullRequest, NotNullCancelable>;
++using RequestOrReason = Result<RequestOrCancelable, nsresult>;
+ 
+ namespace net {
+ 
+@@ -78,7 +81,8 @@ class SimpleChannel : public nsBaseChannel {
+                                      nsIChannel** channel) override;
+ 
+   virtual nsresult BeginAsyncRead(nsIStreamListener* listener,
+-                                  nsIRequest** request) override;
++                                  nsIRequest** request,
++                                  nsICancelable** cancelableRequest) override;
+ 
+  private:
+   UniquePtr<SimpleChannelCallbacks> mCallbacks;
+diff --git a/netwerk/base/nsBaseChannel.cpp b/netwerk/base/nsBaseChannel.cpp
+index b37298b..5453311 100644
+--- a/netwerk/base/nsBaseChannel.cpp
++++ b/netwerk/base/nsBaseChannel.cpp
+@@ -203,8 +203,11 @@ nsresult nsBaseChannel::PushStreamConverter(const char* fromType,
+ nsresult nsBaseChannel::BeginPumpingData() {
+   nsresult rv;
+ 
+-  rv = BeginAsyncRead(this, getter_AddRefs(mRequest));
++  rv = BeginAsyncRead(this, getter_AddRefs(mRequest),
++                      getter_AddRefs(mCancelableAsyncRequest));
+   if (NS_SUCCEEDED(rv)) {
++    MOZ_ASSERT(mRequest || mCancelableAsyncRequest,
++               "should have got a request or cancelable");
+     mPumpingData = true;
+     return NS_OK;
+   }
+@@ -381,6 +384,10 @@ nsBaseChannel::Cancel(nsresult status) {
+   mCanceled = true;
+   mStatus = status;
+ 
++  if (mCancelableAsyncRequest) {
++    mCancelableAsyncRequest->Cancel(status);
++  }
++
+   if (mRequest) {
+     mRequest->Cancel(status);
+   }
+@@ -796,6 +803,7 @@ static void CallUnknownTypeSniffer(void* aClosure, const uint8_t* aData,
+ NS_IMETHODIMP
+ nsBaseChannel::OnStartRequest(nsIRequest* request) {
+   MOZ_ASSERT_IF(mRequest, request == mRequest);
++  MOZ_ASSERT_IF(mCancelableAsyncRequest, !mRequest);
+ 
+   nsAutoCString scheme;
+   mURI->GetScheme(scheme);
+@@ -832,6 +840,7 @@ nsBaseChannel::OnStopRequest(nsIRequest* request, nsresult status) {
+   // Cause Pending to return false.
+   mPump = nullptr;
+   mRequest = nullptr;
++  mCancelableAsyncRequest = nullptr;
+   mPumpingData = false;
+ 
+   if (mListener) {  // null in case of redirect
+diff --git a/netwerk/base/nsBaseChannel.h b/netwerk/base/nsBaseChannel.h
+index cc500ff..2e9945f 100644
+--- a/netwerk/base/nsBaseChannel.h
++++ b/netwerk/base/nsBaseChannel.h
+@@ -30,6 +30,7 @@
+ #include "nsThreadUtils.h"
+ 
+ class nsIInputStream;
++class nsICancelable;
+ 
+ //-----------------------------------------------------------------------------
+ // nsBaseChannel is designed to be subclassed.  The subclass is responsible for
+@@ -100,10 +101,23 @@ class nsBaseChannel
+   //
+   // On success, the callee must begin pumping data to the stream listener,
+   // and at some point call OnStartRequest followed by OnStopRequest.
+-  // Additionally, it may provide a request object which may be used to
+-  // suspend, resume, and cancel the underlying request.
++  //
++  // Additionally, when a successful nsresult is returned, then the subclass
++  // should be setting  through its two out params either:
++  // - a request object, which may be used to suspend, resume, and cancel
++  //   the underlying request.
++  // - or a cancelable object (e.g. when a request can't be returned right away
++  //   due to some async work needed to retrieve it). which may be used to
++  //   cancel the underlying request (e.g. because the channel has been
++  //   canceled)
++  //
++  // Not returning a request or cancelable leads to potentially leaking the
++  // an underling stream pump (which would keep to be pumping data even after
++  // the channel has been canceled and nothing is going to handle the data
++  // available, e.g. see Bug 1706594).
+   virtual nsresult BeginAsyncRead(nsIStreamListener* listener,
+-                                  nsIRequest** request) {
++                                  nsIRequest** request,
++                                  nsICancelable** cancelableRequest) {
+     return NS_ERROR_NOT_IMPLEMENTED;
+   }
+ 
+@@ -271,6 +285,7 @@ class nsBaseChannel
+ 
+   RefPtr<nsInputStreamPump> mPump;
+   RefPtr<nsIRequest> mRequest;
++  nsCOMPtr<nsICancelable> mCancelableAsyncRequest;
+   bool mPumpingData{false};
+   nsCOMPtr<nsIProgressEventSink> mProgressSink;
+   nsCOMPtr<nsIURI> mOriginalURI;
+diff --git a/netwerk/protocol/res/ExtensionProtocolHandler.cpp b/netwerk/protocol/res/ExtensionProtocolHandler.cpp
+index 959e430..7dcb806 100644
+--- a/netwerk/protocol/res/ExtensionProtocolHandler.cpp
++++ b/netwerk/protocol/res/ExtensionProtocolHandler.cpp
+@@ -25,6 +25,7 @@
+ #include "nsContentUtils.h"
+ #include "nsServiceManagerUtils.h"
+ #include "nsDirectoryServiceDefs.h"
++#include "nsICancelable.h"
+ #include "nsIFile.h"
+ #include "nsIFileChannel.h"
+ #include "nsIFileStreams.h"
+@@ -98,7 +99,10 @@ StaticRefPtr<ExtensionProtocolHandler> ExtensionProtocolHandler::sSingleton;
+  * stream or file descriptor from the parent for a remote moz-extension load
+  * from the child.
+  */
+-class ExtensionStreamGetter : public RefCounted<ExtensionStreamGetter> {
++class ExtensionStreamGetter final : public nsICancelable {
++  NS_DECL_ISUPPORTS
++  NS_DECL_NSICANCELABLE
++
+  public:
+   // To use when getting a remote input stream for a resource
+   // in an unpacked extension.
+@@ -128,8 +132,6 @@ class ExtensionStreamGetter : public RefCounted<ExtensionStreamGetter> {
+     SetupEventTarget();
+   }
+ 
+-  ~ExtensionStreamGetter() = default;
+-
+   void SetupEventTarget() {
+     mMainThreadEventTarget = nsContentUtils::GetEventTargetByLoadInfo(
+         mLoadInfo, TaskCategory::Other);
+@@ -139,8 +141,7 @@ class ExtensionStreamGetter : public RefCounted<ExtensionStreamGetter> {
+   }
+ 
+   // Get an input stream or file descriptor from the parent asynchronously.
+-  Result<Ok, nsresult> GetAsync(nsIStreamListener* aListener,
+-                                nsIChannel* aChannel);
++  RequestOrReason GetAsync(nsIStreamListener* aListener, nsIChannel* aChannel);
+ 
+   // Handle an input stream being returned from the parent
+   void OnStream(already_AddRefed<nsIInputStream> aStream);
+@@ -151,19 +152,24 @@ class ExtensionStreamGetter : public RefCounted<ExtensionStreamGetter> {
+   static void CancelRequest(nsIStreamListener* aListener, nsIChannel* aChannel,
+                             nsresult aResult);
+ 
+-  MOZ_DECLARE_REFCOUNTED_TYPENAME(ExtensionStreamGetter)
+-
+  private:
++  ~ExtensionStreamGetter() = default;
++
+   nsCOMPtr<nsIURI> mURI;
+   nsCOMPtr<nsILoadInfo> mLoadInfo;
+   nsCOMPtr<nsIJARChannel> mJarChannel;
++  nsCOMPtr<nsIInputStreamPump> mPump;
+   nsCOMPtr<nsIFile> mJarFile;
+   nsCOMPtr<nsIStreamListener> mListener;
+   nsCOMPtr<nsIChannel> mChannel;
+   nsCOMPtr<nsISerialEventTarget> mMainThreadEventTarget;
+   bool mIsJarChannel;
++  bool mCanceled{false};
++  nsresult mStatus{NS_OK};
+ };
+ 
++NS_IMPL_ISUPPORTS(ExtensionStreamGetter, nsICancelable)
++
+ class ExtensionJARFileOpener final : public nsISupports {
+  public:
+   ExtensionJARFileOpener(nsIFile* aFile,
+@@ -228,14 +234,16 @@ NS_IMPL_ISUPPORTS(ExtensionJARFileOpener, nsISupports)
+ #define DEFAULT_THREAD_TIMEOUT_MS 30000
+ 
+ // Request an FD or input stream from the parent.
+-Result<Ok, nsresult> ExtensionStreamGetter::GetAsync(
+-    nsIStreamListener* aListener, nsIChannel* aChannel) {
++RequestOrReason ExtensionStreamGetter::GetAsync(nsIStreamListener* aListener,
++                                                nsIChannel* aChannel) {
+   MOZ_ASSERT(IsNeckoChild());
+   MOZ_ASSERT(mMainThreadEventTarget);
+ 
+   mListener = aListener;
+   mChannel = aChannel;
+ 
++  nsCOMPtr<nsICancelable> cancelableRequest(this);
++
+   RefPtr<ExtensionStreamGetter> self = this;
+   if (mIsJarChannel) {
+     // Request an FD for this moz-extension URI
+@@ -245,7 +253,7 @@ Result<Ok, nsresult> ExtensionStreamGetter::GetAsync(
+         [self](const mozilla::ipc::ResponseRejectReason) {
+           self->OnFD(FileDescriptor());
+         });
+-    return Ok();
++    return RequestOrCancelable(WrapNotNull(cancelableRequest));
+   }
+ 
+   // Request an input stream for this moz-extension URI
+@@ -257,7 +265,29 @@ Result<Ok, nsresult> ExtensionStreamGetter::GetAsync(
+       [self](const mozilla::ipc::ResponseRejectReason) {
+         self->OnStream(nullptr);
+       });
+-  return Ok();
++  return RequestOrCancelable(WrapNotNull(cancelableRequest));
++}
++
++// Called to cancel the ongoing async request.
++NS_IMETHODIMP
++ExtensionStreamGetter::Cancel(nsresult aStatus) {
++  if (mCanceled) {
++    return NS_OK;
++  }
++
++  mCanceled = true;
++  mStatus = aStatus;
++
++  if (mPump) {
++    mPump->Cancel(aStatus);
++    mPump = nullptr;
++  }
++
++  if (mIsJarChannel && mJarChannel) {
++    mJarChannel->Cancel(aStatus);
++  }
++
++  return NS_OK;
+ }
+ 
+ // static
+@@ -275,20 +305,26 @@ void ExtensionStreamGetter::CancelRequest(nsIStreamListener* aListener,
+ // Handle an input stream sent from the parent.
+ void ExtensionStreamGetter::OnStream(already_AddRefed<nsIInputStream> aStream) {
+   MOZ_ASSERT(IsNeckoChild());
++  MOZ_ASSERT(mChannel);
+   MOZ_ASSERT(mListener);
+   MOZ_ASSERT(mMainThreadEventTarget);
+ 
+   nsCOMPtr<nsIInputStream> stream = std::move(aStream);
++  nsCOMPtr<nsIChannel> channel = std::move(mChannel);
+ 
+   // We must keep an owning reference to the listener
+   // until we pass it on to AsyncRead.
+   nsCOMPtr<nsIStreamListener> listener = std::move(mListener);
+ 
+-  MOZ_ASSERT(mChannel);
++  if (mCanceled) {
++    // The channel that has created this stream getter has been canceled.
++    CancelRequest(listener, channel, mStatus);
++    return;
++  }
+ 
+   if (!stream) {
+     // The parent didn't send us back a stream.
+-    CancelRequest(listener, mChannel, NS_ERROR_FILE_ACCESS_DENIED);
++    CancelRequest(listener, channel, NS_ERROR_FILE_ACCESS_DENIED);
+     return;
+   }
+ 
+@@ -296,36 +332,48 @@ void ExtensionStreamGetter::OnStream(already_AddRefed<nsIInputStream> aStream) {
+   nsresult rv = NS_NewInputStreamPump(getter_AddRefs(pump), stream.forget(), 0,
+                                       0, false, mMainThreadEventTarget);
+   if (NS_FAILED(rv)) {
+-    CancelRequest(listener, mChannel, rv);
++    CancelRequest(listener, channel, rv);
+     return;
+   }
+ 
+   rv = pump->AsyncRead(listener);
+   if (NS_FAILED(rv)) {
+-    CancelRequest(listener, mChannel, rv);
++    CancelRequest(listener, channel, rv);
++    return;
+   }
++
++  mPump = pump;
+ }
+ 
+ // Handle an FD sent from the parent.
+ void ExtensionStreamGetter::OnFD(const FileDescriptor& aFD) {
+   MOZ_ASSERT(IsNeckoChild());
+-  MOZ_ASSERT(mListener);
+   MOZ_ASSERT(mChannel);
++  MOZ_ASSERT(mListener);
+ 
+-  if (!aFD.IsValid()) {
+-    OnStream(nullptr);
+-    return;
+-  }
++  nsCOMPtr<nsIChannel> channel = std::move(mChannel);
+ 
+   // We must keep an owning reference to the listener
+   // until we pass it on to AsyncOpen.
+   nsCOMPtr<nsIStreamListener> listener = std::move(mListener);
+ 
++  if (mCanceled) {
++    // The channel that has created this stream getter has been canceled.
++    CancelRequest(listener, channel, mStatus);
++    return;
++  }
++
++  if (!aFD.IsValid()) {
++    // The parent didn't send us back a valid file descriptor.
++    CancelRequest(listener, channel, NS_ERROR_FILE_ACCESS_DENIED);
++    return;
++  }
++
+   RefPtr<FileDescriptorFile> fdFile = new FileDescriptorFile(aFD, mJarFile);
+   mJarChannel->SetJarFile(fdFile);
+   nsresult rv = mJarChannel->AsyncOpen(listener);
+   if (NS_FAILED(rv)) {
+-    CancelRequest(listener, mChannel, rv);
++    CancelRequest(listener, channel, rv);
+   }
+ }
+ 
+@@ -529,7 +577,8 @@ nsresult ExtensionProtocolHandler::SubstituteChannel(nsIURI* aURI,
+           } else {
+             MOZ_TRY(convert(listener, channel, origChannel));
+           }
+-          return RequestOrReason(origChannel);
++          nsCOMPtr<nsIRequest> request(origChannel);
++          return RequestOrCancelable(WrapNotNull(request));
+         });
+   } else if (readyPromise) {
+     size_t matchIdx;
+@@ -551,7 +600,8 @@ nsresult ExtensionProtocolHandler::SubstituteChannel(nsIURI* aURI,
+                           return aChannel->AsyncOpen(aListener);
+                         });
+ 
+-          return RequestOrReason(origChannel);
++          nsCOMPtr<nsIRequest> request(origChannel);
++          return RequestOrCancelable(WrapNotNull(request));
+         });
+   } else {
+     return NS_OK;
+@@ -864,8 +914,7 @@ void ExtensionProtocolHandler::NewSimpleChannel(
+       aURI, aLoadinfo, aStreamGetter,
+       [](nsIStreamListener* listener, nsIChannel* simpleChannel,
+          ExtensionStreamGetter* getter) -> RequestOrReason {
+-        MOZ_TRY(getter->GetAsync(listener, simpleChannel));
+-        return RequestOrReason(nullptr);
++        return getter->GetAsync(listener, simpleChannel);
+       });
+ 
+   SetContentType(aURI, channel);
+@@ -888,7 +937,8 @@ void ExtensionProtocolHandler::NewSimpleChannel(nsIURI* aURI,
+           simpleChannel->Cancel(NS_BINDING_ABORTED);
+           return Err(rv);
+         }
+-        return RequestOrReason(origChannel);
++        nsCOMPtr<nsIRequest> request(origChannel);
++        return RequestOrCancelable(WrapNotNull(request));
+       });
+ 
+   SetContentType(aURI, channel);
+diff --git a/netwerk/protocol/res/PageThumbProtocolHandler.cpp b/netwerk/protocol/res/PageThumbProtocolHandler.cpp
+index 02ee4e6..e71b737 100644
+--- a/netwerk/protocol/res/PageThumbProtocolHandler.cpp
++++ b/netwerk/protocol/res/PageThumbProtocolHandler.cpp
+@@ -49,7 +49,10 @@ StaticRefPtr<PageThumbProtocolHandler> PageThumbProtocolHandler::sSingleton;
+  * Helper class used with SimpleChannel to asynchronously obtain an input
+  * stream from the parent for a remote moz-page-thumb load from the child.
+  */
+-class PageThumbStreamGetter : public RefCounted<PageThumbStreamGetter> {
++class PageThumbStreamGetter final : public nsICancelable {
++  NS_DECL_ISUPPORTS
++  NS_DECL_NSICANCELABLE
++
+  public:
+   PageThumbStreamGetter(nsIURI* aURI, nsILoadInfo* aLoadInfo)
+       : mURI(aURI), mLoadInfo(aLoadInfo) {
+@@ -59,8 +62,6 @@ class PageThumbStreamGetter : public RefCounted<PageThumbStreamGetter> {
+     SetupEventTarget();
+   }
+ 
+-  ~PageThumbStreamGetter() = default;
+-
+   void SetupEventTarget() {
+     mMainThreadEventTarget = nsContentUtils::GetEventTargetByLoadInfo(
+         mLoadInfo, TaskCategory::Other);
+@@ -70,8 +71,7 @@ class PageThumbStreamGetter : public RefCounted<PageThumbStreamGetter> {
+   }
+ 
+   // Get an input stream from the parent asynchronously.
+-  Result<Ok, nsresult> GetAsync(nsIStreamListener* aListener,
+-                                nsIChannel* aChannel);
++  RequestOrReason GetAsync(nsIStreamListener* aListener, nsIChannel* aChannel);
+ 
+   // Handle an input stream being returned from the parent
+   void OnStream(already_AddRefed<nsIInputStream> aStream);
+@@ -79,25 +79,32 @@ class PageThumbStreamGetter : public RefCounted<PageThumbStreamGetter> {
+   static void CancelRequest(nsIStreamListener* aListener, nsIChannel* aChannel,
+                             nsresult aResult);
+ 
+-  MOZ_DECLARE_REFCOUNTED_TYPENAME(PageThumbStreamGetter)
+-
+  private:
++  ~PageThumbStreamGetter() = default;
++
+   nsCOMPtr<nsIURI> mURI;
+   nsCOMPtr<nsILoadInfo> mLoadInfo;
+   nsCOMPtr<nsIStreamListener> mListener;
+   nsCOMPtr<nsIChannel> mChannel;
+   nsCOMPtr<nsISerialEventTarget> mMainThreadEventTarget;
++  nsCOMPtr<nsIInputStreamPump> mPump;
++  bool mCanceled{false};
++  nsresult mStatus{NS_OK};
+ };
+ 
++NS_IMPL_ISUPPORTS(PageThumbStreamGetter, nsICancelable)
++
+ // Request an input stream from the parent.
+-Result<Ok, nsresult> PageThumbStreamGetter::GetAsync(
+-    nsIStreamListener* aListener, nsIChannel* aChannel) {
++RequestOrReason PageThumbStreamGetter::GetAsync(nsIStreamListener* aListener,
++                                                nsIChannel* aChannel) {
+   MOZ_ASSERT(IsNeckoChild());
+   MOZ_ASSERT(mMainThreadEventTarget);
+ 
+   mListener = aListener;
+   mChannel = aChannel;
+ 
++  nsCOMPtr<nsICancelable> cancelableRequest(this);
++
+   RefPtr<PageThumbStreamGetter> self = this;
+ 
+   // Request an input stream for this moz-page-thumb URI.
+@@ -109,7 +116,25 @@ Result<Ok, nsresult> PageThumbStreamGetter::GetAsync(
+       [self](const mozilla::ipc::ResponseRejectReason) {
+         self->OnStream(nullptr);
+       });
+-  return Ok();
++  return RequestOrCancelable(WrapNotNull(cancelableRequest));
++}
++
++// Called to cancel the ongoing async request.
++NS_IMETHODIMP
++PageThumbStreamGetter::Cancel(nsresult aStatus) {
++  if (mCanceled) {
++    return NS_OK;
++  }
++
++  mCanceled = true;
++  mStatus = aStatus;
++
++  if (mPump) {
++    mPump->Cancel(aStatus);
++    mPump = nullptr;
++  }
++
++  return NS_OK;
+ }
+ 
+ // static
+@@ -127,20 +152,26 @@ void PageThumbStreamGetter::CancelRequest(nsIStreamListener* aListener,
+ // Handle an input stream sent from the parent.
+ void PageThumbStreamGetter::OnStream(already_AddRefed<nsIInputStream> aStream) {
+   MOZ_ASSERT(IsNeckoChild());
++  MOZ_ASSERT(mChannel);
+   MOZ_ASSERT(mListener);
+   MOZ_ASSERT(mMainThreadEventTarget);
+ 
+   nsCOMPtr<nsIInputStream> stream = std::move(aStream);
++  nsCOMPtr<nsIChannel> channel = std::move(mChannel);
+ 
+   // We must keep an owning reference to the listener until we pass it on
+   // to AsyncRead.
+   nsCOMPtr<nsIStreamListener> listener = mListener.forget();
+ 
+-  MOZ_ASSERT(mChannel);
++  if (mCanceled) {
++    // The channel that has created this stream getter has been canceled.
++    CancelRequest(listener, channel, mStatus);
++    return;
++  }
+ 
+   if (!stream) {
+     // The parent didn't send us back a stream.
+-    CancelRequest(listener, mChannel, NS_ERROR_FILE_ACCESS_DENIED);
++    CancelRequest(listener, channel, NS_ERROR_FILE_ACCESS_DENIED);
+     return;
+   }
+ 
+@@ -148,14 +179,17 @@ void PageThumbStreamGetter::OnStream(already_AddRefed<nsIInputStream> aStream) {
+   nsresult rv = NS_NewInputStreamPump(getter_AddRefs(pump), stream.forget(), 0,
+                                       0, false, mMainThreadEventTarget);
+   if (NS_FAILED(rv)) {
+-    CancelRequest(listener, mChannel, rv);
++    CancelRequest(listener, channel, rv);
+     return;
+   }
+ 
+   rv = pump->AsyncRead(listener);
+   if (NS_FAILED(rv)) {
+-    CancelRequest(listener, mChannel, rv);
++    CancelRequest(listener, channel, rv);
++    return;
+   }
++
++  mPump = pump;
+ }
+ 
+ NS_IMPL_QUERY_INTERFACE(PageThumbProtocolHandler,
+@@ -454,8 +488,7 @@ void PageThumbProtocolHandler::NewSimpleChannel(
+       aURI, aLoadinfo, aStreamGetter,
+       [](nsIStreamListener* listener, nsIChannel* simpleChannel,
+          PageThumbStreamGetter* getter) -> RequestOrReason {
+-        MOZ_TRY(getter->GetAsync(listener, simpleChannel));
+-        return RequestOrReason(nullptr);
++        return getter->GetAsync(listener, simpleChannel);
+       });
+ 
+   SetContentType(aURI, channel);
+diff --git a/toolkit/components/places/nsAnnoProtocolHandler.cpp b/toolkit/components/places/nsAnnoProtocolHandler.cpp
+index 445f59b..65bbb34 100644
+--- a/toolkit/components/places/nsAnnoProtocolHandler.cpp
++++ b/toolkit/components/places/nsAnnoProtocolHandler.cpp
+@@ -15,6 +15,7 @@
+ 
+ #include "nsAnnoProtocolHandler.h"
+ #include "nsFaviconService.h"
++#include "nsICancelable.h"
+ #include "nsIChannel.h"
+ #include "nsIInputStream.h"
+ #include "nsISupportsUtils.h"
+@@ -72,7 +73,10 @@ namespace {
+  * just fallback to the default favicon.  If anything happens at that point, the
+  * world must be against us, so we can do nothing.
+  */
+-class faviconAsyncLoader : public AsyncStatementCallback {
++class faviconAsyncLoader : public AsyncStatementCallback, public nsICancelable {
++  NS_DECL_NSICANCELABLE
++  NS_DECL_ISUPPORTS_INHERITED
++
+  public:
+   faviconAsyncLoader(nsIChannel* aChannel, nsIStreamListener* aListener,
+                      uint16_t aPreferredSize)
+@@ -120,13 +124,35 @@ class faviconAsyncLoader : public AsyncStatementCallback {
+     return NS_OK;
+   }
+ 
++  static void CancelRequest(nsIStreamListener* aListener, nsIChannel* aChannel,
++                            nsresult aResult) {
++    MOZ_ASSERT(aListener);
++    MOZ_ASSERT(aChannel);
++
++    aListener->OnStartRequest(aChannel);
++    aListener->OnStopRequest(aChannel, aResult);
++    aChannel->Cancel(NS_BINDING_ABORTED);
++  }
++
+   NS_IMETHOD HandleCompletion(uint16_t aReason) override {
+     MOZ_DIAGNOSTIC_ASSERT(mListener);
++    MOZ_ASSERT(mChannel);
+     NS_ENSURE_TRUE(mListener, NS_ERROR_UNEXPECTED);
++    NS_ENSURE_TRUE(mChannel, NS_ERROR_UNEXPECTED);
+ 
+-    nsresult rv;
+     // Ensure we'll break possible cycles with the listener.
+-    auto cleanup = MakeScopeExit([&]() { mListener = nullptr; });
++    auto cleanup = MakeScopeExit([&]() {
++      mListener = nullptr;
++      mChannel = nullptr;
++    });
++
++    if (mCanceled) {
++      // The channel that has created this faviconAsyncLoader has been canceled.
++      CancelRequest(mListener, mChannel, mStatus);
++      return NS_OK;
++    }
++
++    nsresult rv;
+ 
+     nsCOMPtr<nsILoadInfo> loadInfo = mChannel->LoadInfo();
+     nsCOMPtr<nsIEventTarget> target =
+@@ -141,7 +167,14 @@ class faviconAsyncLoader : public AsyncStatementCallback {
+                                        target);
+         MOZ_ASSERT(NS_SUCCEEDED(rv));
+         if (NS_SUCCEEDED(rv)) {
+-          return pump->AsyncRead(mListener);
++          rv = pump->AsyncRead(mListener);
++          if (NS_FAILED(rv)) {
++            CancelRequest(mListener, mChannel, rv);
++            return rv;
++          }
++
++          mPump = pump;
++          return NS_OK;
+         }
+       }
+     }
+@@ -150,14 +183,20 @@ class faviconAsyncLoader : public AsyncStatementCallback {
+     // we should pass the loadInfo of the original channel along
+     // to the new channel. Note that mChannel can not be null,
+     // constructor checks that.
+-    nsCOMPtr<nsIChannel> newChannel;
+-    rv = GetDefaultIcon(mChannel, getter_AddRefs(newChannel));
++    rv = GetDefaultIcon(mChannel, getter_AddRefs(mDefaultIconChannel));
+     if (NS_FAILED(rv)) {
+-      mListener->OnStartRequest(mChannel);
+-      mListener->OnStopRequest(mChannel, rv);
++      CancelRequest(mListener, mChannel, rv);
+       return rv;
+     }
+-    return newChannel->AsyncOpen(mListener);
++
++    rv = mDefaultIconChannel->AsyncOpen(mListener);
++    if (NS_FAILED(rv)) {
++      mDefaultIconChannel = nullptr;
++      CancelRequest(mListener, mChannel, rv);
++      return rv;
++    }
++
++    return NS_OK;
+   }
+ 
+  protected:
+@@ -165,11 +204,40 @@ class faviconAsyncLoader : public AsyncStatementCallback {
+ 
+  private:
+   nsCOMPtr<nsIChannel> mChannel;
++  nsCOMPtr<nsIChannel> mDefaultIconChannel;
+   nsCOMPtr<nsIStreamListener> mListener;
++  nsCOMPtr<nsIInputStreamPump> mPump;
+   nsCString mData;
+   uint16_t mPreferredSize;
++  bool mCanceled{false};
++  nsresult mStatus{NS_OK};
+ };
+ 
++NS_IMPL_ISUPPORTS_INHERITED(faviconAsyncLoader, AsyncStatementCallback,
++                            nsICancelable)
++
++NS_IMETHODIMP
++faviconAsyncLoader::Cancel(nsresult aStatus) {
++  if (mCanceled) {
++    return NS_OK;
++  }
++
++  mCanceled = true;
++  mStatus = aStatus;
++
++  if (mPump) {
++    mPump->Cancel(aStatus);
++    mPump = nullptr;
++  }
++
++  if (mDefaultIconChannel) {
++    mDefaultIconChannel->Cancel(aStatus);
++    mDefaultIconChannel = nullptr;
++  }
++
++  return NS_OK;
++}
++
+ }  // namespace
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+@@ -266,7 +334,7 @@ nsresult nsAnnoProtocolHandler::NewFaviconChannel(nsIURI* aURI,
+   nsCOMPtr<nsIChannel> channel = NS_NewSimpleChannel(
+       aURI, aLoadInfo, aAnnotationURI,
+       [](nsIStreamListener* listener, nsIChannel* channel,
+-         nsIURI* annotationURI) {
++         nsIURI* annotationURI) -> RequestOrReason {
+         auto fallback = [&]() -> RequestOrReason {
+           nsCOMPtr<nsIChannel> chan;
+           nsresult rv = GetDefaultIcon(channel, getter_AddRefs(chan));
+@@ -275,7 +343,8 @@ nsresult nsAnnoProtocolHandler::NewFaviconChannel(nsIURI* aURI,
+           rv = chan->AsyncOpen(listener);
+           NS_ENSURE_SUCCESS(rv, Err(rv));
+ 
+-          return RequestOrReason(std::move(chan));
++          nsCOMPtr<nsIRequest> request(chan);
++          return RequestOrCancelable(WrapNotNull(request));
+         };
+ 
+         // Now we go ahead and get our data asynchronously for the favicon.
+@@ -298,7 +367,8 @@ nsresult nsAnnoProtocolHandler::NewFaviconChannel(nsIURI* aURI,
+         rv = faviconService->GetFaviconDataAsync(faviconSpec, callback);
+         if (NS_FAILED(rv)) return fallback();
+ 
+-        return RequestOrReason(nullptr);
++        nsCOMPtr<nsICancelable> cancelable = do_QueryInterface(callback);
++        return RequestOrCancelable(WrapNotNull(cancelable));
+       });
+   NS_ENSURE_TRUE(channel, NS_ERROR_OUT_OF_MEMORY);
+ 
