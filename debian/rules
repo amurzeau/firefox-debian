@@ -183,7 +183,7 @@ $(call lazy,LIBAVCODEC,$$(shell awk -F\" '/libavcodec\.so/ { sub(/libavcodec\.so
 $(PREPROCESSED_FILES): VARS = GRE_VERSION $(PRODUCT) $(call uc,$(PRODUCT)) $(Product) MOZ_APP_REMOTINGNAME $(SYSTEM_LIBS_VARS) SHORT_SOURCE_CHANNEL DIST TRANSITION MOZ_FFVPX CRASH_REPORTER DEB_HOST_ARCH
 debian/control: VARS += L10N_PACKAGES_DEPS PRODUCT LIBAVCODEC
 $(PREPROCESSED_FILES):
-	MACH_USE_SYSTEM_PYTHON=1 $(PYTHON) ./mach python python/mozbuild/mozbuild/preprocessor.py --marker % -Fsubstitution $(foreach var,$(VARS),-D$(var)="$($(var))" )$< -o $@
+	MOZ_OBJDIR=debian/objdir MACH_USE_SYSTEM_PYTHON=1 $(PYTHON) ./mach python python/mozbuild/mozbuild/preprocessor.py --marker % -Fsubstitution $(foreach var,$(VARS),-D$(var)="$($(var))" )$< -o $@
 
 ifdef TRANSITION
 MAINTSCRIPTS := $(addprefix debian/,$(addsuffix .maintscript,$(shell awk -F/ '$$1 != "searchplugins" { next } $$2 == "locale" && $$3 != "en-US" { p="iceweasel-l10n-" $$3 } $$2 == "common" || ($$2 "/" $$3 == "locale/en-US") { p="iceweasel" } !done[p] { print p; done[p] = 1 }' debian/removed_conffiles)))
@@ -283,7 +283,7 @@ override_dh_auto_clean::
 	dh_auto_clean --builddirectory=build-$(PRODUCT)
 	dh_auto_clean --builddirectory=build-l10n
 	find . -name "*.pyc" -o -name "*.pyo" | xargs --no-run-if-empty rm -f
-	rm -rf obj-*/.mozbuild $(MOZBUILD_STATE_PATH)
+	rm -rf debian/objdir $(MOZBUILD_STATE_PATH)
 
 override_dh_clean:
 	dh_clean -XCargo.toml.orig
