@@ -1,3 +1,16 @@
+firefox (96.0.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+  * modules/libpref/init/StaticPrefList.yaml: Disable cookie sameSite
+    schemeful. bz#1750264.
+  * dom/media/webrtc/third_party_build/gn-configs/x64_*_arm_linux.json,
+    dom/media/webrtc/third_party_build/gn-configs/x64_*_ppc64_linux.json,
+    third_party/libwebrtc/**/moz.build: Add webrtc configs for arm and
+    ppc64 linux. bz#1738845.
+
+ -- Mike Hommey <glandium@debian.org>  Sat, 15 Jan 2022 07:41:14 +0900
+
 firefox (96.0-1) unstable; urgency=medium
 
   * New upstream release.
