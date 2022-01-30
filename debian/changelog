@@ -1,3 +1,9 @@
+firefox-esr (91.5.1esr-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Hommey <glandium@debian.org>  Mon, 31 Jan 2022 07:18:30 +0900
+
 firefox-esr (91.5.0esr-1) unstable; urgency=medium
 
   * New upstream release.
