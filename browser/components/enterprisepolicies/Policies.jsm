@@ -526,71 +526,38 @@ var Policies = {
 
   DisabledCiphers: {
     onBeforeAddons(manager, param) {
-      if ("TLS_DHE_RSA_WITH_AES_128_CBC_SHA" in param) {
-        setAndLockPref(
-          "security.ssl3.dhe_rsa_aes_128_sha",
-          !param.TLS_DHE_RSA_WITH_AES_128_CBC_SHA
-        );
-      }
-      if ("TLS_DHE_RSA_WITH_AES_256_CBC_SHA" in param) {
-        setAndLockPref(
-          "security.ssl3.dhe_rsa_aes_256_sha",
-          !param.TLS_DHE_RSA_WITH_AES_256_CBC_SHA
-        );
-      }
-      if ("TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA" in param) {
-        setAndLockPref(
-          "security.ssl3.ecdhe_rsa_aes_128_sha",
-          !param.TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-        );
-      }
-      if ("TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA" in param) {
-        setAndLockPref(
-          "security.ssl3.ecdhe_rsa_aes_256_sha",
-          !param.TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
-        );
-      }
-      if ("TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256" in param) {
-        setAndLockPref(
+      let cipherPrefs = {
+        TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:
           "security.ssl3.ecdhe_rsa_aes_128_gcm_sha256",
-          !param.TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-        );
-      }
-      if ("TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256" in param) {
-        setAndLockPref(
+        TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:
           "security.ssl3.ecdhe_ecdsa_aes_128_gcm_sha256",
-          !param.TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
-        );
-      }
-      if ("TLS_RSA_WITH_AES_128_CBC_SHA" in param) {
-        setAndLockPref(
-          "security.ssl3.rsa_aes_128_sha",
-          !param.TLS_RSA_WITH_AES_128_CBC_SHA
-        );
-      }
-      if ("TLS_RSA_WITH_AES_256_CBC_SHA" in param) {
-        setAndLockPref(
-          "security.ssl3.rsa_aes_256_sha",
-          !param.TLS_RSA_WITH_AES_256_CBC_SHA
-        );
-      }
-      if ("TLS_RSA_WITH_3DES_EDE_CBC_SHA" in param) {
-        setAndLockPref(
-          "security.ssl3.rsa_des_ede3_sha",
-          !param.TLS_RSA_WITH_3DES_EDE_CBC_SHA
-        );
-      }
-      if ("TLS_RSA_WITH_AES_128_GCM_SHA256" in param) {
-        setAndLockPref(
-          "security.ssl3.rsa_aes_128_gcm_sha256",
-          !param.TLS_RSA_WITH_AES_128_GCM_SHA256
-        );
-      }
-      if ("TLS_RSA_WITH_AES_256_GCM_SHA384" in param) {
-        setAndLockPref(
-          "security.ssl3.rsa_aes_256_gcm_sha384",
-          !param.TLS_RSA_WITH_AES_256_GCM_SHA384
-        );
+        TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:
+          "security.ssl3.ecdhe_ecdsa_chacha20_poly1305_sha256",
+        TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:
+          "security.ssl3.ecdhe_rsa_chacha20_poly1305_sha256",
+        TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:
+          "security.ssl3.ecdhe_ecdsa_aes_256_gcm_sha384",
+        TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:
+          "security.ssl3.ecdhe_rsa_aes_256_gcm_sha384",
+        TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA:
+          "security.ssl3.ecdhe_rsa_aes_128_sha",
+        TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA:
+          "security.ssl3.ecdhe_ecdsa_aes_128_sha",
+        TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:
+          "security.ssl3.ecdhe_rsa_aes_256_sha",
+        TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:
+          "security.ssl3.ecdhe_ecdsa_aes_256_sha",
+        TLS_DHE_RSA_WITH_AES_128_CBC_SHA: "security.ssl3.dhe_rsa_aes_128_sha",
+        TLS_DHE_RSA_WITH_AES_256_CBC_SHA: "security.ssl3.dhe_rsa_aes_256_sha",
+        TLS_RSA_WITH_AES_128_GCM_SHA256: "security.ssl3.rsa_aes_128_gcm_sha256",
+        TLS_RSA_WITH_AES_256_GCM_SHA384: "security.ssl3.rsa_aes_256_gcm_sha384",
+        TLS_RSA_WITH_AES_128_CBC_SHA: "security.ssl3.rsa_aes_128_sha",
+        TLS_RSA_WITH_AES_256_CBC_SHA: "security.ssl3.rsa_aes_256_sha",
+        TLS_RSA_WITH_3DES_EDE_CBC_SHA: "security.ssl3.rsa_des_ede3_sha",
+      };
+
+      for (let cipher in param) {
+        setAndLockPref(cipherPrefs[cipher], !param[cipher]);
       }
     },
   },
@@ -2308,8 +2275,11 @@ function addAllowDenyPermissions(permissionName, allowList, blockList) {
         Ci.nsIPermissionManager.EXPIRE_POLICY
       );
     } catch (ex) {
-      log.error(`Added by default for ${permissionName} permission in the permission
-      manager - ${origin.href}`);
+      // It's possible if the origin was invalid, we'll have a string instead of an origin.
+      log.error(
+        `Unable to add ${permissionName} permission for ${origin.href ||
+          origin}`
+      );
     }
   }
 
@@ -2519,9 +2489,10 @@ let ChromeURLBlockPolicy = {
     ) {
       return Ci.nsIContentPolicy.ACCEPT;
     }
+    let contentLocationSpec = contentLocation.spec.toLowerCase();
     if (
       gBlockedAboutPages.some(function(aboutPage) {
-        return contentLocation.spec.startsWith(aboutPage);
+        return contentLocationSpec.startsWith(aboutPage.toLowerCase());
       })
     ) {
       return Ci.nsIContentPolicy.REJECT_POLICY;
