@@ -249,8 +249,61 @@ encrypted-bcc-ignore-button = Зрозуміло
 compose-tool-button-remove-text-styling =
     .tooltiptext = Вилучити стилі тексту
 
-## FileLink messages
+## FileLink
 
+
+# Template
+
+# A line of text describing how many uploaded files have been appended to this
+# message. Emphasis should be on sharing as opposed to attaching. This item is
+# used as a header to a list, hence the colon.
+cloud-file-count-header =
+    { $count ->
+        [one] Я додаю { $count } файл до цього листа:
+        [few] Я додаю { $count } файли до цього листа:
+       *[many] Я додаю { $count } файлів до цього листа:
+    }
+# A text used in a footer, instructing the reader where to find additional
+# information about the used service providers.
+cloud-file-service-provider-footer =
+    { $count ->
+        [one] Докладніше про { $lastLink }.
+        [few] Докладніше про { $lastLink } і { $lastLink }.
+       *[many] Докладніше про { $lastLink } і { $lastLink }.
+    }
+# A text used in a footer, instructing the reader where to find additional
+# information about the used service provider.
+# $link (string) - html a-tag for a link pointing to the web page of the provider
+cloud-file-service-provider-footer-single = Докладніше про { $link }.
+# A text used in a footer, instructing the reader where to find additional
+# information about the used service providers. Links for the used providers are
+# split into a comma separated list of the first n-1 providers and a single entry
+# at the end.
+# $firstLinks (string) - comma separated list of html a-tags pointing to web pages
+#                        of the first n-1 used providers
+# $lastLink (string) - html a-tag pointing the web page of the n-th used provider
+cloud-file-service-provider-footer-multiple = Докладніше про { $firstLinks } і { $lastLink }.
+# Tooltip for an icon, indicating that the link is protected by a password.
+cloud-file-tooltip-password-protected-link = Захищене паролем посилання
+# Used in a list of stats about a specific file
+# Service - the used service provider to host the file (CloudFile Service: BOX.com)
+# Size - the size of the file (Size: 4.2 MB)
+# Link - the link to the file (Link: https://some.provider.com)
+# Expiry Date - stating the date the link will expire (Expiry Date: 12.12.2022)
+# Download Limit - stating the maximum allowed downloads, before the link becomes invalid
+#                  (Download Limit: 6)
+cloud-file-template-service = Служба CloudFile:
+cloud-file-template-size = Розмір:
+cloud-file-template-link = Посилання:
+cloud-file-template-password-protected-link = Захищене паролем посилання
+cloud-file-template-expiry-date = Кінцева дата:
+cloud-file-template-download-limit = Ліміт завантаження:
+
+# Messages
+
+# $provider (string) - name of the online storage service that reported the error
+cloud-file-connection-error-title = Помилка з'єднання
+cloud-file-connection-error = { -brand-short-name } офлайн. Не вдалося під'єднатися до { $provider }.
 # $provider (string) - name of the online storage service that reported the error
 # $filename (string) - name of the file that was uploaded and caused the error
 cloud-file-upload-error-with-custom-message-title = Не вдалося вивантажити { $filename } до { $provider }

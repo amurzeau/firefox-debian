@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# Addressing widget
+## Addressing widget
 
 #   $type (String) - the type of the addressing row
 remove-address-row-button =
@@ -43,7 +43,7 @@ pill-action-expand-list =
     .label = Expander la glista
     .accesskey = x
 
-# Attachment widget
+## Attachment widget
 
 ctrl-cmd-shift-pretty-prefix =
     { PLATFORM() ->
@@ -61,6 +61,10 @@ toolbar-button-add-attachment =
     .tooltiptext = Agiuntar ina agiunta ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
 add-attachment-notification-reminder =
     .label = Agiuntar ina agiunta…
+    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
+add-attachment-notification-reminder2 =
+    .label = Agiuntar ina datoteca…
+    .accesskey = A
     .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 menuitem-attach-files =
     .label = Datoteca(s)…
@@ -83,6 +87,10 @@ expand-attachment-pane-tooltip =
     .tooltiptext = Mussar la zona d'agiuntas ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
     .tooltiptext = Zuppentar la zona d'agiuntas ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-show =
+    .title = Mussar la zona d'agiuntas ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+attachment-area-hide =
+    .title = Zuppentar la zona d'agiuntas ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 drop-file-label-attachment =
     { $count ->
         [one] Agiuntar sco agiunta
@@ -94,7 +102,7 @@ drop-file-label-inline =
        *[other] Includer a l'intern
     }
 
-# Reorder Attachment Panel
+## Reorder Attachment Panel
 
 move-attachment-first-panel-button =
     .label = Spustar a l'entschatta
@@ -108,14 +116,14 @@ button-return-receipt =
     .label = Retschavida
     .tooltiptext = Dumandar ina conferma da retschavida per quest messadi
 
-# Encryption
+## Encryption
 
 message-to-be-signed-icon =
     .alt = Signar il messadi
 message-to-be-encrypted-icon =
     .alt = Criptar il messadi
 
-# Addressing Area
+## Addressing Area
 
 to-compose-address-row-label =
     .value = A
@@ -233,3 +241,57 @@ encrypted-bcc-ignore-button = Chapì
 
 compose-tool-button-remove-text-styling =
     .tooltiptext = Allontanar la formataziun dal text
+
+## FileLink
+
+
+# Template
+
+# A line of text describing how many uploaded files have been appended to this
+# message. Emphasis should be on sharing as opposed to attaching. This item is
+# used as a header to a list, hence the colon.
+cloud-file-count-header =
+    { $count ->
+        [one] Jau hai collià { $count } datoteca cun quest e-mail:
+       *[other] Jau hai collià { $count } datotecas cun quest e-mail:
+    }
+# A text used in a footer, instructing the reader where to find additional
+# information about the used service providers.
+cloud-file-service-provider-footer =
+    { $count ->
+        [one] Ulteriuras infurmaziuns davart { $lastLink }.
+       *[other] Ulteriuras infurmaziuns davart { $firstLinks } e { $lastLink }.
+    }
+# Tooltip for an icon, indicating that the link is protected by a password.
+cloud-file-tooltip-password-protected-link = Colliaziun protegida cun in pled-clav
+# Used in a list of stats about a specific file
+# Service - the used service provider to host the file (CloudFile Service: BOX.com)
+# Size - the size of the file (Size: 4.2 MB)
+# Link - the link to the file (Link: https://some.provider.com)
+# Expiry Date - stating the date the link will expire (Expiry Date: 12.12.2022)
+# Download Limit - stating the maximum allowed downloads, before the link becomes invalid
+#                  (Download Limit: 6)
+cloud-file-template-service = Servetsch CloudFile:
+cloud-file-template-size = Grondezza:
+cloud-file-template-link = Colliaziun:
+cloud-file-template-password-protected-link = Colliaziun protegida cun in pled-clav:
+cloud-file-template-expiry-date = Data da scadenza:
+cloud-file-template-download-limit = Limita da telechargiada:
+
+# Messages
+
+# $provider (string) - name of the online storage service that reported the error
+cloud-file-connection-error-title = Errur da connexiun
+cloud-file-connection-error = { -brand-short-name } è offline. Impussibel da connectar cun { $provider }.
+# $provider (string) - name of the online storage service that reported the error
+# $filename (string) - name of the file that was uploaded and caused the error
+cloud-file-upload-error-with-custom-message-title = Il transferiment da { $filename } sin { $provider } n'è betg reussì
+# $provider (string) - name of the online storage service that reported the error
+# $filename (string) - name of the file that was renamed and caused the error
+cloud-file-rename-error-title = Errur cun renumnar
+cloud-file-rename-error = Igl è succedida ina errur durant renumnar { $filename } sin { $provider }.
+# $provider (string) - name of the online storage service that reported the error
+# $filename (string) - name of the file that was renamed and caused the error
+cloud-file-rename-error-with-custom-message-title = I n'è betg reussì da renumnar { $filename } sin { $provider }
+# $provider (string) - name of the online storage service that reported the error
+cloud-file-rename-not-supported = { $provider } na porscha betg la pussaivladad da renumnar datotecas gia transferidas.

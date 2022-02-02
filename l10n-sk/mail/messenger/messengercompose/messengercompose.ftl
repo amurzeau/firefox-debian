@@ -249,8 +249,61 @@ encrypted-bcc-ignore-button = Rozumiem
 compose-tool-button-remove-text-styling =
     .tooltiptext = Odstrániť štýl textu
 
-## FileLink messages
+## FileLink
 
+
+# Template
+
+# A line of text describing how many uploaded files have been appended to this
+# message. Emphasis should be on sharing as opposed to attaching. This item is
+# used as a header to a list, hence the colon.
+cloud-file-count-header =
+    { $count ->
+        [one] K tejto správe je pripojený { $count } súbor
+        [few] K tejto správe sú pripojené { $count } súbory
+       *[other] K tejto správe je pripojených { $count } súborov
+    }
+# A text used in a footer, instructing the reader where to find additional
+# information about the used service providers.
+cloud-file-service-provider-footer =
+    { $count ->
+        [one] Ďalšie informácie o { $lastLink }.
+        [few] Ďalšie informácie o { $firstLinks } a { $lastLink }.
+       *[other] Ďalšie informácie o { $firstLinks } a { $lastLink }.
+    }
+# A text used in a footer, instructing the reader where to find additional
+# information about the used service provider.
+# $link (string) - html a-tag for a link pointing to the web page of the provider
+cloud-file-service-provider-footer-single = Ďalšie informácie o službe { $link }.
+# A text used in a footer, instructing the reader where to find additional
+# information about the used service providers. Links for the used providers are
+# split into a comma separated list of the first n-1 providers and a single entry
+# at the end.
+# $firstLinks (string) - comma separated list of html a-tags pointing to web pages
+#                        of the first n-1 used providers
+# $lastLink (string) - html a-tag pointing the web page of the n-th used provider
+cloud-file-service-provider-footer-multiple = Ďalšie informácie o službách { $firstLinks } a { $lastLink }.
+# Tooltip for an icon, indicating that the link is protected by a password.
+cloud-file-tooltip-password-protected-link = Odkaz chránený heslom
+# Used in a list of stats about a specific file
+# Service - the used service provider to host the file (CloudFile Service: BOX.com)
+# Size - the size of the file (Size: 4.2 MB)
+# Link - the link to the file (Link: https://some.provider.com)
+# Expiry Date - stating the date the link will expire (Expiry Date: 12.12.2022)
+# Download Limit - stating the maximum allowed downloads, before the link becomes invalid
+#                  (Download Limit: 6)
+cloud-file-template-service = Služba CloudFile:
+cloud-file-template-size = Veľkosť:
+cloud-file-template-link = Odkaz:
+cloud-file-template-password-protected-link = Odkaz chránený heslom:
+cloud-file-template-expiry-date = Dátum vypršania plastnosti:
+cloud-file-template-download-limit = Limit stiahnutí:
+
+# Messages
+
+# $provider (string) - name of the online storage service that reported the error
+cloud-file-connection-error-title = Chyba pripojenia
+cloud-file-connection-error = { -brand-short-name } je v režime offline. Nepodarilo sa pripojiť k službe { $provider }.
 # $provider (string) - name of the online storage service that reported the error
 # $filename (string) - name of the file that was uploaded and caused the error
 cloud-file-upload-error-with-custom-message-title = Nahrávanie súboru { $filename } do služby { $provider } zlyhalo

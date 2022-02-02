@@ -4,7 +4,7 @@
 
 about-telemetry-ping-data-source = Ping gagnastaðsetning:
 about-telemetry-show-archived-ping-data = Vistuð ping gögn
-about-telemetry-show-subsession-data = Sýna subsession gögn
+about-telemetry-show-subsession-data = Sýna undirlotugögn
 about-telemetry-choose-ping = Velja ping:
 about-telemetry-archive-ping-type = Ping tegund
 about-telemetry-archive-ping-header = Ping
@@ -24,7 +24,7 @@ about-telemetry-show-in-Firefox-json-viewer = Opna í JSON skoðara
 about-telemetry-home-section = Heim
 about-telemetry-general-data-section = Almenn gögn
 about-telemetry-environment-data-section = Umhverfisgögn
-about-telemetry-session-info-section = Lotuupplýsingar
+about-telemetry-session-info-section = Upplýsingar um lotu
 about-telemetry-scalar-section = Kvarðar
 about-telemetry-keyed-scalar-section = Keyed Scalars
 about-telemetry-histograms-section = Súlurit
@@ -55,6 +55,16 @@ about-telemetry-upload-type =
     { $uploadcase ->
         [enabled] virkt
        *[disabled] óvirkt
+    }
+# Example Output: 1 sample, average = 0, sum = 0
+# Variables:
+#   $sampleCount (Integer): amount of histogram samples
+#   $prettyAverage (Integer): average of histogram samples
+#   $sum (Integer): sum of histogram samples
+about-telemetry-histogram-stats =
+    { $sampleCount ->
+        [one] { $sampleCount } sýni, meðaltal = { $prettyAverage }, summa = { $sum }
+       *[other] { $sampleCount } sýni, meðaltal = { $prettyAverage }, summa = { $sum }
     }
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
@@ -117,7 +127,7 @@ about-telemetry-late-writes-title = Skrifað seint #{ $lateWriteCount }
 about-telemetry-stack-title = Stafli:
 about-telemetry-memory-map-title = Minniskort:
 about-telemetry-error-fetching-symbols = Upp kom villa við að ná í tákn. Athugaðu að þú sért tengdur við netið og reyndu aftur.
-about-telemetry-time-stamp-header = tímastimpill
+about-telemetry-time-stamp-header = tímamerki
 about-telemetry-category-header = flokkur
 about-telemetry-method-header = aðferð
 about-telemetry-object-header = hlutur

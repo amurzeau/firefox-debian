@@ -49,7 +49,7 @@ folder-pane-toolbar =
     .toolbarname = Γραμμή περιοχής φακέλων
     .accesskey = Γ
 folder-pane-toolbar-options-button =
-    .tooltiptext = Επιλογές προβολής φακέλων
+    .tooltiptext = Επιλογές περιοχής φακέλων
 folder-pane-header-label = Φάκελοι
 
 ## Folder Toolbar Header Popup
@@ -169,3 +169,16 @@ no-reply-reply-anyway-button = Απάντηση ούτως ή άλλως
 ## error messages
 
 decrypt-and-copy-failures = Δεν ήταν δυνατή η αποκρυπτογράφηση και αντιγραφή { $failures } από { $total } μηνύματα.
+
+## Spaces toolbar
+
+spaces-toolbar-button-address-book =
+    .title = Εναλλαγή στην καρτέλα ευρετηρίων
+spaces-toolbar-button-calendar =
+    .title = Εναλλαγή στην καρτέλα ημερολογίου
+spaces-toolbar-button-tasks =
+    .title = Εναλλαγή στην καρτέλα εργασιών
+spaces-toolbar-button-chat =
+    .title = Εναλλαγή στην καρτέλα συνομιλίας
+spaces-toolbar-button-settings =
+    .title = Εναλλαγή στην καρτέλα ρυθμίσεων

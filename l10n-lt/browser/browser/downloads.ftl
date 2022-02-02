@@ -113,6 +113,9 @@ downloads-cmd-clear-list =
 downloads-cmd-clear-downloads =
     .label = Išvalyti atsiuntimus
     .accesskey = v
+downloads-cmd-delete-file =
+    .label = Pašalinti
+    .accesskey = P
 # This command is shown in the context menu when downloads are blocked.
 downloads-cmd-unblock =
     .label = Leisti atsiuntimą
@@ -158,6 +161,8 @@ downloading-file-opens-in-minutes = Atveriama po { $minutes } min…
 downloading-file-opens-in-minutes-and-seconds = Atveriama po { $minutes } min. { $seconds } sek…
 downloading-file-opens-in-seconds = Atveriama po { $seconds } sek.
 downloading-file-opens-in-some-time = Bus atveriama užbaigus…
+downloading-file-click-to-open =
+    .value = Atverti užbaigus
 
 ##
 

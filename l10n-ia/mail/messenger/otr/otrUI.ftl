@@ -15,6 +15,8 @@ auth-fail = Falta verificante le identitate de tu contacto.
 auth-waiting = Attendente que le contacta completa le verification…
 finger-verify = Verificar
 finger-verify-access-key = V
+finger-ignore = Ignorar
+finger-ignore-access-key = n
 # Do not translate 'OTR' (name of an encryption protocol)
 buddycontextmenu-label = Adder dactylogramma de OTR
 # Variables:

@@ -2,7 +2,14 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# Localized string used as the dialog window title.
+# "Report" is a noun in this case, "Report for AddonName".
+#
+# Variables:
+#   $addon-name (string) - Name of the add-on being reported
+abuse-report-dialog-title = Skýrsla fyrir { $addon-name }
 abuse-report-title-extension = Tilkynna þessa viðbót til { -vendor-short-name }
+abuse-report-title-sitepermission = Tilkynna heimildir fyrir vefsvæði þessarar viðbótar til { -vendor-short-name }
 abuse-report-title-theme = Tilkynna þetta þema til { -vendor-short-name }
 abuse-report-subtitle = Hvert er vandamálið?
 # Variables:
@@ -13,7 +20,7 @@ abuse-report-learnmore =
     <a data-l10n-name="learnmore-link">Lærðu meira um það að tilkynna viðbót eða þema</a>
 abuse-report-submit-description = Lýstu vandamálinu (valfrjálst)
 abuse-report-textarea =
-    .placeholder = Það auðveldar okkur að tækla vandamálið ef við vitum meira um það. Vinsamlegast lýstu þinni upplifun. Þakka þér fyrir að hjálpa okkur að viðhalda heilbrigði vefsins.
+    .placeholder = Það auðveldar okkur að tækla vandamálið ef við vitum meira um þetta. Lýstu því sem þú upplifir. Þakka þér fyrir að hjálpa okkur að halda vefnum heilbrigðums.
 abuse-report-submit-note = Athugið: Ekki setja inn neinar persónulegar upplýsingar (eins og nafn, tölvupóstfang, símanúmer, heimilisfang). { -vendor-short-name } mun geyma þessa tilkynningu til frambúðar.
 
 ## Panel buttons.
@@ -33,6 +40,7 @@ abuse-report-messagebar-submitting = Sendi inn skýrslu um <span data-l10n-name=
 abuse-report-messagebar-submitted = Þakka þér fyrir að senda inn skýrslu. Viltu fjarlægja <span data-l10n-name="addon-name">{ $addon-name }</span>?
 abuse-report-messagebar-submitted-noremove = Þakka þér fyrir að senda inn skýrslu.
 abuse-report-messagebar-removed-extension = Þakka þér fyrir að senda inn skýrslu. Viðbótin <span data-l10n-name="addon-name">{ $addon-name }</span> hefur verið fjarlægð.
+abuse-report-messagebar-removed-sitepermission = Þakka þér fyrir að senda inn skýrslu. Viðbótin <span data-l10n-name="addon-name">{ $addon-name }</span> fyrir heimildir vefsvæða hefur verið fjarlægð.
 abuse-report-messagebar-removed-theme = Þakka þér fyrir að senda inn skýrslu. Þemað <span data-l10n-name="addon-name">{ $addon-name }</span> hefur verið fjarlægt.
 abuse-report-messagebar-error = Villa kom upp þegar reynt var að senda inn skýrslu um <span data-l10n-name="addon-name">{ $addon-name }</span>.
 abuse-report-messagebar-error-recent-submit = Skýrslan um <span data-l10n-name="addon-name">{ $addon-name }</span> var ekki send inn því önnur skýrsla var send inn nýlega.
@@ -41,6 +49,8 @@ abuse-report-messagebar-error-recent-submit = Skýrslan um <span data-l10n-name=
 
 abuse-report-messagebar-action-remove-extension = Já, fjarlægja
 abuse-report-messagebar-action-keep-extension = Nei, hafa áfram
+abuse-report-messagebar-action-remove-sitepermission = Já, fjarlægja
+abuse-report-messagebar-action-keep-sitepermission = Nei, hafa áfram
 abuse-report-messagebar-action-remove-theme = Já, fjarlægja
 abuse-report-messagebar-action-keep-theme = Nei, hafa áfram
 abuse-report-messagebar-action-retry = Reyna aftur
@@ -48,14 +58,19 @@ abuse-report-messagebar-action-cancel = Hætta við
 
 ## Abuse report reasons (optionally paired with related examples and/or suggestions)
 
+abuse-report-damage-reason-v2 = Það skemmdi tölvuna mína eða berskjaldaði gögnin mín
 abuse-report-damage-example = Dæmi: Setti inn spilliforrit eða stal gögnum
+abuse-report-spam-reason-v2 = Það inniheldur ruslpóst eða setur inn óæskilegar auglýsingar
 abuse-report-spam-example = Dæmi: Bætir auglýsingum inn á vefsíður
+abuse-report-settings-reason-v2 = Það breytti leitarvélinni minni, heimasíðunni eða nýju flipasíðunni án þess biðja um leyfi eða láta vita
 abuse-report-settings-suggestions = Áður en þú tilkynnir viðbótina gætirðu prófað að breyta stillingunum þínum:
 abuse-report-settings-suggestions-search = Breyta sjálfgefnu leitarvélinni
 abuse-report-settings-suggestions-homepage = Breyta heimasíðu og nýju flipasíðunni
+abuse-report-deceptive-reason-v2 = Það segist vera eitthvað sem það er ekki
 abuse-report-deceptive-example = Dæmi: Villandi lýsing eða myndir
 abuse-report-broken-reason-extension-v2 = Virkar ekki, lætur vefsvæði hætta að virka eða hægir á { -brand-product-name }
 abuse-report-broken-reason-sitepermission-v2 = Virkar ekki, lætur vefsvæði hætta að virka eða hægir á { -brand-product-name }
+abuse-report-broken-reason-theme-v2 = Það virkar ekki eða skemmir virkni vafragluggans
 abuse-report-broken-example = Dæmi: Ýmislegt virkar ekki, keyrir hægar, eða er erfiðara að nota; hlutar vefsvæða hlaðast ekki inn eða líta skringilega út
 abuse-report-broken-suggestions-extension = Það hljómar eins og þú hafir rekist á hugbúnaðarvillu. Þegar þú hefur sent þessa tilkynningu inn myndi það líka flýta fyrir því að hún verði löguð ef þú hefðir samband við þann sem bjó viðbótina til. <a data-l10n-name="support-link">Farðu á vefsíðu viðbótarinnar</a> til að finna upplýsingar um viðbótarsmiðinn.
 abuse-report-broken-suggestions-sitepermission =
@@ -63,6 +78,8 @@ abuse-report-broken-suggestions-sitepermission =
     til að leysa virknivandamál að hafa samband við hönnuði vefsvæðisins.
     <a data-l10n-name="support-link">Farðu á vefsvæðið</a> til að fá upplýsingar um þróunaraðila.
 abuse-report-broken-suggestions-theme = Það hljómar eins og þú hafir rekist á hugbúnaðarvillu. Þegar þú hefur sent þessa tilkynningu inn myndi það líka flýta fyrir því að hún verði löguð ef þú hefðir samband við þann sem bjó þemað til. <a data-l10n-name="support-link">Farðu á vefsíðu viðbótarinnar</a> til að finna upplýsingar um þemusmiðinn.
+abuse-report-policy-reason-v2 = Það inniheldur hatursfullt, ofbeldisfullt eða ólöglegt efni
 abuse-report-policy-suggestions = Athugið: Mál er varða höfundarrétt og vörumerki þarf að tilkynna annars staðar. <a data-l10n-name="report-infringement-link">Fylgið leiðbeiningunum hér</a> til að tilkynna slík mál.
+abuse-report-unwanted-reason-v2 = Ég vildi það aldrei og veit ekki hvernig ég á að losna við það
 abuse-report-unwanted-example = Dæmi: Forrit setti hana inn án þess að biðja um leyfi
 abuse-report-other-reason = Eitthvað annað

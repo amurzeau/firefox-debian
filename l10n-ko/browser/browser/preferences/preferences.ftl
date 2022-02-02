@@ -128,7 +128,7 @@ ctrl-tab-recently-used-order =
     .label = Ctrl+Tab 단축키로 최근 사용한 순서대로 탭 순환
     .accesskey = T
 open-new-link-as-tabs =
-    .label = 링크를 새 창 대신 새 탭에 열기
+    .label = 링크를 새 창 대신 새 탭에서 열기
     .accesskey = w
 warn-on-close-multiple-tabs =
     .label = 여러 개의 탭을 닫을 때 경고
@@ -266,7 +266,7 @@ applications-use-app =
 # Variables:
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
-    .label = { $app-name } 사용(기본값)
+    .label = { $app-name } 사용 (기본값)
 applications-use-os-default =
     .label =
         { PLATFORM() ->
@@ -278,9 +278,9 @@ applications-use-other =
     .label = 다른 애플리케이션 사용…
 applications-select-helper = 도우미 애플리케이션 선택
 applications-manage-app =
-    .label = 애플리케이션 세부사항…
+    .label = 애플리케이션 상세 정보…
 applications-always-ask =
-    .label = 항상 물어 보기
+    .label = 항상 묻기
 # Variables:
 #   $type-description (String) - Description of the type (e.g "Portable Document Format")
 #   $type (String) - the MIME type (e.g application/binary)
@@ -292,7 +292,7 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 # Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
-    .label = { $plugin-name } 사용({ -brand-short-name })
+    .label = { $plugin-name } 사용 ({ -brand-short-name })
 applications-open-inapp =
     .label = { -brand-short-name }에서 열기
 
@@ -410,10 +410,10 @@ browsing-media-control =
     .accesskey = v
 browsing-media-control-learn-more = 더 알아보기
 browsing-cfr-recommendations =
-    .label = 탐색시 확장 기능 추천
+    .label = 탐색할 때 확장 기능 추천
     .accesskey = R
 browsing-cfr-features =
-    .label = 탐색시 기능 추천
+    .label = 탐색할 때 기능 추천
     .accesskey = f
 browsing-cfr-recommendations-learn-more = 더 알아보기
 
@@ -606,7 +606,7 @@ sync-signedout-account-signin3 =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = 모바일 기기와 동기화하기 위해서 <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> 또는 <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a>용 Firefox를 다운로드하세요.
+sync-mobile-promo = 모바일 기기와 동기화하려면 <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> 또는 <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a>용 Firefox를 다운로드하세요.
 
 ## Firefox Account - Signed in
 
@@ -631,8 +631,8 @@ sync-sign-in =
 
 ## Sync section - enabling or disabling sync.
 
-prefs-syncing-on = 동기화 : 켜짐
-prefs-syncing-off = 동기화 : 꺼짐
+prefs-syncing-on = 동기화: 켜짐
+prefs-syncing-off = 동기화: 꺼짐
 prefs-sync-turn-on-syncing =
     .label = 동기화 켜기…
     .accesskey = s
@@ -918,7 +918,7 @@ enhanced-tracking-protection-setting-custom =
 
 ##
 
-content-blocking-etp-standard-desc = 보호와 성능사이의 균형이 잡혀 있습니다. 페이지가 정상적으로 로드됩니다.
+content-blocking-etp-standard-desc = 보호와 성능 사이의 균형이 잡혀 있습니다. 페이지가 정상적으로 로드됩니다.
 content-blocking-etp-strict-desc = 더 강력한 보호 기능을 제공하지만, 일부 사이트나 콘텐츠가 손상될 수 있습니다.
 content-blocking-etp-custom-desc = 차단할 추적기와 스크립트를 선택하세요.
 content-blocking-etp-blocking-desc = { -brand-short-name }가 다음 항목을 차단함:

@@ -137,6 +137,9 @@ addon-category-available-updates-title =
 addon-category-recent-updates = ბოლო განახლებები
 addon-category-recent-updates-title =
     .title = ბოლო განახლებები
+addon-category-sitepermission = საიტის ნებართვები
+addon-category-sitepermission-title =
+    .title = საიტის ნებართვები
 
 ## These are global warnings
 
@@ -292,6 +295,8 @@ dictionary-enabled-heading = ჩართულია
 dictionary-disabled-heading = ამორთულია
 locale-enabled-heading = ჩართულია
 locale-disabled-heading = ამორთულია
+sitepermission-enabled-heading = ჩართულია
+sitepermission-disabled-heading = ამორთულია
 always-activate-button = ყოველთვის გაეშვას
 never-activate-button = არასდროს გაეშვას
 addon-detail-author-label = შემქმნელი
@@ -368,6 +373,7 @@ addon-permissions-optional = მოთხოვნილი ნებართ�
 addon-permissions-learnmore = ვრცლად, ნებართვების შესახებ
 recommended-extensions-heading = შემოთავაზებული გაფართოებები
 recommended-themes-heading = შემოთავაზებული თემები
+addon-sitepermissions-required = მოცემული შესაძლებლობებით აღიჭურვება <span data-l10n-name="hostname">{ $hostname }</span>:
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = შემოქმედებით უნარებს ფლობთ? <a data-l10n-name="link">ააწყვეთ საკუთარი გაფორმება Firefox Color-ით.</a>
@@ -380,6 +386,7 @@ plugin-heading = მოდულების მართვა
 dictionary-heading = ლექსიკონების მართვა
 locale-heading = ენების მართვა
 updates-heading = განახლებების მართვა
+sitepermission-heading = საიტის ნებართვების მართვა
 discover-heading = მოირგეთ თქვენი { -brand-short-name }
 shortcuts-heading = გაფართოებების ღილაკების მართვა
 default-heading-search-label = სხვა დამატებების მოძიება

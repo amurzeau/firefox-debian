@@ -5,9 +5,33 @@
 places-open =
     .label = Opna
     .accesskey = O
+places-open-in-tab =
+    .label = Opna í nýjum flipa
+    .accesskey = p
+places-open-all-bookmarks =
+    .label = Opna öll bókamerki
+    .accesskey = O
 places-open-all-in-tabs =
     .label = Opna allt í flipum
     .accesskey = O
+places-open-in-window =
+    .label = Opna í nýjum glugga
+    .accesskey = n
+places-open-in-private-window =
+    .label = Opna í nýjum huliðsglugga
+    .accesskey = p
+places-add-bookmark =
+    .label = Bæta við bókamerki…
+    .accesskey = B
+places-add-folder-contextmenu =
+    .label = Bæta við möppu…
+    .accesskey = m
+places-add-folder =
+    .label = Bæta við möppu…
+    .accesskey = i
+places-add-separator =
+    .label = Bæta við aðgreini
+    .accesskey = a
 places-view =
     .label = Skoða
     .accesskey = S
@@ -38,9 +62,75 @@ places-delete-domain-data =
 places-sortby-name =
     .label = Raða eftir nafni
     .accesskey = r
+# places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
+places-edit-bookmark =
+    .label = Breyta bókamerki
+    .accesskey = e
+places-edit-generic =
+    .label = Breyta…
+    .accesskey = e
+places-edit-folder =
+    .label = Endurnefna möppu…
+    .accesskey = E
+places-remove-folder =
+    .label =
+        { $count ->
+            [1] Fjarlægja möppu
+            [one] Fjarlægja möppu
+           *[other] Fjarlægja möppur
+        }
+    .accesskey = m
+places-edit-folder2 =
+    .label = Breyta möppu…
+    .accesskey = e
+places-delete-folder =
+    .label =
+        { $count ->
+            [1] Eyða möppu
+            [one] Eyða möppu
+           *[other] Eyða möppum
+        }
+    .accesskey = p
+# Managed bookmarks are created by an administrator and cannot be changed by the user.
+managed-bookmarks =
+    .label = Stýrð bókamerki
+# This label is used when a managed bookmarks folder doesn't have a name.
+managed-bookmarks-subfolder =
+    .label = Undirmappa
 # This label is used for the "Other Bookmarks" folder that appears in the bookmarks toolbar.
 other-bookmarks-folder =
     .label = Önnur bókamerki
+# Variables:
+# $count (number) - The number of elements being selected for removal.
+places-remove-bookmark =
+    .label =
+        { $count ->
+            [1] Fjarlægja bókamerki
+            [one] Fjarlægja bókamerki
+           *[other] Fjarlægja bókamerki
+        }
+    .accesskey = r
+places-show-in-folder =
+    .label = Sýna í möppu
+    .accesskey = m
+# Variables:
+# $count (number) - The number of elements being selected for removal.
+places-delete-bookmark =
+    .label =
+        { $count ->
+            [1] Eyða bókamerki
+            [one] Eyða bókamerki
+           *[other] Eyða bókamerkjum
+        }
+    .accesskey = y
+places-manage-bookmarks =
+    .label = Sýsla með bókamerki
+    .accesskey = m
+places-forget-about-this-site-confirmation-title = Gleymi þessu vefsvæði
+# Variables:
+# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
+places-forget-about-this-site-confirmation-message = Þessi aðgerð mun fjarlægja öll gögn sem tengjast { $hostOrBaseDomain }, þar á meðal vafurferil, lykilorðum, vafrakökum, skyndiminni og valkostum efnis. Ertu viss um að þú viljir halda áfram?
+places-forget-about-this-site-forget = Gleyma
 places-library =
     .title = Safn
     .style = width:700px; height:500px;

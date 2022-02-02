@@ -9,7 +9,10 @@ crashes-id = Skýrslu auðkenni
 crashes-send-date = Sent
 crashes-all-reports = Allar hrunskýrslur
 crashes-no-config = Ekki er búið að stilla þetta forrit til að birta hrunskýrslur.
+support-addons-title = Viðbætur
 support-addons-name = Nafn
+support-addons-type = Tegund
+support-addons-enabled = Virkt
 support-addons-version = Útgáfa
 support-addons-id = Auðkenni
 security-software-title = Öryggishugbúnaður
@@ -29,6 +32,7 @@ app-basics-title = Grunnupplýsingar forrits
 app-basics-name = Nafn
 app-basics-version = Útgáfa
 app-basics-build-id = Byggingarauðkenni
+app-basics-distribution-id = Dreifingarauðkenni
 app-basics-update-channel = Uppfærslurás
 # This message refers to the folder used to store updates on the device,
 # as in "Folder for updates". "Update" is a noun, not a verb.
@@ -39,6 +43,8 @@ app-basics-update-dir =
     }
 app-basics-update-history = Uppfærslusaga
 app-basics-show-update-history = Sýna uppfærslusögu
+# Represents the path to the binary used to start the application.
+app-basics-binary = Keyrsluskrá forrits
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Notandamappa
@@ -48,12 +54,18 @@ app-basics-enabled-plugins = Virk tengiforrit
 app-basics-build-config = Smíð stillingar
 app-basics-user-agent = Auðkenni forrits
 app-basics-os = Stýrikerfi
+app-basics-os-theme = Þema stýrikerfis
+# Rosetta is Apple's translation process to run apps containing x86_64
+# instructions on Apple Silicon. This should remain in English.
+app-basics-rosetta = Rosetta-umbreytt
 app-basics-memory-use = Notað minni
 app-basics-performance = Afköst
-app-basics-service-workers = Skráðir Service Workers
+app-basics-service-workers = Skráð Service Workers þjónustuferli
+app-basics-third-party = Einingar utanaðkomandi aðila
 app-basics-profiles = Notendur
 app-basics-launcher-process-status = Ræsiferli
 app-basics-multi-process-support = Margþráða gluggi
+app-basics-fission-support = Fission-gluggar (einangraðir)
 app-basics-remote-processes-count = Fjarvinnslur
 app-basics-enterprise-policies = Stefna fyrirtækisins
 app-basics-location-service-key-google = Google staðsetningarlykill
@@ -66,6 +78,12 @@ show-dir-label =
         [windows] Opna möppu
        *[other] Opna möppu
     }
+environment-variables-title = Umhverfisbreytur
+environment-variables-name = Heiti
+environment-variables-value = Gildi
+experimental-features-title = Tilraunaeiginleikar
+experimental-features-name = Heiti
+experimental-features-value = Gildi
 modified-key-prefs-title = Mikilvægar breyttar stillingar
 modified-prefs-name = Nafn
 modified-prefs-value = Gildi
@@ -83,12 +101,16 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Atburðaskrá fyrir ákvarðanir
 graphics-crash-guards-title = Óvirkar stillingar fyrir hrunvara
 graphics-workarounds-title = Leiðir framhjá villum
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Samskiptaregla glugga
+# Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
+graphics-desktop-environment = Skjáborðsumhverfi
 place-database-title = Gagnagrunnur fyrir staði
 place-database-integrity = Áreiðanleiki
 place-database-verify-integrity = Sannprófa áreiðanleika
-a11y-title = Auðveldað aðgengi
+a11y-title = Aukið aðgengi
 a11y-activated = Virkt
-a11y-force-disabled = Koma í veg fyrir aðgengi
+a11y-force-disabled = Koma í veg fyrir aukið aðgengi
 a11y-handler-used = Aðgengishjálpari notaður
 a11y-instantiator = Accessibility Instantiator
 library-version-title = Útgáfa forritasafns
@@ -103,6 +125,10 @@ sandbox-sys-call-tid = TID
 sandbox-sys-call-proc-type = Tegund ferlis
 sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Breytur
+troubleshoot-mode-title = Greina vandamál
+restart-in-troubleshoot-mode-label = Úrræðaleitarhamur…
+clear-startup-cache-title = Prófaðu að hreinsa skyndiminni ræsingar
+clear-startup-cache-label = Hreinsa skyndiminni ræsingar...
 startup-cache-dialog-title2 = Endurræsa { -brand-short-name } til að hreinsa skyndiminni ræsingar?
 startup-cache-dialog-body2 = Þetta mun ekki breyta stillingum þínum eða fjarlægja viðbætur.
 restart-button-label = Endurræsa
@@ -112,6 +138,7 @@ restart-button-label = Endurræsa
 audio-backend = Hljóðkerfi
 max-audio-channels = Hámarksfjöldi rása
 sample-rate = Æskileg safntíðni
+roundtrip-latency = Töf fram og til baka (staðalfrávik)
 media-title = Gögn
 media-output-devices-title = Útakstæki
 media-input-devices-title = Inntakstæki
@@ -124,6 +151,9 @@ media-device-format = Snið
 media-device-channels = Rásir
 media-device-rate = Hraði
 media-device-latency = Biðtími
+media-capabilities-title = Margmiðlunarhæfileikar
+# List all the entries of the database.
+media-capabilities-enumerate = Númera gagnagrunn
 
 ##
 
@@ -146,7 +176,9 @@ intl-regional-prefs = Svæðisstillingar
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
 
+remote-debugging-title = Fjarkembiforrit (Chromium Protocol)
 remote-debugging-accepting-connections = Samþykki tengingar
+remote-debugging-url = Vefslóð
 
 ##
 
@@ -222,9 +254,10 @@ gpu-device-id = Auðkenni tækis
 gpu-subsys-id = Auðkenni Subsys
 gpu-drivers = Reklar
 gpu-ram = RAM
+gpu-driver-vendor = Framleiðandi rekils
 gpu-driver-version = Útgáfa rekils
 gpu-driver-date = Dagsetning rekils
-gpu-active = Virkt
+gpu-active = Virkur
 webgl1-wsiinfo = Upplýsingar um WebGL 1 rekil WSI
 webgl1-renderer = WebGL 1 myndrekill
 webgl1-version = WebGL 1 útgáfa rekils
@@ -236,10 +269,14 @@ webgl2-version = WebGL 2 útgáfa rekils
 webgl2-driver-extensions = WebGL 2 reklaviðbætur
 webgl2-extensions = WebGL 2 viðbætur
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Sett á bannlista vegna þekktra vandamála: <a data-l10n-name="bug-link">villa { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Á svörtum lista; villukóði { $failureCode }
 d3d11layers-crash-guard = D3D11 Compositor
 glcontext-crash-guard = OpenGL
+wmfvpxvideo-crash-guard = WMF VPX myndafkóðari
 reset-on-next-restart = Endurstilla í næstu endurræsingu
 gpu-process-kill-button = Stöðva GPU ferli
 gpu-device-reset = Endurstilla tæki
@@ -259,10 +296,16 @@ can-sandbox-content = Content Process Sandboxing
 can-sandbox-media = Media Plugin Sandboxing
 content-sandbox-level = Content Process Sandbox Level
 effective-content-sandbox-level = Effective Content Process Sandbox Level
+content-win32k-lockdown-state = Win32k-læsingarástand (Lockdown State) fyrir efnisferli
 sandbox-proc-type-content = innihald
 sandbox-proc-type-file = innihald skráar
 sandbox-proc-type-media-plugin = margmiðlunar-tengiforrit
 sandbox-proc-type-data-decoder = gagnaafkóðari
+startup-cache-title = Skyndiminni ræsingar
+startup-cache-disk-cache-path = Slóð á diskminni
+startup-cache-ignore-disk-cache = Hunsa diskminni
+startup-cache-found-disk-cache-on-init = Fann diskminni á Init
+startup-cache-wrote-to-disk-cache = Skrifaði í diskminni
 launcher-process-status-0 = Virkt
 launcher-process-status-1 = Óvirkt vegna óhapps
 launcher-process-status-2 = Gert óvirkt með valdi
@@ -271,13 +314,30 @@ launcher-process-status-unknown = Óþekkt staða
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
 multi-process-windows = { $remoteWindows }/{ $totalWindows }
-async-pan-zoom = Ósamstillt Færa/Þysja
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Gert óvirkt af tilraun
+fission-status-experiment-treatment = Gert virkt af tilraun
+fission-status-disabled-by-e10s-env = Gert óvirkt af kerfisumhverfi
+fission-status-enabled-by-env = Gert virkt af kerfisumhverfi
+fission-status-disabled-by-env = Gert óvirkt af kerfisumhverfi
+fission-status-disabled-by-safe-mode = Gert óvirkt af öruggum ham
+fission-status-enabled-by-default = Sjálfgefið virkt
+fission-status-disabled-by-default = Sjálfgefið óvirkt
+fission-status-enabled-by-user-pref = Virkjað af notanda
+fission-status-disabled-by-user-pref = Gert óvirkt af notanda
+fission-status-disabled-by-e10s-other = E10s óvirkt
+fission-status-enabled-by-rollout = Gert virkt af útfærslu í áföngum
+async-pan-zoom = Ósamstillt Hliðrun/Aðdráttur
 apz-none = ekkert
 wheel-enabled = músa skrunhjól virkt
 touch-enabled = snertiskjár virkur
 drag-enabled = draga til flettistiku virk
 keyboard-enabled = lyklaborð virkt
 autoscroll-enabled = sjálfvirkt skrun virkjað
+zooming-enabled = mýkt klípa-aðdráttur virkt
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference
@@ -293,6 +353,19 @@ policies-error = Villa
 
 ## Printing section
 
+support-printing-title = Prentun
+support-printing-troubleshoot = Úrræðaleit
+support-printing-clear-settings-button = Hreinsa vistaðar prentstillingar
+support-printing-modified-settings = Breyttar prentstillingar
+support-printing-prefs-name = Heiti
+support-printing-prefs-value = Gildi
 
 ## Normandy sections
 
+support-remote-experiments-title = Fjartilraunir
+support-remote-experiments-name = Heiti
+support-remote-experiments-branch = Grein tilraunar
+support-remote-experiments-see-about-studies = Skoðaðu <a data-l10n-name="support-about-studies-link">about:studies</a> til að fá frekari upplýsingar, þar á meðal hvernig á að slökkva á einstökum tilraunum eða slökkva á því að { -brand-short-name } geti í framtíðinni keyrt tilteknar tegundir tilrauna.
+support-remote-features-title = Fjartengingareiginleikar
+support-remote-features-name = Heiti
+support-remote-features-status = Staða

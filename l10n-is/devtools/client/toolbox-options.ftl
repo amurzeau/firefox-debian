@@ -29,7 +29,7 @@ options-context-inspector = Inspector
 # The label for the checkbox option to show user agent styles
 options-show-user-agent-styles-label = Show Browser Styles
 options-show-user-agent-styles-tooltip =
-    .title = Turning this on will show default styles that are loaded by the browser.
+    .title = Að kveikja á þessu mun birta sjálfgefna stíla sem vafrinn hleður inn.
 # The label for the checkbox option to enable collapse attributes
 options-collapse-attrs-label = Truncate DOM attributes
 options-collapse-attrs-tooltip =
@@ -110,7 +110,7 @@ options-source-maps-label = Enable Source Maps
 options-source-maps-tooltip =
     .title = If you enable this option sources will be mapped in the tools.
 # The message shown for settings that trigger page reload
-options-context-triggers-page-refresh = * Current session only, reloads the page
+options-context-triggers-page-refresh = * Aðeins núverandi lota, endurhleður síðuna
 # The label for the checkbox that toggles the display of the platform data in the
 # Profiler i.e. devtools.profiler.ui.show-platform-data a boolean preference in about:config
 options-show-platform-data-label = Show Gecko platform data

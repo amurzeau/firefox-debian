@@ -137,6 +137,9 @@ addon-category-available-updates-title =
 addon-category-recent-updates = Paskiausiai atnaujinti
 addon-category-recent-updates-title =
     .title = Paskiausiai atnaujinti
+addon-category-sitepermission = Svetainių leidimai
+addon-category-sitepermission-title =
+    .title = Svetainių leidimai
 
 ## These are global warnings
 
@@ -282,18 +285,20 @@ preferences-addon-button =
 details-addon-button = Išsamiau
 release-notes-addon-button = Laidos apžvalga
 permissions-addon-button = Leidimai
-extension-enabled-heading = Įjungtas
-extension-disabled-heading = Išjungtas
-theme-enabled-heading = Įjungtas
-theme-disabled-heading = Išjungtas
+extension-enabled-heading = Įjungta
+extension-disabled-heading = Išjungta
+theme-enabled-heading = Įjungta
+theme-disabled-heading = Išjungta
 theme-monochromatic-heading = Spalvų rinkiniai
 theme-monochromatic-subheading = Ryškūs ir nauji spalvų rinkiniai iš „{ -brand-product-name }“. Pasiekiami ribotą laiką.
-plugin-enabled-heading = Įjungtas
-plugin-disabled-heading = Išjungtas
-dictionary-enabled-heading = Įjungtas
-dictionary-disabled-heading = Išjungtas
+plugin-enabled-heading = Įjungta
+plugin-disabled-heading = Išjungta
+dictionary-enabled-heading = Įjungta
+dictionary-disabled-heading = Išjungta
 locale-enabled-heading = Įjungta
 locale-disabled-heading = Išjungta
+sitepermission-enabled-heading = Įjungta
+sitepermission-disabled-heading = Išjungta
 always-activate-button = Visada aktyvinti
 never-activate-button = Niekada neaktyvinti
 addon-detail-author-label = Autorius
@@ -371,6 +376,7 @@ addon-permissions-optional = Papildomam funkcionalumui reikalingi leidimai:
 addon-permissions-learnmore = Sužinokite apie leidimus daugiau
 recommended-extensions-heading = Rekomenduojami priedai
 recommended-themes-heading = Rekomenduojami grafiniai apvalkalai
+addon-sitepermissions-required = Suteikia šias galimybes <span data-l10n-name="hostname">{ $hostname }</span>:
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Jaučiatės kūrybiškai? <a data-l10n-name="link">Sukurkite savo grafinį apvalkalą su „Firefox Color“.</a>
@@ -383,6 +389,7 @@ plugin-heading = Tvarkykite savo papildinius
 dictionary-heading = Tvarkykite savo žodynus
 locale-heading = Tvarkykite savo kalbas
 updates-heading = Tvarkykite savo naujinimus
+sitepermission-heading = Tvarkykite savo svetainių leidimus
 discover-heading = Individualizuokite savo „{ -brand-short-name }“
 shortcuts-heading = Tvarkyti sparčiuosius klavišus priedams
 default-heading-search-label = Rasti daugiau priedų

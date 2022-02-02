@@ -132,6 +132,9 @@ addon-category-available-updates-title =
 addon-category-recent-updates = Ĵusaj ĝisdatigoj
 addon-category-recent-updates-title =
     .title = Ĵusaj ĝisdatigoj
+addon-category-sitepermission = Permesoj por retejo
+addon-category-sitepermission-title =
+    .title = Permesoj por retejo
 
 ## These are global warnings
 
@@ -280,6 +283,8 @@ dictionary-enabled-heading = Aktiva
 dictionary-disabled-heading = Malaktiva
 locale-enabled-heading = Aktiva
 locale-disabled-heading = Malaktiva
+sitepermission-enabled-heading = Aktiva
+sitepermission-disabled-heading = Malaktiva
 always-activate-button = Ĉiam aktivigi
 never-activate-button = Neniam aktivigi
 addon-detail-author-label = Aŭtoro
@@ -356,6 +361,7 @@ addon-permissions-optional = Elekteblaj permesoj por aldonaj funkcioj:
 addon-permissions-learnmore = Pli da informo pri permesoj
 recommended-extensions-heading = Rekomenditaj etendaĵoj
 recommended-themes-heading = Rekomenditaj etosoj
+addon-sitepermissions-required = Ĝi donas jenajn kapablojn al <span data-l10n-name="hostname">{ $hostname }</span>:
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Ĉu vi kreemas? <a data-l10n-name="link">Kreu vian propran etoson per Firefox Color.</a>
@@ -368,6 +374,7 @@ plugin-heading = Administri viajn kromprogramojn
 dictionary-heading = Administri viajn vortarojn
 locale-heading = Administri lingvojn
 updates-heading = Administri viajn ĝisdatigojn
+sitepermission-heading = Administri viajn permesojn por retejoj
 discover-heading = Personecigu vian { -brand-short-name }
 shortcuts-heading = Administri alirklavojn de etendaĵoj
 default-heading-search-label = Serĉi pli da aldonaĵoj

@@ -9,6 +9,7 @@
 #   $addon-name (string) - Name of the add-on being reported
 abuse-report-dialog-title = Rapport for { $addon-name }
 abuse-report-title-extension = Rapporter denne utvidinga til { -vendor-short-name }
+abuse-report-title-sitepermission = Rapporter dette tillegget for nettstadløyve til { -vendor-short-name }
 abuse-report-title-theme = Rapporter dette temaet til { -vendor-short-name }
 abuse-report-subtitle = Kva er problemet?
 # Variables:
@@ -41,6 +42,7 @@ abuse-report-messagebar-submitting = Sender rapport for <span data-l10n-name="ad
 abuse-report-messagebar-submitted = Takk for at du sende inn ein rapport. Vil du fjerne <span data-l10n-name="addon-name">{ $addon-name }</span>?
 abuse-report-messagebar-submitted-noremove = Takk for at du sende inn ein rapport.
 abuse-report-messagebar-removed-extension = Takk for at du sende inn ein rapport. Du har fjerna utvidinga <span data-l10n-name="addon-name">{ $addon-name }</span>.
+abuse-report-messagebar-removed-sitepermission = Takk for at du sende inn ein rapport. Du har fjerna dette tillegget for nettstadløyve <span data-l10n-name="addon-name">{ $addon-name }</span>.
 abuse-report-messagebar-removed-theme = Takk for at du sende inn ein rapport. Du har fjerna temaet <span data-l10n-name="addon-name">{ $addon-name }</span>.
 abuse-report-messagebar-error = Det oppsto ein feil ved sending av rapporten for <span data-l10n-name="addon-name">{ $addon-name }</span>.
 abuse-report-messagebar-error-recent-submit = Rapporten for <span data-l10n-name="addon-name">{ $addon-name }</span> vart ikkje sendt fordi ein annan rapport nettopp vart sendt inn.
@@ -69,11 +71,15 @@ abuse-report-settings-suggestions-homepage = Endre startside og ny fane-sida
 abuse-report-deceptive-reason-v2 = Den gir seg ut for å vere noko den ikkje er
 abuse-report-deceptive-example = Døme: villeiande skildring eller bilde
 abuse-report-broken-reason-extension-v2 = Den fungerer ikk je, øydelegg nettstadar, eller gjer { -brand-product-name } treg
+abuse-report-broken-reason-sitepermission-v2 = Han fungerer ikkje, ødelegg nettstadar, eller gjer { -brand-product-name } treg
 abuse-report-broken-reason-theme-v2 = Den verkar ikkje eller øydelegg utsjånaden til nettsidene
 abuse-report-broken-example = Til dømes: Funksjonar er trege, vanskeleg å bruke, eller fungerar ikkje; delar av nettstadar vil ikkje laste eller ser uvanlege ut
 abuse-report-broken-suggestions-extension =
     Det høyrest ut som om du har identifisert ein feil. I tillegg til å sende inn ein rapport her, så er den beste måten å få retta funksjonell feil på å kontakte utvidingsutviklaren.
     <a data-l10n-name="support-link">Besøk nettstaden til utvidinga</a> for å få informasjon om utviklaren.
+abuse-report-broken-suggestions-sitepermission =
+    Det høyrest ut som om du har identifisert ein feil. I tillegg til å sende inn ein rapport her, så er den beste måten å få ein funksjonell feil løyst på å kontakte nettstadutviklaren.
+    <a data-l10n-name="support-link">Besøk nettstaden</a> for å få informasjon om utviklaren.
 abuse-report-broken-suggestions-theme =
     Det høyrest ut som om du har identifisert ein feil. I tillegg til å sende inn en rapport her, så er den beste måten
     å få retta funksjonelle feil på å kontakte temautviklaren.

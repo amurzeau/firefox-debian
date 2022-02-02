@@ -49,7 +49,11 @@ downloads-cmd-show-menuitem-2 =
 
 downloads-cmd-use-system-default =
   .label = Apri nel visualizzatore del sistema
-  .accesskey = v
+  .accesskey = n
+
+downloads-cmd-use-system-default-named =
+  .label = Apri in { $handler }
+  .accesskey = n
 
 downloads-cmd-always-use-system-default =
   .label = Apri sempre nel visualizzatore del sistema
@@ -59,6 +63,10 @@ downloads-cmd-always-use-system-default =
 # Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-open-similar-files =
   .label = Apri sempre file simili a questo
+  .accesskey = m
+
+downloads-cmd-always-use-system-default-named =
+  .label = Apri sempre in { $handler }
   .accesskey = m
 
 downloads-cmd-show-button =
@@ -120,6 +128,9 @@ downloads-cmd-clear-list =
 downloads-cmd-clear-downloads =
     .label = Cancella elenco download
     .accesskey = n
+downloads-cmd-delete-file =
+    .label = Elimina
+    .accesskey = E
 
 # This command is shown in the context menu when downloads are blocked.
 downloads-cmd-unblock =

@@ -137,6 +137,9 @@ addon-category-available-updates-title =
 addon-category-recent-updates = Mis à jour
 addon-category-recent-updates-title =
     .title = Mis à jour
+addon-category-sitepermission = Autorisations de site
+addon-category-sitepermission-title =
+    .title = Autorisations de site
 
 ## These are global warnings
 
@@ -363,6 +366,7 @@ addon-permissions-optional = Autorisations facultatives pour des fonctionnalité
 addon-permissions-learnmore = En savoir plus à propos des autorisations
 recommended-extensions-heading = Extensions recommandées
 recommended-themes-heading = Thèmes recommandés
+addon-sitepermissions-required = Accorder les capacités suivantes à <span data-l10n-name="hostname">{ $hostname }</span> :
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Vous avez la fibre créative ? <a data-l10n-name="link">Créez votre propre thème avec Firefox Color.</a>
@@ -375,6 +379,7 @@ plugin-heading = Gestion de vos plugins
 dictionary-heading = Gestion de vos dictionnaires
 locale-heading = Gestion des langues
 updates-heading = Gestion de vos mises à jour
+sitepermission-heading = Gestion de vos autorisations de site
 discover-heading = Personnalisez { -brand-short-name }
 shortcuts-heading = Gestion des raccourcis d’extensions
 default-heading-search-label = Découvrez davantage de modules

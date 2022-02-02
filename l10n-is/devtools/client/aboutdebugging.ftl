@@ -80,7 +80,7 @@ about-debugging-setup-title = Uppsetning
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Stilla tengileiðina sem þú vilt nota til að villuleita tækið þitt fjartengt.
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
-about-debugging-setup-this-firefox2 = Notaðu <a>{ about-debugging-this-firefox-runtime-name }</a> til að villuleita viðbætur og þjónustur í þessari útgáfu af { -brand-shorter-name }.
+about-debugging-setup-this-firefox2 = Notaðu <a>{ about-debugging-this-firefox-runtime-name }</a> til að villuleita viðbætur og þjónustuferli í þessari útgáfu af { -brand-shorter-name }.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Tengja tæki
 # USB section of the Setup page
@@ -156,6 +156,10 @@ about-debugging-runtime-service-workers =
 # Title of the processes category.
 about-debugging-runtime-processes =
     .name = Ferli
+# This string is displayed in the runtime page if the current configuration of the
+# target runtime is incompatible with service workers. "Learn more" points to MDN.
+# https://developer.mozilla.org/en-US/docs/Tools/about%3Adebugging#Service_workers_not_compatible
+about-debugging-runtime-service-workers-not-compatible = Stilling vafrans þíns er ekki samhæfð við þjónustuferli (Service Workers). <a>Frekari upplýsingar</a>
 # Text of a button displayed in Runtime pages for remote runtimes.
 # Clicking on the button will close the connection to the runtime.
 about-debugging-runtime-disconnect-button = Aftengja
@@ -168,7 +172,7 @@ about-debugging-connection-prompt-disable-button = Slökkva á tengingarkvaðnin
 # Clicking on the header of a debug target category will expand or collapse the debug
 # target items in the category. This text is used as ’title’ attribute of the header,
 # to describe this feature.
-about-debugging-collapse-expand-debug-targets = Fella saman/afþjappa
+about-debugging-collapse-expand-debug-targets = Fella saman/Fletta út
 
 # Debug Targets strings
 
@@ -182,6 +186,8 @@ about-debugging-debug-target-inspect-button = Skoða
 # Text of a button displayed in the "This Firefox" page, in the Temporary Extension
 # section. Clicking on the button will open a file picker to load a temporary extension
 about-debugging-tmp-extension-install-button = Hlaða inn tímabundinni viðbót...
+# Text displayed when trying to install a temporary extension in the "This Firefox" page.
+about-debugging-tmp-extension-install-error = Villa kom upp við tímabundna uppsetningu viðbótarinnar.
 # Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will reload the extension.
 about-debugging-tmp-extension-reload-button = Endurhlaða
@@ -223,6 +229,9 @@ about-debugging-worker-status-registering = Skráning
 # Displayed for service workers in runtime pages, to label the scope of a worker
 about-debugging-worker-scope =
     .label = Umfang
+# Displayed as title of the inspect button for zombie tabs (e.g. tabs loaded via a session restore).
+about-debugging-zombie-tab-inspect-action-disabled =
+    .title = Flipi er ekki fullhlaðinn og ekki hægt að skoða hann
 # Displayed as name for the Main Process debug target in the Processes category. Only for
 # remote runtimes, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-main-process-name = Aðalferli

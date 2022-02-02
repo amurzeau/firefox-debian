@@ -34,20 +34,16 @@ menu-quit =
             [windows] h
            *[other] C
         }
-
 # This menu-quit-mac string is only used on macOS.
 menu-quit-mac =
     .label = { -brand-shorter-name }dan chiqish
-
 # This menu-quit-button string is only used on Linux.
 menu-quit-button =
     .label = { menu-quit.label }
-
 # This menu-quit-button-win string is only used on Windows.
 menu-quit-button-win =
     .label = { menu-quit.label }
     .tooltip = { -brand-shorter-name }dan chiqish
-
 menu-about =
     .label = { -brand-shorter-name } haqida
     .accesskey = h
@@ -110,6 +106,9 @@ menu-file-go-offline =
 menu-edit =
     .label = Tahrirlash
     .accesskey = T
+menu-edit-find-in-page =
+    .label = Sahifadan topish…
+    .accesskey = t
 menu-edit-find-again =
     .label = Yana topish
     .accesskey = p
@@ -124,6 +123,9 @@ menu-view =
     .accesskey = K
 menu-view-toolbars-menu =
     .label = Asboblar paneli
+    .accesskey = A
+menu-view-customize-toolbar2 =
+    .label = Asboblar panelini sozlash…
     .accesskey = A
 menu-view-sidebar =
     .label = Yon panel
@@ -158,6 +160,9 @@ menu-view-page-style-no-style =
 menu-view-page-basic-style =
     .label = Asosiy sahifa uslubi
     .accesskey = A
+menu-view-repair-text-encoding =
+    .label = Matn shifrini tuzatish
+    .accesskey = s
 
 ## These should match what Safari and other Apple applications
 ## use on macOS.
@@ -206,6 +211,10 @@ menu-history-undo-window-menu =
 menu-bookmarks-menu =
     .label = Xatcho‘plar
     .accesskey = X
+menu-bookmarks-manage =
+    .label = Xatchoʻplarni boshqarish
+menu-bookmark-current-tab =
+    .label = Joriy varaqni xatchoʻplash
 menu-bookmark-edit =
     .label = Ushbu xatcho‘pni o‘zgartirish
 menu-bookmarks-all-tabs =
@@ -225,6 +234,15 @@ menu-tools =
 menu-tools-downloads =
     .label = Yuklab olishlar
     .accesskey = Y
+menu-tools-addons-and-themes =
+    .label = Qoʻshimcha va mavzular
+    .accesskey = Q
+menu-tools-fxa-sign-in2 =
+    .label = Hisobga kirish
+    .accesskey = H
+menu-tools-turn-on-sync2 =
+    .label = Sinxronizatsiyani yoqish
+    .accesskey = n
 menu-tools-sync-now =
     .label = Hozir sinxronlash
     .accesskey = s
@@ -237,6 +255,13 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Sahifa haqida ma’lumot
     .accesskey = u
+menu-settings =
+    .label = Sozlamalar
+    .accesskey =
+        { PLATFORM() ->
+            [windows] S
+           *[other] n
+        }
 menu-tools-layout-debugger =
     .label = Maket sozlagich
     .accesskey = L
@@ -254,15 +279,6 @@ menu-window-bring-all-to-front =
 # NOTE: For Engineers, any additions or changes to Help menu strings should
 # also be reflected in the related strings in appmenu.ftl. Those strings, by
 # convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
 # Example: appmenu-get-help
 #
 # These strings are duplicated to allow for different casing depending on
@@ -271,11 +287,23 @@ menu-window-bring-all-to-front =
 menu-help =
     .label = Yordam
     .accesskey = Y
+menu-get-help =
+    .label = Yordam olish
+    .accesskey = Y
+menu-help-more-troubleshooting-info =
+    .label = Boshqa tuzatish maʼlumotlari
+    .accesskey = t
 menu-help-report-site-issue =
     .label = Saytdagi muammo haqida xabar berish
 menu-help-feedback-page =
     .label = Mulohaza bildirish
     .accesskey = b
+menu-help-enter-troubleshoot-mode2 =
+    .label = Nosozliklarni tuzatish rejimi
+    .accesskey = N
+menu-help-exit-troubleshoot-mode =
+    .label = Nozozliklarni tuzatish rejimini oʻchirish
+    .accesskey = r
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

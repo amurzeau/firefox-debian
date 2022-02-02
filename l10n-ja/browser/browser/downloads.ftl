@@ -41,7 +41,7 @@ downloads-cmd-show-menuitem-mac =
 downloads-cmd-show-menuitem-2 =
     .label = { PLATFORM() ->
         [macos] Finder に表示
-       *[other] フォルダーに表示
+       *[other] 保存フォルダーを開く
     }
     .accesskey = F
 
@@ -83,18 +83,18 @@ downloads-cmd-always-open-similar-files =
 downloads-cmd-show-button-2 =
     .tooltiptext = { PLATFORM() ->
         [macos] Finder に表示
-       *[other] フォルダーに表示
+       *[other] 保存フォルダーを開く
     }
 
 downloads-cmd-show-panel-2 =
     .aria-label = { PLATFORM() ->
         [macos] Finder に表示
-       *[other] フォルダーに表示
+       *[other] 保存フォルダーを開く
     }
 downloads-cmd-show-description-2 =
     .value = { PLATFORM() ->
         [macos] Finder に表示
-       *[other] フォルダーに表示
+       *[other] 保存フォルダーを開く
     }
 
 downloads-cmd-show-downloads =
@@ -164,6 +164,9 @@ downloading-file-opens-in-minutes-and-seconds = { $minutes } 分 { $seconds } �
 downloading-file-opens-in-seconds = { $seconds } 秒後に開きます...
 downloading-file-opens-in-some-time = ダウンロードが完了したら開きます...
 
+downloading-file-click-to-open =
+  .value = ダウンロードが完了したら開きます
+
 ##
 
 # Displayed when hovering a download which is able to be retried by users,
@@ -184,6 +187,21 @@ downloads-history =
 # that we are showing the details of a single download.
 downloads-details =
     .title = ダウンロードの詳細
+
+## Displayed when a site attempts to automatically download many files.
+## Variables:
+##   $num (number) - Number of blocked downloads.
+##   $url (string) - The url of the suspicious site, stripped of http, https and www prefix.
+
+downloads-files-not-downloaded = { $num ->
+    [one] ファイルのダウンロードを中止しました。
+   *[other] {$num} 個のファイルのダウンロードを中止しました。
+}
+downloads-blocked-from-url = { $url } からのダウンロードをブロックしました。
+downloads-blocked-download-detailed-info = { $url } は複数のファイルを自動的にダウンロードさせようとしました。このサイトは壊れているか、スパムファイルをあなたの端末に保存させようとしています。
+
+##
+
 downloads-clear-downloads-button =
     .label = ダウンロード履歴を消去
     .tooltiptext = 完了、キャンセル、失敗したすべてのダウンロード履歴を消去します

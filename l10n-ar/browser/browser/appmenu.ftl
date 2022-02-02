@@ -125,6 +125,12 @@ whatsnew-panel-footer-checkbox =
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
+profiler-popup-button-idle =
+    .label = محلّل الأداء
+    .tooltiptext = سجّل تحليلًا بالأداء
+profiler-popup-button-recording =
+    .label = محلّل الأداء
+    .tooltiptext = يُسجّل المحلّل تحليلًا
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
@@ -173,6 +179,18 @@ profiler-popup-capture-shortcut =
 # devtools/client/performance-new/popup/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
+profiler-popup-presets-web-developer-label =
+    .label = مطوّري الوب
+profiler-popup-presets-firefox-label =
+    .label = { -brand-shorter-name }
+profiler-popup-presets-graphics-label =
+    .label = الرسوميات
+profiler-popup-presets-media-label =
+    .label = الوسائط
+profiler-popup-presets-networking-label =
+    .label = الشبكة
+profiler-popup-presets-custom-label =
+    .label = مخصّص
 
 ## History panel
 
