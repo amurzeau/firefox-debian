@@ -1,3 +1,15 @@
+firefox (97.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2022-04, also known as:
+    CVE-2022-22754, CVE-2022-22755, CVE-2022-22756, CVE-2022-22759,
+    CVE-2022-22760, CVE-2022-22761, CVE-2022-22764, CVE-2022-0511.
+
+  * debian/control*: Bump nss, rustc and cargo build dependencies.
+  * debian/browser.install.in: Install libipcclientcerts.so.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 09 Feb 2022 07:53:42 +0900
+
 firefox (96.0.3-1) unstable; urgency=medium
 
   * New upstream release.
