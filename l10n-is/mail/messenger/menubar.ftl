@@ -67,6 +67,9 @@ mail-uidensity-normal =
 mail-uidensity-touch =
     .label = Snertiskjár
     .accesskey = S
+menu-spaces-toolbar-button =
+    .label = Svæða-verkfæraslá
+    .accesskey = S
 
 ## File
 

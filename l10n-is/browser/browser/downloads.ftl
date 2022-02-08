@@ -14,11 +14,10 @@ downloads-panel =
 ##
 
 # The style attribute has the width of the Downloads Panel expressed using
-# a CSS unit. The longest labels that should fit are usually those of 
+# a CSS unit. The longest labels that should fit are usually those of
 # in-progress and blocked downloads.
-downloads-panel-list =
-    .style = width: 70ch
-
+downloads-panel-items =
+    .style = width: 35em
 downloads-cmd-pause =
     .label = Í bið
     .accesskey = b
@@ -29,24 +28,35 @@ downloads-cmd-cancel =
     .tooltiptext = Hætta við
 downloads-cmd-cancel-panel =
     .aria-label = Hætta við
-
 # This message is only displayed on Windows and Linux devices
 downloads-cmd-show-menuitem =
     .label = Opna möppu
     .accesskey = m
-  
 # This message is only displayed on macOS devices
 downloads-cmd-show-menuitem-mac =
     .label = Sýna í Finder
     .accesskey = F
-
+downloads-cmd-show-menuitem-2 =
+    .label =
+        { PLATFORM() ->
+            [macos] Sýna í Finder
+           *[other] Sýna í möppu
+        }
+    .accesskey = F
+downloads-cmd-use-system-default =
+    .label = Opna í skoðara kerfisins
+    .accesskey = k
+# We can use the same accesskey as downloads-cmd-always-open-similar-files.
+# Both should not be visible in the downloads context menu at the same time.
+downloads-cmd-always-use-system-default =
+    .label = Alltaf opna í skoðara kerfisins
+    .accesskey = A
 downloads-cmd-show-button =
     .tooltiptext =
         { PLATFORM() ->
             [macos] Sýna í Finder
            *[other] Opna möppu
         }
-
 downloads-cmd-show-panel =
     .aria-label =
         { PLATFORM() ->
@@ -59,7 +69,29 @@ downloads-cmd-show-description =
             [macos] Sýna í Finder
            *[other] Opna möppu
         }
-
+# We can use the same accesskey as downloads-cmd-always-use-system-default.
+# Both should not be visible in the downloads context menu at the same time.
+downloads-cmd-always-open-similar-files =
+    .label = Opna alltaf svipaðar skrár
+    .accesskey = f
+downloads-cmd-show-button-2 =
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Sýna í Finder
+           *[other] Sýna í möppu
+        }
+downloads-cmd-show-panel-2 =
+    .aria-label =
+        { PLATFORM() ->
+            [macos] Sýna í Finder
+           *[other] Sýna í möppu
+        }
+downloads-cmd-show-description-2 =
+    .value =
+        { PLATFORM() ->
+            [macos] Sýna í Finder
+           *[other] Sýna í möppu
+        }
 downloads-cmd-show-downloads =
     .label = Sýna niðurhalsmöppu
 downloads-cmd-retry =
@@ -76,47 +108,41 @@ downloads-cmd-remove-from-history =
     .label = Fjarlægja úr feril
     .accesskey = e
 downloads-cmd-clear-list =
-    .label = Hreinsa forskoðunarrúðu
+    .label = Hreinsa forskoðunarspjald
     .accesskey = a
 downloads-cmd-clear-downloads =
     .label = Hreinsa niðurhal
     .accesskey = n
-
+downloads-cmd-delete-file =
+    .label = Eyða
+    .accesskey = E
 # This command is shown in the context menu when downloads are blocked.
 downloads-cmd-unblock =
     .label = Leyfa niðurhal
     .accesskey = ð
-
 # This is the tooltip of the action button shown when malware is blocked.
 downloads-cmd-remove-file =
     .tooltiptext = Fjarlægja skrá
-
 downloads-cmd-remove-file-panel =
     .aria-label = Fjarlægja skrá
-
 # This is the tooltip of the action button shown when potentially unwanted
 # downloads are blocked. This opens a dialog where the user can choose
 # whether to unblock or remove the download. Removing is the default option.
 downloads-cmd-choose-unblock =
     .tooltiptext = Fjarlægja skrá eða leyfa niðurhal
-
 downloads-cmd-choose-unblock-panel =
     .aria-label = Fjarlægja skrá eða leyfa niðurhal
-
 # This is the tooltip of the action button shown when uncommon downloads are
 # blocked.This opens a dialog where the user can choose whether to open the
 # file or remove the download. Opening is the default option.
 downloads-cmd-choose-open =
     .tooltiptext = Opna eða fjarlægja skrá
-
 downloads-cmd-choose-open-panel =
     .aria-label = Opna eða fjarlægja skrá
-
 # Displayed when hovering a blocked download, indicates that it's possible to
 # show more information for user to take the next action.
 downloads-show-more-information =
     .value = Sýna meiri upplýsingar
-
 # Displayed when hovering a complete download, indicates that it's possible to
 # open the file using an app available in the system.
 downloads-open-file =
@@ -130,39 +156,66 @@ downloads-open-file =
 ##   $seconds (number) - Amount of seconds left till the file opens.
 ##   $minutes (number) - Amount of minutes till the file opens.
 
+downloading-file-opens-in-hours-and-minutes = Opnar eftir { $hours }klst { $minutes }m...
+downloading-file-opens-in-minutes = Opnast eftir { $minutes }mín...
+downloading-file-opens-in-minutes-and-seconds = Opnast eftir { $minutes }mín { $seconds }sek…
+downloading-file-opens-in-seconds = Opnast eftir { $seconds }sek...
+downloading-file-opens-in-some-time = Opnast þegar niðurhali er lokið…
+downloading-file-click-to-open =
+    .value = Opnast þegar niðurhali er lokið
+
 ##
 
 # Displayed when hovering a download which is able to be retried by users,
 # indicates that it's possible to download this file again.
 downloads-retry-download =
     .value = Reyna aftur niðurhal
-
 # Displayed when hovering a download which is able to be cancelled by users,
 # indicates that it's possible to cancel and stop the download.
 downloads-cancel-download =
     .value = Hætta við niðurhal
-
 # This string is shown at the bottom of the Downloads Panel when all the
 # downloads fit in the available space, or when there are no downloads in
 # the panel at all.
 downloads-history =
     .label = Sýna öll niðurhöl
     .accesskey = S
-
 # This string is shown at the top of the Download Details Panel, to indicate
 # that we are showing the details of a single download.
 downloads-details =
     .title = Upplýsingar um niðurhal
 
+## Displayed when a site attempts to automatically download many files.
+## Variables:
+##   $num (number) - Number of blocked downloads.
+##   $url (string) - The url of the suspicious site, stripped of http, https and www prefix.
+
+downloads-files-not-downloaded =
+    { $num ->
+        [one] Skrá ekki sótt.
+       *[other] { $num } skrár ekki sóttar.
+    }
+downloads-blocked-from-url = Lokað fyrir niðurhal frá { $url }.
+downloads-blocked-download-detailed-info = { $url } reyndi sjálfvirkt að sækja margar skrár. Vefsvæðið gæti verið bilað eða verið að reyna að geyma ruslskrár í tækinu þínu.
+
+##
+
 downloads-clear-downloads-button =
     .label = Hreinsa niðurhöl
     .tooltiptext = Hreinsa niðurhöl sem er lokið, hætt við eða sem mistókust
-
 # This string is shown when there are no items in the Downloads view, when it
 # is displayed inside a browser tab.
 downloads-list-empty =
     .value = Engin niðurhöl.
-
 # This string is shown when there are no items in the Downloads Panel.
 downloads-panel-empty =
     .value = Engin niðurhöl í þessari lotu.
+# This is displayed in an item at the bottom of the Downloads Panel when there
+# are more downloads than can fit in the list in the panel.
+#   $count (number) - number of files being downloaded that are not shown in the
+#                     panel list.
+downloads-more-downloading =
+    { $count ->
+        [one] { $count } skrá í viðbót að hlaðast inn
+       *[other] { $count } skrár í viðbót að hlaðast inn
+    }

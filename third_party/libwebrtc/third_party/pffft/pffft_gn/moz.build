@@ -15,7 +15,6 @@ FINAL_LIBRARY = "webrtc"
 LOCAL_INCLUDES += [
     "!/ipc/ipdl/_ipdlheaders",
     "/ipc/chromium/src",
-    "/ipc/glue",
     "/third_party/libwebrtc/",
     "/tools/profiler/public"
 ]
@@ -58,6 +57,15 @@ if CONFIG["OS_TARGET"] == "Linux":
     DEFINES["USE_OZONE"] = "1"
     DEFINES["USE_UDEV"] = True
     DEFINES["USE_X11"] = "1"
+    DEFINES["_FILE_OFFSET_BITS"] = "64"
+    DEFINES["_LARGEFILE64_SOURCE"] = True
+    DEFINES["_LARGEFILE_SOURCE"] = True
+    DEFINES["__STDC_CONSTANT_MACROS"] = True
+    DEFINES["__STDC_FORMAT_MACROS"] = True
+
+if CONFIG["OS_TARGET"] == "OpenBSD":
+
+    DEFINES["USE_GLIB"] = "1"
     DEFINES["_FILE_OFFSET_BITS"] = "64"
     DEFINES["_LARGEFILE64_SOURCE"] = True
     DEFINES["_LARGEFILE_SOURCE"] = True
@@ -107,6 +115,10 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "Darwin":
 
     DEFINES["_FORTIFY_SOURCE"] = "2"
 
+if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+
+    DEFINES["_FORTIFY_SOURCE"] = "2"
+
 if CONFIG["MOZ_DEBUG"] == "1" and CONFIG["OS_TARGET"] == "Android":
 
     DEFINES["_DEBUG"] = True
@@ -116,6 +128,10 @@ if CONFIG["MOZ_DEBUG"] == "1" and CONFIG["OS_TARGET"] == "Darwin":
     DEFINES["_DEBUG"] = True
 
 if CONFIG["MOZ_DEBUG"] == "1" and CONFIG["OS_TARGET"] == "Linux":
+
+    DEFINES["_DEBUG"] = True
+
+if CONFIG["MOZ_DEBUG"] == "1" and CONFIG["OS_TARGET"] == "OpenBSD":
 
     DEFINES["_DEBUG"] = True
 

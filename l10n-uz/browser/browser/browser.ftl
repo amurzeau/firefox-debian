@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -109,6 +109,9 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Kamroq yozib, koʻproq toping: manzillar panelidan { $engineName } orqali qidiring.
 urlbar-search-tips-redirect-2 = { $engineName } tavsiyalari va brauzer tarixini koʻrish uchun qidiruvni manzillar panelidan boshlang.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Kerakli narsalarni tezroq topish uchun bu yorliq ustiga bosing.
 
 ## Local search mode indicator labels in the urlbar
 
@@ -164,7 +167,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Bu safar quyidagi bilan izlash:
 search-one-offs-change-settings-compact-button =
@@ -184,6 +187,14 @@ search-one-offs-context-set-as-default-private =
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
+# Shown when adding new engines from the address bar shortcut buttons or context
+# menu, or from the search bar shortcut buttons.
+# Variables:
+#  $engineName (String): The name of the engine.
+search-one-offs-add-engine =
+    .label = { $engineName } qoʻshish
+    .tooltiptext = { $engineName } qidiruv tizimini qoʻshish
+    .aria-label = { $engineName } qidiruv tizimini qoʻshish
 # When more than 5 engines are offered by a web page, they are grouped in a
 # submenu using this as its label.
 search-one-offs-add-engine-menu =
@@ -272,6 +283,9 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
+browser-import-button2 =
+    .label = Xatchoʻplarni import qilish…
+    .tooltiptext = Xatchoʻplarni boshqa brauzerdan { -brand-short-name }ga import qilish
 
 ## WebRTC Pop-up notifications
 
@@ -337,6 +351,21 @@ urlbar-result-action-search-in-private-w-engine = Maxfiy oynada { $engine } yord
 urlbar-result-action-search-w-engine = { $engine } orqali izlash
 urlbar-result-action-switch-tab = Ichki oynaga o‘tish
 urlbar-result-action-visit = Kirish
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = { $engine } bilan qidirish uchun Tab tugmasini bosing
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = { $engine } yordamida toʻgʻridan-toʻgʻri manzil panelidan qidiring
+# Shows the result of a formula expression being calculated, the last = sign will be shown
+# as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result = = { $result }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -367,6 +396,8 @@ pointerlock-warning-no-domain = Bu hujat ko‘rsatkichingiz ustidan nazorat o‘
 
 ## Bookmarks panels, menus and toolbar
 
+bookmarks-manage-bookmarks =
+    .label = Xatchoʻplarni boshqarish
 bookmarks-toolbar-chevron =
     .tooltiptext = Ko‘proq xatcho‘plarni ko‘rsatish
 bookmarks-sidebar-content =
@@ -414,6 +445,9 @@ bookmarks-toolbar-placeholder =
     .title = Xatcho‘plar paneli bandlari
 bookmarks-toolbar-placeholder-button =
     .label = Xatcho‘plar paneli bandlari
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Joriy varaqni xatchoʻplash
 
 ## Library Panel items
 
@@ -428,9 +462,26 @@ save-to-pocket-button =
 
 ## Repair text encoding toolbar button
 
+repair-text-encoding-button =
+    .label = Matn shifrini tuzatish
+    .tooltiptext = Sahifa tarkibidan toʻgʻri matn shifrini taxmin qiling
 
 ## Customize Toolbar Buttons
 
+# Variables:
+#  $shortcut (String): keyboard shortcut to open the add-ons manager
+toolbar-addons-themes-button =
+    .label = Qoʻshimcha va mavzular
+    .tooltiptext = Qoʻshimcha va mavzularni boshqaring ({ $shortcut })
+# Variables:
+#  $shortcut (String): keyboard shortcut to open settings (only on macOS)
+toolbar-settings-button =
+    .label = Sozlamalar
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Sozlamalarni ({ $shortcut }) ochish
+           *[other] Sozlamalarni ochish
+        }
 
 ## More items
 
@@ -465,15 +516,21 @@ toolbar-button-new-private-window =
 ## EME notification panel
 
 eme-notifications-drm-content-playing = Ushbu saytdagi bir nechta audio yoki video DRM dasturiy ta’minotidan foydalanadi. Ushbu dasturiy ta’minot { -brand-short-name } imkoniyatlarini cheklashi mumkin.
+eme-notifications-drm-content-playing-manage = Sozlamalarni boshqarish
 
 ## Password save/update panel
 
+panel-save-update-username = Foydalanuvchi nomi
+panel-save-update-password = Parol
 
 ## Add-on removal warning
 
 
 ## Remote / Synced tabs
 
+remote-tabs-manage-account =
+    .label = Hisobni boshqarish
+remote-tabs-sync-now = Sinxronlash
 
 ##
 
@@ -495,9 +552,19 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = Paydo bo‘luvchi oynalar bloklanganda ushbu xabar ko‘rsatilmasin
     .accesskey = D
+edit-popup-settings =
+    .label = Qalquvchi oyna sozlamalarini boshqarish…
+    .accesskey = m
 picture-in-picture-hide-toggle =
     .label = Rasm ichida rasm rejimini yashirish
     .accesskey = H
+
+## Since the default position for PiP controls does not change for RTL layout,
+## right-to-left languages should use "Left" and "Right" as in the English strings,
+
+
+##
+
 
 # Navigator Toolbox
 
@@ -538,3 +605,6 @@ tabs-toolbar-new-tab =
 tabs-toolbar-list-all-tabs =
     .label = Barcha varaqlar roʻyxati
     .tooltiptext = Barcha varaqlar roʻyxati
+
+## Infobar shown at startup to suggest session-restore
+

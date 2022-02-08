@@ -18,6 +18,12 @@ permissions-session =
 permissions-allow =
     .label = Leyfa
     .accesskey = f
+permissions-button-off =
+    .label = Slökkva á
+    .accesskey = k
+permissions-button-off-temporarily =
+    .label = Slökkva tímabundið
+    .accesskey = t
 permissions-site-name =
     .label = Vefsvæði
 permissions-status =
@@ -52,6 +58,10 @@ permissions-capabilities-listitem-block =
     .value = Loka á
 permissions-capabilities-listitem-allow-session =
     .value = Leyfa í þessari vafralotu
+permissions-capabilities-listitem-off =
+    .value = Slökkt
+permissions-capabilities-listitem-off-temporarily =
+    .value = Slökkt tímabundið
 
 ## Invalid Hostname Dialog
 
@@ -60,6 +70,9 @@ permissions-invalid-uri-label = Sláðu inn löglegt vistfang
 
 ## Exceptions - Tracking Protection
 
+permissions-exceptions-etp-window =
+    .title = Undanþágur fyrir aukna rakningarvernd
+    .style = { permissions-window.style }
 permissions-exceptions-etp-desc = Þú hefur slökkt á vörnum á þessum vefsvæðum.
 
 ## Exceptions - Cookies
@@ -67,7 +80,7 @@ permissions-exceptions-etp-desc = Þú hefur slökkt á vörnum á þessum vefsv
 permissions-exceptions-cookie-window =
     .title = Undantekningar - Vefkökur og gögn vefsvæðis
     .style = { permissions-window.style }
-permissions-exceptions-cookie-desc = Þú getur skilgreint hvaða vefsvæði hafa leyfi eða ekki til að geyma vefkökur og gögn.  Settu inn nákvæma slóð fyrir það vefsvæði sem þú vilt sýsla með og smelltu svo á að loka, leyfa fyrir setu eða leyfa.
+permissions-exceptions-cookie-desc = Þú getur skilgreint hvaða vefsvæði hafa leyfi eða ekki til að geyma vefkökur og gögn.  Settu inn nákvæma slóð fyrir það vefsvæði sem þú vilt sýsla með og smelltu svo á að loka, leyfa fyrir lotu eða leyfa.
 
 ## Exceptions - HTTPS-Only Mode
 
@@ -126,6 +139,13 @@ permissions-site-location-disable-desc = Þetta kemur í veg fyrir að vefsvæð
 
 ## Site Permissions - Virtual Reality
 
+permissions-site-xr-window =
+    .title = Stillingar - Heimildir fyrir sýndarveruleika
+    .style = { permissions-window.style }
+permissions-site-xr-desc = Eftirfarandi vefsvæði hafa beðið um að fá að aðgang að sýndarveruleikatækjum. Þú getur skilgreint hvaða vefsvæði hafa aðgang að sýndarveruleikatækjunum þínum. Þú getur einnig lokað á nýjar beiðnir um aðgang að sýndarveruleikatækjum.
+permissions-site-xr-disable-label =
+    .label = Loka á nýjar beiðnir sem spyrja um aðgang að sýndarveruleikatækjum
+permissions-site-xr-disable-desc = Þetta kemur í veg fyrir að vefsvæði sem eru ekki hér fyrir ofan sendi beiðni um aðgang að sýndarveruleikatækjum. Ef lokað er á aðgang að sýndarveruleikatækjum gæti það haft áhrif á suma eiginleika vefsvæðis.
 
 ## Site Permissions - Camera
 

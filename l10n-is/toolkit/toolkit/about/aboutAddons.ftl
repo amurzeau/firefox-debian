@@ -24,6 +24,9 @@ list-empty-button =
 help-button = Viðbótastuðningur
 sidebar-help-button-title =
     .title = Viðbótastuðningur
+addons-settings-button = { -brand-short-name } stillingar
+sidebar-settings-button-title =
+    .title = { -brand-short-name } stillingar
 show-unsigned-extensions-button =
     .label = Ekki tókst að staðfesta sumar viðbætur
 show-all-extensions-button =
@@ -33,6 +36,9 @@ detail-version =
 detail-last-updated =
     .label = Síðast uppfært
 detail-contributions-description = Höfundur þessarar viðbótar biður þig um að styðja við áframhaldandi þróun með því að styrkja viðkomandi með smá upphæð.
+detail-contributions-button = Leggðu lið
+    .title = Leggðu þitt til þróunar þessarar viðbótar
+    .accesskey = L
 detail-update-type =
     .value = Sjálfvirkar uppfærslur
 detail-update-default =
@@ -46,7 +52,12 @@ detail-update-manual =
     .tooltiptext = Ekki setja sjálfvirkt inn uppfærslur
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Keyra í huliðsgluggum
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overridden by the user.
+detail-private-disallowed-label = Ekki leyfilegt í huliðsgluggum
 detail-private-disallowed-description2 = Þessi viðbót keyrir ekki á meðan huliðsvafri stendur. <a data-l10n-name="learn-more">Frekari upplýsingar</a>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Krefst aðgangs að huliðsgluggum
 detail-private-required-description2 = Þessi viðbót hefur aðgang að athöfnum þínum á netinu á meðan huliðsvafri stendur. <a data-l10n-name="learn-more">Frekari upplýsingar</a>
 detail-private-browsing-on =
     .label = Heimila
@@ -102,6 +113,9 @@ private-browsing-description2 =
     huliðsvafri stendur, nema þú leyfir það í stillingum og mun hún því ekki hafa aðgang að athöfnum þínum á netinu
     þar. Við höfum gert þessa breytingu til að halda huliðsvafri þínu leyndu.
     <label data-l10n-name="private-browsing-learn-more">Sjáðu hvernig á að hafa umsjón með stillingum viðbóta</label>
+addon-category-discover = Meðmæli
+addon-category-discover-title =
+    .title = Meðmæli
 addon-category-extension = Viðbætur
 addon-category-extension-title =
     .title = Viðbætur
@@ -123,6 +137,9 @@ addon-category-available-updates-title =
 addon-category-recent-updates = Nýlegar uppfærslur
 addon-category-recent-updates-title =
     .title = Nýlegar uppfærslur
+addon-category-sitepermission = Heimildir vefsvæðis
+addon-category-sitepermission-title =
+    .title = Heimildir vefsvæðis
 
 ## These are global warnings
 
@@ -212,19 +229,47 @@ header-back-button =
 
 ## Recommended add-ons page
 
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    Viðbætur og þemu eru eins og forrit fyrir vafrann þinn og þau gera þér
+    kleift vernda lykilorð, hlaða niður myndskeiðum, finna tilboð, loka fyrir 
+    pirrandi auglýsingar, breyta útliti vafrans þíns og margt fleira. Þessi litlu 
+    hugbúnaðarforrit eru oft þróuð af utanaðkomandi aðilum. Hér er úrval
+    sem { -brand-product-name } <a data-l10n-name="learn-more-trigger">mælir með</a> fyrir einstakt
+    öryggi, afköst og virkni.
 # Notice to make user aware that the recommendations are personalized.
 discopane-notice-recommendations =
     Sumar af þessum ráðleggingum eru sérsniðnar. Þær eru byggðar á öðrum
     viðbótum sem þú hefur sett upp, stillingum persónusniðs og notkunartölfræði.
+discopane-notice-learn-more = Frekari upplýsingar
+privacy-policy = Meðferð persónuupplýsinga
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
 #   $author (string) - The name of the add-on developer.
 created-by-author = eftir <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Notendur: { $dailyUsers }
 install-extension-button = Bæta við { -brand-product-name }
+install-theme-button = Setja upp þema
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Stjórna
+find-more-addons = Finna fleiri viðbætur
+find-more-themes = Finna fleiri þemu
+# This is a label for the button to open the "more options" menu, it is only
+# used for screen readers.
+addon-options-button =
+    .aria-label = Fleiri valkostir
 
 ## Add-on actions
 
+report-addon-button = Tilkynna
 remove-addon-button = Fjarlægja
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Ekki er hægt að fjarlægja <a data-l10n-name="link">Af hverju?</a>
 disable-addon-button = Óvirkja
 enable-addon-button = Virkja
 # This is used for the toggle on the extension card, it's a checkbox and this
@@ -236,21 +281,71 @@ preferences-addon-button =
         [windows] Valkostir
        *[other] Kjörstillingar
     }
+details-addon-button = Nánar
+release-notes-addon-button = Útgáfuupplýsingar
+permissions-addon-button = Heimildir
 extension-enabled-heading = Virkt
 extension-disabled-heading = Óvirkt
+theme-enabled-heading = Virkt
+theme-disabled-heading = Óvirkt
+theme-monochromatic-heading = Litasett
+theme-monochromatic-subheading = Lífleg ný litasett frá { -brand-product-name }. Í boði í takmarkaðan tíma.
 plugin-enabled-heading = Virkt
 plugin-disabled-heading = Óvirkt
+dictionary-enabled-heading = Virkt
+dictionary-disabled-heading = Óvirkt
+locale-enabled-heading = Virkt
+locale-disabled-heading = Óvirkt
+sitepermission-enabled-heading = Virkt
+sitepermission-disabled-heading = Óvirkt
+always-activate-button = Alltaf virkt
+never-activate-button = Aldrei virkt
+addon-detail-author-label = Höfundur
+addon-detail-version-label = Útgáfa
+addon-detail-last-updated-label = Síðast uppfært
+addon-detail-homepage-label = Heimasíða
+addon-detail-rating-label = Einkunn
 # Message for add-ons with a staged pending update.
 install-postponed-message = Þessi viðbót verður uppfærð þegar { -brand-short-name } endurræsir.
+install-postponed-button = Uppfæra núna
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Einkunn { NUMBER($rating, maximumFractionDigits: 1) } af 5 mögulegum
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (óvirkt)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } umsögn
+       *[other] { $numberOfReviews } umsagnir
+    }
 
 ## Pending uninstall message bar
 
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> hefur verið fjarlægt.
+pending-uninstall-undo-button = Afturkalla
+addon-detail-updates-label = Leyfa sjálfvirkar uppfærslur
+addon-detail-updates-radio-default = Sjálfgefið
+addon-detail-updates-radio-on = Ǻ
+addon-detail-updates-radio-off = Af
+addon-detail-update-check-label = Leita að uppfærslum
+install-update-button = Uppfæra
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
     .title = Leyfilegt í huliðsgluggum
     .aria-label = { addon-badge-private-browsing-allowed2.title }
 addon-detail-private-browsing-help = Þegar það er leyft, hefur þessi viðbót aðgang að athöfnum þínum á netinu á meðan huliðsvafri stendur. <a data-l10n-name="learn-more">Frekari upplýsingar</a>
+addon-detail-private-browsing-allow = Leyfa
+addon-detail-private-browsing-disallow = Ekki leyfa
 
 ## This is the tooltip text for the recommended badges for an extension in about:addons. The
 ## badge is a small icon displayed next to an extension when it is recommended on AMO.
@@ -269,8 +364,20 @@ addon-badge-verified2 =
 
 ##
 
+available-updates-heading = Tiltækar uppfærslur
+recent-updates-heading = Nýlegar uppfærslur
+release-notes-loading = Hleður…
+release-notes-error = Því miður kom upp villa við að sýna útgáfuupplýsingar.
 addon-permissions-empty = Þessi viðbót þarf engar heimildir
+addon-permissions-required = Nauðsynlegar heimildir fyrir kjarnavirkni:
+addon-permissions-optional = Valfrjálsar heimildir fyrir aukna virkni:
+addon-permissions-learnmore = Frekari upplýsingar um heimildir
 recommended-extensions-heading = Tillögur að viðbótum
+recommended-themes-heading = Þemu sem mælt er með
+addon-sitepermissions-required = Veitir eftirfarandi eiginleika til <span data-l10n-name="hostname">{ $hostname }</span>:
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Finnst þér þú vera skapandi? <a data-l10n-name="link">Búðu til þitt eigið þema með Firefox Color.</a>
 
 ## Page headings
 
@@ -279,6 +386,11 @@ theme-heading = Stjórnborð þema
 plugin-heading = Stjórnborð tengiforrita
 dictionary-heading = Stjórnborð orðabóka
 locale-heading = Stjórnborð tungumála
+updates-heading = Sýsla með uppfærslurnar þínar
+sitepermission-heading = Sýsla með heimildir þínar fyrir vefsvæði
+discover-heading = Persónugerðu þitt eintak af { -brand-short-name }
+shortcuts-heading = Sýsla með flýtilykla viðbóta
+default-heading-search-label = Finna fleiri viðbætur
 addons-heading-search-input =
     .placeholder = Leita á addons.mozilla.org
 addon-page-options-button =

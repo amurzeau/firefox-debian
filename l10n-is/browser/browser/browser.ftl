@@ -56,7 +56,7 @@ urlbar-services-notification-anchor =
 urlbar-web-notification-anchor =
     .tooltiptext = Breyta hvort vefsvæði getur sent þér tilkynningar
 urlbar-midi-notification-anchor =
-    .tooltiptext = Opna MIDI flipa
+    .tooltiptext = Opna MIDI-spjald
 urlbar-eme-notification-anchor =
     .tooltiptext = Sýsla með notkun á DRM hugbúnaði
 urlbar-web-authn-anchor =
@@ -302,16 +302,16 @@ identity-description-weak-cipher-risk = Aðrir geta skoðað þessar upplýsinga
 identity-description-active-blocked = { -brand-short-name } hefur lokað á suma hluta á þessari síðu sem eru ekki öruggir. <label data-l10n-name="link">Fræðast meira</label>
 identity-description-passive-loaded = Tengingin við þetta vefsvæði er ekki lokuð og upplýsingar sem þú sendir gætu aðrir skoðað.
 identity-description-passive-loaded-insecure = Þetta vefsvæði inniheldur gögn sem eru ekki örugg (eins og myndir). <label data-l10n-name="link">Fræðast meira</label>
-identity-description-passive-loaded-mixed = Þótt { -brand-short-name } hafi lokað á suma hluta, er ennþá innihald á síðunni sem er ekki öruggt (eins og myndir). <label data-l10n-name="link">Fræðast meira</label>
+identity-description-passive-loaded-mixed = Þótt { -brand-short-name } hafi lokað á sumt efni, er ennþá efni á síðunni sem er ekki öruggt (eins og t.d. myndir). <label data-l10n-name="link">Fræðast meira</label>
 identity-description-active-loaded = Þetta vefsvæði inniheldur gögn sem eru ekki örugg (eins og skriftur) og tengingin er ekki lokuð.
 identity-description-active-loaded-insecure = Þær upplýsingar sem þú gefur upp á þessu vefsvæði gætu aðrir skoðað (til dæmis lykilorð, skilaboð, greiðslukort, og fleira).
 identity-learn-more =
     .value = Fræðast meira
 identity-disable-mixed-content-blocking =
-    .label = Hætta við vörn í bili
-    .accesskey = H
+    .label = Slökkva á vernd í bili
+    .accesskey = S
 identity-enable-mixed-content-blocking =
-    .label = Virkja vernd
+    .label = Virkja verndun
     .accesskey = e
 identity-more-info-link-text =
     .label = Nánari upplýsingar
@@ -398,7 +398,7 @@ sharing-warning-screen = Þú ert að deila öllum skjánum þínum. Annað fól
 sharing-warning-proceed-to-tab =
     .label = Halda áfram á flipa
 sharing-warning-disable-for-session =
-    .label = Slökkva á deilivörn fyrir þessa setu
+    .label = Slökkva á deilivörn fyrir þessa lotu
 
 ## DevTools F12 popup
 
@@ -559,7 +559,7 @@ crashed-subframe-submit =
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-manage-bookmarks =
-    .label = Stjórna bókamerkjum
+    .label = Sýsla með bókamerki
 bookmarks-recent-bookmarks-panel-subheader = Nýleg bókamerki
 bookmarks-toolbar-chevron =
     .tooltiptext = Sýna fleiri bókamerki
@@ -781,7 +781,7 @@ navbar-library =
 navbar-search =
     .title = Leita
 navbar-accessibility-indicator =
-    .tooltiptext = Aðgengi virkjað
+    .tooltiptext = Aukið aðgengi virkjað
 # Name for the tabs toolbar as spoken by screen readers. The word
 # "toolbar" is appended automatically and should not be included in
 # in the string
@@ -796,5 +796,5 @@ tabs-toolbar-list-all-tabs =
 ## Infobar shown at startup to suggest session-restore
 
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
-restore-session-startup-suggestion-message = <strong>Opna fyrri flipa?</strong> Þú getur endurheimt fyrri setu þína úr { -brand-short-name } forritavalmyndinni <img data-l10n-name="icon"/>, undir Ferill-færslunni.
+restore-session-startup-suggestion-message = <strong>Opna fyrri flipa?</strong> Þú getur endurheimt fyrri lotu þína úr { -brand-short-name } forritavalmyndinni <img data-l10n-name="icon"/>, undir Ferill-færslunni.
 restore-session-startup-suggestion-button = Sýna mér hvernig

@@ -13,8 +13,8 @@ remove-address-row-button =
 address-input-type-aria-label =
     { $count ->
         [0] { $type }
-        [one] { $type } með einu póstfangi, notaðu vinstri örvatakkann til að gera það virkt.
-       *[other] { $type } með { $count } póstföng, notaðu vinstri örvatakkann til að gera þau virk.
+        [one] { $type } með einu póstfangi, notaðu vinstri örvahnappinn til að gera það virkt.
+       *[other] { $type } með { $count } póstföng, notaðu vinstri örvahnappinn til að gera þau virk.
     }
 #   $email (String) - the email address
 #   $count (Number) - the number of address pills currently present in the addressing row
@@ -240,8 +240,47 @@ encrypted-bcc-ignore-button = Skilið
 compose-tool-button-remove-text-styling =
     .tooltiptext = Fjarlægja stíl texta
 
-## FileLink messages
+## FileLink
 
+
+# Template
+
+# A line of text describing how many uploaded files have been appended to this
+# message. Emphasis should be on sharing as opposed to attaching. This item is
+# used as a header to a list, hence the colon.
+cloud-file-count-header =
+    { $count ->
+        [one] Ég hef tengt { $count } skrá við þennan tölvupóst:
+       *[other] Ég hef tengt { $count } skrár við þennan tölvupóst:
+    }
+# A text used in a footer, instructing the reader where to find additional
+# information about the used service providers.
+cloud-file-service-provider-footer =
+    { $count ->
+        [one] Frekari upplýsingar um { $lastLink }.
+       *[other] Frekari upplýsingar um { $firstLinks } og { $lastLink }.
+    }
+# Tooltip for an icon, indicating that the link is protected by a password.
+cloud-file-tooltip-password-protected-link = Lykilorðsvarinn tengill
+# Used in a list of stats about a specific file
+# Service - the used service provider to host the file (CloudFile Service: BOX.com)
+# Size - the size of the file (Size: 4.2 MB)
+# Link - the link to the file (Link: https://some.provider.com)
+# Expiry Date - stating the date the link will expire (Expiry Date: 12.12.2022)
+# Download Limit - stating the maximum allowed downloads, before the link becomes invalid
+#                  (Download Limit: 6)
+cloud-file-template-service = CloudFile-þjónusta:
+cloud-file-template-size = Stærð:
+cloud-file-template-link = Tengill:
+cloud-file-template-password-protected-link = Lykilorðsvarinn tengill:
+cloud-file-template-expiry-date = Fyrningardagur:
+cloud-file-template-download-limit = Niðurhalstakmörk:
+
+# Messages
+
+# $provider (string) - name of the online storage service that reported the error
+cloud-file-connection-error-title = Villa í tengingu
+cloud-file-connection-error = { -brand-short-name } er ótengt. Gat ekki tengst { $provider }.
 # $provider (string) - name of the online storage service that reported the error
 # $filename (string) - name of the file that was uploaded and caused the error
 cloud-file-upload-error-with-custom-message-title = Innsending á { $filename } til { $provider } mistókst

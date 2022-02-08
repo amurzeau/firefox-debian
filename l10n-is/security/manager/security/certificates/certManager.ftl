@@ -6,6 +6,8 @@ certmgr-title =
     .title = Umsýsla skilríkja
 certmgr-tab-mine =
     .label = Skilríkin þín
+certmgr-tab-remembered =
+    .label = Ákvarðanir vegna auðkenninga
 certmgr-tab-people =
     .label = Fólk
 certmgr-tab-servers =
@@ -15,6 +17,7 @@ certmgr-tab-ca =
 certmgr-mine = Skilríki frá stofnunum sem auðkenna þig
 certmgr-remembered = Þessi skilríki eru notuð til að auðkenna þig á vefsvæðum
 certmgr-people = Skilríki sem auðkenna þetta fólk
+certmgr-server = Þessar færslur auðkenna undantekningar á villum í skilríkjum netþjóna
 certmgr-ca = Skilríki sem auðkenna þessar vottunarstöðvar
 certmgr-edit-ca-cert =
     .title = Breyta stillingum CA skilríkja trausts
@@ -27,6 +30,8 @@ certmgr-edit-cert-trust-email =
 certmgr-delete-cert =
     .title = Eyða skilríki
     .style = width: 48em; height: 24em;
+certmgr-cert-host =
+    .label = Hýsilvél
 certmgr-cert-name =
     .label = Nafn skilríkis
 certmgr-cert-server =
@@ -119,6 +124,10 @@ delete-user-cert-title =
     .title = Eyða skilríkjum
 delete-user-cert-confirm = Ertu viss um að þú viljir eyða þessum skilríkjum?
 delete-user-cert-impact = Ef þú eyðir þínum eigin skilríkjum geturðu ekki lengur notað þau til að auðkenna sjálfan þig.
+delete-ssl-override-title =
+    .title = Eyða undantekningu skilríkja netþjóns
+delete-ssl-override-confirm = Ertu viss um að viljir eyða þessari undantekningu netþjóns?
+delete-ssl-override-impact = EF þú eyðir undantekningu netþjóns, gerirðu aftur virkar venjulegar öryggisathuganir á netþjónum og gerir kröfur um að þeir noti gild skilríki.
 delete-ca-cert-title =
     .title = Eyða eða vantreysta CA skilríkjum
 delete-ca-cert-confirm = Þú hefur valið að eyða CA skilríkjum. Ef þetta er innbyggð skilríki mun allt traust verða fjarlægt, sem hefur sömu áhrif. Ertu viss um að þú viljir eyða eða vantreysta?
@@ -133,11 +142,17 @@ delete-email-cert-impact = Ef þú eyðir skilríki notanda, muntu ekki lengur g
 #   $serialNumber : the serial number of the cert in AA:BB:CC hex format.
 cert-with-serial =
     .value = Skilríki með raðnúmer: { $serialNumber }
+# Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
+send-no-client-certificate = Senda ekkert skilríki fyrir biðlara
 # Used when no cert is stored for an override
 no-cert-stored-for-override = (Ekki geymt)
+# When a certificate is unavailable (for example, it has been deleted or the token it exists on has been removed).
+certificate-not-available = (ekki tiltækt)
 
 ## Used to show whether an override is temporary or permanent
 
+permanent-override = Varanlegt
+temporary-override = Tímabundið
 
 ## Add Security Exception dialog
 

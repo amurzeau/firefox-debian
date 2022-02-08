@@ -141,6 +141,9 @@ addon-category-available-updates-title =
 addon-category-recent-updates = Seneste opdateringer
 addon-category-recent-updates-title =
     .title = Seneste opdateringer
+addon-category-sitepermission = Websteds-tilladelser
+addon-category-sitepermission-title =
+    .title = Websteds-tilladelser
 
 ## These are global warnings
 
@@ -296,6 +299,8 @@ dictionary-enabled-heading = Aktiveret
 dictionary-disabled-heading = Deaktiveret
 locale-enabled-heading = Aktiveret
 locale-disabled-heading = Deaktiveret
+sitepermission-enabled-heading = Aktiveret
+sitepermission-disabled-heading = Deaktiveret
 always-activate-button = Aktiver altid
 never-activate-button = Aktiver aldrig
 addon-detail-author-label = Udvikler
@@ -372,6 +377,7 @@ addon-permissions-optional = Valgfrie tilladelser for yderligere funktionalitet:
 addon-permissions-learnmore = Læs mere om tilladelser
 recommended-extensions-heading = Anbefalede udvidelser
 recommended-themes-heading = Anbefalede temaer
+addon-sitepermissions-required = Tilføjer følgende funktioner til <span data-l10n-name="hostname">{ $hostname }</span>:
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Er du i det kreative hjørne? <a data-l10n-name="link">Byg dit eget tema med Firefox Color.</a>
@@ -384,6 +390,7 @@ plugin-heading = Håndter dine plugins
 dictionary-heading = Håndter dine ordbøger
 locale-heading = Håndter dine sprog
 updates-heading = Håndter dine opdateringer
+sitepermission-heading = Håndter websteds-tilladelser
 discover-heading = Tilpas { -brand-short-name }
 shortcuts-heading = Håndter genveje til dine udvidelser
 default-heading-search-label = Find flere udvidelser

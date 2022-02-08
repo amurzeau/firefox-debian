@@ -165,6 +165,11 @@ newtab-label-sponsored = { $sponsorOrSource } · Pesan Sponsor
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
 newtab-label-sponsored-by = Disponsori oleh { $sponsor }
+# This string is used under the image of story cards to indicate source and time to read
+# Variables:
+#  $source (String): This is the name of a company or their domain
+#  $timeToRead (Number): This is the estimated number of minutes to read this story
+newtab-label-source-read-time = { $source } ・ { $timeToRead } mnt
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -225,6 +230,8 @@ newtab-pocket-pocket-firefox-family = { -pocket-brand-name } adalah bagian dari 
 # A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save-to-pocket = Simpan ke { -pocket-brand-name }
 newtab-pocket-saved-to-pocket = Disimpan di { -pocket-brand-name }
+# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
+newtab-pocket-load-more-stories-button = Muat lebih banyak cerita
 
 ## Pocket Final Card Section.
 ## This is for the final card in the Pocket grid.

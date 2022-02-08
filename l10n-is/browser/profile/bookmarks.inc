@@ -23,6 +23,7 @@
 
 # LOCALIZATION NOTE (firefox_get_help):
 # link title for https://www.mozilla.org/en-US/firefox/help/
+#define firefox_get_help Fá hjálp
 
 # LOCALIZATION NOTE (firefox_customize):
 # link title for https://www.mozilla.org/en-US/firefox/customize/
@@ -46,7 +47,7 @@
 
 # LOCALIZATION NOTE (bugzilla):
 # Nightly builds only, link title for https://bugzilla.mozilla.org/
-#define bugzilla Mozilla villu skráning
+#define bugzilla Mozilla villuskráning
 
 # LOCALIZATION NOTE (mdn):
 # Nightly builds only, link title for https://developer.mozilla.org/

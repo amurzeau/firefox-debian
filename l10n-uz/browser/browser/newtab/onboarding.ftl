@@ -44,6 +44,11 @@ onboarding-multistage-set-default-header = { -brand-short-name }ni <span data-l1
 onboarding-multistage-set-default-subtitle = Internetda ishlash tez, xavfsiz va maxfiy.
 onboarding-multistage-set-default-primary-button-label = Asosiy brauzer deb tayinlash
 onboarding-multistage-set-default-secondary-button-label = Hozir emas
+# The "settings" here refers to "Windows 10 Settings App" and not the browser's
+onboarding-multistage-pin-default-waiting-subtitle = Sozlamalar ochiq paytda brauzerdan { -brand-short-name }ni tanlang
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = Bu yerda keltirilgan saytlar ushbu qurilmada topilgan. { -brand-short-name } siz import qilishni tanlamaguningizcha boshqa brauzerdagi maʼlumotlarni saqlamaydi yoki sinxronlashtirmaydi.
 
 ## Multistage onboarding strings (about:welcome pages)
 
@@ -111,6 +116,10 @@ mr1-onboarding-default-header = { -brand-short-name } asosiy brauzerim boʻlsin
 
 ## Multistage MR1 onboarding strings (about:welcome pages)
 
+# Automatic theme uses operating system color settings
+mr2-onboarding-theme-label-auto = Avtomatik
+# System theme uses operating system color settings
+mr1-onboarding-theme-label-system = Tizim mavzusi
 
 ## Please make sure to split the content of the title attribute into lines whose
 ## width corresponds to about 40 Latin characters, to ensure that the tooltip

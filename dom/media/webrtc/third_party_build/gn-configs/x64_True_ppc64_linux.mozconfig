@@ -1,0 +1,4 @@
+ac_add_options --enable-debug
+ac_add_options --target=powerpc64le-unknown-linux-gnu
+
+mk_add_options MOZ_OBJDIR=obj-x64_True_ppc64_linux

@@ -43,9 +43,19 @@ downloads-cmd-show-menuitem-2 =
            *[other] 폴더에서 보기
         }
     .accesskey = F
+
+## Displayed in the downloads context menu for files that can be opened.
+## Variables:
+##   $handler (String) - The name of the mime type's default file handler.
+##   Example: "Notepad", "Acrobat Reader DC", "7-Zip File Manager"
+
 downloads-cmd-use-system-default =
     .label = 시스템 뷰어에서 열기
     .accesskey = V
+# This version is shown when the download's mime type has a valid file handler.
+downloads-cmd-use-system-default-named =
+    .label = { $handler }에서 열기
+    .accesskey = I
 # We can use the same accesskey as downloads-cmd-always-open-similar-files.
 # Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-use-system-default =
@@ -69,10 +79,19 @@ downloads-cmd-show-description =
             [macos] Finder에서 보기
            *[other] 상위 폴더 열기
         }
+# We can use the same accesskey as downloads-cmd-always-open-similar-files.
+# Both should not be visible in the downloads context menu at the same time.
+# This version is shown when the download's mime type has a valid file handler.
+downloads-cmd-always-use-system-default-named =
+    .label = 항상 { $handler }에서 열기
+    .accesskey = w
+
+##
+
 # We can use the same accesskey as downloads-cmd-always-use-system-default.
 # Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-open-similar-files =
-    .label = 항상 유사한 파일 열기
+    .label = 항상 이 파일 유형 열기
     .accesskey = w
 downloads-cmd-show-button-2 =
     .tooltiptext =
@@ -112,6 +131,9 @@ downloads-cmd-clear-list =
     .accesskey = a
 downloads-cmd-clear-downloads =
     .label = 다운로드 정리
+    .accesskey = D
+downloads-cmd-delete-file =
+    .label = 삭제
     .accesskey = D
 # This command is shown in the context menu when downloads are blocked.
 downloads-cmd-unblock =
@@ -159,7 +181,7 @@ downloading-file-opens-in-minutes-and-seconds = { $minutes }분 { $seconds }초 
 downloading-file-opens-in-seconds = { $seconds }초 후 열림…
 downloading-file-opens-in-some-time = 완료 후 열림…
 downloading-file-click-to-open =
-    .value = 완료 후 열림
+    .value = 완료 후 열기
 
 ##
 

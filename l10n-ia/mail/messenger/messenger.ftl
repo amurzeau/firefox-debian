@@ -169,3 +169,22 @@ no-reply-reply-anyway-button = Responder comocunque
 ## error messages
 
 decrypt-and-copy-failures = { $failures } de { $total } messages non pote esser decryptate e non era copiate.
+
+## Spaces toolbar
+
+spaces-toolbar =
+    .toolbarname = Barra del spatios
+spaces-toolbar-button-mail =
+    .title = Passar al scheda del posta
+spaces-toolbar-button-address-book =
+    .title = Passar al scheda del libro del adresses
+spaces-toolbar-button-calendar =
+    .title = Passar al scheda del agenda
+spaces-toolbar-button-tasks =
+    .title = Passar al scheda del activitate
+spaces-toolbar-button-chat =
+    .title = Passar al scheda del chat
+spaces-toolbar-button-settings =
+    .title = Passar al scheda del parametros
+spaces-toolbar-button-collapse =
+    .title = Comprimer le barra del spatios

@@ -21,6 +21,8 @@ menu-application-hide-other =
     .label = Fela aðra
 menu-application-show-all =
     .label = Sýna allt
+menu-application-touch-bar =
+    .label = Sérsníða snertistiku…
 
 ##
 
@@ -59,8 +61,8 @@ menu-file-new-tab =
     .label = Nýr flipi
     .accesskey = f
 menu-file-new-container-tab =
-    .label = Nýr hópaflipi
-    .accesskey = h
+    .label = Nýr sérefnisflipi
+    .accesskey = p
 menu-file-new-window =
     .label = Nýr gluggi
     .accesskey = N
@@ -78,6 +80,16 @@ menu-file-open-file =
 menu-file-close =
     .label = Loka
     .accesskey = L
+# Variables:
+#  $tabCount (Number): the number of tabs that are affected by the action.
+menu-file-close-tab =
+    .label =
+        { $tabCount ->
+            [1] Loka flipa
+            [one] Loka flipa
+           *[other] Loka { $tabCount } flipum
+        }
+    .accesskey = L
 menu-file-close-window =
     .label = Loka glugga
     .accesskey = k
@@ -87,6 +99,9 @@ menu-file-save-page =
 menu-file-email-link =
     .label = Senda tengil…
     .accesskey = e
+menu-file-share-url =
+    .label = Deila
+    .accesskey = D
 menu-file-print-setup =
     .label = Uppsetning síðu…
     .accesskey = U
@@ -108,6 +123,9 @@ menu-file-go-offline =
 menu-edit =
     .label = Breyta
     .accesskey = e
+menu-edit-find-in-page =
+    .label = Finna á síðu…
+    .accesskey = F
 menu-edit-find-again =
     .label = Leita aftur
     .accesskey = u
@@ -139,11 +157,14 @@ menu-view-full-zoom =
     .label = Aðdráttur
     .accesskey = ð
 menu-view-full-zoom-enlarge =
-    .label = Stækka
-    .accesskey = S
+    .label = Auka aðdrátt
+    .accesskey = k
 menu-view-full-zoom-reduce =
-    .label = Minnka
+    .label = Minnka aðdrátt
     .accesskey = M
+menu-view-full-zoom-actual-size =
+    .label = Raunstærð
+    .accesskey = a
 menu-view-full-zoom-toggle =
     .label = Stækka/minnka einungis texta
     .accesskey = t
@@ -156,6 +177,9 @@ menu-view-page-style-no-style =
 menu-view-page-basic-style =
     .label = Almennur síðustíll
     .accesskey = A
+menu-view-repair-text-encoding =
+    .label = Gera við textakóðun
+    .accesskey = G
 
 ## These should match what Safari and other Apple applications
 ## use on macOS.
@@ -198,12 +222,18 @@ menu-history-undo-menu =
     .label = Nýlega lokaðir flipar
 menu-history-undo-window-menu =
     .label = Nýlega lokaðir gluggar
+menu-history-reopen-all-tabs = Enduropna alla flipa
+menu-history-reopen-all-windows = Enduropna alla glugga
 
 ## Bookmarks Menu
 
 menu-bookmarks-menu =
     .label = Bókamerki
     .accesskey = B
+menu-bookmarks-manage =
+    .label = Sýsla með bókamerki
+menu-bookmark-current-tab =
+    .label = Bókamerkja núverandi flipa
 menu-bookmark-edit =
     .label = Breyta bókamerki
 menu-bookmarks-all-tabs =
@@ -223,18 +253,40 @@ menu-tools =
 menu-tools-downloads =
     .label = Niðurhal
     .accesskey = N
+menu-tools-addons-and-themes =
+    .label = Viðbætur og þemu
+    .accesskey = b
 menu-tools-fxa-sign-in2 =
     .label = Innskráning
     .accesskey = I
+menu-tools-turn-on-sync2 =
+    .label = Kveikja á samstillingu…
+    .accesskey = m
 menu-tools-sync-now =
     .label = Samstilla núna
     .accesskey = S
+menu-tools-fxa-re-auth =
+    .label = Endurtengjast við { -brand-product-name }…
+    .accesskey = r
+menu-tools-browser-tools =
+    .label = Vafraverkfæri
+    .accesskey = f
+menu-tools-task-manager =
+    .label = Verkefnastýring
+    .accesskey = f
 menu-tools-page-source =
     .label = Frumkóði síðu
     .accesskey = k
 menu-tools-page-info =
     .label = Upplýsingar síðu
     .accesskey = U
+menu-settings =
+    .label = Stillingar
+    .accesskey =
+        { PLATFORM() ->
+            [windows] S
+           *[other] n
+        }
 menu-tools-layout-debugger =
     .label = Villuleit í útliti
     .accesskey = L
@@ -260,11 +312,23 @@ menu-window-bring-all-to-front =
 menu-help =
     .label = Hjálp
     .accesskey = H
+menu-get-help =
+    .label = Fá hjálp
+    .accesskey = h
+menu-help-more-troubleshooting-info =
+    .label = Frekari upplýsingar um úrræðaleit
+    .accesskey = t
 menu-help-report-site-issue =
     .label = Tilkynna vandamál á vefsvæði…
 menu-help-feedback-page =
     .label = Senda álit…
     .accesskey = S
+menu-help-enter-troubleshoot-mode2 =
+    .label = Úrræðaleitarhamur…
+    .accesskey = m
+menu-help-exit-troubleshoot-mode =
+    .label = Slökkva á úrræðaleitarham
+    .accesskey = m
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

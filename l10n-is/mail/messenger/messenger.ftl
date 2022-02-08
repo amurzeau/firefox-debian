@@ -170,3 +170,22 @@ no-reply-reply-anyway-button = Svara samt
 ## error messages
 
 decrypt-and-copy-failures = Ekki var hægt að afkóða { $failures } af { $total } skilaboðum og þau voru ekki afrituð.
+
+## Spaces toolbar
+
+spaces-toolbar =
+    .toolbarname = Svæða-verkfæraslá
+spaces-toolbar-button-mail =
+    .title = Skipta yfir í póstflipa
+spaces-toolbar-button-address-book =
+    .title = Skipta yfir í nafnaskrárflipa
+spaces-toolbar-button-calendar =
+    .title = Skipta yfir á dagatalsflipa
+spaces-toolbar-button-tasks =
+    .title = Skipta yfir á verkefnaflipa
+spaces-toolbar-button-chat =
+    .title = Skipta yfir á spjallflipa
+spaces-toolbar-button-settings =
+    .title = Skipta yfir á stillingaflipa
+spaces-toolbar-button-collapse =
+    .title = Fella saman Svæða-verkfæraslá

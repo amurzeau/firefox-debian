@@ -100,6 +100,7 @@ mr1-onboarding-import-primary-button-label-attribution = { $previous } سے در
 # This string will be used in cases where we can't detect the previous browser name.
 mr1-onboarding-import-primary-button-label-no-attribution = پچھلے براؤزر سے درآمد کریں
 mr1-onboarding-import-secondary-button-label = ابھی نہیں
+mr2-onboarding-colorway-header = رنگین زندگی
 mr2-onboarding-colorway-secondary-button-label = ابھی نہیں
 mr2-onboarding-colorway-label-soft = نرم
 mr2-onboarding-colorway-label-balanced = متوازن
@@ -141,3 +142,4 @@ mr2-onboarding-default-theme-tooltip =
 ## Strings for Thank You page
 
 mr2-onboarding-thank-you-header = ہمیں منتخب کرنے کے لیے آپ کا شکریہ
+mr2-onboarding-start-browsing-button-label = براؤزنگ شروع کریں

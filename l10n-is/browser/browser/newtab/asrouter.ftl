@@ -6,6 +6,7 @@
 ## These messages are used as headings in the recommendation doorhanger
 
 cfr-doorhanger-extension-heading = Tillögur að viðbótum
+cfr-doorhanger-feature-heading = Eiginleiki sem mælt er með
 
 ##
 
@@ -30,6 +31,11 @@ cfr-doorhanger-extension-notification = Tillaga
 cfr-doorhanger-extension-notification2 = Tillaga
     .tooltiptext = Tillaga að viðbót
     .a11y-announcement = Fyrirliggjandi er tillaga að viðbót
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Meðmæli
+    .tooltiptext = Eiginleiki sem mælt er með
+    .a11y-announcement = Meðmæli með eiginleika eru tiltæk
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -62,6 +68,9 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
 
 ## Protections panel
 
+cfr-protections-panel-header = Vafraðu án þess að fylgst sé með þér
+cfr-protections-panel-body = Haltu þínum gögnum fyrir sjálfan þig. { -brand-short-name } verndar þig fyrir mörgum algengustu rekjurum sem fylgjast með því sem þú gerir á netinu.
+cfr-protections-panel-link-text = Frekari upplýsingar
 
 ## What's New toolbar button and panel
 
@@ -75,19 +84,50 @@ cfr-whatsnew-release-notes-link-text = Lesa útgáfuskýringarnar
 
 ## Enhanced Tracking Protection Milestones
 
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (Datetime) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading2 =
+    { $blockedCount ->
+        [one] { -brand-short-name } hefur lokað á <b>{ $blockedCount }</b> rekjara síðan { DATETIME($date, month: "long", year: "numeric") }!
+       *[other] { -brand-short-name } hefur lokað á <b>{ $blockedCount }</b> rekjara síðan { DATETIME($date, month: "long", year: "numeric") }!
+    }
+cfr-doorhanger-milestone-ok-button = Sjá allt
+    .accesskey = S
+cfr-doorhanger-milestone-close-button = Loka
+    .accesskey = L
 
 ## DOH Message
 
+cfr-doorhanger-doh-body = Persónuvernd þín skiptir máli. { -brand-short-name } vísar nú DNS-beiðnum þínum þegar mögulegt er á öruggan hátt til samstarfsþjónustu til að vernda þig á meðan þú vafrar.
+cfr-doorhanger-doh-header = Öruggari, dulkóðaðar DNS-uppflettingar
+cfr-doorhanger-doh-primary-button-2 = Allt í lagi
+    .accesskey = A
+cfr-doorhanger-doh-secondary-button = Gera óvirkt
+    .accesskey = G
 
 ## Fission Experiment Message
 
 cfr-doorhanger-fission-body-approved = Persónuvernd þín skiptir máli. Núna er { -brand-short-name } að einangra, eða setja í sandkassa, vefsvæði hvert fyrir sig, sem gerir tölvuþrjótum erfiðara fyrir að stela lykilorðum, kreditkortanúmerum og öðrum viðkvæmum upplýsingum.
+cfr-doorhanger-fission-header = Einangrun vefsvæðis
+cfr-doorhanger-fission-primary-button = Í lagi, ég skil
+    .accesskey = g
+cfr-doorhanger-fission-secondary-button = Frekari upplýsingar
+    .accesskey = F
 
 ## Full Video Support CFR message
 
+cfr-doorhanger-video-support-body = Myndskeið á þessu vefsvæði gætu spilast ekki rétt í þessari útgáfu af { -brand-short-name }. Fyrir fullan stuðning við myndskeið skaltu uppfæra { -brand-short-name } núna.
+cfr-doorhanger-video-support-header = Uppfærðu { -brand-short-name } til að spila myndskeið
+cfr-doorhanger-video-support-primary-button = Uppfæra núna
+    .accesskey = U
 
 ## Spotlight modal shared strings
 
+spotlight-learn-more-collapsed = Frekari upplýsingar
+    .title = Stækka til að læra meira um eiginleikann
+spotlight-learn-more-expanded = Frekari upplýsingar
+    .title = Loka
 
 ## VPN promotion dialog for public Wi-Fi users
 ##
@@ -95,7 +135,24 @@ cfr-doorhanger-fission-body-approved = Persónuvernd þín skiptir máli. Núna 
 ## bit of info about how to improve their privacy and then offered a button
 ## to the Mozilla VPN page and a link to dismiss the dialog.
 
+# This header text can be explicitly wrapped.
+spotlight-public-wifi-vpn-header = Svo virðist sem þú sért að nota almennings Wi-Fi
+spotlight-public-wifi-vpn-body = Til að fela staðsetningu þína og vafravirkni skaltu íhuga VPN-einkanet. Það mun sjá um að vernda þig þegar þú vafrar á opinberum stöðum eins og flugvöllum og kaffihúsum.
+spotlight-public-wifi-vpn-primary-button = Haltu þig til hlés með { -mozilla-vpn-brand-name }
+    .accesskey = H
+spotlight-public-wifi-vpn-link = Ekki núna
+    .accesskey = E
 
 ## Total Cookie Protection Rollout
 
+# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
+# "Join an early experiment". This header text can be explicitly wrapped.
+spotlight-total-cookie-protection-header =
+    Prófaðu öflugasta persónuverndar-
+    eiginleikann okkar frá upphafi
+spotlight-total-cookie-protection-body = Allsherjar-vefkökuvörn kemur í veg fyrir að rekendur geti notað vafrakökur til að rekja slóð þína á vefnum.
+# "Early access" for this feature rollout means it's a "feature preview" or
+# "soft launch" as not everybody will get it yet.
+spotlight-total-cookie-protection-expanded = { -brand-short-name } byggir girðingu utan um vefkökur og takmarkar þær við vefsvæðið sem þú ert á svo rekjarar geti ekki notað þær til að fylgjast með þér. Með snemmbærum aðgangi muntu hjálpa til við að fínstilla þennan eiginleika svo við getum haldið áfram að byggja betri vef fyrir alla.
+spotlight-total-cookie-protection-primary-button = Kveiktu á allsherjar-vefkökuvörnum
 spotlight-total-cookie-protection-secondary-button = Ekki núna

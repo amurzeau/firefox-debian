@@ -7,7 +7,7 @@ Subject: Use the Mozilla Location Service key when the Google Key is not there
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/modules/libpref/init/all.js b/modules/libpref/init/all.js
-index 0033f64..f0cd9ef 100644
+index fab5c7b..6c991dd 100644
 --- a/modules/libpref/init/all.js
 +++ b/modules/libpref/init/all.js
 @@ -3719,7 +3719,7 @@ pref("network.psl.onUpdate_notify", false);

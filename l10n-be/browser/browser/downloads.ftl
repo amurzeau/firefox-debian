@@ -42,10 +42,20 @@ downloads-cmd-show-menuitem-2 =
             [macos] Паказаць у Finder
            *[other] Паказаць у папцы
         }
-    .accesskey = F
+    .accesskey = а
+
+## Displayed in the downloads context menu for files that can be opened.
+## Variables:
+##   $handler (String) - The name of the mime type's default file handler.
+##   Example: "Notepad", "Acrobat Reader DC", "7-Zip File Manager"
+
 downloads-cmd-use-system-default =
     .label = Адкрыць у сістэмным праглядальніку
     .accesskey = м
+# This version is shown when the download's mime type has a valid file handler.
+downloads-cmd-use-system-default-named =
+    .label = Адкрыць у { $handler }
+    .accesskey = р
 # We can use the same accesskey as downloads-cmd-always-open-similar-files.
 # Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-use-system-default =
@@ -69,6 +79,15 @@ downloads-cmd-show-description =
             [macos] Паказаць у шукальніку
            *[other] Адкрыць змяшчальную папку
         }
+# We can use the same accesskey as downloads-cmd-always-open-similar-files.
+# Both should not be visible in the downloads context menu at the same time.
+# This version is shown when the download's mime type has a valid file handler.
+downloads-cmd-always-use-system-default-named =
+    .label = Заўсёды адкрываць у { $handler }
+    .accesskey = ц
+
+##
+
 # We can use the same accesskey as downloads-cmd-always-use-system-default.
 # Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-open-similar-files =
@@ -113,6 +132,9 @@ downloads-cmd-clear-list =
 downloads-cmd-clear-downloads =
     .label = Ачысціць сцягванні
     .accesskey = с
+downloads-cmd-delete-file =
+    .label = Выдаліць
+    .accesskey = В
 # This command is shown in the context menu when downloads are blocked.
 downloads-cmd-unblock =
     .label = Дазволіць сцягванне

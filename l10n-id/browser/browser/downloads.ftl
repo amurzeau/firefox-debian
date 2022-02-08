@@ -13,6 +13,11 @@ downloads-panel =
 
 ##
 
+# The style attribute has the width of the Downloads Panel expressed using
+# a CSS unit. The longest labels that should fit are usually those of
+# in-progress and blocked downloads.
+downloads-panel-items =
+    .style = width: 35em
 downloads-cmd-pause =
     .label = Jeda
     .accesskey = J
@@ -30,6 +35,13 @@ downloads-cmd-show-menuitem =
 # This message is only displayed on macOS devices
 downloads-cmd-show-menuitem-mac =
     .label = Tampilkan di Finder
+    .accesskey = F
+downloads-cmd-show-menuitem-2 =
+    .label =
+        { PLATFORM() ->
+            [macos] Tampilkan di Finder
+           *[other] Tampilkan di Folder
+        }
     .accesskey = F
 downloads-cmd-use-system-default =
     .label = Buka di Penampil Sistem
@@ -56,6 +68,29 @@ downloads-cmd-show-description =
         { PLATFORM() ->
             [macos] Tampilkan di Finder
            *[other] Buka Foldernya
+        }
+# We can use the same accesskey as downloads-cmd-always-use-system-default.
+# Both should not be visible in the downloads context menu at the same time.
+downloads-cmd-always-open-similar-files =
+    .label = Selalu Buka Berkas Serupa
+    .accesskey = l
+downloads-cmd-show-button-2 =
+    .tooltiptext =
+        { PLATFORM() ->
+            [macos] Tampilkan di Finder
+           *[other] Tampilkan di Folder
+        }
+downloads-cmd-show-panel-2 =
+    .aria-label =
+        { PLATFORM() ->
+            [macos] Tampilkan di Finder
+           *[other] Tampilkan di Folder
+        }
+downloads-cmd-show-description-2 =
+    .value =
+        { PLATFORM() ->
+            [macos] Tampilkan di Finder
+           *[other] Tampilkan di Folder
         }
 downloads-cmd-show-downloads =
     .label = Tampilkan Folder Unduhan
@@ -123,6 +158,8 @@ downloading-file-opens-in-minutes = Dibuka dalam { $minutes }m…
 downloading-file-opens-in-minutes-and-seconds = Dibuka dalam { $minutes }m { $seconds }d…
 downloading-file-opens-in-seconds = Dibuka dalam { $seconds }d…
 downloading-file-opens-in-some-time = Dibuka saat selesai…
+downloading-file-click-to-open =
+    .value = Buka setelah selesai
 
 ##
 
@@ -150,6 +187,12 @@ downloads-details =
 ##   $num (number) - Number of blocked downloads.
 ##   $url (string) - The url of the suspicious site, stripped of http, https and www prefix.
 
+downloads-files-not-downloaded =
+    { $num ->
+       *[other] { $num } file tidak diunduh.
+    }
+downloads-blocked-from-url = Unduhan diblokir dari { $url }.
+downloads-blocked-download-detailed-info = { $url } mencoba mengunduh banyak berkas secara otomatis. Situs ini mungkin rusak atau mencoba menyimpan berkas spam di perangkat Anda.
 
 ##
 
@@ -163,3 +206,11 @@ downloads-list-empty =
 # This string is shown when there are no items in the Downloads Panel.
 downloads-panel-empty =
     .value = Tidak ada unduhan untuk sesi ini.
+# This is displayed in an item at the bottom of the Downloads Panel when there
+# are more downloads than can fit in the list in the panel.
+#   $count (number) - number of files being downloaded that are not shown in the
+#                     panel list.
+downloads-more-downloading =
+    { $count ->
+       *[other] { $count } berkas lainnya yang sedang diunduh
+    }

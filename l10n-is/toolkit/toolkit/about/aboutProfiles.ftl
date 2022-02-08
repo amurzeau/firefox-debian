@@ -7,7 +7,11 @@ profiles-subtitle = Þessi síða hjálpar þér að sýsla með notendastilling
 profiles-create = Stofna nýjan notanda
 profiles-restart-title = Endurræsa
 profiles-restart-in-safe-mode = Endurræsa með viðbætur óvirkar…
-profiles-restart-normal = Venjuleg endurræsing…
+profiles-restart-normal = Endurræsa eðlilega…
+profiles-conflict = Annað eintak af { -brand-product-name } hefur gert breytingar á notandasniðum. Þú verður að endurræsa { -brand-short-name } áður en þú gerir fleiri breytingar.
+profiles-flush-fail-title = Breytingar ekki vistaðar
+profiles-flush-conflict = { profiles-conflict }
+profiles-flush-failed = Óvænt villa kom í veg fyrir að breytingarnar þínar hafi verið vistaðar.
 profiles-flush-restart-button = Endurræsa { -brand-short-name }
 # Variables:
 #   $name (String) - Name of the profile
@@ -25,9 +29,10 @@ profiles-current-profile = Þessi notandi er þegar í notkun og er ekki hægt a
 profiles-in-use-profile = Aðgangur þessa notanda er enn í notkun í öðru forriti og ekki hægt að fjarlægja hann.
 profiles-rename = Endurnefna
 profiles-remove = Fjarlægja
-profiles-set-as-default = Setja sem sjálfgefin notanda
+profiles-set-as-default = Setja sem sjálfgefinn notanda
 profiles-launch-profile = Keyra notanda í nýjum vafra
 profiles-cannot-set-as-default-title = Ekki hægt að setja sem sjálfgefið gildi
+profiles-cannot-set-as-default-message = Ekki er hægt að breyta sjálfgefna notandanum fyrir { -brand-short-name }.
 profiles-yes = já
 profiles-no = nei
 profiles-rename-profile-title = Endurnefna notanda
