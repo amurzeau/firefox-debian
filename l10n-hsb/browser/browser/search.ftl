@@ -24,3 +24,11 @@ searchbar-input =
     .placeholder = Pytać
 searchbar-icon =
     .tooltiptext = Pytać
+
+## Infobar shown when search engine is removed and replaced.
+## Variables
+## $oldEngine (String) - the search engine to be removed.
+## $newEngine (String) - the search engine to replace the removed search engine.
+
+remove-search-engine-message = <strong>Waša standardna pytawa je so změniła.</strong> { -brand-short-name } { $oldEngine } hižo njepodpěruje. { $newEngine } je nětko waša standardna pytawa. Zo byšće standardnu pytawu změnił, dźiće do nastajenjow. <label data-l10n-name="remove-search-engine-article">Dalše informacije</label>
+remove-search-engine-button = W porjadku

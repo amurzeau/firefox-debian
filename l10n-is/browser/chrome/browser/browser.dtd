@@ -41,8 +41,8 @@ this container is a toolbar. This avoids double-speaking. -->
 <!ENTITY searchItem.title             "Leita">
 
 <!-- Toolbar items -->
-<!ENTITY homeButton.label             "Heim">
-<!ENTITY homeButton.defaultPage.tooltip "&brandShortName; Heimasíða">
+<!ENTITY homeButton.label             "Upphafssíða">
+<!ENTITY homeButton.defaultPage.tooltip "&brandShortName; upphafssíða">
 
 <!ENTITY historyButton.label            "Ferill">
 
@@ -119,7 +119,7 @@ this container is a toolbar. This avoids double-speaking. -->
 
 <!ENTITY fullZoom.label                 "Aðdráttur">
 
-<!ENTITY sidebarCloseButton.tooltip     "Loka hliðslá">
+<!ENTITY sidebarCloseButton.tooltip     "Loka hliðarspjaldi">
 
 <!ENTITY allowPopups.accesskey "p">
 <!-- On Windows we use the term "Options" to describe settings, but

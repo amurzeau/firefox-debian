@@ -40,6 +40,8 @@ login-list-count =
 login-list-sort-label-text = Tichol chi:
 login-list-name-option = B'i'aj (A-Y)
 login-list-name-reverse-option = B'i'aj (Z-A)
+login-list-username-option = B'i'aj (A-Y)
+login-list-username-reverse-option = B'i'aj (Y-A)
 about-logins-login-list-alerts-option = Retal taq k'ayewal
 login-list-last-changed-option = Ruk'isib'äl Jaloj
 login-list-last-used-option = Ruk'isib'äl Rokisaxik
@@ -54,7 +56,9 @@ about-logins-list-item-breach-icon =
     .title = Tz'ilan Ajk'amaya'l taq Ruxaq
 about-logins-list-item-vulnerable-password-icon =
     .title = Tz'ilanel ewan tzij
+about-logins-list-section-breach = Tz'ilan ajk'amaya'l taq ruxaq
 about-logins-list-section-vulnerable = Tz'ilanel ewan taq tzij
+about-logins-list-section-nothing = Majun rutzijol tz'ilanem
 about-logins-list-section-today = Wakami
 about-logins-list-section-yesterday = Iwir
 about-logins-list-section-week = Ruk'isib'äl 7 q'ij
@@ -68,6 +72,8 @@ login-intro-instructions-fxa = Tatz'uku' o tatikirisaj molojri'ïl pa { -fxaccou
 login-intro-instructions-fxa-settings = Jät pa runuk'ulem > Sync > Titzij ri ximoj… Tacha' ri ruk'ojlem Ruwujil chuqa' ewan taq tzij.
 login-intro-instructions-fxa-help = Tatz'eta' <a data-l10n-name="help-link">{ -lockwise-brand-short-name } Tob'äl</a> richin ch'aqa' chik to'ïk.
 about-logins-intro-import = We ri rutikirib'al amolojri'ïl yakon pa jun chik okik'amaya'l, yatikïr <a data-l10n-name="import-link">ye'ajïk' pa { -lockwise-brand-short-name }</a>
+login-intro-instructions-fxa-passwords-help = Tatz'eta' <a data-l10n-name="passwords-help-link">rutob'al ewan taq tzij</a>richin yatkito'.
+about-logins-intro-browser-only-import = We ri rutikirib'al taq amolojri'ïl yakon pa jun chik okik'amaya'l, yatikïr <a data-l10n-name="import-link">ye'ajïk' pa { -brand-product-name }</a>
 about-logins-intro-import2 = We ri taq awujil man yek'oje' ta chupam { -brand-product-name } yatikïr <a data-l10n-name="import-browser-link">ye'ajïk pe chupam jun chik okik'amaya'l</a> o <a data-l10n-name="import-file-link">chupam jun yakb'äl</a>
 
 ## Login

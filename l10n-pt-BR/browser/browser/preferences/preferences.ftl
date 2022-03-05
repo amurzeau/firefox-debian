@@ -151,8 +151,8 @@ switch-to-new-tabs =
     .label = Ao abrir um link, imagem ou mídia em uma nova aba, alternar para ela imediatamente
     .accesskey = b
 show-tabs-in-taskbar =
-    .label = Mostrar a visualização das abas na barra de tarefas do Windows
-    .accesskey = v
+    .label = Mostrar conteúdo de abas na barra de tarefas do Windows
+    .accesskey = f
 browser-containers-enabled =
     .label = Ativar abas contêiner
     .accesskey = n
@@ -237,7 +237,7 @@ check-user-spelling =
 
 ## General Section - Files and Applications
 
-files-and-applications-title = Arquivos e Aplicativos
+files-and-applications-title = Arquivos e aplicativos
 download-header = Downloads
 download-save-to =
     .label = Salvar arquivos em
@@ -359,6 +359,9 @@ update-application-warning-cross-user-setting = Esta configuração se aplica a 
 update-application-use-service =
     .label = Usar um serviço em segundo plano para instalar atualizações
     .accesskey = s
+update-application-suppress-prompts =
+    .label = Mostrar menos avisos com notificação de atualização
+    .accesskey = n
 update-setting-write-failure-title2 = Erro ao salvar configurações de atualização
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -542,7 +545,7 @@ search-bar-hidden =
 search-bar-shown =
     .label = Adicionar a barra de pesquisa na barra de ferramentas
 search-engine-default-header = Mecanismo de pesquisa padrão
-search-engine-default-desc-2 = Este é seu mecanismo de pesquisa padrão na barra de endereços e na barra de pesquisa. Você pode trocar quando quiser.
+search-engine-default-desc-2 = Este é seu mecanismo de pesquisa padrão na barra de endereços e na barra de pesquisa. Você pode mudar quando quiser.
 search-engine-default-private-desc-2 = Escolha outro mecanismo de pesquisa padrão a ser usado em janelas privativas.
 search-separate-default-engine =
     .label = Usar este mecanismo de pesquisa em janelas privativas
@@ -599,7 +602,7 @@ containers-add-button =
     .label = Adicionar novo contêiner
     .accesskey = A
 containers-new-tab-check =
-    .label = Selecione um contêiner para cada nova aba
+    .label = Selecionar um contêiner para cada nova aba
     .accesskey = S
 containers-settings-button =
     .label = Configurações

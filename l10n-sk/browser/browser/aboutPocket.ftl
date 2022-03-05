@@ -15,7 +15,7 @@ pocket-panel-saved-error-generic = Počas ukladania údajov do { -pocket-brand-n
 pocket-panel-saved-error-tag-length = Značky môžu obsahovať najviac 25 znakov
 pocket-panel-saved-error-only-links = Uložené môžu byť len odkazy
 pocket-panel-saved-error-not-saved = Stránka nebola uložená
-pocket-panel-saved-error-no-internet = Ak chcete ukladať údaje do služby { -pocket-brand-name }, musíte byť pripojený k sieti Internet. Skontrolujte svoje pripojenie a skúste to znova.
+pocket-panel-saved-error-no-internet = Ak chcete ukladať údaje do { -pocket-brand-name(case: "gen") }, musíte byť pripojený k sieti Internet. Skontrolujte svoje pripojenie a skúste to znova.
 pocket-panel-saved-page-removed = Stránka bola odstránená
 pocket-panel-saved-page-saved = Uložená do { -pocket-brand-name(case: "gen") }
 pocket-panel-saved-processing-remove = Stránka sa odstraňuje…
@@ -34,10 +34,13 @@ pocket-panel-signup-learn-more = Ďalšie informácie
 pocket-panel-signup-login = Prihlásiť sa
 pocket-panel-signup-signup-email = Registrovať pomocou e-mailu
 pocket-panel-signup-signup-cta = Zaregistrujte sa v službe { -pocket-brand-name }. Je zadarmo.
-pocket-panel-signup-signup-firefox = Registrovať pomocou { -brand-product-name }u
+pocket-panel-signup-signup-firefox = Registrovať pomocou { -brand-product-name(case: "gen") }
 pocket-panel-signup-tagline = Ukladajte si články a videá z prehliadača { -brand-product-name } a majte ich vďaka službe { -pocket-brand-name } dostupné kdekoľvek a na akomkoľvek zariadení.
 pocket-panel-signup-tagline-story-one = Kliknutím na tlačidlo { -pocket-brand-name } v prehliadači { -brand-product-name } uložíte akýkoľvek článok, video alebo stránku.
 pocket-panel-signup-tagline-story-two = Tieto sú potom vďaka službe { -pocket-brand-name } dostupné kdekoľvek a na akomkoľvek zariadení.
+pocket-panel-signup-cta-a = Vaše tlačidlo uloženia pre internet.
+pocket-panel-signup-cta-b = Kliknutím na tlačidlo { -pocket-brand-name } uložíte články, videá a odkazy. Zobrazte svoj zoznam na akomkoľvek zariadení a kedykoľvek.
+pocket-panel-signup-cta-c = Zobrazte svoj zoznam na akomkoľvek zariadení a kedykoľvek.
 
 ## about:pocket-home panel
 
@@ -47,8 +50,17 @@ pocket-panel-home-paragraph = { -pocket-brand-name } môžete použiť na objavo
 pocket-panel-home-explore-popular-topics = Preskúmať populárne témy
 pocket-panel-home-discover-more = Objavte ďalšie
 pocket-panel-home-explore-more = Preskúmať
+pocket-panel-home-most-recent-saves = Tu sú vaše posledné uloženia:
+pocket-panel-home-new-user-cta = Kliknutím na tlačidlo { -pocket-brand-name } uložíte články, videá a odkazy.
+pocket-panel-home-new-user-message = Pozrite si svoje nedávne uloženia.
 
 ## Pocket panel header component
 
 pocket-panel-header-my-list = Zobraziť Môj zoznam
 pocket-panel-header-sign-in = Prihlásiť sa
+
+## Pocket panel buttons
+
+pocket-panel-button-show-all = Zobraziť všetko
+pocket-panel-button-add-tags = Pridať značky
+pocket-panel-button-activate = Aktivovať { -pocket-brand-name } vo { -brand-product-name(case: "loc") }

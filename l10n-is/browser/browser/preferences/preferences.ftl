@@ -26,16 +26,16 @@ category-list =
 pane-general-title = Almennt
 category-general =
     .tooltiptext = { pane-general-title }
-pane-home-title = Heim
+pane-home-title = Upphafssíða
 category-home =
     .tooltiptext = { pane-home-title }
 pane-search-title = Leita
 category-search =
     .tooltiptext = { pane-search-title }
-pane-privacy-title = Friðhelgi og öruggi
+pane-privacy-title = Friðhelgi og öryggi
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-pane-sync-title3 = Samstiling
+pane-sync-title3 = Samstilling
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = { -brand-short-name } tilraunir
@@ -47,7 +47,7 @@ pane-experimental-description2 = Breyting á ítarlegum stillingum getur haft á
 pane-experimental-reset =
     .label = Endurheimta sjálfgefin gildi
     .accesskey = r
-help-button-label = { -brand-short-name } Aðstoð
+help-button-label = { -brand-short-name }-aðstoð
 addons-button-label = Viðbætur & þemu
 focus-search =
     .key = f
@@ -187,8 +187,8 @@ containers-remove-cancel-button = Ekki fjarlægja þetta sérefni
 
 language-and-appearance-header = Tungumál og útlit
 fonts-and-colors-header = Letur og litir
-default-font = Sjálfgefinn leturgerð
-    .accesskey = ð
+default-font = Sjálfgefin leturgerð
+    .accesskey = g
 default-font-size = Stærð
     .accesskey = S
 advanced-fonts =
@@ -240,7 +240,7 @@ check-user-spelling =
 files-and-applications-title = Skrár og forrit
 download-header = Niðurhal
 download-save-to =
-    .label = Vista skrár yfir á
+    .label = Vista skrár yfir í
     .accesskey = V
 download-choose-folder =
     .label =
@@ -359,6 +359,9 @@ update-application-warning-cross-user-setting = Þessi stilling mun eiga við al
 update-application-use-service =
     .label = Nota bakgrunnsþjónustu til að setja inn uppfærslur
     .accesskey = b
+update-application-suppress-prompts =
+    .label = Sýna færri tilkynningar um uppfærslur
+    .accesskey = n
 update-setting-write-failure-title2 = Villa við að vista uppfærslustillingar
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -399,16 +402,16 @@ performance-default-content-process-count =
 
 browsing-title = Leit
 browsing-use-autoscroll =
-    .label = Nota sjálfvirka skrunun
+    .label = Nota sjálfvirkt skrun
     .accesskey = o
 browsing-use-smooth-scrolling =
-    .label = Nota fíngerða skrunun
+    .label = Nota fíngert skrun
     .accesskey = f
 browsing-use-onscreen-keyboard =
     .label = Sýna snertilyklaborð þegar það er nauðsynlegt
     .accesskey = k
 browsing-use-cursor-navigation =
-    .label = Alltaf nota örvalykla til að ferðast á síðum
+    .label = Alltaf nota örvalykla til að flakka á síðum
     .accesskey = ö
 browsing-search-on-start-typing =
     .label = Leita í texta þegar byrjað er að slá inn orð
@@ -441,11 +444,11 @@ network-proxy-connection-settings =
 ## Home Section
 
 home-new-windows-tabs-header = Nýir gluggar og flipar
-home-new-windows-tabs-description2 = Veldu hvað þú sérð þegar þú opnar heimasíðuna þína, nýja glugga og nýja flipa.
+home-new-windows-tabs-description2 = Veldu hvað þú sérð þegar þú opnar upphafssíðuna þína, nýja glugga og nýja flipa.
 
 ## Home Section - Home Page Customization
 
-home-homepage-mode-label = Heimasíða og nýjir gluggar
+home-homepage-mode-label = Upphafssíða og nýir gluggar
 home-newtabs-mode-label = Nýir flipar
 home-restore-defaults =
     .label = Endurheimta sjálfgefin gildi
@@ -453,13 +456,13 @@ home-restore-defaults =
 # "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Firefox Home (Sjálfgefið)
+    .label = Firefox Home (sjálfgefið)
 home-mode-choice-custom =
     .label = Sérsniðin URL…
 home-mode-choice-blank =
     .label = Tóm síða
 home-homepage-custom-url =
-    .placeholder = Límdu URL…
+    .placeholder = Límdu URL-slóð…
 # This string has a special case for '1' and [other] (default). If necessary for
 # your language, you can add {$tabCount} to your translations and use the
 # standard CLDR forms, or only use the form for [other] if both strings should
@@ -538,7 +541,7 @@ home-prefs-sections-rows-option =
 
 search-bar-header = Leitarslá
 search-bar-hidden =
-    .label = Nota leitarslá til að leita og stýra
+    .label = Nota veffangastikuna fyrir leit og flakk
 search-bar-shown =
     .label = Bæta við leitarslá í verkfæraslá
 search-engine-default-header = Sjálfgefin leitarvél
@@ -553,7 +556,7 @@ search-suggestions-option =
     .label = Birta uppástungur fyrir leit
     .accesskey = s
 search-show-suggestions-url-bar-option =
-    .label = Sýna leitarábendingar sem niðurstöður í staðsetningarslá
+    .label = Sýna leitartillögur í niðurstöðum veffangastikunnar
     .accesskey = l
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
@@ -561,13 +564,13 @@ search-show-suggestions-url-bar-option =
 # "ahead" refers to location (appearing most proximate to), not time
 # (appearing before).
 search-show-suggestions-above-history-option =
-    .label = Sýna leitarábendingar fyrir framan leitarsögu í niðurstöðum staðsetningarsláar
+    .label = Sýna leitartillögur á undan vafraferli í niðurstöðum veffangastikunnar
 search-show-suggestions-private-windows =
     .label = Sýna leitartillögur í huliðsgluggum
 suggestions-addressbar-settings-generic2 = Breyta stillingum fyrir aðrar tillögur í veffangastiku
 search-suggestions-cant-show = Leitarábendingar verða ekki sýndar í staðsetningarslá þar sem þú hefur stillt { -brand-short-name } þannig að hann muni ekki neina leitarsögu.
 search-one-click-header2 = Flýtileiðir við leit
-search-one-click-desc = Veldu auka leitarvélar sem birtast hér fyrir neðan staðsetningarslá og leitarslá þegar þú byrjar að slá inn lykilorð.
+search-one-click-desc = Veldu aðrar leitarvélar sem munu birtast fyrir neðan veffangastikuna og leitarstikuna þegar þú byrjar að slá inn leitarorð.
 search-choose-engine-column =
     .label = Leitarvél
 search-choose-keyword-column =
@@ -622,7 +625,7 @@ sync-signedout-account-signin3 =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = Hala niður Firefox fyrir <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> eða <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> til að samstilla með farsímanum.
+sync-mobile-promo = Sæktu Firefox fyrir <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> eða <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> til að samstilla með farsímanum.
 
 ## Firefox Account - Signed in
 
@@ -888,11 +891,11 @@ sitedata-cookies-exceptions =
 
 ## Privacy Section - Address Bar
 
-addressbar-header = Staðsetningarslá
-addressbar-suggest = Þegar ég nota staðsetningarslá, stinga upp á:
+addressbar-header = Veffangastika
+addressbar-suggest = Þegar veffangastikuna er notuð skal stinga upp á
 addressbar-locbar-history-option =
-    .label = Leitarsaga
-    .accesskey = L
+    .label = Vafraferill
+    .accesskey = f
 addressbar-locbar-bookmarks-option =
     .label = Bókamerki
     .accesskey = k
@@ -960,7 +963,7 @@ content-blocking-etp-standard-tcp-rollout-description = Allsherjar-vefkökuvörn
 content-blocking-etp-standard-tcp-rollout-learn-more = Frekari upplýsingar
 content-blocking-warning-title = Gættu þín!
 content-blocking-and-isolating-etp-warning-description = Að loka fyrir rekjara og einangra vefkökur gæti haft áhrif á virkni sumra vefsvæða. Endurlestu síðu með rekjurum til að hlaða inn öllu efni.
-content-blocking-and-isolating-etp-warning-description-2 = Þessi stilling gæti valdið því að sum vefsvæði birti ekki efni eða virki ekki rétt. Ef síða virðist biluð gætirðu viljað slökkva á rakningarvörn fyrir það vefsvæði til að hlaða öllu efni.
+content-blocking-and-isolating-etp-warning-description-2 = Þessar stillingar gætu valdið því að sum vefsvæði birti ekki efni eða virki ekki rétt. Ef síða virðist biluð gætirðu viljað slökkva á rakningarvörn fyrir það vefsvæði til að hlaða inn öllu efni.
 content-blocking-warning-learn-how = Lærðu hvernig
 content-blocking-reload-description = Þú þarft að endurhlaða flipana þína til að gera þessar breytingar virkar.
 content-blocking-reload-tabs-button =

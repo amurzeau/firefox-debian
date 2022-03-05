@@ -11,7 +11,6 @@
 # Placeholder text for tag input
 pocket-panel-saved-add-tags =
     .placeholder = Agiuntar tags
-
 pocket-panel-saved-error-generic = Ina errur è succedida durant empruvar da memorisar en { -pocket-brand-name }.
 pocket-panel-saved-error-tag-length = Tags èn limitads a 25 caracters
 pocket-panel-saved-error-only-links = Mo colliaziuns pon vegnir memorisadas
@@ -39,6 +38,9 @@ pocket-panel-signup-signup-firefox = Sa registrar cun { -brand-product-name }
 pocket-panel-signup-tagline = Memorisescha artitgels e videos ord { -brand-product-name } per als vesair en { -pocket-brand-name }, sin mintga apparat, da tut temp.
 pocket-panel-signup-tagline-story-one = Clicca sin il buttun da { -pocket-brand-name } per memorisar directamain ord { -brand-product-name } tge artitgel, video u pagina ch'i saja.
 pocket-panel-signup-tagline-story-two = Vesair en { -pocket-brand-name } sin mintga apparat, da tut temp.
+pocket-panel-signup-cta-a = Tes buttun «memorisar» per l'internet.
+pocket-panel-signup-cta-b = Clicca sin il buttun { -pocket-brand-name } per memorisar artitgels, videos e colliaziuns. Consultescha tia glista sin mintga apparat da tut temp.
+pocket-panel-signup-cta-c = Consultescha ti glista sin mintga apparat, da tut temp.
 
 ## about:pocket-home panel
 
@@ -48,3 +50,17 @@ pocket-panel-home-paragraph = Ti pos utilisar { -pocket-brand-name } per explora
 pocket-panel-home-explore-popular-topics = Scuvrir temas populars
 pocket-panel-home-discover-more = Scuvrir dapli
 pocket-panel-home-explore-more = Explorar
+pocket-panel-home-most-recent-saves = Qua ils elements memorisads dacurt:
+pocket-panel-home-new-user-cta = Clicca sin il buttun { -pocket-brand-name } per memorisar artitgels, videos e colliaziuns.
+pocket-panel-home-new-user-message = Consultescha qua ils elements memorisads dacurt.
+
+## Pocket panel header component
+
+pocket-panel-header-my-list = Mussar mia glista
+pocket-panel-header-sign-in = S'annunziar
+
+## Pocket panel buttons
+
+pocket-panel-button-show-all = Mussar tut
+pocket-panel-button-add-tags = Agiuntar etichettas
+pocket-panel-button-activate = Activar { -pocket-brand-name } en { -brand-product-name }

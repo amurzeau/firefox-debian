@@ -69,7 +69,7 @@ policy-FlashPlugin = Leyfa eða hafna notkun Flash-tengiforritsins.
 policy-Handlers = Stilla meðhöndlun með sjálfgefnum forritum.
 policy-HardwareAcceleration = Ef rangt, slökkva á hröðun vélbúnaðar.
 # “lock” means that the user won’t be able to change this setting
-policy-Homepage = Stilla og loka mögulega heimsíðu.
+policy-Homepage = Stilla og mögulega loka upphafssíðu.
 policy-InstallAddonsPermission = Leyfa tilteknum vefsvæðum að setja upp viðbætur.
 policy-LegacyProfiles = Slökkva á eiginleikanum sem framfylgir sérstöku notandasniði fyrir hverja uppsetningu.
 
@@ -86,7 +86,7 @@ policy-ManualAppUpdateOnly = Leyfa einungis handvirkar uppfærslur og ekki láta
 policy-PrimaryPassword = Krefjast eða koma í veg fyrir notkun aðallykilorðs.
 policy-NetworkPrediction = Virkja eða slökkva forsögn nets (DNS prefetching).
 policy-NewTabPage = Virkja eða slökkva á nýju flipasíðunni.
-policy-NoDefaultBookmarks = Slökkva á stöðluðum bókamerkjum meðfylgjandi { -brand-short-name } og frá greindum bókamerkjum (flestar heimsóknir, nýleg meki) Ath. að þessi stefna hefur aðeins áhrif ef það er notað áður en sniðið er notað fyrst.
+policy-NoDefaultBookmarks = Slökkva á stöðluðum bókamerkjum meðfylgjandi { -brand-short-name } og frá greindum bókamerkjum (flestar heimsóknir, nýleg merki) Ath. að þessi stefna hefur aðeins áhrif ef það er notað áður en sniðið er notað fyrst.
 policy-OfferToSaveLogins = Skoðaðu spurningu um að geyma aðgangsupplýsingar með { -brand-short-name }. Gildin true og false eru bæði gild.
 policy-OfferToSaveLoginsDefault = Setja sjálfgefið gildi um að leyfa { -brand-short-name } að bjóða upp á að muna vistaðar innskráningar og lykilorð. Bæði sönn og ósönn gildi eru samþykkt.
 policy-OverrideFirstRunPage = Breyta upphafssíðu. Tómt gildi til að slökkva á opnun síðunnar.

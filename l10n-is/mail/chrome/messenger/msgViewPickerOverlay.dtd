@@ -6,13 +6,13 @@
 
 <!ENTITY viewPicker.label "Sýn:">
 <!ENTITY viewPicker.accesskey "S">
-<!ENTITY viewAll.label "Allir">
+<!ENTITY viewAll.label "Allt">
 <!ENTITY viewAll.accesskey "A">
 <!ENTITY viewUnread.label "Ólesið">
 <!ENTITY viewUnread.accesskey "l">
 <!ENTITY viewNotDeleted.label "Ekki eytt">
 <!ENTITY viewNotDeleted.accesskey "e">
-<!ENTITY viewTags.label "Flokkar">
+<!ENTITY viewTags.label "Merki">
 <!ENTITY viewTags.accesskey "F">
 <!ENTITY viewCustomViews.label "Sérsniðin sýn">
 <!ENTITY viewCustomViews.accesskey "S">

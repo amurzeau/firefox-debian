@@ -362,6 +362,9 @@ update-application-warning-cross-user-setting = Toto nastavenie sa vzťahuje na 
 update-application-use-service =
     .label = Na inštaláciu aktualizácií používať službu na pozadí
     .accesskey = z
+update-application-suppress-prompts =
+    .label = Zobrazovať menej upozornení na aktualizácie
+    .accesskey = m
 update-setting-write-failure-title2 = Chyba pri ukladaní nastavení pre aktualizácie
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -520,7 +523,7 @@ home-prefs-highlights-option-most-recent-download =
 home-prefs-highlights-option-saved-to-pocket =
     .label = Stránky uložené v { -pocket-brand-name(case: "loc") }
 home-prefs-recent-activity-header =
-    .label = Posledná aktivita
+    .label = Nedávna aktivita
 home-prefs-recent-activity-description = Výber z nedávno navštívených stránok a obsahu
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
@@ -616,7 +619,7 @@ containers-remove-button =
 sync-signedout-caption = Vezmite si svoj web so sebou
 sync-signedout-description2 = Synchronizujte si svoje záložky, históriu, karty, heslá, doplnky a nastavenia so všetkými svojimi zariadeniami.
 sync-signedout-account-signin3 =
-    .label = Prihlásiť sa k synchronizácii
+    .label = Prihlásiť sa a synchronizovať…
     .accesskey = P
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -626,7 +629,7 @@ sync-signedout-account-signin3 =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = Stiahnite si Firefox pre <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> alebo <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> pre synchronizáciu s vaším mobilným zariadením.
+sync-mobile-promo = Stiahnite si Firefox pre <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> alebo <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> a synchronizujte svoje údaje s vašim mobilným zariadením.
 
 ## Firefox Account - Signed in
 
