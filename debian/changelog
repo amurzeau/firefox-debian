@@ -1,3 +1,10 @@
+firefox-esr (91.6.1esr-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2022-09, also known as CVE-2022-26485, CVE-2022-26486.
+
+ -- Mike Hommey <glandium@debian.org>  Sun, 06 Mar 2022 07:31:23 +0900
+
 firefox-esr (91.6.0esr-1) unstable; urgency=medium
 
   * New upstream release.
