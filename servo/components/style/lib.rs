@@ -24,6 +24,7 @@
 //! [selectors]: ../selectors/index.html
 
 #![deny(missing_docs)]
+#![cfg_attr(try_reserve, feature(try_reserve))]
 
 #[macro_use]
 extern crate bitflags;
