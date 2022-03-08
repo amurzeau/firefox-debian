@@ -46,14 +46,14 @@ Build-Depends: autotools-dev,
                nasm (>= 2.14) [amd64 i386],
 %endif
 %if DIST == bullseye || DIST == buster || DIST == stretch
-               rustc-mozilla (>= 1.57),
+               rustc-mozilla (>= 1.56),
 %else
-               rustc (>= 1.57),
+               rustc (>= 1.56),
 %endif
 %if DIST == bullseye || DIST == buster || DIST == stretch
-               cargo-mozilla (>= 0.58),
+               cargo-mozilla (>= 0.57),
 %else
-               cargo (>= 0.58),
+               cargo (>= 0.57),
 %endif
 %if DIST == stretch
                gcc-mozilla (>= 7.1),
