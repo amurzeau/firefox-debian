@@ -85,3 +85,4 @@ regex = {version = "1.0", optional = true, default-features = false, features = 
 walkdir = "2.1.4"
 toml = {version = "0.4.5", optional = true, default-features = false}
 mozbuild = {version = "0.1", optional = true}
+rustc_version = "0.2"

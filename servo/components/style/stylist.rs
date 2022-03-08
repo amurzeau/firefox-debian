@@ -1730,7 +1730,7 @@ impl ExtraStyleData {
             // TODO: Handle pseudo-classes
             self.pages.named.try_reserve(page_rule.selectors.0.len())?;
             for name in page_rule.selectors.as_slice() {
-                let vec = self.pages.named.entry(name.0.0.clone()).or_default();
+                let vec = self.pages.named.entry((name.0).0.clone()).or_default();
                 vec.try_reserve(1)?;
                 vec.push(PageRuleData{layer, rule: rule.clone()});
             }
