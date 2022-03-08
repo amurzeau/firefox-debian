@@ -240,7 +240,7 @@ endif
 endif
 
 ifndef RUSTC_BOOTSTRAP
-RUSTC_BOOTSTRAP := mozglue_static,qcms
+RUSTC_BOOTSTRAP := mozglue_static,qcms,style,audioipc2_client
 ifdef MOZ_RUST_SIMD
 RUSTC_BOOTSTRAP := $(RUSTC_BOOTSTRAP),encoding_rs,packed_simd
 endif

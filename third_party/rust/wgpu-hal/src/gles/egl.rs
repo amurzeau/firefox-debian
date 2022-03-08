@@ -951,14 +951,16 @@ impl crate::Surface<super::Api> for Surface {
                 let (mut temp_xlib_handle, mut temp_xcb_handle);
                 #[allow(trivial_casts)]
                 let native_window_ptr = match (self.wsi.kind, self.raw_window_handle) {
-                    (WindowKind::Unknown | WindowKind::X11, Rwh::Xlib(handle)) => {
+                    (WindowKind::Unknown, Rwh::Xlib(handle)) |
+                    (WindowKind::X11, Rwh::Xlib(handle)) => {
                         temp_xlib_handle = handle.window;
                         &mut temp_xlib_handle as *mut _ as *mut std::ffi::c_void
                     }
                     (WindowKind::AngleX11, Rwh::Xlib(handle)) => {
                         handle.window as *mut std::ffi::c_void
                     }
-                    (WindowKind::Unknown | WindowKind::X11, Rwh::Xcb(handle)) => {
+                    (WindowKind::Unknown, Rwh::Xcb(handle)) |
+                    (WindowKind::X11, Rwh::Xcb(handle)) => {
                         temp_xcb_handle = handle.window;
                         &mut temp_xcb_handle as *mut _ as *mut std::ffi::c_void
                     }
