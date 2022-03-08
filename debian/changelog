@@ -1,10 +1,27 @@
-firefox (98.0-1) UNRELEASED; urgency=medium
+firefox (98.0-1) unstable; urgency=medium
 
   * New upstream release.
   * Fixes for mfsa2022-10, also known as:
     CVE-2022-26383, CVE-2022-26384, CVE-2022-26387, CVE-2022-26381,
     CVE-2022-26382, CVE-2022-26385, CVE-2022-0843.
   * Fixes for mfsa2022-09, also known as: CVE-2022-26485, CVE-2022-26486.
+
+  * debian/control*:
+    - Bump nss build dependency.
+    - Downgrade rust dependency to 1.56, and cargo to 0.57.
+
+  * Cargo.lock, config/makefiles/rust.mk, python/mozboot/mozboot/util.py,
+    servo/components/style/Cargo.toml, servo/components/style/build.rs,
+    servo/components/style/lib.rs,
+    servo/components/style/stylesheets/page_rule.rs,
+    servo/components/style/stylist.rs,
+    third_party/rust/audioipc2-client/.cargo-checksum.json,
+    third_party/rust/audioipc2-client/Cargo.toml,
+    third_party/rust/audioipc2-client/build.rs,
+    third_party/rust/audioipc2-client/src/lib.rs,
+    third_party/rust/wgpu-hal/.cargo-checksum.json,
+    third_party/rust/wgpu-hal/src/gles/egl.rs: Relax minimum supported Rust
+    version to 1.56.0.
 
  -- Mike Hommey <glandium@debian.org>  Wed, 09 Mar 2022 07:09:27 +0900
 
