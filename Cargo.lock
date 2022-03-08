@@ -297,6 +297,7 @@ dependencies = [
  "audioipc2",
  "cubeb-backend",
  "log",
+ "rustc_version",
 ]
 
 [[package]]
@@ -4874,6 +4875,7 @@ dependencies = [
  "precomputed-hash",
  "rayon",
  "regex",
+ "rustc_version",
  "selectors",
  "serde",
  "servo_arc",
