@@ -455,6 +455,184 @@ key-ring-no-secret-key = Sinu võtmerõngal ei näi olevat salajast võtit võtm
 key-ring-pub-key-not-for-signing = Võtit { $userId } (võtme ID { $keyId }) pole võimalik allkirjastamiseks kasutada.
 key-ring-pub-key-not-for-encryption = Võtit { $userId } (võtme ID { $keyId }) pole võimalik krüptimiseks kasutada.
 key-ring-sign-sub-keys-revoked = Kõik võtme { $userId } (võtme ID { $keyId }) allkirjastamist võimaldavad alamvõtmed on tühistatud.
+key-ring-sign-sub-keys-expired = Kõik võtme { $userId } (võtme ID { $keyId }) allkirjastamise alamvõtmed on aegunud.
+key-ring-enc-sub-keys-revoked = Kõik võtme { $userId } (võtme ID { $keyId }) krüptimise alamvõtmed on tühistatud.
+key-ring-enc-sub-keys-expired = Kõik võtme { $userId } (võtme ID { $keyId }) krüptimise alamvõtmed on aegunud.
+# Strings in gnupg-keylist.jsm
+keyring-photo = Pilt
+user-att-photo = Kasutaja atribuut (JPEG-pilt)
+# Strings in key.jsm
+already-revoked = See võti on juba tühistatud.
+#   $identity (String) - the id and associated user identity of the key being revoked
+revoke-key-question =
+    Oled tühistamas võtit ‘{ $identity }’.
+    Sul pole võimalik enam selle võtmega allkirjastada ja pärast levitamist ei saa teised enam selle võtmega krüptida. Saad seda endiselt kasutada, et dekrüptida vanu kirju.
+    Kas soovid jätkata?
+#   $keyId (String) - the id of the key being revoked
+revoke-key-not-present =
+    Sul pole võtit (ux{ $keyId }), mis vastaks sellele tühistamise serdile.
+    Kui oled kaotanud oma võtme, siis pead selle importima (näiteks võtmete serverist) enne tühistusserdi importimist!
+#   $keyId (String) - the id of the key being revoked
+revoke-key-already-revoked = Võti 0x{ $keyId } on juba tühistatud.
+key-man-button-revoke-key = &Tühista võti
+openpgp-key-revoke-success = Võti tühistati edukalt.
+after-revoke-info =
+    Võti on tühistatud.
+    Jaga seda avalikku võtit uuesti, saates see e-postiga või laadides üles võtmete serverisse, et anda teistele teada selle tühistamisest.
+    Kohe, kui teiste poolt kasutatav tarkvara saab teada võtme tühistamisest, lõpetab see sinu vana võtme kasutamise.
+    Kui oled kasutamas uut võtit sama e-posti aadressi jaoks ja lisad selle avaliku võtme oma saadetavatele kirjadele, siis lisatakse automaatselt ka info vana võtme tühistamise kohta.
+# Strings in keyRing.jsm & decryption.jsm
+key-man-button-import = &Impordi
+delete-key-title = Kustuta OpenPGP võti
+delete-external-key-title = Eemalda väline GnuPG võti
+delete-external-key-description = Kas soovid eemaldada selle välise GnuPG võtme ID?
+key-in-use-title = OpenPGP võti on praegu kasutusel
+delete-key-in-use-description = Pole võimalik jätkata! Võti, mille valisid kustutamiseks, on praegu selle identiteedi poolt kasutuses. Vali teine võti või vali mitte ükski ja proovi siis uuesti.
+revoke-key-in-use-description = Pole võimalik jätkata! Võti, mille valisid tühistamiseks, on praegu selle identiteedi poolt kasutuses. Vali teine võti või vali mitte ükski ja proovi siis uuesti.
+# Strings used in errorHandling.jsm
+key-error-key-spec-not-found = E-posti aadressi ‘{ $keySpec }’ pole võimalik sobitada ühegi võtmega sinu võtmerõngal.
+key-error-key-id-not-found = Seadistatud võtit ‘{ $keySpec }’ pole võimalik sinu võtmerõngalt leida.
+key-error-not-accepted-as-personal = Sa pole kinnitanud, et võti IDga ‘{ $keySpec }’ on sinu isiklik võti.
+# Strings used in enigmailKeyManager.js & windows.jsm
+need-online = Valitud funktsionaalsus pole võrguta režiimis saadaval. Palun ühendu võrku ja proovi siis uuesti.
+# Strings used in keyRing.jsm & keyLookupHelper.jsm
+no-key-found = Me ei leidnud otsingule vastavat võtit.
+# Strings used in keyRing.jsm & GnuPGCryptoAPI.jsm
+fail-key-extract = Viga - võtme eksportimise käsk ebaõnnestus
+# Strings used in keyRing.jsm
+fail-cancel = Viga - võtme vastuvõtmine katkestati kasutaja poolt
+not-first-block = Viga - esimene OpenPGP plokk pole avaliku võtme plokk
+import-key-confirm = Kas importida kirjas sisalduvad avalikud võtmed?
+fail-key-import = Viga - võtme importimine ebaõnnestus
+file-write-failed = Faili { $output } kirjutamine ebaõnnestus
+no-pgp-block = Viga - kehtivat soomustatud OpenPGP andmete plokki ei leitud
+confirm-permissive-import = Importimine ebaõnnestus. Imporditav võti võib olla rikutud või kasutab tundmatuid atribuute. Kas soovid proovida importida korrektsed osad? See võib kaasa tuua mittetäielike ja kasutuskõlbmatute võtmete importimise.
+# Strings used in trust.jsm
+key-valid-unknown = tundmatu
+key-valid-invalid = vigane
+key-valid-disabled = keelatud
+key-valid-revoked = tühistatud
+key-valid-expired = aegunud
+key-trust-untrusted = ebausaldusväärne
+key-trust-marginal = marginaalne
+key-trust-full = usaldatud
+key-trust-ultimate = ülim
+key-trust-group = (grupp)
+# Strings used in commonWorkflows.js
+import-key-file = Impordi OpenPGP võtmefail
+import-rev-file = Impordi OpenPGP tühistusfail
+gnupg-file = GnuPG failid
+import-keys-failed = Võtmete importimine ebaõnnestus
+passphrase-prompt = Palun sisesta järgmise võtme avamiseks parool: { $key }
+file-to-big-to-import = Fail on liiga suur. Palun ära impordi suurt arvu võtmeid korraga.
+# Strings used in enigmailKeygen.js
+save-revoke-cert-as = Loo ja salvesta tühistussert
+revoke-cert-ok = Tühistussert on edukalt loodud. Sa võid seda kasutada, et tunnistada oma avalik võti kehtetuks, nt juhul kui oled kaotanud oma salajase võtme.
+revoke-cert-failed = Tühistusserti polnud võimalik luua.
+gen-going = Võtme genereerimine juba käib!
+keygen-missing-user-name = Valitud konto/identiteedi jaoks pole nime määratud. Palun sisesta konto sätetes väärtus väljale “Sinu nimi”.
+expiry-too-short = Võti peab kehtima vähemalt ühe päeva.
+expiry-too-long = Üle 100 aasta kehtivat võtit pole võimalik luua.
+key-confirm = Kas genereerida identiteedi ‘{ $id }’ jaoks avalik ja salajane võti?
+key-man-button-generate-key = &Genereeri võti
+key-abort = Kas katkestada võtme genereerimine?
+key-man-button-generate-key-abort = &Katkesta võtme genereerimine
+key-man-button-generate-key-continue = &Jätka võtme genereerimist
 
 # Strings used in enigmailMessengerOverlay.js
 
+failed-decrypt = Viga - dekrüptimine ebaõnnestus
+fix-broken-exchange-msg-failed = Seda kirja pole võimalik parandada.
+attachment-no-match-from-signature = Allkirjafaili ‘{ $attachment }’ polnud võimalik manusega sobitada
+attachment-no-match-to-signature = Manust ‘{ $attachment }’ polnud võimalik allkirjafailiga sobitada
+signature-verified-ok = Manuse { $attachment } allkiri kinnitati edukalt
+signature-verify-failed = Manuse { $attachment } allkirja polnud võimalik kontrollida
+decrypt-ok-no-sig =
+    Hoiatus
+    Dekrüptimine oli edukas, aga allkirja polnud võimalik õigesti kontrollida
+msg-ovl-button-cont-anyway = &Jätka ikkagi
+enig-content-note = *Selle kirja manuseid pole allkirjastatud ega krüptitud*
+# Strings used in enigmailMsgComposeOverlay.js
+msg-compose-button-send = &Saada kiri
+msg-compose-details-button-label = Üksikasjad…
+msg-compose-details-button-access-key = k
+send-aborted = Saatmisoperatsioon katkestati.
+key-not-trusted = Võtme ‘{ $key }’ usaldus pole piisav
+key-not-found = Võtit ‘{ $key }’ ei leitud
+key-revoked = Võti ‘{ $key }’ tühstati
+key-expired = Võti ‘{ $key }’ aegus
+msg-compose-internal-error = Esines sisemine viga.
+keys-to-export = Vali sisestatavad OpenPGP võtmed
+msg-compose-partially-encrypted-inlinePGP =
+    Kiri, millele vastad, sisaldas nii krüptimata kui krüptitud osi. Kui saatjal polnud võimalik mõndasid kirja osi algselt dekrüptida, siis sa võid lekitada konfidentsiaalset infot, mida saatja ise algselt dekrüptida ei saanud.
+    Palun kaalu kõigi tsiteeritud osade eemaldamist sellest vastusest saatjale.
+msg-compose-cannot-save-draft = Viga mustandi salvestamisel
+msg-compose-partially-encrypted-short = Hoidu tundliku info lekitamisest - osaliselt krüptitud kiri.
+quoted-printable-warn =
+    Oled kirjade saatmiseks lubanud kodeeringu ‘tsiteeritud-prinditav’. See võib põhjustada sinu kirja vale dekrüptimist ja/või kontrollimist.
+    Kas soovid ‘tsiteeritud-prinditav’ kirjade saatmise praegu välja lülitada?
+minimal-line-wrapping =
+    Sa oled määranud reamurdmise { $width } märgi peale. Korrektse krüptimise ja/või allkirjastamise jaoks peab see väärtus olema vähemalt 68.
+    Kas soovid reamurdmise muuta 68 märgi peale?
+sending-news =
+    Krüptitud saatmise toiming katkestati.
+    Seda kirja polnud võimalik krüptida, sest sellel on uudistegrupi adressaate. Palun proovi kirja uuesti saata ilma krüptimiseta.
+send-to-news-warning =
+    Hoiatus: oled saatmas krüptitud kirja uudistegrupile.
+    Seda ei soovitata teha, sest see on mõttekas ainult siis, kui kõik grupi liikmed saavad kirja dekrüptida (st, et kiri peaks olema krüptitud kõigi grupiliikmete võtmetega). Palun saada see kiri ainult siis, kui tead, mida teed.
+    Kas jätkata?
+save-attachment-header = Salvesta dekrüptitud manus
+no-temp-dir =
+    Ajutist kausta, kuhu kirjutada, ei leitud
+    Palun määra keskkonnamuutuja TEMP
+possibly-pgp-mime = Võimalik PGP/MIME krüptitud või allkirjastatud kiri, kontrollimiseks kasuta ‘dekrüptimise/kontrollimise’ funktsionaalsust
+cannot-send-sig-because-no-own-key = Seda kirja pole võimalik digitaalselt allkirjastada, sest sa pole veel seadistanud otspunktkrüptimist võtme <{ $key }> jaoks
+cannot-send-enc-because-no-own-key = Seda kirja pole võimalik krüptitult saata, sest sa pole veel seadistanud otspunktkrüptimist võtme <{ $key }> jaoks
+compose-menu-attach-key =
+    .label = Lisa minu avalik võti
+    .accesskey = L
+compose-menu-encrypt-subject =
+    .label = Teema krüptimine
+    .accesskey = T
+# Strings used in decryption.jsm
+do-import-multiple =
+    Kas importida järgnevad võtmed?
+    { $key }
+do-import-one = Kas importida { $name } ({ $id })?
+cant-import = Viga avaliku võtme importimisel
+unverified-reply = Tõenäoliselt muudeti taandega kirja osa (vastust)
+key-in-message-body = Kirja sisust leiti võti. Importimiseks klõpsa ‘Impordi võti’
+sig-mismatch = Viga - allkirja mittevastavus
+invalid-email = Viga - mittekorrektsed e-posti aadressid
+attachment-pgp-key =
+    Avatav manus ‘{ $name }’ tundub olevat OpenPGP võtmefail.
+    Võtmete importimiseks klõpsa ‘Impordi’ või faili sisu avamiseks brauseris klõpsa ‘Vaata’
+dlg-button-view = &Vaata
+# Strings used in enigmailMsgHdrViewOverlay.js
+decrypted-msg-with-format-error = Dekrüptitud kiri (taastatud katkise PGP e-kirja formaat, mille põhjustas tõenäoliselt vana Exhange'i server, nii et tulemus ei pruugi olla lugemiseks kõlblik)
+# Strings used in encryption.jsm
+not-required = Viga - krüptimine pole nõutud
+# Strings used in windows.jsm
+no-photo-available = Pilt pole saadaval
+error-photo-path-not-readable = Pildi asukoht ‘{ $photo }’ pole loetav
+debug-log-title = OpenPGP silumislogi
+# Strings used in dialog.jsm
+repeat-prefix = See hoiatus kordub { $count }
+repeat-suffix-singular = kord veel.
+repeat-suffix-plural = korda veel.
+no-repeat = Seda hoiatust enam ei kuvata.
+dlg-keep-setting = Vastus peetakse meeles ja rohkem enam ei küsita
+dlg-button-ok = &Sobib
+dlg-button-close = S&ulge
+dlg-button-cancel = &Loobu
+dlg-no-prompt = Seda akent rohkem ei näidata
+enig-prompt = OpenPGP dialoog
+enig-confirm = OpenPGP kinnitus
+enig-alert = OpenPGP hoiatus
+enig-info = OpenPGP teave
+# Strings used in persistentCrypto.jsm
+dlg-button-retry = &Proovi uuesti
+dlg-button-skip = &Jäta vahele
+# Strings used in enigmailMsgBox.js
+enig-alert-title =
+    .title = OpenPGP hoiatus

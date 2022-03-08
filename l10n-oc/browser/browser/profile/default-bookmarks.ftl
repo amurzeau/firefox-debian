@@ -10,6 +10,7 @@
 default-bookmarks-title = Marcapaginas
 default-bookmarks-heading = Marcapaginas
 default-bookmarks-toolbarfolder = Barra personala
+default-bookmarks-toolbarfolder-description = Apondètz de marcapaginas dins aqueste dossièr per los veire aparéisser sus vòstra barra personala
 # link title for https://www.mozilla.org/firefox/central/
 default-bookmarks-getting-started = Primièrs passes
 # Firefox links folder name
@@ -22,3 +23,11 @@ default-bookmarks-firefox-customize = Personalizar Firefox
 default-bookmarks-firefox-community = Participar
 # link title for https://www.mozilla.org/about/
 default-bookmarks-firefox-about = A prepaus de nosautres
+# Nightly builds only, link title for https://bugzilla.mozilla.org/
+default-bookmarks-bugzilla = Traçador d’anomalias Mozilla
+# Nightly builds only, link title for https://developer.mozilla.org/
+default-bookmarks-mdn = Ret de desvolopaires Mozilla
+# Nightly builds only, link title for about:crashes
+default-bookmarks-crashes = Totes vòstres plantatges
+# Nightly builds only, link title for https://planet.mozilla.org/
+default-bookmarks-planet = Planeta Mozilla

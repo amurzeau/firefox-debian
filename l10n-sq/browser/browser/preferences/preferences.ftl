@@ -359,6 +359,9 @@ update-application-warning-cross-user-setting = Ky rregullim do të zbatohet mbi
 update-application-use-service =
     .label = Për instalim përditësimesh përdor një shërbim në prapaskenë
     .accesskey = P
+update-application-suppress-prompts =
+    .label = Shfaq më pak njoftime për përditësim
+    .accesskey = m
 update-setting-write-failure-title2 = Gabim në ruajtje rregullimesh Përditësimi
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -864,6 +867,8 @@ sitedata-option-block-cross-site-tracking-cookies-including-social-media =
     .label = Cookies gjurmimi nga sajti në sajt — përfshin cookies mediash shoqërore
 sitedata-option-block-cross-site-cookies-including-social-media =
     .label = Cookies nga sajti në sajt — përfshin cookies mediash shoqërore
+sitedata-option-block-cross-site-tracking-cookies =
+    .label = Cookies gjurmimi nga sajte në sajte
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Gjurmues nga sajti në sajt dhe mediash shoqëroe, dhe izolo cookie-et e mbetura
 sitedata-option-block-unvisited =

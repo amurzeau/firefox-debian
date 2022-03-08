@@ -365,6 +365,9 @@ update-application-warning-cross-user-setting = Ta nastavitev bo uveljavljena v 
 update-application-use-service =
     .label = Uporabi storitev za nameščanje posodobitev v ozadju
     .accesskey = s
+update-application-suppress-prompts =
+    .label = Prikazuj manj obvestil o posodobitvah
+    .accesskey = m
 update-setting-write-failure-title2 = Napaka pri shranjevanju nastavitev posodobitev
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -532,7 +535,7 @@ home-prefs-recent-activity-description = Izbor nedavnih spletnih mest in vsebin
 home-prefs-snippets-header =
     .label = Izrezki
 home-prefs-snippets-description = Novice organizacije { -vendor-short-name } in { -brand-product-name }a
-home-prefs-snippets-description-new = Nasveti in novice organizacije { -vendor-short-name } in { -brand-product-name }a
+home-prefs-snippets-description-new = Nasveti in novice od { -vendor-short-name(sklon: "rodilnik") } in { -brand-product-name(sklon: "rodilnik") }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -872,6 +875,10 @@ sitedata-option-block-cross-site-tracking-cookies-including-social-media =
     .label = Spletne sledilne piškotke – vključuje piškotke družbenih omrežij
 sitedata-option-block-cross-site-cookies-including-social-media =
     .label = Spletne piškotke – vključuje piškotke družbenih omrežij
+sitedata-option-block-cross-site-tracking-cookies =
+    .label = Spletne sledilne piškotke
+sitedata-option-block-cross-site-cookies =
+    .label = Spletne sledilne piškotke in izoliraj ostale spletne piškotke
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Spletne sledilce in sledilce družbenih omrežij ter izoliraj preostale piškotke
 sitedata-option-block-unvisited =

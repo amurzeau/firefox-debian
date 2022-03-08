@@ -38,6 +38,9 @@ pocket-panel-signup-signup-firefox = Registrirajte se s { -brand-product-name }o
 pocket-panel-signup-tagline = Shranite članke in videe v { -brand-product-name }u in si jih oglejte na { -pocket-brand-name }u iz katere koli naprave.
 pocket-panel-signup-tagline-story-one = Kliknite gumb { -pocket-brand-name } v { -brand-product-name }u in shranite članek, video ali stran.
 pocket-panel-signup-tagline-story-two = Oglejte si v { -pocket-brand-name }u na kateri koli napravi.
+pocket-panel-signup-cta-a = Vaš gumb za shranjevanje za internet.
+pocket-panel-signup-cta-b = Kliknite gumb { -pocket-brand-name }, da shranite članke, videoposnetke in povezave. Oglejte si svoj seznam v kateri koli napravi in kadar koli.
+pocket-panel-signup-cta-c = Oglejte si svoj seznam na katerikoli napravi, kadarkoli.
 
 ## about:pocket-home panel
 
@@ -47,8 +50,16 @@ pocket-panel-home-paragraph = { -pocket-brand-name } lahko uporabljate za odkriv
 pocket-panel-home-explore-popular-topics = Razišči pogoste teme
 pocket-panel-home-discover-more = Odkrijte več
 pocket-panel-home-explore-more = Razišči
+pocket-panel-home-new-user-cta = Kliknite gumb { -pocket-brand-name } da shranite članke, videoposnetke in povezave.
+pocket-panel-home-new-user-message = Oglejte si svoje nedavne shranjene predmete.
 
 ## Pocket panel header component
 
 pocket-panel-header-my-list = Prikaži moj seznam
 pocket-panel-header-sign-in = Prijava
+
+## Pocket panel buttons
+
+pocket-panel-button-show-all = Prikaži vse
+pocket-panel-button-add-tags = Dodaj oznake
+pocket-panel-button-activate = Vključi { -pocket-brand-name } v { -brand-product-name(sklon: "mestnik") }

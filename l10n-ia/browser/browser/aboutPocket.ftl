@@ -38,6 +38,9 @@ pocket-panel-signup-signup-firefox = Inscribe te con { -brand-product-name }
 pocket-panel-signup-tagline = Salva articulos e videos ex { -brand-product-name } pro los vider in { -pocket-brand-name } sur omne apparatos, sempre.
 pocket-panel-signup-tagline-story-one = Clicca le button de { -pocket-brand-name } pro salvar cata articulo, video o pagina ex { -brand-product-name }.
 pocket-panel-signup-tagline-story-two = Vide in { -pocket-brand-name } sur omne apparatos, omne tempore.
+pocket-panel-signup-cta-a = Tu button Salvar pro internet.
+pocket-panel-signup-cta-b = Clicca le button { -pocket-brand-name } pro salvar articulos, videos e ligamines. Vide tu lista sur ulle apparato, quandocunque.
+pocket-panel-signup-cta-c = Vide tu lista sur ulle apparato, quandocunque.
 
 ## about:pocket-home panel
 
@@ -47,8 +50,17 @@ pocket-panel-home-paragraph = Tu pote usar { -pocket-brand-name } pro explorar e
 pocket-panel-home-explore-popular-topics = Explorar argumentos popular
 pocket-panel-home-discover-more = Discoperi plus
 pocket-panel-home-explore-more = Explorar
+pocket-panel-home-most-recent-saves = Ecce tu plus recente salvamentos:
+pocket-panel-home-new-user-cta = Clicca le button { -pocket-brand-name } pro salvar articulos, videos e ligamines.
+pocket-panel-home-new-user-message = Vide hic tu recente salvamentos.
 
 ## Pocket panel header component
 
 pocket-panel-header-my-list = Vider mi lista
 pocket-panel-header-sign-in = Aperir session
+
+## Pocket panel buttons
+
+pocket-panel-button-show-all = Monstrar toto
+pocket-panel-button-add-tags = Adder etiquettas
+pocket-panel-button-activate = Activa { -pocket-brand-name } in { -brand-product-name }

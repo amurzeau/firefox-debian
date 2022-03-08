@@ -7,7 +7,7 @@
 back = Til baka
 forward = Áfram
 reload = Endurhlaða
-home = Heim
+home = Upphafssíða
 fullscreen = Allur skjárinn
 touchbar-fullscreen-exit = Hætta í fullum skjá
 find = Leita
@@ -30,7 +30,7 @@ search-search-in = Leita í:
 search-bookmarks = Bókamerkjum
 search-history = Vafurferli
 search-opentabs = Opnum flipum
-search-tags = Merkingum
+search-tags = Merki
 search-titles = Titlum
 
 ##

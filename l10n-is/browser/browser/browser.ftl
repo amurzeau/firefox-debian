@@ -111,7 +111,7 @@ urlbar-tip-icon-description =
 ## Variables:
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
-urlbar-search-tips-onboard = Minni innsláttur, finna meira: Leitaðu með { $engineName } beint frá leitarslá.
+urlbar-search-tips-onboard = Minni innsláttur, finna meira: Leitaðu með { $engineName } beint úr veffangastikunni.
 urlbar-search-tips-redirect-2 = Byrjaðu að leita í veffangastikunni til að sjá tillögur frá { $engineName } og úr leitarferli þínum.
 # Prompts users to use the Urlbar when they are typing in the domain of a
 # search engine, e.g. google.com or amazon.com.
@@ -521,7 +521,7 @@ urlbar-result-action-search-tabs = Leita í flipum
 urlbar-group-firefox-suggest =
     .label = { -firefox-suggest-brand-name }
 # A label shown above the search suggestions group in the urlbar results. It
-# should use title case.
+# should use sentence case.
 # Variables
 #  $engine (String): the name of the search engine providing the suggestions
 urlbar-group-search-suggestions =
@@ -574,8 +574,8 @@ bookmarks-mobile-bookmarks-menu =
 bookmarks-tools-sidebar-visibility =
     .label =
         { $isVisible ->
-            [true] Fela bókamerki í hliðslá
-           *[other] Birta bókamerki í hliðslá
+            [true] Fela bókamerki á hliðarspjaldi
+           *[other] Birta bókamerki á hliðarspjaldi
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -769,12 +769,9 @@ navbar-overflow =
 navbar-print =
     .label = Prenta
     .tooltiptext = Prenta þessa síðu… ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = Prenta
-    .tooltiptext = Prenta síðu
 navbar-home =
-    .label = Heim
-    .tooltiptext = { -brand-short-name } Heimasíða
+    .label = Upphafssíða
+    .tooltiptext = { -brand-short-name } upphafssíða
 navbar-library =
     .label = Safn
     .tooltiptext = Skoða feril, vistuð bókamerki, og meira

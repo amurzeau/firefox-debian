@@ -5,9 +5,9 @@
 
 ## These strings are used in the about:preferences moreFromMozilla page
 
-more-from-moz-title = Diğer { -vendor-short-name } ürünleri
+more-from-moz-title = Diğer { -vendor-short-name } Ürünleri
 more-from-moz-category =
-    .tooltiptext = Diğer { -vendor-short-name } ürünleri
+    .tooltiptext = Diğer { -vendor-short-name } Ürünleri
 more-from-moz-subtitle = Sağlıklı bir interneti destekleyen diğer { -vendor-short-name } ürünlerine göz atın.
 more-from-moz-firefox-mobile-title = { -brand-product-name } Mobil
 more-from-moz-firefox-mobile-description = Gizliliğinizi ilk sıraya koyan mobil tarayıcı.
@@ -24,8 +24,13 @@ more-from-moz-mozilla-rally-description-advanced = Büyük teknoloji şirketleri
 # This string is specific to the product Mozilla Rally which is US only.
 more-from-moz-button-mozilla-rally =
     .label = { -rally-short-name }'ye katılın
+# This string is specific to the product Mozilla Rally which is US only.
+more-from-moz-button-mozilla-rally-2 = { -rally-short-name }'ye katılın
 more-from-moz-qr-code-box-firefox-mobile-title = Mobil cihazınızla indirin. QR kodunu kameranıza okutun. Bağlantı göründüğünde ona dokunun.
 more-from-moz-qr-code-box-firefox-mobile-button = Bunun yerine telefonuma e-posta gönder
 more-from-moz-button-mozilla-vpn =
     .label = VPN’e kaydolun
+more-from-moz-qr-code-firefox-mobile-img =
+    .alt = { -brand-product-name } Mobil’i indirmek için QR kodu
+more-from-moz-button-mozilla-vpn-2 = VPN’e kaydolun
 more-from-moz-learn-more-link = Daha fazla bilgi al

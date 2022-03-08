@@ -24,3 +24,11 @@ searchbar-input =
     .placeholder = Bilatu
 searchbar-icon =
     .tooltiptext = Bilatu
+
+## Infobar shown when search engine is removed and replaced.
+## Variables
+## $oldEngine (String) - the search engine to be removed.
+## $newEngine (String) - the search engine to replace the removed search engine.
+
+remove-search-engine-message = <strong>Zure bilaketa-motor lehenetsia aldatu egin da.</strong> Hemendik aurrera { -brand-short-name }(e)k ez du { $oldEngine } onartzen. { $newEngine } da zure bilaketa-motor lehenetsia orain. Beste bilaketa-motor lehenetsi batera aldatzeko, zoaz ezarpenetara. <label data-l10n-name="remove-search-engine-article">Argibide gehiago</label>
+remove-search-engine-button = Ados
