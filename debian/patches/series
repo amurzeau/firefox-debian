@@ -1,5 +1,6 @@
 fixes/Allow-.js-preference-files-to-set-locked-prefs-with-.patch
 fixes/Bug-1738845-Add-webrtc-configs-for-arm-and-ppc64-lin.patch
+fixes/Bug-1756347-part-1-Work-around-a-GCC-issue-with-gene.patch
 porting/Add-xptcall-support-for-SH4-processors.patch
 porting/NSS-Fix-FTBFS-on-Hurd-because-of-MAXPATHLEN.patch
 porting/Use-NEON_FLAGS-instead-of-VPX_ASFLAGS-for-libaom-neo.patch
