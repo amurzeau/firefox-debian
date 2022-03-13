@@ -156,3 +156,14 @@ spotlight-total-cookie-protection-body = Komple çerez koruması, takip kodları
 spotlight-total-cookie-protection-expanded = { -brand-short-name }, çerezlerin etrafına bir duvar örerek bulunduğunuz sitedeki çerezleri sadece o sitenin kullanmasına izin verir. Böylece takip kodları sizi izlemek için çerezleri kullanamaz. Erken erişim aşamasında bu özelliği deneyerek herkes için daha iyi bir web yaratmamıza yardımcı olabilirsiniz.
 spotlight-total-cookie-protection-primary-button = Komple çerez korumasını aç
 spotlight-total-cookie-protection-secondary-button = Daha sonra
+
+## Emotive Continuous Onboarding
+
+spotlight-better-internet-header = Daha iyi bir interneti seçtiniz
+spotlight-better-internet-body = { -brand-short-name } kullandığınızda tüm insanlık için daha açık ve daha erişilebilir bir interneti savunmuş oluyorsunuz.
+spotlight-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Dock’a sabitle
+       *[other] Görev çubuğuna sabitle
+    }
+spotlight-pin-secondary-button = Daha sonra
