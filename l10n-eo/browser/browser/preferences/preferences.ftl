@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = La etendaĵo <img 
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = La etendaĵo <img data-l10n-name="icon"/> { $name } regas la manieron, kiel { -brand-short-name } konektiĝas al la reto.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/><strong>{ $name }</strong> regas tiun ĉi agordon.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/><strong>{ $name }</strong> regas tiun ĉi agordon.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/><strong>{ $name }</strong> postulas ingajn langetojn.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/><strong>{ $name }</strong> regas tiun ĉi agordon.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>{ $name }</strong> regas la manieron, kiel { -brand-short-name } konektiĝas al la reto.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -187,6 +202,40 @@ containers-remove-cancel-button = Ne forigi tiun ĉi ingon
 
 language-and-appearance-header = Lingvo kaj aspekto
 fonts-and-colors-header = Tiparoj kaj koloroj
+preferences-web-appearance-header = Aspekto de retejoj
+preferences-web-appearance-description = Kelkaj retejoj adaptas siajn kolorarojn al viaj preferoj. Elektu la koloraron kiun vi ŝatus uzi por tiuj retejoj.
+preferences-web-appearance-choice-browser = Etoso de { -brand-short-name }
+preferences-web-appearance-choice-system = Sistema etoso
+preferences-web-appearance-choice-light = Hela
+preferences-web-appearance-choice-dark = Malhela
+preferences-web-appearance-choice-tooltip-browser =
+    .title = Kongruigi la etosajn agordojn de { -brand-short-name } kun la fono kaj enhavo de retejoj.
+preferences-web-appearance-choice-tooltip-system =
+    .title = Kongruigi viajn sistemajn agordojn por fono kaj enhavo de retejoj.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Uzi helan aspekton por fono enhavo de retejoj.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Uzi malhelan aspekton por fono enhavo de retejoj.
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Via elekto de koloroj superregas la aspekton de retejoj. <a data-l10n-name="colors-link">Administri kolorojn</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Administri la etosojn de { -brand-short-name } en <a data-l10n-name="themes-link">Etendaĵoj kaj etosoj</a>
+preferences-colors-header = Koloroj
+preferences-colors-description = Superregi la normajn kolorojn de { -brand-short-name } por teksto, fono de retejoj kaj ligiloj.
+preferences-colors-manage-button =
+    .label = Administri kolorojn…
+    .accesskey = k
+preferences-fonts-header = Tiparoj
 default-font = Norma tiparo
     .accesskey = o
 default-font-size = Grando
@@ -359,6 +408,9 @@ update-application-warning-cross-user-setting = Tiu ĉi agordo estos aplikita al
 update-application-use-service =
     .label = Uzi fonan servon por instali ĝisdatigojn
     .accesskey = f
+update-application-suppress-prompts =
+    .label = Montri malpli da sciigoj pri ĝisdatigoj
+    .accesskey = m
 update-setting-write-failure-title2 = Eraro dum konservo de ĝistadigaj agordoj
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -404,6 +456,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = Uzi glatan ŝovadon
     .accesskey = g
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Ĉiam montri ŝovstriojn
+    .accesskey = s
 browsing-use-onscreen-keyboard =
     .label = Montri tuŝklavaron se necesas
     .accesskey = k

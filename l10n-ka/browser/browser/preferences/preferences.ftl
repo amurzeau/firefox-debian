@@ -75,19 +75,34 @@ restart-later = მოგვიანებით გაშვება
 
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
-extension-controlled-password-saving = გაფართოება <img data-l10n-name="icon"/> { $name } მართავს ამ პარამეტრებს.
+extension-controlled-password-saving = გაფართოება <img data-l10n-name="icon"/> { $name } განსაზღვრავს ამ პარამეტრს.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
-extension-controlled-web-notifications = გაფართოება <img data-l10n-name="icon"/>{ $name } საზღვრავს ამ პარამეტრს.
+extension-controlled-web-notifications = გაფართოება <img data-l10n-name="icon"/> { $name } განსაზღვრავს ამ პარამეტრს.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name } გაფართოება საჭიროებს სათავს ჩანართებს.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = გაფართოება <img data-l10n-name="icon"/> { $name } მართავს ამ პარამეტრებს.
+extension-controlled-websites-content-blocking-all-trackers = გაფართოება <img data-l10n-name="icon"/> { $name } განსაზღვრავს ამ პარამეტრს.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
-extension-controlled-proxy-config = პარამეტრებს, რომლითც { -brand-short-name } უკავშირდება ინტერნეტს, განსაზღვრავს <img data-l10n-name="icon"/> { $name } გაფართოება.
+extension-controlled-proxy-config = გაფართოება <img data-l10n-name="icon"/> { $name } განსაზღვრავს, თუ როგორ უკავშირდება { -brand-short-name } ინტერნეტს.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> განსაზღვრავს ამ პარამეტრს.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/> <strong>{ $name }</strong> განსაზღვრავს ამ პარამეტრს.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> საჭიროებს სათავს ჩანართებს.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> განსაზღვრავს ამ პარამეტრს.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>{ $name }</strong> განსაზღვრავს, თუ როგორ უკავშირდება { -brand-short-name } ინტერნეტს.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -187,6 +202,32 @@ containers-remove-cancel-button = სათავსის დატოვებ
 
 language-and-appearance-header = ენა და იერსახე
 fonts-and-colors-header = შრიფტები და ფერები
+preferences-web-appearance-header = საიტის იერსახე
+preferences-web-appearance-description = ზოგიერთი ვებსაიტი თავის ფერებს უხამებს თქვენი პარამეტრებით მითითებულს. აირჩიეთ ფერები ამგვარი საიტებისთვის.
+preferences-web-appearance-choice-browser = { -brand-short-name } გაფორმება
+preferences-web-appearance-choice-system = სისტემური გაფორმება
+preferences-web-appearance-choice-light = ნათელი
+preferences-web-appearance-choice-dark = მუქი
+preferences-web-appearance-choice-tooltip-browser =
+    .title = შეუსაბამეთ თქვენი { -brand-short-name } გაფორმების პარამეტრები ვებსაიტის ფონსა და შიგთავსს.
+preferences-web-appearance-choice-tooltip-system =
+    .title = შეუსაბამეთ თქვენი სისტემის პარამეტრები ვებსაიტის ფონსა და შიგთავსს.
+preferences-web-appearance-choice-tooltip-light =
+    .title = გამოიყენეთ ნათელი იერსახე ვებსაიტის ფონისა და შიგთავსისთვის.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = გამოიყენეთ მუქი იერსახე ვებსაიტის ფონისა და შიგთავსისთვის.
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = თქვენ მიერ შერჩეული ფერები ჩაანაცვლებს საიტის გაფორმებას. <a data-l10n-name="colors-link">ფერების მართვა</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = გააფორმეთ { -brand-short-name } <a data-l10n-name="themes-link">გაფართოებებისა და თემების</a> განყოფილებიდან
+preferences-colors-header = ფერები
+preferences-colors-description = ყოველთვის ჩანაცვლდეს ნაწერის, საიტის ფონისა და ბმულების გაფორმება იმ ნაგულისხმევი ფერებით, რომელთაც { -brand-short-name } იყენებს.
+preferences-colors-manage-button =
+    .label = ფერების მართვა…
+    .accesskey = ფ
+preferences-fonts-header = შრიფტები
 default-font = შრიფტის შერჩევა
     .accesskey = შ
 default-font-size = ზომა
@@ -368,7 +409,7 @@ update-setting-write-failure-title2 = შეცდომა, განახლ�
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message2 =
-    { -brand-short-name } გადააწყდა შეცდომას და ცვლილება არ შეინახა. გაითვალისწინეთ, რომ განახლების ამ პარამეტრის ცვლილება საჭიროებს ქვემოთ მითითებულ ფაილში ჩაწერის ნებართვას. თქვენ ან თქვენი სისტემის მმართველს, შეუძლია ამის მოგვარება მომხმარებლის ჯგუფისთვის, ფაილის სრულად განკარგვის უფლების მინიჭებით.
+    { -brand-short-name } გადააწყდა შეცდომას და ცვლილება არ შეინახა. გაითვალისწინეთ, რომ განახლების ამ პარამეტრის ცვლილება საჭიროებს ქვემოთ მითითებულ ფაილში ჩაწერის ნებართვას. თქვენ ან თქვენი სისტემის ზედამხედველს, შეუძლია ამის მოგვარება მომხმარებლის ჯგუფისთვის, ფაილის სრულად განკარგვის უფლების მინიჭებით.
     
     ვერ მოხერხდა ჩაწერა ფაილში: { $path }
 update-in-progress-title = განახლება მიმდინარეობს
@@ -407,6 +448,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = გლუვი გადაადგილების გამოყენება
     .accesskey = გ
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = რბიის ზოლის გამოჩენა ყოველთვის
+    .accesskey = რ
 browsing-use-onscreen-keyboard =
     .label = ეკრანული კლავიატურის ჩვენება საჭიროების შემთხვევაში
     .accesskey = კ

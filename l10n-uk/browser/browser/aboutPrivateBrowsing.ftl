@@ -30,6 +30,16 @@ about-private-browsing-hide-activity = Приховуйте свою актив�
 about-private-browsing-get-privacy = Отримайте захист приватності в інтернеті всюди
 about-private-browsing-hide-activity-1 = Приховати активність перегляду та місцеперебування за допомогою { -mozilla-vpn-brand-name }. Одним натисканням створює безпечне з'єднання навіть у загальнодоступній мережі Wi-Fi.
 about-private-browsing-prominent-cta = Зберігайте приватність з { -mozilla-vpn-brand-name }
+about-private-browsing-focus-promo-cta = Завантажити { -focus-brand-name }
+about-private-browsing-focus-promo-header = { -focus-brand-name }: приватний перегляд у дорозі
+about-private-browsing-focus-promo-text = Наш спеціалізований мобільний застосунок для приватного перегляду щоразу очищає вашу історію та куки.
+
+## The following strings will be used for experiments in Fx99 and Fx100
+
+about-private-browsing-focus-promo-header-b = Перейдіть до приватного перегляду на своєму телефоні
+about-private-browsing-focus-promo-text-b = Користуйтеся { -focus-brand-name } для тих приватних пошуків, які ви хочете приховати від основного мобільного браузера.
+about-private-browsing-focus-promo-header-c = Приватність вищого рівня на мобільному пристрої
+about-private-browsing-focus-promo-text-c = { -focus-brand-name } щоразу очищує вашу історію, блокуючи рекламу та елементи стеження.
 # This string is the title for the banner for search engine selection
 # in a private window.
 # Variables:
@@ -44,3 +54,5 @@ about-private-browsing-search-banner-close-button =
     .aria-label = Закрити
 about-private-browsing-dismiss-button =
     .title = Відхилити
+about-private-browsing-promo-close-button =
+    .title = Закрити

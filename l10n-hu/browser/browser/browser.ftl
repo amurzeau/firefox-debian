@@ -769,9 +769,6 @@ navbar-overflow =
 navbar-print =
     .label = Nyomtatás
     .tooltiptext = Oldal kinyomtatása… ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = Nyomtatás
-    .tooltiptext = Oldal kinyomtatása
 navbar-home =
     .label = Kezdőlap
     .tooltiptext = { -brand-short-name } kezdőoldal
@@ -798,3 +795,10 @@ tabs-toolbar-list-all-tabs =
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
 restore-session-startup-suggestion-message = <strong>Megnyitná az előző lapokat?</strong> Visszaállíthatja az előző munkamenetét a { -brand-short-name } alkalmazásmenüben <img data-l10n-name="icon"/>, az Előzmények alatt.
 restore-session-startup-suggestion-button = Mutassa meg hogyan
+
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+
+data-reporting-notification-message = A { -brand-short-name } automatikusan adatokat küld a { -vendor-short-name } számára, hogy javíthassuk a felhasználói élményt.
+data-reporting-notification-button =
+    .label = Megosztandó adatok kiválasztása
+    .accesskey = v

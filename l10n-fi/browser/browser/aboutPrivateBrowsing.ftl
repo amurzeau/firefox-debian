@@ -30,6 +30,7 @@ about-private-browsing-hide-activity = Piilota toimintasi ja sijaintisi kaikkial
 about-private-browsing-get-privacy = Hanki yksityisyyden suojaa kaikkialle missä selaat
 about-private-browsing-hide-activity-1 = Piilota selaustoimintasi ja sijaintisi käyttäen { -mozilla-vpn-brand-name }:ää. Yksi napsautus luo suojatun yhteyden, jopa julkisissa wifi-verkoissa.
 about-private-browsing-prominent-cta = Pysy yksityisenä käyttäen { -mozilla-vpn-brand-name }:ää
+about-private-browsing-focus-promo-cta = Lataa { -focus-brand-name }
 # This string is the title for the banner for search engine selection
 # in a private window.
 # Variables:
@@ -38,3 +39,7 @@ about-private-browsing-search-banner-title = { $engineName } on oletushakukone y
 about-private-browsing-search-banner-description = Eri hakukoneen voi valita <a data-l10n-name="link-options">asetuksista</a>
 about-private-browsing-search-banner-close-button =
     .aria-label = Sulje
+about-private-browsing-dismiss-button =
+    .title = Hylkää
+about-private-browsing-promo-close-button =
+    .title = Sulje

@@ -82,20 +82,25 @@ restart-later = Riavvia in seguito
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
 extension-controlled-password-saving = Questa impostazione è attualmente gestita da un’estensione (<img data-l10n-name="icon"/> { $name }).
+extension-controlling-password-saving = Questa impostazione è attualmente gestita da <img data-l10n-name="icon"/> <strong>{ $name }</strong>.
 
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Questa impostazione è attualmente gestita da un’estensione (<img data-l10n-name="icon"/> { $name }).
+extension-controlling-web-notifications = Questa impostazione è attualmente gestita da <img data-l10n-name="icon"/> <strong>{ $name }</strong>.
 
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = Le schede contenitore sono necessarie per il funzionamento di un’estensione (<img data-l10n-name="icon"/> { $name }).
+extension-controlling-privacy-containers = Le schede contenitore sono necessarie per il funzionamento di <img data-l10n-name="icon"/> <strong>{ $name }</strong>.
 
 extension-controlled-websites-content-blocking-all-trackers = Questa impostazione è attualmente gestita da un’estensione (<img data-l10n-name="icon"/> { $name }).
+extension-controlling-websites-content-blocking-all-trackers = Questa impostazione è attualmente gestita da <img data-l10n-name="icon"/> <strong>{ $name }</strong>.
 
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Le impostazioni di { -brand-short-name } relative alla connessione a Internet sono attualmente gestite da un’estensione (<img data-l10n-name="icon"/> { $name }).
+extension-controlling-proxy-config = Le impostazioni di { -brand-short-name } relative alla connessione a Internet sono attualmente gestite da <img data-l10n-name="icon"/> <strong>{ $name }</strong>.
 
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
@@ -220,7 +225,56 @@ containers-remove-cancel-button = Non rimuovere questo contenitore
 
 language-and-appearance-header = Lingua e aspetto
 
+preferences-web-appearance-header = Aspetto dei siti web
+
+preferences-web-appearance-description = Alcuni siti web possono adattare il proprio schema di colori in base alle preferenze del visitatore. Scegli lo schema di colori da seguire per questi siti.
+
+preferences-web-appearance-choice-browser = Tema di { -brand-short-name }
+preferences-web-appearance-choice-system = Tema di sistema
+preferences-web-appearance-choice-light = Chiaro
+preferences-web-appearance-choice-dark = Scuro
+
+preferences-web-appearance-choice-tooltip-browser =
+  .title = Segui il tema di { -brand-short-name } per lo sfondo e i contenuti dei siti.
+preferences-web-appearance-choice-tooltip-system =
+  .title = Segui le impostazioni del sistema per lo sfondo e i contenuti dei siti.
+preferences-web-appearance-choice-tooltip-light =
+  .title = Preferisci una combinazione di colori chiara per lo sfondo e i contenuti dei siti.
+preferences-web-appearance-choice-tooltip-dark =
+  .title = Preferisci una combinazione di colori scura per lo sfondo e i contenuti dei siti.
+
+preferences-web-appearance-choice-input-browser =
+  .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+
+preferences-web-appearance-choice-input-system =
+  .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+
+preferences-web-appearance-choice-input-light =
+  .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+
+preferences-web-appearance-choice-input-dark =
+  .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Le impostazioni per l’aspetto dei siti web sono sostituite dall’attuale selezione di colori. <a data-l10n-name="colors-link">Gestisci colori</a>
+
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Gestisci i temi di { -brand-short-name } in <a data-l10n-name="themes-link">Estensioni e temi</a>
+
+
 fonts-and-colors-header = Caratteri e colori
+
+preferences-colors-header = Colori
+
+preferences-colors-description = Sostituisci i colori predefiniti di { -brand-short-name } per testo, sfondo dei siti e link.
+
+preferences-colors-manage-button =
+    .label = Gestisci colori…
+    .accesskey = r
+
+preferences-fonts-header = Caratteri
 
 default-font = Carattere predefinito
     .accesskey = C

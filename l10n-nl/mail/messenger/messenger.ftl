@@ -188,3 +188,62 @@ spaces-toolbar-button-settings =
     .title = Wisselen naar het instellingentabblad
 spaces-toolbar-button-collapse =
     .title = Taakbalk samenvouwen
+spaces-toolbar-button-reveal =
+    .title = Taakbalk tonen
+spaces-context-new-tab-item =
+    .label = Openen in nieuw tabblad
+spaces-context-new-window-item =
+    .label = Openen in nieuw venster
+# Variables:
+# $tabName (String) - The name of the tab this item will switch to.
+spaces-context-switch-tab-item =
+    .label = Wisselen naar { $tabName }
+settings-context-open-settings-item =
+    .label = Instellingen openen
+settings-context-open-account-settings-item =
+    .label = Accountinstellingen openen
+settings-context-open-addons-item =
+    .label = Add-ons en thema’s openen
+
+## Spaces toolbar pinned tab menupopup
+
+spaces-toolbar-pinned-tab-button =
+    .tooltiptext = Taakbalkmenu openen
+spaces-pinned-button-menuitem-mail =
+    .label = { spaces-toolbar-button-mail.title }
+spaces-pinned-button-menuitem-address-book =
+    .label = { spaces-toolbar-button-address-book.title }
+spaces-pinned-button-menuitem-calendar =
+    .label = { spaces-toolbar-button-calendar.title }
+spaces-pinned-button-menuitem-tasks =
+    .label = { spaces-toolbar-button-tasks.title }
+spaces-pinned-button-menuitem-chat =
+    .label = { spaces-toolbar-button-chat.title }
+spaces-pinned-button-menuitem-reveal =
+    .label = { spaces-toolbar-button-reveal.title }
+# Variables:
+# $count (Number) - Number of unread messages.
+chat-button-unread-messages = { $count }
+    .title =
+        { $count ->
+            [one] Eén ongelezen bericht
+           *[other] { $count } ongelezen berichten
+        }
+
+## Spaces toolbar customize panel
+
+spaces-context-customize =
+    .label = Aanpassen…
+spaces-customize-panel-title = Taakbalkinstellingen
+spaces-customize-background-color = Achtergrondkleur
+spaces-customize-icon-color = Knopkleur
+# The background color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-background-color = Achtergrondkleur van geselecteerde knop
+# The icon color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-text-color = Kleur geselecteerde knop
+spaces-customize-button-restore = Standaardwaarden herstellen
+    .accesskey = h
+spaces-customize-button-save = Gereed
+    .accesskey = G

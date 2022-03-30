@@ -162,3 +162,16 @@ spotlight-total-cookie-protection-body = Popolna zaščita pred piškotki prepre
 spotlight-total-cookie-protection-expanded = { -brand-short-name } ograjuje piškotke znotraj spletnega mesta, na katerem se nahajate, tako da jih sledilci ne morejo uporabiti, da bi vam sledili. Z zgodnjim dostopom boste pomagali izboljšati to zmogljivost, da bomo lahko še naprej gradili boljši splet za vse.
 spotlight-total-cookie-protection-primary-button = Vključi popolno zaščito pred piškotki
 spotlight-total-cookie-protection-secondary-button = Ne zdaj
+
+## Emotive Continuous Onboarding
+
+spotlight-better-internet-header = Boljši internet se začenja z vami
+spotlight-better-internet-body = Z uporabo { -brand-short-name(sklon: "rodilnik") } daste svoj glas odprtemu in dostopnemu internetu, ki bo boljši za vsakogar.
+spotlight-peace-mind-header = Stojimo vam ob strani
+spotlight-peace-mind-body = { -brand-short-name } vsak mesec v povprečju zavrne več kot 3000 sledilcev na uporabnika. Ker vam nič, še posebej pa ne sledilci in podobne nadloge, ne sme stati na poti do dobrega interneta.
+spotlight-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Obdrži v Docku
+       *[other] Pripni v opravilno vrstico
+    }
+spotlight-pin-secondary-button = Ne zdaj

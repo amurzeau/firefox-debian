@@ -762,9 +762,6 @@ navbar-overflow =
 navbar-print =
     .label = In
     .tooltiptext = In trang này… ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = In
-    .tooltiptext = In trang này
 navbar-home =
     .label = Trang chủ
     .tooltiptext = { -brand-short-name } Trang Chủ
@@ -791,3 +788,10 @@ tabs-toolbar-list-all-tabs =
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
 restore-session-startup-suggestion-message = <strong>Đã mở các thẻ trước đó?</strong> Bạn có thể khôi phục phiên trước đó của mình từ menu ứng dụng { -brand-short-name } <img data-l10n-name="icon"/>, trong mục Lịch sử.
 restore-session-startup-suggestion-button = Hướng dẫn cho tôi
+
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+
+data-reporting-notification-message = { -brand-short-name } tự động gửi dữ liệu về { -vendor-short-name } để chúng tôi có thể cải thiện trải nghiệm của bạn.
+data-reporting-notification-button =
+    .label = Chọn những thứ tôi muốn chia sẻ
+    .accesskey = C

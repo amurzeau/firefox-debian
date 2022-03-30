@@ -38,6 +38,11 @@ pocket-panel-signup-signup-firefox = ลงทะเบียนด้วย { -
 pocket-panel-signup-tagline = บันทึกบทความและวิดีโอจาก { -brand-product-name } เพื่อดูใน { -pocket-brand-name } บนอุปกรณ์ต่าง ๆ เวลาไหนก็ได้
 pocket-panel-signup-tagline-story-one = คลิกปุ่ม { -pocket-brand-name } เพื่อบันทึกบทความ วิดีโอ หรือหน้าจาก { -brand-product-name }
 pocket-panel-signup-tagline-story-two = ดูใน { -pocket-brand-name } บนอุปกรณ์ต่าง ๆ เวลาไหนก็ได้
+pocket-panel-signup-cta-a = ปุ่มบันทึกของคุณสำหรับอินเทอร์เน็ต
+pocket-panel-signup-cta-a-fix = ปุ่มบันทึกของคุณสำหรับอินเทอร์เน็ต
+pocket-panel-signup-cta-b = คลิกปุ่ม { -pocket-brand-name } เพื่อบันทึกบทความ วิดีโอ และลิงก์ ดูรายการของคุณบนอุปกรณ์ต่าง ๆ เวลาไหนก็ได้
+pocket-panel-signup-cta-b-short = คลิกปุ่ม { -pocket-brand-name } เพื่อบันทึกบทความ วิดีโอ และลิงก์
+pocket-panel-signup-cta-c = ดูรายการของคุณบนอุปกรณ์ต่าง ๆ เวลาไหนก็ได้
 
 ## about:pocket-home panel
 
@@ -47,8 +52,18 @@ pocket-panel-home-paragraph = คุณสามารถใช้ { -pocket-bra
 pocket-panel-home-explore-popular-topics = สำรวจหัวข้อยอดนิยม
 pocket-panel-home-discover-more = ค้นพบเพิ่มเติม
 pocket-panel-home-explore-more = สำรวจ
+pocket-panel-home-most-recent-saves = นี่คือรายการที่บันทึกล่าสุดของคุณ:
+pocket-panel-home-most-recent-saves-loading = กำลังโหลดรายการที่บันทึกล่าสุด…
+pocket-panel-home-new-user-cta = คลิกปุ่ม { -pocket-brand-name } เพื่อบันทึกบทความ วิดีโอ และลิงก์
+pocket-panel-home-new-user-message = ดูรายการที่บันทึกล่าสุดของคุณที่นี่
 
 ## Pocket panel header component
 
 pocket-panel-header-my-list = ดูรายการของฉัน
 pocket-panel-header-sign-in = ลงชื่อเข้า
+
+## Pocket panel buttons
+
+pocket-panel-button-show-all = แสดงทั้งหมด
+pocket-panel-button-add-tags = เพิ่มป้ายกำกับ
+pocket-panel-button-activate = เปิดใช้งาน { -pocket-brand-name } ใน { -brand-product-name }

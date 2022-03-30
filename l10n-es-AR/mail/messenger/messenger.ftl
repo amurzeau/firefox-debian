@@ -173,7 +173,7 @@ decrypt-and-copy-failures = { $failures } de { $total } mensajes no pudieron ser
 ## Spaces toolbar
 
 spaces-toolbar =
-    .toolbarname = Barra de herramientas Espacios
+    .toolbarname = Barra de herramientas de Espacios
 spaces-toolbar-button-mail =
     .title = Cambiar a la pestaña de Correo
 spaces-toolbar-button-address-book =
@@ -188,3 +188,62 @@ spaces-toolbar-button-settings =
     .title = Cambiar a la pestaña de Preferencias
 spaces-toolbar-button-collapse =
     .title = Contraer la barra de Espacios
+spaces-toolbar-button-reveal =
+    .title = Mostrar la barra de Espacios
+spaces-context-new-tab-item =
+    .label = Abrir en una nueva pestaña
+spaces-context-new-window-item =
+    .label = Abrir en nueva ventana
+# Variables:
+# $tabName (String) - The name of the tab this item will switch to.
+spaces-context-switch-tab-item =
+    .label = Cambiar a { $tabName }
+settings-context-open-settings-item =
+    .label = Abrir configuración
+settings-context-open-account-settings-item =
+    .label = Abrir configuración de cuenta
+settings-context-open-addons-item =
+    .label = Abrir complementos y temas
+
+## Spaces toolbar pinned tab menupopup
+
+spaces-toolbar-pinned-tab-button =
+    .tooltiptext = Abrir menú de Espacios
+spaces-pinned-button-menuitem-mail =
+    .label = { spaces-toolbar-button-mail.title }
+spaces-pinned-button-menuitem-address-book =
+    .label = { spaces-toolbar-button-address-book.title }
+spaces-pinned-button-menuitem-calendar =
+    .label = { spaces-toolbar-button-calendar.title }
+spaces-pinned-button-menuitem-tasks =
+    .label = { spaces-toolbar-button-tasks.title }
+spaces-pinned-button-menuitem-chat =
+    .label = { spaces-toolbar-button-chat.title }
+spaces-pinned-button-menuitem-reveal =
+    .label = { spaces-toolbar-button-reveal.title }
+# Variables:
+# $count (Number) - Number of unread messages.
+chat-button-unread-messages = { $count }
+    .title =
+        { $count ->
+            [one] Un mensaje sin leer
+           *[other] { $count } mensajes sin leer
+        }
+
+## Spaces toolbar customize panel
+
+spaces-context-customize =
+    .label = Personalizar…
+spaces-customize-panel-title = Configuración de la barra de Espacios
+spaces-customize-background-color = Color de fondo
+spaces-customize-icon-color = Color del botón
+# The background color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-background-color = Color de fondo del botón seleccionado
+# The icon color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-text-color = Color del botón seleccionado
+spaces-customize-button-restore = Restaurar predeterminados
+    .accesskey = R
+spaces-customize-button-save = Listo
+    .accesskey = L

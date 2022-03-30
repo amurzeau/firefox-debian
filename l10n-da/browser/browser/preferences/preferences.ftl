@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = Udvidelsen <img da
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Udvidelsen <img data-l10n-name="icon"/> { $name } kontrollerer, hvordan { -brand-short-name } opretter forbindelse til internettet.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/><strong>{ $name }</strong> kontrollerer denne indstilling.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/><strong>{ $name }</strong> kontrollerer denne indstilling.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/><strong>{ $name }</strong> kræver, at kontekst-faneblade er aktiveret.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/><strong>{ $name }</strong> kontrollerer denne indstilling.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>{ $name }</strong> kontrollerer, hvordan { -brand-short-name } opretter forbindelse til internettet.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -187,6 +202,32 @@ containers-remove-cancel-button = Fjern ikke denne kontekst
 
 language-and-appearance-header = Sprog og udseende
 fonts-and-colors-header = Skrifttyper & farver
+preferences-web-appearance-header = Websteds-udseende
+preferences-web-appearance-description = Nogle websteder tilpasser deres farvetema efter dine præferencer. Vælg, hvilket farvetema, du ønsker at bruge til disse websteder.
+preferences-web-appearance-choice-browser = { -brand-short-name }-tema
+preferences-web-appearance-choice-system = Systemets tema
+preferences-web-appearance-choice-light = Lyst
+preferences-web-appearance-choice-dark = Mørkt
+preferences-web-appearance-choice-tooltip-browser =
+    .title = Match tema-indstillingerne i { -brand-short-name } for websteders baggrund og indhold
+preferences-web-appearance-choice-tooltip-system =
+    .title = Match dine systemindstillinger for websteders baggrund og indhold.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Brug lyst udseende for websteders baggrund og indhold.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Brug mørkt udseende for websteders baggrund og indhold.
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Dine farvevalg tilsidesætter webstedets udseende. <a data-l10n-name="colors-link">Håndter farver</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Håndter { -brand-short-name }-temaer i <a data-l10n-name="themes-link">Udvidelser og temaer</a>
+preferences-colors-header = Farver
+preferences-colors-description = Tilsidesæt { -brand-short-name }' standardfarver for tekst, websteds-baggrunde og links.
+preferences-colors-manage-button =
+    .label = Håndter farver…
+    .accesskey = f
+preferences-fonts-header = Skrifttyper
 default-font = Standardskrifttype:
     .accesskey = k
 default-font-size = Størrelse:
@@ -407,6 +448,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = Anvend blød scrolling
     .accesskey = b
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Vis altid rullebjælker
+    .accesskey = u
 browsing-use-onscreen-keyboard =
     .label = Vis et berørings-tastatur, når det er nødvendigt
     .accesskey = t

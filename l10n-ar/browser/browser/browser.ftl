@@ -785,9 +785,6 @@ navbar-overflow =
 navbar-print =
     .label = اطبع
     .tooltiptext = اطبع هذه الصّفحة… ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = اطبع
-    .tooltiptext = اطبع هذه الصفحة
 navbar-home =
     .label = البداية
     .tooltiptext = صفحة بداية { -brand-short-name }
@@ -814,3 +811,10 @@ tabs-toolbar-list-all-tabs =
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
 restore-session-startup-suggestion-message = <strong>أتريد فتح الألسنة الأخيرة؟</strong> يمكنك استعادة الجلسة السابقة من قائمة تطبيق { -brand-short-name } <img data-l10n-name="icon"/>، ضمن قائمة التأريخ.
 restore-session-startup-suggestion-button = ما الطريقة؟
+
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+
+data-reporting-notification-message = يُرسل { -brand-short-name } بعض البيانات تلقائيا إلى { -vendor-short-name } لمساعدتنا في تحسين متصفّحك.
+data-reporting-notification-button =
+    .label = اختر ما الذي أشاركه
+    .accesskey = خ

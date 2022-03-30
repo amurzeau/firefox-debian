@@ -17,9 +17,12 @@ pocket-panel-saved-error-tag-length = La lunghezza massima per le etichette è d
 pocket-panel-saved-error-only-links = È possibile salvare solo link
 pocket-panel-saved-error-not-saved = Pagina non salvata
 pocket-panel-saved-error-no-internet = È necessario essere connessi a Internet per poter salvare in { -pocket-brand-name }. Connettersi a Internet e riprovare.
+pocket-panel-saved-error-remove = Si è verificato un errore durante la rimozione di questa pagina.
 pocket-panel-saved-page-removed = Pagina rimossa
 pocket-panel-saved-page-saved = Salvata in { -pocket-brand-name }
+pocket-panel-saved-page-saved-b = Salvata in { -pocket-brand-name }.
 pocket-panel-saved-processing-remove = Rimozione pagina…
+pocket-panel-saved-removed = Pagina rimossa da Il mio elenco
 pocket-panel-saved-processing-tags = Salvataggio etichette…
 pocket-panel-saved-remove-page = Rimuovi pagina
 pocket-panel-saved-save-tags = Salva
@@ -27,6 +30,8 @@ pocket-panel-saved-saving-tags = Salvataggio…
 pocket-panel-saved-suggested-tags = Etichette suggerite
 pocket-panel-saved-tags-saved = Aggiunte etichette
 pocket-panel-signup-view-list = Visualizza elenco
+# This is displayed above a field where the user can add tags
+pocket-panel-signup-add-tags = Aggiungi etichette:
 
 ## about:pocket-signup panel
 
@@ -40,8 +45,8 @@ pocket-panel-signup-tagline = Salva articoli e video da { -brand-product-name } 
 pocket-panel-signup-tagline-story-one = Fai clic sul pulsante { -pocket-brand-name } per salvare qualunque articolo, video o pagina da { -brand-product-name }.
 pocket-panel-signup-tagline-story-two = Visualizza in { -pocket-brand-name } da qualunque dispositivo e in qualunque momento.
 
-pocket-panel-signup-cta-a = Il tuo pulsante "salva" per Internet.
-pocket-panel-signup-cta-a-fix = Il tuo pulsante "salva" per Internet
+pocket-panel-signup-cta-a = Il tuo pulsante “salva” per Internet.
+pocket-panel-signup-cta-a-fix = Il tuo pulsante “salva” per Internet
 pocket-panel-signup-cta-b = Fai clic sul pulsante { -pocket-brand-name } per salvare articoli, video e link. Visualizza il tuo elenco su qualsiasi dispositivo, in qualsiasi momento.
 pocket-panel-signup-cta-b-short = Fai clic sul pulsante { -pocket-brand-name } per salvare articoli, video e link.
 pocket-panel-signup-cta-c = Visualizza il tuo elenco su qualsiasi dispositivo, in qualsiasi momento.
@@ -62,7 +67,7 @@ pocket-panel-home-new-user-message = Controlla qui gli ultimi elementi salvati.
 
 ## Pocket panel header component
 
-pocket-panel-header-my-list = Visualizza il mio elenco
+pocket-panel-header-my-list = Visualizza Il mio elenco
 pocket-panel-header-sign-in = Accedi
 
 ## Pocket panel buttons
@@ -70,3 +75,4 @@ pocket-panel-header-sign-in = Accedi
 pocket-panel-button-show-all = Visualizza tutto
 pocket-panel-button-add-tags = Aggiungi etichette
 pocket-panel-button-activate = Attiva { -pocket-brand-name } in { -brand-product-name }
+pocket-panel-button-remove = Rimuovi

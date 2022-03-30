@@ -84,6 +84,12 @@ expand-attachment-pane-tooltip =
     .tooltiptext = Εμφάνιση του πίνακα συνημμένων ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
     .tooltiptext = Απόκρυψη του πίνακα συνημμένων ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count-value =
+    { $count ->
+        [1] { $count } συνημμένο
+       *[other] { $count } συνημμένα
+    }
 attachment-area-show =
     .title = Εμφάνιση πίνακα συνημμένων ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -239,8 +245,21 @@ encrypted-bcc-ignore-button = Κατάλαβα
 compose-tool-button-remove-text-styling =
     .tooltiptext = Κατάργηση μορφοποίησης κειμένου
 
-## FileLink
+## Filelink
 
+# A text used in a tooltip of Filelink attachments, whose account has been
+# removed or is unknown.
+cloud-file-unknown-account-tooltip = Μεταφορτώθηκε σε άγνωστο λογαριασμό FileLink.
+
+# Placeholder file
+
+# Title for the html placeholder file.
+# $filename - name of the file
+cloud-file-placeholder-title = { $filename } - Συνημμένο FileLink
+# A text describing that the file was attached as a Filelink and can be downloaded
+# from the link shown below.
+# $filename - name of the file
+cloud-file-placeholder-intro = Το αρχείο «{ $filename }» επισυνάφθηκε ως FileLink. Μπορείτε να κάνετε λήψη του από τον παρακάτω σύνδεσμο.
 
 # Template
 
@@ -251,13 +270,6 @@ cloud-file-count-header =
     { $count ->
         [one] Έχω συνδέσει { $count } αρχείο σε αυτό το email:
        *[other] Έχω συνδέσει { $count } αρχεία σε αυτό το email:
-    }
-# A text used in a footer, instructing the reader where to find additional
-# information about the used service providers.
-cloud-file-service-provider-footer =
-    { $count ->
-        [one] Μάθετε περισσότερα σχετικά με το { $lastLink }.
-       *[other] Μάθετε περισσότερα σχετικά με το { $firstLinks } και το { $lastLink }.
     }
 # A text used in a footer, instructing the reader where to find additional
 # information about the used service provider.
@@ -274,13 +286,13 @@ cloud-file-service-provider-footer-multiple = Μάθετε περισσότερ�
 # Tooltip for an icon, indicating that the link is protected by a password.
 cloud-file-tooltip-password-protected-link = Σύνδεσμος με κωδικό πρόσβασης
 # Used in a list of stats about a specific file
-# Service - the used service provider to host the file (CloudFile Service: BOX.com)
+# Service - the used service provider to host the file (Filelink Service: BOX.com)
 # Size - the size of the file (Size: 4.2 MB)
 # Link - the link to the file (Link: https://some.provider.com)
 # Expiry Date - stating the date the link will expire (Expiry Date: 12.12.2022)
 # Download Limit - stating the maximum allowed downloads, before the link becomes invalid
 #                  (Download Limit: 6)
-cloud-file-template-service = Υπηρεσία CloudFile:
+cloud-file-template-service-name = Υπηρεσία FileLink:
 cloud-file-template-size = Μέγεθος:
 cloud-file-template-link = Σύνδεσμος:
 cloud-file-template-password-protected-link = Σύνδεσμος με κωδικό πρόσβασης:
@@ -304,3 +316,9 @@ cloud-file-rename-error = Παρουσιάστηκε πρόβλημα με τη 
 cloud-file-rename-error-with-custom-message-title = Η μετονομασία του { $filename } στο { $provider } απέτυχε
 # $provider (string) - name of the online storage service that reported the error
 cloud-file-rename-not-supported = Το { $provider } δεν υποστηρίζει τη μετονομασία των ήδη ανεβασμένων αρχείων.
+# $filename (string) - name of the file that was renamed and caused the error
+cloud-file-attachment-error-title = Σφάλμα συνημμένου FileLink
+cloud-file-attachment-error = Αποτυχία ενημέρωσης του συνημμένου «{ $filename }» στο FileLink, επειδή το τοπικό του αρχείο έχει μετακινηθεί ή διαγραφεί.
+# $filename (string) - name of the file that was renamed and caused the error
+cloud-file-account-error-title = Σφάλμα λογαριασμού FileLink
+cloud-file-account-error = Αποτυχία ενημέρωσης του συνημμένου «{ $filename }» στο FileLink, επειδή ο λογαριασμός FileLink του έχει διαγραφεί.

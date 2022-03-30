@@ -360,6 +360,13 @@ popups-infobar-dont-show-message =
     .label = Ši alhabaroo cebe waati kaŋ biiboŋ batawey gagayandi
     .accesskey = D
 
+## Since the default position for PiP controls does not change for RTL layout,
+## right-to-left languages should use "Left" and "Right" as in the English strings,
+
+
+##
+
+
 # Navigator Toolbox
 
 navbar-downloads =
@@ -371,9 +378,6 @@ navbar-overflow =
 navbar-print =
     .label = Kar
     .tooltiptext = Moɲoo woo kar… ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = Kar
-    .tooltiptext = Moɲoo woo kar
 navbar-search =
     .title = Ceeci
 # Name for the tabs toolbar as spoken by screen readers. The word
@@ -386,3 +390,13 @@ tabs-toolbar-new-tab =
 tabs-toolbar-list-all-tabs =
     .label = Kanjey kul šeedandi
     .tooltiptext = Kanjey kul šeedandi
+
+## Infobar shown at startup to suggest session-restore
+
+
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+
+data-reporting-notification-message = { -brand-short-name } ga bayhaya fooyaŋ sanba nga boŋ se { -vendor-short-name } do hal'ir ma war goyoo boryandi ka tonton.
+data-reporting-notification-button =
+    .label = Suuba woo kaŋ ay g'a žemna
+    .accesskey = S

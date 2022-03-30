@@ -30,6 +30,16 @@ about-private-browsing-hide-activity = Rejtse el tevékenységét és tartózkod
 about-private-browsing-get-privacy = Szerezzen adatvédelmet, bárhol is böngésszen
 about-private-browsing-hide-activity-1 = Rejtse el a böngészési tevékenységét és a tartózkodási helyét a { -mozilla-vpn-brand-name } használatával. Egy kattintással biztonságos kapcsolatot hozhat létre, még nyilvános Wi-Fin is.
 about-private-browsing-prominent-cta = Maradjon privát a { -mozilla-vpn-brand-name } használatával
+about-private-browsing-focus-promo-cta = A { -focus-brand-name } letöltése
+about-private-browsing-focus-promo-header = { -focus-brand-name }: Privát böngészés útközben
+about-private-browsing-focus-promo-text = A dedikált privát mobilböngésző alkalmazásunk minden alkalommal törli az előzményeket és a sütiket.
+
+## The following strings will be used for experiments in Fx99 and Fx100
+
+about-private-browsing-focus-promo-header-b = Vigye a privát böngészést a telefonjára
+about-private-browsing-focus-promo-text-b = Használja a { -focus-brand-name }t azokhoz a privát keresésekhez, amelyeket nem szeretné, hogy a fő mobilböngészője lásson.
+about-private-browsing-focus-promo-header-c = Magasabb szintű adatvédelem mobilon
+about-private-browsing-focus-promo-text-c = A { -focus-brand-name } minden egyes alkalommal törli az előzményeket, miközben blokkolja a reklámokat és a követőket.
 # This string is the title for the banner for search engine selection
 # in a private window.
 # Variables:
@@ -44,3 +54,5 @@ about-private-browsing-search-banner-close-button =
     .aria-label = Bezárás
 about-private-browsing-dismiss-button =
     .title = Eltüntetés
+about-private-browsing-promo-close-button =
+    .title = Bezárás

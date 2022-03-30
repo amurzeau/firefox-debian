@@ -85,6 +85,13 @@ expand-attachment-pane-tooltip =
     .tooltiptext = Sýna viðhengjaspjaldið ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
     .tooltiptext = Fela viðhengjaspjaldið ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count-value =
+    { $count ->
+        [1] { $count } viðhengi
+        [one] { $count } viðhengi
+       *[other] { $count } viðhengi
+    }
 attachment-area-show =
     .title = Sýna viðhengjaspjaldið ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -240,8 +247,21 @@ encrypted-bcc-ignore-button = Skilið
 compose-tool-button-remove-text-styling =
     .tooltiptext = Fjarlægja stíl texta
 
-## FileLink
+## Filelink
 
+# A text used in a tooltip of Filelink attachments, whose account has been
+# removed or is unknown.
+cloud-file-unknown-account-tooltip = Sent inn á óþekktan Filelink-reikning.
+
+# Placeholder file
+
+# Title for the html placeholder file.
+# $filename - name of the file
+cloud-file-placeholder-title = { $filename } - Filelink-viðhengi
+# A text describing that the file was attached as a Filelink and can be downloaded
+# from the link shown below.
+# $filename - name of the file
+cloud-file-placeholder-intro = Skráin { $filename } var hengd við sem Filelink. Það er hægt að sækja hana með tenglinum hér fyrir neðan.
 
 # Template
 
@@ -252,13 +272,6 @@ cloud-file-count-header =
     { $count ->
         [one] Ég hef tengt { $count } skrá við þennan tölvupóst:
        *[other] Ég hef tengt { $count } skrár við þennan tölvupóst:
-    }
-# A text used in a footer, instructing the reader where to find additional
-# information about the used service providers.
-cloud-file-service-provider-footer =
-    { $count ->
-        [one] Frekari upplýsingar um { $lastLink }.
-       *[other] Frekari upplýsingar um { $firstLinks } og { $lastLink }.
     }
 # A text used in a footer, instructing the reader where to find additional
 # information about the used service provider.
@@ -275,13 +288,13 @@ cloud-file-service-provider-footer-multiple = Frekari upplýsingar um { $firstLi
 # Tooltip for an icon, indicating that the link is protected by a password.
 cloud-file-tooltip-password-protected-link = Lykilorðsvarinn tengill
 # Used in a list of stats about a specific file
-# Service - the used service provider to host the file (CloudFile Service: BOX.com)
+# Service - the used service provider to host the file (Filelink Service: BOX.com)
 # Size - the size of the file (Size: 4.2 MB)
 # Link - the link to the file (Link: https://some.provider.com)
 # Expiry Date - stating the date the link will expire (Expiry Date: 12.12.2022)
 # Download Limit - stating the maximum allowed downloads, before the link becomes invalid
 #                  (Download Limit: 6)
-cloud-file-template-service = CloudFile-þjónusta:
+cloud-file-template-service-name = Filelink-þjónusta:
 cloud-file-template-size = Stærð:
 cloud-file-template-link = Tengill:
 cloud-file-template-password-protected-link = Lykilorðsvarinn tengill:
@@ -305,3 +318,9 @@ cloud-file-rename-error = Vandamál kom upp við að endurnefna { $filename } á
 cloud-file-rename-error-with-custom-message-title = Mistókst að endurnefna { $filename } á { $provider }
 # $provider (string) - name of the online storage service that reported the error
 cloud-file-rename-not-supported = { $provider } styður ekki að endurnefna skrár sem þegar hafa verið sendar inn.
+# $filename (string) - name of the file that was renamed and caused the error
+cloud-file-attachment-error-title = Villa í Filelink-viðhengi
+cloud-file-attachment-error = Mistókst að uppfæra Filelink-viðhengið { $filename } vegna þess að skrá þess á tækinu hefur verið færð eða henni eytt.
+# $filename (string) - name of the file that was renamed and caused the error
+cloud-file-account-error-title = Villa í Filelink-reikningi
+cloud-file-account-error = Mistókst að uppfæra Filelink-viðhengið { $filename } vegna þess að Filelink-reikningi þess hefur verið eytt.

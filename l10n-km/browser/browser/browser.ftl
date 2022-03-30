@@ -429,6 +429,13 @@ popups-infobar-dont-show-message =
     .label = កុំ​បង្ហាញ​សារ​នេះ ​ពេល​ដែល​បង្អួច​លេចឡើង​ត្រូវ​បាន​ទប់ស្កាត់
     .accesskey = D
 
+## Since the default position for PiP controls does not change for RTL layout,
+## right-to-left languages should use "Left" and "Right" as in the English strings,
+
+
+##
+
+
 # Navigator Toolbox
 
 navbar-downloads =
@@ -440,9 +447,6 @@ navbar-overflow =
 navbar-print =
     .label = បោះពុម្ព
     .tooltiptext = បោះពុម្ព​ទំព័រ​នេះ… ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = បោះពុម្ព
-    .tooltiptext = បោះពុម្ព​ទំព័រ​នេះ
 navbar-home =
     .label = ដើម
     .tooltiptext = ទំព័រ​ដើម { -brand-short-name }
@@ -463,3 +467,13 @@ tabs-toolbar-new-tab =
 tabs-toolbar-list-all-tabs =
     .label = រាយបញ្ជី​​ផ្ទាំង​ទាំងអស់
     .tooltiptext = រាយបញ្ជី​​ផ្ទាំង​ទាំងអស់
+
+## Infobar shown at startup to suggest session-restore
+
+
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+
+data-reporting-notification-message = { -brand-short-name } ផ្ញើ​ទិន្នន័យ​មួយ​ចំនួន​ដោយ​ស្វ័យប្រវត្តិ​ទៅកាន់ { -vendor-short-name } ដូច្នេះ​យើង​អាច​ធ្វើឲ្យ​បទពិសោធន៍​របស់​អ្នក​ប្រសើរ​ឡើង។
+data-reporting-notification-button =
+    .label = ជ្រើស​អ្វី​ដែល​ខ្ញុំ​ចែករំលែក
+    .accesskey = C

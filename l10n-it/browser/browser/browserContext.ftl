@@ -179,6 +179,10 @@ main-context-menu-copy-email =
     .label = Copia indirizzo email
     .accesskey = e
 
+main-context-menu-copy-phone =
+    .label = Copia numero di telefono
+    .accesskey = f
+
 main-context-menu-copy-link-simple =
     .label = Copia link
     .accesskey = a
@@ -453,10 +457,6 @@ main-context-menu-eme-learn-more =
 main-context-menu-open-link-in-container-tab =
     .label = Apri link in nuova scheda { $containerName }
     .accesskey = s
-
-main-context-menu-toggle-show-password =
-    .label = Mostra password
-    .accesskey = w
 
 main-context-menu-reveal-password =
     .label = Rivela password

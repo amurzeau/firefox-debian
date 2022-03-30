@@ -190,6 +190,24 @@ spaces-toolbar-button-collapse =
     .title = Collapse spaces toolbar
 spaces-toolbar-button-reveal =
     .title = Show the spaces toolbar
+spaces-toolbar-button-mail2 =
+    .title = Mail
+spaces-toolbar-button-address-book2 =
+    .title = Address Book
+spaces-toolbar-button-calendar2 =
+    .title = Calendar
+spaces-toolbar-button-tasks2 =
+    .title = Tasks
+spaces-toolbar-button-chat2 =
+    .title = Chat
+spaces-toolbar-button-overflow =
+    .title = More spaces…
+spaces-toolbar-button-settings2 =
+    .title = Settings
+spaces-toolbar-button-hide =
+    .title = Hide Spaces Toolbar
+spaces-toolbar-button-show =
+    .title = Show Spaces Toolbar
 spaces-context-new-tab-item =
     .label = Open in new tab
 spaces-context-new-window-item =
@@ -221,3 +239,33 @@ spaces-pinned-button-menuitem-chat =
     .label = { spaces-toolbar-button-chat.title }
 spaces-pinned-button-menuitem-reveal =
     .label = { spaces-toolbar-button-reveal.title }
+spaces-pinned-button-menuitem-settings =
+    .label = { spaces-toolbar-button-settings2.title }
+spaces-pinned-button-menuitem-show =
+    .label = { spaces-toolbar-button-show.title }
+# Variables:
+# $count (Number) - Number of unread messages.
+chat-button-unread-messages = { $count }
+    .title =
+        { $count ->
+            [one] One unread message
+           *[other] { $count } unread messages
+        }
+
+## Spaces toolbar customize panel
+
+spaces-context-customize =
+    .label = Customise…
+spaces-customize-panel-title = Spaces Toolbar Settings
+spaces-customize-background-color = Background colour
+spaces-customize-icon-color = Button colour
+# The background color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-background-color = Selected button background colour
+# The icon color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-text-color = Selected button colour
+spaces-customize-button-restore = Restore Defaults
+    .accesskey = R
+spaces-customize-button-save = Done
+    .accesskey = D

@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = Una extensión, <i
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Una extensión, <img data-l10n-name="icon"/> { $name }, controla cómo se conecta { -brand-short-name } a Internet.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> controla este ajuste.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/> <strong>{ $name }</strong> controla este ajuste.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> requiere pestañas contenedoras.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> controla este ajuste.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name="icon"/> <strong>{ $name }</strong> controla cómo se conecta { -brand-short-name } a Internet.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -187,6 +202,32 @@ containers-remove-cancel-button = No eliminar este contenedor
 
 language-and-appearance-header = Idioma y apariencia
 fonts-and-colors-header = Tipografías y colores
+preferences-web-appearance-header = Apariencia del sitio web
+preferences-web-appearance-description = Algunos sitios web adaptan su combinación de colores según las preferencias. Elija qué combinación de colores le gustaría usar para esos sitios.
+preferences-web-appearance-choice-browser = Tema de { -brand-short-name }
+preferences-web-appearance-choice-system = Tema del sistema
+preferences-web-appearance-choice-light = Claro
+preferences-web-appearance-choice-dark = Oscuro
+preferences-web-appearance-choice-tooltip-browser =
+    .title = Seguir la configuración de su tema de { -brand-short-name } para los fondos y el contenido del sitio web.
+preferences-web-appearance-choice-tooltip-system =
+    .title = Seguir la configuración de su sistema para los fondos y el contenido del sitio web.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Usar una apariencia clara para los fondos y el contenido del sitio web.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Usar una apariencia oscura para los fondos y el contenido del sitio web.
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Sus selecciones de color anulan la apariencia del sitio web. <a data-l10n-name="colors-link">Administrar colores</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Administre los temas de { -brand-short-name } en <a data-l10n-name="themes-link">Extensiones y temas</a>
+preferences-colors-header = Colores
+preferences-colors-description = Anular los colores predeterminados de { -brand-short-name } para texto, fondos de sitios web y enlaces.
+preferences-colors-manage-button =
+    .label = Administrar colores…
+    .accesskey = c
+preferences-fonts-header = Tipos de letra
 default-font = Tipografía predeterminada
     .accesskey = T
 default-font-size = Tamaño
@@ -407,6 +448,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = Usar desplazamiento suave
     .accesskey = v
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Mostrar siempre las barras de desplazamiento
+    .accesskey = o
 browsing-use-onscreen-keyboard =
     .label = Mostrar un teclado táctil cuando sea necesario
     .accesskey = s

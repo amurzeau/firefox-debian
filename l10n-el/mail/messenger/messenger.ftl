@@ -188,3 +188,84 @@ spaces-toolbar-button-settings =
     .title = Εναλλαγή στην καρτέλα ρυθμίσεων
 spaces-toolbar-button-collapse =
     .title = Σύμπτυξη γραμμής χώρων
+spaces-toolbar-button-reveal =
+    .title = Εμφάνιση γραμμής χώρων
+spaces-toolbar-button-mail2 =
+    .title = Αλληλογραφία
+spaces-toolbar-button-address-book2 =
+    .title = Ευρετήριο
+spaces-toolbar-button-calendar2 =
+    .title = Ημερολόγιο
+spaces-toolbar-button-tasks2 =
+    .title = Εργασίες
+spaces-toolbar-button-chat2 =
+    .title = Συνομιλία
+spaces-toolbar-button-overflow =
+    .title = Περισσότεροι χώροι…
+spaces-toolbar-button-settings2 =
+    .title = Ρυθμίσεις
+spaces-toolbar-button-hide =
+    .title = Απόκρυψη γραμμής χώρων
+spaces-toolbar-button-show =
+    .title = Εμφάνιση γραμμής χώρων
+spaces-context-new-tab-item =
+    .label = Άνοιγμα σε νέα καρτέλα
+spaces-context-new-window-item =
+    .label = Άνοιγμα σε νέο παράθυρο
+# Variables:
+# $tabName (String) - The name of the tab this item will switch to.
+spaces-context-switch-tab-item =
+    .label = Εναλλαγή σε { $tabName }
+settings-context-open-settings-item =
+    .label = Άνοιγμα ρυθμίσεων
+settings-context-open-account-settings-item =
+    .label = Άνοιγμα ρυθμίσεων λογαριασμού
+settings-context-open-addons-item =
+    .label = Άνοιγμα προσθέτων και θεμάτων
+
+## Spaces toolbar pinned tab menupopup
+
+spaces-toolbar-pinned-tab-button =
+    .tooltiptext = Άνοιγμα μενού χώρων
+spaces-pinned-button-menuitem-mail =
+    .label = { spaces-toolbar-button-mail.title }
+spaces-pinned-button-menuitem-address-book =
+    .label = { spaces-toolbar-button-address-book.title }
+spaces-pinned-button-menuitem-calendar =
+    .label = { spaces-toolbar-button-calendar.title }
+spaces-pinned-button-menuitem-tasks =
+    .label = { spaces-toolbar-button-tasks.title }
+spaces-pinned-button-menuitem-chat =
+    .label = { spaces-toolbar-button-chat.title }
+spaces-pinned-button-menuitem-reveal =
+    .label = { spaces-toolbar-button-reveal.title }
+spaces-pinned-button-menuitem-settings =
+    .label = { spaces-toolbar-button-settings2.title }
+spaces-pinned-button-menuitem-show =
+    .label = { spaces-toolbar-button-show.title }
+# Variables:
+# $count (Number) - Number of unread messages.
+chat-button-unread-messages = { $count }
+    .title =
+        { $count ->
+            [one] Ένα μη αναγνωσμένο μήνυμα
+           *[other] { $count } μη αναγνωσμένα μηνύματα
+        }
+
+## Spaces toolbar customize panel
+
+spaces-context-customize =
+    .label = Προσαρμογή…
+spaces-customize-panel-title = Ρυθμίσεις γραμμής χώρων
+spaces-customize-background-color = Χρώμα φόντου
+spaces-customize-icon-color = Χρώμα κουμπιού
+# The background color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-background-color = Επιλεγμένο χρώμα φόντου κουμπιού
+# The icon color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-text-color = Επιλεγμένο χρώμα κουμπιού
+spaces-customize-button-restore = Επαναφορά προεπιλογών
+    .accesskey = φ
+spaces-customize-button-save = Τέλος
+    .accesskey = Τ

@@ -156,3 +156,16 @@ spotlight-total-cookie-protection-body = Der vollständige Cookie-Schutz hindert
 spotlight-total-cookie-protection-expanded = { -brand-short-name } baut einen Zaun um Cookies und beschränkt sie auf die Website, auf der Sie sich befinden, sodass Elemente zur Aktivitätenverfolgung sie nicht verwenden können, um Ihnen zu folgen. Durch die Vorab-Nutzung helfen Sie, diese Funktion zu optimieren, damit wir weiterhin ein besseres Web für alle aufbauen können.
 spotlight-total-cookie-protection-primary-button = Vollständigen Cookie-Schutz aktivieren
 spotlight-total-cookie-protection-secondary-button = Nicht jetzt
+
+## Emotive Continuous Onboarding
+
+spotlight-better-internet-header = Ein besseres Internet fängt bei Ihnen an
+spotlight-better-internet-body = Wenn Sie { -brand-short-name } verwenden, stimmen Sie für ein offenes und zugängliches Internet, welches für jeden von uns von Vorteil ist.
+spotlight-peace-mind-header = Wir haben für Sie vorgesorgt
+spotlight-peace-mind-body = { -brand-short-name } blockiert jeden Monat durchschnittlich über 3.000 Elemente zur Aktivitätenverfolgung pro Nutzer. Denn nichts, besonders nicht Störer der Privatsphäre wie Elemente zur Aktivitätenverfolgung, sollte zwischen Ihnen und dem guten Internet stehen.
+spotlight-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Im Dock behalten
+       *[other] An Taskleiste anheften
+    }
+spotlight-pin-secondary-button = Nicht jetzt

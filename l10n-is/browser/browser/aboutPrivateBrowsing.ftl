@@ -20,7 +20,7 @@ about-private-browsing-handoff-no-engine =
 about-private-browsing-handoff-text = Leitaðu með { $engine } eða settu inn vistfang
 about-private-browsing-handoff-text-no-engine = Leitaðu eða settu inn vistfang
 about-private-browsing-not-private = Þú ert ekki í huliðsglugga.
-about-private-browsing-info-description = { -brand-short-name } hreinsar leitar- og vafraferilinn þinn þegar þú lokar forritinu eða lokar öllum huliðsflipum og gluggum. Þó að þetta sé ekki nafnlaust gagnvart vefsíðum eða þjónustuveitu þinni, gerir það auðveldara að halda því sem þú gerir á netinu hulið gagnvart einkaaðilum sem nota þessa tölvu.
+about-private-browsing-info-description = { -brand-short-name } hreinsar leitar- og vafraferilinn þinn þegar þú lokar forritinu eða lokar öllum huliðsflipum og gluggum. Þó að þetta sé ekki nafnlaust gagnvart vefsíðum eða netþjónustuveitunni þinni, gerir það auðveldara að halda því sem þú gerir á netinu hulið gagnvart einkaaðilum sem nota þessa tölvu.
 about-private-browsing-need-more-privacy = Þarftu meira næði?
 about-private-browsing-turn-on-vpn = Prófaðu { -mozilla-vpn-brand-name }
 about-private-browsing-info-description-private-window = Huliðsgluggi: { -brand-short-name } hreinsar leitar- og vafraferilinn þinn þegar þú lokar öllum huliðsgluggum. Þetta gerir þig ekki nafnlausan á netinu.
@@ -30,6 +30,16 @@ about-private-browsing-hide-activity = Feldu virkni þína og staðsetningu, hva
 about-private-browsing-get-privacy = Fáðu persónuvernd hvar sem þú vafrar
 about-private-browsing-hide-activity-1 = Feldu vafravirkni og staðsetningu með { -mozilla-vpn-brand-name }. Einn smellur útbýr örugga tengingu, jafnvel á þráðlausum Wi-Fi almenningsnetum.
 about-private-browsing-prominent-cta = Haltu þig til hlés með { -mozilla-vpn-brand-name }
+about-private-browsing-focus-promo-cta = Sækja { -focus-brand-name }
+about-private-browsing-focus-promo-header = { -focus-brand-name }: Einkavafur á ferðinni
+about-private-browsing-focus-promo-text = Einkavafurforritið okkar fyrir farsíma hreinsar feril þinn og vefkökur eftir hvert skipti.
+
+## The following strings will be used for experiments in Fx99 and Fx100
+
+about-private-browsing-focus-promo-header-b = Fáðu einkavafur í símann þinn
+about-private-browsing-focus-promo-text-b = Notaðu { -focus-brand-name } fyrir þær persónulegu leitir sem þú vilt ekki að aðalfarsímavafrinn þinn sjái.
+about-private-browsing-focus-promo-header-c = Næsta stig persónuverndar í farsímum
+about-private-browsing-focus-promo-text-c = { -focus-brand-name } hreinsar ferilinn þinn eftir hverja notkun, jafnframt því að loka á auglýsingar og rekjara.
 # This string is the title for the banner for search engine selection
 # in a private window.
 # Variables:
@@ -44,3 +54,5 @@ about-private-browsing-search-banner-close-button =
     .aria-label = Loka
 about-private-browsing-dismiss-button =
     .title = Hafna
+about-private-browsing-promo-close-button =
+    .title = Loka

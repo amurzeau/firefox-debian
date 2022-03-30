@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = <img data-l10n-nam
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = <img data-l10n-name="icon"/> { $name } 확장 기능이 { -brand-short-name }가 인터넷에 접근하는 방법을 제어하고 있습니다.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> 확장 기능이 이 설정을 제어합니다.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/> <strong>{ $name }</strong> 확장 기능이 이 설정을 제어합니다.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> 확장 기능에는 컨테이너 탭이 필요합니다.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> 확장 기능이 이 설정을 제어합니다.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>{ $name }</strong> 확장 기능은 { -brand-short-name }가 인터넷에 연결하는 방법을 제어합니다.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -175,6 +190,40 @@ containers-remove-cancel-button = 이 컨테이너 삭제하지 않음
 
 language-and-appearance-header = 언어와 모양
 fonts-and-colors-header = 글꼴과 색상
+preferences-web-appearance-header = 웹 사이트 모양
+preferences-web-appearance-description = 일부 웹 사이트는 사용자 설정에 따라 색 구성표를 조정합니다. 이러한 사이트에 사용할 색 구성표를 선택하세요.
+preferences-web-appearance-choice-browser = { -brand-short-name } 테마
+preferences-web-appearance-choice-system = 시스템 테마
+preferences-web-appearance-choice-light = 밝게
+preferences-web-appearance-choice-dark = 어둡게
+preferences-web-appearance-choice-tooltip-browser =
+    .title = 웹 사이트 배경 및 콘텐츠를 { -brand-short-name } 테마 설정과 일치시킵니다.
+preferences-web-appearance-choice-tooltip-system =
+    .title = 웹 사이트 배경 및 콘텐츠를 시스템 설정과 일치시킵니다.
+preferences-web-appearance-choice-tooltip-light =
+    .title = 웹 사이트 배경 및 콘텐츠에 밝은 화면 배색을 사용합니다.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = 웹 사이트 배경 및 콘텐츠에 어두운 화면 배색을 사용합니다.
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = 선택한 색상이 웹 사이트 화면 배색보다 우선합니다. <a data-l10n-name="colors-link">색상 관리</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = <a data-l10n-name="themes-link">확장 기능 및 테마</a>에서 { -brand-short-name } 테마 관리
+preferences-colors-header = 색상
+preferences-colors-description = 텍스트, 웹 사이트 배경 및 링크에 대한 { -brand-short-name }의 기본 색상을 재정의합니다.
+preferences-colors-manage-button =
+    .label = 색상 관리…
+    .accesskey = C
+preferences-fonts-header = 글꼴
 default-font = 기본 글꼴
     .accesskey = D
 default-font-size = 크기
@@ -395,6 +444,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = 부드러운 스크롤 사용
     .accesskey = m
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = 항상 스크롤 막대 표시
+    .accesskey = o
 browsing-use-onscreen-keyboard =
     .label = 필요하면 터치 키보드 보여주기
     .accesskey = k

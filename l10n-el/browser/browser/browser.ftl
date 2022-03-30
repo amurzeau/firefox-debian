@@ -766,9 +766,6 @@ navbar-overflow =
 navbar-print =
     .label = Εκτύπωση
     .tooltiptext = Εκτύπωση σελίδας… ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = Εκτύπωση
-    .tooltiptext = Εκτύπωση σελίδας
 navbar-home =
     .label = Αρχική σελίδα
     .tooltiptext = Αρχική σελίδα του { -brand-short-name }
@@ -795,3 +792,10 @@ tabs-toolbar-list-all-tabs =
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
 restore-session-startup-suggestion-message = <strong>Άνοιγμα προηγούμενων καρτελών;</strong> Μπορείτε να ανακτήσετε την προηγούμενη συνεδρία σας από το μενού εφαρμογής του { -brand-short-name } <img data-l10n-name="icon"/>, στην ενότητα «Ιστορικό».
 restore-session-startup-suggestion-button = Εμφάνιση οδηγιών
+
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+
+data-reporting-notification-message = Το { -brand-short-name } στέλνει αυτόματα μερικά δεδομένα στη { -vendor-short-name }, έτσι ώστε να μπορέσουμε να βελτιώσουμε την εμπειρία σας.
+data-reporting-notification-button =
+    .label = Επιλέξτε τι θα μοιράζεστε
+    .accesskey = ξ

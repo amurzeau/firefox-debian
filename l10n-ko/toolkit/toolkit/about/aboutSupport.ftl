@@ -72,6 +72,12 @@ app-basics-location-service-key-google = Google 위치 서비스 키
 app-basics-safebrowsing-key-google = Google Safebrowsing 키
 app-basics-key-mozilla = Mozilla 위치 서비스 키
 app-basics-safe-mode = 안전 모드
+app-basics-memory-size = 메모리 크기 (램)
+app-basics-disk-available = 사용 가능한 디스크 공간
+# Variables:
+#   $value (number) - Amount of data being stored
+#   $unit (string) - The unit of data being stored (e.g. MB)
+app-basics-data-size = { $value } { $unit }
 show-dir-label =
     { PLATFORM() ->
         [macos] Finder에서 보기
@@ -81,7 +87,7 @@ show-dir-label =
 environment-variables-title = 환경 변수
 environment-variables-name = 이름
 environment-variables-value = 값
-experimental-features-title = 실험적인 기능
+experimental-features-title = 실험 기능
 experimental-features-name = 이름
 experimental-features-value = 값
 modified-key-prefs-title = 중요한 변경된 환경 설정

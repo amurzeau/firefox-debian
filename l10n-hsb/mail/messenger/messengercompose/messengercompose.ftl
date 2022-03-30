@@ -93,6 +93,15 @@ expand-attachment-pane-tooltip =
     .tooltiptext = Wobłuk přiwěškow pokazać ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
     .tooltiptext = Wobłuk přiwěškow schować ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count-value =
+    { $count ->
+        [1] { $count } přiwěšk
+        [one] { $count } přiwěšk
+        [two] { $count } přiwěškaj
+        [few] { $count } přiwěški
+       *[other] { $count } přiwěškow
+    }
 attachment-area-show =
     .title = Wobłuk přiwěškow pokazać ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -256,8 +265,21 @@ encrypted-bcc-ignore-button = Sym zrozumił
 compose-tool-button-remove-text-styling =
     .tooltiptext = Tekstowy stil wotstronić
 
-## FileLink
+## Filelink
 
+# A text used in a tooltip of Filelink attachments, whose account has been
+# removed or is unknown.
+cloud-file-unknown-account-tooltip = Je so do njeznateho konta Filelink nahrało.
+
+# Placeholder file
+
+# Title for the html placeholder file.
+# $filename - name of the file
+cloud-file-placeholder-title = { $filename } - přiwěšk Filelink
+# A text describing that the file was attached as a Filelink and can be downloaded
+# from the link shown below.
+# $filename - name of the file
+cloud-file-placeholder-intro = Dataja { $filename } je so jako Filelink připowěsnyła. Da so z pomocu slědowaceho wotkaza sćahnyć.
 
 # Template
 
@@ -270,15 +292,6 @@ cloud-file-count-header =
         [two] Sym { $count } dataji z tutej mejlku zwjazał:
         [few] Sym { $count } dataje z tutej mejlku zwjazał:
        *[other] Sym { $count } datajow z tutej mejlku zwjazał:
-    }
-# A text used in a footer, instructing the reader where to find additional
-# information about the used service providers.
-cloud-file-service-provider-footer =
-    { $count ->
-        [one] Dalše informacije wo { $lastLink }.
-        [two] Dalše informacije wo { $firstLinks } a { $lastLink }.
-        [few] Dalše informacije wo { $firstLinks } a { $lastLink }.
-       *[other] Dalše informacije wo { $firstLinks } a { $lastLink }.
     }
 # A text used in a footer, instructing the reader where to find additional
 # information about the used service provider.
@@ -295,13 +308,13 @@ cloud-file-service-provider-footer-multiple = Dalše informacije wo { $firstLink
 # Tooltip for an icon, indicating that the link is protected by a password.
 cloud-file-tooltip-password-protected-link = Přez hesło škitany wotkaz
 # Used in a list of stats about a specific file
-# Service - the used service provider to host the file (CloudFile Service: BOX.com)
+# Service - the used service provider to host the file (Filelink Service: BOX.com)
 # Size - the size of the file (Size: 4.2 MB)
 # Link - the link to the file (Link: https://some.provider.com)
 # Expiry Date - stating the date the link will expire (Expiry Date: 12.12.2022)
 # Download Limit - stating the maximum allowed downloads, before the link becomes invalid
 #                  (Download Limit: 6)
-cloud-file-template-service = Słužba CloudFile:
+cloud-file-template-service-name = Słužba Filelink:
 cloud-file-template-size = Wulkosć:
 cloud-file-template-link = Wotkaz
 cloud-file-template-password-protected-link = Přez hesło škitany wotkaz:
@@ -325,3 +338,9 @@ cloud-file-rename-error = Při přemjenowanju { $filename } na { $provider } je 
 cloud-file-rename-error-with-custom-message-title = Přemjenowanje { $filename }  na { $provider } njeje so poradźiło
 # $provider (string) - name of the online storage service that reported the error
 cloud-file-rename-not-supported = { $provider } přemjenowanje hižo nahratych datajow njepodpěruje.
+# $filename (string) - name of the file that was renamed and caused the error
+cloud-file-attachment-error-title = Přiwěškowy zmylk Filelink
+cloud-file-attachment-error = Přiwěšk { $filename } Filelink njeda so aktualizować, dokelž jeho lokalna dataja je so přesunyła abo zhašała.
+# $filename (string) - name of the file that was renamed and caused the error
+cloud-file-account-error-title = Kontowy zmylk Filelink
+cloud-file-account-error = Přiwěšk { $filename } Filelink njeda so aktualizować, dokelž jeho lokalna dataja je so zhašała.

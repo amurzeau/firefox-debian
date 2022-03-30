@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = Die Erweiterung <i
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Die Erweiterung "<img data-l10n-name="icon"/> { $name }" kontrolliert, wie { -brand-short-name } mit dem Internet verbindet.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> kontrolliert diese Einstellung.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/> <strong>{ $name }</strong> kontrolliert diese Einstellung.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> verwaltet die Tab-Umgebungen.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> kontrolliert diese Einstellung.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>{ $name }</strong> kontrolliert, wie sich { -brand-short-name } mit dem Internet verbindet.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -187,6 +202,40 @@ containers-remove-cancel-button = Umgebung behalten
 
 language-and-appearance-header = Sprache und Erscheinungsbild
 fonts-and-colors-header = Schriftarten & Farben
+preferences-web-appearance-header = Erscheinungsbild von Websites
+preferences-web-appearance-description = Einige Websites passen ihr Farbschema basierend auf Ihren Einstellungen an. Wählen Sie aus, welches Farbschema Sie für diese Websites verwenden möchten.
+preferences-web-appearance-choice-browser = { -brand-short-name }-Theme
+preferences-web-appearance-choice-system = System-Theme
+preferences-web-appearance-choice-light = Hell
+preferences-web-appearance-choice-dark = Dunkel
+preferences-web-appearance-choice-tooltip-browser =
+    .title = Hintergründe und Inhalte von Websites an die Theme-Einstellungen von { -brand-short-name } anpassen
+preferences-web-appearance-choice-tooltip-system =
+    .title = Hintergründe und Inhalte von Websites an die Systemeinstellungen anpassen
+preferences-web-appearance-choice-tooltip-light =
+    .title = Ein helles Erscheinungsbild für Hintergründe und Inhalte von Websites verwenden
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Ein dunkles Erscheinungsbild für Hintergründe und Inhalte von Websites verwenden
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Ihre Farbauswahl überschreibt das Erscheinungsbild von Websites. <a data-l10n-name="colors-link">Farben verwalten</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Verwalten Sie { -brand-short-name }-Themes in <a data-l10n-name="themes-link">Erweiterungen & Themes</a>.
+preferences-colors-header = Farben
+preferences-colors-description = Standardfarben von { -brand-short-name } für Text, Website-Hintergründe und Links überschreiben
+preferences-colors-manage-button =
+    .label = Farben verwalten…
+    .accesskey = F
+preferences-fonts-header = Schriftarten
 default-font = Standard-Schriftart
     .accesskey = S
 default-font-size = Größe
@@ -407,6 +456,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = Sanften Bildlauf aktivieren
     .accesskey = S
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Bildlaufleisten immer anzeigen
+    .accesskey = B
 browsing-use-onscreen-keyboard =
     .label = Bildschirmtastatur falls notwendig anzeigen
     .accesskey = B

@@ -159,6 +159,8 @@ about-debugging-tmp-extension-reload-button = Ricarica
 
 about-debugging-tmp-extension-remove-button = Rimuovi
 
+about-debugging-tmp-extension-terminate-bgscript-button = Interrompi script in background
+
 about-debugging-tmp-extension-install-message = Seleziona un file manifest.json o un archivio .xpi/.zip
 
 about-debugging-tmp-extension-temporary-id = Questa WebExtension ha un ID temporaneo. <a>Ulteriori informazioni</a>
@@ -174,6 +176,18 @@ about-debugging-extension-location =
 
 about-debugging-extension-id =
   .label = ID estensione
+
+# Text displayed for extensions in "runtime" pages, before displaying the status of the
+# extension background script.
+about-debugging-extension-backgroundscript =
+  .label = Script in background
+
+# Displayed for extension using a non-persistent background page (either an event page or
+# background service worker) when the background script is currently running.
+about-debugging-extension-backgroundscript-status-running = In esecuzione
+
+# Displayed for extension using a non-persistent background page when is currently stopped.
+about-debugging-extension-backgroundscript-status-stopped = Bloccato
 
 about-debugging-worker-action-push2 = Push
   .disabledTitle = “Push” è attualmente disattivato per service worker in { -brand-shorter-name } multiprocesso.

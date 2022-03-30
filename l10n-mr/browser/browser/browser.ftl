@@ -461,6 +461,13 @@ picture-in-picture-hide-toggle =
     .label = पिक्चर-इन-पिक्चर टॉगल लपवा
     .accesskey = H
 
+## Since the default position for PiP controls does not change for RTL layout,
+## right-to-left languages should use "Left" and "Right" as in the English strings,
+
+
+##
+
+
 # Navigator Toolbox
 
 # This string is a spoken label that should not include
@@ -477,9 +484,6 @@ navbar-overflow =
 navbar-print =
     .label = छापा
     .tooltiptext = ह्या पृष्ठाची छपाई करा… ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = छापा
-    .tooltiptext = हे पृष्ठ छापा
 navbar-home =
     .label = घर, आरंभस्थळ
     .tooltiptext = { -brand-short-name } मुख्यपृष्ठ
@@ -500,3 +504,13 @@ tabs-toolbar-new-tab =
 tabs-toolbar-list-all-tabs =
     .label = सर्व टॅब्स्ची सूची
     .tooltiptext = सर्व टॅब्स्ची सूची
+
+## Infobar shown at startup to suggest session-restore
+
+
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+
+data-reporting-notification-message = { -brand-short-name } आपोआप काही डाटा { -vendor-short-name } करिता पाठवतो ज्यामुळे आपला अनुभव सुधारित होतो.
+data-reporting-notification-button =
+    .label = मी काय शेअर करतो ते पसंत करा
+    .accesskey = C

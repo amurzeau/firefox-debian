@@ -99,6 +99,17 @@ expand-attachment-pane-tooltip =
     .tooltiptext = Dangos y paen atodi ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
     .tooltiptext = Cuddio'r paen atodi ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count-value =
+    { $count ->
+        [1] { $count } Atodiad
+        [zero] { $count } Atodiadau
+        [one] { $count } Atodiad
+        [two] { $count } Atodiad
+        [few] { $count } Atodiad
+        [many] { $count } Atodiad
+       *[other] { $count } Atodiad
+    }
 attachment-area-show =
     .title = Dangos y paen atodi ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -270,8 +281,21 @@ encrypted-bcc-ignore-button = Wedi Deall
 compose-tool-button-remove-text-styling =
     .tooltiptext = Tynnu Steilio Testun
 
-## FileLink
+## Filelink
 
+# A text used in a tooltip of Filelink attachments, whose account has been
+# removed or is unknown.
+cloud-file-unknown-account-tooltip = Wedi'i lwytho i gyfrif Filelink anhysbys.
+
+# Placeholder file
+
+# Title for the html placeholder file.
+# $filename - name of the file
+cloud-file-placeholder-title = { $filename } - Atodiad Filelink
+# A text describing that the file was attached as a Filelink and can be downloaded
+# from the link shown below.
+# $filename - name of the file
+cloud-file-placeholder-intro = Atodwyd y ffeil { $filename } fel Filelink. Mae modd ei lwytho i lawr o'r ddolen isod.
 
 # Template
 
@@ -288,17 +312,6 @@ cloud-file-count-header =
        *[other] Rwyf wedi cysylltu { $count } ffeil i'r e-bost hwn:
     }
 # A text used in a footer, instructing the reader where to find additional
-# information about the used service providers.
-cloud-file-service-provider-footer =
-    { $count ->
-        [zero] Dysgwch ragor am { $firstLinks } a { $lastLink }.
-        [one] Dysgwch ragor am { $firstLinks }
-        [two] Dysgwch ragor am { $firstLinks } a { $lastLink }.
-        [few] Dysgwch ragor am { $firstLinks } a { $lastLink }.
-        [many] Dysgwch ragor am { $firstLinks } a { $lastLink }.
-       *[other] Dysgwch ragor am { $firstLinks } a { $lastLink }.
-    }
-# A text used in a footer, instructing the reader where to find additional
 # information about the used service provider.
 # $link (string) - html a-tag for a link pointing to the web page of the provider
 cloud-file-service-provider-footer-single = Dysgu rhagor am { $link }.
@@ -313,13 +326,13 @@ cloud-file-service-provider-footer-multiple = Dysgu rhagor am { $firstLinks } a 
 # Tooltip for an icon, indicating that the link is protected by a password.
 cloud-file-tooltip-password-protected-link = Dolen wedi'i diogelu gan gyfrinair
 # Used in a list of stats about a specific file
-# Service - the used service provider to host the file (CloudFile Service: BOX.com)
+# Service - the used service provider to host the file (Filelink Service: BOX.com)
 # Size - the size of the file (Size: 4.2 MB)
 # Link - the link to the file (Link: https://some.provider.com)
 # Expiry Date - stating the date the link will expire (Expiry Date: 12.12.2022)
 # Download Limit - stating the maximum allowed downloads, before the link becomes invalid
 #                  (Download Limit: 6)
-cloud-file-template-service = Gwasanaeth CloudFile:
+cloud-file-template-service-name = Gwasanaeth Filelink:
 cloud-file-template-size = Maint:
 cloud-file-template-link = Dolen:
 cloud-file-template-password-protected-link = Dolen wedi'i Diogelu gan Gyfrinair
@@ -343,3 +356,9 @@ cloud-file-rename-error = Bu anhawster wrth ailenwi { $filename } ar { $provider
 cloud-file-rename-error-with-custom-message-title = Methodd ail-enwi { $filename } ar { $provider }
 # $provider (string) - name of the online storage service that reported the error
 cloud-file-rename-not-supported = Nid yw { $provider } yn cefnogi ailenwi ffeiliau sydd eisoes wedi'u llwytho i fyny.
+# $filename (string) - name of the file that was renamed and caused the error
+cloud-file-attachment-error-title = Gwall Atodi Filelink
+cloud-file-attachment-error = Wedi methu diweddaru'r atodiad Filelink { $filename }, oherwydd bod ei ffeil leol wedi'i symud neu ei dileu.
+# $filename (string) - name of the file that was renamed and caused the error
+cloud-file-account-error-title = Gwall Cyfrif Filelink
+cloud-file-account-error = Wedi methu diweddaru'r atodiad Filelink { $filename }, oherwydd bod ei ffeil leol wedi'i symud neu ei dileu.

@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = Una extension, <im
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Una extension, <img data-l10n-name="icon"/>{ $name }, contraròtla lo biais que { -brand-short-name } se connecta a Internet.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> contraròtla aqueste paramètre.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/> <strong>{ $name }</strong> contraròtla aqueste paramètre.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> requerís un contenedor d’onglets.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> contraròtla aqueste paramètre.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>{ $name }</strong> contraròtla lo biais { -brand-short-name } de se connectar a Internet.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -187,6 +202,39 @@ containers-remove-cancel-button = Suprimir pas aqueste contenedor
 
 language-and-appearance-header = Lenga e aparéncia
 fonts-and-colors-header = Poliças e colors
+preferences-web-appearance-header = Aparéncia dels sites web
+preferences-web-appearance-description = D’unes sites web adaptan lor jòc de colors segon vòstras preferéncias. Causissètz lo jòc de colors que volètz emplegar per aqueles sites.
+preferences-web-appearance-choice-browser = Tèma de { -brand-short-name }
+preferences-web-appearance-choice-system = Tèma del sistèma
+preferences-web-appearance-choice-light = Clar
+preferences-web-appearance-choice-dark = Escur
+preferences-web-appearance-choice-tooltip-browser =
+    .title = Fasètz correspondre los paramètres de tèma de { -brand-short-name } pels rèireplans e lo contengut dels sites web.
+preferences-web-appearance-choice-tooltip-system =
+    .title = Fasètz correspondre los paramètres sistèma pels rèireplans e lo contengut dels sites web.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Utilizar una aparéncia clara pels rèireplans e lo contengut dels sites web.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Utilizar una aparéncia escura pels rèireplans e lo contengut dels sites web.
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Vòstras seleccion de colors subrecargan l’aparéncia dels sites web. <a data-l10n-name="colors-link">Gerir las colors</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Gerissètz los tèmas de { -brand-short-name } dins <a data-l10n-name="themes-link">Extensions e tèma</a>
+preferences-colors-header = Colors
+preferences-colors-manage-button =
+    .label = Gestion de las colors…
+    .accesskey = c
+preferences-fonts-header = Poliças
 default-font = Poliça per defaut
     .accesskey = D
 default-font-size = Talha
@@ -359,6 +407,9 @@ update-application-warning-cross-user-setting = Aqueste paramètres s’aplicar�
 update-application-use-service =
     .label = Utilizar un servici en rèireplan per installar las mesas a jorn
     .accesskey = z
+update-application-suppress-prompts =
+    .label = Afichar mens de notificacions de mesa a jorn
+    .accesskey = n
 update-setting-write-failure-title2 = Error en enregistrant los paramètres de mesas a jorn
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -404,6 +455,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = Utilizar lo desfilament doç
     .accesskey = d
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Totjorn afichar las barras de desfilaments
+    .accesskey = o
 browsing-use-onscreen-keyboard =
     .label = Mostrar un clavièr tactil quand es necessari
     .accesskey = t

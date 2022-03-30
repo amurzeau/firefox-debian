@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = Μια επέκτ�
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Μια επέκταση, το <img data-l10n-name="icon"/> { $name }, ελέγχει τον τρόπο σύνδεσης του { -brand-short-name } με το διαδίκτυο.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = Το <img data-l10n-name="icon"/> <strong>{ $name }</strong> ελέγχει αυτήν τη ρύθμιση.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = Το <img data-l10n-name="icon"/> <strong>{ $name }</strong> ελέγχει αυτήν τη ρύθμιση.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = Το <img data-l10n-name="icon"/> <strong>{ $name }</strong> απαιτεί θεματικές καρτέλες.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = Το <img data-l10n-name="icon"/> <strong>{ $name }</strong> ελέγχει αυτήν τη ρύθμιση.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = Το <img data-l10n-name="icon"/> <strong>{ $name }</strong> ελέγχει τον τρόπο σύνδεσης του { -brand-short-name } με το διαδίκτυο.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -187,6 +202,40 @@ containers-remove-cancel-button = Διατήρηση θεματικής ενότ
 
 language-and-appearance-header = Γλώσσα και εμφάνιση
 fonts-and-colors-header = Γραμματοσειρές & χρώματα
+preferences-web-appearance-header = Εμφάνιση ιστοτόπου
+preferences-web-appearance-description = Ορισμένοι ιστότοποι προσαρμόζουν το σύνολο χρωμάτων τους με βάση τις προτιμήσεις σας. Επιλέξτε ποιο σύνολο χρωμάτων θέλετε να χρησιμοποιήσετε για αυτούς τους ιστοτόπους.
+preferences-web-appearance-choice-browser = Θέμα του { -brand-short-name }
+preferences-web-appearance-choice-system = Θέμα συστήματος
+preferences-web-appearance-choice-light = Ανοιχτόχρωμο
+preferences-web-appearance-choice-dark = Σκουρόχρωμο
+preferences-web-appearance-choice-tooltip-browser =
+    .title = Χρήση ρυθμίσεων θέματος { -brand-short-name } για φόντο και περιεχόμενο ιστοτόπων.
+preferences-web-appearance-choice-tooltip-system =
+    .title = Χρήση ρυθμίσεων συστήματος για φόντο και περιεχόμενο ιστοτόπων.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Χρήση ανοιχτόχρωμης εμφάνισης για φόντο και περιεχόμενο ιστοτόπων.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Χρήση σκουρόχρωμης εμφάνισης για φόντο και περιεχόμενο ιστοτόπων.
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Οι επιλογές χρωμάτων σας υπερισχύουν της εμφάνισης του ιστοτόπου. <a data-l10n-name="colors-link">Διαχείριση χρωμάτων</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Διαχείριση θεμάτων του { -brand-short-name } στις <a data-l10n-name="themes-link">Επεκτάσεις & θέματα</a>
+preferences-colors-header = Χρώματα
+preferences-colors-description = Αντικατάσταση των προεπιλεγμένων χρωμάτων του { -brand-short-name } για κείμενο, παρασκήνια ιστοτόπων και συνδέσμους.
+preferences-colors-manage-button =
+    .label = Διαχείριση χρωμάτων…
+    .accesskey = ω
+preferences-fonts-header = Γραμματοσειρές
 default-font = Προεπιλεγμένη γραμματοσειρά
     .accesskey = Π
 default-font-size = Μέγεθος
@@ -287,7 +336,7 @@ applications-use-os-default =
            *[other] Χρήση προεπιλεγμένης εφαρμογής συστήματος
         }
 applications-use-other =
-    .label = Χρήση άλλης…
+    .label = Χρήση άλλου…
 applications-select-helper = Επιλογή βοηθητικής εφαρμογής
 applications-manage-app =
     .label = Λεπτομέρειες εφαρμογής…
@@ -357,7 +406,7 @@ update-application-background-enabled =
     .accesskey = Ό
 update-application-warning-cross-user-setting = Αυτή η ρύθμιση θα εφαρμοστεί σε όλους τους λογαριασμούς των Windows και τα προφίλ του { -brand-short-name } που χρησιμοποιούν αυτή την εγκατάσταση του { -brand-short-name }.
 update-application-use-service =
-    .label = Χρήση μιας υπηρεσίας παρασκηνίου για την εγκατάσταση ενημερώσεων
+    .label = Χρήση υπηρεσίας παρασκηνίου για την εγκατάσταση ενημερώσεων
     .accesskey = υ
 update-application-suppress-prompts =
     .label = Εμφάνιση λιγότερων ειδοποιήσεων ενημέρωσης
@@ -406,6 +455,9 @@ browsing-use-autoscroll =
     .accesskey = α
 browsing-use-smooth-scrolling =
     .label = Χρήση ομαλής κύλισης
+    .accesskey = μ
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Πάντα εμφάνιση γραμμών κύλισης
     .accesskey = μ
 browsing-use-onscreen-keyboard =
     .label = Εμφάνιση πληκτρολογίου αφής όταν χρειάζεται
@@ -473,7 +525,7 @@ use-current-pages =
             [1] Χρήση τρέχουσας σελίδας
            *[other] Χρήση τρεχουσών σελίδων
         }
-    .accesskey = Τ
+    .accesskey = τ
 choose-bookmark =
     .label = Χρήση σελιδοδείκτη…
     .accesskey = σ
@@ -1095,8 +1147,8 @@ security-block-uncommon-software =
 
 certs-header = Πιστοποιητικά
 certs-enable-ocsp =
-    .label = Ερώτηση στους διακομιστές για OCSP ανταπόκριση, ώστε να επιβεβαιωθεί η τρέχουσα εγκυρότητα των πιστοποιητικών
-    .accesskey = Ρ
+    .label = Αίτημα σε διακομιστές OCSP για την επιβεβαίωση της τρέχουσας εγκυρότητας των πιστοποιητικών
+    .accesskey = δ
 certs-view =
     .label = Προβολή πιστοποιητικών…
     .accesskey = Π

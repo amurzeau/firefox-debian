@@ -30,6 +30,16 @@ about-private-browsing-hide-activity = Eñomi tembiapo ha tendaite, oimeraẽva 
 about-private-browsing-get-privacy = Erekóke ñemigua ñemo’ã eikundaha vove
 about-private-browsing-hide-activity-1 = Eñomi ñeikundaha rapykuere ha tendaite { -mozilla-vpn-brand-name } ndive. Eikutúvo emoheñóita jeike katu, oĩhápe Wi-Fi opavave oipurukuaáva.
 about-private-browsing-prominent-cta = Eiko tekoñemíme { -mozilla-vpn-brand-name } ndive
+about-private-browsing-focus-promo-cta = Emboguejy { -focus-brand-name }
+about-private-browsing-focus-promo-header = { -focus-brand-name }: Ñeikundaha ñemi pya’eháicha
+about-private-browsing-focus-promo-text = Ore pumbyry rembipuru’i rojapóva oñeikundaha ñemi hag̃ua ombogue ijehegui tembiasakue ha kookie.
+
+## The following strings will be used for experiments in Fx99 and Fx100
+
+about-private-browsing-focus-promo-header-b = Eguerova kundahára ñemi ne pumbyrýpe
+about-private-browsing-focus-promo-text-b = Eipuru { -focus-brand-name } jeheka ñemiguarã epota’ỹva ohecha ne kundahára pumburygua eipuruvéva.
+about-private-browsing-focus-promo-header-c = Tekoñemi tenondeve gotyo pumbyrýpe
+about-private-browsing-focus-promo-text-c = { -focus-brand-name } ombogue ne rembiasakue omboykévo maranduñemurã térã tapykuehoha.
 # This string is the title for the banner for search engine selection
 # in a private window.
 # Variables:
@@ -44,3 +54,5 @@ about-private-browsing-search-banner-close-button =
     .aria-label = Mboty
 about-private-browsing-dismiss-button =
     .title = Mboyke
+about-private-browsing-promo-close-button =
+    .title = Mboty

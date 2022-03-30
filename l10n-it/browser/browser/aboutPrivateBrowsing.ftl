@@ -35,6 +35,15 @@ about-private-browsing-get-privacy = Proteggi la tua privacy ovunque navighi
 about-private-browsing-hide-activity-1 = Nascondi la tua posizione e le tue attività online con { -mozilla-vpn-brand-name }. Basta un clic per stabilire una connessione sicura, anche quando utilizzi una rete Wi-Fi pubblica.
 about-private-browsing-prominent-cta = Proteggi la tua privacy con { -mozilla-vpn-brand-name }
 
+about-private-browsing-focus-promo-cta = Scarica { -focus-brand-name }
+about-private-browsing-focus-promo-header = { -focus-brand-name }: navigazione anonima ovunque ti trovi
+about-private-browsing-focus-promo-text = La nostra app mobile disegnata per la navigazione anonima elimina automaticamente cronologia e cookie.
+
+about-private-browsing-focus-promo-header-b = Porta la navigazione anonima sul tuo telefono
+about-private-browsing-focus-promo-text-b = Utilizza { -focus-brand-name } quando hai bisogno di cercare qualcosa senza lasciare tracce nel tuo browser principale.
+about-private-browsing-focus-promo-header-c = Privacy a un livello superiore per i tuoi dispositivi mobili
+about-private-browsing-focus-promo-text-c = { -focus-brand-name } elimina automaticamente la cronologia, oltre a bloccare pubblicità ed elementi traccianti.
+
 # This string is the title for the banner for search engine selection
 # in a private window.
 # Variables:
@@ -50,3 +59,5 @@ about-private-browsing-search-banner-close-button =
 
 about-private-browsing-dismiss-button =
   .title = Rimuovi
+about-private-browsing-promo-close-button =
+  .title = Chiudi

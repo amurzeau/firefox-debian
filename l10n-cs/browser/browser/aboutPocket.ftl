@@ -11,7 +11,6 @@
 # Placeholder text for tag input
 pocket-panel-saved-add-tags =
     .placeholder = Přidat štítky
-
 pocket-panel-saved-error-generic = Při pokusu o uložení do { -pocket-brand-name(case: "gen") } došlo k chybě.
 pocket-panel-saved-error-tag-length = Štítky jsou omezeny na 25 znaků
 pocket-panel-saved-error-only-links = Ukládat můžete jenom odkazy
@@ -57,6 +56,11 @@ pocket-panel-signup-tagline-story-one =
        *[other] aplikace { -brand-product-name }
     }.
 pocket-panel-signup-tagline-story-two = Zobrazení v { -pocket-brand-name(case: "loc") } kdykoliv a na jakémkoliv zařízení.
+pocket-panel-signup-cta-a = Vaše tlačítko „uložit“ pro internet.
+pocket-panel-signup-cta-a-fix = Vaše tlačítko „uložit“ pro internet
+pocket-panel-signup-cta-b = Klepnutím na tlačítko { -pocket-brand-name } můžete ukládat články, videa nebo odkazy. Seznam si můžete kdykoliv zobrazit na kterémkoliv svém zařízení.
+pocket-panel-signup-cta-b-short = Klepnutím na tlačítko { -pocket-brand-name } můžete ukládat články, videa nebo odkazy.
+pocket-panel-signup-cta-c = Zobrazte svůj seznam na jakémkoliv zařítení, kdykoliv.
 
 ## about:pocket-home panel
 
@@ -66,3 +70,29 @@ pocket-panel-home-paragraph = { -pocket-brand-name(case: "acc") } můžete použ
 pocket-panel-home-explore-popular-topics = Podívejte se na oblíbená témata
 pocket-panel-home-discover-more = Objevte více
 pocket-panel-home-explore-more = Procházet
+pocket-panel-home-most-recent-saves = Váš nedávno uložený obsah:
+pocket-panel-home-most-recent-saves-loading = Načítání nedávno uloženého obsahu…
+pocket-panel-home-new-user-cta = Klepnutím na tlačítko { -pocket-brand-name } můžete ukládat články, videa nebo odkazy.
+pocket-panel-home-new-user-message = Váš nedávno uložený obsah se zobrazí tady.
+
+## Pocket panel header component
+
+pocket-panel-header-my-list = Zobrazit Můj seznam
+pocket-panel-header-sign-in = Přihlásit se
+
+## Pocket panel buttons
+
+pocket-panel-button-show-all = Zobrazit vše
+pocket-panel-button-add-tags = Přidat štítky
+pocket-panel-button-activate =
+    { -pocket-brand-name.gender ->
+        [masculine] Aktivovat { -pocket-brand-name(case: "acc") }
+        [feminine] Aktivovat { -pocket-brand-name(case: "acc") }
+        [neuter] Aktivovat { -pocket-brand-name(case: "acc") }
+       *[other] Aktivovat službu { -pocket-brand-name }
+    } { -brand-product-name.gender ->
+        [masculine] ve { -brand-product-name(case: "loc") }
+        [feminine] v { -brand-product-name(case: "loc") }
+        [neuter] v { -brand-product-name(case: "loc") }
+       *[other] v aplikaci { -brand-product-name }
+    }

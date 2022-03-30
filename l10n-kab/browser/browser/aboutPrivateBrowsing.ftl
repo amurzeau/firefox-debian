@@ -30,6 +30,16 @@ about-private-browsing-hide-activity = Ffer armud-ik·im d wadig, anida akk i te
 about-private-browsing-get-privacy = Sεu ammesten n tbaḍnit anida akk tettinigeḍ
 about-private-browsing-hide-activity-1 = Ffer armud d wadig n tunigin s { -mozilla-vpn-brand-name }. Yiwen n usiti, rnu tuqqna , ula ɣef Wi-Fi azayaz.
 about-private-browsing-prominent-cta = Qqim d uslig s { -mozilla-vpn-brand-name }
+about-private-browsing-focus-promo-cta = Sader { -focus-brand-name }
+about-private-browsing-focus-promo-header = { -focus-brand-name }: tunigin tusligt tazirazt
+about-private-browsing-focus-promo-text = Asnas-nneɣ aziraz yettwagen i tunigin tusligt itekkes azray-inek d yinagan n tuqqna seld yal aseqdec.
+
+## The following strings will be used for experiments in Fx99 and Fx100
+
+about-private-browsing-focus-promo-header-b = Fṛes tunigin tusligt ɣef tiliɣri-inek
+about-private-browsing-focus-promo-text-b = Seqdec { -focus-brand-name } i yinadiyen-a usligen ur tebɣiḍ ad ten-iwali iminig-ik aziraz.
+about-private-browsing-focus-promo-header-c = Tabaḍnit izaden ɣef uziraz
+about-private-browsing-focus-promo-text-c = { -focus-brand-name } iseffeḍ azray-ik yal mi ara ttusweḥlen udellel d yineḍfaren.
 # This string is the title for the banner for search engine selection
 # in a private window.
 # Variables:
@@ -42,3 +52,7 @@ about-private-browsing-search-banner-description =
     }
 about-private-browsing-search-banner-close-button =
     .aria-label = Mdel
+about-private-browsing-dismiss-button =
+    .title = Zgel
+about-private-browsing-promo-close-button =
+    .title = Mdel

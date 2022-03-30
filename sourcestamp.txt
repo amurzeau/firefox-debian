@@ -1,2 +1,2 @@
-20220322144853
-https://hg.mozilla.org/releases/mozilla-release/rev/cc23a50fcf60e8f94b168659870d765dc502ea56
+20220330194208
+https://hg.mozilla.org/releases/mozilla-release/rev/384926270a61c2dd2101752565a6175de3d62781

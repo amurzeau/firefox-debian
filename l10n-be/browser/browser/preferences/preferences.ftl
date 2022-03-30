@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = Пашырэнне
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Пашырэнне <img data-l10n-name="icon"/> { $name } кантралюе спосаб злучэння { -brand-short-name } з Інтэрнэтам.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> кіруе гэтым параметрам.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/> <strong>{ $name }</strong> кіруе гэтым параметрам.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> патрабуе кантэйнеры картак.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> кіруе гэтым параметрам.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name="icon"/> <strong>{ $name }</strong> кантралюе спосаб злучэння { -brand-short-name } з Інтэрнэтам.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -148,13 +163,13 @@ warn-on-open-many-tabs =
     .label = Папярэджваць, калі адкрыццё некалькіх картак можа запаволіць { -brand-short-name }
     .accesskey = в
 switch-to-new-tabs =
-    .label = Пры адкрыцці спасылкі, выявы ці медыя ў новай картцы адразу пераключацца на яе
+    .label = Пры адкрыцці спасылкі, выявы ці медыя ў новай картцы адразу пераключацца на яе
     .accesskey = р
 show-tabs-in-taskbar =
     .label = Паказваць мініяцюры картак у панэлі заданняў Windows
     .accesskey = л
 browser-containers-enabled =
-    .label = Уключыць карткі кантэйнераў
+    .label = Уключыць кантэйнеры картак
     .accesskey = т
 browser-containers-learn-more = Даведацца больш
 browser-containers-settings =
@@ -190,6 +205,40 @@ containers-remove-cancel-button = Не выдаляць гэты кантэйн�
 
 language-and-appearance-header = Мова і выгляд
 fonts-and-colors-header = Шрыфты & колеры
+preferences-web-appearance-header = Выгляд вэб-сайтаў
+preferences-web-appearance-description = Некаторыя вэб-сайты адаптуюць сваю колеравую схему ў залежнасці ад вашых пераваг. Выберыце, якую колеравую схему вы хочаце выкарыстоўваць для гэтых сайтаў.
+preferences-web-appearance-choice-browser = Тэма { -brand-short-name }
+preferences-web-appearance-choice-system = Сістэмная тэма
+preferences-web-appearance-choice-light = Светлая
+preferences-web-appearance-choice-dark = Цёмная
+preferences-web-appearance-choice-tooltip-browser =
+    .title = Адпавядаць наладам тэмы { -brand-short-name } для фону і змесціва сайтаў.
+preferences-web-appearance-choice-tooltip-system =
+    .title = Адпавядаць сістэмным наладам для фону і змесціва сайтаў.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Выкарыстоўваць светлы выгляд для фону і змесціва сайтаў.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Выкарыстоўваць цёмны выгляд для фону і змесціва сайтаў.
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Ваш выбар колераў мае перавагу над знешнім выглядам вэб-сайта. <a data-l10n-name="colors-link">Кіраваць колерамі</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Кіруйце тэмамі { -brand-short-name } у <a data-l10n-name="themes-link">пашырэннях і тэмах</a>
+preferences-colors-header = Колеры
+preferences-colors-description = Перавызначыць звычайныя колеры { -brand-short-name } для тэксту, фону вэб-сайтаў, і спасылак.
+preferences-colors-manage-button =
+    .label = Кіраваць колерамі…
+    .accesskey = К
+preferences-fonts-header = Шрыфты
 default-font = Прадвызначаны шрыфт
     .accesskey = П
 default-font-size = Памер
@@ -260,7 +309,7 @@ download-always-ask-where =
     .label = Заўжды пытацца, куды запісваць файлы
     .accesskey = З
 applications-header = Праграмы
-applications-description = Выберыце, як { -brand-short-name } мусіць апрацоўваць сцягнутыя з Сеціва файлы або праграмы, якія вы выкарыстоўваеце падчас аглядання.
+applications-description = Выберыце, як { -brand-short-name } мусіць апрацоўваць сцягнутыя з Сеціва файлы або праграмы, якія вы выкарыстоўваеце ў часе аглядання.
 applications-filter =
     .placeholder = Пошук па тыпах файлаў ці праграмах
 applications-type-column =
@@ -604,7 +653,7 @@ search-keyword-warning-bookmark = Вы выбралі ключавое слов�
 
 containers-back-button2 =
     .aria-label = Вярнуцца да наладаў
-containers-header = Карткі кантэйнераў
+containers-header = Кантэйнеры картак
 containers-add-button =
     .label = Дадаць новы кантэйнер
     .accesskey = Д

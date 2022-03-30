@@ -155,3 +155,16 @@ spotlight-total-cookie-protection-body = Ñemo’ãmbaite kookie rovake omboyke 
 spotlight-total-cookie-protection-expanded = { -brand-short-name } omopu’ã tápia kookie jerére ha ojoko tenda oĩhápe ani hag̃ua tapykuehoha oipuru nde rapykueho hag̃ua. Pe jeike voi ndive, oipytyvõta oiko porãve hag̃ua tembiapoite rojapo hag̃ua ñanduti iporãva opavavépe g̃uarã.
 spotlight-total-cookie-protection-primary-button = Embojuruja Total Cookie Protection
 spotlight-total-cookie-protection-secondary-button = Ani ko’ág̃a
+
+## Emotive Continuous Onboarding
+
+spotlight-better-internet-header = Ñanduti iporãváva oñepyrũ nendive
+spotlight-better-internet-body = Eipurúvo { -brand-short-name }, emoneĩ peteĩ ñanduti ijuruja ha hepy’ỹva iporãvéva opavave g̃uarã.
+spotlight-peace-mind-header = Ore romo’ãta
+spotlight-peace-mind-body = Jasy og̃uahẽvo, { -brand-short-name } ojoko hetave 3.000 tapykuehoha peteĩteĩ puruhárape. Avave, ha ãva kuápe oĩ omyangekóiva nde rekoñemi ha’éva tapykuehoha, ndoikeva’erãi nde ha nanduti pa’ũme.
+spotlight-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Ereko yrembe’ýpe
+       *[other] Ñe’ẽkañy tembiaporã rendápe
+    }
+spotlight-pin-secondary-button = Ani ko’ág̃a

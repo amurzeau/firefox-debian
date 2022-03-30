@@ -75,7 +75,7 @@ update-setting-write-failure-title = შეცდომა, განახლ�
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
-    { -brand-short-name } გადააწყდა შეცდომას და ცვლილება არ შეინახა. გაითვალისწინეთ, რომ განახლების ამ პარამეტრის ცვლილება საჭიროებს ქვემოთ მითითებულ ფაილში ჩაწერის ნებართვას. თქვენ ან თქვენი სისტემის მმართველს, შეუძლია ამის მოგვარება მომხმარებლის ჯგუფისთვის, ფაილის სრულად განკარგვის უფლების მინიჭებით.
+    { -brand-short-name } გადააწყდა შეცდომას და ცვლილება არ შეინახა. გაითვალისწინეთ, რომ განახლების ამ პარამეტრის ცვლილება საჭიროებს ქვემოთ მითითებულ ფაილში ჩაწერის ნებართვას. თქვენ ან თქვენი სისტემის ზედამხედველს შეუძლია ამის მოგვარება მომხმარებლის ჯგუფისთვის, ფაილის სრულად განკარგვის უფლების მინიჭებით.
     
     ვერ მოხერხდა ჩაწერა ფაილში: { $path }
 update-in-progress-title = Მიმდინარეობს განახლება
@@ -116,9 +116,6 @@ restore-default-label =
     .label = ნაგულისხმევის აღდგენა
     .accesskey = ღ
 default-search-engine = ნაგულისხმევი საძიებო სისტემა
-add-search-engine =
-    .label = ფაილიდან დამატება
-    .accesskey = ა
 add-web-search-engine =
     .label = დამატება…
     .accesskey = დ
@@ -196,6 +193,9 @@ autoscroll-label =
 smooth-scrolling-label =
     .label = გლუვი გადაადგილების გამოყენება
     .accesskey = გ
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = რბიის ზოლის გამოჩენა ყოველთვის
+    .accesskey = რ
 system-integration-legend = სისტემური ინტეგრაცია
 always-check-default =
     .label = ყოველთვის შემოწმდეს გაშვებისას, არის თუ არა { -brand-short-name } ელფოსტის ნაგულისხმევი პროგრამა
@@ -320,12 +320,6 @@ quoted-text-color =
     .accesskey = ფ
 search-handler-table =
     .placeholder = შიგთავსის სახეობებისა და მოქმედებების გაფილტვრა
-type-column-label =
-    .label = შიგთავსის სახეობა
-    .accesskey = T
-action-column-label =
-    .label = ქმედება
-    .accesskey = A
 type-column-header = შიგთავსის სახეობა
 action-column-header = მოქმედება
 save-to-label =

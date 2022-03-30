@@ -641,9 +641,6 @@ navbar-overflow =
 navbar-print =
     .label = چھاپیں
     .tooltiptext = یہ صفحہ پرنٹ کریں… ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = چھاپیں
-    .tooltiptext = اس صفحہ کو چھاپیں
 navbar-home =
     .label = گھر
     .tooltiptext = { -brand-short-name } ابتدائی صفحہ
@@ -668,3 +665,10 @@ tabs-toolbar-list-all-tabs =
 ## Infobar shown at startup to suggest session-restore
 
 restore-session-startup-suggestion-button = مجھے دکھاؤ کیسے
+
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+
+data-reporting-notification-message = { -brand-short-name } خودکار طور پر { -vendor-short-name } کو کچھ کوائف بھیجتا ہے تاکہ ہم آپ کا تجربہ بہتر کر سکیں۔
+data-reporting-notification-button =
+    .label = میرے شیَر کرنے کی اشیاہ چنیں
+    .accesskey = چ
