@@ -42,12 +42,6 @@ VRProcessParent::VRProcessParent(Listener* aListener)
 }
 
 VRProcessParent::~VRProcessParent() {
-  // Cancel all tasks. We don't want anything triggering after our caller
-  // expects this to go away.
-  {
-    MonitorAutoLock lock(mMonitor);
-    mTaskFactory.RevokeAll();
-  }
   MOZ_COUNT_DTOR(VRProcessParent);
 }
 
@@ -134,6 +128,13 @@ void VRProcessParent::Shutdown() {
 
 void VRProcessParent::DestroyProcess() {
   if (mLaunchThread) {
+    // Cancel all tasks. We don't want anything triggering after our caller
+    // expects this to go away.
+    {
+      MonitorAutoLock lock(mMonitor);
+      mTaskFactory.RevokeAll();
+    }
+
     mLaunchThread->Dispatch(NS_NewRunnableFunction("DestroyProcessRunnable",
                                                    [this] { Destroy(); }));
   }
@@ -152,6 +153,12 @@ bool VRProcessParent::InitAfterConnect(bool aSucceeded) {
       NS_WARNING(
           "GPU process haven't connected with the parent process yet"
           "when creating VR process.");
+      return false;
+    }
+
+    if (!StaticPrefs::dom_vr_enabled() &&
+        !StaticPrefs::dom_vr_webxr_enabled()) {
+      NS_WARNING("VR is not enabled when trying to create a VRChild");
       return false;
     }
 
