@@ -1,6 +1,4 @@
 fixes/Allow-.js-preference-files-to-set-locked-prefs-with-.patch
-fixes/Bug-1706594-Add-nsICancelable-out-param-to-nsBaseCha.patch
-fixes/Bug-1735899-Make-sure-RemoteLazyInputStream-Close-ca.patch
 porting/Add-xptcall-support-for-SH4-processors.patch
 porting/NSS-Fix-FTBFS-on-Hurd-because-of-MAXPATHLEN.patch
 porting/Use-NEON_FLAGS-instead-of-VPX_ASFLAGS-for-libaom-neo.patch
