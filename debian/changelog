@@ -1,3 +1,15 @@
+firefox (99.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2022-13, also known as:
+    CVE-2022-1097, CVE-2022-28281, CVE-2022-28282, CVE-2022-28283,
+    CVE-2022-28284, CVE-2022-28285, CVE-2022-28286, CVE-2022-28287,
+    CVE-2022-24713, CVE-2022-28289, CVE-2022-28288.
+
+  * debian/control*: Bump nss build dependency.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 06 Apr 2022 09:04:22 +0900
+
 firefox (98.0-2) unstable; urgency=medium
 
   * debian/rules: Install crash reporter files on arm64.
