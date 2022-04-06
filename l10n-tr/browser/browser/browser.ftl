@@ -768,9 +768,6 @@ navbar-overflow =
 navbar-print =
     .label = Yazdır
     .tooltiptext = Bu sayfayı yazdır… ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = Yazdır
-    .tooltiptext = Bu sayfayı yazdır
 navbar-home =
     .label = Başlangıç
     .tooltiptext = { -brand-short-name } Giriş Sayfası
@@ -797,3 +794,10 @@ tabs-toolbar-list-all-tabs =
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
 restore-session-startup-suggestion-message = <strong>Önceki sekmeler açılsın mı?</strong> Önceki oturumunuzu { -brand-short-name } uygulama menüsündeki <img data-l10n-name="icon"/> “Geçmiş” kısmından geri yükleyebilirsiniz.
 restore-session-startup-suggestion-button = Nasıl yapacağımı göster
+
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+
+data-reporting-notification-message = { -brand-short-name }, deneyiminizi geliştirebilmemiz için bazı verileri otomatik olarak { -vendor-short-name } sunucularına gönderir.
+data-reporting-notification-button =
+    .label = Ne paylaşacağımı seç
+    .accesskey = N

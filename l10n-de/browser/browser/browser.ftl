@@ -766,9 +766,6 @@ navbar-overflow =
 navbar-print =
     .label = Drucken
     .tooltiptext = Diese Seite drucken… ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = Drucken
-    .tooltiptext = Diese Seite drucken
 navbar-home =
     .label = Startseite
     .tooltiptext = { -brand-short-name }-Startseite
@@ -795,3 +792,10 @@ tabs-toolbar-list-all-tabs =
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
 restore-session-startup-suggestion-message = <strong>Vorherige Tabs öffnen?</strong> Sie können Ihre vorherige Sitzung über das { -brand-short-name }-Anwendungsmenü <img data-l10n-name="icon"/> unter Chronik wiederherstellen.
 restore-session-startup-suggestion-button = Wie es funktioniert
+
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+
+data-reporting-notification-message = { -brand-short-name } sendet automatisch einige Daten an { -vendor-short-name }, damit die Benutzerzufriedenheit verbessert werden kann.
+data-reporting-notification-button =
+    .label = Zu übermittelnde Daten festlegen
+    .accesskey = f

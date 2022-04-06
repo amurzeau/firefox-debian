@@ -87,6 +87,12 @@ expand-attachment-pane-tooltip =
     .tooltiptext = Exibir painel de anexos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
     .tooltiptext = Ocultar painel de anexos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count-value =
+    { $count ->
+        [1] { $count } anexo
+       *[other] { $count } anexos
+    }
 attachment-area-show =
     .title = Exibir painel de anexos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -242,8 +248,21 @@ encrypted-bcc-ignore-button = Entendi
 compose-tool-button-remove-text-styling =
     .tooltiptext = Remover estilo de texto
 
-## FileLink
+## Filelink
 
+# A text used in a tooltip of Filelink attachments, whose account has been
+# removed or is unknown.
+cloud-file-unknown-account-tooltip = Enviado para uma conta Filelink desconhecida.
+
+# Placeholder file
+
+# Title for the html placeholder file.
+# $filename - name of the file
+cloud-file-placeholder-title = { $filename } - Anexo online
+# A text describing that the file was attached as a Filelink and can be downloaded
+# from the link shown below.
+# $filename - name of the file
+cloud-file-placeholder-intro = O arquivo { $filename } foi anexado como um anexo online. Ele pode ser baixado a partir do link abaixo.
 
 # Template
 
@@ -254,13 +273,6 @@ cloud-file-count-header =
     { $count ->
         [one] Vinculei { $count } arquivo a este email:
        *[other] Vinculei { $count } arquivos a este email:
-    }
-# A text used in a footer, instructing the reader where to find additional
-# information about the used service providers.
-cloud-file-service-provider-footer =
-    { $count ->
-        [one] Saiba mais sobre { $lastLink }.
-       *[other] Saiba mais sobre { $firstLinks } e { $lastLink }.
     }
 # A text used in a footer, instructing the reader where to find additional
 # information about the used service provider.
@@ -277,13 +289,13 @@ cloud-file-service-provider-footer-multiple = Saiba mais sobre { $firstLinks } e
 # Tooltip for an icon, indicating that the link is protected by a password.
 cloud-file-tooltip-password-protected-link = Link protegido por senha
 # Used in a list of stats about a specific file
-# Service - the used service provider to host the file (CloudFile Service: BOX.com)
+# Service - the used service provider to host the file (Filelink Service: BOX.com)
 # Size - the size of the file (Size: 4.2 MB)
 # Link - the link to the file (Link: https://some.provider.com)
 # Expiry Date - stating the date the link will expire (Expiry Date: 12.12.2022)
 # Download Limit - stating the maximum allowed downloads, before the link becomes invalid
 #                  (Download Limit: 6)
-cloud-file-template-service = Serviço CloudFile:
+cloud-file-template-service-name = Serviço de anexo online:
 cloud-file-template-size = Tamanho:
 cloud-file-template-link = Link:
 cloud-file-template-password-protected-link = Link protegido por senha:
@@ -307,3 +319,9 @@ cloud-file-rename-error = Houve um problema ao renomear { $filename } em { $prov
 cloud-file-rename-error-with-custom-message-title = Falha ao renomear { $filename } em { $provider }
 # $provider (string) - name of the online storage service that reported the error
 cloud-file-rename-not-supported = { $provider } não aceita renomear arquivos já enviados.
+# $filename (string) - name of the file that was renamed and caused the error
+cloud-file-attachment-error-title = Erro ao anexar em anexo online
+cloud-file-attachment-error = Falha ao atualizar o anexo online { $filename } porque seu arquivo local foi movido ou excluído.
+# $filename (string) - name of the file that was renamed and caused the error
+cloud-file-account-error-title = Erro de conta de anexo online
+cloud-file-account-error = Falha ao atualizar o anexo online { $filename } porque sua conta de anexo online foi excluída.

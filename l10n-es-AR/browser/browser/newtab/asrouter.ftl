@@ -156,3 +156,16 @@ spotlight-total-cookie-protection-body = Total Cookie Protection evita que los r
 spotlight-total-cookie-protection-expanded = { -brand-short-name } encierra las cookies con una cerca y las limita al sitio que las creó para que los rastreadores no puedan usarlas para seguirlo. Con el acceso anticipado, ayudará a optimizar esta función para que podamos seguir construyendo una Web mejor para todos.
 spotlight-total-cookie-protection-primary-button = Habilitar Total Cookie Protection
 spotlight-total-cookie-protection-secondary-button = No ahora
+
+## Emotive Continuous Onboarding
+
+spotlight-better-internet-header = Una mejor internet comienza con usted
+spotlight-better-internet-body = Al usar { -brand-short-name }, está votando por una internet abierta y accesible que es mejor para todos.
+spotlight-peace-mind-header = Te tenemos cubierto
+spotlight-peace-mind-body = Cada mes, { -brand-short-name } bloquea un promedio de más de tres mil rastreadores por usuario. Porque nada, especialmente las molestias de privacidad, debería meterse entre usted y una buena internet.
+spotlight-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Mantener en Dock
+       *[other] Pegar a la barra de tareas
+    }
+spotlight-pin-secondary-button = No ahora

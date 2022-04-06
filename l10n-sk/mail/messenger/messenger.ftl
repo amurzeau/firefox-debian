@@ -190,3 +190,85 @@ spaces-toolbar-button-settings =
     .title = Prepnúť na kartu Nastavenia
 spaces-toolbar-button-collapse =
     .title = Zbaliť panel nástrojov Miesta
+spaces-toolbar-button-reveal =
+    .title = Zobraziť panel nástrojov Miesta
+spaces-toolbar-button-mail2 =
+    .title = Pošta
+spaces-toolbar-button-address-book2 =
+    .title = Adresár
+spaces-toolbar-button-calendar2 =
+    .title = Kalendár
+spaces-toolbar-button-tasks2 =
+    .title = Úlohy
+spaces-toolbar-button-chat2 =
+    .title = Konverzácie
+spaces-toolbar-button-overflow =
+    .title = Ďalšie miesta…
+spaces-toolbar-button-settings2 =
+    .title = Nastavenia
+spaces-toolbar-button-hide =
+    .title = Skryť panel Miesta
+spaces-toolbar-button-show =
+    .title = Zobraziť panel Miesta
+spaces-context-new-tab-item =
+    .label = Otvoriť na novej karte
+spaces-context-new-window-item =
+    .label = Otvoriť v novom okne
+# Variables:
+# $tabName (String) - The name of the tab this item will switch to.
+spaces-context-switch-tab-item =
+    .label = Prepnúť na kartu { $tabName }
+settings-context-open-settings-item =
+    .label = Otvoriť Nastavenia
+settings-context-open-account-settings-item =
+    .label = Otvoriť Nastavenia účtov
+settings-context-open-addons-item =
+    .label = Otvoriť Správcu doplnkov
+
+## Spaces toolbar pinned tab menupopup
+
+spaces-toolbar-pinned-tab-button =
+    .tooltiptext = Otvoriť ponuku Miesta
+spaces-pinned-button-menuitem-mail =
+    .label = { spaces-toolbar-button-mail.title }
+spaces-pinned-button-menuitem-address-book =
+    .label = { spaces-toolbar-button-address-book.title }
+spaces-pinned-button-menuitem-calendar =
+    .label = { spaces-toolbar-button-calendar.title }
+spaces-pinned-button-menuitem-tasks =
+    .label = { spaces-toolbar-button-tasks.title }
+spaces-pinned-button-menuitem-chat =
+    .label = { spaces-toolbar-button-chat.title }
+spaces-pinned-button-menuitem-reveal =
+    .label = { spaces-toolbar-button-reveal.title }
+spaces-pinned-button-menuitem-settings =
+    .label = { spaces-toolbar-button-settings2.title }
+spaces-pinned-button-menuitem-show =
+    .label = { spaces-toolbar-button-show.title }
+# Variables:
+# $count (Number) - Number of unread messages.
+chat-button-unread-messages = { $count }
+    .title =
+        { $count ->
+            [one] 1 neprečítaná správa
+            [few] { $count } neprečítané správy
+           *[other] { $count } neprečítaných správ
+        }
+
+## Spaces toolbar customize panel
+
+spaces-context-customize =
+    .label = Prispôsobiť…
+spaces-customize-panel-title = Nastavenia panela s nástrojmi Miesta
+spaces-customize-background-color = Farba pozadia
+spaces-customize-icon-color = Farba položky
+# The background color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-background-color = Farba pozadia zvolenej položky
+# The icon color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-text-color = Farba zvolenej položky
+spaces-customize-button-restore = Obnoviť predvolené
+    .accesskey = b
+spaces-customize-button-save = Hotovo
+    .accesskey = H

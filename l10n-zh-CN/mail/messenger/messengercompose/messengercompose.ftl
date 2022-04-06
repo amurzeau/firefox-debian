@@ -85,6 +85,12 @@ expand-attachment-pane-tooltip =
     .tooltiptext = 显示附件窗格（{ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }）
 collapse-attachment-pane-tooltip =
     .tooltiptext = 隐藏附件窗格（{ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }）
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count-value =
+    { $count ->
+        [1] { $count } 个附件
+       *[other] { $count } 个附件
+    }
 attachment-area-show =
     .title = 显示附件窗格（{ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }）
 attachment-area-hide =
@@ -237,8 +243,21 @@ encrypted-bcc-ignore-button = 好的
 compose-tool-button-remove-text-styling =
     .tooltiptext = 移除文本样式
 
-## FileLink
+## Filelink
 
+# A text used in a tooltip of Filelink attachments, whose account has been
+# removed or is unknown.
+cloud-file-unknown-account-tooltip = 上传至未知的文件快传账户。
+
+# Placeholder file
+
+# Title for the html placeholder file.
+# $filename - name of the file
+cloud-file-placeholder-title = { $filename } - 文件快传附件
+# A text describing that the file was attached as a Filelink and can be downloaded
+# from the link shown below.
+# $filename - name of the file
+cloud-file-placeholder-intro = 文件 { $filename } 已上传至文件快传，可从下方链接下载。
 
 # Template
 
@@ -248,13 +267,6 @@ compose-tool-button-remove-text-styling =
 cloud-file-count-header =
     { $count ->
        *[other] 我已将 { $count } 个文件的链接附至此邮件：
-    }
-# A text used in a footer, instructing the reader where to find additional
-# information about the used service providers.
-cloud-file-service-provider-footer =
-    { $count ->
-        [one] 详细了解 { $lastLink }。
-       *[other] 详细了解 { $firstLinks } 和 { $lastLink }。
     }
 # A text used in a footer, instructing the reader where to find additional
 # information about the used service provider.
@@ -271,13 +283,13 @@ cloud-file-service-provider-footer-multiple = 详细了解 { $firstLinks } 和 {
 # Tooltip for an icon, indicating that the link is protected by a password.
 cloud-file-tooltip-password-protected-link = 密码保护链接
 # Used in a list of stats about a specific file
-# Service - the used service provider to host the file (CloudFile Service: BOX.com)
+# Service - the used service provider to host the file (Filelink Service: BOX.com)
 # Size - the size of the file (Size: 4.2 MB)
 # Link - the link to the file (Link: https://some.provider.com)
 # Expiry Date - stating the date the link will expire (Expiry Date: 12.12.2022)
 # Download Limit - stating the maximum allowed downloads, before the link becomes invalid
 #                  (Download Limit: 6)
-cloud-file-template-service = CloudFile 服务：
+cloud-file-template-service-name = 文件快传服务：
 cloud-file-template-size = 大小：
 cloud-file-template-link = 链接：
 cloud-file-template-password-protected-link = 密码保护链接：
@@ -295,9 +307,15 @@ cloud-file-upload-error-with-custom-message-title = 上传 { $filename } 到 { $
 # $provider (string) - name of the online storage service that reported the error
 # $filename (string) - name of the file that was renamed and caused the error
 cloud-file-rename-error-title = 重命名错误
-cloud-file-rename-error = 在 { $provider } 重命名 { $filename } 时发生错误。
+cloud-file-rename-error = 在 { $provider } 重命名 { $filename } 时出错。
 # $provider (string) - name of the online storage service that reported the error
 # $filename (string) - name of the file that was renamed and caused the error
 cloud-file-rename-error-with-custom-message-title = 在 { $provider } 重命名 { $filename } 失败
 # $provider (string) - name of the online storage service that reported the error
 cloud-file-rename-not-supported = { $provider } 不支持重命名已上传的文件。
+# $filename (string) - name of the file that was renamed and caused the error
+cloud-file-attachment-error-title = 文件快传附件出错
+cloud-file-attachment-error = 由于本地文件移动或删除，文件快传附件 { $filename } 未能更新。
+# $filename (string) - name of the file that was renamed and caused the error
+cloud-file-account-error-title = 文件快传账户错误
+cloud-file-account-error = 由于文件快传已被删除，文件快传附件 { $filename } 未能更新。

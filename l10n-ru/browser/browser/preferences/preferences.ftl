@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = Расширени
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Расширение <img data-l10n-name="icon"/> { $name } контролирует способ соединения { -brand-short-name } с Интернетом.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> управляет этой настройкой.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/> <strong>{ $name }</strong> управляет этой настройкой.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> требует для своей работы «Вкладки в контейнере».
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> управляет этой настройкой.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>{ $name }</strong> контролирует способ соединения { -brand-short-name } с Интернетом.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -190,6 +205,40 @@ containers-remove-cancel-button = Не удалять этот контейне�
 
 language-and-appearance-header = Язык и внешний вид
 fonts-and-colors-header = Шрифты и цвета
+preferences-web-appearance-header = Внешний вид сайта
+preferences-web-appearance-description = Некоторые веб-сайты адаптируют свою цветовую схему в зависимости от ваших предпочтений. Выберите цветовую схему, которую вы хотите использовать для этих сайтов.
+preferences-web-appearance-choice-browser = Тема { -brand-short-name }
+preferences-web-appearance-choice-system = Системная тема
+preferences-web-appearance-choice-light = Светлая
+preferences-web-appearance-choice-dark = Тёмная
+preferences-web-appearance-choice-tooltip-browser =
+    .title = Применять настройки темы { -brand-short-name } к фону и содержимому веб-сайтов.
+preferences-web-appearance-choice-tooltip-system =
+    .title = Применять системные настройки к фону и содержимому веб-сайтов.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Использовать светлый вид для фона и содержимого веб-сайтов.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Использовать тёмный вид для фона и содержимого веб-сайтов.
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Выбранные вами цвета изменяют внешний вид веб-сайтов. <a data-l10n-name="colors-link">Управлять цветами</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Управляйте темами { -brand-short-name } в разделе <a data-l10n-name="themes-link">«Расширения и темы»</a>
+preferences-colors-header = Цвета
+preferences-colors-description = Переопределяйте цвета { -brand-short-name } по умолчанию для текста, фона веб-сайтов и ссылок.
+preferences-colors-manage-button =
+    .label = Управление цветами…
+    .accesskey = м
+preferences-fonts-header = Шрифты
 default-font = Шрифт по умолчанию
     .accesskey = ф
 default-font-size = Размер
@@ -406,30 +455,33 @@ performance-default-content-process-count =
 browsing-title = Просмотр сайтов
 browsing-use-autoscroll =
     .label = Использовать автоматическую прокрутку
-    .accesskey = с
+    .accesskey = а
 browsing-use-smooth-scrolling =
     .label = Использовать плавную прокрутку
+    .accesskey = п
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Всегда показывать полосы прокрутки
     .accesskey = о
 browsing-use-onscreen-keyboard =
-    .label = При необходимости отображать сенсорную клавиатуру
-    .accesskey = н
+    .label = При необходимости показывать сенсорную клавиатуру
+    .accesskey = с
 browsing-use-cursor-navigation =
     .label = Всегда использовать клавиши курсора для навигации по страницам
     .accesskey = к
 browsing-search-on-start-typing =
     .label = Искать текст на странице по мере его набора
-    .accesskey = а
+    .accesskey = И
 browsing-picture-in-picture-toggle-enabled =
     .label = Включить управление видео «Картинка в картинке»
-    .accesskey = ю
+    .accesskey = а
 browsing-picture-in-picture-learn-more = Подробнее
 browsing-media-control =
-    .label = Управлять медиа через клавиатуру, гарнитуру или виртуальный интерфейс
-    .accesskey = п
+    .label = Управлять медиа с помощью клавиатуры, гарнитуры или виртуального интерфейса
+    .accesskey = У
 browsing-media-control-learn-more = Подробнее
 browsing-cfr-recommendations =
     .label = Рекомендовать расширения при просмотре
-    .accesskey = к
+    .accesskey = р
 browsing-cfr-features =
     .label = Рекомендовать функции при просмотре
     .accesskey = ф
@@ -442,7 +494,7 @@ network-proxy-connection-description = Настроить, как { -brand-short
 network-proxy-connection-learn-more = Подробнее
 network-proxy-connection-settings =
     .label = Настроить…
-    .accesskey = с
+    .accesskey = Н
 
 ## Home Section
 

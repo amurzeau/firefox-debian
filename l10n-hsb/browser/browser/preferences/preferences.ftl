@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = Rozšěrjenje, <im
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Rozšěrjenje <img data-l10n-name="icon"/> { $name } wodźi, kak { -brand-short-name } z internetom zwjazuje.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> tute nastajenje wodźi.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/> <strong>{ $name }</strong> tute nastajenje wodźi.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> sej kontejnerowe rajtarki wužaduje.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> tute nastajenje wodźi.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name="icon"/> <strong>{ $name }</strong> wodźi, kak { -brand-short-name } z internetom zwjazuje.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -193,6 +208,40 @@ containers-remove-cancel-button = Tutón kontejner njewotstronić
 
 language-and-appearance-header = Rěč a zwonkowne
 fonts-and-colors-header = Pisma a barby
+preferences-web-appearance-header = Napohlad websydła
+preferences-web-appearance-description = Někotre websydła swoju barbowu šemu na zakładźe wašich nastajenjow přiměrjeja. Wubjerće, kotru barbowu šemu chceće za te sydła wužiwać.
+preferences-web-appearance-choice-browser = Drasta { -brand-short-name }
+preferences-web-appearance-choice-system = Systemowa drasta
+preferences-web-appearance-choice-light = Swětły
+preferences-web-appearance-choice-dark = Ćmowy
+preferences-web-appearance-choice-tooltip-browser =
+    .title = Přiměrće swoje drastowe nastajenja { -brand-short-name } za pozadki a wobsah websydłow.
+preferences-web-appearance-choice-tooltip-system =
+    .title = Přiměrće swoje systemowe nastajenja za pozadki a wobsah websydłow.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Swětły napohlad za pozadki websydłow a wobsah wužiwać.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Ćmowy napohlad za pozadki websydłow a wobsah wužiwać.
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Waše barbowe wuběry napohlad websydła přepisuja. <a data-l10n-name="colors-link">Barby rjadować</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Drasty { -brand-short-name } w <a data-l10n-name="themes-link">Rozšěrjenja a drasty</a> rjadować
+preferences-colors-header = Barby
+preferences-colors-description = Standardne barby { -brand-short-name } za tekst, pozadki websydłow a wotkazy přepisać.
+preferences-colors-manage-button =
+    .label = Barby rjadować…
+    .accesskey = B
+preferences-fonts-header = Pisma
 default-font = Standardne pismo
     .accesskey = S
 default-font-size = Wulkosć
@@ -413,6 +462,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = Łahodne přesuwanje wužiwać
     .accesskey = h
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Suwanske lajsty přeco pokazać
+    .accesskey = u
 browsing-use-onscreen-keyboard =
     .label = Dótknjensku tastaturu pokazać, jeli trěbne
     .accesskey = k

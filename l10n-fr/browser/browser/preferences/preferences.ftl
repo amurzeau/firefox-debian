@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = Une extension, <im
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Une extension, <img data-l10n-name="icon"/> { $name }, contrôle la façon dont { -brand-short-name } se connecte à Internet.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> contrôle ce paramètre.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/> <strong>{ $name }</strong> contrôle ce paramètre.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> a besoin des onglets conteneurs.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> contrôle ce paramètre.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>{ $name }</strong> contrôle la manière dont { -brand-short-name } se connecte à Internet.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -187,6 +202,28 @@ containers-remove-cancel-button = Ne pas supprimer ce conteneur
 
 language-and-appearance-header = Langue et apparence
 fonts-and-colors-header = Polices et couleurs
+preferences-web-appearance-header = Apparence des sites web
+preferences-web-appearance-description = Certains sites web adaptent leur jeu de couleurs en fonction de vos préférences. Choisissez le jeu de couleurs que vous souhaitez utiliser pour ces sites.
+preferences-web-appearance-choice-browser = Thème de { -brand-short-name }
+preferences-web-appearance-choice-system = Thème du système
+preferences-web-appearance-choice-light = Clair
+preferences-web-appearance-choice-dark = Sombre
+preferences-web-appearance-choice-tooltip-light =
+    .title = Utiliser un thème clair pour les arrière-plans et le contenu des sites web.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Utiliser un thème sombre pour les arrière-plans et le contenu des sites web.
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Vos sélections de couleurs changent l’apparence des sites web. <a data-l10n-name="colors-link">Gérer les couleurs</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Gérez les thèmes de { -brand-short-name } depuis la section <a data-l10n-name="themes-link">Extensions et thèmes</a>
+preferences-colors-header = Couleurs
+preferences-colors-description = Remplacez les couleurs par défaut de { -brand-short-name } pour le texte, les arrière-plans de sites web et les liens.
+preferences-colors-manage-button =
+    .label = Gérer les couleurs…
+    .accesskey = c
+preferences-fonts-header = Polices
 default-font = Police par défaut
     .accesskey = P
 default-font-size = Taille
@@ -407,6 +444,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = Utiliser le défilement doux
     .accesskey = s
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Toujours afficher les barres de défilement
+    .accesskey = T
 browsing-use-onscreen-keyboard =
     .label = Afficher un clavier virtuel lorsque nécessaire
     .accesskey = A

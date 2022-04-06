@@ -198,3 +198,86 @@ spaces-toolbar-button-settings =
     .title = Preklopi na zavihek z nastavitvami
 spaces-toolbar-button-collapse =
     .title = Skrij orodno vrstico komponent
+spaces-toolbar-button-reveal =
+    .title = Pokaži orodno vrstico komponent
+spaces-toolbar-button-mail2 =
+    .title = Pošta
+spaces-toolbar-button-address-book2 =
+    .title = Imenik
+spaces-toolbar-button-calendar2 =
+    .title = Koledar
+spaces-toolbar-button-tasks2 =
+    .title = Opravila
+spaces-toolbar-button-chat2 =
+    .title = Klepet
+spaces-toolbar-button-overflow =
+    .title = Več komponent …
+spaces-toolbar-button-settings2 =
+    .title = Nastavitve
+spaces-toolbar-button-hide =
+    .title = Skrij vrstico komponent
+spaces-toolbar-button-show =
+    .title = Prikaži vrstico komponent
+spaces-context-new-tab-item =
+    .label = Odpri v novem zavihku
+spaces-context-new-window-item =
+    .label = Odpri v novem oknu
+# Variables:
+# $tabName (String) - The name of the tab this item will switch to.
+spaces-context-switch-tab-item =
+    .label = Preklopi na { $tabName }
+settings-context-open-settings-item =
+    .label = Odpri nastavitve
+settings-context-open-account-settings-item =
+    .label = Odpri nastavitve računa
+settings-context-open-addons-item =
+    .label = Odpri dodatke in teme
+
+## Spaces toolbar pinned tab menupopup
+
+spaces-toolbar-pinned-tab-button =
+    .tooltiptext = Odpri meni s komponentami
+spaces-pinned-button-menuitem-mail =
+    .label = { spaces-toolbar-button-mail.title }
+spaces-pinned-button-menuitem-address-book =
+    .label = { spaces-toolbar-button-address-book.title }
+spaces-pinned-button-menuitem-calendar =
+    .label = { spaces-toolbar-button-calendar.title }
+spaces-pinned-button-menuitem-tasks =
+    .label = { spaces-toolbar-button-tasks.title }
+spaces-pinned-button-menuitem-chat =
+    .label = { spaces-toolbar-button-chat.title }
+spaces-pinned-button-menuitem-reveal =
+    .label = { spaces-toolbar-button-reveal.title }
+spaces-pinned-button-menuitem-settings =
+    .label = { spaces-toolbar-button-settings2.title }
+spaces-pinned-button-menuitem-show =
+    .label = { spaces-toolbar-button-show.title }
+# Variables:
+# $count (Number) - Number of unread messages.
+chat-button-unread-messages = { $count }
+    .title =
+        { $count ->
+            [one] { $count } neprebrano sporočilo
+            [two] { $count } neprebrani sporočili
+            [few] { $count } neprebrana sporočila
+           *[other] { $count } neprebranih sporočil
+        }
+
+## Spaces toolbar customize panel
+
+spaces-context-customize =
+    .label = Prilagodi …
+spaces-customize-panel-title = Nastavitve vrstice komponent
+spaces-customize-background-color = Barva ozadja
+spaces-customize-icon-color = Barva gumbov
+# The background color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-background-color = Barva ozadja izbranega gumba
+# The icon color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-text-color = Barva izbranega gumba
+spaces-customize-button-restore = Povrni privzeto
+    .accesskey = v
+spaces-customize-button-save = Končaj
+    .accesskey = K

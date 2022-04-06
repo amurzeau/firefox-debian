@@ -1,6 +1,6 @@
 #! /bin/sh
 
-if test `uname -s | grep -c MINGW 2>/dev/null` != "0"; then
+if test `uname -s | grep -c "MINGW\|MSYS" 2>/dev/null` != "0"; then
   msyshost=1
 fi
 

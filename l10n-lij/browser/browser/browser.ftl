@@ -461,6 +461,13 @@ popups-infobar-dont-show-message =
     .label = No fâ vedde sta notiçia quande i pop-up son blocæ
     .accesskey = N
 
+## Since the default position for PiP controls does not change for RTL layout,
+## right-to-left languages should use "Left" and "Right" as in the English strings,
+
+
+##
+
+
 # Navigator Toolbox
 
 navbar-downloads =
@@ -472,9 +479,6 @@ navbar-overflow =
 navbar-print =
     .label = Stanpa
     .tooltiptext = Stanpa sta pagina… ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = Stanpa
-    .tooltiptext = Stanpa questa pagina
 navbar-home =
     .label = Pagina prinçipâ
     .tooltiptext = Pagina prinçipâ de { -brand-short-name }
@@ -495,3 +499,13 @@ tabs-toolbar-new-tab =
 tabs-toolbar-list-all-tabs =
     .label = Lista de tutti i feuggi
     .tooltiptext = Lista de tutti i feuggi
+
+## Infobar shown at startup to suggest session-restore
+
+
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+
+data-reporting-notification-message = Çerte informaçioin se mandan aotomaticamente a { -vendor-short-name } da { -brand-short-name } pe megioane l'uzo.
+data-reporting-notification-button =
+    .label = Çerni cöse condividde
+    .accesskey = s

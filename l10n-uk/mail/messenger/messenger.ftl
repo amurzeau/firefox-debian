@@ -175,7 +175,7 @@ decrypt-and-copy-failures = Не вдалося розшифрувати та с
 ## Spaces toolbar
 
 spaces-toolbar =
-    .toolbarname = Панель Простори
+    .toolbarname = Панель Місць
 spaces-toolbar-button-mail =
     .title = Перемкнутись на вкладку пошти
 spaces-toolbar-button-address-book =
@@ -189,4 +189,86 @@ spaces-toolbar-button-chat =
 spaces-toolbar-button-settings =
     .title = Перемкнутись на вкладку налаштувань
 spaces-toolbar-button-collapse =
-    .title = Згорнути панель Простори
+    .title = Згорнути панель місць
+spaces-toolbar-button-reveal =
+    .title = Показати панель місць
+spaces-toolbar-button-mail2 =
+    .title = Пошта
+spaces-toolbar-button-address-book2 =
+    .title = Адресна книга
+spaces-toolbar-button-calendar2 =
+    .title = Календар
+spaces-toolbar-button-tasks2 =
+    .title = Завдання
+spaces-toolbar-button-chat2 =
+    .title = Чат
+spaces-toolbar-button-overflow =
+    .title = Більше місць…
+spaces-toolbar-button-settings2 =
+    .title = Налаштування
+spaces-toolbar-button-hide =
+    .title = Сховати панель місць
+spaces-toolbar-button-show =
+    .title = Показати панель місць
+spaces-context-new-tab-item =
+    .label = Відкрити у новій вкладці
+spaces-context-new-window-item =
+    .label = Відкрити в новому вікні
+# Variables:
+# $tabName (String) - The name of the tab this item will switch to.
+spaces-context-switch-tab-item =
+    .label = Перейти до { $tabName }
+settings-context-open-settings-item =
+    .label = Відкрити налаштування
+settings-context-open-account-settings-item =
+    .label = Відкрити налаштування облікового запису
+settings-context-open-addons-item =
+    .label = Відкрити додатки й теми
+
+## Spaces toolbar pinned tab menupopup
+
+spaces-toolbar-pinned-tab-button =
+    .tooltiptext = Відкрити меню місць
+spaces-pinned-button-menuitem-mail =
+    .label = { spaces-toolbar-button-mail.title }
+spaces-pinned-button-menuitem-address-book =
+    .label = { spaces-toolbar-button-address-book.title }
+spaces-pinned-button-menuitem-calendar =
+    .label = { spaces-toolbar-button-calendar.title }
+spaces-pinned-button-menuitem-tasks =
+    .label = { spaces-toolbar-button-tasks.title }
+spaces-pinned-button-menuitem-chat =
+    .label = { spaces-toolbar-button-chat.title }
+spaces-pinned-button-menuitem-reveal =
+    .label = { spaces-toolbar-button-reveal.title }
+spaces-pinned-button-menuitem-settings =
+    .label = { spaces-toolbar-button-settings2.title }
+spaces-pinned-button-menuitem-show =
+    .label = { spaces-toolbar-button-show.title }
+# Variables:
+# $count (Number) - Number of unread messages.
+chat-button-unread-messages = { $count }
+    .title =
+        { $count ->
+            [one] Одне непрочитане повідомлення
+            [few] { $count } непрочитані повідомлення
+           *[many] { $count } непрочитаних повідомлень
+        }
+
+## Spaces toolbar customize panel
+
+spaces-context-customize =
+    .label = Налаштувати…
+spaces-customize-panel-title = Налаштування панелі місць
+spaces-customize-background-color = Колір тла
+spaces-customize-icon-color = Колір кнопки
+# The background color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-background-color = Вибраний колір тла кнопки
+# The icon color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-text-color = Вибраний колір кнопки
+spaces-customize-button-restore = Відновити типові
+    .accesskey = В
+spaces-customize-button-save = Готово
+    .accesskey = Г

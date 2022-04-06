@@ -631,6 +631,13 @@ picture-in-picture-hide-toggle =
     .label = Ascunde comutatorul Picture-in-Picture
     .accesskey = H
 
+## Since the default position for PiP controls does not change for RTL layout,
+## right-to-left languages should use "Left" and "Right" as in the English strings,
+
+
+##
+
+
 # Navigator Toolbox
 
 # This string is a spoken label that should not include
@@ -647,9 +654,6 @@ navbar-overflow =
 navbar-print =
     .label = Tipărește
     .tooltiptext = Tipărește pagina… ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = Tipărește
-    .tooltiptext = Tipărește pagina
 navbar-home =
     .label = Pagină de start
     .tooltiptext = Pagina de start { -brand-short-name }
@@ -673,3 +677,10 @@ tabs-toolbar-list-all-tabs =
 
 ## Infobar shown at startup to suggest session-restore
 
+
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+
+data-reporting-notification-message = { -brand-short-name } trimite automat anumite date la { -vendor-short-name } ca să îți putem îmbunătăți experiența.
+data-reporting-notification-button =
+    .label = Alege ce partajezi
+    .accesskey = C

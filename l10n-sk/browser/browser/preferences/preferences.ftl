@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = Toto nastavenie sp
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Rozšírenie <img data-l10n-name="icon"/> { $name } kontroluje pripojenie prehliadača { -brand-short-name } k internetu.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = Toto nastavenie je spravované rozšírením <img data-l10n-name="icon"/><strong>{ $name }</strong>
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = Toto nastavenie je spravované rozšírením <img data-l10n-name="icon"/><strong>{ $name }</strong>
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> vyžaduje kontajnerové karty.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = Toto nastavenie je spravované rozšírením <img data-l10n-name="icon"/><strong>{ $name }</strong>
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>{ $name }</strong> spravuje, ako sa { -brand-short-name } pripája k internetu.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -190,6 +205,40 @@ containers-remove-cancel-button = Neodstraňovať tento kontajner
 
 language-and-appearance-header = Jazyk a vzhľad stránok
 fonts-and-colors-header = Písma a farby
+preferences-web-appearance-header = Vzhľad webových stránok
+preferences-web-appearance-description = Niektoré webové stránky prispôsobujú svoju farebnú schému podľa vašich preferencií. Vyberte farebnú schému, ktorú chcete použiť pre tieto stránky.
+preferences-web-appearance-choice-browser = Téma { -brand-short-name(case: "gen") }
+preferences-web-appearance-choice-system = Systémová téma
+preferences-web-appearance-choice-light = Svetlá
+preferences-web-appearance-choice-dark = Tmavá
+preferences-web-appearance-choice-tooltip-browser =
+    .title = Pre pozadie a obsah webových stránok sa použijú nastavenia témy vzhľadu nastavenej vo { -brand-short-name(case: "loc") }
+preferences-web-appearance-choice-tooltip-system =
+    .title = Pre pozadie a obsah webových stránok sa použijú nastavenia systému
+preferences-web-appearance-choice-tooltip-light =
+    .title = Svetlá téma vzhľadu pre pozadie a obsah webových stránok
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Tmavá téma vzhľadu pre pozadie a obsah webových stránok
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Váš výber farieb má prednosť pred vzhľadom webových stránok. <a data-l10n-name="colors-link">Spravovať farby</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Témy vzhľadu { -brand-short-name(case: "gen") } môžete spravovať v okne <a data-l10n-name="themes-link">Správcu doplnkov</a>.
+preferences-colors-header = Farby
+preferences-colors-description = Umožňuje zmeniť predvolené farby textu, pozadia webových stránok a odkazov vo { -brand-short-name(case: "loc") }.
+preferences-colors-manage-button =
+    .label = Spravovať farby…
+    .accesskey = f
+preferences-fonts-header = Písma
 default-font = Predvolené písmo
     .accesskey = d
 default-font-size = Veľkosť
@@ -410,6 +459,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = Použiť plynulý posun
     .accesskey = o
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Vždy zobrazovať posuvníky
+    .accesskey = V
 browsing-use-onscreen-keyboard =
     .label = V prípade potreby zobraziť dotykovú klávesnicu
     .accesskey = d
@@ -890,7 +942,7 @@ sitedata-settings =
     .label = Spravovať údaje…
     .accesskey = S
 sitedata-cookies-exceptions =
-    .label = Správa výnimiek…
+    .label = Spravovať výnimky…
     .accesskey = v
 
 ## Privacy Section - Address Bar
@@ -1001,7 +1053,7 @@ content-blocking-fingerprinters-label =
 ## Privacy Section - Tracking
 
 tracking-manage-exceptions =
-    .label = Správa výnimiek…
+    .label = Spravovať výnimky…
     .accesskey = S
 
 ## Privacy Section - Permissions

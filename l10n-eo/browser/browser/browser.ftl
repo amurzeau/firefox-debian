@@ -766,9 +766,6 @@ navbar-overflow =
 navbar-print =
     .label = Presi
     .tooltiptext = Presi tiun ĉi paĝon… ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = Presi
-    .tooltiptext = Presi ĉi tiun paĝon
 navbar-home =
     .label = Eka paĝo
     .tooltiptext = Eka paĝo de { -brand-short-name }
@@ -795,3 +792,10 @@ tabs-toolbar-list-all-tabs =
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
 restore-session-startup-suggestion-message = <strong>Ĉu malfermi antaŭajn langetojn?</strong> Vi povas restarigi vian antaŭan seancon el la menuo de la programo { -brand-short-name } <img data-l10n-name="icon"/>, Sub Historio.
 restore-session-startup-suggestion-button = Montri al mi kiel fari tion
+
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+
+data-reporting-notification-message = { -brand-short-name } aŭtomate sendas kelkajn datumojn al { -vendor-short-name } por ke ni povu plibonigi vian sperton.
+data-reporting-notification-button =
+    .label = Elektu kion mi dividas
+    .accesskey = E

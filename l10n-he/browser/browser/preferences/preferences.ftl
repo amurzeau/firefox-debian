@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = ההרחבה <img 
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = ההרחבה <img data-l10n-name="icon"/> { $name } שולטת באופן החיבור של { -brand-short-name } לאינטרנט.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>‏{ $name }</strong> שולטת בהגדרה זו.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/> <strong>‏{ $name }</strong> שולטת בהגדרה זו.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>‏{ $name }</strong> דורשת שימוש במגירת לשוניות.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> <strong>‏{ $name }</strong> שולטת בהגדרה זו.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>‏{ $name }</strong> שולטת באופן החיבור של { -brand-short-name } לאינטרנט.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -187,6 +202,40 @@ containers-remove-cancel-button = לא להסיר מגירה זו
 
 language-and-appearance-header = שפה ותצוגה
 fonts-and-colors-header = גופנים וצבעים
+preferences-web-appearance-header = מראה האתר
+preferences-web-appearance-description = חלק מהאתרים מתאימים את ערכת הצבעים שלהם בהתאם להעדפות שלך. ניתן לבחור באיזו ערכת צבעים ברצונך להשתמש עבור אתרים אלה.
+preferences-web-appearance-choice-browser = ערכת הנושא של { -brand-short-name }
+preferences-web-appearance-choice-system = ערכת הנושא של המערכת
+preferences-web-appearance-choice-light = בהיר
+preferences-web-appearance-choice-dark = כהה
+preferences-web-appearance-choice-tooltip-browser =
+    .title = התאמת הגדרות ערכת הנושא של { -brand-short-name } עבור רקעים ותכנים של אתרים.
+preferences-web-appearance-choice-tooltip-system =
+    .title = התאמת הגדרות המערכת שלך עבור רקעים ותכנים אחרים של אתרים.
+preferences-web-appearance-choice-tooltip-light =
+    .title = שימוש במראה בהיר עבור רקעים ותכנים של אתרים.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = שימוש במראה כהה עבור רקעים ותכנים של אתרים.
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = בחירות הצבעים שלך דורסות את מראה האתר. <a data-l10n-name="colors-link">ניהול צבעים</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = ניהול ערכות נושא של { -brand-short-name } ב<a data-l10n-name="themes-link">הרחבות וערכות נושא</a>
+preferences-colors-header = צבעים
+preferences-colors-description = דריסת צבעי ברירת המחדל של { -brand-short-name } עבור טקסט, רקעי אתרים וקישורים.
+preferences-colors-manage-button =
+    .label = ניהול צבעים…
+    .accesskey = צ
+preferences-fonts-header = גופנים
 default-font = גופן ברירת מחדל
     .accesskey = ב
 default-font-size = גודל
@@ -407,6 +456,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = שימוש בגלילה חלקה
     .accesskey = ח
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = תמיד להציג פסי גלילה
+    .accesskey = פ
 browsing-use-onscreen-keyboard =
     .label = הצגת מקלדת מגע בעת הצורך
     .accesskey = מ

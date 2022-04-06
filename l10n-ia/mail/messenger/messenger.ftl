@@ -188,3 +188,84 @@ spaces-toolbar-button-settings =
     .title = Passar al scheda del parametros
 spaces-toolbar-button-collapse =
     .title = Comprimer le barra del spatios
+spaces-toolbar-button-reveal =
+    .title = Monstrar le barra del instrumentos de spatios
+spaces-toolbar-button-mail2 =
+    .title = Email
+spaces-toolbar-button-address-book2 =
+    .title = Libro del adresses
+spaces-toolbar-button-calendar2 =
+    .title = Agenda
+spaces-toolbar-button-tasks2 =
+    .title = Activitates
+spaces-toolbar-button-chat2 =
+    .title = Chat
+spaces-toolbar-button-overflow =
+    .title = Plus spatios…
+spaces-toolbar-button-settings2 =
+    .title = Parametros
+spaces-toolbar-button-hide =
+    .title = Celar barra del spatios
+spaces-toolbar-button-show =
+    .title = Monstrar barra del spatios
+spaces-context-new-tab-item =
+    .label = Aperir un nove scheda
+spaces-context-new-window-item =
+    .label = Aperir in un nove fenestra
+# Variables:
+# $tabName (String) - The name of the tab this item will switch to.
+spaces-context-switch-tab-item =
+    .label = Passar a { $tabName }
+settings-context-open-settings-item =
+    .label = Aperir le parametros
+settings-context-open-account-settings-item =
+    .label = Aperir le parametros del conto
+settings-context-open-addons-item =
+    .label = Aperir Additivos e Themas
+
+## Spaces toolbar pinned tab menupopup
+
+spaces-toolbar-pinned-tab-button =
+    .tooltiptext = Aperir le menu del spatios
+spaces-pinned-button-menuitem-mail =
+    .label = { spaces-toolbar-button-mail.title }
+spaces-pinned-button-menuitem-address-book =
+    .label = { spaces-toolbar-button-address-book.title }
+spaces-pinned-button-menuitem-calendar =
+    .label = { spaces-toolbar-button-calendar.title }
+spaces-pinned-button-menuitem-tasks =
+    .label = { spaces-toolbar-button-tasks.title }
+spaces-pinned-button-menuitem-chat =
+    .label = { spaces-toolbar-button-chat.title }
+spaces-pinned-button-menuitem-reveal =
+    .label = { spaces-toolbar-button-reveal.title }
+spaces-pinned-button-menuitem-settings =
+    .label = { spaces-toolbar-button-settings2.title }
+spaces-pinned-button-menuitem-show =
+    .label = { spaces-toolbar-button-show.title }
+# Variables:
+# $count (Number) - Number of unread messages.
+chat-button-unread-messages = { $count }
+    .title =
+        { $count ->
+            [one] Un message non legite
+           *[other] { $count } messages non legite
+        }
+
+## Spaces toolbar customize panel
+
+spaces-context-customize =
+    .label = Personalisar…
+spaces-customize-panel-title = Parametros de barra del instrumentos spatios
+spaces-customize-background-color = Color de fundo
+spaces-customize-icon-color = Color de button
+# The background color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-background-color = Color de fundo del button eligite
+# The icon color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-text-color = Color del button eligite
+spaces-customize-button-restore = Restaurar le predefinitiones
+    .accesskey = R
+spaces-customize-button-save = Facite
+    .accesskey = F

@@ -171,6 +171,8 @@ decrypt-and-copy-failures = Không thể giải mã { $failures } trong tổng s
 
 ## Spaces toolbar
 
+spaces-toolbar =
+    .toolbarname = Thanh công cụ Spaces
 spaces-toolbar-button-mail =
     .title = Chuyển sang thẻ thư
 spaces-toolbar-button-address-book =
@@ -183,3 +185,85 @@ spaces-toolbar-button-chat =
     .title = Chuyển sang thẻ trò chuyện
 spaces-toolbar-button-settings =
     .title = Chuyển sang thẻ cài đặt
+spaces-toolbar-button-collapse =
+    .title = Thu gọn thanh công cụ Spaces
+spaces-toolbar-button-reveal =
+    .title = Hiển thị thanh công cụ Spaces
+spaces-toolbar-button-mail2 =
+    .title = Thư
+spaces-toolbar-button-address-book2 =
+    .title = Sổ địa chỉ
+spaces-toolbar-button-calendar2 =
+    .title = Lịch
+spaces-toolbar-button-tasks2 =
+    .title = Nhiệm vụ
+spaces-toolbar-button-chat2 =
+    .title = Trò chuyện
+spaces-toolbar-button-overflow =
+    .title = Thêm không gian…
+spaces-toolbar-button-settings2 =
+    .title = Cài đặt
+spaces-toolbar-button-hide =
+    .title = Ẩn thanh công cụ Spaces
+spaces-toolbar-button-show =
+    .title = Hiển thị thanh công cụ Spaces
+spaces-context-new-tab-item =
+    .label = Mở trong thẻ mới
+spaces-context-new-window-item =
+    .label = Mở trong cửa sổ mới
+# Variables:
+# $tabName (String) - The name of the tab this item will switch to.
+spaces-context-switch-tab-item =
+    .label = Chuyển sang { $tabName }
+settings-context-open-settings-item =
+    .label = Mở cài đặt
+settings-context-open-account-settings-item =
+    .label = Mở cài đặt tài khoản
+settings-context-open-addons-item =
+    .label = Mở tiện ích mở rộng và chủ đề
+
+## Spaces toolbar pinned tab menupopup
+
+spaces-toolbar-pinned-tab-button =
+    .tooltiptext = Mở menu Spaces
+spaces-pinned-button-menuitem-mail =
+    .label = { spaces-toolbar-button-mail.title }
+spaces-pinned-button-menuitem-address-book =
+    .label = { spaces-toolbar-button-address-book.title }
+spaces-pinned-button-menuitem-calendar =
+    .label = { spaces-toolbar-button-calendar.title }
+spaces-pinned-button-menuitem-tasks =
+    .label = { spaces-toolbar-button-tasks.title }
+spaces-pinned-button-menuitem-chat =
+    .label = { spaces-toolbar-button-chat.title }
+spaces-pinned-button-menuitem-reveal =
+    .label = { spaces-toolbar-button-reveal.title }
+spaces-pinned-button-menuitem-settings =
+    .label = { spaces-toolbar-button-settings2.title }
+spaces-pinned-button-menuitem-show =
+    .label = { spaces-toolbar-button-show.title }
+# Variables:
+# $count (Number) - Number of unread messages.
+chat-button-unread-messages = { $count }
+    .title =
+        { $count ->
+           *[other] { $count } thư chưa đọc
+        }
+
+## Spaces toolbar customize panel
+
+spaces-context-customize =
+    .label = Tùy biến…
+spaces-customize-panel-title = Cài đặt thanh công cụ Spaces
+spaces-customize-background-color = Màu nền:
+spaces-customize-icon-color = Màu nút
+# The background color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-background-color = Màu nền của Nút đã chọn
+# The icon color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-text-color = Màu của Nút đã chọn
+spaces-customize-button-restore = Khôi phục về mặc định
+    .accesskey = R
+spaces-customize-button-save = Xong
+    .accesskey = D

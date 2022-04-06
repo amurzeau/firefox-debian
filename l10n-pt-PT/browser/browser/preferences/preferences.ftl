@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = Uma extensão, <im
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Uma extensão, <img data-l10n-name="icon"/> { $name }, está a controlar como o { -brand-short-name } se liga à internet.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> controla esta opção.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/> <strong>{ $name }</strong> controla esta opção.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> necessita de Separadores Contentores.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> controla esta opção.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>{ $name }</strong> controla como é que { -brand-short-name } se liga à Internet.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -187,6 +202,40 @@ containers-remove-cancel-button = Não remover este contentor
 
 language-and-appearance-header = Idioma e aparência
 fonts-and-colors-header = Tipo de letra e cores
+preferences-web-appearance-header = Aparência do site
+preferences-web-appearance-description = Alguns sites adaptam o seu esquema de cores com base nas suas preferências. Escolha qual o esquema de cores que gostaria de usar para esses sites.
+preferences-web-appearance-choice-browser = tema do { -brand-short-name }
+preferences-web-appearance-choice-system = Tema do sistema
+preferences-web-appearance-choice-light = Claro
+preferences-web-appearance-choice-dark = Escuro
+preferences-web-appearance-choice-tooltip-browser =
+    .title = Corresponda as suas opções de tema do { -brand-short-name } quanto a fundos e conteúdo.
+preferences-web-appearance-choice-tooltip-system =
+    .title = Corresponda as suas opções de tema quanto a fundos e conteúdo.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Utilizar um aspeto claro para fundos e conteúdo de websites.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Utilizar um aspeto escuro para fundos e conteúdo de websites.
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = As suas seleções de cores estão a substituir a aparência do website. <a data-l10n-name="colors-link">Gerir cores</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Gerir temas do { -brand-short-name } em<a data-l10n-name="themes-link">Extensões e Temas</a>
+preferences-colors-header = Cores
+preferences-colors-description = Subsituir as cores padrão do { -brand-short-name } quanto a texto, fundos de websites e ligações.
+preferences-colors-manage-button =
+    .label = Gerir cores…
+    .accesskey = C
+preferences-fonts-header = Tipos de letra
 default-font = Tipo de letra predefinido
     .accesskey = d
 default-font-size = Tamanho
@@ -407,6 +456,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = Utilizar deslocação suave
     .accesskey = u
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Mostrar sempre as barras de deslocamento
+    .accesskey = o
 browsing-use-onscreen-keyboard =
     .label = Mostrar um teclado tátil quando necessário
     .accesskey = t

@@ -156,3 +156,15 @@ spotlight-total-cookie-protection-body = La proteccion totala contra los cookies
 spotlight-total-cookie-protection-expanded = { -brand-short-name } crèa una barrièra a l’entorn dels cookies, per los limitar al site ont vos trobatz per dire que los traçadors pòscan pas vos pistar. En participant d’un biais anticipat, contribuissètz a optimizar aquesta foncionalitat per que poscam téner de bastir un melhor Web per tot lo monde.
 spotlight-total-cookie-protection-primary-button = Activar la proteccion totala contra los cookies
 spotlight-total-cookie-protection-secondary-button = Pas ara
+
+## Emotive Continuous Onboarding
+
+spotlight-better-internet-header = Un melhor internet comença amb vos
+spotlight-better-internet-body = Quand utilizatz { -brand-short-name }, vos manifestatz per un internet dubèrt e accessible qu’es melhor per totòm.
+spotlight-peace-mind-header = Asseguram vòstra proteccion
+spotlight-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Gardar al Dock
+       *[other] Penjar a la barra de prètzfaches
+    }
+spotlight-pin-secondary-button = Pas ara

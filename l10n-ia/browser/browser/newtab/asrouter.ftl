@@ -156,3 +156,16 @@ spotlight-total-cookie-protection-body = Le protection total del cookies bloca l
 spotlight-total-cookie-protection-expanded = { -brand-short-name } crea un barriera circa le cookies, limitante los al sito que tu visita de maniera que le traciatores non pote usar los pro sequer te. Como usator del prime hora, tu nos adjuta a optimisar iste function de sorta que nos pote continuar a construer un web melior pro totes.
 spotlight-total-cookie-protection-primary-button = Activar Protection total del cookies
 spotlight-total-cookie-protection-secondary-button = Non ora
+
+## Emotive Continuous Onboarding
+
+spotlight-better-internet-header = Un internet melior comencia con te
+spotlight-better-internet-body = Quando tu usa { -brand-short-name }, tu vota pro un internet aperte e accessibile que es melior pro totes.
+spotlight-peace-mind-header = Nos te mantene secur
+spotlight-peace-mind-body = Cata mense, { -brand-short-name } bloca un media de ultra 3000 traciatores per usator. Perque nihil deberea poner se inter te e le bon internet, specialmente enoios pro tu confidentialitate como le traciatores.
+spotlight-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Mantener in le Bassino
+       *[other] Appunctar al barra del activitates
+    }
+spotlight-pin-secondary-button = Non ora

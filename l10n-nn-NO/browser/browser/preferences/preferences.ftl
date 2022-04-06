@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = Eit tillegg, <img 
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Ei utviding, <img data-l10n-name="icon"/> { $name }, styrer korleis { -brand-short-name } koplar seg til internett.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> kontrollerer denne innstillinga.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/> <strong>{ $name }</strong> kontrollerer denne innstillinga.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> krev innhaldsfaner.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> kontrollerer denne innstillinga.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>{ $name }</strong> kontrollerer korleis { -brand-short-name } koplar til internett.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -187,6 +202,40 @@ containers-remove-cancel-button = Ikkje fjern denne behaldaren
 
 language-and-appearance-header = Språk og utsjånad
 fonts-and-colors-header = Skrifttypar og fargar
+preferences-web-appearance-header = Utsjånaden på nettstaden
+preferences-web-appearance-description = Nokre nettstadar tilpassar fargeskjemaet basert på innstillingane dine. Vel kva for fargeskjema du vil bruke for desse nettstadane.
+preferences-web-appearance-choice-browser = { -brand-short-name }-tema
+preferences-web-appearance-choice-system = Systemtema
+preferences-web-appearance-choice-light = Lyst
+preferences-web-appearance-choice-dark = Mørkt
+preferences-web-appearance-choice-tooltip-browser =
+    .title = Samsvar temainnstillingane for { -brand-short-name } for nettsidebakgrunn og innhald på nettstaden.
+preferences-web-appearance-choice-tooltip-system =
+    .title = Samsvar systeminnstillingane for nettsidebakgrunn og innhald på nettstaden.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Bruk ein lys utsjånad for nettsidebakgrunn og innhald.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Bruk ein mørk utsjånad for nettsidebakgrunn og innhald.
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Fargevala dine overstyrer utsjånaden til nettstaden. <a data-l10n-name="colors-link">Handsam fargar</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Handsam { -brand-short-name }-tema i <a data-l10n-name="themes-link">Tillegg og tema</a>
+preferences-colors-header = Fargar
+preferences-colors-description = Overstyr { -brand-short-name } sine standardfargar for tekst, nettsidebakgrunnar og lenker.
+preferences-colors-manage-button =
+    .label = Handsam fargar…
+    .accesskey = H
+preferences-fonts-header = Skrifttypar
 default-font = Standardskrift
     .accesskey = t
 default-font-size = Storleik
@@ -407,6 +456,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = Bruk jamn rulling
     .accesskey = u
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Vis alltid rullefelt
+    .accesskey = V
 browsing-use-onscreen-keyboard =
     .label = Vis eit tøtsj-tastatur når nødvendig
     .accesskey = t

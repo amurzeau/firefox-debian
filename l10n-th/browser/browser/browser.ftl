@@ -762,9 +762,6 @@ navbar-overflow =
 navbar-print =
     .label = พิมพ์
     .tooltiptext = พิมพ์หน้านี้… ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = พิมพ์
-    .tooltiptext = พิมพ์หน้านี้
 navbar-home =
     .label = หน้าแรก
     .tooltiptext = หน้าแรกของ { -brand-short-name }
@@ -791,3 +788,10 @@ tabs-toolbar-list-all-tabs =
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
 restore-session-startup-suggestion-message = <strong>ต้องการเปิดแท็บก่อนหน้าหรือไม่</strong> คุณสามารถเรียกคืนวาระก่อนหน้าได้จากเมนูแอปพลิเคชัน { -brand-short-name } <img data-l10n-name="icon"/> ภายใต้ ประวัติ
 restore-session-startup-suggestion-button = แสดงวิธีให้ฉันดู
+
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+
+data-reporting-notification-message = { -brand-short-name } ส่งข้อมูลบางอย่างไปยัง { -vendor-short-name } โดยอัตโนมัติเพื่อให้เราสามารถปรับปรุงประสบการณ์ของคุณ
+data-reporting-notification-button =
+    .label = เลือกสิ่งที่ฉันจะแบ่งปัน
+    .accesskey = ล

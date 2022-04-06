@@ -738,9 +738,6 @@ navbar-overflow =
 navbar-print =
     .label = I-print
     .tooltiptext = I-print ang pahinang ito ... ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = I-print
-    .tooltiptext = I-limbag ang pahina na ito
 navbar-home =
     .label = Home
     .tooltiptext = { -brand-short-name } Home Page
@@ -764,3 +761,10 @@ tabs-toolbar-list-all-tabs =
 
 ## Infobar shown at startup to suggest session-restore
 
+
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+
+data-reporting-notification-message = Ang { -brand-short-name } ay kusang nagpapadala ng ilang data sa { -vendor-short-name } upang mapahusay namin ang iyong karanasan.
+data-reporting-notification-button =
+    .label = Piliin ang Ibabahagi
+    .accesskey = D

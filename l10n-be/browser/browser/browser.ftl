@@ -773,9 +773,6 @@ navbar-overflow =
 navbar-print =
     .label = Друкаваць
     .tooltiptext = Друкаваць старонку… ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = Друкаваць
-    .tooltiptext = Друкаваць гэтую старонку
 navbar-home =
     .label = Дадому
     .tooltiptext = Хатняя старонка { -brand-short-name }
@@ -802,3 +799,10 @@ tabs-toolbar-list-all-tabs =
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
 restore-session-startup-suggestion-message = <strong>Адкрыць папярэднія карткі?</strong> Вы можаце аднавіць папярэдні сеанс з меню <img data-l10n-name="icon"/> праграмы { -brand-short-name }, у раздзеле "Гісторыя".
 restore-session-startup-suggestion-button = Паказаць мне як
+
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+
+data-reporting-notification-message = { -brand-short-name } аўтаматычна дасылае асобныя дадзеныя ў { -vendor-short-name }, каб мы маглі палепшыць ваш досвед.
+data-reporting-notification-button =
+    .label = Выбраць, чым дзяліцца
+    .accesskey = В

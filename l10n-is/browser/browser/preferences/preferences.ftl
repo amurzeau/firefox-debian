@@ -20,7 +20,7 @@ settings-page-title = Stillingar
 search-input-box2 =
     .style = width: 15.4em
     .placeholder = Finna í stillingum
-managed-notice = Vafranum þínum er stjórnað af kerfisstjórum þínum.
+managed-notice = Vafranum er stjórnað af kerfisstjórum þínum.
 category-list =
     .aria-label = Flokkar
 pane-general-title = Almennt
@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = Viðbót, <img dat
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Viðbótin <img data-l10n-name="icon"/> { $name }, er að stjórna hvernig { -brand-short-name } tengist við internetið.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> stýrir þessari stillingu.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/> <strong>{ $name }</strong> stýrir þessari stillingu.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> þarfnast sérefnisflipa.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> stýrir þessari stillingu.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/><strong>{ $name }</strong> stýrir hvernig { -brand-short-name } tengist við internetið.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -106,7 +121,7 @@ search-results-help-link = Þarftu aðstoð? Skoðaðu <a data-l10n-name="url">{
 
 startup-header = Ræsing
 always-check-default =
-    .label = Alltaf athuga hvort { -brand-short-name } sé sjálfgefin vafri
+    .label = Alltaf athuga hvort { -brand-short-name } sé sjálfgefinn vafri
     .accesskey = l
 is-default = { -brand-short-name } er núna sjálfgefinn vafri
 is-not-default = { -brand-short-name } er ekki sjálfgefinn vafri
@@ -187,6 +202,40 @@ containers-remove-cancel-button = Ekki fjarlægja þetta sérefni
 
 language-and-appearance-header = Tungumál og útlit
 fonts-and-colors-header = Letur og litir
+preferences-web-appearance-header = Útlit vefsvæðis
+preferences-web-appearance-description = Sum vefsvæði aðlaga litastef sín að óskum þínum. Veldu hvaða litastef þú vilt nota fyrir þessi vefsvæði.
+preferences-web-appearance-choice-browser = { -brand-short-name } þema
+preferences-web-appearance-choice-system = Kerfisþema
+preferences-web-appearance-choice-light = Ljóst
+preferences-web-appearance-choice-dark = Dökkt
+preferences-web-appearance-choice-tooltip-browser =
+    .title = Láta bakgrunn og innihald vefsvæðisins samsvara þemastillingum { -brand-short-name }.
+preferences-web-appearance-choice-tooltip-system =
+    .title = Láta bakgrunn og innihald vefsvæðisins samsvara kerfisstillingum þínum.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Nota ljóst útlit fyrir bakgrunn og efni vefsvæðisins.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Nota dökkt útlit fyrir bakgrunn og efni vefsvæðisins.
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Litaval þitt yfirtekur útlit vefsvæðisins. <a data-l10n-name="colors-link">Sýsla með liti</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Sýslaðu með { -brand-short-name } þemu í <a data-l10n-name="themes-link">Viðbætur og þemu</a>
+preferences-colors-header = Litir
+preferences-colors-description = Taka yfir sjálfgefna liti { -brand-short-name } fyrir texta, bakgrunn vefsíðna og tengla.
+preferences-colors-manage-button =
+    .label = Stýra litum…
+    .accesskey = l
+preferences-fonts-header = Leturgerðir
 default-font = Sjálfgefin leturgerð
     .accesskey = g
 default-font-size = Stærð
@@ -407,6 +456,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = Nota fíngert skrun
     .accesskey = f
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Alltaf sýna skrunstikur
+    .accesskey = k
 browsing-use-onscreen-keyboard =
     .label = Sýna snertilyklaborð þegar það er nauðsynlegt
     .accesskey = k
@@ -456,7 +508,7 @@ home-restore-defaults =
 # "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Firefox Home (sjálfgefið)
+    .label = Upphafssíða Firefox (sjálfgefið)
 home-mode-choice-custom =
     .label = Sérsniðin URL…
 home-mode-choice-blank =
@@ -480,8 +532,8 @@ choose-bookmark =
 
 ## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header = Upphafssíða Firefox
-home-prefs-content-description = Veldu hvaða efni þú vilt á Firefox heimaskjánum þínum.
+home-prefs-content-header = Efni á upphafssíðu Firefox
+home-prefs-content-description = Veldu hvaða efni þú vilt sjá á upphafssíðu Firefox.
 home-prefs-search-header =
     .label = Vefleit
 home-prefs-topsites-header =
@@ -527,8 +579,8 @@ home-prefs-recent-activity-description = Úrval af nýlegum síðum og efni
 # expresses the idea of "a small message, shortened from something else,
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
-    .label = Bútar
-home-prefs-snippets-description = Uppfærslur frá { -vendor-short-name } og { -brand-product-name }
+    .label = Molar
+home-prefs-snippets-description = Tíðindi frá { -vendor-short-name } og { -brand-product-name }
 home-prefs-snippets-description-new = Ábendingar og fréttir frá { -vendor-short-name } og { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
@@ -918,7 +970,7 @@ addressbar-suggestions-settings = Breyta stillingum fyrir ábendingar leitarvél
 
 content-blocking-enhanced-tracking-protection = Aukin rakningarvörn
 content-blocking-section-top-level-description = Rekjarar fylgjast með þér á netinu til að safna upplýsingum um vafurvenjur þínar og áhugamál. { -brand-short-name } hindrar marga af þessum rekjurum og auk annarra skaðlegra skrifta.
-content-blocking-learn-more = Læra meira
+content-blocking-learn-more = Frekari upplýsingar
 content-blocking-fpi-incompatibility-warning = Þú ert að nota First Party Isolation (FPI), sem er æðra en sumar af vefkökustillingum { -brand-short-name }.
 
 ## These strings are used to define the different levels of
@@ -1052,8 +1104,8 @@ permissions-addon-exceptions =
 
 ## Privacy Section - Data Collection
 
-collection-header = { -brand-short-name } Gagnasöfnun og notkun
-collection-description = Við reynum alltaf að bjóða upp á valkvæmni og söfnum aðeins þeim upplýsingum sem við þurfum til að endurbæta { -brand-short-name } fyrir alla. Við spyrjum alltaf um leyfi áður en við söfnum persónulegum upplýsingum.
+collection-header = Gagnasöfnun { -brand-short-name } og notkun
+collection-description = Við reynum alltaf að bjóða upp á valkosti og söfnum aðeins þeim upplýsingum sem við þurfum til að endurbæta { -brand-short-name } fyrir alla. Við spyrjum alltaf um leyfi áður en við söfnum persónulegum upplýsingum.
 collection-privacy-notice = Meðferð persónuupplýsinga
 collection-health-report-telemetry-disabled = Þú leyfir { -vendor-short-name } ekki lengur að safna tækni- og samskiptagögnum. Öllum fyrri gögnum verður eytt innan 30 daga.
 collection-health-report-telemetry-disabled-link = Frekari upplýsingar

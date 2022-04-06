@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = Seda sätet haldab
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = { -brand-short-name }i internetti ühendumist haldab laiendus <img data-l10n-name="icon"/> { $name }.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = Seda sätet juhib laiendus <img data-l10n-name="icon"/><strong>{ $name }</strong>.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = Seda sätet juhib laiendus <img data-l10n-name="icon"/><strong>{ $name }</strong>.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = Laiendus <img data-l10n-name="icon"/><strong>{ $name }</strong> nõuab, et konteinerkaardid oleks lubatud.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = Seda sätet juhib laiendus <img data-l10n-name="icon"/><strong>{ $name }</strong>.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = { -brand-short-name }i internetti ühendumist haldab laiendus <img data-l10n-name="icon"/> <strong>{ $name }</strong>.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -187,6 +202,32 @@ containers-remove-cancel-button = Ära eemalda seda konteinerit
 
 language-and-appearance-header = Keel ja välimus
 fonts-and-colors-header = Fondid ja värvid
+preferences-web-appearance-header = Veebilehe välimus
+preferences-web-appearance-description = Mõned saidid kohandavad oma värviskeemi vastavalt sinu sätetele. Vali, millist värviskeemi soovite nende saitide jaoks kasutada.
+preferences-web-appearance-choice-browser = { -brand-short-name }i teema
+preferences-web-appearance-choice-system = Süsteemi teema
+preferences-web-appearance-choice-light = Hele
+preferences-web-appearance-choice-dark = Tume
+preferences-web-appearance-choice-tooltip-browser =
+    .title = Sobitatakse { -brand-short-name }i teema sätted saidi tausta ja sisuga.
+preferences-web-appearance-choice-tooltip-system =
+    .title = Sobitatakse süsteemi sätted saidi tausta ja sisuga.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Kasutatakse heledat teemat saidi tausta ja sisu jaoks.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Kasutatakse tumedat teemat saidi tausta ja sisu jaoks.
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Sinu värvivalik on saidi välimusele ülemuslik. <a data-l10n-name="colors-link">Halda värve</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Halda { -brand-short-name }i teemasid sektsioonis <a data-l10n-name="themes-link">Laiendused ja teemad</a>
+preferences-colors-header = Värvid
+preferences-colors-description = Kasutatakse { -brand-short-name }i vaikevärve teksti, saidi taustade ja linkide jaoks.
+preferences-colors-manage-button =
+    .label = Halda värve…
+    .accesskey = H
+preferences-fonts-header = Fondid
 default-font = Vaikefont
     .accesskey = V
 default-font-size = Suurus
@@ -407,6 +448,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = Kasutatakse sujuvat kerimist
     .accesskey = s
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Kerimisribasid kuvatakse alati
+    .accesskey = r
 browsing-use-onscreen-keyboard =
     .label = Vajadusel kuvatakse puutetundlikku klaviatuuri
     .accesskey = j

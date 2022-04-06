@@ -39,7 +39,9 @@ pocket-panel-signup-tagline = 在 { -brand-product-name } 上保存文章和视�
 pocket-panel-signup-tagline-story-one = 点击 { -pocket-brand-name } 按钮保存 { -brand-product-name } 上的任何文章、视频或页面。
 pocket-panel-signup-tagline-story-two = 在任何时间、任何设备上的 { -pocket-brand-name } 中查看。
 pocket-panel-signup-cta-a = 您的互联网内容保存按钮。
+pocket-panel-signup-cta-a-fix = 您的互联网内容保存按钮。
 pocket-panel-signup-cta-b = 点击 { -pocket-brand-name } 按钮，即可保存文章、视频和链接。您可以随时随地在任何设备上查看阅读列表。
+pocket-panel-signup-cta-b-short = 点击 { -pocket-brand-name } 按钮，即可保存文章、视频和链接。
 pocket-panel-signup-cta-c = 随时随地在任何设备上查看阅读列表。
 
 ## about:pocket-home panel
@@ -51,6 +53,7 @@ pocket-panel-home-explore-popular-topics = 浏览热门话题
 pocket-panel-home-discover-more = 发现更多
 pocket-panel-home-explore-more = 发现
 pocket-panel-home-most-recent-saves = 以下是您最近保存的内容：
+pocket-panel-home-most-recent-saves-loading = 正在加载近期保存内容…
 pocket-panel-home-new-user-cta = 点击 { -pocket-brand-name } 按钮，即可保存文章、视频和链接。
 pocket-panel-home-new-user-message = 在此查看您最近保存的内容。
 

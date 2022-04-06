@@ -766,9 +766,6 @@ navbar-overflow =
 navbar-print =
     .label = چاپ
     .tooltiptext = چاپ کردن این صفحه({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = چاپ
-    .tooltiptext = چاپ کردن این صفحه
 navbar-home =
     .label = خانه
     .tooltiptext = صفحهٔ خانگی { -brand-short-name }
@@ -795,3 +792,10 @@ tabs-toolbar-list-all-tabs =
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
 restore-session-startup-suggestion-message = <strong>می‌خواهید برگه‌های قبلی را باز کنید؟</strong> می‌توانید نشست قبلی خود را از منوی { -brand-short-name } <img data-l10n-name="icon"/>، در قسمت تاریخچه بازیابی کنید.
 restore-session-startup-suggestion-button = نمایش روش کار
+
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+
+data-reporting-notification-message = { -brand-short-name } به صورت خودکار بعضی اطلاعات را جهت بهبود تجربه کاربری شما به { -vendor-short-name } می‌فرستد.
+data-reporting-notification-button =
+    .label = انتخاب چیزهایی که میخواهم به‌اشتراک‌ بگذارم
+    .accesskey = ا

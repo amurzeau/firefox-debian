@@ -769,9 +769,6 @@ navbar-overflow =
 navbar-print =
     .label = Imprimir
     .tooltiptext = Imprimir aquesta pagina… ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = Imprimir
-    .tooltiptext = Imprimir aquesta pagina
 navbar-home =
     .label = Acuèlh
     .tooltiptext = Acuèlh de { -brand-short-name }
@@ -798,3 +795,10 @@ tabs-toolbar-list-all-tabs =
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
 restore-session-startup-suggestion-message = <strong>Tornar dobrir los onglets precedents ?</strong> Podètz restablir vòstra session precedenta del menú d’aplicacion de { -brand-short-name } <img data-l10n-name="icon"/> estant jos Istoric.
 restore-session-startup-suggestion-button = Cossí far
+
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+
+data-reporting-notification-message = { -brand-short-name } manda automaticament d'unas informacions a { -vendor-short-name } per tal que poscam melhorar vòstra experiéncia.
+data-reporting-notification-button =
+    .label = Causir çò que mandi
+    .accesskey = C

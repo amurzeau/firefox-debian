@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = Peteĩ jepysokue, 
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Peteĩ jepysokue, <img data-l10n-name="icon"/> { $name }, oma’ẽag̃ui { -brand-short-name } ramo ojuajúvo ñanduti rehe.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/><strong>{ $name }</strong> ohechameme ko ñemboheko.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/><strong>{ $name }</strong> ohechameme ko ñemboheko.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/><strong>{ $name }</strong> oikotevẽ Tendayke Ryru rehe.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/><strong>{ $name }</strong> ohechameme ko ñemboheko.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>{ $name }</strong> oma’ẽag̃ui mba’éichapa ojuaju { -brand-short-name } ñandutíre.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -187,6 +202,40 @@ containers-remove-cancel-button = Aníke eipe’a ko guerekoha
 
 language-and-appearance-header = Ñe’ẽ ha Mba’ejeguarã
 fonts-and-colors-header = Taity ha sa’ykuéra
+preferences-web-appearance-header = Mba’éicha ojehecha ñanduti renda
+preferences-web-appearance-description = Heta ñanduti renda omohenda isa’y jepurukuaa umi ojeguerohoryvévaicha. Eiporavo sa’y jepurukuaa reipotáva umi tendápe g̃uarã.
+preferences-web-appearance-choice-browser = { -brand-short-name } téma
+preferences-web-appearance-choice-system = Apopyvusu téma
+preferences-web-appearance-choice-light = Tesakã
+preferences-web-appearance-choice-dark = Ypytũ
+preferences-web-appearance-choice-tooltip-browser =
+    .title = Emboheko ne téma { -brand-short-name } mba’e tugua ha tetepy ñanduti rendápe g̃uarã.
+preferences-web-appearance-choice-tooltip-system =
+    .title = Embohekomeme ne apopyvusu rugua ha retepy ñanduti renda pegua.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Eipuru jehecharã sakã tugua ha tetepy ñanduti renda pegua.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Eipuru jehecharã pytũva tugua ha tetepy ñanduti renda pegua.
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Sa’y poravopyre omboyke mba’éichapa ojehecha ñanduti renda. <a data-l10n-name="colors-link">Eñangareko sa’ýre</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Eñangareko téma { -brand-short-name } mba’ére <a data-l10n-name="themes-link">Jepysokue ha téma</a> rupi
+preferences-colors-header = Sa’y
+preferences-colors-description = Emboyke sa’y ypyguáva { -brand-short-name } mba’e moñe’ẽrã, ñanduti renda rugua ha juajuhápe g̃uarã.
+preferences-colors-manage-button =
+    .label = Sa’ýre ñeñangareko…
+    .accesskey = C
+preferences-fonts-header = Teñoiha
 default-font = Teñoiha ijypykuéva:
     .accesskey = D
 default-font-size = Tuichakue:
@@ -407,6 +456,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = Oku’éva mbeguemi jepuru
     .accesskey = m
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Ehechauka meme ñemongu’eha renda
+    .accesskey = o
 browsing-use-onscreen-keyboard =
     .label = Ehechauka peteĩ tairenda jepokokuaáva oñeikotevẽ jave
     .accesskey = k

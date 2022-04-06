@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = Egy kiegészítő,
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = A(z) <img data-l10n-name="icon"/> { $name } kiegészítő vezérli, hogy a { -brand-short-name } hogy kapcsolódik az internethez
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = A(z) <img data-l10n-name="icon"/> <strong>{ $name }</strong> vezérli ezt a beállítást.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = A(z) <img data-l10n-name="icon"/> <strong>{ $name }</strong> vezérli ezt a beállítást.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = A(z) <img data-l10n-name="icon"/> <strong>{ $name }</strong> kiegészítőhöz szükségesek a konténerlapok.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = A(z) <img data-l10n-name="icon"/> <strong>{ $name }</strong> vezérli ezt a beállítást.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = A(z) <img data-l10n-name ="icon"/> <strong>{ $name }</strong> vezérli, hogy a { -brand-short-name } hogyan kapcsolódik az internethez.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -187,6 +202,40 @@ containers-remove-cancel-button = Ne távolítsa el a konténert
 
 language-and-appearance-header = Nyelv és megjelenés
 fonts-and-colors-header = Betűk és színek
+preferences-web-appearance-header = Weboldal megjelenése
+preferences-web-appearance-description = Egyes webhelyek az Ön beállításai alapján módosítják a színsémájukat. Válassza ki, hogy melyik színsémát szeretné használni ezeken a webhelyeken.
+preferences-web-appearance-choice-browser = A { -brand-short-name } témája
+preferences-web-appearance-choice-system = Rendszertéma
+preferences-web-appearance-choice-light = Világos
+preferences-web-appearance-choice-dark = Sötét
+preferences-web-appearance-choice-tooltip-browser =
+    .title = A { -brand-short-name } témabeállításainak a webhelyek hátteréhez és tartalmához igazítása.
+preferences-web-appearance-choice-tooltip-system =
+    .title = A rendszerbeállítások a webhely hátteréhez és tartalmához igazítása.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Világos megjelenés használata a webhelyek hátteréhez és tartalmához.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Sötét megjelenés használata a webhelyek hátteréhez és tartalmához.
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Az Ön színválasztásai felülírják a webhely megjelenését. <a data-l10n-name="colors-link">Színek kezelése</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Kezelje a { -brand-short-name } témáit a <a data-l10n-name="themes-link">Kiegészítők és témák</a> lapon
+preferences-colors-header = Színek
+preferences-colors-description = A { -brand-short-name } alapértelmezett színeinek felülírása a szövegnél, a webhelyek hátterénél és a hivatkozásoknál.
+preferences-colors-manage-button =
+    .label = Színek kezelése…
+    .accesskey = S
+preferences-fonts-header = Betűkészletek
 default-font = Alapértelmezett betűkészlet
     .accesskey = A
 default-font-size = Méret
@@ -407,6 +456,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = Finom görgetés
     .accesskey = F
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Mindig jelenítse meg a görgetősávokat
+    .accesskey = j
 browsing-use-onscreen-keyboard =
     .label = Érintőbillentyűzet megjelenítése, ha szükséges
     .accesskey = r

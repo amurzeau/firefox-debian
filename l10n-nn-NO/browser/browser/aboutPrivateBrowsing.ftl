@@ -30,6 +30,16 @@ about-private-browsing-hide-activity = Gøym aktiviteten og plasseringa di, same
 about-private-browsing-get-privacy = Få ivaretaking av personvernet overalt der du surfar
 about-private-browsing-hide-activity-1 = Gøym nettlesaraktivitet og plasseringa di med { -mozilla-vpn-brand-name }. Eitt klikk skapar ei trygg tilkopling, sjølv på offentleg Wi-Fi.
 about-private-browsing-prominent-cta = Hald deg privat med { -mozilla-vpn-brand-name }
+about-private-browsing-focus-promo-cta = Last ned { -focus-brand-name }
+about-private-browsing-focus-promo-header = { -focus-brand-name }: Privat nettlesing medan du er på farten
+about-private-browsing-focus-promo-text = Vår dedikerte mobilapp for privat nettlesing slettar historikken og infokapslane kvar gong.
+
+## The following strings will be used for experiments in Fx99 and Fx100
+
+about-private-browsing-focus-promo-header-b = Ta privat nettlesing til telefonen din
+about-private-browsing-focus-promo-text-b = Bruk { -focus-brand-name } for dei private søka du ikkje vil at hovudmobilnettlesaren din skal sjå.
+about-private-browsing-focus-promo-header-c = Personvern på neste nivå for mobile einingar
+about-private-browsing-focus-promo-text-c = { -focus-brand-name } slettar historikken din kvar gong medan du blokkerer annonsar og sporarar.
 # This string is the title for the banner for search engine selection
 # in a private window.
 # Variables:
@@ -44,3 +54,5 @@ about-private-browsing-search-banner-close-button =
     .aria-label = Lat att
 about-private-browsing-dismiss-button =
     .title = Ignorer
+about-private-browsing-promo-close-button =
+    .title = Lat att

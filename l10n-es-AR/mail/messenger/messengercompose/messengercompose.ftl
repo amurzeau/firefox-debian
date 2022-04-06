@@ -87,6 +87,13 @@ expand-attachment-pane-tooltip =
     .tooltiptext = Mostrar el panel de adjuntos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
     .tooltiptext = Ocultar el panel de adjuntos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key } )
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count-value =
+    { $count ->
+        [1] { $count } adjunto
+        [one] { $count } adjunto
+       *[other] { $count } adjuntos
+    }
 attachment-area-show =
     .title = Mostrar el panel de adjuntos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -242,8 +249,21 @@ encrypted-bcc-ignore-button = Entendido
 compose-tool-button-remove-text-styling =
     .tooltiptext = Eliminar estilo de texto
 
-## FileLink
+## Filelink
 
+# A text used in a tooltip of Filelink attachments, whose account has been
+# removed or is unknown.
+cloud-file-unknown-account-tooltip = Subido a una cuenta Filelink desconocida.
+
+# Placeholder file
+
+# Title for the html placeholder file.
+# $filename - name of the file
+cloud-file-placeholder-title = { $filename } - Adjunto Filelink
+# A text describing that the file was attached as a Filelink and can be downloaded
+# from the link shown below.
+# $filename - name of the file
+cloud-file-placeholder-intro = El archivo { $filename } fue adjuntado como un Filelink. Puede descargarse desde el enlace siguiente.
 
 # Template
 
@@ -254,13 +274,6 @@ cloud-file-count-header =
     { $count ->
         [one] He enlazado { $count } archivo a este correo electrónico:
        *[other] He enlazado { $count } archivos a este correo electrónico:
-    }
-# A text used in a footer, instructing the reader where to find additional
-# information about the used service providers.
-cloud-file-service-provider-footer =
-    { $count ->
-        [one] Conocer más sobre { $lastLink }.
-       *[other] Conocer más sobre{ $firstLinks } y { $lastLink }.
     }
 # A text used in a footer, instructing the reader where to find additional
 # information about the used service provider.
@@ -277,13 +290,13 @@ cloud-file-service-provider-footer-multiple = Conocé más sobre { $firstLinks }
 # Tooltip for an icon, indicating that the link is protected by a password.
 cloud-file-tooltip-password-protected-link = Enlace protegido por contraseña
 # Used in a list of stats about a specific file
-# Service - the used service provider to host the file (CloudFile Service: BOX.com)
+# Service - the used service provider to host the file (Filelink Service: BOX.com)
 # Size - the size of the file (Size: 4.2 MB)
 # Link - the link to the file (Link: https://some.provider.com)
 # Expiry Date - stating the date the link will expire (Expiry Date: 12.12.2022)
 # Download Limit - stating the maximum allowed downloads, before the link becomes invalid
 #                  (Download Limit: 6)
-cloud-file-template-service = Servicio CloudFile:
+cloud-file-template-service-name = Servicio Filelink:
 cloud-file-template-size = Tamaño:
 cloud-file-template-link = Enlace:
 cloud-file-template-password-protected-link = Enlace protegido por contraseña:
@@ -307,3 +320,9 @@ cloud-file-rename-error = Hubo un problema renombrando { $filename } en { $provi
 cloud-file-rename-error-with-custom-message-title = Fallo al renombrar { $filename } en { $provider }
 # $provider (string) - name of the online storage service that reported the error
 cloud-file-rename-not-supported = { $provider } no aporta renombrar archivos ya subidos.
+# $filename (string) - name of the file that was renamed and caused the error
+cloud-file-attachment-error-title = Error al adjuntar Filelink
+cloud-file-attachment-error = Fallo la actualización del adjunto Filelink { $filename } porque el archivo local fue movido o borrado.
+# $filename (string) - name of the file that was renamed and caused the error
+cloud-file-account-error-title = Error de cuenta Filelink
+cloud-file-account-error = Fallo la actualización del adjunto Filelink { $filename } porque la cuenta Filelink fue borrada.

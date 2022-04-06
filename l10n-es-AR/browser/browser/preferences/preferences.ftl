@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-do-not-track-description = Enviar a los sitios web una señal de "No rastrear" que significa que no quiere ser rastreado
+do-not-track-description = Enviar a los sitios web una señal de “No rastrear” que significa que no quiere ser rastreado
 do-not-track-learn-more = Conocer más
 do-not-track-option-default-content-blocking-known =
     .label = Solo cuando { -brand-short-name } está configurado para bloquear los rastreadores conocidos
@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = Una extensión, <i
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Una extensión, <img data-l10n-name="icon"/> { $name }, está controlando cómo { -brand-short-name } se conecta a Internet.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> controla está configuración.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/> <strong>{ $name }</strong> controla esta configuración.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> requiere pestañas contenedoras.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> controla está configuración.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>{ $name }</strong> controla como { -brand-short-name } se conectan a internet.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -187,6 +202,32 @@ containers-remove-cancel-button = No eliminar este contenedor
 
 language-and-appearance-header = Idioma y apariencia
 fonts-and-colors-header = Fuentes y colores
+preferences-web-appearance-header = Apariencia del sitio web
+preferences-web-appearance-description = Algunos sitios web adaptan su combinación de colores según las preferencias. Elija qué combinación de colores le gustaría usar para esos sitios.
+preferences-web-appearance-choice-browser = Tema de { -brand-short-name }
+preferences-web-appearance-choice-system = Tema del sistema
+preferences-web-appearance-choice-light = Claro
+preferences-web-appearance-choice-dark = Oscuro
+preferences-web-appearance-choice-tooltip-browser =
+    .title = El tema de { -brand-short-name } coincidirá con la configuración del sistema para fondos y contenido de los sitios web.
+preferences-web-appearance-choice-tooltip-system =
+    .title = La configuración del sistema se usará para fondos y contenido de los sitios web.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Usar una apariencia clara para fondos y contenido de los sitios web.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Usar una apariencia oscura para fondos y contenido de los sitios web.
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = La selección de colores cambia la apariencia del sitio web. <a data-l10n-name="colors-link">Administrar colores</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Administrar temas de { -brand-short-name } en <a data-l10n-name="themes-link">Extensiones y temas</a>
+preferences-colors-header = Colores
+preferences-colors-description = Anular los colores predeterminados de { -brand-short-name } para texto, fondo de los sitios web y enlaces.
+preferences-colors-manage-button =
+    .label = Administrar colores…
+    .accesskey = c
+preferences-fonts-header = Tipografía
 default-font = Fuente por defecto
     .accesskey = D
 default-font-size = Tamaño
@@ -407,6 +448,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = Usar desplazamiento suave
     .accesskey = s
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Siempre mostrar barras de desplazamiento
+    .accesskey = o
 browsing-use-onscreen-keyboard =
     .label = Mostrar un teclado táctil cuando sea necesario
     .accesskey = M

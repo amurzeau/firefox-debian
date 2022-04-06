@@ -288,7 +288,7 @@ identity-permissions-storage-access-hint = Ці сторони сайти мож
 identity-permissions-storage-access-learn-more = Докладніше
 identity-permissions-reload-hint = Для застосування змін, можливо, доведеться перезавантажити сторінку.
 identity-clear-site-data =
-    .label = Стерти куки і дані сайтів…
+    .label = Стерти куки та дані сайтів…
 identity-connection-not-secure-security-view = Ваше з'єднання з цим сайтом незахищене.
 identity-connection-verified = Ваше з'єднання з цим сайтом захищене.
 identity-ev-owner-label = Сертифікат виданий:
@@ -522,7 +522,7 @@ urlbar-result-action-search-tabs = Шукати у вкладках
 urlbar-group-firefox-suggest =
     .label = { -firefox-suggest-brand-name }
 # A label shown above the search suggestions group in the urlbar results. It
-# should use title case.
+# should use sentence case.
 # Variables
 #  $engine (String): the name of the search engine providing the suggestions
 urlbar-group-search-suggestions =
@@ -770,9 +770,6 @@ navbar-overflow =
 navbar-print =
     .label = Друкувати
     .tooltiptext = Друкувати цю сторінку… ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = Друкувати
-    .tooltiptext = Друкувати цю сторінку
 navbar-home =
     .label = Домівка
     .tooltiptext = Домівка { -brand-short-name }
@@ -799,3 +796,10 @@ tabs-toolbar-list-all-tabs =
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
 restore-session-startup-suggestion-message = <strong>Відкрити попередні вкладки?</strong> Ви можете відновити попередній сеанс у меню { -brand-short-name } <img data-l10n-name="icon"/> у розділі Історія.
 restore-session-startup-suggestion-button = Покажіть як
+
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+
+data-reporting-notification-message = { -brand-short-name } автоматично відправляє деякі дані в { -vendor-short-name }, щоб ми могли вдосконалити вашу роботу.
+data-reporting-notification-button =
+    .label = Вибрати чим ділитись
+    .accesskey = В

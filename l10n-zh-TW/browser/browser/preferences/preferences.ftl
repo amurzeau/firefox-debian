@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = 擴充套件<img d
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = 擴充套件「<img data-l10n-name="icon"/>{ $name }」正在控制您的 { -brand-short-name } 連線至網際網路的方式。
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/> 此設定受 <strong>{ $name }</strong> 控制。
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/> 此設定受 <strong>{ $name }</strong> 控制。
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> 需要開啟容器分頁功能才可使用 <strong>{ $name }</strong>。
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> 此設定受 <strong>{ $name }</strong> 控制。
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name="icon"/> <strong>{ $name }</strong> 會控制 { -brand-short-name } 連線到網際網路的方式。
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -175,6 +190,40 @@ containers-remove-cancel-button = 不要移除此容器
 
 language-and-appearance-header = 語言與外觀
 fonts-and-colors-header = 字型與色彩
+preferences-web-appearance-header = 網站外觀
+preferences-web-appearance-description = 某些網站可依照您的偏好來調整顯示配色，可在此決定要針對這些網站使用哪種配色模式。
+preferences-web-appearance-choice-browser = { -brand-short-name } 佈景主題
+preferences-web-appearance-choice-system = 系統佈景主題
+preferences-web-appearance-choice-light = 亮色
+preferences-web-appearance-choice-dark = 暗色
+preferences-web-appearance-choice-tooltip-browser =
+    .title = 在網站背景與內容使用與 { -brand-short-name } 佈景主題設定相符的配色。
+preferences-web-appearance-choice-tooltip-system =
+    .title = 在網站背景與內容使用與您的系統設定相符的配色。
+preferences-web-appearance-choice-tooltip-light =
+    .title = 在網站背景與內容使用亮色外觀。
+preferences-web-appearance-choice-tooltip-dark =
+    .title = 在網站背景與內容使用暗色外觀。
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = 您選擇的配色會蓋過網站外觀的配色。<a data-l10n-name="colors-link">管理色彩</a>。
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = 到<a data-l10n-name="themes-link">擴充套件與佈景主題</a>管理 { -brand-short-name } 的佈景主題
+preferences-colors-header = 色彩
+preferences-colors-description = 覆蓋 { -brand-short-name } 的預設文字、網站背景、鏈結色彩。
+preferences-colors-manage-button =
+    .label = 管理色彩…
+    .accesskey = C
+preferences-fonts-header = 字型
 default-font = 預設字型
     .accesskey = D
 default-font-size = 大小
@@ -395,6 +444,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = 使用平滑捲動
     .accesskey = m
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = 總是顯示捲動列
+    .accesskey = o
 browsing-use-onscreen-keyboard =
     .label = 需要時顯示觸控鍵盤
     .accesskey = k

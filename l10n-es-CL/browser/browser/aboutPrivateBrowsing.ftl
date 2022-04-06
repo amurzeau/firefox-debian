@@ -30,6 +30,16 @@ about-private-browsing-hide-activity = Oculta tu actividad y ubicación, donde s
 about-private-browsing-get-privacy = Obtén protecciones de privacidad donde sea que navegues
 about-private-browsing-hide-activity-1 = Oculta la actividad de navegación y la ubicación con { -mozilla-vpn-brand-name }. Con un clic creas una conexión segura, incluso en Wi-Fi público.
 about-private-browsing-prominent-cta = Mantente en privado con { -mozilla-vpn-brand-name }
+about-private-browsing-focus-promo-cta = Bajar { -focus-brand-name }
+about-private-browsing-focus-promo-header = { -focus-brand-name }: Navegación privada en todas partes
+about-private-browsing-focus-promo-text = Nuestra aplicación móvil dedicada a la navegación privada borra tu historial y cookies cada vez.
+
+## The following strings will be used for experiments in Fx99 and Fx100
+
+about-private-browsing-focus-promo-header-b = Lleva la navegación privada a tu teléfono
+about-private-browsing-focus-promo-text-b = Usa { -focus-brand-name } para aquellas búsquedas privadas que no quieres que el navegador principal de tu celular vea.
+about-private-browsing-focus-promo-header-c = Privacidad de nivel superior en dispositivos móviles
+about-private-browsing-focus-promo-text-c = { -focus-brand-name } limpia tu historial todo el tiempo mientras bloquea anuncios y rastreadores.
 # This string is the title for the banner for search engine selection
 # in a private window.
 # Variables:
@@ -44,3 +54,5 @@ about-private-browsing-search-banner-close-button =
     .aria-label = Cerrar
 about-private-browsing-dismiss-button =
     .title = Descartar
+about-private-browsing-promo-close-button =
+    .title = Cerrar

@@ -393,6 +393,13 @@ popups-infobar-dont-show-message =
     .label = ಪುಟಿಕೆಗಳು ಪ್ರತಿಬಂಧಿತಗೊಂಡಾಗ ಈ ಸಂದೇಶವನ್ನು ತೋರಿಸಬೇಡ
     .accesskey = D
 
+## Since the default position for PiP controls does not change for RTL layout,
+## right-to-left languages should use "Left" and "Right" as in the English strings,
+
+
+##
+
+
 # Navigator Toolbox
 
 navbar-downloads =
@@ -404,9 +411,6 @@ navbar-overflow =
 navbar-print =
     .label = ಮುದ್ರಿಸು
     .tooltiptext = ಈ ಪುಟವನ್ನು ಮುದ್ರಿಸಿ… ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = ಮುದ್ರಿಸು
-    .tooltiptext = ಈ ಪುಟವನ್ನು ಮುದ್ರಿಸು
 navbar-library =
     .label = ಲೈಬ್ರರಿ
     .tooltiptext = ಇತಿಹಾಸ, ಉಳಿಸಿದ ಬುಕ್‍ಮಾರ್ಕ್‌ಗಳು ಮತ್ತು ಹೆಚ್ಚಿದುದನ್ನು ನೋಡಿ
@@ -422,3 +426,13 @@ tabs-toolbar-new-tab =
 tabs-toolbar-list-all-tabs =
     .label = ಎಲ್ಲಾ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡು
     .tooltiptext = ಎಲ್ಲಾ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡು
+
+## Infobar shown at startup to suggest session-restore
+
+
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+
+data-reporting-notification-message = ನಿಮ್ಮ ಅನುಭವವನ್ನು ಉತ್ತಮಗೊಳಿಸಲು { -brand-short-name } ಸ್ವಯಂಚಾಲಿತವಾಗಿ { -vendor-short-name } ಗೆ ಕೆಲವು ಮಾಹಿತಿಯನ್ನು ಕಳುಹಿಸುತ್ತದೆ.
+data-reporting-notification-button =
+    .label = ನಾನು ಏನನ್ನು ಹಂಚಿಕೊಳ್ಳುತ್ತೇನೆ Choose
+    .accesskey = C

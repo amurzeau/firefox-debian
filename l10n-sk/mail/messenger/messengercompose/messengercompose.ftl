@@ -90,6 +90,14 @@ expand-attachment-pane-tooltip =
     .tooltiptext = Zobraziť panel príloh ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
     .tooltiptext = Skryť panel príloh ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count-value =
+    { $count ->
+        [1] { $count } príloha
+        [one] { $count } príloha
+        [few] { $count } prílohy
+       *[other] { $count } príloh
+    }
 attachment-area-show =
     .title = Zobraziť panel príloh ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -249,8 +257,21 @@ encrypted-bcc-ignore-button = Rozumiem
 compose-tool-button-remove-text-styling =
     .tooltiptext = Odstrániť štýl textu
 
-## FileLink
+## Filelink
 
+# A text used in a tooltip of Filelink attachments, whose account has been
+# removed or is unknown.
+cloud-file-unknown-account-tooltip = Nahrané do neznámeho účtu Filelink
+
+# Placeholder file
+
+# Title for the html placeholder file.
+# $filename - name of the file
+cloud-file-placeholder-title = { $filename } - príloha Filelink
+# A text describing that the file was attached as a Filelink and can be downloaded
+# from the link shown below.
+# $filename - name of the file
+cloud-file-placeholder-intro = Súbor { $filename } bol pripojený ako odkaz Filelink. Dá sa stiahnuť z nižšie uvedeného odkazu.
 
 # Template
 
@@ -262,14 +283,6 @@ cloud-file-count-header =
         [one] K tejto správe je pripojený { $count } súbor
         [few] K tejto správe sú pripojené { $count } súbory
        *[other] K tejto správe je pripojených { $count } súborov
-    }
-# A text used in a footer, instructing the reader where to find additional
-# information about the used service providers.
-cloud-file-service-provider-footer =
-    { $count ->
-        [one] Ďalšie informácie o { $lastLink }.
-        [few] Ďalšie informácie o { $firstLinks } a { $lastLink }.
-       *[other] Ďalšie informácie o { $firstLinks } a { $lastLink }.
     }
 # A text used in a footer, instructing the reader where to find additional
 # information about the used service provider.
@@ -286,13 +299,13 @@ cloud-file-service-provider-footer-multiple = Ďalšie informácie o službách 
 # Tooltip for an icon, indicating that the link is protected by a password.
 cloud-file-tooltip-password-protected-link = Odkaz chránený heslom
 # Used in a list of stats about a specific file
-# Service - the used service provider to host the file (CloudFile Service: BOX.com)
+# Service - the used service provider to host the file (Filelink Service: BOX.com)
 # Size - the size of the file (Size: 4.2 MB)
 # Link - the link to the file (Link: https://some.provider.com)
 # Expiry Date - stating the date the link will expire (Expiry Date: 12.12.2022)
 # Download Limit - stating the maximum allowed downloads, before the link becomes invalid
 #                  (Download Limit: 6)
-cloud-file-template-service = Služba CloudFile:
+cloud-file-template-service-name = Služba Filelink:
 cloud-file-template-size = Veľkosť:
 cloud-file-template-link = Odkaz:
 cloud-file-template-password-protected-link = Odkaz chránený heslom:
@@ -316,3 +329,9 @@ cloud-file-rename-error = Vyskytol sa problém s premenovaním súboru { $filena
 cloud-file-rename-error-with-custom-message-title = Premenovanie súboru { $filename } v službe { $provider } zlyhalo
 # $provider (string) - name of the online storage service that reported the error
 cloud-file-rename-not-supported = Služba { $provider } nepodporuje premenovanie už nahratých súborov.
+# $filename (string) - name of the file that was renamed and caused the error
+cloud-file-attachment-error-title = Chyba prílohy Filelink
+cloud-file-attachment-error = Aktualizácia prílohy Filelink { $filename } zlyhala, pretože jej lokálny súbor bol presunutý alebo odstránený.
+# $filename (string) - name of the file that was renamed and caused the error
+cloud-file-account-error-title = Chyba účtu Filelink
+cloud-file-account-error = Prílohu Filelink { $filename } sa nepodarilo aktualizovať, pretože jej účet Filelink bol odstránený.

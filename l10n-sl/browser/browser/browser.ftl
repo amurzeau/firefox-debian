@@ -284,8 +284,8 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = Vključite način samo HTTPS za to stran, če želite, da { -brand-short-name } nadgradi povezavo, ko je to mogoče.
 identity-https-only-info-turn-off2 = Če se zdi stran pokvarjena, lahko poskusite izklopiti način "Samo HTTPS", ki bo spletno mesto znova naložil z nezavarovanim HTTP.
 identity-https-only-info-no-upgrade = Povezave ni mogoče nadgraditi s HTTP.
-identity-permissions-storage-access-header = Spletni piškotki
-identity-permissions-storage-access-hint = Te stranke lahko uporabljajo spletne piškotke in podatke strani, medtem ko ste vi na tej strani.
+identity-permissions-storage-access-header = Medspletni piškotki
+identity-permissions-storage-access-hint = Te stranke lahko uporabljajo piškotke za sledenje med spletnimi mesti in podatke strani, medtem ko ste vi na tem spletnem mestu.
 identity-permissions-storage-access-learn-more = Več o tem
 identity-permissions-reload-hint = Za uveljavitev sprememb boste morda morali ponovno naložiti stran.
 identity-clear-site-data =
@@ -529,7 +529,7 @@ urlbar-result-action-search-tabs = Išči zavihke
 urlbar-group-firefox-suggest =
     .label = { -firefox-suggest-brand-name }
 # A label shown above the search suggestions group in the urlbar results. It
-# should use title case.
+# should use sentence case.
 # Variables
 #  $engine (String): the name of the search engine providing the suggestions
 urlbar-group-search-suggestions =
@@ -777,9 +777,6 @@ navbar-overflow =
 navbar-print =
     .label = Natisni
     .tooltiptext = Natisni stran … ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = Natisni
-    .tooltiptext = Natisni to stran
 navbar-home =
     .label = Domov
     .tooltiptext = Domača stran { -brand-short-name }a
@@ -806,3 +803,10 @@ tabs-toolbar-list-all-tabs =
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
 restore-session-startup-suggestion-message = <strong>Želite odpreti zavihke od prejšnjič?</strong> Prejšnjo sejo lahko obnovite v meniju { -brand-short-name(sklon: "rodilnik") } <img data-l10n-name="icon"/> pod Zgodovina.
 restore-session-startup-suggestion-button = Pokaži, kako
+
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+
+data-reporting-notification-message = { -brand-short-name } samodejno pošilja nekatere podatke organizaciji { -vendor-short-name }, zato da lahko izboljšamo vašo izkušnjo.
+data-reporting-notification-button =
+    .label = Izberite, kaj želite pošiljati
+    .accesskey = I

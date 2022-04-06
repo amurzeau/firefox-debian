@@ -159,3 +159,16 @@ spotlight-total-cookie-protection-body = Поўная ахова кукаў пе
 spotlight-total-cookie-protection-expanded = { -brand-short-name } будуе плот вакол файлаў кукі, абмяжоўваючы іх толькі сайтам, на якім вы знаходзіцеся, таму трэкеры не могуць выкарыстоўваць іх, каб сачыць за вамі. З раннім доступам вы дапаможаце аптымізаваць гэту функцыю, каб мы маглі працягваць ствараць лепшае сеціва для ўсіх.
 spotlight-total-cookie-protection-primary-button = Уключыць поўную ахову кукаў
 spotlight-total-cookie-protection-secondary-button = Не зараз
+
+## Emotive Continuous Onboarding
+
+spotlight-better-internet-header = Лепшы Інтэрнэт пачынаецца з вас
+spotlight-better-internet-body = Калі вы карыстаецеся { -brand-short-name }, вы галасуеце за адкрыты і даступны Інтэрнэт, лепшы для ўсіх.
+spotlight-peace-mind-header = Можаце разлічваць на нас
+spotlight-peace-mind-body = Кожны месяц { -brand-short-name } блакуе ў сярэднім больш за 3000 трэкераў на карыстальніка. Таму што нішто, асабліва такія перашкоды прыватнасці, як трэкеры, не павінна стаяць паміж вамі і добрым Інтэрнэтам.
+spotlight-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Трымаць у доку
+       *[other] Замацаваць на панэлі заданняў
+    }
+spotlight-pin-secondary-button = Не зараз

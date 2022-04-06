@@ -45,6 +45,9 @@ about-private-browsing-prominent-cta =
         [neuter] s { -mozilla-vpn-brand-name(case: "ins") }
        *[other] se službou { -mozilla-vpn-brand-name }
     }
+about-private-browsing-focus-promo-cta = Stáhnout { -focus-brand-name(case: "acc") }
+about-private-browsing-focus-promo-header = { -focus-brand-name }: anonymní prohlížení na cesty
+about-private-browsing-focus-promo-text = Náš speciální mobilní prohlížeč, který pokaždé smaže cookies a historii vašeho prohlížení.
 # This string is the title for the banner for search engine selection
 # in a private window.
 # Variables:
@@ -57,3 +60,5 @@ about-private-browsing-search-banner-description =
     }
 about-private-browsing-search-banner-close-button =
     .aria-label = Zavřít
+about-private-browsing-dismiss-button =
+    .title = Skrýt

@@ -188,3 +188,84 @@ spaces-toolbar-button-settings =
     .title = Átváltás a beállítások lapra
 spaces-toolbar-button-collapse =
     .title = Helyek eszköztár összecsukása
+spaces-toolbar-button-reveal =
+    .title = Helyek eszköztár megjelenítése
+spaces-toolbar-button-mail2 =
+    .title = Levelezés
+spaces-toolbar-button-address-book2 =
+    .title = Címjegyzék
+spaces-toolbar-button-calendar2 =
+    .title = Naptár
+spaces-toolbar-button-tasks2 =
+    .title = Feladatok
+spaces-toolbar-button-chat2 =
+    .title = Csevegés
+spaces-toolbar-button-overflow =
+    .title = További helyek…
+spaces-toolbar-button-settings2 =
+    .title = Beállítások
+spaces-toolbar-button-hide =
+    .title = Helyek eszköztár elrejtése
+spaces-toolbar-button-show =
+    .title = Helyek eszköztár megjelenítése
+spaces-context-new-tab-item =
+    .label = Megnyitás új lapon
+spaces-context-new-window-item =
+    .label = Megnyitás új ablakban
+# Variables:
+# $tabName (String) - The name of the tab this item will switch to.
+spaces-context-switch-tab-item =
+    .label = Váltás erre: { $tabName }
+settings-context-open-settings-item =
+    .label = Beállítások megnyitása
+settings-context-open-account-settings-item =
+    .label = Fiókbeállítások megnyitása
+settings-context-open-addons-item =
+    .label = Kiegészítők és témák megnyitása
+
+## Spaces toolbar pinned tab menupopup
+
+spaces-toolbar-pinned-tab-button =
+    .tooltiptext = Helyek menü megnyitása
+spaces-pinned-button-menuitem-mail =
+    .label = { spaces-toolbar-button-mail.title }
+spaces-pinned-button-menuitem-address-book =
+    .label = { spaces-toolbar-button-address-book.title }
+spaces-pinned-button-menuitem-calendar =
+    .label = { spaces-toolbar-button-calendar.title }
+spaces-pinned-button-menuitem-tasks =
+    .label = { spaces-toolbar-button-tasks.title }
+spaces-pinned-button-menuitem-chat =
+    .label = { spaces-toolbar-button-chat.title }
+spaces-pinned-button-menuitem-reveal =
+    .label = { spaces-toolbar-button-reveal.title }
+spaces-pinned-button-menuitem-settings =
+    .label = { spaces-toolbar-button-settings2.title }
+spaces-pinned-button-menuitem-show =
+    .label = { spaces-toolbar-button-show.title }
+# Variables:
+# $count (Number) - Number of unread messages.
+chat-button-unread-messages = { $count }
+    .title =
+        { $count ->
+            [one] Egy olvasatlan üzenet
+           *[other] { $count } olvasatlan üzenet
+        }
+
+## Spaces toolbar customize panel
+
+spaces-context-customize =
+    .label = Testreszabás…
+spaces-customize-panel-title = Helyek eszköztár beállításai
+spaces-customize-background-color = Háttérszín
+spaces-customize-icon-color = Gomb színe
+# The background color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-background-color = Kiválasztott gomb háttérszíne
+# The icon color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-text-color = Kiválasztott gomb színe
+spaces-customize-button-restore = Alapértelmezések helyreállítása
+    .accesskey = h
+spaces-customize-button-save = Kész
+    .accesskey = K

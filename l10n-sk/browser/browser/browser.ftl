@@ -525,7 +525,7 @@ urlbar-result-action-search-tabs = Hľadať v otvorených kartách
 urlbar-group-firefox-suggest =
     .label = { -firefox-suggest-brand-name }
 # A label shown above the search suggestions group in the urlbar results. It
-# should use title case.
+# should use sentence case.
 # Variables
 #  $engine (String): the name of the search engine providing the suggestions
 urlbar-group-search-suggestions =
@@ -563,7 +563,7 @@ crashed-subframe-submit =
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-manage-bookmarks =
-    .label = Správa záložiek
+    .label = Spravovať záložky
 bookmarks-recent-bookmarks-panel-subheader = Nedávno pridané medzi záložky
 bookmarks-toolbar-chevron =
     .tooltiptext = Zobraziť ďalšie záložky
@@ -773,9 +773,6 @@ navbar-overflow =
 navbar-print =
     .label = Tlačiť
     .tooltiptext = Umožní vytlačiť túto stránku… ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = Tlačiť
-    .tooltiptext = Umožní vytlačiť túto stránku
 navbar-home =
     .label = Domov
     .tooltiptext = Úvodná stránka prehliadača { -brand-short-name }
@@ -802,3 +799,10 @@ tabs-toolbar-list-all-tabs =
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
 restore-session-startup-suggestion-message = <strong>Chcete otvoriť predchádzajúce karty?</strong> Predchádzajúcu reláciu môžete obnoviť z ponuky { -brand-short-name(case: "gen") } <img data-l10n-name="icon"/>, v časti História.
 restore-session-startup-suggestion-button = Ako na to
+
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+
+data-reporting-notification-message = { -brand-short-name } automaticky odosiela údaje spoločnosti { -vendor-short-name } s cieľom vylepšiť tento produkt.
+data-reporting-notification-button =
+    .label = Zvoliť, aké údaje sa odosielajú
+    .accesskey = v

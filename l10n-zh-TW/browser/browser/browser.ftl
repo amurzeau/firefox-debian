@@ -766,9 +766,6 @@ navbar-overflow =
 navbar-print =
     .label = 列印
     .tooltiptext = 列印此頁面… ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = 列印
-    .tooltiptext = 列印此頁
 navbar-home =
     .label = 首頁
     .tooltiptext = { -brand-short-name } 首頁
@@ -795,3 +792,10 @@ tabs-toolbar-list-all-tabs =
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
 restore-session-startup-suggestion-message = <strong>想開啟先前的分頁？</strong>您可以從 { -brand-short-name } 應用程式選單 <img data-l10n-name="icon"/> 當中的「歷史」重新開啟先前的瀏覽階段。
 restore-session-startup-suggestion-button = 告訴我怎麼做
+
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+
+data-reporting-notification-message = { -brand-short-name } 將會自動傳送一些資料給 { -vendor-short-name }，讓我們能夠改善您的使用體驗。
+data-reporting-notification-button =
+    .label = 選擇我要分享的項目
+    .accesskey = C

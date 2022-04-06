@@ -188,3 +188,84 @@ spaces-toolbar-button-settings =
     .title = Växla till fliken Inställningar
 spaces-toolbar-button-collapse =
     .title = Komprimera flikmeny
+spaces-toolbar-button-reveal =
+    .title = Visa flikmenyn
+spaces-toolbar-button-mail2 =
+    .title = E-post
+spaces-toolbar-button-address-book2 =
+    .title = Adressbok
+spaces-toolbar-button-calendar2 =
+    .title = Kalender
+spaces-toolbar-button-tasks2 =
+    .title = Uppgifter
+spaces-toolbar-button-chat2 =
+    .title = Chatt
+spaces-toolbar-button-overflow =
+    .title = Fler flikar…
+spaces-toolbar-button-settings2 =
+    .title = Inställningar
+spaces-toolbar-button-hide =
+    .title = Dölj verktygsfält för flikmeny
+spaces-toolbar-button-show =
+    .title = Visa verktygsfält för flikmeny
+spaces-context-new-tab-item =
+    .label = Öppna i ny flik
+spaces-context-new-window-item =
+    .label = Öppna i nytt fönster
+# Variables:
+# $tabName (String) - The name of the tab this item will switch to.
+spaces-context-switch-tab-item =
+    .label = Växla till { $tabName }
+settings-context-open-settings-item =
+    .label = Öppna Inställningar
+settings-context-open-account-settings-item =
+    .label = Öppna Kontoinställningar
+settings-context-open-addons-item =
+    .label = Öppna Tillägg och teman
+
+## Spaces toolbar pinned tab menupopup
+
+spaces-toolbar-pinned-tab-button =
+    .tooltiptext = Öppna flikmenyn
+spaces-pinned-button-menuitem-mail =
+    .label = { spaces-toolbar-button-mail.title }
+spaces-pinned-button-menuitem-address-book =
+    .label = { spaces-toolbar-button-address-book.title }
+spaces-pinned-button-menuitem-calendar =
+    .label = { spaces-toolbar-button-calendar.title }
+spaces-pinned-button-menuitem-tasks =
+    .label = { spaces-toolbar-button-tasks.title }
+spaces-pinned-button-menuitem-chat =
+    .label = { spaces-toolbar-button-chat.title }
+spaces-pinned-button-menuitem-reveal =
+    .label = { spaces-toolbar-button-reveal.title }
+spaces-pinned-button-menuitem-settings =
+    .label = { spaces-toolbar-button-settings2.title }
+spaces-pinned-button-menuitem-show =
+    .label = { spaces-toolbar-button-show.title }
+# Variables:
+# $count (Number) - Number of unread messages.
+chat-button-unread-messages = { $count }
+    .title =
+        { $count ->
+            [one] Ett oläst meddelande
+           *[other] { $count } olästa meddelanden
+        }
+
+## Spaces toolbar customize panel
+
+spaces-context-customize =
+    .label = Anpassa…
+spaces-customize-panel-title = Inställningar för flikmeny
+spaces-customize-background-color = Bakgrundsfärg
+spaces-customize-icon-color = Färg för knapp
+# The background color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-background-color = Vald bakgrundsfärg för knapp
+# The icon color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-text-color = Vald knappfärg
+spaces-customize-button-restore = Återställ standard
+    .accesskey = t
+spaces-customize-button-save = Klar
+    .accesskey = K

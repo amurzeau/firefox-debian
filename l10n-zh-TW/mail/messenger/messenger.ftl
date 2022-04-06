@@ -187,3 +187,83 @@ spaces-toolbar-button-settings =
     .title = 切換到設定分頁
 spaces-toolbar-button-collapse =
     .title = 摺疊按鈕空間
+spaces-toolbar-button-reveal =
+    .title = 顯示按鈕空間
+spaces-toolbar-button-mail2 =
+    .title = 郵件
+spaces-toolbar-button-address-book2 =
+    .title = 通訊錄
+spaces-toolbar-button-calendar2 =
+    .title = 行事曆
+spaces-toolbar-button-tasks2 =
+    .title = 工作
+spaces-toolbar-button-chat2 =
+    .title = 聊天
+spaces-toolbar-button-overflow =
+    .title = 更多按鈕…
+spaces-toolbar-button-settings2 =
+    .title = 設定
+spaces-toolbar-button-hide =
+    .title = 隱藏按鈕空間
+spaces-toolbar-button-show =
+    .title = 顯示按鈕空間
+spaces-context-new-tab-item =
+    .label = 用新分頁開啟
+spaces-context-new-window-item =
+    .label = 用新視窗開啟
+# Variables:
+# $tabName (String) - The name of the tab this item will switch to.
+spaces-context-switch-tab-item =
+    .label = 切換到 { $tabName }
+settings-context-open-settings-item =
+    .label = 開啟設定
+settings-context-open-account-settings-item =
+    .label = 開啟帳號設定
+settings-context-open-addons-item =
+    .label = 開啟附加元件與佈景主題
+
+## Spaces toolbar pinned tab menupopup
+
+spaces-toolbar-pinned-tab-button =
+    .tooltiptext = 開啟按鈕空間選單
+spaces-pinned-button-menuitem-mail =
+    .label = { spaces-toolbar-button-mail.title }
+spaces-pinned-button-menuitem-address-book =
+    .label = { spaces-toolbar-button-address-book.title }
+spaces-pinned-button-menuitem-calendar =
+    .label = { spaces-toolbar-button-calendar.title }
+spaces-pinned-button-menuitem-tasks =
+    .label = { spaces-toolbar-button-tasks.title }
+spaces-pinned-button-menuitem-chat =
+    .label = { spaces-toolbar-button-chat.title }
+spaces-pinned-button-menuitem-reveal =
+    .label = { spaces-toolbar-button-reveal.title }
+spaces-pinned-button-menuitem-settings =
+    .label = { spaces-toolbar-button-settings2.title }
+spaces-pinned-button-menuitem-show =
+    .label = { spaces-toolbar-button-show.title }
+# Variables:
+# $count (Number) - Number of unread messages.
+chat-button-unread-messages = { $count }
+    .title =
+        { $count ->
+           *[other] { $count } 封未讀訊息
+        }
+
+## Spaces toolbar customize panel
+
+spaces-context-customize =
+    .label = 自訂…
+spaces-customize-panel-title = 按鈕空間設定
+spaces-customize-background-color = 背景色
+spaces-customize-icon-color = 按鈕色
+# The background color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-background-color = 已選擇按鈕的背景色
+# The icon color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-text-color = 已選擇按鈕的顏色
+spaces-customize-button-restore = 回復為預設值
+    .accesskey = R
+spaces-customize-button-save = 完成
+    .accesskey = D

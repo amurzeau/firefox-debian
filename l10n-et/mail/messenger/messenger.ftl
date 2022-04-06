@@ -189,3 +189,62 @@ spaces-toolbar-button-settings =
     .title = Lülitu sätete kaardile
 spaces-toolbar-button-collapse =
     .title = Ahenda rakenduskaartide tööriistariba
+spaces-toolbar-button-reveal =
+    .title = Kuva rakenduskaartide tööriistariba
+spaces-context-new-tab-item =
+    .label = Ava uuel kaardil
+spaces-context-new-window-item =
+    .label = Ava uues aknas
+# Variables:
+# $tabName (String) - The name of the tab this item will switch to.
+spaces-context-switch-tab-item =
+    .label = Lülitu kaardile { $tabName }
+settings-context-open-settings-item =
+    .label = Ava sätted
+settings-context-open-account-settings-item =
+    .label = Ava kontode sätted
+settings-context-open-addons-item =
+    .label = Ava lisad ja teemad
+
+## Spaces toolbar pinned tab menupopup
+
+spaces-toolbar-pinned-tab-button =
+    .tooltiptext = Ava rakenduskaartide menüü
+spaces-pinned-button-menuitem-mail =
+    .label = { spaces-toolbar-button-mail.title }
+spaces-pinned-button-menuitem-address-book =
+    .label = { spaces-toolbar-button-address-book.title }
+spaces-pinned-button-menuitem-calendar =
+    .label = { spaces-toolbar-button-calendar.title }
+spaces-pinned-button-menuitem-tasks =
+    .label = { spaces-toolbar-button-tasks.title }
+spaces-pinned-button-menuitem-chat =
+    .label = { spaces-toolbar-button-chat.title }
+spaces-pinned-button-menuitem-reveal =
+    .label = { spaces-toolbar-button-reveal.title }
+# Variables:
+# $count (Number) - Number of unread messages.
+chat-button-unread-messages = { $count }
+    .title =
+        { $count ->
+            [one] Üks lugemata kiri
+           *[other] { $count } lugemata kirja
+        }
+
+## Spaces toolbar customize panel
+
+spaces-context-customize =
+    .label = Kohanda...
+spaces-customize-panel-title = Rakenduskaartide menüü sätted
+spaces-customize-background-color = Taustavärv
+spaces-customize-icon-color = Nupu värv
+# The background color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-background-color = Valitud nupu taustavärv
+# The icon color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-text-color = Valitud nupu värv
+spaces-customize-button-restore = Taasta vaikeväärtused
+    .accesskey = T
+spaces-customize-button-save = Valmis
+    .accesskey = V
