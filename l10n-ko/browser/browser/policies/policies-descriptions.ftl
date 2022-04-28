@@ -48,7 +48,7 @@ policy-DisableSafeMode = 안전 모드로 다시 시작하는 기능을 사용 �
 policy-DisableSecurityBypass = 사용자가 특정 보안 경고를 무시할 수 없게 합니다.
 policy-DisableSetAsDesktopBackground = 이미지를 바탕 화면 배경으로 설정하는 메뉴 명령을 사용 안 합니다.
 policy-DisableSystemAddonUpdate = 브라우저가 시스템 부가 기능의 설치 및 업데이트를 못하게 합니다.
-policy-DisableTelemetry = 데이터 수집 끄기
+policy-DisableTelemetry = 원격 분석 끄기
 policy-DisplayBookmarksToolbar = 기본으로 북마크 도구 모음을 표시합니다.
 policy-DisplayMenuBar = 기본으로 메뉴 모음을 표시합니다.
 policy-DNSOverHTTPS = DNS over HTTPS (HTTPS를 통한 DNS)를 구성합니다.
@@ -92,6 +92,7 @@ policy-OfferToSaveLoginsDefault = 저장된 로그인과 비밀번호를 기억�
 policy-OverrideFirstRunPage = 첫 실행 페이지를 재정의합니다. 첫 실행 페이지를 사용 안 하려면 이 정책을 빈칸으로 설정하세요.
 policy-OverridePostUpdatePage = 업데이트 후 "새 기능" 페이지를 재정의합니다. 업데이트 후 페이지를 사용 안 하려면 이 정책을 빈칸으로 설정하세요.
 policy-PasswordManagerEnabled = 비밀번호 관리자에 비밀번호 저장을 사용합니다.
+policy-PasswordManagerExceptions = { -brand-short-name }가 특정 사이트의 비밀번호를 저장하지 못하도록 합니다.
 # PDF.js and PDF should not be translated
 policy-PDFjs = { -brand-short-name }에 내장된 PDF 뷰어인 PDF.js를 사용 안하거나 구성합니다.
 policy-Permissions2 = 카메라, 마이크, 위치, 알림 및 자동 재생에 대한 권한을 구성합니다.

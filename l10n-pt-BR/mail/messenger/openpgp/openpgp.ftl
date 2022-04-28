@@ -4,6 +4,17 @@
 
 e2e-intro-description = Para enviar mensagens criptografadas ou assinadas digitalmente, você precisa configurar uma tecnologia de criptografia, pode ser OpenPGP ou S/MIME.
 e2e-intro-description-more = Selecione sua chave pessoal para ativar o uso de OpenPGP, ou seu certificado pessoal para ativar o uso de S/MIME. Para uma chave pessoal ou certificado, você tem a chave secreta correspondente.
+e2e-signing-description = Uma assinatura digital permite que os destinatários verifiquem se a mensagem foi enviada por você e o conteúdo não foi alterado. Mensagens criptografadas por padrão são sempre assinadas.
+e2e-sign-message =
+    .label = Assinar mensagens não criptografadas
+    .accesskey = o
+e2e-disable-enc =
+    .label = Desativar criptografia de novas mensagens
+    .accesskey = D
+e2e-enable-enc =
+    .label = Ativar criptografia de novas mensagens
+    .accesskey = t
+e2e-enable-description = Você pode desativar a criptografia de mensagens individuais.
 e2e-advanced-section = Configurações avançadas
 e2e-attach-key =
     .label = Anexar minha chave pública ao adicionar uma assinatura digital OpenPGP
@@ -44,6 +55,8 @@ openpgp-generate-key =
 openpgp-advanced-prefs-button-label =
     .label = Avançado…
 openpgp-keygen-desc = <a data-l10n-name="openpgp-keygen-desc-link">NOTA: A geração de chaves pode levar vários minutos para ser concluída. Não saia do aplicativo enquanto a geração de chaves estiver em andamento. Navegar ativamente ou realizar operações com uso intenso de disco durante a geração de chaves irá reabastecer o 'pool de aleatoriedade' e acelerar o processo. Você será alertado quando a geração de chaves for concluída.
+openpgp-key-created-label =
+    .label = Criação
 openpgp-key-expiry-label =
     .label = Validade
 openpgp-key-id-label =
@@ -221,6 +234,7 @@ openpgp-key-details-structure-tab =
     .label = Estrutura
 openpgp-key-details-uid-certified-col =
     .label = ID de usuário / Certificado por
+openpgp-key-details-key-id-label = ID da chave
 openpgp-key-details-user-id2-label = Proprietário alegado da chave
 openpgp-key-details-id-label =
     .label = ID
@@ -240,6 +254,7 @@ openpgp-key-details-expiry-header = Validade
 openpgp-key-details-usage-label =
     .label = Uso
 openpgp-key-details-fingerprint-label = Impressão digital
+openpgp-key-details-legend-secret-missing = Nas chaves marcadas com (!), a chave secreta não está disponível.
 openpgp-key-details-sel-action =
     .label = Selecionar ação…
     .accesskey = S
@@ -334,12 +349,14 @@ key-expired-simple = A chave expirou
 key-revoked-simple = A chave foi revogada
 key-do-you-accept = Você aceita esta chave para verificar assinaturas digitais e para criptografar mensagens?
 key-accept-warning = Evite aceitar chaves de trapaceiros. Use um canal de comunicação diferente de email para verificar a impressão digital da chave de seu correspondente.
+key-verification = Verifique a impressão digital da chave usando um canal de comunicação seguro, diferente de email, para ter certeza que realmente é a chave de { $addr }.
 # Strings enigmailMsgComposeOverlay.js
 cannot-use-own-key-because = Não foi possível enviar a mensagem, porque há um problema com sua chave pessoal. { $problem }
 cannot-encrypt-because-missing = Não foi possível enviar esta mensagem com criptografia de ponta a ponta, porque há problemas com as chaves dos seguintes destinatários: { $problem }
 window-locked = A janela de edição está bloqueada; envio cancelado
 # Strings in mimeDecrypt.jsm
 mime-decrypt-encrypted-part-attachment-label = Parte criptografada da mensagem
+# Strings in mimeDecrypt.jsm
 mime-decrypt-encrypted-part-concealed-data = Esta é uma parte criptografada da mensagem. Você precisa abrir em uma janela separada, clicando no anexo.
 # Strings in keyserver.jsm
 keyserver-error-aborted = Interrompido

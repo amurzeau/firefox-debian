@@ -32,6 +32,13 @@ pill-tooltip-not-in-address-book = { $email } nie jest w książce adresowej
 pill-action-edit =
     .label = Edytuj adres
     .accesskey = E
+#   $type (String) - the type of the addressing row, e.g. Cc, Bcc, etc.
+pill-action-select-all-sibling-pills =
+    .label = Zaznacz wszystkie adresy w polu „{ $type }”
+    .accesskey = Z
+pill-action-select-all-pills =
+    .label = Zaznacz wszystkie adresy
+    .accesskey = w
 pill-action-move-to =
     .label = Przenieś do pola „Do”
     .accesskey = D
@@ -76,8 +83,15 @@ context-menuitem-attach-files =
     .label = Załącz plik…
     .accesskey = Z
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
+# Note: Do not translate the term 'vCard'.
+context-menuitem-attach-vcard =
+    .label = Moja wizytówka vCard
+    .accesskey = v
+context-menuitem-attach-openpgp-key =
+    .label = Mój klucz publiczny OpenPGP
+    .accesskey = k
 #   $count (Number) - the number of attachments in the attachment bucket
-attachment-bucket-count =
+attachment-bucket-count-value =
     { $count ->
         [1] { $count } załącznik
         [one] { $count } załącznik
@@ -88,14 +102,6 @@ expand-attachment-pane-tooltip =
     .tooltiptext = Pokaż listę załączników ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
     .tooltiptext = Ukryj listę załączników ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-#   $count (Number) - the number of attachments in the attachment bucket
-attachment-bucket-count-value =
-    { $count ->
-        [1] { $count } załącznik
-        [one] { $count } załącznik
-        [few] { $count } załączniki
-       *[many] { $count } załączników
-    }
 attachment-area-show =
     .title = Pokaż listę załączników ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -133,6 +139,64 @@ message-to-be-signed-icon =
     .alt = Podpisz wiadomość
 message-to-be-encrypted-icon =
     .alt = Zaszyfruj wiadomość
+encryption-menu =
+    .label = Bezpieczeństwo
+    .accesskey = B
+encryption-toggle =
+    .label = Zaszyfruj
+    .tooltiptext = Użyj szyfrowania „end-to-end” dla tej wiadomości
+encryption-options-openpgp =
+    .label = OpenPGP
+    .tooltiptext = Wyświetl lub zmień ustawienia szyfrowania OpenPGP
+encryption-options-smime =
+    .label = S/MIME
+    .tooltiptext = Wyświetl lub zmień ustawienia szyfrowania S/MIME
+menu-openpgp =
+    .label = OpenPGP
+    .accesskey = O
+menu-smime =
+    .label = S/MIME
+    .accesskey = E
+menu-encrypt =
+    .label = Zaszyfruj
+    .accesskey = s
+menu-encrypt-subject =
+    .label = Zaszyfruj temat
+    .accesskey = m
+menu-sign =
+    .label = Podpisz cyfrowo
+    .accesskey = P
+menu-manage-keys =
+    .label = Asystent kluczy
+    .accesskey = A
+menu-view-certificates =
+    .label = Wyświetl certyfikaty odbiorców
+    .accesskey = c
+menu-open-key-manager =
+    .label = Menedżer kluczy
+    .accesskey = d
+openpgp-key-issue-notification-one = Szyfrowanie typu „end-to-end” wymaga rozwiązania problemów z kluczami dla { $addr }
+openpgp-key-issue-notification-many =
+    { $count ->
+        [one] Szyfrowanie typu „end-to-end” wymaga rozwiązania problemów z kluczami dla { $count } odbiorcy.
+        [few] Szyfrowanie typu „end-to-end” wymaga rozwiązania problemów z kluczami dla { $count } odbiorców.
+       *[many] Szyfrowanie typu „end-to-end” wymaga rozwiązania problemów z kluczami dla { $count } odbiorców.
+    }
+smime-cert-issue-notification-one = Szyfrowanie typu „end-to-end” wymaga rozwiązania problemów z certyfikatami dla { $addr }.
+smime-cert-issue-notification-many =
+    { $count ->
+        [one] Szyfrowanie typu „end-to-end” wymaga rozwiązania problemów z certyfikatami dla { $count } odbiorcy.
+        [few] Szyfrowanie typu „end-to-end” wymaga rozwiązania problemów z certyfikatami dla { $count } odbiorców.
+       *[many] Szyfrowanie typu „end-to-end” wymaga rozwiązania problemów z certyfikatami dla { $count } odbiorców.
+    }
+key-notification-disable-encryption =
+    .label = Nie szyfruj
+    .accesskey = N
+    .tooltiptext = Wyłącz szyfrowanie „end-to-end”
+key-notification-resolve =
+    .label = Rozwiąż…
+    .accesskey = R
+    .tooltiptext = Otwórz asystenta kluczy OpenPGP
 
 ## Addressing Area
 

@@ -16,9 +16,12 @@ pocket-panel-saved-error-tag-length = Tags er begrænset til 25 tegn
 pocket-panel-saved-error-only-links = Kun links kan gemmes
 pocket-panel-saved-error-not-saved = Siden blev ikke gemt
 pocket-panel-saved-error-no-internet = Du skal være forbundet til internettet for at kunne gemme ting i { -pocket-brand-name }. Opret forbindelse til internettet og prøv igen.
+pocket-panel-saved-error-remove = Der opstod en fejl ved forsøg på at fjerne siden.
 pocket-panel-saved-page-removed = Siden er fjernet
 pocket-panel-saved-page-saved = Gemt til { -pocket-brand-name }
+pocket-panel-saved-page-saved-b = Gemt til { -pocket-brand-name }
 pocket-panel-saved-processing-remove = Fjerner side…
+pocket-panel-saved-removed = Side fjernet fra Min liste
 pocket-panel-saved-processing-tags = Tilføjer tags…
 pocket-panel-saved-remove-page = Fjern side
 pocket-panel-saved-save-tags = Gem
@@ -26,6 +29,8 @@ pocket-panel-saved-saving-tags = Gemmer…
 pocket-panel-saved-suggested-tags = Foreslåede tags
 pocket-panel-saved-tags-saved = Tags tilføjet
 pocket-panel-signup-view-list = Vis liste
+# This is displayed above a field where the user can add tags
+pocket-panel-signup-add-tags = Tilføj tags:
 
 ## about:pocket-signup panel
 
@@ -38,7 +43,6 @@ pocket-panel-signup-signup-firefox = Meld dig til med { -brand-product-name }
 pocket-panel-signup-tagline = Gemmer artikler og videoer fra { -brand-product-name } i { -pocket-brand-name }, så du senere kan se dem hvor og hvornår, du har lyst.
 pocket-panel-signup-tagline-story-one = Klik på knappen { -pocket-brand-name } for at gemme en artikel, video eller webside fra { -brand-product-name }.
 pocket-panel-signup-tagline-story-two = Se i { -pocket-brand-name } hvor og hvornår, du har lyst.
-pocket-panel-signup-cta-a = Din gem-knap til internettet.
 pocket-panel-signup-cta-a-fix = Din gem-knap til internettet
 pocket-panel-signup-cta-b = Klik på { -pocket-brand-name }-knappen for at gemme artikler, videoer og links. Se din liste på alle dine enheder når som helst.
 pocket-panel-signup-cta-b-short = Klik på { -pocket-brand-name }-knappen for at gemme artikler, videoer og links.
@@ -65,5 +69,6 @@ pocket-panel-header-sign-in = Log ind
 ## Pocket panel buttons
 
 pocket-panel-button-show-all = Vis alle
-pocket-panel-button-add-tags = Tilføj mærkater
+pocket-panel-button-add-tags = Tilføj tags
 pocket-panel-button-activate = Aktiver { -pocket-brand-name } i { -brand-product-name }
+pocket-panel-button-remove = Fjern

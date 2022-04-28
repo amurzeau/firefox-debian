@@ -16,9 +16,12 @@ pocket-panel-saved-error-tag-length = 标签不能超过 25 个字符
 pocket-panel-saved-error-only-links = 只有链接能被保存
 pocket-panel-saved-error-not-saved = 页面未保存
 pocket-panel-saved-error-no-internet = 您必须连接至互联网才能保存到 { -pocket-brand-name }。请连接网络后重试。
+pocket-panel-saved-error-remove = 尝试移除此页面时出错。
 pocket-panel-saved-page-removed = 页面已移除
 pocket-panel-saved-page-saved = 已保存到 { -pocket-brand-name }
+pocket-panel-saved-page-saved-b = 已保存至 { -pocket-brand-name }！
 pocket-panel-saved-processing-remove = 正在移除页面…
+pocket-panel-saved-removed = 已从“我的列表”移除页面
 pocket-panel-saved-processing-tags = 正在添加标签…
 pocket-panel-saved-remove-page = 移除页面
 pocket-panel-saved-save-tags = 保存
@@ -26,6 +29,8 @@ pocket-panel-saved-saving-tags = 正在保存…
 pocket-panel-saved-suggested-tags = 推荐标签
 pocket-panel-saved-tags-saved = 标签已添加
 pocket-panel-signup-view-list = 查看列表
+# This is displayed above a field where the user can add tags
+pocket-panel-signup-add-tags = 添加标签：
 
 ## about:pocket-signup panel
 
@@ -67,3 +72,4 @@ pocket-panel-header-sign-in = 登录
 pocket-panel-button-show-all = 显示全部
 pocket-panel-button-add-tags = 添加标签
 pocket-panel-button-activate = 启用 { -brand-product-name } 上的 { -pocket-brand-name }
+pocket-panel-button-remove = 移除

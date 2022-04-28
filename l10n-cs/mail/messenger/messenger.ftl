@@ -186,6 +186,8 @@ decrypt-and-copy-failures =
 
 ## Spaces toolbar
 
+spaces-toolbar =
+    .toolbarname = Navigační lišta
 spaces-toolbar-button-mail =
     .title = Přepnout na panel s poštou
 spaces-toolbar-button-address-book =
@@ -198,6 +200,32 @@ spaces-toolbar-button-chat =
     .title = Přepnout na panel s chatem
 spaces-toolbar-button-settings =
     .title = Přepnout na panel s nastavením
+spaces-toolbar-button-collapse =
+    .title = Skrýt navigační lištu
+spaces-toolbar-button-reveal =
+    .title = Zobrazit navigační lištu
+spaces-toolbar-element =
+    .toolbarname = Navigační lišta
+    .aria-label = Navigační lišta
+    .aria-description = Vertikální postranní lišta pro přepínání mezi jednotlivými funkcemi. Pro výběr tlačítek na liště použijte kurzorové šipky.
+spaces-toolbar-button-mail2 =
+    .title = Pošta
+spaces-toolbar-button-address-book2 =
+    .title = Kontakty
+spaces-toolbar-button-calendar2 =
+    .title = Kalendář
+spaces-toolbar-button-tasks2 =
+    .title = Úkoly
+spaces-toolbar-button-chat2 =
+    .title = Chat
+spaces-toolbar-button-overflow =
+    .title = Další…
+spaces-toolbar-button-settings2 =
+    .title = Nastavení
+spaces-toolbar-button-hide =
+    .title = Skrýt navigační lištu
+spaces-toolbar-button-show =
+    .title = Zobrazit navigační lištu
 spaces-context-new-tab-item =
     .label = Otevřít v novém panelu
 spaces-context-new-window-item =
@@ -215,6 +243,8 @@ settings-context-open-addons-item =
 
 ## Spaces toolbar pinned tab menupopup
 
+spaces-toolbar-pinned-tab-button =
+    .tooltiptext = Navigační menu
 spaces-pinned-button-menuitem-mail =
     .label = { spaces-toolbar-button-mail.title }
 spaces-pinned-button-menuitem-address-book =
@@ -227,3 +257,34 @@ spaces-pinned-button-menuitem-chat =
     .label = { spaces-toolbar-button-chat.title }
 spaces-pinned-button-menuitem-reveal =
     .label = { spaces-toolbar-button-reveal.title }
+spaces-pinned-button-menuitem-settings =
+    .label = { spaces-toolbar-button-settings2.title }
+spaces-pinned-button-menuitem-show =
+    .label = { spaces-toolbar-button-show.title }
+# Variables:
+# $count (Number) - Number of unread messages.
+chat-button-unread-messages = { $count }
+    .title =
+        { $count ->
+            [one] Jedna nepřečtená zpráva
+            [few] { $count } nepřečtené zprávy
+           *[other] { $count } nepřečtených zpráv
+        }
+
+## Spaces toolbar customize panel
+
+spaces-context-customize =
+    .label = Přizpůsobení…
+spaces-customize-panel-title = Nastavení navigační lišty
+spaces-customize-background-color = Barva pozadí
+spaces-customize-icon-color = Barva tlačítek
+# The background color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-background-color = Vybraná barva pozadí tlačítek
+# The icon color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-text-color = Vybraná barva tlačítek
+spaces-customize-button-restore = Obnovit výchozí
+    .accesskey = O
+spaces-customize-button-save = Hotovo
+    .accesskey = H

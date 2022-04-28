@@ -1135,10 +1135,6 @@ class DownloadsViewItem extends DownloadsViewUI.DownloadElementShell {
         let partFile = new FileUtils.File(this.download.target.partFilePath);
         return partFile.exists();
       }
-      case "downloadsCmd_deleteFile": {
-        let { target } = this.download;
-        return target.exists || target.partFileExists;
-      }
       case "downloadsCmd_copyLocation":
         return !!this.download.source?.url;
       case "cmd_delete":

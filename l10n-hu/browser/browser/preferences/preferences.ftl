@@ -380,6 +380,13 @@ applications-use-os-default-label =
 
 ##
 
+applications-handle-new-file-types-description = Mit tegyen a { -brand-short-name } más fájlokkal?
+applications-save-for-new-types =
+    .label = Fájlok mentése
+    .accesskey = m
+applications-ask-before-handling =
+    .label = Kérdezze meg, hogy nyissa meg vagy mentse a fájlokat
+    .accesskey = K
 drm-content-header = Digitális jogkezelést (DRM) használó tartalom
 play-drm-content =
     .label = DRM-vezérelt tartalom lejátszása
@@ -1105,7 +1112,7 @@ permissions-addon-exceptions =
 ## Privacy Section - Data Collection
 
 collection-header = { -brand-short-name } adatgyűjtés és felhasználás
-collection-description = Arra törekszünk, hogy választást biztosítsunk, és csak azt gyűjtsük, amire szükségünk a van a { -brand-short-name } fejlesztéséhez, mindenki számára. Mindig engedélyt kérünk, mielőtt személyes információkat fogadunk.
+collection-description = Arra törekszünk, hogy választást biztosítsunk, és csak azt gyűjtsük, amire szükségünk van a { -brand-short-name } fejlesztéséhez, mindenki számára. Mindig engedélyt kérünk, mielőtt személyes információkat fogadunk.
 collection-privacy-notice = Adatvédelmi nyilatkozat
 collection-health-report-telemetry-disabled = Már nem engedélyezi, hogy a { -vendor-short-name } műszaki és interakciós adatokat rögzítsen. A múltbeli adatai 30 napon belül törölve lesznek.
 collection-health-report-telemetry-disabled-link = További tudnivalók

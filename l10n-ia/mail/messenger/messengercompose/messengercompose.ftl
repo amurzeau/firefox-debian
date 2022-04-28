@@ -30,6 +30,13 @@ pill-tooltip-not-in-address-book = { $e-mail } non es in tu libro del adresses
 pill-action-edit =
     .label = Modificar le adresse
     .accesskey = M
+#   $type (String) - the type of the addressing row, e.g. Cc, Bcc, etc.
+pill-action-select-all-sibling-pills =
+    .label = Selige tote le adresses in { $type }
+    .accesskey = t
+pill-action-select-all-pills =
+    .label = Seliger tote le adresses
+    .accesskey = S
 pill-action-move-to =
     .label = Mover a A
     .accesskey = A
@@ -74,24 +81,23 @@ context-menuitem-attach-files =
     .label = Annexar file(s)…
     .accesskey = F
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
-#   $count (Number) - the number of attachments in the attachment bucket
-attachment-bucket-count =
-    .value =
-        { $count ->
-            [1] { $count } Attachamento
-           *[other] { $count } Attachamentos
-        }
-    .accesskey = m
-expand-attachment-pane-tooltip =
-    .tooltiptext = Monstrar pannello de annexo ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Celar pannello de annexo ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+# Note: Do not translate the term 'vCard'.
+context-menuitem-attach-vcard =
+    .label = Mi vCard
+    .accesskey = C
+context-menuitem-attach-openpgp-key =
+    .label = Mi clave public OpenPGP
+    .accesskey = c
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count-value =
     { $count ->
         [1] { $count } Attachamento
        *[other] { $count } Attachamentos
     }
+expand-attachment-pane-tooltip =
+    .tooltiptext = Monstrar pannello de annexo ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+collapse-attachment-pane-tooltip =
+    .tooltiptext = Celar pannello de annexo ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Monstrar quadro de annexo ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -127,6 +133,54 @@ message-to-be-signed-icon =
     .alt = Signar le message
 message-to-be-encrypted-icon =
     .alt = Cryptar le message
+encryption-menu =
+    .label = Securitate
+    .accesskey = c
+encryption-toggle =
+    .label = Cryptar
+    .tooltiptext = Usa cryptation de extremo-a-extremo pro iste message
+encryption-options-openpgp =
+    .label = OpenPGP
+    .tooltiptext = Pro vider o cambiar le parametros de cryptation OpenPGP
+encryption-options-smime =
+    .label = S/MIME
+    .tooltiptext = Pro vider o cambiar le parametros de cryptation S/MIME
+menu-openpgp =
+    .label = OpenPGP
+    .accesskey = O
+menu-smime =
+    .label = S/MIME
+    .accesskey = S
+menu-encrypt =
+    .label = Cryptar
+    .accesskey = C
+menu-encrypt-subject =
+    .label = Subjecto de cryptation
+    .accesskey = b
+menu-sign =
+    .label = Signar digitalmente:
+    .accesskey = i
+menu-manage-keys =
+    .label = Assistente de claves
+    .accesskey = A
+menu-view-certificates =
+    .label = Vider certificatos de destinatarios
+    .accesskey = V
+menu-open-key-manager =
+    .label = Gestor de claves
+    .accesskey = G
+openpgp-key-issue-notification-one = Le cryptation de extremo-a-extremo require resolver problemas de clave pro { $addr }
+openpgp-key-issue-notification-many = Le cryptation de extremo-a-extremo require resolver problemas de clave pro le destinatarios de { $count }
+smime-cert-issue-notification-one = Le cryptation de extremo-a-extremo require resolver problemas de certificato pro { $addr }.
+smime-cert-issue-notification-many = Le cryptation de extremo-a-extremo require resolver problemas de certificato pro le destinatarios de { $count }.
+key-notification-disable-encryption =
+    .label = Non cryptar
+    .accesskey = N
+    .tooltiptext = Disactiva le cryptation de extremo-a-extremo
+key-notification-resolve =
+    .label = Resolver…
+    .accesskey = R
+    .tooltiptext = Aperi le assistente del claves OpenPGP
 
 ## Addressing Area
 

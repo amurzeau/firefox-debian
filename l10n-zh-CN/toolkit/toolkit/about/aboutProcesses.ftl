@@ -49,6 +49,7 @@ about-processes-socket-process = 网络（{ $pid }）
 about-processes-remote-sandbox-broker-process = 远程沙箱中介（{ $pid }）
 about-processes-fork-server-process = Fork 服务器（{ $pid }）
 about-processes-preallocated-process = 预分配（{ $pid }）
+about-processes-utility-process = 工具（{ $pid }）
 # Unknown process names
 # Variables:
 #    $pid (String) The process id of this process, assigned by the OS.
@@ -114,6 +115,9 @@ about-processes-frame-name-one = 子帧：{ $url }
 #   $number (Number) The number of subframes in this group. Always ≥ 1.
 #   $shortUrl (String) The shared prefix for the subframes in the group.
 about-processes-frame-name-many = 子帧（{ $number }）：{ $shortUrl }
+# Utility process actor names
+about-processes-utility-actor-unknown = 未知角色
+about-processes-utility-actor-audio-decoder = 音频解码器
 
 ## Displaying CPU (percentage and total)
 ## Variables:

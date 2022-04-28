@@ -30,6 +30,13 @@ pill-tooltip-not-in-address-book = { $email } არაა თქვენს �
 pill-action-edit =
     .label = მისამართის ჩასწორება
     .accesskey = ჩ
+#   $type (String) - the type of the addressing row, e.g. Cc, Bcc, etc.
+pill-action-select-all-sibling-pills =
+    .label = ყველას მისამართის მონიშვნა, რომელთა სახეობაცაა { $type }
+    .accesskey = ყ
+pill-action-select-all-pills =
+    .label = ყველა მისამართის მონიშვნა
+    .accesskey = ს
 pill-action-move-to =
     .label = გადატანა მისამართის ველში
     .accesskey = მ
@@ -74,24 +81,23 @@ context-menuitem-attach-files =
     .label = ფაილ(ებ)ის მიმაგრება…
     .accesskey = ფ
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
-#   $count (Number) - the number of attachments in the attachment bucket
-attachment-bucket-count =
-    .value =
-        { $count ->
-            [1] { $count } დანართი
-           *[other] { $count } დანართი
-        }
-    .accesskey = ნ
-expand-attachment-pane-tooltip =
-    .tooltiptext = დანართის არის გამოჩენა ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = დანართის არის დამალვა ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+# Note: Do not translate the term 'vCard'.
+context-menuitem-attach-vcard =
+    .label = ჩემი vCard
+    .accesskey = C
+context-menuitem-attach-openpgp-key =
+    .label = ჩემი საჯარო OpenPGP-გასაღები
+    .accesskey = P
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count-value =
     { $count ->
         [1] { $count } დანართი
        *[other] { $count } დანართი
     }
+expand-attachment-pane-tooltip =
+    .tooltiptext = დანართის არის გამოჩენა ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+collapse-attachment-pane-tooltip =
+    .tooltiptext = დანართის არის დამალვა ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = დანართის არის გამოჩენა ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -127,6 +133,54 @@ message-to-be-signed-icon =
     .alt = წერილის ხელმოწერა
 message-to-be-encrypted-icon =
     .alt = წერილის დაშიფვრა
+encryption-menu =
+    .label = უსაფრთხოება
+    .accesskey = უ
+encryption-toggle =
+    .label = დაშიფვრა
+    .tooltiptext = გამჭოლი დაშიფვრის გამოყენება ამ წერილისთვის
+encryption-options-openpgp =
+    .label = OpenPGP
+    .tooltiptext = იხილეთ ან შეცვალეთ OpenPGP-დაშიფვრის პარამეტრები
+encryption-options-smime =
+    .label = S/MIME
+    .tooltiptext = იხილეთ ან შეცვალეთ S/MIME-დაშიფვრის პარამეტრები
+menu-openpgp =
+    .label = OpenPGP
+    .accesskey = O
+menu-smime =
+    .label = S/MIME
+    .accesskey = S
+menu-encrypt =
+    .label = დაშიფვრა
+    .accesskey = ფ
+menu-encrypt-subject =
+    .label = თემის დაშიფვრა
+    .accesskey = თ
+menu-sign =
+    .label = ციფრული ხელმოწერა
+    .accesskey = ც
+menu-manage-keys =
+    .label = გასაღების მეგზური
+    .accesskey = ზ
+menu-view-certificates =
+    .label = იხილეთ მიმღებთა სერტიფიკატები
+    .accesskey = ტ
+menu-open-key-manager =
+    .label = გასაღების მმართველი
+    .accesskey = მ
+openpgp-key-issue-notification-one = გამჭოლი დაშიფვრა საჭიროებს მოგვარდეს გასაღების ხარვეზები მისამართისთვის { $addr }
+openpgp-key-issue-notification-many = გამჭოლი დაშიფვრა საჭიროებს მოგვარდეს გასაღების ხარვეზები { $count } მიმღებისთვის
+smime-cert-issue-notification-one = გამჭოლი დაშიფვრა საჭიროებს მოგვარდეს სერტიფიკატის ხარვეზები მისამართისთვის { $addr }
+smime-cert-issue-notification-many = გამჭოლი დაშიფვრა საჭიროებს მოგვარდეს სერტიფიკატის ხარვეზები { $count } მიმღებისთვის.
+key-notification-disable-encryption =
+    .label = არ დაიშიფროს
+    .accesskey = ა
+    .tooltiptext = გამჭოლი დაშიფვრის გამორთვა
+key-notification-resolve =
+    .label = გადაწყვეტა…
+    .accesskey = ყ
+    .tooltiptext = OpenPGP-გასაღების მეგზურის გახსნა
 
 ## Addressing Area
 

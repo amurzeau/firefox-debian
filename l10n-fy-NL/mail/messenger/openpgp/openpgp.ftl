@@ -4,6 +4,17 @@
 
 e2e-intro-description = Om fersifere of digitaal ûndertekene berjochten te ferstjoeren, moatte jo in fersiferingstechnology ynstelle, itsij OpenPGP of S/MIME.
 e2e-intro-description-more = Selektearje jo persoanlike kaai om it gebrûk fan OpenPGP mooglik te meitsjen, of jo persoanlike sertifikaat om it gebrûk fan S/MIME mooglik te meitsjen. Foar in persoanlike kaai of sertifikaat besitte jo de byhearrende geheime kaai.
+e2e-signing-description = Mei in digitale hantekening kinne ûntfangers kontrolearje oft it berjocht troch jo ferstjoerd is en oft de ynhâld net wizige is. Fersifere berjochten wurde altyd standert ûndertekene.
+e2e-sign-message =
+    .label = Unfersifere berjochten ûndertekenje
+    .accesskey = U
+e2e-disable-enc =
+    .label = Fersifering foar nije berjochten útskeakelje
+    .accesskey = c
+e2e-enable-enc =
+    .label = Fersifering foar nije berjochten ynskeakelje
+    .accesskey = h
+e2e-enable-description = Jo kinne fersifering foar ôfsûnderlike berjochten útskeakelje.
 e2e-advanced-section = Avansearre ynstellingen
 e2e-attach-key =
     .label = Myn publike kaai byfoegje as ik in digitale OpenPGP-hantekening tafoegje
@@ -44,6 +55,8 @@ openpgp-generate-key =
 openpgp-advanced-prefs-button-label =
     .label = Avansearre…
 openpgp-keygen-desc = <a data-l10n-name="openpgp-keygen-desc-link">OPMERKING: it oanmeitsjen fan de kaai kin inkelde minuten duorje.</a> Slút de tapassing net ôf wylst de kaai oanmakke wurdt. Aktyf navigearje of skiifyntensive bewurkingen útfiere wylst it oanmeitsjen fan de kaai sil de ‘samar-wat-pool’ oanfolje en it proses fersnelle. Jo wurde warskôge wannear’t it oanmeitsjen fan de kaai ree is.
+openpgp-key-created-label =
+    .label = Oanmakke
 openpgp-key-expiry-label =
     .label = Ferrindatum
 openpgp-key-id-label =
@@ -221,6 +234,7 @@ openpgp-key-details-structure-tab =
     .label = Struktuer
 openpgp-key-details-uid-certified-col =
     .label = Brûker-ID / Sertifisearre troch
+openpgp-key-details-key-id-label = Kaai-ID
 openpgp-key-details-user-id2-label = Understelde kaaieigener
 openpgp-key-details-id-label =
     .label = ID
@@ -240,6 +254,7 @@ openpgp-key-details-expiry-header = Ferrindatum
 openpgp-key-details-usage-label =
     .label = Gebrûk
 openpgp-key-details-fingerprint-label = Fingerôfdruk
+openpgp-key-details-legend-secret-missing = Foar kaaien markearre mei (!) is de geheime kaai net beskikber.
 openpgp-key-details-sel-action =
     .label = Selektearje aksje…
     .accesskey = S
@@ -334,12 +349,14 @@ key-expired-simple = De kaai is ferrûn
 key-revoked-simple = De kaai is ynlutsen
 key-do-you-accept = Akseptearje jo dizze kaai foar it ferifiearjen fan digitale hantekeningen en foar it fersiferjen fan berjochten?
 key-accept-warning = Akseptearje gjin frauduleuze kaai. Brûk in oar kommunikaasjekanaal as e-mail om de fingerôfdruk fan de kaai fan jo korrespondint te ferifiearjen.
+key-verification = Kontrolearje de fingerôfdruk fan de kaai fia in oar befeilige kommunikaasjekanaal dan e-mail om der wis fan te wêzen dat it echt de kaai fan { $addr } is.
 # Strings enigmailMsgComposeOverlay.js
 cannot-use-own-key-because = Kin it berjocht net ferstjoere, omdat der in probleem is mei jo persoanlike kaai. { $problem }
 cannot-encrypt-because-missing = Kin dit berjocht net ferstjoere mei end-to-end-fersifering, omdat der problemen binne mei de kaaien fan de folgjende ûntfangers: { $problem }
 window-locked = It opstelfinster is beskoattele; ferstjoeren annulearre
 # Strings in mimeDecrypt.jsm
 mime-decrypt-encrypted-part-attachment-label = Fersifere berjochtdiel
+# Strings in mimeDecrypt.jsm
 mime-decrypt-encrypted-part-concealed-data = Dit is in fersifere berjochtdiel. Jo moatte it yn in apart finster iepenje troch op de bylage te klikken.
 # Strings in keyserver.jsm
 keyserver-error-aborted = Ofbrutsen

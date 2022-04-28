@@ -30,6 +30,13 @@ pill-tooltip-not-in-address-book = { $email } nincs a címjegyzékében
 pill-action-edit =
     .label = Cím szerkesztése
     .accesskey = e
+#   $type (String) - the type of the addressing row, e.g. Cc, Bcc, etc.
+pill-action-select-all-sibling-pills =
+    .label = Összes cím kiválasztása a következőben: { $type }
+    .accesskey = e
+pill-action-select-all-pills =
+    .label = Összes cím kiválasztása
+    .accesskey = k
 pill-action-move-to =
     .label = Áthelyezés a címzettbe
     .accesskey = t
@@ -74,19 +81,13 @@ context-menuitem-attach-files =
     .label = Fájlok csatolása…
     .accesskey = F
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
-#   $count (Number) - the number of attachments in the attachment bucket
-attachment-bucket-count =
-    .value =
-        { $count ->
-            [1] { $count } melléklet
-            [one] { $count } melléklet
-           *[other] { $count } melléklet
-        }
-    .accesskey = m
-expand-attachment-pane-tooltip =
-    .tooltiptext = A mellékletek ablaktábla megjelenítése ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = A mellékletek ablaktábla elrejtése ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+# Note: Do not translate the term 'vCard'.
+context-menuitem-attach-vcard =
+    .label = Saját vCard
+    .accesskey = S
+context-menuitem-attach-openpgp-key =
+    .label = Saját OpenPGP nyilvános kulcs
+    .accesskey = k
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count-value =
     { $count ->
@@ -94,6 +95,10 @@ attachment-bucket-count-value =
         [one] { $count } melléklet
        *[other] { $count } melléklet
     }
+expand-attachment-pane-tooltip =
+    .tooltiptext = A mellékletek ablaktábla megjelenítése ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+collapse-attachment-pane-tooltip =
+    .tooltiptext = A mellékletek ablaktábla elrejtése ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = A mellékletek ablaktábla megjelenítése ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -129,6 +134,54 @@ message-to-be-signed-icon =
     .alt = Üzenet aláírása
 message-to-be-encrypted-icon =
     .alt = Üzenet titkosítása
+encryption-menu =
+    .label = Biztonság
+    .accesskey = B
+encryption-toggle =
+    .label = Titkosítás
+    .tooltiptext = Végpontok közötti titkosítás használata ehhez az üzenethez
+encryption-options-openpgp =
+    .label = OpenPGP
+    .tooltiptext = Az OpenPGP titkosítási beállítások megtekintése vagy módosítása
+encryption-options-smime =
+    .label = S/MIME
+    .tooltiptext = Az S/MIME titkosítás beállítások megtekintése vagy módosítása
+menu-openpgp =
+    .label = OpenPGP
+    .accesskey = O
+menu-smime =
+    .label = S/MIME
+    .accesskey = S
+menu-encrypt =
+    .label = Titkosítás
+    .accesskey = T
+menu-encrypt-subject =
+    .label = Tárgy titkosítása
+    .accesskey = g
+menu-sign =
+    .label = Digitális aláírás
+    .accesskey = i
+menu-manage-keys =
+    .label = Kulcssegéd
+    .accesskey = s
+menu-view-certificates =
+    .label = Címzettek tanúsítványainak megtekintése
+    .accesskey = C
+menu-open-key-manager =
+    .label = Kulcskezelő
+    .accesskey = K
+openpgp-key-issue-notification-one = A végpontok közötti titkosításhoz meg kell oldani a kulcsproblémákat a következőnél: { $addr }
+openpgp-key-issue-notification-many = A végpontok közötti titkosításhoz meg kell oldani a kulcsproblémákat { $count } címzettnél.
+smime-cert-issue-notification-one = A végpontok közötti titkosításhoz meg kell oldani a tanúsítványproblémákat a következőnél: { $addr }
+smime-cert-issue-notification-many = A végpontok közötti titkosításhoz meg kell oldani a tanúsítványproblémákat { $count } címzettnél.
+key-notification-disable-encryption =
+    .label = Ne titkosítsa
+    .accesskey = N
+    .tooltiptext = Végpontok közötti titkosítás letiltása
+key-notification-resolve =
+    .label = Feloldás
+    .accesskey = F
+    .tooltiptext = Az OpenPGP kulcssegéd megnyitása
 
 ## Addressing Area
 

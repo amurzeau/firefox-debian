@@ -32,6 +32,13 @@ pill-tooltip-not-in-address-book = { $email } немає у вашій адре�
 pill-action-edit =
     .label = Змінити адресу
     .accesskey = м
+#   $type (String) - the type of the addressing row, e.g. Cc, Bcc, etc.
+pill-action-select-all-sibling-pills =
+    .label = Виберіть усі адреси в { $type }
+    .accesskey = с
+pill-action-select-all-pills =
+    .label = Вибрати всі адреси
+    .accesskey = В
 pill-action-move-to =
     .label = Перемістити в поле Кому
     .accesskey = П
@@ -76,20 +83,13 @@ context-menuitem-attach-files =
     .label = Вкласти файл(и)
     .accesskey = л
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
-#   $count (Number) - the number of attachments in the attachment bucket
-attachment-bucket-count =
-    .value =
-        { $count ->
-            [1] { $count } вкладення
-            [one] { $count } вкладення
-            [few] { $count } вкладення
-           *[many] { $count } вкладень
-        }
-    .accesskey = в
-expand-attachment-pane-tooltip =
-    .tooltiptext = Показати панель вкладень ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Сховати панель вкладень ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+# Note: Do not translate the term 'vCard'.
+context-menuitem-attach-vcard =
+    .label = Моя vCard
+    .accesskey = М
+context-menuitem-attach-openpgp-key =
+    .label = Мій відкритий ключ OpenPGP
+    .accesskey = к
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count-value =
     { $count ->
@@ -98,6 +98,10 @@ attachment-bucket-count-value =
         [few] { $count } вкладень
        *[many] { $count } вкладень
     }
+expand-attachment-pane-tooltip =
+    .tooltiptext = Показати панель вкладень ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+collapse-attachment-pane-tooltip =
+    .tooltiptext = Сховати панель вкладень ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Показати панель вкладень ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -135,6 +139,54 @@ message-to-be-signed-icon =
     .alt = Підписати повідомлення
 message-to-be-encrypted-icon =
     .alt = Зашифрувати повідомлення
+encryption-menu =
+    .label = Безпека
+    .accesskey = з
+encryption-toggle =
+    .label = Шифрувати
+    .tooltiptext = Захистити це повідомлення наскрізним шифруванням
+encryption-options-openpgp =
+    .label = OpenPGP
+    .tooltiptext = Переглянути або змінити налаштування шифрування OpenPGP
+encryption-options-smime =
+    .label = S/MIME
+    .tooltiptext = Переглянути або змінити налаштування шифрування S/MIME
+menu-openpgp =
+    .label = OpenPGP
+    .accesskey = O
+menu-smime =
+    .label = S/MIME
+    .accesskey = S
+menu-encrypt =
+    .label = Шифрувати
+    .accesskey = Ш
+menu-encrypt-subject =
+    .label = Шифрувати тему
+    .accesskey = т
+menu-sign =
+    .label = Цифровий підпис
+    .accesskey = и
+menu-manage-keys =
+    .label = Керувати ключами
+    .accesskey = к
+menu-view-certificates =
+    .label = Переглянути сертифікати одержувачів
+    .accesskey = П
+menu-open-key-manager =
+    .label = Менеджер ключів
+    .accesskey = М
+openpgp-key-issue-notification-one = Наскрізне шифрування вимагає розв'язання проблем ключів для { $addr }
+openpgp-key-issue-notification-many = Наскрізне шифрування вимагає розв'язання проблем ключів для { $count } одержувачів
+smime-cert-issue-notification-one = Наскрізне шифрування вимагає розв'язання проблем сертифікату для { $addr }
+smime-cert-issue-notification-many = Наскрізне шифрування вимагає розв'язання проблем сертифікату для { $count } одержувачів
+key-notification-disable-encryption =
+    .label = Не шифрувати
+    .accesskey = Н
+    .tooltiptext = Вимкнути наскрізне шифрування
+key-notification-resolve =
+    .label = Розв'язати
+    .accesskey = Р
+    .tooltiptext = Відкрити менеджер керування ключами OpenPGP
 
 ## Addressing Area
 

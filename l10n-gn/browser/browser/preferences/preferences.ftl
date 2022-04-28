@@ -380,6 +380,13 @@ applications-use-os-default-label =
 
 ##
 
+applications-handle-new-file-types-description = ¿Mba’e ojapova’erã { -brand-short-name } ambue marandurenda ndive?
+applications-save-for-new-types =
+    .label = Eñongatu marandurenda
+    .accesskey = S
+applications-ask-before-handling =
+    .label = Eporandu embojuruja térã eñongatúta marandurenda
+    .accesskey = A
 drm-content-header = Tembiapo Ñandutigua Derécho (TÑD) retepy
 play-drm-content =
     .label = Emboheta tetepy oñangarekóva DRM rehe

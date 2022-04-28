@@ -4,6 +4,17 @@
 
 e2e-intro-description = Ak chcete odosielať šifrované alebo digitálne podpísané správy, musíte nakonfigurovať šifrovaciu technológiu, buď OpenPGP alebo S/MIME.
 e2e-intro-description-more = Vyberte svoj osobný kľúč pre použitie OpenPGP alebo svoj osobný certifikát pre použitie S/MIME. Pre osobný kľúč alebo certifikát, pre ktorý vlastníte zodpovedajúci tajný kľúč.
+e2e-signing-description = Digitálny podpis umožňuje príjemcom overiť, že správu ste odoslali vy a jej obsah sa nezmenil. Šifrované správy sú štandardne vždy podpísané.
+e2e-sign-message =
+    .label = Podpísať nešifrované správy
+    .accesskey = P
+e2e-disable-enc =
+    .label = Zakázať šifrovanie pre nové správy
+    .accesskey = Z
+e2e-enable-enc =
+    .label = Povoliť šifrovanie pre nové správy
+    .accesskey = o
+e2e-enable-description = Šifrovanie budete môcť zakázať pre jednotlivé správy.
 e2e-advanced-section = Rozšírené nastavenia
 e2e-attach-key =
     .label = Pri pridávaní môjho digitálneho podpisu OpenPGP pripojiť aj môj verejný kľúč
@@ -44,6 +55,8 @@ openpgp-generate-key =
 openpgp-advanced-prefs-button-label =
     .label = Pokročilé…
 openpgp-keygen-desc = <a data-l10n-name="openpgp-keygen-desc-link">POZNÁMKA: Dokončenie generovania kľúča môže trvať až niekoľko minút.</a> Počas generovania kľúča neopúšťajte aplikáciu. Aktívne prehliadanie alebo vykonávanie operácií náročných na disk počas generovania kľúča zvýši „náhodnosť“ a urýchli proces. Po dokončení generovania kľúča budete upozornený.
+openpgp-key-created-label =
+    .label = Vytvorený
 openpgp-key-expiry-label =
     .label = Vypršanie platnosti
 openpgp-key-id-label =
@@ -227,6 +240,7 @@ openpgp-key-details-structure-tab =
     .label = Štruktúra
 openpgp-key-details-uid-certified-col =
     .label = ID používateľa / certifikované
+openpgp-key-details-key-id-label = ID kľúča
 openpgp-key-details-user-id2-label = Údajný vlastník kľúča
 openpgp-key-details-id-label =
     .label = ID
@@ -246,6 +260,7 @@ openpgp-key-details-expiry-header = Vypršanie platnosti
 openpgp-key-details-usage-label =
     .label = Využitie
 openpgp-key-details-fingerprint-label = Odtlačok
+openpgp-key-details-legend-secret-missing = Pre kľúče označené (!) nie je dostupný tajný kľúč.
 openpgp-key-details-sel-action =
     .label = Vybrať akciu...
     .accesskey = V
@@ -341,12 +356,14 @@ key-expired-simple = Platnosť kľúča vypršala
 key-revoked-simple = Kľúč bol zneplatnený
 key-do-you-accept = Prijímate tento kľúč na overovanie digitálnych podpisov a na šifrovanie správ?
 key-accept-warning = Vyvarujte sa prijatiu neovereného kľúča. Na overenie odtlačku kľúča korešpondenta použite iný komunikačný kanál ako e-mail.
+key-verification = Overte odtlačok kľúča pomocou zabezpečeného komunikačného kanála iného ako e-mail, aby ste sa uistili, že ide skutočne o kľúč adresáta { $addr }.
 # Strings enigmailMsgComposeOverlay.js
 cannot-use-own-key-because = Správu sa nepodarilo odoslať, pretože sa vyskytol problém s vašim osobným kľúčom. { $problem }
 cannot-encrypt-because-missing = Túto správu nie je možné odoslať s obojstranným šifrovaním, pretože sa vyskytli problémy s kľúčmi nasledujúcich príjemcov: { $problem }
 window-locked = Okno na napísanie správy je zamknuté; odoslanie zrušené
 # Strings in mimeDecrypt.jsm
 mime-decrypt-encrypted-part-attachment-label = Časť zašifrovanej správy
+# Strings in mimeDecrypt.jsm
 mime-decrypt-encrypted-part-concealed-data = Toto je šifrovaná časť správy. Musíte ju otvoriť v samostatnom okne kliknutím na prílohu.
 # Strings in keyserver.jsm
 keyserver-error-aborted = Prerušené

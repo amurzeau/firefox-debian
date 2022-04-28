@@ -216,6 +216,14 @@ preferences-web-appearance-choice-tooltip-light =
     .title = გამოიყენეთ ნათელი იერსახე ვებსაიტის ფონისა და შიგთავსისთვის.
 preferences-web-appearance-choice-tooltip-dark =
     .title = გამოიყენეთ მუქი იერსახე ვებსაიტის ფონისა და შიგთავსისთვის.
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
 preferences-web-appearance-override-warning = თქვენ მიერ შერჩეული ფერები ჩაანაცვლებს საიტის გაფორმებას. <a data-l10n-name="colors-link">ფერების მართვა</a>
@@ -271,7 +279,7 @@ translate-exceptions =
 # Variables:
 #    $localeName (string) - Localized name of the locale to be used.
 use-system-locale =
-    .label = თქვენი საოპერაციო სისტემის პარამეტრების გამოყენება „{ $localeName }“ ფორმატის თარიღის, დროის, ციფრებისა და საზომი ერთეულებისთვის.
+    .label = გამოიყენოს საოპერაციო სისტემის პარამეტრები „{ $localeName }“ ფორმატის თარიღის, დროის, ციფრებისა და საზომი ერთეულებისთვის.
 check-user-spelling =
     .label = მართლწერის შემოწმება ტექსტის აკრეფისას
     .accesskey = მ
@@ -302,8 +310,8 @@ applications-description = აირჩიეთ, როგორ მოეპ�
 applications-filter =
     .placeholder = ფაილის სახეობების ან პროგრამების ძიება
 applications-type-column =
-    .label = შიგთავსის სახეობა
-    .accesskey = გ
+    .label = მასალის სახეობა
+    .accesskey = ლ
 applications-action-column =
     .label = ქმედება
     .accesskey = ქ
@@ -311,7 +319,7 @@ applications-action-column =
 #   $extension (String) - file extension (e.g .TXT)
 applications-file-ending = { $extension } ფაილი
 applications-action-save =
-    .label = ფაილის შენახვა
+    .label = ფაილი შეინახება
 # Variables:
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app =
@@ -372,6 +380,13 @@ applications-use-os-default-label =
 
 ##
 
+applications-handle-new-file-types-description = როგორ მოეპყრას { -brand-short-name } დანარჩენ ფაილებს?
+applications-save-for-new-types =
+    .label = შეინახოს
+    .accesskey = ნ
+applications-ask-before-handling =
+    .label = ყოველ ჯერზე იკითხოს, გახსნას თუ შეინახოს
+    .accesskey = ჯ
 drm-content-header = ციფრული უფლებების მართვის (DRM) შიგთავსი
 play-drm-content =
     .label = DRM-დაქვემდებარებული შიგთავსის გაშვება
@@ -455,7 +470,7 @@ browsing-use-onscreen-keyboard =
     .label = ეკრანული კლავიატურის ჩვენება საჭიროების შემთხვევაში
     .accesskey = კ
 browsing-use-cursor-navigation =
-    .label = გვერდზე გადასაადგილებელი მაჩვენებლის გამოჩენა ყოველთვის
+    .label = გვერდის ტექსტებში მაჩვენებლის გამოჩენა ყოველთვის
     .accesskey = რ
 browsing-search-on-start-typing =
     .label = ტექსტის ძიება აკრეფის დაწყებისთანავე
@@ -472,7 +487,7 @@ browsing-cfr-recommendations =
     .label = გაფართოებების შემოთავაზებები ძიებისას
     .accesskey = შ
 browsing-cfr-features =
-    .label = შესაძლებლობების შემოთავაზებები, გვერდების მონახულებისას
+    .label = შესაძლებლობების შემოთავაზებები გვერდების მონახულებისას
     .accesskey = ზ
 browsing-cfr-recommendations-learn-more = ვრცლად
 
@@ -883,11 +898,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = ფუნთუშები და საიტის მონაცემები
-sitedata-total-size-calculating = საიტის მუდმივი და დროებითი მონაცემების მოცულობის გამოთვლა…
+sitedata-total-size-calculating = ითვლება საიტის მუდმივი და დროებითი მონაცემების მოცულობა…
 # Variables:
 #   $value (Number) - Value of the unit (for example: 4.6, 500)
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
-sitedata-total-size = თქვენ მიერ შენახულ ფუნთუშებს, ასევე საიტის მუდმივ და დროებით მონაცემებს, ამჟამად დისკზე უკავია { $value } { $unit } მოცულობა.
+sitedata-total-size = თქვენ მიერ შენახულ ფუნთუშებს, ასევე საიტის მუდმივ და დროებით მონაცემებს, ამჟამად დისკზე უკავია { $value } { $unit }.
 sitedata-learn-more = ვრცლად
 sitedata-delete-on-close =
     .label = ფუნთუშებისა და საიტის მონაცემების წაშლა, როცა { -brand-short-name } დაიხურება
@@ -1157,15 +1172,15 @@ space-alert-under-5gb-message2 = <strong>{ -brand-short-name } იუწყე�
 
 ## Privacy Section - HTTPS-Only
 
-httpsonly-header = მხოლოდ-HTTPS რეჟიმი
-httpsonly-description = HTTPS საშუალებას იძლევა, რომ { -brand-short-name } უსაფრთხოდ და მონაცემთა დაშიფვრით დაუკავშირდეს საიტს, რომელსაც ეწვევით. უმეტეს ვებსაიტზე HTTPS მხარდაჭერილია და როცა მხოლოდ-HTTPS რეჟიმი ჩართულია, { -brand-short-name } ყველა კავშირს უზრუნველჰყოფს HTTPS-ით.
+httpsonly-header = მხოლოდ-HTTPS-რეჟიმი
+httpsonly-description = HTTPS საშუალებას იძლევა, რომ { -brand-short-name } უსაფრთხოდ და მონაცემთა დაშიფვრით დაუკავშირდეს საიტს, რომელსაც ეწვევით. უმეტეს ვებსაიტზე HTTPS მხარდაჭერილია და როცა მხოლოდ-HTTPS-რეჟიმი ჩართულია, { -brand-short-name } ყველა კავშირს უზრუნველჰყოფს HTTPS-ით.
 httpsonly-learn-more = ვრცლად
 httpsonly-radio-enabled =
-    .label = მხოლოდ-HTTPS რეჟიმი ყველა ფანჯარაში
+    .label = მხოლოდ-HTTPS-რეჟიმი ყველა ფანჯარაში
 httpsonly-radio-enabled-pbm =
-    .label = მხოლოდ-HTTPS რეჟიმი პირად ფანჯრებში
+    .label = მხოლოდ-HTTPS-რეჟიმი პირად ფანჯრებში
 httpsonly-radio-disabled =
-    .label = მხოლოდ-HTTPS რეჟიმის გარეშე
+    .label = მხოლოდ-HTTPS-რეჟიმის გარეშე
 
 ## The following strings are used in the Download section of settings
 

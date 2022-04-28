@@ -4,6 +4,17 @@
 
 e2e-intro-description = Til að senda dulrituð eða stafrænt undirrituð skilaboð þarftu að setja upp og stilla dulritunartækni, annað hvort OpenPGP eða S/MIME.
 e2e-intro-description-more = Veldu persónulega lykilinn þinn til að virkja notkun OpenPGP, eða persónulega skilríkið þitt til að virkja notkun S/MIME. Fyrir persónulegan dreifilykil eða skilríki átt þú að eiga samsvarandi leynilegan einkalykil.
+e2e-signing-description = Stafræn undirritun gerir viðtakendum kleift að staðfesta að skilaboðin hafi verið send af þér og að efni þeirra hafi ekki verið breytt. Dulrituð skilaboð eru sjálfgefið alltaf undirrituð.
+e2e-sign-message =
+    .label = Undirrita ódulrituð skilaboð
+    .accesskey = U
+e2e-disable-enc =
+    .label = Gera dulritun óvirka fyrir ný skilaboð
+    .accesskey = d
+e2e-enable-enc =
+    .label = Gera dulritun virka fyrir ný skilaboð
+    .accesskey = G
+e2e-enable-description = Þú munt geta slökkt á dulritun fyrir einstök skilaboð.
 e2e-advanced-section = Ítarlegar stillingar
 e2e-attach-key =
     .label = Hengja við opinbera dreifilykilinn minn þegar stafrænni OpenPGP-undirritun er bætt við
@@ -44,6 +55,8 @@ openpgp-generate-key =
 openpgp-advanced-prefs-button-label =
     .label = Ítarlegt…
 openpgp-keygen-desc = <a data-l10n-name="openpgp-keygen-desc-link">ATHUGAÐU: Það getur tekið allt að nokkrar mínútur að búa til lykla.</a> Ekki hætta í forritinu á meðan lyklagerð er í gangi. Sé verið að vafra eða framkvæma diskfrekar aðgerðir meðan á lyklagerð stendur endurnýjar það tilviljunarkennt úrtak tölvunnar (randomness pool) og flýtir fyrir ferlinu. Þú færð aðvörun þegar lyklagerð er lokið.
+openpgp-key-created-label =
+    .label = Búið til
 openpgp-key-expiry-label =
     .label = Rennur út
 openpgp-key-id-label =
@@ -221,6 +234,7 @@ openpgp-key-details-structure-tab =
     .label = Uppbygging
 openpgp-key-details-uid-certified-col =
     .label = Notandaauðkenni / Vottað af
+openpgp-key-details-key-id-label = Auðkenni lykils
 openpgp-key-details-user-id2-label = Meintur lykileigandi
 openpgp-key-details-id-label =
     .label = Auðkenni
@@ -240,6 +254,7 @@ openpgp-key-details-expiry-header = Rennur út
 openpgp-key-details-usage-label =
     .label = Notkun
 openpgp-key-details-fingerprint-label = Fingrafar
+openpgp-key-details-legend-secret-missing = Fyrir lykla merkta með (!) er leynilykillinn ekki tiltækur.
 openpgp-key-details-sel-action =
     .label = Veldu aðgerð...
     .accesskey = V
@@ -334,12 +349,14 @@ key-expired-simple = Lykillinn er útrunninn
 key-revoked-simple = Lykillinn var afturkallaður
 key-do-you-accept = Samþykkir þú þennan lykil til að staðfesta stafrænar undirritanir og til að dulrita skilaboð?
 key-accept-warning = Forðastu að samþykkja hvaða lykil sem er. Notaðu aðra samskiptamáta en tölvupóst til að staðfesta fingrafar lykils viðmælanda þíns.
+key-verification = Staðfestu fingrafar lykilsins með því að nota örugga samskiptaleið aðra en tölvupóst til að ganga úr skugga um að þetta sé raunverulega dulritunarlykill frá { $addr }.
 # Strings enigmailMsgComposeOverlay.js
 cannot-use-own-key-because = Ekki er hægt að senda skilaboðin vegna þess að það er vandamál með persónulega lykilinn þinn. { $problem }
 cannot-encrypt-because-missing = Ekki er hægt að senda þessi skilaboð með enda-í-enda dulritun vegna þess að vandamál eru með dulritunarlykla eftirfarandi viðtakenda: { $problem }
 window-locked = Skrifgluggi er læstur; hætt við sendingu
 # Strings in mimeDecrypt.jsm
 mime-decrypt-encrypted-part-attachment-label = Dulritaður hluti skilaboða
+# Strings in mimeDecrypt.jsm
 mime-decrypt-encrypted-part-concealed-data = Þetta er dulritaður hluti skilaboða. Þú þarft að opna það í sérstökum glugga með því að smella á viðhengið.
 # Strings in keyserver.jsm
 keyserver-error-aborted = Hætt við

@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = Бұл бапта�
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = <img data-l10n-name="icon"/> { $name } кеңейтуі { -brand-short-name } интернетке байланысу тәсілін басқарып тұр.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> бұл баптауды басқарады.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/> <strong>{ $name }</strong> бұл баптауды басқарады.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> контейнерлік беттерді талап етеді.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> бұл баптауды басқарады.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>{ $name }</strong> кеңейтуі { -brand-short-name } интернетке байланысу тәсілін басқарып тұр.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -187,6 +202,40 @@ containers-remove-cancel-button = Бұл контейнерді өшірмеу
 
 language-and-appearance-header = Тіл және сыртқы түрі
 fonts-and-colors-header = Қаріптер мен түстер
+preferences-web-appearance-header = Веб-сайттың сыртқы түрі
+preferences-web-appearance-description = Кейбір веб-сайттар түс схемасын сіздің қалауыңызға қарай бейімдейді. Сол сайттар үшін қандай түс схемасын пайдаланғыңыз келетінін таңдаңыз.
+preferences-web-appearance-choice-browser = { -brand-short-name } темасы
+preferences-web-appearance-choice-system = Жүйелік тема
+preferences-web-appearance-choice-light = Ашық түсті
+preferences-web-appearance-choice-dark = Күңгірт түсті
+preferences-web-appearance-choice-tooltip-browser =
+    .title = Веб-сайттар фоны мен құрамасы үшін { -brand-short-name } тема параметрлерін сәйкестендіру.
+preferences-web-appearance-choice-tooltip-system =
+    .title = Веб-сайттар фоны мен мазмұны үшін жүйе параметрлерін сәйкестендіру.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Веб-сайттар фоны мен мазмұны үшін ашық түсті көріністі пайдалану.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Веб-сайттар фоны мен мазмұны үшін күңгірт түсті көріністі пайдалану.
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Сіздің түс таңдауларыңыз веб-сайттың сыртқы көрінісін үстінен басады. <a data-l10n-name="colors-link">Түстерді басқару</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = { -brand-short-name } темаларын <a data-l10n-name="themes-link">Кеңейтулер және темалар</a> ішінен басқарыңыз
+preferences-colors-header = Түстер
+preferences-colors-description = Мәтін, веб-сайттар фоны және сілтемелер үшін { -brand-short-name } үнсіз келісім бойынша түстерін үстінен басу.
+preferences-colors-manage-button =
+    .label = Түстерді басқару…
+    .accesskey = с
+preferences-fonts-header = Қаріптер
 default-font = Негізгі қаріп
     .accesskey = Н
 default-font-size = Өлшемі
@@ -331,6 +380,13 @@ applications-use-os-default-label =
 
 ##
 
+applications-handle-new-file-types-description = { -brand-short-name } басқа файлдармен не істеу керек?
+applications-save-for-new-types =
+    .label = Файлдарды сақтау
+    .accesskey = с
+applications-ask-before-handling =
+    .label = Файлдарды ашу немесе сақтауды сұрау
+    .accesskey = а
 drm-content-header = Цифрлық құқықтарды басқару (DRM) құрамасы
 play-drm-content =
     .label = DRM-басқарылатын құрамасын ойнау
@@ -359,6 +415,9 @@ update-application-warning-cross-user-setting = Бұл баптау бұл { -br
 update-application-use-service =
     .label = Жаңартуларды орнату үшін фон қызметін қолдану
     .accesskey = ф
+update-application-suppress-prompts =
+    .label = Жаңарту хабарландыруларын азырақ көрсету
+    .accesskey = т
 update-setting-write-failure-title2 = Жаңарту баптауларын сақтау қатемен аяқталды
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -404,6 +463,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = Тегіс айналдыруды қолдану
     .accesskey = е
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Айналдыру жолағын әрқашан көрсету
+    .accesskey = л
 browsing-use-onscreen-keyboard =
     .label = Керек болған кезде шерту пернетақтасын қолдану
     .accesskey = п

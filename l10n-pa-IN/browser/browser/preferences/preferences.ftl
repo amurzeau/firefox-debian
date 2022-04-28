@@ -20,7 +20,7 @@ settings-page-title = ਸੈਟਿੰਗਾਂ
 search-input-box2 =
     .style = width: 15.4em
     .placeholder = ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਲੱਭੋ
-managed-notice = ਤੁਹਾਡੇ ਬਰਾਊਜ਼ਰ ਦਾ ਬੰਦੋਬਸਤ ਤੁਹਾਡੀ ਸੰਸਥਾ ਵਲੋਂ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ।
+managed-notice = ਤੁਹਾਡੇ ਬਰਾਊਜ਼ਰ ਦਾ ਇੰਤਜ਼ਾਮ ਤੁਹਾਡੀ ਸੰਸਥਾ ਵਲੋਂ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ।
 category-list =
     .aria-label = ਵਰਗ
 pane-general-title = ਆਮ
@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = ਇਕਸਟੈਨ
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = <img data-l10n-name="icon"/> { $name } ਇਕਸਟੈਸ਼ਨ { -brand-short-name } ਦੇ ਇੰਟਰਨੈੱਟ ਨਾਲ ਕਨੈਕਟ ਹੋਣ ਦੀ ਨਿਗਰਾਨੀ ਰੱਖਦੀ ਹੈ।
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> ਇਹ ਸੈਟਿੰਗ ਨੂੰ ਕੰਟਰੋਲ ਕਰਦੀ ਹੈ।
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/> <strong>{ $name }</strong> ਇਹ ਸੈਟਿੰਗ ਨੂੰ ਕੰਟਰੋਲ ਕਰਦੀ ਹੈ।
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> ਲਈ ਕਨਟੇਨਰ ਟੈਬਾਂ ਚਾਹੀਦੀਆਂ ਹਨ।
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> ਇਹ ਸੈਟਿੰਗ ਨੂੰ ਕੰਟਰੋਲ ਕਰਦੀ ਹੈ।
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>{ $name }</strong> { -brand-short-name } ਦੇ ਇੰਟਰਨੈੱਟ ਨਾਲ ਕਨੈਕਟ ਹੋਣ ਨੂੰ ਕੰਟਰੋਲ ਕਰਦੀ ਹੈ।
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -111,7 +126,7 @@ always-check-default =
 is-default = { -brand-short-name } ਇਸ ਸਮੇਂ ਤੁਹਾਡਾ ਮੂਲ ਬਰਾਊਜ਼ਰ ਹੈ
 is-not-default = { -brand-short-name } ਤੁਹਾਡਾ ਮੂਲ ਬਰਾਊਜ਼ਰ ਨਹੀਂ ਹੈ
 set-as-my-default-browser =
-    .label = …ਡਿਫਾਲਟ ਬਣਾਓ
+    .label = …ਮੂਲ ਬਣਾਓ
     .accesskey = D
 startup-restore-previous-session =
     .label = ਪਿਛਲਾ ਸ਼ੈਸ਼ਨ ਬਹਾਲ ਕਰੋ
@@ -122,7 +137,7 @@ startup-restore-windows-and-tabs =
 startup-restore-warn-on-quit =
     .label = ਜਦੋਂ ਬਰਾਊਜ਼ਰ ਨੂੰ ਬੰਦ ਕਰੋ ਤਾਂ ਸਾਵਧਾਨ ਕਰੋ
 disable-extension =
-    .label = ਇਕਸਟੈਨਸ਼ਨ ਨੂੰ ਅਸਮਰੱਥ ਕਰੋ
+    .label = ਇਕਸਟੈਨਸ਼ਨ ਅਸਮਰੱਥ ਕਰੋ
 tabs-group-header = ਟੈਬਾਂ
 ctrl-tab-recently-used-order =
     .label = ਤਾਜ਼ਾ ਵਰਤੋਂ ਦੇ ਕ੍ਰਮ ਵਿੱਚ ਟੈਬਾਂ ਵਿੱਚ ਗੇੜੇ ਲਈ Ctrl+Tab ਵਰਤੋ
@@ -187,6 +202,40 @@ containers-remove-cancel-button = ਇਸ ਕਨਟੇਨਰ ਨੂੰ ਨਾ ਹ
 
 language-and-appearance-header = ਬੋਲੀ ਅਤੇ ਦਿੱਖ
 fonts-and-colors-header = ਫੌਂਟ ਤੇ ਰੰਗ
+preferences-web-appearance-header = ਵੈੱਬਸਾਈਟ ਦੀ ਦਿੱਖ
+preferences-web-appearance-description = ਕੁਝ ਵੈੱਬਸਾਈਟਾਂ ਤੁਹਾਡੀਆਂ ਪਸੰਦਾਂ ਦੇ ਮੁਤਾਬਕ ਆਪਣੀ ਰੰਗ ਸਕੀਮ ਨੂੰ ਢਾਲ ਲੈਂਦੀਆਂ ਹਨ। ਉਹਨਾਂ ਸਾਈਟਾਂ ਲਈ ਤੁਸੀਂ ਕਿਹੜੀ ਰੰਗ ਸਕੀਮ ਵਰਤਣੀ ਚਾਹੋਗੇ।
+preferences-web-appearance-choice-browser = { -brand-short-name } ਥੀਮ
+preferences-web-appearance-choice-system = ਸਿਸਟਮ ਥੀਮ
+preferences-web-appearance-choice-light = ਹਲਕਾ
+preferences-web-appearance-choice-dark = ਗੂੜ੍ਹਾ
+preferences-web-appearance-choice-tooltip-browser =
+    .title = ਆਪਣੇ { -brand-short-name } ਥੀਮ ਸੈਟਿੰਗਾਂ ਨੂੰ ਵੈੱਬਸਾਈਟ ਦੀ ਬੈਕਗਰਾਊਂਡ ਤੇ ਸਮੱਗਰੀ ਨਾਲ ਮਿਲਾਓ।
+preferences-web-appearance-choice-tooltip-system =
+    .title = ਆਪਣੇ ਸਿਸਟਮ ਦੀਆਂ ਸੈਟਿੰਗਾਂ ਨੂੰ ਵੈੱਬਸਾਈਟਾਂ ਦੀਆਂ ਬੈਕਗਰਾਊਡਾਂ ਤੇ ਸਮੱਗਰੀ ਨਾਲ ਮਿਲਾਓ।
+preferences-web-appearance-choice-tooltip-light =
+    .title = ਵੈੱਬਸਾਈਟ ਬੈਕਗਰਾਊਂਡ ਤੇ ਸਮੱਗਰੀ ਲਈ ਹਲਕੀ ਦਿੱਖ ਵਰਤੋਂ।
+preferences-web-appearance-choice-tooltip-dark =
+    .title = ਵੈੱਬਸਾਈਟ ਬੈਕਗਰਾਊਂਡ ਤੇ ਸਮੱਗਰੀ ਲਈ ਗੂੜ੍ਹੀ ਦਿੱਖ ਵਰਤੋਂ।
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = ਤੁਹਾਡੀ ਰੰਗ ਚੋਣਾਂ ਵੈੱਬਸਾਈਟ ਦੀ ਦਿੱਖ ਨੂੰ ਅਣਡਿੱਠਾ ਕਰ ਦਿੰਦੀਆਂ ਹਨ। <a data-l10n-name="colors-link">ਰੰਗਾਂ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = <a data-l10n-name="themes-link">ਇਕਸਟੈਨਸ਼ਨਾਂ ਤੇ ਥੀਮ</a> ਵਿੱਚ { -brand-short-name } ਥੀਮਾਂ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ
+preferences-colors-header = ਰੰਗ
+preferences-colors-description = ਲਿਖਤ, ਵੈੱਬਸਾਈਟ ਬੈਕਗਰਾਊਂਡ ਤੇ ਲਿੰਕਾਂ ਲਈ { -brand-short-name } ਦੇ ਮੂਲ ਰੰਗਾਂ ਨੂੰ ਅਣਡਿੱਠਾ ਕਰੋ।
+preferences-colors-manage-button =
+    .label = …ਰੰਗਾਂ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ
+    .accesskey = C
+preferences-fonts-header = ਫ਼ੌਂਟ
 default-font = ਡਿਫਾਲਟ ਫੌਂਟ
     .accesskey = D
 default-font-size = ਆਕਾਰ
@@ -257,7 +306,7 @@ download-always-ask-where =
     .label = ਹਮੇਸ਼ਾ ਤੁਹਾਨੂੰ ਪੁੱਛੇ ਕਿ ਫਾਈਲਾਂ ਕਿੱਥੇ ਸੰਭਾਲਣੀਆਂ ਹਨ
     .accesskey = A
 applications-header = ਐਪਲੀਕੇਸ਼ਨਾਂ
-applications-description = ਚੁਣੋ ਕਿ ਬਰਾਊਜ਼ ਕਰਨ ਦੇ ਦੌਰਾਨ ਵੈੱਬ ਤੋਂ ਜਾਂ ਤੁਹਾਡੇ ਵਲੋਂ ਵਰਤੀਆਂ ਐਪਲੀਕੇਸ਼ਨਾਂ ਰਾਹੀਂ ਤੁਹਾਡੇ ਵਲੋਂ ਡਾਊਨਲੋਡ ਕੀਤੀਆਂ ਫ਼ਾਇਲਾਂ ਨਾਲ { -brand-short-name } ਕਿਵੇਂ ਨਿਪਟੇ।
+applications-description = ਚੁਣੋ ਕਿ ਬਰਾਊਜ਼ ਕਰਨ ਦੇ ਦੌਰਾਨ ਵੈੱਬ ਤੋਂ ਜਾਂ ਤੁਹਾਡੇ ਵਲੋਂ ਵਰਤੀਆਂ ਐਪਲੀਕੇਸ਼ਨਾਂ ਰਾਹੀਂ ਤੁਹਾਡੇ ਵਲੋਂ ਡਾਊਨਲੋਡ ਕੀਤੀਆਂ ਫ਼ਾਇਲਾਂ ਨਾਲ { -brand-short-name } ਕਿਵੇਂ ਕੰਮ ਕਰੇ।
 applications-filter =
     .placeholder = ਫਾਈਲ ਕਿਸਮਾਂ ਜਾਂ ਐਪਲੀਕੇਸ਼ਨਾਂ ਲੱਭੋ
 applications-type-column =
@@ -331,6 +380,13 @@ applications-use-os-default-label =
 
 ##
 
+applications-handle-new-file-types-description = { -brand-short-name } ਨੂੰ ਹੋਰ ਫਾਈਲਾਂ ਨਾਲ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?
+applications-save-for-new-types =
+    .label = ਫਾਈਲਾਂ ਸੰਭਾਲੋ
+    .accesskey = S
+applications-ask-before-handling =
+    .label = ਪੁੱਛੋ ਕਿ ਕੀ ਫਾਈਲਾਂ ਨੂੰ ਖੋਲ੍ਹਣਾ ਹੈ ਜਾਂ ਸੰਭਾਲਣਾ?
+    .accesskey = A
 drm-content-header = ਡਿਜ਼ਿਟਲ ਰਾਈਟਸ ਮੈਨਜੇਮੈਂਟ (DRM) ਸਮੱਗਰੀ
 play-drm-content =
     .label = DRM-ਕੰਟਰੋਲ ਕੀਤੀ ਸਮੱਗਰੀ ਚਲਾਓ
@@ -347,7 +403,7 @@ update-application-auto =
     .label = ਅੱਪਡੇਟ ਆਪਣੇ-ਆਪ ਇੰਸਟਾਲ ਕਰੋ (ਸਿਫਾਰਸ਼ੀ)
     .accesskey = A
 update-application-check-choose =
-    .label = ਅੱਪਡੇਟ ਦੀ ਜਾਂਚ ਤਾਂ ਕਰੋ, ਪਰ ਉਹਨਾਂ ਨੂੰ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਤੁਹਾਨੂੰ ਚੁਣਨ ਦਿਓ
+    .label = ਅੱਪਡੇਟ ਦੀ ਜਾਂਚ ਤਾਂ ਕਰੋ, ਪਰ ਉਹਨਾਂ ਨੂੰ ਇੰਸਟਾਲ ਤੁਹਾਨੂੰ ਕਰਨ ਦੇਵੇ
     .accesskey = C
 update-application-manual =
     .label = ਅੱਪਡੇਟ ਲਈ ਕਦੇ ਵੀ ਜਾਂਚ ਨਾ ਕਰੋ (ਸਿਫਾਰਸ਼ੀ ਨਹੀਂ)
@@ -483,8 +539,8 @@ choose-bookmark =
 
 ## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header = ਫਾਇਰਫਾਕਸ ਮੁੱਖ ਪੰਨਾ
-home-prefs-content-description = ਉਹ ਸਮੱਗਰੀ ਚੁਣੋ ਜੋ ਤੁਸੀਂ ਆਪਣੇ ਫਾਇਰਫਾਕਸ ਮੁੱਖ ਪੰਨੇ 'ਤੇ ਚਾਹੁੰਦੇ ਹੋ।
+home-prefs-content-header = ਫਾਇਰਫਾਕਸ ਮੁੱਖ ਸਫ਼ਾ ਸਮੱਗਰੀ
+home-prefs-content-description = ਜੋ ਸਮੱਗਰੀ ਤੁਸੀਂ ਆਪਣੇ Firefox ਮੁੱਖ ਸਫ਼ੇ ਉੱਤੇ ਵੇਖਣੀ ਚਾਹੁੰਦੇ ਹੋ, ਨੂੰ ਚੁਣੋ।
 home-prefs-search-header =
     .label = ਵੈੱਬ ਖੋਜ
 home-prefs-topsites-header =
@@ -616,9 +672,9 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = ਆਪਣੇ ਵੈੱਬ ਨੂੰ ਆਪਣੇ ਨਾਲ ਲੈ ਜਾਓ
-sync-signedout-description2 = ਆਪਣੇ ਸਾਰੇ ਡਿਵਾਈਸਾਂ ਉੱਤੇ ਆਪਣੇ ਬੁੱਕਮਾਰਕਾਂ, ਅਤੀਤ, ਟੈਬਾਂ, ਪਾਸਵਰਡਾਂ, ਐਡ-ਆਨ ਅਤੇ ਸੈਟਿੰਗਾਂ ਨੂੰ ਸੈਕਰੋਨਾਈਜ਼ ਕਰੋ।
+sync-signedout-description2 = ਆਪਣੇ ਸਾਰੇ ਡਿਵਾਈਸਾਂ ਉੱਤੇ ਆਪਣੇ ਬੁੱਕਮਾਰਕਾਂ, ਅਤੀਤ, ਟੈਬਾਂ, ਪਾਸਵਰਡਾਂ, ਐਡ-ਆਨ ਅਤੇ ਸੈਟਿੰਗਾਂ ਨੂੰ ਸਿੰਕਰੋਨਾਈਜ਼ ਕਰੋ।
 sync-signedout-account-signin3 =
-    .label = …ਸਿੰਕ ਲਈ ਸਾਈਨ ਇਨ ਕਰੋ
+    .label = …ਸਿੰਕ ਲਈ ਸਾਈਨ ਇਨ
     .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -628,7 +684,7 @@ sync-signedout-account-signin3 =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = ਆਪਣੇ ਮੋਬਾਈਲ ਡਿਵਾਈਸ ਨਾਲ ਸਿੰਕ ਕਰਨ ਲਈ <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">ਐਂਡਰਾਈਡ</a> ਜਾਂ <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> ਲਈ ਫਾਇਰਫਾਕਸ ਨੂੰ ਡਾਊਨਲੋਡ ਕਰੋ।
+sync-mobile-promo = ਆਪਣੇ ਮੋਬਾਈਲ ਡਿਵਾਈਸ ਨਾਲ ਸਿੰਕ ਕਰਨ ਲਈ <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">ਐਂਡਰਾਈਡ</a> ਜਾਂ <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> ਲਈ Firefox ਨੂੰ ਡਾਊਨਲੋਡ ਕਰੋ।
 
 ## Firefox Account - Signed in
 
@@ -640,7 +696,7 @@ sync-sign-out =
 sync-manage-account = ਖਾਤੇ ਦਾ ਬੰਦੋਬਸਤ ਕਰੋ
     .accesskey = o
 sync-signedin-unverified = { $email } ਜਾਂਚਿਆ ਨਹੀਂ ਹੈ।
-sync-signedin-login-failure = ਮੁੜ-ਕੁਨੈਕਟ ਕਰਨ ਲਈ ਸਾਈਨ ਇਨ ਕਰੋ ਜੀ { $email }
+sync-signedin-login-failure = { $email } ਮੁੜ-ਕੁਨੈਕਟ ਕਰਨ ਲਈ ਸਾਈਨ ਕਰੋ
 sync-resend-verification =
     .label = ਤਸਦੀਕ ਮੁੜ-ਭੇਜੋ
     .accesskey = d
@@ -658,7 +714,7 @@ prefs-syncing-off = ਸਿੰਕ ਕਰਨਾ: ਬੰਦ ਹੈ
 prefs-sync-turn-on-syncing =
     .label = …ਸਿੰਕ ਕਰਨਾ ਚਾਲੂ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ
     .accesskey = s
-prefs-sync-offer-setup-label2 = ਆਪਣੇ ਸਾਰੇ ਡਿਵਾਈਸਾਂ ਉੱਤੇ ਆਪਣੇ ਬੁੱਕਮਾਰਕਾਂ, ਅਤੀਤ, ਟੈਬਾਂ, ਪਾਸਵਰਡਾਂ, ਐਡ-ਆਨ ਅਤੇ ਸੈਟਿੰਗਾਂ ਨੂੰ ਸੈਕਰੋਨਾਈਜ਼ ਕਰੋ।
+prefs-sync-offer-setup-label2 = ਆਪਣੇ ਸਾਰੇ ਡਿਵਾਈਸਾਂ ਉੱਤੇ ਆਪਣੇ ਬੁੱਕਮਾਰਕਾਂ, ਅਤੀਤ, ਟੈਬਾਂ, ਪਾਸਵਰਡਾਂ, ਐਡ-ਆਨ ਅਤੇ ਸੈਟਿੰਗਾਂ ਨੂੰ ਸਿੰਕਰੋਨਾਈਜ਼ ਕਰੋ।
 prefs-sync-now =
     .labelnotsyncing = ਹੁਣੇ ਸਿੰਕ ਕਰੋ
     .accesskeynotsyncing = N
@@ -676,7 +732,7 @@ sync-currently-syncing-creditcards = ਕਰੈਡਿਟ ਕਾਰਡ
 sync-currently-syncing-addons = ਐਡ-ਆਨ
 sync-currently-syncing-settings = ਸੈਟਿੰਗਾਂ
 sync-change-options =
-    .label = ਬਦਲੋ…
+    .label = …ਬਦਲੋ
     .accesskey = C
 
 ## The "Choose what to sync" dialog.
@@ -771,10 +827,10 @@ forms-primary-pw-learn-more-link = ਹੋਰ ਜਾਣੋ
 # ("Master Password" in English) so that the preferences can be found
 # when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
-    .label = …ਮਾਸਟਰ ਪਾਸਵਰਡ ਨੂੰ ਵਰਤੋਂ
+    .label = …ਮਾਸਟਰ ਪਾਸਵਰਡ ਨੂੰ ਬਦਲੋ
     .accesskey = M
 forms-primary-pw-change =
-    .label = …ਮੁੱਖ ਪਾਸਵਰਡ ਬਦਲੋ
+    .label = …ਮੁੱਖ ਪਾਸਵਰਡ ਨੂੰ ਬਦਲੋ
     .accesskey = P
 # Leave this message empty if the translation for "Primary Password" matches
 # "Master Password" in your language. If you're editing the FTL file directly,
@@ -836,7 +892,7 @@ history-clear-on-close-settings =
     .label = …ਸੈਟਿੰਗਾਂ
     .accesskey = t
 history-clear-button =
-    .label = …ਅਤੀਤ ਨੂੰ ਸਾਫ਼ ਕਰੋ
+    .label = …ਅਤੀਤ ਨੂੰ ਮਿਟਾਓ
     .accesskey = s
 
 ## Privacy Section - Site Data
@@ -883,13 +939,13 @@ sitedata-option-block-all-third-party =
 sitedata-option-block-all =
     .label = ਸਾਰੇ ਕੂਕੀਜ਼ (ਵੈੱਬਸਾਈਟਾਂ ਦੇ ਕੰਮ ਨਾ ਕਰਨ ਦਾ ਕਾਰਨ ਹੋਵੇਗਾ)
 sitedata-clear =
-    .label = …ਡਾਟੇ ਨੂੰ ਸਾਫ਼ ਕਰੋ
+    .label = …ਡਾਟੇ ਨੂੰ ਮਿਟਾਓ
     .accesskey = l
 sitedata-settings =
-    .label = …ਡਾਟੇ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ
+    .label = …ਡਾਟੇ ਦਾ ਇੰਤਜ਼ਾਮ
     .accesskey = M
 sitedata-cookies-exceptions =
-    .label = ...ਛੋਟਾਂ ਦਾ ਬੰਦੋਬਸਤ ਕਰੋ
+    .label = ...ਛੋਟਾਂ ਦਾ ਇੰਤਜ਼ਾਮ
     .accesskey = x
 
 ## Privacy Section - Address Bar
@@ -1005,7 +1061,7 @@ content-blocking-fingerprinters-label =
 ## Privacy Section - Tracking
 
 tracking-manage-exceptions =
-    .label = ...ਛੋਟਾਂ ਦਾ ਬੰਦੋਬਸਤ ਕਰੋ
+    .label = ...ਛੋਟਾਂ ਦਾ ਇੰਤਜ਼ਾਮ
     .accesskey = x
 
 ## Privacy Section - Permissions
@@ -1137,4 +1193,4 @@ choose-download-folder-title = ਡਾਊਨਲੋਡ ਫੋਲਡਰ ਚੁਣ�
 # Variables:
 #   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
 save-files-to-cloud-storage =
-    .label = ਫ਼ਾਈਲਾਂ { $service-name } 'ਤੇ ਸੰਭਾਲੋ
+    .label = ਫ਼ਾਈਲਾਂ { $service-name } ’ਤੇ ਸੰਭਾਲੋ

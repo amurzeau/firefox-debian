@@ -143,7 +143,7 @@ ctrl-tab-recently-used-order =
     .label = 按下 Ctrl+Tab 时，依照最近使用顺序循环切换标签页
     .accesskey = T
 open-new-link-as-tabs =
-    .label = 在新标签页中打开链接而非新窗口
+    .label = 在标签页中打开链接而非新窗口
     .accesskey = w
 warn-on-close-multiple-tabs =
     .label = 关闭多个标签页时向您确认
@@ -199,7 +199,7 @@ containers-remove-cancel-button = 不移除此身份
 language-and-appearance-header = 语言与外观
 fonts-and-colors-header = 字体和颜色
 preferences-web-appearance-header = 网站外观
-preferences-web-appearance-description = 某些网站可根据您的偏好调整自身配色，您可在下方选择要使用的网站配色方案。
+preferences-web-appearance-description = 某些网站可依照您的偏好调整自身配色，您可在下方选择要使用的网站配色方案。
 preferences-web-appearance-choice-browser = { -brand-short-name } 主题
 preferences-web-appearance-choice-system = 系统主题
 preferences-web-appearance-choice-light = 浅色
@@ -212,6 +212,14 @@ preferences-web-appearance-choice-tooltip-light =
     .title = 在网站背景和内容使用浅色外观。
 preferences-web-appearance-choice-tooltip-dark =
     .title = 在网站背景和内容使用深色外观。
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
 preferences-web-appearance-override-warning = 您的颜色选择将覆盖网站外观。<a data-l10n-name="colors-link">管理颜色</a>
@@ -368,6 +376,13 @@ applications-use-os-default-label =
 
 ##
 
+applications-handle-new-file-types-description = { -brand-short-name } 应如何处理其他文件？
+applications-save-for-new-types =
+    .label = 保存文件
+    .accesskey = S
+applications-ask-before-handling =
+    .label = 询问要打开还是保存文件
+    .accesskey = A
 drm-content-header = 采用数字版权管理（DRM）的内容
 play-drm-content =
     .label = 播放采用 DRM 的内容
@@ -397,7 +412,7 @@ update-application-use-service =
     .label = 使用后台服务静默安装更新
     .accesskey = b
 update-application-suppress-prompts =
-    .label = 减少更新通知提示
+    .label = 减少更新通知提醒
     .accesskey = n
 update-setting-write-failure-title2 = 保存“更新”设置时出错
 # Variables:

@@ -30,6 +30,13 @@ pill-tooltip-not-in-address-book = { $email } is not in your address book
 pill-action-edit =
     .label = Edit Address
     .accesskey = E
+#   $type (String) - the type of the addressing row, e.g. Cc, Bcc, etc.
+pill-action-select-all-sibling-pills =
+    .label = Select All Addresses in { $type }
+    .accesskey = A
+pill-action-select-all-pills =
+    .label = Select All Addresses
+    .accesskey = S
 pill-action-move-to =
     .label = Move to To
     .accesskey = t
@@ -74,24 +81,23 @@ context-menuitem-attach-files =
     .label = Attach File(s)…
     .accesskey = F
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
-#   $count (Number) - the number of attachments in the attachment bucket
-attachment-bucket-count =
-    .value =
-        { $count ->
-            [1] { $count } Attachment
-           *[other] { $count } Attachments
-        }
-    .accesskey = m
-expand-attachment-pane-tooltip =
-    .tooltiptext = Show the attachment pane ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Hide the attachment pane ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+# Note: Do not translate the term 'vCard'.
+context-menuitem-attach-vcard =
+    .label = My vCard
+    .accesskey = C
+context-menuitem-attach-openpgp-key =
+    .label = My OpenPGP Public Key
+    .accesskey = K
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count-value =
     { $count ->
         [1] { $count } Attachment
        *[other] { $count } Attachments
     }
+expand-attachment-pane-tooltip =
+    .tooltiptext = Show the attachment pane ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+collapse-attachment-pane-tooltip =
+    .tooltiptext = Hide the attachment pane ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Show the attachment pane ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -127,6 +133,54 @@ message-to-be-signed-icon =
     .alt = Sign message
 message-to-be-encrypted-icon =
     .alt = Encrypt message
+encryption-menu =
+    .label = Security
+    .accesskey = c
+encryption-toggle =
+    .label = Encrypt
+    .tooltiptext = Use end-to-end encryption for this message
+encryption-options-openpgp =
+    .label = OpenPGP
+    .tooltiptext = View or change OpenPGP encryption settings
+encryption-options-smime =
+    .label = S/MIME
+    .tooltiptext = View or change S/MIME encryption settings
+menu-openpgp =
+    .label = OpenPGP
+    .accesskey = O
+menu-smime =
+    .label = S/MIME
+    .accesskey = S
+menu-encrypt =
+    .label = Encrypt
+    .accesskey = E
+menu-encrypt-subject =
+    .label = Encrypt Subject
+    .accesskey = B
+menu-sign =
+    .label = Digitally Sign
+    .accesskey = i
+menu-manage-keys =
+    .label = Key Assistant
+    .accesskey = A
+menu-view-certificates =
+    .label = View Certificates Of Recipients
+    .accesskey = V
+menu-open-key-manager =
+    .label = Key Manager
+    .accesskey = M
+openpgp-key-issue-notification-one = End-to-end encryption requires resolving key issues for { $addr }
+openpgp-key-issue-notification-many = End-to-end encryption requires resolving key issues for { $count } recipients.
+smime-cert-issue-notification-one = End-to-end encryption requires resolving certificate issues for { $addr }.
+smime-cert-issue-notification-many = End-to-end encryption requires resolving certificate issues for { $count } recipients.
+key-notification-disable-encryption =
+    .label = Do Not Encrypt
+    .accesskey = D
+    .tooltiptext = Disable end-to-end encryption
+key-notification-resolve =
+    .label = Resolve…
+    .accesskey = R
+    .tooltiptext = Open the OpenPGP Key Assistant
 
 ## Addressing Area
 

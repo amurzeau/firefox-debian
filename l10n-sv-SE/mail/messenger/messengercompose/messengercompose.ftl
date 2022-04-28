@@ -30,6 +30,13 @@ pill-tooltip-not-in-address-book = { $email } finns inte i din adressbok
 pill-action-edit =
     .label = Redigera adress
     .accesskey = R
+#   $type (String) - the type of the addressing row, e.g. Cc, Bcc, etc.
+pill-action-select-all-sibling-pills =
+    .label = Välj alla adresser i { $type }
+    .accesskey = a
+pill-action-select-all-pills =
+    .label = Välj alla adresser
+    .accesskey = V
 pill-action-move-to =
     .label = Flytta till Till
     .accesskey = T
@@ -74,25 +81,23 @@ context-menuitem-attach-files =
     .label = Bifoga fil(er)…
     .accesskey = B
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
-#   $count (Number) - the number of attachments in the attachment bucket
-attachment-bucket-count =
-    .value =
-        { $count ->
-            [1] { $count } bilaga
-            [one] { $count } bilaga
-           *[other] { $count } bilagor
-        }
-    .accesskey = b
-expand-attachment-pane-tooltip =
-    .tooltiptext = Visa bifogningsfönstret { ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }()
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Dölj bifogningsfönstret ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+# Note: Do not translate the term 'vCard'.
+context-menuitem-attach-vcard =
+    .label = Mitt vCard
+    .accesskey = C
+context-menuitem-attach-openpgp-key =
+    .label = Min publika OpenPGP-nyckel
+    .accesskey = n
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count-value =
     { $count ->
         [1] { $count } bilaga
        *[other] { $count } bilagor
     }
+expand-attachment-pane-tooltip =
+    .tooltiptext = Visa bifogningsfönstret { ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }()
+collapse-attachment-pane-tooltip =
+    .tooltiptext = Dölj bifogningsfönstret ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Visa bifogningsfönstret ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -128,6 +133,54 @@ message-to-be-signed-icon =
     .alt = Signera meddelande
 message-to-be-encrypted-icon =
     .alt = Kryptera meddelande
+encryption-menu =
+    .label = Säkerhet
+    .accesskey = S
+encryption-toggle =
+    .label = Kryptera
+    .tooltiptext = Använd end-to-end kryptering för detta meddelande
+encryption-options-openpgp =
+    .label = OpenPGP
+    .tooltiptext = Visa eller ändra krypteringsinställningar för OpenPGP
+encryption-options-smime =
+    .label = S/MIME
+    .tooltiptext = Visa eller ändra krypteringsinställningar för S/MIME
+menu-openpgp =
+    .label = OpenPGP
+    .accesskey = O
+menu-smime =
+    .label = S/MIME
+    .accesskey = S
+menu-encrypt =
+    .label = Kryptera
+    .accesskey = K
+menu-encrypt-subject =
+    .label = Kryptera ämne
+    .accesskey = m
+menu-sign =
+    .label = Signera digitalt
+    .accesskey = g
+menu-manage-keys =
+    .label = Nyckelassistent
+    .accesskey = N
+menu-view-certificates =
+    .label = Visa certifikat från mottagare
+    .accesskey = V
+menu-open-key-manager =
+    .label = Nyckelhanterare
+    .accesskey = N
+openpgp-key-issue-notification-one = End-to-end kryptering kräver att man löser nyckelproblem för { $addr }
+openpgp-key-issue-notification-many = End-to-end kryptering kräver att nyckelproblem löses för { $count } mottagare.
+smime-cert-issue-notification-one = End-to-end kryptering kräver att certifikatproblem löses för { $addr }.
+smime-cert-issue-notification-many = End-to-end kryptering kräver att certifikatproblem löses för { $count } mottagare.
+key-notification-disable-encryption =
+    .label = Kryptera inte
+    .accesskey = n
+    .tooltiptext = Inaktivera end-to-end kryptering
+key-notification-resolve =
+    .label = Lös…
+    .accesskey = L
+    .tooltiptext = Öppna nyckelassistenten för OpenPGP
 
 ## Addressing Area
 

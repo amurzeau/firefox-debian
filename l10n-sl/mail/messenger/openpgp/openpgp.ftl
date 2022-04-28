@@ -4,6 +4,16 @@
 
 e2e-intro-description = Za pošiljanje šifriranih ali digitalno podpisanih sporočil morate nastaviti tehnologijo šifriranja, bodisi OpenPGP bodisi S/MIME.
 e2e-intro-description-more = Izberite si osebni ključ za omogočitev uporabe OpenPGP ali osebno digitalno potrdilo za omogočitev uporabe S/MIME. Za osebni ključ ali digitalno potrdilo imate ustrezen skrivni ključ.
+e2e-sign-message =
+    .label = Podpiši nešifrirana sporočila
+    .accesskey = e
+e2e-disable-enc =
+    .label = Onemogoči šifriranje za nova sporočila
+    .accesskey = n
+e2e-enable-enc =
+    .label = Omogoči šifriranje za nova sporočila
+    .accesskey = m
+e2e-enable-description = Za posamezna sporočila boste lahko onemogočili šifriranje.
 e2e-advanced-section = Napredne nastavitve
 e2e-attach-key =
     .label = Ob dodajanju digitalnega podpisa OpenPGP priloži moj javni ključ
@@ -44,6 +54,8 @@ openpgp-generate-key =
 openpgp-advanced-prefs-button-label =
     .label = Napredno …
 openpgp-keygen-desc = <a data-l10n-name="openpgp-keygen-desc-link">OPOMBA: Ustvarjanje ključev lahko traja nekaj minut.</a> Med ustvarjanjem ključev ne zapirajte programa. Dejavno brskanje ali izvajanje zahtevnih opravil na disku bo polnilo "bazen naključnosti" in pospešilo postopek ustvarjanja ključev. Obveščeni boste, ko bo postopek končan.
+openpgp-key-created-label =
+    .label = Ustvarjen
 openpgp-key-expiry-label =
     .label = Datum preteka
 openpgp-key-id-label =
@@ -223,6 +235,7 @@ openpgp-key-details-signatures-tab =
     .label = Potrdila
 openpgp-key-details-structure-tab =
     .label = Struktura
+openpgp-key-details-key-id-label = ID ključa
 openpgp-key-details-user-id2-label = Domnevni lastnik ključa
 openpgp-key-details-id-label =
     .label = ID
@@ -242,6 +255,7 @@ openpgp-key-details-expiry-header = Datum preteka
 openpgp-key-details-usage-label =
     .label = Uporaba
 openpgp-key-details-fingerprint-label = Prstni odtis
+openpgp-key-details-legend-secret-missing = Za ključe z oznako (!) tajni ključ ni na voljo.
 openpgp-key-details-sel-action =
     .label = Izberi dejanje …
     .accesskey = b
@@ -291,6 +305,7 @@ openpgp-add-key-button =
 e2e-learn-more = Več o tem
 openpgp-keygen-success = Ključ OpenPGP je uspešno ustvarjen!
 openpgp-keygen-import-success = Ključi OpenPGP so uspešno uvoženi!
+openpgp-keygen-external-success = ID zunanjega ključa GnuPG shranjen!
 
 ## OpenPGP Key selection area
 
@@ -447,11 +462,13 @@ openpgp-key-revoke-success = Ključ uspešno preklican.
 key-man-button-import = &Uvozi
 delete-key-title = Izbriši ključ OpenPGP
 delete-external-key-title = Odstrani zunanji ključ GnuPG
+delete-external-key-description = Ali ste prepričani, da želite odstraniti ta ID zunanjega ključa GnuPG?
 key-in-use-title = Ključ OpenPGP je trenutno v uporabi
 import-key-confirm = Ali želite uvoziti javne ključe, vdelane v sporočilo?
 fail-key-import = Napaka – uvažanje ključa ni uspelo
 file-write-failed = Pisanje v datoteko { $output } ni bilo mogoče
 confirm-permissive-import = Uvoz ni uspel. Ključ, ki ga poskušate uvoziti, je morda poškodovan ali uporablja neznane atribute. Ali želite poskusiti uvoziti dele, ki so pravilni? To lahko povzroči uvoz nepopolnih in neuporabnih ključev.
+key-trust-group = (skupina)
 # Strings used in commonWorkflows.js
 import-key-file = Uvozi datoteko ključa OpenPGP
 gnupg-file = Datoteke GnuPG

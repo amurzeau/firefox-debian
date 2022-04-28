@@ -34,6 +34,13 @@ pill-tooltip-not-in-address-book = { $email } njejo we wašom adresniku
 pill-action-edit =
     .label = Adresu wobźěłaś
     .accesskey = A
+#   $type (String) - the type of the addressing row, e.g. Cc, Bcc, etc.
+pill-action-select-all-sibling-pills =
+    .label = Wšykne adrese w { $type } wubraś
+    .accesskey = a
+pill-action-select-all-pills =
+    .label = Wšykne adrese wubraś
+    .accesskey = b
 pill-action-move-to =
     .label = Do Komu pśesunuś
     .accesskey = K
@@ -78,21 +85,13 @@ context-menuitem-attach-files =
     .label = Dataje pśipowjesyś…
     .accesskey = D
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
-#   $count (Number) - the number of attachments in the attachment bucket
-attachment-bucket-count =
-    .value =
-        { $count ->
-            [1] { $count } pśidank
-            [one] { $count } pśidank
-            [two] { $count } pśidanka
-            [few] { $count } pśidanki
-           *[other] { $count } pśidankow
-        }
-    .accesskey = d
-expand-attachment-pane-tooltip =
-    .tooltiptext = Pśidankowe wokno pokazaś ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Pśidankowe wokno schowaś ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+# Note: Do not translate the term 'vCard'.
+context-menuitem-attach-vcard =
+    .label = Mója wizitna kórtka vCard
+    .accesskey = v
+context-menuitem-attach-openpgp-key =
+    .label = Mój zjawny kluc OpenPGP
+    .accesskey = l
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count-value =
     { $count ->
@@ -102,6 +101,10 @@ attachment-bucket-count-value =
         [few] { $count } pśidanki
        *[other] { $count } pśidankow
     }
+expand-attachment-pane-tooltip =
+    .tooltiptext = Pśidankowe wokno pokazaś ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+collapse-attachment-pane-tooltip =
+    .tooltiptext = Pśidankowe wokno schowaś ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Pśidankowe wokno pokazaś ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -141,6 +144,50 @@ message-to-be-signed-icon =
     .alt = Powěsć signěrowaś
 message-to-be-encrypted-icon =
     .alt = Powěsć koděrowaś
+encryption-menu =
+    .label = Wěstota
+    .accesskey = s
+encryption-toggle =
+    .label = Koděrowaś
+    .tooltiptext = Kóděrowanje kóńc do kóńca za toś tu powěsć wužywaś
+encryption-options-openpgp =
+    .label = OpenPGP
+    .tooltiptext = Nastajenja za koděrowanje OpenPGP pokazaś abo změniś
+encryption-options-smime =
+    .label = S/MIME
+    .tooltiptext = Nastajenja za koděrowanje S/MIME pokazaś abo změniś
+menu-openpgp =
+    .label = OpenPGP
+    .accesskey = O
+menu-smime =
+    .label = S/MIME
+    .accesskey = S
+menu-encrypt =
+    .label = Koděrowaś
+    .accesskey = K
+menu-encrypt-subject =
+    .label = Temu koděrowaś
+    .accesskey = T
+menu-sign =
+    .label = Digitalnje signěrowaś
+    .accesskey = i
+menu-manage-keys =
+    .label = Klucowy asistent
+    .accesskey = K
+menu-view-certificates =
+    .label = Certifikaty dostawrjow pokazaś
+    .accesskey = C
+menu-open-key-manager =
+    .label = Zastojnik klucow
+    .accesskey = Z
+key-notification-disable-encryption =
+    .label = Njekoděrowaś
+    .accesskey = N
+    .tooltiptext = Koděrowanje kóńc do kóńca znjemóžniś
+key-notification-resolve =
+    .label = Rozeznawaś…
+    .accesskey = R
+    .tooltiptext = Klucowy asistent OpenPGP wócyniś
 
 ## Addressing Area
 
