@@ -1,3 +1,12 @@
+firefox-esr (91.9.0esr-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2022-17, also known as
+    CVE-2022-29914, CVE-2022-29909, CVE-2022-29916, CVE-2022-29911,
+    CVE-2022-29912, CVE-2022-29917.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 04 May 2022 06:43:23 +0900
+
 firefox-esr (91.8.0esr-1) unstable; urgency=medium
 
   * New upstream release.
