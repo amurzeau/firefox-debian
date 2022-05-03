@@ -32,7 +32,7 @@ category-home =
 pane-search-title = Пошук
 category-search =
     .tooltiptext = { pane-search-title }
-pane-privacy-title = Прыватнасць і Бяспека
+pane-privacy-title = Прыватнасць і бяспека
 category-privacy =
     .tooltiptext = { pane-privacy-title }
 pane-sync-title3 = Сінхранізацыя
@@ -383,6 +383,13 @@ applications-use-os-default-label =
 
 ##
 
+applications-handle-new-file-types-description = Што { -brand-short-name } мусіць рабіць з іншымі файламі?
+applications-save-for-new-types =
+    .label = Захоўваць файлы
+    .accesskey = ы
+applications-ask-before-handling =
+    .label = Пытацца, адкрываць ці захоўваць файлы
+    .accesskey = ф
 drm-content-header = Digital Rights Management (DRM) змесціва
 play-drm-content =
     .label = Прайграваць DRM-кантраляванае змесціва
@@ -765,7 +772,7 @@ sync-engine-creditcards =
     .accesskey = К
 sync-engine-addons =
     .label = Дадаткі
-    .tooltiptext = Пашырэнні і тэмы для настольнага Firefox
+    .tooltiptext = Пашырэнні і тэмы для настольнага Firefox
     .accesskey = Д
 sync-engine-settings =
     .label = Налады

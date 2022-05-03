@@ -30,6 +30,13 @@ pill-tooltip-not-in-address-book = Το { $email } δεν βρίσκεται σ�
 pill-action-edit =
     .label = Επεξεργασία διεύθυνσης
     .accesskey = ε
+#   $type (String) - the type of the addressing row, e.g. Cc, Bcc, etc.
+pill-action-select-all-sibling-pills =
+    .label = Επιλογή όλων των διευθύνσεων στο «{ $type }»
+    .accesskey = λ
+pill-action-select-all-pills =
+    .label = Επιλογή όλων των διευθύνσεων
+    .accesskey = Ε
 pill-action-move-to =
     .label = Μετακίνηση σε «Προς»
     .accesskey = τ
@@ -74,8 +81,15 @@ context-menuitem-attach-files =
     .label = Επισύναψη αρχείων…
     .accesskey = ψ
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
+# Note: Do not translate the term 'vCard'.
+context-menuitem-attach-vcard =
+    .label = Η vCard μου
+    .accesskey = C
+context-menuitem-attach-openpgp-key =
+    .label = Το δημόσιο κλειδί OpenPGP μου
+    .accesskey = κ
 #   $count (Number) - the number of attachments in the attachment bucket
-attachment-bucket-count =
+attachment-bucket-count-value =
     { $count ->
         [1] { $count } συνημμένο
        *[other] { $count } συνημμένα
@@ -84,12 +98,6 @@ expand-attachment-pane-tooltip =
     .tooltiptext = Εμφάνιση του πίνακα συνημμένων ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
     .tooltiptext = Απόκρυψη του πίνακα συνημμένων ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-#   $count (Number) - the number of attachments in the attachment bucket
-attachment-bucket-count-value =
-    { $count ->
-        [1] { $count } συνημμένο
-       *[other] { $count } συνημμένα
-    }
 attachment-area-show =
     .title = Εμφάνιση πίνακα συνημμένων ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -125,6 +133,54 @@ message-to-be-signed-icon =
     .alt = Υπογραφή μηνύματος
 message-to-be-encrypted-icon =
     .alt = Κρυπτογράφηση μηνύματος
+encryption-menu =
+    .label = Ασφάλεια
+    .accesskey = φ
+encryption-toggle =
+    .label = Κρυπτογράφηση
+    .tooltiptext = Χρήση διατερματικής κρυπτογράφησης για αυτό το μήνυμα
+encryption-options-openpgp =
+    .label = OpenPGP
+    .tooltiptext = Προβολή ή αλλαγή ρυθμίσεων της κρυπτογράφησης OpenPGP
+encryption-options-smime =
+    .label = S/MIME
+    .tooltiptext = Προβολή ή αλλαγή ρυθμίσεων της κρυπτογράφησης S/MIME
+menu-openpgp =
+    .label = OpenPGP
+    .accesskey = O
+menu-smime =
+    .label = S/MIME
+    .accesskey = S
+menu-encrypt =
+    .label = Κρυπτογράφηση
+    .accesskey = Κ
+menu-encrypt-subject =
+    .label = Κρυπτογράφηση θέματος
+    .accesskey = π
+menu-sign =
+    .label = Ψηφιακή υπογραφή
+    .accesskey = υ
+menu-manage-keys =
+    .label = Βοηθός κλειδιών
+    .accesskey = Β
+menu-view-certificates =
+    .label = Προβολή πιστοποιητικών παραληπτών
+    .accesskey = Π
+menu-open-key-manager =
+    .label = Διαχείριση κλειδιών
+    .accesskey = χ
+openpgp-key-issue-notification-one = Η διατερματική κρυπτογράφηση απαιτεί την επίλυση ζητημάτων κλειδιών για το { $addr }
+openpgp-key-issue-notification-many = Η διατερματική κρυπτογράφηση απαιτεί την επίλυση ζητημάτων κλειδιών για { $count } παραλήπτες.
+smime-cert-issue-notification-one = Η διατερματική κρυπτογράφηση απαιτεί την επίλυση ζητημάτων πιστοποιητικών για το { $addr }.
+smime-cert-issue-notification-many = Η διατερματική κρυπτογράφηση απαιτεί την επίλυση ζητημάτων πιστοποιητικών για { $count } παραλήπτες.
+key-notification-disable-encryption =
+    .label = Χωρίς κρυπτογράφηση
+    .accesskey = Χ
+    .tooltiptext = Απενεργοποίηση διατερματικής κρυπτογράφησης
+key-notification-resolve =
+    .label = Επίλυση…
+    .accesskey = λ
+    .tooltiptext = Άνοιγμα βοηθού κλειδιών OpenPGP
 
 ## Addressing Area
 

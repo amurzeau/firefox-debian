@@ -209,10 +209,19 @@ containers-remove-cancel-button = Ne odstrani tega vsebnika
 language-and-appearance-header = Jezik in videz
 fonts-and-colors-header = Pisave in barve
 preferences-web-appearance-header = Videz spletnih strani
+preferences-web-appearance-description = Nekatera spletna mesta lahko prilagodijo barvno shemo glede na vaše nastavitve. Izberite barvno shemo, ki jo želite uporabiti za ta spletna mesta.
 preferences-web-appearance-choice-browser = Tema { -brand-short-name(sklon: "rodilnik") }
 preferences-web-appearance-choice-system = Sistemska tema
 preferences-web-appearance-choice-light = Svetla
 preferences-web-appearance-choice-dark = Temna
+preferences-web-appearance-choice-tooltip-browser =
+    .title = Ozadja in vsebina spletnih strani naj se ujemajo z izbrano temo { -brand-short-name(sklon: "rodilnik") }.
+preferences-web-appearance-choice-tooltip-system =
+    .title = Ozadja in vsebina spletnih strani naj se ujemajo s sistemsko temo.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Spletna mesta naj uporabljajo svetle barve ozadij in vsebine.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Spletna mesta naj uporabljajo temne barve ozadij in vsebine.
 preferences-web-appearance-choice-input-browser =
     .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
 preferences-web-appearance-choice-input-system =
@@ -221,7 +230,14 @@ preferences-web-appearance-choice-input-light =
     .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
 preferences-web-appearance-choice-input-dark =
     .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Vaše izbire barv so nastavljene, da preglasijo videz spletnih strani. <a data-l10n-name="colors-link">Upravljanje barv</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Upravljajte teme { -brand-short-name(sklon: "rodilnik") } na strani <a data-l10n-name="themes-link">Razširitve in teme</a>
 preferences-colors-header = Barve
+preferences-colors-description = Preglasi privzete barve { -brand-short-name(sklon: "rodilnik") } za besedilo, ozadja strani in povezave.
 preferences-colors-manage-button =
     .label = Upravljanje barv …
     .accesskey = b
@@ -370,6 +386,13 @@ applications-use-os-default-label =
 
 ##
 
+applications-handle-new-file-types-description = Kaj naj { -brand-short-name } stori z ostalimi datotekami?
+applications-save-for-new-types =
+    .label = Shrani datoteke
+    .accesskey = S
+applications-ask-before-handling =
+    .label = Vprašaj, ali želite odpreti ali shraniti datoteko
+    .accesskey = V
 drm-content-header = Vsebina upravljanja digitalnih pravic (DRM)
 play-drm-content =
     .label = Predvajaj vsebino, zaščiteno z DRM

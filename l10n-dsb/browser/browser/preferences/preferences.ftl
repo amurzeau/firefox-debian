@@ -222,6 +222,14 @@ preferences-web-appearance-choice-tooltip-light =
     .title = Swětły naglěd za slězyny websedłow a wopśimjeśe wužywaś.
 preferences-web-appearance-choice-tooltip-dark =
     .title = Śamny naglěd za slězyny websedłow a wopśimjeśe wužywaś.
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
 preferences-web-appearance-override-warning = Waše barwowe wuběrki naglěd websedła pśepisuju. <a data-l10n-name="colors-link">Barwy zastojaś</a>
@@ -378,6 +386,13 @@ applications-use-os-default-label =
 
 ##
 
+applications-handle-new-file-types-description = Co ma { -brand-short-name } z drugimi datajami cyniś?
+applications-save-for-new-types =
+    .label = Dataju składowaś
+    .accesskey = D
+applications-ask-before-handling =
+    .label = Pšašaś se, lěc se maju dataje wócyniś abo składowaś
+    .accesskey = P
 drm-content-header = Wopśimjeśe Digital Right Management (DRM)
 play-drm-content =
     .label = Wopśimjeśe wóźone pśez DRM wótgraś

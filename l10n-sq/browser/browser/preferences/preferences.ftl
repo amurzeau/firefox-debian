@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = Këtë rregullim e
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Se si lidhet në internet { -brand-short-name }-i, e kontrollon një zgjerim, <img data-l10n-name="icon"/> { $name }.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = Këtë rregullim e kontrollon <img data-l10n-name="icon"/> <strong>{ $name }</strong>.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = Këtë rregullim e kontrollon <img data-l10n-name="icon"/> <strong>{ $name }</strong>.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> lyp Skeda Kontejnerësh.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = Këtë rregullim e kontrollon <img data-l10n-name="icon"/> <strong>{ $name }</strong>.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>{ $name }</strong> kontrollon se si lidhet në internet { -brand-short-name }-i.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -187,6 +202,40 @@ containers-remove-cancel-button = Mos e hiq këtë Kontejner
 
 language-and-appearance-header = Gjuhë dhe Dukje
 fonts-and-colors-header = Shkronja & Ngjyra
+preferences-web-appearance-header = Dukje sajti
+preferences-web-appearance-description = Disa sajte e përshtatin skemën e ngjyrave të tyre bazuar në parapëlqimet tuaja. Zgjidhni cilën skemë ngjyre do të donit të përdoret për këto sajte.
+preferences-web-appearance-choice-browser = Temë { -brand-short-name }-i
+preferences-web-appearance-choice-system = Temë sistemi
+preferences-web-appearance-choice-light = E çelët
+preferences-web-appearance-choice-dark = E errët
+preferences-web-appearance-choice-tooltip-browser =
+    .title = Përputhini rregullimet tuaja të temës së { -brand-short-name }-it për sfonde dhe lëndë sajtesh.
+preferences-web-appearance-choice-tooltip-system =
+    .title = Përputhini rregullimet tuaja të sistemit për sfonde dhe lëndë sajtesh.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Përdorni një pamje të çelët për sfonde dhe lëndë sajtesh.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Përdorni një pamje të errët për sfonde dhe lëndë sajtesh.
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Përzgjedhjet tuaja për ngjyrat po anashkalojnë pamjen e sajtit. <a data-l10n-name="colors-link">Administroni ngjyra</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Administroni { -brand-short-name } tema, që nga <a data-l10n-name="themes-link">Zgjerime & Tema</a>
+preferences-colors-header = Ngjyra
+preferences-colors-description = Anashkalo ngjyrat parazgjedhje të { -brand-short-name }-it për tekst, sfonde sajtesh dhe lidhje.
+preferences-colors-manage-button =
+    .label = Administroni Ngjyra…
+    .accesskey = A
+preferences-fonts-header = Shkronja
 default-font = Shkronja parazgjedhje
     .accesskey = p
 default-font-size = Madhësi
@@ -407,6 +456,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = Përdor rrëshqitje të butë
     .accesskey = b
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Shfaq përherë shtylla rrëshqitjeje
+    .accesskey = q
 browsing-use-onscreen-keyboard =
     .label = Shfaq një tastierë virtuale, kur duhet
     .accesskey = k

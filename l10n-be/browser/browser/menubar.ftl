@@ -223,8 +223,8 @@ menu-history-undo-menu =
     .label = Нядаўна закрытыя карткі
 menu-history-undo-window-menu =
     .label = Нядаўна закрытыя вокны
-menu-history-reopen-all-tabs = Перааадкрыць усе карткі
-menu-history-reopen-all-windows = Перааадкрыць усе вокны
+menu-history-reopen-all-tabs = Пераадкрыць усе карткі
+menu-history-reopen-all-windows = Пераадкрыць усе вокны
 
 ## Bookmarks Menu
 
@@ -255,7 +255,7 @@ menu-tools-downloads =
     .label = Сцягванні
     .accesskey = С
 menu-tools-addons-and-themes =
-    .label = Дадаткі і тэмы
+    .label = Дадаткі і тэмы
     .accesskey = Д
 menu-tools-fxa-sign-in2 =
     .label = Увайсці

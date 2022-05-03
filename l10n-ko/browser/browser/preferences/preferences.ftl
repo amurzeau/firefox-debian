@@ -188,7 +188,7 @@ containers-remove-cancel-button = 이 컨테이너 삭제하지 않음
 
 ## General Section - Language & Appearance
 
-language-and-appearance-header = 언어와 모양
+language-and-appearance-header = 언어 및 모양
 fonts-and-colors-header = 글꼴과 색상
 preferences-web-appearance-header = 웹 사이트 모양
 preferences-web-appearance-description = 일부 웹 사이트는 사용자 설정에 따라 색 구성표를 조정합니다. 이러한 사이트에 사용할 색 구성표를 선택하세요.
@@ -368,7 +368,14 @@ applications-use-os-default-label =
 
 ##
 
-drm-content-header = 디지털 권리 관리(DRM) 콘텐츠
+applications-handle-new-file-types-description = { -brand-short-name }로 다른 파일은 어떤 작업을 하시겠습니까?
+applications-save-for-new-types =
+    .label = 파일 저장
+    .accesskey = S
+applications-ask-before-handling =
+    .label = 파일을 열지 저장할지 묻기
+    .accesskey = A
+drm-content-header = 디지털 권한 관리 (DRM) 콘텐츠
 play-drm-content =
     .label = DRM 제어 콘텐츠 재생
     .accesskey = P

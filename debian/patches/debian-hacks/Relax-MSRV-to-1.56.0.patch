@@ -21,10 +21,10 @@ Subject: Relax MSRV to 1.56.0
  create mode 100644 third_party/rust/audioipc2-client/build.rs
 
 diff --git a/Cargo.lock b/Cargo.lock
-index ae2a292..e7553a0 100644
+index 391b904..77c1d86 100644
 --- a/Cargo.lock
 +++ b/Cargo.lock
-@@ -298,6 +298,7 @@ dependencies = [
+@@ -297,6 +297,7 @@ dependencies = [
   "audioipc2",
   "cubeb-backend",
   "log",
@@ -32,7 +32,7 @@ index ae2a292..e7553a0 100644
  ]
  
  [[package]]
-@@ -4883,6 +4884,7 @@ dependencies = [
+@@ -4925,6 +4926,7 @@ dependencies = [
   "precomputed-hash",
   "rayon",
   "regex",
@@ -121,10 +121,10 @@ index ee156cf..7048ea0 100644
  }
  
 diff --git a/servo/components/style/stylist.rs b/servo/components/style/stylist.rs
-index 9d5e38d..c72d46f 100644
+index 02610fe..63e2209 100644
 --- a/servo/components/style/stylist.rs
 +++ b/servo/components/style/stylist.rs
-@@ -1747,7 +1747,7 @@ impl ExtraStyleData {
+@@ -1730,7 +1730,7 @@ impl ExtraStyleData {
              // TODO: Handle pseudo-classes
              self.pages.named.try_reserve(page_rule.selectors.0.len())?;
              for name in page_rule.selectors.as_slice() {
@@ -134,21 +134,21 @@ index 9d5e38d..c72d46f 100644
                  vec.push(PageRuleData{layer, rule: rule.clone()});
              }
 diff --git a/third_party/rust/audioipc2-client/.cargo-checksum.json b/third_party/rust/audioipc2-client/.cargo-checksum.json
-index 8a67a294..f373dab 100644
+index 6c0cbc0..f033549 100644
 --- a/third_party/rust/audioipc2-client/.cargo-checksum.json
 +++ b/third_party/rust/audioipc2-client/.cargo-checksum.json
 @@ -1 +1 @@
--{"files":{"Cargo.toml":"4304d6695b5ae83a67ec50eeb7c8b05f0292b31bf6d93bfec629492116cb05fd","cbindgen.toml":"fb6abe1671497f432a06e40b1db7ed7cd2cceecbd9a2382193ad7534e8855e34","src/context.rs":"060680f87d406cef1f6f94cfae991ae59b5f3a13253e15481716a1a4224682ee","src/lib.rs":"c4a6797734489280f6b97dd72c9e51a7bd7be4104592eece3929e29d45cbca4a","src/send_recv.rs":"450bdb1d8a346634c0237f2081b424d11e2c19ad81670009303f8a03b3bfb196","src/stream.rs":"a6c07796e6fe704cfa6baf8b904e7ffe874d3c884d44d4ed307e668dec25452b"},"package":null}
+-{"files":{"Cargo.toml":"722e0313d4de90477ae34dbb95ae7eeff27622329c5689bb4ce6bcd2006c6263","cbindgen.toml":"fb6abe1671497f432a06e40b1db7ed7cd2cceecbd9a2382193ad7534e8855e34","src/context.rs":"33231853817615e01fd1a0f67f69a176d19119bbebb7dc417e96ed88dd3a8d34","src/lib.rs":"c4a6797734489280f6b97dd72c9e51a7bd7be4104592eece3929e29d45cbca4a","src/send_recv.rs":"064a657c845762be1dbcbbfc18b3f8a51582eb540def8d2ceecf200184ad4f7a","src/stream.rs":"a6c07796e6fe704cfa6baf8b904e7ffe874d3c884d44d4ed307e668dec25452b"},"package":null}
 \ No newline at end of file
-+{"files":{"Cargo.toml":"fcf7b1d8c3f72ecac29ebe859e7ea5e216168aad149fad0284a81015bd88c329","build.rs":"91de386f621a91eb125484980f352d52549826c27d1ddff53ce6e3835c79e61d","cbindgen.toml":"fb6abe1671497f432a06e40b1db7ed7cd2cceecbd9a2382193ad7534e8855e34","src/context.rs":"060680f87d406cef1f6f94cfae991ae59b5f3a13253e15481716a1a4224682ee","src/lib.rs":"78c7060e55536cbff4681a300e73c7fa0ff52953caa668c84035d2e975b6871d","src/send_recv.rs":"450bdb1d8a346634c0237f2081b424d11e2c19ad81670009303f8a03b3bfb196","src/stream.rs":"a6c07796e6fe704cfa6baf8b904e7ffe874d3c884d44d4ed307e668dec25452b"},"package":null}
++{"files":{"Cargo.toml":"bdde450635daff287c6a94115c801ccc274766f455dd1606dbdf595158668d4f","build.rs":"91de386f621a91eb125484980f352d52549826c27d1ddff53ce6e3835c79e61d","cbindgen.toml":"fb6abe1671497f432a06e40b1db7ed7cd2cceecbd9a2382193ad7534e8855e34","src/context.rs":"33231853817615e01fd1a0f67f69a176d19119bbebb7dc417e96ed88dd3a8d34","src/lib.rs":"78c7060e55536cbff4681a300e73c7fa0ff52953caa668c84035d2e975b6871d","src/send_recv.rs":"064a657c845762be1dbcbbfc18b3f8a51582eb540def8d2ceecf200184ad4f7a","src/stream.rs":"a6c07796e6fe704cfa6baf8b904e7ffe874d3c884d44d4ed307e668dec25452b"},"package":null}
 diff --git a/third_party/rust/audioipc2-client/Cargo.toml b/third_party/rust/audioipc2-client/Cargo.toml
-index 94afedb..b0a63ea 100644
+index fe71197..ddab501 100644
 --- a/third_party/rust/audioipc2-client/Cargo.toml
 +++ b/third_party/rust/audioipc2-client/Cargo.toml
-@@ -14,3 +14,6 @@ audio_thread_priority = "0.23.4"
- audioipc = { package = "audioipc2", path="../audioipc" }
- cubeb-backend = "0.9"
- log = "0.4"
+@@ -18,3 +18,6 @@ log = "0.4"
+ version = "0.26.0"
+ default_features = false
+ features = ["winapi"]
 +
 +[build-dependencies]
 +rustc_version = "0.2"

@@ -8,6 +8,9 @@ places-open =
 places-open-in-tab =
     .label = Ldi ɣef yiccer amaynut
     .accesskey = y
+places-open-in-container-tab =
+    .label = Ldi deg yiccer n umagbar amaynut
+    .accesskey = d
 places-open-all-bookmarks =
     .label = Ldi akk ticraḍ n yisebtar
     .accesskey = L
@@ -127,6 +130,9 @@ places-manage-bookmarks =
     .label = Sefrek ticraḍ n yisebtar
     .accesskey = S
 places-forget-about-this-site-confirmation-title = Ttu asmel-a
+# Variables:
+# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
+places-forget-about-this-site-confirmation-message = Tigawt-a ad tekkes akk isefka yeqqnen ɣer { $hostOrBaseDomain } ad teglu ula s uzray, awalen uffiren, inagan n tuqqna, takatut d yismenyifen n ugbur. S tidet tebɣiḍ ad tkemmleḍ?
 places-forget-about-this-site-forget = Ttu
 places-library =
     .title = Tamkarḍit

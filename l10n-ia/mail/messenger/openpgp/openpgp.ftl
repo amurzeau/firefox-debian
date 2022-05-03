@@ -4,6 +4,17 @@
 
 e2e-intro-description = Pro inviar messages cifrate o signate digitalmente, tu debe configurar un technologia de cryptographia OpenPGP o S/MIME.
 e2e-intro-description-more = Elige tu clave personal pro activar le uso de OpenPGP o tu certificato personal pro activar le uso de S/MIME. Pro un clave personal o un certificato tu debe haber le correspondente clave secrete.
+e2e-signing-description = Un firma digital permitte al destinatarios de verificar que le message era inviate per te e su contento non era cambiate. Le messages cryptate es sempre signate de ordinario.
+e2e-sign-message =
+    .label = Signar le message non cryptate
+    .accesskey = n
+e2e-disable-enc =
+    .label = Disactivar cryptation pro nove messages
+    .accesskey = D
+e2e-enable-enc =
+    .label = Activar cryptation pro nove messages
+    .accesskey = n
+e2e-enable-description = Tu potera disactivar le cryptation pro messages individual.
 e2e-advanced-section = Parametros avantiate
 e2e-attach-key =
     .label = Attaccar mi clave public al addition de un firma digital OpenPGP
@@ -44,6 +55,8 @@ openpgp-generate-key =
 openpgp-advanced-prefs-button-label =
     .label = Avantiate…
 openpgp-keygen-desc = <a data-l10n-name="openpgp-keygen-desc-link">Nota: Le generation de clave pote occupar usque plure minutas pro completar.</a> Non exir del application durante que es in curso le generation del clave. Navigar activemente o exequer operationes intensive pro le disco durante le generation del clave replena le 'piscina aleatori' e accelera le procedura. Tu sera alertate quando generation del clave es completate.
+openpgp-key-created-label =
+    .label = Create
 openpgp-key-expiry-label =
     .label = Date de expiration
 openpgp-key-id-label =
@@ -221,6 +234,7 @@ openpgp-key-details-structure-tab =
     .label = Structura
 openpgp-key-details-uid-certified-col =
     .label = ID usator/Certificate per
+openpgp-key-details-key-id-label = ID de clave
 openpgp-key-details-user-id2-label = Presumite proprietario de clave
 openpgp-key-details-id-label =
     .label = ID
@@ -240,6 +254,7 @@ openpgp-key-details-expiry-header = Date de expiration
 openpgp-key-details-usage-label =
     .label = Uso
 openpgp-key-details-fingerprint-label = Dactylogramma
+openpgp-key-details-legend-secret-missing = Pro le claves marcate con (!) le clave secrete non es disponibile.
 openpgp-key-details-sel-action =
     .label = Eliger le action…
     .accesskey = E
@@ -334,12 +349,14 @@ key-expired-simple = Le clave ha expirate
 key-revoked-simple = Le clave ha essite revocate
 key-do-you-accept = Accepta tu iste clave pro verificante firmas digital e pro cryptar messages?
 key-accept-warning = Evita acceptar un clave picaresc. Usa un canal de communication in ultra al email pro verificar le dactylogramma de clave de tu correspondente.
+key-verification = Verifica le dactylogramma del clave per un canal de communication secur in ultra al e-mail pro verificar que illo es realmente le clave de { $addr }.
 # Strings enigmailMsgComposeOverlay.js
 cannot-use-own-key-because = Impossibile inviar le message, perque il ha un problema con tu clave personal. { $problem }
 cannot-encrypt-because-missing = Impossibile inviar iste message con cryptographia end-to-end, perque il ha problemas con le claves del sequente destinatarios: { $problem }
 window-locked = Le fenestra de composition es blocate; invio cancellate
 # Strings in mimeDecrypt.jsm
 mime-decrypt-encrypted-part-attachment-label = Parte de message cryptate
+# Strings in mimeDecrypt.jsm
 mime-decrypt-encrypted-part-concealed-data = Isto es un parte de message cryptate. Tu debe aperir lo in un fenestra separate cliccante sur le annexo.
 # Strings in keyserver.jsm
 keyserver-error-aborted = Abortate

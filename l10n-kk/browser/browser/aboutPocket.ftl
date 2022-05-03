@@ -16,9 +16,12 @@ pocket-panel-saved-error-tag-length = Тег 25 таңбамен шектелг�
 pocket-panel-saved-error-only-links = Тек сілтемелерді сақтауға болады
 pocket-panel-saved-error-not-saved = Парақ сақталмаған
 pocket-panel-saved-error-no-internet = { -pocket-brand-name } ішіне сақтау үшін, интернетпен байланыс болуы тиіс. Интернетке байланысып, қайталап көріңіз.
+pocket-panel-saved-error-remove = Бұл парақты өшіру талабы кезінде қате орын алды.
 pocket-panel-saved-page-removed = Парақ өшірілді
 pocket-panel-saved-page-saved = { -pocket-brand-name }-ке сақталды
+pocket-panel-saved-page-saved-b = { -pocket-brand-name } ішіне сақталды!
 pocket-panel-saved-processing-remove = Парақты өшіру…
+pocket-panel-saved-removed = Парақ менің тізімімнен өшірілді
 pocket-panel-saved-processing-tags = Тегтерді қосу…
 pocket-panel-saved-remove-page = Парақты өшіру
 pocket-panel-saved-save-tags = Сақтау
@@ -26,6 +29,8 @@ pocket-panel-saved-saving-tags = Сақтау…
 pocket-panel-saved-suggested-tags = Ұсынылатын тегтер
 pocket-panel-saved-tags-saved = Тегтер қосылды
 pocket-panel-signup-view-list = Тізімді қарау
+# This is displayed above a field where the user can add tags
+pocket-panel-signup-add-tags = Тегтерді қосу:
 
 ## about:pocket-signup panel
 
@@ -67,3 +72,4 @@ pocket-panel-header-sign-in = Кіру
 pocket-panel-button-show-all = Барлығын көрсету
 pocket-panel-button-add-tags = Тегтерді қосу
 pocket-panel-button-activate = { -brand-product-name } ішінде { -pocket-brand-name } белсендіру
+pocket-panel-button-remove = Өшіру

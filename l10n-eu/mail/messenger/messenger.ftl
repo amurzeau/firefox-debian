@@ -116,6 +116,9 @@ mail-context-delete-messages =
             [one] Ezabatu mezua
            *[other] Ezabatu hautatutako mezuak
         }
+context-menu-decrypt-to-folder =
+    .label = Kopiatu deszifratua hona
+    .accesskey = z
 
 ## Message header pane
 
@@ -166,18 +169,88 @@ no-reply-reply-anyway-button = Erantzun hala ere
 
 ## error messages
 
+decrypt-and-copy-failures = { $total }(e)tik { $failures } mezu ezin izan dira deszifratu eta ez dira kopiatuko.
 
 ## Spaces toolbar
 
-spaces-toolbar-button-mail =
-    .title = Aldatu posten fitxara
-spaces-toolbar-button-address-book =
-    .title = Aldatu helbide-liburu fitxara
-spaces-toolbar-button-calendar =
-    .title = Aldatu egutegiaren fitxara
-spaces-toolbar-button-tasks =
-    .title = Aldatu zereginen fitxara
-spaces-toolbar-button-chat =
-    .title = Aldatu txat fitxara
-spaces-toolbar-button-settings =
-    .title = Aldatu ezarpenen fitxara
+spaces-toolbar-element =
+    .toolbarname = Guneen tresna-barra
+    .aria-label = Guneen tresna-barra
+    .aria-description = Tresna-barra bertikala guneen artean aldatzeko. Erabili gezi teklak nabigatzeko botoi erabilgarrien artean.
+spaces-toolbar-button-mail2 =
+    .title = Posta
+spaces-toolbar-button-address-book2 =
+    .title = Helbide-liburua
+spaces-toolbar-button-calendar2 =
+    .title = Egutegia
+spaces-toolbar-button-tasks2 =
+    .title = Zereginak
+spaces-toolbar-button-chat2 =
+    .title = Txata
+spaces-toolbar-button-overflow =
+    .title = Gune gehiago...
+spaces-toolbar-button-settings2 =
+    .title = Ezarpenak
+spaces-toolbar-button-hide =
+    .title = Ezkutatu guneen tresna-barra
+spaces-toolbar-button-show =
+    .title = Erakutsi guneen tresna-barra
+spaces-context-new-tab-item =
+    .label = Ireki fitxa berrian
+spaces-context-new-window-item =
+    .label = Ireki leiho berrian
+# Variables:
+# $tabName (String) - The name of the tab this item will switch to.
+spaces-context-switch-tab-item =
+    .label = Aldatu { $tabName }(e)ra
+settings-context-open-settings-item =
+    .label = Ireki ezarpenak
+settings-context-open-account-settings-item =
+    .label = Ireki kontu-ezarpenak
+settings-context-open-addons-item =
+    .label = Ireki gehigarriak eta itxurak
+
+## Spaces toolbar pinned tab menupopup
+
+spaces-toolbar-pinned-tab-button =
+    .tooltiptext = Guneen menua
+spaces-pinned-button-menuitem-mail =
+    .label = { spaces-toolbar-button-mail2.title }
+spaces-pinned-button-menuitem-address-book =
+    .label = { spaces-toolbar-button-address-book2.title }
+spaces-pinned-button-menuitem-calendar =
+    .label = { spaces-toolbar-button-calendar2.title }
+spaces-pinned-button-menuitem-tasks =
+    .label = { spaces-toolbar-button-tasks2.title }
+spaces-pinned-button-menuitem-chat =
+    .label = { spaces-toolbar-button-chat2.title }
+spaces-pinned-button-menuitem-settings =
+    .label = { spaces-toolbar-button-settings2.title }
+spaces-pinned-button-menuitem-show =
+    .label = { spaces-toolbar-button-show.title }
+# Variables:
+# $count (Number) - Number of unread messages.
+chat-button-unread-messages = { $count }
+    .title =
+        { $count ->
+            [one] irakurri gabeko mezu bat
+           *[other] { $count } mezu irakurri gabe
+        }
+
+## Spaces toolbar customize panel
+
+spaces-context-customize =
+    .label = Pertsonalizatu…
+spaces-customize-panel-title = Guneen tresna-barra ezarpenak
+spaces-customize-background-color = Atzeko planoko kolorea
+spaces-customize-icon-color = Botoi kolorea
+# The background color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-background-color = Aukeratutako botoi atzeko plano kolorea
+# The icon color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-text-color = Aukeratutako botoi kolorea
+spaces-customize-button-restore = Berrezarri lehenetsiak
+    .accesskey = B
+spaces-customize-button-save = Eginda
+    .accesskey = E

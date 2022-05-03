@@ -8,6 +8,9 @@ places-open =
 places-open-in-tab =
     .label = Адкрыць у новай картцы
     .accesskey = ц
+places-open-in-container-tab =
+    .label = Адкрыць у новай картцы ў кантэйнеры
+    .accesskey = ў
 places-open-all-bookmarks =
     .label = Адкрыць усе закладкі
     .accesskey = з
@@ -107,7 +110,7 @@ other-bookmarks-folder =
 places-remove-bookmark =
     .label =
         { $count ->
-            [1] Выдаліць закладкі
+            [1] Выдаліць закладку
             [one] Выдаліць закладку
             [few] Выдаліць закладкі
            *[many] Выдаліць закладкі
@@ -217,4 +220,4 @@ places-back-button =
     .tooltiptext = Вярнуцца назад
 places-forward-button =
     .tooltiptext = Пайсці наперад
-places-details-pane-select-an-item-description = Выбар элемента для прагляду і праўкі яго ўласцівасцяў
+places-details-pane-select-an-item-description = Абярыце элемент для прагляду і праўкі яго ўласцівасцяў

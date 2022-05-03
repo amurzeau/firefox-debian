@@ -30,6 +30,13 @@ pill-tooltip-not-in-address-book = { $email } não está no seu catálogo de end
 pill-action-edit =
     .label = Editar endereço
     .accesskey = e
+#   $type (String) - the type of the addressing row, e.g. Cc, Bcc, etc.
+pill-action-select-all-sibling-pills =
+    .label = Selecionar todos os endereços em { $type }
+    .accesskey = t
+pill-action-select-all-pills =
+    .label = Selecionar todos os endereços
+    .accesskey = t
 pill-action-move-to =
     .label = Mover para Para
     .accesskey = P
@@ -74,25 +81,23 @@ context-menuitem-attach-files =
     .label = Anexar arquivos…
     .accesskey = n
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
-#   $count (Number) - the number of attachments in the attachment bucket
-attachment-bucket-count =
-    .value =
-        { $count ->
-            [1] { $count } anexo
-            [one] { $count } anexo
-           *[other] { $count } anexos
-        }
-    .accesskey = x
-expand-attachment-pane-tooltip =
-    .tooltiptext = Exibir painel de anexos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Ocultar painel de anexos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+# Note: Do not translate the term 'vCard'.
+context-menuitem-attach-vcard =
+    .label = Meu vCard
+    .accesskey = C
+context-menuitem-attach-openpgp-key =
+    .label = Minha chave pública OpenPGP
+    .accesskey = v
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count-value =
     { $count ->
         [1] { $count } anexo
        *[other] { $count } anexos
     }
+expand-attachment-pane-tooltip =
+    .tooltiptext = Exibir painel de anexos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+collapse-attachment-pane-tooltip =
+    .tooltiptext = Ocultar painel de anexos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Exibir painel de anexos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -128,6 +133,54 @@ message-to-be-signed-icon =
     .alt = Assinar mensagem
 message-to-be-encrypted-icon =
     .alt = Criptografar mensagem
+encryption-menu =
+    .label = Segurança
+    .accesskey = g
+encryption-toggle =
+    .label = Criptografar
+    .tooltiptext = Usar criptografia de ponta a ponta nesta mensagem
+encryption-options-openpgp =
+    .label = OpenPGP
+    .tooltiptext = Ver ou alterar configurações de criptografia OpenPGP
+encryption-options-smime =
+    .label = S/MIME
+    .tooltiptext = Ver ou alterar configurações de criptografia S/MIME
+menu-openpgp =
+    .label = OpenPGP
+    .accesskey = O
+menu-smime =
+    .label = S/MIME
+    .accesskey = S
+menu-encrypt =
+    .label = Criptografar
+    .accesskey = C
+menu-encrypt-subject =
+    .label = Criptografar assunto
+    .accesskey = s
+menu-sign =
+    .label = Assinar digitalmente
+    .accesskey = i
+menu-manage-keys =
+    .label = Assistente de chaves
+    .accesskey = A
+menu-view-certificates =
+    .label = Ver certificados de destinatários
+    .accesskey = V
+menu-open-key-manager =
+    .label = Gerenciador de chaves
+    .accesskey = G
+openpgp-key-issue-notification-one = A criptografia de ponta a ponta requer a resolução de problemas de chave de { $addr }
+openpgp-key-issue-notification-many = A criptografia de ponta a ponta requer a resolução de problemas de chave de { $count } destinatários.
+smime-cert-issue-notification-one = A criptografia de ponta a ponta requer a resolução de problemas de certificado de { $addr }.
+smime-cert-issue-notification-many = A criptografia de ponta a ponta requer a resolução de problemas de certificado de { $count } destinatários.
+key-notification-disable-encryption =
+    .label = Não criptografar
+    .accesskey = N
+    .tooltiptext = Desativar criptografia de ponta a ponta
+key-notification-resolve =
+    .label = Resolver…
+    .accesskey = R
+    .tooltiptext = Abrir o assistente de chaves OpenPGP
 
 ## Addressing Area
 

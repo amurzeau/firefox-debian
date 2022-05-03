@@ -30,6 +30,13 @@ pill-tooltip-not-in-address-book = { $email } er ekki í nafnaskránni þinni
 pill-action-edit =
     .label = Breyta póstfangi
     .accesskey = B
+#   $type (String) - the type of the addressing row, e.g. Cc, Bcc, etc.
+pill-action-select-all-sibling-pills =
+    .label = Veldu öll póstföng í { $type }
+    .accesskey = V
+pill-action-select-all-pills =
+    .label = Velja öll póstföng
+    .accesskey = a
 pill-action-move-to =
     .label = Færa í Til
     .accesskey = T
@@ -74,8 +81,15 @@ context-menuitem-attach-files =
     .label = Hengja við skrá(r)...
     .accesskey = H
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
+# Note: Do not translate the term 'vCard'.
+context-menuitem-attach-vcard =
+    .label = Mín vCard
+    .accesskey = C
+context-menuitem-attach-openpgp-key =
+    .label = OpenPGP-dreifilykillinn minn
+    .accesskey = k
 #   $count (Number) - the number of attachments in the attachment bucket
-attachment-bucket-count =
+attachment-bucket-count-value =
     { $count ->
         [1] { $count } viðhengi
         [one] { $count } viðhengi
@@ -85,13 +99,6 @@ expand-attachment-pane-tooltip =
     .tooltiptext = Sýna viðhengjaspjaldið ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 collapse-attachment-pane-tooltip =
     .tooltiptext = Fela viðhengjaspjaldið ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-#   $count (Number) - the number of attachments in the attachment bucket
-attachment-bucket-count-value =
-    { $count ->
-        [1] { $count } viðhengi
-        [one] { $count } viðhengi
-       *[other] { $count } viðhengi
-    }
 attachment-area-show =
     .title = Sýna viðhengjaspjaldið ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -127,6 +134,54 @@ message-to-be-signed-icon =
     .alt = Undirrita skilaboð
 message-to-be-encrypted-icon =
     .alt = Dulrita skilaboð
+encryption-menu =
+    .label = Öryggi
+    .accesskey = y
+encryption-toggle =
+    .label = Dulrita
+    .tooltiptext = Nota enda-í-enda dulritun fyrir þessi skilaboð
+encryption-options-openpgp =
+    .label = OpenPGP
+    .tooltiptext = Skoða eða breyta stillingum fyrir OpenPGP-dulkritun
+encryption-options-smime =
+    .label = S/MIME
+    .tooltiptext = Skoða eða breyta stillingum fyrir S/MIME-dulkritun
+menu-openpgp =
+    .label = OpenPGP
+    .accesskey = O
+menu-smime =
+    .label = S/MIME
+    .accesskey = S
+menu-encrypt =
+    .label = Dulrita
+    .accesskey = D
+menu-encrypt-subject =
+    .label = Dulrita viðfangsefni
+    .accesskey = D
+menu-sign =
+    .label = Rafræn undirritun
+    .accesskey = i
+menu-manage-keys =
+    .label = Leiðarvísir fyrir dulritunarlykla
+    .accesskey = a
+menu-view-certificates =
+    .label = Skoða skilríki viðtakenda
+    .accesskey = v
+menu-open-key-manager =
+    .label = Stýring dulritunarlykla
+    .accesskey = k
+openpgp-key-issue-notification-one = Enda-í-enda dulritun krefst þess að leyst séu vandamál með dulritunarlykla fyrir { $addr }
+openpgp-key-issue-notification-many = Enda-í-enda dulritun krefst þess að leyst séu vandamál með dulritunarlykla fyrir { $count } viðtakendur.
+smime-cert-issue-notification-one = Enda-í-enda dulritun krefst þess að leyst séu vandamál með skilríki fyrir { $addr }
+smime-cert-issue-notification-many = Enda-í-enda dulritun krefst þess að leyst séu vandamál með skilríki fyrir { $count } viðtakendur.
+key-notification-disable-encryption =
+    .label = Ekki dulrita
+    .accesskey = d
+    .tooltiptext = Gera enda-í-enda dulritun óvirka
+key-notification-resolve =
+    .label = Leysa…
+    .accesskey = L
+    .tooltiptext = Opna leiðarvísi fyrir OpenPGP dulritunarlykla
 
 ## Addressing Area
 

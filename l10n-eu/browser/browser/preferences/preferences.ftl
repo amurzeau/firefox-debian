@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = Hedapen bat, <img 
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = <img data-l10n-name="icon"/> { $name } hedapenak { -brand-short-name } Internetera nola konektatzen den kontrolatzen du.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> hedapenak kontrolatzen du ezarpen hau.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/> <strong>{ $name }</strong> hedapenak kontrolatzen du ezarpen hau.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> hedapenak edukiontzi-fitxak behar ditu.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> hedapenak kontrolatzen du ezarpen hau.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name="icon"/> <strong>{ $name }</strong> hedapenak { -brand-short-name } Internetera nola konektatzen den kontrolatzen du.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -187,6 +202,40 @@ containers-remove-cancel-button = Ez kendu edukiontzia
 
 language-and-appearance-header = Hizkuntza eta itxura
 fonts-and-colors-header = Letra-tipoak eta koloreak
+preferences-web-appearance-header = Webgunearen itxura
+preferences-web-appearance-description = Zenbait webgunek beraiek kolore-eskema zure hobespenetara moldatzen dute. Aukeratu gune horietarako zein kolore-eskema erabili nahi duzun.
+preferences-web-appearance-choice-browser = { -brand-short-name } itxura
+preferences-web-appearance-choice-system = Sistemaren itxura
+preferences-web-appearance-choice-light = Argia
+preferences-web-appearance-choice-dark = Iluna
+preferences-web-appearance-choice-tooltip-browser =
+    .title = Errespetatu { -brand-short-name }(e)n itxuraren ezarpenak webguneen atzeko plano eta edukiarentzat.
+preferences-web-appearance-choice-tooltip-system =
+    .title = Errespetatu zure sistemaren ezarpenak webguneen atzeko plano eta edukiarentzat.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Erabili itxura argia webguneen atzeko plano eta edukiarentzat.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Erabili itxura iluna webguneen atzeko plano eta edukiarentzat.
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Zure kolore-hautapenek webgunearen itxura baliogabetzen dute. <a data-l10n-name="colors-link">Kudeatu koloreak</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Kudeatu { -brand-short-name }(r)en itxurak <a data-l10n-name="themes-link">Hedapenak eta itxura</a> atalean
+preferences-colors-header = Koloreak
+preferences-colors-description = Baliogabetu { -brand-short-name }(r)en kolore lehenetsiak testu, webguneen atzeko plano eta loturentzat.
+preferences-colors-manage-button =
+    .label = Kudeatu koloreak…
+    .accesskey = k
+preferences-fonts-header = Letra-tipoak
 default-font = Letra-tipo lehenetsia
     .accesskey = n
 default-font-size = Tamaina
@@ -331,6 +380,13 @@ applications-use-os-default-label =
 
 ##
 
+applications-handle-new-file-types-description = Zer egin behar du { -brand-short-name }(e)k beste fitxategiekin?
+applications-save-for-new-types =
+    .label = Gorde fitxategiak
+    .accesskey = G
+applications-ask-before-handling =
+    .label = Galdetu fitxategiak irekitzea edo gordetzea
+    .accesskey = a
 drm-content-header = DRM edukia
 play-drm-content =
     .label = Erreproduzitu DRM bidez kontrolatutako edukia

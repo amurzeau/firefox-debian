@@ -30,6 +30,16 @@ about-private-browsing-hide-activity = Сіз шолатын барлық жер
 about-private-browsing-get-privacy = Интернеттің кез келген жерінде жекелік қорғанысын алыңыз
 about-private-browsing-hide-activity-1 = { -mozilla-vpn-brand-name } көмегімен шолу белсенділігін және орналасуыңызды жасырыңыз. Бір шерті қауіпсіз байланысты орнатады, тіпті ашық Wi-Fi желісінде де.
 about-private-browsing-prominent-cta = { -mozilla-vpn-brand-name } көмегімен жекелікті сақтаңыз
+about-private-browsing-focus-promo-cta = { -focus-brand-name } жүктеп алу
+about-private-browsing-focus-promo-header = { -focus-brand-name }: Қозғалыстағы жекелік шолу
+about-private-browsing-focus-promo-text = Біздің арнайы жеке шолу мобильді қолданбамыз тарихыңызды және cookie файлдарын әр уақытта тазартады.
+
+## The following strings will be used for experiments in Fx99 and Fx100
+
+about-private-browsing-focus-promo-header-b = Телефоныңыздағы жекелік шолу
+about-private-browsing-focus-promo-text-b = Негізгі мобильді браузерге көрсеткіңіз келмейтін жеке іздеулер үшін { -focus-brand-name } пайдаланыңыз.
+about-private-browsing-focus-promo-header-c = Мобильді құрылғыдағы келесі деңгейдегі жекелік
+about-private-browsing-focus-promo-text-c = { -focus-brand-name } жарнамалар мен трекерлерді бұғаттап, тарихыңызды әр уақытта тазартып отырады.
 # This string is the title for the banner for search engine selection
 # in a private window.
 # Variables:
@@ -42,5 +52,5 @@ about-private-browsing-search-banner-description =
     }
 about-private-browsing-search-banner-close-button =
     .aria-label = Жабу
-about-private-browsing-dismiss-button =
-    .title = Тайдыру
+about-private-browsing-promo-close-button =
+    .title = Жабу

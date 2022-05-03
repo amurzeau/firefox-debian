@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = Asiɣzef, <img dat
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Azegrir, <img data-l10n-name="icon"/> { $name }, isefrak amek { -brand-short-name } ad iqqen γer internet.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> issenqad aɣewwar-a.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/> <strong>{ $name }</strong> issenqad aɣewwar-a.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> yesra accaren imagbaren.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> yessenqad aɣewwar-a.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>{ $name }</strong> issenqaden amek { -brand-short-name } iteqqen ɣer internet.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -136,6 +151,14 @@ warn-on-close-multiple-tabs =
 confirm-on-close-multiple-tabs =
     .label = Sentem send amdal n waṭas n waccaren
     .accesskey = ṭ
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (String) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+confirm-on-quit-with-key =
+    .label = Sentem send ad teffɣeḍ s { $quitKey }
+    .accesskey = n
 warn-on-open-many-tabs =
     .label = Lɣu-id ticki ẓẓay { -brand-short-name } ma ldin ddeqs n yiccaren
     .accesskey = L
@@ -179,6 +202,40 @@ containers-remove-cancel-button = Ur tekkes ara amagbar-a
 
 language-and-appearance-header = Tutlayt d urwes
 fonts-and-colors-header = Tisefsiyin d yiniten
+preferences-web-appearance-header = Arwes n usmel web
+preferences-web-appearance-description = Kra n yismal web ṭṭafaren aɣanib n yiniten yebnan ɣef yismenyifen-inek•inem. Fren anwa aɣanib n yiniten i tebɣiḍ ad t-tesqedceḍ i yismal-a.
+preferences-web-appearance-choice-browser = Asentel n { -brand-short-name }
+preferences-web-appearance-choice-system = Asentel n unagraw
+preferences-web-appearance-choice-light = Acaεlal
+preferences-web-appearance-choice-dark = Aberkan
+preferences-web-appearance-choice-tooltip-browser =
+    .title = Semṣadi iɣewwaren n usentel-ik•im { -brand-short-name } i yigilalen d ugbur n yismal web.
+preferences-web-appearance-choice-tooltip-system =
+    .title = Semṣadi iɣewwaren n unagraw i yigilalen akked ugbur n usmel web.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Seqdec arwes aceɛlal i ugilal akked ugbur n yismal web.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Seqdec arwes aberkan i ugilal akked ugbur n yismal web.
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Tifranin-ik•im n yiniten ttbeddilent arwes n usmel web. <a data-l10n-name="colors-link">Sefrek initen</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Sefrek isental n { -brand-short-name } deg <a data-l10n-name="themes-link">yiseɣzaf & yisental</a>
+preferences-colors-header = Initen
+preferences-colors-description = Snefli initen n wudem amezwer n { -brand-short-name } i uḍris, igilalen n yismal web akked yiseɣwan.
+preferences-colors-manage-button =
+    .label = Sefrek initen…
+    .accesskey = I
+preferences-fonts-header = Tisefsiyin
 default-font = Tasefsit tamezwarut
     .accesskey = K
 default-font-size = Teɣzi
@@ -323,6 +380,13 @@ applications-use-os-default-label =
 
 ##
 
+applications-handle-new-file-types-description = D acu ara imahel { -brand-short-name } s yifuyla-nniḍen?
+applications-save-for-new-types =
+    .label = Sekles ifuyla
+    .accesskey = S
+applications-ask-before-handling =
+    .label = Suter ma yella ad d-yeldi neɣ ad isekles ifuyla
+    .accesskey = S
 drm-content-header = Izerfan n usefrek n ugbur umḍin (DRM)
 play-drm-content =
     .label = Γɣaṛ agbur ittwaḥerzen s DRM-
@@ -351,6 +415,9 @@ update-application-warning-cross-user-setting = Aɣewwaṛ-a ad yeḍḍu ɣef y
 update-application-use-service =
     .label = Seqdec ameẓlu n ugilal i usebded n ileqman
     .accesskey = b
+update-application-suppress-prompts =
+    .label = Sken-d kan cwiṭ n yilɣa n uleqqem
+    .accesskey = ɣ
 update-setting-write-failure-title2 = Tuccḍa deg usekles n yiɣewwaren n uleqqem
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -396,6 +463,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = Seqdec adrurem aleggwaɣ
     .accesskey = e
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Sken yal tikkelt ifeggagen n udrurem
+    .accesskey = k
 browsing-use-onscreen-keyboard =
     .label = Sken anasiw amennalan ticki terra tmara
     .accesskey = n
@@ -856,6 +926,10 @@ sitedata-option-block-cross-site-tracking-cookies-including-social-media =
     .label = Inagan n tuqqna n uḍfar gar yismal — akked yinagan n tuqqna n umidyat anmetti
 sitedata-option-block-cross-site-cookies-including-social-media =
     .label = Inagan n tuqqna gar yismal — akked yinagan n tuqqna n umidyat anmetti
+sitedata-option-block-cross-site-tracking-cookies =
+    .label = Inagan n tuqqna i uḍfaṛ gar yismal
+sitedata-option-block-cross-site-cookies =
+    .label = Inagan n tuqqna n uḍfar gar yismal d uɛzal n yinagan-nniḍen n tuqqna
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Ineḍfaren gar yismal d wid n yiẓeḍwa inmettiyen d uɛzal n yinagan n tuqqna i d-yeqqimen
 sitedata-option-block-unvisited =
@@ -938,6 +1012,15 @@ content-blocking-all-windows-tracking-content = Agbur yettwaseqdec i uḍfaṛ d
 content-blocking-all-third-party-cookies = Akk inagan n tuqqna n wis kraḍ
 content-blocking-cryptominers = Ikripṭuminaren
 content-blocking-fingerprinters = Idsilen umḍinen
+# "Test pilot" is used as a verb. Possible alternatives:
+# "Be the first to try", "Join an early experiment".
+content-blocking-etp-standard-tcp-rollout-checkbox =
+    .label =
+        Sekyed s wudem uzwir tamahilt n tbaḍnit iǧehden akk i urǧin i nfeṣṣel
+        tbaḍnit iǧehden akk urǧin i nfeṣṣel yakan
+    .accesskey = S
+# "Contains" here means "isolates", "limits".
+content-blocking-etp-standard-tcp-rollout-description = Ammesten asemday mgal inagan n tuqqna itegg talast i yinagan n tuqqna ɣef usmel ideg telliḍ, ineḍfaren ur ssawaḍen ara ad ak·akem-ḍefren seg usmel ɣer wayeḍ.
 content-blocking-etp-standard-tcp-rollout-learn-more = Issin ugar
 content-blocking-warning-title = Aqeṛṛu d afella!
 content-blocking-and-isolating-etp-warning-description = Asewḥel n yineḍfaren d uɛzal n yinagan n tuqqna yezmer ad iḥaz tamahilt n kra n yismal. Smiren asebter s yineḍfaren akken ad d-yali ugbur meṛṛa.

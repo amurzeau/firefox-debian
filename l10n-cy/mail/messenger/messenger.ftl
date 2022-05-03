@@ -181,7 +181,7 @@ decrypt-and-copy-failures = Nid oedd modd dadgryptio { $failures } o { $total } 
 ## Spaces toolbar
 
 spaces-toolbar =
-    .toolbarname = Bar Offer Bylchau
+    .toolbarname = Bar Offer Mannau
 spaces-toolbar-button-mail =
     .title = Symud i'r tab e-bost
 spaces-toolbar-button-address-book =
@@ -197,7 +197,29 @@ spaces-toolbar-button-settings =
 spaces-toolbar-button-collapse =
     .title = Cau'r bar offer bylchau
 spaces-toolbar-button-reveal =
-    .title = Dangos y bar offer bylchau
+    .title = Dangos y bar offer mannau
+spaces-toolbar-element =
+    .toolbarname = Bar Offer Mannau
+    .aria-label = Bar Offer Mannau
+    .aria-description = Bar offer fertigol ar gyfer symud rhwng mannau gwahanol. Defnyddiwch y bysellau saeth i ddefnyddio'r botymau sydd ar gael.
+spaces-toolbar-button-mail2 =
+    .title = E-bost
+spaces-toolbar-button-address-book2 =
+    .title = Llyfr Cyfeiriadau
+spaces-toolbar-button-calendar2 =
+    .title = Calendr
+spaces-toolbar-button-tasks2 =
+    .title = Tasgau
+spaces-toolbar-button-chat2 =
+    .title = Sgwrsio
+spaces-toolbar-button-overflow =
+    .title = Rhagor o fannau…
+spaces-toolbar-button-settings2 =
+    .title = Gosodiadau
+spaces-toolbar-button-hide =
+    .title = Cuddio Bar Offer Mannau
+spaces-toolbar-button-show =
+    .title = Dangos Bar Offer Mannau
 spaces-context-new-tab-item =
     .label = Agor mewn tab newydd
 spaces-context-new-window-item =
@@ -216,7 +238,7 @@ settings-context-open-addons-item =
 ## Spaces toolbar pinned tab menupopup
 
 spaces-toolbar-pinned-tab-button =
-    .tooltiptext = Agor dewislen bylchau
+    .tooltiptext = Dewislen Mannau
 spaces-pinned-button-menuitem-mail =
     .label = { spaces-toolbar-button-mail.title }
 spaces-pinned-button-menuitem-address-book =
@@ -229,6 +251,10 @@ spaces-pinned-button-menuitem-chat =
     .label = { spaces-toolbar-button-chat.title }
 spaces-pinned-button-menuitem-reveal =
     .label = { spaces-toolbar-button-reveal.title }
+spaces-pinned-button-menuitem-settings =
+    .label = { spaces-toolbar-button-settings2.title }
+spaces-pinned-button-menuitem-show =
+    .label = { spaces-toolbar-button-show.title }
 # Variables:
 # $count (Number) - Number of unread messages.
 chat-button-unread-messages = { $count }
@@ -246,7 +272,7 @@ chat-button-unread-messages = { $count }
 
 spaces-context-customize =
     .label = Cyfaddasu…
-spaces-customize-panel-title = Gosodiadau Bylchau Bar Offer
+spaces-customize-panel-title = Gosodiadau Bar Offer Mannau
 spaces-customize-background-color = Lliw cefndir
 spaces-customize-icon-color = Lliw botwm
 # The background color used on the buttons of the spaces toolbar when they are

@@ -32,6 +32,13 @@ pill-tooltip-not-in-address-book = { $email } sa nenachádza vo vašom adresári
 pill-action-edit =
     .label = Upraviť adresu
     .accesskey = U
+#   $type (String) - the type of the addressing row, e.g. Cc, Bcc, etc.
+pill-action-select-all-sibling-pills =
+    .label = Vybrať všetky adresy v poli { $type }
+    .accesskey = r
+pill-action-select-all-pills =
+    .label = Vybrať všetky adresy
+    .accesskey = b
 pill-action-move-to =
     .label = Presunúť do poľa Komu
     .accesskey = m
@@ -76,20 +83,13 @@ context-menuitem-attach-files =
     .label = Priložiť súbor…
     .accesskey = P
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
-#   $count (Number) - the number of attachments in the attachment bucket
-attachment-bucket-count =
-    .value =
-        { $count ->
-            [1] { $count } príloha
-            [one] { $count } príloha
-            [few] { $count } prílohy
-           *[other] { $count } príloh
-        }
-    .accesskey = r
-expand-attachment-pane-tooltip =
-    .tooltiptext = Zobraziť panel príloh ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Skryť panel príloh ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+# Note: Do not translate the term 'vCard'.
+context-menuitem-attach-vcard =
+    .label = Moja vizitka vCard
+    .accesskey = C
+context-menuitem-attach-openpgp-key =
+    .label = Môj verejný kľúč OpenPGP
+    .accesskey = G
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count-value =
     { $count ->
@@ -98,6 +98,10 @@ attachment-bucket-count-value =
         [few] { $count } prílohy
        *[other] { $count } príloh
     }
+expand-attachment-pane-tooltip =
+    .tooltiptext = Zobraziť panel príloh ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+collapse-attachment-pane-tooltip =
+    .tooltiptext = Skryť panel príloh ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Zobraziť panel príloh ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -135,6 +139,54 @@ message-to-be-signed-icon =
     .alt = Podpísať správu
 message-to-be-encrypted-icon =
     .alt = Zašifrovať správu
+encryption-menu =
+    .label = Zabezpečenie
+    .accesskey = b
+encryption-toggle =
+    .label = Zašifrovať
+    .tooltiptext = Pre túto správu použiť obojstranné šifrovanie
+encryption-options-openpgp =
+    .label = OpenPGP
+    .tooltiptext = Zobraziť alebo zmeniť nastavenia šifrovania OpenPGP
+encryption-options-smime =
+    .label = S/MIME
+    .tooltiptext = Zobraziť alebo zmeniť nastavenie šifrovania S/MIME
+menu-openpgp =
+    .label = OpenPGP
+    .accesskey = G
+menu-smime =
+    .label = S/MIME
+    .accesskey = M
+menu-encrypt =
+    .label = Zašifrovať
+    .accesskey = Z
+menu-encrypt-subject =
+    .label = Zašifrovať predmet
+    .accesskey = f
+menu-sign =
+    .label = Digitálne podpísať
+    .accesskey = D
+menu-manage-keys =
+    .label = Asistent pre kľúče
+    .accesskey = A
+menu-view-certificates =
+    .label = Zobraziť certifikáty príjemcov
+    .accesskey = c
+menu-open-key-manager =
+    .label = Správca kľúčov
+    .accesskey = S
+openpgp-key-issue-notification-one = Obojstranné šifrovanie vyžaduje vyriešenie problémov s kľúčom pre { $addr }
+openpgp-key-issue-notification-many = Obojstranné šifrovanie vyžaduje vyriešenie problémov s kľúčom pre niekoľkých príjemcov (celkom { $count }).
+smime-cert-issue-notification-one = Obojstranné šifrovanie vyžaduje vyriešenie problémov s certifikátom pre { $addr }.
+smime-cert-issue-notification-many = Obojstranné šifrovanie vyžaduje vyriešenie problémov s certifikátom pre niekoľkých príjemcov (celkom { $count }).
+key-notification-disable-encryption =
+    .label = Nešifrovať
+    .accesskey = N
+    .tooltiptext = Zakázať obojstranné šifrovanie
+key-notification-resolve =
+    .label = Vyriešiť…
+    .accesskey = V
+    .tooltiptext = Otvoriť Asistenta pre kľúče OpenPGP
 
 ## Addressing Area
 

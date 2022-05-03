@@ -216,6 +216,14 @@ preferences-web-appearance-choice-tooltip-light =
     .title = Een lichte uitstraling voor website-achtergronden en -inhoud gebruiken.
 preferences-web-appearance-choice-tooltip-dark =
     .title = Een donkere uitstraling voor website-achtergronden en -inhoud gebruiken.
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
 preferences-web-appearance-override-warning = Uw kleurselecties hebben voorrang op het uiterlijk van de website. <a data-l10n-name="colors-link">Kleuren beheren</a>
@@ -372,6 +380,13 @@ applications-use-os-default-label =
 
 ##
 
+applications-handle-new-file-types-description = Wat moet { -brand-short-name } met andere bestanden doen?
+applications-save-for-new-types =
+    .label = Bestanden opslaan
+    .accesskey = o
+applications-ask-before-handling =
+    .label = Vragen of bestanden geopend of opgeslagen moeten worden
+    .accesskey = V
 drm-content-header = Digital Rights Management (DRM)-inhoud
 play-drm-content =
     .label = DRM-beheerde inhoud afspelen

@@ -54,6 +54,16 @@ addr-book-directories-pane-title = Wubjerće zapis, kotryž byšće rady importo
 addr-book-directories-pane-source = Žórłowa dataja:
 addr-book-import-into-new-directory = Nowy zapis załožić
 
+## Import from address book file steps
+
+import-from-calendar-file-desc = Wubjerće dataju iCalendar (.ics), kotruž chceće importować:
+calendar-items-loading = Zapiski so čitaja…
+calendar-items-filter-input =
+    .placeholder = Zapiski filtrować…
+calendar-select-all-items = Wšě wubrać
+calendar-deselect-all-items = Wšě wotwolić
+calendar-import-into-new-calendar = Nowu protyku wutworić
+
 ## Import dialog
 
 progress-pane-title = Importowanje
@@ -65,6 +75,7 @@ error-pane-title = Zmylk
 error-message-zip-file-too-big = Wubrana zip-dataja je wjetša hač 2 GB. Prošu rozpakujće ju najprjedy, a importujće wobsah z rozpakowaneho rjadowaka město toho.
 error-message-extract-zip-file-failed = Zip-dataja njeda so rozbalić. Prošu wupakujće ju manuelnje a importujće ju potom město toho z ekstrahowaneho rjadowaka.
 error-message-failed = Importowanje je so njenadźicy nimokuliło, dalše informacije namakaće snano w zmylkowej konsoli.
+error-failed-to-parse-ics-file = Importujomne zapiski njejsu so w dataji namakali.
 error-export-failed = Eksportowanje je so njenadźicy nimokuliło, dalše informacije namakaće snano w zmylkowej konsoli.
 
 ## <csv-field-map> element

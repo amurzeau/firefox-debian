@@ -123,7 +123,9 @@ remove-search-engine =
     .label = Kendu
     .accesskey = K
 add-opensearch-provider-title = Gehitu OpenSearch hornitzailea
+add-opensearch-provider-text = Sart URLa OpenSearch hornitzailea gehitzeko. Bestela erabili OpenSearch deskripzio fitxategiko URL zuzena, edo auto-aurkitu daitekeen URL bat.
 adding-opensearch-provider-failed-title = OpenSearch hornitzailea gehitzean huts egin du
+adding-opensearch-provider-failed-text = Ezin da gehitu OpenSearch hornitzailea { $url } honekin.
 minimize-to-tray-label =
     .label = { -brand-short-name } txikitzen denean, mugitu erretilura
     .accesskey = t
@@ -147,6 +149,7 @@ app-icon-options =
     .label = Aplikazio-ikonoaren aukerak…
     .accesskey = n
 notification-settings = Alertak eta soinu lehenetsiak desgaitu dezakezu jakinarazpen paneleko sistemaren hobespenetan.
+notification-settings2 = Alertak eta soinu lehenetsiak desgaitu dezakezu jakinarazpen paneleko sistemaren ezarpenetan.
 animated-alert-label =
     .label = Erakutsi abisua
     .accesskey = s
@@ -190,6 +193,9 @@ autoscroll-label =
 smooth-scrolling-label =
     .label = Erabili korritze leuna
     .accesskey = u
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Erakutsi beti korritze-barrak
+    .accesskey = E
 system-integration-legend = Sistemaren integrazioa
 always-check-default =
     .label = Egiaztatu beti { -brand-short-name } posta-bezero lehenetsia dela abiaraztean
@@ -704,5 +710,11 @@ search-results-empty-message =
     { PLATFORM() ->
         [windows] Barkatu! Aukeretan ez dago "<span data-l10n-name="query"></span>" bilaketarako emaitzarik.
        *[other] Barkatu! Hobespenetan ez dago "<span data-l10n-name="query"></span>" bilaketarako emaitzarik.
+    }
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 =
+    { PLATFORM() ->
+        [windows] Barkatu! Aukeretan ez dago "<span data-l10n-name="query"></span>" bilaketarako emaitzarik.
+       *[other] Barkatu! Ezarpenetan ez dago "<span data-l10n-name="query"></span>" bilaketarako emaitzarik.
     }
 search-results-help-link = Laguntza behar duzu? Bisitatu <a data-l10n-name="url">{ -brand-short-name }(r)en laguntza</a>

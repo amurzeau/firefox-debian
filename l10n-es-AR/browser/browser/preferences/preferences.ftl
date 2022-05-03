@@ -216,6 +216,14 @@ preferences-web-appearance-choice-tooltip-light =
     .title = Usar una apariencia clara para fondos y contenido de los sitios web.
 preferences-web-appearance-choice-tooltip-dark =
     .title = Usar una apariencia oscura para fondos y contenido de los sitios web.
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
 preferences-web-appearance-override-warning = La selección de colores cambia la apariencia del sitio web. <a data-l10n-name="colors-link">Administrar colores</a>
@@ -372,6 +380,13 @@ applications-use-os-default-label =
 
 ##
 
+applications-handle-new-file-types-description = ¿Qué debería hacer { -brand-short-name } con otros archivos?
+applications-save-for-new-types =
+    .label = Guardar archivos
+    .accesskey = S
+applications-ask-before-handling =
+    .label = Preguntar si abrir o guardar archivos
+    .accesskey = A
 drm-content-header = Contenido con Digital Rights Management (DRM)
 play-drm-content =
     .label = Reproducir contenido controlado por DRM-

@@ -88,6 +88,21 @@ extension-controlled-websites-content-blocking-all-trackers = Bu ayarı <img dat
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = { -brand-short-name } tarayıcınızın internete nasıl bağlanacağını <img data-l10n-name="icon"/> { $name } adlı uzantı kontrol ediyor.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/> Bu ayarı <strong>{ $name }</strong> yönetiyor.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/> Bu ayarı <strong>{ $name }</strong> yönetiyor.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> kapsayıcı sekmelere ihtiyaç duyuyor.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> Bu ayarı <strong>{ $name }</strong> yönetiyor.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/> { -brand-short-name } tarayıcınızın internete nasıl bağlanacağını <strong>{ $name }</strong> kontrol ediyor.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -193,7 +208,30 @@ preferences-web-appearance-choice-browser = { -brand-short-name } teması
 preferences-web-appearance-choice-system = Sistem teması
 preferences-web-appearance-choice-light = Açık
 preferences-web-appearance-choice-dark = Koyu
+preferences-web-appearance-choice-tooltip-browser =
+    .title = Web sitesi arka planları ve içeriği { -brand-short-name } tema ayarlarımla eşleşsin.
+preferences-web-appearance-choice-tooltip-system =
+    .title = Web sitesi arka planları ve içeriği sistem ayarlarımla eşleşsin.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Web sitesi arka planları ve içeriğinde açık bir görünüm kullan.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Web sitesi arka planları ve içeriğinde koyu bir görünüm kullan.
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Renk seçimleriniz web sitesi görünümünü geçersiz kılıyor. <a data-l10n-name="colors-link">Renkleri yönet</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = { -brand-short-name } temalarını <a data-l10n-name="themes-link">Uzantılar ve Temalar</a> sayfasından yönetebilirsiniz.
 preferences-colors-header = Renkler
+preferences-colors-description = { -brand-short-name } tarayıcınızın varsayılan metin, site arka planı ve bağlantı renklerini geçersiz kılın.
 preferences-colors-manage-button =
     .label = Renkleri yönet…
     .accesskey = R
@@ -342,6 +380,13 @@ applications-use-os-default-label =
 
 ##
 
+applications-handle-new-file-types-description = { -brand-short-name } diğer dosyalarla ne yapsın?
+applications-save-for-new-types =
+    .label = Dosyaları kaydet
+    .accesskey = D
+applications-ask-before-handling =
+    .label = Dosyaları açmayı veya kaydetmeyi sor
+    .accesskey = o
 drm-content-header = Sayısal Hak Yönetimi (DRM) içerikleri
 play-drm-content =
     .label = DRM denetimli içerikleri oynat

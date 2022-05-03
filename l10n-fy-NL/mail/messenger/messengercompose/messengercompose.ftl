@@ -30,6 +30,13 @@ pill-tooltip-not-in-address-book = { $email } stiet net yn jo adresboek
 pill-action-edit =
     .label = Adres bewurkje
     .accesskey = d
+#   $type (String) - the type of the addressing row, e.g. Cc, Bcc, etc.
+pill-action-select-all-sibling-pills =
+    .label = Alle adressen yn { $type } selektearje
+    .accesskey = A
+pill-action-select-all-pills =
+    .label = Alle adressen selektearje
+    .accesskey = k
 pill-action-move-to =
     .label = Ferpleatse nei Oan
     .accesskey = O
@@ -74,18 +81,13 @@ context-menuitem-attach-files =
     .label = Bestân(nen) keppelje…
     .accesskey = B
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
-#   $count (Number) - the number of attachments in the attachment bucket
-attachment-bucket-count =
-    .value =
-        { $count ->
-            [one] { $count } bylage
-           *[other] { $count } bylagen
-        }
-    .accesskey = l
-expand-attachment-pane-tooltip =
-    .tooltiptext = It bylagefinster toane ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = It bylagefinster ferstopje ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+# Note: Do not translate the term 'vCard'.
+context-menuitem-attach-vcard =
+    .label = Myn vCard
+    .accesskey = C
+context-menuitem-attach-openpgp-key =
+    .label = Myn iepenbiere OpenPGP-kaai
+    .accesskey = k
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count-value =
     { $count ->
@@ -93,6 +95,10 @@ attachment-bucket-count-value =
         [one] { $count } bylage
        *[other] { $count } bylagen
     }
+expand-attachment-pane-tooltip =
+    .tooltiptext = It bylagefinster toane ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+collapse-attachment-pane-tooltip =
+    .tooltiptext = It bylagefinster ferstopje ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = It bylagefinster toane ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -128,6 +134,54 @@ message-to-be-signed-icon =
     .alt = Berjocht ûndertekenje
 message-to-be-encrypted-icon =
     .alt = Berjocht fersiferje
+encryption-menu =
+    .label = Befeiliging
+    .accesskey = f
+encryption-toggle =
+    .label = Fersiferje
+    .tooltiptext = End-to-end-fersifering brûke foar dit berjocht
+encryption-options-openpgp =
+    .label = OpenPGP
+    .tooltiptext = OpenPGP-fersiferingsynstellingen besjen of wizigje
+encryption-options-smime =
+    .label = S/MIME
+    .tooltiptext = S/MIME-fersiferingsynstellingen besjen of wizigje
+menu-openpgp =
+    .label = OpenPGP
+    .accesskey = O
+menu-smime =
+    .label = S/MIME
+    .accesskey = S
+menu-encrypt =
+    .label = Fersiferje
+    .accesskey = F
+menu-encrypt-subject =
+    .label = Underwerp fersiferje
+    .accesskey = d
+menu-sign =
+    .label = Digitaal ûndertekenje
+    .accesskey = i
+menu-manage-keys =
+    .label = Kaaiassistint
+    .accesskey = a
+menu-view-certificates =
+    .label = Sertifikaten fan ûntfangers besjen
+    .accesskey = b
+menu-open-key-manager =
+    .label = Kaaibehearder
+    .accesskey = h
+openpgp-key-issue-notification-one = End-to-end-fersifering fereasket it oplossen fan kaaiproblemen foar { $addr }
+openpgp-key-issue-notification-many = End-to-end-fersifering fereasket it oplossen fan kaaiproblemen foar { $count } ûntfangers.
+smime-cert-issue-notification-one = End-to-end-fersifering fereasket it oplossen fan sertifikaatproblemen foar { $addr }
+smime-cert-issue-notification-many = End-to-end-fersifering fereasket it oplossen fan sertifikaatproblemen foar { $count } ûntfangers.
+key-notification-disable-encryption =
+    .label = Net fersiferje
+    .accesskey = i
+    .tooltiptext = End-to-end-fersifering útskeakelje
+key-notification-resolve =
+    .label = Oplosse…
+    .accesskey = l
+    .tooltiptext = De OpenPGP-kaaiassistint iepenje
 
 ## Addressing Area
 

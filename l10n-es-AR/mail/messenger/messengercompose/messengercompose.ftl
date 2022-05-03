@@ -30,6 +30,13 @@ pill-tooltip-not-in-address-book = { $email } no está en la libreta de direccio
 pill-action-edit =
     .label = Editar dirección
     .accesskey = e
+#   $type (String) - the type of the addressing row, e.g. Cc, Bcc, etc.
+pill-action-select-all-sibling-pills =
+    .label = Seleccionar todas las direcciones en { $type }
+    .accesskey = a
+pill-action-select-all-pills =
+    .label = Seleccionar todas las direcciones
+    .accesskey = S
 pill-action-move-to =
     .label = Mover a Destinatario
     .accesskey = t
@@ -74,19 +81,13 @@ context-menuitem-attach-files =
     .label = Adjuntar archivo(s)…
     .accesskey = j
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
-#   $count (Number) - the number of attachments in the attachment bucket
-attachment-bucket-count =
-    .value =
-        { $count ->
-            [1] { $count } archivo adjunto
-            [one] { $count } archivos adjuntos
-           *[other] { $count } archivos adjuntos
-        }
-    .accesskey = m
-expand-attachment-pane-tooltip =
-    .tooltiptext = Mostrar el panel de adjuntos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Ocultar el panel de adjuntos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key } )
+# Note: Do not translate the term 'vCard'.
+context-menuitem-attach-vcard =
+    .label = Mi vCard
+    .accesskey = C
+context-menuitem-attach-openpgp-key =
+    .label = Mí clave pública OpenPGP
+    .accesskey = v
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count-value =
     { $count ->
@@ -94,6 +95,10 @@ attachment-bucket-count-value =
         [one] { $count } adjunto
        *[other] { $count } adjuntos
     }
+expand-attachment-pane-tooltip =
+    .tooltiptext = Mostrar el panel de adjuntos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+collapse-attachment-pane-tooltip =
+    .tooltiptext = Ocultar el panel de adjuntos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key } )
 attachment-area-show =
     .title = Mostrar el panel de adjuntos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -129,6 +134,54 @@ message-to-be-signed-icon =
     .alt = Firmar mensaje
 message-to-be-encrypted-icon =
     .alt = Cifrar mensaje
+encryption-menu =
+    .label = Seguridad
+    .accesskey = g
+encryption-toggle =
+    .label = Cifrar
+    .tooltiptext = Usar cifrado de extremo a extremo para este mensaje
+encryption-options-openpgp =
+    .label = OpenPGP
+    .tooltiptext = Ver o cambiar la configuración de cifrado de OpenPGP
+encryption-options-smime =
+    .label = S/MIME
+    .tooltiptext = Ver o cambiar la configuración de cifrado de S/MIME
+menu-openpgp =
+    .label = OpenPGP
+    .accesskey = O
+menu-smime =
+    .label = S/MIME
+    .accesskey = S
+menu-encrypt =
+    .label = Cifrar
+    .accesskey = f
+menu-encrypt-subject =
+    .label = Sujeto de cifrado
+    .accesskey = j
+menu-sign =
+    .label = Firmar digitalmente
+    .accesskey = i
+menu-manage-keys =
+    .label = Asistente de clave
+    .accesskey = A
+menu-view-certificates =
+    .label = Ver certificados de destinatarios
+    .accesskey = V
+menu-open-key-manager =
+    .label = Administrador de claves
+    .accesskey = m
+openpgp-key-issue-notification-one = El cifrado de extremo a extremo requiere resolver problemas de clave de { $addr }
+openpgp-key-issue-notification-many = El cifrado de extremo a extremo requiere resolver problemas de clave para { $count } destinatarios.
+smime-cert-issue-notification-one = El cifrado de extremo a extremo requiere resolver problemas de certificado de { $addr }
+smime-cert-issue-notification-many = El cifrado de extremo a extremo requiere resolver problemas de certificado para { $count } destinatarios.
+key-notification-disable-encryption =
+    .label = No cifrar
+    .accesskey = N
+    .tooltiptext = Deshabilitar cifrado de extremo a extremo
+key-notification-resolve =
+    .label = Resolver…
+    .accesskey = R
+    .tooltiptext = Abrir el asistente de claves de OpenPGP
 
 ## Addressing Area
 

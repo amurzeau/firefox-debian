@@ -271,7 +271,7 @@ use-cache-after = მბაიტი ბუფერისთვის
 ##
 
 smart-cache-label =
-    .label = კეშის ზომის თვითგანსაზღვრის უგულებელყოფა
+    .label = მარაგის თვითგანსაზღვრის უგულებელყოფა
     .accesskey = ვ
 clear-cache-button =
     .label = გასუფთავება
@@ -320,7 +320,7 @@ quoted-text-color =
     .accesskey = ფ
 search-handler-table =
     .placeholder = შიგთავსის სახეობებისა და მოქმედებების გაფილტვრა
-type-column-header = შიგთავსის სახეობა
+type-column-header = მასალის სახეობა
 action-column-header = მოქმედება
 save-to-label =
     .label = ფაილების შენახვა…

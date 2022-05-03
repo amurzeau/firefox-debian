@@ -29,6 +29,13 @@ pill-tooltip-not-in-address-book = { $email } 不在您的通讯录中
 pill-action-edit =
     .label = 编辑地址
     .accesskey = e
+#   $type (String) - the type of the addressing row, e.g. Cc, Bcc, etc.
+pill-action-select-all-sibling-pills =
+    .label = 选择所有{ $type }地址
+    .accesskey = A
+pill-action-select-all-pills =
+    .label = 选择所有地址
+    .accesskey = S
 pill-action-move-to =
     .label = 移动到“收件人”
     .accesskey = t
@@ -73,24 +80,23 @@ context-menuitem-attach-files =
     .label = 附件…
     .accesskey = F
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
-#   $count (Number) - the number of attachments in the attachment bucket
-attachment-bucket-count =
-    .value =
-        { $count ->
-            [0] 无附件
-           *[other] { $count } 个附件
-        }
-    .accesskey = m
-expand-attachment-pane-tooltip =
-    .tooltiptext = 显示附件窗格（{ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }）
-collapse-attachment-pane-tooltip =
-    .tooltiptext = 隐藏附件窗格（{ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }）
+# Note: Do not translate the term 'vCard'.
+context-menuitem-attach-vcard =
+    .label = 我的 vCard
+    .accesskey = C
+context-menuitem-attach-openpgp-key =
+    .label = 我的 OpenPGP 公钥
+    .accesskey = K
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count-value =
     { $count ->
         [1] { $count } 个附件
        *[other] { $count } 个附件
     }
+expand-attachment-pane-tooltip =
+    .tooltiptext = 显示附件窗格（{ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }）
+collapse-attachment-pane-tooltip =
+    .tooltiptext = 隐藏附件窗格（{ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }）
 attachment-area-show =
     .title = 显示附件窗格（{ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }）
 attachment-area-hide =
@@ -124,6 +130,54 @@ message-to-be-signed-icon =
     .alt = 签名消息
 message-to-be-encrypted-icon =
     .alt = 加密消息
+encryption-menu =
+    .label = 安全性
+    .accesskey = c
+encryption-toggle =
+    .label = 加密
+    .tooltiptext = 端到端加密此消息
+encryption-options-openpgp =
+    .label = OpenPGP
+    .tooltiptext = 查看或更改 OpenPGP 加密设置
+encryption-options-smime =
+    .label = S/MIME
+    .tooltiptext = 查看或更改 S/MIME 加密设置
+menu-openpgp =
+    .label = OpenPGP
+    .accesskey = O
+menu-smime =
+    .label = S/MIME
+    .accesskey = S
+menu-encrypt =
+    .label = 加密
+    .accesskey = E
+menu-encrypt-subject =
+    .label = 加密主题
+    .accesskey = B
+menu-sign =
+    .label = 数字签名
+    .accesskey = i
+menu-manage-keys =
+    .label = 密钥助手
+    .accesskey = A
+menu-view-certificates =
+    .label = 查看收件人证书
+    .accesskey = V
+menu-open-key-manager =
+    .label = 密钥管理器
+    .accesskey = M
+openpgp-key-issue-notification-one = 端到端加密功能需解决 { $addr } 的密钥问题。
+openpgp-key-issue-notification-many = 端到端加密功能需解决 { $count } 位收件人的密钥问题。
+smime-cert-issue-notification-one = 端到端加密功能需解决 { $addr } 的证书问题。
+smime-cert-issue-notification-many = 端到端加密功能需解决 { $count } 位收件人的证书问题。
+key-notification-disable-encryption =
+    .label = 不加密
+    .accesskey = D
+    .tooltiptext = 禁用端到端加密
+key-notification-resolve =
+    .label = 解决…
+    .accesskey = R
+    .tooltiptext = 打开 OpenPGP 密钥助手
 
 ## Addressing Area
 

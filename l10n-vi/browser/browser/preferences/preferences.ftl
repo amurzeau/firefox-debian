@@ -191,7 +191,7 @@ containers-remove-cancel-button = Không xóa ngăn chứa này
 language-and-appearance-header = Ngôn ngữ và chủ đề
 fonts-and-colors-header = Phông & Màu sắc
 preferences-web-appearance-header = Diện mạo trang web
-preferences-web-appearance-description = Một số trang web điều chỉnh bảng màu của họ dựa trên sở thích của bạn. Chọn bảng màu mà bạn muốn sử dụng cho các trang web đó.
+preferences-web-appearance-description = Một số trang web điều chỉnh bảng màu của họ dựa trên tùy chỉnh của bạn. Chọn bảng màu mà bạn muốn sử dụng cho các trang web đó.
 preferences-web-appearance-choice-browser = Chủ đề { -brand-short-name }
 preferences-web-appearance-choice-system = Chủ đề hệ thống
 preferences-web-appearance-choice-light = Sáng
@@ -368,6 +368,13 @@ applications-use-os-default-label =
 
 ##
 
+applications-handle-new-file-types-description = { -brand-short-name } nên làm gì với các tập tin khác?
+applications-save-for-new-types =
+    .label = Lưu tập tin
+    .accesskey = S
+applications-ask-before-handling =
+    .label = Hỏi xem có nên mở hay lưu tập tin hay không
+    .accesskey = A
 drm-content-header = Nội dung quản lý bản quyền kỹ thuật số (DRM)
 play-drm-content =
     .label = Phát nội dung DRM được kiểm soát

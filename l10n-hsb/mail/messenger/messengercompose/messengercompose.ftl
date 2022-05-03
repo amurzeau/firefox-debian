@@ -34,6 +34,13 @@ pill-tooltip-not-in-address-book = { $email } we wašim adresniku njeje
 pill-action-edit =
     .label = Adresu wobdźěłać
     .accesskey = A
+#   $type (String) - the type of the addressing row, e.g. Cc, Bcc, etc.
+pill-action-select-all-sibling-pills =
+    .label = Wšě adresy w { $type } wubrać
+    .accesskey = a
+pill-action-select-all-pills =
+    .label = Wšě adresy wubrać
+    .accesskey = b
 pill-action-move-to =
     .label = Do Komu přesunyć
     .accesskey = K
@@ -78,21 +85,13 @@ context-menuitem-attach-files =
     .label = Dataje připowěsnyć…
     .accesskey = D
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
-#   $count (Number) - the number of attachments in the attachment bucket
-attachment-bucket-count =
-    .value =
-        { $count ->
-            [1] { $count } přidatk
-            [one] { $count } přidatk
-            [two] { $count } přidatkaj
-            [few] { $count } přidatki
-           *[other] { $count } přidatkow
-        }
-    .accesskey = d
-expand-attachment-pane-tooltip =
-    .tooltiptext = Wobłuk přiwěškow pokazać ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Wobłuk přiwěškow schować ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+# Note: Do not translate the term 'vCard'.
+context-menuitem-attach-vcard =
+    .label = Moja wizitka vCard
+    .accesskey = v
+context-menuitem-attach-openpgp-key =
+    .label = Mój zjawny kluč OpenPGP
+    .accesskey = l
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count-value =
     { $count ->
@@ -102,6 +101,10 @@ attachment-bucket-count-value =
         [few] { $count } přiwěški
        *[other] { $count } přiwěškow
     }
+expand-attachment-pane-tooltip =
+    .tooltiptext = Wobłuk přiwěškow pokazać ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
+collapse-attachment-pane-tooltip =
+    .tooltiptext = Wobłuk přiwěškow schować ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Wobłuk přiwěškow pokazać ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -141,6 +144,54 @@ message-to-be-signed-icon =
     .alt = Powěsć signować
 message-to-be-encrypted-icon =
     .alt = Powěsć zaklučować
+encryption-menu =
+    .label = Wěstota
+    .accesskey = W
+encryption-toggle =
+    .label = Zaklučować
+    .tooltiptext = Zaklučowanje kónc do kónca za tutu powěsć wužiwać
+encryption-options-openpgp =
+    .label = OpenPGP
+    .tooltiptext = Nastajenja za zaklučowanje OpenPGP pokazać abo změnić
+encryption-options-smime =
+    .label = S/MIME
+    .tooltiptext = Nastajenja za zaklučowanje S/MIME pokazać abo změnić
+menu-openpgp =
+    .label = OpenPGP
+    .accesskey = O
+menu-smime =
+    .label = S/MIME
+    .accesskey = S
+menu-encrypt =
+    .label = Zaklučować
+    .accesskey = Z
+menu-encrypt-subject =
+    .label = Temu zaklučować
+    .accesskey = T
+menu-sign =
+    .label = Digitalnje signěrować
+    .accesskey = i
+menu-manage-keys =
+    .label = Klučowy asistent
+    .accesskey = K
+menu-view-certificates =
+    .label = Certifikaty přijimarjow pokazać
+    .accesskey = C
+menu-open-key-manager =
+    .label = Zrjadowak klučow
+    .accesskey = Z
+openpgp-key-issue-notification-one = Zaklučowanje kónc do kónca sej rozrisanje klučowych problemow za { $addr } wužaduje
+openpgp-key-issue-notification-many = Zaklučowanje kónc do kónca sej rozrisanje klučowych problemow za někotrych přijimarjow wužaduje ({ $count })
+smime-cert-issue-notification-one = Zaklučowanje kónc do kónca sej rozrisanje certifikatowych problemow za { $addr } wužaduje
+smime-cert-issue-notification-many = Zaklučowanje kónc do kónca sej rozrisanje certifikatowych problemow za někotrych přijimarjow wužaduje ({ $count })
+key-notification-disable-encryption =
+    .label = Njezaklučować
+    .accesskey = N
+    .tooltiptext = Zaklučowanje kónc do kónca znjemóžnić
+key-notification-resolve =
+    .label = Rozeznawać…
+    .accesskey = R
+    .tooltiptext = Klučowy asistent OpenPGP wočinić
 
 ## Addressing Area
 
