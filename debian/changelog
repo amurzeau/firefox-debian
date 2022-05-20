@@ -1,3 +1,10 @@
+firefox (100.0.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2022-19, also known as CVE-2022-1802 and CVE-2022-1529.
+
+ -- Mike Hommey <glandium@debian.org>  Sat, 21 May 2022 07:32:04 +0900
+
 firefox (100.0-1) unstable; urgency=medium
 
   * New upstream release.
