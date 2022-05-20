@@ -1,6 +1,78 @@
 {
   "data": [
     {
+      "schema": 1652801130545,
+      "derHash": "+C+LUJZ8ClLp2Bt5qQ/+uOUVt4FKXl3i8msPavb+dTE=",
+      "subject": "CN=AlpiroSSL ECC EV CA,O=Alpiro s.r.o.,C=CZ",
+      "subjectDN": "MEMxCzAJBgNVBAYTAkNaMRYwFAYDVQQKEw1BbHBpcm8gcy5yLm8uMRwwGgYDVQQDExNBbHBpcm9TU0wgRUNDIEVWIENB",
+      "whitelist": false,
+      "attachment": {
+        "hash": "bf09308f3a01e9ddf3ae677edf6cd8e3a11e9e3c0c419fe2bfaa997e33c16acf",
+        "size": 1293,
+        "filename": "GnXFLd5ceheMJdGnZvJlKLtfXp4UjCGVFGe713NdmTc=.pem",
+        "location": "security-state-staging/intermediates/d7c0e80f-aa6c-44df-b808-6229806536ea.pem",
+        "mimetype": "application/x-pem-file"
+      },
+      "pubKeyHash": "GnXFLd5ceheMJdGnZvJlKLtfXp4UjCGVFGe713NdmTc=",
+      "crlite_enrolled": false,
+      "id": "82d0865f-c1b7-488f-b20d-26edea9b53e9",
+      "last_modified": 1652846250748
+    },
+    {
+      "schema": 1652723070188,
+      "derHash": "2n5XePYvh2Vbj9JKieZR5XMp3JwHZacRWM5WRDykTpU=",
+      "subject": "CN=DigiCert Extended Validation CA-3 G3,OU=www.digicert.com,O=DigiCert\\, Inc.,C=US",
+      "subjectDN": "MHAxCzAJBgNVBAYTAlVTMRcwFQYDVQQKEw5EaWdpQ2VydCwgSW5jLjEZMBcGA1UECxMQd3d3LmRpZ2ljZXJ0LmNvbTEtMCsGA1UEAxMkRGlnaUNlcnQgRXh0ZW5kZWQgVmFsaWRhdGlvbiBDQS0zIEcz",
+      "whitelist": false,
+      "attachment": {
+        "hash": "6844a48cc10ea1a880af9e0aea02a3fc4be2786b3ce299bd1644cd2fc49c1f64",
+        "size": 1187,
+        "filename": "epA52XxQ9Mrum63GbS8dL1dkTIzeOueiCw6jHr7t_u8=.pem",
+        "location": "security-state-staging/intermediates/5d0c77a4-ad61-4b2d-9500-0ed1ce697602.pem",
+        "mimetype": "application/x-pem-file"
+      },
+      "pubKeyHash": "epA52XxQ9Mrum63GbS8dL1dkTIzeOueiCw6jHr7t/u8=",
+      "crlite_enrolled": false,
+      "id": "9bd31525-cabf-4b0e-acc5-1952d08e7761",
+      "last_modified": 1652759882916
+    },
+    {
+      "schema": 1652389030686,
+      "derHash": "ayP62JAYDDN7hkFV2uDem62e8L2njREvLL3D0CrReVY=",
+      "subject": "CN=NetLock Üzleti (Class B) Tanúsítványkiadó,OU=Tanúsítványkiadók (Certification Services),O=NetLock Kft.,L=Budapest,C=HU",
+      "subjectDN": "MIGpMQswCQYDVQQGEwJIVTERMA8GA1UEBwwIQnVkYXBlc3QxFTATBgNVBAoMDE5ldExvY2sgS2Z0LjE3MDUGA1UECwwuVGFuw7pzw610dsOhbnlraWFkw7NrIChDZXJ0aWZpY2F0aW9uIFNlcnZpY2VzKTE3MDUGA1UEAwwuTmV0TG9jayDDnHpsZXRpIChDbGFzcyBCKSBUYW7DunPDrXR2w6FueWtpYWTDsw==",
+      "whitelist": false,
+      "attachment": {
+        "hash": "573f7ca4199a4ab7b67cf4b5b1c8e25a89da7c93d3296ece5e8301e5bf64c39b",
+        "size": 2182,
+        "filename": "1YROuDznuNvrat3sL9gwGR124PRLocGQQWd6IoM50Ls=.pem",
+        "location": "security-state-staging/intermediates/5ae11eb3-59e2-4f2f-a3ad-09d610869295.pem",
+        "mimetype": "application/x-pem-file"
+      },
+      "pubKeyHash": "1YROuDznuNvrat3sL9gwGR124PRLocGQQWd6IoM50Ls=",
+      "crlite_enrolled": false,
+      "id": "1a8145a6-66a3-4c40-914b-e027086ea091",
+      "last_modified": 1652540239008
+    },
+    {
+      "schema": 1652539714356,
+      "derHash": "NyuPTOc77fyIcYxAe7az5tj5p5vpVxkNDnEBx7DvmjI=",
+      "subject": "CN=NetLock Expressz (Class C) Tanúsítványkiadó,OU=Tanúsítványkiadók (Certification Services),O=NetLock Kft.,L=Budapest,C=HU",
+      "subjectDN": "MIGqMQswCQYDVQQGEwJIVTERMA8GA1UEBwwIQnVkYXBlc3QxFTATBgNVBAoMDE5ldExvY2sgS2Z0LjE3MDUGA1UECwwuVGFuw7pzw610dsOhbnlraWFkw7NrIChDZXJ0aWZpY2F0aW9uIFNlcnZpY2VzKTE4MDYGA1UEAwwvTmV0TG9jayBFeHByZXNzeiAoQ2xhc3MgQykgVGFuw7pzw610dsOhbnlraWFkw7M=",
+      "whitelist": false,
+      "attachment": {
+        "hash": "96ba448b3b21c633bd5e293f4383a8b88b67e802476a48d48ba20ffa8359a5ce",
+        "size": 2182,
+        "filename": "KS2adY6eMaWNhbLW6JREO3Oo34Qy_UvmA5f-f4ROpYw=.pem",
+        "location": "security-state-staging/intermediates/6380c544-10af-435b-ae2d-adad842694a3.pem",
+        "mimetype": "application/x-pem-file"
+      },
+      "pubKeyHash": "KS2adY6eMaWNhbLW6JREO3Oo34Qy/UvmA5f+f4ROpYw=",
+      "crlite_enrolled": false,
+      "id": "522256d0-e9e9-44e9-b35d-221ddf453cad",
+      "last_modified": 1652540238996
+    },
+    {
       "schema": 1652367450587,
       "derHash": "lzpBJ2/9AeAnoqrUnjTDeEbT6Xb/amILZxLjODIEGqY=",
       "subject": "CN=Go Daddy Secure Certificate Authority - G2,OU=http://certs.godaddy.com/repository/,O=GoDaddy.com\\, Inc.,L=Scottsdale,ST=Arizona,C=US",
@@ -6211,24 +6283,6 @@
       "last_modified": 1645579197062
     },
     {
-      "schema": 1645578813195,
-      "derHash": "+C+LUJZ8ClLp2Bt5qQ/+uOUVt4FKXl3i8msPavb+dTE=",
-      "subject": "CN=AlpiroSSL ECC EV CA,O=Alpiro s.r.o.,C=CZ",
-      "subjectDN": "MEMxCzAJBgNVBAYTAkNaMRYwFAYDVQQKEw1BbHBpcm8gcy5yLm8uMRwwGgYDVQQDExNBbHBpcm9TU0wgRUNDIEVWIENB",
-      "whitelist": false,
-      "attachment": {
-        "hash": "bf09308f3a01e9ddf3ae677edf6cd8e3a11e9e3c0c419fe2bfaa997e33c16acf",
-        "size": 1293,
-        "filename": "GnXFLd5ceheMJdGnZvJlKLtfXp4UjCGVFGe713NdmTc=.pem",
-        "location": "security-state-staging/intermediates/d7c0e80f-aa6c-44df-b808-6229806536ea.pem",
-        "mimetype": "application/x-pem-file"
-      },
-      "pubKeyHash": "GnXFLd5ceheMJdGnZvJlKLtfXp4UjCGVFGe713NdmTc=",
-      "crlite_enrolled": true,
-      "id": "82d0865f-c1b7-488f-b20d-26edea9b53e9",
-      "last_modified": 1645579197048
-    },
-    {
       "schema": 1645578793279,
       "derHash": "iExR1kO+ESbnLzsbcji6V+AmjB1sSiKs3WJJwXWKU7Y=",
       "subject": "CN=International Hellenic University CA R1,O=Hellenic Academic and Research Institutions Cert. Authority,C=GR",
@@ -9685,24 +9739,6 @@
       "last_modified": 1643540241408
     },
     {
-      "schema": 1643539739222,
-      "derHash": "2n5XePYvh2Vbj9JKieZR5XMp3JwHZacRWM5WRDykTpU=",
-      "subject": "CN=DigiCert Extended Validation CA-3 G3,OU=www.digicert.com,O=DigiCert\\, Inc.,C=US",
-      "subjectDN": "MHAxCzAJBgNVBAYTAlVTMRcwFQYDVQQKEw5EaWdpQ2VydCwgSW5jLjEZMBcGA1UECxMQd3d3LmRpZ2ljZXJ0LmNvbTEtMCsGA1UEAxMkRGlnaUNlcnQgRXh0ZW5kZWQgVmFsaWRhdGlvbiBDQS0zIEcz",
-      "whitelist": false,
-      "attachment": {
-        "hash": "6844a48cc10ea1a880af9e0aea02a3fc4be2786b3ce299bd1644cd2fc49c1f64",
-        "size": 1187,
-        "filename": "epA52XxQ9Mrum63GbS8dL1dkTIzeOueiCw6jHr7t_u8=.pem",
-        "location": "security-state-staging/intermediates/5d0c77a4-ad61-4b2d-9500-0ed1ce697602.pem",
-        "mimetype": "application/x-pem-file"
-      },
-      "pubKeyHash": "epA52XxQ9Mrum63GbS8dL1dkTIzeOueiCw6jHr7t/u8=",
-      "crlite_enrolled": true,
-      "id": "9bd31525-cabf-4b0e-acc5-1952d08e7761",
-      "last_modified": 1643540241387
-    },
-    {
       "schema": 1643539727648,
       "derHash": "/yAcoSyHpvDLpkPpq7PJVMkVWt0xObLi6u0RS/n3XTE=",
       "subject": "CN=COMODO RSA Domain Validation Secure Server CA 2,O=COMODO CA Limited,L=Salford,ST=Greater Manchester,C=GB",
@@ -12979,24 +13015,6 @@
       "last_modified": 1636577884550
     },
     {
-      "schema": 1636555800810,
-      "derHash": "NyuPTOc77fyIcYxAe7az5tj5p5vpVxkNDnEBx7DvmjI=",
-      "subject": "CN=NetLock Expressz (Class C) Tanúsítványkiadó,OU=Tanúsítványkiadók (Certification Services),O=NetLock Kft.,L=Budapest,C=HU",
-      "subjectDN": "MIGqMQswCQYDVQQGEwJIVTERMA8GA1UEBwwIQnVkYXBlc3QxFTATBgNVBAoMDE5ldExvY2sgS2Z0LjE3MDUGA1UECwwuVGFuw7pzw610dsOhbnlraWFkw7NrIChDZXJ0aWZpY2F0aW9uIFNlcnZpY2VzKTE4MDYGA1UEAwwvTmV0TG9jayBFeHByZXNzeiAoQ2xhc3MgQykgVGFuw7pzw610dsOhbnlraWFkw7M=",
-      "whitelist": false,
-      "attachment": {
-        "hash": "96ba448b3b21c633bd5e293f4383a8b88b67e802476a48d48ba20ffa8359a5ce",
-        "size": 2182,
-        "filename": "KS2adY6eMaWNhbLW6JREO3Oo34Qy_UvmA5f-f4ROpYw=.pem",
-        "location": "security-state-staging/intermediates/6380c544-10af-435b-ae2d-adad842694a3.pem",
-        "mimetype": "application/x-pem-file"
-      },
-      "pubKeyHash": "KS2adY6eMaWNhbLW6JREO3Oo34Qy/UvmA5f+f4ROpYw=",
-      "crlite_enrolled": true,
-      "id": "522256d0-e9e9-44e9-b35d-221ddf453cad",
-      "last_modified": 1636556282888
-    },
-    {
       "schema": 1636555799842,
       "derHash": "YoSgO6+uhhow46JaAwQoMG9+tSvQuld6HZYqgJqDDJ4=",
       "subject": "CN=NetLock Minősített Eat. (Class Q Legal) Tanúsítványkiadó,OU=Tanúsítványkiadók (Certification Services),O=NetLock Kft.,L=Budapest,C=HU",
@@ -13013,24 +13031,6 @@
       "crlite_enrolled": true,
       "id": "73e86e8a-47ad-4f60-be1d-64ed2011a0bb",
       "last_modified": 1636556282862
-    },
-    {
-      "schema": 1636555798406,
-      "derHash": "ayP62JAYDDN7hkFV2uDem62e8L2njREvLL3D0CrReVY=",
-      "subject": "CN=NetLock Üzleti (Class B) Tanúsítványkiadó,OU=Tanúsítványkiadók (Certification Services),O=NetLock Kft.,L=Budapest,C=HU",
-      "subjectDN": "MIGpMQswCQYDVQQGEwJIVTERMA8GA1UEBwwIQnVkYXBlc3QxFTATBgNVBAoMDE5ldExvY2sgS2Z0LjE3MDUGA1UECwwuVGFuw7pzw610dsOhbnlraWFkw7NrIChDZXJ0aWZpY2F0aW9uIFNlcnZpY2VzKTE3MDUGA1UEAwwuTmV0TG9jayDDnHpsZXRpIChDbGFzcyBCKSBUYW7DunPDrXR2w6FueWtpYWTDsw==",
-      "whitelist": false,
-      "attachment": {
-        "hash": "573f7ca4199a4ab7b67cf4b5b1c8e25a89da7c93d3296ece5e8301e5bf64c39b",
-        "size": 2182,
-        "filename": "1YROuDznuNvrat3sL9gwGR124PRLocGQQWd6IoM50Ls=.pem",
-        "location": "security-state-staging/intermediates/5ae11eb3-59e2-4f2f-a3ad-09d610869295.pem",
-        "mimetype": "application/x-pem-file"
-      },
-      "pubKeyHash": "1YROuDznuNvrat3sL9gwGR124PRLocGQQWd6IoM50Ls=",
-      "crlite_enrolled": true,
-      "id": "1a8145a6-66a3-4c40-914b-e027086ea091",
-      "last_modified": 1636556282833
     },
     {
       "schema": 1635735519825,
