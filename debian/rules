@@ -12,6 +12,7 @@ $(call lazy,LDFLAGS,$$(call dpkg_buildflags,LDFLAGS))
 $(call lazy,DEB_HOST_GNU_TYPE,$$(shell dpkg-architecture -qDEB_HOST_GNU_TYPE))
 $(call lazy,DEB_BUILD_GNU_TYPE,$$(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE))
 $(call lazy,DEB_BUILD_ARCH_BITS,$$(shell dpkg-architecture -qDEB_BUILD_ARCH_BITS))
+$(call lazy,DEB_BUILD_ARCH,$$(shell dpkg-architecture -qDEB_BUILD_ARCH))
 $(call lazy,DEB_HOST_ARCH,$$(shell dpkg-architecture -qDEB_HOST_ARCH))
 
 PYTHON := python3 -B
@@ -232,6 +233,10 @@ stamps/configure-check-$(PRODUCT):: stamps/configure-$(PRODUCT)
 	END { if (error) { exit 1 }}' debian/$($(PRODUCT)).mozconfig
 
 stamps/configure-$(PRODUCT):: stamps/prepare-configure debian/$($(PRODUCT)).mozconfig
+ifeq (armhf,$(DEB_BUILD_ARCH))
+	# There is not enough memory in armhf userspace with a 32-bits kernel.
+	$(error Unfortunately cannot build on armhf. Try a 64-bits kernel)
+endif
 	$(if $(wildcard build-$(PRODUCT)),,mkdir build-$(PRODUCT))
 	cd build-$(PRODUCT) && \
 	MOZCONFIG=$(CURDIR)/debian/$($(PRODUCT)).mozconfig \
