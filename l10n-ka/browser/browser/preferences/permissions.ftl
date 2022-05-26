@@ -130,7 +130,7 @@ permissions-site-notification-disable-desc = შედეგად, ყველ
 ## Site Permissions - Location
 
 permissions-site-location-window =
-    .title = პარამეტრები – მდებარეობაზე წვდომის ნებართვები
+    .title = პარამეტრები – მდებარეობასთან წვდომის ნებართვები
     .style = { permissions-window.style }
 permissions-site-location-desc = მოცემული ვებსაიტები ითხოვს თქვენი მდებარეობის მონაცემებთან წვდომის ნებართვას. შეგიძლიათ მიუთითოთ, ნებადართული საიტები. ამასთან, შეგიძლიათ საერთოდ შეზღუდოთ, მდებარეობის მონაცემებთან წვდომის ახალი მოთხოვნები.
 permissions-site-location-disable-label =

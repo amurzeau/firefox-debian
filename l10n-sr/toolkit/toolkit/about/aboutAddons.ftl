@@ -191,7 +191,6 @@ extensions-warning-update-security = Безбедносна провера до�
 extensions-warning-update-security-button = Омогући
     .title = Омогући проверавање безбедности додатка
 
-
 ## Strings connected to add-on updates
 
 addon-updates-check-for-updates = Провери доступност ажурирања
@@ -405,7 +404,6 @@ addon-detail-private-browsing-disallow = Блокирај
 addon-badge-recommended2 =
     .title = { -brand-product-name } препоручује само додатке који задовољавају наше стандарде безбедности и перформанси
     .aria-label = { addon-badge-recommended2.title }
-
 # We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
@@ -424,7 +422,6 @@ release-notes-loading = Учитава се...
 release-notes-error = Нажалост, дошло је до грешке при учитавању напомена о издању.
 
 addon-permissions-empty = Овај додатак не захтева никакве дозволе
-
 addon-permissions-required = Потребне дозволе за основну функционалност:
 addon-permissions-optional = Додатне дозволе за додатну функционалност:
 addon-permissions-learnmore = Сазнајте више о дозволама
@@ -453,3 +450,25 @@ addons-heading-search-input =
 
 addon-page-options-button =
     .title = Алатке за све додатке
+
+## Detail notifications
+## Variables:
+##   $name (String): name of the add-on.
+
+# Variables:
+#   $version (String): application version.
+details-notification-incompatible = { $name } није сагласан са { -brand-short-name } { $version }.
+
+details-notification-unsigned-and-disabled = { $name } није могао бити потврђен за коришћење у { -brand-short-name }-у и онемогућен је.
+details-notification-unsigned-and-disabled-link = Више информација
+
+details-notification-unsigned = { $name } није могао бити потврђен за коришћење у { -brand-short-name }-у. Наставите са опрезом.
+details-notification-unsigned-link = Више информација
+
+details-notification-blocked = { $name } је онемогућен због проблема са безбедношћу или стабилношћу.
+details-notification-blocked-link = Више информација
+
+details-notification-softblocked = Познато је да { $name } проузрокује проблеме са безбедношћу или стабилношћу.
+details-notification-softblocked-link = Више информација
+
+details-notification-gmp-pending = { $name } ће ускоро бити инсталиран.

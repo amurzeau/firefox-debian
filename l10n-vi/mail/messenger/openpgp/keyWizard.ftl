@@ -102,6 +102,8 @@ openpgp-keygen-ongoing = Đã ở trong quá trình tạo khóa!
 
 openpgp-keygen-error-core = Không thể khởi tạo OpenPGP Core Service
 
+openpgp-keygen-error-failed = Trình tạo khóa OpenPGP đột ngột không thành công
+
 #   $identity (String) - the newly generate OpenPGP Key
 openpgp-keygen-error-revocation = Đã tạo thành công khóa OpenPGP nhưng không thể thu hồi khóa { $key }
 
@@ -122,9 +124,9 @@ openpgp-import-key-description = Bạn có thể nhập các khóa cá nhân đ�
 openpgp-import-key-info = Phần mềm khác có thể mô tả khóa cá nhân bằng các thuật ngữ thay thế như khóa riêng, khóa bí mật, khóa cá nhân hoặc cặp khóa.
 
 #   $count (Number) - the number of keys found in the selected files
-openpgp-import-key-list-amount =
+openpgp-import-key-list-amount-2 =
     { $count ->
-       *[other] Thunderbird đã tìm thấy { $count } khóa có thể nhập được.
+       *[other] { -brand-short-name } đã tìm thấy { $count } khóa có thể nhập.
     }
 
 openpgp-import-key-list-description = Xác nhận khóa nào có thể được coi là khóa cá nhân của bạn. Chỉ những khóa do bạn tự tạo và thể hiện danh tính của riêng bạn mới được sử dụng làm khóa cá nhân. Bạn có thể thay đổi tùy chọn này sau trong hộp thoại Thuộc tính khóa.

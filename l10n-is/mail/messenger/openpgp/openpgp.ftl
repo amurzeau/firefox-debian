@@ -181,6 +181,11 @@ openpgp-key-man-reload =
 openpgp-key-man-change-expiry =
     .label = Breyta fyrningardagsetningu
     .accesskey = e
+openpgp-key-man-refresh-online =
+    .label = Endurnýja á netinu
+    .accesskey = r
+openpgp-key-man-ignored-ids =
+    .label = Tölvupóstföng
 openpgp-key-man-del-key =
     .label = Eyða lyklum
     .accesskey = y
@@ -226,8 +231,10 @@ openpgp-key-man-select-all-key =
     .key = A
 openpgp-key-man-key-details-key =
     .key = I
+openpgp-ign-addr-intro = Þú samþykkir að nota þennan lykil fyrir eftirfarandi valin tölvupóstföng:
 openpgp-key-details-title =
     .title = Eiginleikar lykils
+openpgp-key-details-doc-title = Eiginleikar lykils
 openpgp-key-details-signatures-tab =
     .label = Vottanir
 openpgp-key-details-structure-tab =
@@ -236,11 +243,19 @@ openpgp-key-details-uid-certified-col =
     .label = Notandaauðkenni / Vottað af
 openpgp-key-details-key-id-label = Auðkenni lykils
 openpgp-key-details-user-id2-label = Meintur lykileigandi
+openpgp-key-details-user-id3-label = Meintur eigandi lykils
 openpgp-key-details-id-label =
     .label = Auðkenni
 openpgp-key-details-key-type-label = Tegund
 openpgp-key-details-key-part-label =
     .label = Lykilhluti
+openpgp-key-details-attr-ignored = Aðvörun: Þessi lykill gæti mögulega ekki virkað eins og búist má við, vegna þess að sumir eiginleikar hans eru óöruggir og gætu verið hunsaðir.
+openpgp-key-details-attr-upgrade-sec = Þú ættir að uppfæra óöruggu eiginleikana.
+openpgp-key-details-attr-upgrade-pub = Þú ættir að biðja eiganda þessa lykils að uppfæra óöruggu eiginleikana.
+openpgp-key-details-upgrade-unsafe =
+    .label = Uppfæra óörugga eiginleika
+    .accesskey = p
+openpgp-key-details-upgrade-ok = Það tókst að uppfæra lykillinn. Þú ættir að deila uppfærða opinbera dreifilyklinum með þeim sem þú átt í samskiptum við.
 openpgp-key-details-algorithm-label =
     .label = Reiknirit
 openpgp-key-details-size-label =
@@ -258,7 +273,6 @@ openpgp-key-details-legend-secret-missing = Fyrir lykla merkta með (!) er leyni
 openpgp-key-details-sel-action =
     .label = Veldu aðgerð...
     .accesskey = V
-openpgp-key-details-also-known-label = Meint önnur auðkenni lykileiganda:
 openpgp-card-details-close-window-label =
     .buttonlabelaccept = Loka
 openpgp-acceptance-label =
@@ -274,7 +288,6 @@ openpgp-acceptance-verified-label =
 key-accept-personal =
     Fyrir þennan lykil hefurðu bæði opinbera og leynilega hlutann. Þú getur notað hann sem persónulegan lykil.
     Ef þú fékkst þennan lykil frá einhverjum öðrum, þá skaltu ekki nota hann sem persónulegan lykil.
-key-personal-warning = Útbjóstu þennan lykil sjálfur og er birtur eigandi lykilsins að vísa til sjálfs þíns?
 openpgp-personal-no-label =
     .label = Nei, ekki nota hann sem minn persónulega lykil.
 openpgp-personal-yes-label =
@@ -284,13 +297,14 @@ openpgp-copy-cmd-label =
 
 ## e2e encryption settings
 
+#   $identity (String) - the email address of the currently selected identity
+openpgp-description-no-key = { -brand-short-name } er ekki með persónulegan OpenPGP-lykil fyrir <b>{ $identity }</b>
 #   $count (Number) - the number of configured keys associated with the current identity
 #   $identity (String) - the email address of the currently selected identity
-openpgp-description =
+openpgp-description-has-keys =
     { $count ->
-        [0] Thunderbird er ekki með neinn persónulegan OpenPGP-lykil fyrir <b>{ $identity }</b>
-        [one] Thunderbird fann { $count } persónulegan OpenPGP-lykil tengdann <b>{ $identity }</b>
-       *[other] Thunderbird fann { $count } persónulega OpenPGP-lykla tengda <b>{ $identity }</b>
+        [one] { -brand-short-name } fann { $count } persónulegan OpenPGP-lykil tengdan <b>{ $identity }</b>
+       *[other] { -brand-short-name } fann { $count } persónulega OpenPGP-lykla tengda <b>{ $identity }</b>
     }
 #   $key (String) - the currently selected OpenPGP key
 openpgp-selection-status-have-key = Núverandi uppsetning þín notar lykil með auðkennið <b>{ $key }</b>
@@ -348,14 +362,11 @@ key-expired-date = Lykillinn rann út { $keyExpiry }
 key-expired-simple = Lykillinn er útrunninn
 key-revoked-simple = Lykillinn var afturkallaður
 key-do-you-accept = Samþykkir þú þennan lykil til að staðfesta stafrænar undirritanir og til að dulrita skilaboð?
-key-accept-warning = Forðastu að samþykkja hvaða lykil sem er. Notaðu aðra samskiptamáta en tölvupóst til að staðfesta fingrafar lykils viðmælanda þíns.
 key-verification = Staðfestu fingrafar lykilsins með því að nota örugga samskiptaleið aðra en tölvupóst til að ganga úr skugga um að þetta sé raunverulega dulritunarlykill frá { $addr }.
 # Strings enigmailMsgComposeOverlay.js
 cannot-use-own-key-because = Ekki er hægt að senda skilaboðin vegna þess að það er vandamál með persónulega lykilinn þinn. { $problem }
 cannot-encrypt-because-missing = Ekki er hægt að senda þessi skilaboð með enda-í-enda dulritun vegna þess að vandamál eru með dulritunarlykla eftirfarandi viðtakenda: { $problem }
 window-locked = Skrifgluggi er læstur; hætt við sendingu
-# Strings in mimeDecrypt.jsm
-mime-decrypt-encrypted-part-attachment-label = Dulritaður hluti skilaboða
 # Strings in mimeDecrypt.jsm
 mime-decrypt-encrypted-part-concealed-data = Þetta er dulritaður hluti skilaboða. Þú þarft að opna það í sérstökum glugga með því að smella á viðhengið.
 # Strings in keyserver.jsm
@@ -379,25 +390,6 @@ converter-decrypt-body-failed =
     Ekki tókst að afkóða skilaboð með viðfangsefnið
     { $subject }.
     Viltu reyna aftur með öðru aðgangsorði eða vilt þú sleppa skilaboðunum?
-# Strings in gpg.jsm
-unknown-signing-alg = Óþekkt undirritunarreiknirit (auðkenni: { $id })
-unknown-hash-alg = Óþekkt tætigildi dulkóðunar (auðkenni: { $id })
-# Strings in keyUsability.jsm
-expiry-key-expires-soon =
-    Lykillinn þinn { $desc } rennur út eftir minna en { $days } daga.
-    Við mælum með að þú útbúir nýtt lyklapar og stillir samsvarandi reikninga til að nota það.
-expiry-keys-expire-soon =
-    Eftirfarandi lyklar munu renna út eftir minna en { $days } daga:{ $desc }.
-    Við mælum með að þú búir til nýja lykla og stillir samsvarandi reikninga til að nota þá.
-expiry-key-missing-owner-trust =
-    Leynilykillinn þinn { $desc } vantar traust.
-    Við mælum með að þú stillir vottun lykilsins á „fullkominn“ í eiginleikum lykils.
-expiry-keys-missing-owner-trust =
-    Eftirfarandi leynilega einkalykla vantar traust.
-    { $desc }.
-    Við mælum með að þú stillir vottun lyklanna á „fullkominn“ í eiginleikum hvers lykils.
-expiry-open-key-manager = Opna OpenPGP lyklastýringu
-expiry-open-key-properties = Opna eiginleika lykils
 # Strings filters.jsm
 filter-folder-required = Þú verður að velja úttaksmöppu.
 filter-decrypt-move-warn-experimental =
@@ -515,6 +507,9 @@ key-error-not-accepted-as-personal = Þú hefur ekki staðfest að lykillinn me�
 need-online = Aðgerðin sem þú hefur valið er ekki tiltæk án nettengingar. Tengstu við internetið og reyndu aftur.
 # Strings used in keyRing.jsm & keyLookupHelper.jsm
 no-key-found = Við fundum engan lykil sem samsvaraði uppgefnum leitarskilyrðum.
+# Strings used in keyRing.jsm & keyLookupHelper.jsm
+no-key-found2 = Við fundum engan nothæfan lykil sem samsvaraði uppgefnum leitarskilyrðum.
+no-update-found = Þú ert nú þegar með lyklana sem fundust á netinu.
 # Strings used in keyRing.jsm & GnuPGCryptoAPI.jsm
 fail-key-extract = Villa - Skipun um útdrátt lykils mistókst
 # Strings used in keyRing.jsm
@@ -600,18 +595,9 @@ send-to-news-warning =
     Þetta er óhugsandi vegna þess að slíkt er aðeins skynsamlegt ef allir meðlimir hópsins geta afkóðað skilaboðin, þ.e. skilaboðin þurfa að vera dulrituð með lyklum allra þátttakenda hópsins. Sendu þessi skilaboð aðeins ef þú veist nákvæmlega hvað þú ert að gera.
     Halda áfram?
 save-attachment-header = Vista afkóðað viðhengi
-no-temp-dir =
-    Gat ekki fundið bráðabirgðamöppu til að skrifa í
-    Stilltu TEMP-umhverfisbreytuna
 possibly-pgp-mime = Mögulega PGP/MIME dulrituð eða undirrituð skilaboð; notaðu 'Afkóða/Staðfesta' aðgerð til að staðfesta
 cannot-send-sig-because-no-own-key = Ekki er hægt að undirrita stafrænt þessi skilaboð þar sem þú hefur ekki enn stillt enda-í-enda dulritun fyrir <{ $key }>
 cannot-send-enc-because-no-own-key = Ekki er hægt að senda þessi skilaboð dulrituð þar sem þú hefur ekki enn stillt enda-í-enda dulritun fyrir <{ $key }>
-compose-menu-attach-key =
-    .label = Hengja við opinbera dreifilykilinn minn
-    .accesskey = a
-compose-menu-encrypt-subject =
-    .label = Dulritun efnislínu
-    .accesskey = D
 # Strings used in decryption.jsm
 do-import-multiple =
     Flytja inn eftirfarandi lykla?

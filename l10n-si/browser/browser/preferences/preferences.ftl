@@ -51,22 +51,6 @@ restart-later = පසුව යළි අරඹන්න
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their notifications permission
-# is being controlled by an extension.
-extension-controlled-web-notifications = <img data-l10n-name="icon"/>{ $name }, නමැති දිගුව මෙම සැකසුම පාලනය කරයි.
-
-# This string is shown to notify the user that Container Tabs
-# are being enabled by an extension.
-extension-controlled-privacy-containers = <img data-l10n-name="icon"/>{ $name }, නමැති දිගුව සඳහා, බහාළුම් ටැබ අවශ්‍ය වේ.
-
-# This string is shown to notify the user that their content blocking "All Detected Trackers"
-# preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/>{ $name }, නමැති දිගුව මෙම සැකසුම පාලනය කරයි.
-
-# This string is shown to notify the user that their proxy configuration preferences
-# are being controlled by an extension.
-extension-controlled-proxy-config = <img data-l10n-name="icon"/>{ $name }, නමැති දිගුව { -brand-short-name } අන්තර්ජාලයට සබඳ වන ආකාරය පාලනය කරයි.
-
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -95,10 +79,6 @@ set-as-my-default-browser =
     .label = පෙරනිමිය ලෙස සකසන්න…
     .accesskey = D
 
-startup-restore-previous-session =
-    .label = පෙර සැසිය ප්‍රතිස්ථාපනය කරන්න
-    .accesskey = s
-
 startup-restore-warn-on-quit =
     .label = ගවේශකයෙන් පිටවන විට ඔබට දන්වන්න
 
@@ -114,10 +94,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = නව කවුළු වෙනුවට සබැඳි නව ටැබ තුළ පෙන්වන්න
     .accesskey = w
-
-warn-on-close-multiple-tabs =
-    .label = ටැබ් කිහිපයක් වසා දැමීමේදී ඔබට අනතුරු අගවයි
-    .accesskey = m
 
 warn-on-open-many-tabs =
     .label = බහු ටැබ විවෘත කිරීමේදී { -brand-short-name } මන්දගාමීවීමේ හැකියාවක් ඇති බවට ඔබට අනතුරු අඟවයි;
@@ -135,12 +111,9 @@ browser-containers-settings =
 
 containers-disable-alert-cancel-button = සක්‍රියව තබන්න
 
-
 ## General Section - Language & Appearance
 
 language-and-appearance-header = භාෂාව සහ පෙනුම
-
-fonts-and-colors-header = අක්‍ෂර සහ වර්ණ
 
 default-font = පෙරනිමි ෆොන්ටය
     .accesskey = D
@@ -150,10 +123,6 @@ default-font-size = විශාලත්වය
 advanced-fonts =
     .label = වැඩිමනත්...
     .accesskey = A
-
-colors-settings =
-    .label = වර්‍ණ...
-    .accesskey = C
 
 language-header = භාෂාව
 
@@ -187,6 +156,9 @@ download-header = බාගැනිම්
 
 download-save-to =
     .label = ගොනු සුරකින්නේ
+    .accesskey = v
+
+download-save-where = ගොනු සුරකින්නේ
     .accesskey = v
 
 download-choose-folder =
@@ -412,9 +384,6 @@ home-prefs-content-description = Firefox මුල් පිටුවෙහි �
 
 home-prefs-search-header =
     .label = ජාල සෙවුම
-home-prefs-topsites-header =
-    .label = ප්‍රමුඛ අඩවි
-home-prefs-topsites-description = ඔබ වැඩිපුරම පිවිසෙන අඩවි
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -430,17 +399,12 @@ home-prefs-recommended-by-learn-more = එය ක්‍රියාත්මක 
 home-prefs-recommended-by-option-sponsored-stories =
     .label = අනුග්‍රාහක කතා
 
-home-prefs-highlights-header =
-    .label = ඉස්මතු කිරීම්
-home-prefs-highlights-description = ඔබ සුරකින ලද හෝ පිවිසි අඩවි තෝරාගැනීමක්
 home-prefs-highlights-option-visited-pages =
     .label = පිවිසුනු පිටු
 home-prefs-highlights-options-bookmarks =
     .label = පිටු සලකුණු
 home-prefs-highlights-option-most-recent-download =
     .label = මෑතකාලීන බාගත
-
-home-prefs-snippets-description = { -vendor-short-name } සහ { -brand-product-name } වෙතින් යාවත්
 
 home-prefs-sections-rows-option =
     .label =
@@ -498,9 +462,6 @@ containers-add-button =
 containers-remove-button =
     .label = ඉවත් කරන්න
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
@@ -515,9 +476,6 @@ sync-signedout-caption = ඔබේ ජාලය ඔබ සමඟ ගෙනයන
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
 sync-mobile-promo = මෙය සඳහා Firefox බාගත කරන්න <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> or <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> ඔබගේ ජංගම උපාංගය සමඟ සමමුහුර්ත කිරීමට.
-
-## Sync Section - Signed in
-
 
 ## Firefox Account - Signed in
 
@@ -587,9 +545,6 @@ sync-device-name-save =
 ## Privacy Section
 
 privacy-header = ගවේශන පුද්ගලිකත්වය
-
-## Privacy Section - Forms
-
 
 ## Privacy Section - Logins and Passwords
 
@@ -700,6 +655,7 @@ enhanced-tracking-protection-setting-custom =
 
 ##
 
+
 ## Privacy Section - Tracking
 
 tracking-manage-exceptions =
@@ -738,10 +694,6 @@ permissions-notification-pause =
 permissions-block-popups =
     .label = පොප්-අප් කවුළු වලකන්න
     .accesskey = B
-
-permissions-block-popups-exceptions =
-    .label = හැරදැමීම්...
-    .accesskey = E
 
 permissions-addon-install-warning =
     .label = වෙබ්අඩවි ඇඩෝන ස්ථාපනයට සැරසෙන විට ඔබට අවවාද කරන්න
@@ -793,6 +745,7 @@ certs-devices =
     .accesskey = D
 
 ## Privacy Section - HTTPS-Only
+
 
 ## The following strings are used in the Download section of settings
 

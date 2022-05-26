@@ -40,15 +40,18 @@ toolbar-context-menu-remove-extension =
 toolbar-context-menu-report-extension =
     .label = Senhalar l’extension
     .accesskey = n
-# Can appear on the same context menu as menubarCmd ("Menu Bar") and
-# personalbarCmd ("Bookmarks Toolbar"), so they should have different
-# access keys.
+# Can appear on the same context menu as toolbar-context-menu-menu-bar-cmd
+# ("Menu Bar") and personalbarCmd ("Bookmarks Toolbar"), so they should
+# have different access keys.
 toolbar-context-menu-pin-to-overflow-menu =
     .label = Penjar al menú de desbordament
     .accesskey = P
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = Rescondre lo boton quand i a pas res
     .accesskey = R
+toolbar-context-menu-always-open-downloads-panel =
+    .label = Afichar lo panèl quand lo telecarga comença
+    .accesskey = A
 toolbar-context-menu-remove-from-toolbar =
     .label = Levar de la barra d'aisinas
     .accesskey = L

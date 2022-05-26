@@ -87,26 +87,6 @@ restart-later = I-restart Mamaya
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that the password manager setting
-# is being controlled by an extension
-extension-controlled-password-saving = May isang extension, <img data-l10n-name="icon"/> { $name }, na nagkokontrol sa setting na ito.
-
-# This string is shown to notify the user that their notifications permission
-# is being controlled by an extension.
-extension-controlled-web-notifications = An extension, <img data-l10n-name="icon"/> { $name }, is controlling this setting.
-
-# This string is shown to notify the user that Container Tabs
-# are being enabled by an extension.
-extension-controlled-privacy-containers = Ang extension, <img data-l10n-name="icon"/> { $name }, ay nangangailangan ng Container Tabs.
-
-# This string is shown to notify the user that their content blocking "All Detected Trackers"
-# preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = An extension, <img data-l10n-name="icon"/> { $name }, is controlling this setting.
-
-# This string is shown to notify the user that their proxy configuration preferences
-# are being controlled by an extension.
-extension-controlled-proxy-config = Ang extension, <img data-l10n-name="icon"/> { $name }, ay nagkokontrol kung pano nagcoconnect ang { -brand-short-name } sa internet.
-
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -138,10 +118,6 @@ set-as-my-default-browser =
     .label = Gawing Default…
     .accesskey = D
 
-startup-restore-previous-session =
-    .label = Ibalik ang Nakaraang Session
-    .accesskey = S
-
 startup-restore-warn-on-quit =
     .label = Balaan ka kapag isinara ang browser
 
@@ -157,10 +133,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Buksan ang mga link sa mga tab sa halip na mga bagong window
     .accesskey = w
-
-warn-on-close-multiple-tabs =
-    .label = Balaan ka kapag magsasara ng maraming tab
-    .accesskey = m
 
 warn-on-open-many-tabs =
     .label = Balaan ka kapag ang pagbukas ng maraming mga tab ay maaaring makapagpabagal sa { -brand-short-name }
@@ -215,8 +187,6 @@ containers-remove-cancel-button = Huwag alisin ang Container na ito
 
 language-and-appearance-header = Wika at Hitsura
 
-fonts-and-colors-header = Mga Font at Kulay
-
 default-font = Default na font
     .accesskey = D
 default-font-size = Laki
@@ -225,10 +195,6 @@ default-font-size = Laki
 advanced-fonts =
     .label = Advanced…
     .accesskey = A
-
-colors-settings =
-    .label = Mga Kulay…
-    .accesskey = M
 
 # Zoom is a noun, and the message is used as header for a group of options
 preferences-zoom-header = Zoom
@@ -287,6 +253,9 @@ download-header = Mga Download
 
 download-save-to =
     .label = i-Save ang mga file sa
+    .accesskey = S
+
+download-save-where = i-Save ang mga file sa
     .accesskey = S
 
 download-choose-folder =
@@ -586,18 +555,12 @@ home-prefs-content-description = Piliin kung anu-ano ang makikita mong nilalaman
 
 home-prefs-search-header =
     .label = Paghahanap sa Web
-home-prefs-topsites-header =
-    .label = Mga Pangunahing Site
-home-prefs-topsites-description = Ang mga site na iyong pinakamadalas puntahan
-home-prefs-topsites-by-option-sponsored =
-    .label = Mga Pangunahing Site ng mga Sponsor
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
     .label = Inirekomenda ni { $provider }
-home-prefs-recommended-by-description-update = Bukod-tanging content sa web, kinolekta ng { $provider }
 
 ##
 
@@ -605,9 +568,6 @@ home-prefs-recommended-by-learn-more = Paano ito gumagana
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Mga Na-sponsor na Kwento
 
-home-prefs-highlights-header =
-    .label = Mga tampok
-home-prefs-highlights-description = Isang seleksyon ng mga site na iyong nai-save o nabisita
 home-prefs-highlights-option-visited-pages =
     .label = Mga Binisitang Pahina
 home-prefs-highlights-options-bookmarks =
@@ -627,7 +587,6 @@ home-prefs-recent-activity-description = Isang pagpipilian ng mga kamakailang si
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = Mga snippet
-home-prefs-snippets-description = Mga Update mula sa { -vendor-short-name } at { -brand-product-name }
 
 home-prefs-snippets-description-new = Mga tip at balita mula sa { -vendor-short-name } at { -brand-product-name }
 
@@ -1023,14 +982,6 @@ sitedata-block-desc = Uri ng content na hinaharang
 
 sitedata-option-block-cross-site-trackers =
     .label = Mga cross-site tracker
-sitedata-option-block-cross-site-and-social-media-trackers =
-    .label = Mga cross-site at social media tracker
-sitedata-option-block-cross-site-tracking-cookies-including-social-media =
-    .label = Mga cross-site tracking cookie — kasama ang mga social media cookie
-sitedata-option-block-cross-site-cookies-including-social-media =
-    .label = Mga cross-site cookie — kasama ang mga social media cookie
-sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
-    .label = Mga cross-site at social media tracker, at ihiwalay ang mga natitirang cookie
 sitedata-option-block-unvisited =
     .label = Mga cookie na galing sa mga hindi pa nabisitang website
 sitedata-option-block-all-third-party =
@@ -1123,7 +1074,6 @@ content-blocking-cryptominers = Mga Cryptominer
 content-blocking-fingerprinters = Mga Fingerprinter
 
 content-blocking-warning-title = Mag-ingat!
-content-blocking-and-isolating-etp-warning-description = Ang pagharang sa mga tracker at paghiwalay sa mga cookie ay maaaring makaapekto sa functionality ng ilang mga site. Mag-reload ng pahina na may mga tracker para maiload lahat ng content.
 content-blocking-and-isolating-etp-warning-description-2 = Ang setting na ito ay maaaring maging sanhi ng ilang mga website na hindi ipakita ang nilalaman o gumana nang tama. Kung tila nasira ang isang site, baka gusto mong patayin ang tracking protection para sa site na iyon upang mai-load ang lahat ng nilalaman.
 content-blocking-warning-learn-how = Alamin kung paano
 
@@ -1210,10 +1160,6 @@ permissions-autoplay-settings =
 permissions-block-popups =
     .label = Harangin ang mga pop-up window
     .accesskey = B
-
-permissions-block-popups-exceptions =
-    .label = Mga Exception...
-    .accesskey = E
 
 permissions-addon-install-warning =
     .label = Balaan ka kapag sinusubukan ng mga website na magkabit ng mga add-on

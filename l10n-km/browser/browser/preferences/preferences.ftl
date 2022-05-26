@@ -51,18 +51,6 @@ restart-later = ចាប់ផ្ដើម​ឡើងវិញ​នៅ​ព�
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that Container Tabs
-# are being enabled by an extension.
-extension-controlled-privacy-containers = ផ្នែកបន្ថែម <img data-l10n-name="icon"/> { $name } ត្រូវការផ្ទាំងឧបករណ៍ផ្ទុក។
-
-# This string is shown to notify the user that their content blocking "All Detected Trackers"
-# preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = ផ្នែកបន្ថែម <img data-l10n-name="icon"/> { $name } កំពុងគ្រប់គ្រងការកំណត់នេះ។
-
-# This string is shown to notify the user that their proxy configuration preferences
-# are being controlled by an extension.
-extension-controlled-proxy-config = ផ្នែកបន្ថែម <img data-l10n-name="icon"/> { $name } កំពុងគ្រប់គ្រងរបៀបដែល { -brand-short-name } តភ្ជាប់ទៅអ៊ីនធឺណិត។
-
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -91,10 +79,6 @@ set-as-my-default-browser =
     .label = ដាក់​ជា​លំនាំ​ដើម
     .accesskey = D
 
-startup-restore-previous-session =
-    .label = ស្ដារ​សម័យ​មុន
-    .accesskey = s
-
 disable-extension =
     .label = បិទ​ផ្នែក​បន្ថែម
 
@@ -107,10 +91,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = បើក​តំណ​ក្នុង​ផ្ទាំង​ជំនួយ​ឲ្យ​វីនដូ​ថ្មី
     .accesskey = w
-
-warn-on-close-multiple-tabs =
-    .label = ព្រមាន​អ្នក​ពេល​បិទ​ផ្ទាំង​ច្រើន
-    .accesskey = m
 
 warn-on-open-many-tabs =
     .label = ព្រមាន​អ្នក​ពេល​បើក​ផ្ទាំង​ច្រើន អាច​ធ្វើឲ្យ { -brand-short-name } យឺត
@@ -145,12 +125,9 @@ containers-remove-alert-msg = បើ​អ្នក​លុប​​ឧបក�
 containers-remove-ok-button = លុប​ប្រអប់​នេះ​ចេញ
 containers-remove-cancel-button = កុំ​លុប​ប្រអប់​នេះ​ចេញ​អី
 
-
 ## General Section - Language & Appearance
 
 language-and-appearance-header = ភាសា និង​ការបង្ហាញ
-
-fonts-and-colors-header = ពុម្ព​អក្សរ & ពណ៌
 
 default-font = ពុម្ព​អក្សរ​លំនាំដើម
     .accesskey = D
@@ -160,10 +137,6 @@ default-font-size = ទំហំ
 advanced-fonts =
     .label = កម្រិតខ្ពស់…
     .accesskey = ត
-
-colors-settings =
-    .label = ពណ៌...
-    .accesskey = ព
 
 language-header = ភាសា
 
@@ -200,6 +173,9 @@ download-header = ទាញ​យក
 
 download-save-to =
     .label = រក្សា​ទុក​ឯកសារ​ទៅ
+    .accesskey = ក
+
+download-save-where = រក្សា​ទុក​ឯកសារ​ទៅ
     .accesskey = ក
 
 download-choose-folder =
@@ -446,9 +422,6 @@ home-prefs-content-description = ជ្រើសរើស​ខ្លឹមស�
 
 home-prefs-search-header =
     .label = ការស្វែងរកតាម​អ៊ីនធឺណិត
-home-prefs-topsites-header =
-    .label = សាយកំពូល
-home-prefs-topsites-description = គេហទំព័រ​ដែល​អ្នក​មើល​ច្រើន​បំផុត
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -462,9 +435,6 @@ home-prefs-recommended-by-learn-more = របៀប​ដែល​វា​ដ�
 home-prefs-recommended-by-option-sponsored-stories =
     .label = រឿងរ៉ាវដែលបានឧបត្ថម្ភ
 
-home-prefs-highlights-header =
-    .label = រឿងសំខាន់ៗ
-home-prefs-highlights-description = ការជ្រើសរើស​គេហទំព័រ​ដែល​អ្នក​បាន​រក្សាទុក ឬ​មើល
 home-prefs-highlights-option-visited-pages =
     .label = ទំព័រ​ដែល​បាន​ទស្សនា
 home-prefs-highlights-options-bookmarks =
@@ -480,7 +450,6 @@ home-prefs-highlights-option-saved-to-pocket =
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = អត្ថបទសង្ខេប
-home-prefs-snippets-description = បច្ចុប្បន្នភាពពី { -vendor-short-name } និង { -brand-product-name }
 
 home-prefs-sections-rows-option =
     .label =
@@ -551,9 +520,6 @@ containers-add-button =
 containers-remove-button =
     .label = លុប​ចេញ
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
@@ -568,9 +534,6 @@ sync-signedout-caption = យក​បណ្ដាញ​របស់​អ្ន�
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
 sync-mobile-promo = ទាញ​យក​ Firefox សម្រាប់​<img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> ឬ <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a>ធ្វើ​សម​កាល​កម្ម​​ឧបករណ៍​ចល័ត​របស់​អ្នក។
-
-## Sync Section - Signed in
-
 
 ## Firefox Account - Signed in
 
@@ -650,8 +613,6 @@ sync-device-name-save =
 ## Privacy Section
 
 privacy-header = ឯកជនភាព​កម្មវិធី​រុករក​តាម​អ៊ីនធឺណិត
-
-## Privacy Section - Forms
 
 ## Privacy Section - Logins and Passwords
 
@@ -826,10 +787,6 @@ permissions-block-popups =
     .label = ទប់ស្កាត់​​បង្អួច​លេច​ឡើង
     .accesskey = ទ
 
-permissions-block-popups-exceptions =
-    .label = ករណី​លើក​លែង
-    .accesskey = ក
-
 permissions-addon-install-warning =
     .label = ព្រមានអ្នកនៅពេលគេហទំព័រព្យាយាមដំឡើងកម្មវិធីបន្ថែម
     .accesskey = W
@@ -893,6 +850,7 @@ certs-devices =
     .accesskey = D
 
 ## Privacy Section - HTTPS-Only
+
 
 ## The following strings are used in the Download section of settings
 

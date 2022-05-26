@@ -152,7 +152,6 @@ extensions-warning-update-security = ॲड-ऑन सुधारणा सु�
 extensions-warning-update-security-button = सुरू करा
     .title = ॲड-ऑन सुधारणा सुरक्षा तपासणी सुरू करा
 
-
 ## Strings connected to add-on updates
 
 addon-updates-check-for-updates = सुधारणांकरीता तपासणी करा
@@ -249,6 +248,7 @@ addon-detail-private-browsing-disallow = परवानगी देऊ नक�
 ## This is the tooltip text for the recommended badges for an extension in about:addons. The
 ## badge is a small icon displayed next to an extension when it is recommended on AMO.
 
+
 ##
 
 available-updates-heading = उपलब्ध सुधारणा
@@ -272,3 +272,25 @@ shortcuts-heading = विस्तार शॉर्टकट व्यवस�
 
 addon-page-options-button =
     .title = सर्व ॲड-ऑन्स् करीता साधने
+
+## Detail notifications
+## Variables:
+##   $name (String): name of the add-on.
+
+# Variables:
+#   $version (String): application version.
+details-notification-incompatible = { $name }, { -brand-short-name } { $version } सह असहत्व आहे.
+
+details-notification-unsigned-and-disabled = { -brand-short-name } मध्ये वापरासाठी { $name } ची पडताळणी होऊ शकली नाही आणि ते अक्षम करण्यात आले आहे.
+details-notification-unsigned-and-disabled-link = अधिक माहिती
+
+details-notification-unsigned = { -brand-short-name } मध्ये वापरासाठी { $name } ची पडताळणी होऊ शकली नाही. काळजीपूर्वक पुढे जा.
+details-notification-unsigned-link = अधिक माहिती
+
+details-notification-blocked = { $name } सुरक्षा किंवा स्थिरता अडचणींमुळे बंद केले.
+details-notification-blocked-link = अधिक माहिती
+
+details-notification-softblocked = { $name } सुरक्षा किंवा स्थिरता अडचणी निर्माण करण्यास परिचीत आहे.
+details-notification-softblocked-link = अधिक माहिती
+
+details-notification-gmp-pending = { $name } लवकरच इंस्टॉल केले जाईल.

@@ -3,6 +3,24 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+## Send Format
+
+compose-send-format-menu =
+    .label = Saatmise formaat
+    .accesskey = f
+compose-send-auto-menu-item =
+    .label = Automaatne
+    .accesskey = A
+compose-send-both-menu-item =
+    .label = Nii HTML kui ka lihttekst
+    .accesskey = N
+compose-send-html-menu-item =
+    .label = Ainult HTML
+    .accesskey = i
+compose-send-plain-menu-item =
+    .label = Ainult lihttekst
+    .accesskey = h
+
 ## Addressing widget
 
 #   $type (String) - the type of the addressing row
@@ -66,9 +84,6 @@ menuitem-toggle-attachment-pane =
 toolbar-button-add-attachment =
     .label = Lisa
     .tooltiptext = Lisa manus ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
-add-attachment-notification-reminder =
-    .label = Lisa manus…
-    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 add-attachment-notification-reminder2 =
     .label = Lisa manus…
     .accesskey = L
@@ -81,6 +96,13 @@ context-menuitem-attach-files =
     .label = Lisa fail(id)...
     .accesskey = F
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
+# Note: Do not translate the term 'vCard'.
+context-menuitem-attach-vcard =
+    .label = Minu vCard
+    .accesskey = v
+context-menuitem-attach-openpgp-key =
+    .label = Minu OpenPGP avalik võti
+    .accesskey = O
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count-value =
     { $count ->
@@ -88,10 +110,6 @@ attachment-bucket-count-value =
         [one] { $count } manus
        *[other] { $count } manust
     }
-expand-attachment-pane-tooltip =
-    .tooltiptext = Kuva manuste paneel ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Peida manuste paneel ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Kuva manuste paneel ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -123,45 +141,60 @@ button-return-receipt =
 
 ## Encryption
 
-message-to-be-signed-icon =
-    .alt = Signeeri kiri
-message-to-be-encrypted-icon =
-    .alt = Krüpti kiri
+encryption-menu =
+    .label = Turvalisus
+    .accesskey = T
+encryption-toggle =
+    .label = Krüptitakse
+    .tooltiptext = Selle kirja jaoks kasutatakse otspunktkrüptimist
+encryption-options-openpgp =
+    .label = OpenPGP
+    .tooltiptext = Vaata või muuda OpenPGPga krüptimise sätteid
+encryption-options-smime =
+    .label = S/MIME
+    .tooltiptext = Vaata või muuda S/MIME'iga krüptimise sätteid
+signing-toggle =
+    .label = Allkirjasta
+    .tooltiptext = Kasuta selle kirja puhul digiallkirjastamist
+menu-openpgp =
+    .label = OpenPGP
+    .accesskey = O
+menu-smime =
+    .label = S/MIME
+    .accesskey = S
+menu-encrypt =
+    .label = Krüptimine
+    .accesskey = K
+menu-encrypt-subject =
+    .label = Pealkiri krüptitakse
+    .accesskey = P
+menu-sign =
+    .label = Kiri digiallkirjastatakse
+    .accesskey = d
+menu-manage-keys =
+    .label = Võtmeassistent
+    .accesskey = V
+menu-view-certificates =
+    .label = Vaata saatjate serte
+    .accesskey = V
+menu-open-key-manager =
+    .label = Võtmehaldur
+    .accesskey = h
+openpgp-key-issue-notification-one = Otspunktkrüptimine nõuab aadressi { $addr } võtmeprobleemide lahendamist
+openpgp-key-issue-notification-many = Otspunktkrüptimine nõuab { $count } saaja võtmeprobleemide lahendamist.
+smime-cert-issue-notification-one = Otspunktkrüptimine nõuab aadressi { $addr } serdiprobleemide lahendamist
+smime-cert-issue-notification-many = Otspunktkrüptimine nõuab { $count } saaja serdiprobleemide lahendamist.
+key-notification-disable-encryption =
+    .label = Ära krüpti
+    .accesskey = r
+    .tooltiptext = Otspunktkrüptimine keelatakse
+key-notification-resolve =
+    .label = Lahenda…
+    .accesskey = L
+    .tooltiptext = Ava OpenPGP võtmeassistent
 
 ## Addressing Area
 
-to-compose-address-row-label =
-    .value = Saaja
-#   $key (String) - the shortcut key for this field
-to-compose-show-address-row-menuitem =
-    .label = Väli { to-compose-address-row-label.value }
-    .accesskey = S
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-to-compose-show-address-row-label =
-    .value = { to-compose-address-row-label.value }
-    .tooltiptext = Kuva välja { to-compose-address-row-label.value } ({ to-compose-show-address-row-menuitem.acceltext })
-cc-compose-address-row-label =
-    .value = Koopia
-#   $key (String) - the shortcut key for this field
-cc-compose-show-address-row-menuitem =
-    .label = Väli { cc-compose-address-row-label.value }
-    .accesskey = K
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-cc-compose-show-address-row-label =
-    .value = { cc-compose-address-row-label.value }
-    .tooltiptext = Kuva väli { cc-compose-address-row-label.value } ({ cc-compose-show-address-row-menuitem.acceltext })
-bcc-compose-address-row-label =
-    .value = Pimekoopia
-#   $key (String) - the shortcut key for this field
-bcc-compose-show-address-row-menuitem =
-    .label = Väli { bcc-compose-address-row-label.value }
-    .accesskey = P
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-bcc-compose-show-address-row-label =
-    .value = { bcc-compose-address-row-label.value }
-    .tooltiptext = Kuva väli { bcc-compose-address-row-label.value } ({ bcc-compose-show-address-row-menuitem.acceltext })
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-many-public-recipients-info = { $count } adressaati Saaja ja Koopia väljadel näevad üksteise aadresse. Sa võid seda vältida, lisades adressaadid väljale Pimekoopia.
 to-address-row-label =
     .value = Saaja
 #   $key (String) - the shortcut key for this field
@@ -324,3 +357,17 @@ cloud-file-attachment-error = Filelinki lisatud manust { $filename } polnud või
 # $filename (string) - name of the file that was renamed and caused the error
 cloud-file-account-error-title = Filelinki konto viga
 cloud-file-account-error = Filelinki lisatud manust { $filename } polnud võimalik uuendada, sest Filelinki konto on kustutatud.
+
+## Link Preview
+
+link-preview-title = Lingi eelvaade
+link-preview-description = { -brand-short-name } saab linkide asetamisel lisada manustatud eelvaate.
+link-preview-autoadd = Võimalusel lisatakse linkide eelvaated automaatselt
+link-preview-replace-now = Kas lisada sellele lingile eelvaade?
+link-preview-yes-replace = Jah
+
+## Dictionary selection popup
+
+spell-add-dictionaries =
+    .label = Lisa sõnaraamatuid...
+    .accesskey = s

@@ -22,6 +22,7 @@ openpgp-view-your-encryption-key =
 openpgp-openpgp = OpenPGP
 
 openpgp-no-sig = Ulac azmul umḍin
+openpgp-no-sig-info = Izen-a ur yegbir ara azmul umḍin n umazan.  Ticki ulac azmul umḍin ayagi yemmal-d izen yezmer ad t-yazen walbaɛḍ i d-yeskanen iman-is yesεa tansa-a n yimayl. Yezmer daɣen izen-a yettwabeddel deg ubrid-ines ɣef uẓeṭṭa.
 openpgp-uncertain-sig = Azmul umḍin ur nettwaman ara
 openpgp-invalid-sig = Azmul umḍin arameɣtu
 openpgp-good-sig = Azmul umḍin igerrez
@@ -40,6 +41,17 @@ openpgp-sig-key-id-with-subkey-id = Asulay n tsarut n unezmal: { $key } (Asulay 
 
 openpgp-enc-key-id = Asulay n tsarut-ik•im n uwgelhen: { $key }
 openpgp-enc-key-with-subkey-id = Asulay-inek·inem n tsarut tawgelhent: { $key } (Asulay n tsarut tarnawt: { $subkey })
+
+openpgp-enc-none = Izen ur yettwawgelhen ara
+openpgp-enc-none-label = Izen-agi ur yettwawgelhen ara sen tuzna ines. Zemren yemdanen ad walin talɣut yettwaznen deg Internet s war awgelhen ticki tettwazan.
+
+openpgp-enc-invalid-label = Izen ur yezmir ara ad yettwazmek
+openpgp-enc-invalid = Izen-agi yettwawgelhen send ad k-d-yettwazen, acu kan ur yezmir ara ad yettwazmek.
+
+openpgp-enc-clueless = Llan tuccḍiwin ur nettwassen ara deg izen-agi awgelhan.
+
+openpgp-enc-valid-label = Izen yettwawgelhen
+openpgp-enc-valid = Izen-a yettwawgelhen send ad ak·am-d-yettwazen. Awgelhen ad yeḍmen izen ur yettwaɣra ara slid squr inermisen iwumi yettwazen.
 
 openpgp-unknown-key-id = Tasarut d tarussint
 

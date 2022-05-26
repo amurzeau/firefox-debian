@@ -47,3 +47,4 @@ openpgp-partially-encrypted =
 openpgp-reminder-partial-display = Omtinken: it ûndersteande berjocht is mar in part fan it oarspronklike berjocht.
 openpgp-partial-verify-button = Ferifiearje
 openpgp-partial-decrypt-button = Untsiferje
+openpgp-unexpected-key-for-you = Warskôging: dit berjocht befettet in ûnbekende OpenPGP-kaai dy’t ferwiist nei in fan jo eigen e-mailadressen. As dit net ien fan jo eigen kaaien is, kin it in besykjen wêze om oare korrespondinten te mislieden.

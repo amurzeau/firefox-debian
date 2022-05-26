@@ -166,11 +166,6 @@ main-context-menu-save-link-to-pocket =
     .label = Spamiyntej link do { -pocket-brand-name }
     .accesskey = i
 
-## The access keys for "Copy Link Location" and "Copy Email Address"
-## should be the same if possible; the two context menu items
-## are mutually exclusive.
-
-
 ## The access keys for "Copy Link" and "Copy Email Address"
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
@@ -178,6 +173,10 @@ main-context-menu-save-link-to-pocket =
 main-context-menu-copy-email =
     .label = Kopiuj adresa email
     .accesskey = A
+
+main-context-menu-copy-phone =
+    .label = Kopiuj nōmer telefonu
+    .accesskey = o
 
 main-context-menu-copy-link-simple =
     .label = Kopiuj link
@@ -450,3 +449,12 @@ main-context-menu-eme-learn-more =
     .label = Dowiydz sie wiyncyj ô DRM…
     .accesskey = D
 
+# Variables
+#   $containerName (String): The name of the current container
+main-context-menu-open-link-in-container-tab =
+    .label = Ôdewrzij link w nowyj karcie { $containerName }
+    .accesskey = K
+
+main-context-menu-reveal-password =
+    .label = Pokoż hasło
+    .accesskey = v

@@ -40,6 +40,8 @@ pocket-panel-signup-tagline = مقاله‌ها و ویدئوها را با { -b
 pocket-panel-signup-tagline-story-one = بر روی دکمه { -pocket-brand-name } کلیک کنید تا مقاله، ویدئو یا صفحات را از طریق { -brand-product-name } ذخیره کنید.
 pocket-panel-signup-tagline-story-two = نمایش در { -pocket-brand-name } در هر دستگاه و در هر زمانی.
 
+pocket-panel-signup-cta-a-fix = دکمه ذخیره شما برای اینترنت
+
 ## about:pocket-home panel
 
 pocket-panel-home-my-list = فهرست من
@@ -48,3 +50,9 @@ pocket-panel-home-paragraph = از { -pocket-brand-name } می‌توانید ب
 pocket-panel-home-explore-popular-topics = موضوعات جالب را پیدا کنید
 pocket-panel-home-discover-more = بیشتر ببینید
 pocket-panel-home-explore-more = کاوش
+
+## Pocket panel header component
+
+
+## Pocket panel buttons
+

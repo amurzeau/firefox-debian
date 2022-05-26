@@ -39,15 +39,18 @@ toolbar-context-menu-remove-extension =
 toolbar-context-menu-report-extension =
     .label = გაფართოების გასაჩივრება
     .accesskey = ჩ
-# Can appear on the same context menu as menubarCmd ("Menu Bar") and
-# personalbarCmd ("Bookmarks Toolbar"), so they should have different
-# access keys.
+# Can appear on the same context menu as toolbar-context-menu-menu-bar-cmd
+# ("Menu Bar") and personalbarCmd ("Bookmarks Toolbar"), so they should
+# have different access keys.
 toolbar-context-menu-pin-to-overflow-menu =
     .label = ჩამოსაშლელ მენიუში მიმაგრება
     .accesskey = გ
 toolbar-context-menu-auto-hide-downloads-button-2 =
-    .label = ღილაკის დამალვა როცა ცარიელია
+    .label = დაიმალოს ღილაკი, როცა ცარიელია
     .accesskey = დ
+toolbar-context-menu-always-open-downloads-panel =
+    .label = გამოჩნდეს ჩამოტვირთვის დაწყებისას
+    .accesskey = ტ
 toolbar-context-menu-remove-from-toolbar =
     .label = ხელსაწყოთა ზოლიდან მოცილება
     .accesskey = ა

@@ -34,6 +34,10 @@ options-show-user-agent-styles-tooltip =
 options-collapse-attrs-label = חיתוך רכיבי DOM
 options-collapse-attrs-tooltip =
     .title = קיצור תכונות ארוכות במפקח
+# The label for the checkbox option to enable the "drag to update" feature
+options-inspector-draggable-properties-label = לחיצה וגרירה כדי לערוך ערכים של גדלים
+options-inspector-draggable-properties-tooltip =
+    .title = לחיצה וגרירה כדי לערוך ערכים של גדלים בתצוגת הכללים במפקח
 
 ## "Default Color Unit" options for the Inspector
 

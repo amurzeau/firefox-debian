@@ -124,10 +124,10 @@ openpgp-import-key-description = Vous pouvez importer des clés personnelles qui
 openpgp-import-key-info = D’autres logiciels peuvent décrire une clé personnelle en utilisant des termes alternatifs tels que « votre propre clé », « clé secrète », « clé privée » ou « paire de clés ».
 
 #   $count (Number) - the number of keys found in the selected files
-openpgp-import-key-list-amount =
+openpgp-import-key-list-amount-2 =
     { $count ->
-        [one] Thunderbird a trouvé une clé qui peut être importée.
-       *[other] Thunderbird a trouvé { $count } clés qui peuvent être importées.
+        [one] { -brand-short-name } a trouvé une clé qui peut être importée.
+       *[other] { -brand-short-name } a trouvé { $count } clés qui peuvent être importées.
     }
 
 openpgp-import-key-list-description = Confirmez quelles clés peuvent être considérées comme vos clés personnelles. Seules les clés que vous avez créées vous-même et qui indiquent votre propre identité doivent être utilisées comme clés personnelles. Vous pouvez modifier cette option ultérieurement depuis la boîte de dialogue Propriétés de la clé.

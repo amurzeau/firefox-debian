@@ -172,7 +172,6 @@ extensions-warning-update-security = ایڈ اون سلامتی پڑتال نا 
 extensions-warning-update-security-button = اہل بنائیں
     .title = ایڈ اون تازہ کاری سلامتی پڑتال کو اہل بنائیں
 
-
 ## Strings connected to add-on updates
 
 addon-updates-check-for-updates = تازہ کاریوں کے لیے پڑتال کریں
@@ -350,3 +349,25 @@ addons-heading-search-input =
 
 addon-page-options-button =
     .title = تمام ایڈ اون کے لیے ٹول
+
+## Detail notifications
+## Variables:
+##   $name (String): name of the add-on.
+
+# Variables:
+#   $version (String): application version.
+details-notification-incompatible = { $name } { -brand-short-name } { $version } کے ساتھ غیر موازن ہے۔
+
+details-notification-unsigned-and-disabled = { $name } { -brand-short-name } میں استعمال کے لیے تصدیق شدہ نہیں ہے اور نااہل بنا دیا گیا ہے۔
+details-notification-unsigned-and-disabled-link = مزید معلومات
+
+details-notification-unsigned = { $name } کی { -brand-short-name } میں استعمال کے لیے تصدیق نہیں ہو سکی۔ احتیاط سے آگے بڑھیں۔
+details-notification-unsigned-link = مزید معلومات
+
+details-notification-blocked = { $name } سلامتی یا سٹبلٹی مسائل کی بناہ پر نا اہل کر دیا گیا ہے۔
+details-notification-blocked-link = مزید معلومات
+
+details-notification-softblocked = { $name } سلامتی یا سٹبلٹی مسائل پیدا کرنے کی وجہ سے جانا جاتا ہے۔
+details-notification-softblocked-link = مزید معلومات
+
+details-notification-gmp-pending = { $name } ابھی تنصیب ہو جائے گا۔

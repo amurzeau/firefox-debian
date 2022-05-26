@@ -27,7 +27,6 @@ list-empty-button =
     .label = অ্যাড-অন সম্পর্কে আরও শিখুন
 
 help-button = অ্যাড-অন সহযোগীতা
-
 sidebar-help-button-title =
     .title = অ্যাড-অন সহযোগীতা
 
@@ -70,12 +69,10 @@ detail-private-browsing-label = ব্যক্তিগত উইন্ডো�
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
 # cannot be overridden by the user.
 detail-private-disallowed-label = ব্যক্তিগত উইন্ডোতে অনুমোদিত নয়
-
 detail-private-disallowed-description2 = ব্যক্তিগত ব্রাউজিং এর সময় এই এক্সটেনশন কাজ করবেনা।<a data-l10n-name="learn-more"> আরও জানুন </a>
 
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = ব্যক্তিগত উইন্ডোতে প্রবেশ প্রয়োজন
-
 detail-private-required-description2 = ব্যক্তিগত ব্রাউজিং করার সময় এই এক্সটেনশন আপনার অনলাইন কর্মকান্ড সম্পর্কে জানতে পারে। <a data-l10n-name="learn-more"> আরও জানুন </a>
 
 detail-private-browsing-on =
@@ -178,7 +175,6 @@ extensions-warning-check-compatibility-button = সক্রিয়
 extensions-warning-update-security = অ্যাড-অন হালনাগাদকরন পরীক্ষা নিস্ক্রিয়। আপনি সম্ভবত হালনাগাদকরনের সাথে আপোষ করে নিয়েছেন।
 extensions-warning-update-security-button = সক্রিয়
     .title = অ্যাড-অন হালনাগাদকরন নিরাপত্তা পরীক্ষা করা সক্রিয়
-
 
 ## Strings connected to add-on updates
 
@@ -429,3 +425,25 @@ addons-heading-search-input =
 
 addon-page-options-button =
     .title = সব অ্যাড-অন এর জন্য টুল
+
+## Detail notifications
+## Variables:
+##   $name (String): name of the add-on.
+
+# Variables:
+#   $version (String): application version.
+details-notification-incompatible = { $name } ,{ -brand-short-name } { $version } এর জন্য উপযুক্ত।
+
+details-notification-unsigned-and-disabled = { $name } যাচাই করা গেল না { -brand-short-name } তে ব্যবহারের জন্য, এবং নিস্ক্রিয় করে দেওয়া হয়েছে।
+details-notification-unsigned-and-disabled-link = আরও তথ্য
+
+details-notification-unsigned = { $name } যাচাই করা গেল না { -brand-short-name } তে ব্যবহারের জন্য, সতর্কতার সাথে আগান।
+details-notification-unsigned-link = আরও তথ্য
+
+details-notification-blocked = নিরাপত্তা ও স্থায়ীত্বজনিত কারণে { $name } নিস্ক্রিয় করা হয়েছে।
+details-notification-blocked-link = আরও তথ্য
+
+details-notification-softblocked = নিরাপত্তা ও স্থায়ীত্বজনিত ত্রুটির জন্য { $name } দায়ী।
+details-notification-softblocked-link = আরও তথ্য
+
+details-notification-gmp-pending = { $name } খুব শ্রীঘ্রই ইন্সটল করা হবে।

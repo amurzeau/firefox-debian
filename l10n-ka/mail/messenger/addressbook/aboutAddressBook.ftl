@@ -124,14 +124,33 @@ about-addressbook-confirm-delete-contacts =
 
 ## Details
 
+about-addressbook-write-action-button = ჩაწერა
+about-addressbook-event-action-button = ღონისძიება
+about-addressbook-search-action-button = ძიება
 about-addressbook-begin-edit-contact-button = ჩასწორება
+about-addressbook-delete-edit-contact-button = წაშლა
 about-addressbook-cancel-edit-contact-button = გაუქმება
 about-addressbook-save-edit-contact-button = შენახვა
+about-addressbook-add-contact-to = დამატება:
 about-addressbook-details-email-addresses-header = ელფოსტის მისამართები
 about-addressbook-details-phone-numbers-header = ტელეფონის ნომრები
 about-addressbook-details-home-address-header = ბინის მისამართი
 about-addressbook-details-work-address-header = სამსახურის მისამართი
+about-addressbook-details-addresses-header = მისამართები
+about-addressbook-details-notes-header = შენიშვნები
 about-addressbook-details-other-info-header = სხვა ინფორმაცია
+about-addressbook-entry-type-work = სამსახური
+about-addressbook-entry-type-home = სახლი
+about-addressbook-entry-type-fax = ფაქსი
+about-addressbook-entry-type-cell = მობილური
+about-addressbook-entry-type-pager = პეიჯერი
+about-addressbook-entry-name-birthday = დაბადების დღე
+about-addressbook-entry-name-anniversary = იუბილე
+about-addressbook-entry-name-title = სათაური
+about-addressbook-entry-name-department = განყოფილება
+about-addressbook-entry-name-organization = დაწესებულება
+about-addressbook-entry-name-website = ვებსაიტი
+about-addressbook-entry-name-time-zone = დროის სარტყელი
 about-addressbook-unsaved-changes-prompt-title = შეუნახავი ცვლილებები
 about-addressbook-unsaved-changes-prompt = გსურთ, შეინახოთ ცვლილებები გამოსვლამდე?
 

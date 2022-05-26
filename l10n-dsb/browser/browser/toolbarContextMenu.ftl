@@ -42,15 +42,18 @@ toolbar-context-menu-remove-extension =
 toolbar-context-menu-report-extension =
     .label = Rozšyrjenje k wěsći daś
     .accesskey = o
-# Can appear on the same context menu as menubarCmd ("Menu Bar") and
-# personalbarCmd ("Bookmarks Toolbar"), so they should have different
-# access keys.
+# Can appear on the same context menu as toolbar-context-menu-menu-bar-cmd
+# ("Menu Bar") and personalbarCmd ("Bookmarks Toolbar"), so they should
+# have different access keys.
 toolbar-context-menu-pin-to-overflow-menu =
     .label = K woběžkowemu menijoju pśipěś
     .accesskey = P
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = Tłocašk schowaś, gaž prozne
     .accesskey = T
+toolbar-context-menu-always-open-downloads-panel =
+    .label = Wokno pokazaś, gaž se ześěgnjenje zachopina
+    .accesskey = o
 toolbar-context-menu-remove-from-toolbar =
     .label = Ze symboloweje rědki wótpóraś
     .accesskey = Z

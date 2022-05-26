@@ -27,7 +27,6 @@ list-empty-button =
     .label = Ketahui selanjutnya mengenai add-ons
 
 help-button = Sokongan Add-ons
-
 sidebar-help-button-title =
     .title = Sokongan Add-ons
 
@@ -150,7 +149,6 @@ extensions-warning-update-security = Semakan keselamatan kemaskini add-on telah 
 extensions-warning-update-security-button = Dayakan
     .title = Dayakan semakan keselamatan kemaskini add-on
 
-
 ## Strings connected to add-on updates
 
 addon-updates-check-for-updates = Semak Kemaskini
@@ -206,7 +204,9 @@ addon-open-about-debugging = Add-ons Nyahpepijat
 ## This is the tooltip text for the recommended badges for an extension in about:addons. The
 ## badge is a small icon displayed next to an extension when it is recommended on AMO.
 
+
 ##
+
 
 ## Page headings
 
@@ -221,3 +221,25 @@ addons-heading-search-input =
 
 addon-page-options-button =
     .title = Alatan untuk semua add-on
+
+## Detail notifications
+## Variables:
+##   $name (String): name of the add-on.
+
+# Variables:
+#   $version (String): application version.
+details-notification-incompatible = { $name } tidak serasi dengan { -brand-short-name } { $version }.
+
+details-notification-unsigned-and-disabled = { $name } tidak dapat disahkan untuk digunakan di { -brand-short-name } dan ia telah dinyahdayakan.
+details-notification-unsigned-and-disabled-link = Maklumat Lanjut
+
+details-notification-unsigned = { $name } tidak dapat disahkan untuk digunakan di { -brand-short-name }. Teruskan dengan berhati-hati.
+details-notification-unsigned-link = Maklumat Lanjut
+
+details-notification-blocked = { $name } telah dinyahdayakan kerana isu keselamatan atau kestabilan.
+details-notification-blocked-link = Maklumat Lanjut
+
+details-notification-softblocked = { $name } telah dikenalpasti sebagai punca dalam isu keselamatan dan kestabilan.
+details-notification-softblocked-link = Maklumat Lanjut
+
+details-notification-gmp-pending = { $name } akan dipasang sebentar lagi.

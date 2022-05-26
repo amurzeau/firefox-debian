@@ -35,7 +35,7 @@ about-addressbook-books-context-delete =
 about-addressbook-books-context-remove =
     .label = Odstrániť
 about-addressbook-books-context-startup-default =
-    .label = Predvolený spúšťací priečinok
+    .label = Predvolený priečinok pri spustení
 about-addressbook-confirm-delete-book-title = Odstránenie adresára
 # Variables:
 # $name (String) - Name of the address book to be deleted.
@@ -130,14 +130,33 @@ about-addressbook-confirm-delete-contacts =
 
 ## Details
 
+about-addressbook-write-action-button = Napísať správu
+about-addressbook-event-action-button = Udalosť
+about-addressbook-search-action-button = Hľadať
 about-addressbook-begin-edit-contact-button = Upraviť
+about-addressbook-delete-edit-contact-button = Odstrániť
 about-addressbook-cancel-edit-contact-button = Zrušiť
 about-addressbook-save-edit-contact-button = Uložiť
+about-addressbook-add-contact-to = Pridať do:
 about-addressbook-details-email-addresses-header = E-mailové adresy
 about-addressbook-details-phone-numbers-header = Telefónne čísla
 about-addressbook-details-home-address-header = Adresa domov
 about-addressbook-details-work-address-header = Pracovná adresa
+about-addressbook-details-addresses-header = Adresy
+about-addressbook-details-notes-header = Poznámky
 about-addressbook-details-other-info-header = Ďalšie informácie
+about-addressbook-entry-type-work = Práca
+about-addressbook-entry-type-home = Domov
+about-addressbook-entry-type-fax = Fax
+about-addressbook-entry-type-cell = Telefón
+about-addressbook-entry-type-pager = Pager
+about-addressbook-entry-name-birthday = Narodeniny
+about-addressbook-entry-name-anniversary = Výročie
+about-addressbook-entry-name-title = Titul
+about-addressbook-entry-name-department = Oddelenie
+about-addressbook-entry-name-organization = Organizácia
+about-addressbook-entry-name-website = Webová stránka
+about-addressbook-entry-name-time-zone = Časové pásmo
 about-addressbook-unsaved-changes-prompt-title = Neuložené zmeny
 about-addressbook-unsaved-changes-prompt = Chcete pred ukončením uložiť vykonané zmeny?
 

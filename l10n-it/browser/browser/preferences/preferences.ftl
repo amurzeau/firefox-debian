@@ -48,8 +48,8 @@ pane-experimental-search-results-header = Esperimenti di { -brand-short-name }: 
 pane-experimental-description2 = La modifica delle impostazioni avanzate di configurazione può compromettere le prestazioni e la sicurezza di { -brand-short-name }.
 
 pane-experimental-reset =
-  .label = Ripristina predefiniti
-  .accesskey = R
+    .label = Ripristina predefiniti
+    .accesskey = R
 
 help-button-label = Supporto per { -brand-short-name }
 addons-button-label = Estensioni e temi
@@ -79,27 +79,14 @@ restart-later = Riavvia in seguito
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that the password manager setting
-# is being controlled by an extension
-extension-controlled-password-saving = Questa impostazione è attualmente gestita da un’estensione (<img data-l10n-name="icon"/> { $name }).
 extension-controlling-password-saving = Questa impostazione è attualmente gestita da <img data-l10n-name="icon"/> <strong>{ $name }</strong>.
 
-# This string is shown to notify the user that their notifications permission
-# is being controlled by an extension.
-extension-controlled-web-notifications = Questa impostazione è attualmente gestita da un’estensione (<img data-l10n-name="icon"/> { $name }).
 extension-controlling-web-notifications = Questa impostazione è attualmente gestita da <img data-l10n-name="icon"/> <strong>{ $name }</strong>.
 
-# This string is shown to notify the user that Container Tabs
-# are being enabled by an extension.
-extension-controlled-privacy-containers = Le schede contenitore sono necessarie per il funzionamento di un’estensione (<img data-l10n-name="icon"/> { $name }).
 extension-controlling-privacy-containers = Le schede contenitore sono necessarie per il funzionamento di <img data-l10n-name="icon"/> <strong>{ $name }</strong>.
 
-extension-controlled-websites-content-blocking-all-trackers = Questa impostazione è attualmente gestita da un’estensione (<img data-l10n-name="icon"/> { $name }).
 extension-controlling-websites-content-blocking-all-trackers = Questa impostazione è attualmente gestita da <img data-l10n-name="icon"/> <strong>{ $name }</strong>.
 
-# This string is shown to notify the user that their proxy configuration preferences
-# are being controlled by an extension.
-extension-controlled-proxy-config = Le impostazioni di { -brand-short-name } relative alla connessione a Internet sono attualmente gestite da un’estensione (<img data-l10n-name="icon"/> { $name }).
 extension-controlling-proxy-config = Le impostazioni di { -brand-short-name } relative alla connessione a Internet sono attualmente gestite da <img data-l10n-name="icon"/> <strong>{ $name }</strong>.
 
 # This string is shown after the user disables an extension to notify the user
@@ -132,9 +119,6 @@ set-as-my-default-browser =
     .label = Imposta come browser predefinito…
     .accesskey = o
 
-startup-restore-previous-session =
-    .label = Ripristina la sessione precedente
-    .accesskey = R
 startup-restore-windows-and-tabs =
     .label = Apri finestre e schede esistenti
     .accesskey = r
@@ -155,9 +139,6 @@ open-new-link-as-tabs =
     .label = Apri link in schede invece di nuove finestre
     .accesskey = A
 
-warn-on-close-multiple-tabs =
-    .label = Avvisa quando si chiudono più schede
-    .accesskey = d
 confirm-on-close-multiple-tabs =
     .label = Chiedi conferma quando si chiudono più schede
     .accesskey = d
@@ -220,7 +201,6 @@ containers-remove-alert-msg =
 containers-remove-ok-button = Rimuovi questo contenitore
 containers-remove-cancel-button = Non rimuovere questo contenitore
 
-
 ## General Section - Language & Appearance
 
 language-and-appearance-header = Lingua e aspetto
@@ -235,25 +215,25 @@ preferences-web-appearance-choice-light = Chiaro
 preferences-web-appearance-choice-dark = Scuro
 
 preferences-web-appearance-choice-tooltip-browser =
-  .title = Segui il tema di { -brand-short-name } per lo sfondo e i contenuti dei siti.
+    .title = Segui il tema di { -brand-short-name } per lo sfondo e i contenuti dei siti.
 preferences-web-appearance-choice-tooltip-system =
-  .title = Segui le impostazioni del sistema per lo sfondo e i contenuti dei siti.
+    .title = Segui le impostazioni del sistema per lo sfondo e i contenuti dei siti.
 preferences-web-appearance-choice-tooltip-light =
-  .title = Preferisci una combinazione di colori chiara per lo sfondo e i contenuti dei siti.
+    .title = Preferisci una combinazione di colori chiara per lo sfondo e i contenuti dei siti.
 preferences-web-appearance-choice-tooltip-dark =
-  .title = Preferisci una combinazione di colori scura per lo sfondo e i contenuti dei siti.
+    .title = Preferisci una combinazione di colori scura per lo sfondo e i contenuti dei siti.
 
 preferences-web-appearance-choice-input-browser =
-  .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
 
 preferences-web-appearance-choice-input-system =
-  .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
 
 preferences-web-appearance-choice-input-light =
-  .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
 
 preferences-web-appearance-choice-input-dark =
-  .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
 
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
@@ -262,9 +242,6 @@ preferences-web-appearance-override-warning = Le impostazioni per l’aspetto de
 # This message contains one link. It can be moved within the sentence as needed
 # to adapt to your language, but should not be changed.
 preferences-web-appearance-footer = Gestisci i temi di { -brand-short-name } in <a data-l10n-name="themes-link">Estensioni e temi</a>
-
-
-fonts-and-colors-header = Caratteri e colori
 
 preferences-colors-header = Colori
 
@@ -284,10 +261,6 @@ default-font-size = Dimensioni
 advanced-fonts =
     .label = Avanzate…
     .accesskey = n
-
-colors-settings =
-    .label = Colori…
-    .accesskey = r
 
 # Zoom is a noun, and the message is used as header for a group of options
 preferences-zoom-header = Zoom
@@ -348,6 +321,9 @@ download-header = Download
 
 download-save-to =
     .label = Salva i file in
+    .accesskey = v
+
+download-save-where = Salva i file in
     .accesskey = v
 
 download-choose-folder =
@@ -521,7 +497,7 @@ update-setting-write-failure-title2 = Errore durante il salvataggio delle impost
 
 update-setting-write-failure-message2 =
     Si è verificato un errore e questa modifica non è stata salvata. Per aggiornare le impostazioni è necessario avere i permessi di scrittura sul file indicato in seguito. Dovrebbe essere possibile correggere il problema assegnando al gruppo Utenti il pieno controllo di questo file.
-
+    
     Impossibile scrivere il file: { $path }
 
 update-in-progress-title = Aggiornamento in corso
@@ -672,12 +648,6 @@ home-prefs-content-description = Scegli i contenuti da visualizzare nella pagina
 
 home-prefs-search-header =
     .label = Ricerca sul Web
-home-prefs-topsites-header =
-    .label = Siti principali
-home-prefs-topsites-description = I siti più visitati
-
-home-prefs-topsites-by-option-sponsored =
-    .label = Siti principali sponsorizzati
 home-prefs-shortcuts-header =
     .label = Scorciatoie
 home-prefs-shortcuts-description = Siti che hai salvato oppure visitato
@@ -689,7 +659,6 @@ home-prefs-shortcuts-by-option-sponsored =
 
 home-prefs-recommended-by-header =
     .label = Consigliati da { $provider }
-home-prefs-recommended-by-description-update = Contenuti eccezionali da tutto il Web, a cura di { $provider }
 home-prefs-recommended-by-description-new = Contenuti eccezionali a cura di { $provider }, un membro della famiglia { -brand-product-name }
 
 ##
@@ -698,9 +667,6 @@ home-prefs-recommended-by-learn-more = Come funziona
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Articoli sponsorizzati
 
-home-prefs-highlights-header =
-    .label = In evidenza
-home-prefs-highlights-description = Una selezione di siti che hai salvato o visitato in precedenza
 home-prefs-highlights-option-visited-pages =
     .label = Pagine visitate
 home-prefs-highlights-options-bookmarks =
@@ -720,7 +686,6 @@ home-prefs-recent-activity-description = Una selezione di siti e contenuti visua
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = Snippet
-home-prefs-snippets-description = Aggiornamenti da { -vendor-short-name } e { -brand-product-name }
 
 home-prefs-snippets-description-new = Consigli e notizie da { -vendor-short-name } e { -brand-product-name }
 
@@ -788,7 +753,6 @@ search-restore-default =
 search-remove-engine =
     .label = Rimuovi
     .accesskey = R
-
 search-add-engine =
     .label = Aggiungi
     .accesskey = A
@@ -821,14 +785,10 @@ containers-settings-button =
 containers-remove-button =
     .label = Rimuovi
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Il tuo Web, sempre con te
-
 sync-signedout-description2 = Sincronizza segnalibri, cronologia, schede, password, componenti aggiuntivi e impostazioni attraverso tutti i tuoi dispositivi.
 
 sync-signedout-account-signin3 =
@@ -844,9 +804,6 @@ sync-signedout-account-signin3 =
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Scarica Firefox per <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> o <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> per sincronizzare con cellulari e tablet.
-
-## Sync Section - Signed in
-
 
 ## Firefox Account - Signed in
 
@@ -903,7 +860,6 @@ sync-currently-syncing-logins-passwords = Credenziali e password
 sync-currently-syncing-addresses = Indirizzi
 sync-currently-syncing-creditcards = Carte di credito
 sync-currently-syncing-addons = Componenti aggiuntivi
-
 sync-currently-syncing-settings = Impostazioni
 
 sync-change-options =
@@ -980,9 +936,6 @@ sync-connect-another-device = Connetti un altro dispositivo
 
 privacy-header = Privacy del browser
 
-## Privacy Section - Forms
-
-
 ## Privacy Section - Logins and Passwords
 
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
@@ -1016,7 +969,6 @@ forms-primary-pw-learn-more-link = Ulteriori informazioni
 forms-master-pw-change =
     .label = Cambia la password principale…
     .accesskey = w
-
 forms-primary-pw-change =
     .label = Cambia la password principale…
     .accesskey = w
@@ -1027,7 +979,6 @@ forms-primary-pw-former-name = { "" }
 
 forms-primary-pw-fips-title = Si è in modalità FIPS. FIPS richiede che la password principale sia impostata.
 forms-master-pw-fips-desc = Modifica della password non riuscita
-
 forms-windows-sso =
     .label = Consenti single sign-on di Windows per account Microsoft, del lavoro o della scuola
 forms-windows-sso-learn-more-link = Ulteriori informazioni
@@ -1124,18 +1075,10 @@ sitedata-block-desc = Contenuti bloccati:
 
 sitedata-option-block-cross-site-trackers =
     .label = Traccianti intersito
-sitedata-option-block-cross-site-and-social-media-trackers =
-    .label = Traccianti intersito e dei social media
-sitedata-option-block-cross-site-tracking-cookies-including-social-media =
-    .label = Cookie traccianti intersito, inclusi cookie dei social media
-sitedata-option-block-cross-site-cookies-including-social-media =
-    .label = Cookie intersito, inclusi cookie dei social media
 sitedata-option-block-cross-site-tracking-cookies =
     .label = Cookie traccianti intersito
 sitedata-option-block-cross-site-cookies =
     .label = Cookie traccianti intersito, isola gli altri cookie intersito
-sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
-    .label = Traccianti intersito e dei social media, isola i cookie restanti
 sitedata-option-block-unvisited =
     .label = Cookie da siti web non visitati
 sitedata-option-block-all-third-party =
@@ -1177,7 +1120,6 @@ addressbar-locbar-shortcuts-option =
 addressbar-locbar-topsites-option =
     .label = Siti principali
     .accesskey = a
-
 addressbar-locbar-engines-option =
     .label = Motori di ricerca
     .accesskey = M
@@ -1212,7 +1154,6 @@ enhanced-tracking-protection-setting-custom =
 content-blocking-etp-standard-desc = Equilibrio tra protezione e prestazioni. Le pagine si caricheranno normalmente.
 content-blocking-etp-strict-desc = Maggiore protezione, ma alcuni siti o contenuti potrebbero non funzionare correttamente.
 content-blocking-etp-custom-desc = Scegli quali traccianti e script bloccare.
-
 content-blocking-etp-blocking-desc = { -brand-short-name } blocca i seguenti elementi:
 
 content-blocking-private-windows = Contenuti traccianti in finestre anonime
@@ -1231,15 +1172,14 @@ content-blocking-fingerprinters = Fingerprinter
 # "Test pilot" is used as a verb. Possible alternatives:
 # "Be the first to try", "Join an early experiment".
 content-blocking-etp-standard-tcp-rollout-checkbox =
-  .label = Prova in anteprima la nuova potente funzione per la privacy
-  .accesskey = P
+    .label = Prova in anteprima la nuova potente funzione per la privacy
+    .accesskey = P
 
 # "Contains" here means "isolates", "limits".
 content-blocking-etp-standard-tcp-rollout-description = La Protezione totale per i cookie isola i cookie del sito in cui ti trovi. In questo modo non è possibile utilizzarli per seguirti da un sito all’altro.
 content-blocking-etp-standard-tcp-rollout-learn-more = Ulteriori informazioni
 
 content-blocking-warning-title = Attenzione
-content-blocking-and-isolating-etp-warning-description = Il blocco degli elementi traccianti e l’isolamento dei cookie possono impedire il corretto funzionamento di alcuni siti. Ricaricare la pagina con gli elementi traccianti per visualizzare tutti i contenuti.
 content-blocking-and-isolating-etp-warning-description-2 = Questa impostazione potrebbe causare in alcuni siti la mancata visualizzazione di contenuti o altri problemi di funzionamento. Se una pagina non viene visualizzata correttamente, provare a disattivare la protezione antitracciamento per quel sito per ricaricare tutti i contenuti.
 content-blocking-warning-learn-how = Scopri come
 
@@ -1323,10 +1263,6 @@ permissions-autoplay-settings =
 permissions-block-popups =
     .label = Blocca le finestre pop-up
     .accesskey = B
-
-permissions-block-popups-exceptions =
-    .label = Eccezioni…
-    .accesskey = o
 
 permissions-block-popups-exceptions-button =
     .label = Eccezioni…

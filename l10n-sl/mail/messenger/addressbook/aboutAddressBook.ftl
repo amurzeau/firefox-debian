@@ -136,7 +136,11 @@ about-addressbook-confirm-delete-contacts =
 
 ## Details
 
+about-addressbook-write-action-button = Piši
+about-addressbook-event-action-button = Dogodek
+about-addressbook-search-action-button = Išči
 about-addressbook-begin-edit-contact-button = Uredi
+about-addressbook-delete-edit-contact-button = Izbriši
 about-addressbook-cancel-edit-contact-button = Prekliči
 about-addressbook-save-edit-contact-button = Shrani
 about-addressbook-details-email-addresses-header = E-poštni naslovi
@@ -144,6 +148,12 @@ about-addressbook-details-phone-numbers-header = Telefonske številke
 about-addressbook-details-home-address-header = Domači naslov
 about-addressbook-details-work-address-header = Službeni naslov
 about-addressbook-details-other-info-header = Drugi podatki
+about-addressbook-entry-name-birthday = Rojstni dan
+about-addressbook-entry-name-anniversary = Obletnica
+about-addressbook-entry-name-department = Oddelek
+about-addressbook-entry-name-organization = Organizacija
+about-addressbook-entry-name-website = Spletno mesto
+about-addressbook-entry-name-time-zone = Časovni pas
 about-addressbook-unsaved-changes-prompt-title = Neshranjene spremembe
 about-addressbook-unsaved-changes-prompt = Ali želite shraniti spremembe, preden zapustite pogled za urejanje?
 

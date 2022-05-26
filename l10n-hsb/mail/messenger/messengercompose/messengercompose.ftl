@@ -3,6 +3,24 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+## Send Format
+
+compose-send-format-menu =
+    .label = Słanski format
+    .accesskey = S
+compose-send-auto-menu-item =
+    .label = Awtomatiski
+    .accesskey = A
+compose-send-both-menu-item =
+    .label = HTML a luty tekst
+    .accesskey = H
+compose-send-html-menu-item =
+    .label = Jenož HTML
+    .accesskey = J
+compose-send-plain-menu-item =
+    .label = Jenož luty tekst
+    .accesskey = l
+
 ## Addressing widget
 
 #   $type (String) - the type of the addressing row
@@ -70,9 +88,6 @@ menuitem-toggle-attachment-pane =
 toolbar-button-add-attachment =
     .label = Připowěsnyć
     .tooltiptext = Přiwěšk přidać ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
-add-attachment-notification-reminder =
-    .label = Přiwěšk přidać…
-    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 add-attachment-notification-reminder2 =
     .label = Přiwěšk přidać…
     .accesskey = P
@@ -101,10 +116,6 @@ attachment-bucket-count-value =
         [few] { $count } přiwěški
        *[other] { $count } přiwěškow
     }
-expand-attachment-pane-tooltip =
-    .tooltiptext = Wobłuk přiwěškow pokazać ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Wobłuk přiwěškow schować ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Wobłuk přiwěškow pokazać ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -140,10 +151,6 @@ button-return-receipt =
 
 ## Encryption
 
-message-to-be-signed-icon =
-    .alt = Powěsć signować
-message-to-be-encrypted-icon =
-    .alt = Powěsć zaklučować
 encryption-menu =
     .label = Wěstota
     .accesskey = W
@@ -156,6 +163,9 @@ encryption-options-openpgp =
 encryption-options-smime =
     .label = S/MIME
     .tooltiptext = Nastajenja za zaklučowanje S/MIME pokazać abo změnić
+signing-toggle =
+    .label = Signować
+    .tooltiptext = Digitalny podpis za tutu powěsć wužiwać
 menu-openpgp =
     .label = OpenPGP
     .accesskey = O
@@ -181,7 +191,7 @@ menu-open-key-manager =
     .label = Zrjadowak klučow
     .accesskey = Z
 openpgp-key-issue-notification-one = Zaklučowanje kónc do kónca sej rozrisanje klučowych problemow za { $addr } wužaduje
-openpgp-key-issue-notification-many = Zaklučowanje kónc do kónca sej rozrisanje klučowych problemow za někotrych přijimarjow wužaduje ({ $count })
+openpgp-key-issue-notification-many = Zaklučowanje kónc do kónca sej rozrisanje klučowych problemow za někotrych přijimarjow wužaduje ({ $count }).
 smime-cert-issue-notification-one = Zaklučowanje kónc do kónca sej rozrisanje certifikatowych problemow za { $addr } wužaduje
 smime-cert-issue-notification-many = Zaklučowanje kónc do kónca sej rozrisanje certifikatowych problemow za někotrych přijimarjow wužaduje ({ $count })
 key-notification-disable-encryption =
@@ -195,38 +205,6 @@ key-notification-resolve =
 
 ## Addressing Area
 
-to-compose-address-row-label =
-    .value = Komu
-#   $key (String) - the shortcut key for this field
-to-compose-show-address-row-menuitem =
-    .label = Polo { to-compose-address-row-label.value }
-    .accesskey = P
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-to-compose-show-address-row-label =
-    .value = { to-compose-address-row-label.value }
-    .tooltiptext = Polo { to-compose-address-row-label.value } pokazać ({ to-compose-show-address-row-menuitem.acceltext })
-cc-compose-address-row-label =
-    .value = Kopija
-#   $key (String) - the shortcut key for this field
-cc-compose-show-address-row-menuitem =
-    .label = Polo { cc-compose-address-row-label.value }
-    .accesskey = K
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-cc-compose-show-address-row-label =
-    .value = { cc-compose-address-row-label.value }
-    .tooltiptext = Polo { cc-compose-address-row-label.value } pokazać ({ cc-compose-show-address-row-menuitem.acceltext })
-bcc-compose-address-row-label =
-    .value = Schowana kopija
-#   $key (String) - the shortcut key for this field
-bcc-compose-show-address-row-menuitem =
-    .label = Polo { bcc-compose-address-row-label.value }
-    .accesskey = S
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-bcc-compose-show-address-row-label =
-    .value = { bcc-compose-address-row-label.value }
-    .tooltiptext = Polo { bcc-compose-address-row-label.value } pokazać ({ bcc-compose-show-address-row-menuitem.acceltext })
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-many-public-recipients-info = Přijimarjo budu w polomaj Komu a Kopija adresu druhich widźeć. Ličba: { $count }. Wužiwajće město toho polo Schowana kopija, zo byšće tomu zadźěwał, zo so přijimarjo přeradźuja.
 to-address-row-label =
     .value = Komu
 #   $key (String) - the shortcut key for this field
@@ -395,3 +373,17 @@ cloud-file-attachment-error = Přiwěšk { $filename } Filelink njeda so aktuali
 # $filename (string) - name of the file that was renamed and caused the error
 cloud-file-account-error-title = Kontowy zmylk Filelink
 cloud-file-account-error = Přiwěšk { $filename } Filelink njeda so aktualizować, dokelž jeho lokalna dataja je so zhašała.
+
+## Link Preview
+
+link-preview-title = Wotkazowy přehlad
+link-preview-description = { -brand-short-name } móže zasadźeny přehlad přidać, hdyž so wotkazy zasadźeja.
+link-preview-autoadd = Wotkazowe přehlady awtomatisce přidać, jeli móžno
+link-preview-replace-now = Wotkazowy přehlad za tutón wotkaz přidać?
+link-preview-yes-replace = Haj
+
+## Dictionary selection popup
+
+spell-add-dictionaries =
+    .label = Słowniki přidać…
+    .accesskey = S

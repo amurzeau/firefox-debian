@@ -3,6 +3,24 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+## Send Format
+
+compose-send-format-menu =
+    .label = Verzendopmaak
+    .accesskey = o
+compose-send-auto-menu-item =
+    .label = Automatisch
+    .accesskey = A
+compose-send-both-menu-item =
+    .label = Zowel HTML als platte tekst
+    .accesskey = Z
+compose-send-html-menu-item =
+    .label = Alleen HTML
+    .accesskey = H
+compose-send-plain-menu-item =
+    .label = Alleen platte tekst
+    .accesskey = p
+
 ## Addressing widget
 
 #   $type (String) - the type of the addressing row
@@ -66,9 +84,6 @@ menuitem-toggle-attachment-pane =
 toolbar-button-add-attachment =
     .label = Koppelen
     .tooltiptext = Een bijlage toevoegen ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
-add-attachment-notification-reminder =
-    .label = Bijlage toevoegen…
-    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 add-attachment-notification-reminder2 =
     .label = Bijlage toevoegen…
     .accesskey = B
@@ -95,10 +110,6 @@ attachment-bucket-count-value =
         [one] { $count } bijlage
        *[other] { $count } bijlagen
     }
-expand-attachment-pane-tooltip =
-    .tooltiptext = Het bijlagevenster tonen ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Het bijlagevenster verbergen ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Het bijlagevenster tonen ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -130,10 +141,6 @@ button-return-receipt =
 
 ## Encryption
 
-message-to-be-signed-icon =
-    .alt = Bericht ondertekenen
-message-to-be-encrypted-icon =
-    .alt = Bericht versleutelen
 encryption-menu =
     .label = Beveiliging
     .accesskey = v
@@ -146,6 +153,9 @@ encryption-options-openpgp =
 encryption-options-smime =
     .label = S/MIME
     .tooltiptext = S/MIME-versleutelingsinstellingen bekijken of wijzigen
+signing-toggle =
+    .label = Ondertekenen
+    .tooltiptext = Digitale ondertekening gebruiken voor dit bericht
 menu-openpgp =
     .label = OpenPGP
     .accesskey = O
@@ -185,38 +195,6 @@ key-notification-resolve =
 
 ## Addressing Area
 
-to-compose-address-row-label =
-    .value = Aan
-#   $key (String) - the shortcut key for this field
-to-compose-show-address-row-menuitem =
-    .label = Veld { to-compose-address-row-label.value }
-    .accesskey = A
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-to-compose-show-address-row-label =
-    .value = { to-compose-address-row-label.value }
-    .tooltiptext = Veld { to-compose-address-row-label.value } tonen ({ to-compose-show-address-row-menuitem.acceltext })
-cc-compose-address-row-label =
-    .value = Cc
-#   $key (String) - the shortcut key for this field
-cc-compose-show-address-row-menuitem =
-    .label = Veld { cc-compose-address-row-label.value }
-    .accesskey = C
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-cc-compose-show-address-row-label =
-    .value = { cc-compose-address-row-label.value }
-    .tooltiptext = Veld { cc-compose-address-row-label.value } tonen ({ cc-compose-show-address-row-menuitem.acceltext })
-bcc-compose-address-row-label =
-    .value = Bcc
-#   $key (String) - the shortcut key for this field
-bcc-compose-show-address-row-menuitem =
-    .label = Veld { bcc-compose-address-row-label.value }
-    .accesskey = B
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-bcc-compose-show-address-row-label =
-    .value = { bcc-compose-address-row-label.value }
-    .tooltiptext = Veld { bcc-compose-address-row-label.value } tonen ({ bcc-compose-show-address-row-menuitem.acceltext })
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-many-public-recipients-info = De { $count } ontvangers in Aan en Cc zullen elkaars adres zien. U kunt voorkomen dat ontvangers worden onthuld door in plaats hiervan Bcc te gebruiken.
 to-address-row-label =
     .value = Aan
 #   $key (String) - the shortcut key for this field
@@ -379,3 +357,17 @@ cloud-file-attachment-error = Kan de Filelink-bijlage { $filename } niet bijwerk
 # $filename (string) - name of the file that was renamed and caused the error
 cloud-file-account-error-title = Filelink-accountfout
 cloud-file-account-error = Kan de Filelink-bijlage { $filename } niet bijwerken, omdat de Filelink-account is verwijderd.
+
+## Link Preview
+
+link-preview-title = Koppelingsvoorbeeld
+link-preview-description = { -brand-short-name } kan een ingesloten voorbeeld toevoegen bij het plakken van koppelingen.
+link-preview-autoadd = Koppelingsvoorbeelden indien mogelijk automatisch toevoegen
+link-preview-replace-now = Een koppelingsvoorbeeld voor deze koppeling toevoegen?
+link-preview-yes-replace = Ja
+
+## Dictionary selection popup
+
+spell-add-dictionaries =
+    .label = Woordenboeken toevoegen…
+    .accesskey = t

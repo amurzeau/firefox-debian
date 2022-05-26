@@ -4,6 +4,17 @@
 
 e2e-intro-description = I anfon negeseuon wedi'u hamgryptio neu wedi'u llofnodi'n ddigidol, mae angen i chi ffurfweddu technoleg amgryptio, naill ai OpenPGP neu S / MIME.
 e2e-intro-description-more = Dewiswch eich allwedd bersonol i alluogi defnyddio OpenPGP, neu'ch tystysgrif bersonol i alluogi defnyddio S/MIME. Ar gyfer allwedd neu dystysgrif bersonol chi sy'n berchen ar yr allwedd gyfrinachol gyfatebol.
+e2e-signing-description = Mae llofnod digidol yn caniatáu i dderbynwyr wirio bod y neges wedi'i hanfon gennych chi ac nad yw'r cynnwys wedi'i newid. Mae negeseuon amgryptiedig wedi eu llofnodi drwy ragosodiad.
+e2e-sign-message =
+    .label = Llofnodi negeseuon heb eu hamgryptio
+    .accesskey = h
+e2e-disable-enc =
+    .label = Analluogi amgryptio ar gyfer negeseuon newydd
+    .accesskey = A
+e2e-enable-enc =
+    .label = Galluogi amgryptio ar gyfer negeseuon newydd
+    .accesskey = G
+e2e-enable-description = Byddwch yn gallu analluogi amgryptio ar gyfer negeseuon unigol.
 e2e-advanced-section = Gosodiadau uwch
 e2e-attach-key =
     .label = Atodwch fy allwedd gyhoeddus wrth ychwanegu llofnod digidol OpenPGP
@@ -44,6 +55,8 @@ openpgp-generate-key =
 openpgp-advanced-prefs-button-label =
     .label = Uwch…
 openpgp-keygen-desc = <a data-l10n-name="openpgp-keygen-desc-link">SYLWCH: Gall cynhyrchu allweddol gymryd rhai munudau i'w gwblhau.</a> Peidiwch â gadael y rhaglen tra bo'r allwedd yn cael ei gynhyrchu. Bydd pori neu berfformio gweithrediadau disg-ddwys yn ystod cynhyrchu'r allwedd yn ailgyflenwi'r 'gronfa ar hap' ac yn cyflymu'r broses. Cewch eich rhybuddio pan fydd cynhyrchu'r allweddol wedi'i gwblhau.
+openpgp-key-created-label =
+    .label = Crëwyd
 openpgp-key-expiry-label =
     .label = Dod i ben
 openpgp-key-id-label =
@@ -192,6 +205,11 @@ openpgp-key-man-reload =
 openpgp-key-man-change-expiry =
     .label = Newid Dyddiad Dod i Ben
     .accesskey = N
+openpgp-key-man-refresh-online =
+    .label = Adnewyddu Ar-lein
+    .accesskey = d
+openpgp-key-man-ignored-ids =
+    .label = Cyfeiriadau e-bost
 openpgp-key-man-del-key =
     .label = Dileu Allwedd(i)
     .accesskey = D
@@ -237,20 +255,31 @@ openpgp-key-man-select-all-key =
     .key = P
 openpgp-key-man-key-details-key =
     .key = I
+openpgp-ign-addr-intro = Rydych yn derbyn defnyddio'r allwedd hon ar gyfer y cyfeiriadau e-bost dethol canlynol:
 openpgp-key-details-title =
     .title = Priodweddau'r Allwedd
+openpgp-key-details-doc-title = Priodweddau Allweddi
 openpgp-key-details-signatures-tab =
     .label = Ardystiadau
 openpgp-key-details-structure-tab =
     .label = Strwythur
 openpgp-key-details-uid-certified-col =
     .label = ID Defnyddiwr / Ardystiedig gan
+openpgp-key-details-key-id-label = ID Allwedd
 openpgp-key-details-user-id2-label = Perchennog Honedig Allwedd
+openpgp-key-details-user-id3-label = Perchennog Honedig Allwedd
 openpgp-key-details-id-label =
     .label = ID
 openpgp-key-details-key-type-label = Math
 openpgp-key-details-key-part-label =
     .label = Rhan Allwedd
+openpgp-key-details-attr-ignored = Rhybudd: Efallai na fydd yr allwedd hon yn gweithio yn ôl y disgwyl, oherwydd bod rhai o'i phriodweddau'n anniogel ac y mae modd eu hanwybyddu.
+openpgp-key-details-attr-upgrade-sec = Dylech uwchraddio'r priodweddau anniogel.
+openpgp-key-details-attr-upgrade-pub = Dylech ofyn i berchennog yr allwedd hon i uwchraddio'r priodweddau anniogel.
+openpgp-key-details-upgrade-unsafe =
+    .label = Uwchraddio Priodweddau Anniogel
+    .accesskey = U
+openpgp-key-details-upgrade-ok = Uwchraddiwyd yr allwedd yn llwyddiannus. Dylech rannu'r allwedd gyhoeddus wedi'i huwchraddio gyda'ch gohebwyr.
 openpgp-key-details-algorithm-label =
     .label = Algorithm
 openpgp-key-details-size-label =
@@ -268,7 +297,6 @@ openpgp-key-details-legend-secret-missing = Ar gyfer bysellau sydd wedi'u marcio
 openpgp-key-details-sel-action =
     .label = Dewis gweithred...
     .accesskey = g
-openpgp-key-details-also-known-label = Hunaniaethau Honedig Eraill Perchennog yr Allwedd:
 openpgp-card-details-close-window-label =
     .buttonlabelaccept = Cau
 openpgp-acceptance-label =
@@ -284,7 +312,6 @@ openpgp-acceptance-verified-label =
 key-accept-personal =
     Yn yr allwedd hon, mae gennych rhan gyhoeddus a rhan gyfrinachol. Gallwch ei defnyddio fel allwedd bersonol.
     Os rhoddwyd yr allwedd hon i chi gan rywun arall, yna peidiwch â'i defnyddio fel allwedd bersonol.
-key-personal-warning = A wnaethoch chi greu'r allwedd hon eich hun, ac mae perchnogaeth yr allwedd sy'n cael ei ddangos yn cyfeirio atoch chi'ch hun?
 openpgp-personal-no-label =
     .label = Na, peidio'i defnyddio fel fy allwedd bersonol.
 openpgp-personal-yes-label =
@@ -294,17 +321,18 @@ openpgp-copy-cmd-label =
 
 ## e2e encryption settings
 
+#   $identity (String) - the email address of the currently selected identity
+openpgp-description-no-key = Nid oes gan { -brand-short-name } allwedd OpenPGP personol ar gyfer <b>{ $identity }</b>
 #   $count (Number) - the number of configured keys associated with the current identity
 #   $identity (String) - the email address of the currently selected identity
-openpgp-description =
+openpgp-description-has-keys =
     { $count ->
-        [0] Nid oes gan Thunderbird allwedd OpenPGP personol ar gyfer <b>{ $identity }</b>
-        [zero] Mae Thunderbird wedi canfod { $count } allwedd OpenPGP personol sy'n gysylltiedig â <b>{ $identity }</b>
-        [one] Mae Thunderbird wedi canfod { $count } allwedd OpenPGP personol sy'n gysylltiedig â <b>{ $identity }</b>
-        [two] Mae Thunderbird wedi canfod { $count } allwedd OpenPGP personol sy'n gysylltiedig â <b>{ $identity }</b>
-        [few] Mae Thunderbird wedi canfod { $count } allwedd OpenPGP personol sy'n gysylltiedig â <b>{ $identity }</b>
-        [many] Mae Thunderbird wedi canfod { $count } allwedd OpenPGP personol sy'n gysylltiedig â <b>{ $identity }</b>
-       *[other] Mae Thunderbird wedi canfod { $count } allwedd OpenPGP personol sy'n gysylltiedig â <b>{ $identity }</b>
+        [zero] Mae { -brand-short-name } wedi canfod { $count } allwedd OpenPGP personol sy'n gysylltiedig â <b>{ $identity }</b>
+        [one] Mae { -brand-short-name } wedi canfod { $count } allwedd OpenPGP personol sy'n gysylltiedig â <b>{ $identity }</b>
+        [two] Mae { -brand-short-name } wedi canfod { $count } allwedd OpenPGP personol sy'n gysylltiedig â <b>{ $identity }</b>
+        [few] Mae { -brand-short-name } wedi canfod { $count } allwedd OpenPGP personol sy'n gysylltiedig â <b>{ $identity }</b>
+        [many] Mae { -brand-short-name } wedi canfod { $count } allwedd OpenPGP personol sy'n gysylltiedig â <b>{ $identity }</b>
+       *[other] Mae { -brand-short-name } wedi canfod { $count } allwedd OpenPGP personol sy'n gysylltiedig â <b>{ $identity }</b>
     }
 #   $key (String) - the currently selected OpenPGP key
 openpgp-selection-status-have-key = Mae eich ffurfweddiad cyfredol yn defnyddio ID allwedd <b>{ $key }</b>
@@ -362,13 +390,11 @@ key-expired-date = Daeth yr allwedd i ben ar { $keyExpiry }
 key-expired-simple = Mae'r allwedd wedi dod i ben
 key-revoked-simple = Mae'r allwedd wedi'i dirymu
 key-do-you-accept = Ydych chi'n derbyn yr allwedd hon ar gyfer gwirio llofnodion digidol ac ar gyfer amgryptio negeseuon?
-key-accept-warning = Peidiwch â derbyn allweddi twyllodrus. Defnyddiwch sianel gyfathrebu heblaw e-bost i wirio bysbrint allwedd eich gohebydd.
+key-verification = Dilyswch bysbrint yr allwedd gan ddefnyddio sianel gyfathrebu ddiogel ar wahân i e-bost i wneud yn siŵr mai dyma allwedd go iawn { $addr }.
 # Strings enigmailMsgComposeOverlay.js
 cannot-use-own-key-because = Methu anfon y neges, oherwydd mae problem gyda'ch allwedd bersonol. { $problem }
 cannot-encrypt-because-missing = Methu anfon y neges hon gydag amgryptio pen-i-ben, oherwydd mae problemau gydag allweddi'r derbynwyr canlynol: { $problem }
 window-locked = Mae'r ffenestr gyfansoddi wedi'i chloi; anfon wedi'i ddiddymu
-# Strings in mimeDecrypt.jsm
-mime-decrypt-encrypted-part-attachment-label = Rhan o neges wedi'i hamgryptio
 # Strings in mimeDecrypt.jsm
 mime-decrypt-encrypted-part-concealed-data = Mae hon yn rhan o neges wedi'i hamgryptio. Mae angen i chi ei hagor mewn ffenestr ar wahân trwy glicio ar yr atodiad.
 # Strings in keyserver.jsm
@@ -392,25 +418,6 @@ converter-decrypt-body-failed =
     Methu dadgryptio neges gyda'r pwnc
     { $subject }.
     Ydych chi am geisio eto gyda chyfrinair gwahanol neu a ydych chi am hepgor y neges?
-# Strings in gpg.jsm
-unknown-signing-alg = Algorithm llofnodi anhysbys (ID: { $id })
-unknown-hash-alg = Hash cryptograffig anhysbys (ID: { $id }
-# Strings in keyUsability.jsm
-expiry-key-expires-soon =
-    Bydd eich allwedd { $desc } yn dod i ben mewn llai na { $days } diwrnod.
-    Rydym yn argymell eich bod yn creu pâr o allweddi newydd ac yn ffurfweddu'r cyfrifon cyfatebol i'w ddefnyddio.
-expiry-keys-expire-soon =
-    Bydd eich allwedd { $desc } yn dod i ben mewn llai na { $days } diwrnod.
-    Rydym yn argymell eich bod yn creu allweddi newydd ac yn ffurfweddu'r cyfrifon cyfatebol i'w ddefnyddio.
-expiry-key-missing-owner-trust =
-    Mae eich allwedd gyfrinachol { $desc } yn fyr o ymddiriedaeth.
-    Rydym yn argymell eich bod yn gosod "Rydych chi'n dibynnu ar ardystiadau" i "eithaf" ym mhriodweddau'r allwedd.
-expiry-keys-missing-owner-trust =
-    Mae'ch allweddi cyfrinachol canlynol { $desc } yn fyr o ymddiriedaeth.
-    { $desc }.
-    Rydym yn argymell eich bod yn gosod "Rydych chi'n dibynnu ar ardystiadau" i "eithaf" ym mhriodweddau'r allwedd.
-expiry-open-key-manager = Agor Rheolwr Allweddi OpenPGP
-expiry-open-key-properties = Agor Priodweddau Allweddi
 # Strings filters.jsm
 filter-folder-required = Rhaid dewis ffolder targed.
 filter-decrypt-move-warn-experimental =
@@ -528,6 +535,9 @@ key-error-not-accepted-as-personal = Nid ydych wedi cadarnhau mai'r allwedd gyda
 need-online = Nid yw'r swyddogaeth rydych chi wedi'i dewis ar gael yn y modd all-lein. Ewch ar-lein a rhoi cynnig arall arni.
 # Strings used in keyRing.jsm & keyLookupHelper.jsm
 no-key-found = Nid oeddwn yn gallu canfod unrhyw allwedd sy'n cyfateb i'r meini prawf chwilio penodol yna.
+# Strings used in keyRing.jsm & keyLookupHelper.jsm
+no-key-found2 = Nid oeddwn yn gallu canfod unrhyw allwedd sy'n cyfateb i'r meini prawf chwilio penodol yna.
+no-update-found = Mae gennych eisoes yr allweddi a ddarganfuwyd ar-lein.
 # Strings used in keyRing.jsm & GnuPGCryptoAPI.jsm
 fail-key-extract = Gwall - methodd y gorchymyn echdynnu allwedd
 # Strings used in keyRing.jsm
@@ -613,18 +623,9 @@ send-to-news-warning =
     Nid yw hyn yn cael ei annog oherwydd nad yw ond yn gwneud synnwyr os yw pob aelod o'r grŵp yn gallu dadgryptio'r neges, h.y. mae angen amgryptio'r neges gydag allweddi holl gyfranogwyr y grŵp. Anfonwch y neges hon dim ond os ydych chi'n gwybod yn union beth rydych chi'n ei wneud.
     Parhau?
 save-attachment-header = Cadw atodiad wedi'i ddadgryptio
-no-temp-dir =
-    Methu dod o hyd i gyfeiriadur dros dro i ysgrifennu ato
-    Gosodwch y newidyn amgylchedd TEMP
 possibly-pgp-mime = Neges wedi'i hamgryptio neu wedi'i llofnodi gan PGP/MIME o bosibl; defnyddiwch swyddogaeth 'Dadgryptio/Gwirio' i wirio
 cannot-send-sig-because-no-own-key = Methu llofnodi'r neges hon yn ddigidol, oherwydd nid ydych eto wedi ffurfweddu amgryptio pen-i-ben ar gyfer <{ $key }>
 cannot-send-enc-because-no-own-key = Methu anfon y neges hon wedi'i hamgryptio, oherwydd nid ydych eto wedi ffurfweddu amgryptio pen-i-ben ar gyfer <{ $key }>
-compose-menu-attach-key =
-    .label = Atodi fy Allwedd Gyhoeddus
-    .accesskey = A
-compose-menu-encrypt-subject =
-    .label = Amgryptio Pwnc
-    .accesskey = A
 # Strings used in decryption.jsm
 do-import-multiple =
     Mewnforio'r allweddi canlynol?

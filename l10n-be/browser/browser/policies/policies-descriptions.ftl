@@ -13,6 +13,7 @@
 policy-3rdparty = Устанавіць палітыку, згодна з якой WebExtensions маюць доступ праз chrome.storage.managed.
 policy-AllowedDomainsForApps = Вызначыць дамены, якім дазволены доступ да Google Workspace.
 policy-AppAutoUpdate = Уключыць або выключыць аўтаматычнае абнаўленне праграмы.
+policy-AppUpdatePin = Не дазваляць { -brand-short-name } абнаўляцца за межы ўказанай версіі.
 policy-AppUpdateURL = Задаць свой URL-адрас для абнаўлення праграмы.
 policy-Authentication = Наладзіць інтэграваную аўтарызацыю для сайтаў, якія яе падтрымліваюць.
 policy-AutoLaunchProtocolsFromOrigins = Вызначыць спіс знешніх пратаколаў, якія можна выкарыстоўваць з пералічаных крыніц, не запытваючы карыстальніка.
@@ -58,6 +59,7 @@ policy-DownloadDirectory = Устанавіць і замацаваць ката
 policy-EnableTrackingProtection = Уключыць або выключыць блакаванне змесціва і, па жаданні, забараніць змяненне налады.
 # “lock” means that the user won’t be able to change this setting
 policy-EncryptedMediaExtensions = Уключыць або выключыць пашырэнні для шыфравання медыя і, па жаданні, забараніць змяненне налады.
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Адключыць папярэджанні на аснове пашырэння файла для пэўных тыпаў файлаў у даменах.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.

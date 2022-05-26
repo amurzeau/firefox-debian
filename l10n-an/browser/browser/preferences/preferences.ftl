@@ -61,26 +61,6 @@ restart-later = Reiniciar mas entabant
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that the password manager setting
-# is being controlled by an extension
-extension-controlled-password-saving = Una extensión, <img data-l10n-name="icon"/> { $name }, ye controlando este parametro.
-
-# This string is shown to notify the user that their notifications permission
-# is being controlled by an extension.
-extension-controlled-web-notifications = Una extensión, <img data-l10n-name="icon"/> { $name }, ye controlando este parametro.
-
-# This string is shown to notify the user that Container Tabs
-# are being enabled by an extension.
-extension-controlled-privacy-containers = Una extensión, <img data-l10n-name="icon"/> { $name }, requiere Pestanyas Contenederas.
-
-# This string is shown to notify the user that their content blocking "All Detected Trackers"
-# preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = Una extensión, <img data-l10n-name="icon"/> { $name }, ye controlando este parametro.
-
-# This string is shown to notify the user that their proxy configuration preferences
-# are being controlled by an extension.
-extension-controlled-proxy-config = Una extensión, <img data-l10n-name="icon"/> { $name }, ye controlando cómo { -brand-short-name } se connecta a internet.
-
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -109,10 +89,6 @@ set-as-my-default-browser =
     .label = Definir per defecto…
     .accesskey = D
 
-startup-restore-previous-session =
-    .label = Restaurar la sesión anterior
-    .accesskey = s
-
 startup-restore-warn-on-quit =
     .label = Alvertir-te quan se salga d'o navegador
 
@@ -128,10 +104,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Ubrir vinclos en pestanyas en cuenta d'en nuevas finestras
     .accesskey = w
-
-warn-on-close-multiple-tabs =
-    .label = Alvertir-me en zarrar multiples pestanyas
-    .accesskey = m
 
 warn-on-open-many-tabs =
     .label = Alvertir-me quan ubrir multiples pestanyas pueda enlentir lo { -brand-short-name }
@@ -178,12 +150,9 @@ containers-remove-alert-msg =
 containers-remove-ok-button = Borrar iste contenedor
 containers-remove-cancel-button = No borrar iste contenedor
 
-
 ## General Section - Language & Appearance
 
 language-and-appearance-header = Idioma y aparición
-
-fonts-and-colors-header = Fuents y Colors
 
 default-font = Tipografía por defecto:
     .accesskey = d
@@ -193,10 +162,6 @@ default-font-size = Mida:
 advanced-fonts =
     .label = Abanzadas…
     .accesskey = A
-
-colors-settings =
-    .label = Colors…
-    .accesskey = C
 
 # Zoom is a noun, and the message is used as header for a group of options
 preferences-zoom-header = Zoom
@@ -255,6 +220,9 @@ download-header = Descargas
 
 download-save-to =
     .label = Alzar os fichers en
+    .accesskey = A
+
+download-save-where = Alzar os fichers en
     .accesskey = A
 
 download-choose-folder =
@@ -546,16 +514,12 @@ home-prefs-content-description = Tría qué contenius quiers veyer en a tuya pac
 
 home-prefs-search-header =
     .label = Busqueda web
-home-prefs-topsites-header =
-    .label = Puestos mas vesitaus
-home-prefs-topsites-description = Los puestos que mas vesitas
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
     .label = Recomendau per { $provider }
-home-prefs-recommended-by-description-update = Conteniu excepcional de tot lo web, triau per { $provider }
 
 ##
 
@@ -563,9 +527,6 @@ home-prefs-recommended-by-learn-more = Cómo funciona
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Articlos esponsorizaus
 
-home-prefs-highlights-header =
-    .label = Destacaus
-home-prefs-highlights-description = Una tría d'os puestos que has alzau u vesitau
 home-prefs-highlights-option-visited-pages =
     .label = Pachinas visitadas
 home-prefs-highlights-options-bookmarks =
@@ -581,7 +542,6 @@ home-prefs-highlights-option-saved-to-pocket =
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = Retallos
-home-prefs-snippets-description = Actualizacions de { -vendor-short-name } y { -brand-product-name }
 
 home-prefs-sections-rows-option =
     .label =
@@ -643,7 +603,6 @@ search-restore-default =
 search-remove-engine =
     .label = Borrar…
     .accesskey = r
-
 search-add-engine =
     .label = Anyadir
     .accesskey = A
@@ -844,7 +803,6 @@ forms-primary-pw-learn-more-link = Saber-ne mas
 forms-master-pw-change =
     .label = Cambiar a clau mayestra…
     .accesskey = m
-
 forms-primary-pw-change =
     .label = Cambiar a clau primaria…
     .accesskey = P
@@ -952,10 +910,6 @@ sitedata-block-desc = Tipo de conteniu blocau
 
 sitedata-option-block-cross-site-trackers =
     .label = Elementos de seguimiento entre puestos
-sitedata-option-block-cross-site-and-social-media-trackers =
-    .label = Elementos de seguimiento de puestos y retz socials
-sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
-    .label = Elementos de seguimiento entre puestos y en retz socials, y aíslar las de demás.
 sitedata-option-block-unvisited =
     .label = Cookies de webs no visitaus
 sitedata-option-block-all-third-party =
@@ -1036,7 +990,6 @@ content-blocking-cryptominers = Criptominers
 content-blocking-fingerprinters = Ditaladas dichitals
 
 content-blocking-warning-title = Atención!
-content-blocking-and-isolating-etp-warning-description = Lo bloqueyo d'elementos de seguimiento y l'aíslamiento de cookies podrían afectar a la funcionalidat de bell puesto. Recarga la pachina con elementos de seguimiento pa cargar tot lo conteniu.
 content-blocking-warning-learn-how = Aprende cómo
 
 content-blocking-reload-description = Habrás de recargar las tuyas pestanyas pa aplicar estes cambios.
@@ -1122,10 +1075,6 @@ permissions-autoplay-settings =
 permissions-block-popups =
     .label = Blocar finestras emerchents
     .accesskey = B
-
-permissions-block-popups-exceptions =
-    .label = Excepcions…
-    .accesskey = E
 
 permissions-addon-install-warning =
     .label = Alvertir-te quan bell puesto web mire d'instalar complementos

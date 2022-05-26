@@ -51,22 +51,6 @@ restart-later = Sonra yenidən başlat
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their notifications permission
-# is being controlled by an extension.
-extension-controlled-web-notifications = <img data-l10n-name="icon"/> { $name } adlı uzantı bu tənzimləməni idarə edir.
-
-# This string is shown to notify the user that Container Tabs
-# are being enabled by an extension.
-extension-controlled-privacy-containers = Uzantı, <img data-l10n-name="icon"/> { $name }, Konteyner vərəqlərini tələb edir.
-
-# This string is shown to notify the user that their content blocking "All Detected Trackers"
-# preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = Bu tənzimləməni uzantı, <img data-l10n-name="icon"/> { $name }, idarə edir.
-
-# This string is shown to notify the user that their proxy configuration preferences
-# are being controlled by an extension.
-extension-controlled-proxy-config = Uzantı, <img data-l10n-name="icon"/> { $name }, { -brand-short-name } səyyahının internetə necə qoşulduğunu idarə edir.
-
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -95,10 +79,6 @@ set-as-my-default-browser =
     .label = Əsas səyyahım et…
     .accesskey = m
 
-startup-restore-previous-session =
-    .label = Əvvəlki sessiyanı bərpa et
-    .accesskey = s
-
 disable-extension =
     .label = Uzantını söndür
 
@@ -111,10 +91,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Keçidləri yeni pəncərə yerinə vərəqlərdə aç
     .accesskey = p
-
-warn-on-close-multiple-tabs =
-    .label = Birdən çox vərəq bağlarkən xəbərdar olun
-    .accesskey = B
 
 warn-on-open-many-tabs =
     .label = Çoxlu vərəq açmağın { -brand-short-name } səyyahını yavaşlada biləcəyindən xəbərdar olun
@@ -161,12 +137,9 @@ containers-remove-alert-msg =
 containers-remove-ok-button = Bu konteyneri sil
 containers-remove-cancel-button = Bu konteyneri silmə
 
-
 ## General Section - Language & Appearance
 
 language-and-appearance-header = Dil və Görünüş
-
-fonts-and-colors-header = Şriftlər və Rənglər
 
 default-font = Əsas şrift
     .accesskey = f
@@ -176,10 +149,6 @@ default-font-size = Ölçü
 advanced-fonts =
     .label = Təkmilləşmiş…
     .accesskey = T
-
-colors-settings =
-    .label = Rənglər…
-    .accesskey = R
 
 language-header = Dil
 
@@ -220,6 +189,9 @@ download-header = Endirilənlər
 
 download-save-to =
     .label = Faylların saxlandığı yer
+    .accesskey = y
+
+download-save-where = Faylların saxlandığı yer
     .accesskey = y
 
 download-choose-folder =
@@ -470,9 +442,6 @@ home-prefs-content-description = Firefox Evdə hansı məzmunları görmək ist�
 
 home-prefs-search-header =
     .label = Web Axtarış
-home-prefs-topsites-header =
-    .label = Qabaqcıl Saytlar
-home-prefs-topsites-description = Ən çox ziyarət etdiyiniz saytlar
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -488,9 +457,6 @@ home-prefs-recommended-by-learn-more = Bu necə işləyir
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponsorlaşdırılmış Hekayələr
 
-home-prefs-highlights-header =
-    .label = Seçilmişlər
-home-prefs-highlights-description = Saxladığınız və ya ziyarət etdiyiniz saytlardan seçmələr
 home-prefs-highlights-option-visited-pages =
     .label = Baxılmış Səhifələr
 home-prefs-highlights-options-bookmarks =
@@ -506,7 +472,6 @@ home-prefs-highlights-option-saved-to-pocket =
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = Hissələr
-home-prefs-snippets-description = { -vendor-short-name } və { -brand-product-name }dan yeniliklər
 
 home-prefs-sections-rows-option =
     .label =
@@ -578,9 +543,6 @@ containers-add-button =
 containers-remove-button =
     .label = Sil
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
@@ -595,9 +557,6 @@ sync-signedout-caption = Web-inizi özünüzlə gəzdirin
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Mobil cihazınızda sinronlaşdırmaq istəyirsinizsə <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> və ya <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> üçün Firefox endirin.
-
-## Sync Section - Signed in
-
 
 ## Firefox Account - Signed in
 
@@ -679,9 +638,6 @@ sync-connect-another-device = Digər cihazı qoş
 ## Privacy Section
 
 privacy-header = Səyahər Məxfiliyi
-
-## Privacy Section - Forms
-
 
 ## Privacy Section - Logins and Passwords
 
@@ -896,10 +852,6 @@ permissions-block-popups =
     .label = Peyda olan pəncərələri blokla
     .accesskey = b
 
-permissions-block-popups-exceptions =
-    .label = İstisnalar…
-    .accesskey = a
-
 permissions-addon-install-warning =
     .label = Saytlar əlavə quraşdırmaq istədikdə xəbərdar olun
     .accesskey = x
@@ -969,6 +921,7 @@ certs-devices =
     .accesskey = T
 
 ## Privacy Section - HTTPS-Only
+
 
 ## The following strings are used in the Download section of settings
 

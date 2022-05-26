@@ -8,11 +8,6 @@ toolbar-context-menu-menu-bar =
 
 ## Tools Menu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-menu-tools-preferences =
-    .label = Nastajenja
-    .accesskey = N
 menu-tools-settings =
     .label = Nastajenja
     .accesskey = N
@@ -55,6 +50,18 @@ menu-view-repair-text-encoding =
 
 ## View / Layout
 
+menu-font-size-label =
+    .label = Pismowe wjelikosć
+    .accesskey = i
+menuitem-font-size-enlarge =
+    .label = Pismowu wjelikosć pówětšyś
+    .accesskey = m
+menuitem-font-size-reduce =
+    .label = Pismowu wjelikosć pómjeńšyś
+    .accesskey = l
+menuitem-font-size-reset =
+    .label = Pismowu wjelikosć slědk stajiś
+    .accesskey = d
 mail-uidensity-label =
     .label = Gustosć
     .accesskey = G

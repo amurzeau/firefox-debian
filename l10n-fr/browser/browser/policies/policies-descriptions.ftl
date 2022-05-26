@@ -159,6 +159,8 @@ policy-OverridePostUpdatePage = Contrôler la page « Nouveautés » après un
 
 policy-PasswordManagerEnabled = Activer l’enregistrement des mots de passe dans le gestionnaire de mots de passe.
 
+policy-PasswordManagerExceptions = Empêcher { -brand-short-name } d’enregistrer les mots de passe pour certains sites.
+
 # PDF.js and PDF should not be translated
 policy-PDFjs = Désactiver ou configurer PDF.js, la visionneuse PDF intégrée dans { -brand-short-name }.
 

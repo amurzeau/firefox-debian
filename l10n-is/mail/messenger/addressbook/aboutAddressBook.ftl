@@ -124,14 +124,33 @@ about-addressbook-confirm-delete-contacts =
 
 ## Details
 
+about-addressbook-write-action-button = Skrifa
+about-addressbook-event-action-button = Atburður
+about-addressbook-search-action-button = Leita
 about-addressbook-begin-edit-contact-button = Breyta
+about-addressbook-delete-edit-contact-button = Eyða
 about-addressbook-cancel-edit-contact-button = Hætta við
 about-addressbook-save-edit-contact-button = Vista
+about-addressbook-add-contact-to = Bæta í:
 about-addressbook-details-email-addresses-header = Tölvupóstfang
 about-addressbook-details-phone-numbers-header = Símanúmer
 about-addressbook-details-home-address-header = Heimilisfang
 about-addressbook-details-work-address-header = Vinnustaður
+about-addressbook-details-addresses-header = Tölvupóstföng
+about-addressbook-details-notes-header = Athugasemdir
 about-addressbook-details-other-info-header = Aðrar upplýsingar
+about-addressbook-entry-type-work = Vinna
+about-addressbook-entry-type-home = Heima
+about-addressbook-entry-type-fax = Fax
+about-addressbook-entry-type-cell = Farsími
+about-addressbook-entry-type-pager = Símboði
+about-addressbook-entry-name-birthday = Fæðingardagur
+about-addressbook-entry-name-anniversary = Afmæli
+about-addressbook-entry-name-title = Titill
+about-addressbook-entry-name-department = Deild
+about-addressbook-entry-name-organization = Fyrirtæki/Stofnun
+about-addressbook-entry-name-website = Vefsvæði
+about-addressbook-entry-name-time-zone = Tímabelti
 about-addressbook-unsaved-changes-prompt-title = Óvistaðar breytingar
 about-addressbook-unsaved-changes-prompt = Viltu vista breytingarnar þínar áður en þú ferð úr breytingaglugganum?
 

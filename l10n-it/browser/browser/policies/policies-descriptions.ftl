@@ -15,6 +15,8 @@ policy-AllowedDomainsForApps = Definisce i domini con cui è consentito accedere
 
 policy-AppAutoUpdate = Attiva o disattiva aggiornamenti automatici dell’applicazione.
 
+policy-AppUpdatePin = Impedisce l’aggiornamento di { -brand-short-name } a una versione superiore a quella indicata.
+
 policy-AppUpdateURL = Imposta URL personalizzato per aggiornamento applicazione.
 
 policy-Authentication = Configura autenticazione integrata per i siti in cui è supportata.
@@ -99,6 +101,8 @@ policy-DownloadDirectory = Imposta la cartella per i download e impedisci ulteri
 policy-EnableTrackingProtection = Attiva o disattiva il blocco contenuti ed eventualmente impedisci modifiche all’opzione.
 
 policy-EncryptedMediaExtensions = Attiva o disattiva Encrypted Media Extensions ed eventualmente impedisci modifiche all’opzione.
+
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Disattiva avvisi associati all’estensione dei file per determinati tipi di file e domini.
 
 policy-Extensions = Installa, disinstalla o blocca estensioni. L’opzione per installare richiede URL o percorsi come parametri. L’opzione per disinstallare o bloccare richiede gli ID delle estensioni.
 

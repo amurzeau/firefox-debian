@@ -13,6 +13,7 @@
 policy-3rdparty = WebExtensions chrome.storage.managed арқылы қатынай алатын саясаттарды орнатыңыз.
 policy-AllowedDomainsForApps = Google Workspace жүйесіне қатынауға рұқсат етілген домендерді анықтайды.
 policy-AppAutoUpdate = Қолданбаны автожаңартуды іске қосу немесе сөндіру.
+policy-AppUpdatePin = { -brand-short-name } көрсетілген нұсқадан әрі қарай жаңартылуға тыйым салу.
 policy-AppUpdateURL = Қолданбаны жаңартудың таңдауыңызша URL-ын орнату.
 policy-Authentication = Құрамдас аутентификациясын қолдайтын веб-сайттары үшін оны баптау.
 policy-AutoLaunchProtocolsFromOrigins = Пайдаланушыға сұраусыз тізімделген қайнар көздерден пайдалануға болатын сыртқы хаттамалар тізімін анықтау.
@@ -58,6 +59,7 @@ policy-DownloadDirectory = Жүктеп алулар бумасын орнату
 policy-EnableTrackingProtection = Құраманы бұғаттауды іске қосу немесе сөндіру, және қосымша түрде оны бекіту.
 # “lock” means that the user won’t be able to change this setting
 policy-EncryptedMediaExtensions = Шифрленген медиа кеңейтулерін іске қосу немесе сөндіру, және қосымша түрде оны бекіту.
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Домендердегі белгілі бір файл түрлері үшін файл кеңейтуіне негізделген ескертулерін сөндіру.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.

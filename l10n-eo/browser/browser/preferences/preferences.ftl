@@ -75,21 +75,6 @@ restart-later = Restartigi poste
 
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
-extension-controlled-password-saving = La etendaĵo <img data-l10n-name="icon"/> { $name } regas tiun ĉi agordon.
-# This string is shown to notify the user that their notifications permission
-# is being controlled by an extension.
-extension-controlled-web-notifications = La etendaĵo <img data-l10n-name="icon"/>{ $name } nuntempe regas tiun ĉi agordon.
-# This string is shown to notify the user that Container Tabs
-# are being enabled by an extension.
-extension-controlled-privacy-containers = La etendaĵo <img data-l10n-name="icon"/> { $name } postulas ingajn langetojn.
-# This string is shown to notify the user that their content blocking "All Detected Trackers"
-# preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = La etendaĵo <img data-l10n-name="icon"/> { $name } regas tiun ĉi agordon.
-# This string is shown to notify the user that their proxy configuration preferences
-# are being controlled by an extension.
-extension-controlled-proxy-config = La etendaĵo <img data-l10n-name="icon"/> { $name } regas la manieron, kiel { -brand-short-name } konektiĝas al la reto.
-# This string is shown to notify the user that the password manager setting
-# is being controlled by an extension
 extension-controlling-password-saving = <img data-l10n-name="icon"/><strong>{ $name }</strong> regas tiun ĉi agordon.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
@@ -128,9 +113,6 @@ is-not-default = { -brand-short-name } ne estas via ĉefa retumilo
 set-as-my-default-browser =
     .label = Elekti kiel norman…
     .accesskey = E
-startup-restore-previous-session =
-    .label = Restarigi antaŭan seancon
-    .accesskey = R
 startup-restore-windows-and-tabs =
     .label = Malfermi antaŭajn fenestrojn kaj langetojn
     .accesskey = a
@@ -145,9 +127,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Malfermi ligilojn en langetoj anstataŭ ol en nova fenestroj
     .accesskey = l
-warn-on-close-multiple-tabs =
-    .label = Averti min antaŭ ol fermi plurajn langetojn
-    .accesskey = p
 confirm-on-close-multiple-tabs =
     .label = Konfirmi antaŭ fermi plurajn langetojn
     .accesskey = p
@@ -201,7 +180,6 @@ containers-remove-cancel-button = Ne forigi tiun ĉi ingon
 ## General Section - Language & Appearance
 
 language-and-appearance-header = Lingvo kaj aspekto
-fonts-and-colors-header = Tiparoj kaj koloroj
 preferences-web-appearance-header = Aspekto de retejoj
 preferences-web-appearance-description = Kelkaj retejoj adaptas siajn kolorarojn al viaj preferoj. Elektu la koloraron kiun vi ŝatus uzi por tiuj retejoj.
 preferences-web-appearance-choice-browser = Etoso de { -brand-short-name }
@@ -243,9 +221,6 @@ default-font-size = Grando
 advanced-fonts =
     .label = Spertula…
     .accesskey = t
-colors-settings =
-    .label = Koloroj…
-    .accesskey = K
 # Zoom is a noun, and the message is used as header for a group of options
 preferences-zoom-header = Pligrandigilo
 preferences-default-zoom = Norma pligrandigo
@@ -290,6 +265,8 @@ files-and-applications-title = Dosieroj kaj programoj
 download-header = Elŝutoj
 download-save-to =
     .label = Konservi dosierojn en
+    .accesskey = d
+download-save-where = Konservi dosierojn en
     .accesskey = d
 download-choose-folder =
     .label =
@@ -380,6 +357,13 @@ applications-use-os-default-label =
 
 ##
 
+applications-handle-new-file-types-description = Kion devus fari { -brand-short-name } kun aliaj dosieroj?
+applications-save-for-new-types =
+    .label = Konservi dosierojn
+    .accesskey = K
+applications-ask-before-handling =
+    .label = Demandi ĉu malfermi aŭ konservi dosierojn
+    .accesskey = D
 drm-content-header = Enhavo kun cifereca administrado de rajtoj (DRM)
 play-drm-content =
     .label = Ludi DRM-administritan enhavon
@@ -536,11 +520,6 @@ home-prefs-content-header = Enhavo de la hejmekrano de Firefox
 home-prefs-content-description = Elektu la enhavon, kiun vi volas en via hejmekrano de Firefox.
 home-prefs-search-header =
     .label = Serĉo en la reto
-home-prefs-topsites-header =
-    .label = Plej vizitaj
-home-prefs-topsites-description = Viaj plej vizititaj retejoj
-home-prefs-topsites-by-option-sponsored =
-    .label = Patronitaj ĉefaj retejoj
 home-prefs-shortcuts-header =
     .label = Ŝparvojoj
 home-prefs-shortcuts-description = Retejoj konservitaj aŭ vizititaj de vi
@@ -552,7 +531,6 @@ home-prefs-shortcuts-by-option-sponsored =
 
 home-prefs-recommended-by-header =
     .label = Rekomendita de { $provider }
-home-prefs-recommended-by-description-update = Eksterordinara enhavo el la reto, reviziita de { $provider }
 home-prefs-recommended-by-description-new = Eksterordinara  enhavo reviziita de { $provider }, parto de la familio { -brand-product-name }
 
 ##
@@ -560,9 +538,6 @@ home-prefs-recommended-by-description-new = Eksterordinara  enhavo reviziita de 
 home-prefs-recommended-by-learn-more = Kiel funkcias tio
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Patronitaj artikoloj
-home-prefs-highlights-header =
-    .label = Elstaraĵoj
-home-prefs-highlights-description = Retejoj elektitaj inter tiuj, kiun vi vizitis aŭ konservis
 home-prefs-highlights-option-visited-pages =
     .label = Vizititaj paĝoj
 home-prefs-highlights-options-bookmarks =
@@ -580,7 +555,6 @@ home-prefs-recent-activity-description = Elekto de ĵusaj retejoj kaj enhavoj
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = Fragmentoj
-home-prefs-snippets-description = Ĝisdatigoj de { -vendor-short-name } kaj { -brand-product-name }
 home-prefs-snippets-description-new = Konsiletoj kaj novaĵoj de { -vendor-short-name } kaj { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
@@ -913,18 +887,10 @@ sitedata-block-desc = Blokita tipo
     .accesskey = B
 sitedata-option-block-cross-site-trackers =
     .label = Interetejaj spuriloj
-sitedata-option-block-cross-site-and-social-media-trackers =
-    .label = Interretejaj kaj sociretaj spuriloj
-sitedata-option-block-cross-site-tracking-cookies-including-social-media =
-    .label = Interretejaj spurilaj kuketoj (tio inkluzivas la aŭdvidajn sociretajn)
-sitedata-option-block-cross-site-cookies-including-social-media =
-    .label = Interretejaj kuketoj (tio inkluzivas la aŭdvidajn sociretajn)
 sitedata-option-block-cross-site-tracking-cookies =
     .label = Interretejaj spurilaj kuketoj
 sitedata-option-block-cross-site-cookies =
     .label = Interretejaj spurilaj kuketoj, kaj izoli aliajn interretejajn kuketojn
-sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
-    .label = Interretejaj kaj sociretaj spuriloj, kaj izoli ceterajn kuketojn
 sitedata-option-block-unvisited =
     .label = Kuketoj el nevizititaj retejoj
 sitedata-option-block-all-third-party =
@@ -1014,7 +980,6 @@ content-blocking-etp-standard-tcp-rollout-checkbox =
 content-blocking-etp-standard-tcp-rollout-description = La totala protekto kontraŭ kuketoj limigas kuketojn al la retejo kie ili estas, tiel ke spuriloj ne povas uzi ilin por sekvi vin inter retejoj.
 content-blocking-etp-standard-tcp-rollout-learn-more = Pli da informo
 content-blocking-warning-title = Atentu!
-content-blocking-and-isolating-etp-warning-description = Blokado de spuriloj kaj izolado de kuketoj povus influi la funkciadon de kelkaj retejoj. Reŝargu paĝon kun spuriloj por ŝargi la tutan enhavon.
 content-blocking-and-isolating-etp-warning-description-2 = Tiu ĉi agordo povas mismontri aŭ misfunkciigi retejojn. Se iu retejo ne bone funkcias aŭ videblas, vi povas malaktivigi la protekton kontaŭ spurado por tiu retejo, tiel ke ĝi ŝargos la tutan enhavon.
 content-blocking-warning-learn-how = Pli da informo
 content-blocking-reload-description = Vi bezonos reŝargi viajn langetojn por apliki tiujn ĉi ŝanĝojn.
@@ -1086,9 +1051,6 @@ permissions-autoplay-settings =
 permissions-block-popups =
     .label = Bloki ŝprucfenestrojn
     .accesskey = B
-permissions-block-popups-exceptions =
-    .label = Esceptoj…
-    .accesskey = E
 # "popup" is a misspelling that is more popular than the correct spelling of
 # "pop-up" so it's included as a search keyword, not displayed in the UI.
 permissions-block-popups-exceptions-button =

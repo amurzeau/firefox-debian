@@ -124,10 +124,10 @@ openpgp-import-key-description = Voit tuoda henkilökohtaisia avaimia, jotka on 
 openpgp-import-key-info = Muut ohjelmistot saattavat viitata henkilökohtaiseen avaimeen termeillä kuten oma avain, salainen avain, yksityinen avain tai avainpari.
 
 #   $count (Number) - the number of keys found in the selected files
-openpgp-import-key-list-amount =
+openpgp-import-key-list-amount-2 =
     { $count ->
-        [one] Thunderbird löysi yhden avaimen, joka voidaan tuoda.
-       *[other] Thunderbird löysi { $count } avainta, jotka voidaan tuoda.
+        [one] { -brand-short-name } löysi yhden avaimen, joka on mahdollista tuoda.
+       *[other] { -brand-short-name } löysi { $count } avainta, jotka on mahdollista tuoda.
     }
 
 openpgp-import-key-list-description = Vahvista mitä avaimia voidaan käsitellä henkilökohtaisina avaiminasi. Vain avaimia, jotka olet luonut itse ja edustavat identiteettiäsi, tulisi käyttää henkilökohtaisina avaimia. Voit muuttaa tätä valintaa myöhemmin Avaimen ominaisuudet -ikkunassa.

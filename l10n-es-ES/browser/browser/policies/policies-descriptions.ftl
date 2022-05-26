@@ -159,6 +159,8 @@ policy-OverridePostUpdatePage = Anular la página "Qué hay de nuevo" posterior 
 
 policy-PasswordManagerEnabled = Activar el guardado de contraseñas en el administrador de contraseñas.
 
+policy-PasswordManagerExceptions = Evitar que { -brand-short-name } guarde contraseñas para sitios específicos.
+
 # PDF.js and PDF should not be translated
 policy-PDFjs = Desactivar o configurar PDF.js, el visor de PDF integrado en { -brand-short-name }.
 

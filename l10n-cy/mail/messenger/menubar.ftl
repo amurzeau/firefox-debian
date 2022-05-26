@@ -8,11 +8,6 @@ toolbar-context-menu-menu-bar =
 
 ## Tools Menu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-menu-tools-preferences =
-    .label = Dewisiadau
-    .accesskey = D
 menu-tools-settings =
     .label = Gosodiadau
     .accesskey = G
@@ -55,6 +50,18 @@ menu-view-repair-text-encoding =
 
 ## View / Layout
 
+menu-font-size-label =
+    .label = Maint Ffont
+    .accesskey = M
+menuitem-font-size-enlarge =
+    .label = Cynyddu Maint Ffont
+    .accesskey = F
+menuitem-font-size-reduce =
+    .label = Lleihau Maint Ffont
+    .accesskey = L
+menuitem-font-size-reset =
+    .label = Ailosod Maint Ffont
+    .accesskey = A
 mail-uidensity-label =
     .label = Dwysedd
     .accesskey = D

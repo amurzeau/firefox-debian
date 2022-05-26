@@ -124,11 +124,11 @@ openpgp-import-key-description = Môžete importovať osobné kľúče, ktoré b
 openpgp-import-key-info = Iný softvér môže popisovať osobný kľúč pomocou alternatívnych výrazov, ako je napríklad váš vlastný kľúč, tajný kľúč, súkromný kľúč alebo pár kľúčov.
 
 #   $count (Number) - the number of keys found in the selected files
-openpgp-import-key-list-amount =
+openpgp-import-key-list-amount-2 =
     { $count ->
-        [one] Thunderbird našiel { $count } kľúč, ktorý je možné importovať.
-        [few] Thunderbird našiel { $count } kľúče, ktoré je možné importovať.
-       *[other] Thunderbird našiel { $count } kľúčov, ktoré je možné importovať.
+        [one] { -brand-short-name } našiel jeden kľúč, ktorý je možné importovať.
+        [few] { -brand-short-name } našiel { $count } kľúče, ktoré je možné importovať.
+       *[other] { -brand-short-name } našiel { $count } kľúčov, ktoré je možné importovať.
     }
 
 openpgp-import-key-list-description = Potvrďte, ktoré kľúče môžu byť považované za vaše osobné kľúče. Ako osobné kľúče by sa mali používať iba kľúče, ktoré ste vytvorili sami a ktoré preukazujú vašu vlastnú identitu. Túto možnosť môžete neskôr zmeniť v dialógovom okne Vlastnosti kľúča.

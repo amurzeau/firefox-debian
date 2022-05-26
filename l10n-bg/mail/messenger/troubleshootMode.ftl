@@ -10,11 +10,11 @@ troubleshoot-mode-description2 = Можете да направите някои
 
 troubleshoot-mode-disable-addons =
     .label = Изключване на всички добавки
-    .accesskey = D
+    .accesskey = д
 
 troubleshoot-mode-change-and-restart =
     .label = Извършване на промените и рестартиране
-    .accesskey = M
+    .accesskey = р
 
 troubleshoot-mode-continue =
     .label = Продължете в режим за отстраняване на неизправности

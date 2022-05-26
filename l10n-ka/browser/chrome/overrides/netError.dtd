@@ -127,7 +127,7 @@
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara2 "&brandShortName;, აღმოჩენილი მოსალოდნელი საფრთხის გამო, აღარ ჩატვირთავს გვერდს ბმულიდან <span class='hostname'/>. თუ ამ საიტს ეწვევით, შემტევებს შეეძლებათ ხელყონ თქვენი მონაცემები, როგორიცაა პაროლები, ელფოსტის მისამართები ან საკრედიტო ბარათის ნომრები.">
-<!ENTITY certerror.sts.introPara "&brandShortName;, აღმოჩენილი მოსალოდნელი საფრთხის გამო, აღარ ჩატვირთავს გვერდს ბმულიდან <span class='hostname'/>, ვინაიდან საიტი საჭიროებს დაცულ კავშირს.">
+<!ENTITY certerror.sts.introPara "&brandShortName;, აღმოჩენილი მოსალოდნელი საფრთხის გამო, აღარ ჩატვირთავს გვერდს ბმულიდან <span class='hostname'/>, ვინაიდან საიტი ითხოვს დაცულ კავშირს.">
 
 <!ENTITY certerror.expiredCert.introPara "&brandShortName;, აღმოჩენილი ხარვეზის გამო, აღარ ჩატვირთავს გვერდს ბმულიდან <span class='hostname'/>. საიტი ან გაუმართავია, ან თქვენი კომპიუტერის საათია გასასწორებელი.">
 <!ENTITY certerror.expiredCert.secondPara2 "როგორც ჩანს, საიტის სერტიფიკატი ვადაგასულია, რის გამოც &brandShortName; ვერ ახერხებს უსაფრთხო კავშირის დამყარებას. თუ ამ საიტს ეწვევით, შემტევებმა შეიძლება ხელყონ თქვენი მონაცემები, როგორიცაა პაროლები, ელფოსტის მისამართები და საკრედიტო ბარათის ნომრები.">
@@ -137,7 +137,7 @@ was trying to connect. -->
 
 <!ENTITY certerror.unknownIssuer.whatCanYouDoAboutIt "
 <p>ხარვეზი, უმეტესად დაკავშირებულია თავად ვებსაიტთან და თქვენ ვერ მოახერხებთ მის გამოსწორებას.</p>
-<p>თუ იყენებთ დაწესებულების ქსელს ან ანტივირუსულ პროგრამას, დასახმარებლად შეგიძლიათ მიმართოთ იქვე არსებულ მხარდაჭერის გუნდს. ასევე, შეგიძლიათ შეატყობინოთ ვებსაიტის მფლობელებს, ამ ხარვეზის შესახებ.</p>
+<p>თუ იყენებთ დაწესებულების ქსელს ან ანტივირუსულ პროგრამას, დასახმარებლად შეგიძლიათ მიმართოთ იქვე არსებულ მხარდაჭერის გუნდს. ასევე, შეგიძლიათ შეატყობინოთ ვებსაიტის მფლობელებს ამ ხარვეზის შესახებ.</p>
 ">
 
 <!ENTITY certerror.expiredCert.whatCanYouDoAboutIt2 "
@@ -164,27 +164,25 @@ was trying to connect. -->
 
 <!ENTITY xfoBlocked.longDesc "<p>&brandShortName; ზღუდავს ამ გვერდის მოცემული გზით ჩატვირთვას, ვინაიდან მისი დებულება X-Frame-Options კრძალავს ამას.</p>">
 
-<!ENTITY corruptedContentErrorv2.longDesc "<p>გვერდის ჩვენება, რომლის ნახვასაც ცდილობთ, ვერ ხერხდება, მონაცემთა გადაცემისას აღმოჩენილი შეცდომის გამო.</p><ul><li>გთხოვთ, დაუკავშირდეთ საიტის მფლობელებს და აცნობოთ, ამ ხარვეზის შესახებ.</li></ul>">
+<!ENTITY corruptedContentErrorv2.longDesc "<p>გვერდის ჩვენება, რომლის ნახვასაც ცდილობთ, ვერ ხერხდება მონაცემთა გადაცემისას აღმოჩენილი შეცდომის გამო.</p><ul><li>გთხოვთ, დაუკავშირდეთ საიტის მფლობელებს და აცნობოთ ამ ხარვეზის შესახებ.</li></ul>">
 
 <!ENTITY securityOverride.exceptionButton1Label "საფრთხის გაცნობიერება და გაგრძელება">
 
 <!ENTITY errorReporting.automatic2 "აცნობეთ Mozilla-ს მსგავსი შეცდომების შესახებ, რომ დაეხმაროთ მავნე საიტების აღმოჩენასა და მათ შეზღუდვაში">
 <!ENTITY errorReporting.learnMore "ვრცლად…">
 
-<!ENTITY remoteXUL.longDesc "<p><ul><li>გთხოვთ, დაუკავშირდეთ ვებსაიტის მფლობელებს და მოახსენოთ ამ ხარვეზის შესახებ.</li></ul></p>">
-
 <!-- LOCALIZATION NOTE (sslv3Used.longDesc2) - Do not translate
      "SSL_ERROR_UNSUPPORTED_VERSION". -->
 <!ENTITY sslv3Used.longDesc2 "დამატებითი ინფორმაცია: SSL_ERROR_UNSUPPORTED_VERSION">
 
 <!ENTITY certerror.pagetitle2  "ფრთხილად: სახიფათოა">
-<!ENTITY certerror.sts.pagetitle  "ვერ დაუკავშირდა: სავარაუდოდ უსაფრთხოების ხარვეზის გამო">
+<!ENTITY certerror.sts.pagetitle  "ვერ დაუკავშირდა: უსაფრთხოების სავარაუდო ხარვეზის გამო">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "საიტს <span class='hostname'></span> გააჩნია უსაფრთხოების დებულება სახელწოდებით HTTP Strict Transport Security (HSTS), რაც ნიშნავს, რომ &brandShortName; მას მხოლოდ უსაფრთხო შეერთებით შეიძლება დაუკავშირდეს. თქვენ ვერ შეძლებთ გამონაკლისის დაშვებას ამ საიტის მოსანახულებლად.">
 <!ENTITY certerror.copyToClipboard.label "ტექსტის ასლის აღება">
 
 <!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
      "NS_ERROR_NET_INADEQUATE_SECURITY". -->
-<!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> იყენებს უსაფრთხოების ისეთ საშუალებას, რომელიც მოძველებული და დაუცველია. შემტევმა შესაძლოა მარტივად მიიღოს იმ მონაცემებზე წვდომა, რომლებიც დაცულად მიგაჩნიათ. საიტზე შესვლამდე, აუცილებელია მისმა ხელმძღვანელობამ ეს ხარვეზი აღმოფხვრას.</p><p>შეცდომის კოდი: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
+<!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> იყენებს უსაფრთხოების ისეთ საშუალებას, რომელიც მოძველებული და დაუცველია. შემტევმა შესაძლოა მარტივად მიიღოს იმ მონაცემებთან წვდომა, რომლებიც დაცულად მიგაჩნიათ. საიტზე შესვლამდე, აუცილებელია მისმა ხელმძღვანელობამ ეს ხარვეზი აღმოფხვრას.</p><p>შეცდომის კოდი: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
 
 <!ENTITY blockedByPolicy.title "გვერდი შეზღუდულია">
 
@@ -198,9 +196,5 @@ was trying to connect. -->
 
 <!ENTITY prefReset.longDesc "შესაძლოა ამის მიზეზს, თქვენ მიერ მითითებული, ქსელის უსაფრთხოების პარამეტრები წარმოადგენდეს. გსურთ ნაგულისხმევი პარამეტრების აღდგენა?">
 <!ENTITY prefReset.label "ნაგულისხმევი პარამეტრების აღდგენა">
-
-<!ENTITY enableTls10.longDesc "ვებსაიტზე ალბათ არაა მხარდაჭერილი TLS 1.2 ოქმი, ის უმცირესი ვერსია, რომელსაც იყენებს &brandShortName;. TLS1.0 და TLS 1.1 ოქმების ჩართვით, შესაძლოა მოხერხდეს კავშირის დამყარება.">
-<!ENTITY enableTls10.note "TLS 1.0 და TLS 1.1 სამუდამოდ გაითიშება მომავალ გამოშვებაში.">
-<!ENTITY enableTls10.label "ჩაირთოს TLS 1.0 და 1.1">
 
 <!ENTITY networkProtocolError.longDesc "<p>გვერდი რომლის მონახულებასაც ცდილობთ ვერ გამოჩნდება, ვინაიდან ქსელის ოქმში აღმოჩენილია შეცდომა.</p><ul><li>გთხოვთ, დაუკავშირდეთ საიტის მფლობელებს და აცნობოთ ამ ხარვეზის შესახებ.</li></ul>">

@@ -124,14 +124,33 @@ about-addressbook-confirm-delete-contacts =
 
 ## Details
 
+about-addressbook-write-action-button = Escrever
+about-addressbook-event-action-button = Evento
+about-addressbook-search-action-button = Pesquisar
 about-addressbook-begin-edit-contact-button = Editar
+about-addressbook-delete-edit-contact-button = Excluir
 about-addressbook-cancel-edit-contact-button = Cancelar
 about-addressbook-save-edit-contact-button = Salvar
+about-addressbook-add-contact-to = Adicionar a:
 about-addressbook-details-email-addresses-header = Endereços de email
 about-addressbook-details-phone-numbers-header = Números de telefone
 about-addressbook-details-home-address-header = Endereço residencial
 about-addressbook-details-work-address-header = Endereço comercial
+about-addressbook-details-addresses-header = Endereços
+about-addressbook-details-notes-header = Notas
 about-addressbook-details-other-info-header = Outras informações
+about-addressbook-entry-type-work = Trabalho
+about-addressbook-entry-type-home = Casa
+about-addressbook-entry-type-fax = Fax
+about-addressbook-entry-type-cell = Celular
+about-addressbook-entry-type-pager = Pager
+about-addressbook-entry-name-birthday = Data de nascimento
+about-addressbook-entry-name-anniversary = Aniversário
+about-addressbook-entry-name-title = Título
+about-addressbook-entry-name-department = Departamento
+about-addressbook-entry-name-organization = Organização
+about-addressbook-entry-name-website = Site
+about-addressbook-entry-name-time-zone = Fuso horário
 about-addressbook-unsaved-changes-prompt-title = Alterações não salvas
 about-addressbook-unsaved-changes-prompt = Quer salvar suas alterações antes de sair do modo de edição?
 

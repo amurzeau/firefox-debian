@@ -124,14 +124,30 @@ about-addressbook-confirm-delete-contacts =
 
 ## Details
 
+about-addressbook-write-action-button = Σύνταξη
+about-addressbook-event-action-button = Εκδήλωση
+about-addressbook-search-action-button = Αναζήτηση
 about-addressbook-begin-edit-contact-button = Επεξεργασία
+about-addressbook-delete-edit-contact-button = Διαγραφή
 about-addressbook-cancel-edit-contact-button = Ακύρωση
 about-addressbook-save-edit-contact-button = Αποθήκευση
 about-addressbook-details-email-addresses-header = Διευθύνσεις email
 about-addressbook-details-phone-numbers-header = Αριθμοί τηλεφώνου
 about-addressbook-details-home-address-header = Διεύθυνση οικίας
 about-addressbook-details-work-address-header = Διεύθυνση εργασίας
+about-addressbook-details-addresses-header = Διευθύνσεις
+about-addressbook-details-notes-header = Σημειώσεις
 about-addressbook-details-other-info-header = Άλλες πληροφορίες
+about-addressbook-entry-type-work = Εργασία
+about-addressbook-entry-type-home = Οικία
+about-addressbook-entry-type-fax = Φαξ
+about-addressbook-entry-type-pager = Βομβητής
+about-addressbook-entry-name-birthday = Γενέθλια
+about-addressbook-entry-name-anniversary = Επέτειος
+about-addressbook-entry-name-title = Τίτλος
+about-addressbook-entry-name-department = Τμήμα
+about-addressbook-entry-name-website = Ιστότοπος
+about-addressbook-entry-name-time-zone = Ζώνη ώρας
 about-addressbook-unsaved-changes-prompt-title = Μη αποθηκευμένες αλλαγές
 about-addressbook-unsaved-changes-prompt = Θέλετε να αποθηκεύσετε τις αλλαγές σας πριν αποχωρήσετε από την προβολή επεξεργασίας;
 

@@ -19,3 +19,29 @@ chat-participant-moderator-role-icon2 =
 
 chat-participant-voiced-role-icon2 =
     .alt = Imttekki yezmer ad isuffeɣ iznan
+
+chat-verify-identity =
+    .label = Senqed timagit
+    .accesskey = T
+
+chat-identity-verified =
+    .label = Tettwasenqed timagit yakan
+
+chat-buddy-identity-status = Lam n uwgelhen
+chat-buddy-identity-status-verified = Yettwasenqed
+chat-buddy-identity-status-unverified = Ur yettwasenqed ara
+
+## Conversation invite notification box
+
+# This string appears in a notification bar at the top of the Contacts window
+# when someone invited the user to a multi user chat conversation, to request
+# the user to confirm they want to join the chat.
+# Variables:
+#   $conversation (String) - Name of the conversation the user is invited to.
+chat-conv-invite-label = Tremdeḍ-d tinubga i wakken ad temmeslayeḍ deg { $conversation }
+chat-conv-invite-accept =
+    .label = Qbel
+    .accesskey = Q
+chat-conv-invite-deny =
+    .label = Agi
+    .accesskey = A

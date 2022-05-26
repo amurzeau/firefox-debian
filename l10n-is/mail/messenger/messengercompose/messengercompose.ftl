@@ -3,6 +3,24 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+## Send Format
+
+compose-send-format-menu =
+    .label = Sendingarsnið
+    .accesskey = g
+compose-send-auto-menu-item =
+    .label = Sjálfvirkt
+    .accesskey = k
+compose-send-both-menu-item =
+    .label = Bæði HTML og hreinn texti
+    .accesskey = B
+compose-send-html-menu-item =
+    .label = Aðeins HTML
+    .accesskey = H
+compose-send-plain-menu-item =
+    .label = Aðeins hreinn texti
+    .accesskey = t
+
 ## Addressing widget
 
 #   $type (String) - the type of the addressing row
@@ -66,9 +84,6 @@ menuitem-toggle-attachment-pane =
 toolbar-button-add-attachment =
     .label = Hengja við
     .tooltiptext = Bæta við viðhengi ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
-add-attachment-notification-reminder =
-    .label = Bæta við viðhengi...
-    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 add-attachment-notification-reminder2 =
     .label = Bæta við viðhengi...
     .accesskey = a
@@ -95,10 +110,6 @@ attachment-bucket-count-value =
         [one] { $count } viðhengi
        *[other] { $count } viðhengi
     }
-expand-attachment-pane-tooltip =
-    .tooltiptext = Sýna viðhengjaspjaldið ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Fela viðhengjaspjaldið ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Sýna viðhengjaspjaldið ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -130,10 +141,6 @@ button-return-receipt =
 
 ## Encryption
 
-message-to-be-signed-icon =
-    .alt = Undirrita skilaboð
-message-to-be-encrypted-icon =
-    .alt = Dulrita skilaboð
 encryption-menu =
     .label = Öryggi
     .accesskey = y
@@ -146,6 +153,9 @@ encryption-options-openpgp =
 encryption-options-smime =
     .label = S/MIME
     .tooltiptext = Skoða eða breyta stillingum fyrir S/MIME-dulkritun
+signing-toggle =
+    .label = Undirrita
+    .tooltiptext = Nota stafræna undirritun fyrir þessi skilaboð
 menu-openpgp =
     .label = OpenPGP
     .accesskey = O
@@ -185,38 +195,6 @@ key-notification-resolve =
 
 ## Addressing Area
 
-to-compose-address-row-label =
-    .value = Til
-#   $key (String) - the shortcut key for this field
-to-compose-show-address-row-menuitem =
-    .label = { to-compose-address-row-label.value } reitur
-    .accesskey = T
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-to-compose-show-address-row-label =
-    .value = { to-compose-address-row-label.value }
-    .tooltiptext = Birta { to-compose-address-row-label.value } reit ({ to-compose-show-address-row-menuitem.acceltext })
-cc-compose-address-row-label =
-    .value = Afrit
-#   $key (String) - the shortcut key for this field
-cc-compose-show-address-row-menuitem =
-    .label = { cc-compose-address-row-label.value } reitur
-    .accesskey = C
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-cc-compose-show-address-row-label =
-    .value = { cc-compose-address-row-label.value }
-    .tooltiptext = Birta { cc-compose-address-row-label.value } reit ({ cc-compose-show-address-row-menuitem.acceltext })
-bcc-compose-address-row-label =
-    .value = Falið afrit
-#   $key (String) - the shortcut key for this field
-bcc-compose-show-address-row-menuitem =
-    .label = { bcc-compose-address-row-label.value } reitur
-    .accesskey = B
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-bcc-compose-show-address-row-label =
-    .value = { bcc-compose-address-row-label.value }
-    .tooltiptext = Birta { bcc-compose-address-row-label.value } reit ({ bcc-compose-show-address-row-menuitem.acceltext })
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-many-public-recipients-info = { $count } viðtakendur í 'Til' og 'Afrit' munu sjá heimilisfang hvers annars. Þú getur forðast að gefa upp viðtakendur með því að nota 'Falið afrit' í staðinn.
 to-address-row-label =
     .value = Til
 #   $key (String) - the shortcut key for this field
@@ -379,3 +357,17 @@ cloud-file-attachment-error = Mistókst að uppfæra Filelink-viðhengið { $fil
 # $filename (string) - name of the file that was renamed and caused the error
 cloud-file-account-error-title = Villa í Filelink-reikningi
 cloud-file-account-error = Mistókst að uppfæra Filelink-viðhengið { $filename } vegna þess að Filelink-reikningi þess hefur verið eytt.
+
+## Link Preview
+
+link-preview-title = Forskoðun tengla
+link-preview-description = { -brand-short-name } getur bætt við ívafinni forskoðun þegar tenglar eru límdir.
+link-preview-autoadd = Bæta sjálfkrafa við forskoðunum tengla þegar mögulegt er
+link-preview-replace-now = Bæta við forskoðun tengils fyrir þennan tengil?
+link-preview-yes-replace = Já
+
+## Dictionary selection popup
+
+spell-add-dictionaries =
+    .label = Bæta við orðasöfnum…
+    .accesskey = a

@@ -156,7 +156,6 @@ extensions-warning-update-security = పొడిగింత నవీకరణ
 extensions-warning-update-security-button = చేతనపరచు
     .title = పొడిగింత నవీకరణ రక్షణ పరిశీలనను చేతనముచేయి
 
-
 ## Strings connected to add-on updates
 
 addon-updates-check-for-updates = నవీకరణల కొరకు పరిశీలించు
@@ -282,6 +281,7 @@ addon-detail-private-browsing-disallow = అనుమతించ వద్ద�
 ## This is the tooltip text for the recommended badges for an extension in about:addons. The
 ## badge is a small icon displayed next to an extension when it is recommended on AMO.
 
+
 ##
 
 available-updates-heading = అందుబాటులో ఉన్న తాజాకరణలు
@@ -300,3 +300,25 @@ addons-heading-search-input =
 
 addon-page-options-button =
     .title = అన్ని పొడిగింతలు కొరకు సాధనములు
+
+## Detail notifications
+## Variables:
+##   $name (String): name of the add-on.
+
+# Variables:
+#   $version (String): application version.
+details-notification-incompatible = { $name } అనునది { -brand-short-name } { $version } తో సారూప్యంగా లేదు.
+
+details-notification-unsigned-and-disabled = { -brand-short-name }‌లో వాడుకకు { $name }‌ను తనిఖీ చేయలేకున్నాం కనుక అచేతనం చేసాం.
+details-notification-unsigned-and-disabled-link = మరింత సమాచారం
+
+details-notification-unsigned = { -brand-short-name }‌లో వాడుకకు { $name }‌ను తనిఖీ చేయబడలేదు. జాగ్రత్తతో కొనసాగండి.
+details-notification-unsigned-link = మరింత సమాచారం
+
+details-notification-blocked = రక్షణ లేదా స్థిరత్వ సమస్యల కారణంగా { $name } అచేతనపరచబడింది.
+details-notification-blocked-link = మరింత సమాచారం
+
+details-notification-softblocked = { $name } రక్షణ లేదా స్థిరత్వ సమస్యలకు కారణం.
+details-notification-softblocked-link = మరింత సమాచారం
+
+details-notification-gmp-pending = { $name } త్వరలో స్థాపించబడుతుంది.

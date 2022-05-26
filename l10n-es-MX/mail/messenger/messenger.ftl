@@ -87,10 +87,6 @@ menu-file-save-as-file =
 
 ## AppMenu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-appmenu-preferences =
-    .label = Preferencias
 appmenu-save-as-file =
     .label = Archivo…
 appmenu-settings =
@@ -130,6 +126,22 @@ message-header-msg-flagged =
 message-header-msg-not-flagged =
     .title = No destacado
     .aria-label = No destacado
+
+## Message header cutomize panel
+
+message-header-customize-panel-title = Ajustes del encabezado del mensaje
+message-header-customize-button-style =
+    .value = Estilo del botón
+    .accesskey = B
+message-header-button-style-default =
+    .label = Íconos y texto
+message-header-button-style-text =
+    .label = Texto
+message-header-button-style-icons =
+    .label = Íconos
+message-header-large-subject =
+    .label = Tema grande
+    .accesskey = s
 
 ## Action Button Context Menu
 
@@ -173,24 +185,6 @@ decrypt-and-copy-failures = { $failures } de { $total } mensajes no pudieron ser
 
 ## Spaces toolbar
 
-spaces-toolbar =
-    .toolbarname = Barra de herramientas de espacios
-spaces-toolbar-button-mail =
-    .title = Cambiar a la pestaña de correo electronico
-spaces-toolbar-button-address-book =
-    .title = Cambiar a la pestaña de libreta de direcciones
-spaces-toolbar-button-calendar =
-    .title = Cambiar a la pestaña del calendario
-spaces-toolbar-button-tasks =
-    .title = Cambiar a la pestaña de tareas
-spaces-toolbar-button-chat =
-    .title = Cambiar a la pestaña de chat
-spaces-toolbar-button-settings =
-    .title = Cambiar a la pestaña de ajustes
-spaces-toolbar-button-collapse =
-    .title = Contraer barra de herramientas de espacios
-spaces-toolbar-button-reveal =
-    .title = Mostrar la barra de herramientas de espacios
 spaces-toolbar-element =
     .toolbarname = Barra de herramientas de espacios
     .aria-label = Barra de herramientas de espacios
@@ -227,6 +221,12 @@ settings-context-open-account-settings-item =
     .label = Abrir ajustes de la cuenta
 settings-context-open-addons-item =
     .label = Abrir complementos y temas
+settings-context-open-settings-item2 =
+    .label = Ajustes
+settings-context-open-account-settings-item2 =
+    .label = Ajustes de la cuenta
+settings-context-open-addons-item2 =
+    .label = Complementos y temas
 
 ## Spaces toolbar pinned tab menupopup
 
@@ -242,8 +242,6 @@ spaces-pinned-button-menuitem-tasks =
     .label = { spaces-toolbar-button-tasks.title }
 spaces-pinned-button-menuitem-chat =
     .label = { spaces-toolbar-button-chat.title }
-spaces-pinned-button-menuitem-reveal =
-    .label = { spaces-toolbar-button-reveal.title }
 spaces-pinned-button-menuitem-settings =
     .label = { spaces-toolbar-button-settings2.title }
 spaces-pinned-button-menuitem-show =
@@ -259,7 +257,7 @@ chat-button-unread-messages = { $count }
 
 ## Spaces toolbar customize panel
 
-spaces-context-customize =
+menuitem-customize-label =
     .label = Personalizar…
 spaces-customize-panel-title = Configuración de la barra de herramientas de espacios
 spaces-customize-background-color = Color de fondo
@@ -272,5 +270,5 @@ spaces-customize-accent-background-color = Color de fondo del botón seleccionad
 spaces-customize-accent-text-color = Color del botón seleccionado
 spaces-customize-button-restore = Restaurar predeterminados
     .accesskey = R
-spaces-customize-button-save = Hecho
+customize-panel-button-save = Hecho
     .accesskey = D

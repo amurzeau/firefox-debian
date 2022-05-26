@@ -87,10 +87,6 @@ menu-file-save-as-file =
 
 ## AppMenu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-appmenu-preferences =
-    .label = Preferences
 appmenu-save-as-file =
     .label = File…
 appmenu-settings =
@@ -129,6 +125,22 @@ message-header-msg-flagged =
     .aria-label = Starred
 message-header-msg-not-flagged =
     .title = Not star marked message
+
+## Message header cutomize panel
+
+message-header-customize-panel-title = Message Header Settings
+message-header-customize-button-style =
+    .value = Button style
+    .accesskey = B
+message-header-button-style-default =
+    .label = Icons and text
+message-header-button-style-text =
+    .label = Text
+message-header-button-style-icons =
+    .label = Icons
+message-header-large-subject =
+    .label = Large subject
+    .accesskey = s
 
 ## Action Button Context Menu
 
@@ -172,24 +184,6 @@ decrypt-and-copy-failures = { $failures } of { $total } messages could not be de
 
 ## Spaces toolbar
 
-spaces-toolbar =
-    .toolbarname = Spaces Toolbar
-spaces-toolbar-button-mail =
-    .title = Switch to the mail tab
-spaces-toolbar-button-address-book =
-    .title = Switch to the address book tab
-spaces-toolbar-button-calendar =
-    .title = Switch to the calendar tab
-spaces-toolbar-button-tasks =
-    .title = Switch to the tasks tab
-spaces-toolbar-button-chat =
-    .title = Switch to the chat tab
-spaces-toolbar-button-settings =
-    .title = Switch to the settings tab
-spaces-toolbar-button-collapse =
-    .title = Collapse spaces toolbar
-spaces-toolbar-button-reveal =
-    .title = Show the spaces toolbar
 spaces-toolbar-element =
     .toolbarname = Spaces Toolbar
     .aria-label = Spaces Toolbar
@@ -226,6 +220,12 @@ settings-context-open-account-settings-item =
     .label = Open Account Settings
 settings-context-open-addons-item =
     .label = Open Add-ons and Themes
+settings-context-open-settings-item2 =
+    .label = Settings
+settings-context-open-account-settings-item2 =
+    .label = Account Settings
+settings-context-open-addons-item2 =
+    .label = Add-ons and Themes
 
 ## Spaces toolbar pinned tab menupopup
 
@@ -241,8 +241,6 @@ spaces-pinned-button-menuitem-tasks =
     .label = { spaces-toolbar-button-tasks.title }
 spaces-pinned-button-menuitem-chat =
     .label = { spaces-toolbar-button-chat.title }
-spaces-pinned-button-menuitem-reveal =
-    .label = { spaces-toolbar-button-reveal.title }
 spaces-pinned-button-menuitem-settings =
     .label = { spaces-toolbar-button-settings2.title }
 spaces-pinned-button-menuitem-show =
@@ -258,7 +256,7 @@ chat-button-unread-messages = { $count }
 
 ## Spaces toolbar customize panel
 
-spaces-context-customize =
+menuitem-customize-label =
     .label = Customise…
 spaces-customize-panel-title = Spaces Toolbar Settings
 spaces-customize-background-color = Background colour
@@ -271,5 +269,5 @@ spaces-customize-accent-background-color = Selected button background colour
 spaces-customize-accent-text-color = Selected button colour
 spaces-customize-button-restore = Restore Defaults
     .accesskey = R
-spaces-customize-button-save = Done
+customize-panel-button-save = Done
     .accesskey = D

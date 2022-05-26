@@ -73,10 +73,6 @@ restart-later = తరువాత పునఃప్రారంభించు
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that Container Tabs
-# are being enabled by an extension.
-extension-controlled-privacy-containers = ఒక పొడగింతకి, <img data-l10n-name="icon"/> { $name }, కంటెయినర్ ట్యాబులు కావాలి.
-
 ## Preferences UI Search Results
 
 search-results-header = వెతుకుడు ఫలితాలు
@@ -98,10 +94,6 @@ set-as-my-default-browser =
     .label = అప్రమేయం చేయి…
     .accesskey = D
 
-startup-restore-previous-session =
-    .label = మునుపటి సెషన్ను పునరుద్ధరించు
-    .accesskey = s
-
 startup-restore-warn-on-quit =
     .label = విహారిణిని మూసివేస్తున్నప్పుడు నన్ను హెచ్చరించు
 
@@ -117,10 +109,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = లంకెలను కొత్త విండోలలో కాక ట్యాబులలో తెరువు
     .accesskey = w
-
-warn-on-close-multiple-tabs =
-    .label = పలు ట్యాబులను మూసివేస్తున్నప్పుడు మిమ్మల్ని హెచ్చరించు
-    .accesskey = m
 
 warn-on-open-many-tabs =
     .label = ఎక్కువ ట్యాబులను తెరిచినప్పుడు { -brand-short-name }‌ నెమ్మదిస్తూంటే నన్ను హెచ్చరించు
@@ -171,7 +159,12 @@ containers-remove-cancel-button = ఈ కంటెయినరును తొ�
 
 language-and-appearance-header = భాష, రూపురేఖలు
 
-fonts-and-colors-header = ఫాంట్స్ & రంగులు
+preferences-web-appearance-choice-browser = { -brand-short-name } అలంకారం
+preferences-web-appearance-choice-system = వ్యవస్థ అలంకారం
+preferences-web-appearance-choice-light = వెలుతురు
+preferences-web-appearance-choice-dark = చీకటి
+
+preferences-colors-header = రంగులు
 
 default-font = అప్రమేయ ఫాంటు
     .accesskey = D
@@ -181,10 +174,6 @@ default-font-size = పరిమాణం
 advanced-fonts =
     .label = ఉన్నతం…
     .accesskey = A
-
-colors-settings =
-    .label = రంగులు…
-    .accesskey = C
 
 preferences-default-zoom-value =
     .label = { $percentage }%
@@ -231,6 +220,9 @@ download-header = దింపుకోళ్ళు
 
 download-save-to =
     .label = ఫైళ్ళను ఇక్కడ భద్రపరచు
+    .accesskey = v
+
+download-save-where = ఫైళ్ళను ఇక్కడ భద్రపరచు
     .accesskey = v
 
 download-choose-folder =
@@ -508,9 +500,6 @@ home-prefs-content-description = మీ Firefox ముంగిలి తెర�
 
 home-prefs-search-header =
     .label = జాల వెతుకులాట
-home-prefs-topsites-header =
-    .label = మేటి సైట్లు
-home-prefs-topsites-description = మీరు తరచూ చూసే సైట్లు
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -524,9 +513,6 @@ home-prefs-recommended-by-learn-more = ఇది ఎలా పనిచేస్
 home-prefs-recommended-by-option-sponsored-stories =
     .label = ప్రాయోజిక కథనాలు
 
-home-prefs-highlights-header =
-    .label = విశేషాలు
-home-prefs-highlights-description = మీరు భద్రపరచిన లేదా సందర్శించిన సైట్ల నుండి ఎంపికచేసినవి
 home-prefs-highlights-option-visited-pages =
     .label = చూసిన పేజీలు
 home-prefs-highlights-options-bookmarks =
@@ -545,7 +531,6 @@ home-prefs-recent-activity-header =
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = సంగతులు
-home-prefs-snippets-description = { -vendor-short-name }, { -brand-product-name } నుండి విశేషాలు
 
 home-prefs-sections-rows-option =
     .label =
@@ -620,6 +605,8 @@ containers-add-button =
     .label = కొత్త కంటెయినరు చేర్చు
     .accesskey = A
 
+containers-settings-button =
+    .label = అమరికలు
 containers-remove-button =
     .label = తొలగించు
 
@@ -681,6 +668,7 @@ sync-currently-syncing-logins-passwords = ప్రవేశాలు, సంక
 sync-currently-syncing-addresses = చిరునామాలు
 sync-currently-syncing-creditcards = క్రెడిట్ కార్డులు
 sync-currently-syncing-addons = పొడిగింతలు
+sync-currently-syncing-settings = అమరికలు
 
 sync-change-options =
     .label = మార్చు…
@@ -720,6 +708,11 @@ sync-engine-addons =
     .label = పొడగింతలు
     .tooltiptext = డెస్కుటాప్ Firefox కోసం పొడగింతలు, అలంకారాలు
     .accesskey = A
+
+sync-engine-settings =
+    .label = అమరికలు
+    .tooltiptext = మీరు మార్చుకున్న సాధారణ, అంతరంగిక, భద్రతా అమరికలు
+    .accesskey = s
 
 ## The device name controls.
 
@@ -780,6 +773,7 @@ forms-primary-pw-change =
     .accesskey = P
 
 forms-master-pw-fips-desc = సంకేతపదం మార్పు విఫలమైంది
+forms-windows-sso-learn-more-link = ఇంకా తెలుసుకోండి
 
 ## OS Authentication dialog
 
@@ -862,8 +856,6 @@ sitedata-block-desc = నిరోధించిన రకం
 
 sitedata-option-block-cross-site-trackers =
     .label = క్రాస్-సైట్ ట్రాకర్లు
-sitedata-option-block-cross-site-and-social-media-trackers =
-    .label = క్రాస్-సైటు, సామాజిక మాధ్యమాల ట్రాకర్లు
 sitedata-option-block-unvisited =
     .label = చూడని వెబ్‌సైట్ల కుకీలు
 sitedata-option-block-all-third-party =
@@ -938,6 +930,7 @@ content-blocking-fingerprinters = ఫింగర్‌ప్రింటర్�
 content-blocking-warning-title = గమనిక!
 content-blocking-warning-learn-how = ఎలానో తెలుసుకోండి
 
+content-blocking-reload-description = ఈ మార్పులను వర్తింపజేయడానికి మీ ట్యాబులను మళ్ళీ లోడు చేయాలి.
 content-blocking-reload-tabs-button =
     .label = ట్యాబులన్నింటినీ మళ్లీ లోడుచేయి
     .accesskey = R
@@ -1020,9 +1013,12 @@ permissions-block-popups =
     .label = పాప్-అప్ విండోలను నిరోధించు
     .accesskey = B
 
-permissions-block-popups-exceptions =
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
     .label = మినహాయింపులు…
     .accesskey = E
+    .searchkeywords = popups
 
 permissions-addon-install-warning =
     .label = జాలగూడులు పొడిగింతలను స్థాపించుటకు ప్రయత్నించినపుడు నిన్ను హెచ్చరించును
@@ -1090,6 +1086,10 @@ certs-view =
 certs-devices =
     .label = రక్షణ పరికరాలు…
     .accesskey = D
+
+space-alert-over-5gb-settings-button =
+    .label = అమరికలను తెరువు
+    .accesskey = O
 
 ## Privacy Section - HTTPS-Only
 

@@ -13,6 +13,7 @@
 policy-3rdparty = Set policies that WebExtensions can access via chrome.storage.managed.
 policy-AllowedDomainsForApps = Define domains allowed to access Google Workspace.
 policy-AppAutoUpdate = Enable or disable automatic application update.
+policy-AppUpdatePin = Prevent { -brand-short-name } from being updated beyond the specified version.
 policy-AppUpdateURL = Set custom app update URL.
 policy-Authentication = Configure integrated authentication for websites that support it.
 policy-AutoLaunchProtocolsFromOrigins = Define a list of external protocols that can be used from listed origins without prompting the user.
@@ -58,6 +59,7 @@ policy-DownloadDirectory = Set and lock the download directory.
 policy-EnableTrackingProtection = Enable or disable Content Blocking and optionally lock it.
 # “lock” means that the user won’t be able to change this setting
 policy-EncryptedMediaExtensions = Enable or disable Encrypted Media Extensions and optionally lock it.
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Disable warnings based on file extension for specific file types on domains.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -92,6 +94,7 @@ policy-OfferToSaveLoginsDefault = Set the default value for allowing { -brand-sh
 policy-OverrideFirstRunPage = Override the first run page. Set this policy to blank if you want to disable the first run page.
 policy-OverridePostUpdatePage = Override the post-update “What’s New” page. Set this policy to blank if you want to disable the post-update page.
 policy-PasswordManagerEnabled = Enable saving passwords to the password manager.
+policy-PasswordManagerExceptions = Prevent { -brand-short-name } from saving passwords for specific sites.
 # PDF.js and PDF should not be translated
 policy-PDFjs = Disable or configure PDF.js, the built-in PDF viewer in { -brand-short-name }.
 policy-Permissions2 = Configure permissions for camera, microphone, location, notifications, and autoplay.

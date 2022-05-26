@@ -8,11 +8,6 @@ toolbar-context-menu-menu-bar =
 
 ## Tools Menu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-menu-tools-preferences =
-    .label = Nastavitve
-    .accesskey = N
 menu-tools-settings =
     .label = Nastavitve
     .accesskey = t
@@ -55,6 +50,18 @@ menu-view-repair-text-encoding =
 
 ## View / Layout
 
+menu-font-size-label =
+    .label = Velikost pisave
+    .accesskey = o
+menuitem-font-size-enlarge =
+    .label = Povečaj velikost pisave
+    .accesskey = v
+menuitem-font-size-reduce =
+    .label = Zmanjšaj velikost pisave
+    .accesskey = m
+menuitem-font-size-reset =
+    .label = Ponastavi velikost pisave
+    .accesskey = n
 mail-uidensity-label =
     .label = Gostota
     .accesskey = G

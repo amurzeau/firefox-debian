@@ -47,3 +47,4 @@ openpgp-partially-encrypted =
 openpgp-reminder-partial-display = Memento: le message monstrate infra es solo un sub-ensemble del message original.
 openpgp-partial-verify-button = Verificar
 openpgp-partial-decrypt-button = Decryptar
+openpgp-unexpected-key-for-you = Advertentia: iste message contine una clave OpenPGP non note que face referentia a un de tu proprie adresses email. Si isto non es un de tu claves, poterea esser un intento de dupar altere correspondentes.

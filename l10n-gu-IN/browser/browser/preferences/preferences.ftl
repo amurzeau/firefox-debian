@@ -53,22 +53,6 @@ restart-later = પછી પુનઃશરૂ કરો
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their notifications permission
-# is being controlled by an extension.
-extension-controlled-web-notifications = એક એક્સ્ટેંશન, <img data-l10n-name="icon"/> { $name }, આ સેટિંગને નિયંત્રિત કરી રહ્યું છે.
-
-# This string is shown to notify the user that Container Tabs
-# are being enabled by an extension.
-extension-controlled-privacy-containers = એક્સ્ટેંશન, <img data-l10n-name="icon"/> { $name }, કન્ટેઈનર ટેબ્સની જરૂર છે.
-
-# This string is shown to notify the user that their content blocking "All Detected Trackers"
-# preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = એક્સ્ટેન્શન, <img data-l10n-name="icon"/>{ $name }, આ સેટિંગને નિયંત્રિત કરી રહ્યું છે.
-
-# This string is shown to notify the user that their proxy configuration preferences
-# are being controlled by an extension.
-extension-controlled-proxy-config = એક એક્સ્ટેન્શન, <img data-l10n-name="icon"/> { $name }, નિયંત્રિત કરી રહ્યું છે કે { -brand-short-name } કેવી રીતે ઇન્ટરનેટ સાથે જોડાય છે.
-
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -97,10 +81,6 @@ set-as-my-default-browser =
     .label = ડિફૉલ્ટ બનાવો…
     .accesskey = D
 
-startup-restore-previous-session =
-    .label = પહેલાનાં સત્રને પુન:સંગ્રહો
-    .accesskey = s
-
 startup-restore-warn-on-quit =
     .label = બ્રાઉઝર છોડતી વખતે તમને ચેતવણી આપે છે.
 
@@ -116,10 +96,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = નવા વિન્ડોઝને બદલે ટૅબ્સ તરીકે લિંક્સ ખોલો
     .accesskey = w
-
-warn-on-close-multiple-tabs =
-    .label = તમને બહુવિધ ટેબ્સ બંધ કરતી વખતે ચેતવશે
-    .accesskey = m
 
 warn-on-open-many-tabs =
     .label = તમને ચેતવે છે જ્યારે ઘણી ટેબ્સ ખોલવાનું ધીમું થઈ જાય અને { -brand-short-name }
@@ -166,12 +142,9 @@ containers-remove-alert-msg =
 containers-remove-ok-button = આ કન્ટેઈનર દૂર કરો
 containers-remove-cancel-button = આ કન્ટેઈનરને દૂર કરશો નહીં
 
-
 ## General Section - Language & Appearance
 
 language-and-appearance-header = ભાષા અને દેખાવ
-
-fonts-and-colors-header = ફોન્ટ & રંગો
 
 default-font = મૂળભૂત ફોન્ટ
     .accesskey = D
@@ -181,10 +154,6 @@ default-font-size = માપ
 advanced-fonts =
     .label = અદ્યતન...
     .accesskey = A
-
-colors-settings =
-    .label = રંગો...
-    .accesskey = C
 
 language-header = ભાષા
 
@@ -225,6 +194,9 @@ download-header = ડાઉનલોડ
 
 download-save-to =
     .label = ફાઈલોને આમાં સંગ્રહો
+    .accesskey = v
+
+download-save-where = ફાઈલોને આમાં સંગ્રહો
     .accesskey = v
 
 download-choose-folder =
@@ -475,9 +447,6 @@ home-prefs-content-description = તમારી Firefox મુખ્ય સ્�
 
 home-prefs-search-header =
     .label = વેબ શોધ
-home-prefs-topsites-header =
-    .label = ટોચની સાઇટ્સ
-home-prefs-topsites-description = તમે સૌથી વધુ મુલાકાત લો છો તે સાઇટ્સ
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -493,9 +462,6 @@ home-prefs-recommended-by-learn-more = તે કેવી રીતે કા�
 home-prefs-recommended-by-option-sponsored-stories =
     .label = પ્રાયોજિત વાર્તાઓ
 
-home-prefs-highlights-header =
-    .label = વીતી ગયેલું
-home-prefs-highlights-description = સાઇટ્સની પસંદગી કે જે તમે સાચવી અથવા મુલાકાત લીધી છે
 home-prefs-highlights-option-visited-pages =
     .label = મુલાકાત લીધેલા પૃષ્ઠો
 home-prefs-highlights-options-bookmarks =
@@ -511,7 +477,6 @@ home-prefs-highlights-option-saved-to-pocket =
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = જાણકારી આપનારા ઉતારા ક કાપલીઓ
-home-prefs-snippets-description = { -vendor-short-name } અને { -brand-product-name } તરફથી અપડેટ્સ
 
 home-prefs-sections-rows-option =
     .label =
@@ -583,9 +548,6 @@ containers-add-button =
 containers-remove-button =
     .label = દૂર કરો
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
@@ -600,9 +562,6 @@ sync-signedout-caption = તમારું વેબ તમારી સાથ�
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
 sync-mobile-promo = ડાઉનલોડ કરો Firefox માટે <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> અથવા <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> તમારા મોબાઇલ ઉપકરણ સાથે સમન્વયિત કરવા માટે.
-
-## Sync Section - Signed in
-
 
 ## Firefox Account - Signed in
 
@@ -684,9 +643,6 @@ sync-connect-another-device = બીજા ઉપકરણ સાથે જો�
 ## Privacy Section
 
 privacy-header = બ્રાઉઝર ગોપનીયતા
-
-## Privacy Section - Forms
-
 
 ## Privacy Section - Logins and Passwords
 
@@ -920,10 +876,6 @@ permissions-block-popups =
     .label = પોપ-અપ વિન્ડો અટકાવો
     .accesskey = B
 
-permissions-block-popups-exceptions =
-    .label = અપવાદો...
-    .accesskey = E
-
 permissions-addon-install-warning =
     .label = તમને ચેતવે છે જ્યારે વેબસાઇટ્સ ઍડ-ઑન્સ ઇન્સ્ટોલ કરવાનો પ્રયાસ કરે છે
     .accesskey = W
@@ -995,6 +947,7 @@ certs-devices =
     .accesskey = D
 
 ## Privacy Section - HTTPS-Only
+
 
 ## The following strings are used in the Download section of settings
 

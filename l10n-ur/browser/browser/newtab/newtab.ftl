@@ -22,10 +22,6 @@ newtab-search-box-handoff-input-no-engine =
     .placeholder = تلاش کریں یا پتہ داخل کریں
     .title = تلاش کریں یا پتہ داخل کریں
     .aria-label = تلاش کریں یا پتہ داخل کریں
-newtab-search-box-search-the-web-input =
-    .placeholder = ويب پر تلاش کريں
-    .title = ويب پر تلاش کريں
-    .aria-label = ويب پر تلاش کريں
 newtab-search-box-text = ويب پر تلاش کريں
 newtab-search-box-input =
     .placeholder = ويب پر تلاش کريں
@@ -34,7 +30,6 @@ newtab-search-box-input =
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = تلاش انجن کا اضافہ کریں
-newtab-topsites-add-topsites-header = نئی بہترین سائٹ
 newtab-topsites-add-shortcut-header = نیا شارٹ کٹ
 newtab-topsites-edit-topsites-header = بہترین سائٹٹ کیی تدوین کریں
 newtab-topsites-edit-shortcut-header = شارٹ کٹ میں ترمیم کریں
@@ -173,7 +168,6 @@ newtab-section-expand-section-label =
 ## Section Headers.
 
 newtab-section-header-topsites = بہترین سائٹیں
-newtab-section-header-highlights = شہ سرخياں
 newtab-section-header-recent-activity = حالیہ سرگرمی
 # Variables:
 #  $provider (String): Name of the corresponding content provider.
@@ -181,7 +175,7 @@ newtab-section-header-pocket = { $provider } کی جانب سے تجویز کر�
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
-newtab-empty-section-highlights = برائوزنگگ شروع کریں،اور ہم آپ کو کچھ بہترین عبارات، وڈیوز اور حالیہ دورہ شددہ دیگر صفحات یا نشانیاں دکھائیں گے۔
+newtab-empty-section-highlights = برائوزنگگ شروع کریں،اور ہم آپ کو کچھ بہترین عبارات، وڈیوز اور حالیہ دورہ شددہ دیگر صفحات یا بک مارک دکھائیں گے۔
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 

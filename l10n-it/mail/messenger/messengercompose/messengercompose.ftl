@@ -3,6 +3,24 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+## Send Format
+
+compose-send-format-menu =
+    .label = Formato di invio
+    .accesskey = F
+compose-send-auto-menu-item =
+    .label = Automatico
+    .accesskey = A
+compose-send-both-menu-item =
+    .label = HTML e testo semplice
+    .accesskey = H
+compose-send-html-menu-item =
+    .label = Solo HTML
+    .accesskey = S
+compose-send-plain-menu-item =
+    .label = Solo testo semplice
+    .accesskey = t
+
 ## Addressing widget
 
 #   $type (String) - the type of the addressing row
@@ -66,9 +84,6 @@ menuitem-toggle-attachment-pane =
 toolbar-button-add-attachment =
     .label = Allega
     .tooltiptext = Aggiungi un allegato ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
-add-attachment-notification-reminder =
-    .label = Aggiungi allegato…
-    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 add-attachment-notification-reminder2 =
     .label = Aggiungi allegato…
     .accesskey = A
@@ -81,16 +96,19 @@ context-menuitem-attach-files =
     .label = Allega file…
     .accesskey = f
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
+# Note: Do not translate the term 'vCard'.
+context-menuitem-attach-vcard =
+    .label = La mia vCard
+    .accesskey = C
+context-menuitem-attach-openpgp-key =
+    .label = La mia chiave pubblica OpenPGP
+    .accesskey = O
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count-value =
     { $count ->
         [one] { $count } allegato
        *[other] { $count } allegati
     }
-expand-attachment-pane-tooltip =
-    .tooltiptext = Mostra il pannello degli allegati ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Nascondi il pannello degli allegati ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Mostra il pannello degli allegati ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -122,45 +140,60 @@ button-return-receipt =
 
 ## Encryption
 
-message-to-be-signed-icon =
-    .alt = Firma il messaggio
-message-to-be-encrypted-icon =
-    .alt = Critta il messaggio
+encryption-menu =
+    .label = Sicurezza
+    .accesskey = S
+encryption-toggle =
+    .label = Critta
+    .tooltiptext = Utilizza crittografia end-to-end per questo messaggio
+encryption-options-openpgp =
+    .label = OpenPGP
+    .tooltiptext = Visualizza o modifica le impostazioni della crittografia OpenPGP
+encryption-options-smime =
+    .label = S/MIME
+    .tooltiptext = Visualizza o modifica le impostazioni della crittografia S/MIME
+signing-toggle =
+    .label = Firma
+    .tooltiptext = Utilizza la firma digitale per questo messaggio
+menu-openpgp =
+    .label = OpenPGP
+    .accesskey = O
+menu-smime =
+    .label = S/MIME
+    .accesskey = S
+menu-encrypt =
+    .label = Critta
+    .accesskey = C
+menu-encrypt-subject =
+    .label = Critta l’oggetto
+    .accesskey = o
+menu-sign =
+    .label = Apponi firma digitale
+    .accesskey = f
+menu-manage-keys =
+    .label = Assistente chiavi
+    .accesskey = A
+menu-view-certificates =
+    .label = Visualizza certificati dei destinatari
+    .accesskey = V
+menu-open-key-manager =
+    .label = Gestore chiavi
+    .accesskey = G
+openpgp-key-issue-notification-one = Per utilizzare la crittografia end-to-end è necessario risolvere i problemi con la chiave per { $addr }
+openpgp-key-issue-notification-many = Per utilizzare la crittografia end-to-end è necessario risolvere i problemi con la chiave per { $count } destinatari.
+smime-cert-issue-notification-one = Per utilizzare la crittografia end-to-end è necessario risolvere i problemi con il certificato per { $addr }
+smime-cert-issue-notification-many = Per utilizzare la crittografia end-to-end è necessario risolvere i problemi con il certificato per { $count } destinatari.
+key-notification-disable-encryption =
+    .label = Non crittare
+    .accesskey = N
+    .tooltiptext = Disattiva la crittografia end-to-end
+key-notification-resolve =
+    .label = Risolvi…
+    .accesskey = R
+    .tooltiptext = Apri l’assistente chiavi OpenPGP
 
 ## Addressing Area
 
-to-compose-address-row-label =
-    .value = A
-#   $key (String) - the shortcut key for this field
-to-compose-show-address-row-menuitem =
-    .label = Campo { to-compose-address-row-label.value }
-    .accesskey = a
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-to-compose-show-address-row-label =
-    .value = { to-compose-address-row-label.value }
-    .tooltiptext = Mostra campo { to-compose-address-row-label.value } ({ to-compose-show-address-row-menuitem.acceltext })
-cc-compose-address-row-label =
-    .value = Cc
-#   $key (String) - the shortcut key for this field
-cc-compose-show-address-row-menuitem =
-    .label = Campo { cc-compose-address-row-label.value }
-    .accesskey = C
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-cc-compose-show-address-row-label =
-    .value = { cc-compose-address-row-label.value }
-    .tooltiptext = Mostra campo { cc-compose-address-row-label.value } ({ cc-compose-show-address-row-menuitem.acceltext })
-bcc-compose-address-row-label =
-    .value = Ccn
-#   $key (String) - the shortcut key for this field
-bcc-compose-show-address-row-menuitem =
-    .label = Campo { bcc-compose-address-row-label.value }
-    .accesskey = m
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-bcc-compose-show-address-row-label =
-    .value = { bcc-compose-address-row-label.value }
-    .tooltiptext = Mostra campo { bcc-compose-address-row-label.value } ({ bcc-compose-show-address-row-menuitem.acceltext })
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-many-public-recipients-info = I { $count } destinatari inseriti nei campi A e Cc possono vedere i rispettivi indirizzi. Puoi evitare di mostrare gli indirizzi dei destinatari utilizzando Ccn.
 to-address-row-label =
     .value = A
 #   $key (String) - the shortcut key for this field
@@ -323,3 +356,17 @@ cloud-file-attachment-error = Non è stato possibile aggiornare l’allegato Fil
 # $filename (string) - name of the file that was renamed and caused the error
 cloud-file-account-error-title = Errore con l’account Filelink
 cloud-file-account-error = Non è stato possibile aggiornare l’allegato Filelink { $filename } in quanto il relativo account Filelink è stato eliminato.
+
+## Link Preview
+
+link-preview-title = Anteprima del link
+link-preview-description = { -brand-short-name } può incorporare un’anteprima quando viene inserito un link.
+link-preview-autoadd = Aggiungi automaticamente un’anteprima dei link quando possibile
+link-preview-replace-now = Aggiungere un’anteprima per questo link?
+link-preview-yes-replace = Sì
+
+## Dictionary selection popup
+
+spell-add-dictionaries =
+    .label = Aggiungi dizionari…
+    .accesskey = z

@@ -89,23 +89,23 @@ restart-later = Ath-thòisich uaireigin eile
 
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
-extension-controlled-password-saving = Tha an roghainn seo fo stiùireadh leudachan <img data-l10n-name="icon"/> { $name }.
+extension-controlling-password-saving = Tha an roghainn seo fo stiùireadh <img data-l10n-name="icon"/> <strong>{ $name }</strong>.
 
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
-extension-controlled-web-notifications = Tha smachd aig leudachan, <img data-l10n-name="icon"/> { $name }, air an roghainn seo.
+extension-controlling-web-notifications = Tha an roghainn seo fo stiùireadh <img data-l10n-name="icon"/><strong>{ $name }</strong>.
 
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
-extension-controlled-privacy-containers = Tha feum air leudachan, <img data-l10n-name="icon"/> { $name }, air tabaichean shoithichean.
+extension-controlling-privacy-containers = Tha <img data-l10n-name="icon"/> <strong>{ $name }</strong> feumach air tabaichean soithich.
 
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = Tha smachd aig leudachan, <img data-l10n-name="icon"/> { $name }, air an roghainn seo.
+extension-controlling-websites-content-blocking-all-trackers = Tha an roghainn seo fo stiùireadh <img data-l10n-name="icon"/> <strong>{ $name }</strong>.
 
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
-extension-controlled-proxy-config = Tha smachd aig leudachan, <img data-l10n-name="icon"/> { $name }, mar a cheanglas { -brand-short-name } ris an eadar-lìon.
+extension-controlling-proxy-config = Tha mar a nì { -brand-short-name } ceangal gun eadar-lìon fo stiùireadh <img data-l10n-name ="icon"/> <strong>{ $name }</strong>
 
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
@@ -138,8 +138,8 @@ set-as-my-default-browser =
     .label = Cleachd mar am brabhsair bunaiteach...
     .accesskey = b
 
-startup-restore-previous-session =
-    .label = Aisig an seisean mu dheireadh
+startup-restore-windows-and-tabs =
+    .label = Fosgail na h-uinneagan ’s tabaichean roimhe
     .accesskey = s
 
 startup-restore-warn-on-quit =
@@ -158,9 +158,18 @@ open-new-link-as-tabs =
     .label = Fosgail ceanglaichean ann an tabaichean seach uinneagan ùra
     .accesskey = w
 
-warn-on-close-multiple-tabs =
-    .label = Thoir rabhadh mus dùin mi iomadh taba còmhla
+confirm-on-close-multiple-tabs =
+    .label = Dearbh mus dèid iomadh taba a dhùnadh
     .accesskey = m
+
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (String) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+confirm-on-quit-with-key =
+    .label = Dearbh mus dèid fàgail an-seo le { $quitKey }
+    .accesskey = b
 
 warn-on-open-many-tabs =
     .label = Ma tha cunnart gun cuir cus thabaichean maille air { -brand-short-name }, thoir rabhadh
@@ -221,7 +230,22 @@ containers-remove-cancel-button = Na thoir an soitheach seo air falbh
 
 language-and-appearance-header = Cànan is coltas
 
-fonts-and-colors-header = Cruthan-clò ⁊ dathan
+preferences-web-appearance-header = Coltas nan làrach
+
+preferences-web-appearance-description = Cuiridh cuid a làraichean-lìn gleus air sgeama an dathan a-rèir nan roghainnean agad-sa. Tagh an sgeama dhathan a bu mhiann leat dha na làraichean ud.
+
+preferences-web-appearance-choice-browser = Ùrlar { -brand-short-name }
+preferences-web-appearance-choice-system = Ùrlar an t-siostaim
+preferences-web-appearance-choice-light = Soilleir
+preferences-web-appearance-choice-dark = Dorcha
+
+preferences-colors-header = Dathan
+
+preferences-colors-manage-button =
+    .label = Stiùirich na dathan…
+    .accesskey = c
+
+preferences-fonts-header = Cruthan-clò
 
 default-font = An cruth-clò bunaiteach
     .accesskey = u
@@ -231,10 +255,6 @@ default-font-size = Meud
 advanced-fonts =
     .label = Adhartach…
     .accesskey = h
-
-colors-settings =
-    .label = Dathan…
-    .accesskey = D
 
 # Zoom is a noun, and the message is used as header for a group of options
 preferences-zoom-header = Sùm
@@ -293,6 +313,9 @@ download-header = Luchdaidhean a-nuas
 
 download-save-to =
     .label = Sàbhail faidhlichean ann an
+    .accesskey = S
+
+download-save-where = Sàbhail faidhlichean ann an
     .accesskey = S
 
 download-choose-folder =
@@ -405,6 +428,16 @@ applications-use-os-default-label =
     .value = { applications-use-os-default.label }
 
 ##
+
+applications-handle-new-file-types-description = Dè nì { -brand-short-name } le faidhlichean eile?
+
+applications-save-for-new-types =
+    .label = Sàbhail na faidhlichean
+    .accesskey = S
+
+applications-ask-before-handling =
+    .label = Faighnich dhìom a bheil mi airson faidhlichean fhosgladh no dùnadh
+    .accesskey = a
 
 drm-content-header = Susbaint Digital Rights Management (DRM)
 
@@ -605,11 +638,6 @@ home-prefs-content-description = Tagh an t-susbaint a bu mhath leat fhaicinn air
 
 home-prefs-search-header =
     .label = Lorg air an lìon
-home-prefs-topsites-header =
-    .label = Brod nan làrach
-home-prefs-topsites-description = Na làraichean air an tadhail thu as trice
-home-prefs-topsites-by-option-sponsored =
-    .label = Brod nan làrach sponsairichte
 home-prefs-shortcuts-header =
     .label = Ath-ghoiridean
 home-prefs-shortcuts-description = Làraichean a shàbhail thu no a thadhail thu orra
@@ -621,7 +649,6 @@ home-prefs-shortcuts-by-option-sponsored =
 
 home-prefs-recommended-by-header =
     .label = ’Ga mholadh le { $provider }
-home-prefs-recommended-by-description-update = Sàr-shusbaint o fheadh an lìn ’ga thasgadh le { $provider }
 home-prefs-recommended-by-description-new = Sàr-shusbaint ’ga thasgadh le { $provider } mar phàirt de theaghlach { -brand-product-name }
 
 ##
@@ -630,9 +657,6 @@ home-prefs-recommended-by-learn-more = Mar a dh’obraicheas e
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Sgeulachdan sponsairichte
 
-home-prefs-highlights-header =
-    .label = Sàr-roghainn
-home-prefs-highlights-description = Taghadh de làraichean a shàbhail thu no air an do thadhail thu
 home-prefs-highlights-option-visited-pages =
     .label = Duilleagan air an do thadhail thu
 home-prefs-highlights-options-bookmarks =
@@ -652,7 +676,6 @@ home-prefs-recent-activity-description = Roghainn de làraichean is susbaint fai
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = Snippets
-home-prefs-snippets-description = Ùrachaidhean o { -vendor-short-name } is { -brand-product-name }
 
 home-prefs-snippets-description-new = Gliocasan is naidheachdan o { -vendor-short-name } is { -brand-product-name }
 
@@ -1050,14 +1073,6 @@ sitedata-block-desc = Seòrsa bacte
 
 sitedata-option-block-cross-site-trackers =
     .label = Tracaichean thar làraichean
-sitedata-option-block-cross-site-and-social-media-trackers =
-    .label = Tracaichean thar làraichean ’s nam meadhanan sòisealta
-sitedata-option-block-cross-site-tracking-cookies-including-social-media =
-    .label = Briosgaidean tracaidh thar làraichean – a’ gabhail a-staigh briosgaidean mheadhanan sòisealta
-sitedata-option-block-cross-site-cookies-including-social-media =
-    .label = Briosgaidean thar làraichean – a’ gabhail a-staigh briosgaidean mheadhanan sòisealta
-sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
-    .label = Tracaichean thar làraichean ’s nam meadhanan sòisealta agus cùm an còrr dhe na briosgaidean fa leth
 sitedata-option-block-unvisited =
     .label = Briosgaidean o làraichean air nach deach tadhal
 sitedata-option-block-all-third-party =
@@ -1150,7 +1165,6 @@ content-blocking-cryptominers = Criopto-mhèinneadairean
 content-blocking-fingerprinters = Lorgaichean-meur
 
 content-blocking-warning-title = An aire!
-content-blocking-and-isolating-etp-warning-description = Ma bhacas tu na tracaichean ’s a chumas tu briosgaidean fa leth, dh’fhaoidte gun doir sin buaidh air gleusan cuid a làraichean. Ath-luchdaich duilleag leis na tracaichean an comas airson a susbaint gu lèir a luchdadh.
 content-blocking-and-isolating-etp-warning-description-2 = Dh’fhaoidte gun adhbharaich an roghainn seo nach seall a h-uile làrach-lìn an t-susbaint mar bu chòir no nach obraich iad mar bu chòir. Ma tha coltas briste air làrach, ’s dòcha gu bheil thu airson an dìon o thracadh a chur dheth dhan làrach ud airson an t-susbaint gu lèir aice a luchdadh.
 content-blocking-warning-learn-how = Barrachd fiosrachaidh
 
@@ -1237,10 +1251,6 @@ permissions-autoplay-settings =
 permissions-block-popups =
     .label = Cuir bacadh air priob-uinneagan
     .accesskey = b
-
-permissions-block-popups-exceptions =
-    .label = Eisgeachdan…
-    .accesskey = g
 
 permissions-addon-install-warning =
     .label = Thoir rabhadh nuair a dh’fheuchas làraichean-lìn ri tuilleadan a stàladh

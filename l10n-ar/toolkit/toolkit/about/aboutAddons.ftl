@@ -178,7 +178,6 @@ extensions-warning-update-security = التحقق من أمن التحديثات
 extensions-warning-update-security-button = فعّل
     .title = فعّل التحقق من أمن تحديثات الإضافات
 
-
 ## Strings connected to add-on updates
 
 addon-updates-check-for-updates = التمس التحديثات
@@ -433,3 +432,25 @@ addons-heading-search-input =
 
 addon-page-options-button =
     .title = أدوات لجميع الإضافات
+
+## Detail notifications
+## Variables:
+##   $name (String): name of the add-on.
+
+# Variables:
+#   $version (String): application version.
+details-notification-incompatible = { $name } غير متوافقة مع { -brand-short-name } { $version }.
+
+details-notification-unsigned-and-disabled = تعذّر التحقق من { $name } للاستخدام مع { -brand-short-name } و لذا عُطّل.
+details-notification-unsigned-and-disabled-link = المزيد من المعلومات
+
+details-notification-unsigned = تعذّر التحقق من { $name } للاستخدام مع { -brand-short-name }. واصل بحذر.
+details-notification-unsigned-link = المزيد من المعلومات
+
+details-notification-blocked = عُطّلت { $name } لأسباب تتعلق بالأمن أو الثبات.
+details-notification-blocked-link = مزيد من المعلومات
+
+details-notification-softblocked = { $name } معروفة بتسببها لمشاكل في الأمن أو الثبات.
+details-notification-softblocked-link = مزيد من المعلومات
+
+details-notification-gmp-pending = سينصّب { $name } حالًا.

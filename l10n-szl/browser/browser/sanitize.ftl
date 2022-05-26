@@ -78,8 +78,8 @@ item-form-search-history =
 
 data-section-label = Dane
 
-item-site-preferences =
-    .label = Preferyncyje strōn
+item-site-settings =
+    .label = Sztalōnki serwerōw
     .accesskey = S
 
 item-offline-apps =

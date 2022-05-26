@@ -3,6 +3,24 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+## Send Format
+
+compose-send-format-menu =
+    .label = Формат надсилання
+    .accesskey = Ф
+compose-send-auto-menu-item =
+    .label = Автоматично
+    .accesskey = А
+compose-send-both-menu-item =
+    .label = І HTML, і звичайний текст
+    .accesskey = І
+compose-send-html-menu-item =
+    .label = Лише HTML
+    .accesskey = H
+compose-send-plain-menu-item =
+    .label = Лише звичайний текст
+    .accesskey = з
+
 ## Addressing widget
 
 #   $type (String) - the type of the addressing row
@@ -68,9 +86,6 @@ menuitem-toggle-attachment-pane =
 toolbar-button-add-attachment =
     .label = Вкласти
     .tooltiptext = Додати вкладення ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
-add-attachment-notification-reminder =
-    .label = Додати вкладення…
-    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 add-attachment-notification-reminder2 =
     .label = Додати вкладення…
     .accesskey = о
@@ -98,10 +113,6 @@ attachment-bucket-count-value =
         [few] { $count } вкладень
        *[many] { $count } вкладень
     }
-expand-attachment-pane-tooltip =
-    .tooltiptext = Показати панель вкладень ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Сховати панель вкладень ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Показати панель вкладень ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -135,10 +146,6 @@ button-return-receipt =
 
 ## Encryption
 
-message-to-be-signed-icon =
-    .alt = Підписати повідомлення
-message-to-be-encrypted-icon =
-    .alt = Зашифрувати повідомлення
 encryption-menu =
     .label = Безпека
     .accesskey = з
@@ -151,6 +158,9 @@ encryption-options-openpgp =
 encryption-options-smime =
     .label = S/MIME
     .tooltiptext = Переглянути або змінити налаштування шифрування S/MIME
+signing-toggle =
+    .label = Підпис
+    .tooltiptext = Використати цифровий підпис для цього повідомлення
 menu-openpgp =
     .label = OpenPGP
     .accesskey = O
@@ -190,38 +200,6 @@ key-notification-resolve =
 
 ## Addressing Area
 
-to-compose-address-row-label =
-    .value = Кому
-#   $key (String) - the shortcut key for this field
-to-compose-show-address-row-menuitem =
-    .label = Поле { to-compose-address-row-label.value }
-    .accesskey = е
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-to-compose-show-address-row-label =
-    .value = { to-compose-address-row-label.value }
-    .tooltiptext = Показати { to-compose-address-row-label.value } Поле ({ to-compose-show-address-row-menuitem.acceltext })
-cc-compose-address-row-label =
-    .value = Копія
-#   $key (String) - the shortcut key for this field
-cc-compose-show-address-row-menuitem =
-    .label = Поле { cc-compose-address-row-label.value }
-    .accesskey = л
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-cc-compose-show-address-row-label =
-    .value = { cc-compose-address-row-label.value }
-    .tooltiptext = Показати { cc-compose-address-row-label.value } Поле ({ cc-compose-show-address-row-menuitem.acceltext })
-bcc-compose-address-row-label =
-    .value = Прихована копія
-#   $key (String) - the shortcut key for this field
-bcc-compose-show-address-row-menuitem =
-    .label = Поле { bcc-compose-address-row-label.value }
-    .accesskey = о
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-bcc-compose-show-address-row-label =
-    .value = { bcc-compose-address-row-label.value }
-    .tooltiptext = Показати { bcc-compose-address-row-label.value } Поле ({ bcc-compose-show-address-row-menuitem.acceltext })
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-many-public-recipients-info = { $count } одержувачі у Кому та Копія бачитимуть адресу одне одного. Ви можете уникнути розголошення одержувачів, використовуючи замість цього приховану копію.
 to-address-row-label =
     .value = Кому
 #   $key (String) - the shortcut key for this field
@@ -387,3 +365,17 @@ cloud-file-attachment-error = Не вдалося оновити вкладен�
 # $filename (string) - name of the file that was renamed and caused the error
 cloud-file-account-error-title = Помилка облікового запису Filelink
 cloud-file-account-error = Не вдалося оновити вкладення Filelink { $filename }, оскільки його обліковий запис Filelink було видалено.
+
+## Link Preview
+
+link-preview-title = Попередній перегляд посилання
+link-preview-description = { -brand-short-name } може додати вбудований попередній перегляд під час вставлення посилань.
+link-preview-autoadd = Автоматично додавати попередній перегляд посилань, коли це можливо
+link-preview-replace-now = Додати попередній перегляд посилання для цього посилання?
+link-preview-yes-replace = Так
+
+## Dictionary selection popup
+
+spell-add-dictionaries =
+    .label = Додати словники…
+    .accesskey = о

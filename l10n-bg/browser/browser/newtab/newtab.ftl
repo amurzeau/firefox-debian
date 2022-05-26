@@ -8,7 +8,6 @@
 newtab-page-title = Нов раздел
 newtab-settings-button =
     .title = Настройки на новия раздел
-
 newtab-personalize-icon-label =
     .title = Приспособяване на новите раздели
     .aria-label = Приспособяване на новите раздели
@@ -37,11 +36,7 @@ newtab-search-box-handoff-input-no-engine =
     .title = Търсете или въведете адрес
     .aria-label = Търсете или въведете адрес
 
-newtab-search-box-search-the-web-input =
-    .placeholder = Търсене в интернет
-    .title = Търсене в интернет
-    .aria-label = Търсене в интернет
-
+newtab-search-box-text = Търсене в интернет
 newtab-search-box-input =
     .placeholder = Търсене в мрежата
     .aria-label = Търсене в мрежата
@@ -49,7 +44,6 @@ newtab-search-box-input =
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = Добавяне на търсеща машина
-newtab-topsites-add-topsites-header = Нова често посещавана страница
 newtab-topsites-add-shortcut-header = Нова клавишна комбинация
 newtab-topsites-edit-topsites-header = Променяне на често посещавана страница
 newtab-topsites-edit-shortcut-header = Промяна на клавишна комбинация
@@ -204,7 +198,6 @@ newtab-section-expand-section-label =
 ## Section Headers.
 
 newtab-section-header-topsites = Предпочитани страници
-newtab-section-header-highlights = Акценти
 newtab-section-header-recent-activity = Последна активност
 # Variables:
 #  $provider (String): Name of the corresponding content provider.
@@ -218,7 +211,6 @@ newtab-empty-section-highlights = Разглеждайте и тук ще ви �
 # Variables:
 #  $provider (String): Name of the content provider for this section, e.g "Pocket".
 newtab-empty-section-topstories = Разгледахте всичко. Проверете по-късно за повече истории от { $provider }. Нямате търпение? Изберете популярна тема, за да откриете повече истории от цялата Мрежа.
-
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
@@ -237,6 +229,17 @@ newtab-pocket-more-recommendations = Повече препоръчани
 newtab-pocket-learn-more = Научете повече
 newtab-pocket-cta-button = Вземете { -pocket-brand-name }
 newtab-pocket-cta-text = Запазете статиите, които харесвате в { -pocket-brand-name } и заредете ума си с увлекателни четива.
+
+# A save to Pocket button that shows over the card thumbnail on hover.
+newtab-pocket-save-to-pocket = Запазване в { -pocket-brand-name }
+
+# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
+newtab-pocket-load-more-stories-button = Зареждане на още истории
+
+## Pocket Final Card Section.
+## This is for the final card in the Pocket grid.
+
+newtab-pocket-last-card-desc = Проверете по-късно за повече.
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.
@@ -260,5 +263,4 @@ newtab-custom-pocket-sponsored = Платени публикации
 newtab-custom-recent-title = Последна активност
 newtab-custom-recent-subtitle = Избрани страници и съдържание
 newtab-custom-close-button = Затваряне
-
 newtab-custom-settings = Настройки

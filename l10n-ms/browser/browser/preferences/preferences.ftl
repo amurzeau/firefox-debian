@@ -51,22 +51,6 @@ restart-later = Mula semula Kemudian
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their notifications permission
-# is being controlled by an extension.
-extension-controlled-web-notifications = Ekstensi, <img data-l10n-name="icon"/> { $name } mengawal tetapan ini.
-
-# This string is shown to notify the user that Container Tabs
-# are being enabled by an extension.
-extension-controlled-privacy-containers = Ekstensi <img data-l10n-name="icon"/> { $name }, memerlukan Tab Penyimpan.
-
-# This string is shown to notify the user that their content blocking "All Detected Trackers"
-# preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = Ekstensi, <img data-l10n-name="icon"/> { $name } mengawal tetapan ini.
-
-# This string is shown to notify the user that their proxy configuration preferences
-# are being controlled by an extension.
-extension-controlled-proxy-config = Ekstensi, <img data-l10n-name="icon"/> { $name }, mengawal cara { -brand-short-name } menyambung ke internet.
-
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -95,10 +79,6 @@ set-as-my-default-browser =
     .label = Jadikan Piawai…
     .accesskey = P
 
-startup-restore-previous-session =
-    .label = Pulih sesi dahulu
-    .accesskey = s
-
 disable-extension =
     .label = Nyahdayakan Ekstensi
 
@@ -111,10 +91,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Buka pautan sebagai tab, bukan tetingkap baru
     .accesskey = t
-
-warn-on-close-multiple-tabs =
-    .label = Beri amaran apabila menutup berbilang tab
-    .accesskey = B
 
 warn-on-open-many-tabs =
     .label = Beri amaran apabila membuka berbilang tab yang mungkin memperlahankan { -brand-short-name }
@@ -149,12 +125,9 @@ containers-remove-alert-msg = Jika anda mengalih keluar Penyimpan ini sekarang, 
 containers-remove-ok-button = Buang Penyimpan Ini
 containers-remove-cancel-button = Jangan buang Penyimpan Ini
 
-
 ## General Section - Language & Appearance
 
 language-and-appearance-header = Bahasa dan Penampilan
-
-fonts-and-colors-header = Fon & Warna
 
 default-font = Fon piawai
     .accesskey = F
@@ -164,10 +137,6 @@ default-font-size = Saiz
 advanced-fonts =
     .label = Lanjutan…
     .accesskey = L
-
-colors-settings =
-    .label = Warna…
-    .accesskey = W
 
 language-header = Bahasa
 
@@ -208,6 +177,9 @@ download-header = Muat turun
 
 download-save-to =
     .label = Simpan fail ke
+    .accesskey = n
+
+download-save-where = Simpan fail ke
     .accesskey = n
 
 download-choose-folder =
@@ -458,9 +430,6 @@ home-prefs-content-description = Pilih kandungan yang mahu dalam skrin Halaman U
 
 home-prefs-search-header =
     .label = Carian Web
-home-prefs-topsites-header =
-    .label = Laman Teratas
-home-prefs-topsites-description = Laman yang anda kerap lawati
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -476,9 +445,6 @@ home-prefs-recommended-by-learn-more = Cara pelaksanaan
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Kisah Tajaan
 
-home-prefs-highlights-header =
-    .label = Serlahan
-home-prefs-highlights-description = Pilihan laman yang anda sudah simpan atau lawati
 home-prefs-highlights-option-visited-pages =
     .label = Halaman Dilawati
 home-prefs-highlights-options-bookmarks =
@@ -494,7 +460,6 @@ home-prefs-highlights-option-saved-to-pocket =
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = Cebisan
-home-prefs-snippets-description = Kemas kini daripada { -vendor-short-name } dan { -brand-product-name }
 
 home-prefs-sections-rows-option =
     .label = { $num } baris
@@ -562,9 +527,6 @@ containers-add-button =
 containers-remove-button =
     .label = Buang
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
@@ -579,9 +541,6 @@ sync-signedout-caption = Bawa Web dengan anda
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Muat turun Firefox untuk<img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> atau <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> untuk sync dengan peranti mudah alih anda.
-
-## Sync Section - Signed in
-
 
 ## Firefox Account - Signed in
 
@@ -661,9 +620,6 @@ sync-device-name-save =
 ## Privacy Section
 
 privacy-header = Privasi Pelayar
-
-## Privacy Section - Forms
-
 
 ## Privacy Section - Logins and Passwords
 
@@ -863,10 +819,6 @@ permissions-block-popups =
     .label = Sekat tetingkap popup
     .accesskey = S
 
-permissions-block-popups-exceptions =
-    .label = Pengecualian…
-    .accesskey = E
-
 permissions-addon-install-warning =
     .label = Beri amaran apabila laman web cuba memasang add-ons
     .accesskey = B
@@ -934,6 +886,7 @@ certs-devices =
     .accesskey = P
 
 ## Privacy Section - HTTPS-Only
+
 
 ## The following strings are used in the Download section of settings
 

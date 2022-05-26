@@ -3,6 +3,24 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+## Send Format
+
+compose-send-format-menu =
+    .label = Formát odosielaných správ
+    .accesskey = F
+compose-send-auto-menu-item =
+    .label = Automaticky
+    .accesskey = A
+compose-send-both-menu-item =
+    .label = HTML aj obyčajný text
+    .accesskey = H
+compose-send-html-menu-item =
+    .label = Iba HTML
+    .accesskey = T
+compose-send-plain-menu-item =
+    .label = Iba obyčajný text
+    .accesskey = b
+
 ## Addressing widget
 
 #   $type (String) - the type of the addressing row
@@ -68,9 +86,6 @@ menuitem-toggle-attachment-pane =
 toolbar-button-add-attachment =
     .label = Pripojiť
     .tooltiptext = Pridať prílohu ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
-add-attachment-notification-reminder =
-    .label = Pridať prílohu…
-    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 add-attachment-notification-reminder2 =
     .label = Pridať prílohu…
     .accesskey = h
@@ -98,10 +113,6 @@ attachment-bucket-count-value =
         [few] { $count } prílohy
        *[other] { $count } príloh
     }
-expand-attachment-pane-tooltip =
-    .tooltiptext = Zobraziť panel príloh ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Skryť panel príloh ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Zobraziť panel príloh ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -135,10 +146,6 @@ button-return-receipt =
 
 ## Encryption
 
-message-to-be-signed-icon =
-    .alt = Podpísať správu
-message-to-be-encrypted-icon =
-    .alt = Zašifrovať správu
 encryption-menu =
     .label = Zabezpečenie
     .accesskey = b
@@ -151,6 +158,9 @@ encryption-options-openpgp =
 encryption-options-smime =
     .label = S/MIME
     .tooltiptext = Zobraziť alebo zmeniť nastavenie šifrovania S/MIME
+signing-toggle =
+    .label = Podpísať
+    .tooltiptext = Pre túto správu použiť digitálny podpis
 menu-openpgp =
     .label = OpenPGP
     .accesskey = G
@@ -190,38 +200,6 @@ key-notification-resolve =
 
 ## Addressing Area
 
-to-compose-address-row-label =
-    .value = Komu
-#   $key (String) - the shortcut key for this field
-to-compose-show-address-row-menuitem =
-    .label = Pole { to-compose-address-row-label.value }
-    .accesskey = o
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-to-compose-show-address-row-label =
-    .value = { to-compose-address-row-label.value }
-    .tooltiptext = Zobraziť pole { to-compose-address-row-label.value } ({ to-compose-show-address-row-menuitem.acceltext })
-cc-compose-address-row-label =
-    .value = Kópia
-#   $key (String) - the shortcut key for this field
-cc-compose-show-address-row-menuitem =
-    .label = Pole { cc-compose-address-row-label.value }
-    .accesskey = K
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-cc-compose-show-address-row-label =
-    .value = { cc-compose-address-row-label.value }
-    .tooltiptext = Zobraziť pole { cc-compose-address-row-label.value } ({ cc-compose-show-address-row-menuitem.acceltext })
-bcc-compose-address-row-label =
-    .value = Skrytá kópia
-#   $key (String) - the shortcut key for this field
-bcc-compose-show-address-row-menuitem =
-    .label = Pole { bcc-compose-address-row-label.value }
-    .accesskey = S
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-bcc-compose-show-address-row-label =
-    .value = { bcc-compose-address-row-label.value }
-    .tooltiptext = Zobraziť pole { bcc-compose-address-row-label.value } ({ bcc-compose-show-address-row-menuitem.acceltext })
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-many-public-recipients-info = Príjemcovia (celkom { $count }) v poliach Komu a Kópia si navzájom uvidia adresy. Zverejňovaniu príjemcov sa môžete vyhnúť použitím Skrytej kópie.
 to-address-row-label =
     .value = Komu
 #   $key (String) - the shortcut key for this field
@@ -387,3 +365,17 @@ cloud-file-attachment-error = Aktualizácia prílohy Filelink { $filename } zlyh
 # $filename (string) - name of the file that was renamed and caused the error
 cloud-file-account-error-title = Chyba účtu Filelink
 cloud-file-account-error = Prílohu Filelink { $filename } sa nepodarilo aktualizovať, pretože jej účet Filelink bol odstránený.
+
+## Link Preview
+
+link-preview-title = Ukážka odkazu
+link-preview-description = { -brand-short-name } môže pri vkladaní odkazov pridať aj ukážku cieľa odkazu.
+link-preview-autoadd = Automaticky pridávať ukážky odkazov, keď je to možné
+link-preview-replace-now = Chcete pridať ukážku odkazu pre tento odkaz?
+link-preview-yes-replace = Áno
+
+## Dictionary selection popup
+
+spell-add-dictionaries =
+    .label = Pridať slovníky…
+    .accesskey = P

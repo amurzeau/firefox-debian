@@ -43,15 +43,6 @@ menu-quit =
 menu-quit-mac =
     .label = Изход от { -brand-shorter-name }
 
-# This menu-quit-button string is only used on Linux.
-menu-quit-button =
-    .label = { menu-quit.label }
-
-# This menu-quit-button-win string is only used on Windows.
-menu-quit-button-win =
-    .label = { menu-quit.label }
-    .tooltip = Изход от { -brand-shorter-name }
-
 menu-about =
     .label = Относно { -brand-shorter-name }
     .accesskey = О
@@ -81,9 +72,6 @@ menu-file-open-location =
 menu-file-open-file =
     .label = Отваряне…
     .accesskey = о
-menu-file-close =
-    .label = Затваряне
-    .accesskey = З
 menu-file-close-window =
     .label = Затваряне на прозореца
     .accesskey = п
@@ -93,12 +81,12 @@ menu-file-save-page =
 menu-file-email-link =
     .label = Препратка по имейл…
     .accesskey = е
+menu-file-share-url =
+    .label = Споделяне
+    .accesskey = С
 menu-file-print-setup =
     .label = Настройки на отпечатване…
     .accesskey = Н
-menu-file-print-preview =
-    .label = Преглед преди отпечатване
-    .accesskey = р
 menu-file-print =
     .label = Отпечатване…
     .accesskey = п
@@ -168,7 +156,6 @@ menu-view-page-style-no-style =
 menu-view-page-basic-style =
     .label = Основен стил
     .accesskey = О
-
 menu-view-repair-text-encoding =
     .label = Поправка на кодировката
     .accesskey = к
@@ -214,7 +201,6 @@ menu-history-undo-menu =
     .label = Последно затворени раздели
 menu-history-undo-window-menu =
     .label = Последно затворени прозорци
-
 menu-history-reopen-all-tabs = Възстановяване на всички раздели
 menu-history-reopen-all-windows = Възстановяване на всички прозорци
 
@@ -313,9 +299,6 @@ menu-help-more-troubleshooting-info =
     .accesskey = т
 menu-help-report-site-issue =
     .label = Докладване на проблем със страницата…
-menu-help-feedback-page =
-    .label = Обратна връзка…
-    .accesskey = в
 menu-help-enter-troubleshoot-mode2 =
     .label = Режим за отстраняване на неизправности…
     .accesskey = м

@@ -44,15 +44,18 @@ toolbar-context-menu-remove-extension =
 toolbar-context-menu-report-extension =
     .label = Adrodd ar yr Estyniad
     .accesskey = A
-# Can appear on the same context menu as menubarCmd ("Menu Bar") and
-# personalbarCmd ("Bookmarks Toolbar"), so they should have different
-# access keys.
+# Can appear on the same context menu as toolbar-context-menu-menu-bar-cmd
+# ("Menu Bar") and personalbarCmd ("Bookmarks Toolbar"), so they should
+# have different access keys.
 toolbar-context-menu-pin-to-overflow-menu =
     .label = Pinio i'r Ddewislen Ychwanegol
     .accesskey = P
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = Cuddio Botwm pan yn Wag
     .accesskey = B
+toolbar-context-menu-always-open-downloads-panel =
+    .label = Dangos y Panel Pan fydd y Llwytho'n Dechrau
+    .accesskey = D
 toolbar-context-menu-remove-from-toolbar =
     .label = Tynnu o'r Bar Offer
     .accesskey = T

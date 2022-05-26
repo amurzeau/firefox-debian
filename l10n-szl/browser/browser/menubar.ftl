@@ -38,16 +38,11 @@ menu-quit =
             [windows] s
            *[other] s
         }
+
 # This menu-quit-mac string is only used on macOS.
 menu-quit-mac =
     .label = Skōńcz { -brand-shorter-name }
-# This menu-quit-button string is only used on Linux.
-menu-quit-button =
-    .label = { menu-quit.label }
-# This menu-quit-button-win string is only used on Windows.
-menu-quit-button-win =
-    .label = { menu-quit.label }
-    .tooltip = Skōńcz { -brand-shorter-name }
+
 menu-about =
     .label = Ô aplikacyji { -brand-shorter-name }
     .accesskey = O
@@ -77,9 +72,6 @@ menu-file-open-location =
 menu-file-open-file =
     .label = Ôtwōrz zbiōr…
     .accesskey = d
-menu-file-close =
-    .label = Zawrzij
-    .accesskey = Z
 # Variables:
 #  $tabCount (Number): the number of tabs that are affected by the action.
 menu-file-close-tab =
@@ -100,12 +92,12 @@ menu-file-save-page =
 menu-file-email-link =
     .label = Poślij link emailym…
     .accesskey = E
+menu-file-share-url =
+    .label = Udostympnij
+    .accesskey = t
 menu-file-print-setup =
     .label = Nasztalowania strōny
     .accesskey = y
-menu-file-print-preview =
-    .label = Podlōnd durku
-    .accesskey = d
 menu-file-print =
     .label = Durkuj…
     .accesskey = D
@@ -318,9 +310,9 @@ menu-help-more-troubleshooting-info =
     .accesskey = r
 menu-help-report-site-issue =
     .label = Dej znać ô problymie ze strōnōm…
-menu-help-feedback-page =
-    .label = Poślij ôpinijo
-    .accesskey = S
+menu-help-share-ideas =
+    .label = Dej znać ô pōmysłach i ôpiniach…
+    .accesskey = D
 menu-help-enter-troubleshoot-mode2 =
     .label = Tryb rozwiōnzowanio problymōw…
     .accesskey = T

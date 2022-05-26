@@ -51,22 +51,6 @@ restart-later = Pārstartēt vēlāk
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their notifications permission
-# is being controlled by an extension.
-extension-controlled-web-notifications = Šo iestatījumu kontrolē paplašinājums <img data-l10n-name = "icon" /> { $name }.
-
-# This string is shown to notify the user that Container Tabs
-# are being enabled by an extension.
-extension-controlled-privacy-containers = Paplašinājumam <img data-l10n-name="icon"/> { $name } nepieciešamas konteineru cilnes.
-
-# This string is shown to notify the user that their content blocking "All Detected Trackers"
-# preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = Paplašinājums <img data-l10n-name="icon"/> { $name } kontrolē šo iestatījumu.
-
-# This string is shown to notify the user that their proxy configuration preferences
-# are being controlled by an extension.
-extension-controlled-proxy-config = Paplašinājums <img data-l10n-name="icon"/> { $name } kontrolē kā { -brand-short-name } pieslēdzas internetam.
-
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -95,10 +79,6 @@ set-as-my-default-browser =
     .label = Padarīt par noklusēto…
     .accesskey = D
 
-startup-restore-previous-session =
-    .label = Atjaunot iepriekšējo sesiju
-    .accesskey = s
-
 disable-extension =
     .label = Deaktivēt paplašinājumu
 
@@ -111,10 +91,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Vērt saites cilnēs nevis jaunos logos
     .accesskey = v
-
-warn-on-close-multiple-tabs =
-    .label = Brīdināt, pirms aizvērt vairākas cilnes
-    .accesskey = m
 
 warn-on-open-many-tabs =
     .label = Brīdināt, kad vairāku ciļņu atvēršana varētu sabremzēt { -brand-short-name }
@@ -164,12 +140,9 @@ containers-remove-alert-msg =
 containers-remove-ok-button = Noņemt šo konteineru
 containers-remove-cancel-button = Nenoņemt šo konteineru
 
-
 ## General Section - Language & Appearance
 
 language-and-appearance-header = Valoda un izskats
-
-fonts-and-colors-header = Fonti un krāsas
 
 default-font = Noklusējuma fonts
     .accesskey = N
@@ -179,10 +152,6 @@ default-font-size = Izmērs
 advanced-fonts =
     .label = Iestatījumi...
     .accesskey = a
-
-colors-settings =
-    .label = Krāsas...
-    .accesskey = K
 
 language-header = Valoda
 
@@ -223,6 +192,9 @@ download-header = Lejupielādes
 
 download-save-to =
     .label = Vieta, kur saglabāt failus:
+    .accesskey = k
+
+download-save-where = Vieta, kur saglabāt failus:
     .accesskey = k
 
 download-choose-folder =
@@ -473,9 +445,6 @@ home-prefs-content-description = Izvēlieties, ko redzēt Firefox sākuma lapā.
 
 home-prefs-search-header =
     .label = Tīmekļa meklēšana
-home-prefs-topsites-header =
-    .label = Populārākās lapas
-home-prefs-topsites-description = Biežāk apmeklētās lapas
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -491,9 +460,6 @@ home-prefs-recommended-by-learn-more = Kā tas strādā
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponsorētie stāsti
 
-home-prefs-highlights-header =
-    .label = Aktualitātes
-home-prefs-highlights-description = Jūsu apmeklēto vai saglabāto lapu izlase
 home-prefs-highlights-option-visited-pages =
     .label = Apmeklētās lapas
 home-prefs-highlights-options-bookmarks =
@@ -509,7 +475,6 @@ home-prefs-highlights-option-saved-to-pocket =
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = Fragmenti
-home-prefs-snippets-description = { -vendor-short-name } un { -brand-product-name } jaunumi
 
 home-prefs-sections-rows-option =
     .label =
@@ -582,9 +547,6 @@ containers-add-button =
 containers-remove-button =
     .label = Noņemt
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
@@ -599,9 +561,6 @@ sync-signedout-caption = Paņem tīmekli sev līdz
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Lejupielādēt Firefox <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> vai <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> lai sinhronizētos ar mobilajām ierīcēm.
-
-## Sync Section - Signed in
-
 
 ## Firefox Account - Signed in
 
@@ -681,9 +640,6 @@ sync-device-name-save =
 ## Privacy Section
 
 privacy-header = Pārlūka privātums
-
-## Privacy Section - Forms
-
 
 ## Privacy Section - Logins and Passwords
 
@@ -885,10 +841,6 @@ permissions-block-popups =
     .label = Bloķēt jaunos logus
     .accesskey = B
 
-permissions-block-popups-exceptions =
-    .label = Izņēmumi...
-    .accesskey = I
-
 permissions-addon-install-warning =
     .label = Brīdināt mani, ja lapas mēģina instalēt papildinājumus
     .accesskey = B
@@ -956,6 +908,7 @@ certs-devices =
     .accesskey = D
 
 ## Privacy Section - HTTPS-Only
+
 
 ## The following strings are used in the Download section of settings
 

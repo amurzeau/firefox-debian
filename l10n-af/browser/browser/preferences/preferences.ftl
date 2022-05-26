@@ -67,10 +67,6 @@ set-as-my-default-browser =
     .label = Maak verstek...
     .accesskey = D
 
-startup-restore-previous-session =
-    .label = Herstel vorige sessie
-    .accesskey = S
-
 tabs-group-header = Oortjies
 
 ctrl-tab-recently-used-order =
@@ -80,10 +76,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Maak skakels oop in oortjies in plaas van nuwe vensters
     .accesskey = W
-
-warn-on-close-multiple-tabs =
-    .label = Waarsku wanneer meer as een oortjie gesluit word
-    .accesskey = m
 
 warn-on-open-many-tabs =
     .label = Waarsku wanneer klomp oop oortjies dalk { -brand-short-name } kan stadig maak
@@ -130,12 +122,9 @@ containers-remove-alert-msg =
 containers-remove-ok-button = Verwyder dié konteks
 containers-remove-cancel-button = Moenie dié konteks verwyder nie
 
-
 ## General Section - Language & Appearance
 
 language-and-appearance-header = Taal en Voorkoms
-
-fonts-and-colors-header = Fonte en kleure
 
 default-font = Verstekfont
     .accesskey = V
@@ -145,10 +134,6 @@ default-font-size = Grootte
 advanced-fonts =
     .label = Gevorderd…
     .accesskey = G
-
-colors-settings =
-    .label = Kleure…
-    .accesskey = K
 
 # Zoom is a noun, and the message is used as header for a group of options
 preferences-zoom-header = Zoem
@@ -195,6 +180,9 @@ download-header = Aflaaie
 
 download-save-to =
     .label = Stoor lêers na
+    .accesskey = o
+
+download-save-where = Stoor lêers na
     .accesskey = o
 
 download-choose-folder =
@@ -392,9 +380,6 @@ choose-bookmark =
 
 home-prefs-search-header =
     .label = Web soektog
-home-prefs-topsites-header =
-    .label = Topwerwe
-home-prefs-topsites-description = Die webwerwe wat u die meeste besoek
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -460,9 +445,6 @@ containers-add-button =
 containers-remove-button =
     .label = Verwyder
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
@@ -477,9 +459,6 @@ sync-signedout-caption = Neem die Web saam
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Laai Firefox af vir <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> of <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> om met 'n selfoon te sinkroniseer.
-
-## Sync Section - Signed in
-
 
 ## Firefox Account - Signed in
 
@@ -546,9 +525,6 @@ sync-device-name-save =
 ## Privacy Section
 
 privacy-header = Blaaier Privaatheid
-
-## Privacy Section - Forms
-
 
 ## Privacy Section - Logins and Passwords
 
@@ -705,10 +681,6 @@ permissions-block-popups =
     .label = Blokkeer opspringers
     .accesskey = B
 
-permissions-block-popups-exceptions =
-    .label = Uitsonderings…
-    .accesskey = U
-
 permissions-addon-exceptions =
     .label = Uitsonderings…
     .accesskey = U
@@ -745,6 +717,7 @@ certs-enable-ocsp =
     .accesskey = B
 
 ## Privacy Section - HTTPS-Only
+
 
 ## The following strings are used in the Download section of settings
 

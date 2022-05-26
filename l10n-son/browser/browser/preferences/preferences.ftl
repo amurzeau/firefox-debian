@@ -62,10 +62,6 @@ ctrl-tab-recently-used-order =
     .label = Ctrl+Tab willandey kanjey game goyyan kanandi koraw ra
     .accesskey = T
 
-warn-on-close-multiple-tabs =
-    .label = War yaamar waati kaŋ kanji booboyaŋ ga daaba
-    .accesskey = b
-
 warn-on-open-many-tabs =
     .label = War yaamar waati kaŋ kanji booboyaŋ ga feera, nd'i ga { -brand-short-name } gayandi
     .accesskey = d
@@ -103,10 +99,7 @@ containers-remove-alert-title = Sunoo woo kaa?
 containers-remove-ok-button = Sunoo woo kaa
 containers-remove-cancel-button = Ma ši sunoo woo kaa
 
-
 ## General Section - Language & Appearance
-
-fonts-and-colors-header = Šigirawey nda noonawey
 
 default-font = Tilasu šigira
     .accesskey = T
@@ -116,10 +109,6 @@ default-font-size = Adadu
 advanced-fonts =
     .label = Jinehere…
     .accesskey = J
-
-colors-settings =
-    .label = Noonawey…
-    .accesskey = N
 
 choose-language-description = War šenni ibaayantaa suuba ka moɲey cebe
 
@@ -149,6 +138,9 @@ download-header = Zumandiyaney
 
 download-save-to =
     .label = Tukey gaabu ga
+    .accesskey = g
+
+download-save-where = Tukey gaabu ga
     .accesskey = g
 
 download-choose-folder =
@@ -328,6 +320,7 @@ choose-bookmark =
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
+
 ##
 
 
@@ -372,9 +365,6 @@ containers-add-button =
 containers-remove-button =
     .label = Kaa
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
@@ -389,9 +379,6 @@ sync-signedout-caption = War internetoo kanbe war bande
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Firefox zumandi <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> wala <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> ka hangandi nda war kanbe jinaa.
-
-## Sync Section - Signed in
-
 
 ## Firefox Account - Signed in
 
@@ -440,9 +427,6 @@ sync-device-name-save =
 ## Privacy Section
 
 
-## Privacy Section - Forms
-
-
 ## Privacy Section - Logins and Passwords
 
 forms-exceptions =
@@ -459,6 +443,7 @@ forms-master-pw-change =
 forms-master-pw-fips-desc = Šennikufal mana hin ka barmay mana
 
 ## OS Authentication dialog
+
 
 ## Privacy Section - History
 
@@ -524,6 +509,7 @@ addressbar-suggestions-settings = Ibaa&ey barmay ceecijinay honnandiyaney se
 
 ##
 
+
 ## Privacy Section - Tracking
 
 
@@ -534,10 +520,6 @@ permissions-notification = Bangandiyaney
 permissions-block-popups =
     .label = Biiboŋ bata zanfuney daabu
     .accesskey = B
-
-permissions-block-popups-exceptions =
-    .label = Hasarawey…
-    .accesskey = H
 
 permissions-addon-exceptions =
     .label = Hasarawey…
@@ -574,6 +556,7 @@ certs-enable-ocsp =
     .accesskey = H
 
 ## Privacy Section - HTTPS-Only
+
 
 ## The following strings are used in the Download section of settings
 

@@ -87,10 +87,6 @@ menu-file-save-as-file =
 
 ## AppMenu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-appmenu-preferences =
-    .label = Kjörstillingar
 appmenu-save-as-file =
     .label = Skrá…
 appmenu-settings =
@@ -130,6 +126,22 @@ message-header-msg-flagged =
 message-header-msg-not-flagged =
     .title = Ekki stjörnumerkt
     .aria-label = Ekki stjörnumerkt
+
+## Message header cutomize panel
+
+message-header-customize-panel-title = Stillingar á skilaboðahaus
+message-header-customize-button-style =
+    .value = Hnappastíll
+    .accesskey = H
+message-header-button-style-default =
+    .label = Tákn og texti
+message-header-button-style-text =
+    .label = Texti
+message-header-button-style-icons =
+    .label = Táknmyndir
+message-header-large-subject =
+    .label = Stór efnislína
+    .accesskey = S
 
 ## Action Button Context Menu
 
@@ -173,24 +185,6 @@ decrypt-and-copy-failures = Ekki var hægt að afkóða { $failures } af { $tota
 
 ## Spaces toolbar
 
-spaces-toolbar =
-    .toolbarname = Svæða-verkfæraslá
-spaces-toolbar-button-mail =
-    .title = Skipta yfir í póstflipa
-spaces-toolbar-button-address-book =
-    .title = Skipta yfir í nafnaskrárflipa
-spaces-toolbar-button-calendar =
-    .title = Skipta yfir á dagatalsflipa
-spaces-toolbar-button-tasks =
-    .title = Skipta yfir á verkefnaflipa
-spaces-toolbar-button-chat =
-    .title = Skipta yfir á spjallflipa
-spaces-toolbar-button-settings =
-    .title = Skipta yfir á stillingaflipa
-spaces-toolbar-button-collapse =
-    .title = Fella saman Svæða-verkfæraslá
-spaces-toolbar-button-reveal =
-    .title = Birta Svæða-verkfæraslána
 spaces-toolbar-element =
     .toolbarname = Svæða-verkfæraslá
     .aria-label = Svæða-verkfæraslá
@@ -227,6 +221,12 @@ settings-context-open-account-settings-item =
     .label = Opna stillingar reiknings
 settings-context-open-addons-item =
     .label = Opna viðbætur og þemu
+settings-context-open-settings-item2 =
+    .label = Stillingar
+settings-context-open-account-settings-item2 =
+    .label = Stillingar reiknings
+settings-context-open-addons-item2 =
+    .label = Viðbætur og þemu
 
 ## Spaces toolbar pinned tab menupopup
 
@@ -242,8 +242,6 @@ spaces-pinned-button-menuitem-tasks =
     .label = { spaces-toolbar-button-tasks.title }
 spaces-pinned-button-menuitem-chat =
     .label = { spaces-toolbar-button-chat.title }
-spaces-pinned-button-menuitem-reveal =
-    .label = { spaces-toolbar-button-reveal.title }
 spaces-pinned-button-menuitem-settings =
     .label = { spaces-toolbar-button-settings2.title }
 spaces-pinned-button-menuitem-show =
@@ -259,9 +257,9 @@ chat-button-unread-messages = { $count }
 
 ## Spaces toolbar customize panel
 
-spaces-context-customize =
+menuitem-customize-label =
     .label = Sérsníða…
-spaces-customize-panel-title = Stillingar Svæða-verkfæraslár
+spaces-customize-panel-title = Stillingar svæða-verkfæraslár
 spaces-customize-background-color = Bakgrunnslitur
 spaces-customize-icon-color = Litur á hnapp
 # The background color used on the buttons of the spaces toolbar when they are
@@ -272,5 +270,5 @@ spaces-customize-accent-background-color = Valinn bakgrunnslitur fyrir hnapp
 spaces-customize-accent-text-color = Valinn litur á hnapp
 spaces-customize-button-restore = Endurstilla sjálfgefin gildi
     .accesskey = r
-spaces-customize-button-save = Lokið
+customize-panel-button-save = Lokið
     .accesskey = k

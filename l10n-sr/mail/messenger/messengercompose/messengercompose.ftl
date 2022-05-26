@@ -3,7 +3,10 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# Addressing widget
+## Send Format
+
+
+## Addressing widget
 
 #   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
@@ -40,15 +43,11 @@ pill-action-move-bcc =
     .label = Преместите у сКоп поље
     .accesskey = у
 
-# Attachment widget
+## Attachment widget
 
 toolbar-button-add-attachment =
     .label = Закачи
     .tooltiptext = Закачи прилог ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
-
-add-attachment-notification-reminder =
-    .label = Додај прилог…
-    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 
 menuitem-attach-files =
     .label = Датотеке…
@@ -60,31 +59,55 @@ context-menuitem-attach-files =
     .accesskey = З
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
 
-#   $count (Number) - the number of attachments in the attachment bucket
-attachment-bucket-count =
-    .value =
-        { $count ->
-            [1] Један прилог
-            [one] { $count } прилог
-            [few] { $count } прилога
-           *[other] { $count } прилога
-        }
-    .accesskey = г
-
-# Reorder Attachment Panel
+## Reorder Attachment Panel
 
 button-return-receipt =
     .label = Потврда
     .tooltiptext = Враћа потврду о пријему ове поруке
 
-# Encryption
+## Encryption
 
-# Addressing Area
+encryption-toggle =
+    .label = Шифруј
+    .tooltiptext = Користи шифровање с краја на крај за ову поруку
+
+menu-encrypt =
+    .label = Шифруј
+    .accesskey = у
+
+menu-encrypt-subject =
+    .label = Шифруј тему
+    .accesskey = т
+
+menu-sign =
+    .label = Дигитално потпиши
+    .accesskey = л
+
+## Addressing Area
 
 
 ## Notifications
 
+
 ## Editing
 
+
 # Tools
+
+
+## Filelink
+
+
+# Placeholder file
+
+
+# Template
+
+
+# Messages
+
+
+## Link Preview
+
+## Dictionary selection popup
 

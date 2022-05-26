@@ -3,6 +3,24 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+## Send Format
+
+compose-send-format-menu =
+    .label = Formato de invio
+    .accesskey = F
+compose-send-auto-menu-item =
+    .label = Automatic
+    .accesskey = A
+compose-send-both-menu-item =
+    .label = Ambe HTML e texto simple
+    .accesskey = L
+compose-send-html-menu-item =
+    .label = Solo HTML
+    .accesskey = H
+compose-send-plain-menu-item =
+    .label = Solo texto simple
+    .accesskey = t
+
 ## Addressing widget
 
 #   $type (String) - the type of the addressing row
@@ -66,9 +84,6 @@ menuitem-toggle-attachment-pane =
 toolbar-button-add-attachment =
     .label = Annexar
     .tooltiptext = Adde un annexo ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
-add-attachment-notification-reminder =
-    .label = Adder annexo…
-    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 add-attachment-notification-reminder2 =
     .label = Adder annexo…
     .accesskey = A
@@ -94,10 +109,6 @@ attachment-bucket-count-value =
         [1] { $count } Attachamento
        *[other] { $count } Attachamentos
     }
-expand-attachment-pane-tooltip =
-    .tooltiptext = Monstrar pannello de annexo ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Celar pannello de annexo ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Monstrar quadro de annexo ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -129,10 +140,6 @@ button-return-receipt =
 
 ## Encryption
 
-message-to-be-signed-icon =
-    .alt = Signar le message
-message-to-be-encrypted-icon =
-    .alt = Cryptar le message
 encryption-menu =
     .label = Securitate
     .accesskey = c
@@ -145,6 +152,9 @@ encryption-options-openpgp =
 encryption-options-smime =
     .label = S/MIME
     .tooltiptext = Pro vider o cambiar le parametros de cryptation S/MIME
+signing-toggle =
+    .label = Firmar
+    .tooltiptext = Usa le firma digital pro iste message
 menu-openpgp =
     .label = OpenPGP
     .accesskey = O
@@ -184,38 +194,6 @@ key-notification-resolve =
 
 ## Addressing Area
 
-to-compose-address-row-label =
-    .value = A
-#   $key (String) - the shortcut key for this field
-to-compose-show-address-row-menuitem =
-    .label = Campo { to-compose-address-row-label.value }
-    .accesskey = a
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-to-compose-show-address-row-label =
-    .value = { to-compose-address-row-label.value }
-    .tooltiptext = Monstrar { to-compose-address-row-label.value } Campo ({ to-compose-show-address-row-menuitem.acceltext })
-cc-compose-address-row-label =
-    .value = CC
-#   $key (String) - the shortcut key for this field
-cc-compose-show-address-row-menuitem =
-    .label = Campo { cc-compose-address-row-label.value }
-    .accesskey = C
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-cc-compose-show-address-row-label =
-    .value = { cc-compose-address-row-label.value }
-    .tooltiptext = Monstrar { cc-compose-address-row-label.value } Campo ({ cc-compose-show-address-row-menuitem.acceltext })
-bcc-compose-address-row-label =
-    .value = Ccn
-#   $key (String) - the shortcut key for this field
-bcc-compose-show-address-row-menuitem =
-    .label = Campo { bcc-compose-address-row-label.value }
-    .accesskey = m
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-bcc-compose-show-address-row-label =
-    .value = { bcc-compose-address-row-label.value }
-    .tooltiptext = Monstrar campo { bcc-compose-address-row-label.value } ({ bcc-compose-show-address-row-menuitem.acceltext })
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-many-public-recipients-info = Le { $count } destinatarios in A e Cc videra lor le un le altere lor adresses. Tu pote impedir le divulgation del adresses del destinatarios per Ccn.
 to-address-row-label =
     .value = A
 #   $key (String) - the shortcut key for this field
@@ -378,3 +356,17 @@ cloud-file-attachment-error = Impossibile actualisar le annexo Filelink { $filen
 # $filename (string) - name of the file that was renamed and caused the error
 cloud-file-account-error-title = Error de conto Filelink
 cloud-file-account-error = Impossibile actualisar le annexo de Filelink { $filename }, perque su conto de Filelink ha essite delite.
+
+## Link Preview
+
+link-preview-title = Vista preliminar de ligamine
+link-preview-description = { -brand-short-name } pote adder, collante ligamines, un vista preliminar integrate.
+link-preview-autoadd = Automaticamente adder vistas preliminar quando possibile.
+link-preview-replace-now = Adder vista preliminar pro iste ligamine.
+link-preview-yes-replace = Si
+
+## Dictionary selection popup
+
+spell-add-dictionaries =
+    .label = Adder dictionarios…
+    .accesskey = A

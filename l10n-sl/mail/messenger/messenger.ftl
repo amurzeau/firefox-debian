@@ -89,10 +89,6 @@ menu-file-save-as-file =
 
 ## AppMenu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-appmenu-preferences =
-    .label = Nastavitve
 appmenu-save-as-file =
     .label = Datoteko …
 appmenu-settings =
@@ -133,6 +129,22 @@ message-header-msg-flagged =
     .aria-label = Označeno z zvezdico
 message-header-msg-not-flagged =
     .title = Sporočilo, ki ni označeno z zvezdico
+
+## Message header cutomize panel
+
+message-header-customize-panel-title = Nastavitve glav sporočil
+message-header-customize-button-style =
+    .value = Slog gumbov
+    .accesskey = g
+message-header-button-style-default =
+    .label = Ikone in besedilo
+message-header-button-style-text =
+    .label = Besedilo
+message-header-button-style-icons =
+    .label = Ikone
+message-header-large-subject =
+    .label = Velika zadeva
+    .accesskey = z
 
 ## Action Button Context Menu
 
@@ -182,24 +194,6 @@ decrypt-and-copy-failures =
 
 ## Spaces toolbar
 
-spaces-toolbar =
-    .toolbarname = Vrstica komponent
-spaces-toolbar-button-mail =
-    .title = Preklopi na zavihek s pošto
-spaces-toolbar-button-address-book =
-    .title = Preklopi na zavihek z imenikom
-spaces-toolbar-button-calendar =
-    .title = Preklopi na zavihek s koledarji
-spaces-toolbar-button-tasks =
-    .title = Preklopi na zavihek z opravili
-spaces-toolbar-button-chat =
-    .title = Preklopi na zavihek s klepetom
-spaces-toolbar-button-settings =
-    .title = Preklopi na zavihek z nastavitvami
-spaces-toolbar-button-collapse =
-    .title = Skrij orodno vrstico komponent
-spaces-toolbar-button-reveal =
-    .title = Pokaži orodno vrstico komponent
 spaces-toolbar-element =
     .toolbarname = Vrstica komponent
     .aria-label = Vrstica komponent
@@ -236,6 +230,12 @@ settings-context-open-account-settings-item =
     .label = Odpri nastavitve računa
 settings-context-open-addons-item =
     .label = Odpri dodatke in teme
+settings-context-open-settings-item2 =
+    .label = Nastavitve
+settings-context-open-account-settings-item2 =
+    .label = Nastavitve računa
+settings-context-open-addons-item2 =
+    .label = Dodatki in teme
 
 ## Spaces toolbar pinned tab menupopup
 
@@ -251,8 +251,6 @@ spaces-pinned-button-menuitem-tasks =
     .label = { spaces-toolbar-button-tasks.title }
 spaces-pinned-button-menuitem-chat =
     .label = { spaces-toolbar-button-chat.title }
-spaces-pinned-button-menuitem-reveal =
-    .label = { spaces-toolbar-button-reveal.title }
 spaces-pinned-button-menuitem-settings =
     .label = { spaces-toolbar-button-settings2.title }
 spaces-pinned-button-menuitem-show =
@@ -270,7 +268,7 @@ chat-button-unread-messages = { $count }
 
 ## Spaces toolbar customize panel
 
-spaces-context-customize =
+menuitem-customize-label =
     .label = Prilagodi …
 spaces-customize-panel-title = Nastavitve vrstice komponent
 spaces-customize-background-color = Barva ozadja
@@ -283,5 +281,5 @@ spaces-customize-accent-background-color = Barva ozadja izbranega gumba
 spaces-customize-accent-text-color = Barva izbranega gumba
 spaces-customize-button-restore = Povrni privzeto
     .accesskey = v
-spaces-customize-button-save = Končaj
+customize-panel-button-save = Končano
     .accesskey = K

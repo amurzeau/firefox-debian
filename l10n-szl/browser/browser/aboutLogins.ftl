@@ -5,8 +5,6 @@
 
 about-logins-page-title = Dane logowanio
 
-# "Google Play" and "App Store" are both branding and should not be translated
-
 login-filter =
     .placeholder = Szukej danych logowanio
 
@@ -46,6 +44,8 @@ login-list-count =
 login-list-sort-label-text = Zortuj podle:
 login-list-name-option = Miano (A-Z)
 login-list-name-reverse-option = Miano (Z-A)
+login-list-username-option = Miano użytkownika (A-Z)
+login-list-username-reverse-option = Miano użytkownika (Z-A)
 about-logins-login-list-alerts-option = Powiadōmiynia
 login-list-last-changed-option = Ôstatnio zmiyniōne
 login-list-last-used-option = Ôstatnio użyte
@@ -60,6 +60,12 @@ about-logins-list-item-breach-icon =
     .title = Serwer, co z niego wyciykły hasła
 about-logins-list-item-vulnerable-password-icon =
     .title = Niybezpieczne hasło
+about-logins-list-section-breach = Serwery, coś nich wyciekły hasła
+about-logins-list-section-vulnerable = Niybezpieczne hasła
+about-logins-list-section-nothing = Bez upozorniyń
+about-logins-list-section-today = Dzisio
+about-logins-list-section-yesterday = Wczora
+about-logins-list-section-week = Ôstatnie 7 dni
 
 ## Introduction screen
 
@@ -68,9 +74,8 @@ about-logins-login-intro-heading-logged-in = Niy szło znojś żodnych danych lo
 login-intro-description = Jeźli dane logowanio do aplikacyje { -brand-product-name } były spamiyntane na inkszyj maszinie, idzie je ściōngnōńć takōm metodōm:
 login-intro-instructions-fxa = Zaregistruj abo zaloguj sie do { -fxaccount-brand-name } na maszinie, co na nij sōm spamiyntane dane logowanio
 login-intro-instructions-fxa-settings = Idź do > Sztalōnki > Synchrōnizacyjo > Załōncz synchrōnizacyjo… Ôbier ôkynko danych logowanio i hasłōw.
-login-intro-instructions-fxa-help = Nawiydź <a data-l10n-name="help-link">{ -lockwise-brand-short-name } Sparcie</a> po wiyncyj pōmocy.
-about-logins-intro-import = Jak twoje dane logowanio sōm spamiyntane we inkszyj przeglōndarce, to możesz <a data-l10n-name="import-link">importować je do usugi { -lockwise-brand-short-name }</a>
-
+login-intro-instructions-fxa-passwords-help = Nawiydź <a data-l10n-name="passwords-help-link">sparcie haseł</a>, kaj je wiyncyj informacyji.
+about-logins-intro-browser-only-import = Jak twoje dane logowanio sōm spamiyntane we inkszyj przeglōndarce, to możesz <a data-l10n-name="import-link">importować je do usugi { -brand-product-name }</a>
 about-logins-intro-import2 = Jak dane logowanio mosz spamiyntane kaj indzij jak we przeglōndarce { -brand-product-name }, możesz <a data-l10n-name="import-browser-link">importnōnć je z inkszyj przeglōndarki</a> abo <a data-l10n-name="import-file-link">ze zbioru</a>
 
 ## Login
@@ -125,8 +130,6 @@ about-logins-copy-password-os-auth-dialog-message-win = Żeby skopiować hasło,
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = skopiować spamiyntane hasło
 
-## Master Password notification
-
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message-win = Żeby eksportować swoje loginy, wkludź swoje dane logowanio Windows. To suży chrōniyniu twojich kōnt.
 # This message can be seen when attempting to export a password in about:logins
@@ -139,8 +142,6 @@ about-logins-primary-password-notification-message = Wkludź swoje głōwne has�
 master-password-reload-button =
     .label = Wloguj
     .accesskey = l
-
-## Password Sync notification
 
 ## Dialogs
 
@@ -234,7 +235,6 @@ about-logins-error-message-duplicate-login-with-link = Dane logowanio na { $logi
 
 # This is a generic error message.
 about-logins-error-message-default = Doszło do feleru przi prōbie spamiyntanio tego hasła.
-
 
 ## Login Export Dialog
 

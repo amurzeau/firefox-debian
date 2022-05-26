@@ -141,7 +141,6 @@ extensions-warning-update-security = एडअनमा अद्यावधि
 extensions-warning-update-security-button = सक्षम पार्नुहोस्
     .title = एड-अन अद्यावधिक सुरक्षा जाँच सक्षम पार्नुहोस्
 
-
 ## Strings connected to add-on updates
 
 addon-updates-check-for-updates = अद्यावधिकहरूका लागि जाँच गर्नुहोस्
@@ -197,9 +196,33 @@ addon-open-about-debugging = एडअनहरू डिबग गर्नु�
 ## This is the tooltip text for the recommended badges for an extension in about:addons. The
 ## badge is a small icon displayed next to an extension when it is recommended on AMO.
 
+
 ##
+
 
 ## Page headings
 
 addon-page-options-button =
     .title = सबै एडअनहरूको लागि उपकरणहरू
+
+## Detail notifications
+## Variables:
+##   $name (String): name of the add-on.
+
+# Variables:
+#   $version (String): application version.
+details-notification-incompatible = { $name } { -brand-short-name } { $version } सगँ असंगत छ।
+
+details-notification-unsigned-and-disabled = { $name } { -brand-short-name } मा प्रयोग गर्नको लागि प्रमाणित गर्न सकिएन र अक्षम भएको छ।
+details-notification-unsigned-and-disabled-link = थप जानकारी
+
+details-notification-unsigned = { $name } { -brand-short-name } मा प्रयोग को लागि प्रमाणित गर्न सकिएन। सावधानीसंग अगाडि बढ्नुहोस्।
+details-notification-unsigned-link = थप जानकारी
+
+details-notification-blocked = { $name } सुरक्षाको कारण वा स्थिरता कारण अक्षम भएको छ।
+details-notification-blocked-link = थप जानकारी
+
+details-notification-softblocked = { $name } ले सुरक्षा वा स्थिरता मुद्दाहरू ल्याउँछ।
+details-notification-softblocked-link = थप जानकारी
+
+details-notification-gmp-pending = { $name } छिट्टै स्थापना गरिनेछ।

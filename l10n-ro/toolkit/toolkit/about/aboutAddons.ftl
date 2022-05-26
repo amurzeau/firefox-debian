@@ -184,7 +184,6 @@ extensions-warning-update-security = Verificarea securității actualizărilor d
 extensions-warning-update-security-button = Activează
     .title = Activează verificarea securității actualizărilor suplimentelor
 
-
 ## Strings connected to add-on updates
 
 addon-updates-check-for-updates = Caută actualizări
@@ -412,7 +411,6 @@ release-notes-loading = Se încarcă...
 release-notes-error = Ne pare rău, dar a intervenit o eroare la încărcarea notelor privind versiunea.
 
 addon-permissions-empty = Această extensie nu necesită nicio permisiune
-
 addon-permissions-required = Permisiuni necesare pentru funcționalitatea de bază:
 addon-permissions-learnmore = Află mai multe despre permisiuni
 
@@ -440,3 +438,25 @@ addons-heading-search-input =
 
 addon-page-options-button =
     .title = Instrumente pentru toate suplimentele
+
+## Detail notifications
+## Variables:
+##   $name (String): name of the add-on.
+
+# Variables:
+#   $version (String): application version.
+details-notification-incompatible = { $name } este incompatibil cu { -brand-short-name } { $version }.
+
+details-notification-unsigned-and-disabled = { $name } nu a putut fi verificat pentru a fi folosit în { -brand-short-name } și a fost dezactivat.
+details-notification-unsigned-and-disabled-link = Mai multe informații
+
+details-notification-unsigned = { $name } nu a putut fi verificat pentru a fi folosit în { -brand-short-name }. Continuă cu atenție.
+details-notification-unsigned-link = Mai multe informații
+
+details-notification-blocked = { $name } a fost dezactivat din cauza unor probleme de securitate sau stabilitate.
+details-notification-blocked-link = Mai multe informații
+
+details-notification-softblocked = Se știe că { $name } poate provoca probleme de securitate sau stabilitate.
+details-notification-softblocked-link = Mai multe informații
+
+details-notification-gmp-pending = { $name } va fi instalat în scurt timp.

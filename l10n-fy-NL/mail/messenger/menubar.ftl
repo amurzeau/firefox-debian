@@ -8,11 +8,6 @@ toolbar-context-menu-menu-bar =
 
 ## Tools Menu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-menu-tools-preferences =
-    .label = Foarkarren
-    .accesskey = F
 menu-tools-settings =
     .label = Ynstellingen
     .accesskey = e
@@ -55,6 +50,18 @@ menu-view-repair-text-encoding =
 
 ## View / Layout
 
+menu-font-size-label =
+    .label = Lettergrutte
+    .accesskey = u
+menuitem-font-size-enlarge =
+    .label = Lettergrutte fergrutsje
+    .accesskey = f
+menuitem-font-size-reduce =
+    .label = Lettergrutte ferlytse
+    .accesskey = l
+menuitem-font-size-reset =
+    .label = Lettergrutte opnij ynstelle
+    .accesskey = n
 mail-uidensity-label =
     .label = Tichtens
     .accesskey = T

@@ -19,6 +19,9 @@ auth-waiting = Aṛaǧu sya ara isali unermas asenqed…
 finger-verify = Senqed
 finger-verify-access-key = V
 
+finger-ignore = Anef
+finger-ignore-access-key = I
+
 # Do not translate 'OTR' (name of an encryption protocol)
 buddycontextmenu-label = Rnu adsil umḍin OTR
 
@@ -43,7 +46,6 @@ finger-unseen = Timagit n { $name } mazal ur tettwasenqed ara. Asmuzget aralɣaw
 finger-seen = { $name } inermes-ik-ikem)-id seg uselkim ur nettwassen ara. Asmuzget aralɣawi ur yezmir ara ad d-yili, maca s cwiṭ n lǧehd yella win ara as-yeslen. Sewḥel yal taεessast s usenqed n unermas-a.
 
 state-not-private = Adiwenni amiran mačči d uslig.
-
 state-generic-not-private = Adiwenni amiran mačči d uslig.
 
 # Variables:
@@ -78,13 +80,6 @@ afterauth-private = Tesneqdeḍ timagit n { $name }.
 # Variables:
 #   $name (String) - the screen name of a chat contact person
 afterauth-unverified = Timagit n { $name } ur yettusenqed ara.
-
-verify-title = Senqed timagit n unermas-inek/inem
-error-title = Tuccḍa
-success-title = Awgelhen seg yixef ɣer wayeḍ
-success-them-title = Senqed timagit n unermas-inek·inem
-fail-title = Asenqed d awezɣi
-waiting-title = Asuter n usenqed yettwazen
 
 # Do not translate 'OTR' (name of an encryption protocol)
 # Variables:

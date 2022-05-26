@@ -6,8 +6,11 @@ import-page-title = გადმოტანა
 
 ## Header
 
+import-start = გადმოტანის ხელსაწყო
+import-start-desc = პარამეტრების ან მონაცემების შემოტანა პროგრამიდან ან ფაილიდან.
 import-from-app = გადმოტანა პროგრამიდან
 import-from-app-desc = აირჩიეთ ანგარიშების, წიგნაკების, კალენდრებისა და სხვა მონაცემების გადმოსატანად:
+import-from-file = ფაილიდან გადმოტანა
 import-address-book = წიგნაკის ფაილის გადმოტანა
 import-calendar = კალენდრის ფაილის გადმოტანა
 export-profile = გატანა
@@ -26,6 +29,13 @@ app-name-seamonkey = SeaMonkey
 app-name-outlook = Outlook
 app-name-becky = Becky! Internet Mail
 app-name-apple-mail = Apple Mail
+source-file = ფაილიდან შემოტანა
+
+## Import from file selections
+
+file-profile = დამარქაფებული პროფილის შემოტანა (.zip)
+file-calendar = კალენდრების შემოტანა
+file-addressbook = წიგნაკების შემოტანა
 # Variables:
 #   $app (String) - The name of the app to import from
 profiles-pane-title = გადმოტანა – { $app }
@@ -66,7 +76,6 @@ calendar-import-into-new-calendar = ახალი კალენდრის 
 
 ## Import dialog
 
-progress-pane-title = გადმოდის
 progress-pane-importing = გადმოდის
 progress-pane-exporting = გადადის
 progress-pane-finished-desc = დასრულდა.

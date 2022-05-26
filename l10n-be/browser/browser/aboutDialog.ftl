@@ -31,7 +31,7 @@ update-manual = Абнаўленні даступныя на <label data-l10n-na
 
 update-unsupported = Вы не можаце працягнуць абнаўленне на гэтай сістэме. <label data-l10n-name="unsupported-link">Падрабязней</label>
 
-update-restarting = Перазапуск...
+update-restarting = Перазапуск…
 
 channel-description = Зараз вы на <label data-l10n-name="current-channel"></label> канале абнаўленняў.
 

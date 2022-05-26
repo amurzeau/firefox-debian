@@ -53,22 +53,6 @@ restart-later = Arvi torna Dòppo
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their notifications permission
-# is being controlled by an extension.
-extension-controlled-web-notifications = 'Na estencion, <img data-l10n-name="icon"/> { $name }, a contròlla sta inpostaçion.
-
-# This string is shown to notify the user that Container Tabs
-# are being enabled by an extension.
-extension-controlled-privacy-containers = 'Na estenscion, <img data-l10n-name="icon"/> { $name }, a domanda 'n feuggi contegnitô.
-
-# This string is shown to notify the user that their content blocking "All Detected Trackers"
-# preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = 'Na estenscion <img data-l10n-name="icon"/> { $name }, a contròlla sta inpostaçion.
-
-# This string is shown to notify the user that their proxy configuration preferences
-# are being controlled by an extension.
-extension-controlled-proxy-config = 'Na estenscion, <img data-l10n-name="icon"/> { $name } a contròlla comme { -brand-short-name } o se conette a l'Internet.
-
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -97,10 +81,6 @@ set-as-my-default-browser =
     .label = Adeuvia comme predefinio…
     .accesskey = A
 
-startup-restore-previous-session =
-    .label = Repiggia vegia sescion
-    .accesskey = s
-
 startup-restore-warn-on-quit =
     .label = Avertime quande særo o navegatô
 
@@ -116,10 +96,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Arvi colegamento into feuggio in cangio do barcon
     .accesskey = V
-
-warn-on-close-multiple-tabs =
-    .label = Avertime quande særo ciù feuggi insemme
-    .accesskey = m
 
 warn-on-open-many-tabs =
     .label = Avertime quando l'arvetua de ciù feuggi a peu fâ anâ ciù lento { -brand-short-name }
@@ -166,12 +142,9 @@ containers-remove-alert-msg =
 containers-remove-ok-button = Scancella sto Contegnitô
 containers-remove-cancel-button = No scancelâ sto Contegnitô
 
-
 ## General Section - Language & Appearance
 
 language-and-appearance-header = Lengoa e Aparensa
-
-fonts-and-colors-header = Coî e testo
 
 default-font = Caratere predefinio
     .accesskey = C
@@ -181,10 +154,6 @@ default-font-size = Dimenscion
 advanced-fonts =
     .label = Avansæ…
     .accesskey = n
-
-colors-settings =
-    .label = Coi…
-    .accesskey = C
 
 language-header = Lengoa
 
@@ -225,6 +194,9 @@ download-header = Descaregamenti
 
 download-save-to =
     .label = Sarva schedai in
+    .accesskey = v
+
+download-save-where = Sarva schedai in
     .accesskey = v
 
 download-choose-folder =
@@ -480,9 +452,6 @@ home-prefs-content-description = Çerni i contegnui che ti veu vedde inta pagina
 
 home-prefs-search-header =
     .label = Çerca into Web
-home-prefs-topsites-header =
-    .label = I megio sciti
-home-prefs-topsites-description = I sciti che ti vixiti de ciù
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -498,9 +467,6 @@ home-prefs-recommended-by-learn-more = Comme o fonçionn-a
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Stöie sponsorizæ
 
-home-prefs-highlights-header =
-    .label = In evidensa
-home-prefs-highlights-description = 'Na seleçion di sciti che t'ê sarvou ò vixitou
 home-prefs-highlights-option-visited-pages =
     .label = Pagine vixitæ
 home-prefs-highlights-options-bookmarks =
@@ -516,7 +482,6 @@ home-prefs-highlights-option-saved-to-pocket =
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = Snippet
-home-prefs-snippets-description = Agiornamenti da { -vendor-short-name } e { -brand-product-name }
 
 home-prefs-sections-rows-option =
     .label =
@@ -588,9 +553,6 @@ containers-add-button =
 containers-remove-button =
     .label = Scancella
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
@@ -605,9 +567,6 @@ sync-signedout-caption = A teu Ræ, de longo con ti
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Descarega Firefox pe <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> ò <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> pe scincronizate con i dispoxitivi mòbili.
-
-## Sync Section - Signed in
-
 
 ## Firefox Account - Signed in
 
@@ -689,9 +648,6 @@ sync-connect-another-device = Conetti atro dispoxitivo
 ## Privacy Section
 
 privacy-header = Privacy do navegatô
-
-## Privacy Section - Forms
-
 
 ## Privacy Section - Logins and Passwords
 
@@ -927,10 +883,6 @@ permissions-block-popups =
     .label = Blòcca i barcoin de pop-up
     .accesskey = B
 
-permissions-block-popups-exceptions =
-    .label = Eceçioin…
-    .accesskey = E
-
 permissions-addon-install-warning =
     .label = Avizime quande 'n scito o preuva a instalâ conponenti azonti
     .accesskey = A
@@ -1000,6 +952,7 @@ certs-devices =
     .accesskey = S
 
 ## Privacy Section - HTTPS-Only
+
 
 ## The following strings are used in the Download section of settings
 
