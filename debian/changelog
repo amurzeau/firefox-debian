@@ -1,3 +1,17 @@
+firefox (101.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2022-20, also known as:
+    CVE-2022-31736, CVE-2022-31737, CVE-2022-31738, CVE-2022-31740,
+    CVE-2022-31741, CVE-2022-31742, CVE-2022-31743, CVE-2022-31744,
+    CVE-2022-31745, CVE-2022-1919, CVE-2022-31747, CVE-2022-31748.
+
+  * debian/rules: Fail the build early when building for armhf on armhf
+    (only works on arm64), and when building for mipsel on mipsel.
+  * debian/control*: Bump rustc, cargo, cbindgen and nss build dependencies.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 01 Jun 2022 06:07:37 +0900
+
 firefox (100.0.2-1) unstable; urgency=medium
 
   * New upstream release.
