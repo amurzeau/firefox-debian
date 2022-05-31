@@ -24,7 +24,6 @@
 //! [selectors]: ../selectors/index.html
 
 #![deny(missing_docs)]
-#![cfg_attr(try_reserve, feature(try_reserve))]
 
 #[macro_use]
 extern crate bitflags;
@@ -104,10 +103,11 @@ pub mod invalidation;
 #[allow(missing_docs)] // TODO.
 pub mod logical_geometry;
 pub mod matching;
-#[macro_use]
 pub mod media_queries;
 pub mod parallel;
 pub mod parser;
+#[macro_use]
+pub mod queries;
 pub mod rule_cache;
 pub mod rule_collector;
 pub mod rule_tree;

@@ -55,22 +55,6 @@ restart-later = পরে রিস্টার্ট করা হবে
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their notifications permission
-# is being controlled by an extension.
-extension-controlled-web-notifications = এক্সটেনশন, <img data-l10n-name="icon"/> { $name }, এই সেটিং নিয়ন্ত্রণ করছে।
-
-# This string is shown to notify the user that Container Tabs
-# are being enabled by an extension.
-extension-controlled-privacy-containers = এক্সটেনশন <img data-l10n-name="icon"/> { $name }-র কন্টেইনার ট্যাব প্রয়োজন।
-
-# This string is shown to notify the user that their content blocking "All Detected Trackers"
-# preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = এক্সটেনশন, <img data-l10n-name="icon"/> { $name }, এই সেটিং নিয়ন্ত্রণ করছে।
-
-# This string is shown to notify the user that their proxy configuration preferences
-# are being controlled by an extension.
-extension-controlled-proxy-config = একটি এক্সটেনসন, <img data-l10n-name="icon"/> { $name }, কিভাবে { -brand-short-name } ইন্টারনেটের সাথে সংযোগ করে তা নিয়ন্ত্রণ করছে।
-
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -99,10 +83,6 @@ set-as-my-default-browser =
     .label = ডিফল্ট করুন…
     .accesskey = D
 
-startup-restore-previous-session =
-    .label = পূর্ববর্তী সেশন পুনরুদ্ধার
-    .accesskey = s
-
 startup-restore-warn-on-quit =
     .label = ব্রাউজার ছেড়ে যেতে আপনাকে সতর্ক করবে
 
@@ -118,10 +98,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = নতুন উইন্ডোর পরিবর্তে নতুন ট্যাবে লিঙ্ক খুলুন
     .accesskey = w
-
-warn-on-close-multiple-tabs =
-    .label = যখন একাধিক ট্যাব বন্ধ করার চেষ্টা করা হলে আপনাকে সর্তক করা হবে।
-    .accesskey = m
 
 warn-on-open-many-tabs =
     .label = একাধিক ট্যাব খোলার ফলে { -brand-short-name } ধীর হয়ে যাবার সম্ভবনা থাকলে সতর্ক করা হবে।
@@ -168,12 +144,9 @@ containers-remove-alert-msg =
 containers-remove-ok-button = এই কন্টেইনার সরান
 containers-remove-cancel-button = এই কন্টেইনার অপসারণ কর না
 
-
 ## General Section - Language & Appearance
 
 language-and-appearance-header = ভাষা ও অবয়ব
-
-fonts-and-colors-header = ফন্ট ও রঙ
 
 default-font = ডিফল্ট ফন্ট
     .accesskey = D
@@ -183,10 +156,6 @@ default-font-size = আকার
 advanced-fonts =
     .label = উচ্চপর্যায়...
     .accesskey = A
-
-colors-settings =
-    .label = রঙ...
-    .accesskey = C
 
 preferences-default-zoom-value =
     .label = { $percentage }%
@@ -230,6 +199,9 @@ download-header = ডাউনলোড
 
 download-save-to =
     .label = ফাইল সংরক্ষণের স্থান
+    .accesskey = v
+
+download-save-where = ফাইল সংরক্ষণের স্থান
     .accesskey = v
 
 download-choose-folder =
@@ -505,9 +477,6 @@ home-prefs-content-description = আপনার Firefox Home স্ক্রি
 
 home-prefs-search-header =
     .label = ওয়েব অনুসন্ধান
-home-prefs-topsites-header =
-    .label = শীর্ষ সাইট
-home-prefs-topsites-description = যে সাইটগুলিতে আপনি বেশি যান
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -523,9 +492,6 @@ home-prefs-recommended-by-learn-more = কিভাবে এটা কাজ �
 home-prefs-recommended-by-option-sponsored-stories =
     .label = স্পন্সর করা স্টোরি
 
-home-prefs-highlights-header =
-    .label = হাইলাইটস
-home-prefs-highlights-description = সাইটের একটি সেকশন যা আপনি সংরক্ষণ অথবা গিয়েছিলেন
 home-prefs-highlights-option-visited-pages =
     .label = ঘুরে আসা পেজ
 home-prefs-highlights-options-bookmarks =
@@ -541,7 +507,6 @@ home-prefs-highlights-option-saved-to-pocket =
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = টুকিটাকি
-home-prefs-snippets-description = { -vendor-short-name } and { -brand-product-name } থেকে হালনাগাদ
 
 home-prefs-sections-rows-option =
     .label =
@@ -559,7 +524,6 @@ search-bar-shown =
     .label = টুলবারে অনুসন্ধান বার যুক্ত করুন
 
 search-engine-default-header = ডিফল্ট অনুসন্ধান ইঞ্জিন
-
 search-engine-default-desc-2 = এটি ঠিকানা বার এবং অনুসন্ধান বারে আপনার ডিফল্ট অনুসন্ধান ইঞ্জিন। আপনি যেকোন সময় পরিবর্তন করতে পারবেন।
 search-engine-default-private-desc-2 = কেবলমাত্র ব্যক্তিগত উইন্ডোজের জন্য আলাদা ডিফল্ট অনুসন্ধান ইঞ্জিন নির্বাচন করুন
 search-separate-default-engine =
@@ -625,9 +589,6 @@ containers-add-button =
 containers-remove-button =
     .label = অপসারণ
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
@@ -642,9 +603,6 @@ sync-signedout-caption = আপনার ওয়েব আপনার সঙ্�
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Firefox ডাউনলোড <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> অথবা <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> আপনার মোবাইল ডিভাইসের সাথে সিঙ্ক করতে।
-
-## Sync Section - Signed in
-
 
 ## Firefox Account - Signed in
 
@@ -764,9 +722,6 @@ sync-connect-another-device = অন্য একটি ডিভাইস স�
 ## Privacy Section
 
 privacy-header = ব্রাউজার গোপনীয়তা
-
-## Privacy Section - Forms
-
 
 ## Privacy Section - Logins and Passwords
 
@@ -889,8 +844,6 @@ sitedata-block-desc = টাইপ ব্লক করা হয়েছে
 
 sitedata-option-block-cross-site-trackers =
     .label = ক্রস সাইট ট্র্যাকার
-sitedata-option-block-cross-site-and-social-media-trackers =
-    .label = ক্রস সাইট এবং সোশ্যাল মিডিয়া ট্র্যাকার
 sitedata-option-block-unvisited =
     .label = অদেখা ওয়েবসাইট থেকে কুকি
 sitedata-option-block-all-third-party =
@@ -963,7 +916,6 @@ content-blocking-cryptominers = ক্রিপ্টোমাইনার
 content-blocking-fingerprinters = ফিঙ্গারপ্রিন্টারস
 
 content-blocking-warning-title = সাধুবাদ জানাই!
-
 content-blocking-warning-learn-how = শিখুন কিভাবে হয়
 
 content-blocking-reload-description = এই পরিবর্তনগুলি প্রয়োগ করার জন্য আপনাকে আপনার ট্যাব পুনরায় লোড করতে হবে।
@@ -1050,10 +1002,6 @@ permissions-block-popups =
     .label = পপ-আপ উইন্ডো ব্লক করা হবে B
     .accesskey = B
 
-permissions-block-popups-exceptions =
-    .label = ব্যতিক্রম... E
-    .accesskey = E
-
 permissions-addon-install-warning =
     .label = যখন ওয়েবসাইট কোন অ্যাড-অন ইন্সটল করার চেষ্টা করলে আপনাকে সর্তক করবে
     .accesskey = W
@@ -1127,6 +1075,7 @@ certs-devices =
     .accesskey = D
 
 ## Privacy Section - HTTPS-Only
+
 
 ## The following strings are used in the Download section of settings
 

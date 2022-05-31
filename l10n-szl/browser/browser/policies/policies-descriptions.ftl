@@ -159,6 +159,8 @@ policy-OverridePostUpdatePage = Nadpisowanie strōny "Co je nowego", co pokazuje
 
 policy-PasswordManagerEnabled = Załōnczanie spamiyntowanio haseł do mynedżera haseł.
 
+policy-PasswordManagerExceptions = Niy dej aplikacyji { -brand-short-name } spamiyntować haseł na niykerych serwerach.
+
 # PDF.js and PDF should not be translated
 policy-PDFjs = Zastawianie abo sztalowanie PDF.js (wbudowanyj przeglōndarki PDFōw we aplikacyji { -brand-short-name }).
 
@@ -200,3 +202,4 @@ policy-UserMessaging = Wyłōnczanie pokazowanio używoczowi niykerych wiadōmo�
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Szperowanie nawiydzanio strōn. Wejrzij do dokumyntacyje za detajlami ô tym formacie.
 
+policy-Windows10SSO = Przizwolej na pojedyncze logowanie do kōnt Microsoft, roboczych i szkolnych.

@@ -189,6 +189,8 @@ policy-OverridePostUpdatePage = Nastavení vlastní stránky po aktualizaci. Pok
 
 policy-PasswordManagerEnabled = Povolení ukládat přihlašovací údaje do správce hesel.
 
+policy-PasswordManagerExceptions = Zabrání { -brand-short-name(case: "dat") } ukládat heslo pro vybrané servery.
+
 # PDF.js and PDF should not be translated
 policy-PDFjs =
     Zablokování nebo nastavení PDF prohlížeče PDF.js vestavěného { -brand-short-name.gender ->

@@ -18,6 +18,3 @@ log = "0.4"
 version = "0.26.0"
 default_features = false
 features = ["winapi"]
-
-[build-dependencies]
-rustc_version = "0.2"

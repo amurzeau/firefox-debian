@@ -6,6 +6,10 @@ dock-options-window-dialog =
     .title = Iɣewwaṛen n tignit n usnas
     .style = width: 35em;
 
+dock-options-show-badge =
+    .label = Sken tignit n tsakezt
+    .accesskey = z
+
 bounce-system-dock-icon =
     .label = Mru tignit n usnas ticki izen amaynut yebbed-d
     .accesskey = M
@@ -23,4 +27,4 @@ count-new-messages-radio =
     .label = Asiḍen n iznan imaynuten
     .accesskey = s
 
-notification-settings-info = Tzemred ad tekkseḍ tasakezt deg ugalis n ulɣu n ismenyifen n unagraw.
+notification-settings-info2 = Tzemred ad tekkseḍ tasakezt deg ugalis n ulɣu n yiɣewwaren n unagraw.

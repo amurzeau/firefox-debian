@@ -70,6 +70,8 @@ cert-error-symantec-distrust-description = Place potwiyrdzajōm swoja tożsamoś
 
 cert-error-symantec-distrust-admin = Idzie powiadōmić administratora zajty ô tym problymie.
 
+cert-error-old-tls-version = Ta strōna może niy ôbsugować protokołu TLS 1.2, minimalnyj wersyje, co jōm ôbsuguje { -brand-short-name }.
+
 # Variables:
 # $hasHSTS (Boolean) - Indicates whether HSTS header is present.
 cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
@@ -115,7 +117,6 @@ unknownSocketType-title = Niyspodziywano ôdpowiydź ze serwera
 nssFailure2-title = Niypodarzōne bezpieczne połōnczynie
 csp-xfo-error-title = { -brand-short-name } niy może ôtworzić tyj strōny
 corruptedContentError-title = Feler: poprzniōno zawartość
-remoteXUL-title = Zdalne XUL
 sslv3Used-title = Niy idzie sie bezpiecznie połōnczyć
 inadequateSecurityError-title = Twoje połōnczynie niy ma bezpieczne
 blockedByPolicy-title = Zaszperowano strōna

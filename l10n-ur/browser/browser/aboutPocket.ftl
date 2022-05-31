@@ -46,3 +46,13 @@ pocket-panel-home-welcome-back = واپسى پر خوش آمديد
 pocket-panel-home-explore-popular-topics = مشہور عنوانات دریافت کریں
 pocket-panel-home-discover-more = مزید تلاش کریں
 pocket-panel-home-explore-more = دریافت کریں
+
+## Pocket panel header component
+
+pocket-panel-header-my-list = میری فہرست دیکھیں
+pocket-panel-header-sign-in = سائن ان کریں
+
+## Pocket panel buttons
+
+pocket-panel-button-show-all = تمام دکھائیں
+pocket-panel-button-remove = ہٹائیں

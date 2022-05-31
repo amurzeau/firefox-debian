@@ -3,6 +3,24 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+## Send Format
+
+compose-send-format-menu =
+    .label = Sending Format
+    .accesskey = F
+compose-send-auto-menu-item =
+    .label = Automatic
+    .accesskey = A
+compose-send-both-menu-item =
+    .label = Both HTML and Plain Text
+    .accesskey = B
+compose-send-html-menu-item =
+    .label = Only HTML
+    .accesskey = H
+compose-send-plain-menu-item =
+    .label = Only Plain Text
+    .accesskey = P
+
 ## Addressing widget
 
 #   $type (String) - the type of the addressing row
@@ -66,9 +84,6 @@ menuitem-toggle-attachment-pane =
 toolbar-button-add-attachment =
     .label = Attach
     .tooltiptext = Add an Attachment ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
-add-attachment-notification-reminder =
-    .label = Add Attachment…
-    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 add-attachment-notification-reminder2 =
     .label = Add Attachment…
     .accesskey = A
@@ -94,10 +109,6 @@ attachment-bucket-count-value =
         [1] { $count } Attachment
        *[other] { $count } Attachments
     }
-expand-attachment-pane-tooltip =
-    .tooltiptext = Show the attachment pane ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Hide the attachment pane ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Show the attachment pane ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -129,10 +140,6 @@ button-return-receipt =
 
 ## Encryption
 
-message-to-be-signed-icon =
-    .alt = Sign message
-message-to-be-encrypted-icon =
-    .alt = Encrypt message
 encryption-menu =
     .label = Security
     .accesskey = c
@@ -145,6 +152,9 @@ encryption-options-openpgp =
 encryption-options-smime =
     .label = S/MIME
     .tooltiptext = View or change S/MIME encryption settings
+signing-toggle =
+    .label = Sign
+    .tooltiptext = Use digital signing for this message
 menu-openpgp =
     .label = OpenPGP
     .accesskey = O
@@ -184,38 +194,6 @@ key-notification-resolve =
 
 ## Addressing Area
 
-to-compose-address-row-label =
-    .value = To
-#   $key (String) - the shortcut key for this field
-to-compose-show-address-row-menuitem =
-    .label = { to-compose-address-row-label.value } Field
-    .accesskey = T
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-to-compose-show-address-row-label =
-    .value = { to-compose-address-row-label.value }
-    .tooltiptext = Show { to-compose-address-row-label.value } Field ({ to-compose-show-address-row-menuitem.acceltext })
-cc-compose-address-row-label =
-    .value = Cc
-#   $key (String) - the shortcut key for this field
-cc-compose-show-address-row-menuitem =
-    .label = { cc-compose-address-row-label.value } Field
-    .accesskey = C
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-cc-compose-show-address-row-label =
-    .value = { cc-compose-address-row-label.value }
-    .tooltiptext = Show { cc-compose-address-row-label.value } Field ({ cc-compose-show-address-row-menuitem.acceltext })
-bcc-compose-address-row-label =
-    .value = Bcc
-#   $key (String) - the shortcut key for this field
-bcc-compose-show-address-row-menuitem =
-    .label = { bcc-compose-address-row-label.value } Field
-    .accesskey = B
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-bcc-compose-show-address-row-label =
-    .value = { bcc-compose-address-row-label.value }
-    .tooltiptext = Show { bcc-compose-address-row-label.value } Field ({ bcc-compose-show-address-row-menuitem.acceltext })
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-many-public-recipients-info = The { $count } recipients in To and Cc will see each other’s address. You can avoid disclosing recipients by using Bcc instead.
 to-address-row-label =
     .value = To
 #   $key (String) - the shortcut key for this field
@@ -378,3 +356,17 @@ cloud-file-attachment-error = Failed to update the Filelink attachment { $filena
 # $filename (string) - name of the file that was renamed and caused the error
 cloud-file-account-error-title = Filelink Account Error
 cloud-file-account-error = Failed to update the Filelink attachment { $filename }, because its Filelink account has been deleted.
+
+## Link Preview
+
+link-preview-title = Link Preview
+link-preview-description = { -brand-short-name } can add an embedded preview when pasting links.
+link-preview-autoadd = Automatically add link previews when possible
+link-preview-replace-now = Add a Link Preview for this link?
+link-preview-yes-replace = Yes
+
+## Dictionary selection popup
+
+spell-add-dictionaries =
+    .label = Add Dictionaries…
+    .accesskey = A

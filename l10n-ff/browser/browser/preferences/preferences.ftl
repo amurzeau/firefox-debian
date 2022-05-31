@@ -51,22 +51,6 @@ restart-later = Hurmitin so Ɓooyii
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their notifications permission
-# is being controlled by an extension.
-extension-controlled-web-notifications = Jokkel, <img data-l10n-name="icon"/>{ $name }, jogii ndee ñaawirde
-
-# This string is shown to notify the user that Container Tabs
-# are being enabled by an extension.
-extension-controlled-privacy-containers = Timmitere, <img data-l10n-name="icon"/> { $name }, ena naamnii Tabbe Mooftirɗe.
-
-# This string is shown to notify the user that their content blocking "All Detected Trackers"
-# preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = Jokkel, <img data-l10n-name="icon"/>{ $name }, jogii ndee ñaawirde.
-
-# This string is shown to notify the user that their proxy configuration preferences
-# are being controlled by an extension.
-extension-controlled-proxy-config = Timmitere, <img data-l10n-name="icon"/> { $name }, nana ɗowa hol no { -brand-short-name } seŋortoo e enternet oo.
-
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -95,10 +79,6 @@ set-as-my-default-browser =
     .label = Waɗ ɗum Woowaande…
     .accesskey = W
 
-startup-restore-previous-session =
-    .label = Artir rogere ɓennunde ndee
-    .accesskey = s
-
 startup-restore-warn-on-quit =
     .label = Reentin am tuma uddol wanngorde ndee
 
@@ -114,10 +94,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Uddit jokke e nder tabbe waasa wonde e kenorɗe kese ɗee
     .accesskey = w
-
-warn-on-close-multiple-tabs =
-    .label = Reentin am so tabbe keewɗe ine uddidee
-    .accesskey = k
 
 warn-on-open-many-tabs =
     .label = Reentin am so udditgol tabbe keewɗe ena keɓori leeltinde { -brand-short-name }
@@ -164,12 +140,9 @@ containers-remove-alert-msg =
 containers-remove-ok-button = Momtu ngal baɗirgal
 containers-remove-cancel-button = Hoto momtu ngal Baɗirgal
 
-
 ## General Section - Language & Appearance
 
 language-and-appearance-header = Ɗemngal e Mbaydi
-
-fonts-and-colors-header = Ponte & Nooneeji
 
 default-font = Fontere woowaande:
     .accesskey = F
@@ -179,10 +152,6 @@ default-font-size = Ɓetol:
 advanced-fonts =
     .label = Ceeɓtore…
     .accesskey = C
-
-colors-settings =
-    .label = Nooneeji…
-    .accesskey = N
 
 preferences-default-zoom-value =
     .label = { $percentage }
@@ -226,6 +195,9 @@ download-header = Gaawte
 
 download-save-to =
     .label = Danndu piille to
+    .accesskey = n
+
+download-save-where = Danndu piille to
     .accesskey = n
 
 download-choose-folder =
@@ -298,7 +270,6 @@ applications-file-ending-with-type = { applications-file-ending }{ $type }
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Huutoro { $plugin-name } (nder { -brand-short-name })
-
 applications-open-inapp =
     .label = Uddit e { -brand-short-name }
 
@@ -504,9 +475,6 @@ home-prefs-content-description = Suɓo hol loowdi njiɗɗaa e yaynirde jaɓɓorg
 
 home-prefs-search-header =
     .label = Njiilaw Geese
-home-prefs-topsites-header =
-    .label = Lowre Rowrowe
-home-prefs-topsites-description = Lowe ɗe ɓurɗaa waawde yillaade
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -522,9 +490,6 @@ home-prefs-recommended-by-learn-more = Hol no gollortoo
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Daari joɓanaaɗi
 
-home-prefs-highlights-header =
-    .label = Jalbine
-home-prefs-highlights-description = Suɓngo lowe ɗe ndannduɗaa walla ɗe njilliɗaa
 home-prefs-highlights-option-visited-pages =
     .label = Kelle jiyaaɗe
 home-prefs-highlights-options-bookmarks =
@@ -540,7 +505,6 @@ home-prefs-highlights-option-saved-to-pocket =
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = Taƴitine
-home-prefs-snippets-description = Kesɗitineiwde e { -vendor-short-name } kañum e { -brand-product-name }
 
 home-prefs-sections-rows-option =
     .label =
@@ -618,9 +582,6 @@ containers-new-tab-check =
 containers-remove-button =
     .label = Momtu
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
@@ -635,9 +596,6 @@ sync-signedout-caption = Nawor Geesa Maa
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Aawto Firefox mo <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> walla <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> ngam syncude kaɓirgol cinndol maa.
-
-## Sync Section - Signed in
-
 
 ## Firefox Account - Signed in
 
@@ -667,6 +625,7 @@ sync-sign-in =
     .accesskey = g
 
 ## Sync section - enabling or disabling sync.
+
 
 ## The list of things currently syncing.
 
@@ -738,9 +697,6 @@ sync-connect-another-device = Seŋ kaɓirgol goɗngol
 ## Privacy Section
 
 privacy-header = Suturo Wanngorde
-
-## Privacy Section - Forms
-
 
 ## Privacy Section - Logins and Passwords
 
@@ -927,10 +883,6 @@ permissions-block-popups =
     .label = Falo kenorɗe cuppitte
     .accesskey = B
 
-permissions-block-popups-exceptions =
-    .label = Paltooje…
-    .accesskey = P
-
 permissions-addon-install-warning =
     .label = Jeertin-maa so lowe etiima aafde ɓeyditte
     .accesskey = J
@@ -998,6 +950,7 @@ certs-devices =
     .accesskey = k
 
 ## Privacy Section - HTTPS-Only
+
 
 ## The following strings are used in the Download section of settings
 

@@ -136,14 +136,33 @@ about-addressbook-confirm-delete-contacts =
 
 ## Details
 
+about-addressbook-write-action-button = Pisać
+about-addressbook-event-action-button = Podawk
+about-addressbook-search-action-button = Pytać
 about-addressbook-begin-edit-contact-button = Wobdźěłać
+about-addressbook-delete-edit-contact-button = Zhašeć
 about-addressbook-cancel-edit-contact-button = Přetorhnyć
 about-addressbook-save-edit-contact-button = Składować
+about-addressbook-add-contact-to = Přidać do:
 about-addressbook-details-email-addresses-header = E-mejlowe adresy
 about-addressbook-details-phone-numbers-header = Telefonowe čisła
 about-addressbook-details-home-address-header = Priwatna adresa
 about-addressbook-details-work-address-header = Słužbna adresa
+about-addressbook-details-addresses-header = Adresy
+about-addressbook-details-notes-header = Přispomnjenki
 about-addressbook-details-other-info-header = Druhe informacije
+about-addressbook-entry-type-work = Słužbny
+about-addressbook-entry-type-home = Startowa strona
+about-addressbook-entry-type-fax = Faks
+about-addressbook-entry-type-cell = Mobilny telefon
+about-addressbook-entry-type-pager = Pager
+about-addressbook-entry-name-birthday = Narodniny
+about-addressbook-entry-name-anniversary = Róčnica
+about-addressbook-entry-name-title = Titul
+about-addressbook-entry-name-department = Wotrjad
+about-addressbook-entry-name-organization = Organizacija
+about-addressbook-entry-name-website = Websydło
+about-addressbook-entry-name-time-zone = Časowe pasmo
 about-addressbook-unsaved-changes-prompt-title = Njeskładowane změny
 about-addressbook-unsaved-changes-prompt = Chceće swoje změny składować, prjedy hač wobdźěłowanski napohlad wopušćeće?
 

@@ -91,10 +91,6 @@ menu-file-save-as-file =
 
 ## AppMenu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-appmenu-preferences =
-    .label = Dewisiadau
 appmenu-save-as-file =
     .label = Ffeil…
 appmenu-settings =
@@ -138,6 +134,22 @@ message-header-msg-flagged =
 message-header-msg-not-flagged =
     .title = Neges heb ei marcio â seren
 
+## Message header cutomize panel
+
+message-header-customize-panel-title = Gosodiadau Pennyn Neges
+message-header-customize-button-style =
+    .value = Arddull botwm
+    .accesskey = B
+message-header-button-style-default =
+    .label = Eiconau a thestun
+message-header-button-style-text =
+    .label = Testun
+message-header-button-style-icons =
+    .label = Eiconau
+message-header-large-subject =
+    .label = Pwnc mawr
+    .accesskey = P
+
 ## Action Button Context Menu
 
 toolbar-context-menu-manage-extension =
@@ -180,24 +192,6 @@ decrypt-and-copy-failures = Nid oedd modd dadgryptio { $failures } o { $total } 
 
 ## Spaces toolbar
 
-spaces-toolbar =
-    .toolbarname = Bar Offer Mannau
-spaces-toolbar-button-mail =
-    .title = Symud i'r tab e-bost
-spaces-toolbar-button-address-book =
-    .title = Symud i'r tab llyfr cyfeiriadau
-spaces-toolbar-button-calendar =
-    .title = Symud i'r tab calendr
-spaces-toolbar-button-tasks =
-    .title = Symud i'r tab tasgau
-spaces-toolbar-button-chat =
-    .title = Symud i'r tab sgwrsio
-spaces-toolbar-button-settings =
-    .title = Symud i'r tab gosodiadau
-spaces-toolbar-button-collapse =
-    .title = Cau'r bar offer bylchau
-spaces-toolbar-button-reveal =
-    .title = Dangos y bar offer mannau
 spaces-toolbar-element =
     .toolbarname = Bar Offer Mannau
     .aria-label = Bar Offer Mannau
@@ -234,6 +228,12 @@ settings-context-open-account-settings-item =
     .label = Agor Gosodiadau Cyfrif
 settings-context-open-addons-item =
     .label = Agor Ychwanegion a Themâu
+settings-context-open-settings-item2 =
+    .label = Gosodiadau
+settings-context-open-account-settings-item2 =
+    .label = Gosodiadau Cyfrif
+settings-context-open-addons-item2 =
+    .label = Ychwanegion a Themâu
 
 ## Spaces toolbar pinned tab menupopup
 
@@ -249,8 +249,6 @@ spaces-pinned-button-menuitem-tasks =
     .label = { spaces-toolbar-button-tasks.title }
 spaces-pinned-button-menuitem-chat =
     .label = { spaces-toolbar-button-chat.title }
-spaces-pinned-button-menuitem-reveal =
-    .label = { spaces-toolbar-button-reveal.title }
 spaces-pinned-button-menuitem-settings =
     .label = { spaces-toolbar-button-settings2.title }
 spaces-pinned-button-menuitem-show =
@@ -270,7 +268,7 @@ chat-button-unread-messages = { $count }
 
 ## Spaces toolbar customize panel
 
-spaces-context-customize =
+menuitem-customize-label =
     .label = Cyfaddasu…
 spaces-customize-panel-title = Gosodiadau Bar Offer Mannau
 spaces-customize-background-color = Lliw cefndir
@@ -283,5 +281,5 @@ spaces-customize-accent-background-color = Lliw cefndir botwm a ddewiswyd
 spaces-customize-accent-text-color = Lliw botwm a ddewiswyd
 spaces-customize-button-restore = Adfer y Rhagosodiadau
     .accesskey = R
-spaces-customize-button-save = Gorffen
+customize-panel-button-save = Gorffen
     .accesskey = G

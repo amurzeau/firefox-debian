@@ -86,10 +86,6 @@ menu-file-save-as-file =
 
 ## AppMenu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-appmenu-preferences =
-    .label = 偏好設定
 appmenu-save-as-file =
     .label = 檔案…
 appmenu-settings =
@@ -128,6 +124,22 @@ message-header-msg-flagged =
     .aria-label = 已標星號
 message-header-msg-not-flagged =
     .title = 未加上星號的郵件
+
+## Message header cutomize panel
+
+message-header-customize-panel-title = 訊息標題設定
+message-header-customize-button-style =
+    .value = 按鈕樣式
+    .accesskey = B
+message-header-button-style-default =
+    .label = 圖示與文字
+message-header-button-style-text =
+    .label = 文字
+message-header-button-style-icons =
+    .label = 圖示
+message-header-large-subject =
+    .label = 放大主旨
+    .accesskey = s
 
 ## Action Button Context Menu
 
@@ -171,24 +183,6 @@ decrypt-and-copy-failures = 無法解密全部共 { $total } 封訊息當中的 
 
 ## Spaces toolbar
 
-spaces-toolbar =
-    .toolbarname = 按鈕空間
-spaces-toolbar-button-mail =
-    .title = 切換到郵件分頁
-spaces-toolbar-button-address-book =
-    .title = 切換到通訊錄分頁
-spaces-toolbar-button-calendar =
-    .title = 切換到行事曆分頁
-spaces-toolbar-button-tasks =
-    .title = 切換到工作分頁
-spaces-toolbar-button-chat =
-    .title = 切換到聊天分頁
-spaces-toolbar-button-settings =
-    .title = 切換到設定分頁
-spaces-toolbar-button-collapse =
-    .title = 摺疊按鈕空間
-spaces-toolbar-button-reveal =
-    .title = 顯示按鈕空間
 spaces-toolbar-element =
     .toolbarname = 按鈕空間
     .aria-label = 按鈕空間
@@ -225,6 +219,12 @@ settings-context-open-account-settings-item =
     .label = 開啟帳號設定
 settings-context-open-addons-item =
     .label = 開啟附加元件與佈景主題
+settings-context-open-settings-item2 =
+    .label = 設定
+settings-context-open-account-settings-item2 =
+    .label = 帳號設定
+settings-context-open-addons-item2 =
+    .label = 附加元件與佈景主題
 
 ## Spaces toolbar pinned tab menupopup
 
@@ -240,8 +240,6 @@ spaces-pinned-button-menuitem-tasks =
     .label = { spaces-toolbar-button-tasks.title }
 spaces-pinned-button-menuitem-chat =
     .label = { spaces-toolbar-button-chat.title }
-spaces-pinned-button-menuitem-reveal =
-    .label = { spaces-toolbar-button-reveal.title }
 spaces-pinned-button-menuitem-settings =
     .label = { spaces-toolbar-button-settings2.title }
 spaces-pinned-button-menuitem-show =
@@ -256,7 +254,7 @@ chat-button-unread-messages = { $count }
 
 ## Spaces toolbar customize panel
 
-spaces-context-customize =
+menuitem-customize-label =
     .label = 自訂…
 spaces-customize-panel-title = 按鈕空間設定
 spaces-customize-background-color = 背景色
@@ -269,5 +267,5 @@ spaces-customize-accent-background-color = 已選擇按鈕的背景色
 spaces-customize-accent-text-color = 已選擇按鈕的顏色
 spaces-customize-button-restore = 回復為預設值
     .accesskey = R
-spaces-customize-button-save = 完成
+customize-panel-button-save = 完成
     .accesskey = D

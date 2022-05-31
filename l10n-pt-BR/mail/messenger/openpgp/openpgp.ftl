@@ -181,6 +181,11 @@ openpgp-key-man-reload =
 openpgp-key-man-change-expiry =
     .label = Alterar data de validade
     .accesskey = v
+openpgp-key-man-refresh-online =
+    .label = Atualizar online
+    .accesskey = t
+openpgp-key-man-ignored-ids =
+    .label = Endereços de email
 openpgp-key-man-del-key =
     .label = Excluir chaves
     .accesskey = x
@@ -226,8 +231,10 @@ openpgp-key-man-select-all-key =
     .key = T
 openpgp-key-man-key-details-key =
     .key = I
+openpgp-ign-addr-intro = Você aceita usar esta chave nos seguintes endereços de email selecionados:
 openpgp-key-details-title =
     .title = Propriedades da chave
+openpgp-key-details-doc-title = Propriedades da chave
 openpgp-key-details-signatures-tab =
     .label = Certificações
 openpgp-key-details-structure-tab =
@@ -236,11 +243,13 @@ openpgp-key-details-uid-certified-col =
     .label = ID de usuário / Certificado por
 openpgp-key-details-key-id-label = ID da chave
 openpgp-key-details-user-id2-label = Proprietário alegado da chave
+openpgp-key-details-user-id3-label = Proprietário da chave reivindicada
 openpgp-key-details-id-label =
     .label = ID
 openpgp-key-details-key-type-label = Tipo
 openpgp-key-details-key-part-label =
     .label = Parte da chave
+openpgp-key-details-attr-ignored = Aviso: Esta chave pode não funcionar como esperado, pois algumas de suas propriedades não são seguras e podem ser ignoradas.
 openpgp-key-details-algorithm-label =
     .label = Algoritmo
 openpgp-key-details-size-label =
@@ -258,7 +267,6 @@ openpgp-key-details-legend-secret-missing = Nas chaves marcadas com (!), a chave
 openpgp-key-details-sel-action =
     .label = Selecionar ação…
     .accesskey = S
-openpgp-key-details-also-known-label = Identidades alternativas alegadas do proprietário da chave:
 openpgp-card-details-close-window-label =
     .buttonlabelaccept = Fechar
 openpgp-acceptance-label =
@@ -274,7 +282,6 @@ openpgp-acceptance-verified-label =
 key-accept-personal =
     Nesta chave, você tem a parte pública e a parte secreta. Você pode usar como uma chave pessoal.
     Se esta chave foi dada a você por outra pessoa, não a use como chave pessoal.
-key-personal-warning = Você mesmo criou esta chave e a propriedade da chave exibida refere-se a você?
 openpgp-personal-no-label =
     .label = Não, não usar como minha chave pessoal.
 openpgp-personal-yes-label =
@@ -284,13 +291,14 @@ openpgp-copy-cmd-label =
 
 ## e2e encryption settings
 
+#   $identity (String) - the email address of the currently selected identity
+openpgp-description-no-key = O { -brand-short-name } não tem uma chave OpenPGP pessoal de <b>{ $identity }</b>
 #   $count (Number) - the number of configured keys associated with the current identity
 #   $identity (String) - the email address of the currently selected identity
-openpgp-description =
+openpgp-description-has-keys =
     { $count ->
-        [0] O Thunderbird não tem uma chave OpenPGP pessoal de <b>{ $identity }</b>
-        [one] O Thunderbird encontrou { $count } chave OpenPGP pessoal associada a <b>{ $identity }</b>
-       *[other] O Thunderbird encontrou { $count } chaves OpenPGP pessoais associadas a <b>{ $identity }</b>
+        [one] O { -brand-short-name } encontrou { $count } chave OpenPGP pessoal associada a <b>{ $identity }</b>
+       *[other] O { -brand-short-name } encontrou { $count } chaves OpenPGP pessoais associadas a <b>{ $identity }</b>
     }
 #   $key (String) - the currently selected OpenPGP key
 openpgp-selection-status-have-key = Sua configuração atual usa a chave com ID <b>{ $key }</b>
@@ -348,14 +356,11 @@ key-expired-date = A chave expirou em { $keyExpiry }
 key-expired-simple = A chave expirou
 key-revoked-simple = A chave foi revogada
 key-do-you-accept = Você aceita esta chave para verificar assinaturas digitais e para criptografar mensagens?
-key-accept-warning = Evite aceitar chaves de trapaceiros. Use um canal de comunicação diferente de email para verificar a impressão digital da chave de seu correspondente.
 key-verification = Verifique a impressão digital da chave usando um canal de comunicação seguro, diferente de email, para ter certeza que realmente é a chave de { $addr }.
 # Strings enigmailMsgComposeOverlay.js
 cannot-use-own-key-because = Não foi possível enviar a mensagem, porque há um problema com sua chave pessoal. { $problem }
 cannot-encrypt-because-missing = Não foi possível enviar esta mensagem com criptografia de ponta a ponta, porque há problemas com as chaves dos seguintes destinatários: { $problem }
 window-locked = A janela de edição está bloqueada; envio cancelado
-# Strings in mimeDecrypt.jsm
-mime-decrypt-encrypted-part-attachment-label = Parte criptografada da mensagem
 # Strings in mimeDecrypt.jsm
 mime-decrypt-encrypted-part-concealed-data = Esta é uma parte criptografada da mensagem. Você precisa abrir em uma janela separada, clicando no anexo.
 # Strings in keyserver.jsm
@@ -379,25 +384,6 @@ converter-decrypt-body-failed =
     Não foi possível decifrar a mensagem com assunto
     { $subject }.
     Quer tentar novamente com outra senha, ou quer ignorar a mensagem?
-# Strings in gpg.jsm
-unknown-signing-alg = Algoritmo de assinatura desconhecido (ID: { $id })
-unknown-hash-alg = Hash de criptografia desconhecido (ID: { $id })
-# Strings in keyUsability.jsm
-expiry-key-expires-soon =
-    Sua chave { $desc } irá expirar em menos de { $days } dias.
-    Recomendamos que você crie um novo par de chaves e configure as contas correspondentes para usá-las.
-expiry-keys-expire-soon =
-    Suas seguintes chaves irão expirar em menos de { $days } dias: { $desc }.
-    Recomendamos que você crie novas chaves e configure as contas correspondentes para usá-las.
-expiry-key-missing-owner-trust =
-    Sua chave secreta { $desc } não pode ser considerada de confiança.
-    Recomendamos que você defina "Você confia em certificações" como "definitivo" nas propriedades da chave.
-expiry-keys-missing-owner-trust =
-    As seguintes chaves secretas suas não podem ser consideradas de confiança.
-    { $desc }.
-    Recomendamos que você defina "Você confia em certificações" como "definitivo" nas propriedades das chaves.
-expiry-open-key-manager = Abrir gerenciador de chaves OpenPGP
-expiry-open-key-properties = Abrir propriedades da chave
 # Strings filters.jsm
 filter-folder-required = Você deve selecionar uma pasta destino.
 filter-decrypt-move-warn-experimental =
@@ -515,6 +501,9 @@ key-error-not-accepted-as-personal = Você não confirmou se a chave com ID '{ $
 need-online = A função que você selecionou não está disponível no modo offline. Fique online e tente novamente.
 # Strings used in keyRing.jsm & keyLookupHelper.jsm
 no-key-found = Não foi possível encontrar nenhuma chave que corresponda aos critérios de pesquisa especificados.
+# Strings used in keyRing.jsm & keyLookupHelper.jsm
+no-key-found2 = Não foi possível encontrar nenhuma chave usável que corresponda aos critérios de pesquisa especificados.
+no-update-found = Você já tem as chaves que foram descobertas online.
 # Strings used in keyRing.jsm & GnuPGCryptoAPI.jsm
 fail-key-extract = Erro - Falha no comando de extração de chave
 # Strings used in keyRing.jsm
@@ -600,18 +589,9 @@ send-to-news-warning =
     Isso é desencorajado porque só faz sentido se todos os membros do grupo puderem descriptografar a mensagem, ou seja, a mensagem precisa ser criptografada com as chaves de todos os participantes do grupo. Só envie esta mensagem se souber exatamente o que está fazendo.
     Continuar?
 save-attachment-header = Salvar anexo descriptografado
-no-temp-dir =
-    Não foi possível encontrar um diretório temporário onde gravar
-    Defina a variável de ambiente TEMP
 possibly-pgp-mime = Mensagem possivelmente criptografada ou assinada por PGP/MIME. Use a função 'Descriptografar/Verificar' para verificar
 cannot-send-sig-because-no-own-key = Não é possível assinar digitalmente esta mensagem, porque você ainda não configurou a criptografia de ponta a ponta de <{ $key }>
 cannot-send-enc-because-no-own-key = Não é possível enviar esta mensagem criptografada, porque você ainda não configurou a criptografia de ponta a ponta de <{ $key }>
-compose-menu-attach-key =
-    .label = Anexar minha chave pública
-    .accesskey = A
-compose-menu-encrypt-subject =
-    .label = Criptografia de assunto
-    .accesskey = s
 # Strings used in decryption.jsm
 do-import-multiple =
     Importar as seguintes chaves?

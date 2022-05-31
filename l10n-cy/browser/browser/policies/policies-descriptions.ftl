@@ -13,6 +13,7 @@
 policy-3rdparty = Gosodwch bolisïau y gall WebExtensions gael mynediad atyn nhw trwy chrome.storage.managed.
 policy-AllowedDomainsForApps = Diffinio parthau sy'n cael eu caniatáu i gael mynediad at Google Workpace.
 policy-AppAutoUpdate = Galluogi neu analluogi diweddaru rhaglen yn awtomatig.
+policy-AppUpdatePin = Rhwystro { -brand-short-name } rhag cael ei ddiweddaru y tu hwnt i'r fersiwn penodedig.
 policy-AppUpdateURL = Gosod URL diweddaru ap cyfaddas.
 policy-Authentication = Ffurfweddu dilysu integredig ar gyfer gwefannau sy'n ei gefnogi.
 policy-AutoLaunchProtocolsFromOrigins = Diffiniwch restr o brotocolau allanol y mae modd eu defnyddio o darddiad rhestredig heb annog y defnyddiwr.
@@ -58,6 +59,7 @@ policy-DownloadDirectory = Gosod a chloi'r cyfeiriadur llwytho i lawr.
 policy-EnableTrackingProtection = Galluogi neu analluogi Rhwystro Cynnwys ac o ddewis ei gloi.
 # “lock” means that the user won’t be able to change this setting
 policy-EncryptedMediaExtensions = Galluogi neu Analluogi Estyniadau Cyfryngau Amgryptiedig ac o ddewis eu cloi.
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Analluogi rhybuddion yn seiliedig ar estyniad ffeil ar gyfer mathau penodol o ffeiliau ar barthau.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -92,6 +94,7 @@ policy-OfferToSaveLoginsDefault = Gosodwch y gwerth ragosodedig ar gyfer caniat�
 policy-OverrideFirstRunPage = Diystyru y dudalen rhediad gyntaf. Gosod y polisi hwn i gwag os ydych am analluogi'r dudalen rhediad cyntaf.
 policy-OverridePostUpdatePage = Diystyru'r dudalen ôl ddiweddaru "Beth sy'n Newydd". Gosodwch y polisi hwn i gwag os hoffech chi analluogi'r dudalen ôl ddiweddaru.
 policy-PasswordManagerEnabled = Galluogi cadw cyfrineiriau i'r rheolwr cyfrinair.
+policy-PasswordManagerExceptions = Rhwystro { -brand-short-name } rhag cadw cyfrineiriau ar gyfer gwefannau penodol.
 # PDF.js and PDF should not be translated
 policy-PDFjs = Analluogwch neu ffurfweddu PDF.js, y darllenydd PDF mewnol yn { -brand-short-name }.
 policy-Permissions2 = Ffurfweddwch y caniatâd ar gyfer camera, meicroffon, lleoliadau, hysbysiadau ac awtochwarae.

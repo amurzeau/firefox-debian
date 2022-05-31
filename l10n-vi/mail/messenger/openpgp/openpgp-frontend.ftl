@@ -33,6 +33,7 @@ openpgp-search-signature-key =
     .label = Khám phá…
 
 # Don't translate the terms "OpenPGP" and "MS-Exchange"
+openpgp-broken-exchange-opened = Đây là thông báo OpenPGP dường như đã bị MS-Exchange làm hỏng và không thể sửa được thông báo này vì được mở từ một tập tin cục bộ. Sao chép thư vào một thư mục thư để thử sửa chữa tự động.
 openpgp-broken-exchange-info = Đây là thông báo OpenPGP dường như đã bị hỏng bởi MS-Exchange. Nếu nội dung thư không được hiển thị như mong đợi, bạn có thể thử sửa chữa tự động.
 openpgp-broken-exchange-repair =
     .label = Sửa chữa thư

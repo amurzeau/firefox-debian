@@ -10,8 +10,10 @@
 
 opensearch-error-duplicate-title = Asennusvirhe
 opensearch-error-duplicate-desc = { -brand-short-name } ei onnistunut asentamaan hakukonetta osoitteesta "{ $location-url }", koska samanniminen hakukone on jo asennettu.
+
 opensearch-error-format-title = Virheellinen muoto
 opensearch-error-format-desc = { -brand-short-name } ei voinut asentaa hakukonetta osoitteesta: { $location-url }
+
 opensearch-error-download-title = Latausvirhe
 opensearch-error-download-desc = { -brand-short-name } ei onnistunut lataamaan hakukonetta osoitteesta: { $location-url }
 
@@ -19,9 +21,11 @@ opensearch-error-download-desc = { -brand-short-name } ei onnistunut lataamaan h
 
 searchbar-submit =
     .tooltiptext = Lähetä haku
+
 # This string is displayed in the search box when the input field is empty
 searchbar-input =
     .placeholder = Haku
+
 searchbar-icon =
     .tooltiptext = Haku
 
@@ -30,6 +34,5 @@ searchbar-icon =
 ## $oldEngine (String) - the search engine to be removed.
 ## $newEngine (String) - the search engine to replace the removed search engine.
 
-remove-search-engine-message = <strong>Oletushakukoneesi on muutettu.</strong> { -brand-short-name } ei enää tue hakukonetta { $oldEngine }. { $newEngine } on nyt uusi oletushakukoneesi. Voit vaihtaa toiseen oletushakukoneeseen siirtymällä asetuksiin. <label data-l10n-name="remove-search-engine-article">Lue lisää</label>
-removed-search-engine-message = <strong>Oletushakukoneesi on muutettu.</strong> { $oldEngine } ei ole enää tarjolla oletushakukoneeksi { -brand-short-name }issa. { $newEngine } on nyt oletushakukoneesi. Voit vaihtaa toiseen oletushakukoneeseen siirtymällä asetuksin. <label data-l10n-name="remove-search-engine-article">Lue lisää</label>
+removed-search-engine-message = <strong>Oletushakukoneesi on muutettu.</strong> { $oldEngine } ei ole enää tarjolla oletushakukoneeksi { -brand-short-name }issa. { $newEngine } on nyt oletushakukoneesi. Voit vaihtaa toiseen oletushakukoneeseen siirtymällä asetuksiin. <label data-l10n-name="remove-search-engine-article">Lue lisää</label>
 remove-search-engine-button = OK

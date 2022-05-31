@@ -141,7 +141,6 @@ extensions-warning-update-security = கூடுதல் இணைப்பு
 extensions-warning-update-security-button = செயல்படுத்து
     .title = கூடுதல் இணைப்பு மேம்படுத்தல் பாதுகாப்பு சரிபார்த்தலை செயல்படுத்து
 
-
 ## Strings connected to add-on updates
 
 addon-updates-check-for-updates = புதியவை உள்ளதா எனப்பார்
@@ -197,9 +196,33 @@ addon-open-about-debugging = கூடுதல் இணைப்புளை �
 ## This is the tooltip text for the recommended badges for an extension in about:addons. The
 ## badge is a small icon displayed next to an extension when it is recommended on AMO.
 
+
 ##
+
 
 ## Page headings
 
 addon-page-options-button =
     .title = அனைத்து கூடுதல் இணைப்புகளுக்குமான கருவிகள்
+
+## Detail notifications
+## Variables:
+##   $name (String): name of the add-on.
+
+# Variables:
+#   $version (String): application version.
+details-notification-incompatible = { $name } ஆனது { -brand-short-name } { $version }-உடன் ஒத்தியல்பாக இல்லை.
+
+details-notification-unsigned-and-disabled = { $name } ஐ { -brand-short-name } என்பதில் பயன்படுத்துவதற்குச் சரிபார்க்க இயலாததால் முடக்கப்பட்டது.
+details-notification-unsigned-and-disabled-link = கூடுதல் தகவல்
+
+details-notification-unsigned = { $name } ஐ { -brand-short-name } என்பதில் பயன்படுத்துவதற்குச் சரிபார்க்க இயலவில்லை. எச்சரிக்கையுடன் தொடரவும்.
+details-notification-unsigned-link = கூடுதல் தகவல்
+
+details-notification-blocked = { $name } பாதுகாப்பு அல்லது நிலைப்புத்தன்மை சிக்கல்களால் செயல்நீக்கப்பட்டது.
+details-notification-blocked-link = கூடுதல் தகவல்
+
+details-notification-softblocked = { $name } பாதுகாப்பு அல்லது நிலைப்புத்தன்மை சிக்கல்களை உருவாக்குவதாகும்.
+details-notification-softblocked-link = கூடுதல் தகவல்
+
+details-notification-gmp-pending = { $name } விரைவில் நிறுவப்படும்.

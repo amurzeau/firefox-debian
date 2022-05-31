@@ -20,14 +20,14 @@ findbar-highlight-all2 =
         }
     .tooltiptext = ყველა თანხვედრის გამორჩევა
 findbar-case-sensitive =
-    .label = ემთხვევა მთავრული
+    .label = მთავრულით
     .accesskey = რ
     .tooltiptext = ძიება მთავრულის გათვალისწინებით
 findbar-match-diacritics =
-    .label = ემთხვევა ნიშნები
+    .label = ნიშნებით
     .accesskey = ნ
     .tooltiptext = განასხვავებს ნიშანდართულებს ძირითადი ასოებისგან (მაგალითად სიტყვები „resume“ და „résumé“ ერთდროულად აღარ მოიძებნება)
 findbar-entire-word =
-    .label = მთლიანი სიტყვა
+    .label = მთლიანად
     .accesskey = მ
     .tooltiptext = მხოლოდ მთლიანი სიტყვების ძიება

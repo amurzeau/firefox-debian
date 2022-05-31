@@ -13,6 +13,7 @@
 policy-3rdparty = Nastaví, ku ktorým pravidlám majú prístup rozšírenia cez chrome.storage.managed.
 policy-AllowedDomainsForApps = Definuje domény, ktoré majú povolený prístup do služby Google Workspace.
 policy-AppAutoUpdate = Zapne alebo vypne automatické aktualizácie aplikácie.
+policy-AppUpdatePin = Zabráni aktualizácii { -brand-short-name(case: "gen") } nad rámec špecifikovanej verzie.
 policy-AppUpdateURL = Nastaví vlastnú URL adresu pre aktualizáciu aplikácie.
 policy-Authentication = Nakonfiguruje integrovanú autentifikáciu webových stránok, ktoré ju podporujú.
 policy-AutoLaunchProtocolsFromOrigins = Definuje zoznam externých protokolov, ktoré môžu byť použité z uvedených zdrojov bez vyzvania používateľa.
@@ -58,6 +59,7 @@ policy-DownloadDirectory = Nastaví a uzamkne umiestnenie pre sťahovanie súbor
 policy-EnableTrackingProtection = Zapne alebo vypne blokovanie obsahu a prípadne túto funkciu uzamkne.
 # “lock” means that the user won’t be able to change this setting
 policy-EncryptedMediaExtensions = Zapne alebo vypne Encrypted Media Extensions a prípadne uzamkne toto nastavenie.
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = V doménach zakáže upozornenia pre konkrétne typy súborov na základe ich prípony.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.

@@ -3,7 +3,6 @@
 // This program is made available under an ISC-style license.  See the
 // accompanying file LICENSE for details.
 #![warn(unused_extern_crates)]
-#![cfg_attr(try_reserve, feature(try_reserve))]
 
 #[macro_use]
 extern crate log;

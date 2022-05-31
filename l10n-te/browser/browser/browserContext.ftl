@@ -159,11 +159,6 @@ main-context-menu-save-link-to-pocket =
     .label = లంకెను { -pocket-brand-name }కు భద్రపరుచు
     .accesskey = o
 
-## The access keys for "Copy Link Location" and "Copy Email Address"
-## should be the same if possible; the two context menu items
-## are mutually exclusive.
-
-
 ## The access keys for "Copy Link" and "Copy Email Address"
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
@@ -171,6 +166,10 @@ main-context-menu-save-link-to-pocket =
 main-context-menu-copy-email =
     .label = ఈమెయిలు చిరునామాను కాపీచేయి
     .accesskey = E
+
+main-context-menu-copy-phone =
+    .label = ఫోన్ నంబరు కాపీచేయి
+    .accesskey = o
 
 main-context-menu-copy-link-simple =
     .label = లంకె కాపీచేయి
@@ -386,6 +385,10 @@ main-context-menu-take-screenshot =
     .label = తెరపట్టు తీయి
     .accesskey = T
 
+main-context-menu-take-frame-screenshot =
+    .label = తెరపట్టు తీయి
+    .accesskey = o
+
 main-context-menu-view-page-source =
     .label = పేజీ మూలాన్ని చూడండి
     .accesskey = V
@@ -405,3 +408,6 @@ main-context-menu-eme-learn-more =
     .label = DRM గురించి ఇంకా తెలుసుకోండి…
     .accesskey = D
 
+main-context-menu-reveal-password =
+    .label = సంకేతపదాన్ని చూపించు
+    .accesskey = v

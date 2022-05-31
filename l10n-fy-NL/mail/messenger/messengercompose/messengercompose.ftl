@@ -3,6 +3,24 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+## Send Format
+
+compose-send-format-menu =
+    .label = Ferstjoeropmaak
+    .accesskey = o
+compose-send-auto-menu-item =
+    .label = Automatysk
+    .accesskey = A
+compose-send-both-menu-item =
+    .label = Sawol HTML as platte tekst
+    .accesskey = S
+compose-send-html-menu-item =
+    .label = Allinnich HTML
+    .accesskey = H
+compose-send-plain-menu-item =
+    .label = Allinnich platte tekst
+    .accesskey = p
+
 ## Addressing widget
 
 #   $type (String) - the type of the addressing row
@@ -66,9 +84,6 @@ menuitem-toggle-attachment-pane =
 toolbar-button-add-attachment =
     .label = Keppelje
     .tooltiptext = In bylage tafoegje ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
-add-attachment-notification-reminder =
-    .label = Bylage tafoegje…
-    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 add-attachment-notification-reminder2 =
     .label = Bylage taheakje…
     .accesskey = B
@@ -95,10 +110,6 @@ attachment-bucket-count-value =
         [one] { $count } bylage
        *[other] { $count } bylagen
     }
-expand-attachment-pane-tooltip =
-    .tooltiptext = It bylagefinster toane ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = It bylagefinster ferstopje ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = It bylagefinster toane ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -130,10 +141,6 @@ button-return-receipt =
 
 ## Encryption
 
-message-to-be-signed-icon =
-    .alt = Berjocht ûndertekenje
-message-to-be-encrypted-icon =
-    .alt = Berjocht fersiferje
 encryption-menu =
     .label = Befeiliging
     .accesskey = f
@@ -146,6 +153,9 @@ encryption-options-openpgp =
 encryption-options-smime =
     .label = S/MIME
     .tooltiptext = S/MIME-fersiferingsynstellingen besjen of wizigje
+signing-toggle =
+    .label = Undertekenje
+    .tooltiptext = Digitale ûndertekening brûken foar dit berjocht
 menu-openpgp =
     .label = OpenPGP
     .accesskey = O
@@ -185,38 +195,6 @@ key-notification-resolve =
 
 ## Addressing Area
 
-to-compose-address-row-label =
-    .value = Oan
-#   $key (String) - the shortcut key for this field
-to-compose-show-address-row-menuitem =
-    .label = { to-compose-address-row-label.value }-fjild
-    .accesskey = T
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-to-compose-show-address-row-label =
-    .value = { to-compose-address-row-label.value }
-    .tooltiptext = { to-compose-address-row-label.value }-fjild toane ({ to-compose-show-address-row-menuitem.acceltext })
-cc-compose-address-row-label =
-    .value = Cc
-#   $key (String) - the shortcut key for this field
-cc-compose-show-address-row-menuitem =
-    .label = { cc-compose-address-row-label.value }-fjild
-    .accesskey = C
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-cc-compose-show-address-row-label =
-    .value = { cc-compose-address-row-label.value }
-    .tooltiptext = { cc-compose-address-row-label.value }-fjild toane ({ cc-compose-show-address-row-menuitem.acceltext })
-bcc-compose-address-row-label =
-    .value = Bcc
-#   $key (String) - the shortcut key for this field
-bcc-compose-show-address-row-menuitem =
-    .label = { bcc-compose-address-row-label.value }-fjild
-    .accesskey = B
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-bcc-compose-show-address-row-label =
-    .value = { bcc-compose-address-row-label.value }
-    .tooltiptext = { bcc-compose-address-row-label.value }-fjild toane ({ bcc-compose-show-address-row-menuitem.acceltext })
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-many-public-recipients-info = De { $count } ûntfangers yn Oan en Cc sille de adressen fan de oaren sjen. Jo kinne foarkomme dat ûntfangers toand wurde troch yn stee hjirfan Bcc te brûken.
 to-address-row-label =
     .value = Oan
 #   $key (String) - the shortcut key for this field
@@ -281,7 +259,7 @@ many-public-recipients-prompt-title = Te folle iepenbiere ûntfangers
 many-public-recipients-prompt-msg =
     { $count ->
         [one] Jo berjocht hat in iepenbiere ûntfanger. Dit kin in privacyprobleem wêze. Jo kinne dit foarkomme troch de ûntfanger yn stee fan Oan/Cc nei Bcc te ferpleatsen.
-       *[other] Jo berjocht hat { $count } iepenbiere ûntfangers, dy’t inoars adressen sjen kinne. Dit kin in privacyprobleem wêze. Jo kinne dit foarkomme troch de ûntfanger yn stee fan Oan/Cc nei Bcc te ferpleatsen.
+       *[other] Jo berjocht hat { $count } iepenbiere ûntfangers, dy’t inoar harren adressen sjen kinne. Dit kin in privacyprobleem wêze. Jo kinne dit foarkomme troch de ûntfanger yn stee fan Oan/Cc nei Bcc te ferpleatsen.
     }
 many-public-recipients-prompt-cancel = Ferstjoeren annulearje
 many-public-recipients-prompt-send = Dochs ferstjoere
@@ -379,3 +357,17 @@ cloud-file-attachment-error = Kin de Filelink-bylage { $filename } net bywurkje,
 # $filename (string) - name of the file that was renamed and caused the error
 cloud-file-account-error-title = Filelink-accountflater
 cloud-file-account-error = Kin de Filelink-bylage { $filename } net bywurkje, omdat it de Filelink-account fuortsmiten is.
+
+## Link Preview
+
+link-preview-title = Keppelingsfoarbyld
+link-preview-description = { -brand-short-name } kin in ynsluten foarbyld tafoegje by it plakken fan keppelingen.
+link-preview-autoadd = Keppelingsfoarbylden wannear mooglik automatysk tafoegje
+link-preview-replace-now = In keppelingsfoarbyld foar dizze keppeling tafoegje?
+link-preview-yes-replace = Ja
+
+## Dictionary selection popup
+
+spell-add-dictionaries =
+    .label = Wurdboeken tafoegje…
+    .accesskey = t

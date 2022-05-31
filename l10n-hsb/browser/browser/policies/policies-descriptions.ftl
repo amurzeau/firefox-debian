@@ -13,6 +13,7 @@
 policy-3rdparty = Prawidła nastajić, na kotrež WebExtensions přez chrome.storage.managed přistup maja.
 policy-AllowedDomainsForApps = Definujće domeny, kotrež smědźa přistup k Google Workspace měć.
 policy-AppAutoUpdate = Awtomatiske aktualizacije nałoženjow zmóžnić abo znjemóžnić.
+policy-AppUpdatePin = Zadźěwać tomu, zo so { -brand-short-name } wyše podateje wersije aktualizuje.
 policy-AppUpdateURL = Swójski aktualizowanski URL za nałoženje nastajić.
 policy-Authentication = Integrowanu awtentifikaciju za websydła konfigurować, kotrež ju podpěruja.
 policy-AutoLaunchProtocolsFromOrigins = Definujće lisćinu protokolow, kotrež dadźa so z nalistowanych žórłow wužiwać, bjeztoho zo by so dyrbjało wužiwarja prašeć.
@@ -58,6 +59,7 @@ policy-DownloadDirectory = Nastajće a zawrějće sćehnjenski zapis.
 policy-EnableTrackingProtection = Blokowanje wobsaha zmóžnić abo znjemóžnić a jo na přeće zawrěć.
 # “lock” means that the user won’t be able to change this setting
 policy-EncryptedMediaExtensions = Encrypted Media Extensions zmóžnić abo znjemóžnić a je na přeće zawrěć.
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Warnowanja na zakładźe datajoweje kóncowki za wěste datajowe typy w domenach znjemóžnić.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.

@@ -43,15 +43,6 @@ menu-quit =
 menu-quit-mac =
     .label = Fàg { -brand-shorter-name }
 
-# This menu-quit-button string is only used on Linux.
-menu-quit-button =
-    .label = { menu-quit.label }
-
-# This menu-quit-button-win string is only used on Windows.
-menu-quit-button-win =
-    .label = { menu-quit.label }
-    .tooltip = Fàg { -brand-shorter-name }
-
 menu-about =
     .label = Mu { -brand-shorter-name }
     .accesskey = M
@@ -81,9 +72,6 @@ menu-file-open-location =
 menu-file-open-file =
     .label = Fosgail faidhle…
     .accesskey = o
-menu-file-close =
-    .label = Dùin
-    .accesskey = D
 menu-file-close-window =
     .label = Dùin an uinneag
     .accesskey = D
@@ -96,9 +84,6 @@ menu-file-email-link =
 menu-file-print-setup =
     .label = Roghainnean na duilleige…
     .accesskey = u
-menu-file-print-preview =
-    .label = Ro-shealladh clò-bhualaidh
-    .accesskey = R
 menu-file-print =
     .label = Clò-bhuail…
     .accesskey = C
@@ -168,7 +153,6 @@ menu-view-page-style-no-style =
 menu-view-page-basic-style =
     .label = Stoidhle bhunaiteach na duilleige
     .accesskey = b
-
 menu-view-repair-text-encoding =
     .label = Càraich còdachadh an teacsa
     .accesskey = c
@@ -214,7 +198,6 @@ menu-history-undo-menu =
     .label = Tabaichean a dhùin thu o chionn goirid
 menu-history-undo-window-menu =
     .label = Uinneagan a dhùin thu o chionn goirid
-
 menu-history-reopen-all-tabs = Ath-fhosgail gach taba
 menu-history-reopen-all-windows = Ath-fhosgail gach uinneag
 
@@ -313,9 +296,9 @@ menu-help-more-troubleshooting-info =
     .accesskey = B
 menu-help-report-site-issue =
     .label = Dèan aithris air duilgheadas leis an làrach...
-menu-help-feedback-page =
-    .label = Cuir thugainn do bheachdan…
-    .accesskey = C
+menu-help-share-ideas =
+    .label = Co-roinn do bheachdan…
+    .accesskey = b
 menu-help-enter-troubleshoot-mode2 =
     .label = Modh fuasglaidh air duilgheadasan…
     .accesskey = M

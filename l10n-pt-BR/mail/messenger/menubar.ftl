@@ -8,11 +8,6 @@ toolbar-context-menu-menu-bar =
 
 ## Tools Menu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-menu-tools-preferences =
-    .label = Preferências
-    .accesskey = P
 menu-tools-settings =
     .label = Configurações
     .accesskey = C
@@ -55,6 +50,18 @@ menu-view-repair-text-encoding =
 
 ## View / Layout
 
+menu-font-size-label =
+    .label = Tamanho da fonte
+    .accesskey = T
+menuitem-font-size-enlarge =
+    .label = Aumentar tamanho da fonte
+    .accesskey = A
+menuitem-font-size-reduce =
+    .label = Diminuir tamanho da fonte
+    .accesskey = D
+menuitem-font-size-reset =
+    .label = Redefinir tamanho da fonte
+    .accesskey = R
 mail-uidensity-label =
     .label = Densidade
     .accesskey = D

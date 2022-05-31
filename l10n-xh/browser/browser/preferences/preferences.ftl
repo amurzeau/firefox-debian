@@ -67,10 +67,6 @@ ctrl-tab-recently-used-order =
     .label = Imijikelo yeCtrl+Tab kwiithebhu kulungelelwano olusandul' ukusetyenziswa
     .accesskey = T
 
-warn-on-close-multiple-tabs =
-    .label = Ndikulumkise xa ndivala iithebhu ezininzi
-    .accesskey = e
-
 warn-on-open-many-tabs =
     .label = Ndikulumkise xa uvula iithebhu ezininzi ezingacothisa i-{ -brand-short-name }
     .accesskey = c
@@ -116,10 +112,7 @@ containers-remove-alert-msg =
 containers-remove-ok-button = Yisuse le Khonteyina
 containers-remove-cancel-button = Musa ukuyisusa le Khonteyina
 
-
 ## General Section - Language & Appearance
-
-fonts-and-colors-header = Iifonti neMibala
 
 default-font = Ifonti esisiseko
     .accesskey = I
@@ -129,10 +122,6 @@ default-font-size = Isayizi
 advanced-fonts =
     .label = Kwangaphambili…
     .accesskey = K
-
-colors-settings =
-    .label = Imibala…
-    .accesskey = I
 
 choose-language-description = Khetha ulwimi oluthandayo lokubonisa amaphepha
 
@@ -162,6 +151,9 @@ download-header = Okukhutshelwayo
 
 download-save-to =
     .label = Gcina iifayile kwi
+    .accesskey = c
+
+download-save-where = Gcina iifayile kwi
     .accesskey = c
 
 download-choose-folder =
@@ -360,6 +352,7 @@ choose-bookmark =
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
+
 ##
 
 
@@ -401,9 +394,6 @@ containers-add-button =
     .label = Yongeza iKhonteyina eNtsha
     .accesskey = Y
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
@@ -418,9 +408,6 @@ sync-signedout-caption = Phatha iWebhu Yakho Apho Ukhoyo
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Dawnlowuda iFirefox ye<img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">I-Android</a>okanye<img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a>ukuze ungqamanise nezixhobo zakho zemobhayili.
-
-## Sync Section - Signed in
-
 
 ## Firefox Account - Signed in
 
@@ -469,9 +456,6 @@ sync-device-name-save =
 ## Privacy Section
 
 
-## Privacy Section - Forms
-
-
 ## Privacy Section - Logins and Passwords
 
 forms-exceptions =
@@ -488,6 +472,7 @@ forms-master-pw-change =
 forms-master-pw-fips-desc = Ukuguqulwa Kwegama Lokugqithisa Akuphumelelanga
 
 ## OS Authentication dialog
+
 
 ## Privacy Section - History
 
@@ -554,6 +539,7 @@ addressbar-suggestions-settings = Tshintsha iipreferensi zamacebiso enjini yokuk
 
 ##
 
+
 ## Privacy Section - Tracking
 
 
@@ -564,10 +550,6 @@ permissions-header = Iimvume
 permissions-block-popups =
     .label = Thintela iifestile ezizivelelayo
     .accesskey = T
-
-permissions-block-popups-exceptions =
-    .label = Izinxaxhi…
-    .accesskey = I
 
 permissions-addon-exceptions =
     .label = Izinxaxhi…
@@ -609,6 +591,7 @@ certs-enable-ocsp =
     .accesskey = B
 
 ## Privacy Section - HTTPS-Only
+
 
 ## The following strings are used in the Download section of settings
 

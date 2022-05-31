@@ -39,15 +39,18 @@ toolbar-context-menu-remove-extension =
 toolbar-context-menu-report-extension =
     .label = Кеңейтуді хабарлау
     .accesskey = у
-# Can appear on the same context menu as menubarCmd ("Menu Bar") and
-# personalbarCmd ("Bookmarks Toolbar"), so they should have different
-# access keys.
+# Can appear on the same context menu as toolbar-context-menu-menu-bar-cmd
+# ("Menu Bar") and personalbarCmd ("Bookmarks Toolbar"), so they should
+# have different access keys.
 toolbar-context-menu-pin-to-overflow-menu =
     .label = Қайта аймалау мәзіріне бекіту
     .accesskey = к
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = Бос болған кезде батырманы жасыру
     .accesskey = ы
+toolbar-context-menu-always-open-downloads-panel =
+    .label = Жүктеп алу басталған кезде панельді көрсету
+    .accesskey = с
 toolbar-context-menu-remove-from-toolbar =
     .label = Құралдар панелінен өшіру
     .accesskey = ш

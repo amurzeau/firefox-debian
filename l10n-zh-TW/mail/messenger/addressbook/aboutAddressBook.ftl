@@ -121,14 +121,33 @@ about-addressbook-confirm-delete-contacts =
 
 ## Details
 
+about-addressbook-write-action-button = 寫信
+about-addressbook-event-action-button = 事件
+about-addressbook-search-action-button = 搜尋
 about-addressbook-begin-edit-contact-button = 編輯
+about-addressbook-delete-edit-contact-button = 刪除
 about-addressbook-cancel-edit-contact-button = 取消
 about-addressbook-save-edit-contact-button = 儲存
+about-addressbook-add-contact-to = 新增到:
 about-addressbook-details-email-addresses-header = 電子郵件地址
 about-addressbook-details-phone-numbers-header = 電話號碼
 about-addressbook-details-home-address-header = 住家地址
 about-addressbook-details-work-address-header = 商務地址
+about-addressbook-details-addresses-header = 通訊錄
+about-addressbook-details-notes-header = 附註
 about-addressbook-details-other-info-header = 其他資訊
+about-addressbook-entry-type-work = 商務
+about-addressbook-entry-type-home = 住家
+about-addressbook-entry-type-fax = 傳真
+about-addressbook-entry-type-cell = 手機
+about-addressbook-entry-type-pager = 呼叫器
+about-addressbook-entry-name-birthday = 生日
+about-addressbook-entry-name-anniversary = 週年紀念日
+about-addressbook-entry-name-title = 頭銜
+about-addressbook-entry-name-department = 部門
+about-addressbook-entry-name-organization = 服務單位
+about-addressbook-entry-name-website = 網站
+about-addressbook-entry-name-time-zone = 時區
 about-addressbook-unsaved-changes-prompt-title = 未儲存修改
 about-addressbook-unsaved-changes-prompt = 您想要在離開編輯畫面前儲存變更嗎？
 

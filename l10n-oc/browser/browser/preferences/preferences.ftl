@@ -75,21 +75,6 @@ restart-later = Reaviar mai tard
 
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
-extension-controlled-password-saving = Una extension, <img data-l10n-name="icon"/> { $name }, contraròtla aqueste paramètre.
-# This string is shown to notify the user that their notifications permission
-# is being controlled by an extension.
-extension-controlled-web-notifications = Una extension, <img data-l10n-name="icon"/>{ $name }, contraròtla aqueste paramètre.
-# This string is shown to notify the user that Container Tabs
-# are being enabled by an extension.
-extension-controlled-privacy-containers = Una extension, <img data-l10n-name="icon"/> { $name }, requerís los onglets isolats.
-# This string is shown to notify the user that their content blocking "All Detected Trackers"
-# preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = Una extension, <img data-l10n-name="icon"/> { $name }, contraròtla aqueste paramètre.
-# This string is shown to notify the user that their proxy configuration preferences
-# are being controlled by an extension.
-extension-controlled-proxy-config = Una extension, <img data-l10n-name="icon"/>{ $name }, contraròtla lo biais que { -brand-short-name } se connecta a Internet.
-# This string is shown to notify the user that the password manager setting
-# is being controlled by an extension
 extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> contraròtla aqueste paramètre.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
@@ -128,9 +113,6 @@ is-not-default = { -brand-short-name } es pas vòstre navegador per defaut
 set-as-my-default-browser =
     .label = Definir per defaut…
     .accesskey = D
-startup-restore-previous-session =
-    .label = Restablir la session precedenta
-    .accesskey = s
 startup-restore-windows-and-tabs =
     .label = Dobrir las fenèstras e onglets precedents
     .accesskey = o
@@ -145,9 +127,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Dobrir los ligams dins d’onglets allòc de fenèstras
     .accesskey = f
-warn-on-close-multiple-tabs =
-    .label = Vos avisar en tampar d'onglets multiples
-    .accesskey = m
 confirm-on-close-multiple-tabs =
     .label = Confirmar abans la tampadura de mantun onglet
     .accesskey = a
@@ -201,7 +180,6 @@ containers-remove-cancel-button = Suprimir pas aqueste contenedor
 ## General Section - Language & Appearance
 
 language-and-appearance-header = Lenga e aparéncia
-fonts-and-colors-header = Poliças e colors
 preferences-web-appearance-header = Aparéncia dels sites web
 preferences-web-appearance-description = D’unes sites web adaptan lor jòc de colors segon vòstras preferéncias. Causissètz lo jòc de colors que volètz emplegar per aqueles sites.
 preferences-web-appearance-choice-browser = Tèma de { -brand-short-name }
@@ -231,6 +209,7 @@ preferences-web-appearance-override-warning = Vòstras seleccion de colors subre
 # to adapt to your language, but should not be changed.
 preferences-web-appearance-footer = Gerissètz los tèmas de { -brand-short-name } dins <a data-l10n-name="themes-link">Extensions e tèma</a>
 preferences-colors-header = Colors
+preferences-colors-description = Subrecargar las colors per defaut de { -brand-short-name } pels tèxtes, rèireplans de site web e los ligams.
 preferences-colors-manage-button =
     .label = Gestion de las colors…
     .accesskey = c
@@ -242,9 +221,6 @@ default-font-size = Talha
 advanced-fonts =
     .label = Avançat…
     .accesskey = A
-colors-settings =
-    .label = Colors…
-    .accesskey = C
 # Zoom is a noun, and the message is used as header for a group of options
 preferences-zoom-header = Zoom
 preferences-default-zoom = Zoom per defaut
@@ -289,6 +265,8 @@ files-and-applications-title = Fichièrs e aplicacions
 download-header = Telecargaments
 download-save-to =
     .label = Enregistrar los fichièrs dins lo dossièr
+    .accesskey = n
+download-save-where = Enregistrar los fichièrs dins lo dossièr
     .accesskey = n
 download-choose-folder =
     .label =
@@ -379,6 +357,10 @@ applications-use-os-default-label =
 
 ##
 
+applications-handle-new-file-types-description = Qué deu far { -brand-short-name } amb los autres fichièrs ?
+applications-save-for-new-types =
+    .label = Enregistrar los fichièrs
+    .accesskey = E
 applications-ask-before-handling =
     .label = Demandar se cal dobrir o salvar los fichièrs
     .accesskey = D
@@ -538,11 +520,6 @@ home-prefs-content-header = Contengut de la pagina d’acuèlh de Firefox
 home-prefs-content-description = Causissètz lo contengut que volètz a la pagina d’acuèlh de Fireofx.
 home-prefs-search-header =
     .label = Recèrca web
-home-prefs-topsites-header =
-    .label = Sites populars
-home-prefs-topsites-description = Los sites que visitatz mai sovent
-home-prefs-topsites-by-option-sponsored =
-    .label = Sites pairinejats
 home-prefs-shortcuts-header =
     .label = Acorchis
 home-prefs-shortcuts-description = Los sites qu’enregistratz o consultatz
@@ -554,7 +531,6 @@ home-prefs-shortcuts-by-option-sponsored =
 
 home-prefs-recommended-by-header =
     .label = Recomandat per { $provider }
-home-prefs-recommended-by-description-update = Contengut excepcional de pertot del web, seleccionat per { $provider }
 home-prefs-recommended-by-description-new = Contengut excepcional seleccionat per { $provider }, membre de la familha { -brand-product-name }
 
 ##
@@ -562,9 +538,6 @@ home-prefs-recommended-by-description-new = Contengut excepcional seleccionat pe
 home-prefs-recommended-by-learn-more = Cossí fonciona
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Articles pairinejats
-home-prefs-highlights-header =
-    .label = Notables
-home-prefs-highlights-description = Una seleccion de sites qu’avètz enregistrats o visitats
 home-prefs-highlights-option-visited-pages =
     .label = Paginas visitadas
 home-prefs-highlights-options-bookmarks =
@@ -582,7 +555,6 @@ home-prefs-recent-activity-description = Una seleccion de sites e contenguts rec
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = Extraches
-home-prefs-snippets-description = Actualitat de { -vendor-short-name } e { -brand-product-name }
 home-prefs-snippets-description-new = Astúcias e novetats de { -vendor-short-name } e { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
@@ -915,18 +887,10 @@ sitedata-block-desc = Tipe de contengut blocat
     .accesskey = T
 sitedata-option-block-cross-site-trackers =
     .label = Traçadors intersites
-sitedata-option-block-cross-site-and-social-media-trackers =
-    .label = Traçadors intersites e de malhums socials
-sitedata-option-block-cross-site-tracking-cookies-including-social-media =
-    .label = Cookies de seguiment intersites — inclutz los cookies de mèdias socials
-sitedata-option-block-cross-site-cookies-including-social-media =
-    .label = Cookies intersites — inclutz los cookies de mèdias socials
 sitedata-option-block-cross-site-tracking-cookies =
     .label = Cookies de seguiment entre sites
 sitedata-option-block-cross-site-cookies =
     .label = Los traçadors intersites, e isolar los cookies intersites demorants
-sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
-    .label = Los traçadors intersites e de malhums socials e isolar los cookies restants
 sitedata-option-block-unvisited =
     .label = Cookies de sites pas visitats
 sitedata-option-block-all-third-party =
@@ -1016,7 +980,6 @@ content-blocking-etp-standard-tcp-rollout-checkbox =
 content-blocking-etp-standard-tcp-rollout-description = La proteccion totala contra los cookies los reten al site ont vos trobatz, doncas los traçadors los pòdon pas utilizar per vos pistar de site en site.
 content-blocking-etp-standard-tcp-rollout-learn-more = Ne saber mai
 content-blocking-warning-title = Atencion !
-content-blocking-and-isolating-etp-warning-description = Lo blocatge de traçadors e l’isolacion dels cookies pòdon aver una incidéncia sus las foncionalitats de certans sites. Tornatz cargar una pagina amb los traçadors per cargar tot lo contengut.
 content-blocking-and-isolating-etp-warning-description-2 = Aqueste paramètre pòt menar unes sites web a s’afichar mal o a quitar de s’afichar corrèctament. Se un site sembla copat, ensajatz d’aturar la proteccion contra lo seguiment per aquel site per que cargue tot lo contengut.
 content-blocking-warning-learn-how = M’ensenhar cossí far
 content-blocking-reload-description = Car tornar cargar los onglets per aplicar aquestas modificacions.
@@ -1088,9 +1051,6 @@ permissions-autoplay-settings =
 permissions-block-popups =
     .label = Blocar las fenèstras sorgissentas
     .accesskey = B
-permissions-block-popups-exceptions =
-    .label = Excepcions…
-    .accesskey = E
 # "popup" is a misspelling that is more popular than the correct spelling of
 # "pop-up" so it's included as a search keyword, not displayed in the UI.
 permissions-block-popups-exceptions-button =

@@ -30,6 +30,7 @@ pocket-panel-saved-saving-tags = Salvataggio…
 pocket-panel-saved-suggested-tags = Etichette suggerite
 pocket-panel-saved-tags-saved = Aggiunte etichette
 pocket-panel-signup-view-list = Visualizza elenco
+
 # This is displayed above a field where the user can add tags
 pocket-panel-signup-add-tags = Aggiungi etichette:
 
@@ -72,6 +73,5 @@ pocket-panel-header-sign-in = Accedi
 ## Pocket panel buttons
 
 pocket-panel-button-show-all = Visualizza tutto
-pocket-panel-button-add-tags = Aggiungi etichette
 pocket-panel-button-activate = Attiva { -pocket-brand-name } in { -brand-product-name }
 pocket-panel-button-remove = Rimuovi

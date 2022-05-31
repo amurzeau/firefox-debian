@@ -124,14 +124,21 @@ about-addressbook-confirm-delete-contacts =
 
 ## Details
 
+about-addressbook-search-action-button = Rechercher
 about-addressbook-begin-edit-contact-button = Modifier
+about-addressbook-delete-edit-contact-button = Supprimer
 about-addressbook-cancel-edit-contact-button = Annuler
 about-addressbook-save-edit-contact-button = Enregistrer
+about-addressbook-add-contact-to = Ajouter à :
 about-addressbook-details-email-addresses-header = Adresses électroniques
 about-addressbook-details-phone-numbers-header = Numéros de téléphone
 about-addressbook-details-home-address-header = Adresse personnelle
 about-addressbook-details-work-address-header = Adresse professionnelle
+about-addressbook-details-addresses-header = Adresses
+about-addressbook-details-notes-header = Notes
 about-addressbook-details-other-info-header = Autres informations
+about-addressbook-entry-type-home = Accueil
+about-addressbook-entry-type-fax = Fax
 about-addressbook-unsaved-changes-prompt-title = Modifications non enregistrées
 about-addressbook-unsaved-changes-prompt = Voulez-vous enregistrer vos modifications avant de quitter la vue d’édition ?
 

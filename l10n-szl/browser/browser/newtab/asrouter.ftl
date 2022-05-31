@@ -67,9 +67,6 @@ cfr-doorhanger-extension-total-users =
        *[many] { $total } użytkownikōw
     }
 
-## These messages are steps on how to use the feature and are shown together.
-
-
 ## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = Miyj swoje zokłodki wszyńdzie zsynchrōnizowane.
@@ -97,26 +94,6 @@ cfr-whatsnew-button =
 
 cfr-whatsnew-release-notes-link-text = Poczytej informacyje ô wydaniu
 
-## Search Bar
-
-## Search bar
-
-## Picture-in-Picture
-
-## Permission Prompt
-
-## Fingerprinter Counter
-
-## Bookmark Sync
-
-## Login Sync
-
-## Send Tab
-
-## Firefox Send
-
-## Social Tracking Protection
-
 ## Enhanced Tracking Protection Milestones
 
 # Variables:
@@ -130,25 +107,8 @@ cfr-doorhanger-milestone-heading2 =
     }
 cfr-doorhanger-milestone-ok-button = Pokoż wszyskie
     .accesskey = P
-
-## What’s New Panel Content for Firefox 76
-
-
-## Lockwise message
-
-## Vulnerable Passwords message
-
-## Picture-in-Picture fullscreen message
-
-## Protections Dashboard message
-
-## Better PDF message
-
 cfr-doorhanger-milestone-close-button = Zawrzij
     .accesskey = Z
-
-## What’s New Panel Content for Firefox 76
-## Protections Dashboard message
 
 ## DOH Message
 
@@ -168,18 +128,6 @@ cfr-doorhanger-fission-primary-button = OK, rozumia
 cfr-doorhanger-fission-secondary-button = Przewiydz sie wiyncyj
     .accesskey = P
 
-## What's new: Cookies message
-
-## What's new: Media controls message
-
-## What's new: Search shortcuts
-
-## What's new: Cookies protection
-
-## What's new: Better bookmarking
-
-## What's new: Cross-site cookie tracking
-
 ## Full Video Support CFR message
 
 cfr-doorhanger-video-support-body = Przi tyj wersyji aplikacyje { -brand-short-name } filmy na tyj strōnie mogōm sie niy puszczać dobrze. Zaktualizuj aplikacyjo { -brand-short-name }, coby mieć pōłno ôbsuga filmōw.
@@ -187,9 +135,50 @@ cfr-doorhanger-video-support-header = Zaktualizuj aplikacyjo { -brand-short-name
 cfr-doorhanger-video-support-primary-button = Aktualizuj teroz
     .accesskey = A
 
+## Spotlight modal shared strings
+
+spotlight-learn-more-collapsed = Przewiydz sie wiyncyj
+    .title = Rozszyrz, coby przewiedzieć sie wiyncyj ô tyj funkcyji
+spotlight-learn-more-expanded = Przewiydz sie wiyncyj
+    .title = Zawrzij
+
 ## VPN promotion dialog for public Wi-Fi users
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
 ## to the Mozilla VPN page and a link to dismiss the dialog.
 
+# This header text can be explicitly wrapped.
+spotlight-public-wifi-vpn-header = Zdo sie, iże używosz publicznego necu Wi-Fi
+spotlight-public-wifi-vpn-body = Coby skryć informacyje ô swojim placu i przeglōndaniu, rozwoż wirtualny prywatny nec. Pōmoże ci ôstać pod ôchrōnōm, jak przeglōndosz w publicznych placach: lotniskach abo kafyjach.
+spotlight-public-wifi-vpn-primary-button = Chrōń przywatność z usugōm { -mozilla-vpn-brand-name }
+    .accesskey = C
+spotlight-public-wifi-vpn-link = Niy teroz
+    .accesskey = N
+
+## Total Cookie Protection Rollout
+
+# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
+# "Join an early experiment". This header text can be explicitly wrapped.
+spotlight-total-cookie-protection-header =
+    Sprōbuj naszyj nojsiylniyjszyj
+    funkcyji do ôchrōny prywatności
+spotlight-total-cookie-protection-body = Połno ôchrōna cookies zastawio śledzōnce elymynty, coby niy używały cookies do śledzynio cie po internecie.
+# "Early access" for this feature rollout means it's a "feature preview" or
+# "soft launch" as not everybody will get it yet.
+spotlight-total-cookie-protection-expanded = { -brand-short-name } buduje naôbkoło cookies płot, bez co ôstowajōm na strōnie, na keryj żeś je, tak co sledzōnce elymynty niy mogōm ich użyć do śledzynio cie. Jak załōnczysz ta fōnkcyjo, to pōmożesz jōm zôptymalizować, tak co poradzymy durch budować lepszy internet do wszyskich.
+spotlight-total-cookie-protection-primary-button = Załōncz połno ôchrōna cookies
+spotlight-total-cookie-protection-secondary-button = Niy teroz
+
+## Emotive Continuous Onboarding
+
+spotlight-better-internet-header = Lepszy internet zaczyno sie ôd ciebie
+spotlight-better-internet-body = Jak używosz aplikacyje { -brand-short-name }, to welujesz ôtwarty, dostympniyjszy internet, co je lepszy do wszyskich.
+spotlight-peace-mind-header = Dowōmy na ciebie pozōr
+spotlight-peace-mind-body = Kożdy miesiōnc { -brand-short-name } szperuje kole 3,000 śledzōncych elymyntōw na użytkownika. Bo nic, a ôsobliwie niy takie detajle jak sledzōnce elymynty, niy śmiōm stoć miyndzy tobōm a dobrym internetym.
+spotlight-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Trzimej w Docku
+       *[other] Przipnij do poska ze zadaniami
+    }
+spotlight-pin-secondary-button = Niy teroz

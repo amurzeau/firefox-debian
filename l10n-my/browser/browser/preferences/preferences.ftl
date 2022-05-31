@@ -51,14 +51,6 @@ restart-later = နောက်မှ ပြန်ဖွင့်ပါ
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that Container Tabs
-# are being enabled by an extension.
-extension-controlled-privacy-containers = ပေါင်းထည့်ဆော့ဖ်ဝဲ <img data-l10n-name="icon"/>{ $name } သည် ကွန်တန်နာတပ်ဗ်ကို လိုအပ်သည်။
-
-# This string is shown to notify the user that their proxy configuration preferences
-# are being controlled by an extension.
-extension-controlled-proxy-config = ပေါင်းထည့်ဆော့ဖ်ဝဲ <img data-l10n-name="icon"/>{ $name } သည် { -brand-short-name } ၏ အင်တာနက်ချိတ်ဆက်ပုံကို ထိန်းချုပ်နေသည်။
-
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -87,10 +79,6 @@ set-as-my-default-browser =
     .label = စံသတ်မှတ်...
     .accesskey = D
 
-startup-restore-previous-session =
-    .label = ယခင်အသုံးပြုခဲ့သည်များကို ပြန်ဖွင့်ပါ
-    .accesskey = s
-
 startup-restore-warn-on-quit =
     .label = ဘရောက်ဇာပိတ်လျှင်အသိပေးပါ
 
@@ -106,10 +94,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = လင့်ခ်များကို ဝင်းဒိုးများတွင်ဖွင့်မည့်အစား တပ်ဗ်ထဲတွင် ဖွင့်ပါ
     .accesskey = W
-
-warn-on-close-multiple-tabs =
-    .label = တပ်ဗ်အများကြီးကို ပိတ်ပါက သတိပေးပါ
-    .accesskey = m
 
 warn-on-open-many-tabs =
     .label = { -brand-short-name } အား နှေးသွားစေမည် တပ်ဗ်အများကြီးအား ဖွင့်ပါ ကသတိပေးပါ
@@ -144,12 +128,9 @@ containers-remove-alert-msg = ယခုကွန်တိန်နာကို �
 containers-remove-ok-button = ကွန်တိုင်အား ဖယ်ပါ
 containers-remove-cancel-button = ကွန်တိုင်အား မဖယ်ပါနှင့်
 
-
 ## General Section - Language & Appearance
 
 language-and-appearance-header = ဘာသာစကားနှင့် အသွင်အပြင်
-
-fonts-and-colors-header = ဖောင့်များ & အရောင်များ
 
 default-font = မူသေ ဖောင့်
     .accesskey = D
@@ -159,10 +140,6 @@ default-font-size = အရွယ်အ​စား
 advanced-fonts =
     .label = အဆင့်မြင့်…
     .accesskey = A
-
-colors-settings =
-    .label = အရောင်များ...
-    .accesskey = C
 
 language-header = ဘာသာစကား
 
@@ -201,6 +178,9 @@ download-header = ဆွဲယူထားသည့် ဖိုင်မျာ�
 
 download-save-to =
     .label = ဖိုင်များကို ထိုနေရာတွင် သိမ်းရန်
+    .accesskey = v
+
+download-save-where = ဖိုင်များကို ထိုနေရာတွင် သိမ်းရန်
     .accesskey = v
 
 download-choose-folder =
@@ -443,9 +423,6 @@ choose-bookmark =
 
 ## Home Section - Firefox Home Content Customization
 
-home-prefs-topsites-header =
-    .label = ထိပ်တန်းဝဘ်ဆိုက်များ
-
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
@@ -456,8 +433,6 @@ home-prefs-recommended-by-header =
 
 home-prefs-recommended-by-learn-more = ဘယ်လိုအလုပ်လုပ်လဲ
 
-home-prefs-highlights-header =
-    .label = ဦးစားပေးအကြောင်းအရာများ
 home-prefs-highlights-option-visited-pages =
     .label = လည်ပတ်ခဲ့သည့်စာမျက်နှာများ
 home-prefs-highlights-options-bookmarks =
@@ -473,7 +448,6 @@ home-prefs-highlights-option-saved-to-pocket =
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = မှတ်စုတိုများ
-home-prefs-snippets-description = { -vendor-short-name } နှင့် { -brand-product-name } မှ အပ်ဒိတ်များ
 
 home-prefs-sections-rows-option =
     .label =
@@ -853,10 +827,6 @@ permissions-notification-pause =
 permissions-block-popups =
     .label = ပေါ့အပ်ဝင်းဒိုးများကို မဖွင့်ပါနှင့်
     .accesskey = B
-
-permissions-block-popups-exceptions =
-    .label = ခြွင်းချက်များ...
-    .accesskey = E
 
 permissions-addon-install-warning =
     .label = ဝဘ်ဆိုက်များက အတ်အွန်များ တပ်ဆင်လိုသည့်အခါ အသိပေးပါ

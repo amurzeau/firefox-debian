@@ -180,7 +180,6 @@ extensions-warning-update-security = Badanie bezpieczyństwa aktualizacyji rozsz
 extensions-warning-update-security-button = Załōncz
     .title = Załōncz badanie bezpieczyństwa aktualizacyje rozszyrzyń
 
-
 ## Strings connected to add-on updates
 
 addon-updates-check-for-updates = Badnij za aktualizacyjami
@@ -439,3 +438,25 @@ addons-heading-search-input =
 
 addon-page-options-button =
     .title = Noczynia do wszyskich rozszyrzyń
+
+## Detail notifications
+## Variables:
+##   $name (String): name of the add-on.
+
+# Variables:
+#   $version (String): application version.
+details-notification-incompatible = Rozszyrzynie { $name } je niykōmpatybilne z aplikacyjōm { -brand-short-name }{ $version }.
+
+details-notification-unsigned-and-disabled = Niy szło zweryfikować rozszyrzynio { $name } do użycio w aplikacyji { -brand-short-name }, beztōż je zastawiōne.
+details-notification-unsigned-and-disabled-link = Wiyncyj informacyji
+
+details-notification-unsigned = Niy szło zweryfikować rozszyrzynio { $name } do użycio w aplikacyji { -brand-short-name }. Używej go pozornie.
+details-notification-unsigned-link = Wiyncyj informacyji
+
+details-notification-blocked = Rozszyrzynie { $name } je zastawiōne skuli problymōw z bezpieczyństwym abo stabilnościōm.
+details-notification-blocked-link = Wiyncyj informacyji
+
+details-notification-softblocked = Wiadōmo, iże skuli rozszyrzynio { $name } sōm problymy z bezpieczyństwym abo stabilnościōm.
+details-notification-softblocked-link = Wiyncyj informacyji
+
+details-notification-gmp-pending = Rozszyrzynie { $name } chned bydzie zainstalowane.

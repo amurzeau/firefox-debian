@@ -124,12 +124,12 @@ openpgp-import-key-description = Móžośo wósobinske kluce importěrowaś, kó
 openpgp-import-key-info = Druga softwara mógła wósobinski kluc z alternatiwnymi zapśimjeśami wopisaś, na pśikład swójski kluc, pótajmny kluc abo klucowy por.
 
 #   $count (Number) - the number of keys found in the selected files
-openpgp-import-key-list-amount =
+openpgp-import-key-list-amount-2 =
     { $count ->
-        [one] Thunderbird jo namakał { $count } kluc, kótaryž dajo se importěrowaś.
-        [two] Thunderbird jo namakał { $count } kluca, kótarejž datoj se importěrowaś.
-        [few] Thunderbird jo namakał { $count } kluce, kótarež daju se importěrowaś.
-       *[other] Thunderbird jo namakał { $count } klucow, kótarež dajo se importěrowaś.
+        [one] { -brand-short-name } jo namakał { $count } kluc, kótaryž dajo se importěrowaś.
+        [two] { -brand-short-name } jo namakał { $count } kluca, kótarejž dajotej se importěrowaś.
+        [few] { -brand-short-name } jo namakał { $count } kluce, kótarež dajo se importěrowaś.
+       *[other] { -brand-short-name } jo namakał { $count } klucow, kótarež dajo se importěrowaś.
     }
 
 openpgp-import-key-list-description = Wobkšuśćo, kótare kluce maju waše wósobinske kluce byś. Jano kluce, kótarež sćo sam napórał a kótarež wašu identitu pokazuju, měli ako wósobinske kluce wužywaś. Móžośo toś te nastajenje pózdźe w dialogu klucowych kakosćow změniś.

@@ -4,6 +4,17 @@
 
 e2e-intro-description = Krüptitud või digiallkirjastatud kirjade saatmiseks pead seadistama krüptimistehnoloogia, kas OpenPGP või S/MIME.
 e2e-intro-description-more = OpenPGP lubamiseks vali oma isiklik võti või isiklik sert, et lubada S/MIME kasutamine. Isikliku võtme või serdi kasutamiseks pead omama ka vastavat salajast võtit.
+e2e-signing-description = Digiallkiri võimaldab adressaatidel kontrollida, kas sõnumi saatsid sina ja selle sisu pole muudetud. Krüptitud kirjad allkirjastatakse alati vaikimisi.
+e2e-sign-message =
+    .label = Krüptimata kirjad allkirjastatakse
+    .accesskey = p
+e2e-disable-enc =
+    .label = Uute kirjade krüptimine keelatakse
+    .accesskey = U
+e2e-enable-enc =
+    .label = Uute kirjade krüptimine lubatakse
+    .accesskey = l
+e2e-enable-description = Üksikute kirjade krüptimist on võimalik keelata.
 e2e-advanced-section = Täpsemad sätted
 e2e-attach-key =
     .label = OpenPGP allkirja lisamisel kaasatakse ka avalik võti
@@ -44,6 +55,8 @@ openpgp-generate-key =
 openpgp-advanced-prefs-button-label =
     .label = Edasijõudnuile...
 openpgp-keygen-desc = <a data-l10n-name="openpgp-keygen-desc-link">MÄRKUS: Võtme genereerimine võib aega võtta mõned minutid.</a> Genereerimise ajal ära sulge rakendust. Aktiivne veebilehitsemine või intensiivselt salvestusandmekandjate kasutamine võtme genereerimise ajal aitab täita juhuslikkuse kogumit ning protsessi kiirendada. Sind teavitatakse genereerimise protsessi lõppemisest.
+openpgp-key-created-label =
+    .label = Loodud
 openpgp-key-expiry-label =
     .label = Aegumine
 openpgp-key-id-label =
@@ -168,6 +181,11 @@ openpgp-key-man-reload =
 openpgp-key-man-change-expiry =
     .label = Muuda aegumiskuupäeva
     .accesskey = M
+openpgp-key-man-refresh-online =
+    .label = Värskenda võrgus
+    .accesskey = V
+openpgp-key-man-ignored-ids =
+    .label = E-posti aadressid
 openpgp-key-man-del-key =
     .label = Kustuta võtmed
     .accesskey = K
@@ -213,20 +231,31 @@ openpgp-key-man-select-all-key =
     .key = A
 openpgp-key-man-key-details-key =
     .key = I
+openpgp-ign-addr-intro = Nõustud selle võtme kasutamisega järgmiste e-posti aadresside jaoks:
 openpgp-key-details-title =
     .title = Võtme omadused
+openpgp-key-details-doc-title = Võtme omadused
 openpgp-key-details-signatures-tab =
     .label = Serdid
 openpgp-key-details-structure-tab =
     .label = Struktuur
 openpgp-key-details-uid-certified-col =
     .label = Kasutaja ID / Sertifitseerija
+openpgp-key-details-key-id-label = Võtme ID
 openpgp-key-details-user-id2-label = Väidetav võtme omanik
+openpgp-key-details-user-id3-label = Väidetav võtme omanik
 openpgp-key-details-id-label =
     .label = ID
 openpgp-key-details-key-type-label = Tüüp
 openpgp-key-details-key-part-label =
     .label = Võtme osa
+openpgp-key-details-attr-ignored = Hoiatus: see võti ei pruugi ootuspäraselt töötada, sest mõned selle atribuudid on ebaturvalises ja neid võidakse ignoreerida.
+openpgp-key-details-attr-upgrade-sec = Peaksid ebaturvalisi omadusi uuendama.
+openpgp-key-details-attr-upgrade-pub = Peaksid paluma selle võtme omanikul ebaturvalised omadused uuendada.
+openpgp-key-details-upgrade-unsafe =
+    .label = Uuenda ebaturvalised omadused
+    .accesskey = U
+openpgp-key-details-upgrade-ok = Võti uuendati edukalt. Peaksid jagama uuendatud avalikku võtit oma adressaatidega.
 openpgp-key-details-algorithm-label =
     .label = Algoritm
 openpgp-key-details-size-label =
@@ -244,7 +273,6 @@ openpgp-key-details-legend-secret-missing = Tähisega (!)  markeeritud võtmetel
 openpgp-key-details-sel-action =
     .label = Vali tegevus…
     .accesskey = V
-openpgp-key-details-also-known-label = Võtmeomaniku väidetavad alternatiivsed identiteedid:
 openpgp-card-details-close-window-label =
     .buttonlabelaccept = Sulge
 openpgp-acceptance-label =
@@ -260,7 +288,6 @@ openpgp-acceptance-verified-label =
 key-accept-personal =
     Selle võtme jaoks on sul olemas nii avalik kui ka salajane osa. Sa võid kasutada seda isikliku võtmena.
     Kui selle võtme andis sulle keegi teine, siis ära kasuta seda isikliku võtmena.
-key-personal-warning = Kas sa lõid selle võtme ise ja kuvatud võtme omandiõigus viitab sulle?
 openpgp-personal-no-label =
     .label = Ei, ära kasuta seda minu isikliku võtmena.
 openpgp-personal-yes-label =
@@ -270,13 +297,14 @@ openpgp-copy-cmd-label =
 
 ## e2e encryption settings
 
+#   $identity (String) - the email address of the currently selected identity
+openpgp-description-no-key = { -brand-short-name }il puudub isiklik OpenPGP võti aadressi <b>{ $identity }</b> jaoks
 #   $count (Number) - the number of configured keys associated with the current identity
 #   $identity (String) - the email address of the currently selected identity
-openpgp-description =
+openpgp-description-has-keys =
     { $count ->
-        [0] Thunderbirdil pole isiklikku OpenPGP võtit identiteedile <b>{ $identity }</b>
-        [one] Thunderbird leidis ühe identiteediga <b>{ $identity }</b> seotud OpenPGP võtme
-       *[other] Thunderbird leidis { $count } identiteediga <b>{ $identity }</b> seotud OpenPGP võtit
+        [one] { -brand-short-name } leidis { $count } identiteediga <b>{ $identity }</b> seotud isikliku OpenPGP võtme
+       *[other] { -brand-short-name } leidis { $count } identiteediga <b>{ $identity }</b> seotud isiklikku OpenPGP võtit
     }
 #   $key (String) - the currently selected OpenPGP key
 openpgp-selection-status-have-key = Sinu praegune seadistus kasutab võtit IDga <b>{ $key }</b>
@@ -334,13 +362,11 @@ key-expired-date = Võti aegus { $keyExpiry }
 key-expired-simple = Võti on aegunud
 key-revoked-simple = Võti tühistati
 key-do-you-accept = Kas tunnustad seda võtit digiallkirjade kontrollimiseks ja kirjade krüptimiseks?
-key-accept-warning = Väldi võlts võtmete tunnustamist. Kasuta oma kontakti võtme sõrmejälje kontrollimiseks muud suhtluskanalit peale e-posti.
+key-verification = Kontrolli võtme sõrmejälge, kasutades muud turvalist sidekanalit peale e-posti, veendumaks, et see on tõesti aadressi { $addr } võti.
 # Strings enigmailMsgComposeOverlay.js
 cannot-use-own-key-because = Kirja saatmine pole võimalik, sest esineb probleem sinu isikliku võtmega. { $problem }
 cannot-encrypt-because-missing = Otspunktkrüptitud kirja pole võimalik saata, sest järgnevate saajate võtmetega on probleeme: { $problem }
 window-locked = Koostamise aken on lukus, saatmine katkestati
-# Strings in mimeDecrypt.jsm
-mime-decrypt-encrypted-part-attachment-label = Krüptitud kirja osa
 # Strings in mimeDecrypt.jsm
 mime-decrypt-encrypted-part-concealed-data = See on krüptitud kirja osa. Selle avamiseks eraldi aknas pead klõpsama manusel.
 # Strings in keyserver.jsm
@@ -364,25 +390,6 @@ converter-decrypt-body-failed =
     Kirja pealkirjaga { $subject }
     polnud võimalik dekrüptida.
     Kas soovid proovida teise parooliga või jätta selle kirja vahele?
-# Strings in gpg.jsm
-unknown-signing-alg = Tundmatu allkirjastamisalgoritm (ID: { $id })
-unknown-hash-alg = Tundmatu krüptograafiline räsi (ID: { $id })
-# Strings in keyUsability.jsm
-expiry-key-expires-soon =
-    Sinu võti { $desc } aegub vähem kui { $days } päeva pärast.
-    Me soovitame luua uue võtmepaari ja seadistada vastavad kontod seda kasutama.
-expiry-keys-expire-soon =
-    Sinu järgmised võtmed aeguvad vähem kui { $days } päeva pärast: { $desc }
-    Me soovitame luua uued võtmed ja seadistada vastavad kontod neid kasutama.
-expiry-key-missing-owner-trust =
-    Sinu salajasel võtmel { $desc } puudub usaldusväärsus.
-    Me soovitame, et määrad võtme omaduste juures sektsioonis "Sinu tunnustus" väärtuseks "Jah, käsitle seda võtit minu isikliku võtmena".
-expiry-keys-missing-owner-trust =
-    Järgmistel sinu salajastel võtmetel puudub usaldusväärsus.
-    { $desc }
-    Me soovitame, et määrad võtme omaduste juures sektsioonis "Sinu tunnustus" väärtuseks "Jah, käsitle seda võtit minu isikliku võtmena".
-expiry-open-key-manager = Ava OpenPGP võtmehaldur
-expiry-open-key-properties = Ava võtme omadused
 # Strings filters.jsm
 filter-folder-required = Sa pead valima sihtkausta.
 filter-decrypt-move-warn-experimental =
@@ -498,6 +505,9 @@ key-error-not-accepted-as-personal = Sa pole kinnitanud, et võti IDga ‘{ $key
 need-online = Valitud funktsionaalsus pole võrguta režiimis saadaval. Palun ühendu võrku ja proovi siis uuesti.
 # Strings used in keyRing.jsm & keyLookupHelper.jsm
 no-key-found = Me ei leidnud otsingule vastavat võtit.
+# Strings used in keyRing.jsm & keyLookupHelper.jsm
+no-key-found2 = Me ei leidnud otsingule vastavat kasutatavat võtit.
+no-update-found = Sul on juba võrgust leitud võtmed olemas.
 # Strings used in keyRing.jsm & GnuPGCryptoAPI.jsm
 fail-key-extract = Viga - võtme eksportimise käsk ebaõnnestus
 # Strings used in keyRing.jsm
@@ -583,18 +593,9 @@ send-to-news-warning =
     Seda ei soovitata teha, sest see on mõttekas ainult siis, kui kõik grupi liikmed saavad kirja dekrüptida (st, et kiri peaks olema krüptitud kõigi grupiliikmete võtmetega). Palun saada see kiri ainult siis, kui tead, mida teed.
     Kas jätkata?
 save-attachment-header = Salvesta dekrüptitud manus
-no-temp-dir =
-    Ajutist kausta, kuhu kirjutada, ei leitud
-    Palun määra keskkonnamuutuja TEMP
 possibly-pgp-mime = Võimalik PGP/MIME krüptitud või allkirjastatud kiri, kontrollimiseks kasuta ‘dekrüptimise/kontrollimise’ funktsionaalsust
 cannot-send-sig-because-no-own-key = Seda kirja pole võimalik digitaalselt allkirjastada, sest sa pole veel seadistanud otspunktkrüptimist võtme <{ $key }> jaoks
 cannot-send-enc-because-no-own-key = Seda kirja pole võimalik krüptitult saata, sest sa pole veel seadistanud otspunktkrüptimist võtme <{ $key }> jaoks
-compose-menu-attach-key =
-    .label = Lisa minu avalik võti
-    .accesskey = L
-compose-menu-encrypt-subject =
-    .label = Teema krüptimine
-    .accesskey = T
 # Strings used in decryption.jsm
 do-import-multiple =
     Kas importida järgnevad võtmed?

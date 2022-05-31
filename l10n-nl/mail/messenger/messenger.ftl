@@ -87,10 +87,6 @@ menu-file-save-as-file =
 
 ## AppMenu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-appmenu-preferences =
-    .label = Voorkeuren
 appmenu-save-as-file =
     .label = Bestand…
 appmenu-settings =
@@ -129,6 +125,22 @@ message-header-msg-flagged =
     .aria-label = Met ster
 message-header-msg-not-flagged =
     .title = Niet met ster gemarkeerd bericht
+
+## Message header cutomize panel
+
+message-header-customize-panel-title = Instellingen berichtkop
+message-header-customize-button-style =
+    .value = Knopstijl
+    .accesskey = K
+message-header-button-style-default =
+    .label = Pictogrammen en tekst
+message-header-button-style-text =
+    .label = Tekst
+message-header-button-style-icons =
+    .label = Pictogrammen
+message-header-large-subject =
+    .label = Groot onderwerp
+    .accesskey = n
 
 ## Action Button Context Menu
 
@@ -172,24 +184,6 @@ decrypt-and-copy-failures = { $failures } van { $total } berichten kunnen niet w
 
 ## Spaces toolbar
 
-spaces-toolbar =
-    .toolbarname = Taakbalk
-spaces-toolbar-button-mail =
-    .title = Wisselen naar het e-mailtabblad
-spaces-toolbar-button-address-book =
-    .title = Wisselen naar het adresboektabblad
-spaces-toolbar-button-calendar =
-    .title = Wisselen naar het agendatabblad
-spaces-toolbar-button-tasks =
-    .title = Wisselen naar het takentabblad
-spaces-toolbar-button-chat =
-    .title = Wisselen naar het chattabblad
-spaces-toolbar-button-settings =
-    .title = Wisselen naar het instellingentabblad
-spaces-toolbar-button-collapse =
-    .title = Taakbalk samenvouwen
-spaces-toolbar-button-reveal =
-    .title = Taakbalk tonen
 spaces-toolbar-element =
     .toolbarname = Taakbalk
     .aria-label = Taakbalk
@@ -226,6 +220,12 @@ settings-context-open-account-settings-item =
     .label = Accountinstellingen openen
 settings-context-open-addons-item =
     .label = Add-ons en thema’s openen
+settings-context-open-settings-item2 =
+    .label = Instellingen
+settings-context-open-account-settings-item2 =
+    .label = Accountinstellingen
+settings-context-open-addons-item2 =
+    .label = Add-ons en thema’s
 
 ## Spaces toolbar pinned tab menupopup
 
@@ -241,8 +241,6 @@ spaces-pinned-button-menuitem-tasks =
     .label = { spaces-toolbar-button-tasks.title }
 spaces-pinned-button-menuitem-chat =
     .label = { spaces-toolbar-button-chat.title }
-spaces-pinned-button-menuitem-reveal =
-    .label = { spaces-toolbar-button-reveal.title }
 spaces-pinned-button-menuitem-settings =
     .label = { spaces-toolbar-button-settings2.title }
 spaces-pinned-button-menuitem-show =
@@ -258,7 +256,7 @@ chat-button-unread-messages = { $count }
 
 ## Spaces toolbar customize panel
 
-spaces-context-customize =
+menuitem-customize-label =
     .label = Aanpassen…
 spaces-customize-panel-title = Taakbalkinstellingen
 spaces-customize-background-color = Achtergrondkleur
@@ -271,5 +269,5 @@ spaces-customize-accent-background-color = Achtergrondkleur van geselecteerde kn
 spaces-customize-accent-text-color = Kleur geselecteerde knop
 spaces-customize-button-restore = Standaardwaarden herstellen
     .accesskey = h
-spaces-customize-button-save = Gereed
+customize-panel-button-save = Gereed
     .accesskey = G

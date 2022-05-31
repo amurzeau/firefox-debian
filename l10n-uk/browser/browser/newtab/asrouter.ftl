@@ -12,25 +12,33 @@ cfr-doorhanger-feature-heading = Рекомендована функція
 
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Чому я це бачу?
+
 cfr-doorhanger-extension-cancel-button = Не зараз
     .accesskey = е
+
 cfr-doorhanger-extension-ok-button = Додати
     .accesskey = т
+
 cfr-doorhanger-extension-manage-settings-button = Керувати налаштуваннями рекомендацій
     .accesskey = К
+
 cfr-doorhanger-extension-never-show-recommendation = Не показувати цю рекомендацію
     .accesskey = Н
+
 cfr-doorhanger-extension-learn-more-link = Докладніше
+
 # This string is used on a new line below the add-on name
 # Variables:
 #   $name (String) - Add-on author name
 cfr-doorhanger-extension-author = від { $name }
+
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Рекомендація
 cfr-doorhanger-extension-notification2 = Рекомендація
     .tooltiptext = Рекомендація розширень
     .a11y-announcement = Доступна рекомендація розширень
+
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-feature-notification = Рекомендація
@@ -79,9 +87,11 @@ cfr-protections-panel-link-text = Докладніше
 # This string is used by screen readers to offer a text based alternative for
 # the notification icon
 cfr-badge-reader-label-newfeature = Нова функція:
+
 cfr-whatsnew-button =
     .label = Що нового
     .tooltiptext = Що нового
+
 cfr-whatsnew-release-notes-link-text = Ознайомитися з інформацією про випуск
 
 ## Enhanced Tracking Protection Milestones
@@ -163,7 +173,7 @@ spotlight-total-cookie-protection-secondary-button = Не зараз
 ## Emotive Continuous Onboarding
 
 spotlight-better-internet-header = Кращий Інтернет починається з вас
-spotlight-better-internet-body = Коли ви використовуєте { -brand-short-name }, ви голосуєте за відкритий і доступний інтернет, кращий для всіх.
+spotlight-better-internet-body = Коли ви користуєтеся { -brand-short-name }, ви підтримуєте відкритий і доступний інтернет, кращий для всіх.
 spotlight-peace-mind-header = Ми прикриваємо вас
 spotlight-peace-mind-body = Щомісяця { -brand-short-name } блокує в середньому понад 3000 елементів стеження на користувача. Тому що ніщо, особливо такі проблеми приватності, як елементи стеження, не повинні стояти між вами та хорошим інтернетом.
 spotlight-pin-primary-button =

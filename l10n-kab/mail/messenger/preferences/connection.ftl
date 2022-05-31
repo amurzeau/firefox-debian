@@ -26,8 +26,14 @@ connection-dialog-window =
            *[other] width: 49em !important
         }
 
-connection-disable-extension =
-    .label = Sens aseɣzif
+disable-extension-button = Sens asiɣzef
+
+# Variables:
+#   $name (String) - The extension that is controlling the proxy settings.
+#
+# The extension-icon is the extension's icon, or a fallback image. It should be
+# purely decoration for the actual extension name, with alt="".
+proxy-settings-controlled-by-extension = Azegrir, <img data-l10n-name="extension-icon" alt="" />{ $name }, isefrak amek { -brand-short-name } ad iqqen γer internet.
 
 connection-proxy-legend = Tawila n uqeddac apṛuksi n unekcum ar Internet
 

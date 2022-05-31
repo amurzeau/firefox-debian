@@ -124,14 +124,14 @@ openpgp-import-key-description = Gallwch fewnforio allweddi personol a gafodd eu
 openpgp-import-key-info = Gall meddalwedd arall ddisgrifio allwedd bersonol gan ddefnyddio termau amgen fel eich allwedd eich hun, allwedd gyfrinachol, allwedd breifat neu bar o allweddi.
 
 #   $count (Number) - the number of keys found in the selected files
-openpgp-import-key-list-amount =
+openpgp-import-key-list-amount-2 =
     { $count ->
-        [zero] Daeth Thunderbird o hyd i allweddi { $count } y mae modd eu mewnforio.
-        [one] Daeth Thunderbird o hyd i allweddi { $count } y mae modd eu mewnforio.
-        [two] Daeth Thunderbird o hyd i allweddi { $count } y mae modd eu mewnforio.
-        [few] Daeth Thunderbird o hyd i allweddi { $count } y mae modd eu mewnforio.
-        [many] Daeth Thunderbird o hyd i allweddi { $count } y mae modd eu mewnforio.
-       *[other] Daeth Thunderbird o hyd i allweddi { $count } y mae modd eu mewnforio.
+        [zero] Daeth { -brand-short-name } o hyd i { $count } allweddi y mae modd eu mewnforio.
+        [one] Daeth { -brand-short-name } o hyd i un allwedd y mae modd ei fewnforio.
+        [two] Daeth { -brand-short-name } o hyd i { $count } allweddi y mae modd eu mewnforio.
+        [few] Daeth { -brand-short-name } o hyd i { $count } allweddi y mae modd eu mewnforio.
+        [many] Daeth { -brand-short-name } o hyd i { $count } allweddi y mae modd eu mewnforio.
+       *[other] Daeth { -brand-short-name } o hyd i { $count } allweddi y mae modd eu mewnforio.
     }
 
 openpgp-import-key-list-description = Cadarnhewch pa allweddi y mae modd eu trin fel eich allweddi personol. Dim ond allweddi y gwnaethoch chi eu creu eich hun ac sy'n dangos eich hunaniaeth eich hun y dylid eu defnyddio fel allweddi personol. Gallwch newid yr dewis hwn yn nes ymlaen yn y dialog Priodweddau Allweddi.

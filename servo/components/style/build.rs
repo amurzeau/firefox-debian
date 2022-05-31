@@ -8,7 +8,6 @@ extern crate lazy_static;
 use std::env;
 use std::path::Path;
 use std::process::{exit, Command};
-use rustc_version::{version, Version};
 use walkdir::WalkDir;
 
 #[cfg(feature = "gecko")]
@@ -89,7 +88,4 @@ fn main() {
     println!("cargo:out_dir={}", env::var("OUT_DIR").unwrap());
     generate_properties(engine);
     build_gecko::generate();
-    if version().unwrap() < Version::parse("1.57.0-alpha").unwrap() {
-        println!("cargo:rustc-cfg=try_reserve");
-    }
 }

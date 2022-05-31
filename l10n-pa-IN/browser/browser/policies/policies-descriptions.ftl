@@ -13,6 +13,7 @@
 policy-3rdparty = ਉਹ ਨੀਤੀਆਂ ਸੈਟ ਕਰੋ ਜੋ WebExtensions chrome.storage.managed ਰਾਹੀਂ ਪ੍ਰਾਪਤ ਕਰ ਸਕਦੀਆਂ ਹਨ।
 policy-AllowedDomainsForApps = Google Workspace ਲਈ ਪਹੁੰਚ ਵਾਸਤੇ ਇਜਾਜ਼ਤ ਦਿੱਤੀਆਂ ਡੋਮੇਨਾਂ ਦੀ ਪਰਿਭਾਸ਼ਾ।
 policy-AppAutoUpdate = ਆਪਣੇ-ਆਪ ਐਪਲੀਕੇਸ਼ਨ ਅੱਪਡੇਟ ਨੂੰ ਸਮਰੱਥ ਜਾਂ ਅਸਮਰੱਥ ਕਰੋ।
+policy-AppUpdatePin = { -brand-short-name } ਨੂੰ ਖਾਸ ਵਰਜ਼ਨ ਤੋਂ ਅੱਗੇ ਅੱਪਡੇਟ ਹੋਣ ਤੋਂ ਰੋਕੋ।
 policy-AppUpdateURL = ਕਸਟਮ ਐਪ ਅਪਡੇਟ URL ਸੈੱਟ ਕਰੋ।
 policy-Authentication = ਵੈਬਸਾਈਟਾਂ ਲਈ ਇਕਸਾਰ ਪ੍ਰਮਾਣਿਕਤਾ ਨੂੰ ਕੌਂਫਿਗਰ ਕਰੋ ਜੋ ਇਸਦਾ ਸਮਰਥਨ ਕਰਦੀ ਹੈ।
 policy-AutoLaunchProtocolsFromOrigins = ਬਾਹਰੀ ਪਰੋਟੋਕਾਲਾਂ ਦੀ ਸੂਚੀ ਦਿਓ, ਜੋ ਕਿ ਸੂਚੀਬੱਧ ਮੁੱਢ ਤੋਂ ਬਿਨਾਂ ਵਰਤੋਂਕਾਰ ਦੇ ਪੁੱਛੇ ਵਰਤੇ ਜਾ ਸਕਦੇ ਹਨ।

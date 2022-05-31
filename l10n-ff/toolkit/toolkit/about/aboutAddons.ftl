@@ -141,7 +141,6 @@ extensions-warning-update-security = Ƴeewtagol kisnal ɓeyditte koko daaƴaa. A
 extensions-warning-update-security-button = Daaƴtu
     .title = Daaƴtu ƴeewtagol kisnal ɓeyditte
 
-
 ## Strings connected to add-on updates
 
 addon-updates-check-for-updates = Yuurno kesɗitine
@@ -197,9 +196,33 @@ addon-open-about-debugging = Buggito Ɓeyditte
 ## This is the tooltip text for the recommended badges for an extension in about:addons. The
 ## badge is a small icon displayed next to an extension when it is recommended on AMO.
 
+
 ##
+
 
 ## Page headings
 
 addon-page-options-button =
     .title = Kuutorɗe ɓeyditte fof
+
+## Detail notifications
+## Variables:
+##   $name (String): name of the add-on.
+
+# Variables:
+#   $version (String): application version.
+details-notification-incompatible = { $name } jaaɓdaani e { -brand-short-name } { $version }.
+
+details-notification-unsigned-and-disabled = { $name } horiima ƴeewteede ngam huutoraade e { -brand-short-name } tee daaƴaama kisa.
+details-notification-unsigned-and-disabled-link = Ɓeydu Humpito
+
+details-notification-unsigned = { $name } horiima ƴeewteede ngam huutoraade e { -brand-short-name }. Waɗtu heen hakkille.
+details-notification-unsigned-link = Ɓeydu Humpito
+
+details-notification-blocked = { $name } daaƴaama sabu caɗe kisal walla jamɗugol.
+details-notification-blocked-link = Ɓeydu Humpito
+
+details-notification-softblocked = { $name } ena anndiraa addude caɗe kisal walla jamɗugol.
+details-notification-softblocked-link = Ɓeydu Humpito
+
+details-notification-gmp-pending = { $name } maa aafe ko leelaani.

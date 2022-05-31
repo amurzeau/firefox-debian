@@ -166,11 +166,6 @@ main-context-menu-save-link-to-pocket =
     .label = Запазване на препратката в { -pocket-brand-name }
     .accesskey = п
 
-## The access keys for "Copy Link Location" and "Copy Email Address"
-## should be the same if possible; the two context menu items
-## are mutually exclusive.
-
-
 ## The access keys for "Copy Link" and "Copy Email Address"
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
@@ -271,7 +266,7 @@ main-context-menu-video-view-new-tab =
 
 main-context-menu-image-copy =
     .label = Копиране на изображение
-    .accesskey = т
+    .accesskey = з
 
 main-context-menu-image-copy-link =
     .label = Копиране на препратка към изображение
@@ -319,7 +314,7 @@ main-context-menu-video-take-snapshot =
 
 main-context-menu-video-email =
     .label = Изпращане на видео по мейл…
-    .accesskey = т
+    .accesskey = в
 
 main-context-menu-audio-email =
     .label = Изпращане на аудио по мейл…
@@ -449,4 +444,10 @@ main-context-menu-inspect-a11y-properties =
 main-context-menu-eme-learn-more =
     .label = Научете повече за DRM…
     .accesskey = D
+
+# Variables
+#   $containerName (String): The name of the current container
+main-context-menu-open-link-in-container-tab =
+    .label = Отваряне в изолиран раздел { $containerName }
+    .accesskey = О
 

@@ -124,11 +124,11 @@ openpgp-import-key-description = Ви можете імпортувати осо
 openpgp-import-key-info = Інше програмне забезпечення може називати особистий ключ іншим терміном, так як-от власний ключ, секретний ключ, приватний ключ або пара ключів.
 
 #   $count (Number) - the number of keys found in the selected files
-openpgp-import-key-list-amount =
+openpgp-import-key-list-amount-2 =
     { $count ->
-        [one] Thunderbird знайшов один ключ, який можна імпортувати.
-        [few] Thunderbird знайшов { $count } ключі, які можна імпортувати.
-       *[many] Thunderbird знайшов { $count } ключів, які можна імпортувати.
+        [one] { -brand-short-name } знайшов один ключ, який можна імпортувати.
+        [few] { -brand-short-name } знайшов { $count } ключі, які можна імпортувати.
+       *[many] { -brand-short-name } знайшов { $count } ключів, які можна імпортувати.
     }
 
 openpgp-import-key-list-description = Підтвердьте, які ключі можуть вважатися вашими особистими ключами. Лише створені вами ключі та ті, які підтверджують вашу особу, повинні використовуватись як особисті ключі. Цей параметр можна змінити пізніше у діалоговому вікні властивостей ключів.

@@ -124,14 +124,33 @@ about-addressbook-confirm-delete-contacts =
 
 ## Details
 
+about-addressbook-write-action-button = Opstelle
+about-addressbook-event-action-button = Barren
+about-addressbook-search-action-button = Sykje
 about-addressbook-begin-edit-contact-button = Bewurkje
+about-addressbook-delete-edit-contact-button = Fuortsmite
 about-addressbook-cancel-edit-contact-button = Annulearje
 about-addressbook-save-edit-contact-button = Bewarje
+about-addressbook-add-contact-to = Tafoegje oan:
 about-addressbook-details-email-addresses-header = E-mailadressen
 about-addressbook-details-phone-numbers-header = Telefoannûmers
 about-addressbook-details-home-address-header = Adres
 about-addressbook-details-work-address-header = Wurkadres
+about-addressbook-details-addresses-header = Adressen
+about-addressbook-details-notes-header = Opmerkingen
 about-addressbook-details-other-info-header = Oare ynformaasje
+about-addressbook-entry-type-work = Wurk
+about-addressbook-entry-type-home = Thús
+about-addressbook-entry-type-fax = Faks
+about-addressbook-entry-type-cell = Mobyl
+about-addressbook-entry-type-pager = Piper
+about-addressbook-entry-name-birthday = Jierdei
+about-addressbook-entry-name-anniversary = Jubileum
+about-addressbook-entry-name-title = Titel
+about-addressbook-entry-name-department = Ofdieling
+about-addressbook-entry-name-organization = Organisaasje
+about-addressbook-entry-name-website = Website
+about-addressbook-entry-name-time-zone = Tiidsône
 about-addressbook-unsaved-changes-prompt-title = Net bewarre wizigingen
 about-addressbook-unsaved-changes-prompt = Wolle jo jo wizigingen bewarje eardat jo de bewurkingswerjefte ferlitte?
 

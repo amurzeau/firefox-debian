@@ -8,11 +8,6 @@ toolbar-context-menu-menu-bar =
 
 ## Tools Menu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-menu-tools-preferences =
-    .label = პარამეტრები
-    .accesskey = პ
 menu-tools-settings =
     .label = პარამეტრები
     .accesskey = ე
@@ -55,6 +50,18 @@ menu-view-repair-text-encoding =
 
 ## View / Layout
 
+menu-font-size-label =
+    .label = შრიფტის ზომა
+    .accesskey = ო
+menuitem-font-size-enlarge =
+    .label = ნაწერის გადიდება
+    .accesskey = დ
+menuitem-font-size-reduce =
+    .label = ნაწერის შემცირება
+    .accesskey = ც
+menuitem-font-size-reset =
+    .label = შრიფტის საწყისი ზომა
+    .accesskey = წ
 mail-uidensity-label =
     .label = სიმჭიდროვე
     .accesskey = ჭ

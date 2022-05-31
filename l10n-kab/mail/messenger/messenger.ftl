@@ -2,6 +2,18 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## Window controls
+
+messenger-window-minimize-button =
+    .tooltiptext = Semẓi
+messenger-window-maximize-button =
+    .tooltiptext = Semɣer
+messenger-window-restore-down-button =
+    .tooltiptext = Err-d
+messenger-window-close-button =
+    .tooltiptext = Mdel
+
 # Variables:
 # $count (Number) - Number of unread messages.
 unread-messages-os-tooltip =
@@ -82,12 +94,17 @@ redirect-msg-menuitem =
     .label = Abeddel n uwelleh
     .accesskey = A
 
+menu-file-save-as-file =
+    .label = Afaylu…
+    .accesskey = A
+
 ## AppMenu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-appmenu-preferences =
-    .label = Ismenyifen
+appmenu-save-as-file =
+    .label = Afaylu…
+
+appmenu-settings =
+    .label = Iɣewwaren
 
 appmenu-addons-and-themes =
     .label = Izegrar d yisental
@@ -109,10 +126,50 @@ appmenu-redirect-msg =
 context-menu-redirect-msg =
     .label = Abeddel n uwelleh
 
+mail-context-delete-messages =
+    .label =
+        { $count ->
+            [one] Kkes izen
+           *[other] Kkes iznan yettwafernen
+        }
+
+context-menu-decrypt-to-folder =
+    .label = Nqel am wakken yettuwgelhen ɣer
+    .accesskey = q
+
 ## Message header pane
 
 other-action-redirect-msg =
     .label = Abeddel n uwelleh
+
+message-header-msg-flagged =
+    .title = Ɣur-s itri
+    .aria-label = Ɣur-s itri
+
+message-header-msg-not-flagged =
+    .title = S war itri
+    .aria-label = S war itri
+
+## Message header cutomize panel
+
+message-header-customize-panel-title = Iɣewwaren n uqerru n yizen
+
+message-header-customize-button-style =
+    .value = Talɣa n tqeffalt
+    .accesskey = Q
+
+message-header-button-style-default =
+    .label = Tignit d uḍris
+
+message-header-button-style-text =
+    .label = Aḍris
+
+message-header-button-style-icons =
+    .label = Tigniyin
+
+message-header-large-subject =
+    .label = Asentel ameqqran
+    .accesskey = s
 
 ## Action Button Context Menu
 
@@ -152,3 +209,116 @@ repair-text-encoding-button =
 no-reply-title = Tiririt ur tettusefrak ara
 no-reply-message = Tansa n tririt ({ $email }) ur d-tban ara d tansa yettuɛassen. Iznan yettwaznen ɣer tensa-a ulac ahat win i ten-yeɣran.
 no-reply-reply-anyway-button = Err akken ibɣu yili
+
+## error messages
+
+decrypt-and-copy-failures = { $failures } n { $total } yiznan gguman ad asen-yettwakkes uwgelhen, ur ttwanɣalen ara.
+
+## Spaces toolbar
+
+spaces-toolbar-button-mail2 =
+    .title = Imayl
+
+spaces-toolbar-button-address-book2 =
+    .title = Imedlis n tensa
+
+spaces-toolbar-button-calendar2 =
+    .title = Awitay
+
+spaces-toolbar-button-tasks2 =
+    .title = Tiwuriwin
+
+spaces-toolbar-button-chat2 =
+    .title = Adiwenni usrid
+
+spaces-toolbar-button-overflow =
+    .title = Ugar n tallunin…
+
+spaces-toolbar-button-settings2 =
+    .title = Iɣewwaren
+
+spaces-toolbar-button-hide =
+    .title = Ffer afeggag n yifecka n tallunin
+
+spaces-toolbar-button-show =
+    .title = Sken afeggag n yifecka n tallunin
+
+spaces-context-new-tab-item =
+    .label = Ldi deg yiccer amaynut
+
+spaces-context-new-window-item =
+    .label = Ldi deg usfaylu amaynut
+
+# Variables:
+# $tabName (String) - The name of the tab this item will switch to.
+spaces-context-switch-tab-item =
+    .label = Uɣal ɣer { $tabName }
+
+settings-context-open-settings-item =
+    .label = Ldi iɣewwaren
+
+settings-context-open-account-settings-item =
+    .label = Lqi iɣewwaren n umiḍan
+
+settings-context-open-addons-item =
+    .label = Ldi izegrar d yisental
+
+## Spaces toolbar pinned tab menupopup
+
+spaces-toolbar-pinned-tab-button =
+    .tooltiptext = Umuɣ n tallunin
+
+spaces-pinned-button-menuitem-mail =
+    .label = { spaces-toolbar-button-mail2.title }
+
+spaces-pinned-button-menuitem-address-book =
+    .label = { spaces-toolbar-button-address-book2.title }
+
+spaces-pinned-button-menuitem-calendar =
+    .label = { spaces-toolbar-button-calendar2.title }
+
+spaces-pinned-button-menuitem-tasks =
+    .label = { spaces-toolbar-button-tasks2.title }
+
+spaces-pinned-button-menuitem-chat =
+    .label = { spaces-toolbar-button-chat2.title }
+
+spaces-pinned-button-menuitem-settings =
+    .label = { spaces-toolbar-button-settings2.title }
+
+spaces-pinned-button-menuitem-show =
+    .label = { spaces-toolbar-button-show.title }
+
+# Variables:
+# $count (Number) - Number of unread messages.
+chat-button-unread-messages = { $count }
+    .title =
+        { $count ->
+            [one] Yiwen yizen ur nettwaɣra ara
+           *[other] { $count } yiznan ur nettwaɣra ara
+        }
+
+## Spaces toolbar customize panel
+
+menuitem-customize-label =
+    .label = Sagen…
+
+spaces-customize-panel-title = Iɣewwaren n ufeggag n yifecka n tallunin
+
+spaces-customize-background-color = Ini n ugilal
+
+spaces-customize-icon-color = Ini n tqeffalt
+
+# The background color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-background-color = Ini n ugilal n tqeffalt yettwafernen
+
+# The icon color used on the buttons of the spaces toolbar when they are
+# `current`, meaning the related space/tab is active and visible.
+spaces-customize-accent-text-color = Ini n tqeffalt yettwafernen
+
+spaces-customize-button-restore = Err-d imezwer
+    .accesskey = E
+
+customize-panel-button-save = Yemmed
+    .accesskey = Y

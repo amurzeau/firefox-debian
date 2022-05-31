@@ -39,15 +39,18 @@ toolbar-context-menu-remove-extension =
 toolbar-context-menu-report-extension =
     .label = ਇਕਸਟੈਨਸ਼ਨ ਬਾਰੇ ਰਿਪੋਰਟ ਕਰੋ
     .accesskey = o
-# Can appear on the same context menu as menubarCmd ("Menu Bar") and
-# personalbarCmd ("Bookmarks Toolbar"), so they should have different
-# access keys.
+# Can appear on the same context menu as toolbar-context-menu-menu-bar-cmd
+# ("Menu Bar") and personalbarCmd ("Bookmarks Toolbar"), so they should
+# have different access keys.
 toolbar-context-menu-pin-to-overflow-menu =
     .label = ਓਵਰਫਲੋ ਮੇਨੂ 'ਚ ਟੰਗੋ
     .accesskey = P
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = ਜਦੋਂ ਖਾਲੀ ਹੋਵੇ ਤਾਂ ਬਟਨ ਓਹਲੇ ਕਰੋ
     .accesskey = H
+toolbar-context-menu-always-open-downloads-panel =
+    .label = ਜਦੋਂ ਡਾਊਨਲੋਡ ਸ਼ੁਰੂ ਹੋਵੇ ਤਾਂ ਪੈਨਲ ਦਿਖਾਓ
+    .accesskey = S
 toolbar-context-menu-remove-from-toolbar =
     .label = ਟੂਲਬਾਰ 'ਚੋਂ ਹਟਾਓ
     .accesskey = R

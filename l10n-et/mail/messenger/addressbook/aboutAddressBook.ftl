@@ -124,14 +124,33 @@ about-addressbook-confirm-delete-contacts =
 
 ## Details
 
+about-addressbook-write-action-button = Kirjuta
+about-addressbook-event-action-button = Sündmus
+about-addressbook-search-action-button = Otsi
 about-addressbook-begin-edit-contact-button = Muuda
+about-addressbook-delete-edit-contact-button = Kustuta
 about-addressbook-cancel-edit-contact-button = Loobu
 about-addressbook-save-edit-contact-button = Salvesta
+about-addressbook-add-contact-to = Aadressiraamat:
 about-addressbook-details-email-addresses-header = E-posti aadressid
 about-addressbook-details-phone-numbers-header = Telefoninumbrid
 about-addressbook-details-home-address-header = Kodune aadress
 about-addressbook-details-work-address-header = Tööaadress
+about-addressbook-details-addresses-header = Addresses
+about-addressbook-details-notes-header = Märkmed
 about-addressbook-details-other-info-header = Muu info
+about-addressbook-entry-type-work = Töö
+about-addressbook-entry-type-home = Kodu
+about-addressbook-entry-type-fax = Faks
+about-addressbook-entry-type-cell = Mobiil
+about-addressbook-entry-type-pager = Peiler
+about-addressbook-entry-name-birthday = Sünnipäev
+about-addressbook-entry-name-anniversary = Pulma-aastapäev
+about-addressbook-entry-name-title = Amet
+about-addressbook-entry-name-department = Osakond
+about-addressbook-entry-name-organization = Organisatsioon
+about-addressbook-entry-name-website = Sait
+about-addressbook-entry-name-time-zone = Ajavöönd
 about-addressbook-unsaved-changes-prompt-title = Salvestamata muudatused
 about-addressbook-unsaved-changes-prompt = Kas soovid enne redigeerimisvaatest väljumist muudatused salvestada?
 

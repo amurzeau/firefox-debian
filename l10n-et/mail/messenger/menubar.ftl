@@ -8,11 +8,6 @@ toolbar-context-menu-menu-bar =
 
 ## Tools Menu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-menu-tools-preferences =
-    .label = Sätted
-    .accesskey = S
 menu-tools-settings =
     .label = Sätted
     .accesskey = S
@@ -55,6 +50,18 @@ menu-view-repair-text-encoding =
 
 ## View / Layout
 
+menu-font-size-label =
+    .label = Fondi suurus
+    .accesskey = F
+menuitem-font-size-enlarge =
+    .label = Suurenda fondi suurust
+    .accesskey = S
+menuitem-font-size-reduce =
+    .label = Vähenda fondi suurust
+    .accesskey = V
+menuitem-font-size-reset =
+    .label = Lähtesta fondi suurus
+    .accesskey = L
 mail-uidensity-label =
     .label = Tihedus
     .accesskey = h

@@ -45,14 +45,6 @@ restart-later = Restartuj kasnije
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that Container Tabs
-# are being enabled by an extension.
-extension-controlled-privacy-containers = Ekstenzija, <img data-l10n-name="icon"/> { $name }, zahtijeva Container tabove.
-
-# This string is shown to notify the user that their proxy configuration preferences
-# are being controlled by an extension.
-extension-controlled-proxy-config = Ekstenzija, <img data-l10n-name="icon"/> { $name }, upravlja kako se { -brand-short-name } konektuje na internet.
-
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -81,10 +73,6 @@ set-as-my-default-browser =
     .label = Učini glavnim…
     .accesskey = G
 
-startup-restore-previous-session =
-    .label = Vrati prethodnu sesiju
-    .accesskey = s
-
 disable-extension =
     .label = Onemogući ekstenziju
 
@@ -97,10 +85,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Otvori linkove u tabovima umjesto u novim prozorima
     .accesskey = p
-
-warn-on-close-multiple-tabs =
-    .label = Upozoriti vas kada zatvarate više tabova
-    .accesskey = o
 
 warn-on-open-many-tabs =
     .label = Upozoriti vas kada otvaranje više tabova može usporiti { -brand-short-name }
@@ -150,12 +134,9 @@ containers-remove-alert-msg =
 containers-remove-ok-button = Ukloni ovaj Container
 containers-remove-cancel-button = Ne uklanjaj ovaj Container
 
-
 ## General Section - Language & Appearance
 
 language-and-appearance-header = Jezik i izled
-
-fonts-and-colors-header = Fontovi & Boje
 
 default-font = Izvorni font:
     .accesskey = f
@@ -165,10 +146,6 @@ default-font-size = Veličina:
 advanced-fonts =
     .label = Napredno…
     .accesskey = a
-
-colors-settings =
-    .label = Boje…
-    .accesskey = o
 
 language-header = Jezik
 
@@ -202,6 +179,9 @@ download-header = Preuzimanja
 
 download-save-to =
     .label = Spasi fajlove u
+    .accesskey = v
+
+download-save-where = Spasi fajlove u
     .accesskey = v
 
 download-choose-folder =
@@ -427,9 +407,6 @@ home-prefs-content-description = Odaberite koji sadržaj želite na vašem poče
 
 home-prefs-search-header =
     .label = Web pretraga
-home-prefs-topsites-header =
-    .label = Najposjećenije stranice
-home-prefs-topsites-description = Stranice koje najviše posjećujete
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -442,9 +419,6 @@ home-prefs-recommended-by-header =
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponzorisane priče
 
-home-prefs-highlights-header =
-    .label = Istaknuto
-home-prefs-highlights-description = Izbor stranica koje ste sačuvali ili posjetili
 home-prefs-highlights-option-visited-pages =
     .label = Posjećene stranice
 home-prefs-highlights-options-bookmarks =
@@ -460,7 +434,6 @@ home-prefs-highlights-option-saved-to-pocket =
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = Isječci
-home-prefs-snippets-description = Ažuriranja od Mozille i { -brand-product-name }a
 
 home-prefs-sections-rows-option =
     .label =
@@ -668,7 +641,6 @@ forms-primary-pw-learn-more-link = Saznajte više
 forms-master-pw-change =
     .label = Promijeni glavnu lozinku…
     .accesskey = m
-
 forms-primary-pw-change =
     .label = Promijeni Primarnu lozinku…
     .accesskey = P
@@ -811,10 +783,6 @@ permissions-notification-pause =
 permissions-block-popups =
     .label = Blokiraj pop-up prozore
     .accesskey = B
-
-permissions-block-popups-exceptions =
-    .label = Izuzeci…
-    .accesskey = e
 
 permissions-addon-install-warning =
     .label = Upozorava vas kada web stranice pokušaju instalirati add-one

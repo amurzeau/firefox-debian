@@ -26,5 +26,19 @@ openpgp-key-verified = Yettwaqbel (ittwasenqed)
 openpgp-key-unverified = Yettwaqbel (ur ittwasenqed ara)
 openpgp-key-undecided = Ur yettwaqbel ara (ur yerkid ara)
 openpgp-key-rejected = Ur yettwaqbel ara (yettwagi)
+openpgp-key-expired = Yemmut
 
 openpgp-intro = Llant tsura tizuyaz i { $key }
+
+openpgp-pubkey-import-id = Asulay: { $kid }
+openpgp-pubkey-import-fpr = Adsil umḍin: { $fpr }
+
+openpgp-pubkey-import-intro =
+    { $num ->
+        [one] Afaylu deg-s tasarut tazayazt akken d-yettwaskan nnig:
+       *[other] Afaylu deg-s { $num } n tsura tizayazin akken d-yettwaskan nnig:
+    }
+
+pubkey-import-button =
+    .buttonlabelaccept = Kter
+    .buttonaccesskeyaccept = K

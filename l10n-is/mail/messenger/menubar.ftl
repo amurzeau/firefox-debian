@@ -8,11 +8,6 @@ toolbar-context-menu-menu-bar =
 
 ## Tools Menu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-menu-tools-preferences =
-    .label = Kjörstillingar
-    .accesskey = K
 menu-tools-settings =
     .label = Stillingar
     .accesskey = i
@@ -55,6 +50,18 @@ menu-view-repair-text-encoding =
 
 ## View / Layout
 
+menu-font-size-label =
+    .label = Leturstærð
+    .accesskey = u
+menuitem-font-size-enlarge =
+    .label = Auka leturstærð
+    .accesskey = A
+menuitem-font-size-reduce =
+    .label = Minnka leturstærð
+    .accesskey = M
+menuitem-font-size-reset =
+    .label = Endurstilla leturstærð
+    .accesskey = r
 mail-uidensity-label =
     .label = Þéttleiki
     .accesskey = k

@@ -189,7 +189,6 @@ extensions-warning-update-security = Chupül ri runik'oxik chajinïk richin kik'
 extensions-warning-update-security-button = Titzij
     .title = Titzij ri ya'öl retal chajinïk richin nik'ex ri tz'aqat
 
-
 ## Strings connected to add-on updates
 
 addon-updates-check-for-updates = Kenik'öx taq K'exoj
@@ -410,7 +409,6 @@ addon-detail-private-browsing-disallow = Man Tiya' Q'ij
 addon-badge-recommended2 =
     .title = { -brand-product-name } xa xe yeruchilab'ej taq k'amal kojqan rub'eyal qajikomal chuqa' rub'eyal qasamaj
     .aria-label = { addon-badge-recommended2.title }
-
 # We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
@@ -429,7 +427,6 @@ release-notes-loading = Nisamäj…
 release-notes-error = Takuyu' qamak, xa xk'ulwachitäj jun sachoj toq nok pa ch'utaq rutzijol ri ko'öl wuj.
 
 addon-permissions-empty = Majun ya'oj q'ij nrajo re k'amal re'
-
 addon-permissions-required = Ajowanel taq ya'oj q'ij richin ri qitzij rusamaj:
 addon-permissions-optional = Cha'el taq ya'oj q'ij richin ri tz'aqat taq rusamaj:
 addon-permissions-learnmore = Tetamäx ch'aqa' chik chi kij ri taq ya'oj q'ij
@@ -458,3 +455,25 @@ addons-heading-search-input =
 
 addon-page-options-button =
     .title = Taq kisamajib'al konojel ri taq tz'aqat
+
+## Detail notifications
+## Variables:
+##   $name (String): name of the add-on.
+
+# Variables:
+#   $version (String): application version.
+details-notification-incompatible = { $name } man nuk'äm ta ri' rik'in { -brand-short-name } { $version }.
+
+details-notification-unsigned-and-disabled = Man xtikïr ta xnik'öx ri { $name } ruma ri rokisaxik pa { -brand-short-name }, ruma ri' toq xchup.
+details-notification-unsigned-and-disabled-link = Ch'aqa' chik rutzijol
+
+details-notification-unsigned = { $name } man xtikïr ta xnik'öx rokisaxik pa { -brand-short-name }. Tachajij awi'.
+details-notification-unsigned-link = Ch'aqa' chik rutzijol
+
+details-notification-blocked = { $name } xkichüp ruma k'ayewal pa ruwi' chajinïk o k'ojlemal.
+details-notification-blocked-link = Ch'aqa' chik rutzijol
+
+details-notification-softblocked = { $name } etaman chi itzel taq k'ayewal nub'än pa chajinïk o ak'ojlemal.
+details-notification-softblocked-link = Ch'aqa' chik rutzijol
+
+details-notification-gmp-pending = { $name } ja xtiyake' qa.

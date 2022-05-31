@@ -3,6 +3,24 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+## Send Format
+
+compose-send-format-menu =
+    .label = Fformat Anfon
+    .accesskey = F
+compose-send-auto-menu-item =
+    .label = Awtomatig
+    .accesskey = A
+compose-send-both-menu-item =
+    .label = HTML a Thestun Plaen
+    .accesskey = H
+compose-send-html-menu-item =
+    .label = Dim ond HTML
+    .accesskey = D
+compose-send-plain-menu-item =
+    .label = Dim ond Testun Plaen
+    .accesskey = T
+
 ## Addressing widget
 
 #   $type (String) - the type of the addressing row
@@ -74,9 +92,6 @@ menuitem-toggle-attachment-pane =
 toolbar-button-add-attachment =
     .label = Atodi
     .tooltiptext = Atodi Atodiad ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
-add-attachment-notification-reminder =
-    .label = Ychwanegu Atodiad…
-    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 add-attachment-notification-reminder2 =
     .label = Ychwanegu Atodiad…
     .accesskey = A
@@ -89,6 +104,13 @@ context-menuitem-attach-files =
     .label = Atodi Ffeil(iau)…
     .accesskey = F
     .acceltext = { ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }
+# Note: Do not translate the term 'vCard'.
+context-menuitem-attach-vcard =
+    .label = Fy vCard
+    .accesskey = v
+context-menuitem-attach-openpgp-key =
+    .label = Fy Allwedd Gyhoeddus OpenPGP
+    .accesskey = O
 #   $count (Number) - the number of attachments in the attachment bucket
 attachment-bucket-count-value =
     { $count ->
@@ -100,10 +122,6 @@ attachment-bucket-count-value =
         [many] { $count } Atodiad
        *[other] { $count } Atodiad
     }
-expand-attachment-pane-tooltip =
-    .tooltiptext = Dangos y paen atodi ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Cuddio'r paen atodi ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Dangos y paen atodi ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -143,45 +161,60 @@ button-return-receipt =
 
 ## Encryption
 
-message-to-be-signed-icon =
-    .alt = Llofnodi neges
-message-to-be-encrypted-icon =
-    .alt = Amgryptio neges
+encryption-menu =
+    .label = Diogelwch
+    .accesskey = D
+encryption-toggle =
+    .label = Amgryptio
+    .tooltiptext = Defnyddio amgryptiad ben-i-ben ar gyfer y neges yma
+encryption-options-openpgp =
+    .label = OpenPGP
+    .tooltiptext = Gweld neu newid gosodiadau amgryptio OpenPGP
+encryption-options-smime =
+    .label = S/MIME
+    .tooltiptext = Gweld neu newid goodiadau amgryptio S/MIME
+signing-toggle =
+    .label = Llofnodi
+    .tooltiptext = Defnyddio llofnodi digidol ar gyfer y neges hon
+menu-openpgp =
+    .label = OpenPGP
+    .accesskey = O
+menu-smime =
+    .label = S/MIME
+    .accesskey = S
+menu-encrypt =
+    .label = Amgryptio
+    .accesskey = A
+menu-encrypt-subject =
+    .label = Amgryptio Pwnc
+    .accesskey = p
+menu-sign =
+    .label = Llofnodi Digidol
+    .accesskey = L
+menu-manage-keys =
+    .label = Cynorthwy-ydd Allwedd
+    .accesskey = C
+menu-view-certificates =
+    .label = Gweld Tystysgrifau Derbynwyr
+    .accesskey = G
+menu-open-key-manager =
+    .label = Rheolwr Allwedd
+    .accesskey = R
+openpgp-key-issue-notification-one = Mae amgryptio pen-i-ben yn gofyn am ddatrys materion allweddi ar gyfer { $addr }
+openpgp-key-issue-notification-many = Mae amgryptio pen-i-ben yn gofyn am ddatrys materion allweddi ar gyfer { $count } derbynnydd.
+smime-cert-issue-notification-one = Mae amgryptio pen-i-ben yn gofyn am ddatrys materion tystysgrifau ar gyfer { $addr }.
+smime-cert-issue-notification-many = Mae amgryptio pen-i-ben yn gofyn am ddatrys materion tystysgrifau ar gyfer { $count } derbynnydd.
+key-notification-disable-encryption =
+    .label = Peidio ag Amgryptio
+    .accesskey = P
+    .tooltiptext = Analluogi amgryptio pen-i-ben
+key-notification-resolve =
+    .label = Datrys...
+    .accesskey = D
+    .tooltiptext = Agor Cynorthwydd Allweddi OpenPGP
 
 ## Addressing Area
 
-to-compose-address-row-label =
-    .value = At
-#   $key (String) - the shortcut key for this field
-to-compose-show-address-row-menuitem =
-    .label = Maes { to-compose-address-row-label.value }
-    .accesskey = M
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-to-compose-show-address-row-label =
-    .value = { to-compose-address-row-label.value }
-    .tooltiptext = Dangos Maes { to-compose-address-row-label.value } ({ to-compose-show-address-row-menuitem.acceltext })
-cc-compose-address-row-label =
-    .value = Cc
-#   $key (String) - the shortcut key for this field
-cc-compose-show-address-row-menuitem =
-    .label = Maes { cc-compose-address-row-label.value }
-    .accesskey = M
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-cc-compose-show-address-row-label =
-    .value = { cc-compose-address-row-label.value }
-    .tooltiptext = Dangos Maes{ cc-compose-address-row-label.value } ({ cc-compose-show-address-row-menuitem.acceltext })
-bcc-compose-address-row-label =
-    .value = Bcc
-#   $key (String) - the shortcut key for this field
-bcc-compose-show-address-row-menuitem =
-    .label = Maes { bcc-compose-address-row-label.value }
-    .accesskey = a
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-bcc-compose-show-address-row-label =
-    .value = { bcc-compose-address-row-label.value }
-    .tooltiptext = Dangos Maes { bcc-compose-address-row-label.value } ({ bcc-compose-show-address-row-menuitem.acceltext })
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-many-public-recipients-info = Bydd y  { $count } derbyniwr yn At a Cc weld cyfeiriad ei gilydd. Gallwch osgoi datgelu derbynwyr trwy ddefnyddio Bcc yn lle.
 to-address-row-label =
     .value = At
 #   $key (String) - the shortcut key for this field
@@ -356,3 +389,17 @@ cloud-file-attachment-error = Wedi methu diweddaru'r atodiad Filelink { $filenam
 # $filename (string) - name of the file that was renamed and caused the error
 cloud-file-account-error-title = Gwall Cyfrif Filelink
 cloud-file-account-error = Wedi methu diweddaru'r atodiad Filelink { $filename }, oherwydd bod ei ffeil leol wedi'i symud neu ei dileu.
+
+## Link Preview
+
+link-preview-title = Rhagolwg Dolen
+link-preview-description = Gall { -brand-short-name } ychwanegu rhagolwg wedi'i fewnblannu wrth ludo dolenni.
+link-preview-autoadd = Ychwanegu ragolygon dolenni'n awtomatig pan fo modd
+link-preview-replace-now = Ychwanegu Rhagolwg Dolen ar gyfer y ddolen hon?
+link-preview-yes-replace = Iawn
+
+## Dictionary selection popup
+
+spell-add-dictionaries =
+    .label = Ychwanegu Geiriaduron…
+    .accesskey = Y

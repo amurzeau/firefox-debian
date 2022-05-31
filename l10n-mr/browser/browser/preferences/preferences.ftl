@@ -53,14 +53,6 @@ restart-later = नंतर पुनःसुरु करा
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that Container Tabs
-# are being enabled by an extension.
-extension-controlled-privacy-containers = एक विस्तार, <img data-l10n-name="icon"/> { $name } ला, कंटेनर टॅबची आवश्यकता आहे.
-
-# This string is shown to notify the user that their proxy configuration preferences
-# are being controlled by an extension.
-extension-controlled-proxy-config = एक विस्तारण, <img data-l10n-name="icon"/> { $name }, { -brand-short-name } इंटरनेट ला जोडणी कसे करते ते संचालित करत आहे.
-
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -89,10 +81,6 @@ set-as-my-default-browser =
     .label = पूर्वनिर्धारित बनवा…
     .accesskey = D
 
-startup-restore-previous-session =
-    .label = मागील सत्र पूर्वस्थितीत आणा
-    .accesskey = s
-
 startup-restore-warn-on-quit =
     .label = ब्राउझर सोडताना चेतावनी द्या
 
@@ -108,10 +96,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = नवीन पटल ऐवजी टॅबमध्ये दुवे उघडा
     .accesskey = w
-
-warn-on-close-multiple-tabs =
-    .label = एकापेक्षा जास्त टॅब बंद करतेवेळी मला सावध करा
-    .accesskey = m
 
 warn-on-open-many-tabs =
     .label = एकापेक्षा जास्त टॅब उघडताना मला सावध करा कारण त्यामुळे { -brand-short-name } हळु होऊ शकते
@@ -158,12 +142,9 @@ containers-remove-alert-msg =
 containers-remove-ok-button = हा कंटेनर काढून टाका
 containers-remove-cancel-button = हा कंटेनर काढू नका
 
-
 ## General Section - Language & Appearance
 
 language-and-appearance-header = भाषा आणि स्वरुप
-
-fonts-and-colors-header = टंक आणि रंग
 
 default-font = पूर्वनिर्धारित फॉन्ट
     .accesskey = D
@@ -173,10 +154,6 @@ default-font-size = आकार
 advanced-fonts =
     .label = प्रगत…
     .accesskey = A
-
-colors-settings =
-    .label = रंग…
-    .accesskey = C
 
 language-header = भाषा
 
@@ -217,6 +194,9 @@ download-header = डाउनलोड्ज
 
 download-save-to =
     .label = फाइल्स येथे साठवा
+    .accesskey = v
+
+download-save-where = फाइल्स येथे साठवा
     .accesskey = v
 
 download-choose-folder =
@@ -484,9 +464,6 @@ home-prefs-content-description = आपल्या फायरफॉक्स�
 
 home-prefs-search-header =
     .label = वेब शोध
-home-prefs-topsites-header =
-    .label = शीर्ष साइट्स
-home-prefs-topsites-description = आपण सर्वाधिक भेट देता त्या साइट
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -502,9 +479,6 @@ home-prefs-recommended-by-learn-more = हे कसे कार्य कर�
 home-prefs-recommended-by-option-sponsored-stories =
     .label = प्रायोजित कथा
 
-home-prefs-highlights-header =
-    .label = ठळक
-home-prefs-highlights-description = आपण जतन केलेल्या किंवा भेट दिलेल्या साइट्सचा एक निवडक साठा
 home-prefs-highlights-option-visited-pages =
     .label = भेट दिलेली पृष्ठे
 home-prefs-highlights-options-bookmarks =
@@ -520,7 +494,6 @@ home-prefs-highlights-option-saved-to-pocket =
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = कात्रणे
-home-prefs-snippets-description = { -vendor-short-name } आणि { -brand-product-name } कडून अद्यतने
 
 home-prefs-sections-rows-option =
     .label =
@@ -594,9 +567,6 @@ containers-add-button =
 containers-remove-button =
     .label = काढून टाका
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
@@ -611,9 +581,6 @@ sync-signedout-caption = आपला वेब आपल्याबरोब�
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
 sync-mobile-promo = साठी डाउनलोड करा <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> किंवा <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> आपल्या उपकरणाबरोबर समक्रमण करण्यासाठी
-
-## Sync Section - Signed in
-
 
 ## Firefox Account - Signed in
 
@@ -719,9 +686,6 @@ sync-connect-another-device = अन्य उपकरण जोडा
 ## Privacy Section
 
 privacy-header = ब्राऊजर गोपनीयता
-
-## Privacy Section - Forms
-
 
 ## Privacy Section - Logins and Passwords
 
@@ -888,7 +852,6 @@ content-blocking-cryptominers = क्रिप्टोमाइनर
 content-blocking-fingerprinters = फिंगरप्रिंटर
 
 content-blocking-warning-title = सावधान!
-
 content-blocking-warning-learn-how = कसे ते जाणा
 
 content-blocking-reload-description = हे बदल लागू करण्यासाठी आपले टॅब रीलोड करावे लागतील.
@@ -970,10 +933,6 @@ permissions-block-popups =
     .label = पॉपअप पटल अडवा
     .accesskey = B
 
-permissions-block-popups-exceptions =
-    .label = अपवाद…
-    .accesskey = E
-
 permissions-addon-install-warning =
     .label = साईट्स ॲड-ऑन्स् इंस्टॉल करण्याचा प्रयत्न करताना मला सावध करा
     .accesskey = W
@@ -1045,6 +1004,7 @@ certs-devices =
     .accesskey = D
 
 ## Privacy Section - HTTPS-Only
+
 
 ## The following strings are used in the Download section of settings
 

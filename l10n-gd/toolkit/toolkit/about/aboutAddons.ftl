@@ -459,3 +459,25 @@ addons-heading-search-input =
 
 addon-page-options-button =
     .title = Innealan airson a h-uile tuilleadan
+
+## Detail notifications
+## Variables:
+##   $name (String): name of the add-on.
+
+# Variables:
+#   $version (String): application version.
+details-notification-incompatible = Chan eil { $name } co-chòrdail le { -brand-short-name } { $version }.
+
+details-notification-unsigned-and-disabled = Cha b’ urrainn dhuinn { $name } a dhearbhadh a chum cleachdaidh ann an { -brand-short-name } agus chaidh a chur à comas.
+details-notification-unsigned-and-disabled-link = Barrachd fiosrachaidh
+
+details-notification-unsigned = Cha b’ urrainn dhuinn { $name } a dhearbhadh a chum cleachdaidh ann an { -brand-short-name }. Bi faiceallach.
+details-notification-unsigned-link = Barrachd fiosrachaidh
+
+details-notification-blocked = Chaidh { $name } a chur à comas air sgàth adhbharan tèarainteachd no seasmhachd.
+details-notification-blocked-link = Barrachd fiosrachaidh
+
+details-notification-softblocked = Tha fhios gun adhbharaich { $name } duilgheadasan tèarainteachd is seasmhachd.
+details-notification-softblocked-link = Barrachd fiosrachaidh
+
+details-notification-gmp-pending = Thèid { $name } stàladh a dh'aithghearr.

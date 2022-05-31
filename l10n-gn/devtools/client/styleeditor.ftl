@@ -8,6 +8,8 @@ styleeditor-new-button =
 styleeditor-import-button =
     .tooltiptext = Emoheñói ha emoirũ peteĩ kuatia oĩvavoi pe kuatiaitére
     .accesskey = I
+styleeditor-filter-input =
+    .placeholder = Mbohekoha rogue ñembogua
 styleeditor-visibility-toggle =
     .tooltiptext = Kuatia jehecha moambue
     .accesskey = S
@@ -28,3 +30,5 @@ styleeditor-copy-url =
 styleeditor-go-to-line =
     .label = Tairendápe jepo...
     .accesskey = j
+# Label displayed when searching a term that is not found in any stylesheet path
+styleeditor-stylesheet-all-filtered = Ndojejuhúi mba’evéichagua mbohekoharogue.

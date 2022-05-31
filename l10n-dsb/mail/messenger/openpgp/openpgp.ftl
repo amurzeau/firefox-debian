@@ -4,6 +4,7 @@
 
 e2e-intro-description = Aby skoděrowane abo digitalnje signěrowane powěsći pósłał, musyśo koděrowańsku technologiju konfigurěrowaś, pak OpenPGP pak S/MIME.
 e2e-intro-description-more = Wubjeŕśo swój wósobinski kluc, aby wužywanje OpenPGP zmóžnił, abo wósobinski certifikat, aby wužywanje S/MIME zmóžnił. Za wósobinski kluc abo certifikat maśo wótpowědny pótajmny kluc.
+e2e-signing-description = Digitalna signatura dostawarjam zmóžnja, pśeglědowaś, až powěsć jo se wót was pósłała, a lěc jeje wopśimjeśe njejo se změniło. Skoděrowane powěsći se pśecej pó standarźe signěruju.
 e2e-sign-message =
     .label = Njeskoděrowane powěsći signěrowaś
     .accesskey = e
@@ -13,6 +14,7 @@ e2e-disable-enc =
 e2e-enable-enc =
     .label = Koděrowanje za nowe powěsći zmóžniś
     .accesskey = z
+e2e-enable-description = Móžośo koděrowanje za jadnotliwe powěsći znjemóžniś.
 e2e-advanced-section = Rozšyrjone nastajenja
 e2e-attach-key =
     .label = Mój zjawny kluc pśipowjesyś, gaž se digitalna signatura OpenPGP pśidawa
@@ -191,6 +193,11 @@ openpgp-key-man-reload =
 openpgp-key-man-change-expiry =
     .label = Datum spadnjenja změniś
     .accesskey = D
+openpgp-key-man-refresh-online =
+    .label = Online aktualizěrowaś
+    .accesskey = O
+openpgp-key-man-ignored-ids =
+    .label = E-mailowe adrese
 openpgp-key-man-del-key =
     .label = Kluce wulašowaś
     .accesskey = l
@@ -236,8 +243,10 @@ openpgp-key-man-select-all-key =
     .key = A
 openpgp-key-man-key-details-key =
     .key = I
+openpgp-ign-addr-intro = Akceptěrujośo, až toś ten kluc za slědujuce wubrane e-mailowe adrese wužywaśo:
 openpgp-key-details-title =
     .title = Klucowe kakosći
+openpgp-key-details-doc-title = Klucowe kakosći
 openpgp-key-details-signatures-tab =
     .label = Certificěrowanja
 openpgp-key-details-structure-tab =
@@ -246,11 +255,19 @@ openpgp-key-details-uid-certified-col =
     .label = Wužywaŕski ID / Certificěrowany wót
 openpgp-key-details-key-id-label = ID kluca
 openpgp-key-details-user-id2-label = Pózdatny wobsejźaŕ kluca
+openpgp-key-details-user-id3-label = Pózdatny wobsejźaŕ kluca
 openpgp-key-details-id-label =
     .label = ID
 openpgp-key-details-key-type-label = Typ
 openpgp-key-details-key-part-label =
     .label = Klucowy źěl
+openpgp-key-details-attr-ignored = Warnowanje: Toś ten kluc snaź ako wótcakany njefunkcioněrujo, dokulaž někotare z jogo kakosćow su njewěste a mógli se ignorěrowaś.
+openpgp-key-details-attr-upgrade-sec = Wy měł njewěste kakosći aktualizěrowaś.
+openpgp-key-details-attr-upgrade-pub = Wy měł wobsejźarja toś togo kluca pšosyś, aby njewěste kakosći aktualizěrował.
+openpgp-key-details-upgrade-unsafe =
+    .label = Njewěste kakosći aktualizěrowaś
+    .accesskey = N
+openpgp-key-details-upgrade-ok = Kluc jo se wuspěšnje zaktualizěrował. Wy měł zaktualizěrowany zjawny kluc ze swójimi dopisowańskimi partnarjami źěliś.
 openpgp-key-details-algorithm-label =
     .label = Algoritmus
 openpgp-key-details-size-label =
@@ -268,7 +285,6 @@ openpgp-key-details-legend-secret-missing = Za kluce, kótarež su z (!) markěr
 openpgp-key-details-sel-action =
     .label = Akciju wubraś…
     .accesskey = b
-openpgp-key-details-also-known-label = Pózdatne alternatiwne identity wobsejźarja kluca:
 openpgp-card-details-close-window-label =
     .buttonlabelaccept = Zacyniś
 openpgp-acceptance-label =
@@ -284,7 +300,6 @@ openpgp-acceptance-verified-label =
 key-accept-personal =
     Za toś ten kluc maśo zjawny a pótajmny źěl. Móžośo jen ako wósobinski kluc wužywaś.
     Jolic něchten drugi jo pódał toś ten kluc, njewužywajśo jen ako wósobinski kluc.
-key-personal-warning = Sćo napórał toś ten kluc sam a póśěgujo se pódane klucowe wobsejźeństwo na was?
 openpgp-personal-no-label =
     .label = Ně, jen ako mój wósobinski kluc njewužywaś.
 openpgp-personal-yes-label =
@@ -294,15 +309,16 @@ openpgp-copy-cmd-label =
 
 ## e2e encryption settings
 
+#   $identity (String) - the email address of the currently selected identity
+openpgp-description-no-key = { -brand-short-name } wósobinski OpenPGP-kluc za <b>{ $identity }</b> njama
 #   $count (Number) - the number of configured keys associated with the current identity
 #   $identity (String) - the email address of the currently selected identity
-openpgp-description =
+openpgp-description-has-keys =
     { $count ->
-        [0] Thunderbird njama wósobinski OpenPGP-kluc za <b>{ $identity }</b>
-        [one] Thunderbird ma { $count } wósobinski OpenPGP-kluc za <b>{ $identity }</b>
-        [two] Thunderbird ma { $count } wósobinskej OpenPGP-kluca za <b>{ $identity }</b>
-        [few] Thunderbird ma { $count } wósobinske OpenPGP-kluce za <b>{ $identity }</b>
-       *[other] Thunderbird ma { $count } wósobinskich OpenPGP-klucow za <b>{ $identity }</b>
+        [one] { -brand-short-name } jo namakał { $count } wósobinski OpenPGP-kluc za <b>{ $identity }</b>
+        [two] { -brand-short-name } jo namakał { $count } wósobinskej OpenPGP-kluca za <b>{ $identity }</b>
+        [few] { -brand-short-name } jo namakał { $count } wósobinske OpenPGP-kluce za <b>{ $identity }</b>
+       *[other] { -brand-short-name } jo namakał { $count } wósobinskich OpenPGP-klucow za <b>{ $identity }</b>
     }
 #   $key (String) - the currently selected OpenPGP key
 openpgp-selection-status-have-key = Waša aktualna konfiguracija klucowe ID <b>{ $key }</b> wužywa
@@ -360,13 +376,11 @@ key-expired-date = Kluc jo spadnuł { $keyExpiry }
 key-expired-simple = Kluc jo spadnuł
 key-revoked-simple = Kluc jo se wótwołał
 key-do-you-accept = Akceptěrujośo, až se za toś ten kluc digitalne signatury a koděrowanje powěsćow pśeglědujo?
-key-accept-warning = Njeakceptěrujśo tšašny kluc. Wužywajśo drugi komunikaciski kanal ako e-mailowy kanal, aby palcowy wótśišć kluca swójogo dopisowarja pśeglědował.
+key-verification = Pśeglědajśo palcowy wótśišć kluca z pomocu drugego wěstego komunikaciskego kanala ako e-mail, aby zawěsćił, až kluc napšawdu { $addr } słuša.
 # Strings enigmailMsgComposeOverlay.js
 cannot-use-own-key-because = Njejo móžno powěsć słaś, dokulaž dajo problem z wašym wósobinskim klucom. { $problem }
 cannot-encrypt-because-missing = Njejo móžno, toś tu powěsć z koděrowanim kóńc do kóńca pósłác, dokulaž daju problemy z klucami slědujucych dostawarjow: { $problem }
 window-locked = Wobźěłowańske wokno jo zastajone; słanje jo se pśetergnuło
-# Strings in mimeDecrypt.jsm
-mime-decrypt-encrypted-part-attachment-label = Skoděrowany źěl powěsći
 # Strings in mimeDecrypt.jsm
 mime-decrypt-encrypted-part-concealed-data = To jo skoděrowany powěsćowy źěl. Klikniśo na pśidank, aby jen w separatnem woknje wócynił.
 # Strings in keyserver.jsm
@@ -390,25 +404,6 @@ converter-decrypt-body-failed =
     Powěsć z temu { $subject }
     njedajo se dekoděrowaś.
     Cośo z drugeju gronidłoweju frazu znowego wopytaś abo cośo powěsć pśeskócyś?
-# Strings in gpg.jsm
-unknown-signing-alg = Njeznaty signěrowański algoritmus (ID: { $id })
-unknown-hash-alg = Njeznata kryptografiska kontrolna suma (ID: { $id })
-# Strings in keyUsability.jsm
-expiry-key-expires-soon =
-    Waš kluc { $desc } za mjenjej ako { $days } dnjow spadnjo.
-    Pórucamy, až nowy klucowy por napórajośo a wótpowědne konta konfigurěrowaś, aby jen wužywał.
-expiry-keys-expire-soon =
-    Waše slědujuce kluce za mjenjej ako { $days } dnjow spadnu: { $desc }.
-    Pórucamy, až nowe kluce napórajośo a wótpowědne konta konfigurěrowaś, aby je wužywał.
-expiry-key-missing-owner-trust =
-    Waš pótajmny kluc { $desc } njejo dowěry gódny.
-    Pórucamy, až w klucowych kakosćach „Spušćaśo se na certifikacije“ na „doskóńcny“ stajaśo.
-expiry-keys-missing-owner-trust =
-    Slědujucy z wašych pótajmnych klucow njejo dowěry gódny.
-    { $desc }.
-    Pórucamy, až w klucowych kakosćach „Spušćaśo se na certifikacije“ na „doskóńcny“ stajaśo.
-expiry-open-key-manager = Zastojnik OpenPGP-klucow wócyniś
-expiry-open-key-properties = Klucowe kakosći wócyniś
 # Strings filters.jsm
 filter-folder-required = Wy dejśo celowy zarědnik wubraś.
 filter-decrypt-move-warn-experimental =
@@ -526,6 +521,9 @@ key-error-not-accepted-as-personal = Njejsćo wobkšuśił, až kluc z ID ‚{ $
 need-online = Funkcija, kótaruž sćo wubrał, njejo w modusu offline k dispoziciji. Pšosym źiśo online a wopytajśo hyšći raz.
 # Strings used in keyRing.jsm & keyLookupHelper.jsm
 no-key-found = Njejsmy mógli kluc namakaś, kótaryž se k pódanym pytańskim kriterijam góźi.
+# Strings used in keyRing.jsm & keyLookupHelper.jsm
+no-key-found2 = Njejsmy mógli wužywajobny kluc namakaś, kótaryž pódanym pytańskim kriterijam wótpowědujo.
+no-update-found = Maśo južo kluce, kótarež su se namakali online.
 # Strings used in keyRing.jsm & GnuPGCryptoAPI.jsm
 fail-key-extract = Zmólka - pśikaz klucoweje ekstrakcije njejo se raźił
 # Strings used in keyRing.jsm
@@ -611,18 +609,9 @@ send-to-news-warning =
     Wót togo se wótraźujo, dokulaž to jo jano zmysłapołne, jolic wšykne cłonki kupki mógu powěsć dešifrěrowaś, t. gr. powěsć musy se z klucami wšych wobźělnikow kupki koděrowaś. Pšosym sćelśo toś tu powěsć jano, jolic wěsćo, což cyniśo.
     Pókšacowaś?
 save-attachment-header = Dešifrěrowany pśidank składowaś
-no-temp-dir =
-    Njejo móžno, temporerny zapis namakaś, do kótaregož dajo se pisaś
-    Pšosym stajśo wokolinowu wariablu TEMP
 possibly-pgp-mime = Powěsć jo snaź z PGP/MIME skoděrowana abo signěrowana; wužywajśo funkciju ‚Dešifrěrowaś/Pśeglědowaś‘, aby to pśeglědował
 cannot-send-sig-because-no-own-key = Toś ta powěsć njedajo se digitalnje signěrowaś, dokulaž hyšći njejsćo konfigurěrował koděrowanje kóńc do kóńca za <{ $key }>
 cannot-send-enc-because-no-own-key = Toś ta powěsć njedajo se skoděrowana pósłaś, dokulaž hyšći njejsćo konfigurěrował koděrowanje kóńc do kóńca za <{ $key }>
-compose-menu-attach-key =
-    .label = Mój zjawny kluc pśipowjesyś
-    .accesskey = l
-compose-menu-encrypt-subject =
-    .label = Koděrowanje temy
-    .accesskey = K
 # Strings used in decryption.jsm
 do-import-multiple =
     Slědujuce kluce importěrowaś?

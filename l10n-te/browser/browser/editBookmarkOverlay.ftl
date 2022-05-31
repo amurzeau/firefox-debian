@@ -6,6 +6,10 @@ bookmark-overlay-name-2 =
     .value = పేరు
     .accesskey = N
 
+bookmark-overlay-url =
+    .value = చిరునామా
+    .accesskey = U
+
 # Location refers to the position of the bookmark within the browser's
 # bookmarks, not to its URL or address.
 bookmark-overlay-location-2 =
@@ -35,4 +39,8 @@ bookmark-overlay-tags-expander =
     .tooltiptext = అన్ని ట్యాగులను చూపించు
     .tooltiptextdown = { bookmark-overlay-tags-expander.tooltiptext }
     .tooltiptextup = దాచిపెట్టు
+
+bookmark-overlay-keyword-2 =
+    .value = కీపదం
+    .accesskey = K
 

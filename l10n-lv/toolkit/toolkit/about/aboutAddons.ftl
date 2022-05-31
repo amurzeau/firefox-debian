@@ -141,7 +141,6 @@ extensions-warning-update-security = Papildinājumu drošības pārbaude ir deak
 extensions-warning-update-security-button = Aktivēt
     .title = Aktivēt papildinājumu drošības pārbaudi
 
-
 ## Strings connected to add-on updates
 
 addon-updates-check-for-updates = Meklēt atjauninājumus
@@ -197,9 +196,33 @@ addon-open-about-debugging = Atkļūdot papildinājumus
 ## This is the tooltip text for the recommended badges for an extension in about:addons. The
 ## badge is a small icon displayed next to an extension when it is recommended on AMO.
 
+
 ##
+
 
 ## Page headings
 
 addon-page-options-button =
     .title = Visu papildinājumu rīki
+
+## Detail notifications
+## Variables:
+##   $name (String): name of the add-on.
+
+# Variables:
+#   $version (String): application version.
+details-notification-incompatible = { $name } nav savietojams ar { -brand-short-name } { $version }.
+
+details-notification-unsigned-and-disabled = { $name } nevar pārbaudīt izmantošanai ar { -brand-short-name } un ir deaktivēts.
+details-notification-unsigned-and-disabled-link = Vairāk informācijas
+
+details-notification-unsigned = { $name } nevar pārbaudīt izmantošanai ar { -brand-short-name }. Esiet piesardzīgi.
+details-notification-unsigned-link = Vairāk informācijas
+
+details-notification-blocked = { $name } ir bloķēts drošības un stabilitātes nolūkos.
+details-notification-blocked-link = Vairāk informācijas
+
+details-notification-softblocked = Ir zināms, ka { $name } rada drošības vai stabilitātes problēmas.
+details-notification-softblocked-link = Vairāk informācijas
+
+details-notification-gmp-pending = { $name } pēc mirkļa tiks instalēts.

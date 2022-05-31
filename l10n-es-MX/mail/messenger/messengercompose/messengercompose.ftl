@@ -3,6 +3,24 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+## Send Format
+
+compose-send-format-menu =
+    .label = Formato de envío
+    .accesskey = F
+compose-send-auto-menu-item =
+    .label = Automático
+    .accesskey = A
+compose-send-both-menu-item =
+    .label = Tanto HTML como Texto sin formato
+    .accesskey = B
+compose-send-html-menu-item =
+    .label = Solo HTML
+    .accesskey = H
+compose-send-plain-menu-item =
+    .label = Solo Texto sin formato
+    .accesskey = P
+
 ## Addressing widget
 
 #   $type (String) - the type of the addressing row
@@ -66,9 +84,6 @@ menuitem-toggle-attachment-pane =
 toolbar-button-add-attachment =
     .label = Adjuntar
     .tooltiptext = Agregar un adjunto ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
-add-attachment-notification-reminder =
-    .label = Agregar un archivo adjunto…
-    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 add-attachment-notification-reminder2 =
     .label = Agregar un archivo adjunto…
     .accesskey = A
@@ -95,10 +110,6 @@ attachment-bucket-count-value =
         [one] { $count } adjuntos
        *[other] { $count } adjuntos
     }
-expand-attachment-pane-tooltip =
-    .tooltiptext = Mostrar el panel de adjuntos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Ocultar el panel de adjuntos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Mostrar el panel de adjuntos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -130,10 +141,6 @@ button-return-receipt =
 
 ## Encryption
 
-message-to-be-signed-icon =
-    .alt = Firmar mensaje
-message-to-be-encrypted-icon =
-    .alt = Cifrar mensaje
 encryption-menu =
     .label = Seguridad
     .accesskey = g
@@ -146,6 +153,9 @@ encryption-options-openpgp =
 encryption-options-smime =
     .label = S/MIME
     .tooltiptext = Ver o cambiar la configuración de cifrado de S/MIME
+signing-toggle =
+    .label = Firma
+    .tooltiptext = Usar firma digital para este mensaje
 menu-openpgp =
     .label = OpenPGP
     .accesskey = O
@@ -185,38 +195,6 @@ key-notification-resolve =
 
 ## Addressing Area
 
-to-compose-address-row-label =
-    .value = Para
-#   $key (String) - the shortcut key for this field
-to-compose-show-address-row-menuitem =
-    .label = Campo { to-compose-address-row-label.value }
-    .accesskey = C
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-to-compose-show-address-row-label =
-    .value = { to-compose-address-row-label.value }
-    .tooltiptext = Mostrar campo { to-compose-address-row-label.value } ({ to-compose-show-address-row-menuitem.acceltext })
-cc-compose-address-row-label =
-    .value = Cc
-#   $key (String) - the shortcut key for this field
-cc-compose-show-address-row-menuitem =
-    .label = Campo { cc-compose-address-row-label.value }
-    .accesskey = C
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-cc-compose-show-address-row-label =
-    .value = { cc-compose-address-row-label.value }
-    .tooltiptext = Mostrar campo { cc-compose-address-row-label.value } ({ cc-compose-show-address-row-menuitem.acceltext })
-bcc-compose-address-row-label =
-    .value = Cco
-#   $key (String) - the shortcut key for this field
-bcc-compose-show-address-row-menuitem =
-    .label = Campo { bcc-compose-address-row-label.value }
-    .accesskey = B
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-bcc-compose-show-address-row-label =
-    .value = { bcc-compose-address-row-label.value }
-    .tooltiptext = Mostrar { bcc-compose-address-row-label.value } del campo ({ bcc-compose-show-address-row-menuitem.acceltext })
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-many-public-recipients-info = Los destinatarios { $count } en Para y Cc pueden ver la dirección de los demas. Puedes evitar revelar destinatarios utilizando Cco en su lugar.
 to-address-row-label =
     .value = Para
 #   $key (String) - the shortcut key for this field
@@ -379,3 +357,17 @@ cloud-file-attachment-error = No se pudo actualizar el archivo adjunto de Fileli
 # $filename (string) - name of the file that was renamed and caused the error
 cloud-file-account-error-title = Error en la cuenta de Filelink
 cloud-file-account-error = No se pudo actualizar el archivo adjunto de Filelink { $filename }, porque se ha eliminado tu cuenta de Filelink.
+
+## Link Preview
+
+link-preview-title = Vista previa del enlace
+link-preview-description = { -brand-short-name } puede agregar una vista previa incrustrada al pegar enlaces.
+link-preview-autoadd = Agregar automáticamente vista previas de enlaces cuando sea posible
+link-preview-replace-now = ¿Agregar vista para este enlace?
+link-preview-yes-replace = Sí
+
+## Dictionary selection popup
+
+spell-add-dictionaries =
+    .label = Agregar diccionarios…
+    .accesskey = A

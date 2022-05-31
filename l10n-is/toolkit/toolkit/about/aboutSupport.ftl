@@ -4,6 +4,7 @@
 
 page-title = Upplýsingar fyrir úrræðaleit
 page-subtitle =   Þessi síða inniheldur tæknilegar upplýsingar sem gætu verið hjálplegar ef þú ert að reyna að leysa eitthvað vandamál. Ef þú ert að leita að svörum við algengum spurningum um { -brand-short-name }, athugaðu þá <a data-l10n-name="support-link">hjálparvefsvæðið okkar</a>.
+
 crashes-title = Hrunskýrslur
 crashes-id = Skýrslu auðkenni
 crashes-send-date = Sent
@@ -74,10 +75,12 @@ app-basics-key-mozilla = Mozilla Location Service lykill
 app-basics-safe-mode = Öryggishamur
 app-basics-memory-size = Stærð minnis (RAM)
 app-basics-disk-available = Tiltækt diskapláss
+
 # Variables:
 #   $value (number) - Amount of data being stored
 #   $unit (string) - The unit of data being stored (e.g. MB)
 app-basics-data-size = { $value } { $unit }
+
 show-dir-label =
     { PLATFORM() ->
         [macos] Sýna í Finder
@@ -98,13 +101,13 @@ user-js-description = Notandamappan þín inniheldur <a data-l10n-name="user-js-
 locked-key-prefs-title = Mikilvægir læstir valkostir
 locked-prefs-name = Nafn
 locked-prefs-value = Gildi
-graphics-title = Grafík
+graphics-title = Myndgerð
 graphics-features-title = Eiginleikar
 graphics-diagnostics-title = Greining
 graphics-failure-log-title = Villu loggur
 graphics-gpu1-title = GPU #1
 graphics-gpu2-title = GPU #2
-graphics-decision-log-title = Atburðaskrá fyrir ákvarðanir
+graphics-decision-log-title = Atvikaskrá fyrir ákvarðanir
 graphics-crash-guards-title = Óvirkar stillingar fyrir hrunvara
 graphics-workarounds-title = Leiðir framhjá villum
 # Windowing system in use on Linux (e.g. X11, Wayland).
@@ -119,7 +122,7 @@ a11y-activated = Virkt
 a11y-force-disabled = Koma í veg fyrir aukið aðgengi
 a11y-handler-used = Aðgengishjálpari notaður
 a11y-instantiator = Accessibility Instantiator
-library-version-title = Útgáfa forritasafns
+library-version-title = Útgáfa aðgerðasafns
 copy-text-to-clipboard-label = Afrita texta á klippispjald
 copy-raw-data-to-clipboard-label = Afrita hrá gögn á klippispjald
 sandbox-title = Sandbox
@@ -133,7 +136,7 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Breytur
 troubleshoot-mode-title = Greina vandamál
 restart-in-troubleshoot-mode-label = Úrræðaleitarhamur…
-clear-startup-cache-title = Prófaðu að hreinsa skyndiminni ræsingar
+clear-startup-cache-title = Prófa að hreinsa skyndiminni ræsingar
 clear-startup-cache-label = Hreinsa skyndiminni ræsingar...
 startup-cache-dialog-title2 = Endurræsa { -brand-short-name } til að hreinsa skyndiminni ræsingar?
 startup-cache-dialog-body2 = Þetta mun ekki breyta stillingum þínum eða fjarlægja viðbætur.
@@ -146,7 +149,7 @@ max-audio-channels = Hámarksfjöldi rása
 sample-rate = Æskileg safntíðni
 roundtrip-latency = Töf fram og til baka (staðalfrávik)
 media-title = Gögn
-media-output-devices-title = Útakstæki
+media-output-devices-title = Úttakstæki
 media-input-devices-title = Inntakstæki
 media-device-name = Nafn
 media-device-group = Hópur
@@ -167,7 +170,7 @@ intl-title = Alþjóðavæðing og þýðingar
 intl-app-title = Stillingar forrits
 intl-locales-requested = Umbeðin tungumál
 intl-locales-available = Tiltæk tungumál
-intl-locales-supported = Tungumál Apps
+intl-locales-supported = Staðfærsla forrits
 intl-locales-default = Sjálfgefið tungumál
 intl-os-title = Stýrikerfi
 intl-os-prefs-system-locales = Tungumál kerfis
@@ -192,9 +195,10 @@ remote-debugging-url = Vefslóð
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
     { $days ->
-        [one] Hrunskýrslur fyrir seinasta { $days } dag
-       *[other] Hrunskýrslur fyrir seinustu { $days } daga
+        [one] Hrunskýrslur fyrir síðasta { $days } dag
+       *[other] Hrunskýrslur fyrir síðustu { $days } daga
     }
+
 # Variables
 # $minutes (integer) - Number of minutes since crash
 crashes-time-minutes =
@@ -202,6 +206,7 @@ crashes-time-minutes =
         [one] { $minutes } mínútu síðan
        *[other] { $minutes } mínútum síðan
     }
+
 # Variables
 # $hours (integer) - Number of hours since crash
 crashes-time-hours =
@@ -209,6 +214,7 @@ crashes-time-hours =
         [one] { $hours } klukkustund síðan
        *[other] { $hours } klukkustundum síðan
     }
+
 # Variables
 # $days (integer) - Number of days since crash
 crashes-time-days =
@@ -216,6 +222,7 @@ crashes-time-days =
         [one] { $days } degi síðan
        *[other] { $days } dögum síðan
     }
+
 # Variables
 # $reports (integer) - Number of pending reports
 pending-reports =
@@ -223,6 +230,7 @@ pending-reports =
         [one] Allar hrunskýrslur (einnig { $reports } hrunskýrsla í vinnslu á gefnum tíma)
        *[other] Allar hrunskýrslur (einnig { $reports } hrunskýrslur í vinnslu á gefnum tíma)
     }
+
 raw-data-copied = Hrá gögn afrituð á klippispjald
 text-copied = Texti afritaður á klippispjald
 
@@ -235,9 +243,11 @@ blocked-mismatched-version = Útgáfumismunur á milli stýrisrkáar og DLL sem 
 # Variables
 # $driverVersion - The graphics driver version string
 try-newer-driver = Lokað á fyrir þína útgáfu af skjárekli. Reyndu að uppfæra skjárekil yfir í útgáfu { $driverVersion } eða nýrri.
+
 # "ClearType" is a proper noun and should not be translated. Feel free to leave English strings if
 # there are no good translations, these are only used in about:support
 clear-type-parameters = ClearType breytur
+
 compositing = Samsetning
 hardware-h264 = H264 kóðun í vélbúnaði
 main-thread-no-omtc = aðalþráður, ekkert OMTC
@@ -252,6 +262,7 @@ virtual-monitor-disp = Sýndarskjár
 
 found = Fannst
 missing = Vantar
+
 gpu-process-pid = GPUVinnslaPid
 gpu-process = GPUVinnsla
 gpu-description = Lýsing
@@ -274,15 +285,19 @@ webgl2-renderer = WebGL 2 myndrekill
 webgl2-version = WebGL 2 útgáfa rekils
 webgl2-driver-extensions = WebGL 2 reklaviðbætur
 webgl2-extensions = WebGL 2 viðbætur
+
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
 support-blocklisted-bug = Sett á bannlista vegna þekktra vandamála: <a data-l10n-name="bug-link">villa { $bugNumber }</a>
+
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Á svörtum lista; villukóði { $failureCode }
+
 d3d11layers-crash-guard = D3D11 Compositor
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX myndafkóðari
+
 reset-on-next-restart = Endurstilla í næstu endurræsingu
 gpu-process-kill-button = Stöðva GPU ferli
 gpu-device-reset = Endurstilla tæki
@@ -291,11 +306,13 @@ uses-tiling = Notar flísar
 content-uses-tiling = Notar flísar (innihald)
 off-main-thread-paint-enabled = Litun fyrir utan aðalþráð virkt
 off-main-thread-paint-worker-count = Fjöldi vinnsluþráða fyrir litun fyrir utan aðalþráð
-target-frame-rate = Markhraði ramma
+target-frame-rate = Marktíðni ramma
+
 min-lib-versions = Bjóst við lágmarksútgáfu
 loaded-lib-versions = Útgáfa í notkun
+
 has-seccomp-bpf = Seccomp-BPF (System Call sía)
-has-seccomp-tsync = Seccomp Þráða samstilling
+has-seccomp-tsync = Seccomp þráðasamstilling
 has-user-namespaces = Nafnarými notanda
 has-privileged-user-namespaces = Nafnarými notanda fyrir forgangsþræði
 can-sandbox-content = Content Process Sandboxing
@@ -307,15 +324,18 @@ sandbox-proc-type-content = innihald
 sandbox-proc-type-file = innihald skráar
 sandbox-proc-type-media-plugin = margmiðlunar-tengiforrit
 sandbox-proc-type-data-decoder = gagnaafkóðari
+
 startup-cache-title = Skyndiminni ræsingar
 startup-cache-disk-cache-path = Slóð á diskminni
 startup-cache-ignore-disk-cache = Hunsa diskminni
 startup-cache-found-disk-cache-on-init = Fann diskminni á Init
-startup-cache-wrote-to-disk-cache = Skrifaði í diskminni
+startup-cache-wrote-to-disk-cache = Skrifað í diskminni
+
 launcher-process-status-0 = Virkt
 launcher-process-status-1 = Óvirkt vegna óhapps
 launcher-process-status-2 = Gert óvirkt með valdi
 launcher-process-status-unknown = Óþekkt staða
+
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
@@ -336,7 +356,8 @@ fission-status-enabled-by-user-pref = Virkjað af notanda
 fission-status-disabled-by-user-pref = Gert óvirkt af notanda
 fission-status-disabled-by-e10s-other = E10s óvirkt
 fission-status-enabled-by-rollout = Gert virkt af útfærslu í áföngum
-async-pan-zoom = Ósamstillt Hliðrun/Aðdráttur
+
+async-pan-zoom = Ósamstillt hliðrun/aðdráttur
 apz-none = ekkert
 wheel-enabled = músa skrunhjól virkt
 touch-enabled = snertiskjár virkur
@@ -372,6 +393,7 @@ support-remote-experiments-title = Fjartilraunir
 support-remote-experiments-name = Heiti
 support-remote-experiments-branch = Grein tilraunar
 support-remote-experiments-see-about-studies = Skoðaðu <a data-l10n-name="support-about-studies-link">about:studies</a> til að fá frekari upplýsingar, þar á meðal hvernig á að slökkva á einstökum tilraunum eða slökkva á því að { -brand-short-name } geti í framtíðinni keyrt tilteknar tegundir tilrauna.
+
 support-remote-features-title = Fjartengingareiginleikar
 support-remote-features-name = Heiti
 support-remote-features-status = Staða

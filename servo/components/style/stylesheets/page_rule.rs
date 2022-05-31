@@ -32,7 +32,7 @@ impl PageSelector {
     /// This does not currently take pseudo selectors into account.
     #[inline]
     pub fn ident_matches(&self, other: &CustomIdent) -> bool {
-        (self.0).0 == other.0
+        self.0.0 == other.0
     }
 }
 

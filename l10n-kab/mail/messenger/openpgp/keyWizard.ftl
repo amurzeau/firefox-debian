@@ -124,10 +124,10 @@ openpgp-import-key-description = Tzemreḍ ad tketreḍ tasarut tudmawant i yett
 openpgp-import-key-info = Iseɣzanen wiyaḍ zemren ad d-gelmen tasarut tudmawant s useqdec n wawalen igacuren am tsarut-inek·inem, tasarut tuffirt, tasarut tusligt neɣ tayuga n tsura.
 
 #   $count (Number) - the number of keys found in the selected files
-openpgp-import-key-list-amount =
+openpgp-import-key-list-amount-2 =
     { $count ->
-        [one] Thunderbird yufa-d tasarut i izemren ad tettwakter.
-       *[other] Thunderbird yufa-d tisura i izemren ad ttwaketrent.
+        [one] { -brand-short-name } yufa-d tasarut i izemren ad ttwaketrent.
+       *[other] { -brand-short-name } yufa-d { $count } tsura i izemren ad ttwaketrent.
     }
 
 openpgp-import-key-list-description = Sentem anti tisura i izemren ad ttwaḥesbent d tisura-k•m tudmawanin. Anagar tisura i d-tesnulfaḍ, tid i d-yemmalen tamagit-ik•im i yettwaseqdacen am tsura tudmawanin. Tzemreḍ ad tbeddleḍ aɣewwaṛ-a deg udiwenni n Yiraten n tsarut ticki.

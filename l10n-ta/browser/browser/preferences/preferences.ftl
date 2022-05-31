@@ -50,14 +50,6 @@ restart-later = பின்னர் மீட்துவக்கு
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that Container Tabs
-# are being enabled by an extension.
-extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name }, நீட்சிக்கு கலன் கீற்றுகள் தேவைப்படுகிறது.
-
-# This string is shown to notify the user that their proxy configuration preferences
-# are being controlled by an extension.
-extension-controlled-proxy-config = <img data-l10n-name="icon"/> { $name }, நீட்டிப்பு { -brand-short-name } இணையத்துடன் எவ்வாறு இணைய முடியும் என்பதைக் கட்டுப்படுத்துகிறது.
-
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -86,10 +78,6 @@ set-as-my-default-browser =
     .label = முன்னிருப்பாக்கு…
     .accesskey = D
 
-startup-restore-previous-session =
-    .label = முந்தைய அமர்வை மீட்டமை
-    .accesskey = s
-
 disable-extension =
     .label = துணைநிரலை முடக்கவும்
 
@@ -102,10 +90,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = தொடுப்புகளை புதிய சாளரத்தில் திறவாமல் கீற்றுகளில் திறக்கவும்
     .accesskey = w
-
-warn-on-close-multiple-tabs =
-    .label = பல கீற்றுகளை மூடும் போது உங்களை எச்சரிக்கும்
-    .accesskey = m
 
 warn-on-open-many-tabs =
     .label = பல கீற்றுகளைத் திறக்கும் போது { -brand-short-name } மெதுவாகும் என்பதை எச்சரி
@@ -152,12 +136,9 @@ containers-remove-alert-msg =
 containers-remove-ok-button = இக்கலனை நீக்கு
 containers-remove-cancel-button = இக்கலனை நீக்க வேண்டாம்
 
-
 ## General Section - Language & Appearance
 
 language-and-appearance-header = மொழி மற்றும் தோற்றம்
-
-fonts-and-colors-header = எழுத்துருக்கள் & நிறங்கள்
 
 default-font = முன்னிருப்பு எழுத்துரு
     .accesskey = D
@@ -167,10 +148,6 @@ default-font-size = அளவு
 advanced-fonts =
     .label = உயர்நிலை...
     .accesskey = உ
-
-colors-settings =
-    .label = நிறங்கள்...
-    .accesskey = ந
 
 language-header = மொழி
 
@@ -209,6 +186,9 @@ download-header = பதிவிறக்கங்கள்
 
 download-save-to =
     .label = கோப்புகளை இங்கு சேமி
+    .accesskey = v
+
+download-save-where = கோப்புகளை இங்கு சேமி
     .accesskey = v
 
 download-choose-folder =
@@ -462,8 +442,6 @@ home-prefs-content-description = உங்கள் பயர்பாக்ஸ�
 
 home-prefs-search-header =
     .label = வலை தேடல்
-home-prefs-topsites-header =
-    .label = சிறந்த தளங்கள்
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -477,8 +455,6 @@ home-prefs-recommended-by-learn-more = இது எப்படி செயல
 home-prefs-recommended-by-option-sponsored-stories =
     .label = விளம்பரக் கதைகள்
 
-home-prefs-highlights-header =
-    .label = மிளிர்ப்புகள்
 home-prefs-highlights-option-visited-pages =
     .label = பார்வையிட்டத் தளம்
 home-prefs-highlights-options-bookmarks =
@@ -492,7 +468,6 @@ home-prefs-highlights-option-most-recent-download =
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = துணுக்குகள்
-home-prefs-snippets-description = { -vendor-short-name } மற்றும் { -brand-product-name } இலிருந்து புதுப்பிப்புகள்
 
 home-prefs-sections-rows-option =
     .label =
@@ -833,10 +808,6 @@ permissions-notification-pause =
 permissions-block-popups =
     .label = பாப் அப் (துள்ளும்) சாளரங்களை தடுக்கவும்
     .accesskey = ப
-
-permissions-block-popups-exceptions =
-    .label = விதிவிலக்குகள்...
-    .accesskey = வ
 
 permissions-addon-install-warning =
     .label = வலைத்தளங்கள் துணை நிரல்களை நிறுவ முயற்சிக்கும் போது உங்களை எச்சரிக்கும்

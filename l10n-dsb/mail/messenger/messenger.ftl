@@ -89,10 +89,6 @@ menu-file-save-as-file =
 
 ## AppMenu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-appmenu-preferences =
-    .label = Nastajenja
 appmenu-save-as-file =
     .label = Dataja…
 appmenu-settings =
@@ -133,6 +129,22 @@ message-header-msg-flagged =
     .aria-label = Z gwězdku
 message-header-msg-not-flagged =
     .title = Powěsć bźez gwězdki
+
+## Message header cutomize panel
+
+message-header-customize-panel-title = Nastajenja głowy powěsći
+message-header-customize-button-style =
+    .value = Tłocaškowy stil
+    .accesskey = T
+message-header-button-style-default =
+    .label = Symbole a tekst
+message-header-button-style-text =
+    .label = Tekst
+message-header-button-style-icons =
+    .label = Symbole
+message-header-large-subject =
+    .label = Wjelika tema
+    .accesskey = l
 
 ## Action Button Context Menu
 
@@ -176,24 +188,6 @@ decrypt-and-copy-failures = { $failures } z { $total } powěsćow njejsu se deš
 
 ## Spaces toolbar
 
-spaces-toolbar =
-    .toolbarname = Rědka źělnych programow
-spaces-toolbar-button-mail =
-    .title = K e-mailowemu rejtarikoju pśejś
-spaces-toolbar-button-address-book =
-    .title = K rejtarikoju adresnika pśejś
-spaces-toolbar-button-calendar =
-    .title = Ku kalenderowemu rejtarikoju pśejś
-spaces-toolbar-button-tasks =
-    .title = K nadawkowemu rejtarkoju pśejś
-spaces-toolbar-button-chat =
-    .title = K e-chattowemu rejtarikoju pśejś
-spaces-toolbar-button-settings =
-    .title = K rejtarikoju nastajenjow pśejś
-spaces-toolbar-button-collapse =
-    .title = Rědku źělnych programow schowaś
-spaces-toolbar-button-reveal =
-    .title = Rědku źělnych programow pokazaś
 spaces-toolbar-element =
     .toolbarname = Rědka źělnych programow
     .aria-label = Rědka źělnych programow
@@ -230,6 +224,12 @@ settings-context-open-account-settings-item =
     .label = Kontowe nastajenja wócyniś
 settings-context-open-addons-item =
     .label = Dodanki a drastwy wócyniś
+settings-context-open-settings-item2 =
+    .label = Nastajenja
+settings-context-open-account-settings-item2 =
+    .label = Kontowe nastajenja
+settings-context-open-addons-item2 =
+    .label = Dodanki a drastwy
 
 ## Spaces toolbar pinned tab menupopup
 
@@ -245,8 +245,6 @@ spaces-pinned-button-menuitem-tasks =
     .label = { spaces-toolbar-button-tasks.title }
 spaces-pinned-button-menuitem-chat =
     .label = { spaces-toolbar-button-chat.title }
-spaces-pinned-button-menuitem-reveal =
-    .label = { spaces-toolbar-button-reveal.title }
 spaces-pinned-button-menuitem-settings =
     .label = { spaces-toolbar-button-settings2.title }
 spaces-pinned-button-menuitem-show =
@@ -264,7 +262,7 @@ chat-button-unread-messages = { $count }
 
 ## Spaces toolbar customize panel
 
-spaces-context-customize =
+menuitem-customize-label =
     .label = Pśiměriś…
 spaces-customize-panel-title = Nastajenja rědki źělnych programow
 spaces-customize-background-color = Slězynowa barwa
@@ -277,5 +275,5 @@ spaces-customize-accent-background-color = Slězynowa barwa wubranego tłocaška
 spaces-customize-accent-text-color = Barwa wubranego tłocaška
 spaces-customize-button-restore = Standard wótnowiś
     .accesskey = S
-spaces-customize-button-save = Dokóńcony
+customize-panel-button-save = Dokóńcony
     .accesskey = D

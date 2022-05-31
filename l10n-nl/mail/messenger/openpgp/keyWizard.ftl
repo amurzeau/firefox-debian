@@ -124,10 +124,10 @@ openpgp-import-key-description = U kunt persoonlijke sleutels die zijn aangemaak
 openpgp-import-key-info = Andere software beschrijft een persoonlijke sleutel mogelijk met alternatieve termen, zoals uw eigen sleutel, geheime sleutel, privésleutel of sleutelpaar.
 
 #   $count (Number) - the number of keys found in the selected files
-openpgp-import-key-list-amount =
+openpgp-import-key-list-amount-2 =
     { $count ->
-        [one] Thunderbird heeft een sleutel gevonden die kan worden geïmporteerd.
-       *[other] Thunderbird heeft { $count } sleutels gevonden die kunnen worden geïmporteerd.
+        [one] { -brand-short-name } heeft een sleutel gevonden die kan worden geïmporteerd.
+       *[other] { -brand-short-name } heeft { $count } sleutels gevonden die kunnen worden geïmporteerd.
     }
 
 openpgp-import-key-list-description = Bevestig welke sleutels mogen worden behandeld als persoonlijke sleutels. Alleen sleutels die u zelf hebt aangemaakt en uw eigen identiteit tonen mogen als persoonlijke sleutels worden gebruikt. U kunt deze optie later wijzigen in het dialoogvenster Sleuteleigenschappen.

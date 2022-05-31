@@ -11,14 +11,11 @@ search-header =
 search-header-shortcut =
     .key = f
 
-list-empty-get-extensions-message =
-    Visita <a data-l10n-name="get-extensions">{ $domain }</a> per installare estensioni e temi
+list-empty-get-extensions-message = Visita <a data-l10n-name="get-extensions">{ $domain }</a> per installare estensioni e temi
 
-list-empty-get-dictionaries-message =
-    Visita <a data-l10n-name="get-extensions">{ $domain }</a> per installare dizionari
+list-empty-get-dictionaries-message = Visita <a data-l10n-name="get-extensions">{ $domain }</a> per installare dizionari
 
-list-empty-get-language-packs-message =
-    Visita <a data-l10n-name="get-extensions">{ $domain }</a> per installare pacchetti per la lingua
+list-empty-get-language-packs-message = Visita <a data-l10n-name="get-extensions">{ $domain }</a> per installare pacchetti per la lingua
 
 list-empty-installed =
     .value = Non risulta installato alcun componente aggiuntivo di questo tipo
@@ -198,7 +195,6 @@ extensions-warning-update-security = Il controllo sulla sicurezza degli aggiorna
 extensions-warning-update-security-button = Attiva
     .title = Attiva il controllo sulla sicurezza degli aggiornamenti dei componenti aggiuntivi
 
-
 ## Strings connected to add-on updates
 
 addon-updates-check-for-updates = Controlla aggiornamenti
@@ -339,11 +335,11 @@ extension-disabled-heading = Disattivate
 
 theme-enabled-heading = Attivi
 theme-disabled-heading = Disattivati
+theme-monochromatic-heading = Tonalità
+theme-monochromatic-subheading = Nuove vibranti tonalità da { -brand-product-name }. Disponibili per un periodo limitato.
 
 plugin-enabled-heading = Attivi
 plugin-disabled-heading = Disattivati
-theme-monochromatic-heading = Tonalità
-theme-monochromatic-subheading = Nuove vibranti tonalità da { -brand-product-name }. Disponibili per un periodo limitato.
 
 dictionary-enabled-heading = Attivi
 dictionary-disabled-heading = Disattivati
@@ -406,13 +402,12 @@ addon-detail-private-browsing-disallow = Non consentire
 addon-badge-recommended2 =
     .title = Vengono consigliate solo estensioni che soddisfano i requisiti di sicurezza e prestazioni di { -brand-product-name }
     .aria-label = { addon-badge-recommended2.title }
-
 addon-badge-line3 =
-  .title = Estensione ufficiale realizzata da Mozilla. Rispetta gli standard in materia di sicurezza e prestazioni
-  .aria-label = { addon-badge-line3.title }
+    .title = Estensione ufficiale realizzata da Mozilla. Rispetta gli standard in materia di sicurezza e prestazioni
+    .aria-label = { addon-badge-line3.title }
 addon-badge-verified2 =
-  .title = Questa estensione è stata verificata per garantire il rispetto dei nostri standard in materia di sicurezza e prestazioni
-  .aria-label = { addon-badge-verified2.title }
+    .title = Questa estensione è stata verificata per garantire il rispetto dei nostri standard in materia di sicurezza e prestazioni
+    .aria-label = { addon-badge-verified2.title }
 
 ##
 
@@ -423,7 +418,6 @@ release-notes-loading = Caricamento in corso…
 release-notes-error = Siamo spiacenti, si è verificato un errore durante il caricamento delle note di versione.
 
 addon-permissions-empty = Questa estensione non richiede alcun permesso
-
 addon-permissions-required = Permessi obbligatori per funzionalità principali:
 addon-permissions-optional = Permessi facoltativi per funzionalità aggiuntive:
 addon-permissions-learnmore = Ulteriori informazioni sui permessi
@@ -453,3 +447,25 @@ addons-heading-search-input =
 
 addon-page-options-button =
     .title = Strumenti per tutti i componenti aggiuntivi
+
+## Detail notifications
+## Variables:
+##   $name (String): name of the add-on.
+
+# Variables:
+#   $version (String): application version.
+details-notification-incompatible = { $name } non è compatibile con { -brand-short-name } { $version }.
+
+details-notification-unsigned-and-disabled = { $name } è stato disattivato in quanto non è verificato per l’utilizzo in { -brand-short-name }.
+details-notification-unsigned-and-disabled-link = Ulteriori informazioni
+
+details-notification-unsigned = { $name } non è verificato per l’utilizzo in { -brand-short-name }. Procedere con cautela.
+details-notification-unsigned-link = Ulteriori informazioni
+
+details-notification-blocked = { $name } è stato disattivato in quanto comporta rischi per la stabilità o la sicurezza.
+details-notification-blocked-link = Ulteriori informazioni
+
+details-notification-softblocked = { $name } è riconosciuto come causa di problemi per la stabilità o la sicurezza.
+details-notification-softblocked-link = Ulteriori informazioni
+
+details-notification-gmp-pending = { $name } verrà installato tra qualche istante.

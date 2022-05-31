@@ -181,6 +181,11 @@ openpgp-key-man-reload =
 openpgp-key-man-change-expiry =
     .label = Cambiar data de expiration
     .accesskey = C
+openpgp-key-man-refresh-online =
+    .label = Actualisar online
+    .accesskey = A
+openpgp-key-man-ignored-ids =
+    .label = Adresses email
 openpgp-key-man-del-key =
     .label = Deler le clave(s)
     .accesskey = D
@@ -226,8 +231,10 @@ openpgp-key-man-select-all-key =
     .key = e
 openpgp-key-man-key-details-key =
     .key = I
+openpgp-ign-addr-intro = Tu accepta usar iste clave pro le sequente adresses email eligite:
 openpgp-key-details-title =
     .title = Proprietates del clave
+openpgp-key-details-doc-title = Proprietates del clave
 openpgp-key-details-signatures-tab =
     .label = Certificationes
 openpgp-key-details-structure-tab =
@@ -236,11 +243,19 @@ openpgp-key-details-uid-certified-col =
     .label = ID usator/Certificate per
 openpgp-key-details-key-id-label = ID de clave
 openpgp-key-details-user-id2-label = Presumite proprietario de clave
+openpgp-key-details-user-id3-label = Proprietario de clave asserite
 openpgp-key-details-id-label =
     .label = ID
 openpgp-key-details-key-type-label = Typo
 openpgp-key-details-key-part-label =
     .label = Parte del clave
+openpgp-key-details-attr-ignored = ATTENTION: Iste clave pote non functionar como expectate, perque parte de su proprietates es non secur e poterea esser ignorate.
+openpgp-key-details-attr-upgrade-sec = Tu debe promover le proprietates insecur.
+openpgp-key-details-attr-upgrade-pub = Tu debe demandar al proprietario de iste clave de promover le proprietates insecur.
+openpgp-key-details-upgrade-unsafe =
+    .label = Promover le proprietates insecur.
+    .accesskey = p
+openpgp-key-details-upgrade-ok = Clave promovite con successo. Comparti ille clave public con tu correspondentes.
 openpgp-key-details-algorithm-label =
     .label = Algorithmo
 openpgp-key-details-size-label =
@@ -258,7 +273,6 @@ openpgp-key-details-legend-secret-missing = Pro le claves marcate con (!) le cla
 openpgp-key-details-sel-action =
     .label = Eliger le action…
     .accesskey = E
-openpgp-key-details-also-known-label = Presumite identitates alternative del proprietario clave:
 openpgp-card-details-close-window-label =
     .buttonlabelaccept = Clauder
 openpgp-acceptance-label =
@@ -274,7 +288,6 @@ openpgp-acceptance-verified-label =
 key-accept-personal =
     Pro iste clave, tu ha le parte public e le secrete. Tu pote usar lo como clave personal.
     Si iste clave ha essite date te per alcuno altere, alora non usa lo como clave personal.
-key-personal-warning = Ha tu create iste clave tu mesme e le proprietate del clave monstrate se refere a te mesme?
 openpgp-personal-no-label =
     .label = No, non usar lo como mi clave personal.
 openpgp-personal-yes-label =
@@ -284,13 +297,14 @@ openpgp-copy-cmd-label =
 
 ## e2e encryption settings
 
+#   $identity (String) - the email address of the currently selected identity
+openpgp-description-no-key = { -brand-short-name } non ha un clave OpenPGP personal pro <b>{ $identity }</b>
 #   $count (Number) - the number of configured keys associated with the current identity
 #   $identity (String) - the email address of the currently selected identity
-openpgp-description =
+openpgp-description-has-keys =
     { $count ->
-        [0] Thunderbird non ha un clave openpgp personal pro <b>{ $identity }</b>
-        [one] Thunderbird ha trovate { $count } clave personal OpenPGP associate con <b>{ $identity }</b>
-       *[other] Thunderbird ha trovate { $count } claves personal OpenPGP associate con <b>{ $identity }</b>
+        [one] { -brand-short-name } ha trovate un clave personal OpenPGP associate con <b>{ $identity }</b>
+       *[other] { -brand-short-name } ha trovate { $count } claves personal OpenPGP associate con <b>{ $identity }</b>
     }
 #   $key (String) - the currently selected OpenPGP key
 openpgp-selection-status-have-key = Tu actual configuration usa ID clave <b>{ $key }</b>
@@ -348,14 +362,11 @@ key-expired-date = Le clave ha expirate le { $keyExpiry }
 key-expired-simple = Le clave ha expirate
 key-revoked-simple = Le clave ha essite revocate
 key-do-you-accept = Accepta tu iste clave pro verificante firmas digital e pro cryptar messages?
-key-accept-warning = Evita acceptar un clave picaresc. Usa un canal de communication in ultra al email pro verificar le dactylogramma de clave de tu correspondente.
 key-verification = Verifica le dactylogramma del clave per un canal de communication secur in ultra al e-mail pro verificar que illo es realmente le clave de { $addr }.
 # Strings enigmailMsgComposeOverlay.js
 cannot-use-own-key-because = Impossibile inviar le message, perque il ha un problema con tu clave personal. { $problem }
 cannot-encrypt-because-missing = Impossibile inviar iste message con cryptographia end-to-end, perque il ha problemas con le claves del sequente destinatarios: { $problem }
 window-locked = Le fenestra de composition es blocate; invio cancellate
-# Strings in mimeDecrypt.jsm
-mime-decrypt-encrypted-part-attachment-label = Parte de message cryptate
 # Strings in mimeDecrypt.jsm
 mime-decrypt-encrypted-part-concealed-data = Isto es un parte de message cryptate. Tu debe aperir lo in un fenestra separate cliccante sur le annexo.
 # Strings in keyserver.jsm
@@ -379,25 +390,6 @@ converter-decrypt-body-failed =
     Impossibile decifrar message con subjecto
     { $subject }.
     Vole tu reprobar con un differente phrase contrasigno o saltar le message?
-# Strings in gpg.jsm
-unknown-signing-alg = Algorithmo de signar incognite (ID: { $id })
-unknown-hash-alg = Incognite cryptographic hash (ID: { $id })
-# Strings in keyUsability.jsm
-expiry-key-expires-soon =
-    Tu clave { $desc } expirara in minus de { $dies } dies.
-    Nos consilia que tu crea un nove copula de claves e configura le contos correspondente pro usar lo.
-expiry-keys-expire-soon =
-    Tu sequente claves expirara in minus de { $dies } dies:{ $desc }.
-    Nos te consilia crear nove claves e configurar le contos correspondente pro usar los.
-expiry-key-missing-owner-trust =
-    Tu clave secrete { $desc } es carente de fide.
-    Nos te consilia configurar le "confidentia de certificationes" a "finite" in proprietates del clave.
-expiry-keys-missing-owner-trust =
-    Le sequente de tu claves secrete es carente de fide.
-    { $desc }.
-    Nos te consilia configurar le "confidentia de certificationes" a "finite" in proprietates del clave.
-expiry-open-key-manager = Aperir le gestor de clave OpenPGP
-expiry-open-key-properties = Aperir proprietates del clave
 # Strings filters.jsm
 filter-folder-required = Tu debe eliger un dossier de destination.
 filter-decrypt-move-warn-experimental =
@@ -517,6 +509,9 @@ key-error-not-accepted-as-personal = Tu non ha confirmate que le clave con ID '{
 need-online = Le function que tu ha seligite non es disponibile in modo sin connexion. Per favor va online e reproba.
 # Strings used in keyRing.jsm & keyLookupHelper.jsm
 no-key-found = Impossibile trovar ulle clave concordante le criterios de recerca specificate.
+# Strings used in keyRing.jsm & keyLookupHelper.jsm
+no-key-found2 = Impossibile trovar ulle clave utile concordante le criterios de recerca specificate.
+no-update-found = Tu jam ha le claves discoperite online.
 # Strings used in keyRing.jsm & GnuPGCryptoAPI.jsm
 fail-key-extract = Error - Commando de extraction clave fallite
 # Strings used in keyRing.jsm
@@ -604,18 +599,9 @@ send-to-news-warning =
     Per favor invia iste message solo si tu sape exactemente lo que tu face.
     Continuar?
 save-attachment-header = Salvar le annexo decifrate
-no-temp-dir =
-    Impossibile trovar un directorio temporari pro scriber
-    Configura le variabile de ambiente TEMP
 possibly-pgp-mime = Forsan message cryptate o signate PGP/MIME; pro verificar usa le function 'Decifrar/Verificar'
 cannot-send-sig-because-no-own-key = Impossibile firmar digitalmente iste message, perque tu non ha ancora configurate le cryptographia end-to-end pro <{ $key }>
 cannot-send-enc-because-no-own-key = Impossibile firmar digitalmente iste message, perque tu non ha ancora configurate le cryptographia end-to-end pro <{ $key }>
-compose-menu-attach-key =
-    .label = Attachar mi clave public
-    .accesskey = A
-compose-menu-encrypt-subject =
-    .label = Cryptation de subjecto
-    .accesskey = b
 # Strings used in decryption.jsm
 do-import-multiple =
     Importar le claves sequente?

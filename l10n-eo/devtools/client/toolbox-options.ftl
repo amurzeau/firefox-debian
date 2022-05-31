@@ -34,6 +34,10 @@ options-show-user-agent-styles-tooltip =
 options-collapse-attrs-label = Trunki atributojn de DOM
 options-collapse-attrs-tooltip =
     .title = Trunki longajn atributojn en la inspektilo
+# The label for the checkbox option to enable the "drag to update" feature
+options-inspector-draggable-properties-label = Alklaku kaj trenu por modifi valorojn pri grando
+options-inspector-draggable-properties-tooltip =
+    .title = Alklaku kaj trenu por modifi valorojn pri grando en la vido de reguloj de la inspektilo.
 
 ## "Default Color Unit" options for the Inspector
 

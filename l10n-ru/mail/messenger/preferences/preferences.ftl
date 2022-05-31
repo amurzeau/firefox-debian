@@ -5,7 +5,7 @@
 close-button =
     .aria-label = Закрыть
 
-preferences-doc-title = Настройки
+preferences-doc-title2 = Настройки
 
 category-list =
     .aria-label = Категории
@@ -165,12 +165,17 @@ restore-default-label =
     .accesskey = н
 
 default-search-engine = Поисковая система по умолчанию
-add-search-engine =
-    .label = Добавить из файла
-    .accesskey = й
+add-web-search-engine =
+    .label = Добавить…
+    .accesskey = б
 remove-search-engine =
     .label = Удалить
     .accesskey = л
+
+add-opensearch-provider-title = Добавить провайдера OpenSearch
+
+adding-opensearch-provider-failed-title = Не удалось добавить провайдера OpenSearch
+adding-opensearch-provider-failed-text = Не удалось добавить провайдера OpenSearch для { $url }.
 
 minimize-to-tray-label =
     .label = При сворачивании перемещать { -brand-short-name } в системный трей
@@ -197,7 +202,7 @@ app-icon-options =
     .label = Настройки значка приложения…
     .accesskey = ж
 
-notification-settings = Уведомления и звук по умолчанию могут быть отключены на Панели Уведомления в «Системных настройках».
+notification-settings2 = Уведомления и звук по умолчанию могут быть отключены на панели Уведомления в «Системных настройках».
 
 animated-alert-label =
     .label = Показывать уведомление
@@ -252,6 +257,9 @@ autoscroll-label =
 smooth-scrolling-label =
     .label = Использовать плавную прокрутку
     .accesskey = с
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Всегда показывать полосы прокрутки
+    .accesskey = п
 
 system-integration-legend = Интеграция с системой
 always-check-default =
@@ -411,13 +419,9 @@ quoted-text-color =
 search-handler-table =
     .placeholder = Фильтр типов контента и действий
 
-type-column-label =
-    .label = Тип содержимого
-    .accesskey = о
+type-column-header = Тип содержимого
 
-action-column-label =
-    .label = Действие
-    .accesskey = е
+action-column-header = Действие
 
 save-to-label =
     .label = Путь для сохранения файлов
@@ -530,6 +534,10 @@ warn-on-send-accel-key =
     .label = Запрашивать подтверждение при использовании сочетаний клавиш для отправки сообщений
     .accesskey = п
 
+add-link-previews =
+    .label = Добавлять предпросмотр ссылок при вставке URL-адресов
+    .accesskey = п
+
 spellcheck-label =
     .label = Проверять орфографию перед отправкой сообщения
     .accesskey = г
@@ -572,11 +580,19 @@ default-format-label =
     .label = Использовать формат Абзаца вместо Обычного текста по умолчанию
     .accesskey = п
 
-format-description = Текстовый формат:
+compose-send-format-title = Формат исходящей почты
 
-send-options-label =
-    .label = Параметры отправки…
-    .accesskey = т
+compose-send-automatic-option =
+    .label = Автоматический
+
+compose-send-both-option =
+    .label = HTML и обычный текст
+
+compose-send-html-option =
+    .label = Только HTML
+
+compose-send-plain-option =
+    .label = Только обычный текст
 
 autocomplete-description = При вводе адреса искать подходящие почтовые адреса в:
 
@@ -632,7 +648,6 @@ find-cloud-providers =
     .value = Найти больше провайдеров…
 
 cloud-account-description = Добавить новую службу хранения Filelink
-
 
 ## Privacy Tab
 
@@ -697,7 +712,6 @@ passwords-description = { -brand-short-name } может запоминать п
 passwords-button =
     .label = Сохранённые пароли…
     .accesskey = х
-
 
 primary-password-description = Мастер-пароль защищает все ваши пароли, но вам нужно будет вводить его один раз в сессию.
 
@@ -860,8 +874,8 @@ theme-label =
     .value = Тема:
     .accesskey = е
 
-style-thunderbird =
-    .label = Thunderbird
+style-mail =
+    .label = { -brand-short-name }
 style-bubbles =
     .label = Пузырьки
 style-dark =
@@ -879,6 +893,8 @@ chat-variant-label =
     .value = Вариант:
     .accesskey = а
 
+## Preferences UI Search Results
+
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -887,16 +903,16 @@ chat-variant-label =
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
 # is the name of the CSS property. It is intended only to adjust the element's width.
 # Do not translate.
-search-preferences-input =
+search-preferences-input2 =
     .style = width: 15.4em
     .placeholder = Поиск в Настройках
 
-## Preferences UI Search Results
+## Settings UI Search Results
 
 search-results-header = Результаты поиска
 
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
-search-results-empty-message =
+search-results-empty-message2 =
     { PLATFORM() ->
         [windows] Извините! В настройках не найдено результатов для «<span data-l10n-name="query"></span>».
        *[other] Извините! В настройках не найдено результатов для «<span data-l10n-name="query"></span>».

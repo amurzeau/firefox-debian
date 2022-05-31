@@ -12,10 +12,10 @@ Closes: #552426, #553453
  1 file changed, 2 insertions(+), 3 deletions(-)
 
 diff --git a/browser/components/sessionstore/SessionStore.jsm b/browser/components/sessionstore/SessionStore.jsm
-index 650a597..de13b8a 100644
+index b8e2ac8..d7860ba 100644
 --- a/browser/components/sessionstore/SessionStore.jsm
 +++ b/browser/components/sessionstore/SessionStore.jsm
-@@ -5012,7 +5012,7 @@ var SessionStoreInternal = {
+@@ -5026,7 +5026,7 @@ var SessionStoreInternal = {
          // _getWindowDimension.
          let desktopToCssScale =
            aWindow.desktopToDeviceScale / aWindow.devicePixelRatio;
@@ -24,7 +24,7 @@ index 650a597..de13b8a 100644
        }
        if (
          aWidth &&
-@@ -5041,9 +5041,8 @@ var SessionStoreInternal = {
+@@ -5055,9 +5055,8 @@ var SessionStoreInternal = {
            case "minimized":
              if (aSizeModeBeforeMinimized == "maximized") {
                aWindow.maximize();

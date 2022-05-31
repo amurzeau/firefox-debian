@@ -130,14 +130,33 @@ about-addressbook-confirm-delete-contacts =
 
 ## Details
 
+about-addressbook-write-action-button = Створити
+about-addressbook-event-action-button = Подія
+about-addressbook-search-action-button = Пошук
 about-addressbook-begin-edit-contact-button = Редагувати
+about-addressbook-delete-edit-contact-button = Видалити
 about-addressbook-cancel-edit-contact-button = Скасувати
 about-addressbook-save-edit-contact-button = Зберегти
+about-addressbook-add-contact-to = Додати в:
 about-addressbook-details-email-addresses-header = Адреси електронної пошти
 about-addressbook-details-phone-numbers-header = Номери телефону
 about-addressbook-details-home-address-header = Домашня адреса
 about-addressbook-details-work-address-header = Робоча адреса
+about-addressbook-details-addresses-header = Адреси
+about-addressbook-details-notes-header = Примітки
 about-addressbook-details-other-info-header = Інші відомості
+about-addressbook-entry-type-work = Робота
+about-addressbook-entry-type-home = Дім
+about-addressbook-entry-type-fax = Факс
+about-addressbook-entry-type-cell = Мобільний
+about-addressbook-entry-type-pager = Пейджер
+about-addressbook-entry-name-birthday = День народження
+about-addressbook-entry-name-anniversary = Ювілей
+about-addressbook-entry-name-title = Заголовок
+about-addressbook-entry-name-department = Відділ
+about-addressbook-entry-name-organization = Організація
+about-addressbook-entry-name-website = Вебсайт
+about-addressbook-entry-name-time-zone = Часовий пояс
 about-addressbook-unsaved-changes-prompt-title = Незбережені зміни
 about-addressbook-unsaved-changes-prompt = Зберегти зміни, перш ніж вийти з режиму редагування?
 

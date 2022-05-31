@@ -16,6 +16,7 @@ opensearch-error-duplicate-desc =
         [neuter] { -brand-short-name } nemohlo
        *[other] Aplikace { -brand-short-name } nemohla
     } nainstalovat vyhledávač z „{ $location-url }“, protože už existuje jiný se stejným názvem.
+
 opensearch-error-format-title = Neplatný formát
 opensearch-error-format-desc =
     { -brand-short-name.gender ->
@@ -24,6 +25,7 @@ opensearch-error-format-desc =
         [neuter] { -brand-short-name } nemohlo
        *[other] Aplikace { -brand-short-name } nemohla
     } nainstalovat vyhledávač z „{ $location-url }“
+
 opensearch-error-download-title = Chyba stahování
 opensearch-error-download-desc =
     { -brand-short-name.gender ->
@@ -37,9 +39,11 @@ opensearch-error-download-desc =
 
 searchbar-submit =
     .tooltiptext = Potvrdí hledání
+
 # This string is displayed in the search box when the input field is empty
 searchbar-input =
     .placeholder = Vyhledat
+
 searchbar-icon =
     .tooltiptext = Vyhledat
 
@@ -48,5 +52,11 @@ searchbar-icon =
 ## $oldEngine (String) - the search engine to be removed.
 ## $newEngine (String) - the search engine to replace the removed search engine.
 
-remove-search-engine-message = <strong>Váš výchozí vyhledávač byl změněn.</strong> { -brand-short-name } už vyhledávač { $oldEngine } jako vestavěný nepodporuje. Vaším výchozím vyhledávačem je teď { $newEngine }, ale můžete ho změnit v nastavení. <label data-l10n-name="remove-search-engine-article">Zjistit více</label>
+removed-search-engine-message =
+    { -brand-short-name.gender ->
+        [masculine] <strong>Váš výchozí vyhledávač byl změněn.</strong> Vyhledávač { $oldEngine } už není ve { -brand-short-name(case: "loc") } dostupný jako výchozí vyhledávač. Váš nový výchozí vyhledávač je teď { $newEngine }. Výchozí vyhledávač můžete změnit v nastavení. <label data-l10n-name="remove-search-engine-article">Zjistit více</label>
+        [feminine] <strong>Váš výchozí vyhledávač byl změněn.</strong> Vyhledávač { $oldEngine } už není v { -brand-short-name(case: "loc") } dostupný jako výchozí vyhledávač. Váš nový výchozí vyhledávač je teď { $newEngine }. Výchozí vyhledávač můžete změnit v nastavení. <label data-l10n-name="remove-search-engine-article">Zjistit více</label>
+        [neuter] <strong>Váš výchozí vyhledávač byl změněn.</strong> Vyhledávač { $oldEngine } už není v { -brand-short-name(case: "loc") } dostupný jako výchozí vyhledávač. Váš nový výchozí vyhledávač je teď { $newEngine }. Výchozí vyhledávač můžete změnit v nastavení. <label data-l10n-name="remove-search-engine-article">Zjistit více</label>
+       *[other] <strong>Váš výchozí vyhledávač byl změněn.</strong> Vyhledávač { $oldEngine } už není v aplikaci { -brand-short-name } dostupný jako výchozí vyhledávač. Váš nový výchozí vyhledávač je teď { $newEngine }. Výchozí vyhledávač můžete změnit v nastavení. <label data-l10n-name="remove-search-engine-article">Zjistit více</label>
+    }
 remove-search-engine-button = OK

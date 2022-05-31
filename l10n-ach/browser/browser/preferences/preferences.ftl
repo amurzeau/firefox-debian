@@ -52,22 +52,6 @@ restart-later = Cak odoco lacen
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their notifications permission
-# is being controlled by an extension.
-extension-controlled-web-notifications = Lamed, <img data-l10n-name="icon"/> { $name }, tye ka loono ter man.
-
-# This string is shown to notify the user that Container Tabs
-# are being enabled by an extension.
-extension-controlled-privacy-containers = Lamed, <img data-l10n-name="icon"/> { $name }, mito dirica matino me mako jami.
-
-# This string is shown to notify the user that their content blocking "All Detected Trackers"
-# preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = Lamed , <img data-l10n-name="icon"/> { $name }, tye ka loono ter man.
-
-# This string is shown to notify the user that their proxy configuration preferences
-# are being controlled by an extension.
-extension-controlled-proxy-config = Lamed, <img data-l10n-name="icon"/> { $name }, tye ka loono kit ma { -brand-short-name } kube ki intanet.
-
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -96,10 +80,6 @@ set-as-my-default-browser =
     .label = Mi obed makwongo…
     .accesskey = m
 
-startup-restore-previous-session =
-    .label = Dwok kare ma okato ni
-    .accesskey = o
-
 startup-restore-warn-on-quit =
     .label = Niangi kace tye kaloro layeny
 
@@ -115,10 +95,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Yab kakube i dirica matino me kaka i dirica manyen
     .accesskey = w
-
-warn-on-close-multiple-tabs =
-    .label = Niangi kace tye ka loro dirica matino mapol
-    .accesskey = m
 
 warn-on-open-many-tabs =
     .label = Niangi ka ce yabo dirica matino mapol dwoko dwiro pa { -brand-short-name } piny
@@ -165,12 +141,9 @@ containers-remove-alert-msg =
 containers-remove-ok-button = Kwany Lamak jami man
 containers-remove-cancel-button = Pe ikwany Lamak jami man
 
-
 ## General Section - Language & Appearance
 
 language-and-appearance-header = Leb ki Neno
-
-fonts-and-colors-header = Dit me coc & rangi
 
 default-font = Dit coc makwongo
     .accesskey = D
@@ -180,10 +153,6 @@ default-font-size = Dit
 advanced-fonts =
     .label = Ma lamal…
     .accesskey = M
-
-colors-settings =
-    .label = Rangi…
-    .accesskey = R
 
 language-header = Leb
 
@@ -224,6 +193,9 @@ download-header = Gam
 
 download-save-to =
     .label = Gwok pwail bot
+    .accesskey = w
+
+download-save-where = Gwok pwail bot
     .accesskey = w
 
 download-choose-folder =
@@ -469,9 +441,6 @@ home-prefs-content-description = Yer jami ma imito ii kio me Acakki Firefox.
 
 home-prefs-search-header =
     .label = Yeny me kakube
-home-prefs-topsites-header =
-    .label = Kakube ma gi loyo
-home-prefs-topsites-description = Kakube ma ilimo loyo
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -485,9 +454,6 @@ home-prefs-recommended-by-learn-more = Kit ma tiyo kwede
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Lok ma kicwako
 
-home-prefs-highlights-header =
-    .label = Wiye madito
-home-prefs-highlights-description = Yer me kakube ma igwoko nyo ilimo
 home-prefs-highlights-option-visited-pages =
     .label = Potbuk ma kilimo
 home-prefs-highlights-options-bookmarks =
@@ -503,7 +469,6 @@ home-prefs-highlights-option-saved-to-pocket =
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = Kwena macek
-home-prefs-snippets-description = Ngec manyen ki bot { -vendor-short-name } ki { -brand-product-name }
 
 ## Search Section
 
@@ -556,7 +521,6 @@ search-restore-default =
 search-remove-engine =
     .label = Kwany
     .accesskey = K
-
 search-add-engine =
     .label = Med
     .accesskey = M
@@ -906,10 +870,6 @@ permissions-autoplay-settings =
 permissions-block-popups =
     .label = Geng dirica ma pye-malo
     .accesskey = G
-
-permissions-block-popups-exceptions =
-    .label = Ma kiweko woko…
-    .accesskey = M
 
 permissions-addon-install-warning =
     .label = Niangi ka kakube teme me keto med-ikome

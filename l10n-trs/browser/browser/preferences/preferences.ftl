@@ -55,22 +55,6 @@ restart-later = Nayi'i ñun' ne' rukú doj
 ## Variables:
 ##   $name (String): name of the extension
 
-# This string is shown to notify the user that their notifications permission
-# is being controlled by an extension.
-extension-controlled-web-notifications = 'Ngo ekstensiûn, <img data-l10n-name="icon"/> { $name }, nikaj ñu'unj sa nahuin nan.
-
-# This string is shown to notify the user that Container Tabs
-# are being enabled by an extension.
-extension-controlled-privacy-containers = 'Ngo extensión, <img data-l10n-name="icon"/> { $name }, nachin' riña ma rakïj ñanj.
-
-# This string is shown to notify the user that their content blocking "All Detected Trackers"
-# preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = 'Ngo ekstensiûn, <img data-l10n-name="icon"/> { $name }, nikaj ñu'unj sa nahuin nan.
-
-# This string is shown to notify the user that their proxy configuration preferences
-# are being controlled by an extension.
-extension-controlled-proxy-config = 'Ngo extensión, <img data-l10n-name="icon"/> { $name }, dugumin { -brand-short-name } se daj gatut riña internet.
-
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -99,10 +83,6 @@ set-as-my-default-browser =
     .label = Nagi'iaj yitïn' ma...
     .accesskey = D
 
-startup-restore-previous-session =
-    .label = Nanikaj ñun' riña sesión 'ngà gachin
-    .accesskey = s
-
 startup-restore-warn-on-quit =
     .label = Gataj na'an gunïnt nga gahui riña nana'uî't nuguan'an
 
@@ -118,10 +98,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Na'ni' rakïj ñanj luga na'ni' ventana
     .accesskey = w
-
-warn-on-close-multiple-tabs =
-    .label = Gataj ma guní 'ngà narán ga'ì rakïj ñanj
-    .accesskey = m
 
 warn-on-open-many-tabs =
     .label = Gataj guní 'ngà nayi'nin ga'ì rakïj ñanj{ -brand-short-name } { -brand-short-name } dadin' ga'ue gi'iaj sun nananj ma
@@ -168,12 +144,9 @@ containers-remove-alert-msg =
 containers-remove-ok-button = Dure' markador na
 containers-remove-cancel-button = Si dure' markador na
 
-
 ## General Section - Language & Appearance
 
 language-and-appearance-header = Nânj a'mi' ni daj ga ma
-
-fonts-and-colors-header = Daj ga ma ni kolô
 
 default-font = Letra 'nga hua nia
     .accesskey = L
@@ -183,10 +156,6 @@ default-font-size = Dàj yachìj man
 advanced-fonts =
     .label = Sa huaj ñaa
     .accesskey = S
-
-colors-settings =
-    .label = Kolô
-    .accesskey = K
 
 language-header = Nanj a'min'
 
@@ -227,6 +196,9 @@ download-header = Nadunínj
 
 download-save-to =
     .label = Na'ninj so' archivo riña
+    .accesskey = a
+
+download-save-where = Na'ninj so' archivo riña
     .accesskey = a
 
 download-choose-folder =
@@ -502,9 +474,6 @@ home-prefs-content-description = Gini'iaj ahuin si ruat gini'iaj riña Firefox.
 
 home-prefs-search-header =
     .label = Nana'uì' web
-home-prefs-topsites-header =
-    .label = Hiuj ni'iaj yitïnj rè'
-home-prefs-topsites-description = Riña gaché nu yitïnjt
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -520,9 +489,6 @@ home-prefs-recommended-by-learn-more = Dàj 'iaj sunj
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Nej sa du'uej
 
-home-prefs-highlights-header =
-    .label = Sa ña'an
-home-prefs-highlights-description = Riña gaché nut nej si na'nín sat
 home-prefs-highlights-option-visited-pages =
     .label = Nej ñanj ngà' ni'io'
 home-prefs-highlights-options-bookmarks =
@@ -538,7 +504,6 @@ home-prefs-highlights-option-saved-to-pocket =
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = 'Ngò dajsu
-home-prefs-snippets-description = Sa nakàa doj riña { -vendor-short-name } nī { -brand-product-name }
 
 home-prefs-sections-rows-option =
     .label =
@@ -556,7 +521,6 @@ search-bar-shown =
     .label = Nuto' dukuán nana'ui' riña dukuán mā sa garasun'
 
 search-engine-default-header = Sa ruguñu'unj ñù' nana'uì'
-
 search-engine-default-desc-2 = Nan huin sa 'na' niñā guendâ nanà'uì't nī nùn man riña nej bârra. Ga'ue nadunāt amān garan' ruhuâ.
 search-engine-default-private-desc-2 = Nanà'uì' 'ngo sa riñā nanà'uì' niñānt guendâ Windows Huìi
 search-separate-default-engine =
@@ -622,9 +586,6 @@ containers-add-button =
 containers-remove-button =
     .label = Dure'
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
@@ -639,9 +600,6 @@ sync-signedout-caption = Ganikaj web ga'ant
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Naduni' Firefox guenda <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> guenda <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> da' gi'iaj sun ma 'ngà si agat.
-
-## Sync Section - Signed in
-
 
 ## Firefox Account - Signed in
 
@@ -761,9 +719,6 @@ sync-connect-another-device = Gatu 'ngà a'ngo aga'a...
 ## Privacy Section
 
 privacy-header = Daj da'ui navegador gi'iaj sunj
-
-## Privacy Section - Forms
-
 
 ## Privacy Section - Logins and Passwords
 
@@ -886,8 +841,6 @@ sitedata-block-desc = Sa naràn riña
 
 sitedata-option-block-cross-site-trackers =
     .label = Sa naga'naj riña nej sitiô nadunâ dugui'
-sitedata-option-block-cross-site-and-social-media-trackers =
-    .label = Sa naga'naj riña nej sîtio ni nej rêd sociâl
 sitedata-option-block-unvisited =
     .label = Si kokî nej sitiô nu atûjt
 sitedata-option-block-all-third-party =
@@ -960,7 +913,6 @@ content-blocking-cryptominers = Nej Kriptominêro
 content-blocking-fingerprinters = Nej da'nga' ra'a
 
 content-blocking-warning-title = ¡Nuguan' huaa!
-
 content-blocking-warning-learn-how = Gahuin chrūn dàj
 
 content-blocking-reload-description = Da' naduna sa huin ruhuât ni da'uît nagi'iaj nakàt rakïj ñanj.
@@ -1042,10 +994,6 @@ permissions-block-popups =
     .label = Garrun riña nej ventana ahui ma'an
     .accesskey = B
 
-permissions-block-popups-exceptions =
-    .label = Sa taj a
-    .accesskey = E
-
 permissions-addon-install-warning =
     .label = Gataj na'anj ma 'ngà nej sitio na huin ruhua dugutuj nej sa taj a
     .accesskey = W
@@ -1117,6 +1065,7 @@ certs-devices =
     .accesskey = N
 
 ## Privacy Section - HTTPS-Only
+
 
 ## The following strings are used in the Download section of settings
 

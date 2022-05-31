@@ -148,14 +148,33 @@ about-addressbook-confirm-delete-contacts =
 
 ## Details
 
+about-addressbook-write-action-button = Ysgrifennu
+about-addressbook-event-action-button = Digwyddiad
+about-addressbook-search-action-button = Chwilio
 about-addressbook-begin-edit-contact-button = Golygu
+about-addressbook-delete-edit-contact-button = Dileu
 about-addressbook-cancel-edit-contact-button = Diddymu
 about-addressbook-save-edit-contact-button = Cadw
+about-addressbook-add-contact-to = Ychwanegu at:
 about-addressbook-details-email-addresses-header = Cyfeiriadau E-bost
 about-addressbook-details-phone-numbers-header = Rhifau Ffôn
 about-addressbook-details-home-address-header = Cyfeiriad Cartref
 about-addressbook-details-work-address-header = Cyfeiriad Gwaith
+about-addressbook-details-addresses-header = Cyfeiriadau
+about-addressbook-details-notes-header = Nodiadau
 about-addressbook-details-other-info-header = Manylion Eraill
+about-addressbook-entry-type-work = Gwaith
+about-addressbook-entry-type-home = Cartref
+about-addressbook-entry-type-fax = Ffacs
+about-addressbook-entry-type-cell = Symudol
+about-addressbook-entry-type-pager = Swnyn
+about-addressbook-entry-name-birthday = Pen-blwydd
+about-addressbook-entry-name-anniversary = Dathliad
+about-addressbook-entry-name-title = Teitl
+about-addressbook-entry-name-department = Adran
+about-addressbook-entry-name-organization = Corff
+about-addressbook-entry-name-website = Gwefan
+about-addressbook-entry-name-time-zone = Cylch Amser
 about-addressbook-unsaved-changes-prompt-title = Newidiadau heb eu Cadw
 about-addressbook-unsaved-changes-prompt = Ydych chi am gadw'ch newidiadau cyn gadael y wedd golygu?
 

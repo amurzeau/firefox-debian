@@ -88,10 +88,6 @@ menu-file-save-as-file =
 
 ## AppMenu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-appmenu-preferences =
-    .label = Nastavenia
 appmenu-save-as-file =
     .label = Súbor…
 appmenu-settings =
@@ -131,6 +127,22 @@ message-header-msg-flagged =
     .aria-label = Označené hviezdičkou
 message-header-msg-not-flagged =
     .title = Správa neoznačená hviezdičkou
+
+## Message header cutomize panel
+
+message-header-customize-panel-title = Nastavenia hlavičky správy
+message-header-customize-button-style =
+    .value = Štýl tlačidiel
+    .accesskey = t
+message-header-button-style-default =
+    .label = Ikony a text
+message-header-button-style-text =
+    .label = Text
+message-header-button-style-icons =
+    .label = Ikony
+message-header-large-subject =
+    .label = Zväčšiť predmet
+    .accesskey = Z
 
 ## Action Button Context Menu
 
@@ -210,6 +222,12 @@ settings-context-open-account-settings-item =
     .label = Otvoriť Nastavenia účtov
 settings-context-open-addons-item =
     .label = Otvoriť Správcu doplnkov
+settings-context-open-settings-item2 =
+    .label = Nastavenia
+settings-context-open-account-settings-item2 =
+    .label = Nastavenia účtu
+settings-context-open-addons-item2 =
+    .label = Doplnky a témy
 
 ## Spaces toolbar pinned tab menupopup
 
@@ -241,7 +259,7 @@ chat-button-unread-messages = { $count }
 
 ## Spaces toolbar customize panel
 
-spaces-context-customize =
+menuitem-customize-label =
     .label = Prispôsobiť…
 spaces-customize-panel-title = Nastavenia panela s nástrojmi Miesta
 spaces-customize-background-color = Farba pozadia
@@ -254,5 +272,5 @@ spaces-customize-accent-background-color = Farba pozadia zvolenej položky
 spaces-customize-accent-text-color = Farba zvolenej položky
 spaces-customize-button-restore = Obnoviť predvolené
     .accesskey = b
-spaces-customize-button-save = Hotovo
+customize-panel-button-save = Hotovo
     .accesskey = H

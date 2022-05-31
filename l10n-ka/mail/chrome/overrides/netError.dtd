@@ -40,7 +40,7 @@
 <!ENTITY fileAccessDenied.title "ფაილთან წვდომა აკრძალულია">
 <!ENTITY fileAccessDenied.longDesc "
 <ul>
-  <li>შესაძლოა წაშლილია, გადატანილია ან ფაილზე წვდომის უფლებები შეზღუდულია.</li>
+  <li>შესაძლოა წაშლილია, გადატანილია ან ფაილთან წვდომის უფლებები შეზღუდულია.</li>
 </ul>
 ">
 
@@ -192,7 +192,7 @@ functionality specific to thunderbird. -->
 <!ENTITY inadequateSecurityError.title "კავშირი დაუცველია">
 <!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
      "NS_ERROR_NET_INADEQUATE_SECURITY". -->
-<!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> იყენებს უსაფრთხოების ისეთ ტექნოლოგიას, რომელიც მოძველებული და დაუცველია. თავდამსხმელმა შესაძლოა მარტივად მიიღოს იმ მონაცემებზე წვდომა, რომელიც დაცულად მიგაჩნიათ. საიტზე შესვლამდე, აუცილებელია მისმა ხელმძღვანელობამ ეს ხარვეზი აღმოფხვრას.</p><p>შეცდომის კოდი: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
+<!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> იყენებს უსაფრთხოების ისეთ ტექნოლოგიას, რომელიც მოძველებული და დაუცველია. თავდამსხმელმა შესაძლოა, მარტივად მოახერხოს იმ მონაცემებთან წვდომა, რომლებიც დაცულად მიგაჩნიათ. საიტზე შესვლამდე, აუცილებელია მისმა ხელმძღვანელობამ ეს ხარვეზი აღმოფხვრას.</p><p>შეცდომის კოდი: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
 
 <!ENTITY blockedByPolicy.title "შეზღუდული გვერდი">
 

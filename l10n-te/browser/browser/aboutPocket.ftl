@@ -39,7 +39,22 @@ pocket-panel-signup-tagline = ఏ పరికరంలో అయినా, ఎ�
 pocket-panel-signup-tagline-story-one = { -brand-product-name } నుంచి ఏదైనా వ్యాసం, వీడియో లేదా పేజీని భద్రపరచుకోడానికి { -pocket-brand-name } బొత్తాన్ని నొక్కండి.
 pocket-panel-signup-tagline-story-two = ఏ పరికరంలో అయినా, ఎప్పుడైనా { -pocket-brand-name }లో చూడండి.
 
+pocket-panel-signup-cta-c = మీ జాబితాను ఏ పరికరంలోనైనా, ఎప్పుడైనా చూడండి.
+
 ## about:pocket-home panel
 
 pocket-panel-home-my-list = నా జాబితా
 pocket-panel-home-welcome-back = పునఃస్వాగతం
+pocket-panel-home-explore-popular-topics = ప్రాచుర్య అంశాలను చూడండి
+pocket-panel-home-discover-more = మరింత కనుగొనండి
+
+pocket-panel-home-most-recent-saves = ఇటీవల మీరు భద్రపరచినవి ఇవి:
+pocket-panel-home-new-user-message = మీరు ఇటీవల భద్రపరచిన వాటిని ఇక్కడ చూడవచ్చు.
+
+## Pocket panel header component
+
+
+## Pocket panel buttons
+
+pocket-panel-button-show-all = అన్నీ చూపించు
+pocket-panel-button-remove = తీసివేయి

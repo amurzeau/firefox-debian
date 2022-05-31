@@ -13,6 +13,7 @@
 policy-3rdparty = 設定 WebExtension 可透過 chrome.storage.managed 存取的政策。
 policy-AllowedDomainsForApps = 指定允許存取 Google Workspace 的網域。
 policy-AppAutoUpdate = 開啟或關閉應用程式自動更新。
+policy-AppUpdatePin = 防止 { -brand-short-name } 更新超過特定版本。
 policy-AppUpdateURL = 自訂應用程式更新網址。
 policy-Authentication = 為支援的網站設定整合身分驗證方式。
 policy-AutoLaunchProtocolsFromOrigins = 列舉一組外部通訊協定的清單與來源網址，可不提示使用者就自動啟動外部通訊協定。
@@ -58,6 +59,7 @@ policy-DownloadDirectory = 設定並鎖定下載資料夾。
 policy-EnableTrackingProtection = 開啟或關閉內容封鎖功能，並可選擇鎖定該功能。
 # “lock” means that the user won’t be able to change this setting
 policy-EncryptedMediaExtensions = 開啟或關閉加密媒體擴充功能，並可選擇鎖定該功能。
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = 針對特定網域，關閉特定檔案類型副檔名的警告。
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.

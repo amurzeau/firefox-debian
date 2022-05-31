@@ -5,7 +5,7 @@
 close-button =
     .aria-label = Mdel
 
-preferences-doc-title = Ismenyifen
+preferences-doc-title2 = Iɣewwaren
 
 category-list =
     .aria-label = Taggayin
@@ -165,12 +165,18 @@ restore-default-label =
     .accesskey = E
 
 default-search-engine = Amsedday n unadi amezwer
-add-search-engine =
-    .label = Rnu seg ufaylu
+add-web-search-engine =
+    .label = Rnu…
     .accesskey = R
 remove-search-engine =
     .label = Kkes
     .accesskey = d
+
+add-opensearch-provider-title = Rnu asaǧǧăw OpenSearch
+add-opensearch-provider-text = Sekcem URL n usaǧǧaw OpenSearch ara ternuḍ. Seqdec URL srid seg ufaylu n uglam OpenSearch, neɣ URL anida yezmer ad yettwaf s wudem awurman.
+
+adding-opensearch-provider-failed-title = Timerna n usaǧǧaw OpenSearch ur teddi ara
+adding-opensearch-provider-failed-text = Yegguma ad yernu asaǧǧaw OpenSearch i{ $url }.
 
 minimize-to-tray-label =
     .label = Ticki { -brand-short-name } yuder, awi-t ɣer ufeggag n wadda
@@ -197,7 +203,7 @@ app-icon-options =
     .label = Iɣewwaṛen n tignit n usnas…
     .accesskey = g
 
-notification-settings = Ilɣuten akked imesli amezwer zemren ad ttwasensen deg ugalis n ilɣuten seg ismenyifen n unagraw.
+notification-settings2 = Ilɣuten akked imesli amezwer zemren ad ttwasensen deg ugalis n ilɣuten seg yiɣewwaren n unagraw.
 
 animated-alert-label =
     .label = Sken alɣu
@@ -252,6 +258,9 @@ autoscroll-label =
 smooth-scrolling-label =
     .label = Seqdec adrurem aleggwaɣ
     .accesskey = e
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Sken yal tikkelt ifeggagen n udrurem
+    .accesskey = k
 
 system-integration-legend = Amsidef anagrawan
 always-check-default =
@@ -411,13 +420,9 @@ quoted-text-color =
 search-handler-table =
     .placeholder = Sizdeg anawen d tigawin n ugbur
 
-type-column-label =
-    .label = Tawsit n ugbur
-    .accesskey = g
+type-column-header = Tawsit n ugbur
 
-action-column-label =
-    .label = Tigawt
-    .accesskey = g
+action-column-header = Tigawt
 
 save-to-label =
     .label = Sekles ifuyla ɣeṛ
@@ -572,12 +577,6 @@ default-format-label =
     .label = Seqdec taseddaṛt deg umḍiq n uḍris n tfekka s wudem amezwer
     .accesskey = c
 
-format-description = Swel amek ara yeddu umasal n uḍris
-
-send-options-label =
-    .label = Azen iɣewwaṛen…
-    .accesskey = A
-
 autocomplete-description = Ticki tettaruḍ tansiwin deg iznan, wali inekcam inmeɣra di:
 
 ab-label =
@@ -632,7 +631,6 @@ find-cloud-providers =
     .value = Af-d ugar n yisaǧǧawen...
 
 cloud-account-description = Rnu ameẓlu n usekles n useɣwen n ufaylu amaynut
-
 
 ## Privacy Tab
 
@@ -697,7 +695,6 @@ passwords-description = { -brand-short-name } yezmer ad yecfu ɣef awalen uffire
 passwords-button =
     .label = Awalen uffiren iţwakelsen…
     .accesskey = w
-
 
 primary-password-description = Awal uffir agejdan ad yeḥrez akk awalen-ik·im uffiren, maca yessefk ad t-teskecmeḍ yiwet tikkelt i yal tiɣimit.
 
@@ -860,8 +857,6 @@ theme-label =
     .value = Asentel:
     .accesskey = T
 
-style-thunderbird =
-    .label = Thunderbird
 style-bubbles =
     .label = Tililac
 style-dark =
@@ -879,6 +874,8 @@ chat-variant-label =
     .value = Talmest:
     .accesskey = V
 
+## Preferences UI Search Results
+
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -887,19 +884,19 @@ chat-variant-label =
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
 # is the name of the CSS property. It is intended only to adjust the element's width.
 # Do not translate.
-search-preferences-input =
+search-preferences-input2 =
     .style = width: 15.4em
-    .placeholder = Af deg yismenyifen
+    .placeholder = Af deg yiɣewwaren
 
-## Preferences UI Search Results
+## Settings UI Search Results
 
 search-results-header = Igmaḍ n unadi
 
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
-search-results-empty-message =
+search-results-empty-message2 =
     { PLATFORM() ->
         [windows] Nesḥassef! Ulac igmaḍ deg textiṛiyin i "<span data-l10n-name="query"></span>"
-       *[other] Nesḥassef! Ulac igmaḍ deg yismenyifen i "<span data-l10n-name="query"></span>"
+       *[other] Nesḥassef! Ulac igmaḍ deg yiɣewwaren i "<span data-l10n-name="query"></span>"
     }
 
 search-results-help-link = Tesriḍ tallelt? Rzu γer <a data-l10n-name="url">{ -brand-short-name } Tallelt</a>

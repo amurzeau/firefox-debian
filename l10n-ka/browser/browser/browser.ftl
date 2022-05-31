@@ -62,7 +62,7 @@ urlbar-eme-notification-anchor =
 urlbar-web-authn-anchor =
     .tooltiptext = ვებსაიტებზე შესვლის არე
 urlbar-canvas-notification-anchor =
-    .tooltiptext = გრაფიკის გამოსახვის მონაცემებზე წვდომის უფლებების მართვა
+    .tooltiptext = გრაფიკის გამოსახვის მონაცემებთან წვდომის უფლებების მართვა
 urlbar-web-rtc-share-microphone-notification-anchor =
     .tooltiptext = საიტისთვის თქვენი მიკროფონის გაზიარების მართვა
 urlbar-default-notification-anchor =
@@ -126,9 +126,9 @@ urlbar-search-mode-history = ისტორია
 ##
 
 urlbar-geolocation-blocked =
-    .tooltiptext = ამ საიტისთვის თქვენს მდებარეობაზე წვდომა შეზღუდული გაქვთ.
+    .tooltiptext = ამ საიტისთვის თქვენს მდებარეობასთან წვდომა შეზღუდული გაქვთ.
 urlbar-xr-blocked =
-    .tooltiptext = ამ საიტისთვის წარმოსახვითი სინამდვილის თქვენს მოწყობილობაზე წვდომა შეზღუდული გაქვთ.
+    .tooltiptext = ამ საიტისთვის წარმოსახვითი სინამდვილის თქვენს მოწყობილობასთან წვდომა შეზღუდული გაქვთ.
 urlbar-web-notifications-blocked =
     .tooltiptext = ამ საიტისთვის შეტყობინებების ჩვენების უფლება შეზღუდული გაქვთ.
 urlbar-camera-blocked =
@@ -144,7 +144,7 @@ urlbar-popup-blocked =
 urlbar-autoplay-media-blocked =
     .tooltiptext = ამ საიტისთვის მედიაფაილების თვითგაშვების უფლება შეზღუდული გაქვთ.
 urlbar-canvas-blocked =
-    .tooltiptext = ამ საიტისთვის, გრაფიკის გამოსახვის მონაცემებზე წვდომის უფლება შეზღუდული გაქვთ.
+    .tooltiptext = ამ საიტისთვის, გრაფიკის გამოსახვის მონაცემებთან წვდომის უფლება შეზღუდული გაქვთ.
 urlbar-midi-blocked =
     .tooltiptext = ამ საიტისთვის MIDI წვდომის უფლება შეზღუდული გაქვთ.
 urlbar-install-blocked =
@@ -650,12 +650,6 @@ toolbar-settings-button =
             [macos] პარამეტრების გახსნა ({ $shortcut })
            *[other] პარამეტრების გახსნა
         }
-
-## More items
-
-more-menu-go-offline =
-    .label = კავშირგარეშე რეჟიმი
-    .accesskey = კ
 toolbar-overflow-customize-button =
     .label = ხელსაწყოთა ზოლის მორგება…
     .accesskey = ზ
@@ -683,7 +677,7 @@ toolbar-button-new-private-window =
 
 ## EME notification panel
 
-eme-notifications-drm-content-playing = ამ საიტზე ხმოვანი ფაილების ან ვიდეოების ნაწილი ექვემდებარება DRM-პროგრამას, რომლის გამოც შესაძლოა { -brand-short-name } გიზღუდავდეთ მათ სრულად გამოყენებას.
+eme-notifications-drm-content-playing = ამ საიტზე ხმოვანი ფაილების ან ვიდეოების ნაწილი ექვემდებარება DRM-პროგრამას, შედეგად, { -brand-short-name } შესაძლოა, გიზღუდავდეთ მათ თავისუფალ გამოყენებას.
 eme-notifications-drm-content-playing-manage = პარამეტრების მართვა
 eme-notifications-drm-content-playing-manage-accesskey = ვ
 eme-notifications-drm-content-playing-dismiss = დახურვა
@@ -700,12 +694,6 @@ panel-save-update-password = პაროლი
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = მოცილდეს { $name }?
 addon-removal-abuse-report-checkbox = გაფართოებაზე საჩივარი { -vendor-short-name }-სთვის
-
-## Remote / Synced tabs
-
-remote-tabs-manage-account =
-    .label = ანგარიშის მართვა
-remote-tabs-sync-now = დასინქრონება ახლავე
 
 ##
 

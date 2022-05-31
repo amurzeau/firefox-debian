@@ -47,3 +47,4 @@ openpgp-partially-encrypted =
 openpgp-reminder-partial-display = Áminning: Skilaboðin sem birtast hér að neðan eru aðeins hluti af upprunalegu skilaboðunum.
 openpgp-partial-verify-button = Staðfesta
 openpgp-partial-decrypt-button = Afkóða
+openpgp-unexpected-key-for-you = Viðvörun: Þessi skilaboð innihalda óþekktan OpenPGP-lykil sem vísar í eitt af þínum eigin tölvupóstföngum. Ef þetta er ekki einn af þínum eigin lyklum gæti það verið tilraun til að gabba aðra viðtakendur.

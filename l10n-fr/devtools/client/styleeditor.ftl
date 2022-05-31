@@ -8,6 +8,8 @@ styleeditor-new-button =
 styleeditor-import-button =
     .tooltiptext = Importer et ajouter une feuille de style existante au document
     .accesskey = I
+styleeditor-filter-input =
+    .placeholder = Filtrer les feuilles de style
 styleeditor-visibility-toggle =
     .tooltiptext = Activer/Désactiver la feuille de style
     .accesskey = S
@@ -28,3 +30,5 @@ styleeditor-copy-url =
 styleeditor-go-to-line =
     .label = Aller à la ligne…
     .accesskey = r
+# Label displayed when searching a term that is not found in any stylesheet path
+styleeditor-stylesheet-all-filtered = Aucune feuille de style trouvée.

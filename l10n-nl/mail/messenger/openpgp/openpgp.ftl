@@ -181,6 +181,11 @@ openpgp-key-man-reload =
 openpgp-key-man-change-expiry =
     .label = Vervaldatum wijzigen
     .accesskey = V
+openpgp-key-man-refresh-online =
+    .label = Online vernieuwen
+    .accesskey = v
+openpgp-key-man-ignored-ids =
+    .label = E-mailadressen
 openpgp-key-man-del-key =
     .label = Sleutel(s) verwijderen
     .accesskey = w
@@ -226,8 +231,10 @@ openpgp-key-man-select-all-key =
     .key = A
 openpgp-key-man-key-details-key =
     .key = I
+openpgp-ign-addr-intro = U accepteert het gebruik van deze sleutel voor de volgende geselecteerde e-mailadressen:
 openpgp-key-details-title =
     .title = Sleuteleigenschappen
+openpgp-key-details-doc-title = Sleuteleigenschappen
 openpgp-key-details-signatures-tab =
     .label = Certificeringen
 openpgp-key-details-structure-tab =
@@ -236,11 +243,19 @@ openpgp-key-details-uid-certified-col =
     .label = Gebruikers-ID / Gecertificeerd door
 openpgp-key-details-key-id-label = Sleutel-ID
 openpgp-key-details-user-id2-label = Vermeende sleuteleigenaar
+openpgp-key-details-user-id3-label = Geclaimde sleuteleigenaar
 openpgp-key-details-id-label =
     .label = ID
 openpgp-key-details-key-type-label = Type
 openpgp-key-details-key-part-label =
     .label = Sleuteldeel
+openpgp-key-details-attr-ignored = Waarschuwing: deze sleutel werkt mogelijk niet zoals verwacht, omdat sommige eigenschappen onveilig zijn en mogelijk worden genegeerd.
+openpgp-key-details-attr-upgrade-sec = U moet de onveilige eigenschappen upgraden.
+openpgp-key-details-attr-upgrade-pub = Vraag de eigenaar van deze sleutel om de onveilige eigenschappen te upgraden.
+openpgp-key-details-upgrade-unsafe =
+    .label = Onveilige eigenschappen upgraden
+    .accesskey = u
+openpgp-key-details-upgrade-ok = De sleutel is met succes geüpgraded. U moet de geüpgradede openbare sleutel delen met uw contactpersonen.
 openpgp-key-details-algorithm-label =
     .label = Algoritme
 openpgp-key-details-size-label =
@@ -258,7 +273,6 @@ openpgp-key-details-legend-secret-missing = Voor sleutels gemarkeerd met (!) is 
 openpgp-key-details-sel-action =
     .label = Selecteer actie…
     .accesskey = S
-openpgp-key-details-also-known-label = Vermeende alternatieve identiteiten van de sleuteleigenaar:
 openpgp-card-details-close-window-label =
     .buttonlabelaccept = Sluiten
 openpgp-acceptance-label =
@@ -274,7 +288,6 @@ openpgp-acceptance-verified-label =
 key-accept-personal =
     Voor deze sleutel hebt u zowel het publieke als het geheime deel. U mag hem gebruiken als een persoonlijke sleutel.
     Als deze sleutel door iemand anders aan u is gegeven, gebruik hem dan niet als persoonlijke sleutel.
-key-personal-warning = Hebt u deze sleutel zelf aangemaakt en verwijst het getoonde sleuteleigendom naar uzelf?
 openpgp-personal-no-label =
     .label = Nee, niet als mijn persoonlijke sleutel gebruiken.
 openpgp-personal-yes-label =
@@ -284,13 +297,14 @@ openpgp-copy-cmd-label =
 
 ## e2e encryption settings
 
+#   $identity (String) - the email address of the currently selected identity
+openpgp-description-no-key = { -brand-short-name } heeft geen persoonlijke OpenPGP-sleutel voor <b>{ $identity }</b>
 #   $count (Number) - the number of configured keys associated with the current identity
 #   $identity (String) - the email address of the currently selected identity
-openpgp-description =
+openpgp-description-has-keys =
     { $count ->
-        [0] Thunderbird heeft geen persoonlijke OpenPGP-sleutel voor <b>{ $identity }</b>
-        [one] Thunderbird heeft { $count } persoonlijke OpenPGP-sleutel gevonden die is gekoppeld aan <b>{ $identity }</b>
-       *[other] Thunderbird heeft { $count } persoonlijke OpenPGP-sleutels gevonden die zijn gekoppeld aan <b>{ $identity }</b>
+        [one] { -brand-short-name } heeft { $count } persoonlijke OpenPGP-sleutel gevonden die is gekoppeld aan <b>{ $identity }</b>
+       *[other] { -brand-short-name } heeft { $count } persoonlijke OpenPGP-sleutels gevonden die zijn gekoppeld aan <b>{ $identity }</b>
     }
 #   $key (String) - the currently selected OpenPGP key
 openpgp-selection-status-have-key = Uw huidige configuratie gebruikt sleutel-ID <b>{ $key }</b>
@@ -348,14 +362,11 @@ key-expired-date = De sleutel is vervallen op { $keyExpiry }
 key-expired-simple = De sleutel is vervallen
 key-revoked-simple = De sleutel is ingetrokken
 key-do-you-accept = Accepteert u deze sleutel voor het verifiëren van digitale handtekeningen en voor het versleutelen van berichten?
-key-accept-warning = Accepteer geen frauduleuze sleutel. Gebruik een ander communicatiekanaal dan e-mail om de vingerafdruk van de sleutel van uw correspondent te verifiëren.
 key-verification = Controleer de vingerafdruk van de sleutel met een ander beveiligd communicatiekanaal dan e-mail om er zeker van te zijn dat het echt de sleutel van { $addr } is.
 # Strings enigmailMsgComposeOverlay.js
 cannot-use-own-key-because = Kan het bericht niet verzenden, omdat er een probleem is met uw persoonlijke sleutel. { $problem }
 cannot-encrypt-because-missing = Kan dit bericht niet verzenden met end-to-end-versleuteling, omdat er problemen zijn met de sleutels van de volgende ontvangers: { $problem }
 window-locked = Het opstelvenster is vergrendeld; verzenden geannuleerd
-# Strings in mimeDecrypt.jsm
-mime-decrypt-encrypted-part-attachment-label = Versleuteld berichtgedeelte
 # Strings in mimeDecrypt.jsm
 mime-decrypt-encrypted-part-concealed-data = Dit is een versleuteld berichtgedeelte. U moet het in een apart venster openen door op de bijlage te klikken.
 # Strings in keyserver.jsm
@@ -379,25 +390,6 @@ converter-decrypt-body-failed =
     Kan bericht met onderwerp { $subject }
     niet ontsleutelen.
     Wilt u het opnieuw proberen met een andere wachtwoordzin of wilt u het bericht overslaan?
-# Strings in gpg.jsm
-unknown-signing-alg = Onbekend ondertekeningsalgoritme (ID: { $id })
-unknown-hash-alg = Onbekende cryptografische hash (ID: { $id })
-# Strings in keyUsability.jsm
-expiry-key-expires-soon =
-    Uw sleutel { $desc } vervalt over minder dan { $days } dagen.
-    We raden u aan een nieuw sleutelpaar te maken en de bijbehorende accounts voor gebruik ervan te configureren.
-expiry-keys-expire-soon =
-    Uw volgende sleutels vervallen over minder dan { $days } dagen: { $desc }.
-    We raden u aan nieuwe sleutels te maken en de bijbehorende accounts te voor gebruik ervan te configureren.
-expiry-key-missing-owner-trust =
-    Uw geheime sleutel { $desc } is niet vertrouwd.
-    We raden u aan ‘U vertrouwt op certificeringen’ in de sleuteleigenschappen in te stellen op ‘maximaal’.
-expiry-keys-missing-owner-trust =
-    Het volgende van uw geheime sleutels zijn niet vertrouwd.
-    { $desc }.
-    We raden u aan ‘U vertrouwt op certificeringen’ in de sleuteleigenschappen in te stellen op ‘maximaal’.
-expiry-open-key-manager = OpenPGP-sleutelbeheerder openen
-expiry-open-key-properties = Sleuteleigenschappen openen
 # Strings filters.jsm
 filter-folder-required = U moet een doelmap selecteren.
 filter-decrypt-move-warn-experimental =
@@ -515,6 +507,9 @@ key-error-not-accepted-as-personal = U heeft niet bevestigd dat de sleutel met I
 need-online = De geselecteerde functie is niet beschikbaar in de offlinemodus. Ga online en probeer het opnieuw.
 # Strings used in keyRing.jsm & keyLookupHelper.jsm
 no-key-found = We kunnen geen sleutel vinden die overeenkomt met de opgegeven zoekcriteria.
+# Strings used in keyRing.jsm & keyLookupHelper.jsm
+no-key-found2 = We kunnen geen bruikbare sleutel vinden die overeenkomt met de opgegeven zoekcriteria.
+no-update-found = U hebt de sleutels die online zijn gevonden al.
 # Strings used in keyRing.jsm & GnuPGCryptoAPI.jsm
 fail-key-extract = Fout – sleutelextractieopdracht mislukt
 # Strings used in keyRing.jsm
@@ -600,18 +595,9 @@ send-to-news-warning =
     Dit wordt ontmoedigd, omdat het alleen zinvol is als alle leden van de groep het bericht kunnen ontsleutelen, d.w.z. het bericht moet worden versleuteld met de sleutels van alle groepsdeelnemers. Stuur dit bericht alleen als u precies weet wat u doet.
     Doorgaan?
 save-attachment-header = Ontsleutelde bijlage opslaan
-no-temp-dir =
-    Kan geen tijdelijke map vinden om naar te schrijven
-    Stel de omgevingsvariabele TEMP in
 possibly-pgp-mime = Mogelijk PGP/MIME-versleuteld of -ondertekend bericht; gebruik de functie ‘Ontsleutelen/Verifiëren’ om te verifiëren
 cannot-send-sig-because-no-own-key = Kan dit bericht niet digitaal ondertekenen, omdat u nog geen end-to-end-versleuteling voor <{ $key }> heeft geconfigureerd
 cannot-send-enc-because-no-own-key = Kan dit bericht niet versleuteld verzenden, omdat u nog geen end-to-end-versleuteling voor <{ $key }> heeft geconfigureerd
-compose-menu-attach-key =
-    .label = Mijn openbare sleutel toevoegen
-    .accesskey = v
-compose-menu-encrypt-subject =
-    .label = Versleutelde onderwerpregel
-    .accesskey = n
 # Strings used in decryption.jsm
 do-import-multiple =
     De volgende sleutels importeren?

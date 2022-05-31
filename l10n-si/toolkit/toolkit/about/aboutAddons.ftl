@@ -27,7 +27,6 @@ list-empty-button =
     .label = ඇඩෝන පිළිබඳව වැඩිදුරටත් දැනගන්න
 
 help-button = ඇඩෝන සහාය
-
 sidebar-help-button-title =
     .title = ඇඩෝන සහාය
 
@@ -151,7 +150,6 @@ extensions-warning-update-security = Add-on update security checking is disabled
 extensions-warning-update-security-button = බලැති (Enable) කරන්න
     .title = ඇඩෝන යාවත්කාලීන කිරීමේ ආරක්ෂක සැකසුම් බලැතා (Enable) කරන්න
 
-
 ## Strings connected to add-on updates
 
 addon-updates-check-for-updates = යාවත්කාලීන සඳහා පරීක්ෂා කරන්න
@@ -217,7 +215,9 @@ enable-addon-button = සක්‍රීය
 ## This is the tooltip text for the recommended badges for an extension in about:addons. The
 ## badge is a small icon displayed next to an extension when it is recommended on AMO.
 
+
 ##
+
 
 ## Page headings
 
@@ -226,3 +226,25 @@ addons-heading-search-input =
 
 addon-page-options-button =
     .title = සියළු ඇඩෝන සඳහා මෙවලම්
+
+## Detail notifications
+## Variables:
+##   $name (String): name of the add-on.
+
+# Variables:
+#   $version (String): application version.
+details-notification-incompatible = { -brand-short-name } { $version } සමඟ { $name } අනුකූල නොවේ.
+
+details-notification-unsigned-and-disabled = { -brand-short-name } හි භාවිතය සඳහා { $name } තහවුරු කළ නොහැකි බැවින් අක්‍රීය කර ඇත.
+details-notification-unsigned-and-disabled-link = වැඩිදුර තොරතුරු
+
+details-notification-unsigned = { -brand-short-name } හි භාවිතයට { $name } තහවුරු කළ නොහැක. අවධානයෙන් ඉදිරියට යන්න.
+details-notification-unsigned-link = වැඩිදුර තොරතුරු
+
+details-notification-blocked = ආරක්ෂක හෝ ස්ථායිතා ප්‍රශ්ණ නිසා { $name } අබල (Disable) කර ඇත.
+details-notification-blocked-link = වැඩිදුර තොරතුරු
+
+details-notification-softblocked = { $name } ආරක්ෂක හෝ ස්ථායිතා ප්‍රශ්ණ ඇති කරනු ඇතැයි හඳුනාගෙන ඇත.
+details-notification-softblocked-link = වැඩිදුර තොරතුරු
+
+details-notification-gmp-pending = { $name } මොහොතකින් ස්ථාපනය වනු ඇත.

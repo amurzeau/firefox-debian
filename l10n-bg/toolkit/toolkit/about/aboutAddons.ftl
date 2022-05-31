@@ -186,7 +186,6 @@ extensions-warning-update-security = Проверката за безопасн�
 extensions-warning-update-security-button = Включване
     .title = Включване на проверка за безопасност на обновяването на добавки
 
-
 ## Strings connected to add-on updates
 
 addon-updates-check-for-updates = Проверка за обновяване
@@ -339,6 +338,8 @@ extension-disabled-heading = Изключени
 
 theme-enabled-heading = Включени
 theme-disabled-heading = Изключени
+theme-monochromatic-heading = Палитри
+theme-monochromatic-subheading = Изразителни цветни комбинации от { -brand-product-name }. Достъпни за ограничен период.
 
 plugin-enabled-heading = Включени
 plugin-disabled-heading = Изключени
@@ -411,7 +412,6 @@ addon-detail-private-browsing-disallow = Забраняване
 addon-badge-recommended2 =
     .title = { -brand-product-name } препоръчва само разширения, които отговарят на нашите стандарти за сигурност и производителност
     .aria-label = { addon-badge-recommended2.title }
-
 # We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
@@ -430,7 +430,6 @@ release-notes-loading = Зареждане…
 release-notes-error = За съжаление, зареждането на бележките към изданието е неуспешно.
 
 addon-permissions-empty = Разширението не изисква никакви права
-
 addon-permissions-required = Необходими права за основни възможности:
 addon-permissions-optional = Незадължителни права за допълнителни възможности:
 addon-permissions-learnmore = Научете повече за правата
@@ -459,3 +458,25 @@ addons-heading-search-input =
 
 addon-page-options-button =
     .title = Инструменти за всички добавки
+
+## Detail notifications
+## Variables:
+##   $name (String): name of the add-on.
+
+# Variables:
+#   $version (String): application version.
+details-notification-incompatible = Добавката { $name } е несъвместима с { -brand-short-name } { $version }.
+
+details-notification-unsigned-and-disabled = Добавката { $name } не може да бъде проверена, за да бъде използвана от { -brand-short-name }, и беше изключена.
+details-notification-unsigned-and-disabled-link = Повече информация
+
+details-notification-unsigned = Добавката { $name } не може да бъде проверена, за да бъде използвана от { -brand-short-name }. Бъдете внимателни.
+details-notification-unsigned-link = Повече информация
+
+details-notification-blocked = Добавката { $name } беше изключена поради съображения за сигурност или стабилност.
+details-notification-blocked-link = Повече информация
+
+details-notification-softblocked = Добавката { $name } може да причини проблеми със сигурността или стабилността.
+details-notification-softblocked-link = Повече информация
+
+details-notification-gmp-pending = Добавката { $name } ще бъде инсталирана след малко.

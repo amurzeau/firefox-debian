@@ -90,11 +90,11 @@ certmgr-delete-builtin =
     .accesskey = S
 
 certmgr-backup =
-    .label = Zrōb ibryczno kopia…
+    .label = Zrōb ibryczno kopijo…
     .accesskey = I
 
 certmgr-backup-all =
-    .label = Zrōb ibryczno kopia wszyskigo…
+    .label = Zrōb ibryczno kopijo wszyskigo…
     .accesskey = k
 
 certmgr-restore =
@@ -185,8 +185,6 @@ delete-email-cert-impact = Jak skasujesz emailowy certyfikat ôd tyj ôsoby, to 
 #   $serialNumber : the serial number of the cert in AA:BB:CC hex format.
 cert-with-serial =
     .value = Certyfikat z nōmerym seryje: { $serialNumber }
-
-## Cert Viewer
 
 # Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
 send-no-client-certificate = Niy posyłej żodnego certyfikatu klijynta

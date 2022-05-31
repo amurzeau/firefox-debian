@@ -124,10 +124,10 @@ openpgp-import-key-description = Importálhat személyes kulcsokat más OpenPGP-
 openpgp-import-key-info = Más szoftverek másként nevezhetik a személyes kulcsot, például: saját kulcs, titkos kulcs, privát kulcs vagy kulcspár.
 
 #   $count (Number) - the number of keys found in the selected files
-openpgp-import-key-list-amount =
+openpgp-import-key-list-amount-2 =
     { $count ->
-        [one] A Thunderbird egy kulcsot talált, amely importálható.
-       *[other] A Thunderbird { $count } kulcsot talált, amely importálható.
+        [one] A { -brand-short-name } egy importálható kulcsot talált.
+       *[other] A { -brand-short-name } { $count } importálható kulcsot talált.
     }
 
 openpgp-import-key-list-description = Erősítse meg, hogy mely kulcsok kezelhetők személyes kulcsaiként. Csak azokat a kulcsokat használja személyes kulcsként, amelyeket saját maga készített, és az Ön személyazonosságát mutatják. Ezt a beállítást később is megváltoztathatja a Kulcstulajdonságok párbeszédablakon.

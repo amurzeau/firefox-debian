@@ -63,13 +63,13 @@ new-message-arrival = При пристигане на ново писмо:
 mail-play-sound-label =
     .label =
         { PLATFORM() ->
-            [macos] Използване на следния звуков файл:
+            [macos] Използване на звуковия файл:
            *[other] Изпълняване на звук
         }
     .accesskey =
         { PLATFORM() ->
             [macos] з
-           *[other] у
+           *[other] з
         }
 mail-play-button =
     .label = Изпълняване
@@ -79,8 +79,6 @@ change-dock-icon = Промяна на настройките за иконка�
 app-icon-options =
     .label = Настройки на пиктограмата на приложението…
     .accesskey = и
-
-notification-settings = Можете да изключите предупрежденията и звуците от панела Уведомяване в Системни настройки.
 
 animated-alert-label =
     .label = Показване на известие
@@ -272,14 +270,6 @@ quoted-text-color =
     .label = Цвят:
     .accesskey = я
 
-type-column-label =
-    .label = Вид съдържание
-    .accesskey = В
-
-action-column-label =
-    .label = Действие
-    .accesskey = Д
-
 save-to-label =
     .label = Запазване на файловете в
     .accesskey = З
@@ -422,12 +412,6 @@ default-format-label =
     .label = За формат по подразбиране да се използва Абзац вместо Основен текст
     .accesskey = ф
 
-format-description = Настройка на правила за работа с текстовия формат
-
-send-options-label =
-    .label = Настройки за изпращане…
-    .accesskey = Н
-
 autocomplete-description = При адресиране на писма, търси за съвпадения в:
 
 ab-label =
@@ -479,7 +463,6 @@ remove-cloud-account =
     .accesskey = П
 
 cloud-account-description = Добавяне на нова услуга за съхранене към Filelink
-
 
 ## Privacy Tab
 
@@ -681,8 +664,6 @@ theme-label =
     .value = Тема:
     .accesskey = Т
 
-style-thunderbird =
-    .label = Thunderbird
 style-bubbles =
     .label = Мехурчета
 style-dark =
@@ -702,5 +683,6 @@ chat-variant-label =
 
 ## Preferences UI Search Results
 
-## Preferences UI Search Results
+
+## Settings UI Search Results
 

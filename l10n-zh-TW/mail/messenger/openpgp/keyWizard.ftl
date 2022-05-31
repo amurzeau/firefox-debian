@@ -124,9 +124,9 @@ openpgp-import-key-description = 您可以匯入於其他 OpenPGP 軟體建立�
 openpgp-import-key-info = 在其他軟體中，可能會將個人金鑰稱為「您的金鑰」、「私密金鑰」、「密鑰」或「金鑰對」。
 
 #   $count (Number) - the number of keys found in the selected files
-openpgp-import-key-list-amount =
+openpgp-import-key-list-amount-2 =
     { $count ->
-       *[other] Thunderbird 找到 { $count } 把可以匯入的金鑰。
+       *[other] { -brand-short-name } 找到 { $count } 把可以匯入的金鑰。
     }
 
 openpgp-import-key-list-description = 請確認哪些金鑰是您的個人金鑰。應該只將您自己打造，並且顯示您個人身分的金鑰視為個人金鑰。您可以稍後再到「金鑰屬性」對話框更改此選項。

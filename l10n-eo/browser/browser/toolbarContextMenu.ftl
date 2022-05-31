@@ -39,15 +39,18 @@ toolbar-context-menu-remove-extension =
 toolbar-context-menu-report-extension =
     .label = Denunci etendaĵon
     .accesskey = D
-# Can appear on the same context menu as menubarCmd ("Menu Bar") and
-# personalbarCmd ("Bookmarks Toolbar"), so they should have different
-# access keys.
+# Can appear on the same context menu as toolbar-context-menu-menu-bar-cmd
+# ("Menu Bar") and personalbarCmd ("Bookmarks Toolbar"), so they should
+# have different access keys.
 toolbar-context-menu-pin-to-overflow-menu =
     .label = Alpingli al ekstra menuo
     .accesskey = p
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = Kaŝi butonon se la listo malplenas
     .accesskey = K
+toolbar-context-menu-always-open-downloads-panel =
+    .label = Montri panelon kiam elŝuto komenciĝas
+    .accesskey = M
 toolbar-context-menu-remove-from-toolbar =
     .label = Forigi el ilarstrio
     .accesskey = f

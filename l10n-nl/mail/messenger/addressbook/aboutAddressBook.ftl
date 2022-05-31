@@ -124,14 +124,33 @@ about-addressbook-confirm-delete-contacts =
 
 ## Details
 
+about-addressbook-write-action-button = Opstellen
+about-addressbook-event-action-button = Gebeurtenis
+about-addressbook-search-action-button = Zoeken
 about-addressbook-begin-edit-contact-button = Bewerken
+about-addressbook-delete-edit-contact-button = Verwijderen
 about-addressbook-cancel-edit-contact-button = Annuleren
 about-addressbook-save-edit-contact-button = Opslaan
+about-addressbook-add-contact-to = Toevoegen aan:
 about-addressbook-details-email-addresses-header = E-mailadressen
 about-addressbook-details-phone-numbers-header = Telefoonnummers
 about-addressbook-details-home-address-header = Adres
 about-addressbook-details-work-address-header = Werkadres
+about-addressbook-details-addresses-header = Adressen
+about-addressbook-details-notes-header = Opmerkingen
 about-addressbook-details-other-info-header = Andere informatie
+about-addressbook-entry-type-work = Werk
+about-addressbook-entry-type-home = Thuis
+about-addressbook-entry-type-fax = Fax
+about-addressbook-entry-type-cell = Mobiel
+about-addressbook-entry-type-pager = Pieper
+about-addressbook-entry-name-birthday = Verjaardag
+about-addressbook-entry-name-anniversary = Jubileum
+about-addressbook-entry-name-title = Titel
+about-addressbook-entry-name-department = Afdeling
+about-addressbook-entry-name-organization = Organisatie
+about-addressbook-entry-name-website = Website
+about-addressbook-entry-name-time-zone = Tijdzone
 about-addressbook-unsaved-changes-prompt-title = Niet-opgeslagen wijzigingen
 about-addressbook-unsaved-changes-prompt = Wilt u uw wijzigingen opslaan voordat u de bewerkingsweergave verlaat?
 

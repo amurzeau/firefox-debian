@@ -72,10 +72,6 @@ set-as-my-default-browser =
     .label = ಪೂರ್ವನಿಯೋಜಿತವನ್ನಾಗಿ ಮಾಡು…
     .accesskey = D
 
-startup-restore-previous-session =
-    .label = ಹಿಂದಿನ ಅಧಿವೇಶನವನ್ನು ಮರಳಿ ಸ್ಥಾಪಿಸು
-    .accesskey = s
-
 disable-extension =
     .label = ಎಕ್ಸ್‌ಟೆನ್ಶನ್ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸು
 
@@ -88,10 +84,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = ಕೊಂಡಿಗಳನ್ನು ಹೊಸ ಕಿಟಕಿಯಲ್ಲಿ ತೆರೆಯುವ ಬದಲು ಹಾಳಯಗಳಲ್ಲಿ ತೆರೆಯಿರಿ
     .accesskey = w
-
-warn-on-close-multiple-tabs =
-    .label = ಅನೇಕ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಮುಚ್ಚುವಾಗ ನನ್ನನ್ನು ಎಚ್ಚರಿಸು‍
-    .accesskey = m
 
 warn-on-open-many-tabs =
     .label = ಅನೇಕ ಹಾಳೆಗಳನ್ನು ತೆರೆಯುವುದಾಗ { -brand-short-name }ವನ್ನು ನಿಧಾನಗೊಂಡರೆ ನನ್ನನ್ನು ಎಚ್ಚರಿಸು
@@ -118,12 +110,9 @@ containers-remove-alert-title = ಈ ಕಂಟೇನರ್ ತೆಗೆದುಹ�
 containers-remove-ok-button = ಈ ಕಂಟೇನರ್ ತೆಗೆದುಹಾಕು
 containers-remove-cancel-button = ಈ ಕಂಟೇನರ್ ತೆಗೆದುಹಾಕಬೇಡ
 
-
 ## General Section - Language & Appearance
 
 language-and-appearance-header = ಭಾಷೆ ಮತ್ತು ನೋಟ
-
-fonts-and-colors-header = ಅಕ್ಷರಶೈಲಿಗಳು ಮತ್ತು ಬಣ್ಣಗಳು
 
 default-font = ಪೂರ್ವನಿಯೋಜಿತ ಅಕ್ಷರಶೈಲಿ
     .accesskey = D
@@ -133,10 +122,6 @@ default-font-size = ಗಾತ್ರ
 advanced-fonts =
     .label = ಮುಂದುವರೆದ...
     .accesskey = A
-
-colors-settings =
-    .label = ಬಣ್ಣಗಳು...
-    .accesskey = C
 
 language-header = ಭಾಷೆ
 
@@ -170,6 +155,9 @@ download-header = ಡೌನ್‍ಲೋಡ್‍ಗಳು
 
 download-save-to =
     .label = ಕಡತಗಳನ್ನು ಇಲ್ಲಿ ಉಳಿಸು
+    .accesskey = v
+
+download-save-where = ಕಡತಗಳನ್ನು ಇಲ್ಲಿ ಉಳಿಸು
     .accesskey = v
 
 download-choose-folder =
@@ -365,8 +353,6 @@ home-prefs-content-header = ಫೈರ್ಫಾಕ್ಸ್ ಮುಖಪುಟದ
 
 home-prefs-search-header =
     .label = ಜಾಲದ ಹುಡುಕಾಟ
-home-prefs-topsites-header =
-    .label = ಪ್ರಮುಖ ತಾಣಗಳು
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -378,11 +364,8 @@ home-prefs-recommended-by-header =
 
 ##
 
-
 home-prefs-recommended-by-learn-more = ಇದು ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ
 
-home-prefs-highlights-header =
-    .label = ಮುಖ್ಯಾಂಶಗಳು
 home-prefs-highlights-option-visited-pages =
     .label = ಭೇಟಿಕೊಟ್ಟ ಪುಟಗಳು
 home-prefs-highlights-options-bookmarks =
@@ -446,9 +429,6 @@ containers-add-button =
 containers-remove-button =
     .label = ತೆಗೆದುಹಾಕು
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
@@ -463,9 +443,6 @@ sync-signedout-caption = ಜಾಲವನ್ನು ನಿಮ್ಮೊಂದಿಗ
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Firefox ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ<img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> ಅಥವ <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಾಧನದ ಜೊತೆ ಸಿಂಕ್ ಮಾಡಲು.
-
-## Sync Section - Signed in
-
 
 ## Firefox Account - Signed in
 
@@ -527,9 +504,6 @@ sync-device-name-save =
 
 privacy-header = ವೀಕ್ಷಕದ ಗೌಪ್ಯತೆ
 
-## Privacy Section - Forms
-
-
 ## Privacy Section - Logins and Passwords
 
 forms-exceptions =
@@ -546,6 +520,7 @@ forms-master-pw-change =
 forms-master-pw-fips-desc = ಗುಪ್ತಪದವನ್ನು ಬದಲಾಯಿಸುವಲ್ಲಿ ವಿಫಲಗೊಂಡಿದೆ
 
 ## OS Authentication dialog
+
 
 ## Privacy Section - History
 
@@ -630,6 +605,7 @@ content-blocking-learn-more = ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ
 
 ##
 
+
 ## Privacy Section - Tracking
 
 
@@ -661,10 +637,6 @@ permissions-notification-link = ಇನ್ನಷ್ಟು ತಿಳಿಯಿರ�
 permissions-block-popups =
     .label = ಪುಟಿಕೆ (ಪಾಪ್-ಅಪ್) ಕಿಟಕಿಗಳನ್ನು ತಡೆ ಹಿಡಿ
     .accesskey = B
-
-permissions-block-popups-exceptions =
-    .label = ಹೊರತಾದವುಗಳು...
-    .accesskey = E
 
 permissions-addon-exceptions =
     .label = ವಿನಾಯಿತಿಗಳು...
@@ -715,6 +687,7 @@ certs-devices =
     .accesskey = D
 
 ## Privacy Section - HTTPS-Only
+
 
 ## The following strings are used in the Download section of settings
 

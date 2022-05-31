@@ -27,7 +27,6 @@ list-empty-button =
     .label = Ciù informaçioin in sci conponenti azonti
 
 help-button = Sopòrto conponenti azonti
-
 sidebar-help-button-title =
     .title = Sopòrto conponenti azonti
 
@@ -161,7 +160,6 @@ extensions-warning-update-security = O contròllo de seguessa in sci agiornament
 extensions-warning-update-security-button = Abilita
     .title = Abilita o contròllo de seguessa in sci agiornamenti di conponenti azonti
 
-
 ## Strings connected to add-on updates
 
 addon-updates-check-for-updates = Çerca agiornamenti
@@ -246,7 +244,9 @@ permissions-addon-button = Permissi
 ## This is the tooltip text for the recommended badges for an extension in about:addons. The
 ## badge is a small icon displayed next to an extension when it is recommended on AMO.
 
+
 ##
+
 
 ## Page headings
 
@@ -262,3 +262,25 @@ addons-heading-search-input =
 
 addon-page-options-button =
     .title = Angæsi pe tutti i conponenti azonti
+
+## Detail notifications
+## Variables:
+##   $name (String): name of the add-on.
+
+# Variables:
+#   $version (String): application version.
+details-notification-incompatible = { $name } o no l'é conpatibile con { -brand-short-name } { $version }.
+
+details-notification-unsigned-and-disabled = { $name } o l'é dizativou perché l'uzo o no l'é verificou pe { -brand-short-name }.
+details-notification-unsigned-and-disabled-link = Atre informaçioin
+
+details-notification-unsigned = { $name } o no l'é verificou pe l'uzo in { -brand-short-name }. Stanni atento.
+details-notification-unsigned-link = Atre informaçioin
+
+details-notification-blocked = { $name } o l'é stæto dizabilitou pe problemi de stabilitæ ò seguessa.
+details-notification-blocked-link = Ciù informaçioin
+
+details-notification-softblocked = { $name } o l'é in angæzo ben conosciuo a caozâ problemi de stabilitæ ò seguessa.
+details-notification-softblocked-link = Ciù informaçioin
+
+details-notification-gmp-pending = { $name } o saiâ instalou tra quarche momento.

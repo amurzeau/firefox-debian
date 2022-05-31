@@ -13,6 +13,7 @@
 policy-3rdparty = WebExtension’ların chrome.storage.managed aracılığıyla ulaşabileceği ilkeleri ayarla.
 policy-AllowedDomainsForApps = Google Workspace’e erişim izni olan etki alanlarını tanımla.
 policy-AppAutoUpdate = Otomatik uygulama güncellemesini aç veya kapat.
+policy-AppUpdatePin = { -brand-short-name } tarayıcısının belirtilen sürümün üzerine güncellenmesini engelle.
 policy-AppUpdateURL = Özel uygulama güncelleme URL’si ayarla.
 policy-Authentication = Destekleyen web siteleri için bütünleşik kimlik doğrulamasını yapılandır.
 policy-AutoLaunchProtocolsFromOrigins = Listelenen kaynaklardan kullanıcıya sormadan kullanılabilecek harici protokollerin listesini tanımla.
@@ -58,6 +59,7 @@ policy-DownloadDirectory = İndirme klasörünü ayarla ve kilitle.
 policy-EnableTrackingProtection = İçerik engellemeyi etkinleştir veya devre dışı bırak ve isteğe bağlı olarak kilitle.
 # “lock” means that the user won’t be able to change this setting
 policy-EncryptedMediaExtensions = Encrypted Media Extensions’ı etkinleştir veya devre dışı bırak ve isteğe bağlı olarak kilitle.
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Alan adlarında belirli dosya türleri için dosya uzantısına dayalı olarak uyarıları devre dışı bırak.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.

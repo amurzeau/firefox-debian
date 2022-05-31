@@ -3,6 +3,24 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+## Send Format
+
+compose-send-format-menu =
+    .label = გაგზავნის სახეობა
+    .accesskey = ზ
+compose-send-auto-menu-item =
+    .label = თვითშერჩევა
+    .accesskey = ვ
+compose-send-both-menu-item =
+    .label = ორივე, როგორც HTML, ასევე უბრალო ტექსტი
+    .accesskey = ო
+compose-send-html-menu-item =
+    .label = მხოლოდ HTML
+    .accesskey = H
+compose-send-plain-menu-item =
+    .label = უბრალო ტექსტი
+    .accesskey = უ
+
 ## Addressing widget
 
 #   $type (String) - the type of the addressing row
@@ -66,9 +84,6 @@ menuitem-toggle-attachment-pane =
 toolbar-button-add-attachment =
     .label = მიმაგრება
     .tooltiptext = დანართის მიმაგრება ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
-add-attachment-notification-reminder =
-    .label = დანართის დამატება…
-    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 add-attachment-notification-reminder2 =
     .label = დანართის დამატება…
     .accesskey = ტ
@@ -94,10 +109,6 @@ attachment-bucket-count-value =
         [1] { $count } დანართი
        *[other] { $count } დანართი
     }
-expand-attachment-pane-tooltip =
-    .tooltiptext = დანართის არის გამოჩენა ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = დანართის არის დამალვა ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = დანართის არის გამოჩენა ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -129,10 +140,6 @@ button-return-receipt =
 
 ## Encryption
 
-message-to-be-signed-icon =
-    .alt = წერილის ხელმოწერა
-message-to-be-encrypted-icon =
-    .alt = წერილის დაშიფვრა
 encryption-menu =
     .label = უსაფრთხოება
     .accesskey = უ
@@ -145,6 +152,9 @@ encryption-options-openpgp =
 encryption-options-smime =
     .label = S/MIME
     .tooltiptext = იხილეთ ან შეცვალეთ S/MIME-დაშიფვრის პარამეტრები
+signing-toggle =
+    .label = ხელმოწერა
+    .tooltiptext = ციფრული ხელმოწერა ამ წერილისთვის
 menu-openpgp =
     .label = OpenPGP
     .accesskey = O
@@ -184,38 +194,6 @@ key-notification-resolve =
 
 ## Addressing Area
 
-to-compose-address-row-label =
-    .value = ვის
-#   $key (String) - the shortcut key for this field
-to-compose-show-address-row-menuitem =
-    .label = { to-compose-address-row-label.value } ველი
-    .accesskey = ვ
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-to-compose-show-address-row-label =
-    .value = { to-compose-address-row-label.value }
-    .tooltiptext = გამოჩნდეს { to-compose-address-row-label.value } ველი ({ to-compose-show-address-row-menuitem.acceltext })
-cc-compose-address-row-label =
-    .value = ასლი
-#   $key (String) - the shortcut key for this field
-cc-compose-show-address-row-menuitem =
-    .label = { cc-compose-address-row-label.value } ველი
-    .accesskey = ე
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-cc-compose-show-address-row-label =
-    .value = { cc-compose-address-row-label.value }
-    .tooltiptext = გამოჩნდეს { cc-compose-address-row-label.value } ველი ({ cc-compose-show-address-row-menuitem.acceltext })
-bcc-compose-address-row-label =
-    .value = ფარული ასლი
-#   $key (String) - the shortcut key for this field
-bcc-compose-show-address-row-menuitem =
-    .label = { bcc-compose-address-row-label.value } ველი
-    .accesskey = ლ
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-bcc-compose-show-address-row-label =
-    .value = { bcc-compose-address-row-label.value }
-    .tooltiptext = გამოჩნდეს { bcc-compose-address-row-label.value } ველი ({ bcc-compose-show-address-row-menuitem.acceltext })
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-many-public-recipients-info = ველებში მითითებული { $count } მიმღები იხილავს ერთმანეთის მისამართს. ამის ასარიდებლად, შეგიძლიათ გამოიყენოთ ფარული (Bcc) ველი.
 to-address-row-label =
     .value = ვის
 #   $key (String) - the shortcut key for this field
@@ -378,3 +356,17 @@ cloud-file-attachment-error = Filelink-დანართი { $filename } ვ�
 # $filename (string) - name of the file that was renamed and caused the error
 cloud-file-account-error-title = Filelink-ანგარიშის შეცდომა
 cloud-file-account-error = Filelink-დანართი { $filename } ვერ განახლდა, ვინაიდან Filelink-ანგარიში წაშლილია.
+
+## Link Preview
+
+link-preview-title = ბმულის შეთვალიერება
+link-preview-description = { -brand-short-name } შეძლებს დაურთოს შესათვალიერებელი გამოსახულება ბმულის ჩასმისას.
+link-preview-autoadd = ბმულის შესათვალიერებლის დართვა, როცა კი შესაძლებელია
+link-preview-replace-now = დაურთოს ამ ბმულს შესათვალიერებელი?
+link-preview-yes-replace = დიახ
+
+## Dictionary selection popup
+
+spell-add-dictionaries =
+    .label = ლექსიკონების დამატება…
+    .accesskey = ლ
