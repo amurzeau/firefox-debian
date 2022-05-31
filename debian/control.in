@@ -24,7 +24,7 @@ Build-Depends: autotools-dev,
                libnspr4-dev (>= 2:@NSPR_VERSION@~),
 %endif
 %if USE_SYSTEM_NSS
-%define NSS_VERSION 3.76
+%define NSS_VERSION 3.78
                libnss3-dev (>= 2:@NSS_VERSION@~),
 %endif
 %if USE_SYSTEM_VPX
@@ -46,14 +46,14 @@ Build-Depends: autotools-dev,
                nasm (>= 2.14) [amd64 i386],
 %endif
 %if DIST == bullseye || DIST == buster || DIST == stretch
-               rustc-mozilla (>= 1.56),
+               rustc-mozilla (>= 1.59),
 %else
-               rustc (>= 1.56),
+               rustc (>= 1.59),
 %endif
 %if DIST == bullseye || DIST == buster || DIST == stretch
-               cargo-mozilla (>= 0.57),
+               cargo-mozilla (>= 0.60),
 %else
-               cargo (>= 0.57),
+               cargo (>= 0.60),
 %endif
 %if DIST == stretch
                gcc-mozilla (>= 7.1),
@@ -65,7 +65,7 @@ Build-Depends: autotools-dev,
                libclang-dev,
                clang,
 %endif
-               cbindgen (>= 0.19.0),
+               cbindgen (>= 0.23.0),
 %if DIST == stretch
                nodejs-mozilla (>= 10),
 %else
