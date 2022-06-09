@@ -51,9 +51,9 @@ Build-Depends: autotools-dev,
                rustc (>= 1.59),
 %endif
 %if DIST == bullseye || DIST == buster || DIST == stretch
-               cargo-mozilla (>= 0.60),
+               cargo-mozilla (>= 0.57),
 %else
-               cargo (>= 0.60),
+               cargo (>= 0.57),
 %endif
 %if DIST == stretch
                gcc-mozilla (>= 7.1),
