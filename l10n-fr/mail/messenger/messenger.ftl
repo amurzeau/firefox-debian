@@ -125,6 +125,10 @@ message-header-msg-flagged =
     .aria-label = Suivi
 message-header-msg-not-flagged =
     .title = Message non suivi
+# Variables:
+# $address (String) - The email address of the recipient this picture belongs to.
+message-header-recipient-avatar =
+    .alt = Photo de profil de { $address }.
 
 ## Message header cutomize panel
 
@@ -138,6 +142,13 @@ message-header-button-style-text =
     .label = Texte
 message-header-button-style-icons =
     .label = Icônes
+message-header-show-sender-full-address =
+    .label = Toujours afficher l’adresse complète de l’expéditeur
+    .accesskey = c
+message-header-show-sender-full-address-description = L’adresse électronique sera affichée sous le nom d’affichage.
+message-header-hide-label-column =
+    .label = Masquer la colonne des étiquettes
+    .accesskey = M
 message-header-large-subject =
     .label = Grand sujet
     .accesskey = s
@@ -150,13 +161,6 @@ toolbar-context-menu-manage-extension =
 toolbar-context-menu-remove-extension =
     .label = Supprimer l’extension
     .accesskey = m
-
-## Message headers
-
-message-header-address-in-address-book-icon =
-    .alt = L’adresse est dans le carnet d’adresses
-message-header-address-not-in-address-book-icon =
-    .alt = L’adresse n’est pas dans le carnet d’adresses
 
 ## Add-on removal warning
 
@@ -214,14 +218,12 @@ spaces-context-new-window-item =
 # $tabName (String) - The name of the tab this item will switch to.
 spaces-context-switch-tab-item =
     .label = Aller à { $tabName }
-settings-context-open-settings-item =
-    .label = Ouvrir les paramètres
-settings-context-open-account-settings-item =
-    .label = Ouvrir les paramètres du compte
-settings-context-open-addons-item =
-    .label = Ouvrir le gestionnaire de modules complémentaires et de thèmes
 settings-context-open-settings-item2 =
     .label = Paramètres
+settings-context-open-account-settings-item2 =
+    .label = Paramètres des comptes
+settings-context-open-addons-item2 =
+    .label = Modules complémentaires et thèmes
 
 ## Spaces toolbar pinned tab menupopup
 

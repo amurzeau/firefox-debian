@@ -98,7 +98,7 @@ appmenu-help-enter-troubleshoot-mode =
 appmenu-help-exit-troubleshoot-mode =
     .label = Desativar modo de solução de problemas
 appmenu-help-more-troubleshooting-info =
-    .label = Mais informações para resolver problemas
+    .label = Informações técnicas
 appmenu-redirect-msg =
     .label = Redirecionar
 
@@ -125,6 +125,10 @@ message-header-msg-flagged =
     .aria-label = Com estrela
 message-header-msg-not-flagged =
     .title = Mensagem não marcada com estrela
+# Variables:
+# $address (String) - The email address of the recipient this picture belongs to.
+message-header-recipient-avatar =
+    .alt = Foto do perfil de { $address }.
 
 ## Message header cutomize panel
 
@@ -138,6 +142,16 @@ message-header-button-style-text =
     .label = Texto
 message-header-button-style-icons =
     .label = Ícones
+message-header-show-sender-full-address =
+    .label = Sempre mostrar o endereço completo do remetente
+    .accesskey = c
+message-header-show-sender-full-address-description = O endereço de email é exibido abaixo do nome de exibição.
+message-header-show-recipient-avatar =
+    .label = Mostrar foto de perfil do remetente
+    .accesskey = p
+message-header-hide-label-column =
+    .label = Ocultar coluna de rótulos
+    .accesskey = O
 message-header-large-subject =
     .label = Campo de assunto grande
     .accesskey = s
@@ -150,13 +164,6 @@ toolbar-context-menu-manage-extension =
 toolbar-context-menu-remove-extension =
     .label = Remover extensão
     .accesskey = v
-
-## Message headers
-
-message-header-address-in-address-book-icon =
-    .alt = O endereço está no catálogo de endereços
-message-header-address-not-in-address-book-icon =
-    .alt = O endereço não está no catálogo de endereços
 
 ## Add-on removal warning
 
@@ -185,9 +192,9 @@ decrypt-and-copy-failures = { $failures } de { $total } mensagens não puderam s
 ## Spaces toolbar
 
 spaces-toolbar-element =
-    .toolbarname = Barra de espaços
-    .aria-label = Barra de espaços
-    .aria-description = Barra de ferramentas vertical para alternar entre espaços diferentes. Use as teclas de setas para navegar nos botões disponíveis.
+    .toolbarname = Barra de áreas
+    .aria-label = Barra de áreas
+    .aria-description = Barra de ferramentas vertical para alternar entre áreas diferentes. Use as teclas de setas para navegar nos botões disponíveis.
 spaces-toolbar-button-mail2 =
     .title = Email
 spaces-toolbar-button-address-book2 =
@@ -199,13 +206,13 @@ spaces-toolbar-button-tasks2 =
 spaces-toolbar-button-chat2 =
     .title = Conversa
 spaces-toolbar-button-overflow =
-    .title = Mais espaços…
+    .title = Mais áreas…
 spaces-toolbar-button-settings2 =
     .title = Configurações
 spaces-toolbar-button-hide =
-    .title = Ocultar barra de espaços
+    .title = Ocultar barra de áreas
 spaces-toolbar-button-show =
-    .title = Exibir barra de espaços
+    .title = Exibir barra de áreas
 spaces-context-new-tab-item =
     .label = Abrir em nova aba
 spaces-context-new-window-item =
@@ -214,23 +221,17 @@ spaces-context-new-window-item =
 # $tabName (String) - The name of the tab this item will switch to.
 spaces-context-switch-tab-item =
     .label = Mudar para { $tabName }
-settings-context-open-settings-item =
-    .label = Abrir configurações
-settings-context-open-account-settings-item =
-    .label = Abrir configurações da conta
-settings-context-open-addons-item =
-    .label = Abrir extensões e temas
 settings-context-open-settings-item2 =
     .label = Configurações
 settings-context-open-account-settings-item2 =
-    .label = Configurações da conta
+    .label = Configurações de contas
 settings-context-open-addons-item2 =
     .label = Extensões e temas
 
 ## Spaces toolbar pinned tab menupopup
 
 spaces-toolbar-pinned-tab-button =
-    .tooltiptext = Abrir menu de espaços
+    .tooltiptext = Menu de áreas
 spaces-pinned-button-menuitem-mail =
     .label = { spaces-toolbar-button-mail.title }
 spaces-pinned-button-menuitem-address-book =
@@ -258,7 +259,7 @@ chat-button-unread-messages = { $count }
 
 menuitem-customize-label =
     .label = Personalizar…
-spaces-customize-panel-title = Configurações da barra de espaços
+spaces-customize-panel-title = Configurações da barra de áreas
 spaces-customize-background-color = Cor de fundo
 spaces-customize-icon-color = Cor dos botões
 # The background color used on the buttons of the spaces toolbar when they are

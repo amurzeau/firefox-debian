@@ -125,6 +125,10 @@ message-header-msg-flagged =
     .aria-label = Stellate
 message-header-msg-not-flagged =
     .title = Message non marcate per stellas
+# Variables:
+# $address (String) - The email address of the recipient this picture belongs to.
+message-header-recipient-avatar =
+    .alt = Photo de profilo de { $address }.
 
 ## Message header cutomize panel
 
@@ -138,6 +142,16 @@ message-header-button-style-text =
     .label = Texto
 message-header-button-style-icons =
     .label = Icones
+message-header-show-sender-full-address =
+    .label = Sempre monstrar plen adresse del expeditor
+    .accesskey = p
+message-header-show-sender-full-address-description = Le adresse email essera monstrate sub le nomine a monstrar.
+message-header-show-recipient-avatar =
+    .label = Monstrar le photo de profilo del expeditor
+    .accesskey = p
+message-header-hide-label-column =
+    .label = Celar columna de etiquettas
+    .accesskey = e
 message-header-large-subject =
     .label = Subjecto large
     .accesskey = s
@@ -150,13 +164,6 @@ toolbar-context-menu-manage-extension =
 toolbar-context-menu-remove-extension =
     .label = Remover le extension
     .accesskey = v
-
-## Message headers
-
-message-header-address-in-address-book-icon =
-    .alt = Le adresse es in le libro del adresses
-message-header-address-not-in-address-book-icon =
-    .alt = Le adresse non  es in le libro del adresses
 
 ## Add-on removal warning
 
@@ -185,13 +192,13 @@ decrypt-and-copy-failures = { $failures } de { $total } messages non pote esser 
 ## Spaces toolbar
 
 spaces-toolbar-element =
-    .toolbarname = Barra de instrumentos del spatios
-    .aria-label = Barra de instrumentos del spatios
-    .aria-description = Barra de instrumentos vertical pro passar inter spatios differente. Usa le claves flecha pro navigar le buttones disponibile.
+    .toolbarname = Barra de spatios
+    .aria-label = Barra de spatios
+    .aria-description = Barra de instrumentos vertical pro passar inter spatios differente. Usa le claves flecha pro navigar per le buttones disponibile.
 spaces-toolbar-button-mail2 =
-    .title = Email
+    .title = E-mail
 spaces-toolbar-button-address-book2 =
-    .title = Libro del adresses
+    .title = Libro de adresses
 spaces-toolbar-button-calendar2 =
     .title = Agenda
 spaces-toolbar-button-tasks2 =
@@ -203,9 +210,9 @@ spaces-toolbar-button-overflow =
 spaces-toolbar-button-settings2 =
     .title = Parametros
 spaces-toolbar-button-hide =
-    .title = Celar barra del spatios
+    .title = Celar barra de spatios
 spaces-toolbar-button-show =
-    .title = Monstrar barra del spatios
+    .title = Monstrar barra de spatios
 spaces-context-new-tab-item =
     .label = Aperir un nove scheda
 spaces-context-new-window-item =
@@ -214,12 +221,6 @@ spaces-context-new-window-item =
 # $tabName (String) - The name of the tab this item will switch to.
 spaces-context-switch-tab-item =
     .label = Passar a { $tabName }
-settings-context-open-settings-item =
-    .label = Aperir le parametros
-settings-context-open-account-settings-item =
-    .label = Aperir le parametros del conto
-settings-context-open-addons-item =
-    .label = Aperir Additivos e Themas
 settings-context-open-settings-item2 =
     .label = Parametros
 settings-context-open-account-settings-item2 =
@@ -258,7 +259,7 @@ chat-button-unread-messages = { $count }
 
 menuitem-customize-label =
     .label = Personalisar…
-spaces-customize-panel-title = Parametros de barra del instrumentos spatios
+spaces-customize-panel-title = Parametros del barra de spatios
 spaces-customize-background-color = Color de fundo
 spaces-customize-icon-color = Color de button
 # The background color used on the buttons of the spaces toolbar when they are

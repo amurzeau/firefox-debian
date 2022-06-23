@@ -152,6 +152,9 @@ encryption-options-openpgp =
 encryption-options-smime =
     .label = S/MIME
     .tooltiptext = Προβολή ή αλλαγή ρυθμίσεων της κρυπτογράφησης S/MIME
+signing-toggle =
+    .label = Υπογραφή
+    .tooltiptext = Χρήση ψηφιακής υπογραφής για αυτό το μήνυμα
 menu-openpgp =
     .label = OpenPGP
     .accesskey = O
@@ -188,6 +191,9 @@ key-notification-resolve =
     .label = Επίλυση…
     .accesskey = λ
     .tooltiptext = Άνοιγμα βοηθού κλειδιών OpenPGP
+can-e2e-encrypt-button =
+    .label = Κρυπτογράφηση
+    .accesskey = Κ
 
 ## Addressing Area
 

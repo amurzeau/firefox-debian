@@ -125,6 +125,10 @@ message-header-msg-flagged =
     .aria-label = Met ster
 message-header-msg-not-flagged =
     .title = Niet met ster gemarkeerd bericht
+# Variables:
+# $address (String) - The email address of the recipient this picture belongs to.
+message-header-recipient-avatar =
+    .alt = Profielafbeelding van { $adres }.
 
 ## Message header cutomize panel
 
@@ -138,6 +142,16 @@ message-header-button-style-text =
     .label = Tekst
 message-header-button-style-icons =
     .label = Pictogrammen
+message-header-show-sender-full-address =
+    .label = Altijd het volledige adres van de afzender tonen
+    .accesskey = v
+message-header-show-sender-full-address-description = Het e-mailadres wordt onder de weergavenaam getoond.
+message-header-show-recipient-avatar =
+    .label = Profielafbeelding afzender tonen
+    .accesskey = P
+message-header-hide-label-column =
+    .label = Kolomlabels verbergen
+    .accesskey = l
 message-header-large-subject =
     .label = Groot onderwerp
     .accesskey = n
@@ -150,13 +164,6 @@ toolbar-context-menu-manage-extension =
 toolbar-context-menu-remove-extension =
     .label = Extensie verwijderen
     .accesskey = v
-
-## Message headers
-
-message-header-address-in-address-book-icon =
-    .alt = Adres staat in het adresboek
-message-header-address-not-in-address-book-icon =
-    .alt = Adres staat niet in het adresboek
 
 ## Add-on removal warning
 
@@ -214,12 +221,6 @@ spaces-context-new-window-item =
 # $tabName (String) - The name of the tab this item will switch to.
 spaces-context-switch-tab-item =
     .label = Wisselen naar { $tabName }
-settings-context-open-settings-item =
-    .label = Instellingen openen
-settings-context-open-account-settings-item =
-    .label = Accountinstellingen openen
-settings-context-open-addons-item =
-    .label = Add-ons en thema’s openen
 settings-context-open-settings-item2 =
     .label = Instellingen
 settings-context-open-account-settings-item2 =

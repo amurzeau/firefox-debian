@@ -52,6 +52,9 @@ detail-version =
 detail-last-updated =
     .label = Ultimo aggiornamento
 
+addon-detail-description-expand = Mostra altro
+addon-detail-description-collapse = Mostra meno
+
 detail-contributions-description = Lo sviluppatore di questo componente aggiuntivo chiede agli utenti una piccola donazione per contribuire al suo sviluppo.
 
 detail-contributions-button = Fai una donazione
@@ -335,8 +338,16 @@ extension-disabled-heading = Disattivate
 
 theme-enabled-heading = Attivi
 theme-disabled-heading = Disattivati
+theme-disabled-heading2 = Temi salvati
 theme-monochromatic-heading = Tonalità
 theme-monochromatic-subheading = Nuove vibranti tonalità da { -brand-product-name }. Disponibili per un periodo limitato.
+
+theme-colorways-button = Prova nuove tonalità
+
+colorway-collection-independent-voices-subheading = Rendi { -brand-short-name } un po' più tuo.
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires.
+colorway-collection-expiry-date-span = Scadenza { DATETIME($expiryDate, month: "long", day: "numeric") }
 
 plugin-enabled-heading = Attivi
 plugin-disabled-heading = Disattivati

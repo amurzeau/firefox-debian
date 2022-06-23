@@ -26,6 +26,8 @@ about-addressbook-books-context-properties =
     .label = Propriedades
 about-addressbook-books-context-synchronize =
     .label = Sincronizar
+about-addressbook-books-context-edit =
+    .label = Editar
 about-addressbook-books-context-print =
     .label = Imprimir…
 about-addressbook-books-context-export =
@@ -53,8 +55,8 @@ about-addressbook-search =
     .placeholder = Pesquisar { $name }
 about-addressbook-search-all =
     .placeholder = Pesquisar em todos os catálogos de endereços
-about-addressbook-sort-button =
-    .title = Alterar a ordem da lista
+about-addressbook-sort-button2 =
+    .title = Opções da lista de exibição
 about-addressbook-name-format-display =
     .label = Nome de exibição
 about-addressbook-name-format-firstlast =
@@ -69,6 +71,38 @@ about-addressbook-sort-email-ascending =
     .label = Ordenar por endereço de email (A > Z)
 about-addressbook-sort-email-descending =
     .label = Ordenar por endereço de email (Z > A)
+about-addressbook-horizontal-layout =
+    .label = Mudar para disposição horizontal
+about-addressbook-vertical-layout =
+    .label = Mudar para disposição vertical
+
+## Card column headers
+## Each string is listed here twice, and the values should match.
+
+about-addressbook-column-header-generatedname = Nome
+about-addressbook-column-label-generatedname =
+    .label = { about-addressbook-column-header-generatedname }
+about-addressbook-column-header-emailaddresses = Endereços de email
+about-addressbook-column-label-emailaddresses =
+    .label = { about-addressbook-column-header-emailaddresses }
+about-addressbook-column-header-phonenumbers = Números de telefone
+about-addressbook-column-label-phonenumbers =
+    .label = { about-addressbook-column-header-phonenumbers }
+about-addressbook-column-header-addresses = Endereços
+about-addressbook-column-label-addresses =
+    .label = { about-addressbook-column-header-addresses }
+about-addressbook-column-header-title = Cargo
+about-addressbook-column-label-title =
+    .label = { about-addressbook-column-header-title }
+about-addressbook-column-header-department = Departamento
+about-addressbook-column-label-department =
+    .label = { about-addressbook-column-header-department }
+about-addressbook-column-header-organization = Organização
+about-addressbook-column-label-organization =
+    .label = { about-addressbook-column-header-organization }
+about-addressbook-column-header-addrbook = Catálogo de endereços
+about-addressbook-column-label-addrbook =
+    .label = { about-addressbook-column-header-addrbook }
 about-addressbook-cards-context-write =
     .label = Escrever
 about-addressbook-confirm-delete-mixed-title = Excluir contatos e listas
@@ -122,8 +156,18 @@ about-addressbook-confirm-delete-contacts =
        *[other] Tem certeza que quer excluir esses { $count } contatos?
     }
 
+## Card list placeholder
+## Shown when there are no cards in the list
+
+about-addressbook-placeholder-empty-book = Nenhum contato disponível
+about-addressbook-placeholder-new-contact = Novo contato
+about-addressbook-placeholder-search-only = Este catálogo de endereços só mostra contatos após uma pesquisa
+about-addressbook-placeholder-searching = Procurando…
+about-addressbook-placeholder-no-search-results = Nenhum contato encontrado
+
 ## Details
 
+about-addressbook-prefer-display-name = Preferir nome de exibição ao cabeçalho da mensagem
 about-addressbook-write-action-button = Escrever
 about-addressbook-event-action-button = Evento
 about-addressbook-search-action-button = Pesquisar
@@ -134,8 +178,6 @@ about-addressbook-save-edit-contact-button = Salvar
 about-addressbook-add-contact-to = Adicionar a:
 about-addressbook-details-email-addresses-header = Endereços de email
 about-addressbook-details-phone-numbers-header = Números de telefone
-about-addressbook-details-home-address-header = Endereço residencial
-about-addressbook-details-work-address-header = Endereço comercial
 about-addressbook-details-addresses-header = Endereços
 about-addressbook-details-notes-header = Notas
 about-addressbook-details-other-info-header = Outras informações
@@ -147,7 +189,7 @@ about-addressbook-entry-type-pager = Pager
 about-addressbook-entry-name-birthday = Data de nascimento
 about-addressbook-entry-name-anniversary = Aniversário
 about-addressbook-entry-name-title = Título
-about-addressbook-entry-name-department = Departamento
+about-addressbook-entry-name-role = Função
 about-addressbook-entry-name-organization = Organização
 about-addressbook-entry-name-website = Site
 about-addressbook-entry-name-time-zone = Fuso horário

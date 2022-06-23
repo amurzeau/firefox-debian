@@ -21,11 +21,13 @@ about-addressbook-toolbar-import =
 
 ## Books
 
-all-address-books = Všetky adresáre kontaktov
+all-address-books = Všetky adresáre
 about-addressbook-books-context-properties =
     .label = Vlastnosti
 about-addressbook-books-context-synchronize =
     .label = Synchronizovať
+about-addressbook-books-context-edit =
+    .label = Upraviť
 about-addressbook-books-context-print =
     .label = Tlačiť…
 about-addressbook-books-context-export =
@@ -53,8 +55,8 @@ about-addressbook-search =
     .placeholder = Hľadať v adresári { $name }
 about-addressbook-search-all =
     .placeholder = Hľadať vo všetkých adresároch
-about-addressbook-sort-button =
-    .title = Zmeniť poradie zoznamu
+about-addressbook-sort-button2 =
+    .title = Možnosti zobrazenia zoznamu
 about-addressbook-name-format-display =
     .label = Zobrazované meno
 about-addressbook-name-format-firstlast =
@@ -69,6 +71,38 @@ about-addressbook-sort-email-ascending =
     .label = Usporiadať podľa e-mailovej adresy (A > Z)
 about-addressbook-sort-email-descending =
     .label = Usporiadať podľa e-mailovej adresy (Z > A)
+about-addressbook-horizontal-layout =
+    .label = Prepnúť na horizontálne rozloženie
+about-addressbook-vertical-layout =
+    .label = Prepnúť na vertikálne rozloženie
+
+## Card column headers
+## Each string is listed here twice, and the values should match.
+
+about-addressbook-column-header-generatedname = Meno
+about-addressbook-column-label-generatedname =
+    .label = { about-addressbook-column-header-generatedname }
+about-addressbook-column-header-emailaddresses = E-mailové adresy
+about-addressbook-column-label-emailaddresses =
+    .label = { about-addressbook-column-header-emailaddresses }
+about-addressbook-column-header-phonenumbers = Telefónne čísla
+about-addressbook-column-label-phonenumbers =
+    .label = { about-addressbook-column-header-phonenumbers }
+about-addressbook-column-header-addresses = Adresy
+about-addressbook-column-label-addresses =
+    .label = { about-addressbook-column-header-addresses }
+about-addressbook-column-header-title = Titul
+about-addressbook-column-label-title =
+    .label = { about-addressbook-column-header-title }
+about-addressbook-column-header-department = Oddelenie
+about-addressbook-column-label-department =
+    .label = { about-addressbook-column-header-department }
+about-addressbook-column-header-organization = Organizácia
+about-addressbook-column-label-organization =
+    .label = { about-addressbook-column-header-organization }
+about-addressbook-column-header-addrbook = Adresár
+about-addressbook-column-label-addrbook =
+    .label = { about-addressbook-column-header-addrbook }
 about-addressbook-cards-context-write =
     .label = Napísať správu
 about-addressbook-confirm-delete-mixed-title = Odstránenie kontaktov a zoznamov
@@ -128,8 +162,18 @@ about-addressbook-confirm-delete-contacts =
        *[other] Naozaj chcete odstrániť týchto { $count } kontaktov?
     }
 
+## Card list placeholder
+## Shown when there are no cards in the list
+
+about-addressbook-placeholder-empty-book = Nie sú k dispozícii žiadne kontakty
+about-addressbook-placeholder-new-contact = Nový kontakt
+about-addressbook-placeholder-search-only = Tento adresár zobrazuje kontakty až po vyhľadávaní
+about-addressbook-placeholder-searching = Vyhľadáva sa…
+about-addressbook-placeholder-no-search-results = Neboli nájdené žiadne kontakty
+
 ## Details
 
+about-addressbook-prefer-display-name = Uprednostniť Zobrazované meno namiesto mena z hlavičky správy
 about-addressbook-write-action-button = Napísať správu
 about-addressbook-event-action-button = Udalosť
 about-addressbook-search-action-button = Hľadať
@@ -140,8 +184,6 @@ about-addressbook-save-edit-contact-button = Uložiť
 about-addressbook-add-contact-to = Pridať do:
 about-addressbook-details-email-addresses-header = E-mailové adresy
 about-addressbook-details-phone-numbers-header = Telefónne čísla
-about-addressbook-details-home-address-header = Adresa domov
-about-addressbook-details-work-address-header = Pracovná adresa
 about-addressbook-details-addresses-header = Adresy
 about-addressbook-details-notes-header = Poznámky
 about-addressbook-details-other-info-header = Ďalšie informácie
@@ -153,7 +195,7 @@ about-addressbook-entry-type-pager = Pager
 about-addressbook-entry-name-birthday = Narodeniny
 about-addressbook-entry-name-anniversary = Výročie
 about-addressbook-entry-name-title = Titul
-about-addressbook-entry-name-department = Oddelenie
+about-addressbook-entry-name-role = Funkcia
 about-addressbook-entry-name-organization = Organizácia
 about-addressbook-entry-name-website = Webová stránka
 about-addressbook-entry-name-time-zone = Časové pásmo

@@ -38,7 +38,7 @@
 <!ENTITY deleteByAgeFromServer.label "Por no máximo">
 <!ENTITY deleteByAgeFromServer.accesskey "o">
 <!ENTITY daysEnd.label "dias">
-<!ENTITY deleteOnServer2.label "Até eu excluí-las">
+<!ENTITY deleteOnServer2.label "Até eu excluir">
 <!ENTITY deleteOnServer2.accesskey "e">
 <!ENTITY downloadOnBiff.label "Receber novas mensagens automaticamente">
 <!ENTITY downloadOnBiff.accesskey "e">
@@ -81,7 +81,7 @@
 <!ENTITY browseNewsrc.label "Procurar…">
 <!ENTITY browseNewsrc.accesskey "r">
 
-<!ENTITY accountTitle.label "Configurações da conta">
+<!ENTITY accountTitle.label "Configurações de contas">
 <!ENTITY accountSettingsDesc.label "Esta é uma conta especial. Não há identidades associadas a ela.">
 <!ENTITY storeType.label "Tipo de armazenamento de mensagens:">
 <!ENTITY storeType.accesskey "T">

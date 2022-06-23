@@ -68,20 +68,20 @@ alt-shift-shortcut-key =
         [macos] ⌥ ⇧ { $key }
        *[other] Alt+Maiusc+{ $key }
     }
-meta-shift-alt-shortcut-key =
+meta-shift-alt-shortcut-key2 =
     { PLATFORM() ->
         [macos] ⌥ ⇧ ⌘ { $key }
        *[other] Meta+Alt+Maiusc+{ $key }
     }
-ctrl-shift-alt-shortcut-key =
+ctrl-shift-alt-shortcut-key2 =
     { PLATFORM() ->
         [macos] ⌃ ⌥ ⇧ { $key }
        *[other] Ctrl+Alt+Maiusc+{ $key }
     }
-meta-ctrl-shift-alt-shortcut-key =
+meta-ctrl-shift-alt-shortcut-key2 =
     { PLATFORM() ->
         [macos] ⌃ ⌥ ⇧ ⌘ { $key }
-       *[other] Meta+Ctrl+Alt+Shift+{ $key }
+       *[other] Meta+Ctrl+Alt+Maiusc+{ $key }
     }
 # Variables:
 #  $title (String): The title coming from the original element.

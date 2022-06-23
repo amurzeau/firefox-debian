@@ -38,11 +38,9 @@ menu-quit =
             [windows] E
            *[other] Q
         }
-
 # This menu-quit-mac string is only used on macOS.
 menu-quit-mac =
     .label = Quitar { -brand-shorter-name }
-
 menu-about =
     .label = A proposito de { -brand-shorter-name }
     .accesskey = p
@@ -112,8 +110,8 @@ menu-edit =
     .label = Edition
     .accesskey = E
 menu-edit-find-in-page =
-    .label = Trovar in le pagina…
-    .accesskey = T
+    .label = Cercar in le pagina…
+    .accesskey = C
 menu-edit-find-again =
     .label = Cercar le sequente
     .accesskey = n
@@ -151,7 +149,7 @@ menu-view-full-zoom-reduce =
     .label = Zoom retro
     .accesskey = R
 menu-view-full-zoom-actual-size =
-    .label = Dimension actual
+    .label = Dimension real
     .accesskey = a
 menu-view-full-zoom-toggle =
     .label = Zoom del texto solmente

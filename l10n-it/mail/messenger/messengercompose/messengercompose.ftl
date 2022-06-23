@@ -191,6 +191,11 @@ key-notification-resolve =
     .label = Risolvi…
     .accesskey = R
     .tooltiptext = Apri l’assistente chiavi OpenPGP
+can-encrypt-smime-notification = È possibile utilizzare la crittografia end-to-end S/MIME.
+can-encrypt-openpgp-notification = È possibile utilizzare la crittografia end-to-end OpenPGP.
+can-e2e-encrypt-button =
+    .label = Critta
+    .accesskey = C
 
 ## Addressing Area
 

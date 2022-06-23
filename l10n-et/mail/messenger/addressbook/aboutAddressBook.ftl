@@ -26,6 +26,8 @@ about-addressbook-books-context-properties =
     .label = Omadused
 about-addressbook-books-context-synchronize =
     .label = Sünkroniseeri
+about-addressbook-books-context-edit =
+    .label = Muuda
 about-addressbook-books-context-print =
     .label = Prindi…
 about-addressbook-books-context-export =
@@ -53,8 +55,8 @@ about-addressbook-search =
     .placeholder = Otsi aadressiraamatust { $name }
 about-addressbook-search-all =
     .placeholder = Otsi kõigist aadressiraamatutest
-about-addressbook-sort-button =
-    .title = Muuda listi järjekorda
+about-addressbook-sort-button2 =
+    .title = Nimekirja kuvamise valikud
 about-addressbook-name-format-display =
     .label = Kuvatav nimi
 about-addressbook-name-format-firstlast =
@@ -69,6 +71,38 @@ about-addressbook-sort-email-ascending =
     .label = Sordi e-posti aadressi järgi (A > Y)
 about-addressbook-sort-email-descending =
     .label = Sordi e-posti aadressi järgi (Y > A)
+about-addressbook-horizontal-layout =
+    .label = Lülitu horisontaalsele paigutusele
+about-addressbook-vertical-layout =
+    .label = Lülitu vertikaalsele paigutusele
+
+## Card column headers
+## Each string is listed here twice, and the values should match.
+
+about-addressbook-column-header-generatedname = Nimi
+about-addressbook-column-label-generatedname =
+    .label = { about-addressbook-column-header-generatedname }
+about-addressbook-column-header-emailaddresses = E-posti aadressid
+about-addressbook-column-label-emailaddresses =
+    .label = { about-addressbook-column-header-emailaddresses }
+about-addressbook-column-header-phonenumbers = Telefoninumbrid
+about-addressbook-column-label-phonenumbers =
+    .label = { about-addressbook-column-header-phonenumbers }
+about-addressbook-column-header-addresses = Aadressid
+about-addressbook-column-label-addresses =
+    .label = { about-addressbook-column-header-addresses }
+about-addressbook-column-header-title = Pealkiri
+about-addressbook-column-label-title =
+    .label = { about-addressbook-column-header-title }
+about-addressbook-column-header-department = Osakond
+about-addressbook-column-label-department =
+    .label = { about-addressbook-column-header-department }
+about-addressbook-column-header-organization = Organisatsioon
+about-addressbook-column-label-organization =
+    .label = { about-addressbook-column-header-organization }
+about-addressbook-column-header-addrbook = Aadressiraamat
+about-addressbook-column-label-addrbook =
+    .label = { about-addressbook-column-header-addrbook }
 about-addressbook-cards-context-write =
     .label = Kirjuta
 about-addressbook-confirm-delete-mixed-title = Kontaktide ja listide kustutamine
@@ -122,8 +156,18 @@ about-addressbook-confirm-delete-contacts =
        *[other] Kas oled kindel, et soovid kustutada need { $count } kontakti?
     }
 
+## Card list placeholder
+## Shown when there are no cards in the list
+
+about-addressbook-placeholder-empty-book = Kontakte pole saadaval
+about-addressbook-placeholder-new-contact = Uus kontakt
+about-addressbook-placeholder-search-only = See aadressiraamat kuvab kontakte ainult pärast otsimist
+about-addressbook-placeholder-searching = Otsimine...
+about-addressbook-placeholder-no-search-results = Kontakte ei leitud
+
 ## Details
 
+about-addressbook-prefer-display-name = Kuvatavat nime eelistatakse kirja päistes olevale
 about-addressbook-write-action-button = Kirjuta
 about-addressbook-event-action-button = Sündmus
 about-addressbook-search-action-button = Otsi
@@ -134,8 +178,6 @@ about-addressbook-save-edit-contact-button = Salvesta
 about-addressbook-add-contact-to = Aadressiraamat:
 about-addressbook-details-email-addresses-header = E-posti aadressid
 about-addressbook-details-phone-numbers-header = Telefoninumbrid
-about-addressbook-details-home-address-header = Kodune aadress
-about-addressbook-details-work-address-header = Tööaadress
 about-addressbook-details-addresses-header = Addresses
 about-addressbook-details-notes-header = Märkmed
 about-addressbook-details-other-info-header = Muu info
@@ -147,7 +189,7 @@ about-addressbook-entry-type-pager = Peiler
 about-addressbook-entry-name-birthday = Sünnipäev
 about-addressbook-entry-name-anniversary = Pulma-aastapäev
 about-addressbook-entry-name-title = Amet
-about-addressbook-entry-name-department = Osakond
+about-addressbook-entry-name-role = Roll
 about-addressbook-entry-name-organization = Organisatsioon
 about-addressbook-entry-name-website = Sait
 about-addressbook-entry-name-time-zone = Ajavöönd

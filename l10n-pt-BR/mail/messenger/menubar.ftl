@@ -24,8 +24,8 @@ menu-help-exit-troubleshoot-mode =
     .label = Desativar modo de solução de problemas
     .accesskey = D
 menu-help-more-troubleshooting-info =
-    .label = Mais informações para resolver problemas
-    .accesskey = M
+    .label = Informações técnicas
+    .accesskey = t
 
 ## Mail Toolbar
 
@@ -75,7 +75,7 @@ mail-uidensity-touch =
     .label = Toque
     .accesskey = T
 menu-spaces-toolbar-button =
-    .label = Barra de ferramentas de espaços
+    .label = Barra de áreas
     .accesskey = s
 
 ## File

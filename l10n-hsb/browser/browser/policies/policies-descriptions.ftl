@@ -113,8 +113,10 @@ policy-SecurityDevices = Module PKCS #11 instalować.
 policy-ShowHomeButton = Tłóčatko startoweje strony na symbolowej lajsće pokazać.
 policy-SSLVersionMax = Nastajće maksimalnu SSL-wersiju.
 policy-SSLVersionMin = Nastajće minimalnu SSL-wersiju.
+policy-StartDownloadsInTempDirectory = Sćehnjenja nućić, zo bychu w lokalnym, nachwilnym městnje město w standardnym zapisu sćehnjenjow započeli.
 policy-SupportMenu = Swójski menijowy zapisk pomocy menijej pomocy přidać.
 policy-UserMessaging = Wužiwarjej wěste powěsće njepokazać
+policy-UseSystemPrintDialog = Z pomocu systemoweho ćišćerskeho dialoga ćišćeć.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Wopytowanju websydłow zadźěwać. Hlejće dokumentaciju za dalše podrobnosće wo formaće.
 policy-Windows10SSO = Jednotne přizjewjenje za konta Microsoft, dźěłowe konta a šulske konta zmóžnić

@@ -26,6 +26,8 @@ about-addressbook-books-context-properties =
     .label = Kakosći
 about-addressbook-books-context-synchronize =
     .label = Synchronizěrowaś
+about-addressbook-books-context-edit =
+    .label = Wobźěłaś
 about-addressbook-books-context-print =
     .label = Śišćaś…
 about-addressbook-books-context-export =
@@ -53,8 +55,8 @@ about-addressbook-search =
     .placeholder = { $name } pśepytaś
 about-addressbook-search-all =
     .placeholder = Wšykne adresniki pśepytaś
-about-addressbook-sort-button =
-    .title = Lisćinowy pórěd změniś
+about-addressbook-sort-button2 =
+    .title = Pokazowańske nastajenja nalicyś
 about-addressbook-name-format-display =
     .label = Zwobraznjeńske mě
 about-addressbook-name-format-firstlast =
@@ -69,6 +71,38 @@ about-addressbook-sort-email-ascending =
     .label = Pó e-mailowej adresy sortěrowaś (A > Z)
 about-addressbook-sort-email-descending =
     .label = Pó e-mailowej adresy sortěrowaś (Z > A)
+about-addressbook-horizontal-layout =
+    .label = Do horicontalnego wugótowanja pśešaltowaś
+about-addressbook-vertical-layout =
+    .label = Do wertikalnego wugótowanja pśešaltowaś
+
+## Card column headers
+## Each string is listed here twice, and the values should match.
+
+about-addressbook-column-header-generatedname = Mě
+about-addressbook-column-label-generatedname =
+    .label = { about-addressbook-column-header-generatedname }
+about-addressbook-column-header-emailaddresses = E-mailowe adrese
+about-addressbook-column-label-emailaddresses =
+    .label = { about-addressbook-column-header-emailaddresses }
+about-addressbook-column-header-phonenumbers = Telefonowe numery
+about-addressbook-column-label-phonenumbers =
+    .label = { about-addressbook-column-header-phonenumbers }
+about-addressbook-column-header-addresses = Adrese
+about-addressbook-column-label-addresses =
+    .label = { about-addressbook-column-header-addresses }
+about-addressbook-column-header-title = Titel
+about-addressbook-column-label-title =
+    .label = { about-addressbook-column-header-title }
+about-addressbook-column-header-department = Wótźělenje
+about-addressbook-column-label-department =
+    .label = { about-addressbook-column-header-department }
+about-addressbook-column-header-organization = Organizacija
+about-addressbook-column-label-organization =
+    .label = { about-addressbook-column-header-organization }
+about-addressbook-column-header-addrbook = Adresnik
+about-addressbook-column-label-addrbook =
+    .label = { about-addressbook-column-header-addrbook }
 about-addressbook-cards-context-write =
     .label = Pisaś
 about-addressbook-confirm-delete-mixed-title = Kontakty a lisćiny wulašowaś
@@ -134,8 +168,18 @@ about-addressbook-confirm-delete-contacts =
        *[other] Cośo napšawdu toś te { $count } kontaktow wulašowaś?
     }
 
+## Card list placeholder
+## Shown when there are no cards in the list
+
+about-addressbook-placeholder-empty-book = Žedne kontakty k dispoziciji
+about-addressbook-placeholder-new-contact = Nowy kontakt
+about-addressbook-placeholder-search-only = Toś ten adresnik kontakty jano pó pytanju pokazujo
+about-addressbook-placeholder-searching = Pyta se…
+about-addressbook-placeholder-no-search-results = Žedne kontakty namakane
+
 ## Details
 
+about-addressbook-prefer-display-name = Zwobraznjone mě nad hłowu powěsći lubjej wužywaś
 about-addressbook-write-action-button = Pisaś
 about-addressbook-event-action-button = Tšojenje
 about-addressbook-search-action-button = Pytaś
@@ -146,8 +190,6 @@ about-addressbook-save-edit-contact-button = Składowaś
 about-addressbook-add-contact-to = Pśidaś do:
 about-addressbook-details-email-addresses-header = E-mailowe adrese
 about-addressbook-details-phone-numbers-header = Telefonowe numery
-about-addressbook-details-home-address-header = Priwatna adresa
-about-addressbook-details-work-address-header = Słužbna adresa
 about-addressbook-details-addresses-header = Adrese
 about-addressbook-details-notes-header = Pokaze
 about-addressbook-details-other-info-header = Druge informacije
@@ -159,7 +201,7 @@ about-addressbook-entry-type-pager = Pager
 about-addressbook-entry-name-birthday = Narodny źeń
 about-addressbook-entry-name-anniversary = Wrośenica
 about-addressbook-entry-name-title = Titel
-about-addressbook-entry-name-department = Wótźělenje
+about-addressbook-entry-name-role = Rola
 about-addressbook-entry-name-organization = Organizacija
 about-addressbook-entry-name-website = Websedło
 about-addressbook-entry-name-time-zone = Casowa cona

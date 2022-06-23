@@ -192,6 +192,11 @@ key-notification-resolve =
     .label = Leysa…
     .accesskey = L
     .tooltiptext = Opna leiðarvísi fyrir OpenPGP dulritunarlykla
+can-encrypt-smime-notification = S/MIME enda-í-enda dulritun er möguleg.
+can-encrypt-openpgp-notification = OpenPGP enda-í-enda dulritun er möguleg.
+can-e2e-encrypt-button =
+    .label = Dulrita
+    .accesskey = D
 
 ## Addressing Area
 

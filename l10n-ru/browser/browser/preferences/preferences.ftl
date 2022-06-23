@@ -111,8 +111,8 @@ always-check-default =
 is-default = В настоящий момент { -brand-short-name } является вашим браузером по умолчанию
 is-not-default = { -brand-short-name } не является вашим браузером по умолчанию
 set-as-my-default-browser =
-    .label = Установить по умолчанию…
-    .accesskey = н
+    .label = Сделать браузером по умолчанию…
+    .accesskey = у
 startup-restore-windows-and-tabs =
     .label = Открыть предыдущие окна и вкладки
     .accesskey = п
@@ -266,9 +266,6 @@ check-user-spelling =
 
 files-and-applications-title = Файлы и приложения
 download-header = Загрузки
-download-save-to =
-    .label = Путь для сохранения файлов
-    .accesskey = ь
 download-save-where = Путь для сохранения файлов
     .accesskey = ь
 download-choose-folder =
@@ -311,8 +308,8 @@ applications-use-app-default =
 applications-use-os-default =
     .label =
         { PLATFORM() ->
-            [macos] Использовать приложение по умолчанию в macOS
-            [windows] Использовать приложение по умолчанию в Windows
+            [macos] Использовать приложение macOS по умолчанию
+            [windows] Использовать приложение Windows по умолчанию
            *[other] Использовать системное приложение по умолчанию
         }
 applications-use-other =
@@ -365,7 +362,7 @@ applications-save-for-new-types =
     .label = Сохранять файлы
     .accesskey = я
 applications-ask-before-handling =
-    .label = Спрашивать, нужно ли открывать или сохранять файлы
+    .label = Спрашивать, открывать или сохранять файлы
     .accesskey = ш
 drm-content-header = Содержимое использующее технические средства защиты авторских прав (DRM)
 play-drm-content =
@@ -913,8 +910,8 @@ sitedata-cookies-exceptions =
 
 ## Privacy Section - Address Bar
 
-addressbar-header = Панель адреса
-addressbar-suggest = При использовании панели адреса предлагать ссылки
+addressbar-header = Адресная строка
+addressbar-suggest = При использовании адресной строки предлагать ссылки
 addressbar-locbar-history-option =
     .label = из журнала посещений
     .accesskey = ж
@@ -1144,7 +1141,3 @@ httpsonly-radio-disabled =
 desktop-folder-name = Рабочий стол
 downloads-folder-name = Загрузки
 choose-download-folder-title = Выберите папку для загрузок:
-# Variables:
-#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
-save-files-to-cloud-storage =
-    .label = Сохранять файлы в { $service-name }
