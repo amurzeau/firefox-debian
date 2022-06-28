@@ -1,3 +1,19 @@
+firefox (102.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2022-24, also known as:
+    CVE-2022-34479, CVE-2022-34470, CVE-2022-34468, CVE-2022-34482,
+    CVE-2022-34483, CVE-2022-34476, CVE-2022-34481, CVE-2022-34474,
+    CVE-2022-34471, CVE-2022-34472, CVE-2022-2200, CVE-2022-34480,
+    CVE-2022-34477, CVE-2022-34475, CVE-2022-34473, CVE-2022-34484,
+    CVE-2022-34485.
+
+  * build/moz.configure/bindgen.configure,
+    gfx/webrender_bindings/webrender_ffi.h: Work around build failure with
+    newer cbindgen. bz#1773259
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 29 Jun 2022 07:41:32 +0900
+
 firefox (101.0.1-1) unstable; urgency=medium
 
   * New upstream release.
