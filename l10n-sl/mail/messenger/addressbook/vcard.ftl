@@ -3,12 +3,26 @@
 # file, you can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# Fieldsets
+# Display Name
 
-vcard-fieldset-name = Ime
+vcard-displayname = Prikazano ime
+vcard-displayname-placeholder =
+    .placeholder = { vcard-displayname }
 
-# N VCard Field
+# Type selection
 
+vcard-entry-type-label = Vrsta
+vcard-entry-type-home = Doma
+vcard-entry-type-work = Služba
+vcard-entry-type-none = brez
+vcard-entry-type-custom = Po meri
+
+# N vCard field
+
+vcard-name-header = Ime
+vcard-n-prefix = Predpona
+vcard-n-add-prefix =
+    .title = Dodaj predpono
 vcard-n-firstname = Ime
 vcard-n-add-firstname =
     .title = Dodaj ime
@@ -18,3 +32,66 @@ vcard-n-add-middlename =
 vcard-n-lastname = Priimek
 vcard-n-add-lastname =
     .title = Dodaj priimek
+vcard-n-suffix = Pripona
+vcard-n-add-suffix =
+    .title = Dodaj pripono
+
+# Email vCard field
+
+vcard-email-header = E-poštni naslovi
+vcard-email-add = Dodaj e-poštni naslov
+vcard-email-label = E-poštni naslov
+vcard-primary-email-label = Privzet
+
+# URL vCard field
+
+vcard-url-header = Spletne strani
+vcard-url-add = Dodaj spletno stran
+vcard-url-label = Spletna stran
+
+# Tel vCard field
+
+vcard-tel-header = Telefonske številke
+vcard-tel-add = Dodaj telefonsko številko
+vcard-tel-label = Telefonska številka
+
+# TZ vCard field
+
+vcard-tz-header = Časovni pas
+vcard-tz-add = Dodaj časovni pas
+
+# IMPP vCard field
+
+vcard-impp-header = Računi za klepet
+vcard-impp-add = Dodaj račun za klepet
+vcard-impp-label = Račun za klepet
+
+# BDAY and ANNIVERSARY vCard field
+
+vcard-bday-anniversary-header = Posebni datumi
+vcard-bday-anniversary-add = Dodaj poseben datum
+vcard-bday-label = Rojstni dan
+vcard-anniversary-label = Obletnica
+vcard-date-day = dan
+vcard-date-month = mesec
+vcard-date-year = leto
+
+# ADR vCard field
+
+vcard-adr-header = Naslovi
+vcard-adr-add = Dodaj naslov
+vcard-adr-label = Naslov
+vcard-adr-country = Država
+
+# NOTE vCard field
+
+vcard-note-header = Opombe
+vcard-note-add = Dodaj opombo
+
+# TITLE, ROLE and ORGANIZATION vCard fields
+
+vcard-org-header = Podatki organizacije
+vcard-org-add = Dodaj podatke o organizaciji
+vcard-org-title = Naziv
+vcard-org-role = Funkcija
+vcard-org-org = Organizacija

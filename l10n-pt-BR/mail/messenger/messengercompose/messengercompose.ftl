@@ -191,6 +191,11 @@ key-notification-resolve =
     .label = Resolver…
     .accesskey = R
     .tooltiptext = Abrir o assistente de chaves OpenPGP
+can-encrypt-smime-notification = É possível criptografia de ponta a ponta S/MIME.
+can-encrypt-openpgp-notification = É possível criptografia de ponta a ponta OpenPGP.
+can-e2e-encrypt-button =
+    .label = Criptografar
+    .accesskey = C
 
 ## Addressing Area
 
@@ -268,7 +273,7 @@ many-public-recipients-prompt-send = Enviar assim mesmo
 # Variables:
 # $identity (string) - The name of the used identity, most likely an email address.
 compose-missing-identity-warning = Não foi encontrada uma identidade única correspondente ao endereço do remetente. A mensagem será enviada usando o campo De atual e as configurações da identidade { $identity }.
-encrypted-bcc-warning = Ao enviar uma mensagem criptografada, destinatários em Cco não ficam totalmente ocultos. Todos os destinatários podem conseguir identificá-los.
+encrypted-bcc-warning = Ao enviar uma mensagem criptografada, destinatários em Cco não ficam totalmente ocultos. Todos os destinatários podem conseguir identificar.
 encrypted-bcc-ignore-button = Entendi
 
 ## Editing

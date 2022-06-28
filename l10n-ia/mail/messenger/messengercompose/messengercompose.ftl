@@ -165,7 +165,7 @@ menu-encrypt =
     .label = Cryptar
     .accesskey = C
 menu-encrypt-subject =
-    .label = Subjecto de cryptation
+    .label = Cryptar le subjecto
     .accesskey = b
 menu-sign =
     .label = Signar digitalmente:
@@ -179,10 +179,10 @@ menu-view-certificates =
 menu-open-key-manager =
     .label = Gestor de claves
     .accesskey = G
-openpgp-key-issue-notification-one = Le cryptation de extremo-a-extremo require resolver problemas de clave pro { $addr }
-openpgp-key-issue-notification-many = Le cryptation de extremo-a-extremo require resolver problemas de clave pro le destinatarios de { $count }
-smime-cert-issue-notification-one = Le cryptation de extremo-a-extremo require resolver problemas de certificato pro { $addr }.
-smime-cert-issue-notification-many = Le cryptation de extremo-a-extremo require resolver problemas de certificato pro le destinatarios de { $count }.
+openpgp-key-issue-notification-one = Le cryptation de extremo a extremo require resolver problemas de clave pro { $addr }.
+openpgp-key-issue-notification-many = Le cryptation de extremo a extremo require resolver problemas de clave pro { $count } destinatarios.
+smime-cert-issue-notification-one = Le cryptation de extremo a extremo require resolver problemas de certificato pro { $addr }.
+smime-cert-issue-notification-many = Le cryptation de extremo a extremo require resolver problemas de certificato pro { $count } destinatarios.
 key-notification-disable-encryption =
     .label = Non cryptar
     .accesskey = N
@@ -191,6 +191,11 @@ key-notification-resolve =
     .label = Resolver…
     .accesskey = R
     .tooltiptext = Aperi le assistente del claves OpenPGP
+can-encrypt-smime-notification = Le cryptation S/MIME de extremo-a-extremo es possibile.
+can-encrypt-openpgp-notification = Le cryptation OpenPGP de extremo-a-extremo es possibile.
+can-e2e-encrypt-button =
+    .label = Cryptar
+    .accesskey = C
 
 ## Addressing Area
 

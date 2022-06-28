@@ -129,6 +129,10 @@ message-header-msg-flagged =
     .aria-label = Označeno z zvezdico
 message-header-msg-not-flagged =
     .title = Sporočilo, ki ni označeno z zvezdico
+# Variables:
+# $address (String) - The email address of the recipient this picture belongs to.
+message-header-recipient-avatar =
+    .alt = Slika profila { $address }.
 
 ## Message header cutomize panel
 
@@ -142,6 +146,16 @@ message-header-button-style-text =
     .label = Besedilo
 message-header-button-style-icons =
     .label = Ikone
+message-header-show-sender-full-address =
+    .label = Vedno pokaži polni naslov pošiljatelja
+    .accesskey = p
+message-header-show-sender-full-address-description = E-poštni naslov bo prikazan pod prikaznim imenom.
+message-header-show-recipient-avatar =
+    .label = Prikaži sliko profila pošiljatelja
+    .accesskey = s
+message-header-hide-label-column =
+    .label = Skrij stolpec z oznakami
+    .accesskey = o
 message-header-large-subject =
     .label = Velika zadeva
     .accesskey = z
@@ -154,13 +168,6 @@ toolbar-context-menu-manage-extension =
 toolbar-context-menu-remove-extension =
     .label = Odstrani razširitev
     .accesskey = s
-
-## Message headers
-
-message-header-address-in-address-book-icon =
-    .alt = Naslov je v imeniku
-message-header-address-not-in-address-book-icon =
-    .alt = Naslova ni v imeniku
 
 ## Add-on removal warning
 
@@ -224,12 +231,6 @@ spaces-context-new-window-item =
 # $tabName (String) - The name of the tab this item will switch to.
 spaces-context-switch-tab-item =
     .label = Preklopi na { $tabName }
-settings-context-open-settings-item =
-    .label = Odpri nastavitve
-settings-context-open-account-settings-item =
-    .label = Odpri nastavitve računa
-settings-context-open-addons-item =
-    .label = Odpri dodatke in teme
 settings-context-open-settings-item2 =
     .label = Nastavitve
 settings-context-open-account-settings-item2 =

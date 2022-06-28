@@ -50,6 +50,15 @@ menu-view-repair-text-encoding =
 
 ## View / Layout
 
+menu-font-size-label =
+    .label = Μέγεθος γραμματοσειράς
+    .accesskey = θ
+menuitem-font-size-enlarge =
+    .label = Αύξηση μεγέθους γραμματοσειράς
+    .accesskey = ξ
+menuitem-font-size-reduce =
+    .label = Μείωση μεγέθους γραμματοσειράς
+    .accesskey = ω
 menuitem-font-size-reset =
     .label = Επαναφορά μεγέθους γραμματοσειράς
     .accesskey = π

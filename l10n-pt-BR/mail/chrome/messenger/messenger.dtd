@@ -30,8 +30,8 @@
 <!ENTITY newExistingEmailAccountCmd.accesskey "o">
 <!ENTITY newIMAccountCmd.label "Conta de conversa…">
 <!ENTITY newIMAccountCmd.accesskey "b">
-<!ENTITY newFeedAccountCmd.label "Conta RSS">
-<!ENTITY newFeedAccountCmd.accesskey "R">
+<!ENTITY newFeedAccountCmd.label "Conta de canal de informações…">
+<!ENTITY newFeedAccountCmd.accesskey "C">
 <!ENTITY newIMContactCmd.label "Contato de conversa…">
 <!ENTITY newIMContactCmd.accesskey "c">
 <!ENTITY  newMessageCmd2.key "N">
@@ -49,7 +49,7 @@
 <!ENTITY saveAsFileCmd.key "S">
 <!ENTITY saveAsTemplateCmd.label "Modelo">
 <!ENTITY saveAsTemplateCmd.accesskey "M">
-<!ENTITY getNewMsgForCmd.label "Receber da conta">
+<!ENTITY getNewMsgForCmd.label "Receber novas mensagens de">
 <!ENTITY getNewMsgForCmd.accesskey "R">
 <!ENTITY getAllNewMsgCmdPopupMenu.label "Todas as contas">
 <!ENTITY getAllNewMsgCmdPopupMenu.accesskey "T">
@@ -246,7 +246,7 @@
 <!ENTITY bodyAllParts.label "Todas as seções da mensagem">
 <!ENTITY bodyAllParts.accesskey "T">
 
-<!ENTITY bodyMenuFeed.label "Formatação do RSS como">
+<!ENTITY bodyMenuFeed.label "Formatar mensagens de canais de informações como">
 <!ENTITY bodyMenuFeed.accesskey "o">
 <!ENTITY viewFeedWebPage.label "Página web">
 <!ENTITY viewFeedWebPage.accesskey "P">
@@ -316,7 +316,6 @@
 <!ENTITY goBackCmd.commandKey "[">
 <!ENTITY goChatCmd.label "Conversa">
 <!ENTITY goChatCmd.accesskey "B">
-<!ENTITY goChatCmd2.key "H">
 <!ENTITY prevStarredMsgCmd.label "Mensagem com estrela">
 <!ENTITY prevStarredMsgCmd.accesskey "M">
 <!ENTITY folderMenu.label "Pasta">
@@ -438,7 +437,7 @@
 <!ENTITY openInConversationCmd.key "o">
 <!ENTITY openAttachmentListCmd.label "Anexos">
 <!ENTITY openAttachmentListCmd.accesskey "x">
-<!ENTITY openFeedMessage1.label "Ao abrir mensagens RSS">
+<!ENTITY openFeedMessage1.label "Ao abrir mensagens de canais de informações ">
 <!ENTITY openFeedMessage1.accesskey "b">
 <!ENTITY openFeedWebPage.label "Abrir como página web">
 <!ENTITY openFeedWebPage.accesskey "p">
@@ -490,7 +489,7 @@
 <!ENTITY exportCmd.accesskey "x">
 <!ENTITY clearRecentHistory.label "Limpar histórico recente…">
 <!ENTITY clearRecentHistory.accesskey "L">
-<!ENTITY accountManagerCmd2.label "Configurações da conta">
+<!ENTITY accountManagerCmd2.label "Configurações de contas">
 <!ENTITY accountManagerCmd2.accesskey "s">
 <!-- LOCALIZATION NOTE (accountManagerCmdUnix.accesskey):
      Belongs to accountManagerCmd.label, which is placed under the Edit menu

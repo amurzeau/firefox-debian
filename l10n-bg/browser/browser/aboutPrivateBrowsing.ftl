@@ -19,14 +19,23 @@ about-private-browsing-handoff-no-engine =
 about-private-browsing-handoff-text = Търсете с { $engine } или въведете адрес
 about-private-browsing-handoff-text-no-engine = Търсете или въведете адрес
 about-private-browsing-not-private = В момента не сте в поверителен прозорец.
+about-private-browsing-info-description-private-window = Поверителен прозорец: { -brand-short-name } изчиства търсенето и историята на разглеждане, когато затворите всички поверителни прозорци. Това не ви прави анонимни.
+about-private-browsing-info-description-simplified = { -brand-short-name } изчиства търсенето и историята на разглеждане, когато затворите всички поверителни прозорци, но това не ви прави анонимни.
 about-private-browsing-learn-more-link = Научете повече
-
 about-private-browsing-hide-activity = Скрийте активността и местоположението си навсякъде, където разглеждате
 about-private-browsing-get-privacy = Получавайте защита на поверителността навсякъде, където разглеждате
+about-private-browsing-hide-activity-1 = Скрийте какво разглеждате и местоположението си с { -mozilla-vpn-brand-name }. С едно щракване създавате сигурна връзка, дори в обществени мрежи.
 about-private-browsing-prominent-cta = Останете скрити с { -mozilla-vpn-brand-name }
+about-private-browsing-focus-promo-cta = Изтеглете { -focus-brand-name }
+about-private-browsing-focus-promo-header = { -focus-brand-name }: Поверително разглеждане в движение
+about-private-browsing-focus-promo-text = Мобилното ни приложение специалното за поверително разглеждане изчиства историята и бисквитките всеки път.
 
 ## The following strings will be used for experiments in Fx99 and Fx100
 
+about-private-browsing-focus-promo-header-b = Вземете поверителното разглеждане на телефона си
+about-private-browsing-focus-promo-text-b = Използвайте { -focus-brand-name } за онова търсене, което не искате да правите с основния си мобилен четец.
+about-private-browsing-focus-promo-header-c = Следващо ниво поверителност за мобилни устройства
+about-private-browsing-focus-promo-text-c = { -focus-brand-name } изчиства историята всеки път, а също спира реклами и проследяване.
 # This string is the title for the banner for search engine selection
 # in a private window.
 # Variables:
@@ -39,4 +48,5 @@ about-private-browsing-search-banner-description =
     }
 about-private-browsing-search-banner-close-button =
     .aria-label = Затваряне
-
+about-private-browsing-promo-close-button =
+    .title = Затваряне

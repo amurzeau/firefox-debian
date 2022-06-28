@@ -34,14 +34,14 @@
   -  translation.translatedToSuffix.label (empty in en-US) is for locales that
   -  need to display some text after the second drop down for the sentence to
   -  be grammatically correct. -->
-<!ENTITY translation.translatedFrom.label       "Esta página foi traduzida do">
-<!ENTITY translation.translatedTo.label         "para o">
+<!ENTITY translation.translatedFrom.label       "Esta página foi traduzida de">
+<!ENTITY translation.translatedTo.label         "para">
 <!ENTITY translation.translatedToSuffix.label   "">
 
 <!ENTITY translation.showOriginal.button        "Mostrar original">
 <!ENTITY translation.showTranslation.button     "Mostrar tradução">
 
-<!ENTITY translation.errorTranslating.label     "Houve um erro durante a tradução desta página.">
+<!ENTITY translation.errorTranslating.label     "Houve um erro ao traduzir esta página.">
 <!ENTITY translation.tryAgain.button            "Tentar novamente">
 
 <!ENTITY translation.serviceUnavailable.label   "A tradução não está disponível no momento. Tente novamente mais tarde.">
@@ -54,6 +54,5 @@
   -->
 <!ENTITY translation.options.neverForSite.label "Nunca traduzir este site">
 <!ENTITY translation.options.neverForSite.accesskey "N">
-<!ENTITY translation.options.preferences.label  "Preferências da tradução">
+<!ENTITY translation.options.preferences.label  "Preferências de tradução">
 <!ENTITY translation.options.preferences.accesskey "P">
-

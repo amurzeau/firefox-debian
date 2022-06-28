@@ -113,8 +113,10 @@ policy-SecurityDevices = Instalar módulos PKCS #11.
 policy-ShowHomeButton = Mostrar o botão início na barra de ferramentas.
 policy-SSLVersionMax = Definir a versão máxima de SSL.
 policy-SSLVersionMin = Definir a versão mínima de SSL.
+policy-StartDownloadsInTempDirectory = Forçar transferências a iniciarem num local temporário local em vez do diretório de transferências padrão.
 policy-SupportMenu = Adicionar um item de menu de suporte personalizado ao menu de ajuda.
 policy-UserMessaging = Não mostrar determinadas mensagens ao utilizador.
+policy-UseSystemPrintDialog = Imprimir utilizando a janela de impressão do sistema.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Impedir que sites sejam visitados. Consulte a documentação para mais detalhes sobre o formato.
 policy-Windows10SSO = Permitir a autenticação única para contas da Microsoft, trabalho e escola.

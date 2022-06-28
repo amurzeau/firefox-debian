@@ -4,6 +4,9 @@
 
 
 
+<!ENTITY name.autopick.accesskey        "K">
 
+<!ENTITY source.accesskey               "B">
 
 <!ENTITY browse.label                   "Bladeren…">
+<!ENTITY browse.accesskey               "a">

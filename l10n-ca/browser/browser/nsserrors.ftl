@@ -2,6 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
 # DO NOT ADD THINGS OTHER THAN ERROR MESSAGES HERE.
 # This file gets parsed into a JS dictionary of all known error message ids in
 # gen_aboutneterror_codes.py . If we end up needing fluent attributes or
@@ -11,20 +12,16 @@
 # $hostname (String) - Hostname of the website with SSL error.
 # $errorMessage (String) - Error message corresponding to the type of error we are experiencing.
 ssl-connection-error = S'ha produït un error durant la connexió a { $hostname }. { $errorMessage }
-
 # Variables:
 # $error (string) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
 cert-error-code-prefix = Codi d'error: { $error }
-
 psmerr-ssl-disabled = No es pot connectar de forma segura perquè s'ha inhabilitat el protocol SSL.
 psmerr-ssl2-disabled = No es pot connectar de forma segura perquè el lloc utilitza una versió antiga i insegura del protocol SSL.
-
 # This is a multi-line message.
 psmerr-hostreusedissuerandserial =
     Heu rebut un certificat que no és vàlid. Contacteu amb l'administrador del servidor o amb el remitent de correu electrònic i doneu-los aquesta informació:
     
     El certificat conté el mateix número de sèrie que un altre certificat emès per l'entitat certificadora. Obteniu un altre certificat que contingui un número de sèrie únic.
-
 ssl-error-export-only-server = No es pot comunicar de forma segura. L'altre extrem no admet el xifratge d'alt nivell.
 ssl-error-us-only-server = No es pot comunicar de forma segura. L'altre extrem requereix un xifratge d'alt nivell, que no és compatible.
 ssl-error-no-cypher-overlap = No es pot comunicar de forma segura amb l'altre extrem: no hi ha cap algorisme de xifratge comú.
@@ -90,7 +87,7 @@ ssl-error-unsupported-cert-alert = L'altre extrem de la connexió SSL no accepta
 ssl-error-certificate-unknown-alert = L'altre extrem de la connexió SSL té algun problema amb el certificat que ha rebut.
 ssl-error-generate-random-failure = L'SSL ha patit un problema amb el generador de nombres aleatoris.
 ssl-error-sign-hashes-failure = No s'ha pogut signar digitalment les dades necessàries per verificar el vostre certificat.
-ssl-error-extract-public-key-failure = L'SSL no ha pogut extreure la clau públic del certificat de l'altre extrem.
+ssl-error-extract-public-key-failure = L'SSL no ha pogut extreure la clau pública del certificat de l'altre extrem.
 ssl-error-server-key-exchange-failure = S'ha produït un error desconegut en processar la conformitat de connexió de l'intercanvi de claus del servidor SSL.
 ssl-error-client-key-exchange-failure = S'ha produït un error desconegut en processar la conformitat de connexió de l'intercanvi de claus del client SSL.
 ssl-error-encryption-failure = L'algorisme de xifratge de dades a l'engròs ha fallat en la suite de xifratge seleccionada.
@@ -122,7 +119,7 @@ ssl-error-decode-error-alert = L'altre extrem no ha pogut descodificar el missat
 ssl-error-decrypt-error-alert = L'altre extrem informa d'un error en la verificació de signatures o en l'intercanvi de claus.
 ssl-error-export-restriction-alert = L'altre extrem informa que la negociació no compleix amb les regulacions d'exportació.
 ssl-error-protocol-version-alert = L'altre extrem informa d'una versió incompatible o no implementada del protocol.
-ssl-error-insufficient-security-alert = El servidor necessita xifratge més segurs que els que permet el client.
+ssl-error-insufficient-security-alert = El servidor necessita un xifratge més segur que els que permet el client.
 ssl-error-internal-error-alert = L'altre extrem informa que ha patit un error intern.
 ssl-error-user-canceled-alert = L'usuari de l'altre extrem ha cancel·lat la conformitat de connexió.
 ssl-error-no-renegotiation-alert = L'altre extrem no permet la renegociació dels paràmetres de seguretat SSL.
@@ -153,7 +150,7 @@ ssl-error-unsupported-hash-algorithm = L'altre extrem de la connexió TLS ha uti
 ssl-error-digest-failure = La funció de resum ha fallat.
 ssl-error-incorrect-signature-algorithm = S'ha especificat un algorisme de signatura incorrecte en un element signat digitalment.
 ssl-error-next-protocol-no-callback = L'extensió de negociació de següent protocol està activada, però s'ha esborrat la crida de retorn abans que fos necessària.
-ssl-error-next-protocol-no-protocol = El servidor és no és compatible amb cap dels protocols que anuncia el client en l'extensió ALPN.
+ssl-error-next-protocol-no-protocol = El servidor no admet cap protocol que el client anuncia en l'extensió ALPN.
 ssl-error-inappropriate-fallback-alert = El servidor ha rebutjat la conformitat de connexió perquè el client ha tornat a una versió de TLS inferior que el servidor no admet.
 ssl-error-weak-server-cert-key = La clau pública inclosa en el certificat del servidor és massa feble.
 ssl-error-rx-short-dtls-read = No hi ha prou espai a la memòria intermèdia per al registre DTLS.
@@ -178,8 +175,8 @@ sec-error-unknown-issuer = No es reconeix l'emissor del certificat de l'altre ex
 sec-error-bad-key = La clau pública de l'altre extrem no és vàlida.
 sec-error-bad-password = La contrasenya de seguretat introduïda no és correcta.
 sec-error-retry-password = La contrasenya nova no s'ha introduït correctament. Torneu-ho a provar.
-sec-error-no-nodelock = biblioteca de seguretat: no hi cap blocatge de node.
-sec-error-bad-database = biblioteca de seguretat: la base dades és incorrecta.
+sec-error-no-nodelock = biblioteca de seguretat: no hi ha cap blocatge de node.
+sec-error-bad-database = biblioteca de seguretat: la base de dades és incorrecta.
 sec-error-no-memory = biblioteca de seguretat: s'ha produït un error en l'assignació de memòria.
 sec-error-untrusted-issuer = L'emissor del certificat d'iguals ha estat marcat per l'usuari com a de no confiança.
 sec-error-untrusted-cert = L'usuari ha marcat que el certificat de l'altre extrem no és de confiança.
@@ -226,7 +223,7 @@ sec-error-revoked-key = S'ha revocat la clau d'aquest certificat de lloc.
 sec-error-krl-invalid = La KRL nova no té un format vàlid.
 sec-error-need-random = biblioteca de seguretat: calen dades aleatòries.
 sec-error-no-module = biblioteca de seguretat: no hi ha cap mòdul de seguretat que pugui realitzar l'operació sol·licitada.
-sec-error-no-token = La targeta o el testimoni de seguretat no existeixen, cal que s'inicialitzin, o be s'han extret.
+sec-error-no-token = La targeta o el testimoni de seguretat no existeixen, cal que s'inicialitzin, o bé s'han extret.
 sec-error-read-only = biblioteca de seguretat: base de dades només de lectura.
 sec-error-no-slot-selected = No s'ha seleccionat cap ranura o testimoni.
 sec-error-cert-nickname-collision = Ja existeix un certificat amb el mateix sobrenom.
@@ -329,7 +326,7 @@ sec-error-failed-to-encode-data = No s'han pogut xifrar les dades amb el codific
 sec-error-bad-info-access-location = La informació d'accés de la ubicació de l'extensió de certificat no és correcta
 sec-error-libpkix-internal = S'ha produït un error intern Libpkix durant la validació de certificat.
 sec-error-pkcs11-general-error = Un mòdul PKCS #11 ha retornat un error CKR_GENERAL_ERROR, indicant que s'ha produït un error irrecuperable.
-sec-error-pkcs11-function-failed = Un mòdul PKCS #11 ha retornat un error CKR_FUNCTION_FAILED, indicant que la funció sol·licitada no s'ha pogut realitzar. Si proveu la mateixa operació de nou podria funcionar.
+sec-error-pkcs11-function-failed = Un mòdul PKCS #11 ha retornat un error CKR_FUNCTION_FAILED, indicant que la funció sol·licitada no s'ha pogut realitzar. Si proveu la mateixa operació de nou, podria funcionar.
 sec-error-pkcs11-device-error = Un mòdul PKCS #11 ha retornat un error CKR_DEVICE_ERROR, indicant que s'ha produït un problema amb el testimoni o la ranura.
 sec-error-bad-info-access-method = El mètode d'accés a la informació a l'extensió de certificat és desconegut.
 sec-error-crl-import-failed = S'ha produït un error en provar d'importar un CRL.

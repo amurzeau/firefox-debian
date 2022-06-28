@@ -36,11 +36,9 @@ menu-quit =
             [windows] x
            *[other] Q
         }
-
 # This menu-quit-mac string is only used on macOS.
 menu-quit-mac =
     .label = { -brand-shorter-name } থেকে প্রস্থান
-
 menu-about =
     .label = About { -brand-shorter-name }
     .accesskey = A
@@ -51,7 +49,7 @@ menu-file =
     .label = ফাইল
     .accesskey = F
 menu-file-new-tab =
-    .label = নতুন ট্যাব T
+    .label = নতুন ট্যাব
     .accesskey = T
 menu-file-new-container-tab =
     .label = নতুন কন্টেইনার ট্যাব
@@ -212,6 +210,9 @@ menu-tools =
 menu-tools-downloads =
     .label = ডাউনলোড
     .accesskey = D
+menu-tools-addons-and-themes =
+    .label = অ্যাড-অন ও থিম
+    .accesskey = A
 menu-tools-sync-now =
     .label = এখন সিঙ্ক
     .accesskey = S
@@ -219,7 +220,7 @@ menu-tools-fxa-re-auth =
     .label = { -brand-product-name } এ পুনরায় সংযুক্ত করুন...
     .accesskey = R
 menu-tools-page-source =
-    .label = পাতার সোর্স
+    .label = পাতার উৎস
     .accesskey = o
 menu-tools-page-info =
     .label = পাতার সংক্রান্ত তথ্য
@@ -241,15 +242,6 @@ menu-window-bring-all-to-front =
 # NOTE: For Engineers, any additions or changes to Help menu strings should
 # also be reflected in the related strings in appmenu.ftl. Those strings, by
 # convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-help-product
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
-
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
 # Example: appmenu-get-help
 #
 # These strings are duplicated to allow for different casing depending on
@@ -258,8 +250,14 @@ menu-window-bring-all-to-front =
 menu-help =
     .label = সহায়তা
     .accesskey = H
+menu-help-more-troubleshooting-info =
+    .label = সমস্যা সমাধান সংক্রান্ত আরও তথ্য
+    .accesskey = T
 menu-help-report-site-issue =
     .label = সাইটের সমস্যা রিপোর্ট করুন…
+menu-help-share-ideas =
+    .label = ধারনা ও প্রতিক্রিয়া শেয়ার করুন…
+    .accesskey = S
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

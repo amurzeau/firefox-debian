@@ -26,6 +26,8 @@ about-addressbook-books-context-properties =
     .label = Eiginleikar
 about-addressbook-books-context-synchronize =
     .label = Samstilla
+about-addressbook-books-context-edit =
+    .label = Breyta
 about-addressbook-books-context-print =
     .label = Prenta…
 about-addressbook-books-context-export =
@@ -53,8 +55,8 @@ about-addressbook-search =
     .placeholder = Leita í { $name }
 about-addressbook-search-all =
     .placeholder = Leita í öllum nafnaskrám
-about-addressbook-sort-button =
-    .title = Breyta röð lista
+about-addressbook-sort-button2 =
+    .title = Valkostir birtingar lista
 about-addressbook-name-format-display =
     .label = Birtingarnafn
 about-addressbook-name-format-firstlast =
@@ -69,6 +71,38 @@ about-addressbook-sort-email-ascending =
     .label = Raða eftir tölvupóstfangi (A > Ö)
 about-addressbook-sort-email-descending =
     .label = Raða eftir tölvupóstfangi (Ö > A)
+about-addressbook-horizontal-layout =
+    .label = Skipta yfir í lárétta framsetningu
+about-addressbook-vertical-layout =
+    .label = Skipta yfir í lóðrétta framsetningu
+
+## Card column headers
+## Each string is listed here twice, and the values should match.
+
+about-addressbook-column-header-generatedname = Nafn
+about-addressbook-column-label-generatedname =
+    .label = { about-addressbook-column-header-generatedname }
+about-addressbook-column-header-emailaddresses = Tölvupóstfang
+about-addressbook-column-label-emailaddresses =
+    .label = { about-addressbook-column-header-emailaddresses }
+about-addressbook-column-header-phonenumbers = Símanúmer
+about-addressbook-column-label-phonenumbers =
+    .label = { about-addressbook-column-header-phonenumbers }
+about-addressbook-column-header-addresses = Heimilisföng
+about-addressbook-column-label-addresses =
+    .label = { about-addressbook-column-header-addresses }
+about-addressbook-column-header-title = Titill
+about-addressbook-column-label-title =
+    .label = { about-addressbook-column-header-title }
+about-addressbook-column-header-department = Deild
+about-addressbook-column-label-department =
+    .label = { about-addressbook-column-header-department }
+about-addressbook-column-header-organization = Fyrirtæki/Stofnun
+about-addressbook-column-label-organization =
+    .label = { about-addressbook-column-header-organization }
+about-addressbook-column-header-addrbook = Nafnaskrá
+about-addressbook-column-label-addrbook =
+    .label = { about-addressbook-column-header-addrbook }
 about-addressbook-cards-context-write =
     .label = Skrifa
 about-addressbook-confirm-delete-mixed-title = Eyða tengiliðum og listum
@@ -122,8 +156,18 @@ about-addressbook-confirm-delete-contacts =
        *[other] Ertu viss um að þú viljir eyða þessum { $count } tengiliðum?
     }
 
+## Card list placeholder
+## Shown when there are no cards in the list
+
+about-addressbook-placeholder-empty-book = Engir tengiliðir í boði
+about-addressbook-placeholder-new-contact = Nýr tengiliður
+about-addressbook-placeholder-search-only = Nafnaskrá sýnir aðeins tengiliði eftir að leitað hefur verið
+about-addressbook-placeholder-searching = Leita…
+about-addressbook-placeholder-no-search-results = Engir tengiliðir fundust
+
 ## Details
 
+about-addressbook-prefer-display-name = Kjósa birtingarnafn fram yfir það sem stendur í haus skilaboða
 about-addressbook-write-action-button = Skrifa
 about-addressbook-event-action-button = Atburður
 about-addressbook-search-action-button = Leita
@@ -134,8 +178,6 @@ about-addressbook-save-edit-contact-button = Vista
 about-addressbook-add-contact-to = Bæta í:
 about-addressbook-details-email-addresses-header = Tölvupóstfang
 about-addressbook-details-phone-numbers-header = Símanúmer
-about-addressbook-details-home-address-header = Heimilisfang
-about-addressbook-details-work-address-header = Vinnustaður
 about-addressbook-details-addresses-header = Tölvupóstföng
 about-addressbook-details-notes-header = Athugasemdir
 about-addressbook-details-other-info-header = Aðrar upplýsingar
@@ -147,7 +189,7 @@ about-addressbook-entry-type-pager = Símboði
 about-addressbook-entry-name-birthday = Fæðingardagur
 about-addressbook-entry-name-anniversary = Afmæli
 about-addressbook-entry-name-title = Titill
-about-addressbook-entry-name-department = Deild
+about-addressbook-entry-name-role = Hlutverk
 about-addressbook-entry-name-organization = Fyrirtæki/Stofnun
 about-addressbook-entry-name-website = Vefsvæði
 about-addressbook-entry-name-time-zone = Tímabelti
