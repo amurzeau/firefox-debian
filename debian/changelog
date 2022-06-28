@@ -1,3 +1,16 @@
+firefox-esr (91.11.0esr-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2022-25, also known as:
+    CVE-2022-34479, CVE-2022-34470, CVE-2022-34468, CVE-2022-34481,
+    CVE-2022-31744, CVE-2022-34472, CVE-2022-2200, CVE-2022-34484.
+
+  * build/moz.configure/bindgen.configure,
+    gfx/webrender_bindings/webrender_ffi.h: Work around build failure with
+    newer cbindgen. bz#1773259
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 29 Jun 2022 06:30:12 +0900
+
 firefox-esr (91.10.0esr-1) unstable; urgency=medium
 
   * New upstream release.
