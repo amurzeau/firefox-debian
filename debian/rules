@@ -234,10 +234,12 @@ stamps/configure-check-$(PRODUCT):: stamps/configure-$(PRODUCT)
 
 stamps/configure-$(PRODUCT):: stamps/prepare-configure debian/$($(PRODUCT)).mozconfig
 ifeq (armhf,$(DEB_BUILD_ARCH))
+ifneq (,$(filter arm%,$(shell uname -m)))
 	# There is not enough memory in armhf userspace with a 32-bits kernel.
 	$(error Unfortunately cannot build on armhf. Try a 64-bits kernel)
 endif
-ifeq (mipsel,$(DEB_HOST_ARCH))
+endif
+ifeq (mipsel,$(DEB_BUILD_ARCH))
 	# There is not enough memory in mipsel userspace with neither a 32-bits nor 64-bits kernel.
 	$(error Unfortunately cannot build on mipsel. Try cross-compilation)
 endif
