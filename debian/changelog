@@ -1,3 +1,9 @@
+firefox (102.0.1-3) unstable; urgency=medium
+
+  * debian/rules: Fix the logic of the aarch64 test.
+
+ -- Mike Hommey <glandium@debian.org>  Thu, 14 Jul 2022 11:31:47 +0900
+
 firefox (102.0.1-2) unstable; urgency=medium
 
   * debian/rules: Tentatively improve detection of known failing cases on
