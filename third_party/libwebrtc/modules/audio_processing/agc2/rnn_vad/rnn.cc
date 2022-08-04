@@ -10,13 +10,13 @@
 
 #include "modules/audio_processing/agc2/rnn_vad/rnn.h"
 
-// Defines WEBRTC_ARCH_X86_FAMILY, used below.
+// Defines WEBRTC_ARCH_X86_64, used below.
 #include "rtc_base/system/arch.h"
 
 #if defined(WEBRTC_HAS_NEON)
 #include <arm_neon.h>
 #endif
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 #include <emmintrin.h>
 #endif
 #include <algorithm>
@@ -227,7 +227,7 @@ void ComputeFullyConnectedLayerOutput(
   }
 }
 
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 // Fully connected layer SSE2 implementation.
 void ComputeFullyConnectedLayerOutputSse2(
     size_t input_size,
@@ -295,7 +295,7 @@ rtc::ArrayView<const float> FullyConnectedLayer::GetOutput() const {
 
 void FullyConnectedLayer::ComputeOutput(rtc::ArrayView<const float> input) {
   switch (optimization_) {
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
     case Optimization::kSse2:
       ComputeFullyConnectedLayerOutputSse2(input_size_, output_size_, input,
                                            bias_, weights_,
@@ -355,7 +355,7 @@ void GatedRecurrentLayer::Reset() {
 
 void GatedRecurrentLayer::ComputeOutput(rtc::ArrayView<const float> input) {
   switch (optimization_) {
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
     case Optimization::kSse2:
       // TODO(bugs.chromium.org/10480): Handle Optimization::kSse2.
       ComputeGruLayerOutput(input_size_, output_size_, input, weights_,

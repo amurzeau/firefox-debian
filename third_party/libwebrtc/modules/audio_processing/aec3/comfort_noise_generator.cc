@@ -10,10 +10,10 @@
 
 #include "modules/audio_processing/aec3/comfort_noise_generator.h"
 
-// Defines WEBRTC_ARCH_X86_FAMILY, used below.
+// Defines WEBRTC_ARCH_X86_64, used below.
 #include "rtc_base/system/arch.h"
 
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 #include <emmintrin.h>
 #endif
 #include <algorithm>

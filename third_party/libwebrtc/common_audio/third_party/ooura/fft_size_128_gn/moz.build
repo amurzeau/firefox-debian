@@ -89,9 +89,7 @@ if CONFIG["OS_TARGET"] == "Linux":
 
 if CONFIG["OS_TARGET"] == "OpenBSD":
 
-    CXXFLAGS += [
-        "-msse2"
-    ]
+    CXXFLAGS += []
 
     DEFINES["USE_GLIB"] = "1"
     DEFINES["USE_X11"] = "1"
@@ -170,7 +168,7 @@ if CONFIG["CPU_ARCH"] == "arm":
 
 if CONFIG["CPU_ARCH"] == "x86":
 
-    UNIFIED_SOURCES += [
+    SOURCES += [
         "/third_party/libwebrtc/common_audio/third_party/ooura/fft_size_128/ooura_fft_sse2.cc"
     ]
 
@@ -216,10 +214,7 @@ if CONFIG["MOZ_X11"] == "1" and CONFIG["OS_TARGET"] == "Linux":
 
 if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
 
-    CXXFLAGS += [
-        "-msse2",
-        "-msse2"
-    ]
+    SOURCES["/third_party/libwebrtc/common_audio/third_party/ooura/fft_size_128/ooura_fft_sse2.cc"].flags += CONFIG["SSE2_FLAGS"]
 
     OS_LIBS += [
         "android_support"
@@ -227,9 +222,7 @@ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
 
 if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Android":
 
-    CXXFLAGS += [
-        "-msse2"
-    ]
+    CXXFLAGS += []
 
     UNIFIED_SOURCES += [
         "/third_party/libwebrtc/common_audio/third_party/ooura/fft_size_128/ooura_fft_sse2.cc"
@@ -237,9 +230,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Android":
 
 if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
 
-    CXXFLAGS += [
-        "-msse2"
-    ]
+    CXXFLAGS += []
 
     UNIFIED_SOURCES += [
         "/third_party/libwebrtc/common_audio/third_party/ooura/fft_size_128/ooura_fft_sse2.cc"
@@ -247,16 +238,11 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
 
 if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
 
-    CXXFLAGS += [
-        "-msse2",
-        "-msse2"
-    ]
+    SOURCES["/third_party/libwebrtc/common_audio/third_party/ooura/fft_size_128/ooura_fft_sse2.cc"].flags += CONFIG["SSE2_FLAGS"]
 
 if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Linux":
 
-    CXXFLAGS += [
-        "-msse2"
-    ]
+    CXXFLAGS += []
 
     UNIFIED_SOURCES += [
         "/third_party/libwebrtc/common_audio/third_party/ooura/fft_size_128/ooura_fft_sse2.cc"

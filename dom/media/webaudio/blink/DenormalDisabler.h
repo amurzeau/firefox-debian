@@ -39,7 +39,7 @@ namespace WebCore {
 #  define HAVE_DENORMAL 1
 #endif
 
-#if defined(__GNUC__) && (defined(__i386__) || defined(__x86_64__))
+#if defined(__GNUC__) && (defined(__x86_64__))
 // X86 chips can flush denormals
 #  define HAVE_DENORMAL 1
 #endif
