@@ -267,9 +267,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Android":
 
 if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
 
-    CFLAGS += [
-        "-msse2"
-    ]
+    CFLAGS += []
 
     SOURCES += [
         "/third_party/libwebrtc/webrtc/modules/audio_coding/codecs/isac/fix/source/pitch_filter_c.c"
@@ -309,9 +307,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "FreeBSD":
 
 if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
 
-    CFLAGS += [
-        "-msse2"
-    ]
+    CFLAGS += []
 
     SOURCES += [
         "/third_party/libwebrtc/webrtc/modules/audio_coding/codecs/isac/fix/source/pitch_filter_c.c"
@@ -346,9 +342,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
 
 if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
 
-    CFLAGS += [
-        "-msse2"
-    ]
+    CFLAGS += []
 
     SOURCES += [
         "/third_party/libwebrtc/webrtc/modules/audio_coding/codecs/isac/fix/source/pitch_filter_c.c"
@@ -380,9 +374,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "NetBSD":
 
 if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
 
-    CFLAGS += [
-        "-msse2"
-    ]
+    CFLAGS += []
 
     SOURCES += [
         "/third_party/libwebrtc/webrtc/modules/audio_coding/codecs/isac/fix/source/pitch_filter_c.c"
@@ -414,9 +406,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "OpenBSD":
 
 if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
 
-    CFLAGS += [
-        "-msse2"
-    ]
+    CFLAGS += []
 
     SOURCES += [
         "/third_party/libwebrtc/webrtc/modules/audio_coding/codecs/isac/fix/source/pitch_filter_c.c"

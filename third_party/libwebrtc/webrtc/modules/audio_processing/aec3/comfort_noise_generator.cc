@@ -11,7 +11,7 @@
 #include "modules/audio_processing/aec3/comfort_noise_generator.h"
 
 #include "typedefs.h"  // NOLINT(build/include)
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 #include <emmintrin.h>
 #endif
 #include <math.h>
@@ -38,7 +38,7 @@ void TableRandomValue(int16_t* vector, int16_t vector_length, uint32_t* seed) {
 
 namespace aec3 {
 
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 
 void EstimateComfortNoise_SSE2(const std::array<float, kFftLengthBy2Plus1>& N2,
                                uint32_t* seed,
@@ -204,7 +204,7 @@ void ComfortNoiseGenerator::Compute(
       N2_initial_ ? *N2_initial_ : N2_;
 
   switch (optimization_) {
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
     case Aec3Optimization::kSse2:
       aec3::EstimateComfortNoise_SSE2(N2, &seed_, lower_band_noise,
                                       upper_band_noise);

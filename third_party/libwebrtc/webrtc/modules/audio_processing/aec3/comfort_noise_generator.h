@@ -21,7 +21,7 @@
 
 namespace webrtc {
 namespace aec3 {
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 
 void EstimateComfortNoise_SSE2(const std::array<float, kFftLengthBy2Plus1>& N2,
                                uint32_t* seed,

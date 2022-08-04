@@ -34,7 +34,7 @@ void UpdateFrequencyResponse_NEON(
     rtc::ArrayView<const FftData> H,
     std::vector<std::array<float, kFftLengthBy2Plus1>>* H2);
 #endif
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 void UpdateFrequencyResponse_SSE2(
     rtc::ArrayView<const FftData> H,
     std::vector<std::array<float, kFftLengthBy2Plus1>>* H2);
@@ -50,7 +50,7 @@ void UpdateErlEstimator_NEON(
     const std::vector<std::array<float, kFftLengthBy2Plus1>>& H2,
     std::array<float, kFftLengthBy2Plus1>* erl);
 #endif
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 void UpdateErlEstimator_SSE2(
     const std::vector<std::array<float, kFftLengthBy2Plus1>>& H2,
     std::array<float, kFftLengthBy2Plus1>* erl);
@@ -65,7 +65,7 @@ void AdaptPartitions_NEON(const RenderBuffer& render_buffer,
                           const FftData& G,
                           rtc::ArrayView<FftData> H);
 #endif
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 void AdaptPartitions_SSE2(const RenderBuffer& render_buffer,
                           const FftData& G,
                           rtc::ArrayView<FftData> H);
@@ -80,7 +80,7 @@ void ApplyFilter_NEON(const RenderBuffer& render_buffer,
                       rtc::ArrayView<const FftData> H,
                       FftData* S);
 #endif
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 void ApplyFilter_SSE2(const RenderBuffer& render_buffer,
                       rtc::ArrayView<const FftData> H,
                       FftData* S);

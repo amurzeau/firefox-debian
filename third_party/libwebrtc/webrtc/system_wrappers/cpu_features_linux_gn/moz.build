@@ -66,8 +66,6 @@ if CONFIG["CPU_ARCH"] == "arm":
 
 if CONFIG["CPU_ARCH"] == "x86":
 
-    CFLAGS += [
-        "-msse2"
-    ]
+    CFLAGS += []
 
 Library("cpu_features_linux_gn")

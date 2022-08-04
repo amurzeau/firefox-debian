@@ -12,7 +12,7 @@
 #define MODULES_AUDIO_PROCESSING_AEC3_FFT_DATA_H_
 
 #include "typedefs.h"  // NOLINT(build/include)
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 #include <emmintrin.h>
 #endif
 #include <algorithm>
@@ -43,7 +43,7 @@ struct FftData {
                 std::array<float, kFftLengthBy2Plus1>* power_spectrum) const {
     RTC_DCHECK(power_spectrum);
     switch (optimization) {
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
       case Aec3Optimization::kSse2: {
         constexpr int kNumFourBinBands = kFftLengthBy2 / 4;
         constexpr int kLimit = kNumFourBinBands * 4;

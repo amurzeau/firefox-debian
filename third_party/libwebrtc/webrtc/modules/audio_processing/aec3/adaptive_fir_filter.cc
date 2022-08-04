@@ -14,7 +14,7 @@
 #include <arm_neon.h>
 #endif
 #include "typedefs.h"  // NOLINT(build/include)
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 #include <emmintrin.h>
 #endif
 #include <algorithm>
@@ -59,7 +59,7 @@ void UpdateFrequencyResponse_NEON(
 }
 #endif
 
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 // Computes and stores the frequency response of the filter.
 void UpdateFrequencyResponse_SSE2(
     rtc::ArrayView<const FftData> H,
@@ -111,7 +111,7 @@ void UpdateErlEstimator_NEON(
 }
 #endif
 
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 // Computes and stores the echo return loss estimate of the filter, which is the
 // sum of the partition frequency responses.
 void UpdateErlEstimator_SSE2(
@@ -204,7 +204,7 @@ void AdaptPartitions_NEON(const RenderBuffer& render_buffer,
 }
 #endif
 
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 // Adapts the filter partitions. (SSE2 variant)
 void AdaptPartitions_SSE2(const RenderBuffer& render_buffer,
                           const FftData& G,
@@ -345,7 +345,7 @@ void ApplyFilter_NEON(const RenderBuffer& render_buffer,
 }
 #endif
 
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 // Produces the filter output (SSE2 variant).
 void ApplyFilter_SSE2(const RenderBuffer& render_buffer,
                       rtc::ArrayView<const FftData> H,
@@ -445,7 +445,7 @@ void AdaptiveFirFilter::Filter(const RenderBuffer& render_buffer,
                                FftData* S) const {
   RTC_DCHECK(S);
   switch (optimization_) {
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
     case Aec3Optimization::kSse2:
       aec3::ApplyFilter_SSE2(render_buffer, H_, S);
       break;
@@ -464,7 +464,7 @@ void AdaptiveFirFilter::Adapt(const RenderBuffer& render_buffer,
                               const FftData& G) {
   // Adapt the filter.
   switch (optimization_) {
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
     case Aec3Optimization::kSse2:
       aec3::AdaptPartitions_SSE2(render_buffer, G, H_);
       break;
@@ -483,7 +483,7 @@ void AdaptiveFirFilter::Adapt(const RenderBuffer& render_buffer,
 
   // Update the frequency response and echo return loss for the filter.
   switch (optimization_) {
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
     case Aec3Optimization::kSse2:
       aec3::UpdateFrequencyResponse_SSE2(H_, &H2_);
       aec3::UpdateErlEstimator_SSE2(H2_, &erl_);
