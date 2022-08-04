@@ -20,3 +20,4 @@ debian-hacks/Allow-to-build-with-older-versions-of-nodejs-10.patch
 debian-hacks/Allow-to-build-with-cargo-in-Debian-unstable.patch
 debian-hacks/Fix-math_private.h-for-i386-FTBFS.patch
 debian-hacks/Work-around-build-failure-with-newer-cbindgen.-bz-17.patch
+debian-hacks/0001-Remove-dependency-on-SSE-instructions.patch

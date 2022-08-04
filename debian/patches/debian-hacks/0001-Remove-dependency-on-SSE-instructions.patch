@@ -1,0 +1,5835 @@
+From 32f235a2c2a0bbfa48bfd0230139c662a182d7bd Mon Sep 17 00:00:00 2001
+From: Alexis Murzeau <amubtdx@gmail.com>
+Date: Thu, 4 Aug 2022 22:38:11 +0200
+Subject: [PATCH] Remove dependency on SSE instructions
+
+mozconfig.linux32: global flags, remove sse2 flags and target i686
+       instead of pentium-m.
+
+blink: DenormalDisabler: Disable denormal to zero flush that use stmxcsr
+       instruction (SSE) (Software flush is done instead).
+
+angle: moz.build.common: build gfx/angle without SSE2 (no intrinsics
+       used).
+
+mozbuild: emitter.py: change the order of UNIFIED_SOURCES and SOURCES to
+          make non SSE object files before SSE specific ones when linking
+          libxul.so.
+          Else, the linker might prefer to link in a function defined in
+          a header that use SSE2 instructions over one without SSE2
+          instructions.
+          This the case with gfxImageSurface::GetSize defined in
+          gfx/thebes/gfxImageSurface.h and also included in
+          gfxAlphaRecoverySSE2.cpp.
+          This means gfxImageSurface::GetSize() is defined in a header
+          and is built multiple time, so this happens:
+
+  - Unified sources build one without SSE2 flags, so the
+      definition doesn't have SSE2 instructions. The definition
+      is put in a Unified_xxxx.o file.
+
+  - SSE2 specific file gfxAlphaRecoverySSE2.o is built with
+      SSE2 flags, and contains a definition of gfxImageSurface::GetSize
+      that uses automatically generated SSE2 instruction by g++.
+
+  - Previously, sources were linked before unified sources
+      when linking libxul.so, which I suppose is why the SSE2
+      version of gfxImageSurface::GetSize is used.
+
+  - Reversing the order of SOURCES and UNIFIED_SOURCES makes
+      gcc's linker to use the non-SSE2 version of
+      gfxImageSurface::GetSize.
+
+libwebrtc:
+  moz.build: remove global SSE2 gcc flags (sse2 specific libraries are
+             still built using SSE2 flags to allow runtime detection)
+  aec3: disable the compilation of SSE2 functions to be able to build
+        aec3 without SSE2. SSE2 specific function are not placed in a
+        specific SSE2 dedicated source file, so we need to disable them
+        entierly to prevent any SSE2 instructions in non-SSE2 code paths.
+
+A better fix for webrtc would be to move aec3 SSE / NEON functions in a
+a dedicated source file, the same way other SSE functions are made in
+libwebrtc.
+But this requires more file changes.
+
+I've tested it using:
+ - Real hardware with AMD Athlon XP 2600+ processor (supports only SSE
+   but not SSE2)
+ - qemu using `qemu-system-i386 -cpu pentium2,check -m 1G -device ac97
+   -vga std -display gtk -drive
+file=harddisk.img,format=raw,index=0,media=disk -netdev
+user,id=net1,hostfwd=::11023-:22 -device e1000,netdev=net1 -usbdevice
+tablet`
+
+Note that enabling SSE on qemu will also enable SSE2 (even if absent
+from cpuid, there is no illegal instruction errors).
+Using -cpu pentium2 will produce Illegal Instruction on any SSE
+instruction.
+
+To update this patch:
+
+In third_party/libwebrtc:
+  - replace in [all moz.build files except ones in folders containing
+    '_sse' or '_avx'] any occurence of CXXFLAGS += [ -msse2 ] with
+    nothing or CXXFLAGS += [].
+    Example: any previously modified moz.build file in
+    third_party/libwebrtc.
+
+  - Search for all occurence of WEBRTC_ARCH_X86_FAMILY in any files
+    Check for definitions of SSE functions inside a file whose name
+    doesn't have 'sse' or 'avx'. In these files, replace
+    WEBRTC_ARCH_X86_FAMILY with WEBRTC_ARCH_X86_64.
+    Example: any modified source files in third_party/libwebrtc.
+
+In any moz.build files, search for SSE2_FLAGS. Remove any occurence
+that doesn't apply to files whose name contains 'sse' or 'avx'.
+
+To check the resulting build, you can use this:
+
+Check that only .o files with 'sse' in their name are returned by these
+commands:
+ - Check for 'movq' instructions:
+   find . -type f -name '*.o' | xargs -I% sh -c 'xxd -p "%" | grep -q -e '660fd600' && echo %'
+
+ - Check for 'stmxcsr' instructions:
+   find . -type f -name '*.o' | xargs -I% sh -c 'xxd -p "%" | grep -q -e '0fae1d' && echo %'
+
+Closes: #961663, #1002600
+---
+ build/unix/mozconfig.linux32                  |  4 ++--
+ dom/media/webaudio/blink/DenormalDisabler.h   |  2 +-
+ gfx/angle/moz.build.common                    |  4 ----
+ python/mozbuild/mozbuild/frontend/emitter.py  |  2 +-
+ .../L16/audio_decoder_L16_gn/moz.build        | 20 +++++--------------
+ .../L16/audio_encoder_L16_gn/moz.build        | 20 +++++--------------
+ .../audio_codecs_api_gn/moz.build             | 20 +++++--------------
+ .../moz.build                                 | 20 +++++--------------
+ .../moz.build                                 | 20 +++++--------------
+ .../g711/audio_decoder_g711_gn/moz.build      | 20 +++++--------------
+ .../g711/audio_encoder_g711_gn/moz.build      | 20 +++++--------------
+ .../g722/audio_decoder_g722_gn/moz.build      | 20 +++++--------------
+ .../g722/audio_encoder_g722_gn/moz.build      | 20 +++++--------------
+ .../ilbc/audio_decoder_ilbc_gn/moz.build      | 20 +++++--------------
+ .../ilbc/audio_encoder_ilbc_gn/moz.build      | 20 +++++--------------
+ .../audio_decoder_isac_float_gn/moz.build     | 20 +++++--------------
+ .../audio_encoder_isac_float_gn/moz.build     | 20 +++++--------------
+ .../opus/audio_decoder_opus_gn/moz.build      | 20 +++++--------------
+ .../audio_encoder_opus_config_gn/moz.build    | 20 +++++--------------
+ .../opus/audio_encoder_opus_gn/moz.build      | 20 +++++--------------
+ .../api/base_peerconnection_api_gn/moz.build  | 20 +++++--------------
+ .../webrtc/api/optional_gn/moz.build          | 20 +++++--------------
+ .../video_codecs_api_gn/moz.build             | 20 +++++--------------
+ .../webrtc/api/video_frame_api_gn/moz.build   | 20 +++++--------------
+ .../api/video_frame_api_i420_gn/moz.build     | 20 +++++--------------
+ .../libwebrtc/webrtc/audio/audio_gn/moz.build | 20 +++++--------------
+ .../audio_frame_operations_gn/moz.build       | 20 +++++--------------
+ .../call/bitrate_allocator_gn/moz.build       | 20 +++++--------------
+ .../libwebrtc/webrtc/call/call_gn/moz.build   | 20 +++++--------------
+ .../webrtc/call/call_interfaces_gn/moz.build  | 20 +++++--------------
+ .../webrtc/call/rtp_interfaces_gn/moz.build   | 20 +++++--------------
+ .../webrtc/call/rtp_receiver_gn/moz.build     | 20 +++++--------------
+ .../webrtc/call/rtp_sender_gn/moz.build       | 20 +++++--------------
+ .../webrtc/call/video_stream_api_gn/moz.build | 20 +++++--------------
+ .../common_audio/common_audio_c_gn/moz.build  | 20 +++++--------------
+ .../common_audio/common_audio_cc_gn/moz.build | 20 +++++--------------
+ .../common_audio/common_audio_gn/moz.build    | 20 +++++--------------
+ .../fir_filter_factory_gn/moz.build           | 20 +++++--------------
+ .../common_video/common_video_gn/moz.build    | 20 +++++--------------
+ .../logging/rtc_event_log_api_gn/moz.build    | 20 +++++--------------
+ .../logging/rtc_event_log_impl_gn/moz.build   | 20 +++++--------------
+ .../webrtc/media/rtc_audio_video_gn/moz.build | 20 +++++--------------
+ .../media/rtc_h264_profile_id_gn/moz.build    | 20 +++++--------------
+ .../webrtc/media/rtc_media_base_gn/moz.build  | 20 +++++--------------
+ .../audio_coding/audio_coding_gn/moz.build    | 20 +++++--------------
+ .../audio_format_conversion_gn/moz.build      | 20 +++++--------------
+ .../audio_network_adaptor_config_gn/moz.build | 20 +++++--------------
+ .../audio_network_adaptor_gn/moz.build        | 20 +++++--------------
+ .../modules/audio_coding/cng_gn/moz.build     | 20 +++++--------------
+ .../modules/audio_coding/g711_c_gn/moz.build  | 20 +++++--------------
+ .../modules/audio_coding/g711_gn/moz.build    | 20 +++++--------------
+ .../modules/audio_coding/g722_c_gn/moz.build  | 20 +++++--------------
+ .../modules/audio_coding/g722_gn/moz.build    | 20 +++++--------------
+ .../modules/audio_coding/ilbc_c_gn/moz.build  | 20 +++++--------------
+ .../modules/audio_coding/ilbc_gn/moz.build    | 20 +++++--------------
+ .../modules/audio_coding/isac_c_gn/moz.build  | 20 +++++--------------
+ .../audio_coding/isac_common_gn/moz.build     | 20 +++++--------------
+ .../audio_coding/isac_fix_c_gn/moz.build      | 20 +++++--------------
+ .../audio_coding/isac_fix_common_gn/moz.build | 20 +++++--------------
+ .../modules/audio_coding/isac_gn/moz.build    | 20 +++++--------------
+ .../legacy_encoded_audio_frame_gn/moz.build   | 20 +++++--------------
+ .../neteq_decoder_enum_gn/moz.build           | 20 +++++--------------
+ .../modules/audio_coding/neteq_gn/moz.build   | 20 +++++--------------
+ .../audio_coding/pcm16b_c_gn/moz.build        | 20 +++++--------------
+ .../modules/audio_coding/pcm16b_gn/moz.build  | 20 +++++--------------
+ .../audio_coding/rent_a_codec_gn/moz.build    | 20 +++++--------------
+ .../audio_coding/webrtc_opus_c_gn/moz.build   | 20 +++++--------------
+ .../audio_coding/webrtc_opus_gn/moz.build     | 20 +++++--------------
+ .../audio_device_generic_gn/moz.build         | 20 +++++--------------
+ .../audio_frame_manipulator_gn/moz.build      | 20 +++++--------------
+ .../audio_mixer/audio_mixer_impl_gn/moz.build | 20 +++++--------------
+ .../aec3/adaptive_fir_filter.cc               | 16 +++++++--------
+ .../aec3/adaptive_fir_filter.h                |  8 ++++----
+ .../aec3/comfort_noise_generator.cc           |  6 +++---
+ .../aec3/comfort_noise_generator.h            |  2 +-
+ .../modules/audio_processing/aec3/fft_data.h  |  4 ++--
+ .../audio_processing/aec3/matched_filter.cc   |  6 +++---
+ .../audio_processing/aec3/matched_filter.h    |  2 +-
+ .../audio_processing/aec3/suppression_gain.cc |  2 +-
+ .../audio_processing/aec3/vector_math.h       |  8 ++++----
+ .../null_aec_dump_factory_gn/moz.build        | 20 +++++--------------
+ .../aec_dump_interface_gn/moz.build           | 20 +++++--------------
+ .../audio_processing_c_gn/moz.build           | 20 +++++--------------
+ .../audio_processing_gn/moz.build             | 20 +++++--------------
+ .../audio_processing_statistics_gn/moz.build  | 20 +++++--------------
+ .../bitrate_controller_gn/moz.build           | 20 +++++--------------
+ .../congestion_controller_gn/moz.build        | 20 +++++--------------
+ .../desktop_capture_generic_gn/moz.build      | 16 ++++-----------
+ .../desktop_capture/primitives_gn/moz.build   | 16 ++++-----------
+ .../media_file/media_file_gn/moz.build        | 20 +++++--------------
+ .../webrtc/modules/pacing/pacing_gn/moz.build | 20 +++++--------------
+ .../remote_bitrate_estimator_gn/moz.build     | 20 +++++--------------
+ .../rtp_rtcp/rtp_rtcp_format_gn/moz.build     | 20 +++++--------------
+ .../modules/rtp_rtcp/rtp_rtcp_gn/moz.build    | 20 +++++--------------
+ .../modules/utility/utility_gn/moz.build      | 20 +++++--------------
+ .../video_capture_internal_impl_gn/moz.build  | 16 ++++-----------
+ .../video_capture_module_gn/moz.build         | 20 +++++--------------
+ .../video_coding/video_coding_gn/moz.build    | 20 +++++--------------
+ .../video_coding_utility_gn/moz.build         | 20 +++++--------------
+ .../video_coding/webrtc_h264_gn/moz.build     | 20 +++++--------------
+ .../video_coding/webrtc_i420_gn/moz.build     | 20 +++++--------------
+ .../video_coding/webrtc_stereo_gn/moz.build   | 20 +++++--------------
+ .../video_coding/webrtc_vp8_gn/moz.build      | 20 +++++--------------
+ .../video_coding/webrtc_vp9_gn/moz.build      | 20 +++++--------------
+ .../video_processing_gn/moz.build             | 20 +++++--------------
+ .../rtc_base_approved_generic_gn/moz.build    | 20 +++++--------------
+ .../webrtc/rtc_base/rtc_numerics_gn/moz.build | 20 +++++--------------
+ .../rtc_base/rtc_task_queue_impl_gn/moz.build | 20 +++++--------------
+ .../sequenced_task_checker_gn/moz.build       | 20 +++++--------------
+ .../webrtc/rtc_base/weak_ptr_gn/moz.build     | 20 +++++--------------
+ .../cpu_features_linux_gn/moz.build           |  4 +---
+ .../field_trial_default_gn/moz.build          | 20 +++++--------------
+ .../metrics_default_gn/moz.build              | 20 +++++--------------
+ .../system_wrappers_gn/moz.build              | 20 +++++--------------
+ .../libwebrtc/webrtc/video/video_gn/moz.build | 20 +++++--------------
+ .../voice_engine/audio_level_gn/moz.build     | 20 +++++--------------
+ .../voice_engine/voice_engine_gn/moz.build    | 20 +++++--------------
+ .../webrtc/webrtc_common_gn/moz.build         | 20 +++++--------------
+ 118 files changed, 549 insertions(+), 1589 deletions(-)
+
+diff --git a/build/unix/mozconfig.linux32 b/build/unix/mozconfig.linux32
+index 8da778465d9..98ab3d028bc 100644
+--- a/build/unix/mozconfig.linux32
++++ b/build/unix/mozconfig.linux32
+@@ -2,7 +2,7 @@
+ 
+ export MOZ_LINUX_32_SSE2_STARTUP_ERROR=1
+ 
+-CFLAGS="$CFLAGS -march=pentium-m -msse -msse2 -mfpmath=sse"
+-CXXFLAGS="$CXXFLAGS -march=pentium-m -msse -msse2 -mfpmath=sse"
++CFLAGS="$CFLAGS -march=i686"
++CXXFLAGS="$CXXFLAGS -march=i686 "
+ 
+ ac_add_options --target=i686-pc-linux
+diff --git a/dom/media/webaudio/blink/DenormalDisabler.h b/dom/media/webaudio/blink/DenormalDisabler.h
+index ed06a09fc53..516e8f350a3 100644
+--- a/dom/media/webaudio/blink/DenormalDisabler.h
++++ b/dom/media/webaudio/blink/DenormalDisabler.h
+@@ -39,7 +39,7 @@ namespace WebCore {
+ #  define HAVE_DENORMAL 1
+ #endif
+ 
+-#if defined(__GNUC__) && (defined(__i386__) || defined(__x86_64__))
++#if defined(__GNUC__) && (defined(__x86_64__))
+ // X86 chips can flush denormals
+ #  define HAVE_DENORMAL 1
+ #endif
+diff --git a/gfx/angle/moz.build.common b/gfx/angle/moz.build.common
+index 31a14400db1..5a9f56a1fb9 100644
+--- a/gfx/angle/moz.build.common
++++ b/gfx/angle/moz.build.common
+@@ -7,10 +7,6 @@ if CONFIG['CC_TYPE'] in ('clang', 'clang-cl'):
+         '-Wno-range-loop-construct',
+     ]
+ 
+-
+-if CONFIG['INTEL_ARCHITECTURE']:
+-    CXXFLAGS += CONFIG['SSE2_FLAGS']
+-
+ if CONFIG['MOZ_WIDGET_TOOLKIT'] == 'windows':
+     DEFINES['ANGLE_IS_WIN'] = True
+ 
+diff --git a/python/mozbuild/mozbuild/frontend/emitter.py b/python/mozbuild/mozbuild/frontend/emitter.py
+index 44b916eaa2f..35bb984148c 100644
+--- a/python/mozbuild/mozbuild/frontend/emitter.py
++++ b/python/mozbuild/mozbuild/frontend/emitter.py
+@@ -1144,7 +1144,7 @@ class TreeMetadataEmitter(LoggingMixin):
+ 
+         if ctxt_sources:
+             for linkable in linkables:
+-                for target_var in ("SOURCES", "UNIFIED_SOURCES"):
++                for target_var in ("UNIFIED_SOURCES", "SOURCES"):
+                     for suffix, srcs in ctxt_sources[target_var].items():
+                         linkable.sources[suffix] += srcs
+             for host_linkable in host_linkables:
+diff --git a/third_party/libwebrtc/webrtc/api/audio_codecs/L16/audio_decoder_L16_gn/moz.build b/third_party/libwebrtc/webrtc/api/audio_codecs/L16/audio_decoder_L16_gn/moz.build
+index 0bc91f60e20..ac4299e6eaf 100644
+--- a/third_party/libwebrtc/webrtc/api/audio_codecs/L16/audio_decoder_L16_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/api/audio_codecs/L16/audio_decoder_L16_gn/moz.build
+@@ -174,9 +174,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -188,9 +186,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -199,20 +195,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_decoder_L16_gn")
+diff --git a/third_party/libwebrtc/webrtc/api/audio_codecs/L16/audio_encoder_L16_gn/moz.build b/third_party/libwebrtc/webrtc/api/audio_codecs/L16/audio_encoder_L16_gn/moz.build
+index e7205f66b49..7eda63c27ad 100644
+--- a/third_party/libwebrtc/webrtc/api/audio_codecs/L16/audio_encoder_L16_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/api/audio_codecs/L16/audio_encoder_L16_gn/moz.build
+@@ -174,9 +174,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -188,9 +186,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -199,20 +195,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_encoder_L16_gn")
+diff --git a/third_party/libwebrtc/webrtc/api/audio_codecs/audio_codecs_api_gn/moz.build b/third_party/libwebrtc/webrtc/api/audio_codecs/audio_codecs_api_gn/moz.build
+index ce40ee3f15a..ad3dd64d530 100644
+--- a/third_party/libwebrtc/webrtc/api/audio_codecs/audio_codecs_api_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/api/audio_codecs/audio_codecs_api_gn/moz.build
+@@ -176,9 +176,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -190,9 +188,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -201,20 +197,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_codecs_api_gn")
+diff --git a/third_party/libwebrtc/webrtc/api/audio_codecs/builtin_audio_decoder_factory_gn/moz.build b/third_party/libwebrtc/webrtc/api/audio_codecs/builtin_audio_decoder_factory_gn/moz.build
+index 9c086734162..791d4e82ba0 100644
+--- a/third_party/libwebrtc/webrtc/api/audio_codecs/builtin_audio_decoder_factory_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/api/audio_codecs/builtin_audio_decoder_factory_gn/moz.build
+@@ -215,9 +215,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Android":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_USE_BUILTIN_ISAC_FIX"] = "0"
+     DEFINES["WEBRTC_USE_BUILTIN_ISAC_FLOAT"] = "1"
+@@ -242,9 +240,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_USE_BUILTIN_ISAC_FIX"] = "0"
+     DEFINES["WEBRTC_USE_BUILTIN_ISAC_FLOAT"] = "1"
+@@ -267,9 +263,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_USE_BUILTIN_ISAC_FIX"] = "0"
+     DEFINES["WEBRTC_USE_BUILTIN_ISAC_FLOAT"] = "1"
+@@ -294,9 +288,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_USE_BUILTIN_ISAC_FIX"] = "0"
+     DEFINES["WEBRTC_USE_BUILTIN_ISAC_FLOAT"] = "1"
+@@ -313,9 +305,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_USE_BUILTIN_ISAC_FIX"] = "0"
+     DEFINES["WEBRTC_USE_BUILTIN_ISAC_FLOAT"] = "1"
+diff --git a/third_party/libwebrtc/webrtc/api/audio_codecs/builtin_audio_encoder_factory_gn/moz.build b/third_party/libwebrtc/webrtc/api/audio_codecs/builtin_audio_encoder_factory_gn/moz.build
+index d7569d57f80..0172e852add 100644
+--- a/third_party/libwebrtc/webrtc/api/audio_codecs/builtin_audio_encoder_factory_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/api/audio_codecs/builtin_audio_encoder_factory_gn/moz.build
+@@ -215,9 +215,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Android":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_USE_BUILTIN_ISAC_FIX"] = "0"
+     DEFINES["WEBRTC_USE_BUILTIN_ISAC_FLOAT"] = "1"
+@@ -242,9 +240,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_USE_BUILTIN_ISAC_FIX"] = "0"
+     DEFINES["WEBRTC_USE_BUILTIN_ISAC_FLOAT"] = "1"
+@@ -267,9 +263,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_USE_BUILTIN_ISAC_FIX"] = "0"
+     DEFINES["WEBRTC_USE_BUILTIN_ISAC_FLOAT"] = "1"
+@@ -294,9 +288,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_USE_BUILTIN_ISAC_FIX"] = "0"
+     DEFINES["WEBRTC_USE_BUILTIN_ISAC_FLOAT"] = "1"
+@@ -313,9 +305,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_USE_BUILTIN_ISAC_FIX"] = "0"
+     DEFINES["WEBRTC_USE_BUILTIN_ISAC_FLOAT"] = "1"
+diff --git a/third_party/libwebrtc/webrtc/api/audio_codecs/g711/audio_decoder_g711_gn/moz.build b/third_party/libwebrtc/webrtc/api/audio_codecs/g711/audio_decoder_g711_gn/moz.build
+index ffeea954b81..0310ad2389a 100644
+--- a/third_party/libwebrtc/webrtc/api/audio_codecs/g711/audio_decoder_g711_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/api/audio_codecs/g711/audio_decoder_g711_gn/moz.build
+@@ -174,9 +174,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -188,9 +186,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -199,20 +195,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_decoder_g711_gn")
+diff --git a/third_party/libwebrtc/webrtc/api/audio_codecs/g711/audio_encoder_g711_gn/moz.build b/third_party/libwebrtc/webrtc/api/audio_codecs/g711/audio_encoder_g711_gn/moz.build
+index 1f37f69bfbb..00b41373451 100644
+--- a/third_party/libwebrtc/webrtc/api/audio_codecs/g711/audio_encoder_g711_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/api/audio_codecs/g711/audio_encoder_g711_gn/moz.build
+@@ -174,9 +174,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -188,9 +186,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -199,20 +195,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_encoder_g711_gn")
+diff --git a/third_party/libwebrtc/webrtc/api/audio_codecs/g722/audio_decoder_g722_gn/moz.build b/third_party/libwebrtc/webrtc/api/audio_codecs/g722/audio_decoder_g722_gn/moz.build
+index 8d23c69dd7c..063e0d7ad1e 100644
+--- a/third_party/libwebrtc/webrtc/api/audio_codecs/g722/audio_decoder_g722_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/api/audio_codecs/g722/audio_decoder_g722_gn/moz.build
+@@ -174,9 +174,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -188,9 +186,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -199,20 +195,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_decoder_g722_gn")
+diff --git a/third_party/libwebrtc/webrtc/api/audio_codecs/g722/audio_encoder_g722_gn/moz.build b/third_party/libwebrtc/webrtc/api/audio_codecs/g722/audio_encoder_g722_gn/moz.build
+index ac7263b78f1..9bbf0f613ea 100644
+--- a/third_party/libwebrtc/webrtc/api/audio_codecs/g722/audio_encoder_g722_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/api/audio_codecs/g722/audio_encoder_g722_gn/moz.build
+@@ -174,9 +174,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -188,9 +186,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -199,20 +195,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_encoder_g722_gn")
+diff --git a/third_party/libwebrtc/webrtc/api/audio_codecs/ilbc/audio_decoder_ilbc_gn/moz.build b/third_party/libwebrtc/webrtc/api/audio_codecs/ilbc/audio_decoder_ilbc_gn/moz.build
+index d1ebc5aa530..5db561c1b0b 100644
+--- a/third_party/libwebrtc/webrtc/api/audio_codecs/ilbc/audio_decoder_ilbc_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/api/audio_codecs/ilbc/audio_decoder_ilbc_gn/moz.build
+@@ -182,9 +182,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -196,9 +194,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -207,20 +203,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_decoder_ilbc_gn")
+diff --git a/third_party/libwebrtc/webrtc/api/audio_codecs/ilbc/audio_encoder_ilbc_gn/moz.build b/third_party/libwebrtc/webrtc/api/audio_codecs/ilbc/audio_encoder_ilbc_gn/moz.build
+index 3f14232b8f2..077ff9dde50 100644
+--- a/third_party/libwebrtc/webrtc/api/audio_codecs/ilbc/audio_encoder_ilbc_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/api/audio_codecs/ilbc/audio_encoder_ilbc_gn/moz.build
+@@ -182,9 +182,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -196,9 +194,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -207,20 +203,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_encoder_ilbc_gn")
+diff --git a/third_party/libwebrtc/webrtc/api/audio_codecs/isac/audio_decoder_isac_float_gn/moz.build b/third_party/libwebrtc/webrtc/api/audio_codecs/isac/audio_decoder_isac_float_gn/moz.build
+index 415ed94a14b..120ce7159f4 100644
+--- a/third_party/libwebrtc/webrtc/api/audio_codecs/isac/audio_decoder_isac_float_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/api/audio_codecs/isac/audio_decoder_isac_float_gn/moz.build
+@@ -174,9 +174,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -188,9 +186,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -199,20 +195,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_decoder_isac_float_gn")
+diff --git a/third_party/libwebrtc/webrtc/api/audio_codecs/isac/audio_encoder_isac_float_gn/moz.build b/third_party/libwebrtc/webrtc/api/audio_codecs/isac/audio_encoder_isac_float_gn/moz.build
+index eb8d31fbc61..080d0b149f3 100644
+--- a/third_party/libwebrtc/webrtc/api/audio_codecs/isac/audio_encoder_isac_float_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/api/audio_codecs/isac/audio_encoder_isac_float_gn/moz.build
+@@ -174,9 +174,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -188,9 +186,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -199,20 +195,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_encoder_isac_float_gn")
+diff --git a/third_party/libwebrtc/webrtc/api/audio_codecs/opus/audio_decoder_opus_gn/moz.build b/third_party/libwebrtc/webrtc/api/audio_codecs/opus/audio_decoder_opus_gn/moz.build
+index ce137d41a7f..c0696d466fa 100644
+--- a/third_party/libwebrtc/webrtc/api/audio_codecs/opus/audio_decoder_opus_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/api/audio_codecs/opus/audio_decoder_opus_gn/moz.build
+@@ -183,9 +183,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -197,9 +195,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -208,20 +204,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_decoder_opus_gn")
+diff --git a/third_party/libwebrtc/webrtc/api/audio_codecs/opus/audio_encoder_opus_config_gn/moz.build b/third_party/libwebrtc/webrtc/api/audio_codecs/opus/audio_encoder_opus_config_gn/moz.build
+index bb4341dd659..839cea63ebe 100644
+--- a/third_party/libwebrtc/webrtc/api/audio_codecs/opus/audio_encoder_opus_config_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/api/audio_codecs/opus/audio_encoder_opus_config_gn/moz.build
+@@ -176,9 +176,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -190,9 +188,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -201,20 +197,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_encoder_opus_config_gn")
+diff --git a/third_party/libwebrtc/webrtc/api/audio_codecs/opus/audio_encoder_opus_gn/moz.build b/third_party/libwebrtc/webrtc/api/audio_codecs/opus/audio_encoder_opus_gn/moz.build
+index 47262f74187..1e436fb1302 100644
+--- a/third_party/libwebrtc/webrtc/api/audio_codecs/opus/audio_encoder_opus_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/api/audio_codecs/opus/audio_encoder_opus_gn/moz.build
+@@ -183,9 +183,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -197,9 +195,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -208,20 +204,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_encoder_opus_gn")
+diff --git a/third_party/libwebrtc/webrtc/api/base_peerconnection_api_gn/moz.build b/third_party/libwebrtc/webrtc/api/base_peerconnection_api_gn/moz.build
+index d5e91633231..63b9049430b 100644
+--- a/third_party/libwebrtc/webrtc/api/base_peerconnection_api_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/api/base_peerconnection_api_gn/moz.build
+@@ -166,9 +166,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -180,9 +178,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -191,20 +187,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("base_peerconnection_api_gn")
+diff --git a/third_party/libwebrtc/webrtc/api/optional_gn/moz.build b/third_party/libwebrtc/webrtc/api/optional_gn/moz.build
+index 1ef151d7b3e..672120567d4 100644
+--- a/third_party/libwebrtc/webrtc/api/optional_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/api/optional_gn/moz.build
+@@ -174,9 +174,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -188,9 +186,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -199,20 +195,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("optional_gn")
+diff --git a/third_party/libwebrtc/webrtc/api/video_codecs/video_codecs_api_gn/moz.build b/third_party/libwebrtc/webrtc/api/video_codecs/video_codecs_api_gn/moz.build
+index 61c4bbd1912..2872eda666b 100644
+--- a/third_party/libwebrtc/webrtc/api/video_codecs/video_codecs_api_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/api/video_codecs/video_codecs_api_gn/moz.build
+@@ -184,9 +184,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -198,9 +196,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -209,20 +205,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("video_codecs_api_gn")
+diff --git a/third_party/libwebrtc/webrtc/api/video_frame_api_gn/moz.build b/third_party/libwebrtc/webrtc/api/video_frame_api_gn/moz.build
+index e322b4648b7..bfebb529486 100644
+--- a/third_party/libwebrtc/webrtc/api/video_frame_api_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/api/video_frame_api_gn/moz.build
+@@ -178,9 +178,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -192,9 +190,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -203,20 +199,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("video_frame_api_gn")
+diff --git a/third_party/libwebrtc/webrtc/api/video_frame_api_i420_gn/moz.build b/third_party/libwebrtc/webrtc/api/video_frame_api_i420_gn/moz.build
+index a2912aea606..aad41d84fe2 100644
+--- a/third_party/libwebrtc/webrtc/api/video_frame_api_i420_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/api/video_frame_api_i420_gn/moz.build
+@@ -183,9 +183,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -197,9 +195,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -208,20 +204,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("video_frame_api_i420_gn")
+diff --git a/third_party/libwebrtc/webrtc/audio/audio_gn/moz.build b/third_party/libwebrtc/webrtc/audio/audio_gn/moz.build
+index 58e9decb681..74f0c0c05d8 100644
+--- a/third_party/libwebrtc/webrtc/audio/audio_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/audio/audio_gn/moz.build
+@@ -196,9 +196,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -210,9 +208,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -221,20 +217,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_gn")
+diff --git a/third_party/libwebrtc/webrtc/audio/utility/audio_frame_operations_gn/moz.build b/third_party/libwebrtc/webrtc/audio/utility/audio_frame_operations_gn/moz.build
+index 046831a5a3c..a67cd079f6f 100644
+--- a/third_party/libwebrtc/webrtc/audio/utility/audio_frame_operations_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/audio/utility/audio_frame_operations_gn/moz.build
+@@ -182,9 +182,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -196,9 +194,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -207,20 +203,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_frame_operations_gn")
+diff --git a/third_party/libwebrtc/webrtc/call/bitrate_allocator_gn/moz.build b/third_party/libwebrtc/webrtc/call/bitrate_allocator_gn/moz.build
+index cb9e6717425..1ac13b8d98a 100644
+--- a/third_party/libwebrtc/webrtc/call/bitrate_allocator_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/call/bitrate_allocator_gn/moz.build
+@@ -182,9 +182,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -196,9 +194,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -207,20 +203,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("bitrate_allocator_gn")
+diff --git a/third_party/libwebrtc/webrtc/call/call_gn/moz.build b/third_party/libwebrtc/webrtc/call/call_gn/moz.build
+index 60a5109f0ae..f72d54217f3 100644
+--- a/third_party/libwebrtc/webrtc/call/call_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/call/call_gn/moz.build
+@@ -185,9 +185,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -199,9 +197,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -210,20 +206,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("call_gn")
+diff --git a/third_party/libwebrtc/webrtc/call/call_interfaces_gn/moz.build b/third_party/libwebrtc/webrtc/call/call_interfaces_gn/moz.build
+index 6f510ca9b53..72358af55de 100644
+--- a/third_party/libwebrtc/webrtc/call/call_interfaces_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/call/call_interfaces_gn/moz.build
+@@ -183,9 +183,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -197,9 +195,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -208,20 +204,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("call_interfaces_gn")
+diff --git a/third_party/libwebrtc/webrtc/call/rtp_interfaces_gn/moz.build b/third_party/libwebrtc/webrtc/call/rtp_interfaces_gn/moz.build
+index e76416c81da..d393a3f1d71 100644
+--- a/third_party/libwebrtc/webrtc/call/rtp_interfaces_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/call/rtp_interfaces_gn/moz.build
+@@ -174,9 +174,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -188,9 +186,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -199,20 +195,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("rtp_interfaces_gn")
+diff --git a/third_party/libwebrtc/webrtc/call/rtp_receiver_gn/moz.build b/third_party/libwebrtc/webrtc/call/rtp_receiver_gn/moz.build
+index 2f4fbb82e7b..9cde9f216f6 100644
+--- a/third_party/libwebrtc/webrtc/call/rtp_receiver_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/call/rtp_receiver_gn/moz.build
+@@ -186,9 +186,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -200,9 +198,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -211,20 +207,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("rtp_receiver_gn")
+diff --git a/third_party/libwebrtc/webrtc/call/rtp_sender_gn/moz.build b/third_party/libwebrtc/webrtc/call/rtp_sender_gn/moz.build
+index 26fb8b760ce..ea82beb4249 100644
+--- a/third_party/libwebrtc/webrtc/call/rtp_sender_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/call/rtp_sender_gn/moz.build
+@@ -182,9 +182,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -196,9 +194,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -207,20 +203,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("rtp_sender_gn")
+diff --git a/third_party/libwebrtc/webrtc/call/video_stream_api_gn/moz.build b/third_party/libwebrtc/webrtc/call/video_stream_api_gn/moz.build
+index f6f2ab183e5..e07c06f580e 100644
+--- a/third_party/libwebrtc/webrtc/call/video_stream_api_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/call/video_stream_api_gn/moz.build
+@@ -186,9 +186,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -200,9 +198,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -211,20 +207,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("video_stream_api_gn")
+diff --git a/third_party/libwebrtc/webrtc/common_audio/common_audio_c_gn/moz.build b/third_party/libwebrtc/webrtc/common_audio/common_audio_c_gn/moz.build
+index 39464c3bd52..a4d0fabc4a6 100644
+--- a/third_party/libwebrtc/webrtc/common_audio/common_audio_c_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/common_audio/common_audio_c_gn/moz.build
+@@ -266,9 +266,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Android":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+     UNIFIED_SOURCES += [
+         "/third_party/libwebrtc/webrtc/common_audio/signal_processing/complex_bit_reverse.c",
+@@ -302,9 +300,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+     UNIFIED_SOURCES += [
+         "/third_party/libwebrtc/webrtc/common_audio/signal_processing/complex_bit_reverse.c",
+@@ -333,9 +329,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+     UNIFIED_SOURCES += [
+         "/third_party/libwebrtc/webrtc/common_audio/signal_processing/complex_bit_reverse.c",
+@@ -361,9 +355,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+     UNIFIED_SOURCES += [
+         "/third_party/libwebrtc/webrtc/common_audio/signal_processing/complex_bit_reverse.c",
+@@ -389,9 +381,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+     UNIFIED_SOURCES += [
+         "/third_party/libwebrtc/webrtc/common_audio/signal_processing/complex_bit_reverse.c",
+diff --git a/third_party/libwebrtc/webrtc/common_audio/common_audio_cc_gn/moz.build b/third_party/libwebrtc/webrtc/common_audio/common_audio_cc_gn/moz.build
+index 12e690307e4..cd88b1d50a7 100644
+--- a/third_party/libwebrtc/webrtc/common_audio/common_audio_cc_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/common_audio/common_audio_cc_gn/moz.build
+@@ -185,9 +185,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -199,9 +197,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -210,20 +206,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("common_audio_cc_gn")
+diff --git a/third_party/libwebrtc/webrtc/common_audio/common_audio_gn/moz.build b/third_party/libwebrtc/webrtc/common_audio/common_audio_gn/moz.build
+index a321cebb0de..a0c737c0682 100644
+--- a/third_party/libwebrtc/webrtc/common_audio/common_audio_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/common_audio/common_audio_gn/moz.build
+@@ -202,9 +202,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -216,9 +214,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -227,20 +223,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("common_audio_gn")
+diff --git a/third_party/libwebrtc/webrtc/common_audio/fir_filter_factory_gn/moz.build b/third_party/libwebrtc/webrtc/common_audio/fir_filter_factory_gn/moz.build
+index 91062e75683..450f37c60bf 100644
+--- a/third_party/libwebrtc/webrtc/common_audio/fir_filter_factory_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/common_audio/fir_filter_factory_gn/moz.build
+@@ -179,9 +179,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -193,9 +191,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -214,9 +210,7 @@ if CONFIG["CPU_ARCH"] == "arm" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     OS_LIBS += [
+         "rt"
+@@ -230,14 +224,10 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("fir_filter_factory_gn")
+diff --git a/third_party/libwebrtc/webrtc/common_video/common_video_gn/moz.build b/third_party/libwebrtc/webrtc/common_video/common_video_gn/moz.build
+index 38faf18355e..5482328a617 100644
+--- a/third_party/libwebrtc/webrtc/common_video/common_video_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/common_video/common_video_gn/moz.build
+@@ -196,9 +196,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -210,9 +208,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -221,20 +217,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("common_video_gn")
+diff --git a/third_party/libwebrtc/webrtc/logging/rtc_event_log_api_gn/moz.build b/third_party/libwebrtc/webrtc/logging/rtc_event_log_api_gn/moz.build
+index 8b2c3d3befb..57869e1e168 100644
+--- a/third_party/libwebrtc/webrtc/logging/rtc_event_log_api_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/logging/rtc_event_log_api_gn/moz.build
+@@ -200,9 +200,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -214,9 +212,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -225,20 +221,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("rtc_event_log_api_gn")
+diff --git a/third_party/libwebrtc/webrtc/logging/rtc_event_log_impl_gn/moz.build b/third_party/libwebrtc/webrtc/logging/rtc_event_log_impl_gn/moz.build
+index 28404614381..8b0ab488826 100644
+--- a/third_party/libwebrtc/webrtc/logging/rtc_event_log_impl_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/logging/rtc_event_log_impl_gn/moz.build
+@@ -184,9 +184,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -198,9 +196,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -209,20 +205,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("rtc_event_log_impl_gn")
+diff --git a/third_party/libwebrtc/webrtc/media/rtc_audio_video_gn/moz.build b/third_party/libwebrtc/webrtc/media/rtc_audio_video_gn/moz.build
+index 4f6d5f5c0a8..7db2ff501d8 100644
+--- a/third_party/libwebrtc/webrtc/media/rtc_audio_video_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/media/rtc_audio_video_gn/moz.build
+@@ -214,9 +214,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -228,9 +226,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -239,20 +235,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("rtc_audio_video_gn")
+diff --git a/third_party/libwebrtc/webrtc/media/rtc_h264_profile_id_gn/moz.build b/third_party/libwebrtc/webrtc/media/rtc_h264_profile_id_gn/moz.build
+index 585f1d74c3d..405ccc6fa33 100644
+--- a/third_party/libwebrtc/webrtc/media/rtc_h264_profile_id_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/media/rtc_h264_profile_id_gn/moz.build
+@@ -174,9 +174,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -188,9 +186,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -199,20 +195,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("rtc_h264_profile_id_gn")
+diff --git a/third_party/libwebrtc/webrtc/media/rtc_media_base_gn/moz.build b/third_party/libwebrtc/webrtc/media/rtc_media_base_gn/moz.build
+index 2be302444d7..09d7361f7e4 100644
+--- a/third_party/libwebrtc/webrtc/media/rtc_media_base_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/media/rtc_media_base_gn/moz.build
+@@ -193,9 +193,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -207,9 +205,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -218,20 +214,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("rtc_media_base_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/audio_coding_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/audio_coding_gn/moz.build
+index 023e1f7ce75..0f1d3afc1fe 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/audio_coding_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/audio_coding_gn/moz.build
+@@ -249,9 +249,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Android":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_CODEC_ISAC"] = True
+ 
+@@ -285,9 +283,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_CODEC_ISAC"] = True
+ 
+@@ -319,9 +315,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_CODEC_ISAC"] = True
+ 
+@@ -355,9 +349,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_CODEC_ISAC"] = True
+ 
+@@ -383,9 +375,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_CODEC_ISAC"] = True
+ 
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/audio_format_conversion_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/audio_format_conversion_gn/moz.build
+index bcf10b57510..6d7eb5ca18e 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/audio_format_conversion_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/audio_format_conversion_gn/moz.build
+@@ -174,9 +174,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -188,9 +186,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -199,20 +195,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_format_conversion_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/audio_network_adaptor_config_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/audio_network_adaptor_config_gn/moz.build
+index bd568321623..ed3c3334a77 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/audio_network_adaptor_config_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/audio_network_adaptor_config_gn/moz.build
+@@ -174,9 +174,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -188,9 +186,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -199,20 +195,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_network_adaptor_config_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/audio_network_adaptor_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/audio_network_adaptor_gn/moz.build
+index 4ca9647880d..395c3ed8681 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/audio_network_adaptor_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/audio_network_adaptor_gn/moz.build
+@@ -195,9 +195,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -209,9 +207,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -220,20 +216,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_network_adaptor_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/cng_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/cng_gn/moz.build
+index b734bb69e10..94f79c349e7 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/cng_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/cng_gn/moz.build
+@@ -186,9 +186,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -200,9 +198,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -211,20 +207,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("cng_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/g711_c_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/g711_c_gn/moz.build
+index fd89197df20..cca40a8df39 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/g711_c_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/g711_c_gn/moz.build
+@@ -167,9 +167,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -181,9 +179,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -192,20 +188,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ Library("g711_c_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/g711_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/g711_gn/moz.build
+index 042347be432..3c96ce71860 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/g711_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/g711_gn/moz.build
+@@ -175,9 +175,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -189,9 +187,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -200,20 +196,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("g711_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/g722_c_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/g722_c_gn/moz.build
+index 35f85c53398..3a1a1f4bd4c 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/g722_c_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/g722_c_gn/moz.build
+@@ -171,9 +171,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -185,9 +183,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -196,20 +192,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ Library("g722_c_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/g722_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/g722_gn/moz.build
+index 741e915e69e..2354a2dbfab 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/g722_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/g722_gn/moz.build
+@@ -175,9 +175,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -189,9 +187,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -200,20 +196,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("g722_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/ilbc_c_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/ilbc_c_gn/moz.build
+index 096ce1bd8cf..52932fb3f0a 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/ilbc_c_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/ilbc_c_gn/moz.build
+@@ -253,9 +253,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -267,9 +265,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -278,20 +274,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ Library("ilbc_c_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/ilbc_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/ilbc_gn/moz.build
+index d4592a8de21..3553d76cc1f 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/ilbc_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/ilbc_gn/moz.build
+@@ -186,9 +186,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -200,9 +198,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -211,20 +207,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("ilbc_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/isac_c_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/isac_c_gn/moz.build
+index 96ad9f3aecc..7cc004e287d 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/isac_c_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/isac_c_gn/moz.build
+@@ -214,9 +214,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -228,9 +226,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -239,20 +235,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ Library("isac_c_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/isac_common_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/isac_common_gn/moz.build
+index 8b1f49572b5..38f93bd6650 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/isac_common_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/isac_common_gn/moz.build
+@@ -174,9 +174,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -188,9 +186,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -199,20 +195,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("isac_common_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/isac_fix_c_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/isac_fix_c_gn/moz.build
+index 59503aae138..05495199954 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/isac_fix_c_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/isac_fix_c_gn/moz.build
+@@ -267,9 +267,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Android":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+     SOURCES += [
+         "/third_party/libwebrtc/webrtc/modules/audio_coding/codecs/isac/fix/source/pitch_filter_c.c"
+@@ -309,9 +307,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+     SOURCES += [
+         "/third_party/libwebrtc/webrtc/modules/audio_coding/codecs/isac/fix/source/pitch_filter_c.c"
+@@ -346,9 +342,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+     SOURCES += [
+         "/third_party/libwebrtc/webrtc/modules/audio_coding/codecs/isac/fix/source/pitch_filter_c.c"
+@@ -380,9 +374,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+     SOURCES += [
+         "/third_party/libwebrtc/webrtc/modules/audio_coding/codecs/isac/fix/source/pitch_filter_c.c"
+@@ -414,9 +406,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+     SOURCES += [
+         "/third_party/libwebrtc/webrtc/modules/audio_coding/codecs/isac/fix/source/pitch_filter_c.c"
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/isac_fix_common_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/isac_fix_common_gn/moz.build
+index 827d1a66291..c1fdc17e005 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/isac_fix_common_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/isac_fix_common_gn/moz.build
+@@ -167,9 +167,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -181,9 +179,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -192,20 +188,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ Library("isac_fix_common_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/isac_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/isac_gn/moz.build
+index 1e3ac6f5981..10deafd2128 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/isac_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/isac_gn/moz.build
+@@ -185,9 +185,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -199,9 +197,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -210,20 +206,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("isac_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/legacy_encoded_audio_frame_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/legacy_encoded_audio_frame_gn/moz.build
+index 53597770cae..a0aae0c8c33 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/legacy_encoded_audio_frame_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/legacy_encoded_audio_frame_gn/moz.build
+@@ -174,9 +174,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -188,9 +186,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -199,20 +195,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("legacy_encoded_audio_frame_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/neteq_decoder_enum_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/neteq_decoder_enum_gn/moz.build
+index 6ae48ac269d..0a999352055 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/neteq_decoder_enum_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/neteq_decoder_enum_gn/moz.build
+@@ -174,9 +174,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -188,9 +186,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -199,20 +195,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("neteq_decoder_enum_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/neteq_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/neteq_gn/moz.build
+index f074371a839..62e372f60b4 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/neteq_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/neteq_gn/moz.build
+@@ -221,9 +221,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -235,9 +233,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -246,20 +242,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("neteq_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/pcm16b_c_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/pcm16b_c_gn/moz.build
+index d233bb87771..da73018f01c 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/pcm16b_c_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/pcm16b_c_gn/moz.build
+@@ -166,9 +166,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -180,9 +178,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -191,20 +187,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ Library("pcm16b_c_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/pcm16b_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/pcm16b_gn/moz.build
+index 9231b586739..5c119fae52a 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/pcm16b_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/pcm16b_gn/moz.build
+@@ -176,9 +176,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -190,9 +188,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -201,20 +197,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("pcm16b_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/rent_a_codec_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/rent_a_codec_gn/moz.build
+index f4da8eccbc6..07317fc9930 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/rent_a_codec_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/rent_a_codec_gn/moz.build
+@@ -236,9 +236,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Android":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_CODEC_ISAC"] = True
+ 
+@@ -272,9 +270,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_CODEC_ISAC"] = True
+ 
+@@ -306,9 +302,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_CODEC_ISAC"] = True
+ 
+@@ -342,9 +336,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_CODEC_ISAC"] = True
+ 
+@@ -370,9 +362,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_CODEC_ISAC"] = True
+ 
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/webrtc_opus_c_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/webrtc_opus_c_gn/moz.build
+index 7f240e4803c..2f855ac1765 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/webrtc_opus_c_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/webrtc_opus_c_gn/moz.build
+@@ -194,9 +194,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Android":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+     DEFINES["WEBRTC_CODEC_ISAC"] = True
+ 
+@@ -218,9 +216,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+     DEFINES["WEBRTC_CODEC_ISAC"] = True
+ 
+@@ -236,9 +232,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+     DEFINES["WEBRTC_CODEC_ISAC"] = True
+ 
+@@ -252,9 +246,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+     DEFINES["WEBRTC_CODEC_ISAC"] = True
+ 
+@@ -268,9 +260,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+     DEFINES["WEBRTC_CODEC_ISAC"] = True
+ 
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_coding/webrtc_opus_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_coding/webrtc_opus_gn/moz.build
+index 43c5a4e67c9..579fc6b5390 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_coding/webrtc_opus_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_coding/webrtc_opus_gn/moz.build
+@@ -206,9 +206,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Android":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_CODEC_ISAC"] = True
+ 
+@@ -230,9 +228,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_CODEC_ISAC"] = True
+ 
+@@ -248,9 +244,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_CODEC_ISAC"] = True
+ 
+@@ -264,9 +258,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_CODEC_ISAC"] = True
+ 
+@@ -280,9 +272,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_CODEC_ISAC"] = True
+ 
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_device/audio_device_generic_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_device/audio_device_generic_gn/moz.build
+index b32911036de..7e30ebe48b6 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_device/audio_device_generic_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_device/audio_device_generic_gn/moz.build
+@@ -210,9 +210,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -224,9 +222,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -235,20 +231,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_device_generic_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_mixer/audio_frame_manipulator_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_mixer/audio_frame_manipulator_gn/moz.build
+index 16f93f88776..ac86e9899ae 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_mixer/audio_frame_manipulator_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_mixer/audio_frame_manipulator_gn/moz.build
+@@ -182,9 +182,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -196,9 +194,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -207,20 +203,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_frame_manipulator_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_mixer/audio_mixer_impl_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_mixer/audio_mixer_impl_gn/moz.build
+index 67219e7923e..431e7253b0c 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_mixer/audio_mixer_impl_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_mixer/audio_mixer_impl_gn/moz.build
+@@ -185,9 +185,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -199,9 +197,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -210,20 +206,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_mixer_impl_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/adaptive_fir_filter.cc b/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/adaptive_fir_filter.cc
+index fb3f48a9183..d5eed4ff11c 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/adaptive_fir_filter.cc
++++ b/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/adaptive_fir_filter.cc
+@@ -14,7 +14,7 @@
+ #include <arm_neon.h>
+ #endif
+ #include "typedefs.h"  // NOLINT(build/include)
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ #include <emmintrin.h>
+ #endif
+ #include <algorithm>
+@@ -59,7 +59,7 @@ void UpdateFrequencyResponse_NEON(
+ }
+ #endif
+ 
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ // Computes and stores the frequency response of the filter.
+ void UpdateFrequencyResponse_SSE2(
+     rtc::ArrayView<const FftData> H,
+@@ -111,7 +111,7 @@ void UpdateErlEstimator_NEON(
+ }
+ #endif
+ 
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ // Computes and stores the echo return loss estimate of the filter, which is the
+ // sum of the partition frequency responses.
+ void UpdateErlEstimator_SSE2(
+@@ -204,7 +204,7 @@ void AdaptPartitions_NEON(const RenderBuffer& render_buffer,
+ }
+ #endif
+ 
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ // Adapts the filter partitions. (SSE2 variant)
+ void AdaptPartitions_SSE2(const RenderBuffer& render_buffer,
+                           const FftData& G,
+@@ -345,7 +345,7 @@ void ApplyFilter_NEON(const RenderBuffer& render_buffer,
+ }
+ #endif
+ 
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ // Produces the filter output (SSE2 variant).
+ void ApplyFilter_SSE2(const RenderBuffer& render_buffer,
+                       rtc::ArrayView<const FftData> H,
+@@ -445,7 +445,7 @@ void AdaptiveFirFilter::Filter(const RenderBuffer& render_buffer,
+                                FftData* S) const {
+   RTC_DCHECK(S);
+   switch (optimization_) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+     case Aec3Optimization::kSse2:
+       aec3::ApplyFilter_SSE2(render_buffer, H_, S);
+       break;
+@@ -464,7 +464,7 @@ void AdaptiveFirFilter::Adapt(const RenderBuffer& render_buffer,
+                               const FftData& G) {
+   // Adapt the filter.
+   switch (optimization_) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+     case Aec3Optimization::kSse2:
+       aec3::AdaptPartitions_SSE2(render_buffer, G, H_);
+       break;
+@@ -483,7 +483,7 @@ void AdaptiveFirFilter::Adapt(const RenderBuffer& render_buffer,
+ 
+   // Update the frequency response and echo return loss for the filter.
+   switch (optimization_) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+     case Aec3Optimization::kSse2:
+       aec3::UpdateFrequencyResponse_SSE2(H_, &H2_);
+       aec3::UpdateErlEstimator_SSE2(H2_, &erl_);
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/adaptive_fir_filter.h b/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/adaptive_fir_filter.h
+index 78728693519..b6d9a52d586 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/adaptive_fir_filter.h
++++ b/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/adaptive_fir_filter.h
+@@ -34,7 +34,7 @@ void UpdateFrequencyResponse_NEON(
+     rtc::ArrayView<const FftData> H,
+     std::vector<std::array<float, kFftLengthBy2Plus1>>* H2);
+ #endif
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ void UpdateFrequencyResponse_SSE2(
+     rtc::ArrayView<const FftData> H,
+     std::vector<std::array<float, kFftLengthBy2Plus1>>* H2);
+@@ -50,7 +50,7 @@ void UpdateErlEstimator_NEON(
+     const std::vector<std::array<float, kFftLengthBy2Plus1>>& H2,
+     std::array<float, kFftLengthBy2Plus1>* erl);
+ #endif
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ void UpdateErlEstimator_SSE2(
+     const std::vector<std::array<float, kFftLengthBy2Plus1>>& H2,
+     std::array<float, kFftLengthBy2Plus1>* erl);
+@@ -65,7 +65,7 @@ void AdaptPartitions_NEON(const RenderBuffer& render_buffer,
+                           const FftData& G,
+                           rtc::ArrayView<FftData> H);
+ #endif
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ void AdaptPartitions_SSE2(const RenderBuffer& render_buffer,
+                           const FftData& G,
+                           rtc::ArrayView<FftData> H);
+@@ -80,7 +80,7 @@ void ApplyFilter_NEON(const RenderBuffer& render_buffer,
+                       rtc::ArrayView<const FftData> H,
+                       FftData* S);
+ #endif
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ void ApplyFilter_SSE2(const RenderBuffer& render_buffer,
+                       rtc::ArrayView<const FftData> H,
+                       FftData* S);
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/comfort_noise_generator.cc b/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/comfort_noise_generator.cc
+index dab40a9d7ed..29904db9318 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/comfort_noise_generator.cc
++++ b/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/comfort_noise_generator.cc
+@@ -11,7 +11,7 @@
+ #include "modules/audio_processing/aec3/comfort_noise_generator.h"
+ 
+ #include "typedefs.h"  // NOLINT(build/include)
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ #include <emmintrin.h>
+ #endif
+ #include <math.h>
+@@ -38,7 +38,7 @@ void TableRandomValue(int16_t* vector, int16_t vector_length, uint32_t* seed) {
+ 
+ namespace aec3 {
+ 
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ 
+ void EstimateComfortNoise_SSE2(const std::array<float, kFftLengthBy2Plus1>& N2,
+                                uint32_t* seed,
+@@ -204,7 +204,7 @@ void ComfortNoiseGenerator::Compute(
+       N2_initial_ ? *N2_initial_ : N2_;
+ 
+   switch (optimization_) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+     case Aec3Optimization::kSse2:
+       aec3::EstimateComfortNoise_SSE2(N2, &seed_, lower_band_noise,
+                                       upper_band_noise);
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/comfort_noise_generator.h b/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/comfort_noise_generator.h
+index 2d998beb94f..c19993a9619 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/comfort_noise_generator.h
++++ b/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/comfort_noise_generator.h
+@@ -21,7 +21,7 @@
+ 
+ namespace webrtc {
+ namespace aec3 {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ 
+ void EstimateComfortNoise_SSE2(const std::array<float, kFftLengthBy2Plus1>& N2,
+                                uint32_t* seed,
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/fft_data.h b/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/fft_data.h
+index a5c51bf3426..392c1190207 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/fft_data.h
++++ b/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/fft_data.h
+@@ -12,7 +12,7 @@
+ #define MODULES_AUDIO_PROCESSING_AEC3_FFT_DATA_H_
+ 
+ #include "typedefs.h"  // NOLINT(build/include)
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ #include <emmintrin.h>
+ #endif
+ #include <algorithm>
+@@ -43,7 +43,7 @@ struct FftData {
+                 std::array<float, kFftLengthBy2Plus1>* power_spectrum) const {
+     RTC_DCHECK(power_spectrum);
+     switch (optimization) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+       case Aec3Optimization::kSse2: {
+         constexpr int kNumFourBinBands = kFftLengthBy2 / 4;
+         constexpr int kLimit = kNumFourBinBands * 4;
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/matched_filter.cc b/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/matched_filter.cc
+index 4906bf9db7b..411174a6a8a 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/matched_filter.cc
++++ b/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/matched_filter.cc
+@@ -13,7 +13,7 @@
+ #include <arm_neon.h>
+ #endif
+ #include "typedefs.h"  // NOLINT(build/include)
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ #include <emmintrin.h>
+ #endif
+ #include <algorithm>
+@@ -134,7 +134,7 @@ void MatchedFilterCore_NEON(size_t x_start_index,
+ 
+ #endif
+ 
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ 
+ void MatchedFilterCore_SSE2(size_t x_start_index,
+                             float x2_sum_threshold,
+@@ -342,7 +342,7 @@ void MatchedFilter::Update(const DownsampledRenderBuffer& render_buffer,
+         render_buffer.buffer.size();
+ 
+     switch (optimization_) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+       case Aec3Optimization::kSse2:
+         aec3::MatchedFilterCore_SSE2(x_start_index, x2_sum_threshold,
+                                      render_buffer.buffer, y, filters_[n],
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/matched_filter.h b/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/matched_filter.h
+index c9bdc462e88..27621f13244 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/matched_filter.h
++++ b/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/matched_filter.h
+@@ -36,7 +36,7 @@ void MatchedFilterCore_NEON(size_t x_start_index,
+ 
+ #endif
+ 
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ 
+ // Filter core for the matched filter that is optimized for SSE2.
+ void MatchedFilterCore_SSE2(size_t x_start_index,
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/suppression_gain.cc b/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/suppression_gain.cc
+index ae4d4ace23c..acf60dab06a 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/suppression_gain.cc
++++ b/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/suppression_gain.cc
+@@ -11,7 +11,7 @@
+ #include "modules/audio_processing/aec3/suppression_gain.h"
+ 
+ #include "typedefs.h"  // NOLINT(build/include)
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ #include <emmintrin.h>
+ #endif
+ #include <math.h>
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/vector_math.h b/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/vector_math.h
+index 0672b513f3c..8936bdfceb9 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/vector_math.h
++++ b/third_party/libwebrtc/webrtc/modules/audio_processing/aec3/vector_math.h
+@@ -15,7 +15,7 @@
+ #if defined(WEBRTC_HAS_NEON)
+ #include <arm_neon.h>
+ #endif
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ #include <emmintrin.h>
+ #endif
+ #include <math.h>
+@@ -39,7 +39,7 @@ class VectorMath {
+   // Elementwise square root.
+   void Sqrt(rtc::ArrayView<float> x) {
+     switch (optimization_) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+       case Aec3Optimization::kSse2: {
+         const int x_size = static_cast<int>(x.size());
+         const int vector_limit = x_size >> 2;
+@@ -113,7 +113,7 @@ class VectorMath {
+     RTC_DCHECK_EQ(z.size(), x.size());
+     RTC_DCHECK_EQ(z.size(), y.size());
+     switch (optimization_) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+       case Aec3Optimization::kSse2: {
+         const int x_size = static_cast<int>(x.size());
+         const int vector_limit = x_size >> 2;
+@@ -159,7 +159,7 @@ class VectorMath {
+   void Accumulate(rtc::ArrayView<const float> x, rtc::ArrayView<float> z) {
+     RTC_DCHECK_EQ(z.size(), x.size());
+     switch (optimization_) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+       case Aec3Optimization::kSse2: {
+         const int x_size = static_cast<int>(x.size());
+         const int vector_limit = x_size >> 2;
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_processing/aec_dump/null_aec_dump_factory_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_processing/aec_dump/null_aec_dump_factory_gn/moz.build
+index bc1f3abfda7..434fb4435c9 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_processing/aec_dump/null_aec_dump_factory_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_processing/aec_dump/null_aec_dump_factory_gn/moz.build
+@@ -174,9 +174,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -188,9 +186,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -199,20 +195,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("null_aec_dump_factory_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_processing/aec_dump_interface_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_processing/aec_dump_interface_gn/moz.build
+index de0de6d459b..9f54b84dbfc 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_processing/aec_dump_interface_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_processing/aec_dump_interface_gn/moz.build
+@@ -174,9 +174,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -188,9 +186,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -199,20 +195,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("aec_dump_interface_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_processing/audio_processing_c_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_processing/audio_processing_c_gn/moz.build
+index 7226b458c8d..7dd693bea73 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_processing/audio_processing_c_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_processing/audio_processing_c_gn/moz.build
+@@ -227,9 +227,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Android":
+ 
+@@ -253,9 +251,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+@@ -271,9 +267,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -284,9 +278,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+@@ -297,9 +289,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_processing/audio_processing_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_processing/audio_processing_gn/moz.build
+index 2a32c384145..9c34bf12503 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_processing/audio_processing_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_processing/audio_processing_gn/moz.build
+@@ -302,9 +302,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Android":
+ 
+@@ -321,9 +319,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+@@ -336,9 +332,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -346,9 +340,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+@@ -356,9 +348,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+diff --git a/third_party/libwebrtc/webrtc/modules/audio_processing/audio_processing_statistics_gn/moz.build b/third_party/libwebrtc/webrtc/modules/audio_processing/audio_processing_statistics_gn/moz.build
+index dc4a3774dae..123be4e781e 100644
+--- a/third_party/libwebrtc/webrtc/modules/audio_processing/audio_processing_statistics_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/audio_processing/audio_processing_statistics_gn/moz.build
+@@ -174,9 +174,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -188,9 +186,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -199,20 +195,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_processing_statistics_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/bitrate_controller/bitrate_controller_gn/moz.build b/third_party/libwebrtc/webrtc/modules/bitrate_controller/bitrate_controller_gn/moz.build
+index 4e4cd116f88..0a039a662ff 100644
+--- a/third_party/libwebrtc/webrtc/modules/bitrate_controller/bitrate_controller_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/bitrate_controller/bitrate_controller_gn/moz.build
+@@ -184,9 +184,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -198,9 +196,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -209,20 +205,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("bitrate_controller_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/congestion_controller/congestion_controller_gn/moz.build b/third_party/libwebrtc/webrtc/modules/congestion_controller/congestion_controller_gn/moz.build
+index e0959ca7c90..33cfbb59488 100644
+--- a/third_party/libwebrtc/webrtc/modules/congestion_controller/congestion_controller_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/congestion_controller/congestion_controller_gn/moz.build
+@@ -195,9 +195,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -209,9 +207,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -220,20 +216,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("congestion_controller_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/desktop_capture/desktop_capture_generic_gn/moz.build b/third_party/libwebrtc/webrtc/modules/desktop_capture/desktop_capture_generic_gn/moz.build
+index 16b0f5d09ef..01aca2f6649 100644
+--- a/third_party/libwebrtc/webrtc/modules/desktop_capture/desktop_capture_generic_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/desktop_capture/desktop_capture_generic_gn/moz.build
+@@ -378,9 +378,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -400,9 +398,7 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+     DEFINES["WEBRTC_USE_PIPEWIRE"] = True
+ 
+@@ -432,14 +428,10 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("desktop_capture_generic_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/desktop_capture/primitives_gn/moz.build b/third_party/libwebrtc/webrtc/modules/desktop_capture/primitives_gn/moz.build
+index 522d0cb2382..dee1d3d0b6e 100644
+--- a/third_party/libwebrtc/webrtc/modules/desktop_capture/primitives_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/desktop_capture/primitives_gn/moz.build
+@@ -159,9 +159,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -170,20 +168,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("primitives_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/media_file/media_file_gn/moz.build b/third_party/libwebrtc/webrtc/modules/media_file/media_file_gn/moz.build
+index c1ada728d5f..db78e7b2bb1 100644
+--- a/third_party/libwebrtc/webrtc/modules/media_file/media_file_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/media_file/media_file_gn/moz.build
+@@ -186,9 +186,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -200,9 +198,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -211,20 +207,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("media_file_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/pacing/pacing_gn/moz.build b/third_party/libwebrtc/webrtc/modules/pacing/pacing_gn/moz.build
+index 58793192dbd..3ec4d32ca05 100644
+--- a/third_party/libwebrtc/webrtc/modules/pacing/pacing_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/pacing/pacing_gn/moz.build
+@@ -188,9 +188,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -202,9 +200,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -213,20 +209,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("pacing_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/remote_bitrate_estimator/remote_bitrate_estimator_gn/moz.build b/third_party/libwebrtc/webrtc/modules/remote_bitrate_estimator/remote_bitrate_estimator_gn/moz.build
+index e7793c3a141..af91c8d9f94 100644
+--- a/third_party/libwebrtc/webrtc/modules/remote_bitrate_estimator/remote_bitrate_estimator_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/remote_bitrate_estimator/remote_bitrate_estimator_gn/moz.build
+@@ -194,9 +194,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -208,9 +206,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -219,20 +215,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("remote_bitrate_estimator_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/rtp_rtcp/rtp_rtcp_format_gn/moz.build b/third_party/libwebrtc/webrtc/modules/rtp_rtcp/rtp_rtcp_format_gn/moz.build
+index ce6686c26a6..92a59c844fd 100644
+--- a/third_party/libwebrtc/webrtc/modules/rtp_rtcp/rtp_rtcp_format_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/rtp_rtcp/rtp_rtcp_format_gn/moz.build
+@@ -217,9 +217,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -231,9 +229,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -242,20 +238,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("rtp_rtcp_format_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/rtp_rtcp/rtp_rtcp_gn/moz.build b/third_party/libwebrtc/webrtc/modules/rtp_rtcp/rtp_rtcp_gn/moz.build
+index a48df3a4597..d802151a653 100644
+--- a/third_party/libwebrtc/webrtc/modules/rtp_rtcp/rtp_rtcp_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/rtp_rtcp/rtp_rtcp_gn/moz.build
+@@ -222,9 +222,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -236,9 +234,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -247,20 +243,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("rtp_rtcp_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/utility/utility_gn/moz.build b/third_party/libwebrtc/webrtc/modules/utility/utility_gn/moz.build
+index c38c131f754..0350e4e8799 100644
+--- a/third_party/libwebrtc/webrtc/modules/utility/utility_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/utility/utility_gn/moz.build
+@@ -190,9 +190,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -204,9 +202,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -215,20 +211,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("utility_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/video_capture/video_capture_internal_impl_gn/moz.build b/third_party/libwebrtc/webrtc/modules/video_capture/video_capture_internal_impl_gn/moz.build
+index 4454a655a06..d78c6e92591 100644
+--- a/third_party/libwebrtc/webrtc/modules/video_capture/video_capture_internal_impl_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/video_capture/video_capture_internal_impl_gn/moz.build
+@@ -203,9 +203,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -214,20 +212,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("video_capture_internal_impl_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/video_capture/video_capture_module_gn/moz.build b/third_party/libwebrtc/webrtc/modules/video_capture/video_capture_module_gn/moz.build
+index fdbadd21507..ae47e1664e0 100644
+--- a/third_party/libwebrtc/webrtc/modules/video_capture/video_capture_module_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/video_capture/video_capture_module_gn/moz.build
+@@ -186,9 +186,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -200,9 +198,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -211,20 +207,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("video_capture_module_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/video_coding/video_coding_gn/moz.build b/third_party/libwebrtc/webrtc/modules/video_coding/video_coding_gn/moz.build
+index d8469be52e4..4255e9859be 100644
+--- a/third_party/libwebrtc/webrtc/modules/video_coding/video_coding_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/video_coding/video_coding_gn/moz.build
+@@ -215,9 +215,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -229,9 +227,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -240,20 +236,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("video_coding_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/video_coding/video_coding_utility_gn/moz.build b/third_party/libwebrtc/webrtc/modules/video_coding/video_coding_utility_gn/moz.build
+index 767cbf2d78c..1e88cfbc320 100644
+--- a/third_party/libwebrtc/webrtc/modules/video_coding/video_coding_utility_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/video_coding/video_coding_utility_gn/moz.build
+@@ -190,9 +190,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -204,9 +202,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -215,20 +211,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("video_coding_utility_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/video_coding/webrtc_h264_gn/moz.build b/third_party/libwebrtc/webrtc/modules/video_coding/webrtc_h264_gn/moz.build
+index 06fde294340..45b3b5d3229 100644
+--- a/third_party/libwebrtc/webrtc/modules/video_coding/webrtc_h264_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/video_coding/webrtc_h264_gn/moz.build
+@@ -182,9 +182,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -196,9 +194,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -207,20 +203,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("webrtc_h264_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/video_coding/webrtc_i420_gn/moz.build b/third_party/libwebrtc/webrtc/modules/video_coding/webrtc_i420_gn/moz.build
+index 115c6a8f9d2..02c5dcccf7e 100644
+--- a/third_party/libwebrtc/webrtc/modules/video_coding/webrtc_i420_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/video_coding/webrtc_i420_gn/moz.build
+@@ -184,9 +184,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -198,9 +196,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -209,20 +205,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("webrtc_i420_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/video_coding/webrtc_stereo_gn/moz.build b/third_party/libwebrtc/webrtc/modules/video_coding/webrtc_stereo_gn/moz.build
+index 60d68b38165..b5bbc2b1df4 100644
+--- a/third_party/libwebrtc/webrtc/modules/video_coding/webrtc_stereo_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/video_coding/webrtc_stereo_gn/moz.build
+@@ -185,9 +185,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -199,9 +197,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -210,20 +206,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("webrtc_stereo_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/video_coding/webrtc_vp8_gn/moz.build b/third_party/libwebrtc/webrtc/modules/video_coding/webrtc_vp8_gn/moz.build
+index f8b81f62f16..6000b134555 100644
+--- a/third_party/libwebrtc/webrtc/modules/video_coding/webrtc_vp8_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/video_coding/webrtc_vp8_gn/moz.build
+@@ -188,9 +188,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -202,9 +200,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -213,20 +209,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("webrtc_vp8_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/video_coding/webrtc_vp9_gn/moz.build b/third_party/libwebrtc/webrtc/modules/video_coding/webrtc_vp9_gn/moz.build
+index 0db4347c5d5..f6730b59bda 100644
+--- a/third_party/libwebrtc/webrtc/modules/video_coding/webrtc_vp9_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/video_coding/webrtc_vp9_gn/moz.build
+@@ -186,9 +186,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -200,9 +198,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -211,20 +207,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("webrtc_vp9_gn")
+diff --git a/third_party/libwebrtc/webrtc/modules/video_processing/video_processing_gn/moz.build b/third_party/libwebrtc/webrtc/modules/video_processing/video_processing_gn/moz.build
+index 0d88a24e3aa..a93c5a7c309 100644
+--- a/third_party/libwebrtc/webrtc/modules/video_processing/video_processing_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/modules/video_processing/video_processing_gn/moz.build
+@@ -192,9 +192,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -206,9 +204,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -217,20 +213,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("video_processing_gn")
+diff --git a/third_party/libwebrtc/webrtc/rtc_base/rtc_base_approved_generic_gn/moz.build b/third_party/libwebrtc/webrtc/rtc_base/rtc_base_approved_generic_gn/moz.build
+index 3cdf4ec75cf..c05248b4cb0 100644
+--- a/third_party/libwebrtc/webrtc/rtc_base/rtc_base_approved_generic_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/rtc_base/rtc_base_approved_generic_gn/moz.build
+@@ -245,9 +245,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -259,9 +257,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -270,20 +266,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("rtc_base_approved_generic_gn")
+diff --git a/third_party/libwebrtc/webrtc/rtc_base/rtc_numerics_gn/moz.build b/third_party/libwebrtc/webrtc/rtc_base/rtc_numerics_gn/moz.build
+index 291ac6c5da7..48b1af98e57 100644
+--- a/third_party/libwebrtc/webrtc/rtc_base/rtc_numerics_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/rtc_base/rtc_numerics_gn/moz.build
+@@ -174,9 +174,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -188,9 +186,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -199,20 +195,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("rtc_numerics_gn")
+diff --git a/third_party/libwebrtc/webrtc/rtc_base/rtc_task_queue_impl_gn/moz.build b/third_party/libwebrtc/webrtc/rtc_base/rtc_task_queue_impl_gn/moz.build
+index a588427017c..fb6b043f13f 100644
+--- a/third_party/libwebrtc/webrtc/rtc_base/rtc_task_queue_impl_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/rtc_base/rtc_task_queue_impl_gn/moz.build
+@@ -239,9 +239,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -253,9 +251,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -264,20 +260,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("rtc_task_queue_impl_gn")
+diff --git a/third_party/libwebrtc/webrtc/rtc_base/sequenced_task_checker_gn/moz.build b/third_party/libwebrtc/webrtc/rtc_base/sequenced_task_checker_gn/moz.build
+index 1fa3a814991..2c7e890ac14 100644
+--- a/third_party/libwebrtc/webrtc/rtc_base/sequenced_task_checker_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/rtc_base/sequenced_task_checker_gn/moz.build
+@@ -174,9 +174,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -188,9 +186,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -199,20 +195,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("sequenced_task_checker_gn")
+diff --git a/third_party/libwebrtc/webrtc/rtc_base/weak_ptr_gn/moz.build b/third_party/libwebrtc/webrtc/rtc_base/weak_ptr_gn/moz.build
+index fb477042b74..d64484fd229 100644
+--- a/third_party/libwebrtc/webrtc/rtc_base/weak_ptr_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/rtc_base/weak_ptr_gn/moz.build
+@@ -174,9 +174,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -188,9 +186,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -199,20 +195,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("weak_ptr_gn")
+diff --git a/third_party/libwebrtc/webrtc/system_wrappers/cpu_features_linux_gn/moz.build b/third_party/libwebrtc/webrtc/system_wrappers/cpu_features_linux_gn/moz.build
+index 2d07ec2707f..5f1a28822ac 100644
+--- a/third_party/libwebrtc/webrtc/system_wrappers/cpu_features_linux_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/system_wrappers/cpu_features_linux_gn/moz.build
+@@ -66,8 +66,6 @@ if CONFIG["CPU_ARCH"] == "arm":
+ 
+ if CONFIG["CPU_ARCH"] == "x86":
+ 
+-    CFLAGS += [
+-        "-msse2"
+-    ]
++    CFLAGS += []
+ 
+ Library("cpu_features_linux_gn")
+diff --git a/third_party/libwebrtc/webrtc/system_wrappers/field_trial_default_gn/moz.build b/third_party/libwebrtc/webrtc/system_wrappers/field_trial_default_gn/moz.build
+index e2239ef706e..0a668de82fd 100644
+--- a/third_party/libwebrtc/webrtc/system_wrappers/field_trial_default_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/system_wrappers/field_trial_default_gn/moz.build
+@@ -166,9 +166,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -180,9 +178,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -191,20 +187,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("field_trial_default_gn")
+diff --git a/third_party/libwebrtc/webrtc/system_wrappers/metrics_default_gn/moz.build b/third_party/libwebrtc/webrtc/system_wrappers/metrics_default_gn/moz.build
+index 5c8eaf83fe2..9f4bd41bdfc 100644
+--- a/third_party/libwebrtc/webrtc/system_wrappers/metrics_default_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/system_wrappers/metrics_default_gn/moz.build
+@@ -174,9 +174,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -188,9 +186,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -199,20 +195,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("metrics_default_gn")
+diff --git a/third_party/libwebrtc/webrtc/system_wrappers/system_wrappers_gn/moz.build b/third_party/libwebrtc/webrtc/system_wrappers/system_wrappers_gn/moz.build
+index 07453280cc9..ec824a0eac0 100644
+--- a/third_party/libwebrtc/webrtc/system_wrappers/system_wrappers_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/system_wrappers/system_wrappers_gn/moz.build
+@@ -245,9 +245,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -259,9 +257,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -270,20 +266,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("system_wrappers_gn")
+diff --git a/third_party/libwebrtc/webrtc/video/video_gn/moz.build b/third_party/libwebrtc/webrtc/video/video_gn/moz.build
+index 56d175720a4..e84fbec295e 100644
+--- a/third_party/libwebrtc/webrtc/video/video_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/video/video_gn/moz.build
+@@ -207,9 +207,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -221,9 +219,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -232,20 +228,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("video_gn")
+diff --git a/third_party/libwebrtc/webrtc/voice_engine/audio_level_gn/moz.build b/third_party/libwebrtc/webrtc/voice_engine/audio_level_gn/moz.build
+index eca8dca4205..e76f98f5a3b 100644
+--- a/third_party/libwebrtc/webrtc/voice_engine/audio_level_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/voice_engine/audio_level_gn/moz.build
+@@ -185,9 +185,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -199,9 +197,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -210,20 +206,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("audio_level_gn")
+diff --git a/third_party/libwebrtc/webrtc/voice_engine/voice_engine_gn/moz.build b/third_party/libwebrtc/webrtc/voice_engine/voice_engine_gn/moz.build
+index 6a6546b5d78..c7903d52a85 100644
+--- a/third_party/libwebrtc/webrtc/voice_engine/voice_engine_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/voice_engine/voice_engine_gn/moz.build
+@@ -200,9 +200,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -214,9 +212,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -225,20 +221,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("voice_engine_gn")
+diff --git a/third_party/libwebrtc/webrtc/webrtc_common_gn/moz.build b/third_party/libwebrtc/webrtc/webrtc_common_gn/moz.build
+index 8d8851a4cad..b768b1761bb 100644
+--- a/third_party/libwebrtc/webrtc/webrtc_common_gn/moz.build
++++ b/third_party/libwebrtc/webrtc/webrtc_common_gn/moz.build
+@@ -166,9 +166,7 @@ if not CONFIG["MOZ_DEBUG"] and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+@@ -180,9 +178,7 @@ if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+@@ -191,20 +187,14 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "NetBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "OpenBSD":
+ 
+-    CXXFLAGS += [
+-        "-msse2"
+-    ]
++    CXXFLAGS += []
+ 
+ Library("webrtc_common_gn")
+-- 
+2.36.1
+
