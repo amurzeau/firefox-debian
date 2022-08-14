@@ -1,8 +1,24 @@
-firefox-esr (102.1.0esr-1) UNRELEASED; urgency=medium
+firefox-esr (102.1.0esr-1) unstable; urgency=medium
 
   * New upstream release.
+  * Fixes for mfsa2022-28, also known as:
+    CVE-2022-36319, CVE-2022-36318, CVE-2022-36315, CVE-2022-36316,
+    CVE-2022-36320, CVE-2022-2505.
 
- -- Mike Hommey <glandium@debian.org>  Sun, 14 Aug 2022 16:37:07 +0900
+  * debian/rules:
+    - Improve detection of known failing cases on armhf and mipsel.
+    - Use thinLTO for rust on armhf, to stay in the memory budget with an
+      armhf toolchain.
+    - Use MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=none instead of
+      MACH_USE_SYSTEM_PYTHON=1.
+  * debian/rules, debian/watch, debian/watch.in: Generate debian/watch and
+    fix it.
+
+  * third_party/libwebrtc/moz.build: Work around bz#1775202 to fix FTBFS on
+    ppc64el.
+  * config/makefiles/rust.mk: Allow to override rust LTO flag.
+
+ -- Mike Hommey <glandium@debian.org>  Sun, 14 Aug 2022 16:59:19 +0900
 
 firefox (102.0-1) unstable; urgency=medium
 
