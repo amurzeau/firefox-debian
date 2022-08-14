@@ -18,3 +18,5 @@ debian-hacks/Allow-to-build-with-older-versions-of-nodejs-10.patch
 debian-hacks/Fix-math_private.h-for-i386-FTBFS.patch
 debian-hacks/Allow-to-build-with-cargo-in-Debian-unstable.patch
 debian-hacks/Work-around-build-failure-with-newer-cbindgen.-bz-17.patch
+debian-hacks/Work-around-bz-1775202-to-fix-FTBFS-on-ppc64el.patch
+debian-hacks/Allow-to-override-rust-LTO-flag.patch
