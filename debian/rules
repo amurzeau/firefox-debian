@@ -184,7 +184,7 @@ $(call lazy,LIBAVCODEC,$$(shell awk -F\" '/libavcodec\.so/ { sub(/libavcodec\.so
 $(PREPROCESSED_FILES): VARS = GRE_VERSION PRODUCT_DOWNLOAD_NAME $(PRODUCT) $(call uc,$(PRODUCT)) $(Product) MOZ_APP_REMOTINGNAME $(SYSTEM_LIBS_VARS) SHORT_SOURCE_CHANNEL DIST TRANSITION MOZ_FFVPX CRASH_REPORTER DEB_HOST_ARCH
 debian/control: VARS += L10N_PACKAGES_DEPS PRODUCT LIBAVCODEC
 $(PREPROCESSED_FILES):
-	MOZ_OBJDIR=debian/objdir MACH_USE_SYSTEM_PYTHON=1 $(PYTHON) ./mach python python/mozbuild/mozbuild/preprocessor.py --marker % -Fsubstitution $(foreach var,$(VARS),-D$(var)="$($(var))" )$< -o $@
+	MOZ_OBJDIR=debian/objdir MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=none $(PYTHON) ./mach python python/mozbuild/mozbuild/preprocessor.py --marker % -Fsubstitution $(foreach var,$(VARS),-D$(var)="$($(var))" )$< -o $@
 
 ifdef TRANSITION
 MAINTSCRIPTS := $(addprefix debian/,$(addsuffix .maintscript,$(shell awk -F/ '$$1 != "searchplugins" { next } $$2 == "locale" && $$3 != "en-US" { p="iceweasel-l10n-" $$3 } $$2 == "common" || ($$2 "/" $$3 == "locale/en-US") { p="iceweasel" } !done[p] { print p; done[p] = 1 }' debian/removed_conffiles)))
@@ -276,7 +276,7 @@ $(L10N_BUILD_STAMPS):: stamps/build-l10n-%: stamps/prepare-configure
 		--with-l10n-base=$(CURDIR)/l10n
 
 	$(if $(wildcard l10n/$*),,ln -sf ../l10n-$* l10n/$*)
-	MACH_USE_SYSTEM_PYTHON=1 $(MAKE) -C build-l10n/$*/$(PRODUCT)/locales langpack-$* MOZ_CHROME_FILE_FORMAT=flat MOZ_LANGPACK_EID=langpack-$*@$($(PRODUCT)).mozilla.org PKG_LANGPACK_BASENAME='$$(MOZ_LANGPACK_EID)' PKG_LANGPACK_PATH=xpi/
+	MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=none $(MAKE) -C build-l10n/$*/$(PRODUCT)/locales langpack-$* MOZ_CHROME_FILE_FORMAT=flat MOZ_LANGPACK_EID=langpack-$*@$($(PRODUCT)).mozilla.org PKG_LANGPACK_BASENAME='$$(MOZ_LANGPACK_EID)' PKG_LANGPACK_PATH=xpi/
 
 override_dh_auto_build-arch: stamps/build-$(PRODUCT)
 
