@@ -252,6 +252,11 @@ endif
 		$(COMMON_CONFIGURE_FLAGS) \
 		$(CONFIGURE_FLAGS)
 
+# Use thinLTO on armhf, to stay in the memory budget with an armhf toolchain.
+ifeq (armhf,$(DEB_BUILD_ARCH))
+export DEBIAN_RUST_LTO=-Clto=thin
+endif
+
 stamps/build-$(PRODUCT):: stamps/configure-check-$(PRODUCT)
 	+dh_auto_build --parallel --builddirectory=build-$(PRODUCT) -- \
 		LD_LIBS=-Wl,--no-gc-sections \
