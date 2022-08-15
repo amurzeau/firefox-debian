@@ -1,3 +1,16 @@
+firefox-esr (102.1.0esr-2) unstable; urgency=medium
+
+  * debian/rules: Remove old and now unnecessary workarounds.
+
+  * intl/icu/source/common/unicode/std_string.h,
+    intl/icu/source/common/utypeinfo.h,
+    intl/icu/source/io/unicode/ustream.h: Remove workaround for old libstdc++
+    problem, which now causes problems with GCC 12 on arm.
+  * third_party/libwebrtc/moz.build: Add missing webrtc directory for ppc64el
+    (bz#1775202).
+
+ -- Mike Hommey <glandium@debian.org>  Mon, 15 Aug 2022 15:46:49 +0900
+
 firefox-esr (102.1.0esr-1) unstable; urgency=medium
 
   * New upstream release.
