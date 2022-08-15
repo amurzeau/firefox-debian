@@ -152,9 +152,6 @@ endif
 
 CXXFLAGS = $(CFLAGS)
 RUSTFLAGS = --remap-path-prefix=$(CURDIR)=.
-ifeq (,$(filter 1.43.% 1.44.%,$(shell rustc --version | awk '{print $$2}')))
-RUSTFLAGS += -Cembed-bitcode=yes
-endif
 
 EXPORTS := CC CXX CFLAGS CXXFLAGS CPPFLAGS LDFLAGS MOZILLA_OFFICIAL RUSTFLAGS
 $(call lazy,CONFIGURE_ENV,$$(foreach export,$(EXPORTS),$$(export)="$$($$(export))"))
@@ -259,7 +256,6 @@ endif
 
 stamps/build-$(PRODUCT):: stamps/configure-check-$(PRODUCT)
 	+dh_auto_build --parallel --builddirectory=build-$(PRODUCT) -- \
-		LD_LIBS=-Wl,--no-gc-sections \
 		_LEAKTEST_FILES=leaktest.py
 
 L10N_BUILD_STAMPS = $(foreach lang,$(L10N_LANGS),stamps/build-l10n-$(lang))
