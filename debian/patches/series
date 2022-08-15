@@ -20,3 +20,5 @@ debian-hacks/Allow-to-build-with-cargo-in-Debian-unstable.patch
 debian-hacks/Work-around-build-failure-with-newer-cbindgen.-bz-17.patch
 debian-hacks/Work-around-bz-1775202-to-fix-FTBFS-on-ppc64el.patch
 debian-hacks/Allow-to-override-rust-LTO-flag.patch
+debian-hacks/Remove-workaround-for-old-libstdc-problem-which-now-.patch
+debian-hacks/Add-missing-webrtc-directory-for-ppc64el-bz-1775202.patch
