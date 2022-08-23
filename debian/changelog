@@ -1,3 +1,14 @@
+firefox-esr (102.2.0esr-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2022-34, also known as:
+    CVE-2022-38472, CVE-2022-38473, CVE-2022-38477, CVE-2022-38478.
+
+  * debian/rules, debian/control: Fix libavcodec recommends. Closes: #1017782.
+  * debian/control*: Bump nss build dependency.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 24 Aug 2022 06:35:58 +0900
+
 firefox-esr (102.1.0esr-2) unstable; urgency=medium
 
   * debian/rules: Remove old and now unnecessary workarounds.
