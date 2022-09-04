@@ -37,7 +37,7 @@ void ComputeFrequencyResponse_Neon(
     const std::vector<std::vector<FftData>>& H,
     std::vector<std::array<float, kFftLengthBy2Plus1>>* H2);
 #endif
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 void ComputeFrequencyResponse_Sse2(
     size_t num_partitions,
     const std::vector<std::vector<FftData>>& H,
@@ -60,7 +60,7 @@ void AdaptPartitions_Neon(const RenderBuffer& render_buffer,
                           size_t num_partitions,
                           std::vector<std::vector<FftData>>* H);
 #endif
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 void AdaptPartitions_Sse2(const RenderBuffer& render_buffer,
                           const FftData& G,
                           size_t num_partitions,
@@ -83,7 +83,7 @@ void ApplyFilter_Neon(const RenderBuffer& render_buffer,
                       const std::vector<std::vector<FftData>>& H,
                       FftData* S);
 #endif
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 void ApplyFilter_Sse2(const RenderBuffer& render_buffer,
                       size_t num_partitions,
                       const std::vector<std::vector<FftData>>& H,

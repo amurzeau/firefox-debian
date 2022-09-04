@@ -7,8 +7,10 @@ import("//build/config/arm.gni")
 #import("//testing/test.gni")
 
 config("common_config") {
+  defines = []
+
   if (is_win) {
-    defines = [
+    defines += [
       # Required to use math constants from math.h.
       "_USE_MATH_DEFINES",
     ]
@@ -17,8 +19,8 @@ config("common_config") {
   # PFFFT doesn't support SIMD on some cpus, so build a scalar version.
   if ((target_cpu == "arm" && !arm_use_neon) || target_cpu == "mipsel" ||
       target_cpu == "mips64el" || target_cpu == "ppc64" ||
-      target_cpu == "s390x") {
-    defines = [ "PFFFT_SIMD_DISABLE" ]
+      target_cpu == "s390x" || target_cpu == "x86") {
+    defines += [ "PFFFT_SIMD_DISABLE" ]
   }
 }
 

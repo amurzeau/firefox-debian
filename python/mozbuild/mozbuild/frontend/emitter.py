@@ -1146,7 +1146,7 @@ class TreeMetadataEmitter(LoggingMixin):
 
         if ctxt_sources:
             for linkable in linkables:
-                for target_var in ("SOURCES", "UNIFIED_SOURCES"):
+                for target_var in ("UNIFIED_SOURCES", "SOURCES"):
                     for suffix, srcs in ctxt_sources[target_var].items():
                         linkable.sources[suffix] += srcs
             for host_linkable in host_linkables:

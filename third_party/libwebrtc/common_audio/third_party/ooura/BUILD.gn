@@ -20,14 +20,9 @@ rtc_library("fft_size_128") {
   ]
   cflags = []
 
+
   if (target_cpu == "x86" || target_cpu == "x64") {
-    sources += [
-      "fft_size_128/ooura_fft_sse2.cc",
-      "fft_size_128/ooura_fft_tables_neon_sse2.h",
-    ]
-    if (is_posix || is_fuchsia) {
-      cflags += [ "-msse2" ]
-    }
+    deps += [ ":fft_size_128_sse2" ]
   }
 
   if (rtc_build_with_neon) {
@@ -49,6 +44,23 @@ rtc_library("fft_size_128") {
     sources += [ "fft_size_128/ooura_fft_mips.cc" ]
   }
 }
+
+if (target_cpu == "x86" || target_cpu == "x64") {
+  rtc_library("fft_size_128_sse2") {
+    sources = [
+      "fft_size_128/ooura_fft_sse2.cc",
+      "fft_size_128/ooura_fft_tables_neon_sse2.h",
+    ]
+    if (is_posix || is_fuchsia) {
+      cflags = [ "-msse2" ]
+    }
+    deps = [
+      "../../../rtc_base/system:arch",
+      "../../../system_wrappers",
+    ]
+  }
+}
+
 
 rtc_library("fft_size_256") {
   sources = [

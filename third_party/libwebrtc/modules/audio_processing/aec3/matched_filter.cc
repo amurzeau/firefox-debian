@@ -9,13 +9,13 @@
  */
 #include "modules/audio_processing/aec3/matched_filter.h"
 
-// Defines WEBRTC_ARCH_X86_FAMILY, used below.
+// Defines WEBRTC_ARCH_X86_64, used below.
 #include "rtc_base/system/arch.h"
 
 #if defined(WEBRTC_HAS_NEON)
 #include <arm_neon.h>
 #endif
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 #include <emmintrin.h>
 #endif
 #include <algorithm>
@@ -142,7 +142,7 @@ void MatchedFilterCore_NEON(size_t x_start_index,
 
 #endif
 
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 
 void MatchedFilterCore_SSE2(size_t x_start_index,
                             float x2_sum_threshold,
@@ -358,7 +358,7 @@ void MatchedFilter::Update(const DownsampledRenderBuffer& render_buffer,
         render_buffer.buffer.size();
 
     switch (optimization_) {
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
       case Aec3Optimization::kSse2:
         aec3::MatchedFilterCore_SSE2(x_start_index, x2_sum_threshold,
                                      smoothing_, render_buffer.buffer, y,

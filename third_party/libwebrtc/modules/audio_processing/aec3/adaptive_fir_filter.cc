@@ -10,13 +10,13 @@
 
 #include "modules/audio_processing/aec3/adaptive_fir_filter.h"
 
-// Defines WEBRTC_ARCH_X86_FAMILY, used below.
+// Defines WEBRTC_ARCH_X86_64, used below.
 #include "rtc_base/system/arch.h"
 
 #if defined(WEBRTC_HAS_NEON)
 #include <arm_neon.h>
 #endif
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 #include <emmintrin.h>
 #endif
 #include <math.h>
@@ -86,7 +86,7 @@ void ComputeFrequencyResponse_Neon(
 }
 #endif
 
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 // Computes and stores the frequency response of the filter.
 void ComputeFrequencyResponse_Sse2(
     size_t num_partitions,
@@ -208,7 +208,7 @@ void AdaptPartitions_Neon(const RenderBuffer& render_buffer,
 }
 #endif
 
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 // Adapts the filter partitions. (SSE2 variant)
 void AdaptPartitions_Sse2(const RenderBuffer& render_buffer,
                           const FftData& G,
@@ -373,7 +373,7 @@ void ApplyFilter_Neon(const RenderBuffer& render_buffer,
 }
 #endif
 
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 // Produces the filter output (SSE2 variant).
 void ApplyFilter_Sse2(const RenderBuffer& render_buffer,
                       size_t num_partitions,
@@ -552,7 +552,7 @@ void AdaptiveFirFilter::Filter(const RenderBuffer& render_buffer,
                                FftData* S) const {
   RTC_DCHECK(S);
   switch (optimization_) {
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
     case Aec3Optimization::kSse2:
       aec3::ApplyFilter_Sse2(render_buffer, current_size_partitions_, H_, S);
       break;
@@ -596,7 +596,7 @@ void AdaptiveFirFilter::ComputeFrequencyResponse(
   H2->resize(current_size_partitions_);
 
   switch (optimization_) {
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
     case Aec3Optimization::kSse2:
       aec3::ComputeFrequencyResponse_Sse2(current_size_partitions_, H_, H2);
       break;
@@ -621,7 +621,7 @@ void AdaptiveFirFilter::AdaptAndUpdateSize(const RenderBuffer& render_buffer,
 
   // Adapt the filter.
   switch (optimization_) {
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
     case Aec3Optimization::kSse2:
       aec3::AdaptPartitions_Sse2(render_buffer, G, current_size_partitions_,
                                  &H_);
