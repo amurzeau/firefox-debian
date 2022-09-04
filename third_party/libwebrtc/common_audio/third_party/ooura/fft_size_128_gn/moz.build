@@ -154,18 +154,6 @@ if CONFIG["CPU_ARCH"] == "arm":
         "/third_party/libwebrtc/common_audio/third_party/ooura/fft_size_128/ooura_fft_neon.cc"
     ]
 
-if CONFIG["CPU_ARCH"] == "x86":
-
-    UNIFIED_SOURCES += [
-        "/third_party/libwebrtc/common_audio/third_party/ooura/fft_size_128/ooura_fft_sse2.cc"
-    ]
-
-if CONFIG["CPU_ARCH"] == "x86_64":
-
-    UNIFIED_SOURCES += [
-        "/third_party/libwebrtc/common_audio/third_party/ooura/fft_size_128/ooura_fft_sse2.cc"
-    ]
-
 if CONFIG["MOZ_DEBUG"] == "1" and CONFIG["OS_TARGET"] == "Android":
 
     DEFINES["_DEBUG"] = True
@@ -199,25 +187,8 @@ if CONFIG["CPU_ARCH"] == "arm" and CONFIG["OS_TARGET"] == "Android":
 
 if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
 
-    CXXFLAGS += [
-        "-msse2",
-        "-msse2"
-    ]
-
     OS_LIBS += [
         "android_support"
-    ]
-
-if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Android":
-
-    CXXFLAGS += [
-        "-msse2"
-    ]
-
-if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Darwin":
-
-    CXXFLAGS += [
-        "-msse2"
     ]
 
 if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
@@ -230,25 +201,10 @@ if CONFIG["CPU_ARCH"] == "arm" and CONFIG["OS_TARGET"] == "Linux":
 
 if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
 
-    CXXFLAGS += [
-        "-msse2",
-        "-msse2"
-    ]
-
     DEFINES["_GNU_SOURCE"] = True
 
 if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Linux":
 
-    CXXFLAGS += [
-        "-msse2"
-    ]
-
     DEFINES["_GNU_SOURCE"] = True
-
-if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "OpenBSD":
-
-    CXXFLAGS += [
-        "-msse2"
-    ]
 
 Library("fft_size_128_gn")

@@ -44,6 +44,10 @@ if CONFIG["MOZ_DEBUG"] == "1":
 
 if CONFIG["OS_TARGET"] == "Android":
 
+    CXXFLAGS += [
+        "-msse2"
+    ]
+
     DEFINES["ANDROID"] = True
     DEFINES["ANDROID_NDK_VERSION_ROLL"] = "r20_1"
     DEFINES["HAVE_SYS_UIO_H"] = True
@@ -73,6 +77,10 @@ if CONFIG["OS_TARGET"] == "Darwin":
     DEFINES["__STDC_FORMAT_MACROS"] = True
 
 if CONFIG["OS_TARGET"] == "Linux":
+
+    CXXFLAGS += [
+        "-msse2"
+    ]
 
     DEFINES["USE_AURA"] = "1"
     DEFINES["USE_GLIB"] = "1"
@@ -167,32 +175,8 @@ if CONFIG["MOZ_X11"] == "1" and CONFIG["OS_TARGET"] == "Linux":
 
 if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Android":
 
-    CXXFLAGS += [
-        "-msse2",
-        "-msse2"
-    ]
-
     OS_LIBS += [
         "android_support"
-    ]
-
-if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Android":
-
-    CXXFLAGS += [
-        "-msse2"
-    ]
-
-if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":
-
-    CXXFLAGS += [
-        "-msse2",
-        "-msse2"
-    ]
-
-if CONFIG["CPU_ARCH"] == "x86_64" and CONFIG["OS_TARGET"] == "Linux":
-
-    CXXFLAGS += [
-        "-msse2"
     ]
 
 Library("common_audio_sse2_gn")
