@@ -13,7 +13,7 @@
 #include <arm_neon.h>
 #endif
 #include "typedefs.h"  // NOLINT(build/include)
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 #include <emmintrin.h>
 #endif
 #include <algorithm>
@@ -134,7 +134,7 @@ void MatchedFilterCore_NEON(size_t x_start_index,
 
 #endif
 
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
 
 void MatchedFilterCore_SSE2(size_t x_start_index,
                             float x2_sum_threshold,
@@ -342,7 +342,7 @@ void MatchedFilter::Update(const DownsampledRenderBuffer& render_buffer,
         render_buffer.buffer.size();
 
     switch (optimization_) {
-#if defined(WEBRTC_ARCH_X86_FAMILY)
+#if defined(WEBRTC_ARCH_X86_64)
       case Aec3Optimization::kSse2:
         aec3::MatchedFilterCore_SSE2(x_start_index, x2_sum_threshold,
                                      render_buffer.buffer, y, filters_[n],
