@@ -1,3 +1,10 @@
+firefox-esr (102.4.0esr-1+nosse1) unstable; urgency=medium
+
+  * d/patches: Update patch to modify BUILD.gn instead of moz.build for
+    webrtc (and regenerate moz.build from BUILD.gn)
+
+ -- Alexis Murzeau <amubtdx@gmail.com>  Thu, 31 Oct 2022 22:43:57 +0200
+
 firefox-esr (102.4.0esr-1) unstable; urgency=medium
 
   * New upstream release.

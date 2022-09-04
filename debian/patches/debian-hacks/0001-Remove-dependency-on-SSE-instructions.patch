@@ -1,0 +1,605 @@
+From e4c4648b877e54fa1e407270736da070413337f6 Mon Sep 17 00:00:00 2001
+From: Alexis Murzeau <amubtdx@gmail.com>
+Date: Sun, 4 Sep 2022 16:05:36 +0200
+Subject: [PATCH 1/2] Remove dependency on SSE instructions
+
+mozconfig.linux32: global flags, remove sse2 flags and target i686
+       instead of pentium-m.
+
+blink: DenormalDisabler: Disable denormal to zero flush that use stmxcsr
+       instruction (SSE) (Software flush is done instead).
+
+angle: moz.build.common: build gfx/angle without SSE2 (no intrinsics
+       used).
+
+mozbuild: emitter.py: change the order of UNIFIED_SOURCES and SOURCES to
+          make non SSE object files before SSE specific ones when linking
+          libxul.so.
+          Else, the linker might prefer to link in a function defined in
+          a header that use SSE2 instructions over one without SSE2
+          instructions.
+          This the case with gfxImageSurface::GetSize defined in
+          gfx/thebes/gfxImageSurface.h and also included in
+          gfxAlphaRecoverySSE2.cpp.
+          This means gfxImageSurface::GetSize() is defined in a header
+          and is built multiple time, so this happens:
+
+  - Unified sources are built without SSE2 flags, so the
+      definition doesn't have SSE2 instructions. The definition
+      is put in a Unified_xxxx.o file.
+
+  - SSE2 specific file gfxAlphaRecoverySSE2.o is built with
+      SSE2 flags, and contains a definition of gfxImageSurface::GetSize
+      that uses automatically generated SSE2 instruction by g++.
+
+  - Previously, sources were linked before unified sources
+      when linking libxul.so, which I suppose is why the SSE2
+      version of gfxImageSurface::GetSize is used.
+
+  - Reversing the order of SOURCES and UNIFIED_SOURCES makes
+      gcc's linker to use the non-SSE2 version of
+      gfxImageSurface::GetSize.
+
+libwebrtc:
+  BUILD.gn: remove global SSE2 gcc flags (sse2 specific libraries are
+            still built using SSE2 flags to allow runtime detection)
+  ooura: move ooura_fft_sse2.cc compilation in a separate library to set
+         -msse2 flag only for this source file (SSE detection is done at
+         runtime).
+  aec3,agc2: disable the compilation of SSE2 functions to be able to build
+        them without SSE2. SSE2 specific function are not placed in a
+        specific SSE2 dedicated source file, so we need to disable them
+        entierly to prevent any SSE2 instructions in non-SSE2 code paths.
+
+  pffft: modified BUILD.gn to set PFFFT_SIMD_DISABLE define on x86.
+
+A better fix for webrtc would be to move aec3 SSE / NEON functions in a
+a dedicated source file, the same way other SSE functions are made in
+libwebrtc.
+But this requires more file changes.
+
+I've tested it using:
+ - Real hardware with AMD Athlon XP 2600+ processor (supports only SSE
+   but not SSE2)
+ - qemu using `qemu-system-i386 -cpu pentium2,check -m 1G -device ac97
+   -vga std -display gtk -drive
+file=harddisk.img,format=raw,index=0,media=disk -netdev
+user,id=net1,hostfwd=::11023-:22 -device e1000,netdev=net1 -usbdevice
+tablet`
+
+Note that enabling SSE on qemu will also enable SSE2 (even if absent
+from cpuid, there is no illegal instruction errors).
+Using -cpu pentium2 will produce Illegal Instruction on any SSE
+instruction.
+
+To update this patch:
+
+In third_party/libwebrtc:
+  - Regenerate moz.build files using this command (or similar):
+    ./mach python python/mozbuild/mozbuild/gn_processor.py dom/media/webrtc/third_party_build/gn-configs/webrtc.json
+
+  - Search for all occurence of WEBRTC_ARCH_X86_FAMILY in any files
+    not built with msse2 explicitely (mostly aec3 and agc2)
+    Check for definitions of SSE functions inside a file whose name
+    doesn't have 'sse' or 'avx'. In these files, replace
+    WEBRTC_ARCH_X86_FAMILY with WEBRTC_ARCH_X86_64.
+    Example: any modified source files in third_party/libwebrtc.
+
+In any moz.build files, search for SSE2_FLAGS. Remove any occurence
+that doesn't apply to files whose name contains 'sse' or 'avx'.
+
+To check the resulting build, you can use this:
+
+Check that only .o files with 'sse' in their name are returned by these
+commands:
+ - Check for 'movq' instructions:
+   find . -type f -name '*.o' | xargs -I% sh -c 'xxd -p "%" | grep -q -e '660fd600' && echo %'
+
+ - Check for 'stmxcsr' instructions:
+   find . -type f -name '*.o' | xargs -I% sh -c 'xxd -p "%" | grep -q -e '0fae1d' && echo %'
+
+Closes: #961663, #1002600
+---
+ build/unix/mozconfig.linux32                  |  4 +--
+ dom/media/webaudio/blink/DenormalDisabler.h   |  2 +-
+ gfx/angle/moz.build.common                    |  3 ---
+ python/mozbuild/mozbuild/frontend/emitter.py  |  2 +-
+ .../libwebrtc/build/config/compiler/BUILD.gn  |  7 -----
+ .../common_audio/third_party/ooura/BUILD.gn   | 26 ++++++++++++++-----
+ .../aec3/adaptive_fir_filter.cc               | 16 ++++++------
+ .../aec3/adaptive_fir_filter.h                |  6 ++---
+ .../aec3/adaptive_fir_filter_erl.cc           |  6 ++---
+ .../aec3/adaptive_fir_filter_erl.h            |  2 +-
+ .../aec3/comfort_noise_generator.cc           |  4 +--
+ .../modules/audio_processing/aec3/fft_data.h  |  6 ++---
+ .../audio_processing/aec3/matched_filter.cc   |  8 +++---
+ .../audio_processing/aec3/matched_filter.h    |  2 +-
+ .../audio_processing/aec3/vector_math.h       | 10 +++----
+ .../audio_processing/agc2/rnn_vad/rnn.cc      | 10 +++----
+ .../libwebrtc/third_party/pffft/BUILD.gn      |  8 +++---
+ 17 files changed, 63 insertions(+), 59 deletions(-)
+
+diff --git a/build/unix/mozconfig.linux32 b/build/unix/mozconfig.linux32
+index 8da778465d9..98ab3d028bc 100644
+--- a/build/unix/mozconfig.linux32
++++ b/build/unix/mozconfig.linux32
+@@ -2,7 +2,7 @@
+ 
+ export MOZ_LINUX_32_SSE2_STARTUP_ERROR=1
+ 
+-CFLAGS="$CFLAGS -march=pentium-m -msse -msse2 -mfpmath=sse"
+-CXXFLAGS="$CXXFLAGS -march=pentium-m -msse -msse2 -mfpmath=sse"
++CFLAGS="$CFLAGS -march=i686"
++CXXFLAGS="$CXXFLAGS -march=i686 "
+ 
+ ac_add_options --target=i686-pc-linux
+diff --git a/dom/media/webaudio/blink/DenormalDisabler.h b/dom/media/webaudio/blink/DenormalDisabler.h
+index ed06a09fc53..516e8f350a3 100644
+--- a/dom/media/webaudio/blink/DenormalDisabler.h
++++ b/dom/media/webaudio/blink/DenormalDisabler.h
+@@ -39,7 +39,7 @@ namespace WebCore {
+ #  define HAVE_DENORMAL 1
+ #endif
+ 
+-#if defined(__GNUC__) && (defined(__i386__) || defined(__x86_64__))
++#if defined(__GNUC__) && (defined(__x86_64__))
+ // X86 chips can flush denormals
+ #  define HAVE_DENORMAL 1
+ #endif
+diff --git a/gfx/angle/moz.build.common b/gfx/angle/moz.build.common
+index f9f46e83052..dff03a74690 100644
+--- a/gfx/angle/moz.build.common
++++ b/gfx/angle/moz.build.common
+@@ -9,9 +9,6 @@ if CONFIG['CC_TYPE'] in ('clang', 'clang-cl'):
+ 
+ CXXFLAGS += CONFIG['MOZ_X11_CFLAGS']
+ 
+-if CONFIG['INTEL_ARCHITECTURE']:
+-    CXXFLAGS += CONFIG['SSE2_FLAGS']
+-
+ if CONFIG['MOZ_WIDGET_TOOLKIT'] == 'windows':
+     DEFINES['ANGLE_IS_WIN'] = True
+ 
+diff --git a/python/mozbuild/mozbuild/frontend/emitter.py b/python/mozbuild/mozbuild/frontend/emitter.py
+index 0b7ccef2ca3..7009ad1d0ba 100644
+--- a/python/mozbuild/mozbuild/frontend/emitter.py
++++ b/python/mozbuild/mozbuild/frontend/emitter.py
+@@ -1146,7 +1146,7 @@ class TreeMetadataEmitter(LoggingMixin):
+ 
+         if ctxt_sources:
+             for linkable in linkables:
+-                for target_var in ("SOURCES", "UNIFIED_SOURCES"):
++                for target_var in ("UNIFIED_SOURCES", "SOURCES"):
+                     for suffix, srcs in ctxt_sources[target_var].items():
+                         linkable.sources[suffix] += srcs
+             for host_linkable in host_linkables:
+diff --git a/third_party/libwebrtc/build/config/compiler/BUILD.gn b/third_party/libwebrtc/build/config/compiler/BUILD.gn
+index 5c90cf71e73..1f678273809 100644
+--- a/third_party/libwebrtc/build/config/compiler/BUILD.gn
++++ b/third_party/libwebrtc/build/config/compiler/BUILD.gn
+@@ -774,13 +774,6 @@ config("compiler_cpu_abi") {
+     } else if (target_cpu == "x86") {
+       cflags += [ "-m32" ]
+       ldflags += [ "-m32" ]
+-      if (!is_nacl) {
+-        cflags += [
+-          "-msse2",
+-          "-mfpmath=sse",
+-          "-mmmx",
+-        ]
+-      }
+     } else if (target_cpu == "arm") {
+       if (is_clang && !is_android && !is_nacl) {
+         cflags += [ "--target=arm-linux-gnueabihf" ]
+diff --git a/third_party/libwebrtc/common_audio/third_party/ooura/BUILD.gn b/third_party/libwebrtc/common_audio/third_party/ooura/BUILD.gn
+index a0ddf777db8..3ef3d742d26 100644
+--- a/third_party/libwebrtc/common_audio/third_party/ooura/BUILD.gn
++++ b/third_party/libwebrtc/common_audio/third_party/ooura/BUILD.gn
+@@ -20,14 +20,9 @@ rtc_library("fft_size_128") {
+   ]
+   cflags = []
+ 
++
+   if (target_cpu == "x86" || target_cpu == "x64") {
+-    sources += [
+-      "fft_size_128/ooura_fft_sse2.cc",
+-      "fft_size_128/ooura_fft_tables_neon_sse2.h",
+-    ]
+-    if (is_posix || is_fuchsia) {
+-      cflags += [ "-msse2" ]
+-    }
++    deps += [ ":fft_size_128_sse2" ]
+   }
+ 
+   if (rtc_build_with_neon) {
+@@ -50,6 +45,23 @@ rtc_library("fft_size_128") {
+   }
+ }
+ 
++if (target_cpu == "x86" || target_cpu == "x64") {
++  rtc_library("fft_size_128_sse2") {
++    sources = [
++      "fft_size_128/ooura_fft_sse2.cc",
++      "fft_size_128/ooura_fft_tables_neon_sse2.h",
++    ]
++    if (is_posix || is_fuchsia) {
++      cflags = [ "-msse2" ]
++    }
++    deps = [
++      "../../../rtc_base/system:arch",
++      "../../../system_wrappers",
++    ]
++  }
++}
++
++
+ rtc_library("fft_size_256") {
+   sources = [
+     "fft_size_256/fft4g.cc",
+diff --git a/third_party/libwebrtc/modules/audio_processing/aec3/adaptive_fir_filter.cc b/third_party/libwebrtc/modules/audio_processing/aec3/adaptive_fir_filter.cc
+index bf3a7809f42..ba28c787eb3 100644
+--- a/third_party/libwebrtc/modules/audio_processing/aec3/adaptive_fir_filter.cc
++++ b/third_party/libwebrtc/modules/audio_processing/aec3/adaptive_fir_filter.cc
+@@ -10,13 +10,13 @@
+ 
+ #include "modules/audio_processing/aec3/adaptive_fir_filter.h"
+ 
+-// Defines WEBRTC_ARCH_X86_FAMILY, used below.
++// Defines WEBRTC_ARCH_X86_64, used below.
+ #include "rtc_base/system/arch.h"
+ 
+ #if defined(WEBRTC_HAS_NEON)
+ #include <arm_neon.h>
+ #endif
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ #include <emmintrin.h>
+ #endif
+ #include <math.h>
+@@ -86,7 +86,7 @@ void ComputeFrequencyResponse_Neon(
+ }
+ #endif
+ 
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ // Computes and stores the frequency response of the filter.
+ void ComputeFrequencyResponse_Sse2(
+     size_t num_partitions,
+@@ -208,7 +208,7 @@ void AdaptPartitions_Neon(const RenderBuffer& render_buffer,
+ }
+ #endif
+ 
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ // Adapts the filter partitions. (SSE2 variant)
+ void AdaptPartitions_Sse2(const RenderBuffer& render_buffer,
+                           const FftData& G,
+@@ -373,7 +373,7 @@ void ApplyFilter_Neon(const RenderBuffer& render_buffer,
+ }
+ #endif
+ 
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ // Produces the filter output (SSE2 variant).
+ void ApplyFilter_Sse2(const RenderBuffer& render_buffer,
+                       size_t num_partitions,
+@@ -552,7 +552,7 @@ void AdaptiveFirFilter::Filter(const RenderBuffer& render_buffer,
+                                FftData* S) const {
+   RTC_DCHECK(S);
+   switch (optimization_) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+     case Aec3Optimization::kSse2:
+       aec3::ApplyFilter_Sse2(render_buffer, current_size_partitions_, H_, S);
+       break;
+@@ -596,7 +596,7 @@ void AdaptiveFirFilter::ComputeFrequencyResponse(
+   H2->resize(current_size_partitions_);
+ 
+   switch (optimization_) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+     case Aec3Optimization::kSse2:
+       aec3::ComputeFrequencyResponse_Sse2(current_size_partitions_, H_, H2);
+       break;
+@@ -621,7 +621,7 @@ void AdaptiveFirFilter::AdaptAndUpdateSize(const RenderBuffer& render_buffer,
+ 
+   // Adapt the filter.
+   switch (optimization_) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+     case Aec3Optimization::kSse2:
+       aec3::AdaptPartitions_Sse2(render_buffer, G, current_size_partitions_,
+                                  &H_);
+diff --git a/third_party/libwebrtc/modules/audio_processing/aec3/adaptive_fir_filter.h b/third_party/libwebrtc/modules/audio_processing/aec3/adaptive_fir_filter.h
+index 75977094606..fa39063513e 100644
+--- a/third_party/libwebrtc/modules/audio_processing/aec3/adaptive_fir_filter.h
++++ b/third_party/libwebrtc/modules/audio_processing/aec3/adaptive_fir_filter.h
+@@ -37,7 +37,7 @@ void ComputeFrequencyResponse_Neon(
+     const std::vector<std::vector<FftData>>& H,
+     std::vector<std::array<float, kFftLengthBy2Plus1>>* H2);
+ #endif
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ void ComputeFrequencyResponse_Sse2(
+     size_t num_partitions,
+     const std::vector<std::vector<FftData>>& H,
+@@ -60,7 +60,7 @@ void AdaptPartitions_Neon(const RenderBuffer& render_buffer,
+                           size_t num_partitions,
+                           std::vector<std::vector<FftData>>* H);
+ #endif
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ void AdaptPartitions_Sse2(const RenderBuffer& render_buffer,
+                           const FftData& G,
+                           size_t num_partitions,
+@@ -83,7 +83,7 @@ void ApplyFilter_Neon(const RenderBuffer& render_buffer,
+                       const std::vector<std::vector<FftData>>& H,
+                       FftData* S);
+ #endif
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ void ApplyFilter_Sse2(const RenderBuffer& render_buffer,
+                       size_t num_partitions,
+                       const std::vector<std::vector<FftData>>& H,
+diff --git a/third_party/libwebrtc/modules/audio_processing/aec3/adaptive_fir_filter_erl.cc b/third_party/libwebrtc/modules/audio_processing/aec3/adaptive_fir_filter_erl.cc
+index 45b88139798..f1fa5f483b6 100644
+--- a/third_party/libwebrtc/modules/audio_processing/aec3/adaptive_fir_filter_erl.cc
++++ b/third_party/libwebrtc/modules/audio_processing/aec3/adaptive_fir_filter_erl.cc
+@@ -16,7 +16,7 @@
+ #if defined(WEBRTC_HAS_NEON)
+ #include <arm_neon.h>
+ #endif
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ #include <emmintrin.h>
+ #endif
+ 
+@@ -54,7 +54,7 @@ void ErlComputer_NEON(
+ }
+ #endif
+ 
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ // Computes and stores the echo return loss estimate of the filter, which is the
+ // sum of the partition frequency responses.
+ void ErlComputer_SSE2(
+@@ -81,7 +81,7 @@ void ComputeErl(const Aec3Optimization& optimization,
+   RTC_DCHECK_EQ(kFftLengthBy2Plus1, erl.size());
+   // Update the frequency response and echo return loss for the filter.
+   switch (optimization) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+     case Aec3Optimization::kSse2:
+       aec3::ErlComputer_SSE2(H2, erl);
+       break;
+diff --git a/third_party/libwebrtc/modules/audio_processing/aec3/adaptive_fir_filter_erl.h b/third_party/libwebrtc/modules/audio_processing/aec3/adaptive_fir_filter_erl.h
+index 4ac13b1bc36..92c9c60431a 100644
+--- a/third_party/libwebrtc/modules/audio_processing/aec3/adaptive_fir_filter_erl.h
++++ b/third_party/libwebrtc/modules/audio_processing/aec3/adaptive_fir_filter_erl.h
+@@ -32,7 +32,7 @@ void ErlComputer_NEON(
+     const std::vector<std::array<float, kFftLengthBy2Plus1>>& H2,
+     rtc::ArrayView<float> erl);
+ #endif
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ void ErlComputer_SSE2(
+     const std::vector<std::array<float, kFftLengthBy2Plus1>>& H2,
+     rtc::ArrayView<float> erl);
+diff --git a/third_party/libwebrtc/modules/audio_processing/aec3/comfort_noise_generator.cc b/third_party/libwebrtc/modules/audio_processing/aec3/comfort_noise_generator.cc
+index de5227c0898..c4cf26d8787 100644
+--- a/third_party/libwebrtc/modules/audio_processing/aec3/comfort_noise_generator.cc
++++ b/third_party/libwebrtc/modules/audio_processing/aec3/comfort_noise_generator.cc
+@@ -10,10 +10,10 @@
+ 
+ #include "modules/audio_processing/aec3/comfort_noise_generator.h"
+ 
+-// Defines WEBRTC_ARCH_X86_FAMILY, used below.
++// Defines WEBRTC_ARCH_X86_64, used below.
+ #include "rtc_base/system/arch.h"
+ 
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ #include <emmintrin.h>
+ #endif
+ #include <algorithm>
+diff --git a/third_party/libwebrtc/modules/audio_processing/aec3/fft_data.h b/third_party/libwebrtc/modules/audio_processing/aec3/fft_data.h
+index 9c25e784aa0..69632b69f49 100644
+--- a/third_party/libwebrtc/modules/audio_processing/aec3/fft_data.h
++++ b/third_party/libwebrtc/modules/audio_processing/aec3/fft_data.h
+@@ -11,10 +11,10 @@
+ #ifndef MODULES_AUDIO_PROCESSING_AEC3_FFT_DATA_H_
+ #define MODULES_AUDIO_PROCESSING_AEC3_FFT_DATA_H_
+ 
+-// Defines WEBRTC_ARCH_X86_FAMILY, used below.
++// Defines WEBRTC_ARCH_X86_64, used below.
+ #include "rtc_base/system/arch.h"
+ 
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ #include <emmintrin.h>
+ #endif
+ #include <algorithm>
+@@ -48,7 +48,7 @@ struct FftData {
+                 rtc::ArrayView<float> power_spectrum) const {
+     RTC_DCHECK_EQ(kFftLengthBy2Plus1, power_spectrum.size());
+     switch (optimization) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+       case Aec3Optimization::kSse2: {
+         constexpr int kNumFourBinBands = kFftLengthBy2 / 4;
+         constexpr int kLimit = kNumFourBinBands * 4;
+diff --git a/third_party/libwebrtc/modules/audio_processing/aec3/matched_filter.cc b/third_party/libwebrtc/modules/audio_processing/aec3/matched_filter.cc
+index 64b2d4e697a..39f5fad7faf 100644
+--- a/third_party/libwebrtc/modules/audio_processing/aec3/matched_filter.cc
++++ b/third_party/libwebrtc/modules/audio_processing/aec3/matched_filter.cc
+@@ -9,13 +9,13 @@
+  */
+ #include "modules/audio_processing/aec3/matched_filter.h"
+ 
+-// Defines WEBRTC_ARCH_X86_FAMILY, used below.
++// Defines WEBRTC_ARCH_X86_64, used below.
+ #include "rtc_base/system/arch.h"
+ 
+ #if defined(WEBRTC_HAS_NEON)
+ #include <arm_neon.h>
+ #endif
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ #include <emmintrin.h>
+ #endif
+ #include <algorithm>
+@@ -142,7 +142,7 @@ void MatchedFilterCore_NEON(size_t x_start_index,
+ 
+ #endif
+ 
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ 
+ void MatchedFilterCore_SSE2(size_t x_start_index,
+                             float x2_sum_threshold,
+@@ -358,7 +358,7 @@ void MatchedFilter::Update(const DownsampledRenderBuffer& render_buffer,
+         render_buffer.buffer.size();
+ 
+     switch (optimization_) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+       case Aec3Optimization::kSse2:
+         aec3::MatchedFilterCore_SSE2(x_start_index, x2_sum_threshold,
+                                      smoothing_, render_buffer.buffer, y,
+diff --git a/third_party/libwebrtc/modules/audio_processing/aec3/matched_filter.h b/third_party/libwebrtc/modules/audio_processing/aec3/matched_filter.h
+index 954e4784f2a..e54a393780b 100644
+--- a/third_party/libwebrtc/modules/audio_processing/aec3/matched_filter.h
++++ b/third_party/libwebrtc/modules/audio_processing/aec3/matched_filter.h
+@@ -41,7 +41,7 @@ void MatchedFilterCore_NEON(size_t x_start_index,
+ 
+ #endif
+ 
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ 
+ // Filter core for the matched filter that is optimized for SSE2.
+ void MatchedFilterCore_SSE2(size_t x_start_index,
+diff --git a/third_party/libwebrtc/modules/audio_processing/aec3/vector_math.h b/third_party/libwebrtc/modules/audio_processing/aec3/vector_math.h
+index e4d1381ae17..1e55e6f2a06 100644
+--- a/third_party/libwebrtc/modules/audio_processing/aec3/vector_math.h
++++ b/third_party/libwebrtc/modules/audio_processing/aec3/vector_math.h
+@@ -11,13 +11,13 @@
+ #ifndef MODULES_AUDIO_PROCESSING_AEC3_VECTOR_MATH_H_
+ #define MODULES_AUDIO_PROCESSING_AEC3_VECTOR_MATH_H_
+ 
+-// Defines WEBRTC_ARCH_X86_FAMILY, used below.
++// Defines WEBRTC_ARCH_X86_64, used below.
+ #include "rtc_base/system/arch.h"
+ 
+ #if defined(WEBRTC_HAS_NEON)
+ #include <arm_neon.h>
+ #endif
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ #include <emmintrin.h>
+ #endif
+ #include <math.h>
+@@ -43,7 +43,7 @@ class VectorMath {
+   void SqrtAVX2(rtc::ArrayView<float> x);
+   void Sqrt(rtc::ArrayView<float> x) {
+     switch (optimization_) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+       case Aec3Optimization::kSse2: {
+         const int x_size = static_cast<int>(x.size());
+         const int vector_limit = x_size >> 2;
+@@ -123,7 +123,7 @@ class VectorMath {
+     RTC_DCHECK_EQ(z.size(), x.size());
+     RTC_DCHECK_EQ(z.size(), y.size());
+     switch (optimization_) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+       case Aec3Optimization::kSse2: {
+         const int x_size = static_cast<int>(x.size());
+         const int vector_limit = x_size >> 2;
+@@ -173,7 +173,7 @@ class VectorMath {
+   void Accumulate(rtc::ArrayView<const float> x, rtc::ArrayView<float> z) {
+     RTC_DCHECK_EQ(z.size(), x.size());
+     switch (optimization_) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+       case Aec3Optimization::kSse2: {
+         const int x_size = static_cast<int>(x.size());
+         const int vector_limit = x_size >> 2;
+diff --git a/third_party/libwebrtc/modules/audio_processing/agc2/rnn_vad/rnn.cc b/third_party/libwebrtc/modules/audio_processing/agc2/rnn_vad/rnn.cc
+index 55a51ffa436..718c1874179 100644
+--- a/third_party/libwebrtc/modules/audio_processing/agc2/rnn_vad/rnn.cc
++++ b/third_party/libwebrtc/modules/audio_processing/agc2/rnn_vad/rnn.cc
+@@ -10,13 +10,13 @@
+ 
+ #include "modules/audio_processing/agc2/rnn_vad/rnn.h"
+ 
+-// Defines WEBRTC_ARCH_X86_FAMILY, used below.
++// Defines WEBRTC_ARCH_X86_64, used below.
+ #include "rtc_base/system/arch.h"
+ 
+ #if defined(WEBRTC_HAS_NEON)
+ #include <arm_neon.h>
+ #endif
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ #include <emmintrin.h>
+ #endif
+ #include <algorithm>
+@@ -227,7 +227,7 @@ void ComputeFullyConnectedLayerOutput(
+   }
+ }
+ 
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ // Fully connected layer SSE2 implementation.
+ void ComputeFullyConnectedLayerOutputSse2(
+     size_t input_size,
+@@ -295,7 +295,7 @@ rtc::ArrayView<const float> FullyConnectedLayer::GetOutput() const {
+ 
+ void FullyConnectedLayer::ComputeOutput(rtc::ArrayView<const float> input) {
+   switch (optimization_) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+     case Optimization::kSse2:
+       ComputeFullyConnectedLayerOutputSse2(input_size_, output_size_, input,
+                                            bias_, weights_,
+@@ -355,7 +355,7 @@ void GatedRecurrentLayer::Reset() {
+ 
+ void GatedRecurrentLayer::ComputeOutput(rtc::ArrayView<const float> input) {
+   switch (optimization_) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+     case Optimization::kSse2:
+       // TODO(bugs.chromium.org/10480): Handle Optimization::kSse2.
+       ComputeGruLayerOutput(input_size_, output_size_, input, weights_,
+diff --git a/third_party/libwebrtc/third_party/pffft/BUILD.gn b/third_party/libwebrtc/third_party/pffft/BUILD.gn
+index c243f3491af..3e54103cb4c 100644
+--- a/third_party/libwebrtc/third_party/pffft/BUILD.gn
++++ b/third_party/libwebrtc/third_party/pffft/BUILD.gn
+@@ -7,8 +7,10 @@ import("//build/config/arm.gni")
+ #import("//testing/test.gni")
+ 
+ config("common_config") {
++  defines = []
++
+   if (is_win) {
+-    defines = [
++    defines += [
+       # Required to use math constants from math.h.
+       "_USE_MATH_DEFINES",
+     ]
+@@ -17,8 +19,8 @@ config("common_config") {
+   # PFFFT doesn't support SIMD on some cpus, so build a scalar version.
+   if ((target_cpu == "arm" && !arm_use_neon) || target_cpu == "mipsel" ||
+       target_cpu == "mips64el" || target_cpu == "ppc64" ||
+-      target_cpu == "s390x") {
+-    defines = [ "PFFFT_SIMD_DISABLE" ]
++      target_cpu == "s390x" || target_cpu == "x86") {
++    defines += [ "PFFFT_SIMD_DISABLE" ]
+   }
+ }
+ 
+-- 
+2.36.1
+
