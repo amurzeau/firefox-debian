@@ -293,7 +293,17 @@ theme-disabled-heading = Óvirkt
 theme-disabled-heading2 = Vistuð þemu
 theme-monochromatic-heading = Litasett
 theme-monochromatic-subheading = Lífleg ný litasett frá { -brand-product-name }. Í boði í takmarkaðan tíma.
+# Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
 theme-colorways-button = Prófaðu litasettin
+colorway-collection-independent-voices-subheading = Láttu { -brand-short-name } vera aðeins meira eins og þú.
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires.
+colorway-collection-expiry-date-span = Rennur út { DATETIME($expiryDate, month: "long", day: "numeric") }
+# Refers to the button label for the colorways card when a user has a colorway theme enabled.
+theme-colorways-button-colorway-enabled = Breyta litasetti
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
+colorway-collection-expiry-label = Rennur út { DATETIME($expiryDate, month: "long", day: "numeric") }
 plugin-enabled-heading = Virkt
 plugin-disabled-heading = Óvirkt
 dictionary-enabled-heading = Virkt
@@ -407,6 +417,7 @@ addon-page-options-button =
 # Variables:
 #   $version (String): application version.
 details-notification-incompatible = { $name } er ósamhæfð við { -brand-short-name } { $version }.
+details-notification-incompatible-link = Nánari upplýsingar
 details-notification-unsigned-and-disabled = Ekki tókst að staðfesta { $name } fyrir notkun í { -brand-short-name } þar af leiðandi var viðbót gerð óvirk.
 details-notification-unsigned-and-disabled-link = Ítarlegri upplýsingar
 details-notification-unsigned = Ekki tókst að staðfesta { $name } fyrir notkun í { -brand-short-name }. Farðu varlega í að halda áfram.

@@ -18,7 +18,7 @@ experimental-features-web-gpu-description2 = この新しい API は、ユーザ
 # by various online articles and is technical in nature.
 experimental-features-media-jxl =
     .label = メディア: JPEG XL
-experimental-features-media-jxl-description = この機能を有効にすると、{ -brand-short-name } が JPEG XL (JXL) 形式をサポートします。これは、従来の JPEG ファイルにロスレス変形等のサポートが追加された画像ファイル形式です。詳細は <a data-l10n-name="bugzilla">bug 1539075</a> を参照してください。
+experimental-features-media-jxl-description = この機能を有効にすると、{ -brand-short-name } が JPEG XL (JXL) 形式をサポートします。これは、従来の JPEG ファイルからロスレスで移行できる改良された画像ファイル形式です。詳細は <a data-l10n-name="bugzilla">bug 1539075</a> を参照してください。
 
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
@@ -77,3 +77,7 @@ experimental-features-ime-search-description = IME (Input Method Editor) は、�
 experimental-features-text-recognition =
     .label = 文字認識
 experimental-features-text-recognition-description = 画像内の文字を認識する機能を有効にします。
+
+experimental-features-accessibility-cache =
+    .label = アクセシビリティキャッシュ
+experimental-features-accessibility-cache-description = { -brand-short-name } のメインプロセス内のすべてのドキュメントから、すべてのアクセシビリティ情報をキャッシュとして保持します。これにより、アクセシビリティ API を利用するスクリーンリーダーおよび他のアプリケーションのパフォーマンスが向上します。

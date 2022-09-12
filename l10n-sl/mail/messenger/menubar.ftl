@@ -17,6 +17,24 @@ menu-addons-and-themes =
 
 ## Help Menu
 
+menu-help-help-title =
+    .label = Pomoč
+    .accesskey = m
+menu-help-explore-features =
+    .label = Raziščite možnosti
+    .accesskey = š
+menu-help-shortcuts =
+    .label = Bližnjice na tipkovnici
+    .accesskey = ž
+menu-help-get-involved =
+    .label = Pridružite se
+    .accesskey = u
+menu-help-donation =
+    .label = Donirajte
+    .accesskey = D
+menu-help-share-feedback =
+    .label = Sporočite ideje in povratne informacije
+    .accesskey = S
 menu-help-enter-troubleshoot-mode =
     .label = Način za odpravljanje težav …
     .accesskey = r
@@ -26,6 +44,12 @@ menu-help-exit-troubleshoot-mode =
 menu-help-more-troubleshooting-info =
     .label = Več podatkov za odpravljanje težav
     .accesskey = V
+menu-help-troubleshooting-info =
+    .label = Podatki za odpravljanje težav
+    .accesskey = a
+menu-help-about-product =
+    .label = O { -brand-short-name(sklon: "mestnik") }
+    .accesskey = O
 
 ## Mail Toolbar
 

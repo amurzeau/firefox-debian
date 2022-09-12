@@ -12,33 +12,25 @@ cfr-doorhanger-feature-heading = Рэкамендаваная функцыя
 
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Чаму я гэта бачу
-
 cfr-doorhanger-extension-cancel-button = Не зараз
     .accesskey = Н
-
 cfr-doorhanger-extension-ok-button = Дадаць
     .accesskey = Д
-
 cfr-doorhanger-extension-manage-settings-button = Кіраваць наладамі рэкамендацый
     .accesskey = ь
-
 cfr-doorhanger-extension-never-show-recommendation = Не паказваць мне гэту рэкамендацыю
     .accesskey = ы
-
 cfr-doorhanger-extension-learn-more-link = Даведацца больш
-
 # This string is used on a new line below the add-on name
 # Variables:
 #   $name (String) - Add-on author name
 cfr-doorhanger-extension-author = ад { $name }
-
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Рэкамендацыя
 cfr-doorhanger-extension-notification2 = Рэкамендацыя
     .tooltiptext = Рэкамендацыя пашырэння
     .a11y-announcement = Даступна рэкамендацыя пашырэння
-
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-feature-notification = Рэкамендацыя
@@ -87,11 +79,9 @@ cfr-protections-panel-link-text = Даведацца больш
 # This string is used by screen readers to offer a text based alternative for
 # the notification icon
 cfr-badge-reader-label-newfeature = Новая функцыя:
-
 cfr-whatsnew-button =
     .label = Што новага
     .tooltiptext = Што новага
-
 cfr-whatsnew-release-notes-link-text = Прачытаць заўвагі да выпуску
 
 ## Enhanced Tracking Protection Milestones
@@ -169,6 +159,10 @@ spotlight-total-cookie-protection-body = Поўная ахова кукаў пе
 spotlight-total-cookie-protection-expanded = { -brand-short-name } будуе плот вакол файлаў кукі, абмяжоўваючы іх толькі сайтам, на якім вы знаходзіцеся, таму трэкеры не могуць выкарыстоўваць іх, каб сачыць за вамі. З раннім доступам вы дапаможаце аптымізаваць гэту функцыю, каб мы маглі працягваць ствараць лепшае сеціва для ўсіх.
 spotlight-total-cookie-protection-primary-button = Уключыць поўную ахову кукаў
 spotlight-total-cookie-protection-secondary-button = Не зараз
+cfr-total-cookie-protection-header = Дзякуючы вам, { -brand-short-name } больш прыватны і бяспечны, чым калі-небудзь
+# "Early access" for this feature rollout means it's a "feature preview" or
+# "soft launch". Only those who received it and accepted are shown this message.
+cfr-total-cookie-protection-body = Поўная ахова кукаў – наша самая надзейная абарона прыватнасці, і цяпер гэта прадвызначаная налада для ўсіх карыстальнікаў { -brand-short-name }. Мы не змаглі б зрабіць гэта без такіх удзельнікаў ранняга доступу, як вы. Дзякуй за дапамогу ў стварэнні лепшага, больш прыватнага інтэрнэту.
 
 ## Emotive Continuous Onboarding
 

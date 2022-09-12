@@ -103,6 +103,7 @@ about-addressbook-column-label-addrbook =
 ## Card list placeholder
 ## Shown when there are no cards in the list
 
+about-addressbook-placeholder-searching = Etsitään…
 
 ## Details
 
@@ -113,6 +114,7 @@ about-addressbook-save-edit-contact-button = Tallenna
 about-addressbook-details-email-addresses-header = Sähköpostiosoitteet
 about-addressbook-details-phone-numbers-header = Puhelinnumerot
 about-addressbook-details-addresses-header = Osoitteet
+about-addressbook-details-impp-header = Pikaviestintä
 about-addressbook-details-other-info-header = Muut tiedot
 about-addressbook-entry-type-work = Työ
 about-addressbook-entry-type-home = Koti

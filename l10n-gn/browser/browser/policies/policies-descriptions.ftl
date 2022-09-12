@@ -67,7 +67,9 @@ policy-Extensions = Emboguejy, eipe’a térã ejoko jepysokue. Pe poravopyrã �
 policy-ExtensionSettings = Eñangareko opaite mba’e jepysokue ñemohendáre.
 policy-ExtensionUpdate = Embojuruja térã eipe’a ñembohekopyahu ijeheguíva jepysokue rehegua.
 policy-FirefoxHome = Emboheko Firefox ñepyrũ.
+policy-FirefoxHome2 = Emboheko { -firefox-home-brand-name }.
 policy-FlashPlugin = Emoneĩ térã embotove mboguejyrã’i Flash jepuru.
+policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Emohembiapo ñeikundahatee ñanduti rendápe ehekarangue jeikeha peteĩ ñe’ẽmente ojehaíva kundaharape rendápe.
 policy-Handlers = Emboheko tembipuru’i ñangarekoha ypykuegua.
 policy-HardwareAcceleration = Japúramo, eipe’a hardware mbopya’eha.
 # “lock” means that the user won’t be able to change this setting

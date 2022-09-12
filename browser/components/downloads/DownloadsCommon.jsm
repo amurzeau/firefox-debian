@@ -442,7 +442,9 @@ var DownloadsCommon = {
    * Copies the source URI of the given Download object to the clipboard.
    */
   copyDownloadLink(download) {
-    gClipboardHelper.copyString(download.source.url);
+    gClipboardHelper.copyString(
+      download.source.originalUrl || download.source.url
+    );
   },
 
   /**
@@ -992,23 +994,26 @@ DownloadsDataCtor.prototype = {
     }
 
     let shouldOpenDownloadsPanel =
-      openDownloadsListOnStart &&
       aType == "start" &&
       Services.prefs.getBoolPref(
         "browser.download.improvements_to_download_panel"
       ) &&
       DownloadsCommon.summarizeDownloads(this._downloads).numDownloading <= 1 &&
-      browserWin == Services.focus.activeWindow &&
       gAlwaysOpenPanel;
 
+    // For new downloads after the first one, don't show the panel
+    // automatically, but provide a visible notification in the topmost browser
+    // window, if the status indicator is already visible. Also ensure that if
+    // openDownloadsListOnStart = false is passed, we always skip opening the
+    // panel. That's because this will only be passed if the download is started
+    // without user interaction or if a dialog was previously opened in the
+    // process of the download (e.g. unknown content type dialog).
     if (
-      this.panelHasShownBefore &&
       aType != "error" &&
-      !shouldOpenDownloadsPanel
+      ((this.panelHasShownBefore && !shouldOpenDownloadsPanel) ||
+        !openDownloadsListOnStart ||
+        browserWin != Services.focus.activeWindow)
     ) {
-      // For new downloads after the first one, don't show the panel
-      // automatically, but provide a visible notification in the topmost
-      // browser window, if the status indicator is already visible.
       DownloadsCommon.log("Showing new download notification.");
       browserWin.DownloadsIndicatorView.showEventNotification(aType);
       return;

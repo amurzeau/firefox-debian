@@ -38,11 +38,45 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Поверително разглеждане)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Поверително разглеждане)
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-window-titles =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } поверително разглеждане
+    .data-content-title-default = { $content-title } — { -brand-full-name }
+    .data-content-title-private = { $content-title } — { -brand-full-name } поверително разглеждане
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox — (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac-window-titles =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } — поверително разглеждане
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } — поверителен разглеждане
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
 # `browser-main-window` and `browser-main-window-mac`.
 browser-main-window-title = { -brand-full-name }
+private-browsing-shortcut-text = { -brand-short-name } поверително разглеждане
 
 ##
 
@@ -122,6 +156,7 @@ urlbar-tabtosearch-onboard = Изберете бърз клавиш, за да �
 urlbar-search-mode-bookmarks = Отметки
 urlbar-search-mode-tabs = Раздели
 urlbar-search-mode-history = История
+urlbar-search-mode-actions = Действия
 
 ##
 
@@ -164,6 +199,12 @@ page-action-manage-extension =
     .label = Управление на добавката…
 page-action-remove-extension =
     .label = Премахване на разширението
+page-action-manage-extension2 =
+    .label = Управление на разширението…
+    .accesskey = р
+page-action-remove-extension2 =
+    .label = Премахване на разширението
+    .accesskey = р
 
 ## Auto-hide Context Menu
 
@@ -222,6 +263,58 @@ search-one-offs-tabs =
     .tooltiptext = Раздели ({ $restrict })
 search-one-offs-history =
     .tooltiptext = История ({ $restrict })
+search-one-offs-actions =
+    .tooltiptext = Действия ({ $restrict })
+
+## QuickActions are shown in the urlbar as the user types a matching string
+
+
+## QuickActions are shown in the urlbar as the user types a matching string
+## The -cmd- strings are comma separated list of keywords that will match
+## the action.
+
+# Opens the about:addons page
+quickactions-addons = Преглед на добавките
+quickactions-cmd-addons = добавки, разширения, теми
+# Opens the bookmarks library window
+quickactions-bookmarks = Преглед на отметките
+quickactions-cmd-bookmarks = отметки
+# Opens a SUMO article explaining how to clear history
+quickactions-clearhistory = Изчистване на историята
+quickactions-cmd-clearhistory = изчистване на историята
+# Opens about:downloads page
+quickactions-downloads = Отваряне на изтеглянията
+quickactions-cmd-downloads = изтегляния
+# Opens the devtools web inspector
+quickactions-inspector = Изследовател на страницата
+quickactions-cmd-inspector = инспектор, изследовател, изследвач, инструменти за разработка, инструменти на разработчика
+# Opens about:logins
+quickactions-logins = Преглед на регистрациите
+quickactions-cmd-logins = регистрации, пароли, вход, профили
+# Opens the print dialog
+quickactions-print = Отпечатване
+quickactions-cmd-print = печат, отпечатване
+# Opens a new private browsing window
+quickactions-private = Отваряне на поверителен прозорец
+quickactions-cmd-private = поверително разглеждане
+# Opens a SUMO article explaining how to refresh
+quickactions-refresh = Освежаване на { -brand-short-name }
+quickactions-cmd-refresh = освежаване, опресняване
+# Restarts the browser
+quickactions-restart = Рестартиране на { -brand-short-name }
+quickactions-cmd-restart = рестарт, рестартиране
+# Opens the screenshot tool
+quickactions-screenshot2 = Снимка на екрана
+quickactions-cmd-screenshot = снимка на екрана
+# Opens about:preferences
+quickactions-settings = Отваряне на настройките
+quickactions-cmd-settings = настройки
+# Opens a SUMO article explaining how to update the browser
+quickactions-update = Обновяване на { -brand-short-name }
+quickactions-cmd-update = обновяване
+# Opens the view-source UI with current pages source
+quickactions-viewsource = Преглед на изходния код
+quickactions-cmd-viewsource = преглед на изходния код, изходен код
 
 ## Bookmark Panel
 
@@ -435,6 +528,10 @@ urlbar-placeholder-search-mode-other-history =
 urlbar-placeholder-search-mode-other-tabs =
     .placeholder = Въведете търсене
     .aria-label = Търсене в раздели
+# This placeholder is used when searching quick actions.
+urlbar-placeholder-search-mode-other-actions =
+    .placeholder = Въведете търсене
+    .aria-label = Действия при търсене
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -510,6 +607,7 @@ urlbar-result-action-calculator-result = = { $result }
 urlbar-result-action-search-bookmarks = Търсене в отметките
 urlbar-result-action-search-history = Търсене в историята
 urlbar-result-action-search-tabs = Търсене на раздели
+urlbar-result-action-search-actions = Действия при търсене
 
 ## Labels shown above groups of urlbar results
 
@@ -523,6 +621,9 @@ urlbar-group-firefox-suggest =
 #  $engine (String): the name of the search engine providing the suggestions
 urlbar-group-search-suggestions =
     .label = Предложения от { $engine }
+# A label shown above Quick Actions in the urlbar results.
+urlbar-group-quickactions =
+    .label = Бързи действия
 
 ## Full Screen and Pointer Lock UI
 
@@ -728,6 +829,12 @@ picture-in-picture-hide-toggle =
 ## Since the default position for PiP controls does not change for RTL layout,
 ## right-to-left languages should use "Left" and "Right" as in the English strings,
 
+picture-in-picture-move-toggle-right =
+    .label = Преместване на бутона за „Картина в картината“ отдясно
+    .accesskey = д
+picture-in-picture-move-toggle-left =
+    .label = Преместване на бутона за „Картина в картината“ отляво
+    .accesskey = л
 
 ##
 
@@ -781,3 +888,11 @@ data-reporting-notification-message = { -brand-short-name } автоматичн
 data-reporting-notification-button =
     .label = Изберете какво споделяте
     .accesskey = И
+# Label for the indicator shown in the private browsing window titlebar.
+private-browsing-indicator-label = Поверително разглеждане
+
+## Unified extensions (toolbar) button
+
+unified-extensions-button =
+    .label = Разширения
+    .tooltiptext = Разширения

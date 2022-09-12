@@ -1438,6 +1438,11 @@ DownloadSource.prototype = {
   url: null,
 
   /**
+   * String containing the original URL for the download source.
+   */
+  originalUrl: null,
+
+  /**
    * Indicates whether the download originated from a private window.  This
    * determines the context of the network request that is made to retrieve the
    * resource.
@@ -1598,6 +1603,9 @@ DownloadSource.fromSerializable = function(aSerializable) {
         source[propName] = aSerializable[propName];
       }
     }
+    if ("originalUrl" in aSerializable) {
+      source.originalUrl = aSerializable.originalUrl;
+    }
     if ("referrerInfo" in aSerializable) {
       // Quick pass, pass directly nsIReferrerInfo, we don't need to serialize
       // and deserialize
@@ -1647,6 +1655,7 @@ DownloadSource.fromSerializable = function(aSerializable) {
       aSerializable,
       property =>
         property != "url" &&
+        property != "originalUrl" &&
         property != "isPrivate" &&
         property != "referrerInfo" &&
         property != "cookieJarSettings" &&
@@ -2854,6 +2863,15 @@ DownloadLegacySaver.prototype = {
     // For legacy downloads, we must update the referrerInfo at this time.
     if (aRequest instanceof Ci.nsIHttpChannel) {
       this.download.source.referrerInfo = aRequest.referrerInfo;
+    }
+
+    // Don't open the download panel when the user initiated to save a
+    // link or document.
+    if (
+      aRequest instanceof Ci.nsIChannel &&
+      aRequest.loadInfo.isUserTriggeredSave
+    ) {
+      this.download.openDownloadsListOnStart = false;
     }
 
     this.addToHistory();

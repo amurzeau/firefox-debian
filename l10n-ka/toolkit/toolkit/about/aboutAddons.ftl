@@ -237,12 +237,12 @@ discopane-intro =
     დაიცვათ პაროლები, ჩამოტვირთოთ ვიდეოები, მოიძიოთ საყიდლები, შეზღუდოთ
     მომაბეზრებელი რეკლამები, შეცვალოთ ბრაუზერის იერსახე და კიდევ უამრავი რამ.
     ეს პატარა პროგრამული ნაწილები, ხშირ შემთხვევაში, შექმნილია გარეშე პირების მიერ.
-    აქ შეგიძლია იხილით ისინი, რომელთაც { -brand-product-name } <a data-l10n-name="learn-more-trigger">გირჩევთ</a>
+    აქ მოცემულია ისინი, რომელთაც { -brand-product-name } <a data-l10n-name="learn-more-trigger">გირჩევთ</a>
     მეტი უსაფრთხოებისთვის, წარმადობისა და შესაძლებლობებისთვის.
 # Notice to make user aware that the recommendations are personalized.
 discopane-notice-recommendations =
-    შემოთავაზებების ნაწილი არის მორგებული თქვენზე. ისინი ეფუძნება თქვენ მიერ
-    დაყენებულ სხვა გაფართოებებს, პროფილის პარამეტრებსა და გამოყენების სტატისტიკას.
+    შემოთავაზებების ნაწილი მორგებულია თქვენზე. ითვალისწინებს თქვენ მიერ
+    დაყენებულ სხვა გაფართოებებს, პროფილის პარამეტრებსა და გამოყენების სიხშირეს.
 discopane-notice-learn-more = ვრცლად
 privacy-policy = პირადულობის დებულება
 # Refers to the author of an add-on, shown below the name of the add-on.
@@ -292,7 +292,17 @@ theme-disabled-heading = ამორთულია
 theme-disabled-heading2 = შენახული თემები
 theme-monochromatic-heading = შეფერილობები
 theme-monochromatic-subheading = ახალი ხასხასა შეფერილობები, რომელთაც { -brand-product-name } გთავაზობთ. ხელმისაწვდომია მცირე დროით.
+# Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
 theme-colorways-button = მოსინჯეთ ახალი შეფერილობა
+colorway-collection-independent-voices-subheading = გახადეთ { -brand-short-name } ცოტათი უფრო თქვენებური.
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires.
+colorway-collection-expiry-date-span = ბოლო ვადაა { DATETIME($expiryDate, month: "long", day: "numeric") }
+# Refers to the button label for the colorways card when a user has a colorway theme enabled.
+theme-colorways-button-colorway-enabled = შეფერილობის შეცვლა
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
+colorway-collection-expiry-label = ბოლო ვადაა { DATETIME($expiryDate, month: "long", day: "numeric") }
 plugin-enabled-heading = ჩართულია
 plugin-disabled-heading = ამორთულია
 dictionary-enabled-heading = ჩართულია
@@ -380,7 +390,7 @@ recommended-themes-heading = შემოთავაზებული თე�
 addon-sitepermissions-required = მოცემული შესაძლებლობებით აღიჭურვება <span data-l10n-name="hostname">{ $hostname }</span>:
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
-recommended-theme-1 = შემოქმედებით უნარებს ფლობთ? <a data-l10n-name="link">ააწყვეთ საკუთარი გაფორმება Firefox Color-ით.</a>
+recommended-theme-1 = შემოქმედებით უნარებს ფლობთ? <a data-l10n-name="link">საკუთარის ასაწყობად გამოიყენეთ Firefox Color.</a>
 
 ## Page headings
 
@@ -406,6 +416,7 @@ addon-page-options-button =
 # Variables:
 #   $version (String): application version.
 details-notification-incompatible = { $name } არათავსებადია { -brand-short-name } { $version } ვერსიასთან.
+details-notification-incompatible-link = ვრცლად
 details-notification-unsigned-and-disabled = ვერ დასტურდება, რომ { -brand-short-name } შეძლებს გამოიყენოს { $name }, ამიტომ გამორთულია.
 details-notification-unsigned-and-disabled-link = ვრცლად
 details-notification-unsigned = ვერ დასტურდება, რომ { -brand-short-name } შეძლებს აამუშაოს { $name }. სიფრთხილით გამოიყენეთ.

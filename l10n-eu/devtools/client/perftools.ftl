@@ -83,6 +83,8 @@ perftools-thread-render-backend =
     .title = WebRender-en RenderBackend haria
 perftools-thread-paint-worker =
     .title = Hari nagusiz kanpoko marrazketa gaituta dagoenean, marrazketa gertatzen den haria
+perftools-thread-timer =
+    .title = Denboragailuak maneiatzen dituen haria (setTimeout, setInterval, nsITimer)
 perftools-thread-style-thread =
     .title = Estiloen kalkulua hainbat haritan banatuta dago
 pref-thread-stream-trans =
@@ -99,8 +101,12 @@ perftools-thread-jvm-gecko =
     .title = Gecko JVM hari nagusia
 perftools-thread-jvm-nimbus =
     .title = Nimbus esperimentuen SDKren hari nagusiak
+perftools-thread-jvm-default-dispatcher =
+    .title = Kotlin azpirrutinen liburutegirako dispatcher lehenetsia
 perftools-thread-jvm-glean =
     .title = Glean telemetria SDKren hari nagusiak
+perftools-thread-jvm-arch-disk-io =
+    .title = Kotlin azpirrutinen liburutegirako IO dispatcher-a
 perftools-thread-jvm-pool =
     .title = Izenik gabeko hari multzoan sortutako hariak
 
@@ -111,16 +117,9 @@ perftools-tools-threads-input-label =
     .title = Hari-izen hauek komaz bereizitako zerrenda bat dira eta harien analisia gaitzeko erabiltzen da analizatzailean. Haria kontuan har dadin, nahikoa da hari-izena erdizka bat etortzea; zuriuneak errespetatu egiten dira.
 
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
-## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
-## preferences are true.
-
-
-## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## devtools.performance.new-panel-onboarding preference is true.
 
 perftools-onboarding-message = <b>Berria</b>: { -profiler-brand-name } orain garatzaile-tresnen zati da. Eskuratu tresna boteretsu berri honi buruzko <a>argibide gehiago</a>.
-# `options-context-advanced-settings` is defined in toolbox-options.ftl
-perftools-onboarding-reenable-old-panel = (Aldi baterako, jatorrizko Errendimendua panela ere erabil dezakezu <a>{ options-context-advanced-settings }</a> bitartez)
 perftools-onboarding-close-button =
     .aria-label = Itxi aurkezpeneko mezua
 
@@ -141,6 +140,9 @@ perftools-presets-media-label = Multimedia
 perftools-presets-media-description2 = { -brand-shorter-name }(r)en audio eta bideo programa-erroreak ikertzeko aurrezarpena.
 perftools-presets-networking-label = Sarea
 perftools-presets-networking-description = { -brand-shorter-name }(r)en sareko programa-erroreak ikertzeko aurrezarpena.
+# "Power" is used in the sense of energy (electricity used by the computer).
+perftools-presets-power-label = Energia
+perftools-presets-power-description = { -brand-shorter-name }(r)en energia-erabilpenaren arazoak ikertzeko aurrezarpena, eragin negatibo txikiarekin.
 perftools-presets-custom-label = Pertsonalizatua
 
 ##

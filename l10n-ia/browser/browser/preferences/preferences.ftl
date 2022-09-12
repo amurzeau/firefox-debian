@@ -184,12 +184,15 @@ preferences-web-appearance-header = Apparentia del sito web
 preferences-web-appearance-description = Alcun sitos web adapta lor schema de color in base a tu preferentias. Elige que schema de color tu amarea usar pro ille sitos.
 preferences-web-appearance-choice-browser = Thema de { -brand-short-name }
 preferences-web-appearance-choice-system = Thema del systema
+preferences-web-appearance-choice-auto = Automatic
 preferences-web-appearance-choice-light = Clar
 preferences-web-appearance-choice-dark = Obscur
 preferences-web-appearance-choice-tooltip-browser =
     .title = Concorda tu parametros de thema de { -brand-short-name } pro le fundos e contento del sito web.
 preferences-web-appearance-choice-tooltip-system =
     .title = Concorda tu parametros de systema pro fundos e contento del sito web.
+preferences-web-appearance-choice-tooltip-auto =
+    .title = Cambiar automaticamente fundos e contento del sito web in base a tu parametros de systema e al thema de { -brand-short-name }.
 preferences-web-appearance-choice-tooltip-light =
     .title = Usa un apparentia clar pro fundos e contento del sito web.
 preferences-web-appearance-choice-tooltip-dark =
@@ -198,6 +201,8 @@ preferences-web-appearance-choice-input-browser =
     .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
 preferences-web-appearance-choice-input-system =
     .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-auto =
+    .aria-description = { preferences-web-appearance-choice-tooltip-auto.title }
 preferences-web-appearance-choice-input-light =
     .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
 preferences-web-appearance-choice-input-dark =
@@ -490,6 +495,8 @@ home-restore-defaults =
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
     .label = Pagina initial de Firefox (predefinite)
+home-mode-choice-default-fx =
+    .label = { -firefox-home-brand-name } (predefinite)
 home-mode-choice-custom =
     .label = URLs personalisate...
 home-mode-choice-blank =
@@ -515,6 +522,8 @@ choose-bookmark =
 
 home-prefs-content-header = Pagina initial de Firefox
 home-prefs-content-description = Elige qual contento tu desira pro tu pagina initial de Firefox.
+home-prefs-content-header2 = Contentos de { -firefox-home-brand-name }
+home-prefs-content-description2 = Elige qual contento tu vole sur tu schermo { -firefox-home-brand-name }.
 home-prefs-search-header =
     .label = Recerca del Web
 home-prefs-shortcuts-header =
@@ -535,6 +544,8 @@ home-prefs-recommended-by-description-new = Contento exceptional a cura de { $pr
 home-prefs-recommended-by-learn-more = Como illo labora
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Articulos sponsorisate
+home-prefs-recommended-by-option-recent-saves =
+    .label = Monstrar salvamentos recente
 home-prefs-highlights-option-visited-pages =
     .label = Paginas visitate
 home-prefs-highlights-options-bookmarks =
@@ -927,7 +938,11 @@ addressbar-locbar-topsites-option =
 addressbar-locbar-engines-option =
     .label = Motores de recerca
     .accesskey = o
+addressbar-locbar-quickactions-option =
+    .label = Actiones rapide
+    .accesskey = r
 addressbar-suggestions-settings = Cambiar le preferentias pro le suggestiones del motor de recerca
+addressbar-quickactions-learn-more = Pro saper plus
 
 ## Privacy Section - Content Blocking
 
@@ -958,6 +973,7 @@ content-blocking-etp-custom-desc = Elige qual traciatores e scripts blocar.
 content-blocking-etp-blocking-desc = { -brand-short-name } bloca le sequente:
 content-blocking-private-windows = Contento de traciamento in fenestras private
 content-blocking-cross-site-cookies-in-all-windows = Cookies inter sitos in tote le fenestras (include cookies traciator)
+content-blocking-cross-site-cookies-in-all-windows2 = Cookies inter-sitos in tote le fenestras
 content-blocking-cross-site-tracking-cookies = Cookies de traciamento inter sitos
 content-blocking-all-cross-site-cookies-private-windows = Cookies inter sitos in fenestras private
 content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies de traciamento inter sitos, e isolar le cookies restante
@@ -976,6 +992,7 @@ content-blocking-etp-standard-tcp-rollout-checkbox =
 # "Contains" here means "isolates", "limits".
 content-blocking-etp-standard-tcp-rollout-description = Le protection total contra le cookies contine le cookies del sito ubi tu es, assi le traciatores non pote sequer te inter le sitos.
 content-blocking-etp-standard-tcp-rollout-learn-more = Pro saper plus
+content-blocking-etp-standard-tcp-title = Include Protection total del cookies, nostre plus potente functionalitate de confidentialitate de unquam
 content-blocking-warning-title = Attention!
 content-blocking-and-isolating-etp-warning-description-2 = Iste parametro pote causar alcun sitos web a non monstrar contento o non pote functionar correctemente. Si un sito pare corrupte, prova disactivar protection de traciamento pro ille sito pote cargar tote le contento.
 content-blocking-warning-learn-how = Apprende como
@@ -1083,6 +1100,12 @@ addon-recommendations-link = Saper plus
 collection-health-report-disabled = Le reporto de datos es inactive pro iste configuration de compilation
 collection-backlogged-crash-reports-with-link = Permitter que { -brand-short-name } invia in tu nomine le reportos accumulate de crash <a data-l10n-name="crash-reports-link">saper plus</a>
     .accesskey = P
+privacy-segmentation-section-header = Nove functionalitates que meliora tu navigation
+privacy-segmentation-section-description = Quando nos offere functionalitates que usa tu datos pro dar te un experientia tu proprie:
+privacy-segmentation-radio-off =
+    .label = Usar recommendationes de { -brand-product-name }
+privacy-segmentation-radio-on =
+    .label = Monstrar informationes detaliate
 
 ## Privacy Section - Security
 ##

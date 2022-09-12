@@ -292,7 +292,17 @@ theme-disabled-heading = Utskeakele
 theme-disabled-heading2 = Bewarre tema’s
 theme-monochromatic-heading = Kleurstellingen
 theme-monochromatic-subheading = Libbene nije kleuren fan { -brand-product-name }. Beskikber foar in beheinde tiid.
+# Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
 theme-colorways-button = Kleurstellingen probearje
+colorway-collection-independent-voices-subheading = Lit { -brand-short-name } in bytsje mear as josels fiele.
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires.
+colorway-collection-expiry-date-span = Ferrint op { DATETIME($expiryDate, month: "long", day: "numeric") }
+# Refers to the button label for the colorways card when a user has a colorway theme enabled.
+theme-colorways-button-colorway-enabled = Kleurstelling wizigje
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
+colorway-collection-expiry-label = Ferrint op { DATETIME($expiryDate, month: "long", day: "numeric") }
 plugin-enabled-heading = Ynskeakele
 plugin-disabled-heading = Utskeakele
 dictionary-enabled-heading = Ynskeakele
@@ -309,7 +319,7 @@ addon-detail-last-updated-label = Lêst bywurke
 addon-detail-homepage-label = Startside
 addon-detail-rating-label = Wurdearring
 # Message for add-ons with a staged pending update.
-install-postponed-message = Dizze útwreiding wurdt bywurke wannear { -brand-short-name } opnij start.
+install-postponed-message = Dizze útwreiding wurdt bywurke wannear’t { -brand-short-name } opnij start.
 install-postponed-button = No bywurkje
 # The average rating that the add-on has received.
 # Variables:
@@ -406,6 +416,7 @@ addon-page-options-button =
 # Variables:
 #   $version (String): application version.
 details-notification-incompatible = { $name } is ynkompatibel mei { -brand-short-name } { $version }.
+details-notification-incompatible-link = Mear ynformaasje
 details-notification-unsigned-and-disabled = { $name } koe net ferifiearre wurde foar gebrûk yn { -brand-short-name } en is útskeakele.
 details-notification-unsigned-and-disabled-link = Mear ynformaasje
 details-notification-unsigned = { $name } koe net ferifiearre wurde foar gebrûk yn { -brand-short-name }. Wês foarsichtich as jo fierdergean.

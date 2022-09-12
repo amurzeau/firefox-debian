@@ -123,9 +123,10 @@ other-action-redirect-msg =
 message-header-msg-flagged =
     .title = Starred
     .aria-label = Starred
-message-header-msg-not-flagged =
-    .title = Not starred
-    .aria-label = Not starred
+# Variables:
+# $address (String) - The email address of the recipient this picture belongs to.
+message-header-recipient-avatar =
+    .alt = Profile picture of { $address }.
 
 ## Message header cutomize panel
 
@@ -139,6 +140,16 @@ message-header-button-style-text =
     .label = Text
 message-header-button-style-icons =
     .label = Icons
+message-header-show-sender-full-address =
+    .label = Always show sender’s full address
+    .accesskey = f
+message-header-show-sender-full-address-description = The email address will be shown underneath the display name.
+message-header-show-recipient-avatar =
+    .label = Show sender’s profile picture
+    .accesskey = p
+message-header-hide-label-column =
+    .label = Hide labels column
+    .accesskey = l
 message-header-large-subject =
     .label = Large subject
     .accesskey = s
@@ -151,13 +162,6 @@ toolbar-context-menu-manage-extension =
 toolbar-context-menu-remove-extension =
     .label = Remove Extension
     .accesskey = v
-
-## Message headers
-
-message-header-address-in-address-book-icon =
-    .alt = Address is in the Address Book
-message-header-address-not-in-address-book-icon =
-    .alt = Address is not in the Address Book
 
 ## Add-on removal warning
 
@@ -215,12 +219,6 @@ spaces-context-new-window-item =
 # $tabName (String) - The name of the tab this item will switch to.
 spaces-context-switch-tab-item =
     .label = Switch to { $tabName }
-settings-context-open-settings-item =
-    .label = Open Settings
-settings-context-open-account-settings-item =
-    .label = Open Account Settings
-settings-context-open-addons-item =
-    .label = Open Add-ons and Themes
 settings-context-open-settings-item2 =
     .label = Settings
 settings-context-open-account-settings-item2 =
@@ -232,17 +230,17 @@ settings-context-open-addons-item2 =
 
 spaces-toolbar-pinned-tab-button =
     .tooltiptext = Open spaces menu
-spaces-pinned-button-menuitem-mail =
-    .label = { spaces-toolbar-button-mail.title }
-spaces-pinned-button-menuitem-address-book =
-    .label = { spaces-toolbar-button-address-book.title }
-spaces-pinned-button-menuitem-calendar =
-    .label = { spaces-toolbar-button-calendar.title }
-spaces-pinned-button-menuitem-tasks =
-    .label = { spaces-toolbar-button-tasks.title }
-spaces-pinned-button-menuitem-chat =
-    .label = { spaces-toolbar-button-chat.title }
-spaces-pinned-button-menuitem-settings =
+spaces-pinned-button-menuitem-mail2 =
+    .label = { spaces-toolbar-button-mail2.title }
+spaces-pinned-button-menuitem-address-book2 =
+    .label = { spaces-toolbar-button-address-book2.title }
+spaces-pinned-button-menuitem-calendar2 =
+    .label = { spaces-toolbar-button-calendar2.title }
+spaces-pinned-button-menuitem-tasks2 =
+    .label = { spaces-toolbar-button-tasks2.title }
+spaces-pinned-button-menuitem-chat2 =
+    .label = { spaces-toolbar-button-chat2.title }
+spaces-pinned-button-menuitem-settings2 =
     .label = { spaces-toolbar-button-settings2.title }
 spaces-pinned-button-menuitem-show =
     .label = { spaces-toolbar-button-show.title }

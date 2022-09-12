@@ -6,8 +6,13 @@ common-dialog-title-null = Ця сторінка повідомляє
 common-dialog-title-system = { -brand-short-name }
 # Title displayed when the origin of a web dialog is unknown.
 common-dialog-title-unknown = Невідомо
-
 common-dialog-username =
     .value = Ім'я користувача
 common-dialog-password =
     .value = Пароль
+common-dialog-copy-cmd =
+    .label = Копіювати
+    .accesskey = п
+common-dialog-select-all-cmd =
+    .label = Виділити все
+    .accesskey = с

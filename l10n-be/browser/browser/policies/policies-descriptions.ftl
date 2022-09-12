@@ -67,7 +67,9 @@ policy-Extensions = Усталёўваць, выдаляць і забараня
 policy-ExtensionSettings = Кіраваць усімі аспектамі ўсталёўкі пашырэння.
 policy-ExtensionUpdate = Уключае або выключае аўтаматычнае абнаўленне пашырэнняў.
 policy-FirefoxHome = Наладзіць хатнюю старонку Firefox.
+policy-FirefoxHome2 = Налады { -firefox-home-brand-name }.
 policy-FlashPlugin = Дазволіць або забараніць выкарыстанне плагіна Flash.
+policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Прымусовы прамы пераход па ўнутранай сетцы замест пошуку пры ўводзе аднаго слова ў адрасным радку.
 policy-Handlers = Наладзіць прадвызначаныя апрацоўшчыкі праграм.
 policy-HardwareAcceleration = Калі false, адключыць апаратнае паскарэнне.
 # “lock” means that the user won’t be able to change this setting

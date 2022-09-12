@@ -83,6 +83,8 @@ perftools-thread-render-backend =
     .title = De WebRender RenderBackend-thread
 perftools-thread-paint-worker =
     .title = As off-main-threadpainting ynskeakele is, de thread wêrop painting útfierd wurdt
+perftools-thread-timer =
+    .title = De timers foar it ôfhanneljen fan threads (setTimeout, setInterval, nsITimer)
 perftools-thread-style-thread =
     .title = Stylberekkening is opsplitst yn meardere threads
 pref-thread-stream-trans =
@@ -115,16 +117,9 @@ perftools-tools-threads-input-label =
     .title = Dizze threadnammen binne in kommaskieden list, dy’t brûkt wurdt om it profilearjen fan de threads yn de profiler mooglik te meitsjen. De namme hoecht mar in part oerien te kommen mei de threadnamme om opnommen te wurden. Gefoelich foar wytromte.
 
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
-## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
-## preferences are true.
-
-
-## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## devtools.performance.new-panel-onboarding preference is true.
 
 perftools-onboarding-message = <b>Nij</b>: { -profiler-brand-name } is no yntegrearre yn de Untwikkelershelpmiddelen. <a>Mear ynfo</a> oer dit krêftige nije helpmiddel.
-# `options-context-advanced-settings` is defined in toolbox-options.ftl
-perftools-onboarding-reenable-old-panel = (Jo kinne tydlik it oarspronklike paniel Prestaasjes benaderje fia <a>{ options-context-advanced-settings }</a>)
 perftools-onboarding-close-button =
     .aria-label = It wolkomstberjocht slute
 
@@ -145,6 +140,9 @@ perftools-presets-media-label = Media
 perftools-presets-media-description2 = Foarynstelling foar it ûndersykjen fan audio- en fideobugs yn { -brand-shorter-name }.
 perftools-presets-networking-label = Netwurk
 perftools-presets-networking-description = Foarynstelling foar it ûndersykjen fan netwerkbugs yn { -brand-shorter-name }.
+# "Power" is used in the sense of energy (electricity used by the computer).
+perftools-presets-power-label = Fermogen
+perftools-presets-power-description = Foarynstelling foar it ûndersykjen fan stroomferbrûkbugs yn { -brand-shorter-name }, mei lege overhead.
 perftools-presets-custom-label = Oanpast
 
 ##

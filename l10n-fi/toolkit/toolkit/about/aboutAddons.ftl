@@ -286,6 +286,13 @@ theme-disabled-heading = Ei käytössä
 theme-disabled-heading2 = Tallennetut teemat
 theme-monochromatic-heading = Väriteemat
 theme-monochromatic-subheading = Eloisat uudet väriteemat { -brand-product-name }ilta. Saatavilla rajoitetun ajan.
+# Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
+theme-colorways-button = Kokeile väriteemoja
+# Refers to the button label for the colorways card when a user has a colorway theme enabled.
+theme-colorways-button-colorway-enabled = Vaihda väriteemaa
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
+colorway-collection-expiry-label = Vanhenee { DATETIME($expiryDate, month: "long", day: "numeric") }
 plugin-enabled-heading = Käytössä
 plugin-disabled-heading = Ei käytössä
 dictionary-enabled-heading = Käytössä
@@ -370,6 +377,7 @@ addon-permissions-optional = Valinnaiset käyttöoikeudet lisätoiminnoille:
 addon-permissions-learnmore = Lue lisää käyttöoikeuksista
 recommended-extensions-heading = Suositellut laajennukset
 recommended-themes-heading = Suositellut teemat
+addon-sitepermissions-required = Antaa seuraavat ominaisuudet sivustolle <span data-l10n-name="hostname">{ $hostname }</span>:
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Haluatko kokeilla itse? <a data-l10n-name="link">Voit luoda oman teeman Firefox Color -ohjelmalla.</a>
@@ -398,6 +406,7 @@ addon-page-options-button =
 # Variables:
 #   $version (String): application version.
 details-notification-incompatible = Lisäosa { $name } on epäyhteensopiva { -brand-short-name }in version { $version } kanssa.
+details-notification-incompatible-link = Lisätietoja
 details-notification-unsigned-and-disabled = Lisäosaa { $name } ei ole varmennettu käytettäväksi { -brand-short-name }issa ja on otettu pois päältä.
 details-notification-unsigned-and-disabled-link = Lisätietoja
 details-notification-unsigned = Lisäosaa { $name } ei ole varmennettu käytettäväksi { -brand-short-name }issa. Ole varovainen.

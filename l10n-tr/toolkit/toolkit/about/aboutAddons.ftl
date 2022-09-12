@@ -287,7 +287,17 @@ theme-disabled-heading = Devre dışı
 theme-disabled-heading2 = Kayıtlı temalar
 theme-monochromatic-heading = Renk kuşakları
 theme-monochromatic-subheading = { -brand-product-name } tarayıcınızdan yepyeni renk kuşakları. Sadece kısıtlı bir süre için.
+# Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
 theme-colorways-button = Renk kuşaklarını deneyin
+colorway-collection-independent-voices-subheading = { -brand-short-name } kişiliğinizi yansıtsın.
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires.
+colorway-collection-expiry-date-span = Son kullanma tarihi: { DATETIME($expiryDate, month: "long", day: "numeric") }
+# Refers to the button label for the colorways card when a user has a colorway theme enabled.
+theme-colorways-button-colorway-enabled = Renk kuşağını değiştir
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
+colorway-collection-expiry-label = Son kullanma tarihi: { DATETIME($expiryDate, month: "long", day: "numeric") }
 plugin-enabled-heading = Etkin
 plugin-disabled-heading = Devre dışı
 dictionary-enabled-heading = Etkin
@@ -401,6 +411,7 @@ addon-page-options-button =
 # Variables:
 #   $version (String): application version.
 details-notification-incompatible = { $name } eklentisi { -brand-short-name } { $version } ile uyumsuz.
+details-notification-incompatible-link = Daha fazla bilgi
 details-notification-unsigned-and-disabled = { $name } { -brand-short-name } üzerinde kullanım için doğrulanamadı ve etkisizleştirildi.
 details-notification-unsigned-and-disabled-link = Daha fazla bilgi
 details-notification-unsigned = { $name } { -brand-short-name } üzerinde kullanım için doğrulanamadı. Lütfen dikkatli olun.

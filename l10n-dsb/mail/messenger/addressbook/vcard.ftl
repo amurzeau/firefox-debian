@@ -63,8 +63,13 @@ vcard-tz-add = Casowu conu pśidaś
 # IMPP vCard field
 
 vcard-impp-header = Chatowe konta
+vcard-impp2-header = Pósrědnjanje powěsćow ned
 vcard-impp-add = Chatowe konto pśidaś
 vcard-impp-label = Chatowe konto
+vcard-impp-select = Protokol
+vcard-impp-option-other = Druge
+vcard-impp-input-label = URI
+vcard-impp-input-title = URI za pósrědnjanje powěsćow ned
 
 # BDAY and ANNIVERSARY vCard field
 
@@ -82,8 +87,6 @@ vcard-adr-header = Adrese
 vcard-adr-add = Adresu pśidaś
 vcard-adr-label = Adresa
 vcard-adr-delivery-label = Librowański etiket
-vcard-adr-pobox = Postowy fach
-vcard-adr-ext = Rozšyrjona adresa
 vcard-adr-street = Drogowa adresa
 # Or "Locality"
 vcard-adr-locality = Město
@@ -105,3 +108,8 @@ vcard-org-add = Organizaciske kakosći pśidaś
 vcard-org-title = Titel
 vcard-org-role = Rola
 vcard-org-org = Organizacija
+
+# Custom properties
+
+vcard-custom-header = Swójske kakosći
+vcard-custom-add = Swójske kakosći pśidaś

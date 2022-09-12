@@ -4,6 +4,10 @@
 
 e2e-intro-description = Şifrelenmiş veya dijital olarak imzalanmış iletiler göndermek için OpenPGP veya S/MIME gibi bir şifreleme teknolojisini yapılandırmanız gerekir.
 e2e-intro-description-more = OpenPGP kullanımını etkinleştirmek için kişisel anahtarınızı veya S/MIME kullanımını etkinleştirmek için kişisel sertifikanızı seçin. Kişisel anahtar veya sertifikanın gizli anahtarına da sahip olmalısınız.
+e2e-sign-message =
+    .label = Şifrelenmemiş iletileri imzala
+    .accesskey = f
+e2e-enable-description = İstediğiniz iletiler için şifrelemeyi devre dışı bırakabileceksiniz.
 e2e-advanced-section = Gelişmiş ayarlar
 openpgp-key-user-id-label = Hesap / Kullanıcı kimliği
 openpgp-keygen-title-label =
@@ -209,6 +213,7 @@ openpgp-key-man-select-all-key =
 openpgp-key-man-key-details-key =
     .key = I
 openpgp-ign-addr-intro = Aşağıdaki seçili e-posta adresleri için bu anahtarı kullanmayı kabul ediyorsunuz:
+openpgp-key-details-doc-title = Anahtar Özellikleri
 openpgp-key-details-signatures-tab =
     .label = Sertifikalar
 openpgp-key-details-structure-tab =
@@ -462,6 +467,7 @@ msg-compose-button-send = &İletiyi gönder
 msg-compose-details-button-label = Ayrıntılar…
 msg-compose-details-button-access-key = n
 send-aborted = Gönderme işlemi iptal edildi.
+key-not-trusted = ‘{ $key }’ anahtarı için güven yetersiz
 key-not-found = '{ $key }' anahtarı bulunamadı
 key-revoked = '{ $key }' anahtarı iptal edildi
 key-expired = '{ $key }' anahtarının süresi doldu

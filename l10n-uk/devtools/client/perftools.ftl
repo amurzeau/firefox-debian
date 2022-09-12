@@ -30,7 +30,7 @@ perftools-description-intro =
     Записи запускають <a>profiler.firefox.com</a> у новій вкладці. Усі дані зберігаються
     локально, але ви можете вивантажити їх для оприлюднення.
 perftools-description-local-build =
-    Якщо ви профілюєте збірку, яку ви склали власноруч на цьому
+    Якщо ви профілюєте збірку, яку склали власноруч на цьому
     комп'ютері, додайте objdir своєї збірки до списку внизу,
     щоб можна було виявляти інформацію про символи.
 
@@ -83,6 +83,8 @@ perftools-thread-render-backend =
     .title = Потік WebRender RenderBackend
 perftools-thread-paint-worker =
     .title = Коли увімкнено розфарбування off-main-thread, потік, на якому відбувається фарбування
+perftools-thread-timer =
+    .title = Таймери обробки потоків (setTimeout, setInterval, nsITimer)
 perftools-thread-style-thread =
     .title = Обчислення стилів розділено на декілька потоків
 pref-thread-stream-trans =
@@ -115,16 +117,9 @@ perftools-tools-threads-input-label =
     .title = Назви потоків є розділеним комами списком, що використовується для увімкнення профілювання потоків у Profiler. Для включення, назва повинна мати лише частковий збіг з назвою потоку. Вони чутливі до пробілів.
 
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
-## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
-## preferences are true.
-
-
-## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## devtools.performance.new-panel-onboarding preference is true.
 
 perftools-onboarding-message = <b>Нове</b>: { -profiler-brand-name } тепер вбудовано в Інструменти розробника. <a>Дізнайтеся докладніше</a> про цей потужний новий інструмент.
-# `options-context-advanced-settings` is defined in toolbox-options.ftl
-perftools-onboarding-reenable-old-panel = (Впродовж обмеженого часу ви можете отримати доступ до оригінальної панелі швидкодії через <a>{ options-context-advanced-settings }</a>)
 perftools-onboarding-close-button =
     .aria-label = Закрити вітальне повідомлення
 
@@ -145,6 +140,9 @@ perftools-presets-media-label = Медіа
 perftools-presets-media-description2 = Налаштування для виявлення помилок аудіо та відео в { -brand-shorter-name }.
 perftools-presets-networking-label = Мережа
 perftools-presets-networking-description = Налаштування для виявлення помилок мережі в { -brand-shorter-name }.
+# "Power" is used in the sense of energy (electricity used by the computer).
+perftools-presets-power-label = Потужність
+perftools-presets-power-description = Налаштування для виявлення помилок використання потужності { -brand-shorter-name } із низьким накладанням.
 perftools-presets-custom-label = Власні
 
 ##

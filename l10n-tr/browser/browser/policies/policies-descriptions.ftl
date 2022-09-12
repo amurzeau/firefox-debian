@@ -67,7 +67,9 @@ policy-Extensions = Uzantıları yükle, kaldır veya kilitle. Yükleme seçene�
 policy-ExtensionSettings = Uzantı kurulumunun tüm yönlerini yönet.
 policy-ExtensionUpdate = Otomatik uzantı güncellemelerini aç veya kapat.
 policy-FirefoxHome = Firefox giriş sayfasını yapılandır.
+policy-FirefoxHome2 = { -firefox-home-brand-name }'i yapılandır.
 policy-FlashPlugin = Flash yan uygulama kullanımını engelle ya da kullanımına izin ver.
+policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Adres çubuğuna tek bir sözcük yazıldığında arama yapmak yerine doğrudan intranet sitesine git.
 policy-Handlers = Varsayılan uygulama işleyicilerini yapılandır.
 policy-HardwareAcceleration = false ise donanım ivmelenmesini kapat.
 # “lock” means that the user won’t be able to change this setting
@@ -113,6 +115,7 @@ policy-SecurityDevices = PKCS #11 modüllerini yükle.
 policy-ShowHomeButton = Araç çubuğunda giriş sayfası düğmesini göster.
 policy-SSLVersionMax = Maksimum SSL sürümünü ayarla.
 policy-SSLVersionMin = Minimum SSL sürümünü ayarla.
+policy-StartDownloadsInTempDirectory = İndirmeleri varsayılan indirme dizini yerine  geçici bir yerel konumda başlat.
 policy-SupportMenu = Yardım menüsüne özel bir destek menüsü öğesi ekle.
 policy-UserMessaging = Kullanıcıya belirli mesajları gösterme.
 policy-UseSystemPrintDialog = Sistem yazdırma iletişim kutusunu kullanarak yazdır.

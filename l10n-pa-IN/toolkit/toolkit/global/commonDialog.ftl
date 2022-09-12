@@ -6,8 +6,13 @@ common-dialog-title-null = ਇਹ ਸਫ਼ਾ ਕਹਿੰਦਾ ਹੈ
 common-dialog-title-system = { -brand-short-name }
 # Title displayed when the origin of a web dialog is unknown.
 common-dialog-title-unknown = ਅਣਪਛਾਤਾ
-
 common-dialog-username =
     .value = ਵਰਤੋਂਕਾਰ-ਨਾਂ
 common-dialog-password =
     .value = ਪਾਸਵਰਡ
+common-dialog-copy-cmd =
+    .label = ਕਾਪੀ ਕਰੋ
+    .accesskey = C
+common-dialog-select-all-cmd =
+    .label = ਸਭ ਚੁਣੋ
+    .accesskey = A

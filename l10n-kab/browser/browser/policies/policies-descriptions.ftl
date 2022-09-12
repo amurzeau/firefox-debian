@@ -67,7 +67,9 @@ policy-Extensions = Sebded, Kkes neƔ sewḥel isiƔzaf. Asebded yettawi URLs ne
 policy-ExtensionSettings = Sefrek meṛṛa timeẓra n usbeddi n yisiɣzaf.
 policy-ExtensionUpdate = Emed neɣ sens alqem awurman n iseɣzaf.
 policy-FirefoxHome = Swel asebter agejdan n Firefox.
+policy-FirefoxHome2 = Sbadu { -firefox-home-brand-name }.
 policy-FlashPlugin = Sireg neɣ gdel asemres n uzegrir Flash.
+policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Ḥettem srid tunigin deg usmel intranet deg wadeg n unadi n usekcem n wawal asuf ma tettaruḍ deg ufeggag n tansiwin.
 policy-Handlers = Swel imsefrak n usnas s wuem amezwer.
 policy-HardwareAcceleration = Ma ur yelli d ameɣtu, sens tasɣiwelt n warrum.
 # “lock” means that the user won’t be able to change this setting
@@ -113,6 +115,7 @@ policy-SecurityDevices = Sebded izegrar n PKCS #11.
 policy-ShowHomeButton = Sken taqeffalt n usebtar agejdan deg ufeggag n yifecka.
 policy-SSLVersionMax = Sbadu lqem afellay n SSL.
 policy-SSLVersionMin = Sbadu lqem adday n SSL.
+policy-StartDownloadsInTempDirectory = Ḥettem beddu n yisadaren deg wadig adigan askudan deg wadeg n ukaram n usader amezwer.
 policy-SupportMenu = Ad yernu anekcum udmawan ɣer wumuɣ n tallelt i uɛiwen.
 policy-UserMessaging = Ur d-skan ara kra n yiznan i useqdac.
 policy-UseSystemPrintDialog = Siggez s useqdec n udiwenni Anagraw n usiggez.

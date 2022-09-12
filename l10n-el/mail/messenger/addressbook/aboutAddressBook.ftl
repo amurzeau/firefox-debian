@@ -55,6 +55,8 @@ about-addressbook-search =
     .placeholder = Αναζήτηση σε { $name }
 about-addressbook-search-all =
     .placeholder = Αναζήτηση σε όλα τα ευρετήρια
+about-addressbook-sort-button2 =
+    .title = Επιλογές εμφάνισης λίστας
 about-addressbook-name-format-display =
     .label = Εμφανιζόμενο όνομα
 about-addressbook-name-format-firstlast =
@@ -159,11 +161,13 @@ about-addressbook-confirm-delete-contacts =
 
 about-addressbook-placeholder-empty-book = Καμία διαθέσιμη επαφή
 about-addressbook-placeholder-new-contact = Νέα επαφή
+about-addressbook-placeholder-search-only = Αυτό το ευρετήριο εμφανίζει επαφές μόνο μετά από αναζήτηση
 about-addressbook-placeholder-searching = Αναζήτηση…
 about-addressbook-placeholder-no-search-results = Δεν βρέθηκαν επαφές
 
 ## Details
 
+about-addressbook-prefer-display-name = Να προτιμηθεί η εμφάνιση ονόματος στην κεφαλίδα του μηνύματος
 about-addressbook-write-action-button = Σύνταξη
 about-addressbook-event-action-button = Εκδήλωση
 about-addressbook-search-action-button = Αναζήτηση
@@ -176,10 +180,12 @@ about-addressbook-details-email-addresses-header = Διευθύνσεις email
 about-addressbook-details-phone-numbers-header = Αριθμοί τηλεφώνου
 about-addressbook-details-addresses-header = Διευθύνσεις
 about-addressbook-details-notes-header = Σημειώσεις
+about-addressbook-details-impp-header = Άμεσα μηνύματα
 about-addressbook-details-other-info-header = Άλλες πληροφορίες
 about-addressbook-entry-type-work = Εργασία
 about-addressbook-entry-type-home = Οικία
 about-addressbook-entry-type-fax = Φαξ
+# Or "Mobile"
 about-addressbook-entry-type-cell = Κινητό
 about-addressbook-entry-type-pager = Βομβητής
 about-addressbook-entry-name-birthday = Γενέθλια

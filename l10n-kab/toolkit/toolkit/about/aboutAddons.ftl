@@ -287,6 +287,17 @@ theme-disabled-heading = Yensa
 theme-disabled-heading2 = Isental yettwaskelsen
 theme-monochromatic-heading = Fren initen
 theme-monochromatic-subheading = Afran n yiniten imaynuten i d-yettakken rruḥ seg { -brand-product-name }. Llan war talast deg yal akud.
+# Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
+theme-colorways-button = Ɛreḍ afran n yiniten
+colorway-collection-independent-voices-subheading = Err { -brand-short-name } yettak-akam acbi almi dayen.
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires.
+colorway-collection-expiry-date-span = Ad yemmet { DATETIME($expiryDate, month: "long", day: "numeric") }
+# Refers to the button label for the colorways card when a user has a colorway theme enabled.
+theme-colorways-button-colorway-enabled = Beddel afran n yiniten
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
+colorway-collection-expiry-label = Ad yemmet { DATETIME($expiryDate, month: "long", day: "numeric") }
 plugin-enabled-heading = Irmed
 plugin-disabled-heading = Yensa
 dictionary-enabled-heading = Irmed
@@ -400,6 +411,7 @@ addon-page-options-button =
 # Variables:
 #   $version (String): application version.
 details-notification-incompatible = { $name } ur imṣada ara d { -brand-short-name } { $version }.
+details-notification-incompatible-link = Ugar n telɣut
 details-notification-unsigned-and-disabled = { $name } ur iţusenqed ara i weseqdec-ines ɣef { -brand-short-name }, atan ihi irermed.
 details-notification-unsigned-and-disabled-link = Ugar n telɣut
 details-notification-unsigned = { $name } ur iţusenqed ara i weseqdec-ines ɣef { -brand-short-name }. Ɣuṛ-k.

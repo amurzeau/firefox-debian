@@ -24,7 +24,7 @@
 <!ENTITY moveToNewWindow.accesskey "j">
 <!ENTITY newVirtualFolderCmd.label "Pesquisa salva…">
 <!ENTITY newVirtualFolderCmd.accesskey "a">
-<!ENTITY newCreateEmailAccountCmd.label "Obter uma nova conta de email…">
+<!ENTITY newCreateEmailAccountCmd.label "Obter nova conta de email…">
 <!ENTITY newCreateEmailAccountCmd.accesskey "O">
 <!ENTITY newExistingEmailAccountCmd.label "Conta de email existente…">
 <!ENTITY newExistingEmailAccountCmd.accesskey "o">
@@ -188,7 +188,7 @@
 <!ENTITY sortByJunkStatusCmd.accesskey "m">
 <!ENTITY sortBySubjectCmd.label "Assunto">
 <!ENTITY sortBySubjectCmd.accesskey "s">
-<!ENTITY sortByFromCmd.label "De">
+<!ENTITY sortByFromCmd.label "Remetente">
 <!ENTITY sortByFromCmd.accesskey "D">
 <!ENTITY sortByRecipientCmd.label "Destinatário">
 <!ENTITY sortByRecipientCmd.accesskey "i">
@@ -415,7 +415,7 @@
 <!ENTITY markReadByDateCmd.label "Como lidas por data…">
 <!ENTITY markReadByDateCmd.accesskey "o">
 <!ENTITY markReadByDateCmd.key "C">
-<!ENTITY markAllReadCmd.label "Tudo como lido">
+<!ENTITY markAllReadCmd.label "Todas como lidas">
 <!ENTITY markAllReadCmd.accesskey "T">
 <!ENTITY markAllReadCmd.key "C">
 <!ENTITY markStarredCmd.label "Adicionar estrela">
