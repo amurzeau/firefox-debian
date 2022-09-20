@@ -6,8 +6,13 @@ common-dialog-title-null = מדף זה נמסר
 common-dialog-title-system = { -brand-short-name }
 # Title displayed when the origin of a web dialog is unknown.
 common-dialog-title-unknown = לא ידוע
-
 common-dialog-username =
     .value = שם משתמש
 common-dialog-password =
     .value = ססמה
+common-dialog-copy-cmd =
+    .label = העתקה
+    .accesskey = ה
+common-dialog-select-all-cmd =
+    .label = בחירת הכול
+    .accesskey = ב

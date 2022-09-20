@@ -27,6 +27,9 @@ interface nsITransfer : nsIWebProgressListener2 {
      *
      * @param aSource The source URI of the transfer. Must not be null.
      *
+     * @param aSourceOriginalURI The original URI of the transfer in case
+     *                           aSource is a blob URL. Can be null.
+     *
      * @param aTarget The target URI of the transfer. Must not be null.
      *
      * @param aDisplayName The user-readable description of the transfer.
@@ -59,9 +62,15 @@ interface nsITransfer : nsIWebProgressListener2 {
      *
      * @param aDownloadClassification Indicates wheter the download is unwanted,
      *                                should be considered dangerous or insecure. 
+     *
      * @param aReferrerInfo The Referrer this download is started with
+     *
+     * @param aOpenDownloadsListOnStart true (default) - Open downloads panel.
+     *                                  false - Only show an icon indicator.
+     *                                  This parameter is optional.
      */
     void init(in nsIURI aSource,
+              in nsIURI aSourceOriginalURI,
               in nsIURI aTarget,
               in AString aDisplayName,
               in nsIMIMEInfo aMIMEInfo,
@@ -70,7 +79,8 @@ interface nsITransfer : nsIWebProgressListener2 {
               in nsICancelable aCancelable,
               in boolean aIsPrivate,
               in long aDownloadClassification,
-              in nsIReferrerInfo aReferrerInfo);
+              in nsIReferrerInfo aReferrerInfo,
+              [optional] in boolean aOpenDownloadsListOnStart);
 
     /**
      * Same as init, but allows for passing the browsingContext
@@ -93,6 +103,7 @@ interface nsITransfer : nsIWebProgressListener2 {
                                     in boolean aIsPrivate,
                                     in long aDownloadClassification,
                                     in nsIReferrerInfo aReferrerInfo,
+                                    [optional] in boolean aOpenDownloadsListOnStart,
                                     in BrowsingContext aBrowsingContext,
                                     in boolean aHandleInternally,
                                     in nsIHttpChannel aHttpChannel);

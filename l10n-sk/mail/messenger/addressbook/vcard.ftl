@@ -63,8 +63,13 @@ vcard-tz-add = Pridať časové pásmo
 # IMPP vCard field
 
 vcard-impp-header = Účty pre konverzácie
+vcard-impp2-header = Okamžité správy
 vcard-impp-add = Pridať účet pre konverzácie
 vcard-impp-label = Účet pre konverzácie
+vcard-impp-select = Protokol
+vcard-impp-option-other = Iné
+vcard-impp-input-label = URI
+vcard-impp-input-title = URI pre okamžité správy
 
 # BDAY and ANNIVERSARY vCard field
 
@@ -82,8 +87,6 @@ vcard-adr-header = Adresy
 vcard-adr-add = Pridať adresu
 vcard-adr-label = Adresa
 vcard-adr-delivery-label = Doručovací štítok
-vcard-adr-pobox = Poštová schránka
-vcard-adr-ext = Rozšírená adresa
 vcard-adr-street = Ulica
 # Or "Locality"
 vcard-adr-locality = Mesto
@@ -105,3 +108,8 @@ vcard-org-add = Pridať pozíciu vo firme
 vcard-org-title = Titul
 vcard-org-role = Funkcia
 vcard-org-org = Organizácia
+
+# Custom properties
+
+vcard-custom-header = Vlastné údaje
+vcard-custom-add = Pridať vlastné údaje

@@ -282,7 +282,14 @@ theme-disabled-heading = Keelatud
 theme-disabled-heading2 = Salvestatud teemad
 theme-monochromatic-heading = Värvivalikud
 theme-monochromatic-subheading = Uued erksad värvid { -brand-product-name }ilt. Saadaval piiratud aja jooksul.
+# Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
 theme-colorways-button = Proovi värvivalikuid
+colorway-collection-independent-voices-subheading = Tee { -brand-short-name } natuke rohkem enda omaks.
+# Refers to the button label for the colorways card when a user has a colorway theme enabled.
+theme-colorways-button-colorway-enabled = Muuda värvivalikut
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires.
+colorway-collection-expiry-date-span = Aegub { DATETIME($expiryDate, month: "long", day: "numeric") }
 plugin-enabled-heading = Lubatud
 plugin-disabled-heading = Keelatud
 dictionary-enabled-heading = Lubatud
@@ -396,6 +403,7 @@ addon-page-options-button =
 # Variables:
 #   $version (String): application version.
 details-notification-incompatible = Lisa { $name } ei ühildu { -brand-short-name }i versiooniga { $version }.
+details-notification-incompatible-link = Rohkem teavet
 details-notification-unsigned-and-disabled = Lisa { $name } polnud võimalik { -brand-short-name }is kasutamiseks verifitseerida ja see keelati.
 details-notification-unsigned-and-disabled-link = Rohkem teavet
 details-notification-unsigned = Lisa { $name } polnud võimalik { -brand-short-name }is kasutamiseks verifitseerida. Tasub olla ettevaatlik.

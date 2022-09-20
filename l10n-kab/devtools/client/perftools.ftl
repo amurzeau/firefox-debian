@@ -83,6 +83,8 @@ perftools-thread-render-backend =
     .title = Asqerdec n WebRender RenderBackend
 perftools-thread-paint-worker =
     .title = Mi ara yermed Painting n off-main-thread, asqerdec iɣef Painting iḍerru
+perftools-thread-timer =
+    .title = Amakud yessefrak usqerdec (setTimeout, setInterval, nsITimer)
 perftools-thread-style-thread =
     .title = Asesfer n uɣanib yettwabḍa gar waṭas n yisqerdcen
 pref-thread-stream-trans =
@@ -95,6 +97,18 @@ perftools-thread-dns-resolver =
     .title = Tifrat n DNS tḍerru deg usqerdec-a
 perftools-thread-task-controller =
     .title = Isental n ugraw n yisental n TaskController
+perftools-thread-jvm-gecko =
+    .title = Asqerdec agejdan Gecko JMV
+perftools-thread-jvm-nimbus =
+    .title = Isqerdcen igejdanen n SDK n tirmit Nimbus
+perftools-thread-jvm-default-dispatcher =
+    .title = Amzuzer s wudem uzwir i temkarḍit n coroutines Kotlin
+perftools-thread-jvm-glean =
+    .title = Isqerdcen igejdanen n SDK n tilisɣilt Nimbus
+perftools-thread-jvm-arch-disk-io =
+    .title = Amzuzer IO i temkarḍit n coroutines Kotlin
+perftools-thread-jvm-pool =
+    .title = Isental yettwarnan ɣer ugraw n yisental s war isem
 
 ##
 
@@ -103,16 +117,9 @@ perftools-tools-threads-input-label =
     .title = Ismawen-a n usqerdec d tabdart iferqen s tefrayin, yettuseqdacen i urmad n tmeɣna n yisqerdicen deg umaɣnay.  Isem ilaq ad yili d abruyan deg umṣada akked yisem n usqerdec ara yeddun. D amḥulfu i tallunt tamellalt.
 
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
-## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
-## preferences are true.
-
-
-## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## devtools.performance.new-panel-onboarding preference is true.
 
 perftools-onboarding-message = <b>Amaynut</b>: { -profiler-brand-name } yettwasleɣ tura deg yifecka n tneflit. <a>Issin ugar</a> qef ufecku-a amaynut yelhan.
-# `options-context-advanced-settings` is defined in toolbox-options.ftl
-perftools-onboarding-reenable-old-panel = (I tenzagt yesεan talast, tzemreḍ ad teskecmeḍ agalis n temlellit taneẓlit s <a>{ options-context-advanced-settings }</a>)
 perftools-onboarding-close-button =
     .aria-label = Mdel izen n uslaɣ
 
@@ -133,6 +140,9 @@ perftools-presets-media-label = Amidyat
 perftools-presets-media-description2 = Uzwirfren yettufeṣṣlen i usekyed n yibugen n umeslaw d tvidyut deg { -brand-shorter-name }.
 perftools-presets-networking-label = Azeṭṭa
 perftools-presets-networking-description = Uzwirfren yettufeṣṣlen i usekyed n yibugen n uzeṭṭa deg { -brand-shorter-name }.
+# "Power" is used in the sense of energy (electricity used by the computer).
+perftools-presets-power-label = Tazmert
+perftools-presets-power-description = Uzwirfren yettufeṣṣlen i usekyed n yibugen i icudden ɣer useqdec n tnezmert deg { -brand-shorter-name }, s uwzir fessusen maḍi.
 perftools-presets-custom-label = Sagen
 
 ##

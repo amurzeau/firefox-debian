@@ -187,12 +187,15 @@ preferences-web-appearance-header = Wygląd witryn internetowych
 preferences-web-appearance-description = Część witryn dostosowuje swój schemat kolorów na podstawie preferencji użytkownika. Wybierz schemat kolorów używany na tych witrynach.
 preferences-web-appearance-choice-browser = Motyw przeglądarki { -brand-short-name }
 preferences-web-appearance-choice-system = Motyw systemu
+preferences-web-appearance-choice-auto = Automatyczny
 preferences-web-appearance-choice-light = Jasny
 preferences-web-appearance-choice-dark = Ciemny
 preferences-web-appearance-choice-tooltip-browser =
     .title = Używaj ustawień motywu przeglądarki { -brand-short-name } do teł i treści witryn.
 preferences-web-appearance-choice-tooltip-system =
     .title = Używaj ustawień systemu do teł i treści witryn.
+preferences-web-appearance-choice-tooltip-auto =
+    .title = Automatycznie zmieniaj tła i treści witryn na podstawie ustawień systemu i motywu przeglądarki { -brand-short-name }.
 preferences-web-appearance-choice-tooltip-light =
     .title = Używaj jasnego wyglądu teł i treści witryn.
 preferences-web-appearance-choice-tooltip-dark =
@@ -201,6 +204,8 @@ preferences-web-appearance-choice-input-browser =
     .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
 preferences-web-appearance-choice-input-system =
     .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-auto =
+    .aria-description = { preferences-web-appearance-choice-tooltip-auto.title }
 preferences-web-appearance-choice-input-light =
     .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
 preferences-web-appearance-choice-input-dark =
@@ -493,6 +498,8 @@ home-restore-defaults =
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
     .label = strona startowa Firefoksa (domyślnie)
+home-mode-choice-default-fx =
+    .label = { -firefox-home-brand-name(case: "nom", capitalization: "lower") } (domyślnie)
 home-mode-choice-custom =
     .label = inne strony
 home-mode-choice-blank =
@@ -518,6 +525,8 @@ choose-bookmark =
 
 home-prefs-content-header = Strona startowa Firefoksa
 home-prefs-content-description = Wybierz, co wyświetlać na stronie startowej Firefoksa.
+home-prefs-content-header2 = { -firefox-home-brand-name }
+home-prefs-content-description2 = Wybierz, co wyświetlać na { -firefox-home-brand-name(case: "loc", capitalization: "lower") }.
 home-prefs-search-header =
     .label = Pasek wyszukiwania
 home-prefs-shortcuts-header =
@@ -538,6 +547,8 @@ home-prefs-recommended-by-description-new = Wyjątkowe rzeczy wybrane przez { $p
 home-prefs-recommended-by-learn-more = Jak to działa?
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponsorowane artykuły
+home-prefs-recommended-by-option-recent-saves =
+    .label = Ostatnio zapisane
 home-prefs-highlights-option-visited-pages =
     .label = Historia
 home-prefs-highlights-options-bookmarks =
@@ -931,7 +942,11 @@ addressbar-locbar-topsites-option =
 addressbar-locbar-engines-option =
     .label = wyszukiwarkach
     .accesskey = w
+addressbar-locbar-quickactions-option =
+    .label = szybkich działaniach
+    .accesskey = d
 addressbar-suggestions-settings = Zmień preferencje podpowiedzi dostarczanych przez wyszukiwarki
+addressbar-quickactions-learn-more = Więcej informacji
 
 ## Privacy Section - Content Blocking
 
@@ -962,6 +977,7 @@ content-blocking-etp-custom-desc = Wybierz, które elementy śledzące i skrypt
 content-blocking-etp-blocking-desc = { -brand-short-name } blokuje:
 content-blocking-private-windows = treści z elementami śledzącymi w oknach prywatnych
 content-blocking-cross-site-cookies-in-all-windows = ciasteczka między witrynami we wszystkich oknach (w tym śledzące)
+content-blocking-cross-site-cookies-in-all-windows2 = ciasteczka między witrynami we wszystkich oknach
 content-blocking-cross-site-tracking-cookies = ciasteczka śledzące między witrynami
 content-blocking-all-cross-site-cookies-private-windows = ciasteczka między witrynami w prywatnych oknach
 content-blocking-cross-site-tracking-cookies-plus-isolate = ciasteczka śledzące między witrynami i izolowanie pozostałych
@@ -980,6 +996,7 @@ content-blocking-etp-standard-tcp-rollout-checkbox =
 # "Contains" here means "isolates", "limits".
 content-blocking-etp-standard-tcp-rollout-description = Całkowita ochrona ciasteczek ogranicza ciasteczka do odwiedzanej witryny, więc elementy śledzące nie mogą ich używać do śledzenia Cię między witrynami.
 content-blocking-etp-standard-tcp-rollout-learn-more = Więcej informacji
+content-blocking-etp-standard-tcp-title = Zawiera całkowitą ochronę ciasteczek, naszą najpotężniejszą funkcję ochrony prywatności w historii
 content-blocking-warning-title = Ostrzeżenie
 content-blocking-and-isolating-etp-warning-description-2 = To ustawienie może spowodować niepoprawne działanie lub wyświetlanie niektórych stron. Jeśli dana strona wydaje się niewłaściwie działać, możesz wyłączyć dla niej ochronę przed śledzeniem, aby wczytać ją w całości.
 content-blocking-warning-learn-how = Więcej informacji
@@ -1087,6 +1104,12 @@ addon-recommendations-link = Więcej informacji
 collection-health-report-disabled = Przesyłanie danych jest wyłączone przy tej konfiguracji programu
 collection-backlogged-crash-reports-with-link = Przesyłanie zgromadzonych zgłoszeń awarii przeglądarki { -brand-short-name }. <a data-l10n-name="crash-reports-link">Więcej informacji</a>
     .accesskey = o
+privacy-segmentation-section-header = Nowe funkcje usprawniające przeglądanie
+privacy-segmentation-section-description = Kiedy oferujemy funkcje wykorzystujące Twoje dane do zapewniania bardziej spersonalizowanej przeglądarki:
+privacy-segmentation-radio-off =
+    .label = Używaj zaleceń przeglądarki { -brand-product-name }
+privacy-segmentation-radio-on =
+    .label = Wyświetlaj szczegółowe informacje
 
 ## Privacy Section - Security
 ##

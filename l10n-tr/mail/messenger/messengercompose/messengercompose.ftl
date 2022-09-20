@@ -5,6 +5,21 @@
 
 ## Send Format
 
+compose-send-format-menu =
+    .label = Gönderme biçimi
+    .accesskey = G
+compose-send-auto-menu-item =
+    .label = Otomatik
+    .accesskey = O
+compose-send-both-menu-item =
+    .label = Hem HTML hem de düz metin
+    .accesskey = H
+compose-send-html-menu-item =
+    .label = Yalnızca HTML
+    .accesskey = M
+compose-send-plain-menu-item =
+    .label = Yalnızca düz metin
+    .accesskey = d
 
 ## Addressing widget
 
@@ -129,6 +144,18 @@ button-return-receipt =
 encryption-menu =
     .label = Güvenlik
     .accesskey = G
+encryption-toggle =
+    .label = Şifrele
+    .tooltiptext = Bu iletide uçtan uca şifreleme kullan
+encryption-options-openpgp =
+    .label = OpenPGP
+    .tooltiptext = OpenPGP şifreleme ayarlarını göster ve değiştir
+encryption-options-smime =
+    .label = S/MIME
+    .tooltiptext = S/MIME şifreleme ayarlarını göster ve değiştir
+signing-toggle =
+    .label = İmzala
+    .tooltiptext = Bu iletiyi sayısal olarak imzala
 menu-openpgp =
     .label = OpenPGP
     .accesskey = O
@@ -141,6 +168,23 @@ menu-encrypt =
 menu-encrypt-subject =
     .label = Konuyu şifrele
     .accesskey = o
+menu-sign =
+    .label = Sayısal olarak imzala
+    .accesskey = i
+menu-manage-keys =
+    .label = Anahtar yardımcısı
+    .accesskey = A
+menu-view-certificates =
+    .label = Alıcıların sertifikalarını göster
+    .accesskey = s
+menu-open-key-manager =
+    .label = Anahtar yöneticisi
+    .accesskey = n
+can-encrypt-smime-notification = S/MIME uçtan uca şifreleme mümkün.
+can-encrypt-openpgp-notification = OpenPGP uçtan uca şifreleme mümkün.
+can-e2e-encrypt-button =
+    .label = Şifrele
+    .accesskey = e
 
 ## Addressing Area
 
@@ -220,6 +264,9 @@ compose-tool-button-remove-text-styling =
 
 # Placeholder file
 
+# Title for the html placeholder file.
+# $filename - name of the file
+cloud-file-placeholder-title = { $filename } - Filelink Eki
 
 # Template
 
@@ -245,6 +292,14 @@ cloud-file-service-provider-footer-single = { $link } hakkında daha fazla bilgi
 cloud-file-service-provider-footer-multiple = { $firstLinks } ve { $lastLink } hakkında daha fazla bilgi alın.
 # Tooltip for an icon, indicating that the link is protected by a password.
 cloud-file-tooltip-password-protected-link = Parola korumalı bağlantı
+# Used in a list of stats about a specific file
+# Service - the used service provider to host the file (Filelink Service: BOX.com)
+# Size - the size of the file (Size: 4.2 MB)
+# Link - the link to the file (Link: https://some.provider.com)
+# Expiry Date - stating the date the link will expire (Expiry Date: 12.12.2022)
+# Download Limit - stating the maximum allowed downloads, before the link becomes invalid
+#                  (Download Limit: 6)
+cloud-file-template-service-name = Filelink hizmeti:
 cloud-file-template-size = Boyut:
 cloud-file-template-link = Bağlantı:
 cloud-file-template-password-protected-link = Parola korumalı bağlantı:
@@ -265,7 +320,13 @@ cloud-file-rename-not-supported = { $provider } önceden yüklenmiş dosyaların
 ## Link Preview
 
 link-preview-title = Bağlantı ön izleme
+link-preview-description = { -brand-short-name }, bağlantıları yapıştırırken gömülü bir ön izleme ekleyebilir.
+link-preview-autoadd = Mümkün olduğunda bağlantı ön izlemelerini otomatik olarak ekle
+link-preview-replace-now = Bu bağlantı için bir bağlantı ön izlemesi eklensin mi?
 link-preview-yes-replace = Evet
 
 ## Dictionary selection popup
 
+spell-add-dictionaries =
+    .label = Sözlük ekle…
+    .accesskey = S

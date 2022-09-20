@@ -294,7 +294,14 @@ theme-disabled-heading = Desactivats
 theme-disabled-heading2 = Tèmas salvats
 theme-monochromatic-heading = Colorit
 theme-monochromatic-subheading = Combinasons de colors vibrantas de { -brand-product-name }. Disponiblas durant un temps limitat.
+# Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
 theme-colorways-button = Ensajatz Colorways
+colorway-collection-independent-voices-subheading = Fasètz que { -brand-short-name } siá encara mai lo vòstre.
+# Refers to the button label for the colorways card when a user has a colorway theme enabled.
+theme-colorways-button-colorway-enabled = Cambiar de colorit
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires.
+colorway-collection-expiry-date-span = Expira lo { DATETIME($expiryDate, month: "long", day: "numeric") }
 plugin-enabled-heading = Activats
 plugin-disabled-heading = Desactivats
 dictionary-enabled-heading = Activats
@@ -408,6 +415,7 @@ addon-page-options-button =
 # Variables:
 #   $version (String): application version.
 details-notification-incompatible = { $name } es incompatible amb { -brand-short-name } { $version }.
+details-notification-incompatible-link = Mai d'informacions
 details-notification-unsigned-and-disabled = { $name } a pas poput èsser verificat per son utilizacion dins { -brand-short-name } e foguèt desactivat.
 details-notification-unsigned-and-disabled-link = Mai d'informacions
 details-notification-unsigned = { $name } a pas pogut èsser verificat per son utilizacion dins { -brand-short-name }. Fasètz atencion.

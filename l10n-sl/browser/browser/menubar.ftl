@@ -38,11 +38,9 @@ menu-quit =
             [windows] h
            *[other] I
         }
-
 # This menu-quit-mac string is only used on macOS.
 menu-quit-mac =
     .label = Izhod iz { -brand-shorter-name }a
-
 menu-about =
     .label = O { -brand-shorter-name }u
     .accesskey = O
@@ -226,6 +224,10 @@ menu-bookmark-current-tab =
     .label = Dodaj trenutni zavihek med zaznamke
 menu-bookmark-edit =
     .label = Uredi ta zaznamek
+menu-bookmark-tab =
+    .label = Dodaj trenutni zavihek med zaznamke …
+menu-edit-bookmark =
+    .label = Uredi ta zaznamek …
 menu-bookmarks-all-tabs =
     .label = Dodaj vse zavihke med zaznamke …
 menu-bookmarks-toolbar =
@@ -311,7 +313,7 @@ menu-help-more-troubleshooting-info =
 menu-help-report-site-issue =
     .label = Prijavi napako strani …
 menu-help-share-ideas =
-    .label = Sporočite ideje in povratne informacije …
+    .label = Sporoči ideje in povratne informacije …
     .accesskey = D
 menu-help-enter-troubleshoot-mode2 =
     .label = Način za odpravljanje težav …

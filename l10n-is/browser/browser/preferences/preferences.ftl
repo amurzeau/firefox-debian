@@ -184,12 +184,15 @@ preferences-web-appearance-header = Útlit vefsvæðis
 preferences-web-appearance-description = Sum vefsvæði aðlaga litastef sín að óskum þínum. Veldu hvaða litastef þú vilt nota fyrir þessi vefsvæði.
 preferences-web-appearance-choice-browser = { -brand-short-name } þema
 preferences-web-appearance-choice-system = Kerfisþema
+preferences-web-appearance-choice-auto = Sjálfvirkt
 preferences-web-appearance-choice-light = Ljóst
 preferences-web-appearance-choice-dark = Dökkt
 preferences-web-appearance-choice-tooltip-browser =
     .title = Láta bakgrunn og innihald vefsvæðisins samsvara þemastillingum { -brand-short-name }.
 preferences-web-appearance-choice-tooltip-system =
     .title = Láta bakgrunn og innihald vefsvæðisins samsvara kerfisstillingum þínum.
+preferences-web-appearance-choice-tooltip-auto =
+    .title = Breyta sjálfvirkt bakgrunni og útliti efnis á vefsvæðum byggt á kerfisstillingum þínum og { -brand-short-name } þema.
 preferences-web-appearance-choice-tooltip-light =
     .title = Nota ljóst útlit fyrir bakgrunn og efni vefsvæðisins.
 preferences-web-appearance-choice-tooltip-dark =
@@ -198,6 +201,8 @@ preferences-web-appearance-choice-input-browser =
     .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
 preferences-web-appearance-choice-input-system =
     .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-auto =
+    .aria-description = { preferences-web-appearance-choice-tooltip-auto.title }
 preferences-web-appearance-choice-input-light =
     .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
 preferences-web-appearance-choice-input-dark =
@@ -490,6 +495,8 @@ home-restore-defaults =
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
     .label = Upphafssíða Firefox (sjálfgefið)
+home-mode-choice-default-fx =
+    .label = { -firefox-home-brand-name } (sjálfgefið)
 home-mode-choice-custom =
     .label = Sérsniðin URL…
 home-mode-choice-blank =
@@ -515,6 +522,8 @@ choose-bookmark =
 
 home-prefs-content-header = Efni á upphafssíðu Firefox
 home-prefs-content-description = Veldu hvaða efni þú vilt sjá á upphafssíðu Firefox.
+home-prefs-content-header2 = { -firefox-home-brand-name } efni
+home-prefs-content-description2 = Veldu hvaða efni þú vilt á { -firefox-home-brand-name } skjánum þínum.
 home-prefs-search-header =
     .label = Vefleit
 home-prefs-shortcuts-header =
@@ -535,6 +544,8 @@ home-prefs-recommended-by-description-new = Úrvalsefni í umsjón { $provider }
 home-prefs-recommended-by-learn-more = Hvernig það virkar
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Kostaðar sögur
+home-prefs-recommended-by-option-recent-saves =
+    .label = Sýna nýlega vistað
 home-prefs-highlights-option-visited-pages =
     .label = Heimsóttar síður
 home-prefs-highlights-options-bookmarks =
@@ -927,7 +938,11 @@ addressbar-locbar-topsites-option =
 addressbar-locbar-engines-option =
     .label = Leitarvélar
     .accesskey = a
+addressbar-locbar-quickactions-option =
+    .label = Flýtiaðgerðir
+    .accesskey = g
 addressbar-suggestions-settings = Breyta stillingum fyrir ábendingar leitarvéla
+addressbar-quickactions-learn-more = Kanna nánar
 
 ## Privacy Section - Content Blocking
 
@@ -958,6 +973,7 @@ content-blocking-etp-custom-desc = Veldu hvaða rekjara og skriftur á að loka 
 content-blocking-etp-blocking-desc = { -brand-short-name } lokar á eftirfarandi:
 content-blocking-private-windows = Rakningu efnis í huliðsgluggum
 content-blocking-cross-site-cookies-in-all-windows = Vefkökur milli vefsvæða í öllum gluggum (meðal annars rakningarkökur)
+content-blocking-cross-site-cookies-in-all-windows2 = Vefkökur milli vefsvæða í öllum gluggum
 content-blocking-cross-site-tracking-cookies = Rakningarkökur milli vefsvæða
 content-blocking-all-cross-site-cookies-private-windows = Vefkökur milli vefsvæða í einkagluggum
 content-blocking-cross-site-tracking-cookies-plus-isolate = Rakningarkökur milli vefsvæða og einangra aðrar vefkökur
@@ -976,6 +992,7 @@ content-blocking-etp-standard-tcp-rollout-checkbox =
 # "Contains" here means "isolates", "limits".
 content-blocking-etp-standard-tcp-rollout-description = Allsherjar-vefkökuvörn inniheldur vefkökur á vefsvæðið sem þú ert á, þannig að rekjarar geta ekki notað þær til að fylgja þér á milli vefsvæða.
 content-blocking-etp-standard-tcp-rollout-learn-more = Frekari upplýsingar
+content-blocking-etp-standard-tcp-title = Inniheldur allsherjar-vefkökuvörn, öflugasta persónuverndareiginleikann okkar frá upphafi
 content-blocking-warning-title = Gættu þín!
 content-blocking-and-isolating-etp-warning-description-2 = Þessar stillingar gætu valdið því að sum vefsvæði birti ekki efni eða virki ekki rétt. Ef síða virðist biluð gætirðu viljað slökkva á rakningarvörn fyrir það vefsvæði til að hlaða inn öllu efni.
 content-blocking-warning-learn-how = Lærðu hvernig
@@ -1083,6 +1100,12 @@ addon-recommendations-link = Fræðast meira
 collection-health-report-disabled = Gagnaskýrslur eru óvirkar í þessari útgáfu
 collection-backlogged-crash-reports-with-link = Leyfa { -brand-short-name } að senda bakraktar hrunskýrslur fyrir þína hönd <a data-l10n-name="crash-reports-link">Frekari upplýsingar</a>
     .accesskey = y
+privacy-segmentation-section-header = Nýir eiginleikar sem bæta vafrið þitt
+privacy-segmentation-section-description = Þegar við bjóðum upp á eiginleika sem nota gögnin þín til að veita þér persónulegri upplifun:
+privacy-segmentation-radio-off =
+    .label = Nota ráðleggingar frá { -brand-product-name }
+privacy-segmentation-radio-on =
+    .label = Sýna nánari upplýsingar
 
 ## Privacy Section - Security
 ##

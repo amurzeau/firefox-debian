@@ -241,6 +241,8 @@ newtab-pocket-pocket-firefox-family = { -pocket-brand-name } è parte della fami
 # A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save-to-pocket = Salva in { -pocket-brand-name }
 newtab-pocket-saved-to-pocket = Salvato in { -pocket-brand-name }
+newtab-pocket-save = Salva
+newtab-pocket-saved = Salvato
 
 # This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
 newtab-pocket-load-more-stories-button = Carica altre storie
@@ -272,6 +274,7 @@ newtab-custom-sponsored-sites = Scorciatoie sponsorizzate
 newtab-custom-pocket-title = Consigliati da { -pocket-brand-name }
 newtab-custom-pocket-subtitle = Contenuti eccezionali a cura di { -pocket-brand-name }, un membro della famiglia { -brand-product-name }
 newtab-custom-pocket-sponsored = Storie sponsorizzate
+newtab-custom-pocket-show-recent-saves = Mostra elementi salvati di recente
 newtab-custom-recent-title = Attività recente
 newtab-custom-recent-subtitle = Una selezione di siti e contenuti visualizzati di recente
 newtab-custom-close-button = Chiudi

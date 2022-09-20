@@ -38,11 +38,45 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Приватний перегляд)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Приватний перегляд)
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-window-titles =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = Приватний перегляд { -brand-full-name }
+    .data-content-title-default = { $content-title } — { -brand-full-name }
+    .data-content-title-private = { $content-title } — Приватний перегляд { -brand-full-name }
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox — (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac-window-titles =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } — Приватний перегляд
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } — Приватний перегляд
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
 # `browser-main-window` and `browser-main-window-mac`.
 browser-main-window-title = { -brand-full-name }
+private-browsing-shortcut-text = Приватний перегляд { -brand-short-name }
 
 ##
 
@@ -122,6 +156,7 @@ urlbar-tabtosearch-onboard = Оберіть цей ярлик, щоб швидш
 urlbar-search-mode-bookmarks = Закладки
 urlbar-search-mode-tabs = Вкладки
 urlbar-search-mode-history = Історія
+urlbar-search-mode-actions = Дії
 
 ##
 
@@ -156,7 +191,7 @@ urlbar-star-edit-bookmark =
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
-    .tooltiptext = Закласти цю сторінку ({ $shortcut })
+    .tooltiptext = Додати сторінку до закладок ({ $shortcut })
 
 ## Page Action Context Menu
 
@@ -164,6 +199,12 @@ page-action-manage-extension =
     .label = Керувати розширенням…
 page-action-remove-extension =
     .label = Вилучити розширення
+page-action-manage-extension2 =
+    .label = Керувати розширенням…
+    .accesskey = К
+page-action-remove-extension2 =
+    .label = Вилучити розширення
+    .accesskey = В
 
 ## Auto-hide Context Menu
 
@@ -222,6 +263,68 @@ search-one-offs-tabs =
     .tooltiptext = Вкладки ({ $restrict })
 search-one-offs-history =
     .tooltiptext = Історія ({ $restrict })
+search-one-offs-actions =
+    .tooltiptext = Дії ({ $restrict })
+
+## QuickActions are shown in the urlbar as the user types a matching string
+
+
+## QuickActions are shown in the urlbar as the user types a matching string
+## The -cmd- strings are comma separated list of keywords that will match
+## the action.
+
+# Opens the about:addons page in the home / recommendations section
+quickactions-addons = Переглянути додатки
+quickactions-cmd-addons = додатки, розширення, теми
+quickactions-cmd-addons2 = додатки
+# Opens the bookmarks library window
+quickactions-bookmarks = Переглянути закладки
+quickactions-cmd-bookmarks = закладки
+# Opens a SUMO article explaining how to clear history
+quickactions-clearhistory = Стерти історію
+quickactions-cmd-clearhistory = стерти історію
+# Opens about:downloads page
+quickactions-downloads = Відкрити завантаження
+quickactions-cmd-downloads = завантаження
+# Opens about:addons page in the extensions section
+quickactions-extensions = Керувати розширеннями
+quickactions-cmd-extensions = розширення
+# Opens the devtools web inspector
+quickactions-inspector = Відкрити інспектор
+quickactions-cmd-inspector = інспектор, інструменти розробника
+# Opens about:logins
+quickactions-logins = Переглянути паролі
+quickactions-cmd-logins = входи, паролі
+# Opens about:addons page in the plugins section
+quickactions-plugins = Керувати плагінами
+quickactions-cmd-plugins = плагіни
+# Opens the print dialog
+quickactions-print = Друкувати
+quickactions-cmd-print = друк
+# Opens a new private browsing window
+quickactions-private = Відкрити вікно приватного перегляду
+quickactions-cmd-private = приватний перегляд
+# Opens a SUMO article explaining how to refresh
+quickactions-refresh = Оновити { -brand-short-name }
+quickactions-cmd-refresh = оновити
+# Restarts the browser
+quickactions-restart = Перезапустити { -brand-short-name }
+quickactions-cmd-restart = перезапустити
+# Opens the screenshot tool
+quickactions-screenshot2 = Зробити знімок екрана
+quickactions-cmd-screenshot = знімок екрана
+# Opens about:preferences
+quickactions-settings = Відкрити налаштування
+quickactions-cmd-settings = налаштування, уподобання, параметри
+# Opens about:addons page in the themes section
+quickactions-themes = Керувати темами
+quickactions-cmd-themes = теми
+# Opens a SUMO article explaining how to update the browser
+quickactions-update = Оновити { -brand-short-name }
+quickactions-cmd-update = оновити
+# Opens the view-source UI with current pages source
+quickactions-viewsource = Переглянути джерело
+quickactions-cmd-viewsource = переглянути джерело, джерело
 
 ## Bookmark Panel
 
@@ -235,13 +338,13 @@ bookmark-panel-cancel =
 bookmark-panel-remove =
     .label =
         { $count ->
-            [one] Прибрати закладку
-            [few] Прибрати { $count } закладки
-           *[many] Прибрати { $count } закладок
+            [one] Вилучити закладку
+            [few] Вилучити { $count } закладки
+           *[many] Вилучити { $count } закладок
         }
-    .accesskey = П
+    .accesskey = ч
 bookmark-panel-show-editor-checkbox =
-    .label = Показати редактор при збереженні
+    .label = Показувати редактор під час збереження
     .accesskey = к
 bookmark-panel-save-button =
     .label = Зберегти
@@ -284,7 +387,7 @@ identity-https-only-info-turn-on2 = Увімкніть HTTPS-режим для �
 identity-https-only-info-turn-off2 = Якщо сторінка виглядає пошкодженою, можливо, ви захочете вимкнути HTTPS-режим для цього сайту, щоб перезавантажити його в незахищеному режимі HTTP.
 identity-https-only-info-no-upgrade = Не вдалося змінити з'єднання з HTTP.
 identity-permissions-storage-access-header = Куки сторонніх сайтів
-identity-permissions-storage-access-hint = Ці сторони сайти можуть використовувати куки стеження між сайтами та дані сайту, поки ви перебуваєте на поточному вебсайті.
+identity-permissions-storage-access-hint = Ці сторони можуть використовувати куки сторонніх сайтів та дані сайту, поки ви перебуваєте на ньому.
 identity-permissions-storage-access-learn-more = Докладніше
 identity-permissions-reload-hint = Для застосування змін, можливо, доведеться перезавантажити сторінку.
 identity-clear-site-data =
@@ -439,6 +542,10 @@ urlbar-placeholder-search-mode-other-history =
 urlbar-placeholder-search-mode-other-tabs =
     .placeholder = Введіть пошукові терміни
     .aria-label = Шукати у вкладках
+# This placeholder is used when searching quick actions.
+urlbar-placeholder-search-mode-other-actions =
+    .placeholder = Введіть пошукові терміни
+    .aria-label = Пошукові дії
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -514,6 +621,7 @@ urlbar-result-action-calculator-result = = { $result }
 urlbar-result-action-search-bookmarks = Шукати в закладках
 urlbar-result-action-search-history = Шукати в історії
 urlbar-result-action-search-tabs = Шукати у вкладках
+urlbar-result-action-search-actions = Дії з пошуком
 
 ## Labels shown above groups of urlbar results
 
@@ -527,6 +635,9 @@ urlbar-group-firefox-suggest =
 #  $engine (String): the name of the search engine providing the suggestions
 urlbar-group-search-suggestions =
     .label = Пропозиції { $engine }
+# A label shown above Quick Actions in the urlbar results.
+urlbar-group-quickactions =
+    .label = Швидкі дії
 
 ## Full Screen and Pointer Lock UI
 
@@ -602,6 +713,8 @@ bookmarks-tools =
     .label = Інструменти закладок
 bookmarks-bookmark-edit-panel =
     .label = Редагувати цю закладку
+bookmarks-subview-edit-bookmark =
+    .label = Редагувати цю закладку…
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -617,7 +730,10 @@ bookmarks-toolbar-placeholder-button =
     .label = Елементи панелі закладок
 # "Bookmark" is a verb, as in "Add current tab to bookmarks".
 bookmarks-current-tab =
-    .label = Закласти поточну вкладку
+    .label = Додати цю вкладку до закладок
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-subview-bookmark-tab =
+    .label = Додати цю вкладку до закладок…
 
 ## Library Panel items
 
@@ -791,3 +907,11 @@ data-reporting-notification-message = { -brand-short-name } автоматичн
 data-reporting-notification-button =
     .label = Вибрати чим ділитись
     .accesskey = В
+# Label for the indicator shown in the private browsing window titlebar.
+private-browsing-indicator-label = Приватний перегляд
+
+## Unified extensions (toolbar) button
+
+unified-extensions-button =
+    .label = Розширення
+    .tooltiptext = Розширення

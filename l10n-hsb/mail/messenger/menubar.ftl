@@ -17,6 +17,27 @@ menu-addons-and-themes =
 
 ## Help Menu
 
+menu-help-help-title =
+    .label = Pomoc
+    .accesskey = P
+menu-help-get-help =
+    .label = Pomoc wobstarać
+    .accesskey = c
+menu-help-explore-features =
+    .label = Funkcije wuslědźić
+    .accesskey = F
+menu-help-shortcuts =
+    .label = Tastowe skrótšenki
+    .accesskey = T
+menu-help-get-involved =
+    .label = Čińće sobu
+    .accesskey = i
+menu-help-donation =
+    .label = Darić
+    .accesskey = D
+menu-help-share-feedback =
+    .label = Ideje a měnjenja dźělić
+    .accesskey = m
 menu-help-enter-troubleshoot-mode =
     .label = Modus za rozrisowanje problemow…
     .accesskey = M
@@ -26,6 +47,12 @@ menu-help-exit-troubleshoot-mode =
 menu-help-more-troubleshooting-info =
     .label = Dalše informacije za rozrisowanje problemow
     .accesskey = D
+menu-help-troubleshooting-info =
+    .label = Informacije za rozrisowanje problemow
+    .accesskey = I
+menu-help-about-product =
+    .label = Wo { -brand-short-name }
+    .accesskey = o
 
 ## Mail Toolbar
 
@@ -74,6 +101,12 @@ mail-uidensity-normal =
 mail-uidensity-touch =
     .label = Dótk
     .accesskey = D
+mail-uidensity-default =
+    .label = Standard
+    .accesskey = S
+mail-uidensity-relaxed =
+    .label = Popušćeny
+    .accesskey = P
 menu-spaces-toolbar-button =
     .label = Lajsta dźělnych programow
     .accesskey = d

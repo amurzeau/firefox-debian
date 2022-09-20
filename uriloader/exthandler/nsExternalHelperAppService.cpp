@@ -540,16 +540,15 @@ static const nsExtraMimeTypeEntry extraMimeEntries[] = {
     {TEXT_CSS, "css", "Style Sheet"},
     {TEXT_VCARD, "vcf,vcard", "Contact Information"},
     {TEXT_CALENDAR, "ics,ical,ifb,icalendar", "iCalendar"},
-    {VIDEO_OGG, "ogv", "Ogg Video"},
-    {VIDEO_OGG, "ogg", "Ogg Video"},
+    {VIDEO_OGG, "ogv,ogg", "Ogg Video"},
     {APPLICATION_OGG, "ogg", "Ogg Video"},
     {AUDIO_OGG, "oga", "Ogg Audio"},
     {AUDIO_OGG, "opus", "Opus Audio"},
     {VIDEO_WEBM, "webm", "Web Media Video"},
     {AUDIO_WEBM, "webm", "Web Media Audio"},
-    {AUDIO_MP3, "mp3", "MPEG Audio"},
+    {AUDIO_MP3, "mp3,mpega,mp2", "MPEG Audio"},
     {VIDEO_MP4, "mp4", "MPEG-4 Video"},
-    {AUDIO_MP4, "m4a", "MPEG-4 Audio"},
+    {AUDIO_MP4, "m4a,m4b", "MPEG-4 Audio"},
     {VIDEO_RAW, "yuv", "Raw YUV Video"},
     {AUDIO_WAV, "wav", "Waveform Audio"},
     {VIDEO_3GPP, "3gpp,3gp", "3GPP Video"},
@@ -1280,6 +1279,7 @@ nsExternalAppHandler::nsExternalAppHandler(
       mIsFileChannel(false),
       mShouldCloseWindow(false),
       mHandleInternally(false),
+      mDialogShowing(false),
       mReason(aReason),
       mTempFileIsExecutable(false),
       mTimeDownloadStarted(0),
@@ -1855,6 +1855,9 @@ NS_IMETHODIMP nsExternalAppHandler::OnStartRequest(nsIRequest* request) {
     // this will create a reference cycle (the dialog holds a reference to us as
     // nsIHelperAppLauncher), which will be broken in Cancel or CreateTransfer.
     nsCOMPtr<nsIInterfaceRequestor> dialogParent = GetDialogParent();
+    // Don't pop up the downloads panel since we're already going to pop up the
+    // UCT dialog for basically the same effect.
+    mDialogShowing = true;
     rv = mDialog->Show(this, dialogParent, mReason);
 
     // what do we do if the dialog failed? I guess we should call Cancel and
@@ -2351,14 +2354,15 @@ nsresult nsExternalAppHandler::CreateTransfer() {
     rv = transfer->InitWithBrowsingContext(
         mSourceUrl, target, u""_ns, mMimeInfo, mTimeDownloadStarted, mTempFile,
         this, channel && NS_UsePrivateBrowsing(channel),
-        mDownloadClassification, referrerInfo, mBrowsingContext,
-        mHandleInternally, nullptr);
+        mDownloadClassification, referrerInfo, !mDialogShowing,
+        mBrowsingContext, mHandleInternally, nullptr);
   } else {
-    rv = transfer->Init(mSourceUrl, target, u""_ns, mMimeInfo,
+    rv = transfer->Init(mSourceUrl, nullptr, target, u""_ns, mMimeInfo,
                         mTimeDownloadStarted, mTempFile, this,
                         channel && NS_UsePrivateBrowsing(channel),
-                        mDownloadClassification, referrerInfo);
+                        mDownloadClassification, referrerInfo, !mDialogShowing);
   }
+  mDialogShowing = false;
 
   NS_ENSURE_SUCCESS(rv, rv);
 
@@ -2443,13 +2447,13 @@ nsresult nsExternalAppHandler::CreateFailedTransfer() {
     rv = transfer->InitWithBrowsingContext(
         mSourceUrl, pseudoTarget, u""_ns, mMimeInfo, mTimeDownloadStarted,
         mTempFile, this, channel && NS_UsePrivateBrowsing(channel),
-        mDownloadClassification, referrerInfo, mBrowsingContext,
+        mDownloadClassification, referrerInfo, true, mBrowsingContext,
         mHandleInternally, httpChannel);
   } else {
-    rv = transfer->Init(mSourceUrl, pseudoTarget, u""_ns, mMimeInfo,
+    rv = transfer->Init(mSourceUrl, nullptr, pseudoTarget, u""_ns, mMimeInfo,
                         mTimeDownloadStarted, mTempFile, this,
                         channel && NS_UsePrivateBrowsing(channel),
-                        mDownloadClassification, referrerInfo);
+                        mDownloadClassification, referrerInfo, true);
   }
   NS_ENSURE_SUCCESS(rv, rv);
 
@@ -2459,11 +2463,16 @@ nsresult nsExternalAppHandler::CreateFailedTransfer() {
   return NS_OK;
 }
 
-nsresult nsExternalAppHandler::SaveDestinationAvailable(nsIFile* aFile) {
-  if (aFile)
+nsresult nsExternalAppHandler::SaveDestinationAvailable(nsIFile* aFile,
+                                                        bool aDialogWasShown) {
+  if (aFile) {
+    if (aDialogWasShown) {
+      mDialogShowing = true;
+    }
     ContinueSave(aFile);
-  else
+  } else {
     Cancel(NS_BINDING_ABORTED);
+  }
 
   return NS_OK;
 }
@@ -2735,6 +2744,7 @@ NS_IMETHODIMP nsExternalAppHandler::Cancel(nsresult aReason) {
   // Break our reference cycle with the helper app dialog (set up in
   // OnStartRequest)
   mDialog = nullptr;
+  mDialogShowing = false;
 
   mRequest = nullptr;
 

@@ -76,6 +76,8 @@ perftools-thread-render-backend =
     .title = WebRender RenderBackend iş parçacığı
 perftools-thread-paint-worker =
     .title = Ana iş parçacığı dışında painting etkinleştirildiğinde painting'in gerçekleşeceği iş parçacığı
+perftools-thread-timer =
+    .title = İş parçacığı işleme zamanlayıcıları (setTimeout, setInterval, nsITimer)
 perftools-thread-style-thread =
     .title = Stil hesaplaması birden çok iş parçacığına bölünür
 pref-thread-stream-trans =
@@ -90,6 +92,16 @@ perftools-thread-task-controller =
     .title = TaskController iş parçacığı havuzu iş parçacıkları
 perftools-thread-jvm-gecko =
     .title = Ana Gecko JVM iş parçacığı
+perftools-thread-jvm-nimbus =
+    .title = Nimbus deney SDK'inin ana iş parçacıkları
+perftools-thread-jvm-default-dispatcher =
+    .title = Kotlin eşyordam kitaplığı için varsayılan işlemci zamanlayıcısı
+perftools-thread-jvm-glean =
+    .title = Glean telemetri SDK'inin ana iş parçacıkları
+perftools-thread-jvm-arch-disk-io =
+    .title = Kotlin eşyordam kitaplığı için G/Ç işlemci zamanlayıcısı
+perftools-thread-jvm-pool =
+    .title = Adsız bir iş parçacığı havuzunda oluşturulan iş parçacıkları
 
 ##
 
@@ -98,16 +110,9 @@ perftools-tools-threads-input-label =
     .title = Bu iş parçacığı adları, profilleyicide profili çıkarılacak iş parçacıklarının virgülle ayrılmış listesidir. İç parçacığı adının dahil edilmesi için kısmi eşleşme olması yeterlidir. Adlar boşluk karakterine duyarlıdır.
 
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
-## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
-## preferences are true.
-
-
-## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## devtools.performance.new-panel-onboarding preference is true.
 
 perftools-onboarding-message = <b>Yeni</b>: { -profiler-brand-name } artık geliştirici araçlarına entegre edildi. Bu güçlü yeni araç hakkında <a>daha fazla bilgi edinin</a>.
-# `options-context-advanced-settings` is defined in toolbox-options.ftl
-perftools-onboarding-reenable-old-panel = (Sınırlı bir süre için <a>{ options-context-advanced-settings }</a> aracılığıyla eski Performans paneline erişebilirsiniz.)
 perftools-onboarding-close-button =
     .aria-label = Tanıtım mesajını kapat
 
@@ -128,6 +133,9 @@ perftools-presets-media-label = Ortam
 perftools-presets-media-description2 = { -brand-shorter-name } tarayıcısında ses ve video hatalarını araştırma ayarı.
 perftools-presets-networking-label = Ağ
 perftools-presets-networking-description = { -brand-shorter-name } tarayıcısında ağ hatalarını araştırma ayarı.
+# "Power" is used in the sense of energy (electricity used by the computer).
+perftools-presets-power-label = Güç
+perftools-presets-power-description = { -brand-shorter-name } tarayıcısında güç tüketimi hatalarını araştırma ayarı, düşük ek yük.
 perftools-presets-custom-label = Özel
 
 ##

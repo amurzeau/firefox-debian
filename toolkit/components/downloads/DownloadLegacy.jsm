@@ -265,6 +265,7 @@ DownloadLegacyTransfer.prototype = {
   // nsITransfer
   init: function DLT_init(
     aSource,
+    aSourceOriginalURI,
     aTarget,
     aDisplayName,
     aMIMEInfo,
@@ -273,10 +274,12 @@ DownloadLegacyTransfer.prototype = {
     aCancelable,
     aIsPrivate,
     aDownloadClassification,
-    aReferrerInfo
+    aReferrerInfo,
+    aOpenDownloadsListOnStart
   ) {
     return this._nsITransferInitInternal(
       aSource,
+      aSourceOriginalURI,
       aTarget,
       aDisplayName,
       aMIMEInfo,
@@ -285,7 +288,8 @@ DownloadLegacyTransfer.prototype = {
       aCancelable,
       aIsPrivate,
       aDownloadClassification,
-      aReferrerInfo
+      aReferrerInfo,
+      aOpenDownloadsListOnStart
     );
   },
 
@@ -301,6 +305,7 @@ DownloadLegacyTransfer.prototype = {
     aIsPrivate,
     aDownloadClassification,
     aReferrerInfo,
+    aOpenDownloadsListOnStart,
     aBrowsingContext,
     aHandleInternally,
     aHttpChannel
@@ -315,6 +320,7 @@ DownloadLegacyTransfer.prototype = {
     }
     return this._nsITransferInitInternal(
       aSource,
+      null,
       aTarget,
       aDisplayName,
       aMIMEInfo,
@@ -324,6 +330,7 @@ DownloadLegacyTransfer.prototype = {
       aIsPrivate,
       aDownloadClassification,
       aReferrerInfo,
+      aOpenDownloadsListOnStart,
       userContextId,
       browsingContextId,
       aHandleInternally,
@@ -333,6 +340,7 @@ DownloadLegacyTransfer.prototype = {
 
   _nsITransferInitInternal(
     aSource,
+    aSourceOriginalURI,
     aTarget,
     aDisplayName,
     aMIMEInfo,
@@ -342,6 +350,7 @@ DownloadLegacyTransfer.prototype = {
     isPrivate,
     aDownloadClassification,
     referrerInfo,
+    openDownloadsListOnStart = true,
     userContextId = 0,
     browsingContextId = 0,
     handleInternally = false,
@@ -377,6 +386,7 @@ DownloadLegacyTransfer.prototype = {
     let serialisedDownload = {
       source: {
         url: aSource.spec,
+        originalUrl: aSourceOriginalURI && aSourceOriginalURI.spec,
         isPrivate,
         userContextId,
         browsingContextId,
@@ -392,6 +402,7 @@ DownloadLegacyTransfer.prototype = {
       contentType,
       launcherPath,
       handleInternally,
+      openDownloadsListOnStart,
     };
 
     // In case the Download was classified as insecure/dangerous

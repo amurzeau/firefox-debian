@@ -353,6 +353,7 @@ class ChromeActions {
     let actor = getActor(this.domWindow);
     actor.sendAsyncMessage("PDFJS:Parent:saveURL", {
       blobUrl,
+      originalUrl,
       filename,
     });
   }
@@ -1117,6 +1118,13 @@ PdfStreamConverter.prototype = {
       contentDisposition = aRequest.contentDisposition;
       contentDispositionFilename = aRequest.contentDispositionFilename;
     } catch (e) {}
+
+    if (
+      contentDispositionFilename &&
+      !/\.pdf$/i.test(contentDispositionFilename)
+    ) {
+      contentDispositionFilename += ".pdf";
+    }
 
     // Change the content type so we don't get stuck in a loop.
     aRequest.setProperty("contentType", aRequest.contentType);

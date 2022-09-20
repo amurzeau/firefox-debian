@@ -17,6 +17,27 @@ menu-addons-and-themes =
 
 ## Help Menu
 
+menu-help-help-title =
+    .label = Hjálp
+    .accesskey = H
+menu-help-get-help =
+    .label = Fá aðstoð
+    .accesskey = a
+menu-help-explore-features =
+    .label = Kannaðu eiginleika
+    .accesskey = e
+menu-help-shortcuts =
+    .label = Flýtilyklar
+    .accesskey = k
+menu-help-get-involved =
+    .label = Taktu þátt
+    .accesskey = T
+menu-help-donation =
+    .label = Styrktu verkefnið
+    .accesskey = y
+menu-help-share-feedback =
+    .label = Deildu hugmyndum og athugasemdum
+    .accesskey = D
 menu-help-enter-troubleshoot-mode =
     .label = Úrræðaleitarhamur
     .accesskey = t
@@ -26,6 +47,12 @@ menu-help-exit-troubleshoot-mode =
 menu-help-more-troubleshooting-info =
     .label = Frekari upplýsingar um bilanaleit
     .accesskey = b
+menu-help-troubleshooting-info =
+    .label = Upplýsingar fyrir úrræðaleit
+    .accesskey = i
+menu-help-about-product =
+    .label = Um { -brand-short-name }
+    .accesskey = m
 
 ## Mail Toolbar
 
@@ -74,6 +101,12 @@ mail-uidensity-normal =
 mail-uidensity-touch =
     .label = Snertiskjár
     .accesskey = S
+mail-uidensity-default =
+    .label = Sjálfgefið
+    .accesskey = g
+mail-uidensity-relaxed =
+    .label = Afslappað
+    .accesskey = p
 menu-spaces-toolbar-button =
     .label = Svæða-verkfæraslá
     .accesskey = S

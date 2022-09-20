@@ -36,11 +36,29 @@
 -translations-brand-name = Firefox Translations
 -rally-brand-name = Mozilla Rally
 -rally-short-name = Rally
-
-
 -focus-brand-name = Firefox Focus
-
 # “Suggest” can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefox-suggest-brand-name = Návrhy Firefoxu
-
+# ”Home" can be localized, “Firefox” must be treated as a brand
+# and kept in English.
+-firefox-home-brand-name =
+    { $case ->
+       *[nom] Domovská stránka Firefoxu
+        [gen] Domovskej stránky Firefoxu
+        [dat] Domovskej stránke Firefoxu
+        [acc] Domovskú stránku Firefoxu
+        [loc] Domovskej stránke Firefoxu
+        [ins] Domovskou stránkou Firefoxu
+    }
+# View" can be localized, “Firefox” must be treated as a brand
+# and kept in English.
+-firefoxview-brand-name =
+    { $case ->
+       *[nom] Prehľad Firefoxu
+        [gen] Prehľadu Firefoxu
+        [dat] Prehľadu Firefoxu
+        [acc] Prehľad Firefoxu
+        [loc] Prehľade Firefoxu
+        [ins] Prehľadom Firefoxu
+    }

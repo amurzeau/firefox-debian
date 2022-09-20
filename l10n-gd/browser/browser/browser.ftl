@@ -38,11 +38,45 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Brabhsadh prìobhaideach)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Brabhsadh prìobhaideach)
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-window-titles =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = Brabhsadh prìobhaideach { -brand-full-name }
+    .data-content-title-default = { $content-title } – { -brand-full-name }
+    .data-content-title-private = { $content-title } – Brabhsadh prìobhaideach { -brand-full-name }
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox — (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac-window-titles =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } – Brabhsadh prìobhaideach
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } – Brabhsadh prìobhaideach
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
 # `browser-main-window` and `browser-main-window-mac`.
 browser-main-window-title = { -brand-full-name }
+private-browsing-shortcut-text = Brabhsadh prìobhaideach { -brand-short-name }
 
 ##
 
@@ -122,6 +156,7 @@ urlbar-tabtosearch-onboard = Tagh an ath-ghoirid seo a lorg na dh’fheumas tu n
 urlbar-search-mode-bookmarks = Comharran-lìn
 urlbar-search-mode-tabs = Tabaichean
 urlbar-search-mode-history = Eachdraidh
+urlbar-search-mode-actions = Gnìomhan
 
 ##
 
@@ -164,6 +199,12 @@ page-action-manage-extension =
     .label = Stiùirich an leudachan...
 page-action-remove-extension =
     .label = Thoir an leudachan air falbh
+page-action-manage-extension2 =
+    .label = Stiùirich an leudachan...
+    .accesskey = S
+page-action-remove-extension2 =
+    .label = Thoir an leudachan air falbh
+    .accesskey = T
 
 ## Auto-hide Context Menu
 
@@ -222,6 +263,58 @@ search-one-offs-tabs =
     .tooltiptext = Tabaichean ({ $restrict })
 search-one-offs-history =
     .tooltiptext = Eachdraidh ({ $restrict })
+search-one-offs-actions =
+    .tooltiptext = Gnìomhan ({ $restrict })
+
+## QuickActions are shown in the urlbar as the user types a matching string
+
+
+## QuickActions are shown in the urlbar as the user types a matching string
+## The -cmd- strings are comma separated list of keywords that will match
+## the action.
+
+# Opens the about:addons page
+quickactions-addons = Seall na tuilleadain
+quickactions-cmd-addons = tuilleadain, leudachain, ùrlaran
+# Opens the bookmarks library window
+quickactions-bookmarks = Seall na comharran-lìn
+quickactions-cmd-bookmarks = comharran-lìn
+# Opens a SUMO article explaining how to clear history
+quickactions-clearhistory = Falamhaich an eachdraidh
+quickactions-cmd-clearhistory = falamhaich an eachdraidh
+# Opens about:downloads page
+quickactions-downloads = Fosgail na chaidh a luchdadh a-nuas
+quickactions-cmd-downloads = luchdaidhean a-nuas
+# Opens the devtools web inspector
+quickactions-inspector = Fosgail an sgrùdaiche
+quickactions-cmd-inspector = sgrùdaiche, devtools
+# Opens about:logins
+quickactions-logins = Seall na clàraidhean a-steach
+quickactions-cmd-logins = clàraidhean a-steach, faclan-faire
+# Opens the print dialog
+quickactions-print = Clò-bhuail
+quickactions-cmd-print = clò-bhuail
+# Opens a new private browsing window
+quickactions-private = Fosgail uinneag brabhsaidh phrìobhaideach
+quickactions-cmd-private = brabhsadh prìobhaideach
+# Opens a SUMO article explaining how to refresh
+quickactions-refresh = Ath-nuadhaich { -brand-short-name }
+quickactions-cmd-refresh = ath-nuadhaich
+# Restarts the browser
+quickactions-restart = Ath-thòisich { -brand-short-name }
+quickactions-cmd-restart = ath-thòisich
+# Opens the screenshot tool
+quickactions-screenshot2 = Tog glacadh-sgrìn
+quickactions-cmd-screenshot = glacadh-sgrìn
+# Opens about:preferences
+quickactions-settings = Fosgail na roghainnean
+quickactions-cmd-settings = roghainnean
+# Opens a SUMO article explaining how to update the browser
+quickactions-update = Ùraich { -brand-short-name }
+quickactions-cmd-update = ùraich
+# Opens the view-source UI with current pages source
+quickactions-viewsource = Seall am bun-tùs
+quickactions-cmd-viewsource = seall am bun-tùs
 
 ## Bookmark Panel
 
@@ -446,6 +539,10 @@ urlbar-placeholder-search-mode-other-history =
 urlbar-placeholder-search-mode-other-tabs =
     .placeholder = Cuir a-steach abairt-luirg
     .aria-label = Lorg sna tabaichean
+# This placeholder is used when searching quick actions.
+urlbar-placeholder-search-mode-other-actions =
+    .placeholder = Cuir a-steach briathran-luirg
+    .aria-label = Gnìomhan luirg
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -521,6 +618,7 @@ urlbar-result-action-calculator-result = = { $result }
 urlbar-result-action-search-bookmarks = Lorg sna comharran-lìn
 urlbar-result-action-search-history = Lorg san eachdraidh
 urlbar-result-action-search-tabs = Lorg sna tabaichean
+urlbar-result-action-search-actions = Gnìomhan luirg
 
 ## Labels shown above groups of urlbar results
 
@@ -534,6 +632,9 @@ urlbar-group-firefox-suggest =
 #  $engine (String): the name of the search engine providing the suggestions
 urlbar-group-search-suggestions =
     .label = Molaidhean { $engine }
+# A label shown above Quick Actions in the urlbar results.
+urlbar-group-quickactions =
+    .label = Grad-ghnìomhan
 
 ## Full Screen and Pointer Lock UI
 
@@ -798,3 +899,11 @@ data-reporting-notification-message = Cuiridh { -brand-short-name } beagan dàta
 data-reporting-notification-button =
     .label = Co-dhùin na thèid a cho-roinneadh
     .accesskey = C
+# Label for the indicator shown in the private browsing window titlebar.
+private-browsing-indicator-label = Brabhsadh prìobhaideach
+
+## Unified extensions (toolbar) button
+
+unified-extensions-button =
+    .label = Leudachain
+    .tooltiptext = Leudachain

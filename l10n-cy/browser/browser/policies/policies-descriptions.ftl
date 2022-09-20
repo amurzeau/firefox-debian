@@ -53,7 +53,7 @@ policy-DisableTelemetry = Diffodd Telemetreg
 policy-DisplayBookmarksToolbar = Dangos y Bar Offer Nodau Tudalen drwy ragosodiad.
 policy-DisplayMenuBar = Dangos y Bar Dewislen drwy ragosodiad
 policy-DNSOverHTTPS = Ffurfweddu DNS dros HTTPS.
-policy-DontCheckDefaultBrowser = Analluogi gwirio am y porwr rhagosodedig wrth gychwyn.
+policy-DontCheckDefaultBrowser = Analluogwch gwirio am y porwr rhagosodedig wrth gychwyn.
 policy-DownloadDirectory = Gosod a chloi'r cyfeiriadur llwytho i lawr.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Galluogi neu analluogi Rhwystro Cynnwys ac o ddewis ei gloi.
@@ -67,7 +67,9 @@ policy-Extensions = Gosod, dadosod neu gloi estyniadau. Mae'r dewis gosod yn cym
 policy-ExtensionSettings = Rheoli pob agwedd o osod estyniad.
 policy-ExtensionUpdate = Galluogi neu analluogi diweddaru estyniadau'n awtomatig.
 policy-FirefoxHome = Ffurfweddu Firefox Home.
+policy-FirefoxHome2 = Ffurfweddu { -firefox-home-brand-name }.
 policy-FlashPlugin = Caniatáu neu wrthod defnydd o'r ychwanegyn Flash.
+policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Gorfodi llywio safle mewnrwyd yn uniongyrchol yn lle chwilio wrth deipio gair yn y bar cyfeiriad.
 policy-Handlers = Ffurfweddu trinwyr rhaglenni rhagosodedig.
 policy-HardwareAcceleration = Os gau, diffodd cyflymu caledwedd.
 # “lock” means that the user won’t be able to change this setting

@@ -43,7 +43,7 @@ category-experimental =
     .tooltiptext = { -brand-short-name } ცდები
 pane-experimental-subtitle = გამოიყენეთ სიფრთხილით
 pane-experimental-search-results-header = { -brand-short-name } ცდები: გამოიყენეთ სიფრთხილით
-pane-experimental-description2 = გაფართოებული პარამეტრების შეცვლით, შესაძლოა დაზიანდეს { -brand-short-name } წარმადობის ან უსაფრთხოების კუთხით.
+pane-experimental-description2 = გაფართოებული პარამეტრების შეცვლით შესაძლოა დაზიანდეს { -brand-short-name } წარმადობის ან უსაფრთხოების კუთხით.
 pane-experimental-reset =
     .label = ნაგულისხმევის აღდგენა
     .accesskey = უ
@@ -56,8 +56,8 @@ close-button =
 
 ## Browser Restart Dialog
 
-feature-enable-requires-restart = ამ შესაძლებლობის ჩასართავად, ხელახლა გაუშვით { -brand-short-name }
-feature-disable-requires-restart = ამ შესაძლებლობის გამოსართავად, ხელახლა გაუშვით { -brand-short-name }
+feature-enable-requires-restart = ამ შესაძლებლობის ჩასართავად ხელახლა გაუშვით { -brand-short-name }
+feature-disable-requires-restart = ამ შესაძლებლობის გამოსართავად ხელახლა გაუშვით { -brand-short-name }
 should-restart-title = ხელახლა გაეშვას { -brand-short-name }
 should-restart-ok = გაუშვით ხელახლა { -brand-short-name } ახლავე
 cancel-no-restart-button = გაუქმება
@@ -184,12 +184,15 @@ preferences-web-appearance-header = საიტის იერსახე
 preferences-web-appearance-description = ზოგიერთი ვებსაიტი თავის ფერებს უხამებს თქვენი პარამეტრებით მითითებულს. აირჩიეთ ფერები ამგვარი საიტებისთვის.
 preferences-web-appearance-choice-browser = { -brand-short-name } გაფორმება
 preferences-web-appearance-choice-system = სისტემური გაფორმება
+preferences-web-appearance-choice-auto = თვითშერჩევა
 preferences-web-appearance-choice-light = ნათელი
 preferences-web-appearance-choice-dark = მუქი
 preferences-web-appearance-choice-tooltip-browser =
     .title = შეუსაბამეთ თქვენი { -brand-short-name } გაფორმების პარამეტრები ვებსაიტის ფონსა და შიგთავსს.
 preferences-web-appearance-choice-tooltip-system =
     .title = შეუსაბამეთ თქვენი სისტემის პარამეტრები ვებსაიტის ფონსა და შიგთავსს.
+preferences-web-appearance-choice-tooltip-auto =
+    .title = საიტის ფონი და შიგთავსი შეიცვლება სისტემის პარამეტრებისა და იმის მიხედვით, თუ რა გაფორმებას იყენებს { -brand-short-name }.
 preferences-web-appearance-choice-tooltip-light =
     .title = გამოიყენეთ ნათელი იერსახე ვებსაიტის ფონისა და შიგთავსისთვის.
 preferences-web-appearance-choice-tooltip-dark =
@@ -198,6 +201,8 @@ preferences-web-appearance-choice-input-browser =
     .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
 preferences-web-appearance-choice-input-system =
     .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-auto =
+    .aria-description = { preferences-web-appearance-choice-tooltip-auto.title }
 preferences-web-appearance-choice-input-light =
     .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
 preferences-web-appearance-choice-input-dark =
@@ -377,7 +382,7 @@ update-application-auto =
     .label = თავად დააყენებს განახლებებს (სასურველია)
     .accesskey = თ
 update-application-check-choose =
-    .label = შემოწმდეს განახლებებზე, მაგრამ დაგეკითხოთ, დაყენებამდე
+    .label = შემოწმდეს განახლებებზე, მაგრამ დაგეკითხოთ დაყენებამდე
     .accesskey = შ
 update-application-manual =
     .label = არასდროს შემოწმდეს განახლებებზე (არაა სასურველი)
@@ -490,6 +495,8 @@ home-restore-defaults =
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
     .label = Firefox საწყისი გვერდი (ნაგულისხმევი)
+home-mode-choice-default-fx =
+    .label = { -firefox-home-brand-name } (ნაგულისხმევი)
 home-mode-choice-custom =
     .label = მითითებული URL-მისამართები...
 home-mode-choice-blank =
@@ -515,6 +522,8 @@ choose-bookmark =
 
 home-prefs-content-header = Firefox საწყისი გვერდი
 home-prefs-content-description = აირჩიეთ, თუ რისი გამოჩენა გსურთ Firefox-ის საწყის გვერდზე.
+home-prefs-content-header2 = { -firefox-home-brand-name } – შიგთავსი
+home-prefs-content-description2 = აირჩიეთ, რისი ხილვა გსურთ { -firefox-home-brand-name(case: "loc") }
 home-prefs-search-header =
     .label = საძიებო ველი
 home-prefs-shortcuts-header =
@@ -535,6 +544,8 @@ home-prefs-recommended-by-description-new = გამორჩეული მ�
 home-prefs-recommended-by-learn-more = როგორ მუშაობს
 home-prefs-recommended-by-option-sponsored-stories =
     .label = დაფინანსებული სტატიები
+home-prefs-recommended-by-option-recent-saves =
+    .label = ბოლოს შენახულის ჩვენება
 home-prefs-highlights-option-visited-pages =
     .label = მონახულებული გვერდები
 home-prefs-highlights-options-bookmarks =
@@ -773,7 +784,7 @@ forms-generate-passwords =
     .label = ძლიერი პაროლების შემოთავაზება და შედგენა
     .accesskey = ზ
 forms-breach-alerts =
-    .label = შეტყობინება პაროლებზე, იერიშმიტანილი საიტებისთვის
+    .label = შეტყობინება პაროლებზე იერიშმიტანილი საიტებისთვის
     .accesskey = შ
 forms-breach-alerts-learn-more-link = ვრცლად
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
@@ -866,7 +877,7 @@ sitedata-total-size-calculating = ითვლება საიტის მ�
 # Variables:
 #   $value (Number) - Value of the unit (for example: 4.6, 500)
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
-sitedata-total-size = თქვენ მიერ შენახულ ფუნთუშებს, ასევე საიტის მუდმივ და დროებით მონაცემებს, ამჟამად დისკზე უკავია { $value } { $unit }.
+sitedata-total-size = თქვენ მიერ შენახულ ფუნთუშებს, ასევე საიტის მუდმივ და დროებით მონაცემებს ამჟამად დისკზე უკავია { $value } { $unit }.
 sitedata-learn-more = ვრცლად
 sitedata-delete-on-close =
     .label = ფუნთუშებისა და საიტის მონაცემების წაშლა, როცა { -brand-short-name } დაიხურება
@@ -927,7 +938,11 @@ addressbar-locbar-topsites-option =
 addressbar-locbar-engines-option =
     .label = საძიებო სისტემები
     .accesskey = ე
+addressbar-locbar-quickactions-option =
+    .label = სწრაფი მოქმედებები
+    .accesskey = წ
 addressbar-suggestions-settings = საძიებო სისტემის შემოთავაზებების პარამეტრები
+addressbar-quickactions-learn-more = ვრცლად
 
 ## Privacy Section - Content Blocking
 
@@ -958,6 +973,7 @@ content-blocking-etp-custom-desc = აირჩიეთ, რომელი მ
 content-blocking-etp-blocking-desc = { -brand-short-name } ზღუდავს შემდეგს:
 content-blocking-private-windows = მეთვალყურე შიგთავსი პირად ფანჯრებში
 content-blocking-cross-site-cookies-in-all-windows = საიტთაშორისი ფუნთუშები ყველა ფანჯარაში (მათ შორის მეთვალყურეები)
+content-blocking-cross-site-cookies-in-all-windows2 = საიტთაშორისი ფუნთუშები ყველა ფანჯარებში
 content-blocking-cross-site-tracking-cookies = საიტთაშორისი მეთვალყურე ფუნთუშები
 content-blocking-all-cross-site-cookies-private-windows = საიტთაშორისი ფუნთუშები პირად ფანჯარებში
 content-blocking-cross-site-tracking-cookies-plus-isolate = საიტთაშორისი მეთვალყურე ფუნთუშები, დანარჩენი ფუნთუშების გამიჯვნით
@@ -976,10 +992,11 @@ content-blocking-etp-standard-tcp-rollout-checkbox =
         დაცვა პირადულობისთვის, რაც კი არსებობს
     .accesskey = ც
 # "Contains" here means "isolates", "limits".
-content-blocking-etp-standard-tcp-rollout-description = ფუნთუშების სრული გამიჯვნით, ყველა ფუნთუშა იმ საიტის საზღვრებშივე დარჩება, რომელზეც იმყოფებით და მეთვალყურეები ვეღარ დაგედევნებიან, სხვა საიტებზე გადასვლისას.
+content-blocking-etp-standard-tcp-rollout-description = ფუნთუშების სრული გამიჯვნით ყველა ფუნთუშა იმ საიტის საზღვრებშივე დარჩება, რომელზეც იმყოფებით და მეთვალყურეები ვეღარ დაგედევნებიან სხვა საიტებზე გადასვლისას.
 content-blocking-etp-standard-tcp-rollout-learn-more = ვრცლად
+content-blocking-etp-standard-tcp-title = მოიცავს ფუნთუშების სრულ გამიჯვნასაც, ჩვენს არნახულად მძლავრ საშუალებას პირადულობისთვის
 content-blocking-warning-title = ფრთხილად!
-content-blocking-and-isolating-etp-warning-description-2 = ამ პარამეტრებმა შეიძლება გამოიწვიოს გაუმართაობები, ზოგიერთი საიტის შიგთავსის ჩვენებასა და მუშაობაში. თუ საიტი დაზიანდება, მოგიწევთ მისი გამოთიშვა თვალთვალისგან დაცვიდან, შიგთავსის სრულად ჩასატვირთად.
+content-blocking-and-isolating-etp-warning-description-2 = ამ პარამეტრებმა შეიძლება გამოიწვიოს გაუმართაობები ზოგიერთი საიტის შიგთავსის ჩვენებასა და მუშაობაში. თუ საიტი დაზიანდება, მოგიწევთ მისი გამოთიშვა თვალთვალისგან დაცვიდან შიგთავსის სრულად ჩასატვირთად.
 content-blocking-warning-learn-how = იხილეთ როგორ
 content-blocking-reload-description = საჭიროა ჩანართების ხელახლა გახსნა ცვლილებების ასახვისთვის.
 content-blocking-reload-tabs-button =
@@ -1066,7 +1083,7 @@ permissions-addon-exceptions =
 ## Privacy Section - Data Collection
 
 collection-header = { -brand-short-name } – მონაცემთა აღრიცხვა და გამოყენება
-collection-description = ჩვენ ვცდილობთ მოგცეთ არჩევანის უფლება და აღვრიცხოთ მხოლოდ ის მონაცემები, რომლებიც დაგვეხმარება, გავაუმჯობესოთ { -brand-short-name }. ყოველთვის დაგეკითხებით, პირადი ინფორმაციის მიღებამდე.
+collection-description = ჩვენ ვცდილობთ მოგცეთ არჩევანის უფლება და აღვრიცხოთ მხოლოდ ის მონაცემები, რომლებიც დაგვეხმარება, გავაუმჯობესოთ { -brand-short-name }. ყოველთვის დაგეკითხებით პირადი ინფორმაციის მიღებამდე.
 collection-privacy-notice = პირადი მონაცემების დაცვის განაცხადი
 collection-health-report-telemetry-disabled = თქვენ გააუქმეთ ნებართვა და შედეგად, { -vendor-short-name } ვეღარ შეძლებს ტექნიკური და გამოყენების მონაცემების აღრიცხვას. აქამდე შეგროვებული ყველა მონაცემი, წაიშლება 30 დღეში.
 collection-health-report-telemetry-disabled-link = ვრცლად
@@ -1083,8 +1100,14 @@ addon-recommendations-link = ვრცლად
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = მოხსენებები გამორთულია ანაწყობის ამ კონფიგურაციისთვის
-collection-backlogged-crash-reports-with-link = ნებართვა, რომ { -brand-short-name } შეძლებს გაგზავნოს უეცარი გათიშვების დაგროვილი მოხსენებები, თქვენს ნაცვლად <a data-l10n-name="crash-reports-link">ვრცლად</a>
+collection-backlogged-crash-reports-with-link = ნებართვა, რომ { -brand-short-name } შეძლებს გაგზავნოს უეცარი გათიშვების დაგროვილი მოხსენებები თქვენს ნაცვლად <a data-l10n-name="crash-reports-link">ვრცლად</a>
     .accesskey = უ
+privacy-segmentation-section-header = ახალი შესაძლებლობები მოხერხებულად სარგებლობისთვის
+privacy-segmentation-section-description = როცა გთზავაზობთ შესაძლებლობებს თქვენი მონაცემების საფუძველზე მეტად მორგებული მომსახურებისთვის:
+privacy-segmentation-radio-off =
+    .label = { -brand-product-name }-შემოთავაზებების გამოყენება
+privacy-segmentation-radio-on =
+    .label = დაწვრილებით ჩვენება
 
 ## Privacy Section - Security
 ##

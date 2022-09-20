@@ -1,2 +1,2 @@
-20220818165803
-https://hg.mozilla.org/releases/mozilla-esr102/rev/3876d5327f44c991c9034c4112f33f147ab10ab9
+20220912135840
+https://hg.mozilla.org/releases/mozilla-esr102/rev/c2dd0f1c0adfb1fa1c5d9319fbe023d324c34db6

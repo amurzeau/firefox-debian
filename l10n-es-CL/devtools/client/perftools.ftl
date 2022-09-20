@@ -83,6 +83,8 @@ perftools-thread-render-backend =
     .title = El hilo RenderBackend de WebRender
 perftools-thread-paint-worker =
     .title = Cuando se activa la pintura fuera del hilo principal, el hilo en el que se realiza la pintura
+perftools-thread-timer =
+    .title = Los temporizadores de manejo de subprocesos (setTimeout, setInterval, nsITimer)
 perftools-thread-style-thread =
     .title = El cálculo de estilo se divide en múltiples hilos
 pref-thread-stream-trans =
@@ -115,16 +117,9 @@ perftools-tools-threads-input-label =
     .title = Estos nombres de hilos son una lista separada por comas que se utiliza para habilitar la creación de perfiles de los hilos en el perfilador. El nombre debe ser solo una coincidencia parcial del nombre del hilo para que se incluya. Es sensible a los espacios en blanco.
 
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
-## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
-## preferences are true.
-
-
-## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## devtools.performance.new-panel-onboarding preference is true.
 
 perftools-onboarding-message = <b>Nuevo</b>: { -profiler-brand-name } está ahora integrado en las herramientas para desarrolladores. <a>Aprender más</a> acerca de esta poderosa nueva herramienta.
-# `options-context-advanced-settings` is defined in toolbox-options.ftl
-perftools-onboarding-reenable-old-panel = (Por un tiempo limitado, podrás acceder al panel de rendimiento original a través de <a>{ options-context-advanced-settings }</a>)
 perftools-onboarding-close-button =
     .aria-label = Cerrar el mensaje de introducción
 
@@ -145,6 +140,9 @@ perftools-presets-media-label = Medios
 perftools-presets-media-description2 = Ajustes para investigar fallos de audio y video en { -brand-shorter-name }.
 perftools-presets-networking-label = Red
 perftools-presets-networking-description = Ajustes para investigar fallos de red en { -brand-shorter-name }.
+# "Power" is used in the sense of energy (electricity used by the computer).
+perftools-presets-power-label = Energía
+perftools-presets-power-description = Ajustes para investigar fallos en el consumo eléctrico en { -brand-shorter-name }, con poca sobrecarga.
 perftools-presets-custom-label = Personalizado
 
 ##

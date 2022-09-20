@@ -263,9 +263,6 @@ check-user-spelling =
 
 files-and-applications-title = Dosieroj kaj programoj
 download-header = Elŝutoj
-download-save-to =
-    .label = Konservi dosierojn en
-    .accesskey = d
 download-save-where = Konservi dosierojn en
     .accesskey = d
 download-choose-folder =
@@ -493,6 +490,8 @@ home-restore-defaults =
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
     .label = Eka paĝo de Firefox (norma)
+home-mode-choice-default-fx =
+    .label = { -firefox-home-brand-name } (Norma)
 home-mode-choice-custom =
     .label = Personecigitaj URL…
 home-mode-choice-blank =
@@ -518,6 +517,8 @@ choose-bookmark =
 
 home-prefs-content-header = Enhavo de la hejmekrano de Firefox
 home-prefs-content-description = Elektu la enhavon, kiun vi volas en via hejmekrano de Firefox.
+home-prefs-content-header2 = { -firefox-home-brand-name } Enhavo
+home-prefs-content-description2 = Elektu la enhavon, kiun vi volas en { -firefox-home-brand-name }.
 home-prefs-search-header =
     .label = Serĉo en la reto
 home-prefs-shortcuts-header =
@@ -538,6 +539,8 @@ home-prefs-recommended-by-description-new = Eksterordinara  enhavo reviziita de 
 home-prefs-recommended-by-learn-more = Kiel funkcias tio
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Patronitaj artikoloj
+home-prefs-recommended-by-option-recent-saves =
+    .label = Montri ĵusajn konservojn
 home-prefs-highlights-option-visited-pages =
     .label = Vizititaj paĝoj
 home-prefs-highlights-options-bookmarks =
@@ -961,6 +964,7 @@ content-blocking-etp-custom-desc = Elektu blokotajn spurilojn kaj skriptojn
 content-blocking-etp-blocking-desc = { -brand-short-name } blokas la jenon:
 content-blocking-private-windows = Spurila enhavo en privataj fenestroj
 content-blocking-cross-site-cookies-in-all-windows = Interretejajn kuketojn en ĉiuj fenestroj (tio inkluzivas spurilajn kuketojn)
+content-blocking-cross-site-cookies-in-all-windows2 = Interretejajn kuketojn en ĉiuj fenestroj
 content-blocking-cross-site-tracking-cookies = Interretejaj spuriloj
 content-blocking-all-cross-site-cookies-private-windows = Interretejajn kuketojn en privataj fenestroj
 content-blocking-cross-site-tracking-cookies-plus-isolate = Interretejaj spurilaj kuketoj, kaj izoli ceterajn kuketojn
@@ -979,6 +983,7 @@ content-blocking-etp-standard-tcp-rollout-checkbox =
 # "Contains" here means "isolates", "limits".
 content-blocking-etp-standard-tcp-rollout-description = La totala protekto kontraŭ kuketoj limigas kuketojn al la retejo kie ili estas, tiel ke spuriloj ne povas uzi ilin por sekvi vin inter retejoj.
 content-blocking-etp-standard-tcp-rollout-learn-more = Pli da informo
+content-blocking-etp-standard-tcp-title = Tio inkluzivas plenan protekton kontraŭ kuketoj, nia ĝisnune plej pova privateca trajto
 content-blocking-warning-title = Atentu!
 content-blocking-and-isolating-etp-warning-description-2 = Tiu ĉi agordo povas mismontri aŭ misfunkciigi retejojn. Se iu retejo ne bone funkcias aŭ videblas, vi povas malaktivigi la protekton kontaŭ spurado por tiu retejo, tiel ke ĝi ŝargos la tutan enhavon.
 content-blocking-warning-learn-how = Pli da informo
@@ -1140,7 +1145,3 @@ httpsonly-radio-disabled =
 desktop-folder-name = Labortablo
 downloads-folder-name = Elŝutoj
 choose-download-folder-title = Elekti dosierujon por elŝutoj:
-# Variables:
-#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
-save-files-to-cloud-storage =
-    .label = Konservi dosierojn en { $service-name }

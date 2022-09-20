@@ -292,6 +292,13 @@ theme-disabled-heading = Onemogočeno
 theme-disabled-heading2 = Shranjene teme
 theme-monochromatic-heading = Barvne kombinacije
 theme-monochromatic-subheading = Živahne nove barvne kombinacije za { -brand-product-name }. Le še kratek čas.
+# Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
+theme-colorways-button = Preizkusite barvne kombinacije
+# Refers to the button label for the colorways card when a user has a colorway theme enabled.
+theme-colorways-button-colorway-enabled = Spremeni barvno kombinacijo
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
+colorway-collection-expiry-label = Poteče: { DATETIME($expiryDate, month: "long", day: "numeric") }
 plugin-enabled-heading = Omogočeno
 plugin-disabled-heading = Onemogočeno
 dictionary-enabled-heading = Omogočeno
@@ -407,6 +414,7 @@ addon-page-options-button =
 # Variables:
 #   $version (String): application version.
 details-notification-incompatible = Dodatek { $name } ni združljiv z brskalnikom { -brand-short-name } { $version }.
+details-notification-incompatible-link = Več informacij
 details-notification-unsigned-and-disabled = { $name } ni bilo mogoče potrditi za uporabo v { -brand-short-name }u, zato je onemogočen.
 details-notification-unsigned-and-disabled-link = Več informacij
 details-notification-unsigned = { $name } ni bilo mogoče potrditi za uporabo v { -brand-short-name }u. Bodite pazljivi.

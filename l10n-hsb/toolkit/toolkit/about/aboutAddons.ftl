@@ -286,7 +286,17 @@ theme-disabled-heading = Znjemóžnjeny
 theme-disabled-heading2 = Składowane drasty
 theme-monochromatic-heading = Barbowe kombinacije
 theme-monochromatic-subheading = Žiwe nowe barbowe kombinacije z { -brand-product-name }. Za wobmjezowany čas k dispoziciji.
+# Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
 theme-colorways-button = Barbowe kombinacije wupruwować
+colorway-collection-independent-voices-subheading = Dajće { -brand-short-name } so wjace kaž wy čuć.
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires.
+colorway-collection-expiry-date-span = Płaćiwy do { DATETIME($expiryDate, month: "long", day: "numeric") }
+# Refers to the button label for the colorways card when a user has a colorway theme enabled.
+theme-colorways-button-colorway-enabled = Barbowu kombinaciju změnić
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
+colorway-collection-expiry-label = Płaćiwy do { DATETIME($expiryDate, month: "long", day: "numeric") }
 plugin-enabled-heading = Zmóžnjeny
 plugin-disabled-heading = Znjemóžnjeny
 dictionary-enabled-heading = Zmóžnjeny
@@ -402,6 +412,7 @@ addon-page-options-button =
 # Variables:
 #   $version (String): application version.
 details-notification-incompatible = { $name } kompatibelny z { -brand-short-name } { $version } njeje.
+details-notification-incompatible-link = Dalše informacije
 details-notification-unsigned-and-disabled = { $name } njeda so za wužiwanje w { -brand-short-name } wobkrućić a je so znjemóžnił.
 details-notification-unsigned-and-disabled-link = Dalše informacije
 details-notification-unsigned = { $name } njeda so za wužiwanje w { -brand-short-name } wobkrućić. Pokročujće z kedźbliwosću.

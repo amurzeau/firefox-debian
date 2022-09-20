@@ -102,7 +102,7 @@
 <!ENTITY selectMenu.label "Виділити">
 <!ENTITY selectMenu.accesskey "и">
 <!ENTITY all.label "Усі">
-<!ENTITY all.accesskey "В">
+<!ENTITY all.accesskey "У">
 <!ENTITY selectThreadCmd.label "Розмову">
 <!ENTITY selectThreadCmd.accesskey "Р">
 <!ENTITY selectThreadCmd.key "a">
@@ -120,8 +120,8 @@
 <!ENTITY redoMoveMsgCmd.label "Повторити переміщення повідомлення">
 <!ENTITY undoCopyMsgCmd.label "Скасувати копіювання повідомлення">
 <!ENTITY redoCopyMsgCmd.label "Повторити копіювання повідомлення">
-<!ENTITY undoMarkAllCmd.label "Скасувати помітку всіх як прочитаних">
-<!ENTITY redoMarkAllCmd.label "Повторити помітку всіх як прочитаних">
+<!ENTITY undoMarkAllCmd.label "Скасувати позначення всіх прочитаними">
+<!ENTITY redoMarkAllCmd.label "Повторити позначення всіх прочитаними">
 <!ENTITY undoDefaultCmd.label "Скасувати">
 <!ENTITY undoDefaultCmd.accesskey "С">
 <!ENTITY redoDefaultCmd.label "Повторити">
@@ -145,7 +145,7 @@
 <!ENTITY messagePaneVertical.accesskey "В">
 <!ENTITY showFolderPaneCmd.label "Панель тек">
 <!ENTITY showFolderPaneCmd.accesskey "т">
-<!ENTITY showFolderPaneColsCmd.label "Колонки панелі тек">
+<!ENTITY showFolderPaneColsCmd.label "Стовпчики панелі тек">
 <!ENTITY showFolderPaneColsCmd.accesskey "н">
 <!ENTITY showMessageCmd.label "Панель повідомлень">
 <!ENTITY showMessageCmd.accesskey "О">
@@ -155,7 +155,7 @@
 <!ENTITY unifiedFolders.label "Об’єднані">
 <!ENTITY unifiedFolders.accesskey "є">
 <!ENTITY allFolders.label "Усі">
-<!ENTITY allFolders.accesskey "В">
+<!ENTITY allFolders.accesskey "У">
 <!ENTITY unreadFolders.label "Непрочитані">
 <!ENTITY unreadFolders.accesskey "Н">
 <!ENTITY favoriteFolders.label "Улюблені">
@@ -213,7 +213,7 @@
 <!ENTITY threads.label "Розмови">
 <!ENTITY threads.accesskey "Р">
 <!ENTITY allMsgsCmd.label "Усі">
-<!ENTITY allMsgsCmd.accesskey "В">
+<!ENTITY allMsgsCmd.accesskey "У">
 <!ENTITY expandAllThreadsCmd.label "Розгорнути всі розмови">
 <!ENTITY expandAllThreadsCmd.accesskey "Р">
 <!ENTITY expandAllThreadsCmd.key "*">
@@ -232,7 +232,7 @@
 <!ENTITY headersMenu.label "Заголовки">
 <!ENTITY headersMenu.accesskey "З">
 <!ENTITY headersAllCmd.label "Усі">
-<!ENTITY headersAllCmd.accesskey "В">
+<!ENTITY headersAllCmd.accesskey "У">
 <!ENTITY headersNormalCmd.label "Звичайні">
 <!ENTITY headersNormalCmd.accesskey "З">
 <!ENTITY bodyMenu.label "Вміст повідомлення">
@@ -244,7 +244,7 @@
 <!ENTITY bodyAsPlaintext.label "У вигляді звичайного тексту">
 <!ENTITY bodyAsPlaintext.accesskey "т">
 <!ENTITY bodyAllParts.label "Усіх частин тіла">
-<!ENTITY bodyAllParts.accesskey "В">
+<!ENTITY bodyAllParts.accesskey "У">
 
 <!ENTITY bodyMenuFeed.label "Повідомлення зі стрічки новин як">
 <!ENTITY bodyMenuFeed.accesskey "с">
@@ -287,7 +287,7 @@
 <!-- Go Menu -->
 <!ENTITY goMenu.label "Перехід">
 <!ENTITY goMenu.accesskey "П">
-<!ENTITY nextMenu.label "Наступний">
+<!ENTITY nextMenu.label "Далі">
 <!ENTITY nextMenu.accesskey "Н">
 <!ENTITY nextMsgCmd.label "Повідомлення">
 <!ENTITY nextMsgCmd.accesskey "в">
@@ -316,7 +316,6 @@
 <!ENTITY goBackCmd.commandKey "[">
 <!ENTITY goChatCmd.label "Чат">
 <!ENTITY goChatCmd.accesskey "Ч">
-<!ENTITY goChatCmd2.key "H">
 <!ENTITY prevStarredMsgCmd.label "Повідомлення з зіркою">
 <!ENTITY prevStarredMsgCmd.accesskey "З">
 <!ENTITY folderMenu.label "Тека">
@@ -391,7 +390,7 @@
 <!ENTITY watchThreadMenu.label "Відстежувати розмову">
 <!ENTITY watchThreadMenu.accesskey "ж">
 <!ENTITY watchThreadMenu.key "w">
-<!ENTITY tagMenu.label "Помітити">
+<!ENTITY tagMenu.label "Позначити міткою">
 <!ENTITY tagMenu.accesskey "м">
 <!ENTITY tagCmd0.key "0">
 <!ENTITY tagCmd1.key "1">
@@ -417,7 +416,7 @@
 <!ENTITY markReadByDateCmd.accesskey "ч">
 <!ENTITY markReadByDateCmd.key "c">
 <!ENTITY markAllReadCmd.label "Усі прочитаними">
-<!ENTITY markAllReadCmd.accesskey "В">
+<!ENTITY markAllReadCmd.accesskey "п">
 <!ENTITY markAllReadCmd.key "c">
 <!ENTITY markStarredCmd.label "Додати зірочку">
 <!ENTITY markStarredCmd.accesskey "Д">
@@ -520,7 +519,7 @@
 <!ENTITY fileButton.label "Помістити">
 <!ENTITY archiveButton.label "Архівувати">
 <!ENTITY openConversationButton.label "Розмова">
-<!ENTITY nextButton.label "Наступний">
+<!ENTITY nextButton.label "Далі">
 <!ENTITY nextButtonToolbarItem.label "Наступний нечитаний">
 <!ENTITY nextMsgButton.label "Наступний">
 <!ENTITY previousButton.label "Попередній">
@@ -570,7 +569,7 @@
 <!ENTITY stopButton.tooltip "Зупинити поточну передачу даних">
 <!ENTITY addressBookButton.tooltip "Відкрити адресну книгу">
 <!ENTITY chatButton.tooltip "Показати вкладку чату">
-<!ENTITY tagButton.tooltip "Помітити повідомлення">
+<!ENTITY tagButton.tooltip "Позначити повідомлення міткою">
 <!ENTITY compactButton.tooltip "Вилучити видалені повідомлення з вибраної теки">
 <!ENTITY appmenuButton1.tooltip "Відкрити меню &brandShortName;">
 
@@ -875,7 +874,7 @@
 <!ENTITY ViewContact.accesskey "П">
 <!ENTITY SubscribeToNewsgroup.label "Підписатись на групу новин">
 <!ENTITY SubscribeToNewsgroup.accesskey "н">
-<!ENTITY SendMessageTo.label "Створити повідомлення до">
+<!ENTITY SendMessageTo.label "Створити повідомлення">
 <!ENTITY SendMessageTo.accesskey "с">
 <!ENTITY CopyEmailAddress.label "Копіювати адресу е-пошти">
 <!ENTITY CopyEmailAddress.accesskey "К">
@@ -885,7 +884,7 @@
 <!ENTITY CopyNewsgroupName.accesskey "К">
 <!ENTITY CopyNewsgroupURL.label "Копіювати URL групи новин">
 <!ENTITY CopyNewsgroupURL.accesskey "U">
-<!ENTITY CreateFilterFrom.label "Створити фільтр з…">
+<!ENTITY CreateFilterFrom.label "Створити фільтр…">
 <!ENTITY CreateFilterFrom.accesskey "ф">
 <!ENTITY reportPhishingURL.label "Повідомити про шахрайство">
 <!ENTITY reportPhishingURL.accesskey "ш">

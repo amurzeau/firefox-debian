@@ -38,11 +38,45 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } — (პირადი ფანჯარა)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } — (პირადი ფანჯარა)
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-window-titles =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } – პირადი ფანჯარა
+    .data-content-title-default = { $content-title } – { -brand-full-name }
+    .data-content-title-private = { $content-title } – { -brand-full-name } პირადი ფანჯარა
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox — (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac-window-titles =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } – პირადი ფანჯარა
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } – პირადი ფანჯარა
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
 # `browser-main-window` and `browser-main-window-mac`.
 browser-main-window-title = { -brand-full-name }
+private-browsing-shortcut-text = { -brand-short-name } – პირადი ფანჯარა
 
 ##
 
@@ -122,6 +156,7 @@ urlbar-tabtosearch-onboard = აირჩიეთ ეს მალსახმ�
 urlbar-search-mode-bookmarks = სანიშნები
 urlbar-search-mode-tabs = ჩანართები
 urlbar-search-mode-history = ისტორია
+urlbar-search-mode-actions = მოქმედებები
 
 ##
 
@@ -164,6 +199,12 @@ page-action-manage-extension =
     .label = გაფართოების მართვა…
 page-action-remove-extension =
     .label = გაფართოების მოცილება
+page-action-manage-extension2 =
+    .label = გაფართოების მართვა…
+    .accesskey = ფ
+page-action-remove-extension2 =
+    .label = გაფართოების ამოშლა
+    .accesskey = ლ
 
 ## Auto-hide Context Menu
 
@@ -222,6 +263,68 @@ search-one-offs-tabs =
     .tooltiptext = ჩანართები ({ $restrict })
 search-one-offs-history =
     .tooltiptext = ისტორია ({ $restrict })
+search-one-offs-actions =
+    .tooltiptext = მოქმედებები ({ $restrict })
+
+## QuickActions are shown in the urlbar as the user types a matching string
+
+
+## QuickActions are shown in the urlbar as the user types a matching string
+## The -cmd- strings are comma separated list of keywords that will match
+## the action.
+
+# Opens the about:addons page in the home / recommendations section
+quickactions-addons = დამატებების ნახვა
+quickactions-cmd-addons = დამატებები, გაფართოებები, თემები
+quickactions-cmd-addons2 = დამატებები
+# Opens the bookmarks library window
+quickactions-bookmarks = სანიშნების ნახვა
+quickactions-cmd-bookmarks = სანიშნები
+# Opens a SUMO article explaining how to clear history
+quickactions-clearhistory = ისტორიის გასუფთავება
+quickactions-cmd-clearhistory = ისტორიის გასუფთავება
+# Opens about:downloads page
+quickactions-downloads = ჩამოტვირთვების გახსნა
+quickactions-cmd-downloads = ჩამოტვირთვები
+# Opens about:addons page in the extensions section
+quickactions-extensions = გაფართოებების მართვა
+quickactions-cmd-extensions = გაფართოებები
+# Opens the devtools web inspector
+quickactions-inspector = გვერდის გამოკვლევა
+quickactions-cmd-inspector = გამოკვლევა, შემუშავება
+# Opens about:logins
+quickactions-logins = ანგარიშების ნახვა
+quickactions-cmd-logins = ანგარიშები და პაროლები
+# Opens about:addons page in the plugins section
+quickactions-plugins = მოდულების მართვა
+quickactions-cmd-plugins = მოდულები
+# Opens the print dialog
+quickactions-print = ამობეჭდვა
+quickactions-cmd-print = ამობეჭდვა
+# Opens a new private browsing window
+quickactions-private = პირადი ფანჯრის გახსნა
+quickactions-cmd-private = პირადი თვალიერება
+# Opens a SUMO article explaining how to refresh
+quickactions-refresh = შეკეთდეს { -brand-short-name }
+quickactions-cmd-refresh = გაახლება
+# Restarts the browser
+quickactions-restart = ხელახლა გაეშვას { -brand-short-name }
+quickactions-cmd-restart = ხელახლა გაშვება
+# Opens the screenshot tool
+quickactions-screenshot2 = ეკრანის სურათის გადაღება
+quickactions-cmd-screenshot = ეკრანის ანაბეჭდი
+# Opens about:preferences
+quickactions-settings = პარამეტრების გახსნა
+quickactions-cmd-settings = პარამეტრები, მახასიათებლები, გამართვა
+# Opens about:addons page in the themes section
+quickactions-themes = თემების მართვა
+quickactions-cmd-themes = თემები
+# Opens a SUMO article explaining how to update the browser
+quickactions-update = განახლდეს { -brand-short-name }
+quickactions-cmd-update = განახლება
+# Opens the view-source UI with current pages source
+quickactions-viewsource = წყაროს ჩვენება
+quickactions-cmd-viewsource = წყაროს ნახვა, პირველწყარო
 
 ## Bookmark Panel
 
@@ -435,6 +538,10 @@ urlbar-placeholder-search-mode-other-history =
 urlbar-placeholder-search-mode-other-tabs =
     .placeholder = მიუთითეთ საძიებო ფრაზა
     .aria-label = ძიება ჩანართებში
+# This placeholder is used when searching quick actions.
+urlbar-placeholder-search-mode-other-actions =
+    .placeholder = მიუთითეთ საძიებო ფრაზა
+    .aria-label = ძიების მოქმედებები
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -510,6 +617,7 @@ urlbar-result-action-calculator-result = = { $result }
 urlbar-result-action-search-bookmarks = სანიშნების ძიება
 urlbar-result-action-search-history = ისტორიის ძიება
 urlbar-result-action-search-tabs = ჩანართების ძიება
+urlbar-result-action-search-actions = ძიების მოქმედებები
 
 ## Labels shown above groups of urlbar results
 
@@ -523,6 +631,9 @@ urlbar-group-firefox-suggest =
 #  $engine (String): the name of the search engine providing the suggestions
 urlbar-group-search-suggestions =
     .label = { $engine } შემოთავაზებები
+# A label shown above Quick Actions in the urlbar results.
+urlbar-group-quickactions =
+    .label = სწრაფი მოქმედებები
 
 ## Full Screen and Pointer Lock UI
 
@@ -598,6 +709,8 @@ bookmarks-tools =
     .label = სანიშნების ხელსაწყოები
 bookmarks-bookmark-edit-panel =
     .label = სანიშნის ჩასწორება
+bookmarks-subview-edit-bookmark =
+    .label = ამ სანიშნის ჩასწორება…
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -614,6 +727,9 @@ bookmarks-toolbar-placeholder-button =
 # "Bookmark" is a verb, as in "Add current tab to bookmarks".
 bookmarks-current-tab =
     .label = მიმდინარე ჩანართის ჩანიშვნა
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-subview-bookmark-tab =
+    .label = მიმდინარე ჩანართის ჩანიშვნა…
 
 ## Library Panel items
 
@@ -779,7 +895,7 @@ tabs-toolbar-list-all-tabs =
 
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
 restore-session-startup-suggestion-message = <strong>გაიხსნას წინა ჩანართები?</strong> თუ გსურთ, { -brand-short-name } აღდგეს წინა მდგომარეობით, გახსენით მენიუ <img data-l10n-name="icon"/> და მონახეთ ისტორია.
-restore-session-startup-suggestion-button = მანახეთ, როგორ
+restore-session-startup-suggestion-button = მიჩვენე, როგორ
 
 ## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
 
@@ -787,3 +903,11 @@ data-reporting-notification-message = { -brand-short-name } ავტომა�
 data-reporting-notification-button =
     .label = გასაზიარებელ მონაცემთა შერჩევა
     .accesskey = ზ
+# Label for the indicator shown in the private browsing window titlebar.
+private-browsing-indicator-label = პირადი ფანჯარა
+
+## Unified extensions (toolbar) button
+
+unified-extensions-button =
+    .label = გაფართოებები
+    .tooltiptext = გაფართოებები

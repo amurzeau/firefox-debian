@@ -67,7 +67,9 @@ policy-Extensions = Instalatu, desinstalatu edo blokeatu hedapenak. Instalatzeko
 policy-ExtensionSettings = Kudeatu hedapenen instalazioko arlo guztiak.
 policy-ExtensionUpdate = Gaitu edo desgaitu hedapenen eguneraketa automatikoa.
 policy-FirefoxHome = Konfiguratu Firefox Home.
+policy-FirefoxHome2 = Konfiguratu { -firefox-home-brand-name }.
 policy-FlashPlugin = Baimendu edo ukatu Flash plugina erabiltzea.
+policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Hitz bakarreko sarrerak helbide-barran idaztean, behartu intranet gunerako nabigazio zuzena bilaketa egin ordez.
 policy-Handlers = Konfiguratu aplikazio-maneiatzaile lehenetsiak.
 policy-HardwareAcceleration = Ez badago ezarrita, hardware-azelerazioa desgaituko da.
 # “lock” means that the user won’t be able to change this setting
@@ -113,8 +115,10 @@ policy-SecurityDevices = Instalatu PKCS #11 moduluak.
 policy-ShowHomeButton = Erakutsi hasiera-orriko botoia tresna-barran.
 policy-SSLVersionMax = Ezarri SSL bertsio maximoa.
 policy-SSLVersionMin = Ezarri SSL bertsio minimoa.
+policy-StartDownloadsInTempDirectory = Behartu deskargak aldi baterako kokaleku lokalean hastea deskarga-direktorio lehenetsiaren ordez.
 policy-SupportMenu = Gehitu euskarrirako menu-elementu pertsonalizatua laguntzaren menuan.
 policy-UserMessaging = Ez erakutsi zenbait mezu erabiltzaileari.
+policy-UseSystemPrintDialog = Inprimatu sistemaren inprimatzeko elkarrizketa-koadroa erabiliz…
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Blokeatu zenbait webgune bisitatzea. Irakurri dokumentazioa formatuaren gaineko xehetasun gehiagorako.
 policy-Windows10SSO = Baimendu Windows saio-hasiera bakarra (SSO) Microsoft-, laneko eta eskolako kontuentzat.

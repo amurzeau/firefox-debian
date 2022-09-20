@@ -291,7 +291,17 @@ theme-disabled-heading = Вимкнено
 theme-disabled-heading2 = Збережені теми
 theme-monochromatic-heading = Забарвлення
 theme-monochromatic-subheading = Сповнені життя нові барви від { -brand-product-name }. Доступні впродовж обмеженого часу.
-theme-colorways-button = Спробуйте Colorways
+# Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
+theme-colorways-button = Спробувати забарвлення
+colorway-collection-independent-voices-subheading = Зробіть так, щоб { -brand-short-name } був ближчим до вас.
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires.
+colorway-collection-expiry-date-span = Термін дії завершується { DATETIME($expiryDate, month: "long", day: "numeric") }
+# Refers to the button label for the colorways card when a user has a colorway theme enabled.
+theme-colorways-button-colorway-enabled = Змінити Colorway
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
+colorway-collection-expiry-label = Термін дії завершується { DATETIME($expiryDate, month: "long", day: "numeric") }
 plugin-enabled-heading = Увімкнено
 plugin-disabled-heading = Вимкнено
 dictionary-enabled-heading = Увімкнено
@@ -406,6 +416,7 @@ addon-page-options-button =
 # Variables:
 #   $version (String): application version.
 details-notification-incompatible = { $name } несумісний з { -brand-short-name } { $version }.
+details-notification-incompatible-link = Докладніше
 details-notification-unsigned-and-disabled = Додаток { $name } не був перевірений для використання в { -brand-short-name } і був вимкнений.
 details-notification-unsigned-and-disabled-link = Докладніше
 details-notification-unsigned = Додаток { $name } не був перевірений для використання в { -brand-short-name }. Продовжуйте з обережністю.

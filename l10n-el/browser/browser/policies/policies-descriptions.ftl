@@ -67,7 +67,9 @@ policy-Extensions = Εγκατάσταση, αφαίρεση ή κλείδωμα
 policy-ExtensionSettings = Διαχείριση όλων των πτυχών της εγκατάστασης επεκτάσεων.
 policy-ExtensionUpdate = Ενεργοποίηση ή απενεργοποίηση αυτόματων ενημερώσεων επεκτάσεων.
 policy-FirefoxHome = Ρύθμιση παραμέτρων της Αρχικής Firefox.
+policy-FirefoxHome2 = Διαμόρφωση του { -firefox-home-brand-name }.
 policy-FlashPlugin = Αποδοχή ή απόρριψη χρήσης του αρθρώματος Flash.
+policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Αναγκαστική πλοήγηση στον ιστότοπο ενδοδικτύου, αντί για αναζήτηση κατά την πληκτρολόγηση μίας λέξης στη γραμμή διευθύνσεων.
 policy-Handlers = Ρύθμιση παραμέτρων χειριστών προεπιλεγμένης εφαρμογής.
 policy-HardwareAcceleration = Αν είναι ψευδές, απενεργοποίηση επιτάχυνσης υλικού.
 # “lock” means that the user won’t be able to change this setting
@@ -113,6 +115,7 @@ policy-SecurityDevices = Εγκατάσταση μονάδων PKCS #11.
 policy-ShowHomeButton = Εμφάνιση του κουμπιού αρχικής σελίδας στη γραμμή εργαλείων.
 policy-SSLVersionMax = Ορισμός μέγιστης έκδοσης SSL.
 policy-SSLVersionMin = Ορισμός ελάχιστης έκδοσης SSL.
+policy-StartDownloadsInTempDirectory = Εξαναγκαστική έναρξη λήψεων σε μια τοπική, προσωρινή τοποθεσία και όχι στον προεπιλεγμένο κατάλογο λήψεων.
 policy-SupportMenu = Προσθήκη προσαρμοσμένου στοιχείου μενού υποστήριξης στο μενού βοήθειας.
 policy-UserMessaging = Απόκρυψη ορισμένων μηνυμάτων από τον χρήστη.
 policy-UseSystemPrintDialog = Εκτύπωση μέσω του διαλόγου εκτύπωσης συστήματος.

@@ -184,6 +184,7 @@ preferences-web-appearance-header = Aparéncia dels sites web
 preferences-web-appearance-description = D’unes sites web adaptan lor jòc de colors segon vòstras preferéncias. Causissètz lo jòc de colors que volètz emplegar per aqueles sites.
 preferences-web-appearance-choice-browser = Tèma de { -brand-short-name }
 preferences-web-appearance-choice-system = Tèma del sistèma
+preferences-web-appearance-choice-auto = Automatic
 preferences-web-appearance-choice-light = Clar
 preferences-web-appearance-choice-dark = Escur
 preferences-web-appearance-choice-tooltip-browser =
@@ -213,8 +214,8 @@ preferences-colors-description = Subrecargar las colors per defaut de { -brand-s
 preferences-colors-manage-button =
     .label = Gestion de las colors…
     .accesskey = c
-preferences-fonts-header = Poliças
-default-font = Poliça per defaut
+preferences-fonts-header = Polissas
+default-font = Polissa per defaut
     .accesskey = D
 default-font-size = Talha
     .accesskey = l
@@ -263,9 +264,6 @@ check-user-spelling =
 
 files-and-applications-title = Fichièrs e aplicacions
 download-header = Telecargaments
-download-save-to =
-    .label = Enregistrar los fichièrs dins lo dossièr
-    .accesskey = n
 download-save-where = Enregistrar los fichièrs dins lo dossièr
     .accesskey = n
 download-choose-folder =
@@ -930,7 +928,11 @@ addressbar-locbar-topsites-option =
 addressbar-locbar-engines-option =
     .label = Motors de recèrca
     .accesskey = a
+addressbar-locbar-quickactions-option =
+    .label = Accions rapidas
+    .accesskey = A
 addressbar-suggestions-settings = Cambiar las preferéncias per las suggestions del motor de recèrca
+addressbar-quickactions-learn-more = Ne saber mai
 
 ## Privacy Section - Content Blocking
 
@@ -1086,6 +1088,10 @@ addon-recommendations-link = Ne saber mai
 collection-health-report-disabled = Lo rapòrt de donadas es desactivat per aquela configuracion de compilacion
 collection-backlogged-crash-reports-with-link = Autorizar { -brand-short-name } a enviar de rapòrt de plantatge en espèra a vòstre nom <a data-l10n-name="crash-reports-link">Ne saber mai</a>
     .accesskey = A
+privacy-segmentation-radio-off =
+    .label = Utilizar las recomandacions { -brand-product-name }
+privacy-segmentation-radio-on =
+    .label = Mostrar las informacions detalhadas
 
 ## Privacy Section - Security
 ##
@@ -1140,7 +1146,3 @@ httpsonly-radio-disabled =
 desktop-folder-name = Burèu
 downloads-folder-name = Telecargaments
 choose-download-folder-title = Causissètz lo dossièr de telecargament :
-# Variables:
-#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
-save-files-to-cloud-storage =
-    .label = Enregistrar los fichièrs dins { $service-name }

@@ -4,6 +4,7 @@
 
 e2e-intro-description = Za pošiljanje šifriranih ali digitalno podpisanih sporočil morate nastaviti tehnologijo šifriranja, bodisi OpenPGP bodisi S/MIME.
 e2e-intro-description-more = Izberite si osebni ključ za omogočitev uporabe OpenPGP ali osebno digitalno potrdilo za omogočitev uporabe S/MIME. Za osebni ključ ali digitalno potrdilo imate ustrezen skrivni ključ.
+e2e-signing-description = Digitalni podpis se omogoča prejemnikom prepričati, da ste sporočilo poslali vi in da vsebina ni bila spremenjena. Šifrirana sporočila so privzeto vedno podpisana.
 e2e-sign-message =
     .label = Podpiši nešifrirana sporočila
     .accesskey = e
@@ -244,6 +245,13 @@ openpgp-key-details-id-label =
 openpgp-key-details-key-type-label = Vrsta
 openpgp-key-details-key-part-label =
     .label = Del ključa
+openpgp-key-details-attr-ignored = Opozorilo: ta ključ morda ne bo deloval kot pričakovano, ker nekatere njegove lastnosti niso varne in bodo morda prezrte.
+openpgp-key-details-attr-upgrade-sec = Nevarne lastnosti morate nadgraditi.
+openpgp-key-details-attr-upgrade-pub = Obrnite se na lastnika tega ključa, naj nadgradi nevarne lastnosti.
+openpgp-key-details-upgrade-unsafe =
+    .label = Nadgradi nevarne lastnosti
+    .accesskey = N
+openpgp-key-details-upgrade-ok = Ključ je bil uspešno nadgrajen. Nadgrajeni javni ključ delite s svojimi dopisniki.
 openpgp-key-details-algorithm-label =
     .label = Algoritem
 openpgp-key-details-size-label =
@@ -355,6 +363,7 @@ key-do-you-accept = Ali sprejemate ta ključ za preverjanje digitalnih podpisov 
 # Strings enigmailMsgComposeOverlay.js
 cannot-use-own-key-because = Sporočila ni mogoče poslati, ker je prišlo do težave z vašim osebnim ključem. { $problem }
 cannot-encrypt-because-missing = Tega sporočila ni mogoče poslati s šifriranjem od konca do konca zaradi težav s ključi naslednjih prejemnikov: { $problem }
+window-locked = Okno za pisanje sporočila je zaklenjeno; pošiljanje preklicano
 # Strings in mimeDecrypt.jsm
 mime-decrypt-encrypted-part-concealed-data = To je šifriran del sporočila. Odpreti ga morate v ločenem oknu, tako da kliknete na priponko.
 # Strings in keyserver.jsm
@@ -373,6 +382,7 @@ filter-decrypt-move-warn-experimental =
     Močno priporočamo, da najprej poskusite s filtrom "Ustvari dešifrirano kopijo", natančno preverite izid in uporabite ta filter šele, ko ste zadovoljni z izidom.
 filter-term-pgpencrypted-label = Šifrirano z OpenPGP
 filter-key-required = Izbrati morate ključ prejemnika.
+filter-key-not-found = Ključa za šifriranje za "{ $desc }" ni bilo mogoče najti.
 # Strings filtersWrapper.jsm
 filter-decrypt-move-label = Trajno dešifriraj (OpenPGP)
 filter-decrypt-copy-label = Ustvari dešifrirano kopijo (OpenPGP)
@@ -421,6 +431,7 @@ save-keys-ok = Ključi so bili uspešno shranjeni
 save-keys-failed = Shranjevanje ključev ni uspelo
 default-pub-key-filename = Izvozeni_javni_kljuci
 default-pub-sec-key-filename = Varnostna_kopija_skrivnih_kljucev
+refresh-key-warn = Opozorilo: osvežitev vseh ključev je lahko, odvisno od števila ključev in hitrosti povezave, precej dolgotrajen postopek!
 preview-failed = Datoteke z javnim ključem ni mogoče prebrati.
 general-error = Napaka: { $reason }
 dlg-button-delete = &Izbriši
@@ -451,10 +462,28 @@ delete-key-title = Izbriši ključ OpenPGP
 delete-external-key-title = Odstrani zunanji ključ GnuPG
 delete-external-key-description = Ali ste prepričani, da želite odstraniti ta ID zunanjega ključa GnuPG?
 key-in-use-title = Ključ OpenPGP je trenutno v uporabi
+delete-key-in-use-description = Ni mogoče nadaljevati! Ključ, ki ste ga izbrali za brisanje, trenutno uporablja ta identiteta. Izberite drug ključ, ali ne izberite nobenega in poskusite znova.
+revoke-key-in-use-description = Ni mogoče nadaljevati! Ključ, ki ste ga izbrali za preklic, trenutno uporablja ta identiteta. Izberite drug ključ, ali ne izberite nobenega in poskusite znova.
+key-error-not-accepted-as-personal = Niste potrdili, da je ključ z ID-jem "{ $keySpec }" vaš osebni ključ.
+# Strings used in enigmailKeyManager.js & windows.jsm
+need-online = Možnost, ki ste jo izbrali, ni na voljo v načinu brez povezave. Povežite se z internetom in poskusite znova.
+# Strings used in keyRing.jsm & keyLookupHelper.jsm
+no-key-found2 = Najden ni bil noben uporaben ključ, ki bi ustrezal navedenim kriterijem iskanja.
+no-update-found = Ključe, ki so bili odkriti na spletu, že imate.
 import-key-confirm = Ali želite uvoziti javne ključe, vdelane v sporočilo?
 fail-key-import = Napaka – uvažanje ključa ni uspelo
 file-write-failed = Pisanje v datoteko { $output } ni bilo mogoče
 confirm-permissive-import = Uvoz ni uspel. Ključ, ki ga poskušate uvoziti, je morda poškodovan ali uporablja neznane atribute. Ali želite poskusiti uvoziti dele, ki so pravilni? To lahko povzroči uvoz nepopolnih in neuporabnih ključev.
+# Strings used in trust.jsm
+key-valid-unknown = neznan
+key-valid-invalid = neveljaven
+key-valid-disabled = onemogočen
+key-valid-revoked = preklican
+key-valid-expired = pretečen
+key-trust-untrusted = nevreden zaupanja
+key-trust-marginal = obrobni
+key-trust-full = zaupanja vreden
+key-trust-ultimate = dokončen
 key-trust-group = (skupina)
 # Strings used in commonWorkflows.js
 import-key-file = Uvozi datoteko ključa OpenPGP
@@ -476,8 +505,13 @@ key-man-button-generate-key-continue = &Nadaljuj ustvarjanje ključev
 
 failed-decrypt = Napaka – dešifriranje ni uspelo
 fix-broken-exchange-msg-failed = Tega sporočila ni mogoče popraviti.
+attachment-no-match-from-signature = Datoteke s podpisom "{ $attachment }" ni mogoče povezati s priponko
+attachment-no-match-to-signature = Priponke "{ $attachment }" ni mogoče povezati z datoteko s podpisom
 signature-verified-ok = Podpis za priponko { $attachment } je bil uspešno preverjen
 signature-verify-failed = Podpisa za priponko { $attachment } ni bilo mogoče preveriti
+decrypt-ok-no-sig =
+    Opozorilo
+    Dešifriranje je bilo uspešno, vendar podpisa ni bilo mogoče pravilno preveriti
 msg-ovl-button-cont-anyway = &Vseeno nadaljuj
 enig-content-note = *Priponke k temu sporočilu niso podpisane niti šifrirane*
 # Strings used in enigmailMsgComposeOverlay.js
@@ -485,6 +519,7 @@ msg-compose-button-send = &Pošlji sporočilo
 msg-compose-details-button-label = Podrobnosti …
 msg-compose-details-button-access-key = d
 send-aborted = Pošiljanje je prekinjeno.
+key-not-trusted = Ni dovolj zaupanja za ključ "{ $key }"
 key-not-found = Ključa "{ $key }" ni mogoče najti
 key-revoked = Ključ "{ $key }" je preklican
 key-expired = Ključ "{ $key }" je pretekel
@@ -507,9 +542,13 @@ do-import-multiple =
     { $key }
 do-import-one = Uvozi { $name } ({ $id })?
 cant-import = Napaka pri uvažanju javnega ključa
+unverified-reply = Zamaknjeni del sporočila (odgovor) je bil verjetno spremenjen
 key-in-message-body = V telesu sporočila je najden ključ. Kliknite "Uvozi ključ", da ga uvozite
 sig-mismatch = Napaka – Neujemanje podpisov
 invalid-email = Napaka – Neveljavni e-poštni naslovi
+attachment-pgp-key =
+    Priponka "{ $name }", ki jo odpirate, je videti kot datoteka s ključem OpenPGP.
+    Kliknite "Uvozi" za uvoz ključev, ki jih vsebuje, ali "Prikaži" za ogled njene vsebine v brskalniku
 dlg-button-view = &Prikaži
 # Strings used in encryption.jsm
 not-required = Napaka – šifriranje ni zahtevano

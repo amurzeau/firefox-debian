@@ -130,6 +130,10 @@ cfr-doorhanger-video-support-primary-button = Ùraich an-dràsta
 
 ## Spotlight modal shared strings
 
+spotlight-learn-more-collapsed = Barrachd fiosrachaidh
+    .title = Leudaich seo airson barrachd fiosrachaidh mun ghleus
+spotlight-learn-more-expanded = Barrachd fiosrachaidh
+    .title = Dùin
 
 ## VPN promotion dialog for public Wi-Fi users
 ##
@@ -137,10 +141,39 @@ cfr-doorhanger-video-support-primary-button = Ùraich an-dràsta
 ## bit of info about how to improve their privacy and then offered a button
 ## to the Mozilla VPN page and a link to dismiss the dialog.
 
+# This header text can be explicitly wrapped.
+spotlight-public-wifi-vpn-header = Tha coltas gu bheil thu air WiFi poblach
+spotlight-public-wifi-vpn-body = Airson d’ ionad is am brabhsadh a nì thu a chumail falaichte, saoil am b’ fheàirrde dhut Virtual Private Network? Cumaidh e tèarainte thu ’s tu ri brabhsadh ann an àitichean poblach mar puirt-adhair is cafaidhean.
+spotlight-public-wifi-vpn-primary-button = Dìon do phrìobhaideachd le { -mozilla-vpn-brand-name }
+    .accesskey = D
+spotlight-public-wifi-vpn-link = Chan ann an-dràsta
+    .accesskey = C
 
 ## Total Cookie Protection Rollout
 
+# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
+# "Join an early experiment". This header text can be explicitly wrapped.
+spotlight-total-cookie-protection-header = Cuir an àrainneachd as prìobhaidich againn a-riamh fo dheuchainn
+spotlight-total-cookie-protection-body = Cuiridh làn-dìon o bhriosgaidean stad air tracaichean a chleachdas briosgaidean gus do leantainn air feadh an lìn gu dìomhair.
+# "Early access" for this feature rollout means it's a "feature preview" or
+# "soft launch" as not everybody will get it yet.
+spotlight-total-cookie-protection-expanded = Togaidh { -brand-short-name } feansa mun cuairt air na briosgaidean airson ’s nach obraich iad ach air an làrach air a bheil thu agus cuiridh sin bacadh air na tracaichean o bhith gad leantainn. Le bhith a’ cur a’ ghleus seo fo dheuchainn tràth, cuiridh tu ri obair-leasachaidh a’ ghleus seo ach an tog sinn lìon nas fheàrr dhan a h-uile duine.
+spotlight-total-cookie-protection-primary-button = Cuir an làn-dìon o bhriosgaidean air
 spotlight-total-cookie-protection-secondary-button = Chan ann an-dràsta
+cfr-total-cookie-protection-header = Taing dhut-sa, tha { -brand-short-name } nas prìobhaidiche agus nas tèarainte na bha e a-riamh roimhe
+# "Early access" for this feature rollout means it's a "feature preview" or
+# "soft launch". Only those who received it and accepted are shown this message.
+cfr-total-cookie-protection-body = ’S e gleus an làn-dìon o bhriosgaidean an dìon prìobhaideachd as treasa a bh’ againn a-riamh – agus tha e an sàs ann am { -brand-short-name } dhan a h-uile duine o thùs a-nis. Tha sinn fada an comain dhaoine mar thu fhèin a chur fo dheuchainn e tràth. Mòran taing airson eadar-lìon nas fheàrr, nas prìobhaidiche a thogail còmhla rinn.
 
 ## Emotive Continuous Onboarding
 
+spotlight-better-internet-header = Is tusa ceann-toisich eadar-lìn nas fheàrr
+spotlight-better-internet-body = Le bhith a’ cleachdadh { -brand-short-name }, tha thu a’ cur taic ri eadar-lìon fosgailte agus so-ruigsinneach a tha nas fheàrr dhan a h-uile duine.
+spotlight-peace-mind-header = Tha sinn ri do thaobh
+spotlight-peace-mind-body = Bacaidh { -brand-short-name } mu thuaiream 3,000 tracaiche gach mìos. Oir cha bu chòir cas-bhacaidh a bhith eadar thusa agus deagh eadar-lìon.
+spotlight-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Cùm san doca
+       *[other] Prìnich ri bàr nan saothair
+    }
+spotlight-pin-secondary-button = Chan ann an-dràsta
