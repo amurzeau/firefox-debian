@@ -2,7 +2,7 @@ firefox-esr (78.15.0esr-1+nosse~deb9u1) stretch; urgency=medium
 
   * Rebuild without SSE 
 
- -- Alexis Murzeau <amubtdx@gmail.com> Tue, 07 Feb 2023 20:00:19 +0000
+ -- Alexis Murzeau <amubtdx@gmail.com>  Tue, 07 Feb 2023 20:00:19 +0000
 
 firefox-esr (78.15.0esr-1) unstable; urgency=medium
 
