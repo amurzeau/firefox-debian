@@ -1,0 +1,275 @@
+From 7b117c2bfc9a895b2a6f29d63ee2b5fb82976c53 Mon Sep 17 00:00:00 2001
+From: Alexis Murzeau <amubtdx@gmail.com>
+Date: Sun, 4 Sep 2022 16:05:36 +0200
+Subject: [PATCH] Remove dependency on SSE instructions
+
+mozconfig.linux32: global flags, remove sse2 flags and target i686
+       instead of pentium-m.
+
+blink: DenormalDisabler: Disable denormal to zero flush that use stmxcsr
+       instruction (SSE) (Software flush is done instead).
+
+angle: moz.build.common: build gfx/angle without SSE2 (no intrinsics
+       used).
+
+mozbuild: emitter.py: change the order of UNIFIED_SOURCES and SOURCES to
+          make non SSE object files before SSE specific ones when linking
+          libxul.so.
+          Else, the linker might prefer to link in a function defined in
+          a header that use SSE2 instructions over one without SSE2
+          instructions.
+          This the case with gfxImageSurface::GetSize defined in
+          gfx/thebes/gfxImageSurface.h and also included in
+          gfxAlphaRecoverySSE2.cpp.
+          This means gfxImageSurface::GetSize() is defined in a header
+          and is built multiple time, so this happens:
+
+  - Unified sources are built without SSE2 flags, so the
+      definition doesn't have SSE2 instructions. The definition
+      is put in a Unified_xxxx.o file.
+
+  - SSE2 specific file gfxAlphaRecoverySSE2.o is built with
+      SSE2 flags, and contains a definition of gfxImageSurface::GetSize
+      that uses automatically generated SSE2 instruction by g++.
+
+  - Previously, sources were linked before unified sources
+      when linking libxul.so, which I suppose is why the SSE2
+      version of gfxImageSurface::GetSize is used.
+
+  - Reversing the order of SOURCES and UNIFIED_SOURCES makes
+      gcc's linker to use the non-SSE2 version of
+      gfxImageSurface::GetSize.
+
+libwebrtc:
+  BUILD.gn: remove global SSE2 gcc flags (sse2 specific libraries are
+            still built using SSE2 flags to allow runtime detection)
+  ooura: move ooura_fft_sse2.cc compilation in a separate library to set
+         -msse2 flag only for this source file (SSE detection is done at
+         runtime).
+  aec3,agc2: disable the compilation of SSE2 functions to be able to build
+        them without SSE2. SSE2 specific function are not placed in a
+        specific SSE2 dedicated source file, so we need to disable them
+        entierly to prevent any SSE2 instructions in non-SSE2 code paths.
+
+  pffft: modified BUILD.gn to set PFFFT_SIMD_DISABLE define on x86.
+
+A better fix for webrtc would be to move aec3 SSE / NEON functions in a
+a dedicated source file, the same way other SSE functions are made in
+libwebrtc.
+But this requires more file changes.
+
+I've tested it using:
+ - Real hardware with AMD Athlon XP 2600+ processor (supports only SSE
+   but not SSE2)
+ - qemu using `qemu-system-i386 -cpu pentium2,check -m 1G -device ac97
+   -vga std -display gtk -drive
+file=harddisk.img,format=raw,index=0,media=disk -netdev
+user,id=net1,hostfwd=::11023-:22 -device e1000,netdev=net1 -usbdevice
+tablet`
+
+Note that enabling SSE on qemu will also enable SSE2 (even if absent
+from cpuid, there is no illegal instruction errors).
+Using -cpu pentium2 will produce Illegal Instruction on any SSE
+instruction.
+
+To update this patch:
+
+In third_party/libwebrtc:
+  - Regenerate moz.build files using this command (or similar):
+    ./mach python python/mozbuild/mozbuild/gn_processor.py dom/media/webrtc/third_party_build/gn-configs/webrtc.json
+
+  - Search for all occurence of WEBRTC_ARCH_X86_FAMILY in any files
+    not built with msse2 explicitely (mostly aec3 and agc2)
+    Check for definitions of SSE functions inside a file whose name
+    doesn't have 'sse' or 'avx'. In these files, replace
+    WEBRTC_ARCH_X86_FAMILY with WEBRTC_ARCH_X86_64.
+    Example: any modified source files in third_party/libwebrtc.
+
+In any moz.build files, search for SSE2_FLAGS. Remove any occurence
+that doesn't apply to files whose name contains 'sse' or 'avx'.
+
+To check the resulting build, you can use this:
+
+Check that only .o files with 'sse' in their name are returned by these
+commands:
+ - Check for 'movq' instructions:
+   find . -type f -name '*.o' | xargs -I% sh -c 'xxd -p "%" | grep -q -e '660fd600' && echo %'
+
+ - Check for 'stmxcsr' instructions:
+   find . -type f -name '*.o' | xargs -I% sh -c 'xxd -p "%" | grep -q -e '0fae1d' && echo %'
+
+Closes: #961663, #1002600
+---
+ build/unix/mozconfig.linux32                              | 4 ++--
+ dom/media/webaudio/blink/DenormalDisabler.h               | 2 +-
+ gfx/angle/moz.build.common                                | 3 ---
+ .../trunk/webrtc/modules/audio_processing/aec3/fft_data.h | 4 ++--
+ .../modules/audio_processing/aec3/matched_filter.cc       | 6 +++---
+ .../webrtc/modules/audio_processing/aec3/matched_filter.h | 2 +-
+ .../webrtc/modules/audio_processing/aec3/vector_math.h    | 8 ++++----
+ python/mozbuild/mozbuild/frontend/emitter.py              | 2 +-
+ 8 files changed, 14 insertions(+), 17 deletions(-)
+
+diff --git a/build/unix/mozconfig.linux32 b/build/unix/mozconfig.linux32
+index 8da778465d9..98ab3d028bc 100644
+--- a/build/unix/mozconfig.linux32
++++ b/build/unix/mozconfig.linux32
+@@ -2,7 +2,7 @@
+ 
+ export MOZ_LINUX_32_SSE2_STARTUP_ERROR=1
+ 
+-CFLAGS="$CFLAGS -march=pentium-m -msse -msse2 -mfpmath=sse"
+-CXXFLAGS="$CXXFLAGS -march=pentium-m -msse -msse2 -mfpmath=sse"
++CFLAGS="$CFLAGS -march=i686"
++CXXFLAGS="$CXXFLAGS -march=i686 "
+ 
+ ac_add_options --target=i686-pc-linux
+diff --git a/dom/media/webaudio/blink/DenormalDisabler.h b/dom/media/webaudio/blink/DenormalDisabler.h
+index 4f92d779684..52e137e060e 100644
+--- a/dom/media/webaudio/blink/DenormalDisabler.h
++++ b/dom/media/webaudio/blink/DenormalDisabler.h
+@@ -39,7 +39,7 @@ namespace WebCore {
+ #  define HAVE_DENORMAL 1
+ #endif
+ 
+-#if defined(__GNUC__) && (defined(__i386__) || defined(__x86_64__))
++#if defined(__GNUC__) && (defined(__x86_64__))
+ // X86 chips can flush denormals
+ #  define HAVE_DENORMAL 1
+ #endif
+diff --git a/gfx/angle/moz.build.common b/gfx/angle/moz.build.common
+index 31a14400db1..eb561b1ea6b 100644
+--- a/gfx/angle/moz.build.common
++++ b/gfx/angle/moz.build.common
+@@ -8,9 +8,6 @@ if CONFIG['CC_TYPE'] in ('clang', 'clang-cl'):
+     ]
+ 
+ 
+-if CONFIG['INTEL_ARCHITECTURE']:
+-    CXXFLAGS += CONFIG['SSE2_FLAGS']
+-
+ if CONFIG['MOZ_WIDGET_TOOLKIT'] == 'windows':
+     DEFINES['ANGLE_IS_WIN'] = True
+ 
+diff --git a/media/webrtc/trunk/webrtc/modules/audio_processing/aec3/fft_data.h b/media/webrtc/trunk/webrtc/modules/audio_processing/aec3/fft_data.h
+index a5c51bf3426..392c1190207 100644
+--- a/media/webrtc/trunk/webrtc/modules/audio_processing/aec3/fft_data.h
++++ b/media/webrtc/trunk/webrtc/modules/audio_processing/aec3/fft_data.h
+@@ -12,7 +12,7 @@
+ #define MODULES_AUDIO_PROCESSING_AEC3_FFT_DATA_H_
+ 
+ #include "typedefs.h"  // NOLINT(build/include)
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ #include <emmintrin.h>
+ #endif
+ #include <algorithm>
+@@ -43,7 +43,7 @@ struct FftData {
+                 std::array<float, kFftLengthBy2Plus1>* power_spectrum) const {
+     RTC_DCHECK(power_spectrum);
+     switch (optimization) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+       case Aec3Optimization::kSse2: {
+         constexpr int kNumFourBinBands = kFftLengthBy2 / 4;
+         constexpr int kLimit = kNumFourBinBands * 4;
+diff --git a/media/webrtc/trunk/webrtc/modules/audio_processing/aec3/matched_filter.cc b/media/webrtc/trunk/webrtc/modules/audio_processing/aec3/matched_filter.cc
+index 4906bf9db7b..411174a6a8a 100644
+--- a/media/webrtc/trunk/webrtc/modules/audio_processing/aec3/matched_filter.cc
++++ b/media/webrtc/trunk/webrtc/modules/audio_processing/aec3/matched_filter.cc
+@@ -13,7 +13,7 @@
+ #include <arm_neon.h>
+ #endif
+ #include "typedefs.h"  // NOLINT(build/include)
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ #include <emmintrin.h>
+ #endif
+ #include <algorithm>
+@@ -134,7 +134,7 @@ void MatchedFilterCore_NEON(size_t x_start_index,
+ 
+ #endif
+ 
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ 
+ void MatchedFilterCore_SSE2(size_t x_start_index,
+                             float x2_sum_threshold,
+@@ -342,7 +342,7 @@ void MatchedFilter::Update(const DownsampledRenderBuffer& render_buffer,
+         render_buffer.buffer.size();
+ 
+     switch (optimization_) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+       case Aec3Optimization::kSse2:
+         aec3::MatchedFilterCore_SSE2(x_start_index, x2_sum_threshold,
+                                      render_buffer.buffer, y, filters_[n],
+diff --git a/media/webrtc/trunk/webrtc/modules/audio_processing/aec3/matched_filter.h b/media/webrtc/trunk/webrtc/modules/audio_processing/aec3/matched_filter.h
+index c9bdc462e88..27621f13244 100644
+--- a/media/webrtc/trunk/webrtc/modules/audio_processing/aec3/matched_filter.h
++++ b/media/webrtc/trunk/webrtc/modules/audio_processing/aec3/matched_filter.h
+@@ -36,7 +36,7 @@ void MatchedFilterCore_NEON(size_t x_start_index,
+ 
+ #endif
+ 
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ 
+ // Filter core for the matched filter that is optimized for SSE2.
+ void MatchedFilterCore_SSE2(size_t x_start_index,
+diff --git a/media/webrtc/trunk/webrtc/modules/audio_processing/aec3/vector_math.h b/media/webrtc/trunk/webrtc/modules/audio_processing/aec3/vector_math.h
+index 0672b513f3c..8936bdfceb9 100644
+--- a/media/webrtc/trunk/webrtc/modules/audio_processing/aec3/vector_math.h
++++ b/media/webrtc/trunk/webrtc/modules/audio_processing/aec3/vector_math.h
+@@ -15,7 +15,7 @@
+ #if defined(WEBRTC_HAS_NEON)
+ #include <arm_neon.h>
+ #endif
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+ #include <emmintrin.h>
+ #endif
+ #include <math.h>
+@@ -39,7 +39,7 @@ class VectorMath {
+   // Elementwise square root.
+   void Sqrt(rtc::ArrayView<float> x) {
+     switch (optimization_) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+       case Aec3Optimization::kSse2: {
+         const int x_size = static_cast<int>(x.size());
+         const int vector_limit = x_size >> 2;
+@@ -113,7 +113,7 @@ class VectorMath {
+     RTC_DCHECK_EQ(z.size(), x.size());
+     RTC_DCHECK_EQ(z.size(), y.size());
+     switch (optimization_) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+       case Aec3Optimization::kSse2: {
+         const int x_size = static_cast<int>(x.size());
+         const int vector_limit = x_size >> 2;
+@@ -159,7 +159,7 @@ class VectorMath {
+   void Accumulate(rtc::ArrayView<const float> x, rtc::ArrayView<float> z) {
+     RTC_DCHECK_EQ(z.size(), x.size());
+     switch (optimization_) {
+-#if defined(WEBRTC_ARCH_X86_FAMILY)
++#if defined(WEBRTC_ARCH_X86_64)
+       case Aec3Optimization::kSse2: {
+         const int x_size = static_cast<int>(x.size());
+         const int vector_limit = x_size >> 2;
+diff --git a/python/mozbuild/mozbuild/frontend/emitter.py b/python/mozbuild/mozbuild/frontend/emitter.py
+index 8d5ab8eb30a..85a09250310 100644
+--- a/python/mozbuild/mozbuild/frontend/emitter.py
++++ b/python/mozbuild/mozbuild/frontend/emitter.py
+@@ -1026,7 +1026,7 @@ class TreeMetadataEmitter(LoggingMixin):
+ 
+         if ctxt_sources:
+             for linkable in linkables:
+-                for target_var in ('SOURCES', 'UNIFIED_SOURCES'):
++                for target_var in ('UNIFIED_SOURCES', 'SOURCES'):
+                     for suffix, srcs in ctxt_sources[target_var].items():
+                         linkable.sources[suffix] += srcs
+             for host_linkable in host_linkables:
+-- 
+2.39.1
+

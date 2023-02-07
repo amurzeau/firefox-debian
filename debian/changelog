@@ -1,4 +1,10 @@
-firefox-esr (78.15.0esr-1) UNRELEASED; urgency=medium
+firefox-esr (78.15.0esr-1+nosse~deb9u1) stretch; urgency=medium
+
+  * Rebuild without SSE 
+
+ -- Alexis Murzeau <amubtdx@gmail.com> Tue, 07 Feb 2023 20:00:19 +0000
+
+firefox-esr (78.15.0esr-1) unstable; urgency=medium
 
   * New upstream release.
   * Fixes for mfsa2021-44, also known as CVE-2021-38496, CVE-2021-38500.
